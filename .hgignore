@@ -1,0 +1,12 @@
+syntax: glob
+
+__pycache__
+bin
+build
+include
+lib
+*.kdev4
+dist/
+MANIFEST
+docs/_build
+*.pyc
