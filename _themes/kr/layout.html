@@ -1,0 +1,29 @@
+{%- extends "basic/layout.html" %}
+{%- block extrahead %}
+  {{ super() }}
+  {% if theme_touch_icon %}
+    <link rel="apple-touch-icon" href="{{ pathto('_static/' ~ theme_touch_icon, 1) }}" />
+  {% endif %}
+  <link media="only screen and (max-device-width: 480px)" href="{{
+    pathto('_static/small_flask.css', 1) }}" type= "text/css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+{% endblock %}
+{%- block relbar2 %}{% endblock %}
+{%- block footer %}
+    <div class="footer">
+        <div id="prev">
+        {% if prev %}
+            ← <a href={{ prev.link }}>{{ prev.title }}</a>
+        {% endif %}
+        {% if prev or next %}
+            |&nbsp;
+        {% endif %}
+        </div>
+        <div id="next">
+        {% if next %}
+            <a href={{ next.link }}>{{ next.title }}</a> →
+        {% endif %}
+    </div>
+      &copy; Copyright {{ copyright }}.
+    </div>
+{%- endblock %}

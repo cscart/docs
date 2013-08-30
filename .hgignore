@@ -1,0 +1,9 @@
+syntax: glob
+
+*.kdev4
+.kdev4/
+_build/
+_themes/__pycache__/
+*.pyc
+
+
