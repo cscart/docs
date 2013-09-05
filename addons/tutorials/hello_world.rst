@@ -15,7 +15,7 @@ Each add-on must have its ``priority`` attribute defined, which determines the o
 So, keeping that in mind you can go on further and create you first CS-Cart add-on.
 
 Hello, World!
-------------
+-------------
 
 To kick off with, let's create a classic Hello World add-on.
 
