@@ -1,0 +1,8 @@
+# Usage:
+# Under virtualenv run:
+#
+# pip install -r requirements.txt
+
+Sphinx
+sphinxcontrib-fancybox
+sphinxcontrib-googleanalytics
