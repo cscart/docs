@@ -1,5 +1,5 @@
-CS-Cart Add-on Development Tutorials
-====================================
+Add-on Development Tutorials
+============================
 
 .. toctree::
     :maxdepth: 2
