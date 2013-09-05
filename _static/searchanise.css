@@ -1,0 +1,179 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+
+body {
+    font-family: 'Droid Sans', sans-serif !important;
+    font-size: 15px !important;
+    text-shadow: #FFFFFF 0px 0px 3px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Droid Sans', sans-serif !important;
+}
+
+pre {
+    font-family: 'Ubuntu Mono', sans-serif !important;
+}
+
+div.admonition p.admonition-title {
+    font-family: 'Droid Sans', sans-serif !important;
+}
+
+div.sphinxsidebar #searchbox input[type="text"] {
+    width: 140px;
+}
+
+div.sphinxsidebarwrapper p.logo {
+    margin: -10px 0 20px -20px !important;
+}
+
+.centered {
+    text-align: center;
+}
+
+.smallprint {
+    font-size: 13px !important;
+    color: #575757 !important;
+}
+
+div#go_to_top {
+    position: fixed; bottom: 0;
+}
+
+div#prev {
+    width: 50%;
+    text-align: right;
+    float: left;
+}
+
+div#next {
+    width: 50%;
+    text-align: left;
+    float: left;
+}
+
+div#twitter {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.overview_button {
+    font-size:16px;
+    margin-right: 10px;
+    padding:6px 18px;
+    text-decoration:none;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #00C558), color-stop(100%, #009C46) );
+    background:-moz-linear-gradient( center top, #00C558 5%, #009C46 100% );
+    background:-ms-linear-gradient( top, #00C558 5%, #009C46 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00C558', endColorstr='#009C46');
+    background-color:#00C558;
+    color:#ffffff;
+    display:inline-block;
+    text-shadow:1px 1px 0px #528009;
+    -webkit-box-shadow:inset 1px 1px 0px 0px #a4e271;
+    -moz-box-shadow:inset 1px 1px 0px 0px #a4e271;
+    box-shadow:inset 1px 1px 0px 0px #a4e271;
+}.overview_button:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #009C46), color-stop(100%, #00C558) );
+    background:-moz-linear-gradient( center top, #009C46 5%, #00C558 100% );
+    background:-ms-linear-gradient( top, #009C46 5%, #00C558 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#009C46', endColorstr='#00C558');
+    background-color:#009C46;
+    color:#ffffff;
+    text-decoration: none;
+}.overview_button:active {
+    position:relative;
+    top:1px;
+}
+
+.getstarted_button {
+    font-size:16px;
+    padding:6px 18px;
+    text-decoration:none;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #3d94f6), color-stop(100%, #1e62d0) );
+    background:-moz-linear-gradient( center top, #3d94f6 5%, #1e62d0 100% );
+    background:-ms-linear-gradient( top, #3d94f6 5%, #1e62d0 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0');
+    background-color:#3d94f6;
+    color:#ffffff;
+    display:inline-block;
+    text-shadow:1px 1px 0px #1570cd;
+    -webkit-box-shadow:inset 1px 1px 0px 0px #97c4fe;
+    -moz-box-shadow:inset 1px 1px 0px 0px #97c4fe;
+    box-shadow:inset 1px 1px 0px 0px #97c4fe;
+}.getstarted_button:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #1e62d0), color-stop(100%, #3d94f6) );
+    background:-moz-linear-gradient( center top, #1e62d0 5%, #3d94f6 100% );
+    background:-ms-linear-gradient( top, #1e62d0 5%, #3d94f6 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6');
+    background-color:#1e62d0;
+    color:#ffffff;
+    text-decoration: none;
+}.getstarted_button:active {
+    position:relative;
+    top:1px;
+}
+
+.download_button {
+    font-size:20px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    margin-right: 20px;
+    padding:6px 18px;
+    text-decoration:none;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #00C558), color-stop(100%, #009C46) );
+    background:-moz-linear-gradient( center top, #00C558 5%, #009C46 100% );
+    background:-ms-linear-gradient( top, #00C558 5%, #009C46 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00C558', endColorstr='#009C46');
+    background-color:#00C558;
+    color:#ffffff;
+    display:inline-block;
+    text-shadow:1px 1px 0px #528009;
+    -webkit-box-shadow:inset 1px 1px 0px 0px #a4e271;
+    -moz-box-shadow:inset 1px 1px 0px 0px #a4e271;
+    box-shadow:inset 1px 1px 0px 0px #a4e271;
+}.download_button:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #009C46), color-stop(100%, #00C558) );
+    background:-moz-linear-gradient( center top, #009C46 5%, #00C558 100% );
+    background:-ms-linear-gradient( top, #009C46 5%, #00C558 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#009C46', endColorstr='#00C558');
+    background-color:#009C46;
+    color:#ffffff;
+    text-decoration: none;
+}.download_button:active {
+    position:relative;
+    top:1px;
+}
+
+.livedemo_button {
+    font-size:20px;
+    margin-bottom: 10px;
+    padding:6px 18px;
+    text-decoration:none;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #3d94f6), color-stop(100%, #1e62d0) );
+    background:-moz-linear-gradient( center top, #3d94f6 5%, #1e62d0 100% );
+    background:-ms-linear-gradient( top, #3d94f6 5%, #1e62d0 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0');
+    background-color:#3d94f6;
+    color:#ffffff;
+    display:inline-block;
+    text-shadow:1px 1px 0px #1570cd;
+    -webkit-box-shadow:inset 1px 1px 0px 0px #97c4fe;
+    -moz-box-shadow:inset 1px 1px 0px 0px #97c4fe;
+    box-shadow:inset 1px 1px 0px 0px #97c4fe;
+}.livedemo_button:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #1e62d0), color-stop(100%, #3d94f6) );
+    background:-moz-linear-gradient( center top, #1e62d0 5%, #3d94f6 100% );
+    background:-ms-linear-gradient( top, #1e62d0 5%, #3d94f6 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6');
+    background-color:#1e62d0;
+    color:#ffffff;
+    text-decoration: none;
+}.livedemo_button:active {
+    position:relative;
+    top:1px;
+}
+
+.twitter-timeline {
+    margin-top: 20px;
+}
