@@ -14,6 +14,7 @@ Contents:
 
     api/index
     addons/index
+    *
 
 Indices and tables
 ==================
