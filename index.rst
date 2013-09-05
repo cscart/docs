@@ -11,10 +11,10 @@ Contents:
 .. toctree::
     :maxdepth: 2
     :titlesonly:
+    :glob:
 
     api/index
     addons/index
-    *
 
 Indices and tables
 ==================
