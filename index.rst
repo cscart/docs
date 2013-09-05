@@ -12,7 +12,6 @@ Contents:
     :maxdepth: 2
     :titlesonly:
 
-    api/index
     addons/index
 
 Indices and tables

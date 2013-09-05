@@ -9,4 +9,5 @@ CS-Cart add-on development guides.
     :titlesonly:
     :glob:
 
+    tutorials/index
     *
