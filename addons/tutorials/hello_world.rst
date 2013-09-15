@@ -12,12 +12,10 @@ Basically, an add-on will run with only this file existing. All it will do thoug
 
 Each add-on must have its ``priority`` attribute defined, which determines the order the add-ons are loaded. Normally, the priority is set to any huge number so the add-on would load after all the pre-installed ones.
 
-So, keeping that in mind you can go on further and create you first CS-Cart add-on.
+So, keeping that in mind, you can go on further and create you first CS-Cart add-on.
 
 Hello, World!
 -------------
-
-To kick off with, let's create a classic Hello World add-on.
 
 Go to the **addons** directory in the CS-Cart installation directory. There, create a directory called **hello_world** and switch to it. That will be your working directory for this add-on.
 
