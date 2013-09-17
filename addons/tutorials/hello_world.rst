@@ -4,11 +4,11 @@ Hello World Add-on Tutorial
 Basic Concepts
 --------------
 
-Each add-on has its own directory inside the **addons** directory. The add-on is described in the file **addon.xml**.
+Each add-on has its own directory inside the *addons* directory. The add-on is described in the file *addon.xml*.
 
 Among the information listed there, are the add-on id, priority, version, display name, etc.
 
-Basically, an add-on will run with only this file existing. All it will do though, will be just appear in the add-on list and do absolutely nothing. Nonetheless, such add-on will be installable and uninstallable, even configurable and properly translated if you define settings and translations in the **addon.xml** file.
+Basically, an add-on will run with only this file existing. All it will do though, will be just appear in the add-on list and do absolutely nothing. Nonetheless, such add-on will be installable and uninstallable, even configurable and properly translated if you define settings and translations in the *addon.xml* file.
 
 Each add-on must have its ``priority`` attribute defined, which determines the order the add-ons are loaded. Normally, the priority is set to any huge number so the add-on would load after all the pre-installed ones.
 
@@ -17,9 +17,9 @@ So, keeping that in mind, you can go on further and create you first CS-Cart add
 Hello, World!
 -------------
 
-Go to the **addons** directory in the CS-Cart installation directory. There, create a directory called **hello_world** and switch to it. That will be your working directory for this add-on.
+Go to the *addons* directory in the CS-Cart installation directory. There, create a directory called *hello_world* and switch to it. That will be your working directory for this add-on.
 
-As said before, all an add-on needs to have to be operational is the **addon.xml** file. Let's create this file.
+As said before, all an add-on needs to have to be operational is the *addon.xml* file. Let's create this file.
 
 Provide some basic add-on attributes:
 
@@ -29,7 +29,7 @@ Provide some basic add-on attributes:
     *   ``description``—add-on description in the default language (English, if not explicitly specified). Set to ``Say hello to the world``
     *   ``priority``—set this one to something big like ``100500``
 
-The **addon.xml** file should look like this:
+The *addon.xml* file should look like this:
 
     .. code-block:: xml
 
@@ -57,9 +57,9 @@ Pay attention to the ``scheme='2.0'`` parameter. Add-ons without this parameter 
 
 OK, now let's add some settings.
 
-To do that, create the ``settings`` section in the **addon.xml** file. Settings are divided to *sections* that contain *items*. Each item is a particular setting with its own name, type, default value, etc.
+To do that, create the ``settings`` section in the *addon.xml* file. Settings are divided to *sections* that contain *items*. Each item is a particular setting with its own name, type, default value, etc.
 
-Put the following lines in your **addon.xml** after ``<priority>100500</priority>``:
+Put the following lines in your *addon.xml* after ``<priority>100500</priority>``:
 
     .. code-block:: xml
 
