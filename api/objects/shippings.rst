@@ -6,7 +6,7 @@ URLs
 =====
 
 *   http://example.com/api/**shippings**—refer to all products. Only GET and POST are supported.
-*   http://example.com/api/**shippings/<id>**—refer to a particular product. GET, PUT, and DELETE are supported.
+*   http://example.com/api/**shippings/:id**—refer to a particular product. GET, PUT, and DELETE are supported.
 
 Fields
 ======

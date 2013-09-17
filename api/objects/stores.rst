@@ -1,16 +1,12 @@
-=================
-Stores (Ultimate)
-=================
-
-.. warning::
-
-    This API object support is experimental. Some features may be missing.
+======
+Stores
+======
 
 URLs
 =====
 
 *   http://example.com/api/**stores**—refer to all stores. Only GET and POST are supported.
-*   http://example.com/api/**stores/<id>**—refer to a particular store. GET, PUT, and DELETE are supported.
+*   http://example.com/api/**stores/:id**—refer to a particular store. GET, PUT, and DELETE are supported.
 
 Examples
 ========
@@ -105,8 +101,8 @@ Update company description
 
 .. code-block:: bash
 
-    curl --user admin@example.com:APIkey --header 'Content-Type: application/json'\
-    -d '{"company_description": "This is my awesome store description"}'\
+    curl --user admin@example.com:APIkey --header 'Content-Type: application/json'
+    -d '{"company_description": "This is my awesome store description"}'
     -X PUT 'http://example.com/api/stores/3'
 
 Response:

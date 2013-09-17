@@ -6,24 +6,31 @@ URLs
 =====
 
 *   http://example.com/api/**products**—refer to all products. Only GET and POST are supported.
-*   http://example.com/api/**products/<id>**—refer to a particular product. GET, PUT, and DELETE are supported.
-*   http://example.com/api/**categories/<id>/products>**—refer to all products of a particular :doc:`category <categories>`.
-*   http://example.com/api/**categories/<id>/products/<id>**—refer to a particular product in a particular category.
+*   http://example.com/api/**products/:id**—refer to a particular product. GET, PUT, and DELETE are supported.
+*   http://example.com/api/**categories/:id/products**—refer to all products of a particular :doc:`category <categories>`.
+*   http://example.com/api/**categories/:id/products/:id**—refer to a particular product in a particular category.
 
 Filtering
 =========
 
 In order to get products based on a filter, you can use one of the available filters. Product filtering is similar to the advanced search performed in the admin panel.
 
-The request URL is as follows:
+The request URL is as follows (separated into several lines for readability):
 
-    http://example.com/api/products/**<filter>=Y&<additional_param>=<value>&sort_by=<sort_param>&sort_order=<sort_order>&q=<query>**
+    | http://example.com/api/products?
+    | <filter>=Y&
+    | <additional_param>=<value>&
+    | <another_param>=<value>&
+    | ...
+    | sort_by=<sorting>&
+    | sort_order=<sort_order>&
+    | q=<query>
 
 *   ``filter`` is one of the available :ref:`filters <filters>`. It is possible to use any number of filters at a time by appending the URL with ``&<another_filter>=Y``
 
 *   ``additional_param`` is one of the available :ref:`additional params <additional-params>`. It is possible to use any number of additional params at a time by appending the URL with ``&<another_param>=<value>``
 
-*   ``sort_param`` is one of the available :ref:`sortings <sorting>`
+*   ``sorting`` is one of the available :ref:`sortings <sorting>`
 
 *   ``sort_order`` is the sort direction; ``asc`` or ``desc`` for ascending and descending accordingly
 
