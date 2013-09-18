@@ -31,7 +31,7 @@ Skin Directory
 
 The skin directory was renamed in CS-Cart 3.
 
-The new skin directory in CS-Cart 3 is now **skins/basic/customer** instead of **skins/base/customer** as it was before.
+The new skin directory in CS-Cart 3 is *skins/basic/customer* instead of *skins/base/customer* as it was before.
 
 All the templates have to be moved to the new directory. Otherwise, these templates will not be detected.
 
@@ -51,7 +51,7 @@ The new version introduces the class auto-load mechanism.
 
 Classes are loaded automatically when requested by name. It is no longer necessary to connect them explicitly with the ``require`` or ``include`` instructions. It is sufficient just to name class in a certain way and place it in a certain place.
 
-All classes must reside in the add-on directory, in the **core/classes** subdirectory.
+All classes must reside in the add-on directory, in the *core/classes* subdirectory.
 
 Class reference convention is as follows:
 
@@ -62,12 +62,12 @@ Examples
 --------
 
     *
-        File: **addons/my_addon/core/classes/my_class.php**
+        File: *addons/my_addon/core/classes/my_class.php*
 
         Class name: ``class MyClass {...}``
 
     *
-        File: **addons/my_addon/core/classes/some_package/my_class.php**
+        File: *addons/my_addon/core/classes/some_package/my_class.php*
 
         Class name: ``class SomePackage_MyClass {...}``
 
