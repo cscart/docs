@@ -13,10 +13,7 @@ URLs
 Nested Objects
 ==============
 
-.. toctree::
-    :maxdepth: 1
-
-    products
+*   :doc:`Products <products>`
 
 Fields
 ======

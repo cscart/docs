@@ -56,6 +56,8 @@ Get all products of the 1st store, with 'foo' in their full description, costing
 Filters
 -------
 
+Available ``filter`` attribute values:
+
 .. list-table::
     :header-rows: 1
     :stub-columns: 1
