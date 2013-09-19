@@ -1,8 +1,9 @@
+***************************
 Hello World Add-on Tutorial
-===========================
+***************************
 
 Basic Concepts
---------------
+==============
 
 Each add-on has its own directory inside the *app/addons* directory. The add-on is described in the file *addon.xml*.
 
@@ -15,7 +16,7 @@ Each add-on must have its ``priority`` attribute defined, which determines the o
 So, keeping that in mind, you can go on further and create you first CS-Cart add-on.
 
 Hello, World!
--------------
+=============
 
 Go to the *app/addons* directory in the CS-Cart installation directory. There, create a directory called *hello_world* and switch to it. That will be your working directory for this add-on.
 

@@ -1,6 +1,6 @@
-===
+***
 API
-===
+***
 
 Starting from version 4, CS-Cart provides an API to interact with a store.
 
