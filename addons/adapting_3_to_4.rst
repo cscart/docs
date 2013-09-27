@@ -1,6 +1,6 @@
-===================================
+***********************************
 Adapting Add-on from CS-Cart 3 to 4
-===================================
+***********************************
 
 Addons for CS-Cart 3 are highly compatible with CS-Cart 4.
 
@@ -23,7 +23,7 @@ Addons for CS-Cart 3 are highly compatible with CS-Cart 4.
 Add-on Directory
 ================
 
-*   Move the add-on directory from ``addons`` to ``app/addons`` (according to the new folder structure)
+*   Move the add-on folder from *addons* to *app/addons* (according to the new folder structure)
 
 addon.xml
 =========
@@ -42,7 +42,7 @@ PHP
 
 *   Replace tabs with 4 spaces (according to the PSR standards)
 
-*   If any pre or post controllers are used, they should reside in the **app/controllers/backend** and **app/controllers/frontend** directories for the admin area and the storefront respectively.
+*   If any pre or post controllers are used, they should reside in the *app/controllers/backend* and *app/controllers/frontend* directories for the admin area and the storefront respectively.
 
     See the new directory structure desciption.
 
@@ -56,7 +56,7 @@ PHP
 
     If in the code you use::
 
-        $my_settings = Registry::get('addons.myaddon');
+        $my_settings = Registry::get('addons.my_addon');
 
     then you should insert the following line at the beginning of the file::
 
@@ -108,11 +108,11 @@ PHP
 
         CS-Cart 3::
 
-            fn_get_lang_var('myaddon_product_options');
+            fn_get_lang_var('my_addon_product_options');
 
         CS-Cart 4::
 
-            __('myaddon_product_options');
+            __('my_addon_product_options');
 
 *   Edition check is now performed with the function ``fn_allowed_for``.
 
@@ -160,7 +160,7 @@ PHP
 
 *   In order to support PHP 5, prepend all hook parameters with ``&``::
 
-        fn_myaddon_place_order(&$order_id, &$order_status, &...)
+        fn_my_addon_place_order(&$order_id, &$order_status, &...)
 
 *   Getting pagination data routine has changed.
 
@@ -186,15 +186,15 @@ CSS, Smarty Templates, and Images
 
     Admin area files:
 
-    *   ``design/backend/css/addons/myaddon``
-    *   ``design/backend/media/images/addons/myaddon``
-    *   ``design/backend/templates/addons/myaddon``
+    *   *design/backend/css/addons/my_addon*
+    *   *design/backend/media/images/addons/my_addon*
+    *   *design/backend/templates/addons/my_addon*
 
     Customer area files:
 
-    *   ``var/skins_repository/basic/css/addons/myaddon``
-    *   ``var/skins_repository/basic/media/images/addons/myaddon``
-    *   ``var/skins_repository/basic/templates/addons/myaddon``
+    *   *var/skins_repository/basic/css/addons/my_addon*
+    *   *var/skins_repository/basic/media/images/addons/my_addon*
+    *   *var/skins_repository/basic/templates/addons/my_addon*
 
 *   Replace ``$lang.`` with ``__()`` (double underscore).
 
@@ -202,11 +202,11 @@ CSS, Smarty Templates, and Images
 
         CS-Cart 3::
 
-            {$lang.myaddon_product_options}
+            {$lang.my_addon_product_options}
 
         CS-Cart 4::
 
-            {__('myaddon_product_options')}
+            {__('my_addon_product_options')}
 
 *   Replace the referrences to the ``COMPANY_ID`` constant with the Registry record ``Registry::get('runtime.company_id')``.
 
@@ -244,7 +244,7 @@ CSS, Smarty Templates, and Images
 JavaScript
 ==========
 
-*   JS files must now be located in the ``js/addons/myaddon`` directory.
+*   JS files must now be located in the *js/addons/my_addon* directory.
 
 *   Clear the code from the `deprecated jQuery methods <http://api.jquery.com/category/deprecated/>`_
 

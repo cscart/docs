@@ -1,6 +1,6 @@
-===
+***
 API
-===
+***
 
 Starting from version 4, CS-Cart provides an API to interact with a store.
 
@@ -69,21 +69,21 @@ An API request is a regular HTTP request sent to a particular URL.
 
 The URLs are built as follows:
 
-*   **http://example.com/api/<object>**—refer to all objects of a certain type
-*   **http://example.com/api/<object>/<id>**—refer to a single object
-*   **http://example.com/api/<object>/<id>/<nested_object>**—refer to all nested objects of a certain object
-*   **http://example.com/api/<object>/<id>/<nested_object>/<id>**—refer to a single nested object of a certain object
+*   **http://example.com/api/:object**—refer to all objects of a certain type
+*   **http://example.com/api/:object/:id**—refer to a single object
+*   **http://example.com/api/:object/:id/:nested_object:**—refer to all nested objects of a certain object
+*   **http://example.com/api/:object/:id/:nested_object/:id**—refer to a single nested object of a certain object
 
-For example, ``http://example.com/api/product/1/features`` refers to all the features of the product with the ID 1.
+For example, **http://example.com/api/product/1/features** refers to all the features of the product with the ID 1.
 
 .. note::
 
     If ``mod_rewrite`` is disabled on the server where the target CS-Cart store is installed, you will have to use different URLs:
 
-    *   **http://example.com/api.php?q=<object>&ajax_custom=1**—refer to all objects of a certain type
-    *   **http://example.com/api.php?q=<object>/<id>&ajax_custom=1**—refer to a single object
-    *   **http://example.com/api.php?q=<object>/<id>/<nested_object>&ajax_custom=1**—refer to all nested objects of a certain object
-    *   **http://example.com/api.php?q=<object>/<id>/<nested_object>/<id>&ajax_custom=1**—refer to a single nested object of a certain object
+    *   **http://example.com/api.php?q=:object&ajax_custom=1**—refer to all objects of a certain type
+    *   **http://example.com/api.php?q=:object/:id&ajax_custom=1**—refer to a single object
+    *   **http://example.com/api.php?q=:object/:id/:nested_object&ajax_custom=1**—refer to all nested objects of a certain object
+    *   **http://example.com/api.php?q=:object/:id/:nested_object/:id&ajax_custom=1**—refer to a single nested object of a certain object
 
 .. _auth:
 

@@ -1,22 +1,19 @@
-==========
+**********
 Categories
-==========
+**********
 
 URLs
 =====
 
 *   http://example.com/api/**categories**—refer to all categories. Only GET and POST are supported.
-*   http://example.com/api/**categories/<id>**—refer to a particular category. GET, PUT, and DELETE are supported..
-*   http://example.com/api/**categories/<id>/products>**—refer to all :doc:`products <products>` of a particular category.
-*   http://example.com/api/**categories/<id>/products/<id>**—refer to a particular product in a particular category.
+*   http://example.com/api/**categories/:id**—refer to a particular category. GET, PUT, and DELETE are supported..
+*   http://example.com/api/**categories/:id/products**—refer to all :doc:`products <products>` of a particular category.
+*   http://example.com/api/**categories/:id/products/:id**—refer to a particular product in a particular category.
 
 Nested Objects
 ==============
 
-.. toctree::
-    :maxdepth: 1
-
-    products
+*   :doc:`Products <products>`
 
 Fields
 ======

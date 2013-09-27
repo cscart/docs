@@ -1,12 +1,12 @@
-==========
+*****
 Users
-==========
+*****
 
 URLs
 =====
 
 *   http://example.com/api/**users**—refer to all users. Only GET and POST are supported.
-*   http://example.com/api/**users/<id>**—refer to a particular user. GET, PUT, and DELETE are supported.
+*   http://example.com/api/**users/:id**—refer to a particular user. GET, PUT, and DELETE are supported.
 
 Fields
 ======
