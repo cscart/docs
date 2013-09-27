@@ -42,7 +42,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'CS-Cart'
-copyright = '2013, Konstantin Molchanov'
+copyright = '2013, Simtech'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
