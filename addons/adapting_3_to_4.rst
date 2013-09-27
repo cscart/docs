@@ -20,10 +20,10 @@ Addons for CS-Cart 3 are highly compatible with CS-Cart 4.
 
     The **eDost** add-on is a good example of how things work in CS-Cart 4. Use it as a live referrence model.
 
-Addon Folder
-============
+Add-on Directory
+================
 
-*   Move the add-on folder from ``addons`` to ``app/addons`` (according to the new folder structure)
+*   Move the add-on directory from ``addons`` to ``app/addons`` (according to the new folder structure)
 
 addon.xml
 =========
