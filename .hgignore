@@ -1,22 +1,3 @@
-<<<<<<< local
-syntax: glob
-
-__pycache__
-bin
-build
-include
-lib
-Include
-Lib
-Scripts
-*.kdev4
-_build/
-_themes/__pycache__/
-dist/
-MANIFEST
-docs/_build
-*.pyc
-=======
 syntax: glob
 
 __pycache__
