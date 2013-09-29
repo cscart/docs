@@ -1,18 +1,7 @@
 syntax: glob
 
 __pycache__
-bin
-build
-include
-lib
-Include
-Lib
-Scripts
-env/
 *.kdev4
 _build/
 _themes/__pycache__/
-dist/
-MANIFEST
-docs/_build
 *.pyc
