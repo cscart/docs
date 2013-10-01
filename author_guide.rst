@@ -244,6 +244,23 @@ This directive is not used too often. Use it to point to a useful tool or tip:
 
 			You can use `Ctrl + C` to copy files and `Ctrl + V` to paste them. 
 
+Images and Fancybox
+-------------------
+
+Images are inserted with a `.. image::` directive:
+
+	.. image:: img/cscart.png
+	    :align: center
+		:alt: CS-Cart logo
+
+**Always** set the `:align:` param to `center` and define the `:alt:` param.
+
+If an image is wider than 650 px, use the `fancybox` directive instead:
+
+	.. fancybox::
+
+		img/cscart_storefront.png
+
 .. rubric:: Footnotes
 
 .. [#zen_of_python] `Zen of Python <http://www.python.org/dev/peps/pep-0020/>`_
