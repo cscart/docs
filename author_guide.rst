@@ -17,11 +17,11 @@ Zen of Docs
 -----------
 
 *   If you don't understand it, nobody will.
-*   Listen well to your doubts: if you sense something nasty about some line, cut it.
-*   Cut without worry.
+*   If you sense a nasty line, cut it out.
+*   Cut out without worry.
 *   Improve without delay.
 *	Sparse is better than dense [#zen_of_python]_.
-*   Overclarity is better underclarity.
+*   Overclarity is better than underclarity.
 *   Formatting *matters*.
 
 General
