@@ -191,7 +191,7 @@ Note
 
 Use this directive to show an additional piece of information, which can be safely skipped while reading, but will be useful as general knowledge:
 
-	..code-block:: rst
+	.. code-block:: rst
 
 		And this is how you bake a cake.
 
