@@ -14,10 +14,8 @@ Contents:
 
     addons/index
 
-Indices and tables
-==================
+.. toctree::
+	:hidden:
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+	author_guide
 
