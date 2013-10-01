@@ -18,13 +18,13 @@ In order to get products based on a filter, you can use one of the available fil
 The request URL is as follows (separated into several lines for readability):
 
     | http://example.com/api/products?
-    | <filter>=Y&
-    | <additional_param>=<value>&
-    | <another_param>=<value>&
-    | ...
-    | sort_by=<sorting>&
-    | sort_order=<sort_order>&
-    | q=<query>
+    |	 <filter>=Y&
+    |	 <additional_param>=<value>&
+    |	 <another_param>=<value>&
+    |	 ...
+    |	 sort_by=<sorting>&
+    |	 sort_order=<sort_order>&
+    |	 q=<query>
 
 *   ``filter`` is one of the available :ref:`filters <filters>`. It is possible to use any number of filters at a time by appending the URL with ``&<another_filter>=Y``
 
