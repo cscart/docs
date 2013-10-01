@@ -41,7 +41,7 @@ Below you will find some typography standards adopted by the CS-Cart documentati
 Headers
 -------
 
-The first header on a page is used as its title. It is marked with two lines or `\*` (asterisk), one above and another below the line:
+The first header on a page is used as its title. It is marked with two lines or ``\*`` (asterisk), one above and another below the line:
 
     .. code-block:: rst
 
@@ -55,21 +55,21 @@ The first header on a page is used as its title. It is marked with two lines or 
 
     The same applies to all other headers described below.
 
-First-level header is marked with an underline of `=` (the equality sign):
+First-level header is marked with an underline of ``=`` (the equality sign):
 
     .. code-block:: rst
 
         Chapter 1
         =========
 
-Second-level header is marked with an underline of `-` (dash):
+Second-level header is marked with an underline of ``-`` (dash):
 
     .. code-block:: rst
 
         At the Ball
         -----------
 
-It is not often that you will need to use a lower level header. If you absolutely must, use an underline of `"` (doublequote) for a third-level header is:
+It is not often that you will need to use a lower level header. If you absolutely must, use an underline of ``"`` (doublequote) for a third-level header is:
 
     .. code-block:: rst
 
@@ -96,7 +96,7 @@ To place a reference to a particular place in some doc (in other words, an inter
 
     Note the underscore at the beginning of the anchor name. It *is* important.
 
-    Use `-` (dash) to separate individual words, because dashes are used in HTML anchor links.
+    Use ``-`` (dash) to separate individual words, because dashes are used in HTML anchor links.
 
 Then, you can refer to this location:
 
@@ -108,7 +108,7 @@ Then, you can refer to this location:
 
     The references are documentation-wide. You can refer to any place in any document without specifying the document name.
 
-	Note the quote characters used (`\``, not `'` or `"`). This applies to doc references and hyperinks as well.
+	Note the quote characters used (``\```, not ``'`` or ``"``). This applies to doc references and hyperinks as well.
 
 To refer to an entire document, use the `:doc:` syntax:
 
@@ -117,7 +117,7 @@ To refer to an entire document, use the `:doc:` syntax:
         Proceed to the :doc:`instructions <../man/instructions>`.
 
 .. note::
-	
+
 	In the above example, the reference is to a *doc*, not a *file*; this is why the file extension is not provided. It just so happens that a doc is named after the corresponding file.
 
 	Note that you can use `Unix-like <https://en.wikipedia.org/wiki/Unix_path#Unix_style>`_ paths.
@@ -148,7 +148,7 @@ Paths must be marked up in *italic*:
 URls
 """"
 
-Keep URLs clean and tidy. Do not forget to place `http` at the beginning. Avoid `www` in URLs. Trailing slash is OK.
+Keep URLs clean and tidy. Do not forget to place ``http`` at the beginning. Avoid ``www`` in URLs. Trailing slash is OK.
 
 URLs must be marked up in *italic*:
 
@@ -157,7 +157,7 @@ URLs must be marked up in *italic*:
 Code samples
 """"""""""""
 
-PHP code can be inserted simply by using `::` (double colon) and indenting the code above:
+PHP code can be inserted simply by using ``::`` (double colon) and indenting the code above:
 
 	.. code-block:: rst
 
@@ -167,7 +167,7 @@ PHP code can be inserted simply by using `::` (double colon) and indenting the c
 
 			$twelve = 7 + 5;
 
-To show a sample of code in any other language, use the `code-block` directive with the language specified as its param:
+To show a sample of code in any other language, use the ``code-block`` directive with the language specified as its param:
 
 	.. code-block:: rst
 
@@ -181,7 +181,7 @@ To show a sample of code in any other language, use the `code-block` directive w
 
 Read more about showing code examples in the `Sphinx documentation <http://sphinx-doc.org/markup/code.html#code-examples>`_.
 
-Short code samples can be shown inline in `fixed-width`:
+Short code samples can be shown inline in ``fixed-width``:
 
 	.. code-block:: rst
 
@@ -190,7 +190,7 @@ Short code samples can be shown inline in `fixed-width`:
 Note, Importants, Warnings, and Hints
 -------------------------------------
 
-Sphinx supports a variety of information block directives, though only four are used in the CS-Cart docs: `.. note::`, `.. important::`, `.. warning::`, and `.. hint::`.
+Sphinx supports a variety of information block directives, though only four are used in the CS-Cart docs: ``.. note::``, ``.. important::``, ``.. warning::``, and ``.. hint::``.
 
 Note
 """"
@@ -201,7 +201,7 @@ Use this directive to show an additional piece of information, which can be safe
 
 		And this is how you bake a cake.
 
-		.. note:: 
+		.. note::
 
 			Cakes are extremely popular in Ireland.
 
@@ -227,7 +227,7 @@ This directive should be used with caution. It indicates a dangerous turn in the
 
 		Now your store is ready for the upgrade.
 
-		.. warning:: 
+		.. warning::
 
 			All existing data will be lost!
 
@@ -242,30 +242,30 @@ This directive is not used too often. Use it to point to a useful tool or tip:
 
 		.. hint::
 
-			You can use `Ctrl + C` to copy files and `Ctrl + V` to paste them. 
+			You can use `Ctrl + C` to copy files and `Ctrl + V` to paste them.
 
 Images and Fancybox
 -------------------
 
-Images are inserted with a `.. image::` directive:
+Images are inserted with a ``.. image::`` directive:
 
 	.. code-block:: rst
-	
+
 		.. image:: img/cscart.png
 			:align: center
 			:alt: CS-Cart logo
 
-**Always** set the `:align:` param to `center` and define the `:alt:` param.
+**Always** set the ``:align:`` param to ``center`` and define the ``:alt:`` param.
 
-If an image is wider than 650 px, use the `fancybox` directive instead:
+If an image is wider than 650 px, use the ``fancybox`` directive instead:
 
 	.. code-block:: rst
 
 		.. fancybox:: img/cscart_storefront.png
 
-.. important:: 
+.. important::
 
-	The `.. fancybox::` directive accepts the image path as its param, not as its content, therefore it must sit on the same line as the directive itself, separated with a whitespace.
+	The ``.. fancybox::`` directive accepts the image path as its param, not as its content, therefore it must sit on the same line as the directive itself, separated with a whitespace.
 
 .. rubric:: Footnotes
 
