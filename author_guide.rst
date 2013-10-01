@@ -249,17 +249,23 @@ Images and Fancybox
 
 Images are inserted with a `.. image::` directive:
 
-	.. image:: img/cscart.png
-	    :align: center
-		:alt: CS-Cart logo
+	.. code-block:: rst
+	
+		.. image:: img/cscart.png
+			:align: center
+			:alt: CS-Cart logo
 
 **Always** set the `:align:` param to `center` and define the `:alt:` param.
 
 If an image is wider than 650 px, use the `fancybox` directive instead:
 
-	.. fancybox::
+	.. code-block:: rst
 
-		img/cscart_storefront.png
+		.. fancybox:: img/cscart_storefront.png
+
+.. important:: 
+
+	The `.. fancybox::` directive accepts the image path as its param, not as its content, therefore it must sit on the same line as the directive itself, separated with a whitespace.
 
 .. rubric:: Footnotes
 
