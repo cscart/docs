@@ -11,6 +11,8 @@ Please familiarize yourself with the reST specs and `reStructuredText primer <ht
 
 The ReST + Sphinx combo is a de-facto standard used in the `Python <http://python.org>`_ world.
 
+Refer to `this page source <https://bitbucket.org/cscart/docs-2.0/src/>`_ as a live example.
+
 Zen of Docs
 -----------
 
@@ -25,7 +27,11 @@ Zen of Docs
 General
 -------
 
-Sparse is better than dense, so do not hesitate to 
+Sparse is better than dense, so, if you have a choice, always prefer inserting an empty line and indenting.
+
+Use **bold** with prudence; bold text draws reader's attention, and reader's attention is a limited resource.
+
+*Italic* is a more gentle way to highlight a statement; it should be used to indicate a  different *type* of text (e.g. a path) rather than stress out the statement itself (this is the bold's job).
 
 Typography
 ==========
@@ -198,7 +204,16 @@ Use this directive to show an additional piece of information, which can be safe
 		.. note:: 
 
 			Cakes are extremely popular in Ireland.
-			
+
+Important
+"""""""""
+
+Use this directive to show a block of important information that is should not be skipped:
+
+	.. code-block:: rst
+
+		Set the permissions to ****
+
 .. rubric:: Footnotes
 
 .. [#zen_of_python] `Zen of Python <http://www.python.org/dev/peps/pep-0020/>`_
