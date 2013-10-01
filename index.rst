@@ -16,6 +16,11 @@ Contents:
     api/index
     addons/index
 
+.. toctree::
+	:hidden:
+
+	author_guide
+
 Indices and tables
 ==================
 
