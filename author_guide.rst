@@ -212,7 +212,37 @@ Use this directive to show a block of important information that is should not b
 
 	.. code-block:: rst
 
-		Set the permissions to ****
+		Set the permissions to **777**.
+
+		.. important::
+
+			The installation will fail if the persmissions are uncorrect.
+
+Warning
+"""""""
+
+This directive should be used with caution. It indicates a dangerous turn in the narrative:
+
+	.. code-block:: rst
+
+		Now your store is ready for the upgrade.
+
+		.. warning:: 
+
+			All existing data will be lost!
+
+Hint
+""""
+
+This directive is not used too often. Use it to point to a useful tool or tip:
+
+	.. code-block:: rst
+
+		Copy the new files to your directory.
+
+		.. hint::
+
+			You can use `Ctrl + C` to copy files and `Ctrl + V` to paste them. 
 
 .. rubric:: Footnotes
 
