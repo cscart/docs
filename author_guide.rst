@@ -41,7 +41,7 @@ Below you will find some typography standards adopted by the CS-Cart documentati
 Headers
 -------
 
-The first header on a page is used as its title. It is marked with two lines or ``\*`` (asterisk), one above and another below the line:
+The first header on a page is used as its title. It is marked with two lines or ``*`` (asterisk), one above and another below the line:
 
     .. code-block:: rst
 
@@ -108,7 +108,7 @@ Then, you can refer to this location:
 
     The references are documentation-wide. You can refer to any place in any document without specifying the document name.
 
-	Note the quote characters used (``\```, not ``'`` or ``"``). This applies to doc references and hyperinks as well.
+	Note the quote characters used (`````, not ``'`` or ``"``). This applies to doc references and hyperinks as well.
 
 To refer to an entire document, use the `:doc:` syntax:
 
