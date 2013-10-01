@@ -245,4 +245,4 @@ Delete the product with the id 12:
 Response
 """"""""
 
-Nothing response, independently on the success of the operation.
+Nothing in response, independently on the success of the operation.
