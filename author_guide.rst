@@ -168,7 +168,7 @@ PHP code can be inserted simply by using ``::`` (double colon) and indenting the
 
 			$twelve = 7 + 5;
 
-To show a sample of code in any other language, use the ``code-block`` directive with the language specified as its param:
+To show a sample of code in another language, use the ``code-block`` directive with the language specified as its param:
 
 	.. code-block:: rst
 
