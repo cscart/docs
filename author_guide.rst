@@ -16,8 +16,9 @@ Refer to `this page source <https://bitbucket.org/cscart/docs-2.0/src/>`_ as a l
 Zen of Docs
 -----------
 
+*   A cool documentation is one which changes [#w3c_uri]_.
 *   If you don't understand it, nobody will.
-*   If you sense a nasty line, cut it out.
+*   Listen to your heart.
 *   Cut out without worry.
 *   Improve without delay.
 *	Sparse is better than dense [#zen_of_python]_.
@@ -269,4 +270,5 @@ If an image is wider than 650 px, use the ``fancybox`` directive instead:
 
 .. rubric:: Footnotes
 
-.. [#zen_of_python] `Zen of Python <http://www.python.org/dev/peps/pep-0020/>`_
+.. [#w3c_uri] Based on `Cool URIs don't change <http://www.w3.org/Provider/Style/URI/>`_ by Tim Berners-Lee
+.. [#zen_of_python] From `Zen of Python <http://www.python.org/dev/peps/pep-0020/>`_
