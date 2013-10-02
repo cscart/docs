@@ -70,7 +70,7 @@ Second-level header is marked with an underline of ``-`` (dash):
         At the Ball
         -----------
 
-It is not often that you will need to use a lower level header. If you absolutely must, use an underline of ``"`` (doublequote) for a third-level header is:
+It is not often that you will need to use a lower level header. If you absolutely must, use an underline of ``"`` (doublequote) for a third-level header:
 
     .. code-block:: rst
 
