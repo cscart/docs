@@ -134,7 +134,7 @@ Normally, a link is placed like this:
 
 Read more about named links in the `reStructuredText primer <http://sphinx-doc.org/rest.html>`_.
 
-Paths, URls, and Code Samples
+Paths, URLs, and Code Samples
 -----------------------------
 
 Paths
@@ -146,7 +146,7 @@ Paths must be marked up in *italic*:
 
 	*<some path>/my_file.ext*
 
-URls
+URLs
 """"
 
 Keep URLs clean and tidy. Do not forget to place ``http`` at the beginning. Avoid ``www`` in URLs. Trailing slash is OK.
