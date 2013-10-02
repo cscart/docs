@@ -8,14 +8,16 @@ Welcome to CS-Cart's documentation!
 
 Contents:
 
+.. sidebar:: Author's Guide
+
+    .. toctree::
+        :maxdepth: 2
+        :titlesonly:
+
+        author_guide
+
 .. toctree::
     :maxdepth: 2
     :titlesonly:
 
     addons/index
-
-.. toctree::
-	:hidden:
-
-	author_guide
-
