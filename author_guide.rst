@@ -111,7 +111,7 @@ Then, you can refer to this location:
 
 	Note the quote characters used (`````, not ``'`` or ``"``). This applies to doc references and hyperinks as well.
 
-To refer to an entire document, use the `:doc:` syntax:
+To refer to an entire document, use the ``:doc:`` syntax:
 
     .. code-block:: rst
 
