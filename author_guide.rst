@@ -186,7 +186,7 @@ Short code samples can be shown inline in ``fixed-width``:
 
 	.. code-block:: rst
 
-		Value binding in Python is as simple as `name = value`.
+		Value binding in Python is as simple as ``name = value``.
 
 Note, Importants, Warnings, and Hints
 -------------------------------------
