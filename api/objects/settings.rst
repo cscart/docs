@@ -13,7 +13,7 @@ Fields
 
 A setting has a number of properties, represented by fields.
 
-The full list of supported fields is given below (mandatory fields are marked with **/***).
+The full list of supported fields is given below (mandatory fields are marked with **\***).
 
 .. note:: Any field not listed in the table below will be ignored if occurs in an API request JSON data.
 
