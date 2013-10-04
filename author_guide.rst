@@ -107,7 +107,7 @@ Then, you can refer to this location:
 
 .. note::
 
-    The references are documentation-wide. You can refer to any place in any document without specifying the document name.
+	The references are documentation-wide. You can refer to any place in any document without specifying the document name.
 
 	Note the quote characters used (`````, not ``'`` or ``"``). This applies to doc references and hyperinks as well.
 
