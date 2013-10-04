@@ -107,9 +107,9 @@ Then, you can refer to this location:
 
 .. note::
 
-	The references are documentation-wide. You can refer to any place in any document without specifying the document name.
+    The references are documentation-wide. You can refer to any place in any document without specifying the document name.
 
-	Note the quote characters used (`````, not ``'`` or ``"``). This applies to doc references and hyperinks as well.
+    Note the quote characters used (`````, not ``'`` or ``"``). This applies to doc references and hyperinks as well.
 
 To refer to an entire document, use the ``:doc:`` syntax:
 
@@ -119,18 +119,18 @@ To refer to an entire document, use the ``:doc:`` syntax:
 
 .. note::
 
-	In the above example, the reference is to a *doc*, not a *file*; this is why the file extension is not provided. It just so happens that a doc is named after the corresponding file.
+    In the above example, the reference is to a *doc*, not a *file*; this is why the file extension is not provided. It just so happens that a doc is named after the corresponding file.
 
-	Note that you can use `Unix-like <https://en.wikipedia.org/wiki/Unix_path#Unix_style>`_ paths.
+    Note that you can use `Unix-like <https://en.wikipedia.org/wiki/Unix_path#Unix_style>`_ paths.
 
 Hyperlinks
 """"""""""
 
 Normally, a link is placed like this:
 
-	.. code-block:: rst
+    .. code-block:: rst
 
-		`Sloth <https://en.wikipedia.org/wiki/Sloth>`_
+        `Sloth <https://en.wikipedia.org/wiki/Sloth>`_
 
 Read more about named links in the `reStructuredText primer <http://sphinx-doc.org/rest.html>`_.
 
@@ -142,9 +142,9 @@ Paths
 
 Paths must be marked up in *italic*:
 
-	*/srv/http/cscart/*
+    */srv/http/cscart/*
 
-	*<some path>/my_file.ext*
+    *<some path>/my_file.ext*
 
 URLs
 """"
@@ -153,40 +153,40 @@ Keep URLs clean and tidy. Do not forget to place ``http`` at the beginning. Avoi
 
 URLs must be marked up in *italic*:
 
-	*http://cs-cart.com/*
+    *http://cs-cart.com/*
 
 Code samples
 """"""""""""
 
 PHP code can be inserted simply by using ``::`` (double colon) and indenting the code above:
 
-	.. code-block:: rst
+    .. code-block:: rst
 
-		Here is some PHP code::
+        Here is some PHP code::
 
-			$greeting = "Hello, World!";
+            $greeting = "Hello, World!";
 
-			$twelve = 7 + 5;
+            $twelve = 7 + 5;
 
 To show a sample of code in another language, use the ``code-block`` directive with the language specified as its param:
 
-	.. code-block:: rst
+    .. code-block:: rst
 
-		.. code-block:: python
+        .. code-block:: python
 
-			def hello(name=None):
-				if name:
-					print('Hello, {name}!'.format(name=name))
-				else:
-					print('Hello, World!')
+            def hello(name=None):
+                if name:
+                    print('Hello, {name}!'.format(name=name))
+                else:
+                    print('Hello, World!')
 
 Read more about showing code examples in the `Sphinx documentation <http://sphinx-doc.org/markup/code.html#code-examples>`_.
 
 Short code samples can be shown inline in ``fixed-width``:
 
-	.. code-block:: rst
+    .. code-block:: rst
 
-		Value binding in Python is as simple as ``name = value``.
+        Value binding in Python is as simple as ``name = value``.
 
 Note, Importants, Warnings, and Hints
 -------------------------------------
@@ -198,75 +198,75 @@ Note
 
 Use this directive to show an additional piece of information, which can be safely skipped while reading, but will be useful as general knowledge:
 
-	.. code-block:: rst
+    .. code-block:: rst
 
-		And this is how you bake a cake.
+        And this is how you bake a cake.
 
-		.. note::
+        .. note::
 
-			Cakes are extremely popular in Ireland.
+            Cakes are extremely popular in Ireland.
 
 Important
 """""""""
 
 Use this directive to show a block of important information that is should not be skipped:
 
-	.. code-block:: rst
+    .. code-block:: rst
 
-		Set the permissions to **777**.
+        Set the permissions to **777**.
 
-		.. important::
+        .. important::
 
-			The installation will fail if the persmissions are uncorrect.
+            The installation will fail if the persmissions are uncorrect.
 
 Warning
 """""""
 
 This directive should be used with caution. It indicates a dangerous turn in the narrative:
 
-	.. code-block:: rst
+    .. code-block:: rst
 
-		Now your store is ready for the upgrade.
+        Now your store is ready for the upgrade.
 
-		.. warning::
+        .. warning::
 
-			All existing data will be lost!
+            All existing data will be lost!
 
 Hint
 """"
 
 This directive is not used too often. Use it to point to a useful tool or tip:
 
-	.. code-block:: rst
+    .. code-block:: rst
 
-		Copy the new files to your directory.
+        Copy the new files to your directory.
 
-		.. hint::
+        .. hint::
 
-			You can use `Ctrl + C` to copy files and `Ctrl + V` to paste them.
+            You can use `Ctrl + C` to copy files and `Ctrl + V` to paste them.
 
 Images and Fancybox
 -------------------
 
 Images are inserted with a ``.. image::`` directive:
 
-	.. code-block:: rst
+    .. code-block:: rst
 
-		.. image:: img/cscart.png
-			:align: center
-			:alt: CS-Cart logo
+        .. image:: img/cscart.png
+            :align: center
+            :alt: CS-Cart logo
 
 **Always** set the ``:align:`` param to ``center`` and define the ``:alt:`` param.
 
 If an image is wider than 650 px, use the ``fancybox`` directive instead:
 
-	.. code-block:: rst
+    .. code-block:: rst
 
-		.. fancybox:: img/cscart_storefront.png
+        .. fancybox:: img/cscart_storefront.png
 
 .. important::
 
-	The ``.. fancybox::`` directive accepts the image path as its param, not as its content, therefore it must sit on the same line as the directive itself, separated with a whitespace.
+    The ``.. fancybox::`` directive accepts the image path as its param, not as its content, therefore it must sit on the same line as the directive itself, separated with a whitespace.
 
 .. rubric:: Footnotes
 
