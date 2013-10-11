@@ -46,3 +46,9 @@ Core
 
         *   PHP Hooks
         *   Template Hooks
+
+API
+===
+
+    *   HTTP Response Codes
+    *   Objects ? Features
