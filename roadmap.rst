@@ -1,0 +1,48 @@
+*******
+Roadmap
+*******
+
+Here is the list of articles from the `old CS-Cart documentation <http://docs.cs-cart.com>`_ to be transferred (and possibly rewritten) to these new docs and articles to be written from scratch.
+
+The list is sorted by priority, the more important the higher.
+
+Add-ons
+=======
+
+    *   `Advanced Add-on Tutorial <http://docs.cs-cart.com/advanced-addon-tutorial>`_
+    *   `Add-on Licensing <http://docs.cs-cart.com/addon-licensing-tutorial>`_, `Storefront-Based Add-on Licensing in Ultimate Edition <http://docs.cs-cart.com/addon-licensing-multi-tutorial>`_ (merge)
+    *   `Add-on Folder Structure <http://docs.cs-cart.com/add-on-folder-structure>`_
+    *   `Add-on Scheme <http://docs.cs-cart.com/addon-scheme>`_
+    *   `Add-on Connection <http://docs.cs-cart.com/addon-connection>`_ (rewrite)
+    
+Core
+====
+
+    *   `CS-Cart Architecture Overview <http://docs.cs-cart.com/introduction>`_, `Techologies Used <http://docs.cs-cart.com/technologies-used>`_ (merge)
+    
+        *   MVC: Model (Database Interaction)
+
+            *   Building Proper Database Requests with Placeholders (based on http://docs.cs-cart.com/database-standards)
+            *   `Connect Additional Databases <http://docs.cs-cart.com/connect-additional-databases>`_ (rename to Connecting Additional Databases)
+
+        *   MVC: View (Templates, CSS, LESS, JavaScript, etc.)
+
+            .. note:: 
+            
+                Move the whole Design and Layout section from http://docs.cs-cart.com/ here, re-arranging information.
+            
+            *   Template Editor 
+            *   `Microformats <http://docs.cs-cart.com/microformats>`_
+            *   `Notifications <http://docs.cs-cart.com/notifications>`_
+            *   Tooltips
+            *   `AJAX <http://docs.cs-cart.com/ajaxrequests>`_ (rename to Using AJAX Requests)
+            *   CSS Minimization (based on http://docs.cs-cart.com/special-classes)
+
+        *   MVC: Controller (based on http://docs.cs-cart.com/docs-controllers)
+            
+            *   Pre- and Post-Controllers (based on http://docs.cs-cart.com/precontrollers-postcontrollers)
+
+    *   `Hooks <http://docs.cs-cart.com/hooks>`_ (split into three topics: Introduction to Hooks, PHP Hooks, and Template Hooks)
+
+        *   PHP Hooks
+        *   Template Hooks

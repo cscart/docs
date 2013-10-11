@@ -8,13 +8,14 @@ Welcome to CS-Cart's documentation!
 
 Contents:
 
-.. sidebar:: Author's Guide
+.. sidebar:: Writer's Corner
 
     .. toctree::
         :maxdepth: 2
         :titlesonly:
 
         author_guide
+        roadmap
 
 .. toctree::
     :maxdepth: 2
