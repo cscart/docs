@@ -51,4 +51,3 @@ API
 ===
 
     *   HTTP Response Codes
-    *   Objects ? Features
