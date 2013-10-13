@@ -171,14 +171,16 @@ PHP code can be inserted simply by using ``::`` (double colon) and indenting the
 To show a sample of code in another language, use the ``code-block`` directive with the language specified as its param:
 
     .. code-block:: rst
+        
+        Here is some Python code:
 
-        .. code-block:: python
+            .. code-block:: python
 
-            def hello(name=None):
-                if name:
-                    print('Hello, {name}!'.format(name=name))
-                else:
-                    print('Hello, World!')
+                def hello(name=None):
+                    if name:
+                        print('Hello, {name}!'.format(name=name))
+                    else:
+                        print('Hello, World!')
 
 Read more about showing code examples in the `Sphinx documentation <http://sphinx-doc.org/markup/code.html#code-examples>`_.
 
@@ -188,7 +190,7 @@ Short code samples can be shown inline in ``fixed-width``:
 
         Value binding in Python is as simple as ``name = value``.
 
-Note, Importants, Warnings, and Hints
+Notes, Importants, Warnings, and Hints
 -------------------------------------
 
 Sphinx supports a variety of information block directives, but only four are used in the CS-Cart docs: ``.. note::``, ``.. important::``, ``.. warning::``, and ``.. hint::``.
@@ -217,7 +219,7 @@ Use this directive to show a block of important information that is should not b
 
         .. important::
 
-            The installation will fail if the persmissions are uncorrect.
+            The installation will fail if the persmissions are incorrect.
 
 Warning
 """""""
@@ -248,7 +250,7 @@ This directive is not used too often. Use it to point to a useful tool or tip:
 Images and Fancybox
 -------------------
 
-Images are inserted with a ``.. image::`` directive:
+Images are inserted with the ``.. image::`` directive:
 
     .. code-block:: rst
 
