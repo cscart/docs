@@ -1,0 +1,215 @@
+/*!
+ * Bootstrap Responsive v2.3.2
+ *
+ * Copyright 2013 CS-Cart, Inc
+ *
+ * Designed and built with all the love in the world by Linar Miftakhov.
+ */
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700' rel='stylesheet' type='text/css");
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Open Sans';
+    color: #777777;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 15px 0 10px 0;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #222222;
+}
+
+h1 {
+	margin-bottom: 20px;
+}
+
+a {
+	color: #28aced;
+}
+
+a:hover, .tabs .current a, .read-more, .footer-widgets a:hover, .comment-info .reply, .comment-info .reply a, .comment-info, #menu ul li a:hover, #wp-calendar tbody td a, .widget_nav_menu li.current-menu-item > a, .post-title a:hover, .post-tags a, .services-list .services-title, .sl-icons li:hover .sl-title, .archive-page a:hover, .pg-pagination a.current, .pg-pagination a:hover, #content-container .wp-pagenavi span.current, #content-container .wp-pagenavi a:hover, .carousel-title .link-title, .testimonials-details a, .lp-title a:hover {
+    color: #009fee;
+}
+
+.navbar-inner {
+    height: 40px;
+    border-bottom: 2px solid rgba(219,219,219,0.3);
+    background: rgba(255,255,255,1);
+    opacity: 1;
+}
+
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    padding: 25px 0;
+    width: 100%;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 2px solid rgba(219,219,219,0.3);
+}
+
+.navbar h3 a, .navbar .brand {
+    background: transparent url("LOGO_CSCART.png") no-repeat;
+    width: 102px;
+    height: 40px;
+}
+
+.navbar-text {
+	margin-top: 8px;
+}
+
+.navbar-form input {
+    float: right;
+    background: #fcfcfc;
+    border: solid 1px #e4e4e2;
+    padding: 8px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: 12px;
+    padding: 8px 0;
+    text-indent: 12px;
+    border-radius: 20px;
+    width: 205px;
+}
+
+.navbar-form input:focus {
+    outline: none;
+    border: solid 1px #e4e4e2;
+    background: #ffffff;
+    -webkit-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-form input[type="submit"].search-button {
+    background-color: transparent;
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    display: block;
+    background-image: url(images/search_icon.png);
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    box-shadow: none;
+    border: 0;
+    position: relative;
+    top: 14px;
+    right: -198px;
+}
+
+.container .row {
+
+}
+
+#sidebar {
+	padding: 5px 12px 15px 12px;
+    border: 1px solid #f3f3f3;
+    width: 170px;
+}
+
+#sidebar h3 {
+	font-size: 21px;
+}
+
+.container {
+    margin: 0 auto;
+    min-height: 100%;
+    height: auto !important;
+}
+
+.row {
+	display: block;
+	position: relative;
+    height: 100%;
+    margin-top: 120px;
+    padding-bottom: 60px;
+}
+
+.footer {
+	margin: -48px auto 0;
+    height: 35px;
+    position: relative;
+    background: #141414;
+}
+
+
+#welcome-to-cs-cart-s-documentation p {
+	font-size: 18px;
+	color: #333333;
+	font-weight: 600;
+}
+
+#welcome-to-cs-cart-s-documentation .sidebar {
+	border: 1px solid #eeeeee;
+	background: #f7fcff;
+	padding: 20px 15px;
+	border-radius: 3px;
+}
+
+#welcome-to-cs-cart-s-documentation .sidebar p {
+	font-size: 15px;
+}
+
+.highlight pre {
+	background-color: #fcfcfc;
+	border: 1px solid #eeeeee;
+	border-radius: 3px;
+}
+
+.label, .badge {
+    display: inline-block;
+    padding: 2px 4px;
+    font-size: 11.844px;
+    font-weight: bold;
+    line-height: 14px;
+    color: #fff;
+    text-shadow: none;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #BDC3C7;
+}
+
+.label a, .badge a {
+    color: #fff;
+}
+
+blockquote {
+    padding: 0 0 0 15px;
+    margin: 0 0 20px;
+    border-left: 4px solid #f8f8f8;
+}
+
+.alert-info {
+	background: #f7fcff;
+	border-radius: 3px;
+	border: 1px solid #dddddd;
+}
+
+div.admonition {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px 15px 7px 15px;
+}
+
+.first.admonition-title {
+	display: none;
+}
+
+.table th, .table td {
+    float: left;
+}
