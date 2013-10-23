@@ -63,7 +63,7 @@ a:hover, .tabs .current a, .read-more, .footer-widgets a:hover, .comment-info .r
 }
 
 .navbar h3 a, .navbar .brand {
-    background: transparent url("LOGO_CSCART.png") no-repeat;
+    background: transparent url({{ pathto(html_logo) }}) no-repeat;
     width: 102px;
     height: 40px;
 }
