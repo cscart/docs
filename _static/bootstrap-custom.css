@@ -137,6 +137,7 @@ a:hover, .tabs .current a, .read-more, .footer-widgets a:hover, .comment-info .r
 #sidebar h3 {
     font-size: 21px;
     margin-top: 0.3em;
+    margin-bottom:  0.1em;
 }
 
 .container {
