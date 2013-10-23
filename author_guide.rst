@@ -191,7 +191,7 @@ Short code samples can be shown inline in ``fixed-width``:
         Value binding in Python is as simple as ``name = value``.
 
 Notes, Importants, Warnings, and Hints
--------------------------------------
+--------------------------------------
 
 Sphinx supports a variety of information block directives, but only four are used in the CS-Cart docs: ``.. note::``, ``.. important::``, ``.. warning::``, and ``.. hint::``.
 
