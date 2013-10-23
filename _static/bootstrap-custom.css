@@ -211,10 +211,6 @@ div.admonition {
     display: none;
 }
 
-.table th, .table td {
-    float: left;
-}
-
 #core blockquote {
     font-weight: normal;
 }
