@@ -1,10 +1,10 @@
 /*!
- * Bootstrap Responsive v2.3.2
- *
- * Copyright 2013 CS-Cart, Inc
- *
- * Designed and built with all the love in the world by Linar Miftakhov.
- */
+* Bootstrap Responsive v2.3.2
+*
+* Copyright 2013 CS-Cart, Inc
+*
+* Designed and built with all the love in the world by Linar Miftakhov.
+*/
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700' rel='stylesheet' type='text/css");
 
 * {
@@ -18,8 +18,8 @@ html, body {
 }
 
 body {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
     height: 100%;
 }
 
@@ -31,11 +31,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	margin-bottom: 20px;
+    font-size: 36.5px;
+    margin-bottom: 20px;
 }
 
 a {
-	color: #28aced;
+    color: #28aced;
 }
 
 a:hover, .tabs .current a, .read-more, .footer-widgets a:hover, .comment-info .reply, .comment-info .reply a, .comment-info, #menu ul li a:hover, #wp-calendar tbody td a, .widget_nav_menu li.current-menu-item > a, .post-title a:hover, .post-tags a, .services-list .services-title, .sl-icons li:hover .sl-title, .archive-page a:hover, .pg-pagination a.current, .pg-pagination a:hover, #content-container .wp-pagenavi span.current, #content-container .wp-pagenavi a:hover, .carousel-title .link-title, .testimonials-details a, .lp-title a:hover {
@@ -50,7 +51,7 @@ a:hover, .tabs .current a, .read-more, .footer-widgets a:hover, .comment-info .r
 }
 
 .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
-	position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 900;
@@ -69,7 +70,7 @@ a:hover, .tabs .current a, .read-more, .footer-widgets a:hover, .comment-info .r
 }
 
 .navbar-text {
-	margin-top: 8px;
+    margin-top: 8px;
 }
 
 .navbar-form input {
@@ -117,13 +118,13 @@ a:hover, .tabs .current a, .read-more, .footer-widgets a:hover, .comment-info .r
 }
 
 #sidebar {
-	padding: 5px 12px 15px 12px;
+    padding: 5px 12px 15px 12px;
     border: 1px solid #f3f3f3;
     width: 170px;
 }
 
 #sidebar h3 {
-	font-size: 21px;
+    font-size: 21px;
 }
 
 .container {
@@ -133,15 +134,15 @@ a:hover, .tabs .current a, .read-more, .footer-widgets a:hover, .comment-info .r
 }
 
 .row {
-	display: block;
-	position: relative;
+    display: block;
+    position: relative;
     height: 100%;
     margin-top: 120px;
     padding-bottom: 60px;
 }
 
 .footer {
-	margin: -48px auto 0;
+    margin: -48px auto 0;
     height: 35px;
     position: relative;
     background: #141414;
@@ -149,26 +150,26 @@ a:hover, .tabs .current a, .read-more, .footer-widgets a:hover, .comment-info .r
 
 
 #welcome-to-cs-cart-s-documentation p {
-	font-size: 18px;
-	color: #333333;
-	font-weight: 600;
+    font-size: 18px;
+    color: #333333;
+    font-weight: 600;
 }
 
 #welcome-to-cs-cart-s-documentation .sidebar {
-	border: 1px solid #eeeeee;
-	background: #f7fcff;
-	padding: 20px 15px;
-	border-radius: 3px;
+    border: 1px solid #eeeeee;
+    background: #f7fcff;
+    padding: 20px 15px;
+    border-radius: 3px;
 }
 
 #welcome-to-cs-cart-s-documentation .sidebar p {
-	font-size: 15px;
+    font-size: 15px;
 }
 
 .highlight pre {
-	background-color: #fcfcfc;
-	border: 1px solid #eeeeee;
-	border-radius: 3px;
+    background-color: #fcfcfc;
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
 }
 
 .label, .badge {
@@ -195,9 +196,9 @@ blockquote {
 }
 
 .alert-info {
-	background: #f7fcff;
-	border-radius: 3px;
-	border: 1px solid #dddddd;
+    background: #f7fcff;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
 }
 
 div.admonition {
@@ -207,14 +208,20 @@ div.admonition {
 }
 
 .first.admonition-title {
-	display: none;
+    display: none;
 }
 
 .table th, .table td {
     float: left;
 }
 
+#core blockquote {
+    font-weight: normal;
+}
+
 blockquote p {
+    margin-bottom: 0;
     font-size: 15px;
+    font-weight: normal;
     line-height: 1.6;
 }
