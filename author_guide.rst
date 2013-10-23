@@ -47,7 +47,7 @@ The first header on a page is used as its title. It is marked with two lines or 
     .. code-block:: rst
 
         *************
-        War and Piece
+        War and Peace
         *************
 
 .. important::
@@ -99,7 +99,7 @@ To place a reference to a particular place in some doc (in other words, an inter
 
     Use ``-`` (dash) to separate individual words, because dashes are used in HTML anchor links.
 
-Then, you can refer to this location:
+Then, you can refer to this location with ``:ref:``:
 
     .. code-block:: rst
 
@@ -121,7 +121,7 @@ To refer to an entire document, use the ``:doc:`` syntax:
 
     In the above example, the reference is to a *doc*, not a *file*; this is why the file extension is not provided. It just so happens that a doc is named after the corresponding file.
 
-    Note that you can use `Unix-like <https://en.wikipedia.org/wiki/Unix_path#Unix_style>`_ paths.
+    Note that you can use `Unix-style <https://en.wikipedia.org/wiki/Unix_path#Unix_style>`_ paths.
 
 Hyperlinks
 """"""""""
@@ -158,7 +158,7 @@ URLs must be marked up in *italic*:
 Code samples
 """"""""""""
 
-PHP code can be inserted simply by using ``::`` (double colon) and indenting the code above:
+PHP code can be inserted simply by using ``::`` (double colon) and indenting the code below:
 
     .. code-block:: rst
 
