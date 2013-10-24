@@ -14,7 +14,9 @@
 html, body {
     height: 100%;
     font-family: 'Open Sans';
-    color: #777777;
+    color: #444444;
+    font-size: 14px;
+    line-height: 1.6em;
 }
 
 body {
@@ -24,19 +26,28 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 15px 0 10px 0;
+    margin: 1.4em 0 0.6em 0;
     font-family: 'Open Sans';
     font-weight: 600;
     color: #222222;
 }
 
 h1 {
-    font-size: 36.5px;
-    margin-bottom: 20px;
+    font-size: 38px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+h2 {
+    margin-bottom: 10px;
 }
 
 a {
     color: #28aced;
+}
+
+ul, ol {
+    margin-left: 1.4em;
 }
 
 a:hover, .tabs .current a, .read-more, .footer-widgets a:hover, .comment-info .reply, .comment-info .reply a, .comment-info, #menu ul li a:hover, #wp-calendar tbody td a, .widget_nav_menu li.current-menu-item > a, .post-title a:hover, .post-tags a, .services-list .services-title, .sl-icons li:hover .sl-title, .archive-page a:hover, .pg-pagination a.current, .pg-pagination a:hover, #content-container .wp-pagenavi span.current, #content-container .wp-pagenavi a:hover, .carousel-title .link-title, .testimonials-details a, .lp-title a:hover {
@@ -125,6 +136,8 @@ a:hover, .tabs .current a, .read-more, .footer-widgets a:hover, .comment-info .r
 
 #sidebar h3 {
     font-size: 21px;
+    margin-top: 0.3em;
+    margin-bottom:  0.1em;
 }
 
 .container {
