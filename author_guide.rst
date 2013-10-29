@@ -13,6 +13,7 @@ The ReST + Sphinx combo is a de-facto standard used in the `Python <http://pytho
 
 Refer to `this page source <https://bitbucket.org/cscart/docs-2.0/src/>`_ as a live example.
 
+
 Zen of Docs
 -----------
 
