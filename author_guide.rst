@@ -9,7 +9,7 @@ The docs are written using the `reStructuredText (reST) <http://docutils.sourcef
 
 Please familiarize yourself with the reST specs and `reStructuredText primer <http://sphinx-doc.org/rest.html>`_ before contributing to the docs.
 
-The ReST + Sphinx combo is a de facto standard used in the `Python <http://python.org>`_ world.
+The ReST + Sphinx combo is a de-facto standard used in the `Python <http://python.org>`_ world.
 
 Refer to `this page source <https://bitbucket.org/cscart/docs-2.0/src/>`_ as a live example.
 
