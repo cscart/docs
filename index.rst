@@ -24,3 +24,4 @@ Contents:
 
     api/index
     addons/index
+    translation/index
