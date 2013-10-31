@@ -1,6 +1,6 @@
-***********************
-Translation File Format
-***********************
+**************
+PO File Format
+**************
 
 The translations are stored in the ``.po`` format. The ``.po`` file structure adopted by the CS-Cart & Multi-Vendor software is different from the generally accepted gettext-driven standard [#gettext_po] for the sake of simplicity.
 
@@ -53,7 +53,7 @@ Here is an example of a valid language variable definition:
 Blank Lines
 ===========
 
-Language variable definitions *must* be separated with a empty line.
+Language variable definitions *must* be separated with an empty line.
 
 Here is how a ``.po`` file could end:
 
@@ -69,12 +69,19 @@ Here is how a ``.po`` file could end:
         "Country-Code: US\n"
 
         #. Enable support of fraud notification
+        msgctxt "Languages"
         msgid "2co_enable_fraud_verification"
         msgstr "Enable support of fraud notification"
 
+        #. Status for orders with failed fraud review
+        msgctxt "Languages"
+        msgid "2co_fraud_fail"
+        msgstr "Status for orders with failed fraud review"
+
+
 .. important::
 
-    The file *must* end with a empty line.
+    The file *must* end with an empty line.
 
 .. rubric:: Footnotes
 
