@@ -6,7 +6,7 @@ The translations are stored in the ``.po`` format. The ``.po`` file structure ad
 
 .. important::
 
-    Use :doc:`CS-Cart Translator <translator>` to contribute to translations.
+    Use :doc:`CS-Cart Translator <translator>` to contribute to translations. You only need to manually edit an exported ``.po`` file if you want to apply the modification locally.
 
 Metadata
 ========
@@ -24,68 +24,58 @@ Each ``.po`` file contains some necessary metadata in in the header:
         "Lang-Code: en\n"
         "Country-Code: US\n"
 
-1. Metadata must be placed at the header of the file.
+.. warning::
 
+    Do not change the existing metadata.
 
-"Language: en\n"
+    Though, some editors may add extra metadata, and that is OK (extra data is ignored).
 
-"Pack-Name: English\n"
+Language variables
+==================
 
-"Lang-Code: en\n"
+Here is an example of a valid language variable definition:
 
-"Country-Code: US\n"
+    .. code-block:: po
 
+            #. Enable support of fraud notification
+            msgctxt "Languages"
+            msgid "2co_enable_fraud_verification"
+            msgstr "Enable support of fraud notification"
 
-This data is required for http://demo.cs-cart.com/admin.php?dispatch=languages.manage&sl=en
+*   Comment holding the original English text
 
+*   ``msgctxt``—context
 
+*   ``msgid``—unique title to identify the language variable
 
-"Lang-Code: en\n"—Language code
+*   ``msgstr``—value in the selected language
 
-"Pack-Name: English\n"—Name
+Blank Lines
+===========
 
-"Country-Code: US\n"—Country
+Language variable definitions *must* be separated with a empty line.
 
-"Language: en\n"—Language
+Here is how a ``.po`` file could end:
 
+    .. code-block:: po
 
-2. An empty string must be inserted between the translations.
+        # Base pack of "English" language variables
+        msgid ""
+        msgstr ""
+        "Language: en\n"
+        "Content-Type: text/plain; charset=UTF-8\n"
+        "Pack-Name: English\n"
+        "Lang-Code: en\n"
+        "Country-Code: US\n"
 
+        #. Enable support of fraud notification
+        msgid "2co_enable_fraud_verification"
+        msgstr "Enable support of fraud notification"
 
-#. Enable support of fraud notification
+.. important::
 
-msgctxt "Languages"
-
-msgid "2co_enable_fraud_verification"
-
-msgstr "Enable support of fraud notification"
-
-
-#. Status for orders with failed fraud review
-
-msgctxt "Languages"
-
-msgid "2co_fraud_fail"
-
-msgstr "Status for orders with failed fraud review"
-
-
-3. An empty string must be placed at the end of a file.
-
-
-4. # marks a comment, which stores an English text.
-
-e.g. #. Enable support of fraud notification
-
-
-msgctxt "Languages" is a context, i.e. where certain things are used, like Languages, Settings, Tooltips, SettingsVariants, SettingsOptions. Must not be changed.
-
-
-msgid "2co_fraud_fail" is a name of a lang var. In other software it is an original translation.
-
-
-msgstr "Absolute" is a translation.
+    The file *must* end with a empty line.
 
 .. rubric:: Footnotes
 
-.. [#gettext_po] https://en.wikipedia.org/wiki/Gettext#Translating
+.. [#gettext_po] `Gettext on Wikidedia <https://en.wikipedia.org/wiki/Gettext#Translating>`_

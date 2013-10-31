@@ -33,7 +33,9 @@ Here, you can see all present language variable translations. Note the legend at
 img
 
 *   **Language variable**—unique language variable name and it's context to make it simplier to locate an entry in the CS-Cart or Multi-Vendor storefront or admin panels
+
 *   **Original string**—original English text
+
 *   **Translation**—string translation to the selected language. This is the only column you will be editing
 
 Double-click on any item or click **Details** to edit it:
