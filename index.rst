@@ -8,17 +8,23 @@ Welcome to CS-Cart's documentation!
 
 Contents:
 
-.. sidebar:: Writer's Corner
+.. sidebar:: Version
 
-    .. toctree::
-        :maxdepth: 2
-        :titlesonly:
+    *   `4.0.x <../4.0.x/index.html>`_
+    *   `3.0.x <../3.0.x/index.html>`_
 
-        author_guide
-        roadmap
+.. toctree::
+    :maxdepth: 2
+    :titlesonly:
+    :glob:
+
+    api/index
+    addons/index
+    translation/index
 
 .. toctree::
     :maxdepth: 2
     :titlesonly:
 
-    addons/index
+    author_guide
+    roadmap
