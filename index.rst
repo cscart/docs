@@ -16,11 +16,8 @@ Contents:
 .. toctree::
     :maxdepth: 2
     :titlesonly:
-    :glob:
 
-    api/index
     addons/index
-    translation/index
 
 .. toctree::
     :maxdepth: 2
