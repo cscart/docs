@@ -49,4 +49,6 @@ And that's it! The suggestion will be submitted and, if approved by a validator,
 Suggestion Approval
 ===================
 
-A validator will review your suggestion, then approve, edit, or reject it. When a new CS-Cart & Multi-Vendor release is built, all approved suggestions by that point are included in the distribution package. You can download the approved translations using the **Export** button at the lower left corner of the page (you should first switch to the language you want to download the translation for).
+A validator will review your suggestion, then approve, edit, or reject it. When a new CS-Cart & Multi-Vendor release is built, all approved suggestions by that point are included in the distribution package.
+
+You can also download an approved translation using the **Export** button at the lower left corner of the page (you should first switch to the language you want to download the translation for).
