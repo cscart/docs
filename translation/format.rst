@@ -1,6 +1,6 @@
-**************
-PO File Format
-**************
+******************
+The PO File Format
+******************
 
 The translations are stored in the ``.po`` format. The ``.po`` file structure adopted by the CS-Cart & Multi-Vendor software is different from the generally accepted gettext-driven standard [#gettext_po] for the sake of simplicity.
 
