@@ -30,7 +30,7 @@ Add/Edit a Suggestion
 
 Here you can see all the present language variable translations. Note the legend at the bottom of the table explaining the color codes in use.
 
-img
+.. fancybox:: img/lang_var_list.png
 
 *   **Language variable**—unique language variable name and it's context to make it simplier to locate an entry in the CS-Cart or Multi-Vendor storefront or admin panels
 
@@ -40,7 +40,7 @@ img
 
 Double-click on any item or click **Details** to edit it:
 
-img
+.. fancybox:: img/lang_var_edit.png
 
 In the text area, enter your translation variant and click the **Suggest new translation** button.
 
