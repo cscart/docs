@@ -53,7 +53,7 @@ Here is an example of a valid language variable definition:
 Blank Lines
 ===========
 
-Language variable definitions *must* be separated with an empty line.
+Language variable definitions *must* be separated from each other with an empty line.
 
 Here is how a ``.po`` file could end:
 
