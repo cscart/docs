@@ -34,7 +34,7 @@ Here you can see all the present language variable translations. Note the legend
 
 .. fancybox:: img/lang_var_list.png
 
-*   **Language variable**—unique language variable name and it's context to make it simplier to locate an entry in the CS-Cart or Multi-Vendor storefront or admin panels
+*   **Language variable**—unique language variable name and its context to make it simplier to locate an entry in the CS-Cart or Multi-Vendor storefront or admin panels
 
 *   **Original string**—original English text
 
