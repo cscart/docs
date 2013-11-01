@@ -8,14 +8,10 @@ Welcome to CS-Cart's documentation!
 
 Contents:
 
-.. sidebar:: Writer's Corner
+.. sidebar:: Version
 
-    .. toctree::
-        :maxdepth: 2
-        :titlesonly:
-
-        author_guide
-        roadmap
+    *   `4.0.x <../4.0.x/index.html>`_
+    *   `3.0.x <../3.0.x/index.html>`_
 
 .. toctree::
     :maxdepth: 2
@@ -25,3 +21,10 @@ Contents:
     api/index
     addons/index
     translation/index
+
+.. toctree::
+    :maxdepth: 2
+    :titlesonly:
+
+    author_guide
+    roadmap
