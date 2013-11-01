@@ -13,7 +13,7 @@ You should explicitly define the scheme version in the **addon.xml** file:
 
         <addon scheme="2.0">
 
-Generally, an add-on should be operational even with the old scheme, but only partially. Errors will occur with section title translations in settings dialog, edition-specific queries, add-on dependencies and conflicts.
+Generally, an add-on should be operational even with the old scheme, but some features may not work. Errors will occur with section title translations in settings dialog, edition-specific queries, add-on dependencies and conflicts.
 
 .. warning::
 
