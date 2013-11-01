@@ -4,13 +4,13 @@ CS-Cart Docs 2.0
 
 CS-Cart documentation, fully re-written in reST and built with Sphinx.
 
-Latest builds:
+Latest build:
 
-    http://cs-cart-docs.rtfd.org
+    http://docs2.cs-cart.com
 
-Author guide: 
+Author's guide:
 
-    http://cs-cart-docs.readthedocs.org/en/4.0.x/author_guide.html
+    http://docs2.cs-cart.com/4.0.x/author_guide.html
 
 Build These Docs Locally
 ========================
