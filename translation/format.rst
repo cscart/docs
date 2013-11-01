@@ -85,4 +85,4 @@ Here is how a ``.po`` file could end:
 
 .. rubric:: Footnotes
 
-.. [#gettext_po] `Gettext on Wikidedia <https://en.wikipedia.org/wiki/Gettext#Translating>`_
+.. [#gettext_po] `Gettext on Wikipedia <https://en.wikipedia.org/wiki/Gettext#Translating>`_
