@@ -28,7 +28,7 @@ On this page, you see all currently available languages. Choose the one you want
 Add/Edit a Suggestion
 =====================
 
-Here, you can see all present language variable translations. Note the legend at the bottom of the table explaining the color codes in use.
+Here you can see all the present language variable translations. Note the legend at the bottom of the table explaining the color codes in use.
 
 img
 
