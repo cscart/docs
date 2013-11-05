@@ -37,7 +37,7 @@ The full list of supported fields is given below (mandatory fields are marked wi
     *   -   products*
         -   Shipped products
         -   —
-        -   JSON object with product order ID as key, quantity as value
+        -   JSON object with cart item ID as key and its quantity as value
     *   -   shipping*
         -   Shipping method name
         -   'Custom shipping method'
