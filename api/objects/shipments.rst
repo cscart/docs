@@ -47,7 +47,7 @@ The full list of supported fields is given below (mandatory fields are marked wi
         -   1
         -   Valid shipping method ID
     *   -   user_id*
-        -   User ID
+        -   Customer's user ID
         -   —
         -   Valid used ID
     *   -   tracking_number
