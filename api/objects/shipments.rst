@@ -61,7 +61,7 @@ The full list of supported fields is given below (mandatory fields are marked wi
     *   -   group_key
         -   Supplier group key
         -   Set automatically
-        -   Valid supplier grou key
+        -   Valid supplier group key
     *   -   order_timestamp
         -   Order creation timestamp
         -   Set automatically
