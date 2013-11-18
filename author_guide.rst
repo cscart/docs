@@ -171,7 +171,7 @@ PHP code can be inserted simply by using ``::`` (double colon) and indenting the
 To show a sample of code in another language, use the ``code-block`` directive with the language specified as its param:
 
     .. code-block:: rst
-        
+
         Here is some Python code:
 
             .. code-block:: python
@@ -208,6 +208,12 @@ Use this directive to show an additional piece of information, which can be safe
 
             Cakes are extremely popular in Ireland.
 
+Renders to:
+
+.. note::
+
+    Cakes are extremely popular in Ireland.
+
 Important
 """""""""
 
@@ -220,6 +226,12 @@ Use this directive to show a block of important information that is should not b
         .. important::
 
             The installation will fail if the persmissions are incorrect.
+
+Renders to:
+
+.. important::
+
+    The installation will fail if the persmissions are incorrect.
 
 Warning
 """""""
@@ -234,6 +246,12 @@ This directive should be used with caution. It indicates a dangerous turn in the
 
             All existing data will be lost!
 
+Renders to:
+
+.. warning::
+
+    All existing data will be lost!
+
 Hint
 """"
 
@@ -246,6 +264,12 @@ This directive is not used too often. Use it to point to a useful tool or tip:
         .. hint::
 
             You can use `Ctrl + C` to copy files and `Ctrl + V` to paste them.
+
+Renders to:
+
+.. hint::
+
+    You can use `Ctrl + C` to copy files and `Ctrl + V` to paste them.
 
 Images and Fancybox
 -------------------
