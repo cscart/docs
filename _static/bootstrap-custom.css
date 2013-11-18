@@ -234,3 +234,16 @@ blockquote p {
     font-weight: normal;
     line-height: 1.6;
 }
+
+.important {
+border: 1px solid #dddddd;
+border-radius: 4px;
+background: #f1f2de;
+text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+.hint {
+border: 1px solid #dddddd;
+border-radius: 4px;
+background: #def2e1;
+text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
