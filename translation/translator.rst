@@ -28,9 +28,11 @@ On this page, you see all currently available languages. Choose the one you want
 Add/Edit a Suggestion
 =====================
 
-Here you can see all the present language variable translations. Note the legend at the bottom of the table explaining the color codes in use.
+Here you can see all the present language variable translations. Note the legend at the bottom of the table explaining the color codes in use:
 
-.. fancybox:: img/lang_var_list.png
+.. image:: img/lang_var_list.png
+    :align: center
+    :alt: Language variable list
 
 *   **Language variable**—unique language variable name and its context to make it simplier to locate an entry in the CS-Cart or Multi-Vendor storefront or admin panels
 
@@ -40,7 +42,9 @@ Here you can see all the present language variable translations. Note the legend
 
 Double-click on any item or click **Details** to edit it:
 
-.. fancybox:: img/lang_var_edit.png
+.. image:: img/lang_var_edit.png
+    :align: center
+    :alt: Language variable details
 
 In the text area, enter your translation variant and click the **Suggest new translation** button.
 
