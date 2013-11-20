@@ -271,8 +271,8 @@ Renders to:
 
     You can use `Ctrl + C` to copy files and `Ctrl + V` to paste them.
 
-Images and Fancybox
--------------------
+Images
+------
 
 Images are inserted with the ``.. image::`` directive:
 
@@ -283,16 +283,6 @@ Images are inserted with the ``.. image::`` directive:
             :alt: CS-Cart logo
 
 **Always** set the ``:align:`` param to ``center`` and define the ``:alt:`` param.
-
-If an image is wider than 650 px, use the ``fancybox`` directive instead:
-
-    .. code-block:: rst
-
-        .. fancybox:: img/cscart_storefront.png
-
-.. important::
-
-    The ``.. fancybox::`` directive accepts the image path as its param, not as its content, therefore it must sit on the same line as the directive itself, separated with a whitespace.
 
 .. rubric:: Footnotes
 
