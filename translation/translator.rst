@@ -15,9 +15,13 @@ Go to the `CS-Cart Translator <http://translate.cs-cart.com/>`_ website and log 
 
 On this page, all the released and scheduled CS-Cart versions are listed. The released versions are separated from the scheduled ones by a horizontal line.
 
+.. image:: img/projects.png
+    :align: center
+    :alt: qwe
+    
 Select the nearest scheduled version:
 
-.. image:: img/projects.png
+.. image:: img/projects_01.png
     :align: center
     :alt: qwe
 
