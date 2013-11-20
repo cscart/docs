@@ -25,9 +25,7 @@ In the terminal, run the following commands:
 .. code-block:: bash
 
     $ hg clone https://bitbucket.org/cscart/docs-2.0    # Clone the repo
-    $ virtualenv docs-2.0                               # Create a virtual environment
     $ cd docs-2.0                                       # Switch to the docs directory
-    $ source bin/activate                               # Activate the environment
     $ pip install -r requirements.txt                   # Install dependencies
 
 Build
