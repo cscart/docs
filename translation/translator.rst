@@ -17,7 +17,9 @@ On this page, all the released and scheduled CS-Cart versions are listed. The re
 
 Select the nearest scheduled version:
 
-img
+.. image:: img/projects.png
+    :align: center
+    :alt: qwe
 
 On this page, you see all currently available languages. Choose the one you want to contribute to. For example, **Italian**.
 
