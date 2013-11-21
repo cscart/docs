@@ -126,7 +126,7 @@ Each request must be authenticated with user's e-mail and :ref:`API key <activat
 Get Data
 --------
 
-In order to get object data, send a GET HTTP request to the URL that refers to the according object.
+To get object data, send a GET HTTP request to the URL that refers to the according object.
 
 Request Example
 """""""""""""""
@@ -170,7 +170,7 @@ Refer to the :doc:`API objects <objects/index>` page for a complete list of supp
 Update Data
 -----------
 
-In order to update object data, send a PUT HTTP request to the URL that refers to the according object.
+To update object data, send a PUT HTTP request to the URL that refers to the according object.
 
 Only URLs referring to particular object IDs can be used (i.e. you cannot update all products at once.)
 
@@ -200,7 +200,7 @@ Updated object ID, e.g. ``{"product_id":"1"}``, or an :doc:`error <errors>`.
 Create Object
 -------------
 
-In order to create an object, send a POST HTTP request to the URL that refers to the according object type.
+To create an object, send a POST HTTP request to the URL that refers to the according object type.
 
 Only URLs referring to a whole object type (without ID) can be used.
 
@@ -229,7 +229,7 @@ Updated object ID, e.g. ``{"product_id":"1"}``, or an :doc:`error <errors>`.
 Delete Object
 -------------
 
-In order to delete an object, send a DELETE HTTP request to the URL that refers to the according object.
+To delete an object, send a DELETE HTTP request to the URL that refers to the according object.
 
 Only URLs referring to particular object IDs can be used (i.e. you cannot delete all products at once.)
 
