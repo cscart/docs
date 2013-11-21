@@ -13,17 +13,18 @@ Get Started
 
 Go to the `CS-Cart Translator <http://translate.cs-cart.com/>`_ website and log in using your `CS-Cart community forums <http://forum.cs-cart.com/>`_ username and password (the **Log in** link in the upper right corner of the page). If you don't have an account yet, just `create a new one <http://forum.cs-cart.com/index.php?app=core&module=global&section=register>`_—it's free.
 
-On this page, all the released and scheduled CS-Cart versions are listed. The released versions are separated from the scheduled ones by a horizontal line.
+On this page, all the released and scheduled CS-Cart versions are listed. 
+.. The released versions are separated from the scheduled ones by a horizontal line.
 
 .. image:: img/projects.png
     :align: center
-    :alt: qwe
+    :alt: Projects
     
 Select the nearest scheduled version:
 
-.. image:: img/projects_01.png
+.. image:: img/languages.png
     :align: center
-    :alt: qwe
+    :alt: Available languages
 
 On this page, you see all currently available languages. Choose the one you want to contribute to. For example, **Italian**.
 
