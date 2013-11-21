@@ -52,10 +52,10 @@ Activate API Access
 
 API access is activated/disabled on a per-user basis.
 
-In order to activate API access for a user:
+To activate API access for a user:
 
 #.  Log in to the CS-Cart admin panel
-#.  Do to **Customers → Administrators**
+#.  Go to **Customers → Administrators**
 #.  Open the admin account you want to activate API access to (e.g. admin@exaple.com)
 #.  Switch to the **API access** tab and check the **Yes, allow this user to use the API** box
 #.  Click **Save**
