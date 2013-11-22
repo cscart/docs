@@ -6,12 +6,12 @@ The translations are stored in the ``.po`` format. The ``.po`` file structure ad
 
 .. important::
 
-    Use :doc:`CS-Cart Translator <translator>` to contribute to a CS-Cart & Multi-Vendor translation. You only need to manually edit an exported ``.po`` file if you want to apply the modification locally.
+    Use :doc:`CS-Cart Translator <translator>` to contribute to CS-Cart & Multi-Vendor translation. You only need to manually edit an exported ``.po`` file if you want to apply the modification locally.
 
 Metadata
 ========
 
-Each ``.po`` file contains some necessary metadata in in the header:
+Each ``.po`` file contains some necessary metadata in the header:
 
     .. code-block:: po
 
