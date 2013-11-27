@@ -379,7 +379,7 @@ The full list of supported fields is given below (mandatory fields are marked wi
         -   Short description
         -   ''
         -   string
-    *   -   taxes
+    *   -   tax_ids
         -   Array of tax IDs
         -   empty array
         -   array
