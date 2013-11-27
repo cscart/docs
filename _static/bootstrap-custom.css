@@ -62,7 +62,7 @@ a:hover, .tabs .current a, .read-more, .footer-widgets a:hover, .comment-info .r
 }
 
 .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     z-index: 900;
@@ -150,9 +150,9 @@ a:hover, .tabs .current a, .read-more, .footer-widgets a:hover, .comment-info .r
     display: block;
     position: relative;
     height: 100%;
-    margin-top: 120px;
+    margin-top: 40px;
     padding-bottom: 60px;
-}
+    }
 
 .footer {
     margin: -48px auto 0;
@@ -236,14 +236,28 @@ blockquote p {
 }
 
 .important {
-border: 1px solid #dddddd;
-border-radius: 4px;
-background: #f1f2de;
-text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    background: #f1f2de;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
 }
 .hint {
-border: 1px solid #dddddd;
-border-radius: 4px;
-background: #def2e1;
-text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    background: #def2e1;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: relative;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    margin-bottom: 0;
+}
+
+ul.current li.current a.current {
+    font-weight: 600;
+    color: #006699;
 }
