@@ -10,6 +10,11 @@ URLs
 *   http://example.com/api/**categories/:id/products**—refer to all products of a particular :doc:`category <categories>`.
 *   http://example.com/api/**categories/:id/products/:id**—refer to a particular product in a particular category.
 
+Nested Objects
+==============
+
+*   :doc:`Product Features <product_features>`
+
 Filtering
 =========
 
