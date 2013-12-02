@@ -9,7 +9,7 @@ The list is sorted by priority, the more important the higher.
 Add-ons
 =======
 
-*   `Advanced Add-on Tutorial <http://docs.cs-cart.com/advanced-addon-tutorial>`_
+*   [DONE] `Advanced Add-on Tutorial <http://docs.cs-cart.com/advanced-addon-tutorial>`_
 *   `Add-on Licensing <http://docs.cs-cart.com/addon-licensing-tutorial>`_, `Storefront-Based Add-on Licensing in Ultimate Edition <http://docs.cs-cart.com/addon-licensing-multi-tutorial>`_ (merge)
 *   `Add-on Folder Structure <http://docs.cs-cart.com/add-on-folder-structure>`_
 *   `Add-on Scheme <http://docs.cs-cart.com/addon-scheme>`_
@@ -46,8 +46,3 @@ Core
 
     *   PHP Hooks
     *   Template Hooks
-
-API
-===
-
-*   HTTP Response Codes

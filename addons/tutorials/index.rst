@@ -7,4 +7,5 @@ Add-on Development Tutorials
     :titlesonly:
     :glob:
 
-    *
+    hello_world
+    advanced

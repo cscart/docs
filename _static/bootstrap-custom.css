@@ -54,6 +54,10 @@ a:hover, .tabs .current a, .read-more, .footer-widgets a:hover, .comment-info .r
     color: #009fee;
 }
 
+code, pre {
+    font-size: 90%;
+} 
+
 .navbar-inner {
     height: 40px;
     border-bottom: 2px solid rgba(219,219,219,0.3);
