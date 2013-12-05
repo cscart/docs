@@ -20,6 +20,7 @@ Contents:
 
     api/index
     addons/index
+    hooks/index
     translation/index
 
 .. toctree::
