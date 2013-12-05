@@ -21,8 +21,8 @@ API Response Errors
     *   -   405 "Method Not Allowed"
         -   Initialized method is not suppoted for the request-URI.
     *   -   406 "Not Acceptible"
-        -   The resource cannot generate a response in the format, specified in the request (the ``accept`` header has an invalid type).
+        -   The resource cannot generate a response in the format specified in the request (the ``accept`` header has an invalid type).
     *   -   415 "Unsupported Media Type"
-        -   An object has the format unsupported for the given request in the given method.
+        -   Invalid ``content-type`` header.
     *   -   500 "Internal Server Error"
         -   Server-side error. The request cannot be processed.
