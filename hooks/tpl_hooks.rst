@@ -35,7 +35,7 @@ TPL hooks are used to show additional data in an existing template. For example,
 
 How to Use a TPL Hook
 =====================
-Unlike PHP hooks, template hooks sould not be declared explicitly. A proper file naming and placing will do the trick.
+Unlike PHP hooks, template hooks should not be declared explicitly. A proper file naming and placing will do the trick.
 
 The naming algorithm is as follows:
 
