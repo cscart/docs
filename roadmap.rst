@@ -42,10 +42,10 @@ Core
 
         *   Pre- and Post-Controllers (based on http://docs.cs-cart.com/precontrollers-postcontrollers)
 
-*   `Hooks <http://docs.cs-cart.com/hooks>`_ (split into three topics: Introduction to Hooks, PHP Hooks, and Template Hooks)
+*   [DONE] `Hooks <http://docs.cs-cart.com/hooks>`_ (split into three topics: Introduction to Hooks, PHP Hooks, and Template Hooks)
 
-    *   PHP Hooks
-    *   Template Hooks
+    *   [DONE] PHP Hooks
+    *   [DONE] Template Hooks
 
 API
 ===
