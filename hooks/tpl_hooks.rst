@@ -1,6 +1,6 @@
-**************
-Template Hooks
-**************
+*********
+TPL Hooks
+*********
 
 TPL or template hooks are parts of a template enclosed in the tags:
 
