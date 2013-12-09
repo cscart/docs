@@ -18,6 +18,7 @@ Contents:
     :titlesonly:
 
     addons/index
+    hooks/index
 
 .. toctree::
     :maxdepth: 2
