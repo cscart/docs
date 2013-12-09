@@ -14,7 +14,7 @@ Add-ons
 *   `Add-on Folder Structure <http://docs.cs-cart.com/add-on-folder-structure>`_
 *   `Add-on Scheme <http://docs.cs-cart.com/addon-scheme>`_
 *   `Add-on Connection <http://docs.cs-cart.com/addon-connection>`_ (rewrite)
-    
+
 Core
 ====
 
@@ -45,7 +45,7 @@ Core
 *   [DONE] `Hooks <http://docs.cs-cart.com/hooks>`_ (split into three topics: Introduction to Hooks, PHP Hooks, and Template Hooks)
 
     *   [DONE] PHP Hooks
-    *   [DONE] Template Hooks
+    *   [DONE] TPL Hooks
 
 API
 ===
