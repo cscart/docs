@@ -8,4 +8,5 @@ CS-Cart Architecture Overview, Techologies Used
     :glob:
 
     mvc_model/index
+    mvc_view/index
     
