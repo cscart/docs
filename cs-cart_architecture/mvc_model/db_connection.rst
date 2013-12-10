@@ -35,6 +35,13 @@ Use this methods to establish a connection with a database on an external host:
 
 After calling these functions, requests will be addressed to the new database, for example::
 
+  $params = array(
+  ‘dbc_name’ => ‘backup’,
+  ‘table_prefix’ => ‘cs_cart’
+  );
+  db_initiate(‘localhost’, ‘db_user’, ‘db_password’, ‘db_name’, $params);
+  db_connect_to($params, ‘db_name’);
+
  $data = db_get_array("SELECT * FROM ?:products");
  
 In this example ``$data`` will contain data from the *cscart_products* table of the *cscart_backup* database, which is hosted on localhost.
