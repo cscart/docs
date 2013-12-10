@@ -22,6 +22,7 @@ Contents:
     addons/index
     hooks/index
     translation/index
+    cs-cart_architecture/index
 
 .. toctree::
     :maxdepth: 2
