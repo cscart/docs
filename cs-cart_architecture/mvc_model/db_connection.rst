@@ -37,7 +37,7 @@ After calling these functions, requests will be addressed to the new database, f
 
   $params = array(
   'dbc_name' => 'backup',
-  'table_prefix' => 'cs_cart'
+  'table_prefix' => 'cscart'
   );
   db_initiate('localhost', 'db_user', 'db_password', 'cscart_backup', $params);
   db_connect_to($params, 'cscart_backup');
