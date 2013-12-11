@@ -9,4 +9,5 @@ CS-Cart Architecture Overview, Techologies Used
 
     mvc_model/index
     mvc_view/index
+    mvc_controller/index
     
