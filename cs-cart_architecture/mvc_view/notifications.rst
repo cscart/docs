@@ -12,7 +12,7 @@ There are five standard types of notifications:
  * Order error on checkout (code type ``'O'``)
  * Information (code type ``'I'``)
 
-Each notification type has its color: notification - green, error - red, warning - orange. Visual format is defined in CSS file of that area where the notification is called.
+Each notification type has its color: notification - green, error - red, warning - orange, order error on checkout - orange, and information is opened in a pop-up dialog. Visual format is defined in CSS file of that area where the notification is called.
 
 Notification is created through the function ``fn_set_notification`` (*/functions/fn.common.php*).
 
