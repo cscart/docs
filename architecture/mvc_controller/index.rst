@@ -1,6 +1,6 @@
-***************
-MVC: Controller
-***************
+***********
+Controllers
+***********
 
 Basic schema of the software functioning consists in calling one of the two main executable PHP files (*admin.php* or *index.php*) and further consecutive execution of PHP files implementing the program functionality.
 

@@ -1,6 +1,6 @@
-*********
-MVC: View
-*********
+********************
+Database Interaction
+********************
 
 .. toctree::
     :maxdepth: 2
