@@ -14,16 +14,17 @@ Add-ons
 *   `Add-on Folder Structure <http://docs.cs-cart.com/add-on-folder-structure>`_
 *   `Add-on Scheme <http://docs.cs-cart.com/addon-scheme>`_
 *   `Add-on Connection <http://docs.cs-cart.com/addon-connection>`_ (rewrite)
+*   [DONE] `Scheme Extending <http://docs.cs-cart.com/extend-schemes>`_
 
 Core
 ====
 
-*   `CS-Cart Architecture Overview <http://docs.cs-cart.com/introduction>`_, `Techologies Used <http://docs.cs-cart.com/technologies-used>`_ (merge)
+*   [DONE] `CS-Cart Architecture Overview <http://docs.cs-cart.com/introduction>`_, `Techologies Used <http://docs.cs-cart.com/technologies-used>`_ (merge)
 
     *   MVC: Model (Database Interaction)
 
-        *   Building Proper Database Requests with Placeholders (based on http://docs.cs-cart.com/database-standards)
-        *   `Connect Additional Databases <http://docs.cs-cart.com/connect-additional-databases>`_ (rename to Connecting Additional Databases)
+        *   [DONE] Building Proper Database Requests with Placeholders (based on http://docs.cs-cart.com/database-standards)
+        *   [DONE] `Connect Additional Databases <http://docs.cs-cart.com/connect-additional-databases>`_ (rename to Connecting Additional Databases)
 
     *   MVC: View (Templates, CSS, LESS, JavaScript, etc.)
 
@@ -32,13 +33,13 @@ Core
             Move the whole Design and Layout section from http://docs.cs-cart.com/ here, re-arranging information.
 
         *   Template Editor
-        *   `Microformats <http://docs.cs-cart.com/microformats>`_
-        *   `Notifications <http://docs.cs-cart.com/notifications>`_
+        *   [DONE] `Microformats <http://docs.cs-cart.com/microformats>`_
+        *   [DONE] `Notifications <http://docs.cs-cart.com/notifications>`_
         *   Tooltips
-        *   `AJAX <http://docs.cs-cart.com/ajaxrequests>`_ (rename to Using AJAX Requests)
+        *   [DONE] `AJAX <http://docs.cs-cart.com/ajaxrequests>`_ (rename to Using AJAX Requests)
         *   CSS Minimization (based on http://docs.cs-cart.com/special-classes)
 
-    *   MVC: Controller (based on http://docs.cs-cart.com/docs-controllers)
+    *   [DONE] MVC: Controller (based on http://docs.cs-cart.com/docs-controllers)
 
         *   Pre- and Post-Controllers (based on http://docs.cs-cart.com/precontrollers-postcontrollers)
 
@@ -50,4 +51,4 @@ Core
 API
 ===
 
-*   HTTP Response Codes
+*   [DONE] HTTP Response Codes

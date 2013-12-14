@@ -4,7 +4,7 @@ Controllers
 
 Basic schema of the software functioning consists in calling one of the two main executable PHP files (*admin.php* or *index.php*) and further consecutive execution of PHP files implementing the program functionality.
 
-**1. index.php or admin.php -> 2. init.php -> 3. [controller_name].php**
+**1. index.php or admin.php ? 2. init.php ? 3. [controller_name].php**
 
 In CS-Cart terms a file connected under number three is named a controller. Data handling in the program is performed in this file - extracting the necessary data from the database, data handling, calculations, transformations, etc. and preparation of the data for further display.
 
@@ -20,7 +20,7 @@ Controller connection is carried out by the function ``[/core/fn.control.php]/fn
     * Prepares an ordered list of precontrollers and postcontrollers (from add-ons and the core) for consecutive connection in the right order.
     * Automatically defines a template to display.
 
-**Example 1**
+**Example**
 
 We have the value of the parameter ``dispatch=products.manage`` and the executable file *admin.php*, or, in other words, it looks like this *http://cscart_dir/admin.php?dispatch=products.manage* in the address bar of the browser.
 
@@ -50,16 +50,16 @@ Processing of a ``POST`` request should always be performed prior to processing 
 
 The parameter ``CONTROLLER_STATUS_OK`` contains a constant with the success status of the controller performance, the second parameter is a string with URI for redirection after processing the POST request.
 
-**Example 1**::
+**Example**::
 
- if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
  
-    if ($mode == 'add') {
-        // here comes the code which should be executed when submitting product addition form
-     }
+        if ($mode == 'add') {
+            // here comes the code which should be executed when submitting product addition form
+        }
  
-    return array(CONTROLLER_STATUS_OK, "$index_script?dispatch=products$suffix");
- }
+        return array(CONTROLLER_STATUS_OK, "$index_script?dispatch=products$suffix");
+    }
 
 GET request
 ===========
@@ -68,9 +68,9 @@ Section of processing a ``GET`` request is always placed after the ``POST`` bloc
 
 **Example 1**::
 
- if ($mode == 'manage') {
-      // here comes the code which should be executed when running "http://cscart_dir/admin.php?dispatch=products.manage"
- }
+    if ($mode == 'manage') {
+         // here comes the code which should be executed when running "http://cscart_dir/admin.php?dispatch=products.manage"
+    }
 
 Here is given a part of code that checks the value of the parameter ``mode`` (*dispatch=controller.mode*) and executes the code within a conditional operator when the value equals ``manage``. This code will be executed on ``GET`` request.
 
@@ -88,13 +88,13 @@ Here ``template_var_name`` defines a name of the variable available in the templ
 
 **Example 2**::
 
- if ($mode == 'manage') {
-     $product_name = 'Product 1';
-     $product_description = 'Product description';
-     $view->assign('tpl_product_name', $product_name);
-     $view->assign('tpl_product_description', $product_description);
+    if ($mode == 'manage') {
+        $product_name = 'Product 1';
+        $product_description = 'Product description';
+        $view->assign('tpl_product_name', $product_name);
+        $view->assign('tpl_product_description', $product_description);
 
- }
+    }
 
 After this code is executed in the controller, the control is transferred to the templater, for which two variables ``$tpl_product_name`` and ``$tpl_product_description`` will be available.
 
@@ -119,14 +119,14 @@ After a controller is executed and control is returned to ``fn_dispatch()``, it 
 
 .. note::
 
- Note. It can be specified in a controller, that instead of transferring control to the templater it is necessary to terminate the script execution or redirect to another address.
+    It can be specified in a controller, that instead of transferring control to the templater it is necessary to terminate the script execution or redirect to another address.
 
 By default the path to this template is defined automatically as follows:
 
 * Administration panel: /backend/templates/views/[controller_name]/[mode_name].tpl 
 * Customer area: /themes/[theme name]/templates/views/[controller_name]/[mode_name].tpl
 
-**Example 1**:
+**Example**:
 
  *http://cscart_dir/admin.php?dispatch=products.manage*
 

@@ -1,6 +1,6 @@
-*****
-Hooks
-*****
+*******
+Hooking
+*******
 
 Hooking is a concept in programming that deals with control flow. A hook is just a special place in the source code which serves as an entry point for some external code.
 

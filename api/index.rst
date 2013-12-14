@@ -34,7 +34,6 @@ CS-Cart API:
     :titlesonly:
 
     errors
-    extending_with_addons
 
 Useful Tools
 ============

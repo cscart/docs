@@ -1,6 +1,6 @@
-**************************
-Extending API with Add-ons
-**************************
+*************
+Extending API
+*************
 
 In order to extend the API with a new entity with an add-on:
 
