@@ -18,11 +18,10 @@ Contents:
     :titlesonly:
     :glob:
 
+    core/index
     api/index
     addons/index
-    hooks/index
     translation/index
-    architecture/index
 
 .. toctree::
     :maxdepth: 2
