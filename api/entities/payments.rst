@@ -3,10 +3,10 @@ Payment Methods
 ***************
 
 URLs
-=====
+====
 
-*   http://example.com/api/**payments**—refer to all products. Only GET and POST are supported.
-*   http://example.com/api/**payments/<id>**—refer to a particular product. GET, PUT, and DELETE are supported.
+*   http://example.com/api/**payments**—refer to all products. Only ``GET`` and ``POST`` are supported.
+*   http://example.com/api/**payments/<id>**—refer to a particular product. ``GET``, ``PUT``, and ``DELETE`` are supported.
 
 Fields
 ======

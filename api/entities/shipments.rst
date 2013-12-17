@@ -3,10 +3,10 @@ Shipments
 *********
 
 URLs
-=====
+====
 
-*   http://example.com/api/**shipments**—refer to all shipments. Only GET and POST are supported.
-*   http://example.com/api/**shipments/:id**—refer to a particular shipment. GET, PUT, and DELETE are supported.
+*   http://example.com/api/**shipments**—refer to all shipments. Only ``GET`` and ``POST`` are supported.
+*   http://example.com/api/**shipments/:id**—refer to a particular shipment. ``GET``, ``PUT``, and ``DELETE`` are supported.
 
 Fields
 ======

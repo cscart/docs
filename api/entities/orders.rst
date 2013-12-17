@@ -3,10 +3,10 @@ Orders
 ******
 
 URLs
-=====
+====
 
-*   http://example.com/api/**orders**—refer to all orders. Only GET and POST are supported.
-*   http://example.com/api/**orders/<id>**—refer to a particular order. GET, PUT, and DELETE are supported.
+*   http://example.com/api/**orders**—refer to all orders. Only ``GET`` and ``POST`` are supported.
+*   http://example.com/api/**orders/<id>**—refer to a particular order. ``GET``, ``PUT``, and ``DELETE`` are supported.
 
 Fields
 ======

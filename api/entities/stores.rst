@@ -3,10 +3,10 @@ Stores
 ******
 
 URLs
-=====
+====
 
-*   http://example.com/api/**stores**—refer to all stores. Only GET and POST are supported.
-*   http://example.com/api/**stores/:id**—refer to a particular store. GET, PUT, and DELETE are supported.
+*   http://example.com/api/**stores**—refer to all stores. Only ``GET`` and ``POST`` are supported.
+*   http://example.com/api/**stores/:id**—refer to a particular store. ``GET``, ``PUT``, and ``DELETE`` are supported.
 
 Examples
 ========

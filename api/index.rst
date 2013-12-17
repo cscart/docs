@@ -16,10 +16,10 @@ CS-Cart API:
 
     4 methods are available to view and modify objects:
 
-    *   GET—get object data
-    *   PUT—update object data
-    *   POST—create new object
-    *   DELETE—delete object
+    *   ``GET``—get object data
+    *   ``PUT``—update object data
+    *   ``POST``—create new object
+    *   ``DELETE``—delete object
 
 *   Accepts and returns data in JSON format
 
@@ -27,7 +27,7 @@ CS-Cart API:
     :maxdepth: 2
     :titlesonly:
 
-    objects/index
+    entities/index
 
 .. toctree::
     :maxdepth: 2
@@ -95,13 +95,13 @@ Each request must be authenticated with user's e-mail and :ref:`API key <activat
 
     .. code-block:: bash
 
-        curl --user admin@example.com:APIkey -X GET 'http://example.com/api/users/'
+        curl --user admin@example.com:APIkey -X ``GET`` 'http://example.com/api/users/'
 
 *   Inline passing in the URL:
 
     .. code-block:: bash
 
-        curl --basic -X GET 'http://admin%40example.com:APIkey@example.com/api/users/'
+        curl --basic -X ``GET`` 'http://admin%40example.com:APIkey@example.com/api/users/'
 
     .. note:: ``@`` must be replaced with ``%40``
 
@@ -109,7 +109,7 @@ Each request must be authenticated with user's e-mail and :ref:`API key <activat
 
     .. code-block:: bash
 
-        curl --header 'Authorization: Basic <base64-encoded email:APIkey pair>=' -X GET 'http://example.com/api/users/'
+        curl --header 'Authorization: Basic <base64-encoded email:APIkey pair>=' -X ``GET`` 'http://example.com/api/users/'
 
     .. note::
 
@@ -122,10 +122,10 @@ Each request must be authenticated with user's e-mail and :ref:`API key <activat
 
 .. _get:
 
-Get Data
---------
+Get Data (``GET``)
+------------------
 
-To get object data, send a GET HTTP request to the URL that refers to the according object.
+To get object data, send a ``GET`` HTTP request to the URL that refers to the according object.
 
 Request Example
 """""""""""""""
@@ -134,7 +134,7 @@ Get data about the product with the ID 1:
 
 .. code-block:: bash
 
-    curl --user admin@example.com:APIkey -X GET 'http://example.com/api/products/1'
+    curl --user admin@example.com:APIkey -X ``GET`` 'http://example.com/api/products/1'
 
 Filtering
 """""""""
@@ -145,7 +145,7 @@ For example, you get all products with non-free shipping:
 
 .. code-block:: bash
 
-    curl --user admin@example.com:APIkey -X GET 'http://example.com/api/products?free_shipping=N'
+    curl --user admin@example.com:APIkey -X ``GET`` 'http://example.com/api/products?free_shipping=N'
 
 You can combine conditions.
 
@@ -153,7 +153,7 @@ Get all downloadable products with ``company_id`` 1:
 
 .. code-block:: bash
 
-    curl --user admin@example.com:APIkey -X GET 'http://example.com/api/products?is_edp=Y&company_id=1'
+    curl --user admin@example.com:APIkey -X ``GET`` 'http://example.com/api/products?is_edp=Y&company_id=1'
 
 Response
 """"""""
@@ -162,20 +162,20 @@ JSON array of matching objects (e.g. the ``products`` key) and the search query 
 
 The matching objects value is an array of object IDs as keys and object field arrays as values.
 
-Refer to the :doc:`API objects <objects/index>` page for a complete list of supported fields for all supported objects.
+Refer to the :doc:`API objects <entities/index>` page for a complete list of supported fields for all supported objects.
 
 .. _put:
 
-Update Data
------------
+Update Data (``PUT``)
+---------------------
 
-To update object data, send a PUT HTTP request to the URL that refers to the according object.
+To update object data, send a ``PUT`` HTTP request to the URL that refers to the according object.
 
 Only URLs referring to particular object IDs can be used (i.e. you cannot update all products at once.)
 
 The submitted data must be a JSON array of keys and values for the object fields (e.g. ``{'fieldName1: value1, fieldName2: value2}``.)
 
-Refer to the :doc:`API objects <objects/index>` page for a complete list of supported fields for all supported objects.
+Refer to the :doc:`API objects <entities/index>` page for a complete list of supported fields for all supported objects.
 
 .. important::
 
@@ -187,7 +187,7 @@ Update name of the product with the ID 1:
 
 ..  code:: bash
 
-    curl --user admin@example.com:APIkey --header 'Content-Type: application/json' -d '{"product": "New Product Name"}' -X PUT 'http://example.com/api/products/1'
+    curl --user admin@example.com:APIkey --header 'Content-Type: application/json' -d '{"product": "New Product Name"}' -X ``PUT`` 'http://example.com/api/products/1'
 
 Response
 """"""""
@@ -196,16 +196,16 @@ Updated object ID, e.g. ``{"product_id":"1"}``, or an :doc:`error <errors>`.
 
 .. _post:
 
-Create Object
--------------
+Create Object (``POST``)
+------------------------
 
-To create an object, send a POST HTTP request to the URL that refers to the according object type.
+To create an object, send a ``POST`` HTTP request to the URL that refers to the according object type.
 
 Only URLs referring to a whole object type (without ID) can be used.
 
 The submitted data must be a JSON array of keys and values for the object fields (e.g. ``{'fieldName1: value1, fieldName2: value2}``.)
 
-Some fields are mandatory for object creating. Refer to the :doc:`API objects <objects/index>` page for a complete list of supported fields for all supported objects.
+Some fields are mandatory for object creating. Refer to the :doc:`API objects <entities/index>` page for a complete list of supported fields for all supported objects.
 
 .. important::
 
@@ -218,17 +218,17 @@ Create a new product with the name "My Awesome Product":
 
 .. code-block:: bash
 
-    curl --user admin@example.com:APIkey --header 'Content-Type: application/json' -d '{"product": "My Awesome Product"}' -X POST 'http://example.com/api/products'
+    curl --user admin@example.com:APIkey --header 'Content-Type: application/json' -d '{"product": "My Awesome Product"}' -X ``POST`` 'http://example.com/api/products'
 
 Response
 """"""""
 
 Updated object ID, e.g. ``{"product_id":"1"}``, or an :doc:`error <errors>`.
 
-Delete Object
--------------
+Delete Object (``DELETE``)
+--------------------------
 
-To delete an object, send a DELETE HTTP request to the URL that refers to the according object.
+To delete an object, send a ``DELETE`` HTTP request to the URL that refers to the according object.
 
 Only URLs referring to particular object IDs can be used (i.e. you cannot delete all products at once.)
 
@@ -239,7 +239,7 @@ Delete the product with the id 12:
 
 .. code-block:: bash
 
-    curl --user admin@example.com:APIkey -X DELETE 'http://example.com/api/products/12'
+    curl --user admin@example.com:APIkey -X ``DELETE`` 'http://example.com/api/products/12'
 
 Response
 """"""""

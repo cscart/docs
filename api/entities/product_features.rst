@@ -3,10 +3,10 @@ Product Features
 ****************
 
 URLs
-=====
+====
 
-*   http://example.com/api/**features**—refer to all product features. Only GET and POST are supported.
-*   http://example.com/api/**features/:id**—refer to a particular product feature. GET, PUT, and DELETE are supported.
+*   http://example.com/api/**features**—refer to all product features. Only ``GET`` and ``POST`` are supported.
+*   http://example.com/api/**features/:id**—refer to a particular product feature. ``GET``, ``PUT``, and ``DELETE`` are supported.
 *   http://example.com/api/**products/:id/features**—refer to all features of a particular :doc:`product <products>`.
 *   http://example.com/api/**products/:id/features/:id**—refer to a particular feature in a particular product.
 

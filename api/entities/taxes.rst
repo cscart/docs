@@ -3,10 +3,10 @@ Taxes
 *****
 
 URLs
-=====
+====
 
-*   http://example.com/api/**taxes/**—refer to all tax objects. Only GET and POST are supported.
-*   http://example.com/api/**taxes/:id**—refer to a particular tax object. GET, PUT, and DELETE are supported.
+*   http://example.com/api/**taxes/**—refer to all tax objects. Only ``GET`` and ``POST`` are supported.
+*   http://example.com/api/**taxes/:id**—refer to a particular tax object. ``GET``, ``PUT``, and ``DELETE`` are supported.
 
 Fields
 ======

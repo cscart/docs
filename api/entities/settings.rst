@@ -3,10 +3,10 @@ Settings
 ********
 
 URLs
-=====
+====
 
-*   http://example.com/api/**settings**—refer to all settings. Only GET and POST are supported.
-*   http://example.com/api/**settings/:id**—refer to a particular setting. GET, PUT, and DELETE are supported.
+*   http://example.com/api/**settings**—refer to all settings. Only ``GET`` and ``POST`` are supported.
+*   http://example.com/api/**settings/:id**—refer to a particular setting. ``GET``, ``PUT``, and ``DELETE`` are supported.
 
 Fields
 ======

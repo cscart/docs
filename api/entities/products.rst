@@ -3,10 +3,10 @@ Products
 ********
 
 URLs
-=====
+====
 
-*   http://example.com/api/**products**—refer to all products. Only GET and POST are supported.
-*   http://example.com/api/**products/:id**—refer to a particular product. GET, PUT, and DELETE are supported.
+*   http://example.com/api/**products**—refer to all products. Only ``GET`` and ``POST`` are supported.
+*   http://example.com/api/**products/:id**—refer to a particular product. ``GET``, ``PUT``, and ``DELETE`` are supported.
 *   http://example.com/api/**categories/:id/products**—refer to all products of a particular :doc:`category <categories>`.
 *   http://example.com/api/**categories/:id/products/:id**—refer to a particular product in a particular category.
 
