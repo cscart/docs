@@ -22,7 +22,7 @@ Supported params are given below (mandatory param is marked with **\***).
 
 *   ``email``\*—user login e-mail. Can be both an admin's or a customer's e-mail. If a not registered e-mail is provided, a 404 error is returned.
 
-*   ``redirect_url``—URL fro the user to be redirected to immediatelly after following the link.
+*   ``redirect_url``—URL for the user to be redirected to immediatelly after following the link.
 
 
 Response
