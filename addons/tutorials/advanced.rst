@@ -41,7 +41,7 @@ In the same directory, create the file *init.php* with the following content (:d
     .. literalinclude:: files/init.php
         :linenos:
 
-.. hint:: 
+.. hint::
 
     Function names are usually self-explanatory in CS-Cart (e.g. ``get_products`` to get products). Hooks are normally named after the function they are placed in, with the  ``_pre`` or ``_post`` suffix for a pre- and post-processing hook accordingly (e.g. ``get_products_pre`` and ``get_products_post``).
 
@@ -63,16 +63,16 @@ The function ``fn_advanced_addon_get_category_data_pre`` will get the currently 
 .. important::
 
     It is essential to follow the naming convention: ``fn_`` + *[addon id]* + ``_`` + *[hook name]*.
-    
+
     A function named out ot this convention will be ignored.
 
 
-Showing Data in the Admin Panel: *extra.tpl*, *index.post.php*
+Showing Data in the Admin Panel: *extra.pre.tpl*, *index.post.php*
 ==============================================================
 
 In order to show the collected data in the admin panel we are going to use the TPL hook ``extra`` in the admin panel dashboard template (*skins/basic/admin/views/index.tpl*).
 
-Go to the directory *skins/basic/admin/addons* and create a directory named *advanced_addon*. In this directory, create a subdirectory *hooks* and inside it another subdirectory *index*. 
+Go to the directory *skins/basic/admin/addons* and create a directory named *advanced_addon*. In this directory, create a subdirectory *hooks* and inside it another subdirectory *index*.
 
 In this directory, create the file *extra.pre.tpl* with the following content (:download:`download <files/extra.pre.tpl>`):
 
@@ -84,8 +84,8 @@ In this directory, create the file *extra.pre.tpl* with the following content (:
 
 .. important::
 
-    Unlike PHP hooks, TPL hooks should not be explicitly declared. It is sufficient to just place a properly named template in the properly named directory. 
-    
+    Unlike PHP hooks, TPL hooks should not be explicitly declared. It is sufficient to just place a properly named template in the properly named directory.
+
     The location and naming convention is as follows: *skins/[skin name]/[admin|customer]/addons/[addon id]/hooks/[template name]/[hook name].[pre|post].tpl.*
 
 The template cannot gather data from the database itself, this is performed by a post-controller for the *index.php* controller.
