@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<addon scheme="2.0">
+	<id>advanced_addon</id>
+	<name>Advanced Add-on</name>
+	<description>Advanced Add-on</description>
+	<version>1.0</version>
+	<priority>100500</priority>
+	<status>active</status>
+	<queries>
+        <item for="install">DROP TABLE IF EXISTS ?:advanced_addon_data;</item>
+		<item for="install">
+            CREATE TABLE `?:advanced_addon_data` (
+				`user_id` int(11) unsigned NOT NULL DEFAULT 0,
+				`categories` text NOT NULL DEFAULT '',
+				PRIMARY KEY (`user_id`)
+			) Engine=MyISAM DEFAULT CHARSET UTF8;
+		</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:advanced_addon_data;</item>
+	</queries>
+</addon>

@@ -1,5 +1,5 @@
-Add-on Development Tutorials
-============================
+Tutorials
+=========
 
 .. toctree::
     :maxdepth: 2
