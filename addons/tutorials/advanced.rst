@@ -2,7 +2,7 @@
 Advanced Add-on Tutorial
 ************************
 
-This tutorial demonstrates some advanced techniques in add-on development, like using *hooks* and *post-controllers*.
+This tutorial demonstrates some advanced techniques in add-on development, like using :doc:`hooks <../hooking/index>` and *post-controllers*.
 
 .. note::
 
