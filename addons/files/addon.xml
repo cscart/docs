@@ -1,0 +1,338 @@
+<?xml version="1.0"?>
+<!-- 
+    Add-on scheme version 2.0 description
+    All parameters that are not marked as optional must be defined in the scheme. 
+    @edition_type - An optional attribute available for any settings-related element. It defines editions in which one or another setting is available. If left empty, the parent element value will be used. If the latter is not set, the value is considered ROOT
+-->
+<addon scheme="2.0" edition_type="ROOT,ULT:VENDOR">
+    <!-- Add-on identifier. It must be equal to the catalog name in which the add-on resides -->
+    <id>sample_addon_2_0</id>
+    <!-- Add-on version -->
+    <version>1.0</version>
+    <!-- Add-on native (default) language. An optional parameter; if not specified, the language will be recognized as English (EN)-->
+    <default_language>en</default_language>
+    <!-- Add-on name in the default language -->
+    <name>2.0 scheme addon sample</name>
+    <!-- Add-on description in the default language -->
+    <description>This is description of addon</description>
+    <!-- Add-on priority. The higher the priority the later the add-on is connected -->
+    <priority>100</priority>
+    <!-- Status to be set after the add-on installation (active/disabled); "disabled" by default -->
+    <status>active</status>
+    <!-- Defines CS-Cart products, in which the add-on will be automatically includded in the list after installation. -->
+    <auto_install>PROFESSIONAL,MULTIVENDOR,ULTIMATE</auto_install>
+     <!-- Block for the other add-ons compatibilities descriptions -->
+    <compatibility>
+        <!-- Dependencies. These add-ons must be installed in order to install the current one; otherwise an error message will be displayed -->
+        <dependencies>discussion,form_builder</dependencies>
+        <!-- Conflicts. These add-ons will be automatically disabled before the current add-on installation starts and the notification will be displayed-->
+        <conflicts>catalog_mode,reward_points</conflicts>
+    </compatibility>
+    <!-- Translations for the non-default languages -->
+    <translations>
+        <!--
+            @for - points to the property for which the translation is provided. Possible values: name/description/tooltip. Optional. The default value is "name"
+            @lang - the translation language code. If there is no language with the given code, the translation will not be installed
+        -->
+        <item for="name" lang="ru">Пример аддона версии 2.0</item>
+        <item for="description" lang="ru">Описание для аддона версии 2.0</item>
+    </translations>
+    <!-- Add-on settings block. Optional.
+        @layout - Defines where the settings page will be opened (popup/separate). Optional attribute; "popup" by default
+    -->
+    <settings layout="separate" edition_type="ROOT,ULT:VENDOR">
+        <!-- List of tabs on the add-on settings page -->
+        <sections>
+            <!-- Tab for settings.
+                @id - text identifier. This setting can be accessed later on through Registry::get('addons.[addon_id].[setting_id]')
+                @edition_type - list of editions in which the tab will be available. Optional
+            -->
+            <section id="section1">
+                <!-- Tab name in the default language -->
+                <name>Generic settings</name>
+                <translations>
+                    <item lang="ru">Обычные настройки</item>
+                </translations>
+                <!-- List of settings in the tab -->
+                <items>
+                    <!-- Add-on settings
+                        @id - setting identifier.
+                        @edition_type - list of editions in which the setting will be available.
+                    -->
+                    <item id="header">
+                        <!-- Element type: 
+                            input, textarea, password, checkbox, selectbox, multiple select, 
+                            multiple checkboxes, countries list, states list, 
+                            file, info, header, template
+                        -->
+                        <type>header</type>
+                        <!-- Setting name in the default language -->
+                        <name>Header</name>
+                        <!-- Setting translations -->
+                        <translations>
+                            <item lang="ru">Заголовок</item>
+                        </translations>
+                        <variants/>
+                    </item>
+                    <item id="input">
+                        <type>input</type>
+                        <name>Input</name>
+                        <!-- Tooltip -->
+                        <tooltip>Tooltip</tooltip>
+                        <translations>
+                            <item lang="ru">Поле ввода</item>
+                            <!-- It is possible to provide translations for tooltips too -->
+                            <item lang="ru" for="tooltip">Подсказка</item>
+                        </translations>
+                        <variants/>
+                    </item>
+                    <item id="password">
+                        <type>password</type>
+                        <name>Password input</name>
+                        <translations>
+                            <item lang="ru">Поле ввода пароля</item>
+                        </translations>
+                        <variants/>
+                    </item>
+                    <item id="checkbox">
+                        <type>checkbox</type>
+                        <name>Checkbox</name>
+                        <translations>
+                            <item lang="ru">Флажок</item>
+                        </translations>
+                        <variants/>
+                    </item>
+                    <item id="textarea">
+                        <type>textarea</type>
+                        <name>Textarea</name>
+                        <!-- Default value; must be variant id for lists (and items with variants like selectbox, multiple select etc. -->
+                        <default_value>Sample textarea text</default_value>
+                        <translations>
+                            <item lang="ru">Поле ввода текста</item>
+                        </translations>
+                        <variants/>
+                    </item>
+                    <item id="radiogroup">
+                        <type>radiogroup</type>
+                        <name>Radio group box</name>
+                        <tooltip>Tooltip</tooltip>
+                        <default_value>radio_2</default_value>
+                        <!-- Variants - for types selectbox, multiple select, 
+                            multiple checkboxes, combo select -->
+                        <variants>
+                            <!-- @id - variant identifier -->
+                            <item id="radio_1">
+                                <!-- Variant name -->
+                                <name>Radio button 1</name>
+                                <!-- Variant translations; similar as for the add-on name, but the parameter "for" in not used -->
+                                <translations>
+                                    <item lang="ru">Радио кнопка 1</item>
+                                </translations>
+                            </item>
+                            <item id="radio_2">
+                                <name>Radio button 2</name>
+                                <translations>
+                                    <item lang="ru">Радио кнопка 2</item>
+                                </translations>
+                            </item>
+                        </variants>
+                        <translations>
+                            <item lang="ru">Секция с радиокнопками</item>
+                            <item lang="ru" for="tooltip">Подсказка</item>
+                        </translations>
+                    </item>
+                    <item id="file">
+                        <type>file</type>
+                        <name>File select</name>
+                        <translations>
+                            <item lang="ru">Поле выбора файла</item>
+                        </translations>
+                        <variants/>
+                    </item>
+                </items>
+            </section>
+            <section id="section2">
+                <name>Selects</name>
+                <translations>
+                    <item lang="ru">Списки</item>
+                </translations>
+                <items>
+                    <item id="selectbox">
+                        <type>selectbox</type>
+                        <name>Selectbox</name>
+                        <variants>
+                            <item id="select_box_1">
+                                <name>Select box item 1</name>
+                                <translations>
+                                    <item lang="ru">Элемент выпадающего списка 1</item>
+                                </translations>
+                            </item>
+                            <item id="select_box_2">
+                                <name>Select box item 2</name>
+                                <translations>
+                                    <item lang="ru">Элемент выпадающего списка 2</item>
+                                </translations>
+                            </item>
+                        </variants>
+                        <translations>
+                            <item lang="ru">Выпадающий список</item>
+                        </translations>
+                    </item>
+                    <item id="countries_list">
+                        <type>countries list</type>
+                        <name>Countries list</name>
+                        <translations>
+                            <item lang="ru">Список стран</item>
+                        </translations>
+                        <variants/>
+                    </item>
+                    <item id="states_list">
+                        <type>states list</type>
+                        <name>States list</name>
+                        <translations>
+                            <item lang="ru">Список регионов</item>
+                        </translations>
+                        <variants/>
+                    </item>
+                    <item id="multiple_select">
+                        <type>multiple select</type>
+                        <name>Multiple select</name>
+                        <translations>
+                            <item lang="ru">Множественный выбор</item>
+                        </translations>
+                        <variants>
+                            <item id="select_box_1">
+                                <name>Select box item 1</name>
+                                <translations>
+                                    <item lang="ru">Элемент списка 1</item>
+                                </translations>
+                            </item>
+                            <item id="select_box_2">
+                                <name>Select box item 2</name>
+                                <translations>
+                                    <item lang="ru">Элемент списка 2</item>
+                                </translations>
+                            </item>
+                            <item id="select_box_3">
+                                <name>Select box item 3</name>
+                                <translations>
+                                    <item lang="ru">Элемент списка 3</item>
+                                </translations>
+                            </item>
+                        </variants>
+                    </item>
+                    <item id="multiple_checkboxes">
+                        <type>multiple checkboxes</type>
+                        <name>Multiple select check boxes</name>
+                        <translations>
+                            <item lang="ru">Множественный выбор флажков</item>
+                        </translations>
+                        <variants>
+                            <item id="select_box_1">
+                                <name>Select box item 1</name>
+                                <translations>
+                                    <item lang="ru">Элемент выпадающего списка 1</item>
+                                </translations>
+                            </item>
+                            <item id="select_box_2">
+                                <name>Select box item 2</name>
+                                <translations>
+                                    <item lang="ru">Элемент выпадающего списка 2</item>
+                                </translations>
+                            </item>
+                            <item id="select_box_3">
+                                <name>Select box item 3</name>
+                                <translations>
+                                    <item lang="ru">Элемент выпадающего списка 3</item>
+                                </translations>
+                            </item>
+                        </variants>
+                        <default_value>select_box_2</default_value>
+                    </item>
+                </items>
+            </section>
+            <section id="section3">
+                <name>Additional settings</name>
+                <translations>
+                    <item lang="ru">Особые настройки</item>
+                </translations>
+                <items>
+                    <item id="selectable_box">
+                        <name>Selectable box</name>
+                        <!-- The current setting options will be taken from the function fn_settings_variants_[addon_id]_[setting_id] -->
+                        <type>selectable_box</type>
+                        <default_value><![CDATA[#M#product_code=Y&product=Y&amount=Y&price=Y]]></default_value>
+                        <translations>
+                            <item lang="ru">Секция с вариантами</item>
+                        </translations>
+                        <variants/>
+                    </item>
+                    <!-- In this case the information returned by the function "handler" will be displayed -->
+                    <item id="info">
+                        <name>Info url</name>
+                        <type>info</type>
+                        <handler>fn_sample_addon_2_0_info</handler>
+                        <variants/>
+                        <translations>
+                            <item lang="ru">Информационный url</item>
+                        </translations>
+                    </item>
+                    <!-- Setting appearance; type "template". In this case a user-defined template from the folder skins/SKIN_NAME/addons/ADDON_NAME/settings/TEMPLATE_NAME is loaded.
+                        The template name is stored in the "default_value" -->
+                    <item id="template">
+                        <type>template</type>
+                        <default_value>sample.tpl</default_value>
+                        <variants/>
+                        <translations>
+                            <item lang="ru">Info url</item>
+                        </translations>
+                    </item>
+                    <!-- A hidden setting. Exists in the database and in the Registry but is not shown to the user -->
+                    <item id="hidden">
+                        <type>hidden</type>
+                        <default_value>Some hidden setting value</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <!-- Add language variables -->
+    <language_variables>
+        <!-- 
+            @id - language variable identifier, 
+            @lang - the language it is added for -->
+        <item lang="en" id="test_xml_2.0_1">First language variable</item>
+        <item lang="en" id="test_xml_2.0_2">Second language variable</item>
+        <item lang="en" id="sample_addon_handler">Sample addon handler</item>
+        <item lang="ru" id="test_xml_2.0_1">Первая языковая переменная</item>
+        <item lang="ru" id="test_xml_2.0_2">Вторая языковая переменная</item>
+        <item lang="ru" id="sample_addon_handler">Пример обработчика модуля</item>
+    </language_variables>
+    <!-- Additional database queries -->
+    <queries>
+        <!-- If parameter "for" equals "install" or is not set, the query is executed during the add-on installation -->
+        <item for="install">
+        CREATE TABLE `?:addon_test_123456789` (
+            `queue_id` mediumint NOT NULL auto_increment,
+            PRIMARY KEY (`queue_id`)
+        ) ENGINE=MyISAM DEFAULT CHARSET=UTF8
+        </item>
+        <!-- If the "editions" attribute is given, the request will be executed only for the editions that are defined in it (separated with commas) -->
+        <item for="install" editions="ULTIMATE,MULTIVENDOR">
+            ALTER TABLE `?:addon_test_123456789` ADD company_id INT NOT NULL DEFAULT 0;
+        </item>
+        <!-- If the parameter "for" equals "uninstall", the query is executed during the add-on uninstallation -->
+        <item for="uninstall">DROP TABLE IF EXISTS `?:addon_test_123456789`</item>
+    </queries>
+    <!-- User-defined functions called on certain events:
+            before_install - before the add-on installation
+            install - after the installation of the add-on, its templates, settings and language variables but before its activation and cache clearing
+            uninstall - before uninstallation
+            -->
+    <functions>
+        <item for="install">fn_google_export_add_features</item>
+        <item for="install">fn_google_export_add_feed</item>
+        <item for="uninstall">fn_google_export_remove_features</item>
+        <item for="uninstall">fn_google_export_remove_feed</item>
+    </functions>
+</addon>
