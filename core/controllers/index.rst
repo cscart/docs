@@ -2,6 +2,13 @@
 Controllers
 ***********
 
+.. toctree::
+    :maxdepth: 2
+    :titlesonly:
+    :glob:
+
+    *
+
 Basic schema of the software functioning consists in calling one of the two main executable PHP files (*admin.php* or *index.php*) and further consecutive execution of PHP files implementing the program functionality.
 
 **1. index.php or admin.php ? 2. init.php ? 3. [controller_name].php**
