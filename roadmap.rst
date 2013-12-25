@@ -37,11 +37,11 @@ Core
         *   [DONE] `Notifications <http://docs.cs-cart.com/notifications>`_
         *   Tooltips
         *   [DONE] `AJAX <http://docs.cs-cart.com/ajaxrequests>`_ (rename to Using AJAX Requests)
-        *   CSS Minimization (based on http://docs.cs-cart.com/special-classes)
+        *   [DONE] CSS Minimization (based on http://docs.cs-cart.com/special-classes)
 
     *   [DONE] MVC: Controller (based on http://docs.cs-cart.com/docs-controllers)
 
-        *   Pre- and Post-Controllers (based on http://docs.cs-cart.com/precontrollers-postcontrollers)
+        *   [DONE] Pre- and Post-Controllers (based on http://docs.cs-cart.com/precontrollers-postcontrollers)
 
 *   [DONE] `Hooks <http://docs.cs-cart.com/hooks>`_ (split into three topics: Introduction to Hooks, PHP Hooks, and Template Hooks)
 
