@@ -265,3 +265,8 @@ ul.current li.current a.current {
     font-weight: 600;
     color: #006699;
 }
+
+.admonition.important blockquote {
+    padding-left: 0;
+    border-left: none;
+}
