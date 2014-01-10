@@ -126,7 +126,7 @@ In CS-Cart requests to the database are formed using placeholders:
         
             SELECT * cscart_orders WHERE payment_id = '5' AND order_id = '3';
 
-*   ``?f`` - checks whether the variable value is the valid field name, if not it Converts to an empty string::
+*   ``?f`` - checks whether the variable value is a valid field name, if not returns an empty string::
 
         $data = 'payment_id';
    
