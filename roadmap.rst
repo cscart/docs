@@ -28,10 +28,6 @@ Core
 
     *   MVC: View (Templates, CSS, LESS, JavaScript, etc.)
 
-        .. note::
-
-            Move the whole Design and Layout section from http://docs.cs-cart.com/ here, re-arranging information.
-
         *   Template Editor
         *   [DONE] `Microformats <http://docs.cs-cart.com/microformats>`_
         *   [DONE] `Notifications <http://docs.cs-cart.com/notifications>`_
@@ -52,3 +48,10 @@ API
 ===
 
 *   [DONE] HTTP Response Codes
+
+Developer Tools
+===============
+
+*   Debugger
+
+*   Template editor
