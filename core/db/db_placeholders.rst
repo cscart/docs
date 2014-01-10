@@ -15,9 +15,9 @@ In CS-Cart requests to the database are formed using placeholders:
 
     Converts to:
 
-        .. code-block:: mysql
+    .. code-block:: mysql
 
-            UPDATE cscart_orders SET payment_id = '5' WHERE order_id = 3;
+        UPDATE cscart_orders SET payment_id = '5' WHERE order_id = 3;
 
 *   ``?e`` - forms a structure for inserting data, receives an array::
 
@@ -30,9 +30,9 @@ In CS-Cart requests to the database are formed using placeholders:
 
     Converts to:
 
-        .. code-block:: mysql
+    .. code-block:: mysql
 
-            INSERT INTO cscart_orders (payment_id, order_id) VALUES ('5', '3');
+        INSERT INTO cscart_orders (payment_id, order_id) VALUES ('5', '3');
 
 *   ``?i`` - converts data to an integer, receives a string, number::
 
@@ -41,9 +41,9 @@ In CS-Cart requests to the database are formed using placeholders:
   
     Converts to:
 
-        .. code-block:: mysql
+    .. code-block:: mysql
 
-            SELECT * FROM cscart_orders WHERE order_id = 4;
+        SELECT * FROM cscart_orders WHERE order_id = 4;
 
 *   ``?s`` - converts data to a string (adds slashes), receives a string, number::
 
@@ -52,9 +52,9 @@ In CS-Cart requests to the database are formed using placeholders:
 
     Converts to:
 
-        .. code-block:: mysql
+    .. code-block:: mysql
 
-            SELECT * FROM cscart_orders WHERE order_id = 'foo';
+        SELECT * FROM cscart_orders WHERE order_id = 'foo';
 
 *   ``?l`` - converts data to a string for substitution into the operator LIKE (replaces backslashes with double backslashes and then adds slashes), receives a string::
 
@@ -63,9 +63,9 @@ In CS-Cart requests to the database are formed using placeholders:
  
     Converts to:
 
-        .. code-block:: mysql
+    .. code-block:: mysql
 
-            SELECT * FROM cscart_product_descriptions WHERE product LIKE '%black\\\\white%';
+        SELECT * FROM cscart_product_descriptions WHERE product LIKE '%black\\\\white%';
 
 *   ``?d`` - converts data to a fractional number, receives a string, number::
 
@@ -74,9 +74,9 @@ In CS-Cart requests to the database are formed using placeholders:
 
     Converts to:
 
-        .. code-block:: mysql
+    .. code-block:: mysql
 
-            SELECT * FROM cscart_orders WHERE order_id = '123.35';
+        SELECT * FROM cscart_orders WHERE order_id = '123.35';
 
 *   ``?a`` - prepares data to be used in the structure IN () as a set of strings, receives a string, number, array::
 
@@ -85,9 +85,9 @@ In CS-Cart requests to the database are formed using placeholders:
  
     Converts to:
 
-        .. code-block:: mysql
+    .. code-block:: mysql
         
-            SELECT * FROM cscart_orders WHERE order_id IN ('123');
+        SELECT * FROM cscart_orders WHERE order_id IN ('123');
 
 *   ``?n`` - prepares data to be used in the structure IN () as a set of integers, receives a string, number, array::
 
@@ -96,9 +96,9 @@ In CS-Cart requests to the database are formed using placeholders:
 
     Converts to:
 
-        .. code-block: mysql
+    .. code-block: mysql
         
-            SELECT * FROM cscart_orders WHERE order_id IN (123);
+        SELECT * FROM cscart_orders WHERE order_id IN (123);
 
 *   ``?p`` - inserts a prepared value::
 
@@ -107,9 +107,9 @@ In CS-Cart requests to the database are formed using placeholders:
 
     Converts to:
 
-        .. code-block:: mysql
+    .. code-block:: mysql
 
-            SELECT * FROM cscart_orders WHERE order_id = 4;
+        SELECT * FROM cscart_orders WHERE order_id = 4;
 
 *   ``?w`` - prepares data to be used in the structure WHERE, receives an array::
 	
@@ -122,9 +122,9 @@ In CS-Cart requests to the database are formed using placeholders:
  
     Converts to:
 
-        .. code-block:: mysql
+    .. code-block:: mysql
         
-            SELECT * cscart_orders WHERE payment_id = '5' AND order_id = '3';
+        SELECT * cscart_orders WHERE payment_id = '5' AND order_id = '3';
 
 *   ``?f`` - checks whether the variable value is a valid field name, if not returns an empty string::
 
@@ -134,9 +134,9 @@ In CS-Cart requests to the database are formed using placeholders:
 
     Converts to:
 
-        .. code-block:: mysql
+    .. code-block:: mysql
         
-            SELECT * FROM cscart_orders WHERE  = 5;
+        SELECT * FROM cscart_orders WHERE  = 5;
 
 *   ``?m`` - multi insert::
 
@@ -155,6 +155,6 @@ In CS-Cart requests to the database are formed using placeholders:
 
     Converts to:
 
-        .. code-block:: mysql
+    .. code-block:: mysql
         
-            INSERT INTO cscart_orders (payment_id, order_id) VALUES ('5', '3'),('5', '4');
+        INSERT INTO cscart_orders (payment_id, order_id) VALUES ('5', '3'),('5', '4');
