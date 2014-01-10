@@ -38,41 +38,41 @@ MVC: View
 
 CS-Cart uses the `Smarty <http://www.smarty.net/>`_ template engine and JavaScript to represent data. An example of a Smarty template with embedded JavaScript code:
 
-    .. code-block::smarty
+.. code-block:: smarty
 
-        {** block-description:my_twitter_addon **}
+    {** block-description:my_twitter_addon **}
  
-        <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-        <script>
-        new TWTR.Widget({ldelim}
-            version: 2,
-            type: 'profile',
-            rpp: {$addons.my_twitter_addon.number_of_tweets},
-            interval: 6000,
-            width: 'auto',
-            height: 300,
-            theme: {ldelim}
-                shell: {ldelim}
-                    background: '#FFFFFF',
-                    color: '#373737'
-                {rdelim},
-                tweets: {ldelim}
-                    background: '#D9EFF3',
-                    color: '#373737',
-                    links: '#005865'
-                {rdelim}
+    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+    <script>
+    new TWTR.Widget({ldelim}
+        version: 2,
+        type: 'profile',
+        rpp: {$addons.my_twitter_addon.number_of_tweets},
+        interval: 6000,
+        width: 'auto',
+        height: 300,
+        theme: {ldelim}
+            shell: {ldelim}
+                background: '#FFFFFF',
+                color: '#373737'
             {rdelim},
-            features: {ldelim}
-                scrollbar: true,
-                loop: true,
-                live: true,
-                hashtags: true,
-                timestamp: true,
-                avatars: true,
-                behavior: 'default'
+            tweets: {ldelim}
+                background: '#D9EFF3',
+                color: '#373737',
+                links: '#005865'
             {rdelim}
-        {rdelim}).render().setUser('{$addons.my_twitter_addon.username}').start();
-        </script>
+        {rdelim},
+        features: {ldelim}
+            scrollbar: true,
+            loop: true,
+            live: true,
+            hashtags: true,
+            timestamp: true,
+            avatars: true,
+            behavior: 'default'
+        {rdelim}
+    {rdelim}).render().setUser('{$addons.my_twitter_addon.username}').start();
+    </script>
 
 :doc:`Learn more <representing_data/index>` about data representation in CS-Cart.
 
