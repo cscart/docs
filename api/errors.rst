@@ -11,7 +11,7 @@ API Response Errors
     *   -   Code
         -   Description
     *   -   400 "Bad Request"
-        -   The request is invalid. For example, something is missing in it or there is a synthax error.
+        -   The request is invalid. For example, something is missing in it or there is a syntax error.
     *   -   401 "Unauthorized"
         -   Authorisation data are not valid or missing.
     *   -   403 "Forbidden"
