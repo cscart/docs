@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<addon scheme="2.0">
+    <id>license_addon</id>
+    <name>License Addon</name>
+    <priority>100500</priority>
+    <position>0</position>
+    <status>active</status>
+
+    <settings edition_type="ULT:VENDOR">
+        <sections>
+            <section id="main">
+                <items>
+                    <item id="license_number"> 
+                        <name>License number</name> <!-- License number. This field will be available for editing in the add-on settings -->
+                        <type>input</type>
+                    </item>
+                    <item id="license_server">
+                        <name>License Server</name> <!-- License validation URL. This is a hidden field not available for editing, so its value is set right here -->
+                        <type>hidden</type>
+                        <default_value>localhost/valid.php</default_value>
+                    </item>
+                    <item id="license_valid">
+                        <name>License valid</name> <!-- This setting will hold the validation result ('true' or 'false'). Updated after every license check -->
+                        <type>hidden</type>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <language_variables>
+        <!-- Language variable for the invalid license notification -->
+        <item lang="EN" id="addon_license_invalid">Add-on license is not valid</item>
+    </language_variables>
+</addon>
