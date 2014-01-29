@@ -223,7 +223,7 @@ Create a new product with the name "My Awesome Product":
 Response
 """"""""
 
-Updated object ID, e.g. ``{"product_id":"1"}``, or an :doc:`error <errors>`.
+Created object ID, e.g. ``{"product_id":"1"}``, or an :doc:`error <errors>`.
 
 Delete Object (``DELETE``)
 --------------------------
