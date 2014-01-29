@@ -13,7 +13,7 @@ Add-ons
 *   `Add-on Licensing <http://docs.cs-cart.com/addon-licensing-tutorial>`_, `Storefront-Based Add-on Licensing in Ultimate Edition <http://docs.cs-cart.com/addon-licensing-multi-tutorial>`_ (merge)
 *   [DONE] `Add-on Folder Structure <http://docs.cs-cart.com/add-on-folder-structure>`_
 *   [DONE] `Add-on Scheme <http://docs.cs-cart.com/addon-scheme>`_
-*   `Add-on Connection <http://docs.cs-cart.com/addon-connection>`_ (rewrite)
+*   [SKIPPED] `Add-on Connection <http://docs.cs-cart.com/addon-connection>`_ (rewrite)
 *   [DONE] `Scheme Extending <http://docs.cs-cart.com/extend-schemes>`_
 
 Core
