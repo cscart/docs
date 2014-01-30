@@ -13,7 +13,7 @@ Fields
 
 A user has a number of properties, represented by fields.
 
-The full list of supported fields is given below (mandatory fields are marked with **\***, mandatory only for an Affiliate account are marked with **\*\***).
+The full list of supported fields is given below (mandatory fields are marked with **\***).
 
 .. note:: Any field not listed in the table below will be ignored if occurs in an API request JSON data.
 
@@ -34,11 +34,9 @@ The full list of supported fields is given below (mandatory fields are marked wi
         -   | User type:
             | ``A`` for Admin
             | ``C`` for Customer
-            | ``P`` for Affiliate
         -   —
         -   | ``A``
             | ``C``
-            | ``P``
     *   -   company_id*
         -   ID of the store or vendor the user belongs to
         -   Default company ID
@@ -52,11 +50,11 @@ The full list of supported fields is given below (mandatory fields are marked wi
         -   | ``A``
             | ``D``
             | ``H``
-    *   -   firstname**
+    *   -   firstname
         -   User's first name
         -   —
         -   string
-    *   -   lastname**
+    *   -   lastname
         -   User's last name
         -   —
         -   string
@@ -76,7 +74,7 @@ The full list of supported fields is given below (mandatory fields are marked wi
         -   | ``Y``
             | ``N``
     *   -   user_id
-        -   User ID
+        -   User ID. Used only if the *Use email as login* setting is disabled
         -   Set automatically
         -   integer
     *   -   user_login
@@ -87,6 +85,10 @@ The full list of supported fields is given below (mandatory fields are marked wi
         -   Creation timestamp
         -   Set automatically
         -   Valid timestamp in seconds
+    *   -   password
+        -   The value of this field is `md5 hash <http://www.gohacking.com/what-is-md5-hash/>`_ of user password. Used only when creating and updating a user
+        -   —
+        -   string
 
 .. only:: addons
 
