@@ -16,6 +16,7 @@ To activate the debug mode in the admin panel, you can just add the ``debug`` pa
     :align: center
     :alt: debug URL param
 
+
 To activate the debugger for both the admin panel and storefront, define the ``DEBUG_MODE`` constant in your *config.php* or *local_conf.php* file with the ``true`` value::
 
     define('DEBUG_MODE', true);
