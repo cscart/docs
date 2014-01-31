@@ -23,6 +23,7 @@ Contents:
     api/index
     addons/index
     translation/index
+    tools/index
 
 .. toctree::
     :maxdepth: 2

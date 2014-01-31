@@ -52,6 +52,6 @@ API
 Developer Tools
 ===============
 
-*   Debugger
+*   [IN PROGRESS] Debugger. To do: Images, Runtime.
 
 *   Template editor
