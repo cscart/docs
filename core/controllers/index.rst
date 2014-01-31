@@ -11,7 +11,7 @@ Controllers
 
 Basic schema of the software functioning consists in calling one of the two main executable PHP files (*admin.php* or *index.php*) and further consecutive execution of PHP files implementing the program functionality.
 
-**1. index.php or admin.php ? 2. init.php ? 3. [controller_name].php**
+**1. index.php or admin.php -> 2. init.php -> 3. [controller_name].php**
 
 In CS-Cart terms a file connected under number three is named a controller. Data handling in the program is performed in this file - extracting the necessary data from the database, data handling, calculations, transformations, etc. and preparation of the data for further display.
 
