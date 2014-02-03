@@ -42,13 +42,13 @@ As the example of the **File editor** usage let's consider changing the **Add to
 
 This is what we have:
 
-.. image:: img/file_editor_before.png
+.. image:: img/file_editorbefore.png
     :align: center
     :alt: Before
 
 And this is what we will get:
 
-.. image:: img/file_editor_after.png
+.. image:: img/file_editorafter.png
     :align: center
     :alt: After
 
@@ -56,7 +56,7 @@ And this is what we will get:
 *	In the File editor open *templates > blocks > list_templates > products_list.tpl*, find the following lines and cut them from the code:
 
 
-.. image:: img/file_editor_cut.png
+.. image:: img/file_editorcut.png
     :align: center
     :alt: Cut
 
@@ -64,7 +64,7 @@ And this is what we will get:
 *	In the same file find the line with the *<div class="float-left product-item-image center">* class and paste the previous code in it exactly as shown in the picture (just before the closing *</div>* tag):
 
 
-.. image:: img/file_editor_paste.png
+.. image:: img/file_editorpaste.png
     :align: center
     :alt: Paste
 
