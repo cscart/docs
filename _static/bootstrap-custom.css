@@ -270,3 +270,7 @@ ul.current li.current a.current {
     padding-left: 0;
     border-left: none;
 }
+
+img {
+    margin-bottom: 15px;
+}

@@ -14,7 +14,7 @@ To activate the debug mode in the admin panel, you can just add the ``debug`` pa
 
 .. image:: img/debug_url_param.png
     :align: center
-    :alt: debug URL param
+    :alt: Enable debug mode with URL param
 
 
 To activate the debugger for both the admin panel and storefront, define the ``DEBUG_MODE`` constant in your *config.php* or *local_conf.php* file with the ``true`` value::
@@ -34,17 +34,29 @@ Debugger Sidebar
 Server
 ------
 
+.. image:: img/sidebar_server.png
+    :align: center
+    :alt: Debugger sidebar, Server
+
 In the **Server** tab, you will find general system information and information about PHP and PHP modules insalled in the system: versions, paths, config variable values, etc.
 
 
 Request
 -------
 
+.. image:: img/sidebar_request.png
+    :align: center
+    :alt: Debugger sidebar, Request
+
 In the **Request** tab, you will information about the latest HTTP request and the respective server response, as well as cookie values.
 
 
 Config
 ------
+
+.. image:: img/sidebar_config.png
+    :align: center
+    :alt: Debugger sidebar, Config
 
 Config
 """"""
@@ -61,11 +73,15 @@ Current settings values extracted from the database (the ``cscart_settings_*`` t
 Runtime
 """""""
 
-...
+Data related to the currently executed script.
 
 
 SQL
 ---
+
+.. image:: img/sidebar_sql.png
+    :align: center
+    :alt: Debugger sidebar, SQL
 
 In this tab, you can see which SQL queries were executed during the page loading with the execution time for each one (*Queries list* and *Queries count*).
 
@@ -75,11 +91,19 @@ Also, you can submit custom SQL queries in the *Queries parse* tab.
 Logging
 -------
 
+.. image:: img/sidebar_logging.png
+    :align: center
+    :alt: Debugger sidebar, Logging
+
 In this tab, you will find data on memory consumption, number of files loaded, SQL queries executed, and time spent on every step of the page loading: before initialization, after initialization, before template loading, and after template loading.
 
 
 Templates
 ---------
+
+.. image:: img/sidebar_templates.png
+    :align: center
+    :alt: Debugger sidebar, Templates
 
 In the *Templates* tab, you will find detailed information about the template hierarchy and data behind the page.
 
