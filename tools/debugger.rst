@@ -105,6 +105,6 @@ Templates
     :align: center
     :alt: Debugger sidebar, Templates
 
-In the *Templates* tab, you will find detailed information about the template hierarchy and data behind the page.
+In the **Templates** tab, you will find detailed information about the template hierarchy and data behind the page.
 
 You can find the template tree and the list of variables used by every template.
