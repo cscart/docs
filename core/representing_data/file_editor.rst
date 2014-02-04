@@ -6,7 +6,7 @@ It is possible to edit source code of the theme files directly from your adminis
 
 .. note::
 
-	The file editor is based on Javascript. So, Javascript must be enabled in your web browser.
+	The template editor is based on Javascript. So, Javascript must be enabled in your web browser.
 
 To edit files:
 
