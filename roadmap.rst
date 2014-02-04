@@ -10,7 +10,7 @@ Add-ons
 =======
 
 *   [DONE] `Advanced Add-on Tutorial <http://docs.cs-cart.com/advanced-addon-tutorial>`_
-*   `Add-on Licensing <http://docs.cs-cart.com/addon-licensing-tutorial>`_, `Storefront-Based Add-on Licensing in Ultimate Edition <http://docs.cs-cart.com/addon-licensing-multi-tutorial>`_ (merge)
+*   [REVIEWED]`Add-on Licensing <http://docs.cs-cart.com/addon-licensing-tutorial>`_, `Storefront-Based Add-on Licensing in Ultimate Edition <http://docs.cs-cart.com/addon-licensing-multi-tutorial>`_ (merge)
 *   [DONE] `Add-on Folder Structure <http://docs.cs-cart.com/add-on-folder-structure>`_
 *   [DONE] `Add-on Scheme <http://docs.cs-cart.com/addon-scheme>`_
 *   [SKIPPED] `Add-on Connection <http://docs.cs-cart.com/addon-connection>`_ (rewrite)
@@ -28,7 +28,7 @@ Core
 
     *   MVC: View (Templates, CSS, LESS, JavaScript, etc.)
 
-        *   Template Editor
+        *   [DONE]Template Editor
         *   [DONE] `Microformats <http://docs.cs-cart.com/microformats>`_
         *   [DONE] `Notifications <http://docs.cs-cart.com/notifications>`_
         *   Tooltips
@@ -54,4 +54,4 @@ Developer Tools
 
 *   [DONE] Debugger. To do: Images, Runtime.
 
-*   Template editor
+*   [DONE]Template editor (Core > Representing data)
