@@ -48,7 +48,7 @@ Request
     :align: center
     :alt: Debugger sidebar, Request
 
-In the **Request** tab, you will information about the latest HTTP request and the respective server response, as well as cookie values.
+In the **Request** tab, you will see information about the latest HTTP request and the respective server response, as well as cookie values.
 
 
 Config
