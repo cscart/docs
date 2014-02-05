@@ -4,7 +4,7 @@ CS-Cart Translator Quick Guide
 
 `CS-Cart Translator <http://translate.cs-cart.com/>`_ is a web service that is used to collaboratively translate the CS-Cart and Multi-Vendor software.
 
-It is based on the WordPress's `GlopPress <http://en.support.wordpress.com/glotpress/>`_.
+It is based on the WordPress's `GlotPress <http://en.support.wordpress.com/glotpress/>`_.
 
 Here is a quick guide that will help you get started.
 
@@ -27,7 +27,7 @@ Select the nearest scheduled version:
     :align: center
     :alt: Available languages
 
-On this page, you see all currently available languages. Choose the one you want to contribute to. For example, **Italian**.
+On this page, you see all currently available languages. Choose the one you want to contribute to. For example, **Italian**. If there is no the desired language in the list, you can contact us via sales@cs-cart.com or post a ticket via Help Desk to add it.
 
 .. note::
 
