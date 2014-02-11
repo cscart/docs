@@ -55,7 +55,7 @@ To activate API access for a user:
 
 #.  Log in to the CS-Cart admin panel
 #.  Go to **Customers → Administrators**
-#.  Open the admin account you want to activate API access to (e.g. admin@exaple.com)
+#.  Open the admin account you want to activate API access to (e.g. admin@example.com)
 #.  Switch to the **API access** tab and check the **Yes, allow this user to use the API** box
 #.  Click **Save**
 
@@ -95,13 +95,13 @@ Each request must be authenticated with user's e-mail and :ref:`API key <activat
 
     .. code-block:: bash
 
-        curl --user admin@example.com:APIkey -X ``GET`` 'http://example.com/api/users/'
+        curl --user admin@example.com:APIkey -X GET 'http://example.com/api/users/'
 
 *   Inline passing in the URL:
 
     .. code-block:: bash
 
-        curl --basic -X ``GET`` 'http://admin%40example.com:APIkey@example.com/api/users/'
+        curl --basic -X GET 'http://admin%40example.com:APIkey@example.com/api/users/'
 
     .. note:: ``@`` must be replaced with ``%40``
 
@@ -109,7 +109,7 @@ Each request must be authenticated with user's e-mail and :ref:`API key <activat
 
     .. code-block:: bash
 
-        curl --header 'Authorization: Basic <base64-encoded email:APIkey pair>=' -X ``GET`` 'http://example.com/api/users/'
+        curl --header 'Authorization: Basic <base64-encoded email:APIkey pair>=' -X GET 'http://example.com/api/users/'
 
     .. note::
 
@@ -134,7 +134,7 @@ Get data about the product with the ID 1:
 
 .. code-block:: bash
 
-    curl --user admin@example.com:APIkey -X ``GET`` 'http://example.com/api/products/1'
+    curl --user admin@example.com:APIkey -X GET 'http://example.com/api/products/1'
 
 Filtering
 """""""""
@@ -145,7 +145,7 @@ For example, you get all products with non-free shipping:
 
 .. code-block:: bash
 
-    curl --user admin@example.com:APIkey -X ``GET`` 'http://example.com/api/products?free_shipping=N'
+    curl --user admin@example.com:APIkey -X GET 'http://example.com/api/products?free_shipping=N'
 
 You can combine conditions.
 
@@ -153,7 +153,7 @@ Get all downloadable products with ``company_id`` 1:
 
 .. code-block:: bash
 
-    curl --user admin@example.com:APIkey -X ``GET`` 'http://example.com/api/products?is_edp=Y&company_id=1'
+    curl --user admin@example.com:APIkey -X GET 'http://example.com/api/products?is_edp=Y&company_id=1'
 
 Response
 """"""""
@@ -187,7 +187,7 @@ Update name of the product with the ID 1:
 
 ..  code:: bash
 
-    curl --user admin@example.com:APIkey --header 'Content-Type: application/json' -d '{"product": "New Product Name"}' -X ``PUT`` 'http://example.com/api/products/1'
+    curl --user admin@example.com:APIkey --header 'Content-Type: application/json' -d '{"product": "New Product Name"}' -X PUT 'http://example.com/api/products/1'
 
 Response
 """"""""
@@ -218,7 +218,7 @@ Create a new product with the name "My Awesome Product":
 
 .. code-block:: bash
 
-    curl --user admin@example.com:APIkey --header 'Content-Type: application/json' -d '{"product": "My Awesome Product"}' -X ``POST`` 'http://example.com/api/products'
+    curl --user admin@example.com:APIkey --header 'Content-Type: application/json' -d '{"product": "My Awesome Product"}' -X POST 'http://example.com/api/products'
 
 Response
 """"""""
@@ -239,7 +239,7 @@ Delete the product with the id 12:
 
 .. code-block:: bash
 
-    curl --user admin@example.com:APIkey -X ``DELETE`` 'http://example.com/api/products/12'
+    curl --user admin@example.com:APIkey -X DELETE 'http://example.com/api/products/12'
 
 Response
 """"""""
