@@ -46,7 +46,7 @@ This is an example of how a tooltip variable is formed:
 Displaying language variables for tooltips
 """"""""""""""""""""""""""""""""""""""""""
 
-It is possible to display all language variables for tooltips directly on the desired page. To display them, add the following parameters to the selected page URL: ``stt`` - to display tooltips or ``сtpl`` - to clear cache.
+It is possible to display all language variables for tooltips directly on the desired page. To display them, add the following parameters to the selected page URL: ``stt`` - to display tooltips and ``сtpl`` - to clear cache.
 
 For example, to display all tooltips on the following page:
 
