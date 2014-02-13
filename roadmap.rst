@@ -31,7 +31,7 @@ Core
         *   [DONE]Template Editor
         *   [DONE] `Microformats <http://docs.cs-cart.com/microformats>`_
         *   [DONE] `Notifications <http://docs.cs-cart.com/notifications>`_
-        *   Tooltips
+        *   [DONE] Tooltips
         *   [DONE] `AJAX <http://docs.cs-cart.com/ajaxrequests>`_ (rename to Using AJAX Requests)
         *   [DONE] CSS Minimization (based on http://docs.cs-cart.com/special-classes)
 
