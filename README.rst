@@ -15,7 +15,7 @@ Author's guide:
 Build These Docs Locally
 ========================
 
-To build these docs locally, you will need Python 2.6+ and virtualenv. All other dependencies will be installed automatically.
+To build these docs locally, you will need Python 2.6+. All other dependencies will be installed automatically.
 
 Get
 ---
