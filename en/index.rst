@@ -15,6 +15,19 @@ Contents:
     *   `3.0.x <../3.0.x/index.html>`_
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
+    :titlesonly:
+    :glob:
 
-    English <en/index>
+    core/index
+    api/index
+    addons/index
+    translation/index
+    tools/index
+
+.. toctree::
+    :maxdepth: 2
+    :titlesonly:
+
+    author_guide
+    roadmap
