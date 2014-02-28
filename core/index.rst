@@ -21,7 +21,7 @@ CS-Cart follows the `MVC (Model-View-Controller) <http://en.wikipedia.org/wiki/M
 MVC: Model
 ==========
 
-Data model is stored directly in the database. The database engine used is MySQL, so the program components get data from the model using the MySQL SQL-query language with the help of :doc:`placeholders <db/db_placeholders>`.
+Data model is stored directly in the database. The database engine used is MySQL, so the program components get data from the model using the MySQL SQL-query language with the help of :doc:`placeholders <db/placeholders>`.
 
 **Example**::
 
