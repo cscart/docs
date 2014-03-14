@@ -1,5 +1,6 @@
-Server-side settings
-====================
+**********
+Deployment
+**********
 
 Contents:
 
