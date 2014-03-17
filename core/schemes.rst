@@ -1,10 +1,11 @@
-*******
-Schemes
-*******
+..
+    *******
+    Schemes
+    *******
 
-A scheme is a special file describing certain object structure. There are schemes for blocks, settings, promotions, etc. All schemes are stored in the *schemas* directory (*...app/schemas*). 
+    A scheme is a special file describing certain object structure. There are schemes for blocks, settings, promotions, etc. All schemes are stored in the *schemas* directory (*...app/schemas*). 
 
-An add-on can extend and override a scheme fully or partially (:doc:`learn more <../addons/scheme_extending>`).
+    An add-on can extend and override a scheme fully or partially (:doc:`learn more <../addons/scheme_extending>`).
 
 *********************
 Схемы и их устройство
@@ -66,7 +67,7 @@ An add-on can extend and override a scheme fully or partially (:doc:`learn more 
             </menu>
 
 
-    *   Набор функций - в схеме описаны функции. В большинстве случаев схема с функциями является дополнением схемы с массивом данных. Тогда такую схему нужно подключать через include_once в начале файла с данными и отдельно вызывать ее не надо. В случае же, если такая схема является самостоятельной (например actions и variants у settings), то такую схему подключаем как обычно, например `fn_get_schema("settings", "actions.functions")`.
+    *   Набор функций - в схеме описаны функции. В большинстве случаев схема с функциями является дополнением схемы с массивом данных. Тогда такую схему нужно подключать через include_once в начале файла с данными и отдельно вызывать ее не надо. В случае же, если такая схема является самостоятельной (например actions и variants у settings), то такую схему подключаем как обычно, например ``fn_get_schema("settings", "actions.functions")``.
 
         - app/schemas/exim/products.functions.php
         - app/schemas/last_view/frontend.functions.php
@@ -92,7 +93,7 @@ An add-on can extend and override a scheme fully or partially (:doc:`learn more 
 
 Существует 2 вида расширения - с помощью аддонов и с помощью тегов редакции.
 
-    *   Аддоны. Чтобы расширить схему с помощью аддона, нужно создать в каталоге аддона ту же структуру каталогов и файлов схемы, добавив к имени файла суффикс ".post". Например ::
+    *   Аддоны. Чтобы расширить схему с помощью аддона, нужно создать в каталоге аддона ту же структуру каталогов и файлов схемы, добавив к имени файла суффикс ".post". Например:
 
         | Основной файл
         | -------------
@@ -122,7 +123,7 @@ An add-on can extend and override a scheme fully or partially (:doc:`learn more 
     Более детально про то, как работать со схемами в аддонах можно прочитать тут: (:doc:`learn more <../addons/scheme_extending>`)
     
 
-    *   Теги редакции нужны, чтобы сформировать нужные данные в схеме в зависимости от редакции (ultimate, multivendor). Чтобы расширить схему с помощью тега редакции, нужно создать в каталоге со схемой файл вида schema_[PRODUCT_EDITION]. Например::
+    *   Теги редакции нужны, чтобы сформировать нужные данные в схеме в зависимости от редакции (ultimate, multivendor). Чтобы расширить схему с помощью тега редакции, нужно создать в каталоге со схемой файл вида schema_[PRODUCT_EDITION]. Например:
     
         | Основной файл
         | -------------
