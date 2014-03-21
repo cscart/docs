@@ -15,7 +15,7 @@ Contents:
     *   `Older docs <http://old.docs.cs-cart.com>`_
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 3
     :titlesonly:
     :glob:
 
