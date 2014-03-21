@@ -1,6 +1,6 @@
-*****************
-Representing Data
-*****************
+*********
+Front-End
+*********
 
 .. toctree::
     :maxdepth: 2
