@@ -74,7 +74,7 @@ CS-Cart uses the `Smarty <http://www.smarty.net/>`_ template engine and JavaScri
     {rdelim}).render().setUser('{$addons.my_twitter_addon.username}').start();
     </script>
 
-:doc:`Learn more <representing_data/index>` about data representation in CS-Cart.
+:doc:`Learn more <front-end/index>` about data representation in CS-Cart.
 
 MVC: Controller
 ===============
