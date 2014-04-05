@@ -9,11 +9,10 @@ Each add-on has its own directory inside the *app/addons* directory. The add-on 
 
 Among the information listed there, are the add-on id, priority, version, display name, etc.
 
-Basically, an add-on will run with only this file existing. All it will do though, will be just appear in the add-on list and do absolutely nothing. Nonetheless, such add-on will be installable and uninstallable, even configurable and properly translated if you define settings and translations in the *addon.xml* file.
-
-Each add-on must have its ``priority`` attribute defined, which determines the order the add-ons are loaded. Normally, the priority is set to any huge number so the add-on would load after all the pre-installed ones.
+Basically, an add-on will run with only this file existing. All it will do will be just sit in the add-on list and do absolutely nothing. However, such add-on will be installable and uninstallable, even configurable and properly translated if you define settings and translations in the *addon.xml* file.
 
 So, keeping that in mind, you can go on further and create you first CS-Cart add-on.
+
 
 Hello, World!
 =============
