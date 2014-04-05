@@ -24,11 +24,11 @@ As said before, all an add-on needs to have to be operational is the *addon.xml*
 
 Provide some basic add-on attributes:
 
-    *   ``id`` – (must be equal to the add-on catalog name, ``hello_world`` in our case)
-    *   ``version`` – set to ``1.0``
-    *   ``name`` – add-on display name in the default language (English, if not explicitly specified). Set to **Hello, World!**
-    *   ``description``—add-on description in the default language (English, if not explicitly specified). Set to ``Say hello to the world``
-    *   ``priority``—set this one to something big like ``100500``
+    *   ``id``-(must be equal to the add-on catalog name, ``hello_world`` in our case)
+    *   ``version``-set to ``1.0``
+    *   ``name``-add-on display name in the default language (English, if not explicitly specified). Set to **Hello, World!**
+    *   ``description``-add-on description in the default language (English, if not explicitly specified). Set to **Say hello to the world**
+    *   ``priority``—set this one to something big like **100500**
 
 The *addon.xml* file should look like this:
 
