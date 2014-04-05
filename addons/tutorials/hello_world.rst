@@ -2,8 +2,8 @@
 Hello World Add-on Tutorial
 ***************************
 
-Basic Concepts
-==============
+Introduction
+============
 
 Each add-on has its own directory inside the *app/addons* directory. The add-on is described in the file *addon.xml*.
 
