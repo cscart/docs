@@ -95,8 +95,15 @@ Put the following lines in your *addon.xml* after ``<priority>100500</priority>`
 
 Go back to the add-on management page in the CS-Cart admin panel and re-install the **Hello World** add-on.
 
-Now, you can see that the **Edit** link is clickable. Click it and the add-on configuration dialog will appear, containing the settings you have just added.
+Now, click the gear button and you'll see the **Settings** link. Click it and the add-on configuration dialog will appear, containing the settings you have just added:
 
-.. TODO: Add the screenshot for the add-on settings.
+.. image:: img/hello_world_settings.png
+    :align: center
+    :alt: Hello World add-on: Settings
+	
+.. image:: img/hello_world_settings_dialog.png
+    :align: center
+    :alt: Hello World add-on: Settings dialog
 
-That was not rocket science, was it? Still, that was not too helpful either. Next, we are going to create something more complicated and useful.
+
+That was not rocket science, was it? Still, that was not too helpful either. In the :doc:`next tutorial <advanced>`, we are going to create something more complicated and useful.
