@@ -19,6 +19,10 @@ Hello, World!
 
 Go to the *app/addons* directory in the CS-Cart installation directory. There, create a directory called *hello_world* and switch to it. That will be your working directory for this add-on.
 
+.. important::
+
+    It is important that the add-on directory name is the same as the add-on id. Otherwise, the add-on will not install properly. 
+
 As said before, all an add-on needs to have to be operational is the *addon.xml* file. Let's create this file.
 
 Provide some basic add-on attributes:
