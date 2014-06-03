@@ -141,7 +141,7 @@ In CS-Cart requests to the database are formed using placeholders:
     ?f
         checks whether the variable value is a valid field name, if not returns an empty string::
 
-            $data = 'payment_id';
+            $data = 'payment@id';
    
             db_query('SELECT * FROM ?:orders WHERE ?f = 5', $data);
 
