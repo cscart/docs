@@ -60,7 +60,9 @@ Let's consider the process of notification creation in **the first way**:
 
  * The function ``response`` in turn calls the function ``ceNotification`` (*/js/tygh/core.js*) and passes the array with all defined AJAX notifications to it. Display of the notification occurs in the ``ceNotification`` function by the ``notification.append`` method, which adds HTML code of the notification to a container of the declared template */backend/templates/common/notification.tpl* or */themes/[theme name]/templates/common/notification.tpl* (*<div class="cm-notification-container">*).
 
-Also, it is possible to create a notification with the help of JavaScript::
+Also, it is possible to create a notification with the help of JavaScript:
+
+.. code-block:: guess
 
 	$.ceNotification('show', {
   	  type: 'E',

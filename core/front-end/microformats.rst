@@ -96,11 +96,14 @@ The events are used for pre/post AJAX-form submission. To declare the event, use
   * Callback: ``'ce.formpost_[FORM_NAME]', [form, clicked_elm]``.
 
 Where:
+
 * form - object, indicating the sent form.
 * clicked_elm - object, indicating an element, that forced the form sending.
 * [FORM_NAME] - name of the sent form.
 
-Example::
+Example:
+
+.. code-block:: guess
   
     $.ceEvent('on', 'ce.formpre_add_to_cart_form', function(form, elm) {
       // Some code here
