@@ -90,26 +90,21 @@ The microformat is defined by CSS class of the tag form. Classes can be combined
 * ``cm-ajax-full-render`` - can be used only with ``cm-ajax``. Forces the whole page to be reloaded (with footer and top menu).
 * ``cm-no-ajax`` - if this class is assigned to the submit button of the form, then when clicking on the button, the form will be sent in an ordinary way, even if the class ``cm-ajax`` is assigned to the form.
 
-It is possible to define pre-call and callback functions for AJAX-forms. To do that, one should declare a function using the naming rules:
+The events are used for pre/post AJAX-form submission. To declare the event, use the following rules:
 
-  * Pre-call: ``'fn_form_pre_form_name'``. The function must return *true* or *false*. If *false* is returned, the form is not submitted.
-  * Callback: ``'fn_form_post_form_name'``. A ``response.data`` object is passed to the function as a parameter::
+  * Pre-call: ``'ce.formpre_[FORM_NAME]', [form, clicked_elm]``.
+  * Callback: ``'ce.formpost_[FORM_NAME]', [form, clicked_elm]``.
 
-     <form name="upload_form" class="cm-ajax">
-     ...
-     </form>
-     
-     <script>
-     function fn_form_pre_upload_form()
-     {
-     ...
-     }
-     function fn_form_post_upload_form(data)
-     {
-     ...
-     }
-     
-     </script>
+Where:
+* form - object, indicating the sent form.
+* clicked_elm - object, indicating an element, that forced the form sending.
+* [FORM_NAME] - name of the sent form.
+
+  Example::
+  
+    $.ceEvent('on', 'ce.formpre_add_to_cart_form', function(form, elm) {
+      // Some code here
+    });
 
 * ``cm-check-changes`` - checks if there are unsaved changes in the form before submitting. If there are unsaved changes, a warning is displayed.
 
@@ -275,11 +270,10 @@ Other elements
 Links
 -----
 
-There is a microformat that allows to execute AJAX request when clicking on a link.  Format of this link::
+There is a microformat that allows to execute AJAX request when clicking on a link. Format of this link::
 
- <a href="index.php?dispatch=products.update&amp;product_id=15" class="cm-ajax" rev="id1, id2, idn">Run</a>
+ <a class="cm-ajax" href=“http://cs-cart.com" data-ca-target-id="pagination_contents”>Ajax link</a>
 
-The parameter ``rev`` contains tag IDs separated with comma. Tags with these IDs can be updated.
 
 The microformat is defined by CSS class of the tag ``a``. Classes can be combined.
 

@@ -59,3 +59,11 @@ Let's consider the process of notification creation in **the first way**:
  * When script execution is completed or when the termination function ``exit()`` is called explicitly, invocation of the destructor of Ajax class (*/Tygh/Ajax.php*) takes place. The destructor passes the notification information to an array with data in JSON format and then passes this array to the JS function ``response`` (*/js/tygh/ajax.js*).
 
  * The function ``response`` in turn calls the function ``ceNotification`` (*/js/tygh/core.js*) and passes the array with all defined AJAX notifications to it. Display of the notification occurs in the ``ceNotification`` function by the ``notification.append`` method, which adds HTML code of the notification to a container of the declared template */backend/templates/common/notification.tpl* or */themes/[theme name]/templates/common/notification.tpl* (*<div class="cm-notification-container">*).
+
+Also, it is possible to create a notification with the help of JavaScript::
+
+	$.ceNotification('show', {
+  	  type: ‘E',
+   	 title: _.error,
+   	 message: error_msg
+	}); 
