@@ -62,7 +62,7 @@ Let's consider the process of notification creation in **the first way**:
 
 Also, it is possible to create a notification with the help of JavaScript:
 
-.. code-block:: guess
+.. code-block:: js
 
 	$.ceNotification('show', {
   	  type: 'E',
