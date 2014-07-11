@@ -1,8 +1,8 @@
-****************
-CSS Minimization
-****************
+***************
+Special classes
+***************
 
-CSS file size can be minimized with the so called special classes. They can be used both separately:
+The so called special classes are provided to minimize CSS file size. They can be used both separately:
 
 .. code-block:: html
 

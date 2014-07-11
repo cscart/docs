@@ -62,3 +62,22 @@ In order to use PHP hooks in your add-on:
 And that's it! The add-on is now "aware" that it should use the hook, and CS-Cart is aware that it should pass the control to the add-on when the hook occurs.
 
 .. A complete and working example of hook usage in an add-on is given in the :doc:`Advanced Add-on Tutorial <>`. (add a link)
+
+Extending one add-on with another
+=================================
+
+If it is necessary to extend one add-on with another, now it is possible to select all hook functionality inside the add-on. For example, the *News and emails* add-on uses *SEO*. Not to spread the SEO functionality across all the *News ans emails* functionality, it can be passed to a hook:
+
+*design/backend/templates/addons/news_and_emails/addons/seo/hooks/*
+
+The principles of working are the same as for the other hooks. One exception is that hooks from the *addons* catalog inside the *news_and_emails* add-on will be included only when the appropriate add-on is enabled (the *SEO* add-on in this example). 
+
+The 3rd parameter was added for registering the php hooks::
+
+	fn_register_hooks( array('get_news_data', '', 'seo') )
+
+The name of a function processing a hook is **fn_seo_get_news_data**. It is called out when the **SEO** add-on is enabled.
+
+.. note::
+
+	All the actions described in the **Extending one add-on with another** section take place in the **News and emails** add-on.
