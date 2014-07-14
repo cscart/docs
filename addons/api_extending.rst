@@ -33,7 +33,7 @@ Basic Template
         public function create($params)
         {
             return array(
-                'status' => Response::STATUS_CREATED;
+                'status' => Response::STATUS_CREATED,
                 'data' => array()
             );
         }
