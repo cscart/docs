@@ -25,6 +25,7 @@ Contents:
     addons/index
     translation/index
     tools/index
+    themes/index
 
 .. toctree::
     :maxdepth: 2

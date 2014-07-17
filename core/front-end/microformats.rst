@@ -39,16 +39,36 @@ Microformat of the field validation is defined in the class attribute of the ele
 
 * ``cm-required`` - the element is required to be filled out. If assigned to a check box, the check box is to be checked.
 * ``cm-email`` - the element value must be a valid e-mail address.
-* ``cm-confirm-email`` - necessarily assigned to a pair of elements, the second of which is to have the same ID as the first one, but with the prefix ``confirm_``. It checks whether the values of these fields are valid e-mail addresses and are the same.
 * ``cm-phone`` - the element value must be a valid telephone number.
-* ``cm-zipcode`` - the element value must be a valid zip code (every country has its own zip code format, so the pattern is to be defined in the country table, but so far manually - the array ``zip_validators``).
+* ``cm-zipcode`` - the element value must be a valid zip code (every country has its own zip code format, so the pattern is to be defined in the country table, but so far manually - the method ``$.ceFormValidator('setZipcode', {...})``).
+
+Example:
+
+.. code-block:: js
+
+	<script type="text/javascript">
+    	Tygh.$.ceFormValidator('setZipcode', {
+       	 US: {
+          	  regexp: /^(\d{5})(-\d{4})?$/,
+           	 format: '01342 (01342-5678)'
+       	 },
+        	CA: {
+            	regexp: /^(\w{3} ?\w{3})$/,
+            	format: 'K1A OB1 (K1AOB1)'
+        	},
+        	RU: {
+            	regexp: /^(\d{6})?$/,
+            	format: '123456'
+        	}
+    	});        
+	</script>
+
 * ``cm-value-integer`` - assigned to a form element (input, textarea, etc.). Checks if the element value is a valid integer number while it is being filled.
 * ``cm-value-decimal`` - assigned to a form element (input, textarea, etc.). Checks if the element value is a valid decimal float-point number while it is being filled.
 * ``cm-integer`` - the element value must be an integer.
 * ``cm-password`` - necessarily assigned to a pair of elements, their values must be the same.
 * ``cm-multiple`` - at least one value of the element select is to be selected.
 * ``cm-all`` - selects all options of the element select before sending a form.
-* ``cm-custom`` - a validator defined by a user. Also requires to indicate the validation function (returns *true* if no error occurred and an error text otherwise).
 
 Example::	
 
@@ -63,7 +83,23 @@ Example::
 
 The function accepts only one parameter - ID of the validated element.
 
-* ``cm-regexp`` - checks the value for consistency with the regular expression. It is required that the regular expression is defined in the regexp global array with the element ID.
+* ``cm-regexp`` - checks the value for consistency with the regular expression. The regular expression is defined through the method ``$.ceFormValidator('setRegexp', {})``.
+
+Example:
+
+.. code-block:: js
+
+	<label for="a" class="cm-regexp"><input type="input" id="a" value="" />
+
+	<script type="text/javascript">
+    	Tygh.$.ceFormValidator('setRegexp', {
+        	'elm_id': {
+            	regexp: "^[A-Za-z]+$", 
+            	message: "Please, use only alphabetical signs"
+        	}
+    	};
+	</script>
+
 * ``cm-numeric`` - checks whether the value is a number with the help of autoNumeriс plugin. Plugin documentation: `http://www.decorplanit.com/plugin/ <http://www.decorplanit.com/plugin/>`_
 
 Example::
@@ -82,12 +118,11 @@ Form processing
 
 The microformat is defined by CSS class of the tag form. Classes can be combined.
 
-* ``cm-form-highlight`` - turns on highlighting of this form (only for the admin panel).
 * ``cm-ajax`` - the form will be sent by AJAX. For the correct work there should be a hidden element with the name ``result_ids``::
 
   <input type="hidden" name="result_ids" value="id1, id2" />
 
-* ``cm-ajax-full-render`` - can be used only with ``cm-ajax``. Forces the whole page to be reloaded (with footer and top menu).
+* ``cm-ajax-full-render`` - can be used only with ``cm-ajax``. Forces the whole page to be reloaded.
 * ``cm-no-ajax`` - if this class is assigned to the submit button of the form, then when clicking on the button, the form will be sent in an ordinary way, even if the class ``cm-ajax`` is assigned to the form.
 
 The events are used for pre/post AJAX-form submission. To declare the event, use the following rules:
@@ -113,8 +148,8 @@ Example:
 
 Automatically assigned to all POST-method forms in the admin panel::
 
- if (jQuery.area == 'A') {
-     frms.filter('[method=post]').addClass('cm-check-changes');
+ if (_.area == 'A') {
+    frms.filter('[method=post]').addClass('cm-check-changes');
 
 * ``cm-disable-empty`` - assigned to a form. All non-obligatory unfilled fields will not be submitted. Used, for example, during product search to omit submitting multiple undefined parameters.
 * ``cm-disable-empty-files`` - assigned to a form. All non-obligatory unfilled file fields will not be submitted. 
@@ -187,9 +222,6 @@ The microformat is defined by CSS class of the element. Classes can be combined.
      * Assign the microformat ``cm-sumbit`` to the element.
      * In the ``data-ca-dispatch`` attribute, provide the dispatch to which the form is submitted (in the format *dispatch[controller.mode]*).
      * Optional, only if the element is outside the form to submit: In the ``data-ca-target-form`` attribute, provide the form name or id.
-
-* ``cm-submit-link`` - assigned to the link to be clicked for performing a submit. A hidden input of type *submit* is added and actually gets clicked.
-* ``cm-tools-list`` - assigned to a container holding links, that submit the form when clicked. The ``rev`` attribute of the links must contain the form name.
 
 Sending a form to a new or a parent window
 ------------------------------------------
@@ -285,8 +317,6 @@ The microformat is defined by CSS class of the tag ``a``. Classes can be combine
 
 Example: database back-up form.
 
-* ``cm-progressbar`` - assigned to a Comet technology based progressbar.
-* ``cm-progressbar-status`` - when a progressbar is initialized, a *div* element with this class is added to it. It is used to set text under the progressbar.
 * ``cm-delete-row`` - when clicking on the element with this class, the nearest parent element *tr* is deleted. It is used to delete a row in a table.
 * ``cm-row-item`` - assigned to a table row. Used for container identification together with ``cs-delete-row``.
 * ``cm-ajax-cache`` - allows to cache AJAX requests, should be used together with ``cm-ajax``.
@@ -302,20 +332,14 @@ When it is necessary to click on an element with the known ID,  you can use a li
 Notifications
 -------------
 
-* ``cm-ajax-close-notification`` - used for the notifications that do not disappear on page change or on timer. When the close button is clicked, a close notification AJAX-request is sent.
-
-Example: *The password must be different from the username* notification in the administration panel.
-
 * ``cm-auto-hide`` - a notification with this class will automatically fade out. The timeout is set in *Settings -> Appearance*.
 * ``cm-notification-close`` - assigned to a notification close button. On click the notification is either removed from the form or a notification removal AJAX-request is sent.
 * ``cm-notification-container`` - assigned to a notification container.
-* ``cm-notification-container-top`` - used in a container to show a notification in the upper right corner instead of the form head. Such notifications are displayed using AJAX.
 
 Other elements
 --------------
 
 * ``cm-confirm`` - when clicked, confirmation of the action will be requested.
-* ``cm-skipping-confirmation`` - assigned to an element to omit confirmation of an action that is connected to its state. 
 * ``cm-noscript`` - this element will be shown only if javascript support is enabled in a browser.
 * ``cm-focus`` - elements with this class get focus when a page is loaded.
 
@@ -354,9 +378,9 @@ Format::
 Elements combinations
 =====================
 
-* ``cm-combination`` is used to hide/display container and show its state. It is used, for example, for the button advanced search in the administration panel, for trees (categories, pages), etc. By 'state', it is meant display of different images depending on the mode of the container. There are two options.
+* ``cm-combination`` is used to hide/display container and show its state. It is used, for example, for the button advanced search in the administration panel, for trees (categories, pages), etc. By 'state', it is meant display of different images depending on the mode of the container.
 
-Option 1::
+::
 
  <img src="" id="on_cat" class="cm-combination" />
  <img src="" id="off_cat" class="cm-combination" />
@@ -370,20 +394,6 @@ Additional elements use ID with different prefixes. There are 3 types of prefixe
   * ``on_`` - expands a container when it is clicked on (usually it is the *plus* sign).
   * ``off_`` - collapses a container when it is clicked on (usually *minus*).
   * ``sw_``- for the element (usually it is a link) that switches the container mode with each click.
-
-Option 2::
-
- <a href="#" id="sw_cat" class="cm-combo-on|off cm-combination">
- ...
- <div id="cat">
- </div>
-
-In this case the images are changed by changing the class for the switch (see ``sw_ above``).
-
-* ``cm-combo-on`` - for the image expanding a container (usually, *plus*).
-* ``cm-combo-off`` - for the image collapsing a container (usually, *minus*).
-
-So the classes ``cm-combo-on``, ``cm-combo-off`` with the corresponding pages should be defined in CSS. As there could be several combinations, the class should not be defined globally, it should be assigned to some specific element.
 
 * ``cm-uncheck`` - used together with ``cm-combination`` and switches the checkbox state that is defined by ``cm-combination`` id.
 * ``cm-switch-availability`` - switches the state of input elements (checkbox, radio, text), that are related to ``cm-switch-availability`` by *id = "sw_elem"*, where *elem* - the id of an element where checkbox and radio are placed.
@@ -425,8 +435,7 @@ In this case, when clicking on the upper images, only combinations from the grou
 Tabs
 ====
 
-* ``cm-js`` - a ``div`` element with class ``cm-tabs`` is generated in Smarty with a list of tabs inside: ``li`` elements with class ``cm-js`` and a particular ID (e.g. 'description'). When a tab is clicked, the ``div`` with the ID *content_ + %tab ID%* (e.g. *content_description*) is found and shown, the other div elements in the container are hidden.
-* ``cm-active`` - assigned to a tab with class ``cm-js`` when it's selected or in a template. A tab with this class turns active. If the tab has empty content and class ``cm-ajax``, the content is loaded using AJAX. 
+* ``cm-js`` - a ``div`` element with class ``cm-tabs`` is generated in Smarty with a list of tabs inside: ``li`` elements with class ``cm-js`` and a particular ID (e.g. 'description'). When a tab is clicked, the ``div`` with the ID *content_ + %tab ID%* (e.g. *content_description*) is found and shown, the other div elements in the container are hidden. 
 * ``cm-j-tabs`` - a ``cm-js`` tabs container. Used for tab container search and initialization.
 * ``cm-tabs-content`` - assigned to a tab, in which the save buttons can be hidden (``cm-hide-save-button``)
 * ``cm-toggle-button`` - assigned to a ``div`` element. If a tab with class ``cm-hide-save-button`` containing this ``div`` is selected, buttons in the ``div`` will be hidden.
@@ -489,15 +498,6 @@ Example::
 Admin panel
 ===========
 
-Block manager
--------------
-
-* ``cm-group-box`` - assigned to a block group in the administartion panel. Allows to move all the blocks together.
-* ``cm-decline-group`` - a string with this class is not draggable (see ``cm-sortable-items``).
-
-    Example: Used in blocks - groups are not draggable.
-* ``cm-list-box`` - assigned to a block in the block manager to make it draggable.
-
 Sorted list
 -----------
 
@@ -507,23 +507,7 @@ Such list can be seen, for example, on the currency edit page: when a row is dra
 
     Example: Currency list in the administration panel.
 * ``cm-sortable-id-*`` - an ID of a particular row in a ``cm-sortable`` container. A value after ``cm-sortable-id-`` is passed in a request and used to store changes.
-* ``cm-sortable-items`` - assigned to a container for draggable blocks in the administartion panel.
 * ``cm-sortable-row`` - assigned to a draggable table row. The row must be placed in a ``cm-sortable`` container.
-
-Floating buttons
-----------------
-
-* ``cm-buttons-floating`` - assigned to a floating button container.
-
-    Example: the *Save* & *Save and close* buttons on the product edit page in the administration panel are packed in such a container.
-* ``cm-buttons-placeholder`` - contains buttons that are either placed in a ``cm-buttons-floating`` container or at the form bottom, if the page is not further scrollable. 
-
-Template editor
----------------
-
-* ``cm-delete-file`` - assigned to a *delete* button in the Template editor. If a filename is not '..' (that is, it's not a *go* *a* *level* *up* item), than a cross to remove is shown.
-* ``cm-download`` - assigned to a file download button in the Template editor. Makes a button visible for downloadable files.
-* ``cm-passed`` - used as flag in the Template editor. If this class is not assigned, a template file content is loaded.
 
 File uploader
 -------------
@@ -544,7 +528,6 @@ Image gallery
 =============
 
 * ``cm-image-gallery`` - initializes the image gallery.
-* ``cm-cur-item`` - assigned to a current mini-gallery item on the detailed product page. Used to change the thumbnail style.
 * ``cm-previewer`` - assigned to a link (for example, under an image) that opens a bigger image when clicked. The page is not changed. The image is defined in the href parameter::
 
    <a id="det_img_link_1553_140" rel="preview[product_images]" rev="preview[product_images]" class="cm-previewer" href="/professional/images/detailed/0/detailed_image_1386.jpg" title="img.jpg">
@@ -552,7 +535,6 @@ Image gallery
    </a>
 
 * ``cm-thumbnails-mini`` - assigned to an image in the mini-gallery on the detailed product page. Used for thumbnail identification and for assigning class ``cm-cur-item`` when an image is clicked (class ``cm-cur-item`` is removed from all items with class ``cm-thumbnails-mini``).
-* ``cm-generate-image`` - initializes the thumbnails generation.
 
 Design and translate mode
 =========================
@@ -592,12 +574,8 @@ Pagination
 ==========
 
 * ``cm-history`` - assigned to links. When a link with this microformat is clicked, current page state is saved in the browsing history. The jQuery history plug-in is used.
-
-    Example: Product pagination.
-* ``cm-pagination`` - assigned to an input. When *Enter* is pressed in it, the page is changed to the entered one.
-* ``cm-pagination-button`` - assigned to a button. When clicked, the page is changed to the one entered in the respective ``cm-pagination`` input.
-* ``cm-pagination-wraper`` - assigned to a navigation controls container.
 * ``cm-back-link`` - returns to a previous page, works through the history.
+* ``cm-pagination-container`` - container with the page navigation sampling results. Used for scrolling after the AJAX-request. 
 
 AJAX
 ====
