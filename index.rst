@@ -23,7 +23,6 @@ Contents:
     core/index
     api/index
     addons/index
-    translation/index
     tools/index
     themes/index
 
