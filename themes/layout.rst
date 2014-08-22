@@ -95,11 +95,11 @@ They are created based on *schemas*. Schema is a file where all blocks, their se
 
 Block settings:
 
-*	**Name** - block name.
+*	**Name** - block name.  
 
-*	**Template** - template (.tpl) defined for a block. Block templates are stored in the *templates/blocks/* directory.
+*	**Template** - template (.tpl) defined for a block. Block templates are stored in the *templates/blocks/* directory. 
 
-*	**Wrapper** - template to include content. Wrappers are stored in the */templates/blocks/wrappers/* directory.\
+*	**Wrapper** - template to include content. Wrappers are stored in the */templates/blocks/wrappers/* directory.
 
 *	**User-defined CSS-class** - used to add a CSS-class.
 
