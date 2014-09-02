@@ -20,7 +20,7 @@ This functionality gives an opportunity to create variables and use them to defi
 
 	@price: #343434;
 
-LESS variables in CS-Cart are related to the **Styles** concept (see the **Styles and Visual Editor** section earlier in this guide).
+LESS variables in CS-Cart are related to the **Styles** concept (see the **Styles and Visual Editor** section further in this guide).
 
 In the *design/themes/THEME_NAME/styles/data* directory of your CS-Cart installation there are the *less* files that contain the LESS variables related to Visual Editor (where THEME_NAME is the name of your theme). 
 
