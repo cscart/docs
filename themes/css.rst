@@ -78,7 +78,7 @@ LESS contains a set of functions for working with color, mathematical functions,
 
 Operations that are used in Cs-cart:
 
-*	``ighten(@color, 10%)`` - returns the color that is 10% lighter than the current color.
+*	``lighten(@color, 10%)`` - returns the color that is 10% lighter than the current color.
 
 *	``darken(@color, 10%)`` - returns the color that is 10% darker than the current color.
 
