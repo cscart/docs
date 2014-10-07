@@ -102,7 +102,7 @@ The full list of supported fields is given below (mandatory fields are marked wi
         -   ''
         -   string
     *   -   page_title
-        -   Product page title
+        -   Category page title
         -   ''
         -   string
     *   -   parent_age_limit
