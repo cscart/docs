@@ -42,7 +42,7 @@ The full list of supported fields is given below (mandatory fields are marked wi
         -   Default company ID
         -   integer
     *   -   status*
-        -   | Product status:
+        -   | Category status:
             | ``A`` for Active
             | ``D`` for Disabled
             | ``H`` for Hidden
