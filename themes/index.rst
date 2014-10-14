@@ -67,5 +67,6 @@ It is not necessary to use all the theme files when creating a new theme. When i
     :maxdepth: 2
     :titlesonly:
     :glob:
-
+    
+    */index
     *

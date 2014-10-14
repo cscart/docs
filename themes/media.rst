@@ -22,6 +22,8 @@ Directory structure
 
 *	**fonts** - icon fonts (see more information below).
 
+.. _iconfonts:
+
 Icon Fonts
 **********
 
