@@ -84,17 +84,6 @@ New:
 
 	public static function instance($company_id = 0, $params = array())
 
-Old:
-
-.. code-block:: none
-
-	public function getCompanyCondition($db_field)
-
-New:
-
-.. code-block:: none
-
-	public function getCompanyCondition($db_field)
 
 The following method was removed:
 
