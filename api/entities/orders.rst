@@ -46,18 +46,6 @@ The full list of supported fields is given below (mandatory fields are marked wi
         -   Country (billing address)
         -   ''
         -   string
-    *   -   b_country
-        -   Country (billing address)
-        -   ''
-        -   string
-    *   -   b_country
-        -   Country (billing address)
-        -   ''
-        -   string
-    *   -   b_country
-        -   County (billing address)
-        -   ''
-        -   string
     *   -   b_firstname
         -   First name (billing)
         -   ''
@@ -189,18 +177,6 @@ The full list of supported fields is given below (mandatory fields are marked wi
         -   2-letter country code
     *   -   s_country_descr
         -   Country (shipping address)
-        -   ''
-        -   string
-    *   -   s_country
-        -   Country (shipping address)
-        -   ''
-        -   string
-    *   -   s_country
-        -   Country (shipping address)
-        -   ''
-        -   string
-    *   -   s_country
-        -   County (shipping address)
         -   ''
         -   string
     *   -   s_firstname
