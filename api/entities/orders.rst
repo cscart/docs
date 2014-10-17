@@ -46,18 +46,6 @@ The full list of supported fields is given below (mandatory fields are marked wi
         -   Country (billing address)
         -   ''
         -   string
-    *   -   b_country
-        -   Country (billing address)
-        -   ''
-        -   string
-    *   -   b_country
-        -   Country (billing address)
-        -   ''
-        -   string
-    *   -   b_country
-        -   County (billing address)
-        -   ''
-        -   string
     *   -   b_firstname
         -   First name (billing)
         -   ''
