@@ -179,18 +179,6 @@ The full list of supported fields is given below (mandatory fields are marked wi
         -   Country (shipping address)
         -   ''
         -   string
-    *   -   s_country
-        -   Country (shipping address)
-        -   ''
-        -   string
-    *   -   s_country
-        -   Country (shipping address)
-        -   ''
-        -   string
-    *   -   s_country
-        -   County (shipping address)
-        -   ''
-        -   string
     *   -   s_firstname
         -   First name (shipping)
         -   ''
