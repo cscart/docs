@@ -65,7 +65,7 @@ The full list of supported fields is given below (mandatory fields are marked wi
             | ``R`` for Real-time
     *   -   rates
         -   Rates
-        -   {'rate_value': {
+        -   | {'rate_value': {
             | 'C': {},
             | 'I': {},
             | 'W': {}
