@@ -66,7 +66,7 @@ URLs
 
 An API request is a regular HTTP request sent to a particular URL.
 
-By default, API 1.0 is used in CS-Cart, and the URLs are built as follows:
+By default, CS-Cart uses API 1.0 with the URLs built as follows:
 
 *   **http://example.com/api/:object**—refer to all objects of a certain type
 *   **http://example.com/api/:object/:id**—refer to a single object
@@ -84,7 +84,7 @@ For example, **http://example.com/api/product/1/features** refers to all the fea
     *   **http://example.com/api.php?_d=:object/:id/:nested_object&ajax_custom=1**—refer to all nested objects of a certain object
     *   **http://example.com/api.php?_d=:object/:id/:nested_object/:id&ajax_custom=1**—refer to a single nested object of a certain object
 
-Also, you can use API 2.0. In this case URLs will have the following structure:
+Nonetheless, **API 2.0 is recommended**. In API 2.0 the URLs have the following structure:
 
 *   **http://example.com/api/2/:object**—refer to all objects of a certain type
 *   **http://example.com/api/2/:object/:id**—refer to a single object
