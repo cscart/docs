@@ -6,11 +6,11 @@ CS-Cart documentation, fully re-written in reST and built with Sphinx.
 
 Latest build:
 
-    http://docs2.cs-cart.com
+    http://docs.cs-cart.com
 
 Author's guide:
 
-    http://docs2.cs-cart.com/4.0.x/author_guide.html
+    http://docs.cs-cart.com/4.0.x/author_guide.html
 
 Build These Docs Locally
 ========================
