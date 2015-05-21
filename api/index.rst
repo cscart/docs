@@ -251,4 +251,4 @@ Delete the product with the id 12:
 Response
 """"""""
 
-Nothing in response, independently on the success of the operation.
+204 response with empty body.
