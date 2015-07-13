@@ -47,7 +47,6 @@ The full list of supported fields is given below (mandatory fields are marked wi
             | ``T`` for Others:Text
             | ``O`` for Others:Number
             | ``D`` for Others:Date
-            | ``G`` for features group
     *   -   categories_path
         -   Categories to which the feature can be applied
         -   ''
