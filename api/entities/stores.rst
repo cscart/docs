@@ -22,24 +22,32 @@ Response:
 
 .. code-block:: json
 
-    [
-        {
-            "company_id": "2",
-            "lang_code": "en",
-            "email": "acme_corp@example.com",
-            "company": "ACME Corp",
-            "timestamp": "1269610461",
-            "status": "A"
-        },
-        {
-            "company_id": "1",
-            "lang_code": "en",
-            "email": "simtech@example.com",
-            "company": "Simtech",
-            "timestamp": "1269610461",
-            "status": "A"
-        }
-    ]
+	{
+	    "stores": [{
+	        "company_id": "2",
+	        "lang_code": "",
+	        "email": "",
+	        "company": "Sample store",
+	        "timestamp": "1438165755",
+	        "status": "A",
+	        "storefront": "example.com\/samplestore",
+	        "secure_storefront": "example.com\/samplestore",
+	        "average_rating": null,
+	        "company_thread_ids": "2_0"
+	    }, {
+	        "company_id": "1",
+	        "lang_code": "en",
+	        "email": "store@example.com",
+	        "company": "My Company",
+	        "timestamp": "1269610461",
+	        "status": "A",
+	        "storefront": "example.com\/cscart_433",
+	        "secure_storefront": "example.com\/cscart_433",
+	        "average_rating": null,
+	        "company_thread_ids": "1_0"
+	    }],
+	    "params": []
+	}
 
 Get store data for the store with ID 2
 --------------------------------------
@@ -52,14 +60,18 @@ Response:
 
 .. code-block:: json
 
-    {
-        "company_id": "2",
-        "lang_code": "en",
-        "email": "acme_corp@example.com",
-        "company": "ACME Corp",
-        "timestamp": "1269610461",
-        "status": "A"
-    }
+	{
+	    "company_id": "1",
+	    "lang_code": "en",
+	    "email": "store@example.com",
+	    "company": "My Company",
+	    "timestamp": "1269610461",
+	    "status": "A",
+	    "storefront": "example.com\/cscart_433",
+	    "secure_storefront": "example.com\/cscart_433",
+	    "average_rating": null,
+	    "company_thread_ids": "1_0"
+	}
 
 Create a store
 --------------
