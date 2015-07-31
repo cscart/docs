@@ -26,6 +26,7 @@ Contents:
     addons/index
     tools/index
     themes/index
+    upgrade/index
 
 .. toctree::
     :maxdepth: 2

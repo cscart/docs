@@ -152,7 +152,7 @@ Product Feature Variants
         -   Valid feature type (see above)
     *   -   image_pair
         -   ``Brand/Manufacturer`` only: Images
-        -   None
+        -   NULL
         -   Valid :ref:`image pair <main-pair>`
     *   -   lang_code
         -   Language code
