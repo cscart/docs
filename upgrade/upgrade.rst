@@ -1,6 +1,6 @@
-**************
-Upgrade center
-**************
+*********************************************
+Upgrade center: How it is organized and works
+*********************************************
 
 Main features of the new Upgrade Center
 
