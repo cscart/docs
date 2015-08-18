@@ -8,6 +8,21 @@ URLs
 *   http://example.com/api/**users**—refer to all users. Only ``GET`` and ``POST`` are supported.
 *   http://example.com/api/**users/:id**—refer to a particular user. ``GET``, ``PUT``, and ``DELETE`` are supported.
 
+Pagination
+==========
+
+.. list-table::
+    :header-rows: 1
+    :stub-columns: 1
+    :widths: 5 30
+
+    *   -   Pagination param
+        -   Description
+    *   -   page
+        -   Shows all users on a page with the defined number
+    *   -   items_per_page
+        -   Shows N first users, where N - is a number defined in the parameter
+       
 Fields
 ======
 

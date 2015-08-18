@@ -8,10 +8,25 @@ URLs
 *   http://example.com/api/**statuses**—refer to all products. Only ``GET`` and ``POST`` are supported.
 *   http://example.com/api/**statuses/:id**—refer to a particular product. ``GET``, ``PUT``, and ``DELETE`` are supported.
 
+Pagination
+==========
+
+.. list-table::
+    :header-rows: 1
+    :stub-columns: 1
+    :widths: 5 30
+
+    *   -   Pagination param
+        -   Description
+    *   -   page
+        -   Shows all statuses on a page with the defined number
+    *   -   items_per_page
+        -   Shows N first statuses, where N - is a number defined in the parameter
+
 Fields
 ======
 
-A product has a number of properties, represented by fields.
+A status has a number of properties, represented by fields.
 
 The full list of supported fields is given below (mandatory fields are marked with **\***).
 

@@ -5,13 +5,28 @@ Payment Methods
 URLs
 ====
 
-*   http://example.com/api/**payments**—refer to all products. Only ``GET`` and ``POST`` are supported.
-*   http://example.com/api/**payments/<id>**—refer to a particular product. ``GET``, ``PUT``, and ``DELETE`` are supported.
+*   http://example.com/api/**payments**—refer to all payments. Only ``GET`` and ``POST`` are supported.
+*   http://example.com/api/**payments/<id>**—refer to a particular payment. ``GET``, ``PUT``, and ``DELETE`` are supported.
+
+Pagination
+==========
+
+.. list-table::
+    :header-rows: 1
+    :stub-columns: 1
+    :widths: 5 30
+
+    *   -   Pagination param
+        -   Description
+    *   -   page
+        -   Shows all payments on a page with the defined number
+    *   -   items_per_page
+        -   Shows N first payments, where N - is a number defined in the parameter
 
 Fields
 ======
 
-A product has a number of properties, represented by fields.
+A payment has a number of properties, represented by fields.
 
 The full list of supported fields is given below (mandatory fields are marked with **\***).
 

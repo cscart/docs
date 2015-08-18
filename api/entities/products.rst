@@ -151,6 +151,21 @@ Sorting
 
 It is possible to set the sort order by defining the ``sort_order`` URL param to ``asc`` or ``desc``.
 
+Pagination
+----------
+
+.. list-table::
+    :header-rows: 1
+    :stub-columns: 1
+    :widths: 5 30
+
+    *   -   Pagination param
+        -   Description
+    *   -   page
+        -   Shows all products on a page with the defined number
+    *   -   items_per_page
+        -   Shows N first products, where N - is a number defined in the parameter
+
 Fields
 ======
 

@@ -8,6 +8,21 @@ URLs
 *   http://example.com/api/**taxes/**—refer to all tax objects. Only ``GET`` and ``POST`` are supported.
 *   http://example.com/api/**taxes/:id**—refer to a particular tax object. ``GET``, ``PUT``, and ``DELETE`` are supported.
 
+Pagination
+==========
+
+.. list-table::
+    :header-rows: 1
+    :stub-columns: 1
+    :widths: 5 30
+
+    *   -   Pagination param
+        -   Description
+    *   -   page
+        -   Shows all taxes on a page with the defined number
+    *   -   items_per_page
+        -   Shows N first taxes, where N - is a number defined in the parameter
+       
 Fields
 ======
 

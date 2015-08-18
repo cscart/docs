@@ -15,6 +15,21 @@ Nested Objects
 
 *   :doc:`Products <products>`
 
+Pagination
+==========
+
+.. list-table::
+    :header-rows: 1
+    :stub-columns: 1
+    :widths: 5 30
+
+    *   -   Pagination param
+        -   Description
+    *   -   page
+        -   Shows all categories on a page with the defined number
+    *   -   items_per_page
+        -   Shows N first categories, where N - is a number defined in the parameter
+
 Fields
 ======
 

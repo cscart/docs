@@ -8,6 +8,21 @@ URLs
 *   http://example.com/api/**shipments**—refer to all shipments. Only ``GET`` and ``POST`` are supported.
 *   http://example.com/api/**shipments/:id**—refer to a particular shipment. ``GET``, ``PUT``, and ``DELETE`` are supported.
 
+Pagination
+==========
+
+.. list-table::
+    :header-rows: 1
+    :stub-columns: 1
+    :widths: 5 30
+
+    *   -   Pagination param
+        -   Description
+    *   -   page
+        -   Shows all shipments on a page with the defined number
+    *   -   items_per_page
+        -   Shows N first shipments, where N - is a number defined in the parameter
+
 Fields
 ======
 

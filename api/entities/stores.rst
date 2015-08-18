@@ -125,7 +125,21 @@ Response:
         "store_id": "3"
     }
 
+Pagination
+==========
 
+.. list-table::
+    :header-rows: 1
+    :stub-columns: 1
+    :widths: 5 30
+
+    *   -   Pagination param
+        -   Description
+    *   -   page
+        -   Shows all stores on a page with the defined number
+    *   -   items_per_page
+        -   Shows N first stores, where N - is a number defined in the parameter
+        
 Fields
 ======
 

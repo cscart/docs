@@ -8,6 +8,21 @@ URLs
 *   http://example.com/api/**settings**—refer to all settings. Only ``GET`` is supported.
 *   http://example.com/api/**settings/:id**—refer to a particular setting. ``GET`` and ``PUT`` are supported.
 
+Pagination
+==========
+
+.. list-table::
+    :header-rows: 1
+    :stub-columns: 1
+    :widths: 5 30
+
+    *   -   Pagination param
+        -   Description
+    *   -   page
+        -   Shows all settings on a page with the defined number
+    *   -   items_per_page
+        -   Shows N first settings, where N - is a number defined in the parameter
+
 Fields
 ======
 

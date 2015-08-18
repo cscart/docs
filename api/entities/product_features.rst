@@ -10,6 +10,21 @@ URLs
 *   http://example.com/api/**products/:id/features**—refer to all features of a particular :doc:`product <products>`.
 *   http://example.com/api/**products/:id/features/:id**—refer to a particular feature in a particular product.
 
+Pagination
+==========
+
+.. list-table::
+    :header-rows: 1
+    :stub-columns: 1
+    :widths: 5 30
+
+    *   -   Pagination param
+        -   Description
+    *   -   page
+        -   Shows all features on a page with the defined number
+    *   -   items_per_page
+        -   Shows N first features, where N - is a number defined in the parameter
+
 Fields
 ======
 
