@@ -11,17 +11,33 @@ URLs
 Pagination
 ==========
 
+To get a specific number of shipping methods or list of shipping methods from a concrete page in a response, use pagination parameters:
+
 .. list-table::
     :header-rows: 1
     :stub-columns: 1
-    :widths: 5 30
+    :widths: 20 30
 
     *   -   Pagination param
         -   Description
     *   -   page
-        -   Shows all shipping methods on a page with the defined number
+        -   Shows shipping methods on a page with the defined number
     *   -   items_per_page
-        -   Shows N first shipping methods, where N - is a number defined in the parameter
+        -   Shows N shipping methods, where N - is a number defined in the parameter
+
+**Examples:**
+
+*   *http://example.com/api/shippings?page=5*
+
+Response is an array with 10 shipping methods from the 5th page (10 is the default value of the ``items_per_page`` parameter).
+
+*   *http://example.com/api/shippings?items_per_page=20*
+
+Response is an array with 20 shipping methods from the first page.
+
+*   *http://example.com/api/shippings?page=5&items_per_page=20*
+
+Response is an array with 20 shipping methods from the 5th page.
 
 Fields
 ======

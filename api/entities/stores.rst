@@ -128,17 +128,33 @@ Response:
 Pagination
 ==========
 
+To get a specific number of stores or list of stores from a concrete page in a response, use pagination parameters:
+
 .. list-table::
     :header-rows: 1
     :stub-columns: 1
-    :widths: 5 30
+    :widths: 20 30
 
     *   -   Pagination param
         -   Description
     *   -   page
-        -   Shows all stores on a page with the defined number
+        -   Shows stores on a page with the defined number
     *   -   items_per_page
-        -   Shows N first stores, where N - is a number defined in the parameter
+        -   Shows N stores, where N - is a number defined in the parameter
+
+**Examples:**
+
+*   *http://example.com/api/stores?page=5*
+
+Response is an array with 10 stores from the 5th page (10 is the default value of the ``items_per_page`` parameter).
+
+*   *http://example.com/api/stores?items_per_page=20*
+
+Response is an array with 20 stores from the first page.
+
+*   *http://example.com/api/stores?page=5&items_per_page=20*
+
+Response is an array with 20 stores from the 5th page.
         
 Fields
 ======

@@ -18,17 +18,33 @@ Nested Objects
 Pagination
 ==========
 
+To get a specific number of categories or list of categories from a concrete page in a response, use pagination parameters:
+
 .. list-table::
     :header-rows: 1
     :stub-columns: 1
-    :widths: 5 30
+    :widths: 20 30
 
     *   -   Pagination param
         -   Description
     *   -   page
-        -   Shows all categories on a page with the defined number
+        -   Shows categories on a page with the defined number
     *   -   items_per_page
-        -   Shows N first categories, where N - is a number defined in the parameter
+        -   Shows N categories, where N - is a number defined in the parameter
+
+**Examples:**
+
+*	*http://example.com/api/categories?page=5*
+
+Response is an array with 10 categories from the 5th page (10 is the default value of the ``items_per_page`` parameter).
+
+*	*http://example.com/api/categories?items_per_page=20*
+
+Response is an array with 20 categories from the first page.
+
+*	*http://example.com/api/categories?page=5&items_per_page=20*
+
+Response is an array with 20 categories from the 5th page.
 
 Fields
 ======

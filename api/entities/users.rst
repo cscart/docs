@@ -11,17 +11,33 @@ URLs
 Pagination
 ==========
 
+To get a specific number of users or list of users from a concrete page in a response, use pagination parameters:
+
 .. list-table::
     :header-rows: 1
     :stub-columns: 1
-    :widths: 5 30
+    :widths: 20 30
 
     *   -   Pagination param
         -   Description
     *   -   page
-        -   Shows all users on a page with the defined number
+        -   Shows users on a page with the defined number
     *   -   items_per_page
-        -   Shows N first users, where N - is a number defined in the parameter
+        -   Shows N users, where N - is a number defined in the parameter
+
+**Examples:**
+
+*   *http://example.com/api/users?page=5*
+
+Response is an array with 10 users from the 5th page (10 is the default value of the ``items_per_page`` parameter).
+
+*   *http://example.com/api/users?items_per_page=20*
+
+Response is an array with 20 users from the first page.
+
+*   *http://example.com/api/users?page=5&items_per_page=20*
+
+Response is an array with 20 users from the 5th page.
        
 Fields
 ======

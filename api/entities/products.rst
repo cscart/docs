@@ -154,17 +154,33 @@ It is possible to set the sort order by defining the ``sort_order`` URL param to
 Pagination
 ----------
 
+To get a specific number of products or list of products from a concrete page in a response, use pagination parameters:
+
 .. list-table::
     :header-rows: 1
     :stub-columns: 1
-    :widths: 5 30
+    :widths: 20 30
 
     *   -   Pagination param
         -   Description
     *   -   page
-        -   Shows all products on a page with the defined number
+        -   Shows products on a page with the defined number
     *   -   items_per_page
-        -   Shows N first products, where N - is a number defined in the parameter
+        -   Shows N products, where N - is a number defined in the parameter
+
+**Examples:**
+
+*   *http://example.com/api/products?page=5*
+
+Response is an array with 10 products from the 5th page (10 is the default value of the ``items_per_page`` parameter).
+
+*   *http://example.com/api/products?items_per_page=20*
+
+Response is an array with 20 products from the first page.
+
+*   *http://example.com/api/products?page=5&items_per_page=20*
+
+Response is an array with 20 products from the 5th page.
 
 Fields
 ======
