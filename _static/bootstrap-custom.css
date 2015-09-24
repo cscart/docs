@@ -78,8 +78,11 @@ code, pre {
     border-bottom: 2px solid rgba(219,219,219,0.3);
 }
 
+.navbar .brand {
+    background: rgba(0, 0, 0, 0) url("cscart_logo.png") no-repeat 22px 3px;
+}
+
 .navbar h3 a, .navbar .brand {
-    background: transparent url({{ pathto(html_logo) }}) no-repeat;
     width: 102px;
     height: 40px;
 }
