@@ -39,7 +39,6 @@ body {
   {%- if logo %}
 @media (min-width: 980px) {
   .navbar h3 a, .navbar .brand {
-    background: transparent url("{{ logo }}") no-repeat 22px 3px;
     padding-left: 62px;
     width: 102px;
     height: 40px;
