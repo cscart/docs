@@ -7,7 +7,7 @@ AJAX is a technology that allows page content updating without the page being re
 AJAX in CS-Cart. Basic Concept
 ==============================
 
-CS-Cart uses its own extensions for the jQuery ajax method. They reside in the */js/ajax.js* file. Here are these methods in the order they are called:
+CS-Cart uses its own extensions for the jQuery ajax method. They reside in the *js/tygh/ajax.js* file. Here are these methods in the order they are called:
 
  * ``submitForm`` (form only) - extracts form data and prepares it for sending.
  * ``request`` - sends AJAX-request to a respective controller (parsed from dispatch). Uses jQuery ajax method.
@@ -15,7 +15,7 @@ CS-Cart uses its own extensions for the jQuery ajax method. They reside in the *
  * ``inProgress``- whether if ajax request in progress.
  * ``clearCache`` - clear response cache.
 
-When processing AJAX request on the server, initialization of the AJAX request handling subsystem is performed by the ``fn_init_ajax`` (*/functions/fn.init.php*) function: an object of AJAX class (*/Tygh/Ajax.php*) is created; it performs necessary transformations before and after AJAX request and also generates JSON array for further transfer to ``response``.
+When processing AJAX request on the server, initialization of the AJAX request handling subsystem is performed by the ``fn_init_ajax`` (*app/functions/fn.init.php*) function: an object of AJAX class (*app/Tygh/Ajax.php*) is created; it performs necessary transformations before and after AJAX request and also generates JSON array for further transfer to ``response``.
 
 The constant *AJAX_REQUEST* is set to true for use in PHP code.
 
@@ -25,7 +25,7 @@ Using the constant *AJAX_REQUEST* in a PHP file you can specify the code that is
 
  if (defined('AJAX_REQUEST')) { fn_set_notification('E', fn_get_lang_var('warning'), $msg, true, 'insecure_password'); }
 
-When execution of the AJAX request script is completed or when the termination function ``exit()`` is called explicitly, the destructor of AJAX class (*/Tygh/Ajax.php*) is executed. The destructor passes the information that should be displayed in the document to an array with data in JSON format and then passes the array to the JS function ``response`` (*/js/tygh/ajax.js*).
+When execution of the AJAX request script is completed or when the termination function ``exit()`` is called explicitly, the destructor of AJAX class (*app/Tygh/Ajax.php*) is executed. The destructor passes the information that should be displayed in the document to an array with data in JSON format and then passes the array to the JS function ``response`` (*/js/tygh/ajax.js*).
 
 A controller returns a response in the following format:
 
@@ -78,11 +78,11 @@ Links
 
 A link with class ``cm-ajax`` will send an AJAX-request to the URL specified in its href attribute when clicked.
 
-The ids of the elements to be updated should be specified in the ``rev`` attribute.
+The ids of the elements to be updated should be specified in the ``data-ca-target-id`` attribute.
 
 Example of an AJAX-powered link::
 
- <a class="cm-ajax" rev="content_usergroups" href="{"profiles.request_usergroup?usergroup_id=`$usergroup.usergroup_id`&amp;status=`$ug_status`"|fn_url}">{$_link_text}</a>
+ <a class="cm-ajax" data-ca-target-id="cart_items,checkout_totals,cart_status*,checkout_steps,checkout_cart" href="{""|fn_url}"><i class="icon-cancel-circle"></i></a>
 
 Additional microformats
 -----------------------
