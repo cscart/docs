@@ -1,0 +1,36 @@
+**********
+Categories
+**********
+
+The two key concepts to describe the cataloguing in CS-Cart are the *product* and the *category of products*, or simply the *category*.
+
+Finding a right product in a web store becomes much easier if the products in the catalog are categorized, i.e. are sensibly arranged into groups of related products, or categories. Each product category can include an unlimited number of child categories which, in return, can include own child categories.
+
+Child categories are referred to as *sub-categories* while the categories that do not have parent categories, i.e. categories of the highest level, are called *root categories*. The system of categories enables you to build the catalog in the way of a tree with multiple branches, making the navigation structured, intuitive, and clear.
+
+.. image:: img/categories_list.png
+    :align: center
+    :alt: List of the product categories
+
+.. important::
+
+	Individual products cannot appear outside a product category, so every product that you have in your catalog must be assigned to at least one category.
+
+Actions on categories
+*********************
+
+The store administrator can carry out the following actions on the categories:
+
+*	Add individual categories (the **+** button) or several categories at a time (the **Bulk category addition** link under the gear button).
+*	Change attributes per category or simultaneously for several categories (the **Edit selected link** under the gear button).
+*	Delete categories (the **Delete selected** link under the gear button).
+
+.. important::
+
+	Be careful when deleting a category! Child categories and the products under the category will be deleted automatically.
+
+.. toctree::
+    :maxdepth: 1
+    :glob:
+
+    *

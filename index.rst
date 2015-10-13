@@ -17,7 +17,7 @@ Contents:
     *   `Older docs <http://old.docs.cs-cart.com>`_
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 4
     :titlesonly:
     :glob:
 
@@ -27,6 +27,7 @@ Contents:
     tools/index
     themes/index
     upgrade/index
+    user_guide/index
 
 .. toctree::
     :maxdepth: 2
