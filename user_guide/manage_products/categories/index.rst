@@ -29,6 +29,9 @@ The store administrator can carry out the following actions on the categories:
 
 	Be careful when deleting a category! Child categories and the products under the category will be deleted automatically.
 
+In this section
+***************
+
 .. toctree::
     :maxdepth: 1
     :glob:

@@ -27,8 +27,11 @@ The store administrator can carry out the following actions on the products:
 *	Look through the list of products with subscriptions with the help of the **Product subscriptions** link under the gear button.
 *	Export products to eBay with the **Export to eBay** link (the **eBay synchronization** add-on must be installed and set up in the **Add-ons > Manage add-ons** section).
 
+In this section
+***************
+
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :glob:
 
     *
