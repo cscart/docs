@@ -8,4 +8,3 @@ Manage Products
     :glob:
 
     */index
-    *

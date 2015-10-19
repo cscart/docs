@@ -8,4 +8,3 @@ User Guide
     :glob:
 
     */index
-    *

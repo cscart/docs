@@ -1,0 +1,42 @@
+***************
+Product Options
+***************
+
+To set product options:
+
+*   In the Administration panel, go to **Products > Products**.
+*   Open any product details page and then open the **Options** tab.
+*   On the opened page, click the **Add option** button and complete the form under the **General** tab:
+
+	.. image:: img/options.png
+		:align: center
+		:alt: New option
+
+    *   **Name** - Name of the product option as it appears on the storefront.
+    *   **Position** – Position of the product option relatively to the position of the other options in the list.
+    *   **Store** - Store to which the option originally belongs.
+    *   **Inventory** – If selected, the option has its own number of items in stock, which is tracked separately.
+    *   **Type** – Type of the product option: *Select box*, *Radio group*, *Check box*, *Text*, *Text area*, or *File*.
+
+        *   If the option type is *Text*, *Text area* or *File*, please refer to this `article <http://kb.cs-cart.com/settings-text-option>`_ in order to learn more about its settings.
+        *   If the option type is *Select box* or *Radio group*, open the **Variants** section in the same window. Complete the **Name** input field (e.g. *Green*). In the **Modifier** input field, set the amount that will be added to the product price if this option is selected (e.g. *+2*). Leave it empty if the price will not change. To add more variants, click the **+** icon.
+
+	.. image:: img/options1.png
+	    :align: center
+	    :alt: The Variants tab
+
+    *   **Description** - Description of the product option as it appears on the storefront under the question sign (?) next to the option name.
+    *   **Comment** – Comment to be displayed below the option on the storefront.
+    *   **Required** - If selected, this option is mandatory for selection/completion.
+    *   **Missing variants handling** - Select how impermissible/missing option combinations should be handled: *Display message* - the option will be marked as not available, if the option is mandatory (see the previous setting) customers will not be able to add the product to the cart; *Hide option completely* - the option will be hidden, if the option is mandatory (see the previous setting) customers will be able to add the product to the cart.
+
+*   Click the **Create** button.
+*   On the **Editing product** page, choose the **Options** tab and click the **Option combinations** button. This will open a list containing combinations of all product option values on this page. If there are no option combinations defined on this page, click the **+** button. Now you can enter product code and upload small and detailed images for each option combination.
+
+The added product option will be displayed on the product list and product details pages in the storefront.
+
+Also, you can set the `global product options <http://kb.cs-cart.com/global-options>`_.
+
+.. important::
+
+	To add Options for a product using the import option, use the instructions from the `Imported fields format <http://kb.cs-cart.com/imported-fields-format>`_ article.
