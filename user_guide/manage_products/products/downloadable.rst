@@ -42,16 +42,16 @@ To create a downloadable product:
     :align: center
     :alt: Activation mode
 
-.. important::
+.. note::
 
     The **Download** link will appear on the order details page immediately after the order has been placed. It will lead to the download page containing the name of the file to be downloaded. When the download is permitted/activated, the string with the filename will be converted into a download link, and the customer will receive this link by email.
 
 *	Click the **Create** button.
 
-.. important::
+.. note::
 
-    To make the product downloadable and add files to it using the `import <http://kb.cs-cart.com/product-import>`_ option, use the instructions from the `Imported fields format <http://kb.cs-cart.com/imported-fields-format>`_ article.
+    To make the product downloadable and add files to it using the :doc:`import <../import_export/product_import>` option, use the instructions from the :doc:`Imported fields format <../import_export/fields_format>` article.
 
-.. important::
+.. note::
 
     The uploaded files are stored in the *var/downloads* directory of your CS-Cart installation.

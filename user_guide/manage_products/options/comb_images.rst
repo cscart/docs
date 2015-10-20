@@ -24,6 +24,6 @@ Adding Images to Product Option Combinations
 
 *	Click the **Save** button.
 
-.. important::
+.. note::
 
 	The image added to the product option combination will be displayed when a customer selects this option combination in the storefront.

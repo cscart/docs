@@ -5,7 +5,7 @@ Product Import
 To import the products to the store:
 
 *   In the Administration panel, go to **Administration > Import data > Products**.
-*   Make sure the fields in your CSV file have the same names as the ones listed under the **Products** section on this page. Also check whether the values of the fields have the correct format. For more information about the correct format read the `Imported fields format <http://kb.cs-cart.com/imported-fields-format>`_ article.
+*   Make sure the fields in your CSV file have the same names as the ones listed under the **Products** section on this page. Also check whether the values of the fields have the correct format. For more information about the correct format read the :doc:`Imported fields format <../import_export/fields_format>` article.
 
 .. image:: img/import_01.png
     :align: center
@@ -27,7 +27,7 @@ To import the products to the store:
     *   **CSV delimiter** - Select the CSV delimiter, which is used in the CSV file (e.g. comma, semicolon, tab).
     *   **Select file** - Choose location of the CSV file with the import data and select this file.
 
-    .. important::
+    .. note::
 
     	For example: If your file is located on your local computer, click the **Local** button and select the file.
 
@@ -37,7 +37,7 @@ To import the products to the store:
     :align: center
     :alt: Import options
 
-To get an example of the correct CSV file, export your products in the **Products** tab on the **Export data** page in your Administration panel, or refer to the `article of the product import example <http://kb.cs-cart.com/example-import>`_.
+To get an example of the correct CSV file, export your products in the **Products** tab on the **Export data** page in your Administration panel, or refer to the :doc:`article of the product import example <../import_export/import_example>`.
 
 .. important::
 

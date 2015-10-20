@@ -60,6 +60,6 @@ To set up product features:
 
     When editing a feature, the **Categories** tab is displayed only if it doesn’t belong to any group. In this tab you can set the categories (namely products of these categories) for which this feature can be defined. If the product feature belongs to some group, then such categories are specified when editing the group.
 
-.. important::
+.. note::
 
-    You are able to add **Features** for a product using `import <http://kb.cs-cart.com/product-import>`_. You can find the description of the correct format in the `Imported fields format <http://kb.cs-cart.com/imported-fields-format>`_ article.
+    You are able to add **Features** for a product using :doc:`import <../import_export/product_import>`. You can find the description of the correct format in the :doc:`Imported fields format <../import_export/fields_format>` article.

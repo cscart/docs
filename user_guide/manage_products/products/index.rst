@@ -22,10 +22,10 @@ The store administrator can carry out the following actions on the products:
 
 *	Add products individually (the **+** button) or in bulk (the **Bulk product addition** link under the gear button) and clone products (the **Clone selected** link under the gear button).
 *	Change product attributes per product (the **Edit** link under the gear button) or simultaneously for several products (the **Global update** link under the gear button).
-*	Export products (the **Export selected** link under the gear button). See topic Administration/Export data for more information about export procedures.
+*	Export products (the **Export selected** link under the gear button). See this `topic <http://www.cs-cart.com/documentation/reference_guide/index.htmld?administration_export_data.htm>`_ for more information about export procedures.
 *	Delete products.
 *	Look through the list of products with subscriptions with the help of the **Product subscriptions** link under the gear button.
-*	Export products to eBay with the **Export to eBay** link (the **eBay synchronization** add-on must be installed and set up in the **Add-ons > Manage add-ons** section).
+*	Export products to eBay with the **Export to eBay** link. The **eBay synchronization** add-on must be installed and set up in the **Add-ons > Manage add-ons** section.
 
 In this section
 ***************

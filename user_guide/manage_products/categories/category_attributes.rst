@@ -38,7 +38,7 @@ Meta data
 Availability
 ------------
 
-*	**User groups** (requires commercial license) - User groups whose members can access the category.
+*	**User groups** (requires commercial license) - `User groups <http://www.cs-cart.com/documentation/reference_guide/index.htmld?users_user_groups.htm>`_ whose members can access the category.
 *	**Position** - Position of the category relatively to the other categories of the same level. If no category positions are defined, categories are sorted alphabetically.
 *	**Creation date** - Date when the category was added to the catalog.
 
@@ -51,9 +51,13 @@ By using this tab, you can disable blocks that are globally enabled, and, on the
 
 Any modification that you make under this tab will not affect other storefront pages.
 
-.. important::
+.. note::
 
 	This tab is displayed only when you edit the existing category, not when create new.
+
+.. note::
+
+	For more information on blocks, see `Design > Layouts <http://www.cs-cart.com/documentation/reference_guide/index.htmld?layout_editor.htm>`_.
 
 Add-ons 
 *******
@@ -67,7 +71,7 @@ Applicable category attributes that depend on the active add-on modules. Require
 
 .. important::
 
-	The attributes require the **Age Verification** and **Comments and Reviews** ADD-ONS to be enabled and configured.
+	The attributes require the `Age Verification <http://www.cs-cart.com/documentation/reference_guide/index.htmld?administration_add_ons_age_verifications.htm>`_ and `Comments and Reviews <http://www.cs-cart.com/documentation/reference_guide/index.htmld?administration_add_ons_comments_and_reviews.htm>`_ add-ons to be enabled and configured.
 
 Views 
 *****
@@ -85,8 +89,8 @@ Reward points
 
 Number of points that customers receive at their accounts when buying category products. Requires commercial license.
 
-*	**Override global point value for all products in this category** - If selected, the below values prevail over the global points that are defined in the **Reward points** section.
-*	**User group** - User group whose members are granted reward points for buying the category products.
+*	**Override global point value for all products in this category** - If selected, the below values prevail over the global points that are defined in the `Reward points <http://www.cs-cart.com/documentation/reference_guide/index.htmld?catalog_reward_points.htm>`_ section.
+*	**User group** - `User group <http://www.cs-cart.com/documentation/reference_guide/index.htmld?users_user_groups.htm>`_ whose members are granted reward points for buying the category products.
 *	**Amount** - Number of reward points to be granted to a user group member who bought the category product.
 *	**Amount type** - Absolute number of points or percentage-based value calculated in the following manner: the product cost is divided into 100, and the result is multiplied by the value in the field.
 

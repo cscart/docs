@@ -102,7 +102,7 @@ A CSV file can contain the following fields:
 
 	EXAMPLE: */home/client/public_html/cscart-4.3.1/var/files/exim/backup/downloads/filename.pdf*
 
-The file can be specified without a path (just its name) if you specify **Files directory** on the **Import products** page when importing. Please refer to the `Product import <http://kb.cs-cart.com/product-import>`_ article. Several files must be delimited by a comma.
+The file can be specified without a path (just its name) if you specify **Files directory** on the **Import products** page when importing. Please refer to the :doc:`Product Import <../import_export/product_import>` article. Several files must be delimited by a comma.
 
 .. important::
 
@@ -126,7 +126,7 @@ The file can be specified without a path (just its name) if you specify **Files 
 
 	EXAMPLE: */home/client/public_html/cscart-4.3.1/var/files/exim/backup/images/thumbnail_image.jpg*
 
-The image file can be specified without a path (just its name) if you specify **Images directory** on the **Import products** page when importing. Please refer to the `Product import <http://kb.cs-cart.com/product-import>`_ article.
+The image file can be specified without a path (just its name) if you specify **Images directory** on the **Import products** page when importing. Please refer to the :doc:`Product Import <../import_export/product_import>` article.
 
 .. important::
 
@@ -138,7 +138,7 @@ The image file can be specified without a path (just its name) if you specify **
 
 	EXAMPLE: */home/client/public_html/cscart/var/files/exim/backup/images/detailed_image.jpg*
 
-The image file can be specified without a path (just its name) if you specify **Images directory** on the **Import products** page when importing. Please refer to the `Product import <http://kb.cs-cart.com/product-import>`_ article.
+The image file can be specified without a path (just its name) if you specify **Images directory** on the **Import products** page when importing. Please refer to the :doc:`Product Import <../import_export/product_import>` article.
 
 **Product name**. Name of the product.
 
@@ -218,7 +218,7 @@ If you want to import a product with options that have variants with **Modifier/
 
 	Example: *Color: S[Black,White///modifier=1.000///modifier_type=A,Green///modifier=2.000///modifier_type=P,Red///weight_modifier=2.000///weight_modifier_type=A,Blue///weight_modifier=4.000///weight_modifier_type=P]; Size: S[Small,Medium,Large,X Large,XX Large]*
 
-**Secondary categories**. Additional categories, separated by **Category delimiter** that you specify on the **Import products** page. Please refer to the `Product import <http://kb.cs-cart.com/product-import>`_ article. Several secondary categories must be delimited by a semicolon.
+**Secondary categories**. Additional categories, separated by **Category delimiter** that you specify on the **Import products** page. Please refer to the :doc:`Product Import <../import_export/product_import>` article. Several secondary categories must be delimited by a semicolon.
 
 .. important::
 

@@ -10,7 +10,7 @@ To define the wholesale prices for the product:
 *   To add more than one price, click on the **+** icon and specify a new amount of products and a wholesale price.
 *   Click the **Save** button to apply the changes.
 
-.. important::
+.. note::
 
     For example: Enter 2 into the **Quantity** input field and your price for a product (when a customer buys 2 or more items) into the **Value** input field next to it. Click the **Save** button.
 
@@ -18,7 +18,7 @@ To define the wholesale prices for the product:
     :align: center
     :alt: The Quantity discounts tab
 
-.. important::
+.. note::
 
     In the **User group** select box, you can select a user group whose members will be able to purchase the product at the wholesale price after they have logged in.
 

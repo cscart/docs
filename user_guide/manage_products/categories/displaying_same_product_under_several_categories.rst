@@ -12,6 +12,6 @@ Displaying Same Product under Several Categories
     :align: center
     :alt: General tab of the edit product page
 
-.. important::
+.. note::
 
-	To add **Secondary categories** to a product using the import option, use the instructions from the Imported fields format article.
+	To add **Secondary categories** to a product using the :doc:`import <../import_export/product_import>` option, use the instructions from the :doc:`Imported fields format <../import_export/fields_format>` article.

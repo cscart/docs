@@ -36,6 +36,6 @@ To specify a manufacturer for a product:
 *   Open the **Features** tab.
 *   Select the necessary manufacturer in the **Manufacturer** feature list and click the **Save** button.
 
-.. important::
+.. note::
 
-    To add a product filter so that it could filter products by manufacturer, read the `Adding a product filter <http://kb.cs-cart.com/product-filters>`_ article.
+    To add a product filter so that it could filter products by manufacturer, read the :doc:`Adding a product filter <../filters/adding_filter>` article.

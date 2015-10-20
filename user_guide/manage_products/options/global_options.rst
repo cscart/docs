@@ -15,7 +15,7 @@ To set global product options:
     *   **Inventory** – If selected, the option has its own number of items in stock, which is tracked separately.
     *   **Type** – Type of the product option: *Select box*, *Radio group*, *Check box*, *Text*, *Text area*, or *File*.
 
-        *   If the option type is *Text*, *Text area* or *File*, please refer to this `article <http://kb.cs-cart.com/settings-text-option>`_ in order to learn more about its settings.
+        *   If the option type is *Text*, *Text area* or *File*, please refer to this :doc:`article <../options/option_settings>` in order to learn more about its settings.
         *   If the option type is *Select box* or *Radio group*, open the **Variants** section in the same window. Complete the **Name** input field (e.g. *Green*). In the **Modifier** input field, set the amount that will be added to the product price if this option is selected (e.g. *+2*). Leave it empty if the price will not change. To add more variants, click the **+** icon.
 
 	.. image:: img/global_options_01.png

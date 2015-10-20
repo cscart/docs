@@ -43,6 +43,6 @@ To enable **Feature comparison** for several products at once:
     :align: center
     :alt: Update products
 
-.. important::
+.. note::
 
-    To enable **Feature comparison** for a product using the `import <http://kb.cs-cart.com/product-import>`_ option, use the instructions from the `Imported fields format <http://kb.cs-cart.com/imported-fields-format>`_ article.
+    To enable **Feature comparison** for a product using the :doc:`import <../import_export/product_import>` option, use the instructions from the :doc:`Imported fields format <../import_export/fields_format>` article.

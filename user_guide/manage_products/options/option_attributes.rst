@@ -11,7 +11,7 @@ Product options appear on the product details page on the storefront as selectab
 *	**Position** – Position of the product option relatively to the position of the other options in the list.
 *	**Inventory** – If selected, the option has its own number of items in stock, which is tracked separately.
 *	**Store** - Store to which the product option originally belongs.
-*	**Type** – Type of the product option: *Select box*, *Radio group*, *Check box*, *Text*, *Text area* or *File*. For a specification of some of the option types, please refer to this `article <http://kb2.cs-cart.com/settings-text-option>`_.
+*	**Type** – Type of the product option: *Select box*, *Radio group*, *Check box*, *Text*, *Text area* or *File*. Specification of some of the option types read in this :doc:`article <../options/option_settings>`.
 *	**Description** - Description of the product option as it appears on the storefront under the question sign (?) next to the option name.
 *	**Comment** – Comment to be displayed below the option on the storefront.
 *	**Required** - If selected, this option is mandatory for selection/completion.

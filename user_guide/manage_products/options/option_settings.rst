@@ -2,7 +2,7 @@
 Specific Settings of Some Option Types
 **************************************
 
-While setting up the `product options <http://kb.cs-cart.com/product_options>`_ , the following option types are available:
+While setting up the :doc:`product options <../options/product_options>`, the following option types are available:
 
 *   select box
 *   radio group
@@ -17,20 +17,20 @@ There are some specific settings of some option types:
 
     *   **RegExp** - Enter a regular expression that will validate the value entered by the customer.
 
-    .. important ::
+    .. note ::
 
     	For example, if the field is set to **^[a-zA-Z]{3}[0-9]{2,3}$**, then the customer will have to enter 3 letters and 2 or 3 figures. To learn more about regular expressions, you should follow this `link <https://en.wikipedia.org/wiki/Regular_expression>`_ or you can find some quick examples in this :download:`file <files/regular-expressions-cheat-sheet-v1.pdf>`.
 
     *   **Inner hint** - Help notice appearing on the storefront to explain to the customer what values can be entered.
     *   **Incorrect filling message** - The message that is displayed in case of incorrect filling of the field. This may occur when a certain regular expression is set for the option.
 
-    .. important ::
+    .. note ::
 
     	For example, if RegExp is set to **^[a-zA-Z]{3}[0-9]{2,3}$**, in this field you can enter the following: *Please, enter 3 letters and 2 or 3 figures (e.g. abc123)*. So if the customer enters an incorrect value, he/she will see the specified notification. This can be used to check a telephone number, postal code, date, etc.
 
 *	If the option type is **file**, it means that the customer can upload a file for this product.
 
-.. important ::
+.. note ::
 
 	It is especially useful for customizable products like T-shirts, mugs or postcards, where customers can use their own graphic image.
 

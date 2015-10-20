@@ -15,7 +15,7 @@ To attach a file to a product:
 *   In the opened form, specify the name of the new attachment and upload a file in the **File** section.
 *   Click the **Create** button.
 
-.. important::
+.. note::
 
 	A customer will be able to download this file in the **Attachments** tab on the product details page in the storefront.
 
