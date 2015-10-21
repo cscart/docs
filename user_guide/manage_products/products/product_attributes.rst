@@ -48,12 +48,12 @@ Pricing / inventory
 *	**Maximum order quantity** - Maximum number of product items that a customer can order at a time. 0 means no maximum limit.
 *	**Quantity step** - Number of product items between the two ing choices in the **Quantity** select box.
 *	**List quantity count** - Maximum of choices in the **Quantity** select box.
-*	**Taxes** – Select applicable taxes. To configure the set of available taxes, use the section `Shipping/Taxes <http://www.cs-cart.com/documentation/reference_guide/index.htmld?shipping_taxes.htm>`_.
+*	**Taxes** – Select applicable taxes. To configure the set of available taxes, use the section **Shipping/Taxes**.
 
 Availability
 ------------
 
-*	**User groups** (requires commercial license) - `User groups <http://www.cs-cart.com/documentation/reference_guide/index.htmld?users_user_groups.htm>`_ whose members can access the product.
+*	**User groups** (requires commercial license) - User groups whose members can access the product.
 *	**Creation date** - Date when the product was added to the catalog.
 *	**Avail since** - Date when the product becomes available for sale.
 *	**Out-of-stock actions** - Select if customers should be able to buy the product in advance before it is not yet available for sale, or sign up to receive an email notification when the product is available. Note that the **Buy in advance** option requires that you have the product in stock, while the **Sign up for notification** option requires that you have it out-of-stock. Also, the **Sign up for notification** option cannot apply to products which are tracked with options.
@@ -62,13 +62,11 @@ Extra
 -----
 
 *	**Product details view** - Choose a template for the page view.
-*	**Feature comparison** - If selected, the product can be chosen for comparison. Availability of the feature comparison chart on the storefront is controlled by a separate block with the **Feature Comparison** content type (see section `Design > Layouts <http://www.cs-cart.com/documentation/reference_guide/index.htmld?layout_editor.htm>`_).
+*	**Feature comparison** - If selected, the product can be chosen for comparison. Availability of the feature comparison chart on the storefront is controlled by a separate block with the **Feature Comparison** content type (see section Design > Layouts).
 *	**Downloadable** - If selected, the product is labeled as downloadable, i.e. distributed by download.
 *	**Enable shipping for downloadable products** - If selected, shipping is available for this downloadable product.
 
-.. important::
-
-	The **Enable selling downloadable products** checkbox must be chosen in the **Settings > General > Catalog** section to enable this functionality.
+	The **Enable selling downloadable products** checkbox must be chosen in the Settings > General > Catalog section to enable this functionality.
 
 *	**Time-unlimited download** - If selected, the product download period never expires. As a rule, download links expire after a certain period of time that is controlled by **Download key TTL** option in **Settings > General**.
 *	**Short description** - Short product description appearing on a product list page of the storefront.
@@ -107,9 +105,9 @@ Options
 
 This tab allows you to manage the product options and option variants as well as controlling the option combinations and adding forbidden/allowed combinations.
 
-.. note::
+.. important::
 
-	In this tab, you can also add a global option to the product. For instructions on how to use global options, please refer to the :doc:`Options <../options/index>` section of this guide.
+	In this tab, you can also add a global option to the product. For instructions on how to use global options, please refer to the Global options section further in this guide.
 
 Product options appear on the product details page on the storefront as selectable or input parameters to the product. Options can have the following attributes:
 
@@ -117,7 +115,7 @@ Product options appear on the product details page on the storefront as selectab
 *	**Position** - Position of the product option relatively to the position of the other options in the list.
 *	**Inventory** - If selected, the option has a separate number of items in stock, which is tracked separately.
 *	**Store** - Store to which the option originally belongs.
-*	**Type** - Type of the product option: *Select box*, *Radio group*, *Check box*, *Text*, *Text area* or *File*. For a specification of some of the option types, please refer to this :doc:`article <../options/option_settings>`.
+*	**Type** - Type of the product option: *Select box*, *Radio group*, *Check box*, *Text*, *Text area* or *File*. For a specification of some of the option types, please refer to the CS-Cart `Knowledge Base <http://kb2.cs-cart.com/settings-text-option>`_
 *	**Description** - Description of the product option as it appears on the storefront under the question sign (?) next to the option name.
 *	**Comment** - Comment to be displayed below the option on the storefront.
 *	**Required** - If selected, this option is mandatory for selection/completion.
@@ -146,9 +144,7 @@ This tab contains a number of product properties that are important for shipping
 *	**Box width** - Width of a separate box.
 *	**Box height** - Height of a separate box.
 
-.. note::
-
-	The last four options are required for a more accurate shipping cost estimation when a real-time shipping method with the support for multi-box shipping is used (UPS, FedEx, and DHL). If you do not specify box dimensions, values will be taken from the global configuration settings of a particular shipping carrier. Also see topic `Shipping/Taxes <http://www.cs-cart.com/documentation/reference_guide/index.htmld?shipping_taxes.htm>`_.
+The last four options are required for a more accurate shipping cost estimation when a real-time shipping method with the support for multi-box shipping is used (UPS, FedEx and DHL). If you do not specify box dimensions, values will be taken from the global configuration settings of a particular shipping carrier. Also see topic Shipping & Taxes.
 
 Quantity discounts
 ******************
@@ -158,7 +154,7 @@ This tab contains a list of the product wholesale prices that have the following
 *	**Quantity** - Minimum number of product items to qualify for the product wholesale price.
 *	**Value** - Product wholesale price (per item).
 *	**Type** - Type of the discount: *Absolute* - cost of 1 discounted item; *Percent* - percent discount off the base product item price. Percentage discount has certain natural limitations: the discount cannot be more than 100%, and the discount will not be saved as long as it applies to 1 product item and all user groups.
-*	**User group** (requires commercial license) – `User groups <http://www.cs-cart.com/documentation/reference_guide/index.htmld?users_user_groups.htm>`_ whose members can take advantage of the wholesale price.
+*	**User group** (requires commercial license) – User group whose members can take advantage of the wholesale price.
 
 Files
 *****
@@ -195,9 +191,9 @@ By using this tab, you can disable blocks that are globally enabled, and, on the
 
 Any modification that you make under this tab will not affect other storefront pages.
 
-.. note::
+.. important::
 
-	For more information on blocks, see `Design > Layouts <http://www.cs-cart.com/documentation/reference_guide/index.htmld?layout_editor.htm>`_.
+	For more information on blocks, see **Design > Layouts**.
 
 Add-ons
 *******
@@ -252,7 +248,7 @@ Along with the set of bound products and the offered discount, each combination 
 Tags
 ****
 
-This tab includes a list of tags associated with the product. Tags appear on the storefront in a special side box titled **Tag cloud**. For more information about the product tags, please refer to the section `Website > Tags <http://www.cs-cart.com/documentation/reference_guide/index.htmld?content_tags.htm>`_.
+This tab includes a list of tags associated with the product. Tags appear on the storefront in a special side box titled **Tag cloud**. For more information about the product tags, please refer to the section Website > Tags.
 
 *	**Tags** - Tags that have been added to the product. Start typing in this field to add a new tag. You can choose among the existing variants or create a new tag.
 
@@ -279,7 +275,7 @@ This tab contains product attachments, which are files associated with the produ
 *	**Name** - Name of the product attachment.
 *	**Position** - Position of the attachment relatively to the position of the other product attachments.
 *	**File** - File that is used as the product attachment. The file can be uploaded from a local computer or the server file system, or it can be a link to a remote location where the file is physically located.
-*	**User groups** - `User groups <http://www.cs-cart.com/documentation/reference_guide/index.htmld?users_user_groups.htm>`_ whose members the attachment is available for.
+*	**User groups** - User group whose members the attachment is available for.
 
 Required products
 *****************
@@ -300,7 +296,7 @@ Use this tab to set up the product price in reward points and specify the number
 *	**Override global PER** - If selected, the product has a fixed price in points that is independent of the point-to-money exchange rate.
 *	**Price in points** - Fixed product price in points.
 *	**Override global/category point value for this product** - If selected, the below values override the global reward points specified in **Products > Reward points**.
-*	**User group** - `User groups <http://www.cs-cart.com/documentation/reference_guide/index.htmld?users_user_groups.htm>`_ whose members are granted reward points for buying the product.
+*	**User group** - User group whose members are granted reward points for buying the product.
 *	**Amount** - Number of reward points to be granted to the user group member who bought the product.
 *	**Amount type** - Absolute number of points or percentage-based value calculated in the following manner: the product cost is divided into 100, and the result is multiplied by the value in the field.
 

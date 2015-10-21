@@ -1,8 +1,8 @@
-*****************************************************
-How To: Set up a Maximum Order Quantity for a Product
-*****************************************************
+*************************************************
+Setting up a Maximum Order Quantity for a Product
+*************************************************
 
-To set up a maximum order quantity for a product:
+To set up a minimum order quantity for a product:
 
 *	In the Administration panel, go to **Products > Products**.
 *	Click on the name of the desired product.
@@ -16,4 +16,4 @@ To set up a maximum order quantity for a product:
 
 .. important::
 
-	After that a customer will not be able to buy the quantity of this product items which will be more than the number set up for the **Maximum order quantity** option.
+	After that a customer will not be able to buy the quantity of this product items which will be more than the number set up for the **Minimum order quantity** option.

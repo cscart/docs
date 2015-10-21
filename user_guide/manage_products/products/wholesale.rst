@@ -1,6 +1,6 @@
-***********************************************
-How To: Define Wholesale Prices for the Product
-***********************************************
+****************
+Wholesale Prices
+****************
 
 To define the wholesale prices for the product:
 

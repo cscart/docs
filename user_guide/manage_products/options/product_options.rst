@@ -1,6 +1,6 @@
-***************************
-How To: Set Product Options
-***************************
+***************
+Product Options
+***************
 
 To set product options:
 

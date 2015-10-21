@@ -1,6 +1,6 @@
-********************************************
-How To: Change Maximum Size of Uploaded File
-********************************************
+**************************************
+Changing Maximum Size of Uploaded File
+**************************************
 
 To change the maximum size of a file:
 

@@ -1,17 +1,17 @@
-**************************
-How To: Set up a Promotion
-**************************
+**********************
+Setting up a Promotion
+**********************
 
 *   In the Administration panel, go to **Marketing > Promotions**.
 *   Click the **+** button on the right and choose **Add cart promotion** or **Add catalog promotion**.
 
-.. note::
+.. important::
 
 	**Catalog promotions** are different product discounts which are displayed on the catalog pages, while **Cart promotions** allow to define not only discounts for products and orders, but also grant coupons, free shipping and free products. Cart promotions are displayed on the **Cart** and **Checkout** pages.
 
 *   Fill information in the **General** section.
 
-.. note::
+.. important::
 
 	The **Stop other rules** option means the way a promotion is applied. If this option is enabled, the promotions with lower priority will not be applied. This option does not affect the promotions with the priority that is higher that the priority of the created promotion. The **Stop other rules** option affects only the promotion of the same type (catalog promotion or cart promotion) as the created one.
 
