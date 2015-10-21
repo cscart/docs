@@ -1,6 +1,6 @@
-********************************************
-Adding Images to Product Option Combinations
-********************************************
+*************************************************
+How To: Add Images to Product Option Combinations
+*************************************************
 
 *	In the Administration panel, go to **Products > Products**.
 *	Open the necessary product details page.
