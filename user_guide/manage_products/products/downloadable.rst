@@ -1,6 +1,6 @@
-************************************
-How To: Create Downloadable Products
-************************************
+*********************
+Downloadable Products
+*********************
 
 To create a downloadable product:
 

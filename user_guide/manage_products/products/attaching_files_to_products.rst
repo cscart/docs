@@ -1,6 +1,6 @@
-********************************
-How To: Attach Files to Products
-********************************
+***************************
+Attaching Files to Products
+***************************
 
 To attach a file to a product:
 

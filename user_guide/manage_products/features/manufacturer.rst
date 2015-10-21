@@ -1,6 +1,6 @@
-********************************************
-How To: Add the Manufacturer Product Feature
-********************************************
+***************************************
+Adding the Manufacturer Product Feature
+***************************************
 
 To add the Manufacturer product feature:
 

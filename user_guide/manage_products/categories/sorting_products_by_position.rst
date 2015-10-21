@@ -1,6 +1,6 @@
-*********************************
-How To: Sort Products by Position
-*********************************
+****************************
+Sorting Products by Position
+****************************
 
 To sort the products by position:
 

@@ -1,6 +1,6 @@
-**************************************************************
-How To: Create a Discount on Products from Specific Categories
-**************************************************************
+*********************************************
+Discount on Products from Specific Categories
+*********************************************
 
 *   In the Administration panel, go to **Marketing > Promotions**.
 *   Click the **+** button on the right and choose **Add catalog promotion**.

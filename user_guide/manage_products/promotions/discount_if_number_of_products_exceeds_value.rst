@@ -1,6 +1,6 @@
-************************************************************************************
-How To: Create a Discount on Order if Total Number of Products Exceeds Certain Value
-************************************************************************************
+*******************************************************************
+Discount on Order if Total Number of Products Exceeds Certain Value
+*******************************************************************
 
 *   In the Administration panel, go to **Marketing > Promotions**.
 *   Click the **+** button on the right and choose **Add cart promotion**.

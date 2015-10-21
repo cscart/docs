@@ -1,6 +1,6 @@
-*************************************************************
-How To: Make a Free Product If Order Total Exceeds Some Value
-*************************************************************
+**********************************************
+Free Product If Order Total Exceeds Some Value
+**********************************************
 
 To make a free product if order subtotal exceeds some value:
 

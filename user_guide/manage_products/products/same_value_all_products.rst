@@ -1,6 +1,6 @@
-****************************************
-How To: Apply Same Value to All Products
-****************************************
+***********************************
+Applying Same Value to All Products
+***********************************
 
 To apply the same value to all products at once:
 
