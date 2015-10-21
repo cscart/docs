@@ -21,6 +21,7 @@ Contents:
     :titlesonly:
     :glob:
 
+    install/index
     core/index
     api/index
     addons/index
