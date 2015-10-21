@@ -1,6 +1,6 @@
-*************************************************
-Setting up a Minimum Order Quantity for a Product
-*************************************************
+*****************************************************
+How To: Set up a Minimum Order Quantity for a Product
+*****************************************************
 
 To set up a minimum order quantity for a product:
 

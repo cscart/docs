@@ -1,6 +1,6 @@
-*****************************************************************************************
-Gift Certificate for a Customer of a Certain User Group if Order Total Exceeds Some Value
-*****************************************************************************************
+*******************************************************************************************************
+How To: Give a Gift Certificate to a Customer of a Certain User Group if Order Total Exceeds Some Value
+*******************************************************************************************************
 
 *	In the Administration panel, go to **Marketing > Promotions**.
 *	Click the **+** button on the right and choose **Add cart promotion**.
