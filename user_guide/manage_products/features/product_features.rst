@@ -1,6 +1,6 @@
-****************
-Product Features
-****************
+*******************************
+How To: Set up Product Features
+*******************************
 
 To set up product features:
 

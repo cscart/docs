@@ -1,6 +1,6 @@
-******************
-Feature Comparison
-******************
+************************************
+How To: Make two products comparable
+************************************
 
 To make two products comparable:
 

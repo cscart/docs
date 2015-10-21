@@ -1,6 +1,6 @@
-**************************
-Creating a Discount Coupon
-**************************
+********************************
+How To: Create a Discount Coupon
+********************************
 
 *   In the Administration panel, go to **Marketing > Promotions**.
 *   Click the **+** button on the right and choose **Add cart promotion**.

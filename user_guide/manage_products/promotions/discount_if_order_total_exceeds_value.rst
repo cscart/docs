@@ -1,6 +1,6 @@
-*********************************************************
-Discount on Order if Order Subtotal Exceeds Certain Value
-*********************************************************
+**************************************************************************
+How To: Create a Discount on Order if Order Subtotal Exceeds Certain Value
+**************************************************************************
 
 To apply a discount to an order if order total exceeds some certain value:
 
@@ -23,7 +23,7 @@ To apply a discount to an order if order total exceeds some certain value:
 *   In the opened drop-down select box, select **Order discount** option. Then specify the necessary option and type the necessary value.
 *   Click the **Create** button.
 
-.. important::
+.. note::
 
 	These promotions are displayed only on the **Checkout** page in the customer area.
 

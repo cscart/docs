@@ -1,6 +1,6 @@
-********************************
-Filter Products by Free Shipping
-********************************
+****************************************
+How To: Filter Products by Free Shipping
+****************************************
 
 *   In the Administration panel, go to **Products > Filters**.
 

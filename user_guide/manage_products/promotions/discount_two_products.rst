@@ -1,6 +1,6 @@
-***************************************************************
-Discount on the Order When Buying Two Special Products Together
-***************************************************************
+****************************************************************************
+How To: Create a Discount on Order When Buying Two Special Products Together
+****************************************************************************
 
 *	In the Administration panel, go to **Marketing > Promotions**.
 *	Click the **+** button on the right and choose **Add cart promotion**.

@@ -1,6 +1,6 @@
-***********************
-Adding a Product Filter
-***********************
+****************************
+How To: Add a Product Filter
+****************************
 
 *   In the Administration panel, go to **Products > Filters**.
 *   Click the **+** button on the right and specify the following fields in the opened **New filter** window:

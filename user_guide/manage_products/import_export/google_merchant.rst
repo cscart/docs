@@ -1,6 +1,6 @@
-************************************************
-Exporting Product Data to Google Merchant Center
-************************************************
+*****************************************************
+How To: Export Product Data to Google Merchant Center
+*****************************************************
 
 To submit a data feed to Google Product Search:
 
