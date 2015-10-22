@@ -9,4 +9,5 @@ Instructions on various ways to install CS-Cart.
     :titlesonly:
     :glob:
 
-    */index
+    system_requirements
+    cpanel

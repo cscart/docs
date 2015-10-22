@@ -24,20 +24,20 @@ Step 1. Create a MySQL Database
     If the cPanel provided by your web hosting service doesn't have MySQL Database Wizard, use **MySQL Databases**. Create a database and a user, then add the user to the database. Make sure to give the user **All Privileges**.
 
 
-.. image:: img/1_open_mysql_wizard.png
+.. image:: img/cpanel/1_open_mysql_wizard.png
     :align: center
     :alt: MySQL Databases and Wizard icons in cPanel
 
 
 1.2. Name your database and click **Next Step.**
 
-.. image:: img/2_wizard_database.png
+.. image:: img/cpanel/2_wizard_database.png
     :align: center
     :alt: Naming a database in MySQL Database Wizard
 
 1.3. Create a user for your database. Enter a username and a password and click **Create User**.
 
-.. image:: img/3_wizard_user.png
+.. image:: img/cpanel/3_wizard_user.png
     :align: center
     :alt: Creating a user with MySQL Database Wizard
 
@@ -47,13 +47,13 @@ Step 1. Create a MySQL Database
 
 1.4. Add your newly created user to the database. Make sure to tick the **All Privileges** checkbox.
 
-.. image:: img/4_wizard_privileges.png
+.. image:: img/cpanel/4_wizard_privileges.png
     :align: center
     :alt: Granting a user all privileges in MySQL Database Wizard
 
 After you press the **Next Step** button, cPanel will offer you to create more databases and users — just press **Return Home**. If you want to see the newly created database, press **Return to MySQL Databases**.
 
-.. image:: img/5_wizard_complete.png
+.. image:: img/cpanel/5_wizard_complete.png
     :align: center
     :alt: Press Return Home after you create a database and a privileged user.
 
@@ -61,7 +61,7 @@ Step 2. Upload CS-Cart to the Server
 ====================================
 2.1. `Download <https://www.cs-cart.com/download-cs-cart.html>`_ the latest version of CS-Cart.  Then go to **cPanel → Files → File Manager**.
 
-.. image:: img/6_file_manager_icon.png
+.. image:: img/cpanel/6_file_manager_icon.png
     :align: center
     :alt: The icon of File Manager in cPanel.
 
@@ -71,20 +71,20 @@ Step 2. Upload CS-Cart to the Server
 
    You need to associate a domain name with your host’s IP first: find out what name servers your host uses for your domain, then use your domain registrar’s control panel to associate your domain name with the name servers. We suggest you read `this article <http://www.thesitewizard.com/domain/point-domain-name-website.shtml>`_ to learn more.
 
-.. image:: img/7_file_manager_interface.png
+.. image:: img/cpanel/7_file_manager_interface.png
     :align: center
     :alt: The interface of cPanel File Manager.
 
 
 2.3. It’s time to upload the CS-Cart archive (the file you got in Step 2.1) to the server. Press the **Upload** button and select the **cscart_v4.x.x.zip** archive that you got earlier.
 
-.. image:: img/8_file_manager_upload.png
+.. image:: img/cpanel/8_file_manager_upload.png
     :align: center
     :alt: Uploading the archive with CS-Cart to the server.
 
 2.4. Select the uploaded file and press the **Extract** button.
 
-.. image:: img/9_file_manager_extract.png
+.. image:: img/cpanel/9_file_manager_extract.png
     :align: center
     :alt: Extracting the CS-Cart archive with cPanel File Manager.
 
@@ -93,13 +93,13 @@ Step 3. Install CS-Cart
 
 3.1. Open your store’s URL in a browser. You’ll see a message that CS-Cart is not installed. Let's fix this by clicking the [install] link.
 
-.. image:: img/10_open_website.png
+.. image:: img/cpanel/10_open_website.png
     :align: center
     :alt: Opening our store's main page in a browser.
 
 3.2. Read and accept the **License Agreement** in order to proceed.
 
-.. image:: img/11_license_agreement.png
+.. image:: img/cpanel/11_license_agreement.png
     :align: center
     :alt: Tick the checkbox to accept the License Agreement. 
 
@@ -115,7 +115,7 @@ Step 3. Install CS-Cart
 **Main Language**             English (or any language of your choice)
 ============================  ===========================================================================================================
 
-.. image:: img/12_installation_parameters.png
+.. image:: img/cpanel/12_installation_parameters.png
     :align: center
     :alt: Fill in the MySQL and administrator's data to proceed. 
 
@@ -126,13 +126,13 @@ Step 3. Install CS-Cart
 
 To do that, tick the **Install demo data** checkbox. You can always `remove demo data <http://kb.cs-cart.com/removing-demo-info>`_ later. We’d appreciate it if you helped us make CS-Cart better. Tick the **Help us improve CS-Cart** checkbox to send anonymous usage statistics.
 
-.. image:: img/13_checkboxes.png
+.. image:: img/cpanel/13_checkboxes.png
     :align: center
     :alt: Choose if you want to install demo data and send anonymous statistics to CS-Cart developers. 
 
 3.5. After you press **Install** you’ll see the progress bar running. Please, don’t close the page during the installation. This is when CS-Cart settles in on your server and unpacks various themes and add-ons. Don’t worry, it won’t be long before your new store is good to go!
 
-.. image:: img/14_progress_bar.png
+.. image:: img/cpanel/14_progress_bar.png
     :align: center
     :alt: Don't close the page, wait for the progress bar to fill. 
 
@@ -147,13 +147,13 @@ The next step is to choose your licensing mode. You have 3 options:
 
 3. The **Free Mode** leaves some features unavailable, but has no time restrictions. You can use this mode from the start or switch to it once your trial period is over.
 
-.. image:: img/15_licensing_mode.png
+.. image:: img/cpanel/15_licensing_mode.png
     :align: center
     :alt: Enter your CS-Cart license number, get a 30-day trial or use the free version. 
 
 Once you choose your licensing mode, your online store is all set! Now you can go to the **Storefront** to view your store, or to the **Administrator panel** to manage it.
 
-.. image:: img/16_complete.png
+.. image:: img/cpanel/16_complete.png
     :align: center
     :alt: After the installation you can view the store and manage it. 
 
