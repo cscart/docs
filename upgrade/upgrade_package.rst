@@ -86,3 +86,4 @@ Return an array with the new data:
 	    )
 	);
 
+Example of the *Upgrade* add-on you can find `here <https://github.com/cscart/sample-upgrade-addon>`_.
