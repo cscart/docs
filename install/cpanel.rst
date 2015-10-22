@@ -65,22 +65,21 @@ Step 2. Upload CS-Cart to the Server
     :align: center
     :alt: The icon of File Manager in cPanel.
 
-2.2. Select the directory for the File Manager to upload CS-Cart to. Choose Document Root for and select your domain name from the dropdown menu. In our case, it’s cscart.fcomet.com.
+2.2. Select the directory for the File Manager to upload CS-Cart to. Choose **Document Root for** and select your domain name from the dropdown menu. In our case, it’s cscart.fcomet.com.
 
 .. important::
 
    You need to associate a domain name with your host’s IP first: find out what name servers your host uses for your domain, then use your domain registrar’s control panel to associate your domain name with the name servers. We suggest you read `this article <http://www.thesitewizard.com/domain/point-domain-name-website.shtml>`_ to learn more.
 
-.. image:: img/cpanel/7_file_manager_interface.png
+.. image:: img/cpanel/8_file_manager_upload.png
     :align: center
-    :alt: The interface of cPanel File Manager.
-
+    :alt: Select the directory where you want to upload CS-Cart.
 
 2.3. It’s time to upload the CS-Cart archive (the file you got in Step 2.1) to the server. Press the **Upload** button and select the **cscart_v4.x.x.zip** archive that you got earlier.
 
-.. image:: img/cpanel/8_file_manager_upload.png
+.. image:: img/cpanel/7_file_manager_interface.png
     :align: center
-    :alt: Uploading the archive with CS-Cart to the server.
+    :alt: The interface of cPanel File Manager.
 
 2.4. Select the uploaded file and press the **Extract** button.
 
