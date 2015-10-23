@@ -36,7 +36,7 @@ Way 1. Softaculous is Installed on Your Server
 **Choose Protocol**                \http:// (choose \https:// if your site has SSL).
 **Choose Domain**                  Select your domain from the dropdown menu. It’s *mynewshop.tk* in the example.
 **In Directory**                   If you want to access your store by the original URL, such as *mynewshop.tk*, leave the field empty. 
-                                  Or you can enter the name of a new directory to be created. For example, if you type *dir*, Softaculous will create *mynewshop.tk/dir* and install CS-Cart there.
+                                   Or you can enter the name of a new directory to be created. For example, if you type *dir*, Softaculous will create *mynewshop.tk/dir* and install CS-Cart there.
 **Table Prefix**                   Leave it as is.
 **Admin Email**                    Enter your email here. CS-Cart will use it to notify you about new orders, call requests, and other important events in your store.
 **Admin Password**                 Enter the password you will use to access the CS-Cart administration panel.
