@@ -33,10 +33,10 @@ Way 1. Softaculous is Installed on Your Server
 3. Switch to the **Install** tab, and you’ll see a form. Fill it in:
 
 =================================  ==============================================
-**Choose Protocol**                \*http://* (choose \*https://* if your site has SSL)
-**Choose Domain**                  Select your domain from the dropdown menu. In our case it’s mynewshop.tk.
-**In Directory**                   Leave empty if you want to access your store by the original URL, such as *mynewshop.tk*. 
-                                   Or you can enter the name of a new directory to be created. E.g., if you type *dir*, CS-Cart will be installed to *mynewshop.tk/dir*
+**Choose Protocol**                \http:// (choose \https:// if your site has SSL).
+**Choose Domain**                  Select your domain from the dropdown menu. It’s *mynewshop.tk* in the example.
+**In Directory**                   If you want to access your store by the original URL, such as *mynewshop.tk*, leave the field empty. 
+                                  Or you can enter the name of a new directory to be created. For example, if you type *dir*, Softaculous will create *mynewshop.tk/dir* and install CS-Cart there.
 **Table Prefix**                   Leave it as is.
 **Admin Email**                    Enter your email here. CS-Cart will use it to notify you about new orders, call requests, and other important events in your store.
 **Admin Password**                 Enter the password you will use to access the CS-Cart administration panel.
@@ -97,8 +97,7 @@ Way 2. Softaculous is not Installed on Your Server
     First, associate a domain name with your host’s IP: find out what name servers your host uses for your domain, then use your domain registrar’s control panel to associate your domain name with the name servers. We suggest you read `this article <http://www.thesitewizard.com/domain/point-domain-name-website.shtml>`_ to learn more.
 
 ==========================  ================================================================
-**Domain Name**             Must be a valid domain name without \http://
-                            E.g.: *mynewshop.tk*
+**Domain Name**             Must be a valid domain name without \http:// at the beginning. It’s *mynewshop.tk* in the example.
 **Server Host (Optional)**  Leave empty, unless your domain name and server host are different.
 **Protocol**                Select the protocol by which Softaculous will communicate: FTP, FTPS or SFTP.
 **Port**                    Enter the port to connect. To find the port in cPanel go to Files → FTP Accounts and click Configure.
@@ -121,10 +120,10 @@ Way 2. Softaculous is not Installed on Your Server
     Before you proceed, create a MySQL database and add a user with all privileges to it. See Step 1 of :doc:`this tutorial <cpanel>` for more details.
 
 =================================  ===============================================================
-**Choose Protocol**                \*http://* (choose *https://* if your site has SSL)
-**Choose Domain**                  Select the name of your domain from the dropdown menu. In our case it’s *mynewshop.tk*.
-**In Directory**                   Leave empty if you want to access your store by the original URL, such as *mynewshop.tk*.
-                                   Or you can enter the name of a new directory to be created. E.g., if you type *dir*, CS-Cart will be installed to *mynewshop.tk/dir*
+**Choose Protocol**                \http:// (choose \https:// if your site has SSL).
+**Choose Domain**                  Select the name of your domain from the dropdown menu. It’s *mynewshop.tk* in the example.
+**In Directory**                   If you want to access your store by the original URL, such as *mynewshop.tk*, leave the field empty. 
+                                   Or you can enter the name of a new directory to be created. For example, if you type *dir*, Softaculous will create *mynewshop.tk/dir* and install CS-Cart there.
 **Database Name**                  Enter the name of the MySQL database you created before the installation. See Step 1.2 of :doc:`this tutorial <cpanel>` for more details.
 **Database Username**              Enter the MySQL username. This user must have all privileges. See Step 1.3 of :doc:`this tutorial <cpanel>` for more details.
 **Database Password**              Enter the MySQL user password. See Step 1.3 of :doc:`this tutorial <cpanel>` for more details.
