@@ -3,7 +3,7 @@ Way 1. Softaculous is Installed on Your Server
 **********************************************
 
 .. note::
-    **Tutorial Difficulty: 1/3**
+    **Tutorial Difficulty: 1 / 3**
 
 1. Log into your control panel and find Softaculous in the list of software. For example, in cPanel go to **Software → Softaculous Apps Installer**.
 

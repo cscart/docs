@@ -4,7 +4,7 @@ Way 2. Softaculous is not Installed on Your Server
 
 .. note::
 
-    **Tutorial Difficulty: 2/3**
+    **Tutorial Difficulty: 2 / 3**
 
 Step 1. Register at Softaculous Forums
 ======================================
