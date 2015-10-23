@@ -12,7 +12,7 @@ Even if your host offers another control panel, you may still find this tutorial
 
 .. note::
 
-    CS-Cart works on any host that supports MySQL and PHP. You can learn about the minimum requirements `here <http://www.cs-cart.com/requirements.html>`_.
+    CS-Cart works on any host that supports MySQL and PHP. You can learn about the minimum requirements :doc:`here <system_requirements>`.
 
 Step 1. Create a MySQL Database
 ===============================
@@ -65,7 +65,7 @@ Step 2. Upload CS-Cart to the Server
     :align: center
     :alt: The icon of File Manager in cPanel.
 
-2.2. Select the directory for the File Manager to upload CS-Cart to. Choose **Document Root for** and select your domain name from the dropdown menu. In our case, it’s cscart.fcomet.com.
+2.2. Select the directory for the File Manager to upload CS-Cart to. Choose **Document Root for** and select your domain name from the dropdown menu. In our case, it’s *cscart.fcomet.com*.
 
 .. important::
 
@@ -90,7 +90,7 @@ Step 2. Upload CS-Cart to the Server
 Step 3. Install CS-Cart
 =======================
 
-3.1. Open your store’s URL in a browser. You’ll see a message that CS-Cart is not installed. Let's fix this by clicking the [install] link.
+3.1. Open your store’s URL in a browser. You’ll see a message that CS-Cart is not installed. Let's fix this by clicking the **[install]** link.
 
 .. image:: img/cpanel/10_open_website.png
     :align: center
@@ -105,13 +105,13 @@ Step 3. Install CS-Cart
 3.3. Fill in the form using the details below:
 
 ============================  ===========================================================================================================
-**MySQL Server Host**         Enter the DNS name or IP address of your MySQL server. Usually it’s localhost (because the database and the website are stored on the same server).
+**MySQL Server Host**         Enter the DNS name or IP address of your MySQL server. Usually it’s **localhost** (because the database and the website are stored on the same server).
 **MySQL Database Name**       Enter the name of the database you created in Step 1.2. Remember that the database name includes a prefix that you also need to add.
 **MySQL User**                Enter the username you created in Step 1.3. Again, remember the prefix.
 **MySQL Password**            Enter the password of the MySQL user (see step 1.3).
 **Administrator's Email**     Enter your email here. CS-Cart will use it to notify you about new orders, call requests, and other important events in your store.
 **Administrator's Password**  Enter the password you will use to access the CS-Cart administration panel.
-**Main Language**             English (or any language of your choice)
+**Main Language**             English (or any language of your choice).
 ============================  ===========================================================================================================
 
 .. image:: img/cpanel/12_installation_parameters.png

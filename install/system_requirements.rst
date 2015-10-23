@@ -29,7 +29,7 @@ Server Configuration Requirements
 * **cURL support** should be enabled. You need this PHP extension to ensure support of secure connections, some payment systems such as PayPal and Authorize.Net, and real-time shipping rate calculators for FedEx and DHL/Airborne.
 * **Phar extension** should be enabled (built into PHP since v5.3.0)
 * **ZipArchive extension** should be enabled (built into PHP since v5.2.0)
-* **.htaccess** file (if supported) should have the following directives allowed: DirectoryIndex, Deny, Allow, Options, Order, AddHandler,RewriteEngine, RewriteBase, RewriteCond, and RewriteRule
+* **.htaccess** file (if supported) should have the following directives allowed: DirectoryIndex, Deny, Allow, Options, Order, AddHandler, RewriteEngine, RewriteBase, RewriteCond, and RewriteRule
 
 CS-Cart Architects Team Recommends This
 =======================================
