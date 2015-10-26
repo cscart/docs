@@ -1,5 +1,5 @@
 ***************************************************
-How To:Install CS-Cart on a VPS/VDS with \*\nix OS
+How To: Install CS-Cart on a VPS/VDS with \*\nix OS
 ***************************************************
 
 These articles deal with installing CS-Cart on a server that runs a Unix-like operating system. 
