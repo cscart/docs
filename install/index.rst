@@ -11,6 +11,7 @@ Instructions on various ways to install CS-Cart.
 
     system_requirements
     cpanel
+    digitalocean
     softaculous
     vps_install
     security
