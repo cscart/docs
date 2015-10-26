@@ -2,7 +2,7 @@
 How To: Install CS-Cart with Softaculous
 ****************************************
 
-Softaculous App Installer is a tool that makes installation of web applications much easier. It creates databases, uploads the necessary files to your server and sets the right permissions for the files.
+**Softaculous App Installer** is a tool that makes installation of web applications much easier. It creates databases, uploads the necessary files to your server and sets the right permissions for the files.
 
 Softaculous can install CS-Cart for you. It works with virtual hosts and dedicated servers. All you need to do is fill in a form or two to provide the necessary information.
 
