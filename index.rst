@@ -85,13 +85,13 @@ This section includes the information on theme development for CS-Cart.
 
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 0
     :hidden:
 
     map
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 0
     :hidden:
 
     author_guide
