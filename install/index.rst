@@ -2,10 +2,10 @@
 Install CS-Cart
 ***************
 
-Instructions on various ways to install CS-Cart.
+This section describes the CS-Cart installation process on various systems. It also provides other useful information, such as system requirements and important post-installation procedures.
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 4
     :titlesonly:
     :glob:
 
