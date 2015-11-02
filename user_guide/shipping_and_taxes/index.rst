@@ -10,4 +10,3 @@ This section of the Administration panel assembles control elements to manage an
     :glob:
 
     */index
-    *
