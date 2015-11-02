@@ -9,5 +9,4 @@ In this section, you can adjust the set of payment methods that your customers c
     :titlesonly:
     :glob:
 
-    */index
     *
