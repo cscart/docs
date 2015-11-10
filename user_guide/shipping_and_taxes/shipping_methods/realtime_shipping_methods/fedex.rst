@@ -7,9 +7,9 @@ How To: Set up CS-Cart with FedEx
 *   Click on the name of a shipping method to modify it.
 *   Select *Realtime* in the **Rate calculation** field, select *FedEx* in the **Carrier** field, and *FedEx 2nd day* in the **Shipping service** field.
 
-.. image:: img/usps_01.png
+.. image:: img/fedex_01.png
     :align: center
-    :alt: USPS
+    :alt: Fedex
 
 *   Open the **Configure** tab.
 *   Fill your FedEx credentials in the **Authentication key**, **Authentication password**, **Account number**, and **Meter number** fields. For testing purposes select the *Your packaging* value in **Package type**, the *Regular pickup* value in **Drop Off Type**, and enter *10* in each **Width (inches)**, **Height (inches)**, and **Length (inches)** fields.
@@ -18,10 +18,6 @@ How To: Set up CS-Cart with FedEx
 .. image:: img/fedex_01.png
     :align: center
     :alt: Configure
-
-.. image:: img/usps_01.png
-    :align: center
-    :alt: USPS
 
 .. note::
 

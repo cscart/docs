@@ -7,12 +7,15 @@ How To: Set up CS-Cart with USPS
 *   Click on the name of the shipping method to modify it.
 *   In the **Rate calculation** field select *Realtime*, in the **Carrier** field select *USPS*, and in the **Shipping service** field select *USPS Media Mail* (or another USPS service).
 
-.. image:: img/fedex_01.png
+.. image:: img/usps_01.png
     :align: center
-    :alt: FedEx
+    :alt: USPS
 
 *   Open the **Configure** tab and set up the necessary options there. Fill your USPS credentials in the **User ID** field. If you do not have any, you need to sign up for the USPS User ID `here <https://www.usps.com/business/web-tools-apis/welcome.htm>`_.
 
+.. image:: img/usps_02.png
+    :align: center
+    :alt: USPS
 
 .. important::
 
