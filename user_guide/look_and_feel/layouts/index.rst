@@ -11,3 +11,4 @@ In this section
     :glob:
 
     */index
+    *
