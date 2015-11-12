@@ -29,14 +29,14 @@ The **Layouts** section enables you to manage and customize the layout of storef
 
 Such a block conveys a certain piece of information like a logo, mini cart, product details, breadcrumbs, search form, navigation menu, etc. You can add, edit, remove, or simply move blocks around a page to organize the new look and feel. The following sketch presents the storefront structure and illustrates how a page may be composed.
 
-.. image:: img/layouts_01.png
+.. image:: img/layout_01.png
     :align: center
     :alt: Storefront
 
-.. image:: img/layouts_02.png
+.. image:: img/layout_02.png
     :align: center
     :alt: Blocks
 
-.. image:: img/layouts_03.png
+.. image:: img/layout_03.png
     :align: center
     :alt: Containers
