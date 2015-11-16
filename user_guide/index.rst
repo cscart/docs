@@ -7,4 +7,5 @@ User Guide
     :titlesonly:
     :glob:
 
+    admin_panel
     */index

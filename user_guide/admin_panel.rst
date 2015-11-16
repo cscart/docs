@@ -1,0 +1,95 @@
+****************************************
+Introduction to the Administration Panel
+****************************************
+
+.. note::
+
+    **Tutorial Difficulty: 1 / 3**
+
+The **Administration Panel** (or the admin panel for short) is the primary tool for you to work with your online store. Here you can manage products and orders, offer discounts, interact with your customers, change the look of your store and do much more.
+
+===========================
+Connect to Your Admin Panel
+===========================
+
+To find the admin panel, open your online store’s website with a browser and add */admin.php* to the end of the URL.
+
+.. important::
+
+    If you already :doc:`installed CS-Cart <../install/index>` and :doc:`renamed admin.php <../install/security>` for security reasons, use the URL of your shop and **the new name of the admin.php file**, for example:
+
+    *mynewshop.tk/my_admin_panel.php* 
+
+For example, let's log in to the admin panel of the CS-Cart Online Demo (`demo.cs-cart.com <http://demo.cs-cart.com/>`_). Navigate to: `demo.cs-cart.com/admin.php <http://demo.cs-cart.com/admin.php>`_
+
+.. image:: img/intro/url.png
+    :align: center
+    :alt: The URL of the admin panel in CS-Cart Onlide Demo.
+
+
+Enter the administrator’s **email** and **password** that you used during CS-Cart installation. In CS-Cart Online Demo the email and password are already there for you, so all you have to do is press the **Sign in** button.
+
+.. image:: img/intro/login.png
+    :align: center
+    :alt: The login form of the CS-Cart Administration Panel.
+
+=============
+The Dashboard
+=============
+
+The first thing you’ll notice is the **Dashboard**, where you can check sales statistics, view recent orders and product changes. The Dashboard also provides information from the database, such as the number of active products and registered customers.
+
+.. image:: img/intro/dashboard.png
+    :align: center
+    :alt: The Dashboard provides the statistics of your store.
+
+===========
+The Top Bar
+===========
+
+Let’s take a look at the top bar:
+
+.. image:: img/intro/top_bar.png
+    :align: center
+    :alt: The blue bar on the top of the CS-Cart admin panel.
+
+*  **Add-ons**—manage useful extensions that add more features to your store
+*  **Administration**—make backups of your store, import and export data, upgrade your store, edit your stores, payment and shipping methods, taxes and currencies
+*  **Settings**—configure various aspects of your store, such as weight measurement units, sitemap, default language of the Admin Panel, and e-mail settings 
+*  **Design**—edit your store’s menus, change the look of your store and the structure of certain types of pages.
+
+The top bar also lets you select the language of the admin panel and the currency to use on the Dashboard and in sales reports.
+
+The **cart icon** on the left side of the top bar allows you to go to the storefront. The storefront is what your customers see when they open your store. 
+
+.. image:: img/intro/cart_icon.png
+    :align: center
+    :alt: The cart icon and the store selection drop-down menu.
+
+You can control multiple stores from one admin panel. Click the name of the store near the cart icon and select the store, or press **Manage stores** to edit your stores and add new ones.
+
+.. note::
+    If you want to manage multiple stores, you’ll need to `purchase additional storefront licenses <http://www.cs-cart.com/cs-cart-storefront-license.html>`_ or specify the desired number of storefronts when you `buy a CS-Cart license <http://www.cs-cart.com/cs-cart-license.html>`_.
+
+================
+Store Operations
+================
+
+The panel below the top bar serves to manage the operations of your store:
+
+.. image:: img/intro/store_operations.png
+    :align: center
+    :alt: The Store Operations panel allows you to manage your products, orders and customers.
+
+*  The **home icon** takes you to the Dashboard
+*  **Orders**—view sales reports and manage your orders and shipments
+*  **Products**—edit products and their categories, features, filters, and options
+*  **Customers**—manage the store’s administrators and registered customers, as well as user groups with different privileges
+*  **Marketing**—promote your products, offer bonuses, and view the carts that the customers didn’t take to checkout
+*  **Website**—create and publish pages, polls, forms and links, as well as to manage the `SEO <https://en.wikipedia.org/wiki/Search_engine_optimization>`_ aspects of your store.
+
+.. note::
+
+    Your Admin Panel may have additional menu subsections, depending on the add-ons you installed and activated.
+
+
