@@ -6,7 +6,7 @@ In this section
 ***************
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 4
     :titlesonly:
     :glob:
 
