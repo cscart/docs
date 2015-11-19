@@ -6,11 +6,11 @@ It is possible to edit source code of the theme files directly from your adminis
 
 .. note::
 
-	The file editor is based on Javascript. So, Javascript must be enabled in your web browser.
+	The File editor is based on Javascript. So, Javascript must be enabled in your web browser.
 
 To edit files:
 
-*	In the administration panel go to **Design > File editor**.
+*	In the Administration panel go to **Design > Templates**.
 *	In the left panel choose the desired directory and file. This panel displays the structure of the *.../design/themes/theme_name* directory.
 *	Edit the desired part of code in the opened panel and click **Save changes**.
 
