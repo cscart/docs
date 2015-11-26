@@ -62,7 +62,7 @@ In **cPanel FileManager** select the file or folder and press the Permissions bu
     :alt: Changing file permissions in cPanel.
 
 .. important::
-    The .htaccess files may be hidden. To fix that in FileZilla go to **Server → Force showing hidden files** (or **View → Show Hidden Files** in older versions). In cPanel Fille Manager go to **Settings** (top right corner of the screen) and tick the **Show hidden files (dotfiles)** checkbox.
+    The .htaccess files may be hidden. To fix that in FileZilla go to **Server → Force showing hidden files** (or **View → Show Hidden Files** in older versions). In cPanel File Manager go to **Settings** (top right corner of the screen) and tick the **Show hidden files (dotfiles)** checkbox.
 
 .. image:: img/security/cpanel_hidden_files.png
     :align: center
