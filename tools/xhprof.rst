@@ -15,14 +15,14 @@
 Копируем в корень папки с картой 2 папки из загруженного дистрибутива xhprof, это будут xhprof_html и xhprof_lib. 
 Аналогично алгоритму статьи из вышеопубликованной ссылки, нам необходимо интегрировать xhprof с выполняемыми функциями карты. Для этого мы будем использовать fn_dispatch из admin.php и выглядеть это будет так:
 
-xhprof_enable(XHPROF_FLAGS_CPU + XHPROF_FLAGS_MEMORY);
-require(dirname(__FILE__) . '/init.php');
-fn_dispatch();
-$xhprof_data = xhprof_disable();
-include_once __DIR__ . "/xhprof_lib/utils/xhprof_lib.php";
-include_once __DIR__ . "/xhprof_lib/utils/xhprof_runs.php";
-$xhprof_runs = new XHProfRuns_Default('/tmp');
-$run_id = $xhprof_runs->save_run($xhprof_data, "admin");
+``xhprof_enable(XHPROF_FLAGS_CPU + XHPROF_FLAGS_MEMORY);
+``require(dirname(__FILE__) . '/init.php');
+``fn_dispatch();
+``$xhprof_data = xhprof_disable();
+``include_once __DIR__ . "/xhprof_lib/utils/xhprof_lib.php";
+``include_once __DIR__ . "/xhprof_lib/utils/xhprof_runs.php";
+``$xhprof_runs = new XHProfRuns_Default('/tmp');
+``$run_id = $xhprof_runs->save_run($xhprof_data, "admin");
 
 как видно из кода: мы вызываем xhprof для fn_dispatch, затем сохраняем результаты в $xhprof_data, остальные параметы позволят нам представлять отчет в грифическом виде. 
 
@@ -33,11 +33,11 @@ $run_id = $xhprof_runs->save_run($xhprof_data, "admin");
 Для того чтобы приостановить действие xhprof, можно просто закомментировать его инициализацию в admin.php
 Пример:
 
-//xhprof_enable(XHPROF_FLAGS_CPU + XHPROF_FLAGS_MEMORY);
-require(dirname(__FILE__) . '/init.php');
-fn_dispatch();
-//$xhprof_data = xhprof_disable();
-//include_once __DIR__ . "/xhprof_lib/utils/xhprof_lib.php";
-//include_once __DIR__ . "/xhprof_lib/utils/xhprof_runs.php";
-//$xhprof_runs = new XHProfRuns_Default('/tmp');
-//$run_id = $xhprof_runs->save_run($xhprof_data, "admin");
+``//xhprof_enable(XHPROF_FLAGS_CPU + XHPROF_FLAGS_MEMORY);
+``require(dirname(__FILE__) . '/init.php');
+``fn_dispatch();
+``//$xhprof_data = xhprof_disable();
+``//include_once __DIR__ . "/xhprof_lib/utils/xhprof_lib.php";
+``//include_once __DIR__ . "/xhprof_lib/utils/xhprof_runs.php";
+``//$xhprof_runs = new XHProfRuns_Default('/tmp');
+``//$run_id = $xhprof_runs->save_run($xhprof_data, "admin");
