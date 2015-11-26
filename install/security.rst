@@ -79,4 +79,5 @@ To change permissions via SSH run the following commands:
     chmod 644 var/index.php var/themes_repository/index.php
 
     --
+000000
 
