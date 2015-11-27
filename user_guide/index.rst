@@ -8,4 +8,8 @@ User Guide
     :glob:
 
     admin_panel
-    */index
+    look_and_feel/index
+    manage_products/index
+    payment_methods/index
+    shipping_and_taxes/index
+    addons/index
