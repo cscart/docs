@@ -15,3 +15,4 @@ This section describes the CS-Cart installation process on various systems. It a
     softaculous
     vps_install
     security
+    moving_to_another_server

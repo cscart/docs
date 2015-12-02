@@ -2,7 +2,7 @@
 How To: Increase the Accuracy of Tax, Discount, and Total Value Calculation
 ***************************************************************************
 
-CS-Cart rounds decimals to 2 decimal places. If a customer buys a large number of products, and product price or tax rate value has 2 decimal places, it may lead to inaccuracy in the nearest tenth or hundredth of tax, discount, and total value calculation.
+By default CS-Cart rounds decimals to 2 decimal places. If a customer buys a large number of products, and product price or tax rate value has 2 decimal places, it may lead to inaccuracy in the nearest tenth or hundredth of tax, discount, and total value calculation.
 
 You can increase the calculation accuracy in 2 steps.
 
