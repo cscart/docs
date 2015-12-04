@@ -1,0 +1,24 @@
+*******************************************
+How To: Display Bestsellers on the Homepage
+*******************************************
+
+*   In the Administration panel, go to **Add-ons > Manage add-ons**.
+*   Make sure that the **Bestsellers & On-Sale Products** add-on has an *Active* status.
+*   Go to **Design > Layouts > Homepage**.
+*   In the container where you want to display bestsellers, click the **+** button and choose **Add block**. In the opened window:
+
+    *   Open the **Create New Block** tab and choose **Products**.
+    *   In the **Name** input field type the name of the block (e.g., *Bestsellers*).
+    *   In the **Template** select box select *Products*.
+    *   Open the **Content** tab and in the **Filling** select box select *Bestsellers* or *On sale*.
+    *   In the **Limit** input field specify the number of bestsellers to be displayed.
+    *   Open the **Block settings** tab and tick the **Hide add to cart button** check box, if necessary.
+    *   Click **Create**.
+
+.. image:: img/bestsellers_01.png
+	:align: center
+	:alt: Create the Bestsellers block
+
+.. important ::
+
+	 After the block is created or changed, make sure it is displayed correctly. Sometimes not all wrappers are suitable for the blocks.

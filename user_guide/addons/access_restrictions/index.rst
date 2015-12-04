@@ -10,3 +10,5 @@ This add-on empowers you to limit access to the administration panel and storefr
     :glob:
     
     ar_settings
+    restrict_access
+    access_to_store
