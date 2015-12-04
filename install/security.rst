@@ -77,5 +77,4 @@ To change permissions via SSH run the following commands:
     chmod 644 var/.htaccess var/themes_repository/.htaccess
     chmod 644 design/index.php images/index.php
     chmod 644 var/index.php var/themes_repository/index.php
-    ==
 
