@@ -13,4 +13,5 @@ User Guide
     payment_methods/index
     shipping_and_taxes/index
     addons/index
+    users/index
     orders/index
