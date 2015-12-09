@@ -190,7 +190,7 @@ To restore a database backup via SSH, complete the following steps:
 
 .. code-block:: bash
 
-    scp path/to/my_database_backup.sql.zip username@host:root/folder/of/your/store/var/backups
+    scp path/to/my_database_backup.sql.zip username@host:/root/folder/of/your/store/var/backups
 
 * Unpack the .zip archive with your database backup on the remote server.
 
