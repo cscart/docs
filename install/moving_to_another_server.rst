@@ -136,7 +136,7 @@ Way 1. PhpMyAdmin
 
 To restore a database backup with **phpMyAdmin**, complete the following steps:
 
-* Log in to **phpMyAdmin**
+* Log in to **phpMyAdmin**.
 
 .. hint::
 
@@ -178,24 +178,30 @@ To restore a database backup via SSH, complete the following steps:
 
 .. note::
 
-    Contact your hosting provider or server administrator for the **username** and **host** credentials.
+    Contact your hosting provider or server administrator for the **username** and **host** credentials, as well as your **password**.
 
-* Upload your database backup to the remote server.
+* Enter your SSH password.
+
+.. note::
+
+    Your cursor won’t move and you won’t see any changes while you type your password. That is normal.
+
+* Upload your database backup to the *var/backups* directory on the remote server.
 
 .. code-block:: bash
 
-    scp path/to/my_database_backup.sql.zip username@host:/desired/path/on/the/new/server
+    scp path/to/my_database_backup.sql.zip username@host:root/folder/of/your/store/var/backups
 
-* Unpack the .zip archive with the database backup on the remote server.
+* Unpack the .zip archive with your database backup on the remote server.
 
 .. code-block:: bash
 
-    cd desired/path/on/the/new/server
+    cd root/folder/of/your/store/var/backups
     unzip my_database_backup.sql.zip
 
 * Import the database.
 
-.. code-block:: bash 
+.. code-block:: bash
 
     mysql -u[username] -p Your_DB_name < my_database_backup.sql
 
