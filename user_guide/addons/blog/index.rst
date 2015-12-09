@@ -13,3 +13,4 @@ To manage blog posts in your store, use the **Website > Blog** section.
 
     recent_posts
     attributes
+    create_blog
