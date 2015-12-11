@@ -17,6 +17,7 @@ Feeds can be regularly generated and uploaded to an FTP server or a web director
 
     set_datafeeds
     create_df
+    google_base
 
     
 
