@@ -7,5 +7,5 @@ Front-End
     :titlesonly:
     :glob:
 
-    */index.rst
+    */index
     *
