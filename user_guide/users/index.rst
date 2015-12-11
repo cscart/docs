@@ -4,7 +4,7 @@ Users
 
 Manage user accounts that are registered at your store and configure related settings at the **Customers** section of your administration panel.
 
-A **user account** is a record in the store database that identifies a *registered user* and associates the user with the related data: order statistics, personal info, subscriptions, etc. User accounts are also used to control the activity and privileges of the store various users: customers, administrators, vendors.
+A **user account** is a record in the store database that identifies a *registered user* and associates the user with the related data: order statistics, personal info, subscriptions, etc. User accounts also serve to control the activity and privileges of the store users.
 
 .. toctree::
     :maxdepth: 2

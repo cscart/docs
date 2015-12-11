@@ -1,8 +1,8 @@
-*****************************************
-How To: Make Customers Log in at Checkout
-*****************************************
+****************************************************
+How To: Make Customers Log in/Register at Checkout
+****************************************************
 
-Follow these steps, if you want all your customers to log in before they check out:
+Follow these steps, if you want all your customers to log in or register before they check out:
 
 1. In the administration panel, go to **Settings → Checkout**.
 
@@ -12,7 +12,7 @@ Follow these steps, if you want all your customers to log in before they check o
 
 .. important:: 
 
-    Now customers will not be able to check out without registering. They will be offered to fill in the **User account info** on the **Checkout page**.
+    Now customers will not be able to check out without registering or logging in. They will be offered to fill in the **User account info** on the **Checkout page**.
 
 .. image:: img/force_login.png
     :align: center

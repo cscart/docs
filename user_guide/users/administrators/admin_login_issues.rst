@@ -12,7 +12,11 @@ There are several possible solutions for the problem with logging in.
 
    Different browsers have different methods of clearing cache, but the standard key combination to do it is **Ctrl+R**.
 
-3. Clear the template cache. To clear the cache in the administration panel, go to **Administration → Storage → Clear cache**. The cache files are located in the ``var/cache`` directory of your store.
+3. Clear the template cache: delete the ``var/cache`` directory of your store. For remote servers, use an FTP client, SSH client or the file manager of your web hosting control panel to do it.
+
+.. hint::
+
+    If you can access your the administration panel of your store, you can clear the cache here: **Administration → Storage → Clear cache**.
 
 If you still can't access the panel, submit a ticket in our `Customer Help Desk <https://www.cs-cart.com/helpdesk>`_ and provide us with a temporary FTP access to your server.
 

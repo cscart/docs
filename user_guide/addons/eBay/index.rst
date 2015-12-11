@@ -1,6 +1,6 @@
-***************************
-eBay Synchronization Add-on
-***************************
+********************
+eBay Synchronization
+********************
 
 The **eBay synchronization** add-on helps you exchange products and orders with `eBay <http://www.ebay.com/>`_, an online auction and shopping website.
 
