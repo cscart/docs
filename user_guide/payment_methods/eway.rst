@@ -1,26 +1,57 @@
-********************************
-How To: Set up CS-Cart with eWAY
-********************************
+******************************
+How To: Set up eWAY in CS-Cart
+******************************
 
-To set up CS-Cart with eWAY account:
+To configure the eWAY payment method, complete the following steps:
 
-*   In the Administration panel, go to **Administration > Payment methods**.
-*   Click the **+** button on the right.
-*   In the opened window:
+1. In the administration panel, go to **Administration → Payment methods**
 
-    *   In the **Name** field type *eWAY*.
-    *   In the **Processor** select box select *eWAY*.
-    *   If necessary, specify other fields and upload an icon.
+2. Click the **+** (Add payment method) button on the right
 
-*   Open the **Configure** tab in the same window to view the eWAY settings.
-*   Fill in the following fields:
+3. Fill in the form:
 
-    *   **Client ID** — enter the eWAY ID number.
-    *   **Order prefix** — any prefix you want invoice IDs to have on eWAY site (optional field) (for instance, *mycart*). Using the prefix allows to prevent duplicate invoice IDs in case you use the same eWAY account for accepting payment from several websites;
-    *   **Test/Live mode** — select *Live*. In order to use the *Test* mode you need to get additional accounts at eWAY Sandbox.
+   *   Name your new payment method (for example, **eWAY**)
 
-*   Click the **Create** button to save the changes.
+   *   Select **eWAY Direct Payment (Rapid API)** or **eWAY Responsive Shared (Rapid API)** in the **Processor** drop-down menu
 
-.. image:: img/eway.png
+   *   Specify other settings and upload an icon for the payment method
+
+.. image:: img/eway/eway_name.png
     :align: center
-    :alt: eWAY
+    :alt: Name your payment method and select one of the two eWAY Rapid API processors.
+
+.. important::
+
+     **eWAY**, **eWAY Direct Payment** and **eWAY Shared Payment** have the **Deprecated** status starting from CS-Cart 4.3.5.
+
+     If your payment methods used any of those processors, we highly suggest you change the processor to **eWAY Direct Payment (Rapid API)** or **eWAY Responsive Shared (Rapid API)**. 
+
+     Remember to change the settings on the **Configure** tab after you select a new processor.
+
+4. Switch to the **Configure** tab and specify the eWAY settings:
+
+   *     API Key and API Password (learn `how to set up a live eWAY API key and password <https://go.eway.io/s/article/How-do-I-setup-my-Live-eWAY-API-Key-and-Password>`_)
+
+   *     if you use **eWAY Direct Payment (Rapid API)**, enter your Encryption Key
+
+   *     the currency you accept
+
+   *     if you use **eWAY Responsive Shared (Rapid API)**, choose the Theme and enter Header text
+ 
+   *     Test/Live mode (choose **Live** for your store)
+
+.. image:: img/eway/eway_configure.png
+    :align: center
+    :alt: Name your payment method and select one of the two eWAY Rapid API processors.
+
+.. note::
+
+    The Test mode is intended for developers. To use the Test mode, you need an additional account at `eWAY Sandbox <https://sandbox.myeway.com.au/gbc/login.aspx>`_.
+
+
+5. Click **Create** to save the changes.
+
+.. hint::
+
+    If you have modified an existing payment method, click **Save**. 
+

@@ -1,25 +1,69 @@
-*******************************
-How To: Set up CS-Cart with DHL
-*******************************
+*************************************
+How To: Configure DHL Shipping Method
+*************************************
 
-*   In the Administration panel, go to **Administration > Shipping & Taxes > Shipping methods**.
-*   Create a shipping method or choose the existing one.
-*   Click on the name of the shipping method to modify it.
-*   In the **Rate calculation** field select *Realtime*, select *DHL* in the **Carrier** field, and *DHL Ground* (or another DHL service) in the **Shipping service** field.
+.. important::
 
-.. image:: img/dhl_01.png
+    This article applies only to **CS-Cart 4.3.5**: the previous versions of CS-Cart are integrated with the DHL legacy web service.
+
+To configure a shipping method that uses DHL delivery services, complete the following steps:
+
+1. Go to **Administration → Shipping & Taxes → Shipping methods**
+2. Create a new shipping method or сlick the existing method to modify it
+
+.. hint::
+
+    If you have created a new shipping method and want to hide it until you configure in properly, set the method’s **Status** to **Disabled** on the **General** tab and click **Save**.
+
+3. Name the shipping method
+
+4. Set **Rate calculation** to **Realtime**
+
+5. Select **DHL** in the **Carrier** drop-down menu
+
+6. Select the desired **Shipping service** (for example, DHL Express Worldwide)
+
+.. image:: img/dhl_general.png
     :align: center
-    :alt: DHL
+    :alt: Name your shipping method and choose your Carrier and Shipping service.
 
-*   Open the **Configure** tab and set up the necessary options there. Fill your DHL credentials into the **System ID**, **Password**, **Account number**, **Shipping key**, and **Shipping key (international)** fields.
+7. Switch to the **Configure** tab 
 
-.. image:: img/dhl_01.png
+.. important::
+
+    Swithching to other tabs is only available for existing shipping methods, so click **Create** if you don’t see the **Configure** tab.
+
+8. Enter your **Site ID**, **Password** and **Account number**
+
+9. Define the dimensions and **maximum weight** of the box
+
+.. image:: img/dhl_configure.png
     :align: center
-    :alt: DHL
+    :alt: Specify the DHL-specific settings on the Configure tab.
 
-*   Open the **Shipping charges** tab and define shipping charges which will be added to charges defined by real-time shipping service. Click **Save**.
-*   Open the **General** tab, click the **Calculate shipping cost** link, enter the desired value into the **Weight (lbs)** input field, and click the **Test** button to make a test calculation of shipping charges.
+10. Switch to the **Shipping charges** tab
 
-.. note::
+11. Define a sum to add to the charges calculated by DHL
 
-	Not all services work properly in the **Test** mode.
+.. image:: img/dhl_charges.png
+    :align: center
+    :alt: Specify any additional charges on the Shipping charges tab.
+
+12. Click **Save**
+
+13. Open the **General** tab
+
+14. Click the **Calculate shipping cost** link
+
+15. Enter the desired value into the **Weight (lbs)** input field
+
+16. Click the **Test** button and check that the calculated shipping cost is correct
+
+.. image:: img/dhl_test.png
+    :align: center
+    :alt: Make a test calculation to make sure the shipping costs are correct.
+
+.. important::
+
+    DHL uses the currency of the sender’s country to calculate shipping costs. Set your store’s primary currency under **Administration → Currencies → <Desired Currency>** to match the DHL currency determined by **Account number**.
+
