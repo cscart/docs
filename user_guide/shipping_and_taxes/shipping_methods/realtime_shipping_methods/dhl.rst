@@ -4,7 +4,7 @@ How To: Configure DHL Shipping Method
 
 .. important::
 
-    This article applies only to **CS-Cart 4.3.5**: the previous versions of CS-Cart are integrated with the DHL legacy web service.
+    This article is based on **CS-Cart 4.3.5**: in earlier versions CS-Cart supported DHL only for the United States.
 
 To configure a shipping method that uses DHL delivery services, complete the following steps:
 

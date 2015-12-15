@@ -83,7 +83,7 @@ Response is an array with 20 carts from the 1st page.
 
 *   *http://example.com/api/2.0/carts?page=5&items_per_page=20&period=D&user_type=G*
 
-Response is an array with 20 todays’ guests’ carts by from the 5th output page.
+Response is an array with 20 today’s guests’ carts by from the 5th output page.
 
 ======
 Fields

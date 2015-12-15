@@ -12,7 +12,7 @@ URLs
 
 *   http://example.com/api/2.0/**discussions/** — refer to all reviews and comments. Supports only ``GET`` and ``POST``.
 
-*   http://example.com/api/2.0/**discussions/:id** — refer to a particular review or comment. Supports ``GET``, ``PUT`` and ``DELETE``.
+*   http://example.com/api/2.0/**discussions/:id** — refer to a particular review or comment. Supports ``GET``, ``PUT``, and ``DELETE``.
 
 *   http://example.com/api/2.0/**products/:p_id/discussions/** — refer to all reviews and comments related to specific product. Supports only ``GET`` and ``POST``.
 
