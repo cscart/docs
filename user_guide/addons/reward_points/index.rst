@@ -14,3 +14,11 @@ The possibility to buy a product for points is defined individually for each pro
     :glob:
 
     reward_points_settings
+    set_rp_addon
+    account_manually
+    order_auto
+    category_auto
+    products_auto
+    price_manually
+    price_according_to_ratio
+    points_not_added
