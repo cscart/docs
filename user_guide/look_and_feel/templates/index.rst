@@ -8,6 +8,13 @@ This section provides a facility to edit the source code of the theme files dire
 
 	The File editor is based on Javascript. So, Javascript must be enabled in your web browser.
 
+.. toctree::
+    :maxdepth: 3
+    :titlesonly:
+    :glob:
+
+    *
+
 Controls
 ********
 
@@ -28,4 +35,4 @@ Controls grouped under the gear button and the **+** button perform the followin
 *	**Create folder** - Creating a new folder.
 *	**Upload file** - Uploading a file to the opened directory.
 
-More information about the File editor you can find `here <http://docs.cs-cart.com/4.3.x/developer_guide/tools/file_editor.html>`_.
+Learn more about the File editor `in the corresponding article <http://docs.cs-cart.com/4.3.x/developer_guide/tools/file_editor.html>`_.

@@ -6,7 +6,7 @@ The problem may be caused by that URL file-access is disabled in your server con
 
 In order to check it do the following:
 
-*   Create a test file (*test.php*) with the following content in the root directory of your CS-Cart installation:
+* Create a test file (*test.php*) with the following content in the root directory of your CS-Cart installation:
 
 .. code-block :: none
 
@@ -17,12 +17,13 @@ In order to check it do the following:
     echo $test;
     ?>
 
-where replace *your_domain.com* with the name of your domain, *your_cscart_directory* with the name of the directory where CS-Cart is installed on your server as seen from the Web, e.g *shop* (if applicable).
+.. note::
+
+     Replace **www.your_domain.com** with the name of your domain, **your_cscart_directory** with the name of the directory where CS-Cart is installed on your server. For example, if your store is available at *www.example.com/store*, replace **your_cscart_directory** with **store**. If your store is available directly at *www.example.com*, leave **your_cscart** directory out of the code above and the link below.
     
-*	Try to launch this file in a browser: *http://www.your_domain.com/your_cscart_directory/test.php*
+* Try to launch this file in a browser: *http://www.your_domain.com/your_cscart_directory/test.php*
 
-	Where replace *your_domain.com* with the name of your domain, *your_cscart_directory* with the name of the directory where CS-Cart is installed on your server as seen from the Web, e.g shop (if applicable).
 
-If an error is displayed it means that the default PHP function ``file_get_contents`` does not work because URL file-access is disabled for your site.
+If you see an error, then the default PHP function ``file_get_contents`` does not work because URL file-access is disabled for your site.
 
-Contact your hosting administrator regarding this problem and ask him to enable this function on your account.
+Contact your hosting administrator regarding this problem and ask them to enable this function on your account.

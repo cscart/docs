@@ -49,13 +49,13 @@ Make sure that these files and folders have the following permissions:
 **var/themes_repository/index.php**  644
 ===================================  ===
 
-To change the permissions in **FileZilla**, click on the file or folder with the right mouse button, choose File Permissions and edit the Numeric value parameter. Or you can get 644 by ticking Read and Write for Owner permissions, and Read only for Group and Public permissions.
+To change the permissions in **FileZilla**, click on the file or folder with the right mouse button, choose **File Permissions** and edit the **Numeric value** parameter. Or you can get **644** by ticking *Read* and *Write* for **Owner** permissions, and only *Read* for **Group** and **Public** permissions.
 
 .. image:: img/security/filezilla_permissions.png
     :align: center
     :alt: Changing file permissions in FileZilla.
 
-In **cPanel FileManager** select the file or folder and press the Permissions button, or right click on the file and select Change Permissions. To get 644, tick Read and Write for User, and Read only for Group and World.
+In **cPanel FileManager** select the file or folder and press the **Permissions** button, or right click on the file and select **Change Permissions**. To get **644**, tick *Read* and *Write* for **User**, and only *Read* for **Group** and **World**.
 
 .. image:: img/security/cpanel_permissions.png
     :align: center
@@ -78,3 +78,24 @@ To change permissions via SSH run the following commands:
     chmod 644 design/index.php images/index.php
     chmod 644 var/index.php var/themes_repository/index.php
 
+Step 4. Configure Security Settings
+===================================
+
+.. important::
+
+    Before you enable secure connection for the storefront or in the administration panel, make sure your web server supports a secure connection.
+
+    For more information on how to define the HTTPS host, please refer to step 2 :doc:`of this article <possible_issues/secure_connection_failed>`.
+
+You can configure the security settings of your store in the administration panel under **Settings →  Security settings**. 
+
+If your web server supports a secure connection, you can tick the corresponding checkbox to **enable secure connection in the administration panel**.
+
+.. note::
+
+    Secure connection is available for the storefront: you can enable it for the **profile**, **checkout**, and **order** pages. To make the whole store work through HTTPS connection, choose **Secure full site** in the **Enable secure connection for the storefront** select box.
+
+Step 5. Use Access Restrictions
+===============================
+
+:doc:`The Access Restrictions add-on <../user_guide/addons/access_restrictions/index>` allows you to limit access to the administration panel and storefront based on IP addresses of the users. To learn how to restrict access to your administration panel with the **Access Restrictions** add-on, :doc:`read this article <../user_guide/addons/access_restrictions/restrict_access>`.
