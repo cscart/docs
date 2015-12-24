@@ -1,8 +1,8 @@
-*************************************
-E-mails Are Not Sent to Gmail Account
-*************************************
+**************************************
+E-mails Are Not Sent to Gmail Accounts
+**************************************
 
-To use SMTP server for sending letters to the gmail account, follow the steps below:
+To use SMTP server for sending letters to Gmail accounts, follow the steps below:
 
 1. In the administration panel, go to **Settings → E-mails**.
 
@@ -18,7 +18,7 @@ To use SMTP server for sending letters to the gmail account, follow the steps be
 
 If the e-mails are not sent after applying the previous changes, check whether PHP is configured with ssl socket transport support.
 
-7. Create the mail.php file in the root directory of the CS-Cart installation with the following content:
+7. Create the **mail.php** file in the root directory of the CS-Cart installation with the following content:
 
 ::
 

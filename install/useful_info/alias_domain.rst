@@ -21,7 +21,7 @@ This instrution describes how to make your alias domain work properly with your 
 
 ::
 
-  // Host and directory where cs-cart is installed on no-secure server
+  // Host and directory where cs-cart is installed on non-secure server
   $config['http_host'] = 'www.your_domain.com';
   $config['http_path'] = '/your_cscart_directory';
 

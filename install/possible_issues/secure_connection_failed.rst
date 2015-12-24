@@ -10,16 +10,13 @@ If you enabled secure connection under **Settings → Security** in the administ
 
 Follow these steps to resolve the issue:
 
-1. Check whether SSL certificate is installed on the server. The easiest way to do it is to make sure the same HTML page is accessible through HTTP and HTTPS. For example, try opening the **store_closed.html** file in the CS-Cart root directory in your browser. Using the links below, replacing **www.your_store.com** with your domain name:
+1. Check whether SSL certificate is installed on the server. The easiest way to do it is to make sure the same HTML page is accessible through HTTP and HTTPS. For example, try opening the **store_closed.html** file in the CS-Cart root directory in your browser. 
+
+Use the 2 links below, replacing **www.your_store.com** with your domain name:
 
 ::
 
   http://www.your_store.com/store_closed.html
-
-and
-
-::
-
   https://www.your_store.com/store_closed.html
 
 
@@ -43,7 +40,7 @@ If your server is Windows-based, or your secure directory is on a different serv
 
 ::
 
-  // Host and directory where software is installed on no-secure server
+  // Host and directory where software is installed on non-secure server
   $config['http_host'] = 'YOUR_HTTP_DOMAIN';
   $config['http_path']= '/store';
 
@@ -51,7 +48,7 @@ If your server is Windows-based, or your secure directory is on a different serv
   $config['https_host'] = 'YOUR_HTTPS_DOMAIN';
   $config['https_path'] = '/your_secure_directory';
 
-3. Check if there is proxy on your server. If it is, please follow the instructions in the Step 2 :doc:`of this article <../../user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/realtime_shipping_and_payment_problem>`.
+3. Check if there is proxy on your server. If your server uses proxy, please follow the instructions in the Step 2 :doc:`of this article <../../user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/realtime_shipping_and_payment_problem>`.
 
-4. If everything is set up properly, but the warning is displayed, the problem is most likely caused by the specific way of determining secure connection on your server.
+4. If everything is set up properly, but you still see the warning, then the problem is most likely caused by the specific way of determining secure connection on your server.
 

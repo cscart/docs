@@ -2,7 +2,7 @@
 500 Internal Server Error During CS-Cart Installation or After It
 *****************************************************************
 
-There are two possible reasons why the error appears.
+There are two possible reasons why **500 Internal Server Error** might appear.
 
 ==============================================
 Reason 1. Incorrect File/Directory Permissions
@@ -36,8 +36,8 @@ If you do not have terminal access to your server, change file access permission
 Reason 2. The Web Server Doesn't Support Some Directives
 ========================================================
 
-The second possible reason for Internal Server Error is that your web server does not support some directives of the CS-Cart .htaccess file.
+The second possible reason for 500 Internal Server Error is that your web server does not support some directives of the CS-Cart **.htaccess** file.
 
-To solve the problem, try renaming the **.htaccess** file located in the root directory of your CS-Cart installation. 
+To solve the problem, try renaming the **.htaccess** file located in the root directory of your CS-Cart installation to something else, for example, **.htaccess1**. 
 
 If renaming **.htaccess** helps, contact your server administrator. Send them the content of the CS-Cart **.htaccess** file and ask which directives are not supported on your server.

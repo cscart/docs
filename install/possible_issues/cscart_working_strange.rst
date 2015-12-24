@@ -2,7 +2,7 @@
 Blank CS-Cart Pages or Functionality Failure
 ********************************************
 
-If you see blank pages or CS-Cart simply works strange, there are few things you need to check.
+If you see blank pages or CS-Cart simply works strange, there are several things you need to check.
 
 ===============
 The PHP Version
@@ -10,7 +10,9 @@ The PHP Version
 
 1. Check the PHP version installed on the server:
 
-   * In the administration panel, go to **Administration → Logs**.
+   * Open the administration panel of your store. 
+
+   * Go to **Administration → Logs**.
 
    * Click the **gear button** in the top right corner of a page.
 
@@ -20,7 +22,7 @@ The PHP Version
 
 2. If the version is **5.0.5** (or **5.0.4**), CS-Cart cannot work with it correctly: older PHP versions have serious bugs, like `this bug in PHP 5.0.5 <http://bugs.php.net/bug.php?id=31478>`_.
 
-3. Contact your hosting administrator and ask him to :doc:`update PHP to a later version <../system_requirements>`.
+3. Contact your hosting administrator and ask them to :doc:`update PHP to a later version <../system_requirements>`.
 
 =================
 Not Enough Memory

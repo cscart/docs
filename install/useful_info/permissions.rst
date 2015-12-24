@@ -44,7 +44,7 @@ There are three types of users that can perform actions on files:
 
 * Anyone in the **group** that the file belongs to
 
-* **Others** (everyone else)
+* Everyone else—referred to as **others**
 
 In most cases, permissions are represented by a set of three digits, for example 755 or 666. The first digit determines the file owner's permissions, the second digit determines the group's permissions, and the third digit determines the permissions of others. 
 
@@ -62,7 +62,7 @@ To check the permissions:
 
   ls -l
 
-This will give you permissions for all the files and directories in the current directory. You will see something like this:
+You will see permissions for all the files and directories in the current directory. Permissions look like this:
 
 ::
 
@@ -113,4 +113,4 @@ Once the installation is complete, it is strongly recommended to change the acce
   chmod 644 design/index.php images/index.php
   chmod 644 var/index.php var/themes_repository/index.php
 
-The permission behavior is affected by the **umask** functions that sets default permissions for all new files and directories. `Learn more about Umask at Wikipedia <http://en.wikipedia.org/wiki/Umask>`_. 
+The permission behavior is affected by the **umask** functions that set default permissions for all new files and directories. `Learn more about Umask at Wikipedia <http://en.wikipedia.org/wiki/Umask>`_. 

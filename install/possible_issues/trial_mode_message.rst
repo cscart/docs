@@ -2,7 +2,7 @@
 Your Store Is in the Trial Mode
 *******************************
 
-If CS-Cart cannot receive a confirmation from our server, that you use a CS-Cart installation legally, you'll see a pop-up window in the administration panel of your store:
+If CS-Cart cannot receive a confirmation from our server that you use a CS-Cart installation legally, you'll see a pop-up window in the administration panel of your store:
 
 .. note::
 
@@ -12,9 +12,9 @@ If CS-Cart cannot receive a confirmation from our server, that you use a CS-Cart
 
 To resolve the issue, follow the instructions:
 
-1. Check if you have specified a correct license number on the **Settings → Licensing** mode page in your CS-Cart admin panel.
+1. Check if your store uses the correct license number: go **Settings → Licensing mode** page in your CS-Cart admin panel.
 
-2. If correct data is specified on this page and the message still appears, try logging out from your CS-Cart admin panel, clearing the browser cache (usually you can do it by pressing **Ctrl+R**) and logging in to the admin panel again.
+2. If the correct data is specified on this page and the message still appears, try logging out from your CS-Cart admin panel, clearing the browser cache (usually you can do it by pressing **Ctrl+R**) and logging in to the admin panel again.
 
 .. note::
 

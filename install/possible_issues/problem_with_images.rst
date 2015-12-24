@@ -25,7 +25,7 @@ The remaining commands set the **777** permissions for the *images*, *design*, a
 
     The **666** permissions mean **read and write** permissions, for the **user**, **user group**, and **others**. The **777** permissions mean **read, write and execute** permissions for the **user**, **user group**, and **others**. :doc:`Learn more about permissions in CS-Cart documentation <../useful_info/permissions>`.
 
-If you do not have terminal access to your server, change file access permissions using an FTP client. Most FTP clients have the **Change permissions** or **Change mode** functions, that you can use to set the permissions described above. For more detailed instructions on how to set file permissions refer to your FTP client documentation.
+If you do not have terminal access to your server, change file access permissions with an FTP client. Most FTP clients have the **Change permissions** or **Change mode** functions that you can use to set the permissions described above. For more detailed instructions on how to set file permissions refer to your FTP client documentation.
  
 .. note::
 

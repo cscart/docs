@@ -28,7 +28,7 @@ Delete the Languages You Do Not Use
 Optimize the Database
 ===================== 
 
-To increase performance, optimize the database: that way you reclaim unused space and defragment the datafile.
+Optimize the database to increase performance: that way you reclaim unused space and defragment the datafile.
 
 1. In the administration panel, go to **Administration → Backup/Restore**.
 

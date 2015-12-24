@@ -2,7 +2,7 @@
 Check the Server for PHP's cURL Support
 ***************************************
 
-To check whether there is PHP's cURL support installed on your server, complete the following steps:
+To check whether PHP's cURL support is installed on your server, complete the following steps:
 
 1. Log in to your administration panel.
 

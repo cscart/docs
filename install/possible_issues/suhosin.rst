@@ -12,9 +12,9 @@ Some servers use `the Suhosin extension <https://en.wikipedia.org/wiki/Suhosin>`
 
 * The **Add to cart** button does not work.
 
-* There are problems with the template area and with adding categories etc.
+* There are problems with the template area and with adding categories, etc.
 
-* Upgrade center does not work correctly
+* The **Upgrade Center** does not work correctly.
 
 .. note::
 

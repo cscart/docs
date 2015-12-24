@@ -12,7 +12,7 @@ To find out what version of CS-Cart you use, complete the following steps:
 
 2. Open the **config.php** file.
 
-3. Search the file to find the line containing your CS-Cart version.
+3. Search the file for the line that includes your CS-Cart version.
 
 For example:
 
