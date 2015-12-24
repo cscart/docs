@@ -17,7 +17,7 @@ To restore a backup of your store database, complete the following steps:
 
 2. Click the **gear button** in the upper right corner of a page and choose **Upload file**. Specify the location of the file containing the SQL dump. You can retrieve it from: 
 
- * local computer 
+ * your local computer 
  
  * the server with your CS-Cart installation
 

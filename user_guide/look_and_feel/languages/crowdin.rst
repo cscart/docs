@@ -48,7 +48,7 @@ To contribute to a localization via Crowdin, follow these steps:
 
 .. note:: 
 
-    Validator approves the most appropriate translation among all variants, suggested by translators. Translation approved by a validator has a green tick next to it, and the date and time of approval.
+    Validators approve the most appropriate translation among all variants, suggested by translators. A translation approved by a validator has a green tick next to it, as well as the time and date of approval.
 
 9. In the right part of the page you can leave comments and discuss translations with other translators and validators.
 

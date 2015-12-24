@@ -6,7 +6,7 @@ If you get the **"unrecognized tag..."** Smarty error after adding a JavaScript 
 
 To avoid the error, complete the following steps:
 
-1. Open the template to which you added the code.
+1. Open the template to which you have added the code.
 
 2. Enclose the JavaScript code in a ``{literal}...{/literal}`` container to prevent Smarty from parsing it:
 

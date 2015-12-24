@@ -21,7 +21,7 @@ In order to check it do the following:
 
      Replace **www.your_domain.com** with the name of your domain, **your_cscart_directory** with the name of the directory where CS-Cart is installed on your server. For example, if your store is available at *www.example.com/store*, replace **your_cscart_directory** with **store**. If your store is available directly at *www.example.com*, leave **your_cscart** directory out of the code above and the link below.
     
-* Try to launch this file in a browser: *http://www.your_domain.com/your_cscart_directory/test.php*
+* Try to open this file in a browser: *http://www.your_domain.com/your_cscart_directory/test.php*
 
 
 If you see an error, then the default PHP function ``file_get_contents`` does not work because URL file-access is disabled for your site.

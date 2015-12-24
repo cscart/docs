@@ -2,11 +2,11 @@
 How To: Upgrade CS-Cart via the Upgrade Center
 **********************************************
 
-The Upgrade Center automatically retrieves information about all available updates from the CS-Cart server and displays a notification for administrator, so that they can upgrade the installed CS-Cart to the latest version.
+The Upgrade Center automatically retrieves the information about all available updates from the CS-Cart server and notifies the administrators, so that they can upgrade their CS-Cart installations to the latest version.
 
 .. note::
 
-    If you are not familiar with technical aspects of CS-Cart and the upgrade process, you can `hire a specialist to upgrade your store <http://marketplace.cs-cart.com/developers-catalog.html?services=M>`_. You can also `ask our support team to do it for you <https://www.cs-cart.com/index.php?dispatch=communication.tickets&submit_ticket=Y>`_.
+    If you are not familiar with the technical aspects of CS-Cart and the upgrade process, you can `hire a specialist to upgrade your store <http://marketplace.cs-cart.com/developers-catalog.html?services=M>`_. You can also `ask our support team to do it for you <https://www.cs-cart.com/index.php?dispatch=communication.tickets&submit_ticket=Y>`_.
 
 ========================
 Configure Upgrade Center
@@ -28,7 +28,7 @@ If a web user does not have permissions to update files on your server, fill in 
 
 * **Password**—FTP password
 
-* **Directory**—directory on the FTP server where CS-Cart is located
+* **Directory**—the directory on the FTP server where CS-Cart is located
 
 4. Click the **Save** button to save the changes.
 
@@ -79,13 +79,13 @@ Upgrade CS-Cart
 
 7. If you have any files that require the *write* permissions to be set, they will be displayed at this step too. To set the permissions, click the **Auto-set permissions via FTP** button.
 
-8. If the upgrade is successful, you will see the corresponding notification. You will also receive an e-mail with the store upgrade summary. If you cannot access your administration panel after the upgrade, use the link provided in that email to restore the latest backup.
+8. If the upgrade is successful, you will see the corresponding notification. You will also receive an e-mail with the store upgrade summary. If you cannot access your administration panel after the upgrade, use the link provided in that email to restore the latest backup of your store.
 
 =================
 After the Upgrade
 =================
 
-After the upgrade, we recommend to check the basic functionality of your store:
+After the upgrade is complete, we recommend to check the basic functions of your store:
 
 * Open the storefront and look through the most important sections, like product pages, checkout, contacts, etc.
 

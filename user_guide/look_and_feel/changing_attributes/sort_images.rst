@@ -24,4 +24,4 @@ To sort the additional images in the order they are uploaded, complete the follo
 
 After that the images will be sorted by the ``pair_id``. The pair_id of every next image equals the pair_id of the previous image + 1, so the images will be sorted in the order they are uploaded.
 
-If you have made changes in a template but they are not displayed, please try cleaning up the template cache. In order to do it, in the administration panel of your store go to **Administration → Storage → Clear cache**.
+If you have made changes in a template but they are not displayed, please try clearing the template cache. In order to do it, in the administration panel of your store go to **Administration → Storage → Clear cache**.

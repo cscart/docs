@@ -6,7 +6,7 @@ The problem may be caused by the disabled URL file-access in your server configu
 
 To check if URL file-access is enabled, do the following:
 
-1. Create a test file (test.php) with the following content in the CS-Cart root directory:
+1. Create a test file called **test.php** with the following content in the CS-Cart root directory:
 
 ::
 

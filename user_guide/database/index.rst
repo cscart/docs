@@ -2,7 +2,7 @@
 Database
 ********
 
-This section of the documentation covers databases. A database is a vital part of your store: it includes most of the information you enter in the CS-Cart administration panel, like products, categories, promotions, shipping and payment methods, and much more. It also contains the information about the your customers and other users of your store. 
+This section of the documentation covers databases. A database is a vital part of your store: it includes most of the information you enter in the CS-Cart administration panel, like products, categories, promotions, shipping and payment methods, and much more. It also contains the information about your customers and other users of your store. 
 
 ================
 Database Backups

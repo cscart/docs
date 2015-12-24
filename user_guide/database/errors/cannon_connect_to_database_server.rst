@@ -6,7 +6,7 @@ This error indicates that a PHP script cannot connect to your MySQL server.
 
 CS-Cart may fail to connect to the database server due to the current MySQL server overload or inaccessibility. For example, this problem may arise during the MySQL server maintenance. 
 
-The problem may also be caused by the incorrect credentials to your database.
+The problem may also be caused by the incorrect database credentials.
 
 1. Check your MySQL credentials in the **config.local.php** file located in the root CS-Cart directory. You should check the values of the following variables:
 

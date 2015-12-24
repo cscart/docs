@@ -70,5 +70,5 @@ By default, the quick search looks for the exact phrase. To make quick search lo
 
 .. note::
 
-    To set the quick search to search by 'any of these words' replace ``all`` with ``any`` in the code from Step 4.
+    To set the quick search to search by any of these words you specify in the search box, replace ``all`` with ``any`` in the code from Step 4.
 

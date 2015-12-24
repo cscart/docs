@@ -22,7 +22,7 @@ To enable image verification in your store, complete the following steps:
 
 .. important::
 
-    For displaying verification CS-Cart requires **GD Library** to be installed on the server. PHP must be compiled with **freetype support**. So PHP must be configured with the following keys: ``--with-gd --enable-gd-native-ttf``
+    You must have **GD Library** installed on the server for CS-Cart to display verification images. PHP must be compiled with **freetype support**. So PHP must be configured with the following keys: ``--with-gd --enable-gd-native-ttf``
 
 
 .. image:: img/verification_settings.png

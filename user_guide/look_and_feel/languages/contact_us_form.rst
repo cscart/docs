@@ -2,7 +2,7 @@
 How To: Translate Fields of the Contact Us Form
 ***********************************************
 
-To translate the fields of form on the Contact Us page, follow the instructions:
+To translate the fields of form on the **Contact Us** page, follow the instructions:
 
 1. In the administration panel go to **Website → Content**.
 

@@ -6,11 +6,11 @@ The problem may occur if your store has a lot of products and categories, or if 
 
 You might want to increase some values of your PHP configuration: check the values of the **memory_limit**, **post_max_size**, **max_execution_time** and **default_socket_timeout** parameters of your PHP configuration:
 
- * In the administration panel, go to **Administration > Logs**.
+ * In the administration panel, go to **Administration → Logs**.
 
  * Click the **gear button** and choose PHP information from the drop-down menu. A new page that displays the result of phpinfo PHP function will open.
 
- * Search for the **default_socket_timeout**, **post_max_size**, **memory_limit** and **max_execution_time** variables. Check the values below - your values shouldn't be smaller than the following ones:
+ * Search for the **default_socket_timeout**, **post_max_size**, **memory_limit** and **max_execution_time** variables. Check the values below—your values shouldn't be smaller than the following ones:
 
 ::
 

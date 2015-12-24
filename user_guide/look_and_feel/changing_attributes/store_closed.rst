@@ -14,7 +14,7 @@ To close the storefront, complete the following steps:
 
 .. note::
 
-    You can use the access key to view the closed storefront. If your site is available at *http://example.com* and you entered *secret* in the **Access key to temporarily closed store** field, you will be able to access storefront by the following URL: *http://www.example.com/index.php?store_access_key=secret*
+    You can use the access key to view the closed storefront. If your site is available at *http://example.com* and you entered *secret* in the **Access key to temporarily closed store** field, you will be able to access the closed storefront by the following URL: *http://www.example.com/index.php?store_access_key=secret*
 
 .. image:: img/store_closed.png
     :align: center

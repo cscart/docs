@@ -1,8 +1,8 @@
 **********************************************************************
-How To: Set How Long A Cart Stores Products, that Haven't Been Ordered
+How To: Set How Long A Cart Stores Products That Haven't Been Ordered
 **********************************************************************
 
-By default, a stores stores the products, that haven't been ordered, for 2 weeks.
+By default, a cart stores the products, that haven't been ordered, for 2 weeks.
 
 To change how long that period is, complete the following steps:
 

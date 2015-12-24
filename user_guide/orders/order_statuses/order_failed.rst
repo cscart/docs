@@ -2,7 +2,7 @@
 The Order Gets the Failed Status
 ********************************
 
-The most probable reason for it is that the **Remove CC info** option is enabled for the **Open** status. 
+The most probable reason for the orders getting the **Failed** status is that the **Remove CC info** option is enabled for the **Open** status. 
 
 If a realtime payment method is set up in CS-Cart, untick the **Remove CC info** checkbox for the **Open** status under **Administration → Order statuses** and click **Save**.
 
