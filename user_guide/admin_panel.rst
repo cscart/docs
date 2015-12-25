@@ -43,6 +43,24 @@ The first thing you’ll notice is the **Dashboard**, where you can check sales 
     :align: center
     :alt: The Dashboard provides the statistics of your store.
 
+1. Total number of orders, sales and taxes sums in your store.
+
+2. Recent orders made in your store. Switch between the tabs to see orders with particular statuses.
+
+3. Monthly statistics of your store in the form of a diagram.
+
+4. Brief statistics of the store: the number of products, customers, pages, etc. Click on the number of items to go to the page with the detailed list of these items.
+
+5. The number of orders with the particular status and total income received by the orders of this type.
+
+6. Brief variant of information, represented in the **Administration → Logs** section. Click the **Show all** link to view the full log.
+
+You can also choose the period of time, for which the information on the dashboard is displayed. Click on the period in the right upper corner of the page and choose the required period of time from the drop-down menu. Optionally, click **Custom Range** to define your own period and press **Apply**.
+
+.. image:: img/intro/periods.png
+    :align: center
+    :alt: View statistics for the particular period.
+
 ===========
 The Top Bar
 ===========
