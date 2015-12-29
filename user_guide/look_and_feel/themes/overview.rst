@@ -2,7 +2,7 @@
 The Themes Section Overview
 ***************************
 
-In the **Design > Themes** section of the Administration panel you can choose, install, upload, delete, and customize themes for your store.
+In the **Design → Themes** section of the Administration panel you can choose, install, upload, delete, and customize themes for your store.
 
 .. image:: img/themes.png
     :align: center

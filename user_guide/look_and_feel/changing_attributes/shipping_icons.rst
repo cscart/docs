@@ -33,6 +33,6 @@ In this example the shipping method icon width is 100 and its height is 100 too.
 
 To upload a shipping method icon:
 
-*   In the Administration panel of your store, go to **Administration > Shipping & Taxes > Shipping Methods**, click the gear button of the necessary payment method, and choose **Edit**.
+*   In the Administration panel of your store, go to **Administration → Shipping & Taxes → Shipping Methods**, click the gear button of the necessary payment method, and choose **Edit**.
 *   Upload an image in the **Icon** section in the opened page.
 *   Click the **Save and close** button.

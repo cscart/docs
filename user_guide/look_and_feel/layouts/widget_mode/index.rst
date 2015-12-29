@@ -2,7 +2,7 @@
 Widget Mode
 ***********
 
-This tool allows you to operate your store in the **Widget Mode**. In the right upper part of the **Design > Layouts** section you can see the **Widget code**. Copy this code and use it to embed your store as a widget in any other web page.
+This tool allows you to operate your store in the **Widget Mode**. In the right upper part of the **Design → Layouts** section you can see the **Widget code**. Copy this code and use it to embed your store as a widget in any other web page.
 
 Click the **NEED HELP** button at the top of a page to see the video describing the features of the **Widget mode**.
 

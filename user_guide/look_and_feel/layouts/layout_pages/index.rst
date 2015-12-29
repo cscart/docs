@@ -6,7 +6,7 @@ A layout page can represent either a certain type of the storefront pages (for e
 
 By changing the layout of a specific layout page, you automatically change all storefront pages that this layout page represents.
 
-Although a layout page cannot represent a specific page that belongs to a particular page type, you can configure individual blocks to appear on specific pages only. This feature makes it possible to create a unique look and feel for individual storefront pages. For more details, please refer to `Design > Layouts > Blocks <http://www.cs-cart.com/documentation/reference_guide/index.htmld?design_block_manager_blocks.htm>`_.
+Although a layout page cannot represent a specific page that belongs to a particular page type, you can configure individual blocks to appear on specific pages only. This feature makes it possible to create a unique look and feel for individual storefront pages. For more details, please refer to `Look and Feel → Layouts → Blocks <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/blocks/index.html>`_.
 
 .. note::
 

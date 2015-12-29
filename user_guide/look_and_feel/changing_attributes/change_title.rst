@@ -4,7 +4,7 @@ How To: Change the Page Title
 
 To change the standard page title:
 
-*   In the Administration panel, go to **Design > Layouts**.
+*   In the Administration panel, go to **Design → Layouts**.
 *   In the **Default** tab click on the gear icon. This will open a pop-up window.
 
 .. image:: img/title_01.png

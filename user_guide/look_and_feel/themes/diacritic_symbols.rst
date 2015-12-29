@@ -73,7 +73,7 @@ If the symbols display correctly in the text appeared in the field below, the se
     }
 
 *   Copy this code to clipboard.
-*   In the Administrtion panel of your store, go to **Design > Themes** and click the **Visual Editor** button.
+*   In the Administrtion panel of your store, go to **Design → Themes** and click the **Visual Editor** button.
 
 .. image:: img/fonts_03.png
     :align: center

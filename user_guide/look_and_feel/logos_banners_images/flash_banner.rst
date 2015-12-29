@@ -4,7 +4,7 @@ How To: Add a Flash Banner to the Homepage
 
 To add a Flash Banner to the Homepage:
 
-*   In the Administration panel, go to **Marketing > Banners**.
+*   In the Administration panel, go to **Marketing → Banners**.
 *   Click the **+** button on the right and in the new page:
 
     *   Specify the **Name** of the banner (e.g. *New banner*).
@@ -18,7 +18,7 @@ To add a Flash Banner to the Homepage:
 
 To create a block for banners on the **Homepage**: 
 
-*   Go to **Design > Layouts > Homepage**.
+*   Go to **Design → Layouts → Homepage**.
 *   Click **+** in the desired container and choose **Add block**. 
 *   Go to the **Create new block** tab and choose **Banners**. In the new window:
 

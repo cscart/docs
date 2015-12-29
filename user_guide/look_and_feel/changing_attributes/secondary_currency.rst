@@ -27,4 +27,4 @@ where replace DESIRED_CURRENCY_CODE with the 3-symbol code of the currency that 
 
 .. important ::
 
-	This modification will keep your other currencies selectable but only set the specified one as selected by default. If you want to hide all other currencies except the desired one, please use the instructions in `here <http://kb.cs-cart.com/hide-currencies>`_.
+	This modification will keep your other currencies selectable but only set the specified one as selected by default. If you want to hide all other currencies except the desired one, please use the instructions in :doc:`here <../changing_attributes/prices_in_secondary>`.

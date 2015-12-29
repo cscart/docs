@@ -4,7 +4,7 @@ How To: Add a New Block to the Storefront
 
 To create a new block:
 
-*   In the Administration panel, go to **Design > Layouts**.
+*   In the Administration panel, go to **Design → Layouts**.
 *   Click the **+** button in the necessary container and click **Add block**. Open the **Create New Block** tab and click the desired block type button.
 *   In the opened window enter the block name, select the desired template in the **Template** select box.
 

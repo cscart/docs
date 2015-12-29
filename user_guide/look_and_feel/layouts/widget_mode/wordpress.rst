@@ -6,7 +6,7 @@ The **Widget mode** allows you to embed the CS-Cart store to your WordPress site
 
 First of all open your CS-Cart Administration panel and do the following:
 
-*   Go to the **Design > Layouts** section.
+*   Go to the **Design → Layouts** section.
 *   In the right side panel find the **Switch layout** section and choose **Widget mode**. You can also choose any other layout.
 *   In the **Widget code** section copy the given code to clipboard.
 
@@ -16,7 +16,7 @@ First of all open your CS-Cart Administration panel and do the following:
 
 After that, log into your WordPress administration panel and follow these steps:
 
-*   In the left panel choose **Pages > Add New**. You can also choose **Pages > All Pages** to edit one of the existing pages.
+*   In the left panel choose **Pages → Add New**. You can also choose **Pages → All Pages** to edit one of the existing pages.
 
 .. image:: img/widget_02.png
     :align: center

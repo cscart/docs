@@ -2,7 +2,7 @@
 How To: Create a Menu Block
 ***************************
 
-*   In the Administration panel, go to **Design > Layouts > Homepage**.
+*   In the Administration panel, go to **Design → Layouts → Homepage**.
 *   Click the **+** button in the necessary container and click **Add block**. 
 *   Open the **Create New Block** tab and select **Menu**. 
 *   In the opened window specify the **Name** of the block (e.g. *New menu*), select a desired template in the **Template** select box. 

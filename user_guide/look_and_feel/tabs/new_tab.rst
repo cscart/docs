@@ -4,7 +4,7 @@ How To: Add a New Tab for the Product Details Page
 
 To add a new tab with the own manageable content to the product details page:
 
-*   In the Administration panel, go to **Design > Product tabs**.
+*   In the Administration panel, go to **Design → Product tabs**.
 *   Click the **+** button to add a tab. In the opened window:
 
     *   Enter the tab name (e.g. *New tab*).

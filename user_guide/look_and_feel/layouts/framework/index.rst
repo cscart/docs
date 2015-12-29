@@ -5,7 +5,7 @@ Framework
 Root containers
 ***************
 
-As illustrated in `Design > Layouts <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/index.html>`_, the basic storefront framework consists of four horizontal containers referred to as **root containers**. This basic frame is the same for all layout pages.
+As illustrated in `Look and Feel → Layouts <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/index.html>`_, the basic storefront framework consists of four horizontal containers referred to as **root containers**. This basic frame is the same for all layout pages.
 
 .. important::
 
@@ -24,13 +24,13 @@ Child containers
 
 Child containers ensure a more detailed and sophisticated layout of the storefront paged. Multiple child containers with certain sizes, positions, and styles can be nested inside a root container or inside other child containers. And each such container may include one or more blocks - boxes with information of certain type.
 
-Both the root and child containers are fixed to the `storefront grid system used in CS-Cart <http://www.cs-cart.com/documentation/reference_guide/index.htmld?design_grid_system.htm>`_.
+Both the root and child containers are fixed to the `storefront grid system used in CS-Cart <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/framework/grid_system.html>`_.
 
 To create a child container:
 
 *	Click the **+** icon on the container that will be the parent on the new container and select **Add Grid**.
 	It opens a form with the new container attributes.
-*	Specify the new `container attributes <http://www.cs-cart.com/documentation/reference_guide/index.htmld?design_container_attributes.htm>`_.
+*	Specify the new `container attributes <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/framework/container_properties.html>`_.
 *	Click **Create** when finished. 
 
 In this section

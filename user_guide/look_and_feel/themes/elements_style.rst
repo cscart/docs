@@ -4,7 +4,7 @@ How To: Change the Style of Elements in the Storefront
 
 To change the style (font, color) of some design elements (links, text, etc.):
 
-*   In the Administration panel, go to **Design > Themes**.
+*   In the Administration panel, go to **Design → Themes**.
 *   In the currently used theme click the **Visual editor** button next to the layout you want to change.
 
 .. image:: img/elements_01.png

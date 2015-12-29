@@ -2,7 +2,7 @@
 Layout Page Properties
 **********************
 
-To edit layout page attributes, select a layout page in **Design > Layouts** and click the gear icon on the tab.
+To edit layout page attributes, select a layout page in **Design → Layouts** and click the gear icon on the tab.
 
 A layout page has the following attributes:
 

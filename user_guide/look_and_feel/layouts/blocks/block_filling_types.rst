@@ -18,7 +18,7 @@ Also bought
 
 With this filling type, the block contains links to product that are usually bought together with the product that the visitor scans at the moment.
 
-This filling type is available when the `Customers also bought <http://www.cs-cart.com/documentation/reference_guide/index.htmld?administration_add_ons_customers_also_bought_2.htm>`_ add-on is installed and activated.
+This filling type is available when the `Customers also bought <http://docs.cs-cart.com/4.3.x/user_guide/addons/customers_also_bought/index.html>`_ add-on is installed and activated.
 
 .. _bestsellers:
 
@@ -27,7 +27,7 @@ Bestsellers
 
 With this filling type, the block contains links to products that are sold best in the store.
 
-This filling type is available when the `Bestsellers & on sale products <http://www.cs-cart.com/documentation/reference_guide/index.htmld?administration_add_ons_bestsellers_2.htm>`_ add-on is installed and activated.
+This filling type is available when the `Bestsellers & on sale products <http://docs.cs-cart.com/4.3.x/user_guide/addons/bestsellers_and_on_sale_products/index.html>`_ add-on is installed and activated.
 
 .. _filling_blog_recent_posts:
 
@@ -209,7 +209,7 @@ Rating
 
 With this filling type, items are added automatically based on a greater ratings.
 
-This filling type is available when the `Comments & Reviews <http://www.cs-cart.com/documentation/reference_guide/index.htmld?administration_add_ons_comments_and_reviews_2.htm>`_ add-on add-on is installed and activated.
+This filling type is available when the `Comments & Reviews <http://docs.cs-cart.com/4.3.x/user_guide/addons/comments_and_reviews/index.html>`_ add-on add-on is installed and activated.
 
 .. _recently_viewed:
 
@@ -232,7 +232,7 @@ Tag cloud
 
 With this filling type, the block contains a list of tags added that you have defined in the store.
 
-This filling type is available when the `Tags <http://www.cs-cart.com/documentation/reference_guide/index.htmld?administration_add_ons_tags_2.htm>`_ add-on add-on is installed and activated.
+This filling type is available when the `Tags <http://docs.cs-cart.com/4.3.x/user_guide/addons/tags/index.html>`_ add-on add-on is installed and activated.
 
 .. _vendor_pages:
 

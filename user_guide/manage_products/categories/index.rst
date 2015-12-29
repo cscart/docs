@@ -10,7 +10,7 @@ Child categories are referred to as *sub-categories* while the categories that d
 
 .. note::
 
-	The nature of using categories in a multiple-store environment is described in `Understanding multi-store functionality <http://www.cs-cart.com/documentation/reference_guide/index.htmld?stores_understanding.htm>`_.
+	The nature of using categories in a multiple-store environment is described in `Understanding multi-store functionality <http://docs.cs-cart.com/4.3.x/user_guide/stores/index.html>`_.
 
 .. image:: img/categories_list.png
     :align: center

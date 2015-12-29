@@ -28,9 +28,9 @@ Banners
 	:widths: 15 35
 
 	*   -   Description
-	    -   One or more banners that were created in section Marketing > Banners.
+	    -   One or more banners that were created in section Marketing → Banners.
 	*   -   Related add-ons
-	    -   `Banners Management <http://www.cs-cart.com/documentation/reference_guide/index.htmld?administration_add_ons_banners_management_2.htm>`_
+	    -   `Banners Management <http://docs.cs-cart.com/4.3.x/user_guide/addons/banners_management/index.html>`_
 	*   -   Templates
 	    -   *	:ref:`Original <original>`
 	        *	:ref:`Carousel <carousel>`
@@ -171,7 +171,7 @@ Currencies
 	:widths: 15 35
 
 	*   -   Description
-	    -   List (text or pictorial) of currencies supported in the store. To manage the list of currencies, use section Administration > Currencies.
+	    -   List (text or pictorial) of currencies supported in the store. To manage the list of currencies, use section Administration → Currencies.
 	*   -   Related add-ons
 	    -   None
 	*   -   Templates
@@ -198,7 +198,7 @@ Gift certificate verification
 	*   -   Description
 	    -   Allows customer to validate or redeem a gift certificate.
 	*   -   Related add-ons
-	    -   `Gift certificates <http://www.cs-cart.com/documentation/reference_guide/index.htmld?administration_add_ons_gift_certificates_add_on_2.htm>`_
+	    -   `Gift certificates <http://docs.cs-cart.com/4.3.x/user_guide/addons/gift_certificates/index.html>`_
 	*   -   Templates
 	    -   :ref:`Gift certificate verification <gs_verification>`
 	*   -   Content
@@ -282,7 +282,7 @@ Menu
 	:widths: 15 35
 
 	*   -   Description
-	    -   A custom menu created in Design > Menus.
+	    -   A custom menu created in Design → Menus.
 	*   -   Related add-ons
 	    -   None
 	*   -   Templates
@@ -290,7 +290,7 @@ Menu
 	        *	:ref:`Dropdown vertical <dropdown_vertical>`
 	        *	:ref:`Text links <text_links>`
 	*   -   Content
-	    -   A custom menu created in Design > Menus.
+	    -   A custom menu created in Design → Menus.
 	*   -   Block settings
 	    -   None
 
@@ -324,7 +324,7 @@ News
 	*   -   Description
 	    -   Links to the latest store news.
 	*   -   Related add-ons
-	    -   `Newsletters <http://www.cs-cart.com/documentation/reference_guide/index.htmld?administration_add_ons_news_and_emails_2.htm>`_
+	    -   `Newsletters <http://docs.cs-cart.com/4.3.x/user_guide/addons/newsletters/index.html>`_
 	*   -   Templates
 	    -   *	:ref:`Site news <site_news>`
 	        *	:ref:`Text links <text_links>`
@@ -401,9 +401,9 @@ Polls
 	:widths: 15 35
 
 	*   -   Description
-	    -   One or several polls created in Website > Content.
+	    -   One or several polls created in Website → Content.
 	*   -   Related add-ons
-	    -   `Polls <http://www.cs-cart.com/documentation/reference_guide/index.htmld?administration_add_ons_polls_2.htm>`_
+	    -   `Polls <http://docs.cs-cart.com/4.3.x/user_guide/addons/polls/index.html>`_
 	*   -   Templates
 	    -   *	:ref:`Central <central>`
 	        *	:ref:`Side box <side_box>`
@@ -452,8 +452,8 @@ Products
 	    -   One or more products from the product catalog.
 	*   -   Related add-ons
 
-	    -  *	`Bestsellers & on sale products <http://www.cs-cart.com/documentation/reference_guide/index.htmld?administration_add_ons_bestsellers_2.htm>`_
-	       *	`Customers also bought <http://www.cs-cart.com/documentation/reference_guide/index.htmld?administration_add_ons_customers_also_bought_2.htm>`_
+	    -  *	`Bestsellers & on sale products <http://docs.cs-cart.com/4.3.x/user_guide/addons/bestsellers_and_on_sale_products/index.html>`_
+	       *	`Customers also bought <http://docs.cs-cart.com/4.3.x/user_guide/addons/customers_also_bought/index.html>`_
 	*   -   Templates
 	    -   *	:ref:`Grid <grid>`
 	        *	:ref:`Grid 2 <grid_2>`
@@ -493,7 +493,7 @@ Recent posts
 	:widths: 15 35
 
 	*   -   Description
-	    -   Blog posts that were created in section Website > Blog.
+	    -   Blog posts that were created in section Website → Blog.
 	*   -   Related add-ons
 	    -   Blog
 	*   -   Templates
@@ -542,7 +542,7 @@ RSS feed
 	*   -   Description
 	    -   Regular RSS feed icon. A visitor clicks the icon and adds the store RSS feed to his or her RSS reader.
 	*   -   Related add-ons
-	    -   `RSS Feed <http://www.cs-cart.com/documentation/reference_guide/index.htmld?administration_add_ons_rss_feed_2.htm>`_
+	    -   `RSS Feed <http://docs.cs-cart.com/4.3.x/user_guide/addons/rss_feed/index.html>`_
 	*   -   Templates
 	    -   *	:ref:`Icon <icon>`
 	*   -   Content
@@ -604,7 +604,7 @@ Store locator
 	*   -   Description
 	    -   Box showing the location of your store on Google map.
 	*   -   Related add-ons
-	    -   `Store Locator <http://www.cs-cart.com/documentation/reference_guide/index.htmld?administration_add_ons_store_locator_2.htm>`_
+	    -   `Store Locator <http://docs.cs-cart.com/4.3.x/user_guide/addons/store_locator/index.html>`_
 	*   -   Templates
 	    -   :ref:`Store Locator <store_locator>`
 	*   -   Content
@@ -627,7 +627,7 @@ Tags
 	*   -   Description
 	    -   List of product and category tags.
 	*   -   Related add-ons
-	    -   `Tags <http://www.cs-cart.com/documentation/reference_guide/index.htmld?administration_add_ons_tags_2.htm>`_
+	    -   `Tags <http://docs.cs-cart.com/4.3.x/user_guide/addons/tags/index.html>`_
 	*   -   Templates
 	    -   :ref:`Tag cloud <tag_cloud>`
 	*   -   Content
@@ -682,7 +682,7 @@ Testimonials
 	*   -   Description
 	    -   List of testimonials left by the store customers.
 	*   -   Related add-ons
-	    -   `Comments & Reviews <http://www.cs-cart.com/documentation/reference_guide/index.htmld?administration_add_ons_comments_and_reviews_2.htm>`_
+	    -   `Comments & Reviews <http://docs.cs-cart.com/4.3.x/user_guide/addons/comments_and_reviews/index.html>`_
 	*   -   Templates
 	    -   *	:ref:`Testimonials <testimonials>`
 	*   -   Content

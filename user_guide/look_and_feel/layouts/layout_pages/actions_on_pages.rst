@@ -4,7 +4,7 @@ Actions on Layout Pages
 
 Layout pages are not hard-coded or anyhow limited. You can have as many layout pages as you need. However, the default set of layout pages is generally enough.
 
-When you need to perform an action on layout pages, go to the **Design > Layouts** section of your Administration panel.
+When you need to perform an action on layout pages, go to the **Design → Layouts** section of your Administration panel.
 
 General actions
 ***************
@@ -20,7 +20,7 @@ To add a layout page:
     :align: center
     :alt: Add layout page
 
-*	A popup window with layout page properties opens. Specify the new `layout page properties <http://www.cs-cart.com/documentation/reference_guide/index.htmld?location_attributes.htm>`_ and click the **Create** button.
+*	A popup window with layout page properties opens. Specify the new `layout page properties <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/layout_pages/layout_page_attributes.html>`_ and click the **Create** button.
 
 Removing a layout page
 ----------------------
@@ -44,7 +44,7 @@ To remove a layout page:
 Editing layout page properties
 ------------------------------
 
-To change a layout page properties, select the layout page and click the gear icon on the tab. A special form with the layout page attributes opens. Edit the `layout page properties <http://www.cs-cart.com/documentation/reference_guide/index.htmld?location_attributes.htm>`_ and click **Save** to apply changes.
+To change a layout page properties, select the layout page and click the gear icon on the tab. A special form with the layout page attributes opens. Edit the `layout page properties <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/layout_pages/layout_page_attributes.html>`_ and click **Save** to apply changes.
 
 Exporting/importing layout pages
 ********************************

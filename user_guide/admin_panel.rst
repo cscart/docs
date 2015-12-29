@@ -27,7 +27,7 @@ For example, let's log in to the admin panel of the CS-Cart Online Demo (`demo.c
     :alt: The URL of the admin panel in CS-Cart Onlide Demo.
 
 
-Enter the administrator’s **email** and **password** that you used during CS-Cart installation. In CS-Cart Online Demo the email and password are already there for you, so all you have to do is press the **Sign in** button.
+Enter the administrator’s **email** and **password** that you used during CS-Cart installation. In CS-Cart Online Demo the email and password are already there for you, so all you have to do is click the **Sign in** button.
 
 .. image:: img/intro/login.png
     :align: center

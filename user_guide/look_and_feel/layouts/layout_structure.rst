@@ -4,7 +4,7 @@ Layout Structure
 
 A layout is the combination of blocks and the method of their arrangement.
 
-In the **Design > Layouts** section you can add a new layout with the **+** button or edit the existing one.
+In the **Design → Layouts** section you can add a new layout with the **+** button or edit the existing one.
 
 When editing or adding a layout, define the following attributes:
 

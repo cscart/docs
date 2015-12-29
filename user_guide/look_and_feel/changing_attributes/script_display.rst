@@ -12,7 +12,7 @@ For example, here a map appears at the very bottom of a page:
 
 To solve this problem, do the following:
 
-*   In the Administration panel of your store, open the page editing section. **Website > Content > Free returns** in our example.
+*   In the Administration panel of your store, open the page editing section. **Website → Content → Free returns** in our example.
 *   In the **Description** field switch to **HTML** (**<>** icon).
 *   Add your script to desired part of the code, adding the ``data-no-defer`` parameter to it.
 

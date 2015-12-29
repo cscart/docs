@@ -4,7 +4,7 @@ Featured Products
 
 To create the **Featured products** section (if you do not have one) on the Homepage:
 
-*   In the Administration panel, go to **Design > Layouts > Homepage**.
+*   In the Administration panel, go to **Design → Layouts → Homepage**.
 *   Click the **+** button in the necessary container and click **Add block**.
 *   Open the **Create New Block** tab and in the opened section click the **Products** button.
 *   In the opened section specify the name of the new block (e.g. *Featured products*) and select *Grid* in the **Template** select box. Click the **Create** button.
@@ -23,7 +23,7 @@ To create the **Featured products** section (if you do not have one) on the Home
 
 To change the existing set of products or add new ones to the **Featured products** section on the Homepage:
 
-*   Go to **Design > Layouts > Homepage**.
+*   Go to **Design → Layouts → Homepage**.
 *   In the **Featured products** block open the **Content** tab and click **Add product**.
     In the opened window add the necessary products and click the **Add products** button.
 

@@ -4,7 +4,7 @@ How To: Edit Meta Tags
 
 To change the standard CS-Cart Meta tags:
 
-*   In the Administration panel, go to **Design > Layouts**.
+*   In the Administration panel, go to **Design → Layouts**.
 *   Click the gear icon on the **Default** tab.
 
 .. image:: img/title_01.png

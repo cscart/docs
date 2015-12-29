@@ -32,4 +32,4 @@ In this case, the image file name should be **free_shipping_label.png**. Upload 
 
 .. note ::
 
-    If the applied changes are not displayed, try clearing the template cache. To do it, in the Administration panel of your store, go to **Administration > Storage > Clear cache**.
+    If the applied changes are not displayed, try clearing the template cache. To do it, in the Administration panel of your store, go to **Administration → Storage → Clear cache**.

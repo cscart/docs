@@ -6,7 +6,7 @@ By default the thumbnails for products are created automatically from the detail
 
 In order to upload the thumbnails manually:
 
-*   In the Administration panel, go to **Products > Products**.
+*   In the Administration panel, go to **Products → Products**.
 *   Select the product, for which you want to add a thumbnail and click on its name.
 *   In the **General** tab next to the image of the product click the **upload them manually** link.
 
@@ -24,7 +24,7 @@ In order to upload the thumbnails manually:
 
 In order to change the thumbnail size and appearance settings:
 
-*   Go to **Settings > Thumbnails**.
+*   Go to **Settings → Thumbnails**.
 *   Change the settings.
 *   Click the **Save** button.
 
@@ -34,7 +34,7 @@ In order to change the thumbnail size and appearance settings:
 
 .. note ::
 
-	After changing these settings you will need to clean up the thumbnail cache in order to re-generate the automatically created thumbnails. To do it, go to **Administration > Storage > Clean up generated thumbnails**.
+	After changing these settings you will need to clean up the thumbnail cache in order to re-generate the automatically created thumbnails. To do it, go to **Administration → Storage → Clean up generated thumbnails**.
 
 .. note ::
 

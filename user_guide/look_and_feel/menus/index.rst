@@ -2,7 +2,7 @@
 Menus
 *****
 
-Use this section to create custom storefront menus. Each menu can be added to the storefront in **Design > Layouts** through a block of the *Menu* type.
+Use this section to create custom storefront menus. Each menu can be added to the storefront in **Design → Layouts** through a block of the *Menu* type.
 
 .. image:: img/menus.png
     :align: center

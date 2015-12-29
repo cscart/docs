@@ -4,7 +4,7 @@ How To: Replace CS-Cart Favicon
 
 To replace CS-Cart favicon:
 
-*   In the Administration panel, go to **Design > Themes**.
+*   In the Administration panel, go to **Design → Themes**.
 *   In the currently used theme click the **Visual Editor** button.
 *   In the **Theme editor** panel on the left find the **Favicon** line and click the **Browse** button.
 

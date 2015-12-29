@@ -70,14 +70,14 @@ Layout intended for the content appearing in the center of the page.
 Copyright information
 *********************
 
-Copyright information that you have specified in **Settings > Company**.
+Copyright information that you have specified in **Settings → Company**.
 
 .. _currencies:
 
 Currencies
 **********
 
-A list of supported currencies defined in **Administration > Currencies**. Appearance options should be configured in the block settings.
+A list of supported currencies defined in **Administration → Currencies**. Appearance options should be configured in the block settings.
 
 .. _dropdown_horizontal:
 
@@ -172,7 +172,7 @@ Regular RSS feed icon to the store RSS feed.
 Languages
 *********
 
-List of storefront languages defined in **Administration > Languages**.
+List of storefront languages defined in **Administration → Languages**.
 
 .. _links_thumb:
 
@@ -295,7 +295,7 @@ Profile details of a customer who has logged in. These include login credentials
 Quick links
 ***********
 
-Active quick links defined in **Design > Menus**.
+Active quick links defined in **Design → Menus**.
 
 .. _scroller:
 
@@ -365,14 +365,14 @@ Product thumbnail with a text link to the product page.
 Store locator
 *************
 
-Location of your store on Google's map as specified in **Add-ons > Store locator**.
+Location of your store on Google's map as specified in **Add-ons → Store locator**.
 
 .. _store_logo:
 
 Store logo
 **********
 
-Storefront logo as specified in the **Visual Editor** in **Design > Themes**.
+Storefront logo as specified in the **Visual Editor** in **Design → Themes**.
 
 .. _summary:
 
@@ -386,14 +386,14 @@ Template to display the order summary on the checkout page.
 Tag cloud
 *********
 
-List of tags that the store administrator created in **Website > Tags**.
+List of tags that the store administrator created in **Website → Tags**.
 
 .. _testimonials:
 
 Testimonials
 ************
 
-List of testimonials submitted by the customers. To manage testimonials, use the **Website > Testimonials** section.
+List of testimonials submitted by the customers. To manage testimonials, use the **Website → Testimonials** section.
 
 .. _text_links:
 

@@ -226,7 +226,7 @@ you should use:
 
 .. code-block:: none
 
-	$user[BILLING_ADDRESS_PREFIX . 'address']
+	$user[BILLING_ADDRESS_PREFIX . '_address']
 
 Now it is little bit bulky but allows not use the ``b_`` and ``s_`` prefixes.
 

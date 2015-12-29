@@ -2,7 +2,7 @@
 Actions on Tabs
 ***************
 
-You can perform the following actions on product tabs in the **Design > Product tabs** section of the Administration panel:
+You can perform the following actions on product tabs in the **Design → Product tabs** section of the Administration panel:
 
 Change product tab names
 ************************

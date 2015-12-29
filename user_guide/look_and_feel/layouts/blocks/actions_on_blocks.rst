@@ -4,7 +4,7 @@ Actions on Blocks
 
 You can re-arrange blocks in the frame, add and remove blocks, edit block properties, activate and disable blocks, assign blocks to specific items/pages.
 
-When you need to perform an action on the blocks, go to **Design > Layouts** and select the layout page where the necessary block appears or should appear.
+When you need to perform an action on the blocks, go to **Design → Layouts** and select the layout page where the necessary block appears or should appear.
 
 .. note::
 
@@ -47,7 +47,7 @@ The block will appear among the other objects in the frame. Also, it will be add
 
 .. note::
 
-	Block types and properties are described in `this <http://www.cs-cart.com/documentation/reference_guide/index.htmld?design_blocks_block_attributes.htm>`_ topic.
+	Block types and properties are described in :doc:`this <../blocks/block_types_properties>` topic.
 
 Editing blocks
 **************
@@ -60,7 +60,7 @@ To edit a block:
 
 .. note::
 
-	Block types and properties are described in `this <http://www.cs-cart.com/documentation/reference_guide/index.htmld?design_blocks_block_attributes.htm>`_ topic.
+	Block types and properties are described in :doc:`this <../blocks/block_types_properties>` topic.
 
 Deleting blocks
 ***************
