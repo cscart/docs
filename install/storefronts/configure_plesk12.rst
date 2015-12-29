@@ -1,13 +1,13 @@
-**************************************************
-How To: Configure Multiple Storefronts in Plesk 12
-**************************************************
+*********************************************
+How To: Configure Multiple Stores in Plesk 12
+*********************************************
 
 .. note::
     If you want to manage multiple stores, you’ll need to `purchase additional storefront licenses <http://www.cs-cart.com/cs-cart-storefront-license.html>`_ or specify the desired number of storefronts when you `buy a CS-Cart license <http://www.cs-cart.com/cs-cart-license.html>`_.
 
-======================================
-Way 1. Deploying CS-Cart on Subdomains
-======================================
+===================================
+Way 1. Deploy CS-Cart on Subdomains
+===================================
 
 Let's set up a store with 3 storefronts:
 
@@ -59,9 +59,9 @@ Step 2. Configure Subdomains
     :align: center
     :alt: The Websites and Domains tab has the list of your existing subdomains.
 
--------------------------
-Step 3. Configure CS-Cart
--------------------------
+--------------------------
+Step 3. Create Stroefronts
+--------------------------
 
 1. Open the CS-Cart administration panel. In our case that will be *http://example.com/store/admin.php*.
 
@@ -99,11 +99,11 @@ Step 4. Testing
 
 Go to any of the created subdomains, for instance, *computers.example.com*.
 
-If everything has been done properly, you should see the storefront, which has *computers.example.com* defined as its **Storefront URL**.
+You should see the storefront, which has *computers.example.com* defined as its **Storefront URL**.
 
-=============================================
-Way 2. Deploying CS-Cart on Different Domains
-=============================================
+==========================================
+Way 2. Deploy CS-Cart on Different Domains
+==========================================
 
 Setting up your storefronts on different domain names is almost the same as for subdomains.
 
@@ -121,9 +121,9 @@ We assume that you already have a regisered domain name, like *example.com*.
 
 You need to install CS-Cart in the */httpdocs* directory, which is the Document Root of *example.com*.
 
------------------------
-Step 2. Binding Domains
------------------------
+--------------------
+Step 2. Bind Domains
+--------------------
 
 If you already have the additional registered domains, they should be bound to your existing account. In this guide we will bind the *example-store.com* domain to *example.com*.
 
@@ -167,14 +167,14 @@ So, the *example-store.com* domain name is bound and points to the files of the 
     :align: center
     :alt: Your newly bound domain should now be on the domain list.
 
--------------------------
-Step 2. Configure CS-Cart
--------------------------
+--------------------------
+Step 3. Create Stroefronts
+--------------------------
 
 Create 2 storefronts with **Storefront URLs** set to *example.com* and *example-store.com* as described in **Way 1**, **Step 3** of this article.
 
 ---------------
-Step 3. Testing
+Step 4. Testing
 ---------------
 
 Go to your second domain (*example-store.com*). You should see the storefront, which has that domain as its **Storefront URL**.

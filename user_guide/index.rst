@@ -15,4 +15,5 @@ User Guide
     addons/index
     users/index
     orders/index
+    stores/index
     database/index
