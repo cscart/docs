@@ -1,6 +1,6 @@
-*********************************************
-How To: Configure Multiple Stores in Plesk 12
-*********************************************
+**************************************************
+How To: Configure Multiple Storefronts in Plesk 12
+**************************************************
 
 .. note::
     If you want to manage multiple stores, you’ll need to `purchase additional storefront licenses <http://www.cs-cart.com/cs-cart-storefront-license.html>`_ or specify the desired number of storefronts when you `buy a CS-Cart license <http://www.cs-cart.com/cs-cart-license.html>`_.
