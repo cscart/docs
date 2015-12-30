@@ -2,7 +2,7 @@
 How To: Add a Product Filter
 ****************************
 
-*   In the Administration panel, go to **Products > Filters**.
+*   In the Administration panel, go to **Products → Filters**.
 *   Click the **+** button on the right and specify the following fields in the opened **New filter** window:
 
     *   **Name** - enter a filter name.
@@ -31,7 +31,7 @@ How To: Add a Product Filter
 
 To display the **Product filter** block in the storefront:
 
-*   Go to **Design > Layouts > Default**.
+*   Go to **Design → Layouts → Default**.
 *   Click the **+** button in the necessary location and click **Add block**.
 *   Open the **Create New Block** tab and in the opened section click the **Product filters** button.
 *   Enter the block name (e.g. *Product filter*) in the **General** tab.
@@ -43,4 +43,3 @@ To display the **Product filter** block in the storefront:
     :alt: Product filters block
 
 *   Click the **Create** button.
-

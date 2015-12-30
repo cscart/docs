@@ -6,7 +6,7 @@ If most of your products have the same product option, you can define this optio
 
 To set global product options:
 
-*   In the Administration panel, go to **Products > Options**.
+*   In the Administration panel, go to **Products → Options**.
 *   On the opened page, click the **+** button and complete the following fields:
 
     *   **Name** - Name of the product option as it appears on the storefront.
@@ -35,7 +35,7 @@ To set global product options:
 
 To set a global product option for an individual product:
 
-*   In the Administration panel, go to **Products > Products**.
+*   In the Administration panel, go to **Products → Products**.
 *   Open any product details page and open the **Options** tab.
 *   Click the **Add global option** button, select the necessary global option in the **Global options** select box and click **Apply**.
 

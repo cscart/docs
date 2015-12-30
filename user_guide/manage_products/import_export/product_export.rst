@@ -4,7 +4,7 @@ Product Export
 
 To export product data:
 
-*   In the Administration panel, go to **Administration > Export data > Products**.
+*   In the Administration panel, go to **Administration → Export data → Products**.
 *   Leave the necessary fields in the **Exported fields** option and move the others to the **Available fields** box.
 
 .. image:: img/export_01.png

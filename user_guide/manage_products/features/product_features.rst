@@ -4,7 +4,7 @@ How To: Set up Product Features
 
 To set up product features:
 
-*   In the Administration panel, go to **Products > Features**.
+*   In the Administration panel, go to **Products → Features**.
 *   Add features or groups of features that will be used for your products.
 
     *   **In order to add a group**, click the **+** button on the right, choose **Add group** from the drop-down menu, and specify the following fields in the opened **New group** window:
@@ -52,7 +52,7 @@ To set up product features:
         :align: center
         :alt: Feature attributes
 
-*   Go to **Products > Products** and click on the desired product link.
+*   Go to **Products → Products** and click on the desired product link.
 *   Open the **Features** tab.
 *   Select the necessary feature variant(s) in the features list and click the **Save** button.
 

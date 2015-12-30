@@ -48,7 +48,7 @@ A CSV file can contain the following fields:
 
 	EXAMPLE: *50*
 
-**Weight**. Weight of the product in units of weight defined by the weight symbol in the **Settings > General** page in the CS-Cart Administration panel. By default, it is *lbs*. The weight must be an integral number or a decimal fraction with no more than two decimal places.
+**Weight**. Weight of the product in units of weight defined by the weight symbol in the **Settings → General** page in the CS-Cart Administration panel. By default, it is *lbs*. The weight must be an integral number or a decimal fraction with no more than two decimal places.
 
 .. important::
 

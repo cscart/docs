@@ -4,13 +4,9 @@ How To: Set Product Options
 
 To set product options:
 
-*   In the Administration panel, go to **Products > Products**.
+*   In the Administration panel, go to **Products → Products**.
 *   Open any product details page and then open the **Options** tab.
 *   On the opened page, click the **Add option** button and complete the form under the **General** tab:
-
-	.. image:: img/options.png
-		:align: center
-		:alt: New option
 
     *   **Name** - Name of the product option as it appears on the storefront.
     *   **Position** – Position of the product option relatively to the position of the other options in the list.
@@ -21,7 +17,7 @@ To set product options:
         *   If the option type is *Text*, *Text area* or *File*, please refer to this :doc:`article <../options/option_settings>` in order to learn more about its settings.
         *   If the option type is *Select box* or *Radio group*, open the **Variants** section in the same window. Complete the **Name** input field (e.g. *Green*). In the **Modifier** input field, set the amount that will be added to the product price if this option is selected (e.g. *+2*). Leave it empty if the price will not change. To add more variants, click the **+** icon.
 
-	.. image:: img/options1.png
+	.. image:: img/global_options_02.png
 	    :align: center
 	    :alt: The Variants tab
 

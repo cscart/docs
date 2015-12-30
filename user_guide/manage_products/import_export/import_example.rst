@@ -14,7 +14,7 @@ Example of Product Import
 
 	You are able to view or edit a CSV file in a spreadsheet application, for example Microsoft Office Excel.
 
-*	In the Administration panel, go to **Administration > Import data > Products**.
+*	In the Administration panel, go to **Administration → Import data → Products**.
 
 *	If you use CS-Cart, choose the desired **Store** from the drop-down menu in the left part of the upper panel, if you use Multi-Vendor, choose the desired **Vendor** from the menu in the same part of the page:
 
@@ -40,5 +40,5 @@ Example of Product Import
     :align: center
     :alt: Import Notice
 
-After that the *Adobe Acrobat 7.0 Classroom in a Book (Classroom in a Book)* and the *Adidas Women's Daroga Mesh Casual Shoe* products will be imported into your store under the *Books/Computer & Internet* and *Shoes* categories respectively. Please check them in section **Products > Products**.
+After that the *Adobe Acrobat 7.0 Classroom in a Book (Classroom in a Book)* and the *Adidas Women's Daroga Mesh Casual Shoe* products will be imported into your store under the *Books/Computer & Internet* and *Shoes* categories respectively. Please check them in section **Products → Products**.
 

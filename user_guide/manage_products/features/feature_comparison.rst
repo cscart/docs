@@ -4,7 +4,7 @@ How To: Make two products comparable
 
 To make two products comparable:
 
-*   In the Administration panel, go to **Products > Products**.
+*   In the Administration panel, go to **Products → Products**.
 *   Click on the necessary product to open its details page.
 *   On the opened page, select the **Feature comparison** check box and click the **Save** button.
 *   Repeat the same steps for the second product.
@@ -21,7 +21,7 @@ After that a customer will be able to compare these products by adding them to t
 
 To enable **Feature comparison** for several products at once:
 
-*   Go to **Products > Products**.
+*   Go to **Products → Products**.
 *   Select all products by selecting the left top check box.
 *   Click the gear button in the right corner of the page and select **Edit selected**.
 

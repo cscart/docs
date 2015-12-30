@@ -2,7 +2,7 @@
 How To: Add Images to Product Option Combinations
 *************************************************
 
-*	In the Administration panel, go to **Products > Products**.
+*	In the Administration panel, go to **Products → Products**.
 *	Open the necessary product details page.
 *	Set the **Inventory** setting to *Track with options* and click the **Save** button.
 *	Open the **Options** tab and click the **Option combinations** button.

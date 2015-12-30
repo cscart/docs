@@ -2,7 +2,7 @@
 How To: Display Same Product under Several Categories
 *****************************************************
 
-*	In the Administration panel, go to **Products > Products**.
+*	In the Administration panel, go to **Products → Products**.
 *	Click the link corresponding to the necessary product.
 *	On the product editing page, click the **Add categories** button.
 *	In the opened window, select the necessary categories and click the **Add Categories and close** button.

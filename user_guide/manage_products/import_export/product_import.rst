@@ -4,7 +4,7 @@ Product Import
 
 To import the products to the store:
 
-*   In the Administration panel, go to **Administration > Import data > Products**.
+*   In the Administration panel, go to **Administration → Import data → Products**.
 *   Make sure the fields in your CSV file have the same names as the ones listed under the **Products** section on this page. Also check whether the values of the fields have the correct format. For more information about the correct format read the :doc:`Imported fields format <../import_export/fields_format>` article.
 
 .. image:: img/import_01.png
