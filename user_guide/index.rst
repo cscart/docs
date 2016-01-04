@@ -17,3 +17,4 @@ User Guide
     orders/index
     stores/index
     database/index
+    settings/index
