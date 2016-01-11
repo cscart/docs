@@ -2,7 +2,7 @@
 How To: Apply Discount to Specific User Groups
 **********************************************
 
-*   In the Administration panel, go to **Marketing > Promotions**.
+*   In the Administration panel, go to **Marketing → Promotions**.
 *   Click the **+** button on the right and choose **Add catalog promotion**.
 *   On the opened page complete the information under the **General** section.
 

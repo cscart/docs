@@ -4,7 +4,7 @@ How To: Apply Same Value to All Products
 
 To apply the same value to all products at once:
 
-*   In the Administration panel, go to **Products > Products**.
+*   In the Administration panel, go to **Products → Products**.
 *   Select all products by selecting the left top check box.
 *   Click the gear button in the right corner of the page and select **Edit selected**.
 

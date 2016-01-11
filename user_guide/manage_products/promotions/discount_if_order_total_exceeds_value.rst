@@ -4,7 +4,7 @@ How To: Create a Discount on Order if Order Subtotal Exceeds Certain Value
 
 To apply a discount to an order if order total exceeds some certain value:
 
-*   In the Administration panel, go to **Marketing > Promotions**.
+*   In the Administration panel, go to **Marketing → Promotions**.
 *   Click the **+** button on the right and choose **Add cart promotion**.
 *   On the opened page, complete the information under the **General** section.
 

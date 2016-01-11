@@ -4,7 +4,7 @@ How To: Set up a Minimum Order Quantity for a Product
 
 To set up a minimum order quantity for a product:
 
-*	In the Administration panel, go to **Products > Products**.
+*	In the Administration panel, go to **Products → Products**.
 *	Click on the name of the desired product.
 *	Enter the desired number in the **Minimum order quantity** input field.
 

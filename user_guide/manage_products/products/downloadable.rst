@@ -4,13 +4,13 @@ How To: Create Downloadable Products
 
 To create a downloadable product:
 
-*	In the administration panel, go to **Products > Products**.
+*	In the administration panel, go to **Products → Products**.
 *	Click on a product name in the list or add a new product by clicking the **+** button.
 *	Select the **Downloadable** check box in the **Extra** section.
 
 .. important::
 
-    This check box appears when the **Enable selling downloadable products** option is activated in the **Settings > General** section.
+    This check box appears when the **Enable selling downloadable products** option is activated in the **Settings → General** section.
 
 *	Select the **Enable shipping for downloadable products** check box if the product has a tangible component and it is required to display a shipping method.
 *	Select the **Time-unlimited download** check box if you would like to make the product download period time-unlimited.

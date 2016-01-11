@@ -4,7 +4,7 @@ How To: Make a Free Product If Order Total Exceeds Some Value
 
 To make a free product if order subtotal exceeds some value:
 
-*   In the Administration panel, go to **Marketing > Promotions**.
+*   In the Administration panel, go to **Marketing → Promotions**.
 *   Click the **+** button on the right and choose **Add cart promotion**.
 *   Fill information in the **General** section.
 *   Open the **Conditions** tab and click the **Add condition** button.

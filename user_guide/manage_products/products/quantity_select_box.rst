@@ -2,7 +2,7 @@
 How To: Display the Quantity Box as a Selectbox With Quantity Variants
 **********************************************************************
 
-*   In the Administration panel, go to **Products > Products**.
+*   In the Administration panel, go to **Products → Products**.
 *   Click on the name of the desired product.
 *   Set up a step of product quantity in the **Quantity step** input field.
 

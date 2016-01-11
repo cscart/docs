@@ -2,7 +2,7 @@
 How To: Set up a Promotion
 **************************
 
-*   In the Administration panel, go to **Marketing > Promotions**.
+*   In the Administration panel, go to **Marketing → Promotions**.
 *   Click the **+** button on the right and choose **Add cart promotion** or **Add catalog promotion**.
 
 .. note::
@@ -24,7 +24,7 @@ How To: Set up a Promotion
 
 .. important::
 
-	If you select several conditions, you should select the condition rules for them. In the **Group** option at the top select *All* or *Any* in the first select box and *True* or *False* in the second select box.
+	If you select several conditions, you should select the condition rules for them. In the option at the top select *All* or *Any* in the first select box and *True* or *False* in the second select box.
 
 .. image:: img/promotions_02.png
     :align: center

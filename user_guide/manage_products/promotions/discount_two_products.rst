@@ -2,14 +2,14 @@
 How To: Create a Discount on Order When Buying Two Special Products Together
 ****************************************************************************
 
-*	In the Administration panel, go to **Marketing > Promotions**.
+*	In the Administration panel, go to **Marketing → Promotions**.
 *	Click the **+** button on the right and choose **Add cart promotion**.
 *	Fill information in the **General** section.
 *	Open the **Conditions** tab and click the **Add condition** button.
 *	Select **Products** in the opened select box, then select **in** in the opened select box.
 *	Click the **Add products** button, find and select the *product1* product in the opened window, click the **Add products and close** button.
-*	Repeat actions listed in points 4-6 for the *product2* product.
-*	In the **Group** option at the top select *All* in the first select box and *True* in the second select box.
+*	Repeat these actions for the *product2* product.
+*	Select *All* in the first select box at the top of the list and *True* in the second select box.
 
 .. image:: img/two_products.png
     :align: center
