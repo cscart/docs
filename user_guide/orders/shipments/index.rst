@@ -6,17 +6,21 @@ CS-Cart and Multi-Vendor allow you to ship items from a single order in multiple
 
 For example, if a customer orders several items that are out of stock, you can ship the in-stock items once the order has been placed, and send the remaining items at a later date as a separate shipment.
 
-=======================
-How to Enable Shipments
-=======================
+Depending on whether you allow multiple shipments for one order, the **Shipping Information** section of an order page will look different.
 
-Without shipments enabled, you can specify only one tracking number and shipping service per order.
+.. image:: img/shipments_comparison.png
+    :align: center
+    :alt: If you allow multiple shipments for a single order, the New Shipment button will appear on order pages.
 
-To enable shipments, go to **Settings → General** and tick the **Allow multiple shipments for a single order** checkbox. Remember to save your changes with the **Save** button.
+==========================================
+How to Enable Multiple Shipments per Order
+==========================================
+
+To enable multiple shipments per order, go to **Settings → General** and tick the **Allow multiple shipments for a single order** checkbox. Remember to save your changes with the **Save** button.
 
 .. note::
 
-    If you create shipments for some orders and later disable the **Allow multiple shipments for a single order** setting, you will be able to view and delete the created shipments, but you won't be able to create new shipments.
+    If you create multiple shipments for some orders and later disable the **Allow multiple shipments for a single order** setting, you will be able to view and delete the created shipments, but you won't be able to create additional shipments for those orders.
 
 .. image:: img/allow_multiple_shipments.png
     :align: center
@@ -30,7 +34,7 @@ Once the checkbox is ticked, you will be able to :doc:`create shipments <create_
 
 .. note::
 
-    If you disable the **Allow multiple shipments for a single order** setting, the **Orders → Shipments** section won't appear on the menu. You'll find the existing shipments on the pages of associated orders under **Orders → View orders**.
+    If you disable the **Allow multiple shipments for a single order** setting, then the **Orders → Shipments** section won't appear on the menu. You'll find the existing shipments in the **Shipping Information** section of the associated orders under **Orders → View orders → <Desired Order>**.
 
 ===============
 In this section
