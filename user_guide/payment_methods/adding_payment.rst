@@ -4,7 +4,7 @@ How To: Add a Payment Method
 
 To add a payment method:
 
-*	In the Administration panel, go to **Administration > Payment Methods**.
+*	In the Administration panel, go to **Administration → Payment Methods**.
 	A list of the available payment methods is displayed.
 *	Click the **+** button.
 	This opens a form for creating a payment method.
