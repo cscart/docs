@@ -2,7 +2,7 @@
 How To: Set up CS-Cart With Swiss Post
 **************************************
 
-*   In the Administration panel, go to **Administration > Shipping & Taxes > Shipping methods**.
+*   In the Administration panel, go to **Administration → Shipping & Taxes → Shipping methods**.
 *   Create a shipping method or choose the existent one.
 *   Click on the name of a shipping method to modify it.
 *   Select *Realtime* in the **Rate calculation** field, select *SwissPost* in the **Carrier** field, and *Swiss Post International PostPac PRIORITY* in the **Shipping service** field.

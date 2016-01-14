@@ -2,7 +2,7 @@
 How To: Set up a Free Shipping Method
 *************************************
 
-*	In the Administration panel, go to **Administration > Shipping & Taxes > Shipping methods**.
+*	In the Administration panel, go to **Administration → Shipping & Taxes → Shipping methods**.
 *	Add a new shipping method or choose the existing one.
 
 .. important::

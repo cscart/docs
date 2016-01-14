@@ -2,7 +2,7 @@
 Access Restrictions Add-on Settings
 ***********************************
 
-You can manage the following settings in the **Add-ons > Manage add-ons** section of the administration panel. Choose the **Access restrictions** add-on in the **Installed add-ons** tab and click the gear button near its status. Choose **Settings** from the drop-down list.
+You can manage the following settings in the **Add-ons → Manage add-ons** section of the administration panel. Choose the **Access restrictions** add-on in the **Installed add-ons** tab and click the gear button near its status. Choose **Settings** from the drop-down list.
 
 .. note ::
 
@@ -13,7 +13,7 @@ Administrator area settings
 
 The following parameters define access rules to the administration panel.
 
-*	**Allow Login to the admin area from specified IPs only** - If selected, the administration panel can be accessed from a limited range of IP-addresses defined in the **Add-ons > Access restrictions** section.
+*	**Allow Login to the admin area from specified IPs only** - If selected, the administration panel can be accessed from a limited range of IP-addresses defined in the **Add-ons → Access restrictions** section.
 
 .. important::
 
@@ -24,7 +24,7 @@ The following parameters define access rules to the administration panel.
 *	**Time between unsuccessful login attempts** - Number of seconds to include the series of failed login attempts after which the system blocks the IP-address.
 *	**Time for which the IP should be blocked** - Number of hours before the system unlocks a blocked IP-address.
 
-When an administrator's IP is blocked, it appears among banned IP addresses in **Add-ons > Access restrictions** in the **Administration panel** tab having the *Active* status. Changing the status to *Disabled* unlocks the IP-address after the locking period is over.
+When an administrator's IP is blocked, it appears among banned IP addresses in **Add-ons → Access restrictions** in the **Administration panel** tab having the *Active* status. Changing the status to *Disabled* unlocks the IP-address after the locking period is over.
 
 Customer area settings
 **********************

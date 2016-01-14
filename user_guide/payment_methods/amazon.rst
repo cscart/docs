@@ -2,7 +2,7 @@
 How To: Set up CS-Cart with Amazon Checkout
 *******************************************
 
-*	In the Administration panel, go to **Administration > Payment methods**.
+*	In the Administration panel, go to **Administration → Payment methods**.
 *	Click the **+** button on the right.
 *	In the opened window:
 
@@ -20,7 +20,7 @@ How To: Set up CS-Cart with Amazon Checkout
 
 .. note::
 
-	Please set the **Merchant URL** parameter at **Seller central** (**Seller central > Settings > Checkout Pipeline Settings**) to *https://www.your_domain.com/payments/amazon/amazon_callback.php*, where *www.your_domain.com* is the address of your store.
+	Please set the **Merchant URL** parameter at **Seller central** (**Seller central → Settings → Checkout Pipeline Settings**) to *https://www.your_domain.com/payments/amazon/amazon_callback.php*, where *www.your_domain.com* is the address of your store.
 
 *	Fill in the following fields:
 

@@ -2,7 +2,7 @@
 How To: Set Free Shipping for an Order Which Total is More Than Some Value
 **************************************************************************
 
-*   In the Administration panel, open **Administration > Shipping & Taxes > Shipping methods**.
+*   In the Administration panel, open **Administration → Shipping & Taxes → Shipping methods**.
 *   Choose the shipping method on this page and click on the name of this shipping method.
 *   On the details page of this shipping method open the **Shipping charges** tab.
 *   Choose the location in the **Show rates for location** box for which free shipping will be defined.

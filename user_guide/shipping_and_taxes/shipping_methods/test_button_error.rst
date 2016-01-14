@@ -4,7 +4,7 @@ Error When Clicking the Test Button
 
 *   The **Test** button works only for **real-time** shipping methods.
 *   Make sure that the addresses are entered on the **Company** and **General** pages properly and they are different.
-*   The address set up on the **Company** page (in the Administration panel, go to **Settings > Company**) is used as the address from which the products will be delivered. The address set up on the **General** page (in the Administration panel, go to **Settings > General**) is the address of delivery.
+*   The address set up on the **Company** page (in the Administration panel, go to **Settings → Company**) is used as the address from which the products will be delivered. The address set up on the **General** page (in the Administration panel, go to **Settings → General**) is the address of delivery.
 
 .. note::
 

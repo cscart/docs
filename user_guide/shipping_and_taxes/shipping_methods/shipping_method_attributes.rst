@@ -17,7 +17,7 @@ General
 
 .. note::
 
-	Remember that the icon appears on the storefront in a special block with the content type **Shipping methods**. Make sure to create such a block in **Design > Layouts**.
+	Remember that the icon appears on the storefront in a special block with the content type **Shipping methods**. Make sure to create such a block in **Design → Layouts**.
 
 *	**Delivery time** - Time until the order is delivered. This info is displayed on the storefront so that customers could decide if the delivery time meets their requirements.
 *	**Weight limit** - Minimum and maximum weight of the order to be delivered through this method.
@@ -25,14 +25,14 @@ General
 
 	Table-based, or manual, calculation is based on the custom charges and rates that you define in the Shipping charges tab.
 
-	Real-time calculation is based on the rates that your store receives from the carrier who will deliver the order. The rates are received in the real-time mode at the moment the order is being placed. In order to use the carrier-dependent estimation, you need to enable the support for the particular service provider in **Administration > Shipping and taxes > Shipping methods**.
+	Real-time calculation is based on the rates that your store receives from the carrier who will deliver the order. The rates are received in the real-time mode at the moment the order is being placed. In order to use the carrier-dependent estimation, you need to enable the support for the particular service provider in **Administration → Shipping and taxes → Shipping methods**.
 
 	Carrier-specific settings are defined in the **Configure** tab.
 
 *	**Shipping service** - Shipping service provider/carrier that will be in charge of delivering the order. This select box is available only if the rate calculation mode is set to Realtime.
-*	**Test** - A special form to test the selected real-time shipping rate estimation service. Test estimation considers the weight that you specify in the form as well as the company (**Settings > Company**) and the default customer address (**Settings > General/Default location**).
+*	**Test** - A special form to test the selected real-time shipping rate estimation service. Test estimation considers the weight that you specify in the form as well as the company (**Settings → Company**) and the default customer address (**Settings → General/Default location**).
 *	**Taxes** - Tax rates that apply to the shipping method.
-*	**User groups** (requires commercial license) - `User groups <http://www.cs-cart.com/documentation/reference_guide/index.htmld?users_user_groups.htm>`_ option whose members can choose to deliver their orders through this shipping method.
+*	**User groups** (requires commercial license) - `User groups <http://docs.cs-cart.com/4.3.x/user_guide/users/user_groups/index.html>`_ option whose members can choose to deliver their orders through this shipping method.
 *	**Status** - Status of the shipping method: *Active* or *Disabled*.
 
 Configure
@@ -46,7 +46,7 @@ Shipping charges
 
 The rates that you define here are used to calculate the shipping cost regardless of whether you use real-time shipping rate estimation or not. If you have chosen to receive rates from a carrier in the real-time mode, the charges from this section will be simply added to the carrier's charge. You can use this to add a shipping markup in order to compensate for your actual expenses if they exceed the values returned by the carrier (e.g., packing, insurance, etc.)
 
-The rates can depend on the product cost, weight or quantity as well as being specific to the customer's location, when table-based rate calculation is used. To adjust the set of available locations, use section **Administration > Shipping & Taxes > Locations**.
+The rates can depend on the product cost, weight or quantity as well as being specific to the customer's location, when table-based rate calculation is used. To adjust the set of available locations, use section **Administration → Shipping & Taxes → Locations**.
 
 .. image:: img/shipping_charges.png
     :align: center
@@ -68,4 +68,4 @@ Pick suppliers for which this shipping method will be available. Choose **None**
 Share
 *****
 
-Stores that share this shipping method. Read `Sharing objects <http://www.cs-cart.com/documentation/reference_guide/index.htmld?store_sharing_options.htm>`_ for more details.
+Stores that share this shipping method. Read `Sharing objects <http://docs.cs-cart.com/4.3.x/user_guide/stores/sharing.html>`_ for more details.

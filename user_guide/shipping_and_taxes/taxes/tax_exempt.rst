@@ -2,7 +2,7 @@
 How To: Make an Account Tax Exempt
 **********************************
 
-*	In the Administration panel, go to **Customers > Customers**.
+*	In the Administration panel, go to **Customers → Customers**.
 *	Select an account which will be tax free.
 *	In the **User account information** section tick the **Tax exempt** check box.
 

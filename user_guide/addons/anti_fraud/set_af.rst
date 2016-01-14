@@ -8,7 +8,7 @@ How To: Set up Anti Fraud Add-on
 
 	CS-Cart is integrated with **minFraud** service that **MaxMind** offers. You are able to read about all features of this service `here <http://www.maxmind.com/app/ccv_overview>`_.
 
-*   In the Administration panel, go to **Add-ons > Manage add-ons**.
+*   In the Administration panel, go to **Add-ons → Manage add-ons**.
 *   Switch to the **Browse all available add-ons** tab and find the **Anti fraud** add-on. Click the **Install** button.
 
 .. note ::

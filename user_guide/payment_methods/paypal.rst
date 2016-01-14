@@ -4,10 +4,10 @@ How To: Set PayPal in CS-Cart
 
 To set PayPal Website Payments Standard account in CS-Cart:
 
-*   In the Administration panel of your store, go to **Add-ons > Manage Add-ons** and make sure that the **PayPal payments** add-on is installed and configured.
+*   In the Administration panel of your store, go to **Add-ons → Manage Add-ons** and make sure that the **PayPal payments** add-on is installed and configured.
 *   Pay attention to the **PayPal order status conversion map** section. Here you can synchronize order status in your administration panel with the corresponding transaction status at PayPal.
 *   Tick the **Override customer info** checkbox, if you want customer profile information in your store to be replaced with the info sent from PayPal.
-*   Go to **Administration > Payment methods**.
+*   Go to **Administration → Payment methods**.
 *   Click the **+** button on the right.
 *   In the opened window:
 
@@ -32,7 +32,7 @@ To set PayPal Website Payments Standard account in CS-Cart:
 
 PayPal account settings:
 
-If you want your customer to automatically return back to store after payment, at PayPal go to the **Profile > My selling tool** page and click the **Update** link near the **Website preferences** option. On the opened page set the **Auto Return** option as *Yes* and fill the **Return URL** input field by the following value:
+If you want your customer to automatically return back to store after payment, at PayPal go to the **Profile → My selling tool** page and click the **Update** link near the **Website preferences** option. On the opened page set the **Auto Return** option as *Yes* and fill the **Return URL** input field by the following value:
 *http://your_domain/index.php?dispatch=payment_notification.return&payment=paypal*
 
 .. important::

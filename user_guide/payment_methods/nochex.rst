@@ -2,7 +2,7 @@
 How To: Set up CS-Cart with Nochex
 **********************************
 
-*   In the Administration panel go to **Administration > Payment methods**.
+*   In the Administration panel go to **Administration → Payment methods**.
 *   Click the **+** button on the right.
 *   In the opened window:
 

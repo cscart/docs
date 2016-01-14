@@ -4,7 +4,7 @@ How To: Set Free Shipping for a Certain Product
 
 To set a free shipping method for a certain product:
 
-*   In the Administration panel, go to **Products > Products**.
+*   In the Administration panel, go to **Products → Products**.
 *   Click on the link corresponding to the necessary product.
 *   Choose the **Shipping properties** tab on the opened page.
 *   Select the check box of the **Free shipping** option.

@@ -4,7 +4,7 @@ How To: Make Shipping Cost Dependent on Order Total
 
 To set a shipping cost depending on order total:
 
-*   In the Administration panel, go to **Administration > Shipping & Taxes > Shipping methods**.
+*   In the Administration panel, go to **Administration → Shipping & Taxes → Shipping methods**.
 *   :doc:`Create a new shipping method <../manual_shipping_methods/set_manual_shipping>` or choose the existing one.
 *   Click on the name of this shipping method. The **Editing shipping method** page will open.
 *   On that page open the **Shipping charges** tab.

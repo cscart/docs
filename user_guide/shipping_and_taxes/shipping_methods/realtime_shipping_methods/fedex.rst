@@ -2,7 +2,7 @@
 How To: Set up CS-Cart with FedEx
 *********************************
 
-*   In the Administration panel, go to **Administration > Shipping & Taxes > Shipping methods**.
+*   In the Administration panel, go to **Administration → Shipping & Taxes → Shipping methods**.
 *   Create a shipping method or choose the existent one.
 *   Click on the name of a shipping method to modify it.
 *   Select *Realtime* in the **Rate calculation** field, select *FedEx* in the **Carrier** field, and *FedEx 2nd day* in the **Shipping service** field.

@@ -2,7 +2,7 @@
 How To: Set One Shipping Cost for the First Item and Another One for Each Additional Item
 *****************************************************************************************
 
-*   In the Administration panel, go to **Administration > Shipping & Taxes > Shipping methods**.
+*   In the Administration panel, go to **Administration → Shipping & Taxes → Shipping methods**.
 *   Create a new shipping method or choose the existing one and click on its name.
 *   On that page open the **Shipping charges** tab.
 *   Select the desired location in the **Show rates for location** box. If you don't see this checkbox, it means that you haven't defined any locations. Learn how to do it `here <http://docs.cs-cart.com/4.3.x/user_guide/shipping_and_taxes/locations/index.html>`_.
@@ -23,7 +23,7 @@ The shipping method is set up. For the mentioned example the shipping cost will 
 
 Also there is an ability to define additional shipping freight for a product which will be added to the calculated shipping cost for each ordered item:
 
-*   Go to **Products > Products**.
+*   Go to **Products → Products**.
 *   Click on the name of a product.
 *   On the **Editing product** page open the **Shipping properties** tab and enter cost (e.g. 2.00) which will be added to the shipping cost for each additional product in the **Shipping freight** input field.
 

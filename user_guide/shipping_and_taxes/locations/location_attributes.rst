@@ -15,7 +15,7 @@ General
 Countries
 *********
 
-The list box on the right contains a list of all available countries, the list box on the left contains a list of countries included in the location. To adjust the list of countries supported in your store, go to **Administration > Shipping & Taxes > Countries**.
+The list box on the right contains a list of all available countries, the list box on the left contains a list of countries included in the location. To adjust the list of countries supported in your store, go to **Administration → Shipping & Taxes → Countries**.
 
 To move items from one list to the other one, use the twin horizontal arrows between the lists. To select multiple items, press and hold the **Ctrl** key.
 
@@ -26,7 +26,7 @@ To move items from one list to the other one, use the twin horizontal arrows bet
 States
 ******
 
-The list box on the right contains a list of all available states, the list box on the left contains a list of states included in the location. To adjust the list of states supported in your store, go to **Administration . Shipping & Taxes > States**.
+The list box on the right contains a list of all available states, the list box on the left contains a list of states included in the location. To adjust the list of states supported in your store, go to **Administration → Shipping & Taxes → States**.
 
 To move items from one list to the other one, use the twin horizontal arrows between the lists. To select multiple items, press and hold the **Ctrl** key.
 

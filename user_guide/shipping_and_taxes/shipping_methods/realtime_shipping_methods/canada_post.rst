@@ -4,7 +4,7 @@ How To: Set up CS-Cart with Canada Post
 
 Follow these steps to set up Canada Post:
 
-*   In the Administration panel, go to **Administration > Shipping & Taxes > Shipping methods**.
+*   In the Administration panel, go to **Administration → Shipping & Taxes → Shipping methods**.
 *   Create a shipping method or choose the existent one.
 *   Click on the name of the shipping method to modify it.
 *   In the **Rate calculation** field select *Realtime*, in the **Carrier** field select *Canada Post*, and in the **Shipping service** field select *Canada Post Regular*.
