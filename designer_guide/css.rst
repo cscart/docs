@@ -106,10 +106,10 @@ The path to a theme *css* directory is *design/themes/THEME_NAME*.
 
 *	The *css/lib* directory - side developers styles. There are the jquery library styles.
 
-*	The *css/typh* directory - supporting styles.
+*	The *css/tygh* directory - supporting styles.
 
-    *	*css/typh/reset.less* - styles reset. `Normalize.css <https://github.com/necolas/normalize.css>`_ is used.
-    *	*css/typh/print.less* - styles for print.
+    *	*css/tygh/reset.less* - styles reset. `Normalize.css <https://github.com/necolas/normalize.css>`_ is used.
+    *	*css/tygh/print.less* - styles for print.
     *	*ss/flags.less* - styles for showing countries flags.
     *	*css/design_mode.less* - styles that are used in templates and translation mode.
     *	*css/theme_editor.less* - styles that are used in Visual Editor.
@@ -121,7 +121,7 @@ Styles that are used for the responsive layout:
 *   *css/responsive-utilities.less* - bootstrap classes that are used to display or hide content for different screen resolutions.
 *   *css/responsive.less* - styles that are used for different screen resolutions.
 
-The main file is *styles.less*. It contains theme styles. Files that are stored in *css/typh* are included in *styles.less* with the ``@import`` operator.
+The main file is *styles.less*. It contains theme styles. Files that are stored in *css/tygh* are included in *styles.less* with the ``@import`` operator.
 
 Style files (css and less) including order
 ******************************************
