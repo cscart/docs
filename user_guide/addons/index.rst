@@ -13,5 +13,5 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     :titlesonly:
     :glob:
 
-    */index
     *
+    */index

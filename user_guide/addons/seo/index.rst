@@ -19,6 +19,7 @@ Such URLs not only help search engines to index store pages, but they also impro
     :titlesonly:
     :glob:
 
+    seo_rules
     seo_functionality
     301_redirects
     canonical

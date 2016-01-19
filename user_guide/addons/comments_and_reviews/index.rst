@@ -15,6 +15,7 @@ This add-on enables you to manage customer feedback and discussions appearing on
     :titlesonly:
     :glob:
 
+    comments_list
     comments_settings
     enable_comments_addon
     post_approval

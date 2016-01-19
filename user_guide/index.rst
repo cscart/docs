@@ -14,7 +14,13 @@ User Guide
     shipping_and_taxes/index
     addons/index
     users/index
+    marketing/index
+    website/index
     orders/index
+    currencies/index
     stores/index
     database/index
+    files/index
+    import_export/index
+    logs/index
     settings/index

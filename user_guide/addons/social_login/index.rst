@@ -23,3 +23,10 @@ To manage the following settings, gp to the **Add-ons > Manage add-ons** section
 .. note ::
 
 	When you activate this add-on, the **Social login** tab appears under the **Website** section where you can add and edit social providers.
+
+.. toctree::
+    :maxdepth: 2
+    :titlesonly:
+    :glob:
+
+    provider_settings
