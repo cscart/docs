@@ -17,3 +17,10 @@ In the left section of the editor there are two tabs:
 * **Public files**—the files stored in the *images/companies* directory of your installation.
 
 To search for particular files or directories, use the search field in the top right corner of the editor.
+
+.. toctree::
+    :maxdepth: 2
+    :titlesonly:
+    :glob:
+
+    *
