@@ -8,6 +8,10 @@ For example, if a customer orders several items that are out of stock, you can s
 
 Depending on whether you allow multiple shipments for one order, the **Shipping Information** section of an order page will look different.
 
+.. note:: 
+
+    **Since version 4.3.6** the tracking numbers of the shipments appear in the **Shipping Information** section. If you specify a carrier, the tracking numbers will show up as links leading to the shipment tracking page at the carrier's website.
+
 .. image:: img/shipments_comparison.png
     :align: center
     :alt: If you allow multiple shipments for a single order, the New Shipment button will appear on order pages.
@@ -17,10 +21,6 @@ How to Enable Multiple Shipments per Order
 ==========================================
 
 To enable multiple shipments per order, go to **Settings → General** and tick the **Allow multiple shipments for a single order** checkbox. Remember to save your changes with the **Save** button.
-
-.. note::
-
-    If you create multiple shipments for some orders and later disable the **Allow multiple shipments for a single order** setting, you will be able to view and delete the created shipments, but you won't be able to create additional shipments for those orders.
 
 .. image:: img/allow_multiple_shipments.png
     :align: center
@@ -34,7 +34,7 @@ Once the checkbox is ticked, you will be able to :doc:`create shipments <create_
 
 .. note::
 
-    If you disable the **Allow multiple shipments for a single order** setting, then the **Orders → Shipments** section won't appear on the menu. You'll find the existing shipments in the **Shipping Information** section of the associated orders under **Orders → View orders → <Desired Order>**.
+    If you disable the **Allow multiple shipments for a single order** setting, then the **Orders → Shipments** section won't appear on the menu. You can view and delete the shipments you created earlier in the **Shipping Information** section of the associated orders under **Orders → View orders → <Desired Order>**.
 
 ===============
 In this section
