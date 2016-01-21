@@ -12,14 +12,17 @@ If you export your products to eBay and later edit them in CS-Cart, those change
 
 .. important::
 
-    If you :doc:`ended the eBay sales <end_ebay_sales>` of some products, you can resume their sales by revising them on eBay.
+    If you :doc:`ended the eBay sales <end_ebay_sales>` of some products or templates, using the **Export/Revise products on eBay** button for those products/templates will `relist them <http://pages.ebay.com/help/sell/relist.html>`_.
 
 ===============================================
 Way 1. Exporting and Revising Specific Products
 ===============================================
-1. In the Administration panel go to **Products → Products**
-2. Tick the checkboxes near the products you want to export or revise
-3. Click the gear button and choose **Export/Revise products on eBay** 
+
+1. In the Administration panel go to **Products → Products**.
+
+2. Tick the checkboxes near the products you want to export or revise.
+
+3. Click the gear button and choose **Export/Revise products on eBay**.
 
 .. hint::
 
@@ -41,11 +44,11 @@ Way 2. Exporting and Revising Entire eBay Templates
 
     This way is available only in **CS-Cart 4.3.5** or in the eBay Synchronization add-on upgrade package for **CS-Cart 4.3.4**.
 
-1. In the administration panel go to **Marketing → eBay → eBay templates**
+1. In the administration panel go to **Marketing → eBay → eBay templates**.
 
-2. Hover over the eBay template you want to export
+2. Hover over the eBay template you want to export.
 
-3. Click the **gear button** and select **Export/Revise products on eBay**
+3. Click the **gear button** and select **Export/Revise products on eBay**.
 
 .. image:: img/export/export_template_to_ebay.png
     :align: center
@@ -61,7 +64,7 @@ Or you can click on the eBay template itself to edit it, and then press the gree
 Export Outcome Pop-Up
 =====================
 
-When you click **Export to eBay**, you’ll see a progress bar running.
+When you click **Export/Revise products on eBay**, you’ll see a progress bar running.
 
 .. image:: img/export/ebay_export_progress.png
     :align: center
