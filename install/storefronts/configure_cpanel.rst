@@ -73,24 +73,9 @@ It's time to configure your hosting account in cPanel. Choose one of the followi
 Way 1. Subdirectory (example.com/store2)
 ----------------------------------------
 
-If CS-Cart is installed on a website (like *example.com*), and its additional storefront should be accessible via a web subdirectory (like *example.com/store2*), follow the instructions below:
+If CS-Cart is installed on a website (like *example.com*), and you want the additional storefront to be accessible via a web subdirectory (like *example.com/store2*), you only need to create that storefront in your CS-Cart administration panel. No other actions are required.
 
-1. Create a subdirectory (e.g. *store2*) in the web root directory on your server (in our case it is */home/account_name/public_html*). You can do it via cPanel File Manager, by FTP, SSH, etc.
-
-2. In the new subdirectory, create a **.htaccess** file with the following content:
-
-::
-
-  <IfModule mod_rewrite.c>
-    RewriteEngine on
-    RewriteRule ^(.*)$ ../$1 [L,QSA,E=DOCUMENT_ROOT:/home/account_name/public_html/store2]
-  </IfModule>
-
-.. note::
-
-    Remember to replace **/home/account_name/public_html/store2** with the appropriate path on your server.
-
-3. Open *http://example.com/store2* in your browser. You should see the appropriate storefront of your CS-Cart installation.
+When you open *http://example.com/store2* in your browser, you should see the appropriate storefront.
 
 -------------------------------------
 Way 2. Subdomain (store2.example.com)
@@ -122,7 +107,7 @@ Way 2. Subdomain (store2.example.com)
     :align: center
     :alt: Now you should see the new subdomain on the list.
 
-5. Open the store URL (*http://store2.example.com* in this example) in your browser. You should see the appropriate storefront of your CS-Cart installation.
+5. Open the store URL (*http://store2.example.com* in this example) in your browser. You should see the appropriate storefront.
 
 ------------------------------------
 Way 3. Different Domain (store2.com)
@@ -174,4 +159,4 @@ Follow the instructions below to set it up:
 
     * the DNS propagation process is not finished yet. It can take up to 48 hours.
 
-6. Open the store URL (*http://store2.com* in this example) in your browser. You should see the appropriate storefront of your CS-Cart installation.
+6. Open the store URL (*http://store2.com* in this example) in your browser. You should see the appropriate storefront.
