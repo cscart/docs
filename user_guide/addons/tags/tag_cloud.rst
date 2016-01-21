@@ -2,7 +2,7 @@
 How To: Add a Tag Cloud
 ***********************
 
-*   In the Administration panel, go to **Add-ons > Manage add-ons**.
+*   In the Administration panel, go to **Add-ons → Manage add-ons**.
 *   Enable the **Tags** add-on (change its status to *Active*).
 *   Click on the name of the add-on.
 *   Select the desired options:
@@ -18,7 +18,7 @@ How To: Add a Tag Cloud
 
 Set up tags for products:
 
-*   Go to **Products > Products** and click on the name of the product for which you want to create tags. 
+*   Go to **Products → Products** and click on the name of the product for which you want to create tags. 
 *   Open the **Tags** tab on the page, in the **Tags** input field enter tag names one by one. Click the **Tab** button on your keyboard to create new tags.
 *   Click the **Save and close** button.
 
@@ -28,7 +28,7 @@ Set up tags for products:
 
 Add the **Tag cloud** section to the storefront:
 
-*   Go to **Design > Layouts**.
+*   Go to **Design → Layouts**.
 *   Choose the layout page where you want to display the tag cloud. For example, click *Homepage*.
 *   Click the **+** button in a container where you want to display the tag cloud and choose **Add block**. Open the **Create New Block** tab, and choose **Tags**. 
 *   In the opened window specify the block Name (e.g. *Tag Cloud*). In the **Template** select box select *Tag cloud* and click the **Create** button.

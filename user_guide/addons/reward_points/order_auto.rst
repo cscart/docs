@@ -2,8 +2,8 @@
 How To: Add Reward Points for Order Automatically
 *************************************************
 
-*	In the Administration panel, go to **Add-ons > Manage add-ons** and :doc:`enable the Reward points add-on <../reward_points/set_rp_addon>`.
-*	Go to **Marketing > Reward points**.
+*	In the Administration panel, go to **Add-ons → Manage add-ons** and :doc:`enable the Reward points add-on <../reward_points/set_rp_addon>`.
+*	Go to **Marketing → Reward points**.
 *	Select the user group, who will receive the points, and in the **Amount** field next to the user group enter the number of reward points and select the amount type next to it.
 
 .. note ::

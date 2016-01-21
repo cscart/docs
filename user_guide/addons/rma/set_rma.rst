@@ -4,7 +4,7 @@ How To: Set up the RMA Add-on
 
 To enable the **RMA** add-on:
 
-*   In the Administration panel, go to **Add-ons > Manage add-ons**.
+*   In the Administration panel, go to **Add-ons → Manage add-ons**.
 *   Enable the **RMA** add-on (change its status to *Active*).
 *   Click on the name of the **RMA** add-on.
 *   Select the desired options and tick the check boxes, if needed:
@@ -20,7 +20,7 @@ To enable the **RMA** add-on:
 
 To set up return registration:
 
-*   Go to **Orders > Return requests**.
+*   Go to **Orders → Return requests**.
 *   Click the gear button in the top right corner of the page and choose **RMA reasons**.
 *   Click the **+** button and create a reason why a customer will be able to return products.
 
@@ -38,7 +38,7 @@ To set up return registration:
 *   Click the gear button in the top right corner of the page and choose **RMA request statuses**.
 *   To add a new request status, click the **+** button. To edit the existing status, click on its name.
 *   Click **Save**.
-*   Go to **Administration > Order statuses**.
+*   Go to **Administration → Order statuses**.
 *   Click on the order status for which you want to allow return and tick the **Allow return registration** check box.
 *   Click **Save**.
 

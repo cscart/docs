@@ -20,7 +20,7 @@ To start export:
 	:align: center
 	:alt: API key
 
-*   After that, log in to your **CS-Cart** administration panel and go to **Add-ons > Manage Add-ons**.
+*   After that, log in to your **CS-Cart** administration panel and go to **Add-ons → Manage add-ons**.
 *   Activate the **Email marketing** add-on and open its settings.
 *   In the **General** tab choose **MadMimi** in the **Integration provider** field and choose other prefernces:
 

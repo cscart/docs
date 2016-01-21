@@ -4,7 +4,7 @@ How To: Set up the Suppliers Add-on
 
 To set up the **Suppliers** add-on:
 
-*   In the Administration panel, go to **Add-ons > Manage add-ons**.
+*   In the Administration panel, go to **Add-ons → Manage add-ons**.
 *   Enable the **Suppliers** add-on (change its status to *Active*).
 *	Click the gear button of the **Suppliers** add-on to manage the following settings:
 
@@ -15,7 +15,7 @@ To set up the **Suppliers** add-on:
 
 To add suppliers:
 
-*   Go to **Customers > Suppliers**.
+*   Go to **Customers → Suppliers**.
 *   Create a new supplier by clicking the **+** button. Define the supplier's **Name**, **Contact information**, and **Shipping address**.
 
 .. image:: img/suppliers_01.png
@@ -46,4 +46,4 @@ To add suppliers:
 
 .. important::
 
-    In order to hide the supplier name in the customer area, the **Display product supplier company** setting needs to be disabled on the **Suppliers** add-on settings page in the **Add-ons > Manage add-ons** section.
+    In order to hide the supplier name in the customer area, the **Display product supplier company** setting needs to be disabled on the **Suppliers** add-on settings page in the **Add-ons → Manage add-ons** section.

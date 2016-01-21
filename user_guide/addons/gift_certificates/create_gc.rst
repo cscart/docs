@@ -2,11 +2,11 @@
 How To: Create Gift Certificate in Administration Panel
 *******************************************************
 
-*	In the Administration panel, go to **Marketing > Gift certificates**.
+*	In the Administration panel, go to **Marketing → Gift certificates**.
 
 .. note ::
 
-	This section is available only if the **Gift certificates** add-on is installed and activated in the **Add-ons > Manage add-ons** section.
+	This section is available only if the **Gift certificates** add-on is installed and activated in the **Add-ons → Manage add-ons** section.
 
 *	Click the **+** button to add a certificate.
 *	In the opened page fill in the following fields:

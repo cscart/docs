@@ -2,9 +2,9 @@
 How To: Display Bestsellers on the Homepage
 *******************************************
 
-*   In the Administration panel, go to **Add-ons > Manage add-ons**.
+*   In the Administration panel, go to **Add-ons → Manage add-ons**.
 *   Make sure that the **Bestsellers & On-Sale Products** add-on has an *Active* status.
-*   Go to **Design > Layouts > Homepage**.
+*   Go to **Design → Layouts → Homepage**.
 *   In the container where you want to display bestsellers, click the **+** button and choose **Add block**. In the opened window:
 
     *   Open the **Create New Block** tab and choose **Products**.

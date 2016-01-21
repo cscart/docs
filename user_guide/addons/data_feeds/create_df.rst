@@ -4,7 +4,7 @@ How To: Create Data Feed
 
 To create and configure a custom data feed:
 
-*   In the Administration panel, go to **Add-ons > Data feeds**. The section contains a list of data feeds available in the store.
+*   In the Administration panel, go to **Add-ons → Data feeds**. The section contains a list of data feeds available in the store.
 
 .. image:: img/datafeeds_01.png
 	:align: center
@@ -47,5 +47,3 @@ To create and configure a custom data feed:
 *   Click **Create**.
 
 The new data feed will appear among the other data feeds in your store.
-
-

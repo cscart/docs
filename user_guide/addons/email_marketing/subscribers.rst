@@ -2,11 +2,11 @@
 How To: Manage Subscribers
 **************************
 
-You can manage newsletter subscribers in the **Marketing > Subscribers** section of the administration panel.
+You can manage newsletter subscribers in the **Marketing → Subscribers** section of the administration panel.
 
 .. important ::
 
-	This section is available only when the **Email marketing** add-on is activated in the **Add-ons > Manage add-ons** section.
+	This section is available only when the **Email marketing** add-on is activated in the **Add-ons → Manage add-ons** section.
 
 You can **add** new subscribers with the **+** button in the right upper part of the page.
 
@@ -31,4 +31,4 @@ When you add a new subscriber, you need to specify the following attributes:
 
 .. note ::
 
-	CS-Cart supports bulk subscriber attributes import and export by using the standard export/import feature in sections **Administration > Export Data > Subscribers** and **Administration > Import Data > Subscribers**.
+	CS-Cart supports bulk subscriber attributes import and export by using the standard export/import feature in sections **Administration → Export Data → Subscribers** and **Administration → Import Data → Subscribers**.

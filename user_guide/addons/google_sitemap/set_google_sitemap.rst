@@ -6,7 +6,7 @@ The **Google sitemap** add-on generates the XML site map, which makes website in
 
 To set up the **Google sitemap** add-on:
 
-*   In the Administration panel, go to **Add-ons > Manage add-ons** and make sure the **Google sitemap** add-on has an *Active* status.
+*   In the Administration panel, go to **Add-ons → Manage add-ons** and make sure the **Google sitemap** add-on has an *Active* status.
 *   Click on the name of the add-on.
 *   In the **Update frequency** drop-down list select the desired update frequency. 
 *   In the **Priority** drop-down list select the desired priority.
@@ -27,4 +27,4 @@ To set up the **Google sitemap** add-on:
 
 .. note ::
 
-	Sitemap can be reached by the URL *http://www.domain.com/sitemap.xml* if `SEO <http://www.cs-cart.com/documentation/reference_guide/index.htmld?administration_add_ons_seo.htm>`_ add-on is enabled. If it is disabled, you need to add the following code to the **.htaccess** file to get this URL working: ``RewriteRule ^sitemap\.xml$ ./index.php?dispatch=xmlsitemap.view [L]``. Add this line after the ``# RewriteBase /`` line.
+	Sitemap can be reached by the URL *http://www.domain.com/sitemap.xml* if `SEO <http://docs.cs-cart.com/4.3.x/user_guide/addons/seo/index.html>`_ add-on is enabled. If it is disabled, you need to add the following code to the **.htaccess** file to get this URL working: ``RewriteRule ^sitemap\.xml$ ./index.php?dispatch=xmlsitemap.view [L]``. Add this line after the ``# RewriteBase /`` line.

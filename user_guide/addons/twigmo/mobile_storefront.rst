@@ -2,7 +2,7 @@
 How To: Configure the Mobile Storefront
 ***************************************
 
-*	Go to **Add-ons > Manage add-ons**.
+*	Go to **Add-ons → Manage add-ons**.
 *	Find the **Twigmo** add-on in the list and click the gear button, choose **Manage**.
 
 .. note ::

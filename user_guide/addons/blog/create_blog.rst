@@ -6,13 +6,13 @@ To create a built-in blog in your store:
 
 Install the **Blog** add-on (if it is not installed yet):
 
-*	In the Administration panel of your store, go to **Add-ons > Manage add-ons** and switch to the **Browse all available add-ons** tab.
+*	In the Administration panel of your store, go to **Add-ons → Manage add-ons** and switch to the **Browse all available add-ons** tab.
 *	Find the **Blog** add-on and click the **Install** button. The add-on will appear in the **Installed add-ons** tab.
 *	Activate the add-on changing its status to *Active*.
 
 Create your blog posts:
 
-*	Go to the **Website > Blog** section.
+*	Go to the **Website → Blog** section.
 *	Click the **+** button in the top right corner of the page.
 *	Fill in the fields of the given form:
 
@@ -21,7 +21,7 @@ Create your blog posts:
 	*	Place your blog post contents to the **Post description** field.
 	*	Fill in other fields. Their description you can find :doc:`here <../blog/attributes>`.
 
-*	Click **Create and close**. Your post will appear in the **Website > Blog** section.
+*	Click **Create and close**. Your post will appear in the **Website → Blog** section.
 
 .. image:: img/blog_02.png
 	:align: center
@@ -40,7 +40,7 @@ This is an example of how your blog page will look like in the storefront:
 
 .. note ::
 
-	To customize all blog pages appearance, go to the **Design > Layouts** section and choose the **Blog** layout page.
+	To customize all blog pages appearance, go to the **Design → Layouts** section and choose the **Blog** layout page.
 
 .. hint ::
 

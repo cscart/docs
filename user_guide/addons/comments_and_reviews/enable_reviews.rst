@@ -4,7 +4,7 @@ How To: Enable Reviews for All Products at Once
 
 To enable reviews for all products at once:
 
-*   In the Administration panel, go to **Products > Products**.
+*   In the Administration panel, go to **Products → Products**.
 *   In the **Total items** option select *100*.
 
 .. image:: img/reviews_01.png

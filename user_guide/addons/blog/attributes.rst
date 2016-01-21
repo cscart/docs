@@ -2,7 +2,7 @@
 Blog Post Attributes
 ********************
 
-Blog posts that you can manage in the **Website > Blog** section have the following attributes:
+Blog posts that you can manage in the **Website → Blog** section have the following attributes:
 
 General
 *******
@@ -58,12 +58,12 @@ Add-ons
 
 .. important ::
 
-	Make sure that the **Social Buttons**, **Comments and Reviews**, and **SEO** add-ons are enabled and configured in **Add-ons > Manage add-ons**.
+	Make sure that the **Social Buttons**, **Comments and Reviews**, and **SEO** add-ons are enabled and configured in **Add-ons → Manage add-ons**.
 
 Tags
 ****
 
-This tab includes a list of tags associated with the page. Tags appear on the storefront in a special side box titled **Tag cloud**. More information about the tags read `here <http://kb.cs-cart.com/tags>`_.
+This tab includes a list of tags associated with the page. Tags appear on the storefront in a special side box titled **Tag cloud**. More information about tags read `here <http://docs.cs-cart.com/4.3.x/user_guide/addons/tags/index.html>`_.
 
 *    **Tags** – Tags that have been added to the post. Start typing in this field to add a new tag. You can choose among the existing variants or create a new tag.
 
@@ -83,7 +83,7 @@ List of user comments and ratings for the post.
 Layouts
 *******
 
-This tab duplicates the global layout of the layout pages to which this storefront page belongs (**Design > Layouts**).
+This tab duplicates the global layout of the layout pages to which this storefront page belongs (**Design → Layouts**).
 By using this tab, you can disable blocks that are globally enabled, and, on the contrary, enable blocks that are globally disabled. This makes it possible to configure an individual layout for different storefront pages.
 
 Any modification that you make under this tab will not affect other storefront pages.

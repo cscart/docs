@@ -9,7 +9,7 @@ Although gift certificates are supposed to be created by customers, store admini
 
 To add a certificate:
 
-*	Go to the **Marketing > Gift certificates** section.
+*	Go to the **Marketing → Gift certificates** section.
 
 Here is a list of all gift certificates that have been created in the store (both by customers and store administrators) and haven't been deleted.
 
@@ -41,7 +41,7 @@ Store administrators are allowed to edit details of existing gift certificates.
 
 To edit a gift certificate:
 
-*	Go to the **Marketing > Gift certificates** section.
+*	Go to the **Marketing → Gift certificates** section.
 *	Click on the code of the certificate you want to edit. This will open a form that is pretty the same as the one you use to create certificates.
 *	Edit the fields in the form.
 *	Click the **Save** button.
@@ -53,7 +53,7 @@ CS-Cart registers all changes in the balance of a gift certificate.
 
 To view the history of changes:
 
-*	Display the list of certificates in the **Marketing > Gift certificates** section.
+*	Display the list of certificates in the **Marketing → Gift certificates** section.
 *	Click on the code of the certificate which history of changes you want to view. This will open the page with gift certificate details.
 *	Switch to the **History** tab to open a tab with a list of changes. Each entry in the list contains the following elements:
 

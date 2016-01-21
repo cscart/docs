@@ -4,7 +4,7 @@ How To: Display Similar Products on a Product Details Page
 
 To add the **Similar** section to the product details pages:
 
-*   In the Administration panel, go to **Design > Layouts** and open the **Products** tab.
+*   In the Administration panel, go to **Design → Layouts** and open the **Products** tab.
 *   Click the **+** icon in the desired container and choose **Add block**.
 
 .. image:: img/similar_01.png

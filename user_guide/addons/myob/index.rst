@@ -10,4 +10,4 @@ Information on MYOB is available on the `official website <myob.com.au>`_.
 
 .. note ::
 
-	When you enable this add-on, the **Export to MYOB** option appears under the gear button in the **Orders > View orders** section.
+	When you enable this add-on, the **Export to MYOB** option appears under the gear button in the **Orders → View orders** section.

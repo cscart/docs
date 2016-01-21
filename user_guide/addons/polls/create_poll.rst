@@ -4,7 +4,7 @@ How To: Create a Poll
 
 To set up the **Polls** add-on:
 
-*   In the Administration panel, go to **Add-ons > Manage add-ons**.
+*   In the Administration panel, go to **Add-ons → Manage add-ons**.
 *   In the **Installed add-ons** tab find the **Polls** add-on and hange its status to *Active*.
 *   Click on the name of the add-on.
 *	Complete the following fields:
@@ -20,12 +20,12 @@ To set up the **Polls** add-on:
 
 To create a poll:
 
-*   Go to **Website > Content**.
+*   Go to **Website → Pages**.
 *   Click the **+** button and choose **Add poll**.
 *   Fill information in the **General** tab.
 *   Open the **Poll** tab, fill in the fields and click the **Create** button. New tabs will appear.
 *   Open the **Questions** tab and click the **Add question** button on the right.
-*   Type the question in the **Question** text field and select option in the **Type** select box.
+*   Type the question in the **Question text** field and select option in the **Type** select box.
 
 .. image:: img/polls_02.png
 	:align: center
@@ -39,7 +39,7 @@ To create a poll:
 
 To display a poll:
 
-*   Go to **Design > Layouts**.
+*   Go to **Design → Layouts**.
 *   Select the page where the poll will be displayed by clicking on the corresponding tab at the top. For example, click **Homepage** at the top to show the poll on the homepage.
 *   In the container where you want to display the poll, click the **+** button and choose **Add block**. Open the **Create New Block** tab and choose **Polls**.
 *	In the opened window specify the name of the block (e.g. *New Poll*), select *Side box* in the **Template** select box and click the **Create** button.
@@ -60,4 +60,3 @@ To display a poll:
 .. note ::
 
 	After the block is created or changed, make sure it is displayed correctly. Sometimes not all wrappers are suitable for the blocks.
-

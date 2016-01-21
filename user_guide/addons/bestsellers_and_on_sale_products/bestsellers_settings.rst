@@ -2,7 +2,7 @@
 The Bestsellers & On-Sale Products Add-on Settings
 **************************************************
 
-In the **Add-ons > Manage add-ons** section find the **Bestsellers & On-Sale Products** add-on and click on its name to manage the following settings:
+In the **Add-ons → Manage add-ons** section find the **Bestsellers & On-Sale Products** add-on and click on its name to manage the following settings:
 
 General
 *******

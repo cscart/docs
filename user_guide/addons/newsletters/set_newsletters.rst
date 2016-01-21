@@ -2,7 +2,7 @@
 How To: Set up the Newsletters Add-on
 *************************************
 
-*   In the administration panel go to **Add-ons > Manage add-ons**.
+*   In the administration panel go to **Add-ons → Manage add-ons**.
 *   Make sure the **Newsletters** add-on has an *Active* status.
 
 .. important ::

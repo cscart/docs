@@ -4,7 +4,7 @@ How To: Add the Store Locator Block
 
 To set up the **Store locator** add-on:
 
-*   In the Administration panel, go to **Add-ons > Manage add-ons**.
+*   In the Administration panel, go to **Add-ons → Manage add-ons**.
 *   Enable the **Store locator** add-on (change its status to *Active*).
 *   Click on the name of the add-on, enter your Google Maps API key in the **API key** input field and click the **Save** button.
 
@@ -12,7 +12,7 @@ To set up the **Store locator** add-on:
 
 	You can get Maps API key `here <http://code.google.com/apis/maps/signup.html>`_ (you need to have Google Account).
 
-*   Go to **Add-ons > Store Locator**.
+*   Go to **Add-ons → Store Locator**.
 *   Click the **+** button to add store location.
 *   Fill in the necessary fields and click the **Create and close** button.
 
@@ -22,7 +22,7 @@ To set up the **Store locator** add-on:
  
 To add the **Store locator** block:
 
-*   Go to **Design > Layouts > Default**.
+*   Go to **Design → Layouts → Default**.
 *   Choose the container where you want to add a **Store locator** block and click the **+** icon on it. Open the **Create New Block** tab and choose **Store locator**.
 *	In the opened window:
 

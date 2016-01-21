@@ -4,7 +4,7 @@ How To: Set up the RSS Feed Add-on
 
 To set up the **RSS Feed** add-on:
 
-*   In the Administration panel, go to **Add-ons > Manage add-ons**.
+*   In the Administration panel, go to **Add-ons → Manage add-ons**.
 *   Make sure that the **RSS Feed** add-on has an *Active* status.
 *   Click on the name of the add-on.
 *   In the **Content editor** input field enter the editor's email and real name.
@@ -24,7 +24,7 @@ To set up the **RSS Feed** add-on:
 
 To enable visitors to subscribe to the RSS feed, you need to add an RSS icon to the storefront:
 
-*   Go to **Design > Layouts**.
+*   Go to **Design → Layouts**.
 *   Select the layout page by clicking on the corresponding tab. Then select a container, where you want to display the icon.
 *   Click the **+** button in the container and choose **Add block**. 
 *   In the opened window open the **Create New Block** tab and choose **RSS Feed**. 

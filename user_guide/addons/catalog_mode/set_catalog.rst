@@ -6,7 +6,7 @@ The purpose of the **Catalog mode** add-on is to advertise products.
 
 To set up the **Catalog Mode** add-on:
 
-*   In the Administration panel, go to **Add-ons > Manage add-ons**.
+*   In the Administration panel, go to **Add-ons → Manage add-ons**.
 *   Change the status of the **Catalog mode** add-on to *Active* in the **Installed add-ons** tab.
 
 .. note ::
@@ -15,7 +15,7 @@ To set up the **Catalog Mode** add-on:
 
 To allow customers only view products without purchasing them:
 
-*	Go to **Add-ons > Manage add-ons** and click on the name of the **Catalog mode** add-on.
+*	Go to **Add-ons → Manage add-ons** and click on the name of the **Catalog mode** add-on.
 *   Untick the **Allow purchasing products with empty Buy Now URL** check box.
 *   Click **Save**.
 
@@ -29,7 +29,7 @@ To allow customers only view products without purchasing them:
 
 To redirect customers to the site of administrator's partner, when a customer decides to purchase a product:
 
-*	Go to **Products > Products** and click on product name. 
+*	Go to **Products → Products** and click on product name. 
 *   Open the **Add-ons** tab.
 *   In the **Catalog mode** section in the **Buy Now URL** input field enter the URL of the partner's site.
 *   Click the **Save** or **Save and close** button.

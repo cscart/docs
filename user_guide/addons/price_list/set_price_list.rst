@@ -4,7 +4,7 @@ How To: Set up the Price List add-on
 
 To set up the **Price list** add-on:
 
-*   In the Administration panel, go to **Add-ons > Manage add-ons** and enable the **Price list** add-on (change its status to *Active*).
+*   In the Administration panel, go to **Add-ons → Manage add-ons** and enable the **Price list** add-on (change its status to *Active*).
 *   Click on the name of the add-on.
 *   In the **Table layout** section select what fields the price list will contain.
 

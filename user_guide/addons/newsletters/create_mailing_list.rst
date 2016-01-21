@@ -2,7 +2,7 @@
 How To: Create a Mailing List
 *****************************
 
-*   In the Administration panel, go to **Marketing > Newsletters > Mailing lists**.
+*   In the Administration panel, go to **Marketing → Newsletters → Mailing lists**.
 *   Click the **+** button on the right to add a mailing list.
 *   Fill in the following fields:
 
@@ -24,7 +24,7 @@ How To: Create a Mailing List
 
 To add subscribers to the mailing list:
 
-*   Go to **Marketing > Newsletters > Subscribers**.
+*   Go to **Marketing → Newsletters → Subscribers**.
 *   Click the pointer icon of a subscriber, new small section will be displayed. Tick the **Subscribed** and **Confirmed** check boxes of the mailing list and click **Save**.
 
 .. image:: img/subscribers.png

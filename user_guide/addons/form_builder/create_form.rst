@@ -2,9 +2,9 @@
 How To: Create a Custom Form
 ****************************
 
-*   In the Administration panel, go to **Add-ons > Manage add-ons**.
+*   In the Administration panel, go to **Add-ons → Manage add-ons**.
 *   Make sure the **Form Builder** add-on has an *Active* status.
-*   Go to **Website > Content**.
+*   Go to **Website → Pages**.
 *   Click the **+** button and choose **Add form**.
 *   In the **Parent page** drop-dowm menu choose the parent page for the form.
 *   In the **Name** input field type the name of the form (e.g., *Contact us*).

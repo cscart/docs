@@ -2,8 +2,8 @@
 How To: Add Reward Points for Product Automatically
 ***************************************************
 
-*   In the Administration panel, go to **Add-ons > Manage add-ons** and :doc:`enable the Reward points add-on <../reward_points/set_rp_addon>`.
-*   Go to **Products > Products**.
+*   In the Administration panel, go to **Add-ons → Manage add-ons** and :doc:`enable the Reward points add-on <../reward_points/set_rp_addon>`.
+*   Go to **Products → Products**.
 *   Click on the name of the product for which you want to add reward points.
 *   Open the **Reward points** tab.
 *   Tick the **Override global/category point value for this product** check box.

@@ -4,12 +4,12 @@ How To: Attach Files to Products
 
 To set up the **Attachments** add-on:
 
-*   In the Administration panel, go to **Add-ons > Manage add-ons**.
+*   In the Administration panel, go to **Add-ons → Manage add-ons**.
 *   Find the **Attachments** add-on and make sure that its status is *Active*.
 
 To attach a file to a product:
 
-*   Go to **Products > Products**.
+*   Go to **Products → Products**.
 *   Click on the name of the product for which you want to attach a file.
 *   Switch to the **Attachments** tab and click the **Add attachment** button.
 *   In the opened window in the **Name** input field type the name of the attached file.

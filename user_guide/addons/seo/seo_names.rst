@@ -4,7 +4,7 @@ Format of SEO Names
 
 To change the format of SEO names:
 
-*   In the Administration panel, go to **Add-ons > Manage add-ons**.
+*   In the Administration panel, go to **Add-ons → Manage add-ons**.
 *   Click on the name of the **SEO** add-on.
 *   In the opened window you can edit the following settings:
 

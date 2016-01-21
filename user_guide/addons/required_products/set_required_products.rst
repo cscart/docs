@@ -4,12 +4,12 @@ How To: Set up the Required Products Add-on
 
 To set up the **Required products** add-on:
 
-*   In the Administration panel, go to **Add-ons > Manage add-ons**.
+*   In the Administration panel, go to **Add-ons → Manage add-ons**.
 *   Enable the **Required products** add-on (change its status to *Active*).
 
 To add the required products for a product:
 
-*   Go to **Products > Products**.
+*   Go to **Products → Products**.
 *   Click on the product for which you want to add required products.
 *   Choose the **Required products** tab.
 *   Click the **Add products** button. In the opened window choose the products and click **Add products and close**.

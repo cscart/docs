@@ -2,7 +2,7 @@
 How To: Allow to Return Products
 ********************************
 
-*	In the Administration panel, go to **Products > Products**.
+*	In the Administration panel, go to **Products → Products**.
 *	Click on the name of the product, for which you want to allow return.
 *	Open the **Add-ons** tab.
 *	In the **RMA** section tick the **Returnable** check box.

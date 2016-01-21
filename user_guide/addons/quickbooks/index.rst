@@ -12,5 +12,5 @@ For instructions on how to handle IIF files and their contents, please refer to 
 
 .. note ::
 
-	When you enable this add-on, the **Export to Quickbooks** option appears under the gear button in the **Orders > View orders** section.
+	When you enable this add-on, the **Export to Quickbooks** option appears under the gear button in the **Orders → View orders** section.
    

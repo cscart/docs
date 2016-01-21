@@ -2,7 +2,7 @@
 How To: Create a Newsletter Template
 ************************************
 
-*   In the Administration panel, go to **Marketing > Newsletters > Templates**.
+*   In the Administration panel, go to **Marketing → Newsletters → Templates**.
 *   Click the **+** button in the top right corner of the page.
 *   Fill in the following fields:
 

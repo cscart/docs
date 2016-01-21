@@ -12,7 +12,7 @@ When you search for something with Google search engine, you can see few lines o
 
 In CS-Cart rich snippets for product pages are generated automatically. To check the rich snippet for particular product, do the following:
 
-*   In the Administration panel, go to **Products > Products**.
+*   In the Administration panel, go to **Products → Products**.
 *   Choose a product and open its editing page by clicking on the product name.
 *   On the opened page choose the **SEO** tab.
 

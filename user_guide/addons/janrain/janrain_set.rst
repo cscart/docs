@@ -29,7 +29,7 @@ To get **API key** and **Application Domain**:
 
 Once you have subscribed to JanRain Engage, take these steps:
 
-*   In your CS-Cart administration panel, go to **Add-ons > Manage add-ons**.
+*   In your CS-Cart administration panel, go to **Add-ons → Manage add-ons**.
 *   Make sure the **Janrain** add-on has an *Active* status.
 *   Click on the name of the add-on.
 *   In the opened window specify the following settings:
@@ -45,7 +45,7 @@ Once you have subscribed to JanRain Engage, take these steps:
 
 To sign in with social account:
 
-*   In the storefront go to **My account > Sign in**.
+*   In the storefront go to **My account → Sign in**.
 *   Click the **Social login** link.
 
 .. image:: img/janrain_04.png

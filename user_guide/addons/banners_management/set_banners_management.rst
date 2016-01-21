@@ -2,7 +2,7 @@
 How To: Set up Banners Management Add-on
 ****************************************
 
-*	In the Administration panel, go to **Add-ons > Manage add-ons**.
+*	In the Administration panel, go to **Add-ons → Manage add-ons**.
 *	Make sure that the **Banners management** add-on is installed and has an *Active* status
 *	Click the gear button of the add-on. You will see the following setting:
 

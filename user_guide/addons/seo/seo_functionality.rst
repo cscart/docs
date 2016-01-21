@@ -8,7 +8,7 @@ For example, a category page will have the URL: `http://demo.cs-cart.com/sports-
 
 To enable the **SEO** add-on:
 
-*	In the Administration panel, go to **Add-ons > Manage add-ons**.
+*	In the Administration panel, go to **Add-ons → Manage add-ons**.
 *	Enable the **SEO** add-on (change its status to *Active*).
 *	Click on the name of the add-on and specify the settings in the opened window:
 

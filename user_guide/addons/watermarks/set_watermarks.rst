@@ -4,7 +4,7 @@ How To: Set up the Watermarks Add-on
 
 To set up the **Watermarks** add-on:
 
-*   In the Administration panel, go to **Add-ons > Manage add-ons**.
+*   In the Administration panel, go to **Add-ons → Manage add-ons**.
 *   Enable the **Watermarks** add-on (change its status to *Active*).
 *   Click on the name of the **Watermarks** add-on.
 *   Define your watermarks:

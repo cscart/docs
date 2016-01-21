@@ -2,7 +2,7 @@
 Newsletters
 ***********
 
-This add-on empowers you to send newsletters to your customers. When it is activated, you can manage newsletters, mailing lists, subscriptions, and more in the **Marketing > Newsletters** section of the administration panel.
+This add-on empowers you to send newsletters to your customers. When it is activated, you can manage newsletters, mailing lists, subscriptions, and more in the **Marketing → Newsletters** section of the administration panel.
 
 .. important ::
 

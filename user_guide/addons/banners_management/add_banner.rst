@@ -4,11 +4,11 @@ How To: Add a Banner to the Storefront
 
 To create a text or graphic banner:
 
-*   In the Administration panel, go to **Marketing > Banners**.
+*   In the Administration panel, go to **Marketing → Banners**.
 
 .. note ::
 
-	If there is no such section, make sure that the **Banners management** add-on has the Active status in the **Add-ons > Manage add-ons** section.
+	If there is no such section, make sure that the **Banners management** add-on has the Active status in the **Add-ons → Manage add-ons** section.
 
 *   Click the **+** button on the right.
 *   On the opened page in the **Name** input field type the name of the new banner.
@@ -25,7 +25,7 @@ To create a text or graphic banner:
 
 To add a banner to your store pages:
 
-*   Go to **Design > Layouts**.
+*   Go to **Design → Layouts**.
 *   Select the layout page for your banner, i.e. open the corresponding tab at the top. For example, open the **Cart** layout page, if you want the banner to be displayed on the Cart page.
 *   In the container, where you want to place the new banner, click the **+** button and choose **Add block**. Open the **Create New Block** tab and choose **Banners**.
 *   In the **Name** input field type the name of the block (e.g., *My banner*).

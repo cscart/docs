@@ -15,7 +15,7 @@ The **Bestsellers**, **On sale**, **Final sale**, and **Newest** products pages 
 
 Only thing you have to do, is to give customers access to these pages from some part of the storefront, for example, using menu:
 
-*   In the Administration panel, go to the **Design > Menus** section.
+*   In the Administration panel, go to the **Design → Menus** section.
 *   Click the **+** button in the top right corner of the page.
 *   Fill in the **Name** field and click **Create**.
 *   In the **Items for menu** section click the **+** button to add menu items.
@@ -32,7 +32,7 @@ Another way to access these pages is using banners:
 
 Create a banner:
 
-*   Go to **Marketing > Banners**.
+*   Go to **Marketing → Banners**.
 *   Click the **+** button in the top right corner of the page.
 *   In the **Type** select box choose *Graphic banner*.
 *   Fill in the **Name** field. In the **Image** field upload an image for your graphic banner.
@@ -41,7 +41,7 @@ Create a banner:
 
 Add the banner to the storefront
 
-*   Go to **Design > Layouts** and switch to the layout page where you want the banner to appear.
+*   Go to **Design → Layouts** and switch to the layout page where you want the banner to appear.
 *   Choose the desired container, click the **+** icon on it, and click **Add block**.
 *   In the opened window switch to the **Create New Block** tab and click the **Banners** button.
 *   Fill in the **Name** field and switch to the **Content** tab.
@@ -53,4 +53,4 @@ Now customers will be able to access the page by clicking the banner on the stor
 
 .. hint ::
 
-	Some :doc:`settings <../bestsellers_and_on_sale_products/bestsellers_settings>` of the products displaying on these pages you can find in the **Add-ons > Manage Add-ons > Bestsellers & On-sale products** section.
+	Some :doc:`settings <../bestsellers_and_on_sale_products/bestsellers_settings>` of the products displaying on these pages you can find in the **Add-ons → Manage add-ons → Bestsellers & On-sale products** section.

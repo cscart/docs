@@ -2,7 +2,7 @@
 How To: Set up the SMS Notifications Add-on
 *******************************************
 
-*	In the Administration panel, go to **Add-ons > Manage add-ons**.
+*	In the Administration panel, go to **Add-ons → Manage add-ons**.
 *	Enable the **SMS notifications** add-on (change its status to *Active*). If you do not see this add-on in the **Installed add-ons** tab, switch to the **Browse all available add-ons** tab and click the **Install** button near the **SMS notifications** add-on.
 *	Click on the name of the add-on.
 

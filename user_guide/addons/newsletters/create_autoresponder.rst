@@ -4,8 +4,8 @@ How To: Create an Autoresponder
 
 To set up an autoresponder:
 
-*   Open the **Add-ons > Manage add-ons** section and make sure that the **Newsletters** add-on has an *Active* status.
-*   Go to **Marketing > Newsletters > Autoresponders**.
+*   Open the **Add-ons → Manage add-ons** section and make sure that the **Newsletters** add-on has an *Active* status.
+*   Go to **Marketing → Newsletters → Autoresponders**.
 *   Click the **+** button to add an autoresponder.
 *   Fill in the following fields:
 
@@ -25,7 +25,7 @@ After the autoresponder is created, you can select it for a newsletter.
 
 To assign the autoresponder to a newsletter:
 
-*   Go to **Marketing > Newsletters > Mailing lists**.
+*   Go to **Marketing → Newsletters → Mailing lists**.
 *   Click on the name of the mailing list.
 *   Find the **Confirmation e-mail** field and select the autoresponder in the drop down box.
 *   Click **Save**.

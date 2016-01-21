@@ -2,8 +2,8 @@
 How To: Add Reward Points to Account Manually
 *********************************************
 
-*   In the Administration panel, go to **Add-ons > Manage add-ons** and :doc:`enable the Reward points add-on <../reward_points/set_rp_addon>`.
-*   Go to **Customers > Customers**.
+*   In the Administration panel, go to **Add-ons → Manage add-ons** and :doc:`enable the Reward points add-on <../reward_points/set_rp_addon>`.
+*   Go to **Customers → Customers**.
 *   Select a customer and click on his/her username to open the profile.
 *   Click the gear button on top of the page and choose **View user points**.
 *   Click the **+** button on the opened page to add/subtract points.

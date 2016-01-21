@@ -6,9 +6,9 @@ Vendor Data Premoderation
 
 	This add-on is available only in **Multi-Vendor**.
 
-This add-on enables you to approve/disapprove vendor products and profiles before they are added to the product catalog and appear on the storefront. Products are approved in **Vendors > Product approval**.
+This add-on enables you to approve/disapprove vendor products and profiles before they are added to the product catalog and appear on the storefront. Products are approved in **Vendors → Product approval**.
 
-To manage the following settings, go to the **Add-ons > Manage add-ons** section, find the **Vendor data premoderation** add-on, click the gear button, and choose **Settings**.
+To manage the following settings, go to the **Add-ons → Manage add-ons** section, find the **Vendor data premoderation** add-on, click the gear button, and choose **Settings**.
 
 .. note ::
 

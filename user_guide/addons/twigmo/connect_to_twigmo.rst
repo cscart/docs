@@ -2,7 +2,7 @@
 How To: Connect Your Store to the Twigmo Service 
 ************************************************
 
-*	In the Administration panel, go to **Add-ons > Manage add-ons**.
+*	In the Administration panel, go to **Add-ons → Manage add-ons**.
 *	Install the **Twigmo** add-on.
 *	Click on the name of the add-on to open its settings.
 *	In the **Twigmo account** tab in the **E-mail** input field enter your twigmo account e-mail address, complete the **Password** field, and choose stores to be connected to the Twigmo service.

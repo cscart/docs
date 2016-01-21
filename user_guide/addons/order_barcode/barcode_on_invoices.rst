@@ -4,7 +4,7 @@ How To: Display Barcode on Invoices
 
 To display barcode on invoices:
 
-*	In the Administration panel, go to **Add-ons > Manage add-ons**.
+*	In the Administration panel, go to **Add-ons → Manage add-ons**.
 *	Enable the **Order barcode** add-on (change its status to *Active*).
 *	Click on the name of the add-on.
 *	Edit the parameters of your barcode in the opened window:

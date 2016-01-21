@@ -8,7 +8,7 @@ With this add-on you can accept payments via PayPal Express Checkout, PayPal Pro
 	:align: center
 	:alt: PayPal Payments
 
-To configure the following settings go to **Add-ons > Manage add-ons** and click on the **PayPal payments** add-on name.
+To configure the following settings go to **Add-ons → Manage add-ons** and click on the **PayPal payments** add-on name.
 
 Instant payment notification settings
 *************************************

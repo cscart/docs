@@ -2,7 +2,7 @@
 The Reward Points Add-on Settings
 *********************************
 
-To manage the following settings, go to **Add-ons > Manage add-ons** and click on the name of the **Reward Points** add-on.
+To manage the following settings, go to **Add-ons → Manage add-ons** and click on the name of the **Reward Points** add-on.
 
 *	**Points Exchange Rate (PER)** - Global exchange rate to convert monetary product costs to points. The value you enter here is the number of points to cover one monetary unit (e.g., $1, €1 or £1), which is the default store currency.
 

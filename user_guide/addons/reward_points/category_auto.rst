@@ -2,8 +2,8 @@
 How To: Add Reward Points for Category Automatically
 ****************************************************
 
-*	In the Administration panel, go to **Add-ons > Manage add-ons** and :doc:`enable the Reward points add-on <../reward_points/set_rp_addon>`.
-*	Go to **Products > Categories**.
+*	In the Administration panel, go to **Add-ons → Manage add-ons** and :doc:`enable the Reward points add-on <../reward_points/set_rp_addon>`.
+*	Go to **Products → Categories**.
 *	Click on the name of the category, for which you want to add reward points.
 *	Open the **Reward points** tab.
 *	Tick the **Override global point value for all products in this category** check box.

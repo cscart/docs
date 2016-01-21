@@ -6,7 +6,7 @@ The **Google Analytics** add-on is created in order to allow the administrator t
 
 To set up the **Google Analytics** add-on:
 
-*   In the Administration panel, go to **Add-ons > Manage add-ons** and enable the **Google Analytics** add-on (change its status to *Active* in the select box on the right).
+*   In the Administration panel, go to **Add-ons → Manage add-ons** and enable the **Google Analytics** add-on (change its status to *Active* in the select box on the right).
 *   Click on the name of the add-on.
 *   Enter the **Universal Analytics** account number into the **Google Analytics account number** field.
 

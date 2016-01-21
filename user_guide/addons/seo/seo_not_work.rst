@@ -23,7 +23,7 @@ If links do not work when the **SEO** add-on is enabled:
     *   Try opening your storefront (the URL should be *http://www.your_domain.com/your_cscart_directory/* where replace *your_domain.com* with the name of your domain, *your_cscart_directory* with the name of the directory where CS-Cart is installed on your server). If you see the **store closed** page, it means that commands in **.htaccess** files are supported on your server. If you do not see this page, contact your server administrator.
 *   SEO uses the **mod_rewrite** Apache module of your server. Check whether this module is installed on the server:
 
-    *   Log in to the administration panel of your store, go to **Administration > Logs**, click the gear button, and choose **PHP information** from the drop-down menu. A new page that displays the result of the **phpinfo** PHP function will open.
+    *   Log in to the administration panel of your store, go to **Administration → Logs**, click the gear button, and choose **PHP information** from the drop-down menu. A new page that displays the result of the **phpinfo** PHP function will open.
     *   Search for **mod_rewrite** on the page. If this module is installed on your server, it should be found in the **Loaded Modules** section. If you could not find this module, contact your server administrator.
 *   If CS-Cart is installed not in the web root directory, modify the **.htaccess** file located in the root CS-Cart directory and replace there the following line of the code:
 

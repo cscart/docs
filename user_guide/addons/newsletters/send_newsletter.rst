@@ -2,7 +2,7 @@
 How To: Send a Newsletter
 *************************
 
-*   In the Administration panel, go to **Marketing > Newsletters > Newsletters**.
+*   In the Administration panel, go to **Marketing → Newsletters → Newsletters**.
 *   Click the **+** button in the top right corner of the page.
 *   Fill in the following fields:
 

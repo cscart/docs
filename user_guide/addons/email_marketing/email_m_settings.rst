@@ -2,7 +2,7 @@
 The Email Marketing Add-on Settings
 ***********************************
 
-Go to the **Add-ons > Manage add-ons** section and click on the name of the **Email marketing** add-on to manage the following settings:
+Go to the **Add-ons → Manage add-ons** section and click on the name of the **Email marketing** add-on to manage the following settings:
 
 General
 *******

@@ -2,7 +2,7 @@
 Email Marketing
 ***************
 
-With this add-on you can manage newsletter subscribers in the **Marketing > Subscribers** section.
+With this add-on you can manage newsletter subscribers in the **Marketing → Subscribers** section.
 
 .. important ::
 

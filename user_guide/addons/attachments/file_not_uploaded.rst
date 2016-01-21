@@ -2,11 +2,11 @@
 If the File Cannot Be Uploaded
 ******************************
 
-*   `Check permissions <http://kb.cs-cart.com/permissions>`_ for the uploading file. It should have *readable* permissions for all users. Set up the correct permissions if needed.
-*   `Check permissions <http://kb.cs-cart.com/permissions>`_ for the *var/attachments* directory of your CS-Cart installation. It should have *writable* permissions for all users. Set up the correct permissions if needed.
+*   `Check permissions <http://docs.cs-cart.com/4.3.x/install/useful_info/permissions.html>`_ for the uploading file. It should have *readable* permissions for all users. Set up the correct permissions if needed.
+*   `Check permissions <http://docs.cs-cart.com/4.3.x/install/useful_info/permissions.html>`_ for the *var/attachments* directory of your CS-Cart installation. It should have *writable* permissions for all users. Set up the correct permissions if needed.
 *   Check the maximum size of the uploaded file on your server:
 
-    *   In the Administration panel, go to **Administration > Logs**.
+    *   In the Administration panel, go to **Administration → Logs**.
     *   Click the gear button and choose **PHP information** from the drop-down menu. A new page that displays the result of **phpinfo** PHP function will open.
     *   Search for the ``upload_max_filesize`` variable. The value of this variable defines the maximum size of the file which can be uploaded through PHP script on your server.
 
