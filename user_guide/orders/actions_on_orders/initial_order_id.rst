@@ -4,7 +4,7 @@ How To: Define the Initial Order ID
 
 To define the initial order ID:
 
-*   In the Administration panel, go to **Settings > General**.
+*   In the Administration panel, go to **Settings → General**.
 *   Complete the **Initial order ID value** input field.
 
 .. important ::

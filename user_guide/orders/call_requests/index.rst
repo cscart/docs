@@ -2,7 +2,7 @@
 Call Requests
 *************
 
-In the **Orders > Call requests** section you can see a list of customer call requests.
+In the **Orders → Call requests** section you can see a list of customer call requests.
 
 .. image:: img/call_request.png
     :align: center
@@ -10,11 +10,11 @@ In the **Orders > Call requests** section you can see a list of customer call re
 
 When a customer clicks the **Buy now with 1-click**  link on the product details page and fills in the form, a new order with the **Awaiting call** status is formed in the list of orders. At the same time a call request is generated that can be looked through and managed on this page. If a customer fills in only the **Phone** field, only the call request is created (without an order).
 
-A customer can also click the **Request call** link on the storefront (if the **Call requests** block is added in the **Design > Layouts** section). In this case a call request is created too where the list of products added to a customer's cart is mentioned.
+A customer can also click the **Request call** link on the storefront (if the **Call requests** block is added in the **Design → Layouts** section). In this case a call request is created too where the list of products added to a customer's cart is mentioned.
 
 .. important ::
 
-	To allow call requests in your store, activate the `Call requests <http://www.cs-cart.com/documentation/reference_guide/index.htmld?call_requests2.htm>`_ add-on in the **Add-ons > Manage Add-ons** section. There you can also configure some essential settings that relate to call requests.
+	To allow call requests in your store, activate the `Call requests <http://docs.cs-cart.com/4.3.x/user_guide/addons/call_requests/index.html>`_ add-on in the **Add-ons → Manage add-ons** section. There you can also configure some essential settings that relate to call requests.
 
 For each call request in the list you can see the following information:
 

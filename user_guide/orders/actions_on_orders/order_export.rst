@@ -4,7 +4,7 @@ Order Export
 
 To export an order:
 
-*	In the Administration panel, go to **Administration > Export data > Orders**.
+*	In the Administration panel, go to **Administration → Export data → Orders**.
 *	The **Orders** tab is opened by default. Use this tab to export the customer information and all other data about orders. Data of order products can be exported using the **Order items** tab.
 *	Choose a layout:
 

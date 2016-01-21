@@ -4,7 +4,7 @@ Order Import
 
 To import an order:
 
-*   In the Administration panel, go to **Administration > Import data > Orders**.
+*   In the Administration panel, go to **Administration → Import data → Orders**.
 *   The **Orders** tab is opened by default. If you need to import the customer information and all other data about orders, use this tab. Data about order products can be imported in the **Order items** tab.
 
 .. important ::

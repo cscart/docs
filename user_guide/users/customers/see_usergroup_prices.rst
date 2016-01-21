@@ -13,7 +13,6 @@ If a customer is supposed to be a member of the user group, but can't see the pr
 4. Make sure that the necessary user group has the **Active** status.
 
 
-.. image:: img/group_status.png
+.. image:: img/add_customer_to_group.png
     :align: center
     :alt: Make sure that the customer belongs to the required user group.
-

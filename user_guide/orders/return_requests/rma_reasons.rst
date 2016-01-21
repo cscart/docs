@@ -11,7 +11,7 @@ You can also change the formulation of the reason and it's position on fly here.
 How to add a reason
 *******************
 
-*	In the **Orders > Return requests** section click the gear button in the right upper corner of the page and choose **RMA reasons**.
+*	In the **Orders → Return requests** section click the gear button in the right upper corner of the page and choose **RMA reasons**.
 *	In the opened section Click the **+** button. This will open a form with the new reason details.
 *	Complete the fields in the form:
 

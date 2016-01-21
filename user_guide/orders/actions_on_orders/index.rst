@@ -43,7 +43,7 @@ So, invoice IDs and credit memo IDs are generated continuously for the appropria
 
 .. note::
 
-	To list orders that has been placed in a particular store only, switch to the store administrator's mode. For details, see `Understanding multi-store functionality <http://www.cs-cart.com/documentation/reference_guide/index.htmld?stores_understanding.htm>`_ (for CS-Cart users).
+	To list orders that has been placed in a particular store only, switch to the store administrator's mode. For details, see `Understanding multi-store functionality <http://docs.cs-cart.com/4.3.x/user_guide/stores/index.html>`_ (for CS-Cart users).
 
 In this section
 ***************

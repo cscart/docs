@@ -2,7 +2,7 @@
 How To: Manage Return Requests
 ******************************
 
-The **Orders > Return requests** section contains a simple list of product return requests. You can sort or filter the list according to different parameters. To filter the requests, use the search panel to the right of the list.
+The **Orders → Return requests** section contains a simple list of product return requests. You can sort or filter the list according to different parameters. To filter the requests, use the search panel to the right of the list.
 
 To handle a particular request, click the gear button corresponding to the request and choose **Edit**. This will uncover the request details (separated into four tabs):
 

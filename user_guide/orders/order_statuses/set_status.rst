@@ -4,7 +4,7 @@ How To: Set up an Order Status
 
 To set up an order status:
 
-*   In the Administration panel, go to **Administration > Order statuses**.
+*   In the Administration panel, go to **Administration → Order statuses**.
 *   Create a new order status by clicking the **+** button or set up the existing one by clicking on its name.
 
 .. image:: img/order_status_02.png
@@ -23,7 +23,7 @@ To set up an order status:
 
     	.. note ::
 
-    		The email address of the order department to receive notification at is specified in the section **Settings > Company**.
+    		The email address of the order department to receive notification at is specified in the section **Settings → Company**.
 
     *   **Inventory** — Choose whether to decrease or increase the number of items in stock for products included in the order.
     *   **Remove CC info** — Select to remove sensitive credit card info from the database when the order status changes to this status.
@@ -31,7 +31,7 @@ To set up an order status:
 
         .. important ::
 
-        	To make this option work properly, enable the **Allow a customer to pay the order again if transaction was declined** option in the **Settings > Checkout** section.
+        	To make this option work properly, enable the **Allow a customer to pay the order again if transaction was declined** option in the **Settings → Checkout** section.
 
     *   **Invoice/Credit memo** — Choose the condition of the order after receiving this status: *Default* — the default behavior (an invoice ID is not generated); *Invoice* — the order has been paid and processed successfully (an invoice ID is generated); *Order* — the order has been placed, but not paid out; *Credit memo* — the order has been paid and processed, but then returned (a credit memo ID is generated).
 
@@ -39,19 +39,19 @@ To set up an order status:
 
         .. note ::
 
-        	This setting appears when the **Suppliers** add-on is installed and set up in the **Add-ons > Manage add-ons** section.
+        	This setting appears when the **Suppliers** add-on is installed and set up in the **Add-ons → Manage add-ons** section.
 
     *   **Change gift certificate status to** - Choose a status to be automatically assigned to gift certificates included in the order when the order status changes to this status.
 
         .. note ::
 
-        	This setting appears when the **Gift certificates** add-on is installed and set up in the **Add-ons > Manage add-ons** section.
+        	This setting appears when the **Gift certificates** add-on is installed and set up in the **Add-ons → Manage add-ons** section.
 
     *   **Allow return registration** — Select to allow customers to request a return if the order has this status.
 
     	.. note ::
 
-    		This setting appears when the **RMA** add-on is installed and set up in the **Add-ons > Manage add-ons** section.
+    		This setting appears when the **RMA** add-on is installed and set up in the **Add-ons → Manage add-ons** section.
 
 .. image:: img/order_status_01.png
     :align: center

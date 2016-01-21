@@ -6,7 +6,7 @@ Data charts must be assigned to a particular :doc:`report<../sales_reports/creat
 
 To add a chart to a report:
 
-*	In the **Orders > Sales reports** section, click the gear button and choose **Manage reports** to display a list of all available reports.
+*	In the **Orders → Sales reports** section, click the gear button and choose **Manage reports** to display a list of all available reports.
 *	Click the gear button corresponding to the required report and choose **Edit** from the drop-down list.
 
 .. image:: img/reports_02.png
