@@ -2,11 +2,15 @@
 Order Statuses
 **************
 
-The **Administration → Order statuses** section allows you to adjust the default set of order statuses. You can edit the details of the existing statuses  as well as add custom statuses.
+The **Administration → Order statuses** section allows you to adjust the default set of order statuses. You can edit the details of the existing statuses as well as add custom statuses.
 
 .. important ::
 
-	For users of CS-Cart: To add new order statuses, you need to operate in the root administrator's mode.
+    Your store can have up to 26 order statuses at the same time, as the database uses letters to identify them.
+
+.. important ::
+
+    If your CS-Cart installations has :doc:`multiple storefronts <../../stores/index>`, you need to be in the root administrator mode to add order statuses.
 
 The following statuses are available by default and cannot be deleted:
 

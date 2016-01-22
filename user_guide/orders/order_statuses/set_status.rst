@@ -11,6 +11,10 @@ To set up an order status:
     :align: center
     :alt: Add status
 
+.. important ::
+
+    		Your store can have up to 26 order statuses at the same time, as the database uses letters to identify them.
+
 *   Specify the following status options:
 
     *   **Name** — The name of the status.
