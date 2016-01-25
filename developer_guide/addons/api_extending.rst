@@ -5,11 +5,12 @@ Extending API
 In order to extend the API with a new entity with an add-on:
 
 *   In the add-on directory, create the subdirectories ``Tygh/Api/Entities``
-*   In the ``Tygh/Api/Entities`` subdirectory, create a file to contain the new entity (e.g. Things.php)
+*   In the ``Tygh/Api/Entities`` subdirectory, create a file for the new entity (e.g. **Things.php**)
 *   In this file, define the class of the same name (e.g. ``Things``) inherited from the abstract ``Api\Entity`` class, in the ``Tygh\Api\Entities`` namespace.
 
     This class must implement all 4 mandatory methods (CRUD).
 
+==============
 Basic Template
 ==============
 
@@ -52,4 +53,47 @@ Basic Template
                 'status' => Response::STATUS_NO_CONTENT,
             );
         }
+
+        public function privileges()
+        {
+            return array(
+                'create' => 'create_things',
+                'update' => 'edit_things',
+                'delete' => 'delete_things',
+                'index'  => 'view_things'
+            );
+        } 
     }
+
+.. important::
+
+    If users attempt to do something beyond their privileges, they will get **error 403 (Forbidden)**.
+
+====================
+Additional Functions
+====================
+
+--------------------
+privilegesCustomer()
+--------------------
+
+This function allows you to set the privileges of unauthorized users who access this API entity.
+
+.. important::
+
+    By default, unauthorized users can't access the API at all. 
+
+    To allow API access for unauthorized users, edit the **config.local.php** file in the root directory of your store: change ``'api_allow_customer' => false,`` to ``'api_allow_customer' => true,``.
+
+::
+
+    public function privilegesCustomer()
+    {
+        return array(
+            'index' => true
+        );
+    }
+
+.. note::
+
+    Both **privileges()** and **privilegesCustomer()** allow you to use ``true`` or ``false`` as shown in the example above.
