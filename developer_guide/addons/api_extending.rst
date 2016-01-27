@@ -69,15 +69,15 @@ Basic Template
 
     If users attempt to do something beyond their privileges, they will get **error 403 (Forbidden)**.
 
-====================
-Additional Functions
-====================
+==================
+Additional Methods
+==================
 
 --------------------
 privilegesCustomer()
 --------------------
 
-This function allows you to set the privileges of unauthorized users who access this API entity.
+This method allows you to set the privileges of unauthorized users who access this API entity.
 
 .. important::
 
