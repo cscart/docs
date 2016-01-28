@@ -26,8 +26,15 @@ Actions on categories
 The store administrator can carry out the following actions on the categories:
 
 *	Add individual categories (the **+** button) or several categories at a time (the **Bulk category addition** link under the gear button).
-*	Change attributes per category or simultaneously for several categories (the **Edit selected link** under the gear button).
-*	Delete categories (the **Delete selected** link under the gear button).
+*	Change attributes per category or simultaneously for several categories:
+
+	*	To change attributes per category, hover the mouse pointer over a category and click the apperared gear button. Choose **Edit**.
+	*	To change attributes simultaneously for several categories, tick the checkboxes of the desired categories, click the gear button in the upper right part of the page, and choose **Edit selected**.
+
+*	Delete categories:
+
+	*	To delete a particular category, hover the mouse pointer over this category and click the apperared gear button. Choose **Delete**.
+	*	To delete several categories simultaneously, tick the checkboxes of the desired categories, click the gear button in the upper right part of the page, and choose **Delete selected**.
 
 .. warning::
 
