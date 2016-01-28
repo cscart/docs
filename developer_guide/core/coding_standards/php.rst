@@ -32,43 +32,49 @@ Names of Variables, Array Keys and Class Properties
 
 2. Names **must** be meaningful and informative.
 
-  * **Wrong:** 
-
-    ::
-
-        $с, $uid, $obj, $flag
-
   * **Right:**
 
     ::
 
         $counter, $user_id, $product, $is_valid
 
-3. Variables that store the list of multiple objects of the same type **should** have the ``_list`` suffix, for example: ``$products_list``, ``$cart_applied_promotions_list``. That way it’s easier to determine which variable stores the list and which variable stores an element of the list. Take this array iteration in the ``foreach`` cycle, for example:
-
-  ::
-
-        foreach ($applied_promotions as $applied_promotion) {
-                // it is easy to mix up $applied_promotions and $applied_promotion when you look through the code
-        }
-
-        foreach ($applied_promotion_list as $applied_promotion) {
-            // the variables are easier to distinguish now
-        }
-
-4. Variables that store boolean values **should** have prefixes such as ``is_``, ``has_``, or any other appropriate verb.
-
   * **Wrong:** 
 
     ::
 
-        $valid, $render_flag, $parentness_status, $cache
+        $с, $uid, $obj, $flag
+
+3. Variables that store the list of multiple objects of the same type **should** have the ``_list`` suffix, for example: ``$products_list``, ``$cart_applied_promotions_list``. That way it’s easier to determine which variable stores the list and which variable stores an element of the list. Take this array iteration in the ``foreach`` cycle, for example:
+
+  * **Right:** 
+
+    ::
+
+        foreach ($applied_promotion_list as $applied_promotion) {
+            // the variables are easy to distinguish
+        }
+
+  * **Wrong:**
+
+    ::
+
+        foreach ($applied_promotions as $applied_promotion) {
+                // it is easy to mistake $applied_promotions for $applied_promotion when you look through the code
+        }
+
+4. Variables that store boolean values **should** have prefixes such as ``is_``, ``has_``, or any other appropriate verb.
 
   * **Right:**
 
     ::
 
         $is_valid, $has_rendered, $has_children, $use_cache
+
+  * **Wrong:** 
+
+    ::
+
+        $valid, $render_flag, $parentness_status, $cache
 
 5. Names of the variables **shouldn’t** begin with underscore. There were cases when one function included the ``$cache``, ``$_cache`` and ``$__cache`` variables.
 
@@ -80,17 +86,17 @@ Naming and Declaring Constants
 
 2. Multiple constants of the same type **should** have the repeating part in their names come first:
 
-  * **Wrong:** 
-
-    ::
-
-        GREEN_COLOR, RED_COLOR; ASC_SORTING, DESC_SORTING
-
   * **Right:**
 
     ::
 
         COLOR_GREEN, COLOR_RED; SORTING_ASC, SORTING_DESC
+
+  * **Wrong:** 
+
+    ::
+
+        GREEN_COLOR, RED_COLOR; ASC_SORTING, DESC_SORTING
 
 3. The names must be meaningful and informative.
 
@@ -252,18 +258,18 @@ Entity Names
 3. The names of the interfaces **must** begin with ``I``, for example: ``ICountable``, ``IFilesystemDriver``.
 
 4. If the name of a class, interface, trait or method has an acronym like **URL**, **API**, **REST** etc., then the acronym **must** follow the rules of **CamelCase**.
- 
-  * **Wrong:** 
-
-    ::
-
-        $a->getAPIURL(), $a = new REST();, class APITest
 
   * **Right:** 
 
     ::
 
         $a->getApiUrl(), $a = new Rest();, class ApiTest
+ 
+  * **Wrong:** 
+
+    ::
+
+        $a->getAPIURL(), $a = new REST();, class APITest
 
 ---------
 Constants
