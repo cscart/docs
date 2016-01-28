@@ -34,19 +34,19 @@ Names of Variables, Array Keys and Class Properties
 
   * **Wrong:** 
 
-    .. code-block:: php
+    ::
 
         $с, $uid, $obj, $flag
 
   * **Right:**
 
-    .. code-block:: php
+    ::
 
         $counter, $user_id, $product, $is_valid
 
 3. Variables that store the list of multiple objects of the same type **should** have the ``_list`` suffix, for example: ``$products_list``, ``$cart_applied_promotions_list``. That way it’s easier to determine which variable stores the list and which variable stores an element of the list. Take this array iteration in the ``foreach`` cycle, for example:
 
-  .. code-block:: php
+  ::
 
         foreach ($applied_promotions as $applied_promotion) {
                 // it is easy to mix up $applied_promotions and $applied_promotion when you look through the code
@@ -60,13 +60,13 @@ Names of Variables, Array Keys and Class Properties
 
   * **Wrong:** 
 
-    .. code-block:: php
+    ::
 
         $valid, $render_flag, $parentness_status, $cache
 
   * **Right:**
 
-    .. code-block:: php
+    ::
 
         $is_valid, $has_rendered, $has_children, $use_cache
 
@@ -82,13 +82,13 @@ Naming and Declaring Constants
 
   * **Wrong:** 
 
-    .. code-block:: php
+    ::
 
         GREEN_COLOR, RED_COLOR; ASC_SORTING, DESC_SORTING
 
   * **Right:**
 
-    .. code-block:: php
+    ::
 
         COLOR_GREEN, COLOR_RED; SORTING_ASC, SORTING_DESC
 
@@ -112,7 +112,7 @@ Magic Numbers in the Middle of the Code
   
   **Wrong:**
 
-  .. code-block:: php
+  ::
  
     $product->tracking = 'O'; // What does 'O' mean?
     ...
@@ -122,7 +122,7 @@ Magic Numbers in the Middle of the Code
 
 3. There may be a group of values, like the possible values of the field in the database. The constants of these values must use a separate class in the ``Tygh\Enum`` namespace. The example of such class is ``Tygh\Enum\ProductTracking``. It looks as follows:
 
-  .. code-block:: php
+  ::
 
     $product->tracking = Tygh\Enum\ProductTracking::TRACK_WITH_OPTIONS;
 
@@ -150,7 +150,7 @@ PHPDoc
 
 4. Here’s the example of formatting done right:
 
-  .. code-block:: php
+  ::
 
       /**
        * Generates date-time intervals of a given period for sales reports
@@ -179,7 +179,7 @@ Names
 
 Function names must be written in lowercase and begin either with ``fn_``, or with ``db_``:
 
-  .. code-block:: php
+  ::
 
       fn_get_addon_option_variants
 
@@ -191,7 +191,7 @@ If several arguments have standard values, or the arguments aren’t primary, un
 
 Here’s the example of how you can change the code:
 
-  .. code-block:: php
+  ::
 
       // before
       function fn_get_product_data($product_id, &$auth, $lang_code = CART_LANGUAGE, $field_list = '', $get_add_pairs = true, $get_main_pair = true, $get_taxes = true, $get_qty_discounts = false, $preview = false, $features = true, $skip_company_condition = false)
@@ -255,13 +255,13 @@ Entity Names
  
   * **Wrong:** 
 
-    .. code-block:: php
+    ::
 
         $a->getAPIURL(), $a = new REST();, class APITest
 
   * **Right:** 
 
-    .. code-block:: php
+    ::
 
         $a->getApiUrl(), $a = new Rest();, class ApiTest
 
@@ -271,7 +271,7 @@ Constants
 
 The naming rules are the same as for constants outside of classes. Here’s an example:
 
-  .. code-block:: php
+  ::
 
       class Api
       {
@@ -292,7 +292,7 @@ Properties
 
   For example:
 
-  .. code-block:: php
+  ::
 
       class Api
       {
@@ -322,7 +322,7 @@ Methods
 
   For example:
 
-  .. code-block:: php
+  ::
 
       class ClassLoader
       {
@@ -372,7 +372,7 @@ Namespaces
 
 7. The ``use`` directives **must** be grouped with each other. For example:
 
-  .. code-block:: php
+  ::
 
       use Tygh\Registry;
       use Tygh\Settings;
@@ -398,7 +398,7 @@ SQL Queries
 
       The proper placement of quotation marks and dots does matter.
 
-  .. code-block:: mysql
+  ::
 
       $partner_balances = db_get_hash_array(
           "SELECT pa.partner_id, u.user_login, u.firstname, u.lastname, u.email, SUM(amount) as amount"
@@ -422,7 +422,7 @@ SQL Queries
 
 6. Here’s the example of the two previous points:
 
-  .. code-block:: mysql
+  ::
 
          $joins = array();
 
