@@ -4,6 +4,10 @@ Products
 
 Use this section to manage the products in your catalog. It displays a sorted list of all products in the store. To filter the list, use the search to the right of the list.
 
+.. image:: img/products.png
+    :align: center
+    :alt: Products list
+
 Each entry in the list has the following attributes:
 
 *	**Image** – Product thumbnail.
@@ -11,7 +15,7 @@ Each entry in the list has the following attributes:
 *	**Price** – Product price.
 *	**List price** – Price suggested by the product manufacturer. Good practice is to show that your price is lower than the list price.
 *	**Quantity** – Number of products in the stock.
-*	**Status** – *Active* – product is available on the storefront, *Disabled* – product is not available on the storefront, or *Hidden* – category does not appear on the storefront, but customers can access it via a direct link.
+*	**Status** – *Active* – product is available on the storefront, *Disabled* – product is not available on the storefront, or *Hidden* – product does not appear on the storefront, but customers can access it via a direct link.
 
 These attributes can be changed on the fly without opening the product for editing.
 
@@ -21,9 +25,9 @@ Actions on products
 The store administrator can carry out the following actions on the products:
 
 *	Add products individually (the **+** button) or in bulk (the **Bulk product addition** link under the gear button) and clone products (the **Clone selected** link under the gear button).
-*	Change product attributes per product (the **Edit** link under the gear button) or simultaneously for several products (the **Global update** link under the gear button).
+*	Change product attributes per product (the **Edit** link under the gear button) or simultaneously for several products (the **Edit selected** link under the gear button in the right upper corner of the page).
 *	Export products (the **Export selected** link under the gear button). See this `topic <http://docs.cs-cart.com/4.3.x/user_guide/manage_products/import_export/product_export.html>`_ for more information about export procedures.
-*	Delete products.
+*	Delete products. To delete a particular product, hover the mouse pointer over this product and click the apperared gear button. Choose **Delete**. To delete several products simultaneously, tick the checkboxes of the desired products, click the gear button in the upper right part of the page, and choose **Delete selected**.
 *	Look through the list of products with subscriptions with the help of the **Product subscriptions** link under the gear button.
 *	Export products to eBay with the **Export to eBay** link. The `eBay synchronization <http://docs.cs-cart.com/4.3.x/user_guide/addons/eBay/index.html>`_ add-on must be installed and set up in the **Add-ons → Manage add-ons** section.
 
@@ -34,4 +38,16 @@ In this section
     :maxdepth: 1
     :glob:
 
-    *
+    featured
+    product_attributes
+    attaching_files_to_products
+    downloadable
+    max_order_quantity
+    minimum_order_quantity
+    quantity_select_box
+    same_value_all_products
+    upload_file_size
+    wholesale
+    images_import_problem
+    incorrect_thumbnails
+    wysiwyg

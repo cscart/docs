@@ -28,6 +28,10 @@ Information
 
 	An alternative text describes an image in words. Technically, the text that you enter appears inside the ``alt=""`` and ``title=""`` attributes of the ``<img>`` HTML tag. The text is shown when the image is missing or cannot be displayed. It is good practice to have an alternative text associated with the image as an additional SEO-wise opportunity.
 
+.. image:: img/category_info.png
+    :align: center
+    :alt: Information
+
 Meta data
 ---------
 
@@ -38,7 +42,13 @@ Meta data
 Availability
 ------------
 
-*	**User groups** (requires commercial license) - `User groups <http://docs.cs-cart.com/4.3.x/user_guide/users/user_groups/index.html>`_ whose members can access the category.
+*	**User groups** (requires commercial license) - `User groups <http://docs.cs-cart.com/4.3.x/user_guide/users/user_groups/index.html>`_ whose members can access the category:
+
+	*	**All** - All users can access the category.
+	*	**Guest** - Unregistered users can access the category.
+	*	**Registered user** - Users with registered accounts can access the category.
+	*	**Apply to all subcategories** - Apply access for these usergroups to all subcategories of this category.
+
 *	**Position** - Position of the category relatively to the other categories of the same level. If no category positions are defined, categories are sorted alphabetically.
 *	**Creation date** - Date when the category was added to the catalog.
 
@@ -50,6 +60,10 @@ This tab duplicates the global layout of the location to which this storefront p
 By using this tab, you can disable blocks that are globally enabled, and, on the contrary, enable blocks that are globally disabled. This makes it possible to configure an individual layout for different storefront pages.
 
 Any modification that you make under this tab will not affect other storefront pages.
+
+.. image:: img/category_layouts.png
+    :align: center
+    :alt: Layouts
 
 .. note::
 
@@ -64,6 +78,7 @@ Add-ons
 
 Applicable category attributes that depend on the active add-on modules. Requires commercial license.
 
+*	**SEO name** - The value to which the standard URL will be changed.
 *	**Age verification** - If selected, the access to the category is limited by the customer age.
 *	**Age limit** - Minimum age for accessing the category and the products under the category.
 *	**Warning message** - Message to be displayed if the customer does not qualify for the category contents.
@@ -71,7 +86,7 @@ Applicable category attributes that depend on the active add-on modules. Require
 
 .. important::
 
-	The attributes require the `Age Verification <http://docs.cs-cart.com/4.3.x/user_guide/addons/age_verification/index.html>`_ and `Comments and Reviews <http://docs.cs-cart.com/4.3.x/user_guide/addons/comments_and_reviews/index.html>`_ add-ons to be enabled and configured.
+	The attributes require the `Age Verification <http://docs.cs-cart.com/4.3.x/user_guide/addons/age_verification/index.html>`_, `Comments and Reviews <http://docs.cs-cart.com/4.3.x/user_guide/addons/comments_and_reviews/index.html>`_, and `SEO <http://docs.cs-cart.com/4.3.x/user_guide/addons/seo/index.html>`_ add-ons to be enabled and configured.
 
 Views 
 *****

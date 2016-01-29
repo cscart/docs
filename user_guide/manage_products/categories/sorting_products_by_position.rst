@@ -17,6 +17,8 @@ To sort the products by position:
     :align: center
     :alt: Products of the category
 
+*	Click the **Save** button.
+
 .. important::
 
 	The defined positions affect sorting only if the **Sort by Position: Low To High** or **Sort by Position: High To Low** sorting is selected on the product list page in the storefront.
