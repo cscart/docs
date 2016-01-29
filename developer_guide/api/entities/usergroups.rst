@@ -22,7 +22,7 @@ URLs
 Filtering
 =========
 
-You can filter user groups by their type or status.
+Use the following parameters to find user groups with specific properties.
 
 .. list-table::
     :header-rows: 1
