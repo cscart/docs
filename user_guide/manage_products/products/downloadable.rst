@@ -8,6 +8,10 @@ To create a downloadable product:
 *	Click on a product name in the list or add a new product by clicking the **+** button.
 *	Select the **Downloadable** check box in the **Extra** section.
 
+.. image:: img/downloadable_01.png
+    :align: center
+    :alt: How to make a product downloadable
+
 .. important::
 
     This check box appears when the **Enable selling downloadable products** option is activated in the **Settings → General** section.
@@ -20,13 +24,12 @@ To create a downloadable product:
     If the **Time-unlimited download** check box is selected, the **Download key TTL (for electronically distributed products), hours** setting on the **Settings > General** page (the **Catalog** section) in the administration panel does not affect the product. The **Download key TTL (for electronically distributed products), hours** setting defines time in hours within which the customer can download the file(s) after the purchase. This period can be prolonged for a certain order on the order details page.
 
 *	Click the **Save/Create** button.
-
-.. image:: img/downloadable_01.png
-    :align: center
-    :alt: How to make a product downloadable
-
 *	Open the **Files to sell** tab.
-*	In this tab, click the **Add file** button. This will open a special form to complete. In the **File** section of the form, upload the necessary files.
+*	In this tab, click the **Add file** button. This will open a special form to complete. In the **File** section of the form, upload the necessary files. 
+
+.. note::
+
+    If you need to upload several files and divide them in several groups, use the **Add folder** button to create folders first.
 
 .. image:: img/downloadable_02.png
     :align: center

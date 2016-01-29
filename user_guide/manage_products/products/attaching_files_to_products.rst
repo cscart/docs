@@ -22,3 +22,5 @@ To attach a file to a product:
 .. image:: img/attachment_01.png
     :align: center
     :alt: New attachment
+
+This functionality is usefull in case that you need to attach some manual or instructions to a product, etc.
