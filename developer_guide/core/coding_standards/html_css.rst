@@ -64,13 +64,13 @@ HTML
 
      * **Right:**
 
-        .. code-block:: html
+       .. code-block:: html
 
             <b><i>test</i></b>
 
      * **Wrong:**
 
-        .. code-block:: html
+       .. code-block:: html
 
             <b><i>text</b></i>
 
@@ -92,15 +92,15 @@ HTML
 
 9. An element ID must begin with a letter and may only include digits, letters and the underscore symbol.
 
-   * **Right:**
+  * **Right:**
 
-      .. code-block:: html
+    .. code-block:: html
             
            <div id="box_params_1234"></div>
         
-   * **Wrong:**
+  * **Wrong:**
 
-      .. code-block:: html
+    .. code-block:: html
 
             <div id="1212asd[sdsd]"></div>
 
@@ -118,9 +118,9 @@ JavaScript
 
 1. Always escape the content of a Smarty variable when the variable is a part of HTML parameter or JavaScript code: otherwise a single or double quote in the variable will result in an error.
 
-    *  **Right:**
+  *  **Right:**
 
-       .. code-block:: javascript
+     .. code-block:: javascript
 
             <script language="javascript">
             var param = '{$smarty.get.param|escape:javascript}';
@@ -128,9 +128,9 @@ JavaScript
             ...
             <input type="text" name="aa" value="{$param|escape:html}">
 
-    *  **Wrong:**
+  *  **Wrong:**
 
-       .. code-block:: javascript
+     .. code-block:: javascript
 
             <script language="javascript">
             var param = '{$smarty.get.param}';
@@ -207,15 +207,15 @@ Smarty
 
 1. All flag parameters passed to the templates must have the **true/false** values, not **Y/N** or anything else.
 
-   * **Right:**
+  * **Right:**
 
-      .. code-block:: javascript
+    .. code-block:: javascript
 
            {include file="common/price.tpl" value=$price hide_sign=true}
 
-   * **Wrong:**
+  * **Wrong:**
 
-      .. code-block:: javascript
+    .. code-block:: javascript
 
            {include file="common/price.tpl" value=$price hide_sign="Y"}
 
@@ -239,14 +239,14 @@ Smarty
 
 5. Use short notation to assign values to variables.
 
-   * **Right:**
+  * **Right:**
 
-      .. code-block:: javascript
+    .. code-block:: javascript
 
            {$test = 123}
 
-   * **Wrong:**
+  * **Wrong:**
 
-      .. code-block:: javascript
+    .. code-block:: javascript
 
            {assign var="test" value=123}

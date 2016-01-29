@@ -50,9 +50,9 @@ General Rules
 
 7. Use full notation with the reference to ``document`` for the ``ready`` event, that is summoned when the document is loaded.
 
-   * **Right:**
+  * **Right:**
 
-       .. code-block:: javascript
+    .. code-block:: javascript
 
            $(document).ready(function() {
                 // do something
@@ -60,15 +60,15 @@ General Rules
 
       **or**
 
-         .. code-block:: javascript
+    .. code-block:: javascript
 
              $(function() {
                    // do something
                   });
 
-   * **Wrong:**
+  * **Wrong:**
 
-         .. code-block:: javascript
+    .. code-block:: javascript
 
              $(function()), $(window).ready(), etc…
 
