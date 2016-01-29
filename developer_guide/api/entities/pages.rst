@@ -241,7 +241,7 @@ GET /pages/
 
 .. code-block:: bash
 
-    curl -X GET 'http://example.com/api/2.0/pages’
+    curl -X GET 'http://example.com/api/2.0/pages'
 
 This example request returns the list of pages with their properties.
 
@@ -265,7 +265,7 @@ If you successfully create a page, you will receive **HTTP/1.1 201 Created**.
  
 If the page couldn’t be created, you will receive **HTTP/1.1 400 Bad Request**.
 
-**Required fields:** **page_type**, **page**
+**Required fields:** *page_type**, *page*
 
 **Available fields:** *page_type*, *page*, *parent_id*, *status*, *position*, *usergroup_ids*, *localization*, *new window* (for links only), *use_avail_period*, *avail_from_timestamp*, *avail_till_timestamp*, *description*, *meta_keywords*,  *meta_description*, *page_title*, *link* (only for links), *seo_name*
  
