@@ -86,23 +86,43 @@ Once all the errors are fixed, you can export the product again. This time the e
     :align: center
     :alt: If there are no errors, click Close.
 
-===============================================
-Restrictions on Exporting Products With Options
-===============================================
+===============================
+Exporting Products With Options
+===============================
 
-To export a product with options, you must group these options under **Option Combinations**. To create an option combination for a product, do this: 
+To export a product with options, you must group these options under **Option Combinations**. 
 
-1. Go to to **Products → Products → <Desired Product>**
+.. important::
 
-2. Switch to the **Options** tab and choose an option
+    Option combinations are treated as `listing variations <http://pages.ebay.com/help/sell/listing-variations.html>`_ by eBay. Please keep in mind that eBay allows listing variations only in specific categories. 
 
-3. Tick the **Inventory** checkbox and save the changes
+To create an option combination for a product, do this: 
 
-4. Click the **Option combinations** button and click the **+** button to create a combination
+1. Go to to **Products → Products → <Desired Product>**.
+
+2. Switch to the **Options** tab and choose an option.
+
+3. Tick the **Inventory** checkbox and save the changes.
+
+4. Click the **Option combinations** button and click the **+** button to create a combination.
 
 .. important::
 
       eBay allows no more than 200 product combinations.
 
-If you enable **Track with options** for a product, you must specify the product quantity for each combination individually. Otherwise the total product quantity will be displayed. You can specify product quantity in the **In stock** field on the product details page.
+When you export a product with to eBay, all the option combinations of the product are exported, except for those combinations that aren't in stock. Here are the possible situations, depending on the **Inventory** setting of the product:
+
+* **Track with options:** the number of items is tracked for every specific option combination. Those numbers are exported to eBay. If a combination doesn't have a number of items specified, it is considered out of stock. That combination won't appear on eBay.
+
+* **Track without options:** for eBay export purposes it is assumed that you have the same number of items for every single option combination. During the export the number is taken from the product's **In stock** field.
+
+  .. hint::
+
+      For example, if you have red and blue T-shirts as option combinations and specify *10* in the **In stock** field, you'll have 20 T-shirts (10 red ones and 10 blue ones) listed on eBay.
+
+* **Do not track:** works the same way as **Track without options**.
+
+.. image:: img/export/ebay_combinations.png
+    :align: center
+    :alt: If you don't track a the number of items for every option combination of a product, all option combinations will have the same number of items when exported to eBay.
 
