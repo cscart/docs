@@ -24,12 +24,36 @@ Actions on products
 
 The store administrator can carry out the following actions on the products:
 
-*	Add products individually (the **+** button) or in bulk (the **Bulk product addition** link under the gear button) and clone products (the **Clone selected** link under the gear button).
-*	Change product attributes per product (the **Edit** link under the gear button) or simultaneously for several products (the **Edit selected** link under the gear button in the right upper corner of the page).
-*	Export products (the **Export selected** link under the gear button). See this `topic <http://docs.cs-cart.com/4.3.x/user_guide/manage_products/import_export/product_export.html>`_ for more information about export procedures.
-*	Delete products. To delete a particular product, hover the mouse pointer over this product and click the apperared gear button. Choose **Delete**. To delete several products simultaneously, tick the checkboxes of the desired products, click the gear button in the upper right part of the page, and choose **Delete selected**.
-*	Look through the list of products with subscriptions with the help of the **Product subscriptions** link under the gear button.
-*	Export products to eBay with the **Export to eBay** link. The `eBay synchronization <http://docs.cs-cart.com/4.3.x/user_guide/addons/eBay/index.html>`_ add-on must be installed and set up in the **Add-ons → Manage add-ons** section.
+*	Add products individually or in bulk:
+
+	*	To add products individually, click the **+** button in the upper right part of the page.
+	*	To add products in bulk, click the gear button in the upper right part of the page, and choose **Bulk product addition**.
+
+*	Clone products:
+
+	*	To clone selected products, tick the checkboxes of the desired products, click the gear button in the upper right part of the page, and choose **Clone selected**.
+
+*	Change attributes per product or simultaneously for several products:
+
+	*	To change attributes per product, hover the mouse pointer over a product and click the appearing gear button. Choose **Edit**.
+	*	To change attributes simultaneously for several products, tick the checkboxes of the desired products, click the gear button in the upper right part of the page, and choose **Edit selected**.
+
+*	Export products:
+
+	*	To export selected products, tick the checkboxes of the desired products, click the gear button in the upper right part of the page, and choose **Export selected**. See this `topic <http://docs.cs-cart.com/4.3.x/user_guide/manage_products/import_export/product_export.html>`_ for more information about export procedures.
+
+*	Delete products:
+
+	*	To delete a particular product, hover the mouse pointer over this product and click the appearing gear button. Choose **Delete**.
+	*	To delete several products simultaneously, tick the checkboxes of the desired products, click the gear button in the upper right part of the page, and choose **Delete selected**.
+
+*	Look through the list of products with subscriptions:
+
+	*	To look through the list of subscriptions, click the gear button in the upper right part of the page, and choose **Product subscriptions**.
+
+*	Export products to eBay:
+
+	*	To export selected products to eBay, tick the checkboxes of the desired products, click the gear button in the upper right part of the page, and choose **Export to eBay**. The `eBay synchronization <http://docs.cs-cart.com/4.3.x/user_guide/addons/eBay/index.html>`_ add-on must be installed and set up in the **Add-ons → Manage add-ons** section.
 
 In this section
 ***************
@@ -38,7 +62,6 @@ In this section
     :maxdepth: 1
     :glob:
 
-    featured
     product_attributes
     attaching_files_to_products
     downloadable

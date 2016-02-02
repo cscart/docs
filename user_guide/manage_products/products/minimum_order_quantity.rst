@@ -16,4 +16,4 @@ To set up a minimum order quantity for a product:
 
 .. important::
 
-	After that a customer will not be able to buy less items of this product than the number set up in the **Minimum order quantity** option.
+	After that a customer will not be able to buy fewer items of this product than the number set up in the **Minimum order quantity** option.
