@@ -14,7 +14,7 @@ To create a new user group for customers, complete the steps below:
 
 3. Enter the name your user group in the **User group** field.
 
-4. Set the **Type** to **Administrator**.
+4. Set the **Type** to **Customer**.
 
 5. Click the **Create** button.
 
