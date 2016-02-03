@@ -95,21 +95,21 @@ After you unpack the archive with your store, make some changes the **config.loc
 
     *   -   What should I change?
         -   How should I change it?
-    *   -   $config['db_host'] = 'DB_host';
+    *   -   ``$config['db_host'] = 'DB_host';``
         -   If the database and the website are stored on the same server (as they usually are), replace **DB_host** with **localhost**.
-    *   -   $config['db_name'] = 'DB_name';
+    *   -   ``$config['db_name'] = 'DB_name';``
         -   Replace **DB_name** with the name of the new server’s database.
-    *   -   $config['db_user'] = 'DB_username';
+    *   -   ``$config['db_user'] = 'DB_username';``
         -   Replace **DB_username** with the name of the user of the new server’s database.
-    *   -   $config['db_password'] = 'DB_password';
+    *   -   ``$config['db_password'] = 'DB_password';``
         -   Replace **DB_password** with the database user’s password.
-    *   -   $config['http_host'] = 'example.com';
+    *   -   ``$config['http_host'] = 'example.com';``
         -   Replace **example.com** with your store’s domain name. Make sure this domain name points to your new server, or you won’t be able to access your website by using it.
-    *   -   $config['http_path'] = '';
+    *   -   ``$config['http_path'] = '';``
         -   If the files of your store are located in the server’s document root, leave it as is. If you want your store to be available at *domain.com/cs-cart*, put all the files of your store into the **cs-cart** folder in your website’s document root and change the line to this: ``$config['http_path'] = '/cs-cart';``.
-    *   -   $config['https_host'] = 'example.com';
+    *   -   ``$config['https_host'] = 'example.com';``
         -   Replace **example.com** with the name of the secure server host. Usually it is the same as your domain name.
-    *   -   $config['https_path'] = '/subfolder';
+    *   -   ``$config['https_path'] = '/subfolder';``
         -   If the files of your store are located in the server’s document root, leave it as is. If you want your store to be available at *domain.com/cs-cart*, put all the files of your store into the **cs-cart** folder in your website’s document root and change the line to this: ``$config['http_path'] = '/cs-cart';``.
 
 =======================================================
