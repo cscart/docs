@@ -138,7 +138,7 @@ JavaScript
             ...
             <input type="text" name="aa" value="{$param}">
 
-​2. Don’t use the ``javascript:`` prefix, if possible—a link is meant to lead somewhere. JavaScript code must be written in the event handler, for example, via microformat:
+​2. **Never use** the ``javascript:`` prefix—a link is meant to lead somewhere. JavaScript code must be written in the event handler, for example, via microformat:
 
 .. code-block:: html
 
