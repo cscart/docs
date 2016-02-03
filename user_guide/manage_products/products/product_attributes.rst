@@ -28,6 +28,10 @@ Information
 
 	An alternative text describes an image in words. Technically, the text that you enter appears inside the ``alt=""`` and ``title=""`` attributes of the ``<img>`` HTML tag. The text is shown when the image is missing or cannot be displayed. It is good practice to have an alternative text associated with the image as an additional SEO-wise opportunity.
 
+.. note:: 
+
+	By default thumbnails are generated from detailed images automatically, but you can upload them manually by clicking the **upload them manually** link.
+
 Options settings
 ----------------
 
@@ -46,7 +50,7 @@ Pricing / inventory
 *	**Inventory** - Way of tracking the inventory of the current product: track with product options or without product options or do not track at all. If the product is selected to be tracked with options, the common product quantity becomes unavailable, and you are supposed to specify the number of in-stock items individually for each product option/variant.
 *	**Minimum order quantity** - Minimum number of product items that a customer must add to the cart to be able to order the product. The minimum amount always appears on a product details page of the storefront right after the product price.
 *	**Maximum order quantity** - Maximum number of product items that a customer can order at a time. 0 means no maximum limit.
-*	**Quantity step** - Number of product items between the two ing choices in the **Quantity** select box.
+*	**Quantity step** - Number of product items between the two choices in the **Quantity** select box.
 *	**List quantity count** - Maximum of choices in the **Quantity** select box.
 *	**Taxes** – Select applicable taxes. To configure the set of available taxes, use the section `Shipping/Taxes <http://docs.cs-cart.com/4.3.x/user_guide/shipping_and_taxes/index.html>`_.
 
@@ -98,6 +102,8 @@ An alternative text describes an image in words. Technically, the text that you 
 
 SEO
 ***
+
+*	**SEO name** - The value to which the standard URL will be changed.
 *	**Page title** - Title of the product page on the storefront, which is displayed in the web browser when somebody is viewing the page. Required for SEO purposes.
 *	**META description** - Contents of the HTML meta tag describing the product. Required for SEO purposes.
 *	**META keywords** - Contents of the HTML tag containing a list of search keywords for the product. Required for SEO purposes.
@@ -123,13 +129,13 @@ Product options appear on the product details page on the storefront as selectab
 *	**Required** - If selected, this option is mandatory for selection/completion.
 *	**Missing variants handling** - Select how impermissible/missing option combinations should be handled: *Display message* - the option will be marked as not available, if the option is mandatory (see the previous setting) customers will not be able to add the product to the cart; *Hide option completely* - the option will be hidden, if the option is mandatory (see the previous setting) customers will be able to add the product to the cart.
 
-An option variant is an extension to the product option of type select box, radio group or check box, which may have a separate status, icon and amount of reward points as well as a weight modifier and a price modifier. Option variants have the following attributes:
+An option variant is an extension to the product option of type *select box*, *radio group* or *check box*, which may have a separate status, icon and amount of reward points as well as a weight modifier and a price modifier. Option variants have the following attributes:
 
 *	**Position** - Position of the variant relatively to the position of the other variants in the list.
 *	**Name** - Name of the product variant. For example, if the option is titled “Size”, the product variants to the option can be “small”, “medium”, “large”, etc.
 *	**Modifier/Type** - Positive or negative value that modifies the original product price. The modifier can be either an absolute value or a percentage.
 *	**Weight modifier/Type** - Positive or negative value that modifies the original product weight. The modifier can be either an absolute value or a percentage.
-*	**Status** - Status of the product option (*Active* or *Disabled*).
+*	**Status** - Status of the product option variant (*Active* or *Disabled*).
 *	**Icon** - Thumbnail to represent the option variant. The image can be either uploaded from a local computer or the server file system or linked to a remote location where the required image is physically located. An alternative text describes the image and is shown when the image is missing or cannot be displayed. It is good practice to have an alternative text associated with the image as an additional SEO-wise opportunity.
 *	**Earned point modifier/Type** - Positive or negative value that modifies the original number of reward points that customers receive at their accounts when they buy the product. The modifier can be either an absolute value or a percentage.
 
@@ -160,13 +166,16 @@ This tab contains a list of the product wholesale prices that have the following
 *	**Type** - Type of the discount: *Absolute* - cost of 1 discounted item; *Percent* - percent discount off the base product item price. Percentage discount has certain natural limitations: the discount cannot be more than 100%, and the discount will not be saved as long as it applies to 1 product item and all user groups.
 *	**User group** (requires commercial license) – `User groups <http://docs.cs-cart.com/4.3.x/user_guide/users/user_groups/index.html>`_ whose members can take advantage of the wholesale price.
 
-Files
-*****
+More information about how to define wholesale prices for the product you can read `here <http://docs.cs-cart.com/4.3.x/user_guide/manage_products/products/wholesale.html>`_.
+
+Files to sell
+*************
+
 Requires commercial license.
 
-This tab contains a list of files that are associated with this downloadable product. Each file may have the following attributes:
+This tab contains a list of files that are associated with this `downloadable product <http://docs.cs-cart.com/4.3.x/user_guide/manage_products/products/downloadable.html>`_. Each file may have the following attributes:
 
-*	**Name** - Name of the file as you customers will see it on the product page. Note that it does not change the original file name.
+*	**Name** - Name of the file as your customers will see it on the product page. Note that it does not change the original file name.
 *	**Position** - Position of the file relatively to the position of the other files in the list.
 *	**File** - File to be downloaded. The file can be uploaded from a local computer or the server file system, or be linked to a remote location where the file is physically located.
 *	**Preview** - Preview file that can be freely downloaded from the product details page on the storefront.
@@ -184,27 +193,11 @@ This tab contains a list of email addresses that visitors have left to receive a
 
 You can add the subscriber by his e-mail with the **Add Subscriber** button or you can choose subscribers among the customers of your store with the **Select customer** button.
 
-Layouts
-*******
-
-Contents of the product details page. Requires commercial license.
-
-This tab duplicates the global layout of the location to which this storefront page belongs.
-
-By using this tab, you can disable blocks that are globally enabled, and, on the contrary, enable blocks that are globally disabled. This makes it possible to configure an individual layout for different storefront pages.
-
-Any modification that you make under this tab will not affect other storefront pages.
-
-.. note::
-
-	For more information on blocks, see `Look and Feel → Layouts <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/index.html>`_.
-
 Add-ons
 *******
 
 Product attributes that depend on the active add-ons.
 
-*	**Configurable** (requires commercial license) - If selected, the product is labeled as configurable, i.e. consisting of multiple components. Once you select this option and save the product, a new tab **Configuration** will be added to the product details. Use the controls under this tab to define the product configuration.
 *	**Returnable** - If selected, the product is labeled as available for the return.
 *	**Return period** (requires commercial license) - Period of time following the day of purchase during which the product can be returned.
 *	**Sales amount** - Number of sold product items. This value is calculated automatically if the **Bestsellers and on-sale products** add-on is active (**Add-Ons → Manage add-ons**). Yet, you can change the current value manually.
@@ -217,7 +210,6 @@ Product attributes that depend on the active add-ons.
 *	**eBay product title** - The title of the product to be used at eBay. This setting appears when the **eBay synchronization** add-on is installed and set up in the **Add-ons → Manage add-ons** section.
 *	**eBay product description** - The description of the product to be used at eBay. This setting appears when the **eBay synchronization** add-on is installed and set up in the **Add-ons → Manage add-ons** section.
 *	**Reviews** (requires commercial license) - Customer reviews or ratings, or both.
-*	**Buy Now URL** (requires commercial license) - URL under the **Buy Now** button that leads to the external website of the product vendor. This setting appears when the **Catalog mode** is enabled in the **Add-ons → Manage add-ons** section.
 
 Features
 ********
@@ -249,6 +241,10 @@ Along with the set of bound products and the offered discount, each combination 
 *	**Display in promotions** - If selected, the offered product combination appears in **Products > Promotions**.
 *	**Status** - Status of the product combination (*Active* or *Disabled*).
 
+.. note::
+
+	This tab is available when the `Buy together <http://docs.cs-cart.com/4.3.x/user_guide/addons/buy_together/index.html>`_ add-on is installed and activated in the **Add-ons → Manage add-ons** section.
+
 Tags
 ****
 
@@ -256,30 +252,19 @@ This tab includes a list of tags associated with the product. Tags appear on the
 
 *	**Tags** - Tags that have been added to the product. Start typing in this field to add a new tag. You can choose among the existing variants or create a new tag.
 
-Configuration
-*************
-
-Requires commercial license.
-
-This tab appears if the **Configurable** check box is selected in the **Add-ons** tab. The configuration may include several product groups, i.e. components of the configurable products that customer can select on the storefront.
-
-*	**Position** - Position of the group relatively to the position of the other groups in the list.
-*	**Step** - Step at which the component appears.
-*	**Group name** - Name of the product group that the component belongs to.
-*	**Default configuration products** - Products selected in the configuration by default.
-*	**Required** - If selected, the customer must choose a product belonging to the group.
-
 Attachments
 ***********
 
 Requires commercial license.
 
-This tab contains product attachments, which are files associated with the products. Unlike the contents of the **Files** tab, the files that appear here are available for non-downloadable products as well. Each attachment can have the following attributes:
+This tab contains product attachments, which are files associated with the products. Unlike the contents of the **Files to sell** tab, the files that appear here are available for non-downloadable products as well. Each attachment can have the following attributes:
 
 *	**Name** - Name of the product attachment.
 *	**Position** - Position of the attachment relatively to the position of the other product attachments.
 *	**File** - File that is used as the product attachment. The file can be uploaded from a local computer or the server file system, or it can be a link to a remote location where the file is physically located.
 *	**User groups** - `User groups <http://docs.cs-cart.com/4.3.x/user_guide/users/user_groups/index.html>`_ whose members the attachment is available for.
+
+In `this article <http://docs.cs-cart.com/4.3.x/user_guide/manage_products/products/attaching_files_to_products.html>`_ you can read more about attachments.
 
 Required products
 *****************
@@ -299,7 +284,7 @@ Use this tab to set up the product price in reward points and specify the number
 *	**Allow payment by points** - If selected, the product can be paid for with reward points.
 *	**Override global PER** - If selected, the product has a fixed price in points that is independent of the point-to-money exchange rate.
 *	**Price in points** - Fixed product price in points.
-*	**Override global/category point value for this product** - If selected, the below values override the global reward points specified in **Products → Reward points**.
+*	**Override global/category point value for this product** - If selected, the below values override the global reward points specified in **Marketing → Reward points**.
 *	**User group** - `User groups <http://docs.cs-cart.com/4.3.x/user_guide/users/user_groups/index.html>`_ whose members are granted reward points for buying the product.
 *	**Amount** - Number of reward points to be granted to the user group member who bought the product.
 *	**Amount type** - Absolute number of points or percentage-based value calculated in the following manner: the product cost is divided into 100, and the result is multiplied by the value in the field.
@@ -310,3 +295,22 @@ Reviews
 Requires commercial license.
 
 List of customers' reviews of the product. Requires that the **Reviews** field in the **Add-ons** tab be set to *Communication*, *Rating*, or both. In this tab, you can add own reviews and edit existing product reviews and ratings.
+
+Layouts
+*******
+
+Contents of the product details page. Requires commercial license.
+
+This tab duplicates the global layout of the location to which this storefront page belongs.
+
+By using this tab, you can disable blocks that are globally enabled, and, on the contrary, enable blocks that are globally disabled. This makes it possible to configure an individual layout for different storefront pages.
+
+Any modification that you make under this tab will not affect other storefront pages.
+
+.. note::
+
+	For more information on blocks, see `Look and Feel → Layouts <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/index.html>`_.
+
+.. note::
+
+	Most of the attributes can be imported using `product import <http://docs.cs-cart.com/4.3.x/user_guide/manage_products/import_export/product_import.html>`_.
