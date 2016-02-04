@@ -4,6 +4,10 @@ Product Attributes
 
 When you create or edit a product, you should specify a number of product attributes. For convenience, attributes are grouped under several tabs.
 
+.. image:: img/product_attributes_01.png
+    :align: center
+    :alt: Tabs
+
 General
 *******
 
@@ -108,10 +112,20 @@ SEO
 *	**META description** - Contents of the HTML meta tag describing the product. Required for SEO purposes.
 *	**META keywords** - Contents of the HTML tag containing a list of search keywords for the product. Required for SEO purposes.
 
+.. image:: img/product_attributes_02.png
+    :align: center
+    :alt: SEO
+
+In this section you can read more about `SEO <http://docs.cs-cart.com/4.3.x/user_guide/addons/seo/index.html>`_.
+
 Options
 *******
 
 This tab allows you to manage the product options and option variants as well as controlling the option combinations and adding forbidden/allowed combinations.
+
+.. image:: img/product_attributes_03.png
+    :align: center
+    :alt: Options
 
 .. note::
 
@@ -128,6 +142,10 @@ Product options appear on the product details page on the storefront as selectab
 *	**Comment** - Comment to be displayed below the option on the storefront.
 *	**Required** - If selected, this option is mandatory for selection/completion.
 *	**Missing variants handling** - Select how impermissible/missing option combinations should be handled: *Display message* - the option will be marked as not available, if the option is mandatory (see the previous setting) customers will not be able to add the product to the cart; *Hide option completely* - the option will be hidden, if the option is mandatory (see the previous setting) customers will be able to add the product to the cart.
+
+.. image:: img/product_attributes_04.png
+    :align: center
+    :alt: Option attributes
 
 An option variant is an extension to the product option of type *select box*, *radio group* or *check box*, which may have a separate status, icon and amount of reward points as well as a weight modifier and a price modifier. Option variants have the following attributes:
 
@@ -165,6 +183,10 @@ This tab contains a list of the product wholesale prices that have the following
 *	**Value** - Product wholesale price (per item).
 *	**Type** - Type of the discount: *Absolute* - cost of 1 discounted item; *Percent* - percent discount off the base product item price. Percentage discount has certain natural limitations: the discount cannot be more than 100%, and the discount will not be saved as long as it applies to 1 product item and all user groups.
 *	**User group** (requires commercial license) – `User groups <http://docs.cs-cart.com/4.3.x/user_guide/users/user_groups/index.html>`_ whose members can take advantage of the wholesale price.
+
+.. image:: img/product_attributes_05.png
+    :align: center
+    :alt: Quantity discounts
 
 More information about how to define wholesale prices for the product you can read `here <http://docs.cs-cart.com/4.3.x/user_guide/manage_products/products/wholesale.html>`_.
 
@@ -252,6 +274,10 @@ This tab includes a list of tags associated with the product. Tags appear on the
 
 *	**Tags** - Tags that have been added to the product. Start typing in this field to add a new tag. You can choose among the existing variants or create a new tag.
 
+.. image:: img/product_attributes_06.png
+    :align: center
+    :alt: Tags
+
 Attachments
 ***********
 
@@ -273,6 +299,9 @@ Requires commercial license.
 
 This tab contains a list of required products, which must be bought together with this product. To add a new product, click the **Add product** button.
 
+.. image:: img/product_attributes_07.png
+    :align: center
+    :alt: Required products
 
 Reward points
 *************
