@@ -10,6 +10,10 @@ The section contains a list of all product features that are available in your s
     :align: center
     :alt: Product features
 
+.. note ::
+
+	You can use features to filter products in the advanced search in the **Products → Products** section.
+
 In this section
 ***************
 
@@ -17,4 +21,7 @@ In this section
     :maxdepth: 1
     :glob:
 
-    *
+    feature_attributes
+    product_features
+    manufacturer
+    feature_comparison

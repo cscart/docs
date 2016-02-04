@@ -21,4 +21,6 @@ In this section
     :maxdepth: 1
     :glob:
 
-    *
+    filter_attributes
+    adding_filter
+    filter_free_shipping
