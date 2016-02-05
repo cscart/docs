@@ -1,5 +1,5 @@
 *************************************
-Option and Option Variants attributes
+Option and Option Variants Attributes
 *************************************
 
 Option attributes
@@ -12,7 +12,7 @@ Product options appear on the product details page on the storefront as selectab
 *	**Inventory** – If selected, the option has its own number of items in stock, which is tracked separately.
 *	**Store** - Store to which the product option originally belongs.
 *	**Type** – Type of the product option: *Select box*, *Radio group*, *Check box*, *Text*, *Text area* or *File*. Specification of some of the option types read in this :doc:`article <../options/option_settings>`.
-*	**Description** - Description of the product option as it appears on the storefront under the question sign (?) next to the option name.
+*	**Description** - Description of the product option as it appears on the storefront under the question sign (**?**) next to the option name.
 *	**Comment** – Comment to be displayed below the option on the storefront.
 *	**Required** - If selected, this option is mandatory for selection/completion.
 *	**Missing variants handling** - Select how impermissible/missing option combinations should be handled:
@@ -34,5 +34,11 @@ Option variants have the following attributes:
 *	**Status** - Status of the product option (*Active* or *Disabled*).
 *	**Icon** – Thumbnail to represent the option variant. The image can be either uploaded from a local computer or the server file system, or linked to a remote location where the required image is physically located.
 	An alternative text describes the image and is shown when the image is missing or cannot be displayed. It is good practice to have an alternative text associated with the image as an additional SEO-wise opportunity.
+
+	These images are shown in the option variants section on the product detail page in the storefront.
+
+.. image:: img/option_variants.png
+    :align: center
+    :alt: Option variants in the storefront
 
 *	**Earned point modifier/Type** (requires commercial license) - Positive or negative value that modifies the original number of reward points that customers receive at their accounts when they buy the product. The modifier can be either an absolute value or a percentage.

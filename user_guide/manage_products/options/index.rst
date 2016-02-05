@@ -20,4 +20,10 @@ In this section
     :maxdepth: 1
     :glob:
 
-    *
+    product_options
+    option_attributes
+    global_options
+    option_settings
+    comb_images
+    exceptions
+    max_file_uploads
