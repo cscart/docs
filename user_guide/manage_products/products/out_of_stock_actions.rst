@@ -14,7 +14,7 @@ Go to **Products → Products → <Desired Product>** and choose one of the foll
 
       Use the **Avail since** parameter of a product to specify when the product becomes available for purchase.
 
-* **Sign up for notification**—offer customers to sign up for an email notification. They will receive an email once the product is in stock again.
+* **Sign up for notification**—offer customers to sign up for an email notification so that they receive an email once the product is in stock again.
 
 .. image:: img/out_of_stock_actions.png
     :align: center
@@ -28,11 +28,11 @@ Go to **Products → Products → <Desired Product>** and choose one of the foll
 None
 ====
 
-The **Add to Cart** button won't appear if:
+The **Add to Cart** button won't appear in these cases:
 
-* you have **0** items in stock and you don't allow negative amount of items in your inventory; or
+* You have **0** items in stock and you don't allow negative amount of items in your inventory.
 
-* the product isn’t available yet because you have specified a later date in the **Avail since** field.
+* The product isn’t available yet because you have specified a later date in the **Avail since** field.
 
   .. note::
 
@@ -92,9 +92,9 @@ You can view product subscriptions in 2 ways:
 
 You can add subscribers to the list using these buttons:
 
-* **Add subscriber**—enter the email address of a subscriber manually.
+* **Add subscriber**—enter the email address of a subscriber manually
 
-* **Select customer**—choose the registered customers you want to subscribe to email notifications about the product's availability.
+* **Select customer**—choose the registered customers you want to subscribe to email notifications about the product's availability
 
 .. important::
 
