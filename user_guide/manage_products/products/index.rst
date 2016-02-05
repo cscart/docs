@@ -63,6 +63,7 @@ In this section
     :glob:
 
     product_attributes
+    out_of_stock_actions
     attaching_files_to_products
     downloadable
     max_order_quantity
