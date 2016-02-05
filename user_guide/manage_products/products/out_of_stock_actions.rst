@@ -54,7 +54,7 @@ If you specify the **Avail since** date for a product, customers won't be able t
 
 .. image:: img/buy_in_advance.png
     :align: center
-    :alt: There is no Add to Cart button, but there is a message about when the product becomes available.
+    :alt: There is a message about when the product becomes available, but customers can add the product to cart.
 
 ========================
 Sign Up for Notification
