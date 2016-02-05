@@ -18,13 +18,13 @@ To import the products to the store:
 *   In the **Import options** section, specify the following settings:
 
     *   **Category delimiter** - Select the delimiter of the category path which is used in the CSV file.
-    *   **Feature variants delimiter** - Select a feature variants delimiter, that will be used in the CSV file.
-    *   **Images directory** - Specify the path to the directory where images are located. This will be used if the image file is specified without a path in the CSV file.
-    *   **Files directory** - Specify the path to the directory where product files (for downloadable products) are located. This will be used if the **File** field data is specified without a path in the CSV file.
+    *   **Feature variants delimiter** - Select a feature variants delimiter that is used in the CSV file.
+    *   **Images directory** - Specify the path to the directory where images are located. This is used if the image file is specified without a path in the CSV file.
+    *   **Files directory** - Specify the path to the directory where product files (for downloadable products) are located. This is used if the **File** field data is specified without a path in the CSV file.
     *   **Delete all existing product files before import** - Select this check box if you want to delete all files of your existing downloadable products.
     *   **Reset inventory** - Select this check box if you want to reset inventory for all products.
-    *   **Price decimal separator** - Type a decimal separator for product prices, that will be used in the CSV file.
-    *   **CSV delimiter** - Select the CSV delimiter, which is used in the CSV file (e.g. comma, semicolon, tab).
+    *   **Price decimal separator** - Type a decimal separator for product prices that is used in the CSV file.
+    *   **CSV delimiter** - Select the CSV delimiter which is used in the CSV file (e.g. comma, semicolon, tab).
     *   **Select file** - Choose location of the CSV file with the import data and select this file.
 
     .. note::
@@ -41,4 +41,8 @@ To get an example of the correct CSV file, export your products in the **Product
 
 .. important::
 
-	The **Product code** field is mandatory and must be unique for each product. If its value is equal to the existing product code, this product data will be replaced with the imported data.
+    The **Product code**, **Language**, and **Store** fields are mandatory.
+    
+.. important::
+
+	The **Product code** field must be unique for each product. If its value is equal to the existing product code, this product data will be replaced with the imported data.
