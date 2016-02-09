@@ -12,11 +12,17 @@ A CSV file can contain the following fields:
 
 **Language**. Two-letter language code. This field is **mandatory**.
 
+To find out language code of the desired language:
+
+*	In the administartion panel, go to **Administartion → Languages**.
+*	Switch to the **Available** tab.
+*	Find the desired language and see it language code in the **Language code** row.
+
 .. important::
 
 	EXAMPLE: *en*
 
-**Product ID**. Numerical ID of the product.
+**Product id**. Numerical ID of the product.
 
 .. important::
 
@@ -48,7 +54,7 @@ A CSV file can contain the following fields:
 
 	EXAMPLE: *50*
 
-**Weight**. Weight of the product in units of weight defined by the weight symbol in the **Settings → General** page in the CS-Cart Administration panel. By default, it is *lbs*. The weight must be an integral number or a decimal fraction with no more than two decimal places.
+**Weight**. Weight of the product in units of weight defined by the weight symbol in the **Settings → General** page in the Administration panel. By default, it is *lbs*. The weight must be an integral number or a decimal fraction with no more than two decimal places.
 
 .. important::
 
@@ -72,7 +78,7 @@ A CSV file can contain the following fields:
 
 	EXAMPLE: *1*
 
-**List quantity count**. Maximum of choices in the **Quantity** select box.
+**List qty count**. Maximum of choices in the **Quantity** select box.
 
 .. important::
 
@@ -92,7 +98,7 @@ A CSV file can contain the following fields:
 
 .. important::
 
-	If this field is not completed, the date of the product creation will be the date this product was imported.
+	If this field is not completed, the date of the product creation will be the date this product has been imported.
 
 **Downloadable**. It must be **Y** if product is downloadable, **N** - if not.
 
@@ -112,7 +118,7 @@ The file can be specified without a path (just its name) if you specify **Files 
 
 **Inventory tracking**. This field describes the inventory tracking type: **D** - do not track, **B** - track without options, **O** - track with options.
 
-**Out-of-stock actions**. Select if customers should be able to buy the product in advance before it is not yet available for sale - **B** , or sign up to receive an email notification when the product is available - **S**. **N** - no action.
+**Out of stock actions**. Select if customers should be able to buy the product in advance before it is not yet available for sale - **B** , or sign up to receive an email notification when the product is available - **S**. **N** - no action.
 
 **Free shipping**. It must be **Y** if the product is shipped for free, **N** - if not.
 
@@ -127,10 +133,6 @@ The file can be specified without a path (just its name) if you specify **Files 
 	EXAMPLE: */home/client/public_html/cscart-4.3.1/var/files/exim/backup/images/thumbnail_image.jpg*
 
 The image file can be specified without a path (just its name) if you specify **Images directory** on the **Import products** page when importing. Please refer to the :doc:`Product Import <../import_export/product_import>` article.
-
-.. important::
-
-	Do not use the **Image URL** field for uploading an image as long as this field has a different designation. Furthermore, the **Image URL** field is not available for importing in the current version of CS-Cart anymore.
 
 **Detailed image**. The full path to the detailed product image.
 
@@ -188,7 +190,7 @@ The image file can be specified without a path (just its name) if you specify **
 
 	EXAMPLE: *FREE US shipping over $100! Orders within next 2 days will be shipped on Monday*
 
-**Taxes**. Name of the tax defined in your CS-Cart installation which will be applied to the product. It is required to create taxes on the **Taxes** page before (!) importing them. Several taxes must be delimited by a comma.
+**Taxes**. Name of the tax defined in your store which will be applied to the product. It is required to create taxes on the **Taxes** page before (!) importing them. Several taxes must be delimited by a comma.
 
 .. important::
 
@@ -212,7 +214,7 @@ The image file can be specified without a path (just its name) if you specify **
 
     Example of options with variants: *Color: S[Red, Green, Blue]; Size: R[X, XL, XX]*
 
-If you want to import a product with options that have variants with **Modifier/Type** or **Weight modifier/Type** (they can be set up on the product details page in the **Options** tab), it must be in the following format: **Option name: Option type[Variant1///modifier=0.000///modifier_type=TYPE, Variant2///weight_modifier=0.000///weight_modifier_type=TYPE, ..., VariantN]**. Where **///** - Category delimiter that you specify on the **Import products** page, **TYPE** in **modifier_type** - **A** for $ and **P** for %; **TYPE** in **weight_modifier_type** - **A** for Ibs, **P** for %.
+If you want to import a product with options that have variants with **Modifier/Type** or **Weight modifier/Type** (they can be set up on the product detail page in the **Options** tab), it must be in the following format: **Option name: Option type[Variant1///modifier=0.000///modifier_type=TYPE, Variant2///weight_modifier=0.000///weight_modifier_type=TYPE, ..., VariantN]**. Where **///** - Category delimiter that you specify on the **Import products** page, **TYPE** in **modifier_type** - **A** for $ and **P** for %; **TYPE** in **weight_modifier_type** - **A** for Ibs, **P** for %.
 
 .. important::
 
@@ -224,7 +226,7 @@ If you want to import a product with options that have variants with **Modifier/
 
 	EXAMPLE: *Computers///New products; Computers///Desktops* (the delimiter is *///*).
 
-**Items in a box**. The minimum and maximum number of product items to be shipped in a separate box. It must be in **min:[number];max:[number]** format.
+**Items in box**. The minimum and maximum number of product items to be shipped in a separate box. It must be in **min:[number];max:[number]** format.
 
 .. important::
 
@@ -236,7 +238,7 @@ If you want to import a product with options that have variants with **Modifier/
 
 	EXAMPLE: *length:10;width:15;height:15*
 
-**Usergroup IDs**. Numerical IDs of the usergroups that the user belongs to.
+**Usergroup IDs**. Numerical IDs of the usergroups that the product will be displayed for.
 
 .. important::
 
@@ -248,7 +250,7 @@ If you want to import a product with options that have variants with **Modifier/
 
 	EXAMPLE: *25 Dec 2015 14:05:00*
 
-**Exceptions type**. A type of the product options exceptions: **Forbidden** - all option exceptions are forbidden, and the customer cannot add the product with such option combination to the cart, all other option combinations become permissible; **Allowed** - all option exceptions are allowed, and the customer can add the product with such option combination to the cart, all other option combinations become impermissible.
+**Exceptions type**. A type of the product options exceptions: **F** - all option exceptions are forbidden, and the customer cannot add the product with such option combination to the cart, all other option combinations become permissible; **A** - all option exceptions are allowed, and the customer can add the product with such option combination to the cart, all other option combinations become impermissible.
 
 .. important::
 
@@ -259,6 +261,10 @@ If you want to import a product with options that have variants with **Modifier/
 .. important::
 
 	EXAMPLE: *Sample Store*
+
+.. note::
+
+	In Multi-Vendor the **Vendor** field is used instead.
 
 **SEO name**. SEO name of the product.
 

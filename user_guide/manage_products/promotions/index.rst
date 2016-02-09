@@ -9,7 +9,17 @@ Promotions
     :maxdepth: 1
     :glob:
 
-    *
+    auto_coupons
+    setting_promotion
+    category_discount
+    creating_coupon
+    discount_if_number_of_products_exceeds_value
+    discount_if_order_total_exceeds_value
+    discount_two_products
+    free_product
+    gift_certificate_promo
+    user_group_discounts
+
 
 ===================
 Types of Promotions
