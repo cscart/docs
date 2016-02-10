@@ -5,8 +5,8 @@ Product Features
 URLs
 ====
 
-*   http://example.com/api/**features**—refer to all product features. Only ``GET`` and ``POST`` are supported.
-*   http://example.com/api/**features/:id**—refer to a particular product feature. ``GET``, ``PUT``, and ``DELETE`` are supported.
+*   http://example.com/api/**features**—refer to all product features. Supports ``GET`` and ``POST``.
+*   http://example.com/api/**features/:id**—refer to a particular product feature. Supports ``GET``, ``PUT``, and ``DELETE``.
 *   http://example.com/api/**products/:id/features**—refer to all features of a particular :doc:`product <products>`.
 
 Pagination
@@ -22,9 +22,9 @@ To get a specific number of features or list of features from a concrete page in
     *   -   Pagination param
         -   Description
     *   -   page
-        -   Shows features on a page with the defined number
+        -   Shows features on a page with the defined number.
     *   -   items_per_page
-        -   Shows N features, where N - is a number defined in the parameter
+        -   Shows N features, where N is a number defined in the parameter.
 
 **Examples:**
 
@@ -52,14 +52,14 @@ The full list of supported fields is given below (mandatory fields are marked wi
 .. list-table::
     :header-rows: 1
     :stub-columns: 1
-    :widths: 5 30 5 10
+    :widths: 5 25 5 15
 
     *   -   Field name
         -   Description
         -   Default value
         -   Supported values
     *   -   company_id*
-        -   Store or vendor to which the feature belongs
+        -   Store or vendor to which the feature belongs.
         -   Default company ID
         -   Valid company ID
     *   -   description*
@@ -69,87 +69,87 @@ The full list of supported fields is given below (mandatory fields are marked wi
     *   -   feature_type*
         -   Feature type
         -   —
-        -   | ``C`` for Check box:Single
-            | ``M`` for Check box:Multiple
-            | ``S`` for Select box:Text
-            | ``N`` for Select box:Number
-            | ``E`` for Select box:Brand/Manufacturer
-            | ``T`` for Others:Text
-            | ``O`` for Others:Number
-            | ``D`` for Others:Date
-            | ``G`` for features group
+        -   | ``C``—Check box: Single
+            | ``M``—Check box: Multiple
+            | ``S``—Select box: Text
+            | ``N``—Select box: Number
+            | ``E``—Select box: Brand/Manufacturer
+            | ``T``—Others: Text
+            | ``O``—Others: Number
+            | ``D``—Others: Date
+            | ``G``—group of features
     *   -   categories_path
-        -   Categories to which the feature can be applied
+        -   Categories to which the feature can be applied.
         -   ''
         -   Comma-separated string of category IDs
     *   -   comparison
-        -   Flag, take the feature into account on product comparison or not
+        -   Determines whether to show this feature on a product comparison page or not.
         -   ``N``
-        -   | ``Y``
-            | ``N``
+        -   | ``Y``—yes
+            | ``N``—no
     *   -   display_on_catalog
-        -   Flag, show feature in product catalog or not
+        -   Determines whether show this feature in the product catalog or not.
         -   ``N``
-        -   | ``Y``
-            | ``N``
+        -   | ``Y``—yes
+            | ``N``—no
     *   -   display_on_product
-        -   Flag, show feature on detailed product page
+        -   Determines whether to show this feature on a detailed product page or not.
         -   ``N``
-        -   | ``Y``
-            | ``N``
+        -   | ``Y``—yes
+            | ``N``—no
     *   -   display_on_header
-        -   Flag, if enabled, the feature is shown under the product header
+        -   Determines whether to show this feature under the product header or not.
         -   ``N``
-        -   | ``Y``
-            | ``N``
+        -   | ``Y``—yes
+            | ``N``—no
     *   -   feature_id
-        -   Feature ID
+        -   The unique ID of the feature.
         -   Set automatically
         -   integer
     *   -   full_description
-        -   Feature description
+        -   Feature description.
         -   ''
         -   string
     *   -   group_position
-        -   Position in group
+        -   Position in group.
         -   0
         -   integer
     *   -   parent_id
-        -   ID of the parent group (``0`` if no parent group)
+        -   ID of the parent group (``0`` if there is no parent group).
         -   0
         -   integer
     *   -   position
-        -   Feature position in the feature list
+        -   The position of this feature in the feature list.
         -   0
         -   integer
     *   -   prefix
-        -   Feature name prefix
+        -   The prefix of the feature name.
         -   ''
         -   string
     *   -   status
         -   Status
         -   ``A``
-        -   | ``A`` for active
-            | ``D`` for disabled
-            | ``H`` for hidden
+        -   | ``A``—active
+            | ``D``—disabled
+            | ``H``—hidden
     *   -   suffix
-        -   Feature name suffix
+        -   The suffix of the feature name.
         -   ''
         -   string
     *   -   value
         -   Feature value
         -   —
-        -   Value depending on the feature type
+        -   Value depending on the feature type.
     *   -   value_int
-        -   Feature integer value
+        -   Feature integer value.
         -   —
         -   integer
     *   -   variant_id (only for types with variants)
-        -   ID of the selected variant
+        -   ID of the selected variant.
         -   —
         -   integer
     *   -   variants (only for types with variants)
-        -   Available feature value variants
+        -   Available feature value variants.
         -   —
         -   array with variant ID as key and variant data as value (content explained :ref:`below <product-feature-variants>`)
 
@@ -173,11 +173,11 @@ Product Feature Variants
         -   ''
         -   string
     *   -   feature_id
-        -   ID of the feature the variant is assigned to
+        -   ID of the feature the variant is assigned to.
         -   —
         -   integer
     *   -   feature_type
-        -   Type of the feature the variant is assigned to
+        -   Type of the feature the variant is assigned to.
         -   —
         -   Valid feature type (see above)
     *   -   image_pair
@@ -220,3 +220,157 @@ Product Feature Variants
         -   Variant ID
         -   Set automatically
         -   integer
+
+
+Example Usage
+=============
+
+GET /features/
+--------------
+
+.. code-block:: bash
+
+    curl -X GET 'http://example.com/api/features'
+
+This example request returns the list of product features with their properties.
+
+GET /features/:id/
+------------------
+
+.. code-block:: bash
+
+    curl -X GET 'http://example.com/api/features/14'
+
+This example request returns the properties of the product feature with ``feature_id=14``.
+
+POST /features/
+---------------
+
+Send the data in the body of the HTTP request. The data should comply with the ``content-type``.
+
+If you successfully create a feature, you will receive **HTTP/1.1 201 Created**.
+ 
+If the feature couldn’t be created, you will receive **HTTP/1.1 400 Bad Request**.
+
+**Required fields:** *company_id*, *description*, *feature_type*
+
+**Available fields:** *company_id*, *feature_type*, *parent_id*, *display_on_product*, *display_on_catalog*, *display_on_header*, *description*, *lang_code*, *prefix*, *suffix*, *categories_path*, *full_description*, *status*, *comparison*, *position*, *variants*
+ 
+.. code-block:: bash
+
+    curl --header 'Content-type: application/json' -X POST 'http://example.com/api/features' --data-binary '{"company_id":"1", "feature_type":"C", "description":"Handmade", "status":"A"}'
+
+This example request creates a new checkbox feature called **Handmade** in the store with the ``company_id=1``. The status of this product feature is set to *Active*.
+
+In the response you receive the ID of the feature.
+
+.. code-block:: bash
+
+    {feature_id: 22}
+
+PUT /features/:id/
+------------------
+
+Send the data in the body of the HTTP request. The data should comply with the ``content-type``.
+
+**Required fields:** *company_id*, *description*, *feature_type*
+
+**Available fields:** *company_id*, *feature_type*, *parent_id*, *display_on_product*, *display_on_catalog*, *display_on_header*, *description*, *lang_code*, *prefix*, *suffix*, *categories_path*, *full_description*, *status*, *comparison*, *position*, *variants*
+
+.. code-block:: bash
+
+    curl --header 'Content-type: application/json' -X PUT 'http://example.com/api/features/22' --data-binary '{"company_id":"1", "feature_type":"S", "comparison":"Y", "variants":[{"variant": "Unique"}, {"variant": "Mass-produced"}]}'
+
+This example request turns the feature with ``feature_id=22`` (**Handmade** in our case) into a *Select Box: Text* feature and creates 2 new variants for it: *Unique* and *Mass-produced*. The request also makes this feature appear on the product comparison page.
+
+To update an already existing variant, add its **variant_id** to the array:
+
+.. hint::
+
+    Learn the variant IDs of a feature with **GET /features/:id**.
+
+.. code-block:: bash
+
+    curl --header 'Content-type: application/json' -X PUT 'http://example.com/api/features/22' --data-binary '{"company_id":"1", "feature_type":"S", "variants":[{"variant_id":"150", "variant":"Unique"}, {"variant_id":"151", "variant":"Mass-produced"}]}'
+
+This example request updates the variants of the the feature with ``feature_id=22`` (**Handmade** in our case)
+
+.. warning::
+
+    Be sure to send all the feature variants in the array—the variants that you don't send will be lost.
+
+In the response you receive the ID of the feature.
+
+.. code-block:: bash
+
+    {feature_id: 22}
+
+DELETE /features/:id/
+---------------------
+
+If you successfully delete a product feature, you will receive **HTTP/1.1 204 No Content**.
+
+If the product feature couldn’t be deleted, you will receive **HTTP/1.1 400 Bad Request**.
+
+If the product feature doesn’t exist, you will receive **HTTP/1.1 404 Not Found**.
+
+.. code-block:: bash
+
+    curl -X DELETE 'http://example.com/api/features/22'
+
+This example request deletes the product feature with the ``feature_id=22``.
+
+Working with the Features of a Product
+======================================
+
+Learn a Product's Features
+--------------------------
+
+To get the features of a product use the following method:
+
+.. code-block:: bash
+
+    curl -X GET 'http://example.com/api/products/14/features'
+
+This example request returns the list of features of a product with ``product_id=14``.
+
+Create a Product with a Feature
+-------------------------------
+
+Suppose we have a product feature of the **Other: Text** type with ``feature_id=23``.
+
+Let's specify the value of this feature as we create a new product with ``POST /products/``.
+
+Send the data in the body of the HTTP request. The data should comply with the ``content-type``.
+
+.. code-block:: bash
+
+    curl --header 'Content-type: application/json' -X POST 'http://example.com/api/products' --data-binary '{"product": "New Product", "category_ids": "223", "main_category": "223", "price": "10", "status": "A", "product_features": {"23": {"feature_type": "T", "value": "Test"}}}'
+
+This example request creates a new product with the value of the feature set to *Test*. 
+
+If you successfully create a product, you will receive the ID of the product the in the response.
+
+.. code-block:: bash
+
+    {product_id: 250}
+
+Update a Product's Feature
+--------------------------
+
+Update a feature of a product using ``PUT /products/:id/``.
+
+Send the data in the body of the HTTP request. The data should comply with the ``content-type``.
+
+.. code-block:: bash
+
+    curl --header 'Content-type: application/json' -X PUT 'http://example.com/api/products/250' --data-binary {"product_features": {"23": {"feature_type": "T", "value": "Feature updated"}}}
+
+This example request updates the product with ``product_id=250``. It sets the value of the text feature with ``feature_id=23`` to *Feature updated*.
+
+In the response you receive the ID of the product.
+
+.. code-block:: bash
+
+    {product_id: 250}
+
