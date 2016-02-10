@@ -12,5 +12,5 @@ For example, the Retina displays found on the iPhone, iPad, and MacBook are HiDP
 
 .. important::
 
-    When you enable the **HiDPI Displays Support** addon, the **Thumbnail format** setting under **Settings → Thumbnails** is set to *PNG*.
+    When you enable the **HiDPI Displays Support** addon, the **Thumbnail format** setting under **Settings → Thumbnails** is set to *PNG*. This is done to generate higher-quality images.
 
