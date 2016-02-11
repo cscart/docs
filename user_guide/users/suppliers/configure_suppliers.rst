@@ -14,15 +14,15 @@ Step 1. Enable Suppliers
 
 To enable **Suppliers** in your store, complete the following steps:
 
-1.1. In the administration panel go to **Add-ons → Manage add-ons**.
+* In the Administration panel go to **Add-ons → Manage add-ons**.
 
-1.2. Find the **Suppliers** add-on and make it active. If it is not installed yet, switch to the **Browse all available add-ons** tab and click the **Install** button.
+* Find the **Suppliers** add-on and make it active. If it is not installed yet, switch to the **Browse all available add-ons** tab and click the **Install** button.
 
-1.3. Click the name of the add-on to configure it.
+* Click the name of the add-on to configure it.
 
-1.4. If you want your customers to see the supplier of the product, tick the **Display product supplier company** checkbox.
+* If you want your customers to see the supplier of the product, tick the **Display product supplier company** checkbox.
 
-1.5. Click **Save**.
+* Click the **Save** button.
 
 =========================
 Step 2. Create a Supplier
@@ -30,29 +30,31 @@ Step 2. Create a Supplier
 
 You need to create a supplier before you continue:
 
-2.1. Go to **Customers → Suppliers**.
+* Go to **Customers → Suppliers**.
 
-2.2. Click the **+ button** to add a supplier. 
+* Click the **+** button to add a supplier. 
 
-2.3. Specify the supplier's information in the mandatory fields:
+* Specify the supplier's information in the mandatory fields:
 
-* name
+ * name
+ * email
 
-* email
+ .. note::
 
-.. note::
+     When a customer places an order on a supplier's product, the supplier will receive a notification to the specified email.
 
-    When a customer places an order on a supplier's product, the supplier will receive a notification to the specified email.
+ * phone
+ * address from where his/her products are shipped: city, country, state/province, zip/postal code
 
-* phone
+.. important::
 
-* address from where his products are shipped: city, country, state/province, zip/postal code
+	This address is used when calculating the realtime shipping.
 
 .. image:: img/supplier_creation.png
     :align: center
     :alt: Use the Advanced search and save your search patterns to optimize your workflow.
 
-2.4. Click **Create and close**.
+* Click the **Create and close** button.
 
 ====================================
 Step 3. Assign Suppliers to Products
@@ -60,13 +62,17 @@ Step 3. Assign Suppliers to Products
 
 The last step is to assign a supplier to products:
 
-3.1. Go to **Products → Products**. 
+* Go to **Products → Products**. 
 
-3.2. Click on the name of a product you want to assign a supplier to.
+* Click on the name of a product you want to assign a supplier to.
 
-3.3. Select the desired supplier in the **Supplier** select box. 
+* Select the desired supplier in the **Supplier** select box.
 
-3.4. Click the **Save** button.
+.. image:: img/supplier_add.png
+    :align: center
+    :alt: Select the desired supplier in the Supplier select box.
+
+* Click the **Save** button.
 
 .. important::
 
@@ -78,15 +84,15 @@ Step 4. Suppliers and Shipping Methods
 
 You can select what shipping methods are available to suppliers:
 
-1. Go to **Customers → Suppliers**.
+* Go to **Customers → Suppliers**.
 
-2. Click the name of the supplier.
+* Click the name of the supplier.
 
-3. Switch to the **Shippings** tab.
+* Switch to the **Shippings** tab.
 
-4. Tick the checkboxes next to the shipping methods you want to make available for the supplier.
+* Tick the checkboxes next to the shipping methods you want to make available for the supplier.
 
-5. Click the **Save** button.
+* Click the **Save** button.
 
 .. image:: img/supplier_shipping.png
     :align: center

@@ -16,17 +16,17 @@ Allowing Customers to Apply for a Vendor Account
 
 To allow customers apply for a vendor account, complete the following steps:
 
-1. In the administration panel, go to **Settings → Vendors**.
+* In the Administration panel, go to **Settings → Vendors**.
 
-2. Tick  the **Allow users to apply for vendor account** checkbox.
+* Tick  the **Allow users to apply for vendor account** checkbox.
 
-3. Tick the **Automatically create the administrator account for the new approved vendor. (If the "Allow users to apply for vendor account" setting is enabled)** checkbox. 
+* Tick the **Automatically create the administrator account for the new approved vendor. (If the "Allow users to apply for vendor account" setting is enabled)** checkbox. 
 
 .. image:: img/settings_vendors.png
     :align: center
     :alt: Tick the two highlighted checkboxes under Settings → Vendors to allow customers to apply for a vendor account.
 
-4. Click **Save**.
+* Click the **Save** button.
 
 =======================
 The Application Process
@@ -50,17 +50,17 @@ After the customer fills in the form and clicks **Submit**, the administrator of
 Activating a Vendor Account
 ===========================
 
-To activate a vendor account, the admininistrator must complete the following steps:
+To activate a vendor account, the administrator must complete the following steps:
 
-1. In the administration panel, go to **Vendors → Vendors**.
+* Go to **Vendors → Vendors**.
 
-2. Find the vendor account you want to activate.
+* Find the vendor account you want to activate.
 
 .. hint::
 
     The vendor accounts that haven't been activated or disabled yet have the **New** status. 
 
-3. Change the status of the desired account to **Active**.
+* Change the status of the desired account to **Active**.
 
 .. image:: img/change_vendor_status.png
     :align: center

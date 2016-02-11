@@ -10,6 +10,10 @@ The root administrator can review the income and expenditure statistics (total, 
 
 The section contains the sorted list of all vendors, incomes, and payouts. To filter the list, use the search form to the right of the list. To make the search results more precise, use the **Advanced search** option.
 
+.. image:: img/account_balance.png
+    :align: center
+    :alt: The Account balance page
+
 Every entry on the list has the following attributes:
 
 * **Vendor**—name of the vendor.
@@ -24,7 +28,7 @@ Every entry on the list has the following attributes:
 
 * **Payment**—the payment method through which the vendor received the payment. If the entry represents the store income, you will see the ID of the customer order containing the vendor products.
 
-* **Comments**—administrator's comments on the payout; click the **expand button** (grey arrow) to see the comments.
+* **Comments**—administrator's comments on the payout; click the **expand** button (grey arrow) to see the comments.
 
 Below the list you can see the detailed accounting information:
 
@@ -44,24 +48,28 @@ Registering a New Payout
 
 To register a new payout, follow these steps:
 
-1. Open Multi-Vendor administration panel.
+* Open Multi-Vendor administration panel.
 
-2. Go to **Vendors → Account Balance**.
+* Go to **Vendors → Account Balance**.
 
-3. Click the **+ button** to add a new payout.
+* Click the **+** button to add a new payout.
 
-4. Fill in the form:
+* Fill in the form:
 
-* **Vendor**—select the vendor.
+	* **Vendor**—select the vendor.
 
-* **Sales period**—specify the period for which the payout is being made.
+	* **Sales period**—specify the period for which the payout is being made.
 
-* **Payment amount**—set the amount of the payout.
+	* **Payment amount**—set the amount of the payout.
 
-* **Payment method**—specify the payment method through which the vendor receives the payment.
+	* **Payment method**—specify the payment method through which the vendor receives the payment.
 
-* **Comments**—leave comments on the current payment.
+	* **Comments**—leave comments on the current payment.
 
-* **Notify vendor**—if selected, the vendor will receive an email notification that a new payout has been registered.
+	* **Notify vendor**—if selected, the vendor will receive an email notification that a new payout has been registered.
 
-5. Click **Create**.
+.. image:: img/new_payout.png
+    :align: center
+    :alt: Create new payout
+
+* Click the **Create** button.

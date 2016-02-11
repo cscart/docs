@@ -1,14 +1,14 @@
-****************************************************
+**************************************************
 How To: Make Customers Log in/Register at Checkout
-****************************************************
+**************************************************
 
 Follow these steps, if you want all your customers to log in or register before they check out:
 
-1. In the administration panel, go to **Settings → Checkout**.
+* In the Administration panel, go to **Settings → Checkout**.
 
-2. Tick the **Disable anonymous checkout** checkbox.
+* Tick the **Disable anonymous checkout** checkbox.
 
-3. Click **Save**.
+* Click the **Save** button.
 
 .. important:: 
 
