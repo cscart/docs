@@ -1,8 +1,8 @@
-****************************************
-Automatic Discount Coupons for Customers
-****************************************
+*******************************************************
+How To: Create Automatic Discount Coupons for Customers
+*******************************************************
 
-Creating a discount coupon promotion:
+To create a discount coupon promotion:
 
 *   In the Administration panel, go to **Marketing → Promotions**.
 *   Click the **+** button on the right and choose **Add cart promotion**.
@@ -18,7 +18,7 @@ Creating a discount coupon promotion:
 *   Select the desired option in the opened select box, then enter the desired value to the opened input box.
 *   Click the **Create** button.
 
-Creating a promotion that provides a customer with the automatically generated coupon codes:
+To create a promotion that provides a customer with the automatically generated coupon codes:
 
 *   Go to **Marketing → Promotions**.
 *   Click the **+** button on the right and choose **Add cart promotion**.

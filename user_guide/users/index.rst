@@ -41,25 +41,25 @@ When you search through the list of users with your mouse pointer, the **gear bu
     :align: center
     :alt: Use the gear button to see what you can do with an account.
 
-* **View all orders**—shows all the orders placed by the user
+* **View all orders**—shows all the orders placed by the user.
 
-* **Act on behalf of**—takes you to the storefront as if you are logged in as the selected user
+* **Act on behalf of**—takes you to the storefront as if you are logged in as the selected user.
 
-* **Points** (requires commercial license)—shows the customer's reward points log
+* **Points** (requires commercial license)—shows the customer's reward points log.
 
-* **Edit**—allows you to the edit the user account
+* **Edit**—allows you to the edit the user account.
 
-* **Delete**—permanently deletes the user account
+* **Delete**—permanently deletes the user account.
 
 .. warning::
 
-   Account deletion can't be undone without restoring a database backup. We recommend to disable accounts, not delete them.
+   Account deletion can't be undone without restoring a database backup. We recommend to disable accounts, not to delete them.
 
 * **View supplier products**—takes you to the list of products by this supplier
 
-==================================
-Enabling and Disable User Accounts
-==================================
+================================
+Enable and Disable User Accounts
+================================
 
 Availability of a user account is controlled through the account status. To enable or disable an account, change its status to **Active** or **Disabled**, respectively—click on the current status and select the new status from the list.
 
@@ -75,7 +75,7 @@ You can add user accounts of the following types:
 
 * supplier
 
-To add a new user, click the **+ button** in top right corner of a page. This will open a form with the user account details.
+To add a new user, click the **+** button in top right corner of a page. This will open a form with the user account details.
 
 The exact set of fields may vary depending on the account type and the profile configuration, which is managed in the **Profile fields** section.
 
@@ -83,18 +83,18 @@ The exact set of fields may vary depending on the account type and the profile c
 
     A user's shipping address and billing address can be different from each other.
 
-After the new account is created, click the **gear button** and choose **Edit** to configure additional parameters (requires commercial license).
+After the new account is created, click the **gear** button and choose **Edit** to configure additional parameters (requires commercial license).
 
 * specify the customer's age on the **Add-ons** tab.
 
-* assign the account to one of the available user groups on the **User groups**.
+* assign the account to one of the available user groups on the **User groups** tab.
 
 A user's membership in a user group is managed by the statuses:
 
-* **Active**—user belongs to the group
+* **Active**—user belongs to the group.
 
-* **Pending**—user has applied for the groups and is waiting for approval
+* **Pending**—user has applied for the groups and is waiting for approval.
 
-* **Available**—group is available for application
+* **Available**—group is available for application.
 
-* **Declined**—user's application was declined
+* **Declined**—user's application was declined.

@@ -14,4 +14,4 @@ How To: Create a Discount on Products from Specific Categories
 
 *   In the **Bonuses** tab, click the **Add bonus** button.
 *   In the opened drop-down list box, select the necessary option. Then specify the necessary value in the opened input box.
-*   Click the **Save** button.
+*   Click the **Create** button.
