@@ -15,7 +15,7 @@ Click **NEED HELP** in the upper part of the page to see the video tutorial on h
 
 In the **Current theme** section you can:
 
-•	Open the theme editor to customize your storefront in real time by clicking **Visual Editor**. You can customize separately the Main layout and the Widget mode layout styles.
+•	Open the theme editor to customize your storefront in real time by clicking **Visual Editor**. You can customize separately the **Main** layout and the **Widget mode** layout styles.
 •	Choose the existing styles for layouts by using the drop-down lists near each layout name.
 •	Open the **On-site live editor** with the **Edit content on site** button.
 
@@ -76,7 +76,7 @@ Here you can also see the **Rebuild cache automatically** selector. Click (On) i
 
 To upload a new theme, click the **+** button in the right upper corner of the page. In the opened pop-up window choose whether to upload a file from the local computer (**Local**) or the server file system (**Server**). You can also specify **URL** to a remote location, where the required archive is physically located.
 
-Pay attention, that the theme archive must be in tgz, gz or zip format. When you are ready, click **Upload**.
+Pay attention, that the theme archive must be in *tgz*, *gz* or *zip* format. When you are ready, click **Upload**.
 
 .. image:: img/upload_theme.png
     :align: center

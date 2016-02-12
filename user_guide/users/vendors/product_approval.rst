@@ -14,13 +14,13 @@ Approving/Disapproving Products
 
 To approve/disapprove a product, follow these steps:
 
-1. Log in to the administration panel as the **root administrator**. 
+* Log in to the Administration panel as the **root administrator**. 
 
-2. Go to **Vendors → Product approval**. This will display a list of all products in the store.
+* Go to **Vendors → Product approval**. This will display a list of all products in the store.
 
-3. If necessary, use the search form to the right of the list to filter the products.
+* If necessary, use the search form to the right of the list to filter the products.
 
-4. Click either the **Approve** or **Disapprove** icon of the required product. 
+* Click either the **Approve** or **Disapprove** icon of the required product. 
 
 .. hint::
     To approve/disapprove several products at once, tick the checkboxes of the required products and click the **Approve selected** or **Disapprove selected** button above the list.

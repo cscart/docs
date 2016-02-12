@@ -2,7 +2,7 @@
 Templates
 *********
 
-This section provides a facility to edit the source code of the theme files directly from a web browser.
+The **Design → Templates** section provides a facility to edit the source code of the theme files directly from a web browser.
 
 .. note ::
 

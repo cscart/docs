@@ -8,7 +8,7 @@ Use this section to create custom storefront menus. Each menu can be added to th
     :align: center
     :alt: Menus
 
-Use the **+** to add new menu, or click the gear button and choose **Edit** to edit existing menus.
+Use the **+** button to add new menu, or click the **gear** button and choose **Edit** to edit existing menus.
 
 To edit or add a menu fill in two mandatory fields:
 

@@ -23,7 +23,7 @@ Customizing
 
 There are 6 groups of the theme customization:
 
-*	**General** - Change the favicon and choose weather to round the corners or not.
+*	**General** - Change the favicon and choose whether to round the corners or not.
 *	**Logos** - Change the mail, theme, and gift certificate templates logos.
 *	**Colors** - Set the color scheme and change colors for different theme elements (buttons, menu, etc.)
 *	**Fonts** - Change the font style for different groups (headings, buttons, etc.)
@@ -101,7 +101,7 @@ With the help of pointers you can set the position of an image. Drop-down lists 
 For the header, top panel, footer, and content you can define the following settings:
 
 *	**Gradient** (for the top panel, header, and footer) - Click on the color, to define the gradient. Here you can either choose a color from the palette or enter new hexadecimal values (from #000000 for black to #FFFFFF for white) into corresponding text fields. Click **Choose** when you are ready. You can try to choose different colors to form the gradient and see the result on the storefront to the right.
-*	**Full width** - Click the **On\Off** button to define whether to spread the element to the full width of the page or not.
+*	**Full width** - Click the **On/Off** button to define whether to spread the element to the full width of the page or not.
 *	**Transparent** - Choose whether to make the background of an element transparent or not.
 
 Custom CSS

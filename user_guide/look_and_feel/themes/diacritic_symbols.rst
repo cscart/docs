@@ -79,7 +79,7 @@ If the symbols display correctly in the text appeared in the field below, the se
     :align: center
     :alt: Visual Editor
 
-*   If you use several languages in your store, switch to a language containing diacritic symbols.
+*   If you use several languages in your store, switch to the language containing diacritic symbols.
 *   In the **Customize** section choose *Custom CSS*.
 *   Paste the code to the field given below. Save the changes.
 

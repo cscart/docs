@@ -4,7 +4,7 @@ How To: Change Time and Date
 
 To change the date and time, complete the following steps:
 
-1. In the administration panel, go to **Settings → Appearance**.
+1. In the Administration panel, go to **Settings → Appearance**.
 
 2. Make the changes in the **Common settings** section.
 

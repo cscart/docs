@@ -6,6 +6,11 @@ To display an appropriate label on a product details page when it has the **Free
 
 *   In the root directory of your CS-Cart installation, create the following directories path:
     *design/themes/[CUSTOMER_ACTIVE_THEME]/templates/addons/my_changes/hooks/products*, where [CUSTOMER_ACTIVE_THEME] is an active theme of your storefront.
+
+    .. important ::
+
+        Make sure that the **My changes** add-on is installed and activated in the **Add-ons → Manage add-ons** section of the Administration panel.
+
 *   In the created CS-Cart directory, create the **view_main_info.post.tpl** file with the following content:
 
 If you want to display a text label, use this code:

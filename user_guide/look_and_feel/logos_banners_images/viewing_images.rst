@@ -16,6 +16,8 @@ In order to upload the thumbnails manually:
 
 *   Upload a file for the **Thumbnail** in the opened form.
 
+The image can be either uploaded from a local computer or the server file system, or linked to a remote location where the required image is physically located. An alternative text describes the image and is shown when the image is missing or cannot be displayed. It is good practice to have an alternative text associated with the image as an additional SEO-wise opportunity.
+
 .. image:: img/thumbnails_02.png
     :align: center
     :alt: Upload a file
@@ -25,7 +27,7 @@ In order to upload the thumbnails manually:
 In order to change the thumbnail size and appearance settings:
 
 *   Go to **Settings → Thumbnails**.
-*   Change the settings.
+*   Change the `settings <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/changing_attributes/change_image_size.html>`_.
 *   Click the **Save** button.
 
 .. image:: img/thumbnails_03.png
@@ -38,5 +40,5 @@ In order to change the thumbnail size and appearance settings:
 
 .. note ::
 
-    Detailed pictures are displayed in the viewing larger image window, created thumbnails are displayed on the product details page. If you add additional images for the product, additional small thumbnails are created and displayed under the main image on the product details page.
+    Detailed pictures are displayed in the viewing larger image window, created thumbnails are displayed on the product detail page. If you add additional images for the product, additional small thumbnails are created and displayed under the main image on the product detail page.
 

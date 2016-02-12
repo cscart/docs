@@ -21,7 +21,7 @@ To change the standard CS-Cart Meta tags:
 
 To change **Meta tags** for the **Products** page, **Categories** page, and other pages:
 
-*   In the Administration panel, go to **Design > Layouts**.
+*   In the Administration panel, go to **Design → Layouts**.
 *   Open the tab of the desired layout page.
 *   Click the gear icon on the tab.
 *   In the opened window edit **Meta description** and **Meta keywords** fields.

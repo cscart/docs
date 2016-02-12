@@ -7,7 +7,7 @@ You can perform the following actions on product tabs in the **Design → Produc
 Change product tab names
 ************************
 
-To change the name of a product tab, click the gear button corresponding to the tab and choose **Edit**. This opens the tab properties page. Enter the new name in the **Name** field and click **Save**.
+To change the name of a product tab, click the **gear** button corresponding to the tab and choose **Edit**. This opens the tab properties page. Enter the new name in the **Name** field and click **Save**.
 
 Enable and disable product tabs
 *******************************
@@ -38,8 +38,8 @@ Disable product tab for specific products
 
 To disable a product tab for specific products:
 
-*	Click the gear button corresponding to the tab and choose **Edit**.
+*	Click the **gear** button corresponding to the tab and choose **Edit**.
 *	Switch to the **Status** tab and click the **Add product** button in the **Disable for** line. This opens a form for adding products from the catalog.
-*	Add products which must not have the tab on their details pages. Other products will continue using this tab.
+*	Add products which must not have the tab on their detail pages. Other products will continue using this tab.
 *	Click the **Add products and close** button.
 *	Click **Save**.

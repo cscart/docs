@@ -6,11 +6,11 @@ There are times when you don't want anyone to access your store: for example, yo
 
 To close the storefront, complete the following steps:
 
-1. In the administration panel, go to **Settings → General**.
+* In the Administration panel, go to **Settings → General**.
 
-2. Tick the **Close storeftont** checkbox.
+* Tick the **Close storefront** checkbox.
 
-3. Fill in in the **Access key to temporarily closed store** field.
+* Fill in in the **Access key to temporarily closed store** field.
 
 .. note::
 
@@ -20,4 +20,4 @@ To close the storefront, complete the following steps:
     :align: center
     :alt: Tick the Close Storefront checkbox under Settings → General, then specify your access key to be able to view the closed store.
 
-4. Click the **Save** button.
+* Click the **Save** button.

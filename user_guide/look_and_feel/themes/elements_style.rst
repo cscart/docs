@@ -28,7 +28,7 @@ To change the font of elements:
 To change the color of some elements:
 
 *   In the **Theme editor** panel on the left find the **Customize** section and choose *Colors* in the drop-down menu.
-*   Find the element you want to change and change its color by clicking on the color field. In the opened window choose one of the given colors or define the color in hexademical value in the special field. Click the **Choose** button.
+*   Find the element you want to change and change its color by clicking on the color field. In the opened window choose one of the given colors or define the color in hexadecimal value in the special field. Click the **Choose** button.
 *   Click the **Save** button.
 
 .. image:: img/elements_03.png
@@ -38,7 +38,7 @@ To change the color of some elements:
 To change the background color of some style elements:
 
 *   In the **Theme editor** panel on the left find the **Customize** section and choose *Backgrounds* in the drop-down menu.
-*   Choose the element and change the background color by clicking on the color field. In the opened window choose one of the given colors or define the color in hexademical value in the special field. Click the **Choose** button. 
+*   Choose the element and change the background color by clicking on the color field. In the opened window choose one of the given colors or define the color in hexadecimal value in the special field. Click the **Choose** button. 
 
 .. note::
 
