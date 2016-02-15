@@ -23,7 +23,7 @@ Posts appear as a list of links.
 Blog: recent posts scroller
 ***************************
 
-Scrolled list of products.
+Scrolled list of blog posts.
 
 .. _blog_text_links:
 
@@ -104,13 +104,6 @@ List of categories with drop-down lists that are displayed vertically left-to-ri
     :align: center
     :alt: Dropdown vertical
 
-.. _events:
-
-Events
-******
-
-Box with the current events in the store.
-
 .. _feature_comparison:
 
 Feature comparison
@@ -137,14 +130,14 @@ Field to enter the number of a gift certificate.
 Grid
 ****
 
-Items (product thumbnail next to a text link) arranged in a grid.
+Items (item thumbnail next to a text link) arranged in a grid.
 
 .. _grid_2:
 
 Grid 2
 ******
 
-Items (product thumbnail above a text link) arranged in a grid.
+Items (item thumbnail above a text link) arranged in a grid.
 
 .. _html_block:
 
@@ -158,7 +151,7 @@ Custom HTML content.
 HTML block with Smarty support
 ******************************
 
-Custom HTML\Smarty content.
+Custom HTML/Smarty content.
 
 .. _icon:
 
@@ -239,7 +232,7 @@ Box with all available product filters and a price slider.
 Our Brands
 **********
 
-A list of product brands that are defined as features with the Brand/Manufacturer type.
+A list of product brands that are defined as features with the **Brand/Manufacturer** type.
 
 .. _payment_systems_icons:
 

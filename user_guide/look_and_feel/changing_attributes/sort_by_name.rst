@@ -36,9 +36,3 @@ before
     );
 
 *   Save the file.
-
-If you made changes in a template but they are not displayed, please try cleaning up the template cache. In order to do it, open this link in your browser: *http://www.your_domain.com/admin.php?cc* where *www.your_domain.com* is the address of your store and where *admin.php* is a script file for the Administration panel of your store that was renamed for security reasons.
-
-.. note ::
-
-	Before cleaning the templates cache you should be logged in to the Administration panel of your store.

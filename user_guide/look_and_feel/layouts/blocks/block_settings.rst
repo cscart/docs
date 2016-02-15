@@ -129,4 +129,4 @@ The number that shows the scrolling speed: the bigger the number - the higher th
 Text
 ****
 
-A short text to be displayed right to the selector. This can be something like Select a language or Choose a currency.
+A short text to be displayed right to the selector. This can be something like *Select a language* or *Choose a currency*.

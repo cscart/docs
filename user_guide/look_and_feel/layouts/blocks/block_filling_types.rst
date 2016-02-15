@@ -16,7 +16,7 @@ With this filling type, the block contains all items of the selected type.
 Also bought
 ***********
 
-With this filling type, the block contains links to product that are usually bought together with the product that the visitor scans at the moment.
+With this filling type, the block contains links to products that are usually bought together with the product that the visitor scans at the moment.
 
 This filling type is available when the `Customers also bought <http://docs.cs-cart.com/4.3.x/user_guide/addons/customers_also_bought/index.html>`_ add-on is installed and activated.
 
@@ -27,12 +27,18 @@ Bestsellers
 
 With this filling type, the block contains links to products that are sold best in the store.
 
-This filling type is available when the `Bestsellers & on sale products <http://docs.cs-cart.com/4.3.x/user_guide/addons/bestsellers_and_on_sale_products/index.html>`_ add-on is installed and activated.
+.. important ::
+
+	This filling type is available when the `Bestsellers & on sale products <http://docs.cs-cart.com/4.3.x/user_guide/addons/bestsellers_and_on_sale_products/index.html>`_ add-on is installed and activated.
 
 .. _filling_blog_recent_posts:
 
 Blog: recent posts
 ******************
+
+.. important ::
+
+	This filling type is available when the **Blog** add-on is installed and activated in the **Add-ons → Manage add-ons** section.
 
 With this filling type, posts are added automatically according to the parameters that you specify. The following parameters are available:
 
@@ -104,7 +110,7 @@ To add items:
 
 	To facilitate the process, use the search form on the top of the list.
 
-*	Click **Add products and close** to save the results and display the block properties form.
+*	Click **Add <ItemType> and close** to save the results and display the block properties form.
 
 .. _neighbours:
 
@@ -133,7 +139,7 @@ Period of time over which items were added to the store database. The following 
 
 *	**Any date** - The block will display the latest items. The output is not bound to any time period.
 *	**Today** - The block will display the items that have been added on the day when the visitor opens the storefront.
-*	**Last days** - The block will display the items that have been added over a certain time period before the moment the visitor opens the storefront. The time period is specified in the Last days field below.
+*	**Last days** - The block will display the items that have been added over a certain time period before the moment the visitor opens the storefront. The time period is specified in the **Last days** field below.
 
 Last days
 ---------
@@ -209,7 +215,7 @@ Rating
 
 With this filling type, items are added automatically based on a greater ratings.
 
-This filling type is available when the `Comments & Reviews <http://docs.cs-cart.com/4.3.x/user_guide/addons/comments_and_reviews/index.html>`_ add-on add-on is installed and activated.
+This filling type is available when the `Comments & Reviews <http://docs.cs-cart.com/4.3.x/user_guide/addons/comments_and_reviews/index.html>`_ add-on is installed and activated.
 
 .. _recently_viewed:
 
@@ -232,7 +238,7 @@ Tag cloud
 
 With this filling type, the block contains a list of tags added that you have defined in the store.
 
-This filling type is available when the `Tags <http://docs.cs-cart.com/4.3.x/user_guide/addons/tags/index.html>`_ add-on add-on is installed and activated.
+This filling type is available when the `Tags <http://docs.cs-cart.com/4.3.x/user_guide/addons/tags/index.html>`_ add-on is installed and activated.
 
 .. _vendor_pages:
 

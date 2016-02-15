@@ -16,4 +16,18 @@ In this section
     :titlesonly:
     :glob:
 
-    *
+    actions_on_blocks
+    block_filling_types
+    block_settings
+    block_templates
+    block_types_properties
+    onsale
+    add_block
+    arrange_categories
+    bestsellers
+    block_position
+    different_banners
+    hide_blocks
+    newest_products
+    newest_products_on_all_pages
+    related_products

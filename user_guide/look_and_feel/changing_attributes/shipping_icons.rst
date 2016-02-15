@@ -3,6 +3,11 @@ How To: Display Shipping Method Icons on the Checkout Page
 **********************************************************
 
 *   In the root directory of your CS-Cart installation, create the following directory path: */design/themes/[CURRENT_THEME_NAME]/templates/addons/my_changes/hooks/checkout*.
+
+.. important ::
+
+    Make sure that the **My changes** add-on is installed and activated in the **Add-ons → Manage add-ons** section of the Administration panel.
+
 *   In this directory create the **shipping_method.override.tpl** file with the following content:
 
 .. code-block :: none
@@ -30,6 +35,12 @@ How To: Display Shipping Method Icons on the Checkout Page
     {/if}
 
 In this example the shipping method icon width is 100 and its height is 100 too. If you want to define another width and height, type your own numbers for the ``image_width`` and ``image_height`` parameters.
+
+If you made changes in a template but they are not displayed, please try cleaning up the template cache. In order to do it, open this link in your browser: *http://www.your_domain.com/admin.php?cc* where *www.your_domain.com* is the address of your store and where admin.php is a script file for the Administration panel of your store that was renamed for security reasons.
+
+.. note ::
+
+    Before cleaning the templates cache you should be logged in to the Administration panel of your store.
 
 To upload a shipping method icon:
 

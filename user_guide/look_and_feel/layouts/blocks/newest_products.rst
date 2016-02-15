@@ -19,7 +19,7 @@ To display the section of the newest products on the category page:
     :alt: Content tab
 
 *   Open the **Content** tab and select *Newest* in the **Filling** select box. Set up the necessary fields.
-*   Click the Save button.
+*   Click the **Save** button.
 
 .. note::
 

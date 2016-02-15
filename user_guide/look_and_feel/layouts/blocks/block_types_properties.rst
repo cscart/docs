@@ -28,7 +28,7 @@ Banners
 	:widths: 15 35
 
 	*   -   Description
-	    -   One or more banners that were created in section Marketing → Banners.
+	    -   One or more banners that were created in section **Marketing → Banners**.
 	*   -   Related add-ons
 	    -   `Banners Management <http://docs.cs-cart.com/4.3.x/user_guide/addons/banners_management/index.html>`_
 	*   -   Templates
@@ -171,7 +171,7 @@ Currencies
 	:widths: 15 35
 
 	*   -   Description
-	    -   List (text or pictorial) of currencies supported in the store. To manage the list of currencies, use section Administration → Currencies.
+	    -   List (text or pictorial) of currencies supported in the store. To manage the list of currencies, use section **Administration → Currencies**.
 	*   -   Related add-ons
 	    -   None
 	*   -   Templates
@@ -282,7 +282,7 @@ Menu
 	:widths: 15 35
 
 	*   -   Description
-	    -   A custom menu created in Design → Menus.
+	    -   A custom menu created in **Design → Menus**.
 	*   -   Related add-ons
 	    -   None
 	*   -   Templates
@@ -290,7 +290,7 @@ Menu
 	        *	:ref:`Dropdown vertical <dropdown_vertical>`
 	        *	:ref:`Text links <text_links>`
 	*   -   Content
-	    -   A custom menu created in Design → Menus.
+	    -   A custom menu created in **Design → Menus**.
 	*   -   Block settings
 	    -   None
 
@@ -401,7 +401,7 @@ Polls
 	:widths: 15 35
 
 	*   -   Description
-	    -   One or several polls created in Website → Content.
+	    -   One or several polls created in **Website → Content**.
 	*   -   Related add-ons
 	    -   `Polls <http://docs.cs-cart.com/4.3.x/user_guide/addons/polls/index.html>`_
 	*   -   Templates
@@ -493,7 +493,7 @@ Recent posts
 	:widths: 15 35
 
 	*   -   Description
-	    -   Blog posts that were created in section Website → Blog.
+	    -   Blog posts that were created in section **Website → Blog**.
 	*   -   Related add-ons
 	    -   Blog
 	*   -   Templates
@@ -513,7 +513,7 @@ Recent posts
 
 	        *   Last days
 
-	            Number of days in the Last day option of the Period setting.
+	            Number of days in the *Last day* option of the *Period* setting.
 
 	        *   Limit
 
@@ -651,7 +651,7 @@ Template
 	:widths: 15 35
 
 	*   -   Description
-	    -   A collection of versatile templates that represent different controls and pieces of information.
+	    -   A collection of various templates that represent different controls and pieces of information.
 	*   -   Related add-ons
 	    -   None
 	*   -   Templates

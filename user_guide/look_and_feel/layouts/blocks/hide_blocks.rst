@@ -14,3 +14,4 @@ To disable breadcrumbs on the **Auth** and **Profiles** layout pages, do the fol
 
 The block should become lighter.
 
+You can hide any other blocks in the same way.

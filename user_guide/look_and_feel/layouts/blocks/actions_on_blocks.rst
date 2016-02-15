@@ -17,7 +17,7 @@ To move a block to a different position inside the frame, drag-n-drop the block 
 
 .. note::
 
-	Remember that blocks must be nested inside a child container.
+	Remember that blocks must be nested inside a `child container <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/framework/index.html>`_.
 
 Adding blocks
 *************
@@ -30,6 +30,11 @@ When adding a block, you can use one of the following options:
 **To add an existing block:**
 
 *	Click the **+** icon on the container where the block should be placed and select **Add Block**.
+
+.. image:: img/block.png
+    :align: center
+    :alt: Add block
+
 *	Select **Use Existing Block**.
 *	Choose a block from the list and click its icon.
 

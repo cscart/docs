@@ -14,22 +14,22 @@ To create the **Related products** section on the product details page:
     *   Desired wrapper in the **Wrapper** select box.
     *   Specify the desired css-class in the **User-defined CSS-class** input field.
 
-	.. image:: img/related_01.png
-	    :align: center
-	    :alt: General tab
+    .. image:: img/related_01.png
+         :align: center
+         :alt: General tab
 
     *   Open the **Content** tab and select *Manually* in the **Filling** select box
     *   Click the **Save** button.
 
-.. image:: img/related_02.png
-    :align: center
-    :alt: Content tab
+    .. image:: img/related_02.png
+        :align: center
+        :alt: Content tab
 
 *   Go to **Products → Products** and click on any product.
 *   On the product details page, open the **Layouts** tab.
 *   Related products block is active.
 *   Click on the gear icon on the block and open the **Content** tab. Click the **Add product** button, add the necessary products, and click the **Add products and close** button.
-*	Click **Save**.
+*	Click the **Save** button.
 
 .. image:: img/related_03.png
     :align: center
