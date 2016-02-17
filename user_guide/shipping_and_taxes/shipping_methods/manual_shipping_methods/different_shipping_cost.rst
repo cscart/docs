@@ -4,7 +4,7 @@ How To: Set up Different Shipping Costs for Different Products
 
 *	In the Administration panel, go to **Products → Products**.
 *	Click on the link corresponding to the necessary product.
-*	Сhoose the **Shipping properties** tab on the opened page.
+*	Open the **Shipping properties** tab on the opened page.
 *	Enter the desired shipping cost in the **Shipping freight** input field.
 
 .. image:: img/diff_cost.png

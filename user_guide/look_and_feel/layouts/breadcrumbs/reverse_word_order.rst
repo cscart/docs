@@ -15,6 +15,7 @@ How To: Reverse the Word Order of Breadcrumbs
     			{section loop=$breadcrumbs name="bc" step=-1}
     				{if !$smarty.section.bc.first}
     					<i class="icon-right-open-thin"></i>
+    					<span class="ty-breadcrumbs__slash">/</span>
     				{/if}		
     				{if $breadcrumbs[bc].link}
     					<a href="{$breadcrumbs[bc].link|fn_url}"{if $additional_class} class="{$additional_class}"{/if}{if $bc.nofollow} rel="nofollow"{/if}>{$breadcrumbs[bc].title|strip_tags|escape:"html" nofilter}</a>
@@ -29,3 +30,7 @@ How To: Reverse the Word Order of Breadcrumbs
     <!--breadcrumbs_{$block.block_id}--></div>
 
 *   Save the file.
+
+.. note ::
+
+	If you have made changes in a template but they are not displayed, please try clearing the template cache. In order to do it, in the Administration panel of your store go to **Administration → Storage → Clear cache**.

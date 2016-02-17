@@ -2,7 +2,7 @@
 Layout Page Properties
 **********************
 
-To edit layout page attributes, select a layout page in **Design → Layouts** and click the gear icon on the tab.
+To edit layout page attributes, select a layout page in **Design → Layouts** and click the **gear** icon on the tab.
 
 A layout page has the following attributes:
 
@@ -11,9 +11,9 @@ General
 
 *	**Dispatch** - Choose a specific page or page type that the layout page will be associated with. Or select *Custom* to define the parameter value manually.
 
-	The *dispatch* parameter has the following format: [controller_name].[mode_name], where [controller_name] – is the name of the controller, and [mode_name] – is the mode in which the controller works. This value is added to *index.php?dispatch=* part of the page and points to a specific layout page. For example, *index.php?dispatch=checkout.cart* points to the cart contents page while *index.php?dispatch=checkout.checkout* points to the checkout page.
+	The *dispatch* parameter has the following format: **[controller_name].[mode_name]**, where **[controller_name]** – is the name of the controller, and **[mode_name]** – is the mode in which the controller works. This value is added to *index.php?dispatch=* part of the page and points to a specific layout page. For example, *index.php?dispatch=checkout.cart* points to the cart contents page while *index.php?dispatch=checkout.checkout* points to the checkout page.
 	
-*	**Name** - Name of the layout page as it appears in Layouts.
+*	**Name** - Name of the layout page as it appears in **Layouts**.
 *	**Page title** - Title of the page as it appears in the title bar of a browser.
 *	**META description** - Contents of the HTML meta tag describing the page.
 *	**META keywords** - Contents of the HTML tag containing a list of search keywords for the page.

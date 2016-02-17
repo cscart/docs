@@ -27,7 +27,7 @@ Removing a layout page
 
 To remove a layout page:
 
-*	Select a layout page and click the gear icon on the tab.
+*	Select a layout page and click the **gear** icon on the tab.
 
 .. image:: img/layout_page_02.png
     :align: center
@@ -44,7 +44,7 @@ To remove a layout page:
 Editing layout page properties
 ------------------------------
 
-To change a layout page properties, select the layout page and click the gear icon on the tab. A special form with the layout page attributes opens. Edit the `layout page properties <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/layout_pages/layout_page_attributes.html>`_ and click **Save** to apply changes.
+To change a layout page properties, select the layout page and click the **gear** icon on the tab. A special form with the layout page attributes opens. Edit the `layout page properties <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/layout_pages/layout_page_attributes.html>`_ and click **Save** to apply changes.
 
 Exporting/importing layout pages
 ********************************
@@ -56,7 +56,7 @@ Exporting
 
 To export layout pages:
 
-*	Click the gear button in the upper right part of the page and choose **Export Layout**. This opens the export settings form.
+*	Click the **gear** button in the upper right part of the page and choose **Export Layout**. This opens the export settings form.
 *	Select the layout pages to be exported.
 *	Choose the other export settings:
 
@@ -70,7 +70,7 @@ Importing
 
 To import layout pages:
 
-*	Click the gear button in the upper right part of the page and choose **Import Layout**. This opens the form for selecting the import file.
+*	Click the **gear** button in the upper right part of the page and choose **Import Layout**. This opens the form for selecting the import file.
 *	Choose the import file or enter the file URL.
 *	Choose whether to create new layout or update current one.
 *	If you have chosen to update current layout, specify the other export settings:

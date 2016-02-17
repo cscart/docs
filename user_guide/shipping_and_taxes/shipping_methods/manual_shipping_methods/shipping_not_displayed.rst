@@ -4,8 +4,7 @@ Manual Shipping Method is Not Displayed
 
 To check the manual shipping method:
 
-*   Log in to your Administration panel.
-*   Check whether a location is set up properly in the **Administration → Shipping & Taxes → Locations** section.
+*   In the Administration panel, go to the **Administration → Shipping & Taxes → Locations** section and check whether a location is set up properly.
 
     *   Check whether geographic areas (states or countries) of location zones do not intersect with each other.
     *   Check whether the states (if they exist) are selected on the location details page.

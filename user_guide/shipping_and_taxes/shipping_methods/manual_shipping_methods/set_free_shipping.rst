@@ -7,7 +7,7 @@ How To: Set up a Free Shipping Method
 
 .. important::
 
-	This method should use the manual rate calculation (the **Rate calculation** option is set to *Manual* (by defined location) on the details page of a shipping method).
+	This method should use the manual rate calculation (the **Rate calculation** option is set to *Manual* on the details page of a shipping method).
 
 *	Click on the name of this shipping method to edit it. The **Editing shipping method** page will open.
 *	Open the **Shipping charges** tab on the details page of this shipping method and choose the location in the **Show rate for location** box for which free shipping will be defined.

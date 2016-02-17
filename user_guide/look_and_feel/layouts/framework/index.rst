@@ -5,15 +5,15 @@ Framework
 Root containers
 ***************
 
-As illustrated in `Look and Feel → Layouts <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/index.html>`_, the basic storefront framework consists of four horizontal containers referred to as **root containers**. This basic frame is the same for all layout pages.
+As illustrated in `Layouts → Layout Structure <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/layout_structure.html>`_, the basic storefront framework consists of four horizontal containers referred to as **root containers**. This basic frame is the same for all layout pages.
 
 .. important::
 
 	Root containers cannot be added or removed.
 
-Moreover, the top panel, header and footer containers of the `default layout page <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/layout_pages/index.html>`_ are inherited by other layout pages. This means that the changes that you make to these two areas automatically apply to all layout pages.
+Moreover, the top panel, header and footer containers of the `default layout page <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/layout_pages/index.html>`_ are inherited by other layout pages. This means that the changes that you make to these three areas automatically apply to all layout pages.
 
-Each root container is associate with a particular area of the storefront page - header, main content area, or footer. However, root containers themselves do not generate the corresponding parts of the storefront pages. In fact, they only accommodate and form boundaries for multiple smaller containers referred to as **child containers**.
+Each root container is associated with a particular area of the storefront page - header, main content area, or footer. However, root containers themselves do not generate the corresponding parts of the storefront pages. In fact, they only accommodate and form boundaries for multiple smaller containers referred to as **child containers**.
 
 .. note::
 
@@ -22,7 +22,7 @@ Each root container is associate with a particular area of the storefront page -
 Child containers
 ****************
 
-Child containers ensure a more detailed and sophisticated layout of the storefront paged. Multiple child containers with certain sizes, positions, and styles can be nested inside a root container or inside other child containers. And each such container may include one or more blocks - boxes with information of certain type.
+Child containers ensure a more detailed and sophisticated layout of the storefront pages. Multiple child containers with certain sizes, positions, and styles can be nested inside a root container or inside other child container. And each such container may include one or more blocks - boxes with information of certain type.
 
 Both the root and child containers are fixed to the `storefront grid system used in CS-Cart <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/framework/grid_system.html>`_.
 
