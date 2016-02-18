@@ -29,8 +29,8 @@ How To: Set up CS-Cart with FedEx
 
 	Use real recipient and sender addresses for testing (FedEx uses address verification system).
 
-	Sender address = company address, that you are able to edit on the **Settings: Company** page in your Administration panel.
-	Recipient address = customer shipping address. In case of testing shipping charges in the Administration panel the address defined under the **Default location** section on the **Settings: General** page is used as a customer address.
+	Sender address = company address, that you are able to edit on the **Settings → Company** page in your Administration panel.
+	Recipient address = customer shipping address. In case of testing shipping charges in the Administration panel the address defined under the **Default location** section on the **Settings → General** page is used as a customer address.
 
 *   Open the **Shipping charges** tab and define shipping charges which will be added to the ones returned by real-time shipping service if it is needed.
 *	Click the **Save** button to save the changes.

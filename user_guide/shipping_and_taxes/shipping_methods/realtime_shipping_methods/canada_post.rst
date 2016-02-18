@@ -2,7 +2,7 @@
 How To: Set up CS-Cart with Canada Post
 ***************************************
 
-Follow these steps to set up Canada Post:
+Follow these steps to set up `Canada Post <https://www.canadapost.ca/web/en/home.page>`_:
 
 *   In the Administration panel, go to **Administration → Shipping & Taxes → Shipping methods**.
 *   Create a shipping method or choose the existent one.
@@ -13,7 +13,7 @@ Follow these steps to set up Canada Post:
     :align: center
     :alt: DHL
 
-*   Open the **Configure** tab. Fill in the **Merchant ID** (your merchant identifier), **Package width (cm)**, **Package height (cm)**, and **Package length (cm)** input fields.
+*   Open the **Configure** tab. Fill in the **Merchant ID** (your merchant identifier), **Max box weight**,  **Package width (cm)**, **Package height (cm)**, and **Package length (cm)** input fields.
 
 .. image:: img/canada_post_02.png
     :align: center
@@ -24,5 +24,5 @@ Follow these steps to set up Canada Post:
 	 The length of the greatest linear dimension of a parcel must not exceed **105cm** and the girth of a parcel must not exceed **140cm**.
 
 *   Click the **Save** button.
-*   Open the **Shipping charges** tab and define shipping charges which will be added to the ones defined by real-time shipping service. Click **Save**.
+*   If necessary, open the **Shipping charges** tab and define shipping charges which will be added to the ones defined by real-time shipping service. Click **Save**.
 *   Open the **General** tab, click the **Calculate shipping cost** link, enter the desired value into the **Weight (lbs)** input field, and click the **Test** button to make a test calculation of shipping charges.

@@ -31,7 +31,7 @@ A new **Use for free shipping** checkbox under **Administration → Shipping & t
     :align: center
     :alt: The new Use for Free Shipping checkbox determines if you can use a shipping method for free shipping.
 
-Tick the **Use for free shipping** checkbox, if you want to exclude the products with the enabled Free shipping option from the shipping price calculation. Then CS-Cart will calculate the shipping price for other products from the order in accordance with **Shipping charges**.
+Tick the **Use for free shipping** checkbox, if you want to exclude the products with the enabled **Free shipping** option from the shipping price calculation. Then CS-Cart will calculate the shipping price for other products from the order in accordance with **Shipping charges**.
 
 If you leave the checkbox unticked, CS-Cart will calculate the shipping price for all the products from the order in accordance with **Shipping charges**.
 
@@ -66,3 +66,5 @@ If you want to offer free shipping and don’t want a user to choose a shipping 
 .. image:: img/free_shipping/disable_shipping_charges.png
     :align: center
     :alt: Make sure that the shipping method's Rate Value equals 0. 
+
+*	Click the **Save** button.

@@ -7,7 +7,7 @@ If the realtime shipping method is not displayed:
 *   Go to **Administration → Shipping & Taxes → Shipping methods** and click on the name of the used shipping method.
 *   Check whether the suitable carrier is chosen in the **Carrier** option.
 *   Check whether the suitable shipping service is chosen in the **Shipping service** option.
-*   Check whether the information was set up properly in the **Configure** tab.
+*   Check whether the information is set up properly in the **Configure** tab.
 
 .. note::
 

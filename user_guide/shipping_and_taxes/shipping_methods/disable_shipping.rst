@@ -4,9 +4,8 @@ How To: Disable Shipping on the Storefront
 
 To disable shipping on the storefront:
 
-*   In the Administration panel, go to **Settings → General** and find the **Users/cart** section.
-*   Select the **Disable shipping** check box.
-*   Click the **Save** button.
+*   In the Administration panel, go to **Administration → Shipping & Taxes → Shipping methods**.
+*   Switch all the shipping methods statuses to **Disabled**.
 
 .. image:: img/disable_shipping.png
     :align: center
