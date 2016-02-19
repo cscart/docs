@@ -20,11 +20,11 @@ This functionality gives an opportunity to create variables and use them to defi
 
 	@price: #343434;
 
-LESS variables in CS-Cart are related to the **Styles** concept (see the **Styles and Visual Editor** section further in this guide).
+LESS variables in CS-Cart are related to the **Styles** concept (see the **Styles and Theme Editor** section further in this guide).
 
-In the *design/themes/THEME_NAME/styles/data* directory of your CS-Cart installation there are the *less* files that contain the LESS variables related to Visual Editor (where THEME_NAME is the name of your theme). 
+In the *design/themes/THEME_NAME/styles/data* directory of your CS-Cart installation there are the *less* files that contain the LESS variables related to the Theme Editor (where THEME_NAME is the name of your theme). 
 
-These values can be edited in a file or received with the Visual Editor after saving a style.
+These values can be edited in a file or received with the Theme Editor after saving a style.
 
 Values of the variables in the *.less* file of this directory can be edited only in the given file. For example, if the ``@price`` variable is defined in the **styles.less** file as well, this value will not work, because the variables values of the *.../styles/data/.less* file are included in the last turn.
 
@@ -82,7 +82,7 @@ Operations that are used in Cs-cart:
 
 *	``darken(@color, 10%)`` - returns the color that is 10% darker than the current color.
 
-These operations are related to Styles and Visual Editor. With one base color it is possible to change colors of other elements by making base color lighter or darker.
+These operations are related to Styles and the Theme Editor. With one base color it is possible to change colors of other elements by making base color lighter or darker.
 
 *	``percentage(0.5)`` - converts value to percents. Used while creating grid and columns.
 
@@ -112,7 +112,7 @@ The path to a theme *css* directory is *design/themes/THEME_NAME*.
     *	*css/tygh/print.less* - styles for print.
     *	*ss/flags.less* - styles for showing countries flags.
     *	*css/design_mode.less* - styles that are used in templates and translation mode.
-    *	*css/theme_editor.less* - styles that are used in Visual Editor.
+    *	*css/theme_editor.less* - styles that are used in the Theme Editor.
     *	*css/grid.css* - language variables and mixins that are used to form the grid for the fixed layout.
     *	*css/mixins.less* - set of LESS mixins.
 
@@ -142,7 +142,7 @@ Style files (css and less) including order
 
 *	The preset less file is included.
 
-*	All the styles added to the **Custom CSS** field in a Visual Editor.
+*	All the styles added to the **Custom CSS** field in the Theme Editor.
 
 Hooks including styles are processed in the order that is defined by *priority*.
 

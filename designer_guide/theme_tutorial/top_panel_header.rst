@@ -4,7 +4,7 @@ Top panel and Header
 
 The next step is creating and organizing blocks in the **Top panel** and **Header** containers.
 
-All changes are applied to the **Default** location. To edit it, go to the **Design > Layouts** section. The **Default** is the first tab.
+All changes are applied to the **Default** location. To edit it, go to the **Design → Layouts** section. The **Default** is the first tab.
 
 Editing blocks
 --------------
@@ -66,15 +66,19 @@ That is what we have as the result:
 Creating styles for Top panel and Header
 ----------------------------------------
 
-In CS-Cart it is posible to change the container backgrounds, links and text color with the **Visual Editor**.
+In CS-Cart it is posible to change the container backgrounds, links and text color with the **Theme Editor**.
 
-To open the Visual Editor, in the administration panel go to **Design > Themes** and click the **Visual Editor** button of the Main layout.
+To open the Theme Editor, in the administration panel go to **Design → Themes** and click the **Theme Editor** button of the Main layout.
+
+.. note::
+
+    Before **version 4.3.6** the button was called **Visual Editor**.
 
 .. image:: img/admin_themes.png
 
 To change the Top panel background:
 
-*	In the left panel of the Visual Editor find the **Customize** section. Choose *Backgrounds* from the drop-down menu.
+*	In the left panel of the Theme Editor find the **Customize** section. Choose *Backgrounds* from the drop-down menu.
 *	Find the **Top panel** section and click on the **Background color** field.
 
 In the right lower corner of the opened panel there is an input field for defining color manually. Type *#573c27* there to define color as in the example.
@@ -104,13 +108,13 @@ By default 3 currencies are displayed in a line. When the screen is small the dr
 
 To display the drop-down list by default:
 
-*	Go to the **Design > Layouts** section and find the **Currencies** block.
+*	Go to the **Design → Layouts** section and find the **Currencies** block.
 
 *	Click the gear icon of this block and switch to the **Block settings** tab.
 
 *	Type *1* in the **Minimal number if items to be placed in a dropdown list** input field and click **Save**.
 
-You can define the currency name and symbol in the **Administration > Currencies** section of the administration panel. 
+You can define the currency name and symbol in the **Administration → Currencies** section of the administration panel. 
 
 As we can see in the example, the currency symbol is not in use. So, we will remove it from a template.
 
@@ -122,7 +126,7 @@ You can find out what classes are used with the help of DevTools for Chrome or F
 
 .. note::
 
-    CSS styles are saved is cache. To clear cache automatically, enable the **Rebuild cache automatically** setting on the **Design > Themes** page in the administration panel.
+    CSS styles are saved is cache. To clear cache automatically, enable the **Rebuild cache automatically** setting on the **Design → Themes** page in the administration panel.
 
 Search by the ``ty-select-block__a-item`` class that is used in the *templates/common/select_object.tpl* file.
 

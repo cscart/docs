@@ -6,8 +6,8 @@ Glossary
 ********
 
 *	**CSS styles** - `Cascading Style Sheets <http://en.wikipedia.org/wiki/Cascading_Style_Sheets>`_
-*	**Styles** (ex. presets) - CSS attribute values related to CSS styles. These values can be changed with the **Visual editor**.
-*	**Visual editor** (ex. Theme editor) - tool that helps to change certain design elements appearance.
+*	**Styles** (ex. presets) - CSS attribute values related to CSS styles. These values can be changed with the **Theme Editor**.
+*	**Theme Editor** - a tool that helps to change the appearance of certain design elements.
 *	**Templates** - template files (*.tpl*) based on the Smarty templater.
 *	**Media** -  images, icons, fonts.
 *	**Layout** -  contents and the layout scheme of the customer area blocks.
@@ -30,7 +30,7 @@ A theme structure consists of 6 directories and 2 service files:
 
 	*	The **Layout** directory - contains the appearance structure *.xml* files. Further you can read more about Layout.
 
-	*	The **Styles** directory - contains files including *.less* variables and the Visual Editor elements structure.
+	*	The **Styles** directory - contains files including *.less* variables and the Theme Editor elements structure.
 
 	*	The **Templates** directory - contains templates (the *.tpl* files).
 

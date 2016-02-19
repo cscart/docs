@@ -18,7 +18,7 @@ Directory structure
 	*	**addons** - all images extended by your add-on are stored in the *addons/your_addon_name/* directory.
 	*	**lib** -  images added by side libraries (jqueryui, for example).
 	*	**icons** - icons and gif animation (spinner or pointers, for example).
-	*	**patterns** - background images added with Visual Editor.
+	*	**patterns** - background images added with the Theme Editor.
 
 *	**fonts** - icon fonts (see more information below).
 

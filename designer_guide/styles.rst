@@ -1,30 +1,34 @@
-************************
-Styles and Visual Editor
-************************
+***********************
+Styles and Theme Editor
+***********************
 
-Visual Editor
-*************
+Theme Editor
+************
 
-CS-Cart **Visual Editor** is a helpful tool for editing store appearance that has a very simple and user-friendly interface. 
+CS-Cart **Theme Editor** is a helpful tool for editing store appearance that has a very simple and user-friendly interface. 
 
-For example, if you want to change the background or buttons color, there is no need to edit CSS. You can just open Visual Editor and choose the desired color for corresponding element.
+For example, if you want to change the background or buttons color, there is no need to edit CSS. You can just open Theme Editor and choose the desired color for corresponding element.
 
-Depending on the developer, theme in CS-Cart may contain Visual Editor or not. But customers will definitely be very glad to have such a powerful tool as Visual Editor in their supply. It is much better that editing CSS manually.
+Depending on the developer, theme in CS-Cart may contain Theme Editor or not. But customers will definitely be very glad to have such a powerful tool as the Theme Editor in their supply. It is much better that editing CSS manually.
 
-To enable Visual Editor in the administration panel go to the *Design > Themes* section and click the **Visual Editor** button.
+To open the Theme Editor in the administration panel go to the **Design → Themes** section and click the **Theme Editor** button.
+
+.. note::
+
+    Before **version 4.3.6** the button was called **Visual Editor**.
 
 .. image:: img/visual.png
     :align: center
-    :alt: Visual Editor
+    :alt: Theme Editor
 
 Styles
 ******
 
-There is a set of pre-installed **Styles** in Visual Editor for each theme.
+There is a set of pre-installed **Styles** in the Theme Editor for each theme.
 
 For example, if you have the **my_theme** theme, you can create different styles for its appearance. For Halloween you may paint your store in dark colors and name this style *Halloween*. And in the right day all you will need to do - just pick this style from the list. 
 
-All Styles created with Visual Editor are stored in the following directory: *design/themes/[your_theme_name]/styles/*.
+All Styles created with the Theme Editor are stored in the following directory: *design/themes/[your_theme_name]/styles/*.
 
 The *styles* directory includes **1 directory** and **2 files**.
 
@@ -42,12 +46,12 @@ The **manifest.json** file contains data about styles in the *json* format.
 
 	 "names": { "example_style": "Cool Style" }
 
-	*	``default`` - default styles (it will be impossible to remove them with Visual Editor).
+	*	``default`` - default styles (it will be impossible to remove them with the Theme Editor).
 
 schema.json
 +++++++++++
 
-The **schema.json** file contains all available fields for editing in Visual Editor in the *json* format. With this file you can add custom fields for editing.
+The **schema.json** file contains all available fields for editing in the Theme Editor in the *json* format. With this file you can add custom fields for editing.
 
 **schema.json** is divided into 4 parts:
 
@@ -91,7 +95,7 @@ The **schema.json** file contains all available fields for editing in Visual Edi
 					*	``values`` - array with the available size values. [8,9,10,11] means that it is possible to choose among 4 available sizes.
 				*	``style`` - font style settings (*bold* or *italic*, for example).
 
-					*	``U`` - setting name will be displayed in Visual Editor (``U`` - underlined, ``B`` - bold, and ``I`` - italic).
+					*	``U`` - setting name will be displayed in the Theme Editor (``U`` - underlined, ``B`` - bold, and ``I`` - italic).
 
 						*	``match`` - name of the variable where the chosen value will be saved. This variable will be available in the *less* file.
 						*	``property`` - property value (``U`` for underlined).
@@ -131,7 +135,7 @@ The **schema.json** file contains all available fields for editing in Visual Edi
 Example
 +++++++
 
-To add the custom field with the **my_custom_field_name** name to the **Colors** section of the Visual Editor:
+To add the custom field with the **my_custom_field_name** name to the **Colors** section of the Theme Editor:
 
 In the **schema.json** file find the **colors** section and add the following code to the end::
 

@@ -30,7 +30,7 @@ Templates are stored in the theme *templates* directory. It has the following st
 
 *	The **404.tpl** file - a template for the 404 page.
 
-*	The **demo_theme_selector.tpl** file - a template for the **Visual editor**.
+*	The **demo_theme_selector.tpl** file - a template for the **Theme Editor**.
 
 *	The **index.tpl** file - the main template file. It contains:
 
@@ -39,7 +39,7 @@ Templates are stored in the theme *templates* directory. It has the following st
 	*	Connection of the *meta.tpl* file.
 	*	Connection of the *common/styles.tpl* file.
 	*	Connection of the *common/scripts.tpl* file.
-	*	Connection of Visual editor, demo panel, translate and template mode, if they are active.
+	*	Connection of Theme Editor, demo panel, translate and template mode, if they are active.
 
 *	The *meta.tpl* file - site meta information: description, keywords, viewport, etc.
 

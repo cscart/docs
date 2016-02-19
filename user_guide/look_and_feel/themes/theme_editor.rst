@@ -4,7 +4,11 @@ Theme Editor
 
 In the **Theme editor** you can easily change the default style to your individual company one: change logo, color scheme, fonts, background settings.
 
-To open the **Theme editor** panel, in the Administration panel go to the **Design → Themes** section and click the **Visual Editor** button near the desired layout.
+To open the **Theme editor** panel, in the Administration panel go to the **Design → Themes** section and click the **Theme Editor** button near the desired layout.
+
+.. note::
+
+    Before **version 4.3.6** the button was called **Visual Editor**.
 
 You can hide the editor panel or close the **Theme editor** using the controls marked with red in the picture below.
 
