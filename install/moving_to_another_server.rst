@@ -1,16 +1,16 @@
-********************************************************
-How To: Move Your CS-Cart Installation to Another Server
-********************************************************
+*****************************************
+How To: Move Your Store to Another Server
+*****************************************
 
 .. note::
 
     **Tutorial Difficulty: 2 / 3**
 
-This article provides the instructions on how to move your CS-Cart store to a different server. These instructions are useful, if you decide to change your hosting provider or upload your local installation of CS-Cart to a remote server, or the other way round.
+This article provides the instructions on how to move your store to a different server. These instructions are useful, if you decide to change your hosting provider or upload your local installation to a remote server, or the other way round.
 
 .. important::
 
-    The details of some steps in this instruction depend on the servers you’re moving to and from. If you have never installed CS-Cart before, please :doc:`read CS-Cart installation instructions <index>` and learn about the :doc:`3 steps to make your store more secure <security>`.
+    The details of some steps in this instruction depend on the servers you’re moving to and from. If you have never installed CS-Cart or Multi-Vendor before, please :doc:`read the installation instructions <index>` and learn about the :doc:`3 steps to make your store more secure <security>`.
 
 ===================================================
 Step 1. Back Up the Database of Your Existing Store
@@ -56,7 +56,7 @@ To back up the database of your existing store, complete the following steps:
 Step 2. Copy the Files of Your Store to the New Server
 ======================================================
 
-2.1. Make an archive with all the files of your store. The way you make an archive depends on your CS-Cart installation:
+2.1. Make an archive with all the files of your store. The way you make an archive depends on your installation:
 
 * If your old store is installed on a host with **cPanel**, go to **cPanel → Files → File Manager**, select all the files of your store, and click **Compress**. Then select the newly created archive and click **Download**.
 
@@ -64,7 +64,7 @@ Step 2. Copy the Files of Your Store to the New Server
 
     **cPanel File Manager** may not show hidden files like **.htaccess**. Before you try to create an archive, go to **Settings** (top right corner of the screen) and tick the **Show hidden files (.dotfiles)** checkbox. That way you’ll make sure that all files of your store are in the archive.
 
-* If you installed CS-Cart on a local machine, find the CS-Cart installation directory and make an archive with your favourite file archiver.
+* If your old store is installed on a local machine, find the installation directory and make an archive with your favourite file archiver.
 
 .. important::
 
@@ -82,7 +82,7 @@ After you unpack the archive with your store, make some changes the **config.loc
 
 .. important::
 
-    You must have a database on your new server before you proceed. Contact your hosting provider or server administrator for database credentials, or :doc:`read CS-Cart installation instructions <index>` to learn how to create databases on various servers.
+    You must have a database on your new server before you proceed. Contact your hosting provider or server administrator for database credentials, or :doc:`read the installation instructions <index>` to learn how to create databases on various servers.
 
 3.1. Open **config.local.php** in an FTP client or the file manager of your host’s control panel.
 
@@ -216,6 +216,10 @@ Make sure to replace **[username]** with your **MySQL username**, and replace **
 =================================
 Step 6. Update the Storefront URL
 =================================
+
+.. note::
+
+    Skip this step if you use **Multi-Vendor**.
 
 This is an optional step. You need to update the URL of your storefront, if the URL of your store has changed. You also need to do this, if you moved the store from the local machine to a remote server, or the other way round:
 
