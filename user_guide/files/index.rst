@@ -4,7 +4,7 @@ Files
 
 The **File Editor** available under **Administration → Files** allows you to manage files directly from the administration panel.
 
-The highlighted buttons in the picutre below allow you to create, upload, rename and remove files. You can edit **.txt** files and create/unpack archives.
+The highlighted buttons in the picture below allow you to create, upload, rename and remove files. You can edit **.txt** files and create/unpack archives.
  
 .. image:: img/files.png
     :align: center

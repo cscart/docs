@@ -4,7 +4,7 @@ Sitemap
 
 By default, the site map includes links to category and information pages only. You can go to **Website → Sitemap** to define a set of custom sections that should be included in the site map as well.
 
-Each new section can nest additional links. To add nested links, click the **gear button** and choose the **Edit** action.
+Each new section can nest additional links. To add nested links, click the **gear** button and choose the **Edit** action.
  
 .. image:: img/manage_site_map.png
     :align: center

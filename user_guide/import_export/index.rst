@@ -28,7 +28,7 @@ For convenience, the import and export sections are divided into **subsections**
 
 * **Users**—user profiles.
 
-To switch between the subsections, use the menu on the left.
+To switch between the subsections, use the menu on the right.
 
 .. image:: img/data_subsections.png
     :align: center
@@ -100,7 +100,7 @@ This is the list of all export options. Some of them appear only in specific sub
 
   .. important::
 
-      Regardless of the output type, you can download the file later: go to **Administration → Export Data**, click the **gear button** and choose **Exported files**.
+      Regardless of the output type, you can download the file later: go to **Administration → Export Data**, click the **gear** button and choose **Exported files**.
 
 * **Features delimiter**—the delimiter to separate multiple product features.
 
@@ -110,3 +110,6 @@ This is the list of all export options. Some of them appear only in specific sub
     :align: center
     :alt: Export options are different for different data types.
 
+.. note ::
+
+  `Here <http://docs.cs-cart.com/4.3.x/user_guide/manage_products/import_export/index.html>`_ you can read more about product Import/Export.

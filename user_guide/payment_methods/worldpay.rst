@@ -2,8 +2,6 @@
 How To: Set up CS-Cart with WorldPay
 ************************************
 
-To set up CS-Cart with WorldPay payment gateway:
-
 *   In the Administration panel, go to **Administration → Payment methods**.
 *   Click the **+** button on the right.
 *   In the opened window:
@@ -13,6 +11,11 @@ To set up CS-Cart with WorldPay payment gateway:
     *   If necessary, specify other fields and upload an icon.
 
 *   Open the **Configure** tab in the same window to view the WorldPay settings.
+
+.. image:: img/worldpay.png
+    :align: center
+    :alt: WorldPay
+
 *   Fill in the following fields, as follows in the **Administration → Installation** page of your WorldPay account:
 
     *   **Installation ID** — your WorldPay installation ID number.
@@ -21,10 +24,6 @@ To set up CS-Cart with WorldPay payment gateway:
     *   **Test/Live mode** — select *Live* mode. In order to use *Test* mode you need to select the *Test: Approved* value in this select-box.
     *   **Currency** —  the currency in your WorldPay account. If it does not match the base currency in your CS-Cart settings, please contact CS-Cart support team.
     *   **Type** — select *Fullauth* type.
-
-.. image:: img/worldpay.png
-    :align: center
-    :alt: WorldPay
 
 .. important::
 

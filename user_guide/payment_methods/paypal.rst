@@ -11,11 +11,16 @@ To set PayPal Website Payments Standard account in CS-Cart:
 *   Click the **+** button on the right.
 *   In the opened window:
 
-    *   In the **Name** text input field type PayPal. 
+    *   In the **Name** text input field type *PayPal*. 
     *   In the **Processor** drop-down select box select *PayPal*. 
         If necessary, specify other fields and upload an icon.
 
 *   In the same window go to the **Configure** tab.
+
+.. image:: img/paypal_01.png
+    :align: center
+    :alt: PayPal
+
 *   Fill in the following fields:
 
     *   **Account** — your PayPal account login (namely, your email address).
@@ -24,11 +29,7 @@ To set PayPal Website Payments Standard account in CS-Cart:
     *   **Test/Live mode** — select *Live*. In order to use the **Test mode** you need to get additional accounts at `PayPal Sandbox <https://developer.paypal.com/>`_.
     *   **Order prefix** — any prefix you want invoice IDs to have on PayPal site (optional field) (for instance, *mycart*). Using the prefix allows to prevent duplicate invoice IDs in case you use the same PayPal account for accepting payment from several websites.
 
-*   Click Create.
-
-.. image:: img/paypal_01.png
-    :align: center
-    :alt: PayPal
+*   Click **Create**.
 
 PayPal account settings:
 

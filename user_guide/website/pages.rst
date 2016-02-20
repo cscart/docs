@@ -48,15 +48,13 @@ General
 
     If you are not familiar with HTML, use the built-in WYSIWYG editor to format the text.
 
-* **Status**—the status of the page
+* **Status**—the status of the page.
 
-  * **Active**—the page appears on the storefront
+  * **Active**—the page appears on the storefront.
 
-  * **Disabled**—the page doesn't appear on the storefront, and can only be edited in the admininstration panel
+  * **Disabled**—the page doesn't appear on the storefront, and can only be edited in the admininstration panel.
 
-  * **Hidden**—the storefront has no link to the page, but the page is available via a direct link
-
-* **Show this page in a pop-up window**—if you enable this option, the page is shown in a pop-up window.
+  * **Hidden**—the storefront has no link to the page, but the page is available via a direct link.
 
 * **Page title**—the title of the page, which is displayed in the title bar of the web browser. Required for SEO purposes.
 
@@ -64,7 +62,7 @@ General
 
 * **META keywords**—the content of the HTML tag with the list of search keywords for the page. Required for SEO purposes.
 
-* **User groups** (requires a `CS-Cart <http://www.cs-cart.com/licenses.html>`_/`Multi-Vendor <http://www.cs-cart.com/multi-vendor-licenses.html>`_ license)—the user groups, members of which can access the page.
+* **User groups** (requires a `CS-Cart <http://www.cs-cart.com/licenses.html>`_/`Multi-Vendor <http://www.cs-cart.com/multi-vendor-licenses.html>`_ license)—the `user groups <http://docs.cs-cart.com/4.3.x/user_guide/users/user_groups/index.html>`_, members of which can access the page.
 
 * **Creation date**—the date when the page was created.
 
@@ -124,7 +122,7 @@ The list of user comments and ratings for the page. The **Comments** field in th
 
     The **Comments and reviews** add-on is not available in the Free mode.
 
-* **Name**—the name of the user who left the comment/rating
+* **Name**—the name of the user who left the comment/rating.
 
 * **Your rating**—user's evaluation of the page.
 

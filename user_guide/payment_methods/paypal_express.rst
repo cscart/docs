@@ -15,13 +15,18 @@ To set up CS-Cart with PayPal Website Express account:
     *   If necessary, specify other fields and upload an icon.
 
 *   Open the **Configure** tab in the same window to view the PayPal Express settings.
+
+.. image:: img/paypalexpress.png
+    :align: center
+    :alt: PayPal Express
+
 *   Fill in the following fields:
 
     *   **Username** — your PayPal Express API username.
     *   **Password** — your PayPal Express API password.
     *   **PayPal authentication method** — select the desired authentication method:
 
-        *   If you select **Certficate**, upload a certificate file in the **Certificate filename** section. You are able to download the certificate in the **Profile → Request API credentials → option1 → Set up PayPal API credentials** section of your personal account at `www.paypal.com <http://www.paypal.com>`_ web site).
+        *   If you select **Certficate**, upload a certificate file in the **Certificate filename** section. You are able to download the certificate in the **Profile → Request API credentials → option1 → Set up PayPal API credentials** section of your personal account at `www.paypal.com <http://www.paypal.com>`_ web site.
 
         *   If you select **Signature**, fill in the **Signature** field — enter your signature. You can find it in the **Permissions → option2 → View API Signature** section of your personal account at `www.paypal.com <http://www.paypal.com>`_ web site.
 
@@ -30,10 +35,6 @@ To set up CS-Cart with PayPal Website Express account:
     *   **Test/Live mode** — select *Live* mode. In order to use *Test* mode you need to get additional accounts at `PayPal Sandbox <https://developer.paypal.com/>`_.
     *   **Order prefix** — any prefix you want invoice IDs to have on PayPal site (optional field) (for instance, *mycart*). Using the prefix allows to prevent duplicate invoice IDs in case you use the same PayPal account for accepting payment from several websites.
 *   Click the **Create** button to save the changes.
-
-.. image:: img/paypalexpress.png
-    :align: center
-    :alt: PayPal Express
 
 .. important::
 

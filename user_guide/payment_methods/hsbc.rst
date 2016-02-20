@@ -2,8 +2,6 @@
 How To: Set up CS-Cart with HSBC
 ********************************
 
-To set up CS-Cart with HSBC account:
-
 *   In the Administration panel, go to **Administration → Payment methods**.
 *   Click the **+** button on the right.
 *   In the opened window:
@@ -13,6 +11,11 @@ To set up CS-Cart with HSBC account:
     *   If necessary, specify other fields and upload an icon.
 
 *   Open the **Configure** tab in the same window in order to view the HSBC settings section.
+
+.. image:: img/hsbc.png
+    :align: center
+    :alt: HSBC
+
 *   Fill in the following fields:
 
     *   **Client ID** — your Client ID, a number between 0 and 999999999, or a valid Client alias of the form *UK12345678CUR*. The alias name is case sensitive.
@@ -21,10 +24,6 @@ To set up CS-Cart with HSBC account:
     *   **Test/Live mode** — select *Live*. In order to use the *Test* mode you need to get additional account.
 
 *   Click the **Create** button to save the changes.
-
-.. image:: img/hsbc.png
-    :align: center
-    :alt: HSBC
 
 .. important::
 

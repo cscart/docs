@@ -15,3 +15,6 @@ This section keeps personal lists of products that your store visitors added to 
 .. hint::
 
     Use the **Advanced search** link to filter carts/wishlists by various parameters.
+
+To remove all carts from the list, click the **gear** button in the right upper corner of the page and click **Delete all found**.
+To remove the selected carts from the list, tick the checkboxes near these carts, click the **gear** button in the upper right corner of the page, and click **Delete selected**.

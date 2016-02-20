@@ -46,9 +46,9 @@ General
 
 * **Status** (requires a purchased license)—currency status: 
 
-  * **Active**—the currency is available on the storefront
+  * **Active**—the currency is available on the storefront.
 
-  * **Disabled**—the currency is not available on the storefront
+  * **Disabled**—the currency is not available on the storefront.
 
 .. image:: img/currency_properties.png
     :align: center

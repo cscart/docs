@@ -15,15 +15,20 @@ To set up CS-Cart with PayPal Website Payments Pro account:
     *   If necessary, specify other fields and upload an icon.
 
 *   In the same window go to the **Configure** tab.
+
+.. image:: img/paypalpro.png
+    :align: center
+    :alt: PayPal Pro
+
 *   Fill in the following fields:
 
     *   **Username** — your PayPal Pro API username.
     *   **Password** — your PayPal Pro API password.
     *   **PayPal authentication method** — select the desired authentication method:
 
-    	*	If you select **Certficate**, upload a certificate file in the **Certificate filename** section. You are able to download the certificate in the **Profile → Request API credentials → option1 → Set up PayPal API credentials** section of your personal account at `www.paypal.com <http://www.paypal.com>`_ web site).
+    	*	If you select **Certficate**, upload a certificate file in the **Certificate filename** section. You are able to download the certificate in the **Profile → Request API credentials → option1 → Set up PayPal API credentials** section of your personal account at `www.paypal.com <http://www.paypal.com>`_ web site.
 
-        *   If you select **Signature**, fill in the **Signature** field — enter your signature (you can find it in the **Permissions → option2 → View API Signature** section of your personal account at `www.paypal.com <http://www.paypal.com>`_ web site)
+        *   If you select **Signature**, fill in the **Signature** field — enter your signature (you can find it in the **Permissions → option2 → View API Signature** section of your personal account at `www.paypal.com <http://www.paypal.com>`_ web site.
 
     *   **Currency** — the currency in your PayPal account. If it does not match the base currency in your CS-Cart settings, please contact CS-Cart support team.
     *   **Test/Live mode** — select *Live* mode. In order to use the *Test* mode you need to get additional accounts at `PayPal Sandbox <https://developer.paypal.com/>`_.
@@ -31,10 +36,6 @@ To set up CS-Cart with PayPal Website Payments Pro account:
 *   Click **Create**.
 
 Also there is the **Use Cardinal Centinel® for 3-D Secure Payer Authentication** link on the settings page of this payment method. If you click on it, it will be changed to **Don't use Cardinal Centinel® for 3-D Secure Payer Authentication** and you will need to fill in the fields in the opened section.
-
-.. image:: img/paypalpro.png
-    :align: center
-    :alt: PayPal Pro
 
 .. important::
 

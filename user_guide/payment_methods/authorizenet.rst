@@ -2,8 +2,6 @@
 How To: Set up CS-Cart with AuthorizeNet
 ****************************************
 
-To set up CS-Cart with AuthorizeNet payment gateway:
-
 *   In the Administration panel, go to **Administration → Payment methods**.
 *   Click the **+** button on the right.
 *   In the opened window:
@@ -13,6 +11,11 @@ To set up CS-Cart with AuthorizeNet payment gateway:
     *   If necessary, specify other fields and upload an icon.
 
 *   Open the **Configure** tab in the same window to view the AuthorizeNet settings.
+
+.. image:: img/authorizenet.png
+    :align: center
+    :alt: AuthorizeNet
+
 *   Fill in the following fields:
 
     *   **Login** — your AuthorizeNet login.
@@ -28,7 +31,3 @@ To set up CS-Cart with AuthorizeNet payment gateway:
 .. important::
 
 	In order to use AuthorizeNet as a payment method on your site, there must be PHP's Curl support on your server. You are able to read more about it `here <http://www.php.net/curl>`_.
-
-.. image:: img/authorizenet.png
-    :align: center
-    :alt: AuthorizeNet

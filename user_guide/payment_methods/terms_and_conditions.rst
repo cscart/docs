@@ -5,7 +5,11 @@ How To: Add Pop-Up Window for Terms and Conditions on Checkout
 To add the "Terms and Conditions" link to the Checkout page, follow these steps:
 
 1. In the root directory of your CS-Cart installation, create the following directories path:
-*design/themes/<Your_Active_Theme>/templates/addons/my_changes/hooks/checkout*. **<Your_Active_Theme>** is the name of the folder with the active theme of your storefront, for example, **responsive**.
+*design/themes/[CUSTOMER_ACTIVE_THEME]/templates/addons/my_changes/hooks/checkout*. **[CUSTOMER_ACTIVE_THEME]** is the name of the folder with the active theme of your storefront, for example, **responsive**.
+
+.. note ::
+
+	Make sure that the **My changes** add-on is installed and activated in the **Add-ons → Manage add-ons** section of the Administration panel.
 
 2. In the *design/themes/<Your_Active_Theme>/templates/addons/my_changes/hooks/checkout* directory, create the **terms_and_conditions.override.tpl** file with the following content:
 
@@ -27,7 +31,7 @@ To add the "Terms and Conditions" link to the Checkout page, follow these steps:
 
 5. Open the administration panel of your store and go to **Administration → Languages → Translations**.
 
-6. In the top right corner of the page, click the **+ button**.
+6. In the top right corner of the page, click the **+** button.
 
 7. Enter *terms_and_conditions_you_accept* into the **Language Variable** field.
 

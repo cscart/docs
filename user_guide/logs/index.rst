@@ -6,13 +6,13 @@ View all the logs of your store under **Administration → Logs**. You can filte
 
 .. hint::
 
-    If you use a particular search pattern often, you can save it: set the search options, type the name of the pattern in the **Save this search as** input field, and click the **Save** button. Once the search pattern is saved, will show up on the drop-down list at the top.
+    If you use a particular search pattern often, you can save it: set the search options, type the name of the pattern in the **Save this search as** input field, and click the **Save** button. Once the search pattern is saved, it will show up on the drop-down list at the top.
 
 .. image:: img/logs.png
     :align: center
     :alt: The file editor allows you to perform various actions on files.
 
-You can perform some other actions using the **gear button**:
+You can perform some other actions using the **gear** button:
 
 * **Settings**—go to the page with the logging settings;
 

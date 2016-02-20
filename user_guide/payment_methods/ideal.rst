@@ -2,8 +2,6 @@
 How To: Set up CS-Cart with iDeal Basic
 ***************************************
 
-To set up CS-Cart with iDeal Basic payment gateway:
-
 *   In the Administration panel, go to **Administration → Payment methods**.
 *   Click the **+** button on the right.
 *   In the opened window:
@@ -13,6 +11,11 @@ To set up CS-Cart with iDeal Basic payment gateway:
     *   If necessary, specify other fields and upload an icon.
 
 *   Open the **Configure** tab in the same window to view the iDeal Basic settings.
+
+.. image:: img/ideal.png
+    :align: center
+    :alt: iDeal Basic
+
 *   Fill in the following fields:
 
     *   **Merchant ID** — the iDeal Basic ING ID number.
@@ -20,10 +23,6 @@ To set up CS-Cart with iDeal Basic payment gateway:
     *   **Language** — select the language.
     *   **Test/Live mode** — select *Live mode*. To use *Test* mode, select *Test* in this select box.
     *   **Currency** — the currency in your iDeal account. If it does not match the base currency in your CS-Cart settings, please contact CS-Cart support team. 
-
-.. image:: img/ideal.png
-    :align: center
-    :alt: iDeal Basic
 
 *   Click the **Create** button to save the changes.
 
