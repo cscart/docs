@@ -8,6 +8,10 @@ Use this section to specify your company details and contact information.
 
 The following parameters are used to specify the geographical location of your business and your contact info. These details are also mentioned in invoices.
 
+.. note ::
+
+	This section must be filled in when realtime shipping methods are used in the store.
+
 * **Company address**;
 
 * **Company city**;

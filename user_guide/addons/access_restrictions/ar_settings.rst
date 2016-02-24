@@ -2,7 +2,7 @@
 Access Restrictions Add-on Settings
 ***********************************
 
-You can manage the following settings in the **Add-ons → Manage add-ons** section of the administration panel. Choose the **Access restrictions** add-on in the **Installed add-ons** tab and click the gear button near its status. Choose **Settings** from the drop-down list.
+You can manage the following settings in the **Add-ons → Manage add-ons** section of the administration panel. Choose the **Access restrictions** add-on in the **Installed add-ons** tab and click the **gear** button near its status. Choose **Settings** from the drop-down list.
 
 .. note ::
 
@@ -11,9 +11,9 @@ You can manage the following settings in the **Add-ons → Manage add-ons** sect
 Administrator area settings
 ***************************
 
-The following parameters define access rules to the administration panel.
+The following parameters define access rules to the Administration panel.
 
-*	**Allow Login to the admin area from specified IPs only** - If selected, the administration panel can be accessed from a limited range of IP-addresses defined in the **Add-ons → Access restrictions** section.
+*	**Allow login to the admin area from specified IPs only** - If selected, the administration panel can be accessed from a limited range of IP-addresses defined in the **Add-ons → Access restrictions** section.
 
 .. important::
 

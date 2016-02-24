@@ -2,7 +2,33 @@
 Image Verification
 ******************
 
-`Image verification <../look_and_feel/changing_attributes/image_verification>` is used to ensure that forms in your store are completed by humans, not automated systems. This allows you to avoid lots of spam and fake user accounts. You can adjust parameters of verification images as well as specify when image verification is required.
+:doc:`Image verification <../look_and_feel/changing_attributes/image_verification>` is used to ensure that forms in your store are completed by humans, not automated systems. This allows you to avoid lots of spam and fake user accounts. You can adjust parameters of verification images as well as specify when image verification is required.
+
+=======
+Use For
+=======
+
+Here you should specify forms for which image verification is required.
+
+* **Login form**;
+
+* **Create and edit profile form**;
+
+* **Checkout (user information) form**;
+
+* **Track my order form**;
+
+* **Send to friend form**;
+
+* **Call request and buy now with one click form**;
+
+* **Custom forms**;
+
+* **Comments and reviews forms**.
+
+================
+Other parameters
+================
 
 * **Image width**—the width of a verification image.
 
@@ -30,24 +56,4 @@ Image Verification
 
 * **Do not use verification after first valid answer**—if you enable this setting, store visitors will only have to pass anti-bot validation once.
 
-=======
-Use For
-=======
 
-Here you should specify forms for which image verification is required.
-
-* **Login form**;
-
-* **Custom forms**;
-
-* **Send to friend form**;
-
-* **Comments and reviews forms**;
-
-* **Checkout (user information) form**;
-
-* **Polls**;
-
-* **Track my order form**;
-
-* **Create and edit profile forms**.

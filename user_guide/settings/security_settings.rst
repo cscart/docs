@@ -4,11 +4,9 @@ Security Settings
 
 Use this section to adjust security settings for accessing the backend.
 
-* **Enable secure connection at checkout**—if you enable this setting, checkout pages will work through the HTTPS protocol. This requires an SSL certificate to be installed on your server.
+* **Enable secure connection for the storefront**—if you enable this setting, storefront pages will work through the HTTPS protocol. This requires an SSL certificate to be installed on your server.
 
 * **Enable secure connection in the administration panel**—if you enable this setting, the administration panel will work through the HTTPS protocol. This requires an SSL certificate to be installed on your server.
-
-* **Enable secure connection for authentication, profile and orders pages**—if you enable this setting, login and profile registration/update pages in the customer area will work through the HTTPS protocol. This requires an SSL certificate to be installed on your server.
 
 * **Keep HTTPS connection once a secure page is visited**—if you enable this setting, visitors will continue browsing the store through the HTTPS protocol after they visit a secure page for the first time.
 

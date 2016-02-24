@@ -40,15 +40,15 @@ Customer Settings
 
 * **Number of columns in the product list**—the number of columns that is used to arrange products on a product list page. This option applies to the *Grid* layout only.
 
-* **Estimate taxes using default address on cart/checkout pages**—if you enable this setting, customers without their own address in the database will see the taxes calculated according to the default address.
+* **Estimate taxes using default address on cart/checkout pages**—if you enable this setting, customers without their own address in the database will see the taxes calculated according to the default address. You can define the default address on the **Settings → General** page in the **Default location** section.
 
 * **Display prices with taxes on category/product pages if the method of calculating taxes is based on a unit's price**—if you enable this setting, product prices displayed on the product and category pages will include taxes.
 
 * **Display prices with taxes on cart/checkout pages if the method of calculating taxes is based on a unit's price**—if you enable this setting, product prices displayed on the cart and checkout pages will include taxes.
 
-* **Display mini thumbnail images as a gallery**—if you enable this setting, multiple product thumbnails will be displayed as a small gallery.
-
 * **Show number of available products**—if you enable this setting, the number of products available for customers will be displayed on the storefront.
+
+* **Display mini thumbnail images as a gallery**—if you enable this setting, multiple product thumbnails will be displayed as a small gallery.
 
 * **Use "Value changer" for the Quantity field**—if you enable this setting, the ordinary quantity field in the product list and on the product details page will be supplemented with a widget to increase/decrease the product quantity.
 
@@ -56,7 +56,7 @@ Customer Settings
 
 * **Default image previewer**—select one of the supported image previewers.
 
-* **Product detailed page view**—choose a template for the default product details page view. If necessary, the view can be set up separately for every product details page or a category of products.
+* **Product detailed page view**—choose a template for the default product details page view. If necessary, the view can be set up separately for every product details page or a category of products in the **Layouts** tab.
 
 * **Display product details in tabs**—if you enable this setting, product details (description, features and so on) will be arranged in multiple tabs.
 
@@ -69,7 +69,7 @@ Customer Settings
 Product List Layouts Settings
 =============================
 
-* **Available product list views**—select the available templates to arrange products on the product list.
+* **Available product list views**—select the available templates to arrange products in the product list. A customer can use these templates in the product list on the storefront.
 
 * **Product list default view**—select the default layout to display categories that have no specific layout defined.
 
@@ -77,19 +77,19 @@ Product List Layouts Settings
 
 * **Available product list sortings**—available orders in which products are sorted on a products list page: 
 
-  *  **Alphabetical**—by name in alphabetical order
+  *  **Alphabetical**—by name in alphabetical order.
   
-  *  **Price**—from lowest to highest product price (or from highest to lowest)
+  *  **Price**—from lowest to highest product price (or from highest to lowest).
 
-  *  **Popularity**—by product rating
+  *  **Popularity**—by product rating.
 
-  *  **Bestsellers**—by the number of sold items
+  *  **Bestsellers**—by the number of sold items.
 
-  *  **Oldest**—by the date of adding the product to the store (older products are higher on the list) 
+  *  **Oldest**—by the date of adding the product to the store (older products are higher on the list). 
 
-  *  **Newest**—by the date of adding the product to the store (newer products are higher on the list)
+  *  **Newest**—by the date of adding the product to the store (newer products are higher on the list).
 
-  *  **Position**—by position, that the product takes in the list
+  *  **Position**—by position, that the product takes in the list.
 
 * **Enable quick view**——if you enable this setting, the **Quick view** button will appear on the product picture when the customer hovers a cursor on it.
 

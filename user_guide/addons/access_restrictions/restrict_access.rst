@@ -27,15 +27,15 @@ How To: Restrict Access to Administartion Panel
         	The administrator IP is saved automatically in the **Administration panel** section.
 
 *   Go to **Add-ons → Manage add-ons** and click on the name of the **Access restrictions** add-on to continue its editing.
-*   **Block IP after a number of unsuccessful attempts** — tick if you want to deny any further attempts to log in.
+*   **Block IP after a number of unsuccessful attempts** — tick if you want to deny any further attempts to login.
 
     .. note ::
 
     	The number of possible attempts should be specified below and the attempts have to be made within the period set in the **Time between unsuccessful login attempts** field.
 
 *   **Number of unsuccessful attempts** — define how many unsuccessful attempts to login can be made before user's IP address will be blocked.
-*   **Time between unsuccessful login attempts** — specify the period within which attempts to log in can be made.
-*   **Time for which the IP should be blocked** — specify how long the IP address will be blocked after unsuccessful attempts to log in.
+*   **Time between unsuccessful login attempts** — specify the period within which attempts to login can be made.
+*   **Time for which the IP should be blocked** — specify how long the IP address will be blocked after unsuccessful attempts to login.
 *   Click **Save**.
 
 .. image:: img/access_restrictions_02.png

@@ -12,7 +12,7 @@ Settings and preferences in this section affect different aspects of your store.
 
 * **Close storefront**—make the storefront unavailable for customers.
 
-* **Access key to temporarily closed store**—the key to access the temporarily closed storefront. For example, if the key is ``123456``, the closed store can be accessed through the following URL only: ``http://www.example.com/index.php?store_access_key=123456``.
+* **Access key to temporarily closed store**—the key to access the temporarily closed storefront. For example, if the key is ``123456``, the closed store can be accessed through the following URL only: ``http://www.example.com/index.php?store_access_key=123456``, where replace *www.example.com* with the address of your store.
 
 * **Initial order ID value**—an integer number to open the order ID numbering. The value you enter here will be used as the ID of the next order placed in your store. With every new order, its ID will increase by 1. The value of this field cannot be less than any order ID number that is already in the database.
 
@@ -82,6 +82,8 @@ You can define the following details:
 
 * **Default phone**.
 
+This information is also used when setting the `realtine shipping methods <http://docs.cs-cart.com/4.3.x/user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/index.html>`_.
+
 =======
 Catalog
 =======
@@ -116,9 +118,9 @@ Users/Cart
 
 * **Allow users to create multiple profiles for one account**—if you enable this setting, users will be allowed to specify multiple shipping and billing addresses for a single account. This may be useful when a user needs separate profiles for personal and business use, for example.
 
-* **Define minimum order amount by**—choose whether the minimum order amount should include the shipping cost (*Products with shipping*) or be a bare cost of products in the order (*Products*)
-
 * **Minimum order amount**—the minimum amount of order subtotal required to place an order.
+
+* **Define minimum order amount by**—choose whether the minimum order amount should include the shipping cost (*Products with shipping*) or be a bare cost of products in the order (*Products*).
 
 * **Allow shopping for unlogged customers**—if you enable this setting, store visitors will be able to add products to their carts even if they are not logged in.
 
@@ -152,9 +154,9 @@ Proxy Server for Outgoing Connections
 
 If your store works under a proxy-server, specify your connection details here.
 
-* **Proxy host**—the name of the proxy server (e.g., *example.com*)
+* **Proxy host**—the name of the proxy server (e.g., *example.com*).
 
-* **Proxy port**—the proxy server port number (e.g., *8080*)
+* **Proxy port**—the proxy server port number (e.g., *8080*).
 
 * **Proxy user**—the username to connect to the proxy server.
 
