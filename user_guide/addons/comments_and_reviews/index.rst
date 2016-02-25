@@ -6,7 +6,7 @@ This add-on enables you to manage customer feedback and discussions appearing on
 
 *	Product and category pages
 *	Order details
-*	Gift registry
+*	Blog
 *	Content pages
 *	Testimonials
 

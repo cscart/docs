@@ -16,6 +16,7 @@ To create a text or graphic banner:
 
 	*   For *Text banner* in the **Description** field type the description of the banner.
 	*	For *Graphic banner* upload an image and choose whether to display the banner in new window.
+	*	If needed, specify the URL to which the banner is linked in the **URL** (graphic banner only) field.
 
 *   Click **Create**.
 

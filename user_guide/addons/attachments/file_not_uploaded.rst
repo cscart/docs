@@ -7,7 +7,7 @@ If the File Cannot Be Uploaded
 *   Check the maximum size of the uploaded file on your server:
 
     *   In the Administration panel, go to **Administration → Logs**.
-    *   Click the gear button and choose **PHP information** from the drop-down menu. A new page that displays the result of **phpinfo** PHP function will open.
+    *   Click the **gear** button and choose **PHP information** from the drop-down menu. A new page that displays the result of **phpinfo** PHP function will open.
     *   Search for the ``upload_max_filesize`` variable. The value of this variable defines the maximum size of the file which can be uploaded through PHP script on your server.
 
     .. note ::

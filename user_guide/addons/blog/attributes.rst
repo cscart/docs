@@ -23,7 +23,7 @@ General
 
 **Availability**
 
-*    **User groups** - User groups whose members can access the page.
+*    **User groups** - `User groups <http://docs.cs-cart.com/4.3.x/user_guide/users/user_groups/index.html>`_ whose members can access the page.
 *    **Creation date** - Date when the page was created.
 *    **Use available period** - If selected, the post is available for a certain period of time only.
 *    **Available from** - Date when the post becomes available for visitors.

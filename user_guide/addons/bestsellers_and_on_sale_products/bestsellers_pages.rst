@@ -45,7 +45,7 @@ Add the banner to the storefront
 *   Choose the desired container, click the **+** icon on it, and click **Add block**.
 *   In the opened window switch to the **Create New Block** tab and click the **Banners** button.
 *   Fill in the **Name** field and switch to the **Content** tab.
-*   In this tab pick *Manual* in the **Filling** select box, and click the **Add banners** button.
+*   In this tab pick *Manually* in the **Filling** select box, and click the **Add banners** button.
 *   Here you can see the list of banners in your store. Pick the banner you have just created and click **Add banners and close**.
 *   Click the **Create** button.
 

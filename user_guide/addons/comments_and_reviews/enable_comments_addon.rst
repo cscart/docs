@@ -13,7 +13,7 @@ To allow a customer to write comments:
 
 	You are able to allow comments for products, categories, orders, blog, pages, and testimonials.
 
-*   In the **Comments and reviews** section in the Reviews drop-down menu choose the type of reviews: *Communication and rating*, *Communication* or *Rating*.
+*   In the **Comments and reviews** section in the **Reviews** drop-down menu choose the type of reviews: *Communication and rating*, *Communication* or *Rating*.
 
 .. image:: img/comments_01.png
 	:align: center
