@@ -1,5 +1,5 @@
 *************************************
-How To: Create add-on upgrade package
+How To: Create Add-on Upgrade Package
 *************************************
 
 For example, let's take a simple add-on that adds several fields to a product and changes the products selection logic. It is called **Demo add-on** and has an id = "upgrade".

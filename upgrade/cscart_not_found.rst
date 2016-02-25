@@ -4,7 +4,7 @@ CS-Cart Software Was Not Found in the Directory You Entered
 
 If you see the **"CS-Cart software was not found in the directory you entered"** error message, check the FTP account options entered for the Upgrade Center:
 
-1. Open the administration panel of your store.
+1. Open the Administration panel of your store.
 
 2. Go to **Settings → Upgrade Center**.
 

@@ -18,7 +18,7 @@ Configure Upgrade Center
 
 3. Fill in the following fields:
 
-* **License number**—the license key associated to your domain name. You can see it on the **Licenses** page in your `Customer Help Desk account <https://www.cs-cart.com/helpdesk>`_. You can't upgrade a store while using the trial mode.
+* **License number**—the license key associated with your domain name. You can see it on the **Licenses** page in your `Customer Help Desk account <https://www.cs-cart.com/helpdesk>`_. You can't upgrade a store while using the trial mode.
 
 If a web user does not have permissions to update files on your server, fill in your FTP account details:
 

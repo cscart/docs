@@ -11,3 +11,4 @@ CS-Cart add-on development guides.
 
     */index
     *
+    ../../upgrade/upgrade_addon

@@ -1,8 +1,8 @@
-*********************************************
-Upgrade center: How it is organized and works
-*********************************************
+****************************
+Upgrade Center: How it Works
+****************************
 
-Main features of the new Upgrade Center
+Here are the main features of the new Upgrade Center:
 
 *	SQL files are no more used. All work with DB is being done with Migrations.
 *	Now it is possible to define upgrade servers and upload upgrade packages for add-ons.
@@ -16,13 +16,20 @@ Interface
 
 On the Upgrade Center page you can see available packages. They can be of the two types:
 
-*	core
-*	add-on
+* core
+* add-on
 
 Core packages are downloaded through ``$config['resources']['updates_server']`` (`http://updates.cs-cart.com <http://updates.cs-cart.com>`_).
 Add-ons packages are downloaded through add-on connectors and from servers defined in these connectors.
 
 It is also possible to upload an upgrade package manually using the form on the Upgrade Center page (the + button in the picture above).
+
+.. toctree::
+    :maxdepth: 1
+    :titlesonly:
+    :glob:
+
+    upgrade_package
 
 Checking for updates
 ********************

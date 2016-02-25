@@ -1,8 +1,8 @@
 ******************************************
-Upgrade Center: Build your upgrade package
+Upgrade Center: Build Your Upgrade Package
 ******************************************
 
-To create an upgrade package automatically, we wrote the **build.php** script (*_tools/upgrade/*). It is run by the following command:
+To create an upgrade package automatically, we wrote the **build.php** script (*_tools/upgrade/*). Run it with the following command:
 
 .. code-block:: none
 

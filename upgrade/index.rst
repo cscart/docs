@@ -7,4 +7,6 @@ Upgrade CS-Cart
     :titlesonly:
     :glob:
 
-    *
+    upgrade_process
+    resolve_conflicts
+    cscart_not_found

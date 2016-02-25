@@ -11,6 +11,7 @@ CS-Cart follows a modular architecture philosophy: there is a core part, which i
 
     */index
     *
+    ../../upgrade/upgrade
 
 .. important::
 

@@ -4,7 +4,7 @@ How To: Resolve Local Modification Conflicts after Upgrade
 
 If you changed any files of your CS-Cart installation, you'll see them on the list of local modifications :doc:`when you install an upgrade <upgrade_process>`. The Upgrade Center will back up those files, so that you can resolve the conflicts manually after the upgrade. To do it, follow these steps:
 
-1. Open the administration panel of your store.
+1. Open the Administration panel of your store.
 
 2. Go to **Administration → Upgrade center**.
 
