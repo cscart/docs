@@ -4,8 +4,8 @@ How To: Disable Shipping on the Storefront
 
 To disable shipping on the storefront:
 
-*   In the Administration panel, go to **Administration → Shipping & Taxes → Shipping methods**.
-*   Switch all the shipping methods statuses to **Disabled**.
+1. In the Administration panel, go to **Administration → Shipping & Taxes → Shipping methods**.
+2. Switch the statuses of all the shipping methods to **Disabled**.
 
 .. image:: img/disable_shipping.png
     :align: center
@@ -13,4 +13,4 @@ To disable shipping on the storefront:
 
 .. note::
 
-	After that shipping methods will not be required and customers will be able to place an order without selecting a shipping method. Also shipping freights will be ignored in this case.
+    After that shipping methods will not be required and customers will be able to place an order without selecting a shipping method. In this case the shipping freights will also be ignored.

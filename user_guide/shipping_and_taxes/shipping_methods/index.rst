@@ -8,7 +8,7 @@ A shipping method is a set of rules and parameters to calculate the cost of ship
     :align: center
     :alt: Shipping methods list
 
-In the list, you can quickly edit certain attributes of a shipping method. To access more attributes, click on the method name or the gear button which corresponds to the required shipping and choose **Edit** from the drop-down list.
+Use this list to edit certain attributes of a shipping method. To access more attributes, click on the method name or the gear button of the required shipping method and choose **Edit** from the drop-down list.
 
 .. toctree::
     :maxdepth: 2

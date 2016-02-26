@@ -7,6 +7,7 @@ The **Free shipping** checkbox on the **Shipping Properties** tab under **Produc
 ============
 Before 4.3.5
 ============
+
 Products with the ticked **Free shipping** checkbox did not require shipping and were excluded from the shipping fee calculation.
 
 You could turn off the shipping method selection dialogue by ticking the **Disable shipping** checkbox under **Settings → General**.

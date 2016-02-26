@@ -32,16 +32,16 @@ General
 *	**Shipping service** - Shipping service provider/carrier that will be in charge of delivering the order. This select box is available only if the rate calculation mode is set to **Realtime**.
 *	**Test** -  Click the **calculate shipping cost** link to see a special form to test the selected real-time shipping rate estimation service. Test estimation considers the weight that you specify in the form as well as the company (**Settings → Company**) and the default customer address (**Settings → General/Default location**).
 *	**Taxes** - Tax rates that apply to the shipping method.
-*	**User groups** (requires commercial license) - `User groups <http://docs.cs-cart.com/4.3.x/user_guide/users/user_groups/index.html>`_ option whose members can choose to deliver their orders through this shipping method.
+*	**User groups** (requires commercial license) - :doc:`User groups <../../users/user_groups/index>`, the members of which can choose this shipping method at checkout.
 *	**Status** - Status of the shipping method: *Active* or *Disabled*.
 
 Configure
 *********
 
-This tab appears only if you have selected `real-time shipping <http://docs.cs-cart.com/4.3.x/user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/index.html>`_ rate calculation in the **General** tab of this section. Here you should configure the selected shipping service and specify its settings. Such settings vary depending on the shipping service provider. So, if you do not know what values/options should be entered or selected, please refer to the carrier's help pages and documentation.
+This tab appears only if you have selected :doc:`real-time shipping <realtime_shipping_methods/index>` rate calculation in the **General** tab of this section. Here you should configure the selected shipping service and specify its settings. Such settings vary depending on the shipping service provider. So, if you do not know what values/options should be entered or selected, please refer to the carrier's help pages and documentation.
 
  
-Shipping charges
+Shipping Charges
 ****************
 
 The rates that you define here are used to calculate the shipping cost regardless of whether you use real-time shipping rate estimation or not. If you have chosen to receive rates from a carrier in the real-time mode, the charges from this section will be simply added to the carrier's charge. You can use this to add a shipping markup in order to compensate for your actual expenses if they exceed the values returned by the carrier (e.g., packing, insurance, etc.)
@@ -59,4 +59,4 @@ The rates can depend on the product cost, weight or quantity as well as being sp
 Share
 *****
 
-Stores that share this shipping method. Read `Sharing objects <http://docs.cs-cart.com/4.3.x/user_guide/stores/sharing.html>`_ for more details.
+Stores that share this shipping method. :doc:`Learn more about sharing objects. <../../stores/sharing>`
