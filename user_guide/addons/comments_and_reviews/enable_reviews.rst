@@ -12,7 +12,7 @@ To enable reviews for all products at once:
 	:alt: Total items
 
 *   Select the left top check box to select all products.
-*   After that click the gear button and select **Edit selected**. 
+*   After that click the **gear** button and select **Edit selected**. 
 
 .. image:: img/reviews_02.png
 	:align: center

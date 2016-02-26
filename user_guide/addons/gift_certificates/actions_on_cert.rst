@@ -32,7 +32,7 @@ This will open a form for creating a gift certificate, which is quite similar to
 	*	**Free products** - Products that will be bundled with the certificate and sent to the recipient. Click the **Add Product** button to bundle new products.
 	*	**Notify customer** - If selected, the customer receives an automatic email notification when a new gift certificate is created.
 	
-*	Click the Create button.
+*	Click the **Create** button.
 
 Editing gift certificates
 *************************

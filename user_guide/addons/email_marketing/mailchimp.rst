@@ -13,7 +13,7 @@ To start export:
 	:align: center
 	:alt: MailChimp admin panel
 
-*   To connect your store to MailChimp, generate an **API Key** as discribed `here <http://kb.mailchimp.com/article/where-can-i-find-my-api-key/>`_.
+*   To connect your store to MailChimp, generate an **API Key** as described `here <http://kb.mailchimp.com/article/where-can-i-find-my-api-key/>`_.
 *   After that, log in to your **CS-Cart** administration panel and go to **Add-ons → Manage Add-ons**.
 *   Activate the **Email marketing** add-on and open its settings.
 *   In the **General** tab choose **MailChimp** in the **Integration provider** field and choose other prefernces:

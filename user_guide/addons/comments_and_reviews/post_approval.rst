@@ -1,6 +1,6 @@
-*************
-Post Approval
-*************
+*********************
+How To: Approve Posts
+*********************
 
 *   In the Administration panel, go to **Add-ons → Manage add-ons**.
 *   Click on the name of the **Comments and reviews** add-on.
