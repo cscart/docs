@@ -48,13 +48,13 @@ Registering a New Payout
 
 To register a new payout, follow these steps:
 
-* Open Multi-Vendor administration panel.
+1. Open Multi-Vendor administration panel.
 
-* Go to **Vendors → Account Balance**.
+2. Go to **Vendors → Account Balance**.
 
-* Click the **+** button to add a new payout.
+3. Click the **+** button to add a new payout.
 
-* Fill in the form:
+4. Fill in the form:
 
 	* **Vendor**—select the vendor.
 
@@ -72,4 +72,4 @@ To register a new payout, follow these steps:
     :align: center
     :alt: Create new payout
 
-* Click the **Create** button.
+5. Click the **Create** button.

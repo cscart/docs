@@ -16,17 +16,19 @@ Allowing Customers to Apply for a Vendor Account
 
 To allow customers apply for a vendor account, complete the following steps:
 
-* In the Administration panel, go to **Settings → Vendors**.
+1. In the Administration panel, go to **Settings → Vendors**.
 
-* Tick  the **Allow users to apply for vendor account** checkbox.
+2. Tick the **Allow users to apply for vendor account** checkbox.
 
-* Tick the **Automatically create the administrator account for the new approved vendor. (If the "Allow users to apply for vendor account" setting is enabled)** checkbox. 
+3. Tick the **Automatically create the administrator account for the new approved vendor. (If the "Allow users to apply for vendor account" setting is enabled)** checkbox. 
 
 .. image:: img/settings_vendors.png
     :align: center
     :alt: Tick the two highlighted checkboxes under Settings → Vendors to allow customers to apply for a vendor account.
 
-* Click the **Save** button.
+4. Click the **Save** button.
+
+5. If you use **Multi-Vendor 4.3.6**, go to **Add-ons → Manage add-ons**, click **Vendor commissions** and enable the **Show "Apply for a vendor" link in "My account menu"** setting.
 
 =======================
 The Application Process
@@ -40,6 +42,11 @@ After that a customer will see the **Apply for a vendor account** link in the **
 
 This link leads to the form that the customer must fill in to apply.
 
+.. important::
+
+   You can create the application link elsewhere manually. For example, you can create a :doc:`menu <../../look_and_feel/menus/index>` with an :doc:`item <../../look_and_feel/menus/menu_items>` that leads to ``dispatch=companies.apply_for_vendor``. This is useful when you use **Multi-Vendor 4.3.6** and disable or uninstall the **Vendor commissions** add-on.
+
+
 .. image:: img/vendors_application_form.png
     :align: center
     :alt: Tick the two highlighted checkboxes under Settings → Vendors to allow customers to apply for a vendor account.
@@ -52,15 +59,19 @@ Activating a Vendor Account
 
 To activate a vendor account, the administrator must complete the following steps:
 
-* Go to **Vendors → Vendors**.
+1. Go to **Vendors → Vendors**.
 
-* Find the vendor account you want to activate.
+2. Find the vendor account you want to activate.
 
 .. hint::
 
     The vendor accounts that haven't been activated or disabled yet have the **New** status. 
 
-* Change the status of the desired account to **Active**.
+3. Change the status of the desired account to **Active**.
+
+.. hint::
+
+    :doc:`Learn more about vendor statuses <vendor_statuses>` in the corresponding article of the documentation.
 
 .. image:: img/change_vendor_status.png
     :align: center

@@ -12,17 +12,17 @@ How To: Create a Vendor Account
 
 To create a vendor account, complete the following steps:
 
-* In the Administration panel go to **Vendors → Vendors**.
+1. Open the Administration panel of your store and go to **Vendors → Vendors**.
 
-* Click the **+** button in the right part of the page.
+2. Click the **+** button in the right part of the page.
 
 .. image:: img/add_vendor.png
     :align: center
     :alt: Use the + button to add a new vendor.
 
-* Fill in the form on the **General** tab and specify vendor profile attributes.
+3. Fill in the form on the **General** tab and specify vendor profile attributes.
 
-* Tick the **Create administrator account** checkbox to create a new user of the administrator type.
+4. Tick the **Create administrator account** checkbox to create a new user of the administrator type.
 
 .. image:: img/admin_account.png
     :align: center
@@ -32,4 +32,4 @@ To create a vendor account, complete the following steps:
 
     The created administrator account will be associated with the vendor account and will be able to log in to the administrator panel to manage this vendor's settings and products.
 
-* Click the **Create** button. The new vendor account will appear among the other vendor accounts in the store.
+5. Click the **Create** button. The new vendor account will appear among the other vendor accounts in the store.

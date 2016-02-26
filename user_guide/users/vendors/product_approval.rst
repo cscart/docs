@@ -14,13 +14,13 @@ Approving/Disapproving Products
 
 To approve/disapprove a product, follow these steps:
 
-* Log in to the Administration panel as the **root administrator**. 
+1. Log in to the Administration panel as the **root administrator**. 
 
-* Go to **Vendors → Product approval**. This will display a list of all products in the store.
+2. Go to **Vendors → Product approval**. This will display a list of all products in the store.
 
-* If necessary, use the search form to the right of the list to filter the products.
+3. If necessary, use the search form to the right of the list to filter the products.
 
-* Click either the **Approve** or **Disapprove** icon of the required product. 
+4. Click either the **Approve** or **Disapprove** icon of the required product. 
 
 .. hint::
     To approve/disapprove several products at once, tick the checkboxes of the required products and click the **Approve selected** or **Disapprove selected** button above the list.
@@ -42,4 +42,5 @@ Every product on the list can have one of the following statuses:
 Products added by vendors may or may not require root administrator's approval. New products get the **Pending** status, if the **Products require prior approval** setting is enabled in the profile of the vendor who adds the products.
 
 .. note::
+
     The root administrator gets notified of pending products when logging in to the administration panel.
