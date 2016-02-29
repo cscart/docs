@@ -36,11 +36,9 @@ How To: Display Shipping Method Icons on the Checkout Page
 
 In this example the shipping method icon width is 100 and its height is 100 too. If you want to define another width and height, type your own numbers for the ``image_width`` and ``image_height`` parameters.
 
-If you made changes in a template but they are not displayed, please try cleaning up the template cache. In order to do it, open this link in your browser: *http://www.your_domain.com/admin.php?cc* where *www.your_domain.com* is the address of your store and where admin.php is a script file for the Administration panel of your store that was renamed for security reasons.
-
 .. note ::
 
-    Before cleaning the templates cache you should be logged in to the Administration panel of your store.
+    If your changes to the template are not displayed, try :doc:`clearing the template cache <../../../developer_guide/getting_started/cache_clearing>`.
 
 To upload a shipping method icon:
 
