@@ -4,15 +4,15 @@ How To: Create a New User Group for Customers
 
 To create a new user group for customers, complete the steps below:
 
-* In the Administration panel go to **Customers → User groups**.
+1. In the Administration panel go to **Customers → User groups**.
 
-* Click the **+** button on the right.
+2. Click the **+** button on the right.
 
-* Enter the name your user group in the **User group** field.
+3. Enter the name your user group in the **User group** field.
 
-* Set the **Type** to **Customer**.
+4. Set the **Type** to **Customer**.
 
-* Click the **Create** button.
+5. Click the **Create** button.
 
 .. image:: img/customer_group.png
     :align: center
@@ -26,13 +26,13 @@ To create a new user group for customers, complete the steps below:
 
 To add a user to the created user group, complete the following steps:
 
-* Go to **Customers → Customers**.
+1. Go to **Customers → Customers**.
 
-* Click the desired username to open the profile.
+2 Click the desired username to open the profile.
 
-* Switch to the **User groups** tab.
+3. Switch to the **User groups** tab.
 
-* Set the status to **Active** for the group you've just created.
+4. Set the status to **Active** for the group you've just created.
 
 .. important::
 

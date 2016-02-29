@@ -4,27 +4,27 @@ How To: Create a New Administrator Group
 
 To create a new administrator group with limited rights, complete the steps below:
 
-* In the Administration panel go to **Customers → User groups**.
+1. In the Administration panel go to **Customers → User groups**.
 
-* Click the **+** button on the right.
+2. Click the **+** button on the right.
 
-* Enter the name of your user group in the **User group** field.
+3. Enter the name of your user group in the **User group** field.
 
-* Set the **Type** to **Administrator**.
+4. Set the **Type** to **Administrator**.
 
-* Click the **Create** button.
+5. Click the **Create** button.
 
 .. image:: img/admin_group.png
     :align: center
     :alt: Specify the name and the type of the new user group.
 
-* Open the newly created administrator group.
+6. Open the newly created administrator group.
 
-* Go to the **Privileges** tab. 
+7. Go to the **Privileges** tab. 
 
-* Tick the checkboxes next to the privileges you want to enable for the group.
+8. Tick the checkboxes next to the privileges you want to enable for the group.
 
-* Click the **Save** button.
+9. Click the **Save** button.
 
 .. image:: img/admin_privileges.png
     :align: center
@@ -32,13 +32,13 @@ To create a new administrator group with limited rights, complete the steps belo
 
 To add a user to the group, complete the following steps:
 
-* Go to **Customers → Administrators**.
+1. Go to **Customers → Administrators**.
 
-* Click the desired username to open the profile.
+2. Click the desired username to open the profile.
 
-* Switch to the **User groups** tab. 
+3. Switch to the **User groups** tab. 
 
-* Set the status to **Active** for the group you've just created.
+4. Set the status to **Active** for the group you've just created.
 
 .. important::
 
