@@ -14,9 +14,9 @@ No Shipping Options Available for Your Location
 
 * Check the location settings in your store. Open the Administration panel and go to **Administration → Shipping & Taxes → Locations**. Click on the name of the desired location. Check whether the address selected in the **Shipping** section on the **Checkout** page in the storefront is included in the location.
 
-* If you set up a manual shipping method, follow `this article <manual_shipping_methods/shipping_not_displayed>`.
+* If you set up a manual shipping method, follow :doc:`this article <manual_shipping_methods/shipping_not_displayed>`.
 
-* If you set up a realtime shipping method follow `this article <realtime_shipping_methods/not_displayed>`.
+* If you set up a realtime shipping method follow :doc:`this article <realtime_shipping_methods/not_displayed>`.
 
 * If the **Suppliers** functionality is enabled in your CS-Cart, check whether it is :doc:`set up properly <../../users/suppliers/configure_suppliers>`.
 
