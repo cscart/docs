@@ -2,13 +2,19 @@
 Extending API
 *************
 
-In order to extend the API with a new entity with an add-on:
+If you want your add-on to extend the API with a new entity, follow these steps:
 
-*   In the add-on directory, create the subdirectories ``Tygh/Api/Entities``
-*   In the ``Tygh/Api/Entities`` subdirectory, create a file for the new entity (e.g. **Things.php**)
-*   In this file, define the class of the same name (e.g. ``Things``) inherited from the abstract ``Api\Entity`` class, in the ``Tygh\Api\Entities`` namespace.
+1. Create the ``Tygh/Api/Entities`` subdirectory in the directory of your add-on.
 
-    This class must implement all 4 mandatory methods (CRUD).
+2. In the ``Tygh/Api/Entities`` subdirectory, create a file for the new entity (for example, **Things.php**)
+
+   .. hint::
+
+       For example, if you work the **My Changes** add-on, the path to the new entity should be *app/addons/my_changes/Tygh/Api/Entities/Things.php*.
+
+3. In this file, define the class **of the same name** (``Things`` in our case) inherited from the abstract ``Api\Entity`` class, in the ``Tygh\Api\Entities`` namespace.
+
+   This class must implement all 4 mandatory methods (CRUD).
 
 ==============
 Basic Template
