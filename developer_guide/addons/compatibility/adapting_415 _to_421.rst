@@ -1,6 +1,6 @@
-===================================
-Adapt Your Add-Ons To CS-Cart 4.2.1 
-===================================
+***********************************
+Adapt Your Add-Ons to CS-Cart 4.2.1 
+***********************************
 
 Familiarize yourself with the list of changes that can affect your add-ons operation when updating from 4.1.5 to 4.2.1 version.
 
@@ -10,11 +10,17 @@ Here is the list of main changes
 
 --------------------------------------------------------------------------------------------------------------------
 
+================
+Responsive Theme
+================
+
 New **Responsive** theme was added. You should check your add-ons design with the new theme and adapt it if needed.
 
 --------------------------------------------------------------------------------------------------------------------
 
-**SEO**
+===
+SEO
+===
 
 Because of the fact that the SEO add-on was highly modified (see the list of changes in our blog), PHP functions were changed too. 
 If your add-on works with the SEO functionality, check it.
@@ -40,7 +46,9 @@ Choose "Compare with": "CS-Cart Lifetime License" "4.1.5" and click **Search**.
 
 --------------------------------------------------------------------------------------------------------------------
 
-**Languages**
+=========
+Languages
+=========
 
 PO files format was changed.
 
@@ -65,7 +73,9 @@ According to this, all PO files related functions were changed too.
 
 ---------------------------------------------------------------------------------------------------------------------
 
-**Settings**
+========
+Settings
+========
 
 The following settings:
 
@@ -111,6 +121,10 @@ Also the following settings changed their names:
 
 ---------------------------------------------------------------------------------------------------------------------
 
+=====
+HTML5
+=====
+
 We have completely switched to HTML5. There is no more need in the following structure in JavaScript code:
 
 .. code-block:: none
@@ -121,7 +135,11 @@ We have completely switched to HTML5. There is no more need in the following str
 
 ----------------------------------------------------------------------------------------------------------------------
 
-All the config variables with the resources paths were moved to ``$config['resources’]``.
+====================
+$config['resources']
+====================
+
+All the config variables with the resources paths were moved to ``$config['resources']``.
 
 .. code-block:: none
 
@@ -147,19 +165,19 @@ All the config variables with the resources paths were moved to ``$config['resou
 
 -------------------------------------------------------------------------------------------------------------------------
 
-**Exim**
+=============
+Export/Import
+=============
 
-The ability to import Order items for a non-existing order was removed.
+* The ability to import Order items for a non-existing order was removed.
 
--------------------------------------------------------------------------------------------------------------------------
-
-**Exim**
-
-The ability to import language variables for a non-existing language was removed.
+* The ability to import language variables for a non-existing language was removed.
 
 -------------------------------------------------------------------------------------------------------------------------
 
-**Layouts: Blocks** 
+===============
+Layouts: Blocks
+=============== 
 
 The ``disable_cache`` flag for *fillings* was returned.
 Now it is possible to disable cache for certain *fillings* values (when creating the *Random products* block, for example).
@@ -188,9 +206,17 @@ Now it is possible to disable cache for certain *fillings* values (when creating
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
+======
+Smarty
+======
+
 Smarty was updated to the latest version (3.1.15 -> 3.1.18).
 
 ---------------------------------------------------------------------------------------------------------------------------------
+
+======================
+fn_get_storefront_urls
+======================
 
 The new helpful function was added:
 
@@ -206,6 +232,10 @@ The new helpful function was added:
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
+=============
+301 Redirects
+=============
+
 The ``is_permanent`` flag was added to the **fn_redirect** function. Now it is possible to create 301 redirects.
 
 .. code-block:: none
@@ -215,16 +245,26 @@ The ``is_permanent`` flag was added to the **fn_redirect** function. Now it is p
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
+=====================
+PRODUCT_NAME Constant
+=====================
+
 The ``PRODUCT_NAME`` constant was added.
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
-**Suppliers**
+=========
+Suppliers
+=========
 
 The ability to create a common shipping method for all suppliers was added.
 The corresponding code was changed.
 
 ---------------------------------------------------------------------------------------------------------------------------------
+
+=================
+Extending Add-ons
+=================
 
 If it is necessary to extend one add-on with another, now it is possible to select all hook functionality inside the add-on. For example, *news_and_emails* uses *seo*. Not to spread the *seo* functionality across all the *news_and_emails* functionality, it can be passed to a hook:
 
@@ -244,16 +284,26 @@ The name of a function processing a hook is **fn_seo_get_news_data**. It is call
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
-**Banners**
+=======
+Banners
+=======
 
 Now demo banners are always installed.
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
+==========================
+New Web Configuration File
+==========================
+
 The web configuration file for ISS servers was added (for *htaccess*).
 Check the *var/conf/* directory.
 
 ----------------------------------------------------------------------------------------------------------------------------------
+
+===================
+The Instance Method
+===================
 
 The ``instance`` method of the **Settings** class now allows to get settings of the defined company: 
 
@@ -264,11 +314,17 @@ The ``instance`` method of the **Settings** class now allows to get settings of 
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
+================
+HTACCESS Changes
+================
+
 *htaccess* now allows to download the **.yml** and **.xml** files from the *var/* directory.
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
-**Hooks**
+=====
+Hooks
+=====
 
 .. code-block:: none
 
@@ -276,6 +332,10 @@ The ``instance`` method of the **Settings** class now allows to get settings of 
 	+fn_set_hook('update_shipping_post', $shipping_data, $shipping_id, $lang_code, $action);
 
 --------------------------------------------------------------------------------------------------------------------------------------
+
+=========
+addon.xml
+=========
 
 We have added a new version of the **addon.xml** file:
 

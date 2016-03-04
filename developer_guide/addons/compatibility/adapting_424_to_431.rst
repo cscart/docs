@@ -1,5 +1,5 @@
 ********************************************
-Adapt Your Add-Ons & Themes To CS-Cart 4.3.1
+Adapt Your Add-Ons & Themes to CS-Cart 4.3.1
 ********************************************
 
 Settings

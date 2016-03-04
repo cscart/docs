@@ -1,6 +1,6 @@
-***************************
-Adapting a CS-Cart 3 Add-on
-***************************
+*************************************
+Adapt a CS-Cart 3 Add-on to CS-Cart 4
+*************************************
 
 Addons for CS-Cart 3 are highly compatible with CS-Cart 4.
 
@@ -20,16 +20,19 @@ Addons for CS-Cart 3 are highly compatible with CS-Cart 4.
 
     The **eDost** add-on is a good example of how things work in CS-Cart 4. Use it as a live referrence model.
 
+================
 Add-on Directory
 ================
 
 *   Move the add-on folder from *addons* to *app/addons* (according to the new folder structure)
 
+=========
 addon.xml
 =========
 
 *   Language code is now spelled with lower-case letters: ``EN`` → ``en``, ``RU`` → ``ru``
 
+================
 config.local.php
 ================
 
@@ -37,6 +40,7 @@ config.local.php
 
         'disable_localizations' => false,
 
+===
 PHP
 ===
 
@@ -179,6 +183,7 @@ PHP
 
         $limit = db_paginate($params['page'], $params['items_per_page']); //Generate SQL condition to get only the necessary items
 
+=================================
 CSS, Smarty Templates, and Images
 =================================
 
@@ -240,7 +245,7 @@ CSS, Smarty Templates, and Images
 
         $pagination = fn_generate_pagination($params);
 
-
+==========
 JavaScript
 ==========
 
@@ -248,6 +253,7 @@ JavaScript
 
 *   Clear the code from the `deprecated jQuery methods <http://api.jquery.com/category/deprecated/>`_
 
+========
 Database
 ========
 
