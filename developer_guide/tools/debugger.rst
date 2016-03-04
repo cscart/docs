@@ -10,23 +10,25 @@ The debugger can be used to inspect HTTP requests, SQL queries, and template loa
 Activate Debug Mode
 ===================
 
-To activate the debug mode in the admin panel, you can just add the ``debug`` param to the URL query string:
+To access the debugger, go to the Administration panel and add the ``debug`` parameter to the URL, so that it would look like this:
 
 .. image:: img/debug_url_param.png
     :align: center
     :alt: Enable debug mode with URL param
 
+.. note::
 
-To activate the debugger for both the admin panel and storefront, define the ``DEBUG_MODE`` constant in your *config.php* or *local_conf.php* file with the ``true`` value::
+    Using ``debug`` will also make the debugger available in the customer area for the current browser session.
+
+The **bug** icon will appear in the top right corner of the page. Click it to open and close the debugger sidebar. Alternatively, you can hit ``Ctrl + Alt + D``.
+
+To keep the debugger enabled both on the storefront and in the administration panel at all times, define the ``DEBUG_MODE`` constant in your *config.php* or *local_conf.php* file with the ``true`` value::
 
     define('DEBUG_MODE', true);
 
-.. important::
+.. warning::
 
-    Do not use this method outside of your developent routine. Otherwise, your store visitors can have access to your debug data, which is not good.
-
-Now, if you access your admin panel, you will see a semi-transparent bug icon at the top right corner of the page. Click on it to open and close the debugger sidebar. Alternatively, you can hit ``Ctrl + Alt + D``.
-
+    Do not use ``define('DEBUG_MODE', true);`` on a live store. That way your store visitors may get access to your debug data, which is bad.
 
 Debugger Sidebar
 ================

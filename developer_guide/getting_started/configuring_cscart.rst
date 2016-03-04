@@ -103,19 +103,23 @@ Debug Mode
 
 CS-Cart has a built-in :doc:`debugger <../tools/debugger>` that shows server and PHP settings, SQL queries and templates behind any page of your storefront or administration panel.
 
-To access the debugger go to the Administration panel and add the ``?debug`` parameter to the URL, so that it would look like this:
+To access the debugger, go to the Administration panel and add the ``debug`` parameter to the URL, so that it would look like this:
 
 ::
 
   http://example.com/admin.php?debug
 
-The **bug** icon will appear in the top right corner of the page. Use it to access the debugger.
+The **bug** icon will appear in the top right corner of the page. Click it to open and close the debugger sidebar. Alternatively, you can hit ``Ctrl + Alt + D``.
+
+.. note::
+
+    Using ``debug`` will also make the debugger available in the customer area for the current browser session.
 
 .. image:: img/debugger.png
     :align: center
     :alt: The debugger appears as the black panel on the right side of the screen.
 
-If you want to access the debugger from the storefront and the administration panel, uncomment the following line in **local_conf.php**:
+To keep the debugger enabled both on the storefront and in the administration panel at all times, uncomment the following line in **local_conf.php**:
 
 ::
 
