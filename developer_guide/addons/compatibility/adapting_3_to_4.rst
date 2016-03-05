@@ -2,6 +2,7 @@
 Adapt a CS-Cart 3 Add-on to CS-Cart 4
 *************************************
 
+
 Addons for CS-Cart 3 are highly compatible with CS-Cart 4.
 
 .. note::

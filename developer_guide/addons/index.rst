@@ -9,6 +9,9 @@ CS-Cart add-on development guides.
     :titlesonly:
     :glob:
 
-    */index
+    hooking/index
+    scheme/*
+    tutorials/index
     *
     ../../upgrade/upgrade_addon
+    compatibility/index

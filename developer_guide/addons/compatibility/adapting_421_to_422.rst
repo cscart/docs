@@ -2,6 +2,7 @@
 Adapt Your Add-Ons from CS-Cart 4.2.1 to 4.2.2
 **********************************************
 
+
 This is the next set of changes in cart functionality that can affect add-ons operation. CS-Cart 4.2.2 is mostly the bug fixing version, so, there are no functionality changes that can totally break the add-on working.
 
 **Here is the list of major changes:**
