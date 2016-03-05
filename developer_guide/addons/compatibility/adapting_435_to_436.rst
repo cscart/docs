@@ -2,7 +2,6 @@
 Adapt Your Add-ons and Themes to CS-Cart 4.3.6
 **********************************************
 
-
 ==============
 Common Changes
 ==============

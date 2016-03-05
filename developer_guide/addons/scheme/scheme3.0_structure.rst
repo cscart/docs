@@ -2,6 +2,7 @@
 Example of the Addon.xml File (Scheme 3.0)
 ******************************************
 
+
 Compatible with CS-Cart versions starting from 4.2.x.
 
 =============

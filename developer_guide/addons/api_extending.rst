@@ -2,7 +2,6 @@
 Extending API
 *************
 
-
 If you want your add-on to extend the API with a new entity, follow these steps:
 
 1. Create the ``Tygh/Api/Entities`` subdirectory in the directory of your add-on (*app/addons/<add-on name>*).

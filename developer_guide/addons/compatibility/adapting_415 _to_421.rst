@@ -2,7 +2,6 @@
 Adapt Your Add-Ons to CS-Cart 4.2.1 
 ***********************************
 
-
 Familiarize yourself with the list of changes that can affect your add-ons operation when updating from 4.1.5 to 4.2.1 version.
 
 They are not so numerous, but some of them affected CS-Cart functionality rather heavily.

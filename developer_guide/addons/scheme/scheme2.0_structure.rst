@@ -2,6 +2,7 @@
 Addon.xml File Structure (Scheme 2.0)
 *************************************
 
+
 The *addon.xml* file structure is fully described below. Use this scheme as a memo when developing your own add-ons.
 
 Top level

@@ -2,6 +2,7 @@
 Adapting Add-ons to the Responsive Theme
 ****************************************
 
+
 Starting from CS-Cart version 4.1.4 the new Responsive theme is used (in beta testing). One of the reasons why it operates in beta testing mode is that this gives the developers enough time to adapt their add-ons by the time the theme becomes the default.
 
 Further we will describe how to migrate your add-on to the Responsive theme.

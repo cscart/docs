@@ -2,6 +2,7 @@
 Adapting a CS-Cart Store from 4.2.2 to 4.2.3
 ********************************************
 
+
 The ability to define Global TTL (caching time) was added to the Redis cache:
 
 .. code-block:: none

@@ -2,6 +2,7 @@
 PHP Hooks
 *********
 
+
 PHP or code hook is a specially defined part in the program code that can pass control to an add-on. A hook is declared by calling a special function in the necessary part of code::
 
     fn_set_hook('hook_name', $params, [$param2], [$paramN]);

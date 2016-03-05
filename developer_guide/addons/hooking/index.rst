@@ -2,6 +2,7 @@
 Hooking
 *******
 
+
 Hooking is a concept in programming that deals with control flow. A hook is just a special place in the source code that serves as an entry point for some external code.
 
 Thanks to this technique, you can create an add-on and hook it to the necessary part of code. As a result, your add-on will work without affecting the core functionality. 
