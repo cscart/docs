@@ -302,7 +302,7 @@ CS-Cart uses the **cscart_ult_status_descriptions** to store these values.
 Useful Functions
 ----------------
 
-* ``fn_get_company_condition``—returns the line, using company_id as a condition if necessary
+* ``fn_get_company_condition``—returns the line, using ``company_id`` as a condition if necessary
 * ``fn_ult_get_shared_companies``—returns the identifiers of the storefronts, among which the object is shared
 * ``fn_ult_is_shared_product``—checks if a product is shared with this storefront
 * ``fn_ult_get_shared_product_companies``—returns the identifiers of the storefront, among which the product is shared
@@ -326,8 +326,9 @@ Every setting defines its own type in the ``edition_type`` field of the **cscart
 
     In the Simple Ultimate mode the values of store-specific settings are saved in the **cscart_settings_objects** table.
 
-You can access the values of the settings for the current storefront from the Registry, for example:
-Registry::get('settings.Appearance.frontend_default_language')
+You can access the values of the settings for the current storefront from the Registry, for example::
+
+  Registry::get('settings.Appearance.frontend_default_language')
 
 Use the ``Settings`` class to manage settings on the code level—this class has all the necessary methods.
 
@@ -368,4 +369,3 @@ When nginx works directly with PHP (FastCGI, php-fpm), configure the redirection
       include fastcgi.conf;
       fastcgi_pass unix:/var/run/php5-fpm.sock;
   }
-
