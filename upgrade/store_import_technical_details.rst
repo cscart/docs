@@ -35,3 +35,7 @@ Let's assume you made some changes in the **Website → Pages** section of the A
   //'pages',
 
 Now these tables will not be overwritten during the data actualization.
+
+.. warning::
+
+    Be careful when modifying **table_replacement.php**—don't change the file, unless you know exactly what you're doing.

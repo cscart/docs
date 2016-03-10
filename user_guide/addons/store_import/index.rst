@@ -2,8 +2,8 @@
 Store Import
 ************
 
-You can use the **Store Import** add-on to upgrade your store from versions 2.2.4/2.2.5 or 3.0.x to CS-Cart or Multi-Vendor 4.3.x.
-The upgrade is done by creating a separate CS-Cart/Multi-Vendor 4.3.x installation and using the add-on to import data from your old store.
+You can use the **Store Import** add-on to upgrade your store from versions 2.2.4/2.2.5 or 3.0.x to CS-Cart or Multi-Vendor 4.x.x.
+The upgrade is done by creating a separate CS-Cart/Multi-Vendor 4.x.x installation and using the add-on to import data from your old store.
 
 .. important::
 
@@ -22,11 +22,11 @@ Use the table below to see the versions that you can upgrade to and from:
     *   -   Upgrade from:
         -   Upgrade to:
     *   -   CS-Cart Professional 2.2.4 - 3.0.6
-        -   CS-Cart 4.2.x - 4.3.2, 4.3.6
+        -   CS-Cart 4.0.2 - 4.3.2, 4.3.6
     *   -   CS-Cart Ultimate 3.0.1 - 3.0.6
-        -   CS-Cart 4.2.x - 4.3.2, 4.3.6
+        -   CS-Cart 4.0.2 - 4.3.2, 4.3.6
     *   -   CS-Cart Multi-Vendor 2.2.4 - 3.0.6
-        -   Multi-Vendor 4.2.x - 4.3.2
+        -   Multi-Vendor 4.0.2 - 4.3.2
 
 ================
 Using the Add-on

@@ -23,7 +23,7 @@ Starting with CS-Cart/Multi-Vendor 4.0.x, you can use the **Upgrade Center** to 
 Store Import
 ============ 
 
-You can use the **Store Import** add-on to upgrade your store from versions 2.2.4/2.2.5 or 3.0.x to CS-Cart or Multi-Vendor 4.3.x.
+You can use the **Store Import** add-on to upgrade your store from versions 2.2.4/2.2.5 or 3.0.x to CS-Cart or Multi-Vendor 4.x.x.
 The upgrade is done by creating a separate CS-Cart/Multi-Vendor installation and using the add-on to import data from your old store.
 
 .. toctree::

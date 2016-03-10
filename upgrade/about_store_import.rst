@@ -2,13 +2,13 @@
 About Store Import
 ******************
 
-**Store Import** is an add-on that imports the database from an older version of your store to 4.3.x. The process takes several steps: 
+**Store Import** is an add-on that imports the database from an older version of your store to 4.x.x. The process takes several steps: 
 
-1. Install CS-Cart/Multi-Vendor 4.3.x in a subfolder of your old store.
+1. Install CS-Cart/Multi-Vendor 4.x.x in a subfolder of your old store.
 
 2. Import the data from your old store to the new one with :doc:`the Store Import add-on <../user_guide/addons/store_import/index>`.
 
-3. Configure your new store (CSS styles, layouts, blocks, settings, etc.). In the meantime, your old store continues to work as usual.
+3. Configure your new store (CSS styles, layouts, blocks, settings, etc.). In the meantime, your old store can continue working as usual.
 
 4. Import the data that was accumulated in your old store while you were customizing your new store.
 
@@ -29,11 +29,11 @@ Use the table below to see the versions that you can upgrade to and from:
     *   -   Upgrade from:
         -   Upgrade to:
     *   -   CS-Cart Professional 2.2.4 - 3.0.6
-        -   CS-Cart 4.2.x - 4.3.2, 4.3.6
+        -   CS-Cart 4.0.2 - 4.3.2, 4.3.6
     *   -   CS-Cart Ultimate 3.0.1 - 3.0.6
-        -   CS-Cart 4.2.x - 4.3.2, 4.3.6
+        -   CS-Cart 4.0.2 - 4.3.2, 4.3.6
     *   -   CS-Cart Multi-Vendor 2.2.4 - 3.0.6
-        -   Multi-Vendor 4.2.x - 4.3.2
+        -   Multi-Vendor 4.0.2 - 4.3.2
 
 .. note::
 
