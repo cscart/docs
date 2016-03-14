@@ -22,6 +22,7 @@ The only limitation concerning gift certificates is that it is impossible to pay
     manage_statuses
     set_gc
     create_gc
+    purchase_gc
     replace_logo
 
     
