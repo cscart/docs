@@ -2,6 +2,9 @@
 Addon.xml File Structure (Scheme 2.0)
 *************************************
 
+.. important::
+
+    **This scheme is deprecated since version 4.2.x.** For version 4.2.x and higher use :doc:`Scheme 3.0 <scheme3.0_structure>`.
 
 The *addon.xml* file structure is fully described below. Use this scheme as a memo when developing your own add-ons.
 
