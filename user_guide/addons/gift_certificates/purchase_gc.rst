@@ -12,7 +12,7 @@ The **Gift Certificate** add-on provides a special page, where customers can cre
     :align: center
     :alt: A gift certificate can include free products, a certain amount of money, or both.
 
-The link to this page doesn’t appear in your store automatically—you’d have to create create a menu element for it manually.
+The link to this page doesn’t appear in your store automatically—you’ll have to create a menu element for it manually.
 
 .. note::
 
