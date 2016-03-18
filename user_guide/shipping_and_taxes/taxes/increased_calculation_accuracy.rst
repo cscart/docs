@@ -16,27 +16,23 @@ You can increase the calculation accuracy in 2 steps.
 Step 1. Modify fn.common.php
 ============================
 
-1.1. Open the **fn.common.php** file located in the *app/functions* directory of your CS-Cart installation
+1.1. Open the **fn.common.php** file located in the *app/functions* directory of your CS-Cart installation.
 
-1.2. Find this line of the code:
+1.2. Find this line of the code::
 
-$price = sprintf('%.' . $decimals . 'f', round((double) $price + 0.00000000001, $decimals));
+  $price = sprintf('%.' . $decimals . 'f', round((double) $price + 0.00000000001, $decimals));
 
 1.3. Replace this line with one of the following lines:
 
-* If your **Tax calculation method based on** setting under **Settings → General** is set to **subtotal**, use this line:
+ * If your **Tax calculation method based on** setting under **Settings → General** is set to **subtotal**, use this line::
 
-.. code-block:: php
+         $price = sprintf('%.' . $decimals . 'f', round((double) $price + 0.00000000001, 4));
 
-    $price = sprintf('%.' . $decimals . 'f', round((double) $price + 0.00000000001, 4));
+ * If your tax calculation method is based on **unit price**, use this line::
 
-* If your tax calculation method is based on **unit price**, use this line:
+         $price = sprintf('%.' . 4 . 'f', round((double) $price + 0.00000000001, 4));
 
-.. code-block:: php
-
-    $price = sprintf('%.' . 4 . 'f', round((double) $price + 0.00000000001, 4));
-
-4. Save the file.
+1.4. Save the file.
 
 This will make CS-Cart round decimals to 4 digits.
 
@@ -56,9 +52,7 @@ PayPal only supports **xx.xx** (2 decimal places) price format. If you want to i
 
 2.1. Open the **fn.common.php** file located in the *app/functions* directory of your CS-Cart installation
 
-2.2. Add the following piece of the code to the end of the file:
-
-.. code-block:: php
+2.2. Add the following piece of the code to the end of the file::
 
     function fn_format_price_paypal($price = 0)
     {
@@ -85,74 +79,74 @@ PayPal only supports **xx.xx** (2 decimal places) price format. If you want to i
         return $result;
     }
 
-2.3. Save the file
+2.3. Save the file.
 
-2.4. Open the **paypal.php** file in the *app/addons/paypal/payments* directory of your CS-Cart installation
+2.4. Open the **paypal.php** file in the *app/addons/paypal/payments* directory of your CS-Cart installation.
 
 2.5. Change the following line:
 
-.. list-table::
-    :header-rows: 0
-    :stub-columns: 1
-    :widths: 15 50
+     .. list-table::
+         :header-rows: 0
+         :stub-columns: 1
+         :widths: 15 50
 
-    *   -   Find this line:
-        -   $paypal_shipping = fn_order_shipping_cost($order_info);
-    *   -   Replace it with:
-        -   $paypal_shipping = fn_format_price_paypal(fn_order_shipping_cost($order_info));
+         *   -   Find this line:
+             -   $paypal_shipping = fn_order_shipping_cost($order_info);
+         *   -   Replace it with:
+             -   $paypal_shipping = fn_format_price_paypal(fn_order_shipping_cost($order_info));
 
 2.6. Replace all instances of **fn_format_price** with **fn_format_price_paypal**:
 
-.. list-table::
-    :header-rows: 0
-    :stub-columns: 1
-    :widths: 15 50
+     .. list-table::
+         :header-rows: 0
+         :stub-columns: 1
+         :widths: 15 50
 
-    *   -   Find this code:
-        -   fn_format_price(
-    *   -   Replace it with:
-        -   fn_format_price_paypal(
+         *   -   Find this code:
+             -   fn_format_price(
+         *   -   Replace it with:
+             -   fn_format_price_paypal(
 
 2.7. Replace all instances of **fn_format_price_by_currency** with **fn_format_price_by_currency_paypal**:
 
-.. list-table::
-    :header-rows: 0
-    :stub-columns: 1
-    :widths: 15 50
+     .. list-table::
+         :header-rows: 0
+         :stub-columns: 1
+         :widths: 15 50
 
-    *   -   Find this code:
-        -   fn_format_price_by_currency(
-    *   -   Replace it with:
-        -   fn_format_price_by_currency_paypal(
+         *   -   Find this code:
+             -   fn_format_price_by_currency(
+         *   -   Replace it with:
+             -   fn_format_price_by_currency_paypal(
 
-2.8. Save the file
+2.8. Save the file.
 
 2.9. Complete the steps below **for all the .php files** in the *app/addons/paypal/payments* directory of your CS-Cart installation:
 
-* Open the file
+  * Open the file.
 
-* Replace all instances of **fn_format_price** with **fn_format_price_paypal**:
+  * Replace all instances of **fn_format_price** with **fn_format_price_paypal**:
 
-.. list-table::
-    :header-rows: 0
-    :stub-columns: 1
-    :widths: 15 50
+    .. list-table::
+        :header-rows: 0
+        :stub-columns: 1
+        :widths: 15 50
 
-    *   -   Find this code:
-        -   fn_format_price(
-    *   -   Replace it with:
-        -   fn_format_price_paypal(
+        *   -   Find this code:
+            -   fn_format_price(
+        *   -   Replace it with:
+            -   fn_format_price_paypal(
 
-* Replace all instances of **fn_format_price_by_currency** with **fn_format_price_by_currency_paypal**:
+  * Replace all instances of **fn_format_price_by_currency** with **fn_format_price_by_currency_paypal**:
 
-.. list-table::
-    :header-rows: 0
-    :stub-columns: 1
-    :widths: 15 50
+    .. list-table::
+        :header-rows: 0
+        :stub-columns: 1
+        :widths: 15 50
 
-    *   -   Find this code:
-        -   fn_format_price_by_currency(
-    *   -   Replace it with:
-        -   fn_format_price_by_currency_paypal(
+        *   -   Find this code:
+            -   fn_format_price_by_currency(
+        *   -   Replace it with:
+            -   fn_format_price_by_currency_paypal(
 
-* Save the file
+  * Save the file.
