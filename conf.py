@@ -14,6 +14,8 @@
 
 import sys, os
 
+sys.path.insert(0, os.path.abspath('_ext'))
+
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -26,7 +28,7 @@ import sys, os
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-#extensions = ['sphinxcontrib.fancybox']
+extensions = ['edit_on_github']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -133,7 +135,7 @@ html_static_path = ['_static']
 html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-html_sidebars = {'**': ['globaltoc.html', 'localtoc.html', 'report.html']}
+html_sidebars = {'**': ['globaltoc.html', 'localtoc.html', 'sourcelink.html', 'report.html']}
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
@@ -297,3 +299,6 @@ highlight_language = 'phpinline'
 # FancyBox defaults
 #fancybox_thumbnail_width = '100%'
 #fancybox_thumbnail_height = '100%'
+
+edit_on_github_project = 'cscart/docs'
+edit_on_github_branch = '4.3.x'
