@@ -16,13 +16,13 @@ Delete the Languages You Do Not Use
 
 2. Delete the languages that you do not use:
 
-* To delete one language, hover over it, click the **gear button** next to the status of the language and choose **Delete**.
+   * To delete one language, hover over it, click the **gear button** next to the status of the language and choose **Delete**.
 
-* To delete multiple languages at once, tick the checkboxes next to their language codes, then press the **gear button** in the top right corner of the page and choose **Delete selected**.
+   * To delete multiple languages at once, tick the checkboxes next to their language codes, then press the **gear button** in the top right corner of the page and choose **Delete selected**.
 
-.. important::
+   .. important::
 
-    For the performance to increase, you must delete the languages, not just disable them. If you need a deleted language later, you can switch to the **Available** tab and install it again.
+       For the performance to increase, you must delete the languages, not just disable them. If you need a deleted language later, you can switch to the **Available** tab and install it again.
 
 =====================
 Optimize the Database
@@ -36,46 +36,46 @@ Optimize the database to increase performance: that way you reclaim unused space
 
 3. Wait for the progress bar to fill. The database size will be decreased, if possible.
 
-=======================
-Change the Caching Type
-=======================
+=============================
+Try Changing the Caching Type
+=============================
 
 .. warning::
 
     This part of the article requires technical knowledge.
 
-To change the caching type, complete the following steps:
+Changing the caching type might increase performance. To do it, complete the following steps:
 
 1. Open the **config.local.php** file in the root directory of your CS-Cart installation.
 
 2. Find this part of the code:
 
-::
+  ::
 
-  // Cache backend
-  // Available backends: file, sqlite, database, redis, xcache, apc
-  // To use sqlite cache the "sqlite3" PHP module should be installed
-  // To use xcache cache the "xcache" PHP module should be installed
-  // To use apc cache the "apc" PHP module should be installed
-  $config['cache_backend'] = 'file';
+    // Cache backend
+    // Available backends: file, sqlite, database, redis, xcache, apc
+    // To use sqlite cache the "sqlite3" PHP module should be installed
+    // To use xcache cache the "xcache" PHP module should be installed
+    // To use apc cache the "apc" PHP module should be installed
+    $config['cache_backend'] = 'file';
 
 3. Replace ``file`` in this line of the code:
 
-::
+  ::
 
-  $config['cache_backend'] = 'file';
+    $config['cache_backend'] = 'file';
 
-with the necessary variant, for example, ``database``:
+  with the necessary variant.
 
-::
+  .. important::
 
-  $config['cache_backend'] = 'database';
+      Don't store the cache in the ``database``, unless you know what you're doing—tables with the cache often grow large and get broken.
 
 4. Save the file.
 
-.. note::
+   .. note::
 
-    The ``file`` cache backend is used by default, other available variants are: ``sqlite``, ``database``, ``redis``, ``xcache``, ``apc``.
+       The ``file`` cache backend is used by default, other available variants are: ``sqlite``, ``database``, ``redis``, ``xcache``, ``apc``.
 
-    To use ``sqlite``, the **sqlite3** PHP module must be installed on your server. To use ``xcache``, the **xcache** PHP module must be installed. To use ``apc`` cache, the **apc** PHP module must be installed. 
+       To use ``sqlite``, the **sqlite3** PHP module must be installed on your server. To use ``xcache``, the **xcache** PHP module must be installed. To use ``apc`` cache, the **apc** PHP module must be installed. 
 
