@@ -40,9 +40,9 @@ Optimize the database to increase performance: that way you reclaim unused space
 Try Changing the Caching Type
 =============================
 
-.. warning::
+.. important::
 
-    This part of the article requires technical knowledge.
+    This requires technical knowledge.
 
 Changing the caching type might increase performance. To do it, complete the following steps:
 
@@ -67,7 +67,7 @@ Changing the caching type might increase performance. To do it, complete the fol
 
   with the necessary variant.
 
-  .. important::
+  .. warning::
 
       Don't store the cache in the ``database``, unless you know what you're doing—tables with the cache often grow large and get broken.
 
