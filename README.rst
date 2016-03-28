@@ -24,7 +24,7 @@ In the terminal, run the following commands:
 
 .. code-block:: bash
 
-	$ git clone https://github.com/cscart/docs.git      # Clone the repo
+    $ git clone https://github.com/cscart/docs.git      # Clone the repo
     $ cd docs                                           # Switch to the docs directory
     $ pip install -r requirements.txt                   # Install dependencies
 
