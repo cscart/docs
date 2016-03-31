@@ -23,7 +23,7 @@ Add these parameters to the path to specify what orders will be returned in the 
 .. list-table::
     :header-rows: 1
     :stub-columns: 1
-    :widths: 10 3 30
+    :widths: 10 5 30
 
     *   -   Parameter
         -   Default value
@@ -161,7 +161,7 @@ The fields below represent various order details.
 .. list-table::
     :header-rows: 1
     :stub-columns: 1
-    :widths: 10 5 35
+    :widths: 10 5 30
 
     *   -   Field
         -   Values
