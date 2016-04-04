@@ -23,7 +23,11 @@ Categories
 
 A list of categories on which pages the filter is displayed. If no category is specified, the filter will appear in all store categories.
 
+.. note::
+
+    If a customer runs a search for a product on the storefront, all active filters that have appropriate products will be displayed, regardless of the category.
+
 Share
 *****
 
-Stores that share this product filter. Read `Sharing objects <http://docs.cs-cart.com/4.3.x/user_guide/stores/sharing.html>`_ for more details.
+Stores that share this product filter. :doc:`Learn more about sharing objects. <../../stores/sharing>`

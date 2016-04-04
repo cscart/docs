@@ -4,6 +4,10 @@ Filters
 
 Product filters are displayed on the storefront and enable your customers to quickly find the products that meet specific parameters like the price range, manufacturer, etc. The parameters can be either the standard product fields or the extra fields defined in **Products → Features**.
 
+.. note::
+
+    Beginning with version 4.3.7, a filter by feature will be  disabled automatically, if you change the status of that feature to **Hidden** or **Disabled**.
+
 You can make filters available in the entire store as well as in specific categories only.
 
 .. important::
