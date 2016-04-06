@@ -35,7 +35,7 @@ Add these parameters to the path to specify what how many option combinations sh
     *   -   items_per_page
         -   *integer*
         -   This parameter separates the list of option combinations into pages. It also limits the number of the option combinations that you receive in the response.
-    *   -   Parameter
+    *   -   page
         -   *integer*
         -   This parameter works only if you specify ``items_per_page``. It determines the number of the page that will be sent in the response. 
 

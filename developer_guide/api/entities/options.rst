@@ -324,7 +324,8 @@ The fields below represent various option details.
 ---------------
 Option Variants
 ---------------
-A *Selectbox* or *Radiogroup* option can have different variants for the customer to choose from. These variants appear in the variants array.
+
+A *Selectbox* or *Radiogroup* option can have different variants for the customer to choose from. These variants appear in the ``variants`` array.
 
 .. list-table::
     :header-rows: 1
