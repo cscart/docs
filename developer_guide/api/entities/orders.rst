@@ -4,11 +4,15 @@ Orders
 
 Orders are what an online store is about. Customers submit orders at checkout after adding at least one product to cart. Administrators can work with the submitted orders and add new orders themselves.
 
-===========
-View Orders
-===========
+.. contents::
+   :backlinks: none
+   :local:
 
-To view the list of orders and their properties, send a GET request to ``/api/orders``::
+====================
+Get a List of Orders
+====================
+
+To get a list of orders, send a GET request to ``/api/orders``::
 
   GET /api/orders/
 
@@ -142,11 +146,11 @@ If the request is successful, you’ll receive **HTTP/1.1 200 OK**. The response
    }
   }
 
-=====================
-View a Specific Order
-=====================
+====================
+Get a Specific Order
+====================
 
-To view the properties of a specific order, send a GET request to ``/api/orders/<order_id>/``. For example::
+To get the full list of details of a specific order, send a GET request to ``/api/orders/<order_id>/``. For example::
 
   GET /api/orders/100
 
@@ -568,11 +572,11 @@ This request is similar to the previous example, but is placed on behalf of a gu
 
     Guests specify their address and contact information at checkout. That’s why you must pass the ``user_data`` array in the JSON when you place an order on behalf a guest.
 
-=============
-Edit an Order
-=============
+===============
+Update an Order
+===============
 
-To edit an existing order, send the PUT request to ``/api/orders/<order_id>/``. For example::
+To update an existing order, send the PUT request to ``/api/orders/<order_id>/``. For example::
 
   PUT /api/orders/105
 
