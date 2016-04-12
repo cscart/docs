@@ -22,11 +22,15 @@ The type of the exception is determined by the :doc:`product <products>` that th
 
     *F* (forbidden) is the default value of the ``exceptions_type`` field of the product.
 
+.. contents::
+   :backlinks: none
+   :local:
+
 ============================
-View Exceptions of a Product
+List Exceptions of a Product
 ============================
 
-To view the exceptions of a specific product, send a GET request to ``/api/exceptions/?product_id=:id``. For example::
+To get all the exceptions of a specific product, send a GET request to ``/api/exceptions/?product_id=:id``. For example::
 
   GET /api/exceptions/?product_id=12
 
@@ -62,11 +66,11 @@ If the request is successful, you’ll receive **HTTP/1.1 200 OK** and JSON with
    }
   ]
 
-=========================
-View a Specific Exception
-=========================
+========================
+Get a Specific Exception
+========================
 
-To view a specific exception, send a GET request to ``/api/exceptions/<exception_id>``. For example::
+To get the details of a specific exception, send a GET request to ``/api/exceptions/<exception_id>``. For example::
 
   GET /api/exceptions/1
 
@@ -179,11 +183,11 @@ If the option exception is created successfully, you will receive **HTTP/1.1 201
 
 If the exception couldn’t be created, you will receive **HTTP/1.1 400 Bad Request**.
 
-=================
-Edit an Exception
-=================
+===================
+Update an Exception
+===================
 
-To edit an existing exception, send the PUT request to ``/api/exceptions/<exception_id>/``. For example::
+To update an existing exception, send the PUT request to ``/api/exceptions/<exception_id>/``. For example::
 
   PUT /api/exceptions/10
 

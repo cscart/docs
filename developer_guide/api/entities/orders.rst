@@ -8,9 +8,9 @@ Orders are what an online store is about. Customers submit orders at checkout af
    :backlinks: none
    :local:
 
-====================
-Get a List of Orders
-====================
+===============
+List all Orders
+===============
 
 To get a list of orders, send a GET request to ``/api/orders``::
 

@@ -11,6 +11,6 @@ This section contains the information that is useful for CS-Cart developers.
 
     getting_started/index
     core/index
-    api/index
     addons/index
     tools/index
+    api/index

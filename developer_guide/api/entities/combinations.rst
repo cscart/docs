@@ -1,6 +1,6 @@
-*******************
-Option Combinations
-*******************
+***************************
+Product Option Combinations
+***************************
 
 :doc:`Product options <options>` in CS-Cart and Multi-Vendor can be grouped in **option combinations**—this is useful for tracking products. For example, clothes come in various colors and sizes. It’s convenient to track separately, how many blue XL T-shirts and white M T-shirts you have. You can also separate code and image for the combination.
 
@@ -8,11 +8,15 @@ Option Combinations
 
     A product option must have the **Inventory** checkbox ticked (``inventory=Y``) to be a part of the combination. Only the options of the *Checkbox*, *Select box*, and *Radiogroup* type have that checkbox.
 
+.. contents::
+   :backlinks: none
+   :local:
+
 =====================================
-View Option Combinations of a Product
+List Option Combinations of a Product
 =====================================
 
-To view the option combination of a specific product, send a GET request to ``/api/combinations/?product_id=:id``. For example::
+To get a list of option combination of a specific product, send a GET request to ``/api/combinations/?product_id=:id``. For example::
 
   GET /api/combinations/?product_id=12
 
@@ -120,11 +124,11 @@ If the request is successful, you’ll receive **HTTP/1.1 200 OK**. The response
    }
   ]
 
-==================================
-View a Specific Option Combination
-==================================
+=================================
+Get a Specific Option Combination
+=================================
 
-To view a specific option combination, send a GET request to ``/api/combinations/<combination_hash>``. For example::
+To get the details of a specific option combination, send a GET request to ``/api/combinations/<combination_hash>``. For example::
 
   GET /api/combinations/822274303
 
@@ -224,17 +228,19 @@ If the option combination is created successfully, you will receive **HTTP/1.1 2
 
 If the option couldn’t be created, you will receive **HTTP/1.1 400 Bad Request**.
 
-==========================
-Edit an Option Combination
-==========================
+============================
+Update an Option Combination
+============================
 
-To edit an existing option combination, send the PUT request to ``/api/combinations/<combination_hash>/``. For example::
+To update an existing option combination, send the PUT request to ``/api/combinations/<combination_hash>/``. For example::
 
   PUT /api/combinations/2822626827
 
 Pass the fields with option combination details in the HTTP request body in accordance with the passed ``Content-Type``. None of the fields are required.
 
-You can’t update the combination field directly with the PUT request.
+.. note::
+
+    You can’t update the ``combination`` field directly with the PUT request.
 
 **Example JSON:**
 
@@ -246,7 +252,7 @@ You can’t update the combination field directly with the PUT request.
    "position": "0"
   }
 
-This request modifies the product code of the option combination. It changes the amount of items in stock, the product code of the combination, and the position of the combination on the list.
+This request changes the amount of items in stock, the product code of the combination, and the position of the combination on the list.
 
 ============================
 Delete an Option Combination

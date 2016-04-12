@@ -1,9 +1,10 @@
-***
-API
-***
+********
+REST API
+********
 
 Starting from version 4, CS-Cart provides an API to interact with a store.
 
+========
 Overview
 ========
 
@@ -35,6 +36,7 @@ CS-Cart API:
 
     errors
 
+============
 Useful Tools
 ============
 
@@ -46,6 +48,7 @@ Useful Tools
 
 .. _activate:
 
+===================
 Activate API Access
 ===================
 
@@ -61,6 +64,7 @@ To activate API access for a user:
 
 The automatically generated API key will be used by this user along with their e-mail to access the API.
 
+====
 URLs
 ====
 
@@ -93,6 +97,7 @@ Nonetheless, **API 2.0 is recommended**. In API 2.0 the URLs have the following 
 
 .. _auth:
 
+--------------
 Authentication
 --------------
 
@@ -129,11 +134,13 @@ Each request must be authenticated with user's e-mail and :ref:`API key <activat
 
 .. _get:
 
+------------------
 Get Data (``GET``)
 ------------------
 
 To get object data, send a ``GET`` HTTP request to the URL that refers to the according object.
 
+"""""""""""""""
 Request Example
 """""""""""""""
 
@@ -143,6 +150,7 @@ Get data about the product with the ID 1:
 
     curl --user admin@example.com:APIkey -X GET 'http://example.com/api/products/1'
 
+"""""""""
 Filtering
 """""""""
 
@@ -162,6 +170,7 @@ Get all downloadable products with ``company_id`` 1:
 
     curl --user admin@example.com:APIkey -X GET 'http://example.com/api/products?is_edp=Y&company_id=1'
 
+""""""""
 Response
 """"""""
 
@@ -173,6 +182,7 @@ Refer to the :doc:`API objects <entities/index>` page for a complete list of sup
 
 .. _put:
 
+---------------------
 Update Data (``PUT``)
 ---------------------
 
@@ -188,14 +198,17 @@ Refer to the :doc:`API objects <entities/index>` page for a complete list of sup
 
     The header ``Content-Type`` must be declared and set to ``application/json``, otherwise the default ``text/plain`` is assumed and the request will fail.
 
+"""""""""""""""
 Request Example
 """""""""""""""
+
 Update name of the product with the ID 1:
 
 ..  code:: bash
 
     curl --user admin@example.com:APIkey --header 'Content-Type: application/json' -d '{"product": "New Product Name"}' -X PUT 'http://example.com/api/products/1'
 
+""""""""
 Response
 """"""""
 
@@ -203,6 +216,7 @@ Updated object ID, e.g. ``{"product_id":"1"}``, or an :doc:`error <errors>`.
 
 .. _post:
 
+------------------------
 Create Object (``POST``)
 ------------------------
 
@@ -218,6 +232,7 @@ Some fields are mandatory for object creating. Refer to the :doc:`API objects <e
 
     The header ``Content-Type`` must be declared and set to ``application/json``, otherwise the default ``text/plain`` is assumed and the request will fail.
 
+"""""""""""""""
 Request Example
 """""""""""""""
 
@@ -227,11 +242,13 @@ Create a new product with the name "My Awesome Product":
 
     curl --user admin@example.com:APIkey --header 'Content-Type: application/json' -d '{"product": "My Awesome Product"}' -X POST 'http://example.com/api/products'
 
+""""""""
 Response
 """"""""
 
 Created object ID, e.g. ``{"product_id":"1"}``, or an :doc:`error <errors>`.
 
+--------------------------
 Delete Object (``DELETE``)
 --------------------------
 
@@ -239,6 +256,7 @@ To delete an object, send a ``DELETE`` HTTP request to the URL that refers to th
 
 Only URLs referring to particular object IDs can be used (i.e. you cannot delete all products at once.)
 
+"""""""""""""""
 Request Example
 """""""""""""""
 
@@ -248,6 +266,7 @@ Delete the product with the id 12:
 
     curl --user admin@example.com:APIkey -X DELETE 'http://example.com/api/products/12'
 
+""""""""
 Response
 """"""""
 

@@ -1,14 +1,18 @@
-*******
-Options
-*******
+***************
+Product Options
+***************
 
 Products in CS-Cart and Multi-Vendor can have **options**—additional properties that customers may select when buying a product. For example, for clothes that would be color, size, optional accessories, etc.
 
+.. contents::
+   :backlinks: none
+   :local:
+
 =========================
-View Options of a Product
+List Options of a Product
 =========================
 
-To view the options of a specific product, send a GET request to ``/api/options/?product_id=:id``. For example::
+To get a list of options of a specific product, send a GET request to ``/api/options/?product_id=:id``. For example::
 
   GET /api/options/?product_id=12
 
@@ -220,11 +224,11 @@ Response Format
    }
   }
 
-======================
-View a Specific Option
-======================
+=====================
+Get a Specific Option
+=====================
 
-To view a specific option, send a GET request to ``/api/options/<option_id>``. For example::
+To get the details of a specific option, send a GET request to ``/api/options/<option_id>``. For example::
 
   GET /api/options/3
 
@@ -280,7 +284,7 @@ The fields below represent various option details.
             | ``N``—no
         -   If the option type is *File*, you can choose whether to allow customers to upload multiple files.
     *   -   allowed_extensions
-        -   string
+        -   *string*
         -   If the option type is *File*, you can specify the allowed extensions separated by commas (e.g. ``jpg,bmp,gif,pdf``).
     *   -   max_file_size
         -   *integer*
@@ -297,10 +301,10 @@ The fields below represent various option details.
             | ``A``—active
             | ``D``—disabled
     *   -   position
-        -   integer
+        -   *integer*
         -   This parameter determines the position of the option among other options. The lower this number, the higher the option appears on the list of options in the Administration panel.
     *   -   value
-        -   string
+        -   *string*
         -   The number of the option variant or the text entered in the field of *Text* or *Text area* option by the customers.
     *   -   option_name
         -   *string*
@@ -448,11 +452,11 @@ If the option is created successfully, you will receive **HTTP/1.1 201 Created**
    "option_id": 27
   }
 
-==============
-Edit an Option
-==============
+================
+Update an Option
+================
 
-To edit an existing option, send the PUT request to ``/api/options/<option_id>/``. For example::
+To update an existing option, send the PUT request to ``/api/options/<option_id>/``. For example::
 
   PUT /api/options/27
 
