@@ -2,30 +2,59 @@
 How To: Manage Gift Certificate Statuses
 ****************************************
 
+Every gift certificate has a status assigned to it. To see the list of available statuses, follow these steps:
+
+1. Go to **Marketing → Gift certificates**.
+
+2. Click the **gear** button in the top right corner.
+
+3. Choose **Gift certificate statuses**.
+
+.. hint::
+
+    Beginning with version 4.3.7, you can go to **Administration → Gift certificate statuses**.
+
+.. image:: img/open_gc_status_page.png
+    :align: center
+    :alt: Go to Marketing → Gift certificates, and use the gear button in the top right corner.
+
 By default, there are four possible gift certificate statuses:
 
-*	**Active** – Certificate can be applied.
-*	**Disabled** – Certificate has been disabled by the store administrator.
-*	**Pending** – Certificate was created but not activated yet.
-*	**Used** – All gift certificate amount has been used.
+* **Active**—the certificate can be applied.
+
+* **Disabled**—the certificate has been disabled by the store administrator.
+
+* **Pending**—the certificate was created, but hasn't been activated yet.
+
+* **Used**—the gift certificate has been used, and all the money assigned to that certifiate has been spent.
 
 To edit existing statuses, choose the **gear** button, corresponding to a particular status and click **Edit**.
 
 If necessary, you can expand the default set of gift certificate statuses with custom statuses.
 
-Add gift certificate statuses
-*****************************
+=============================
+Add Gift Certificate Statuses
+=============================
 
 To add a custom gift certificate status:
 
-*	Click the **+** button and choose **Add Status** from the drop-down menu. This will open a pop-up window with a form for the new status details.
-*	Fill out the form. Fields marked with an asterisk (*) are mandatory.
+1. Click the **+** button and choose **Add status** from the drop-down menu. This will open a pop-up window with a form for the new status details.
 
-	*	**Name** - Name of the status.
-	*	**E-mail subject** - Subject of an email message that is sent to customers automatically when the gift certificate status changes to this status.
-	*	**E-mail header** - Header of an email message that is sent to customers automatically when the gift certificate status changes to this status.
-	*	**Color** - Color to be used to visually distinguish certificates in this status from other certificates in the certificate list in the Administration panel. Click the palette icon to open a palette and pick the color.
-	*	**Notify customer** - If selected, the customer receives an automatic email notification when the gift certificate status changes to this status.
+.. image:: img/add_gc_status.png
+    :align: center
+    :alt: Click the plus button and choose Add status on the gift certificate status page.
 
-3.	Click the **Create** button.
+2. Fill out the form. Fields marked with ***** are mandatory.
+
+  * **Name***—the name of the status.
+
+  * **E-mail subject**—the subject of an email message that is sent to customers automatically when the gift certificate status changes to this status.
+
+  * **E-mail header**—the header of an email message that is sent to customers automatically when the gift certificate status changes to this status.
+
+  * **Color**—the color to be used to visually distinguish certificates with this status from other certificates on the certificate list in the Administration panel. Click the palette icon to open a palette and pick the color.
+
+  * **Notify customer**—if you tick this checkbox, the customer receives an automatic email notification when the gift certificate status changes to this status.
+
+3. Click the **Create** button.
     
