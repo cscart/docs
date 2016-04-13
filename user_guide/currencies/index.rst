@@ -12,7 +12,7 @@ The order total will be calculated according to the store currency exchange rate
 
 .. note::
 
-    All prices you enter in the administration panel are assumed to be in the primary currency.
+    All prices you enter in the Administration panel are assumed to be in the primary currency.
 
 .. image:: img/currencies.png
     :align: center
@@ -32,7 +32,9 @@ General
 
 * **Primary currency** (requires a purchased license)—the primary currency of your store.
 
-* **Rate** (requires a purchased license)—the exchange rate to convert store prices and costs from the primary currency to this currency. In the example above, the primary currency is the American dollar, and the values in the **Rate** field define, how many dollars are in one Euro and in one British pound.
+* **Rate** (requires a purchased license)—the exchange rate to convert store prices and costs from the primary currency to this currency. 
+
+  In the example above, the primary currency is the American dollar, and the values in the **Rate** field define, how many dollars there are in one Euro and in one British pound.
 
 * **Sign**—the currency symbol.
 
@@ -58,8 +60,18 @@ General
 Share
 -----
 
-Stores that share this currency. :doc:`Learn more about sharing objects among stores <../stores/sharing>`.
+If you :doc:`manage multiple stores with one Administration panel <../stores/index>`, you can select the storefronts where the currency will be available. This is done via sharing. :doc:`Learn more about sharing objects among stores <../stores/sharing>`.
 
 .. important::
+
+    Beginning with CS-Cart 4.3.7, the primary currency always appears in the currency selection menu in the Administration panel. It doesn't matter if the currency is shared with the storefront you're working with.
+
+.. image:: img/select_currency.png
+    :align: center
+    :alt: The primary currency always appears in the Administration panel's currency selector since version 4.3.7.
+
+If you use CS-Cart 4.3.6 or earlier, make sure that the primary currency is shared among all your storefronts. This is because all calculations are done in the primary currency. Product prices in the administration panel are always specified in the primary currency.
+
+.. note::
 
     The **Share** tab appears only if you have multiple storefronts.
