@@ -64,13 +64,13 @@ If you :doc:`manage multiple stores with one Administration panel <../stores/ind
 
 .. important::
 
-    Beginning with CS-Cart 4.3.7, the primary currency always appears in the currency selection menu in the Administration panel. It doesn't matter if the currency is shared with the storefront you're working with.
+    If you use CS-Cart 4.3.6 or earlier, make sure that the primary currency is shared among all your storefronts. This is because all calculations are done in the primary currency. Product prices in the Administration panel are also specified in the primary currency.
 
 .. image:: img/select_currency.png
     :align: center
     :alt: The primary currency always appears in the Administration panel's currency selector since version 4.3.7.
 
-If you use CS-Cart 4.3.6 or earlier, make sure that the primary currency is shared among all your storefronts. This is because all calculations are done in the primary currency. Product prices in the administration panel are always specified in the primary currency.
+Beginning with CS-Cart 4.3.7, the primary currency always appears in the currency selection menu in the Administration panel. It doesn't matter if the currency is shared with the storefront you're working with.
 
 .. note::
 
