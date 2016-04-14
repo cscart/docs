@@ -10,9 +10,9 @@ However, if your payment gateway is configured to accept payments in different c
 
 The order total will be calculated according to the store currency exchange rate that you define here.
 
-.. note::
+.. important::
 
-    All prices you enter in the Administration panel are assumed to be in the primary currency.
+    All prices you enter in the Administration panel are assumed to be in the primary currency. CS-Cart & Multi-Vendor use primary currency for all calculations. When necessary, the results of those calculations are converted to the selected currency according to the specified exchange rate.
 
 .. image:: img/currencies.png
     :align: center
@@ -64,7 +64,7 @@ If you :doc:`manage multiple stores with one Administration panel <../stores/ind
 
 .. important::
 
-    If you use CS-Cart 4.3.6 or earlier, make sure that the primary currency is shared among all your storefronts. This is because all calculations are done in the primary currency. Product prices in the Administration panel are also specified in the primary currency.
+    If you use CS-Cart 4.3.6 or earlier, make sure that the primary currency is shared among all your storefronts. This is because all calculations are done in the primary currency.
 
 .. image:: img/select_currency.png
     :align: center
