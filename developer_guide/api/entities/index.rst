@@ -7,6 +7,7 @@ Supported Entities
     :glob:
 
     auth
+    blocks
     carts
     call_requests
     categories
