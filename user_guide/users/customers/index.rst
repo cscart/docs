@@ -4,7 +4,11 @@ Customers
 
 **Customers** can have their own accounts in your store.
 
-You can find the list of registered customer accounts under **Customers → Customers**. This section works as described :doc:`in this document <../index>`. 
+You can find the list of registered customer accounts under **Customers → Customers**. This section works as described :doc:`in this document <../index>`.
+
+.. note::
+
+   If you are a :doc:`vendor's administrator <../vendors/index>`, you will be able to view the accounts and details of only those customers, who have at least one existing order placed with your vendor.
 
 
 .. toctree::
