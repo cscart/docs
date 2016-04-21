@@ -2,12 +2,18 @@
 How To: Create a Chart
 **********************
 
+.. note::
+
+    **Tutorial Difficulty: 1 / 3**
+
+
 Data charts must be assigned to a particular :doc:`report<../sales_reports/create_report>`.
 
 To add a chart to a report:
 
-*	In the **Orders → Sales reports** section, click the gear button and choose **Manage reports** to display a list of all available reports.
-*	Click the gear button corresponding to the required report and choose **Edit** from the drop-down list.
+1. In the Administration panel, go to **Orders → Sales reports**.
+2. Click the gear button and choose **Manage reports** to show the list of all available reports.
+3. Click the gear button of the required report and choose **Edit** from the drop-down list.
 
 .. image:: img/reports_02.png
     :align: center
@@ -15,33 +21,44 @@ To add a chart to a report:
 
 This will open a page with the report details. The **Charts** tab contains a list of assigned reports (if any).
 
-*	Click the **+** button.
+4. Click the **+** button to will open a the chart creation form.
 
 .. image:: img/reports_03.png
     :align: center
     :alt: Add a chart
 
-This will open a form with the chart details.
+5. Fill in the form.
 
-*	Complete the form.
+   * Use the **General** tab to define the chart scope:
 
-Use the **General** tab to define the chart scope:
+     * **Name**—the name of the chart as it will appear in the reports.
+     * **Position**—the position of the chart relatively to the position of other charts in the report.
+     * **Type**—how the data should be represented: graphically or in a table.
+     * **Object to analyze**—the type of data to be reported on (users, orders and order statuses, products, categories, etc.)
+     * **Value to display**—the aspect to be analyzed.
+     * **Time interval**—the analyzed periods (day, week, month, year). Is not applicable to the chart type *Graphic [Pie 3D]*.
 
-*	**Name** - Name of the chart as it will appear in the reports.
-*	**Position** - Position of the chart relatively to the position of the charts in the report.
-*	**Type** - How the data should be represented: graphically or in a table.
-*	**Object to analyze** - Type of data to be reported on (users, orders and order statuses, products, categories, etc.)
-*	**Value to display** - Aspect to be analyzed.
-*	**Time interval** - Analyzed periods (day, week, month, year). Is not applicable to the chart type *Graphic [Pie 3D]*.
+   * Use the other tabs to filter or limit chart content:
 
-The tabs **Orders**, **Statuses of orders**, **Payment methods**, **Locations**, **Users**, **Categories**, and **Products** are used to filter or limit chart contents so that it covers specific items only.
+     * **Orders**,
+     * **Statuses of orders**,
+     * **Payment methods**,
+     * **Locations**, 
+     * **Users**, 
+     * **Categories**, 
+     * **Products**,
+     * **Managers**.
 
-For example, in the **Statuses of orders** tab you can select to show statistics on orders with specific statuses only, and in the **Products** tab you can choose the products which statistics should be represented in the chart. Statistics on the unchosen products will not be included in the chart.
+     .. note::
+
+         The **Managers** tab was not available until the introduction of :doc:`managers <../actions_on_orders/assign_manager>` in CS-Cart & Multi-Vendor 4.3.7.  
+
+     For example, the **Statuses of orders** tab allows you to show statistics on orders with specific statuses only. The **Products** tab allows you to choose the products, the statistics of which should be represented in the chart. Statistics on the unchosen products will not be included in the chart.
 
 .. image:: img/reports_04.png
     :align: center
     :alt: Statuses
 
-*	Click the **Create** button.
+6. Click the **Create** button.
 
 The new chart will be listed among the other charts.
