@@ -8,6 +8,12 @@ Searchanise
 
 The **Searchanise** add-on integrates CS-Cart with the SaaS-solution of the same name. It adds enhanced instant product search to the storefront by replacing its regular search bar with a special search widget. Shoppers see search results as they type in the search bar, and can quickly review the found products. So, customers can get to the right product way much faster because they don’t even have to finish typing while the preview box forms the first impression of the product.
 
+Searchanise can search through products, categories and pages (i.e., blog posts) in your store.
+
+.. note::
+
+   Searchanise can find products by product code, name, description, and features. Starting with version 4.3.7, it can also search products by option combination code. 
+
 .. image:: img/searchanise_01.png
     :align: center
     :alt: Search example
