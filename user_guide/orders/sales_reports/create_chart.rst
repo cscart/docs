@@ -19,9 +19,9 @@ To add a chart to a report:
     :align: center
     :alt: Edit a report
 
-This will open a page with the report details. The **Charts** tab contains a list of assigned reports (if any).
+This will open a page with the report details. The **Charts** tab contains the list of assigned reports, if there are any.
 
-4. Click the **+** button to will open a the chart creation form.
+4. Click the **+** button to open the chart creation form.
 
 .. image:: img/reports_03.png
     :align: center
@@ -46,12 +46,7 @@ This will open a page with the report details. The **Charts** tab contains a lis
      * **Locations**, 
      * **Users**, 
      * **Categories**, 
-     * **Products**,
-     * **Managers**.
-
-     .. note::
-
-         The **Managers** tab was not available until the introduction of :doc:`managers <../actions_on_orders/assign_manager>` in CS-Cart & Multi-Vendor 4.3.7.  
+     * **Products**.
 
      For example, the **Statuses of orders** tab allows you to show statistics on orders with specific statuses only. The **Products** tab allows you to choose the products, the statistics of which should be represented in the chart. Statistics on the unchosen products will not be included in the chart.
 
