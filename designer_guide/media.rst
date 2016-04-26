@@ -35,9 +35,9 @@ Comparing with raster icons such approach has a number of benefits:
 *	It is possible to choose icon size and color.
 *	It is possible to apply modern CSS styles to an icon: shadows, transformations, and animation.
 
-To make working with icons simple the `Icomoon <www.icomoon.io>`_ service is used in CS-Cart. Further we will describe how to add and edit icons.
+To make working with icons simple the `Icomoon <https://icomoon.io/>`_ service is used in CS-Cart. Further we will describe how to add and edit icons.
 
-*	Go to `www.icomoon.io <www.icomoon.io>`_.
+*	Go to `www.icomoon.io <https://icomoon.io/>`_.
 *	Run the application clicking **IcoMoon App**.
 *	Choose the desired icons and click the **Font** button below.
 
