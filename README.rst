@@ -1,8 +1,8 @@
-****************
-CS-Cart Docs 2.0
-****************
+************
+CS-Cart Docs
+************
 
-CS-Cart documentation, fully re-written in reST and built with Sphinx.
+CS-Cart documentation, fully written in reST and built with Sphinx.
 
 Latest build:
 
