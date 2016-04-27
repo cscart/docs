@@ -2,15 +2,13 @@
 Example of the Addon.xml File (Scheme 3.0)
 ******************************************
 
+.. note::
 
-Compatible with CS-Cart versions starting from 4.2.x.
+    Scheme 3.0 is compatible with CS-Cart versions starting from 4.2.x.
 
-=============
-Add-on scheme
-=============
-
-The full commented add-on scheme
-================================
+====================================
+The Full Add-on Scheme with Comments
+====================================
 
 .. code-block:: xml
 
@@ -18,45 +16,77 @@ The full commented add-on scheme
 	<!--
 	    Add-on scheme version 3.0 description
 	    All parameters that are not marked as optional must be defined in the scheme. 
-	    @edition_type - An optional attribute available for any settings-related element. It defines editions in which one or another setting is available. If left empty, the parent element value will be used. If the latter is not set, the value is considered ROOT
+	    @edition_type - an optional attribute available for any element related to settings. This attribute defines editions where a setting is available. If this attribute is left empty, the value of the parent element will be used. If that value is not set either, then the value is considered ROOT.
 	-->
 	<addon scheme="3.0" edition_type="ROOT,ULT:VENDOR">
-	    <!-- Add-on identifier. It must be equal to the catalog name in which the add-on resides -->
+	    <!-- Add-on identifier. It must be the same as the name of the directory with the files of the add-on. -->
 	    <id>sample_addon_3_0</id>
 	    <!-- Add-on version -->
 	    <version>1.0</version>
-	    <!-- Add-on native (default) language. An optional parameter; if not specified, the language will be recognized as English (EN) -->
+	    <!-- The native (default) language of the add-on. It is an optional parameter; if not specified, the language will be recognized as English (EN). -->
 	    <default_language>en</default_language>
-	    <!-- Add-on priority. The higher the priority the later the add-on is connected -->
+	    <!-- Add-on's priority. The higher the priority, the later the add-on is connected. -->
 	    <priority>100</priority>
-	    <!-- Status to be set after the add-on installation (active/disabled); "disabled" by default -->
+	    <!-- The status to be set after the add-on installation (active/disabled); "disabled" by default. -->
 	    <status>active</status>
-	    <!-- Defines CS-Cart products in which the add-on will be automatically included in the list after installation -->
+	    <!-- Defines CS-Cart products in which the add-on will be automatically included in the list after installation. -->
 	    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
-	    <!-- Block for the other add-ons compatibilities descriptions -->
+	    <!-- The block that describes compatibility with CS-Cart versions and editions, other add-ons, PHP versions, and PHP extensions. -->
 	    <compatibility>
-	        <!-- Dependencies. These add-ons must be installed in order to install the current one; otherwise an error message will be displayed -->
+                    <!-- Checking CS-Cart version. -->
+                    <core_version>
+                        <!-- The minimum version required. -->
+                        <min>4.3.2</min>
+                        <!-- The maximum version supported. -->
+                        <max>4.3.6</max>
+                    </core_version>
+                    <!-- Checking edition: cs-cart/multivendor. -->
+                    <core_edition>MULTIVENDOR</core_edition>
+                    <!-- Checking PHP version compatibility. -->
+                    <php_version>
+                        <!-- The minimum PHP version required. -->
+                        <min>5.3.6</min>
+                        <!-- The maximum PHP version supported. -->
+                        <max>5.6.1</max>
+                    </php_version>
+                    <!-- Checking compatibility with PHP extensions. -->
+                    <php_extensions>
+                        <!-- A required PHP extension. -->
+                        <gd>
+                            <supported>Y</supported>
+                        </gd>
+                        <!-- A conflicting PHP extension. -->
+                        <suhosin>
+                            <supported>N</supported>
+                        </suhosin>
+                        <!-- A required PHP extension with a specific version. -->
+                        <json>
+                            <min>1.0</min>
+                            <max>2.0</max>
+                        </json>
+                </php_extensions>
+	        <!-- Dependencies. These add-ons must be installed before you can install the current add-on. Otherwise an error message will be displayed. -->
 	        <dependencies>discussion,form_builder</dependencies>
-	        <!-- Conflicts. These add-ons will be automatically disabled before the current add-on installation starts and the notification will be displayed -->
+	        <!-- Conflicts. These add-ons will be automatically disabled before the installation of the current add-on starts. A corresponding notification will be displayed. -->
 	        <conflicts>catalog_mode,reward_points</conflicts>
 	    </compatibility>
 
 	    <!-- Add-on settings block. Optional.
-	    	@layout - Defines where the settings page will be opened (popup/separate). Optional attribute; "popup" by default
+	    	@layout - defines how the settings page will be opened (popup/separate). Optional attribute; "popup" by default.
 	    -->
 	    <settings layout="separate" edition_type="ROOT,ULT:VENDOR">
-	        <!-- List of tabs on the add-on settings page -->
+	        <!-- List of tabs on the add-on settings page. -->
 	    	<sections>
-	            <!-- Tab for settings.
+	            <!-- A tab with settings.
 	            	@id - text identifier. This setting can be accessed later on through Registry::get('addons.[addon_id].[setting_id]')
-	            	@edition_type - list of editions in which the tab will be available. Optional
+	            	@edition_type - list of editions in which the tab will be available. This is an optional attribute.
 	            -->
 	            <section id="section1">
-	                <!-- List of settings in the tab -->
+	                <!-- The list of settings on the tab -->
 	                <items>
 	                    <!-- Add-on settings
-	                		@id - setting identifier.
-	                        @edition_type - list of editions in which the setting will be available. Optional.
+	                	@id - setting identifier.
+	                        @edition_type - the list of editions where the setting will be available. This is an optional attribute.
 	                    -->
 	                    <item id="header">
 	                        <!-- Element type:
@@ -103,7 +133,7 @@ The full commented add-on scheme
 	            </section>
 	            <section id="section2">
 	                <translations>
-	                    <item lang="ru">Списки</item><!-- Can be translated through PO (SettingsSection) -->
+	                    <item lang="ru">Списки</item><!-- Can be translated in PO (SettingsSection). -->
 	                </translations>
 	                <items>
 	                    <item id="selectbox">
@@ -143,25 +173,25 @@ The full commented add-on scheme
 	            <section id="section3">
 	                <items>
 	                    <item id="selectable_box">
-	                        <!-- The current setting options will be taken from the function fn_settings_variants_[addon_id]_[setting_id]-->
+	                        <!-- The variants if this setting will be taken from the function fn_settings_variants_[addon_id]_[setting_id] -->
 	                        <type>selectable_box</type>
 	                        <default_value><![CDATA[#M#product_code=Y&product=Y&amount=Y&price=Y]]></default_value>
 	                        <variants/>
 	                    </item>
-	                    <!-- In this case the information returned by the function "handler" will be displayed -->
+	                    <!-- In this case the information returned by the "handler" function will be displayed. -->
 	                    <item id="info">
 	                        <type>info</type>
 	                        <handler>fn_sample_addon_3_0_info</handler>
 	                        <variants/>
 	                    </item>
 	                    <!-- Setting appearance; type "template". In this case a user-defined template from the themes/THEME_NAME/addons/ADDON_NAME/setings/TEMPLATE_NAME directory is loaded.
-	                         The template name is stored in the default_value-->
+	                         The template name is stored in the default_value.-->
 	                    <item id="template">
 	                        <type>template</type>
 	                        <default_value>sample.tpl</default_value>
 	                        <variants/>
 	                    </item>
-	                    <!-- A hidden setting. Exists in the database and in the Registry but is not shown to the user. -->
+	                    <!-- A hidden setting. It exists in the database and in the Registry, but it isn't shown to the user. -->
 	                    <item id="hidden">
 	                        <type>hidden</type>
 	                        <default_value>Some hidden setting value</default_value>
@@ -201,14 +231,15 @@ The full commented add-on scheme
 	    </functions>
 	</addon>
 
-Settings functions
+==================
+Settings Functions
 ==================
 
 You can use functions to get settings, if necessary.
 
 Example:
 
-.. code-block:: xml
+.. code-block:: php
 
 	<?php
 	/***************************************************************************
@@ -259,7 +290,8 @@ Example:
 	    return $text . '<hr/>' ;
 	}
 
-File with translations
+======================
+File with Translations
 ======================
 
 Translations are added with the *.po* file that is stored in the following directory: */var/langs/en/addons/[add-on_id].po*
@@ -269,7 +301,7 @@ The ``msgid`` value should be the same for all languages.
 
 Example:
 
-.. code-block:: xml
+.. code-block:: po
 
 	msgid ""
 	msgstr "Project-Id-Version: tygh"
