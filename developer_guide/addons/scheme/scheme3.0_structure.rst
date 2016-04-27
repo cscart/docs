@@ -33,37 +33,37 @@ The Full Add-on Scheme with Comments
 	    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
 	    <!-- The block that describes compatibility with CS-Cart versions and editions, other add-ons, PHP versions, and PHP extensions. -->
 	    <compatibility>
-                    <!-- Checking CS-Cart version. -->
-                    <core_version>
-                        <!-- The minimum version required. -->
-                        <min>4.3.2</min>
-                        <!-- The maximum version supported. -->
-                        <max>4.3.6</max>
-                    </core_version>
-                    <!-- Checking edition: cs-cart/multivendor. -->
-                    <core_edition>MULTIVENDOR</core_edition>
-                    <!-- Checking PHP version compatibility. -->
-                    <php_version>
-                        <!-- The minimum PHP version required. -->
-                        <min>5.3.6</min>
-                        <!-- The maximum PHP version supported. -->
-                        <max>5.6.1</max>
-                    </php_version>
-                    <!-- Checking compatibility with PHP extensions. -->
-                    <php_extensions>
-                        <!-- A required PHP extension. -->
-                        <gd>
-                            <supported>Y</supported>
-                        </gd>
-                        <!-- A conflicting PHP extension. -->
-                        <suhosin>
-                            <supported>N</supported>
-                        </suhosin>
-                        <!-- A required PHP extension with a specific version. -->
-                        <json>
-                            <min>1.0</min>
-                            <max>2.0</max>
-                        </json>
+                <!-- Checking CS-Cart version. -->
+                <core_version>
+                    <!-- The minimum version required. -->
+                    <min>4.3.2</min>
+                    <!-- The maximum version supported. -->
+                    <max>4.3.6</max>
+                </core_version>
+                <!-- Checking edition: cs-cart/multivendor. -->
+                <core_edition>MULTIVENDOR</core_edition>
+                <!-- Checking PHP version compatibility. -->
+                <php_version>
+                    <!-- The minimum PHP version required. -->
+                    <min>5.3.6</min>
+                    <!-- The maximum PHP version supported. -->
+                    <max>5.6.1</max>
+                </php_version>
+                <!-- Checking compatibility with PHP extensions. -->
+                <php_extensions>
+                    <!-- A required PHP extension. -->
+                    <gd>
+                        <supported>Y</supported>
+                    </gd>
+                    <!-- A conflicting PHP extension. -->
+                    <suhosin>
+                        <supported>N</supported>
+                    </suhosin>
+                    <!-- A required PHP extension with a specific version. -->
+                    <json>
+                        <min>1.0</min>
+                        <max>2.0</max>
+                    </json>
                 </php_extensions>
 	        <!-- Dependencies. These add-ons must be installed before you can install the current add-on. Otherwise an error message will be displayed. -->
 	        <dependencies>discussion,form_builder</dependencies>
