@@ -9,3 +9,4 @@ Tutorials
 
     hello_world
     advanced
+    organizing_git_workflow
