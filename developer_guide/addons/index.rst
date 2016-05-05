@@ -11,6 +11,7 @@ CS-Cart add-on development guides.
 
     hooking/index
     tutorials/index
+    marketplace/index
     *
     ../../upgrade/upgrade_addon
     compatibility/index

@@ -17,6 +17,8 @@ To turn an add-on on or off, click on the current add-on status to expand a list
     :align: center
     :alt: Enable/Disable add-ons
 
+.. _configure-addon:
+
 Configuring add-ons
 *******************
 
@@ -31,6 +33,8 @@ To configure an add-on:
 *	Click the **gear** button near the add-on status and choose **Settings**. This will open a form containing editable parameters.
 *	Edit the values of the fields in the form.
 *	Click **Save** to apply the changes.
+
+.. _install-addon-from-archive:
 
 Uploading add-ons from archive
 ******************************
