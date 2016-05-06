@@ -14,7 +14,7 @@ Getting the Add-on
 A Free Add-on
 -------------
 
-1. Go to the page of the desired add-on on the Marketplace.
+1. Go to the page of the desired add-on on `the Marketplace <http://marketplace.cs-cart.com/>`_.
 
 2. Choose the version of the add-on from the drop-down list.
 
