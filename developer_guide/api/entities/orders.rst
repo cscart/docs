@@ -154,13 +154,23 @@ To get the full list of details of a specific order, send a GET request to ``/ap
 
   GET /api/orders/100
 
-If the request is successful, you’ll receive **HTTP/1.1 200 OK** and JSON with the details of the order with ``order_id=100``. 
+---------------
+Response Format
+---------------
+
+* The order exists: **HTTP/1.1 200 OK** and JSON with order details.
+
+* The order doesn't exist: **HTTP/1.1 404 Not Found**.
 
 -------------
 Order Details
 -------------
 
 The fields below represent various order details.
+
+.. note::
+
+    The CS-Cart REST API always accepts and returns data as strings and arrays. The **Value** column in the table merely shows what kind of data you can expect in the fields.
 
 .. list-table::
     :header-rows: 1
@@ -385,6 +395,10 @@ Create an Order
     *   -   Multi-Vendor
         -   Send a POST request to ``/api/orders/``
 
+.. important::
+
+    A newly-created order will always have ``"status": "O"``. You can change it only when you update an order.
+
 Pass the following fields with order details in the HTTP request body in accordance with the ``Content-Type``. Required fields are marked with *****:
 
 * **user_id***—the unique identifier of the user. Can be omitted or set to 0 only if the request includes ``user_data``.
@@ -408,6 +422,10 @@ Pass the following fields with order details in the HTTP request body in accorda
             }         
         }
     }
+
+  .. note::
+
+       Product price is taken from the :doc:`product settings <products>`, not from the JSON data.
 
   * **amount***—the amount of this particular product that is being ordered.
 
@@ -456,16 +474,6 @@ Pass the following fields with order details in the HTTP request body in accorda
   .. note::
 
       You can view the available country and state codes in the Administration panel of your store under **Administration → Shipping & Taxes → States**.
-
-If the order is created successfully, you will receive **HTTP/1.1 201 Created** and the order ID in the response::
-
-  {
-   "order_id": "105"
-  }
-
-If the order couldn’t be created, you will receive **HTTP/1.1 400 Bad Request**.
-
-You can create an order in two ways.
 
 ------------------------------------------
 Way 1: Create an Order as an Existing User
@@ -566,11 +574,23 @@ Way 2: Create an Order as a Guest
    }
   }
 
-This request is similar to the previous example, but is placed on behalf of a guest with the specified contact details.
+This request is similar to the previous example, but the order is placed on behalf of a guest with the specified contact details.
 
 .. note::
 
     Guests specify their address and contact information at checkout. That’s why you must pass the ``user_data`` array in the JSON when you place an order on behalf a guest.
+
+---------------
+Response Format
+---------------
+
+* The order has been created successfully: **HTTP/1.1 201 Created** and the order ID::
+
+    {
+     "order_id": "98"
+    }
+
+* The order couldn’t be created: **HTTP/1.1 400 Bad Request**.
 
 ===============
 Update an Order
@@ -578,28 +598,96 @@ Update an Order
 
 To update an existing order, send the PUT request to ``/api/orders/<order_id>/``. For example::
 
-  PUT /api/orders/105
+  PUT /api/orders/98
 
 Pass the fields with order details in the HTTP request body in accordance with the passed ``Content-Type``. None of the fields are required.
 
-**Example JSON:**
+----------------------------------------
+Example JSON: Change Products and Status
+----------------------------------------
 
 ::
 
   {
+   "status": "P",
    "products": {
        "13": {
          "product_id": "13",
          "amount": "1"
-       }
-   }
+       },
+       "241": {
+         "product_id": "241",
+         "amount": "1",
+          "product_options": {
+             "12": "44", 
+             "13": "48" 
+          }         
+         }
+        }
   }
 
-This request changes the products assigned to the order with ``order_id=105``. When we created that order, it had one product with ``product_id=12`` and two products with ``product_id=13``. After this request the order will only have one product with ``product_id=13``.
+This request:
+
+* sets the status of the order to ``P`` (by default it stands for *Processed*).
+
+* changes the products assigned to the order. When we created order 98, it had one product with ``product_id=12`` and two products with ``product_id=13``. After this request the order will have one product with ``product_id=13``, and one product with ``product_id=241``.
+
+  Product 241 also has the option variants specified:
+
+  * variant 44 of option 12.
+
+  * variant 48 of option 13.
 
 .. note::
 
-    If an order has multiple products, make sure to specify them all when you update the products array with the PUT request. Products that are not specified in the PUT request will be removed from the order.
+    If an order has multiple products, make sure to specify them all when you update the ``products`` array with the PUT request. Products that are not specified in the PUT request will be removed from the order. The same applies to product option variants.
+
+-------------------------------------------------
+Example JSON: Change User Details and Order Total
+-------------------------------------------------
+
+::
+
+  {
+   "total": "100"
+   "user_data": {
+     "email": "customer@example.com",
+     "b_firstname": "John",
+     "b_lastname": "Doe",
+     "s_firstname": "John",
+     "s_lastname": "Doe"
+   }
+  }
+
+This request:
+
+* changes the name of the customer in the billing and shipping address to *John Doe*;
+
+* changes the customer's email to *customer@example.com*;
+
+.. note::
+
+    This won't change the name or email of the :doc:`user <users>`—only the name and email on the order page will change.
+
+* sets the order total to $100 (if U.S. dollar is the primary currency of your store).
+
+.. note::
+
+    If you try to specify the ``total`` and other parameters that can affect it (like ``discount`` or ``subtotal_discount``) in the JSON at the same time, then ``total`` will always take priority. You can specify ``total``, but not ``subtotal`` in the JSON. 
+
+---------------
+Response Format
+---------------
+
+* The order has been updated successfully: **HTTP/1.1 200 OK** and the order ID::
+
+    {
+     "order_id": "98"
+    }
+
+* The order couldn’t be updated: **HTTP/1.1 400 Bad Request**.
+
+* The order doesn’t exist: **HTTP/1.1 404 Not Found**.
 
 ===============
 Delete an Order
@@ -607,14 +695,16 @@ Delete an Order
 
 To delete an order, send the DELETE request to ``/api/orders/<order_id>/``. For example::
 
-  DELETE /api/orders/105
+  DELETE /api/orders/98
 
-This request will delete an order with ``order_id=105``.
+This request will delete an order with ``order_id=98``.
 
-**Possible responses:**
+----------------
+Response Formant
+----------------
 
-* **HTTP/1.1 204 No Content**—the order has been deleted successfully.
+* The order has been deleted successfully: **HTTP/1.1 204 No Content**.
 
-* **HTTP/1.1 400 Bad Request**—the order couldn’t be deleted.
+* The order couldn’t be deleted: **HTTP/1.1 400 Bad Request**.
  
-* **HTTP/1.1 404 Not Found**—the order doesn’t exist.
+* The order doesn’t exist: **HTTP/1.1 404 Not Found**.
