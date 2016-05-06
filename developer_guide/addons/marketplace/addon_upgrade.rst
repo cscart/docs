@@ -158,6 +158,9 @@ Step 2. Upload the Package to the Marketplace
 	:align: center
 	:alt: When you upload an upgrade to the Marketplace,  you specify from and to which versions the add-on is upgraded.
 
+
+.. _test-addon-package:
+
 ===========================================
 Step 3. View and Test Your Upgrade Packages
 ===========================================

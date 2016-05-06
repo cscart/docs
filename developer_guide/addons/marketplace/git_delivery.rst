@@ -4,7 +4,7 @@ Delivering Add-on Releases to the Marketplace with Git
 
 We recommend developing add-ons in Git repositories—this facilitates collaboration and testing. There are :doc:`instructions on organizing your Git workflow <../tutorials/organizing_git_workflow>`, that can make add-on development more convenient for you.
 
-Since the Marketplace allows you to :doc:`distribute add-on upgrades <addon_upgrade>`, there is one more reason to use Git—you can deliver add-on releases from GitHub to the Marketplace automatically. This article shows how to do that.
+There is one more reason to use Git—you can deliver add-on releases from GitHub to the Marketplace automatically. This article shows how to do that.
 
 ========================================
 Connecting Repository to the Marketplace
@@ -137,7 +137,7 @@ Once you have made some changes in your repository and are ready to roll out a n
 
 5. Once the webhook is processed, the package will appear on the **Product packages** tab of the add-on editing page in the Marketplace.
 
-6. By default, the package is *Disabled*, i.e. unavailable to customers. That way you can :doc:`test the package <addon_upgrade>` before release. Once you’re ready to distribute the package, change its status to *Active*:
+6. By default, the package is *Disabled*, i.e. unavailable to customers. That way you can :ref:`test the package <test-addon-package>` before release. Once you’re ready to distribute the package, change its status to *Active*:
 
 .. image:: img/package_status.png
 	:align: center
