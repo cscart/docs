@@ -153,4 +153,4 @@ Once you upload the distribution package, its **addon.xml** file will be checked
 
 .. note::
 
-    You can also :doc:`deliver add-ons and upgrades to the Marketplace from your Git repository <../tutorials/organizing_git_workflow>`.
+    You can also :doc:`deliver add-ons and upgrades to the Marketplace from your Git repository <git_delivery>`.

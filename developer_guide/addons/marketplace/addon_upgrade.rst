@@ -28,11 +28,11 @@ This article tells how add-on developers can create upgrade packages for their a
 Way 1. Building an Upgrade Package Manually
 -------------------------------------------
 
-Create an upgrade package as described in this article. Instead of creating an upgrade connector you’ll need a Marketplace connector. It must be located in the *app/addons/[ADDON_NAME]/Tygh/UpgradeCenter/Connectors/Upgrade/Connector.php* and have the following content:
+Create an upgrade package as described in this article. Instead of creating an upgrade connector you’ll need a Marketplace connector. It must be located in the *app/addons/[addon_name]/Tygh/UpgradeCenter/Connectors/[AddonName]/Connector.php* and have the following content:
 
 .. important::
 
-    Replace ``[product_id]`` in the code with the ID of your add-on (``product_id``) in the Marketplace.
+    Replace ``[product_id]`` in the code with the ID of your add-on (``product_id``) in the Marketplace. In this example the connector is located in *app/addons/sample_addon/Tygh/UpgradeCenter/Connectors/SampleAddon/Connector.php*. Replace **sample_addon** and **SampleAddon** with the name of your add-on both in the path and in the code.
 
 .. code-block:: php
 
@@ -168,7 +168,7 @@ The list of upgrade packages is available on the **Product packages** tab of you
 	:align: center
 	:alt: The list of packages includes add-on distribution and upgrade packages.
 
-A manually-uploaded upgrade package has the *Active* status by default, i.e. it is available to customers. Upgrades :doc:`uploaded via Git <git_delivery>` have the *Disabled* status by default, i.e. they are not available to customers.
+A manually-uploaded upgrade package has the *Active* status by default, i.e. it is available to customers. Upgrades built with the Marketplace have the *Disabled* status by default, i.e. they are not available to customers.
 
 Customers who :doc:`downloaded an add-on from the Marketplace <../../../user_guide/addons/marketplace_addons>`, installed it, and specified the marketplace license number, will see the active upgrades in the Upgrade Center.
 
