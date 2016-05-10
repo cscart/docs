@@ -12,6 +12,7 @@ The **eBay synchronization** add-on helps you exchange products and orders with 
     ebay_install
     ebay_interface
     ebay_templates
+    ebay_product_identifiers
     ebay_categories
     ebay_products
     ebay_get_product_status
