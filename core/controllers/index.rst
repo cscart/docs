@@ -19,7 +19,7 @@ A path to the controller and its name are defined by the program automatically b
 
 All controllers for the admin panel (executable file - *admin.php*) are located in the *app/controllers/backend* directory, for the customer area (*index.php*) - in the *app/controllers/frontend* directory. If the called controller is not in these directories, then the system tries to launch it from *app/controllers/common*. This is done for the situations when the same controller is to serve the customer and administrator areas and its function is the same for both areas.
 
-Controller connection is carried out by the function ``[/core/fn.control.php]/fn_dispatch()``, which does not accept any parameters and performs the following main actions:
+Controller connection is carried out by the function ``[/app/functions/fn.control.php]/fn_dispatch()``, which does not accept any parameters and performs the following main actions:
 
     * Checks the parameter ``dispatch`` for validity.
     * Checks permissions of the current user for the called controller.
