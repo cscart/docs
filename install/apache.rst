@@ -212,11 +212,15 @@ The next step is to choose your licensing mode. You have 3 options:
 
 3. The **Free Mode** leaves some features unavailable, but has no time restrictions. You can use this mode from the start or switch to it once your trial period is over.
 
+.. important::
+
+   The **Free Mode** is not available in Multi-Vendor. Beginning with version 4.3.7, it was removed from CS-Cart as well. Once the trial period expires, enter your license number to continue managing your store.
+
 .. image:: img/cpanel/15_licensing_mode.png
     :align: center
     :alt: Enter your CS-Cart license number, get a 30-day trial or use the free version. 
 
-Once you choose your licensing mode, your online store is all set! Now you can go to the **Storefront** to view your store, or to the **Administrator panel** to manage it.
+Once you choose your licensing mode, your online store is all set! Now you can go to the **Storefront** to view your store, or to the **Administration panel** to manage it.
 
 .. image:: img/cpanel/16_complete.png
     :align: center

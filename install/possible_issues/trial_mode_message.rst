@@ -4,11 +4,22 @@ Your Store Is in the Trial Mode
 
 If CS-Cart cannot receive a confirmation from our server that you use a CS-Cart installation legally, you'll see a pop-up window in the administration panel of your store:
 
-.. note::
+.. list-table::
+    :stub-columns: 1
+    :widths: 10 60
 
-    Your store is in the Trial mode.
-    When the 30-day trial period is over, the Free mode will be activated automatically.
-    In order to keep the full access to all features after the trial period is over and permanently dismiss this message, purchase a license and activate the Full mode.
+    *   -   Before 4.3.7
+        -   | Your store is in the Trial mode.
+            |
+            | When the 30-day trial period is over, the Free mode will be activated automatically.
+            |
+            | In order to keep the full access to all features after the trial period is over and permanently dismiss this message, purchase a license and activate the Full mode.
+    *   -   Since 4.3.7
+        -   | Your store is in the Trial mode.
+            |
+            | When the 30-day trial period expires, you'll have to enter a valid license number to be able to manage your store.
+            |
+            | To dismiss this message permanently, and to access to the Administration panel after the trial period is over, purchase a license and activate the Full mode.
 
 To resolve the issue, follow the instructions:
 
