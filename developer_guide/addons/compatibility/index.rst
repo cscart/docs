@@ -16,3 +16,4 @@ Version Compatibility
     adapting_433_to_434
     adapting_434_to_435
     adapting_435_to_436
+    adapting_436_to_437
