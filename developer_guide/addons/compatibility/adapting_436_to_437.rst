@@ -28,7 +28,7 @@ Hook Changes
 New Hooks
 ---------
 
-1. Checks if an order is available for a customer::
+1. Check if an order is available for a customer::
 
      fn_set_hook('is_order_allowed_post', $order_id, $auth, $allowed);
 
