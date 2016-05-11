@@ -34,8 +34,6 @@ Preparing the Add-on Scheme
          <core_edition>MULTIVENDOR</core_edition>
       </compatibility>
 
- You can’t specify both ULTIMATE and MULTIVENDOR in the ``<core_edition>`` element. If the add-on is compatible both with CS-Cart and Multi-Vendor, don’t put ``<core_edition>`` into the ``<compatibility>`` section.
-
  .. important::
 
     If you don’t specify ``<core_edition>``, the Marketplace will display compatible editions depending on what you specify in the **Product** field on the **Features** tab of the add-on editing page.
