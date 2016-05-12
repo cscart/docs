@@ -100,6 +100,10 @@ Step 2. Configure Your eBay Template
 
 4. Select the features that correspond to eBay product identifiers. You can also use the **CODE** field.
 
+.. note::
+
+    If your eBay template exports products to a `category that requires product identifiers <http://pages.ebay.com/sell/item_specifics/product_identifiers.html>`_, don't leave *None* for those identifiers, or the export will result in an error. If you want to export products that don't have product identifiers for some reason (e.g., an old book that doesn't have ISBN), choose *Does not apply*.
+
 5. If you edit an existing eBay template, click **Save**.
 
 This will make your eBay template export the specified features and CODE fields as product identifiers.
