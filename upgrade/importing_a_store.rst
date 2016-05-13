@@ -7,14 +7,14 @@ How To: Upgrade Your Store with Store Import
     Before you attempt to upgrade your store, make sure you have enough space on your server hard drive.
 
 =============================
-Step 1. Install CS-Cart 4.x.x
+Step 1. Install CS-Cart 4.3.x
 =============================
 
-1.1. Download CS-Cart/Multi-Vendor 4.x.x (one of :doc:`the versions that support store import <about_store_import>`) 
+1.1. Download CS-Cart/Multi-Vendor 4.3.x (one of the versions you can upgrade to). Make sure that Store Import can import data from your version. You can find this information :doc:`here <about_store_import>`.
 
-1.2. :doc:`Install CSCart/Multi-Vendor <../install/index>` in a separate subdirectory of your old 2.2.x or 3.0.x installation. 
+1.2. :doc:`Install CSCart/Multi-Vendor <../install/index>` in a separate subdirectory of your old installation. 
 
-     For example, if your original store is available at *example.com*, create the ``/store`` directory in the root of *example.com*. Then unpack the installation archive of your 4.x.x store in that directory. You should then be able to install CS-Cart/Multi-Vendor 4.x.x by using this URL: *example.com/store*.
+     For example, if your original store is available at *example.com*, create the ``/store`` directory in the root of *example.com*. Then unpack the installation archive of your 4.3.x store in that directory. You should then be able to install CS-Cart/Multi-Vendor 4.3.x by using this URL: *example.com/store*.
 
 .. important::
 
@@ -22,13 +22,13 @@ Step 1. Install CS-Cart 4.x.x
 
 .. note::
 
-    If your old store used several languages, you may want to choose the same languages for the newly installed CS-Cart 4.x.x. You can change the languages in the **Administration → Languages → Manage languages** section of the Administration panel.
+    If your old store used several languages, you may want to choose the same languages for the newly installed CS-Cart 4.3.x. You can change the languages in the **Administration → Languages → Manage languages** section of the Administration panel.
 
 ============================
 Step 2. Install Store Import
 ============================
     
-2.1. Open the Administration panel **of your 4.x.x store**. 
+2.1. Open the Administration panel **of your 4.3.x store**. 
 
 2.2. Go to **Add-ons → Manage add-ons**.
 
@@ -46,7 +46,7 @@ Step 3. Import Data
 
 3.1. Go to **Add-ons → Store Import**. 
 
-3.2. On the opened page enter the server path to the existing 2.2.4/2.2.5 or 3.0.x store. 
+3.2. On the opened page enter the server path to the old store. 
 
      It is the path where your existing store is installed on the server. For example, on UNIX-based systems it should look something similar to */var/www/examplestore*, and on Windows it will be something like *C:/examplestore*.
 

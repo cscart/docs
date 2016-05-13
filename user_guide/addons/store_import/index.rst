@@ -28,6 +28,8 @@ Use the table below to see the versions that you can upgrade to and from:
     *   -   CS-Cart Multi-Vendor 2.2.4 - 3.0.6
         -   Multi-Vendor 4.0.2 - 4.3.2
 
+The Store Import add-on that comes with CS-Cart 4.3.6 can also import data from CS-Cart 4.3.1 - 4.3.5.
+
 ================
 Using the Add-on
 ================
