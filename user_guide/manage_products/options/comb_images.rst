@@ -72,7 +72,7 @@ Let's make it so that the main product image changes when a different option com
 
 2.5. Click the **Save** button.
 
-     Now when a customer selects the option combination on the storefront, the image of that option combination will be displayed.
+Now when a customer selects the option combination on the storefront, the image of that option combination will be displayed.
 
 .. image:: img/combination_images.png
     :align: center
