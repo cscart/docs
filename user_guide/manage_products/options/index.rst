@@ -24,6 +24,7 @@ In this section
     option_attributes
     global_options
     option_settings
+    option_combinations
     comb_images
     exceptions
     max_file_uploads
