@@ -17,6 +17,7 @@ Promotions
     discount_if_order_total_exceeds_value
     discount_two_products
     free_product
+    free_shipping
     gift_certificate_promo
     user_group_discounts
 
