@@ -15,6 +15,10 @@ Use this section to adjust vendor settings for the administration panel and the 
 
 * **Vendors per page**—the number of vendors displayed on one page.
 
+.. note:: 
+
+    Starting with Multi-Vendor 4.3.6, the settings below are part of the **Vendor commission** add-on.
+
 * **Include shipping cost in vendor commission**—if you enable this setting, the cost of shipping the order is considered at vendor commission calculation.
 
 * **Take payment surcharge from vendors**—if you enable this setting, vendors will get entrusted to pay payment surcharges (see :doc:`this article <../payment_methods/configure_payment>` for details).
