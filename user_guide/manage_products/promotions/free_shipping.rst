@@ -10,7 +10,7 @@ You can offer free shipping if a customer buys a certain product. This is done v
 
 .. warning::
 
-    If the free shipping promotion applies to an order, customers won't be charged for shipping any products in that order. Additional shipping freights that you specify for individual products wo
+    If the free shipping promotion applies to an order, customers won't be charged for shipping any products in that order. Additional shipping charges that you specify for individual products won't apply either.
 
 1. Go to **Marketing → Promotions**.
 
@@ -62,7 +62,7 @@ You can offer free shipping if a customer buys a certain product. This is done v
     :align: center
     :alt: Select the shipping method you want to make free.
 
-10. Click **Save and close**.
+10. Click **Create and close**.
 
 Congratulations! Now when customers add the specified product to cart and select the right shipping method, they won't be charged for shipping.
 
