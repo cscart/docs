@@ -8,9 +8,9 @@ How To: Set Free Shipping for a Certain Product
 
 1. In the Administration panel, go to **Products → Products**.
 
-2. Click the name of the necessary product to edit it.
+2. Click the name of the product you want to edit.
 
-3. Open the **Shipping properties** tab on the opened page.
+3. Switch to the **Shipping properties** tab.
 
 4. Tick the **Free shipping** checkbox.
 

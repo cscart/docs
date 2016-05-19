@@ -16,4 +16,5 @@ Use this list to edit certain attributes of a shipping method. To access more at
     :glob:
 
     */index
+    manual_shipping_methods/certain_product_free_shipping
     *
