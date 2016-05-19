@@ -8,6 +8,8 @@ To make inventory tracking easier, you can group different combinations of :doc:
 
    Only *Checkbox*, *Select box*, and *Radiogroup* options can be a part of a combination. An option must also have the **Inventory** checkbox ticked, or it won't appear among the options of the combination.
 
+.. _tracking-with-options: 
+
 ----------------
 Add Combinations
 ----------------
@@ -16,7 +18,7 @@ Add Combinations
 
 2. Click the name of the product you want to edit.
 
-3. Set the **Inventory** setting to *Track with options* and click the **Save** button. This will allow you to track product quantity for each option combination separately.
+3. (optional) Set the **Inventory** setting to *Track with options* and click the **Save** button. This will allow you to track product quantity for each option combination separately.
 
 4. Switch to the **Options** tab and click **Option combinations**. This will take you to the list of option combinations for this product.
 
@@ -53,7 +55,7 @@ Edit Combinations
 Once you create an option combination, you can't change what option variants are a part of it. If you open the list of existing option combinations of a product, you will only be able edit the following parameters:
 
 * **code**
-* **quantity** (only if you enable *tracking with options* for this product)
+* **quantity** (only if you enabled tracking with options :ref:`in step 3 here <tracking-with-options>`)
 * **image** (:doc:`learn more about it here <comb_images>`)
 
 Remember to click the **Save** button in the top right corner once you've made your changes.

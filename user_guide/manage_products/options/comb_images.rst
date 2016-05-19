@@ -42,7 +42,9 @@ Let's add icons for option variants. By clicking these icons, customers will sel
 
 1.7. Click **Save**.
 
-The icons should then appear on the product page. Customers can select the option variant by clicking those icons. The main product image won't change, unless you follow instructions in step 2.
+.. important::
+
+    The icons should then appear on the product page. Customers can select the option variant by clicking those icons. The main product image won't change, unless you follow instructions in step 2.
 
 .. image:: img/add_icons_for_variants.png
     :align: center
@@ -72,8 +74,14 @@ Let's make it so that the main product image changes when a different option com
 
 2.5. Click the **Save** button.
 
-Now when a customer selects the option combination on the storefront, the image of that option combination will be displayed.
-
 .. image:: img/combination_images.png
     :align: center
     :alt: Upload the images for option combinations from local computer, server file system, or from remote location by URL.
+
+.. important::
+
+    Now when a customer selects the option combination on the storefront, the image of that option combination will be displayed.
+
+.. image:: img/changing_main_image.png
+    :align: center
+    :alt: If you followed the steps described this article, the main image of the product will change when customers choose a different option combination.
