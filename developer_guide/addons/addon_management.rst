@@ -1,6 +1,6 @@
-****************************
-Add-on Management Procedures
-****************************
+***************************
+Add-on Management Processes
+***************************
 
 This article describes what happens when an add-on is installed, uninstalled, activated or deactivated.
 
