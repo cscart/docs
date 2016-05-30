@@ -20,9 +20,9 @@ Exceptions behave differently depending on their type. You can specify the type 
 
 3. Find the **Exceptions type** setting and choose its value:
 
-   * **Allowed**—customers can add the product to cart only if they choose one of the *allowed combinations* of options variants.
+   * **Allowed**—only exceptions will be available to customers; other combinations of option variants will be unavailable.
 
-   * **Forbidden**—customers can add the product to cart, if they don't choose one of the *forbidden combinations* of option variants.
+   * **Forbidden**—exceptions won't be available to customers; other combinations of option variants will remain available.
 
 4. Click the **Save** button in the top right corner.
 
