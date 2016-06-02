@@ -549,9 +549,9 @@ RSS feed
 	    -   *	Filling
 	    
 		    	*	:ref:`Products <filling_products>`
-		    	*	:ref:`News <news>` (only since version 4.3.8 and only if the :doc:`Blog <../../../addons/blog/index>` add-on is active)
+		    	*	Posts (only since version 4.3.8 and only if the :doc:`Blog <../../../addons/blog/index>` add-on is active)
 
-		*	Parent page (available for the **News** filling type only)
+		*	Parent page (available for the **Posts** filling type only)
 
 	        *	Sort by (available for the **Products** filling type only)
 
