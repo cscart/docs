@@ -25,7 +25,7 @@ Banners
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   One or more banners that were created in section **Marketing → Banners**.
@@ -48,7 +48,7 @@ Brands
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   A list of brands represented in the store. A product brand can be defined as a feature with the **Brand/Manufacturer** type.
@@ -72,7 +72,7 @@ Breadcrumbs
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   Breadcrumbs, a navigation aid for visitors to keep track of their location on the storefront. Breadcrumbs provide links to the parent pages of the current one.
@@ -91,7 +91,7 @@ Cart content
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   Mini-cart, a summary of the cart contents on a regular storefront page.
@@ -112,7 +112,7 @@ Categories
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   Hierarchical hyperlinked list of product categories.
@@ -146,7 +146,7 @@ Checkout
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   Pieces of information and features that are related to the checkout page.
@@ -168,7 +168,7 @@ Currencies
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   List (text or pictorial) of currencies supported in the store. To manage the list of currencies, use section **Administration → Currencies**.
@@ -193,7 +193,7 @@ Gift certificate verification
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   Allows customer to validate or redeem a gift certificate.
@@ -216,7 +216,7 @@ HTML block
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   Custom HTML content.
@@ -235,7 +235,7 @@ HTML block with Smarty support
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   Custom HTML/Smarty content.
@@ -254,7 +254,7 @@ Languages
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   Language selector.
@@ -279,7 +279,7 @@ Menu
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   A custom menu created in **Design → Menus**.
@@ -300,7 +300,7 @@ My account
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   Links to a page with the customer's account details.
@@ -319,7 +319,7 @@ News
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   Links to the latest store news.
@@ -347,7 +347,7 @@ Pages
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   Hierarchical hyperlinked list of static pages.
@@ -379,7 +379,7 @@ Payment methods
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   Icons that represent the available payment methods in the store.
@@ -398,7 +398,7 @@ Polls
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   One or several polls created in **Website → Content**.
@@ -425,7 +425,7 @@ Product filters
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   Filters to find products against specific parameters.
@@ -446,7 +446,7 @@ Products
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   One or more products from the product catalog.
@@ -490,7 +490,7 @@ Recent posts
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   Blog posts that were created in section **Website → Blog**.
@@ -537,7 +537,7 @@ RSS feed
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   Regular RSS feed icon. A visitor clicks the icon and adds the store RSS feed to his or her RSS reader.
@@ -549,8 +549,9 @@ RSS feed
 	    -   *	Filling
 	    
 		    	*	:ref:`Products <filling_products>`
-		    	*	:ref:`Pages <pages>`
-		    	*	:ref:`News <news>`
+		    	*	:ref:`News <news>` (only since version 4.3.8 and only if the :doc:`Blog <../../../addons/blog/index>` add-on is active)
+
+		*	Parent page (available for the **News** filling type only)
 
 	        *	Sort by (available for the **Products** filling type only)
 
@@ -580,7 +581,7 @@ Shipping methods
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   Icons that represent the available shipping methods in the store.
@@ -599,7 +600,7 @@ Store locator
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   Box showing the location of your store on Google map.
@@ -622,7 +623,7 @@ Tags
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   List of product and category tags.
@@ -648,7 +649,7 @@ Template
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   A collection of various templates that represent different controls and pieces of information.
@@ -677,7 +678,7 @@ Testimonials
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   List of testimonials left by the store customers.
@@ -701,7 +702,7 @@ Vendors
 .. list-table::
 	:header-rows: 0
 	:stub-columns: 1
-	:widths: 15 35
+	:widths: 10 35
 
 	*   -   Description
 	    -   List of active product vendors.
