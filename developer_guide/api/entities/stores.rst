@@ -2,317 +2,430 @@
 Stores
 ******
 
-URLs
-====
+.. important::
 
-*   http://example.com/api/**stores**—refer to all stores. Only ``GET`` and ``POST`` are supported.
-*   http://example.com/api/**stores/:id**—refer to a particular store. ``GET``, ``PUT``, and ``DELETE`` are supported.
+    Stores are available only in CS-Cart.
 
-Examples
-========
+CS-Cart allows you to run multiple :doc:`stores <../../../user_guide/stores/index>` with one Administration panel. These stores share the same database, but have separate storefronts, settings, and checkout mechanisms, so that visitors can treat them as independent stores.
 
-Get all stores
---------------
+.. contents::
+   :backlinks: none
+   :local:
 
-.. code-block:: bash
+===============
+List all Stores
+===============
 
-    curl --user admin@example.com:APIkey -X GET 'http://example.com/api/stores'
+To get a list of stores, send a GET request to ``/api/stores/``::
 
-Response:
+  GET /api/stores/
 
-.. code-block:: json
+This request returns 10 stores with their details.
 
-	{
-	    "stores": [{
-	        "company_id": "2",
-	        "lang_code": "",
-	        "email": "",
-	        "company": "Sample store",
-	        "timestamp": "1438165755",
-	        "status": "A",
-	        "storefront": "example.com\/samplestore",
-	        "secure_storefront": "example.com\/samplestore",
-	        "average_rating": null,
-	        "company_thread_ids": "2_0"
-	    }, {
-	        "company_id": "1",
-	        "lang_code": "en",
-	        "email": "store@example.com",
-	        "company": "My Company",
-	        "timestamp": "1269610461",
-	        "status": "A",
-	        "storefront": "example.com\/cscart_433",
-	        "secure_storefront": "example.com\/cscart_433",
-	        "average_rating": null,
-	        "company_thread_ids": "1_0"
-	    }],
-	    "params": []
-	}
+----------------------------------
+Pagination, Sorting, and Filtering
+----------------------------------
 
-Get store data for the store with ID 2
---------------------------------------
-
-.. code-block:: bash
-
-    curl --user admin@example.com:APIkey -X GET 'http://example.com/api/stores/2'
-
-Response:
-
-.. code-block:: json
-
-	{
-	    "company_id": "1",
-	    "lang_code": "en",
-	    "email": "store@example.com",
-	    "company": "My Company",
-	    "timestamp": "1269610461",
-	    "status": "A",
-	    "storefront": "example.com\/cscart_433",
-	    "secure_storefront": "example.com\/cscart_433",
-	    "average_rating": null,
-	    "company_thread_ids": "1_0"
-	}
-
-Create a store
---------------
-
-.. code-block:: bash
-
-    curl --user admin@example.com:APIkey --header 'Content-Type: application/json'\
-    -d '{"company": "My Awesome Store", "storefront": "http://myawesomestore.com"}'\
-    -X POST 'http://example.com/api/stores'
-
-Response:
-
-.. code-block:: json
-
-    {
-        "store_id": "3"
-    }
-
-Create a store from an existing one cloning products and categories
--------------------------------------------------------------------
-
-.. code-block:: bash
-
-    curl --user admin@example.com:APIkey --header 'Content-Type: application/json'\
-    -d '{"company": "Another Awesome Store", "storefront": "http://anotherawesomestore.com",\
-    "clone_from": 2, "clone": {"products": "Y", "categories": "Y"}}'\
-    -X POST 'http://example.com/api/stores'
-
-Response:
-
-.. code-block:: json
-
-    {
-        "store_id": "4"
-    }
-
-Update company description
---------------------------
-
-.. code-block:: bash
-
-    curl --user admin@example.com:APIkey --header 'Content-Type: application/json'
-    -d '{"company_description": "This is my awesome store description"}'
-    -X PUT 'http://example.com/api/stores/3'
-
-Response:
-
-.. code-block:: json
-
-    {
-        "store_id": "3"
-    }
-
-Pagination
-==========
-
-To get a specific number of stores or list of stores from a concrete page in a response, use pagination parameters:
+Add these parameters to the path to specify what stores will be returned in the response and how they will be organized:
 
 .. list-table::
     :header-rows: 1
     :stub-columns: 1
-    :widths: 20 30
+    :widths: 10 5 30
 
-    *   -   Pagination param
+    *   -   Parameter
+        -   Default value
         -   Description
     *   -   page
-        -   Shows stores on a page with the defined number
+        -   1
+        -   The response to ``GET /api/stores/`` is a page with a limited number of stores. This parameter determines the number of the page that will be sent in the response.
     *   -   items_per_page
-        -   Shows N stores, where N - is a number defined in the parameter
+        -   10
+        -   Determines the number of stores on a page.
+    *   -   sort_by
+        -   ``name``
+        -   Determines the parameter by which the stores are sorted in the response. Available parameters are ``name``, ``timestamp``.
+    *   -   sort_order
+        -   ``desc``
+        -   | Determines the sorting order:
+            | ``asc``—ascending
+            | ``desc``—descending
+    *   -   timestamp
+        -   
+        -   Searches only for the stores created at the specified time.
+    *   -   company
+        -   
+        -   Searches only for the store with the specified name.
 
 **Examples:**
 
-*   *http://example.com/api/stores?page=5*
+* ``GET /api/stores/?page=2&items_per_page=2``
 
-Response is an array with 10 stores from the 5th page (10 is the default value of the ``items_per_page`` parameter).
+  Response is an array with the information about 2 stores from the 2nd page of the list of stores.
 
-*   *http://example.com/api/stores?items_per_page=20*
+* ``GET /api/stores/?company=Simtech``
 
-Response is an array with 20 stores from the first page.
+  Response is an array the information about the store with the specified name.
 
-*   *http://example.com/api/stores?page=5&items_per_page=20*
+---------------
+Response Format
+---------------
 
-Response is an array with 20 stores from the 5th page.
-        
-Fields
-======
+Let’s make a test request::
 
-A setting has a number of properties, represented by fields.
+  GET /api/stores/?items_per_page=1
 
-The full list of supported fields is given below (mandatory fields are marked with **\***).
+If the request is successful, you’ll receive **HTTP/1.1 200 OK**. The response is JSON with the following data::
 
-.. note:: Any field not listed in the table below will be ignored if occurs in an API request JSON data.
+  {
+   "stores": [
+      {
+       "company_id": "1",
+       "lang_code": "en",
+       "email": "simtech@example.com",
+       "company": "Simtech",
+       "timestamp": "1269610461",
+       "status": "A",
+       "storefront": "localhost",
+       "secure_storefront": "localhost",
+       "average_rating": null,
+       "company_thread_ids": "1_0"
+      }
+   ],
+   "params": [0]
+  }
+
+====================
+Get a Specific Store
+====================
+
+To get the details of a specific store, send a GET request to ``/api/stores/<company_id>/``. For example::
+
+  GET /api/stores/1
+
+---------------
+Response Format
+---------------
+
+* The store exists: **HTTP/1.1 200 OK** and JSON with the store details::
+    
+    {
+     "company_id": "1"
+     "lang_code": "en"
+     "email": "simtech@example.com"
+     "company": "Simtech"
+     "timestamp": "1269610461"
+     "status": "A"
+     "storefront": "localhost"
+     "secure_storefront": "localhost"
+     "average_rating": null
+     "company_thread_ids": "1_0"
+    }
+
+* The store doesn’t exist: **HTTP/1.1 404 Not Found**.
+
+-------------
+Store Details
+-------------
+
+The fields below represent various store details.
+
+.. note::
+
+    The CS-Cart/Multi-Vendor REST API always accepts and returns data as strings and arrays. The **Values** column in the table merely shows what kind of data you can expect in the fields.
 
 .. list-table::
     :header-rows: 1
     :stub-columns: 1
-    :widths: 5 30 5 10
+    :widths: 10 5 30
 
-    *   -   Field name
+    *   -   Field
+        -   Values
         -   Description
-        -   Default value
-        -   Supported values
-    *   -   company*
-        -   Store name
-        -   —
-        -   string
-    *   -   storefront*
-        -   Storefront URL
-        -   —
-        -   valid URL
     *   -   company_id
-        -   Store ID
-        -   Set automatically
-        -   integer
-    *   -   email
-        -   ?
-        -   —
-        -   Valid e-mail address
-    *   -   lang_code
-        -   Language code
-        -   Default language code
-        -   | ``en``
-            | ``ru``
-            | etc.
+        -   *integer*
+        -   A unique identifier of the store.
+    *   -   company
+        -   *string*
+        -   The name of the store.
     *   -   timestamp
-        -   Store creation timestamp
-        -   Set automatically
-        -   Valid timestamp in UNIX format
-    *   -   status
-        -   Status
-        -   ``A``
-        -   | ``A`` for active
-            | ``D`` for disabled
-            | ``H`` for hidden
+        -   *integer*
+        -   The `UNIX time <https://en.wikipedia.org/wiki/Unix_time>`_ when the store was created.
+    *   -   storefront
+        -   *string*
+        -   The URL of the storefront.
     *   -   secure_storefront
-        -   Secure storefront URL
-        -   —
-        -   Valid URL
-    *   -   company_description
-        -   Store description
-        -   ''
-        -   string
-    *   -   redirect_customer
-        -   Redirect visitors to country-specific storefronts (IP-defined)
-        -   ``Y``
-        -   | ``Y``
-            | ``N``
-    *   -   entry_page
-        -   Global entry page (if ``redirect_customer`` is ``N``)
-        -   index
-        -   | all_pages
-            | none
-            | index
-    *   -   countries_list
-        -   List of countries assigned to the store
-        -   []
-        -   Array of country codes ('DZ', 'AS', etc.)
-    *   -   company_name
-        -   Company name
-        -   ''
-        -   string
-    *   -   company_address
-        -   Company address
-        -   ''
-        -   string
-    *   -   company_city
-        -   Company city
-        -   ''
-        -   string
-    *   -   company_country
-        -   Company country
-        -   ''
-        -   string
-    *   -   company_state
-        -   Company state
-        -   ''
-        -   string
-    *   -   company_zipcode
-        -   Company zip code
-        -   ''
-        -   string
-    *   -   company_phone
-        -   Company phone
-        -   ''
-        -   string
-    *   -   company_phone_2
-        -   Company phone 2
-        -   ''
-        -   string
-    *   -   company_fax
-        -   Company fax
-        -   ''
-        -   string
-    *   -   company_website
-        -   Company website
-        -   ''
-        -   string
-    *   -   company_start_year
-        -   Company operation start year
-        -   ''
-        -   string
-    *   -   company_users_department
-        -   User department e-mail address
-        -   ''
-        -   string
-    *   -   company_site_administrator
-        -   Site administrator e-mail address
-        -   ''
-        -   string
-    *   -   company_orders_department
-        -   Order department e-mail address
-        -   ''
-        -   string
-    *   -   company_support_department
-        -   Help/Support department e-mail address
-        -   ''
-        -   string
-    *   -   company_newsletter_email
-        -   Reply-to newsletter e-mail address
-        -   ''
-        -   string
-    *   -   clone_from
-        -   ID of the store to clone data from
-        -   —
-        -   Valid store ID
-    *   -   clone
-        -   Store attributes to clone
-        -   []
-        -   | Object of store attributes as keys and ``Y`` as values.
-            | Available attributes are:
+        -   *string*
+        -   The secure URL of the storefront (SSL).
 
-            *  layouts
-            *   settings
-            *   profile_fields
-            *   pages
-            *   promotions
-            *   shippings
-            *   payments
-            *   product_filters
-            *   product_features
-            *   sitemap
-            *   static_data_clone
-            *   products
-            *   categories
+==============
+Create a Store
+==============
+
+Send a POST request to ``/api/stores/``::
+
+  POST /api/stores/
+
+Pass the following fields with store details in the HTTP request body in accordance with the ``Content-Type``. Required fields are marked with *****:
+
+* **company***—the name of the store.
+
+* **storefront***—the URL of the store.
+
+  .. important::
+
+      The storefront field must have a unique value for each store.
+
+* **secure_storefront**—the secure URL of the store.
+
+There are other parameters that aren’t returned by CS-Cart REST API, but can be used:
+
+* **redirect_customer**—determines whether customers can be :doc:`redirected from this store to a different store depending on their IP address <../../../user_guide/stores/redirect_regional_customers_to_storefront>`:
+
+  * ``Y``—customers can be redirected.
+
+  * ``N``—customers can’t be redirected.
+
+* **entry_page**—determines the pages of the store which should take the customer to the :doc:`global entry page <../../../user_guide/stores/global_entry_point>`:
+
+  * ``all_pages``—customers will be taken to the global entry page from any page of the store.
+
+  * ``none``—customers won’t be taken to the global entry page from any page of the store.
+
+  * ``index``—customers will be taken to the global entry page from the index page of the store.
+
+  .. important::
+
+      The **entry_page** field applies only if **redirect_customer** is ``N``.
+
+* **countries_list**—the list of countries assigned to the store; if one of your other stores supports redirection, customers from these countries will be redirected here from that store::
+
+    {
+     ...
+     "countries_list": [
+            "DZ",
+            "AS",
+            "AQ",
+            "AG",
+            "AR"
+        ],
+     ...
+    }
+
+* **clone_from**—the ID of the store to clone data from.
+
+* **clone**—an array with various store attributes that must be cloned, with ``Y`` values::
+
+    {
+     ...
+     "clone_from": "1",
+     "clone": {
+        "layouts": "Y",
+        "settings": "Y",
+        "profile_fields": "Y",
+        "pages": "Y",
+        "promotions": "Y",
+        "shippings": "Y",
+        "payments": "Y",
+        "product_filters": "Y",
+        "product_features": "Y",
+        "sitemap": "Y",
+        "static_data_clone": "Y",
+        "products": "Y",
+        "categories": "Y"
+     }
+    }
+
+--------------------------------
+Example JSON: Create a New Store
+--------------------------------
+
+::
+
+  {
+   "company": "Example Company",
+   "storefront": "example.com",
+   "redirect_customer": "Y",
+   "entry_page": "none",
+   "countries_list": [
+        "DZ", "AS", "AQ", "AG", "AR"
+   ]
+  }
+
+This request creates a store with the specified properties. Customers can be redirected from this store, if they come from a country from the **countries_list** of one of your other stores.
+
+-------------------------------------------
+Example JSON: Create a Store and Clone Data
+-------------------------------------------
+
+::
+
+  {
+   "company": "Example Company 2",
+   "storefront": "example2.com",
+   "secure_storefront": "example2.com",
+   "clone_from": "1",
+   "clone": {
+      "layouts": "Y",
+      "settings": "Y",
+      "products": "Y",
+      "categories": "Y"
+    }
+  }
+
+This request creates a store with the specified properties. The layouts, settings, products, and categories are cloned from the store with ``company_id=1``.
+
+---------------
+Response Format
+---------------
+
+* The store has been created successfully: **HTTP/1.1 201 Created** and the ID of the store::
+
+    {
+     "store_id": 2
+    }
+
+* The store couldn’t be created: **HTTP/1.1 400 Bad Request**.
+
+==============
+Update a Store
+==============
+
+To update an existing store, send the PUT request to ``/api/stores/<company_id>/``. For example:
+
+  PUT /api/stores/2/
+
+Pass the fields with the store details in the HTTP request body in accordance with the passed ``Content-Type``. None of the fields are required.
+
+* **company**—the name of the store.
+
+* **storefront**—the URL of the store.
+
+  .. important::
+
+      The **storefront** field must have a unique value for each store.
+
+* **secure_storefront**—the secure URL of the store.
+
+* **timestamp**—the `UNIX time <https://en.wikipedia.org/wiki/Unix_time>`_ when the store was created.
+
+You can use the PUT request to add information about the company, which isn’t returned by GET requests, such as:
+
+* **company_name**—the name of the company.
+
+* **company_address**—the address of the company.
+
+* **company_city**—the city of the company.
+
+* **company_country**—the country of the company. Must be specified as the code (for example, ``US``). 
+
+  .. hint::
+
+      You can find those codes under **Administration → Shipping & taxes → Countries**.
+
+* **company_state**—the state of the company. Can be specified as a code. 
+
+  .. hint::
+
+      You can find those codes under **Administration → Shipping & taxes → States**.
+
+* **company_zipcode**——the zipcode of the company.
+
+* **company_phone**—the primary phone number of the company.
+
+* **company_phone_2**—the second phone number of the company.
+
+* **company_fax**—the fax number of the company.
+
+* **company_website**—the website of the company.
+
+* **company_start_year**—the year when the company started working.
+
+* **company_users_department**—the email address of the user department.
+
+* **company_site_administrator**—the email address of the site administrator.
+
+* **company_orders_department**—the email address of the order department.
+
+* **company_support_department**—the email address of the help/support department.
+
+* **company_newsletter_email**—the reply-to/newsletter email address.
+
+------------
+Example JSON
+------------
+
+::
+
+  {
+   "company": "Example",
+   "storefront": "example.com/store",
+   "secure_storefront": "example.com/store",
+   "countries_list": [
+        "GB", "US"
+   ],
+   "company_name": "My new company",
+   "company_address": "41 Avenue",
+   "company_city": "New York",
+   "company_country": "US",
+   "company_state": "NY",
+   "company_zipcode": "10001",
+   "company_phone": "1234-123-12345",
+   "company_phone_2": "",
+   "company_fax": "",
+   "company_website": "example.com",
+   "company_start_year": "2005",
+   "company_users_department": "users@example.com",
+   "company_site_administrator": "admin@example.com",
+   "company_orders_department": "orders@example.com",
+   "company_support_department": "support@example.com",
+   "company_newsletter_email": "news@example.com"
+  }
+
+This request:
+
+* changes the store name to *Example*.
+
+* sets the URLs for HTTP and HTTPS access.
+
+* changes the countries of the store to *Great Britain* and the *United States*, so that customers from those countries will be redirected to this store.
+
+  .. important:
+
+      When you update **countries_list**, make sure to specify all the countries that must be there. The countries that you don’t specify won’t on the list.
+
+* adds more information about the company.
+
+---------------
+Response Format
+---------------
+
+* The store has been updated successfully: **HTTP/1.1 200 OK** and the company ID::
+    
+    {
+     "store_id": "2"
+    }
+
+* The store couldn’t be updated: **HTTP/1.1 400 Bad Request**.
+
+* The store doesn’t exist: **HTTP/1.1 404 Not Found**.
+
+==============
+Delete a Store
+==============
+
+To delete a store, send the DELETE request to ``/api/stores/<company_id>/``. For example::
+
+  DELETE /api/stores/2
+
+This request will delete an store with ``company_id=2``.
+
+---------------
+Response Format
+---------------
+
+* The store has been deleted successfully: **HTTP/1.1 204 No Content**.
+
+* The store couldn’t be deleted: **HTTP/1.1 400 Bad Request**.
+
+* The store doesn’t exist: **HTTP/1.1 404 Not Found**.

@@ -28,3 +28,4 @@ Supported Entities
     taxes
     users
     usergroups
+    vendors
