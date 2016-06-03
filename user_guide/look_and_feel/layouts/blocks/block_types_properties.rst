@@ -313,33 +313,6 @@ My account
 	*   -   Block settings
 	    -   None
 
-News
-----
-
-.. list-table::
-	:header-rows: 0
-	:stub-columns: 1
-	:widths: 10 35
-
-	*   -   Description
-	    -   Links to the latest store news.
-	*   -   Related add-ons
-	    -   `Newsletters <http://docs.cs-cart.com/4.3.x/user_guide/addons/newsletters/index.html>`_
-	*   -   Templates
-	    -   *	:ref:`Site news <site_news>`
-	        *	:ref:`Text links <text_links>`
-	*   -   Content
-	    -   *	Filling
-	    
-		    	*	:ref:`Manually <manually>`
-		    	*	:ref:`Newest <newest>`
-		    	*	:ref:`Plain <plain>`
-	*   -   Block settings
-	    -   None
-
-.. note ::
-
-	This block type requires commercial license.
 
 Pages
 -----
