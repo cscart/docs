@@ -13,7 +13,7 @@ Multi-Vendor allows you to run an online shopping mall, where multiple independe
    :local:
 
 ================
-List all Vendors
+List All Vendors
 ================
 
 To get a list of vendors, send a GET request to ``/api/vendors/``::
