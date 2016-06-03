@@ -13,14 +13,18 @@ CS-Cart allows you to run multiple :doc:`stores <../../../user_guide/stores/inde
    :local:
 
 ===============
-List all Stores
+List All Stores
 ===============
 
 To get a list of stores, send a GET request to ``/api/stores/``::
 
   GET /api/stores/
 
-This request returns 10 stores with their details.
+This request returns the list of stores with their details.
+
+.. note::
+
+    The number of the returned stores depends on CS-Cart settings and can be altered by adding pagination parameters to the URL.
 
 ----------------------------------
 Pagination, Sorting, and Filtering
@@ -329,7 +333,7 @@ You can use the PUT request to add information about the company, which isn’t 
 
       You can find those codes under **Administration → Shipping & taxes → States**.
 
-* **company_zipcode**——the zipcode of the company.
+* **company_zipcode**—the zipcode of the company.
 
 * **company_phone**—the primary phone number of the company.
 
@@ -418,7 +422,7 @@ To delete a store, send the DELETE request to ``/api/stores/<company_id>/``. For
 
   DELETE /api/stores/2
 
-This request will delete an store with ``company_id=2``.
+This request will delete a store with ``company_id=2``.
 
 ---------------
 Response Format

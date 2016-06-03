@@ -20,7 +20,11 @@ To get a list of vendors, send a GET request to ``/api/vendors/``::
 
   GET /api/vendors/
 
-This request returns 10 vendors with their details.
+This request returns the list vendors with their details.
+
+.. note::
+
+    The number of the returned vendors depends on Multi-Vendor settings and can be altered by adding pagination parameters to the URL.
 
 ----------------------------------
 Pagination, Sorting, and Filtering
@@ -345,7 +349,7 @@ Example JSON
     },
     "commission": "10.55",
     "commission_type": "A",
-    "terms": "<p>There are no additional terms.</p>"
+    "terms": "<p>These are the terms and conditions you must accept before you can buy products from New Vendor.</p>"
   }
 
 ---------------
@@ -422,7 +426,7 @@ To delete a vendor, send the DELETE request to ``/api/vendors/<company_id>/``. F
 
   DELETE /api/vendors/2
 
-This request will delete an vendor with ``company_id=2``.
+This request will delete a vendor with ``company_id=2``.
 
 ---------------
 Response Format
