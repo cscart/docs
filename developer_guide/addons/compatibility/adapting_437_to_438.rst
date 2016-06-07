@@ -44,7 +44,7 @@ New Hooks
 
      fn_set_hook('get_discussion_post', $object_id, $object_type, $get_posts, $params, $discussion);
 
-8. Is executed after feed items and properties are fetched from the DB and all data post-processing is done::
+8. This hook is executed after the feed items and properties are fetched from the database and all data post-processing is done::
 
      fn_set_hook('generate_rss_feed', $items_data, $additional_data, $block_data, $lang_code);
 
