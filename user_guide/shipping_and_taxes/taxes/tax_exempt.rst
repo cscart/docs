@@ -18,7 +18,7 @@ How To: Make an Account Tax Exempt
 
 .. important::
 
-       If you tick the **Price includes** tax checkbox when :doc:`setting up a tax <set_up_tax>`, customers won't be exempt from that tax.
+       If you tick the **Price includes tax** checkbox when :doc:`setting up a tax <set_up_tax>`, customers won't be exempt from that tax.
 
 .. image:: img/tax_exempt.png
     :align: center
