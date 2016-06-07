@@ -1,5 +1,5 @@
 **********************************************
-Adapt Your Add-ons and Themes to CS-Cart 4.3.7
+Adapt Your Add-ons and Themes to CS-Cart 4.3.8
 **********************************************
 
 ==============
@@ -8,7 +8,6 @@ Common Changes
 
 MaxMind's GeoIP country database was updated to the latest version (used by the ``fn_get_country_by_ip()`` function).
 
- 
 ============
 Hook Changes
 ============
