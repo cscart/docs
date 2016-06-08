@@ -78,15 +78,15 @@ New Functions
 
 3. Calculate the offset of the given timezone to the UTC timezone::
 
-      \Tygh\Tools\DateTimeHelper::getTimeZoneOffsetString()
+      \Tygh\Tools\DateTimeHelper::getTimeZoneOffsetString($time_zone_name)
 
 4. Set the given timezone as the PHP runtime timezone and as the current MySQL connection timezone::
 
-      fn_init_time_zone()
+      fn_init_time_zone($time_zone_name)
 
 5. Check whether the current URL's hostname is a subdomain of the given URL's hostname::
 
-      \Tygh\Tools\Url::isSubDomainOf()
+      \Tygh\Tools\Url::isSubDomainOf(self $url)
    
 6. Prepare the RSS feed items and properties::
 
