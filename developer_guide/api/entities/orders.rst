@@ -9,10 +9,10 @@ Orders are what an online store is about. Customers submit orders at checkout af
    :local:
 
 ===============
-List all Orders
+List All Orders
 ===============
 
-To get a list of orders, send a GET request to ``/api/orders``::
+To get a list of orders, send a GET request to ``/api/orders/``::
 
   GET /api/orders/
 
@@ -34,7 +34,7 @@ Add these parameters to the path to specify what orders will be returned in the 
         -   Description
     *   -   page
         -   1
-        -   The response to ``GET /api/orders`` is a page with a limited number of orders. This parameter determines the number of the page that will be sent in the response.
+        -   The response to ``GET /api/orders/`` is a page with a limited number of orders. This parameter determines the number of the page that will be sent in the response.
     *   -   items_per_page
         -   10
         -   Determines the number of orders on a page.
@@ -170,7 +170,7 @@ The fields below represent various order details.
 
 .. note::
 
-    The CS-Cart REST API always accepts and returns data as strings and arrays. The **Value** column in the table merely shows what kind of data you can expect in the fields.
+    The CS-Cart/Multi-Vendor REST API always accepts and returns data as strings and arrays. The **Values** column in the table merely shows what kind of data you can expect in the fields.
 
 .. list-table::
     :header-rows: 1
@@ -602,14 +602,40 @@ To update an existing order, send the PUT request to ``/api/orders/<order_id>/``
 
 Pass the fields with order details in the HTTP request body in accordance with the passed ``Content-Type``. None of the fields are required.
 
-----------------------------------------
-Example JSON: Change Products and Status
-----------------------------------------
+---------------------------------------------
+Example JSON: Change Status & Notify by Email 
+---------------------------------------------
+
+By default, when you change the order status via REST API, no email notifications are sent. However, you can use additional fields when updating an order:
+
+* **notify_user**—this flag determines whether or not to send the notification to the customer.
+
+* **notify_department**—this flag determines whether or not to send the notification to the order department.
+
+* **notify_vendor**—this flag determines whether or not to send the notification to the vendor.
+
+.. note::
+
+    The **notify_vendor** flag is available only in Multi-Vendor.
 
 ::
 
   {
    "status": "P",
+   "notify_user": "Y",
+   "notify_department": "Y",
+   "notify_vendor": "Y"
+  }
+
+This request sets the status of the order to ``P`` (*Processed* by default) and sends email notifications to the customer, the vendor, and the order department.
+
+-----------------------------
+Example JSON: Change Products
+-----------------------------
+
+::
+
+  {
    "products": {
        "13": {
          "product_id": "13",
@@ -626,17 +652,13 @@ Example JSON: Change Products and Status
         }
   }
 
-This request:
+This request changes the products assigned to the order. When we created order 98, it had one product with ``product_id=12`` and two products with ``product_id=13``. After this request the order will have one product with ``product_id=13``, and one product with ``product_id=241``.
 
-* sets the status of the order to ``P`` (by default it stands for *Processed*).
+Product 241 also has the option variants specified:
 
-* changes the products assigned to the order. When we created order 98, it had one product with ``product_id=12`` and two products with ``product_id=13``. After this request the order will have one product with ``product_id=13``, and one product with ``product_id=241``.
+* variant 44 of option 12.
 
-  Product 241 also has the option variants specified:
-
-  * variant 44 of option 12.
-
-  * variant 48 of option 13.
+* variant 48 of option 13.
 
 .. note::
 
@@ -695,13 +717,13 @@ Delete an Order
 
 To delete an order, send the DELETE request to ``/api/orders/<order_id>/``. For example::
 
-  DELETE /api/orders/98
+  DELETE /api/orders/98/
 
 This request will delete an order with ``order_id=98``.
 
-----------------
-Response Formant
-----------------
+---------------
+Response Format
+---------------
 
 * The order has been deleted successfully: **HTTP/1.1 204 No Content**.
 
