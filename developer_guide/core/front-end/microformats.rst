@@ -44,7 +44,7 @@ Microformat of the field validation is defined in the class attribute of the ele
 
 Example:
 
-.. code-block:: js
+.. code-block:: html
 
 	<script type="text/javascript">
     	Tygh.$.ceFormValidator('setZipcode', {
@@ -87,7 +87,7 @@ The function accepts only one parameter - ID of the validated element.
 
 Example:
 
-.. code-block:: js
+.. code-block:: html
 
 	<label for="a" class="cm-regexp"><input type="input" id="a" value="" />
 
