@@ -160,7 +160,7 @@ Pass the following fields with language details in the HTTP request body in acco
 
   .. warning::
  
-      Don’t use the ``lang_code`` of one of the languages that comes with CS-Cart/Multi-Vendor, or that language will disappear from the list until you delete the language you created.
+      Don’t use the ``lang_code`` of any of the languages that come with CS-Cart/Multi-Vendor, or that language will disappear from the list until you delete the language you created.
 
 * **name***—the name of the language.
 
@@ -220,7 +220,7 @@ To update the details of an installed language, send the PUT request to ``/api/l
 
   PUT /api/languages/3/
 
-Pass the fields with the language details in the HTTP request body in accordance with the passed ``Content-Type``. None of the fields are required.
+Pass the fields with the language details in the HTTP request body in accordance with the passed ``Content-Type``. The ``lang_code`` field is required.
 
 ------------
 Example JSON
