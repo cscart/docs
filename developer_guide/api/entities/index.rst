@@ -12,6 +12,8 @@ Supported Entities
     call_requests
     categories
     discussions
+    languages
+    langvars
     orders
     pages
     payments
