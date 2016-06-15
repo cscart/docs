@@ -238,7 +238,7 @@ To update the details of the language variable, send a PUT request to ``/api/lan
 
 or::
 
-  PUT /api/langvars/access_denied/?sl=en
+  PUT /api/langvars/test_variable/?sl=en
 
 Pass the value of the language variable in the HTTP request body in accordance with the passed ``Content-Type``.
 
