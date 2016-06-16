@@ -30,9 +30,16 @@ Although the general idea is always the same, the details of the installation pr
 
     cpanel
     digitalocean
-    softaculous
     vps_install
     install_via_console
+
+.. toctree::
+    :maxdepth: 4
+    :titlesonly:
+    :glob:
+    :hidden:
+
+    softaculous
 
 ==============================
 Configure Multiple Storefronts
