@@ -30,7 +30,7 @@ This request returns 10 carts with their details.
 Pagination, Sorting, and Filtering
 ----------------------------------
 
-Add these parameters to the request path to specify what carts will be returned in the response and how they will be organized:
+Add these parameters to the request path to specify which carts will be returned in the response and how they will be organized:
 
 .. list-table::
     :header-rows: 1
