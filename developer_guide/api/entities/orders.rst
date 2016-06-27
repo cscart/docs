@@ -225,7 +225,7 @@ The fields below represent various order details.
         -   The code of the language which the customer selected when placing the order, for example ``en``.
     *   -   localization_id
         -   *integer*
-        -   ID of the localization. **Note:** localizations are deprecated and disabled by default.
+        -   ID of the localization. **Note:** Localizations are deprecated and disabled by default.
     *   -   total
         -   *float*
         -   The sum to be paid by the customer.
