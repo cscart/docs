@@ -100,7 +100,7 @@ Add these parameters to the request path to specify which carts will be returned
             | ``HH``—last 24 hours
             | ``HW``—last 7 days
             | ``HM``—last 30 days
-            | ``C``—specified time period (use with the **time_from** and **time_to fields**)
+            | ``C``—specified time period (use with the **time_from** and **time_to** fields)
     *   -   time_from
         -   
         -   Hide the carts that were created before the `UNIX time <https://en.wikipedia.org/wiki/Unix_time>`_ specified here.
@@ -121,7 +121,7 @@ Add these parameters to the request path to specify which carts will be returned
 
 * ``http://example.com/api/carts/?page=5&items_per_page=20&period=D&user_type=G``
 
-  Response is an array with 20 today’s guests’ carts by from the 5th page.
+  Response is an array with 20 today’s guests’ carts from the 5th page.
 
 ---------------
 Response Format
