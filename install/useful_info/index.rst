@@ -14,6 +14,7 @@ This section includes articles that are related to CS-Cart installation and init
     seo-friendly
     ../moving_to_another_server
     moving_to_different_folder
+    copying_store_to_subdirectory
     alias_domain
     increase_performance
     permissions
