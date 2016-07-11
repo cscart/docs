@@ -275,7 +275,7 @@ Links
 
 There is a microformat that allows to execute AJAX request when clicking on a link. Format of this link::
 
- <a class="cm-ajax" href="https://cs-cart.com" data-ca-target-id="pagination_contents">Ajax link</a>
+ <a class="cm-ajax" href="https://www.cs-cart.com" data-ca-target-id="pagination_contents">Ajax link</a>
 
 
 The microformat is defined by CSS class of the tag ``a``. Classes can be combined.
