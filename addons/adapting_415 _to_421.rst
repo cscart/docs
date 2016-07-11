@@ -34,7 +34,7 @@ Changed:
 *	``seo_url``
 
 For more information open:
-`http://www.cs-cart.com/index.php?dispatch=hooks_base.manage&ver=4.2.1RC#238973 <http://www.cs-cart.com/index.php?dispatch=hooks_base.manage&ver=4.2.1RC#238973>`_
+`https://www.cs-cart.com/index.php?dispatch=hooks_base.manage&ver=4.2.1RC#238973 <https://www.cs-cart.com/index.php?dispatch=hooks_base.manage&ver=4.2.1RC#238973>`_
 
 Choose "Compare with": "CS-Cart Lifetime License" "4.1.5" and click **Search**.
 
@@ -129,10 +129,10 @@ All the config variables with the resources paths were moved to ``$config['resou
 	'knowledge_base' => 'http://kb.cs-cart.com/installation',
 	'updates_server' => 'http://updates.cs-cart.com',
 	'twitter' => 'cscart',
-	'feedback_api' => 'http://www.cs-cart.com/index.php?dispatch=feedback',
-	'product_url' => 'http://www.cs-cart.com',
-	'helpdesk_url' => 'http://www.cs-cart.com/helpdesk',
-	'license_url' => 'http://www.cs-cart.com/licenses.html',
+	'feedback_api' => 'https://www.cs-cart.com/index.php?dispatch=feedback',
+	'product_url' => 'https://www.cs-cart.com',
+	'helpdesk_url' => 'https://www.cs-cart.com/helpdesk',
+	'license_url' => 'https://www.cs-cart.com/licenses.html',
 	'marketplace_url' => 'http://marketplace.cs-cart.com',
 	'admin_protection_url' => 'http://kb.cs-cart.com/adminarea-protection',
 	//'demo_store_url' => 'http://demo.cs-cart.com/' . strtolower(PRODUCT_EDITION) . '/'
