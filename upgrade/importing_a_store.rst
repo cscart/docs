@@ -27,14 +27,22 @@ Step 1. Install CS-Cart 4.3.x
 ============================
 Step 2. Install Store Import
 ============================
-    
-2.1. Open the Administration panel **of your 4.3.x store**. 
 
-2.2. Go to **Add-ons → Manage add-ons**.
+.. important::
 
-2.3. Switch to the **Browse all available add-ons** tab.
+    **Starting from CS-Cart 4.3.7, the Store Import add-on doesn't come with the CS-Cart installation package**. Please `get the Store Import add-on <http://marketplace.cs-cart.com/add-ons/store-import.html>`_ on the CS-Cart Marketplace. For CS-Cart 4.3.6, we also recommend that you use the Store Import add-on from the Marketplace as it has all the latest fixes. In the latter case, uninstall the existing Store Import add-on before installing the one you got from the Marketplace.
 
-2.4. Find **Store Import** and click the **Install** button next to it.
+    To download the Store Import add-on on the Marketplace, `open its Marketplace page <http://marketplace.cs-cart.com/add-ons/store-import.html>`_, leave your email in the **Email field** and click **DOWNLOAD**. You'll receive the download link to your mailbox. Then install the Store Import add-on just like you install any third-party add-on.
+
+2.1. In your Administration panel, go to **Add-ons → Manage add-ons** and click the **+** button at the top right.
+
+2.2. Upload the **.zip archive** containing the Store Import add-on.
+
+2.3. Click **Upload & install**.
+
+2.4. Switch to the **Browse all available add-ons** tab.
+
+2.5. Find **Store Import** and click the **Install** button next to it.
 
 .. image:: img/store_import_install.png
     :align: center

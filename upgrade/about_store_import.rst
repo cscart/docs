@@ -4,7 +4,7 @@ About Store Import
 
 **Store Import** is an add-on that imports the database from an older version of your store to 4.x.x. The process takes several steps: 
 
-1. Install CS-Cart/Multi-Vendor 4.x.x in a subfolder of your old store.
+1. Install CS-Cart/Multi-Vendor 4.x.x to a subfolder of your old store.
 
 2. Import the data from your old store to the new one with :doc:`the Store Import add-on <../user_guide/addons/store_import/index>`.
 
@@ -12,9 +12,13 @@ About Store Import
 
 4. Import the data that was accumulated in your old store while you were customizing your new store.
 
-.. note::
+.. important::
 
-    Read this article to learn :doc:`how to upgrade your store with Store Import <importing_a_store>`.
+    **Starting from CS-Cart 4.3.7, the Store Import add-on doesn't come with the CS-Cart installation package**. Please `get the Store Import add-on <http://marketplace.cs-cart.com/add-ons/store-import.html>`_ for CS-Cart 4.3.7 and newer from the Marketplace. It's free. 
+
+    Although CS-Cart 4.3.6 has the Store Import add-on by default, we recommend that you get it from the Marketplace as well: on the Marketplace, the add-on is fresher than the one that comes with 4.3.6.
+
+    Learn :doc:`how to upgrade your store with Store Import <importing_a_store>`.
 
 ==================
 Supported Versions
@@ -29,13 +33,13 @@ Use the table below to see the versions that you can upgrade to and from:
     *   -   Upgrade from:
         -   Upgrade to:
     *   -   CS-Cart Professional 2.2.4 - 3.0.6
-        -   CS-Cart 4.0.2 - 4.3.2, 4.3.6
+        -   CS-Cart 4.0.2 - 4.3.2, 4.3.6 - 4.3.8
     *   -   CS-Cart Ultimate 3.0.1 - 3.0.6
-        -   CS-Cart 4.0.2 - 4.3.2, 4.3.6
+        -   CS-Cart 4.0.2 - 4.3.2, 4.3.6 - 4.3.8
     *   -   CS-Cart Multi-Vendor 2.2.4 - 3.0.6
         -   Multi-Vendor 4.0.2 - 4.3.2
 
-The Store Import add-on that comes with CS-Cart 4.3.6 can also import data from CS-Cart 4.3.1 - 4.3.5.
+The Store Import add-on for CS-Cart 4.3.6 can also import data from CS-Cart 4.3.1 - 4.3.5.
 
 .. note::
 
