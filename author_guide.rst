@@ -153,7 +153,7 @@ Keep URLs clean and tidy. Do not forget to place ``http`` at the beginning. Avoi
 
 URLs must be marked up in *italic*:
 
-    *https://www.cs-cart.com/*
+    *https://cs-cart.com/*
 
 Code samples
 """"""""""""
