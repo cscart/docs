@@ -1,6 +1,6 @@
-********************************************************
-How To: Make a Live Copy of Your Store in a Subdirectory
-********************************************************
+************************************************************
+How To: Make a Dev Copy of Your Live Store in a Subdirectory
+************************************************************
 
 Having a live copy of your store in a subdirectory is useful: you can test upgrades on it or modify files with no risks. You can freely make a copy of your store with the same license, but **you have to close the storefront of the copied store**.
 
@@ -144,3 +144,5 @@ Don’t forget to close the storefront on the **Settings → General** page:
   RewriteBase /[enter the full path to your copied store]
 
 Well done! Now you have a live copy of your store in the subdirectory. You can now safely test upgrades on it and modify functionality.
+
+
