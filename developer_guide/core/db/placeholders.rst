@@ -6,8 +6,6 @@ Database queries in CS-Cart/Multi-Vendor are formed with the help of placeholder
 
 Different placeholders serve different purposes. For example, when you refer to database fields with integer values (``order_id``, ``product_id``, etc.),  use the **?i** or **?n** placeholders. If a field can store text values, use **?s** and **?a** instead.
 
-
-
 ======================
 Available Placeholders
 ====================== 
@@ -62,7 +60,7 @@ This placeholder forms a structure for inserting data.
 ?i
 --
 
-This placeholder converts the accepted data to an *integer*.
+This placeholder converts data to an *integer*.
 
 * Accepted data: *string*, *number*
 
@@ -71,7 +69,7 @@ This placeholder converts the accepted data to an *integer*.
     $order_id = 4;
     db_query('SELECT * FROM ?:orders WHERE order_id = ?i', $order_id);
   
-* Resulting query:*
+* Resulting query:
 
   .. code-block:: mysql
 
@@ -81,9 +79,9 @@ This placeholder converts the accepted data to an *integer*.
 ?s
 --
 
-This placeholder converts the accepted data to a *string* (adds slashes).
+This placeholder converts data to a *string* (adds slashes).
 
-* Accepted data:* *string*, *number*
+* Accepted data: *string*, *number*
 
 * Example usage::
 
@@ -102,7 +100,7 @@ This placeholder converts the accepted data to a *string* (adds slashes).
 
 This placeholder converts data to a *string* for substitution into the ``LIKE`` operator (replaces backslashes with double backslashes and then adds slashes).
 
-* Accepted data: *string*.
+* Accepted data: *string*
 
 * Example usage::
 
@@ -176,7 +174,7 @@ This placeholder prepares data to be used in the ``IN ()`` structure  as a set o
 ?p
 --
 
-This placeholder inserts a prepared value::
+This placeholder inserts a prepared value.
 
 * Example usage::
 
