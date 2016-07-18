@@ -1,174 +1,258 @@
-*********************************************
-Using Placeholders to Build Database Requests
-*********************************************
+********************************************
+Using Placeholders to Build Database Queries
+********************************************
 
-In CS-Cart requests to the database are formed using placeholders:
+Database queries in CS-Cart/Multi-Vendor are formed with the help of placeholders.
 
-.. glossary:: 
+Different placeholders serve different purposes. For example, when you refer to database fields with integer values (``order_id``, ``product_id``, etc.),  use the **?i** or **?n** placeholders. If a field can store text values, use **?s** and **?a** instead.
 
-    ?u
-        forms a structure for updating data, receives an array::
 
-            $data = array (
-                'payment_id' => 5
-                );
-            $order_id = 3;
 
-            db_query('UPDATE ?:orders SET ?u WHERE order_id = ?i', $data, $order_id);
+======================
+Available Placeholders
+====================== 
 
-        Converts to:
+--
+?u
+--
 
-        .. code-block:: mysql
+This placeholder forms a structure for updating data. 
 
-            UPDATE cscart_orders SET payment_id = '5' WHERE order_id = 3;
+* Accepted data: *array*
 
-    ?e
-        forms a structure for inserting data, receives an array::
+* Example usage::
 
-            $data = array (
-                'payment_id' => 5,
-                'order_id' => 3
-            );
- 
-            db_query('INSERT INTO ?:orders ?e', $data);
+    $data = array (
+        'payment_id' => 5
+        );
+    $order_id = 3;
 
-        Converts to:
+    db_query('UPDATE ?:orders SET ?u WHERE order_id = ?i', $data, $order_id);
 
-        .. code-block:: mysql
+* Resulting query:
 
-            INSERT INTO cscart_orders (payment_id, order_id) VALUES ('5', '3');
+  .. code-block:: mysql
+   
+      UPDATE cscart_orders SET payment_id = '5' WHERE order_id = 3;
 
-    ?i
-        converts data to an integer, receives a string, number::
+--
+?e
+--
 
-            $order_id = 4;
-            db_query('SELECT * FROM ?:orders WHERE order_id = ?i', $order_id);
+This placeholder forms a structure for inserting data.
+
+* Accepted data: *array*
+
+* Example usage::
+
+    $data = array (
+        'payment_id' => 5,
+        'order_id' => 3
+    );
+
+    db_query('INSERT INTO ?:orders ?e', $data);
+
+* Resulting query:
+
+  .. code-block:: mysql
+
+      INSERT INTO cscart_orders (payment_id, order_id) VALUES ('5', '3');
+
+--
+?i
+--
+
+This placeholder converts the accepted data to an *integer*.
+
+* Accepted data: *string*, *number*
+
+* Example usage::
+
+    $order_id = 4;
+    db_query('SELECT * FROM ?:orders WHERE order_id = ?i', $order_id);
   
-        Converts to:
+* Resulting query:*
 
-        .. code-block:: mysql
+  .. code-block:: mysql
 
-            SELECT * FROM cscart_orders WHERE order_id = 4;
+      SELECT * FROM cscart_orders WHERE order_id = 4;
 
-    ?s
-        converts data to a string (adds slashes), receives a string, number::
+--
+?s
+--
 
-            $order_id = 'adasd';
-            db_query('SELECT * FROM ?:orders WHERE order_id = ?s', $order_id);
+This placeholder converts the accepted data to a *string* (adds slashes).
 
-        Converts to:
+* Accepted data:* *string*, *number*
 
-        .. code-block:: mysql
+* Example usage::
 
-            SELECT * FROM cscart_orders WHERE order_id = 'foo';
+    $order_id = 'adasd';
+    db_query('SELECT * FROM ?:orders WHERE order_id = ?s', $order_id);
 
-    ?l
-        converts data to a string for substitution into the operator LIKE (replaces backslashes with double backslashes and then adds slashes), receives a string::
+* Resulting query:
 
-            $piece = '%black\white%';
-            db_query('SELECT * FROM ?:product_descriptions WHERE product LIKE ?l', $piece);
+  .. code-block:: mysql
+
+      SELECT * FROM cscart_orders WHERE order_id = 'foo';
+
+--
+?l
+--
+
+This placeholder converts data to a *string* for substitution into the ``LIKE`` operator (replaces backslashes with double backslashes and then adds slashes).
+
+* Accepted data: *string*.
+
+* Example usage::
+
+    $piece = '%black\white%';
+    db_query('SELECT * FROM ?:product_descriptions WHERE product LIKE ?l', $piece);
  
-        Converts to:
+* Resulting query:
 
-        .. code-block:: mysql
+  .. code-block:: mysql
 
-            SELECT * FROM cscart_product_descriptions WHERE product LIKE '%black\\\\white%';
+      SELECT * FROM cscart_product_descriptions WHERE product LIKE '%black\\\\white%';
 
-    ?d
-        converts data to a fractional number, receives a string, number::
+--
+?d
+--
 
-            $order_id = '123.345345';
-            db_query('SELECT * FROM ?:orders WHERE order_id = ?d', $order_id);
+This placeholder converts data to a fractional number.
 
-        Converts to:
+* Accepted data: *string*, *number*
 
-        .. code-block:: mysql
+* Example usage::
 
-            SELECT * FROM cscart_orders WHERE order_id = '123.35';
+    $order_id = '123.345345';
+    db_query('SELECT * FROM ?:orders WHERE order_id = ?d', $order_id);
 
-    ?a
-        prepares data to be used in the structure IN () as a set of strings, receives a string, number, array::
+* Resulting query:
 
-            $order_id = '123';
-            db_query('SELECT * FROM ?:orders WHERE order_id IN (?a)', $order_id);
+  .. code-block:: mysql
+
+      SELECT * FROM cscart_orders WHERE order_id = '123.35';
+
+--
+?a
+--
+
+This placeholder prepares data to be used in the ``IN ()`` structure  as a set of strings.
+
+* Accepted data: *string*, *number*, *array*
+
+* Example usage::
+
+    $product_codes = array('EAN123', 'EAN234');
+    db_query('SELECT * FROM ?:products WHERE product_code IN (?a)', $product_codes);
  
-        Converts to:
+* Resulting query:
 
-        .. code-block:: mysql
+  .. code-block:: mysql
         
-            SELECT * FROM cscart_orders WHERE order_id IN ('123');
+      SELECT * FROM cscart_products WHERE product_code IN ('EAN123', 'EAN234');
 
-    ?n
-        prepares data to be used in the structure IN () as a set of integers, receives a string, number, array::
+--
+?n
+--
 
-            $order_id = '123.45';
-            db_query('SELECT * FROM ?:orders WHERE order_id IN (?n)', $order_id);
+This placeholder prepares data to be used in the ``IN ()`` structure  as a set of integers. 
 
-        Converts to:
+* Accepted data: *string*, *number*, *array*
 
-        .. code-block: mysql
+* Example usage::
+
+    $order_id = '123.45';
+    db_query('SELECT * FROM ?:orders WHERE order_id IN (?n)', $order_id);
+
+* Resulting query:
+
+  .. code-block:: mysql
         
-            SELECT * FROM cscart_orders WHERE order_id IN (123);
+      SELECT * FROM cscart_orders WHERE order_id IN (123);
 
-    ?p
-        inserts a prepared value::
+--
+?p
+--
 
-            $order_id = 'order_id = 4';
-            db_query('SELECT * FROM ?:orders WHERE ?p', $order_id);
+This placeholder inserts a prepared value::
 
-        Converts to:
+* Example usage::
 
-        .. code-block:: mysql
+    $order_id = 'order_id = 4';
+    db_query('SELECT * FROM ?:orders WHERE ?p', $order_id);
 
-            SELECT * FROM cscart_orders WHERE order_id = 4;
+* Resulting query:
 
-    ?w
-        prepares data to be used in the structure WHERE, receives an array::
-	
-            $data = array (
-                'payment_id' => 5,
-                'order_id' => 3
-            );
+  .. code-block:: mysql
+
+      SELECT * FROM cscart_orders WHERE order_id = 4;
+
+--    
+?w
+--
+
+This placeholder prepares data to be used in the ``WHERE`` structure.
+
+* Accepted data: *array*
+
+* Example usage::
+
+    $data = array (
+        'payment_id' => 5,
+        'order_id' => 3
+    );
+
+    db_query('SELECT * FROM ?:orders WHERE ?w', $data);
  
-            db_query('SELECT * FROM ?:orders WHERE ?w', $data);
- 
-        Converts to:
+* Resulting query:
 
-        .. code-block:: mysql
+  .. code-block:: mysql
         
-            SELECT * cscart_orders WHERE payment_id = '5' AND order_id = '3';
+      SELECT * cscart_orders WHERE payment_id = '5' AND order_id = '3';
 
-    ?f
-        checks whether the variable value is a valid field name, if not returns an empty string::
+--
+?f
+--
 
-            $data = 'payment@id';
+This placeholder checks whether the value of the variable is a valid field name. If not, it returns an empty string.
+
+* Example usage::
+
+    $data = 'payment@id';
    
-            db_query('SELECT * FROM ?:orders WHERE ?f = 5', $data);
+    db_query('SELECT * FROM ?:orders WHERE ?f = 5', $data);
 
-        Converts to:
+* Resulting query:
 
-        .. code-block:: mysql
+  .. code-block:: mysql
         
-            SELECT * FROM cscart_orders WHERE  = 5;
+      SELECT * FROM cscart_orders WHERE  = 5;
 
-    ?m
-        multi insert::
+--
+?m
+--
 
-            $data = array(
-                array(
-                    'payment_id' => 5,
-                    'order_id' => 3
-                ),
-                array(
-                    'payment_id' => 5,
-                    'order_id' => 4
-                ),
-            );
+This placeholder allows to insert multiple new records in a table.
+
+* Example usage::
+
+    $data = array(
+        array(
+            'payment_id' => 5,
+            'order_id' => 3
+        ),
+        array(
+            'payment_id' => 5,
+            'order_id' => 4
+        ),
+    );
    
-            db_query('INSERT INTO ?:orders ?m', $data);
+    db_query('INSERT INTO ?:orders ?m', $data);
 
-        Converts to:
+* Resulting query:
 
-        .. code-block:: mysql
+  .. code-block:: mysql
         
-            INSERT INTO cscart_orders (payment_id, order_id) VALUES ('5', '3'),('5', '4');
+      INSERT INTO cscart_orders (payment_id, order_id) VALUES ('5', '3'),('5', '4');
