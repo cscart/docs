@@ -85,14 +85,14 @@ This placeholder converts data to a *string* (adds slashes).
 
 * Example usage::
 
-    $order_id = 'adasd';
-    db_query('SELECT * FROM ?:orders WHERE order_id = ?s', $order_id);
+    $product_code = 'adasd';
+    db_query('SELECT * FROM ?:products WHERE product_code = ?s', $product_code);
 
 * Resulting query:
 
   .. code-block:: mysql
 
-      SELECT * FROM cscart_orders WHERE order_id = 'foo';
+      SELECT * FROM cscart_products WHERE product_code = 'adasd';
 
 --
 ?l
