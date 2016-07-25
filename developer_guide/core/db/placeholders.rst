@@ -4,7 +4,7 @@ Using Placeholders to Build Database Queries
 
 Database queries in CS-Cart/Multi-Vendor are formed with the help of placeholders.
 
-Different placeholders serve different purposes. For example, when you refer to database fields with integer values (``order_id``, ``product_id``, etc.),  use the **i** or **?n** placeholders. If a field can store text values, use **?s** and **?a** instead.
+Different placeholders serve different purposes. For example, when you refer to database fields with integer values (``order_id``, ``product_id``, etc.),  use the **?i** or **?n** placeholders. If a field can store text values, use **?s** and **?a** instead.
 
 ======================
 Available Placeholders
