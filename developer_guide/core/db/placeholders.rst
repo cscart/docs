@@ -4,7 +4,7 @@ Using Placeholders to Build Database Queries
 
 Database queries in CS-Cart/Multi-Vendor are formed with the help of placeholders.
 
-Different placeholders serve different purposes. For example, when you refer to database fields with integer values (``order_id``, ``product_id``, etc.),  use the **?i** or **?n** placeholders. If a field can store text values, use **?s** and **?a** instead.
+Different placeholders serve different purposes. For example, when you refer to database fields with integer values (``order_id``, ``product_id``, etc.),  use the **i** or **?n** placeholders. If a field can store text values, use **?s** and **?a** instead.
 
 ======================
 Available Placeholders
@@ -123,14 +123,14 @@ This placeholder converts data to a fractional number.
 
 * Example usage::
 
-    $order_id = '123.345345';
-    db_query('SELECT * FROM ?:orders WHERE order_id = ?d', $order_id);
+    $list_price = '123.345345';
+    db_query('SELECT * FROM ?:products WHERE list_price = ?d', $list_price);
 
 * Resulting query:
 
   .. code-block:: mysql
 
-      SELECT * FROM cscart_orders WHERE order_id = '123.35';
+      SELECT * FROM cscart_products WHERE list_price = '123.35';
 
 --
 ?a
@@ -210,6 +210,68 @@ This placeholder prepares data to be used in the ``WHERE`` structure.
         
       SELECT * cscart_orders WHERE payment_id = '5' AND order_id = '3';
 
+"""""""""
+Operators
+"""""""""
+
+The **?w** placeholder supports the following operators: ``=``, ``!=``, ``>``, ``<``, ``<=``, ``>=``, ``<>``, ``LIKE``, ``NOT LIKE``, ``IN``, ``NOT IN``, ``NULL``.
+
+This is the structure of the accepted array::
+
+  $data = array (
+      field => value,
+      array(field, operator, value)
+  );
+
+* ``field`` is the name of the field in the table. 
+* ``value`` is the value of the condition.
+* ``operator`` is the condition operator.
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 10
+
+    *   -   Operator
+        -   Required type of ``value``
+    *   -   ``NOT IN``, ``NOT LIKE``
+        -   *Array*
+    *   -   ``NULL``
+        -   *Boolean*
+
+The array passed as ``key => value`` is extended by the following rules:
+    
+* If ``value`` is *null*, the ``NULL`` operator with ``value = true`` will be used.
+
+* If ``value`` is an array, the ``IN`` operator will be used.
+
+* In any other cases the ``=`` operator will be used.
+
+For example::
+
+  $data = array(
+      'field1' => 100,
+      'field2' => '200',
+      'field3' => null,
+      'field4' => array(100, 'value'),
+      array("field5", "<=", 200),
+      array("field6", "NOT IN", array(100, 'value')),
+      array('field7', '!=', 300),
+      array("field8", "NULL", false)
+  );
+
+  db_query('SELECT * FROM ?:orders WHERE ?w', $data);
+
+Resulting query:
+
+.. code-block:: mysql
+
+    SELECT * cscart_orders
+        WHERE
+            `field1` = 100 AND `field2` = 200
+            AND `field3` IS NULL AND `field4` IN (100, 'value')
+            AND `field5` <= 200 AND `field6` NOT IN (100, 'value')
+            AND `field7` != 300 AND `field8` IS NOT NULL
+
 --
 ?f
 --
@@ -227,6 +289,7 @@ This placeholder checks whether the value of the variable is a valid field name.
   .. code-block:: mysql
         
       SELECT * FROM cscart_orders WHERE  = 5;
+
 
 --
 ?m
