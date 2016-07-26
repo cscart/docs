@@ -151,6 +151,8 @@ Now, if something goes wrong, you should see an error message with the path to t
     :align: center
     :alt: A wrong SQL query results in the SERVICE UNAVAILABLE page.
 
+.. _design-and-themes-repository:
+
 **Development Mode** has another useful feature for add-on developers.
 
 CS-Cart stores the **CSS** and **TPL** files of the installed add-ons in the **design/themes** directory. Normally CS-Cart deletes these files when the add-on is uninstalled. If the add-on is installed again, these files are taken from **var/themes_repository**.
