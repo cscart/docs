@@ -66,7 +66,7 @@ Example of the Template Settings File
 
     {** template-description:tmpl_modern **}
     {* The line above means that the name of the template will be stored 
-    in the language variable called _tmpl_modern *}
+    in the language variable called tmpl_modern *}
   
     {* Below are the location and settings of the template. *}
     {include file="addons/my_changes/blocks/list_templates/modern_list.tpl" 
