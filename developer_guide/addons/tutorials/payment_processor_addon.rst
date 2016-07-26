@@ -129,7 +129,7 @@ Let’s study the processes that take place before and after the payment process
 
   After that the function performs various checks required before creating the order. Then the function creates the order itself, which has the **Incomplete** status. This status is referred to by its letter code ``N`` in the database. 
 
-* The logic of the payment process initiation begins with calling the ``fn_start_payment()`` function. When this function is run, important variables are declared. This variables can later be used in the payment processor script:
+* The logic of the payment process initiation begins with calling the ``fn_start_payment()`` function. When this function is run, important variables are declared. These variables can later be used in the payment processor script:
 
   * **$order_id** *(integer)*—the unique identifier of the created order.
 

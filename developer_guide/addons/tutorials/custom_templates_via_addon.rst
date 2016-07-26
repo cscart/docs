@@ -56,7 +56,7 @@ It’s better to copy one of the existing product list templates from *templates
 
 .. hint::
 
-    We suggest you copy the file of an existing template is to minimize the risk of syntax errors.
+    We suggest you copy the file of an existing template to minimize the risk of syntax errors.
 
 -------------------------------------
 Example of the Template Settings File
