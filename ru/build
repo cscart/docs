@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+# fetch current branch name 
+BRANCH=`git branch --no-color | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
+
+sphinx-build -aE . _build/html/$BRANCH

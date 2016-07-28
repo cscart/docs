@@ -1,0 +1,9 @@
+manifest.json
+{
+    "title": "Tutorial theme",
+    "description": "Tutorial Theme especially designed for this tutorials.",
+    "logo": "media/images/cart.png",
+    "developer": "Simtech",
+    "favicon": "media/images/icons/favicon.ico",
+    "parent_theme": "responsive"
+}

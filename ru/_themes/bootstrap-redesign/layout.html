@@ -1,0 +1,180 @@
+{% if theme_bootstrap_version == "3" %}
+  {% set bootstrap_version, bootstrap_additional_css, navbar_version = "3.0.0", "theme", "" %}
+  {% set bs_span_prefix = "col-md-" %}
+ {% if theme_bootswatch_theme %}
+  {% set css_files = css_files + [
+      '//netdna.bootstrapcdn.com/bootswatch/' + bootstrap_version + '/' + theme_bootswatch_theme + '/bootstrap.min.css',
+      '_static/bootstrap-sphinx.css'
+    ]
+  %}
+ {% else %}
+  {% set css_files = [
+      '_static/bootstrap-' + bootstrap_version + '/css/bootstrap.min.css'
+    ] + css_files
+  %}
+  {% set css_files = css_files + [
+      '_static/bootstrap-' + bootstrap_version + '/css/bootstrap-' + bootstrap_additional_css + '.min.css',
+      '_static/bootstrap-sphinx.css'
+    ]
+  %}
+ {% endif %}
+{% else %}
+  {% set bootstrap_version, bootstrap_additional_css, navbar_version = "2.3.2", "responsive", "-2" %}
+  {% set bs_span_prefix = "span" %}
+  {% set css_files = [
+      '_static/bootstrap-' + bootstrap_version + '/css/bootstrap.min.css'
+    ] + css_files
+  %}
+  {% if theme_bootswatch_theme %}
+  {% set css_files = css_files + [
+
+    ]
+  %}
+  {% endif %}
+  {% set css_files = css_files + [
+      '_static/bootstrap-sphinx.css',
+            '_static/bootstrap-custom.css'
+    ]
+  %}
+{% endif %}
+
+{% extends "basic/layout.html" %}
+
+  {% set script_files = script_files + [
+    '_static/js/jquery-1.9.1.min.js',
+    '_static/js/jquery-fix.js',
+    '_static/bootstrap-' + bootstrap_version + '/js/bootstrap.min.js',
+    '_static/bootstrap-sphinx.js',
+    '_static/js/custom.js'
+  ]
+%}
+{%- set render_sidebar = (not embedded) and (not theme_nosidebar|tobool) and sidebars %}
+
+{%- set bs_content_width = render_sidebar and "9" or "12"%}
+
+
+{%- block doctype -%}
+<!DOCTYPE html>
+{%- endblock %}
+
+{# Sidebar: Rework into our Bootstrap nav section. #}
+{% macro navBar() %}
+{% include "navbar" + navbar_version + ".html" %}
+{% endmacro %}
+
+{% if theme_bootstrap_version == "3" %}
+  {%- macro bsidebar() %}
+      {%- if render_sidebar %}
+      <div class="{{ bs_span_prefix }}3">
+        <div id="sidebar" class="bs-sidenav" role="complementary">
+          {%- for sidebartemplate in sidebars %}
+            {%- include sidebartemplate %}
+          {%- endfor %}
+        </div>
+      </div>
+      {%- endif %}
+  {%- endmacro %}
+{% else %}
+  {%- macro bsidebar() %}
+      {%- if render_sidebar %}
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 col-lg-pull-9 col-md-pull-9 col-sm-pull-8">
+            {% include "navbarsearchbox.html" %}
+
+              <ul class="last simple sidebar-tabs">
+                  <li><a class="reference external version {% if version == '4.1' %}active{% endif %}" href="{{ pathto('../4.1.x/index') }}">4.1.x</a></li>
+                  <li><a class="reference external version {% if version == '4.2' %}active{% endif %}" href="{{ pathto('../4.2.x/index') }}">4.2.x</a></li>
+                  <li><a class="reference external version {% if version == '4.3' %}active{% endif %}" href="{{ pathto('../4.3.x/index') }}">4.3.x</a></li>
+                  <li><a class="reference external version {% if version == '4.4' %}active{% endif %}" href="{{ pathto('../4.4.x/index') }}">4.4.x</a></li>
+              </ul>
+        <div id="sidebar " class="sidebar-list">
+          {%- for sidebartemplate in sidebars %}
+            {%- include sidebartemplate %}
+          {%- endfor %}
+        </div>
+
+      </div>
+      {%- endif %}
+  {%- endmacro %}
+{% endif %}
+
+
+{%- block extrahead %}
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content="width=device-width, initial-scale=1.0,maximum-scale=2.0,user-scalable=1" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name='yandex-verification' content='60c9bf79992d7c69' />
+<meta name="google-site-verification" content="iWsiwspq4pIaaXV-yrzLdgNFIs4UirMlgLbtnEPQR7k" />
+<meta name="description" content="Техническая документация, ответы на вопросы.">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+{% endblock %}
+
+{# Silence the sidebar's, relbar's #}
+{% block header %}{% endblock %}
+{% block relbar1 %}{% endblock %}
+{% block relbar2 %}{% endblock %}
+{% block sidebarsourcelink %}{% endblock %}
+
+{%- block content %}
+{{ navBar() }}
+<div class="container-fluid content-wrapper">
+  <div class="row">
+    
+    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 col-lg-push-3 col-md-push-3 col-sm-push-4 text-block">
+    <div class="row">
+      <div class=" col-md-12 col-sm-12 col-xs-12 text-navigation">
+          {% if prev %}
+            <a href={{ prev.link }} class="prev"> <span class="icon-ar-prev"></span>Предыдущая статья</a>
+          
+        {% endif %}
+        {% if next %}
+            
+                <a href={{ next.link }} class="next"> Следующая статья<span class="icon-ar-next"></span></a>
+            
+        {% endif %}
+      </div>
+    </div>
+    <article>
+      {% block body %}
+
+      {% endblock %}
+    </article>
+    </div>
+    {%- block sidebar1 %}{{ bsidebar() }}{% endblock %}
+    {% block sidebar2 %} {# possible location for sidebar #} {% endblock %}
+  </div>
+</div>
+<!--
+<div class="container">
+  <a href="http://www.youtube.com/c/cscartru-school" target="_blank" class="lessons_banner container">
+    Рекомендуем ознакомиться с видеоуроками по CS-Cart на нашем Youtube-канале.
+  </a>
+</div>
+-->
+
+{%- endblock %}
+
+
+{%- block footer %}
+<div class="footer-full">
+    <div class="footer container-fluid" id="tygh_footer">
+        <div class="row">
+          {% include "footer-menu.html" %}
+
+
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <div class="container-fluid">
+        <div class="row">{% include "footer-copyright.html" %}</div>
+    </div>
+</div>
+
+    {% include "metrika.html" %}
+
+    {% include "analytics.html" %}
+
+
+{%- endblock %}

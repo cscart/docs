@@ -1,0 +1,32 @@
+Методы доставки
+---------------
+
+Методы доставки в CS-Cart позволяют автоматический расчитывать стоимость доставки в зависимости от:
+
+*   Адреса доставки;
+
+*   Стоимости заказа;
+
+*   Веса товаров в заказе;
+
+*   Количества товаров в заказе;
+
+*   Индивидуальных настроек каждого товара;
+
+Покупателю будут предложены методы доставки, которые подходят для его заказа.
+
+Подробно:
+
+.. toctree::
+    :maxdepth: 3
+
+    shipping_methods/add_shipping_method
+    shipping_on_frontend
+    product_shipping_settings
+    locations/index
+    address
+    global_shipping_settings
+    shipping_methods/realtime_shipping_methods/index
+
+.. fancybox:: img/shippings_014.png
+    :alt: Методы доставки

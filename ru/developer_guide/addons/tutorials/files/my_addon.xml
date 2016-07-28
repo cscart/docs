@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<addon scheme="2.0">
+    <id>my_addon</id>
+    <name>My addon</name>
+    <description>Simple addon</description>
+    <version>1.0</version>
+    <priority>4294967294</priority>
+    <position>0</position>
+    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+    <default_language>en</default_language>
+    <translations>
+        <item for="name" lang="ru">Мой модуль</item>
+        <item for="description" lang="ru">Простой модуль</item>
+    </translations>
+</addon>
