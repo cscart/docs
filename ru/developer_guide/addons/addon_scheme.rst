@@ -1,6 +1,6 @@
-********************************
-addon.xml — главный файла модуля 
-********************************
+*******************************
+addon.xml — главный файл модуля 
+*******************************
 
 Каждый модуль в CS-Cart имеет (должен иметь) файл addon.xml, который определяет ID и параметры работы модуля.
 
@@ -72,3 +72,14 @@ addon.xml — главный файла модуля
 
     scheme/scheme2.0_structure
     scheme/scheme3.0_structure
+
+==================
+Работа с addon.xml
+==================
+
+.. toctree::
+    :maxdepth: 2
+    :titlesonly:
+
+    scheme/addon_compatibility
+    scheme/addon_dependencies

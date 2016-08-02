@@ -6,5 +6,6 @@
     :maxdepth: 3
     :glob:
 
+    html_css
     php
-    js
+    jquery

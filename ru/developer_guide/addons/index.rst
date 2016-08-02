@@ -1,12 +1,14 @@
-*************
-Разработчикам
-*************
+******************
+Разработка модулей
+******************
 
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
     :glob:
 
+    directories
     hooking/index
     addon_scheme
+    addon_management
     */index
