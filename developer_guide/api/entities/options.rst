@@ -498,7 +498,7 @@ Pass the fields with option details in the HTTP request body in accordance with 
     }
   }
 
-This request updates the types of icons the variants of the option with ``option_id=27``. When we first created this option (*Packaging*), it had the *Radiogroup* type and 2 variants: *None* and *Gift Wrap*.
+This request changes the variant icons and variant types of the option with ``option_id=27``. When we first created this option (*Packaging*), it had the *Radiogroup* type and 2 variants: *None* and *Gift Wrap*.
 
 Here we change the option type to *Select box*—it supports variants as well. We didn’t pass *None* this time, so this variant is removed. *Gift wrap* doesn’t change. We also add a new variant called *Present box*. Choosing this variant will increase the price of the product by 20%.
 
