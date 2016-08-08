@@ -410,6 +410,8 @@ Pass the fields with the option details in the HTTP request body in accordance w
 
 * **inventory**—determines if the option is taken into account when forming the product inventory. Pass ``Y`` for *Yes* and ``N`` for *No*.
 
+* **main_pair**—an array with the icons of the option variants.
+
 * Any other fields that apply to the option of a particular type.
 
 **Example JSON:**
@@ -422,6 +424,14 @@ Pass the fields with the option details in the HTTP request body in accordance w
     "option_type": "R",
     "required": "Y",
     "inventory": "N",
+    "main_pair": {
+       "icon": {
+          "image_path": {
+             "1": "http://example.com/image1.jpg", 
+             "2": "http://example.com/image2.jpg"
+          }
+       }
+    },
     "variants": {
         "1": {
           "variant_name": "None"
@@ -440,7 +450,7 @@ This request creates a new option for the product with ``product_id=12``:
 
 * It has the *Radiogroup* type.
  
-* It has 2 variants:
+* It has 2 variants, both with icons. These variants are:
 
   * **None**—doesn’t change the price of the product.
 
@@ -468,6 +478,14 @@ Pass the fields with option details in the HTTP request body in accordance with 
 
   {
     "option_type": "S",
+    "main_pair": {
+        "icon": {
+          "image_path": {
+            "2": "http://example.com/image3.jpg", 
+            "3": "http://example.com/image4.jpg"
+          }
+        }
+    },
     "variants": {
         "2": {
           "variant_name": "Gift wrap"       
@@ -480,7 +498,7 @@ Pass the fields with option details in the HTTP request body in accordance with 
     }
   }
 
-This request changes the type and variants of the option with ``option_id=27``. When we first created this option (*Packaging*), it had the *Radiogroup* type and 2 variants: *None* and *Gift Wrap*.
+This request changes the variant icons and variant types of the option with ``option_id=27``. When we first created this option (*Packaging*), it had the *Radiogroup* type and 2 variants: *None* and *Gift Wrap*.
 
 Here we change the option type to *Select box*—it supports variants as well. We didn’t pass *None* this time, so this variant is removed. *Gift wrap* doesn’t change. We also add a new variant called *Present box*. Choosing this variant will increase the price of the product by 20%.
 

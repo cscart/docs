@@ -7,3 +7,4 @@
     :glob:
 
     theme_tutorial/index
+    media

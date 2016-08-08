@@ -29,6 +29,6 @@
     controllers/index
     front-end/index
     db/index
-    application
+    *
     getting_started/configuring_environment
-
+    ../../upgrade/upgrade

@@ -255,6 +255,10 @@ If the feature couldn’t be created, you will receive **HTTP/1.1 400 Bad Reques
 **Required fields:** *company_id*, *description*, *feature_type*
 
 **Available fields:** *company_id*, *feature_type*, *parent_id*, *display_on_product*, *display_on_catalog*, *display_on_header*, *description*, *lang_code*, *prefix*, *suffix*, *categories_path*, *full_description*, *status*, *comparison*, *position*, *variants*
+
+.. important::
+
+    Currently you can't set the *image_pair* for a product feature via REST API.
  
 .. code-block:: bash
 
@@ -276,6 +280,10 @@ Send the data in the body of the HTTP request. The data should comply with the `
 **Required fields:** *company_id*, *description*, *feature_type*
 
 **Available fields:** *company_id*, *feature_type*, *parent_id*, *display_on_product*, *display_on_catalog*, *display_on_header*, *description*, *lang_code*, *prefix*, *suffix*, *categories_path*, *full_description*, *status*, *comparison*, *position*, *variants*
+
+.. important::
+
+    Currently you can't set the *image_pair* for a product feature via REST API.
 
 .. code-block:: bash
 

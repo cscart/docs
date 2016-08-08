@@ -14,3 +14,4 @@
     payment_methods/index
     shipping_and_taxes/index
     import_export/index
+    users/index

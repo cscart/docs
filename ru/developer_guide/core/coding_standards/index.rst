@@ -9,3 +9,4 @@
     html_css
     php
     jquery
+    hooks

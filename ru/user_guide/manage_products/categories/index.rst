@@ -1,5 +1,5 @@
 *********
-Front-end
+Категории
 *********
 
 .. toctree::
@@ -7,4 +7,3 @@ Front-end
     :glob:
 
     *
-    */index
