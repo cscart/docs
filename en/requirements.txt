@@ -1,6 +1,0 @@
-# Usage:
-#
-# pip install -r requirements.txt
-
-Sphinx
-#sphinxcontrib-fancybox
