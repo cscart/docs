@@ -1,6 +1,6 @@
-***************************
-Product Option Combinations
-***************************
+******************************
+Комбинации опций: combinations
+******************************
 
 .. contents::
    :backlinks: none
@@ -8,20 +8,20 @@ Product Option Combinations
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 20
+    :widths: 25 30
     
     *   -   Ресурс 
         -   Описание
     *   -   GET /api/2.0/payments
-        -   Получить список доступных комбинаций (требуется product_id)
+        -   Получить список доступных комбинаций опций (требуется product_id)
     *   -   GET /api/2.0/payments/:id
-        -   Получить данные о комбинации
+        -   Получить данные о комбинации опций
     *   -   POST /api/2.0/payments/
-        -   Создать новую комбинацию
+        -   Создать новую комбинацию опций
     *   -   PUT /api/2.0/payments/:id 
-        -   Обновить комбинацию
+        -   Обновить комбинацию опций
     *   -   DELETE /api/2.0/payments/:id
-        -   Удалить комбинацию
+        -   Удалить комбинацию опций
 
 ==========================
 GET /api/2.0/combinations/
@@ -31,7 +31,10 @@ GET /api/2.0/combinations/
 
   curl -X GET 'http://example.com/api/2.0/combinations/?product_id=12'
 
-**product_id** - обязательное поле
+
+.. important::
+
+    **product_id** - обязательное поле.
 
 ::
 

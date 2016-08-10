@@ -1,6 +1,6 @@
-*************************
-Product Option Exceptions
-*************************
+****************************************************
+Разрешенные/запрещенные комбинации опций: exceptions
+****************************************************
 
 .. contents::
    :backlinks: none
@@ -8,7 +8,7 @@ Product Option Exceptions
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 20
+    :widths: 25 30
     
     *   -   Ресурс 
         -   Описание
@@ -23,6 +23,10 @@ Product Option Exceptions
     *   -   DELETE /api/2.0/exceptions/:id
         -   Удалить исключение
 
+.. note::
+
+    :doc:`В этой статье <../../../user_guide/manage_products/options/exceptions>` описано, что такое исключения. Тип исключения зависит от параметра товара ``exceptions_type``, который меняется через сущность :doc:`products <products>`. Значения ``exceptions_type``: *A* — разрешение, *F* — запрещение.
+
 ========================
 GET /api/2.0/exceptions/
 ========================
@@ -31,8 +35,9 @@ GET /api/2.0/exceptions/
 
   curl -X GET 'http://example.com/api/2.0/exceptions/?product_id=12'
 
+.. important::
 
-**product_id** - обязательное поле
+    **product_id** - обязательное поле.
 
 ::
 

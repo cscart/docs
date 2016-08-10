@@ -1,6 +1,6 @@
-****************
-Shipping Methods
-****************
+***************************
+Способы доставки: shippings
+***************************
 
 .. contents::
    :backlinks: none
@@ -8,7 +8,7 @@ Shipping Methods
 
 .. list-table::
     :header-rows: 1
-    :widths: 20 30
+    :widths: 25 30
     
     *   -   Ресурс 
         -   Описание

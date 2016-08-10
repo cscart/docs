@@ -1,6 +1,6 @@
-***************
-Product Options
-***************
+**********************
+Опции товаров: options
+**********************
 
 .. contents::
    :backlinks: none
@@ -8,14 +8,14 @@ Product Options
 
 .. list-table::
     :header-rows: 1
-    :widths: 20 30
+    :widths: 10 15
     
     *   -   Ресурс 
         -   Описание
     *   -   GET /api/2.0/options
-        -   Получить список доступных опций (требуется ``product_id``)
+        -   Получить список опций товара (требуется ``product_id``)
     *   -   GET /api/2.0/options/:id
-        -   Получить данные о исключении
+        -   Получить данные о конкретной опции
     *   -   POST /api/2.0/options/
         -   Создать новое опцию
     *   -   PUT /api/2.0/options/:id
@@ -31,8 +31,9 @@ GET /api/2.0/options/
 
   curl -X GET 'http://example.com/api/2.0/options/?product_id=12'
 
+.. important::
 
-**product_id** - обязательное поле
+    **product_id** - обязательное поле.
 
 ::
 

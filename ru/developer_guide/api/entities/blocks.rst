@@ -1,6 +1,6 @@
-******
-Blocks
-******
+*************
+Блоки: blocks
+*************
 
 .. contents::
    :backlinks: none
@@ -8,7 +8,7 @@ Blocks
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 10
+    :widths: 25 30
 
     *   -   Ресурс 
         -   Описание
@@ -145,9 +145,9 @@ POST /blocks/
 
 Возможные варианты для **type**: *menu*, *my_account*, *our_brands*, *cart_content*, *breadcrumbs*, *template*, *main*, *html_block*, *smarty_block*, *checkout*, *products*, *categories*, *pages*, *payment_methods*, *shipping_methods*, *currencies*, *languages*, *product_filters*. 
 
-Есть еще дополнительные типы блоков для MVE: *vendor_information*, *vendor_logo*, *vendor_categories*, *vendor_search*.
+В Multi-Vendor есть ещё и другие варианты для **type**: *vendor_information*, *vendor_logo*, *vendor_categories*, *vendor_search*.
 
-Передаваемые параметры полностью соответствуют ключу ``block_data`` передаваемому через форму в панели администратора на странице редактирования блока. Детали можно смотреть через дебаггер браузера.
+Передаваемые параметры полностью соответствуют ключу ``block_data``, передаваемому через форму в панели администратора на странице редактирования блока. Детали можно смотреть через дебаггер браузера.
 
 ::
 
@@ -223,5 +223,3 @@ DELETE /blocks/:id
 ::
 
   curl -X DELETE 'http://example.com/api/2.0/blocks/37'
-
-

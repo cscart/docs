@@ -1,6 +1,6 @@
-****************
-Product Features
-****************
+********************************
+Характеристики товаров: features
+********************************
 
 .. contents::
    :backlinks: none
@@ -8,14 +8,14 @@ Product Features
 
 .. list-table::
     :header-rows: 1
-    :widths: 20 30
+    :widths: 25 30
     
     *   -   Ресурс 
         -   Описание
     *   -   GET /features
         -   Получить список характеристик
     *   -   GET /features/:id
-        -   Получить данные характеристик
+        -   Получить данные характеристики
     *   -   POST /features/
         -   Создать характеристику
     *   -   PUT /features/:id

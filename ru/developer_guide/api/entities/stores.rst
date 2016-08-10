@@ -1,6 +1,6 @@
-******
-Stores
-******
+***************
+Витрины: stores
+***************
 
 .. contents::
    :backlinks: none
@@ -8,7 +8,7 @@ Stores
 
 .. list-table::
     :header-rows: 1
-    :widths: 20 30
+    :widths: 25 30
     
     *   -   Ресурс 
         -   Описание

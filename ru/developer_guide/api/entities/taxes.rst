@@ -1,6 +1,6 @@
-*****
-Taxes
-*****
+*************
+Налоги: taxes
+*************
 
 .. contents::
    :backlinks: none
@@ -8,7 +8,7 @@ Taxes
 
 .. list-table::
     :header-rows: 1
-    :widths: 20 30
+    :widths: 25 30
     
     *   -   Ресурс 
         -   Описание
