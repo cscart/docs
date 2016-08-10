@@ -21,14 +21,23 @@
 
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 3
     :glob:
 
-    coding_standards/index
     structure/index
+    coding_standards/index
+    getting_started/configuring_environment
     controllers/index
     front-end/index
     db/index
-    *
-    getting_started/configuring_environment
+    languages
+    multiple_storefronts
+    sharing_schema
+    images_subsystem
+    options_and_exceptions
+    features_and_filters
+    application
+    last_view
+    routing
+    schemes
     ../../upgrade/upgrade

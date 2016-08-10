@@ -18,7 +18,7 @@
 Базовый шаблон
 ==============
 
-.. code-block:: php
+::
 
     namespace Tygh\Api\Entities;
 
