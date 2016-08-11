@@ -33,10 +33,13 @@
     languages
     multiple_storefronts
     sharing_schema
+    shipping_methods/shipping_multithreading
+    security/index
     images_subsystem
     options_and_exceptions
     features_and_filters
     application
+    registry
     last_view
     routing
     schemes
