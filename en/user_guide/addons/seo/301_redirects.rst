@@ -6,7 +6,7 @@ When you install the **SEO** add-on, the **301 redirects** tab appeares in the *
 
 .. important ::
 
-	Redirect from an object will work only if this object was not found.
+    **A redirect from an object will work only if this object was not found.** A disabled object still exists, even though it can't be viewed on the storefront. That's why the redirect from that object won't work. But if you delete the object or change its SEO name, the redirect will work.
 
 
 Redirects can be added to this list authomatically or manually:
