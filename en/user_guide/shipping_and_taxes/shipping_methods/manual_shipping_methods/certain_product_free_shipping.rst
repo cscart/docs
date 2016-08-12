@@ -20,7 +20,7 @@ How To: Set Free Shipping for a Certain Product
     :align: center
     :alt: Product editing page
 
-6. If you use CS-Cart & Multi-Vendor 4.3.5 or higher, you also need to configure the shipping method:
+6. Configure the shipping method:
 
    * Go to **Administration → Shipping & taxes → Shipping methods**.
 

@@ -26,17 +26,13 @@ To allow customers apply for a vendor account, complete the following steps:
 
    The text of the terms and conditions is stored the language variable called ``vendor_terms_n_conditions_content``. :doc:`Learn how to work with language variables <../../look_and_feel/languages/translate>`.
 
-.. note::
-
-    The terms and conditions for applying vendors first appeared in Multi-Vendor 4.3.7.
-
 .. image:: img/settings_vendors.png
     :align: center
     :alt: If you allow users to apply for vendor accounts, you can also make them accept terms and conditions
 
 4. Click the **Save** button.
 
-5. If you use Multi-Vendor 4.3.6 or higher, go to **Add-ons → Manage add-ons**, click **Vendor commissions** and enable the **Show "Apply for a vendor" link in "My account menu"** setting.
+5. Go to **Add-ons → Manage add-ons**, click **Vendor commissions** and enable the **Show "Apply for a vendor" link in "My account menu"** setting.
 
 =======================
 The Application Process
@@ -52,7 +48,7 @@ This link leads to the form that the customer must fill in to apply.
 
 .. important::
 
-   You can create the application link elsewhere manually. For example, you can create a :doc:`menu <../../look_and_feel/menus/index>` with an :doc:`item <../../look_and_feel/menus/menu_items>` that leads to ``dispatch=companies.apply_for_vendor``. This is useful when you use Multi-Vendor 4.3.6 or higher and disable or uninstall the **Vendor commissions** add-on.
+   You can create the application link elsewhere manually. For example, you can create a :doc:`menu <../../look_and_feel/menus/index>` with an :doc:`item <../../look_and_feel/menus/menu_items>` that leads to ``dispatch=companies.apply_for_vendor``. This is useful when you disable or uninstall the **Vendor commissions** add-on.
 
 
 .. image:: img/vendors_application_form.png

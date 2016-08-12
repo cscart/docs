@@ -20,10 +20,6 @@ Vendors can have one of the following statuses:
 
 * **Pending**—vendor's administrators can work in the Administration panel of the store, but the vendor's products don't appear in the store.
 
-.. important::
-
-    Before Multi-Vendor 4.3.6 you couldn't change the status of a vendor from *Active* or *Disabled* to *Pending*. **This restriction was removed in 4.3.6:** now store owners can pause a vendor's sales while allowing the vendor's administrators to access the Administration panel.
-
 .. image:: img/change_vendor_status.png
     :align: center
     :alt: You can change a vendor's status in the administration panel at any time.

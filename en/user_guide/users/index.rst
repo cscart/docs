@@ -21,7 +21,7 @@ CS-Cart has the following types of user accounts:
 
 * **Administrator**—can access both the storefront and the administration panel and manage and/or view the store contents and configuration.
 
-* **Customer**—can access the storefront and buy products in your store. Although the storefront is normally available to non-registered users as well, registered users are supposed to enjoy greater privileges. Besides, even registered users with a customer account may have different opportunities depending on the user group that they belong to (requires commercial license).
+* **Customer**—can access the storefront and buy products in your store. Although the storefront is normally available to non-registered users as well, registered users are supposed to enjoy greater privileges. Besides, even registered users with a customer account may have different opportunities depending on the user group that they belong to.
 
 * **Supplier**—cannot access the storefront or the administration panel. Supplier accounts are used in the database to flag products that belong to third-party providers.
  
@@ -45,7 +45,7 @@ When you search through the list of users with your mouse pointer, the **gear bu
 
 * **Act on behalf of**—takes you to the storefront as if you are logged in as the selected user.
 
-* **Points** (requires commercial license)—shows the customer's reward points log.
+* **Points**—shows the customer's reward points log.
 
 * **Edit**—allows you to the edit the user account.
 
@@ -83,7 +83,7 @@ The exact set of fields may vary depending on the account type and the profile c
 
     A user's shipping address and billing address can be different from each other.
 
-After the new account is created, click the **gear** button and choose **Edit** to configure additional parameters (requires commercial license).
+After the new account is created, click the **gear** button and choose **Edit** to configure additional parameters.
 
 * specify the customer's age on the **Add-ons** tab.
 

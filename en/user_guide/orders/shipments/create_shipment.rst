@@ -50,12 +50,8 @@ View Your Shipments
     :align: center
     :alt: You can view all the existing shipments under Orders → Shipments.
 
-2. Click the **gear** button of the desired shipment and choose **View** to see the details of the particular shipment.
-
-.. hint::
-
-    Before CS-Cart & Multi-Vendor 4.3.7 you couldn't edit shipments, you could only delete them. Beginning with version 4.3.7, you can edit the comments and the date of the shipment. Remember to click **Save changes** once you've done that.   
+2. Click the **gear** button of the desired shipment and choose **View** to see the details of the particular shipment. You can edit the comments and the date of the shipment. Remember to click **Save changes** once you've done that.   
 
 .. image:: img/shipment_details.png
     :align: center
-    :alt: Beginning with CS-Cart & Multi-Vendor 4.3.7, you can edit the comments and the date of the shipment.
+    :alt: You can edit the comments and the date of the shipment.

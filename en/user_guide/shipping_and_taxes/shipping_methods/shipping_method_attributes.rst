@@ -32,7 +32,7 @@ General
 *	**Shipping service** - Shipping service provider/carrier that will be in charge of delivering the order. This select box is available only if the rate calculation mode is set to **Realtime**.
 *	**Test** -  Click the **calculate shipping cost** link to see a special form to test the selected real-time shipping rate estimation service. Test estimation considers the weight that you specify in the form as well as the company (**Settings → Company**) and the default customer address (**Settings → General/Default location**).
 *	**Taxes** - Tax rates that apply to the shipping method.
-*	**User groups** (requires commercial license) - :doc:`User groups <../../users/user_groups/index>`, the members of which can choose this shipping method at checkout.
+*	**User groups** - :doc:`User groups <../../users/user_groups/index>`, the members of which can choose this shipping method at checkout.
 *	**Status** - Status of the shipping method: *Active* or *Disabled*.
 
 Configure

@@ -2,7 +2,7 @@
 Administrator Does Not Get Order Notifications E-mails
 ******************************************************
 
-*   Check whether the **Notify orders department** check box is enabled for the desired order status on the `Order statuses <http://docs.cs-cart.com/4.3.x/user_guide/orders/order_statuses/set_status.html>`_ page. It should be enabled in order to send the notifications to the store administrator.
+*   Check whether the **Notify orders department** check box is enabled for the desired order status on the `Order statuses <http://docs.cs-cart.com/4.4.x/user_guide/orders/order_statuses/set_status.html>`_ page. It should be enabled in order to send the notifications to the store administrator.
 *   Check whether the administrator e-mail is set up:
 
     *   In the Administration panel, go to **Settings → Company**.

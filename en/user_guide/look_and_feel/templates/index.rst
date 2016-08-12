@@ -35,4 +35,4 @@ Controls grouped under the gear button and the **+** button perform the followin
 *	**Create folder** - Creating a new folder.
 *	**Upload file** - Uploading a file to the opened directory.
 
-Learn more about the File editor `in the corresponding article <http://docs.cs-cart.com/4.3.x/developer_guide/tools/file_editor.html>`_.
+Learn more about the File editor `in the corresponding article <http://docs.cs-cart.com/4.4.x/developer_guide/tools/file_editor.html>`_.

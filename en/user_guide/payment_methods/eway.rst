@@ -18,14 +18,6 @@ How To: Set up eWAY in CS-Cart
     :align: center
     :alt: Name your payment method and select one of the two eWAY Rapid API processors.
 
-.. important::
-
-     **eWAY**, **eWAY Direct Payment** and **eWAY Shared Payment** have the **Deprecated** status starting from CS-Cart 4.3.5.
-
-     If your payment methods used any of those processors, we highly suggest you change the processor to **eWAY Direct Payment (Rapid API)** or **eWAY Responsive Shared (Rapid API)**. 
-
-     Remember to change the settings on the **Configure** tab after you select a new processor.
-
 4. Switch to the **Configure** tab and specify the eWAY settings:
 
    *     API Key and API Password (learn `how to set up a live eWAY API key and password <https://go.eway.io/s/article/How-do-I-setup-my-Live-eWAY-API-Key-and-Password>`_).

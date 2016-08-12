@@ -22,4 +22,4 @@ If a customer adds the main product to the cart and there are no required produc
 
 	Required products are not dependent on the main product quantity. So, if there is at least one required product in the cart, a purchase will be processed successfully.
 
-To add the suggested products, follow the instructions `here <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/blocks/related_products.html>`_.
+To add the suggested products, follow the instructions `here <http://docs.cs-cart.com/4.4.x/user_guide/look_and_feel/layouts/blocks/related_products.html>`_.

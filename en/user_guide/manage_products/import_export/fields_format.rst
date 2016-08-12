@@ -210,7 +210,7 @@ The full path to the file for the downloadable product.
 
 .. important::
 
-    EXAMPLE: */home/client/public_html/cscart-4.3.1/var/files/exim/backup/downloads/filename.pdf*
+    EXAMPLE: */home/client/public_html/cscart-4.4.1/var/files/exim/backup/downloads/filename.pdf*
 
 The file can be specified without a path (just its name) if you specify **Files directory** on the **Import products** page when importing. Please refer to the :doc:`Product Import <../import_export/product_import>` article. Several files must be delimited by a comma.
 
@@ -283,7 +283,7 @@ The full path to the product thumbnail image.
 
 .. important::
 
-    EXAMPLE: */home/client/public_html/cscart-4.3.1/var/files/exim/backup/images/thumbnail_image.jpg*
+    EXAMPLE: */home/client/public_html/cscart-4.4.1/var/files/exim/backup/images/thumbnail_image.jpg*
 
 The image file can be specified without a path (just its name) if you specify **Images directory** on the **Import products** page when importing. Please refer to the :doc:`Product Import <../import_export/product_import>` article.
 

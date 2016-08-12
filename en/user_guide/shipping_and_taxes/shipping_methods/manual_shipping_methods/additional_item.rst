@@ -5,7 +5,7 @@ How To: Set One Shipping Cost for the First Item and Another One for Each Additi
 *   In the Administration panel, go to **Administration → Shipping & Taxes → Shipping methods**.
 *   Create a new shipping method or choose the existing one and click on its name.
 *   On that page open the **Shipping charges** tab.
-*   Select the desired location in the **Show rates for location** box. If you don't see this checkbox, it means that you haven't defined any locations. Learn how to do it `here <http://docs.cs-cart.com/4.3.x/user_guide/shipping_and_taxes/locations/index.html>`_.
+*   Select the desired location in the **Show rates for location** box. If you don't see this checkbox, it means that you haven't defined any locations. Learn how to do it `here <http://docs.cs-cart.com/4.4.x/user_guide/shipping_and_taxes/locations/index.html>`_.
 *   In the **Cost dependencies** section, in the **More than $** input field enter 0 and into the input field next to it define the price for the first item (e.g. 4.50).
 *   Click the **Save** button.
 *   In the **Items dependencies** section, enter 0 into the **More than.. items** input field and additional charge for the first and each additional item (e.g. 1.50) into the input field next to it. Select the check box next to **Absolute ($)** in the row.

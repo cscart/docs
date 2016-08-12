@@ -13,7 +13,7 @@ How To: Set up CS-Cart with UPS
     :alt: UPS
 
 *   Open the **Configure** tab.
-*   Fill your UPS credentials in the `UPS Rates Access Key <http://docs.cs-cart.com/4.3.x/user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/ups_key.html>`_, **Username**, and **Password** fields. For testing purposes select the *Daily pickup* value in the **Pickup type**, the *Package* value in **Package type**, and enter *10* in each **Width**, **Height**, and **Length** fields.
+*   Fill your UPS credentials in the `UPS Rates Access Key <http://docs.cs-cart.com/4.4.x/user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/ups_key.html>`_, **Username**, and **Password** fields. For testing purposes select the *Daily pickup* value in the **Pickup type**, the *Package* value in **Package type**, and enter *10* in each **Width**, **Height**, and **Length** fields.
 *   Click the **Save** button to save the changes.
 
 .. image:: img/ups_02.png

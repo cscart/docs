@@ -32,23 +32,7 @@ Change the Categories Available to a Vendor
 Categories in a Vendor's Microstore
 ===================================
 
-Multi-Vendor has a feature called **vendor's microstore**, that shows the products of a specific vendor only.
-
--------------------------
-Before Multi-Vendor 4.3.6
--------------------------
-
-A vendor's microstore displayed all the categories available to the vendor. If the vendor had access to all categories, but didn't have products in some of them, those empty categories appeared in the microstore's menu.
-
-.. image:: img/empty_category.png
-    :align: center
-    :alt: Before Multi-Vendor 4.3.6 all categories the vendor had access to were displayed in the vendor's microstore.
-
-------------------------
-After Multi-Vendor 4.3.6
-------------------------
-
-Starting from Multi-Vendor 4.3.6, a vendor's microstore only displays the categories that have products.
+Multi-Vendor has a feature called **vendor's microstore**, that shows the products of a specific vendor only. A vendor's microstore only displays the categories that have products.
 
 .. important::
 

@@ -112,4 +112,4 @@ This is the list of all export options. Some of them appear only in specific sub
 
 .. note ::
 
-  `Here <http://docs.cs-cart.com/4.3.x/user_guide/manage_products/import_export/index.html>`_ you can read more about product Import/Export.
+  `Here <http://docs.cs-cart.com/4.4.x/user_guide/manage_products/import_export/index.html>`_ you can read more about product Import/Export.

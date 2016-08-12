@@ -34,6 +34,6 @@ PayPal logo settings
 Also Read
 *********
 
-*	`How To: Set PayPal in CS-Cart <http://docs.cs-cart.com/4.3.x/user_guide/payment_methods/paypal.html>`_
-*	`How To: Set up CS-Cart with PayPal Express <http://docs.cs-cart.com/4.3.x/user_guide/payment_methods/paypal_express.html>`_
-*	`How To: Set up CS-Cart with PayPal Pro <http://docs.cs-cart.com/4.3.x/user_guide/payment_methods/paypalpro.html>`_
+*	`How To: Set PayPal in CS-Cart <http://docs.cs-cart.com/4.4.x/user_guide/payment_methods/paypal.html>`_
+*	`How To: Set up CS-Cart with PayPal Express <http://docs.cs-cart.com/4.4.x/user_guide/payment_methods/paypal_express.html>`_
+*	`How To: Set up CS-Cart with PayPal Pro <http://docs.cs-cart.com/4.4.x/user_guide/payment_methods/paypalpro.html>`_

@@ -42,10 +42,6 @@ Step 2. Create a Form
 
        * **Other subject**—a text field will appear below, and you'll be able to enter the subject manually.
 
-     .. note::
-
-         Before version 4.3.7, the name of the form also served as the email subject. There was no **Email subject field** setting.
-
      * **Form submit text**—enter the text that customers will see after submitting the form.
 
      * **E-mail to**—enter the e-mail address where the notifications will be sent to.

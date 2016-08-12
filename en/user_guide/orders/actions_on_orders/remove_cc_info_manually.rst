@@ -14,4 +14,4 @@ To remove credit card information from an order manually:
 
 .. note ::
 
-	By default the credit card information is removed automatically for orders with any status. But if you have created a new order status and you want the credit card information to be removed automatically, see `this article <http://docs.cs-cart.com/4.3.x/user_guide/orders/order_statuses/remove_cc_info_auto.html>`_.
+	By default the credit card information is removed automatically for orders with any status. But if you have created a new order status and you want the credit card information to be removed automatically, see `this article <http://docs.cs-cart.com/4.4.x/user_guide/orders/order_statuses/remove_cc_info_auto.html>`_.

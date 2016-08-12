@@ -2,10 +2,6 @@
 Payment Dependencies
 ********************
 
-.. note::
-
-    This add-on is available since **version 4.3.4**.
-
 The **Payment Dependencies** add-on allows you to :doc:`assign payment methods to shipping methods <../../shipping_and_taxes/shipping_methods/create_payment_dependencies>`. This add-on doesn’t have any settings—install it, and you’re good to go.
 
 ============

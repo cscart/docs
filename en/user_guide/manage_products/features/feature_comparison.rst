@@ -17,7 +17,7 @@ After that a customer will be able to compare these products by adding them to t
 
 .. important::
 
-    To use this function some `features <http://docs.cs-cart.com/4.3.x/user_guide/manage_products/features/product_features.html>`_ should be defined for the products in the **Features** tab on the product details page.
+    To use this function some `features <http://docs.cs-cart.com/4.4.x/user_guide/manage_products/features/product_features.html>`_ should be defined for the products in the **Features** tab on the product details page.
 
 To enable **Feature comparison** for several products at once:
 

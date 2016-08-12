@@ -41,4 +41,4 @@ Option variants have the following attributes:
     :align: center
     :alt: Option variants in the storefront
 
-*	**Earned point modifier/Type** (requires commercial license) - Positive or negative value that modifies the original number of reward points that customers receive at their accounts when they buy the product. The modifier can be either an absolute value or a percentage.
+*	**Earned point modifier/Type** - Positive or negative value that modifies the original number of reward points that customers receive at their accounts when they buy the product. The modifier can be either an absolute value or a percentage.

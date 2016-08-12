@@ -24,15 +24,6 @@ No Shipping Options Available for Your Location
 Select Shipping Method Section Doesn't Appear
 ============================================= 
 
-* Make sure the **Disable shipping** setting is not enabled:
-
-  * Go to the **Settings → General** section.
-  * Find the **Disable shipping** setting the **Users/cart** section. Disable this setting if necessary.
-
-.. note::
-
-    The **Disable shipping** setting has been **removed since version 4.3.5.**
-
 * Check whether the **Free shipping** option is disabled for the products you are trying to order:
 
   * Go to the **Products → Products** section.

@@ -56,5 +56,5 @@ List of categories which products may utilize this feature. If no category is sp
 Share
 *****
 
-Stores that share this product feature. Read `Sharing objects <http://docs.cs-cart.com/4.3.x/user_guide/stores/sharing.html>`_ for more details.
+Stores that share this product feature. Read `Sharing objects <http://docs.cs-cart.com/4.4.x/user_guide/stores/sharing.html>`_ for more details.
 

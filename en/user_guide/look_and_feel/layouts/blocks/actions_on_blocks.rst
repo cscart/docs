@@ -8,7 +8,7 @@ When you need to perform an action on the blocks, go to **Design → Layouts** a
 
 .. note::
 
-	For blocks that refer to the Top panel, Footer or Header container, make sure to select the `Default layout page <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/layout_pages/index.html>`_.
+	For blocks that refer to the Top panel, Footer or Header container, make sure to select the `Default layout page <http://docs.cs-cart.com/4.4.x/user_guide/look_and_feel/layouts/layout_pages/index.html>`_.
 
 Moving blocks
 *************
@@ -17,7 +17,7 @@ To move a block to a different position inside the frame, drag-n-drop the block 
 
 .. note::
 
-	Remember that blocks must be nested inside a `child container <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/framework/index.html>`_.
+	Remember that blocks must be nested inside a `child container <http://docs.cs-cart.com/4.4.x/user_guide/look_and_feel/layouts/framework/index.html>`_.
 
 Adding blocks
 *************

@@ -12,7 +12,7 @@ Searchanise can search through products, categories and pages (i.e., blog posts)
 
 .. note::
 
-   Searchanise can find products by product code, name, description, and features. Starting with version 4.3.7, it can also search products by option combination code. 
+   Searchanise can find products by product code, name, description, features, and option combination codes. 
 
 .. image:: img/searchanise_01.png
     :align: center
@@ -20,7 +20,7 @@ Searchanise can search through products, categories and pages (i.e., blog posts)
 
 .. important ::
 
-	Searchanise is incompatible with the `Age Verification <http://docs.cs-cart.com/4.3.x/user_guide/addons/age_verification/index.html>`_ add-on because this add-on controls access to products on the category level while Searchanise processes store data on the product level and takes no account of categories and their properties.
+	Searchanise is incompatible with the `Age Verification <http://docs.cs-cart.com/4.4.x/user_guide/addons/age_verification/index.html>`_ add-on because this add-on controls access to products on the category level while Searchanise processes store data on the product level and takes no account of categories and their properties.
 
  
 

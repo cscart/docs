@@ -4,7 +4,7 @@ How To: Set up the Google Export Add-on
 
 .. important ::
 
-	The `Data feeds <http://docs.cs-cart.com/4.3.x/user_guide/addons/data_feeds/index.html>`_ add-on should be installed first because a dependence on the Data feeds add-on is set for Google Export.
+	The `Data feeds <http://docs.cs-cart.com/4.4.x/user_guide/addons/data_feeds/index.html>`_ add-on should be installed first because a dependence on the Data feeds add-on is set for Google Export.
 
 *	In the administration panel, go to **Add-ons → Manage add-ons**.
 *	Switch to the **Browse all avaible add-ons** tab and find the **Google export** add-on.

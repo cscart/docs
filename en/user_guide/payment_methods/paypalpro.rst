@@ -39,7 +39,7 @@ Also there is the **Use Cardinal Centinel® for 3-D Secure Payer Authentication*
 
 .. important::
 
-    Make sure that there are readable `permissions <http://docs.cs-cart.com/4.3.x/install/useful_info/permissions.html>`_ for the certificate file and for the directory where it is located on your server.
+    Make sure that there are readable `permissions <http://docs.cs-cart.com/4.4.x/install/useful_info/permissions.html>`_ for the certificate file and for the directory where it is located on your server.
 
     In order to use PayPal Pro, there must be PHP's CURL support on your server. You are able to read more about it `here <http://www.php.net/curl>`_.
 

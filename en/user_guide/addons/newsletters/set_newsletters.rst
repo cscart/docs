@@ -7,7 +7,7 @@ How To: Set up the Newsletters Add-on
 
 .. important ::
 
-	This add-on is incompatible with the `E-mail marketing <http://docs.cs-cart.com/4.3.x/user_guide/addons/email_marketing/index.html>`_ add-on. Disable the **E-mail marketing** add-on to use **Newsletters**.
+	This add-on is incompatible with the `E-mail marketing <http://docs.cs-cart.com/4.4.x/user_guide/addons/email_marketing/index.html>`_ add-on. Disable the **E-mail marketing** add-on to use **Newsletters**.
 
 *	Click on the name of the add-on.
 *	In the **General** tab enter the desired parameters in the following fields:

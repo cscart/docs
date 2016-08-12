@@ -42,7 +42,7 @@ Meta data
 Availability
 ------------
 
-*	**User groups** (requires commercial license) - `User groups <http://docs.cs-cart.com/4.3.x/user_guide/users/user_groups/index.html>`_ whose members can access the category:
+*	**User groups** - `User groups <http://docs.cs-cart.com/4.4.x/user_guide/users/user_groups/index.html>`_ whose members can access the category:
 
 	*	**All** - All users can access the category.
 	*	**Guest** - Unregistered users can access the category.
@@ -71,12 +71,12 @@ Any modification that you make under this tab will not affect other storefront p
 
 .. note::
 
-	For more information on blocks, see `Look and Feel → Layouts <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/index.html>`_.
+	For more information on blocks, see `Look and Feel → Layouts <http://docs.cs-cart.com/4.4.x/user_guide/look_and_feel/layouts/index.html>`_.
 
 Add-ons 
 *******
 
-Applicable category attributes that depend on the active add-on modules. Requires commercial license.
+Applicable category attributes that depend on the active add-on modules.
 
 *	**SEO name** - The value to which the standard URL will be changed.
 *	**Age verification** - If selected, the access to the category is limited by the customer age.
@@ -86,7 +86,7 @@ Applicable category attributes that depend on the active add-on modules. Require
 
 .. important::
 
-	The attributes require the `Age Verification <http://docs.cs-cart.com/4.3.x/user_guide/addons/age_verification/index.html>`_, `Comments and Reviews <http://docs.cs-cart.com/4.3.x/user_guide/addons/comments_and_reviews/index.html>`_, and `SEO <http://docs.cs-cart.com/4.3.x/user_guide/addons/seo/index.html>`_ add-ons to be enabled and configured.
+	The attributes require the `Age Verification <http://docs.cs-cart.com/4.4.x/user_guide/addons/age_verification/index.html>`_, `Comments and Reviews <http://docs.cs-cart.com/4.4.x/user_guide/addons/comments_and_reviews/index.html>`_, and `SEO <http://docs.cs-cart.com/4.4.x/user_guide/addons/seo/index.html>`_ add-ons to be enabled and configured.
 
 Views 
 *****
@@ -102,17 +102,17 @@ Appearance of the product under the category.
 Reward points
 *************
 
-Number of points that customers receive at their accounts when buying category products. Requires commercial license.
+Number of points that customers receive at their accounts when buying category products.
 
-*	**Override global point value for all products in this category** - If selected, the below values prevail over the global points that are defined in the `Reward points <http://docs.cs-cart.com/4.3.x/user_guide/addons/reward_points/index.html>`_ section (**Marketing → Reward points**).
-*	**User group** - `User group <http://docs.cs-cart.com/4.3.x/user_guide/users/user_groups/index.html>`_ whose members are granted reward points for buying the category products.
+*	**Override global point value for all products in this category** - If selected, the below values prevail over the global points that are defined in the `Reward points <http://docs.cs-cart.com/4.4.x/user_guide/addons/reward_points/index.html>`_ section (**Marketing → Reward points**).
+*	**User group** - `User group <http://docs.cs-cart.com/4.4.x/user_guide/users/user_groups/index.html>`_ whose members are granted reward points for buying the category products.
 *	**Amount** - Number of reward points to be granted to a user group member who bought the category product.
 *	**Amount type** - Absolute number of points or percentage-based value calculated in the following manner: the product cost is divided into 100, and the result is multiplied by the value in the field.
 
 Reviews
 *******
 
-List of customers' reviews of the category. Requires commercial license. 
+List of customers' reviews of the category.
 
 Requires that the **Reviews** field in the **Add-ons** tab be set to *Communication*, *Rating*, or both:
 

@@ -6,7 +6,7 @@ This add-on empowers you to send newsletters to your customers. When it is activ
 
 .. important ::
 
-	This add-on is incompatible with the `E-mail marketing <http://docs.cs-cart.com/4.3.x/user_guide/addons/email_marketing/index.html>`_ add-on. Disable the **E-mail marketing** add-on to use **Newsletters**.
+	This add-on is incompatible with the `E-mail marketing <http://docs.cs-cart.com/4.4.x/user_guide/addons/email_marketing/index.html>`_ add-on. Disable the **E-mail marketing** add-on to use **Newsletters**.
 
 .. toctree::
     :maxdepth: 2

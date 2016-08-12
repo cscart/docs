@@ -16,8 +16,6 @@ Settings and preferences in this section affect different aspects of your store.
 
 * **Initial order ID value**—an integer number to open the order ID numbering. The value you enter here will be used as the ID of the next order placed in your store. With every new order, its ID will increase by 1. The value of this field cannot be less than any order ID number that is already in the database.
 
-* **Allow multiple shipments for a single user**——if you enable this setting, products from one order will be able to be shipped separately, in different shipments.
-
 * **Tax calculation method based on**—select whether taxes should apply to individual products in the order (*Unit price*) or to the order subtotal, which also considers all discounts (*Subtotal*).
 
 .. note::
@@ -82,7 +80,7 @@ You can define the following details:
 
 * **Default phone**.
 
-This information is also used when setting the `realtine shipping methods <http://docs.cs-cart.com/4.3.x/user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/index.html>`_.
+This information is also used when setting the `realtine shipping methods <http://docs.cs-cart.com/4.4.x/user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/index.html>`_.
 
 =======
 Catalog
@@ -133,11 +131,6 @@ Users/Cart
 * **Quick Registration**—if you enable this setting, customers will only need contact information for registration.
 
 * **Estimate shipping cost on cart page**—if you enable this setting, a form for estimating shipping cost will be displayed on the cart page.
-
-* **Disable shipping**—if you enable this setting, customers won't be allowed to choose shipping methods at checkout. Shipping will be deactivated in the store.
-
-.. note::
-    The **Disable shipping** checkbox was removed in version 4.3.5; see the details :doc:`in the related article <../shipping_and_taxes/shipping_methods/free_shipping>`.
 
 * **Disregard product options when calculating quantity discounts**—this setting determines how CS-Cart counts the number of product items in order to apply a quantity discount. If you enable this setting, product options and option combinations will be regarded as the same product, and CS-Cart will simply count the number of ordered items. Otherwise, CS-Cart product options will be regarded as separate products.
 

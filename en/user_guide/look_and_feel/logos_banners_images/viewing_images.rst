@@ -27,7 +27,7 @@ The image can be either uploaded from a local computer or the server file system
 In order to change the thumbnail size and appearance settings:
 
 *   Go to **Settings → Thumbnails**.
-*   Change the `settings <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/changing_attributes/change_image_size.html>`_.
+*   Change the `settings <http://docs.cs-cart.com/4.4.x/user_guide/look_and_feel/changing_attributes/change_image_size.html>`_.
 *   Click the **Save** button.
 
 .. image:: img/thumbnails_03.png

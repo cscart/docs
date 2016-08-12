@@ -30,7 +30,7 @@ The **General** tab contains basic parameters of the method:
 
  * **Payment category**—select a category that the payment method belongs to. Payment categories will appear on the checkout page, if two or more payment methods are assigned to different categories. Categories group payment methods and make it easier for your customers to find the desired payment methods at checkout.
 
- * **User groups** (requires `a valid license number <http://www.cs-cart.com/compare.html>`_)—the :doc:`user groups <../users/user_groups/index>` that are allowed to use this method.
+ * **User groups**—the :doc:`user groups <../users/user_groups/index>` that are allowed to use this method.
 
  * **Description**—brief description of the payment method. This description appears on the checkout page.
 

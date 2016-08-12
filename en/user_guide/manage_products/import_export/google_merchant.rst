@@ -20,7 +20,7 @@ To submit a data feed to Google Product Search:
 To export product data from CS-Cart:
 
 *   In the Administration panel, go to **Add-ons → Manage add-ons**.
-*   Install the `Data feeds <http://docs.cs-cart.com/4.3.x/user_guide/addons/data_feeds/index.html>`_ and `Google export <http://docs.cs-cart.com/4.3.x/user_guide/addons/google_export/index.html>`_ add-ons.
+*   Install the `Data feeds <http://docs.cs-cart.com/4.4.x/user_guide/addons/data_feeds/index.html>`_ and `Google export <http://docs.cs-cart.com/4.4.x/user_guide/addons/google_export/index.html>`_ add-ons.
 *   Go to **Products → Products** and click on a product name.
 *   Open the **Features** tab and fill in the appropriate fields.
 
@@ -28,7 +28,7 @@ To export product data from CS-Cart:
     :align: center
     :alt: Google export features
 
-*   Go to the **Add-ons → Data feeds** page and `create a new data feed <http://docs.cs-cart.com/4.3.x/user_guide/addons/data_feeds/create_df.html>`_ or export a demo feed.
+*   Go to the **Add-ons → Data feeds** page and `create a new data feed <http://docs.cs-cart.com/4.4.x/user_guide/addons/data_feeds/create_df.html>`_ or export a demo feed.
 
 .. important::
 

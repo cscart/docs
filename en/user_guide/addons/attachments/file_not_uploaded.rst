@@ -2,8 +2,8 @@
 If the File Cannot Be Uploaded
 ******************************
 
-*   `Check permissions <http://docs.cs-cart.com/4.3.x/install/useful_info/permissions.html>`_ for the uploading file. It should have *readable* permissions for all users. Set up the correct permissions if needed.
-*   `Check permissions <http://docs.cs-cart.com/4.3.x/install/useful_info/permissions.html>`_ for the *var/attachments* directory of your CS-Cart installation. It should have *writable* permissions for all users. Set up the correct permissions if needed.
+*   `Check permissions <http://docs.cs-cart.com/4.4.x/install/useful_info/permissions.html>`_ for the uploading file. It should have *readable* permissions for all users. Set up the correct permissions if needed.
+*   `Check permissions <http://docs.cs-cart.com/4.4.x/install/useful_info/permissions.html>`_ for the *var/attachments* directory of your CS-Cart installation. It should have *writable* permissions for all users. Set up the correct permissions if needed.
 *   Check the maximum size of the uploaded file on your server:
 
     *   In the Administration panel, go to **Administration → Logs**.

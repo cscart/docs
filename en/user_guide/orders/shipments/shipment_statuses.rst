@@ -5,8 +5,6 @@ How To: Manage Shipment Statuses
 .. note::
 
     **Tutorial Difficulty: 1 / 3**
-    
-    This functionality was not available before CS-Cart & Multi-Vendor 4.3.7.
 
 If you go to **Orders → Shipments**, you will see all the list of all shipments in your store. Shipments have statuses, allowing you to sort the list, or to search for shipments with a specific status.
 
@@ -18,7 +16,7 @@ By default, there are 3 statuses: *Packed*, *Picked up*, and *Shipped*. However,
 
 .. image:: img/shipment_statuses.png
     :align: center
-    :alt: Since version 4.3.7 a shipment can have a status.
+    :alt: A shipment can have a status.
 
 ============================
 Add Your Own Shipment Status

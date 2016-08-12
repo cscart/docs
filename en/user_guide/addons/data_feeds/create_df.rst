@@ -25,7 +25,7 @@ To create and configure a custom data feed:
     *   **Exclude disabled products** — if selected, products that are disabled in the product catalog are not included in the data feed.
     *   **CSV delimiter** — delimiter to separate data in the feed.
     *   **Status** — status of the data feed: *Active* or *Disabled*.
-    *   **Server directory** — directory on your server where the data feed will be exported to. Make sure the directory has writable `permissions <http://docs.cs-cart.com/4.3.x/install/useful_info/permissions.html>`_.
+    *   **Server directory** — directory on your server where the data feed will be exported to. Make sure the directory has writable `permissions <http://docs.cs-cart.com/4.4.x/install/useful_info/permissions.html>`_.
     *   **FTP server** — URL of the target directory on the FTP server to which the data feed must be uploaded.
 
     	.. note ::

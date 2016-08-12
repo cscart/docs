@@ -2,9 +2,9 @@
 Manual Shipping Method is Not Displayed
 ***************************************
 
-If a `manual shipping method <http://docs.cs-cart.com/4.3.x/user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/set_manual_shipping.html>`_ doesn't appear at checkout, follow these steps to find out the reason:
+If a `manual shipping method <http://docs.cs-cart.com/4.4.x/user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/set_manual_shipping.html>`_ doesn't appear at checkout, follow these steps to find out the reason:
 
-1. In the Administration panel, go to the **Administration → Shipping & Taxes → Locations** section and check whether a `location <http://docs.cs-cart.com/4.3.x/user_guide/shipping_and_taxes/locations/set_location.html>`_ is set up properly.
+1. In the Administration panel, go to the **Administration → Shipping & Taxes → Locations** section and check whether a `location <http://docs.cs-cart.com/4.4.x/user_guide/shipping_and_taxes/locations/set_location.html>`_ is set up properly.
 
    * Check whether geographic areas (states or countries) of location zones do not intersect with each other.
 

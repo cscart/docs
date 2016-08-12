@@ -37,6 +37,7 @@ A Paid Add-on
 =====================
 Installing the Add-on
 =====================
+
 1. An email will be sent to the address you specified. It will include:
 
    * The product’s license number.

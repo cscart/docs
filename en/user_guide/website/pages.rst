@@ -16,7 +16,7 @@ Use the **Website → Pages** section to create and publish new content of the f
 
     Enable and configure the **Form Builder** add-on under **Add-ons → Manage add-ons** to be able to create and edit forms.
 
-* **Poll** (requires a `CS-Cart <http://www.cs-cart.com/licenses.html>`_/`Multi-Vendor <http://www.cs-cart.com/multi-vendor-licenses.html>`_ license)—a survey or a questionnaire.
+* **Poll** (requires the :doc:`Polls <../../../addons/polls/index>` add-on)—a survey or a questionnaire.
 
 .. important::
 
@@ -62,7 +62,7 @@ General
 
 * **META keywords**—the content of the HTML tag with the list of search keywords for the page. Required for SEO purposes.
 
-* **User groups** (requires a `CS-Cart <http://www.cs-cart.com/licenses.html>`_/`Multi-Vendor <http://www.cs-cart.com/multi-vendor-licenses.html>`_ license)—the `user groups <http://docs.cs-cart.com/4.3.x/user_guide/users/user_groups/index.html>`_, members of which can access the page.
+* **User groups**—the `user groups <http://docs.cs-cart.com/4.4.x/user_guide/users/user_groups/index.html>`_, members of which can access the page.
 
 * **Creation date**—the date when the page was created.
 
@@ -92,7 +92,7 @@ Add-ons
 
 * **SEO name**—a SEO-friendly name of the page.
 
-* **Comments** (requires a `CS-Cart <http://www.cs-cart.com/licenses.html>`_/`Multi-Vendor <http://www.cs-cart.com/multi-vendor-licenses.html>`_ license)—a select box to enable or disable user comments and ratings for the page.
+* **Comments** (requires the :doc:`Comments and Reviews <../../../comments_and_reviews/index` add-on)—a select box to enable or disable user comments and ratings for the page.
 
 * **Facebook object type**—choose the object type on Facebook to characterize your page contents.
 

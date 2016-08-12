@@ -23,4 +23,4 @@ To set up the credit card offline payment method, that does not use a real-time 
 
 .. note::
 
-	After a customer has placed an order, the order status will be **Open**. Make sure that `the Remove CC info option is disabled for the Open order status <http://docs.cs-cart.com/4.3.x/user_guide/orders/order_statuses/remove_cc_info_auto.html>`_.
+	After a customer has placed an order, the order status will be **Open**. Make sure that `the Remove CC info option is disabled for the Open order status <http://docs.cs-cart.com/4.4.x/user_guide/orders/order_statuses/remove_cc_info_auto.html>`_.

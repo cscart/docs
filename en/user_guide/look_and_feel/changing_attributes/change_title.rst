@@ -29,4 +29,4 @@ To change the page title for the product page, category page, and other pages:
 
 .. note ::
 
-	To add/change **Page title** using the `import <http://docs.cs-cart.com/4.3.x/user_guide/manage_products/import_export/product_import.html>`_ option, use the instructions from the `Imported Fields Format <http://docs.cs-cart.com/4.3.x/user_guide/manage_products/import_export/fields_format.html>`_ article.
+	To add/change **Page title** using the `import <http://docs.cs-cart.com/4.4.x/user_guide/manage_products/import_export/product_import.html>`_ option, use the instructions from the `Imported Fields Format <http://docs.cs-cart.com/4.3.x/user_guide/manage_products/import_export/fields_format.html>`_ article.

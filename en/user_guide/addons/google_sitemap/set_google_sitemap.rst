@@ -27,4 +27,4 @@ To set up the **Google sitemap** add-on:
 
 .. note ::
 
-	Sitemap can be reached by the URL *http://www.domain.com/sitemap.xml* if `SEO <http://docs.cs-cart.com/4.3.x/user_guide/addons/seo/index.html>`_ add-on is enabled. If it is disabled, you need to add the following code to the **.htaccess** file to get this URL working: ``RewriteRule ^sitemap\.xml$ ./index.php?dispatch=xmlsitemap.view [L]``. Add this line after the ``# RewriteBase /`` line.
+	Sitemap can be reached by the URL *http://www.domain.com/sitemap.xml* if `SEO <http://docs.cs-cart.com/4.4.x/user_guide/addons/seo/index.html>`_ add-on is enabled. If it is disabled, you need to add the following code to the **.htaccess** file to get this URL working: ``RewriteRule ^sitemap\.xml$ ./index.php?dispatch=xmlsitemap.view [L]``. Add this line after the ``# RewriteBase /`` line.

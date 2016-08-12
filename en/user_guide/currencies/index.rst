@@ -30,9 +30,9 @@ General
 
 * **Code**—the unique code of the currency.
 
-* **Primary currency** (requires a purchased license)—the primary currency of your store.
+* **Primary currency**—the primary currency of your store.
 
-* **Rate** (requires a purchased license)—the exchange rate to convert store prices and costs from the primary currency to this currency. 
+* **Rate**—the exchange rate to convert store prices and costs from the primary currency to this currency. 
 
   In the example above, the primary currency is the American dollar, and the values in the **Rate** field define, how many dollars there are in one Euro and in one British pound.
 
@@ -46,7 +46,7 @@ General
 
 * **Decimals**—the number of digits after the decimal mark.
 
-* **Status** (requires a purchased license)—currency status: 
+* **Status**—currency status: 
 
   * **Active**—the currency is available on the storefront.
 
@@ -60,18 +60,16 @@ General
 Share
 -----
 
+.. note::
+
+    The **Share** tab appears only if you have multiple storefronts.
+
 If you :doc:`manage multiple stores with one Administration panel <../stores/index>`, you can select the storefronts where the currency will be available. This is done via sharing. :doc:`Learn more about sharing objects among stores <../stores/sharing>`.
 
 .. important::
 
-    If you use CS-Cart 4.3.6 or earlier, make sure that the primary currency is shared among all your storefronts. This is because all calculations are done in the primary currency.
+    The primary currency always appears in the currency selection menu in the Administration panel, even if it isn't shared with the storefront you're working with. This is because all calculations are done in the primary currency.
 
 .. image:: img/select_currency.png
     :align: center
-    :alt: The primary currency always appears in the Administration panel's currency selector since version 4.3.7.
-
-Beginning with CS-Cart 4.3.7, the primary currency always appears in the currency selection menu in the Administration panel. It doesn't matter if the currency is shared with the storefront you're working with.
-
-.. note::
-
-    The **Share** tab appears only if you have multiple storefronts.
+    :alt: The primary currency always appears in the Administration panel's currency selector.

@@ -30,7 +30,7 @@ Banners
 	*   -   Description
 	    -   One or more banners that were created in section **Marketing → Banners**.
 	*   -   Related add-ons
-	    -   `Banners Management <http://docs.cs-cart.com/4.3.x/user_guide/addons/banners_management/index.html>`_
+	    -   `Banners Management <http://docs.cs-cart.com/4.4.x/user_guide/addons/banners_management/index.html>`_
 	*   -   Templates
 	    -   *	:ref:`Original <original>`
 	        *	:ref:`Carousel <carousel>`
@@ -183,10 +183,6 @@ Currencies
 	        *   :ref:`Format <format>`
 	        *   :ref:`Minimal number if items to be placed in a dropdown list <minimal_items>`
 
-.. note::
-
-	This block type requires commercial license.
-
 Gift certificate verification
 -----------------------------
 
@@ -198,17 +194,13 @@ Gift certificate verification
 	*   -   Description
 	    -   Allows customer to validate or redeem a gift certificate.
 	*   -   Related add-ons
-	    -   `Gift certificates <http://docs.cs-cart.com/4.3.x/user_guide/addons/gift_certificates/index.html>`_
+	    -   `Gift certificates <http://docs.cs-cart.com/4.4.x/user_guide/addons/gift_certificates/index.html>`_
 	*   -   Templates
 	    -   :ref:`Gift certificate verification <gs_verification>`
 	*   -   Content
 	    -   Automatic
 	*   -   Block settings
 	    -   None
-
-.. note ::
-
-	This block type requires commercial license.
 
 HTML block
 ----------
@@ -268,10 +260,6 @@ Languages
 	    -   *   :ref:`Text <text>`
 	        *   :ref:`Format <format>`
 	        *   :ref:`Minimal number if items to be placed in a dropdown list <minimal_items>`
-
-.. note ::
-
-	This block type requires commercial license.
 
 Menu
 ----
@@ -376,7 +364,7 @@ Polls
 	*   -   Description
 	    -   One or several polls created in **Website → Content**.
 	*   -   Related add-ons
-	    -   `Polls <http://docs.cs-cart.com/4.3.x/user_guide/addons/polls/index.html>`_
+	    -   `Polls <http://docs.cs-cart.com/4.4.x/user_guide/addons/polls/index.html>`_
 	*   -   Templates
 	    -   *	:ref:`Central <central>`
 	        *	:ref:`Side box <side_box>`
@@ -387,10 +375,6 @@ Polls
 
 	*   -   Block settings
 	    -   None
-
-.. note ::
-
-	This block type requires commercial license.
 
 Product filters
 ---------------
@@ -425,8 +409,8 @@ Products
 	    -   One or more products from the product catalog.
 	*   -   Related add-ons
 
-	    -  *	`Bestsellers & on sale products <http://docs.cs-cart.com/4.3.x/user_guide/addons/bestsellers_and_on_sale_products/index.html>`_
-	       *	`Customers also bought <http://docs.cs-cart.com/4.3.x/user_guide/addons/customers_also_bought/index.html>`_
+	    -  *	`Bestsellers & on sale products <http://docs.cs-cart.com/4.4.x/user_guide/addons/bestsellers_and_on_sale_products/index.html>`_
+	       *	`Customers also bought <http://docs.cs-cart.com/4.4.x/user_guide/addons/customers_also_bought/index.html>`_
 	*   -   Templates
 	    -   *	:ref:`Grid <grid>`
 	        *	:ref:`Grid 2 <grid_2>`
@@ -515,14 +499,14 @@ RSS feed
 	*   -   Description
 	    -   Regular RSS feed icon. A visitor clicks the icon and adds the store RSS feed to his or her RSS reader.
 	*   -   Related add-ons
-	    -   `RSS Feed <http://docs.cs-cart.com/4.3.x/user_guide/addons/rss_feed/index.html>`_
+	    -   `RSS Feed <http://docs.cs-cart.com/4.4.x/user_guide/addons/rss_feed/index.html>`_
 	*   -   Templates
 	    -   *	:ref:`Icon <icon>`
 	*   -   Content
 	    -   *	Filling
 	    
 		    	*	:ref:`Products <filling_products>`
-		    	*	Posts (only since version 4.3.8 and only if the :doc:`Blog <../../../addons/blog/index>` add-on is active)
+		    	*	Posts (only if the :doc:`Blog <../../../addons/blog/index>` add-on is active)
 
 		*	Parent page (available for the **Posts** filling type only)
 
@@ -544,9 +528,6 @@ RSS feed
 	        *   :ref:`Feed title <feed_title>`
 	        *   :ref:`Feed description <feed_description>`
 
-.. note ::
-
-	This block type requires commercial license.
 
 Shipping methods
 ----------------
@@ -578,17 +559,13 @@ Store locator
 	*   -   Description
 	    -   Box showing the location of your store on Google map.
 	*   -   Related add-ons
-	    -   `Store Locator <http://docs.cs-cart.com/4.3.x/user_guide/addons/store_locator/index.html>`_
+	    -   `Store Locator <http://docs.cs-cart.com/4.4.x/user_guide/addons/store_locator/index.html>`_
 	*   -   Templates
 	    -   :ref:`Store Locator <store_locator>`
 	*   -   Content
 	    -   Automatic
 	*   -   Block settings
 	    -   None
-
-.. note ::
-
-	This block type requires commercial license.
 
 Tags
 ----
@@ -601,7 +578,7 @@ Tags
 	*   -   Description
 	    -   List of product and category tags.
 	*   -   Related add-ons
-	    -   `Tags <http://docs.cs-cart.com/4.3.x/user_guide/addons/tags/index.html>`_
+	    -   `Tags <http://docs.cs-cart.com/4.4.x/user_guide/addons/tags/index.html>`_
 	*   -   Templates
 	    -   :ref:`Tag cloud <tag_cloud>`
 	*   -   Content
@@ -656,7 +633,7 @@ Testimonials
 	*   -   Description
 	    -   List of testimonials left by the store customers.
 	*   -   Related add-ons
-	    -   `Comments & Reviews <http://docs.cs-cart.com/4.3.x/user_guide/addons/comments_and_reviews/index.html>`_
+	    -   `Comments & Reviews <http://docs.cs-cart.com/4.4.x/user_guide/addons/comments_and_reviews/index.html>`_
 	*   -   Templates
 	    -   *	:ref:`Testimonials <testimonials>`
 	*   -   Content
@@ -665,9 +642,6 @@ Testimonials
 	    -   *   :ref:`Limit <limit>`
 	        *   :ref:`Random <random>`
 
-.. note ::
-
-	This block type requires commercial license.
 
 Vendors
 -------

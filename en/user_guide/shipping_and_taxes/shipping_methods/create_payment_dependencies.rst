@@ -4,7 +4,7 @@ How To: Assign Payment Methods to Shipping Methods
 
 .. note::
 
-    Before you proceed, :doc:`install the Payment Dependencies add-on <../../addons/payment_dependencies/index>`, which is **available since version 4.3.4**.
+    Before you proceed, :doc:`install the Payment Dependencies add-on <../../addons/payment_dependencies/index>`.
 
 By default, customers see all the payment methods available to them at checkout. This may be inconvenient, especially when you have many payment methods.
 

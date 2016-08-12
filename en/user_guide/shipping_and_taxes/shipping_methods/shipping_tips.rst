@@ -6,8 +6,6 @@ How To: Specify a Commentary for all Shipping Methods
 
     **Tutorial Difficulty: 1 / 3**
 
-    This tutorial is primarily intended for CS-Cart & Multi-Vendor 4.3.7, as the behavior of the used language variable is different in earlier versions.
-
 1. In the Administration panel, go to **Administration → Languages → Translations**.
 
 .. image:: img/translations.png
@@ -37,7 +35,3 @@ How To: Specify a Commentary for all Shipping Methods
 .. image:: img/tip_at_checkout.png
 	:align: center
 	:alt: The shipping tip will appear at checkout for all the shipping methods of your store.
-
-.. important::
-
-    In CS-Cart & Multi-Vendor 4.3.5 and earlier the ``shipping_tips`` and ``delivery_times_text`` language variables contained a single description for all shipping methods in your store. These language variables didn't exist in CS-Cart & Multi-Vendor 4.3.6.

@@ -14,7 +14,7 @@ A customer can also click the **Request call** link on the storefront (if the **
 
 .. important ::
 
-	To allow call requests in your store, activate the `Call requests <http://docs.cs-cart.com/4.3.x/user_guide/addons/call_requests/index.html>`_ add-on in the **Add-ons → Manage add-ons** section. There you can also configure some essential settings that relate to call requests.
+	To allow call requests in your store, activate the `Call requests <http://docs.cs-cart.com/4.4.x/user_guide/addons/call_requests/index.html>`_ add-on in the **Add-ons → Manage add-ons** section. There you can also configure some essential settings that relate to call requests.
 
 For each call request in the list you can see the following information:
 

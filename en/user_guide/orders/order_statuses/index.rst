@@ -21,7 +21,7 @@ The following statuses are available by default and cannot be deleted:
 *	**Declined** – Order has been canceled by the store administrator.
 *	**Backordered** – Order hasn't been processed yet as it contains out-of-stock items.
 *	**Canceled** – Order was canceled by a customer.
-*	**Awaiting call** - Order was created and customer sent a call request. This status is associated with the `Call requests <http://docs.cs-cart.com/4.3.x/user_guide/addons/call_requests/index.html>`_ add-on.
+*	**Awaiting call** - Order was created and customer sent a call request. This status is associated with the `Call requests <http://docs.cs-cart.com/4.4.x/user_guide/addons/call_requests/index.html>`_ add-on.
 
 There is also one hidden initial status – **Incomplete**. The order is created in the store database and the system waits for the response from a payment method. This status cannot be set by the user.
 

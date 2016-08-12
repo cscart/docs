@@ -29,4 +29,4 @@ To change **Meta tags** for the **Products** page, **Categories** page, and othe
 
 .. note:: 
 
-	To add **Meta tags** using the `import <http://docs.cs-cart.com/4.3.x/user_guide/manage_products/import_export/product_import.html>`_ option, use the instructions from the `Imported Fields Format <http://docs.cs-cart.com/4.3.x/user_guide/manage_products/import_export/fields_format.html>`_ article.
+	To add **Meta tags** using the `import <http://docs.cs-cart.com/4.4.x/user_guide/manage_products/import_export/product_import.html>`_ option, use the instructions from the `Imported Fields Format <http://docs.cs-cart.com/4.3.x/user_guide/manage_products/import_export/fields_format.html>`_ article.

@@ -2,17 +2,7 @@
 How To: Manage Gift Certificate Statuses
 ****************************************
 
-Every gift certificate has a status assigned to it. To see the list of available statuses, follow these steps:
-
-1. Go to **Marketing → Gift certificates**.
-
-2. Click the **gear** button in the top right corner.
-
-3. Choose **Gift certificate statuses**.
-
-.. hint::
-
-    Beginning with version 4.3.7, you can go to **Administration → Gift certificate statuses**.
+Every gift certificate has a status assigned to it. To see the list of available statuses, go to **Administration → Gift certificate statuses**.
 
 .. image:: img/open_gc_status_page.png
     :align: center

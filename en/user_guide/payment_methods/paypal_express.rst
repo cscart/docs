@@ -38,7 +38,7 @@ To set up CS-Cart with PayPal Website Express account:
 
 .. important::
 
-	Make sure that there are readable `permissions <http://docs.cs-cart.com/4.3.x/install/useful_info/permissions.html>`_ for the certificate file and for the directory where it is located on your server.
+	Make sure that there are readable `permissions <http://docs.cs-cart.com/4.4.x/install/useful_info/permissions.html>`_ for the certificate file and for the directory where it is located on your server.
 
 PayPal account settings:
 

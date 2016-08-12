@@ -4,7 +4,7 @@ How To: Set up a Manual Shipping Method
 
 To set up a manual shipping method depending on a location:
 
-*   In the Administration panel, go to **Administration → Shipping & Taxes → Locations** and `create necessary locations <http://docs.cs-cart.com/4.3.x/user_guide/shipping_and_taxes/locations/set_location.html>`_.
+*   In the Administration panel, go to **Administration → Shipping & Taxes → Locations** and `create necessary locations <http://docs.cs-cart.com/4.4.x/user_guide/shipping_and_taxes/locations/set_location.html>`_.
 *   Go to **Administration → Shipping & Taxes → Shipping methods**.
 *   Add a new shipping method by clicking the **+** button or choose the existing one.
 *   Choose *Manual* in the **Rate calculation** option in the **General** tab.
@@ -16,7 +16,7 @@ To set up a manual shipping method depending on a location:
 
 *   Open the **Shipping charges** tab.
 *   Select a desired location in the **Show rates for location** box.
-*   Define shipping rates for the shipping method based on the total cost of the ordered products `cost <http://docs.cs-cart.com/4.3.x/user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/order_total.html>`_, their weight, or `quantity <http://docs.cs-cart.com/4.3.x/user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/product_amount.html>`_.
+*   Define shipping rates for the shipping method based on the total cost of the ordered products `cost <http://docs.cs-cart.com/4.4.x/user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/order_total.html>`_, their weight, or `quantity <http://docs.cs-cart.com/4.4.x/user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/product_amount.html>`_.
 
 .. note::
 

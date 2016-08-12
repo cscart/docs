@@ -6,7 +6,6 @@ How To: Set up Canada Post in CS-Cart
 
     **Tutorial Difficulty: 1 / 3**
 
-    If you used a Canada Post shipping method and then upgraded to CS-Cart/Multi-Vendor 4.3.8, make sure to configure the shipping method again.
 
 Follow these steps to set up a shipping method that uses `Canada Post <https://www.canadapost.ca/web/en/home.page>`_:
 
@@ -40,17 +39,13 @@ Step 2. Configure the Shipping Method
 
 2.1. (optional) Switch to the **Shipping charges** tab and define shipping charges. These charges will be added to the ones calculated by Canada Post.
 
-2.2. Switch to the **Configure** tab. Depending on your version of CS-Cart/Multi-Vendor, the settings will be different.
+2.2. Switch to the **Configure** tab.
 
 .. hint::
 
     If you don’t see any tabs, then the shipping method probably hasn't been created yet. Click **Create**, and the tabs should appear.
 
------------
-After 4.3.8
------------
-
-For the shipping method to work, you need to specify API keys. Other parameters are optional:
+2.3. To work properly, this shipping method requires API keys. Other parameters are optional:
 
 * **API keys**
 
@@ -104,31 +99,7 @@ For the shipping method to work, you need to specify API keys. Other parameters 
 
 .. image:: img/canada_post_438.png
     :align: center
-    :alt: Canada Post settings in CS-Cart/Multi-Vendor 4.3.8. Username and password are required.
-
-------------
-Before 4.3.8
-------------
-
-Before CS-Cart/Multi-Vendor 4.3.8 the settings for Canada Post shipping methods were different:
-
-* **Merchant ID**
-
-* **Max box weight**
-
-* **Package width (cm)** 
-
-* **Package height (cm)**
-
-* **Package length (cm)**
-
-.. important::
-
-    The length of the greatest linear dimension of a parcel must not exceed **105 cm**. The girth of a parcel must not exceed **140 cm**.
-
-.. image:: img/canada_post_02.png
-    :align: center
-    :alt: Canada Post required Merchant ID before CS-Cart/Multi-Vendor 4.3.8.
+    :alt: Canada Post settings. Username and password are required.
 
 =================================
 Step 3. Test Your Shipping Method 

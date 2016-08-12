@@ -5,7 +5,7 @@ How To: Replace Logo in a Gift Certificate
 To replace CS-Cart logo with your own one in a gift certificate:
 
 *   In the Administration panel, go to **Design → Themes**.
-*   Find the layout for the currently used theme and click the **Visual editor** button near it.
+*   Find the layout for the currently used theme and click the **Theme Editor** button near it.
 
 .. image:: img/gift_logo_01.png
 	:align: center

@@ -43,7 +43,7 @@ or to the certain products:
 
 .. note::
 
-	You are able to add taxes for a product using the `import <http://docs.cs-cart.com/4.3.x/user_guide/manage_products/import_export/product_import.html>`_ option. The description of the correct format can be found in the `Imported Fields Format <http://docs.cs-cart.com/4.3.x/user_guide/manage_products/import_export/fields_format.html>`_ article.
+	You are able to add taxes for a product using the `import <http://docs.cs-cart.com/4.4.x/user_guide/manage_products/import_export/product_import.html>`_ option. The description of the correct format can be found in the `Imported Fields Format <http://docs.cs-cart.com/4.4.x/user_guide/manage_products/import_export/fields_format.html>`_ article.
 
 To apply the tax to a shipping method:
 

@@ -40,7 +40,7 @@ To display a block with testimonials on the storefront:
     *   Select the desired wrapper in the **Wrapper** select box.
     *   Specify the desired css-class in the **User-defined CSS-class** input field, if needed.
 
-*   Open the **Block settings** tab and manage `settings <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/blocks/block_settings.html>`_ if needed.
+*   Open the **Block settings** tab and manage `settings <http://docs.cs-cart.com/4.4.x/user_guide/look_and_feel/layouts/blocks/block_settings.html>`_ if needed.
 *   Click the **Save** button.
 
 .. image:: img/testimonials_03.png

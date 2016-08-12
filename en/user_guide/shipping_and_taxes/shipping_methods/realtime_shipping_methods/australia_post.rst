@@ -6,12 +6,6 @@ How To: Set up Australia Post in CS-Cart
 
     **Tutorial Difficulty: 1 / 3**
 
-    If you used an Australia Post shipping method and then upgraded to CS-Cart/Multi-Vendor 4.3.8, make sure to configure the shipping method again.
-
-.. important::
-
-    If you use CS-Cart/Multi-Vendor 4.x that is earlier than 4.3.8, `follow these instructions <http://forum.cs-cart.com/tracker/issue-6358-bug-in-australia-post-shipping-service-options-and-real-time-shipping-calculation-service/?gopid=25143#entry25143>`_. 
-
 Follow these steps to set up a shipping method that uses `Australia Post <http://auspost.com.au/>`_:
 
 
