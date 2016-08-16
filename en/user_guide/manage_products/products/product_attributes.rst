@@ -339,21 +339,21 @@ Product attributes that depend on the active add-ons.
 
 * **Returnable**—if you tick this checkbox, the product will be labeled as available for the return.
 
-* **Return period** (requires the :doc:`RMA <../../../addons/rma/index>` add-on)—the time period period of time during which the product can be returned. The period begins on the day of purchase.
+* **Return period** (requires the :doc:`RMA <../../addons/rma/index>` add-on)—the time period period of time during which the product can be returned. The period begins on the day of purchase.
 
 * **Sales amount**—the number of sold product items. This value is calculated automatically if the **Bestsellers and on-sale products** add-on is active (**Add-Ons → Manage add-ons**). Yet, you can change the current value manually.
 
-* **Age verification** (requires the :doc:`Age Verification <../../../addons/age_verification/index>` add-on)—if you tick this checkbox, the access to the product will be limited by the customer age.
+* **Age verification** (requires the :doc:`Age Verification <../../addons/age_verification/index>` add-on)—if you tick this checkbox, the access to the product will be limited by the customer age.
 
-* **Age limit** (requires the :doc:`Age Verification <../../../addons/age_verification/index>` add-on)—the minimum age for accessing the product.
+* **Age limit** (requires the :doc:`Age Verification <../../addons/age_verification/index>` add-on)—the minimum age for accessing the product.
 
-* **Warning message** (requires the :doc:`Age Verification <../../../addons/age_verification/index>` add-on)—the message to be displayed, if the customer does not qualify for accessing the product.
+* **Warning message** (requires the :doc:`Age Verification <../../addons/age_verification/index>` add-on)—the message to be displayed, if the customer does not qualify for accessing the product.
 
 * **eBay template**—choose one of the templates created in the **Marketing → eBay templates** section. This setting appears when the :doc:`eBay synchronization <../../addons/eBay/index>` add-on is installed and set up in the **Add-ons → Manage add-ons** section.
 
 * **Package type**—the type of the product package. If you do not know your package type, select the *Large package* option. To ensure the most accurate cost, you will be asked to enter exact package dimensions. This setting appears when the **eBay synchronization** add-on is installed and set up in the **Add-ons → Manage add-ons** section.
 
-* **Reviews** (requires the :doc:`Comments and Reviews <../../../addons/comments_and_reviews/index>` add-on)—customer reviews or ratings, or both.
+* **Reviews** (requires the :doc:`Comments and Reviews <../../addons/comments_and_reviews/index>` add-on)—customer reviews or ratings, or both.
 
 .. note::
 
@@ -385,7 +385,7 @@ Editing and adding product tabs is done in the **Design → Product tabs** secti
 Buy Together
 ============
 
-Requires the :doc:`Buy Together <../../../addons/buy_together/index>` add-on.
+Requires the :doc:`Buy Together <../../addons/buy_together/index>` add-on.
 
 In this tab, you can bind the product with other products from the catalog and offer a discount if the bound products are bought together. A set of the bound products is referred to as a *product combination*. The discount is promoted on the product details page on the storefront, and customers can decide whether they want to profit by the offer or not.
 
@@ -423,7 +423,7 @@ This tab includes a list of tags associated with the product. Tags appear on the
 Attachments
 ===========
 
-Requires the :doc:`Attachments <../../../addons/attachments/index>` add-on.
+Requires the :doc:`Attachments <../../addons/attachments/index>` add-on.
 
 This tab contains product attachments, which are files associated with the products. Unlike the contents of the **Files to sell** tab, the files that appear here are available for non-downloadable products as well. Each attachment can have the following attributes:
 
@@ -441,7 +441,7 @@ This tab contains product attachments, which are files associated with the produ
 Required Products
 =================
 
-Requires the :doc:`Required Products <../../../addons/required_products/index>` add-on.
+Requires the :doc:`Required Products <../../addons/required_products/index>` add-on.
 
 This tab contains a list of required products, which must be bought together with this product. To add a new product, click the **Add product** button.
 
@@ -453,7 +453,7 @@ This tab contains a list of required products, which must be bought together wit
 Reward Points
 =============
 
-Requires the :doc:`Reward Points <../../../addons/reward_points/index>` add-on.
+Requires the :doc:`Reward Points <../../addons/reward_points/index>` add-on.
 
 Use this tab to set up the product price in reward points and specify the number of reward points to be earned for purchasing the product.
 
@@ -474,7 +474,7 @@ Use this tab to set up the product price in reward points and specify the number
 Reviews
 =======
 
-Requires the :doc:`Comments and Reviews <../../../addons/comments_and_reviews/index>` add-on.
+Requires the :doc:`Comments and Reviews <../../addons/comments_and_reviews/index>` add-on.
 
 The list of customers' reviews of the product. Requires that the **Reviews** field on the **Add-ons** tab be set to *Communication*, *Rating*, or both. In this tab, you can add own reviews and edit existing product reviews and ratings.
 

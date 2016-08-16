@@ -16,7 +16,7 @@ Use the **Website → Pages** section to create and publish new content of the f
 
     Enable and configure the **Form Builder** add-on under **Add-ons → Manage add-ons** to be able to create and edit forms.
 
-* **Poll** (requires the :doc:`Polls <../../../addons/polls/index>` add-on)—a survey or a questionnaire.
+* **Poll** (requires the :doc:`Polls <../addons/polls/index>` add-on)—a survey or a questionnaire.
 
 .. important::
 
@@ -92,7 +92,7 @@ Add-ons
 
 * **SEO name**—a SEO-friendly name of the page.
 
-* **Comments** (requires the :doc:`Comments and Reviews <../../../comments_and_reviews/index` add-on)—a select box to enable or disable user comments and ratings for the page.
+* **Comments** (requires the :doc:`Comments and Reviews <../addons/comments_and_reviews/index>` add-on)—a select box to enable or disable user comments and ratings for the page.
 
 * **Facebook object type**—choose the object type on Facebook to characterize your page contents.
 
