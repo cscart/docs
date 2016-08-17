@@ -20,10 +20,10 @@ The example of the schema that describes the **invoice** document type:
 ::
 
   return array(
-	  'invoice' => array(
-   		  'class' => '\Tygh\Template\Document\Invoice\Type',
-   		  'arguments' => array('@template.snippet.repository', '@databse', '@template.document.invoice.renderer', '@template.variable_meta_data_collection_factory')
-	  )
+      'invoice' => array(
+          'class' => '\Tygh\Template\Document\Invoice\Type',
+          'arguments' => array('@template.snippet.repository', '@databse', '@template.document.invoice.renderer', '@template.variable_meta_data_collection_factory')
+      )
   );
 
 * **'invoice'** — the character id of the document type.
@@ -61,14 +61,14 @@ Here’s the example of describing a variable in a schema:
 ::
 
   return array(
-	  'order' => array(
-   	  'class' => '\Tygh\Template\Document\Invoice\Variables\OrderVariable',
-   		  'arguments' => array('#context', '#config', '@formatter'),
+      'order' => array(
+          'class' => '\Tygh\Template\Document\Invoice\Variables\OrderVariable',
+   	  'arguments' => array('#context', '#config', '@formatter'),
    	  'alias' => 'o',
-   		  'attributes' => array(
-       	  'order_id', 'company_id', 'total', 'subtotal', ...
-	  )
-  )
+          'attributes' => array(
+       	      'order_id', 'company_id', 'total', 'subtotal', ...
+          )
+      )
   );
 
 * **'order'** — the basic name of the variable, for example, ``{{ order.total }}``. By using it you can refer to a variable in the template.
@@ -91,11 +91,11 @@ The description for this parameter can be omitted. By default it is considered t
 
 ::
 
-	  'products' => array(
-            '0..N' => array(
-		  'item_id', 'product_id', 'product_code', 'price', 'amount', 'product', 'product_status'
-            )
-        ).
+  'products' => array(
+      '0..N' => array(
+          'item_id', 'product_id', 'product_code', 'price', 'amount', 'product', 'product_status'
+      )
+  ).
 
 If this parameter is omitted, then reflection will be used to get the attributes. All public nonstatic properties of the class, and also public nonstatic methods of the class that begin with ``get`` will be considered as available attributes.
 
@@ -208,30 +208,30 @@ File **app/addons/barcode/Barcode/Invoice/BarcodeVariable.php**.
 
   class BarcodeVariable implements IVariable
   {
-	  public $image;
+      public $image;
 
-	  public function __construct(Context $context)
-	  {
-   		  $order = $context->getOrder();
+      public function __construct(Context $context)
+      {
+          $order = $context->getOrder();
 
-   		  $width = Registry::get('addons.barcode.width');
-   		  $height = Registry::get('addons.barcode.height');
-   		  $url = fn_url(sprintf(
-  'image.barcode?id=%s&type=%s&width=%s&height=%s&xres=%s&font=%s&no_session=Y',
-       	  $order->getId(),
-       		  Registry::get('addons.barcode.type'),
-       	  $width,
-       	  $height,
-       	  Registry::get('addons.barcode.resolution'),
-       	  Registry::get('addons.barcode.text_font')
-   		  ));
+          $width = Registry::get('addons.barcode.width');
+          $height = Registry::get('addons.barcode.height');
+          $url = fn_url(sprintf(
+              'image.barcode?id=%s&type=%s&width=%s&height=%s&xres=%s&font=%s&no_session=Y',
+       	      $order->getId(),
+              Registry::get('addons.barcode.type'),
+       	      $width,
+       	      $height,
+       	      Registry::get('addons.barcode.resolution'),
+       	      Registry::get('addons.barcode.text_font')
+          ));
 
-   	  $this->image = <<<EOF
+          $this->image = <<<EOF
   <div style="text-align:center">
-	  <img src="{$url}" alt="BarCode" width="{$width}" height="{$height}">
+      <img src="{$url}" alt="BarCode" width="{$width}" height="{$height}">
   </div>
   EOF;
-	  }
+      }
   }
 
 Extending the variable schema for the documents of invoice type: 
@@ -242,7 +242,7 @@ Adding file **/app/addons/barcode/schemas/documents/invoice.post.php**.
 
   <?php
   $schema['barcode'] = array(
-    'class' => '\Barcode\Invoice\BarcodeVariable'
+      'class' => '\Barcode\Invoice\BarcodeVariable'
   );
 
   return $schema;
