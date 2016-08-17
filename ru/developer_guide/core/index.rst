@@ -26,7 +26,6 @@
 
     structure/index
     coding_standards/index
-    getting_started/configuring_environment
     controllers/index
     front-end/index
     db/index

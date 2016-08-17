@@ -10,4 +10,5 @@
     addons/index
     api/index
     tools/index
+    getting_started/configuring_environment
     1c/index
