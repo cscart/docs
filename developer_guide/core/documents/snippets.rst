@@ -112,10 +112,10 @@ For example:
   /** @var \Tygh\Template\Snippet\Service $snippet_service */
   $snippet_service = Tygh::$app['template.snippet.service'];
   $snippet_service->createSnippet(array(
-	  ‘code’ => ‘barcode_image’,
-	  ‘type’ => ‘invoice’,
-	  ‘status’ => ‘A’,
-	  ‘template’ => ‘<img src="...">’
+      ‘code’ => ‘barcode_image’,
+      ‘type’ => ‘invoice’,
+      ‘status’ => ‘A’,
+      ‘template’ => ‘<img src="...">’
   ));
 
 To delete the snippet the method ``removeSnippetByTypeAndCode`` is used.
@@ -127,7 +127,6 @@ For example:
   /** @var \Tygh\Template\Snippet\Service $snippet_service */
   $snippet_service = Tygh::$app['template.snippet.service'];
   $snippet_service->removeSnippetByTypeAndCode(‘invoice’, ‘barcode_image’);
-
 
 Usually add-ons automatically monitor the status of their snippets. If the add-on is disabled, it will automatically disable all its snippets, so that the snippets don’t interfere in the process of document formation. To update the status of the snippet the methods ``updateSnippetStatus`` or ``updateSnippetStatusByTypeAndCode`` are used.
 

@@ -87,15 +87,16 @@ When calling a message sending method, enter the character identifier of the ema
 
 ::
 	
-	  $mailer->send(array(
-  'to' => 'company_orders_department',
-  'from' => 'default_company_orders_department',
-  'data' => array(...)	
-  /* указание идентификатора почтового шаблона. */
-  'template_code' => 'call_requests_call_request',
-  'tpl' => 'addons/call_requests/call_request.tpl',
-  'company_id' => $company_id,
+  $mailer->send(array(
+      'to' => 'company_orders_department',
+      'from' => 'default_company_orders_department',
+      'data' => array(...)	
+      /* indicating email template id. */
+      'template_code' => 'call_requests_call_request',
+      'tpl' => 'addons/call_requests/call_request.tpl',
+      'company_id' => $company_id,
   ), 'A', $lang_code);
+
 
 3. Defining the type of the email event.
 Before sending the message the ``\Tygh\Mailer\Mailer`` service defines how the body of the message is formed. Currently there are 3 ways to do this:
@@ -130,11 +131,11 @@ For example:
   $service = Tygh::$app['template.mail.service'];
 
   $service->createTemplate(array(
-	  'code' => 'new_notification',
-	  'area' => 'C',
-	  'status' => 'A',
-	  'subject' => '{{ __("new_notification_subject") }}',
-	  'template' => '{{ snippet("header") }} <br/> Dear {{ customer_name }}! <br/> ... <br/> {{ snippet("footer") }}',
+      'code' => 'new_notification',
+      'area' => 'C',
+      'status' => 'A',
+      'subject' => '{{ __("new_notification_subject") }}',
+      'template' => '{{ snippet("header") }} <br/> Dear {{ customer_name }}! <br/> ... <br/> {{ snippet("footer") }}',
   ));
 
 =============================
@@ -158,25 +159,25 @@ Any email notification template may contain additional parameters that can be pr
 ::
 
   array(
-	  "var_name" => array(
-		  "type" => "checkbox",
-		  "title" => "param_title",
-		  "description" => "param_description"
-	  ),
-	  "var_name1" => array(
-		  "type" => "checkboxes",
-		  "title" => "param_title",
-		  "description" => "param_description",
-		  "variants" => array(
-			  "variant_key" => "variant_name"
-		  )
-	  ),
-	  "var_name2" => array(
-		  "type" => "checkboxes",
-		  "title" => "param_title",
-		  "description" => "param_description",
-		  "func" => "fn_get_params_variants"
-	  ),
+       "var_name" => array(
+           "type" => "checkbox",
+           "title" => "param_title",
+           "description" => "param_description"
+       ),
+       "var_name1" => array(
+           "type" => "checkboxes",
+           "title" => "param_title",
+           "description" => "param_description",
+           "variants" => array(
+               "variant_key" => "variant_name"
+          )
+       ),
+       "var_name2" => array(
+           "type" => "checkboxes",
+           "title" => "param_title",
+           "description" => "param_description",
+           "func" => "fn_get_params_variants"
+       ),
   )
 
 Where:
@@ -194,9 +195,9 @@ Additional parameters allow you to attach the invoice document to email notifica
 ::
 
   array(
-	  "attach_invoice": array(
-		  "type": "checkbox",
-		  "title": "email_template.params.attach_invoice"
-	  )
+       "attach_invoice": array(
+           "type": "checkbox",
+           "title": "email_template.params.attach_invoice"
+       )
   )
 
