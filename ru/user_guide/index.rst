@@ -10,6 +10,7 @@
 
     addons/index
     look_and_feel/layouts/widget_mode/index
+    look_and_feel/languages/index
     manage_products/index
     payment_methods/index
     shipping_and_taxes/index
