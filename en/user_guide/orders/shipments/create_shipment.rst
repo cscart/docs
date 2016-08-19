@@ -15,9 +15,9 @@ Shipments are created separately for each order on the **order details** page in
 
 3. Create one or multiple shipments for the order:
 
-   * **The quick way** creates a single shipment automatically. You'll have to select a carrier or enter the tracking number.
+   * **The quick way** creates a single shipment automatically.
 
-   * **The thorough way** allows you to create one or multiple shipments. You won't have to select a carrier or enter the tracking number. 
+   * **The thorough way** allows you to create one or multiple shipments manually.
 
 .. note::
 
@@ -33,7 +33,7 @@ The Quick Way
 
 If you ship all the products in one batch via the same carrier:
 
-* Choose the **carrier** and/or enter the **tracking number**.
+* Select a **carrier** and/or enter a **tracking number**.
 
 * Click **Save changes**. The shipment will be created automatically.
 
@@ -61,7 +61,13 @@ If you plan to ship products via different carriers or just in separate batches:
 
 * Choose a shipping method.
 
-* Optionally, enter a tracking number, choose a carrier, and add your comments.
+* Enter a tracking number and/or choose a carrier.
+
+  .. important::
+
+      If you leave both the **Tracking number** and **Carrier** fields empty, the shipment won't be created.
+
+* Add your comments.
 
 * Change the order status, if necessary.
 
