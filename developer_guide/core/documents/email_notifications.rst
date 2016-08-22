@@ -64,11 +64,11 @@ Programming interface
 
 To manage and manipulate the email templates the following classes are implemented:
 
-* ``\Tygh\Template\Mail\Template`` — the template model. It’s a programming representation of the template structure in the database.
+* ``\Tygh\Template\Mail\Template``—the template model. It’s a programming representation of the template structure in the database.
 
-* ``\Tygh\Template\Mail\Repository`` — the template repository. The class implements low-level methods of receiving/adding/updating/deleting templates from the database. The class instance is available from the container ``Tygh::$app[‘template.mail.repository’]``
+* ``\Tygh\Template\Mail\Repository``—the template repository. The class implements low-level methods of receiving/adding/updating/deleting templates from the database. The class instance is available from the ``Tygh::$app[‘template.mail.repository’]`` container.
 
-* ``\Tygh\Template\Mail\Service`` — the service class that implements higher-level methods of template management. The class instance is available from the container ``Tygh::$app[‘template.mail.service’]``
+* ``\Tygh\Template\Mail\Service``—the service class that implements higher-level methods of template management. The class instance is available from the ``Tygh::$app[‘template.mail.service’]`` container.
 
 ======================================
 The Email Notifications Sending Schema
@@ -82,7 +82,7 @@ The Email Notifications Sending Schema
 This step hasn’t changed much. The data must be gathered to form the body of the message.
 
 2.Calling the sender subsystem
-The static class ``\Tygh\Mailer`` was replaced by the service class ``\Tygh\Mailer\Mailer``, that is available from the container ``Tygh::$app['mailer']``. 
+The static class ``\Tygh\Mailer`` was replaced by the service class ``\Tygh\Mailer\Mailer``, that is available from the ``Tygh::$app['mailer']`` container. 
 When calling a message sending method, enter the character identifier of the email message. Based on that email message the body of the message is formed. For this purpose the ``template_code`` key is used. For example:
 
 ::
@@ -144,11 +144,11 @@ Extending Email Notifications
 
 PHP hooks:
 
-* ``template_email_get_name - fn_set_hook('template_email_get_name', $this, $name)`` - it's called after the name of the notification template was formatted. The hook is used to change the name.
+* **template_email_get_name**—``fn_set_hook('template_email_get_name', $this, $name)``—it's called after the name of the notification template was formatted. The hook is used to change the name.
 
-* ``mailer_send_pre - fn_set_hook('mailer_send_pre', $this, $transport, $message, $area, $lang_code)`` - it's called before the message is sent. This hook is used to change the content of the message.
+* **mailer_send_pre**—``fn_set_hook('mailer_send_pre', $this, $transport, $message, $area, $lang_code)``—it's called before the message is sent. This hook is used to change the content of the message.
 
-* ``mailer_send_post - fn_set_hook('mailer_send_post', $this, $transport, $message, $result, $area, $lang_code)`` - it's called after the message was sent.
+* **mailer_send_post**—``fn_set_hook('mailer_send_post', $this, $transport, $message, $result, $area, $lang_code)``—it's called after the message was sent.
 
 ==============================
 Additional template parameters
@@ -182,14 +182,15 @@ Any email notification template may contain additional parameters that can be pr
 
 Where:
 
-* ``"var_name"`` — the name of the variable that is used to save the value.
-* ``"type"`` — the type of the variable; the available types are: checkbox, checkboxes, textarea, input.
-* ``"title"`` — the name of the language variable that will be used as the name of the field.
-* ``"description"`` — the name of the language variable that will be used as a hint for the field.
-* ``"variants"`` — array of variants for the parameter type ``checkboxes``.
-* ``"func"`` — the function that forms the array of variants for a parameter with the ``checkboxes`` type.
+* ``"var_name"``—the name of the variable that is used to save the value.
+* ``"type"``—the type of the variable; the available types are: *checkbox*, *checkboxes*, *textarea*, *input*.
+* ``"title"``—the name of the language variable that will be used as the name of the field.
+* ``"description"``—the name of the language variable that will be used as a hint for the field.
+* ``"variants"``—array of variants for the parameter type ``checkboxes``.
+* ``"func"``—the function that forms the array of variants for a parameter with the ``checkboxes`` type.
 
 The saved values will be available in the property of the model of the notification template.
+
 Additional parameters allow you to attach the invoice document to email notifications about order status changes. The checkbox, that determines if the invoice must be attached, appears on the template editing page. The value of this checkbox is handled in the ``mailer_send_pre`` prehook. If the checkbox is ticked, the pdf file will be attached to the message. In this case the schema of variables looks this way:
 
 ::
