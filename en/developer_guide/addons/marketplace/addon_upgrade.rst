@@ -2,10 +2,6 @@
 Distributing Add-on Upgrades via the Marketplace
 ************************************************
 
-=======================================
-Step 1. Build an Add-on Upgrade Package
-=======================================
-
 An upgrade package is an archive that contains all the files necessary to upgrade a customer’s add-on automatically. Normally this archive includes:
 
 * Files that were changed or added in the new version.
@@ -24,9 +20,97 @@ Upgrade packages can be installed in the Upgrade Center in one of the ways:
 
 This article tells how add-on developers can create upgrade packages for their add-ons.
 
--------------------------------------------
-Way 1. Building an Upgrade Package Manually
--------------------------------------------
+===========================================
+Preface: Recommended Structure of an Add-on
+===========================================
+
+.. _marketplace-addon-structure:
+
+If you want to build upgrade packages via the Marketplace, please follow this structure when developing an add-on:
+
+.. code::
+
+    ├── app
+    │   └── addons
+    │       └── [sample_addon]
+    │           ├── addon.xml
+    │           ├── config.php
+    │           ├── func.php
+    │           └── upgrades
+    │               ├── [version1]
+    │               │   ├── migrations
+    │               │   │   ├── 467676233_migration1.php
+    │               │   │   └── 467676233_migration2.php
+    │               │   │
+    │               │   ├── validators
+    │               │   │   ├── validator1.php
+    │               │   │   └── validator2.php
+    │               │   │
+    │               │   ├── scripts
+    │               │   │   ├── pre_script.php
+    │               │   │   └── post_script.php
+    │               │   │
+    │               │   ├── extra_files
+    │               │   │   ├── extra_file1.php
+    │               │   │   └── extra_file2.php
+    │               │   │
+    │               │   └── extra
+    │               │       └── extra.php
+    │               │
+    │               ├── [version2]
+    │                   │   ├── migrations
+    │                   │   │   ├── 467676233_migration1.php
+    │                   │   │   └── 467676233_migration2.php
+    │                   │   │
+    │                   │   ├── validators
+    │                   │   │   ├── validator1.php
+    │                   │   │   └── validator2.php
+    │                   │   │
+    │                   │   ├── scripts
+    │                   │   │   ├── pre_script.php
+    │                   │   │   └── post_script.php
+    │                   │   │
+    │                   │   ├── extra_files
+    │                   │   │   ├── extra_file1.php
+    │                   │   │   └── extra_file2.php
+    │                   │   │
+    │                   │   ├── extra
+    │                   │   │   └── extra.php
+    ...
+
+* **[sample_addon]**—the name of the add-on.
+
+* **[version1]**—a version, for example 1.1.0.
+
+* **[version2]**—a version, for example 1.1.1.
+
+* **app/addons/[sample_addon]/upgrades/[version]/migrations**—a folder with the migrations to be performed when upgrading to this [version].
+
+* **app/addons/[sample_addon]/upgrades/[version]/validators**—a folder with the validators which must run their checks before upgrading to this [version].
+
+* **app/addons/[sample_addon]/upgrades/[version]/scripts**—a folder with pre/post scripts to be executed before and after upgrading to this [version].
+
+* **app/addons/[sample_addon]/upgrades/[version]/extra_files**—a folder with the extra files that are used only during the upgrade and aren't added to CS-Cart/Multi-Vendor.
+ 
+* **app/addons/[sample_addon]/upgrades/[version]/extra/extra.php**—a file for extending **package.json** of the upgrade package.
+
+Files and folders in *app/addons/[sample_addon]/upgrades/[version]* aren't required. For example, if the new version has no changes in the database, there's no need to create a folder with migrations.
+
+.. hint::
+
+    Learn more about the components of an upgrade package :ref:`here <upgrade-package-structure>`.
+
+===============================
+Build an Add-on Upgrade Package
+===============================
+
+----------------------------------------
+Way 1. Build an Upgrade Package Manually
+----------------------------------------
+
+""""""""""""""""""""""""""""""""""
+Step 1. Create the Upgrade Package
+""""""""""""""""""""""""""""""""""
 
 Create an upgrade package as described :doc:`in this article <../../../upgrade/upgrade_addon>`. Instead of creating an upgrade connector you’ll need a Marketplace connector. It must be located in the *app/addons/[addon_name]/Tygh/UpgradeCenter/Connectors/[AddonName]/Connector.php* and have the following content:
 
@@ -147,46 +231,65 @@ Create an upgrade package as described :doc:`in this article <../../../upgrade/u
 
     The Marketplace connector will be built in CS-Cart & Multi-Vendor starting with version 4.4.1. That means you won’t have to create upgrade connectors for these versions.
 
--------------------------------------------------------
-Way 2. Building an Upgrade Package with the Marketplace
--------------------------------------------------------
-
-.. important::
-
-    We plan to implement this functionality in the near future.
-
-=============================================
+"""""""""""""""""""""""""""""""""""""""""""""
 Step 2. Upload the Package to the Marketplace
-=============================================
+"""""""""""""""""""""""""""""""""""""""""""""
 
-2.1. Open the add-on editing page on the Marketplace.
+1. Open the add-on editing page on the Marketplace.
 
-2.2. Go to the **Product packages** tab.
+2. Go to the **Product packages** tab.
 
-2.3. Click **Upload upgrade**.
+3. Click **Upload upgrade**.
 
 .. image:: img/package_list.png
 	:align: center
 	:alt: You can upload an upgrade package on the package list, which is available on the Product packages tab.
 
-2.4. Use the **File** field to select the archive you created.
+4. Use the **File** field to select the archive you created.
 
-2.5. Specify the versions in the **Upgrade from** and **Upgrade to** fields.
+5. Specify the versions in the **Upgrade from** and **Upgrade to** fields.
 
-2.6. (Optional) Enter **Package description**.
+6. (Optional) Enter **Package description**.
 
-2.7. Click **Create**.
+7. Click **Create**.
 
 .. image:: img/upload_upgrade.png
 	:align: center
 	:alt: When you upload an upgrade to the Marketplace,  you specify from and to which versions the add-on is upgraded.
 
+---------------------------------------------------
+Way 2. Build an Upgrade Package via the Marketplace
+---------------------------------------------------
+
+.. important::
+
+    To be able to build upgrade packages via the Marketplace, please follow the :ref:`recommended structure of an add-on <marketplace-addon-structure>`.
+
+1. Open the add-on editing page on the Marketplace.
+
+2. Switch to the **Product packages** tab.
+
+3. Click **Build upgrade**.
+
+.. image:: img/package_list.png
+	:align: center
+	:alt: Go to the Product packages tab and click Build upgrade.
+
+4. Specify the versions in the **Upgrade from** and **Upgrade to** fields.
+
+5. (Optional) Enter **Package description**.
+
+6. Click **Create**.
+
+.. image:: img/build_upgrade_via_marketplace.png
+	:align: center
+	:alt: Specify the properties of the upgrade package you're building.
 
 .. _test-addon-package:
 
-===========================================
-Step 3. View and Test Your Upgrade Packages
-===========================================
+===================================
+View and Test Your Upgrade Packages
+===================================
 
 The list of upgrade packages is available on the **Product packages** tab of your add-on:
 
@@ -209,4 +312,3 @@ You'll find the access token on your profile editing page in the Marketplace:
 .. image:: img/access_token.png
 	:align: center
 	:alt: To test a disabled upgrade package, open the editing page of your profile on the Marketplace.
-
