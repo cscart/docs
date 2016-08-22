@@ -26,7 +26,7 @@ Connecting Repository to the Marketplace
 GitHub
 ------
 
-1. Open the repository of the add-on on GitHub to find out where to get the values for the settings in the Marketplace:
+1. Go to the repository of the add-on on GitHub to find out where to get the values for the settings in the Marketplace:
 
    * **Repository owner**—the username [1].
 
@@ -104,6 +104,64 @@ GitHub
 	:align: center
 	:alt: Enter webhook URL and secret, and select the content type.
 
+---------
+Bitbucket
+---------
+
+1. Go to the repository of the add-on on Bitbucket and switch to the **Source** tab [1] to find out where to get the values for the settings in the Marketplace:
+
+   * **Repository owner**—enter the username from the URL [2].
+
+   * **Repository name**—enter the name of the repository from the URL [3].
+
+   * **Branch name**—enter one of the branches that exist in the repository [4].
+
+.. image:: img/bitbucket_credentials.png
+	:align: center
+	:alt: Enter the repository owner, repository name and branch name.
+
+2. Specify other settings:
+
+   * **Bitbucket username**—your Bitbucket login [5].
+
+   * **Bitbucket password**—your Bitbucket password [6].
+
+   * **Status**—*Active* [7].
+
+3. Save your changes, then copy the URL from the **Webhook URL** field [8].
+
+.. image:: img/bitbucket_webhook_url.png
+	:align: center
+	:alt: Specify the settings, save the changes and copy the Webhook URL.
+
+4. Open your Bitbucket repository.
+
+5. Go to **Settings** [9]. 
+
+6. Switch to **Webhooks** [10].
+
+7. Click **Add webhook** [11].
+
+.. image:: img/bitbucket_add_webhook.png
+	:align: center
+	:alt: Go to Settings: Webhooks and add a new webhook.
+
+8. Configure your new webhook:
+
+   * **Title** [12]—webhook name.
+
+   * **URL** [13]—the value of **Webhook URL** from [8].
+
+   * **Status** [14]—*Active*.
+
+   * **Triggers**—*Repository push* [15].
+
+9. Save your webhook [16].
+
+.. image:: img/bitbucket_webhook_settings.png
+	:align: center
+	:alt: Configure your webhook and save it.
+
 =====================================
 Creating Add-on Releases via Git Tags
 =====================================
@@ -153,17 +211,45 @@ GitHub
 
 1. Open the editing page of the webhook you created.
 
-2. Expand the delivery event [20].
+2. Expand the delivery event [1].
 
-3. Switch to the **Response** tab [21].
+3. Switch to the **Response** tab [2].
 
-4. The response from the server about the building process appears in the Body section [22].
+4. The response from the server about the building process appears in the **Body** section [3].
 
-5. To process the webhook again if there are any errors, click **Redeliver** [23].
+5. To process the webhook again if there are any errors, click **Redeliver** [4].
 
 .. image:: img/github_monitoring.png
 	:align: center
 	:alt: Go to the Response tab of your webhook to see the response from the server about the building process.
+
+---------
+Bitbucket
+---------
+
+1. Go to your repository on Bitbucket.
+
+2. Switch to **Settings**, then to **Webhooks**.
+
+3. Click **View requests** next to the webhook you created [1].
+
+.. image:: img/bitbucket_webhook_requests.png
+	:align: center
+	:alt: Go to the Response tab of your webhook to see the response from the server about the building process.
+
+4. Click **View details** next to an event [2].
+
+.. image:: img/bitbucket_log_details.png
+	:align: center
+	:alt: View the details of an event by clicking the corresponding link.
+
+5. You can find the response of the server in the **Response from http://marketplace.cs-cart.com/update-package/… > Body** section [3].
+
+6. To process the webhook again in case of errors, click **Resend request** [4].
+
+.. image:: img/bitbucket_resend_request.png
+	:align: center
+	:alt: View the response of the server and resend the request, if there are any errors.
 
 ==============
 Error Messages

@@ -146,6 +146,8 @@ After receiving a file, Upgrade Center App unpacks and checks it:
 Package structure
 +++++++++++++++++
 
+.. _upgrade-package-structure:
+
 Here is the approximate package structure:
 
 .. code-block:: none
