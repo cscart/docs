@@ -19,3 +19,4 @@
     shipping_and_taxes/index
     import_export/index
     users/index
+    database/index

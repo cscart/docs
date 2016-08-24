@@ -6,7 +6,7 @@ This section deals with database backups: here you can learn how to create them 
 
 .. note::
 
-    It takes more than backing up a database to have a store backed up: some information, like images, is stored the various folders of your CS-Cart/Multi-Vendor installation. However, there is an option to include files in the backup. 
+    It takes more than backing up a database to have a store backed up: some information, like images, is stored in various folders of your CS-Cart/Multi-Vendor installation. However, there is a setting that allows you to include files in the backup. 
 
 .. toctree::
     :maxdepth: 4

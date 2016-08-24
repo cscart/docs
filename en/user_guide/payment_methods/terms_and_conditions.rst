@@ -11,7 +11,7 @@ To add the "Terms and Conditions" link to the Checkout page, follow these steps:
 
 	Make sure that the **My changes** add-on is installed and activated in the **Add-ons → Manage add-ons** section of the Administration panel.
 
-2. In the *design/themes/<Your_Active_Theme>/templates/addons/my_changes/hooks/checkout* directory, create the **terms_and_conditions.override.tpl** file with the following content:
+2. In the *design/themes/[CUSTOMER_ACTIVE_THEME]/templates/addons/my_changes/hooks/checkout* directory, create the **terms_and_conditions.override.tpl** file with the following content:
 
 ::
 
@@ -47,4 +47,4 @@ To add the "Terms and Conditions" link to the Checkout page, follow these steps:
 
 .. important:: 
 
-    To display the *By checking this checkbox, you accept the Terms and Conditions* checkbox on the **Checkout** page, you must tick the **Ask customers to agree with terms & conditions during checkout** option in the administration panel under **Settings → Checkout** and click **Save**.
+    To display the *By checking this checkbox, you accept the Terms and Conditions* checkbox on the checkout page, you must tick the **Ask customers to agree with terms & conditions during checkout** option in the administration panel under **Settings → Checkout** and click **Save**.

@@ -10,7 +10,11 @@
     :glob:
 
     adding_payment
-
+    configure_payment
+    offline_payment
+    terms_and_conditions
+    bank_details_at_checkout
+    different_payment_info
 
 Платёжные системы
 =================

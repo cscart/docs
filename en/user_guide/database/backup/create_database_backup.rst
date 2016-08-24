@@ -20,23 +20,21 @@ Follow the instructions to make a full backup of the store database:
 
 4. Specify the parameters of the backup:
 
- * **Backup files**—tick this checkbox, if you want the backup to include the files of your store. Otherwise it will only include the SQL file with the database dump.
+   * **Backup files**—tick this checkbox, if you want the backup to include the files of your store. Otherwise it will only include the SQL file with the database dump.
 
- * **Extra folders**—choose additional directories to be included in the backup.
+   .. note::
 
- * **Backup database data**—if ticked, the backup will include the database data proper. Normally, this option should be enabled, unless you have a reason to do otherwise.
+       Some information, like images, is stored in various folders of your CS-Cart/Multi-Vendor installation. If you want to fully back up your store, make sure to back up the files.
 
- * **Select tables**—list of the database tables to be included in the backup. The tables with the *cscart* prefix are selected in the list by default. To select multiple entries, press and hold the **CTRL** or **SHIFT** key.
+   * **Extra folders**—choose additional directories to be included in the backup.
 
- * **Backup database schema**—if ticked, the backup includes the structure of the database tables. Normally, this option should be enabled, unless you have reason to do otherwise.
+   * **Backup database data**—if ticked, the backup will include the database data proper. Normally, this option should be enabled, unless you have a reason to do otherwise.
 
- * **Backup file name**—name of the SQL file containing the database dump.
+   * **Select tables**—list of the database tables to be included in the backup. The tables with the ``cscart`` prefix are selected in the list by default. To select multiple entries, press and hold the **CTRL** or **SHIFT** key.
 
- * **Compress backup file**—select the archive format for your database backup.
+   * **Backup database schema**—if ticked, the backup includes the structure of the database tables. Normally, this option should be enabled, unless you have reason to do otherwise.
 
-.. important::
-
-    If you have chosen to compress the backup file, the filename that you enter here will be expanded with the **.tgz** extension.
+   * **Backup file name**—name of the archive that contains the database dump.
 
 5. Click the **Create** button.
 
