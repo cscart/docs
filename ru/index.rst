@@ -48,3 +48,15 @@
     :titlesonly:
 
     designer_guide/index
+
+Обновление
+==========
+
+Всё об обновлении CS-Cart
+
+
+.. toctree::
+    :maxdepth: 3
+    :titlesonly:
+
+    upgrade/index

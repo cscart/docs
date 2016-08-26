@@ -11,6 +11,7 @@
     admin_panel
     addons/index
     currencies/index
+    files/index
     logs/index
     look_and_feel/layouts/widget_mode/index
     look_and_feel/languages/index
