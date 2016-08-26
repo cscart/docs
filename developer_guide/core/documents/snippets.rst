@@ -177,7 +177,7 @@ Added extra filters and functions:
 
 .. hint::
 
-    Learn more about the template engine from `the official Twig documentation <http://twig.sensiolabs.org>_`
+    Learn more about the template engine from `the official Twig documentation <http://twig.sensiolabs.org>`_
 
 More information on the template engine you can find at the twig documentation website: http://twig.sensiolabs.org/
 
