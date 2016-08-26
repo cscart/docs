@@ -75,3 +75,4 @@ In this section
     images_import_problem
     incorrect_thumbnails
     wysiwyg
+    add_product

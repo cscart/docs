@@ -27,4 +27,6 @@ Such URLs not only help search engines to index store pages, but they also impro
     seo_names
     numbers
     seo_not_work
+    seo_addon_technical_info
+    seo_settings
 
