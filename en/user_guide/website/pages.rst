@@ -98,7 +98,7 @@ Add-ons
 
 .. important::
 
-    For these fields to appear, you need to activate the **Social Buttons**, **Comments and Reviews**, and **SEO** add-ons under **Add-ons → Manage add-ons**.
+    For these fields to appear, activate the **Social Buttons**, **Comments and Reviews**, and **SEO** add-ons under **Add-ons → Manage add-ons**.
 
 ----
 Tags
@@ -118,10 +118,6 @@ Comments
 
 The list of user comments and ratings for the page. The **Comments** field in the **Add-ons** tab must be set to *Communication*, *Rating*, or *Communication and rating*.
 
-.. note::
-
-    The **Comments and reviews** add-on is not available in the Free mode.
-
 * **Name**—the name of the user who left the comment/rating.
 
 * **Your rating**—user's evaluation of the page.
@@ -140,7 +136,7 @@ Form Builder
 
 .. note::
 
-    The **Form builder** tab appears only if you create a form.
+    This tab only appears for a form.
 
 * **Form submit text**—the text that is shown to the user after the form is submitted.
 
@@ -176,7 +172,7 @@ Poll
 
 .. note::
 
-    The **Polls** add-on is not available in the free mode. The **Poll** tab only appears when you create a poll.
+    This tab only appears for a poll.
 
 * **Poll results visible to**—the types of users, who can see the poll results.
 
@@ -192,7 +188,7 @@ Questions
 
 .. note::
 
-    The **Polls** add-on is not available in the free mode. The **Poll** tab only appears when you create a poll.
+    This tab only appears for a poll.
 
 This tab lists the questions included in the poll.
 
@@ -238,7 +234,7 @@ Poll Statistics
 
 .. note::
 
-    The **Polls** add-on is not available in the free mode. The **Poll** tab only appears when you create a poll.
+    This tab only appears for a poll.
 
 This tab contains the statistics on the submitted/completed polls and questionnaires.
 
