@@ -15,7 +15,7 @@
     :titlesonly:
     :glob:
 
-    upgrade
+    upgrade_process
     resolve_conflicts
     cscart_not_found
 
