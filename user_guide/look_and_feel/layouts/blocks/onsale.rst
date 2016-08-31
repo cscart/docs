@@ -1,6 +1,6 @@
-****************
-On Sale Products
-****************
+*****************************************
+How To: Create the Products on Sale Block
+*****************************************
 
 To create the **On Sale** section (if you do not have one) on the Homepage:
 
