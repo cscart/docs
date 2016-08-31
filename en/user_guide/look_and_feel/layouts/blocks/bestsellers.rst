@@ -2,6 +2,8 @@
 How To: Add the Bestsellers Block to the Homepage
 *************************************************
 
+The Bestsellers section shows the most popular products among customers in the store. This section can greatly raise the sales and attract more customers.
+
 *   In the Administration panel, go to **Add-ons → Manage add-ons**.
 *   Enable the **Bestsellers & On Sale Products** add-on (change its status to *Active* in the select box on the right).
 *   Go to **Design → Layouts → Homepage**.
@@ -22,3 +24,9 @@ How To: Add the Bestsellers Block to the Homepage
     :alt: The Content tab
 
 *   Drag and drop your block if you want to change its position relatively to other blocks.
+
+This is how the Bestsellers block looks on the storefront:
+
+.. image:: img/bestsellers_02.png
+    :align: center
+    :alt: View from the storefront

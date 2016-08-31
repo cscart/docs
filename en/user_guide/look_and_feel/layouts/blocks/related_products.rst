@@ -2,7 +2,13 @@
 How To: Create the Related Products Section on the Product Details Page
 ***********************************************************************
 
+The Related Products section displays the products that have something in common with the product selected. For example, gamepads and video games are related to game consoles; or TVs are related to Blu-Ray players and audio systems.
+
 To create the **Related products** section on the product details page:
+
+======================
+Step 1. Create a Block
+======================
 
 *   In the Administration panel, go to **Design → Layouts → Products** tab.
 *   Click the **+** icon in the necessary container and click **Add block**.
@@ -25,6 +31,10 @@ To create the **Related products** section on the product details page:
         :align: center
         :alt: Content tab
 
+================================
+Step 2. Add a Block to a Product
+================================
+
 *   Go to **Products → Products** and click on any product.
 *   On the product details page, open the **Layouts** tab.
 *   Related products block is active.
@@ -38,3 +48,8 @@ To create the **Related products** section on the product details page:
 .. note::
 
 	After the block is created or changed, make sure it is displayed correctly. Sometimes not all wrappers are suitable for a specific block type.
+
+.. image:: img/related_04.png
+    :align: center
+    :alt: Block on the storefront
+

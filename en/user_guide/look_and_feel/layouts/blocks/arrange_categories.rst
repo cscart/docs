@@ -2,6 +2,8 @@
 How To: Arrange Categories on the Storefront Homepage
 *****************************************************
 
+You can arrange categories right on the storefront homepage. By using the **Categories** block you can create and add to the storefront the list of desired categories.
+
 *	In the Administration panel, go to **Design → Layouts → Homepage**.
 *	Click the **+** button in the necessary container and click **Add block**.
 *	Open the **Create New Block** tab and in the opened section choose **Categories**.
@@ -28,3 +30,9 @@ How To: Arrange Categories on the Storefront Homepage
 .. note::
 
 	After the block is created or changed, make sure it is displayed correctly. Sometimes not all wrappers are suitable for a specific block type.
+
+This is how arranged categories look on the storefront:
+
+.. image:: img/arranging_categories_03.png
+    :align: center
+    :alt: View from the storefront

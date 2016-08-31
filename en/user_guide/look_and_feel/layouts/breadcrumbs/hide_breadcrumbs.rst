@@ -4,23 +4,22 @@ How To: Hide Breadcrumbs
 
 To disable breadcrumbs in the storefront, do the following:
 
-*   In the Administration panel, go to **Design → Layouts**.
-*   Click the tab of the layout page, where you want to disable breadcrumbs. If the page is not in the layout pages list, click the **Default** layout page.
+1. In the Administration panel, go to **Design → Layouts**.
 
-.. image:: img/breadcrumbs_01.png
-    :align: center
-    :alt: Choose layout page
+2. Click the tab of the layout page, where you want to disable breadcrumbs. 
 
-*   Click the **Activate/Deactivate Block** icon of the **Breadcrumbs** block.
+   .. note::
 
-.. image:: img/breadcrumbs_02.png
-    :align: center
-    :alt: Deactivate block
+       If the page is not in the layout pages list, click the **Default** layout page.
 
-The block should become lighter:
+3. Click the **Activate/Deactivate Block** icon of the **Breadcrumbs** block. The block should become lighter.
 
-.. image:: img/breadcrumbs_03.png
+.. image:: img/breadcrumbs_05.png
     :align: center
     :alt: Deactivated block
 
-*   Repeat these steps for all layout pages where you want to disable breadcrumbs.
+4. Repeat these steps for all layout pages where you want to disable breadcrumbs.
+
+.. image:: img/breadcrumbs_04.png
+    :align: center
+    :alt: Deactivated block on the storefront

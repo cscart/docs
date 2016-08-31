@@ -18,7 +18,7 @@ Also bought
 
 With this filling type, the block contains links to products that are usually bought together with the product that the visitor scans at the moment.
 
-This filling type is available when the `Customers also bought <http://docs.cs-cart.com/4.4.x/user_guide/addons/customers_also_bought/index.html>`_ add-on is installed and activated.
+This filling type is available when the `Customers also bought <http://docs.cs-cart.com/4.3.x/user_guide/addons/customers_also_bought/index.html>`_ add-on is installed and activated.
 
 .. _bestsellers:
 
@@ -29,7 +29,7 @@ With this filling type, the block contains links to products that are sold best 
 
 .. important ::
 
-	This filling type is available when the `Bestsellers & on sale products <http://docs.cs-cart.com/4.4.x/user_guide/addons/bestsellers_and_on_sale_products/index.html>`_ add-on is installed and activated.
+	This filling type is available when the `Bestsellers & on sale products <http://docs.cs-cart.com/4.3.x/user_guide/addons/bestsellers_and_on_sale_products/index.html>`_ add-on is installed and activated.
 
 .. _filling_blog_recent_posts:
 

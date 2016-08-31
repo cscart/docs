@@ -1,6 +1,6 @@
-*****************
-Actions on Blocks
-*****************
+*********************
+How To: Manage Blocks
+*********************
 
 You can re-arrange blocks in the frame, add and remove blocks, edit block properties, activate and disable blocks, assign blocks to specific items/pages.
 
@@ -8,19 +8,19 @@ When you need to perform an action on the blocks, go to **Design → Layouts** a
 
 .. note::
 
-	For blocks that refer to the Top panel, Footer or Header container, make sure to select the `Default layout page <http://docs.cs-cart.com/4.4.x/user_guide/look_and_feel/layouts/layout_pages/index.html>`_.
+	For blocks that refer to the Top panel, Footer or Header container, make sure to select the `Default layout page <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/layout_pages/index.html>`_.
 
-Moving blocks
-*************
+Moving Blocks
+=============
 
 To move a block to a different position inside the frame, drag-n-drop the block to the required position.
 
 .. note::
 
-	Remember that blocks must be nested inside a `child container <http://docs.cs-cart.com/4.4.x/user_guide/look_and_feel/layouts/framework/index.html>`_.
+	Remember that blocks must be nested inside a `child container <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/framework/index.html>`_.
 
-Adding blocks
-*************
+Adding Blocks
+=============
 
 When adding a block, you can use one of the following options:
 
@@ -35,7 +35,7 @@ When adding a block, you can use one of the following options:
     :align: center
     :alt: Add block
 
-*	Select **Use Existing Block**.
+*	Select **Use Existing Block** tab.
 *	Choose a block from the list and click its icon.
 
 The block will appear among the other objects in the frame.
@@ -54,8 +54,8 @@ The block will appear among the other objects in the frame. Also, it will be add
 
 	Block types and properties are described in :doc:`this <../blocks/block_types_properties>` topic.
 
-Editing blocks
-**************
+Editing Blocks
+==============
 
 To edit a block:
 
@@ -63,22 +63,30 @@ To edit a block:
 *	Edit the block parameters.
 *	Click **Save** to apply the changes.
 
+.. image:: img/edit_block.png
+    :align: center
+    :alt: Edit block
+
 .. note::
 
 	Block types and properties are described in :doc:`this <../blocks/block_types_properties>` topic.
 
-Deleting blocks
-***************
+Deleting Blocks
+===============
 
 To remove a block from the frame:
 
 *	Move the cursor over the block and click the trash can icon.
 *	When prompted, confirm the action.
 
+.. image:: img/delete_block.png
+    :align: center
+    :alt: Delete block
+
 To add new blocks, edit and delete existing ones you can also click the gear button in the top right corner of the page and choose **Manage blocks** from the drop-down list.
 
-Assigning blocks
-****************
+Assigning Blocks
+================
 
 If a layout page represents a group of pages (for example, detailed product pages on the storefront), blocks are automatically assigned to all items in the group.
 

@@ -4,6 +4,10 @@ How To: Display Different Banners for Different Category Pages
 
 To display a specific banner for each category page:
 
+======================
+Step 1. Create Banners
+======================
+
 *   Create all necessary banners for categories:
 
     *   In the Administration panel, go to **Marketing → Banners**.
@@ -16,6 +20,11 @@ To display a specific banner for each category page:
     *   In the **Name** input field type the name of the banner, in the **Type** select box select *Graphic banner* and upload the necessary image.
     *   Click the **Create** button.
     *   Repeat these actions to create banners for other categories.
+
+==================================
+Step 2. Create a Block for Banners
+==================================
+
 *   Go to **Design → Layouts → Categories**.
 *   Click the **+** button in the necessary container and click **Add block**.
 *   Open the **Create New Block** tab and in the opened section click the **Banners** button.
@@ -30,6 +39,10 @@ To display a specific banner for each category page:
 .. image:: img/banners_01.png
     :align: center
     :alt: Edit block
+
+==========================================
+Step 3. Add Banners to Specific Categories
+==========================================
 
 *   Go to **Products → Categories** and select the desired category.
 *   Open the **Layouts** tab on the category details page.
