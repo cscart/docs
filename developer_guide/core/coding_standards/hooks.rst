@@ -48,7 +48,7 @@ Also there are might be other extra hooks:
 
 4. **extra hooks**. As an example we will use products selection::
 
-     fn_set_hook('get_products_before_select', $params, $join, $condition, $u_condition, $inventory_condition, $sortings, $total, $items_per_page, $lang_code, $having);
+     fn_set_hook('get_products_before_select', $params, $join, $condition, $u_condition, $inventory_join_cond, $sortings, $total, $items_per_page, $lang_code, $having);
 
 Some of the hooks do not fit the standards mentioned. In this case the comment like this one is used::
 
