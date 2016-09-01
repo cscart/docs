@@ -243,6 +243,57 @@ A function **should** have only one exit point. Two or more exit points are acce
   * it reduces code branching (it’s better to have multiple ``return`` than 5 nested ``if``)
   * it saves resources (that is the case with ``fn_apply_exceptions_rules`` in **fn.catalog.php**)
 
+-----------------------------
+Comments on deleted functions
+-----------------------------
+
+This comment is added to deprecated functions. The content of such functions is replaced by a notification::
+
+  <?php
+
+
+  /**
+   * This function is deprecated and no longer used.
+   * Its reference is kept to avoid fatal error occurrences.
+   * 
+   * @deprecated deprecated since version 3.0
+   */
+  ?>
+
+For example::
+
+  <?php
+
+  /**
+   * This function is deprecated and no longer used.
+   * Its reference is kept to avoid fatal error occurrences.
+   * 
+   * @deprecated deprecated since version 3.0
+   */
+  function fn_get_setting_description($object_id, $object_type = 'S', $lang_code = CART_LANGUAGE)
+  {
+          fn_generate_deprecated_function_notice('fn_get_setting_description()', 'Settings::get_description($name, $lang_code)');
+          return false;
+  }
+  ?>
+
+--------------------------------------
+Comments on frequently used parameters
+--------------------------------------
+
+These are approved comments to describe variables in the code. Use these comments when defining a hook where it seems appropriate::
+
+  $auth - Array of user authentication data (e.g. uid, usergroup_ids, etc.)
+  $cart - Array of the cart contents and user information necessary for purchase
+  $lang_code - 2-letter language code (e.g. 'en', 'ru', etc.)
+  $product_id - Product identifier
+  $category_id - Category identifier
+  $params - Array of various parameters used for element selection
+  $field_list - String of comma-separated SQL fields to be selected in an SQL-query
+  $join - String with the complete JOIN information (JOIN type, tables and fields) for an SQL-query
+  $condition - String containing SQL-query condition possibly prepended with a logical operator (AND or OR)
+  $group_by - String containing the SQL-query GROUP BY field
+
 ===========================
 Object-Oriented Programming
 ===========================
