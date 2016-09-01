@@ -28,15 +28,17 @@
 
 5. Параметры в хуке всегда должны начинаться с тех, что пришли в функцию. Исключение: SQL-хуки, где все  необходимое есть в переменной ``params``.
 
+6. Для хуков в классах: каждый хук должен первым параметром передавать инстанс класса.
+
 =========================
 Как и куда добавлять хуки
 =========================
 
 Исходим из того, что в каждой функции должно быть минимум два хука:
 
-1. **pre hook** вида ``get_products_pre`` в самом начале функции. В него должны передаваться все параметры, которые прходят в функцию.
+1. **pre hook** вида ``get_product_name_pre`` в самом начале функции. В него должны передаваться все параметры, которые прходят в функцию.
 
-2. **post hook** вида ``get_products_post`` в конце функции. В него должны передаваться все параметры пришедшие в функцию, затем параметр который функция возвращает, затем остальные вспомогательные параметры. 
+2. **post hook** вида ``get_product_name_post`` в конце функции. В него должны передаваться все параметры пришедшие в функцию, затем параметр который функция возвращает, затем остальные вспомогательные параметры. 
 
 Также могут быть дополнительные хуки:
 
@@ -46,9 +48,7 @@
     
 4. **extra hooks**, как пример, можно посмотреть на функцию выбора товаров или рассчета корзины::
 
-     fn_set_hook('get_products_before_select', $params, $join, $condition, $u_condition, $inventory_condition, $sortings, $total, $items_per_page, $lang_code, $having);
-
-Для хуков в классах: каждый хук должен первым параметром передавать инстанс класса.
+     fn_set_hook('get_products_before_select', $params, $join, $condition, $u_condition, $inventory_join_cond, $sortings, $total, $items_per_page, $lang_code, $having);
 
 Некоторые хуки не соответствуют вышеозначенным стандартам, тогда ставим им комментарий такого вида::
 
@@ -103,15 +103,17 @@ PHP-хуки и функции
   <?php
 
   /**
-   * Calculates cart content (running after ::fn_calculate_cart_content)
-   * Used on the checkout page
+   * Processes cart data after calculating all prices and other data (taxes, shippings etc)
    *
-   * @param array $cart User cart
-   * @param array $cart_products Cart products data
-   * @param array $auth User auth data
-   * @param string $calculate_shipping Calculate shipping flag
-   * @param string $calculate_taxes Calculate taxes flag
-   * @param string $apply_cart_promotions Apply cart promotions flag
+   * @param array  $cart               Cart data
+   * @param array  $cart_products      Cart products
+   * @param array  $auth               Auth data
+   * @param string $calculate_shipping // 1-letter flag
+   *      A - calculate all available methods
+   *      E - calculate selected methods only (from cart[shipping])
+   *      S - skip calculation
+   * @param bool $calculate_taxes       Flag determines if taxes should be calculated
+   * @param bool $apply_cart_promotions Flag determines if promotions should be applied to the cart
    */
   fn_set_hook('calculate_cart', $cart, $cart_products, $auth, $calculate_shipping, $calculate_taxes, $apply_cart_promotions);
   ?>
@@ -119,15 +121,16 @@ PHP-хуки и функции
   <?php
 
   /**
-   * Gets product data
+   * Change SQL parameters for product data select
    *
-   * @param int $product_id
-   * @param array $field_list List of SQL fields
-   * @param string $join Join sql data
-   * @param array $auth
-   * @param string $lang_code
+   * @param int $product_id Product ID
+   * @param string $field_list List of fields for retrieving
+   * @param string $join String with the complete JOIN information (JOIN type, tables and fields) for an SQL-query
+   * @param mixed $auth Array with authorization data
+   * @param string $lang_code Two-letter language code (e.g. 'en', 'ru', etc.)
+   * @param string $condition Condition for selecting product data
    */
-  fn_set_hook('get_product_data', $product_id, $field_list, $join, $auth, $lang_code);
+  fn_set_hook('get_product_data', $product_id, $field_list, $join, $auth, $lang_code, $condition);
   ?>
 
 
@@ -181,53 +184,3 @@ JS-хуки
 
 В комментарии к передаваемым параметрам первое слово — тип переменной, а все остальное — описание.
 
-=================================
-Комментарии для удаленных функций
-=================================
-
-Этот комментарий добавляется к устаревшим функциям, содержимое которых заменено на вывод нотиса::
-
-  <?php
-
-
-  /**
-   * This function is deprecated and no longer used.
-   * Its reference is kept to avoid fatal error occurances.
-   * 
-   * @deprecated deprecated since version 3.0
-   */
-  ?>
-
-Пример::
-
-  <?php
-
-  /**
-   * This function is deprecated and no longer used.
-   * Its reference is kept to avoid fatal error occurances.
-   * 
-   * @deprecated deprecated since version 3.0
-   */
-  function fn_get_setting_description($object_id, $object_type = 'S', $lang_code = CART_LANGUAGE)
-  {
-          fn_generate_deprecated_function_notice('fn_get_setting_description()', 'Settings::get_description($name, $lang_code)');
-          return false;
-  }
-  ?>
-
-==============================================
-Комментарии для часто встречающихся параметров
-==============================================
-
-Это утвержденные комментарии для описания переменных в коде. Если они вам встречаются при определении хука, используйте их, пока смысл соответствует::
-
-  $auth - Array of user authentication data (e.g. uid, usergroup_ids, etc.)
-  $cart - Array of the cart contents and user information necessary for purchase
-  $lang_code - 2-letter language code (e.g. 'en', 'ru', etc.)
-  $product_id - Product identifier
-  $category_id - Category identifier
-  $params - Array of various parameters used for element selection
-  $field_list - String of comma-separated SQL fields to be selected in an SQL-query
-  $join - String with the complete JOIN information (JOIN type, tables and fields) for an SQL-query
-  $condition - String containing SQL-query condition possibly prepended with a logical operator (AND or OR)
-  $group_by - String containing the SQL-query GROUP BY field

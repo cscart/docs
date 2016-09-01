@@ -227,6 +227,57 @@ DRY - Don't repeat yourself
 
 * значительная экономия ресурсов (например, функция ``fn_apply_exceptions_rules`` в **fn.catalog.php**).
 
+---------------------------------
+Комментарии для удаленных функций
+---------------------------------
+
+Этот комментарий добавляется к устаревшим функциям, содержимое которых заменено на вывод нотиса::
+
+  <?php
+
+
+  /**
+   * This function is deprecated and no longer used.
+   * Its reference is kept to avoid fatal error occurances.
+   * 
+   * @deprecated deprecated since version 3.0
+   */
+  ?>
+
+Пример::
+
+  <?php
+
+  /**
+   * This function is deprecated and no longer used.
+   * Its reference is kept to avoid fatal error occurances.
+   * 
+   * @deprecated deprecated since version 3.0
+   */
+  function fn_get_setting_description($object_id, $object_type = 'S', $lang_code = CART_LANGUAGE)
+  {
+          fn_generate_deprecated_function_notice('fn_get_setting_description()', 'Settings::get_description($name, $lang_code)');
+          return false;
+  }
+  ?>
+
+----------------------------------------------
+Комментарии для часто встречающихся параметров
+----------------------------------------------
+
+Это утвержденные комментарии для описания переменных в коде. Если они вам встречаются при определении хука, используйте их, пока смысл соответствует::
+
+  $auth - Array of user authentication data (e.g. uid, usergroup_ids, etc.)
+  $cart - Array of the cart contents and user information necessary for purchase
+  $lang_code - 2-letter language code (e.g. 'en', 'ru', etc.)
+  $product_id - Product identifier
+  $category_id - Category identifier
+  $params - Array of various parameters used for element selection
+  $field_list - String of comma-separated SQL fields to be selected in an SQL-query
+  $join - String with the complete JOIN information (JOIN type, tables and fields) for an SQL-query
+  $condition - String containing SQL-query condition possibly prepended with a logical operator (AND or OR)
+  $group_by - String containing the SQL-query GROUP BY field
+
 =========================================
 Объектно-ориентированное программирование
 =========================================
