@@ -4,13 +4,13 @@ Hooks
 
 Each :doc:`hook <../../addons/hooking/index>` must have a comment with the description of the hook itself (e.g. entry point or the purpose of this hook) and the description of its parameters (for :doc:`PHP-hooks <../../addons/hooking/index>` only).
 
-Hooks base is available at http://www.cs-cart.com/api.
+Hooks base is available at https://www.cs-cart.com/api.
 
 ===================
 General Information
 ===================
 
-1. Hooks are used by developers to extend functions. So it is best to include as much parameters as possible into hooks.
+1. Hooks are used by developers to extend functions. So it is best to include as many parameters as possible into hooks.
 
 2. The name of the hook must include the name of the function.
 
@@ -26,23 +26,23 @@ General Information
 
      fn_set_hook('get_cart_product_data_post_options', $product['product_id'], $_pdata, $product);
 
-5. Parameters in a hook must always begin with the parameters accepted by the function. The exception is SQL-hooks where everything required is included into the ``params`` variable.
+5. When listing parameters of the hook, always put the parameters accepted by the function first.  SQL hooks are the only exception: everything required is included into the ``params`` variable.
 
-6. As their first parameter hooks in the classes must pass the class instance.
+6. Hooks in classes must always pass the class instance as their first parameter.
 
 ==========================
 How and Where to Add Hooks
 ==========================
 
-Let's assume that each function must contain at least two hooks:
+We assume that each function must contain at least two hooks:
 
-1. **pre hook** of the ``get_product_name_pre`` type at the beginning of the function. All parameters accepted by the function must be passed to this hook.
+1. A **pre hook** like ``get_product_name_pre`` at the beginning of the function. All parameters accepted by the function must be passed to this hook.
 
-2. **post hook** of the ``get_product_name_post`` type at the end of the function. First, this hook receives all parameters accepted by the function; second, a parameter returned by the function; and third, other auxiliary parameters.
+2. A **post hook** like ``get_product_name_post`` at the end of the function. List the parameters in the following order: first all the parameters accepted by the function, then the parameters returned by the function, and then the other auxiliary parameters.
 
 Also there are might be other extra hooks:
 
-3. **sql hook** of the ``get_product_name`` type. All SQL-variables are passed in this hook. It is recommended to create all ``$fields``, ``$condition``, ``$sorting``, ``$limit``, etc. values even if you think that it is unnecessary. You can leave them empty. For example::
+3. A **sql hook** like ``get_product_name``. All SQL variables are passed to this hook. It is recommended to create all ``$fields``, ``$condition``, ``$sorting``, ``$limit``, etc. values even if you think that it is unnecessary. You can leave them empty. For example::
 
      fn_set_hook('get_product_name', $product_id, $lang_code, $as_array, $field_list, $join, $condition);
 
@@ -50,31 +50,31 @@ Also there are might be other extra hooks:
 
      fn_set_hook('get_products_before_select', $params, $join, $condition, $u_condition, $inventory_join_cond, $sortings, $total, $items_per_page, $lang_code, $having);
 
-Some of the hooks do not fit the standards mentioned. In this case the comment like this one is used::
+Some of the hooks do not comply with these standards. In this case we add a comment like::
 
   /**
    * Deprecated: This hook will be removed in version 4.x or 3.3.x. Use get_product_price_pre instead.
    */
 
-Also the hook with the new format is added, in our case it's ``get_product_price_pre``.
+Then we also add a hook that follows the standards. In our case it is ``get_product_price_pre``.
 
 .. note::
 
-    If a new argument was added to a function, do NOT create new and deprecate old hooks in this function! Instead we add an argument to the end of already existing hooks. In this case, it's okay to break the correct order of arguments in the function.
+    When we add a new parameter to a function, we don't deprecate the old hooks and add new ones. Instead we add this parameter to the end of existing hooks. The correct order of parameters can be neglected in this case.
 
 ====================
 Hook Format Standard
 ====================
 
-The formats for comments from `the hooks base <http://www.cs-cart.com/api>`_ are provided below.
+The formats for comments from `the hooks base <https://www.cs-cart.com/api>`_ are provided below.
 
 -----------------------
-PHP-hooks and Functions
+PHP Hooks and Functions
 -----------------------
 
-The format of comments was borrowed from PHPDocumentor. This format of comments must be applied everywhere and to all functions.
+The format of comments was borrowed from PHPDocumentor. This format applies everywhere and to all functions.
 
-The Doxygen program is used to generate documentation (here's `the manual <http://cs.swan.ac.uk/%7Ecsoliver/ok-sat-library/internet_html/doc/doc/Doxygen/1.7.1/html/index.html>`_).
+The Doxygen program is used to generate documentation (here's `the manual <http://www.stack.nl/~dimitri/doxygen/>`_).
 
 How to write comments: main rules and recommendations:
 
@@ -82,7 +82,7 @@ How to write comments: main rules and recommendations:
 
 2. A verb to describe a purpose of function is used in the third-person singular, e.g. *Gets user data*.
 
-3. Names and values of variables, file paths, file names and other personal names are highlighted with italics with HTML-tag. For example: Function *foo* (in *foo/bar/functions*) accepts parameter *$bar*
+3. Hightlight the names and values of variables, file paths, file names and other proper nouns with italics (use with HTML tags). For example: Function *foo* (in *foo/bar/functions*) accepts parameter *$bar*
 
 4. In the description the function is defined as ``class::function``; the function without class is defined as ``::function``. For example::
 
@@ -94,7 +94,7 @@ How to write comments: main rules and recommendations:
      */
      ?>
 
-5. Describe the variable so that it was clear why it is used in this function.
+5. Describe the variable to make it clear why the variable is used in this function.
 
 For example::
 
@@ -134,10 +134,10 @@ For example::
 
 .. important::
 
-    The comment must be placed right before the hook
+    The comment must be placed right before the hook.
 
 ---------
-TPL-hooks
+TPL Hooks
 ---------
 
 Smarty-templates:
@@ -157,7 +157,7 @@ Smarty-templates:
     The opening tag must always be used with two star signs and the closing tag—with one star. This way the ordinary comments are distinguished from the hook comments. 
 
 --------
-JS-hooks
+JS Hooks
 --------
 
 For example:
@@ -180,5 +180,5 @@ For example:
 
 First goes the comment with the event description, second—the variable of the object with parameters, and third—calling of the event.
 
-In the comments to the passed parameters the first word is the type of a variable, and everything else is the description.
+In the comments to the passed parameters the first word is the type of a variable, and the rest is the description.
 
