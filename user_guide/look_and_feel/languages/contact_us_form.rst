@@ -6,7 +6,7 @@ To translate the fields of the form on the **Contact Us** page, follow the instr
 
 1. In the Administration panel go to **Website → Pages**.
 
-2. Click on the **Contact Us** link and open the **Form builder** tab.
+2. Click on the **Contact Us** link and switch to the **Form builder** tab.
 
 3. Choose the desired language from the **Language** select box.
 
@@ -16,5 +16,5 @@ To translate the fields of the form on the **Contact Us** page, follow the instr
 
 .. image:: img/contact_us_form.png
     :align: center
-    :alt: Translate the values in the Name coulumn and save your changes to translate the form.
+    :alt: Translate the values in the Name column and save your changes to translate the form.
 

@@ -22,7 +22,7 @@ To contribute to a localization via Crowdin, follow these steps:
     :align: center
     :alt: Choose the language you want to translate CS-Cart to.
 
-5. A new page will open. As you can see, the translation is divided into several parts: **addons**, **editions** and **core**.
+5. A new page will open. As you can see, the translation is divided into several parts: **add-ons**, **editions** and **core**.
 
 6. Click on the file you want to start translating. For example, click on **core.po**.
 
@@ -38,7 +38,7 @@ To contribute to a localization via Crowdin, follow these steps:
 
 .. note::
 
-    A **green tick** next to a language variable means that it has been translated and approved. A **green dot** means that the variable has been translated, but hasn't been approved. A **red dot** means that the variable hasn't been translated.
+    A **green tick** next to a language variable means that it has been translated and approved. A **green dot** means that the variable has been translated, but has not been approved. A **red dot** means that the variable has not been translated.
 
 .. note::
 

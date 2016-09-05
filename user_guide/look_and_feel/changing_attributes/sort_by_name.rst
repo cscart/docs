@@ -2,8 +2,8 @@
 How To: Sort Subcategories by Name on the Category Page
 *******************************************************
 
-*   Open the **fn.catalog.php** file located in the *app/functions* directory of your CS-Cart installation.
-*   Find the following part of code there:
+1.   Open the **fn.catalog.php** file located in the *app/functions* directory of your CS-Cart installation.
+2.   Find the following part of code there:
 
 .. code-block :: none
 
@@ -35,4 +35,4 @@ before
 
     );
 
-*   Save the file.
+3.   Save the file.

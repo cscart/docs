@@ -12,13 +12,13 @@ You can see how image verification works in the picture below: there is a new ma
 
 To enable image verification in your store, complete the following steps:
 
-* In the Administration panel, go to **Settings → Image Verification**.
+1. In the Administration panel, go to **Settings → Image Verification**.
 
-* Tick the necessary checkboxes in the **Use for** section.
+2. Tick the necessary checkboxes in the **Use for** section.
 
-* Fill in other fields as you see fit.
+3. Fill in other fields as you see fit.
 
-* Click the **Save** button.
+4. Click the **Save** button.
 
 .. important::
 

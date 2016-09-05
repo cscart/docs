@@ -32,7 +32,7 @@ Create a New Translation
 
 .. note::
 
-    Before you create a new translation, make sure that the desired language is not on the list of available languages—check the **Available** tab under **Administrtation → Languages → Manage languages**. Also, make sure there is no such language at `translate.cs-cart.com <http://translate.cs-cart.com/>`_.
+    Before you create a new translation, make sure that the desired language is not on the list of available languages—check the **Available** tab under **Administration → Languages → Manage languages**. Also, make sure there is no such language at `translate.cs-cart.com <http://translate.cs-cart.com/>`_.
 
 1. Go to **Administration → Languages → Manage languages**.
 
@@ -68,7 +68,7 @@ Most of CS-Cart texts are stored in the so-called language variables. Although y
 
  * Click the **green tick** button to save your changes.
 
-4. After you translate all visible texts, there are still some language variables left: the ones displayed in the e-mail notifications and in some special situations, i.e. error notifications, popup window messages etc. To translate the remaining variables, follow these steps:
+4. After you translate all visible texts, there are still some language variables left: the ones displayed in the e-mail notifications and in some special situations, i.e. error notifications, pop-up window messages etc. To translate the remaining variables, follow these steps:
 
  * Go to **Administration → Languages → Translations** 
 
@@ -138,20 +138,19 @@ Most of CS-Cart texts are stored in the so-called language variables. Although y
 
 * **Marketing → Gift Certificates**
 
-* **Orders → Return Requests → RMA Request Statuses** (translate this page if you plan to use the RMA addon)
+* **Orders → Return Requests → RMA Request Statuses** (translate this page if you plan to use the RMA add-on)
 
 * **Marketing → Banners**
 
 * **Website → News**
 
-
 To translate the entries on the pages listed above, follow the steps below:
 
-* Open the necessary page and select the desired language in the language section in the top left corner of the page.
+1. Open the necessary page and select the desired language in the language section in the top left corner of the page.
 
-* Open the entry (e.g. **order status**) editing page, enter the necessary information for the selected language in the new window, then click the **Save** button.
+2. Open the entry (e.g. **order status**) editing page, enter the necessary information for the selected language in the new window, then click the **Save** button.
 
-* Repeat the previous step for the other entries on the page.
+3. Repeat the previous step for the other entries on the page.
 
 .. important::
 

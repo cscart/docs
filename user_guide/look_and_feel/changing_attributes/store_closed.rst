@@ -6,11 +6,11 @@ There are times when you don't want anyone to access your store: for example, yo
 
 To close the storefront, complete the following steps:
 
-* In the Administration panel, go to **Settings → General**.
+1. In the Administration panel, go to **Settings → General**.
 
-* Tick the **Close storefront** checkbox.
+2. Tick the **Close storefront** checkbox.
 
-* Fill in in the **Access key to temporarily closed store** field.
+3. Fill in in the **Access key to temporarily closed store** field.
 
 .. note::
 
@@ -20,4 +20,12 @@ To close the storefront, complete the following steps:
     :align: center
     :alt: Tick the Close Storefront checkbox under Settings → General, then specify your access key to be able to view the closed store.
 
-* Click the **Save** button.
+4. Click the **Save** button.
+
+.. note::
+
+   The store will be closed  during :doc:`the upgrade process <../../../upgrade/upgrade_process>`. You will need to open it after the upgrade is completed.
+
+.. image:: img/store_closed_02.png
+    :align: center
+    :alt: Closed storefront

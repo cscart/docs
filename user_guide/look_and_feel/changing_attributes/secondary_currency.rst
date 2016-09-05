@@ -2,8 +2,8 @@
 How To: Set the Secondary Currency to Be Selected by Default in the Storefront
 ******************************************************************************
 
-*	Open the **fn.init.php** file located in the *app/functions* directory of your CS-Cart installation.
-*	Find and replace the following part of code:
+1.	Open the **fn.init.php** file located in the *app/functions* directory of your CS-Cart installation.
+2.	Find and replace the following part of code:
 
 
 .. code-block :: none
@@ -23,7 +23,7 @@ with this one:
 
 where replace DESIRED_CURRENCY_CODE with the 3-symbol code of the currency that you want to be selected by default in the storefront (USD, EUR, etc.).
 
-*	Save the file.
+3.	Save the file.
 
 .. important ::
 
