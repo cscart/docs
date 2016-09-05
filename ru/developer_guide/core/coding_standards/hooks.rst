@@ -4,7 +4,7 @@
 
 У каждого :doc:`хука <../../addons/hooking/index>` должен быть комментарий с описанием (например точка входа, или что делает хук), а так же с описанием параметров (только для :doc:`PHP-хуков <../../addons/hooking/index>`). 
 
-База хуков доступна по адресу http://www.cs-cart.com/api
+База хуков доступна по адресу https://www.cs-cart.com/api
 
 ========================
 Основные тезисы по хукам
@@ -42,11 +42,11 @@
 
 Также могут быть дополнительные хуки:
 
-3. **sql hook** вида ``get_product_name``, в который мы передаем все SQL-переменные. Создавайте по максимуму все значения ``$fields``, ``$condition``, ``$sorting``, ``$limit``, и т.д., даже если вам кажется, что это совсем не нужно. Пусть они будут пустыми. Пример::
+3. **SQL hook** вида ``get_product_name``, в который мы передаем все SQL-переменные. Создавайте по максимуму все значения ``$fields``, ``$condition``, ``$sorting``, ``$limit``, и т.д., даже если вам кажется, что это совсем не нужно. Пусть они будут пустыми. Пример::
 
      fn_set_hook('get_product_name', $product_id, $lang_code, $as_array, $field_list, $join, $condition);
     
-4. **extra hooks**, как пример, можно посмотреть на функцию выбора товаров или рассчета корзины::
+4. **extra hooks**, как пример, можно посмотреть на функцию выбора товаров::
 
      fn_set_hook('get_products_before_select', $params, $join, $condition, $u_condition, $inventory_join_cond, $sortings, $total, $items_per_page, $lang_code, $having);
 
@@ -66,7 +66,7 @@
 Формат оформления хуков
 =======================
 
-Ниже приведены форматы для комментариев для `базы хуков <http://www.cs-cart.com/api>`_.
+Ниже приведены форматы для комментариев для `базы хуков <https://www.cs-cart.com/api>`_.
 
 ------------------
 PHP-хуки и функции
@@ -74,7 +74,7 @@ PHP-хуки и функции
 
 Формат комментариев заимствован у PHPDocumentor. Такой формат комментариев должен применяться повсеместно ко всем функциям.
 
-Для генерации документации используется программа Doxygen (вот `руководство <http://cs.swan.ac.uk/%7Ecsoliver/ok-sat-library/internet_html/doc/doc/Doxygen/1.7.1/html/index.html>`_).
+Для генерации документации используется программа Doxygen (вот `руководство <http://www.stack.nl/~dimitri/doxygen/>`_).
 
 Основные правила и рекомендации по написанию комментариев:
 
@@ -115,7 +115,7 @@ PHP-хуки и функции
    * @param bool $calculate_taxes       Flag determines if taxes should be calculated
    * @param bool $apply_cart_promotions Flag determines if promotions should be applied to the cart
    */
-  fn_set_hook('calculate_cart', $cart, $cart_products, $auth, $calculate_shipping, $calculate_taxes, $apply_cart_promotions);
+  fn_set_hook('calculate_cart', $cart, $cart_products, $auth, $calculate_shipping, $calculate_taxes, $apply_cart_promotions);    
   ?>
 
   <?php
