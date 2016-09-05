@@ -24,15 +24,7 @@ The image can be either uploaded from a local computer or the server file system
 
 *   Click the **Save** button.
 
-In order to change the thumbnail size and appearance settings:
-
-*   Go to **Settings → Thumbnails**.
-*   Change the `settings <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/changing_attributes/change_image_size.html>`_.
-*   Click the **Save** button.
-
-.. image:: img/thumbnails_03.png
-    :align: center
-    :alt: Settings
+To learn how to change the thumbnail size and appearance settings, please, refer to :doc:`the How To: Change the Image Size on the Storefront <../changing_attributes/change_image_size>` article.
 
 .. note ::
 

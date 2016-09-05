@@ -12,22 +12,22 @@ If you can't edit template files with the **Template editor**, complete the foll
 
 2. Set the writable permissions for the mentioned directories and files if they are not set.
 
-* On a Unix-based server with terminal access, use the following command:
+  * On a Unix-based server with terminal access, use the following command:
 
-::
+    ::
 
-  chmod -R 777 design
+      chmod -R 777 design
 
-The command sets the **777** permissions for the *design* directory, its subdirectories, and all the files under these directories.
+    The command sets the **777** permissions for the *design* directory, its subdirectories, and all the files under these directories.
 
-.. note:: 
+      .. note:: 
 
-    The **777** permissions mean **read, write and execute** permissions for the **user**, **user group** and **others**. :doc:`Learn more about permissions in CS-Cart documentation <../../../install/useful_info/permissions>`.
+          The **777** permissions mean **read, write and execute** permissions for the **user**, **user group** and **others**. :doc:`Learn more about permissions in CS-Cart documentation <../../../install/useful_info/permissions>`.
 
-If you do not have terminal access to your server, change file access permissions using an FTP client. Most FTP clients have the **Change permissions** or **Change mode** functions that you can use to set the permissions described above. For more detailed instructions on how to set file permissions refer to your FTP client documentation.
+    If you do not have terminal access to your server, change file access permissions using an FTP client. Most FTP clients have the **Change permissions** or **Change mode** functions that you can use to set the permissions described above. For more detailed instructions on how to set file permissions refer to your FTP client documentation.
  
-.. note::
+    .. note::
 
-    Contact your hosting support team for information about proper permissions for PHP files and directories.
+        Contact your hosting support team for information about proper permissions for PHP files and directories.
 
-* On a WINDOWS-based server, give full permissions for the files and directories to the user with the IUSR account.
+  * On a WINDOWS-based server, give full permissions for the files and directories to the user with the IUSR account.

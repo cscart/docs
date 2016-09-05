@@ -2,10 +2,14 @@
 How To: Add a New Tab for the Product Detail Page
 *************************************************
 
+================
+Adding a New Tab
+================
+
 To add a new tab with the own manageable content to the product detail page:
 
-*   In the Administration panel, go to **Design → Product tabs**.
-*   Click the **+** button to add a tab. In the opened window:
+1.   In the Administration panel, go to **Design → Product tabs**.
+2.   Click the **+** button to add a tab. In the opened window:
 
     *   Enter the tab name (e.g. *New tab*).
     *   Select the **Show this tab in a popup window** checkbox if you want to show the tab as a popup window.
@@ -21,19 +25,23 @@ To add a new tab with the own manageable content to the product detail page:
     :align: center
     :alt: New tab
 
+==========================
+Changing the Block Content
+==========================
+
 You can change the block content for a particular product individually. To do it:
 
-*	Go to **Products → Products** and choose the desired product.
-*	Switch to the **Product tabs** tab and click the **Block settings** link near the previously created tab name.
+1.	Go to **Products → Products** and choose the desired product.
+2.	Switch to the **Product tabs** tab and click the **Block settings** link near the previously created tab name.
 
 .. image:: img/tab_content.png
     :align: center
     :alt: Click the Block settings link.
 
-*	On the opened page choose the **Content** tab and change the filling of the **Content** field.
+3.	On the opened page choose the **Content** tab and change the filling of the **Content** field.
 
 .. image:: img/tab_content_01.png
     :align: center
     :alt: The Content tab.
 
-*	Click the **Save** button.
+4.	Click the **Save** button.
