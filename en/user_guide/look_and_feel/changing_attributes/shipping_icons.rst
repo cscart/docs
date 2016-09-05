@@ -41,17 +41,26 @@ Override the Hook
             {$strong_begin}{$rate.name} {$delivery_time} - {$rate nofilter}{$strong_begin}
         </p>
     {/if}
-    {if $shipping.description}
-        <div class="ty-checkout__shipping-tips">
-            <p>{$shipping.description nofilter}</p>
-        </div>
-    {/if}
 
 In this example the shipping method icon width is 100 and its height is 100 too. If you want to define another width and height, type your own numbers for the ``image_width`` and ``image_height`` parameters.
 
 .. note ::
 
     If your changes to the template are not displayed, try :doc:`clearing the template cache <../../../developer_guide/getting_started/cache_clearing>`.
+
+-------------------------------------------
+Additional Changes for CS-Cart 4.3.6 and Up
+-------------------------------------------
+
+If you use CS-Cart 4.3.6 and up, make the changes described above. Then add the following code to the end of **shipping_method.override.tpl**:
+
+.. code-block:: html+smarty
+
+    {if $shipping.description}
+        <div class="ty-checkout__shipping-tips">
+            <p>{$shipping.description nofilter}</p>
+        </div>
+    {/if}
 
 --------------------------------
 Compatibility with Other Add-ons

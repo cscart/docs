@@ -2,8 +2,15 @@
 How To: Set the Right-to-left Text Direction
 ********************************************
 
-*   Open the **index.tpl** file located in the *design/themes/[CUSTOMER_ACTIVE_THEME]/templates* directory of your CS-Cart installation, where [CUSTOMER_ACTIVE_THEME] is an active theme of your storefront.
-*   Add the following code:
+1. Open the **index.tpl** file located in the *design/themes/[CUSTOMER_ACTIVE_THEME]/templates* directory of your CS-Cart installation, where [CUSTOMER_ACTIVE_THEME] is an active theme of your storefront.
+2. Find the following lines in the code:
+
+.. code-block :: none
+
+    <!DOCTYPE html>
+    <html lang="{$smarty.const.CART_LANGUAGE}">
+
+3. Add the following code after them:
 
 .. code-block :: none
 
@@ -13,16 +20,9 @@ How To: Set the Right-to-left Text Direction
     <html lang="{$smarty.const.CART_LANGUAGE}">
     {/if}
 
-after this one:
+4. Replace [YOUR_LANGUAGE_CODE] with the language code for which the right-to-left text direction should be active.
 
-.. code-block :: none
-
-    <!DOCTYPE html>
-    <html lang="{$smarty.const.CART_LANGUAGE}">
-
-where replace [YOUR_LANGUAGE_CODE] with the language code for which the right-to-left text direction should be active.
-
-*   Save the file.
+5. Save the file.
 
 .. important ::
 

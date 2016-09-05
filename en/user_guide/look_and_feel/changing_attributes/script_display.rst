@@ -12,9 +12,9 @@ For example, here a map appears at the very bottom of a page:
 
 To solve this problem, do the following:
 
-*   In the Administration panel of your store, open the page editing section. **Website → Content → Free returns** in our example.
-*   In the **Description** field switch to **HTML** (**<>** icon).
-*   Add your script to desired part of the code, adding the ``data-no-defer`` parameter to it.
+1.   In the Administration panel of your store, open the page editing section. **Website → Content → Free returns** in our example.
+2.   In the **Description** field switch to **HTML** (**<>** icon).
+3.   Add your script to desired part of the code, adding the ``data-no-defer`` parameter to it.
 
     For example, this is what we had:
 
@@ -28,7 +28,7 @@ To solve this problem, do the following:
     :align: center
     :alt: Description
 
-*   Save the changes
+4.   Save the changes
 
 That is how this page looks like now:
 
