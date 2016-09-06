@@ -2,11 +2,11 @@
 Menus
 *****
 
-Use this section to create custom storefront menus. Menus help to organize different types of content (e.g. Links, Content pages, Categories, etc.) presented on pages into short consistent lists. Each menu can be added to any part of the storefront in **Design → Layouts** through a block of the *Menu* type. By using menus you can provide lots of useful information without occupying too much space on the storefront.
+Use this section to create custom storefront menus. Menus help to organize different types of content (e.g. Links, Content pages, Categories, etc.) displayed on pages into short consistent lists. Each menu can be added to any part of the storefront in **Design → Layouts** through a block of the *Menu* type. By using menus you can provide lots of useful information without occupying too much space on the storefront.
 
 There are two types of menus in CS-Cart—**manually created** and **dynamic**.
 
-* **Manually created** menus use the content that was added manually by the user, e.g. Internal and external links in the Quick links menu.
+* **Manually created** menus use the content that was added manually by a user, e.g. Internal and external links in the Quick links menu.
 
 * **Dynamic menus** use the content of the store, e.g. Category tree for the Categories menu.
 
@@ -16,7 +16,7 @@ There are two types of menus in CS-Cart—**manually created** and **dynamic**.
 
 Use the **+** button to add new menu, or click the **gear** button and choose **Edit** to edit existing menus.
 
-It takes three steps to create a menu and display it on the storefront:
+To create a new menu and to display it on the storefront, complete the following steps:
 
 ==============================
 Step 1. Creating an Empty Menu
@@ -68,7 +68,7 @@ Step 3. Creating a Menu Block
 
 To display a menu on the storefront you will need to create :doc:`a block <../layouts/blocks/index>` of the **Menu** type.
 
-*   In the Administration panel, go to **Design → Layouts → Homepage**.
+*   In the Administration panel, go to **Design → Layouts**.
 *   Click the **+** button in the necessary container and click **Add block**. 
 *   Open the **Create New Block** tab and select **Menu**. 
 *   In the opened window specify the **Name** of the block (e.g. *New menu*), select the desired template in the **Template** select box. 

@@ -9,7 +9,7 @@ Replacing the Link
 To replace the **Powered by CS-Cart—Shopping Cart Software** link with yours:
 
 1.   In the Administration panel, go to **Administration → Languages → Translations**.
-2.   In the **Search** on the right type *copyright_shopping_cart* into the **Search for pattern** input field and click **Search**.
+2.   In the **Search** section on the right type *copyright_shopping_cart* into the **Search for pattern** input field and click **Search**.
 
 .. image:: img/powered_by_01.png
     :align: center
