@@ -58,8 +58,6 @@ Information
 Options Settings
 ----------------
 
-Requires commercial license.
-
 * **Options type**—select how the options and variants of this product appear on the storefront: 
 
   * **Simultaneous**—all the options and variants appear simultaneously and independently.
@@ -107,7 +105,7 @@ Pricing / Inventory
 Availability
 ------------
 
-* **User groups** (requires commercial license)—the :doc:`user groups <../../users/user_groups/index>` that can access the product.
+* **User groups**—the :doc:`user groups <../../users/user_groups/index>` that can access the product.
 
 * **Creation date**—the date when the product was added to the catalog.
 
@@ -120,20 +118,6 @@ Extra
 -----
 
 * **Product details view**—choose a template for the page view.
-
-* **Feature comparison**—if this checkbox is ticked, the product can be chosen for comparison.
-
-  Availability of the feature comparison chart on the storefront is controlled by a separate block with the **Feature Comparison** content type (see :doc:`Look and Feel → Layouts <../../look_and_feel/layouts/index>`).
-
-.. note::
-
-    Beginning with version 4.3.6, feature comparison is enabled under **Settings → General → Catalog** by ticking the *Allow customers to compare products* checkbox.
-
-    To show up on a comparison list, a feature must have one (or more) of the following checkboxes enabled under **Products → Features → <Desired Feature>**:
-
-    * *Show on the Features tab*
-    * *Show in product list*
-    * *Show in header on the product details page*
 
 * **Downloadable**—if this checkbox is ticked, the product is labeled as downloadable, i.e. distributed by download.
 
@@ -174,6 +158,14 @@ Both images can be either uploaded from a local computer or the server file syst
 Images must be of one of the following formats only: *JPEG*, *GIF*, *PNG*. The maximum size of an uploaded image depends on your server configuration. As a rule, it should not exceed 2MB.
 
 An alternative text describes an image in words. Technically, the text that you enter appears inside the ``alt=""`` and ``title=""`` attributes of the ``<img>`` HTML tag. The text is shown when the image is missing or cannot be displayed. It is good practice to have an alternative text associated with the image, for SEO purposes.
+
+.. note::
+
+    To sort additional images in the desired order simply drag and drop uploaded images.
+
+.. image:: img/product_images_01.png
+    :align: center
+    :alt: Drag and drop images
 
 ===
 SEO
@@ -299,7 +291,7 @@ This tab contains the list of the product wholesale prices that have the followi
 
     Percentage discount has certain natural limitations: the discount cannot be more than 100%, and the discount will not be saved as long as it applies to 1 product item and all user groups.
 
-* **User group** (requires commercial license)—the :doc:`user groups <../../users/user_groups/index>` which can take advantage of the wholesale price.
+* **User group**—the :doc:`user groups <../../users/user_groups/index>` which can take advantage of the wholesale price.
 
 .. image:: img/product_attributes_05.png
     :align: center
@@ -310,8 +302,6 @@ This tab contains the list of the product wholesale prices that have the followi
 =============
 Files to Sell
 =============
-
-Requires commercial license.
 
 This tab contains a list of files that are associated with this :doc:`downloadable product <downloadable>`. Each file may have the following attributes:
 
@@ -357,21 +347,21 @@ Product attributes that depend on the active add-ons.
 
 * **Returnable**—if you tick this checkbox, the product will be labeled as available for the return.
 
-* **Return period** (requires commercial license)—the time period period of time during which the product can be returned. The period begins on the day of purchase.
+* **Return period** (requires the :doc:`RMA <../../addons/rma/index>` add-on)—the time period period of time during which the product can be returned. The period begins on the day of purchase.
 
 * **Sales amount**—the number of sold product items. This value is calculated automatically if the **Bestsellers and on-sale products** add-on is active (**Add-Ons → Manage add-ons**). Yet, you can change the current value manually.
 
-* **Age verification** (requires commercial license)—if you tick this checkbox, the access to the product will be limited by the customer age.
+* **Age verification** (requires the :doc:`Age Verification <../../addons/age_verification/index>` add-on)—if you tick this checkbox, the access to the product will be limited by the customer age.
 
-* **Age limit** (requires commercial license)—the minimum age for accessing the product.
+* **Age limit** (requires the :doc:`Age Verification <../../addons/age_verification/index>` add-on)—the minimum age for accessing the product.
 
-* **Warning message** (requires commercial license)—the message to be displayed, if the customer does not qualify for accessing the product.
+* **Warning message** (requires the :doc:`Age Verification <../../addons/age_verification/index>` add-on)—the message to be displayed, if the customer does not qualify for accessing the product.
 
 * **eBay template**—choose one of the templates created in the **Marketing → eBay templates** section. This setting appears when the :doc:`eBay synchronization <../../addons/eBay/index>` add-on is installed and set up in the **Add-ons → Manage add-ons** section.
 
 * **Package type**—the type of the product package. If you do not know your package type, select the *Large package* option. To ensure the most accurate cost, you will be asked to enter exact package dimensions. This setting appears when the **eBay synchronization** add-on is installed and set up in the **Add-ons → Manage add-ons** section.
 
-* **Reviews** (requires commercial license)—customer reviews or ratings, or both.
+* **Reviews** (requires the :doc:`Comments and Reviews <../../addons/comments_and_reviews/index>` add-on)—customer reviews or ratings, or both.
 
 .. note::
 
@@ -393,9 +383,7 @@ This tab allows you to define the values of the extra fields that are valid for 
 Product Tabs
 ============
 
-Requires commercial license.
-
-In this tab, you can see the list of tabs, applied to the current product. Next to a tab name you can see its status— *Active* or *Disabled*. 
+In this tab, you can see the list of tabs, applied to the current product. Next to a tab name you can see its status—*Active* or *Disabled*. 
 
 You can also see how the product page looks like. Click the gear button and select **Preview** (how a customer sees the page), or **Preview as admin** (how an administrator sees the page).
 
@@ -405,7 +393,7 @@ Editing and adding product tabs is done in the **Design → Product tabs** secti
 Buy Together
 ============
 
-Requires commercial license.
+Requires the :doc:`Buy Together <../../addons/buy_together/index>` add-on.
 
 In this tab, you can bind the product with other products from the catalog and offer a discount if the bound products are bought together. A set of the bound products is referred to as a *product combination*. The discount is promoted on the product details page on the storefront, and customers can decide whether they want to profit by the offer or not.
 
@@ -443,7 +431,7 @@ This tab includes a list of tags associated with the product. Tags appear on the
 Attachments
 ===========
 
-Requires commercial license.
+Requires the :doc:`Attachments <../../addons/attachments/index>` add-on.
 
 This tab contains product attachments, which are files associated with the products. Unlike the contents of the **Files to sell** tab, the files that appear here are available for non-downloadable products as well. Each attachment can have the following attributes:
 
@@ -461,7 +449,7 @@ This tab contains product attachments, which are files associated with the produ
 Required Products
 =================
 
-Requires commercial license.
+Requires the :doc:`Required Products <../../addons/required_products/index>` add-on.
 
 This tab contains a list of required products, which must be bought together with this product. To add a new product, click the **Add product** button.
 
@@ -473,7 +461,7 @@ This tab contains a list of required products, which must be bought together wit
 Reward Points
 =============
 
-Requires commercial license.
+Requires the :doc:`Reward Points <../../addons/reward_points/index>` add-on.
 
 Use this tab to set up the product price in reward points and specify the number of reward points to be earned for purchasing the product.
 
@@ -494,7 +482,7 @@ Use this tab to set up the product price in reward points and specify the number
 Reviews
 =======
 
-Requires commercial license.
+Requires the :doc:`Comments and Reviews <../../addons/comments_and_reviews/index>` add-on.
 
 The list of customers' reviews of the product. Requires that the **Reviews** field on the **Add-ons** tab be set to *Communication*, *Rating*, or both. In this tab, you can add own reviews and edit existing product reviews and ratings.
 
@@ -502,7 +490,7 @@ The list of customers' reviews of the product. Requires that the **Reviews** fie
 Layouts
 =======
 
-The content of the product details page. Requires commercial license.
+The content of the product details page.
 
 This tab duplicates the global layout of the location to which this storefront page belongs.
 

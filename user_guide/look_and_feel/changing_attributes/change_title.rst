@@ -17,10 +17,10 @@ To change the standard page title:
     :align: center
     :alt: Page title
 
-To change the page title for the product page, category page, and other pages:
+To change the page title of the product page, category page, and other pages:
 
-1.	Open the page the name of which you want to change. E.g., to change the name of the *Product detailed page of a specific product*, go to **Products > Products** and click on the product name.
-2.   Find the **Meta data** section (e.g. in the *Product editing page* go to the **SEO** tab) and change there the **Page title**.
+1.   In the Administration panel, open the desired page, e.g., to change the name of the *Product detailed page of a specific product*, go to **Products → Products** and click on the product name.
+2.   Find the **Meta data** section (e.g. in the *Product detailed page* go to the **SEO** tab) and change the **Page title** there.
 3.   Click the **Save** button.
 
 .. image:: img/title_03.png

@@ -23,12 +23,12 @@ To check if URL file-access is enabled, do the following:
 
     Do this both in the code above and in the URL below.
 
-2. Open the in a browser, using an URL like the one below:
+2. Open the file in a browser, using an URL like the one below:
 
 ::
 
   http://www.your_domain.com/your_cscart_directory/test.php
 
-If you see an errot, then the default PHP function **file_get_contents** does not work because URL file-access is disabled for your site.
+If you see an error, then the default PHP function **file_get_contents** does not work because URL file-access is disabled for your site.
 
 Contact your hosting administrator regarding this problem and ask them to enable this function on your account.

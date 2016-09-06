@@ -14,11 +14,11 @@ There are three types of the meta data in CS-Cart:
 
 In CS-Cart the meta data structure can be described as a three-level hierarchy:
 
-* **Layouts: Location: Default**—The general level. Here, the meta data for all standard pages is stored.
+* **Layouts: Location: Default**—The default layout level. Here, the meta data for all standard pages is stored.
 
-* **Layouts: Location: Current**—The medium level. Here, the meta data for specific layouts is stored.
+* **Layouts: Location: Current**—The separate layout level. Here, the meta data for specific layouts is stored.
 
-* **Manage Object Page**—The special level. Here, the meta data for specific objects or pages is stored, for example, separate category and product pages.
+* **Manage Object Page**—The separate page level. Here, the meta data for specific objects or pages is stored, for example, separate category and product pages.
 
 =======================================
 Changing the Standard CS-Cart Meta Data
@@ -68,8 +68,8 @@ Changing the Separate Page Meta Data
 
 To change the Meta data of a separate page:
 
-1.   In the Administration panel, open the page the meta data of which you want to change. E.g., to change the meta data of the *Product detailed page of a specific product*, go to **Products → Products** and click on the product name.
-2.   Open the **SEO** tab. 
+1.   In the Administration panel, open the desired page (e.g., to change the meta data of the *Product detailed page of a specific product*, go to **Products → Products**) and click on the product name.
+2.   Switch to the **SEO** tab.
 
 .. image:: img/meta_05.png
     :align: center

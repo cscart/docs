@@ -5,7 +5,7 @@ Problems with Displaying Diacritic Symbols when Using Some Fonts
 When customising a store in the Visual Editor, you can choose different fonts to be used on the storefront. If a language with diacritic symbols is used in your store, you may experience problems with displaying such symbols when using some fonts. If so, try to do the following:
 
 *   Go to `Google Fonts <https://www.google.com/fonts/>`_ and choose the desired font. Open Sans, for example.
-*   Make sure that the selected font supports non-standart (diacritic) symbols:
+*   Make sure that the selected font supports non-standard (diacritic) symbols:
 
     *   In the **Preview Text** input field type the text with diacritic symbols.
     *   Click the **Enter** button on your keyboard.
@@ -73,11 +73,11 @@ If the symbols display correctly in the text appeared in the field below, the se
     }
 
 *   Copy this code to clipboard.
-*   In the Administrtion panel of your store, go to **Design → Themes** and click the **Visual Editor** button.
+*   In the Administration panel of your store, go to **Design → Themes** and click the **Theme Editor** button.
 
 .. image:: img/fonts_03.png
     :align: center
-    :alt: Visual Editor
+    :alt: Theme Editor
 
 *   If you use several languages in your store, switch to the language containing diacritic symbols.
 *   In the **Customize** section choose *Custom CSS*.
