@@ -159,6 +159,14 @@ Images must be of one of the following formats only: *JPEG*, *GIF*, *PNG*. The m
 
 An alternative text describes an image in words. Technically, the text that you enter appears inside the ``alt=""`` and ``title=""`` attributes of the ``<img>`` HTML tag. The text is shown when the image is missing or cannot be displayed. It is good practice to have an alternative text associated with the image, for SEO purposes.
 
+.. note::
+
+    To sort additional images in the desired order simply drag and drop uploaded images.
+
+    .. image:: img/product_images_01.png
+        :align: center
+        :alt: Drag and drop images
+
 ===
 SEO
 ===
