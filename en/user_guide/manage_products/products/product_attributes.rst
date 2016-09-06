@@ -163,9 +163,9 @@ An alternative text describes an image in words. Technically, the text that you 
 
     To sort additional images in the desired order simply drag and drop uploaded images.
 
-    .. image:: img/product_images_01.png
-        :align: center
-        :alt: Drag and drop images
+.. image:: img/product_images_01.png
+    :align: center
+    :alt: Drag and drop images
 
 ===
 SEO
