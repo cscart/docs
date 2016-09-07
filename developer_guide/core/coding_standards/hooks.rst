@@ -74,7 +74,7 @@ PHP Hooks and Functions
 
 The format of comments was borrowed from PHPDocumentor. This format applies everywhere and to all functions.
 
-The Doxygen program is used to generate documentation (here's `the manual <http://www.stack.nl/~dimitri/doxygen/>`_).
+The Doxygen program is used to generate documentation (here's `the manual <http://www.doxygen.org/>`_).
 
 How to write comments: main rules and recommendations:
 
