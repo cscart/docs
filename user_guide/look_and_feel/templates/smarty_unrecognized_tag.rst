@@ -10,10 +10,10 @@ To avoid the error, complete the following steps:
 
 2. Enclose the JavaScript code in a ``{literal}...{/literal}`` container to prevent Smarty from parsing it:
 
-::
+   ::
 
-  {literal}
-  your JavaScript code
-  {/literal}
+     {literal}
+     your JavaScript code
+     {/literal}
 
 3. Save the file.
