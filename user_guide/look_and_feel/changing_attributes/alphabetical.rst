@@ -2,23 +2,44 @@
 How To: Display Wishlist Products in Alphabetical Order
 *******************************************************
 
-To do this for the storefront:
+To display wishlist products in alphabetical order use the **Wishlist Products ABC** add-on. 
 
-*   Open the **fn.cart.php** file located in the *app/functions* directory of your CS-Cart installation.
-*   Find and replace the following part of code there:
+To get and install this add-on, follow the steps below:
 
-.. code-block :: none
+1. Download the Wishlist Products ABC add-on archive using `this link <https://github.com/cscart/addon-wishlist-sort/archive/master.zip>`_.
 
-    $_prods = db_get_hash_array("SELECT * FROM ?:user_session_products WHERE" . $condition, 'item_id');
+.. note::
 
-with this one:
+    If you want to check the add-on code, please, visit `the add-on page on GitHub <https://github.com/cscart/addon-wishlist-sort>`_.
 
-.. code-block :: none
+2. Log in to the Administration panel of your store.
 
-    $_prods = ($type == 'C') ? db_get_hash_array("SELECT * FROM ?:user_session_products WHERE user_id = ?i AND type = ?s AND user_type = ?s AND item_type IN (?a)", 'item_id', $user_id, $type, $user_type, $item_types) : db_get_hash_array("SELECT *, ?:product_descriptions.product FROM ?:user_session_products LEFT JOIN ?:product_descriptions ON ?:user_session_products.product_id = ?:product_descriptions.product_id AND ?:product_descriptions.lang_code = ?s WHERE ?:user_session_products.user_id = ?i AND ?:user_session_products.type = ?s AND ?:user_session_products.user_type = ?s AND ?:user_session_products.item_type IN (?a) ORDER BY ?:product_descriptions.product", 'item_id', CART_LANGUAGE, $user_id, $type, $user_type, $item_types);
+3. Go to **Add-ons → Manage add-ons**.
 
-*   Save the file.
+4. On the **Add-ons** page, click the **+** button to upload the add-on.
 
-.. note ::
+.. image:: img/addons_plus_button.png
+    :align: center
+    :alt: Search
 
-	In order to see the changes you will need to re-log in to the store.
+5. In the pop-up window click **Local**, and choose the add-on archive.
+
+6. Click **Upload & install**.
+
+.. image:: img/upload_and_install_addon.png
+    :align: center
+    :alt: Search
+
+The Wishlist Products ABC add-on is installed and ready for work.
+
+.. image:: img/wishlist_products_abc_03.png
+    :align: center
+    :alt: Search
+
+.. note::
+
+    In order to see the changes currently logged in customers will have to re-log in to the store.
+
+.. image:: img/wishlist_products_abc_04.png
+    :align: center
+    :alt: Search

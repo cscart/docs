@@ -8,30 +8,48 @@ Most browsers allow users to copy any image from a web page by clicking on the i
 
     Disabling the right mouse click does not guarantee full protection of your images, it simply creates an additional deterrent. There are many other ways to copy an image from a web page. For example, a visitor can simply save the web page, and all images on that page will be saved on the visitor's computer.
 
-To disable the right mouse click in your store, complete the following steps:
+To disable right mouse click to protect images use the **Disable Right Mouse Click** add-on. 
 
-1. Go to the */design/themes/<Your Active Theme>/templates* directory of your CS-Cart installation.
+To get and install this add-on, follow the steps below:
 
-.. note::
-
-    Remember to replace **<Your Active Theme>** in the path with the name of the folder with your current theme, for example, **responsive**.
-
-2. Open the **index.tpl** file.
-
-3. Find this line:
-
-.. code-block:: html
-
-    <body>
-
-4. Replace it with this line:
-
-.. code-block:: html
-
-    <body oncontextmenu="return false">
-
-5. Save the file.
+1. Download the Disable Right Mouse Click add-on archive using `this link <https://github.com/cscart/addon-disable-right-click/archive/master.zip>`_.
 
 .. note::
 
-    If the change doesn't work, try clearing the cache of your store: remove the **cache** directory located in the **var** directory of your CS-Cart installation.
+    If you want to check the add-on code, please, visit `the add-on page on GitHub <https://github.com/cscart/addon-disable-right-click>`_.
+
+2. Log in to the Administration panel of your store.
+
+3. Go to **Add-ons → Manage add-ons**.
+
+4. On the **Add-ons** page, click the **+** button to upload the add-on.
+
+.. image:: img/addons_plus_button.png
+    :align: center
+    :alt: Search
+
+5. In the pop-up window click **Local**, and choose the add-on archive.
+
+6. Click **Upload & install**.
+
+.. image:: img/upload_and_install_addon.png
+    :align: center
+    :alt: Search
+
+The Disable Right Mouse Click add-on is installed and ready for work.
+
+.. note::
+
+    Right mouse click will be disabled right after the add-on was installed and activated.
+
+.. image:: img/disable_right_mouse_click_01.png
+    :align: center
+    :alt: Search
+
+.. note::
+
+    If the change doesn't work, try clearing the cache of your store: go to **Administration → Storage** and click **Clear cache**.
+
+.. image:: img/clear_cache.png
+    :align: center
+    :alt: Search
