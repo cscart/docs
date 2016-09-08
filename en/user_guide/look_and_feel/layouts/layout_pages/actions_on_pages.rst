@@ -2,80 +2,104 @@
 Actions on Layout Pages
 ***********************
 
-Layout pages are not hard-coded or anyhow limited. You can have as many layout pages as you need. However, the default set of layout pages is generally enough.
+Layout pages are not hard-coded or limited in any way. You can have as many layout pages as you need. However, the default set of layout pages is usually enough.
 
-When you need to perform an action on layout pages, go to the **Design → Layouts** section of your Administration panel.
+.. note::
 
+    All actions on layout pages are performed in the Administration panel of your store under **Design → Layouts**.
+
+===============
 General actions
-***************
+===============
 
-Adding a layout page
+--------------------
+Adding a Layout Page
 --------------------
 
-To add a layout page:
-
-*	In the list of layout pages, choose the **Add layout page** tab.
+1. Switch to the In the list of layout pages, choose the **Add layout page** tab.
 
 .. image:: img/layout_page_01.png
     :align: center
     :alt: Add layout page
 
-*	A popup window with layout page properties opens. Specify the new `layout page properties <http://docs.cs-cart.com/4.4.x/user_guide/look_and_feel/layouts/layout_pages/layout_page_attributes.html>`_ and click the **Create** button.
+2. A pop-up window will open. Specify :doc:`the properties of the new layout page <layout_page_attributes>`. 
 
-Removing a layout page
+3. Click the **Create** button.
+
+----------------------
+Removing a Layout Page
 ----------------------
 
-To remove a layout page:
-
-*	Select a layout page and click the **gear** icon on the tab.
+1. Select a layout page and click the **gear** icon next to its name.
 
 .. image:: img/layout_page_02.png
     :align: center
     :alt: Edit layout page
 
-*	In the opened pop-up window click the trash can button.
+2. Click the **trash can** button in the pop-up window that opens.
 
 .. image:: img/layout_page_03.png
     :align: center
     :alt: Remove layout page
 
-*	Click **Ok**. This irrevocably removes the layout page.
+3. Click **Ok**.
 
-Editing layout page properties
+   .. warning::
+
+       You can't undo this action, unless you export this layout in advance and import it afterwards.
+
+------------------------------
+Editing Layout Page Properties
 ------------------------------
 
-To change a layout page properties, select the layout page and click the **gear** icon on the tab. A special form with the layout page attributes opens. Edit the `layout page properties <http://docs.cs-cart.com/4.4.x/user_guide/look_and_feel/layouts/layout_pages/layout_page_attributes.html>`_ and click **Save** to apply changes.
+1. Select the layout page and click the **gear** icon on the tab. 
 
-Exporting/importing layout pages
-********************************
+2. You'll see a form where you can edit :doc:`layout page properties <layout_page_attributes>`.
 
-Storefront layout pages can be imported and exported in an XML file. This feature becomes useful when you need to clone the layout among several storefronts. It is also recommended that you export layout pages before making any changes to the storefront layout. In case of emergency, you will be able to restore the original layout by importing the layout pages.
+3. When you're done, click **Save** to apply changes.
 
-Exporting 
+=================
+Export and Import
+=================
+
+Layout pages can be imported and exported in an XML file. This is useful when you need to clone the layout to other storefronts. We recommend that you export layout pages before making any changes to the storefront layout. That way you can always restore the original layout by importing the layout pages.
+
+----------------------
+Exporting Layout Pages
+----------------------
+
+1. Click the **gear** button in the upper right part of the screen and choose **Export Layout**. 
+
+2. A pop-up window will open. Configure the export settings there:
+
+   * **Layout pages**—select the layout pages to be exported.
+
+   * **Output**—output type: 
+
+     * *Direct download*—the XML file will be downloaded to you computer; 
+
+     * *Server*—file will be saved on the server where CS-Cart is installed; 
+
+     * *Screen*—file contents will be displayed on the screen.
+
+   * **File name**—Name of the export file. By default, it is *layouts_<TIMESTAMP>.xml*.
+
+3. Click **Export**.
+
 ---------
-
-To export layout pages:
-
-*	Click the **gear** button in the upper right part of the page and choose **Export Layout**. This opens the export settings form.
-*	Select the layout pages to be exported.
-*	Choose the other export settings:
-
-	*	**Output** - Output type: *Direct download* - export file will be downloaded to you computer; *Server* - file will be saved on the server where CS-Cart is installed; *Screen* - file contents will be displayed on the screen.
-	*	**File name** - Name of the export file. By default, it is *layouts_<TIMESTAMP>.xml*.
-
-*	Click **Export**.
-
 Importing
 ---------
 
-To import layout pages:
+1. Click the **gear** button in the upper right part of the screen and choose **Import layout**. 
 
-*	Click the **gear** button in the upper right part of the page and choose **Import Layout**. This opens the form for selecting the import file.
-*	Choose the import file or enter the file URL.
-*	Choose whether to create new layout or update current one.
-*	If you have chosen to update current layout, specify the other export settings:
+2. A pop-up window will open. Configure the import settings there:
 
-	*	**Clean up layout pages before import** - If selected, all original layout pages will be deleted before the import operation.
-	*	**Override layout pages by dispatch** -  If selected, original layout pages will be replaced with the layout pages in the export file during an import operation. Otherwise, layout pages will be added to the original layout pages upon an import operation.
+   * Choose the file that will be imported or enter its URL.
 
-*	Click **Import**.
+   * Choose whether to create new layout or update current one.	If you have chosen to update current layout, specify the other settings:
+
+     * **Clean up layout pages before import**—if you tick this checkbox, all original layout pages will be deleted before the import.
+
+     * **Override layout pages by dispatch**—if you tick this checkbox, existing layout pages  will be replaced with the layout pages from the XML file with the same dispatch. Other imported layout pages will be simply added.
+
+3. Click **Import**.
