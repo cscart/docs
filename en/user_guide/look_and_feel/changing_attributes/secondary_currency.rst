@@ -1,29 +1,68 @@
 ******************************************************************************
-How To: Set the Secondary Currency to Be Selected by Default in the Storefront
+How To: Set the Secondary Currency to Be Selected by Default on the Storefront
 ******************************************************************************
 
-1.	Open the **fn.init.php** file located in the *app/functions* directory of your CS-Cart installation.
-2.	Find and replace the following part of code:
+To set the secondary currency to be selected by default on the storefront use the **Secondary Currency by Default** add-on.
 
+=============================
+Step 1. Installing the Add-on
+=============================
 
-.. code-block :: none
+To get and install this add-on, do the following:
 
-	foreach ($currencies as $v) {
-	            if ($v['is_primary'] == 'Y') {
-	                $secondary_currency = $v['currency_code'];
-	                break;
-	            }
-	        }
+1. Download the Product Prices in the Secondary Currency add-on archive using `this link <https://github.com/cscart/addon-default-secondary-currency/archive/master.zip>`_.
 
-with this one:
+.. note::
 
-.. code-block :: none
+    If you want to check the add-on code, please, visit `the add-on page on GitHub <https://github.com/cscart/addon-default-secondary-currency>`_. 
 
-	$secondary_currency = 'DESIRED_CURRENCY_CODE';
+2. Log in to the Administration panel of your store.
 
-where replace DESIRED_CURRENCY_CODE with the 3-symbol code of the currency that you want to be selected by default in the storefront (USD, EUR, etc.).
+3. Go to **Add-ons → Manage add-ons**.
 
-3.	Save the file.
+4. Сlick the **+** button to upload the add-on.
+
+.. image:: img/addons_plus_button.png
+    :align: center
+    :alt: Search
+
+5. In the pop-up window click **Local**, and choose the add-on archive.
+
+6. Click **Upload & install**.
+
+.. image:: img/upload_and_install_addon.png
+    :align: center
+    :alt: Search
+
+The Secondary Currency by Default add-on has been installed.
+
+.. image:: img/default_secondary_currency_01.png
+    :align: center
+    :alt: Search
+
+==========================================================
+Step 2. Setting up the Secondary Currency as a Default One
+==========================================================
+
+To display the secondary currency as a default one you will need to make some changes in the code of the installed add-on.
+
+1. Open the **default_secondary_currency** folder located in the *app/addons* directory of your CS-Cart installation.
+
+2. In this folder, open the **func.php** file.
+
+3. Replace ``DESIRED_CURRENCY_CODE`` with the 3-symbol code of the currency that you want to be selected by default on the storefront (USD, EUR, etc.).
+
+.. image:: img/prices_in_secondary_currency_02.png
+    :align: center
+    :alt: The 3-symbol code of the currency.
+
+4. Click **Save changes**.
+
+The Secondary Currency by Default add-on is ready for work.
+
+.. image:: img/default_secondary_currency_02.png
+    :align: center
+    :alt: Default currency on the storefront.
 
 .. important ::
 
