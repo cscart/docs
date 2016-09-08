@@ -23,8 +23,8 @@ To replace CS-Cart logo with yours:
 
 	Default styles can not be modified. Create a new style to upload your logos. To do it, choose one of the default styles, click the **Save** button near it, and type a new style name in the pop-up window.
 
-.. image:: img/logo_03.png
-    :align: center
-    :alt: Save pop-up
+        .. image:: img/logo_03.png
+            :align: center
+            :alt: Save pop-up
 
 5.   Click the **Save** button.

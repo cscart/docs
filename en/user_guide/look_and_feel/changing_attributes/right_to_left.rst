@@ -2,7 +2,7 @@
 How To: Set the Right-to-left Text Direction
 ********************************************
 
-In some cases, for example, when you use the Arabic Language, you will need to place your text from right to left. To do it use the **Right-to-Left** add-on.
+In some cases, for example, when you use the Arabic Language, you will need to place your text from right to left. To do it, use the **Right-to-Left** add-on.
 
 =============================
 Step 1. Installing the Add-on
@@ -10,7 +10,7 @@ Step 1. Installing the Add-on
 
 To get and install this add-on, do the following:
 
-1. Download the Disable Right Mouse Click add-on archive using `this link <https://github.com/cscart/addon-rtl-text-layout/archive/master.zip>`_.
+1. Download the Right-to-Left add-on archive using `this link <https://github.com/cscart/addon-rtl-text-layout/archive/master.zip>`_.
 
 .. note::
 
@@ -24,7 +24,7 @@ To get and install this add-on, do the following:
 
 .. image:: img/addons_plus_button.png
     :align: center
-    :alt: Search
+    :alt: Add-ons plus button
 
 5. In the pop-up window click **Local**, and choose the add-on archive.
 
@@ -32,17 +32,17 @@ To get and install this add-on, do the following:
 
 .. image:: img/upload_and_install_addon.png
     :align: center
-    :alt: Search
+    :alt: Upload and install pop-up
 
 The Right-to-Left add-on has been installed.
 
 .. image:: img/right_to_left_01.png
     :align: center
-    :alt: Search
+    :alt: the Right-to-Left add-on
 
-===============================
-Step 2. Setting up the Language
-===============================
+=============================
+Step 2. Setting up a Language
+=============================
 
 To set the right-to-left text direction you will need to make some changes in the code of the installed add-on.
 

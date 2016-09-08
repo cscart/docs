@@ -10,7 +10,7 @@ Step 1. Installing the Add-on
 
 To get and install this add-on, do the following:
 
-1. Download the Product Prices in the Secondary Currency add-on archive using `this link <https://github.com/cscart/addon-default-secondary-currency/archive/master.zip>`_.
+1. Download the Secondary Currency by Default add-on archive using `this link <https://github.com/cscart/addon-default-secondary-currency/archive/master.zip>`_.
 
 .. note::
 
@@ -24,7 +24,7 @@ To get and install this add-on, do the following:
 
 .. image:: img/addons_plus_button.png
     :align: center
-    :alt: Search
+    :alt: Add-ons plus button
 
 5. In the pop-up window click **Local**, and choose the add-on archive.
 
@@ -32,13 +32,13 @@ To get and install this add-on, do the following:
 
 .. image:: img/upload_and_install_addon.png
     :align: center
-    :alt: Search
+    :alt: Upload and install pop-up
 
 The Secondary Currency by Default add-on has been installed.
 
 .. image:: img/default_secondary_currency_01.png
     :align: center
-    :alt: Search
+    :alt: The Secondary Currency by Default add-on
 
 ==========================================================
 Step 2. Setting up the Secondary Currency as a Default One
