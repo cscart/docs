@@ -24,7 +24,7 @@ To get and install this add-on, do the following:
 
 .. image:: img/addons_plus_button.png
     :align: center
-    :alt: Search
+    :alt: Add-ons plus button
 
 5. In the pop-up window click **Local**, and choose the add-on archive.
 
@@ -32,13 +32,13 @@ To get and install this add-on, do the following:
 
 .. image:: img/upload_and_install_addon.png
     :align: center
-    :alt: Search
+    :alt: Upload and install pop-up
 
 The Product Prices in the Secondary Currency add-on has been installed.
 
 .. image:: img/prices_in_secondary_currency_01.png
     :align: center
-    :alt: Search
+    :alt: The Product Prices in the Secondary Currency add-on
 
 =========================================
 Step 2. Setting up the Secondary Currency
@@ -48,7 +48,7 @@ To display the correct secondary currency you will need to make some changes in 
 
 1. Open the **hide_primary_currency** folder located in the *app/addons* directory of your CS-Cart installation.
 
-2. In this folder open the **func.php** file.
+2. In this folder, open the **func.php** file.
 
 3. Replace ``DESIRED_ADMIN_CURRENCY_CODE`` with the 3-symbol code of the currency that you want to use in the Administration panel and ``DESIRED_STOREFRONT_CURRENCY_CODE`` with the 3-symbol code of the currency that you want to use in the storefront.
 
@@ -62,85 +62,8 @@ The Product Prices in the Secondary Currency add-on is ready for work.
 
 .. image:: img/prices_in_secondary_currency_03.png
     :align: center
-    :alt: The 3-symbol code of the currency.
+    :alt: The Product Prices in the Secondary Currency add-on on the storefront
 
 .. important ::
 
     This add-on will hide all your currencies except the one you specify in the code. If you want to keep your other currencies but only select the desired one by default, please use the instructions in `here <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/changing_attributes/secondary_currency.html>`_.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1.   Open the **fn.init.php** file located in the *app/functions* directory of your CS-Cart installation.
-2.   Find and replace the following part of code:
-
-.. code-block :: none
-
-    define('CART_PRIMARY_CURRENCY', $primary_currency);
-    define('CART_SECONDARY_CURRENCY', $secondary_currency);
-
-with this one:
-
-.. code-block :: none
-
-    $primary_currency = 'DESIRED_ADMIN_CURRENCY_CODE';
-    $secondary_currency = 'DESIRED_STOREFRONT_CURRENCY_CODE';
-
-    define('CART_PRIMARY_CURRENCY', $primary_currency);
-    define('CART_SECONDARY_CURRENCY', $secondary_currency);
-
-
-where replace *DESIRED_ADMIN_CURRENCY_CODE* with the 3-symbol code of the currency that you want to use in the administration panel and *DESIRED_STOREFRONT_CURRENCY_CODE* with the 3-symbol code of the currency that you want to use in the storefront.
-
-3.   Find and replace the following part of code there:
-
-.. code-block :: none
-
-    $view->assign('currencies', Registry::get('currencies'), false);
-
-with this one:
-
-.. code-block :: none
-
-    $view->assign('hide_currencies', true);
-    $view->assign('currencies', Registry::get('currencies'), false);
-
-4.   Save the file.
-5.   Open the **currencies.tpl** file located in the *design/themes/[CUSTOMER_ACTIVE_THEME]/templates/blocks* directory of your CS-Cart installation, where [CUSTOMER_ACTIVE_THEME] is an active theme of your storefront.
-6.   Find and replace the following part of code:
-
-.. code-block :: none
-
-    {if $currencies && $currencies|count > 1}
-
-with this one:
-
-.. code-block :: none
-
-    {if $currencies && $currencies|count > 1 && !$hide_currencies}
-
-7.   Save the file.
-
-.. important ::
-
-	This modification will hide all your currencies except the one you specify in the code. If you want to keep your other currencies but only select the desired one by default, please use the instructions in `here <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/changing_attributes/secondary_currency.html>`_.

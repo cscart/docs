@@ -16,11 +16,11 @@ To get and install this add-on, follow the steps below:
 
 3. Go to **Add-ons → Manage add-ons**.
 
-4. On the **Add-ons** page, click the **+** button to upload the add-on.
+4. Сlick the **+** button to upload the add-on.
 
 .. image:: img/addons_plus_button.png
     :align: center
-    :alt: Search
+    :alt: Add-ons plus button
 
 5. In the pop-up window click **Local**, and choose the add-on archive.
 
@@ -28,13 +28,13 @@ To get and install this add-on, follow the steps below:
 
 .. image:: img/upload_and_install_addon.png
     :align: center
-    :alt: Search
+    :alt: Upload and install pop-up
 
 The Wishlist Products ABC add-on is installed and ready for work.
 
 .. image:: img/wishlist_products_abc_03.png
     :align: center
-    :alt: Search
+    :alt: Wishlish Products ABC add-on
 
 .. note::
 
@@ -42,4 +42,4 @@ The Wishlist Products ABC add-on is installed and ready for work.
 
 .. image:: img/wishlist_products_abc_04.png
     :align: center
-    :alt: Search
+    :alt: Wishlist Products ABC add-on on the storefront

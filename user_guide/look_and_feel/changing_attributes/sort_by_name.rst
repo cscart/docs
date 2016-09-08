@@ -2,37 +2,44 @@
 How To: Sort Subcategories by Name on the Category Page
 *******************************************************
 
-1.   Open the **fn.catalog.php** file located in the *app/functions* directory of your CS-Cart installation.
-2.   Find the following part of code there:
+To sort subcategories by name on the category page use the **Sort Subcategories by Name** add-on. 
 
-.. code-block :: none
+To get and install this add-on, follow the steps below:
 
-    $default_params = array (
-           'category_id' => 0,
-           'visible' => false,
-           'current_category_id' => 0,
-           'simple' => true,
-           'plain' => false,
-           'limit' => 0,
-           'item_ids' => '',
-           'group_by_level' => true,
-           'get_images' => false,
-           'category_delimiter' => '/'
-           'get_frontend_urls' => false,
-           'max_nesting_level' => null,    // null means no limitation
-    );
+1. Download the Sort Subcategories by Name add-on archive using `this link <https://github.com/cscart/addon-subcategories-sort/archive/master.zip>`_.
 
-and add the following lines:
+.. note::
 
-.. code-block :: none
+    If you want to check the add-on code, please, visit `the add-on page on GitHub <https://github.com/cscart/addon-subcategories-sort>`_.
 
-    'sort_by' => 'name',
-    'sort_order' => 'asc',
+2. Log in to the Administration panel of your store.
 
-before
+3. Go to **Add-ons → Manage add-ons**.
 
-.. code-block :: none
+4. Сlick the **+** button to upload the add-on.
 
-    );
+.. image:: img/addons_plus_button.png
+    :align: center
+    :alt: Add-ons plus button
 
-3.   Save the file.
+5. In the pop-up window click **Local**, and choose the add-on archive.
+
+6. Click **Upload & install**.
+
+.. image:: img/upload_and_install_addon.png
+    :align: center
+    :alt: Upload and install pop-up
+
+The Sort Subcategories by Name add-on is installed and ready for work.
+
+.. image:: img/sort_subcategories_01.png
+    :align: center
+    :alt: The Sort Subcategories by Name add-on
+
+.. note::
+
+    The subcategories will be automatically sorted by name immediately after the add-on was installed and activated.
+
+.. image:: img/sort_subcategories_02.png
+    :align: center
+    :alt: Subcategories sorted by name

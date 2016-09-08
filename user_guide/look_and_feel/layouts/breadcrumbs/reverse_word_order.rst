@@ -2,35 +2,48 @@
 How To: Reverse the Word Order of Breadcrumbs
 *********************************************
 
-*   In the *design/themes/[YOUR_ACTIVE_THEME]/templates/common* directory of your CS-Cart installation, open the **breadcrumbs.tpl** file.
-*   Replace all its code with this one:
+To reverse the word order of breadcrumbs use the **Reverse Breadcrumbs** add-on.
 
-.. code-block:: none
+To get and install this add-on, follow the steps below:
 
-    <div id="breadcrumbs_{$block.block_id}">
+1. Download the Reverse Breadcrumbs add-on archive using `this link <https://github.com/cscart/addon-breadcrumbs-reverse/archive/master.zip>`_.
 
-    {if $breadcrumbs && $breadcrumbs|@sizeof > 1}
-    	<div class="breadcrumbs clearfix">
-    		{strip}
-    			{section loop=$breadcrumbs name="bc" step=-1}
-    				{if !$smarty.section.bc.first}
-    					<i class="icon-right-open-thin"></i>
-    					<span class="ty-breadcrumbs__slash">/</span>
-    				{/if}		
-    				{if $breadcrumbs[bc].link}
-    					<a href="{$breadcrumbs[bc].link|fn_url}"{if $additional_class} class="{$additional_class}"{/if}{if $bc.nofollow} rel="nofollow"{/if}>{$breadcrumbs[bc].title|strip_tags|escape:"html" nofilter}</a>
-    				{else}
-    					<span>{$breadcrumbs[bc].title|strip_tags|escape:"html" nofilter}&nbsp;</span>
-    				{/if}
-    			{/section}
-    		{/strip}
-    	</div>
-    {/if}
+.. note::
 
-    <!--breadcrumbs_{$block.block_id}--></div>
+    If you want to check the add-on code, please, visit `the add-on page on GitHub <https://github.com/cscart/addon-breadcrumbs-reverset>`_.
 
-*   Save the file.
+2. Log in to the Administration panel of your store.
+
+3. Go to **Add-ons → Manage add-ons**.
+
+4. Сlick the **+** button to upload the add-on.
+
+.. image:: img/addons_plus_button.png
+    :align: center
+    :alt: Add-ons plus button
+
+5. In the pop-up window click **Local**, and choose the add-on archive.
+
+6. Click **Upload & install**.
+
+.. image:: img/upload_and_install_addon.png
+    :align: center
+    :alt: Upload and install pop-up
+
+The Reverse Breadcrumbs add-on is installed and ready for work.
+
+.. image:: img/reverse_word_order_01.png
+    :align: center
+    :alt: The Reverse Breadcrumbs add-on
+
+.. note::
+
+    The breadcrumbs will be automatically reversed immediately after the add-on was installed and activated.
+
+.. image:: img/reverse_word_order_02.png
+    :align: center
+    :alt: Reversed breadcrumbs on the storefront
 
 .. note ::
 
-	If you have made changes in a template but they are not displayed, please try clearing the template cache. In order to do it, in the Administration panel of your store go to **Administration → Storage → Clear cache**.
+    If you have installed the add-on but the changes are not displayed, please try clearing the template cache. In order to do it, in the Administration panel of your store go to **Administration → Storage → Clear cache**.
