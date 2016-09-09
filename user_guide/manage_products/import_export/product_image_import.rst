@@ -29,7 +29,7 @@ Before you can import the images, you need to upload them. You can do it via:
 File Editor
 -----------
 
-Let’s assume that we want to upload some images for products. These images will be used during the import, so we decide store them in the **Private files** section, in a separate folder called images. Here’s what we do:
+Let’s assume that we want to upload some images for products. These images will be used during the import, so we decide to store them in the **Private files** section, in a separate folder called images. Here’s what we do:
 
 1. Create an archive called **images.zip**. That way we’ll have the images folder when we unpack the archive on our server.
 
