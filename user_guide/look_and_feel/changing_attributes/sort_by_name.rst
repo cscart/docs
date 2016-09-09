@@ -2,7 +2,7 @@
 How To: Sort Subcategories by Name on the Category Page
 *******************************************************
 
-To sort subcategories by name on the category page use the **Sort Subcategories by Name** add-on. 
+Use the **Sort Subcategories by Name** add-on for this purpose. 
 
 To get and install this add-on, follow the steps below:
 

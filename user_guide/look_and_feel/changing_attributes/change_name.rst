@@ -2,8 +2,6 @@
 How To: Change the Company Name
 *******************************
 
-To change the company name:
-
 1.   In the Administration panel, go to **Settings → Company**.
 2.   In the opened page edit the **Company name** field.
 3.   Click the **Save** button.

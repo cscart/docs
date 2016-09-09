@@ -2,7 +2,7 @@
 How To: Display Wishlist Products in Alphabetical Order
 *******************************************************
 
-To display wishlist products in alphabetical order use the **Wishlist Products ABC** add-on. 
+Use the **Wishlist Products ABC** add-on for this purpose. 
 
 To get and install this add-on, follow the steps below:
 
@@ -10,7 +10,7 @@ To get and install this add-on, follow the steps below:
 
 .. note::
 
-    If you want to check the add-on code, please, visit `the add-on page on GitHub <https://github.com/cscart/addon-wishlist-sort>`_.
+    If you want to check the add-on code, please visit `the add-on page on GitHub <https://github.com/cscart/addon-wishlist-sort>`_.
 
 2. Log in to the Administration panel of your store.
 
@@ -38,7 +38,7 @@ The Wishlist Products ABC add-on is installed and ready for work.
 
 .. note::
 
-    In order to see the changes currently logged in customers will have to re-log in to the store.
+    Customers, who are currently logged in, will have to re-log into the store before they can see the changes.
 
 .. image:: img/wishlist_products_abc_04.png
     :align: center

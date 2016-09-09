@@ -2,7 +2,7 @@
 How To: Set the Secondary Currency to Be Selected by Default on the Storefront
 ******************************************************************************
 
-To set the secondary currency to be selected by default on the storefront use the **Secondary Currency by Default** add-on.
+Use the **Secondary Currency by Default** add-on for this purpose.
 
 =============================
 Step 1. Installing the Add-on

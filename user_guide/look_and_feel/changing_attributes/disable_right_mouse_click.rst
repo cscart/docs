@@ -40,7 +40,7 @@ The Disable Right Mouse Click add-on is installed and ready for work.
 
 .. note::
 
-    Right mouse click will be disabled immediately after the add-on was installed and activated.
+    Right mouse click will be disabled immediately after you install and activate the add-on.
 
 .. image:: img/disable_right_mouse_click_01.png
     :align: center
