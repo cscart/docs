@@ -2,7 +2,7 @@
 How To: Display Product Prices Only in the Secondary Currency on the Storefront
 *******************************************************************************
 
-To be able to set up product prices in one currency but display them in another one on the storefront use the **Product Prices in the Secondary Currency** add-on.
+Use the **Product Prices in the Secondary Currency** add-on for this purpose.
 
 =============================
 Step 1. Installing the Add-on

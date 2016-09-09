@@ -46,9 +46,13 @@ Step 2. Setting up a Language
 
 To set the right-to-left text direction you will need to make some changes in the code of the installed add-on.
 
-1. Open the **rtl_text_layout** folder located in the *design/themes/[CUSTOMER_ACTIVE_THEME]/templates/addons* directory of your CS-Cart installation, where [CUSTOMER_ACTIVE_THEME] is an active theme of your storefront.
+.. note::
 
-2. In this folder, go to **hooks → index** and open the **html_tag.pre.tpl** file.
+    The add-on is designed for the Responsive theme, which is the default theme of CS-Cart and Multi-Vendor.
+
+1. Open the **rtl_text_layout** folder located in the *design/themes/responsive/templates/addons/hooks/index* directory of your CS-Cart installation.
+
+2. In this folder, open the **html_tag.pre.tpl** file.
 
 3. Replace ``[YOUR_LANGUAGE_CODE]`` with the language code for which the right-to-left text direction should be active.
 

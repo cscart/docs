@@ -2,7 +2,7 @@
 How To: Change the Home Breadcrumbs Link Direction
 **************************************************
 
-To change the home breadcrumbs link direction use the **Home Breadcrumbs Link Direction** add-on.
+Use the **Home Breadcrumbs Link Direction** add-on for this purpose .
 
 =============================
 Step 1. Installing the Add-on
@@ -22,7 +22,7 @@ To get and install this add-on, do the following:
 
 4. Сlick the **+** button to upload the add-on.
 
-.. image:: img/addons_plus_button.png
+.. image:: ../../changing_attributes/img/addons_plus_button.png
     :align: center
     :alt: Add-ons plus button
 
@@ -30,7 +30,7 @@ To get and install this add-on, do the following:
 
 6. Click **Upload & install**.
 
-.. image:: img/upload_and_install_addon.png
+.. image:: ../../changing_attributes/img/upload_and_install_addon.png
     :align: center
     :alt: Upload and install pop-up
 

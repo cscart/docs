@@ -6,7 +6,7 @@ How To: Change the Page Meta Data
 
 There are three types of the meta data in CS-Cart:
 
-* **Page title**—Title of the category page on the storefront, which is displayed in the web browser when somebody is viewing the page. Required for SEO purposes.
+* **Page title**—Title of the page on the storefront, which is displayed in the web browser when somebody is viewing the page. Required for SEO purposes.
 
 * **META description**—Contents of the HTML meta tag describing the category. Required for SEO purposes.
 
@@ -14,17 +14,15 @@ There are three types of the meta data in CS-Cart:
 
 In CS-Cart the meta data structure can be described as a three-level hierarchy:
 
-* **Layouts: Location: Default**—The default layout level. Here, the meta data for all standard pages is stored.
+* **Layouts: Location: Default**—The default meta data.
 
-* **Layouts: Location: Current**—The separate layout level. Here, the meta data for specific layouts is stored.
+* **Layouts: Location: Current**—The layout page meta data.
 
-* **Manage Object Page**—The separate page level. Here, the meta data for specific objects or pages is stored, for example, separate category and product pages.
+* **Manage Object Page**—The object meta data.
 
-=======================================
-Changing the Standard CS-Cart Meta Data
-=======================================
-
-To change the standard CS-Cart Meta data:
+==============================
+Changing the Default Meta Data
+==============================
 
 1.   In the Administration panel, go to **Design → Layouts**.
 2.   Click the gear icon on the **Default** tab.
@@ -41,11 +39,9 @@ To change the standard CS-Cart Meta data:
 
 4.   Click the **Save** button.
 
-======================================
-Changing the Separate Layout Meta Data
-======================================
-
-To change the Meta data of a separate layout:
+==================================
+Changing the Layout Page Meta Data
+==================================
 
 1.   In the Administration panel, go to **Design → Layouts**.
 2.   Click the gear icon on the desired layout tab.
@@ -62,11 +58,9 @@ To change the Meta data of a separate layout:
 
 4.   Click the **Save** button.
 
-====================================
-Changing the Separate Page Meta Data
-====================================
-
-To change the Meta data of a separate page:
+=============================
+Changing the Object Meta Data
+=============================
 
 1.   In the Administration panel, open the desired page (e.g., to change the meta data of the *Product detailed page of a specific product*, go to **Products → Products**) and click on the product name.
 2.   Switch to the **SEO** tab.

@@ -2,7 +2,7 @@
 How To: Reverse the Word Order of Breadcrumbs
 *********************************************
 
-To reverse the word order of breadcrumbs use the **Reverse Breadcrumbs** add-on.
+Use the **Reverse Breadcrumbs** add-on for this purpose .
 
 To get and install this add-on, follow the steps below:
 
@@ -18,7 +18,7 @@ To get and install this add-on, follow the steps below:
 
 4. Сlick the **+** button to upload the add-on.
 
-.. image:: img/addons_plus_button.png
+.. image:: ../../changing_attributes/img/addons_plus_button.png
     :align: center
     :alt: Add-ons plus button
 
@@ -26,7 +26,7 @@ To get and install this add-on, follow the steps below:
 
 6. Click **Upload & install**.
 
-.. image:: img/upload_and_install_addon.png
+.. image:: ../../changing_attributes/img/upload_and_install_addon.png
     :align: center
     :alt: Upload and install pop-up
 
