@@ -8,8 +8,9 @@ Blocks differ from each other in the type of data they represent. However, block
 
 CS-Cart already offers a number of pre-defined blocks. Use them to quickly add the most popular and common storefront components. In addition, you can create custom blocks based on the available templates.
 
+===============
 In this section
-***************
+===============
 
 .. toctree::
     :maxdepth: 3
@@ -17,17 +18,22 @@ In this section
     :glob:
 
     actions_on_blocks
+    onsale
+    arrange_categories
+    bestsellers
+    different_banners
+    hide_blocks
+    newest_products
+    related_products
+
+.. toctree::
+    :maxdepth: 1
+    :hidden:
+
+    newest_products_on_all_pages
+    add_block
+    block_position
     block_filling_types
     block_settings
     block_templates
     block_types_properties
-    onsale
-    add_block
-    arrange_categories
-    bestsellers
-    block_position
-    different_banners
-    hide_blocks
-    newest_products
-    newest_products_on_all_pages
-    related_products
