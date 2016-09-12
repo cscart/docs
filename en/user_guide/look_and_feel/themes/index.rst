@@ -10,4 +10,13 @@ In this section
     :titlesonly:
     :glob:
 
-    *
+    elements_style
+    overview
+    theme_editor
+
+.. toctree::
+    :maxdepth: 2
+    :hidden:
+    :glob:
+
+    diacritic_symbols
