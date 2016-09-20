@@ -50,17 +50,15 @@ To set the right-to-left text direction you will need to make some changes in th
 
     The add-on is designed for the Responsive theme, which is the default theme of CS-Cart and Multi-Vendor.
 
-1. Open the **rtl_text_layout** folder located in the *design/themes/responsive/templates/addons/hooks/index* directory of your CS-Cart installation.
+1. Open the **html_tag.pre.tpl** file located in the *design/themes/responsive/templates/addons/rtl_text_layout/hooks/index*
 
-2. In this folder, open the **html_tag.pre.tpl** file.
-
-3. Replace ``[YOUR_LANGUAGE_CODE]`` with the language code for which the right-to-left text direction should be active.
+2. Replace ``[YOUR_LANGUAGE_CODE]`` with the language code for which the right-to-left text direction should be active.
 
 .. image:: img/right_to_left_02.png
     :align: center
     :alt: Language codes
 
-4. Click **Save changes**.
+3. Click **Save changes**.
 
 The Right-to-Left add-on is ready for work.
 
