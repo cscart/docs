@@ -10,7 +10,7 @@ CS-Cart is developed to meet most server configurations, ranging from shared hos
 
 There are two core requirements for your host to run CS-Cart:
 
-* `PHP <http://www.php.net/>`_ version 5.3, 5.4, 5.5, or 5.6. We recommend **PHP 5.6 for CS-Cart/Multi-Vendor 4.3.x**. 
+* `PHP <http://www.php.net/>`_ version 5.3.6, 5.4, 5.5, or 5.6. We recommend **PHP 5.6 for CS-Cart/Multi-Vendor 4.3.x**. 
 
 .. note::
 
