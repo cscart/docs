@@ -8,17 +8,7 @@
 
 .. image:: img/image_verification.png
     :align: center
-    :alt: Антибот на странице входа в магазин: добавляется новое обязательное поле Антибот.
-
-To enable image verification in your store, complete the following steps:
-
-1. In the Administration panel, go to **Settings → Image Verification**.
-
-2. Tick the necessary checkboxes in the **Use for** section.
-
-3. Fill in other fields as you see fit.
-
-4. Click the **Save** button.
+    :alt: Антибот на странице входа в магазин: добавляется новое обязательное поле "Антибот".
 
 Чтобы включить антибот в своём магазине, выполните следующие шаги:
 

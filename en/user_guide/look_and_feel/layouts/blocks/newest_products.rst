@@ -23,7 +23,7 @@ To display the section of the newest products on all pages:
 
 .. note::
 
-	The **Newest products** block will be displayed on all store pages. If you do not want to display it on some pages (e.g. on the **Checkout** page), open the corresponding tab on the **Layouts** page (e.g. choose the **Checkout** tab at the top of the page) and change the block status to *Disabled* by clicking on the **Activate/Deactivate Block** icon.
+	The **Newest products** block will be displayed on all store pages. If you do not want to display it on some pages (e.g. on the **Checkout** page), open the corresponding tab on the **Layouts** page (e.g. choose the **Checkout** tab at the top of the page) and change the block status to *Disabled* by clicking on the **Activate/Deactivate Block** icon. Sometimes the block might located in the Top Panel, Header, or Footer of the page, in that case on the desired tab click the **Set custom configuration** link and deactivate the block.
 
 ========================================================
 How To: Display the Newest Products on the Category Page

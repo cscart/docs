@@ -58,9 +58,20 @@ In CS-Cart the language of the interface and the language of the page entries (e
     :align: center
     :alt: Interface and entries languages
 
+In this section
+***************
+
 .. toctree::
     :maxdepth: 4
     :titlesonly:
     :glob:
 
-    *
+    contact_us_form
+    translate
+
+.. toctree::
+    :maxdepth: 4
+    :hidden:
+    :glob:
+
+    crowdin

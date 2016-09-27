@@ -44,7 +44,7 @@
 
 .. image:: img/edit_language.png
     :align: center
-    :alt: Configure the settings of the new language.
+    :alt: Настройте новый язык
 
 5. Заполните поля и щелкните **Сохранить**.
 

@@ -42,9 +42,6 @@
 
 Вы можете заполнять меню вручную или используя контент магазина.
 
-*   Click the gear button next to the created menu, choose **Manage items**, and in the opened window click the **+** button.
-*   In the appeared window specify:
-
 1. Щёлкните по **шестерёнке** рядом с созданным меню и выберите **Редактировать элементы**, в открывшемся окне щёлкните **+**.
 
 2. В открывшемся окне укажите:

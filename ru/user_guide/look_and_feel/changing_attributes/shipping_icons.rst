@@ -12,8 +12,6 @@
 Шаг 1. Замена хука
 ==================
 
-1. In the root directory of your CS-Cart installation, create the following directory path: */design/themes/[CURRENT_THEME_NAME]/templates/addons/my_changes/hooks/checkout*.
-
 1. В корневой директории установки CS-Cart, создайте следующий путь до директории: */design/themes/responsive/templates/addons/my_changes/hooks/checkout*.
 
 .. important ::
@@ -79,12 +77,6 @@
 ========================================
 Шаг 2. Загрузка иконок способов доставки 
 ========================================
-
-1. In the Administration panel of your store, go to **Administration → Shipping & Taxes → Shipping Methods**, click the gear button of the necessary shipping method, and choose **Edit**.
-
-2. Upload an image in the **Icon** section in the opened page.
-
-3. Click **Save and close**.
 
 1. В панели администратора вашего магазина откройте **Администрирование → Доставка и налоги → Способы доставки**, щёлкните по кнопке со значком **шестерёнки** рядом с нужным способом и выберите **Редактирвоать**.
 

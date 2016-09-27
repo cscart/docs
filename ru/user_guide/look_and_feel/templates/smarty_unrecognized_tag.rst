@@ -13,7 +13,7 @@
    ::
 
      {literal}
-     your JavaScript code
+     ваш JavaScript-код
      {/literal}
 
 3. Сохраните файл.

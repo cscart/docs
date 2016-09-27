@@ -56,9 +56,21 @@
     :align: center
     :alt: Язык интерфейса и элемента страницы
 
+==============
+В этом разделе
+==============
+
 .. toctree::
     :maxdepth: 4
     :titlesonly:
     :glob:
 
-    *
+    contact_us_form
+    translate
+
+.. toctree::
+    :maxdepth: 4
+    :hidden:
+    :glob:
+
+    crowdin

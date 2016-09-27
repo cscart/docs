@@ -10,15 +10,11 @@
     :align: center
     :alt: Кнопка "Редактор тем"
 
-3.   In the **Theme Editor** panel select **Logos** from the drop-down menu of the **Customize** field.
-
 3. В **Редакторе тем** щёлкните по полю **Редактировать** и выберите **Логотипы** из выпадающего списка.
 
 .. image:: img/logo_02.png
     :align: center
     :alt: Редактор тем
-
-4.   Choose the **Theme**, **Mail**, and **Gift Certificate** tabs to edit corresponding logos. Click the **Browse** button to upload images for logos.
 
 4. Переключаясь между вкладками **Тема**, **Почта** и **Подарочный сертификат**, вы можете редактировать соответствующие логотипы. Для загрузки изображений щёлкните по кнопке **Выбрать**.
 
