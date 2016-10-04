@@ -24,6 +24,26 @@ The PHP Version
 
 3. Contact your hosting administrator and ask them to :doc:`update PHP to a later version <../system_requirements>`.
 
+========================
+MySQLi Extension Missing
+========================
+
+If you see blank pages when trying to open the storefront of the Administration panel, it might be because **MySQLi** extension is not installed on your server. Here's a quick way to fix the problem:
+
+1. Go to the directory where your store is installed.
+
+2. Open the file called **config.local.php**.
+
+3. Find the following line::
+
+     $config['database_backend'] = 'mysqli';
+
+4. Replace it with this line::
+
+     $config['database_backend'] = 'pdo';
+
+5. Save the file and check the results.
+
 =================
 Not Enough Memory
 =================
