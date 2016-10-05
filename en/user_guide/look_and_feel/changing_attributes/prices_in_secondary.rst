@@ -1,20 +1,26 @@
-*******************************************************************************
-How To: Display Product Prices Only in the Secondary Currency on the Storefront
-*******************************************************************************
+*******************************************************************
+How To: Display Prices on the Storefront Only in Secondary Currency
+*******************************************************************
 
-Use the **Product Prices in the Secondary Currency** add-on for this purpose.
+We have developed a free add-on that displays prices on the storefront only in one selected currency. You can also choose one currency for the Administration panel. The currencies you choose for the Administration panel and the storefront don't have to be the primary currency.
 
-=============================
-Step 1. Installing the Add-on
-=============================
+.. hint::
 
-To get and install this add-on, do the following:
+    If you want to have selectable currencies on the storefront, but want to have a secondary currency selected by default, please check this :doc:`article. <secondary_currency>`
 
-1. Download the Product Prices in the Secondary Currency add-on archive using `this link <https://github.com/cscart/addon-hide-primary-currency/archive/master.zip>`_.
+.. image:: img/prices_in_secondary_currency_03.png
+    :align: center
+    :alt: A price in a secondary currency is displayed on the storefront. Customers can't select other currencies.
 
-.. note::
+==========================
+Step 1. Install the Add-on
+==========================
 
-    If you want to check the add-on code, please, visit `the add-on page on GitHub <https://github.com/cscart/addon-hide-primary-currency>`_. 
+1. Download the **Product Prices in Secondary Currency** add-on using `this link <https://github.com/cscart/addon-hide-primary-currency/archive/master.zip>`_. You'll get a ZIP archive.
+
+   .. note::
+
+       You're also welcome to visit `the add-on's repository on GitHub. <https://github.com/cscart/addon-hide-primary-currency>`_
 
 2. Log in to the Administration panel of your store.
 
@@ -26,7 +32,7 @@ To get and install this add-on, do the following:
     :align: center
     :alt: Add-ons plus button
 
-5. In the pop-up window click **Local**, and choose the add-on archive.
+5. In the pop-up window click **Local**, and choose the ZIP archive you downloaded earlier.
 
 6. Click **Upload & install**.
 
@@ -34,36 +40,28 @@ To get and install this add-on, do the following:
     :align: center
     :alt: Upload and install pop-up
 
-The Product Prices in the Secondary Currency add-on has been installed.
+=============================
+Step 2. Choose the Currencies
+=============================
+
+1. Find **Product Prices in the Secondary Currency** on the list of add-ons and click on the add-on's name.
 
 .. image:: img/prices_in_secondary_currency_01.png
     :align: center
     :alt: The Product Prices in the Secondary Currency add-on
 
-=========================================
-Step 2. Setting up the Secondary Currency
-=========================================
+2. You'll see two settings: **Desired admin currency code** and **Desired storefront currency code**. Fill in both fields.
 
-To display the correct secondary currency you will need to make some changes in the code of the installed add-on.
+   .. hint:: 
 
-1. Open the **hide_primary_currency** folder located in the *app/addons* directory of your CS-Cart installation.
+       You can find the currency codes under **Administration → Currencies**. The codes appear to the left of the exchange rate.
 
-2. In this folder, open the **func.php** file.
+3. Click **Save**.
 
-3. Replace ``DESIRED_ADMIN_CURRENCY_CODE`` with the 3-symbol code of the currency that you want to use in the Administration panel and ``DESIRED_STOREFRONT_CURRENCY_CODE`` with the 3-symbol code of the currency that you want to use in the storefront.
+   .. important::
+
+       When editing products, you'll have to specify the prices in the primary currency of your store. This is because all calculations are still done in the primary currency. Prices in other currencies are simply displayed according to the rate that you specify.
 
 .. image:: img/prices_in_secondary_currency_02.png
     :align: center
-    :alt: The 3-symbol code of the currency.
-
-4. Click **Save changes**.
-
-The Product Prices in the Secondary Currency add-on is ready for work.
-
-.. image:: img/prices_in_secondary_currency_03.png
-    :align: center
-    :alt: The Product Prices in the Secondary Currency add-on on the storefront
-
-.. important ::
-
-    This add-on will hide all your currencies except the one you specify in the code. If you want to keep your other currencies but only select the desired one by default, please use the instructions in `here <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/changing_attributes/secondary_currency.html>`_.
+    :alt: The codes of the currencies in a CS-Cart store.

@@ -1,20 +1,18 @@
-**************************************************
-How To: Change the Home Breadcrumbs Link Direction
-**************************************************
+******************************************************
+How To: Change Destination of Home Link in Breadcrumbs
+******************************************************
 
-Use the **Home Breadcrumbs Link Direction** add-on for this purpose .
-
+:doc:`Breadcrumbs <index>` have the *Home* link, that leads to the index page of your store. To change where the *Home* link leads, use our free add-on.
+ 
 =============================
 Step 1. Installing the Add-on
 =============================
 
-To get and install this add-on, do the following:
-
-1. Download the Home Breadcrumbs Link Direction add-on archive using `this link <https://github.com/cscart/addon-breadcrumbs-home-link/archive/master.zip>`_.
+1. Download the **Home Breadcrumbs Link Direction** add-on using `this link. <https://github.com/cscart/addon-breadcrumbs-home-link/archive/master.zip>`_ You'll get a ZIP archive.
 
 .. note::
 
-    If you want to check the add-on code, please, visit `the add-on page on GitHub <https://github.com/cscart/addon-breadcrumbs-home-link>`_.
+   You are also welcome to visit `the add-on's repository on GitHub. <https://github.com/cscart/addon-breadcrumbs-home-link>`_
 
 2. Log in to the Administration panel of your store.
 
@@ -26,7 +24,7 @@ To get and install this add-on, do the following:
     :align: center
     :alt: Add-ons plus button
 
-5. In the pop-up window click **Local**, and choose the add-on archive.
+5. In the pop-up window click **Local**, and choose the ZIP archive you downloaded earlier.
 
 6. Click **Upload & install**.
 
@@ -34,24 +32,16 @@ To get and install this add-on, do the following:
     :align: center
     :alt: Upload and install pop-up
 
-The Home Breadcrumbs Link Direction add-on has been installed.
+====================================
+Step 2. Choose Home Link Destination
+====================================
+
+1. Find **Home Breadcrumbs Link Direction** on the list of add-ons and click on the add-on's name.
 
 .. image:: img/breadcrumbs_link_direction_01.png
     :align: center
     :alt: The Home Breadcrumbs Link Direction add-on
 
-================================
-Step 2. Setting up the Home Link
-================================
+2. You'll see only one setting: **The home link of your store**. Replace *http://www.domain.com* with the desired destination for the home link, for example, *http://example.com/mypage*.
 
-To make the add-on work properly you will need to enter the home link of your store in the code of the installed add-on.
-
-1. Open the **breadcrumbs_home_link** folder located in the *app/addons* directory of your CS-Cart installation.
-
-2. In this folder, open the **func.php** file.
-
-3. Replace ``YOUR_LINK`` with the home link of your store, for example, http://www.domain.com.
-
-4. Click **Save changes**.
-
-The Home Breadcrumbs Link Direction add-on is ready for work.
+3. Click **Save**. Now *Home* will lead to *http://example.com/mypage*.

@@ -16,7 +16,7 @@
     change_logo
     change_name
     change_time_and_date
-    disbale_right_mouse_click
+    disable_right_mouse_click
     edit_meta_tags
     favicon
     image_verification
