@@ -29,7 +29,7 @@ To configure the following settings go to **Add-ons → Manage add-ons** and cli
 Instant payment notification settings
 -------------------------------------
 
-* **Override customer info**—tick this checkbox, if you want customer profile information in your store to be replaced with the info sent from PayPal.
+* **Override customer info**—tick this checkbox, if you want to replace customer information in the order details with the data sent by PayPal via :doc:`Instant Payment Notifications <paypal_ipn>`.
 
 ----------------------------------
 PayPal order status conversion map
