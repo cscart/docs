@@ -20,9 +20,9 @@ Each vendor plan has a separate **Transaction fee**, which is the equivalent of 
 
     Learn more about **Vendor Plans** `here <http://forum.cs-cart.com/topic/43981-meet-vendor-plans-for-multi-vendor-436/>`_.
 
-=============================================
-How Comissions Turn Into Plans During Upgrade
-=============================================
+==============================================
+How Commissions Turn Into Plans During Upgrade
+==============================================
 
 When you upgrade to 4.4.x from 4.3.x, a separate hidden plan is created for each vendor. The plan has no limitations or subscription fees. But the **Vendor Plans** add-on doesn’t support fixed sum commissions, so absolute and relative commissions are handled differently:
 
