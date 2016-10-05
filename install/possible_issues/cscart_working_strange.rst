@@ -28,7 +28,7 @@ The PHP Version
 MySQLi Extension Missing
 ========================
 
-If you see blank pages when trying to open the storefront of the Administration panel, it might be because **MySQLi** extension is not installed on your server. Here's a quick way to fix the problem:
+If you see blank pages when trying to open the storefront or the Administration panel, it might be because **MySQLi** extension is not installed on your server. Here's a quick way to fix the problem:
 
 1. Go to the directory where your store is installed.
 
