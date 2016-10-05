@@ -1,34 +1,36 @@
-***************************
-Изменение атрибутов CS-Cart
-***************************
-
-В данном разделе
 ****************
+Отдельные правки
+****************
+
+Здесь описано, как изменить отдельные аспекты поведения или внешнего вида CS-Cart или Multi-Vendor с помощью настроек или модификации кода. Некоторые модификации мы распространяем бесплатно в виде модулей. 
+
+================
+В данном разделе
+================
 
 .. toctree::
     :maxdepth: 2
     :titlesonly:
     :glob:
 
-    alphabetical
-    authentication_timeout
-    change_image_size
+    store_closed
     change_logo
-    change_name
-    change_time_and_date
-    disable_right_mouse_click
-    edit_meta_tags
     favicon
-    image_verification
+    change_name
     powered_by
+    change_image_size
+    disable_right_mouse_click
+    change_time_and_date
+    edit_meta_tags
+    image_verification
     prices_in_secondary
-    right_to_left
-    saved_cart_period
-    script_display
     secondary_currency
     shipping_icons
+    alphabetical
     sort_by_name
-    store_closed
+    authentication_timeout
+    saved_cart_period
+    script_display
 
 .. toctree::
     :maxdepth: 2
@@ -39,3 +41,4 @@
     quick_search_product_code
     change_title
     sort_images
+    right_to_left

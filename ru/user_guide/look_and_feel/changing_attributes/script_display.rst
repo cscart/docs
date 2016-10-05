@@ -18,22 +18,21 @@
 
 3. Вставьте ваш скрипт в нужную часть кода, добавив к нему параметр ``data-no-defer``.
 
-    Изначальный вариант кода:
+   Изначальный вариант кода::
 
-    *<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=y4oQZZZO4ztyCCS4z0emVSlKODDnz3Gp&width=600&height=450">*
+     <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=y4oQZZZO4ztyCCS4z0emVSlKODDnz3Gp&width=600&height=450">
     
-    Изменённый вариант кода:
+   Изменённый вариант кода::
 
-    *<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=y4oQZZZO4ztyCCS4z0emVSlKODDnz3Gp&width=600&height=450" data-no-defer>*
+     <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=y4oQZZZO4ztyCCS4z0emVSlKODDnz3Gp&width=600&height=450" data-no-defer>
 
 .. image:: img/embed_script_02.png
     :align: center
     :alt: Описание
 
+4. Сохраните изменения, и проблема должна исчезнуть.
 
-4. Сохраните изменения.
-
-Теперь страница выглядит вот так:
+   В нашем случае страница стала выглядеть вот так:
 
 .. image:: img/embed_script_03.png
     :align: center
