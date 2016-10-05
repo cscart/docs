@@ -2,15 +2,21 @@
 How To: Display Wishlist Products in Alphabetical Order
 *******************************************************
 
-Use the **Wishlist Products ABC** add-on for this purpose. 
+By default, CS-Cart displays wishlist products in the sane order they were added to the list. But we have developed a free add-on that sorts wishlist products in alphabetical order.
 
-To get and install this add-on, follow the steps below:
+.. image:: img/wishlist_products_abc_04.png
+    :align: center
+    :alt: Wishlist Products ABC add-on on the storefront
 
-1. Download the Wishlist Products ABC add-on archive using `this link <https://github.com/cscart/addon-wishlist-sort/archive/master.zip>`_.
+=====================
+Installing the Add-on
+=====================
+
+1. Download the **Wishlist Products ABC** add-on using `this link. <https://github.com/cscart/addon-wishlist-sort/archive/master.zip>`_ You'll get a ZIP archive.
 
 .. note::
 
-    If you want to check the add-on code, please visit `the add-on page on GitHub <https://github.com/cscart/addon-wishlist-sort>`_.
+    You're also welcome to visit `the add-on's repository on GitHub. <https://github.com/cscart/addon-wishlist-sort>`_
 
 2. Log in to the Administration panel of your store.
 
@@ -22,7 +28,7 @@ To get and install this add-on, follow the steps below:
     :align: center
     :alt: Add-ons plus button
 
-5. In the pop-up window click **Local**, and choose the add-on archive.
+5. In the pop-up window click **Local**, and choose the ZIP archive you downloaded earlier.
 
 6. Click **Upload & install**.
 
@@ -30,16 +36,8 @@ To get and install this add-on, follow the steps below:
     :align: center
     :alt: Upload and install pop-up
 
-The Wishlist Products ABC add-on is installed and ready for work.
+After the installation is complete, you'll see **Wishlist Products ABC** on the list of add-ons. The add-on is active by default, so it starts working as soon as you install it.
 
 .. image:: img/wishlist_products_abc_03.png
     :align: center
     :alt: Wishlish Products ABC add-on
-
-.. note::
-
-    Customers, who are currently logged in, will have to re-log into the store before they can see the changes.
-
-.. image:: img/wishlist_products_abc_04.png
-    :align: center
-    :alt: Wishlist Products ABC add-on on the storefront
