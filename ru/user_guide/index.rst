@@ -9,6 +9,7 @@
     :glob:
 
     admin_panel
+    look_and_feel/index
     addons/index
     currencies/index
     files/index

@@ -2,10 +2,15 @@
 Look & Behavior Tweaks
 **********************
 
-This section covers various ways of changing CS-Cart/Multi-Vendor behavior and appearance via settings or code modifications. We provide some of those modifications as free add-ons.
+This section covers various ways of changing CS-Cart/Multi-Vendor behavior and appearance via settings or modifications. We provide some of those modifications as free add-ons.
 
+.. note::
+
+    We advise using add-ons instead of direct code modifications—that way you won't have to reapply the changes after the upgrade. And if there are any problems, it's easy to disable an add-on.
+
+===============
 In this section
-***************
+===============
 
 .. toctree::
     :maxdepth: 2
