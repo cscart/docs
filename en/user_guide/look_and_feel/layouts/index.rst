@@ -60,7 +60,7 @@ When editing or adding a layout, you can define the following properties:
 
 * **Copy data from layout** (when adding new layout)—choose the layout from which you want to copy the content.
 
-* **Default**—this checkbox is ticked, the layout will be set as default.
+* **Default**—if this checkbox is ticked, the layout will be set as default and will be used on the storefront.
 
 * **Grid columns**—choose whether to use the 12- or 16-column grid in the layout.
 

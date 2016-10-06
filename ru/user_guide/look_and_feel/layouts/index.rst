@@ -1,12 +1,12 @@
-*******
-Layouts
-*******
+******
+Макеты
+******
 
-Layouts determine the structure of your storefront. A layout consists of :doc:`layout pages <layout_pages/index>`, which represent various page types of your storefront.
+Макеты определяют структуру витрины вашего магазина. Каждый макет состоит из так называемых :doc:`страниц макета <layout_pages/index>`. Страницы макета соотносятся с определенными страницами или типами страниц на витрине.
 
-===============
-In this section
-===============
+==============
+В этом разделе
+==============
 
 .. toctree::
     :maxdepth: 1
@@ -21,73 +21,73 @@ In this section
 
     layout_structure
 
-================
-Managing Layouts
-================
+========================
+Как редактировать макеты
+========================
 
-You can manage layouts in the **Design → Layouts** section of your store's administration panel.
+В панели администратора магазина перейдите на страницу **Дизайн → Макеты**.
 
 .. hint::
 
-    Click the **NEED HELP** on the **Design → Layouts** page to see the videos about layouts and the widget mode. 
+    Рекомендуем два видеоурока по макетам: `№1 <http://www.cs-cart.ru/videos/admin/kak-upravlyat-maketami-stranic-v-magazine-na-cs-cart-chast-1.html>`_, `№2 <http://www.cs-cart.ru/videos/admin/kak-upravlyat-maketami-stranic-v-magazine-na-cs-cart-chast-2.html>`_. 
 
 .. image:: img/layout_management.png
     :align: center
-    :alt: Layout pages have gear buttons next to their names.
+    :alt: Рядом с названиями страниц макета есть изображение шестеренки. Нажмите на изображение, и сможете изменить свойства страницы. 
 
+Добавляйте новые макеты с помощью кнопки **+**. Список макетов находится справа, под заголовком **Сменить макет**. Переключайтесь между макетами, нажимая на их названия в списке. При наведении на название макета появится кнопка с изображением шестеренки. Нажмите на нее, и появится список действий:
 
-Add new layouts by using the **+** button. The list of existing layouts appears on the right, in the **Switch layout** section. Click on layout names to switch between them. When you hover over a layout's name, you see a gear button, which offers the following actions:
+* **Предпросмотр** — показать витрину с этим макетом в отдельной вкладке браузера.
 
-* **Preview**—open the storefront with this layout in a separate page.
+* **Сделать по умолчанию** — использовать этот макет на витрине.
 
-* **Make default**—make this layout default for the theme.
+* **Свойства** — открыть всплывающее окно, где можно изменить свойства макета.
 
-* **Properties**—configure this layout.
-
-* **Delete**—delete a layout. 
 
   .. important::
 
-      You cannot delete the default layout. Make another layout default first.
+      Макет по умолчанию (т.е. используемый на витрине) удалить не получится. Сначала выберите другой макет по умолчанию.
 
------------------
-Layout Properties
------------------
+---------------
+Свойства макета
+---------------
 
-When editing or adding a layout, you can define the following properties:
+При создании и редактировании макета укажите его свойства:
 
-* **Name**—the name of the layout.
+* **Название** — название макета.
 
-* **Copy data from layout** (when adding new layout)—choose the layout from which you want to copy the content.
+* **Скопировать данные из макета** (только при создании макета) — выберите макет, который хотите взять за основу для нового макета.
 
-* **Default**—this checkbox is ticked, the layout will be set as default.
+* **По умолчанию** — если поставить флажок, то макет станет макетом по умолчанию и будет использоваться на витрине.
 
-* **Grid columns**—choose whether to use the 12- or 16-column grid in the layout.
+* **Число колонок** — сетка макета может состоять из 12 или 16 колонок.
 
-* **Layout width**—choose how the pages layout will be formed: 
+* **Ширина страницы** — определяет, как страницы макета будут себя вести при разных размерах окна браузера: 
 
-  * *Fixed width*—pages will have a fixed width (for example, 1200px); 
+  * *Фиксированная ширина* — например, 1200px; 
 
-  * *Full width*—pages will have the full-width layout; 
+  * *Диапазон* — ширина страницы будет меняться при необходимости. Можно задать минимальную и максимальную ширину;
 
-  * *Fluid*—pages will have the responsive layout.
+  * *По ширине окна* — страница будет адаптироваться к ширине окна.
 
 ================
-Layout Structure
+Структура макета
 ================
 
-Layout pages (and therefore, storefront pages) consist of :doc:`blocks <blocks/index>` nested inside containers.
+Страницы макета (а значит, и страницы на витрине) состоят из :doc:`блоков <blocks/index>`. Блоки сгруппированы по контейнерам.
 
-A block contains a certain piece of information like a logo, product details, breadcrumbs, search form, navigation menu, etc. You can add, edit, remove, or simply move blocks to change the structure of the page. The following sketch presents the storefront structure and illustrates how a page may be composed.
+Каждый блок отображает каку-то информацию: логотип, информацию о товаре, строку навигации, поисковую форму и т.п. Перетаскивая, редактируя и удаляя блоки, вы меняете структуру страницы.
+
+На картинках ниже представлена структура макета:
 
 .. image:: img/layout_01.png
     :align: center
-    :alt: Storefront
+    :alt: Общий вид макета страницы
 
 .. image:: img/layout_02.png
     :align: center
-    :alt: Blocks
+    :alt: Отдельные блоки
 
 .. image:: img/layout_03.png
     :align: center
-    :alt: Containers
+    :alt: Корневые и дочерние контейнеры
