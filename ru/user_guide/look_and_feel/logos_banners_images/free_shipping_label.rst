@@ -1,96 +1,96 @@
-***********************************************************
-How To: Display Free Shipping Label on Product Details Page
-***********************************************************
+*******************************************************
+Как рассказать о бесплатной доставке на странице товара
+*******************************************************
 
-You can display an appropriate label on the product details page when a product has the **Free shipping** setting turned on. This is done via an add-on that we provide for free.
+На детальной странице товара со включенной настройкой **Бесплатная доставка** можно показать изображение или текст, сообщающие об этом. Для этого воспользуйтесь нашим бесплатным модулем.
 
 .. note::
 
-    The add-on is designed for the **Responsive** theme, which is the default theme of CS-Cart and Multi-Vendor.
+    Модуль разработан для темы **Responsive**, которая используется в CS-Cart и Multi-Vendor по умолчанию.
 
 .. image:: img/free_shipping_label.png
     :align: center
-    :alt: The free shipping label as in appears on the product page.
+    :alt: Пометка о бесплатной доставке в CS-Cart.
 
-============
-Installation
-============
+=========
+Установка
+=========
 
 
-1. Download one of the versions of the add-on:
+1. Скачайте одну из версий модуля. Какую версию качать, зависит от того, хотите ли вы отображать на странице товара картинку или текст.
 
-   * `Display an image label for products free shipping. <https://github.com/cscart/addon-free-shipping-label/archive/image.zip>`_
+   * `Модуль с картинкой. <https://github.com/cscart/addon-free-shipping-label/archive/image.zip>`_
 
-   * `Display a text label for products with free shipping. <https://github.com/cscart/addon-free-shipping-label/archive/text.zip>`_
+   * `Модуль с текстом. <https://github.com/cscart/addon-free-shipping-label/archive/text.zip>`_
 
    .. note::
 
-       The add-on will be downloaded from GitHub. If you want to see the code, feel free to visit `the GitHub repository <https://github.com/cscart/addon-free-shipping-label/>`_. The two variants of the add-on are stored in separate branches.
+       Если хотите увидеть код, посетите `репозиторий модуля на GitHub. <https://github.com/cscart/addon-free-shipping-label/>`_ Две версии модуля хранятся в разных ветках.
 
-2. Log in to the Administration panel of your store.
+2. Войдите в панель администратора вашего магазина.
 
-3. Go to **Add-ons → Manage add-ons**.
+3. Откройте страницу **Модули → Управление модулями**.
 
-4. Click the **+** button to upload and install the add-on.
+4. Нажмите кнопку **+**, чтобы установить модуль из архива.
 
 .. image:: ../changing_attributes/img/addons_plus_button.png
    :align: center
-   :alt: The plus button allows you to upload the add-on and install it.
+   :alt: Кнопка установки собственного модуля из архива
 
-5. In the pop-up window click **Local** and choose the add-on archive that you downloaded.
+5. Во всплывающем окне нажмите кнопку **Загрузить** и выберите архив с модулем.
 
-6. Click **Upload & install**. After this the add-on should be ready to work.
+6. Нажмите **Загрузить и установить**. Модуль установится и будет готов к работе.
 
 .. note ::
 
-    If the changes are not displayed, try clearing the template cache: go to **Administration → Storage → Clear cache** in the Administration panel of your store.
+    Если после установки модуля изменения не отображаются, `очистите кэш шаблонов <../../../../developer_guide/addons/tutorials/cache>`.
 
 .. image:: ../changing_attributes/img/upload_and_install_addon.png
    :align: center
-   :alt: The addons you add via the plus button are uploaded and installed automatically.
+   :alt: Модуль устанавливаетсяя и включается автоматически.
 
-=============
-Customization
-=============
+===========================
+Как поменять картинку/текст
+===========================
 
-After you install the add-on, you may want to customize it, so that it better suits your needs. Here is what you can do.
-
-----------------
-Change the Image
-----------------
-
-.. note::
-
-    This applies to the `Free Shipping Label (Image) <https://github.com/cscart/addon-free-shipping-label/tree/image>`_ add-on.
-
-The image that appears on the pages of products with free shipping is called **free_shipping_label.png**. It is located in *design/themes/responsive/media/images/addons/free_shipping_label_image/*. You can replace it with any image you like, as long as you keep the name **free_shipping_label.png**.
+После установки модуля можно поменять картинку/текст на более подходящие.
 
 ---------------
-Change the Text
+Меняем картинку
 ---------------
 
 .. note::
 
-    This applies to the `Free Shipping Label (Text) <https://github.com/cscart/addon-free-shipping-label/tree/text>`_ add-on.
+    Это решение подходит для `версии модуля с картинкой. <https://github.com/cscart/addon-free-shipping-label/tree/image>`_
 
-The text that appears on the pages of products with free shipping is taken from the language variable called ``free_shipping``. That's why the text can differ from language to language. 
+Картинка "Бесплатная доставка" хранится в файле **free_shipping_label.png**. Файл лежит в папке *design/themes/responsive/media/images/addons/free_shipping_label_image/*. Можете заменить картинку на любую другую, но имя файла должно остаться **free_shipping_label.png**.
 
-To change the value of this language variable:
+------------
+Меняем текст
+------------
 
-1. Open the Administration panel and go to **Administration → Languages → Translations**.
+.. note::
 
-2. Type *free_shipping* in the search bar on the right and click **Search**.
+    Это решение подходит для `версии модуля с текстом. <https://github.com/cscart/addon-free-shipping-label/tree/text>`_
 
-3. If you have multiple languages, select the language in the top left corner.
+Текст "Бесплатная доставка" берется из языковой переменной ``free_shipping`` и поэтому может меняться при выборе другого языка.
 
-4. Change the value of the ``free_shipping`` language variable.
+Изменим значение языковой переменной:
 
-5. Click **Save**. 
+1. В панели администратора перейдем на страницу **Администрирование → Языки → Переводы**.
+
+2. Вобьем *free_shipping* в окно поиска справа и нажмем **Найти**.
+
+3. Если у вас в магазине несколько языков, выберите тот язык, для которого вы хотите поменять текст. Это делается в левом верхнем углу страницы, под надписью **Переводы**.
+
+4. Измените значение языковой переменной ``free_shipping``.
+
+5. Нажмите **Сохранить**. 
 
 .. important::
 
-    The ``free_shipping`` language variable exists in CS-Cart and Multi-Vendor by default. Changing it also changes the name of the **Free shipping** product setting.
+    Языковая переменная ``free_shipping`` существует в CS-Cart и Multi-Vendor даже без модуля. Если поменяете переменную, то изменится и название настройки **Бесплатная доставка** у товара.
 
-If you don't want to change a core language variable, you can also create your own language variable with the **+** button.
+Также вы можете создать свою языковую переменную кнопкой **+** button.
 
-Let's call that variable ``example``. To use it in the add-on, replace ``__('free_shipping')`` with ``__('example')`` in *design/themes/responsive/templates/addons/free_shipping_label_text/hooks/index/scripts.post.tpl*.
+Назовем эту переменную ``example``. Чтобы использовать в модуле ее, а не ``free_shipping``, заменим ``__('free_shipping')`` на ``__('example')`` в файле *design/themes/responsive/templates/addons/free_shipping_label_text/hooks/index/scripts.post.tpl*.

@@ -43,7 +43,7 @@ Installation
 
 .. note ::
 
-    If the changes are not displayed, try clearing the template cache: go to **Administration → Storage → Clear cache** in the Administration panel of your store.
+    If you have installed the add-on but the changes are not displayed, try :doc:`clearing the template cache <../../../../developer_guide/getting_started/cache_clearing>`.
 
 .. image:: ../changing_attributes/img/upload_and_install_addon.png
    :align: center
