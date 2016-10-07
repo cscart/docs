@@ -28,7 +28,7 @@ Root containers cannot be added or removed. This basic frame is the same for all
 
 .. important::
 
-    The **Top Panel**, **Header**, and **Footer** containers of the :doc:`Default <../layout_pages/index>` layout are inherited by other layouts. The changes that you make to these three areas automatically apply to all layouts.
+    The **Top Panel**, **Header**, and **Footer** containers of the :doc:`default layout page<../layout_pages/index>` are inherited by other layout pages. The changes that you make to these three areas automatically apply to all layout pages.
 
 Each root container is associated with a particular area of the storefront page—header, main content area, or footer. However, root containers themselves do not generate the corresponding parts of the storefront pages. In fact, they only accommodate and form boundaries for multiple smaller containers referred to as **child containers**.
 

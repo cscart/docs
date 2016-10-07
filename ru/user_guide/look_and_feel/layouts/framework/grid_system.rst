@@ -1,9 +1,9 @@
-***********
-Grid System
-***********
+***************
+Сетка Bootstrap
+***************
 
-CS-Cart uses the intuitive and powerful `Bootstrap <http://getbootstrap.com/>`_ framework that can have the full-, custom-width, and responsive layout. The layout in CS-Cart has 12- or 16-column structure.
+В CS-Cart используется фреймворк `Bootstrap <http://getbootstrap.com/>`_, который позволяет создавать макеты с определенной шириной или адаптивные. Сетка макета в CS-Cart состоит из 12 или 16 колонок.
 
-In the full-width layout the length of the columns is adapted to the width of the page. In custom-width layout the length of the columns is fixed and depends on the specified width of the page. And responsive layout is flexible and easily adapting for different screen sizes. It is very useful for displaying site content on the portable devices screens.
+Если страница занимает всю ширину окна, то ширина колонок адаптируется под ширину страницы. Если же задать конкретную ширину страницы, то ширина колонок будет фиксированной. Адаптивные макеты подходят для устройств с различными размерами экрана, в том числе для портативных.
 
-In CS-Cart, the root containers always occupy the full page length, i.e. all columns in the grid. The number of columns is defined through the container settings. It determines the possible dimensions of child containers. Their length cannot exceed the number of columns in the grid.
+Корневые контейнеры всегда занимают все 12 или 16 колонок сетки. Дочерние контейнеры не могут быть шире родительских.

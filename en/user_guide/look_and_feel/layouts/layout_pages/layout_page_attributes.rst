@@ -18,7 +18,7 @@ Any layout page has the following attributes:
 
   * **[mode_name]**–the mode in which the controller works. 
 
-  This value is added to ``index.php?dispatch=`` part of the page and points to a specific page. For example, *index.php?dispatch=checkout.cart* points to the cart contents page; *index.php?dispatch=checkout.checkout* points to the checkout page.
+  This value is added after ``index.php?dispatch=`` and points to a specific page. For example, *index.php?dispatch=checkout.cart* points to the cart contents page; *index.php?dispatch=checkout.checkout* points to the checkout page.
 	
 * **Name**—the name of the layout page.
 

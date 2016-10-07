@@ -1,45 +1,45 @@
-**********************
-Layout Page Properties
-**********************
+*************************
+Настройки страницы макета
+*************************
 
-To configure a layout page, select it in **Design → Layouts** and click the **gear** icon next to its name.
+Чтобы задать настройки страницы макета, перейдите на страницу **Дизайн → Макеты**, выберите нужную страницу макета и нажмите на изображение **шестеренки** рядом с именем.
 
 .. image:: img/configure_layout_page.png
     :align: center
-    :alt: Edit layout page properties.
+    :alt: Изображение шестеренки рядом с именем страницы макета.
 
-Any layout page has the following attributes:
+У любой страницы макета есть следующие настройки:
 
-* **Dispatch**—choose a specific page or page type that the layout page will be associated with. Or select *Custom* to define the parameter value manually.
+* **Страница** — определенная страница или тип страниц на витрине, которые используют эту страницу макета. Выберите тип страницы. Также можно выбрать *Другое* и задать страницу вручную.
 
-  The *dispatch* parameter has the following format: ``[controller_name].[mode_name]``.
+  Страница задается в таком формате: ``[controller_name].[mode_name]``.
 
-  * **[controller_name]**—the name of the PHP controller.
+  * **[controller_name]** — имя PHP-контроллера.
 
-  * **[mode_name]**–the mode in which the controller works. 
+  * **[mode_name]** – имя режима, в котором работает контроллер. 
 
-  This value is added to ``index.php?dispatch=`` part of the page and points to a specific page. For example, *index.php?dispatch=checkout.cart* points to the cart contents page; *index.php?dispatch=checkout.checkout* points to the checkout page.
+  Это значение подставится после ``index.php?dispatch=`` и указывает на определенную страницу. Например, *index.php?dispatch=checkout.cart* ведет на страницу с содержимым корзины; *index.php?dispatch=checkout.checkout* ведет на страницу оформления заказа.
 	
-* **Name**—the name of the layout page.
+* **Название** — название страницы макета (отобразится в панели администратора).
 
-* **Page title**—the title of the page as it appears in the title bar of a browser.
+* **Название страницы** — отобразится в заголовке вкладки браузера.
 
-* **META description**—the content of the HTML meta tag describing the page.
+* **Мета-описание** — содержимое мета-тега <description> (описание страницы).
 
-* **META keywords**—the content of the HTML tag containing a list of search keywords for the page.
+* **Мета-ключевые слова** — содержимое мета-тега <keywords> (ключевые слова страницы).
 
-* **Custom HTML code**—if you are familiar with HTML, you can add some custom code to the header of the page. This HTML code will be put between *<head></head>* tags.
+* **Пользовательский HTML код** — если вы знакомы с HTML, можете вставить сюда код, который нужно добавить в *<head></head>*.
 
-* **Default**—if ticked, this layout page will be marked as default. Its **Top** and **Bottom** containers will be used in all locations.
+* **По умолчанию** — если поставить флажок, эта страница макета станет страницей по умолчанию. Тогда содержимое контейнеров **Верхняя панель**, **Заголовок** и **Подвал** будет использоваться на других страницах макета.
 
-* **Position**—the position of the layout page in the list of pages.
+* **Позиция** — положение страницы в списке страниц макета.
 
-Once you are done, click **Save** to apply the changes. 
+После редактирования настроек нажмите кнопку **Сохранить**.
 
 .. note::
 
-    Some layout pages have an additional tab, like **Pages**, **Categories**, **Products**. Those tabs allow to apply the layout page to specific categories, products, or pages. 
+    У некоторых страниц макета могут быть дополнительные вкладки, например, **Категории** или **Товары**. Эти вкладки позволяют связать страницу макета с определенными товарами и категориями.
 
 .. image:: img/layout_page_categories.png
     :align: center
-    :alt: The Categories tab of the layout page properties.
+    :alt: Вкладка "Категории" в настройках страницы макета.

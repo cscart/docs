@@ -1,105 +1,107 @@
-***********************
-Actions on Layout Pages
-***********************
+****************************
+Управление страницами макета
+****************************
 
-Layout pages are not hard-coded or limited in any way. You can have as many layout pages as you need. However, the default set of layout pages is usually enough.
+Страницы макета не заданы жестко — их можно создать столько, сколько нужно. Но обычно хватает тех страниц, которые есть по умолчанию.
 
 .. note::
 
-    All actions on layout pages are performed in the Administration panel of your store under **Design → Layouts**.
+    Чтобы работать со страницами макета, откройте панель администратора и перейдите на страницу **Дизайн → Макеты**. Все описанные действия совершаются на этой странице.
 
-===============
-General actions
-===============
+=====================================
+Что можно делать со страницами макета
+=====================================
 
---------------------
-Adding a Layout Page
---------------------
+------------------------
+Добавить страницу макета
+------------------------
 
-1. Switch to the In the list of layout pages, choose the **Add layout page** tab.
+1. На списке страниц макета выберите вкладку **Добавить страницу макета**.
 
 .. image:: img/layout_page_01.png
     :align: center
-    :alt: Add layout page
+    :alt: Добавляем страницу макета в CS-Cart
 
-2. A pop-up window will open. Specify :doc:`the properties of the new layout page <layout_page_attributes>`. 
+2. В открывшемся окне задайте :doc:`настройки страницы макета. <layout_page_attributes>` 
 
-3. Click the **Create** button.
+3. Нажмите кнопку **Создать**.
 
-----------------------
-Removing a Layout Page
-----------------------
+-----------------------
+Удалить страницу макета
+-----------------------
 
-1. Select a layout page and click the **gear** icon next to its name.
+1. Выберите страницу макета. Рядом с названием будет кнопка с изображением **шестеренки**. Нажмите на нее.
 
 .. image:: img/layout_page_02.png
     :align: center
     :alt: Edit layout page
 
-2. Click the **trash can** button in the pop-up window that opens.
+2. Появится окно редактирования страницы. Нажмите на кнопку с изображением **корзины**.
 
 .. image:: img/layout_page_03.png
     :align: center
-    :alt: Remove layout page
+    :alt: Кнопка удаления страницы в левом нижнем углу окна
 
-3. Click **Ok**.
+3. Подтвердите свой выбор, нажав **Ok**.
 
    .. warning::
 
-       You can't undo this action, unless you export this layout in advance and import it afterwards.
+       Страница макета будет удалена навсегда. Чтобы восстановить ее, понадобится заново ее создавать или импортировать.
 
-------------------------------
-Editing Layout Page Properties
-------------------------------
+----------------------------------
+Изменить настройки страницы макета
+----------------------------------
 
-1. Select the layout page and click the **gear** icon on the tab. 
+1. Выберите страницу макета. Рядом с названием будет кнопка с изображением **шестеренки**. Нажмите на нее.
 
-2. You'll see a form where you can edit :doc:`layout page properties <layout_page_attributes>`.
+2. Откроется всплывающее окно. Измените в нем :doc:`настройки страницы макета <layout_page_attributes>`.
 
-3. When you're done, click **Save** to apply changes.
+3. Когда закончите с редактированием настроек, нажмите кнопку **Сохранить**.
 
-=================
-Export and Import
-=================
+================
+Экспорт и импорт
+================
 
-Layout pages can be imported and exported in an XML file. This is useful when you need to clone the layout to other storefronts. We recommend that you export layout pages before making any changes to the storefront layout. That way you can always restore the original layout by importing the layout pages.
+Страницы макета можно экспортировать в XML-файлы и импортировать обратно. Это полезно, если нужно создать копию макета для другой витрины, а затем немного отредактировать.
+
+Рекомендуем экспортировать страницы макета перед тем, как вносить в них изменения. Тогда вы сможете отменить эти изменения через импорт.
 
 ----------------------
-Exporting Layout Pages
+Экспорт страниц макета
 ----------------------
 
-1. Click the **gear** button in the upper right part of the screen and choose **Export Layout**. 
+1. Нажмите на кнопку с изображением **шестеренки** в правом верхнем углу экрана. Выберите действие **Экспортировать макет**.
 
-2. A pop-up window will open. Configure the export settings there:
+2. В появившемся окне укажите настройки экспорта:
 
-   * **Layout pages**—select the layout pages to be exported.
+   * **Страницы макета** — укажите, какие страницы макета нужно экспортировать.
 
-   * **Output**—output type: 
+   * **Вывод**—результат экспорта: 
 
-     * *Direct download*—the XML file will be downloaded to you computer; 
+     * *Скачать файл* — скачать экспортированный XML-файл на компьютер; 
 
-     * *Server*—file will be saved on the server where CS-Cart is installed; 
+     * *Сервер* — сохранить экспортированный XML-файл на сервере с установленным CS-Cart; 
 
-     * *Screen*—file contents will be displayed on the screen.
+     * *Экран* — показать экспортированные данные в окне браузера.
 
-   * **File name**—Name of the export file. By default, it is *layouts_<TIMESTAMP>.xml*.
+   * **Имя файла** — как будет называться экспортированный XML-файл. По умолчанию он называется *layouts_<время экспорта>.xml*.
 
-3. Click **Export**.
+3. Нажмите кнопку **Экспорт**.
 
----------
-Importing
----------
+---------------------
+Импорт страниц макета
+---------------------
 
-1. Click the **gear** button in the upper right part of the screen and choose **Import layout**. 
+1. Нажмите на кнопку с изображением **шестеренки** в правом верхнем углу экрана. Выберите действие **Экспортировать макет**.
 
-2. A pop-up window will open. Configure the import settings there:
+2. В появившемся окне укажите настройки импорта:
 
-   * Choose the file that will be imported or enter its URL.
+   * Выберите импортируемый файл или введите его URL.
 
-   * Choose whether to create new layout or update current one.	If you have chosen to update current layout, specify the other settings:
+   * Выберите, создавать ли новый макет или обновить текущий выбранный макет. Если вы обновляете макет, появятся еще две настройки:
 
-     * **Clean up layout pages before import**—if you tick this checkbox, all original layout pages will be deleted before the import.
+     * **Удалить все страницы макета перед импортом** — если поставить этот флажок, перед импортом будут удалены все страницы макета.
 
-     * **Override layout pages by dispatch**—if you tick this checkbox, existing layout pages  will be replaced with the layout pages from the XML file with the same dispatch. Other imported layout pages will be simply added.
+     * **Заменить страницы макета при совпадении** — если поставить этот флажок, то при импорте страницы макета из XML-файла будут заменять существующие страницы макета, если они соответствуют одним и тем же страницам на витрине. Остальные страницы макета просто будут добавлены как новые.
 
-3. Click **Import**.
+3. Нажмите кнопку **Импорт**.

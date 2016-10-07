@@ -1,76 +1,78 @@
-*********
-Framework
-*********
+***************************
+Каркас страницы (фреймворк)
+***************************
 
 ==========
-Containers
+Контейнеры
 ==========
 
 .. image:: img/containers.png
     :align: center
-    :alt: Root and child containers in CS-Cart and Multi-Vendor.
+    :alt: Корневые и дочерние контейнеры в CS-Cart и Multi-Vendor.
 
----------------
-Root containers
----------------
+-------------------
+Корневые контейнеры
+-------------------
 
-The basic framework of the storefront consists of four horizontal **root containers**:
+Любая страница витрины состоит из 4 горизонтальных **корневых контейнеров**:
 
-* **Top Panel**
+* **Верхняя панель**
 
-* **Header**
+* **Заголовок**
 
-* **Content**
+* **Контент**
 
-* **Footer**
+* **Подвал**
 
-Root containers cannot be added or removed. This basic frame is the same for all layouts.
+Корневые контейнеры нельзя добавлять и удалять. Они есть во всех макетах.
 
 .. important::
 
-    The **Top Panel**, **Header**, and **Footer** containers of the :doc:`Default <../layout_pages/index>` layout are inherited by other layouts. The changes that you make to these three areas automatically apply to all layouts.
+    **Верхняя панель**, **Заголовок** и **Подвал** наследуются страницами макета от :doc:`страницы, выбранной по умолчанию. <../layout_pages/index>` Если поменять данные в этих трех контейнерах, то изменения затронут все страницы.
 
-Each root container is associated with a particular area of the storefront page—header, main content area, or footer. However, root containers themselves do not generate the corresponding parts of the storefront pages. In fact, they only accommodate and form boundaries for multiple smaller containers referred to as **child containers**.
+Каждый корневой контейнер отвечает за определенную область на странице — шапку сайта (header), основную часть страницы, подвал (footer). Но сами корневые контейнеры не добавляют никакой информации, а только группируют многочисленные **дочерние контейнеры**.
 
 .. note::
 
-    Although a root container may consist of zero child containers, you are supposed to include at least one.
+    В корневом контейнере может не быть ни одного дочернего, но рекомендуем добавить хотя бы один.
 
-----------------------------------
-Child Containers: Grids and Blocks
-----------------------------------
+-----------------------------------
+Дочерние контейнеры: секции и блоки
+-----------------------------------
 
-Child containers (also known as **grids**) allow for more detailed and sophisticated layouts of storefront pages. Multiple grids with certain sizes, positions, and styles can be nested inside a root container or inside other grids. Each grid may include one or more **blocks**—boxes with information of certain type.
+Дочерние контейнеры (**секции**) позволяют точнее структурировать информацию на витрине и создавать более сложные макеты. Секции можно добавлять в корневые контейнеры или в другие секции, причем у каждой секции может быть свой размер, положение и стиль.
 
-To add a grid:
+Внутри секций находятся **блоки** (один или несколько) — самостоятельные объекты, каждый из которых содержит определенную информацию.
 
-1. Click the **+** icon on the container that will be the parent on the new container and select **Add grid**.
+Чтобы добавить секцию:
 
-2. You'll see a form. Specify the properties of the new container there:
+1. Нажмите кнопку **+** слева от названия контейнера, куда вы добавляете секцию. Выберите **Добавить секцию**.
 
-   * **Width**—the number of columns used in the container. For child containers, this number cannot exceed the the length of the root container (see *Bootstrap Grid System* below).
+2. Во всплывающем окне появится форма, где задаются свойства новой секции:
 
-   * **Content alignment** (for child containers only)—the position of the container inside the root (or parent) container: *Right*, *Left*, or *Full Length*.
+   * **Ширина** — ширина секции в колонках. Не может быть больше ширины контейнера, куда мы добавляем секцию. Подробности ниже (см. **Сетка Bootstrap**).
 
-   * **Offset**—the number of non-occupied buffer columns.
+   * **Выравнивание содержимого** (только для дочерних контейнеров) — положение секции внутри корневого или родительского контейнера. Варианты: *Справа*, *Слева*, *Вся ширина*.
 
-   * **User-defined CSS class**—a custom CSS class used by the container.
+   * **Отступ слева** — количество пустых колонок слева от контейнера.
 
-3. Click **Create**, and a grid or block will be created. 
+   * **Пользовательский CSS-класс** — если вы хотите задать контейнеру собственный CSS-класс, впишите имя класса здесь.
+
+3. Нажмите **Создать**. 
 
 .. image:: img/add_grid.png
     :align: center
     :alt: Container settings
 
-=====================
-Bootstrap Grid System
-=====================
+===============
+Сетка Bootstrap
+===============
 
-CS-Cart uses the intuitive and powerful `Bootstrap <http://getbootstrap.com/>`_ framework that allows full-, custom-width, and responsive layouts. A layout in CS-Cart can have 12 or 16 columns.
+В CS-Cart используется фреймворк `Bootstrap <http://getbootstrap.com/>`_, который позволяет создавать макеты с определенной шириной или адаптивные. Сетка макета в CS-Cart состоит из 12 или 16 колонок.
 
-In the full-width layout the length of the columns is adapted to the width of the page. In custom-width layout the length of the columns is fixed and depends on the specified width of the page. A responsive layout is flexible and adapts easily for different screen sizes. It is very useful for displaying site content on portable devices.
+Если страница занимает всю ширину окна, то ширина колонок адаптируется под ширину страницы. Если же задать конкретную ширину страницы, то ширина колонок будет фиксированной. Адаптивные макеты подходят для устройств с различными размерами экрана, в том числе для портативных.
 
-In CS-Cart, the root containers always occupy the full page length, i.e. all columns of the layout. The number of columns is defined through the container settings. It determines the possible dimensions of child containers. Their length cannot exceed the number of columns of the layout.
+Корневые контейнеры всегда занимают все 12 или 16 колонок сетки. Дочерние контейнеры не могут быть шире родительских.
 
 .. toctree::
     :maxdepth: 4

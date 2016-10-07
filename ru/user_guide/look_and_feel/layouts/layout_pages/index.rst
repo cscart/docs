@@ -1,42 +1,43 @@
-************
-Layout Pages
-************
+***************
+Страницы макета
+***************
 
-:doc:`Layouts <../index>` consist of layout pages. A **layout page** represents either a certain type of storefront pages (for example, detailed product pages, category pages, etc.), or a specific storefront page (for example, checkout page, cart page, etc.)
+:doc:`Макеты <../index>` состоят из т.н. страниц макета. **Страница макета** определяет структуру конкретной страницы (например, страницы оформления заказа) или группы страниц (например, детальные страницы товаров) на витрине.
 
 .. note::
 
-    To associate a layout page with a specific storefront page or page type, click the gear button next to the layout page name and change the value of the **Dispatch** field.
+    Чтобы связать страницу макета с какой-то страницей или типом страниц на витрине, нажмите на изображение шестеренки рядом с названием страницы макета. В открывшемся окне поменяйте значение настройки **Страница** и сохраните изменения.
 
 .. image:: img/configure_layout_page.png
     :align: center
-    :alt: Layout pages have gear buttons next to their names.
+    :alt: Рядом с названиями страниц макета есть кнопка с изображением шестеренки.
 
-By editing the layout page associated with a specific type of storefront pages, you automatically change all storefront pages of that type. For example, if you change the **Products** layout page, all product pages on the storefront will be affected.
+Если поменять что-то на странице макета, то изменения появятся на всех связанных с ней страницах на витрине. Например, если поменять страницу макета **Товары** (Products), то поменяются все страницы товаров на витрине.
 
 .. important::
 
-    You can activate/deactivate :doc:`blocks <../blocks/index>` separately for different pages with the same layout. That way pages of different products, categories, etc. can look different from each other. 
+    Отдельные :doc:`блоки <../blocks/index>` можно включать/выключать для отдельных товаров, категорий и пр. Так можно сделать разные страницы одного типа, несмотря на то, что они используют одну и ту же страницу макета. 
 
-===================
-Default Layout Page
-===================
+============================
+Страница макета по умолчанию
+============================
 
-A storefront must have a default layout page. It determines the top panel, header, and footer of the storefront: they are inherited by other layout pages (and therefore, by storefront pages). The default layout page also determines the look of the storefront pages that do not have their own layout page.
+Одна из страниц макета должна быть страницей по умолчанию. Именно с этой страницы берутся верхняя панель, заголовок и подвал. Страница макета по умолчанию также используется, когда для какого-то типа страниц нет собственной страницы макета.
 
-To choose the default layout page, tick the **Default** checkbox when you :doc:`edit the properties of the layout page <actions_on_pages>`. A default layout page cannot be removed until you choose new default layout page. Since there can only be one default layout page, choosing a new one will make the old one non-default.
+
+Чтобы выбрать страницу макета по умолчанию, поставьте флажок **По умолчанию**, когда :doc:`задаете настройки страницы макета <actions_on_pages>`. Страницу по умолчанию нельзя удалить — сначала нужно выбрать другую страницу по умолчанию (она может быть только одна).
 
 .. hint:
 
-    You can set different layout pages as default for different layouts.
+    Для разных макетов можно выбрать разные страницы по умолчанию.
 
 .. image:: img/layout_page_settings.png
     :align: center
-    :alt: You can mark a layout page as default by changing its settings.
+    :alt: Чтобы выбрать страницу макета по умолчанию, зайдите в настройки страницы.
 
-===============
-In this section
-===============
+=====================
+Статьи в этом разделе
+=====================
 
 .. toctree::
     :maxdepth: 2
