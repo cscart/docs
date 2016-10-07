@@ -41,6 +41,10 @@ Installation
 
 6. Click **Upload & install**. After this the add-on should be ready to work.
 
+.. important::
+
+    Another way is to unpack the archive and copy the content of the resulting folder to the root directory of your store on the server. Then go to **Add-ons → Manage add-ons**, choose **Browse all available add-ons** and install the add-on.
+
 .. note ::
 
     If the changes are not displayed, try clearing the template cache: go to **Administration → Storage → Clear cache** in the Administration panel of your store.

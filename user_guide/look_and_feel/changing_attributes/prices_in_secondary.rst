@@ -2,6 +2,10 @@
 How To: Display Prices on the Storefront Only in Secondary Currency
 *******************************************************************
 
+.. important::
+
+    This article applies for **CS-Cart or Multi-Vendor 4.3.5 and higher**.
+
 We have developed a free add-on that displays prices on the storefront only in one selected currency. You can also choose one currency for the Administration panel. The currencies you choose for the Administration panel and the storefront don't have to be the primary currency.
 
 .. hint::
@@ -39,6 +43,10 @@ Step 1. Install the Add-on
 .. image:: img/upload_and_install_addon.png
     :align: center
     :alt: Upload and install pop-up
+
+.. important::
+
+    Another way is to unpack the archive and copy the content of the resulting folder to the root directory of your store on the server. Then go to **Add-ons → Manage add-ons**, choose **Browse all available add-ons** and install the add-on.
 
 =============================
 Step 2. Choose the Currencies

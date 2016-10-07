@@ -30,7 +30,9 @@ To get and install this add-on, follow the steps below:
     :align: center
     :alt: Upload and install pop-up
 
-The Sort Subcategories by Name add-on is installed and ready for work.
+.. important::
+
+    Another way is to unpack the archive and copy the content of the resulting folder to the root directory of your store on the server. Then go to **Add-ons → Manage add-ons**, choose **Browse all available add-ons** and install the add-on.
 
 .. image:: img/sort_subcategories_01.png
     :align: center

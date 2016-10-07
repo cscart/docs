@@ -2,6 +2,10 @@
 How To: Set the Secondary Currency as Default on the Storefront
 ***************************************************************
 
+.. important::
+
+    This article applies for **CS-Cart or Multi-Vendor 4.3.5 and higher**.
+
 By default, CS-Cart displays the primary currency on the storefront. Customers have the option to switch to any other active currency. We have developed a free add-on that allows you to set the currency that will be selected on the storefront by default.
 
 .. hint::
@@ -39,6 +43,10 @@ Step 1. Install the Add-on
 .. image:: img/upload_and_install_addon.png
     :align: center
     :alt: Upload and install pop-up
+
+.. important::
+
+    Another way is to unpack the archive and copy the content of the resulting folder to the root directory of your store on the server. Then go to **Add-ons → Manage add-ons**, choose **Browse all available add-ons** and install the add-on.
 
 ===========================
 Step 2. Choose the Currency

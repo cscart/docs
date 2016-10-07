@@ -28,6 +28,10 @@ Step 1. Installing the Add-on
 
 6. Click **Upload & install**.
 
+.. important::
+
+    Another way is to unpack the archive and copy the content of the resulting folder to the root directory of your store on the server. Then go to **Add-ons → Manage add-ons**, choose **Browse all available add-ons** and install the add-on.
+
 .. image:: ../../changing_attributes/img/upload_and_install_addon.png
     :align: center
     :alt: Upload and install pop-up

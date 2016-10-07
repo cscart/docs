@@ -36,6 +36,10 @@ Installing the Add-on
     :align: center
     :alt: Upload and install pop-up
 
+.. important::
+
+    Another way is to unpack the archive and copy the content of the resulting folder to the root directory of your store on the server. Then go to **Add-ons → Manage add-ons**, choose **Browse all available add-ons** and install the add-on.
+
 After the installation is complete, you'll see **Wishlist Products ABC** on the list of add-ons. The add-on is active by default, so it starts working as soon as you install it.
 
 .. image:: img/wishlist_products_abc_03.png
