@@ -30,9 +30,9 @@ MySQLi Extension Missing
 
 If you see blank pages when trying to open the storefront or the Administration panel, it might be because **MySQLi** extension is not installed on your server. Here's a quick way to fix the problem:
 
-1. Go to the directory where your store is installed.
+1. Go to the root directory of the CS-Cart installation.
 
-2. Open the file called **config.local.php**.
+2. Open the **config.local.php** file.
 
 3. Find the following line::
 
@@ -42,7 +42,7 @@ If you see blank pages when trying to open the storefront or the Administration 
 
      $config['database_backend'] = 'pdo';
 
-5. Save the file and check the results.
+5. Save the file and see if that solves the problem.
 
 =================
 Not Enough Memory
