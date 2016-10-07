@@ -1,31 +1,33 @@
-*************************************
-How To: Change Authentication Timeout
-*************************************
+**************************************************
+Как поменять время сеанса работы с учетной записью
+**************************************************
 
-By default, the authentication timeout is 2 hours: once this period expires, you will be logged out automatically.
+По умолчанию один сеанс работы идет 2 часа: после этого вам придется снова войти в учетную запись.
 
-To change the authentication timeout, complete the following steps:
+Изменим время сеанса:
 
-1. Go to the root directory of your CS-Cart installation.
+1. Откройте файл **config.php** в папке с установленным CS-Cart.
 
-2. Open the **config.php** file.
+2. Найдите этот фрагмент кода:
 
-3. Find the following part of the code:
+   ::
 
-::
+     // Session live time
+     define('SESSION_ALIVE_TIME', SECONDS_IN_HOUR * 2); // 2 hours
 
-  // Session live time
-  define('SESSION_ALIVE_TIME', SECONDS_IN_HOUR * 2); // 2 hours
+3. Замените этот фрагмент кода на:
 
-4. Replace it with this code:
+   ::
 
-::
-
-  // Session live time
-  define('SESSION_ALIVE_TIME', TIMEOUT_IN_SECONDS);
+     // Session live time
+     define('SESSION_ALIVE_TIME', TIMEOUT_IN_SECONDS);
 
 .. note::
 
-    Replace **TIMEOUT_IN_SECONDS** with the desired timeout.
+    Вместо **TIMEOUT_IN_SECONDS** напишите желаемое время сеанса в секундах.
 
-5. Save the file.
+4. Сохраните файл.
+
+.. important::
+
+    Эти изменения нужно будет внести заново, если вы обновите CS-Cart/Multi-Vendor.

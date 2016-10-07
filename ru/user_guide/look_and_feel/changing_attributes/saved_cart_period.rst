@@ -1,31 +1,31 @@
-**********************************************************************
-How To: Set How Long A Cart Stores Products That Haven't Been Ordered
-**********************************************************************
+*********************************************************
+Как поменять время хранения некупленных товаров в корзине
+*********************************************************
 
-By default, a cart stores the products, that haven't been ordered, for 2 weeks.
+По умолчанию некупленные товары хранятся в корзине 2 недели. Чтобы поменять этот период:
 
-To change how long that period is, complete the following steps:
+1. Откройте файл **config.php** в папке с установленным CS-Cart.
 
-1. Go to the root directory of your CS-Cart installation.
+2. Найдите этот фрагмент кода:
 
-2. Open the **config.php** file.
+   ::
 
-3. Find the following part of the code:
+     // Sessions storage live time
+     define('SESSIONS_STORAGE_ALIVE_TIME',  SECONDS_IN_DAY * 7 * 2); // 2 weeks
 
-::
+3. Замените этот фрагмент кода на:
 
-  // Sessions storage live time
-  define('SESSIONS_STORAGE_ALIVE_TIME',  SECONDS_IN_DAY * 7 * 2); // 2 weeks
+   ::
 
-4. Replace it with this code:
-
-::
-
-  // Sessions storage live time
-  define('SESSIONS_STORAGE_ALIVE_TIME',  SECONDS_IN_DAY * 7 * NUMBER_OF_WEEKS);
+     // Sessions storage live time
+     define('SESSIONS_STORAGE_ALIVE_TIME',  SECONDS_IN_DAY * 7 * NUMBER_OF_WEEKS);
 
 .. note::
 
-    Replace **NUMBER_OF_WEEKS** with the required number of weeks.
+    Вместо **NUMBER_OF_WEEKS** напишите желаемое время хранения товаров в неделях.
 
-5. Save the file.
+4. Сохраните файл.
+
+.. important::
+
+    Эти изменения нужно будет внести заново, если вы обновите CS-Cart/Multi-Vendor.
