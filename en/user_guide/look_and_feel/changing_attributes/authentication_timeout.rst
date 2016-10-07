@@ -29,3 +29,7 @@ To change the authentication timeout, complete the following steps:
     Replace **TIMEOUT_IN_SECONDS** with the desired timeout.
 
 5. Save the file.
+
+.. important::
+
+    You'll need to reapply these changes after you upgrade to a new version of CS-Cart/Multi-Vendor.

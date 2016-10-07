@@ -29,3 +29,7 @@ To change how long that period is, complete the following steps:
     Replace **NUMBER_OF_WEEKS** with the required number of weeks.
 
 5. Save the file.
+
+.. important::
+
+    You'll need to reapply these changes after you upgrade to a new version of CS-Cart/Multi-Vendor.
