@@ -16,7 +16,7 @@ By editing the layout page associated with a specific type of storefront pages, 
 
 .. important::
 
-    You can activate/deactivate :doc:`blocks <../blocks/index>` separately for different pages with the same layout. That way pages of different products, categories, etc. can look different from each other. 
+    You can activate/deactivate :doc:`blocks <../blocks/index>` separately for different pages that use the same layout page. That way pages of different products, categories, etc. can look different from each other. 
 
 ===================
 Default Layout Page

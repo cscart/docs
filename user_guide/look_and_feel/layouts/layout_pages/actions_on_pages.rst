@@ -16,13 +16,13 @@ General actions
 Adding a Layout Page
 --------------------
 
-1. Switch to the In the list of layout pages, choose the **Add layout page** tab.
+1. In the list of layout pages, choose the **Add layout page** tab.
 
 .. image:: img/layout_page_01.png
     :align: center
     :alt: Add layout page
 
-2. A pop-up window will open. Specify :doc:`the properties of the new layout page <layout_page_attributes>`. 
+2. A pop-up window will open. Specify :doc:`the properties of the new layout page. <layout_page_attributes>`
 
 3. Click the **Create** button.
 
@@ -62,7 +62,9 @@ Editing Layout Page Properties
 Export and Import
 =================
 
-Layout pages can be imported and exported in an XML file. This is useful when you need to clone the layout to other storefronts. We recommend that you export layout pages before making any changes to the storefront layout. That way you can always restore the original layout by importing the layout pages.
+Layout pages can be imported and exported in an XML file. This is useful when you need to clone the layout to other storefronts.
+
+We recommend that you export layout pages before making any changes to the storefront layout. That way you can always restore the original layout by importing the layout pages.
 
 ----------------------
 Exporting Layout Pages
@@ -82,13 +84,13 @@ Exporting Layout Pages
 
      * *Screen*—file contents will be displayed on the screen.
 
-   * **File name**—Name of the export file. By default, it is *layouts_<TIMESTAMP>.xml*.
+   * **File name**—name of the exported file. By default, it is *layouts_<TIMESTAMP>.xml*.
 
 3. Click **Export**.
 
----------
-Importing
----------
+----------------------
+Importing Layout Pages
+----------------------
 
 1. Click the **gear** button in the upper right part of the screen and choose **Import layout**. 
 
