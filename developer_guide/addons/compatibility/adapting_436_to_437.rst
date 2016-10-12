@@ -115,7 +115,7 @@ New Functions
 
      db_has_table($table_name, $set_prefix = true)
 
-3. Gets a subscriber identifier by email::
+3. Get a subscriber identifier by email::
 
      fn_get_subscriber_id_by_email($email = '')
 
