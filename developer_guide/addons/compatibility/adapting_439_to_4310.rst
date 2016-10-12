@@ -136,7 +136,7 @@ New Functions
 New Smarty Modifiers
 --------------------
 
-``puny_decode``—it decodes the domain from Punycode and returns the URL. Usage::
+``puny_decode``—it decodes the domain name from Punycode and returns the URL. Usage::
 
   {$url|puny_decode}
 
