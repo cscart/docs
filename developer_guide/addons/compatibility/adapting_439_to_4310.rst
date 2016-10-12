@@ -100,11 +100,11 @@ New Functions
 
      fn_get_image_subdir($image_id = 0)
 
-3. Decode the domain name from Punycode::
+3. Decode the hostname from Punycode::
 
      \Tygh\Tools\Url::punyDecode()
 
-4. Encode the domain name to Punycode::
+4. Encode the hostname to Punycode::
 
      \Tygh\Tools\Url::punyEncode()
 
@@ -136,7 +136,7 @@ New Functions
 New Smarty Modifiers
 --------------------
 
-``puny_decode``—it decodes the domain name from Punycode and returns the URL. Usage::
+``puny_decode``—it decodes the hostname from Punycode and returns the URL. Usage::
 
   {$url|puny_decode}
 
