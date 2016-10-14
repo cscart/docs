@@ -6,7 +6,7 @@ Adapt Your Add-ons and Themes to CS-Cart 4.3.10
 Common Changes
 ==============
 
-* *design/themes/responsive/templates/buttons/multiple_buttons.tpl* is no longer supported, but still exists for backwards compatibility. Please don't use it.
+* *design/themes/responsive/templates/buttons/multiple_buttons.tpl* is no longer supported, but still exists for backward compatibility. Please don't use it.
     
 * Component ``Tygh::$app['server.env']`` was implemented to store the information about the environment the product runs in.
 
@@ -22,7 +22,7 @@ New Hooks
     
      fn_set_hook('shippings_calculate_rates_post', $shippings, $rates);
 
-2. This hook is executed before reward points are applied::
+2. This hook is executed before the reward points are applied::
 
      fn_set_hook('set_point_payment', $cart, $cart_products, $auth, $user_info, $cost_covered_by_applied_points, $point_exchange_rate, $user_points);
 
