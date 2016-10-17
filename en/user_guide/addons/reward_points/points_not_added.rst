@@ -12,8 +12,10 @@ If Reward Points Are Not Added Automatically
 
   * Check whether the necessary user group has the *Active* status.
 
-* Check whether the order has the *Complete* status:
+* Check whether the order has :doc:`a status that grants reward points. <../../orders/order_statuses/set_status>`:
 
   * Go to **Orders → View orders**.
 
   * Check the order status in the **Status** select box. Change the status if necessary.
+
+

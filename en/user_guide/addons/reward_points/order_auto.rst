@@ -20,4 +20,4 @@ How To: Add Reward Points for Order Automatically
 
 .. note ::
 
-    The reward points will be added to the customer's account once his/her order has the *Complete* status.
+    The reward points will be added to the customer's account once his/her order has :doc:`a status that grants reward points. <../../orders/order_statuses/set_status>`
