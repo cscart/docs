@@ -60,3 +60,21 @@
     :titlesonly:
 
     upgrade/index
+
+Полезная информация
+===================
+
+.. toctree::
+    :maxdepth: 2
+    :titlesonly:
+
+    faq
+
+История изменений
+=================
+
+.. toctree::
+    :maxdepth: 3
+    :titlesonly:
+
+    history/index
