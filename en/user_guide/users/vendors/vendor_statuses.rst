@@ -10,7 +10,7 @@ Vendors can have one of the following statuses:
 
     Once you change a vendor's status, you can't set it back to *New*.
 
-* **Active**—vendor's administrators can work in the administration panel of the store. The products of an active vendor appear in the store, :doc:`unless they require prior approval <product_approval>`.
+* **Active**—vendor's administrators can work in the administration panel of the store. The products of an active vendor appear in the store, :doc:`unless they require prior approval. <product_approval>`
 
 .. note::
 
@@ -22,4 +22,4 @@ Vendors can have one of the following statuses:
 
 .. image:: img/change_vendor_status.png
     :align: center
-    :alt: You can change a vendor's status in the administration panel at any time.
+    :alt: You can change a vendor's status in Multi-Vendor administration panel at any time.

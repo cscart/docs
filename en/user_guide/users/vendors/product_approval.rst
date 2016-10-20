@@ -6,6 +6,8 @@ How To: Approve/Disapprove Vendors' Products
 
     **Vendors** are available only in **Multi-Vendor**.
 
+Some store owners may want to check the products of their vendors before they appear in the store.
+
 If you want to be able to approve/disapprove vendors' products, activate and configure the **Vendor Data Premoderation** add-on under **Add-ons → Manage add-ons**. Otherwise you won't find the **Product approval** section.
 
 ===============================
@@ -23,6 +25,7 @@ To approve/disapprove a product, follow these steps:
 4. Click either the **Approve** or **Disapprove** icon of the required product. 
 
 .. hint::
+
     To approve/disapprove several products at once, tick the checkboxes of the required products and click the **Approve selected** or **Disapprove selected** button above the list.
 
 This will open a pop-up form where you can specify a reason for approval/disapproval and choose whether to send an email notification to the vendor(s).

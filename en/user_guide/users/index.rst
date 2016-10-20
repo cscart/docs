@@ -2,9 +2,11 @@
 Users
 *****
 
-Manage user accounts that are registered at your store and configure related settings at the **Customers** section of your administration panel.
+The **Customers** section of the administration panel allows you to manage the *user accounts* of your store.
 
-A **user account** is a record in the store database that identifies a *registered user* and associates the user with the related data: order statistics, personal info, subscriptions, etc. User accounts also serve to control the activity and privileges of the store users.
+A **user account** is a record in the store database that identifies a registered user and associates the user with the related data: order statistics, personal info, subscriptions, etc. 
+
+You can split users into groups to add various restrictions or privileges for them.
 
 .. toctree::
     :maxdepth: 2
@@ -19,13 +21,19 @@ User Account Types
 
 CS-Cart has the following types of user accounts:
 
-* **Administrator**—can access both the storefront and the administration panel and manage and/or view the store contents and configuration.
+* **Administrator**—can log in to both the storefront and the administration panel. Depending on their privileges, administrators can view and/or manage the store contents and configuration.
 
-* **Customer**—can access the storefront and buy products in your store. Although the storefront is normally available to non-registered users as well, registered users are supposed to enjoy greater privileges. Besides, even registered users with a customer account may have different opportunities depending on the user group that they belong to.
+* **Customer**—can log in to the storefront and buy products in your store. Although the storefront is normally available to non-registered users as well, registered users are supposed to enjoy greater privileges. Besides, even registered users with a customer account may have different opportunities depending on the user group that they belong to.
 
-* **Supplier**—cannot access the storefront or the administration panel. Supplier accounts are used in the database to flag products that belong to third-party providers.
+* **Supplier**—cannot access the storefront or the administration panel. Supplier accounts are used in the database to flag products that belong to third-party providers. Products from different suppliers can have different shipping methods.
+
+.. note::
+
+    Suppliers appear only if you install and enable the **Suppliers** add-on. Multi-Vendor has another user type: :doc:`vendor's administrators <vendors/index>.`
  
-When in the **Administrators**, **Customers**, and **Suppliers** sections, use the search form to the right of the list to display only those records, that satisfy a certain criterion or a combination of multiple criteria. Use the **Advanced search** to expand the form and access more filtering criteria. If you filter accounts against a particular search pattern regularly (e.g., to list users from a certain country), you will find it convenient to save the pattern and add it to the list of predefined patterns appearing in the top right corner.
+Filter the user accounts with the search form to the right of the list. Click **Advanced search** to access more filtering criteria. 
+
+If you filter accounts against a particular search pattern regularly (e.g., to list users from a certain country), you will find it convenient to save the pattern and add it to the list of predefined patterns appearing in the top right corner.
 
 .. image:: img/users_saved_search.png
     :align: center
@@ -53,7 +61,7 @@ When you search through the list of users with your mouse pointer, the **gear bu
 
 .. warning::
 
-   Account deletion can't be undone without restoring a database backup. We recommend to disable accounts, not to delete them.
+    Account deletion can't be undone without restoring a database backup. We recommend to disable accounts instead of deleting them.
 
 * **View supplier products**—takes you to the list of products by this supplier
 
@@ -67,17 +75,9 @@ Availability of a user account is controlled through the account status. To enab
 Adding a user
 =============
 
-You can add user accounts of the following types:
-
-* administrator
-
-* customer
-
-* supplier
-
 To add a new user, click the **+** button in top right corner of a page. This will open a form with the user account details.
 
-The exact set of fields may vary depending on the account type and the profile configuration, which is managed in the **Profile fields** section.
+The exact set of fields may vary depending on the account type and the profile configuration, which is managed in **Administration → Profile fields**.
 
 .. note::
 
@@ -85,16 +85,14 @@ The exact set of fields may vary depending on the account type and the profile c
 
 After the new account is created, click the **gear** button and choose **Edit** to configure additional parameters.
 
-* specify the customer's age on the **Add-ons** tab.
+* specify the customer's age on the **Add-ons** tab (if the **Age verification** add-on is installed).
 
-* assign the account to one of the available user groups on the **User groups** tab.
+* assign the account to one of the available user groups on the **User groups** tab. A user's membership in a user group is managed by the statuses:
 
-A user's membership in a user group is managed by the statuses:
+  * **Active**—user belongs to the group.
 
-* **Active**—user belongs to the group.
+  * **Pending**—user has applied for the groups and is waiting for approval.
 
-* **Pending**—user has applied for the groups and is waiting for approval.
+  * **Available**—group is available for application.
 
-* **Available**—group is available for application.
-
-* **Declined**—user's application was declined.
+  * **Declined**—user's application was declined.

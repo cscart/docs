@@ -6,7 +6,7 @@ Suppliers
 
 .. note::
 
-	To use this functionality, you need to activate the **Suppliers** add-on in the **Add-ons → Manage add-ons** section.
+    To use this functionality, you need to activate the **Suppliers** add-on in the **Add-ons → Manage add-ons** section.
 
 .. toctree::
     :maxdepth: 2

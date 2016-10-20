@@ -1,8 +1,12 @@
-***************************
-How To: Edit Profile Fields
-***************************
+******************************
+How To: Manage Profile Fields
+*****************************
 
-To change any profile field, complete the following steps:
+You can add, edit, and delete the fields that users can fill in at checkout or in their profile. Some fields can be made mandatory.
+
+=======================
+Editing a Profile Field
+=======================
 
 1. In the Administration panel go to **Administration → Profile fields**.
 
@@ -16,7 +20,9 @@ To change any profile field, complete the following steps:
 
 4. Click the **Save** button to save the changes.
 
-To add a new profile field, complete the following steps:
+======================
+Adding a Profile Field
+======================
 
 1. Go to **Administration → Profile fields**.
 

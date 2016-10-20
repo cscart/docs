@@ -28,7 +28,7 @@ The **Reward Points add-on** allows you to set up a point-based bonus program in
     :align: center
     :alt: View a customer's reward point balance and history using the gear button in the admin panel. 
 
-By clicking **Points**, administrators can view the current reward point balance and the history of balance changes. They can manually add or withdraw reward points by using the **gear** button.
+By clicking **Points**, administrators can view the current reward point balance and the history of balance changes. They can manually add or withdraw reward points by using the **+** button.
 
 .. image:: img/points_log.png
     :align: center

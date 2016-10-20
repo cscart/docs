@@ -2,10 +2,6 @@
 How To: Create a Vendor Account
 *******************************
 
-.. note::
-
-    **Tutorial Difficulty: 1 / 3**
-
 .. important::
 
     **Vendors** are available only in **Multi-Vendor**.
@@ -32,4 +28,4 @@ To create a vendor account, complete the following steps:
 
     The created administrator account will be associated with the vendor account and will be able to log in to the administrator panel to manage this vendor's settings and products.
 
-5. Click the **Create** button. The new vendor account will appear among the other vendor accounts in the store.
+5. Click the **Create** button. The new vendor account will appear in the list among the other vendors.

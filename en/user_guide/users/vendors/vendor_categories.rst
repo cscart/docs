@@ -8,17 +8,23 @@ Vendors and Categories
 
 By default, vendors can create products in all the categories of a store. However, you can make a list of categories available to a certain vendor. Then the vendor will be able to add products to those categories only.
 
+.. note::
+
+    Since **Multi-Vendor 4.4.1**, the categories available for vendors are determined by their plans (i.e., the **Vendor plans** add-on).
+
 ===========================================
 Change the Categories Available to a Vendor
 ===========================================
 
-1. In the administration panel, go to **Vendors → Vendors → <Desired Vendor>**.
+1. In the administration panel, go to **Vendors → Vendor plans**.
 
-2. Switch to the **Categories** tab.
+2. Click the plan you want to edit.
 
-3. Use the **Add categories** button to add the categories to the list.
+3. Switch to the **Categories** tab.
 
-4. Click **Save** for the changes to take effect.
+4. Use the **Add categories** button to add the categories to the list.
+
+5. Click **Save** for the changes to take effect.
 
 .. important::
 

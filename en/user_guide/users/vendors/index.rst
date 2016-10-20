@@ -6,7 +6,7 @@ Vendors
 
     **Vendors** are available only in **Multi-Vendor**.
 
-**Vendors** are independent companies that can sell their own products in your store. Every vendor has its own administration area, and can manage its own settings and products, configure shipping methods, etc.
+**Vendors** are independent companies that sell their own products in your store. Every vendor has its own administration area, and can manage its own settings and products, configure shipping methods, etc.
 
 View the list of the vendors in the Multi-Vendor administration panel under **Vendors → Vendors**.
 

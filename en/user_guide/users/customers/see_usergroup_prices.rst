@@ -1,6 +1,6 @@
-*****************************************************
-A Customer Does Not See Prices for His/Her User Group
-*****************************************************
+**************************************************************
+Problem: A Customer Does Not See Prices for His/Her User Group
+**************************************************************
 
 If a customer is supposed to be a member of the user group, but can't see the prices specified for that group, make sure that the customer belongs to the necessary user group:
 
@@ -12,6 +12,7 @@ If a customer is supposed to be a member of the user group, but can't see the pr
 
 4. Make sure that the necessary user group has the **Active** status.
 
+5. Click the **Save** button.
 
 .. image:: img/add_customer_to_group.png
     :align: center

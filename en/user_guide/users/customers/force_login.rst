@@ -12,7 +12,7 @@ Follow these steps, if you want all your customers to log in or register before 
 
 .. important:: 
 
-    Now customers will not be able to check out without registering or logging in. They will be offered to fill in the **User account info** on the **Checkout page**.
+    Now customers will not be able to check out without registering or logging in. There won't be an option to check out as guest.
 
 .. image:: img/force_login.png
     :align: center

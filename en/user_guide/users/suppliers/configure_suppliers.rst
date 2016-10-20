@@ -2,17 +2,11 @@
 How To: Enable and Configure Suppliers
 **************************************
 
-.. note::
+**Supplier** accounts are used in the database to flag products that belong to third-party providers. Products from different suppliers can have different shipping methods.
 
-    **Tutorial Difficulty: 1 / 3**
-
-The **Suppliers** user type is disabled by default. You need to activate the **Suppliers** add-on first.
-
-========================
-Step 1. Enable Suppliers
-========================
-
-To enable **Suppliers** in your store, complete the following steps:
+===================================
+Step 1. Enable the Suppliers Add-on
+===================================
 
 1. In the Administration panel go to **Add-ons → Manage add-ons**.
 
@@ -36,15 +30,15 @@ You need to create a supplier before you continue:
 
 3. Specify the supplier's information in the mandatory fields:
 
- * name
- * email
+   * Name
+   * Email
 
- .. note::
+   .. note::
 
-     When a customer places an order on a supplier's product, the supplier will receive a notification to the specified email.
+       When a customer places an order on a supplier's product, the supplier will receive a notification to the specified email.
 
- * phone
- * address from where his/her products are shipped: city, country, state/province, zip/postal code
+   * Phone
+   * Address from where his/her products are shipped: city, country, state/province, zip/postal code
 
 .. important::
 
@@ -52,7 +46,7 @@ You need to create a supplier before you continue:
 
 .. image:: img/supplier_creation.png
     :align: center
-    :alt: Use the Advanced search and save your search patterns to optimize your workflow.
+    :alt: Supplier creation form in CS-Cart.
 
 4. Click the **Create and close** button.
 
@@ -78,11 +72,9 @@ The last step is to assign a supplier to products:
 
     You won't see the **Supplier** select box if your store doesn't have any suppliers created.
 
-======================================
-Step 4. Suppliers and Shipping Methods
-======================================
-
-You can select what shipping methods are available to suppliers:
+================================================
+Step 4. Configure Shipping Methods for Suppliers
+================================================
 
 1. Go to **Customers → Suppliers**.
 
