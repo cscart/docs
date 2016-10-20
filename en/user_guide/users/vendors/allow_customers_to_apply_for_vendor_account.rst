@@ -14,7 +14,7 @@ Step 1. Allow Customers to Apply for a Vendor Account
 
 1.2. Tick the **Allow users to apply for vendor account** checkbox.
 
-1.3. Tick the **Automatically create the administrator account for the new approved vendor. (If the "Allow users to apply for vendor account" setting is enabled)** checkbox.
+1.3. Allow automatic creation of vendor's administrator accounts for approved vendors, if necessary.
 
 1.4. If you want users to accept your terms and conditions before they can apply for a vendor account, tick the **Applying vendors must agree to the terms & conditions** checkbox.
 
