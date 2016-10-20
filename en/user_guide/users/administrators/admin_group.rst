@@ -2,7 +2,7 @@
 How To: Create a New Administrator Group
 ****************************************
 
-You may want to limit what a certain administrator can do. This can be done by creatin a new administrator group with limited rights and assigning it to the administrator.
+You may want to limit what a certain administrator can do. This can be done by creating a new administrator group with limited rights and assigning it to the administrator.
 
 ===========================
 Step 1. Create a User Group

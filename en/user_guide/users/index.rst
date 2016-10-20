@@ -29,7 +29,7 @@ CS-Cart has the following types of user accounts:
 
 .. note::
 
-    Suppliers appear only if you install and enable the **Suppliers** add-on. Multi-Vendor has another user type: :doc:`vendor's administrators <vendors/index>.`
+    Suppliers appear only if you install and enable the **Suppliers** add-on. Multi-Vendor has another user type: :doc:`vendor's administrators. <vendors/index>`
  
 Filter the user accounts with the search form to the right of the list. Click **Advanced search** to access more filtering criteria. 
 

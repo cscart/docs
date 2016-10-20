@@ -24,7 +24,7 @@ Step 1. Allow Customers to Apply for a Vendor Account
     :align: center
     :alt: If you allow users to apply for vendor accounts, you can also make them accept terms and conditions.
 
-1.4. Click the **Save** button.
+1.5. Click the **Save** button.
 
 ==============================================
 Step 2. Provide a Link to the Application Form
@@ -38,7 +38,7 @@ Step 2. Provide a Link to the Application Form
     :align: center
     :alt: A registered customer can apply for a vendor account using a link in the menu.
 
-This menu will leads to the form that the customer must fill in to apply.
+This menu will lead to the form that the customer must fill in to apply.
 
 After the customer fills out the form and clicks **Submit**, the administrator of the store can activate the newly created vendor account.
 
@@ -50,15 +50,15 @@ After the customer fills out the form and clicks **Submit**, the administrator o
 Step 3. Approve the Application
 ===============================
 
-1. Go to **Vendors → Vendors**.
+3.1. Go to **Vendors → Vendors**.
 
-2. Find the vendor account you want to activate.
+3.2. Find the vendor account you want to activate.
 
    .. hint::
 
        The vendor accounts that haven't been activated or disabled yet have the **New** status. 
 
-3. Change the status of the desired account to **Active**.
+3.3. Change the status of the desired account to **Active**.
 
    .. hint::
 

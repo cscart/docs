@@ -2,7 +2,7 @@
 How To: Create a New User Group for Customers
 *********************************************
 
-Customers can be split into different user groups with various privileges. For example, you can set different prices for products for members of different groups. You can also determine what shipping methods, payment methods and discounts are available to different user groups.
+Customers can be split into different user groups with various privileges. For example, you can set different product prices products for members of different groups. You can also determine what shipping methods, payment methods and discounts are available to different user groups.
 
 .. hint::
 
