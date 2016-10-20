@@ -18,7 +18,9 @@ Step 1. Allow Customers to Apply for a Vendor Account
 
 1.4. If you want users to accept your terms and conditions before they can apply for a vendor account, tick the **Applying vendors must agree to the terms & conditions** checkbox.
 
-     The text of the terms and conditions is stored the language variable called ``vendor_terms_n_conditions_content``. :doc:`Learn how to work with language variables. <../../look_and_feel/languages/translate>`
+     .. note::
+
+         The text of the terms and conditions is stored the language variable called ``vendor_terms_n_conditions_content``. :doc:`Learn how to work with language variables. <../../look_and_feel/languages/translate>`
 
 .. image:: img/settings_vendors.png
     :align: center
@@ -30,15 +32,19 @@ Step 1. Allow Customers to Apply for a Vendor Account
 Step 2. Provide a Link to the Application Form
 ==============================================
 
-2.1. Create a :doc:`menu <../../look_and_feel/menus/index>` or edit an existing one.
+After you complete **Step 1**, the vendor application form will be available via a URL like *http://example.com/index.php?dispatch=companies.apply_for_vendor*. You'll only need to replace *http://example.com* with the actual URL of your store.
 
-2.2. Add a menu item with the following URL: ``dispatch=companies.apply_for_vendor``.  
+But there are other ways to make customers aware of the vendor application form. For example, Multi-Vendor demo data includes the **Quick Links** menu with the **Become a seller** link.
 
 .. image:: img/apply_for_vendor.png
     :align: center
     :alt: A registered customer can apply for a vendor account using a link in the menu.
 
-This menu will lead to the form that the customer must fill in to apply.
+You can create your own menu item that would lead to the application form. The menu item must have the following URL: ``dispatch=companies.apply_for_vendor``.
+
+.. hint::
+
+    :doc:`This article <../../look_and_feel/menus/index>` describes working with menus and menu items in more detail.
 
 After the customer fills out the form and clicks **Submit**, the administrator of the store can activate the newly created vendor account.
 
