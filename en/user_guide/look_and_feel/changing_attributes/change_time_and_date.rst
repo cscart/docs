@@ -6,21 +6,21 @@ How To: Change CS-Cart Time Zone and Datetime Display Format
 General Information
 ===================
 
-A time zone is a standard of time for a specific region on the globe. The standard is used for legal, commercial, and social purposes. In CS-Cart a time zone helps customers to navigate through a store and to follow special events like sales, giveaways, etc.
+A time zone is a standard of time for a specific region on the globe. The standard is used for legal, commercial, and social purposes. Setting a proper time zone for your store can help your customers keep track of special events like sales, giveaways, etc.
 
-A datetime panel tracks time and date of events in a store. It is used in many different places, for example: 
+A datetime panel shows time and date of events in the store. It is used in many different places, for example: 
 
 * It tracks the time the order was placed. 
 
-.. image:: img/time_and_date_02.png
-    :align: center
-    :alt: Date and time on the orders page
+  .. image:: img/time_and_date_02.png
+      :align: center
+      :alt: Date and time on the orders page
 
 * It tracks the time the product review was added.
 
-.. image:: img/time_and_date_03.png
-    :align: center
-    :alt: Date and time on the storefront
+  .. image:: img/time_and_date_03.png
+      :align: center
+      :alt: Date and time on the storefront
 
 ================================================
 Changing a Time Zone and Datetime Display Format
@@ -38,4 +38,4 @@ Changing a Time Zone and Datetime Display Format
 
 .. note:: 
 
-   This change will affect all **future** dates, that will be saved in the database—the time of placed orders, user registration time, etc.
+   This change will affect the dates of all **future** events—the time of placed orders, user registration, etc.

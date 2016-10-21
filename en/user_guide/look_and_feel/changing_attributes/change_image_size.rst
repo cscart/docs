@@ -16,7 +16,7 @@ To change the size of images on the storefront, complete the following steps:
 
 2. Specify the desired quality value in the **JPEG format quality (0-100)** field.
 
-3. To change the size of the thumbnail images on the storefront, edit the values of the desired thumbnails in the corresponding fields.
+3. To change the size of the thumbnail images on the storefront, edit the values of the corresponding settings.
 
 4. Click the **Save** button to save the changes.
 
@@ -24,65 +24,112 @@ To change the size of images on the storefront, complete the following steps:
 
     After changing these settings you will need to clear the thumbnail cache so that the thumbnails would be re-generated automatically. To do it, in the administration panel go to **Administration → Storage** and choose the **Clean up generated thumbnails** action.
 
-===================
-Types of Thumbnails
-===================
+======================================
+Image Types and Corresponding Settings
+======================================
 
-* To change the size of the thumbnail images in the products lists on the storefront, edit the values of the **Products list (category, search, etc) thumbnail width** and **Products list (category, search, etc) thumbnail height** fields.
+This section describes, which settings in **Settings → Thumbnails** affect images in various locations.
 
-  .. note::
-       
-      Two types of the CS-Cart objects are used to display the products lists on the storefront—**category layouts and products blocks**. **Category layouts** display products lists on separate category pages, e.g. Electronics, Apparel, etc. **Products blocks** display products lists in separate page sections, e.g. Hot deals, On sale, Newest products, etc.
+------------
+Product List
+------------
 
- * Category layout:
+**Settings:**
+* *Products list (category, search, etc) thumbnail width*
+* *Products list (category, search, etc) thumbnail height*
 
-    .. image:: img/change_image_size_02.png
-        :align: center
-        :alt: Products lists thumbnails on the storefront.
+CS-Cart displays product lists in 2 cases:
 
- * Products blocks:
+* On the category pages, for example, for example, *Electronics*, *Apparel*, etc. These are the pages represented by a :doc:`layout page <../layouts/layout_pages/index>` with the ``categories.view`` dispatch.
 
-    .. image:: img/change_image_size_03.png
-        :align: center
-        :alt: Products lists thumbnails on the storefront.
-
-* To change the size of the thumbnail displayed on the product details page on the storefront, edit the values of the **Product details page thumbnail width** and **Product details page thumbnail height** fields.
-
-  .. image:: img/change_image_size_04.png
+  .. image:: img/change_image_size_02.png
       :align: center
-      :alt: Product details page thumbnails on the storefront.
+      :alt: Products lists thumbnails on the storefront.
 
-* To change the size of a resized product thumbnail on the product quick view page, edit the values of the **Product quick view thumbnail width** and **Product quick view thumbnail height** fields.
+* In the **Products** :doc:`block <../layouts/blocks/index>`, which can serve different functions on different pages, like *Hot deals*, *On sale*, *Newest products*, etc.
 
-  .. image:: img/change_image_size_05.png
+  .. image:: img/change_image_size_03.png
       :align: center
-      :alt: Product quick view page thumbnails on the storefront.
+      :alt: Products lists thumbnails on the storefront.
 
-* To change the size of the thumbnail displayed on the cart page on the storefront, edit the values of the **Product cart page thumbnail width** and **Product cart page thumbnail height** fields.
+--------------------
+Product Details Page
+--------------------
+
+**Settings:**
+* *Product details page thumbnail width*
+* *Product details page thumbnail height*
+
+.. image:: img/change_image_size_04.png
+    :align: center
+    :alt: Product details page thumbnails on the storefront.
+
+---------------
+Quick View Page
+---------------
+
+**Settings:**
+* *Product quick view thumbnail width*
+* *Product quick view thumbnail height*
+
+.. image:: img/change_image_size_05.png
+    :align: center
+    :alt: Product quick view page thumbnails on the storefront.
+
+---------
+Cart Page
+---------
+
+**Settings:** 
+* *Product cart page thumbnail width* 
+* *Product cart page thumbnail height*
 
   .. image:: img/change_image_size_06.png
       :align: center
       :alt: Cart page thumbnails on the storefront.
 
-* To change the size of the category thumbnail images in the category lists on the storefront, edit the values of the **Categories list thumbnail width** and **Categories list thumbnail height fields**.
+---------------
+Category Images
+---------------
 
-  .. image:: img/change_image_size_07.png
-      :align: center
-      :alt: Category lists thumbnails on the storefront.
+**Settings for thumbnail sizes:**
 
-* To change the size of the category thumbnail displayed on the category details page on the storefront, edit the values of the **Category details page thumbnail width** and **Category details page thumbnail height** fields.
+* On a category list:
 
-* To change the size of the popup larger images of the category details page on the storefront, edit the values of the **Detailed category image width** and **Detailed category image height fields**.
+  * *Categories list thumbnail width*
 
-===============
-Resizing images
-===============
+  * *Categories list thumbnail height fields*
 
-* If only one of the values of the mentioned fields is specified, then the original image size will be changed according to the size specified in one of the fields. For example, if the original image size is 200px x 200px and we specify only the image width, then the image does not keep the ratio which affects the form of the thumbnail grid on a category page or in a products block. This action affects only thumbnails included in grids.  
+* Thumbnail on a category details page:
+
+  * *Category details page thumbnail width*
+
+  * *Category details page thumbnail height*
+
+* Detailed image on a category details page:
+
+  * *Detailed category image width*
+
+  * *Detailed category image height fields*
+
+.. image:: img/change_image_size_07.png
+    :align: center
+    :alt: Category lists thumbnails on the storefront.
+
+===========================================
+What Happens to Images When Size is Changed
+===========================================
+
+If the uploaded image has larger than the dimensions allowed by the settings, then the image is downsized to match the dimensions. The aspect ratio of the image doesn't change during downsizing. There are two possible scenarios here:
+
+* If both height and width are specified, the image will be downsized and centered. Background color will fill the areas not covered by the downsized image.
+
+* If only a width or height is specified, then the image will be downsized according to it, and the aspect ratio will determine the missing width/height. No background color will be added.
+
+Images will not be stretched if their size is smaller than the image size specified in the settings. Instead the uploaded image will be centered, and the aspect ratio will determine the missing width/height. The background color will fill the areas that the uploaded image doesn't cover. 
+
+The color of the background is determined by the **Thumbnail background color** setting.
 
 .. image:: img/change_image_size_08.png
     :align: center
     :alt: Products list with only one size added.
-
-* If the values of the mentioned fields are specified, then the original image size will be changed according to the size specified in the field. For example, if the original image size is 200px x 200px and the image width and height are specified as 100px, then the final image size will be 100px x 100px. But if the width/height field is empty, the image will be displayed according to the original width/height size.
-
