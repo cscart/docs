@@ -43,3 +43,7 @@ Multi-Vendor has a feature called **vendor's microstore**, that shows the produc
 .. important::
 
     A category will show up in a vendor's microstore even if it has hidden and/or disabled products only. The workaround is to move hidden/disabled products to a special hidden/disabled category created for that purpose.
+
+.. image:: img/empty_category.png
+    :align: center
+    :alt: The categories will appear in vendor's microstore even if all the products are hidden or disabled.

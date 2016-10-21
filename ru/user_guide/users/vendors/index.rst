@@ -19,7 +19,19 @@
     :titlesonly:
     :glob:
 
-    *
+    account_balance
+    allow_customers_to_apply_for_vendor_account
+    create_vendor_account
+    merge_vendors
+    product_approval
+    vendor_categories
+    vendor_statuses
+
+.. toctree::
+    :maxdepth: 2
+    :hidden:
+
+    extend_vendor_permissions
 
 ==================================
 Продавцы и администраторы продавца
