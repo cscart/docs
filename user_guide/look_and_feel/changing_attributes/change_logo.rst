@@ -2,8 +2,6 @@
 How To: Change the Company Logo
 *******************************
 
-To replace CS-Cart logo with yours:
-
 1.   In the Administration panel, go to **Design → Themes**.
 2.   In the currently used theme click the **Theme Editor** button.
 

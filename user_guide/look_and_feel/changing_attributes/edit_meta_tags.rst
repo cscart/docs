@@ -14,11 +14,11 @@ There are three types of the meta data in CS-Cart:
 
 In CS-Cart the meta data structure can be described as a three-level hierarchy:
 
-* **Layouts: Location: Default**—The default meta data.
+* **Layouts: Location: Default**—the meta data of the default :doc:`layout page. <../layouts/layout_pages/index>`
 
-* **Layouts: Location: Current**—The layout page meta data.
+* **Layouts: Location: Current**—the meta data of a particular :doc:`layout page. <../layouts/layout_pages/index>`
 
-* **Manage Object Page**—The object meta data.
+* **Object editing page**—the meta data of a particular object, like a product, a category, etc.
 
 ==============================
 Changing the Default Meta Data
@@ -26,6 +26,10 @@ Changing the Default Meta Data
 
 1.   In the Administration panel, go to **Design → Layouts**.
 2.   Click the gear icon on the **Default** tab.
+
+.. note::
+
+    If you set another layout page as default, edit that page instead.
 
 .. image:: img/title_01.png
     :align: center
