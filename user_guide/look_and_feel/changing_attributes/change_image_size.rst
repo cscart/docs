@@ -59,7 +59,9 @@ Product Details Page
 --------------------
 
 **Settings:**
+
 * *Product details page thumbnail width*
+
 * *Product details page thumbnail height*
 
 .. image:: img/change_image_size_04.png
