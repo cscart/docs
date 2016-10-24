@@ -70,6 +70,10 @@
 
     faq
 
+* `Управление интернет-магазином CS-Cart — мануал <http://www.cs-cart.ru/features-admin.html>`_
+
+* `Система управления интернет-магазином CS-Cart — видеокурс <http://www.cs-cart.ru/videos/admin/>`_
+
 История изменений
 =================
 
