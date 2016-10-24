@@ -35,7 +35,9 @@ Product List
 ------------
 
 **Settings:**
+
 * *Products list (category, search, etc) thumbnail width*
+
 * *Products list (category, search, etc) thumbnail height*
 
 CS-Cart displays product lists in 2 cases:
@@ -57,7 +59,9 @@ Product Details Page
 --------------------
 
 **Settings:**
+
 * *Product details page thumbnail width*
+
 * *Product details page thumbnail height*
 
 .. image:: img/change_image_size_04.png
@@ -69,7 +73,9 @@ Quick View Page
 ---------------
 
 **Settings:**
+
 * *Product quick view thumbnail width*
+
 * *Product quick view thumbnail height*
 
 .. image:: img/change_image_size_05.png
@@ -80,8 +86,10 @@ Quick View Page
 Cart Page
 ---------
 
-**Settings:** 
-* *Product cart page thumbnail width* 
+**Settings:**
+
+* *Product cart page thumbnail width*
+
 * *Product cart page thumbnail height*
 
   .. image:: img/change_image_size_06.png
