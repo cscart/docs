@@ -44,6 +44,10 @@ Facebook
 
 `Learn more about Facebook integration <http://hybridauth.sourceforge.net/userguide/IDProvider_info_Facebook.html>`_ at HybridAuth.Sourceforge.net.
 
+.. hint::
+
+    If necessary, you can also :doc:`embed your store into a Facebook page <../../look_and_feel/layouts/widget_mode/facebook_app>`.
+
 ------
 PayPal
 ------

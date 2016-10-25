@@ -4,6 +4,10 @@ Janrain
 
 This add-on enables the **Social Login** service in your store. This service is a part of the **Janrain Engage** solution. It encourages your visitors to use their existing accounts with social platforms like Facebook, Twitter, and PayPal for registration and login in your store. Please learn more details `here <http://janrain.com/product/>`_.
 
+.. hint::
+
+    If necessary, you can even :doc:`embed your store into a Facebook page <../../look_and_feel/layouts/widget_mode/facebook_app>`.
+
 .. image:: img/janrain.png
 	:align: center
 	:alt: Janrain
