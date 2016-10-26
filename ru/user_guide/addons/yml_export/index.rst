@@ -6,8 +6,11 @@ YML экспорт
 
    YML (Yandex Market Language) — это стандарт, разработанный Яндексом для принятия и размещения информации в базе данных Яндекс.Маркета. YML основан на стандарте XML. Единый формат представления данных позволяет быстро и качественно обрабатывать предоставляемую магазинами информацию о товарах и услугах.
 
-   -- Официальный сайт
+   -- |ym_yml|
 
+.. |ym_yml| raw:: html
+
+   <!--noindex--><a href="https://yandex.ru/support/webmaster/goods-prices/technical-requirements.xml?lang=ru" target="_blank" rel="nofollow">Официальный сайт</a><!--/noindex-->
 
 .. contents:: Вы узнаете:
     :local: 
