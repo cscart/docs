@@ -2,6 +2,10 @@
 How To: Set up CS-Cart with Amazon Checkout
 *******************************************
 
+.. warning::
+
+    **Checkout by Amazon** is a deprecated payment method. Learn more at `payments.amazon.com <https://payments.amazon.com/help/81690>`_.
+
 *	In the Administration panel, go to **Administration → Payment methods**.
 *	Click the **+** button on the right.
 *	In the opened window:
@@ -20,14 +24,14 @@ How To: Set up CS-Cart with Amazon Checkout
 
 .. note::
 
-	Please set the **Merchant URL** parameter at **Seller central** (**Seller central → Settings → Checkout Pipeline Settings**) to *https://www.your_domain.com/payments/amazon/amazon_callback.php*, where *www.your_domain.com* is the address of your store.
+	Please set the **Merchant URL** parameter at **Seller central** (**Seller central → Settings → Checkout Pipeline Settings**) to *https://www.your_domain.com/app/payments/amazon/amazon_callback.php*, where *www.your_domain.com* is the address of your store.
 
 *	Fill in the following fields:
 
     *	**Merchant ID** — your merchant identifier.
     *	**AWS access public key** — your AWS (Amazon Web Services) public key.
     *	**AWS access secret key** — your AWS secret key.
-    *	**Currency** —  the currency in your Amazon account. If it does not match the base currency in your CS-Cart settings, please contact CS-Cart support team.
+    *	**Currency** —  the currency in your Amazon account.
     *	**Process order on callback failure** — select *Yes* if you want to process the order even if the callback failed.
     *	**Test/Live mode** — select *Live*. In order to use the *Test* mode, you need to create the test account at Amazon.
     *	**Amazon button style** — select the style of the **Amazon Checkout** button that will be displayed on your storefront page.
