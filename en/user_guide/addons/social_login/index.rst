@@ -17,7 +17,7 @@ To manage the following settings, gp to the **Add-ons → Manage add-ons** secti
 
 	The **Social login** add-on is incompatible with the **Janrain** add-on. Disable the **Janrain** add-on to use **Social login**.
 
-*	**Icons pack** - Directory with the social networks icons. A path to the directory: *media/images/addons/addons/hybrid_auth/icons/*.
+*	**Icons pack** - Directory with the social networks icons. A path to the directory: *media/images/addons/hybrid_auth/icons/*.
 *	**Autogeneration email** - Tick this checkbox to enable the email auto generation in case that a social network does not pass the address.
 
 .. note ::
