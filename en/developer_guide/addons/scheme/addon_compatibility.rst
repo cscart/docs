@@ -34,12 +34,12 @@ If you try to install this add-on on version 4.3.7, you’ll get the following e
     **Error:** Version of your cart (4.3.7) is not supported. Minimal: 4.3.2. Maximal: 4.3.6.
 
 ----------------------------------
-Editions (CS-Cart or Multi-Vendor)
+Products (CS-Cart or Multi-Vendor)
 ----------------------------------
 
-There are two editions: CS-Cart (ULTIMATE) and Multi-Vendor (MULTIVENDOR). You can specify either of them, or both.
+There are two products: CS-Cart (referred to as ``ULTIMATE``) and Multi-Vendor (referred to as ``MULTIVENDOR``). You can mark your add-on as compatible with either of them, or with both.
 
-* **One edition:**
+* **One product:**
 
   .. code-block:: xml
 
@@ -47,7 +47,7 @@ There are two editions: CS-Cart (ULTIMATE) and Multi-Vendor (MULTIVENDOR). You c
           <core_edition>MULTIVENDOR</core_edition>
       </compatibility>
 
-* **Multiple editions:**
+* **Multiple products:**
 
   .. code-block:: xml
 
@@ -153,5 +153,3 @@ You can specify the required and conflicting PHP extensions for your add-on.
   .. warning::
 
       **Error:** The gd extension should be removed from your server for correct add-on operation.
-
-
