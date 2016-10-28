@@ -54,6 +54,9 @@
 .. fancybox:: img/hybrid_auth_49.png
     :alt: HybridAuth  
 
+.. hint::
+
+    Помимо прочих способов интеграции с различными сервисами и социальными сетями, :doc:`можно встроить свой магазин на страницу Facebook. <../../look_and_feel/layouts/widget_mode/facebook_app>`
 
 Настройка модуля
 ++++++++++++++++

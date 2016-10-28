@@ -6,7 +6,7 @@ This add-on enables the **Social Login** service in your store. This service is 
 
 .. hint::
 
-    If necessary, you can even :doc:`embed your store into a Facebook page <../../look_and_feel/layouts/widget_mode/facebook_app>`.
+    For even greater integration with social networks, you can :doc:`embed your store into a Facebook page. <../../look_and_feel/layouts/widget_mode/facebook_app>`
 
 .. image:: img/janrain.png
 	:align: center

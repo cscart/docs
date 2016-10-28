@@ -46,7 +46,7 @@ Facebook
 
 .. hint::
 
-    If necessary, you can also :doc:`embed your store into a Facebook page <../../look_and_feel/layouts/widget_mode/facebook_app>`.
+    If necessary, you can also :doc:`embed your store into a Facebook page. <../../look_and_feel/layouts/widget_mode/facebook_app>`
 
 ------
 PayPal
