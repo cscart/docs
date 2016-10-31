@@ -4,6 +4,18 @@ Getting Started
 
 This section covers the basics of CS-Cart development.
 
+==========
+Main Rules
+==========
+
+There are many ways how you can modify CS-Cart. But some ways can lead to various problems, like lost changes and bugs after the upgrade, as well as add-on incompatibility. To make the lives of users and other developers easier, we ask you to follow the rules outlined here:
+
+.. toctree::
+    :maxdepth: 1
+    :glob:
+
+    guidelines
+
 ===========================
 Configuring the Environment
 ===========================
