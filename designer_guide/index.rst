@@ -9,8 +9,9 @@ Glossary
 *	**Styles** (ex. presets) - CSS attribute values related to CSS styles. These values can be changed with the **Theme Editor**.
 *	**Theme Editor** - a tool that helps to change the appearance of certain design elements.
 *	**Templates** - template files (*.tpl*) based on the Smarty templater.
-*	**Media** -  images, icons, fonts.
-*	**Layout** -  contents and the layout scheme of the customer area blocks.
+*	**Media** - images, icons, fonts.
+*	**Mail** - e-mail templates based on Smarty.
+*	**Layout** - contents and the layout scheme of the customer area blocks.
 *	**Location** - defines the certain page appearance.
 *	**Container** - area of the **Layout** for adding grids. There are 4 container types: top panel, header, content, and footer.
 *	**Grid** -  a grid element. 
@@ -28,15 +29,17 @@ Themes in CS-Cart are stored in the *design/themes/* directory. In CS-Cart versi
 
 A theme structure consists of 6 directories and 2 service files: 
 
-	*	The **Layout** directory - contains the appearance structure *.xml* files. Further you can read more about Layout.
+	*	The **layouts** directory - contains the appearance structure *.xml* files. Further you can read more about Layout.
 
-	*	The **Styles** directory - contains files including *.less* variables and the Theme Editor elements structure.
+	*	The **styles** directory - contains files including *.less* variables and the Theme Editor elements structure.
 
-	*	The **Templates** directory - contains templates (the *.tpl* files).
+	*	The **templates** directory - contains templates (the *.tpl* files).
 
-	*	The **CSS** directory - contains the theme styles in the *.less* and *.css* files.
+	*	The **mail** directory - contains e-mail notification templates (the *.tpl* files).
 
-	*	The **Media** directory - contains fonts, icons, and images for a theme.
+	*	The **css** directory - contains the theme styles in the *.less* and *.css* files.
+
+	*	The **media** directory - contains fonts, icons, and images for a theme.
 
 	*	The **customer_screenshot.png** image - the theme preview. It is shown in the *Design > Themes* section of the administration panel.
 

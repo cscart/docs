@@ -178,3 +178,52 @@ The export/import file includes:
 .. warning::
 
     A layout is installed only when you install a theme. If you install a theme and then switch to another one, the layout of the latest installed theme will be active.
+
+====================
+Layout Compatibility
+====================
+
+When you develop a theme, you can specify whether the layout works with CS-Cart, Multi-Vendor, or both. To do that:
+
+1. Export the layout.
+
+2. Open the exported file.
+
+3. Add the ``edition`` attribute for the ``Layout`` element. For example
+
+.. code-block:: xml
+
+     <?xml version="1.0"?>
+     <block_scheme scheme="1.0">
+         <settings>
+             <default_language>en</default_language>
+         </settings>
+         <layout edition="MULTIVENDOR">
+             <name>Main</name>
+             <is_default>1</is_default>
+             <width>16</width>
+             <layout_width>fluid</layout_width>
+             <min_width>280</min_width>
+             <max_width>1200</max_width>
+             <style_id>Modern</style_id>
+         </layout>
+     </block_scheme>
+
+
+Here are the possible values of ``edition``:
+
+* ULTIMATE—the layout works only with CS-Cart.
+
+* MULTIVENDOR—the layout works only with Multi-Vendor.
+
+* ULTIMATE/MULTIVENDOR—the layout works with both CS-Cart and Multi-Vendor.
+
+When a theme is installed, all the layouts with the matching ``edition`` will be installed from the *layouts* directory.
+
+==================
+Layouts of Add-ons
+==================
+
+Add-ons can add their own layouts. This is done via the **layouts.xml** file located in the add-on's folder: *app/addons/[addon_name]/layouts.xml*.
+
+Themes can redefine the layouts of add-ons. If the theme's directory has *layouts/addons/[addon_name]/layouts.xml* in it, then those layouts will be used during add-on installation instead of the layouts that come with the add-on.
