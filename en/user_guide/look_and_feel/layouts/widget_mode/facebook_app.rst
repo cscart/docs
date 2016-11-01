@@ -52,11 +52,15 @@ Step 2. Copy the Widget Code
 
     Although you can use your default :doc:`layout <../index>` for Facebook, you might want to use a separate layout: that way you'll be able to change the look of your main store and Facebook store separately. 
 
-.. image:: img/widget_01.png
+.. image:: img/widget_code.png
     :align: center
     :alt: Getting the widget code from CS-Cart.
 
-2.3. Back on the CS-Cart Facebook App page, click **Set store**, paste the code into the **Widget** code box, and click **Save**.
+2.3. Back on the CS-Cart Facebook App page, click **Set store**, and paste the code into the **Widget** code box.
+
+2.4. Enter your CS-Cart or Multi-Vendor license number in the **License number** field. If you proceed without entering your license number, you'll get a 14-day trial for the app.
+
+2.5. Click **Save**.
 
 .. image:: img/widget_code_facebook.png
     :align: center
