@@ -18,27 +18,27 @@ CS-Cart uses the ``send`` method of the ``Mailer`` class to send emails. One of 
 Directory Structure
 ===================
 
-* *media*:
+* **media**:
 
-  * *images*—contains the images used in email templates. Use the ``{$images_dir}`` variable to insert images from this folder. For example::
+  * **images**—contains the images used in email templates. Use the ``{$images_dir}`` variable to insert images from this folder. For example::
 
       <img src="{$images_dir}/[file_name]" />
 
-* *templates*:
+* **templates**:
 
-  * *addons*—contains the email templates of add-ons. Each add-on has its own folder, so the full path looks like this: *templates/addons/[add-on_name]/*.
+  * **addons**—contains the email templates of add-ons. Each add-on has its own folder, so the full path looks like this: *templates/addons/[add-on_name]/*.
 
-  * *buttons*—contains the templates of buttons.
+  * **buttons**—contains the templates of buttons.
 
-  * *common*—contains the templates of elements common for multiple email templates. For example, *letter_header.tpl*, *letter_footer.tpl*.
+  * **common**—contains the templates of elements common for multiple email templates. For example, *letter_header.tpl*, *letter_footer.tpl*.
 
-  * *orders*—contains the templates of emails related to orders: notification, invoice, printable invoice, download link for a downloadable product, tracking information.
+  * **orders**—contains the templates of emails related to orders: notification, invoice, printable invoice, download link for a downloadable product, tracking information.
 
-  * *product*—contains the templates of emails related to products: the back in stock notification.
+  * **product**—contains the templates of emails related to products: the back in stock notification.
 
-  * *promotions*—contains the templates of emails related to promotions.
+  * **promotions**—contains the templates of emails related to promotions.
 
-  * *shipments*—contains the templates of emails related to shipments.
+  * **shipments**—contains the templates of emails related to shipments.
 
 ===============
 Email Structure

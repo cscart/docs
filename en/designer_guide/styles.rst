@@ -36,9 +36,9 @@ The *data/* directory contains *.less*, *.css*, and *.png* files. In these files
 
 .. important::
 
-    **Starting with version 4.3.7**, the **styles** directory isn't required. You'll need it only if you want your theme to support several styles.
+    **Starting with version 4.3.7**, the *styles* directory isn't required. You'll need it only if you want your theme to support the Theme Editor and multiple styles.
 
-If the theme's directory doesn't have the *styles* directory in it, the **Theme Editor** won't work for the theme. When you go to **Design → Themes**, the **Theme editor** button will be grayed out, and if you hover over it, you'll see the following tooltip: "This theme doesn’t support theme editor."
+If the theme's directory doesn't have the *styles* directory in it, the Theme Editor won't work for the theme. When you go to **Design → Themes**, the **Theme editor** button will be grayed out, and if you hover over it, you'll see the following tooltip: "This theme doesn’t support theme editor."
 
 Manifest.json
 +++++++++++++

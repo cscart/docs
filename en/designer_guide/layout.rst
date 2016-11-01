@@ -189,7 +189,9 @@ When you develop a theme, you can specify whether the layout works with CS-Cart,
 
 2. Open the exported file.
 
-3. Add the ``edition`` attribute for the ``Layout`` element. For example::
+3. Add the ``edition`` attribute for the ``Layout`` element. For example
+
+.. code-block:: xml
 
      <?xml version="1.0"?>
      <block_scheme scheme="1.0">
@@ -224,4 +226,4 @@ Layouts of Add-ons
 
 Add-ons can add their own layouts. This is done via the **layouts.xml** file located in the add-on's folder: *app/addons/[addon_name]/layouts.xml*.
 
-Themes can redefine the layouts of add-ons. If the theme's directory has *layouts/addons/[addon_name]/layouts.xml* in it, then those layouts will be used instead of the layouts that come with the add-on.
+Themes can redefine the layouts of add-ons. If the theme's directory has *layouts/addons/[addon_name]/layouts.xml* in it, then those layouts will be used during add-on installation instead of the layouts that come with the add-on.
