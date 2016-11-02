@@ -164,21 +164,28 @@ PHPDoc
 
 8. A long string of comments or parameters **must** be wrapped and aligned.
 
-9. Here’s the example of formatting done right:
+9. The ``@throws`` and ``@author`` tags is **must not** be used.
+
+10. Function and method deprecation **must** be performed using the ``@deprecated`` tag. Deprecation starting version **must be** specified.
+
+11. An array containing instances of a single class **must** be typehinted using the collection syntax: ``Class[]``.
+
+12. Here’s the example of formatting done right:
 
   ::
 
-      /**
+     /**
        * Generates date-time intervals of a given period for sales reports
        *
-       * @param int $interval_id    Sales reports interval ID
-       * @param int $timestamp_from Timestamp of report period beginning date
-       * @param int $timestamp_to   Timestamp of report period end date
-       * @param int $limit          Maximal number of the generated intervals. Also, this string
-       *                            is used to illustrate the wrapped and aligned long comment.
+       * @param Timezone[] $timezone_list  List of timezones to be used
+       * @param int        $interval_id    Sales reports interval ID
+       * @param int        $timestamp_from Timestamp of report period beginning date
+       * @param int        $timestamp_to   Timestamp of report period end date
+       * @param int        $limit          Maximal number of the generated intervals. Also, this string
+       *                                   is used to illustrate the wrapped and aligned long comment.
        *
+       * @deprecated 4.4.1
        * @return array
-       * @author John Doe
        */
 
 -----------
