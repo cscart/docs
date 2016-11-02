@@ -38,7 +38,7 @@ Names of Variables, Array Keys and Class Properties
 
         $counter, $user_id, $product, $is_valid
 
-  * **Wrong:** 
+  * **Wrong:**
 
     ::
 
@@ -46,7 +46,7 @@ Names of Variables, Array Keys and Class Properties
 
 3. Variables that store the list of multiple objects of the same type **should** have the ``_list`` suffix, for example: ``$products_list``, ``$cart_applied_promotions_list``. That way it’s easier to determine which variable stores the list and which variable stores an element of the list. Take this array iteration in the ``foreach`` cycle, for example:
 
-  * **Right:** 
+  * **Right:**
 
     ::
 
@@ -70,7 +70,7 @@ Names of Variables, Array Keys and Class Properties
 
         $is_valid, $has_rendered, $has_children, $use_cache
 
-  * **Wrong:** 
+  * **Wrong:**
 
     ::
 
@@ -92,7 +92,7 @@ Naming and Declaring Constants
 
         COLOR_GREEN, COLOR_RED; SORTING_ASC, SORTING_DESC
 
-  * **Wrong:** 
+  * **Wrong:**
 
     ::
 
@@ -115,11 +115,11 @@ Magic Numbers in the Middle of the Code
 ---------------------------------------
 
 1. Don’t use numeric values and string literals in the code, unless it’s  evident what they stand for.
-  
+
   **Wrong:**
 
   ::
- 
+
     $product->tracking = 'O'; // What does 'O' mean?
     ...
     $order_status = 'Y'; // "Y" == "Yes"? "Yellow"?
@@ -148,13 +148,23 @@ Commenting
 PHPDoc
 ------
 
-1. **Try** to comply with the draft of `PSR-5 <https://github.com/phpDocumentor/fig-standards/blob/master/proposed/phpdoc.md>`_—once the standard is accepted, it will become **mandatory**.
+1. You **should** comply with the draft of `PSR-5 <https://github.com/phpDocumentor/fig-standards/blob/master/proposed/phpdoc.md>`_—once the standard is accepted, it will become **mandatory**.
 
 2. You **must** use the block with the commentary and the description of the arguments for declaring all functions, methods, classes and class properties.
 
-3. If a function doesn’t return a value, it’s better to use ``@return void`` or not to write ``@return`` at all.
+3. If a function doesn’t return a value, you **must** either use ``@return void`` or not to write the ``@return`` tag at all.
 
-4. Here’s the example of formatting done right:
+4. Tag comments, parameter and property names **must** be aligned with each other.
+
+5. There **must** be a blank line before the first tag.
+
+6. A group of consecutive ``@param`` tags **must** have blank lines around it.
+
+7. There **must not** be more than one consecutive blank lines.
+
+8. A long string of comments or parameters **must** be wrapped and aligned.
+
+9. Here’s the example of formatting done right:
 
   ::
 
@@ -164,9 +174,11 @@ PHPDoc
        * @param int $interval_id    Sales reports interval ID
        * @param int $timestamp_from Timestamp of report period beginning date
        * @param int $timestamp_to   Timestamp of report period end date
-       * @param int $limit
+       * @param int $limit          Maximal number of the generated intervals. Also, this string
+       *                            is used to illustrate the wrapped and aligned long comment.
        *
        * @return array
+       * @author John Doe
        */
 
 -----------
@@ -232,7 +244,7 @@ Unless you work with a hook processor function, **try not to** pass variables to
 
 .. important::
 
-    Passing variables by reference doesn’t reduce memory consumption: PHP optimizes everything even if you pass variables by value. 
+    Passing variables by reference doesn’t reduce memory consumption: PHP optimizes everything even if you pass variables by value.
 
 ----------
 Exit Point
@@ -310,13 +322,13 @@ Entity Names
 
 4. If the name of a class, interface, trait or method has an acronym like **URL**, **API**, **REST** etc., then the acronym **must** follow the rules of **CamelCase**.
 
-  * **Right:** 
+  * **Right:**
 
     ::
 
         $a->getApiUrl(), $a = new Rest();, class ApiTest
- 
-  * **Wrong:** 
+
+  * **Wrong:**
 
     ::
 
@@ -418,7 +430,7 @@ Namespaces
 
 4. Every entity, be it a class, interface, or trait, **must** be in a separate file. Developers often break this rule when they declare both a class and an exception in the same file.
 
-5. Add-ons **should** add their classes, interfaces and traits **only to their own namespace** ``\Tygh\Addons\AddonName``. For example, the allowed namespace for the ``form_builder`` add-on is ``\Tygh\Addons\FormBuilder``. 
+5. Add-ons **should** add their classes, interfaces and traits **only to their own namespace** ``\Tygh\Addons\AddonName``. For example, the allowed namespace for the ``form_builder`` add-on is ``\Tygh\Addons\FormBuilder``.
 
   This rule has 2 exceptions:
 
@@ -473,7 +485,7 @@ SQL Queries
 
 3. The data you use in the queries **must** be inserted via placeholders. **Never** insert the values of variables into the query directly.
 
-4. If the SQL query has several parts that are stored in different variables, every part **must** be wrapped in the ``db_quote`` function summon. That prevents confusion with placeholders. 
+4. If the SQL query has several parts that are stored in different variables, every part **must** be wrapped in the ``db_quote`` function summon. That prevents confusion with placeholders.
 
 5. Parts of the SQL query text **should** be inserted with the ``?p`` placeholder.
 
@@ -490,7 +502,7 @@ SQL Queries
           $query = db_quote(
               'SELECT * FROM `products`'
               . ' WHERE `products`.`status` = "A"'
-              . ' ?p', // the joins list is inserted into the query with the "?p" placeholder 
+              . ' ?p', // the joins list is inserted into the query with the "?p" placeholder
               implode(' ', $joins)
           );
 
