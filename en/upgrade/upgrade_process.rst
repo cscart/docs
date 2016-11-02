@@ -70,7 +70,7 @@ Step 2. Upgrade CS-Cart
 
 2.6. By default, the database and files of your store are backed up to the *var/backups* directory of your CS-Cart installation before the upgrade. The backup archive includes the entire database and all files, **except for images**.
 
-**Starting with version 4.3.6**, you can choose to skip the backup. This is useful if the automatic backup won't work on your server because of the PHP script timeout. 
+You can choose to skip the backup. This is useful if the automatic backup won't work on your server because of the PHP script timeout. 
 
 .. warning::
 
