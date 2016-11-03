@@ -100,29 +100,27 @@ Cart Page
 Category Images
 ---------------
 
-**Settings for thumbnail sizes:**
+**Settings:**
 
-* On a category list:
+* *Categories list thumbnail width*
 
-  * *Categories list thumbnail width*
-
-  * *Categories list thumbnail height fields*
-
-* Thumbnail on a category details page:
-
-  * *Category details page thumbnail width*
-
-  * *Category details page thumbnail height*
-
-* Detailed image on a category details page:
-
-  * *Detailed category image width*
-
-  * *Detailed category image height fields*
+* *Categories list thumbnail height fields*
 
 .. image:: img/change_image_size_07.png
     :align: center
     :alt: Category lists thumbnails on the storefront.
+
+.. note::
+
+    The settings below are no longer used in CS-Cart/Multi-Vendor core.
+
+* *Category details page thumbnail width*
+
+* *Category details page thumbnail height*
+
+* *Detailed category image width*
+
+* *Detailed category image height fields*
 
 ===========================================
 What Happens to Images When Size is Changed
@@ -138,6 +136,10 @@ Images will not be stretched if their size is smaller than the image size specif
 
 The color of the background is determined by the **Thumbnail background color** setting.
 
+.. important::
+
+    If you specify only height or only width, then the product list may look irregular.
+
 .. image:: img/change_image_size_08.png
     :align: center
-    :alt: Products list with only one size added.
+    :alt: Products list with only one size added looks irregular.
