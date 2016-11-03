@@ -17,7 +17,7 @@ To move a block to a different position inside the frame, drag-n-drop the block 
 
 .. note::
 
-	Remember that blocks must be nested inside a `child container <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/layouts/framework/index.html>`_.
+	Remember that blocks must be nested inside a :doc:`child container <../framework/index>`
 
 Adding Blocks
 =============

@@ -12,6 +12,8 @@ To disable breadcrumbs on the **Auth** and **Profiles** layout pages, do the fol
     :align: center
     :alt: Deactivate/Axtivate block
 
-The block should become lighter.
+The block should become grayed out.
 
-You can hide any other blocks in the same way.
+.. note::
+
+    You can hide any other blocks in the same way.
