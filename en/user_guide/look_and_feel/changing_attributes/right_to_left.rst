@@ -2,6 +2,10 @@
 How To: Set the Right-to-left Text Direction
 ********************************************
 
+.. warning::
+
+    This article may no longer be relevant or up to date. Please :doc:`return to the main page of the section. <index>`
+
 In some cases, for example, when you use the Arabic Language, you will need to place your text from right to left. To do it, use the **Right-to-Left** add-on.
 
 =============================

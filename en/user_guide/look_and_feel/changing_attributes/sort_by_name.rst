@@ -10,7 +10,7 @@ To get and install this add-on, follow the steps below:
 
 .. note::
 
-    If you want to check the add-on code, please, visit `the add-on page on GitHub <https://github.com/cscart/addon-subcategories-sort>`_.
+    The add-on has its own `repository on GitHub <https://github.com/cscart/addon-subcategories-sort>`_.
 
 2. Log in to the Administration panel of your store.
 

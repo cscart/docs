@@ -2,6 +2,10 @@
 Block Templates
 ***************
 
+.. warning::
+
+    This article may no longer be relevant or up to date. Please :doc:`return to the main page of the section. <index>`
+
 The following templates are used in blocks.
 
 .. _auth_information:

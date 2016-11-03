@@ -52,7 +52,7 @@ The language of the interface in the Administration panel and the language of ed
 
   2. Click on the name of the language in the **Language** field at the top left corner of the object area.
 
-3. Choose the desired language.
+  3. Choose the desired language.
 
 .. image:: img/interface_and_entries_languages.png
     :align: center

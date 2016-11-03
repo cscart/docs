@@ -2,6 +2,10 @@
 Block Filling Types
 *******************
 
+.. warning::
+
+    This article may no longer be relevant or up to date. Please :doc:`return to the main page of the section. <index>`
+
 Block filling type is defined under the **Content** tab of the block properties form.
 
 .. _all:

@@ -2,6 +2,10 @@
 Block Types and Properties
 **************************
 
+.. warning::
+
+    This article may no longer be relevant or up to date. Please :doc:`return to the main page of the section. <index>`
+
 When you create a block, you need to choose a block type and also specify the block properties. The block type defines the type of information that the block contains. Block properties enable you to fine-tune the block to meet your specific requirements. The set of available properties may vary depending on the block type.
 After a block has been created, you can edit its properties at any time.
 

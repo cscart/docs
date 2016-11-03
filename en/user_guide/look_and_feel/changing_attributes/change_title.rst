@@ -2,6 +2,10 @@
 How To: Change the Page Title
 *****************************
 
+.. warning::
+
+    This article may no longer be relevant or up to date. Please :doc:`return to the main page of the section. <index>`
+
 To change the standard page title:
 
 1.   In the Administration panel, go to **Design → Layouts**.
