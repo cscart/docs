@@ -16,7 +16,7 @@ To resolve the problem, open the *design/themes/[CUSTOMERY_ACTIVE_THEME]/templat
 
    Always replace **[CUSTOMER_ACTIVE_THEME]** with the name of the folder with the active theme of your storefront, for example, **responsive**.
 
-* If the **index.tpl** file exists in this directory, check the `permissions <../../../install/useful_info/permissions.html>`_ for this file. The file should have the **644** permissions; if it doesn't, change the permissions accordingly.
+* If the **index.tpl** file exists in this directory, check the :doc:`permissions <../../../install/useful_info/permissions>` for this file. The file should have the **644** permissions; if it doesn't, change the permissions accordingly.
 
 * If the **index.tpl** file is missing, copy it to this directory from the *var/themes_repository/[CUSTOMER_ACTIVE_THEME]/templates* directory of your CS-Cart installation.
 

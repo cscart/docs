@@ -2,6 +2,10 @@
 Layout Structure
 ****************
 
+.. warning::
+
+    This article may no longer be relevant or up to date. Please :doc:`return to the main page of the section. <index>`
+
 A layout is the combination of blocks and the method of their arrangement.
 
 In the **Design → Layouts** section you can add a new layout with the **+** button or edit the existing one.

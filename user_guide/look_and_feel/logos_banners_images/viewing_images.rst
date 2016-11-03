@@ -8,7 +8,7 @@ In order to upload the thumbnails manually:
 
 1.   In the Administration panel, go to **Products → Products**.
 2.   Select the product, for which you want to add a thumbnail and click on its name.
-3.   In the **General** tab next to the image of the product click the **upload them manually** link.
+3.   In the **General** section next to the image of the product click the **upload them manually** link.
 
 .. image:: img/thumbnails_01.png
     :align: center
@@ -16,13 +16,15 @@ In order to upload the thumbnails manually:
 
 4.   Upload a file for the **Thumbnail** in the opened form.
 
-The image can be either uploaded from a local computer or the server file system, or linked to a remote location where the required image is physically located. An alternative text describes the image and is shown when the image is missing or cannot be displayed. It is good practice to have an alternative text associated with the image as an additional SEO-wise opportunity.
+The image can be either uploaded from a local computer or the server file system, or linked to a remote location where the required image is physically located. 
+
+5. If necessary, enter the alternative text under the icon. It appears instead of the image when it isn't available. Providing alternative texts for images is good for SEO.
 
 .. image:: img/thumbnails_02.png
     :align: center
     :alt: Upload a file
 
-5.   Click the **Save** button.
+6.   Click the **Save** button.
 
 To learn how to change the thumbnail size and appearance settings, please, refer to :doc:`the How To: Change the Image Size on the Storefront <../changing_attributes/change_image_size>` article.
 

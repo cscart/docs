@@ -2,6 +2,10 @@
 How To: Add a New Block to the Storefront
 *****************************************
 
+.. warning::
+
+    This article may no longer be relevant or up to date. Please :doc:`return to the main page of the section. <index>`
+
 To create a new block:
 
 *   In the Administration panel, go to **Design → Layouts**.

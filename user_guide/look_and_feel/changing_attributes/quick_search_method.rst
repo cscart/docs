@@ -2,9 +2,9 @@
 How To: Configure Quick Search to Look for All the Specified Words
 ******************************************************************
 
-.. note::
+.. warning::
 
-    **Tutorial Difficulty: 2 / 3**
+    This article may no longer be relevant or up to date. Please :doc:`return to the main page of the section. <index>`
 
 By default, the quick search looks for the exact phrase. To make quick search look for all of the words you specify in the search box, complete the following steps:
 

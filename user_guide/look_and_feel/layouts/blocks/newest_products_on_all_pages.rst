@@ -2,6 +2,10 @@
 How To: Display the Newest Products on All Pages
 ************************************************
 
+.. warning::
+
+    This article may no longer be relevant or up to date. Please :doc:`return to the main page of the section. <index>`
+
 To display the section of the newest products on all pages:
 
 *   In the Administration panel, go to **Design → Layouts → Default**.
