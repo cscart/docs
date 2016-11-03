@@ -29,14 +29,28 @@
  *
  * Special files:
  *     conf.py   - Sphinx configuration file. Only directories containing this file will be built.
- *     .hostinfo - Deployment information file. It contains SSH connection details in the form of `hostname[:port]`.
+ *     .hostinfo - Deployment information file. It contains SSH connection and deployment details in the form of
+ *                     hostname[:port]
+ *                     [deployment directory]
+ *                 When no `port` is specified, 22 will be used.
+ *                 When no `deployment directory` is specified, /var/www/html/hostname will be used.
  *                 E.g.:
- *                     1. Content of /en/.hostinfo is `docs.example.com:35022`
+ *                     1. Content of /en/.hostinfo is
+ *                            docs.example.com:35022
  *                        Documents from /en/ directory will be uploaded to docs.example.com,
- *                        port 35022 will be used to connect via SSH.
- *                     2. Content of /de/.hostinfo is `docs.example.de`
+ *                        port 35022 will be used to connect via SSH,
+ *                        documents will be deployed to /var/www/html/docs.example.com.
+ *                     2. Content of /de/.hostinfo is
+ *                            docs.example.de
  *                        Documents from /de/ directory will be uploaded to docs.example.de,
- *                        port 22 will be used to connect via SSH.
+ *                        port 22 will be used to connect via SSH,
+ *                        documents will be deployed to /var/www/html/docs.example.de.
+ *                     3. Content of /no/.hostinfo is 
+ *                            docs.example.no
+ *                            /var/www/html/example.no/documents
+ *                        Documents from /no/ directory will be uploaded to docs.example.no,
+ *                        port 22 will be used to connect via SSH,
+ *                        documents will be deployed to /var/www/html/example.no/documents.
  *
  *                 Credentials have to be configured in Jenkins to deploy documents to the host:
  *                     -- SSH Agent Plugin (http://wiki.jenkins-ci.org/display/JENKINS/SSH+Agent+Plugin) has to be installed.
@@ -135,7 +149,6 @@ def getBuildLanguageClosure(language, workspaceDir, branchName) {
         node {
             def buildDir       = "_build/${language.langCode}/${branchName}"
             def artifactName   = "${language.langCode}-${branchName}.tgz"
-            def deployDir      = '/var/www/html'
             def authIdentifier = 'deploy-docs'
 
             dir("${workspaceDir}/${language.srcDir}") {
@@ -154,7 +167,7 @@ def getBuildLanguageClosure(language, workspaceDir, branchName) {
                 if (fileExists('.hostinfo')) {
                     def hostInfo = getHostInfo('.hostinfo')
 
-                    deployArtifactToHost(artifactName, hostInfo, deployDir, authIdentifier)
+                    deployArtifactToHost(artifactName, hostInfo, authIdentifier)
                 }
 
                 // delete directory where docs were built
@@ -167,22 +180,29 @@ def getBuildLanguageClosure(language, workspaceDir, branchName) {
 }
 
 /**
- * Provides a host connection information.
+ * Provides a host connection and deployment information.
  *
  * @param String infoFile File with host information
  *
- * @return Map Hostname and port
+ * @return Map Hostname, port, deploy directory
  */
 def getHostInfo(infoFile) {
 
-    def tmp = readFile(infoFile).trim().split(':')
+    def hostAndDir = readFile(infoFile).trim().split("[\\r\\n]+")
+    def hostAndPort = hostAndDir[0].trim().split(':')
+    
     def hostInfo = [
-        name: tmp[0],
-        port: 22
+        name: hostAndPort[0],
+        port: 22,
+        dir: "/var/www/html/${hostAndPort[0]}"
     ]
 
-    if (tmp.size() > 1) {
-        hostInfo.port = tmp[1]
+    if (hostAndDir.size() > 1) {
+        hostInfo.dir = hostAndDir[1]
+    }
+
+    if (hostAndPort.size() > 1) {
+        hostInfo.port = hostAndPort[1]
     }
 
     return hostInfo
@@ -192,16 +212,13 @@ def getHostInfo(infoFile) {
  * Uploads and unpacks artifact to the remote host.
  *
  * @param String artifactName   Archive with an artifact
- * @param Map    hostInfo       Host connection information
- * @param String deployDir      Directory on remote host to deploy to
+ * @param Map    hostInfo       Host connection and deployment information
  * @param String authIdentifier Auth credentials for remote host specified in ssh-agent plugin
  */
-def deployArtifactToHost(artifactName, hostInfo, deployDir, authIdentifier) {
+def deployArtifactToHost(artifactName, hostInfo, authIdentifier) {
 
     def tmpDir = '/tmp'
     def ssh = "ssh ${hostInfo.name} -p ${hostInfo.port}"
-    
-    deployDir = "${deployDir}/${hostInfo.name}"
     
     sshagent(credentials: [authIdentifier]) {
 
@@ -209,10 +226,10 @@ def deployArtifactToHost(artifactName, hostInfo, deployDir, authIdentifier) {
             script: "scp -P ${hostInfo.port} ${artifactName} ${hostInfo.name}:${tmpDir}"
         )
         sh(
-            script: "${ssh} mkdir -p ${deployDir}"
+            script: "${ssh} mkdir -p ${hostInfo.dir}"
         )
         sh(
-            script: "${ssh} tar --strip-components 2 -xzf ${tmpDir}/${artifactName} -C ${deployDir}"
+            script: "${ssh} tar --strip-components 2 -xzf ${tmpDir}/${artifactName} -C ${hostInfo.dir}"
         )
         sh(
             script: "${ssh} rm ${tmpDir}/${artifactName}"
