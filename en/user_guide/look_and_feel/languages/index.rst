@@ -58,8 +58,9 @@ The language of the interface in the Administration panel and the language of ed
     :align: center
     :alt: Interface and entries languages
 
+===============
 In this section
-***************
+===============
 
 .. toctree::
     :maxdepth: 4
