@@ -2,6 +2,10 @@
 How To: Manage Menu Items
 *************************
 
+.. warning::
+
+    Эта страница уже неактуальна. Пожалуйста, :doc:`вернитесь на главную страницу раздела. <index>`
+
 To manage the content of the menu:
 
 *	In the Administration panel, go to **Design → Menus** and click the **gear** button of the desired menu.

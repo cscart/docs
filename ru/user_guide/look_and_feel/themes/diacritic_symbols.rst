@@ -2,6 +2,10 @@
 Problems with Displaying Diacritic Symbols when Using Some Fonts
 ****************************************************************
 
+.. warning::
+
+    Эта страница уже неактуальна. Пожалуйста, :doc:`вернитесь на главную страницу раздела. <index>`
+
 When customising a store in the Visual Editor, you can choose different fonts to be used on the storefront. If a language with diacritic symbols is used in your store, you may experience problems with displaying such symbols when using some fonts. If so, try to do the following:
 
 *   Go to `Google Fonts <https://www.google.com/fonts/>`_ and choose the desired font. Open Sans, for example.

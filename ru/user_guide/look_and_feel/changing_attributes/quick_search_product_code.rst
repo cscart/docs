@@ -2,9 +2,9 @@
 How To: Configure Quick Search to Search by Product Code
 ********************************************************
 
-.. note::
+.. warning::
 
-   **Tutorial Difficulty: 2 / 3**
+    Эта страница уже неактуальна. Пожалуйста, :doc:`вернитесь на главную страницу раздела. <index>`
 
 By default, the quick search feature searches by product name and description. To make quick search look for the product code you specify in the search box, complete the following steps:
 

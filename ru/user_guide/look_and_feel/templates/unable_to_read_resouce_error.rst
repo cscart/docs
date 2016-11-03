@@ -8,17 +8,17 @@
 
     Smarty Error: Unable to Read Resource: index.tpl in /.../lib/templater/Smarty.class.php on Line 1095
 
-может быть вызвана тем, что файл **index.tpl** отсутствует или имеет неправильные права доступа.
+может быть вызвана тем, что файл **index.tpl** отсутствует, или на него заданы неправильные права.
 
-Чтобы решить проблему, откройте директорию *design/themes/[CUSTOMER_ACTIVE_THEME]/templates*, расположенную в вашей установке CS-Cart.
+Чтобы решить проблему, откройте директорию *design/themes/[CUSTOMER_ACTIVE_THEME]/templates*, расположенную в папке с установленным CS-Cart.
 
 .. hint::
 
    Всегда заменяйте **[CUSTOMER_ACTIVE_THEME]** на название папки с выбранной темой магазина, например, на папку **responsive**. **Responsive** является темой по умолчанию в CS-Cart и Multi-Vendor.
 
-* Если файл **index.tpl** есть в этой директории, проверьте и измените (при необходимости) `права доступа <../../../install/useful_info/permissions.html>`_ к нему. Права доступа к файлу должны быть 644.
+* Если файл **index.tpl** есть в этой директории, проверьте и измените (при необходимости) :doc:`права доступа <../../../install/useful_info/permissions>` к нему. Права доступа к файлу должны быть 644.
 
-* Если файла **index.tpl** нет в указанной директории, скопируйте его в эту директорию из директории *var/themes_repository/[CUSTOMER_ACTIVE_THEME]/templates*, расположенной в вашей установке CS-Cart.
+* Если файла **index.tpl** нет в указанной директории, скопируйте его в эту директорию из директории *var/themes_repository/[CUSTOMER_ACTIVE_THEME]/templates*, расположенной в папке с установленным CS-Cart.
 
   * Если файл **index.tpl** в директории *var/themes_repository/[CUSTOMER_ACTIVE_THEME]/templates* отсутствует, это может означать, что дистрибутив установки CS-Cart был неполным. Пожалуйста, скачайте ту же самую версию CS-Cart и воспользуйтесь файлом оттуда.
 

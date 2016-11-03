@@ -2,6 +2,10 @@
 How To: Sort Additional Images in the Order They Are Uploaded
 *************************************************************
 
+.. warning::
+
+    Эта страница уже неактуальна. Пожалуйста, :doc:`вернитесь на главную страницу раздела. <index>`
+
 To sort the additional images in the order they are uploaded, complete the following steps:
 
 1. Go to the *app/functions* directory of your CS-Cart installation.

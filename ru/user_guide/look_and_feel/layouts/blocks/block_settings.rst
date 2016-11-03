@@ -2,6 +2,10 @@
 Block Settings
 **************
 
+.. warning::
+
+    Эта страница уже неактуальна. Пожалуйста, :doc:`вернитесь на главную страницу раздела. <index>`
+
 Blocks can have the following specific settings:
 
 .. _display_bottom_buttons:

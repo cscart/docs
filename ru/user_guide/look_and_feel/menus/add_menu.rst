@@ -2,6 +2,10 @@
 How To: Add a New Menu to the Storefront
 ****************************************
 
+.. warning::
+
+    Эта страница уже неактуальна. Пожалуйста, :doc:`вернитесь на главную страницу раздела. <index>`
+
 *   In the Administration panel, go to **Design → Menus**.
 *   Click the **+** button to add a menu.
 *   In the appeared window, specify the **Name** of the menu (e.g. *New menu*).
