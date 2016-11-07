@@ -2,9 +2,9 @@
 Way 2. Softaculous is not Installed on Your Server
 **************************************************
 
-.. note::
+.. warning::
 
-    **Tutorial Difficulty: 2 / 3**
+    CS-Cart is no longer available on Softaculous. Please :doc:`return to the main page of the section. <index>`
 
 Step 1. Register at Softaculous Forums
 ======================================
