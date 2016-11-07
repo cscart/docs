@@ -74,7 +74,7 @@ You can choose to skip the backup. This is useful if the automatic backup won't 
 
 .. warning::
 
-    If you skip the backup, make sure to **back up your the database and files manually** before the upgrade. Otherwise you may lose your data if something goes wrong.
+    If you skip the backup, make sure to **back up your database and files manually** before the upgrade. Otherwise you may lose your data if something goes wrong.
 
 To skip the backup:
 
