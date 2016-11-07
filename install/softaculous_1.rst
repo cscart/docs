@@ -2,8 +2,9 @@
 Way 1. Softaculous is Installed on Your Server
 **********************************************
 
-.. note::
-    **Tutorial Difficulty: 1 / 3**
+.. warning::
+
+    CS-Cart is no longer available on Softaculous. Please :doc:`return to the main page of the section. <index>`
 
 1. Log into your control panel and find Softaculous in the list of software. For example, in cPanel go to **Software → Softaculous Apps Installer**.
 
