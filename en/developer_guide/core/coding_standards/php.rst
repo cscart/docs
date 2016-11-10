@@ -160,15 +160,15 @@ PHPDoc
 
 6. A group of consecutive ``@param`` tags **must** have blank lines around it.
 
-7. There **must not** be more than one consecutive blank lines.
+7. There **must not** be more than one consecutive blank line.
 
 8. A long string of comments or parameters **must** be wrapped and aligned.
 
-9. The ``@throws`` and ``@author`` tags is **must not** be used.
+9. The ``@throws`` and ``@author`` tags **must not** be used.
 
-10. Function and method deprecation **must** be performed using the ``@deprecated`` tag. Deprecation starting version **must be** specified.
+10. You **must** use the ``@deprecated`` tag for function and method deprecation. The version since when a function or method is deprecated **must be** specified.
 
-11. An array containing instances of a single class **must** be typehinted using the collection syntax: ``Class[]``.
+11. An array containing instances of a single class **must** be type hinted using the collection syntax: ``Class[]``.
 
 12. Here’s the example of formatting done right:
 
