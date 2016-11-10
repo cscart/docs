@@ -160,7 +160,7 @@ PHPDoc
 
 6. A group of consecutive ``@param`` tags **must** have blank lines around it.
 
-7. There **must not** be more than one consecutive blank lines.
+7. There **must not** be more than one consecutive blank line.
 
 8. A long string of comments or parameters **must** be wrapped and aligned.
 
