@@ -2,10 +2,6 @@
 How To: Export/Revise Products on eBay
 **************************************
 
-.. note::
-
-    **Tutorial Difficulty: 1 / 3**
-
 Once you :doc:`create an eBay template <ebay_templates>` and :doc:`specify product settings <ebay_products>`, you can export your products to eBay.
 
 If you export your products to eBay and later edit them in CS-Cart, those changes won't show up on eBay until you revise those products. The procedure for exporting and revising products is the same.
@@ -26,7 +22,7 @@ Way 1. Exporting and Revising Specific Products
 
 .. hint::
 
-    **In CS-Cart 4.3.5** or after installing the eBay Synchronization add-on upgrade package for **CS-Cart 4.3.4**, you can find the products with an assigned eBay template under **Marketing → eBay → eBay products**.
+    You can find the products with an assigned eBay template under **Marketing → eBay → eBay products**.
 
 .. image:: img/export/export_product_to_ebay.png
     :align: center
@@ -39,10 +35,6 @@ Way 1. Exporting and Revising Specific Products
 ===================================================
 Way 2. Exporting and Revising Entire eBay Templates
 ===================================================
-
-.. important::
-
-    This way is available only in **CS-Cart 4.3.5** or in the eBay Synchronization add-on upgrade package for **CS-Cart 4.3.4**.
 
 1. In the administration panel go to **Marketing → eBay → eBay templates**.
 

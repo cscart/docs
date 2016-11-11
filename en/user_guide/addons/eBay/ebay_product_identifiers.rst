@@ -2,12 +2,6 @@
 How To: Specify Product Identifiers for eBay
 ********************************************
 
-.. note::
-
-    **Tutorial Difficulty: 1 / 3**
-
-    The eBay Synchronization add-on didn't support product identifiers until CS-Cart & Multi-Vendor 4.3.7. This article doesn't apply to earlier versions.
-
 Items can't be listed `in certain categories <http://pages.ebay.com/sell/item_specifics/product_identifiers.html>`_ on eBay, unless you specify product identifiers, such as Brand, UPC, EAN, ISBN, or MPN. For more information, check the dedicated `eBay FAQ <http://pages.ebay.com/sellerinformation/news/springupdate2015/product-identifiers.html>`_.
 
 .. image:: img/identifiers/product_features.png
@@ -34,11 +28,13 @@ You can use :doc:`features <../../manage_products/features/index>` as product id
 
 To specify eBay product identifiers for a product, follow these steps:
 
-1. Go to **Products → Products** and click the name of the desired product. 
+1. Go to **Products → Products**. 
 
-2. Switch to the **Features** tab.
+2. Click the name of the desired product. 
 
-3. Fill in the fields of the features you'd like to use as product identifiers.
+3. Switch to the **Features** tab.
+
+4. Fill in the fields of the features you'd like to use as product identifiers.
 
 .. note:: 
 
@@ -50,7 +46,7 @@ You can also use the **CODE** field of the product, if it corresponds to one of 
     :align: center
     :alt: You can use the CODE of the product as one of the product identifiers for eBay.
 
-4. Click **Save**.
+5. Click **Save**.
 
 .. hint::
 
@@ -66,13 +62,15 @@ For Product Option Combinations
 
 Option combinations support only one field for product identifiers. That field is **CODE**. It can serve as either UPC, EAN, or ISBN of the option combination:
 
-1. Go to **Products → Products** and click the name of the desired product.
+1. Go to **Products → Products**.
 
-2. Switch to the **Options** tab and click **Option combinations**.
+2. Click the name of the desired product.
 
-3. Edit the **CODE** field of the combinations.
+3. Switch to the **Options** tab and click **Option combinations**.
 
-4. Click **Save**.
+4. Edit the **CODE** field of the combinations.
+
+6. Click **Save**.
 
 .. note::
 

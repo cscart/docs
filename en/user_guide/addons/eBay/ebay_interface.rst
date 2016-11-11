@@ -21,8 +21,3 @@ But that’s not all! You’ll see a new **eBay** tab under **Products → Produ
     :alt: The new eBay tab for products and categories.
 
 A new eBay column under **Products → Products** shows a product’s current eBay template and status.
-
-.. important::
-
-     The **eBay tab for categories**, the **eBay column** on the product list, the **eBay logs** and **eBay products** menu itmes only appeared since **CS-Cart 4.3.5** and in the eBay Synchronization add-on upgrade package for **Cart 4.3.4**. 
-

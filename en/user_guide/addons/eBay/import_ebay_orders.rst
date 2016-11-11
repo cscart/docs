@@ -2,15 +2,11 @@
 How To: Import Complete Orders from eBay
 ****************************************
 
-.. note::
+1. In the administration panel go to **Orders → View orders**.
 
-    **Tutorial Difficulty: 1 / 3**
+2. Click the **gear button** in the right upper corner of the page.
 
-1. In the administration panel go to **Orders → View orders**
-
-2. Click the **gear button** in the right upper corner of the page 
-
-3. Choose **Get eBay orders** to import orders from eBay to your store
+3. Choose **Get eBay orders** to import orders from eBay to your store.
 
 .. image:: img/import_orders/import_orders_from_ebay.png
     :align: center

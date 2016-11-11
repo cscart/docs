@@ -4,31 +4,21 @@ How To: Install and Configure eBay Synchronization Add-On
 
 .. note::
 
-    **Tutorial Difficulty: 2 / 3**
-			
-Install and configure the **eBay synchronization** add-on in 3 steps.
+    You'll need an account at the `eBay Developers Program website <https://developer.ebay.com/>`_.
 
 ===========================================
 Step 1. Install eBay Synchronization Add-On
 ===========================================
 
-1.1. In the CS-Cart administration panel go to **Add-ons → Manage Add-ons**.
+1.1. Open the CS-Cart/Multi-Vendor Administration panel.
 
-1.2. Switch to the **Browse all available add-ons tab**, find the **eBay synchronization** add-on in the list, and click the **Install** button.
+1.2. Go to **Add-ons → Manage Add-ons**.
 
-1.3. Go back to the **Installed add-ons** tab. Find and click on **eBay synchronization** add-on to see the settings.
+1.3. Switch to the **Browse all available add-ons tab**, find the **eBay synchronization** add-on in the list, and click the **Install** button.
 
-1.4. Switch to the **License info** tab in the add-on settings and type your eBay add-on license number in the **eBay add-on license number** field.
+1.4. Go back to the **Installed add-ons** tab. 
 
-.. image:: img/install/license_number.png
-    :align: center
-    :alt: Enter the license number of eBay synchronization add-on.
-
-.. note::
-
-    You can purchase an eBay add-on license on the `eBay Synchronization page <http://www.cs-cart.com/ebay-synchronization.html>`_.
-
-1.5. Click the **Save** button.
+1.5. Set the status of the **eBay Synchronization** add-on to *Active*.
 
 ==================================
 Step 2. Get the Authorization Keys
@@ -46,8 +36,8 @@ To properly configure the **eBay synchronization** add-on, get the authorization
 
 2.3. On the **My Account** page, find the **Application Keys** block. Generate two key sets:
 
-*  **Sandbox Keys**—keys for the test API requests
-*  **Production Keys**—keys for real API requests (for the live store)
+     * **Sandbox Keys**—keys for the test API requests.
+     * **Production Keys**—keys for real API requests (for the live store).
 
 .. hint::
 
@@ -61,7 +51,7 @@ The application keys are unique identifiers that tell eBay which developer and a
     :align: center
     :alt: Generate the eBay Sandbox and Production keys at the eBay My Account page.
 
-2.5. Return to the eBay synchronization settings in your store’s admin panel. Go to **Add-ons → Manage Add-ons**, switch to the **Installed add-ons** tab, and click on the **eBay synchronization** add-on.
+2.5. Return to CS-Cart/Multi-Vendor Administration panel. Go to **Add-ons → Manage Add-ons**, switch to the **Installed add-ons** tab, and click on the **eBay synchronization** add-on.
 
 2.6. Enter the **eBay DevID**, **eBay AppID**, and **eBay CertID** from Step 2.4. into the corresponding fields.
 
@@ -97,7 +87,7 @@ Step 3. Generate a User Token
 
 3.6. Copy the code displayed in the **Token** field to clipboard.
 
-3.7. Return to the eBay synchronization settings in your store’s admin panel. Go to **Add-ons → Manage Add-ons**, switch to the **Installed add-ons** tab, and click on the **eBay synchronization** add-on.
+3.7. Return to the eBay synchronization settings in your store’s Administration panel.
 
 3.8. Paste your token from the clipboard to the **eBay User Token** field.
 
