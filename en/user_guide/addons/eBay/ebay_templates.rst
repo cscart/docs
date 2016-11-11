@@ -16,9 +16,9 @@ To create and configure a template, complete the following steps:
 
 3. Fill in the fields in the **General** tab:
 
-.. image:: img/templates/general_settings.png
-    :align: center
-    :alt: Configure the general settings of your eBay template on the General tab.
+   .. image:: img/templates/general_settings.png
+       :align: center
+       :alt: Configure the general settings of your eBay template on the General tab.
 
    * Name your template.
 
