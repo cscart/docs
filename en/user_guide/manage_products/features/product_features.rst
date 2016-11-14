@@ -2,10 +2,6 @@
 How To: Set up Product Features
 *******************************
 
-.. note::
-
-    **Tutorial Difficulty: 1 / 3**
-
 Product features are various traits and properties of the product. You can use features in :doc:`product filters <../filters/index>` to allow customers to find products with specific parameters.
 
    .. image:: img/feature_on_the_storefront.png
@@ -138,6 +134,11 @@ Feature groups allow you to keep your features organized and to assign categorie
     
 5. Click the **Create** button.
 
+The new feature group will appear under **Products → Features**, if you switch to **Feature groups** using the menu on the right.
+
+.. image:: img/feature_group_list.png
+    :align: center
+    :alt: Go to Products → Features and use the menu on the right to view feature groups.
 
 ================================
 Specify Features of the Products
