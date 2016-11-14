@@ -57,3 +57,5 @@ In the **View orders** section, you can do the following:
 * Create orders.
 
 * Delete existing orders.
+
+* Copy orders.
