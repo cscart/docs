@@ -287,8 +287,9 @@ body {
 }
 
 .sidebar-tabs li a{
-    padding: 8px 20px;
-    floaT: left;
+    padding: 8px 15px;
+    float: left;
+    font-size: 15px;
     color: #333;
     font-weight: 100;
 }
