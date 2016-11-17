@@ -4,7 +4,7 @@ Email Templates & Document Editor
 
 .. note::
 
-    This functionality will be available starting with CS-Cart/Multi-Vendor 4.4.1.
+    This functionality is available starting with CS-Cart/Multi-Vendor 4.4.1.
 
 .. toctree::
     :maxdepth: 2

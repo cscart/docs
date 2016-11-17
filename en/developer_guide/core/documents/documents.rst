@@ -4,7 +4,7 @@ Documents
 
 .. note::
 
-    This functionality will be available starting with CS-Cart/Multi-Vendor 4.4.1.
+    This functionality is available starting with CS-Cart/Multi-Vendor 4.4.1.
 
 A document is a set of data that serves to confirm a fact. Here are some examples of documents: *an order invoice*, *a packing slip*, *a gift certificate*, *etc*. You can edit the templates of such documents in **the Administration panel** by using **the visual editor**. The document template is html layout with the parts of dynamic data such as variables and snippets. **The Twig template engine** is used to render the documents. You can use all the features provided by this library.
 
@@ -12,31 +12,26 @@ A document is a set of data that serves to confirm a fact. Here are some example
 Types of Documents
 ==================
 
-For the purposes of logical separation all documents are divided into types. All available types are described in the ``documents/types`` schema (*app/schemas/documents/types.php*). Each type is a separate class that implements the ``\Tygh\Template\Document\IType`` interface. 
-To speed up the process of adding new types, there is a base abstract class called ``\Tygh\Template\Document\AType``. This class implements the logic that is similar for the most types.
+For the purposes of logical separation all documents are divided into types. All available document types are described in the ``documents/types`` schema (*app/schemas/documents/types.php*). 
 
-The example of the schema that describes the *invoice* document type:
+Each type is a separate class that implements the ``\Tygh\Template\Document\IType`` interface and must be registered in the ``Tygh::$app`` container in the following format::
 
-::
+  Tygh::$app['template.document.[type].type']
 
-  return array(
-      'invoice' => array(
-          'class' => '\Tygh\Template\Document\Invoice\Type',
-          'arguments' => array('@template.snippet.repository', '@db', '@template.document.invoice.renderer', '@template.variable_meta_data_collection_factory')
-      )
-  );
+``[type]`` is the type identifier, for example, **order**.
 
-* **'invoice'**—the character id of the document type.
+To extend functionality, each type can implement the following interfaces:
 
-* **'сlass'**—the full name of the class that is responsible for the document type.
+* ``\Tygh\Template\Document\IPreviewableType``–allows you to use preview when editing a document.
 
-* **'arguments'**—the description of the class constructor arguments. Each type can have its own dependencies. The placeholders that begin with "@" can be used as values; in this case the value for the argument will be received from the container ``Tygh::$app``.
+* ``\Tygh\Template\Document\IIncludableType``–allows you to include documents of this type into email notifications via ``include_doc``. 
 
-The structure of the document context is always the same for the documents of the same type.
+The structure of the context is meant to be the same for the documents of the same type.
 
 Currently the following document types are implemented:
 
-* **Invoice**
+* **Order invoice**
+* **Order summary**
 * **Packing slip**
 * **RMA::Packing slip** 
 * **Gift certificates::Gift certificate**
@@ -46,7 +41,7 @@ Currently the following document types are implemented:
 Context
 =======
 
-**Context** is the system state and the environment data at the time when the document is formed. For example, the context for the invoice document is the order. The context structure must be known for each document type. That allows you to add your own variables that will use the context as a base. 
+**Context** is the system state and the environment data at the time when the document is formed. For example, the context for the **order** document is the order. The context structure must be known for each document type. That allows you to add your own variables that will use the context as a base. 
  
 At the software level the context is a class that implements the ``\Tygh\Template\IContext`` interface. Its first responsibility is to report the output language and the type of the available snippets.
 
@@ -54,7 +49,7 @@ At the software level the context is a class that implements the ``\Tygh\Templat
 Variables
 =========
 
-**Variables** are the dynamic part of the templates. Through variables a template can access the context and other data. Each type of documents has its own variables. All variables available for the type must be described in the ``documents/[type]`` schema (*app/schemas/documents/[type].php*), where ``[type]`` is the type of the document. For example, for the *invoice* type the schema is ``documents/invoice``. Each variable is a separate class implementing the ``\Tygh\Template\IVariable`` interface.
+**Variables** are the dynamic part of the templates. Through variables a template can access the context and other data. Each type of documents has its own variables. All variables available for the type must be described in the ``documents/[type]`` schema (*app/schemas/documents/[type].php*), where ``[type]`` is the type of the document. For example, for the **order** type the schema is ``documents/order``. Each variable is a separate class implementing the ``\Tygh\Template\IVariable`` interface.
 
 Here’s the example of describing a variable in a schema:
 
@@ -101,7 +96,25 @@ If this parameter is omitted, then reflection will be used to get the attributes
 
 Besides the main parameters, you can describe other parameters in the scheme. They will be available through ``'#config'``.
 
-The lazy initialization of the variables is also implemented. This initialization creates the copy of the variable during the first variable access. This copy is created once and for all so there is no need for the developer to care about it. The proxy class ``\Tygh\Template\VariableProxy`` is responsible for the implementation of this behavior.
+If a variable has complex structure and it's not rational to use a schema to describe it, the class of the variable may implement the ``\Tygh\Template\IActiveVariable`` interface, that imposes the implementation of the only method - ``attributes()``. That way a variable that is in fact a separate class can describe its own attributes.
+
+To make adding variables easier, a special ``\Tygh\Template\Document\Variables\GenericVariable`` class was implemented. This class can be fully configured from the schema, so there's no need to create a separate class for each variable. Here's the example of a variable like this::
+
+  'payment' => array(
+      'class' => '\Tygh\Template\Document\Variables\GenericVariable',
+      'alias' => 'p',
+      'data' => function (\Tygh\Template\Document\Order\Context $context) {
+          //...
+          return $payment;
+      },
+      'attributes' => array(
+          'payment_id', 'payment', 'description', 'payment_category', 'surcharge_title', 'instructions'
+      )
+  ),
+
+``'data'`` is either an array of data, or an anonymous function that provides an array of data as a result.
+
+The lazy initialization of the variables was also implemented. The instance of the variable is only created once, when the variable is accessed for the first time. That way a developer doesn't have to do it manually. The ``\Tygh\Template\VariableProxy`` proxy class implements this behavior.
 
 ==============
 Data Structure
@@ -131,6 +144,9 @@ The templates of the documents are saved at the ``cscart_template_documents`` ta
     *   - code
         - varchar(128)
 	- Character identifier of the document
+    *   - addon
+        - varchar(32)
+	- Identifier of the add-on to which the template belongs
     *   - updated  
         - int  
 	- UNIX timestamp of the update
@@ -146,9 +162,11 @@ To manage and manipulate the document templates the following classes are implem
 
 * ``\Tygh\Template\Document\Document``—the model of the document template. It is the program representation of the template structure in the database.
 
-* ``\Tygh\Template\Document\Repository``—the repository class. It implements the low-level methods of adding/updating/deleting/selecting templates from the database. Class instance is available from the Tygh::$app[‘template.document.repository’] container.
+* ``\Tygh\Template\Document\Repository``—the repository class. It implements the low-level methods of adding/updating/deleting/selecting templates from the database. Class instance is available from the Tygh::$app['template.document.repository'] container.
 
-* ``\Tygh\Template\Document\Service``—the service class. It implements higher-level methods of template management. Class instance is available from the ``Tygh::$app[‘template.document.service’]`` container.
+* ``\Tygh\Template\Document\Service``—the service class. It implements higher-level methods of template management. Class instance is available from the ``Tygh::$app['template.document.service']`` container.
+
+* ``Tygh\Template\Document\Exim``—this class implements the logic of import and export of document templates. An instance of the class is available from the ``Tygh::$app['template.document.exim']`` container.
 
 Helper classes:
 
@@ -163,8 +181,6 @@ Helper classes:
 * ``\Tygh\Template\VariableMetaData``—the class for processing the metadata of variables.
 
 * ``\Tygh\Template\VariableCollectionFactory``—the variable collection factory. It can create the variable collection based on the variable schema. Class instance is available from the ``Tygh::$app['template.variable_collection_factory']`` container.
-
-* ``\Tygh\Template\VariableMetaDataCollectionFactory``—the collection factory of variable metadata. It can create a collection based on the variable schema. Class instance is available from the ``Tygh::$app['template.variable_meta_data_collection_factory']`` container.
 
 * ``\Tygh\Template\VariableProxy``—the proxy class that organizes the lazy initialization of variables.
 
@@ -194,13 +210,13 @@ To add your own variable, create the class of the variable that implements the `
 
 Here's the example of adding a variable that provides a barcode for the order:
 
-Add a file called: **app/addons/barcode/Barcode/Invoice/BarcodeVariable.php**.
+We have a file **app/addons/barcode/Tygh/Addons/Barcode/Documents/Order/BarcodeVariable.php**.
 
 ::
 
   <?php
 
-  namespace Barcode\Invoice;
+  namespace Tygh\Addons\Barcode\Documents\Order;
 
   use Tygh\Registry;
   use Tygh\Template\Invoice\Order\Context;
@@ -234,26 +250,33 @@ Add a file called: **app/addons/barcode/Barcode/Invoice/BarcodeVariable.php**.
       }
   }
 
-Extending the variable schema for the documents of the *invoice* type: 
+Let's extend the variable schema for the documents of the **order** type. 
 
-Adding a file called: **/app/addons/barcode/schemas/documents/invoice.post.php**.
+Add a file **/app/addons/barcode/schemas/documents/order.post.php**.
 
 ::
 
   <?php
   $schema['barcode'] = array(
-      'class' => '\Barcode\Invoice\BarcodeVariable'
+      'class' => '\Tygh\Addons\Barcode\Documents\Order\BarcodeVariable'
   );
 
   return $schema;
 
-Once you do all that, one more variable will become available when editing documents of the *invoice* type. Its name is **barcode**. The variable also has an attribute called **image**.
+Once you do all that, one more variable will become available when editing documents of the **order** type. Its name is **barcode**. The variable also has an attribute called **image**.
 
 =================================================
 Adding Snippets to the List of Available Snippets
 =================================================
 
-To add a snippet to the list of available snippets you need to add the snippet to the database for the specific type of the document. :doc:`Learn more about adding snippets here <snippets>`.
+To add a snippet to the list of available snippets you need to add the snippet to the database for the specific template of the document. In this case the snippet type will be  ``[type]_[code]``, where
+
+* ``[type]`` is document type; and
+* ``[code]`` is a sequence of characters that identifies the document template.
+
+.. hint::
+
+    :doc:`Learn more about adding snippets. <snippets>`
 
 ===================
 Extending Documents
@@ -277,11 +300,14 @@ Template hooks:
 Constraints
 ===========
 
-* **Hooks** 
+-----
+Hooks
+----- 
 
 One of the most notable constraints are the lack of hooks in the document template itself. That means that the document template can not be changed automatically (by software). This action is completely in the hands of the store administrator. **Add-ons can only extend the lists of available snippets and variables**.
 
-* **Complex logic of templates** 
+--------------------------
+Complex Logic of Templates
+-------------------------- 
 
 The visual template editor doesn’t fully support the use of branching, cycles, etc. in templates, so if you want to format the template by using the logic, you have to use snippets which lack a visual editor.
-
