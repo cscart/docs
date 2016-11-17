@@ -2,10 +2,15 @@
 Version Compatibility
 *********************
 
-
 .. toctree::
     :maxdepth: 2
     :titlesonly:
+
+    adapting_4310_to_441
+
+.. toctree::
+    :maxdepth: 2
+    :hidden:
 
     adapting_3_to_4
     adapting_415 _to_421
