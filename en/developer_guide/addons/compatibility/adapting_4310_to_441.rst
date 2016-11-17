@@ -205,7 +205,7 @@ The default language will be used to provide translations for all languages the 
 
 When no ``default_language`` is specified, there are two possible scenarios:
 
-* If the *langs* directory contains the PO file for the store's default language, it will be used as the default language.
+* If the *langs* directory contains the PO file for the default language of the store's Administration panel, it will be used as the default language.
 
 * Otherwise the first file in *langs* directory will be used to provide default translations.
 
