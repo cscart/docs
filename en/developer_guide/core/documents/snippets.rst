@@ -8,21 +8,21 @@ Snippets
 
 A snippet is a separate part of the template that can be used in multiple templates.
 
-The best examples of snippets are a header and a footer that are included in every email notification. Snippets don’t have their own context and variables. The context and variables are inherited from the template that calls the snippet.
+The best examples of snippets are a header and a footer that are included in every email notification. Snippets don’t have their own context and variables; they inherit the context and variables from the template that calls the snippet.
 
 Snippets are available both for email and document templates.
 
-The example of including the snippet into the template:
+Here's the example of including a snippet into the template:
 ``{{ snippet("header") }}``
 
-The example of including the snippet into the template with extra variables: 
+And here's the example of including a snippet with additional variables into the template: 
 ``{{ snippet("header", {"title": product.name}) }}``
 
 =================
 Types of Snippets
 =================
 
-All snippets are separated into types. This allows to restrict the access to snippets for different types of documents. For example, snippets of the ``mail`` type are available for every email notification and unavailable for documents.
+All snippets are separated into types. This allows to restrict access to snippets for different types of documents. For example, snippets of the ``mail`` type are available for all email notifications and unavailable for documents.
 
 ==============
 Data Structure
@@ -71,25 +71,25 @@ The  ``cscart_template_snippets`` table stores the general information about sni
         - int 
 	- UNIX timestamp of creation
 
-The name of the snippet is language-dependent and is stored in the separate table called ``cscart_template_snippet_descriptions`` .
+The name of the snippet is language-dependent and is stored in a separate table called ``cscart_template_snippet_descriptions`` .
 
 =====================
 Programming Interface
 =====================
 
-To manage and manipulate the snippets the following classes are implemented:
+The following classes were implemented to manage snippets:
 
 * ``\Tygh\Template\Snippet\Snippet``—the model of the snippet. It’s a programming representation of the snippet structure.
 
-* ``\Tygh\Template\Snippet\Repository``—the snippet repository. The class implements the low-level methods of receiving/adding/updating/deleting snippets from the database. Class instance is available from the ``Tygh::$app['template.snippet.repository']`` container.
+* ``\Tygh\Template\Snippet\Repository``—the snippet repository. The class implements the low-level methods of receiving/adding/updating/deleting snippets from the database. An instance of the class is available from the ``Tygh::$app['template.snippet.repository']`` container.
 
-* ``\Tygh\Template\Snippet\Service``—the service. This class implements higher-level methods of snippet management. The class instance is available from the ``Tygh::$app['template.snippet.service']`` container.
+* ``\Tygh\Template\Snippet\Service``—the service. This class implements higher-level methods of snippet management. An instance of the class is available from the ``Tygh::$app['template.snippet.service']`` container.
 
-* ``\Tygh\Template\Snippet\Exim``—this class implements the logic of import and export of snippets. The class instance is available from the ``Tygh::$app['template.snippet.exim']`` container.
+* ``\Tygh\Template\Snippet\Exim``—this class implements the logic of import and export of snippets. An instance of the class is available from the ``Tygh::$app['template.snippet.exim']`` container.
 
-===========================================
-The Forming Schema of the Snippet Rendering
-===========================================
+===================================
+The Schema of the Snippet Rendering
+===================================
 
 .. image:: img/invoice_editor_3.png
     :align: center
@@ -97,9 +97,9 @@ The Forming Schema of the Snippet Rendering
 
 1. Defining the snippet type from the template. 
 
-   Each template calling the snippet knows what snippets are available for it. On the programming level the template is a class that implements the ITemplate interface.
+   Each template, that calls a snippet, knows what snippets are available for it. On the software level, a template is a class that implements the ``ITemplate`` interface.
 
-2. Receiving the template snippet by the type and character id. The ``\Tygh\Template\Snippet\Repository`` class is used for this.
+2. Receiving the template snippet by the type and character identifier with the aid of the ``\Tygh\Template\Snippet\Repository`` class.
 
 3. Calling the ``'template_snippet_render_pre'`` pre-hook.
 
@@ -168,7 +168,7 @@ PHP Hooks
 Template Hooks
 --------------
 
-* ``{hook name="snippets:tabs_extra"}{/hook}``—it allows to add new tabs to the snippet editing popup. Located in *design/backend/templates/views/snippets/update.tpl*.
+* ``{hook name="snippets:tabs_extra"}{/hook}`` (*design/backend/templates/views/snippets/update.tpl*)—it allows to add new tabs to the snippet editing popup.
 
 ===============
 Template Engine

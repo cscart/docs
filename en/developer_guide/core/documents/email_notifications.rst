@@ -6,7 +6,17 @@ Email Notifications
 
     This functionality is available starting with CS-Cart/Multi-Vendor 4.4.1.
 
-The new CS-Cart feature allows you to edit email notifications in **the Administration panel**. We use the `Twig <http://twig.sensiolabs.org/>`_ library as a template engine: developers can take advantage of the full library functionality. For the sake of convenience all email templates are divided into **two groups**:  **Administrator notifications** and **Customer notifications**. Email notifications that are based on template files will also work perfectly, which means that backward compatibility is preserved.
+The new CS-Cart feature allows you to edit email notifications in the Administration panel. Just go to **Design → Email templates** and choose the template you want to edit. For the sake of convenience, all email templates are divided into **two groups**:
+
+* **Administrator notifications**.
+
+* **Customer notifications**. 
+
+We use `Twig <http://twig.sensiolabs.org/>`_ as the template engine: developers can take advantage of the full functionality of the library.
+
+.. note::
+
+    Backward compatibility was preserved: email notifications based on template files will also work perfectly.
 
 ==============
 Data Structure
@@ -16,6 +26,7 @@ The ``cscart_template_emails`` table is used to keep email notification template
 
 .. list-table::
     :header-rows: 1
+    :stub-columns: 1
     :widths: 10 7 20
     
     *   - Name
@@ -23,7 +34,7 @@ The ``cscart_template_emails`` table is used to keep email notification template
 	- Description
     *   - template_id  
         - int 
-	- Auto incremented template id
+	- Auto incremented ID of the template
     *   - code  
         - varchar(128) 
 	- Character identifier of the template
@@ -47,37 +58,37 @@ The ``cscart_template_emails`` table is used to keep email notification template
 	- Default template of the email body
     *   - params_schema 
         - text  
-	- Additional parameters schema for a template
+	- Schema of additional parameters of the template
     *   - params  
         - text  
-	- Additional parameters data for a template
+	- Data of additional parameters of the template
     *   - addon  
         - varchar(32)  
 	- Identifier of the add-on to which the template belongs
     *   - updated  
         - int  
-	- UNIX timestamp of the update
+	- UNIX timestamp with the update time
     *   - created 
         - int 
-	- UNIX timestamp of creation
+	- UNIX timestamp with the creation time
 
 =====================
-Programming interface
+Programming Interface
 =====================
 
-To manage and manipulate the email templates the following classes are implemented:
+The following classes were implemented to manage email templates:
 
 * ``\Tygh\Template\Mail\Template``—the template model. It’s a programming representation of the template structure in the database.
 
-* ``\Tygh\Template\Mail\Repository``—the template repository. The class implements low-level methods of receiving/adding/updating/deleting templates from the database. The class instance is available from the ``Tygh::$app['template.mail.repository']`` container.
+* ``\Tygh\Template\Mail\Repository``—the template repository. This class implements low-level methods of receiving/adding/updating/deleting templates from the database. An instance of the class is available from the ``Tygh::$app['template.mail.repository']`` container.
 
-* ``\Tygh\Template\Mail\Service``—the service class that implements higher-level methods of template management. The class instance is available from the ``Tygh::$app['template.mail.service']`` container.
+* ``\Tygh\Template\Mail\Service``—the service class that implements higher-level methods of template management. An instance of the class is available from the ``Tygh::$app['template.mail.service']`` container.
 
-* ``\Tygh\Template\Mail\Exim``—the class that implements the logic of importing and exporting email templates. The class instance is available from the Tygh::$app['template.mail.exim'] container.
+* ``\Tygh\Template\Mail\Exim``—the class that implements the logic of importing and exporting email templates. An instance of the class is available from the ``Tygh::$app['template.mail.exim']`` container.
 
-======================================
-The Email Notifications Sending Schema
-======================================
+=========================================
+The Schema of Sending Email Notifications
+=========================================
 
 .. image:: img/invoice_editor_1.png
     :align: center
@@ -89,9 +100,9 @@ The Email Notifications Sending Schema
 
 2. Calling the sender subsystem.
 
-   The static class ``\Tygh\Mailer`` was replaced by the service class ``\Tygh\Mailer\Mailer``, that is available from the ``Tygh::$app['mailer']`` container. 
+   The ``\Tygh\Mailer`` static class was replaced by the  ``\Tygh\Mailer\Mailer`` service class that is available from the ``Tygh::$app['mailer']`` container. 
 
-   When calling a message sending method, enter the character identifier of the email message. Based on that email message the body of the message is formed. For this purpose the ``template_code`` key is used. For example:
+   When calling a message sending method, specify the character identifier of the email template in the ``template_code`` key. For example:
 
    ::
 	
@@ -118,7 +129,7 @@ The Email Notifications Sending Schema
       
 5. Forming the context and variables of the message.
 
-   Based on the data received in **the step 1** we form the context and available variables of the email notification. Unlike the documents, the context and variables in the notifications are not separated. This preserves backward compatibility.
+   Based on the data received in step 1, we form the context and available variables of the email notification. Unlike the documents, the context and variables in the notifications are not separated. This preserves backward compatibility.
 
 6. Calling the template engine to render the message body.
 
@@ -126,13 +137,13 @@ The Email Notifications Sending Schema
 
 8. Calling the low-level method of the message sending. 
 
-   On this step the formed data are sent to the **PHPMailer** library that sends the messages directly to customers.
+   On this step the formed data are sent to the **PHPMailer** library that handles sending messages.
 
 ======================================
 Adding the Email Notification Template
 ======================================
 
-To add the email notification template, use the ``\Tygh\Template\Mail\Service`` service class .
+To add the email notification template, use the ``\Tygh\Template\Mail\Service`` service class.
 
 For example:
 
@@ -190,19 +201,27 @@ To make adding email notification templates easier, we implemented declarative d
 Extending Email Notifications
 =============================
 
-PHP hooks:
+---------
+PHP Hooks
+---------
 
-* **template_email_get_name**—``fn_set_hook('template_email_get_name', $this, $name)``—it's called after the name of the notification template was formatted. The hook is used to change the name.
+* ``'template_email_get_name'``—it's called after the name of the notification template was formatted. The hook is used to change the name::
 
-* **mailer_send_pre**—``fn_set_hook('mailer_send_pre', $this, $transport, $message, $area, $lang_code)``—it's called before the message is sent. This hook is used to change the content of the message.
+    fn_set_hook('template_email_get_name', $this, $name)
 
-* **mailer_send_post**—``fn_set_hook('mailer_send_post', $this, $transport, $message, $result, $area, $lang_code)``—it's called after the message was sent.
+* ``'mailer_send_pre'``—it's called before the message is sent. This hook is used to change the content of the message::
+
+    fn_set_hook('mailer_send_pre', $this, $transport, $message, $area, $lang_code)
+
+* ``'mailer_send_post'``—it's called after the message was sent::
+
+    fn_set_hook('mailer_send_post', $this, $transport, $message, $result, $area, $lang_code)
 
 ==============================
-Additional template parameters
+Additional Template Parameters
 ==============================
 
-Any email notification template may contain additional parameters that can be processed later in the ``mailer_send_pre`` hook. The schema of additional parameters is contained in the ``params_schema`` field and has the following structure:
+Any email notification template may contain additional parameters that can be processed later in the ``mailer_send_pre`` hook. The schema of additional parameters is stored in the ``params_schema`` field and has the following structure:
 
 ::
 
@@ -234,12 +253,14 @@ Where:
 * ``"type"``—the type of the variable; the available types are: *checkbox*, *checkboxes*, *textarea*, *input*, *selectbox*.
 * ``"title"``—the name of the language variable that will be used as the name of the field.
 * ``"description"``—the name of the language variable that will be used as a hint for the field.
-* ``"variants"``—array of variants for the parameter type ``checkboxes``.
+* ``"variants"``—array of variants for a parameter with the ``checkboxes`` type.
 * ``"func"``—the function that forms the array of variants for a parameter with the ``checkboxes`` type.
 
 The saved values will be available in the property of the model of the notification template.
 
-Additional parameters allow you to attach the **order** document to email notifications about order status changes. The checkbox, that determines if the invoice must be attached, appears on the template editing page. The value of this checkbox is handled in the ``mailer_send_pre`` prehook. If the checkbox is ticked, the PDF file will be attached to the message. In this case the schema of variables looks this way:
+Additional parameters allow you to attach the **order** document to email notifications about order status changes. The dropdown list that determines, which document must be attached, appears on the template editing page. The value of this list is handled in the ``mailer_send_pre`` prehook. 
+
+The selected document will generate a PDF file that will be attached to the message. In this case the schema of variables looks this way:
 
 ::
 
