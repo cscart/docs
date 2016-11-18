@@ -208,6 +208,7 @@ body {
     min-width: 200px;
     padding-top: 10px;
     opacity: 0;
+    display: none;
     background-color: #fff;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -216,6 +217,7 @@ body {
 }
 .first-level:hover .dropdown {
     opacity: 1;
+    display: block;
 }
 
 .buy-button a {
