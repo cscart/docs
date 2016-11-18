@@ -6,7 +6,9 @@ Documents
 
     This functionality is available starting with CS-Cart/Multi-Vendor 4.4.1.
 
-A document is a set of data that serves to confirm a fact. Here are some examples of documents: *an order invoice*, *a packing slip*, *a gift certificate*, *etc*. You can edit the templates of such documents in **the Administration panel** by using **the visual editor**. The document template is html layout with the parts of dynamic data such as variables and snippets. **The Twig template engine** is used to render the documents. You can use all the features provided by this library.
+A document is a set of data that serves to confirm a fact. Here are some examples of documents: *an order invoice*, *a packing slip*, *a gift certificate*, etc. You can edit the templates of such documents in the Administration panel by using the visual editor. Just go to **Design → Documents** and choose a document you want to edit. 
+
+A document template is an HTML layout which includes dynamic data such as variables and snippets. The **Twig** template engine is used to render the documents. Developers can use all the features provided by this library.
 
 ==================
 Types of Documents
@@ -28,7 +30,7 @@ To extend functionality, each type can implement the following interfaces:
 
 The structure of the context is meant to be the same for the documents of the same type.
 
-Currently the following document types are implemented:
+Currently the following document types have been implemented:
 
 * **Order invoice**
 * **Order summary**
@@ -41,15 +43,15 @@ Currently the following document types are implemented:
 Context
 =======
 
-**Context** is the system state and the environment data at the time when the document is formed. For example, the context for the **order** document is the order. The context structure must be known for each document type. That allows you to add your own variables that will use the context as a base. 
+**Context** is the system state and the environment data at the time when the document is formed. For example, the context for the **order**-type document is the order. The context structure must be known for each document type. That allows you to add your own variables that will use the context as a base. 
  
-At the software level the context is a class that implements the ``\Tygh\Template\IContext`` interface. Its first responsibility is to report the output language and the type of the available snippets.
+At the software level the context is a class that implements the ``\Tygh\Template\IContext`` interface. Its minimum responsibility is to report the output language.
 
 =========
 Variables
 =========
 
-**Variables** are the dynamic part of the templates. Through variables a template can access the context and other data. Each type of documents has its own variables. All variables available for the type must be described in the ``documents/[type]`` schema (*app/schemas/documents/[type].php*), where ``[type]`` is the type of the document. For example, for the **order** type the schema is ``documents/order``. Each variable is a separate class implementing the ``\Tygh\Template\IVariable`` interface.
+**Variables** are the dynamic part of the templates. Through variables a template can access the context and other data. Each type of documents has its own variables. All variables available for a document type must be described in the ``documents/[type]`` schema (*app/schemas/documents/[type].php*), where ``[type]`` is the type of the document. For example, for the **order** type the schema is ``documents/order``. Each variable is a separate class implementing the ``\Tygh\Template\IVariable`` interface.
 
 Here’s the example of describing a variable in a schema:
 
@@ -66,35 +68,44 @@ Here’s the example of describing a variable in a schema:
       )
   );
 
-* **'order'**—the basic name of the variable, for example, ``{{ order.total }}``. By using it you can refer to a variable in the template.
+* ``'order'``—the basic name of the variable, for example, ``{{ order.total }}``. By using it you can refer to a variable in the template.
 
-* **'class'**—the full name of the class that is responsible for forming the variable.
+* ``'class'``—the fully qualified name of the class that is responsible for forming the variable.
 
-* **'arguments'**—the array that describes the arguments of the variable class constructor. 
+* ``'arguments'``—the array that describes the arguments of the variable class constructor. 
 
-Each variable can have its own dependencies. All dependencies must be described in the schema. Placeholders can be used as values:
+  Each variable can have its own dependencies. All dependencies must be described in the schema. Placeholders can be used as values:
 
-* If a placeholder begins with the "#" symbol, then the value for this argument is formed locally, when the variable is initialized. Currently there are two variants available—``'#context'``—the copy of the document’s context and ``'#config'``—the schema of the variable.
+  * If a placeholder begins with **#**, then the value for this argument is formed locally, when the variable is initialized. Currently there are two variants available:
 
-* If a placeholder begins with the "@" symbol, then the value for this argument is received from the ``Tygh::$app`` container.
+    * ``'#context'``—the instance of the document’s context. 
+    * ``'#config'``—the schema of the variable.
 
-The description for this parameter can be omitted. By default it is considered that the constructor of the described variable takes two arguments—``#context`` and ``#config``. Omitting this parameter is the same as describing the arguments as 'arguments' => array('#context', '#config').
+  * If a placeholder begins with **@**, then the value for this argument is received from the ``Tygh::$app`` container.
 
-* **'alias'**—the alias of the variable. By using it you can also refer to the variable in the template, for example, ``{{ o.total }}``.
+  The description for this parameter can be omitted. By default it is considered that the constructor of the described variable accepts two arguments—``#context`` and ``#config``. 
 
-* **'attributes'**—this parameter describes the attributes of the variable. These attributes will be displayed and available at the document editor. As a value of this parameter both the array and the anonymous function (if additional calculations are required) can be used, the function must return the array in the end. The parameter can also be used to describe the treelike structure of attributes. For this you’ll need to use the nested array, for example:
+  Omitting this parameter is the same as describing the arguments as ``'arguments' => array('#context', '#config')``.
 
-::
+* ``'alias'``—the alias of the variable. By using it you can also refer to the variable in the template, for example, ``{{ o.total }}``.
 
-  'products' => array(
-      '0..N' => array(
-          'item_id', 'product_id', 'product_code', 'price', 'amount', 'product', 'product_status'
-      )
-  ).
+* ``'attributes'``—this parameter describes the attributes of the variable. These attributes will be displayed and available at the document editor. 
+
+  The value of this parameter can be either an array or an anonymous function (if additional calculations are required) that returns the array in the end. 
+
+  This parameter can also be used to describe the treelike structure of attributes. For this you’ll need to use the nested array, for example:
+
+  ::
+
+    'products' => array(
+        '0..N' => array(
+            'item_id', 'product_id', 'product_code', 'price', 'amount', 'product', 'product_status'
+        )
+    ).
 
 If this parameter is omitted, then reflection will be used to get the attributes. All public nonstatic properties of the class, and also public nonstatic methods of the class that begin with ``get`` will be considered as available attributes.
 
-Besides the main parameters, you can describe other parameters in the scheme. They will be available through ``'#config'``.
+Besides the main parameters, you can describe other parameters in the schema. They will be available through ``'#config'``.
 
 If a variable has complex structure and it's not rational to use a schema to describe it, the class of the variable may implement the ``\Tygh\Template\IActiveVariable`` interface, that imposes the implementation of the only method - ``attributes()``. That way a variable that is in fact a separate class can describe its own attributes.
 
@@ -149,54 +160,54 @@ The templates of the documents are saved at the ``cscart_template_documents`` ta
 	- Identifier of the add-on to which the template belongs
     *   - updated  
         - int  
-	- UNIX timestamp of the update
+	- UNIX timestamp with the update time
     *   - created 
         - int 
-	- UNIX timestamp of creation
+	- UNIX timestamp with the creation time
 
 =====================
 Programming Interface
 =====================
 
-To manage and manipulate the document templates the following classes are implemented:
+The following classes were implemented to manage document templates:
 
-* ``\Tygh\Template\Document\Document``—the model of the document template. It is the program representation of the template structure in the database.
+* ``\Tygh\Template\Document\Document``—the model of the document template. It is the software representation of the template structure in the database.
 
-* ``\Tygh\Template\Document\Repository``—the repository class. It implements the low-level methods of adding/updating/deleting/selecting templates from the database. Class instance is available from the Tygh::$app['template.document.repository'] container.
+* ``\Tygh\Template\Document\Repository``—the repository class. It implements the low-level methods of adding/updating/deleting/selecting templates from the database. An instance of the class is available from the Tygh::$app['template.document.repository'] container.
 
-* ``\Tygh\Template\Document\Service``—the service class. It implements higher-level methods of template management. Class instance is available from the ``Tygh::$app['template.document.service']`` container.
+* ``\Tygh\Template\Document\Service``—the service class. It implements higher-level methods of template management. An instance of the class is available from the ``Tygh::$app['template.document.service']`` container.
 
 * ``Tygh\Template\Document\Exim``—this class implements the logic of import and export of document templates. An instance of the class is available from the ``Tygh::$app['template.document.exim']`` container.
 
-Helper classes:
+**Helper classes:**
 
-* ``\Tygh\Template\Document\TypeFactory``—the factory class. It is used to create instances of a document type. Class instance is available from the ``Tygh::$app['template.document.type_factory']`` container.
+* ``\Tygh\Template\Document\TypeFactory``—the factory class. It is used to create instances of a document type. An instance of the class is available from the ``Tygh::$app['template.document.type_factory']`` container.
 
 * ``\Tygh\Template\Collection``—the class of nontype data collection. It is used to create the collection of variables.
 
-* ``\Tygh\Template\ObjectFactory``—the object factory class. It can create class instances based on the describing information. Class instance is available from the ``Tygh::$app['template.object_factory']`` container.
+* ``\Tygh\Template\ObjectFactory``—the object factory class. It can create class instances based on the describing information. An instance of the class is available from the ``Tygh::$app['template.object_factory']`` container.
 
-* ``\Tygh\Template\Renderer``—wrapper class for twig. Class instance is available from the ``Tygh::$app['template.renderer']`` container.
+* ``\Tygh\Template\Renderer``—a wrapper class for Twig. An instance of the class is available from the ``Tygh::$app['template.renderer']`` container.
 
 * ``\Tygh\Template\VariableMetaData``—the class for processing the metadata of variables.
 
-* ``\Tygh\Template\VariableCollectionFactory``—the variable collection factory. It can create the variable collection based on the variable schema. Class instance is available from the ``Tygh::$app['template.variable_collection_factory']`` container.
+* ``\Tygh\Template\VariableCollectionFactory``—the variable collection factory. It can create the variable collection based on the variable schema. An instance of the class is available from the ``Tygh::$app['template.variable_collection_factory']`` container.
 
 * ``\Tygh\Template\VariableProxy``—the proxy class that organizes the lazy initialization of variables.
 
-============================================
-The Forming Schema of the Document Rendering
-============================================
+====================================
+The Schema of the Document Rendering
+====================================
 
 .. image:: img/invoice_editor_2.png
     :align: center
     :alt: New banner
 
-1. Receiving the document template. Selecting the model of the document template by using the ``\Tygh\Template\Document\Repository`` repository class.
+1. Receiving the document template. Selecting the model of the document template with the aid of the ``\Tygh\Template\Document\Repository`` repository class.
 
-2. Forming the context of the document. The context of the document is created on the basis of the data that were sent.
+2. Forming the context of the document based on the received data.
 
-3. Forming the variable collection. The variable collection is initialized on the basis of the document context by using the ``\Tygh\Template\VariableCollectionFactory`` class.
+3. Forming the variable collection. The variable collection is initialized based on the document context with the aid of the ``\Tygh\Template\VariableCollectionFactory`` class.
 
 4. Calling the template engine to render the document.
 
@@ -282,13 +293,17 @@ To add a snippet to the list of available snippets you need to add the snippet t
 Extending Documents
 ===================
 
-PHP hooks:
+---------
+PHP Hooks
+---------
 
 * **template_document_get_name**—``fn_set_hook('template_document_get_name', $this, $result)``—it’s called after the document name was generated. By using the hook you can change the name of the document.
 
 * **template_document_remove_post**—``fn_set_hook('template_document_remove_post', $this, $document)``—it’s called after document deletion.
 
-Template hooks:
+--------------
+Template Hooks
+--------------
 
 * ``{hook name="documents:tabs_extra"}{/hook}`` (*design/backend/templates/views/documents/update.tpl*)—it allows to add extra tabs to the document editing page.
 
