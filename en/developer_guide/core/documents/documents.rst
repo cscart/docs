@@ -173,7 +173,7 @@ The following classes were implemented to manage document templates:
 
 * ``\Tygh\Template\Document\Document``—the model of the document template. It is the software representation of the template structure in the database.
 
-* ``\Tygh\Template\Document\Repository``—the repository class. It implements the low-level methods of adding/updating/deleting/selecting templates from the database. An instance of the class is available from the Tygh::$app['template.document.repository'] container.
+* ``\Tygh\Template\Document\Repository``—the repository class. It implements the low-level methods of adding/updating/deleting/selecting templates from the database. An instance of the class is available from the ``Tygh::$app['template.document.repository']`` container.
 
 * ``\Tygh\Template\Document\Service``—the service class. It implements higher-level methods of template management. An instance of the class is available from the ``Tygh::$app['template.document.service']`` container.
 
