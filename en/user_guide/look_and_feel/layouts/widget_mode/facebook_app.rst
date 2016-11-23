@@ -8,6 +8,10 @@ How To: Embed a Store into a Facebook Page
 
     Facebook requires apps to secure data with SSL certificates. That's why your CS-Cart or Multi-Vendor storefront must be :doc:`accessible via HTTPS <../../../settings/security_settings>` for the app to work properly.
 
+.. hint::
+
+    Go to **Settings → Security settings** and set **Enable secure connection for the storefront** to *Secure full site*. You must install an SSL certificate on your server before you do that.
+
 The app works similarly to :doc:`the Widget Mode <index>`: you just copy a few lines of code, paste them on the app page, and specify the Facebook page where you want the store embedded.
 
 Your store will immediately appear on the specified Facebook page as a new app, ready for work right away.
@@ -58,7 +62,11 @@ Step 2. Copy the Widget Code
 
 2.3. Back on the CS-Cart Facebook App page, click **Set store**, and paste the code into the **Widget** code box.
 
-2.4. Enter your CS-Cart or Multi-Vendor license number in the **License number** field. If you proceed without entering your license number, you'll get a 14-day trial for the app.
+2.4. Enter your CS-Cart or Multi-Vendor license number in the **License number** field. 
+
+.. important::
+
+    If you proceed without entering your license number, you'll get a 14-day trial for the app.
 
 2.5. Click **Save**.
 
@@ -82,4 +90,4 @@ You can also change your Facebook store appearance right from your CS-Cart admin
 
      If you use your default :doc:`layout <../index>` for the Facebook store, these changes will affect your main store too.
 
-CS-Cart's default **Responsive** theme has a built-in Facebook style designed to blend into Facebook's interface.
+CS-Cart's **Responsive** theme has a built-in Facebook style designed to blend into Facebook's interface.
