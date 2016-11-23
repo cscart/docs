@@ -142,7 +142,7 @@ Extending Snippets
 
 Sometimes you can't create a template you'd like with the default visual editor. It might be ineffective, or you might want some additional structured data. 
 
-For example, to print the list of the products in an **order.invoice** document you will need a table that can easily be expanded. Obviously, the visual editor is not the best tool in this case. To solve the tasks like this, we added the hooks thta can influence the snippet rendering and extend the interface of the editor.
+For example, to print the list of the products in an **order.invoice** document you will need a table that can easily be expanded. Obviously, the visual editor is not the best tool in this case. To solve the tasks like this, we added the hooks that can influence the snippet rendering and extend the interface of the editor.
 
 ---------
 PHP Hooks
@@ -184,7 +184,7 @@ Here are the additional filters and functions:
 
 * **date** (filter)—it’s used to form the values of the date type.
 * **price** (filter)—it’s used to form  the values of the currency type.
-* **Filesize** (filter)—it’s used to form the values of the filesize type in kilobytes. 
+* **filesize** (filter)—it’s used to form the values of the filesize type in kilobytes. 
 * **puny_decode** (filter)—it’s used for decoding the URLs from PunyCode to international representation.
 * **__** (function)—it’s used to output translations.
 * **snippet** (function)—it’s used to insert the snippet.
@@ -193,5 +193,3 @@ Here are the additional filters and functions:
 .. hint::
 
     Learn more about the template engine from `the official Twig documentation. <http://twig.sensiolabs.org>`_
-
-Find more information on the template engine at the `Twig documentation website <http://twig.sensiolabs.org/>`_.
