@@ -34,7 +34,6 @@ The  ``cscart_template_snippets`` table stores the general information about sni
 
 .. list-table::
     :header-rows: 1
-    :stub-columns: 1
     :widths: 10 7 20
     
     *   - Name

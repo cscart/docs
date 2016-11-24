@@ -28,7 +28,6 @@ The ``cscart_template_emails`` table is used to keep email notification template
 
 .. list-table::
     :header-rows: 1
-    :stub-columns: 1
     :widths: 10 7 20
     
     *   - Name
