@@ -4,13 +4,15 @@ Email Notifications
 
 .. note::
 
-    This functionality is available starting with CS-Cart/Multi-Vendor 4.4.1.
+   Email notification editor is available starting with CS-Cart/Multi-Vendor 4.4.1.
 
-The new CS-Cart feature allows you to edit email notifications in the Administration panel. Just go to **Design → Email templates** and choose the template you want to edit. For the sake of convenience, all email templates are divided into **two groups**:
+The new CS-Cart feature allows you to edit email notifications in the Administration panel. Just go to **Design → Email templates** and choose the template you want to edit. 
 
-* **Administrator notifications**.
+For the sake of convenience, all email templates are divided into two groups:
 
-* **Customer notifications**. 
+* Administrator notifications.
+
+* Customer notifications. 
 
 We use `Twig <http://twig.sensiolabs.org/>`_ as the template engine: developers can take advantage of the full functionality of the library.
 
@@ -102,9 +104,7 @@ The Schema of Sending Email Notifications
 
    The ``\Tygh\Mailer`` static class was replaced by the  ``\Tygh\Mailer\Mailer`` service class that is available from the ``Tygh::$app['mailer']`` container. 
 
-   When calling a message sending method, specify the character identifier of the email template in the ``template_code`` key. For example:
-
-   ::
+   When calling a message sending method, specify the character identifier of the email template in the ``template_code`` key. For example::
 	
      $mailer->send(array(
          'to' => 'company_orders_department',

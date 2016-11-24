@@ -32,12 +32,12 @@ The structure of the context is meant to be the same for the documents of the sa
 
 Currently the following document types have been implemented:
 
-* **Order invoice**
-* **Order summary**
-* **Packing slip**
-* **RMA::Packing slip** 
-* **Gift certificates::Gift certificate**
-* **Suppliers::Invoice**
+* Order invoice
+* Order summary
+* Packing slip
+* RMA::Packing slip 
+* Gift certificates::Gift certificate
+* Suppliers::Invoice
 
 =======
 Context
@@ -53,9 +53,7 @@ Variables
 
 **Variables** are the dynamic part of the templates. Through variables a template can access the context and other data. Each type of documents has its own variables. All variables available for a document type must be described in the ``documents/[type]`` schema (*app/schemas/documents/[type].php*), where ``[type]`` is the type of the document. For example, for the **order** type the schema is ``documents/order``. Each variable is a separate class implementing the ``\Tygh\Template\IVariable`` interface.
 
-Here’s the example of describing a variable in a schema:
-
-::
+Here’s the example of describing a variable in a schema::
 
   return array(
       'order' => array(
@@ -101,13 +99,13 @@ Here’s the example of describing a variable in a schema:
         '0..N' => array(
             'item_id', 'product_id', 'product_code', 'price', 'amount', 'product', 'product_status'
         )
-    ).
+    )
 
 If this parameter is omitted, then reflection will be used to get the attributes. All public nonstatic properties of the class, and also public nonstatic methods of the class that begin with ``get`` will be considered as available attributes.
 
 Besides the main parameters, you can describe other parameters in the schema. They will be available through ``'#config'``.
 
-If a variable has complex structure and it's not rational to use a schema to describe it, the class of the variable may implement the ``\Tygh\Template\IActiveVariable`` interface, that imposes the implementation of the only method - ``attributes()``. That way a variable that is in fact a separate class can describe its own attributes.
+If a variable has complex structure and it's not rational to use a schema to describe it, the class of the variable may implement the ``\Tygh\Template\IActiveVariable`` interface, that imposes the implementation of the only method—``attributes()``. That way a variable that is in fact a separate class can describe its own attributes.
 
 To make adding variables easier, a special ``\Tygh\Template\Document\Variables\GenericVariable`` class was implemented. This class can be fully configured from the schema, so there's no need to create a separate class for each variable. Here's the example of a variable like this::
 
@@ -135,6 +133,7 @@ The templates of the documents are saved at the ``cscart_template_documents`` ta
 
 .. list-table::
     :header-rows: 1
+    :stub-columns: 1
     :widths: 10 7 20
     
     *   - Name
@@ -221,9 +220,7 @@ To add your own variable, create the class of the variable that implements the `
 
 Here's the example of adding a variable that provides a barcode for the order:
 
-We have a file **app/addons/barcode/Tygh/Addons/Barcode/Documents/Order/BarcodeVariable.php**.
-
-::
+We have a file **app/addons/barcode/Tygh/Addons/Barcode/Documents/Order/BarcodeVariable.php**::
 
   <?php
 
@@ -261,11 +258,7 @@ We have a file **app/addons/barcode/Tygh/Addons/Barcode/Documents/Order/BarcodeV
       }
   }
 
-Let's extend the variable schema for the documents of the **order** type. 
-
-Add a file **/app/addons/barcode/schemas/documents/order.post.php**.
-
-::
+Let's extend the variable schema for the documents of the **order** type. To do that, add a file **/app/addons/barcode/schemas/documents/order.post.php**::
 
   <?php
   $schema['barcode'] = array(
@@ -325,4 +318,4 @@ One of the most notable constraints are the lack of hooks in the document templa
 Complex Logic of Templates
 -------------------------- 
 
-The visual template editor doesn’t fully support the use of branching, cycles, etc. in templates, so if you want to format the template by using the logic, you have to use snippets which lack a visual editor.
+The visual template editor doesn’t fully support the use of branching, cycles, etc. in templates, so if you want to format the template by using the logic, you have to use snippets, which don't have a visual editor.
