@@ -133,7 +133,6 @@ The templates of the documents are saved at the ``cscart_template_documents`` ta
 
 .. list-table::
     :header-rows: 1
-    :stub-columns: 1
     :widths: 10 7 20
     
     *   - Name
@@ -290,9 +289,13 @@ Extending Documents
 PHP Hooks
 ---------
 
-* **template_document_get_name**—``fn_set_hook('template_document_get_name', $this, $result)``—it’s called after the document name was generated. By using the hook you can change the name of the document.
+* ``'template_document_get_name'``—it’s called after the document name was generated. By using the hook you can change the name of the document::
 
-* **template_document_remove_post**—``fn_set_hook('template_document_remove_post', $this, $document)``—it’s called after document deletion.
+    fn_set_hook('template_document_get_name', $this, $result)
+
+* ``'template_document_remove_post'``—it’s called after document deletion::
+
+    fn_set_hook('template_document_remove_post', $this, $document)
 
 --------------
 Template Hooks
