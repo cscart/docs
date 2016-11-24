@@ -12,11 +12,13 @@ The best examples of snippets are a header and a footer that are included in eve
 
 Snippets are available both for email and document templates.
 
-Here's the example of including a snippet into the template:
-``{{ snippet("header") }}``
+Here's the example of including a snippet into the template::
 
-And here's the example of including a snippet with additional variables into the template: 
-``{{ snippet("header", {"title": product.name}) }}``
+  {{ snippet("header") }}
+
+And here's the example of including a snippet with additional variables into the template::
+
+  {{ snippet("header", {"title": product.name}) }}
 
 =================
 Types of Snippets
@@ -32,6 +34,7 @@ The  ``cscart_template_snippets`` table stores the general information about sni
 
 .. list-table::
     :header-rows: 1
+    :stub-columns: 1
     :widths: 10 7 20
     
     *   - Name
@@ -113,11 +116,7 @@ The Schema of the Snippet Rendering
 Adding Snippets
 ===============
 
-Add-ons can add their own snippets of any type. Snippets are meant to be added during the add-on installation and deleted when the add-on is uninstalled. To add snippets, you may use the methods of the ``\Tygh\Template\Snippet\Service`` or describe snippets right in the add-on schema.
-
-For example:
-
-::
+Add-ons can add their own snippets of any type. Snippets are meant to be added during the add-on installation and deleted when the add-on is uninstalled. To add snippets, you may use the methods of the ``\Tygh\Template\Snippet\Service`` or describe snippets right in the add-on schema. For example::
 
   <?xml version="1.0"?>
   <addon scheme="3.0">
@@ -156,11 +155,11 @@ PHP Hooks
 
     fn_set_hook('template_snippet_render_post', $snippet, $context, $variable_collection, $result)
 
-* ``'template_snippet_remove_post'``—it’s executed after the snippet was deleted::
+* ``'template_snippet_remove_post'``—it’s executed after a snippet is deleted::
 
     fn_set_hook('template_snippet_remove_post', $this, $snippet)
 
-* ``'template_snippet_save_post'``—it’s executed after the snippet was saved to the database::
+* ``'template_snippet_save_post'``—it’s executed after a snippet is saved to the database::
 
     fn_set_hook('template_snippet_save_post', $this, $snippet, $lang_code)
 
@@ -176,19 +175,19 @@ Template Engine
 
 We use the Twig library (version 1.24) as a template engine. The standard extensions are included:
 
-* **Twig_Extensions_Extension_Text**
-* **Twig_Extensions_Extension_Array**
-* **Twig_Extension_Debug** - developer mode only.
+* Twig_Extensions_Extension_Text
+* Twig_Extensions_Extension_Array
+* Twig_Extension_Debug — only in development mode.
 
 Here are the additional filters and functions:
 
-* **date** (filter)—it’s used to form the values of the date type.
-* **price** (filter)—it’s used to form  the values of the currency type.
-* **filesize** (filter)—it’s used to form the values of the filesize type in kilobytes. 
-* **puny_decode** (filter)—it’s used for decoding the URLs from PunyCode to international representation.
-* **__** (function)—it’s used to output translations.
-* **snippet** (function)—it’s used to insert the snippet.
-* **include_doc** (function)—it is used to include documents into the body of email notification.
+* ``date`` (filter)—it’s used to form the values of the date type.
+* ``price`` (filter)—it’s used to form  the values of the currency type.
+* ``filesize`` (filter)—it’s used to form the values of the filesize type in kilobytes. 
+* ``puny_decode`` (filter)—it’s used for decoding the URLs from PunyCode to international representation.
+* ``__`` (function)—it’s used to output translations.
+* ``snippet`` (function)—it’s used to insert the snippet.
+* ``include_doc`` (function)—it is used to include documents into the body of email notification.
 
 .. hint::
 
