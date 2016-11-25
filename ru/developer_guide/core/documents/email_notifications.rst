@@ -211,7 +211,7 @@ PHP-хуки
 
 * ``'mailer_send_post'`` — вызывается после отправки сообщения::
 
-    fn_set_hook('mailer_send_post', $this, $transport, $message, $result, $area, $lang_code)``
+    fn_set_hook('mailer_send_post', $this, $transport, $message, $result, $area, $lang_code)
 
 ================================
 Дополнительные параметры шаблона
