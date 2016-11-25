@@ -91,9 +91,7 @@ Here’s the example of describing a variable in a schema::
 
   The value of this parameter can be either an array or an anonymous function (if additional calculations are required) that returns the array in the end. 
 
-  This parameter can also be used to describe the treelike structure of attributes. For this you’ll need to use the nested array, for example:
-
-  ::
+  This parameter can also be used to describe the treelike structure of attributes. For this you’ll need to use the nested array, for example::
 
     'products' => array(
         '0..N' => array(
@@ -101,7 +99,7 @@ Here’s the example of describing a variable in a schema::
         )
     )
 
-If this parameter is omitted, then reflection will be used to get the attributes. All public nonstatic properties of the class, and also public nonstatic methods of the class that begin with ``get`` will be considered as available attributes.
+  If this parameter is omitted, then reflection will be used to get the attributes. All public nonstatic properties of the class, and also public nonstatic methods of the class that begin with ``get`` will be considered as available attributes.
 
 Besides the main parameters, you can describe other parameters in the schema. They will be available through ``'#config'``.
 
