@@ -184,7 +184,7 @@ Here are the additional filters and functions:
 * ``price`` (filter)—formats the value as a price.
 * ``filesize`` (filter)—formats the value as a file size in kilobytes. 
 * ``puny_decode`` (filter)—decodes the URLs from PunyCode to international format.
-* ``__`` (function)—output translations.
+* ``__`` (function)—shows translations.
 * ``snippet`` (function)—inserts a snippet.
 * ``include_doc`` (function)—includes documents into the body of email notification.
 
