@@ -263,5 +263,4 @@ PHP-хуки
        )
   )
 
-
 Функция ``fn_emails_get_order_document_variants`` описана в схеме **emails/variants.functions**.
