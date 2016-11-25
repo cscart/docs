@@ -257,7 +257,7 @@ Where:
 
 The saved values will be available in the property of the model of the notification template.
 
-Additional parameters allow you to attach the **order** document to email notifications about order status changes. The dropdown list that determines, which document must be attached, appears on the template editing page. The value of this list is handled in the ``mailer_send_pre`` prehook. 
+Additional parameters allow you to attach the **order** document to email notifications about order status changes. The dropdown list that determines, which document must be attached, appears on the template editing page. The value of this list is handled in the ``mailer_send_pre`` pre-hook. 
 
 The selected document will generate a PDF file that will be attached to the message. In this case the schema of variables looks this way:
 

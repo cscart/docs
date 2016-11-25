@@ -180,13 +180,13 @@ We use the Twig library (version 1.24) as a template engine. The standard extens
 
 Here are the additional filters and functions:
 
-* ``date`` (filter)—it’s used to form the values of the date type.
-* ``price`` (filter)—it’s used to form  the values of the currency type.
-* ``filesize`` (filter)—it’s used to form the values of the filesize type in kilobytes. 
-* ``puny_decode`` (filter)—it’s used for decoding the URLs from PunyCode to international representation.
-* ``__`` (function)—it’s used to output translations.
-* ``snippet`` (function)—it’s used to insert the snippet.
-* ``include_doc`` (function)—it is used to include documents into the body of email notification.
+* ``date`` (filter)—formats the value as a date.
+* ``price`` (filter)—formats the value as a price.
+* ``filesize`` (filter)—formats the value as a file size in kilobytes. 
+* ``puny_decode`` (filter)—decodes the URLs from PunyCode to international format.
+* ``__`` (function)—output translations.
+* ``snippet`` (function)—inserts a snippet.
+* ``include_doc`` (function)—includes documents into the body of email notification.
 
 .. hint::
 
