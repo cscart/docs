@@ -160,7 +160,7 @@
 Программный интерфейс
 =====================
 
-Для управления и взаимодействия с шаблонами документов реализованы следующие классы:
+**Для управления и взаимодействия с шаблонами документов реализованы следующие классы:**
 
 * ``\Tygh\Template\Document\Document`` — модель шаблона документа. Является программным представлением структуры шаблона в БД.
 
@@ -178,7 +178,7 @@
 
 * ``\Tygh\Template\ObjectFactory`` — класс фабрика объектов. Умеет на основе описывающей информации создавать экземпляры классов. Экземпляр класса доступен из контейнера ``Tygh::$app['template.object_factory']``.
 
-* ``\Tygh\Template\Renderer`` — класс-обертка над Twig. Экземпляр класса доступен из контейнера``Tygh::$app['template.renderer']``.
+* ``\Tygh\Template\Renderer`` — класс-обертка над Twig. Экземпляр класса доступен из контейнера ``Tygh::$app['template.renderer']``.
 
 * ``\Tygh\Template\VariableMetaData`` — класс для обработки мета данных переменных. 
 
@@ -272,7 +272,7 @@
 
 .. hint::
 
-    :doc: `Подробнее о сниппетах читайте здесь. <snippets>`
+    :doc:`Подробнее о сниппетах читайте здесь. <snippets>`
 
 =====================
 Расширение документов
@@ -284,11 +284,11 @@ PHP-хуки
 
 * ``'template_document_get_name'`` — вызывается после формирования имени документа. С помощью хука можно повлиять на название документа::
 
-    fn_set_hook('template_document_get_name', $this, $result)``
+    fn_set_hook('template_document_get_name', $this, $result)
 
 * ``'template_document_remove_post'`` — вызывается после удаления документа::
 
-    fn_set_hook('template_document_remove_post', $this, $document)``
+    fn_set_hook('template_document_remove_post', $this, $document)
 
 -------------
 Template-хуки

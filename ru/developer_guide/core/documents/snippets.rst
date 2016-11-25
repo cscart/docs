@@ -154,7 +154,7 @@ PHP-хуки
 
     fn_set_hook('template_snippet_remove_post', $this, $snippet)
 
-* ``'template_snippet_save_post' — выполняется после сохранения сниппета в БД::
+* ``'template_snippet_save_post'`` — выполняется после сохранения сниппета в БД::
 
     fn_set_hook('template_snippet_save_post', $this, $snippet, $lang_code)
 
@@ -168,7 +168,7 @@ Template-хуки
 Шаблонизатор
 ============
 
-В качестве шаблонизатора используется библиотека "Twig" (версия 1.24). Подключены стандартные расширения:
+В качестве шаблонизатора используется библиотека Twig (версия 1.24). Подключены стандартные расширения:
 
 * Twig_Extensions_Extension_Text
 * Twig_Extensions_Extension_Array
