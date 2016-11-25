@@ -99,7 +99,7 @@ Here’s the example of describing a variable in a schema::
         )
     )
 
-  If this parameter is omitted, then reflection will be used to get the attributes. All public nonstatic properties of the class, and also public nonstatic methods of the class that begin with ``get`` will be considered as available attributes.
+  If this parameter is omitted, then reflection will be used to get the attributes. All public non-static properties of the class, and also public non-static methods of the class that begin with ``get`` will be considered as available attributes.
 
 Besides the main parameters, you can describe other parameters in the schema. They will be available through ``'#config'``.
 
@@ -185,7 +185,7 @@ The following classes were implemented to manage document templates:
 
 * ``\Tygh\Template\Renderer``—a wrapper class for Twig. An instance of the class is available from the ``Tygh::$app['template.renderer']`` container.
 
-* ``\Tygh\Template\VariableMetaData``—the class for processing the metadata of variables.
+* ``\Tygh\Template\VariableMetaData``—the class for processing the meta-data of variables.
 
 * ``\Tygh\Template\VariableCollectionFactory``—the variable collection factory. It can create the variable collection based on the variable schema. An instance of the class is available from the ``Tygh::$app['template.variable_collection_factory']`` container.
 
@@ -319,4 +319,4 @@ One of the most notable constraints are the lack of hooks in the document templa
 Complex Logic of Templates
 -------------------------- 
 
-The visual template editor doesn’t fully support the use of branching, cycles, etc. in templates, so if you want to format the template by using the logic, you have to use snippets, which don't have a visual editor.
+The visual template editor doesn’t fully support the use of branching, cycles, etc. in templates. If you want to use logic when formatting the template, you have to use snippets, which don't have a visual editor.
