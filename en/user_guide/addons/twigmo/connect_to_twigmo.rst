@@ -2,6 +2,10 @@
 How To: Connect Your Store to the Twigmo Service 
 ************************************************
 
+.. important::
+
+    The **Twigmo** add-on is deprecated. If you need to manage your store from a mobile device, we recommend :doc:`Mobile Admin App. <../mobile_admin_app/index>` 
+
 *	In the Administration panel, go to **Add-ons → Manage add-ons**.
 *	Install the **Twigmo** add-on.
 *	Click on the name of the add-on to open its settings.

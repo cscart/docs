@@ -2,11 +2,11 @@
 Introduction to the Administration Panel
 ****************************************
 
+The **Administration Panel** (or the admin panel for short) is the primary tool for you to work with your online store. Here you can manage products and orders, offer discounts, interact with your customers, change the look of your store and do much more.
+
 .. note::
 
-    **Tutorial Difficulty: 1 / 3**
-
-The **Administration Panel** (or the admin panel for short) is the primary tool for you to work with your online store. Here you can manage products and orders, offer discounts, interact with your customers, change the look of your store and do much more.
+    Starting with version 4.4.2, you can use :doc:`Mobile Admin App <addons/mobile_admin_app/index>` in **CS-Cart Ultimate** or **Multi-Vendor** to manage your store from Android and iOS mobile devices.
 
 ===========================
 Connect to Your Admin Panel
