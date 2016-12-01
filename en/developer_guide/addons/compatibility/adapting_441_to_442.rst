@@ -24,11 +24,11 @@ New Functions
 
 #. Replace the width of the location, container, grid of the XML layout with the width of the layout itself::
 
-     \Tygh\BlockManager\Exim::setLayoutElementsWidth()
+     \Tygh\BlockManager\Exim::setLayoutElementsWidth($layout_width, &$content, &$_attrs)
     
 #. Replace the widths of containers and grids of the given layout with the width of this layout::
 
-     \Tygh\BlockManager\Layout::setLayoutElementsWidth()
+     \Tygh\BlockManager\Layout::setLayoutElementsWidth($layout_id, $layout_width)
 
 #. Check if PayPal IPN for the order was received. The check is performed by searching for the IPN receiving time in the payment information of the order::
 
