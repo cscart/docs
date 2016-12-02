@@ -4,7 +4,7 @@ How To: Install CS-Cart on DigitalOcean Hosting
 
 .. note::
 
-    **Tutorial Difficulty: 2 / 3**
+    You'll need to use the command line and might have to install an SSH client.
 
 In this tutorial, you will learn how to install CS-Cart on a DigitalOcean server. DigitalOcean is an SSD cloud hosting that offers virtual private servers. 
 
@@ -34,7 +34,7 @@ Step 1. Prepare Your Hosting
     :align: center
     :alt: Select a region for your server.
 
-1.5. Select your server’s operating system. We recommend Ubuntu 14.04 x64:
+1.5. Select your server’s operating system. We recommend CentOS 7.2 x64:
 
 .. image:: img/digitalocean/4_server_os.png
     :align: center
@@ -57,7 +57,7 @@ Step 2. Configure Your Server
 
 .. note::
 
-    You’ll need a SSH-client to connect to your server, execute the configuration script, and install CS-Cart. Here are free, commonly-used SSH-clients:
+    You’ll need an SSH client to connect to your server, execute the configuration script, and install CS-Cart. Here are free, commonly-used SSH-clients:
 
     * Mac OS X: Terminal, iTerm 2
     * Linux: Terminal, KDE Konsole, XTerm
@@ -83,9 +83,9 @@ You have to change the password only at the first connection to your server. Ple
 
 2.4. Execute the script for automatic server configuration:
 
-.. code-block:: bash
+     .. code-block:: bash
 
-    curl -sL http://cartoma.tk/installer | bash -s -- [your domain name]
+         curl -sL http://cartoma.tk/installer | bash -s -- [your domain name]
 
 .. image:: img/digitalocean/8_script.png
     :align: center
@@ -104,9 +104,9 @@ Step 3. Install CS-Cart
 
 3.1. Go to the CS-Cart folder:
 
-.. code-block:: bash
+     .. code-block:: bash
 
-    cd /var/www/html/[your domain name]
+         cd /var/www/html/[your domain name]
 
 .. image:: img/digitalocean/10_cd.png
     :align: center
@@ -114,27 +114,27 @@ Step 3. Install CS-Cart
 
 3.2. Download the CS-Cart installation package from our website:
 
-.. code-block:: bash
+     .. code-block:: bash
 
-    wget "https://www.cs-cart.com/index.php?dispatch=pages.get_trial&page_id=297&edition=ultimate" -O cscart.zip
+         wget "https://www.cs-cart.com/index.php?dispatch=pages.get_trial&page_id=297&edition=ultimate" -O cscart.zip
 
 
 3.3. Unzip the CS-Cart installation package:
 
-.. code-block:: bash
+     .. code-block:: bash
 
-    unzip cscart.zip
+         unzip cscart.zip
 
 3.4. Change the owner and set file permissions for CS-Cart installation by executing these commands one by one:
 
-.. code-block:: bash
+     .. code-block:: bash
 
-    chown -R service ./
-    chmod 644 config.local.php
-    chmod -R 755 design images var
-    find design -type f -print0 | xargs -0 chmod 644
-    find images -type f -print0 | xargs -0 chmod 644
-    find var -type f -print0 | xargs -0 chmod 644
+         chown -R service ./
+         chmod 644 config.local.php
+         chmod -R 755 design images var
+         find design -type f -print0 | xargs -0 chmod 644
+         find images -type f -print0 | xargs -0 chmod 644
+         find var -type f -print0 | xargs -0 chmod 644
 
 3.5. Open your store’s URL in your browser and click [install]:
 
@@ -153,7 +153,6 @@ Step 3. Install CS-Cart
 .. image:: img/digitalocean/13_installation_details.png
     :align: center
     :alt: Enter the information from Step 2.5 to the fields.
-
 
 3.8. Congratulations! Now you have a fast CS-Cart store on DigitalOcean hosting.
 
