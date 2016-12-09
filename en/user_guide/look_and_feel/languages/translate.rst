@@ -48,6 +48,8 @@ Create a New Translation
 
 5. Fill in the fields and click the **Save** button.
 
+.. _language-variables:
+
 =================
 Translate CS-Cart
 =================
@@ -60,13 +62,13 @@ Most of CS-Cart texts are stored in the so-called language variables. Although y
 
 3. You will be redirected to the storefront and will need to translate the text marked with a dash line. To do it, follow these steps:
 
- * Choose the newly created language from the drop-down menu in the left upper corner of the page.
+  * Choose the newly created language from the drop-down menu in the left upper corner of the page.
 
- * Hover the mouse pointer over text marked with a dash line. The **edit** icon will appear—click it.
+  * Hover the mouse pointer over text marked with a dash line. The **edit** icon will appear—click it.
 
- * Enter the desired translation in the input field.
+  * Enter the desired translation in the input field.
 
- * Click the **green tick** button to save your changes.
+  * Click the **green tick** button to save your changes.
 
 4. After you translate all visible texts, there are still some language variables left: the ones displayed in the e-mail notifications and in some special situations, e.g. error notifications, pop-up window messages, etc. To translate the remaining variables, follow these steps:
 
