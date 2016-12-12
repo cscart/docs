@@ -11,4 +11,7 @@
     :maxdepth: 2
     :glob:
 
-    *
+    clone
+    layouts
+    top_panel_header
+    change_settings

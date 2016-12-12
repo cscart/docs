@@ -12,4 +12,7 @@ This tutorial is based on `Free E-commerce PSD Template <http://www.pinterest.co
     :maxdepth: 2
     :glob:
 
-    *
+    clone
+    layouts
+    top_panel_header
+    change_settings
