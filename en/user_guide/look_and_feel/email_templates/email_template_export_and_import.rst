@@ -16,7 +16,7 @@ Export Email Templates & Snippets
 
 1. Go to **Design → Email templates**.
 
-2. Click the gear button in the top right corner of the page.
+2. Click the **gear** button in the top right corner of the page.
 
 3. Choose **Export**. You’ll be offered to download an XML file with all the administrator notifications, customer notifications, and code snippets.
 

@@ -60,7 +60,7 @@ Add/Edit a Snippet
 Delete Snippets
 ---------------
 
-* To delete one snippet, click the gear button of that snippet and choose **Delete**.
+* To delete one snippet, click the **gear** button of that snippet and choose **Delete**.
 
 * To delete multiple snippets at once:
 
