@@ -73,19 +73,19 @@ When activated, a theme that has this code in manifest.json will do the followin
 
   *(Appearance →  Product list default view)*
 
-* Set **The big picture** as the product page template
+* Set **The big picture** as the product page template.
 
   *(Appearance →  Product detailed page view)*
 
-* Enable mini-thumbnail gallery
+* Enable mini-thumbnail gallery.
 
   *(Appearance → Display mini thumbnail images as a gallery)*
 
-* Disable **Quick View**
+* Disable **Quick View**.
 
   *(Appearance → Enable quick view)*
 
-* Set the width and height of thumbnails on the product list to 300 px
+* Set the width and height of thumbnails on the product list to 300 px.
 
   *(Thumbnails → Products list (category, search, etc) thumbnail width)*
 
