@@ -8,7 +8,7 @@
 
 .. note::
 
-    После обновления до CS-Cart или Multi-Vendor версии 4.4.1 вам, возможно, понадобится :doc:`включить редактор самостоятельно <enable_email_editor>`.
+    После обновления до CS-Cart или Multi-Vendor версии 4.4.1 вам, возможно, понадобится :doc:`включить редактор самостоятельно <enable_document_editor>`.
 
 .. contents::
    :backlinks: none
