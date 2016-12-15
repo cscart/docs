@@ -335,9 +335,19 @@ This tab contains a list of files that are associated with this :doc:`downloadab
 Subscribers
 ===========
 
-This tab contains a list of email addresses that visitors have left to receive a notification when the product is back in stock. To allow visitors to subscribe to an out-of-stock product, set the **Out of stock actions** option (see the **General** tab) to *Sign up for notifications*.
+.. important::
 
-You can add the subscriber by his e-mail with the **Add subscriber** button or you can choose subscribers among the customers of your store with the **Select customer** button.
+    This functionality has nothing to do with **Marketing → Newsletters → Subscribers**, which is a part of the :doc:`Newsletters <../../addons/newsletters/index>` add-on.
+
+When a product is out of stock, you may allow customers to subscribe for an email notification. It will be sent automatically to inform the customers that the product is available again.
+
+Each product has its own list of email addresses, available on the **Subscribers** tab. When a product is in stock again, the notification is sent to all subscribers, and then their emails are removed from the subscriber list of the product.
+
+As you can see, the process is entirely automated. However, you can add subscribers manually, if necessary.
+
+.. hint::
+
+    More information about product subscribers is available in :ref:`the dedicated article. <product-subscribers>`
 
 =======
 Add-ons
