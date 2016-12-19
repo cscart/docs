@@ -100,4 +100,4 @@ The add-on **doesn't** import most of the layout data (information about blocks 
 
 * The **Description**, **Features** and **Files** product tabs are imported by default.
 
-* The product tabs created automatically after the installation of certain add-ons are also improted.
+* The product tabs created automatically after the installation of certain add-ons are also imported.
