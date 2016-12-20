@@ -118,10 +118,6 @@ Delete a Vendor Plan
 Switch Between Plans
 ====================
 
-.. important::
-
-    Vendor’s administrators can move their vendors to other plan only if it’s allowed in :doc:`the Vendor Plans add-on settings. <../../addons/vendor_plans/vendor_plans_settings>` 
-
 1. In the Administration panel, go to **Vendors → Vendors**.
 
 2. Click the name of the desired vendor.
@@ -130,9 +126,13 @@ Switch Between Plans
 
 4. Choose the desired plan.
 
+   * Store administrators see a dropdown list with all *Active* and *Hidden* plans that exist in the store.
+
    * Vendor’s administrators see all *Active* plans (and the *Hidden* plan, if it is used by the vendor) with their limitations and prices, just like when :doc:`applying for a vendor account. <allow_customers_to_apply_for_vendor_account>`
 
-   * Store owners see a dropdown list with all *Active* and *Hidden* plans that exist in the store.
+     .. important::
+
+         Vendor’s administrators can move their vendors to other plans only if it’s allowed in :doc:`the Vendor Plans add-on settings. <../../addons/vendor_plans/vendor_plans_settings>` Otherwise they will only see their own plan.
 
 5. Click the **Save** button in the top right corner. After that the payment for the new plan will be immediately subtracted from the vendor’s account balance.
 
