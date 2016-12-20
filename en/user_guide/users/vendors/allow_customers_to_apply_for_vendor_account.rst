@@ -34,23 +34,31 @@ Step 2. Provide a Link to the Application Form
 
 After you complete **Step 1**, the vendor application form will be available via a URL like *http://example.com/index.php?dispatch=companies.apply_for_vendor*. You'll only need to replace *http://example.com* with the actual URL of your store.
 
-But there are other ways to make customers aware of the vendor application form. For example, Multi-Vendor demo data includes the **Quick Links** menu with the **Become a seller** link.
+Once a customer fills out the form and clicks **Submit**, the administrator of the store can activate the newly created vendor account.
+
+.. image:: img/vendors_application_form.png
+    :align: center
+    :alt: A customer has to fill in the form to apply for a vendor account.
+
+There are multiple ways to take your customers to the vendor application form. For example, `Multi-Vendor demo <http://demo.mv.cs-cart.com>`_ includes the **Quick Links** menu with the **Become a seller** link. 
+
+You can create your own menu item that would lead to the application form. The menu item must have the following URL: ``dispatch=companies.apply_for_vendor``.
 
 .. image:: img/apply_for_vendor.png
     :align: center
     :alt: A registered customer can apply for a vendor account using a link in the menu.
 
-You can create your own menu item that would lead to the application form. The menu item must have the following URL: ``dispatch=companies.apply_for_vendor``.
+The :doc:`Vendor Plans <../../addons/vendor_plans/index>` add-on also provides the list of available plans. That list appears on a separate page that has a URL like *http://example.com/index.php?dispatch=companies.vendor_plans*. Customers can get to the application form by using the **Choose** button on that page.
+
+You can create your own menu item that would lead to the list of vendor plans. The menu item must have the following URL: ``dispatch=companies.apply_for_vendor``.
 
 .. hint::
 
     :doc:`This article <../../look_and_feel/menus/index>` describes working with menus and menu items in more detail.
 
-After the customer fills out the form and clicks **Submit**, the administrator of the store can activate the newly created vendor account.
-
-.. image:: img/vendors_application_form.png
+.. image:: ../../addons/vendor_plans/img/vendor_plans.png
     :align: center
-    :alt: A customer has to fill in the form to apply for a vendor account.
+    :alt: A registered customer can apply for a vendor account using a link in the menu.
 
 ===============================
 Step 3. Approve the Application

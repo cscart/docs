@@ -28,6 +28,10 @@ For convenience, the import and export sections are divided into **subsections**
 
 * **Users**—user profiles.
 
+.. note::
+
+    Starting with version 4.4.1, Multi-Vendor allows you to export and import :doc:`vendors. <../users/vendors/index>`
+
 To switch between the subsections, use the menu on the right.
 
 .. image:: img/data_subsections.png

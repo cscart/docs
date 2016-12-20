@@ -20,6 +20,7 @@ View the list of the vendors in the Multi-Vendor administration panel under **Ve
     :glob:
 
     account_balance
+    manage_vendor_plans
     allow_customers_to_apply_for_vendor_account
     create_vendor_account
     merge_vendors
