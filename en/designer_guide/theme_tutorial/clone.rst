@@ -1,34 +1,43 @@
 ***************
-Cloning a theme
+Cloning a Theme
 ***************
 
-To create a new theme, first of all clone a basic CS-Cart theme.
+To start developing your own theme, clone the **Responsive** theme, which comes with CS-Cart and Multi-Vendor by default.
 
-To clone a theme, go to the *design/themes* directory of your CS-Cart installation and make a copy of a directory containing a basic theme. In our example it is the *responsive* directory. Rename the copied directory to *tutorial_theme*, for example.
+1. In the Administration panel go to **Design → Themes**.
 
-Theme information is stored in the *manifest.json* file.
+2. Click the **gear** button in the top right corner and choose **Clone theme**.
 
-Open the newly created *tutorial_theme* directory and find the *manifest.json* file there. In the **title** field write *Tutorial theme*. In the **description** field write something like *Tutorial Theme especially designed for this tutorial*.
+   .. note::
 
-The paths to a theme logo and favicon are also defined in the *manifest.json* file.
+       This will clone the theme that is currently active in your store. If your active theme is not **Responsive**, then activate **Responsive** before attempting to clone the theme.
 
-Go to the following directories to replace a logo and favicon for the new theme: *tutorial_theme/media/images* (a logo - *cart.png*) and *tutorial_theme/media/images/icons* (a favicon - *favicon.ico*).
+.. image:: img/clone_a_theme.png
+    :align: center
+    :alt: Cloning a theme in the Administration panel.
 
-.. code-block:: none
+3. A popup window will open. Enter the details of your new cloned theme:
 
-	manifest.json
-	{
-    	"title": "Tutorial theme",
-    	"description": "Tutorial Theme especially designed for this tutorials.",
-    	"logo": "media/images/cart.png",
-    	"developer": "Simtech",
-    	"favicon": "media/images/icons/favicon.ico",
-    	"parent_theme": "responsive"
-	}
+   * **Directory**—the name of the new theme’s directory in *design/themes*.
 
-Save the file.
+     .. important::
 
-After cloning a theme and adding its information you should activate it in the administration panel.
+         If you want your theme to work properly, please specify the name of the directory in lowercase and use ``_`` (underscore) instead of spaces. A good example would be ``new_theme``.
 
-To do it, go to the **Design > Themes** section and click **Activate** on the **Tutorial theme: Modern** style.
+   * **Name**—the name of your new theme as it appears in the Administration panel. For example, let’s call it *New Theme*.
 
+   * **Description**—the description of your new theme.
+
+4. Once you’ve entered the details, click **Save**.
+ 
+This will create a clone theme called **New Theme**, which will have **Responsive** as its :doc:`parent theme. <../parent_themes>` A new folder named just like you specified in the **Directory** field will appear in the *design/themes* directory. 
+
+Now the new theme is ready to be customized. In the next tutorial we’ll customize the layout via the Administration panel and arrange the blocks to match the intended design.
+
+.. note::
+
+    The clone theme won’t be activated automatically after creation. You’ll need to activate it manually under **Design → Themes**.
+
+.. image:: img/clone_theme_details.png
+    :align: center
+    :alt: The properties of the clone theme.

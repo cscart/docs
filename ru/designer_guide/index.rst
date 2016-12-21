@@ -8,3 +8,4 @@
 
     theme_tutorial/index
     media
+    parent_themes
