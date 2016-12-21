@@ -68,16 +68,24 @@ Step 3. Approve the Application
 
 3.2. Find the vendor account you want to activate.
 
-   .. hint::
+     .. hint::
 
-       The vendor accounts that haven't been activated or disabled yet have the **New** status. 
+         The vendor accounts that haven't been activated or disabled yet have the **New** status. 
 
 3.3. Change the status of the desired account to **Active**.
 
-   .. hint::
+     .. hint::
 
-       :doc:`Learn more about vendor statuses <vendor_statuses>` in the corresponding article of the documentation.
+         :doc:`Learn more about vendor statuses <vendor_statuses>` in the corresponding article of the documentation.
 
 .. image:: img/change_vendor_status.png
     :align: center
     :alt: Find the vendor account you want to activate and change its status from New to Active.
+
+Once you do that, the new vendor will receive an email notification, and vendor's administrators will be able to log in to vendor's administration panel. The content of the notification depends on what you did in step 1.3:
+
+* If you allowed automatic creation of a vendor's administrator account, the email notification will include the account details and the login URL for vendor's administration panel.
+
+* If you didn't allow automatic creation of a vendor's administrator account, the new vendor will simply be notified that the application for a vendor account has been approved.
+
+  You'll have to create a vendor's administrator account manually. When you create the account, you can choose whether or not to send an email notification with login credentials and URL.
