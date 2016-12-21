@@ -8,4 +8,5 @@
 
     theme_tutorial/index
     media
+    language_variables_in_themes
     parent_themes

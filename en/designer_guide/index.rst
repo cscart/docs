@@ -25,7 +25,7 @@ A theme contains the set of files defining the store appearance. It consists of 
     :align: center
     :alt: Themes
 
-Themes in CS-Cart are stored in the *design/themes/* directory. In CS-Cart version 4.2 the **Responsive** theme is the default.
+Themes in CS-Cart are stored in the *design/themes/* directory. In CS-Cart 4.4.x the **Bright** theme is enabled by default, but it has **Responsive** as its :doc:`parent theme. <parent_themes>`
 
 A theme structure consists of 6 directories and 2 service files: 
 
@@ -33,15 +33,17 @@ A theme structure consists of 6 directories and 2 service files:
 
 	*	The **styles** directory - contains files including *.less* variables and the Theme Editor elements structure.
 
-	*	The **templates** directory - contains templates (the *.tpl* files).
+	*	The **templates** directory - contains templates (*.tpl* files).
 
-	*	The **mail** directory - contains e-mail notification templates (the *.tpl* files).
+	*	The **mail** directory - contains e-mail notification templates (*.tpl* files).
 
-	*	The **css** directory - contains the theme styles in the *.less* and *.css* files.
+	*	The **css** directory - contains the theme styles in *.less* and *.css* files.
 
 	*	The **media** directory - contains fonts, icons, and images for a theme.
 
-	*	The **customer_screenshot.png** image - the theme preview. It is shown in the *Design > Themes* section of the administration panel.
+	*	The **langs** directory - contains the translations and language variables of the theme (*.po* files).
+
+	*	The **customer_screenshot.png** image - the theme preview. It is shown in the **Design → Themes** section of the Administration panel.
 
 	*	The **manifest.json** file - contains the theme information.
 
@@ -56,6 +58,7 @@ This file contains the main theme information and has the following components:
 	*	``developer`` - company name. If there is an individual developer, write his name. This information is shown in the *Design > Themes* section of the administration panel in the theme information.
 	*	``favicon`` - path to a theme favicon. It is better to keep a favicon in the theme *media/images/icons* directory.
 	*	``parent_theme`` - parent theme name. If you develop a theme based on the Responsive theme, write *responsive*. If you define something different in this field or leave it empty, add-on templates will not be uploaded for the theme.
+	*	``default_language`` - the code of the default language of the theme. It will be used to provide translations for all languages the theme is not translated to. See more information in the :doc:`dedicated article. <language_variables_in_themes>`
 
 Your theme must inherit from one of two built-in themes: Basic or Responsive. You must set one of these in the ``parent_theme`` param.
 Select the parent theme based on your needs: if you are developing a responsive theme, set ``parent_theme`` to ``responsive``, if you are developing a fixed-width theme, set ``parent_theme`` to ``basic``.
