@@ -2,12 +2,17 @@
 Stores
 ******
 
-CS-Cart allows you to manage multiple stores with one administration panel. Every store has a separate storefront,  settings, and checkout mechanism, so that visitors can treat them as independent stores. This section of the documentation describes how to work with multiple stores.
+.. important::
 
-To configure multiple storefronts on your web hosting, please :doc:`follow the inistructions <../../install/storefronts/index>`.
+    This article applies only to CS-Cart, not Multi-Vendor.
+
+CS-Cart allows you to manage multiple storefronts with one administration panel. Storefronts can have their own products, categories, settings, and checkout mechanism, so that visitors can treat them as independent stores. This section of the documentation describes how to work with multiple storefronts.
+
+To configure multiple storefronts on your web hosting, please :doc:`follow these inistructions. <../../install/storefronts/index>`
 
 .. note::
-    Unless you use CS-Cart Ultimate, you’ll need to `purchase additional storefront licenses <http://www.cs-cart.com/cs-cart-storefront-license.html>`_, if you want to manage multiple stores with one Administration panel. You can also specify the desired number of storefronts when you `buy a CS-Cart license <http://www.cs-cart.com/cs-cart-license.html>`_.
+
+    To manage multiple storefronts with one Administration panel, `purchase additional storefront licenses <http://www.cs-cart.com/cs-cart-storefront-license.html>`_ or specify the desired number of storefronts when you `buy a CS-Cart license <http://www.cs-cart.com/cs-cart-license.html>`_. Starting with version 4.4.2, there is also `CS-Cart Ultimate <https://www.cs-cart.com/cs-cart-ultimate-license.html>`_, which offers an unlimited number of storefronts.
 
 .. toctree::
     :maxdepth: 4
