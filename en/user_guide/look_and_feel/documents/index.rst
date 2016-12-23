@@ -78,11 +78,13 @@ The main area has multiple tabs:
 
 * **Products table**—the list of columns of the product table that appears in the document. You can customize the product table by adding, editing, disabling, and deleting the columns. This table is added to the document via the ``products_table`` code snippet.
 
-* **Returned products table**—the list of columns of the table with the returned products. It works the same way as the product table, but is added to the document via the ``returned_products_table`` code snippet.
+* **Returned products table**—the list of columns of the table with the returned products. It works the same way as the product table, but is added to the document via the ``returned_products_table`` code snippet. 
 
-  .. note::
+  This tab appears only for invoice and order summary, and only when the **RMA** add-on is active.
 
-      The **Returned products** table tab appears only for invoice and order summary, and only when the **RMA** add-on is active.
+.. note::
+
+    The names of columns on the **Products table** and **Returned products table** tabs are language-dependent: you can set the names of columns for each language separately.
 
 -------------------------
 2. Variables and Snippets
