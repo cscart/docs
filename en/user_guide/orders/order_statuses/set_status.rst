@@ -26,13 +26,17 @@ How To: Set up an Order Status
 Status Properties
 =================
 
+.. note::
+
+    Properties marked with ***** won't appear if you :doc:`enable the email template editor. <../../look_and_feel/email_templates/enable_email_editor>` In that case you're supposed to manage email notifications related to order statuses via the :doc:`email template editor. <../../look_and_feel/email_templates/index>`
+
 * **Name**—the name of the status as it appears in the Administration panel.
 
 * **Status**—a letter that identifies the status in the database. That's why there can't be more than 26 statuses.
 
-* **E-mail subject**—the subject of an e-mail notification about the order with this status.
+* **E-mail subject***—the subject of an e-mail notification about the order with this status.
 
-* **E-mail header**—the actual text of an e-mail notification about the order with the status.
+* **E-mail header***—the actual text of an e-mail notification about the order with the status.
 
 * **Color**—the color of this status on the order list in the Administration panel. There are two ways to set it up:
 
@@ -40,9 +44,9 @@ Status Properties
 
   * Click the palette icon pick the color from the palette.
 
-* **Notify customer**—tick this checkbox to inform the customer by email about placing the order with this status or changing the order information.
+* **Notify customer***—tick this checkbox to inform the customer by email about placing the order with this status or changing the order information.
 
-* **Notify orders department**—tick this checkbox to inform the store administrator by email about placing the order with this status.
+* **Notify orders department***—tick this checkbox to inform the store administrator by email about placing the order with this status.
 
   .. note ::
 
