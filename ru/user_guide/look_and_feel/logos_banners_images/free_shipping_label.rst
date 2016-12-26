@@ -43,7 +43,7 @@
 
 .. note ::
 
-    Если после установки модуля изменения не отображаются, `очистите кэш шаблонов <../../../../developer_guide/addons/tutorials/cache>`.
+    Если после установки модуля изменения не отображаются, :doc:`очистите кэш шаблонов. <../../../developer_guide/addons/tutorials/addon_creation/cache>`
 
 .. image:: ../changing_attributes/img/upload_and_install_addon.png
    :align: center

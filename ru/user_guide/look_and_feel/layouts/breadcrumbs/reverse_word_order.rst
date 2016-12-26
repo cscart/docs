@@ -40,7 +40,7 @@
 
 .. note ::
 
-    Если после установки модуля изменения не отображаются, `очистите кэш шаблонов <../../../../developer_guide/addons/tutorials/cache>`.
+    Если после установки модуля изменения не отображаются, `очистите кэш шаблонов. <../../../../developer_guide/addons/tutorials/addon_creation/cache>`
 
 .. image:: img/reverse_word_order_01.png
     :align: center
