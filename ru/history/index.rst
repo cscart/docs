@@ -29,7 +29,6 @@
     :maxdepth: 2
     :glob:
 
-    442sp1
     442
     441
 
@@ -41,6 +40,7 @@
     :maxdepth: 2
     :hidden:
 
+    442sp1
     4310
     439
     438
