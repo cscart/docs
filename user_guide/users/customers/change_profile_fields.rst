@@ -6,17 +6,17 @@ Profile fields contain various information about a user. Users can fill in those
 
 The list of profile fields is available under **Administration → Profile fields**. On that page you can:
 
-* Add, edit, hide, and delete profile fields.
-
-* Determine whether or not a field is required.
+.. contents::
+   :backlinks: none
+   :local:
 
 .. image:: img/profile_fields.png
     :align: center
     :alt: The list of profile fields in the administration panel.
 
-========================
-Add/Edit a Profile Field
-========================
+=======================
+Add/Edit Profile Fields
+=======================
 
 1. To add a profile field, click the **+** button in the top right corner. To edit an existing profile field, click the **gear** button next to the desired field and choose **Edit**.
 
@@ -36,13 +36,13 @@ Add/Edit a Profile Field
 
          Once you create a profile field, you won't be able to change the type of that field.
 
-   * **Section**—determines whether this field is a part of user's contact information or billing/shipping address. If you choose *Billing/Shipping address*, you'll be able to configure whether or not to show or require that field separately in the billing and shipping address forms. 
+   * **Section**—determines whether this field is a part of user's contact information or billing/shipping address. If you choose *Billing/Shipping address*, the field will be created both for billing and shipping address. However, you'll be able to hide fields or make them required separately for each address type.
 
    * **User-defined CSS class**—allows you to assign a custom CSS class to this field.
 
-   * **Profile (Show/Required)**—the first checkbox makes the field appear during profile creation or editing. The second checkbox makes this field required—the user won't be able to create or update the profile without filling in this field.
+   * **Profile (Show/Required)**— ticking the first checkbox will make this field appear during profile creation or editing. Ticking the second checkbox will make this field required—a user won't be able to create or update a profile without filling in this field.
 
-   * **Checkout (Show/Required)**—the first checkbox makes the field appear at checkout. The second checkbox makes this field required—the user won't be able to complete checkout without filling in this field.
+   * **Checkout (Show/Required)**—ticking the first checkbox will make this field appear at checkout. Ticking the second checkbox will make this field required—a user won't be able to complete checkout without filling in this field.
 
 3. Once you've specified everything you needed, click **Create** (or **Save**, if you're editing an existing field).
 
@@ -54,21 +54,17 @@ Add/Edit a Profile Field
 Hide Fields or Make Them Required
 =================================
 
-The product field list has two columns that determine the areas where a field should appear: **Profile** and **Checkout**. 
+The profile field list has two columns that determine the areas where a field should appear: **Profile** and **Checkout**. 
 
 Each area has two checkboxes:
 
-* **Show**—the field appears in that area. 
+* **Show**—if you tick this checkbox, the field will appear in the corresponding area. 
 
   .. hint::
 
-      If you want to disable a certain field without deleting it entirely, just untick the **Show** checkboxes for both **Profile** and **Checkout**.
+      If you want to hide a certain field without deleting it entirely, just untick the **Show** checkboxes for both **Profile** and **Checkout**.
 
-* **Required**—the field must be filled in, or a user won't be able to proceed.
-
-  * For profile that means that the user won't be allowed to register a new account or save the edited one, if the required field is empty.
-
-  * For checkout that means that the user won't be able to submit an order if a required field is empty.
+* **Required**—if you tick this checkbox, the field will have to be filled in. Otherwise, depending on the area where the field is required, a user won't be able to register a new account, save changes in the edited account, or submit an order.
 
 Once you configure the visibility of the profile fields, click **Save** in the top right corner. Otherwise your changes will be lost when you leave the page.
 
@@ -98,7 +94,7 @@ Fields that exist by default can't be deleted. You can only delete custom profil
 
 .. important::
 
-     If a profile field belongs to the *Billing/Shipipng address* section, then the checkboxes and the **Delete** action under the **gear** button will only appear for the **Shipping address** form. Deleting a field like that will remove it both from the **Billing address** and the **Shipping address** forms.
+     If a profile field belongs to the *Billing/Shipipng address* section, then the checkboxes and the **Delete** action will only appear under **Shipping address**. A field deleted from shipping address also gets deleted from billing address.
 
 .. image:: img/delete_profile_fields.png
     :align: center
