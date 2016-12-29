@@ -50,7 +50,7 @@
 
 .. note ::
 
-    Если после установки модуля изменения не отображаются, :doc:`очистите кэш шаблонов. <../../../developer_guide/addons/tutorials/addon_creation/cache>`
+    Если после выполнения всех инструкций иконки рядом с названиями способов доставки все равно не отображаются, попробуйте :doc:`очистить кэш шаблонов. <../../../developer_guide/addons/tutorials/addon_creation/cache>`
 
 .. image:: img/shipping_icon.png
     :align: center
