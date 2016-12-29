@@ -54,7 +54,7 @@ After that icons should appear next to the names of shipping methods on the chec
 
 .. note ::
 
-    If you followed all the instructions in the article and shippings icon haven't appeared, try :doc:`clearing the template cache. <../../../developer_guide/getting_started/cache_clearing>`
+    If you followed all the instructions in the article, and the shipping icons haven't appeared, try :doc:`clearing the template cache. <../../../developer_guide/getting_started/cache_clearing>`
 
 .. image:: img/shipping_icon.png
     :align: center
