@@ -4,7 +4,11 @@ How To: Display Shipping Method Icons on Checkout Page
 
 .. warning::
 
-    The changes suggested in this article may conflict with the add-ons that use the same hook. The code and the provided file work only with CS-Cart/Multi-Vendor 4.3.7 and newer versions. For older versions please refer to `this article. <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/changing_attributes/shipping_icons.html>`_
+    The changes suggested in this article may conflict with the add-ons that use the same hook. 
+
+.. important::
+
+    The code and the file provided in this article work only in **CS-Cart/Multi-Vendor 4.3.7 and newer versions**. To find instructions for older versions, please refer to `this article. <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/changing_attributes/shipping_icons.html>`_
 
 =======================
 Step 1. Override a Hook
