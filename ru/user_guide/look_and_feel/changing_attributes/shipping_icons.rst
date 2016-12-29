@@ -4,70 +4,72 @@
 
 .. warning::
 
-    Изменения, предложенные в данной статье, могут конфликтовать с модулями, использующими тот же хук.
+    Кроме того, эти изменения могут конфликтовать с модулями, использующими тот же хук.
 
-Выведение иконок на витрину осуществляется в два шага:
+Выведение иконок для способа доставки на витрину осуществляется в два шага:
 
 =========================
 Шаг 1. Перезаписываем хук
 =========================
 
-1. В корневой директории с установленным CS-Cart создайте следующий путь: */design/themes/[название_темы]/templates/addons/my_changes/hooks/checkout*.
+1.1. В корневой директории с установленным CS-Cart создайте следующий путь: */design/themes/[название_темы]/templates/addons/my_changes/hooks/checkout*.
 
 .. important ::
 
     Перед началом работы в панели администратора откройте страницу **Модули → Управление модулями** и убедитесь, что модуль **Мои изменения** установлен и включен.
 
-2. В данной директории создайте файл **shipping_method.override.tpl** со следующим содержимым:
+1.2. В данной директории создайте файл **shipping_method.override.tpl** со следующим содержимым:
 
-.. code-block:: html+smarty
+     .. code-block:: html+smarty
+   
+         {assign var="shipping_image_pair" value=$shipping.shipping_id|fn_get_image_pairs:shipping:M}
 
-    {if $display == "radio"}
-        {assign var="shipping_image_pair" value=$shipping.shipping_id|fn_get_image_pairs:shipping:M}
+         <p class="ty-shipping-options__method">
+             <input type="radio" class="ty-valign" id="sh_{$group_key}_{$shipping.shipping_id}" name="shipping_ids[{$group_key}]" value="{$shipping.shipping_id}" onclick="fn_calculate_total_shipping_cost();" {$checked} />
+             <label for="sh_{$group_key}_{$shipping.shipping_id}" class="ty-valign">
+                 {if $shipping_image_pair}
+                     {include file="common/image.tpl" obj_id=$shipping_id images=$shipping_image_pair image_width=100 image_height=100}
+                 {/if}
+                 {$shipping.shipping} {$delivery_time} - {$rate nofilter}
+             </label>
+         </p>
+         {if $shipping.description}
+             <div class="ty-checkout__shipping-tips">
+                 <p>{$shipping.description nofilter}</p>
+             </div>
+         {/if}
 
-        <p class="ty-shipping-options__method">
-            <input type="radio" class="ty-valign" id="sh_{$group_key}_{$shipping.shipping_id}" name="shipping_ids[{$group_key}]" value="{$shipping.shipping_id}" onclick="fn_calculate_total_shipping_cost();" {$checked} />
-            <label for="sh_{$group_key}_{$shipping.shipping_id}" class="ty-valign">
-                {if $shipping_image_pair}
-                    {include file="common/image.tpl" obj_id=$shipping_id images=$shipping_image_pair image_width=100 image_height=100}
-                {/if}
-                {$shipping.shipping} {$delivery_time} - {$rate nofilter}
-            </label>
-        </p>
+.. important::
 
-    {elseif $display == "select"}
-        <option value="{$shipping.shipping_id}" {$selected}>{$shipping.shipping} {$delivery_time} - {$rate nofilter}</option>
-
-    {elseif $display == "show"}
-        <p>
-            {$strong_begin}{$rate.name} {$delivery_time} - {$rate nofilter}{$strong_begin}
-        </p>
-    {/if}
-    {if $shipping.description}
-        <div class="ty-checkout__shipping-tips">
-            <p>{$shipping.description nofilter}</p>
-        </div>
-    {/if}
+     Изменения из этой статьи подходят только для CS-Cart 4.3.7 и более новых версий.
 
 
 В данном примере ширина и высота иконки способа доставки равняются 100 пикселям. Чтобы задать другой размер иконок, в параметрах ``image_width`` и ``image_height`` введите собственные значения.
-
-.. note ::
-
-    Если после установки модуля изменения не отображаются, очистите кэш вашего магазина. В панели администратора вашего магазина откройте меню **Администрирование → Хранилище данных** и нажмите **Очистить кэш**.
 
 --------------------------------
 Совместимость с другими модулями
 --------------------------------
 
-В некоторых случаях из-за использования одинакового хука модули могут работать некорректно. В этом случае, вам потребуется найти файл **shipping_method.post.tpl**, расположенный по адресу */design/themes/responsive/templates/addons/[addon_name]/hooks/checkout*, где [addon_name] — название не работающего модуля. После того, как вы нашли этот файл, скопируйте его содержимое в конец файла, созданного в шаге 1.
+В некоторых случаях из-за использования одинакового хука модули могут работать некорректно. В этом случае, вам потребуется найти файл **shipping_method.post.tpl**, расположенный по адресу */design/themes/responsive/templates/addons/[addon_name]/hooks/checkout*, где [addon_name] — название неработающего модуля. После того, как вы нашли этот файл, скопируйте его содержимое в конец файла **shipping_method.override.tpl**, который мы добавили в модуль **My changes** в шаге 1.2.
 
-=========================================
-Шаг 2. Загружаем иконки способов доставки 
-=========================================
+=============================================
+Шаг 2. Загружаем иконки для способов доставки 
+=============================================
 
-1. В панели администратора вашего магазина откройте страницу **Администрирование → Доставка и налоги → Способы доставки**, нажмите кнопку с изображением **шестеренки** рядом с нужным способом и выберите **Редактирвоать**.
+2.1. В панели администратора вашего магазина откройте страницу **Администрирование → Доставка и налоги → Способы доставки**.
 
-2. На вкладке **Общее** в разделе **Иконка** загрузите нужное изображение.
+2.2. Нажмите кнопку с изображением **шестеренки** рядом с нужным способом и выберите **Редактирвоать**.
 
-3. Нажмите **Сохранить и закрыть**.
+2.3. На вкладке **Общее** в разделе **Иконка** загрузите нужное изображение.
+
+2.4. Нажмите **Сохранить и закрыть**.
+
+После этого иконки должны появиться рядом со способами доствики на странице оформления заказа.
+
+.. note ::
+
+    Если после установки модуля изменения не отображаются, :doc:`очистите кэш шаблонов. <../../../developer_guide/addons/tutorials/addon_creation/cache>`
+
+.. image:: img/shipping_icon.png
+    :align: center
+    :alt: Иконка способа доставки на странице оформления заказа в CS-Cart.
