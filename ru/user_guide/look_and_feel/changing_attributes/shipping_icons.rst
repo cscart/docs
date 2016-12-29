@@ -4,7 +4,7 @@
 
 .. warning::
 
-    Кроме того, эти изменения могут конфликтовать с модулями, использующими тот же хук.
+    Изменения из этой статьи могут конфликтовать с модулями, использующими тот же хук.
 
 Выведение иконок для способа доставки на витрину осуществляется в два шага:
 
@@ -14,43 +14,25 @@
 
 1.1. В корневой директории с установленным CS-Cart создайте следующий путь: */design/themes/[название_темы]/templates/addons/my_changes/hooks/checkout*.
 
-.. important ::
+     .. important ::
 
-    Перед началом работы в панели администратора откройте страницу **Модули → Управление модулями** и убедитесь, что модуль **Мои изменения** установлен и включен.
+         Перед началом работы в панели администратора откройте страницу **Модули → Управление модулями** и убедитесь, что модуль **Мои изменения** установлен и включен.
 
-1.2. В данной директории создайте файл **shipping_method.override.tpl** со следующим содержимым:
+1.2. Скачайте файл :download:`shipping_method.override.tpl <files/shipping_method.override.tpl>` и поместите его в директорию из пункта 1.1. Обратите внимание, что **файл подходит только для версии CS-Cart 4.3.7 и выше**.
 
-     .. code-block:: html+smarty
-   
-         {assign var="shipping_image_pair" value=$shipping.shipping_id|fn_get_image_pairs:shipping:M}
+     * Если у вас версия 4.3.6, скачайте :download:`этот файл <files/436shipping_method.override.tpl>` и переименуйте его в **shipping_method.override.tpl**.
 
-         <p class="ty-shipping-options__method">
-             <input type="radio" class="ty-valign" id="sh_{$group_key}_{$shipping.shipping_id}" name="shipping_ids[{$group_key}]" value="{$shipping.shipping_id}" onclick="fn_calculate_total_shipping_cost();" {$checked} />
-             <label for="sh_{$group_key}_{$shipping.shipping_id}" class="ty-valign">
-                 {if $shipping_image_pair}
-                     {include file="common/image.tpl" obj_id=$shipping_id images=$shipping_image_pair image_width=100 image_height=100}
-                 {/if}
-                 {$shipping.shipping} {$delivery_time} - {$rate nofilter}
-             </label>
-         </p>
-         {if $shipping.description}
-             <div class="ty-checkout__shipping-tips">
-                 <p>{$shipping.description nofilter}</p>
-             </div>
-         {/if}
+     * Если у вас версия 4.3.5 и ниже, скачайте :download:`этот файл <files/435shipping_method.override.tpl>` и переименуйте его в **shipping_method.override.tpl**.
 
 .. important::
 
-     Изменения из этой статьи подходят только для CS-Cart 4.3.7 и более новых версий.
-
-
-В данном примере ширина и высота иконки способа доставки равняются 100 пикселям. Чтобы задать другой размер иконок, в параметрах ``image_width`` и ``image_height`` введите собственные значения.
+    В файле задана ширина и высота иконки способа доставки в 100 пикселей. Чтобы задать другой размер иконок, в параметрах ``image_width`` и ``image_height`` введите собственные значения.
 
 --------------------------------
 Совместимость с другими модулями
 --------------------------------
 
-В некоторых случаях из-за использования одинакового хука модули могут работать некорректно. В этом случае, вам потребуется найти файл **shipping_method.post.tpl**, расположенный по адресу */design/themes/responsive/templates/addons/[addon_name]/hooks/checkout*, где [addon_name] — название неработающего модуля. После того, как вы нашли этот файл, скопируйте его содержимое в конец файла **shipping_method.override.tpl**, который мы добавили в модуль **My changes** в шаге 1.2.
+В некоторых случаях из-за использования одинакового хука модули могут работать некорректно. Если после шага 1 какой-то из ваших модулей перестал работать правильно, найдите файл **shipping_method.post.tpl**, расположенный по адресу */design/themes/responsive/templates/addons/[addon_name]/hooks/checkout*, где [addon_name] — название неработающего модуля. После того, как вы нашли этот файл, скопируйте его содержимое в конец файла **shipping_method.override.tpl** из шага 1.
 
 =============================================
 Шаг 2. Загружаем иконки для способов доставки 
