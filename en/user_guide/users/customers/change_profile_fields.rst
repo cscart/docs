@@ -28,6 +28,8 @@ Add/Edit Profile Fields
 
    * **Description**—the name of the field as it appears to customers and administrators.
 
+   * **Field name**—the character sequence unique for each profile field. It serves to identify the field and can be :ref:`used as a variable in the document editor. <profile-field-in-document>`
+
    * **Position**—the position of this profile field on the list relative to other fields.
 
    * **Type**—the type of the profile field. It determines what kind of values can be entered or selected in the field. If you choose *Radio group* or *Multiple checkboxes*, you'll have to specify the possible variants on the **Variants** tab.
@@ -71,6 +73,30 @@ Once you configure the visibility of the profile fields, click **Save** in the t
 .. image:: img/shown_and_required_fields.png
     :align: center
     :alt: Tick the corresponding checkboxes to determine where the field should appear.
+
+.. _profile-field-in-document:
+
+=====================================
+Use Profile Fields in Document Editor
+=====================================
+
+Starting with version 4.4.1, CS-Cart and Multi-Vendor come with :doc:`the document editor <../../look_and_feel/documents/index>` that allows to customize invoices, packing slips, and other documents. 
+
+**If a profile field appears at checkout**, its identifier from the **Field name** property will also appear in the document editor among other variables. The field can be found in the ``user`` group of variables. Simply click on the field name, and it will be added to the place where you last left the cursor in the document template. 
+
+.. important::
+
+    If the field belongs to the *Billing/Shipping address* section, it will be represented by 2 variables with different prefixes: ``b_`` (billing address) and ``s_`` (shipping address).
+
+.. image:: img/custom_field_in_document_editor.png
+    :align: center
+    :alt: Custom profile fields on the list of variables.
+
+You can also refer to that profile field by its name manually. For example, if the field name is ``s_example_field``, put ``{{ u.s_example_field }}`` to where you want the content of the field to appear in the document.
+
+.. hint::
+
+    In this case ``u`` stands for ``users``.
 
 =====================
 Delete Profile Fields
