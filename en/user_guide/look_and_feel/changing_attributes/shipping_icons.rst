@@ -4,7 +4,7 @@ How To: Display Shipping Method Icons on Checkout Page
 
 .. warning::
 
-    The changes suggested in this article may conflict with the add-ons that use the same hook.
+    The changes suggested in this article may conflict with the add-ons that use the same hook. The code and the provided file work only with CS-Cart/Multi-Vendor 4.3.7 and newer versions. For older versions please refer to `this article. <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/changing_attributes/shipping_icons.html>`_
 
 =======================
 Step 1. Override a Hook
@@ -12,9 +12,9 @@ Step 1. Override a Hook
 
 1.1. In the root directory of your CS-Cart installation, create the following directory path: */design/themes/[CURRENT_THEME_NAME]/templates/addons/my_changes/hooks/checkout*.
 
-   .. important ::
+     .. important ::
 
-       Make sure that the **My changes** add-on is installed and activated in the **Add-ons → Manage add-ons** section of the Administration panel.
+         Make sure that the **My changes** add-on is installed and activated in the **Add-ons → Manage add-ons** section of the Administration panel.
 
 1.2. In this directory create the **shipping_method.override.tpl** file with the following content:
 
@@ -37,17 +37,17 @@ Step 1. Override a Hook
              </div>
          {/if}
 
-.. important::
+As an alternative, you can :download:`download this file <files/shipping_method.override.tpl>` and put it into the directory you created in step 1.1.
 
-    This article applies only to version 4.3.7 and up. For older versions please refer to `this article. <http://docs.cs-cart.com/4.3.x/user_guide/look_and_feel/changing_attributes/shipping_icons.html>`_
+.. note::
 
-In this example the shipping method icon width is 100 and its height is 100 too. If you want to define another width and height, type your own numbers for the ``image_width`` and ``image_height`` parameters.
+    In this example the shipping method icon width is 100 and its height is 100 too. If you want to define another width and height, type your own numbers for the ``image_width`` and ``image_height`` parameters.
 
 --------------------------------
 Compatibility with Other Add-ons
 --------------------------------
 
-If an add-on doesn't work properly after you apply these changes, it may be because it uses the same hook. In that case try to find **shipping_method.post.tpl** in */design/themes/[CURRENT_THEME_NAME]/templates/addons/[addon_name]/hooks/checkout*. If you find that file, copy its content to the end of **shipping_method.override.tpl** that you added to **My changes** in step 1.2.
+If an add-on doesn't work properly after you apply these changes, it may be because it uses the same hook. In that case try to find **shipping_method.post.tpl** in */design/themes/[CURRENT_THEME_NAME]/templates/addons/[addon_name]/hooks/checkout*. If you find that file, copy its content to the end of the **shipping_method.override.tpl** file from step 1.
 
 ====================================
 Step 2. Upload Shipping Method Icons
@@ -65,7 +65,7 @@ Now icons should appear next to the names of shipping methods on the checkout pa
 
 .. note ::
 
-    If your changes to the template are not displayed, try :doc:`clearing the template cache <../../../developer_guide/getting_started/cache_clearing>`.
+    If you followed all the instructions in the article, and the shipping icons haven’t appeared, try :doc:`clearing the template cache. <../../../developer_guide/getting_started/cache_clearing>`
 
 .. image:: img/shipping_icon.png
     :align: center
