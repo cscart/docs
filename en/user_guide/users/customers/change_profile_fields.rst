@@ -68,11 +68,19 @@ Each area has two checkboxes:
 
 * **Required**—if you tick this checkbox, the field will have to be filled in. Otherwise, depending on the area where the field is required, a user won't be able to register a new account, save changes in the edited account, or submit an order.
 
-Once you configure the visibility of the profile fields, click **Save** in the top right corner. Otherwise your changes will be lost when you leave the page.
-
 .. image:: img/shown_and_required_fields.png
     :align: center
     :alt: Tick the corresponding checkboxes to determine where the field should appear.
+
+Once you configure the visibility of the profile fields, click **Save** in the top right corner. After that the changes should take effect.
+
+.. important::
+
+    If you don't click **Save**, your changes will be lost when you leave the page.
+
+.. image:: img/shown_and_required_fields_in_profile.png
+    :align: center
+    :alt: Ticking or unticking the checkboxes will affect the corresponding pages.
 
 .. _profile-field-in-document:
 
@@ -120,7 +128,7 @@ Fields that exist by default can't be deleted. You can only delete custom profil
 
 .. important::
 
-     If a profile field belongs to the *Billing/Shipipng address* section, then the checkboxes and the **Delete** action will only appear under **Shipping address**. A field deleted from shipping address also gets deleted from billing address.
+     If a profile field belongs to the *Billing/Shipping address* section, then the checkboxes and the **Delete** action will only appear under **Shipping address**. A field deleted from shipping address also gets deleted from billing address.
 
 .. image:: img/delete_profile_fields.png
     :align: center
