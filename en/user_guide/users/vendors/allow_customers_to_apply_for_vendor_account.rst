@@ -72,17 +72,17 @@ Step 3. Approve the Application
 
          The vendor accounts that haven't been activated or disabled yet have the **New** status. 
 
-3.3. Change the status of the desired account to **Active**.
+3.3. Change the status of the desired account to **Active** or **Pending**.
 
      .. hint::
 
-         :doc:`Learn more about vendor statuses <vendor_statuses>` in the corresponding article of the documentation.
+         Active and pending vendors can access the administration panel and manage their products. However, customers won't be able to see pending vendors and their products on the storefront. :doc:`Learn more about vendor statuses. <vendor_statuses>`
 
 .. image:: img/change_vendor_status.png
     :align: center
-    :alt: Find the vendor account you want to activate and change its status from New to Active.
+    :alt: Find the vendor account you want to activate and change its status to Pending or Active.
 
-Once you do that, the new vendor will receive an email notification, and vendor's administrators will be able to log in to vendor's administration panel. The content of the notification depends on what you did in step 1.3:
+Once you set the status to **Active** or **Pending**, the new vendor will receive an email notification, and vendor's administrators will be able to log in to vendor's administration panel. The content of the notification depends on what you did in step 1.3:
 
 * If you allowed automatic creation of a vendor's administrator account, the email notification will include the account details and the login URL for vendor's administration panel.
 
