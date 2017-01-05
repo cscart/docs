@@ -1,6 +1,6 @@
-**********************************
-Global and Store-Specific Settings
-**********************************
+***************************************
+Global and Storefront-Specific Settings
+***************************************
 
 .. important::
 
@@ -17,7 +17,7 @@ When working with multiple storefronts, remember that CS-Cart has different type
 * **Storefront-specific settings** affect a particular storefront and its behavior. These settings include storefront appearance options (for example, thumbnail dimensions), usage of secure connection at checkout, company information, and so on.
 
 .. note::
-    Every storefront also has different templates, blocks placement, site maps, menus, etc.
+    Different storefronts also have different templates, block placement, site maps, menus, etc.
 
 ==================
 Configure Settings

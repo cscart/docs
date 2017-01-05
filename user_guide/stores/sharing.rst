@@ -16,7 +16,7 @@ When you create an object (product, page, promotion, shipping method, etc.) in C
 
     You can't share categories, because :doc:`categories determine the storefronts to which products belong. <many_stores_one_catalog>`
 
-CS-Cart supports two types of sharing rules depending on the object type:
+CS-Cart has two types of sharing rules depending on the object type:
 
 * **Invariable sharing**: objects are shared among storefronts without any changes. This rule applies to such objects as product features and filters, global product options, promotions, CMS content, languages, currencies, and shipping methods.
 
@@ -68,7 +68,7 @@ Share Other Objects (Invariable Sharing)
     :align: center
     :alt: Select all stores to switch to the root administrator mode.
 
-2. Use the top navigation menu to browse to the object that you need to share. For example, go to **Administration → Shipping & Taxes → Shipping methods** to share a shipping method.
+2. Choose an object that you need to share. For example, go to **Administration → Shipping & Taxes → Shipping methods** to share a shipping method.
 
 3. Click the **gear** button of the object. This opens the object configuration page.
 
