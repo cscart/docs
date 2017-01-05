@@ -24,7 +24,7 @@ Let's make sure the visitors from those countries get to the right storefront.
 
    .. hint::
 
-       If you leave the checkbox unticked, people won't be redirected from this storefront automatically, even if you have another dedicated store for their country.
+       If you leave the checkbox unticked, people won't be redirected from this storefront automatically, even if you have another dedicated storefront for their country.
 
 5. Choose the countries from the list. In our case that's *Canada* and *United Kingdom (Great Britain)*.
 
