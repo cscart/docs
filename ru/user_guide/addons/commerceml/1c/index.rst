@@ -10,6 +10,7 @@
     :maxdepth: 3
     :glob:
 
+    https/index
     features/index
     instruction/index
     orders/index
