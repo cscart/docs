@@ -49,21 +49,27 @@ Here’s the example of settings_overrides from `manifest.json of our tutorial t
 
   "settings_overrides": {
     "General": {
-      "enable_compare_products":        false
+      "enable_compare_products": false
     },
     "Appearance": {
-      "default_products_view":          "products_without_options",
-      "default_product_details_view":   "bigpicture_template",
-      "thumbnails_gallery":             true,
-      "enable_quick_view":              false
+      "default_products_view": "products_without_options",
+      "default_product_details_view": "bigpicture_template",
+      "thumbnails_gallery": true,
+      "enable_quick_view": false,
+      "available_product_list_sortings": [
+        "product-asc",
+        "product-desc",
+        "price-asc",
+        "price-desc"
+      ]
     },
     "Thumbnails": {
-      "product_lists_thumbnail_width":  300,
+      "product_lists_thumbnail_width": 300,
       "product_lists_thumbnail_height": 300
     }
   }
 
-When activated, a theme that has this code in manifest.json will do the following things:
+When activated, a theme that has this code in **manifest.json** will do the following things:
 
 * Disable product comparison.
 
@@ -84,6 +90,10 @@ When activated, a theme that has this code in manifest.json will do the followin
 * Disable **Quick View**.
 
   *(Appearance → Enable quick view)*
+
+* Select *Sort Alphabetically: A to Z*, *Sort Alphabetically: Z to A*, *Sort by Price: Low to High*, and *Sort by Price: High to Low* as the only available product list sortings.
+
+  *(Appearance → Available product list sortings)
 
 * Set the width and height of thumbnails on the product list to 300 px.
 
