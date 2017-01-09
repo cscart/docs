@@ -464,6 +464,8 @@ Design Patterns
 
 You shouldn’t create singleton classes and the classes consisting of static methods. It is next to impossible to write unit tests for that kind of code.
 
+.. _sql-query-standards:
+
 ===========
 SQL Queries
 ===========
