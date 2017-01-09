@@ -93,7 +93,7 @@ When activated, a theme that has this code in **manifest.json** will do the foll
 
 * Select *Sort Alphabetically: A to Z*, *Sort Alphabetically: Z to A*, *Sort by Price: Low to High*, and *Sort by Price: High to Low* as the only available product list sortings.
 
-  *(Appearance → Available product list sortings)
+  *(Appearance → Available product list sortings)*
 
 * Set the width and height of thumbnails on the product list to 300 px.
 
