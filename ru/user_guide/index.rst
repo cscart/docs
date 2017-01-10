@@ -21,3 +21,4 @@
     users/index
     database/index
     website/index
+    stores/index
