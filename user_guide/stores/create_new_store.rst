@@ -14,17 +14,17 @@ How To: Create a New Storefront
     :align: center
     :alt: Select "All stores" to switch to the root administrator mode.
 
-2. Go to **Administration → Stores** and click the **+** button to open the storefront creation form.
+3. Go to **Administration → Stores** and click the **+** button to open the storefront creation form.
 
-3. If you already have storefronts, you can copy or share objects from one of them for the new storefront.
+4. If you already have storefronts, you can copy or share objects from one of them for the new storefront.
 
 .. image:: img/copy_and_share.png
     :align: center
     :alt: Copy or share objects from your existing stores, if you want..
 
-4. Specify the properties of the new storefront.
+5. Specify the properties of the new storefront.
 
-5. Click **Create and close** to create the new storefront and close the form.
+6. Click **Create and close** to create the new storefront and close the form.
 
 .. note::
 
