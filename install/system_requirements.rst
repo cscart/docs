@@ -108,7 +108,7 @@ Server Configuration Requirements
 
   .. note::
 
-      Suhosin is a PHP extension intended for protection. However, it can cause :doc:`various issues <useful_info/suhosin>` with CS-Cart/Multi-Vendor.
+      Suhosin is a PHP extension intended for protection. However, it can cause :doc:`various issues <possible_issues/suhosin>` with CS-Cart/Multi-Vendor.
 
 =======================================
 CS-Cart Architects Team Recommends This
