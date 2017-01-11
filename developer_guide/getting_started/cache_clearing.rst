@@ -63,7 +63,7 @@ or like this:
 
 You can add one of the following parameters to your URLs:
 
-* **ct**—clear thumbnail cache
+* **ct**—delete all the thumbnails that were generated automatically
 * **ctpl**—clear template cache
 * **cc**—clear registry and miscellaneous cache
 

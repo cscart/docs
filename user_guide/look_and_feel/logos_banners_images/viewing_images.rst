@@ -30,7 +30,7 @@ To learn how to change the thumbnail size and appearance settings, please, refer
 
 .. note ::
 
-	After changing these settings you will need to clean up the thumbnail cache in order to re-generate the automatically created thumbnails. To do it, go to **Administration → Storage → Clean up generated thumbnails**.
+	After changing these settings you will need to re-generate thumbnails. To do it, go to **Administration → Storage → Clean up generated thumbnails**.
 
 .. note ::
 
