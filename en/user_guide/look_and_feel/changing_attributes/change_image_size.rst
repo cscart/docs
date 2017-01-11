@@ -22,7 +22,7 @@ To change the size of images on the storefront, complete the following steps:
 
 .. note::
 
-    After changing these settings you will need to clear the thumbnail cache so that the thumbnails would be re-generated automatically. To do it, in the administration panel go to **Administration → Storage** and choose the **Clean up generated thumbnails** action.
+    After changing these settings you will need to re-generate thumbnails. To do it, go to **Administration → Storage → Clean up generated thumbnails**.
 
 ======================================
 Image Types and Corresponding Settings
