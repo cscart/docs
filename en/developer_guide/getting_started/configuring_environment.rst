@@ -24,9 +24,9 @@ Other Ways
 
 Setting up a separate server or a virtual machine isn’t always an option. If that’s the case, use one of the following ways, depending on your operating system:
 
-* **Linux**—install and configure *LAMP* (it stands for Linux, Apache, MySQL/MariaDB, PHP); as an alternative, use `XAMPP <https://www.apachefriends.org/index.html>`_
+* **Linux**—install and configure *LAMP* (it stands for Linux, Apache, MySQL/MariaDB, PHP); as an alternative, use `XAMPP <https://www.apachefriends.org/index.html>`_ (not recommended)
 
-* **Mac OS**—install  Homebrew and use it to install LAMP; as an alternative, use `XAMPP <https://www.apachefriends.org/index.html>`_
+* **Mac OS**—install  Homebrew and use it to install LAMP; as an alternative, use `XAMPP <https://www.apachefriends.org/index.html>`_ (not recommended)
 
-* **Windows**—use `XAMPP <https://www.apachefriends.org/index.html>`_
+* **Windows**—use `XAMPP <https://www.apachefriends.org/index.html>`_ (not recommended)
 
