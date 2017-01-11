@@ -96,6 +96,20 @@ Server Configuration Requirements
         -   ``RewriteCond``
         -   ``RewriteRule``
 
+* If PHP was compiled with the `Suhosin <https://en.wikipedia.org/wiki/Suhosin>`_ extension, then configure it in the **php.ini** file as follows::
+
+    suhosin.memory_limit = 0
+    suhosin.post.max_vars = 3000
+    suhosin.get.max_totalname_length = 3000
+    suhosin.session.encrypt = Off
+    suhosin.session.cryptua = Off
+    suhosin.cookie.cryptdocroot = Off
+    suhosin.session.cryptdocroot = Off
+
+  .. note::
+
+      Suhosin is a PHP extension intended for protection. However, it can cause :doc:`various issues <useful_info/suhosin>` with CS-Cart/Multi-Vendor.
+
 =======================================
 CS-Cart Architects Team Recommends This
 =======================================
