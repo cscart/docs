@@ -38,6 +38,10 @@ You can choose which status in your store corresponds to each transaction status
 
 For example, the following record means that when PayPal sends an IPN that marks the transaction as *Completed*, the corresponding order in your store will get the *Processed* status.
 
+.. note::
+
+    If an order status doesn't change after a successful PayPal transaction, it might be because an IPN from PayPal hasn't arrived yet.
+
 .. image:: img/paypal_status.png
 	:align: center
 	:alt: Order status conversion map of the PayPal Payments add-on
