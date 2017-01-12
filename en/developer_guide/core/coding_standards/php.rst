@@ -528,3 +528,94 @@ General Rules
 3. Unless you know for certain where the internal pointer in the array is, **don’t** use the ``current()`` and ``each()`` functions. If you want to get the first element in the array, use the ``reset()`` function.
 
 4. **Don’t** use ``HTTP_REFERER``. If you want to make a redirect to the previous location, pass the ``redirect_url``.
+
+
+================
+Using Exceptions
+================
+
+To aid with debugging fatal errors that prevent further execution of the program, CS-Cart has **exceptions**.
+
+-----------------------------
+When Do I Throw an Exception?
+-----------------------------
+
+You throw an exception when something goes wrong and prevents the program from further execution. For example, you do this when a class wasn't found, or an undeclared hook was called.
+
+----------------------------
+How Do I Throw an Exception?
+----------------------------
+
+An exception is summoned like this::
+
+  use Tygh\Exceptions\DeveloperException;
+
+  ...
+  throw new DeveloperException('Registry: object not found')
+
+The name of the class is the error type. The first parameter is the message that we want to display::
+
+  new ClassNotFoundException() // an attempt to call an unknown class
+  new ExternalException() // an error returned by the external server
+  new DatabaseException() // a database error
+  new DeveloperException() // a developer's error — occurs when an object that wasn't meant to be called gets called
+  new InputException() // wrong input dataне
+  new InitException() // store initialization error
+  new PermissionsException() // missing permissions for an operation
+
+=========================
+Information for Debugging
+=========================
+
+The debugging information appears in one of the following cases:
+
+* The :doc:`debugger <../../tools/debugger>` is enabled. 
+
+* You have :doc:`enabled development mode<../../getting_started/configuring_cscart>` with ``define('DEVELOPMENT', true);``.
+
+* You use the console mode.
+
+In other cases the **store_closed.html** page will appear, and error 503 will be returned if possible. The debugging information will appear in the code of the page, at the very bottom of the HTML commentary. This is done to prevent random customers from seeing technical information.
+
+=======
+PHPUnit
+=======
+
+------------
+Installation
+------------
+
+1. Install Composer globally::
+
+     curl -sS https://getcomposer.org/installer | php
+     sudo mv composer.phar /usr/local/bin/composer
+     sudo chmod +x /usr/local/bin/composer
+
+2. Install **phpunit** and it's add-on called **dbunit** (it is necessary for running the tests)::
+
+     composer global require "phpunit/phpunit=4.8.*"
+     composer global require "phpunit/dbunit=1.4.*"
+
+3. Add the path to the globally installed packages to ``$PATH``::
+
+     export PATH=~/.composer/vendor/bin:$PATH
+
+     echo "export PATH=~/.composer/vendor/bin:$PATH" >> ~/.bashrc
+
+4. Check the installation:
+
+     phpunit --version
+
+---------------------
+Running Tests Locally
+---------------------
+
+::
+
+  phpunit -c _tools/build/phpunit.xml
+
+  phpunit -c _tools/build/phpunit.xml --debug # run the test and show the testing log
+
+  phpunit _tools/unit_tests/Tygh/Api/Entities/TaxesTest.php # run the specified test file
+
+If you see the ``Serialization of ‘Closure’ is not allowed`` error when running a test, then run the **phpunit** binary with a flag: ``phpunit --no-globals-backup``.
