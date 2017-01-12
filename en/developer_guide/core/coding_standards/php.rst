@@ -563,9 +563,9 @@ The name of the class is the error type. The first parameter is the message that
   new InitException() // store initialization error
   new PermissionsException() // missing permissions for an operation
 
-=========================
+-------------------------
 Information for Debugging
-=========================
+-------------------------
 
 The debugging information appears in one of the following cases:
 
