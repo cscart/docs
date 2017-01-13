@@ -174,8 +174,9 @@ PHPDoc
        * @param int $interval_id    Sales reports interval ID
        * @param int $timestamp_from Timestamp of report period beginning date
        * @param int $timestamp_to   Timestamp of report period end date
-       * @param int $limit          Maximal number of the generated intervals. Also, this string
-       *                            is used to illustrate the wrapped and aligned long comment.
+       * @param int $limit          Maximal number of the generated intervals. 
+       *                            Also, this string is used to illustrate
+       *                            the wrapped and aligned long comment.
        *
        * @return array
        * @author John Doe
