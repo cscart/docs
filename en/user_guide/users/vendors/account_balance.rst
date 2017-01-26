@@ -195,3 +195,4 @@ When working with the **Accounting** page, it's important to understand two term
 .. image:: img/mve_income.png
     :align: center
     :alt: Store owner's income.
+
