@@ -40,11 +40,17 @@ How To: Install and Configure PayPal Adaptive Payments Add-on
 
    * **Display verification status to customers**—this checkbox determines whether or not to display the PayPal verification status of the vendor on a product page next to the vendor's name.
 
-   * **Verification image**—if you don't upload an image, the verification status next to the vendor's name on a product page will appear as text. Otherwise the uploaded verification image will replace the text status.
+     .. important::
+
+         By **PayPal verification** we mean that a vendor provided a correct email associated with a functioning PayPal account.
+
+   * **Verification image**—if you don't upload an image, the verification status next to the vendor's name on a product page will appear as text. Otherwise, the uploaded verification image will replace the text status.
 
      * **Image width**—the width of the verification image.
 
      * **Image height**—the height of the verification image.
+
+   * **Use this link to get E-mail verification status of your vendors via CRON**—use this link to set up a CRON job that check the verification statuses of all vendors regularly.
 
 5. Once you have configured the add-on, click **Save**. Now it's time to :doc:`create a payment method that uses PayPal Adaptive Payments </user_guide/payment_methods/paypal_adaptive_payments>`.
 

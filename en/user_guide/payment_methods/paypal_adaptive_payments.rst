@@ -62,7 +62,7 @@ Step 1. Configure Payment Method
 Step 2. Enter PayPal Account Emails for Vendors
 ===============================================
 
-Make sure that vendors specify the email addresses associated with their PayPal accounts. To do that:
+Make sure that vendors specify the email addresses associated with their functioning PayPal accounts. To do that:
 
 2.1. Open Multi-Vendor Administration panel and go to **Vendors → Vendors**.
 
@@ -70,10 +70,16 @@ Make sure that vendors specify the email addresses associated with their PayPal 
 
 2.3. The vendor editing window will open. Scroll down and fill in the **PayPal account email** field. Ask your vendors to fill in this field or do it yourself.
 
-.. note::
-
-    If this field is left empty, the main vendor’s email address will be used to identify the vendor when an order is being paid.
-
 .. image:: img/paypal_vendor_email.png
     :align: center
     :alt: Vendors should specify emails of their PayPal accounts.
+
+2.4. After the changes are saved, the add-on automatically requests confirmation from PayPal that the provided email addresses are valid for transactions. We recommend you set up a CRON job that verifies the emails of vendors automatically every now and then. The link for the CRON job can be found in the settings of the **PayPal Adaptive Payments** add-on.
+
+.. important::
+
+   When a customer buys products from multiple vendors in one order, all of those vendors must be verified. Otherwise the customer won't be able to choose the payment method that uses PayPal Adaptive Payments.
+
+.. image:: img/paypal_verification_status.png
+    :align: center
+    :alt: All vendors must be verified, or customer won't be able to use PayPal Adaptive Payments to buy products from them in one order.
