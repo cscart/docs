@@ -74,7 +74,9 @@ Make sure that vendors specify the email addresses associated with their functio
     :align: center
     :alt: Vendors should specify emails of their PayPal accounts.
 
-2.4. After the changes are saved, the add-on automatically requests confirmation from PayPal that the provided email addresses are valid for transactions. We recommend you set up a CRON job that verifies the emails of vendors automatically every now and then. The link for the CRON job can be found in the settings of the **PayPal Adaptive Payments** add-on.
+2.4. After the changes are saved, the add-on automatically requests confirmation from PayPal that the provided email addresses are valid for transactions. 
+
+We recommend you set up a CRON job that verifies the emails of vendors automatically every now and then. The link for the CRON job can be found in the settings of the **PayPal Adaptive Payments** add-on.
 
 .. important::
 

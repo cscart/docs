@@ -50,7 +50,9 @@ How To: Install and Configure PayPal Adaptive Payments Add-on
 
      * **Image height**—the height of the verification image.
 
-   * **Use this link to get E-mail verification status of your vendors via CRON**—use this link to set up a CRON job that check the verification statuses of all vendors regularly.
+   * **Use this link to get E-mail verification status of your vendors via CRON**—this link checks the verification statuses of all vendors at once. 
+
+     We recommend you set up a CRON job to do this regularly. It's important, because when a customer buys products from multiple vendors in one order, all those vendors must be verified.
 
 5. Once you have configured the add-on, click **Save**. Now it's time to :doc:`create a payment method that uses PayPal Adaptive Payments </user_guide/payment_methods/paypal_adaptive_payments>`.
 
