@@ -9,6 +9,7 @@ Promotions
     :maxdepth: 1
     :glob:
 
+    promotion_recalculation
     auto_coupons
     setting_promotion
     category_discount
