@@ -1,43 +1,49 @@
-*****************************
-How To: Set PayPal in CS-Cart
-*****************************
+********************************
+How To: Set up PayPal in CS-Cart
+********************************
 
-To set PayPal Website Payments Standard account in CS-Cart:
+.. note::
 
-*   In the Administration panel of your store, go to **Add-ons → Manage Add-ons** and make sure that the **PayPal payments** add-on is installed and configured.
-*   Pay attention to the **PayPal order status conversion map** section. Here you can synchronize order status in your administration panel with the corresponding transaction status at PayPal.
-*   Tick the **Override customer info** checkbox, if you want customer profile information in your store to be replaced with the info sent from PayPal.
-*   Go to **Administration → Payment methods**.
-*   Click the **+** button on the right.
-*   In the opened window:
+    Before you begin, make sure that the :doc:`PayPal payments </user_guide/addons/paypal_payments/index>` add-on is active and configured.
 
-    *   In the **Name** text input field type *PayPal*. 
-    *   In the **Processor** drop-down select box select *PayPal*. 
-        If necessary, specify other fields and upload an icon.
+1. In the Administration panel, go to **Administration → Payment methods**.
 
-*   In the same window go to the **Configure** tab.
+2. Сlick the **+** button (*Add payment method*) in the top right corner of the page.
 
-.. image:: img/paypal_01.png
+3. Fill in the form:
+
+   * Select *PayPal* in the **Processor** drop-down list.
+
+   * Enter the **Display name**—the name of the payment method that will appear to your customers at checkout. By default, the payment method will be called *PayPal*.
+
+   * Specify other settings and upload an icon for the payment method, if necessary.
+
+.. image:: img/paypal_standard.png
     :align: center
-    :alt: PayPal
+    :alt: Creating a new PayPal payment method.
 
-*   Fill in the following fields:
+4. Switch to the **Configure** tab and specify PayPal settings:
 
-    *   **Account** — your PayPal account login (namely, your email address).
-    *   **Name of the item** — the value of the **Pay for** field, displayed on PayPal web page during the payment (for instance, *My shop*).
-    *   **Currency** — the currency in your PayPal account. If it does not match the base currency in your CS-Cart settings, please contact CS-Cart support team.
-    *   **Test/Live mode** — select *Live*. In order to use the **Test mode** you need to get additional accounts at `PayPal Sandbox <https://developer.paypal.com/>`_.
-    *   **Order prefix** — any prefix you want invoice IDs to have on PayPal site (optional field) (for instance, *mycart*). Using the prefix allows to prevent duplicate invoice IDs in case you use the same PayPal account for accepting payment from several websites.
+   * **Currency**—the currency of your PayPal account. 
 
-*   Click **Create**.
+     This :doc:`currency </user_guide/currencies/index>` must exist in your store and, ideally, it should be your primary currency. That is because prices are always converted to PayPal currency according to the rates you specified, before being sent to PayPal.
 
-PayPal account settings:
+   * **Order prefix** (optional)—any prefix you want invoice IDs to have on PayPal site (for example, *mycart*). Using the prefix allows to prevent duplicate invoice IDs when you use the same PayPal account to accept payments from several websites.
 
-If you want your customer to automatically return back to store after payment, at PayPal go to the **Profile → My selling tool** page and click the **Update** link near the **Website preferences** option. On the opened page set the **Auto Return** option as *Yes* and fill the **Return URL** input field by the following value:
-*http://your_domain/index.php?dispatch=payment_notification.return&payment=paypal*
+   * **Initial order status**—select a status that all orders with this payment method will get get until the response from PayPal (an IPN message) arrives or a customer returns to the store via a link on the PayPal site.
 
-.. important::
+5. Make sure to fill in the **Technical details**:
 
-	Use the **https** link (*https://your_domain/index.php?dispatch=payment_notification.return&payment=paypal*), if you have the secure connection enabled at checkout.
+   * **Account**—the email address of your PayPal account.
 
-Do not touch any other settings on this page.
+   * **Name of the item**—the value of the **Pay for** field, displayed on PayPal web page during the payment (for example, *My shop*).
+
+   * **Test/Live mode**—select *Live*.
+
+     If you want to use the *Test* mode to see how the payment method works before you offer it to your customers, you’ll need to get additional accounts as described on `the PayPal website <https://developer.paypal.com/docs/classic/lifecycle/ug_sandbox/>`_.
+
+6. Click the **Create** button.
+
+.. image:: img/paypal_standard_configure.png
+    :align: center
+    :alt: Configuring PayPal Standard settings.

@@ -1,52 +1,77 @@
-******************************************
-How To: Set up CS-Cart with PayPal Express
-******************************************
+*************************************************
+How To: Set up PayPal Express Checkout in CS-Cart
+*************************************************
 
-To set up CS-Cart with PayPal Website Express account:
+.. note::
 
-*   In the Administration panel of your store, go to **Add-ons → Manage Add-ons** and make sure that the **PayPal payments** add-on is installed and configured.
-*   Pay attention to the **PayPal order status conversion map** section. Here you can synchronize order status in your admin panel with the corresponding transaction status at PayPal.
-*   Go to **Administration → Payment methods**.
-*   Click the **+** button on the right.
-*   In the opened window:
+    Before you begin, make sure that the :doc:`PayPal payments </user_guide/addons/paypal_payments/index>` add-on is active and configured.
 
-    *   In the **Name** field type *PayPal Express*.
-    *   In the **Processor** select box select *PayPal Express Checkout*.
-    *   If necessary, specify other fields and upload an icon.
+1. In the Administration panel, go to **Administration → Payment methods**.
 
-*   Open the **Configure** tab in the same window to view the PayPal Express settings.
+2. Сlick the **+** button (*Add payment method*) in the top right corner of the page.
 
-.. image:: img/paypalexpress.png
+3. Fill in the form:
+
+   * Select *PayPal Express Checkout* in the **Processor** drop-down list.
+
+   * Enter the **Display name**—the name of the payment method that will appear to your customers at checkout. By default, the payment method will be called *PayPal Express Checkout*.
+
+   * Specify other settings and upload an icon for the payment method, if necessary.
+
+.. image:: img/paypal_express_checkout.png
     :align: center
-    :alt: PayPal Express
+    :alt: Creating a new PayPal Express Checkout payment method.
 
-*   Fill in the following fields:
+4. Switch to the **Configure** tab and specify the settings of PayPal Express Checkout:
 
-    *   **Username** — your PayPal Express API username.
-    *   **Password** — your PayPal Express API password.
-    *   **PayPal authentication method** — select the desired authentication method:
+   * **Currency**—the currency of your PayPal account.
 
-        *   If you select **Certficate**, upload a certificate file in the **Certificate filename** section. You are able to download the certificate in the **Profile → Request API credentials → option1 → Set up PayPal API credentials** section of your personal account at `www.paypal.com <http://www.paypal.com>`_ web site.
+     This :doc:`currency </user_guide/currencies/index>` must exist in your store and, ideally, it should be your primary currency. That is because prices are always converted to PayPal currency according to the rates you specified, before being sent to PayPal.
 
-        *   If you select **Signature**, fill in the **Signature** field — enter your signature. You can find it in the **Permissions → option2 → View API Signature** section of your personal account at `www.paypal.com <http://www.paypal.com>`_ web site.
+   * **Order prefix** (optional)—any prefix you want invoice IDs to have on PayPal site (for example, *mycart*). Using the prefix allows to prevent duplicate invoice IDs when you use the same PayPal account to accept payments from several websites.
 
-    *   **Send customer shipping address** — select this check box if you want to send the customer shipping address to PayPal.
-    *   **Currency** — the currency in your PayPal account. If it does not match the base currency in your CS-Cart settings, please contact CS-Cart support team.
-    *   **Test/Live mode** — select *Live* mode. In order to use *Test* mode you need to get additional accounts at `PayPal Sandbox <https://developer.paypal.com/>`_.
-    *   **Order prefix** — any prefix you want invoice IDs to have on PayPal site (optional field) (for instance, *mycart*). Using the prefix allows to prevent duplicate invoice IDs in case you use the same PayPal account for accepting payment from several websites.
-*   Click the **Create** button to save the changes.
+   * **Use In-Context Checkout**—tick this checkbox if you want to use *In-Context Checkout*. Please note that In-Context Checkout won’t be used when the store is running in :doc:`the Widget mode </user_guide/look_and_feel/layouts/widget_mode/index>`.
+
+5. Make sure to fill in the **Technical details**:
+
+   * **Merchant ID**—this field is required if you choose to use In-Context Checkout. You can find Merchant ID in your PayPal account.
+
+   * **Username**—your PayPal Express Checkout API username.
+
+   * **Password**—your PayPal Express Checkout API password.
+
+   * **PayPal authentication method**—select the desired authentication method:
+
+     * If you select **Certficate**: upload a certificate file in the **Certificate filename** section. Make sure that there are readable :doc:`permissions </install/useful_info/permissions>` for the certificate file and for the directory where it is located on your server.
+
+     * If you select **Signature**: enter your signature in the corresponding field.
+
+     .. note::
+
+         You can get the certificate and signature, as well as other API access credentials, from your account on `www.paypal.com <https://www.paypal.com/>`_.
+
+   * **Send customer shipping address**—tick this checkbox if you want to send the customer's shipping address to PayPal.
+
+   * **Test/Live mode**—select *Live* mode.
+
+     If you want to use the *Test* mode to see how the payment method works before you offer it to your customers, you’ll need to get additional accounts as described on `the PayPal website <https://developer.paypal.com/docs/classic/lifecycle/ug_sandbox/>`_.
+
+6. Click the **Create** button.
+
+.. image:: img/paypal_express_checkout_configure.png
+    :align: center
+    :alt: Configuring PayPal Express Checkout settings.
+
+7. (optional) If you want your customer to automatically return back to store after payment, you’ll need to make some changes in your account settings on `www.paypal.com <https://www.paypal.com/>`_:
+
+   * Go to **Profile & settings → My selling tools**.
+
+   * Click the **Update** link near the **Website preferences** option. 
+
+   * Set the **Auto Return** option as *Yes*. When specifying **Return URL**, enter a value like *http://example.com/index.php?dispatch=payment_notification.return&payment=paypal*
+
+   * Do not change any other settings on that page.
 
 .. important::
 
-	Make sure that there are readable `permissions <http://docs.cs-cart.com/4.4.x/install/useful_info/permissions.html>`_ for the certificate file and for the directory where it is located on your server.
-
-PayPal account settings:
-
-If you want your customer to automatically return back to store after payment, at PayPal go to the **Profile → My selling tool** page and click the **Update** link near the **Website preferences** option. On the opened page set the **Auto Return** option as *Yes* and fill the **Return URL** input field by the following value:
-*http://your_domain/index.php?dispatch=payment_notification.return&payment=paypal*
-
-Do not touch any other settings on this page.
-
-.. important::
-
-	Use the **https** link (*https://your_domain/index.php?dispatch=payment_notification.return&payment=paypal*), if you have the secure connection enabled at checkout.
+    If you have the secure connection enabled at checkout, use a **https** link like *https://example.com/index.php?dispatch=payment_notification.return&payment=paypal*
