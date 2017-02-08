@@ -47,3 +47,17 @@ How To: Set up PayPal in CS-Cart
 .. image:: img/paypal_standard_configure.png
     :align: center
     :alt: Configuring PayPal Standard settings.
+
+7. (optional) If you want your customer to automatically return back to store after payment, you’ll need to make some changes in your account settings on `www.paypal.com <https://www.paypal.com/>`_:
+
+   * Go to **Profile & settings → My selling tools**.
+
+   * Click the **Update** link near the **Website preferences** option. 
+
+   * Set the **Auto Return** option as *Yes*. When specifying **Return URL**, enter a value like *http://example.com/index.php?dispatch=payment_notification.return&payment=paypal*
+
+   * Do not change any other settings on that page.
+
+.. important::
+
+    If you have the secure connection enabled at checkout, use a **https** link like *https://example.com/index.php?dispatch=payment_notification.return&payment=paypal*
