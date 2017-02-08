@@ -8,6 +8,7 @@ Version Compatibility
 
     adapting_4310_to_441
     adapting_441_to_442
+    adapting_442_to_443
 
 .. toctree::
     :maxdepth: 2
