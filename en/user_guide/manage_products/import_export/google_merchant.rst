@@ -86,7 +86,7 @@ Step 3. Create a Data Feed
 
 .. image:: img/download_data_feed.png
     :align: center
-    :alt: Enter GTIN in the combination's CODE field before exporting that combination to Google.
+    :alt: Click the gear button next to the feed and choose Download to get the feed file.
 
 =================================
 Step 4. Submit the Feed to Google
