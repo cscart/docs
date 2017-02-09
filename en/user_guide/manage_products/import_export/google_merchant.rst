@@ -2,7 +2,7 @@
 How To: Export Product Data to Google Merchant Center
 *****************************************************
 
-CS-Cart and Multi-Vendor allow you to upload your product data to `Google Merchant Center <https://www.google.com/retail/merchant-center/>`_. This is done by exporting product data from your store to a file and `submitting that file to Google <https://support.google.com/merchants/#topic=3404818>`_.
+CS-Cart and Multi-Vendor allow you to upload your product data to `Google Merchant Center <https://www.google.com/retail/merchant-center/>`_. This is done by exporting product data from your store to a file and `submitting that file to Google <https://support.google.com/merchants/#topic=3404780>`_.
 
 ===========================
 Step 1. Install the Add-ons
