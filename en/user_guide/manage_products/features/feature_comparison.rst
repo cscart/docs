@@ -2,62 +2,55 @@
 How To: Enable Feature Comparison
 *********************************
 
-==================================
-Enable Comparison for Two Products
-==================================
+CS-Cart/Multi-Vendor allows customers to compare the features of products. Customers add products to comparison list, and the features of those products are displayed in a table.
+This article describes how you can enable this behavior and determine what features will appear in comparison list.
 
-1. In the Administration panel, go to **Products → Products**.
-
-2. Click the name of the product to open the product editing page.
-
-3. Tick the **Feature comparison** check box under the **Extra** section.
-
-4. Click the **Save** button.
-
-5. Repeat the steps above for the second product.
-
-.. image:: img/comparison_01.png
+.. image:: img/comparison_list.png
     :align: center
-    :alt: Feature comparison
+    :alt: The comparison list displays the features of selected products in a table.
 
-After that a customer will be able to compare these products by adding them to the comparison list in the storefront.
+===========================================
+Step 1. Allow Customers to Compare Products
+===========================================
+
+First we need to make sure that customers are allowed to compare products. To do that:
+
+1.1 Open the Administration panel of your store and go to **Settings → General**.
+
+1.2. Make sure that the **Allow customers to compare products** checkbox is ticked.
+
+.. image:: img/allow_product_comparison.png
+    :align: center
+    :alt: Go to Settings → General to make sure that product comparison is allowed.
+
+By default, the checkbox is ticked already. It means that every product in your store will have an **Add to comparison list** button. It will appear both on product pages and in **Quick view** pop-up windows.
+
+.. image:: img/add_to_comparison_list.png
+    :align: center
+    :alt: If product comparison is allowed, any product can be added to comparison list.
+
+================================================
+Step 2. Make a Feature Appear in Comparison List
+================================================
+
+Not all features appear in comparison list. It depends on the properties of a feature. To make a feature appear in comparison list, follow these instructions:
+
+2.1. Go to **Products → Features**.
+
+2.2. Click on the name of the feature to open the feature editing page.
+
+2.3. Make sure that the feature has at least one of these checkboxes ticked:
+
+* **Show on the Features tab**
+* **Show in product list**
+* **Show in header on the product details page**
 
 .. important::
 
-    To use this function, some :doc:`features <product_features>` should be defined for the products in the **Features** tab on the product details page.
+    If any of these checkboxes is ticked, the feature will appear in comparison list.
 
-=======================================
-Enable Comparison for Multiple Products
-=======================================
+4. Click **Save**.
 
-1. Go to **Products → Products**.
-
-2. Select all products by ticking the top left check box.
-
-3. Click the **gear** button in the top right corner of the page and choose **Edit selected**.
-
-.. image:: img/comparison_02.png
+.. image:: img/add_feature_to_comparison_list.png
     :align: center
-    :alt: Edit selected
-
-4. A new window will open, titled **Select fields to edit**. Click **Unselect all** link and tick only the **Feature comparison** check box. 
-
-5. Click the **Modify selected** button.
-
-.. image:: img/comparison_03.png
-    :align: center
-    :alt: Modify selected
-
-6. Click **Apply values to all selected products**. This will open a new small section.
- 
-7. Tick the checkbox that is to the left of the **Feature comparison** option and the one that is to the right of it.
-
-8. Click the **Apply** button. The selected value will be applied to all products.
-
-.. image:: img/comparison_04.png
-    :align: center
-    :alt: Update products
-
-.. note::
-
-    To enable **Feature comparison** for a product using the :doc:`import <../import_export/product_import>` option, use the instructions from :doc:`this article <../import_export/fields_format>`.
+    :alt: A feature is only added to comparison list if it appears somewhere.
