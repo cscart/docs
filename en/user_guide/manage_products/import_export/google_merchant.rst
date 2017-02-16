@@ -52,7 +52,7 @@ Some of the Google export fearures are available only starting with CS-Cart/Mult
 
 2.2. Starting with CS-Cart/Multi-Vendor 4.4.1, you can export your existing product options to Google as ``color``, ``size``, ``pattern``, and ``material``.  When you edit an option (either under **Products → Options**, or on the **Options** tab of a product), you can choose an **Equivalent in Google** for that option. 
 
-For example, if your store has an option called **Color** and you select *Google color* as its **Equivalent in Google**, then the **Color option** will be the source of information for the **Google color** field type when you create a data feed.
+For example, if your store has an option called **Color** and you select *Google color* as its **Equivalent in Google**, then the **Color** option will be the source of information for the **Google color** field type when you create a data feed.
       
 .. image:: img/equivalent_in_google.png
     :align: center
