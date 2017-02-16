@@ -1,0 +1,10 @@
+_build/
+bin/
+local/
+include/
+lib/
+_themes/__pycache__/
+*.pyc
+*.db
+.DS_Store
+.idea
