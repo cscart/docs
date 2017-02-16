@@ -60,9 +60,15 @@ For example, if your store has an option called **Color** and you select *Google
 
 2.3. `Google’s GTIN requirements are expanding. <https://support.google.com/merchants/answer/6352134>`_ If you don’t enter the value for the GTIN feature in step 2.1, CS-Cart/Multi-Vendor 4.5.1 and newer versions will try to use the **CODE** field of the product as GTIN.
 
-Also, starting with CS-Cart/Multi-Vendor 4.5.1, we have improved the export of :doc:`option combinations </user_guide/manage_products/options/option_combinations>`:
+Also, :doc:`option combinations </user_guide/manage_products/options/option_combinations>` can be exported as separate entries in the feed file, starting with CS-Cart/Multi-Vendor 4.5.1.
 
-* The **CODE** field of an option combination is exported as this combination’s GTIN.
+.. important::
+
+    For an option combination to be exported as a separate entry, each option that comprises the combination must have an **Equivalent in Google** (see step 2.2), and those equivalents must be included in the data feed file that you create during step 3.
+
+When an option combination is exported as a separate entry:
+
+* The **CODE** field of an option combination is exported as GTIN.
 
 * The image of the combination is exported for that combination instead of the main product image.
 
@@ -80,7 +86,7 @@ Step 3. Create a Data Feed
 
 .. note::
 
-    When you create a data feed for Google, make sure to choose *google_export* as a **Layout**. This will allow you to export product options to Google, as described in step 2.2.
+    When you create a data feed for Google, make sure to choose *google_export* as a **Layout**. This will allow you to export product options to Google Merchant Center as described in step 2.2, but only if you add those Google options on the **Fields mapping** tab.
 
 3.3. To generate a feed file, click the **gear** button and choose **Download**.
 
