@@ -7,7 +7,7 @@
 
     Вам потребуются установленные пакеты Apache, MySQL и PHP.
 
-1.  Скачайте последнюю версию CS-Cart на сайте `www.cs-cart.ru <http://www.cs-cart.ru/download.html>`_.
+1.  Скачайте последнюю версию CS-Cart на сайте `www.cs-cart.ru <https://www.cs-cart.ru/download.html>`_.
 
 2.  Создайте новую папку **/var/www/cscart/** и распакуйте в неё архив дистрибутива.
 

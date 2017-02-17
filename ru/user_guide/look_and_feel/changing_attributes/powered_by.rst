@@ -4,7 +4,7 @@
 
 По умолчанию в нижней части страницы есть ссылка наподобие:
 
- © 2004-2017 Simtech.  На базе `CS-Cart - Платформа для интернет-магазинов <http://www.cs-cart.ru/>`_
+ © 2004-2017 Simtech.  На базе `CS-Cart - Платформа для интернет-магазинов <https://www.cs-cart.ru/>`_
 
 .. image:: img/powered_by_cscart.png
     :align: center
