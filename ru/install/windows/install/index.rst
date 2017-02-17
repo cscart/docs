@@ -4,7 +4,7 @@
 Вам потребуется среда PHP-разработки XAMPP (:doc:`Установка локального сервера — XAMPP </install/windows/xampp/index>`) для вашей операционной системы. 
 
 
-1.  Скачайте последнюю версию CS-Cart на сайте `www.cs-cart.ru <http://www.cs-cart.ru/download.html>`_.
+1.  Скачайте последнюю версию CS-Cart на сайте `www.cs-cart.ru <https://www.cs-cart.ru/download.html>`_.
 
 2.  Перейдите в папку \\htdocs с установленным XAMPP (в нашем случае это C:\\xampp\\htdocs) и создайте новую папку "cscart". 
 

@@ -18,7 +18,7 @@
 
 Устанавливаем CS-Cart как на обычный хостинг.
 
-1.  Скачиваем свеженький CS-Cart с официального сайта `www.cs-cart.ru <http://www.cs-cart.ru/download.html>`_
+1.  Скачиваем свеженький CS-Cart с официального сайта `www.cs-cart.ru <https://www.cs-cart.ru/download.html>`_
 
     .. fancybox:: img/download.PNG
         :alt: VPS

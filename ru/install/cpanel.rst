@@ -122,7 +122,7 @@
 Загрузка файлов
 ***************
 
-1)  Скачайте последнюю версию CS-Cart на сайте `www.cs-cart.ru <http://www.cs-cart.ru/download.html>`_.
+1)  Скачайте последнюю версию CS-Cart на сайте `www.cs-cart.ru <https://www.cs-cart.ru/download.html>`_.
 
 2)  Откройте "Диспетчер файлов" в разделе "Файлы" панели управления хостингом (cPanel).
 
@@ -181,7 +181,7 @@
 
     Лицензионный соглашения на русском языке:
 
-    *   `Лицензионное соглашение CS-Cart <http://www.cs-cart.ru/license-cs-cart.html>`_      
+    *   `Лицензионное соглашение CS-Cart <https://www.cs-cart.ru/license-cs-cart.html>`_
 
     Установите флажок "Я принимаю лицензионное соглашение CS-Cart".
 

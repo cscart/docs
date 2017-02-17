@@ -6,7 +6,7 @@
 Установка на Linux
 ==================
 
-1.  Скачайте последнюю версию CS-Cart на сайте `www.cs-cart.ru <http://www.cs-cart.ru/download.html>`_.
+1.  Скачайте последнюю версию CS-Cart на сайте `www.cs-cart.ru <https://www.cs-cart.ru/download.html>`_.
 
 2.  Распакуйте архив на сервере (в любую удобную вам директорию).
 
@@ -95,7 +95,7 @@
 Установка из консоли
 ====================
 
-1.  Скачайте последнюю версию CS-Cart на сайте `www.cs-cart.ru <http://www.cs-cart.ru/download.html>`_.
+1.  Скачайте последнюю версию CS-Cart на сайте `www.cs-cart.ru <https://www.cs-cart.ru/download.html>`_.
 
 2.  Распакуйте архив на сервере.
 

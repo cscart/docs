@@ -10,7 +10,7 @@
 
 .. note::
 
-    В `видеоуроке <http://www.cs-cart.ru/videos/admin/kak-dobavit-vash-internet-magazin-kuda-ugodno-blagodarya-funkcionalu-vidzhet.html>`_ описано, как добавить виджет на сторонний сайт.
+    В `видеоуроке <https://www.cs-cart.ru/videos/admin/kak-dobavit-vash-internet-magazin-kuda-ugodno-blagodarya-funkcionalu-vidzhet.html>`_ описано, как добавить виджет на сторонний сайт.
 
 .. list-table::
     :header-rows: 1

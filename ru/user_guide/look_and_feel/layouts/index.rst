@@ -29,7 +29,7 @@
 
 .. hint::
 
-    Рекомендуем два видеоурока по макетам: `№1 <http://www.cs-cart.ru/videos/admin/kak-upravlyat-maketami-stranic-v-magazine-na-cs-cart-chast-1.html>`_, `№2 <http://www.cs-cart.ru/videos/admin/kak-upravlyat-maketami-stranic-v-magazine-na-cs-cart-chast-2.html>`_. 
+    Рекомендуем два видеоурока по макетам: `№1 <https://www.cs-cart.ru/videos/admin/kak-upravlyat-maketami-stranic-v-magazine-na-cs-cart-chast-1.html>`_, `№2 <https://www.cs-cart.ru/videos/admin/kak-upravlyat-maketami-stranic-v-magazine-na-cs-cart-chast-2.html>`_.
 
 .. image:: img/layout_management.png
     :align: center
