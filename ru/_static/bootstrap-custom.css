@@ -802,7 +802,7 @@ table .row-even {
 
     .footer-menu h5 {
         border-bottom: 1px solid #fff;
-            width: 100%;
+        width: 100%;
     }
 
     .footer-menu h5:after {
@@ -811,17 +811,16 @@ table .row-even {
 
     .footer-menu h5:before {
         content: "\e903";
-         
-                -ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Safari */
-    transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-                position: absolute;
-                font-family: 'icomoon';
-                color: #fff;
-                font-size: 18px;
-                right:10px;
-                top:5px;
+        -ms-transform: rotate(90deg); /* IE 9 */
+        -webkit-transform: rotate(90deg); /* Safari */
+        transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        position: absolute;
+        font-family: 'icomoon';
+        color: #fff;
+        font-size: 18px;
+        right:10px;
+        top:5px;
     }
 
     .footer-menu h5.visible-footer:before {
