@@ -835,13 +835,14 @@ table .row-even {
 
     .footer-menu .sidebox {
             width:100%;
-        }
+    }
 
     .footer-menu    .sidebox-body {
             display: none;
-        }
-     .footer-menu   .sidebox-body.visible {
+    }
+
+    .footer-menu   .sidebox-body.visible {
             display: block;
-        }
+    }
 
 }
