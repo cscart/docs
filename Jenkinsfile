@@ -150,8 +150,17 @@ def getBuildLanguageClosure(language, workspaceDir, branchName) {
             def buildDir       = "_build/${language.langCode}/${branchName}"
             def artifactName   = "${language.langCode}-${branchName}.tgz"
             def authIdentifier = 'deploy-docs'
+            def vParts = branchName.trim().split("\\.")
 
             dir("${workspaceDir}/${language.srcDir}") {
+                
+                // replace version in conf.py
+                sh(
+                    script: "sed -e \"s/%version_long%/${branchName}/g; s/%version_short%/${vParts[0]}.${vParts[1]}/g\" conf.py > conf.py.tmp"
+                )
+                sh(
+                    script: "mv conf.py.tmp conf.py"
+                )
 
                 // build and compress
                 sh(
