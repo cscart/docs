@@ -1,0 +1,1 @@
+{if $items.$selected_id.symbol} ({$items.$selected_id.symbol nofilter}){/if}

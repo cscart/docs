@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<addon scheme="2.0">
+    <id>first_addon</id>
+    <name>Мой первый модуль</name>
+    <description>Создаём модуль для CS-Cart и Multi-Vendor</description>
+
+    <status>active</status>
+
+    <default_language>ru</default_language>
+    <language_variables>
+        <item lang="en" id="first_addon.video">YouTube Embed Code</item>
+        <item lang="ru" id="first_addon.video">Код от видео с YouTube</item>
+    </language_variables>
+    
+</addon>

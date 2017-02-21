@@ -1,0 +1,8 @@
+    </translations>
+
+    <language_variables>
+        <item lang="ru" id="my_block_track_orders">Мой шаблон: Отслеживание заказов</item>
+        <item lang="en" id="my_block_track_orders">My template: Track orders</item>
+    </language_variables>
+
+</addon>

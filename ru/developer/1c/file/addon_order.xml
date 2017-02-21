@@ -1,0 +1,31 @@
+<section id="true_orders" edition_type="ROOT">
+	<name>Ограничение заказов</name>
+	<translations>
+		<item lang="en">Limitation of orders</item>
+	</translations>
+	<items>
+		<item id="exim_1c_export_add_true_orders">
+			<name>Использовать эту функцию</name>
+			<translations>
+				<item lang="en">Use this function</item>
+			</translations>
+			<type>checkbox</type>
+			<default_value/>
+		</item>	
+		<item id="exim_1c_from_order_id">
+			<name>Выгружать с номера</name>
+			<translations>
+				<item lang="en">Export starting from ID</item>
+			</translations>
+			<type>inputbox</type>
+		</item>
+		<item id="exim_1c_export_order_statuses">
+			<name>Статусы ордеров</name>
+			<translations>
+				<item lang="en">Order statuses</item>
+			</translations>
+			<type>multiple checkboxes</type>
+			<variants/>
+		</item>
+	</items>
+</section>

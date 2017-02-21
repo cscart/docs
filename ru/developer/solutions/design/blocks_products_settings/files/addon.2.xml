@@ -1,0 +1,20 @@
+    <language_variables>
+        <item lang="ru" id="if_out_of_stock">Отобразить блок, если основного товара нет на складе</item>
+        <item lang="en" id="if_out_of_stock">Display block if the product is out of stock.</item>
+
+        <item lang="ru" id="similar_products">Похожие товары</item>
+        <item lang="en" id="similar_products">Related Products</item>
+
+        <item lang="ru" id="similar_category">Аналогичная категория</item>
+        <item lang="en" id="similar_category">Similar category</item>
+
+        <item lang="ru" id="similar_subcat">Учитывать подкатегории</item>
+        <item lang="en" id="similar_subcat">Use subcategories</item>
+
+        <item lang="ru" id="price_range">Диапазон цены (в % от стоимости основного товара)</item>
+        <item lang="en" id="price_range">Price range (%)</item>
+    </language_variables>
+
+
+
+
