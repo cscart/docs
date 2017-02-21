@@ -1,0 +1,18 @@
+/* Search form
+   ========================================================================== */
+input.ty-search-block__input {
+    border-color: #fad8d3;
+    color: #979595;
+    font-size: 12px;
+    padding-right: 80px;
+}
+.ty-search-magnifier {
+    height: auto;
+    background: #e05b5b;
+    color: #fff;
+    top: 1px;
+    right: -1px;
+    width: 70px;
+    bottom: 1px;
+    font-size: 22px;
+}

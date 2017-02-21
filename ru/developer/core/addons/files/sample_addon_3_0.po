@@ -1,0 +1,117 @@
+msgid ""
+msgstr "Project-Id-Version: tygh"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Addons::name::sample_addon_3_0"
+msgid "3.0 scheme addon sample"
+msgstr "3.0 scheme addon sample"
+
+msgctxt "Addons::description::sample_addon_3_0"
+msgid "Sample add-on description. Do not use the add-on in production mode."
+msgstr "Sample add-on description. Do not use the add-on in production mode."
+
+msgctxt "Languages::test_xml_3.0_1"
+msgid "First language variable"
+msgstr "First language variable"
+
+msgctxt "Languages::test_xml_3.0_2"
+msgid "Second language variable"
+msgstr "Second language variable"
+
+msgctxt "Languages::sample_addon_handler"
+msgid "Sample addon handler"
+msgstr "Sample addon handler"
+
+msgctxt "SettingsSections::sample_addon_3_0::section1"
+msgid "Generic settings"
+msgstr "Generic settings"
+
+msgctxt "SettingsSections::sample_addon_3_0::section2"
+msgid "Selects"
+msgstr "Selects"
+
+msgctxt "SettingsSections::sample_addon_3_0::section3"
+msgid "Additional settings"
+msgstr "Additional settings"
+
+msgctxt "SettingsOptions::sample_addon_3_0::header"
+msgid "Header"
+msgstr "Header"
+
+msgctxt "SettingsOptions::sample_addon_3_0::input"
+msgid "Input"
+msgstr "Input"
+
+msgctxt "SettingsOptions::sample_addon_3_0::password"
+msgid "Password input"
+msgstr "Password input"
+
+msgctxt "SettingsOptions::sample_addon_3_0::checkbox"
+msgid "Checkbox"
+msgstr "Checkbox"
+
+msgctxt "SettingsOptions::sample_addon_3_0::textarea"
+msgid "Textarea"
+msgstr "Textarea"
+
+msgctxt "SettingsOptions::sample_addon_3_0::radiogroup"
+msgid "Radio group box"
+msgstr "Radio group box"
+
+msgctxt "SettingsOptions::sample_addon_3_0::file"
+msgid "File"
+msgstr "File"
+
+msgctxt "SettingsOptions::sample_addon_3_0::selectbox"
+msgid "Selectbox"
+msgstr "Selectbox"
+
+msgctxt "SettingsOptions::sample_addon_3_0::countries_list"
+msgid "Countries list"
+msgstr "Countries list"
+
+msgctxt "SettingsOptions::sample_addon_3_0::states_list"
+msgid "States list"
+msgstr "States list"
+
+msgctxt "SettingsOptions::sample_addon_3_0::multiple_select"
+msgid "Multiple select"
+msgstr "Multiple select"
+
+msgctxt "SettingsOptions::sample_addon_3_0::multiple_checkboxes"
+msgid "Multiple checkboxes"
+msgstr "Multiple checkboxes"
+
+msgctxt "SettingsOptions::sample_addon_3_0::selectable_box"
+msgid "Selectable box"
+msgstr "Selectable box"
+
+msgctxt "SettingsOptions::sample_addon_3_0::info"
+msgid "Info Url"
+msgstr "Info Url"
+
+msgctxt "SettingsTooltips::sample_addon_3_0::input"
+msgid "Tooltip"
+msgstr "Tooltip"
+
+msgctxt "SettingsVariants::sample_addon_3_0::radiogroup::radio_1"
+msgid "Radio button 1"
+msgstr "Radio button 1"
+
+msgctxt "SettingsVariants::sample_addon_3_0::radiogroup::radio_2"
+msgid "Radio button 2"
+msgstr "Radio button 2"
+
+msgctxt "SettingsVariants::sample_addon_3_0::multiple_checkboxes::select_box_1"
+msgid "Select box item 1"
+msgstr "Select box item 1"
+
+msgctxt "SettingsVariants::sample_addon_3_0::multiple_checkboxes::select_box_2"
+msgid "Select box item 2"
+msgstr "Select box item 2"
+
+msgctxt "SettingsVariants::sample_addon_3_0::multiple_checkboxes::select_box_3"
+msgid "Select box item 3"
+msgstr "Select box item 3"

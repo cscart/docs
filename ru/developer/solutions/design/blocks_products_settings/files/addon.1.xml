@@ -1,0 +1,10 @@
+
+    <language_variables>
+        <item lang="ru" id="if_out_of_stock">Отобразить блок, если основного товара нет на складе</item>
+        <item lang="en" id="if_out_of_stock">Display block if the product is out of stock.</item>
+    </language_variables>
+
+</addon>
+
+
+

@@ -1,0 +1,7 @@
+__pycache__
+*.kdev4
+_build/
+_themes/__pycache__/
+*.pyc
+.kateproject*
+*~
