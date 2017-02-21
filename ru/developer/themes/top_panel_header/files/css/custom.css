@@ -1,0 +1,185 @@
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'tutorial';
+    src:url('../media/fonts/tutorial.eot?-vagbvx');
+    src:url('../media/fonts/tutorial.eot?#iefix-vagbvx') format('embedded-opentype'),
+        url('../media/fonts/tutorial.woff?-vagbvx') format('woff'),
+        url('../media/fonts/tutorial.ttf?-vagbvx') format('truetype'),
+        url('../media/fonts/tutorial.svg?-vagbvx#tutorial') format('svg');
+}
+
+[class^="tt-icon-"], [class*=" tt-icon-"] {
+    text-transform: none;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-family: 'tutorial';
+    line-height: 1;
+    speak: none;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.tt-icon-bag:before {
+    content: "\e600";
+}
+.tt-icon-clock:before {
+    content: "\e601";
+}
+
+.top-grid a {
+    color: #fff;
+}
+.top-grid .ty-select-block__a:hover,
+.top-grid .ty-select-block__a.open {
+    background: none;
+    color: #fff;
+}
+
+.ty-select-block__a-item {
+    font-size: 11px;
+}
+
+.top-currencies .ty-select-block__a-item {
+    text-transform: uppercase;
+}
+.top-currencies .ty-select-block__arrow {
+    color: #fff;
+}
+
+.top-languages .ty-select-block__arrow {
+    display: none;
+}
+
+
+.top-quick-links .ty-text-links__a {
+    font-size: 12px;
+}
+
+
+div.header-grid {
+    padding-top: 22px;
+}
+
+
+/* Delivery
+   ========================================================================== */
+.ty-logo-container {
+    margin-top: 15px;
+}
+
+
+/* Delivery
+   ========================================================================== */
+.ty-delivery {
+    margin-top: 12px;
+    color: #573c27;
+    font-size: 12px;
+}
+.ty-delivery__icon {
+    margin-right: 8px;
+    color: #8f979a;
+    vertical-align: middle;
+    font-size: 21px;
+}
+
+/* Search form
+   ========================================================================== */
+input.ty-search-block__input {
+    padding-right: 80px;
+    border-color: #fad8d3;
+    color: #979595;
+    font-size: 12px;
+    height: 42px;
+}
+.ty-search-magnifier {
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    width: 70px;
+    height: auto;
+    background: #e05b5b;
+    color: #fff;
+    font-size: 22px;
+}
+
+.tygh-header {
+    border-bottom: 3px solid #e05b5b;
+}
+
+/* Main menu
+   ========================================================================== */
+.top-menu-grid {
+    padding-top: 50px;
+}
+.ty-menu__items {
+    background: none;
+}
+.ty-menu__item .ty-menu__item-link {
+    padding: 8px 8px;
+    color: #573c27;
+    text-transform: uppercase;
+    font-size: 13px;
+    min-height: 0;
+    margin-right: 10px;
+}
+.no-touch .ty-menu__item:hover .ty-menu__item-link,
+.is-hover-menu .ty-menu__item-link,
+.is-hover-menu.ty-menu__item-active .ty-menu__item-link,
+.ty-menu__item.ty-menu__item-active .ty-menu__item-link {
+    background: #e05b5b;
+    color: #fff;
+}
+.ty-menu__submenu-items {
+    margin-top: 3px;
+    border-color: #e05b5b;
+}
+
+/* Cart content
+   ========================================================================== */
+.ty-minicart-title {
+    padding: 5px 23px;
+    background: #e05b5b;
+    color: #fff;
+    font-size: 22px;
+    vertical-align: top;
+    position: relative;
+}
+.ty-minicart-title__amount {
+    position: absolute;
+    position: top;
+    top: -8px;
+    right: -12px;
+    font-size: 14px;
+    color: #fff;
+    background: #ed1c24;
+    padding: 0 6px;
+    border: 1px solid rgba(85, 32, 32, 0.4);
+}
+.ty-minicart-title__price {
+    display: inline-block;
+    vertical-align: top;
+    padding: 11px 9px 10px;
+    background: #e05b5b;
+    color: #fff;
+    font-size: 14px;
+}
+.top-cart-content .ty-dropdown-box__title {
+    padding: 0;
+}
+
+/* Account
+   ========================================================================== */
+.ty-account-info__title {
+    font-size: 12px;
+}
+.ty-account-info__user-arrow {
+    visibility: hidden;
+}
+.ty-dropdown-box__title:hover,
+.ty-dropdown-box__title.open {
+    background: none;
+}

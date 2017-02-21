@@ -1,0 +1,28 @@
+<item id="exim_1c_page_title">
+	<type>radiogroup</type>
+	<name>Использовать в названии страницы</name>
+	<translations>
+		<item lang="en">Use in the page name</item>
+	</translations>
+	<default_value>not_import</default_value>
+	<variants>
+		<item id="not_import">
+			<name>Не импортировать</name>
+			<translations>
+				<item lang="en">Do not import</item>
+			</translations>
+		</item>
+		<item id="name">
+			<name>Наименование</name>
+			<translations>
+				<item lang="en">Name</item>
+			</translations>
+		</item>
+		<item id="full_name">
+			<name>Полное наименование</name>
+			<translations>
+				<item lang="en">Full name</item>
+			</translations>
+		</item>
+	</variants>
+</item>

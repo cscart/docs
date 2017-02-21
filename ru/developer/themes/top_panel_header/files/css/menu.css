@@ -1,0 +1,22 @@
+/* Main menu
+   ========================================================================== */
+.ty-menu__items {
+    background: none;
+}
+.ty-menu__item .ty-menu__item-link {
+    padding: 8px 8px;
+    color: #573c27;
+    text-transform: uppercase;
+    font-size: 13px;
+    min-height: 0;
+    margin-right: 10px;
+}
+.no-touch .ty-menu__item:hover .ty-menu__item-link,
+.is-hover-menu .ty-menu__item-link,
+.is-hover-menu.ty-menu__item-active .ty-menu__item-link {
+    background: #e05b5b;
+}
+.ty-menu__submenu-items {
+    margin-top: 3px;
+    border-color: #e05b5b;
+}

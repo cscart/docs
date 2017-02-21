@@ -1,0 +1,12 @@
+/* Delivery
+   ========================================================================== */
+.ty-delivery {
+    color: #573c27;
+    font-size: 12px;
+}
+.ty-delivery__icon {
+    color: #8f979a;
+    font-size: 21px;
+    vertical-align: middle;
+    margin-right: 8px;
+}

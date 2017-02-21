@@ -1,0 +1,32 @@
+/* Cart content
+   ========================================================================== */
+.ty-minicart-title {
+    padding: 5px 23px;
+    background: #e05b5b;
+    color: #fff;
+    font-size: 22px;
+    vertical-align: top;
+    position: relative;
+}
+.ty-minicart-title__amount {
+    position: absolute;
+    position: top;
+    top: -8px;
+    right: -12px;
+    font-size: 14px;
+    color: #fff;
+    background: #ed1c24;
+    padding: 0 6px;
+    border: 1px solid rgba(85, 32, 32, 0.4);
+}
+.ty-minicart-title__price {
+    display: inline-block;
+    vertical-align: top;
+    padding: 11px 9px 10px;
+    background: #e05b5b;
+    color: #fff;
+    font-size: 14px;
+}
+.top-cart-content .ty-dropdown-box__title {
+    padding: 0;
+}

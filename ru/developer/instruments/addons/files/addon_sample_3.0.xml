@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<!--
+    Описание схемы аддона версии 3.0
+    Все параметры не отмеченные как необязательные должны быть определены в схеме.
+    @edition_type - Необязательный аттрибут доступный для любого элемента связанного с настройками. Определяет редакции в которых доступна та или иная настройка. Берётся либо значение текущего, либо от родителя, либо если вообще ничего нет, то будет определён как ROOT
+-->
+<addon scheme="3.0" edition_type="ROOT,ULT:VENDOR">
+    <!-- Идентификатор аддона, должен быть равен имени каталога, в котором лежит аддон -->
+    <id>sample_addon_3_0</id>
+    <!-- Версия аддона -->
+    <version>1.0</version>
+    <!-- Родной язык аддона (по умолчанию). Необязательный параметр, если не указан, то язык будет распознаваться как английский (EN). -->
+    <default_language>en</default_language>
+    <!-- Приоритет аддона. Чем выше, тем тот позже подключается -->
+    <priority>100</priority>
+    <!-- Статус который будет высатвлен после установки аддона (active/disabled). По умолчанию disabled. -->
+    <status>active</status>
+    <!-- Определяет в каких редакциях аддон будет при установке автоматически отмечен в списке -->
+    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+    <!-- Блок для описания совместимостей с другими аддонами -->
+    <compatibility>
+        <!-- Зависимости. Эти аддоны должны быть установлены, чтобы установить текущий аддон, в противном случае будет выведено сообщение об ошибке. -->
+        <dependencies>discussion,form_builder</dependencies>
+        <!-- Конфликты. Эти аддоны будут автоматически выключены перед установкой данного и будет выведено сообщение об этом -->
+        <conflicts>catalog_mode,reward_points</conflicts>
+    </compatibility>
+    
+    <!-- Блок настроек аддона. Необязательный.
+        @layout - Место где будет открываться страница с настройками (popup/separate). Необязательный аттрибут. По умолчанию popup.
+    -->
+    <settings layout="separate" edition_type="ROOT,ULT:VENDOR">
+        <!-- Список табов на странице настроек адона. -->
+        <sections>
+            <!-- Таб для настроек.
+                @id - текстовый итдентификатор. В дальнейшем к этой настройке можно будет обращаться через Registry::get('addons.[addon_id].[setting_id]')
+                @edition_type - список редакций в которых данный таб будет доступен. Необязательный.
+            -->
+            <section id="section1">
+                <!-- Список настроек в табе -->
+                <items>
+                    <!-- Настройки аддона
+                        @id - идентификатор настройки.
+                        @edition_type - список редакций в которых данная настройка будет доступна. Необязательный.
+                    -->
+                    <item id="header">
+                        <!-- Тип элемента:
+                            input, textarea, password, checkbox, selectbox, multiple select,
+                            multiple checkboxes, countries list, states list,
+                            file, info, header, template
+                        -->
+                        <type>header</type>
+                        <variants/>
+                    </item>
+                    <item id="input">
+                        <type>input</type>
+                        <variants/>
+                    </item>
+                    <item id="password">
+                        <type>password</type>
+                        <variants/>
+                    </item>
+                    <item id="checkbox">
+                        <type>checkbox</type>
+                        <variants/>
+                    </item>
+                    <item id="textarea">
+                        <type>textarea</type>
+                        <default_value>Sample textarea text</default_value>
+                        <variants/>
+                    </item>
+                    <item id="radiogroup">
+                        <type>radiogroup</type>
+                        <default_value>radio_2</default_value>
+                        <!-- Варианты - для типов selectbox, multiple select,
+                            multiple checkboxes, combo select -->
+                        <variants>
+                            <!-- @id - идентификатор варианта-->
+                            <item id="radio_1"></item>
+                            <item id="radio_2"></item>
+                        </variants>
+                    </item>
+                    <item id="file">
+                        <type>file</type>
+                        <variants/>
+                    </item>
+                </items>
+            </section>
+            <section id="section2">
+                <translations>
+                    <item lang="ru">Списки</item><!-- Может быть переведен через PO (SettingsSection) -->
+                </translations>
+                <items>
+                    <item id="selectbox">
+                        <type>selectbox</type>
+                        <variants>
+                            <item id="select_box_1"></item>
+                            <item id="select_box_2"></item>
+                        </variants>
+                    </item>
+                    <item id="countries_list">
+                        <type>countries list</type>
+                        <variants/>
+                    </item>
+                    <item id="states_list">
+                        <type>states list</type>
+                        <variants/>
+                    </item>
+                    <item id="multiple_select">
+                        <type>multiple select</type>
+                        <variants>
+                            <item id="select_box_1"></item>
+                            <item id="select_box_2"></item>
+                            <item id="select_box_3"></item>
+                        </variants>
+                    </item>
+                    <item id="multiple_checkboxes">
+                        <type>multiple checkboxes</type>
+                        <variants>
+                            <item id="select_box_1"></item>
+                            <item id="select_box_2"></item>
+                            <item id="select_box_3"></item>
+                        </variants>
+                        <default_value>select_box_2</default_value>
+                    </item>
+                </items>
+            </section>
+            <section id="section3">
+                <items>
+                    <item id="selectable_box">
+                        <!-- Варианты данной настроки будут браться из функции fn_settings_variants_[addon_id]_[setting_id]-->
+                        <type>selectable_box</type>
+                        <default_value><![CDATA[#M#product_code=Y&product=Y&amount=Y&price=Y]]></default_value>
+                        <variants/>
+                    </item>
+                    <!-- В данном случае будет выводиться информация возвращаемая функцией handler -->
+                    <item id="info">
+                        <type>info</type>
+                        <handler>fn_sample_addon_3_0_info</handler>
+                        <variants/>
+                    </item>
+                    <!-- Вид настройки типа шаблон. В данном случае подключается пользовательский шаблон из папки themes/THEME_NAME/addons/ADDON_NAME/setings/TEMPLATE_NAME
+                         Имя шаблона храниться в default_value-->
+                    <item id="template">
+                        <type>template</type>
+                        <default_value>sample.tpl</default_value>
+                        <variants/>
+                    </item>
+                    <!-- Скрытая настройка. Существует в базе данных и в Registry, но не выводится пользователю. -->
+                    <item id="hidden">
+                        <type>hidden</type>
+                        <default_value>Some hidden setting value</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+
+    <!-- Дополнительные запросы к базе данных-->
+    <queries>
+        <!-- Если параметр for="install" или его вообще нет - запрос выполняется во время установки аддона-->
+        <item for="install">
+        CREATE TABLE `?:addon_test_123456789` (
+            `queue_id` mediumint NOT NULL auto_increment,
+            PRIMARY KEY  (`queue_id`)
+        ) ENGINE=MyISAM DEFAULT CHARSET=UTF8
+        </item>
+        <!-- Если задан атрибут editions, то запрос будет выполнен только для тех редакций которые указаны в нём через запятую -->
+        <item for="install" editions="ULTIMATE,MULTIVENDOR">
+            ALTER TABLE `?:addon_test_123456789` ADD company_id INT NOT NULL DEFAULT 0;
+        </item>
+        <!-- Если параметр for="uninstall", запрос выполняется во время удаления аддона-->
+        <item for="uninstall">DROP TABLE IF EXISTS `?:addon_test_123456789`</item>
+    </queries>
+    <!-- Пользовательские функции вызывающиеся при наступлении определённых событий
+            before_install - перед установкой аддона.
+            install - после установки аддона, его шаблонов, настроек, лангвар, но перед его активацией и очисткой кеша
+            uninstall - перед деинсталяцией
+            -->
+    <functions>
+        <item for="install">fn_google_export_add_features</item>
+        <item for="install">fn_google_export_add_feed</item>
+        <item for="uninstall">fn_google_export_remove_features</item>
+        <item for="uninstall">fn_google_export_remove_feed</item>
+    </functions>
+</addon>

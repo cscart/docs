@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>first_addon</id>
+    <name>Мой первый модуль</name>
+    <description>Создаём модуль для CS-Cart и Multi-Vendor</description>
+
+    <status>active</status>
+
+    <default_language>ru</default_language>
+        
+</addon>

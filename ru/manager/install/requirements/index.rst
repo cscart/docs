@@ -1,0 +1,102 @@
+Системные требования
+--------------------
+
+CS-Cart разработан для удовлетворения большинства серверных конфигураций, начиная от виртуальных хостингов, заканчивая выделенными серверами. Для работы CS-Cart требуется два основных компонента:
+
+* **PHP** версии 5.3 и выше.
+* **MySQL** версии 4.1 и выше с поддержкой расширения **MySQLi** или **pdo_mysql**.
+
+Это позволяет делать CS-Cart совместимым с любым сервером, поддерживающим PHP и MySQL. Мы рекомендуем использовать Apache в качестве веб-сервера для стабильной работы вашего магазина.
+
+Технические требования к серверу
+================================
+
+.. list-table::
+   :widths: 10 30
+
+   *    -   Жёсткий диск объёмом
+
+        -   10 Гб
+
+   *    -   Процессор
+
+        -   Одноядерный процессор с тактовой частотой 2.4 ГГц
+
+   *    -   Оперативная память объёмом
+
+        -   1024 Мб
+
+Сервера с данными харакетристиками будет достаточно для 50 посетителей в час.
+
+С ростом количества пользователей, товаров и возможностей интернет-магазина потребуется более производительный сервер.
+
+Требования к программному обеспечению сервера
+=============================================
+
+*   Операционные системы Linux/UNIX
+
+    -   Отключенный SELinux и AppArmor
+
+*   Веб-сервер Apache. 
+
+    -   Включенный mod_rewrite для работы SEO.
+
+    -   Включенный mod_headers для работы CORS и режима виджета.
+
+    -   Включенный mod_ssl для работы SSL.
+
+    -   Отключенный mod_security.
+
+    -   В файле .htaccess должны быть разрешены директивы DirectoryIndex, Deny, Allow, Options, Order, AddHandler, RewriteEngine, RewriteBase, RewriteConf и RewriteRule.
+
+*   Также поддерживаем работу NginX 1.4+ с настройками по умолчанию.
+
+*   Интерпретатор PHP 5.3+. Поддерживаем SAPI mod_php, FPM, FastCGI.
+
+    -   PHP собран с поддержкой Phar, ZipArchive, Filters и XML.
+
+    -   Отключена опция safe_mode.
+    
+    -   Отключен модуль mcrypt.
+    
+    -   Отключены APC, eAccelerator и ZendOptimizer.
+    
+    -   Включена опция file_uploads для загрузки файлов.
+    
+    -   Включена опция allow_url_fopen.
+    
+    -   Установлен модуль gd c поддержкой FreeType для отображения картинок.
+    
+    -   Установлен модуль curl для работы пейментов и шиппингов.
+    
+    -   Установлен модуль mysql, mysqli или pdo для работы с базой данных.
+    
+    -   Разрешено использовать ini_set, ftp_exec, ftp_connect, ftp_login, ftp_get, ftp_put, ftp_nb_fput, ftp_raw, ftp_rawlist, mysql_pconnect, eva, system, exec, shell_exec, passthru, escapeshellarg, set_time_limit.
+
+    -   Если PHP собран с Suhosin patch, то применить настройку:
+
+        +   suhosin.memory_limit = 0
+
+        +   suhosin.post.max_vars = 3000
+
+        +   suhosin.get.max_totalname_length = 3000
+
+        +   suhosin.session.encrypt = Off
+
+        +   suhosin.session.cryptua = Off
+
+        +   suhosin.cookie.cryptdocroot = Off
+
+        +   suhosin.session.cryptdocroot = Off
+
+*   Сервер баз данных MySQL 4.1+ для работы с MyISAM таблицами. 
+
+    -   Поддерживаем MariaDB 5.5+, PerconaServer 5.5+.
+
+*   Опционально для увеличения скорости загрузки:
+
+    -   Установленный модуль PHP для Redis.
+
+    -   Redis 2.6+.
+
+
