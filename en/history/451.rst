@@ -6,16 +6,98 @@ CS-Cart 4.5.1 Changelog
 New Features and Improvements
 =============================
 
-[+]
+[+] Add-ons: Buy together: You can now choose whether or not to limit the availability of a combination of products to a certain time period.
+
+[+] Add-ons: PayPal payments: Administrators can now choose to set the status of newly-placed orders with a PayPal Standard payment method to “Open” or “Incomplete” automatically.
+
+[+] Multi-Vendor: Add-ons: PayPal Adaptive Payments: The add-on that allows administrators to distribute funds from orders among multiple vendors automatically was added.
+
+[+] Multi-Vendor: Accounting: New email notifications for payouts, withdrawals, and their statuses were added.
+
+[+] Multi-Vendor: Dashboard: Accounting information (balance, income) and the “Top sellers” block were added to the dashboard.
+
+[+] Promotions: Order management: The reapplication of promotions according to the current rules during order editing can now be disabled via a tweak in the config.local.php file.
+
+[+] Storefronts: Layouts: When cloning a storefront, the content settings of blocks are now updated automatically to use the entities of the clone storefront.
+
+[+] Users: An email notification can now be sent when a user account is disabled.
 
 =====================
 Functionality Changes
 =====================
 
-[*]
+[*] Add-ons: Customers also bought: Products in the block with the “Also bought” filling are now sorted from the most purchased to the least purchased.
+
+[*] Add-ons: Data feeds: Product option combinations can now be exported to Google Merchant Center with their GTINs (the CODE field) and images. GTINs of products can also be taken from the CODE field, if the product doesn't have a corresponding feature.
+
+[*] Add-ons: Data feeds: Tips and notifications related to Google Merchant Center were added to the page that contains the list of data feeds.
+
+[*] Add-ons: Google reCAPTCHA: Image verification: The old CAPTCHA was removed from the core. Relevant image verification settings were moved to the "Google reCAPTCHA” add-on, backward compatibility preserved.
+
+[*] Core: Registry: Cache update handlers are now stored separately from each other and can be processed independently. That reduces the server load and eliminates race condition.
+
+[*] Marketing: Abandoned carts: The data that an unregistered customer enters during checkout is now saved when the customer doesn’t complete checkout.
+
+[*] Multi-Vendor: Accounting: The “Account balance” page was replaced with the new “Accounting” page.
+
+[*] Shipping methods: UPS: Upgrade: The “Suggested Retail Rates” pickup type is no longer supported by UPS. This pickup type will be automatically replaced with “One Time Pickup” in all existing UPS-based shipping methods during the upgrade.
+
+[*] Storage: CDN: Amazon SDK library updated to version 1.6.3.
 
 ========
 Bugfixes
 ========
 
-[!]
+[!] Add-ons: Data feeds: Products: Features: If multiple features had the same name, then the values were always taken from the last feature. Fixed.
+
+[!] Addons: PayPal payments: IPNs were not processed for some payments made with PayPal Pro. That’s why the statuses of some orders didn’t change automatically. Fixed.
+
+[!] Add-ons: RSS feed: The feed included hidden and disabled blog posts. Fixed.
+
+[!] Add-ons: SEO: When cloning a storefront, the SEO names could be generated wrongly for cloned categories. Fixed.
+
+[!] Blocks: Menu: A storefront could display a menu that belonged to another storefront. Fixed.
+
+[!] Checkout: Payment methods: It was impossible to place an order with zero cost. Fixed.
+
+[!] Checkout: Registration: When the “Administrator must activate new user accounts” setting was on, the customer still had an option to register an account at checkout before submitting an order. Fixed.
+
+[!] Design: Bright theme: Add-ons: Email marketing: The header was missing in the “Subscribe” block. Fixed.
+
+[!] Design: Parent theme: On-site template editing: When editing a template that is missing in a child theme, changes were saved to the parent theme. Fixed.
+
+[!] Design: Storefront: Bright theme: Buttons: Using certain languages could lead to buttons having wrong sizes and positions on mobile devices. Fixed.
+
+[!] Design: Storefront: Long words in a text could make the text occupy areas outside of the text field. Fixed.
+
+[!] Documents & Email templates: Unnecessary switchers for the content languages existed on the list of email templates and code snippets. Fixed.
+
+[!] Documents: Editing documents was available with selected storefront, although it was supposed to be available only in the “All stores” mode. Fixed.
+
+[!] Licensing: License mode: A wrong message was displayed to administrators when using a license number with a version that was released after the upgrade subscription had expired. Fixed.
+
+[!] Multi-Vendor: An SQL error could occur when merging vendors. Fixed.
+
+[!] Order notification: Old email templates: Order status email notifications that were sent to orders department used email subject and email template from default storefront instead of the storefront where the order was placed. Fixed.
+
+[!] Products: Features: When adding a new feature variant on the product editing page, there was no check whether this variant existed already. Fixed.
+
+[!] Settings: General: The "Initial order ID value" field accepted wrong types of data, including non-numeric data. Fixed.
+
+[!] Shippings: Temando: The php-soap extension was required, but there was no notification when the extension wasn’t installed. Fixed.
+
+[!] {#6562} Design: RTL wasn’t supported by breadcrumbs and the <title> tag. Fixed.
+
+[!] {#6568} Shippings: UPS: Shipping rates couldn't be fetched when the “UPS All countries: Worldwide Express Freight” service was used. Fixed.
+
+[!] {#6609} JS: Product features: CKEditor: Pagination for feature variants didn’t work in a pop-up window when CKEditor was enabled. Fixed.
+
+[!] {#6610} Add-ons: Call requests: The “Buy now with 1-click” button appeared to unregistered customers even if prices and the “Add to cart” button were hidden from them. Fixed.
+
+[!] {#6628} Design: Parent theme: LESS files: LESS files of the child theme didn’t override the LESS files of the parent theme in some cases. Fixed.
+
+[!] {#6635} Documents: Invoice: Discount: When a discount was set up as a catalog promotion, its value appeared as 0 in the invoice. Fixed.
+
+[!] {#6655} Products: Search: When a specific storefront was selected, product search didn’t work in some cases. Fixed.
+
+[!] {#6667} Core: Console: HTTPS: When the store used HTTPS, PHP controllers couldn’t be executed for the customer area in the console. Fixed.
