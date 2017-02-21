@@ -1,0 +1,133 @@
+***********************
+CS-Cart 4.1.3 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Addons: Image zoom: New position of the zoom list added.
+
+[+] Export/Import: Orders: The Store field added to export.
+
+[+] Logs: Multi-request logging added.
+
+[+] Shipping methods: USPS: Ability to use "GroundOnly" flag added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] API: Products: product_id is always returned in the integer type now.
+
+[*] Admin panel: The "Keep HTTPS connection once a secure page is visited" option in Settings -> General restored.
+
+[*] Core: API: The same language variable is now used in all error messages if a field is missing; obsolete language variables removed.
+
+[*] Export/Import: Ability to export/import the following product properties: "max quantity", "quantity step", and "list quantity step" added.
+
+[*] HTML tags can no longer be used in user data.
+
+[*] Installer: Validator extended with the PharValidator.
+
+[*] Layouts: Cache: Extra cache level "HTTPS" added.
+
+[*] Payments: Security improvement: Only the payment processors used on the Payment methods page can now be accessed by a direct link.
+
+========
+Bugfixes
+========
+
+[!] Addons: Gift Certificates: Free products from an applied certificate were occasionaly not removed from the cart when the certificate was removed. Fixed.
+
+[!] Addons: Required Products: If a product with an assigned required product was added to cart for free with a promotion, the cart content preview would indicate the wrong number of products after the promotion was applied. Fixed.
+
+[!] Addons: Social buttons: The Twitter button did not work with https connection. Fixed.
+
+[!] Addons: Tags: Product tags were removed when admin used the m_override mode to update products. Fixed.
+
+[!] Admin panel: Dashboard: DateRange picker: Date range always included one extra day (e.g. selecting Yesterday would show results for Yesterday + Today). Fixed.
+
+[!] Admin panel: If a product option name included the qoute sign, the action dropdown menu (edit, delete) was not shown. Fixed.
+
+[!] Admin panel: Orders: Statuses: Email was sent in incorrect language when an admin changed an order status. Fixed.
+
+[!] Admin panel: Sales reports: SQL error occurred when an admin created a report with the Object to analyze option set to "Categories" and the Value to display option to "Order totals". Fixed.
+
+[!] Admin panel: The store picker included the obsolete "email" field. Fixed.
+
+[!] Admin panel: Theme store tab was always empty due to incorrectly closed div elements. Fixed.
+
+[!] Admin panel: Upgrade center: An SQL error occurred during upgrade process if a language variable name contained the quote sign. Fixed.
+
+[!] Admin panel: WYSIWYG editors CKEditor and TinyMCE did not process disabled fields properly when the "Update for all" button was used. Fixed.
+
+[!] Companies: If the "Clone data" param was checked and then unchecked, error notice "Undefined index 0" was displayed on store creating. Fixed.
+
+[!] Core: Fatal error occurred when compressing/decompressing archieves if PharData extension was not installed on the server. Fixed.
+
+[!] Core: The "fn_get_order_info" function returned empty "tax_subtotal" value if tax calculation was based on subtotal. Fixed.
+
+[!] Core: The PHP function to detect user agent could not detect Internet Explorer 11 correctly. Fixed.
+
+[!] Core: The storefronts could be detected incorrectly, if their names were almost the same (e.g. test11 and test111). Fixed.
+
+[!] Design: Menu: When pointing to the last menu entry, the next menu line was shifted. Fixed.
+
+[!] Design: There was a white line between the top panel and the header panel. Fixed.
+
+[!] Export/Import: An SQL error occurred during user import. Fixed.
+
+[!] Export/Import: Users were not created during import. Fixed.
+
+[!] Installer: Installer did not inform a user if they did not have sufficient permissions to create a database. Fixed.
+
+[!] Multi-Vendor: Logos were not saved on new vendor creating. Fixed.
+
+[!] Multi-Vendor: Order management: Email notification was not sent when an admin created an order. Fixed.
+
+[!] Multi-Vendor: Vendor's logos were not changed on updating the vendor data. Fixed.
+
+[!] Payment methods: Amazon checkout: Gift certificates did not work. Fixed.
+
+[!] Payment methods: Paypal Express checkout: Shippings were not calculated when a customer returned from the PayPal page to proceed with the order. Fixed.
+
+[!] Payment methods: Paypal Express checkout: The Shopping Cart Contents section was not displayed on the Transaction Details page. Fixed.
+
+[!] Product features & filters: If the same feature has been used in filters more than once, some feature variants could be displayed as disabled for the categories that fit the filters conditions. Fixed.
+
+[!] Promotions: If two products were added to cart, one being included as a gift for the other, the customer will not get the gifted product for free. Fixed.
+
+[!] Promotions: Required products: The "Once per customer" condition did not work if a customer placed an order and then re-logined several times. Fixed.
+
+[!] The "UK Cookies law" link was indexable by search engines. Fixed.
+
+[!] The drop down menu on the order details page did not work on iOS devices. Fixed.
+
+[!] Widget mode: Widget layout was ignored and the default one was displayed in the Widget mode. Fixed.
+
+[!] {#4811} Product features: Feature variants were cleared when a category was removed from the Categories list. Fixed.
+
+[!] {#4832} Core: If the gzip_css_js tweak was enabled, browser did not cache gzipped files. Fixed.
+
+[!] {#4845} Design: Admin panel: Title was missing on the news logging settings page. Fixed.
+
+[!] {#4853} Addons: News and emails: Subscribers: Bulk subscriber adding did not work; subscribers from multiple mailing lists could overlap. Fixed.
+
+[!] {#4853} Admin panel: Theme editor: If the font size for big buttons (e.g. Add to cart, Place order) was changed, the buttons were not centered in the Firefox browser. Fixed.
+
+[!] {#4893} Layouts: The "SWITCH LAYOUT" section was hidden if there was only one layout. Fixed.
+
+[!] {#4900} Addons: Social Buttons: A JavaScript error occured if the VK.com app id was not specified, but its button status was Active. Fixed.
+
+[!] {#4921} Promotions: The "Once per customer" condition did not work until the order status was not changed from the "Open" to any other. Fixed.
+
+[!] {#4924} Multi-page checkout: The Create new profile button did not work. Fixed.
+
+[!] {#4935} Admin panel: Order management: The "Staff only notes" field was not saved in the order data when creating a new order. Fixed.
+
+[!] {#4940} Products with long names or no image were rendered incorrectly in a scroller product block. Fixed.
+
+[!] {#4943} Admin panel: Order management: If a product price was updated, this price was displayed on order editing, but not the order one. Fixed.
+
+[!] {#4945} If the "items templates" product template was used within a tab, the price font size was too big and extra list markers were rendered. Fixed.

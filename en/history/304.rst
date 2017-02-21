@@ -1,0 +1,188 @@
+***********************
+CS-Cart 3.0.4 Changelog
+***********************
+
+=====================
+Functionality Changes
+=====================
+
+
+[*] Ultimate Edition: Add-on statuses are now shown on the 'Add-Ons' page when it is viewed by a storefront administrator.
+
+[*] GeoIP: GeoIP database updated.
+
+[*] If a page with an existing SEO name was created, the new SEO name was appended with an index. Every new SEO name collision resulted in a new index appended to a SEO name. Now the indices are incremented instead of being appended.
+
+[*] Obsolete function 'fn_get_setting_edition_condition' removed.
+
+[*] Order management: Product price cannot be negative anymore.
+
+[*] Orders: Credit cards: Store credit card number in order functionality returned.
+
+[*] The function 'fn_update_image_alt_text' removed.
+
+[*] Ultimate Edition: Add store: Now if the 'Share products' option is enabled, the new product has links for additional categories.
+
+[*] Searchanise add-on updated. 
+
+[*] Addons: Access restriction: Domain check routine optimized.
+
+========
+Bugfixes
+========
+
+[!] Action links were displayed incorrectly on order pages if Russian language was selected. Fixed.
+
+[!] Addons: Comments and reviews: Captcha was not updated after posting in the new post form on the product details page. Fixed.
+
+[!] Addons: Comments and reviews: Multi-Vendor Edition: Vendor could not add a comment to an order. Fixed.
+
+[!] Addons: Gift certificates: Promotions: Even if a gift certificate code was applied, a wrong promotion coupon notification still was shown. Vice versa, if a promotion code was applied, a wrong gift ceftificate code notification was shown. Fixed.
+
+[!] Addons: Price list: Images were not displayed in XLS price lists. Fixed.
+
+[!] Addons: Product Configurator: If 'None' or product without compatibility class was selected in group, product availability status stayed the same as for the previously selected product. Fixed.
+
+[!] Addons: Product configurator: If a product could not be added to cart, its details page were not loaded. Fixed.
+
+[!] Addons: Product Configurator: Product details: 'Add to cart' button did not work if popup tabs included form. Fixed.
+
+[!] Addons: Product configurator: Products with zero price could not be added to the cart if the 'Do not allow customers to add the product to the cart' option was enabled. Fixed.
+
+[!] Addons: Reward points: Buy together: Price in points was calculated only for single product if it had been bought in a 'Buy together' combination. Fixed.
+
+[!] Addons: Reward points: Buy together: Price in points was not calculated for additional products in a combination. Fixed.
+
+[!] Addons: RMA: Order could have a negative total on product refund. Fixed.
+
+[!] Addons: RMA: Return period was saved incorrectly on the product being added to cart. Fixed.
+
+[!] Addons: SEO: Multi-Vendor Edition: Admin e-mail notification from the 'Apply for a vendor account' form contained a broken link (404 error) if the SEO add-on was active. Fixed.
+
+[!] Addons: Watermarks: Image settings were confusing and incorrect. Fixed.
+
+[!] Addons: Watermarks: Ultimate Edition: Thumbnail company id search took too long in large stores. Fixed.
+
+[!] Addons: Watermarks: Watermarks were not generated for thumbnails, if thumbnail MIME type was different from MIME type of detailed image. Fixed.
+
+[!] Affiliate account type was displayed as 'Customer' on the user profile page. Fixed.
+
+[!] Alt texts for product option variant images were created only for the currently active language. Fixed.
+
+[!] Block manager: 'Grid' template was used for products instead of 'List'. Fixed.
+
+[!] Block manager: All custom statuses for dynamic objects were deleted on dynamic object removal. Fixed.
+
+[!] Block manager: Form labels were displayed incorrectly in content tab of a 'Banners' block. Fixed.
+
+[!] Blocks: Products: Quick view: The 'Quick view' link did not work in dropdown. Fixed.
+
+[!] Checkout: The 'Other payments' text was not always displayed at the last checkout step. Fixed.
+
+[!] Checkout: If the 'Quick registration' and 'Email as login' options were disabled, a PHP error notification was displayed at checkout when a customer tried to register. Fixed.
+
+[!] Checkout: If shipping section preceded billing section and the billing section did not have any required fields, shipping section was considered filled out even if all fields were empty. Fixed.
+
+[!] Checkout: Tab selector was displayed even for a single tab. Fixed.
+
+[!] CKEditor: If a field was mandatory, the 'Submit' button had to be pressed twice in order to save the form. Fixed.
+
+[!] Database autorepair functionality caused a PHP error in the MySQLi PHP extension. Fixed.
+
+[!] Design: The 'Coming soon' notification was displayed incorrectly on a category page with the 'short-list' template. Fixed.
+
+[!] Design: Drop-down menus unfolded in the wrong directions in the main menu. Fixed.
+
+[!] Design: Product features: Feature of type 'text' was displayed incorrectly. Fixed.
+
+[!] Google Export: The proper data feed failed to install for all languages except English. Fixed.
+
+[!] Multi-Vendor Edition: Users: Vendor admin could be saved as the root admin. Fixed.
+
+[!] Multi-Vendor Edition: Vendors: Pagination did not work on the vendor list page in the customer area. Fixed.
+
+[!] Multi-Vendor Edition: When creating a new shipment admin could use any shipping method (even the ones not available for the selected vendor). Fixed.
+
+[!] News and emails add-on: The 'Sign up for our newsletters!' title was displayed on the last checkout step even if there were no news for checkout. Fixed.
+
+[!] Order management: If product price was calculated with option modifiers, product price could be incorrect on the 3rd editing step. Fixed.
+
+[!] Order management: If there were no permissions to view/manage catalog, but there were permissions to view/manage orders, a JavaScript error was displayed on the 1st step. Fixed.
+
+[!] Order management: When changing tax rates on the 3rd step, rates did not change. Fixed.
+
+[!] Order statuses: The order status select box layout would break after status update if status was not changed. Fixed.
+
+[!] Orders: New order data were created for all users on order placement, which resulted in low performance. Fixed.
+
+[!] Product features: On multi-product editing floating point values could not be set for features with the type 'Other/Number'. Fixed.
+
+[!] Product options: Option requirements were ignored when setting product options in Internet Explorer 9. Fixed.
+
+[!] Product options: Option check boxes added after a disabled option were ignored. Fixed.
+
+[!] Product options: Retrieving option data after AJAX redirect did not work. Fixed.
+
+[!] Products: Customer area crashed due to lack of memory on high 'In stock' and low 'Quantity step' values. Fixed.
+
+[!] Profile fields: The 'Email' field was not displayed on profile detailed page if 'Quick registration' was disabled. Fixed.
+
+[!] Profile fields: It was impossible to disable 'Shipping/Billing' section, because the 'Email' field could not be deactivated. Fixed.
+
+[!] Profile fields: Requirements data was lost on 'Email' field update on the profile page. Fixed.
+
+[!] Promotions: Total price was not updated after coupon had been deleted on the cart content page. Fixed.
+
+[!] Search: Pagination did not work on multi-term search in Internet Explorer. Fixed.
+
+[!] Settings: Appearance: The 'In stock' label was not displayed for the products without option list even if the 'Display In stock as a field' setting was active. Fixed.
+
+[!] Shipments: Shipment date was always set to current on the details page. Fixed.
+
+[!] SMS notifications: Unknown encoding was used for notifications. Fixed.
+
+[!] States: Spanish districts list was not full. Fixed.
+
+[!] Store Import: Import data: New product feature was created if the feature id had been defined, but the feature name had been changed. Fixed.
+
+[!] Store Import: Product features: Features with the type 'number' were updated not for all languages. Fixed.
+
+[!] The total cost label could be too short for the value at checkout if Russian language was selected. Fixed.
+
+[!] Two hooks with the same name were present in the function 'fn_check_selected_filter'. Fixed.
+
+[!] Ultimate edition: Deleting non-owner category or non-owner store may have led to the shared products being removed from all stores. Fixed.
+
+[!] Ultimate edition: Files of shared downloadable products were available in other stores if 'Share users among stores' setting was enabled. Fixed.
+
+[!] Ultimate edition: If 'Product list default sorting' setting had the value 'Sort by position', an SQL error occured on the product page in the admin area. Fixed.
+
+[!] Ultimate edition: If an SSL certificate was installed for a storefront and the storefront resided on a different domain than the admin panel, the option 'Enable secure connection' could not be enabled in the admin panel. Fixed.
+
+[!] Ultimate edition: Products: Shared product breadcrumbs were generated incorrectly. Fixed.
+
+[!] Ultimate edition: Reccuring billing: Recurring plan could not be assigned to a usergroup. Fixed.
+
+[!] Ultimate edition: Shared product price was displayed incorrectly on the cart content page. Fixed.
+
+[!] Ultimate edition: When updating products from product list in the admin area, shared product descriptions were deleted. Fixed.
+
+[!] {#3431} Addons: Product Configurator: Product configuration was deleted after cart update. Fixed.
+
+[!] {#3502} Products: Delete from minicart did not work. Fixed.
+
+[!] {#3533} Privileges: Product could not be saved without the permission to edit blocks assigned. Fixed.
+
+[!] {#3543} Emails: Profiles: An incorrect activation URL was sent to the store admin on customer registration. Fixed.
+
+[!] {#3548} Addons: Product Configurator: Quick view: Default product prices were ignored on price display. Fixed.
+
+[!] {#3558} Multi-Vendor Edition: Profiles: 'company_id' was set to 0 on profile editing in the customer area. Fixed.
+
+[!] {#3560} E-mail: Gift certificates: Wrong URL was sent on certificate creation. Fixed.
+
+[!] {#3581} Emails: Profiles: Email subject displayed an incorrect company name. Fixed.
+
+[!] {#3582} Addons: Banners management: Slider was loaded incorrectly if it was displayed in hidden blocks. Fixed.
+
+[!] {#3506} SEO: Ultimate Edition: If a non-shared extended feature in one storefront and a category of the same name in another storefront were created, a feature from the 1st storefront was opened for both storefronts. Fixed.

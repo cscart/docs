@@ -1,0 +1,27 @@
+************************
+CS-Cart 2.0.14 Changelog
+************************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Ability to display thumbnails as a gallery added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Displaying the buttons on the product details page corrected.
+
+[*] Danish language pack updated.
+
+[*] Product features: New hook added to the feature update page.
+
+========
+Bugfixes
+========
+
+[!] Polls: Statistic pages in the Administration panel contained missing language variables. Fixed.
+
+[!] Wishlist addon: If two gift certificates with similar products were added to the list, the products in the first certificate were cleared. Fixed.

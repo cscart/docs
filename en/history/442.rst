@@ -1,0 +1,51 @@
+***********************
+CS-Cart 4.4.2 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Mobile Admin App: An add-on that allows you to manage your store from mobile devices was added. It is available for CS-Cart Ultimate.
+
+[+] Editions: CS-Cart Ultimate: A new edition "CS-Cart Ultimate" was introduced. It offers Mobile Admin App and an unlimited number of storefronts.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Core: Payment methods: Amazon Checkout: Additional sanitization of request data was added to the Amazon Checkout payment method to prevent possible XXE attacks.
+
+========
+Bugfixes
+========
+
+[!] Add-ons: Bestsellers: Sorting products by discount while using “Bestselling” as the default sorting method could lead to an SQL error. Fixed.
+
+[!] Add-ons: Comments and reviews: If a product was displayed in a block, the rating link could lead to the review and rating page of a wrong product. Fixed.
+
+[!] Add-ons: PayPal payments: Returning to the store without using the “Return to store” link after paying for the order could lead to problems with cart or order status. Fixed.
+
+[!] Add-ons: Searchanise: Closing the store: The storefront didn’t appear as closed for the administrator when the access key was specified in the settings and the Searchanise add-on was enabled. Fixed.
+
+[!] Checkout: Payment methods: A PHP notice could appear when paying for an order via some specific payment methods. Fixed.
+
+[!] Core: Upgrade center: Migrations: The migration was impossible for MySQL with NO_ZERO_DATE mode. Fixed.
+
+[!] Design: Parent theme: Add-ons couldn’t override the blocks of product list templates. Fixed.
+
+[!] Design: Parent theme: Styles were not loaded properly when the store was installed on Windows systems. Fixed.
+
+[!] Multi-Vendor: An attempt to merge vendors that had products in the same category could lead to an SQL error. Fixed.
+
+[!] Orders: Sales reports: The order totals were calculated incorrectly on the “Categories sales” tab. Fixed.
+
+[!] Products: The 'account_info*' value was missing in the ‘result_ids’ field of the “compact_list.tpl” template. Fixed.
+
+[!] REST API: It was impossible to set or change creation timestamps for orders, shipments, stores, and users via REST API. Fixed.
+
+[!] {#6462} Themes: Responsive: Cursor always appeared as pointer on laptops with touch screens. Fixed.
+
+[!] {#6484} Add-ons: Gift certificates: Currencies: The prices of gift certificates were rounded incorrectly in non-primary currencies. Now the price of a gift certificate can only be entered in the primary currency.
+
+[!] {#6532} Design: Parent theme: Theme editor: Styles of child themes couldn’t be compiled to CSS or restored to LESS. Fixed.

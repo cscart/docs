@@ -27,7 +27,7 @@ Install CS-Cart
 This section describes the CS-Cart installation process on various systems. It also provides other useful information, such as system requirements and important post-installation procedures.
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :titlesonly:
     :glob:
 
@@ -40,7 +40,7 @@ User Guide
 This section covers the day-to day use of CS-Cart and the possible questions you might have.
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :titlesonly:
     :glob:
 
@@ -53,7 +53,7 @@ Upgrade CS-Cart
 This section describes the process of upgrading CS-Cart.
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :titlesonly:
     :glob:
 
@@ -66,7 +66,7 @@ Developer Guide
 This section contains the information that is useful for CS-Cart developers.
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :titlesonly:
     :glob:
 
@@ -90,3 +90,14 @@ This section includes the information on theme development for CS-Cart.
 
     author_guide
     map
+
+===============
+Version History
+===============
+
+This section describes the changes that took place in various versions of CS-Cart:
+
+.. toctree::
+    :maxdepth: 1
+
+    history/index

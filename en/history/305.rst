@@ -1,0 +1,125 @@
+***********************
+CS-Cart 3.0.5 Changelog
+***********************
+
+=====================
+Functionality Changes
+=====================
+
+[*] Abandoned/Live carts: Cart information now includes customer IP address.
+
+[*] Addons: Price list: The 'TCPDF' library updated.
+
+[*] Addons: Searchanise: Numerous improvements.
+
+[*] Addons: Searchanise: The ability to disable sorting by relevance by default added.
+
+[*] Checkout: The ability to use different values in the 'Email' field in billing and shipping sections added.
+
+[*] The Australia Post shipping method now calculates rates more precisely according to the number of packages.
+
+[*] {#3648} Block manager: Function calls in the block manager schemas refactored.
+
+========
+Bugfixes
+========
+
+[!] Abandoned carts: If a user logged in on checkout, the respective abandoned cart was cleared in the admin panel. Fixed.
+
+[!] Addons: Affiliate: Affiliate user type was changed to 'Customer' after placing order. Fixed.
+
+[!] Addons: Comments and reviews: Comment timestamp was rendered overlapping comment status in Opera 12.10. Fixed.
+
+[!] Addons: News and Emails: One newsletter checkbox was always impossible to uncheck on checkout. Fixed.
+
+[!] Addons: Product configurator: Order management: Some configuration products were removed after editing order. Fixed.
+
+[!] Addons: Product configurator: Product configuration price was displayed incorrectly when list price or discounts were enabled. Fixed.
+
+[!] Addons: RSS feed: Invalid link was set for logo. Fixed.
+
+[!] Addons: SEO: Product URLs were incorrect (pointing to the 404 location) after product export/import. Fixed.
+
+[!] Addons: SEO: SEO names were generated empty for products titled in Russian. Fixed.
+
+[!] Affiliate: Graphical banner was not shown for product group. Fixed.
+
+[!] Block manager data from layouts.xml was installed for all translations, even for non-existing ones. Fixed.
+
+[!] Block manager: Products: If the 'Feature Comparison' option was checked for a product, the link 'Add to compare list' overlapped the 'Add to cart' button. Fixed.
+
+[!] Block manager: Products: Scroller block was displayed incorrectly if the quantity of the items was less than scroller size. Fixed.
+
+[!] Block manager: Products: Scroller: Indention for the Left/Right arrows decreased.
+
+[!] Block manager: Products: The 'Add to cart' button was shown in product block even if the 'Hide Add to cart button' option was checked. Fixed.
+
+[!] Categories: The 'Layout' tab content was displayed in every tab. Fixed.
+
+[!] Checkout: Promotions issued for using a particular payment were applied on the 2nd step, before any payment was selected. Fixed.
+
+[!] Gift certificates: On certificate purchase, the radio buttons 'Send via postal mail/Send via mail' swapped input fields no matter which variant was selected. Fixed.
+
+[!] Join CSS: Embeded image data was processed incorrectly. Fixed.
+
+[!] Multi-Vendor Edition, Ultimate Edition: Product files were not deleted if the product was deleted by a vendor or a storefront admin. Fixed.
+
+[!] Multi-Vendor Edition: Gift certificates: Discounts were calculated incorrectly when products from numerous different vendors were ordered. Fixed.
+
+[!] Multi-Vendor Edition: Global options: Vendors could not remove global options from products. Fixed.
+
+[!] Order management: If anonymous checkout was forbidden, there was no ability to complete the 2nd step. Fixed.
+
+[!] Orders: Advanced search: Shipping-based search was independent on the selected vendor. Fixed.
+
+[!] Pages: Link URL was not applied to the menu item if the 'Use "Link text" and "URL"' option was enabled. Fixed.
+
+[!] Product Features: Feature variant list was not shown on the product bulk editing page. Fixed.
+
+[!] Product files: Attached file was not deleted on product editing page in the admin panel if its id in the database was higher than 9. Fixed.
+
+[!] Product option modifiers were applied incorrectly to forbidden exception combinations if one of the combinations had no variants. Fixed.
+
+[!] Products: Inventory: Product quantity was checked incorrectly if 'List quantity count' was set in Pricing/inventory section of a product. Fixed.
+
+[!] Products: The 'Maximum order quantity' value was ignored if product quantity added to cart was over the product quantity in stock. Fixed.
+
+[!] Promotions: A promotion was not applied if a single zero-price product was in cart. Fixed.
+
+[!] Sales report: Categories sales report displayed incorrect sales information: subcategory prices were always summed together. Fixed.
+
+[!] Searchanise: DB error was displayed on the category page. Fixed.
+
+[!] Searchanise: Product descriptions were submitted only in one language. Fixed.
+
+[!] Searchanise: The default sorting setting did not work for 'Bestselling' if the Searchanise add-on was enabled. Fixed.
+
+[!] SEO names: Addtitional category was used instead of the main one on SEO URL compiling. Fixed.
+
+[!] SEO: Link to product page could be incorrect if product had several categories and SEO URLs included category in path. Fixed.
+
+[!] Store import add-on: Assigned HTML blocks lost their links to objects. Fixed.
+
+[!] Ultimate Edition: Addons: Affiliate: Graphic banner categories were not saved. Fixed.
+
+[!] Ultimate Edition: Addons: Google sitemap: Non-existing company pages existed. Fixed.
+
+[!] Ultimate Edition: Addons: Price list: No 'Save file' dialog appeared after price list creation in the admin panel. Fixed.
+
+[!] Ultimate Edition: Quantity discounts: If a quantity discount was defined in price percentage and saved for all stores, the cost was calculated incorrectly for the defined item quantity in the customer area. Fixed.
+
+[!] Ultimate Edition: Users were unable to recover password if the 'Sharing users' option was disabled and several users were registered in different stores. Fixed.
+
+[!] Ultimate Edition: When changing a shared product owner, its description was saved for the old company. Fixed.
+
+[!] Users: Abandoned/Live carts: Customer data was submitted only if the client had entered their credentials on registration. Fixed.
+
+[!] {#3548} Addons: Product Configurator: Default configuration products were ignored when calculating price in the Quick view in the customer area. Fixed.
+
+[!] {#3589} Block manager: Products: Product options modifiers were not added to price. Fixed.
+
+[!] {#3616} Addons: Google export: Only single value was passed from multiple product feature values. Fixed.
+
+[!] {#3649} Buy together: Error occured and cart contents were cleared if identical product combinations with different product options were added to cart. Fixed.
+
+[!] {#3665} Product tabs: Adding HTML block caused a redirect to the block manager. Fixed.

@@ -1,0 +1,125 @@
+***********************
+CS-Cart 4.2.2 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Translations of the profile field names were moved to PO-file.
+
+[+] Addons: Banner details notes were added.
+
+[+] API: Auth: Notify parameter was added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Orders: Order details page: Customer notes textarea was moved to the central box.
+
+[*] PHPMailer: "Use Encrypted Connection" settings were added for SMTP server settings.
+
+[*] Administration: The Users item was removed from the Customers menu.
+
+========
+Bugfixes
+========
+
+[!] Storefront: Quantity: Min value in the quantity input field could be less than one. Fixed.
+
+[!] Banners: Banners were not shown in some cases if the default language was English. Fixed.
+
+[!] Addons: Comments and reviews: The rating parameter on the categories page was calculated based on all reviews, including not approved ones. Fixed.
+
+[!] Addons: Comments and reviews: Empty thread was not created for new companies. Fixed.
+
+[!] Addons: Ebay: Error message appeared when “no image” picture was uploaded via HTTPS. Fixed.
+
+[!] Addons: Reward points: Reward points were not recalculated in the user menu in the storefront until the page was reloaded. Fixed.
+
+[!] Addons: Tags: Add tags did not work with UTF8 characters. Fixed.
+
+[!] Back-end: Search: Search did not work when admin added product and continued the search. Fixed.
+
+[!] Basic theme: Contact us form was displayed incorrectly in a popup window. Fixed.
+
+[!] Checkout: Credit card validation did not work. Fixed.
+
+[!] Dropdown vertical menu: Submenu was positioned incorrectly if it was wider than its parent menu. Fixed.
+
+[!] Exim: Quantity discounts: Usergroup was set incorrectly. Fixed.
+
+[!] File Uploader: The "File could not be uploaded" error was displayed when uploading files through the Server button from subdirectories. Fixed.
+
+[!] Multi-Vendor: Admin was not redirected to the vendor details page after creating a new vendor. Fixed.
+
+[!] Multi-Vendor: Themes: Active theme could be removed. Fixed.
+
+[!] Name-based product sorting was unstable if the product owner name was different from the shared name. Fixed.
+
+[!] Order management: Payment surcharge was not displayed when editing/adding order, but the order total was increased after creation. Fixed.
+
+[!] Payments: Paypal: Shipping tax was applied twice if the "Tax calculation method based on" options was set to "Unit price". Fixed.
+
+[!] Payments: Skrill: 404 error appeared if customer clicked 'Cancel' on the payment side. Fixed.
+
+[!] Payments: Cardsave: Diacritical symbols were transferred to the payment system incorrectly. Fixed.
+
+[!] Payments: Paypoint XML: Special characters were not encoded before sending to the payment system. Fixed.
+
+[!] Price-based product sorting was incorrect in some case if the product owner price was different from the shared one. Fixed.
+
+[!] Products: If a product was shared to several storefronts and then its original storefront was deleted, the product became uneditable. Fixed.
+
+[!] Promotions: There was no text field to input value for Features->Text. Fixed.
+
+[!] Responsive theme: If product tab had shipping estimation block then product page scrolled to this block. Fixed.
+
+[!] Shippings: Products with the inner "Exclude from calculation" flag (Free or Bonus products) were considered when calculating shipping price. Fixed.
+
+[!] Store import: company_id for the features SEO names were not reset to 0. Fixed.
+
+[!] Store import: Customers were unable to complete checkout if the store was populated with data via Store Import and the Title profile field was enabled. Fixed.
+
+[!] Store import: Import failed if new tables had no prefix. Fixed.
+
+[!] Translation mode did not process language variables with dot in names. Fixed.
+
+[!] Add-on language value re-defined by storefronts were not removed when uninstalling add-on. Fixed.
+
+[!] Search: JavaScript pagination broke the search string if the string contained UTF8 characters. Fixed.
+
+[!] Storefronts could change statuses for Countries, States, Taxes and Locations. Fixed.
+
+[!] User profiles: Custom profile fields data was not removed when deleting user. Fixed.
+
+[!] Addons: Email Marketing: Mailchimp synchronization did not work in some cases. Fixed.
+
+[!] Multi-Vendor: Files editor: Vendor could edit theme files. Fixed.
+
+[!] Pagination did not work in IE9. Fixed.
+
+[!] Product tabs for disabled add-ons were displayed in the Product tabs list. Fixed.
+
+[!] Products: 404 error appeared when user tried to unsubscribe from product notifications. Fixed.
+
+[!] Widget mode: Automatic redirection to the products page occured when the 'filter product by price' block was on a page. Fixed.
+
+[!] {#5128} Console mode: set_time_limit for console mode was reset by config file. Fixed.
+
+[!] {#5160} Layouts: Block statuses: "Disable for" products sections did not save selected products. Fixed.
+
+[!] {#5183} Suppliers: Order management: Suppliers shippings were not re-calculated after deleting the supplier’s product. Fixed.
+
+[!] {#5125} fn_get_products did not return "full_description" for products if short description was specified. Fixed.
+
+[!] {#5135} Styles of the discussion did not pass W3C validation. Fixed.
+
+[!] {#5165} Responsive: Social buttons: Social buttons showed twice on detail product page. Fixed.
+
+[!] {#5149} Addons: SEO: Rich snippets: Rating-related tags were generated if product had no rating. Fixed.
+
+[!] {#5150} Styles of product options did not pass W3C validation. Fixed.
+
+[!] {#5159} Addons: SEO: Trailing slash was missing in the URLs. Fixed.

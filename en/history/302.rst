@@ -1,0 +1,340 @@
+***********************
+CS-Cart 3.0.2 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Store Import add-on added.
+
+[+] Searchanise add-on added.
+
+[+] Shippings: Priority Mail Regional Rate shipping service added.
+
+
+=====================
+Functionality Changes
+=====================
+
+[*] Attribute 'rel=nofollow' added to category and product pickers in the customer area.
+
+[*] Base skin: Close popup cross sign added to popups shown after product being added to cart.
+
+[*] Block Manager: It is now possible to define whether a block must appear only once or not appear at all on a particular location.
+
+[*] Cache directories reorginazed: 'DIR_CACHE' constant renamed to 'DIR_CACHE_MISC'. 'DIR_COMPILED' constant renamed to 'DIR_CACHE_TEMPLATES'.
+
+[*] Config: 'current_host' param added.
+
+[*] Images: The 'Alternative text' field value is added also as image title.
+
+[*] Maxmind GeoIP database updated.
+
+[*] Memory usage for product list display in the admin area optimized.
+
+[*] New function to replace traling slash added.
+
+[*] Orders: Links on not accessible products were displayed in order. Fixed: 'Is accessible' flag (defines if product is not deleted, disabled, etc.) added.
+
+[*] Polls: Ability to show poll results to the not voted users added.
+
+[*] Product features: Ability to save float and negative values in Number type fields added.
+
+[*] Searchanise: Function for check filters block visibility added.
+
+[*] Taxes: Tax priority is taken into account on shipping taxes calculating.
+
+[*] Template editor: Possibility to disable WYSIWYG added.
+
+[*] Ultimate Edtion: 'Profile fields' sharing added.
+
+[*] Webmail add-on removed.
+
+========
+Bugfixes
+========
+
+[!] Error 403 was displayed after vendor updated her/his own profile. Fixed.
+
+[!] Add-ons: Only the last language query for each table was executed during installation. Fixed.
+
+[!] Add-ons: Product tabs could not be used with a non-default skin. Fixed.
+
+[!] Add-ons: Settings buttons were not hidden for a single tab with the 'outside_of_form' flag. Fixed.
+
+[!] Auth: It was impossible to log in after setting a long password. Fixed.
+
+[!] Block Manager: Currency could not be changed in 'Products' block. Fixed.
+
+[!] Block manager: Links in the Quick links block did not work when Dropdown-vertical or Onclick-dropdown options were selected. Fixed.
+
+[!] Blocks: If categories were filled manually, 2nd and 3rd level categories were not displayed. Fixed.
+
+[!] Bulk editing: Input field width did not fit to data length. Fixed.
+
+[!] Buy together add-on: It was impossible to add to cart 2 different product combinations with the same main product. Fixed.
+
+[!] Captcha: Expired images were not deleted by the garbage collector. Fixed.
+
+[!] Cart: Disabled products were not removed from cart after check. Fixed.
+
+[!] Cart: Taxes and discount link was called 'Discounts' even if product only had applied taxes. Fixed.
+
+[!] Categories: Parent category reset to default if admin did not select a new one. Fixed
+
+[!] Checkout: Custom profile fields were not displayed in the 'Order information' block and were ignored on comparing Billing and Shipping addresses. Fixed.
+
+[!] Checkout: If a promotion was applied to a payment and it was selected, promotion stayed assigned on payment tabs switching. Fixed.
+
+[!] Checkout: If mailing lists were shown on the 4th step apart from Terms and conditions, it was impossible to use IFrame payment without subscribing for news. Fixed.
+
+[!] Checkout: Popup window with 'Undefined' title and message was displayed when changing checkout steps in Internet Explorer 8. Fixed.
+
+[!] Clone: Cloned categories had incorrect product count value. Fixed.
+
+[!] Data SQL: Serialized data corrected.
+
+[!] Discussion: Vendor could not add a post in the Communication tab on order editing. Fixed.
+
+[!] Exim: If the 'Output' option was specified as 'Server', administrator would be redirected to dashboard after export was finished. Fixed.
+
+[!] Exim: Product features: Feature variants with values over PRODUCT_FEATURE_VARIANTS_THRESHOLD were not exported. Fixed.
+
+[!] Fileuploader did not work in a pop-up window. Fixed.
+
+[!] Filter by vendor did not work correctly. Fixed.
+
+[!] Form validation: Field error message could be displayed more than once for tthe same field. Fixedthe same field. Fixed
+
+[!] Free shipping promotion was applied on the shipping estimator, but was not displayed. Fixed.
+
+[!] Gift certificate: Preview was opened incorrectly. Fixed.
+
+[!] Google analytics add-on: Different account numbers could not be set for different storefronts in Ultimate. Fixed.
+
+[!] Google sitemap add-on: PHP warning appeared during XML generation if extended features were used. Fixed.
+
+[!] If the 'Show products from subcategories' setting was unticked, product filters worked incorrectly. Fixed.
+
+[!] If the SEO add-on was enabled, some wrong URL addresses did not return the 'Page not found' error, but showed the home page instead. Fixed.
+
+[!] Images sorting: JavaScript error appeared when sorting additional product images. Fixed.
+
+[!] Installer: Disabling license agreement field.
+
+[!] Installer: License agreement field editing disabled.
+
+[!] Installer: Ultimate Edition: Secure store URL was set incorrectly during the installation. Fixed.
+
+[!] Multi-Vendor Edition: DB error was displayed after adding vendor's products to an order of another vendor. Fixed.
+
+[!] Multi-Vendor Edition: Discounts were duplicated for vendor's child orders. Fixed.
+
+[!] Multi-Vendor Edition: Filters by Vendors and Filters by Free shipping: Buggy flag switching fixed.
+
+[!] Multi-Vendor Edition: If vendor had a long description, 'more' link followed to 404 page on the 'companies.catalog'. Fixed.
+
+[!] Multi-Vendor Edition: Order management: When creating a new order with products from different vendors, admin would be redirected to hidden parent order. Fixed.
+
+[!] Multi-Vendor Edition: PHP error notice was displayed on the Payment methods page in the admin area when any payment was edited under a vendor account. Fixed.
+
+[!] Multi-Vendor Edition: Product features were not displayed for vendors, if feature had more than 50 variants. Fixed.
+
+[!] Multi-Vendor Edition: Products: JavaScript error appeared when admin created a product for vendor. Fixed.
+
+[!] Multi-Vendor Edition: Recurring billing: notice about subscription events were displayed to vendor in vendor area. Fixed.
+
+[!] Multi-Vendor Edition: SEO: Preview links for categories were displayed incorrectly in the administator area. Fixed.
+
+[!] Multi-Vendor Edition: The default shipping method was applied when a user entered the checkout page even if the default shipping method had not been picked. Fixed
+
+[!] News & Emails: Deprecated block type was removed.
+
+[!] Not all product feature variants were displayed on the product multiple update page if 'items per page' variable had been changed. Fixed.
+
+[!] Order statuses: The 'Notify' option was disabled by default. Fixed.
+
+[!] Order statuses: The 'Notify' option was disabled for all statuses. Fixed.
+
+[!] Payments: it was impossible to place order if the number of products was over 99. Fixed.
+
+[!] Payments: shipping cost was calculated incorrectly in Amazon checkout if 'Suppliers' were enabled. Fixed.
+
+[!] Price list: Fatal error appeared on XLS price list creation if support of Zip archives was not added to PHP. Fixed.
+
+[!] Price list: PDF: If product did not have an image, image with empty src attribute was added to PDF document. Fixed.
+
+[!] Price list: Price did not correspond to active currency format. Fixed.
+
+[!] Privileges: Sales reports were not affected by privelegies. Fixed.
+
+[!] Product Configurator: It was possible to put a configurable product in cart without picking a required group. Fixed.
+
+[!] Product Configurator: Price of product being configured failed to update in IE. Fixed.
+
+[!] Product could be created without category selected. Fixed.
+
+[!] Product deleting: Product options and Option combinations were deleted incorrectly: images were not removed. Fixed.
+
+[!] Product Option Combinations: Combinations were generated only for 2 options. Fixed.
+
+[!] Product options: Hooks with the same names were used in different functions. Fixed.
+
+[!] Product tabs: AJAX-disabled pagination worked incorrectly in popup tabs. Fixed.
+
+[!] Product: Quick view page was available without AJAX request. Fixed.
+
+[!] Products: Usergroups: Users were redirected to the login page if product did not have usergroups 'All' and 'Guest' assigned.
+
+[!] Profile fields: The 'Show/Required' checkboxes availability was checked incorrectly. Fixed.
+
+[!] Profile page: Billing address switch title fixed.
+
+[!] Profiles: When using the 'Act on behalf of' funcionality incorrect trial store information was displayed. Fixed.
+
+[!] Promotions with bonus 'discount_on_categories' were applied incorrectly. Fixed.
+
+[!] Promotions: 'in' and 'not in' conditions worked incorrectly for category promotions. Fixed.
+
+[!] Promotions: Product features conditions: Extended variant picker was unavailable over PRODUCT_FEATURE_VARIANTS_THRESHOLD in the Product feature condition. Fixed: AJAX selector integrated.
+
+[!] Quick view: Detailed image height was not taken into account if it had not been set in settings. Fixed.
+
+[!] Required products: Product chains were deleted not completely. Fixed.
+
+[!] Required products: Products 'requirement loops' caused error on adding to cart. Fixed.
+
+[!] Required products: Required products were not chechked for further required products when added to cart. Fixed.
+
+[!] Required profile fields were disabled on the 'Apply for a vendor account' page. Fixed.
+
+[!] Reward points add-on: Reward points discount was ignored on tax calculating. Fixed.
+
+[!] Reward points: Gift certificate discounts were not checked on points calculation. Fixed.
+
+[!] SEO: 404 errors were shown on product pages if English language was disabled or hidden. Fixed.
+
+[!] SEO: SEO names were not removed on product feature type change. Fixed.
+
+[!] Sequential product options: If product had combinations with individual amounts, there was no ability to modify options on cart page. Fixed.
+
+[!] Shipping names were not changed on changing cart language on the 3rd checkout step. Fixed.
+
+[!] Shippings: UPS shipping worked incorrectly for the non US customers. Fixed.
+
+[!] Skin selector: Skin changes failed to be applied. Fixed.
+
+[!] SQL error was displayed when viewing category products if the 'Show out of stock products' setting was disabled. Fixed.
+
+[!] Suppliers: Shipping freight was always applied even if shipping was free. Fixed.
+
+[!] Suppliers: When an owner was assigned to a shipping, it would keep being selected for other companies if it had been selected for them before. Fixed.
+
+[!] Suppliers: When applying promotion with free shipping as bonus all suppliers got all store shipping methods even if some methods were not available for some suppliers. Fixed.
+
+[!] Taxes: Tax with zero priority always had zero value. Fixed.
+
+[!] There was ability to apply coupon code twice: in the cart and on Google checkout. Fixed.
+
+[!] Thumbnail sizes were calculated incorrectly. Fixed.
+
+[!] Titles and credit cards were not shared on company cloning. Fixed.
+
+[!] Translation mode: Flag icon was not changed after language changing in translation popup. Fixed.
+
+[!] Translation mode: Translation mode was not initialized for pages loaded via AJAX. Fixed.
+
+[!] Translation mode: Translation tags in JavaScript were stripped incompletely. Fixed.
+
+[!] Ultimate Edition: An 'Access denied' warning was shown to a customer on Menu item status change. Fixed.
+
+[!] Ultimate edition: Banners: Banners were not deleted after deleting a store. Fixed.
+
+[!] Ultimate Edition: Clone categories: When cloning categories, some child categories could not be cloned. Fixed.
+
+[!] Ultimate Edition: Company URLs were set incorrectly during the installation. Fixed.
+
+[!] Ultimate Edition: Country and state fields were empty in the customer invoice, when changing order status under root account. Fixed.
+
+[!] Ultimate Edition: Gift certificates: The link led to the main storefront. Fixed.
+
+[!] Ultimate Edition: Google analytics: tracking_code was selected incorrectly when order status was changed by root admin. Fixed.
+
+[!] Ultimate Edition: Order management: Editing order from the removed company led to redirect loop. Fixed.
+
+[!] Ultimate Edition: Product owner could attach product to a company she/he did not belong to. Fixed.
+
+[!] Ultimate Edition: Redirects between secure and non-secure (http/https) pages was incorrect if the Secure storefront URL was different from the Storefront URL. Fixed.
+
+[!] Ultimate Edition: Required products: Product with a not shared required product from another company could not be added to cart. Fixed.
+
+[!] Ultimate Edition: Save button was not displayed on the news editing page and on the affiliate plan adding page if the owner store was selected. Fixed.
+
+[!] Ultimate Edition: The Update usergroups form was displayed even if admin did not have corresponding permissions. Fixed.
+
+[!] User groups: 'Comments and reviews' and 'News & e-mails' permissions changes reversed.
+
+[!] User groups: 'Comments and reviews' and 'News & e-mails' permissions fixed.
+
+[!] Usergroups selection did not work with nodes cloning. Fixed.
+
+[!] Usergroups: Breadcrumbs leading to 'Access denied' pages were displayed for restricted admins. Fixed.
+
+[!] Users: Customer was not able to update their profile if the 'Use for Register form' option was enabled.
+
+[!] Vendor search field did not work on the 'New payout' page. Fixed.
+
+[!] Watermarks: Watermarked images were not removed after product deleting. Fixed.
+
+[!] Watermarks: Watermarks were not added for product variant images. Fixed.
+
+[!] Webmail: Cart session name was not initialized. Fixed.
+
+[!] When a vendor account request was sent from the customer area a 'Requested account name' field was shown in the vendor account despite the 'User e-mail is used as login' option enabled. Fixed.
+
+[!] Wrong customer information was displayed in 'My account' block. Fixed.
+
+[!] {#3158} Spelling mistake in the 'companies:company_data' hook name fixed.
+
+[!] {#3159} Search block at picker in IE7 displayed incorrectly. Fixed.
+
+[!] {#3160} Checkout: Incorrect titles were displayed in the 'Order information' block. Fixed.
+
+[!] {#3160} Orders: Title ID was displayed on the Invoice page instead of text value. Fixed.
+
+[!] {#3161} Community Edition: Currencies: Currencies were not saved. Fixed.
+
+[!] {#3162} {#3163} Product: Product options could not be changed. Fixed.
+
+[!] {#3168} Incorrect tooltip for the company field was displayed on the product update page in Professional and Multi-Vendor Editions. Fixed.
+
+[!] {#3175} Product tabs: Popup tabs were displayed inside product form. Fixed.
+
+[!] {#3177} Popup dialog buttons were aligned incorrectly if part of the dialog overflowed window. Fixed.
+
+[!] {#3177} Popup dialog height could be bigger than window height. Fixed.
+
+[!] {#3185} Block manager: Existing block could not be edited after being added to grid if it already contained other blocks. Fixed.
+
+[!] {#3189} Currencies: Selected currency symbol was displayed incorrectly in the front-end. Fixed.
+
+[!] {#3193} Product feature layout problem fixed.
+
+[!] {#3197} Product detail page now passes W3C validation.
+
+[!] {#3202} Ultimate Edition: Save button was not displayed on the banner editing page if the owner store was selected. Fixed.
+
+[!] {#3259} Ultimate Edition: Search: If any objects apart from Products (Pages, Site News, etc.) were involved in search, the search result was always empty. Fixed.
+
+[!] {#3280} SEO: Vendor could not modify SEO name if it had been modified by admin. Fixed.
+
+[!] {#3294} Quick view: New dialog uniqeness check was incorrect. Fixed.
+
+[!] {#3296} Hot deals: Underlined links hover bug fixed.
+
+[!] {#3308} Radio buttons were cut off at checkout in Safari on MacOS. Fixed.
+
+[!] {#3331} SEO names of site news were regenerated automatically. Fixed.
+
+[!] {#3334} Trailing spaces at the end of some language variables identifiers deleted.

@@ -1,0 +1,354 @@
+***********************
+CS-Cart 2.1.1 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Block manager: the "order landing page" location was added.
+
+[+] Block manager: it is now possible to define a block's width.
+
+[+] The ability to create invoices and credit memos was added.
+
+[+] Abandoned/live carts functionality was improved.
+
+[+] Image thumbnails settings were improved: the ability to define thumbnail sizes for different pages (category, products list, product details page) was added.
+
+[+] The product options functionality was improved: the ability to select exceptions type (allowed/forbidden) and the order in which to select options (consequential/simultaneous) was added.
+
+[+] The new option that provides the possibility to stay on the secure connection after the first visit to a secure page was added.
+
+[+] It is now possible to define the minimum order amount by products subtotal or subtotal + shipping.
+
+[+] It is now possible to hide/display the top pagination.
+
+[+] The ability to define payment instructions that will be displayed on the order landing page was added to the payment methods.
+
+[+] The ability to define "Alt" texts was added to the logo images.
+
+[+] The ability to sort data in the tables using the "drag and drop" feature was added to the admin panel.
+
+[+] The "Alt" text for images is now multilingual.
+
+[+] Australia post: the ability to set delivery confirmation was added.
+
+[+] CRE Secure hosted payment acceptance service was added.
+
+[+] Caching mechanism: the ability to cache data for a certain period was added.
+
+[+] It is now possible to create a new account from the order landing page.
+
+[+] Comments and Reviews add-on: links to posts on the testimonials page were added to the testimonials block.
+
+[+] Error handling of AJAX requests was added.
+
+[+] Exim: the ability to export/import products combinations was added.
+
+[+] The "Help us improve CS-Cart" functionality was added.
+
+[+] Gift registry add-on: a pagination was added to the list of event products.
+
+[+] Incomplete orders are not displayed in the common list now.
+
+[+] Meta descriptions and meta keywords can now be defined for all locations in the block manager.
+
+[+] The navigation between the objects was improved: the ability to go to the next/previous product/order/user/etc from the object editing page was added.
+
+[+] Image previewer: additional navigation elements were added.
+
+[+] The ability to create a block with contents of external RSS feed was added.
+
+[+] Recurring billing add-on: the ability to change a subscription plan for products was added to the cart and checkout pages.
+
+[+] Images are now distributed among subdirectories in order to remove the restriction on the number of files in one directory.
+
+[+] Reward points: the setting to recalculate reward points and price in points if an order discount is used was added.
+
+[+] The method of calculating taxes based on the order subtotal was added.
+
+[+] The "ct" parameter was added to clear the thumbnails cache.
+
+[+] The ability to export orders and customers to the MYOB accounting system was added.
+
+[+] The ability to set different templates for a product details page was added.
+
+[+] The setting to disable checking for the upgrades availability was added.
+
+[+] The setting to open "quick menu" in the admin panel when "quick menu" is pointed to with the mouse was added.
+
+[+] The checkout process was improved.
+
+[+] The ability to override base templates by add-ons was added.
+
+[+] The ability to define block groups was added to block manager. All blocks are now stored in the database, the directory "blocks/locations" was removed.
+
+[+] Core: all links are now processed via the fn_url function.
+
+[+] Pagination for newsletters was added.
+
+[+] Product configuration add-on: the ability to define the image width for a configuration group was added.
+
+[+] The ability to edit positions in the Top menu section of the admin panel was added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] "Completed" and "Canceled" order statuses were renamed.
+
+[*] Affiliate add-on: the "Show orders" setting was removed from affiliate plans.
+
+[*] Copyright text was updated.
+
+[*] Core: the logic of checking controllers' names and object IDs was corrected.
+
+[*] Customization mode: Now the help tags are shown only to the administrator.
+
+[*] Comments and Reviews add-on: a hook was added to the fn_get_discussion function.
+
+[*] Exim: export/import schemas were brought to standard ones (params without #).
+
+[*] Form builder add-on: 2 new fields were added - referer and IP address.
+
+[*] The French language pack was updated.
+
+[*] Hook products:product_block in one_product.tpl was renamed into products:one_product.
+
+[*] The logic of the "track my order" functionality was improved.
+
+[*] Now products with zero prices (that were not allowed to be added to the cart) can be added to the cart if the products have modifiers that make the price non-zero.
+
+[*] Now if the shipment functionality is enabled, the old functionality responsible for adding the tracking number and selecting carriers is not available.
+
+[*] Ogone Direct: the payment was updated to work with the new SHA signature policy.
+
+[*] Ogone Web: the payment was updated to work with the new SHA signature policy.
+
+[*] PayPal Express Checkout: the ability to select whether to validate the customer address or not was added.
+
+[*] The priority of the my_changes add-on was set to the maximum value in order to activate this add-on at the end.
+
+[*] Profiles info template: extra data were moved to appropriate templates.
+
+[*] Returned order total checkup was corrected for the DBS Post, Thiepay, SP Plus payments.
+
+[*] The Romanian language pack was updated.
+
+[*] The Site layout page was removed.
+
+[*] Suppliers functionality was moved to the cart core.
+
+[*] Templater was simplified.
+
+[*] The MySQLi database driver is now selected by default during the cart installation.
+
+[*] The appearance of the "We suggest" block was changed to Grid list.
+
+[*] The displaying of the Advanced search page was corrected for IE browsers.
+
+[*] The displaying of the Configurable product options was corrected.
+
+[*] The displaying of the List product was corrected.
+
+[*] The displaying of the blocks in the "Bottom" group was corrected.
+
+[*] The displaying of the blocks in the "Top" and "Bottom" groups was corrected.
+
+[*] The displaying of the invoice page was corrected for different mail clients.
+
+[*] The styles for disabled input fields were added.
+
+[*] Tinymce editor was updated to the latest version.
+
+[*] The unnecessary code was removed from the categories layouts templates.
+
+[*] "Welcome text" was moved from the home page to the block.
+
+[*] Core: fn_get_dir_contents function: the ability to retrieve files from subdirectories recursively was added.
+
+[*] Constant TABLE_PREFIX moved to config.local.php.
+
+[*] Constants DEFAULT_FILE_PERMISSIONS and DEFAULT_DIR_PERMISSIONS moved to config.local.php.
+
+[*] The English language pack was updated.
+
+[*] The obsolete option "news per page" was removed.
+
+[*] Checkout: a pop-up box with information about CVV code was added.
+
+[*] The E-mail validating function was improved.
+
+[*] Checkout: the address format was changed.
+
+[*] The displaying of the "Cart items" section on the Cart page was corrected.
+
+[*] The displaying of the "Review and place order" step on the Classic checkout page was corrected.
+
+[*] USPS: The names of the countries were updated according to the latest USPS update.
+
+========
+Bugfixes
+========
+
+[!] Reward points add-on module: Price in points was calculated incorrectly for products with overridden PER and multiple items. Fixed.
+
+[!] The "State/province" input field was not displayed in users picker in Firefox. Fixed.
+
+[!] Affiliate add-on: the URL banners had incorrect redirection. Fixed.
+
+[!] Age verification add-on: unavailable product was not hidden if the compact list template was selected for the products list layout. Fixed.
+
+[!] Customization mode: image previewer worked incorrectly. Fixed.
+
+[!] Customization mode: the top menu worked incorrectly. Fixed.
+
+[!] Dibs: incorrect field values were passed to the payment server. Fixed.
+
+[!] With the activation mode set to "Immediately", emails with download links for EDP's files were sent after the order status was changed to "Complete". Fixed.
+
+[!] Duplicate IDs were displayed on the page if blocks with the same content were defined for the page. Fixed.
+
+[!] Duplicate e-mails with download links were sent if the customer notification was enabled. Fixed.
+
+[!] When downloading a file, non-ASCII filenames were sent to browsers incorrectly. Fixed.
+
+[!] After the time limit expired, EDP was not marked as expired on the customer's download page. Fixed.
+
+[!] An error occurred after downloading large files. Fixed.
+
+[!] Exim: the name of the exported file was not escaped in the links on the export data page. Fixed.
+
+[!] File uploader: there was no ability to use an FTP address as an image source. Fixed.
+[!] Filenames of electronically delivered products could not be sent to Internet Explorer if there was any type of traffic compression enabled on the server side. Fixed.
+
+[!] Gift certificates add-on: the "deprecated" error notification appeared on the certificate preview page. Fixed.
+
+[!] Google analytics add-on: the information about categories was not passed in e-commerce transactions. Fixed.
+
+[!] Incorrect ampersand encoding in outgoing e-mails was fixed.
+
+[!] Invalid language variable for License Agreement was used on the EDP's details page. Fixed.
+
+[!] The admin pagination used the "customer elements per page" setting. Fixed.
+
+[!] Multiple emails with the same download links were sent to an order containing several EDPs. Fixed.
+
+[!] News and emails add-on: a message informing about successful test mail sending was always displayed. Fixed.
+
+[!] News and emails add-on: News list had no pagination. Fixed.
+
+[!] Non-ASCII filenames containing spaces and underscore characters were sent to browsers incorrectly. Fixed.
+
+[!] Notifications: If the store administrator selected to send emails for orders with statuses Open and Processed (Orders->Order statuses tab), repeated payment emails were sent only for orders with the status Open. Fixed.
+
+[!] Ogone Direct: the orders were not processed if the customer address was too long. Fixed.
+
+[!] Ogone Web: If the customer clicked on "Cancel" in the Ogone payment form, the notification informing about a successful order placement was displayed. Fixed.
+
+[!] Ogone Web: the orders were not processed if the customer address was too long. Fixed.
+
+[!] The order total in the "Last viewed items" pop-up window was calculated incorrectly. Fixed.
+
+[!] PHP Notice: The undefined index HTTP_ACCEPT_LANGUAGE appeared in the log file after the site had been crawled by a search-engine robot.
+
+[!] PHP notice was displayed within certain Web server configurations. Fixed.
+
+[!] Pages picker: after the pages list was updated by AJAX, the check box was given the wrong name. Fixed.
+
+[!] Pages: wrong links were displayed in the breadcrumbs for the pages with the "link" type. Fixed.
+
+[!] Price list add-on: If the URL contained the "cc" parameter when the price list was being generated, there was an unlimited number of redirections. Fixed.
+
+[!] Product filters: the variants of the "Free shipping" filter were displayed incorrectly. Fixed.
+
+[!] Promotions: the "Once per customer" condition was corrected.
+
+[!] The "Quantity" select box on the "View cart" page was displayed incorrectly for products with options if "Inventory tracking" was enabled.
+
+[!] RMA add-on: the order total was calculated incorrectly after a product with a discount was refunded. Fixed.
+
+[!] RMA add-on: the promotion discount was calculated twice when registering the return. Fixed.
+
+[!] Ranges of the product filters were stored incorrectly. Fixed.
+
+[!] Reward points add-on module: reward points and price in points were calculated incorrectly for products with multiple items in the cart and with overridden "PER". Fixed.
+
+[!] The Russian language pack was corrected.
+
+[!] SEO add-on: If the cart was installed in the root domain and the SEO addon was enabled with Show language in the URL option activated, customers authorization worked incorrectly. Fixed.
+
+[!] SEO add-on: The catalog and site map pages had noindex meta tag. Fixed.
+
+[!] SEO add-on: If the add-on was enabled, the "Loading" box was not hidden if a user downloaded a file. Fixed.
+
+[!] SQL errors were displayed after disabling the "Bestsellers" add-on if the "Bestselling" option was selected for "Product list default sorting". Fixed.
+
+[!] Search forms were sensitive to extra spaces in the search string. Fixed.
+
+[!] Shipping methods were displayed incorrectly on the customer order details page. Fixed.
+
+[!] Statistics: certain plug-ins prevent from detecting IE version correctly. Fixed.
+
+[!] Statistics: the layout in the admin panel is broken if the referrer name is too long.
+
+[!] Tags add-on: it was impossible to remove the tag from the object if the tag was set by another user. Fixed.
+
+[!] The PHP Warning was displayed if the payment name was incorrect. Fixed.
+
+[!] The SQL error was displayed when adding a new mailing list to the cart in Romanian or Russian. Fixed.
+
+[!] The content of the product feature picker was scrolled up when extra parameters were opened for the feature variants. Fixed.
+
+[!] The duplicate user profiles were created if customers modified their profiles at regular checkout. Fixed.
+
+[!] The price with non-standard decimals separator was saved incorrectly. Fixed.
+
+[!] After reordering, the "Quantity" select box was displayed incorrectly on the "View cart" page. Fixed.
+
+[!] The unnecessary DB queries were submitted during the thumbnail generation. Fixed.
+
+[!] The wrong user name was sent in a letter containing the user group information if the "User e-mail is used as login" setting was enabled. Fixed.
+
+[!] It was possible to change the status for the root administrator. Fixed.
+
+[!] Pages and categories were sorted incorrectly. Fixed.
+
+[!] The administrators, customers and affiliates pages had incorrect titles. Fixed.
+
+[!] There was no ability to import order items. Fixed.
+
+[!] There was no ability to unsubscribe from all mailing lists on the profiles and customer info pages. Fixed.
+
+[!] When the "track with options" and "min order quantity" settings were enabled, the product with options was added to cart incorrectly. Fixed.
+
+[!] Where EDP had the activation mode set to "Immediately", an email with the download link was not sent to the customer. Fixed.
+
+[!] The wrong link was displayed on the search result page for the page with the "link" type. Fixed.
+
+[!] The fn_get_product_features function was called with the wrong parameter for the update mode in the admin area. Fixed.
+
+[!] After the customer registered at checkout, placed an order and clicked on the "Logout" link, the cart products appeared in the cart again. Fixed.
+
+[!] The customer could join a disabled user group by using a promotion. Fixed.
+
+[!] Duplicate e-mails were sent to the customer after he joined a disabled user group by using a promotion. Fixed.
+
+[!] HTML entities escaping was not applied to all php output elements. Fixed.
+
+[!] IDEAL Basic: notification of canceled transaction was corrected.
+
+[!] Import: if an imported product had an empty image path record, the record was replaced by the previously imported product image path. Fixed.
+
+[!] Logs: Content field in https request logs could contain incorrect information. Fixed.
+
+[!] Pay&Read: If a shipping cost for an order did not include taxes, the order total was calculated incorrectly. Fixed.
+
+[!] Sometimes the "Last viewed items" menu contained repeated elements. Fixed.
+
+[!] An unauthorized user was able to place an order by challenging the target URL of the Checkout "Sign In" button. Fixed.
+
+[!] The user was allowed to complete the "Limit" form field in the Statistics' Advanced Search form with a non-numeric value. Fixed.
+
+[!] The AJAX request was sent twice when the error message was closed. Fixed.

@@ -1,0 +1,139 @@
+***********************
+CS-Cart 3.0.3 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Store import: Community 2.2.4/5 to Ultimate 3.0.3 import support added.
+
+[+] Store import: Professional 3.0.3 to Ultimate 3.0.3 import support added.
+
+[+] Searchanise: add-on added to Ultimate edition.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Store import: Import of the 'Customers also bought' add-on optimized.
+
+[*] Localizations block added to Block scheme.
+
+[*] Parameters of the 'fn_get_product_features_list' function and paramters of the 'get_product_features_list_*' hooks changed.
+
+[*] Product features: Number-type features now accept floating point values.
+
+[*] Maxmind database updated.
+
+[*] Tar library updated.
+
+========
+Bugfixes
+========
+
+[!] Checkout: If a customer created a new profile during checkout, the profile was duplicated. Fixed.
+
+[!] Shipments: Shipment information remained in database after order removal. Fixed.
+
+[!] Suppliers: Supplier received an email with Smarty error when a customer placed any order. Fixed.
+
+[!] All product features were selected on the category pages. Fixed.
+
+[!] Anti-bot validation: Anti-bot was not displayed for registration in the customer area. Fixed.
+
+[!] Block manager: Empty block settings were shown incorrectly. Fixed.
+
+[!] CKEditor: 'New feature' window could not be closed. Fixed.
+
+[!] Design: Quick links submenu alignment bug fixed.
+
+[!] Design: Quick view: Enlarged image did not dissappear on quick view closing with pressing Esc. Fixed.
+
+[!] Design: WYSIWYG-editor headers styles added.
+
+[!] Elf_connector: restricted admins can no longer browse server files.
+
+[!] Empty category page was shown instead of a 404 error page if a non-existing page number was passed in request on paginated category viewing. Fixed.
+
+[!] Error PHP notice was displayed if both UPS and USPS shipping methods were configured, and USPS was calculated first. Fixed.
+
+[!] Error notice: An 'Unable to set value' message was displayed sometimes if some vendor or store was selected. Fixed.
+
+[!] Exim stores: PHP error notice was displayed if Logos did not have alt text. Fixed.
+
+[!] Gift Certificates: The parameter 'amount_type' removed from the database; all references removed from the source code.
+
+[!] Import: Select box: Number type feature product variants were displayed as dashes in the customer area. Fixed.
+
+[!] Multi-Vendor Edition: Banners: The Vendor field removed.
+
+[!] Multi-Vendor Edition: Comments and reviews: Vendor was able to manage testimonials. Fixed.
+
+[!] Multi-Vendor Edition: Site news: Vendor could not access their own news. Fixed.
+
+[!] Multi-Vendor Edition: Users: User page content and links fixed.
+
+[!] Multi-Vendor Edition: Vendor could not see other vendor's profile if the 2nd vendor had bought from the 1st vendor. Fixed.
+
+[!] Order management: If admin set discount to zero, it was reset to default on the last editing step. Fixed.
+
+[!] Order management: Suppliers: Realtime shipping methods were always empty when new order was created. Fixed.
+
+[!] PDF Invoice: Orders with comments were printed incorrectly if comments titles were too long. Fixed.
+
+[!] Payments: Monebookers terms and conditions checkbox worked incorrectly in IE7. Fixed.
+
+[!] Product block with the template Products grid was not shown. Fixed.
+
+[!] Product comparison: The 'Compare list'link was not updated on adding product to a compare list. Fixed.
+
+[!] Product features were not displayed in the administrator area after product had been shared. Fixed.
+
+[!] Product could be added as a required product for itself. Fixed.
+
+[!] Products: Quantity discount prices were deleted when updating product from products list. Fixed.
+
+[!] Profile fields: Date type: Date picker did not work if users were allowed to create multiple profiles. Fixed.
+
+[!] Quick view: Minicart status was not updated when product was added from QuickView popup. Fixed.
+
+[!] Reward poins: Points were recalculated incorrectly if 'Points in use' were involved. Fixed.
+
+[!] Sortable objects: Script did not work properly if page contained more than 1 sortable container. Fixed.
+
+[!] Store import: Gift registry: Attached product names and prices were missing, only their options and quantity were present. Fixed.
+
+[!] Taxes: Default 'VAT' tax priority set to '0'.
+
+[!] Template editor: Changes were not saved if the editor had been disabled. Fixed.
+
+[!] Ultimate Edition: Administrator's mail skin was always used in the admin area for emails and printing. Fixed.
+
+[!] Ultimate Edition: Categories: Collapsing of categories on the categories manage page worked incorrectly. Fixed.
+
+[!] Ultimate Edition: If the Apache port was different from 80 during request handling, it was ignored on storefront requesting, and a redirect to a not existing page occured. Fixed.
+
+[!] Ultimate Edition: SEO: Product links were generated incorrectly for 'Back in stock' notification. Fixed.
+
+[!] Ultimate Edition: Products: The 'Add categories' picker was empty on the shared product page if a non-owner company was selected. Fixed.
+
+[!] Usergroups: Availability: Category, product or page preview was not opened if it was available only for certain usergroups. Fixed.
+
+[!] {#3356} Addons: Newsletters: Multilanguage template was loaded on the main store language even if another newsletter language was selected. Fixed.
+
+[!] {#3362} MVE: Users: Vendor could not see the profiles of users who had bought something from them. Fixed.
+
+[!] {#3385} Discussion: Approved/Not approved comments search returned empty result. Fixed.
+
+[!] {#3389} Installation package: Description tables content was saved in the main data file. Fixed.
+
+[!] {#3397} Multi-Vendor Edition: Database error was displayed after deleting a vendor, if the 'Banners management' add-on was enabled. Fixed.
+
+[!] {#3417} Addons: Discussion: Category and product discussion pages fixed.
+
+[!] {#3426} Addons: Discussions: Products: 'Submit new post' button was not shown if 'Reviews' tab was displayed in a popup. Fixed.
+
+[!] {#3452} Products: Subscribers tab was shown on product creation page. Fixed.
+
+[!] {#3475} Addons: Tags: 'Save' button was available for guests. Fixed.

@@ -1,0 +1,189 @@
+***********************
+CS-Cart 4.2.3 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Addons: eBay synchronization: New privileges (view/manage) added for usergroups.
+
+[+] Addons: Social login: Ability to log in with PayPal account added.
+
+[+] API: Ability to specify the API version by calling the setVersion PHP function added.
+
+[+] Categories: Notification about consequences of category deletion added.
+
+[+] Design: Layouts: Ability to add custom HTML code between the head tags added.
+
+[+] Design: Layouts: Ability to drag-and-drop grids added.
+
+[+] Design: Themes: The Brightness style added.
+
+[+] Design: Themes: The MTronX style added.
+
+[+] Edit content on-site: The ability to edit content in real-time through the storefront added.
+
+[+] {#5100} Addons: Suppliers: The Supplier field added to the product field list on product export/import.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Addons: Social login: Ability to log in via social networks on checkout added.
+
+[*] Addons: Social login: The Hybrid Auth library updated.
+
+[*] API: All private properties and methods of API classes changed to protected.
+
+[*] Carriers: Ability to add extra information to a custom carrier added.
+
+[*] Core: Unnecessary "Disallow" rules removed from the robots.txt file.
+
+[*] Core: The HTTP class: The PUT and DELETE methods added.
+
+[*] Design: Layouts: Grid's width is now re-calculated automatically if nearby grids are disabled or have empty content.
+
+[*] JavaScript: Instant file uploader added.
+
+[*] Shipping methods: USPS: Service names updated according to the latest changes by USPS.
+
+========
+Bugfixes
+========
+
+[!] Addons: eBay synchronization: An SQL error appeared when admin tried to create an eBay emplate and the "Site id" option was empty. Fixed.
+
+[!] Addons: eBay synchronization: The tooltip for the "Use as default" option was incorrect. Fixed.
+
+[!] Addons: eBay synchronization: If the eBay synchronization addon was enabled, admin was unable o change the "Reviews" product option. Fixed.
+
+[!] Addons: Email marketing: The newsletter checkbox was always unchecked no matter if the Tick-ff by default setting was enabled or disabled. Fixed.
+
+[!] Addons: Email marketing: Mailchimp sync did not work properly when the Mailchimp subscriber ist was empty and new subscribers were added to the Mailchimp list. Fixed.
+
+[!] Addons: My changes: Template overriding worked incorrectly. Fixed.
+
+[!] Addons: Required products: PHP warning and notice appeared when deleting required product rom cart after shipping cost calculation. Fixed.
+
+[!] Addons: Social login: Social networking icons were not displayed in the login form. Fixed.
+
+[!] Addons: Tags: JavaScript error appeared when Backspace was pressed in an empty field. Fixed.
+
+[!] Addons: Tags: The Cyrillic "б" symbol was not allowed in tags. Fixed.
+
+[!] Addons: SEO: Rich snippet preview URL was generated incorrectly. Fixed.
+
+[!] Addons: Reward points: Order management: If product price was reduced to zero on the order anagement page, reward points were not recalculated. Fixed.
+
+[!] Addons: Wishlist: PHP 5.4: A PHP error notice appeared in the error log file when adding roducts to Wishlist. Fixed.
+
+[!] Admin panel: Appearance: The "Notice displaying time" setting value containing comma caused a avaScript error. Fixed.
+
+[!] Admin panel: Product features: Selected feature variants were removed from a product when a ew category was added for a feature. Fixed.
+
+[!] API: A PHP notification was displayed on the stores endpoint on GET request. Fixed.
+
+[!] API: API error messages had a colon at the end (for example, "Forbidden:"). Fixed.
+
+[!] API: Non-root admins could not access the orders endpoint with DELETE request. Fixed.
+
+[!] API: Non-root admins could not access the shipments endpoint. Fixed.
+
+[!] API: Orders: The Customer notes field was empty after order creation. Fixed.
+
+[!] API: The area parameter was omitted for the Entity class constructor. Fixed.
+
+[!] Checkout: Shipping: PHP warning and notice appeared in the "Shipping Options" section at heckout if the USPS shipping method was malconfigured but enabled. Fixed.
+
+[!] Core: Sessions: The session DB table was not garbage collected on hosts with particular istros (e.g. Debian). Fixed.
+
+[!] Core: Storefront URLs beginning with "www2" or "www4" were not parsed correctly when etermining the current storefront. Fixed.
+
+[!] Currencies: If a currency sign included HTML symbols, it was displayed incorrectly in input ields. Fixed.
+
+[!] Database: Backup: Archived backup file could not be overriden. Fixed.
+
+[!] Date picker: At checkout, the calendar icon could not be seen because it was the same color s the background. Fixed.
+
+[!] Design: Basic theme: The "Contact us" form broke down if it was shown in a popup window. Fixed.
+
+[!] Design: Categories block: In the "Multi-column list" template, the number of columns in block ettings could not be changed. Fixed.
+
+[!] Design: Features: Indention between check box and variant name was missing for the Check box ype features. Fixed.
+
+[!] Design: Layouts: All existing categories were fetched from the database when using the Dropdown horizontal" template for the "Categories" block. Fixed.
+
+[!] Design: Layouts: Child grids were not rendered properly if one of the grids was empty. Fixed.
+
+[!] Design: Payment icons: The 2CO icon could not be hidden because there was no 2checkout CSS lass. Fixed.
+
+[!] Design: Themes: The name of a theme was selected incorrectly when using more than one torefront. Fixed.
+
+[!] Design: Wrapper: Title in the "Mainbox general" wrapper was rendered with the h2 tag (should e h1). Fixed.
+
+[!] Export/Import: Text feature variants were imported incorrectly if they contained ";" or ":". Fixed.
+
+[!] Languages: Addons: Empty addon description fields caused errors during addon installation. Fixed.
+
+[!] Language variables: The "api_key" language variable was used with different meanings in the ore and the Store Locator add-on. Fixed.
+
+[!] Multi-Vendor: Languages: Ability to change the language status was enabled for storefronts endors. Fixed.
+
+[!] Multi-Vendor: The admin was not redirected to the vendor details page after creating a new endor. Fixed.
+
+[!] Orders: When pressing the Enter key in the text input field, an order was placed. Fixed.
+
+[!] Orders: There was an ability to place an order with restricted conditions (e.g. omitting inimum order total). Fixed.
+
+[!] Orders: High poduct amount in an order could cause an error. Fixed.
+
+[!] Orders: The shipping address was overridden by the billing address if a customer clicked the Edit shipping" link. Fixed.
+
+[!] Payment methods: Authorize.NET: The used API version was incorrect. Fixed.
+
+[!] Payment methods: Paypal express: The cart total was calculated incorrectly if a gift ertificate was added as a promotion bonus. Fixed.
+
+[!] Promotions: When a bonus was deleted, another bonus of the same promotion was deleted, too. Fixed.
+
+[!] Quick view: Comments and Reviews: A popup for comments and reviews opened incorrectly when pened from the Quick view. Fixed.
+
+[!] Stores: Port was trimmed from the Storefront URL and Secure storefront URL fields. Fixed.
+
+[!] Stores: The "fn_ult_is_shared_product" function showed that a product was shared among everal storefronts when it really was not. Fixed.
+
+[!] Users: Profile fields: Orders: Empty customer information fields were saved if they were isabled in the billing or shipping address form on checkout. Fixed.
+
+[!] {#5156} API: Orders: Email notifications were not sent to customers/department on order tatus changing. Fixed.
+
+[!] {#5166} Order management: Product subscribers were deleted during order editing. Fixed.
+
+[!] {#5169} Design: Responsive theme: Quick view: The quantity input field broke down if the Value changer" setting was disabled. Fixed.
+
+[!] {#5171} ElFinder: The "sh: mogrify: command not found" error was added to the error log file hen uploading any image via server. Fixed.
+
+[!] {#5196} Products: Inventory: Non-tracked products with zero in-stock value were not visible n the list when the "Show out of stock products" setting was turned off. Fixed.
+
+[!] {#5197} Design: Main menu broke down when resolution was changed to mobile device and back to esktop. Fixed.
+
+[!] {#5198} Addons: Gift certificates: Currencies: A JavaScript error appeared when the "Dec ign" setting was empty. Fixed.
+
+[!] {#5206} Addons: Social login and Janrain add-on: Email notifications about successfull egistration were not sent to customers. Fixed.
+
+[!] {#5211} Promotions: Discount: Category-based promotion bonuses for products were not shown on ther category pages to which the product belonged. Fixed.
+
+[!] {#5213} Design: Pages: Onclick-dropdown wrapper: If a page had the "Show this page in a popup indow" setting, popup of the page broke down. Fixed.
+
+[!] {#5218} Checkout: There was an ability to buy products with a disabled option variant. Fixed.
+
+[!] {#5216} Promotions: Coupon: Coupon codes were case-sensitive. Fixed.
+
+[!] {#5221} Quick view: The tooltip for the "Close" button in popups could not be translated. Fixed.
+
+[!] {#5223} Design: Responsive theme: Top menu did not work after AJAX requests on touch devices. Fixed.
+
+[!] {#5226} Design: WYSIWYG: CKEditor: Tables could not be inserted in the source code. Fixed.
+
+[!] {#5231} Checkout: Credit card validation did not work on mobile devices. Fixed.
+
+[!] {#5232} Design: Banners: Banners displayed at the width of the content despite the size of he grid. Fixed.

@@ -1,0 +1,113 @@
+***********************
+CS-Cart 4.3.8 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Comments and reviews: Hooks were added to the "fn_get_discussion()" and "fn_get_discussions()" functions.
+
+[+] Add-ons: PayPal payments: Philippine Peso was added to the list of currencies supported by PayPal Pro.
+
+[+] Add-ons: RSS feed: Blog: RSS feed was added for blog posts.
+
+[+] Add-ons: Store locator: "store_location_id" was added as an array key.
+
+[+] Hooks: A hook for shipping information in order details was added.
+
+[+] Hooks: A new hook for updating parameters in block manager was added.
+
+[+] Hooks: Product features: A new hook for feature variants was added.
+
+[+] Hooks: User groups: Hook was added to the "fn_get_usergroups" function.
+
+[+] Payments: AuthorizeNet.Aim: Payment gateway URLs were updated to use Akamai CDN.
+
+[+] Shipping methods: Canada Post: Integration with Canada Post was updated, new services and shipping options were added.
+
+========
+Bugfixes
+========
+
+[!] Add-ons: Call requests: The "Request call" pop-up window title was wrong. Fixed.
+
+[!] Add-ons: Comments and reviews: Submitting emails resulted in error, if Yandex SMTP was used. Fixed.
+
+[!] Add-ons: Form builder: Tags: Content of the submitted form page was not refreshed when the Tags add-on was enabled. Fixed.
+
+[!] Add-ons: SEO: Exim: SEO names of the imported products were duplicated. Fixed.
+
+[!] Add-ons: SEO: SEO names of shared products were reset after removing the storefront they were shared to. Fixed.
+
+[!] Add-ons: Translations: PHP notices were displayed when add-ons, which used Scheme 3.0 and stored language variables in addon.xml were deleted. Fixed.
+
+[!] Add-ons: Watermarks: If a watermark image was too wide, errors could occur during thumbnails generation. Fixed.
+
+[!] Administration panel: Sales reports: The number of products in a sales report could be different for the same month for "This year" and "This month" periods. Fixed.
+
+[!] Ajax: Admin: Storefronts: Storefronts didn't load in the "Pick a store" field, if there were more than 5 storefronts. Fixed.
+
+[!] API: Product options: Updating of option variant images was broken. Fixed.
+
+[!] Backup: Notifications were not shown. Fixed.
+
+[!] Blocks: Cache: "Smarty" blocks were cached causing irrelevant content displayed to users. Fixed.
+
+[!] Checkout: Widget mode: Entering wrong credentials on the "Sign in" checkout step caused emptying of the cart. Fixed.
+
+[!] Core: Session: It was impossible to authenticate after redirection to the subdomain set as a secure storefront. Fixed.
+
+[!] Core: Session: Session was started at the CLI mode causing notices and session table overflow. Fixed.
+
+[!] Design: Administration panel: Price for the last viewed items was shown incorrectly. Fixed.
+
+[!] Design: Blocks: Vertical menu: Menu items were behind other elements. Fixed.
+
+[!] Design: Checkout: On the Order Success page, there was an odd dot. Fixed.
+
+[!] Design: Edit content on-site: WYSIWYG: Buttons for adding images and videos were unavailable. Fixed.
+
+[!] Design: Font family names containing spaces were not escaped correctly in a compiled CSS file. Fixed.
+
+[!] Design: Responsive: Checkout: Errors occurred, if the "Show" or "Select" types were set for the shipping method selection at checkout. Fixed.
+
+[!] Design: Responsive: The title of the Main content block was displayed incorrectly with the Sidebox important wrapper. Fixed.
+
+[!] Exim: Products: Promo text was incorrectly updated, when an admin imported it from a CSV file in the multi-storefront environment. Fixed.
+
+[!] JavaScript: Editors: TinyMCE: Errors occurred in Internet Explorer 11. Fixed.
+
+[!] Last View: Order management: Navigating the search results with the Next/Previous buttons while on the item details page could lead to irrelevant items. Fixed.
+
+[!] Multi-Vendor: If shipping was disabled for the first vendor, it was also unavailable for other vendors. Fixed.
+
+[!] Multi-Vendor: Vendor commission: Vendor commission settings were completely removed from the database, after the add-on had been disabled. Fixed.
+
+[!] Order management: Empty values couldn't be set for a customer's first name, last name, or phone number. Fixed.
+
+[!] Payments: Rocketgate-Native: All guest customers had the same Customer ID on the payment gateway side. Fixed.
+
+[!] Products: Features: If a store had a lot of features, saving products in bulk on the products list of the admin panel took much time. Fixed.
+
+[!] Products: Features: The value of a product feature of the "Select box > Number" type was shown with rounding. Fixed.
+
+[!] Sales reports: Reports based on categories worked incorrectly. Fixed.
+
+[!] Searchanise: Searchanise admin panel didn't open, when an apostrophe (') was used as thousands separator for currency. Fixed.
+
+[!] {#6330} Core: Layouts: The "location_data" template variable had the wrong "location_id" value for custom layout pages. Fixed.
+
+[!] {#6334} Order management: Promotions: Gift certificates: If the order had a gift certificate bonus, the new certificate was created after each update of that order. Fixed.
+
+[!] {#6340} Core: Mathematical functions flooring and ceiling values to required precision provided wrong results for negative values. Fixed.
+
+[!] {#6344} Core: Files: File names with specific characters were not sanitized. Fixed.
+
+[!] {#6345} {#6346} Checkout: Credit card types were detected wrong for Visa and Maestro cards. Fixed.
+
+[!] {#6347} Checkout: Diners Club cards were not accepted. Fixed.
+
+[!] {#6353} Multi-Vendor: The Phone, URL, and Fax fields of the newly registered vendor became empty after approval of that vendor. Fixed.
+
+[!] {#6360} Add-ons: PayPal payments: Required profile fields could be left empty when using PayPal Express Checkout. Fixed.

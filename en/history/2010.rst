@@ -1,0 +1,151 @@
+************************
+CS-Cart 2.0.10 Changelog
+************************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] SEO addon: page indexing was improved.
+
+=====================
+Functionality Changes
+=====================
+
+[*] The "Allow users to store credit card data in profile" option was added.
+
+[*] PDF generator: instructions for using custom fonts were added to the html2pdf library.
+
+[*] The displaying of tabs was corrected in IE6 browser.
+
+[*] The displaying of the input button was corrected in IE7 browser.
+
+[*] Recurring billing addon: privileges for administrators were added.
+
+[*] Recurring billing addon: functionality of the "Initial status for recurring orders" option was improved.
+
+[*] Recurring billing addon: the ability to set start duration in days was added.
+
+[*] SEO addon: product name is not cloned now and generated automatically.
+
+[*] Welcome text was updated.
+
+========
+Bugfixes
+========
+
+[!] Tar archiver: typo was fixed.
+
+[!] Responses from payment engines were not passed to the payment scripts in the admin area. Fixed.
+
+[!] Product configurator addon: default prices were not defined for the configuration products in the templates. Fixed.
+
+[!] Secondary categories could not be assigned to a product. Fixed.
+
+[!] Statistics addon: undefined function was called. Fixed.
+
+[!] Link to banner stats was displayed even if the statistics addon was disabled. Fixed.
+
+[!] There was incorrect 'list_object' parameter on the product tabs blocks. Fixed.
+
+[!] Recurring billing addon: if the "Buy together" addon was enabled, the products recurring plan took default value in cart. Fixed.
+
+[!] Notification about user account update was sent with empty data. Fixed.
+
+[!] Product features: empty groups were not displayed in the admin area. Fixed.
+
+[!] Product configurator addon: option files could not be uploaded when adding a configurable product to cart. Fixed.
+
+[!] Files options: a product could be added to cart without a required option. Fixed.
+
+[!] A product could not be added to cart from "Short list". Fixed.
+
+[!] Wishlist addon: custom files disappeared when adding a product from wishlist to cart. Fixed.
+
+[!] User groups were assigned incorrectly when act on behalf or design mode were used. Fixed.
+
+[!] Gift certificates addon: html tags were escaped in notification email. Fixed.
+
+[!] Block manager: a block disappeared after it was moved to the product details page tabs section and after its parameters were saved. Fixed.
+
+[!] Permissions for admin were set incorrectly after logging in to the admin area. Fixed.
+
+[!] Reward points addon: points were retrieved incorrectly if they were set for several user groups. Fixed.
+
+[!] Order management: custom files could not be loaded or deleted when editing order information. Fixed.
+
+[!] Order management: custom files disappeared after order information was saved. Fixed.
+
+[!] Wishlist addon: custom files disappeared from wish list after the order was placed. Fixed.
+
+[!] Cart product popup had wrong links to custom files. Fixed.
+
+[!] Restricted administrator could add user groups for himself. Fixed.
+
+[!] There was a problem in picker when adding an image in WYSIWYG. Fixed.
+
+[!] Installer: when re-installing skins, the admin skin was reinstalled too. Fixed.
+
+[!] Wishlist addon: incorrect notification message was displayed when product could not be added to wish list. Fixed.
+
+[!] Westpac payment processor was updated to meet the latest requirements.
+
+[!] Files options: if custom files were added on the cart page and the "Checkout" button was clicked on before the "Update" button, an error message was not displayed. Fixed.
+
+[!] Recurring billing addon: configuration was not displayed on the configurable product details page. Fixed.
+
+[!] Recurring billing addon: the incorrect price was stored in subscription for configurable products. Fixed.
+
+[!] Recurring billing addon: configuration of the configurable product was not displayed on the subscription page. Fixed.
+
+[!] Recurring billing addon: subscription plan data was not displayed for a configurable product on the cart page. Fixed.
+
+[!] Products picker: the "any option combination" flag was not passed to search form. Fixed.
+
+[!] Files options: custom files were not displayed on the total page when adding/editing an order. Fixed.
+
+[!] An image could not be uploaded using file browser in the tinymce editor. Fixed.
+
+[!] One page checkout: custom files could not be uploaded at checkout. Fixed.
+
+[!] Downloadable products could be added several times to the cart from simple product lists. Fixed.
+
+[!] Product configurator addon: additional products were removed from the configuration when editing the order. Fixed.
+
+[!] Product filters: when SEO addon was enabled, manufacturers filter links were generated incorrectly. Fixed.
+
+[!] Recurring billing addon: recurring plans were not stored for products in wish list. Fixed.
+
+[!] Recurring billing addon: recurring duration was reset to default value when editing the order. Fixed.
+
+[!] Product configurator addon: different configuration of one and the same product were merged when adding to the cart. Fixed.
+
+[!] Product configurator addon: notice was displayed when calculating cart content. Fixed.
+
+[!] Storefront: inactive user groups were displayed on the profile page if the "Allow customer to signup for user group" option was disabled. Fixed.
+
+[!] SEO addon: if the "show language in URL" option was enabled, languages could not be switched. Fixed.
+
+[!] Incorrect links order was used in breadcrumbs. Fixed.
+
+[!] Product configurator addon: notices were displayed when adding to the cart and editing an order. Fixed.
+
+[!] Error notice was displayed when a product without options was edited in the admin panel. Fixed.
+
+[!] Top menu displayed incorrect links for pages with the "Link" type. Fixed.
+
+[!] Hidden user groups were not displayed in promotion conditions in the admin area. Fixed.
+
+[!] Recurring billing addon: incorrect links to the subscriptions were used in the recurring notification e-mails. Fixed.
+
+[!] Files option: if a new file was added for a configurable product when editing an order in the admin area, the already uploaded files were missing. Fixed.
+
+[!] Files option: custom files could not be added from product picker. Fixed.
+
+[!] Restricted administrators could create an administrator profile, administrator user groups and change status of their own user groups. Fixed.
+
+[!] Restricted administrators could assign user groups to the administrator profiles. Fixed.
+
+[!] Promotions: conditions with user groups worked incorrectly. Fixed.
+
+[!] Catalog promotions were reset after applying cart promotions. Fixed.

@@ -1,0 +1,95 @@
+***********************
+CS-Cart 4.2.4 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Addons: The 'PayPal' addon added.
+
+[+] Core: IPv6 support added.
+
+[+] Design: Responsive theme: Auto-scroll to active section added to accordeon.
+
+[+] Payment methods: Realex Payments added.
+
+[+] Sales reports: Pie chart legend added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] {#5241} Admin panel: Navigating to a page with an ID higher than the max available page number now redirects to the page with the biggest available number.
+
+========
+Bugfixes
+========
+
+[!] Addons: Comments and reviews: Average rating could be calculated incorrectly if the reviews were made without rating. Fixed.
+
+[!] Addons: Comments and reviews: Product rating was misplaced when big thumbnails were used. Fixed.
+
+[!] Addons: Form builder: Multiple checkbox/selectbox values were not saved between requests if image verification code was invalid. Fixed.
+
+[!] Addons: Image zoom: Zoomed image could be centered incorrectly if the uploaded detailed image was smaller then the image size on the product details page. Fixed.
+
+[!] Addons: RSS feed: Items from subcategories were not displayed even if the "Show products from subcategories of the selected category" option was enabled. Fixed.
+
+[!] Admin panel: Product management: The "This webpage has a redirect loop" error could occur when all products were deleted from the store. Fixed.
+
+[!] Admin panel: Settings: The "Security" section was not available for individual storefronts. Fixed.
+
+[!] AJAX request's return_url was generated based on the requested page URL instead of the referer URL. Fixed.
+
+[!] Categories: Products: Product position wasn't saved on bulk product addition. Fixed.
+
+[!] CKEditor: All text input fields were disabled if the editor was used in a modal window. Fixed.
+
+[!] Core: Hooks: The second param was ignored on hook priority registration. Fixed.
+
+[!] Design: Basic theme: Images from the Promo text field were not properly resized. Fixed.
+
+[!] Design: Products: An empty product details page was displayed too narrow. Fixed.
+
+[!] Export/Import: Products: Tracking: Empty "tracking" field caused the product not to be shown in the products list. Fixed.
+
+[!] Orders: Tracking: The tracking number text was grammatically incorrect. Fixed.
+
+[!] Payment methods: Paypal: Hebrew symbols displayed incorrectly on the PayPal side. Fixed.
+
+[!] Product options: The selected option was not highlighted with a border. Fixed.
+
+[!] Product options: Options with no available variants due to allowed combinations were displayed when should have been hidden completely. Fixed.
+
+[!] Products: Options: Blocks: Product option manipulation did not trigger the "Products" block cache to refresh. Fixed.
+
+[!] Products: Price: Addons: SEO: Product price could be found in the page source by a guest customer even if the "Hide price and the 'Add to cart' button" setting was active. Fixed.
+
+[!] Render manager: Block content could be generated twice if the grid was auto-resized. Fixed.
+
+[!] Shipping methods: Temando: The "Default suburb" setting was displayed incorrectly. Fixed.
+
+[!] Shipping methods: USPS: PHP error notice was displayed on the checkout page when shipping price was calculated. Fixed. [!] WYSIWYG: Redactor: Redactor didn't work with Portuguese language. Fixed.
+
+[!] {#5219} Promotions: Coupon: There was an ability to use a coupon code with number of usages of 1 more than once. Fixed.
+
+[!] {#5234} Design: Products: Long promo text was displayed incorrectly on the detail product page. Fixed.
+
+[!] {#5263} Order management: Manually set tax rates with 3 decimal digits were rounded during order editing. Fixed.
+
+[!] {#5271} Addons: News and emails: If a SEO rule was assigned to the "newsletters.track" dispatch, the SEO link was generated incorrectly. Fixed.
+
+[!] {#5282} Design: Addons: Reward points: Space between 'price in points' and 'reward points' was bigger than between any other two fields. Fixed. [!] {#5283} The 'addEventListener' event did not work in IE8. Fixed.
+
+[!] {#5299} Addons: Comments and reviews: Empty stars were displayed in the categories pages when only comments without rating were enabled. Fixed.
+
+[!] {#5317} Shipping methods: Currencies: The first line on the Cost dependencies page was displayed with the secondary currency symbol. Fixed.
+
+[!] {#5324} Order management: Promotions: Reward points: Promotion dependent on user's reward points count was always applied on order edition. Fixed.
+
+[!] {#5325} Addons: Call request: The call request form was loaded for all products, even if the Buy in one click button was disabled. Fixed.
+
+[!] {#5337} Products options: Product with several options with a File type one among them could not be added to cart. Fixed.
+
+[!] {#5348} Export/Import: Products: Images: Detailed image type was used instead of preview image type. Fixed.

@@ -1,0 +1,17 @@
+***********************
+CS-Cart 4.1.2 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Design: 4.0.x theme compatibility added.
+
+========
+Bugfixes
+========
+
+[!] Core: Google Chrome browser crashed when moment.js library was used. Fixed.
+
+[!] Security: Checkout: There was an exploitable XSS vulnerability during customer checkout. Fixed.

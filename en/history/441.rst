@@ -1,0 +1,125 @@
+***********************
+CS-Cart 4.4.1 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Backend: Icons for add-ons are now supported by default.
+
+[+] Add-ons: Divido: The Divido payment method is now available as an add-on.
+
+[+] Add-ons: Google Export: Prices can now be exported with taxes included.
+
+[+] Add-ons: PayPal payments: Ability to send country code and phone number was added for PayPal Standard.
+
+[+] Add-ons: RMA: Gift certificate: The code of the gift certificate given for the return now appears on the return page.
+
+[+] Core: File Changes Detector was added to monitor changes in the core files.
+
+[+] Design: Themes: Each theme can now have its own language variables.
+
+[+] Design: Themes: Rewriting the files of non-default themes when upgrading a store was disabled. Themes can now use the files of a parent theme. When a theme is installed, the files will no longer be copied from the parent theme.
+
+[+] Documents: Template editor for documents (email notifications, invoices, packing slips, etc.) was implemented.
+
+[+] Multi-Vendor: Add-ons: Vendor plans: Ability to prevent vendors from switching to another plan was added.
+
+[+] Multi-Vendor: Add-ons: Vendor plans: Privileges to view and manage vendor plans were added.
+
+[+] Multi-Vendor: Export/Import: Ability to export and import vendors was added.
+
+[+] Order management: The ability to assign managers to orders was added.
+
+[+] Order management: The ability to copy orders was added.
+
+[+] Order management: The name of the customer’s company now appears below the customer’s name on the order list.
+
+[+] Pages: Entering the URL of a Link in the address bar now redirects customers to the target page of the link.
+
+[+] Shipping methods: FedEx: The delivery options and the list of shipping services were updated.
+
+[+] Upgrade center: Backward compatibility: Function names are now checked before the upgrade to make sure that third-party add-ons don’t have any functions with the same names as the core functions added by the upgrade.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: Data feeds: You can now select a layout for your feed.
+
+[*] Add-ons: eBay synchronization: The add-on no longer requires a license since version 4.4.1.
+
+[*] Add-ons: Google export: New product attributes were added. They are available in the google_export feed layout.
+
+[*] Add-ons: PayPal payments: You can now choose whether or not to change order status automatically after a partial refund via PayPal.
+
+[*] Add-ons: Reward points: You can now choose which order statuses grant reward points.
+
+[*] Core: Attribute 'enctype' was added to multiple update templates.
+
+[*] Design: Add-ons: Banners: Old banners from demo data were replaced with new ones.
+
+[*] Design: Email notifications: The notifications now have a new design.
+
+[*] Features: Feature groups: The lists of features and and feature groups are now separate.
+
+[*] Installer: Themes: The Bright theme is now selected by default after installation instead of Responsive.
+
+[*] Multi-Vendor: Add-ons: Vendor commission: The “Vendor commission” add-on has been replaced with “Vendor plans”. When you upgrade to 4.4.1, the data from the “Vendor commission” add-on will be moved to “Vendor plans” automatically.
+
+[*] Performance: Catalog: Options: The process of applying option modifiers to product price and/or weight was improved.
+
+[*] Settings: Appearance: The settings responsible for the number of orders, products, and CMS pages per page were removed.
+
+[*] Shipments: The “Allow multiple shipments for a single order” setting was removed. Multiple shipments are enabled by default. The interface was changed to allow you to create a single or multiple shipments.
+
+========
+Bugfixes
+========
+
+[!] Add-ons: Google sitemap: Links to pages of other storefronts appeared on the sitemap. Fixed.
+
+[!] Add-ons: Searchanise: PHP notice appeared in the error log when a feature that had a filter was deleted. Fixed.
+
+[!] Add-ons: Twigmo: Vulnerable code removed.
+
+[!] Add-ons: Watermarks: HiDPI Display Support: Watermarked versions weren’t created for HiDPI @2x images. Fixed.
+
+[!] Blocks: Cache: Smarty blocks were cached by default, leading to irrelevant content on pages. Fixed.
+
+[!] Checkout: The data passed in the "user_data" array could affect the order data in unwanted ways. Fixed.
+
+[!] Design: Layouts: Grid width could be set to 16 even though the layout width was 12. Fixed.
+
+[!] Design: Product Tabs: The block creation pop-up didn’t close automatically after creating a new block. Fixed.
+
+[!] Design: Responsive: Styles: Greeny: The default heading font didn’t support cyrillic symbols. The font was changed.
+
+[!] Multi-Vendor: Design: Vendor logos couldn't be created/updated if Responsive theme was removed. Fixed.
+
+[!] Order management: Privileges: The “Create order” privilege didn’t work without the “Edit order” privilege. Fixed.
+
+[!] Product features: Features from additional product categories couldn’t be set for product. Fixed.
+
+[!] Product options: Allowed exceptions: Sequential options: The option combinations allowed for products were displayed incorrectly. Fixed.
+
+[!] Promotions: Security: Promotion name and descriptions weren't sanitized properly, thus allowing XSS. Fixed.
+
+[!] Shipping methods: Surcharge: Taxes: Incorrect shipping cost could be displayed. Fixed.
+
+[!] Upgrade center: The restore script couldn't be created if the directory of the script had incorrect permissions. Fixed.
+
+[!] {#6451} Add-ons: SEO: hreflang meta link had no confirmation link. Fixed.
+
+[!] {#6458} Export/Import: Products: Features: Different features with the same name weren’t imported properly when using multiple storefronts. Fixed.
+
+[!] {#6488} Performance: Products: Product update mechanism was optimized—unnecessary fetching of the full product information was removed.
+
+[!] {#6496} Add-ons: PayPal payments: Payment surcharge was removed from the order total upon IPN processing. Fixed.
+
+[!] {#6506} Design: Blocks: Brands: Icons of brands didn’t appear in grayscale on the carousel. Fixed.
+
+[!] {#6507} Add-ons: Social buttons: Pinterest: Spaces in product description were replaced with pluses automatically. Fixed.
+
+[!] {#6522} Orders: Notifications: Checkboxes "Notify customer" and "Notify orders department" on the order detail page didn’t do anything. Fixed.

@@ -1,0 +1,63 @@
+***********************
+CS-Cart 4.3.3 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Admin panel: Administration: Backup/Restore: Database size is now shown in the side panel.
+
+[+] Hooks: New hook added to the regenerate_id method.
+
+[+] Upgrade Center: MySQLi DB driver support implemented.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: Store import removed. 
+
+========
+Bugfixes
+========
+
+[!] Add-ons: Buy together: Combination price was not recalculated when changing options of the combinated products. Fixed.
+
+[!] Add-ons: Data feeds: Google export: A server error occurred when downloading a data feed created from a category. Fixed.
+
+[!] Add-ons: PayPal: PayPal Express Checkout: Order total was overwritten with the shipping cost after IPN if the order contained a product with an option of the type File. Fixed.
+
+[!] Anonymous checkout: It was impossible to register or log in on anonymous checkout after page refresh. Fixed.
+
+[!] API: Products: An SQL error occurred when a product with repeating categories was created. Fixed.
+
+[!] Banners: Image assignment could fail randonly. Fixed.
+
+[!] Export/Import: Images: Memory limit could be exceeded, which caused a fatal error. Fixed.
+
+[!] Export/Import: Images: The "Image URL" field was always filled with the detailed image URL even if a thumbnail existed. Fixed.
+
+[!] Export/Import: Quantity discounts: The ult_product_prices table was not updated. Fixed.
+
+[!] Multi-Vendor: Products: A PHP notice appeared when product's in-stock quantity was changed from 0 to 1 and a customer had been subscribed to the product. Fixed.
+
+[!] Order management: If a user profile was automatically created with an order, they were not linked. Fixed.
+
+[!] Order management: Order creation: Customer data could be cleared on form update. Fixed.
+
+[!] Products: Backward compatibility was broken at "get_products" hook; there was no way to modify the $sortings list. Fixed.
+
+[!] {#5591} Add-ons: Gift certificates: Free product could not be added with product options. Fixed.
+
+[!] {#5633} Call requests: All vendors/storefronts could see requests from other vendors. Fixed.
+
+[!] {#5714} Sales reports: Product name was too short. Fixed.
+
+[!] {#5778} Design: Layouts: Block status was not changed from products, pages, etc. layout pages. Fixed.
+
+[!] {#5779} Design: MtronX: Filters: Variant names disappeared after filtering by price. Fixed.
+
+[!] {#5817} Design: Layouts: Categories: Subcategories were not shown in the menu on hover if the One-click dropdown wrapper was used. Fixed.
+
+[!] {#5825} Admin panel: Search: Products: Extended search by product code didn't work. Fixed.

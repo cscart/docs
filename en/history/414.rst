@@ -1,0 +1,93 @@
+***********************
+CS-Cart 4.1.4 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Admin panel: Shipments: Ability to print packing slips in the PDF format added.
+
+[+] Admin panel: Order management: The Shipping address dialog is now automatically opened and properly located on the order editing page.
+
+[+] API: Open API: Restricted unauthenticated API access is now available. Fixed.
+
+[+] Core: Hooks: New hook 'calculate_cart_post' added.
+
+[+] Design: Themes: Ability to specify parent theme (source files theme) added.
+
+[+] Design: Themes: Backward compatibility: Support of manifest.ini files returned.
+
+[+] Payment methods: Sagepay: New credit card type support added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Addons: Form builder: Admin email is automatically added to the "Contact us" page now.
+
+[*] Addons: SEO: Extended features could be accessed both by the SEO name with and without the .html extension. Fixed.
+
+[*] Admin panel: The setting "Allow users to create shipments" renamed to "Allow multiple shipments for a single order".
+
+[*] API: Rewrite rules improved to support subridectories.
+
+[*] Installer: Extra checking for missing language packs added to the console installer.
+
+========
+Bugfixes
+========
+
+[!] Addons: Data feeds: Cron export did not work if only one storefront was defined. Fixed.
+
+[!] Admin panel: Abandoned carts: Online carts were not shown if the Redis session backend was used . Fixed.
+
+[!] Admin panel: Dashboard: An Out of stock product could be shown incorrectly if it had been assigned to several categories. Fixed.
+
+[!] Admin panel: Page title was broken after an AJAX request if a single quote was in the page title. Fixed.
+
+[!] Admin panel: Redactor editor: The Redactor editor didn't load for a html block on language change. Fixed.
+
+[!] Admin panel: Usergroups: Requests: Admin was unable to confirm several usergroup requests. Fixed.
+
+[!] Calculated shipping rates were not recalculated after new product was added to cart. Fixed.
+
+[!] Deployment: Windows: Temporarily created archives could not be removed because they were considered in use by the PharData class. Fixed.
+
+[!] Design: The "Add to cart" dialog could not fit into screen area on small screens. Fixed.
+
+[!] Design: Screen blinked on carousel initialization. Fixed.
+
+[!] Export/Import: Product position was reset to 0 after import. Fixed.
+
+[!] Multi-Vendor: Admin panel: The Add-ons tab was not displayed on the vendor details page. Fixed.
+
+[!] Orders: Downloads: Pagination did not work on the Downloads page in the customer area. Fixed.
+
+[!] Payment methods: DPS Access: order_id was defined incorrectly when the admin entered invalid credentials. Fixed.
+
+[!] Payment methods: Paypal express checkout: The notice about how PayPal handles surcharges was misleading. Fixed.
+
+[!] Payment methods: Sagepay direct: This payment method did not work with the 3d Secure protection active. Fixed.
+
+[!] Payment methods: Worldpay: Customer was redirected to the incorrect store after payment. Fixed.
+
+[!] Shipping methods: Temando: PHP error notice "Invalid argument supplied for foreach()" was displayed when testing the shipping in the admin area. Fixed.
+
+[!] Store import: Theme was not reset to Basic is store had several storefronts. Fixed.
+
+[!] {#4916} Design: Layouts: If the "Minimal number of items to be placed in a dropdown list" value was higher than 0, the language selector menu would break the page layout. Fixed.
+
+[!] {#4933} Admin panel: Sales reports: The Sales by categories reports did not work with orders that contained deleted products. Fixed.
+
+[!] {#4953} Products features: Brands: Ordered and unordered lists had no markers or numbers if used in brand description. Fixed.
+
+[!] {#4969} Products: Comments and reviews: Extra empty comment was created when Enter was pressed. Fixed.
+
+[!] {#4979} Payment methods: Westpac: Gift certificates were ignored when this payment method was used. Fixed.
+
+[!] {#4980} Promotions: Free shipping bonus given by a coupon did not recalculate shipping cost immediately; only on the checkout page or after the "Recalculate" action. Fixed.
+
+[!] {#4984} Image previewer: JavaScript error occurred on a click on a lightbox overlay. Fixed.
+
+[!] {#4988} Design: Admin panel: Horizontal scrollbar appeared when the admin panel was viewed on iPad. Fixed.

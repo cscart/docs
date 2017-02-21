@@ -1,0 +1,279 @@
+***********************
+CS-Cart 2.1.2 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Cache system for caching block contents in the customer area was added.
+
+[+] The "Quick search" add-on was added.
+
+[+] The "Catalog Mode" add-on was added.
+
+[+] Image verification was added to the "Track my order" form.
+
+[+] The WorldNet TPS XML payment module was added.
+
+[+] New templates for the Product details page were added.
+
+[+] Ability to enable "Live Mode" for the store was added. In this mode, the store produces the highest performance.
+
+[+] The “Help us improve CS-Cart” check box was added to the installation wizard.
+
+[+] Block with contents loaded through Ajax was added.
+
+[+] MVE: The "Apply for a vendor" functionality was added.
+
+[+] MVE: Ability to control vendor payouts was added.
+
+[+] MVE: The "Merge Vendor/Supplier" feature was added.
+
+[+] MVE: The "Product premoderation" add-on was added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] The "get_product_price" hook was added.
+
+[*] New hook was added. The "set_admin_notification" hook may be used for displaying notifications after logging in.
+
+[*] Ability to disable a button was added to the button template.
+
+[*] Address format was corrected.
+
+[*] Banners: Hook in the "get_banners" function was improved.
+
+[*] Buy together add-on: If the combination products require a certain set of options to be configured, but the customer has not specified them and tried to add the combination to cart, the warning notice will be displayed.
+
+[*] CRE Secure: The "Connecting to CRE Secure..." message was removed from the place order page.
+
+[*] Customer notification system was improved.
+
+[*] If the exportable thumbnails do not exist, they are generated automatically.
+
+[*] The displaying style of the fileuploader was corrected.
+
+[*] If the thumbnail that is generated automatically does not have the Alt text, this text will be taken from the Alt text of the detailed image.
+
+[*] The text of the message about the data structure of options and features was corrected on the import page.
+
+[*] Languages: Language code for the Greek language was changed from GR to EL.
+
+[*] Locations: Names of the Canadian states were corrected.
+
+[*] Notification informing that the "Terms and Conditions" check box is not selected at checkout was improved.
+
+[*] Now by default the "Remove CC info" setting is enabled for all order statuses, except the "Open" one.
+
+[*] Promotions: Functionality of adding/deleting conditions and bonuses was improved.
+
+[*] RMA: Notification settings for the RMA add-on were not used anywhere, they were deleted.
+
+[*] SEO: Base href meta tag was restored.
+
+[*] Screenshots for the basic skin were updated.
+
+[*] The "orders:confirmation" hook was renamed "checkout:order_confirmation" and moved to the order landing page.
+
+[*] The export/import format of the multilanguage Alt text was simplified.
+
+[*] The "/images/banner" directory was renamed "/images/promo" in order to prevent cutting the Banner Block by Web filtering software.
+
+[*] The exact set of settings of each add-on may vary depending on the software edition (CS-Cart Multi-Vendor, CS-Cart Professional, etc.)
+
+[*] Catalog mode: The "Allow purchasing products with empty Buy Now URL" option was added.
+
+[*] Notification styles were improved.
+
+[*] The "revert" link was removed from the previously installed packages. Administrator should be able to revert the last upgrade only.
+
+[*] The design of the "Login" and "Change password" forms was updated.
+
+[*] The type of the "value" field in the "cscart_sales_reports_intervals" table was changed to "int(11)".
+
+[*] Price-list add-on: Product thumbnails are generated automatically if they do not exist.
+
+[*] List of currencies supported by WorldPay was expanded.
+
+[*] Dutch language pack was updated.
+
+[*] ProxyPay: ProxyPay validation algorithm was improved.
+
+[*] Registry: Storage engine for MySQL cache was changed to MyISAM.
+
+[*] Russian language pack was updated.
+
+[*] Hot Deals block: the "No image" image is displayed in the block if a product does not have a thumbnail.
+
+========
+Bugfixes
+========
+
+[!] Attachments add-on: ID of the pickers coincided with the already existing ones. Fixed.
+
+[!] Attachments: Attachments were not cloned when cloning the product. Fixed.
+
+[!] Attachments: Attachments were not deleted when deleting the product. Fixed.
+
+[!] Attachments: File of the deletable attachment was not deleted if there existed another attachment with the same file name. Fixed.
+
+[!] Attachments: Names of attachments were not multilingual. Fixed.
+
+[!] Autocomplete library: Apache error was displayed. Link to the missing background image was removed from the CSS file.
+
+[!] DPS PX Post: Transaction was always marked as failed. Fixed.
+
+[!] Debugging console did not work if additional languages were installed. Fixed.
+
+[!] Discussion: If the filling type for the categories block was selected as Rating, the categories within this block were sorted in reverse order. Fixed.
+
+[!] Exim: Callback functions could not receive an argument with a value equal to TRUE.
+
+[!] If any text input field was completed with data which format resembled that of a date, the system formatted such data incorrectly. Fixed.
+
+[!] The "fn_format_price" function did not always work correctly. Fixed.
+
+[!] Gift certificates were displayed incorrectly on the Return information page. Fixed.
+
+[!] Gift registry add-on: The table containing all the events was displayed incorrectly. Fixed.
+
+[!] If the Order ID field was not completed in the search form in the customer area, the zero value was displayed in this field. Fixed.
+
+[!] If a product had a minimum quantity option specified, a customer could add this product with less quantity if the amount of this product in storage was less than the minimum quantity value. Fixed.
+
+[!] If product options were represented as check boxes, then the product price was calculated incorrectly when calculating Ajax options on the cart page. Fixed.
+
+[!] If both the "Disable anonymous checkout" and "Administrator must activate new user accounts" options were enabled, the unnecessary information was displayed at the first checkout step. Fixed.
+
+[!] If the "Enable secure connection at checkout" and "When the customer clicks on any Checkout button/link in the store, redirect to the Cart content page first" options were enabled, and the payment failed on the payment page, the customer was redirected to the Cart content page, not to the Checkout one. Fixed.
+
+[!] If the output format was specified in the thumbnail settings, the thumbnail still retained the same format as the source file. Fixed.
+
+[!] If the "Remove CC info" setting was enabled for orders with the "Failed" status and any direct payment method was selected, the user could not make a second attempt to pay for the order if his first attempt to pay for this order using this payment method failed. Fixed.
+
+[!] Moneybookers: The merchant received the code of the state instead of the state name. Fixed.
+
+[!] News and emails: The number of clicks on the link contained within the letter was displayed incorrectly in the newsletter campaign statistics. Fixed.
+
+[!] Error 404 appeared on the Statistics: Referrers page. Fixed.
+
+[!] If "track with options" was enabled, by default the system selected the option combination that was not the first one on the list. Fixed.
+
+[!] Order tracking: Notifications were sent in the default language, but not in the language the order was placed. Fixed.
+
+[!] Order tracking: If an email address was typed in the request form, the notification was sent for the first order that was placed with this email address. Fixed.
+
+[!] Pages: When editing pages, the "Available from" and "Available till" fields did not work. Fixed.
+
+[!] PayPal Express Checkout: Shipping first name and last name which were returned by PayPal Express Checkout were not used in the shipping address section at checkout. Fixed.
+
+[!] Paypal Express Checkout: After returning from the payment details page, the shipping state at checkout was completed incorrectly for non-American states. Fixed.
+
+[!] Polls add-on: Image verification code was always incorrect if the poll was displayed as a central block. Fixed.
+
+[!] Product configurator add-on: Out-of-stock products were available for selection after the page was loaded. Fixed.
+
+[!] Product options: Sequential options did not work in the order management in the admin area. Fixed.
+
+[!] Products creator script was improved.
+
+[!] RMA: The "Delete this return" link on the return details page in the admin area did not contain the cm-confirm class. Fixed.
+
+[!] RMA: Not all the data was deleted when deleting the return request. Fixed.
+
+[!] Records in the reward points userlog were displayed incorrectly for RMA returns. Fixed.
+
+[!] SEO links were not generated for a sitemap when a non-empty HTTPS path was used. Fixed.
+
+[!] Sage pay form: Non-unique transaction IDs caused errors. Fixed.
+
+[!] Search engines could index the "Add to compare list" link. Fixed.
+
+[!] Send feedback: Upgrade center settings were removed.
+
+[!] Sitemap add-on: Sitemap contained links to static pages that redirected to other sites. Fixed.
+
+[!] Statistics add-on: Invalid referrer link was fixed.
+
+[!] The "Out of stock" label was displayed on the product details page in the customer area if the product had zero inventory, but the "Allow negative amount" option was enabled. Fixed.
+
+[!] The "Sign in as a different user" link did not always work correctly. Fixed.
+
+[!] The "reward_points:userlog" hook was given an incorrect name in the RMA add-on module. Fixed.
+
+[!] The " " character entity appeared in the select boxes of the configurable product options in the “Product Configurator” add-on. Fixed.
+
+[!] The "&" character entity was displayed in the Newsletter links table. Fixed.
+
+[!] The email subjects that contained special characters were displayed incorrectly in the email headers. Fixed.
+
+[!] The language selector in the admin panel stopped working if the name of the admin script began with “sl”. Fixed.
+
+[!] An out-of-stock product was not displayed in the customer area even if the inventory tracking was disabled. Fixed.
+
+[!] The thumbnail of the product did not work as a link to the product details page in IE7. Fixed.
+
+[!] There was no possibility to add product details page templates via the add-ons. Fixed.
+
+[!] Thumbnail background color specified in the admin area was not considered when generating a thumbnail image. Fixed.
+
+[!] User login was not displayed after changing the password if PCI compliance functionality was enabled. Fixed.
+
+[!] User group requests were displayed incorrectly. If the user sent a request for two or more user groups, the administrator could not approve all the requests. Fixed.
+
+[!] When registering at checkout, the user received information with empty fields for billing and shipping addresses. Fixed.
+
+[!] When restoring the store from a backup, non-English language variables were displayed incorrectly, if restored through the Restore link in the Upgrade Center section of the administration area. Fixed.
+
+[!] ePDQ: Information about "Allowed URL" on the epdq payment details page in the admin panel did not change depending on the HTTPS settings and when enabling the SEO add-on. Fixed.
+
+[!] Gift Registry add-on: When a product was deleted from the catalog, this product could not be deleted from the event. Fixed.
+
+[!] Exim: If the product name contained a double quotation mark ("), this mark was duplicated ("") during the export to Google Base.
+
+[!] The fn_format_price function did not always work correctly. Fixed.
+
+[!] Gift registry add-on: Product thumbnail was not displayed on the product details page if the product had a detailed image only. Fixed.
+
+[!] In the “Add site map section” picker, the check for the required fields did not function. Fixed.
+
+[!] It was impossible to specify a lot of categories for the product filters and for the product features. Fixed.
+
+[!] The 'list_without_options' language variable had a wrong value for the Russian language. Fixed.
+
+[!] Option combination layout was broken in IE7. Fixed.
+
+[!] Product filters: After one of the product features was selected, the search by the selected feature was performed incorrectly on the features page. Fixed.
+
+[!] Promotion with the “Product” condition worked only if the product quantity was equal to the amount specified, and did not work if the product quantity exceeded this amount. Fixed.
+
+[!] Sometimes successful transactions made through the ePDQ (Barclaycard) payment module were marked as failed. Fixed.
+
+[!] Validation of the fields in the pop-up box indented for creating a file in the template editor did not work. Fixed.
+
+[!] If the tax calculation method was based on the subtotal, the previous tax rule was not removed and was added to the new one. Fixed.
+
+[!]Store locator add-on: Input box overlapped the label text on the add-on settings page. Fixed.
+
+[!] It was impossible to add many recipients to a newsletter. Fixed.
+
+[!] Price for configurable product was displayed incorrectly on the category page if its components had quantity discounts. Fixed.
+
+[!] Product Configurator: Default product of a mandatory product group could be ordered even if was out of stock. Fixed.
+
+[!] Promotion with the “Product Quantity” condition worked only if the ordered product quantity was equal to the specified amount, and did not work if the ordered product quantity exceeded this amount. Fixed.
+
+[!] Statistics: If the mbstring PHP extension was not installed on the server, referrers' statistics was ignored by search engines. Fixed.
+
+[!] The password recovery link always referred to the customer area. Fixed.
+
+[!] The password recovery link for administrators always referred to the vendor area. Fixed.
+
+[!] Field validation in the file upload pop-up box in the template editor did not work. Fixed.
+
+[!] Virtual Merchant: Virtual Merchant payment did not send error messages to the cart. Fixed.
+
+[!] When selecting options on the product details page, IE showed a Javascript alert if additional product images appeared as a scroller, and images of option combinations were uploaded. Fixed.

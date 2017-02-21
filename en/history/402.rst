@@ -1,0 +1,249 @@
+***********************
+CS-Cart 4.0.2 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] API: The Language entity added.
+
+[+] API: The News entity added.
+
+[+] Design: Frontend: The Also bought block added.
+
+[+] Payment certificates uploading support added.
+
+[+] Currencies: The 'Hidden' status for currencies added.
+
+[+] UK cookies policy support added.
+
+[+] Store import tool added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Installer: A rewrite confirmation in case of a pre-populated database specified on installation added.
+
+[*] Layouts: Ability to change block content properties for all languages at a time added.
+
+[*] Payments: The Moneybookers payment gateway renamed to Skrill.
+
+[*] Payments: The Buckaroo payment gateway support updated.
+
+[*] Product options: Simultaneous options are no longer changeable on the checkout page.
+
+[*] The used Paypal Express checkout protocol updated from SOAP API to Name-Value Pair API.
+
+[*] The Sharing schema moved to a separate folder.
+
+[*] USPS: Method names updated according to the latest changes by USPS: Express Mail -> Priority Mail Express, Express Mail International -> Priority Mail Express International
+
+========
+Bugfixes
+========
+
+[!] API: The API Access tab was visible to vendors. Fixed.
+
+[!] Addons: Buy together: Product chains were not editable if only one storefront was available. Fixed.
+
+[!] Addons: CSS styles connected via a post template hook did not override the default styles. Fixed.
+
+[!] Addons: Comments and reviews: The Comments and reviews addon not work if only a single storefront was available. Fixed.
+
+[!] Addons: Comments and reviews: The permissions assigned by the addon overrode unrelated general permissions. Fixed.
+
+[!] Addons: Google sitemap: Multi-language URLs were not supported. Fixed.
+
+[!] Addons: Image zoom: Image ratio could be incorrect if the Image zoom addon was used and only one thumbnail dimension was specified. Fixed.
+
+[!] Addons: News and Emails: News were not deleted when the storefront was deleted. Fixed.
+
+[!] Addons: Order barcode: Barcode was not printed when an order was printed in the admin panel. Fixed.
+
+[!] Addons: Price list: Image URLs in a price list always used the plain HTTP protocol, even is HTTPS was specified. Fixed.
+
+[!] Addons: RMA: Gift certificates: The 'Create gift certificate' button was displayed on the return information page even if the 'Gift certificate' addon was disabled. Fixed.
+
+[!] Addons: Recurring billing: Customer could see other customers' subscriptions. Fixed.
+
+[!] Addons: SEO: Active page was not selected in the text links menu if the SEO addon was active. Fixed.
+
+[!] Addons: SEO: Active page was not selected in the text links menu if the page request parameters were empty. Fixed.
+
+[!] Addons: SEO: Dynamic-to-human-readable redirecting used the 302 HTTP code instead of 301. Fixed.
+
+[!] Addons: Statistics: An error occured on adding statistics data if browser version was empty. Fixed.
+
+[!] Addons: Statistics: An error occured when a page was fetched by the Google bot. Fixed.
+
+[!] Addons: Tags: All tags attached to the product were removed on save. Fixed.
+
+[!] Addons: Tags: Tags for the product could not be deleted if deleted all at the same time. Fixed.
+
+[!] Addons: The mail directory was not copied from the theme_repository directory on addon installation. Fixed.
+
+[!] Addons: Wishlist: Wishlist info was not updated after adding a product to wishlist. Fixed.
+
+[!] Addons: eDost: Shipping service codes were calcucated incorrectly. Fixed.
+
+[!] Addons: RMA: Order was not recalculated on status change. Fixed.
+
+[!] Australia post: The 'Delivery Confirmation' price was not included to the Total shipping price.
+
+[!] Admin panel: A division by zero notification was displayed on the product details page if the Products per page setting was set to 0 or left empty. Fixed.
+
+[!] Admin panel: Abandoned carts: The Firstname and Lastname fields were missing. Fixed.
+
+[!] Admin panel: Popup dialog: Popup dialog content would scroll to top after an inner element with a tooltip had been clicked. Fixed.
+
+[!] Admin panel: Settings: Page title was incorrect. Fixed.
+
+[!] Admin panel: Shippings: It was impossible to enter a whole number with a fraction as weight. Fixed.
+
+[!] Categories: Multi-Vendor: Categories update tools were displayed incorrectly for vendor on the category management page. Fixed.
+
+[!] Checkout: Shippings: If the 'Display prices with taxes on cart/checkout pages if the method of calculating taxes is based on a unit's price' setting was active, a fatal error raised on the 3rd checkout step. Fixed.
+
+[!] Checkout: Taxes: Taxes were not shown on the Cart contents page, when Click here more details -> Taxes was clicked. Fixed.
+
+[!] Checkout: Shipping charge was charged twice if the 'Tax calculation method based on' setting was set to 'Unit price' and the 'Display prices with taxes on cart/checkout pages if the method of calculating taxes is based on a unit's price' settings was active. Fixed.
+
+[!] Multi-Vendor: Addons: Vendor data premoderation: When a product was cloned by a vendor, the approval status of this product was cloned too. Fixed.
+
+[!] Multi-Vendor: On vendor creation, the new vendor e-mail was used as the From field value. Fixed.
+
+[!] Core: Deprecated constant COMPANY_ID removed.
+
+[!] Core: Objects were not shared automatically if table prefix contained numbers (e.g. \ "cscart123". Fixed.
+
+[!] Core: The MySQL strict mode was not supported. Fixed.
+
+[!] Core: The realpath function call on the Bootstrap initialization did not work on Windows servers. Fixed.
+
+[!] Dashboard: Date picker was hard-coded in English. Fixed.
+
+[!] Design mode: The Edit icon was not shown for a block updated via AJAX. Fixed.
+
+[!] Design: Admin panel: Shipping charges tabs could be shown incorrected with long location list. Fixed.
+
+[!] Design: Frontend: Product options: Tooltip background width was not the same as of the image. Fixed.
+
+[!] Design: Frontend: The My account drop-down menu link style was incorrect. Fixed.
+
+[!] Design: Profile fields on the registration page could be shown incorrectly. Fixed.
+
+[!] Export/Import: Product features: Feature value was not nulled when a product was imported after deleting this feature. Fixed.
+
+[!] Export/Import: Products: The 'Detailed image URL' field export support added.
+
+[!] Export/Import: Products: Prices were set to zero on quantity discount import. Fixed.
+
+[!] Export/Import: SEO: digital name was not imported. Fixed.
+
+[!] Export/Import: SEO: name was array. Empty seo names in MVE. Fixed.
+
+[!] Files: Incorrect message on failed URL upload. Fixed
+
+[!] Frontend: Product filters: Styles of the filters were fixed in mobile devices.
+
+[!] Frontend: Vendors: Products: Setting Display product vendor were fixed.
+
+[!] Infornmation on permissions updated
+
+[!] Installer: If the PHP open_basedir setting was defined and linked to the CS-Cart root directory, auto redirect did not work after the installation was complete. Fixed.
+
+[!] Languages with the 'Hidden' status were not displayed in the admin area. Fixed.
+
+[!] Layouts: The menu option 'Grid options' was displayed twice in the 'Dropdown menu'. Fixed.
+
+[!] Layouts: Width selector (12 or 16 columns) for layouts did not work. Fixed.
+
+[!] Layouts: Blocks could duplicate when a new storefront was added. Fixed.
+
+[!] Localizations: All languages were available in the Customer area, even the ones not added to the localization. Fixed.
+
+[!] Menus: The 'No data found' information block was not displayed after removing the last menu element. Fixed.
+
+[!] Multi-vendor edition: Checkout: Surcharge was displayed on checkout page when 'Take payment surcharge from vendors' option enabled. Fixed.
+
+[!] Multi-vendor edition: Export/Import: Ability to export users forbidden for vendors.
+
+[!] Multi-vendor edition: Export/Import: A vendor could export data of other vendors. Fixed.
+
+[!] Multi-vendor edition: Vendor account balance was calculated if no order statuses had the 'Charge to vendor account' option active. Fixed.
+
+[!] Orders: Credit card fields were required on the order update page. Fixed.
+
+[!] Orders: Order management: Removed discount coupons were restored after order saving. Fixed.
+
+[!] Orders: Payment method fields were checked on the order update page after the payment data were cleared. Fixed.
+
+[!] Orders: Sales Reports: The year value was incorrect if the report inverval was set to year. Fixed.
+
+[!] PHP 5.5 support: The error-raising /e modifier usage with preg_replace removed.
+
+[!] Pages: The preview link was absent. Fixed.
+
+[!] Payments: Moneybookers QuickCheckout: The payment would fail with the 'Transaction was canceled by customer' message. Fixed
+
+[!] Payments: PayPal Express: The XML syntax error occured if an ampersand was passed in the shipping address. Fixed.
+
+[!] Products: A parse_url warning was displayed on options change. Fixed.
+
+[!] Products: Ability to upload files from server was not available in simple mode. Fixed.
+
+[!] Products: Global option: Field 'Modifier' does not change the value. Fixed
+
+[!] Products: Inventory: Amount is not recalculated. Fixed
+
+[!] Products: Product code was not changed even if its option combination had a different code. Fixed.
+
+[!] Products: Product features: Text-type feature values were cleared after a feature with multiple variants was added. Fixed.
+
+[!] Products: Product filters: Filter view state was not saved if an arrow was clicked. Fixed.
+
+[!] Products: Product filters: Page URLs generated on clicking View all in a product filter block on the homepage were incorrect (showed the Access denied page). Fixed.
+
+[!] Products: Product options: Negative price could be assigned to product after applying option modifiers. Fixed.
+
+[!] Products: Product options: The quantity field was missing for a zero price product. Fixed.
+
+[!] Products: Product options: Option tooltip was not displayed if it contained only image. Fixed.
+
+[!] Products: Quantity discounts: Discount icons were not displayed on the categories page. Fixed.
+
+[!] Promotions: Discount was displayed incorrectly for products with zero price and no options. Fixed.
+
+[!] Promotions: Product features: AJAX select box variants were not loaded. Fixed.
+
+[!] Quick menu: Multi-Vendor: Quick menu was available for vendor even if it had no items and could not be updated by vendor. Fixed.
+
+[!] SQL errors occured if a product name consisted of 3+ words and the 'set' keyword was in the name. Fixed.
+
+[!] Settings: Appearance: If the Elements per page field was empty, a warning was displayed. Fixed.
+
+[!] Settings: Store settings update did not work if only one storefront was available. Fixed.
+
+[!] Shipments: Information about products was not displayed on the Shipment page in the customer area. Fixed.
+
+[!] Shipping methods: FedEx: International FedEx Ground returned "SUCCESS 0 Response" instead of the shipping price. Fixed.
+
+[!] Shipping methods: Shipping charges: It was impossible to add rate until at list one value was saved. Fixed.
+
+[!] Shipping methods: Shipping charges: It was possible to save empty values in the 'Weight dependencies' fields. Fixed.
+
+[!] Shipping rates: Ability to specify rates per items restored.
+
+[!] Sitemap sections and links were not deleted when the storefront was deleted. Fixed.
+
+[!] Taxes: Taxes were not updated on shipping address change. Fixed.
+
+[!] Theme editor: New styles were not applied on preset cloning. Fixed.
+
+[!] USPS: Price of several extra services were not included in the total shipping price. Fixed.
+
+[!] USPS: Package cost was always 0 for insurance extra service. Fixed.
+
+[!] Users: Multi-Vendor: Vendor's administrator creation and update notifications were sent from the vendor's company. Fixed.

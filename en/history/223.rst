@@ -1,0 +1,119 @@
+***********************
+CS-Cart 2.2.3 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] The "Google Export" add-on was added to meet the changes made to Google Product Search feed specification and policies.
+
+[+] The "Sort by" field was added to the products search form in the admin panel.
+
+[+] The Norwegian language pack was added.
+
+[+] The "Edit blocks" permission was added.
+
+[+] Checking fields for empty values was added to the admin login form.
+
+[+] Filtering by MIME type of files uploaded to the server was added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] The "Search words" field was moved from "SEO / Meta data" to the "Extra" section on the edit product page.
+
+[*] Multi-Vendor Edition: The "check_vendor_permissions" hook was renamed to "check_company_permissions".
+
+========
+Bugfixes
+========
+
+[!] The links to open/close storefront were displayed for an additional administrator if his/her user group had the "Open/Close store" privilege disabled. Fixed.
+
+[!] Security rules did not work in ".htacess" files on the Apache web server version 1.3.42 and older. Fixed.
+
+[!] Additional product images were not always displayed in the order in which they were uploaded. Fixed.
+
+[!] Affiliate add-on: Product banners could not be added. Fixed.
+
+[!] Long breadcrumbs were displayed incorrectly in the admin panel. Fixed.
+
+[!] Blocks: HTTP URLs were not changed to HTTPS ones in content of a block after switching to a secure connection. Fixed.
+
+[!] Catalog Mode add-on: The "Quantity" field was displayed on the product details and wish list pages. Fixed.
+
+[!] Multi-Vendor Edition: A new value of the "Vendor" field was not saved on the edit administrator profile page. Fixed.
+
+[!] Checkout: If no shipping methods were available, the appropriate notification was displayed twice at step 3 of checkout. Fixed.
+
+[!] Data feeds add-on: If data was exported on the "Data Feeds" page, the PHP error occurred. Fixed.
+
+[!] FancyBox image previewer: Shadows of the browser window were not displayed in Internet Explorer 7 and 8 browsers. Fixed.
+
+[!] If a product image could not be uploaded from the Internet, the PHP error occurred. Fixed.
+
+[!] Format of an email entered into the "Back in stock" text input field was not checked. Fixed.
+
+[!] If the "AJAX(Javascript)-based pagination" setting was disabled, a product picker did not work correctly. Fixed.
+
+[!] If product subtotal was zero in the cart, taxes were not applied to product shipping cost. Fixed.
+
+[!] If it was selected to display 100 items on the "Products" page in the admin panel, a JavaScript error was displayed in Internet Explorer 7 and 8 browsers.
+
+[!] Multi-Vendor Edition: If the translation mode was enabled, the page layout was broken. Fixed.
+
+[!] Multi-Vendor Edition: The translation mode was available for vendors. Fixed.
+
+[!] Notifications: The "low in stock" notification was sent with incorrect information about product options. Fixed.
+
+[!] Edit order: If an order had products from different suppliers and shipped by different methods, it was impossible to remove only one shipping method from the calculation at step 3. Fixed.
+
+[!] Pages: A value of the "Page URL" field could not be saved separately for each available language. Fixed.
+
+[!] Priority of taxes was not regarded if the "Tax calculation method based on" setting was set to "Subtotal". Fixed.
+
+[!] Product options: When rebuilding option combinations, product codes of combinations created earlier were removed. Fixed.
+
+[!] Products: A value of the "User Group" select box was set to "All" in the "Quantity Discounts" tab of the edit product page after the appropriate user group had been disabled. Fixed.
+
+[!] The Quick menu could not be closed by clicking on its bar. Fixed.
+
+[!] SEO add-on: A new extra field for a product feature was not cleared after saving. Fixed.
+
+[!] Template editor: When trying to rename a file using a forbidden extension (php, cgi, etc...), the text of the error notification missed it. Fixed.
+
+[!] Template editor: When restoring any file from the repository, the error notification was always displayed. Fixed.
+
+[!] Values of text, text area and file options were not displayed in order details emails sent to the administrator. Fixed.
+
+[!] The print card feature did not work if the gift certificate template was empty. Fixed.
+
+[!] Top menu: A wrong color of links was used in the Aquarelle red skin. Fixed.
+
+[!] Upgrade center: The "mysqldump" command did not work if a database password contained special characters. Fixed.
+
+[!] A category picker was not opened on the bulk product addition page, if products were created by cloning. Fixed.
+
+[!] {#2621} Multi-Vendor Edition: Shipping options disappeared on the edit order page after returning to the first step. Fixed.
+
+[!] {#2646} SEO add-on: Content of the storefront home page could be duplicated in search engines if the "Show language in the URL" setting was enabled. Fixed.
+
+[!] {#2660} If a category had a very long name, it broke the layout of the "Products" page. Fixed.
+
+[!] {#2665} A supplier picker did not work when the Russian language was enabled in the admin panel. Fixed.
+
+[!] {#2667} Products: A catalog discount and an option modifier were not applied to a price entered by a user. Fixed.
+
+[!] {#2668} SQLite cache: If the "var/cache" subdirectory did not exist, the PHP error was displayed in the storefront and admin panel. Fixed.
+
+[!] {#2680} An error message saying about invalid email addresses was displayed after updating quantity of a product with the "Back in stock" notification enabled if more than one email was set in the "Order department email" setting. Fixed.
+
+[!] {#2682} Customer information was not displayed in an invoice. Fixed.
+
+[!] {#2687} Invoice: Check box options were displayed incorrectly. Fixed.
+
+[!] {#2693} A description of a product option was displayed incorrectly after receiving AJAX requests. Fixed.
+
+[!] {#2699} Pages: In the dynamic pages tree, active and parent elements had no CSS classes defined. Fixed.

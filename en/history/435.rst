@@ -1,0 +1,325 @@
+***********************
+CS-Cart 4.3.5 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: eBay Synchronization: The add-on was refactored and greatly improved.
+
+[+] Add-ons: Extra information about add-ons and add-on filters were added.
+
+[+] Add-ons: PayPal: Currency conversion was added.
+
+[+] Add-ons: PayPal: PayPal In-Context Checkout was implemented.
+
+[+] Add-ons: Price list: The add-on was completely refactored, obsolete libraries were removed, generation speed and usability were improved.
+
+[+] API: The "Call requests" entity was added.
+
+[+] API: The "Carts" entity was added.
+
+[+] API: The "Discussions" entity was added.
+
+[+] API: The "Pages" entity was added.
+
+[+] Categories: Trash category was added.
+
+[+] Free mode: Add-ons: The Payment dependencies add-on was removed.
+
+[+] Free mode: Multi-store feature was removed.
+
+[+] Free mode: Product filter were unlocked: you can add as many filters as you want to the storefront.
+
+[+] Hooks: Authentication routine hook was added.
+
+[+] Hooks: Hooks were added into the currency functions.
+
+[+] Hooks: New hooks were added into the "fn_get_cart_products()" function.
+
+[+] Hooks: Orders: Hooks and documentation were added.
+
+[+] Hooks: The adandoned/live carts functionality was moved from the controller. The "pre_get_carts" hooks was added.
+
+[+] Payments: FirstData: Updated to Connect 2.0.
+
+[+] Payments: SagePay: Affiliate code was added.
+
+[+] Payments: The Rocketgate-Native payment was added.
+
+[+] Products: Breadcrumbs were added to product editing pages.
+
+[+] Products: Trash category: A notice for trashed products was added.
+
+[+] Shippings: DHL: Legacy Airborne API was replaced with the latest XML-PI API.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: Data feeds: The "?t=" parameter was removed from the non-CDN image URLs.
+
+[*] Add-ons: Social login: Usability of linking/unlinking of a social account was improved.
+
+[*] License agreement: License agreements were updated for CS-Cart & Multi-Vendor: copyright_[ultimate/multivendor].txt.
+
+[*] Payments: A number of payment processors were renamed and removed. These ones were removed: ePassporte, MCPE, PRI [HTTPS Post], PRI [Form].
+
+[*] Payments: eWAY: eWAY Direct Payment and eWAY Shared Payment processors were marked as deprecated.
+
+========
+Bugfixes
+========
+
+[!] Abandoned carts: The cart of the previous user was cleared during the order placement. Fixed.
+
+[!] Add-ons: Blog: Blocks with "Recent posts" and "Recent posts scroller" templates were empty on pages of the "Page" type (About us, About our company, etc.). Fixed.
+
+[!] Add-ons: Blog: The "<!--CUT-->" tag was removed from blog records. Fixed.
+
+[!] Add-ons: Blog: The Recent posts block behavior was tricky and non-obvious. Fixed.
+
+[!] Add-ons: Buy together: Paypal: Discount was also substracted after IPN response. Fixed.
+
+[!] Add-ons: Call requests: Invalid phone number could be sent. Fixed.
+
+[!] Add-ons: Call requests: The Items per page selector didn't work in the call requests list. Fixed.
+
+[!] Add-ons: Call requests: The value of the Phone mask was checked incorrectly. Fixed.
+
+[!] Add-ons: Form builder: After sending a message via the form, the footer was shown incorrectly. Fixed.
+
+[!] Add-ons: Form builder: The "pages:page_content" hook wasn't called, if a form was submitted successfully. Fixed.
+
+[!] Add-ons: HiDPI: Images were created incorrectly for files with identical names. Fixed.
+
+[!] Add-ons: PayPal: A user's address was changed after the response from PayPal. Fixed.
+
+[!] Add-ons: PayPal: Payflow used the wrong language variable. Fixed.
+
+[!] Add-ons: Paypal: The description for Status conversion map was added.
+
+[!] Add-ons: PayPal: The Hong Kong Dollar (HKD) currency was missing in the PayPal Pro processor. Fixed.
+
+[!] Add-ons: Reward points: Reward points for an order were not displayed in invoices in the administration panel. Fixed.
+
+[!] Add-ons: Searchanise: The relevance-based sorting wasn't selected by default. Fixed.
+
+[!] Add-ons: Social buttons: Content with long description caused errors when publishing on Pinterest. Fixed.
+
+[!] Add-ons: Social login: The PayPal sandbox property wasn't set correctly. Fixed.
+
+[!] Add-ons: Suppliers: Supplier information was missing in shipments. Fixed.
+
+[!] Administration panel: Design: Styles of the category picker were improved.
+
+[!] Administration panel: Pagination: The total number of displayed items on a page was reset to the defaul number after an admin added or deleted an item. Fixed.
+
+[!] API: Features: Variant images weren't fetched. Fixed.
+
+[!] Block manager: Blocks were dragged during the AJAX request. Fixed.
+
+[!] Block manager: Blocks with special HTML characters in their names caused errors in the block manager. Fixed.
+
+[!] Block manager: Duplicate IDs were generated when a new dialog was created. Fixed.
+
+[!] Block manager: Grids that were extended lengthwise were displayed incorrectly in the admin area. Fixed.
+
+[!] Categories: Storefront: The "fn_load_products_extra_data" function returned all the product categories without filtering by company. Fixed.
+
+[!] Checkout: A PHP notice was displayed when the product in the order became out of stock during the order placement. Fixed.
+
+[!] Checkout: Basic theme: The Next step button was clickable. Fixed.
+
+[!] Core: Files: Files couldn't be uploaded, if the "post_max_size" parameter in php.ini had "0" value. Fixed.
+
+[!] Core: HTTPS detection was improved.
+
+[!] Core: Scripts: An empty Smarty "{scripts}" tag caused problems in inline scripts rendering. Fixed.
+
+[!] Core: Session: Reset password: The "fn_generate_key" function used an old algorithm for generating a random string. Fixed.
+
+[!] Database: Database queries failed, if a table prefix had numbers. Fixed.
+
+[!] DataKeeper: The memory limit error occurred when creating backup as the ".tgz" archive. Fixed.
+
+[!] DataKeeper: The new way of creating ZIP archives was implemented for only-database and only-files backups.
+
+[!] Design: Blocks: Currencies: Currency links were indexed by Google. Fixed.
+
+[!] Design: Layouts: Styles of the tabs were improved.
+
+[!] Design: Menu: Scroller arrows were displayed above the menu. Fixed.
+
+[!] Design: Menu: Subitems of the last menu item were displayed in one column. Fixed.
+
+[!] Design: Options: If a product had a lot of options, they were shown incorrectly on large displays. Fixed.
+
+[!] Design: RTL: RTL support for invoices and packing slips was added.
+
+[!] Design: Storefront: Short list: All the products were in the same form. Fixed.
+
+[!] Design: Styles of the restriction message were added and improved.
+
+[!] Design: The "Add to cart" button disappeared after a screen tap. Fixed.
+
+[!] Design: Unclosed tags appeared when there was only one active grid in a row. Fixed.
+
+[!] Emails: An email could not be sent to an email address that contained Cyrillic symbols. Fixed.
+
+[!] Exim: Features: Root directories weren't assigned to features during the import process. Fixed.
+
+[!] Exim: Procucts: Options: Global options were incorrectly updated. Fixed.
+
+[!] Exim: Product combinations: Value splitting was handled incorrectly for strings with a delimeter. Fixed.
+
+[!] Exim: Products: Features: Features that belonged to a hidden group weren't exported in the "Features" field of product export. Fixed.
+
+[!] Files: elFinder was updated.
+
+[!] Filters: Decimal numbers couldn't be used as filter values. Fixed.
+
+[!] Filters: Feature groups were displayed in the selectbox when creating a new filter. Fixed.
+
+[!] Filters: Products: The selected layout and sorting were cached incorrectly when selecting filter variants. Fixed.
+
+[!] JavaScript: Autofocus on mobile devices has been disabled.
+
+[!] JavaScript: File uploader: Files with spaces and special characters in their names were not downloaded. Fixed.
+
+[!] JavaScript: Modernizr was not defined. Fixed.
+
+[!] Languages: Translations: Translations of add-ons were exported incorrectly. Fixed.
+
+[!] Multi-Vendor: Add-ons: Gift certificates: Suborder that contained only free products from a gift certificate was not saved. Fixed.
+
+[!] Multi-Vendor: Products couldn't be found by product codes. Fixed.
+
+[!] Multi-Vendor: Promotions: Promotion conditions were checked incorrectly for orders that contained products from several vendors. Fixed.
+
+[!] Multi-Vendor: Promotions: Promotions with the free product bonus caused incorrect calculation of number of products for suborders. Fixed.
+
+[!] Multi-Vendor: There was no notice about HTML sanitization. Fixed.
+
+[!] Order management: Order details: Product price was shown incorrectly, if the price modifier was changed. Fixed.
+
+[!] Order management: Promotions: Options were not saved for free product with "any options". Fixed.
+
+[!] Order management: The invoice/credit memo label was not shown. Fixed.
+
+[!] Orders: A discount coupon code with special characters couldn't be removed from an order. Fixed.
+
+[!] Orders: Promotions: Promotions were not applied after reordering, if the order had promotions. Fixed.
+
+[!] Payments: Atos: A PHP error appeared during the payment process. Fixed.
+
+[!] Payments: Atos: Parameters passed to script were escaped incorrectly. Fixed.
+
+[!] Payments: eWAY: An order could not be placed via Internet Explorer because of the CVV length validation rule. Fixed.
+
+[!] Payments: It was impossible to go to the payment page with JavaScript disabled. Fixed.
+
+[!] Product pages: Fatal error with a punycoded referer occurred. Fixed.
+
+[!] Products: Categories: If products were shared with another storefront, they were not deleted together with the category of the first storefront. Now these products are moved to the trash category.
+
+[!] Products: Features: A value of the product feature with the Date type was limited to the company start year. Fixed.
+
+[!] Products: Features: There was no check if a feature was shared for the current company when opening the feature variant page. Fixed.
+
+[!] Products: Features: The status of the filter was not checked in case of the hash filter link generation. Fixed.
+
+[!] Products: Options: JavaScript function for option selection used the wrong value for unchecked checkbox options. Fixed.
+
+[!] Products: Options: Search: The default combination of a product was selected incorrectly. Fixed.
+
+[!] Products: Options: The default option variant was selected incorrectly for products on the product search results page. Fixed.
+
+[!] Products: Product position was calculated incorrectly. Fixed.
+
+[!] Products: Products could be added to cart without setting required options. Fixed.
+
+[!] Products: Search: Search results didn't show some products, if "Inventory tracking" was enabled and "Show out of stock products" was disabled. Fixed.
+
+[!] Profile: An empty non-required profile field of the "Data" type was auto-filled with the current date. Fixed.
+
+[!] Sales reports: Countries without states were not present in sales reports in particular cases. Fixed.
+
+[!] Search: Advanced search: The "Last week" period definition produced wrong dates. Fixed.
+
+[!] Stores: Regions: Users were not redirected properly to storefronts according to their regions. Fixed.
+
+[!] Styles: Styles of the Brightness style were improved.
+
+[!] Themes: Compatibility with old themes was fixed.
+
+[!] Upgrade center: The restore script couldn't be created on Windows servers because the filename contained semicolon. Fixed.
+
+[!] WISYWIG: Redactor: Lists didn't work properly when Redactor was located inside the table. Fixed.
+
+[!] {#5745} Multi-Vendor: Add-ons: Suppliers: A shipment couldn't be created for an order contained products from multiple vendors when "Allow multiple shipments" was enabled. Fixed.
+
+[!] {#5750} Add-ons: Reward points: Reward points were not present in the customer invoice email after the order status update. Fixed.
+
+[!] {#5780} Add-ons: Suppliers: Shippings were unavailable at checkout, if the "None" shipping method was disabled for a supplier, and "Display shipping methods to each supplier separately" was also disabled. Fixed.
+
+[!] {#5812} Add-ons: SEO: Checking for object uniqueness was improved.
+
+[!] {#5847} Add-ons: Gift certificates: The warning label was hardcoded instead of using a language variable. Fixed.
+
+[!] {#5849} Add-ons: Gift certificates: The page was not redirected when a customer removed the certificate from the cart total or checkout summary. Fixed.
+
+[!] {#5866} Multi-Vendor: Exim: Features: A vendor could create features through the import process. Fixed.
+
+[!] {#5884} Multi-Vendor: The error message was displayed when switching vendor for an object with a long description. Fixed.
+
+[!] {#5910} Upgrade center: The "var/langs" directory wasn't backed up during the upgrade process. Fixed.
+
+[!] {#5921} Products: Orders: A product that was not allowed for purchase could be ordered via the reorder functionality. Fixed.
+
+[!] {#5924} Design: Checkout: The apply arrow next to the coupon was replaced by the Apply link.
+
+[!] {#5931} Shippings: A shipping method could not be specified, if an order contained only free shipping products. Fixed.
+
+[!] {#5959} Payments: Surcharge: Taxes were calculated without surcharge after an order placement. Fixed.
+
+[!] {#5970} API: It was impossible to set an empty value for a setting. Fixed.
+
+[!] {#5981} Core: Images: Uppercase extensions weren't handled properly while checking for allowed file types. Fixed.
+
+[!] {#5993} Multi-Vendor: Exim: A vendor could create a category when importing products with secondary categories. Fixed.
+
+[!] {#5999} Blocks: My profile: Incorrect "return_url" was used after a user logged in. Fixed.
+
+[!] {#6002} Promotions: Coupon codes: Orders: A coupon was generated for every suborder. Fixed.
+
+[!] {#6010} Design: JavaScript: The ty-table-disable-convertation class didn't consider the "th" tag. Fixed.
+
+[!] {#6014} Design: Layouts: The fixed width worked incorrectly. Fixed.
+
+[!] {#6019} Add-ons: Attachments: Permission check could be performed only for products. Fixed.
+
+[!] {#6021} Currencies: Options: Styles of product options were fixed.
+
+[!] {#6028} Upgrade center: The "conflicts" field at "installed_upgrades" was too small that caused unserialization errors. Fixed.
+
+[!] {#6035} Upgrade center: The "set_time_limit" function call could trigger a PHP notice, that restricted the creation of the restore script. Fixed.
+
+[!] {#6036} Design: RTL: RTL support in the administration panel was improved.
+
+[!] {#6041} Products: The Save button didn't work in the products list in Internet Explorer. Fixed
+
+[!] {#6044} Checkout: The "Recalculate shipping cost" button is shown at checkout only when a user data is edited.
+
+[!] {#6051} Sales reports: An SQL error appeared, if the report was limited by certain orders. Fixed.
+
+[!] {#6056} Design: Tooltips: Tooltip positioning was incorrect. Fixed.
+
+[!] {#6078} Add-ons: Call requests: The pagination didn't work correctly. Fixed.
+
+[!] {#6087} Add-ons: Social login: Not all the profile fields were requested when signing in via Facebook. Fixed.
+
+[!] {#6091} Payments: Servired: Payment request had the deprecated structure and signature. Fixed.
+
+[!] {#6112} Design: Add-ons: Call requests: The second part of a phone number was not displayed on iOS. Fixed.

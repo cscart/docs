@@ -1,0 +1,97 @@
+***********************
+CS-Cart 4.3.2 Changelog
+***********************
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: Gift certificates: Ability to apply a gift certificate with free products to empty cart added.
+
+[*] API: DELETE-request: Response format changed. If the request is successful, the response has "status 204".
+
+[*] Core: PHP fatal errors are now being caught—the "Service unavailable" page will appear in case of a fatal error.
+
+[*] Core: PHP non-fatal errors, warnings and notices are being caught and properly formatted now (in development mode only).
+
+[*] Filters: Ability to show product filters on the home page added.
+
+[*] Shippings: UPS: Ability to use the Delivery confirmation option for a package added.
+
+[*] Users: The "Act of behalf" functionality is available for store admins now.
+
+========
+Bugfixes
+========
+
+[!] Add-ons: Blog: If a blog had over 50 posts, the list of posts was not loaded in the admin panel. Fixed.
+
+[!] Add-ons: Call requests: If several Call requests blocks were added to the storefront, they worked incorrectly. Fixed.
+
+[!] Add-ons: Searchanise: Search in the storefront didn't work with the Searchanise add-on enabled. Fixed.
+
+[!] Add-ons: SEO: Canonical URL didn't lead to first page, if pagination was used. Fixed.
+
+[!] Add-ons: SEO: Categories: Multi-Vendor: Category deletion caused database error. Fixed.
+
+[!] Add-ons: Social login: When a user signed in via the Facebook account, a facebook login permissions error occured. Fixed.
+
+[!] Backup: DataKeeper: Path to backup files was wrong. Fixed.
+
+[!] Backup: There was no ability to upload a new backup file, if the "backups" folder was not created beforehand. Fixed.
+
+[!] Currencies: Exchange rates were not visible when HTTPS was used. Fixed.
+
+[!] Currencies: Hidden currency was used in the order search form in a customer's profile. Fixed.
+
+[!] Design: If there was only one block on the page, the page title was used as the block title. Fixed.
+
+[!] Design: On-site template editing: The restore template functionalty restored templates from the basic theme. Fixed.
+
+[!] Design: Product filters: The filters expand icon didn't change on mobile devices when a user hid and expanded filters. Fixed.
+
+[!] Design: Product tabs: The Description tab was displayed, if the description wasn't specified. Fixed.
+
+[!] Exim: Option variants that had non-integer numbers exported incorrectly. Fixed.
+
+[!] Exim: Product images: company_id wasn't taken into account during export. Fixed.
+
+[!] Exim: Products: A PHP error appeared during import, if the 'update_only' flag was used in the scheme. Fixed.
+
+[!] Hooks: Some of the hooks didn't work when the "fn_set_hook" call was performed at an add-on's "init.php" file. Fixed.
+
+[!] Javascript: The "TypeError: moment is not a function" error appeared randomly. Fixed.
+
+[!] Languages: Invoices: Language variable was wrong. Fixed.
+
+[!] Locations: Chosen country/state was visible in the list of all available countries/states on the Editing location page. Fixed.
+
+[!] Orders: Re-pay: Basic theme: Selected payment templates weren't being loaded when changing the payment method. Fixed.
+
+[!] Payments: PayPal Pro: The "pp_product_count_is_incorrect" error message appeared, even if the transaction was successful. Fixed.
+
+[!] Payments: PayPal: Transaction id, payer id and payer email information was not saved. Fixed.
+
+[!] Products: Search: Products with option combinations couldn't be found using search form at the customer area when the "Show out of stock products" setting was disabled. Fixed.
+
+[!] Promotions: Cart: Information about applied promotions wasn't displayed on the cart details page, if the Gift certificated add-on was disabled. Fixed.
+
+[!] Security: SSL check wasn't executed when enabling secure connection for admin/storefront. Fixed.
+
+[!] Shippings: The Configure tab was not updated when changing the carrier. Fixed.
+
+[!] {#5672} Add-ons: Comments and reviews: The Write a review popup didn't appear on a product details page on mobile devices. Fixed.
+
+[!] {#5698} Add-ons: Wish List: The Add to wish list button didn't work with enabled "Sign up for notification" setting. Fixed.
+
+[!] {#5699} Add-ons: RSS: Timestamp was generated incorrectly, if RSS was generated for an empty category. Fixed.
+
+[!] {#5701} Promotions: Orders: Multi-Vendor: Promotion based on the number of products in the order wasn't applied correctly, if the cart had products of different vendors. Fixed.
+
+[!] {#5712} Design: Product filters: Horizontal filters were displayed incorrectly. Fixed.
+
+[!] {#5716} Blocks: Scroller: Product scroller worked incorrectly. Fixed.
+
+[!] {#5731} Core: Less: base64-encoded images were handled incorrectly when translating LESS to CSS. Fixed.
+
+[!] {#5763} Design: Products: Thumbnails gallery: Thumbnail height was calculated incorrectly on a product details page. Fixed.

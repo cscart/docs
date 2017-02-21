@@ -1,0 +1,181 @@
+***********************
+CS-Cart 2.1.1 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Ajax requests are now cached when changing product options.
+
+[+] The "Ship to different address" check box was added to the profile registration page in the customer area.
+
+[+] New implementation of Winbank payment processor was added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] The AREA prefix was added to the "dispatch", "user" and "locale_auth" cache levels to avoid intersection between the customer and admin areas.
+
+[*] Cache subsystem was improved: It is now possible to use different types of cache storage (file, sqlite, mysql, shared memory).
+
+[*] GeoIP database was updated.
+
+[*] If the form has class "cm-disable-empty" or "cm-disable-empty-files", the unnecessary input fields and the empty input fields with type "file" are no longer passed to the server.
+
+[*] Languages: The values for the "declined_products_information" and "return_products_information" language variables were corrected.
+
+[*] The confusing description for Moneybookers was corrected.
+
+[*] The possibility to edit properties of Central content group on the product editing page was removed.
+
+[*] A separate script to restore the store if the upgrade fails was added.
+
+[*] Shortcut links were updated.
+
+[*] Text body will be sent to manually added users if HTML body is empty.
+
+[*] The displaying of the Group block on the Block manager page was corrected.
+
+[*] The displaying of the PDF invoice was corrected.
+
+[*] The manage link for a block with assigned objects was changed. Now the link leads to objects with such block enabled.
+
+[*] Vendor/Supplier name, instead of the ID number, is now included in the exported product data.
+
+[*] New option type - "Template" - was added to add-ons.
+
+[*] The "Notify supplier" setting was restored.
+
+[*] Ability to change the user account language for the root admin was added.
+
+[*] The "params" parameter has been added to the "get_shipments" hook.
+
+[*] The Supplier field was returned to the products multiple update page.
+
+[*] Recently viewed block contents are now sorted by the most recently viewed products.
+
+========
+Bugfixes
+========
+
+[!] The "Clear list" button on the products comparison page led to a non-existing page. Fixed.
+
+[!] After the search was performed on the Product search page in the Admin area, the value selected in the "Search by supplier" select box was reset. Fixed.
+
+[!] PHP fatal error occurred in non-Apache environments. Fixed.
+
+[!] In the admin area on the Product search page, the advanced_filter parameter appeared twice if advanced search options were used. Fixed.
+
+[!] Automatically generated thumbnails did not display on the product feature page. Fixed.
+
+[!] A backtick character appeared in the name of a link between the domain name and index.php. Fixed.
+
+[!] Block manager: It was impossible to enable/disable a block for this page in the products block area if HTTPS was enabled in the admin area. Fixed.
+
+[!] Changing block properties for a single location changed properties for all locations. Fixed.
+
+[!] Empty feature comparison block could be displayed if the mainbox-general and mainbox-simple wrappers were used. Fixed.
+
+[!] The Suppliers drop-down box on the Products page in the admin area was empty. Fixed.
+
+[!] Exim scheme was processed incorrectly if the scheme contained a zero-valued parameter. Fixed.
+
+[!] The Feature comparison block did not appear dynamically when enabled. Fixed.
+
+[!] Files could not be sent to some servers. Fixed.
+
+[!] "C:\fakepath\" was displayed on the file upload page when using browsers IE7, IE8 and Opera. Fixed.
+
+[!] Hot deals add-on: Thumbnails were not generated automatically from a product detailed image. Fixed.
+
+[!] If a product had a quantity step value, the qty select box selector showed the max available value. Fixed.
+
+[!] If the "Display In stock as a field" option was enabled, the out-of-stock information was not displayed on the product details page in the customer area. Fixed.
+
+[!] Notification of incorrect file upload size was displayed even if the file size fit within the limit. Fixed.
+
+[!] Most recently viewed products might be missing in the "Recently Viewed" block. Fixed.
+
+[!] Old "Site layout" link was displayed. Fixed.
+
+[!] Options with the "file" type were overridden after other product options were changed. Fixed.
+
+[!] PHP warning was displayed when editing old orders. Fixed.
+
+[!] Price in points was calculated incorrectly on the product details page. Fixed.
+
+[!] Product names, product options and option modifiers were not saved in the order data for the RMA add-on module. Fixed.
+
+[!] Product names, product options and option modifiers were not saved in the order data. Fixed.
+
+[!] Product thumbnails were not displayed in the product block with type "Product grid" if products had a detailed image only. Fixed.
+
+[!] The "Time-unlimited download" option could not be switched off for products. Fixed.
+
+[!] Quick menu: The "Site layout" link in Quick menu redirected users to a non-existing page. Fixed.
+
+[!] Recently Viewed block: Recently viewed product might not be displayed after it was viewed for the second time. Fixed.
+
+[!] Redirection to an HTTP resource caused the cart to misbehave if HTTPS was enabled in the admin section. Fixed.
+
+[!] The "Regenerate thumbnails" check box was displayed on the product global update page. Fixed.
+
+[!] Reward points: Customer was not able to gain more than 8388607 reward points. Fixed.
+
+[!] Sage pay direct: Non-unique transaction IDs caused errors. Fixed.
+
+[!] Send feedback functionality: Wrong settings were sent. Fixed.
+
+[!] Session cookies were not passed to the store if an IP address was used as the host name. Fixed.
+
+[!] Statistic charts were not displayed after switching between graphic types. Fixed.
+
+[!] Template override: Cached templates were used both for the customer and admin areas. Fixed.
+
+[!] PHP warning was displayed on the product options editing page. Fixed.
+
+[!] The block manager page was scrolled up to top in the Firefox browser after moving a block. Fixed.
+
+[!] If product options did not have a price modifier, images for option variants of a product did not change the style when the options were changed. Fixed.
+
+[!] Incorrect "Out of stock" label was displayed in the product blocks if the product tracking was specified as "Track with options". Fixed.
+
+[!] Product thumbnail was not resized proportionally if the width and height values were specified in the admin area. Fixed.
+
+[!] Values of the "Text" and "Textarea" product options were not displayed at the fourth checkout step. Fixed.
+
+[!] The "Add to cart" button did not work in the "Without images" product block. Fixed.
+
+[!] Automatically generated thumbnails did not display in the product picker in the customer area. Fixed.
+
+[!] Empty feature comparison block could be displayed after the comparison list had been cleared and the visitor had navigated to another page or refreshed the current one and if the mainbox-general & mainbox-simple wrappers had been used for the block. Fixed.
+
+[!] Old title was displayed in the categories block with the mainbox wrapper. Fixed.
+
+[!] International filenames of the files that were uploaded from the server's file system were chunked (aaa_bbb_ccc.zip => _bbb_ccc.zip). Fixed.
+
+[!] New user could not be added if the country field was disabled. Fixed.
+
+[!] Pages tree was not displayed after clicking the "Save and close" button on the "Editing page" page. Fixed.
+
+[!] Price list add-on: If the inventory option value is equal to "Track with options", the product amount was displayed incorrectly in the price list. Fixed.
+
+[!] Wishlist add-on: The Gift certificates free product options were displayed incorrectly on the wishlist cart page. Fixed.
+
+[!] Wrong link in the Activate profile mail was corrected.
+
+[!] Wrong link in the manufacturer list was corrected.
+
+[!] Wrong message was displayed after attempting to add an existing language code. Fixed.
+
+[!] Admin/Export data/Products: PHP notices were displayed while exporting Image URL. Fixed.
+
+[!] URLs of automatically generated thumbnails were not included in the Google Base export feed. Fixed.
+
+[!] Google images did not index images in the store. Fixed.
+
+[!] Pages tree was not displayed after clicking the "Create and close" button on the 'New page' page. Fixed.
+
+[!] When removing an object from the cscart_block_links table, the information related to this object was not removed. Fixed.

@@ -1,0 +1,163 @@
+************************
+CS-Cart 2.0.15 Changelog
+************************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Paypal Express Checkout: Authentication by API signature was added.
+
+[+] Paypal: The ability to save customer notes was added.
+
+[+] The ability to import/export products with a different decimal separator in prices was added.
+
+[+] The ability to import/export quantity discounts with a different decimal separator in prices was added.
+
+[+] Russian regions were added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Buy together add-on: The style of the "added products" notification was changed.
+
+[*] Buy together add-on: The product link on the order details page in the admin area was corrected.
+
+[*] In-stock information is no longer displayed for products that have combinations and for which the "track with options" option is enabled.
+
+[*] Now it is possible to clear the cache only from the admin panel.
+
+[*] Payments: The credit card validator was corrected.
+
+[*] Paypal Express Checkout: The information on the paypal payment page was corrected.
+
+[*] Product configurator add-on: The style of the "added products" notification was changed.
+
+[*] Shipping: The list of the US dependent territories was corrected.
+
+[*] USPS: Names of USPS services were corrected.
+
+[*] The unnecessary code was removed from the categories layouts templates.
+
+[*] The cm-phone microformat was removed from the profile because of users' complaints.
+
+[*] Brickwork skinset: The displaying of the drop-down menu in IE6 browser was corrected.
+
+[*] The displaying of the option combination images was updated.
+
+[*] The "products:product_block" hook name in the "one_product.tpl" file was renamed to "products:one_product".
+
+[*] Swisspost: Rates for swisspost shipping were updated.
+
+[*] The Versus payment was renamed to Sage Payment Solutions.
+
+[*] Danish language pack updated.
+
+[*] Romanian language pack updated.
+
+[*] Russian language pack updated.
+
+========
+Bugfixes
+========
+
+[!] 2checkout payment service: Shipping address was sent incorrectly. Fixed.
+
+[!] An SQL error occurred if incorrect values were specified for the product parameters during the global products update. Also the product quantity was updated in relative value instead of absolute value. Fixed.
+
+[!] Assist payment processor: Client data was sent in the wrong encoding. Fixed.
+
+[!] Captcha could be bypassed if the user registered at checkout. Fixed.
+
+[!] Chronopay form payment processor did not work because new payment requirements were not yet established on our side. Fixed.
+
+[!] The date picker did not work at checkout. Fixed.
+
+[!] Eway XML payment: Some successful transactions were marked as failed. Fixed.
+
+[!] Eway payment: Some successful transactions were marked as failed. Fixed.
+
+[!] Exim: If the name of the main file and the name of the preview file for downloadable products were the same during the import, the name of the main file was overwritten by that of the preview file. Fixed.
+
+[!] Gift certificates add-on: Free products disappeared after editing the order in the admin area. Fixed.
+
+[!] Gift certificates add-on: The list of the free gift certificate products was not sent to the customer if the certificate was created through the admin area. Fixed.
+
+[!] Google Checkout: If some taxes had the price includes tax option enabled, the shippings were calculated incorrectly. Fixed.
+
+[!] Orders: The payment data did not disappear when the user repaid the order using a payment method without any payment data.
+
+[!] Paypal Express Checkout: The customer could place an order using an unverified shipping address. Fixed.
+
+[!] Paypal Express Checkout: Repay order functionality did not work for Paypal Express Checkout. Fixed.
+
+[!] Paypal payment service: Payer email was not saved in the payment information. Fixed.
+
+[!] Paypal: The address of any customer from the USA could not be transferred through the PayPal payment form. Fixed.
+
+[!] Paypal: Some successful transactions were marked as failed. Fixed.
+
+[!] The pickers were displayed with the saved search parameters. Fixed.
+
+[!] Product configurator add-on: The configurable product had a double price on the Google checkout page. Fixed.
+
+[!] Product filters: Some of the variants for range filters were not displayed in the customer area if some values were already defined for the other filters. Fixed.
+
+[!] Product search: Search by product features did not display in the advanced products search if no product filter was defined. Fixed.
+
+[!] Products were displayed in reverse order in the cart status pop-up window. Fixed.
+
+[!] If product quantity was changed to zero, products were not removed from the cart after the cart was updated. Fixed.
+
+[!] Recurring billing add-on: The subscription plan was always attached to a product after updating the cart even if this product was added without the subscription plan. Fixed.
+
+[!] Reward points add-on: An incorrect record was saved in the reward points logs when placing an order. Fixed.
+
+[!] SMS add-on: Sms about the low-stock notification was not sent. Fixed.
+
+[!] SagePay: Not all Card Types were passed correctly by the SagePay direct payment. Fixed.
+
+[!] Shipments: In IE browsers, the shipment picker was submitted when clicking on any place of this picker. Fixed.
+
+[!] Shipping: The rates for Samoa for USPS shipping were calculated incorrectly. Fixed.
+
+[!] The "previous year" condition in the orders advanced search was incorrect. Fixed.
+
+[!] The User group setting for products and categories disappeared after the "bulk edit" action was called for.
+
+[!] The redirection to the links containing only http_location was performed incorrectly. Fixed.
+
+[!] There was no ability to buy a product without a subscription if the product had a buy together combination. Fixed.
+
+[!] There was no ability to view "Downloads" through the "Track my order" system. Fixed.
+
+[!] The Winbank payment was processed incorrectly. Fixed.
+
+[!] A downloadable product could be added to cart from any products list lots of times. Fixed.
+
+[!] Buy together add-on: The JS error was displayed on the product details page if the product had reward points. Fixed.
+
+[!] Options exceptions: the JS error was displayed on the product details page in the customer area if the options exceptions used the "disregard" condition and the "radio group" option. Fixed.
+
+[!] Orders search: Gross total and paid total were calculated incorrectly if the "search by ordered products" condition was used. Fixed.
+
+[!] Product configurator add-on: the configurable product had a double price on the Google checkout page. Fixed.
+
+[!] Product configurator add-on: the price was calculated incorrectly if one of the configurable components had a zero price. Fixed.
+
+[!] Products list was displayed incorrectly when "Original thumbnail size" was used. Fixed.
+
+[!] The redirection from https to http was incorrect for the cms pages. Fixed.
+
+[!] SEO: Product URL was rewritten incorrectly when the category had the "+" sign in the name. Fixed.
+
+[!] SEO: Some static rules was rewritten incorrectly. Fixed.
+
+[!] SEO add-on: When being edited, the SEO name was different for different languages despite the "Use single URL for all languages" option being enabled. Fixed.
+
+[!] The "Add to Wishlist" button was hidden if the option combination had zero amount. Fixed.
+
+[!] The product list template did not use the block prefix variable. Fixed.
+
+[!] A warning was displayed when PHP 5.3 was used. Fixed.

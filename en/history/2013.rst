@@ -1,0 +1,641 @@
+************************
+CS-Cart 2.0.13 Changelog
+************************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Global options: pagination added to the Administration panel.
+
+[+] New tweak variable 'disable_ajax_preload' added. Is used to disable Ajax pre-loading to speed up the performance of the Administration panel.
+
+[+] PayPoint: Ability not to use delayed payments added.
+
+[+] Recurring billing addon: Ability to buy product without subscription added.
+
+[+] Reward points: ability to use reward points rules with the zero values added.
+
+[+] Ability to sort the currency list added.
+
+[+] New skin added ("Just").
+
+[+] New skin added ("Yellow-blue").
+
+[+] New template for creating product details page added.
+
+[+] ASSIST payment service added.
+
+[+] DIBS payment service added.
+
+[+] Gate2Shop payment service added.
+
+[+] iTransact payment service added.
+
+[+] WebMoney payment service added.
+
+[+] Translations for Danish, Romanian and Slovenian added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Ability to define category delimiter added to the fn_get_categories function.
+
+[*] Administration panel: "input-text" class added to the Profile name field on the user profile page.
+
+[*] File storage was improved.
+
+[*] Austere skin: background image for the tabs panel added.
+
+[*] Field autocompletion for customer credit card data was disabled.
+
+[*] Buy together addon: Rounding works through the fn_format_price function now.
+
+[*] Buy together addon: Ability to change prices for the product combinations added.
+
+[*] Buy together addon: Number of product items in a product combination now depends on the number of items of the combination's parent product.
+
+[*] Buy together addon: Price calculation on the order management page improved.
+
+[*] Buy together addon: Product amount calculation in the customer area was corrected.
+
+[*] Canada post shipping processor improved.
+
+[*] Character translation rules used to generate URL-safe filenames updated.
+
+[*] Checking parameter permissions was simplified.
+
+[*] Database: fn_get_table_fields function was optimized.
+
+[*] Debitech payment service was removed as obsolete.
+
+[*] EditArea scripts were updated to the latest version.
+
+[*] Session management algorithm was improved.
+
+[*] Hooks: get_product_options hook parameters were extended.
+
+[*] Image verification: autocomplete of the text input field was disabled.
+
+[*] Large file importing was improved.
+
+[*] List price calculation was changed. Taxes are no longer included into the discounted list price.
+
+[*] Missing language variable "editing_title" added.
+
+[*] Moneybookers payment service: using the shopping cart logo on the merchant page is optional now.
+
+[*] New hooks added: mail send function and page's children pages in the customer area.
+
+[*] Missing administrative areas for the UK added.
+
+[*] Notice of the Moneybookers' secret word added.
+
+[*] Notification rules were changed for Moneybookers, Paypoint, Servired and Thaiepay payment services.
+
+[*] Ogone payment service: Order total checkup was added.
+
+[*] Order management: Checkout step for shipping info is now skipped if there are no active shipping methods.
+
+[*] PayPal Pro payment service: URL for the request with signature was changed.
+
+[*] Permissions for objects' "delete" link added.
+
+[*] Permissions for the "View catalog" privilege were corrected.
+
+[*] Permissions for the "tools" controller added.
+
+[*] Permissions scheme was extended.
+
+[*] Privileges for the Gift Registry and Statistics addons were updated.
+
+[*] Product code added to the supplier invoice template.
+
+[*] Product filters: Products search was sped up.
+
+[*] Product options inventory: Hook was added.
+
+[*] Rating icons were changed.
+
+[*] Recurring billing: Size of the price field was expanded.
+
+[*] File robots.txt was updated.
+
+[*] Russian translation was updated.
+
+[*] SEO addon: Permissions for SEO rules added.
+
+[*] Sales reports: Totals calculation was added to the table mode.
+
+[*] Search conditions for advanced search form were updated.
+
+[*] Server file browsing: File selector displaying style was changed.
+
+[*] Servired payment service: Deprecated code removed.
+
+[*] Shipments: Ability to print package slips even if shipments are disabled was added.
+
+[*] Shipments: Date format was changed.
+
+[*] Shipments: Access permissions were added.
+
+[*] Size of Price fields was expanded.
+
+[*] Smarty "wordwrap" modifier was improved.
+
+[*] Storefront: Displaying product thumbnails was corrected.
+
+[*] Tags addon: Hook for the action tools list was added to the manage tags page.
+
+[*] "change_order_status" hook and the "fn_promotion_post_processing" function are now activated after product processing in the "fn_change_order_status" function.
+
+[*] "promotion_cond_total" language variable was changed.
+
+[*] The "total" promotion condition was changed to "subtotal".
+
+[*] Northern Mariana Islands was added to the list of the US states.
+
+[*] One page checkout: Save button at the Shipping Method step was renamed to "Continue".
+
+[*] Displaying buttons on detailed pages for configurable products and subscription-based products was corrected.
+
+[*] Displaying the Hot deals block in IE6 was corrected.
+
+[*] Displaying Invoice notes was corrected.
+
+[*] Displaying the Products grid list was corrected.
+
+[*] Displaying the Sign In pop-up in IE was corrected.
+
+[*] Displaying the Sorting tool in IE and Opera was corrected.
+
+[*] Displaying the Sorting tool was corrected.
+
+[*] Displaying the Statistic list was corrected.
+
+[*] Displaying the Tabs header in IE was corrected.
+
+[*] Displaying buttons in the Tags tab on a product details page in IE was corrected.
+
+[*] Displaying buttons in the Tags tab on a product details page was corrected.
+
+[*] Displaying buttons in IE6 was corrected.
+
+[*] Displaying headers in the Tabs list was corrected.
+
+[*] Displaying lists in the Tabs list was corrected.
+
+[*] Displaying mini thumbnails on a product details page in Google Chrome was corrected.
+
+[*] Displaying prefix and suffix for product features on a product details page in the Administration panel was corrected.
+
+[*] Image gallery for mini thumbnails was added to a product details page.
+
+[*] Layout of a news details page was corrected.
+
+[*] New lists types were added to the block manager.
+
+[*] Product options and quantity selector on a product lists were hidden for subscription-based products.
+
+[*] The product search in the customer are was improved.
+
+[*] Slovenian translation was updated.
+
+[*] Unused field "min_amount" was removed from the database and the code.
+
+[*] Obsolete CSS classes were removed.
+
+[*] Values of language variables were edited.
+
+[*] UTF-8 support improved.
+
+[*] Wishlist addon: Ability to store wishlists of unauthorized users added.
+
+[*] Year value in the copyright notes was updated.
+
+[*] Tooltips functionality was added to the customer area.
+
+[*] Predefined search filters slowed down SQL subqueries. Fixed.
+
+[*] Attachments: File storage was improved.
+
+[*] Buy together addon: Unused variables were removed.
+
+[*] Hooks: Hooks for customer quick links added.
+
+[*] Italian language pack updated.
+
+[*] Low-stock notification: Product code added to the message.
+
+[*] Order prefix added to the order number in the iTransact payment system.
+
+[*] Price formation functionality was changed.
+
+[*] Product filters: Products search was sped up.
+
+[*] Support for PHP 5.3 was improved. E_DEPRECATED warnings are not displayed now.
+
+[*] Edit subscription button was standardized.
+
+[*] Print card button was standardized.
+
+[*] Displaying the Quantity discounts table was corrected.
+
+[*] Displaying the Shopping options block in IE was corrected browsers.
+
+[*] Upgrade center updated.
+
+========
+Bugfixes
+========
+
+[!] Global options: Sorting by position did not work in Administration panel. Fixed.
+
+[!] Access restrictions: Access restrictions addon demanded the update_settings privilege instead of manage_access_restrictions. Fixed.
+
+[!] Addons management: Templates were copied to (installation) or removed from (uninstallation) the current skin files only. Fixed.
+
+[!] Administration panel: Search views were initialized incorrectly. Fixed
+
+[!] Advanced search box did bot display if the SEO addon was enabled. Fixed.
+
+[!] Sending emails to several addresses caused an error. Fixed.
+
+[!] Information about the product popularity was not removed together with the product. Fixed.
+
+[!] Approved user groups did not applied to a logged customer. Fixed.
+
+[!] Authorize.net payment service: A PHP notice was displayed. Fixed.
+
+[!] Banners and statistics: Similar links in text banners were replaced incorrectly. Fixed.
+
+[!] Banners: Smarty error was displayed. Fixed.
+
+[!] Bestsellers: Sold product amount was not updated for secondary categories after editing the order. Fixed.
+
+[!] Block content was not cloned during objects cloning. Fixed.
+
+[!] Block links were not removed together with the corresponding object. Fixed.
+
+[!] Block manager: Delete block button did not work in Google Chrome. Fixed.
+
+[!] Block manager: Blocks could not be moved correctly in IE7. Fixed.
+
+[!] Block manager: Removing objects caused slow SQL subqueries. Fixed.
+
+[!] Buy together addon: Deleting a product combination caused an error. Fixed.
+
+[!] Buy together addon: If a product from a combination became unavailable during the checkout or by the moment of a reorder, the combination was added to the cart without the product. Fixed.
+
+[!] Buy together addon: Combination cost was calculated incorrectly if any of the included products had a discount promotion. Fixed.
+
+[!] Buy together addon: Combination cost was displayed incorrectly on the order details page in the customer area. Fixed.
+
+[!] Buy together addon: Discount was rounded incorrectly. Fixed.
+
+[!] Buy together addon: Error notifications were displayed when adding a combination with out-of-stock products. Fixed.
+
+[!] Buy together addon: Main product could be added with the default options only. Fixed.
+
+[!] Buy together addon: A PHP error was displayed when trying to add a subscription-based to a product combination. Fixed.
+
+[!] Category selector: Ajax-based update of the category list set wrong name for the checkbox. Fixed.
+
+[!] Change order status: An error did not appear when an order status was changed to backordered because of the first product in the list. Fixed.
+
+[!] Clone product: File attachment were not cloned. Fixed.
+
+[!] DPS Access payment service: Duplicate notifications to customers and the order department. Fixed.
+
+[!] DPS Access payment service: "script_url" variable contained an incorrect value. Fixed.
+
+[!] Discounts and coupon values were not reflected in the statistics. Fixed.
+
+[!] Comments and reviews addon: Incorrect view permissions for the guestbook page. Fixed.
+
+[!] EDP files: A file could be downloaded with a key generated for a different file. Fixed.
+
+[!] EDP product files: Different files with coinciding names could not be assigned to a product. Fixed.
+
+[!] Eway XML payment service: Successful payments could be processed as failed. Fixed.
+
+[!] Data import: SE-friendly names generated for imported objects could include invalid characters. Fixed.
+
+[!] File uploading: Cloned images had incorrect attributes. Fixed.
+
+[!] Form builder addon: A check box to classify the field as mandatory did not appear for the new separator and header fields.
+
+[!] Gift certificates addon: Unexpected email notifications were sent when the order status was changed. Fixed.
+
+[!] Gift certificates addon: A PHP error was displayed when there was an attempt to edit an order containing free product. Fixed.
+
+[!] Google Checkout: Shipping cost was calculated incorrectly for orders with a zero tax rate. Fixed.
+
+[!] Google Checkout: Taxes were calculated for the selected shipping method only. Fixed.
+
+[!] Google Checkout: Default shipping rates were not sent to the Google Checkout page. 
+Fixed.
+
+[!] Hidden profiles fields were displayed on the detailed orders page. Fixed.
+
+[!] Hot deals block addon: Placeholder images were displayed incorrectly. Fixed.
+
+[!] Hot deals block addon: Block contained duplicate category names. Fixed.
+
+[!] Hot deals block addon: Product item container had a zero width if there was no information. Fixed.
+
+[!] Hot deals block: Category name was not displayed if a product had secondary 
+categories. Fixed.
+
+[!] If all products in an order had free shipping, it was impossible to create a shipment. Fixed.
+
+[!] Out-of-stock label displayed incorrectly for products with a zero price if inventory tracking was disabled. Fixed.
+
+[!] If the general meta description contained Cyrillic symbols, product-specific meta description was replaced with the default meta description. Fixed.
+
+[!] When the status of an order containing out-of-stock products to "Complete" was changed to complete, the status was displayed incorrectly and no notification was sent. Fixed.
+
+[!] Images were copied/created with broken permissions.
+
+[!] Product lists contained incorrect product IDs. Fixed.
+
+[!] Products with the Japanese names did not appear in the sales report. Fixed.
+
+[!] Languages: Default languages settings could not be applied. Fixed.
+
+[!] Links in the quick menu were displayed incorrectly with the renamed administrator index file. Fixed.
+
+[!] Life time of permanent cookies was calculated incorrectly. Fixed.
+
+[!] Locations: Shipping cost could not be calculated correctly if a location included a country with no states and states belonging to a different country.
+
+[!] Locations: Wildcards did not work correctly with names that use the UTF-8 character encoding. Fixed.
+
+[!] Automatic meta descriptions were generated incorrectly from the full product description. Fixed.
+
+[!] Meta descriptions: Generated HTML used incorrect character encoding. Fixed.
+
+[!] Meta descriptions: Length of Cyrillic meta words was calculated incorrectly. Fixed.
+
+[!] Moneybookers payment service: Payment currency was overridden with the base store currency in some cases. Fixed.
+
+[!] News and emails addon: Mailing lists did not appear on the checkout and registration pages if one page checkout was disabled. Fixed.
+
+[!] News and emails addon: Autoresponders were not sent automatically. Fixed.
+
+[!] The system sent duplicate notifications to customers and the order department when a payment was processed. Fixed.
+
+[!] Ogone payment service: Successful transactions could be marked as failed. Fixed.
+
+[!] Option variants: There was no ability to delete all option variants in the Administration panel. Fixed.
+
+[!] Order invoice: An error was displayed if the PDF library did not have some fonts. Fixed.
+
+[!] Order management: Discount column did not appear if the "Discount on all products in categories" promotion was applied. Fixed.
+
+[!] Order management: Payment section was hidden if there were no shipping rates. Fixed.
+
+[!] Order management: Trying to edit a product option with a zero inventory or add a product combination of a zero worth caused a PHP error.
+
+[!] Order management: Shipping condition was calculated for the last ordered product only. Fixed.
+
+[!] Order management: Shipping section did not appear if there were no shipping rates defined although shipping was required. Fixed.
+
+[!] PCI compliance: Administrators could not change their password without a permission to manage users. Fixed.
+
+[!] Pagination: Incorrect page IDs (negative or zero) appearing in a URL could not be processed and caused an error. Fixed.
+
+[!] Pagination: Number of items were not updated when an item was deleted. Fixed.
+
+[!] Paypal payment service: Some phone numbers were displayed incorrectly on the Paypal merchant page. Fixed.
+
+[!] Paypal payment service: Australian phone numbers were displayed incorrectly on the paypal merchant page. Fixed.
+
+[!] Paypal payment service: Redirection to the cart always occurred through the HTTP protocol. Fixed.
+
+[!] Paypal payment service: Total amount was not checked up the response of the payment service. Fixed.
+
+[!] Price list addon: Not all products could be exported. Fixed.
+
+[!] Price list addon: Products were sorted incorrectly. Fixed.
+
+[!] Product configurator addon: Out-of-stock products could be selected. Fixed.
+
+[!] Product configurator addon: Label indicating that the taxes are included did not appear even with the corresponding option activated. Fixed.
+
+[!] Product data elements were generated incorrectly. Fixed.
+
+[!] Product features: With bulk update, product features in the Administration panel were saved incorrectly. Fixed.
+
+[!] Product features: With bulk update, prefixes and suffixes were not displayed in the Administration panel. Fixed.
+
+[!] Product filters: All ranges could not be deleted. Fixed.
+
+[!] Product import: Number of products in the categories was updated incorrectly. Fixed.
+
+[!] Product selector: "Sort by" and "View as" controls did not work in the customer area. Fixed.
+
+[!] Product search: "Product names" check box was always selected with the empty search pattern and other check boxes unselected. Fixed.
+
+[!] Products global update: Alternative image descriptions were removed if 'Regenerate thumbnails' option was enabled for updated products. Fixed.
+
+[!] Products update: Taxes did not appear when the "Display prices with taxes on category/product pages" option was activated. Fixed.
+
+[!] Promotions: Empty conditions and bonuses were displayed incorrectly. Fixed.
+
+[!] Quickbooks: Orders containing Gift certificates were exported incorrectly. Fixed.
+
+[!] Recurring billing addon: "Add to wish list" and "Add to compare list" buttons did not appear in the product lists for the subscription-based products. Fixed.
+
+[!] Recurring billing addon: Reward points were calculated incorrectly for subscription-based products when switching to the product details page. Fixed.
+
+[!] Recurring billing addon: Subscription was added to the product after order editing. Fixed.
+
+[!] Recurring billing addon: Customer got assigned to a user groups regardless of the subscription order status. Fixed.
+
+[!] Reward points addon: Incorrect records were saved in the reward points logs after an order was placed. Fixed.
+
+[!] Duplicate calculation of reward points for configurable products. Fixed.
+
+[!] Reward points: Default reward points settings were applied if the overridden points were set to zero. Fixed.
+
+[!] SEO addon: Languages selector was still available in the html catalog if 'Show language in the URL' setting was disabled. Fixed.
+
+[!] SEO addon: Wrong base href was generated. Fixed.
+
+[!] SMS notification addon: A PHP error was displayed when there was an attempt to place an order without shipping. Fixed.
+
+[!] Sales reports: With a random period starting not from the beginning of the month, results be month were displayed incorrectly. Fixed.
+
+[!] Sales reports: Category sales also included child categories statistics. Fixed.
+
+[!] Sales_reports: Field "Date range" was displayed, but not used. Fixed.
+
+[!] Scroller: Page could not be scrolled down when large files were imported. Fixed.
+
+[!] Search orders&users: Search pattern for the ordered products worked incorrectly. Fixed.
+
+[!] Sessions were not saved after redirecting between the HTTP and HTTPS protocols. Fixed.
+
+[!] Shipments: shipment_id was not passed to the file. Fixed.
+
+[!] Short list design was fixed.
+
+[!] Sms notifications: SMS notifications were sent in wrong encoding. Fixed.
+
+[!] Some files were copied/created with broken file permissions. Fixed.
+
+[!] Some images were were copied/created with broken file permissions. Fixed.
+
+[!] Statistics addon: Item limitation on the general statistics page in the Administration panel worked incorrectly. Fixed.
+
+[!] Statistics and banners: Links in the text banners did not work. Fixed.
+
+[!] Store locator: Not all locations could be displayed. Fixed.
+
+[!] Suppliers addon: Shipping cost was calculated incorrectly if the products had a shipping freight. Fixed.
+
+[!] Suppliers: Supplier received a notification after order comments were changed. Fixed.
+
+[!] Tar library: Files from archives were extracted with broken file permissions. Fixed.
+
+[!] Taxes were calculated incorrectly if the default address coincided with tax rate location. Fixed.
+
+[!] Test newsletter was sent with the empty body. Fixed.
+
+[!] Thaiepay payment service: Wrong redirection from the payment system. Fixed.
+
+[!] "In stock" label was always displayed if the "display in stock as field" option was enabled. Fixed.
+
+[!] "This product cannot be added to the cart because you are not logged in." text was displayed incorrectly in the products lists and on the product details page. Fixed.
+
+[!] "Add to cart button" did not work on the products block with "Links thumb" appearance type. Fixed.
+
+[!] CSS file was linked incorrectly in the Tags addon. Fixed.
+
+[!] System treated Google Chrome as Safari. Fixed.
+
+[!] A JS error appeared on the order editing page in the Administration panel. Fixed.
+
+[!] A PHP error notice appeared when a user logged from the gift certificate update page. Fixed.
+
+[!] A PHP error appeared when a user didn't have permissions to run some controllers. Fixed.
+
+[!] THS delimiter was not displayed if the "Decimals" value was equal to 0. Fixed.
+
+[!] Administrator could delete an order having no permission to do so. Fixed.
+
+[!] "Continue shopping" button did not work if the "redirect to cart" option was active and "AJAX(Javascript)-based the "Add to cart" was disabled. Fixed.
+
+[!] Company name with special characters was displayed incorrectly in email headers. Fixed.
+
+[!] Field with the inner hint appearing after the Tab key is pressed worked incorrectly. Fixed.
+
+[!] The login form page contained looping links. Fixed.
+
+[!] Maximum amount of product was calculated incorrectly if the "Allow negative amount in inventory" option was enabled and the "Maximum order quantity" and "Quantity step" product options were defined. Fixed.
+
+[!] Privileges were displayed incorrectly if they were translated partially. Fixed.
+
+[!] Product amount was calculated incorrectly if the "Quantity step" and "List quantity count" values were defined in the product settings. Fixed.
+
+[!] Redirection to the mailto links worked incorrectly. Fixed.
+
+[!] Shipping method was not displayed on a package slip. Fixed.
+
+[!] Clicking on link without a href parameter in IE caused a JS error. Fixed.
+
+[!] A JS error appeared on a product details page if the product had subscriptions and had no options. Fixed.
+
+[!] It was possible to use the redirect_url parameter for external redirections. Fixed.
+
+[!] Titles were not selected when localizations were enabled. Fixed.
+
+[!] Top menu: Link was opened in the same window regardless of the "Open in new window" setting. Fixed.
+
+[!] USPS rates were not calculated if ZIP codes were sent in "01234-4567" format. Fixed.
+
+[!] USPS: Shipping rates were not calculated for such countries as American Samoa, U.S. Virgin Islands, Puerto Rico, Guam, Northern Mariana Islands. Fixed.
+
+[!] Unable to get USPS response for some shipping services. Fixed.
+
+[!] Unable to select any shipping method if all products had a free shipping in the Administration panel. Fixed.
+
+[!] Unable to select any shipping method while editing an order in the Administration panel. Fixed.
+
+[!] Unescaped language variable could be passed to a JS script on the block management page. Fixed.
+
+[!] User data on the checkout page was completed incorrectly for guests. Fixed.
+
+[!] Verus payment service: Card expiration date was passed incorrectly. Fixed.
+
+[!] When editing an order in the Administration panel, it what impossible to select shipping methods that had definite user groups. Fixed.
+
+[!] Changing the order status to "backordered" did not restore the original product inventory in some cases.
+
+[!] Wish list addon: Cost of the products with multiple subscriptions was calculated incorrectly. Fixed.
+
+[!] Checking option combinations was affected by option position. Fixed.
+
+[!] "Hide add to cart button" did not work with the "Grid2" and "Products grid" blocks. Fixed.
+
+[!] Banners addon: Banner image was not removed from the file system if the banner was deleted from the Administration panel. Fixed.
+
+[!] IE8 switched to the compatibility view if the administrator clicked on the "Blocks" tab. Fixed.
+
+[!] No warning message appeared if there were no products found through a product selector in the customer area. Fixed.
+
+[!] Incorrect SE-friendly URLs were generated for product filters. Fixed.
+
+[!] Languages: Eway settings page displayed empty language variables. Fixed.
+
+[!] News and emails addon: Emails were kept in the subscribers list if mailing lists were not selected during the registration and checkout. Fixed.
+
+[!] News and emails addon: PHP notices were displayed on the checkout page if mailing lists were not defined. Fixed.
+
+[!] Nochex payment service: Successful transactions were marked as failed sometimes. Fixed.
+
+[!] Only first range field was changed after changing the "Filter by" setting in the 'New filter' selector. Fixed.
+
+[!] Option variants were not restored during the product import. Fixed.
+
+[!] PHP notices were displayed on the cart page after profile editing. Fixed.
+
+[!] Product filter: Product filtering by price or amount worked incorrectly with product search by product price or amount. Fixed.
+
+[!] Product filters: Some filter ranges did not appear in the customer area if some values were already defined for the other filters. Fixed.
+
+[!] Product filters: Calendar did not appear in the Administration panel when filtering by date. Fixed.
+
+[!] Products and categories without user groups were available to all customers. Fixed.
+
+[!] Recurring billing: Options were not displayed for subscription products found in the block with the "products" appearance type. Fixed.
+
+[!] Rollback changes: Some filter ranges did not appear in the customer area if some values were already defined for the other filters. Fixed.
+
+[!] SEO addon: Cache did not clean up after SEO rules were added/updated. Fixed.
+
+[!] Storefront: PHP notices were displayed if the top menu was changed. Fixed.
+
+[!] Supplier addon: If a supplier's product had a shipping freight and free shipping, the freight was also added to products without a supplier. Fixed.
+
+[!] Suppliers addon: Products with free shipping were displayed in the suppliers shipping list. Fixed.
+
+[!] Suppliers addon: Egoods with the deactivated option "Enable shipping for downloadable products" were still displayed in the shipping list. Fixed.
+
+[!] "Hide options" option did not work in the appearance settings for "products.tpl". Fixed.
+
+[!] Coming soon notice was displayed incorrectly on the product details page. Fixed.
+
+[!] PHP error notice was displayed when sending a low stock notification if the product combination was not created. Fixed.
+
+[!] Shipping cost were not updated if a product was added to the cart at the last step of the checkout. Fixed.
+
+[!] Buttons were not aligned on the product details page for subscription based products. Fixed.
+
+[!] Product features with the type "Number" were allowed for text values. Fixed.
+
+[!] Impossible to clone a calendar. Fixed.
+
+[!] Pagination in the product grids block. Fixed.

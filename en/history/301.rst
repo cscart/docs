@@ -1,0 +1,498 @@
+***********************
+CS-Cart 3.0.1 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] New customer skin added.
+
+[+] Ability to add taxes and title for a payment method added.
+
+[+] Ability to select language during installation process added to Community edition.
+
+[+] Bulgarian language pack added.
+
+[+] JQuery color picker added.
+
+[+] News and emails: Ability to import/export subscribers added.
+
+[+] Payment surcharge taxes calculation added.
+
+[+] Payments: CRE Secure: support of Payleap 2.0 added.
+
+[+] Payments: DirectOne payment method added.
+
+[+] Payments: eMerchantPay payment method added.
+
+[+] Payments: Firstdata connect payment method added.
+
+[+] Payments: Paysite Cash payment method added.
+
+[+] Payments: Robokassa payment method added.
+
+[+] Payments: eWay hosted payment added.
+
+[+] Pop-ups: Auto-sized pop-ups support added.
+
+[+] Quantity discounts: Ability to set percentage discounts added.
+
+[+] Quick registration functionality added.
+
+[+] Quick view product template (product details popup) added.
+
+[+] RSS feed add-on added.
+
+[+] Shippings: EMS shipping service added.
+
+[+] Shippings: Smart Post support added to the FedEx shipping service.
+
+[+] The ability to display product tabs in popups added.
+
+[+] The Cart content block added.
+
+[+] The Show this page in a popup window option added to page settings.
+
+[+] Translation mode was added for settings.
+
+[+] Watermarks add-on added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Ability to enter Canada ZIP code without space was added.
+
+[*] Addons: Queries section may contain paths to files with SQL queries.
+
+[*] After an add-on installation the scrollbar on the add-ons list page is automatically set to show the newly installed add-on.
+
+[*] AJAX(Javascript)-based pagination setting for admin area removed.
+
+[*] Apply for a vendor account: The Requested account name field added to the Editing vendor page in the administrator area.
+
+[*] Autoload classes feature added.
+
+[*] Banners management: The carousel template added.
+
+[*] Block manager rewritten from scratch.
+
+[*] Cart items layout modified.
+
+[*] Discussion: Posting comments via AJAX added.
+
+[*] Feedback: Private information was excluded. Array settings values are serialized for the output.
+
+[*] Function 'fn_detele_user_cart' renamed to 'fn_delete_user_cart'.
+
+[*] Hot deals block add-on removed.
+
+[*] Hot deals block added to the home page.
+
+[*] JQuery UI Slider added.
+
+[*] Login form moved to basic pop-up.
+
+[*] Manage Add-ons page now work via AJAX.
+
+[*] Multi-Vendor Edition: Buy together add-on: vendors can add their own combinations now.
+
+[*] Multi-Vendor Edition: Location and tab Companies added to the block manager.
+
+[*] Now users' passwords use Salt for storage and generation.
+
+[*] Order repaying form modified.
+
+[*] Order statuses: The ability to select a status color added.
+
+[*] Pagination: Ellipsis replaced with page ranges in customer area.
+
+[*] Product details page modified.
+
+[*] Product features speed improved.
+
+[*] Product filters are disabled after disabling the corresponding product feature.
+
+[*] Products inventory: The Inventory field is disabled if the Enable inventory tracking option is turned off.
+
+[*] Products list: Sorting and select view blocks were modified. Items per page dropdown added.
+
+[*] Products search: Ability to search by order id added.
+
+[*] Products: Ability to sort additional images added.
+
+[*] Products: The Apply values to all the selected products feature on the multiple update page refactored.
+
+[*] Quantity discounts: The "Count product options when quantity discounts are calculated" option added.
+
+[*] SEO: SEO names could not be defined for companies in Ultimate Edition, thus they have been removed.
+
+[*] Settings: It is now possible to create a function defining whether a particular tab on an add-on setting page must be shown or not.
+
+[*] Shipping estimation pop-up window modified.
+
+[*] Shippings: Shipping cost is calculated on demand: destination and shipping method must be set manually.
+
+[*] The "Base" skin renamed to "Basic".
+
+[*] The '$(document).ready(handler)' and '$(window).ready(handler)' syntaxes were replaced with short form '$(handler)'.
+
+[*] The 'jQuery' variable name replaced with the '$' alias.
+
+[*] The 'Reset password' page texts and titles modified.
+
+[*] The 960 Grid System CSS framework is now used in the customer area.
+
+[*] The ability to select from available product sortings added.
+
+[*] The basic skin default logo modified.
+
+[*] The Calculate shipping cost block moved to a pop-up window.
+
+[*] The fn_global_update_products function was renamed. Hooks were added.
+
+[*] The fn_string_no_empty function was renamed to fn_string_not_empty.
+
+[*] The old logo replaced on the gift certificate and invoice preview pages.
+
+[*] The products_scroller2 and products_scroller3 templates removed.
+
+[*] The Scroller products template options and layout were modified.
+
+[*] The Updates server setting was moved to the config.php file.
+
+[*] Translation mode toggle button moved to a separate page.
+
+[*] Translation mode: Ability to translate printable pages added.
+
+[*] User type of vendor's administrators was changed to V.
+
+[*] Wishlist add-on: Product list pagination added.
+
+[*] Wishlist: The ability of calculating the number of identical products included in a configured product added.
+
+========
+Bugfixes
+========
+
+[!] Access denied error was displayed on the Webmail add-on page. Fixed.
+
+[!] Act on behalf: User would not log in automatically if user's session was not already started. Fixed.
+
+[!] Add-ons: Incompatible add-ons were disabled incorrectly. Fixed.
+
+[!] Ajax request param names were passed encoded in IE. Fixed.
+
+[!] AJAX-based pagination disabled: Selected tab was not saved upon page changing. Fixed.
+
+[!] An extra "or" text was displayed on the product details page. Fixed.
+
+[!] Block Manager: Double quotes broke title attribute in grid mode. Fixed.
+
+[!] Buy together add-on: A discount was not applied if a discounted price was equal to zero. Fixed.
+
+[!] Buy together add-on: error occured when option images were clicked on the 'Active promotions' page. Fixed.
+
+[!] Buy together add-on: Taxes for product combinations were always calculated for products with the quantity equal to 1, even if several identical combinations were added to the cart. Fixed.
+
+[!] Calendar was not working after cloning rows on the product filters editing page. Fixed.
+
+[!] Cart content: The lower 'Recalculte' button did not work. Fixed.
+
+[!] Checkout: Shipping hash calculation could give different results for the same data. Fixed.
+
+[!] Checkout: When the Create Multiple Accounts feature is enabled a new profile failed to be created on the second checkout step if Multiple Page Checkout was being used. Fixed.
+
+[!] Codes in the notification saying about cutting codes were typed in one line. Fixed.
+
+[!] Community: Searchanise: When importing full product information, data were sent several times. Fixed.
+
+[!] Company name was shortened incorrectly at the top of the admin area. Fixed.
+
+[!] Customer API: Category id was not taken into an account for featured categories and products. Fixed.
+
+[!] Data Feed: Download link did not work. Fixed.
+
+[!] Discount for price in points was calculated incorrectly. Fixed.
+
+[!] Downloadable product: Product would become inavailable for download after changing order status and clicking the Save button. Fixed.
+
+[!] DPS payment: URL was changed according to new payment requirements.
+
+[!] eNETS payment: New required field was added.
+
+[!] Error when re-calling the function fn_get_schema. Fixed.
+
+[!] Exim: An extra empty order would be created upon order items import. Fixed.
+
+[!] Export of order items did not work for vendors. Fixed.
+
+[!] Features: WYSIWYG editor did not appear if a feature had extended variants. Fixed.
+
+[!] Feedback: Shipping statistic request fixed.
+
+[!] File uploader: Uploading by URL did not work if path did not contain 'http(s)' prefix. Fixed.
+
+[!] Gift certificates: Minicart was not updated after gift certificate adding/removing. Fixed.
+
+[!] Gift registry: PHP notice was displayed on the view page event. Fixed.
+
+[!] Gift serticate: JavaScript validator allowed to enter illegal numbers on update and creation pages. Fixed.
+
+[!] Google checkout: A non-existing language variable was used. Fixed.
+
+[!] Haute-Vienne was shown twice with different codes in France department list. Fixed: One instance replaced with Hautes-Alpes.
+
+[!] Horizontal scrolling could get activated on certain Quick menu positions. Fixed.
+
+[!] HTML symbols were not escaped in tooltips. Fixed.
+
+[!] If product did not have main image, but had additional ones, these images were not displayed. Fixed.
+
+[!] If the SEO add-on was enabled, some wrong URL addresses did not return the Page not found mistake, but showed the home page instead. Fixed.
+
+[!] Images: Transparent background did not work if the Thumbnail background color option was absent. Fixed.
+
+[!] In case the admin panel language is set to Spanish, Switzerland canton names were replaced with Spain province names. Fixed.
+
+[!] Items per page dropdown did not work in the products picker. Fixed.
+
+[!] Locations: New location added (Isle of Man).
+
+[!] Logs: Assignment was used instead of comparing. Fixed.
+
+[!] Mailing list: An incorrect name of the adding button. Fixed.
+
+[!] Menus: Vendors could edit items from other stores. Fixed.
+
+[!] Multi-Vendor Edition Act on behalf: Vendor would not log in automatically. Fixed.
+
+[!] Multi-Vendor Edition: A vendor had no ability to edit global options even if an option was created by himself/herself. Fixed.
+
+[!] Multi-Vendor Edition: Comments and Reviews add-on module: Some language variables were missing. Fixed.
+
+[!] Multi-Vendor Edition: Owner of product options was not changed after changing the owner of product.
+
+[!] Multi-Vendor Edition: Permission schemas for vendors were not loaded from add-ons. Fixed.
+
+[!] Multi-Vendor Edition: Product import: Company id of product was changed after importing product with the same Product code and another company id.
+
+[!] Multi-Vendor Edition: Products with status 'pending' and 'disapproved' were taken into account when calculating product number with product filters. Fixed.
+
+[!] Multi-Vendor Edition: The 'Apply for a vendor account' link was not displayed on the 'Vendor details' page. Fixed.
+
+[!] Multi-Vendor Edition: The More link led to the 404 page if company description was too long. Fixed.
+
+[!] Name of shipping method was not changed after changing the cart language on the order details page. Fixed.
+
+[!] Name of shipping method was not displayed in the supplier invoice. Fixed.
+
+[!] Node cloning: Disabled nodes completely disappeared in IE9. Fixed.
+
+[!] Only 10 variants of a product feature was displayed on the product page in the administration panel. Fixed.
+
+[!] Order invoice: The Address type field value failed to save. Fixed.
+
+[!] Order management: Discount value was not saved if it had been set to 0 by admin. Fixed.
+
+[!] Order management: If a separate product code was set to a product option combination, it would not be shown in the 3rd step. Fixed.
+
+[!] Order management: If tax value was manually set to 0 in the 3rd step, it would reset to the default value in the 4th step. Fixed.
+
+[!] Order management: It was impossible to enter 0 as shipping cost in the 3rd step of editing, the cost would fall back to the previous value. Fixed.
+
+[!] Order management: Manually entered shipping price was saved incorrectly on order creation if suppliers were enabled. Fixed.
+
+[!] Orders management: If payment method was removed, errors appeared on order status changing. Fixed.
+
+[!] Orders management: Shipping price displayed incorrectly on the third step. Fixed.
+
+[!] Orders picker: AJAX-requests were not supported by search form. Fixed.
+
+[!] Orders picker: Wrong extra parameters were displayed in the ordered products pop-up window. Fixed.
+
+[!] Pages: entities were not escaped. Fixed.
+
+[!] Payments: Orders were always placed as Processed when customer used WestPac payment. Fixed.
+
+[!] Payments: Paysite Cash payment refactored.
+
+[!] Payments: Servired: customer was unable to re-place order if the card number had been entered incorrectly. Fixed.
+
+[!] PayPal Pro: Missing AVS code was added.
+
+[!] PHP warning was displayed if incorrect settings for thumbnails were set up. Fixed.
+
+[!] Product code and quantity data were lost upon combination rebuilding.
+
+[!] Product code was lost upon existing combination adding.
+
+[!] Product configurator: Notice about product groups with no assigned steps not being listed in picker added.
+
+[!] Product configurator: Order total was calculated incorrectly in the cart. Fixed.
+
+[!] Product configurator: Product image was displayed in the popup without resize. Fixed.
+
+[!] Product configurator: Products from disabled categories were added to the groups in the customer area. Fixed.
+
+[!] Product filter by amount worked incorrectly with product options. Fixed.
+
+[!] Product images were not displayed after opening an affiliate link. Fixed.
+
+[!] Product options: An image upload section appeared for a single variant when a checkbox type option was refreshed. It was supposed to be hidden. Fixed.
+
+[!] Product options: If a product had sequential type options and Track with options was checked, the product code would not be selected for combination on the cart page. Fixed.
+
+[!] Product pagination did not work with some encodings. Fixed.
+
+[!] Product SEO name was generated as 'product-nnn' instead of product name if products were imported with empty SEO names. Fixed.
+
+[!] Product SEO name: Several slovak characters were cut out by mistake. Fixed.
+
+[!] Products cloning: Options combinations positions were not copied. Fixed.
+
+[!] Products picker: Items adding did not work if the By together add-on was enabled. Fixed.
+
+[!] Products scroller: Arrow buttons scroll direction did not correspond the buttons icons and position. Fixed.
+
+[!] Products: There cannot be the preview link for ROOT admin.
+
+[!] Promotions: Calendar selection button was available even if the field was disabled. Fixed.
+
+[!] Promotions: Usergroups should not be applied to admin if they have logged in to the customer area. Fixed.
+
+[!] Quantity discounts: Product price for usergroup was diplayed on the global search page in the administrator area. Fixed.
+
+[!] Quantity discounts: The ability to ignore option combinations was added.
+
+[!] Quick view: Buttons block disappeared after AJAX reload. Fixed.
+
+[!] Quick view: Mini thumbnails did not work with the 'Display mini thumbnail images as a gallery' option. Fixed.
+
+[!] Recurring billing: If there were many recurring billing events, SQL queries ran very slowly. Fixed.
+
+[!] Russian encoding symbols were shown incorrectly in the Excel price List. Fixed. The PHP Excel library was integrated. Product images support was added.
+
+[!] Sales Reports: If all order statuses were selected, all payment modes were also selected. Fixed.
+
+[!] Save button was not displayed on the password change page if a usergroup without 'Manage users' permission was assigned. Fixed.
+
+[!] Search results pages with mixed objects differed from pages with products only. Fixed.
+
+[!] Searchanise add-on: The match mode was changed for the search form in the store.
+
+[!] Send feedback: SQL error appeared if the Affiliate add-on was not installed. Fixed. Adding add-ons info was moved to the hooks.
+
+[!] SEO names were generated independently on object name on different object creating. Fixed.
+
+[!] SEO: Category name was duplicated. Fixed.
+
+[!] SEO: SEO rules were parsed incorrectly, so some pages may have been accessible by the same address. Fixed.
+
+[!] SEO: Shared product path was shown incorrectly. Fixed.
+
+[!] Shipments: Order creation date would be shown on the detailed shipment page instead of the shipment creation date. Fixed.
+
+[!] Some variants of the product features were not displayed on the product details page. Fixed.
+
+[!] Sorting did not work before AJAX load. Fixed.
+
+[!] Statistics: Browser version field was too short. Fixed.
+
+[!] Store Locator: Map was displayed incorrectly in the admin area. Fixed.
+
+[!] Subtotal-based taxes: Taxes were calculated incorrectly if 'Catalog promotion' had been applied with 'Cart promotion'. Fixed.
+
+[!] Suppliers: Shipping freight for EDP products was calculated incorrectly. Fixed.
+
+[!] Tabs on the update profile page did not work. Fixed.
+
+[!] Tax priorities were ignored during shipping price calculating on checkout. Fixed.
+
+[!] Taxes: In case 2 or more taxes with different priority were applied to a product: the tax not included in price would have been calculated incorrectly if the tax included in 
+price had been applied before. Fixed.
+
+[!] Template editor: The delete file icon and message were non-informative. Fixed.
+
+[!] The 'Gift registry' page styles partially refactored.
+
+[!] The fn_sort_array_by_key function mixed the array even if values of all keys were the same.
+
+[!] The REAL_HOST constant was defined incorrectly. Fixed.
+
+[!] The styles were incorrect if the "join_css" setting was on. Fixed.
+
+[!] Too long HTTP-requests were shown on the logs view page incorrectly. Fixed.
+
+[!] Ultimate Edition: The 'Ship to a different address' link was visible but did not work after hiding profile fields. Fixed.
+
+[!] Upgrade center: PHP warning about too much free disk space was displayed. Fixed.
+
+[!] UPS & FedEx: If address line contained a "&" symbol, shipping price was not returned.
+
+[!] UPS shipping: UPS negotiated rates used incorrect Postal code and Country code values. Fixed.
+
+[!] User order statuses were intersected with cart predefined order statuses if user added more than 9 own order statuses. Fixed.
+
+[!] Warning about changed shipping rates appeared after switching language in the checkout step. Fixed.
+
+[!] Wishlist button displayed incorrectly when the Back in stock functionality enabled. Fixed.
+
+[!] {#2579} Suppliers: If the suppliers functionality was enabled, Order Department and User no longer received email notifications when an order was processed immediately. Fixed.
+
+[!] {#2779} Sorting by name did not work on the news page. Fixed.
+
+[!] {#2784} Recurring Billing: A subscription would start even if the respective order had not been finally placed and remained Incomplete. Fixed.
+
+[!] {#2784} Recurring Billing: Incorrect recurring price. Fixed.
+
+[!] {#2785} Recurring Billing: Subscription status was removed from customer search form.
+
+[!] {#2792} Order update: Save payment without process was disabled. Fixed.
+
+[!] {#2799} Form builder: Disabled selectable elements were displayed as empty lines. Fixed.
+
+[!] {#2802} The tracking parameter was not taked into account on product search. Fixed.
+
+[!] {#2842} Profile fields (Fax, URL, Company) were not displayed on print invoice. Fixed.
+
+[!] {#2843} Product options: Option values were encoded incorrectly for AJAX-request. Fixed.
+
+[!] {#2854} Recovery password: Both form and button titles used the same language variable. Fixed.
+
+[!] {#2866} Products details page: Product files tables were too narrow. Fixed.
+
+[!] {#2872} If the Thumbnail format setting was not set to same as source, a preview was generated even if it already existed. Fixed.
+
+[!] {#2875} Language variable errors fixed.
+
+[!] {#2886} Products import: Images alternative text was cleared even if images were not imported. Fixed.
+
+[!] {#2896} Menus: Menu could not be disabled. Fixed.
+
+[!] {#2897} Mini thumbnails did not work with the 'Display mini thumbnail images as a gallery' option. Fixed.
+
+[!] {#2906} Jcarousel callback caused an error on the 'beforeunload' event in IE 8. Fixed.
+
+[!] {#2909} The 'and' conjuction term was hardcoded in the 'fn_generate_name' function. Fixed.
+
+[!] {#2913} Menus: Current element was not active. Fixed.
+
+[!] {#2914} Optional/mandatory field marks were displayed incorrectly. Fixed.
+
+[!] {#2929} The name section was missing after an old scheme add-on had been installed. Fixed.
+
+[!] {#2944} Vertical scrolling was displayed in popup window. Fixed.
+
+[!] {#2952} Settings: State select did not work correctly. Fixed.
+
+[!] {#2965} Newsletter: HTML body preview caused a 'Fatal error: Call to undefined function'. Fixed.
+
+[!] {#2988} Settings: Duplicate variant and settings names collisions fixed.
+
+[!] {#3010} The 'Add to cart' button was not displayed in the 'Grid' template. Fixed.
+
+[!] {#3039} Store locator: Block was missing. Fixed.
+
+[!] {#3100} Ultimate Edition: The 'Title' field values did not correspond the customer's company on the customer editing page. Fixed.

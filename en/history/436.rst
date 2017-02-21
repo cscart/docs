@@ -1,0 +1,321 @@
+***********************
+CS-Cart 4.3.6 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Banners management: Template hooks were added.
+
+[+] Add-ons: Ebay Synchronization: Ability to clear logs was added.
+
+[+] Add-ons: Loading an add-on layout from the theme was added.
+
+[+] Add-ons: Searchanise: Support for the Blog add-on was added.
+
+[+] Add-ons: Store import: The add-on was updated to import stores' data to the latest CS-Cart version.
+
+[+] Block manager: The "Subcategories tree" category filling was added.
+
+[+] Core: The \Tygh\Registry::getAll() method was implemented: now developers can output all the registered variables in Registry.
+
+[+] Debugger: The SQL-queries' explain JSON format support for MySQL 5.6 and higher was added. A new SQL formatter was added.
+
+[+] Hooks: Add-ons: Comments and reviews: Hooks and docs were added.
+
+[+] Hooks: Companies: Template hooks were added.
+
+[+] Hooks: Hooks were added for the fn_buy_together_get_chains and fn_top_menu_form functions.
+
+[+] Multi-Vendor: Add-ons: The "Vendor plans" add-on that allows admins to create subscription plans for vendors was added.
+
+[+] Multi-Vendor: Add-ons: The "Vendor's terms and conditions" add-on that allows vendors to specify their terms and conditions was added.
+
+[+] Multi-Vendor: Empty categories are hidden in vendor microstores now.
+
+[+] Search: Administration panel: The Phone number field was added to the user search.
+
+[+] Settings: Security: Detailed error messages were implemented for cURL errors.
+
+[+] Shipping methods: Links to tracking services were added to order details pages.
+
+[+] Shipping methods: The shipping description field was added.
+
+[+] Upgrade center: The ability to skip the backup was added.
+
+[+] {#5278} Design: Layouts and product tabs are created together with the new storefront now.
+
+[+] {#6132} Add-ons: SEO: Blog: Canonical URLs were added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Administration panel: A company name was removed from the login page.
+
+[*] Core: Installer: The "fileinfo" PHP extension check was added to the installer.
+
+[*] Core: The minimal PHP version was bumped to 5.3.6.
+
+[*] Design: Debugger templates were removed from the theme. Backend templates are used.
+
+[*] Multi-Vendor: Add-ons: Vendor commission: The Vendor commission functionality and assigning categories to vendors were moved from the core to the add-on.
+
+[*] Multi-Vendor: HTML sanitization notification was disabled in the storefront.
+
+[*] Multi-Vendor: Styles of a vendor logo were improved.
+
+[*] Multi-Vendor: Vendors: Ability to repeatedly set the Pending status for a vendor was added.
+
+[*] Orders: Sales reports: Styles of the table report were improved.
+
+[*] Products: Styles of product pages were improved.
+
+[*] WYSIWYG: WYSIWYG was enabled in the storefront by default.
+
+========
+Bugfixes
+========
+
+[!] Add-ons: Banners management: Code of the deprecated add-on "Statistics" was present. Fixed.
+
+[!] Add-ons: Block with an addon info (version, author, install date/time) was displayed incorrectly on a separate page. Fixed.
+
+[!] Add-ons: Buy together: Getting product combinations was optimized: promotions list loads fast even if there are a lot of feature variants in the store.
+
+[!] Add-ons: Call requests: Phone masks were not defined on the 404 page because the necessary JavaScript code was initialized incorrectly. Fixed.
+
+[!] Add-ons: Call requests: The Buy with 1-click pop-up didn't close, if the browser window height was smaller than the height of that pop-up.
+
+[!] Add-ons: Comments and reviews: Rating stars were displayed on a vendor page on the storefront even if the rating feature was disabled. Fixed.
+
+[!] Add-ons: Gift certificates: Certificate delete links didn't work in the Basic theme. Fixed.
+
+[!] Add-ons: Gift certificates: If a user deleted gift certificates, logged out and then logged in, they were still present in the cart. Fixed.
+
+[!] Add-ons: Gift certificates: Logos for gift certificates weren't created after creating a new storefront. Fixed.
+
+[!] Add-ons: Google export: Product descriptions were too long. Fixed.
+
+[!] Add-ons: HiDPI: The Size of an icon in the scroller changed when loading a new image with HiDPI thumbnail loaded. Fixed.
+
+[!] Add-ons: MYOB: Order export data had wrong structure and had no shipping/taxes information. Fixed.
+
+[!] Add-ons: Payment dependencies: Checkout: Payment information was requested for a free order. Fixed.
+
+[!] Add-ons: Payment dependencies: Payment dependencies settings were reseting during the saving process on the shippings page. Fixed.
+
+[!] Add-ons: PayPal payments: Gift certificates: Order data was corrupted after IPN. Fixed.
+
+[!] Add-ons: Quickbooks: The AUTOTAX property was not set for taxable products. Fixed.
+
+[!] Add-ons: Quickbooks: The taxable products property was not set. Fixed.
+
+[!] Add-ons: SEO: Canonical URL led to the previous page of the products search. Fixed.
+
+[!] Add-ons: SEO: Canonical URLs were missing for the "Bestsellers" and "Comments and reviews" pages, a vendor storefront, and the brand products page. Fixed.
+
+[!] Add-ons: SEO: Exim: Product SEO names were not updated when having multiple stores and importing products as the root user. Fixed.
+
+[!] Add-ons: Social buttons: Facebook image width and height were not passed. Fixed.
+
+[!] Add-ons: Suppliers: Order shippings were overwritten with product group shippings. Fixed.
+
+[!] Add-ons: Tags: Disabled products were still used to determine the size and visibility of the linked tags in the tag cloud block. Fixed.
+
+[!] Add-ons: Watermarks: Image zoom: Watermark was not added, if the detailed image was disproportionate to the thumbnail. Fixed.
+
+[!] Add-ons: Watermarks: Watermarked thumbnails were not removed when clearing up generated thumbnails. Fixed.
+
+[!] Administration panel: The minimal lenght of the admin password was verified incorrectly for UTF-8 symbols. Fixed.
+
+[!] Advanced search: Picker: The Check all property worked incorrectly if the page had 2 pickers. Fixed.
+
+[!] Checkout: Session was not regenerated after the registration. Fixed.
+
+[!] Checkout: The disabled shipping step was shown after a user registered on the checkout page. Fixed.
+
+[!] Company: When the root admin edited a vendor/storefront in the All vendors/All stores mode, the sidebar wasn't displayed. Fixed.
+
+[!] Core: Database: A non-installed MySQLi PHP-extension caused no errors when using the "mysqli" database adapter. Fixed.
+
+[!] Core: Privileges: The function that checks user privileges worked incorrectly for admins with groups but without privileges. Fixed.
+
+[!] Core: Subscription: The "New subscribers" language variable was displayed incorrectly: this variable belonged to the add-on, but was used by the core. Fixed.
+
+[!] Design: Fonts: Font names that contained dashes were not detected in LESS files. Fixed.
+
+[!] Design: Products: Odd space in the product price block was present. Fixed.
+
+[!] Design: Products: The Big Picture template: Tabs were not displayed on product details pages. Fixed.
+
+[!] Design: Products: When selecting a filter, the page was scrolled beyond the title. Fixed.
+
+[!] Design: Responsive: Short list: Tax wasn't displayed on the category list. Fixed.
+
+[!] Design: Responsive: Subcategories menu didn't disappear on iPad after a customer tapped random area of the storefront. Fixed.
+
+[!] Design: Templates: Orders: The opening bracket was not present in the order details template. Fixed.
+
+[!] Design: Themes: Logos: Logos weren't created after importing a new layout and installing 4.0.x themes. Fixed.
+
+[!] Design: Tooltips: List items weren't displayed in tooltips. Fixed.
+
+[!] Design: WYSIWYG: TinyMCE and CKEditor converted UTF-8 characters to HTML entities. Fixed.
+
+[!] Exim: Comet: During the export of the pre-selected products, the export processing pop-up didn't disappear after the export was finished. Fixed.
+
+[!] Exim: Features: Feature variants were exported from all the storefronts when exporting only from one storedfront. Fixed.
+
+[!] Features: Feature comparison: If "Show on the Features tab" was not checked, the feature was not shown on a product comparison page. Fixed.
+
+[!] Filters: Disabled product filters were displayed and worked for the advanced product search. Fixed.
+
+[!] Filters: Product filters worked incorrectly after the price change. Fixed.
+
+[!] Images: Image import process resulted in an SQL error. Fixed.
+
+[!] Images: Images weren't correctly imported for products with duplicated IDs across several storefronts. Fixed.
+
+[!] JavaScript: Newsletter: The Load template button worked incorrectly. Fixed.
+
+[!] Languages: An obsolete language variable for shipping settings was present. Fixed.
+
+[!] Layouts: PHP notices were generated after setting custom configuration for a container on the Design -> Layouts page. Fixed.
+
+[!] Licensing mode: Trial mode notification was shown for all users without checking permission for changing the licensing mode. Fixed.
+
+[!] Marketing: Promotions: Conditions: Values were not filtered. Fixed.
+
+[!] Menus: Deleting menus with child items created before parent items caused PHP notices. Fixed.
+
+[!] Multi-Vendor: Add-ons: Comments and reviewes: Link to vendor discussions resulted in the 404 page. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor data premoderation: When approving or disapproving a product, there was no product info in the approve (disapprove) message, and the message was shown in the default language, not in the one selected by a vendor. Fixed.
+
+[!] Multi-Vendor: Import: Vendor couldn't update products via import. Fixed.
+
+[!] Multi-Vendor: Logos: Vendor logos weren't saved when creating a new vendor. Fixed.
+
+[!] Order management: Default address was not used, when shipping fields in a user's profile were disabled. Fixed.
+
+[!] Orders: Order status could be created without the status code after the maximum amount of statuses had been reached. Fixed.
+
+[!] Orders: Order status editor loaded incorrect description after removing all the storefronts except one. Fixed.
+
+[!] Orders: PDF invoices printed in bulk had blank pages between orders. Fixed.
+
+[!] Orders: Printed invoices and packing slips were vertically aligned to the center of the page. Fixed.
+
+[!] Orders: Sales reports: An ellipsis was displayed instead of diacritic symbols in object names in table reports. Fixed.
+
+[!] Orders: Sales reports: Daily reports contained incorrectly generated day sequence for 2016. Fixed.
+
+[!] Orders: The credit card validation wasn't initialized during the ajax request. Fixed.
+
+[!] Payments: Languages: The Vendor name field was fixed for DirectOne, SagePay direct, SagePay form, and Total Web Solutions Pay Page payment methods.
+
+[!] Payments: Rocketgate Native: Transaction ID was missing. Fixed.
+
+[!] Privileges: Orders: Deleting items in bulk was available for an admin without corresponding privileges. Fixed.
+
+[!] Products: A customer could choose forbidden product quantity, if inventory tracking was disabled. Fixed.
+
+[!] Products: Downloadable products: Files larger than 4 GB were stored incorrectly. Fixed.
+
+[!] Products: Images: Magnific-Popup caused the "Uncaught RangeError: Maximum call stack size exceeded" error. Fixed.
+
+[!] Products: Images: Image viewer didn't work on the Quick view pop-up, if the current location was the product page. Fixed.
+
+[!] Products: Options: Forbidden combinations: It was possible to add the same option combination to forbidden combinations more than once. Fixed.
+
+[!] Products: Pagination: Products were duplicated on different pages when using 5.6.11 MySQL Community Server (GPL) and higher. Fixed.
+
+[!] Products: Product switcher: Unnecessary GET parameters were used in product URLs. Fixed.
+
+[!] Search: Shared pages were not displayed in the search results. Fixed.
+
+[!] Security: Smarty variables weren't html-escaped properly. Fixed.
+
+[!] Settings: Time zone: Bucharest had incorrect time zone. Fixed.
+
+[!] Stores: If a domain name had capital letters, the storefront link changed to a widget link, and the View cart button didn't work. Fixed.
+
+[!] Upgrade center: File upload pop-up used a caption from the theme installer instead of its own. Fixed.
+
+[!] Upgrade center: Revert couldn't be done without MySQLi. Fixed.
+
+[!] Users: Languages: A user language didn't reset to default, if that language had been deleted. Fixed.
+
+[!] Users: Profiles: Disabled but already signed in users could place orders and edit profiles. Fixed.
+
+[!] {#3006} Add-ons: Wish List: Selected product options were not added to Quick view and Detailed view, and a customer had to select those options again when adding a product to cart. Fixed.
+
+[!] {#6059} Add-ons: SEO: Products: SEO names were created incorrectly for newly imported products. Fixed.
+
+[!] {#6065} Add-ons: Reward points: Point discount was calculated incorrectly for fractional prices. Fixed.
+
+[!] {#6080} Promotions: Features: The Brand feature variants weren't shown when creating a cart promotion with product feature values condition. Fixed.
+
+[!] {#6083} Quick search: Product and order search by ID didn't work properly. Fixed.
+
+[!] {#6090} Exim: Performance: Memory overflowed when importing files larger that 30 MB. Fixed.
+
+[!] {#6096} Multi-Vendor: Vendor admin was not created, if the password length was over 8 characters. Fixed.
+
+[!] {#6097} Checkout: Cart: Unnecessary store name was displayed in the shipping estimation pop-up. Fixed.
+
+[!] {#6099} Exim: Products: Global Options: Global options were updated incorrectly. Fixed.
+
+[!] {#6106} Hooks: Cloned options and variants info was missing from the corresponding hook. Fixed.
+
+[!] {#6107} Multi-Vendor: Filtering by a vendor: The Vendors list was not sorted by Name. Fixed.
+
+[!] {#6108} Design: Storefront: File Uploader: Links for file upload disappeared, if a customer cancelled the upload. Fixed.
+
+[!] {#6111} Add-ons: PayPal payments: The notice about existing user was shown when editing the second step at checkout. Fixed.
+
+[!] {#6113} Products: If a product weight had more than two fraction digits, the weight value was cut to two digits. Fixed.
+
+[!] {#6124} Orders: Files: Clicking the file name of the file uploaded as an option for a product on the orders management page resulted in the 404 page. Fixed.
+
+[!] {#6130} Add-ons: SEO: Canonical URLs on pages/blog led to the first page. Fixed.
+
+[!] {#6135} Multi-Vendor: Vendors couldn't change their SEO names. Fixed.
+
+[!] {#6138} Core: PharData: The .tgz archives that contained files with names starting with a dot were not extracted. Fixed.
+
+[!] {#6140} Design: Themes: Logos: Theme editor used logos for incorrect styles in some cases. Fixed.
+
+[!] {#6157} Exim: Composite key was broken for new records causing problems when importing objects with composite primary keys.
+
+[!] {#6158} Shipping methods: UPS: Rate calculation with empty state/zipcode values caused PHP notices. Fixed.
+
+[!] {#6160} Core: Languages: When deleting a language variable with the "0" name, other language variables were also deleted. Fixed.
+
+[!] {#6166} Add-ons: Social buttons: Facebook og:type field was empty for products. Fixed.
+
+[!] {#6167} Database: Placeholders: Placeholder "?w" worked incorrectly with the NULL parameter. Fixed.
+
+[!] {#6171} Add-ons: Ebay Synchronization: Ebay template selection on the bulk product editing page worked incorrectly. Fixed.
+
+[!] {#6180} Shipping methods: Information about delivery time override by a shipping service was missing from the shipping method page. Fixed.
+
+[!] {#6180} Shipping methods: UPS: Delivery time had wrong format when it was displayed in days. Fixed.
+
+[!] {#6181} Categories: Categories nested deeper than 3 levels weren't shown in the "Categories" block with the "Dropdown horizontal" template selected even though the "Parent category" was specified. Fixed.
+
+[!] {#6197} Administration panel: Menu: Expanding and collapsing nested menu items worked incorrectly. Fixed.
+
+[!] {#6200} Design: Theme: Cache: Automatic cache rebuilding didn't check styles. Fixed.
+
+[!] {#6202} Core: Debugger: Hierarchy of templates was displayed incorrectly. Fixed.
+
+[!] {#6207} Add-ons: HiDPI: User was not informed about the thumbnail format change upon the add-on activation. Fixed.
+
+[!] {#6218} Theme editor: Style changes were not saved in files with non-Unix newlines. Fixed.
+
+[!] {#6236} Filters: Filter of the "single checkbox" type wasn't used for retrieving the price range. Fixed.
+
+[!] {#6238} Upgrade: Migrations: MysqliAdapter didn't support all the MySQLi functions. Fixed.

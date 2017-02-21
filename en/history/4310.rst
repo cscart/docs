@@ -1,0 +1,177 @@
+************************
+CS-Cart 4.3.10 Changelog
+************************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Hooks: A new hook for modifying calculated shipping rates was added.
+
+[+] Hooks: A new hook for modifying filters was added.
+
+[+] Hooks: A new hook for modifying order payment information was added.
+
+[+] Hooks: Add-ons: Hooks for the Reward Points add-on were added.
+
+[+] Hooks: Design: A new hook around favicon was added.
+
+[+] Hooks: Locations: A new hook at the beginning of “fn_update_destination” was added.
+
+[+] Information about enabling/disabling API access for a user will now appear in the email notification.
+
+[+] Multi-Vendor: Hooks: A new hook for modifying the child order status or for preventing status change was added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] API: Authorization check was moved to the "handleRequest" function.
+
+[*] Design: Orders: The "tabs_extra" hook was moved outside the form.
+
+[*] Shipping Methods: UPS: The list of shipping services was updated.
+
+========
+Bugfixes
+========
+
+[!] Add-ons: Attachments: After deleting an attachment, a new attachment couldn't be added without refreshing the page first. Fixed.
+
+[!] Add-ons: Bestsellers: Performance: Ticking the "Only in-stock products" checkbox for a "Products" block with the "Similar" filling type resulted in high CPU usage by MySQL server. Fixed.
+
+[!] Add-ons: Gift certificates: ZIP Code input field on the storefront was too short. Fixed.
+
+[!] Addons: PayPal payments: The “Merchant ID” field on the PayPal Express Checkout configuration page could be left blank when the "Use In-Context checkout" setting was enabled. Fixed.
+
+[!] Add-ons: Price list: Using HTML tags in currency symbols or using special symbols (&nbsp;) as thousands separator could lead to errors when trying to open the generated XLSX file in Excel. Fixed.
+
+[!] Add-ons: Searchanise: Instant search widget didn't work on vendor products page. Fixed.
+
+[!] Add-ons: Searchanise: Products of inactive companies could appear in search results. Fixed.
+
+[!] Add-ons: Searchanise: Sorting wasn't set to default when the Searchanise request failed. Fixed.
+
+[!] Add-ons: Searchanise: The search result page didn't use Searchanise filters. Fixed.
+
+[!] Add-ons: SEO: Objects with SEO names couldn't be accessed when the default front-end language wasn't shared for the storefront. Fixed.
+
+[!] Add-ons: SEO: The add-on was enabled by default even when the rewrite engine was disabled. Fixed.
+
+[!] Add-ons: SMS Notifications: Messages weren't sent if any specific shipping methods were chosen in the add-on's settings. Fixed.
+
+[!] Add-ons: Store locator: Google Maps API key wasn't used. Fixed.
+
+[!] Categories: On rare occasions product name could disappear from the product page because the category was not removed from the “cscart_products_categories” table. Fixed.
+
+[!] Core: API: Users with disabled accounts could still perform API requests. Fixed.
+
+[!] Core: Cache: Product Options: Product cache was not cleared after removing a global option from the product. Fixed.
+
+[!] Core: Disabled features were displayed in advanced search form. Fixed.
+
+[!] Core: Errors in functions “fn_top_menu_form” and “fn_top_menu_standardize” were fixed.
+
+[!] Core: File upload: An error occurred when the total size of all uploaded files exceeded “upload_max_filesize”. Fixed.
+
+[!] Core: Upgrade: Checking permissions for changed files could result in errors if the target file was inaccessible or did not exist. Fixed.
+
+[!] Core: Upgrade: Permissions for entry point files could be set to 0666/0777 during the upgrade, making the site unavailable at suPHP hosts. Fixed.
+
+[!] CS-Cart: Languages: A language that was not shared for the storefront could be used as the default frontend language. Fixed.
+
+[!] CS-Cart: Some storefront URLs were wrong if the admin panel was served via HTTPS but the storefront itself wasn't. Fixed.
+
+[!] Debugger: On-site live editing: Using on-site live editing with the debugger enabled caused PHP fatal errors. Fixed.
+
+[!] Design: Back-end: Orders: Product info in the order could appear under the images. Fixed.
+
+[!] Design: Dashboard: Changing language on the dashboard didn't affect the status names in the Recent Orders section. Fixed.
+
+[!] Design: Images: Images didn’t open in a pop-up and couldn’t be saved to iPhone and iPad. Fixed.
+
+[!] Design: Layouts: An error occurred after adding a custom tooltip to grid options. Fixed.
+
+[!] Design: Layouts: Product Filters: Product filter settings in block properties could appear on a new page instead of pop-up window. Fixed.
+
+[!] Design: Orders: Pagination didn't work for a new search. Fixed.
+
+[!] Design: Products: Product tabs: When a tab on the product page appeared as a pop-up window, the “Close” button was focused on by default. Fixed.
+
+[!] Design: Themes: Basic: Theme editor couldn't be loaded. Fixed.
+
+[!] Design: Themes: Responsive: Breadcrumbs: Breadcrumbs were showing over parent block if the parent had “Content alignment: Left.”
+
+[!] Design: WYSIWYG: Inserted videos did not adapt for the screens of mobile devices. Fixed.
+
+[!] Downloadable Products: Addons: PayPal payments: Cancelling the order after submitting it could cause PHP notices when selling downloadable products. Fixed.
+
+[!] Export/Import: Products: Images for option variants were not imported from URLs. Fixed.
+
+[!] Features: Product details: When switching to a new page, the chosen number of items per page wasn’t saved. Fixed.
+
+[!] Multi-Vendor: Add-ons: eBay synchronization: License checking didn’t work properly for vendors. Fixed.
+
+[!] Multi-Vendor: Add-ons: PayPal payments: Order couldn't be placed when using In-Context Checkout. Fixed.
+
+[!] Multi-Vendor: Filters: The filter by vendor appeared even for categories without products. Fixed.
+
+[!] Multi-Vendor: Product management: Empty "Vendors" section was displayed in advanced product search form. Fixed.
+
+[!] Options: File: No messages were displayed when the total size of files uploaded for the option with the “File” type exceeded the maximum value allowed by the server. Fixed.
+
+[!] Order management: Shipments: A shipment couldn't be created without entering a tracking number. Fixed.
+
+[!] Orders: The quantity of purchased items of a product couldn't be higher than 65535 in order data. Fixed.
+
+[!] Payments: SagePay: Tax information was not sent to the payment gateway. Fixed.
+
+[!] Phar: Tgz archives were compressed incorrectly. Fixed.
+
+[!] Product filters: Price: The price range couldn't be set manually if the currency sign used HTML. Fixed.
+
+[!] Promotions: When a product feature with the “Multiple checkboxes” type was selected on the “Conditions” tab, the select box didn't work. Fixed.
+
+[!] Promotions: When using a “Coupon code” condition with "in", coupon codes with whitespaces were not applied. Fixed.
+
+[!] Redis: Ability to set connection port added.
+
+[!] Shippings: Redistributing products between boxes by weight didn't affect full box info. Fixed.
+
+[!] {#6332} Core: Session: A failure of session validity check could lead to errors on servers with PHP 7. Fixed.
+
+[!] {#6378} Design: Product Gallery: Thumbnails: Thumbnails appeared out of window on mobile devices, if the “Product details page thumbnail width” was larger than screen width. Fixed.
+
+[!] {#6381} Design: Back-end: Dialog: Dialog doesn't rebuild after an AJAX request. Fixed.
+
+[!] {#6401} Add-ons: Order barcode: Generated barcodes weren't recognized correctly. Fixed.
+
+[!] {#6411} Core: Database: The mechanism of reconnecting to database after lost connection was broken. Fixed.
+
+[!] {#6415} Core: Database: Table prefixes with digits could lead to errors. Fixed.
+
+[!] {#6416} Design: Themes: Responsive: Vertical menu: Menu was open by default on mobile devices. Fixed.
+
+[!] {#6421} Multi-Vendor: Products of different vendors could have the same SEO-names. Fixed.
+
+[!] {#6425} Checkout: Shipping: If the amount of purchased items was changed, the number of boxes could be increased incorrectly. Fixed.
+
+[!] {#6425} Checkout: Shipping: Option price modifiers were not applied to the box cost. Fixed.
+
+[!] {#6426} Core: JS: Microformat "cm-ajax-content-input" was not handled if used together with "cm-value-integer" or "cm-value-decimal". Fixed.
+
+[!] {#6429} Core: The “fn_get_dir_contents” function wasn't working properly when used with relative paths. Fixed.
+
+[!] {#6435} Core: A database error occurred after the upgrade if products were added from a session created in 4.3.8. Fixed.
+
+[!] {#6443} Payments: AuthorizeNet.Aim: AVS response code for non-U.S. Card Issuing Bank was missing. Fixed.
+
+[!] {#6447} Add-ons: Gift certificates: Customers could bypass entering the address when purchasing a gift certificate. Fixed.
+
+[!] {#6454} Design: Theme editor: Some icons were not displayed properly when the Theme editor was enabled. Fixed.
+
+[!] {#6454} Design: Theme Editor: The Theme editor panel didn’t support RTL. Fixed.
+
+[!] {#6477} Multi-Vendor: Account balance displayed on the “Add payout” pop-up was not reloaded when changing vendor. Account balance section has been removed from the pop-up completely.
+
+[!] {#6483} Users: Customers: The “Name” field could get empty in the customer's profile after checkout. Fixed.

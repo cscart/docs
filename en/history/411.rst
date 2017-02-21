@@ -1,0 +1,227 @@
+***********************
+CS-Cart 4.1.1 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] API: Auth entity added.
+
+[+] Design: Addons: Banners: JCarousel replaced with Owl Carousel.
+
+[+] Design: Products: Owl Carousel is now used for the Scroller product template.
+
+[+] Design: Storefront: New blocks (Benefits & Guarantees) added to the homepage.
+
+[+] Design: The cm-image-gallery microformat now uses Owl Carousel instead JCarousel.
+
+[+] Layouts: New block "Our brands" added.
+
+[+] Layouts: Product blocks: Ability to filter products by categories added.
+
+[+] Marketplace: Ability to upload new add-ons added.
+
+[+] Multi-Vendor: The vendor account request notification replaced with a popup dialog.
+
+[+] Payment methods: The FuturePay payment method added.
+
+[+] Design: Themes: 5 new styles added.
+
+[+] WYSIWYG: Added the ability to use empty <i> and <span> tags to CKEditor editor.
+
+[+] WYSIWYG: Added the ability to use empty <i> and <span> tags to TinyMCE editor.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Addons: Addon scheme: New fields available: Author information, Core version/edition requirements, System Extensions/Versions requirements.
+
+[*] Addons: Banners: If a graphic banner has no image, it will be hidden in the customer area.
+
+[*] Addons: Banners: Multi-language support for graphic banners added.
+
+[*] Addons: News & e-mails: The "Newsletters" menu moved from "Website" to "Marketing".
+
+[*] Addons: Quickbooks: Exported file is now created with the fn_quickbooks_export function.
+
+[*] Addons: The Affiliate addon removed.
+
+[*] Addons: The Gift registry addon removed.
+
+[*] Admin panel: CSS debug mode and JavaScript debug mode options removed as non-useful.
+
+[*] Admin panel: Uploaded files are now checked with JavaScript to prevent unwanted file sizes or types.
+
+[*] Checkout: Order placement moved to a popup dialog.
+
+[*] Export/Import: Files and images can now be imported only from /path/to/cart/var/files/.
+
+[*] Export/Import: Layouts: Option saving on layout updating added.
+
+[*] Export/Import: Products: The ability to specify the same product codes on behalf of different storefront admins and vendors added.
+
+[*] Orders: Tracking number is displayed as a link to the carrier website in customer emails.
+
+[*] Core: PharData PEAR class is now used instead of Tar_Archive.
+
+[*] Payment methods: Paypal Express: The Hong Kong Dollar, Israeli New Sheqel, Mexican Peso, Brazilian Real, Philippine Peso, Taiwan New Dollar, and Thai Baht currencies added.
+
+[*] Payment methods: eWAY: Direct and shared Payment methods updated.
+
+[*] Payment methods: eWAY: Rapid API payment updated.
+
+[*] Addons: The Product Configurator add-on removed.
+
+[*] Addons: The Recurring Billing add-on removed.
+
+[*] Core: Smarty lib updated to 3.1.15.
+
+[*] Addons: The Statistics add-on removed.
+
+[*] Admin panel: Template editor renamed to File editor (language variable only).
+
+[*] Theme editor: Fonts split to groups: system, popular, and other.
+
+[*] {#4364} Multi-Vendor: Addons: News and Email: The ability to add news without specifying a vendor added.
+
+========
+Bugfixes
+========
+
+[!] Addons: Abandoned carts: The wishlist checkbox was displayed in advanced filter when the Wishlist add-on was disabled; the checkbox layout overridden by the Wishlist add-on was incorrect. Fixed.
+
+[!] Addons: Attachments: Occasionaly, ZIP archives could not be unpacked after download. Fixed.
+
+[!] Addons: Comments and reviews, Suppliers: Supplier ID was not stated on discussion editing. Fixed.
+
+[!] Addons: Gift certificates: Gift certificate status change on the order status change did not work. Fixed.
+
+[!] Addons: RMA: The line break tag was displayed in the comments field. Fixed.
+
+[!] Addons: Reward points: Points were incorrectly assigned based on user groups, null absolute values were ignored. Fixed.
+
+[!] Addons: Statistics: UK Cookies law notification was displayed twice if the Statistics addon was enabled. Fixed.
+
+[!] Addons: Store import: Data feed: Lang code was transferred incorrectly. Fixed.
+
+[!] Addons: Store import: Default product tab descriptions were not copied into all languages on store import. Fixed.
+
+[!] Addons: Suppliers: Suppliers were not cloned on product cloning. Fixed.
+
+[!] Addons: Suppliers, Tags: Suppliers and tags disappeared on product saving. Fixed.
+
+[!] Addons: Suppliers: The admin panel dashboard loaded very slowly under high catalog size because the table cscart_supplier_links had unsufficient number of indices. Fixed.
+
+[!] Admin panel: Storefront selector: Dynamic entry loading would break previously generated storefront links. Fixed.
+
+[!] Admin panel: Administration: Close store: Storefront could not be accessed with the access_key parameter if the SEO addon was active and the "Show language in URL" option enabled. Fixed.
+
+[!] Admin panel: File editor: Left pane could not be scrolled independently from the right one. Fixed.
+
+[!] Layouts: Block icon was not updated according to its type when a block was added to a grid. Fixed.
+
+[!] Checkout: Billing address was replaced with shipping address if the Multiple Checkout option was enabled. Fixed.
+
+[!] Checkout: Spaces were appended to the card number field if its end was clicked and the card number could not be entered. Fixed.
+
+[!] Core: API: Product features: Getting a feature with a wrong ID raised a PHP error. Fixed.
+
+[!] Core: Filters: Loading indicator during an AJAX request could not be hidden if the filter response returned no products. Fixed.
+
+[!] Customer profile notifications: Messages could contain &nbsp;. Fixed.
+
+[!] Database: Restore: Backup archive downloaded from the server failed to unpack. Fixed.
+
+[!] Design: Addons: Banners: If a banner image size was greater than the layout size, it was resized non-proportionally. Fixed.
+
+[!] Design: Theme editor: Clone: The "Clone" button did not work if the directory name contained spaces. Fixed.
+
+[!] Design: Themes: Styles: Google fonts were loaded by the HTTP protocol, so some HTTPS pages could not load such fonts. Fixed.
+
+[!] Design: Themes: Styles: Reddish: Some styles were hard-coded. Fixed.
+
+[!] Export/Import: Products: A product was identified incorrectly by product code if two products had identical numerical parts of the code, but one of them had an additional literal part. Fixed.
+
+[!] File editor: With the template cache on, the template code wouldn't update in the customer area after it had been edited and saved in the admin panel. Fixed.
+
+[!] File uploader: File/image uploading from server did not work. Fixed.
+
+[!] Languages: Storefront language set on the first step was ignored, English was used instead. Fixed.
+
+[!] Layouts: Export/Import: HTML/Smarty blocks content was not updated on import. Fixed.
+
+[!] Multi-Vendor: Addons: Gift certificates: A gift certificate created from the Promotions page could not be redeemed. Fixed.
+
+[!] Multi-Vendor: Addons: SEO: The product preview link dissapeared if the SEO addon was active. Fixed.
+
+[!] Orders: Customer selector was invisible if a country promotion was set up. Fixed.
+
+[!] Orders: Price changes were not saved when editing an order in the administration area. Fixed.
+
+[!] Payment methods: PayPal: If payment surcharge was applied to payment and the "Take payment surcharge from vendors" option was enabled, order could not be placed with the "Order total does not match" error. Fixed.
+
+[!] Payment: A PHP notice appeared if a certificate filename was not specified. Fixed.
+
+[!] Payment: Uploading a certificate file led to an error if multiple languages were installed. Fixed.
+
+[!] Payment methods: PayPal Pro: Shipping address was displayed in the URL encoded format on the Paypal side. Fixed.
+
+[!] Payment methods: PayPal: Gift certificates were not applied if the PayPal payment method was used. Fixed.
+
+[!] Payment methods: Piraeus: Deprecated URLs were used. Fixed.
+
+[!] Payment methods: Skrill: The iframe mode did not work. Fixed.
+
+[!] Payment methods: Virtual Merchant: Payment returned an error message if the ZIP code included non-numerical characters. Fixed.
+
+[!] Product filters: Vendor status did not affect products filters. Fixed.
+
+[!] Product option price modifiers were ignored on shipping price calculation with local charges. Fixed.
+
+[!] Products: Clone: Image captions were not cloned on product cloning. Fixed.
+
+[!] Products: Images: A division by zero warning was shown if a product detailed image had been saved incorrectly. Fixed.
+
+[!] Products: The table products_categories was joined twice if the "Product list default sorting" option value was set to "Sort by position". Fixed.
+
+[!] Promotions: Automatically generated coupon codes were sent to customer immediately after order placement even if the order status was not Processed or Complete. Fixed.
+
+[!] Shipping methods: Taxes: Taxes were reset when the shipping positions were changed. Fixed.
+
+[!] Storefront: Cart content: Product count and price were calculated incorrectly after several consecutive logins and logouts and adding products to cart on each step. Fixed.
+
+[!] Users: Vendor administrator could change the status of their account via the forgot your password link. Fixed.
+
+[!] {#4639} Product features: All product feature groups were displayed disregarding the applied filter(s). Fixed.
+
+[!] {#4642} Products: Product sorting did not work in the admin panel when saved search was used. Fixed.
+
+[!] {#4638} Cart promotions: Editing an order increased the quantity of a promotional item and the promotional discount. Fixed.
+
+[!] {#4643} Orders: Invoice notes could contain HTML tags. Fixed.
+
+[!] {#4651} Admin panel: Dashboard: Date was displayed incorrectly if the next, current, and next months were picked consecutively. Fixed.
+
+[!] {#4653} Product features: Current feature value was cleared on changing an other/text or other/number type feature name. Fixed.
+
+[!] {#4656} Debugger: Debug mode: Debug mode was defined with an incorrect constant in the config.php file. Fixed.
+
+[!] {#4672} Products: The VAT taxes value was not saved on bulk product editing. Fixed.
+
+[!] {#4688} Admin panel: The items per page value was reset to default when a new filter was applied. Fixed.
+
+[!] {#4689} Order comments were sent to customer without HTML tag escaping. Fixed.
+
+[!] {#4695} Export/Import: SEO: Import led to an error if the SEO name field was not present in the CSV file.
+
+[!] {#4697} Addons: Form builder: The default item in the Form Builder country_list was always Zimbabwe. Fixed.
+
+[!] {#4710} Export/Import: Products: Categories: A leading space was added to the third category name on product export, which led to an extra category being created. Fixed.
+
+[!] {#4721} Export/Import: Users: When importing the registration date, it was replaced with the current one. Fixed.
+
+[!] {#4759} Addons: Gift certificates: When purchasing products from different vendors a certificate was created only once. Fixed.
+
+[!] {#4771} Orders: 404 error page was shown when user profile was changed on the order management page. Fixed.

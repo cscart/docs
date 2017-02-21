@@ -1,0 +1,211 @@
+***********************
+CS-Cart 4.2.1 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Addons: Ability to use PO files for add-on language variables added.
+
+[+] Addons: Ebay sync: The add-on included to the default package.
+
+[+] Addons: Image zoom: The AutoInside setting added. If screen width is less than 767px, the zoomed image appears inside the regular one.
+
+[+] Addons: PO translation files created for all basic add-ons.
+
+[+] Addons: Searchanise: PHP Hook "searchanise_signup_post" added.
+
+[+] Addons: Suppliers: Ability to link a shipping with a supplier added to the shipping details page.
+
+[+] Admin panel: Layouts: The "disable_cache" option added for blocks fillings.
+
+[+] Admin panel: Video tutorials added.
+
+[+] Core: Backend hooks: PHP hook "render_block_register_cache" added to app/Tygh/BlockManager/RenderManager.php.
+
+[+] Core: Backend hooks: TPL hook "index:content_top" added to common/mainbox.tpl.
+
+[+] Core: Backend hooks: TPL hook "products:simple_search" added to product_search_form.tpl.
+
+[+] Core: Frontend hooks: TPL hook "checkout:shipping_estimation_method" added to shipping_estimation.tpl.
+
+[+] Core: Frontend hooks: TPL hook "checkout:shipping_method" added to views/checkout/components/shipping_rates.tpl.
+
+[+] Core: Frontend hooks: TPL hooks "auth_info:login_form", "auth_info:recover_password", and "auth_info:extra" added to blocks/static_templates/auth_info.tpl.
+
+[+] Core: Frontend hooks: TPL hooks "manage_header" and "manage_data" added to orders/manage.tpl.
+
+[+] Core: Frontend hooks: TPL hooks "orders:manage_header" and "orders:manage_data" added to order/search.tpl.
+
+[+] Core: Frontend hooks: TPL hooks "products:product_name", "products:product_features", "products:product_amount", and "products:list_images_block" added to product_data.tpl.
+
+[+] Core: Frontend hooks: TPL hooks "products:product_scroller_list", "products:product_small_item", and "products:product_thumbnail_list" added to the product templates products_scroller.tpl, small_items.tpl, and links_thumb.tpl.
+
+[+] Core: Frontend hooks: TPL hook "promo_text" added to blocks/product_templates/default_template.tpl.
+
+[+] Installer: "mbsting.func_overload" validation added.
+
+[+] JS: The "dispatch_event_pre" trigger was added to the dispatchEvent().
+
+[+] Payment methods: Paypal Advanced: Ability to select template added.
+
+[+] Profile field names moved to a PO-file.
+
+[+] Sessions: Session ID is now generated with the OpenSSL:openssl_random_pseudo_bytes function.
+
+[+] web.config rules for IIS server added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Admin panel: Product features: Now when changing a feature type from Text to Select box, a warning message that the feature value will be lost is shown.
+
+[*] Admin panel: Settings: The "Enable secure connection" settings group was moved to "Security settings" section. The "Keep HTTPS connection" setting was moved there too.
+
+[*] Admin panel: The setting "Allow users to create shipments" was renamed to "Allow multiple shipments for a single order".
+
+[*] Admin panel: The Settings Wizard pop-up dialog opened incorrectly when requested from the Setup completed pop-up dialog. Fixed.
+
+[*] Addons: Searchanise: Data sending process stability improved.
+
+[*] Addons: Searchanise: Updated to version 1.3; search by pages and categories added.
+
+[*] Addons: Social login: The add-on Hybrid Auth renamed to Social Login.
+
+[*] Addons: Banners: Demo data is always installed with the add-on now.
+
+[*] Export/Import: Images were exported with absolute paths. Fixed.
+
+[*] Image previewer: Default image previewer changed to MagnificPopup.
+
+[*] Languages: PO parser now returns the erroneous line number if an error occurs.
+
+[*] Storefront: Product page: Minimal value in the quantity input is now 1.
+
+[*] Storefront: The "Our brands" page was not available in Free mode. Fixed.
+
+[*] URL validator: The "(" and ")" symbols are considered valid now.
+
+[*] When store is closed, the correct 503 status is returned now.
+
+[*] var/htaccess now allows downloading xml, yml, jpeg file extensions.
+
+========
+Bugfixes
+========
+
+[!] API: Open API: Every request was redirected to index.php if the SEO add-on was active. Fixed.
+
+[!] Addons: Ebay sync: Paypal was not selected by default for the categories with PaypalRequired flag. Fixed.
+
+[!] Addons: Ebay sync: Shipping cost was rounded to int value. Fixed.
+
+[!] Addons: Data feed: SQL error occured if admin defined category without products for export. Fixed.
+
+[!] Addons: Data feed: The "Detailed image URL" field was exported with https if the "Enable secure connection in the administration panel" option was enabled. Fixed.
+
+[!] Addons: Gift certificates: Wishlist: Error PHP notice was displayed when deleting certificate with free product from the whishlist. Fixed.
+
+[!] Addons: Google Export: Features not related to Google were removed during addon uninstallation. Fixed.
+
+[!] Addons: Required products: PHP error notice was displayed when adding a product with a required product if cart was empty. Fixed.
+
+[!] Addons: Required products: A product was not added to cart if its required product was assigned to several categories. Fixed.
+
+[!] Addons: Searchanise: Wrong products data was submitted. Fixed.
+
+[!] Addons: Watermarks: Watermark images were not cloned when creating new storefront. Fixed.
+
+[!] Admin panel: Content would scroll down on page changing in a popup. Fixed.
+
+[!] Admin panel: Store locator: TPL hooks: Hook "store_locator:detailed_content" in the <div> with id "content_addons" renamed to "store_locator:addons_content".
+
+[!] Admin panel: Submitting the search form on pressing the Enter button did not work. Fixed.
+
+[!] Admin panel: The Administration menu items could not be viewed on screens with resolution less than 1400 x 900. Fixed.
+
+[!] Basic theme: Main menu: Horizontal scrolling appeared if a submenu had too many items. Fixed.
+
+[!] Checkout: Taxes: The "Estimate taxes using default address on cart/checkout pages" flag did not work if a promotion with "States" or "Countries" condition was created. Fixed.
+
+[!] Dev tools: The "Rebuild cache automatically" switch was not rest after theme cloning. Fixed.
+
+[!] Design: Incompatible styles from one theme could be used in another. Fixed.
+
+[!] Design: Popups did not show up in Safari 5. Fixed.
+
+[!] Design: Responsive theme: Filters did not roll out on clicking on its name or arrow sign. Fixed.
+
+[!] Export/Import: Products: Company in secondary category data was ignored. Fixed.
+
+[!] Export/Import: Translations: Language variables with invalid language codes could be imported. Fixed.
+
+[!] Export/Import: Main image was lost during additional images import. Fixed.
+
+[!] Export/Import: Quantity discounts: Usergroup was set incorrectly. Fixed.
+
+[!] Localizations: Localization showed on the payment methods page when the "tweaks.disable_localizations" param was set to "true" in the config. Fixed.
+
+[!] Multi-Vendor: Filters: Filters by company did not work properly on the "View all" page. Fixed.
+
+[!] Order management: Email notifications were sent even if the respective checkboxes were unchecked. Fixed.
+
+[!] Orders: Invoices: Invoice did not have information about gift certificates. Fixed.
+
+[!] Orders: Profile fields: Only the first contact profile field was displayed on the order details page in the customer area. Fixed.
+
+[!] PayPal: Gift certificates: If a gift certificate fully covered product cost but did not cover shipping, PayPal rejected the order and the certificate status was changed to "Used". Fixed.
+
+[!] Payment methods: Payflow Pro: Currencies support added.
+
+[!] Payment methods: Paypal Express: Billing address was not sent to PayPal even if the "Send customer shipping address" option was enabled. Fixed.
+
+[!] Payment methods: DPS Access: Order notifications were sent twice per order. Fixed.
+
+[!] Product options: Exceptions: If an option variant had a price modifier and such option was forbidden by exceptions, the modifier could be applied twice. Fixed.
+
+[!] Profile fields: Value of the input "State" was cleared when the "Country" filed was changed. Fixed.
+
+[!] Promotions: Cart: Taxed price disappeared if the store had promotions with the "States" condition. Fixed.
+
+[!] Promotions: Product name was displayed as [Object object] on the Bonuses page if the Condition page and the Bonuses page had the same product as condition. Fixed.
+
+[!] Promotions: Usergroup bonuses did not work properly. Groups were not activated automatically. Fixed.
+
+[!] Shipping: Packages: If a product had specific shipping settings but amount of this product was less than min allowed for shipping qty, fatal error occured on dividing products to packages. Fixed.
+
+[!] Shipping methods: Temando: Suburb field was unreadable when calculating shipping. Fixed.
+
+[!] Usergroups: Activation e-mail did not contain group name. Fixed.
+
+[!] Users: User location was defined incorrectly if user data contained spaces. Fixed.
+
+[!] {#4998} Addons: Suppliers: Notification to supplier was sent even if the "Notify supplier" checkbox was unchecked. Fixed.
+
+[!] {#5029} Database: Names encoding and Strict mode were not changed after reconnections. Fixed.
+
+[!] {#5081} Design: Full width layout: The header of the Email field on the "Apply for a vendor account" page slipped down. Fixed.
+
+[!] {#5082} Descriptions of categoies, shippings, and countries were independant on the DESCR_SL language. Fixed.
+
+[!] {#5083} Sessions: User products were not deleted from anonymous session when creating new profile. Fixed.
+
+[!] {#5085} Product options: Files: Thumbnails for custom files were not displayed on the cart content page if the file was added during cart recalculating. Fixed.
+
+[!] {#5089} Addons: Google Analytics: Information about campaign, source, etc. was not sent to Google during order placing. Fixed.
+
+[!] {#5092} Filters: The "View all" links could be broken when the SEO addon was enabled and the "Show products from subcategories of the selected category" option disabled. Fixed.
+
+[!] {#5099} Addons: SEO: SEO name was generated twice if Product name contained spaces and the "+" sign (e.g. "Product + bonus"). Fixed.
+
+[!] {#5102} Addons: Store locator: A JavaScript error appeared when new location was added. Fixed.
+
+[!] {#5106} Reorder: Product was added to cart with zero price on reorder if the cart already contained other products. Fixed.
+
+[!] {#5107} Payment methods: Epdq: Live service connection URL was deprecated. Fixed.
+
+[!] {#5120} User profiles: Custom profile fields were not removed when deleting user. Fixed.
+
+[!] {#5135} Addons: Comments and reviews: W3C validation failed on the product details page. Fixed.

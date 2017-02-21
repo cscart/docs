@@ -1,0 +1,151 @@
+***********************
+CS-Cart 2.2.2 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] CRE Secure payment module: Payleap 2.0 support was added.
+
+[+] The ability to disable the visual HTML editor was added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] The Product configurator add-on was refactored.
+
+[*] Loading speed of the "Product Features" page was increased.
+
+[*] Products: The "Apply values to all the selected products" function was refactored on the multiple update page.
+
+[*] Data Feeds add-on: The progress bar was replaced with a new one.
+
+[*] The "import_complete" hook was added to the source code.
+
+[*] New parameters were added to the "get_products_post" hook.
+
+[*] Assist payment module: The submit URL parameter was changed according to new service requirements.
+
+[*] DPS payment module: The submit URL parameter was changed according to new service requirements.
+
+[*] Quick search add-on: The default value of the "Match type" option was changed to "All of these words".
+
+========
+Bugfixes
+========
+
+[!] Wish List add-on: Two identical configured products were displayed separately in the wish list if they were added to it not at once. Fixed.
+
+[!] Amazon checkout payment module: Incorrect parameters were sent to the Amazon server if one of ordered products was free shipping. Fixed.
+
+[!] Back in stock notification: An empty page was displayed if the "AJAX(Javascript)-based the "Add to cart" button" setting was enabled. Fixed.
+
+[!] Blocks: If a block with manually defined products was created, click on the link with a number of products in this block opened an empty window. Fixed.
+
+[!] Order bulk print: The value of the payment method field was empty sometimes. Fixed.
+
+[!] Categories: If the "Add" (new product) link was clicked on the category list page, no categories could be selected on the "New product" page. Fixed.
+
+[!] Export data: The "Save layout as" functionality did not work. Fixed.
+
+[!] File uploader: A file could not be uploaded from the server if HTTPS was enabled. Fixed.
+
+[!] Google checkout payment module: An active gift certificate could not be used for order payment. Fixed.
+
+[!] If a product with a catalog promotion applied was added to the cart and the product options that affected the product price were changed on the cart page, the product price, discounts and cart subtotal were calculated incorrectly. Fixed.
+
+[!] Import data: If a file was uploaded via the file uploader, the file name remained displayed on the page after its reloading. Fixed.
+
+[!] Localizations: Localizations defined for a top menu item were reset after clicking the "Save" button on the "Top menu" page. Fixed.
+
+[!] Edit order: If order shipping rates were changed at the third step, previous values of these rates were displayed after reloading the page. Fixed.
+
+[!] Blocks: Pagination did not work in blocks with products on the edit product page. Fixed.
+
+[!] Price List add-on: Incorrect prices of product options were displayed if the product price was zero. Fixed.
+
+[!] Profile fields: The value of the "State" select box was not set to its default value on the registration page. Fixed.
+
+[!] Profile fields: The language of user defined profile fields in the invoice sent to the store administration was the one that the customer had selected while placing an order. Fixed.
+
+[!] Redirection from HTTPS to HTTP was incorrect if the "Keep HTTPS connection" setting was disabled. Fixed.
+
+[!] Shipping total was not recalculated by JavaScript at the third checkout step if a supplier shipping method was changed by the customer. Fixed.
+
+[!] The "Add to wish list" button was displayed incorrectly when the back in stock functionality was enabled. Fixed.
+
+[!] A skin could not be changed via the demo toolbar in the storefront. Fixed.
+
+[!] Quick search add-on: Products deleted from the database remained displayed in search results. Fixed.
+
+[!] Logs: Long URLs were displayed incorrectly. Fixed.
+
+[!] Blocks: The "Enter e-mail address" field of the "Mailing lists" block moved to the right if the parent block direction was set to 'Horizontal'. Fixed.
+
+[!] Data Feeds add-on: Product codes were written in one line in the notification saying about cutting the codes. Fixed.
+
+[!] Import data: A main image pair was removed if the "Delete additional images" check box was selected. Fixed.
+
+[!] Product configurator add-on: A configurable product could be added to the cart without choosing required products by pressing the Enter button in the quantity input field. Fixed.
+
+[!] Product configurator add-on, Wish List add-on: A configurable product was added to the cart from the wish list incorrectly. Fixed.
+
+[!] Product configurator add-on: The compatibility classes functionality worked incorrectly. Fixed.
+
+[!] Products: The "Out-of-stock" text label was displayed twice on the product details page. Fixed.
+
+[!] Products: Product position was set to zero after clicking the "Save" button on the edit product page. Fixed.
+
+[!] Products: Categories could not be assigned to products on the multiple product update page. Fixed.
+
+[!] Products: The value of the "User group" select box could not be cloned in the "Quantity Discounts" tab of the edit product page. Fixed.
+
+[!] Sales Reports: Selection of all order statuses caused selection of all payment methods on the edit chart page. Fixed.
+
+[!] Data Feeds add-on: The bottom "Add Data Feed" button had incorrect position on the page. Fixed.
+
+[!] Buy together add-on: A product combination remained active if its main product or any product from this combination was removed. Fixed.
+
+[!] The warning about missing shipping methods was displayed at all checkout steps. Fixed.
+
+[!] Blocks: There was no ability to edit a text of an HTML block in the visual HTML editor. Fixed.
+
+[!] Buy together add-on: If two or more identical product combinations were added to the cart, taxes for these products were always calculated for quantity equal to one. Fixed.
+
+[!] Multi-Vendor Edition: The Comments and reviews add-on: A few language variables were missing in the database. Fixed.
+
+[!] Edit order: A JavaScript error occurred if the check box of manual edition of taxes or shipping cost was selected at the third step. Fixed.
+
+[!] An SQL error occurred when installing the Recurring Billing or Affiliate add-on in CS-Cart upgraded from Community to Professional or Multi-Vendor edition. Fixed.
+
+[!] SQLite cache: A PHP error was displayed if the PDO class was installed without SQLite support. Fixed.
+
+[!] Multi-Vendor Edition: The search form was displayed incorrectly in the select vendor drop-down menu at the top in the admin panel. Fixed.
+
+[!] Suppliers: The shipping method selected in the shipping cost calculation section on the cart page was not saved after proceeding to checkout. Fixed.
+
+[!] Suppliers: If the "Display shipping methods to each supplier separately" setting was disabled and one of suppliers had a free shipping method defined, the "No shipping options available for your location" message was displayed at the checkout. Fixed.
+
+[!] Suppliers: Shipping freight of an electronically distributed product was calculated incorrectly. Fixed.
+
+[!] The "object type is NULL or undefined" Javascript error occurred in the customer front-end in Internet Explorer 7,8. Fixed.
+
+[!] TinyMCE editor: If a language that was not installed in the editor was selected in the admin panel, the editor was not initialized. Fixed.
+
+[!] Upgrade center: The "New license" field was displayed incorrectly on the "Manage editions" page. Fixed.
+
+[!] {#2589} Orders: Credit memo and invoice IDs were not displayed on the bulk order print results page. Fixed.
+
+[!] {#2590} Multi-Vendor Edition: A vendor had no ability to edit a global option even if it was created by themselves. Fixed.
+
+[!] {#2598} The outdated "Logo for sign in box" setting was available in the admin panel. Fixed.
+
+[!] {#2605} Multi-Vendor Edition: An incorrect vendor logo was displayed in the invoice generated in the PDF format. Fixed.
+
+[!] {#2614} Product image gallery: If a click was on the space between mini thumbnail images, the main product image was hidden and nothing appeared instead of it. Fixed.
+
+[!] {#2649} The "Ship to different address" functionality worked incorrectly in the admin panel when creating a customer. Fixed.
+
+[!] {#10486} Option variants images: When an option was selected, the appropriate image was not displayed. Fixed.

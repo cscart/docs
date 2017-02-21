@@ -1,0 +1,171 @@
+***********************
+CS-Cart 4.0.3 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Ability to manage Currencies (Create/Edit/Delete) added for all currencies in the Free mode.
+
+[+] Ability to manage Languages (Install/Edit/Delete) added for all languages in the Free mode.
+
+[+] Addons: Bestsellers: New filling "On sale" (all products with active discounts) added for the Products block.
+
+[+] Addons: SEO: Pre and post hooks added to the functions fn_create_seo_name, fn_seo_get_name, and fn_delete_seo_name.
+
+[+] Captcha: Captcha TTL (Time To Live) set to 6 hours.
+
+[+] Core: Hooks: Products: The image_wrap hook was added to the quick view template.
+
+[+] Core: Hooks: the tools_list hook added.
+
+[+] Design: Storefront: Unique class names added for product options on the product page.
+
+[+] Design: Theme Editor: Ability to add background images for all elements in the backgrounds section added.
+
+[+] Design: The new 'Reddish' storefront theme preset added.
+
+[+] Multi-Vendor: Addons: Catalog mode: The "Enable Catalog Mode" checkbox removed from the vendor settings page.
+
+[+] Shipping methods: USPS: New parameter "All" was added to the MailType list.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Addons: Hybrid Auth: The Hybrid Auth lib updated to version 2.1.2 to suite the latest Twitter and Google API changes.
+
+[*] API: DELETE: Response code for the DELETE method called twice for the same object set to 404.
+
+[*] Categories: Ability to set images for categories restored.
+
+[*] Database: Restore: The backup creation date field added.
+
+[*] Export/import: Product option combinations: The ability to define product option delimiter added.
+
+[*] Installation: Ability to assign Internationalized Domain Names per storefront added.
+
+[*] Payments: Amazon checkout: The euro and British pound currencies support added.
+
+[*] Payments: Paypal: The Russian ruble currency support added.
+
+========
+Bugfixes
+========
+
+[!] Addons: Affiliate: The profile fields settings did not work. Fixed.
+
+[!] Addons: Data feed: Secure (HTTPS) URLs were used for image links. Fixed.
+
+[!] Addons: Discussion: Review status did not change when multiple products were edited. Fixed.
+
+[!] Addons: Form builder: Email: Multi-line messages were formatted incorrectly. Fixed.
+
+[!] Addons: Image zoom: Pre-loading indicator image changed.
+
+[!] Addons: MYOB: Order data were not exported. Fixed.
+
+[!] Addons: Quickbooks: Product data could not be added to the exported orders file. Fixed.
+
+[!] Addons: Quickbooks: Products were not exported from orders. Fixed.
+
+[!] Addons: Quickbooks: The exported file contained extra blank lines. Fixed.
+
+[!] Addons: SEO: Products: Fatal error occurred when the Out of stock notification appeared. Fixed.
+
+[!] Addons: SEO: Storefront: The "Call to undefined function fn_seo_is_indexed_page()" fatal error randomly occured. Fixed.
+
+[!] Addons: SEO: Support multi-language URLs: seo name was incorrect for Thai language. Fixed.
+
+[!] Addons: Store import: If the company ID was not specified in the Extra field of the order_details table, during the import from CS-Cart Professional a notification was shown. Fixed.
+
+[!] Addons: Store import: Shipment carrier was imported incorrectly. Fixed.
+
+[!] Addons: Store import: An SQL error was shown during import process if langvar name contain quote. Fixed.
+
+[!] Design: Top menu: Styles of the top menu were incorrect in Internet Explorer 7. Fixed.
+
+[!] Admin panel: A JavaScript error occured on the Product Features/Options/Products pages when a popup dialog was opened if the main store language was French. Fixed.
+
+[!] Categories: An error message was shown on the categories page when the save button was clicked. Fixed.
+
+[!] Companies: Vendor list in the product filter was not sorted alphabetically. Fixed.
+
+[!] Core: Database: The function fn_check_db_prefix did not replace all table prefixes if more than one table names were in query. Fixed.
+
+[!] Core: IDN support: Storefront URL in the post-installation welcome text was not converted back from Punycode. Fixed.
+
+[!] Core: The function fn_get_product_filter_name did not work properly when an array of filter IDs was passed. Fixed.
+
+[!] Currencies: Primary currency could be deleted by following a direct link. Fixed.
+
+[!] Design: Theme editor: Background patterns were not applied on the full page height. Fixed.
+
+[!] Design: Theme editor: Gradient did not work in Internet Explorer 9. Fixed.
+
+[!] Export/import: Product images with external URLs were not imported. Fixed.
+
+[!] File uploader: A PHP error notification was shown when uploading file with incorrect MIME extension. Fixed.
+
+[!] File uploader: A PHP error notification was shown when files were uploaded via URL. Fixed.
+
+[!] Images: All product thumbnails were removed when a new image for a new product was uploaded. Fixed.
+
+[!] Multi-Vendor: Export/import: Products: The categories field was empty if products were exported by a vendor admin. Fixed.
+
+[!] Multi-Vendor: Export/import: Vendor could add a category on product import. Fixed.
+
+[!] Multi-Vendor: Payment methods: PayPal: Order could not be placed, if there were products from different vendors in the cart. Fixed.
+
+[!] Multi-Vendor: Shipments: Products were not shown for vendors when creating a shipment. Fixed.
+
+[!] Orders: Tracking number could not be saved with the Allow users to create shipments settings disabled. Fixed.
+
+[!] Payments: Amazon checkout: Wrong OrderCalculationsResponse XML format was generated. Fixed.
+
+[!] Payments: PayPal Express Checkout: The PayPal error 10413 occured when a product with a discount was bought. Fixed.
+
+[!] Product options: When an option was created, the Inventory parameter was disabled by default. Fixed.
+
+[!] Shipping methods: Package weight included only the first product weight. Fixed.
+
+[!] Shipping methods: Product package weight was calculated twice. Fixed.
+
+[!] Shipping methods: USPS: First-Class Mail® International Large Envelope** service always returned N/A result when MailType was equal to "Envelope". Fixed.
+
+[!] Translations: PO Parser crashed when parsing a broken PO file or non-po file. Fixed.
+
+[!] {#4515} Users: Registration: The password mismatch message was incorrect. Fixed.
+
+[!] {#4525} Addons: Social link: Email: The e-mail body contained no line break. Fixed.
+
+[!] {#4526} Menu: Products: Current category was not highlighted when browsing a product. Fixed.
+
+[!] {#4528} Settings: Missing tooltips restored.
+
+[!] {#4533} Design: Theme editor: Top panel styles were incorrect. Fixed.
+
+[!] {#4533} Design: Theme editor: Backgrounds: Background could not be changed with an uploaded image. Fixed.
+
+[!] {#4549} Addons: Store import: Tracking number was imported incorrectly. Fixed.
+
+[!] {#4550} Menus: Manage items: Impossible to choose a category or page for the submenu generation when editing the menu element. Fixed.
+
+[!] {#4553} Layouts: User-defined CSS class for containers was not saved. Fixed.
+
+[!] {#4556} API: Product additional image alt text could not be saved. Fixed.
+
+[!] {#4572} Addons: Data feed: Export/import: The export of products did not work. Fixed.
+
+[!] {#4275} Core: Http: ability to send post-requests with query string in URL was restored.
+
+[!] {#4576} Design: Admin panel: Extra bracket was shown in the Dashboard if two currencies were picked. Fixed.
+
+[!] {#4583} Addons: Image zoom: Styles of the lens zoom size mode were incorrect. Fixed.
+
+[!] {#4606} Currencies: The order of the currencies could not be changed. Fixed.
+
+[!] {#4614} Export/import: Products: An empty product image link was created for a product with unspecified image link. Fixed.
+
+[!] {#4633} Export/import: Orders: The order creation data was not imported. Fixed.

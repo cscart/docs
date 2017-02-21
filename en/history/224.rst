@@ -1,0 +1,191 @@
+***********************
+CS-Cart 2.2.4 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Payments: PayLeap payment method was added.
+
+[+] Searchanise addon was added to the Professional and Multi-Vendor Editions.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Twigmo add-on was updated to version 1.4.
+
+[*] The Assist payment method was updated.
+
+[*] Canada Zip code: Ability to enter zip code without space was added.
+
+[*] Add-ons: separate page for some add-on settings was added.
+
+[*] Orders search: Search by payment method was added to the administrator's back-end
+
+[*] Products: The "Sort by" field was added to the products table in the administrator's 
+back-end
+
+[*] Protection against Click-jacking was added.
+
+[*] Sessions: The functionality of changing a session identifier when logging in/logging out was added.
+
+[*] The Fileuploader URL validation script was improved. Now it is possible to input URLs without the HTTP(S) prefix.
+
+[*] The ISO 3166-1 numeric country codes were updated.
+
+========
+Bugfixes
+========
+
+[!] Translation Mode: popup boxes did not work. Fixed.
+
+[!] Administrators without privilege "Manage users" were not able to preview products in the customer area. Fixed.
+
+[!] Affiliate: Wrong dynamic links on the product groups and banners pages. Fixed.
+
+[!] Amazon checkout and Google checkout: If a product had only one "textarea" product option and such a product was added as a free one via the cart promotion, a PHP notice was displayed when opening the cart page. Fixed.
+
+[!] Apply for a vendor account: The email was not being checked for uniqueness among customers. Fixed.
+
+[!] Blocks: There was no pagination upon adding the news block. Fixed.
+
+[!] Buy together add-on: When adding new products with options to a combination, the price was displayed incorrectly if the options had a price modifier. Fixed.
+
+[!] CKEditor: All text-edit fields were disabled if the editor was used in a modal window. Fixed.
+
+[!] Categories: unchecked categories were added sometimes if admin use "check/uncheck all" functionality. Fixed.
+
+[!] Checking MIME type of file did not work correctly on Windows servers. Fixed.
+
+[!] Exim: A warning message informing about a missing function argument appeared after exporting products. Fixed.
+
+[!] Flash animations uploaded as product images were displayed all at once, not one by one. Fixed.
+
+[!] Floating elements were displayed incorrectly on Android. Fixed.
+
+[!] Form builder: Extra element options were copied after node adding. Fixed.
+
+[!] Form builder: Selectable elements list was not passed to the new form template. Fixed.
+
+[!] Global search results were not displayed for administrator with restricted permissions if there was only one product in the search results. Fixed.
+
+[!] If a block of the Products Scroller type was displayed on a details page of the product having additional images, the Image gallery did not work. Fixed.
+
+[!] If a product image was uploaded through an URL and it could not be copied to the store, the PHP error occurred. Fixed.
+
+[!] If the "Disable shipping" setting was checked, the PHP warnings were displayed on the fourth step of the Order management page. Fixed.
+
+[!] If two "Unique HTML content"-type blocks were created in the Block manager, they both always had the same content on the detailed product page. Fixed.
+
+[!] Import: admin was able to import data with empty required field. Fixed.
+
+[!] In stock notifications email were being assigned without check. Fixed.
+
+[!] Logs: Records with the same timestamp were sorted incorrectly. Fixed.
+
+[!] Multi-Vendor Edition: "Free product" promotion did not work with products from different vendors. Fixed.
+
+[!] Multi-Vendor Edition: During multiple page update the "company_id" parameter would be reset to "0" if company was not selected before. Fixed.
+
+[!] Multi-Vendor Edition: Product features were not displayed for vendors, if the feature had more than 50 variants. Fixed.
+
+[!] Multi-Vendor Edition: Subcategories without parent categories were not displayed for vendors. Fixed.
+
+[!] Multi-Vendor Edition: Vendors had no ability to preview products that were not approved. Fixed.
+
+[!] Mailing Lists: SQL error was shown when first mailing list was added. Fixed.
+
+[!] News and emails add-on: After adding a block on the edit news page the "Save" and "Save and close" buttons did not work. Fixed.
+
+[!] Node cloning: Node disabling was not visible in Opera. Fixed.
+
+[!] Node cloning: The select box value was not being reset in IE7, IE8
+
+[!] Node cloning: The select box value was being set incorrectly. Fixed.
+
+[!] Order status: Long status names were being cut by the picker borders. Fixed.
+
+[!] Orders: Date format was ignored on the order manage page. Fixed.
+
+[!] Orders: Manage downloads controls were not shown in orders. Fixed.
+
+[!] Orders: Order creation is written to the log when editing the order. Fixed.
+
+[!] PHP warnings were displayed after image uploading in case "magic database" was not properly installed. Fixed.
+
+[!] Pages: admin was redirected to the incorrect tab after deleting a page. Fixed.
+
+[!] Payments: the "payment21" method was updated.
+
+[!] Paypal express: user info was parsed incorrectly. Customers was unable to pay for Gift Certificates. Fixed.
+
+[!] Paypal payment: Some orders failed because of wrong rounding of price in points. Fixed.
+
+[!] Pdf export: Greek characters were not displayed using html2pdf lib. Fixed.
+
+[!] Product Configurator: If a main product had sequential options, selected options were reset upon selecting a configuration. Fixed.
+
+[!] Product Configurator: Wrong param count if the "fn_change_option" function. Fixed.
+
+[!] Product configurator: Incorrect price calculation. Fixed.
+
+[!] Product features values were reset after multiple product updating. Fixed.
+
+[!] Product features: there was "memory limit" fatal error on products multiple update 
+page if features had many options. Fixed.
+
+[!] Product filters was sorted incorrectly. Fixed.
+
+[!] Products scroller block: Products were always scrolled automatically either to the right or downwards with no regard to the "Scroller direction" setting in the block features. Fixed.
+
+[!] Profile fields were not changed after switching profiles at checkout. Fixed.
+
+[!] Promotions: Product image would not change upon changing product options for free products in cart. Fixed.
+
+[!] RMA: Return request status was not displayed in the print slip. Fixed.
+
+[!] Recurring billing add-on: Recurring price was calculated before applying option modifiers. Fixed.
+
+[!] Reward points: Discount was calculated incorrectly when points were used for the order paying. Fixed.
+
+[!] Skins: Jewelry skin central column was aligned incorrectly. Fixed.
+
+[!] The "None" and "Enter other" product feature options were not displayed if the number of product feature options was higher than the value of the "PRODUCT_FEATURE_VARIANTS_THRESHOLD" constant. Fixed.
+
+[!] In the customer area during product options picking the "Out of stock" message would sometimes appear when only the first of several sequential options was set.
+
+[!] The "Price" field on the Editing order page was toggled incorrectly in IE9.
+
+[!] The Loading box would freeze when trying to upload files using an option of the "File" type with the size bigger than the allowed limit for a POST request. Fixed.
+
+[!] The page was blocked after opening a picker attached to another picker. Fixed.
+
+[!] The products picker crashed after the empty search result. Fixed.
+
+[!] Translation mode: Translation tags were not removed from the mails, prints, etc. Fixed.
+
+[!] Uppercase titles could brake the report layout. Fixed. The length of titles was reduced.
+
+[!] Users would keep getting a notification message about a trial license after entering the correct one in the store settings. Fixed.
+
+[!] Virtual merchant: incorrect "ssl_cvv2cvc2_indicator" value was sent to payment. Fixed.
+
+[!] Westpack: Payments failed because of the incorrect order status checking. Fixed.
+
+[!] eNETS payment: new required field was added.
+
+[!] W3C Validation: the "alt" parameter of th  image tag was missing somewhere. Fixed.
+
+[!] {#2706} Deleted products names were not displayed in the "Latest orders" section. Fixed.
+
+[!] {#2706} Sales reports: Empty data were displayed for deleted products in the categories statistics. Fixed. Statistics for the "Unknown" category was added.
+
+[!] {#2714} Comments and reviews: Links in the testimonials block were not escaped. Fixed.
+
+[!] {#2727} RSS feed block cache time was too long. Fixed. The "cache time" option was added.
+
+[!] {#2732} Catalog Mode: If the "Allow purchasing products with empty Buy Now URL" option was enabled then some product did not have a Buy Now URL specified for it. Fixed.
+
+[!] {#2773} Top menu links did not work on iOS. Fixed.

@@ -1,0 +1,163 @@
+***********************
+CS-Cart 2.1.4 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] The support of hidden language statuses was added.
+
+[+] MVE: The ability to view Sales reports for vendors was added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Gift Registry add-on: The appearance of the pop-up window for adding a new custom field was reduced to the standard appearance.
+
+[*] Users Import/Export: The User ID field was added.
+
+[*] The logic of the saved search functionality was improved.
+
+[*] New hooks were added to the “fn_gather_additional_products_data” function.
+
+[*] Only CS-Cart tables are selected on the database backup page by default now.
+
+[*] The Moneybookers payment method was divided into "Moneybookers eWallet" and "Mooneybookers Quick Checkout".
+
+[*] SEO add-on: Field descriptions were improved on the SEO-rules page in the administration panel.
+
+========
+Bugfixes
+========
+
+[!] Attachments add-on: There was no ability to change the attachment status on the detailed product page in the administration panel. Fixed.
+
+[!] The Registered Post International shipping service of Australia Post did not work correctly with multi-thread requests. Fixed.
+
+[!] Flash objects and scripts were not displayed in blocks in Safari at the CRE Secure checkout. Fixed.
+
+[!] Images were not displayed in blocks in Safari at the CRE Secure checkout. Fixed.
+
+[!] The calendar worked incorrectly at the checkout. Fixed.
+
+[!] Exim: If products were imported with zero taxes, all product taxes were zeroed. Fixed.
+
+[!] The text was cut to 255 symbols in the Form builder. Fixed.
+
+[!] Gift Registry: It was possible not to fill in some required fields while creating a new event. Fixed.
+
+[!] Gift Registry: PHP warnings were displayed on the page with the results of search for events if custom event fields were created. Fixed.
+
+[!] Gift Registry: The content of the email notification that was sent after creating a new private event was incorrect. Fixed.
+
+[!] Gift Registry: Searching by event type did not work. Customer's events became not available after the administrator had modified them. Fixed.
+
+[!] Gift Registry: The error notification was displayed when deleting a custom field with variants. Fixed.
+
+[!] Gift Registry: Products were removed from all events if several events had the same product. Fixed.
+
+[!] Hot deals add-on: If a product image file contained the '&' sign and the SEO add-on was enabled, this file was uploaded by the browser two times. Fixed.
+
+[!] If multi-threading was used for the calculation of the cost of shipping methods, the returned shipping methods were sorted not by the position specified in the administration panel. Fixed.
+
+[!] Images and styles were not displayed at the CRE Secure checkout. Fixed.
+
+[!] It was possible to remove a free product from the pop-up cart. Fixed.
+
+[!] Order management: If the last product was removed while editing an order, this order was displayed as newly created. Fixed.
+
+[!] Order management: The stored price was displayed incorrectly on the edit product page. Fixed.
+
+[!] Paypal: If a product name had HTML tags, PayPal always declined any order with this product. Fixed.
+
+[!] Product Feature: Brackets were missed around the question sign. Fixed.
+
+[!] Product configurator add-on: If option combinations had their own images, the main product image was not changed after selecting these option combinations. Fixed.
+
+[!] Product options: Option variant images were switched incorrectly in IE8 if they were cached. Fixed.
+
+[!] Statistics add-on: An incorrect format of the IP address was passed to the GeoIP library. Fixed.
+
+[!] Last viewed/Recently viewed menu items were always empty. Fixed.
+
+[!] Affiliate: The process of paying out to the affiliate could result in heavy load on the server, and sometimes it led to the impossibility of creating a new payout. Fixed.
+
+[!] The alignment of the quick search drop-down field in the "Brickwork" skin was incorrect. Fixed.
+
+[!] Google Sitemap: The PHP notice was displayed during the initial generation of the sitemap. Fixed.
+
+[!] Google Sitemap: When the connection with the server was broken, the sitemap was generated incorrectly on some hosting servers. Fixed.
+
+[!] Hot deals: Flash files could not be used as product images in the Hot deals block. Fixed.
+
+[!] If quantity discounts were not set for a product, the product was not displayed when searching by price. Fixed.
+
+[!] If an add-on was disabled, its override templates were still displayed in the store. Fixed.
+
+[!] Blocks with empty content were displayed. Fixed.
+
+[!] FedEx International shipping rates were not returned if the length of a state/province code exceeded 2 symbols. Fixed.
+
+[!] Flash files could not be used as product images. Fixed.
+
+[!] Product thumbnails had an incorrect margin on the grid layout in the "Green web" skin. Fixed.
+
+[!] Paypal: When the Japanese Yen currency was selected in the payment method settings, the order total value was transferred as a fractional one to the payment system and the payment was failed with the following error: "The link you have used to enter the PayPal system contains an incorrectly formatted item amount.". Fixed.
+
+[!] The product filter by suppliers was empty on the "Manage products" page in the administration panel. Fixed.
+
+[!] Products could be added to the cart with the quantity that was more than available in stock. Fixed.
+
+[!] SEO add-on: If the SEO add-on was enabled, some wrong URL addresses did not return the "Page not found" error, but showed the home page instead. Fixed.
+
+[!] Shipping rates were not calculated for supplier's products if the "Display shipping methods to each supplier separately" setting was cleared. Fixed. [!] Shipping rates were not calculated for tiny packages. Fixed.
+
+[!] MVE: Vendors could remove the product filters defined by the administrator. Fixed.
+
+[!] When a promotion was set for some categories, the information about the received discount was not displayed in the results of product search by all categories. Fixed.
+
+[!] Wrong parameters were passed to the “get_additional_product_data” hook. Fixed.
+
+[!] A user name was not displayed after the expiry of a session. Fixed.
+
+[!] Block manager: The "Grid2" template was not displayed in the "Appearance type" select box. Fixed.
+
+[!] MVE: The “Design” mode was available to vendors. Fixed.
+
+[!] HTML block cache: The block with Events was cached incorrectly. Fixed.
+
+[!] HTML block cache: The block with Testimonials with random filling was cached incorrectly. Fixed.
+
+[!] Links on the "View all product features" page were not SEO-friendly. Fixed.
+
+[!] Only one coupon code was displayed on the order details page. Fixed.
+
+[!] Order management: The product having required products could not be added to the cart. Fixed.
+
+[!] PHP notices were displayed on the upgrade center page if the "exec" and "system" functions were disabled. Fixed.
+
+[!] Pagination did not work correctly on some pages. Fixed.
+
+[!] PayPoint payment methods: The CVV2 code was not passed to the payment gateway. Fixed.
+
+[!] Product filters: When a category was disabled, the number of products in the filter was not updated. Fixed.
+
+[!] Product images were not cloned when products were cloned. Fixed.
+
+[!] Quick Search: Searching by product codes did not work. Fixed.
+
+[!] User registration timestamp was not updated after the installation. Fixed.
+
+[!] The type of CS-Cart edition was not passed to the upgrade server. Fixed.
+
+[!] The Cancel button on the edit product page did not take to the page with the results of the latest products search. Fixed.
+
+[!] Mailing lists were not displayed on the one-page checkout if the AJAX-redirect to the first step was performed. Fixed.
+
+[!] The Sagepay direct payment method did not work properly. Fixed.
+
+[!] The Fedex Ground shipping service did not work if the address type was "residential". Fixed.
+
+[!] Upgrade center: If the CS-Cart administrator removed an upgrade package, the subsequent packages were removed automatically as well. Fixed.

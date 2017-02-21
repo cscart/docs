@@ -1,0 +1,133 @@
+************************
+CS-Cart 2.0.11 Changelog
+************************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Shipment functionality was added.
+
+[+] The Buy together addon was added.
+
+[+] SEO addon: multilanguage support was added. SEO names were added to the news. New seo type was added for the categories URL format. The "Use single URL for all languages" option was added (for backward compatibility with old systems).
+
+[+] The "notify customer" option was updated. The "notify orders department" option was added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] The displaying of lists created via tinyMCE was corrected.
+
+[*] The products list creation was changed. New list templates were added.
+
+[*] The displaying of the bottom quick links was corrected.
+
+[*] The displaying of the dropdown menu was corrected.
+
+[*] Hooks were added to a product picker in the admin area.
+
+[*] Product price displaying in the admin area was changed. Ability to separate price sign and price value was added.
+
+[*] Language variable was added.
+
+[*] The "check_amount_in_stock" hook was added.
+
+[*] Payflow Pro payment was updated.
+
+[*] The SecPay payment was renamed to PayPoint.
+
+[*] The displaying of the Compact product list was corrected.
+
+========
+Bugfixes
+========
+
+[!] Files option: an error was displayed after editing the configurable product with the file option and file size limitation. Fixed.
+
+[!] Restricted administrators that had no 'manage' privileges could assign user groups to customer profiles. Fixed.
+
+[!] Subscriptions were created for configurable components that had subscription plan after order was edited. Fixed.
+
+[!] Restricted administrators could change a profile type to 'administrator'. Fixed.
+
+[!] Restricted administrators could change administration user group type. Fixed.
+
+[!] Recurring billing addon: the 'Pay order' form was displayed for orders that were not assigned to the subscriptions. Fixed.
+
+[!] Recurring billing addon: custom order notifications overrode notifications for default orders. Fixed.
+
+[!] Recurring billing addon: subscription plan information was not displayed in the invoice. Fixed.
+
+[!] Taxes were not saved for products when editing order and changing product options. Fixed.
+
+[!] Large number of different products (> 130) could not be added to cart. Fixed.
+
+[!] Product configurator addon: many products could not be marked as default for a configurable product group. Fixed.
+
+[!] Product popups were displayed after a page was reloaded if autohide functionality was disabled. Fixed.
+
+[!] Javascript core: there was incorrect rounding of the value in the "formatNum" function (for example 14.9999999 => 14.100). Fixed.
+
+[!] Order management: discounts were calculated incorrectly if a customer edited prices manually. Fixed.
+
+[!] Order management: prices were displayed without price modifiers on the "totals" page. Fixed.
+
+[!] Taxes were not shown on a product detail page if the "Display prices with taxes on category/product pages" was enabled. Fixed.
+
+[!] Wishlist addon: custom files were omitted when products from wishlist were added to cart. Fixed.
+
+[!] Storefront: empty 'user groups' table was displayed on the profile page if the "Allow customer to signup for user group" setting was disabled and there were no active user groups. Fixed.
+
+[!] Fatal PHP error occurred when updating a cms page with blocks. Fixed.
+
+[!] Option modifiers were displayed even for unlogged customers if the "Allow shopping for unlogged customers" setting was set to "Hide price and the 'Add to cart' button". Fixed.
+
+[!] Product configurator addon: prices for additional products were displayed even for unlogged customers if the "Allow shopping for unlogged customers" setting was set to "Hide price and the 'Add to cart' button". Fixed.
+
+[!] Notice was displayed when adding products to a block. Fixed.
+
+[!] Product configurator addon: product options were displayed on the product list page. Fixed.
+
+[!] Shipping was disabled if there were products with suppliers and "free shipping" or downloadable products without suppliers in the cart, while there was no shipping method without suppliers. Fixed.
+
+[!] Customers who added products only to the wishlist (but not to the cart) were displayed on the User carts page even if the Wishlist addon was disabled. Fixed.
+
+[!] Payment processor "Virtual Merchant" didn't work. Fixed.
+
+[!] Data (products, categories, etc.) was not retrieved in NO_SESSION mode. Fixed.
+
+[!] Product options were displayed for subscription product in the product list. Fixed.
+
+[!] A customer could not add a product to cart from multicolumns small list. Fixed.
+
+[!] The product filters' sql requests were generated incorrectly. Fixed.
+
+[!] Users export/import: user groups were processed incorrectly. Fixed.
+
+[!] Sessions were not initiated correctly for some payment systems. Fixed.
+
+[!] 'Send to friend' addon: there was an incorrect seo link in the letter for a friend. Fixed.
+
+[!] The redirection from the PayPoint server to the client's store worked incorrectly. Fixed.
+
+[!] Gift certificates addon: the "notify customer" option did not work when adding a certificate. Fixed.
+
+[!] The country name was not displayed on the Invoice page. Fixed
+
+[!] Buy together addon: products quantity became incorrect after the cart update, if quantity in stock was lower than the new value. Fixed.
+
+[!] If there were several pickers of the same type on a page, they worked incorrectly. Fixed.
+
+[!] Recurring billing addon: there was a php warning when adding a subscription product to the wish list. Fixed.
+
+[!] Applied reward points were not deleted on the checkout page.
+
+[!] Product features: feature groups were not sorted by the position. Fixed.
+
+[!] Storefront: advanced filtering options did not work on the product feature page. Fixed.
+
+[!] Google sitemap addon: not all products were included in the sitemap. Fixed.
+
+[!] Block manager: wrapper of the "Central content" block could not be changed. Fixed.

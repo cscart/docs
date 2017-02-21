@@ -1,0 +1,207 @@
+***********************
+CS-Cart 4.4.3 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: The Google reCAPTCHA add-on was introduced to improve anti-bot validation.
+
+[+] Core: Upgrade: The ability to upgrade a store via console was implemented.
+
+[+] Hooks: Design: Backend: New hooks were added to the templates of the Administration panel to allow modifying the sidebars.
+
+[+] Hooks: Shipping methods: Package info: Hooks that can affect the package information were added.
+
+[+] Shipping methods: Australia Post: The ability to calculate package cost based on the dimensions of the largest parcel was added.
+
+[+] Shipping methods: UPS: The list of available pickup and package types was updated.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: Customers also bought: The most purchased products now appear first in the “Also bought” block.
+
+[*] Add-ons: PayPal payments: The default value of the “Order status on partial refund” setting is now “Do not change”. Effective for new 4.4.3 installations; those who upgrade from earlier versions are not affected by this change.
+
+[*] Core: File changes detector: Added folders now appear collapsed in the tree instead of being expanded.
+
+[*] Core: Mailer: The PHPMailer library was updated to version 5.2.22.
+
+[*] Orders: Sales reports: The “Total” line was removed from the “Categories sales” report.
+
+[*] Upgrade Center: Migrations: When a migration can’t be completed, the store upgrade is now stopped, and the technical details are displayed.
+
+========
+Bugfixes
+========
+
+[!] Add-ons: Call requests: Design: Bright theme: Disabling the “Call requests” add-on caused problems with the way the header was displayed. Fixed.
+
+[!] Add-ons: Call requests: Design: Cart block: The “Call requests” block could appear above the “Cart content” block. Fixed.
+
+[!] Add-ons: Call requests: The position of the buttons on the product details page changed slightly after pressing the “Add to cart” button. Fixed.
+
+[!] Add-ons: Call requests: Design: Under some circumstances the title of the “Buy now with 1-click” popup wasn’t displayed. Fixed.
+
+[!] Add-ons: Google Analytics: A PHP notice was generated after the order status was changed. Fixed.
+
+[!] Add-ons: Newsletters: Subscribers: Search: Searching subscribers by the "Confirmed" field didn't work properly. Fixed.
+
+[!] Add-ons: Newsletters: When a customer was added to a mailing list shared among storefronts 2 and 3, that customer was deleted from the mailing list shared among storefronts 1 and 2. Fixed.
+
+[!] Add-ons: SEO: All the generated 301 redirects led to non-secure (i.e. HTTP) URLs even when the secure connection was enabled for the full site. Fixed.
+
+[!] Add-ons: SEO: When changing a parent object for many objects at once, some child objects were skipped and their SEO names weren't updated automatically. Fixed.
+
+[!] Add-ons: Vendor's terms and conditions: Gift certificates: When purchasing a gift certificate without any products, vendor's terms and conditions still appeared at checkout. Fixed.
+
+[!] Blocks: Product filters: Templates for the "Product filters" and "Product filters for home page" blocks couldn't be added via an add-on. Fixed.
+
+[!] Checkout: Payment methods: Disabling a payment method while a customer was on the payment method selection step could lead to error 403, even if the customer refreshed the page. Fixed.
+
+[!] Core: A fatal error was caused due to incompatibility with PHP 7.1. Fixed.
+
+[!] Core: Add-ons: Dependencies on add-ons that were absent from the “app/addons” directory weren't checked. Fixed.
+
+[!] Core: AJAX: Blocks loaded via AJAX could be reloaded incorrectly, when not formatted properly. Fixed.
+
+[!] Core: File changes detector: The color of highlighting for changed files didn’t fit the legend. Fixed.
+
+[!] Core: Images: Thumbnails: If the generation of a thumbnail failed, the HTTP request could lead to an endless loop. Fixed.
+
+[!] Core: Links to the administration panel had wrong URLs, when generated from the customer area. Fixed.
+
+[!] Core: Multi-Vendor: Orders: Updating a non-parent order with the “fn_update_order” function marked that order as a parent order. Fixed.
+
+[!] Core: There was a typo in the fn.init.php file in "Tygh::$app['cache']". Fixed.
+
+[!] Core: Thumbnails: Thumbnails could be generated on the fly even if "lazy_thumbnails" in config.local.php was set to false. Fixed.
+
+[!] Design: Backend: Add-ons: The “Call requests” and “Attachments” add-ons had wrong icons. Fixed.
+
+[!] Design: Email templates: The specified font didn’t always appear in the email. Fixed.
+
+[!] Design: Layouts: Block descriptions were not loading from template files. Fixed.
+
+[!] Design: Layouts: Blocks: In some cases the action icons for blocks didn’t appear (even though they were clickable) or had a wrong color. Fixed.
+
+[!] Design: Layouts: Export/Import: When importing a layout, the store logo and the favicon were always replaced with the default ones. Fixed.
+
+[!] Design: Menu: Text links: A menu didn’t expand on a tablet if the menu block used the “Text links” template and had the “Show items inline” setting turned on. Fixed.
+
+[!] Design: Themes: Basic: Clicking on a filter in the Basic theme could lead to a JS error. Fixed.
+
+[!] Design: Themes: Bright: Category page: The product name area could be narrower than the width of the product image when a product had a long name. Fixed.
+
+[!] Design: Themes: Bright: Shipping estimator: The buttons in the shipping estimation pop-up on the cart page were positioned incorrectly. Fixed.
+
+[!] Design: Themes: Responsive: Bullets didn't appear for nested unordered lists. Fixed.
+
+[!] Design: Themes: Responsive: Shipping estimator: Shipping estimation buttons were displayed in the wrong order when the smartphone switched to the landscape (horizontal) mode. Fixed.
+
+[!] Design: My account: The margins for some fields were wrong. Fixed.
+
+[!] Document editor: Original values of the formatted attributes were not available. Fixed.
+
+[!] Document editor: The "state" field of the customer address contained the name of the state instead of the code. Fixed.
+
+[!] Document editor: WYSIWYG: Highlighting text in bold was not always processed by the editor. Fixed.
+
+[!] Document editor: Some email clients displayed wrong font in the documents. Fixed.
+
+[!] Documents & Email templates: The "Email templates mode" setting didn't work properly with multiple storefronts. Fixed.
+
+[!] Email templates: The emails didn’t display properly in Outlook 2016. Fixed.
+
+[!] Email notifications: Old template mode: Profiles: The link to the customer's profile didn't appear in an email sent after customer's registration. Fixed.
+
+[!] Export/Import: Product options: Exceptions: In some cases exceptions weren’t imported properly. Fixed.
+
+[!] Export/Import: Products: If a product name contained character ":", the part of the name before that character wasn’t imported. Fixed.
+
+[!] Global options: When the last option was deleted from the list, an error occurred. Fixed.
+
+[!] Multi-Vendor: Orders: Vendor administrators were unable to change shipment status. Fixed.
+
+[!] Multi-Vendor: Products: Add-ons: Tags: A Smarty error could occur when creating a new product while the “Tags” add-on was active. Fixed.
+
+[!] Multi-Vendor: Promotions: When purchasing products from multiple vendors in at once, the "Once per customer" condition applied and made the bonus apply only to one of the suborders. Fixed.
+
+[!] Multi-Vendor: Wrong text was used to display the Terms and Conditions when applying for a vendor account. Fixed.
+
+[!] Orders: Profile fields: Custom profile fields appeared in the order information even if they weren't filled in. Fixed.
+
+[!] Orders: Promotions: Cart promotions with the "Discount on product" bonus were processed incorrectly when they were applied during order editing. Fixed.
+
+[!] Product options: The “File” and “Checkbox” type options didn’t work together properly, if the checkbox was a required option. When a customer uploaded the file first and ticked the checkbox afterwards, the file wasn’t saved. Fixed.
+
+[!] Products: Add-ons: Attachments: A direct URL of a disabled or deleted attachment returned a blank page instead of "404 Not Found". Fixed.
+
+[!] Products: Features: A product feature could appear on the product editing page even if that feature wasn’t available for that product. Fixed.
+
+[!] Products: Features: Product editing: The number of items per page on the “Features” tab on the product editing page wasn’t saved. Fixed.
+
+[!] Products: Filters: When multiple filter variants were selected, another wrong filter was added automatically. Fixed.
+
+[!] Products: Product tabs: Inline scripts were not executing if the tab was loaded from a block. Fixed.
+
+[!] Products: Search: The sorting order and number of items per page could be reset to default when selecting one of the filter variants. Fixed.
+
+[!] Profile fields: The data in custom profile fields wasn’t saved after a customer used guest checkout and created an account. Fixed.
+
+[!] REST API: Orders: Customer's payment information was provided via REST API. Fixed.
+
+[!] Shipping methods: Getting a carrier information caused a store crash on some versions of PHP 5.3. Fixed.
+
+[!] Themes: Settings overrides: Overwritten settings values were displayed as they were stored in the database. Fixed.
+
+[!] Themes: Settings overrides: When cloning a theme, settings overrides were not present in the cloned theme. Fixed.
+
+[!] Upgrade center: Child themes were not upgraded at all, even when present in an upgrade package. Fixed.
+
+[!] Widget mode: JS: Add-ons: Comments and reviews: Clicking on a product rating didn’t scroll the page to the list of reviews. Fixed.
+
+[!] Widget mode: JS: The popup content didn’t appear if Bootstrap 3 was used on the page that included the widget. Fixed.
+
+[!] Widget mode: The widget didn’t work when embedding on sites using RequireJS. Fixed.
+
+[!] {#6513} Filters: When selecting the “In stock” filter, the variants for other filters couldn’t be selected. Fixed.
+
+[!] {#6520} Authorization: Password recovery: The password recovery link always used the HTTP protocol, even when the site used HTTPS. Fixed.
+
+[!] {#6529} Add-ons: SEO: 301 redirects from the pages of categories didn't work when “Category SEO URL format” was set to “/parent-category/category-[page-2].html” or “category[-page-2].html” Fixed.
+
+[!] {#6534} Core: File changes detector: Uninstalling an add-on could mark its files from the “design” directory (templates, styles, images) as “Deleted” in file changes detector. Fixed.
+
+[!] {#6535} Products: Search: After renaming a product shared with a storefront, it could only be found on that storefront by its old name. Fixed.
+
+[!] {#6538} Add-ons: Social login: The PayPal icon didn’t appear in the admin panel when editing a customer’s account. Fixed.
+
+[!] {#6547} Design: Menu: If touched, a menu expanded and collapsed on mobile devices even when scrolling. Fixed.
+
+[!] {#6548} Settings: Appearance: Timezone "Athens, Beirut, Istanbul" was no longer relevant because the time in Athens and Istanbul was different. Fixed; the timezone "Athens, Beirut, Istanbul" was split into 3 separate timezones.
+
+[!] {#6553} Shipping methods: FedEX: Shipping rates for Freight shipping services couldn't be calculated. Fixed.
+
+[!] {#6555} Document editor: WYSIWYG: The changes made with the use of CKEditor weren’t saved via AJAX. Fixed.
+
+[!] {#6563} Add-ons: Call requests: Design: Bright theme: The “Highlight first chars” setting didn’t work. Fixed.
+
+[!] {#6578} Design: Bright theme: Call requests: When disabling the “Call requests” add-on, an error occurred in the “Call requests” block. Fixed.
+
+[!] {#6580} Add-ons: Form builder: Old template mode: The email with the filled out form didn't include the selected values of "Multiple checkboxes" and "Multiple selectbox" fields. Fixed.
+
+[!] {#6582} Add-ons: Newsletters: Sent emails could have "default_company_name" instead of the actual company name in the "From:" field. Fixed.
+
+[!] {#6586} Design: Products: Product tabs: Switching between tabs did not work properly when using the smartphone in the landscape (horizontal) mode. Fixed.
+
+[!] {#6589} Products: Low inventory: Old template mode: The email notification about the product being out of stock didn't include the value in the "Amount" field. Fixed.
+
+[!] {#6593} Multi-Vendor: Payments: 2checkout: No order notifications were sent when buying products from multiple vendors. Fixed.
+
+[!] {#6603} Design: Orders: Account creation: The registration form after placing an order as guest occupied only half of the screen on mobile devices. Fixed.
+
+[!] {#6611} Multi-Vendor: Add-ons: Vendor plans: Changes to products made on the product list in the "All vendors" mode weren't saved. Fixed.

@@ -1,0 +1,79 @@
+***********************
+CS-Cart 4.3.9 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: PayPal payments: Ability to set payment surcharge for payment methods that use PayPal services was added.
+
+[+] Hooks: Additional argument was added to the "update_image" hook to distinguish cloning from other cases.
+
+[+] Hooks: Orders: A new hook for shipment details info was added.
+
+[+] Hooks: Products: A new hook for extending mass product update fields was added.
+
+[+] Hooks: Products: A new hook was added for field groups.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Design: Themes: Responsive: The "multiple_buttons.tpl" template was deprecated.
+
+========
+Bugfixes
+========
+
+[!] Abandoned / Live carts: The "cscart_user_session_products.order_id" field didn't have an "unsigned" attribute. Fixed.
+
+[!] Add-ons: Age verification: Products with age restrictions were displayed without those restrictions in several product blocks. Fixed.
+
+[!] Add-ons: Ebay Synchronization: Product feature initialization was broken, if the product had an empty feature group. Fixed.
+
+[!] Add-ons: eBay Synchronization: Redefinition of a product description was broken, if WYSIWYG was used. Fixed.
+
+[!] Add-ons: HiDPI displays support: The add-on shrinked product images during the cloning process. Fixed.
+
+[!] Add-ons: Image Zoom: Resizing a detailed image to the correct ratio could cause performance issues. Fixed.
+
+[!] Add-ons: PayPal payments: Order management: The payment processor response wasn't changed when IPN was received. Fixed.
+
+[!] Add-ons: Social buttons: The link in e-mails did't look nice and clean. Fixed.
+
+[!] Add-ons: Social buttons: Wrong URLs were generated for pages. Fixed.
+
+[!] Checkout: Payments: eWAY: The payment form data encryption was performed multiple times in some cases. Fixed.
+
+[!] Checkout: Taxes: Taxes based on Unit price were not calculated on the cart and checkout pages for unauthorized users. Fixed.
+
+[!] Checkout: The empty cart notification used the language variable name instead of the text. Fixed.
+
+[!] Core: Pages: The "avail_from_timestamp" and "avail_till_timestamp" fields were erased by the "fn_update_page" function. Fixed.
+
+[!] Core: URL: Wrong links from the admin panel to storefronts could be generated in the All Stores mode. Fixed.
+
+[!] Design: Images: Images were displayed incorrectly, if they were very large. Fixed.
+
+[!] Emails: Links, which contained the punycode text, were not decoded. Fixed.
+
+[!] Multi-Vendor: Add-ons: RMA: A PHP notice was displayed, when the return status was changed. Fixed.
+
+[!] Orders: If a store had over 10000000 orders, an admin couldn't open orders with id > 10000000 in Marketing -> Abandoned / Live carts. Fixed.
+
+[!] Products: Filters: The filter by a shared feature wasn't shown on the additional storefront, if the main storefront had the filter by this feature. Fixed.
+
+[!] Promotions: If the coupon code had digits in the beginning, a false notice saying that the code worked was shown. Fixed.
+
+[!] {#6377} Add-ons: RMA: PayPal: Partial refund could be performed multiple times, when the return request status was changed. Fixed.
+
+[!] {#6382} Products: Quick View: A product image wasn't changed after the option was changed. Fixed.
+
+[!] {#6387} Add-ons: Store locator: After clicking the View store button the page wasn't scrolled to the map. Fixed.
+
+[!] {#6389} Orders: Tracking number wasn't shown on the order details page, if the carrier wasn't specified. Fixed.
+
+[!] {#6410} Exim: The primary id of a new record could be incorrect. Fixed.
+
+[!] {#6418} Core: CSS: Font names were wrong in the compiled styles file, if a CSS property value was forced with "!important". Fixed.

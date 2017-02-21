@@ -1,0 +1,17 @@
+***********************
+CS-Cart 3.0.6 Changelog
+***********************
+
+=====================
+Functionality Changes
+=====================
+
+[*] Shippings: USPS shipping services updated.
+
+========
+Bugfixes
+========
+
+[!] Addons: SEO: SEO names were re-generated with the default values when saving categories at categories management page. Fixed.
+
+[!] Payments: PayPal standard: It was possible to place an order and direct the payment to a third party PayPal account. Fixed.

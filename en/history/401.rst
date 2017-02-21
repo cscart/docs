@@ -1,0 +1,145 @@
+***********************
+CS-Cart 4.0.1 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: News and emails: Ability to share mailing lists added.
+
+[+] Fly-out jQuery image zoom plugin 'Cloud Zoom' added.
+
+[+] Hybriad Auth add-on integrated.
+
+[+] Orders: The Issuer field added to hold the data of the administrator which created an order via the admin panel.
+
+[+] Payments: EPDQ payment updated.
+
+[+] Profiles: Store selector added to admin profile.
+
+[+] Retina display support added.
+
+[+] Shippings: Temando shipping added.
+
+[+] Statuses: Ability to define different email subject and header for different stores added.
+
+[+] Tag-it plugin for tags added. Tag styles improved.
+
+[+] Users: Main storefront administrator can now manage other administrators of the same storefront.
+
+[+] Users: Usergroups sharing removed.
+
+[+] {9609} Database: New ?m placeholder added to convert 2-level key-value arrays into '(key1, key2) VALUES (key1val1, key2val1), (key1val2, key2val2)' expressions.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Ability to select country for a language added.
+
+[*] Ability to sort the Categories menu items by name added.
+
+[*] Layout editor: Ability to disable/enable grids added.
+
+[*] Language code changed to lower case.
+
+[*] Multi-Vendor Edition: On the Vendor account balance page, if a search by a particular vendor is performed, then on a new payout adding this vendor was chosen as the recipient automatically.
+
+[*] Possibility to select country for language was added.
+
+[*] Product filters: Filter results are now URL-defined and can be referred to with browser back and forward actions.
+
+[*] Slovenian language code changed from 'SI' to 'sl'.
+
+========
+Bugfixes
+========
+
+[!] Add-ons: Age verification: Birthday field value was reverted after update. Fixed.
+
+[!] Add-ons: Janrain and Loginza user identifiers were lost during profile updates on checkout page. Fixed.
+
+[!] Add-ons: Reward points: A discount could be applied more than once on the order management page. Fixed.
+
+[!] Add-ons: SEO add-on: Ability to auto-generate SEO name did not work for products with user-defined names. Fixed.
+
+[!] Add-ons: Store import: Alternative text for images was not imported. Fixed.
+
+[!] Add-ons: Store locator: html tags were stripped when admin update store location. Fixed.
+
+[!] Admin panel: Order details: If a selectbox-type option was excepted and could not be selected, the option was shown on the order details page anyway, with an empty value. Fixed.
+
+[!] Checkout: If a selectbox-type option was excepted and could not be selected, the option was shown in the Invoices and e-mails anyway, with an empty value. Fixed.
+
+[!] Checkout: If a selectbox-type option was excepted and could not be selected, the option was shown in the Order summary block anyway, with an empty value. Fixed.
+
+[!] EDP: Checkout: The LICENSE AGREEMENT link was valid only on the 1st tab on the 'Billing option' checkout step. Fixed
+
+[!] Export/Import: Cyrillic symbols were exported in non-readable format during order items export. Fixed.
+
+[!] Layout editor: Feature Comparison: A block was shown even with no items in it. Fixed.
+
+[!] Multi-vendor edition: Products: Images: Vendor could not update update position on an additional image. Fixed.
+
+[!] Payments: Assist payment refactored.
+
+[!] Payments: Cresecure: PHP errors appeared during transaction. Fixed.
+
+[!] Payments: Order could be placed without a payment method defined if a discount was applied. Fixed.
+
+[!] Payments: Sagepay form: Product prices were formatted incorrectly on the payment service side. Fixed.
+
+[!] Payments: Yes credit: Products named in Cyrillic letters were displayed in URL encoding in the payment admin area. Fixed.
+
+[!] Payments: Pay & Read: Payment integration updated to suit the latest service updates. Fixed.
+
+[!] Payments: Express checkout buttons were displayed if a customer was not logged in and the Disable anonymous checkout option was enabled. Fixed.
+
+[!] Performance: Blocks: Products: Product-type blocks were not cached on block rendering. Fixed.
+
+[!] Product filters: When a variant was selected in one filter, another filter could be shown incorrectly. Fixed.
+
+[!] Product options: Product price was calculated incorrectly for products with option-modified zero prices, except the 1st product in a product list. Fixed.
+
+[!] Product options: If one of radio-type options with price modifiers occured in the Forbidden combinations list, its price modifier was still taken into account. Fixed.
+
+[!] Products: Product tabs statuses were not copied on cloning. Fixed.
+
+[!] Product search: No results were found when searching by description in Greek in teh customer area. Fixed.
+
+[!] Promotions: Error PHP notices were displayed on the cart content page, if Promotion with the "Products" conditons was applied to the cart. Fixed.
+
+[!] Promotions: Empty catalog promotions resulted in 100% discount. Fixed.
+
+[!] Shippings: Australia post: Shipping rates for the Registered Post International were calculated incorrectly. Fixed.
+
+[!] Shippings: USPS: Name of the country South Korea was changed by the service. Fixed.
+
+[!] Shippings: UPS: UPS did not work if customer password contained he & symbol. Fixed.
+
+[!] The 'items per page' links were indexable by search engines. Fixed.
+
+[!] Ultimate edition: Admin panel: Languages: Search by language variable value did not return any results when performed with a particular storefront selected. Fixed.
+
+[!] Ultimate edition: Languages: If an object was created by a storefront administrator, the descriptions for not shared languages were not created. Fixed.
+
+[!] Ultimate edition: Locations: Locations could not be edited by a storefront administrator. Fixed.
+
+[!] Ultimate edition: Products: Global update: Storefront prices were not updated on global update. Fixed.
+
+[!] {#3713} Multi-Vendor edition: Blocks: Incorrect save occured when a vendor block was manually filled. Fixed.
+
+[!] {#3725} Add-ons: Required products: An endless loop occured when one of 2 mutually required products was removed from cart. Fixed.
+
+[!] {#3774} Multi-Vendor edition: Products: Vendor could change product vendor on the bulk update page. Fixed.
+
+[!] {#3807} Add-ons: Gift registry: When a product was added to cart from an event page, the product options defined on event creation were ignored. Fixed.
+
+[!] {#3813} Sales report: The Search button was missing in the admin panel if a vendor admin was logged in. Fixed.
+
+[!] {@9900} Customer area: Top menu: JS error occured if Catalog was a top menu item, the Second level elements setting was set to 18, and 16 root categories were to display. Fixed.
+
+[#3749] Add-ons: Required products: Records were not deleted from the required products database on product removal. Fixed.
+
+[@9355] Add-ons: Required products: SQL query improved.
