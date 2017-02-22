@@ -30,7 +30,7 @@ Top panel and header
         :linenos:
 
 
-Остальные блоки остаим как есть.
+Остальные блоки оставим как есть.
 
 На макете не представлен функционал *Профиль пользователя*, но он важен для пользователя. Поэтому блок оставим как есть.
 
@@ -101,7 +101,7 @@ Top panel and header
 
 Для Mакетов(Layouts) шаблоны расположены в ``templates/blocks``. Для блока *Валюты(Currencies)* используется шаблон ``templates/blocks/currencies.tpl``.
 
-Подлкючение шаблона определяется в схеме ``app/schemas/block_manager/blocks.php``
+Подкючение шаблона определяется в схеме ``app/schemas/block_manager/blocks.php``
 
     .. literalinclude:: files/schema.php
         :linenos:
