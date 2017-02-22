@@ -2,6 +2,10 @@
 How To: Set Up Image Verification (CAPTCHA)
 *******************************************
 
+.. important::
+
+    Bots can bypass the CAPTCHA described in this article. We recommend using one of the `third-party Google reCAPTCHA add-ons from our Marketplace <http://marketplace.cs-cart.com/?subcats=Y&status=A&pshort=Y&pfull=Y&pname=Y&pkeywords=Y&search_performed=Y&cid=88&q=google+recaptcha&dispatch=products.search&sl=en>`_ instead. Starting with version 4.4.3, CS-Cart and Multi-Vendor have a built-in :doc:`Google reCAPTCHA add-on </user_guide/addons/google_recaptcha/index>`.
+
 **Image verification (CAPTCHA)** is a way to determine that it's a human being that attempts to do something in your store: create an account, log in to an existing account, leave a comment, etc. If enabled and configured, image verification will allow to perform these and many other actions only if a user enters the text from a randomly generated image.
 
 You can see how image verification works in the picture below: there is a new mandatory *Anti-bot validation* field.
