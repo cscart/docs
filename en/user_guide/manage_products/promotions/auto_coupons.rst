@@ -70,11 +70,7 @@ For example, choose *Order subtotal*, then select *equal or greater*, and enter 
 
 2.7. Open the **Bonuses** tab and click the **Add bonus** button.
 
-2.8. Select the **Give coupon** option from the dropdown list, then choose the promotion you created in **Step 1**.
-
-.. important::
-
-    The **Give coupon** bonus generates a code for the selected discount coupon when the conditions are met.
+2.8. Select the **Give coupon** option from the dropdown list, then choose the promotion you created in **Step 1**. This will generate a code for the selected discount coupon when the conditions are met.
 
 2.9. Click the **Create** button.
 
@@ -82,7 +78,11 @@ For example, choose *Order subtotal*, then select *equal or greater*, and enter 
     :align: center
     :alt: The Give coupon bonus means that the coupon code will be generated and sent to customer.
 
-Now customers will see a popup when they add a product to cart and become eligible for the promotion. They can find their coupon code in the order details. The code won't be work and won't be sent to the customer by email until the status of the order is set to *Complete*.
+Now customers will see a popup when they add a product to cart and become eligible for the promotion. They can find their coupon code in the order details. 
+
+.. important::
+
+    The code won't work and won't be sent to the customer by email until the status of the order is set to *Complete*.
 
 .. hint::
 
