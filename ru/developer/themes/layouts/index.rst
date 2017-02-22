@@ -16,6 +16,6 @@
 
 Для этого зайдем в настройки ``Layout``. В блоке ``Switch layout`` при наведении появляется шестеренка, где есть ссылка *Properties*.
 
-В появившимся окне добавим выберим Layout width Fluid и  Minimal width поставим ``280`` и Maximal width равное ``1170``.
+В появившимся окне добавим выберем Layout width Fluid и  Minimal width поставим ``280`` и Maximal width равное ``1170``.
 
     .. image:: img/edit_layout.png
