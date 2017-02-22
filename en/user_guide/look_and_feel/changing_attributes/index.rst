@@ -26,7 +26,6 @@ In this section
     disable_right_mouse_click
     change_time_and_date
     edit_meta_tags
-    image_verification
     prices_in_secondary
     secondary_currency
     shipping_icons
@@ -41,6 +40,7 @@ In this section
     :hidden:
     :glob:
 
+    image_verification
     quick_search_method
     quick_search_product_code
     change_title

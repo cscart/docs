@@ -2,6 +2,10 @@
 How To: Set Up Image Verification (CAPTCHA)
 *******************************************
 
+.. warning::
+
+    This article describes the old CAPTCHA, which no longer exists since version 4.5.1. Please use the :doc:`Google reCAPTCHA </user_guide/addons/google_recaptcha/index>` add-on instead.
+
 **Image verification (CAPTCHA)** is a way to determine that it's a human being that attempts to do something in your store: create an account, log in to an existing account, leave a comment, etc. If enabled and configured, image verification will allow to perform these and many other actions only if a user enters the text from a randomly generated image.
 
 You can see how image verification works in the picture below: there is a new mandatory *Anti-bot validation* field.
