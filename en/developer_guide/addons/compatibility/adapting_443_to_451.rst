@@ -131,7 +131,7 @@ New Functions
 
 #. Check if reapplication of promotions according to the current rules during order editing is enabled::
 
-     fn_promotion_is_recalculation_enabled
+     fn_promotion_is_recalculation_enabled($cart)
 
 #. Update the status of a payout or withdrawal and send a notification to vendor, if required::
 
@@ -145,21 +145,18 @@ New Functions
 
      fn_ult_is_shared_object($object_type, $object_id, $company_id)
 
-#. Get schemes of the content for blocks by block types::
+#. Get the schemes of the content for blocks by block types::
 
      \Tygh\BlockManager\Block::getBlocksContentsByTypes(array $types)
 
-#. Gets data from the ``bm_block_statuses`` table::
+#. Get data from the ``bm_block_statuses`` table::
 
      \Tygh\BlockManager\Block::getSnappingBlockStatuses()
+
 
 -----------
 New Classes
 -----------
-
-#. ``\Tygh\BlockManager\Block::getBlocksContentsByTypes(array $types)`` gets the schemes of the content for blocks by block types.
-
-#. ``\Tygh\BlockManager\Block::getSnappingBlockStatuses()`` gets data from the ``bm_block_statuses`` table.
 
 #. ``\Tygh\VendorPayouts`` contains mechanisms of creating, updating and representing vendor account balance operations (the **Vendors → Accounting** page).
     
@@ -171,11 +168,15 @@ New Classes
 Changed Functions
 -----------------
 
-#. ``fn_companies_get_payouts()`` is now deprecated. Please use ``VendorPayouts::getList()`` and ``VendorPayouts::getTotals()`` instead.
+#. ``fn_companies_get_payouts($params = array(), $items_per_page = 0)`` is now deprecated. Please use one of these two functions instead:
+
+   * ``VendorPayouts::getList(array $params, $items_per_page = 0)``
+
+   * ``VendorPayouts::getTotals(array $params)``
 
 #. ``fn_get_order_payout_statuses()`` is now deprecated. Please use ``VendorPayouts::getPayoutOrderStatuses()`` instead.
     
-#. ``fn_companies_delete_payout()`` is now deprecated. Please use ``VendorPayouts::::delete()`` instead.
+#. ``fn_companies_delete_payout($ids)`` is now deprecated. Please use ``VendorPayouts::::delete($ids)`` instead.
 
 #.
 
