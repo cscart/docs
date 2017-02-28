@@ -10,8 +10,7 @@ Contents:
 
 .. sidebar:: Version
 
-.. sidebar:: Version
-
+    * `4.5.x <../4.5.x/index.html>`_
     * `4.4.x <../4.4.x/index.html>`_
     * `4.3.x <../4.3.x/index.html>`_
     * `4.2.x <../4.2.x/index.html>`_
