@@ -28,5 +28,5 @@ Setting up a separate server or a virtual machine isn’t always an option. If t
 
 * **Mac OS**—install  Homebrew and use it to install LAMP; as an alternative, use `XAMPP <https://www.apachefriends.org/index.html>`_ (not recommended)
 
-* **Windows**—use `XAMPP <https://www.apachefriends.org/index.html>`_ (not recommended)
+* **Windows** (not recommended)—use `XAMPP <https://www.apachefriends.org/index.html>`_
 
