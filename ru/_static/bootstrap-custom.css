@@ -279,7 +279,7 @@ body {
 .sidebar-tabs {
     float: left;
     padding: 0px;
-    margin: 0px;
+    margin: 0px 0px 0px 5px;
     margin-top: 40px;
 }
 
@@ -289,7 +289,7 @@ body {
 }
 
 .sidebar-tabs li a{
-    padding: 8px 15px;
+    padding: 8px 12px;
     float: left;
     font-size: 15px;
     color: #333;
