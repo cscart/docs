@@ -50,7 +50,7 @@ How To: Set up PayPal Pro in CS-Cart
 
    * **Test/Live mode**—select *Live* mode.
 
-     If you want to use the *Test* mode to see how the payment method works before you offer it to your customers, you’ll need to get additional accounts as described on `the PayPal website <https://developer.paypal.com/docs/classic/lifecycle/ug_sandbox/>`_.
+     You can use the *Test* mode to see how the payment method works. But this mode doesn't work with live PayPal accounts. For testing you’ll need to use `test accounts from PayPal Sandbox <https://developer.paypal.com/docs/classic/lifecycle/ug_sandbox/>`_.
 
 6. (optional) If necessary, click **Use Cardinal Centinel® for 3-D Secure Payer Authentication**. This will expand the additional section of the settings that you’ll need to fill in. 
 
