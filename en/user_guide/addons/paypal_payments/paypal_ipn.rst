@@ -28,25 +28,33 @@ Once the store receives a notification from PayPal, the status of the order is c
     :align: center
     :alt: The status conversion map for CS-Cart and PayPal.
 
-==============================================
-3. Why Do Some Orders End up with Open Status?
-==============================================
+============================================================
+3. Why Do Some Orders End up with Open or Incomplete Status?
+============================================================
 
-Since CS-Cart & Multi-Vendor 4.3.x, payment methods that use PayPal Express or PayPal Standard work as follows:
+Payment methods that use PayPal Express Checkout or PayPal Standard work as follows:
 
 1. A customer clicks the **Submit order** button on the checkout page. At this point we assume that the customer is ready to make the payment, so an order is created in the store.
 
-   The order has the **Open** status, because it hasn’t been paid for yet. The number of products in stock decreases to reflect that we have put the products aside for this customer.
+   If you use :doc:`PayPal Standard </user_guide/payment_methods/paypall>`, you can choose the status that this order will get on creation. Because the order hasn’t been paid for yet, there are two possible initial statuses:
+
+   * **Open**—by default, this status decreases the number of products in stock to reflect that we have put products aside for the customer. That way two customers won't be able to buy the same product while the payment is being processed by PayPal.
+
+   * **Incomplete**—this status ensures that you won't have abandoned unpaid orders with reserved products. But until the response from PayPal (an IPN message) arrives or the customer returns to the store via a link on the PayPal site, the order will be listed as **Incomplete**, and products won't be reserved for that customer.
+
+   .. note::
+
+       If you use **PayPal Express Checkout**, orders will always get the *Open* status initially.
 
 2. The customer is redirected to a PayPal page. Now there are three possible scenarios:
 
    * **The customer pays for the order successfully.**
  
-     In this case order remains **Open** until the store receives an IPN from PayPal. The customer doesn’t even have to return to the store via the link on the PayPal page.
+     In this case order remains **Open** or **Incomplete** until the store receives an IPN from PayPal. The customer doesn’t even have to return to the store via the link on the PayPal page.
 
    * **The customer uses the link on the PayPal page to cancel the payment and return to the store.**
 
-     When the customer returns via that special link, the store detects it. The order status is set to **Incomplete**, and the number of products in stock increases. The customer returns to the checkout page and can make changes and submit the order again.
+     When the customer returns via that special link, the store detects it. The order status is set to **Incomplete** (the number of products in stock increases, if the order was with the **Open** status). The customer returns to the checkout page and can make changes and submit the order again.
 
      .. hint::
 
@@ -56,13 +64,7 @@ Since CS-Cart & Multi-Vendor 4.3.x, payment methods that use PayPal Express or P
  
      The store can’t detect what happens on the PayPal page or if the customer is still there. From CS-Cart’s standpoint, everything is the same as first scenario: the customer might still have the page open and make the payment. It’s just taking longer than usual.
 
-     That’s why the order remains **Open** and the store awaits an IPN, even though there won’t be any. Here’s why we chose that status:
-
-     * The **Canceled** status wouldn’t work, because we don’t know whether or not the payment was made.
-
-     * The **Incomplete** status wouldn’t work either, because it increases the number of products in the inventory. 
-
-       That could result in other people buying the very same item while the customer is making the payment or while the store awaits an IPN.
+     That’s why the order remains **Open** or **Incomplete**, and the store awaits an IPN, even though there won’t be any. We can't set the **Canceled** status, because we don’t know whether or not the payment was made.
 
 3. After receiving an IPN, the store changes the status of the order according to the status conversion map.
 
