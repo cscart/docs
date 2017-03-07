@@ -44,7 +44,7 @@ Payment methods that use PayPal Express Checkout or PayPal Standard work as foll
 
    .. note::
 
-       If you use **PayPal Express Checkout**, orders will always get the *Open* status initially.
+       If you use **PayPal Express Checkout**, orders will always get the *Incomplete* status initially.
 
 2. The customer is redirected to a PayPal page. Now there are three possible scenarios:
 
