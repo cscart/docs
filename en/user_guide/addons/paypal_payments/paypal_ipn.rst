@@ -36,7 +36,7 @@ Payment methods that use PayPal Express Checkout or PayPal Standard work as foll
 
 1. A customer clicks the **Submit order** button on the checkout page. At this point we assume that the customer is ready to make the payment, so an order is created in the store.
 
-   If you use :doc:`PayPal Standard </user_guide/payment_methods/paypall>`, you can choose the status that this order will get on creation. Because the order hasn’t been paid for yet, there are two possible initial statuses:
+   If you use :doc:`PayPal Standard </user_guide/payment_methods/paypal>`, you can choose the status that this order will get on creation. Because the order hasn’t been paid for yet, there are two possible initial statuses:
 
    * **Open**—by default, this status decreases the number of products in stock to reflect that we have put products aside for the customer. That way two customers won't be able to buy the same product while the payment is being processed by PayPal.
 
