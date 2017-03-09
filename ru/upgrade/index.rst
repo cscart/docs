@@ -12,3 +12,4 @@
     upgrade_process
     resolve_conflicts
     cscart_not_found
+    upgrade_via_console

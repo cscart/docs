@@ -2,7 +2,7 @@
 Upgrade CS-Cart
 ***************
 
-There are two ways to upgrade CS-Cart:
+There are different ways to upgrade CS-Cart.
 
 ==============
 Upgrade Center
@@ -18,6 +18,19 @@ Starting with CS-Cart/Multi-Vendor 4.0.x, you can use the **Upgrade Center** to 
     upgrade_process
     resolve_conflicts
     cscart_not_found
+
+===================
+Upgrade via Console
+===================
+
+Starting with version 4.4.3, you can upgrade CS-Cart and Multi-Vendor via the command line.
+
+.. toctree::
+    :maxdepth: 2
+    :titlesonly:
+    :glob:
+
+    upgrade_via_console
 
 ============
 Store Import
