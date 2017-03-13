@@ -355,8 +355,8 @@ You should see the archive you uploaded, and any other files or directories you 
 
 In the example we have **cscart_v4.3.4.zip**. The name of your archive depends on the version of CS-Cart that you install.
 
-Step 3. Change Permissions
-==========================
+Step 3. Change Ownership and Permissions
+========================================
 
 3.1. Execute the following commands one by one:
 
@@ -370,13 +370,13 @@ Step 3. Change Permissions
 
 These commands set the right permissions for the files, so that CS-Cart can install properly. The 3 digits represent the **rights of the owner** of the file/directory, the **owner’s group**, and **other users** respectively.
 
-For example,
+For example, ``chmod 644 config.local.php`` means that:
 
-.. code-block:: bash
+* The owner of **config.local.php** can read the file and write to it **(6)**. 
 
-    chmod 644 config.local.php 
+* The group to which the owner belongs (e.g., administrators) can read the file **(4)**.
 
-means that the owner of **config.local.php** can read the file and write to it **(6)**; the group to which the owner belongs (e.g., administrators) can read the file **(4)**; all other users can also read the file **(4)**.
+* All other users can also read the file **(4)**.
 
 .. note::
 
@@ -391,6 +391,14 @@ means that the owner of **config.local.php** can read the file and write to it *
     A sum of the numbers represents a user’s set of rights, for example **read + write = 4 + 2 = 6**
 
     The types of rights for directories are the same. **Read** allows to get the list of the files and subdirectories; **write** allows to create, rename and delete files in the directory; **execute** allows to enter the directory and access files and directories inside.
+
+3.2. Set the Nginx user as the owner of your CS-Cart files. For example, on Ubuntu the default Nginx user is usually ``www-data``, and its group is ``www-data`` as well. In this case, this is the command you need to use::
+
+  chown -R www-data:www-data .
+
+.. warning::
+
+    Before running ``chown``, please use the ``ls`` command to double-check that you're it the Document Root. When you run ``chown`` as described above, all the files and folders you see, as well as and their subfolders and files, will be given to the specified user.
 
 Step 4. Create a Database
 =========================

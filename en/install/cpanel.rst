@@ -140,11 +140,11 @@ Step 4. Choose Your Licensing Mode
 
 The next step is to choose your licensing mode. You have 3 options:
 
-1. Enter your license number to enable the **Full Mode**, that gives you unrestricted access to all CS-Cart features, i.e. several dozens of add-ons, multiple languages and currencies, unlimited number of product filters on the storefront, and more. You can `purchase a license <http://www.cs-cart.com/cs-cart-license.html>`_ any time.
+1. Enter your license number to enable the **Full** mode, that gives you unrestricted access to all CS-Cart features, i.e. several dozens of add-ons, multiple languages and currencies, unlimited number of product filters on the storefront, and more. You can `purchase a license <http://www.cs-cart.com/cs-cart-license.html>`_ any time.
 
 2. If you don’t have a license yet, we offer a **free 30-day trial** with full access to all CS-Cart features. After the end of your trial period you can purchase a license or switch to the Free Mode.
 
-3. The **Free Mode** leaves some features unavailable, but has no time restrictions. You can use this mode from the start or switch to it once your trial period is over.
+3. The **Free** mode leaves some features unavailable, but has no time restrictions. You can use this mode from the start or switch to it once your trial period is over.
 
 .. important::
 
