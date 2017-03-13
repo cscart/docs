@@ -138,26 +138,23 @@ To do that, tick the **Install demo data** checkbox. You can always `remove demo
 Step 4. Choose Your Licensing Mode
 ==================================
 
-The next step is to choose your licensing mode. You have 3 options:
+The next step is to choose your licensing mode. You have 2 options:
 
-1. Enter your license number to enable the **Full Mode**, that gives you unrestricted access to all CS-Cart features, i.e. several dozens of add-ons, multiple languages and currencies, unlimited number of product filters on the storefront, and more. You can `purchase a license <http://www.cs-cart.com/cs-cart-license.html>`_ any time.
+1. Enter your license number to enable the **Full** mode, that gives you unrestricted access to all CS-Cart features, i.e. several dozens of add-ons, multiple languages and currencies, unlimited number of product filters on the storefront, and more. You can `purchase a license <https://www.cs-cart.com/licenses.html>`_ any time.
 
-2. If you don’t have a license yet, we offer a **free 30-day trial** with full access to all CS-Cart features. After the end of your trial period you can purchase a license or switch to the Free Mode.
+.. note::
 
-3. The **Free Mode** leaves some features unavailable, but has no time restrictions. You can use this mode from the start or switch to it once your trial period is over.
+    You can enter your `CS-Cart <https://www.cs-cart.com/cs-cart-license.html>`_ or `CS-Cart Ultimate <https://www.cs-cart.com/cs-cart-ultimate-license.html>`_ license number in this field.
 
-.. important::
-
-   The **Free Mode** is not available in Multi-Vendor. Beginning with version 4.3.7, it was removed from CS-Cart as well. Once the trial period expires, enter your license number to continue managing your store.
+2. If you don’t have a license yet, we offer a **free 30-day trial** with full access to all CS-Cart features. After the end of your trial period you'll need to enter your license number to continue managing your store.
 
 .. image:: img/cpanel/15_licensing_mode.png
     :align: center
-    :alt: Enter your CS-Cart license number, get a 30-day trial or use the free version. 
+    :alt: Enter your CS-Cart license number or get a 30-day trial. 
 
 Once you choose your licensing mode, your online store is all set! Now you can go to the **Storefront** to view your store, or to the **Administration panel** to manage it.
 
 .. image:: img/cpanel/16_complete.png
     :align: center
-    :alt: After the installation you can view the store and manage it. 
-
+    :alt: After the installation you can view the store and manage it.
 
