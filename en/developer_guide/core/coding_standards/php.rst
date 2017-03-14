@@ -2,6 +2,10 @@
 PHP
 ***
 
+.. contents::
+   :backlinks: none
+   :local:
+
 ================================
 The Right Way of PHP Development
 ================================
@@ -263,8 +267,153 @@ A function **should** have only one exit point. Two or more exit points are acce
   * it reduces code branching (it’s better to have multiple ``return`` than 5 nested ``if``)
   * it saves resources (that is the case with ``fn_apply_exceptions_rules`` in **fn.catalog.php**)
 
+-----------
+Code Smells
+-----------
+
+Code smells are symptoms of poor code architecture; they often cause problems with support, extendability, and testability of the code.
+
+^^^^^^^^^^^^^^^^^^^^^^^
+Nesting and Indentation
+^^^^^^^^^^^^^^^^^^^^^^^
+
+One of the worst code smells are multiple levels of nesting, which leads to multiple levels of indentation. Another example of this problem is when the entire code of the function is a part of a conditional. It hampers code readability and hints at poor code architecture.
+
+Avoid these situations by changing the code structure: make all the necessary checks at the beginning of the function, have multiple exist points, or decompose the function into smaller functions.
+
+.. important::
+
+    Follow a simple rule: if a function has more than 3 levels of indentation, you probably should decompose your code or change its structure.
+
+Here are 2 examples:
+
+*
+
+  ::
+
+    <?php
+
+    function foobar($foo, $bar, $baz = null)
+    {
+        if (!empty($foo['foo_bar'])) {
+            $foo_bar = $foo['foo_bar'];
+
+            if (!empty($bar) && $foo_bar > 10) {
+                if (!empty($baz)) {
+                   // No actions even take place until this point.
+                }
+            }
+        }
+
+        return false;
+    }
+
+*
+
+  ::
+
+    <php
+
+    public static function filterPickupPoints($data, $service_params)
+    {
+        $pickup_points = array();
+        if (!empty($service_params['deliveries'])) {
+            foreach ($data as $key => $delivery) {
+                if (!empty($delivery['is_pickup_point']) && in_array($key, $service_params['deliveries'])) {
+                    foreach ($delivery['pickupPoints'] as $pickup) {
+                        $pickup_points[$pickup['id']] = $pickup;
+                    }
+                }
+            }
+        }
+
+        return $pickup_points;
+    }
+
+
+^^^^^^^^^^
+Data Types
+^^^^^^^^^^
+
+PHP is a weak and dynamic typed language. It means that any declared variable can contain any type of data. While this provides opportunities, it also allows for more mistakes, which can result in unexpected problems during code execution. 
+
+When working with variables, it's a good idea to have a strict system of data types in mind. You must understand which data type can be stored in a variable, and structure your code according to this type casting. That way you won't compare strings with integers, and arrays with zeros.
+
+Describing the accepted and returned data types in ``PHPDoc`` when you develop a function or a method helps with type casting. That way you can set the value of a variable to the expected type in the body of the function and be sure what data type you are dealing with.
+
+This will allow you to use the ``===`` strict comparison operator, saving time for you and your colleagues in the future.
+
+.. important::
+
+    The code written for PHP 7 **must** use strict types for the returned values and arguments of functions.
+
+^^^^^^^^^^^^^^^^^^^
+Default Empty Value
+^^^^^^^^^^^^^^^^^^^
+
+You may often find empty strings as default values in the code. That's the wrong way. PHP has a separate data type for that purpose—it's ``null``.
+
+If you use 0 or empty string as a default empty value, it may lead to errors with business-related logic. Your code might interpret an actual 0 or empty string as the default empty value. Using the ``empty`` function in conditions and checks often contributes to those errors.
+
+.. important::
+
+    Use ``null`` and the ``===`` strict comparison operator as often as possible.
+
+^^^^^^^^^^^^^^^^^^^^^
+Inverted Conditionals
+^^^^^^^^^^^^^^^^^^^^^
+
+Conditionals like ``!empty($_REQUEST)`` hamper readability, especially when they are a part of complex conditionals and expressions. You **should** avoid inverted conditionals, unless the alternate solution makes the code even less readable.
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Example: Getting Rid of Code Smells
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Here's the example of code with multiple code smells at once::
+
+  if ($mode == 'assign_manager') {
+        if (!empty($_REQUEST['order_id'])) {
+            $order_id = $_REQUEST['order_id'];
+            $issuer_id = (!empty($_REQUEST['issuer_id'])) ? $_REQUEST['issuer_id'] : '';
+            $user_id = $auth['user_id'];
+
+            if (empty($issuer_id) || ($issuer_id != $user_id)) {
+                db_query('UPDATE ?:orders SET issuer_id = ?i WHERE order_id = ?i', $user_id, $order_id);
+            }
+            $order_info = fn_get_order_info($order_id, false, true, true, false);
+            Tygh::$app['view']->assign('order_info', $order_info);
+            $suffix = ".details?order_id=$order_id";
+      }
+
+      return array(CONTROLLER_STATUS_REDIRECT, 'orders' . $suffix);
+  }
+
+Here's how this code can be rewritten::
+
+  if ($mode == 'assign_manager') {
+      // Now the value is either integer, or null (it means 'not specified')
+      $order_id = isset($_REQUEST['order_id']) ? (int) $_REQUEST['order_id'] : null;
+      $issuer_id = isset($_REQUEST['issuer_id']) ? (int) $_REQUEST['issuer_id'] : null;
+      $user_id = (int) $auth['user_id'];
+
+      // All the necessary validations in one place
+      if ($order_id === null || $issuer_id === $user_id) {
+          return array(CONTROLLER_STATUS_REDIRECT, 'orders');
+      }
+
+      // Business-related logic
+      db_query('UPDATE ?:orders SET issuer_id = ?i WHERE order_id = ?i', $user_id, $order_id);
+
+      Tygh::$app['view']->assign(
+          'order_info',
+          fn_get_order_info($order_id, false, true, true, false)
+      );
+
+      return array(CONTROLLER_STATUS_REDIRECT, "orders.details?order_id={$order_id}");
+  }
+
 -----------------------------
-Comments on deleted functions
+Comments on Deleted Functions
 -----------------------------
 
 This comment is added to deprecated functions. The content of such functions is replaced by a notification::
@@ -298,7 +447,7 @@ For example::
   ?>
 
 --------------------------------------
-Comments on frequently used parameters
+Comments on Frequently Used Parameters
 --------------------------------------
 
 These are approved comments to describe variables in the code. Use these comments when defining a hook where it seems appropriate::
