@@ -295,7 +295,7 @@ If you use 0 or empty string as a default empty value, it may lead to errors wit
 Inverted Conditions
 ^^^^^^^^^^^^^^^^^^^
 
-Conditions like ``!empty($_REQUEST)`` hamper readability, especially when they are a part of complex conditions and expressions. You **should** avoid inverted conditions, unless the alternate solution makes the code even less readable.
+Conditions like ``!empty($_REQUEST)`` harm readability, especially when they are a part of complex conditions and expressions. You **should** avoid inverted conditions, unless the alternate solution makes the code even less readable.
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Example: Getting Rid of Code Smells
