@@ -97,6 +97,10 @@ In the example we have **cscart_v4.3.4.zip**. The name of your archive depends o
 Step 3. Change Ownership and Permissions
 ========================================
 
+.. important::
+
+    Some commands in this step may require root (superuser) privileges. If a command doesn't work, try adding the ``sudo`` prefix before it. Learn more about ``sudo`` at `Linux Academy Blog <https://linuxacademy.com/blog/linux/linux-commands-for-beginners-sudo/>`_.
+
 3.1. Execute the following commands one by one:
 
 .. code-block:: bash
