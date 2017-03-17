@@ -13,7 +13,7 @@ To manage the following settings, go to the **Add-ons → Manage add-ons** secti
 
   .. note::
 
-     Please make sure that the *Google Maps JavaScript API* is enabled under APIs in the **Google API Console**. 
+     Please make sure that the **Google Maps JavaScript API** is enabled under APIs in the **Google API Console**. 
 
 * **Map zoom**—the initial resolution at which to display the map, where zoom 0 corresponds to a map of the Earth fully zoomed out, and higher zoom levels zoom in at a higher resolution.
 
