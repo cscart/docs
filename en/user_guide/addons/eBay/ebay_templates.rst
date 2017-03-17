@@ -50,7 +50,11 @@ To create and configure a template, complete the following steps:
 
      * **Flat**—use a fixed shipping rate.
 
-   * Select your **domestic** and, optionally, **international shipping service** from the drop-down menus.
+   * Select your **domestic shipping service** from the drop-down menu.
+
+     .. important::
+
+         The value of the **International shipping service** setting isn't exported to eBay. Please specify international shipping service directly on eBay.
 
    * Specify the time it will take to deliver a product to customer in the **Dispatch days** field.
 
