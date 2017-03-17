@@ -7,7 +7,7 @@ This add-on allows you to locate your brick-n-mortar stores on Google Maps. Maps
 Settings
 ********
 
-To manage the following settings, go to the **Add-ons → Manage add-ons** section, find the **Store locator** add-on, and clock on its name.
+To manage the following settings, go to the **Add-ons → Manage add-ons** section, find the **Store locator** add-on, and click on its name.
 
 * **API key**—your Google Maps API key. For details, please refer to the official Google `help page <https://developers.google.com/maps/documentation/javascript/get-api-key#key>`_.
 
