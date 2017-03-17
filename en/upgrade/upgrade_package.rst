@@ -4,7 +4,7 @@ Upgrade Center: Build an Upgrade Package
 
 .. warning::
 
-    This article is out of date. It describes how to work with the tool that builds core upgrade packages. That tool was intended for internal use by CS-Cart team and is no longer used.
+    This article describes how to work with the tool for building core upgrade packages. That tool was intended for internal use by CS-Cart team.
 
 To create an upgrade package automatically, we wrote the **build.php** script (*_tools/upgrade/*). Run it with the following command:
 
