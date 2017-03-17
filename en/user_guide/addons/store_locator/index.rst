@@ -7,13 +7,24 @@ This add-on allows you to locate your brick-n-mortar stores on Google Maps. Maps
 Settings
 ********
 
-To manage the following settings, gp to the **Add-ons → Manage add-ons** section, find the **Store locator** add-on, and clock on its name.
+To manage the following settings, go to the **Add-ons → Manage add-ons** section, find the **Store locator** add-on, and clock on its name.
 
-*	**API key** – Your Google Maps API key. For details, please refer to the Google official `help page <https://developers.google.com/maps/documentation/javascript/tutorial?#api_key>`_.
-*	**Map zoom** - The initial resolution at which to display the map, where zoom 0 corresponds to a map of the Earth fully zoomed out, and higher zoom levels zoom in at a higher resolution.
-*	**Zoom control** - Displays a slider (for large maps) or small "+/-" buttons (for small maps) to control the zoom level of the map.
-*	**MapType control** - Lets the user toggle between map types (such as ROADMAP and SATELLITE).
-*	**Scale control** - Displays a map scale element.
+* **API key**—your Google Maps API key. For details, please refer to the official Google `help page <https://developers.google.com/maps/documentation/javascript/get-api-key#key>`_.
+
+  .. note::
+
+     Please make sure that the **Google Maps JavaScript API** is enabled under APIs in the **Google API Console**. 
+
+* **Map zoom**—the initial resolution at which to display the map, where zoom 0 corresponds to a map of the Earth fully zoomed out, and higher zoom levels zoom in at a higher resolution.
+
+* **Zoom control**—display a slider (for large maps) or small "+/-" buttons (for small maps) to control the zoom level of the map.
+
+* **MapType control**—let the user toggle between map types (such as ROADMAP and SATELLITE).
+
+* **Scale control**—display a map scale element.
+
+In This Section
+***************
 
 .. toctree::
     :maxdepth: 2
