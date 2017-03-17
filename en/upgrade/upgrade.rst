@@ -26,8 +26,7 @@ It is also possible to upload an upgrade package manually using the form on the 
 
 .. toctree::
     :maxdepth: 1
-    :titlesonly:
-    :glob:
+    :hidden:
 
     upgrade_package
 

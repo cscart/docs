@@ -1,6 +1,10 @@
-******************************************
-Upgrade Center: Build Your Upgrade Package
-******************************************
+****************************************
+Upgrade Center: Build an Upgrade Package
+****************************************
+
+.. warning::
+
+    This article is out of date. It describes how to work with the tool that builds core upgrade packages. That tool was intended for internal use by CS-Cart team and is no longer used.
 
 To create an upgrade package automatically, we wrote the **build.php** script (*_tools/upgrade/*). Run it with the following command:
 
@@ -33,7 +37,7 @@ Example of the **build.php** tool use:
 
 As a result, the *packs* directory will be created in *_tools/upgrade/*. There will be an archive with the following name in it: *upgrade_[old_version]_[old_edition]-[new_version]_[new_edition].tgz*, and a directory. That directory has the same contents as an archive. It was made for manual deleting/adding/editing files and structure.
 
-Languages and language packages
+Languages and Language Packages
 *******************************
 
 All the available at the moment (for the current version) language packages will be included to the upgrade pack.
@@ -45,7 +49,7 @@ Migrations are taken from the following directory of the current branch: *_tools
 
 If you want to upgrade your CS-Cart store to version 4.3.2, all the migrations from the *_tools/migration/migrations/4.3.2/* directory will be taken.
 
-PRE/POST scripts
+PRE/POST Scripts
 ****************
 
 They work in the same way as the migrations. All the PRE/POST scripts are searched for in the *_tools/migration/scripts/[NEW_VERSION]/* directory.

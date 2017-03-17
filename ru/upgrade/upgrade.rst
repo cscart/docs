@@ -25,8 +25,7 @@
 
 .. toctree::
     :maxdepth: 1
-    :titlesonly:
-    :glob:
+    hidden
 
     upgrade_package
 
