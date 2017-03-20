@@ -54,7 +54,7 @@ To create and configure a template, complete the following steps:
 
      .. important::
 
-         International shipping service can only be specified on eBay.
+         International shipping service can only be specified on the eBay side.
 
    * Specify the time it will take to deliver a product to customer in the **Dispatch days** field.
 
