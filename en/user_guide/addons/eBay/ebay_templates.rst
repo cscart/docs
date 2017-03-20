@@ -54,7 +54,7 @@ To create and configure a template, complete the following steps:
 
      .. important::
 
-         The value of the **International shipping service** setting isn't exported to eBay. Please specify international shipping service directly on eBay.
+         The value of the **International shipping service** setting isn't exported to eBay. Please specify international shipping service on the eBay side.
 
    * Specify the time it will take to deliver a product to customer in the **Dispatch days** field.
 
