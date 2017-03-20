@@ -64,7 +64,7 @@ If you change the eBay region in the template's setting, make sure to change the
 
     .. important::
 
-        The value of the **International shipping service** setting isn't exported to eBay. Please specify international shipping service directly on eBay.
+        The value of the **International shipping service** setting isn't exported to eBay. Please specify international shipping service on the eBay side.
 
 *   Specify the time it will take to deliver a product to customer in the **Dispatch days** field
 
