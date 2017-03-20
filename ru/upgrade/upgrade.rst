@@ -25,7 +25,7 @@
 
 .. toctree::
     :maxdepth: 1
-    hidden
+    :hidden:
 
     upgrade_package
 
