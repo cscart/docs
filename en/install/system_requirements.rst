@@ -59,8 +59,8 @@ Server Configuration Requirements
         -   ``shell_exec``
         -   ``passthru``
     *   -   ``escapeshellarg``
+        -   ``escapeshellcmd``
         -   ``set_time_limit``
-        -
         -
         -   
 

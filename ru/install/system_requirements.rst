@@ -71,7 +71,7 @@ CS-Cart разработан для удовлетворения большин�
     
     -   Установлен модуль mysql, mysqli или pdo для работы с базой данных.
     
-    -   Разрешено использовать ini_set, ftp_exec, ftp_connect, ftp_login, ftp_get, ftp_put, ftp_nb_fput, ftp_raw, ftp_rawlist, mysql_pconnect, eva, system, exec, shell_exec, passthru, escapeshellarg, set_time_limit.
+    -   Разрешено использовать ini_set, ftp_exec, ftp_connect, ftp_login, ftp_get, ftp_put, ftp_nb_fput, ftp_raw, ftp_rawlist, mysql_pconnect, eva, system, exec, shell_exec, passthru, escapeshellarg, escapeshellcmd, set_time_limit.
 
     -   Если PHP собран с Suhosin patch, то применить настройку:
 
