@@ -1,23 +1,39 @@
-*******************************************************************************************************
-How To: Give a Gift Certificate to a Customer of a Certain User Group if Order Total Exceeds Some Value
-*******************************************************************************************************
+***************************************************************************************
+How To: Give Gift Certificate to Member of User Group if Order Total Exceeds Some Value
+***************************************************************************************
 
-*	In the Administration panel, go to **Marketing → Promotions**.
-*	Click the **+** button on the right and choose **Add cart promotion**.
-*	Fill information in the **General** section.
-*	Open the **Conditions** tab and click the **Add condition** button.
-*	Select **Order subtotal** in the opened select box, then select *equal or greater* in the opened select box and enter the desired value in the opened input box.
-*	Click the **Add condition** button once again and select **User group** in the opened select box, then select *equal* in the opened select box and select the desired user group in the next select box.
-*	In the option at the top leave *All* in the first select box and *True* in the second select box.
+CS-Cart allows you to specify multiple conditions for a promotion. For example, you can give a gift certificate to members of a certain user group when the combined price of all products in the order is higher than a certain value. To set up this promotion, follow the steps below:
 
-.. image:: img/group_discount.png
-    :align: center
-    :alt: The Conditions tab
+#. In the Administration panel, go to **Marketing → Promotions**.
 
-*	Open the **Bonuses** tab and click the **Add bonus** button.
-*	Select **Gift certificate** in the opened select box and enter the desired value in the opened input box.
-*	Click the **Create** button.
+#. Click the **+** button in the top right corner and choose **Add cart promotion**.
 
-.. image:: img/group_discount_01.png
-    :align: center
-    :alt: The Bonuses tab
+#. Fill in the fields on the **General** tab. Make sure your promotion has a **Name**, and that the **Status** is set to *Active*.
+
+#. Switch to the **Conditions** tab and click the **Add condition** button.
+
+#. Select **Order subtotal** from the dropdown list. Then choose *equal or greater* and enter the desired subtotal value in the primary currency of your store.
+
+   .. note::
+
+       By **subtotal** we mean the combined price of all products that are currently in the cart.
+
+#. Click the **Add condition** button again. This will add a second condition that must be met before the promotion applies.
+
+#. Select **User group** from the dropdown list. Then choose *equal* and pick the desired user group in the next select box.
+
+#. Make sure that the phrase at the top of the condition list is ``If all of these conditions are true``.
+
+   .. image:: img/group_discount.png
+       :align: center
+       :alt: The phrase at the top of the condition list determines whether all/any conditions must be true/false.
+
+#. Switch to the **Bonuses** tab and click the **Add bonus** button.
+
+#. Select **Gift certificate** from the dropdown list, then enter the desired value in the primary currency of your store.
+
+#. Click the **Create** button.
+
+   .. image:: img/group_discount_01.png
+       :align: center
+       :alt: Specify the sum of the gift certificate on the "Bonuses" tab of the promotion.

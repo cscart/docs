@@ -1,24 +1,41 @@
-****************************************************************************
-How To: Create a Discount on Order When Buying Two Special Products Together
-****************************************************************************
+************************************************************************
+How To: Give Discount on Order for Buying Two Specific Products Together
+************************************************************************
 
-*	In the Administration panel, go to **Marketing → Promotions**.
-*	Click the **+** button on the right and choose **Add cart promotion**.
-*	Fill information in the **General** section.
-*	Open the **Conditions** tab and click the **Add condition** button.
-*	Select **Products** in the opened select box, then select **in** in the opened select box.
-*	Click the **Add products** button, find and select the *product1* product in the opened window, click the **Add products and close** button.
-*	Repeat these actions for the *product2* product.
-*	Select *All* in the first select box at the top of the list and *True* in the second select box.
+CS-Cart allows you to create promotions that apply only when a customer buys specific products together. To set up this kind of promotion, follow the steps below:
 
-.. image:: img/two_products.png
-    :align: center
-    :alt: The Conditions tab
+#. In the Administration panel, go to **Marketing → Promotions**.
 
-*	Open the **Bonuses** tab and click the **Add bonus** button.
-*	Select **Order discount** in the opened select box, select the desired option in the second opened select box and enter the desired value to the opened input box.
-*	Click the **Create** button.
+#. Click the **+** button in the top right corner and choose **Add cart promotion**.
 
-.. image:: img/two_products_01.png
-    :align: center
-    :alt: Bonuses tab
+#. Fill in the fields on the **General** tab. Make sure your promotion has a **Name**, and that the **Status** is set to *Active*.
+
+#. Switch to the **Conditions** tab.
+
+#. Click the **Add condition** button.
+
+#. Select **Products** in the dropdown list, then choose *in* and click the **Add products** butt-on.
+
+#. A pop-up window will open. Find a product that the customer must add to cart to be eligible for the promotion, tick that product's checkbox, and click **Add products and close**.
+
+#. Repeat steps from 5 to 7 for another product that the customer must also add to cart.
+
+#. Make sure that the phrase at the top of the condition list is ``If all of these conditions are true``.
+
+   .. image:: img/two_products.png
+       :align: center
+       :alt: The phrase at the top of the condition list determines whether all/any conditions must be true/false.
+
+#. Switch to the **Bonuses** tab and click the **Add bonus** button. 
+
+#. Choose any bonus from the dropdown list, and configure that bonus. For example, let's choose **Order discount** with *to fixed amount*, then set the value to ``20``. That way order subtotal will be set to 20 units in the primary currency of your store, unless the subtotal is already lower than 20.
+
+   .. note::
+
+       The discount will not affect the price of shipping.
+
+#. Click the **Create** button.
+
+   .. image:: img/two_products_01.png
+       :align: center
+       :alt: Giving an order a specific subtotal in CS-Cart.

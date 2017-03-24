@@ -1,46 +1,65 @@
 **************************
-How To: Set up a Promotion
+How To: Set Up a Promotion
 **************************
 
-*   In the Administration panel, go to **Marketing → Promotions**.
-*   Click the **+** button on the right and choose **Add cart promotion** or **Add catalog promotion**.
+#. In the Administration panel, go to **Marketing → Promotions**.
 
-.. note::
+#. Click the **+** button in the top right corner and choose **Add cart promotion** or **Add catalog promotion**:
 
-	**Catalog promotions** are different product discounts which are displayed on the catalog pages, while **Cart promotions** allow to define not only discounts for products and orders, but also grant coupons, free shipping and free products. Cart promotions are displayed on the **Cart** and **Checkout** pages.
+   * **Catalog promotions** are product discounts that are displayed on the catalog pages (the pages of products and categories).
 
-*   Fill information in the **General** section.
+   * **Cart promotions** include discounts on products and orders; bonus coupons; free shipping; free products; and so on. Cart promotions are displayed on the cart and checkout page.
 
-.. note::
+#. The promotion creation form will open. Fill in the information on the **General** tab:
 
-	The **Stop other rules** option means the way a promotion is applied. If this option is enabled, the promotions with lower priority will not be applied. This option does not affect the promotions with the priority that is higher that the priority of the created promotion. The **Stop other rules** option affects only the promotion of the same type (catalog promotion or cart promotion) as the created one.
+   * **Name**—the name of the promotion as it appears to customers and in the Administration panel.
 
-.. image:: img/promotions_01.png
-    :align: center
-    :alt: New promotions
+   * **Detailed description**—the full description of the promotion. It appears on a special page that lists all promotions in your store (``index.php?dispatch=promotions.list``). 
 
-*   Open the **Conditions** tab and click the **Add condition** button.
-*   Select the desired type of condition in the opened select box, then select the desired option in the opened select box or enter the desired value in the opened input box.
+   * **Short description**—the description of the promotion as it appears on the storefront when a customer views an order (**My account → Orders**).
 
-.. important::
+   * **Use available period**—if you tick this checkbox, the promotion will only be available for a period of time that you specify:
 
-	If you select several conditions, you should select the condition rules for them. In the option at the top select *All* or *Any* in the first select box and *True* or *False* in the second select box.
+     * **Available from**—the date when the promotion becomes available to customers.
 
-.. image:: img/promotions_02.png
-    :align: center
-    :alt: The Conditions tab
+     * **Available till**—the date when the promotion ends.
 
-*   Open the **Bonuses** tab and click the **Add bonus** button.
-*   Select the desired option in the opened select box. Then select the desired discount type. There are the following discount types:
+   * **Priority**—the order in which the promotions are applied. For example, ``1`` is a higher priority than ``10``; ``0`` is the highest priority. Promotions with higher priority will be applied first.
 
-    * *to percentage of the original price* - the original price will be reduced to the specified percentage.
-    * *by percentage of the original price* - the original price will be reduced by the specified percentage.
-    * *to fixed amount* - the original price will be reduced to a fixed amount.
-    * *by fixed amount* - the original price will be reduced by a fixed amount.
+     .. hint::
 
-*   Enter the desired value to the opened input box.
-*   Click the **Create** button.
+         If two promotions have the same priority, they are applied in the same order as they are retrieved from the database.
 
-.. image:: img/promotions_03.png
-    :align: center
-    :alt: The Bonuses tab
+   * **Stop other rules**—if you tick this checkbox, other promotions with lower priority won't apply to an order when the current promotion is applied.
+
+     .. important::
+
+         The **Stop other rules** checkbox doesn't affect the promotions with higher priority, or promotions of other types. For example, a cart promotion can't stop a catalog promotion.
+
+   * **Status**—the status of the promotion (*Active*, *Hidden*, or *Disabled*).
+
+   .. image:: img/promotions_01.png
+       :align: center
+       :alt: The General tab of the promotion creation form in CS-Cart.
+
+#. Switch to the **Conditions** tab. This tab determines in what cases the promotion applies.
+
+#. Click the **Add condition** button and choose the condition from the dropdown list. Most conditions require you to enter additional information.
+
+   .. note::
+
+       You can create multiple conditions. Please note the phrase at the top of the condition list: ``If all/any of these conditions are true/false``. By choosing between *all* and *any*, and *true* and *false*, you determine when the promotion applies.
+
+   .. image:: img/promotions_02.png
+       :align: center
+       :alt: The Conditions tab determines when the promotion applies.
+
+#. Switch the **Bonuses** tab. This tab determines what bonuses are given when a promotion applies.
+
+#. Click the **Add bonus** button and select a bonus from the dropdown list. Most bonuses require you to enter additional information.
+
+#. Click the **Create** button.
+
+   .. image:: img/promotions_03.png
+       :align: center
+       :alt: The Bonuses tab determines what happens when the promotion applies.
