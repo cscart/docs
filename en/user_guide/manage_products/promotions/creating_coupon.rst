@@ -1,26 +1,37 @@
-********************************
-How To: Create a Discount Coupon
-********************************
+*****************************
+How To: Create a Bonus Coupon
+*****************************
 
-*   In the Administration panel, go to **Marketing → Promotions**.
-*   Click the **+** button on the right and choose **Add cart promotion**.
-*   Fill information in the **General** section.
-*   Open the **Conditions** tab and click the **Add condition** button.
-*   Select the **Coupon code** or the **Automatically generated coupon codes** option in the opened select box.
+CS-Cart allows you to create bonus coupons for customers. Customers enter codes of those coupons at checkout to get various bonuses, such as discounts, free products, or free shipping. Here's how you can create a bonus coupon:
 
-    If you selected the **Automatically generated coupon codes** option, system will do the next step automatically. If you selected the **Coupon code** option, then select the *in* or *equal* option in the opened select box and enter the desired text in the opened input box.
+#. In the Administration panel, go to **Marketing → Promotions**.
 
-.. image:: img/coupon.png
-    :align: center
-    :alt: The Conditions tab
+#. Click the **+** button in the top right corner and choose **Add cart promotion**.
 
-**OR**
+#. Fill in the fields on the **General** tab. Make sure your promotion has a **Name**, and that the **Status** is set to *Active*.
 
-.. image:: img/coupon_01.png
-    :align: center
-    :alt: The Conditions tab
+#. Switch to the **Conditions** tab and click the **Add condition** button.
 
-*   Open the **Bonuses** tab and click the **Add bonus** button.
-*   Select the desired option in the opened select box, then enter the desired value to the opened input box.
-*   Click the **Create** button.
+#. Select **Coupon code** from the dropdown list. 
 
+#. Your promotion can use either one, or multiple coupon codes:
+
+   * **To use one coupon code:** choose *equal* and enter the coupon code. Don't use commas (``,``) in the code.
+
+   * **To use multiple coupon codes:** choose *in* and enter multiple coupon codes separated by commas without spaces after them. For example, to have codes ``test1``, ``test2``, and ``test3``, enter them like this::
+
+       test1,test2,test3
+
+   .. note::
+
+       If you would like to generate coupon codes automatically, please refer to :doc:`another article <auto_coupons>`.
+
+   .. image:: img/coupon.png
+       :align: center
+       :alt: Specifying a coupon code for a promotion in CS-Cart.
+
+#. Switch to the **Bonuses** tab and click the **Add bonus** button.
+
+#. Choose any desired bonus and configure it.
+
+#. Click the **Create** button.
