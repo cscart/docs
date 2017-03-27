@@ -1,6 +1,6 @@
-***************************************************************************************
-How To: Give Gift Certificate to Member of User Group if Order Total Exceeds Some Value
-***************************************************************************************
+******************************************************************************************
+How To: Give Gift Certificate to Member of User Group if Order Subtotal Exceeds Some Value
+******************************************************************************************
 
 CS-Cart allows you to specify multiple conditions for a promotion. For example, you can give a gift certificate to members of a certain user group when the combined price of all products in the order is higher than a certain value. To set up this promotion, follow the steps below:
 

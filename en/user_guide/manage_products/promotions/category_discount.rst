@@ -30,8 +30,8 @@ How To: Create Discount on Products from Specific Categories
 
    * **By percentage of the original price**: the eligible products will cost 80% of their original price (price with discount = original price - 20%).
 
-   * **To fixed amount**: the price of the eligible products will be set to 20 units of the primary currency of your store, unless those products already have prices lower than 20.
+   * **To fixed amount**: the price of the eligible products will be set to 20 units of the primary currency of your store, unless those products already have lower prices.
 
-   * **By fixed amount**: the price of the products will be lower by 20 units of the primary currency of your store (price with discount = original price - 20).
+   * **By fixed amount**: the price of the eligible products will be lower by 20 units of the primary currency of your store (price with discount = original price - 20).
 
 #. Click the **Create** button.

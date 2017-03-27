@@ -1,6 +1,6 @@
-*****************************
-How To: Create a Bonus Coupon
-*****************************
+***************************
+How To: Create Bonus Coupon
+***************************
 
 CS-Cart allows you to create bonus coupons for customers. Customers enter codes of those coupons at checkout to get various bonuses, such as discounts, free products, or free shipping. Here's how you can create a bonus coupon:
 
