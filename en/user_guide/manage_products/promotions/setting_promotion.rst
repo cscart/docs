@@ -10,6 +10,10 @@ How To: Set Up a Promotion
 
    * **Cart promotions** include discounts on products and orders; bonus coupons; free shipping; free products; and so on. Cart promotions are displayed on the cart and checkout page.
 
+   .. image:: img/add_promotion.png
+       :align: center
+       :alt: The "Marketing → Promotions" page allows you to create cart and catalog promotions.
+
 #. The promotion creation form will open. Fill in the information on the **General** tab:
 
    * **Name**—the name of the promotion as it appears to customers and in the Administration panel.

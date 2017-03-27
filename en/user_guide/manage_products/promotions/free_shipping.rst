@@ -2,7 +2,7 @@
 How To: Offer Free Shipping for Buying a Certain Product
 ********************************************************
 
-You can offer free shipping when customer has a certain product in cart. This is done via a :doc:`cart promotion <index>`. 
+You can offer free shipping when a customer has a certain product in cart. This is done via a :doc:`cart promotion <index>`. 
 
 .. warning::
 
