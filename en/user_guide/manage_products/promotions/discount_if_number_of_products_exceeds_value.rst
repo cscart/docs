@@ -1,27 +1,43 @@
-************************************************************************************
-How To: Create a Discount on Order if Total Number of Products Exceeds Certain Value
-************************************************************************************
+***************************************************************
+How To: Give Discount When Cart Has Specific Number of Products
+***************************************************************
 
-*   In the Administration panel, go to **Marketing → Promotions**.
-*   Click the **+** button on the right and choose **Add cart promotion**.
-*   On the opened page, complete the information under the **General** section.
+CS-Cart allows you to make a promotion that applies only when a certain number of items is in the cart. These items don't have to be different, they can be identical. For example, multiple white XXL T-shirts count as separate items.
 
-.. image:: img/discount_on_number.png
-    :align: center
-    :alt: New promotion
+To create this promotion, follow these steps below:
 
-*   In the **Conditions** tab, click the **Add condition** button.
-*   In the opened drop-down select box, select **Total products in the cart**. Then, select the necessary option and specify the necessary value.
+#. In the Administration panel, go to **Marketing → Promotions**.
 
-.. image:: img/discount_on_number_01.png
-    :align: center
-    :alt: The Condition tab
+#. Click the **+** button in the top right corner and choose **Add cart promotion**.
 
-*   In the **Bonuses** tab, click the **Add bonus** button.
-*   In the opened drop-down select box, select the necessary option. Then, in the opened input box, enter the necessary value.
+#. Fill in the fields on the **General** tab. Make sure your promotion has a **Name**, and that the **Status** is set to *Active*.
 
-.. image:: img/discount_on_number_02.png
-    :align: center
-    :alt: The Bonuses tab
+   .. image:: img/discount_on_number.png
+       :align: center
+       :alt: Promotion creation page in CS-Cart.
 
-*   Click the **Create** button.
+#. Switch to the **Conditions** tab and click the **Add condition** button.
+
+#. Select **Total products in the cart**. Then choose one of its variants from the dropdown list, and enter the number of products. For example, let's choose *greater*, then enter ``5``. A customer would have to add at least 6 items to cart, or the promotion wouldn't apply.
+
+   .. hint::
+
+       You can add multiple conditions that way; for example, *greater than 5* and *equal or less than 10*.
+
+   .. image:: img/discount_on_number_01.png
+       :align: center
+       :alt: Set the desired number of products on the "Conditions" tab.
+
+#. Switch to the **Bonuses** tab and click the **Add bonus** button. 
+
+#. Choose any bonus from the dropdown menu and configure it. For example, let's choose **Order discount** with *to percentage of the original price*, then set the percentage to ``10``. All products in the order will cost only 10% of their original price.
+
+   .. important::
+
+       The shipping cost won't be affected by this discount.
+
+#. Click the **Create** button.
+
+   .. image:: img/discount_on_number_02.png
+       :align: center
+       :alt: Discount to a percentage means that the products will cost the specified percent of their orignal price.

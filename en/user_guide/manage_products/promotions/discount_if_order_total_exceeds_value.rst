@@ -1,32 +1,37 @@
-**************************************************************************
-How To: Create a Discount on Order if Order Subtotal Exceeds Certain Value
-**************************************************************************
+**********************************************************************
+How To: Give Discount on Order if Order Subtotal Exceeds Certain Value
+**********************************************************************
 
-To apply a discount to an order if order total exceeds some certain value:
+СS-Cart allows you to make a promotion that applies only when the combined price of all products in the order is higher than a certain value. To create this promotion, follow the steps below:
 
-*   In the Administration panel, go to **Marketing → Promotions**.
-*   Click the **+** button on the right and choose **Add cart promotion**.
-*   On the opened page, complete the information under the **General** section.
+#. In the Administration panel, go to **Marketing → Promotions**.
 
-.. image:: img/Discount_on_Order_If_Order_Subtotal_Exceeds_Certain_Value.png
-    :align: center
-    :alt: New promotion
+#. Click the **+** button in the top right corner and choose **Add cart promotion**.
 
-*   In the **Conditions** tab, click the **Add condition** button.
-*   In the opened drop-down select box, select **Order subtotal** option. Then select **equal or greater** option and specify the necessary value.
+#. Fill in the fields on the **General** tab. Make sure your promotion has a **Name**, and that the **Status** is set to *Active*.
 
-.. image:: img/Discount_on_Order_If_Order_Subtotal_Exceeds_Certain_Value_01.png
-    :align: center
-    :alt: The Conditions tab
+   .. image:: img/Discount_on_Order_If_Order_Subtotal_Exceeds_Certain_Value.png
+       :align: center
+       :alt: Adding a discount on orders with specific total in CS-Cart.
 
-*   In the **Bonuses** tab, click the **Add bonus** button.
-*   In the opened drop-down select box, select **Order discount** option. Then specify the necessary option and type the necessary value.
-*   Click the **Create** button.
+#. Switch to the **Conditions** tab and click the **Add condition** button.
 
-.. note::
+#. Select **Order subtotal** from the dropdown list. Then choose *equal or greater* and enter the desired subtotal value in the primary currency of your store.
 
-	These promotions are displayed only on the **Checkout** page in the customer area.
+   .. note::
 
-.. image:: img/Discount_on_Order_If_Order_Subtotal_Exceeds_Certain_Value_02.png
-    :align: center
-    :alt: The Bonuses tab
+       By **subtotal** we mean the combined price of all products that are currently in the cart.
+
+   .. image:: img/Discount_on_Order_If_Order_Subtotal_Exceeds_Certain_Value_01.png
+       :align: center
+       :alt: Setting up discount conditions in CS-Cart.
+
+#. Switch to the **Bonuses** tab and click the **Add bonus** button. 
+
+#. Choose any bonus from the dropdown list, and configure that bonus. For example, let's choose **Order discount** with *by fixed amount*, then set the value to ``10``. That way a customer will get a discount on order subtotal. The size of the discount will be 10 units in the primary currency of your store.
+
+#. Click the **Create** button.
+
+   .. image:: img/Discount_on_Order_If_Order_Subtotal_Exceeds_Certain_Value_02.png
+       :align: center
+       :alt: Entering discount values on the "Bonuses" tab.
