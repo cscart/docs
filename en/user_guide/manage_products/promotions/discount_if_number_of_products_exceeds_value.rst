@@ -30,7 +30,7 @@ To create this promotion, follow these steps below:
 
 #. Switch to the **Bonuses** tab and click the **Add bonus** button. 
 
-#. Choose any bonus from the dropdown menu and configure it. For example, let's choose **Order discount** with *to percentage of the original price*, then set the percentage to ``10``. All products in the order will cost only 10% of their original price.
+#. Choose any bonus from the dropdown menu and configure it. For example, let's choose **Order discount** with *to percentage of the original price*, then set the percentage to ``10``. That way customer will get a 90% discount on order subtotal (new subtotal = 10% of the original subtotal).
 
    .. important::
 
