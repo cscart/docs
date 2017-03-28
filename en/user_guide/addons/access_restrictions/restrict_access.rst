@@ -1,5 +1,5 @@
 ***********************************************
-How To: Restrict Access to Administartion Panel
+How To: Restrict Access to Administration Panel
 ***********************************************
 
 *   In the Administration panel, go to **Add-ons → Manage add-ons**.
