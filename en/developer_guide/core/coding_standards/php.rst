@@ -669,6 +669,74 @@ SQL Queries
 
 7. Learn more about placeholders and working with them in :doc:`the dedicated article <../db/placeholders>`.
 
+------------------------
+PostgreSQL Compatibility
+------------------------
+
+In addition to MySQL, CS-Cart 5 will support PostgreSQL. That's why query structure **must** conform to the general SQL standard.
+
+.. important::
+
+    **Don't** use proprietary features of MySQL or PostgreSQL.
+
+1. **Don't** use backticks (`````). Surround field names with double quotation marks. Quotation marks can be skipped; they are required for names that include reserved SQL keywords.
+
+   ::
+
+     SELECT "from" FROM table WHERE field = 'test';
+
+2. **Don't** use ``1`` in conditions. If you need ``true``, use ``1=1``.
+
+   ::
+
+     SELECT field FROM table WHERE 1=1 AND field2 = 3;
+
+3. Use ``CASE WHEN`` instead of ``IF``.
+
+   ::
+   
+     SELECT CASE WHEN(a=b) THEN 'true' ELSE 'false' END FROM table;
+
+4. **Don't** use ``REPLACE INTO`` in queries. Use function ``db_replace_into`` or  ``Tygh::$db->replaceInto`` instead, depending on the context.
+
+5. Use ``COALESCE`` instead of ``IFNULL``.
+
+6. Use ``LIMIT m OFFSET n`` instead of ``LIMIT n,m``. Use ``LIMIT n`` instead of ``LIMIT 0, n``.
+
+7. **Always** declare aliases in queries via the ``AS`` keyword.
+
+   ::
+
+     SELECT col AS col_alias FROM table AS t_alias
+
+8. Use ``col IS NULL`` instead of ``ISNULL(col)``.
+
+9. **Try to avoid** using ``SQL_CALC_FOUND_ROWS``. Queries with this keyword are parsed by PostgreSQL adapter and executed without errors, but it's better not to use this keyword.
+
+10. **Don't** use queries like ``INSERT INTO ... ON DUPLICATE KEY UPDATE``. Use function  ``db_replace_into`` or ``Tygh::$db->replaceInto`` instead.
+
+11. **Don't** use queries like ``INSERT INTO ... ON DUPLICATE KEY UPDATE viewed = viewed + 1``. Use function ``db_insert_incdec`` or ``Tygh::$db->insertIncDec`` instead of a query like this.
+
+12. Use single quotes (``'``) to surround values. **Don't** use double quotes for that purpose.
+
+13. **Don't** use ``SELECT LAST_INSERT_ID()``. Auto-incremented values are returned by the ``db_query`` or ``Tygh::$db->query`` function.
+
+14. **Don't** escape double quotes in SQL files. To include a comment, use only ``/**/``.
+
+15. Use ``UNIX_TIMESTAMP(NOW())`` instead of ``UNIX_TIMESTAMP()``.
+
+16. **Always** use ``ON`` with ``INNER JOIN``.
+
+17. Use function ``Tygh::$app['db']->orderByField`` instead of ``ORDER BY FIELD()``.
+
+18. **Don't** use aliases in the ``HAVING`` clause; use field names directly.
+
+    ::
+
+      SELECT a as b FROM table HAVING a > 10
+
+19. **Don't** use raw SQL in migrations to change table structure; use only ``phinx`` commands.
+
 =============
 General Rules
 =============
