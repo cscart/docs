@@ -16,19 +16,11 @@
 
         Вы можете открыть комментарии для товаров, категорий, заказов, блога, страниц и отзывов о магазине.
 
-*   In the **Comments and reviews** section in the **Reviews** drop-down menu choose the type of reviews: *Communication and rating*, *Communication* or *Rating*.
-
 * В разделе **Комментарии и отзывы** в меню **Отзывы** выберите тип отзывов: *Обсуждение и оценки*, *Обсуждение* или *Оценки*. 
 
 .. image:: img/comments_01.png
 	:align: center
 	:alt: Редактирование товара
-
-To view and manage comments:
-
-*   Go to **Website → Comments and reviews**.
-*   Open the tab with comments or reviews that you want to read.
-*   If necessary, edit comments and click **Save**.
 
 Для просмотра и управления комментариями:
 
