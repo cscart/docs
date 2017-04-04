@@ -7,6 +7,7 @@ Version Compatibility
     :titlesonly:
 
     adapting_443_to_451
+    adapting_451_to_452
 
 
 .. toctree::
