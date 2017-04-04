@@ -28,9 +28,9 @@ Common Changes
 
    The blocks that have the following IDs will be hidden during scrolling: 
 
-   * head_scroll_{id} (for example, ``head_scroll_my_scroll``) — the header of the table.
+   * ``head_scroll_{id}`` (for example, ``head_scroll_my_scroll``) — the header of the table.
 
-   * total_scroll_{id} (for example, ``total_scroll_my_scroll``) — the "Total" line of the table.
+   * ``total_scroll_{id}`` (for example, ``total_scroll_my_scroll``) — the "Total" line of the table.
 
 #. A new microformat was added to load data via AJAX when switching between tabs. The data for each tab is only loaded once; when you open a tab again, the previously loaded data will be displayed. 
 
