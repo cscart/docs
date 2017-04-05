@@ -1,0 +1,115 @@
+***********************
+CS-Cart 4.5.2 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Searchanise: The add-on was made compatible with the “Vendor data premoderation” add-on.
+
+[+] Add-ons: Searchanise: The add-on now has its own icon that will appear next to it on the add-on list.
+
+[+] Checkout: Payment methods: Phone ordering: Autocomplete was implemented for the phone field. The phone number comes from “Contact information” section. If there is no phone number in that section, then it is taken from the billing address or shipping address (whichever comes first at checkout). 
+
+[+] Hooks: New TPL hooks were added to templates/views/orders/order_downloads.tpl and design/backend/templates/views/products/update.tpl.
+
+[+] Hooks: New PHP hooks were added to the fn_get_user_edp() and fn_generate_ekeys_for_edp() functions.
+
+[+] Languages: Translations: Greek translations were added for some of the blocks, states, promotions, menu items, product tabs, shipment and order statuses, and taxes.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: Email marketing, Newsletters: CSRF protection is now enabled for the “em_subscribers.update” and “newsletters.add_subscriber” controllers to protect the newsletter subscription form.
+
+========
+Bugfixes
+========
+
+[!] Add-ons: Google reCAPTCHA: Anti-bot validation didn’t work at guest checkout. Fixed.
+
+[!] Add-ons: Searchanise: Bestsellers & On-Sale Products: The Searchanise add-on didn't work with the “Sort by discount” and “Sort by bestselling” product list sortings. Fixed.
+
+[!] Add-ons: Social Login: HybridAuth: Sign-ins via Facebook didn't work because an old version of Facebook API was used. Fixed.
+
+[!] Add-ons: PayPal payments: Multi-Vendor: Credit card data wasn't removed from orders when PayPal Pro was used, and products were purchased from multiple vendors. Fixed.
+
+[!] Add-ons: PayPal payments: PayPal Pro: IPNs for some payments were not processed. Fixed.
+
+[!] Add-ons: SEO: Performance: When opening a category page, a large number of database queries was made. Fixed.
+
+[!] Add-ons: SEO:  PHP 7.1: The “Bestsellers & On-Sale Products” and “Comments and reviews” add-ons didn’t extend the “canonical_urls” schema of the SEO add-on properly; that led to a fatal error on PHP 7.1. Fixed.
+
+[!] Add-ons: SEO: Vendor URLs and brand URLs were not replaced with SEO names. Fixed.
+
+[!] Core: Add-ons: A service pack was considered older than the version it was meant for. For example, third-party add-ons marked as compatible with CS-Cart 4.5.1 and newer versions, couldn’t be run on CS-Cart 4.5.1.SP1. Fixed.
+
+[!] Core: Add-ons: When an add-on was uninstalled, SQL queries for deleting language variables could be executed multiple times. Fixed.
+
+[!] Core: Database: Placeholder "?e" didn't work properly with an array, when one of the keys of the array was 0. Fixed.
+
+[!] Core: PHP 7.1: Database: Passing strings to the “?i” DB placeholder could cause warnings and errors on PHP 7.1. Fixed.
+
+[!] Core: PHP 7.1: Deprecated "mcrypt_*" function calls resulted in notices and warnings. Fixed.
+
+[!] Core: PHP 7.1: The schema loading mechanism could cause a fatal error on PHP 7.1. Fixed.
+
+[!] Design: Add-ons: Vendor data premoderation: The product approval pop-up was displayed incorrectly. Fixed.
+
+[!] Design: Checkout: PayPal: The icons of PayPal payment methods were positioned incorrectly at checkout.
+
+[!] Design: Checkout: When payment wasn’t required, the field for a comment in the payment step wasn’t displayed properly. Fixed.
+
+[!] Design: Long taps on links didn’t work in Safari on mobile devices. Fixed.
+
+[!] Design: Parent themes: On-site template editing: When editing a template that was missing in a child theme, the changes were stored in the parent theme. Fixed.
+
+[!] Design: Products: Big picture: The brand image didn't contain a link to the brand page in the Big picture template. Fixed.
+
+[!] Design: Products: Product page: The “maximum-scale=1.0” parameter in the “viewport” meta tag was excessive. The parameter was removed, because other parameters already specified the right scale.
+
+[!] Design: Themes: Theme logos were not installed during theme installation. Fixed.
+
+[!] Design: Upgrade center: Extra <br> tags were added between paragraphs and list elements in the upgrade description. Fixed.
+
+[!] Document editor: Product options: The information about product options of the “File” type didn’t appear in documents. Fixed.
+
+[!] Document editor: Shipments: The “o.tracking_number” variable always displayed one tracking number, even if an order had multiple shipments. Fixed.
+
+[!] Export/Import: Orders: The “Shipping: phone” and “Billing: phone” fields weren't on the list of fields available for export. Fixed.
+
+[!] JS: Checkout: Credit card validator didn’t display the MasterCard logo for the new 2-series BIN card numbers. Fixed; the jquery.creditCardValidator library was updated.
+
+[!] JS: WYSIWYG editors: Shipping methods: When the TinyMCE editor was enabled, it was impossible to test the rate calculation of a real-time shipping service. Fixed.
+
+[!] Multi-Vendor: Applying for a vendor account: When the application for a vendor account was approved, the email notification contained a wrong logo. Fixed.
+
+[!] Multi-Vendor: Products of disabled vendors could still be displayed in categories until the cache was cleared. Fixed.
+
+[!] Orders: Performance: An SQL request was incorrect if the store had many orders with “user_id=0” (for example, guest orders). Fixed.
+
+[!] Orders: Sales reports: When the value in the “Total” line was 0, a PHP warning was displayed. Fixed.
+
+[!] Payment methods: AuthorizeNet.Aim: Payments were rejected by EvoSnap because invalid country codes were used. Fixed.
+
+[!] Payment methods: QB Merchant Service: Credit card data was logged. Fixed.
+
+[!] Products: Search: An SQL error occurred when a product search query didn't include the “pname” parameter. Fixed.
+
+[!] Product options: Variant images: When a customer opened a product page with an option combination already selected via a direct link (for example, via search), the images of option variants didn’t appear on the page until the customer selected another option combination. Fixed.
+
+[!] Sessions: The “www” subdomain was always removed from the domain in the session cookie; that could lead to authorization problems when secure connection was enabled. Fixed.
+
+[!] Sessions: Redis: Cart content wasn’t stored long enough for guest customers. Fixed.
+
+[!] {#6583} Design: Layouts: When an administrator was editing the settings of the same layout page from different layouts in separate browser tabs at the same time, a layout page could be saved to a wrong layout. Fixed.
+
+[!] {#6589} {#6654} Email notifications: Old email templates: A wrong number of products in stock was shown in email notifications about low inventory level. Fixed.
+
+[!] {#6608} Payment methods: ESTpay: The ESTpay payment processor didn't work, so it was removed.
+
+[!] {#6638} Add-ons: Suppliers: Shipments: The notifications to suppliers about changes of shipment statuses weren't supposed to be sent, but the “Notify supplier” checkbox still appeared. Fixed.
+
+[!] {#6677} Core: Sessions: Sessions that were idle for longer than specified in the SESSION_ONLINE constant were still returned by the getOnline method. Fixed.
