@@ -697,7 +697,7 @@ In addition to MySQL, CS-Cart 5 will support PostgreSQL. That's why query struct
    
      SELECT CASE WHEN(a=b) THEN 'true' ELSE 'false' END FROM table;
 
-4. **Don't** use ``REPLACE INTO`` in queries. Use function ``db_replace_into`` or  ``Tygh::$db->replaceInto`` instead, depending on the context.
+4. **Don't** use ``REPLACE INTO`` in queries. Use function ``db_replace_into`` or  ``Tygh::$app['db']->replaceInto`` instead, depending on the context.
 
 5. Use ``COALESCE`` instead of ``IFNULL``.
 
@@ -713,13 +713,13 @@ In addition to MySQL, CS-Cart 5 will support PostgreSQL. That's why query struct
 
 9. **Try to avoid** using ``SQL_CALC_FOUND_ROWS``. Queries with this keyword are parsed by PostgreSQL adapter and executed without errors, but it's better not to use this keyword.
 
-10. **Don't** use queries like ``INSERT INTO ... ON DUPLICATE KEY UPDATE``. Use function  ``db_replace_into`` or ``Tygh::$db->replaceInto`` instead.
+10. **Don't** use queries like ``INSERT INTO ... ON DUPLICATE KEY UPDATE``. Use function  ``db_replace_into`` or ``Tygh::$app['db']->replaceInto`` instead.
 
-11. **Don't** use queries like ``INSERT INTO ... ON DUPLICATE KEY UPDATE viewed = viewed + 1``. Use function ``db_insert_incdec`` or ``Tygh::$db->insertIncDec`` instead of a query like this.
+11. **Don't** use queries like ``INSERT INTO ... ON DUPLICATE KEY UPDATE viewed = viewed + 1``. Use function ``db_insert_incdec`` or ``Tygh::$app['db']->insertIncDec`` instead of a query like this.
 
 12. Use single quotes (``'``) to surround values. **Don't** use double quotes for that purpose.
 
-13. **Don't** use ``SELECT LAST_INSERT_ID()``. Auto-incremented values are returned by the ``db_query`` or ``Tygh::$db->query`` function.
+13. **Don't** use ``SELECT LAST_INSERT_ID()``. Auto-incremented values are returned by the ``db_query`` or ``Tygh::$app['db']->query`` function.
 
 14. **Don't** escape double quotes in SQL files. To include a comment, use only ``/**/``.
 

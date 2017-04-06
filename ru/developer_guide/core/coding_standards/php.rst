@@ -661,7 +661,7 @@ DRY - Don't repeat yourself
 
      SELECT CASE WHEN(a=b) THEN 'true' ELSE 'false' END FROM table;
 
-4. Не используйте в запросе ``REPLACE INTO``. Вместо этого используйте функции ``db_replace_into`` или ``Tygh::$db->replaceInto``, в зависимости от контекста.
+4. Не используйте в запросе ``REPLACE INTO``. Вместо этого используйте функции ``db_replace_into`` или ``Tygh::$app['db']->replaceInto``, в зависимости от контекста.
 
 5. Вместо ``IFNULL`` используйте ``COALESCE``.
 
@@ -677,13 +677,13 @@ DRY - Don't repeat yourself
 
 9. Избегайте ``SQL_CALC_FOUND_ROWS``. Запросы с таким словом парсятся адаптером для PostgreSQL и выполняются без ошибок, но всё же лучше вообще его не использовать.
 
-10. Не используйте запросы вида ``INSERT INTO ... ON DUPLICATE KEY UPDATE``. Вместо такого запроса используйте функцию  ``db_replace_into`` или ``Tygh::$db->replaceInto``.
+10. Не используйте запросы вида ``INSERT INTO ... ON DUPLICATE KEY UPDATE``. Вместо такого запроса используйте функцию  ``db_replace_into`` или ``Tygh::$app['db']->replaceInto``.
 
-11. Не используйте запросы вида ``INSERT INTO ... ON DUPLICATE KEY UPDATE viewed = viewed + 1``. Вместо такого запроса используйте функцию ``db_insert_incdec`` или ``Tygh::$db->insertIncDec``
+11. Не используйте запросы вида ``INSERT INTO ... ON DUPLICATE KEY UPDATE viewed = viewed + 1``. Вместо такого запроса используйте функцию ``db_insert_incdec`` или ``Tygh::$app['db']->insertIncDec``
 
 12. Для обрамления значений используйте одиночные кавычки (``'``). Двойные кавычки использовать нельзя.
 
-13. Не используйте запрос ``SELECT LAST_INSERT_ID()``. Автоинкрементное значение возвращается функцией ``db_query`` или ``Tygh::$db->query``.
+13. Не используйте запрос ``SELECT LAST_INSERT_ID()``. Автоинкрементное значение возвращается функцией ``db_query`` или ``Tygh::$app['db']->query``.
 
 14. В SQL-файлах не экранируйте двойные кавычки; для комментариев используйте только ``/**/``.
 
