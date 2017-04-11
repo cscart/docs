@@ -1,12 +1,21 @@
-******************
-Product Attributes
-******************
+****************************************
+Product Properties (Fields and Settings)
+****************************************
 
-When you create or edit a product, you should specify a number of product attributes. For convenience, attributes are grouped under several tabs.
+When you create or edit a product, you should specify a number of product properties. For convenience, properties are grouped by tabs on the product editing page.
 
 .. image:: img/product_attributes_01.png
     :align: center
-    :alt: Tabs
+    :alt: Tabs with properties on the product editing page.
+
+.. note::
+
+    Most of product properties can be specified via :doc:`product import <../../manage_products/import_export/product_import>`.
+
+.. contents::
+    :backlinks: none
+    :local: 
+    :depth: 1
 
 =======
 General
@@ -16,152 +25,163 @@ General
 Information
 -----------
 
-* **Name**—the name of the product as it appears on the storefront and in the Administration panel.
+* **Name**—the name of the product as it appears on the storefront and in the Administration panel. The name of the same product can differ, depending on the storefront and language.
 
-* **Categories**—the categories that the product will be assigned to. To define the product main category, select the corresponding radio button.
+* **Categories**—the categories that the product will be assigned to. When a product has multiple categories, the radio button determines which of those categories is main for that product.
 
-* **Price**—base product price in your store's primary currency.
+* **Price**—base product price in your store's primary currency. Prices in other currencies are converted automatically, according to the exchange rate that you specify. All calculations are done in the primary currency.
 
-* **Full description**—full product description appearing on the product details page of the storefront.
+* **Full description**—the product description that will appear on the product details page of the storefront. The description can be either a plain text or a formatted HTML text. If you're not familiar with HTML code, you can rely on the visual editor: you simply edit product description like a document, and the visual editor adds the HTML code automatically.
 
-  The description can be either a plain text or a formatted HTML text. If you are not familiar with HTML, you are encouraged to add a formatted description using the built-in WYSIWYG HTML editor.
+  .. hint::
 
-  Not only does an informative description help your customers, but it is also another SEO opportunity.
+      You can choose or disable the visual editor under **Settings → Appearance → Default WYSIWYG editor**.
 
 * **Status**—the status of the product:
 
-  * **Active**—the product is available on the storefront.
+  * *Active*—the product is available on the storefront and appears in the product list.
 
-  * **Disabled**—the product is not available on the storefront.
+  * *Disabled*—the product is not available on the storefront.
 
-  * **Hidden**—product does not appear on the storefront.
+  * *Hidden*—product does not appear in the product list on the storefront. Customers can reach a hidden product via a direct link.
 
-    .. note::
+* **Store**—the storefront to which the product is assigned.
 
-        Customers can access a hidden product via a direct link.
+* **Images**—a large product image and its icon (thumbnail). Supported formats are JPEG, GIF, and PNG. The maximum size of an uploaded image depends on your server configuration. As a rule, it should not exceed 2 MB.
 
-* **Store**—the store to which the product is assigned.
+  .. note:: 
 
-* **Images**—a pair of images to illustrate the product: a product thumbnail and a large product image.
+      By default, thumbnails are generated from detailed images automatically. However, you can upload thumbnails manually.
 
-  Both images can be either uploaded from a local computer or the server file system, or linked to a remote location where the required image is physically located.
-
-  Images must be of one of the following formats only: JPEG, GIF, PNG. Maximum size of an uploaded image depends on your server configuration. As a rule, it should not exceed 2 MB.
-
-  An alternative text describes an image in words. Technically, it is the text that you enter appears inside the ``alt=""`` and ``title=""`` attributes of the ``<img>`` HTML tag. The text is shown when the image is missing or cannot be displayed. It is good practice to have an alternative text associated with the image, for SEO purposes.
-
-.. note:: 
-
-    By default, thumbnails are generated from detailed images automatically. However, you can upload thumbnails manually by clicking the **upload them manually** link.
+  The text field below the image lets you describe the image in words. Technically, it is the text that you enter appears inside the ``alt=""`` and ``title=""`` attributes of the ``<img>`` HTML tag. This text is shown when the image is missing or cannot be displayed. It is good practice to have an alternative text associated with the image, for SEO purposes.
 
 ----------------
 Options Settings
 ----------------
 
-* **Options type**—select how the options and variants of this product appear on the storefront: 
+* **Options type**—select how the options and variants of this product appear and work on the storefront: 
 
-  * **Simultaneous**—all the options and variants appear simultaneously and independently.
+  * *Simultaneous*—customers can choose the variant for each option independently and in any order.
 
-  * **Sequential**—options and variants are chosen one after another. Customers will be able to choose only the allowed option combinations.
+  * *Sequential*—options and variants are chosen one after another: first the variant of the first option, then the variant of the second option, and so on.
 
+  .. hint::
+
+      Options are specific properties of the product that a customer can choose when making a purchase. For example, options for clothes may include color and size. The variants of those options would be *red/green/blue* and *S/M/L/XL/XXL* respectively.
 
 * **Exceptions type**—select a type of the product option exceptions: 
 
-  * **Forbidden**—customers won’t be able to select the combinations of option variants. You can specify those variants under *Forbidden combinations* on the **Options** tab.
+  * *Forbidden*—you'll be able to specify *Forbidden combinations* on the **Options** tab. Customers won’t be able to purchase a product when they choose a forbidden combination of option variants.
 
-  * **Allowed**—customers will only be able to select the combinations of option variants. You can specify those variants under *Allowed combinations* on the **Options** tab. 
-
-.. hint::
-
-   To specify product options, switch to the **Options** tab.
+  * *Allowed*—you'll be able to specify *Allowed combinations* on the **Options** tab. Customers will only be able to select these combinations of option variants.
 
 -------------------
 Pricing / Inventory
 -------------------
 
-* **CODE**—internal product code (SKU number).
+* **CODE**—the identifier of the product that you use in your store (a stock keeping unit or SKU). This identifier doesn't have to be unique; it can even be missing.
 
-* **List price**—the price suggested by the product manufacturer. Good practice is to show that your price is lower than the list price.
+* **List price**—if this price is higher that product's **Price**, then a discount label will be displayed for the product.
 
-* **In stock**—the number of products in the stock. By default, products that are out of stock do not appear on the storefront until you enable the **Allow negative amount in inventory** option under **Settings → General → Catalog**.
+* **In stock**—the number of products in the stock. Products that are out of stock can't be bought, unless you enable the **Allow negative amount in inventory** setting under **Settings → General → Catalog**.
 
-* **Zero price action**—allowed action on the product if the product has zero price. Allow or disallow users to add the products to the cart, or ask users to enter a custom price.
+* **Zero price action**—determines what can be done on the storefront when the product's price is 0:
 
-* **Inventory**—the way of tracking the inventory of the current product: track with product options or without product options or do not track at all. 
+  * *Do not allow customers to add the product to cart*
 
-  If the product is selected to be tracked with options, the common product quantity becomes unavailable, and you are supposed to specify the number of in-stock items individually for each product option/variant.
+  * *Allow customers to add the product to cart*
 
-* **Minimum order quantity**—the minimum number of product items that a customer must add to cart to be able to order the product. The minimum amount always appears on a product details page of the storefront right after the product price.
+  * *Ask customers to enter the price* — customers will see an input field and will be able to enter the price that they're willing to pay. That's useful for charity events or donations.
 
-* **Maximum order quantity**—the maximum number of product items that a customer can order at a time. 0 means no maximum limit.
+* **Inventory**—the way of tracking the inventory of the current product: 
 
-* **Quantity step**—the number of product items between the two choices in the **Quantity** select box.
+  * *Track with options*
 
-* **List quantity count**—maximum of choices in the **Quantity** select box.
+  * *Track without options*
 
-* **Taxes**—select applicable taxes. :doc:`Learn more about configuring taxes <../../shipping_and_taxes/index>`.
+  * *Do not track*
+
+  .. note::
+
+      If a product is tracked with options, you'll need to specify the number of in-stock items individually for each combination of option variants.
+
+* **Minimum order quantity**—the minimum number of items that a customer can buy at a time. This number will appear on the product page on the storefront, right after the product price.
+
+* **Maximum order quantity**—the maximum number of items that a customer can buy at a time. *0* means no limit.
+
+* **Quantity step**—determines the step by which a customer can increase or decrease the number of products in cart.
+
+  .. hint::
+
+      If the minimum order quantity is 3, the maximum order quantity is 9, and the quantity step is 3, then a customer will be able to purchase 3, 6, or 9 items in one order.
+
+* **List quantity count**—the maximum number of choices in the **Quantity** drop-down list. It comes useful when you set a quantity step and when there are a lot of items in stock.
+
+* **Taxes**—select the :doc:`taxes <../../shipping_and_taxes/index>` that will be applied to the product.
 
 ------------
 Availability
 ------------
 
-* **User groups**—the :doc:`user groups <../../users/user_groups/index>` that can access the product.
+* **User groups**—the :doc:`user groups <../../users/user_groups/index>` that can access the product's page.
 
-* **Creation date**—the date when the product was added to the catalog.
+* **Creation date**—the date when the product was added to the catalog. It is used for sorting products by date.
 
-* **Avail since**—the date when the product becomes available for sale.
+* **Avail since**—the date when the product becomes available for purchase. It is useful when the you want to start selling at a specific date, or when the product isn't available yet.
 
-* **Out-of-stock actions**—select if customers should be able to buy the product in advance before it is not yet available for sale, or sign up to receive an email notification when the product is available. :doc:`Learn more about out-of-stock actions <out_of_stock_actions>`.
+* **Out-of-stock actions**—select if customers should be able to buy the product in advance before it is not yet available for sale, or sign up to receive an email notification when the product is available. 
+
+  .. hint::
+
+      Learn more about :doc:`out-of-stock actions <out_of_stock_actions>`.
 
 -----
 Extra
 -----
 
-* **Product details view**—choose a template for the page view.
+* **Product details view**—choose a template (basically, the look) of the product page. By default, CS-Cart has 2 templates, but you can develop your own templates according to your needs.
 
 * **Downloadable**—if this checkbox is ticked, the product is labeled as downloadable, i.e. distributed by download.
 
-* **Enable shipping for downloadable products**—if this checkbox is ticked, shipping is available for this downloadable product.
+  .. important::
 
-.. important::
+      For this checkbox to appear, go to **Settings → General → Catalog** and tick the **Enable selling downloadable products** checkbox.
 
-    The **Enable selling downloadable products** checkbox must be chosen in the **Settings → General → Catalog** section to enable this functionality.
+* **Enable shipping for downloadable products**—if this checkbox is ticked, shipping costs will be calculated for this downloadable product just like for normal products.
 
-* **Time-unlimited download**—if this checkbox is ticked, the product download period never expires. As a rule, download links expire after a certain period of time that is controlled by **Download key TTL** option in **Settings → General**.
+* **Time-unlimited download**—if this checkbox is ticked, the product download period never expires. 
 
-* **Short description**—a short product description appearing on a product list page of the storefront.
+  .. note::
 
-  The description can be either a plain text or a formatted HTML text. If you are not familiar with HTML, you are encouraged to add a formatted description using the built-in WYSIWYG HTML editor.
+      As a rule, customers only have a certain period of time to download a purchased product. That time period is controlled by **Download key TTL** setting in **Settings → General**.
 
-  If you leave this field blank, the short description will be automatically taken from the full product description (first 300 characters).
+* **Short description**—a short product description; it appears on the product list on the storefront. If you leave this field blank, the short description will be automatically taken from the full product description (first 300 characters).
 
-* **Popularity**—integer conveying the product popularity, which is calculated automatically. This rating depends on the number of product views as well as the number of times the product was added to the cart and purchased. If necessary, you can manually adjust this value. Product popularity influences the way the products are arranged on the storefront.
+* **Popularity**—integer conveying the product popularity, which is calculated automatically. This rating depends on the number of product views as well as the number of times the product was added to the cart and purchased. Products can be sorted by popularity on the storefront.
 
 * **Search words**—the list of words by which the product should be easily found by the built-in search.
 
-* **Promo text**—important information about the product here in the form of a short message.
+* **Promo text**—an additional block with information that appears on the top right side of the product page.
 
 ======
 Images
 ======
 
-This tab contains additional images for the product. Each additional image is represented as a pair of images: a thumbnail and a large pop-up image. 
+This tab contains an unlimited number of additional image pairs for the product. Each additional image pair includes a large pop-up image and an icon (thumbnail). Supported formats are JPEG, GIF, and PNG. The maximum size of an uploaded image depends on your server configuration. As a rule, it should not exceed 2 MB.
 
-Additional thumbnails appear on the product details page of the storefront beneath the main image thumbnail. When a customer chooses to enlarge the active thumbnail, it expands into the large pop-up window.
+.. image:: img/catalog_58.png
+    :align: center
+    :alt: The "Images" tab of a product.
+
+Thumbnails of additional images appear on the product page of the storefront next to the main image thumbnail. Clicking on thumbnails allows you to switch between images.
 
 .. image:: img/product_images.png
     :align: center
-    :alt: Product images
-
-Both images can be either uploaded from a local computer or the server file system, or linked to a remote location where the required image is physically located.
-
-Images must be of one of the following formats only: *JPEG*, *GIF*, *PNG*. The maximum size of an uploaded image depends on your server configuration. As a rule, it should not exceed 2MB.
-
-An alternative text describes an image in words. Technically, the text that you enter appears inside the ``alt=""`` and ``title=""`` attributes of the ``<img>`` HTML tag. The text is shown when the image is missing or cannot be displayed. It is good practice to have an alternative text associated with the image, for SEO purposes.
+    :alt: The additional images of a product.
 
 .. note::
 
-    To sort additional images in the desired order simply drag and drop uploaded images.
+    To change the order of additional images, simply drag and drop them.
 
 .. image:: img/product_images_01.png
     :align: center
@@ -171,95 +191,89 @@ An alternative text describes an image in words. Technically, the text that you 
 SEO
 ===
 
-* **SEO name**—the value to which the standard URL will be changed.
+* **SEO name**—the value to which the standard URL will be changed. This property is a part of the :doc:`SEO </user_guide/addons/seo/index>` add-on.
 
-* **Page title**—the title of the product page on the storefront, which is displayed in the web browser when somebody is viewing the page. Required for SEO purposes.
+* **Page title**—the content of the ``<title></title>`` container: the title of the product page on the storefront, which is displayed in the web browser when somebody is viewing the page. If you don't specify a value manually, it will be generated automatically.
 
-* **META description**—the content of the HTML meta tag that describes the product. Required for SEO purposes.
+* **META description**—the content of the ``description`` meta-tag: a brief description of the product.
 
-* **META keywords**—the content of the HTML tag that contains a list of search keywords for the product. Required for SEO purposes.
+* **META keywords**—the content of the ``keywords`` meta-tag: a list of search keywords that appear on the product page.
+
+.. note::
+
+    Instructions on how to best use the meta-tags may vary depending on the search engine.
 
 .. image:: img/product_attributes_02.png
     :align: center
-    :alt: SEO
-
-:doc:`Learn more about SEO <../../addons/seo/index>`.
+    :alt: The "SEO" tab of a product in CS-Cart.
 
 =======
 Options
 =======
 
-This tab allows you to manage the product options and option variants, as well as control the option combinations and add forbidden/allowed combinations.
+This tab allows you to manage :doc:`product options <../options/index>` and option variants, as well as control the option combinations and add forbidden/allowed combinations.
 
 .. image:: img/product_attributes_03.png
     :align: center
-    :alt: Options
+    :alt: The "Options" tab of the product editing page.
 
-.. note::
-
-   This tab also allows you to add global options to the product. :doc:`Learn more about options <../options/index>`.
-
-Product options appear on the product details page on the storefront as selectable or input parameters of the product. Options can have the following attributes:
+Product options appear on the product details page on the storefront. Depending on the type of an option, customers either select one of the option variants or provide their own variant. Options can have the following properties:
 
 * **Name**—the name of the product option as it appears on the storefront.
 
 * **Position**—the position of the product option relatively to the position of the other options in the list.
 
-* **Inventory**—if you tick this checkbox, the option will have a separate number of items in stock. This number is tracked separately.
+* **Inventory**—if you tick this checkbox, this option can become a part of an option combination. The stock is tracked separately for each option combination.
 
-* **Store**—the store to which the option belongs.
+* **Store**—the storefront to which the option belongs.
 
-* **Type**— the type of the product option: *Select box*, *Radio group*, *Check box*, *Text*, *Text area* or *File*. :doc:`Learn more about option types <../options/option_settings>`.
+* **Type**—the :doc:`type of the product option <../options/option_settings>`: *Select box*, *Radio group*, *Check box*, *Text*, *Text area*, or *File*.
 
-* **Description**—the description of the product option. It will appear as it appears on the storefront under the question sign (?) next to the option name.
+* **Description**—the description of the product option. It will appear on the storefront under the question sign (?) next to the option name.
 
-* **Comment**—the comment displayed below the option on the storefront.
+* **Comment**—the comment displayed below the option on the product page on the storefront.
 
-* **Required**—if you tick this checkbox, customers will have to select this option (or fill in the field, if the option has the *Text* or *Text area* type).
+* **Required**—if you tick this checkbox, customers won't be able to purchase the product without selecting this option (for example, without ticking the checkbox, choosing a variant, entering a text or uploading a file).
 
-* **Missing variants handling**—select how impermissible/missing option combinations should be handled: 
+* **Missing variants handling**—the behavior of the store when a forbidden or missing option combinations is selected: 
 
-  * **Display message**—the option will be marked as not available; if the option is *required*, customers won't be able to add the product to the cart.
+  * *Display message*—the option will be marked as *"Not available"*; if the option is *required*, customers won't be able to add the product to the cart.
 
-  * **Hide option completely**—the option will be hidden; if the option is *required*, customers will be able to add the product to the cart.
+  * *Hide option completely*—the option will be hidden; if the option is *required*, customers will be able to add the product to the cart.
 
 .. image:: img/product_attributes_04.png
     :align: center
-    :alt: Option attributes
+    :alt: The properties of an option.
 
-An option variant is an extension to the product option of type *select box*, *radio group* or *check box*. A variant may have a separate status, icon and amount of reward points, as well as a weight and price modifiers. Option variants have the following attributes:
+Some option types (*select box*, *radio group*, *check box*) have variants that customers can choose on the product page. Option variants have the following properties:
 
 * **Position**—the position of the variant relatively to the positions of the other variants in the list.
 
-* **Name**—the name of the product variant. For example, if the option is titled *Size*, the product variants to the option can be *small*, *medium*, *large*, etc.
+* **Name**—the name of the variant. For example, if the option is titled *Size*, the variants of the option can be *small*, *medium*, *large*, etc.
 
-* **Modifier/Type**—a positive or negative value that modifies the original product price. The modifier can be either an absolute value or a percentage.
+* **Modifier/Type**—a positive or negative value that is added to or subtracted from the product price when a customer chooses this variant. The modifier can be either a fixed value or a percentage.
 
-* **Weight modifier/Type**—a positive or negative value that modifies the original product weight. The modifier can be either an absolute value or a percentage.
+* **Weight modifier/Type**—a positive or negative value that that is added to or subtracted from the product's weight when a customer chooses this variant. The modifier can be either a fixed value or a percentage.
 
-* **Status**—the status of the product option variant (*Active* or *Disabled*).
+* **Status**—the status of the option variant (*Active* or *Disabled*).
 
-* **Icon**—a thumbnail to represent the option variant. 
+* **Icon**—an icon (thumbnail) that represents the option variant; it will appear on the storefront. 
 
-  The image can be either uploaded from a local computer or the server file system or linked to a remote location where the required image is physically located. 
-
-  An alternative text describes the image and is shown when the image is missing or cannot be displayed. It is good practice to have an alternative text associated with the image, for SEO purposes.
-
-* **Earned point modifier/Type**—a positive or negative value that modifies the original number of reward points that customers receive at their accounts when they buy the product. The modifier can be either an absolute value or a percentage.
+* **Earned point modifier/Type**—a positive or negative value that is added to or subtracted from the number of reward points that customers receive when they buy this variant of the product. The modifier can be either a fixed value or a percentage.
 
 ===================
 Shipping Properties
 ===================
 
-This tab contains a number of product properties that are important for shipping this product to customers.
+This tab contains a number of product properties that are important for automatic shipping cost calculation.
 
-* **Weight**—the weight of a single product item in the store default weight unit.
+* **Weight**—the weight of a single item in the store's default weight measurement unit. The default weight measurement unit can be specified under **Settings → General**.
 
-* **Free shipping**—if you tick this checkbox, the product is delivered to the customer free of charge, i.e. no shipping cost for the product is calculated.
+* **Free shipping**—if you tick this checkbox, the product will be excluded from the shipping cost calculation, as long as the shipping method has the **Use for free shipping** checkbox ticked.
 
-* **Shipping freight**—the handling fee (insurance, packaging, etc.) added to the product cost.
+* **Shipping freight**—the handling fee (insurance, packaging, etc.) added to the shipping cost.
 
-* **Items in a box**—the minimum and maximum number of product items to be shipped in a separate box.
+* **Items in a box**—the minimum and maximum number of product items to be shipped in a separate box. Usually it's  ``1 - 1`` (only one product per box).
 
 * **Box length**—the length of a separate box.
 
@@ -269,57 +283,67 @@ This tab contains a number of product properties that are important for shipping
 
 .. note::
 
-    The last four options are required for a more accurate shipping cost estimation when a real-time shipping method with the support for multi-box shipping is used (UPS, FedEx, and DHL). 
+    If you don't specify box dimensions, values will be taken from the shipping method. Box-related properties are required for a more accurate shipping cost estimation when a real-time shipping method supports multi-box shipping  (UPS, FedEx, and DHL). 
 
-    If you don't specify box dimensions, values will be taken from the global configuration settings of a particular carrier. See the :doc:`Shipping and Taxes <../../shipping_and_taxes/index>` section for more details.
+.. _catalog-quantity-discounts:
 
 ==================
 Quantity Discounts
 ==================
 
-This tab contains the list of the product wholesale prices that have the following attributes:
+This tab contains the list of wholesale prices for the product. Customers will see those discounts on the product page on the storefront. Prices apply depending on the number of items of this product in cart.
+
+.. image:: img/catalog_64.png
+    :align: center
+    :alt: A quantity discount on the product page in CS-Cart..
 
 * **Quantity**—the minimum number of product items to qualify for the product wholesale price.
 
-* **Value**—product wholesale price (per item).
+* **Value**—the value of the discount (per item).
 
 * **Type**—the type of the discount: 
 
-  * **Absolute**—the cost of 1 discounted item.
+  * *Absolute*—the cost of 1 discounted item.
 
-  * **Percent**—the percent discount off the base product item price. 
+  * *Percent*—the percent discount off the base product item price. 
 
-    Percentage discount has certain natural limitations: the discount cannot be more than 100%, and the discount will not be saved as long as it applies to 1 product item and all user groups.
+* **User group**—the :doc:`user group <../../users/user_groups/index>` which can take advantage of the wholesale price.
 
-* **User group**—the :doc:`user groups <../../users/user_groups/index>` which can take advantage of the wholesale price.
+  .. important::
+
+      If you set up a discount that applies for all user groups for purchasing 1 item, this will overwrite product price.
 
 .. image:: img/product_attributes_05.png
     :align: center
-    :alt: Quantity discounts
-
-:doc:`Learn more about defining wholesale prices for products <wholesale>`.
+    :alt: Configuring quantity discounts in CS-Cart.
 
 =============
 Files to Sell
 =============
 
-This tab contains a list of files that are associated with this :doc:`downloadable product <downloadable>`. Each file may have the following attributes:
+This tab contains a list of files that are associated with this :ref:`downloadable product <products-add-digital>`.
+
+.. note:: 
+
+    For digital instructions and/or files that come with a physical product and don't have to be bought, we recommend using the **Attachments** tab instead.
+ 
+Each file has the following properties:
 
 * **Name**—the name of the file as your customers will see it on the product page. Note that it does not change the original file name.
 
-* **Position**—the position of the file relatively to the position of the other files in the list.
+* **Position**—the position of the file relatively to the positions of the other files in the list.
 
-* **File**—the file to be downloaded. The file can be uploaded from a local computer or the server file system. It can also be a linked to a remote physical location of the file.
+* **File**—the actual file that will become available for download after purchase.
 
 * **Preview**—a preview file that can be freely downloaded from the product details page on the storefront.
 
-* **Activation mode**—how the download link will be activated: 
+* **Activation mode**—determines how the download link will be activated: 
 
-  * **Immediately**—immediately after the order has been placed.
+  * *Immediately*—immediately after the order has been placed.
 
-  * **After full payment**—once the order status has changed to *Processed* or *Complete*.
+  * *After full payment*—once the order status has changed to *Processed* or *Complete*.
 
-  * **Manually**—manually by the store administrator.
+  * *Manually*—manually by the store administrator.
 
 * **Max downloads**—the maximum number of allowed product downloads per customer.
 
@@ -327,7 +351,7 @@ This tab contains a list of files that are associated with this :doc:`downloadab
 
 * **Agreement required**—determines whether the customers must accept license agreement at checkout.
 
-* **Readme**—the text of the *readme* file (e.g., installation instructions, etc.)
+* **Readme**—additional instructions (for example, installation instructions, etc.)
 
 * **Folder**—the folder to which the file belongs (if you created any).
 
@@ -347,41 +371,59 @@ As you can see, the process is entirely automated. However, you can add subscrib
 
 .. hint::
 
-    More information about product subscribers is available in :ref:`the dedicated article. <product-subscribers>`
+    More information about product subscribers is available in :ref:`the dedicated article <product-subscribers>`.
 
 =======
 Add-ons
 =======
 
-Product attributes that depend on the active add-ons.
+This tab contains product properties that depend on the active add-ons; for example:
 
-* **Returnable**—if you tick this checkbox, the product will be labeled as available for the return.
-
-* **Return period** (requires the :doc:`RMA <../../addons/rma/index>` add-on)—the time period period of time during which the product can be returned. The period begins on the day of purchase.
-
-* **Sales amount**—the number of sold product items. This value is calculated automatically if the **Bestsellers and on-sale products** add-on is active (**Add-Ons → Manage add-ons**). Yet, you can change the current value manually.
-
-* **Age verification** (requires the :doc:`Age Verification <../../addons/age_verification/index>` add-on)—if you tick this checkbox, the access to the product will be limited by the customer age.
-
-* **Age limit** (requires the :doc:`Age Verification <../../addons/age_verification/index>` add-on)—the minimum age for accessing the product.
-
-* **Warning message** (requires the :doc:`Age Verification <../../addons/age_verification/index>` add-on)—the message to be displayed, if the customer does not qualify for accessing the product.
-
-* **eBay template**—choose one of the templates created in the **Marketing → eBay templates** section. This setting appears when the :doc:`eBay synchronization <../../addons/eBay/index>` add-on is installed and set up in the **Add-ons → Manage add-ons** section.
-
-* **Package type**—the type of the product package. If you do not know your package type, select the *Large package* option. To ensure the most accurate cost, you will be asked to enter exact package dimensions. This setting appears when the **eBay synchronization** add-on is installed and set up in the **Add-ons → Manage add-ons** section.
-
-* **Reviews** (requires the :doc:`Comments and Reviews <../../addons/comments_and_reviews/index>` add-on)—customer reviews or ratings, or both.
+---
+RMA
+---
 
 .. note::
 
-   The following settings appear when you installed and enable the **eBay synchronization** add-on under **Add-ons → Manage add-ons** section.
+    This is a part of the :doc:`RMA <../../addons/rma/index>` add-on.
 
-* **Override title and description**—choose if you want the original product name and description to be replaced with those specified in the **eBay product title** and the **eBay product description** fields (you can see them below).
+* **Returnable**—if you tick this checkbox, the product will be labeled as available for the return.
 
-* **eBay product title**—the title of the product to be used at eBay. This setting appears when the **eBay synchronization** add-on is installed and set up in the **Add-ons → Manage add-ons** section.
+* **Return period**—the time period (in days) during which the product can be returned. The period begins on the day of purchase.
 
-* **eBay product description**—the description of the product to be used on eBay. This setting appears when the **eBay synchronization** add-on is installed and set up in the **Add-ons → Manage add-ons** section.
+-----------
+Bestselling
+-----------
+
+.. note::
+
+    This is a part of the :doc:`Bestsellers & On-Sale Products <../../addons/bestsellers_and_on_sale_products/index>` add-on.
+
+* **Sales amount**—the number of sold product items. This value is calculated automatically when the **Bestsellers & On-Sale Products** add-on is active, but you can also change the current value manually.
+
+----------------
+Age Verification
+----------------
+
+.. note::
+
+    This is a part of the :doc:`Age verification <../../addons/age_verification/index>` add-on.
+
+* **Age verification**—if you tick this checkbox, the access to the product will be limited by the customer's age.
+
+* **Age limit**—the minimum age for accessing the product.
+
+* **Warning message**—the message to be displayed, if the customer does not qualify for accessing the product.
+
+--------------------
+Comments and Reviews
+--------------------
+
+.. note::
+
+    This is a part of the :doc:`Comments and reviews <../../addons/comments_and_reviews/index>` add-on.
+
+* **Reviews**—choose whether to allow comments, reviews, or both for this product.
 
 ========
 Features
@@ -393,21 +435,25 @@ This tab allows you to define the values of the extra fields that are valid for 
 Product Tabs
 ============
 
-In this tab, you can see the list of tabs, applied to the current product. Next to a tab name you can see its status—*Active* or *Disabled*. 
-
-You can also see how the product page looks like. Click the gear button and select **Preview** (how a customer sees the page), or **Preview as admin** (how an administrator sees the page).
+On this tab you can see the list of tabs, applied to the current product. Next to a tab name you can see its status—*Active* or *Disabled*. 
 
 Editing and adding product tabs is done in the **Design → Product tabs** section.
+
+.. hint::
+
+    To see what the product page looks like, Click the gear button and select **Preview**.
 
 ============
 Buy Together
 ============
 
-Requires the :doc:`Buy Together <../../addons/buy_together/index>` add-on.
+.. note::
 
-In this tab, you can bind the product with other products from the catalog and offer a discount if the bound products are bought together. A set of the bound products is referred to as a *product combination*. The discount is promoted on the product details page on the storefront, and customers can decide whether they want to profit by the offer or not.
+    This tab requires the :doc:`Buy Together <../../addons/buy_together/index>` add-on to be active.
 
-Along with the set of bound products and the offered discount, each combination has the following attributes:
+On this tab, you can bind the product with other products from the catalog and offer a discount if the bound products are bought together. A set of the bound products is referred to as a *product combination*. The discount is promoted on the product details page on the storefront, and customers can decide whether they want to profit by the offer or not.
+
+Along with the set of bound products and the offered discount, each combination has the following properties:
 
 * **Name**—the name of the product combination.
 
@@ -417,51 +463,53 @@ Along with the set of bound products and the offered discount, each combination 
 
 * **Available till**—the date until the product combination is available.
 
-* **Display in promotions**—if this checkbox is ticked, the offered product combination appears in **Products → Promotions**.
+* **Display in promotions**—if this checkbox is ticked, the combination will appear on the list of promotions (``index.php?dispatch=promotions.list``).
 
 * **Status**—the status of the product combination (*Active* or *Disabled*).
-
-.. note::
-
-    This tab is available when the :doc:`Buy together <../../addons/buy_together/index>` add-on is installed and activated in the **Add-ons → Manage add-ons** section.
 
 ====
 Tags
 ====
 
-This tab includes a list of tags associated with the product. Tags appear on the storefront in a special side box titled **Tag cloud**. :doc:`Learn more about tags <../../addons/tags/index>`.
+.. note::
 
-* **Tags**—tags that have been added to the product. Start typing in this field to add a new tag. You can choose among the existing variants or create a new tag.
+    This tab requires the :doc:`Tags <../../addons/tags/index>` add-on to be active.
+
+This tab includes a list of tags associated with the product. Tags appear on the storefront in the **Tags**.
+
+* **Tags**—the tags that have been added to the product. Once you start typing, CS-Cart will use autocomplete to suggest what existing tag you may be entering.
 
 .. image:: img/product_attributes_06.png
     :align: center
-    :alt: Tags
+    :alt: The "Tags" tab.
 
 ===========
 Attachments
 ===========
 
-Requires the :doc:`Attachments <../../addons/attachments/index>` add-on.
+.. note::
 
-This tab contains product attachments, which are files associated with the products. Unlike the contents of the **Files to sell** tab, the files that appear here are available for non-downloadable products as well. Each attachment can have the following attributes:
+    This tab requires the :doc:`Attachments <../../addons/attachments/index>` add-on to be active.
+
+This tab contains :doc:`files associated with the product <attaching_files_to_products>`. Unlike the contents of the **Files to sell** tab, the files that appear here are available for non-downloadable products as well. Each attachment has the following properties:
 
 * **Name**—the name of the product attachment.
 
 * **Position**—the position of the attachment relatively to the position of the other product attachments.
 
-* **File**—the file that is used as the product attachment. The file can be uploaded from a local computer or the server file system, or it can be a link to a remote location where the file is physically located.
+* **File**—the file that is used as the product attachment.
 
 * **User groups**—the :doc:`user groups <../../users/user_groups/index>`, for which the attachment is available.
-
-:doc:`Learn more about attachments <attaching_files_to_products>`.
 
 =================
 Required Products
 =================
 
-Requires the :doc:`Required Products <../../addons/required_products/index>` add-on.
+.. note::
 
-This tab contains a list of required products, which must be bought together with this product. To add a new product, click the **Add product** button.
+    This tab requires the :doc:`Required Products <../../addons/required_products/index>` add-on to be active.
+
+This tab contains a list of required products, which will be added to cart along with this product. To add a new required product, click the **Add product** button.
 
 .. image:: img/product_attributes_07.png
     :align: center
@@ -471,18 +519,21 @@ This tab contains a list of required products, which must be bought together wit
 Reward Points
 =============
 
-Requires the :doc:`Reward Points <../../addons/reward_points/index>` add-on.
+.. note::
+
+    This tab requires the :doc:`Reward Points <../../addons/reward_points/index>` add-on to be active.
 
 Use this tab to set up the product price in reward points and specify the number of reward points to be earned for purchasing the product.
 
-* **Allow payment by points**—if you tick this checkbox, customers will be able to pay for the product product can be paid for with reward points.
+* **Allow payment by points**—if you tick this checkbox, customers will be able to pay for the product product with reward points.
 
 * **Override global PER**—if this checkbox is ticked, the product will have a fixed price in points, that is independent of the point-to-money exchange rate.
 
-* **Price in points**—fixed product price in points.
+* **Price in points**—a fixed product price in points.
+
 * **Override global/category point value for this product**—if you tick this checkbox, the values below override the global reward points specified in **Marketing → Reward points**.
 
-* **User group**—the :doc:`user groups <../../users/user_groups/index>` whose members are granted reward points for buying the product.
+* **User group**—the :doc:`user groups <../../users/user_groups/index>`, members of which will get reward points for buying the product.
 
 * **Amount**—the number of reward points to be granted to the user group member who bought the product.
 
@@ -492,26 +543,16 @@ Use this tab to set up the product price in reward points and specify the number
 Reviews
 =======
 
-Requires the :doc:`Comments and Reviews <../../addons/comments_and_reviews/index>` add-on.
+.. note::
 
-The list of customers' reviews of the product. Requires that the **Reviews** field on the **Add-ons** tab be set to *Communication*, *Rating*, or both. In this tab, you can add own reviews and edit existing product reviews and ratings.
+    This tab requires the :doc:`Comments and reviews <../../addons/comments_and_reviews/index>` add-on to be active. This tab appears only when communication and/or rating is enabled for the product on the **Add-ons** tab.
+
+The list of customers' reviews of the product. Here you can add own reviews and edit existing product reviews and ratings.
 
 =======
 Layouts
 =======
 
-The content of the product details page.
+The content of the product details page. This tab duplicates the :doc:`global layout </user_guide/look_and_feel/layouts/index>` of a product page.
 
-This tab duplicates the global layout of the location to which this storefront page belongs.
-
-By using this tab, you can disable blocks that are globally enabled, and, on the contrary, enable blocks that are globally disabled. This makes it possible to configure an individual layout for different storefront pages.
-
-Any modification that you make under this tab will not affect other storefront pages.
-
-.. note::
-
-    To learn more about blocks, see :doc:`Look and Feel → Layouts <../../look_and_feel/layouts/index>`.
-
-.. note::
-
-    Most of the attributes can be imported using :doc:`product import <../../manage_products/import_export/product_import>`.
+Here you can enable or disable some blocks, changing the product's page that way. Any changes you make here will not affect the pages of other products.
