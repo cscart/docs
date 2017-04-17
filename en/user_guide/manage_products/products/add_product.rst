@@ -57,9 +57,9 @@ Adding Multiple Products
 
 #. Add products and fill in the empty fields.
 
-    .. image:: img/catalog_32.png
-        :align: center
-        :alt: Fill in the required product properties.
+   .. image:: img/catalog_32.png
+       :align: center
+       :alt: Fill in the required product properties.
 
 #.  Click **Create**.
 
@@ -85,15 +85,15 @@ On the List of Products
 
 #. Click the gear button and choose **Clone selected**.
 
-    .. image:: img/catalog_33.png
-        :align: center
-        :alt: Cloning a product in CS-Cart.
+   .. image:: img/catalog_33.png
+       :align: center
+       :alt: Cloning a product in CS-Cart.
 
 #. Clone products will be created with *Disabled* status.
 
-    .. image:: img/catalog_34.png
-        :align: center
-        :alt: A duplicate product in CS-Cart.
+   .. image:: img/catalog_34.png
+       :align: center
+       :alt: A duplicate product in CS-Cart.
 
 #. Edit the clone products and enable them by changing their statuses to *Active*.
 
@@ -121,9 +121,9 @@ You can edit the properties of a group of products.
 
 #. Tick the checkboxes of the desired products, click the gear button, and choose **Edit selected**.         
 
-    .. image:: img/catalog_75.png
-        :align: center
-        :alt: The "Edit selected" button allows you to edit specific properties of multiple products at once.
+   .. image:: img/catalog_75.png
+       :align: center
+       :alt: The "Edit selected" button allows you to edit specific properties of multiple products at once.
 
 #. A pop-up window will open. Tick the checkboxes of the product properties you'd like to edit, then click **Modify selected**.
 
@@ -177,9 +177,9 @@ To update all products:
 
 #. Once you've chosen how to update product properties, click **Apply**.
 
-.. image:: img/catalog_28.png
-    :align: center
-    :alt: The global update page allows you to adjust prices and stock of all products at once.
+   .. image:: img/catalog_28.png
+       :align: center
+       :alt: The global update page allows you to adjust prices and stock of all products at once.
 
 ==================
 Importing Products
@@ -195,21 +195,21 @@ To demonstrate the full process, let's export one of the products to a CSV file 
 
 #. Select one of the products, click the gear button, and choose **Export selected**.
 
-    .. image:: img/catalog_36.png
-        :align: center
-        :alt: CS-Cart allows you to export all products or specific groups of products.
+   .. image:: img/catalog_36.png
+       :align: center
+       :alt: CS-Cart allows you to export all products or specific groups of products.
 
 #. The **Export data** page will open. There you will be able to chose the exported fields and change export properties. Each exported field is an equivalent of a product property. We recommend you to leave everything as is for the first time. After everything is set up, click **Export**.
 
-    .. image:: img/catalog_37.png
-        :align: center
-        :alt: Selecting the product properties that will be exported.
+   .. image:: img/catalog_37.png
+       :align: center
+       :alt: Selecting the product properties that will be exported.
 
 #. Open the exported file in the spreadsheet editor. The default delimiter for CSV is semicolon.
 
-    .. image:: img/catalog_39.png
-        :align: center
-        :alt: An exported CSV file in the spreadsheet editor.  
+   .. image:: img/catalog_39.png
+       :align: center
+       :alt: An exported CSV file in the spreadsheet editor.  
 
 #. Each column of the table contains the specific type of the product data. 
 
@@ -249,13 +249,13 @@ To demonstrate the full process, let's export one of the products to a CSV file 
 
 #. Now let's import the products to the store. To do it, go to **Administration → Import data → Products**.
 
-    .. image:: img/catalog_41.png
-        :align: center
-        :alt: How to open the product import page in CS-Cart. 
+   .. image:: img/catalog_41.png
+       :align: center
+       :alt: How to open the product import page in CS-Cart. 
 
-    .. image:: img/catalog_43.png
-        :align: center
-        :alt: The product import page.   
+   .. image:: img/catalog_43.png
+       :align: center
+       :alt: The product import page.   
 
 #. Go to the bottom of the page, choose a file to import, and click the **Import** button.
 
@@ -269,9 +269,9 @@ To demonstrate the full process, let's export one of the products to a CSV file 
 
    * The number of products updated.
 
-    .. image:: img/catalog_44.png
-        :align: center
-        :alt: Notification about import results in CS-Cart.   
+   .. image:: img/catalog_44.png
+       :align: center
+       :alt: Notification about import results in CS-Cart.   
 
 Done!
 
@@ -291,9 +291,9 @@ CS-Cart allows to sell digital products.
 
 #. Open the **Files to sell** tab on the product editing page.
 
-    .. image:: img/catalog_66.png
-        :align: center
-        :alt: The "Files to sell" tab lists the files of the digital product.
+   .. image:: img/catalog_66.png
+       :align: center
+       :alt: The "Files to sell" tab lists the files of the digital product.
 
 #. Add the files that you want to sell. Files can be grouped by folders.
 
