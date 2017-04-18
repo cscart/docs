@@ -29,6 +29,7 @@
     controllers/index
     front-end/index
     db/index
+    settings/index
     documents/index
     languages
     multiple_storefronts
