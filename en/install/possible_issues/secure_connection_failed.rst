@@ -6,7 +6,7 @@ If you enabled secure connection under **Settings → Security** in the administ
 
 .. important::
 
-    **Warning:** The secure connection check has failed. Please ensure that SSL certificate is installed on your server. Check out the Knowledge base article for more details.
+    **Warning:** The secure connection check has failed. Please ensure that SSL certificate is installed on your server. Check out the Documentation article for more details.
 
 Follow these steps to resolve the issue:
 
