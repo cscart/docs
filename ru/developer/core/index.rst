@@ -30,5 +30,5 @@
     database/index
     addons/index
     hooks/index
+    settings/index
     debug/index
-
