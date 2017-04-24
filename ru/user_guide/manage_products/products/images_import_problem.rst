@@ -21,7 +21,7 @@
 
         Замените ``www.your_domain.com`` на имя вашего домена, а ``your_cscart_directory`` with на директорию, где на вашем сервере установлен CS-Cart. 
 
-   Например, если магазин находится по адресу **www.example.com/store**, замените replace ``your_cscart_directory`` на ``store``. А если магазин доступен по адресу **www.example.com**, просто уберите ``your_cscart_directory`` из кода выше и из ссылки ниже.
+   Например, если магазин находится по адресу **www.example.com/store**, замените ``your_cscart_directory`` на ``store``. А если магазин доступен по адресу **www.example.com**, просто уберите ``your_cscart_directory`` из кода выше и из ссылки ниже.
 
 #. Загрузите файл **test.php** в корневую директорию установленного CS-Cart.
     
