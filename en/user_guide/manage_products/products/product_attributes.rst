@@ -79,7 +79,7 @@ Options Settings
 Pricing / Inventory
 -------------------
 
-* **CODE**—the identifier of the product that you use in your store (a stock keeping unit or SKU). This identifier doesn't have to be unique; it can even be missing.
+* **CODE**—the identifier of the product that you use in your store (a stock keeping unit or SKU); it is used to distinguish products from each other during import, so that the data would be saved to the right product.
 
 * **List price**—if this price is higher that product's **Price**, then a discount label will be displayed for the product.
 

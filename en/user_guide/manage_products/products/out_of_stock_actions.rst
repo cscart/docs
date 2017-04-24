@@ -94,9 +94,9 @@ You can view product subscriptions in 2 ways:
 
 You can add subscribers to the list using these buttons:
 
-* **Add subscriber**—enter the email address of a subscriber manually
+* **Add subscriber**—enter the email address of a subscriber manually.
 
-* **Select customer**—choose the registered customers you want to subscribe to email notifications about the product's availability
+* **Select customer**—choose the registered customers you want to subscribe to email notifications about the product's availability.
 
 .. important::
 
