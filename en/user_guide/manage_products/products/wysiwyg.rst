@@ -4,7 +4,7 @@ Content From the WYSIWYG Editor Is Not Displayed Properly on the Storefront
 
 If the content you entered in the `WYSIWYG <https://en.wikipedia.org/wiki/WYSIWYG>`_ editor is not displayed properly on the storefront, make sure that the HTML content is not copied and pasted from another text editor (e.g. **Microsoft Word**). 
 
-Microsoft Word tends to insert hidden code into a text. When pasted into a web page using the **WYSIWYG** editor, this hidden code can mess up the layout and cause internet browsers, such as Internet Explorer, to crash and/or display an error.
+Microsoft Word tends to insert hidden code into a text. When pasted into a web page using the **WYSIWYG** editor, this hidden code can mess up the layout and cause web browsers to crash and/or display an error.
 
 To avoid it, create the necessary content directly in the WYSIWYG editor that is integrated in the default CS-Cart installation.
 

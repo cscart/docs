@@ -2,25 +2,26 @@
 How To: Attach Files to Products
 ********************************
 
-To attach a file to a product:
+Attaching a file to a product is useful when you need to make a some information freely available for all your existing and potential customers. For example, if you sell programs, you can make a PDF manual available for anyone who visits the product page.
 
-*	In the Administration panel, go to **Products → Products**.
-*	Open the details page of the necessary product by clicking on its name.
-*   Open the **Attachments** tab and click the **Add attachment** button.
+#. In the Administration panel, go to **Products → Products**.
 
-.. important::
+#. Open the editing page of the necessary product by clicking on its name.
 
-	The **Attachments** tab will display only if the **Attachments** add-on is activated in the **Add-ons → Manage add-ons** section. This functionality is not available in CS-Cart Free.
+#. Switch to the **Attachments** tab and click the **Add attachment** button.
 
-*   In the opened form, specify the name of the new attachment and upload a file in the **File** section.
-*   Click the **Create** button.
+   .. important::
 
-.. note::
+       The **Attachments** tab will display only if the **Attachments** add-on is activated in the **Add-ons → Manage add-ons** section.
 
-	A customer will be able to download this file in the **Attachments** tab on the product details page in the storefront.
+#. In the opened form, specify the name of the new attachment and upload a file in the **File** section.
 
-.. image:: img/attachment_01.png
-    :align: center
-    :alt: New attachment
+#. Click the **Create** button.
 
-This functionality is usefull in case that you need to attach some manual or instructions to a product, etc.
+   .. note::
+
+       A customer will be able to download this file in the **Attachments** tab on the product details page in the storefront.
+
+   .. image:: img/attachment_01.png
+       :align: center
+       :alt: New attachment
