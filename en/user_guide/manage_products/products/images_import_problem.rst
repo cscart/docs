@@ -4,7 +4,7 @@ Images Are Not Uploaded or Imported from URL
 
 This problem may occur if URL file-access is disabled in your server configuration. Here's how you can check whether or not URL file-access is enabled:
 
-1. Create a file called **test.php** with the following content:
+#. Create a file called **test.php** with the following content:
 
    .. code-block :: none
 
@@ -23,9 +23,9 @@ This problem may occur if URL file-access is disabled in your server configurati
 
    For example, if your store is available at **www.example.com/store**, replace ``your_cscart_directory`` with ``store``. If your store is available directly at **www.example.com**, leave ``your_cscart_directory`` out of the code above and the link below.
 
-2. Upload **test.php** to the root directory of your CS-Cart installation.
+#. Upload **test.php** to the root directory of your CS-Cart installation.
     
-3. Try to open this file in a browser by entering the following URL: *http://www.your_domain.com/your_cscart_directory/test.php*.
+#. Try to open this file in a browser by entering the following URL: *http://www.your_domain.com/your_cscart_directory/test.php*.
 
    * If you see the content of **store_closed.html**, then URL file-access is enabled.
 

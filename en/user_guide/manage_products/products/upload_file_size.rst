@@ -2,20 +2,28 @@
 How To: Change Maximum Size of Uploaded File
 ********************************************
 
-To change the maximum size of a file:
+To change the maximum size of a file that you can upload:
 
-In the *php.ini* file of the root directory on your server, replace the following string:
+#. Go to the  root directory on your server.
 
-.. code-block:: none
+#. Find and open the **php.ini** file.
 
-	upload_max_filesize = 2M
+#. Replace the following string:
 
-(2M stands for 2Mb)
+   .. code-block:: none
 
-with this one:
+       upload_max_filesize = 2M
 
-.. code-block:: none
+   (2M stands for 2Mb)
 
-	upload_max_filesize = 30M
+   with this one:
 
-If there is no such file, you can create it. If it is not supported there, you should contact your hosting provider to set the maximum size available for the files uploaded to the server.
+   .. code-block:: none
+
+       upload_max_filesize = 30M
+
+#. Save your changes.
+
+   .. note::
+
+       If **php.ini** doesn't exist in the root directory of your server, you can create this file and add the line mentioned above. If adding this file doesn't help, it may be because this file isn't supported. In that case contact your hosting provider to set the maximum allowed size for the files uploaded to the server.
