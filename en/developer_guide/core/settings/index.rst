@@ -162,31 +162,41 @@ For example, ``<settings layout="separate" edition_type="ROOT">`` means that the
 Structure of the *<settings>* Section
 -------------------------------------
 
-::
+.. code-block:: xml
 
-  <settings layout="separate" edition_type="ROOT,ULT:VENDOR">
-          <sections> <!-- The list of tabs (sections) in the add-on's settings -->
-              <section id="section1"> <!-- A section with settings has the following attributes:
-                  id—an identifier by which a setting can be addressed: Registry::get('addons.[addon_id].[setting_id]').
-                  edition_type—determines when and where the section is available; this parameter is optional and supports multiple variants separated by commas.
-              -->
-                  <items> <!-- The list of settings in the section -->
-                      <item id="header"> <!-- The settings
-                          id—the identifier of the setting.
-                          edition_type—determines when the setting is available; this parameter is optional and supports multiple variants separated by commas.
-                      -->
-                          <type>header</type> <!-- see Attachment 2 for the description of possible values:
-                              input, textarea, password, checkbox, selectbox, multiple select,
-                              multiple checkboxes, countries list, states list,
-                              file, info, header, template
-                          -->
-                          <default_value>radio_1</default_value> <!-- The default value assigned to the setting. -->
-                          <variants> <!-- The variants for the following types: selectbox, multiple select, multiple checkboxes, combo select -->
-                              <item id="radio_1"></item> <!-- id—the identifier of the variant-->
-                          </variants>
-                  </items>
-              </section>
-  </settings>
+   <settings layout="separate" edition_type="ROOT,ULT:VENDOR">
+           <sections> <!-- The list of tabs (sections) in add-on settings -->
+               <section id="section1"> <!-- A section with settings has the following attributes:
+                   id—an identifier by which a setting can be addressed: 
+                      Registry::get('addons.[addon_id].[setting_id]')
+                   edition_type—determines when and where the section is available;
+                                this parameter is optional and supports 
+                                multiple variants separated by commas.
+               -->
+                   <items> <!-- The list of settings in the section -->
+                       <item id="header"> <!-- The settings
+                           id—the identifier of the setting.
+                           edition_type—determines when the setting is available;
+                                        this parameter is optional and supports 
+                                        multiple variants separated by commas.
+                       -->
+                           <type>header</type> <!-- see Attachment 2 for 
+                               the description of possible values:
+                                 input, textarea, password, checkbox, selectbox, 
+                                 multiple select, multiple checkboxes, 
+                                 countries list, states list,
+                                 file, info, header, template
+                           -->
+                           <default_value>radio_1</default_value> <!-- The default 
+                           value assigned to the setting. -->
+                           <variants> <!-- The variants for the following types:
+                           selectbox, multiple select, 
+                           multiple checkboxes, combo select -->
+                               <item id="radio_1"></item> <!-- id—the identifier of the variant-->
+                           </variants>
+                   </items>
+               </section>
+   </settings>
 
 .. _function-types-for-settings:
 
@@ -393,11 +403,11 @@ Attachment 1: Possible Values of *edition_type*
     *   -   ``MVE:NONE``
         -   The setting won't appear in Multi-Vendor. To make the setting appear in CS-Cart, you'll need to add another value after comma, for example, ``ULT:ROOT``.
     *   -   ``MVE:ROOT``
-        -   The setting will appear in Multi-Vendor, but only when a vendor is selected. To make the setting appear in CS-Cart, you'll need to add another value after comma, for example, ``ULT:ROOT``.
+        -   The setting will appear in Multi-Vendor, but only in the *All vendors* mode.
     *   -   ``ULT:NONE``
         -   The setting won't appear in CS-Cart. To make the setting appear in Multi-Vendor, you'll need to add another value after comma, for example, ``ROOT`` or ``MVE:ROOT``.
     *   -   ``ULT:ROOT``
-        -   The setting will appear in CS-Cart, but only when the *All stores* mode is selected. To make the setting appear in Multi-Vendor, you'll need to add another value after comma, for example, ``ROOT`` or ``MVE:ROOT``.
+        -   The setting will appear in CS-Cart, but only when the *All stores* mode is selected.
     *   -   ``ULT:VENDOR``
         -   The setting will appear both in the *All stores* mode and when a specific storefront is selected. If you add ``ULT:NONE`` after comma, the setting will only be editable when a storefront is selected.
     *   -   ``ULT:VENDORONLY``
