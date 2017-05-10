@@ -48,3 +48,15 @@ The upgrade is done by creating a separate CS-Cart/Multi-Vendor installation and
     importing_a_store
     store_import_technical_details
 
+==========
+DIFF Files
+========== 
+
+When we fix a bug, the fix is usually included in one of the future versions of CS-Cart. But it may take a while for a new version to be released, and a bug needs to be fixed now. That’s why we provide files in the unified DIFF format.
+
+.. toctree::
+    :maxdepth: 2
+    :titlesonly:
+    :glob:
+
+    apply_diff_file
