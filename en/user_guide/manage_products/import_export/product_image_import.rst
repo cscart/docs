@@ -91,6 +91,10 @@ There are multiple ways to specify where CS-Cart or Multi-Vendor should look for
     :align: center
     :alt: If you want to specify only image names in the imported CSV files, then fill in the Images directory field during import.
 
+.. hint::
+
+    You can also specify alternative text for images. Do it after the path or name of the image file, like ``test_image.jpg#{[de]:ALT TEXT;[en]:ALT TEXT;}``.
+
 ============================
 Examples of Importing Images
 ============================

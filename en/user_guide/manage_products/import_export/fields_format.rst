@@ -283,9 +283,15 @@ The full path to the product thumbnail image.
 
 .. important::
 
-    EXAMPLE: */home/client/public_html/cscart-4.3.1/var/files/exim/backup/images/thumbnail_image.jpg*
+    EXAMPLE: */home/client/public_html/cscart/var/files/exim/backup/images/thumbnail_image.jpg*
 
 The image file can be specified without a path (just its name) if you specify **Images directory** on the **Import products** page when importing. Please refer to the :doc:`Product Import <../import_export/product_import>` article.
+
+You can specify alternative text for images by adding it after the path. For example, to specify *ALT TEXT* as an alternative text for image in English and German, import the image as follows:
+
+.. important::
+
+    EXAMPLE: */home/client/public_html/cscart/var/files/exim/backup/images/thumbnail_image.jpg#{[de]:ALT TEXT;[en]:ALT TEXT;}*
 
 ==============
 Detailed image
@@ -298,6 +304,12 @@ The full path to the detailed product image.
     EXAMPLE: */home/client/public_html/cscart/var/files/exim/backup/images/detailed_image.jpg*
 
 The image file can be specified without a path (just its name) if you specify **Images directory** on the **Import products** page when importing. Please refer to the :doc:`Product Import <../import_export/product_import>` article.
+
+You can specify alternative text for images by adding it after the path. For example, to specify *ALT TEXT* as an alternative text for image in English and German, import the image as follows:
+
+.. important::
+
+    EXAMPLE: */home/client/public_html/cscart/var/files/exim/backup/images/detailed_image.jpg#{[de]:ALT TEXT;[en]:ALT TEXT;}*
 
 ============
 Product name
