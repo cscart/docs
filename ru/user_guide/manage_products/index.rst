@@ -8,9 +8,10 @@
     :maxdepth: 2
     :glob:
 
-    products/index
-    filters/index
     categories/index
+    products/index
+    features/index
+    filters/index
     options/index
 
 .. fancybox:: products/img/catalog_02.png

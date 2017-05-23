@@ -1,121 +1,174 @@
 *******************
-Category attributes
+Category Properties
 *******************
 
-When you create or edit a category, your should specify a number of category attributes. For convenience, attributes are grouped under several tabs.
+When you create or edit a category, your specify a number of properties. For convenience, properties are grouped under several tabs.
 
+.. contents::
+    :backlinks: none
+    :local: 
+    :depth: 1
+
+=======
 General
-*******
+=======
 
+-----------
 Information
 -----------
 
-*	**Name** - Name of the category as it appears on the storefront and in the Administration panel.
-*	**Location** - Position of the category in the category tree: a root category or a child category of a parent category.
-*	**Description** - Description of the category as it appears on the storefront.
+* **Name**—the name of the category as it appears on the storefront and in the Administration panel.
 
-	The description that you enter here follows the category name and helps visitors understand what kind of product they should expect to find under the category. Besides, an informative description is just another SEO-wise opportunity.
+* **Location**—the position of the category in the category tree: a root category or a child category.
 
-	The description can be either a plain text or a formatted HTML text. If you are not familiar with HTML, you are encouraged to add a formatted description using the built-in WYSIWYG HTML editor.
+* **Description**—the description of the category as it appears on the storefront.
 
-*	**Status** - Status of the category (*Active* - category is available on the storefront, *Disabled* - category is not available on the storefront, or *Hidden* - category does not appear on the storefront, but customers can access it via a direct link).
-*	**Store** - Store to which the category belongs.
-*	**Images** - Pair of images to illustrate the category: a category thumbnail and a large category image.
+  The description appears on the category page under the category's name and helps visitors understand what kind of products they should expect to find in this category. An informative description is also good for SEO.
 
-	Both images can be either uploaded from a local computer or the server file system, or linked to a remote location where the required image is physically located.
+  The description can be either a plain text or a formatted HTML text. If you’re not familiar with HTML code, you can rely on the visual editor: you simply edit the description like a document, and the visual editor adds the HTML code automatically.
 
-	Images must be of one of the following formats only: JPEG, GIF, PNG. Maximum size of an uploaded image depends on your server configuration. As a rule, it should not exceed 2 MB.
+  .. hint::
 
-	An alternative text describes an image in words. Technically, the text that you enter appears inside the ``alt=""`` and ``title=""`` attributes of the ``<img>`` HTML tag. The text is shown when the image is missing or cannot be displayed. It is good practice to have an alternative text associated with the image as an additional SEO-wise opportunity.
+      You can choose or disable the visual editor under **Settings → Appearance → Default WYSIWYG editor**.
+
+* **Status**—the status of the category:
+
+  * *Active*—the category is available on the storefront and appears on the list of categories.
+
+  * *Disabled*—the category is not available on the storefront.
+
+  * *Hidden*—the category does not appear on the storefront, but customers can access it via a direct link.
+
+* **Store**—the storefront to which the category is assigned.
+
+* **Images**—a large category image and its icon (thumbnail). Supported formats are JPEG, GIF, and PNG. The maximum size of an uploaded image depends on your server configuration. As a rule, it should not exceed 2 MB.
+
+  .. note::
+
+      By default, thumbnails are generated from detailed images automatically. However, you can upload thumbnails manually.
+
+  The text field below the image lets you describe the image in words. Technically, it is the text that you enter appears inside the ``alt=""`` and ``title=""`` attributes of the ``<img>`` HTML tag. This text is shown when the image is missing or cannot be displayed. It is good practice to have an alternative text associated with the image, for SEO purposes.
 
 .. image:: img/category_info.png
     :align: center
-    :alt: Information
+    :alt: The Information section of category properties.
 
-Meta data
+---------
+Meta Data
 ---------
 
-*	**Page title** - Title of the category page on the storefront, which is displayed in the web browser when somebody is viewing the page. Required for SEO purposes.
-*	**META description** - Contents of the HTML meta tag describing the category. Required for SEO purposes.
-*	**META keywords** - Contents of the HTML tag containing a list of search keywords for the category. Required for SEO purposes.
+* **Page title**—the content of the ``<title></title>`` container: the title of the category page on the storefront, which is displayed in the web browser when somebody is viewing the page. If you don’t specify a value manually, it will be generated automatically.
 
+* **META description**—the content of the ``description`` meta-tag: a brief description of the category.
+
+* **META keywords**—the content of the ``keywords`` meta-tag: a list of search keywords that appear on the category page.
+
+.. note::
+
+    Instructions on how to best use the meta tags may vary depending on the search engine.
+
+------------
 Availability
 ------------
 
-*	**User groups** - `User groups <http://docs.cs-cart.com/4.4.x/user_guide/users/user_groups/index.html>`_ whose members can access the category:
+* **User groups**—the :doc:`user groups </user_guide/users/user_groups/index>` that can access the category:
 
-	*	**All** - All users can access the category.
-	*	**Guest** - Unregistered users can access the category.
-	*	**Registered user** - Users with registered accounts can access the category.
-	*	**Apply to all subcategories** - Apply access for these usergroups to all subcategories of this category.
+  * **All**—all users.
 
-*	**Position** - Position of the category relatively to the other categories of the same level. If no category positions are defined, categories are sorted alphabetically.
-*	**Creation date** - Date when the category was added to the catalog.
+  * **Guest**—unregistered users or users who haven't signed in yet.
 
+  * **Registered user**—users who have signed into their accounts.
+
+  * **Apply to all subcategories**—apply the same rules to all subcategories of this category.
+
+* **Position**—the position of the category relatively to the other categories of the same level. If no category positions are defined, categories are sorted alphabetically.
+
+* **Creation date**—the date when the category was added to the catalog.
+
+=======
 Layouts
-*******
+=======
 
-This tab duplicates the global layout of the location to which this storefront page belongs (the **Design → Layouts** section of the Administration panel).
+This tab duplicates the :doc:`global layout </user_guide/look_and_feel/layouts/index>` of the category page from **Design → Layouts** section of the Administration panel.
 
-By using this tab, you can disable blocks that are globally enabled, and, on the contrary, enable blocks that are globally disabled. This makes it possible to configure an individual layout for different storefront pages.
+By using this tab, you can enable or disable some blocks, changing the look of the category page that way. Any changes you make here will not affect the pages of other categories.
 
-Any modification that you make under this tab will not affect other storefront pages.
+.. note::
+
+    This tab is displayed only when you edit an existing category, not when you create a new one.
 
 .. image:: img/category_layouts.png
     :align: center
-    :alt: Layouts
+    :alt: The Layouts tab.
+
+=======
+Add-ons
+=======
+
+---
+SEO
+---
+
+* **SEO name**—the value to which the standard URL will be changed. This property is added by the :doc:`SEO </user_guide/addons/seo/index>` add-on.
+
+----------------
+Age verification
+----------------
 
 .. note::
 
-	This tab is displayed only when you edit the existing category, not when create new.
+    This is a part of the :doc:`Age verification </user_guide/addons/age_verification/index>` add-on.
 
-.. note::
+* **Age verification**—if you tick this checkbox, the access to the category will be limited by the customer's age.
 
-	For more information on blocks, see `Look and Feel → Layouts <http://docs.cs-cart.com/4.4.x/user_guide/look_and_feel/layouts/index.html>`_.
+* **Age limit**—the minimum age for accessing the category and the products in this category.
 
-Add-ons 
-*******
+* **Warning message**—the message to be displayed, if the customer does not qualify for accessing the category.
 
-Applicable category attributes that depend on the active add-on modules.
+--------------------
+Comments and Reviews
+--------------------
+   
+* **Reviews**—choose whether to allow comments, reviews, or both for this category. This property is added by the :doc:`Comments and reviews </user_guide/addons/comments_and_reviews/index>` add-on.
 
-*	**SEO name** - The value to which the standard URL will be changed.
-*	**Age verification** - If selected, the access to the category is limited by the customer age.
-*	**Age limit** - Minimum age for accessing the category and the products under the category.
-*	**Warning message** - Message to be displayed if the customer does not qualify for the category contents.
-*	**Reviews** - Customer reviews or ratings, or both.
-
-.. important::
-
-	The attributes require the `Age Verification <http://docs.cs-cart.com/4.4.x/user_guide/addons/age_verification/index.html>`_, `Comments and Reviews <http://docs.cs-cart.com/4.4.x/user_guide/addons/comments_and_reviews/index.html>`_, and `SEO <http://docs.cs-cart.com/4.4.x/user_guide/addons/seo/index.html>`_ add-ons to be enabled and configured.
-
+=====
 Views 
-*****
+=====
 
-Appearance of the product under the category.
+* **Product details view**—the template of the pages of all products that belong to this category.
 
-*	**Product details view** - Choose a template for all product details pages within the category.
-*	**Use custom view** - If selected, you can choose a non-default view.
-*	**Product columns** - Number of columns that the products under the category are displayed in. This option works for the *Grid* view only, but you can still use it with a custom view.
-*	**Available views** - Select the category views that customers should be able to select from when viewing the category.
-*	**Default category view** - Select the default category view.
+* **Use custom view**—if you tick this checkbox, you'll be able to configure the looks of the category page.
 
-Reward points
-*************
+* **Product columns**—the number of columns that the products the category are displayed in. This property affects only the *Grid* view.
 
-Number of points that customers receive at their accounts when buying category products.
+* **Available views**—select the product list layouts that customers should be able to choose from when viewing the category.
 
-*	**Override global point value for all products in this category** - If selected, the below values prevail over the global points that are defined in the `Reward points <http://docs.cs-cart.com/4.4.x/user_guide/addons/reward_points/index.html>`_ section (**Marketing → Reward points**).
-*	**User group** - `User group <http://docs.cs-cart.com/4.4.x/user_guide/users/user_groups/index.html>`_ whose members are granted reward points for buying the category products.
-*	**Amount** - Number of reward points to be granted to a user group member who bought the category product.
-*	**Amount type** - Absolute number of points or percentage-based value calculated in the following manner: the product cost is divided into 100, and the result is multiplied by the value in the field.
+* **Default category view**—select the default layout of the product list in this category.
 
+=============
+Reward Points
+=============
+
+The number of reward points that customers receive for buying products from this category.
+
+* **Override global point value for all products in this category**—if you tick this checkbox, the values below will take priority over the global values defined in :doc:`Marketing → Reward points </user_guide/addons/reward_points/index>`.
+
+* **User group**—the :doc:`user group </user_guide/users/user_groups/index>`, members of which will get reward points for buying products from this category.
+
+* **Amount**—the number of reward points to be granted to a user group member for buying a product from this category.
+
+* **Amount type**—the absolute number of points or percentage-based value calculated in the following manner: the product cost is divided into 100, and the result is multiplied by the value in the field.
+
+=======
 Reviews
-*******
+=======
 
-List of customers' reviews of the category.
+The list of customers' reviews of the category. You can add your own reviews or edit existing ones.
 
-Requires that the **Reviews** field in the **Add-ons** tab be set to *Communication*, *Rating*, or both:
+.. note::
+
+    This tab requires the :doc:`Comments and reviews </user_guide/addons/comments_and_reviews/index>` add-on to be active. This tab appears only when communication and/or rating is enabled for the category on the **Add-ons** tab.
 
 .. image:: img/reviews.png
     :align: center
-    :alt: Cuctomers' reviews
+    :alt: Enabling reviews and comments for a category.

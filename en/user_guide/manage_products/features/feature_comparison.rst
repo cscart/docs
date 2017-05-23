@@ -15,7 +15,7 @@ Step 1. Allow Customers to Compare Products
 
 First we need to make sure that customers are allowed to compare products. To do that:
 
-1.1 Open the Administration panel of your store and go to **Settings → General**.
+1.1. Open the Administration panel of your store and go to **Settings → General**.
 
 1.2. Make sure that the **Allow customers to compare products** checkbox is ticked.
 
@@ -49,7 +49,7 @@ Not all features appear in comparison list. It depends on the properties of a fe
 
     If any of these checkboxes is ticked, the feature will appear in comparison list.
 
-4. Click **Save**.
+2.4. Click **Save**.
 
 .. image:: img/add_feature_to_comparison_list.png
     :align: center
