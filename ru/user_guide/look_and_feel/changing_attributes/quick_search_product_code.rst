@@ -37,7 +37,7 @@ How To: Configure Quick Search to Search by Product Code
             'items_per_page' => $items_per_page,
         );
 
-4. Замените его на следующий код:
+4. Замените его на следующий код::
  
      $default_params = array (
             'area' => AREA,
