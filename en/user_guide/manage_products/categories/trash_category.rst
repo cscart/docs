@@ -2,22 +2,20 @@
 Trash Category
 **************
 
-Each storefront has a **Trash** category.
+.. warning::
 
-It is located at the end of the list of categories. The default status of this category is—*Disabled* to exclude the products from this category from appearing on the storefront.
+    The **Trash category** doesn't exist in Multi-Vendor. When you delete a category in Multi-Vendor, the products and subcategories will simply be deleted.
 
-You can't rename the Trash category. 
+Products and categories CS-Cart are characterized by belonging to a specific storefront.
+
+Each storefront has a **Trash category** that can't be renamed; it is created automatically when a category is deleted. The **Trash category** is located at the end of the list of categories and is *Disabled* by default to prevent products from this category from appearing on the storefront.
 
 .. image:: img/trash-edit.png
     :align: center
     :alt: You can't rename the Trash category.
 
-Products and categories are characterized by belonging to a specific storefront.
-
-If you delete the category, all products inside this category that are not assigned to other categories in this storefront will also be moved to the Trash category. The Trash category is created automatically when a category is deleted.
-
-Product characteristics that were added manually, images and attached files are saved.
+If you delete a category, all products inside this category that are not assigned to other categories on this storefront will be moved to the **Trash category**.
 
 .. warning::
 
-    Deleting the Trash category will result in a complete deletion of the products assigned to it including characteristics, images and attached files.
+    If you delete the **Trash category**, then all the products assigned to it will be deleted permanently.

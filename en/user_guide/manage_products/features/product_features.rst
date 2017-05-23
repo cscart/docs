@@ -4,33 +4,38 @@ How To: Set up Product Features
 
 Product features are various traits and properties of the product. You can use features in :doc:`product filters <../filters/index>` to allow customers to find products with specific parameters.
 
-   .. image:: img/feature_on_the_storefront.png
-        :align: center
-        :alt: Product features appear on the separate tab on the product page.
+.. image:: img/feature_on_the_storefront.png
+    :align: center
+    :alt: Product features appear on the separate tab on the product page.
+
+.. contents::
+    :backlinks: none
+    :local: 
+    :depth: 2
 
 =============
 Add a Feature
 =============
 
-1. In the Administration panel, go to **Products → Features**.
+#. In the Administration panel, go to **Products → Features**.
 
-2. Click the **+** button in the top right corner and choose **Add feature**.
+#. Click the **+** button in the top right corner.
 
-3. Fill in the following fields in the opened **New feature** window:
+#. Fill in the following fields in the opened **New feature** window:
 
    .. image:: img/features.png
         :align: center
-        :alt: When you add a feature, a pop-up window appears. There you can configure the properties of the feature.
+        :alt: When you add a feature, a pop-up window appears. You can configure the properties of the feature there.
 
    * **Name**—the name of the feature.
 
-   * **Store**—the store to which the product feature originally belongs.
+   * **Store**—the storefront to which the product feature originally belongs.
 
    * **Feature code**—the code to identify the feature.
 
    * **Position**—the position of this feature relative to other features.
 
-   * **Description**—the description that appears when a customer clicks the **?** link on the **Features** tab of the product page on the storefront.
+   * **Description**—the description that appears when a customer clicks the question mark icon on the **Features** tab of the product page on the storefront.
 
    * **Type**—the type of the feature.
 
@@ -40,21 +45,17 @@ Add a Feature
 
    * **Group**—the group to which feature belongs.
 
-     .. hint::
+   * **Show on the Features tab**—if you tick this checkbox, the feature will appear on the product details page in the special tab.
 
-         Use **None** for a feature that shouldn't be a part of any group.
+   * **Show in product header**—if you tick this checkbox, the feature will appear on the product detail page under the product's name.
 
-   * **Show on the Features tab**—determines whether or not to show the product feature on the product page.
+   * **Show in product list**—if you tick this checkbox, the feature will appear among the other product details in the product list on the storefront.
+ 
+   * **Prefix**—what you enter here will appear before the feature value.
 
-   * **Show in product list**—determines whether or not to show the feature on the product list page on the storefront among other product details.
+   * **Suffix**—what you enter here will appear after the feature value.
 
-   * **Show in header on the product details page**—determines whether or not to show the feature under the product header.
-
-   * **Prefix**—the text that appears before the value of the feature.
-
-   * **Suffix**—the text that appears after the value of the feature.
-
-4. (optional) By default, the feature will be available in all product categories. To limit the feature to certain categories, follow the steps below:
+#. (optional) By default, the feature will be available in all product categories. To limit the feature to certain categories, follow the steps below:
 
    * Switch to the **Categories** tab.
 
@@ -82,17 +83,19 @@ Add a Feature
 Add a Feature Group
 ===================
 
-Feature groups allow you to keep your features organized and to assign categories to multiple features at once.
+Feature groups allow you to assign categories to multiple features at once.
 
 .. warning::
 
-    If you delete a feature group, all the features of of that group will be deleted too.  
+    If you delete a feature group, all the features of that group will be deleted too.  
 
-1. In the Administration panel, go to **Products → Features**.
+#. In the Administration panel, go to **Products → Features**.
 
-2. Click the **+** button on the right and choose **Add group**.
+#. Switch to **Feature groups** in the menu on the right.
 
-3. Fill in the following fields in the opened **New group** window:
+#. Click the **+** button on the right.
+
+#. Fill in the following fields in the **New group** window that will open:
 
    .. image:: img/feature_group2.png
         :align: center
@@ -100,13 +103,13 @@ Feature groups allow you to keep your features organized and to assign categorie
 
    * **Name**—the name of the feature group.
 
-   * **Store**—the store to which the group originally belongs.
+   * **Store**—the storefront to which the group belongs.
 
    * **Feature code**—the code to identify the feature group.
 
    * **Position**—the position of the feature group relative to other groups.
 
-   * **Description**—the description that appears when a customer clicks the **?** link on the **Features** tab of the product page on the storefront.
+   * **Description**—the description that appears when a customer clicks the question mark icon on the **Features** tab of the product detail page on the storefront.
 
    * **Show on the Features tab**—determines whether or not to display the feature group on the product page.
 
@@ -114,49 +117,43 @@ Feature groups allow you to keep your features organized and to assign categorie
 
    * **Show in header on the product details page**—determines whether or not to show the feature group under the product header.
 
-4. (optional) By default, the feature group will be available in all product categories. To limit the group to certain categories, follow the steps below:
+#. (optional) By default, the feature group will be available in all product categories. To limit the group to certain categories, follow the steps below:
 
    * Switch to the **Categories** tab.
 
-    .. image:: img/feature_group1.png
-        :align: center
-        :alt: The categories of the feature group.
+     .. image:: img/feature_group1.png
+         :align: center
+         :alt: The categories of the feature group.
 
    * Click the **Add categories** button. 
 
    * Tick the checkboxes of the categories where this feature group should be available.
 
-     .. important::
-
-         A group determines the categories for all the features that belong to that group.
-
    * Click **Add categories and close**.
     
-5. Click the **Create** button.
+#. Click the **Create** button. The new feature group will appear under **Products → Features**, if you switch to **Feature groups** using the menu on the right.
 
-The new feature group will appear under **Products → Features**, if you switch to **Feature groups** using the menu on the right.
+   .. image:: img/feature_group_list.png
+       :align: center
+       :alt: Go to Products → Features and use the menu on the right to view feature groups.
 
-.. image:: img/feature_group_list.png
-    :align: center
-    :alt: Go to Products → Features and use the menu on the right to view feature groups.
-
-================================
-Specify Features of the Products
-================================
+============================
+Specify Features of Products
+============================
 
 --------------
 Single Product
 --------------
 
-1. Go to **Products → Products**. 
+#. Go to **Products → Products**. 
 
-2. Click the name of the desired product.
+#. Click the name of the desired product.
 
-3. Switch to the **Features** tab.
+#. Switch to the **Features** tab.
 
-4. Specify the value of the feature.
+#. Specify the value of the feature.
 
-5. Click the **Save** button.
+#. Click the **Save** button.
 
    .. image:: img/feature_to_product.png
         :align: center
@@ -166,28 +163,28 @@ Single Product
 Multiple Products
 -----------------
 
-1. Go to **Products → Products**.
+#. Go to **Products → Products**.
 
-2. Tick the checkboxes next to the names of the desired products.
+#. Tick the checkboxes next to the names of the desired products.
 
-.. hint::
+   .. hint::
 
-    Use the search panel on the right to find the products faster.
+       Use the search panel on the right to find the necessary products faster.
 
-3. Click the gear button in the top right corner and choose **Edit selected**.
+#. Click the gear button in the top right corner and choose **Edit selected**.
 
    .. image:: img/multiple_features.png
         :align: center
         :alt: Use CS-Cart bulk editing tools to specify features for multiple products at once.
 
-4. A pop-up window will appear. Click **Unselect all**, then tick the **Features** checkbox.
+#. A pop-up window will appear. Click **Unselect all**, then tick the **Features** checkbox.
 
-5. Click **Modify selected**.
+#. Click **Modify selected**.
 
-6. Specify the values of the features for the selected products.
+#. Specify the values of the features for the selected products.
 
-7. Click the **Save** button in the top right corner.
+#. Click the **Save** button in the top right corner.
 
-.. note::
+   .. note::
 
-    You can also add features to products using :doc:`product import <../import_export/product_import>`. The description of the correct format in the :doc:`Imported fields format <../import_export/fields_format>` article.
+       You can also add features to products using :doc:`product import <../import_export/product_import>`. The description of the correct format can be found in :doc:`this article <../import_export/fields_format>`.

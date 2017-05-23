@@ -1,26 +1,27 @@
-*********************************
-How To: Sort Products by Position
-*********************************
+***********************************************
+How To: Sort Products in a Category by Position
+***********************************************
 
-To sort the products by position:
+By default, products in categories are sorted by alphabet. However, you can change the order in which the products appear in categories. To do that, you'll need to specify positions for products.
 
-*	In the Administration panel, go to **Products → Categories**.
-*	In the **Products** column, click on the number corresponding to the amount of products under the necessary category.
+#. In the Administration panel, go to **Products → Categories**.
 
-.. image:: img/categories_list_01.png
-    :align: center
-    :alt: List of the product categories
+#. Each category has the **Products** column that displays the number of products in that category. Click on the number in the category where you'd like to sort products.
 
-*	On the opened page define the position of the products for the selected category.
+   .. image:: img/categories_list_01.png
+       :align: center
+       :alt: List of the product categories
 
-.. image:: img/category_products.png
-    :align: center
-    :alt: Products of the category
+#. A new page with the list of products will open. Specify the positions for products.
 
-*	Click the **Save** button.
+   .. image:: img/category_products.png
+       :align: center
+       :alt: Products of the category
 
-.. important::
+#. Click the **Save** button in the upper right part of the page.
 
-	The defined positions affect sorting only if the **Sort by Position: Low To High** or **Sort by Position: High To Low** sorting is selected on the product list page in the storefront.
+   .. important::
 
-	If you wish the **Sort by Position: Low To High** or **Sort by Position: High To Low** sorting to be the default sorting, when a visitor opens a category page, select the necessary variant in the **Product list default sorting** select box on the **Settings → Appearance** page. Make sure that these sortings are selected in the **Available product list sortings** section as well.
+       The defined positions affect sorting only if the *Sort by Position: Low To High* or *Sort by Position: High To Low* sorting is selected for the product list page on the storefront.
+
+   You can make *Sort by Position: Low To High* or *Sort by Position: High To Low* the default sorting that will be used when a visitor opens a category page. To do it, go to **Settings → Appearance** and choose this sorting from the  **Product list default sorting** drop-down list. Make sure that these sortings are selected as the **Available product list sortings**.

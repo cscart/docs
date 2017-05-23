@@ -1,33 +1,50 @@
 *****************
-Filter Attributes
+Filter Properties
 *****************
 
-Attributes that can be assigned to a product filter are grouped under several tabs.
+The properties of a filter are grouped into several tabs.
 
 .. image:: img/filter_attributes.png
     :align: center
     :alt: Filter attributes
 
+.. contents::
+    :backlinks: none
+    :local: 
+    :depth: 1
+
+=======
 General
-*******
+=======
 
-*	**Name** – Name of the filter.
-*	**Store** - Store to which the product filter originally belongs.
-*	**Position** – Position of the filter relatively to the position of the other filters in the list.
-*	**Filter by** – Parameter to filter the products by. This can be a default product field (price, free shipping) or an extra field (product feature) of one of the following types: select box and multiple check box.
-*	**Display type** - Choose the manner in which filter will be displayed on the screen.
-*	**Number of displayed filter variants before scroll** - choose the number of filter variants you want to be displayed on the screen. The other variants will be shown when scrolling a list.
+* **Name**—the name of the filter.
 
+* **Store**—the storefront to which the filter belongs.
+
+* **Pos.**—the position of the filter relative to other filters.
+
+* **Filter by**—the feature or option by which the products will be filtered.
+
+* **Display type**—the way how the filter will be displayed on the storefront:
+
+  * **Expanded**—filtering criteria are displayed on the screen in the **Product filters** block by default.
+
+  * **Minimized**—filtering criteria are hidden until a customer clicks the arrow icon.
+
+* **Number of displayed filter variants before scroll**—the number of filter variants that will be displayed simultaneously. Customers will have to scroll through the list to see other variants.
+
+==========
 Categories
-**********
+==========
 
-A list of categories on which pages the filter is displayed. If no category is specified, the filter will appear in all store categories.
+A list of categories where the filter will be displayed. If no category is specified, the filter will appear in all categories.
 
 .. note::
 
     If a customer runs a search for a product on the storefront, all active filters that have appropriate products will be displayed, regardless of the category.
 
+=====
 Share
-*****
+=====
 
-Stores that share this product filter. :doc:`Learn more about sharing objects. <../../stores/sharing>`
+Stores that share this product filter. Learn more about :doc:`sharing objects <../../stores/sharing>`.
