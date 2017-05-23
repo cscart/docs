@@ -2,46 +2,59 @@
 Categories
 **********
 
-The two key concepts to describe the cataloguing in CS-Cart are the *product* and the *category of products*, or simply the *category*.
+The two key concepts to describe the cataloging in CS-Cart are **product** and **category** (a group of products). The system of categories enables you to build the catalog in the way of a tree with multiple branches, making it easier for customers to find the products they want.
 
-Finding a right product in a web store becomes much easier if the products in the catalog are categorized, i.e. are sensibly arranged into groups of related products, or categories. Each product category can include an unlimited number of child categories which, in return, can include own child categories.
+.. important::
 
-Child categories are referred to as *sub-categories* while the categories that do not have parent categories, i.e. categories of the highest level, are called *root categories*. The system of categories enables you to build the catalog in the way of a tree with multiple branches, making the navigation structured, intuitive, and clear.
+    Every product that you have in your catalog must be assigned to at least one category.
 
+Each category can include an unlimited number of child categories which, in turn, can include their own child categories. Child categories are often referred to as **sub-categories**. Categories without a parent are called **root categories**.
+ 
 .. note::
 
-	The nature of using categories in a multiple-store environment is described in `Understanding multi-store functionality <http://docs.cs-cart.com/4.3.x/user_guide/stores/index.html>`_.
+    To learn more about using categories in a multiple-store environment, please refer to :doc:`this article </user_guide/stores/index>`.
 
 .. image:: img/categories_list.png
     :align: center
     :alt: List of the product categories
 
-.. important::
+=====================
+Actions on Categories
+=====================
 
-	Individual products cannot appear outside a product category, so every product that you have in your catalog must be assigned to at least one category.
+When on the **Products → Categories** page, administrators can perform the following actions:
 
-Actions on categories
-*********************
+--------------
+Add Categories
+--------------
 
-The store administrator can carry out the following actions on the categories:
+* To add one category, click the **+** button in the upper right part of the page.
 
-*	Add individual categories (the **+** button) or several categories at a time (the **Bulk category addition** link under the gear button).
-*	Change attributes per category or simultaneously for several categories:
+* To add several categories at a time, click the gear button in the upper right part of the page and choose **Bulk category addition**.
 
-	*	To change attributes per category, hover the mouse pointer over a category and click the appearing gear button. Choose **Edit**.
-	*	To change attributes simultaneously for several categories, tick the checkboxes of the desired categories, click the gear button in the upper right part of the page, and choose **Edit selected**.
+---------------
+Edit Categories
+---------------
 
-*	Delete categories:
+* To change the properties of a specific category, click the name of that category. Alternatively, you can click the category's gear button (it appears when you hover over the category) and choose **Edit**.
 
-	*	To delete a particular category, hover the mouse pointer over this category and click the appearing gear button. Choose **Delete**.
-	*	To delete several categories simultaneously, tick the checkboxes of the desired categories, click the gear button in the upper right part of the page, and choose **Delete selected**.
+* To change the properties of multiple categories at the same time, tick the checkboxes of those categories, click the gear button in the upper right part of the page and choose **Edit selected**.
+
+-----------------
+Delete Categories
+-----------------
+
+* To delete a specific category, hover the mouse pointer over this category. The gear button will appear for this category on the right. Click it and choose **Delete**.
+    
+* To delete multiple categories at the same time, tick the checkboxes of those categories, click the gear button in the upper right part of the page, and choose **Delete selected**.
 
 .. warning::
 
-	Be careful when deleting a category! Child categories and the products under the category will be deleted automatically.
+    Be careful when deleting a category! In **Multi-Vendor** child categories and the products under the category will be deleted automatically. In **CS-Cart 4.3.5 and newer** the products will be moved to the :doc:`trash category <trash_category>`. 
 
-In this section
-***************
+===============
+In This Section
+===============
 
 .. toctree::
     :maxdepth: 2
