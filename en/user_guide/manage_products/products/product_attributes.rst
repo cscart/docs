@@ -29,6 +29,16 @@ Information
 
 * **Categories**—the categories that the product will be assigned to. When a product has multiple categories, the radio button determines which of those categories is main for that product.
 
+* **Product type**—the type of the product; determines how :doc:`product options </user_guide/manage_products/options/index>` will work.
+
+  * **Simple product**—option variants can be grouped as :doc:`option combinations </user_guide/manage_products/options/option_combinations>`.
+
+  * **Configurable product**—option variants can be used to create :doc:`product variations <product_variations>`.
+
+  .. important::
+
+      You can't change the product type of an existing product. :doc:`Pick the right type <simple_versus_configurable>` when you create the product.
+
 * **Price**—base product price in your store's primary currency. Prices in other currencies are converted automatically, according to the exchange rate that you specify. All calculations are done in the primary currency.
 
 * **Full description**—the product description that will appear on the product details page of the storefront. The description can be either a plain text or a formatted HTML text. If you're not familiar with HTML code, you can rely on the visual editor: you simply edit product description like a document, and the visual editor adds the HTML code automatically.

@@ -98,6 +98,8 @@
     :glob:
 
     product_attributes
+    simple_versus_configurable
+    product_variations
     out_of_stock_actions
     attaching_files_to_products
     downloadable
