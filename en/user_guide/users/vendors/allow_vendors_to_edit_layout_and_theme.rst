@@ -40,7 +40,7 @@ How Vendors Edit Styles
        :align: center
        :alt: Go to Design → Themes and click the Theme Editor button.
 
-#. You'll be taken to your page on the storefront, and you'll be able to make changes using :doc:`the Theme Editor </user_guide/look_and_feel/themes/theme_editor>`. The changes you make will affect your microstore (if you have one), your products, and your pages.
+#. You'll be taken to your page on the storefront, and you'll be able to make changes using :doc:`the Theme Editor </user_guide/look_and_feel/themes/theme_editor>`. The changes you make will affect your microstore (if you have one), your products, and your pages, including the page with the information about the vendor.
 
    .. note::
 
