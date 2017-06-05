@@ -13,3 +13,7 @@ The three available options are:
 * **Via Sendmail (a popular email routing facility)**.
 
 If you want to use an external *SMTP server*, specify connection details. If you want to use *Sendmail*, specify the absolute path to the executable file. If you choose to use the *PHP mail()* function, emails will be sent directly from the script.
+
+.. note::
+
+    Starting with **CS-Cart & Multi-Vendor 4.6.1**, you can specify different SMTP server settings :doc:`for each storefront </user_guide/stores/index>`: just choose the storefront in the top left corner of the page, enter the settings, and click **Save**.
