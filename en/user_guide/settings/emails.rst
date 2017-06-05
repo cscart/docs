@@ -16,4 +16,4 @@ If you want to use an external *SMTP server*, specify connection details. If you
 
 .. note::
 
-    Starting with **CS-Cart & Multi-Vendor 4.6.1**, you can specify different SMTP server settings :doc:`for each storefront </user_guide/stores/index>`: just choose the storefront in the top left corner of the page, enter the settings, and click **Save**.
+    Starting with **CS-Cart 4.6.1**, you can specify different SMTP server settings :doc:`for each storefront </user_guide/stores/index>`: just choose the storefront in the top left corner of the page, enter the settings, and click **Save**.
