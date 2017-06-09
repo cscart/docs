@@ -20,15 +20,11 @@ The **Marketing → Abandoned / Live carts** section contains the lists of produ
 Unregistered Customers
 ======================
 
-Even if a customer isn't registered, the data of a cart is saved. In that case the customer is listed as **Unregistered customer**.
-
-.. important::
-
-    Starting with CS-Cart 4.5.1, the name and email of an unregistered customer will be saved as well, if that customer enters them at checkout and proceeds to the next step.
+Even if a customer isn't registered, the data of a cart is saved. In that case the customer is listed as **Unregistered customer**. If an unregistered customer enters the name, email, and phone number at checkout and proceeds to the next step, that data will be saved and displayed on the **Abandoned / Live carts** page as well.
 
 .. image:: img/guest_info.png
     :align: center
-    :alt: The names and emails of unregistered customers as they appear on the list of abandoned carts.
+    :alt: The names, emails, and phone numbers of unregistered customers as they appear on the list of abandoned carts.
 
 ======================
 Delete Abandoned Carts
