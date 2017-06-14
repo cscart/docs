@@ -12,7 +12,7 @@
 
 * редактировать :doc:`теги <../addons/tags/index>` товаров и контентных страниц;
 
-* настроить :doc:`SEO-правила <../addons/seo/seo_rules>`, :doc:`301 редиректы <../addons/seo/301_redirects>` и файл *robots.txt* (подробнее o robots.txt читайте на сайтах `Yandex <https://yandex.ru/support/webmaster/controlling-robot/robots-txt.xml?lang=ru>`_ и `Google <https://support.google.com/webmasters/answer/6062608?hl=ru>`_);
+* настроить :doc:`SEO-правила <../addons/seo/seo_rules>`, :doc:`301 редиректы <../addons/seo/301_redirects>` и файл :doc:`robots.txt <robots>` (подробнее o *robots.txt* читайте на сайтах `Yandex <https://yandex.ru/support/webmaster/controlling-robot/robots-txt.xml?lang=ru>`_ и `Google <https://support.google.com/webmasters/answer/6062608?hl=ru>`_);
 
 * управлять :doc:`комментариями <../addons/comments_and_reviews/enable_comments_addon>`;
 

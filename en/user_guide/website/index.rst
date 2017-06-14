@@ -12,7 +12,7 @@ In this section you can:
 
 * manage :doc:`tags <../addons/tags/index>` of products and content pages;
 
-* specify :doc:`SEO rules <../addons/seo/seo_rules>`, :doc:`301 redirects <../addons/seo/301_redirects>` and configure *robots.txt* (`learn more about robots.txt <http://www.robotstxt.org/robotstxt.html>`_);
+* specify :doc:`SEO rules <../addons/seo/seo_rules>`, :doc:`301 redirects <../addons/seo/301_redirects>` and configure :doc:`robots.txt <robots>` (`learn more at www.robotstxt.org <http://www.robotstxt.org/robotstxt.html>`_);
 
 * manage :doc:`reviews and comments <../addons/comments_and_reviews/enable_comments_addon>`;
 
