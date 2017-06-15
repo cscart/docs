@@ -8,7 +8,7 @@ Product Variations
 
 :doc:`Product variations </user_guide/manage_products/products/product_variations>` are a way to group some specific :doc:`option variants <options>`. For example, let’s assume that you sell T-shirts. They come in 3 colors (red, green, blue) and 3 sizes (small, medium, large). In this case *T-shirt* would be a product, and *large blue T-shirt* would be one of the product variations.
 
-When you create a :doc:`product <products>`, you decide whether that product will have variations or :doc:`option combinations <combinations>`. Variations and combinations look similar on the storefront, but :doc:`variations can be configured to a greater extent in the Administration panel </user_guide/manage_products/products/simple_versus_configurable>`.
+When you create a product, you decide whether that product will have variations or :doc:`option combinations <combinations>`. Variations and combinations look similar on the storefront, but :doc:`variations can be configured to a greater extent in the Administration panel </user_guide/manage_products/products/simple_versus_configurable>`.
 
 .. contents::
    :backlinks: none
@@ -265,7 +265,7 @@ Response Format
 Product Variation Details
 -------------------------
 
-Most of the details of a product variation are similar to the details of a product. That's why in this article we'll only be describing the details that are associated with the :doc:`Product Variations </user_guide/addons/product_variations/index>` add-on. For the description of other details, please refer to :doc:`the article about the "products" entity <products>`.
+Most of the details of a product variation are similar to the details of a product. That's why in this article we'll only be describing the details that are associated with the **Product Variations** add-on. For the description of other details, please refer to :ref:`the article about the "products" entity <api-products-fields>`.
 
 .. note::
 
@@ -282,8 +282,8 @@ Most of the details of a product variation are similar to the details of a produ
     *   -   product_type
         -   *string*
         -   | The type of the product:
-            | ``P``—a simple product that can have :doc:`option combinations <combinations>`, but not variations.
-            | ``C``—a configurable product that can have variations, but not :doc:`option combinations <combinations>`.
+            | ``P``—a simple product that can have option combinations, but not variations.
+            | ``C``—a configurable product that can have variations, but not option combinations.
             | ``V``—a product variation.
     *   -   parent_product_id
         -   *integer*
@@ -318,7 +318,7 @@ Pass the following fields with variation details in the HTTP request body in acc
 
 .. note::
 
-    Basically, variations are products. That's why you can refer to :doc:`the article about the "products" entity <products>` to learn more about other fields.
+    Basically, variations are products. That's why you can refer to :ref:`the article about the "products" entity <api-products-fields>` to learn more about other fields.
 
 ------------
 Example JSON

@@ -185,6 +185,8 @@ Response is an array with 20 products from the first page.
 
 Response is an array with 20 products from the 5th page.
 
+.. _api-products-fields:
+
 Fields
 ======
 
