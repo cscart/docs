@@ -15,6 +15,9 @@ Nested Objects
 
 *   :doc:`Product Features <product_features>`
 
+
+.. _api-products-filtering:
+
 Filtering
 =========
 
@@ -43,9 +46,9 @@ The request URL is as follows (separated into several lines for readability):
 
 In order to get results referring only to a particular store in CS-Cart Ultimate or vendor in CS-Cart Multi-Vendor, use the ``stores`` and ``vendors`` entity respectfully:
 
-    http://example.com/api/stores/1/products?pname=foo
+    http://example.com/api/stores/1/products
 
-    http://example.com/api/vendors/1/products?pname=bar
+    http://example.com/api/vendors/1/products
 
 Example
 -------

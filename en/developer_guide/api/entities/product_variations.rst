@@ -4,7 +4,7 @@ Product Variations
 
 .. note::
 
-    This entity first appeared in **CS-Cart & Multi-Vendor 4.6.1** as a part of the :doc:`Product Variations </user_guide/addons/product_variations/index>` add-on. The add-on must be installed and active, or you won't be able to use the ``product_variations`` entity.
+    This entity first appeared in **CS-Cart & Multi-Vendor 4.6.1** as a part of the :doc:`Product Variations (Beta) </user_guide/addons/product_variations/index>` add-on. The add-on must be installed and active, or you won't be able to use this entity.
 
 :doc:`Product variations </user_guide/manage_products/products/product_variations>` are a way to group some specific :doc:`option variants <options>`. For example, let’s assume that you sell T-shirts. They come in 3 colors (red, green, blue) and 3 sizes (small, medium, large). In this case *T-shirt* would be a product, and *large blue T-shirt* would be one of the product variations.
 
@@ -13,6 +13,10 @@ When you create a :doc:`product <products>`, you decide whether that product wil
 .. contents::
    :backlinks: none
    :local:
+
+.. important::
+
+    The **Product Variations** add-on is currently in the beta stage. The article describes how the REST API works now, but the add-on and the way how variations are handled by the REST API may change in future versions.
 
 ===========================
 List All Product Variations
@@ -65,15 +69,24 @@ Add these parameters to the path to specify what variations will be returned in 
         -   
         -   Searches only for the variations of the product with the specified identifier.
 
+
+.. note::
+
+    :ref:`The filtering rules from the "products" entity <api-products-filtering>` apply to product variations as well.
+
 **Examples:**
 
 * ``GET /api/product_variations/?page=2&items_per_page=5``
 
-  Response is an array with 5 product variations from the 2nd page of the list of product variations.
+  Response is an array with 5 variations from the 2nd page of the list of product variations.
 
 * ``GET /api/product_variations/?parent_product_id=249&status=D``
 
   Response is an array with 10 disabled variations of product with ``product_id=249``.
+
+* ``GET /api/product_variations/?pname=Y&pfull=Y&pshort=Y&q=red``
+
+  Response is an array of 10 variations that have ``red`` in their names, full descriptions, or short descriptions.
 
 ---------------
 Response Format
@@ -238,7 +251,7 @@ To get the of details of a specific product variation, send a GET request to ``/
 
 .. note::
 
-    Basically, variations are products. That's why if you pass an ID of a product (not a variation), the ``product_variations`` entity will return the details of that product.
+    Basically, variations are products. That's why if you pass an ID of a product (not a variation), the details of that product will be returned.
 
 ---------------
 Response Format
