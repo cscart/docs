@@ -47,3 +47,5 @@ Related Articles
 :doc:`Working with Product Variations </user_guide/manage_products/products/product_variations>`
 
 :doc:`/user_guide/manage_products/products/simple_versus_configurable`
+
+:doc:`REST API Entity: product_variations </developer_guide/api/entities/product_variations>`

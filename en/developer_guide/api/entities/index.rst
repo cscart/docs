@@ -22,6 +22,7 @@ Supported Entities
     options
     combinations
     exceptions
+    product_variations
     settings
     shipments
     shippings
