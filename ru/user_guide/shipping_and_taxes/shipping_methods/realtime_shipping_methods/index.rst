@@ -7,6 +7,7 @@
     :glob:
 
     ems
+    boxberry
     rus_post
     edost
     rus_sdek
