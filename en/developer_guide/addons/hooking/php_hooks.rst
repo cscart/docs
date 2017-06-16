@@ -52,7 +52,7 @@ In order to use PHP hooks in your add-on:
      
      if ( !defined('AREA') ) { die('Access denied'); }
      
-     function fn_my_addon_get_category_data_pre($category_id, $field_list, $get_main_pair, $skip_company_condition, $lang_code)
+     function fn_my_addon_get_category_data_pre(&$category_id, &$field_list, &$get_main_pair, &$skip_company_condition, &$lang_code)
      {
     	...
      }
