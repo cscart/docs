@@ -18,7 +18,7 @@
 
    .. note::
 
-       Получить **site key** and **secret** можно `на этой странице <https://www.google.com/recaptcha/admin#list>`_. Google предлагает `более подробные инструкции на английском языке <https://developers.google.com/recaptcha/docs/start>`_.
+       Получить **site key** and **secret** можно `на этой странице <https://www.google.com/recaptcha/admin>`_. Google предлагает `более подробные инструкции на английском языке <https://developers.google.com/recaptcha/docs/domain_validation>`_.
 
    * **Оформление** — цвета виджета reCAPTCHA в вашем магазине. Можно выбрать *Светлое* (Light) или *Тёмное* (Dark) оформление. Примеры того, как виджет выглядит в разном оформлении, можно найти в `вопроснике по Google reCAPTCHA <https://developers.google.com/recaptcha/docs/faq#can-i-customize-the-recaptcha-widget>`_.
 
