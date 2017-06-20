@@ -1,0 +1,177 @@
+***********************
+CS-Cart 4.6.1 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Google Analytics: The actual URLs that led to the 404 page (/index.php?dispatch=_no_page) now appear in Google Analytics reports.
+
+[+] Add-ons: Product Variations (Beta): Product variations were introduced. They look like option combinations on the storefront, but behave more like child products in the administration panel.
+
+[+] Addons: PayPal payments: When creating a payment method that uses PayPal Express Checkout, you can now configure the payment method automatically and sign up for a PayPal account diфrectly from the admin panel.
+
+[+] Core: REST API: The 'cart_content' entity was added.
+
+[+] Hooks: A pre-hook was added to the 'fn_format_price()' function. It allows to change the format of the price (the currency, the price itself, and the number of digits after the decimal point).
+
+[+] Hooks: The new 'set_notification_pre' hook was added to enable changing the parameters of pop-up notifications.
+
+[+] Multi-Vendor: Design: Layouts: Vendors can now manage blocks on the "Products", "Pages", "Micro-store", and "Vendors" layout pages; they can also adjust those layout pages for a specific product or page.
+
+[+] Multi-Vendor: Design: Vendors can now use the Theme Editor to customize the appearance of their Products, Pages, Micro-store, and Vendors layout pages.
+
+[+] Security: Anti-CSRF validation was improved for the customer area of the site.
+
+[+] Upgrade center: The interface now has a checkbox to skip the backup of files and database during the upgrade. The checkbox appears only for service pack upgrades that don't affect the database.
+
+[+] Upgrade: Backup: The ability to back database up via mysqldump was added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] CS-Cart: Stores: When adding a storefront, you can now tick/untick all checkboxes in the "Copy existing store configuration" section with one click.
+
+[*] Core: Secure connection: The ability to forbid redirects from HTTP to HTTPS for specific controllers in the "Secure full site" mode was added.
+
+[*] Design: Checkout: Shipping methods: The icons of the shipping methods are now displayed at checkout.
+
+[*] Export/Import: Orders: The order manager ID can now be exported to CSV file and imported from it.
+
+[*] Hooks: The 'calculate_cart_items' hook was extended to make it possible to affect the calculation of promotions.
+
+[*] Installation: The description in the install.html file was changed.
+
+[*] Order management: Adding products: The pop-up window for adding products to order in the administration panel now has the "Add to cart" button for each product next to the quantity. You can now add products from multiple pages without closing the pop-up window each time.
+
+[*] Settings: E-mails: SMTP: Storefronts: SMTP settings can now be configured individually for each storefront.
+
+[*] Website: SEO: robots.txt: Now robots.txt can be edited separately for each storefront.
+
+[*] {#6720} Marketing: Abandoned carts: Phone numbers of customers are now displayed on the "Abandoned / Live carts" page. If a customer is unregistered, the phone number will be displayed only if it was entered at checkout.
+
+========
+Bugfixes
+========
+
+[!]  Layouts: Blocks: Banners: The "Banners" block with the "Newest" filling had the "Filter by categories" setting that wasn't supposed to be there. Fixed.
+
+[!] Add-ons: Access restrictions: Site could be accessed from restricted IPs by sending specific X-Forwarded-For HTTP header. Fixed.
+
+[!] Add-ons: Anti Fraud: The add-on didn't work with newly-registered MaxMind accounts. Fixed; the integration with the minFraud service was updated.
+
+[!] Add-ons: Bestsellers & On-Sale Products: Advanced search: Entering any value in the "Sales amount" field resulted in an error, and the search didn't work. Fixed.
+
+[!] Add-ons: Call requests: An order wasn't placed when the "Buy now with 1 click" button was used in the "Hot deals" block. Fixed.
+
+[!] Add-ons: Comments and reviews: A product's rating could be different on the category page and on the product page, because it was rounded differently. Fixed.
+
+[!] Add-ons: E-mail marketing: Administrator privileges didn't work: any administrator could always view and edit the list of subscribers. Fixed.
+
+[!] Add-ons: Email marketing: REST API: Creating a subscriber via REST API didn't work because company_id was set to 0. Fixed.
+
+[!] Add-ons: Google reCAPTCHA: The add-on didn't work on some web hostings because the file_get_contents function returned "false". As a result, customers were asked to pass the CAPTCHA again. Fixed.
+
+[!] Add-ons: Newsletters: Subscribers: When a subscriber wasn't subscribed to any mailing lists, and an administrator tried to change the subscriber's language, the change wasn't saved. Fixed.
+
+[!] Add-ons: PayPal payments: Shipping cost was saved incorrectly after IPN processing. Fixed.
+
+[!] Add-ons: RMA: Authorization check was missing on the order return page. The attacker could request a return for the order that didn't belong to him, provided that the attacker knew technical information about the customer and the order. Fixed.
+
+[!] Add-ons: SEO: HTML tags were not removed from rich snippets. Fixed.
+
+[!] Add-ons: SEO: Store Locator: The "Store locator" page (index.php?dispatch=store_locator.search) didn't have a canonical URL. Fixed.
+
+[!] Add-ons: Store locator: The Google map didn't load on the store location editing page when HTTPS was enabled for the administration panel. Fixed.
+
+[!] Add-ons: Suppliers: The list of suppliers in the Administration panel displayed the current date and time rather than the date and time when a supplier was registered. Fixed.
+
+[!] Add-ons: Wish List: Even when the Wish List add-on was disabled, the link to the wishlist remained in the "Bottom My Account" block. Fixed.
+
+[!] Add-ons: eBay synchronization: An order imported from eBay could be linked to a wrong customer if the administrator edited other orders during that session before importing orders from eBay. Fixed.
+
+[!] Addons: Searchanise: Duplicate SQL queries were made. Fixed.
+
+[!] Administration panel: Images: When an uploaded image had high resolution and couldn't be resized by GD image library due to memory limits, the "Service unavailable" message appeared in the administration panel and on the storefront. Fixed; now administrators are notified when a thumbnail can't be created.
+
+[!] CS-Cart: Stores: The progress bar did not work during storefront creation. Fixed.
+
+[!] Catalog: A fatal error occurred on PHP 7.1 when a customer viewed a product that had forbidden option combinations. Fixed.
+
+[!] Categories: When a product's main category was deleted, none of the secondary categories of the product were automatically assigned as its new main category. Fixed.
+
+[!] Checkout as guest: Profile fields: When a custom profile field was created in "Contact information" and was required to be filled in at checkout, the guest had to enter an email address. That email address wasn't validated: anything could be entered in that field. Fixed.
+
+[!] Checkout: If a customer was checking out as guest, reached the 3rd step (Shipping Options), and registered an account after that, then the customer wasn't able to edit the data entered during the 2nd step (Billing Options) after proceeding to checkout again. Fixed.
+
+[!] Checkout: Payment notifications from a payment processor could arrive to a wrong storefront when the "Redirect visitors of this storefront to the one that has countries to which the visitors' IP addresses belong defined" setting was enabled for a storefront. Fixed.
+
+[!] Checkout: Profile fields: After entering the value into a profile field with the "Date" type at checkout, a wrong date was displayed in the billing or shipping address. Fixed.
+
+[!] Checkout: Shipping options: The weight limits of a shipping method didn't properly affect the availability of the shipping method at checkout. Fixed.
+
+[!] Core: Mailer: Attachments: Non-latin symbols were dropped from the name of the attached file. Fixed.
+
+[!] Core: Time wasn't parsed correctly when there was only one digit before the separator of hours and minutes, for example, 8:45 instead of 08:45. Fixed.
+
+[!] Design: Categories: Adding a product to cart or wishlist from the category page resulted in the page getting scrolled back to the top on mobile devices. Fixed.
+
+[!] Design: Edit content on-site: When the content of an HTML block (or HTML block with Smarty support) was edited for a specific page, the content was saved for all pages, except for the page where it was edited. Fixed.
+
+[!] Design: Storefront: Cart pop-up: When a product with 7 or more options was added to cart, the cart pop-up was displayed incorrectly on mobile devices. Fixed.
+
+[!] Design: Themes: Bright theme: The "Enable quick view" setting didn't affect whether the Quick View button would appear for products in a Products block with the Scroller template. Fixed.
+
+[!] Languages: Export: When more than 10,000 values of the language variables were exported at the same time, some of the values in the exported file were replaced with the duplicates of other random values. Fixed.
+
+[!] Multi-Vendor: Add-ons: PayPal Adaptive Payments: Some vendors were unable to pass PayPal verification. Fixed; now if a vendor can't pass verification, it means that the vendor must specify PayPal account holder's first name and last name in Multi-Vendor administration panel.
+
+[!] Multi-Vendor: Add-ons: Vendor plans: The frequency of payments for using the plan could be displayed in a wrong language. Fixed.
+
+[!] Multi-Vendor: Users: When a root administrator was signed in on the storefront and used the "Become a seller" form to register a vendor, the root administrator was assigned as that vendor's administrator. Fixed.
+
+[!] Order management: Changing an order status on the list of orders changed the number of orders displayed on one page to the value of the "Elements per page" setting. Fixed.
+
+[!] Order management: Invoice: A logo from the wrong storefront could appear on the invoice when multiple storefronts were used. This occurred on any storefront other than the first one, but only when the invoice was previewed or edited in the "All storefronts" mode, and the storefronts had different themes. Fixed.
+
+[!] Order management: Product options: When an administrator tried to edit an order in Chrome and change the selected variant for an option with the "Radio group" type, the radio buttons could appear as if none of the variants were selected. Fixed.
+
+[!] Order management: When an administrator was adding a new order, the chosen values of product options were reset after the administrator selected a customer, a shipping method, or a payment method. Fixed.
+
+[!] Payment methods: ServiRed (Redsys): Payments were not processed properly when an order was placed from the Administration panel. Fixed.
+
+[!] Payment methods: Skrill: Email and secret word verification links didn't work. Fixed; the email and secret word verification was removed, because the verification is no longer used.
+
+[!] Products: Edit selected: If only the maximum or minimum order quantity were edited, and the values were applied to all selected products, a PHP notice was recorded to the log. Fixed.
+
+[!] Products: Edit selected: When editing multiple products at once, the product price was displayed with more digits after decimal point that was needed. Fixed.
+
+[!] Products: Quantity discounts: Product prices could appear with more figures after decimal point than specified in the currency settings, and those extra figures were always zeroes. Fixed.
+
+[!] REST API: Orders: An order could be placed on behalf of a customer that didn't belong to the storefront, even when sharing of users between storefronts was disabled. Fixed.
+
+[!] Shipping methods: DHL: When shipping rates were reported in non-primary currency, the cost of shipping was not converted properly. Fixed.
+
+[!] Shipping methods: Temando: PHP errors could occur when shipping rates were obtained. Fixed.
+
+[!] Tooltips: Documentation links led to the old Knowledge Base instead of CS-Cart documentation. Fixed.
+
+[!] Upgrade Center: 32-bit Operating Systems: After performing an upgrade of the store on a 32-bit operating system, problems with option combinations and incomplete orders could occur. Fixed.
+
+[!] Users: When a root administrator was deleted, a customer could be marked as a new root administrator. Fixed.
+
+[!] {#4892} Add-ons: Data feeds: During the export of the data feed of a specific storefront, the data of products shared with that storefront wasn't exported properly. Fixed.
+
+[!] {#6713} Orders: Email templates: If a customer selected a secondary currency when placing an order, then order notifications and invoices had wrong currency in them. Fixed.
+
+[!] {#6734} Core: Payments: Card expiration date was obfuscated when cleaning up sensitive payment data, even though PCI DSS doesn't require doing it. Fixed.
+
+[!] {#6753} Sales reports: When a chart was configured as a table that displayed taxes, the table didn't appear and an error notification was shown. Fixed.
+
+[!] {#6766} Multi-Vendor: Vendor Plans: The email notification that informed the vendor about one-time payment for the plan had a piece of code next to the payment amount instead of  "one time". Fixed.
+
+[!] {#6767} Design: Email templates: The import of email templates didn't work. Fixed.
+
+[!] {#6791} Multi-Vendor: Catalog: The "Vendor categories" block wasn't updated for a vendor when a product was transferred to another vendor. Fixed.
