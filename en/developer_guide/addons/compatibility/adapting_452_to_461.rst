@@ -337,7 +337,7 @@ New Functions
 
 #. Provide the list of dispatches that are owned by the vendor::
 
-     fn_get_vendor_dispatches
+     fn_get_vendor_dispatches()
 
 #. Check if the style can be removed::
 
@@ -345,7 +345,7 @@ New Functions
 
 #. Return the company ID of the style's owner::
 
-     fn_get_styles_owner
+     fn_get_styles_owner()
 
 #. Return the path to store's cached CSS file for the Theme Editor::
 
