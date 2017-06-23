@@ -10,7 +10,7 @@ New Features and Improvements
 
 [+] Add-ons: Product Variations (Beta): Product variations were introduced. They look like option combinations on the storefront, but behave more like child products in the administration panel.
 
-[+] Addons: PayPal payments: When creating a payment method that uses PayPal Express Checkout, you can now configure the payment method automatically and sign up for a PayPal account diфrectly from the admin panel.
+[+] Addons: PayPal payments: When creating a payment method that uses PayPal Express Checkout, you can now configure the payment method automatically and sign up for a PayPal account directly from the Administration panel.
 
 [+] Core: REST API: The 'cart_content' entity was added.
 
@@ -45,6 +45,8 @@ Functionality Changes
 [*] Installation: The description in the install.html file was changed.
 
 [*] Order management: Adding products: The pop-up window for adding products to order in the administration panel now has the "Add to cart" button for each product next to the quantity. You can now add products from multiple pages without closing the pop-up window each time.
+ 	
+[*] Order management: Adding products: You can now add products to an order in the administration panel instantly by entering a part of a product's name and selecting that product. 
 
 [*] Settings: E-mails: SMTP: Storefronts: SMTP settings can now be configured individually for each storefront.
 
@@ -70,7 +72,7 @@ Bugfixes
 
 [!] Add-ons: E-mail marketing: Administrator privileges didn't work: any administrator could always view and edit the list of subscribers. Fixed.
 
-[!] Add-ons: Email marketing: REST API: Creating a subscriber via REST API didn't work because company_id was set to 0. Fixed.
+[!] Add-ons: E-mail marketing: REST API: Creating a subscriber via REST API didn't work because company_id was set to 0. Fixed.
 
 [!] Add-ons: Google reCAPTCHA: The add-on didn't work on some web hostings because the file_get_contents function returned "false". As a result, customers were asked to pass the CAPTCHA again. Fixed.
 
@@ -92,9 +94,7 @@ Bugfixes
 
 [!] Add-ons: eBay synchronization: An order imported from eBay could be linked to a wrong customer if the administrator edited other orders during that session before importing orders from eBay. Fixed.
 
-[!] Addons: Searchanise: Duplicate SQL queries were made. Fixed.
-
-[!] Administration panel: Images: When an uploaded image had high resolution and couldn't be resized by GD image library due to memory limits, the "Service unavailable" message appeared in the administration panel and on the storefront. Fixed; now administrators are notified when a thumbnail can't be created.
+[!] Add-ons: Searchanise: Duplicate SQL queries were made. Fixed.
 
 [!] CS-Cart: Stores: The progress bar did not work during storefront creation. Fixed.
 
@@ -109,8 +109,6 @@ Bugfixes
 [!] Checkout: Payment notifications from a payment processor could arrive to a wrong storefront when the "Redirect visitors of this storefront to the one that has countries to which the visitors' IP addresses belong defined" setting was enabled for a storefront. Fixed.
 
 [!] Checkout: Profile fields: After entering the value into a profile field with the "Date" type at checkout, a wrong date was displayed in the billing or shipping address. Fixed.
-
-[!] Checkout: Shipping options: The weight limits of a shipping method didn't properly affect the availability of the shipping method at checkout. Fixed.
 
 [!] Core: Mailer: Attachments: Non-latin symbols were dropped from the name of the attached file. Fixed.
 
@@ -132,19 +130,15 @@ Bugfixes
 
 [!] Multi-Vendor: Users: When a root administrator was signed in on the storefront and used the "Become a seller" form to register a vendor, the root administrator was assigned as that vendor's administrator. Fixed.
 
-[!] Order management: Changing an order status on the list of orders changed the number of orders displayed on one page to the value of the "Elements per page" setting. Fixed.
-
 [!] Order management: Invoice: A logo from the wrong storefront could appear on the invoice when multiple storefronts were used. This occurred on any storefront other than the first one, but only when the invoice was previewed or edited in the "All storefronts" mode, and the storefronts had different themes. Fixed.
 
 [!] Order management: Product options: When an administrator tried to edit an order in Chrome and change the selected variant for an option with the "Radio group" type, the radio buttons could appear as if none of the variants were selected. Fixed.
 
 [!] Order management: When an administrator was adding a new order, the chosen values of product options were reset after the administrator selected a customer, a shipping method, or a payment method. Fixed.
 
-[!] Payment methods: ServiRed (Redsys): Payments were not processed properly when an order was placed from the Administration panel. Fixed.
-
 [!] Payment methods: Skrill: Email and secret word verification links didn't work. Fixed; the email and secret word verification was removed, because the verification is no longer used.
 
-[!] Products: Edit selected: If only the maximum or minimum order quantity were edited, and the values were applied to all selected products, a PHP notice was recorded to the log. Fixed.
+[!] Products: Edit selected: If only the maximum or minimum order quantity were edited, and the values were applied to all selected products, a PHP notice was logged by the web server. Fixed.
 
 [!] Products: Edit selected: When editing multiple products at once, the product price was displayed with more digits after decimal point that was needed. Fixed.
 
@@ -168,10 +162,16 @@ Bugfixes
 
 [!] {#6734} Core: Payments: Card expiration date was obfuscated when cleaning up sensitive payment data, even though PCI DSS doesn't require doing it. Fixed.
 
+[!] {#6739} Order management: Changing an order status on the list of orders changed the number of orders displayed on one page to the value of the "Elements per page" setting. Fixed.
+
+[!] {#6740} Checkout: Shipping options: The weight limits of a shipping method didn't properly affect the availability of the shipping method at checkout. Fixed.
+
 [!] {#6753} Sales reports: When a chart was configured as a table that displayed taxes, the table didn't appear and an error notification was shown. Fixed.
 
 [!] {#6766} Multi-Vendor: Vendor Plans: The email notification that informed the vendor about one-time payment for the plan had a piece of code next to the payment amount instead of  "one time". Fixed.
 
 [!] {#6767} Design: Email templates: The import of email templates didn't work. Fixed.
+
+[!] {#6781} Payment methods: ServiRed (Redsys): Payments were not processed properly when an order was placed from the Administration panel. Fixed.
 
 [!] {#6791} Multi-Vendor: Catalog: The "Vendor categories" block wasn't updated for a vendor when a product was transferred to another vendor. Fixed.
