@@ -285,127 +285,127 @@ New Functions
 
 #. Remove blocks that are not snapped::
 
-     \Tygh\BlockManager\Block::removeDetached
+     \Tygh\BlockManager\Block::removeDetached($keep_main = false)
 
 #. Find a block that is the exact copy of the specified block::
 
-     \Tygh\BlockManager\Block::findDuplicate
+     \Tygh\BlockManager\Block::findDuplicate($block_id, $type, $properties, $name, $content, $lang_code = CART_LANGUAGE)
 
 #. Copy container from the default layout to a vendor's layout (used in Multi-Vendor)::
 
-     \Tygh\BlockManager\Container::copyFor
+     \Tygh\BlockManager\Container::copyFor($container_id = 0, $company_id = 0, $location_id = 0, $follow_links = true)
 
 #. Remove container (used in Multi-Vendor)::
 
-     \Tygh\BlockManager\Container::remove
+     \Tygh\BlockManager\Container::remove($container_id, $company_id = 0)
 
 #. Check if a container uses default content::
 
-     \Tygh\BlockManager\Container::usesDefaultContent 
+     \Tygh\BlockManager\Container::usesDefaultContent($company_id, $container, $dynamic_object = array())
 
 #. Check if the content of the container should be displayed::
 
-     \Tygh\BlockManager\Container::hasDisplayableContent 
+     \Tygh\BlockManager\Container::hasDisplayableContent($company_id, $container, $dynamic_object = array())
 
 #. Check if the content of the container can be reset to default::
 
-     \Tygh\BlockManager\Container::canBeResetToDefault
+     \Tygh\BlockManager\Container::canBeResetToDefault($company_id, $container, $dynamic_object = array())
 
 #. Return a message that should be displayed for the linked container::
 
-     \Tygh\BlockManager\Container::getLinkedMessage
+     \Tygh\BlockManager\Container::getLinkedMessage($company_id, $container, $dynamic_object = array())
 
 #. Get a URL for setting custom container configuration or for resetting container configuration to default::
 
-     \Tygh\BlockManager\Container::getConfigurationUrl 
+     \Tygh\BlockManager\Container::getConfigurationUrl($company_id, $container, $dynamic_object, $dynamic_object_scheme, $use_default = false)
 
 #. Add the properties used in the block manager::
 
-     \Tygh\BlockManager\Container::addBlockManagerProperties
+     \Tygh\BlockManager\Container::addBlockManagerProperties(array $containers, $dynamic_object = array(), $dynamic_object_scheme = array())
 
 #. Return containers where a vendor can manage blocks::
 
-     \Tygh\BlockManager\Container::getOwned
+     \Tygh\BlockManager\Container::getOwned()
 
 #. Check if a vendor can manage (add/edit) a block (used in Multi-Vendor)::
 
-     \Tygh\BlockManager\SchemesManager::isManageable
+     \Tygh\BlockManager\SchemesManager::isManageable($block_type, $block_scheme = array(), $company_id = null)
 
 #. Return the company ID of the block's owner::
 
-     \fn_get_blocks_owner
+     fn_get_blocks_owner()
 
 #. Provide the list of dispatches that are owned by the vendor::
 
-     \fn_get_vendor_dispatches
+     fn_get_vendor_dispatches
 
 #. Check if the style can be removed::
 
-     \Tygh\Themes\Styles::isRemovable
+     \Tygh\Themes\Styles::isRemovable($style)
 
 #. Return the company ID of the style's owner::
 
-     \fn_get_styles_owner
+     fn_get_styles_owner
 
 #. Return the path to store's cached CSS file for the Theme Editor::
 
-     \fn_get_theme_editor_tmp_css_path
+     fn_get_theme_editor_tmp_css_path($css_filename)
 
 #. Check if theme customization is enabled for the vendor, and provide his/her ID::
 
-     \fn_mve_get_vendor_id_from_customization_mode
+     fn_mve_get_vendor_id_from_customization_mode()
 
 #. Provide overridden styles path for vendors::
 
-     \fn_mve_get_vendor_style_path
+     fn_mve_get_vendor_style_path($styles_path, $vendor_id, $style_id, $type = 'less')
 
 #. Populate parameters for ``Datakeeper::backup()`` by filling the missing values with the default ones::
 
-     \Tygh\DataKeeper::populateBackupParams
+     \Tygh\DataKeeper::populateBackupParams($params = array())
 
 #. Get temp path to the store's files backup::
 
-     \Tygh\DataKeeper::getFilesBackupPath
+     \Tygh\DataKeeper::getFilesBackupPath($pack_name)
 
 #. Get temp path to the store's database backup::
 
-     \Tygh\DataKeeper::getDatabaseBackupPath
+     \Tygh\DataKeeper::getDatabaseBackupPath($db_filename)
 
 #. Escape shell arguments fore safe use with exec/system/passthru::
 
-     \Tygh\Tools\SecurityHelper::escapeShellArgs
+     \Tygh\Tools\SecurityHelper::escapeShellArgs(array $args)
 
 #. Add the robots.txt instructions to the ``robots_data`` table for a newly-created storefront. If the new storefront is cloned from an existing one, the robots.txt instructions will be cloned from that storefront as well; otherwise the instructions will be taken from the first company::
 
-     Tygh\Common\Robots::addRobotsDataForNewCompany
+     \Tygh\Common\Robots::addRobotsDataForNewCompany($company_id, $clone_company_id = null)
 
 #. Get the robots.txt instructions from the ``robots_data`` table for a storefront with the specified company identifier::
 
-     Tygh\Common\Robots::getRobotsDataByCompanyId
+     \Tygh\Common\Robots::getRobotsDataByCompanyId($company_id)
 
 #. Add an entry with the robots.txt instructions for a storefront with the specified ``company_id`` to the ``robots_data`` table; update the entry with the specified ``company_id``, if it already exists in the ``robots_data`` table::
 
-     Tygh\Common\Robots::setRobotsDataForCompanyId
+     \Tygh\Common\Robots::setRobotsDataForCompanyId($company_id, $content)
 
 #. Get the content of the robots.txt file, if it exists. Return void otherwise::
 
-     Tygh\Common\Robots::getRobotsTxtContent
+     \Tygh\Common\Robots::getRobotsTxtContent()
 
 #. Delete an entry with the specified ``company_id`` from the ``robots_data`` table::
 
-     Tygh\Common\Robots::deleteRobotsDataByCompanyId
+     \Tygh\Common\Robots::deleteRobotsDataByCompanyId($company_id)
 
 #. Get the routing information from the request::
 
-     \fn_get_dispatch_routing
+     fn_get_dispatch_routing($request)
 
 #. Get vendor ID by requested object::
 
-     \fn_mve_get_vendor_id_by_request
+     fn_mve_get_vendor_id_by_request($request = array(), $controller = 'index', $mode = 'index', $action = '', $dispatch_extra = '')
 
 #. Search ekeys::
 
-     \fn_get_ekeys
+     fn_get_ekeys($params = array())
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 New Functions from "Russian Localization — Russian Payments" Add-On
@@ -413,43 +413,43 @@ New Functions from "Russian Localization — Russian Payments" Add-On
 
 #. Check whether or not the receipt should be sent to Yandex.Checkout::
 
-     \fn_is_yandex_checkpoint_receipt_required 
+     fn_is_yandex_checkpoint_receipt_required($processor_data)
 
 #. Provide VAT type for Yandex.Checkout receipt::
 
-     \fn_get_yandex_checkpoint_tax_type
+     fn_get_yandex_checkpoint_tax_type($item, $taxes_list)
 
 #. Provide price for Yandex.Checkout receipt::
  
-     \fn_get_yandex_checkpoint_price
+     fn_get_yandex_checkpoint_price($price = 0.00, $currency = 'RUB')
 
 #. Provide item description for Yandex.Checkout receipt::
 
-     \fn_get_yandex_checkpoint_description 
+     fn_get_yandex_checkpoint_description($text = '') 
 
 #. Manually include taxes that are not included into the price to the prices of items in the order::
 
-     \fn_yandex_checkpoint_apply_taxes 
+     fn_yandex_checkpoint_apply_taxes($order, $apply_tax_remainder = true)
 
 #. Get a receipt from Yandex.Checkout::
 
-     \fn_yandex_checkpoint_get_receipt
+     fn_yandex_checkpoint_get_receipt($order, $currency, $extra = array())
 
 #. Determine whether or not a Yandex.Checkout refund is partial::
 
-     \fn_yandex_checkpoint_is_partial_refund
+     fn_yandex_checkpoint_is_partial_refund($refund_data, $order_info)
 
 #. Build content of an order that is partially refunded via Yandex.Checkout::
 
-     \fn_yandex_checkpoint_build_refunded_order
+     fn_yandex_checkpoint_build_refunded_order($refund_data, $order_info)
 
 #. Distribute subtotal discount between order items (products, shipping, payment surcharge)::
 
-     \fn_yandex_checkpoint_apply_discounts
+     fn_yandex_checkpoint_apply_discounts($order, $apply_discount_remainder = true)
 
 #. Provide receipt XML node for a return request::
 
-     \Tygh\Payments\Processors\YandexMoneyMWS\Client::formatReceipt
+     \Tygh\Payments\Processors\YandexMoneyMWS\Client::formatReceipt($receipt = null)
 
 
 -----------
