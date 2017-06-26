@@ -138,7 +138,7 @@ Bugfixes
 
 [!] Payment methods: Skrill: Email and secret word verification links didn't work. Fixed; the email and secret word verification was removed, because the verification is no longer used.
 
-[!] Products: Edit selected: If only the maximum or minimum order quantity were edited, and the values were applied to all selected products, a PHP notice was logged by the web server. Fixed.
+[!] Products: Edit selected: If only the maximum or minimum order quantity were edited, and the values were applied to all selected products, the changes were saved, but a PHP notice occurred. Fixed.
 
 [!] Products: Edit selected: When editing multiple products at once, the product price was displayed with more digits after decimal point that was needed. Fixed.
 
