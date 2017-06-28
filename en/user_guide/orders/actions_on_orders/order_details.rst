@@ -40,7 +40,7 @@ Edit Order Details
 
    You can perform the following actions:
 
-   * **Add a product to the order:** start entering the product's name in the text field and choose one of the suggested products from the drow-down list. Alternatively, click **Advanced products search** and use the pop-up to find and add the desired products.
+   * **Add a product to the order:** start entering the product's name in the text field and choose one of the suggested products from the drop-down list. Alternatively, click **Advanced products search** and use the pop-up window to find and add the desired products.
 
    * **Remove a product from the order:** hover the mouse pointer over the product and click the **trash can** icon.
 
