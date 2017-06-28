@@ -58,21 +58,21 @@ Step 1. Configure Payment Method
     :align: center
     :alt: The general settings of a PayPal Adaptive payment method.
 
-===============================================
-Step 2. Enter PayPal Account Emails for Vendors
-===============================================
+=============================================
+Step 2. Enter PayPal Account Data for Vendors
+=============================================
 
-Make sure that vendors specify the email addresses associated with their functioning PayPal accounts. To do that:
+Make sure that vendors specify the email addresses associated with their functioning PayPal Business accounts. To do that:
 
 2.1. Open Multi-Vendor Administration panel and go to **Vendors → Vendors**.
 
 2.2. Click the name of the desired vendor.
 
-2.3. The vendor editing window will open. Scroll down and fill in the **PayPal account email** field. Ask your vendors to fill in this field or do it yourself.
+2.3. The vendor editing window will open. Scroll down and fill in *all the fields* in the **PayPal Adaptive Payments** section. Your vendors can also enter that data themselves.
 
 .. image:: img/paypal_vendor_email.png
     :align: center
-    :alt: Vendors should specify emails of their PayPal accounts.
+    :alt: A vendor should specify the email of their PayPal Business Account, as well as the account holder's first name and last name.
 
 2.4. After the changes are saved, the add-on automatically requests confirmation from PayPal that the provided email addresses are valid for transactions. 
 
