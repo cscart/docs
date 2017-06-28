@@ -98,9 +98,11 @@
     :glob:
 
     product_attributes
+    out_of_stock_actions
     simple_versus_configurable
     product_variations
-    out_of_stock_actions
+    convert_combinations_to_variations
+    add_product
     attaching_files_to_products
     downloadable
     max_order_quantity
@@ -112,4 +114,3 @@
     images_import_problem
     incorrect_thumbnails
     wysiwyg
-    add_product

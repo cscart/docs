@@ -18,7 +18,7 @@ Before you can use the add-on, you need to install it:
 
 #. Switch to the **Browse all available add-ons** tab.
 
-#. Find **Product Variations (Beta)** on the list.
+#. Find **Product Variations [Beta]** on the list.
 
 #. Click **Install**.
 
@@ -47,5 +47,7 @@ Related Articles
 :doc:`Working with Product Variations </user_guide/manage_products/products/product_variations>`
 
 :doc:`/user_guide/manage_products/products/simple_versus_configurable`
+
+:doc:`/user_guide/manage_products/products/convert_combinations_to_variations`
 
 :doc:`REST API Entity: product_variations </developer_guide/api/entities/product_variations>`
