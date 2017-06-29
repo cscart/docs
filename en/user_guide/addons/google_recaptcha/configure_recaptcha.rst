@@ -18,7 +18,7 @@ How To: Set up Google reCAPTCHA in Your Store
 
    .. note::
 
-       To get **site key** and **secret**, go to `https://www.google.com/recaptcha/admin <https://www.google.com/recaptcha/admin>`_. For more information, please refer to `this instruction by Google <https://developers.google.com/recaptcha/docs/domain_validation>`_.
+       To get **site key** and **secret**, go to `https://www.google.com/recaptcha/admin <https://www.google.com/recaptcha/admin>`_. You'll need to provide the domain name of your store; for more information, please refer to `this article by Google <https://developers.google.com/recaptcha/docs/domain_validation>`_.
 
    * **Theme**—the color of the reCAPTCHA widget in your store; you can choose either *Light*, or *Dark*. Please refer to `Google reCAPTCHA FAQ <https://developers.google.com/recaptcha/docs/faq#can-i-customize-the-recaptcha-widget>`_ to see what those two themes look like.
 
