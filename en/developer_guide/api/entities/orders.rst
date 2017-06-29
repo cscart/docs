@@ -606,7 +606,7 @@ Pass the fields with order details in the HTTP request body in accordance with t
 Example JSON: Change Status & Notify by Email 
 ---------------------------------------------
 
-By default, when you change the order status via REST API, no email notifications are sent. However, you can use additional fields when updating an order:
+By default, when you change the order status via REST API, no email notifications are sent. However, you can use additional fields when updating an order, with *0* or *1* as values:
 
 * **notify_user**—this flag determines whether or not to send the notification to the customer.
 
@@ -614,17 +614,17 @@ By default, when you change the order status via REST API, no email notification
 
 * **notify_vendor**—this flag determines whether or not to send the notification to the vendor.
 
-.. note::
+  .. note::
 
-    The **notify_vendor** flag is available only in Multi-Vendor.
+      The **notify_vendor** flag is available only in Multi-Vendor.
 
 ::
 
   {
    "status": "P",
-   "notify_user": "Y",
-   "notify_department": "Y",
-   "notify_vendor": "Y"
+   "notify_user": "1",
+   "notify_department": "1",
+   "notify_vendor": "1"
   }
 
 This request sets the status of the order to ``P`` (*Processed* by default) and sends email notifications to the customer, the vendor, and the order department.
