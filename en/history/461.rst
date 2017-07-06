@@ -52,6 +52,8 @@ Functionality Changes
 
 [*] Website: SEO: robots.txt: Now robots.txt can be edited separately for each storefront.
 
+[*] WYSIWYG editors: CKEditor was removed.
+
 [*] {#6720} Marketing: Abandoned carts: Phone numbers of customers are now displayed on the "Abandoned / Live carts" page. If a customer is unregistered, the phone number will be displayed only if it was entered at checkout.
 
 ========
