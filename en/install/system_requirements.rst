@@ -142,7 +142,7 @@ CS-Cart Architects Team Recommends This
 Compatible Hosting Providers
 ============================
 
-As you can see, the requirements for the web server environment are quite typical. Thousands of hosting providers meet them. But if you can’t decide on the hosting for your web store, please consider a compatible hosting provider from our `Compatible Hosting <http://www.cs-cart.com/compatible-hosting.html>`_ list.
+As you can see, the requirements for the web server environment are quite typical. Thousands of hosting providers meet them. But if you can’t decide on the hosting for your web store, please consider a compatible hosting provider from our `Compatible Hosting <https://www.cs-cart.com/compatible-hosting.html>`_ list.
 
 ============================
 Server Hardware Requirements
