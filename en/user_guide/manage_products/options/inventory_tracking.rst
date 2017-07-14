@@ -2,40 +2,31 @@
 Options and Inventory Tracking
 ******************************
 
-Respectively to Inventory there are two types of products:
+Options may or may not affect inventory:
 
-* **option dependent**—for example, trainers physically depend on options (size), which means that different options—different things.
+* **Options affect inventory** when products with or without an option are physically different items. For example, the same shoes of different sizes are separate items, and usually they need to be tracked separately.
 
-* **option independent**—a gift can be tied with a band or not, which means that the gift stays the same irrespectively of the band.
+* **Options don't affect inventory** when the product is the same, regardless of the option. For example, adding a gift wrap doesn't change a product in any way, and can be added to any item. That's why it's not logical to track how many products with and without the gift wrap you have remaining.
 
-For the option dependent products there is a setting named **Inventory**.
+A product has a property called **Inventory**, that has 3 values: 
 
-This setting has three values: 
+* **Do not track** means that CS-Cart won't track the amount of this product in stock at all.
 
-* **Do not track**—the storage tracking for this product is not required.
+* **Track without options** means that CS-Cart will track the amount of this product in stock, but won't take options into account. You'll be able to specify the quantity of the product in the **In stock** field.
 
-* **Track without options**—it is used if the product is option independent.
+  When you select an option combination on the storefront, then the main image of the product will change, but **CODE** will remain the same.
 
-  The product quantity is specified in the **In stock** field. When selecting options this quantity is used. Selecting options for the product with individual combinations will result in changes in images but it won't affect the product codes.
+* **Track with options** means that each :doc:`option combination <option_combinations>` will have its own quantity. The **In stock** field will be replaced by the link that takes you to the list of option combinations.
 
-* **Track with options**—the quantity of the product depends on the quantity of combinations.
-
-  **In stock** field becomes unavailable and is replaced by the link that redirects to the combinations page. On the storefront when the specific combination is selected the product code is replaced by the combination code (if the code is not specified it will be left as is). The product images are replaced by the combination images. The quantity is specified for each combination separately. 
-
-
-.. note::
-
-    To make an option a part of the combination you will need to tick the **Inventory** checkbox on the option settings page.
+  When you select an option combination on the storefront, then the product code will be replaced by the combination code (if it was specified), and the main product image will be replaced replaced with the image of the combination.
 
 ======================
 Low Stock Notification
 ======================
 
-After the purchase was made the quantity of a product is decreased by the number of products bought.
+When a customer makes a purchase, the quantity of a product in stock decreases.
 
-If the number of products is not enough to supply a purchase, the order status will change to **Backordered** and the number of products will return to initial value.
+The remaining quantity may become lower than the value of the **Low stock notification threshold** setting from **Settings → General**. In this case the administrator receives an email notifying that a certain product is almost out of stock.
 
-The number left might be lower than set up in the **Low stock notification threshold** setting located in **Settings → General**. In this case the administrator receives an email notifying that a certain product is almost out of stock. Also the email contains the name of the product, its code, and the number products left.
-
-The number sent depends on the **Inventory** setting. If **track with options** is enabled, then the quantity of a certain combination is sent, otherwise—the quantity of the product itself. 
+If a product is tracked with options, then the quantity of a certain combination will be sent, otherwise—the quantity of the product itself. 
   
