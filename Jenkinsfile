@@ -151,6 +151,7 @@ def getBuildLanguageClosure(language, workspaceDir, branchName) {
             def artifactName   = "${language.langCode}-${branchName}.tgz"
             def authIdentifier = 'deploy-docs'
             def vParts = branchName.trim().split("\\.")
+            def options        = '-aEq'
 
             dir("${workspaceDir}/${language.srcDir}") {
                 
@@ -162,9 +163,12 @@ def getBuildLanguageClosure(language, workspaceDir, branchName) {
                     script: "mv conf.py.tmp conf.py"
                 )
 
+                if (language.langCode == "ru") {
+                    options = '-b unihtml -aEq'
+                }
                 // build and compress
                 sh(
-                    script: "sphinx-build -aEq . ${buildDir}"
+                    script: "sphinx-build ${options} . ${buildDir}"
                 )
                 sh(
                     script: "tar -czf ${artifactName} ${buildDir}/*"
