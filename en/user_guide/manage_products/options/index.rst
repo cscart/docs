@@ -2,19 +2,27 @@
 Options
 *******
 
-Use this section to manage global product options and option variants in your store. Global options work in the same manner as the product specific options, but they can apply to multiple products.
+The **Products → Options** page allows you to manage global product options and option variants in your store. Global options work in the same manner as the product-specific options, but they can apply to multiple products.
 
-Here you can add a new option with the **+** button or you can apply existing options to products with the **Apply to products** button.
-To edit or delete an option, click the gear button and choose the action from the drop-down list.
+* To add a new option, click the **+** button.
 
-Sometimes it is useful to disable options instead of deleting them. To make an option *Active/Disabled* use the drop-down list to the right.
+* To apply existing options to specific products, click the **Apply to products** button.
 
-.. image:: img/global_options.png
-    :align: center
-    :alt: The Options section
+* To edit or delete an option, hover the mouse pointer over the option, click the **gear** button, and choose the action from the drop-down list.
 
-In this section
-***************
+* To make an option *Active* or *Disabled*, use the drop-down list to the right. 
+
+  .. hint::
+
+      Sometimes it is useful to disable options temporarily, instead of deleting them. 
+
+  .. image:: img/global_options.png
+      :align: center
+      :alt: The Options page in CS-Cart
+
+===============
+In This Section
+===============
 
 .. toctree::
     :maxdepth: 1

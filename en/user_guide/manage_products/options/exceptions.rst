@@ -1,74 +1,114 @@
-*****************************************
-Allowed and Forbidden Option Combinations
-*****************************************
+******************************************************
+Exceptions (Allowed and Forbidden Option Combinations)
+******************************************************
 
-You can determine what combinations of :doc:`product options <product_options>` are available or unavailable to customers. For example, if you sell a T-shirt in various colors and sizes, you can either make a certain color/size combination unavailable, or make it the only available combination. This is done via **exceptions**.
+You can determine what combinations of :doc:`product options <product_options>` are available or unavailable to customers. For example, if you sell a T-shirt in various colors and sizes, you can either make certain combinations of size and color unavailable, or you can make them the only available combinations. This is done via **exceptions**.
 
 .. important::
 
-    Exceptions can limit what :doc:`product option combinations <option_combinations>` can be added to cart. 
+    Exceptions can limit what :doc:`product option combinations <option_combinations>` can be added to cart.
+
+===================
+Option Display Type
+===================
+
+A product's editing page has a setting called **Options type**. It can be useful when configuring exceptions. The setting has 2 possible values:
+
+* **Simultaneous**—a customer can select the variants for options in any order, and all options appear on the product page with one of the variants already selected. This is the default value.
+
+* **Sequential**—a customer has to select the variants for each option one by one: first choosing a variant for the first option, then for the second option, and so on.
+
+  .. note::
+
+      When options are sequential, their position relatively to each other is important. The positions can be changed in the corresponding field in the option editing pop-up window.
 
 ===============
 Exception Types
 ===============
 
-Exceptions behave differently depending on their type. You can specify the type of exceptions separately for each product:
+The behavior of exceptions is different, depending on their type. You can specify the type of exceptions separately for each product:
 
-1. Go to **Products → Products**.
+#. Go to **Products → Products**.
 
-2. Click the name of the product you want to edit.
+#. Click the name of the product you want to edit.
 
-3. Find the **Exceptions type** setting and choose its value:
+#. Find the **Exceptions type** setting and choose its value:
 
    * **Allowed**—only exceptions will be available to customers; other combinations of option variants will be unavailable.
 
    * **Forbidden**—exceptions won't be available to customers; other combinations of option variants will remain available.
 
-4. Click the **Save** button in the top right corner.
+#. Click the **Save** button in the top right corner.
 
-.. note::
+   .. note::
 
-    If you change the **Exceptions type** setting of the product, the type of all the existing exceptions of that product will change.
+       If you change the **Exceptions type** setting of the product, the type of all the existing exceptions of that product will change.
 
-.. image:: img/exceptions_type.png
-    :align: center
-    :alt: All the exceptions of the product are always of the same type.
+   .. image:: img/exceptions_type.png
+       :align: center
+       :alt: All the exceptions of the product are always of the same type.
 
 ===================
 Adding an Exception
 ===================
 
-1. In the Administration panel, go to **Products → Products**
+#. In the Administration panel, go to **Products → Products**
 
-2. Click the name of the desired product.
+#. Click the name of the desired product.
 
-3. Switch to the **Options** tab. 
+#. Switch to the **Options** tab. 
 
-4. Click the **Allowed combinations**/**Forbidden combinations** button.
+#. Click the **Allowed combinations**/**Forbidden combinations** button.
 
-.. hint::
+   .. hint::
 
-    The name of the button depends on the **Exceptions type** setting of the product.
+       The name of the button depends on the **Exceptions type** setting of the product.
 
-.. image:: img/forbidden_comb_01.png
-    :align: center
-    :alt: The Forbidden combinations button is above the list of options on the Options tab.
+   .. image:: img/forbidden_comb_01.png
+       :align: center
+       :alt: The Forbidden combinations button is above the list of options on the Options tab.
 
-5. Click the **+** button.
+#. Click the **+** button.
 
-6. A pop-up window will open. There you can select the option variants that comprise the exception. Use the buttons on the right to add, clone, and remove combinations from the list.
+#. A pop-up window will open. There you can select the option variants that comprise the exception. Use the buttons on the right to add, clone, and remove combinations from the list.
 
-7. Click the **Create** button.
+   .. note::
 
-.. image:: img/forbidden_comb_02.png
-    :align: center
-    :alt: Select the option variants that comprise the exception.
+       Only options of the **Select box**, **Radio group**, and **Check box** can be a part of an exception, because only these options have a list of variants known in advance.
 
-The combinations will be added to the list of exceptions:
+#. Click the **Create** button.
 
-* If the product has **allowed combinations**, customers will only be able to add these combinations of options to cart.
+   .. image:: img/forbidden_comb_02.png
+       :align: center
+       :alt: Select the option variants that comprise the exception.
 
-* If the product has **forbidden combinations**, customers won't be able to add those combinations to cart.
+   The combinations will be added to the list of exceptions:
+
+   * If the product has **allowed combinations**, customers will only be able to add these combinations of options to cart.
+
+   * If the product has **forbidden combinations**, customers won't be able to add those combinations to cart.
+
+.. important::
+
+    If exceptions already exist for a product, then adding a new option to that product won't lead to automatic recalculation of exceptions. The new option will have the value of *Any variant* in all existing exceptions.
+
+=====================
+Example of Exceptions
+=====================
+
+Let's assume we sell running shoes with 2 options: 
+
+* *Size:* 41, 42, 43; 
+
+* *Color:* black/yellow, blue, khaki. 
+
+Let's also assume that size *43* can't be of any color specified above, because it has only one unique color scheme. We've also run out of all khaki shoes.
+
+We'd have to create 2 exceptions (with the *Forbidden* type): 
+
+* **Size: 43; Color: "No variant can be selected"**. It means that the *Color* option won't be available when a customer selects size *43*.
+
+* **Size: "Any variant"; Color: Khaki**. It means that when *Khaki* is selected, customer won't be able to select any size. If *Size* is a required option (it should be), then customers won't be able to add khaki running shoes to cart.
 
 =======================================
 How Exceptions Appear on the Storefront

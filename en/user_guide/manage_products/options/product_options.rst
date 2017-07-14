@@ -1,47 +1,41 @@
-***************************
-How To: Set Product Options
-***************************
+*******************************
+How To: Create a Product Option
+*******************************
 
-To set product options:
+This article describes how to create an option for a particular product. If you sell multiple products that all have the same options (such as color or size), it may be better to use :doc:`global product options <../options/global_options>`.
 
-*   In the Administration panel, go to **Products → Products**.
-*   Open any product detail page and then open the **Options** tab.
-*   On the opened page, click the **Add option** button and complete the form under the **General** tab:
+#. In the Administration panel, go to **Products → Products**.
 
-    *   **Name** - Name of the product option as it appears on the storefront.
-    *   **Position** – Position of the product option relatively to the position of the other options in the list.
-    *   **Store** - Store to which the option originally belongs.
-    *   **Inventory** – If selected, the option has its own number of items in stock, which is tracked separately. This setting is available only after creating the option.
-    *   **Type** – Type of the product option: *Select box*, *Radio group*, *Check box*, *Text*, *Text area*, or *File*.
+#. Open the product editing page and then switch to the **Options** tab.
 
-        *   If the option type is *Text*, *Text area* or *File*, please refer to this :doc:`article <../options/option_settings>` in order to learn more about its settings.
-        *   If the option type is *Select box* or *Radio group*, open the **Variants** section in the same window:
+#. Сlick the **Add option** button and fill in the form in a pop-up window:
 
-            *   Complete the **Name** input field (e.g. *Green*).
-            *   In the **Modifier** input field, set the amount that will be added to the product price if this option is selected (e.g. *+2*). Leave it empty if the price does not change
-            *   Click the **Extra** link to manage the following settings:
+   * **Name**—the name of the product option as it appears on the storefront.
 
-                *   **Icon** – Thumbnail to represent the option variant. The image can be either uploaded from a local computer or the server file system, or linked to a remote location where the required image is physically located. An alternative text describes the image and is shown when the image is missing or cannot be displayed. It is good practice to have an alternative text associated with the image as an additional SEO-wise opportunity.
-                *   **Earned point modifier/Type** - Positive or negative value that modifies the original number of reward points that customers receive at their accounts when they buy the product. The modifier can be either an absolute value or a percentage.
+   * **Position**—the position of the product option relatively to other options in the list.
 
-            *   To add more variants, click the **+** icon.
+   * **Store**—the storefront to which the option originally belongs.
 
-            .. image:: img/global_options_02.png
-                :align: center
-                :alt: The Variants tab
+   * **Inventory**—if you tick this checkbox, the quantity of product with this option selected will be tracked separately.
 
-    *   **Description** - Description of the product option as it appears on the storefront under the question sign (?) next to the option name.
-    *   **Comment** – Comment to be displayed below the option on the storefront.
-    *   **Required** - If selected, this option is mandatory for selection/completion.
-    *   **Missing variants handling** - Select how impermissible/missing option combinations should be handled: *Display message* - the option will be marked as not available, if the option is mandatory (see the previous setting) customers will not be able to add the product to the cart; *Hide option completely* - the option will be hidden, if the option is mandatory (see the previous setting) customers will be able to add the product to the cart.
+   * **Type**—the type of the product option: *Select box*, *Radio group*, *Check box*, *Text*, *Text area*, or *File*. Depending on the type, options may have :doc:`additional properties <../options/option_settings>`.
 
-*   Click the **Create** button.
-*   On the **Editing product** page, choose the **Options** tab and click the **Option combinations** button. This will open a list containing combinations of all product option values on this page. If there are no option combinations defined on this page, click the **+** button. Now you can enter product code and upload small and detailed images for each option combination.
+   * **Description**—the description of the product option as it appears on the storefront under the question mark sign next to the option name.
+   
+   * **Comment**—the comment to be displayed below the option on the storefront.
 
-The added product option will be displayed on the product list and product detail pages in the storefront.
+   * **Required**—if you tick this checkbox, customers will have to select/enter the variant of this option.
 
-Also, you can set the :doc:`global product options <../options/global_options>`.
+   * **Missing variants handling**—how forbidden and missing option combinations should be handled: 
 
-.. important::
+     * *Display message*—the option will be marked as not available. If the option is mandatory (see the previous setting), customers will not be able to add the product to cart. 
 
-	To add Options for a product using the import option, use the instructions from the :doc:`Imported fields format <../import_export/fields_format>` article.
+     * *Hide option completely*—the option will be hidden; if the option is mandatory (see the previous setting), customers will be able to add the product to cart.
+
+#. Click the **Create** button.
+
+#. Now if you return to the product editing page and go to the **Options** tab, you'll be able to create :doc:`option combinations <option_combinations>`.
+
+.. hint::
+
+    Options for a product can also be added :doc:`via CSV import <../import_export/fields_format>`.
