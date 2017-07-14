@@ -2,10 +2,6 @@
 How To: Add Images for Option Variants and Combinations to a Product Page
 *************************************************************************
 
-.. note::
-
-    **Tutorial Difficulty: 1 / 3**
-
 When a product has multiple :doc:`option combinations <option_combinations>`, customers select the combination by choosing variants for every option. Let's enable customers to select variants by clicking on variant icons. We'll also make the main image of the product change when a customer selects a specific combination.
 
 As a result, the page of your product will look like in the picture below:
@@ -64,13 +60,13 @@ Let's make it so that the main product image changes when a different option com
 
 .. note::
 
-	We assume that you have already :doc:`created option combinations <option_combinations>`. If the **Option combinations** button doesn't appear, then the product doesn't have options that can be a part of the combination.
+	We assume that you have already :doc:`created option combinations <option_combinations>`. If the **Option combinations** button doesn't appear, then the product doesn't have options that can be a part of a combination.
 
 .. image:: img/option_combinations_01.png
     :align: center
     :alt: The Options tab
 
-2.4. Upload images for the necessary product option combinations. Make sure to specify alternative text that will appear when the image can't be displayed for some reason—it's good for `SEO <https://en.wikipedia.org/wiki/Search_engine_optimization>`_.
+2.4. Upload the images for option combinations. Make sure to specify alternative text that will appear when the image can't be displayed for some reason—it's good for `SEO <https://en.wikipedia.org/wiki/Search_engine_optimization>`_.
 
 2.5. Click the **Save** button.
 

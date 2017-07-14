@@ -1,44 +1,57 @@
-*************************************
-Option and Option Variants Attributes
-*************************************
+*****************************************
+Properties of Options and Option Variants
+*****************************************
 
-Option attributes
-*****************
+=================
+Option Properties
+=================
 
-Product options appear on the product details page on the storefront as selectable or input parameters to the product. Options can have the following attributes:
+Product options appear on the product details page on the storefront as parameters that a customer can select or enter. Options can have the following properties:
 
-*	**Name** - Name of the product option as it appears on the storefront.
-*	**Position** – Position of the product option relatively to the position of the other options in the list.
-*	**Inventory** – If selected, the option has its own number of items in stock, which is tracked separately.
-*	**Store** - Store to which the product option originally belongs.
-*	**Type** – Type of the product option: *Select box*, *Radio group*, *Check box*, *Text*, *Text area* or *File*. Specification of some of the option types read in this :doc:`article <../options/option_settings>`.
-*	**Description** - Description of the product option as it appears on the storefront under the question sign (**?**) next to the option name.
-*	**Comment** – Comment to be displayed below the option on the storefront.
-*	**Required** - If selected, this option is mandatory for selection/completion.
-*	**Missing variants handling** - Select how impermissible/missing option combinations should be handled:
+* **Name**—the name of the product option as it appears on the storefront.
 
-	*	*Display message* - the option will be marked as not available, if the option is mandatory (see the previous setting) customers will not be able to add the product to the cart.
-	*	*Hide option completely* - the option will be hidden, if the option is mandatory (see the previous setting) customers will be able to add the product to the cart.
+* **Position**—the position of the product option relatively to other options in the list.
 
-Variants attributes
-*******************
+* **Store**—the storefront to which the option originally belongs.
 
-An option variant is an extension to the product option of types *Select box*, *Radio group* or *Check box*, which may have its own status, icon, and amount of reward points as well as a weight modifier and a price modifier.
+* **Inventory**—if you tick this checkbox, the quantity of product with this option selected will be tracked separately.
 
-Option variants have the following attributes:
+* **Type**—the type of the product option: *Select box*, *Radio group*, *Check box*, *Text*, *Text area*, or *File*. Depending on the type, options may have :doc:`additional properties <../options/option_settings>`.
 
-*	**Position** – Position of the variant relatively to the position of the other variants in the list.
-*	**Name** – Name of the product variant. For example, if the option is titled *Size*, the product variants to the option can be *small*, *medium*, *large*, etc.
-*	**Modifier/Type** - Positive or negative value that modifies the original product price. The modifier can be either an absolute value or a percentage.
-*	**Weight modifier/Type** - Positive or negative value that modifies the original product weight. The modifier can be either an absolute value or a percentage.
-*	**Status** - Status of the product option (*Active* or *Disabled*).
-*	**Icon** – Thumbnail to represent the option variant. The image can be either uploaded from a local computer or the server file system, or linked to a remote location where the required image is physically located.
-	An alternative text describes the image and is shown when the image is missing or cannot be displayed. It is good practice to have an alternative text associated with the image as an additional SEO-wise opportunity.
+* **Description**—the description of the product option as it appears on the storefront under the question mark sign next to the option name.
+   
+* **Comment**—the comment to be displayed below the option on the storefront.
 
-	These images are shown in the option variants section on the product detail page in the storefront.
+* **Required**—if you tick this checkbox, customers will have to select/enter the variant of this option.
 
-.. image:: img/option_variants.png
-    :align: center
-    :alt: Option variants in the storefront
+* **Missing variants handling**—this setting determines what happens when all the variants of the option are disabled or not specified at all: 
 
-*	**Earned point modifier/Type** - Positive or negative value that modifies the original number of reward points that customers receive at their accounts when they buy the product. The modifier can be either an absolute value or a percentage.
+  * *Display message*—the option will appear on the product page, but will be marked as not available. If the option is mandatory (see the previous setting), customers will not be able to add the product to cart. 
+
+  * *Hide option completely*—the option will be hidden; even if the option is mandatory (see the previous setting), customers will still be able to add the product to cart.
+
+==================
+Variant Properties
+==================
+
+Options of the *Select box*, *Radio group*, or *Check box* types have variants that a customer can choose from. Option variants can be configured on a separate tab called **Variants** and have the following properties:
+
+* **Position**—the position of the variant relatively to other variants in the list.
+
+* **Name**—the name of the option variant. For example, if the option is titled *Size*, the variants to the option can be *Small*, *Medium*, *Large*, etc.
+
+* **Modifier/Type**—a positive or negative value that will be added to or subtracted from the original product price. The modifier can be either an absolute value or a percentage.
+
+* **Weight modifier/Type**—a positive or negative value that will be added to or subtracted from the original product weight. The modifier can be either an absolute value or a percentage.
+
+* **Status**—the status of the variant (*Active* or *Disabled*).
+
+* **Icon**—a thumbnail to represent the option variant. You can also specify alternative text for this thumbnail, it's good for SEO.
+
+  These icons are shown on the product details page on the storefront.
+
+  .. image:: img/option_variants.png
+      :align: center
+      :alt: Option variants on the storefront
+
+* **Earned point modifier/Type**—a positive or negative value that will be added to or subtracted from the original number of reward points that customers receive when they buy the product. The modifier can be either an absolute value or a percentage.
