@@ -1,4 +1,5 @@
 from os.path import join
+from sphinx.util.osutil import SEP
 
 
 def setup(app):
@@ -12,7 +13,13 @@ def envpurgedoc(app, env, docnames):
     version = app.outdir[split_index + 1:]
 
     for docname in docnames:
-        url = join('https://www.cs-cart.ru/docs', version, docname + '.html')
+
+        if docname.endswith(SEP + 'index'):
+            url = join('https://www.cs-cart.ru/docs', version, docname[:-5])
+        else:
+            url = join('https://www.cs-cart.ru/docs', version, docname + '.html')
+
+        print(url)
         f.write(url + '\n')
 
     f.close()
