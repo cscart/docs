@@ -19,7 +19,6 @@ def envpurgedoc(app, env, docnames):
         else:
             url = join('https://www.cs-cart.ru/docs', version, docname + '.html')
 
-        print(url)
         f.write(url + '\n')
 
     f.close()
