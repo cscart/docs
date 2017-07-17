@@ -36,3 +36,4 @@ In This Section
     comb_images
     exceptions
     max_file_uploads
+    inventory_tracking
