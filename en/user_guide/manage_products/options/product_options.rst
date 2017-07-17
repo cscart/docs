@@ -34,6 +34,10 @@ This article describes how to create an option for a particular product. If you 
 
 #. Click the **Create** button.
 
+   .. image:: img/global_options_01.png
+       :align: center
+       :alt: The option creation pop-up window in CS-Cart
+
 #. Now if you return to the product editing page and go to the **Options** tab, you'll be able to create :doc:`option combinations <option_combinations>`.
 
 .. hint::
