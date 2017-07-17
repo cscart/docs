@@ -14,7 +14,7 @@ Product options appear on the product details page on the storefront as paramete
 
 * **Store**—the storefront to which the option originally belongs.
 
-* **Inventory**—if you tick this checkbox, the quantity of product with this option selected will be tracked separately.
+* **Inventory**—if you tick this checkbox, you'll be able to track the quantity of a product with this option selected via option combinations.
 
 * **Type**—the type of the product option: *Select box*, *Radio group*, *Check box*, *Text*, *Text area*, or *File*. Depending on the type, options may have :doc:`additional properties <../options/option_settings>`.
 

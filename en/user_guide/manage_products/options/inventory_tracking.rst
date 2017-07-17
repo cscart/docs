@@ -28,5 +28,7 @@ When a customer makes a purchase, the quantity of a product in stock decreases.
 
 The remaining quantity may become lower than the value of the **Low stock notification threshold** setting from **Settings → General**. In this case the administrator receives an email notifying that a certain product is almost out of stock.
 
-If a product is tracked with options, then the quantity of a certain combination will be sent, otherwise—the quantity of the product itself. 
+.. note::
+
+    If a product is tracked with options, then the quantity of a specific combination will be sent. 
   
