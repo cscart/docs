@@ -14,7 +14,7 @@ def envpurgedoc(app, env, docnames):
 
     for docname in docnames:
 
-        if docname.endswith(SEP + 'index'):
+        if docname == 'index' or docname.endswith(SEP + 'index'):
             url = join('https://www.cs-cart.ru/docs', version, docname[:-5])
         else:
             url = join('https://www.cs-cart.ru/docs', version, docname + '.html')
