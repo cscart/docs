@@ -1,0 +1,47 @@
+***********************
+CS-Cart 4.6.2 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Product Variations [Beta]: The ability to sell variations as downloadable products was added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Stores: All search fields except from the name of the storefront were removed from the "Stores" page.
+
+========
+Bugfixes
+========
+
+[!] Add-ons: Google reCAPTCHA: The link to a Google page in the add-on's settings was out of date and led to a 404 page. Fixed.
+
+[!] Core: API: The check whether or not a product or a category existed in the database didn't work. Fixed.
+
+[!] Demo data: An error occurred when an order with the applied SALE-20 discount coupon was copied and edited, because the coupon name was supposed to be sale-20. Fixed.
+
+[!] Design: Checkout: If taxes were displayed on the checkout page, the shipping cost with the included tax had an extra opening bracket before it. Fixed.
+
+[!] Design: Products: The number of digits after the decimal point in the currency settings didn't affect how the list price of products was displayed in the Administration panel. Fixed.
+
+[!] Document Editor: Invoice: Profile fields: If the field name of a profile field contained "." or "-", that field wasn't displayed properly on the invoice. Fixed.
+
+[!] Marketing: Promotions: When the condition was "Total products in the cart" or "Order subtotal" with IN or NOT IN, only one number could be entered, and everything after the comma was truncated. Fixed.
+
+[!] Options: Forbidden combinations: A product couldn't be added to cart if it had an option with the "Radio group" type, and all variants of that option were forbidden. Fixed.
+
+[!] Order management: Adding products: When typing the name of a product that didn't have an image, there was empty space in the place where image was supposed to be. Fixed.
+
+[!] Products: Layouts: When an administrator edited the content of a block with manual filling for a particular product on the “Layouts” tab, the changes were saved only for the selected language. Fixed.
+
+[!] Security: Robots.txt: The robots.txt instructions could be altered without authorization, if the URL of the Administration panel was known. Fixed.
+
+[!] {#6747} Addons: PayPal payments: Quotation marks and some other symbols in product names were not displayed properly within PayPal when paying with PayPal Standard. Fixed.
+
+[!] {#6818} Countries: The spelling of Bosnia and Herzegovina was wrong. Fixed.
+
+[!] {#6825} Core: Countries: A request error occurred when certain parameters were specified. Fixed.
