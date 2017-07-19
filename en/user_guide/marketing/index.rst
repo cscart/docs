@@ -4,7 +4,7 @@ Marketing
 
 The **Marketing** section allows you to:
 
-* create :doc:`promotions <../manage_products/promotions/index>`;
+* create :doc:`promotions and discounts <../manage_products/promotions/index>`;
 
 * view :doc:`abandoned and live carts <abandoned_live_carts>`;
 

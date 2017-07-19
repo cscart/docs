@@ -2,7 +2,7 @@
 Abandoned / Live carts
 **********************
 
-This section keeps personal lists of products that your store visitors added to their carts and wishlist, but that have not been purchased for some reason or another. For registered customers, the products from the list are automatically added to the cart when they visit your store again.
+The **Marketing → Abandoned / Live carts** section contains the lists of products that your store visitors added to their carts and wishlists but didn't purchase for some reason. When registered customers leave the website and return later, the products that were in their carts will be readded to their carts automatically.
 
 .. note::
 
@@ -16,5 +16,6 @@ This section keeps personal lists of products that your store visitors added to 
 
     Use the **Advanced search** link to filter carts/wishlists by various parameters.
 
-To remove all carts from the list, click the **gear** button in the right upper corner of the page and click **Delete all found**.
-To remove the selected carts from the list, tick the checkboxes near these carts, click the **gear** button in the upper right corner of the page, and click **Delete selected**.
+* To remove all carts from the list, click the **gear** button in the right upper corner of the page and click **Delete all found**.
+
+* To remove the selected carts from the list, tick the checkboxes near these carts, click the **gear** button in the upper right corner of the page, and click **Delete selected**.

@@ -16,6 +16,7 @@
     logs/index
     manage_products/index
     manage_products/promotions/index
+    marketing/index
     payment_methods/index
     shipping_and_taxes/index
     import_export/index
