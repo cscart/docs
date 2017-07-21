@@ -26,11 +26,11 @@ This article describes how to create an option for a particular product. If you 
 
    * **Required**—if you tick this checkbox, customers will have to select/enter the variant of this option.
 
-   * **Missing variants handling**—how forbidden and missing option combinations should be handled: 
+   * **Missing variants handling**—this setting determines what happens when all the variants of the option are disabled or not specified at all: 
 
-     * *Display message*—the option will be marked as not available. If the option is mandatory (see the previous setting), customers will not be able to add the product to cart. 
+     * *Display message*—the option will appear on the product page, but will be marked as not available. If the option is mandatory (see the previous setting), customers will not be able to add the product to cart. 
 
-     * *Hide option completely*—the option will be hidden; if the option is mandatory (see the previous setting), customers will be able to add the product to cart.
+     * *Hide option completely*—the option will be hidden; even if the option is mandatory (see the previous setting), customers will still be able to add the product to cart.
 
 #. Click the **Create** button.
 
