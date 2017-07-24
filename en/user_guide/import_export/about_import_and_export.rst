@@ -108,4 +108,4 @@ This is the list of all export settings. Some of them appear only in specific su
 
 .. hint ::
 
-    We have several dedicated articles about doc:`importing and exporting products </user_guide/manage_products/import_export/index>`.
+    We have several dedicated articles about :doc:`importing and exporting products </user_guide/manage_products/import_export/index>`.
