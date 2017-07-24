@@ -25,5 +25,5 @@
     :titlesonly:
     :glob:
 
-    /manage_products/promotions/index
+    /user_guide/manage_products/promotions/index
     abandoned_live_carts
