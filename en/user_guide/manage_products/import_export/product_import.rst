@@ -28,7 +28,7 @@ How To: Import Products and Product Data
 
    * **Reset inventory**—tick this checkbox if you want to reset inventory for all products.
 
-   * **Price decimal separator**—the decimal separator that is used to separate the integer part from the fractional part in product prices in the imported CSV file.
+   * **Price decimal separator**—the symbol that is used to separate the integer part from the fractional part in product prices in the imported CSV file.
 
    * **CSV delimiter**—the column delimiter that is be used in the imported CSV file.
 
