@@ -26,13 +26,13 @@ How To: Export Products and Product Data
 
    * **Category delimiter**—the delimiter that will separate parent and child categories in the category path in the exported CSV file.
 
-   * **Feature variants delimiter**—the delimiter that will separate the values of feature variants in the exported CSV file.
+   * **Feature variants delimiter**—the delimiter that will separate the feature variants in the exported CSV file.
 
    * **Images directory**—the path to the directory where images will be located. This will be used if the image file is specified without a path in the exported CSV file.
 
    * **Files directory**—the path to the directory where product files will be located. This will be used if the product file is specified without a path in the exported CSV file.
 
-   * **Price decimal separator**—the decimal separator that will separate the integer part from the fractional part in product prices in the exported CSV file.
+   * **Price decimal separator**—the symbol that will separate the integer part from the fractional part in product prices in the exported CSV file.
 
    * **CSV delimiter**—the column delimiter that will be used in the exported CSV file.
 

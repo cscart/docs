@@ -4,11 +4,11 @@ About Import and Export
 
 To import or export data (such as products, orders, options, etc.), go to **Administration → Import data** or **Administration → Export data** respectively.
 
-================
-Data Subsections
-================
+==========
+Data Types
+==========
 
-For convenience, the import and export sections are divided into **subsections** according to the data type:
+For convenience, the import and export pages split the data into types (see the menu on the right):
 
 * **Features**—product features;
 
@@ -18,7 +18,7 @@ For convenience, the import and export sections are divided into **subsections**
 
       You can only update order details—adding new records is not supported.
 
-* **Products**—product details, including wholesale prices (i.e., quantity-based discounts);
+* **Products**—product details;
 
 * **Subscribers**—mailing list subscribers;
 
@@ -28,9 +28,7 @@ For convenience, the import and export sections are divided into **subsections**
 
 .. note::
 
-    Starting with version 4.4.1, Multi-Vendor allows you to export and import :doc:`vendors. <../users/vendors/index>`
-
-To switch between the subsections, use the menu on the right.
+    Starting with version 4.4.1, Multi-Vendor allows you to export and import :doc:`vendors <../users/vendors/index>`.
 
 .. image:: img/data_subsections.png
     :align: center
@@ -40,31 +38,27 @@ To switch between the subsections, use the menu on the right.
 Import
 ======
 
-Every subsection may consist of several tabs. Each tab includes two areas: 
+Every data type may include several tabs. Each tab includes two areas: 
 
-* The upper area contains the list of fields that the imported file can include. Mandatory fields are highlighted. 
+* The upper area contains the list of fields that the imported CSV file can include. Mandatory fields are highlighted. 
 
-* The lower area contains the import options. These options may vary depending on the type of the imported data.
+* The lower area contains the import settings. These settings may vary depending on the type of the imported data.
 
 .. image:: img/import_example.png
     :align: center
-    :alt: Different types of data have different import options and required features.
+    :alt: Different types of data have different imported fields and required settings.
 
 ======
 Export
 ======
 
-The contents of an export file are controlled by two list boxes:
+The content of an exported CSV file is determined by two list boxes:
 
-* **Exported fields**—the fields that will be included in the export file.
+* **Exported fields**—the fields that will be included in the exported CSV file as separate columns.
 
-* **Available fields**—the fields that you can add to the export file. 
+* **Available fields**—the fields that won't appear in the exported CSV file, unless you add them to the list of exported fields
 
-To move fields from one list to another, use the twin horizontal arrows between the lists. To change the order of fields in the **Exported fields** list, use the twin vertical arrows below the list box. If necessary, you can save and then re-use a particular layout of the exported fields.
-
-.. note::
-
-    The highlighted fields on the **Exported fields** list are mandatory and thus cannot be removed from the list.
+To move fields from one list to another, use the twin horizontal arrows between the lists. To change the order of fields in the **Exported fields** list, use the twin vertical arrows below the list box. The highlighted fields on the **Exported fields** list are mandatory and thus cannot be removed from the list.
 
 .. image:: img/export_example.png
     :align: center
@@ -78,11 +72,13 @@ To move fields from one list to another, use the twin horizontal arrows between 
 Export Options
 --------------
 
-This is the list of all export options. Some of them appear only in specific subsections.
+This is the list of all export settings. Some of them appear only in specific subsections.
+
+* **Language**—the languages that will be exported to the CSV file.
 
 * **Category delimiter**—the delimiter to separate child and parent categories.
 
-* **CSV delimiter**—the delimiter to separate the exported values.
+* **CSV delimiter**—the column delimiter that will be used in the exported CSV file.
 
 * **File name**—the name of the exported file.
 
@@ -90,23 +86,21 @@ This is the list of all export options. Some of them appear only in specific sub
 
 * **Images directory**—the directory where images are located. Used for images without a path specified.
 
-* **Language**—the language of the exported data (two-letter language code.)
+* **Output**—the way the CSV file will be presented:
 
-* **Output**—the output type: 
+  * *Direct download*—you'll be offered to download the CSV file.
 
-  * **Direct download**—the export file will be downloaded to you computer; 
+  * *Screen*—the CSV file will be opened in your browser.
 
-  * **Screen**—the export file content will be shown in the web browser; 
-
-  * **Server**—the export file will be saved on the server where CS-Cart is installed. 
+  * *Server*—the CSV file will be saved on the server where your CS-Cart/Multi-Vendor is installed.
 
   .. important::
 
-      Regardless of the output type, you can download the file later: go to **Administration → Export Data**, click the **gear** button and choose **Exported files**.
+      Regardless of the output type, you can download the file later: go to **Administration → Export data**, click the **gear** button, and choose **Exported files**.
 
-* **Features delimiter**—the delimiter to separate multiple product features.
+* **Feature variants delimiter**—the delimiter that will separate the feature variants in the exported CSV file.
 
-* **Price decimal separator**—the symbol to be used as the decimal mark in product prices.
+* **Price decimal separator**—the symbol that will separate the integer part from the fractional part in product prices in the exported CSV file.
 
 .. image:: img/export_options.png
     :align: center
