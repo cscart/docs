@@ -18,7 +18,7 @@ How To: Import Products and Product Data
 
    * **Category delimiter**—the delimiter that separates parent and child categories in the category path in the imported CSV file.
 
-   * **Feature variants delimiter**—the delimiter that separates the values of feature variants in the imported CSV file.
+   * **Feature variants delimiter**—the delimiter that separates the feature variants in the imported CSV file.
 
    * **Images directory**—the path to the directory where images will be located. This will be used if the image file is specified without a path in the imported CSV file.
 
