@@ -9,4 +9,8 @@ This section of the documentation describes management of products and categorie
     :titlesonly:
     :glob:
 
-    */index
+    categories/index
+    products/index
+    features/index
+    filters/index
+    options/index

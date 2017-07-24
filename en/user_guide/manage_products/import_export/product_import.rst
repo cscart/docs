@@ -1,48 +1,49 @@
-**************
-Product Import
-**************
+****************************************
+How To: Import Products and Product Data
+****************************************
 
-To import the products to the store:
+#. In the Administration panel, go to **Administration → Import data → Products**.
 
-*   In the Administration panel, go to **Administration → Import data → Products**.
-*   Make sure the fields in your CSV file have the same names as the ones listed under the **Products** section on this page. Also check whether the values of the fields have the correct format. For more information about the correct format read the :doc:`Imported fields format <../import_export/fields_format>` article.
+#. Make sure the columns in your CSV file have the same names as the ones listed in the **Products** section on this page. Also check whether or not the values of the fields have :doc:`the correct format <../import_export/fields_format>`.
 
-.. image:: img/import_01.png
-    :align: center
-    :alt: Import data
+   .. important::
 
-.. important::
+       The **Product code**, **Language**, and **Store**/**Vendor** fields are mandatory. The **Product code** field must be unique for each product. If its value is equal to an existing product code, the data of this product will be replaced with the imported data. If language is not specified in the CSV file, the default language will be used.
 
-	If language is not specified in a csv file, the default language will be used instead.
+   .. image:: img/import_01.png
+       :align: center
+       :alt: The names of the columns in an imported CSV file.
 
-*   In the **Import options** section, specify the following settings:
+#. Specify the following settings:
 
-    *   **Category delimiter** - Select the delimiter of the category path which is used in the CSV file.
-    *   **Feature variants delimiter** - Select a feature variants delimiter that is used in the CSV file.
-    *   **Images directory** - Specify the path to the directory where images are located. This is used if the image file is specified without a path in the CSV file.
-    *   **Files directory** - Specify the path to the directory where product files (for downloadable products) are located. This is used if the **File** field data is specified without a path in the CSV file.
-    *   **Delete all existing product files before import** - Select this check box if you want to delete all files of your existing downloadable products.
-    *   **Reset inventory** - Select this check box if you want to reset inventory for all products.
-    *   **Price decimal separator** - Type a decimal separator for product prices that is used in the CSV file.
-    *   **CSV delimiter** - Select the CSV delimiter which is used in the CSV file (e.g. comma, semicolon, tab).
-    *   **Select file** - Choose location of the CSV file with the import data and select this file.
+   * **Category delimiter**—the delimiter that separates parent and child categories in the category path in the imported CSV file.
 
-    .. note::
+   * **Feature variants delimiter**—the delimiter that separates the values of feature variants in the imported CSV file.
 
-    	For example: If your file is located on your local computer, click the **Local** button and select the file.
+   * **Images directory**—the path to the directory where images will be located. This will be used if the image file is specified without a path in the imported CSV file.
 
-*   Click the **Import** button.
+   * **Files directory**—the path to the directory where product files will be located. This will be used if the product file is specified without a path in the imported CSV file.
 
-.. image:: img/import_02.png
-    :align: center
-    :alt: Import options
+   * **Delete all existing product files before import**—tick this checkbox if you want to delete all files of your existing downloadable products.
 
-To get an example of the correct CSV file, export your products in the **Products** tab on the **Export data** page in your Administration panel, or refer to the :doc:`article of the product import example <../import_export/import_example>`.
+   * **Reset inventory**—tick this checkbox if you want to reset inventory for all products.
 
-.. important::
+   * **Price decimal separator**—the decimal separator that is used to separate the integer part from the fractional part in product prices in the imported CSV file.
 
-    The **Product code**, **Language**, and **Store** fields are mandatory.
-    
-.. important::
+   * **CSV delimiter**—the column delimiter that is be used in the imported CSV file.
 
-	The **Product code** field must be unique for each product. If its value is equal to the existing product code, this product data will be replaced with the imported data.
+   * **Select file**—the imported CSV file.
+
+     .. note::
+
+         You can upload the file CSV from your computer, select a file on your server, or provide a link to the file.
+
+#. Click the **Import** button.
+
+   .. image:: img/import_02.png
+       :align: center
+       :alt: The import settings in CS-Cart.
+
+   .. hint::
+
+       To get an example of the correct CSV file, `export your existing products <product_export>` or :doc:`use the example made by us <import_example>`.
