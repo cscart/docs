@@ -27,4 +27,5 @@ The **Marketing** section allows you to:
     :titlesonly:
     :glob:
 
-    *
+    /user_guide/manage_products/promotions/index
+    abandoned_live_carts

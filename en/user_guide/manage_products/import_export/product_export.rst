@@ -1,36 +1,53 @@
-**************
-Product Export
-**************
+****************************************
+How To: Export Products and Product Data
+****************************************
 
-To export product data:
+#. In the Administration panel, go to **Administration → Export data → Products**.
 
-*   In the Administration panel, go to **Administration → Export data → Products**.
-*   Leave the necessary fields in the **Exported fields** option and move the others to the **Available fields** box.
+#. (optional) If you only want to export some specific products, then:
 
-.. image:: img/export_01.png
-    :align: center
-    :alt: Export Products
+   * Click **Select** in the **Notes** section on the right. This will open the product list.
 
-*   Specify the following settings:
+   * Tick the checkboxes of the products you'd like to export.
 
-    *   **Language** - Select a language, that will be used for the CSV file.
-    *   **Category delimiter** - Select a category delimiter, that will be used in the CSV file.
-    *   **Feature variants delimiter** - Select a feature variants delimiter, that will be used in the CSV file.
-    *   **Images directory** - Specify the path to the directory where images will be located. This will be used if the image file is specified without a path in the CSV file.
-    *   **Files directory** - Specify the path to the directory where product files will be located. This will be used if the **File** field data is specified without a path in the CSV file.
-    *   **Price decimal separator** - Type a decimal separator for product prices, that will be used in the CSV file.
-    *   **CSV delimiter** - Select a CSV delimiter, that will be used in the CSV file.
-    *   **Output** - Select the location to save the file to.
-    *   **Filename** - Specify a new name of the file where data will be exported or leave the existing one in the input field of this option if **Direct download** is selected in the **Output** option.
+   * Click the gear button in the upper right part of the page and choose **Export selected**. 
 
-.. image:: img/export_02.png
-    :align: center
-    :alt: Export Options
+   * You'll be taken back to the **Export data** page, but this time only specific products will be selected for export.
 
-*   Click the **Export** button if you need to export the data of all products.
-*   Take the following steps if you need to export only several products:
+#. Make sure that all the fields you want to export are in the **Exported fields**; move other fields to the **Available fields** box.
 
-    *   In the **Notes** section on the right, click the **Select** link.
-    *   On the opened page, select the check boxes of the necessary products.
-    *   Click the button with the gear icon in the right upper corner of the page and select **Export selected**.
-    *   Click the **Export** button on the **Export data** page.
+   .. image:: img/export_01.png
+       :align: center
+       :alt: Selecting the product fields to export in CS-Cart.
+
+#. Specify the following settings:
+
+   * **Language**—the languages that will be exported to the CSV file.
+
+   * **Category delimiter**—the delimiter that will separate parent and child categories in the category path in the exported CSV file.
+
+   * **Feature variants delimiter**—the delimiter that will separate the values of feature variants in the exported CSV file.
+
+   * **Images directory**—the path to the directory where images will be located. This will be used if the image file is specified without a path in the exported CSV file.
+
+   * **Files directory**—the path to the directory where product files will be located. This will be used if the product file is specified without a path in the exported CSV file.
+
+   * **Price decimal separator**—the decimal separator that will separate the integer part from the fractional part in product prices in the exported CSV file.
+
+   * **CSV delimiter**—the column delimiter that will be used in the exported CSV file.
+
+   * **Output**—the way the CSV file will be presented:
+
+     * *Direct download*—you'll be offered to download the CSV file.
+
+     * *Screen*—the CSV file will be opened in your browser.
+
+     * *Server*—the CSV file will be saved on the server where your CS-Cart/Multi-Vendor is installed.
+
+   * **Filename**—the name that the exported CSV file will get.
+
+     .. image:: img/export_02.png
+         :align: center
+         :alt: The export settings in CS-Cart.
+
+#. Click the **Export** button.
