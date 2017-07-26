@@ -30,11 +30,11 @@ A two-letter lowercase language code. This field is **mandatory**.
 
 To find out a language code:
 
-* In the Administartion panel, go to **Administartion → Languages**.
+#. In the Administration panel, go to **Administration → Languages**.
 
-* Switch to the **Available** tab.
+#. Switch to the **Available** tab.
 
-* Find the desired language and see it language code in the **Language code** row.
+#. Find the desired language and see it language code in the **Language code** row.
 
 .. important::
 
@@ -176,7 +176,7 @@ The maximum number of choices in the drop-down list that allows you to select th
 
 * **List qty count** is *3*.
 
-Then customers will be able to choose between 2, 4, or 6 items of this product. 
+Then customers will be able to choose between 2, 4, or 6 items of this product.
 
 .. important::
 
@@ -254,6 +254,10 @@ Ship downloadable
 
 * **N**—don't calculate shipping cost for a downloadable product.
 
+.. important::
+
+    EXAMPLE: *Y*
+
 ==================
 Inventory tracking
 ==================
@@ -308,6 +312,10 @@ Feature comparison
 
     EXAMPLE: *Y*
 
+.. note::
+
+    This field existed until version 4.3.5. Starting with CS-Cart and Multi-Vendor 4.3.6, :doc:`any product can be added to the comparison list </user_guide/manage_products/features/feature_comparison>`.
+
 =================
 Zero price action
 =================
@@ -348,7 +356,7 @@ You can specify alternative text for images by adding it after the path. For exa
 Thumbnail
 =========
 
-The full path to the product thumbnail image. **Thumbnails are generated from detailed images automatically**, so you need to use this field only if you want a custom thumbnail for the product.
+The full path to the product thumbnail image. **Thumbnails are generated from detailed images automatically**, so you need to use this field only if you want a thumbnail that is different from the detailed image of the product.
 
 .. important::
 
@@ -430,7 +438,7 @@ The name of the page as displayed in a browser, which can contain up to 255 symb
 
 .. important::
 
-	EXAMPLE: *Adidas Men's ClimaCool Short Sleeve Mock*
+    EXAMPLE: *Adidas Men's ClimaCool Short Sleeve Mock*
 
 ==========
 Promo text
@@ -450,7 +458,7 @@ The names of the taxes which will be applied to the product. Several taxes must 
 
 .. important::
 
-	EXAMPLE: *VAT, test*
+    EXAMPLE: *VAT, test*
 
 .. warning::
 
@@ -466,11 +474,11 @@ All features that you import must follow this format::
 
 * **Feature ID**—the ID of the feature. 
 
-* **Group name**—the name of the feature group.
+* **Group name**—the name of the group to which the feature belongs.
 
 * **Feature name**—the name of the feature.
 
-* **Feature type**—the type of the feature:
+* **Feature type**—one of the following types:
 
   * **C**—checkbox.
 
@@ -488,7 +496,9 @@ All features that you import must follow this format::
 
   * **D**—date.
 
-* **Feature value**—the value of the feature (several values can be delimited with a comma). Several features must be delimited with a semicolon.
+* **Feature value**—the value of the feature. 
+
+Several features must be delimited with a semicolon.
 
 .. important::
 
@@ -504,7 +514,7 @@ Options
 
 All product options that you import must follow this format:
 
-  *(Storefront) Option name: Option type[Variant1///variant_property=value///variant_property=value, ..., VariantN///variant_property=value///variant_property=value]///setting=value///setting=value*
+  *(Storefront) Option name: Option type[Variant 1///variant_property=value///variant_property=value, ..., Variant N///variant_property=value///variant_property=value]///setting=value///setting=value*
 
 .. note::
 
@@ -518,7 +528,7 @@ All product options that you import must follow this format:
 
 * **Option name**—the name of the option.
 
-* **Option type**—the type of the option:
+* **Option type**—one of the following option types:
 
   * **I**—text.
 
@@ -535,14 +545,14 @@ All product options that you import must follow this format:
     EXAMPLE (text options): *(Simtech) Your age: I; (Simtech) Date of birth: I; (Simtech) Notes: T*
 
 ---------------
-Option variants
+Option Variants
 ---------------
 
-Variants can be specified for *select box* (*S*) and *radio group* (*R*) options right after the option name:
+Variants can be specified for *select box* (*S*) and *radio group* (*R*) options right after the option type:
 
-  *(Storefront) Option name: Option type[Variant1///variant_property=value///variant_property=value, ..., VariantN///variant_property=value///variant_property=value]*
+  *(Storefront) Option name: Option type[Variant 1///variant_property=value///variant_property=value, ..., Variant N///variant_property=value///variant_property=value]*
 
-* **Variant1,2,...N**—the names of the variants. 
+* **Variant 1, ..., Variant N**—the names of the variants. 
 
   .. important::
 
@@ -575,7 +585,7 @@ Variants can be specified for *select box* (*S*) and *radio group* (*R*) options
     EXAMPLE: *(Simtech) Size: S[Normal,Large///modifier=10.000///modifier_type=P///weight_modifier=20.000///weight_modifier_type=A]; Color: S[Grey///image=exim/backup/images/variant_image/grey_example.jpg,Black///modifier=50.000///modifier_type=A///image=exim/backup/images/variant_image/black_example.jpg]*
 
 ---------------
-Option settings
+Option Settings
 ---------------
 
 Settings can be specified after the option variants. Here are the settings that you may specify:
@@ -592,7 +602,7 @@ Settings can be specified after the option variants. Here are the settings that 
 
   * **H**—hide option completely.
 
-* **required**—if an option is required, customers will have to select/enter the variant of this option.
+* **required**—if an option is required, customers will have to select/enter the variant of this option:
 
   * **Y**—the option is required.
 
@@ -608,13 +618,13 @@ Settings can be specified after the option variants. Here are the settings that 
 
       EXAMPLE: *(Simtech) Color: S[Red///modifier=5///modifier_type=A,Green///modifier=10///modifier_type=P]///inventory=Y///missing_variants_handling=M///required=Y///status=A*
 
-* **multiupload** (for options with the *File* (*F*) type)—determines if customers can upload several files for one option. 
+* **multiupload** (for options with the *File* (*F*) type)—determines if customers can upload several files for one option:
 
   * **Y**—yes.
 
   * **N**—no.
 
-* **allowed_extensions** (for options with the *File* (*F*) type)—the extensions of the files that the customers are allowed to upload.
+* **allowed_extensions** (for options with the *File* (*F*) type)—the extensions of the files that the customers are allowed to upload:
 
 * **max_file_size** (for options with the *File* (*F*) type)—the maximum size of an uploaded file in KBs.
 
@@ -656,9 +666,7 @@ Dimensions of a box. This field is used for automatic calculation of the shippin
 Usergroup IDs
 =============
 
-Numeric IDs of the user groups will be able to see the product.
-
-Here are the IDs that CS-Cart and Multi-Vendor have by default:
+Numeric IDs of the user groups will be able to see the product. Here are the IDs that CS-Cart and Multi-Vendor have by default:
 
 * *0*—all users
 
@@ -674,7 +682,7 @@ Here are the IDs that CS-Cart and Multi-Vendor have by default:
 Available since
 ===============
 
-The date when the product becomes available for sale. It must use the following format: **dd mmm yyyy 00:00:00**. It is used when the product isn't available yet, and the :doc:`out-of-stock action </user_guide/manage_products/products/out_of_stock_actions>` is set to *Buy in advance*.
+The date when the product becomes available for sale. It must use the following format: **dd mmm yyyy 00:00:00**. It is used when the :doc:`out-of-stock action </user_guide/manage_products/products/out_of_stock_actions>` is set to *Buy in advance*.
 
 .. important::
 
@@ -700,9 +708,9 @@ Options type
 
 The order in which option variants are selected by a customer on the product page:
 
-* **P**—simultaneous—customers can select variants for options in any order; each option has some variant selected by default.
+* **P**—simultaneous: customers can select variants for options in any order; each option has some variant selected by default.
 
-* **S**—sequential—customer must select a variant for the first option, then for the second option, and so on; by default, no variant is selected.
+* **S**—sequential: customer must select a variant for the first option, then for the second option, and so on; by default, no variant is selected.
 
 .. important::
 
@@ -748,9 +756,9 @@ Pay by points
 Override points
 ===============
 
-* **Y**—recalculate points awarded for buying the product.
+* **Y**—override the amount points awarded for buying the product.
 
-* **N**—don't recalculate points awarded for buying the product.
+* **N**—don't override the amount of points awarded for buying the product.
 
 .. important::
 
@@ -760,9 +768,9 @@ Override points
 Override exchange rate
 ======================
 
-* **Y**—override global point exchange rate for this product.
+* **Y**—override the price in points for this product.
 
-* **N**—use global point exchange rate for this product.
+* **N**—use global point exchange rate for this product's price in points.
 
 .. important::
 
