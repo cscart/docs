@@ -54,7 +54,7 @@ The numeric ID of the product from the store's database. If **Product code** is 
 Category
 ========
 
-The full path to the main category of the product. Parent and child categories in the path, they must be separated from each other with the **Category delimiter** that you specify when you :doc:`import a CSV file with product data <product_import>`.
+The full path to the main category of the product. Parent and child categories in the path must be separated from each other with the **Category delimiter** that you specify when you :doc:`import a CSV file with product data <product_import>`.
 
 .. important::
 
@@ -132,7 +132,7 @@ The minimum amount of this product that can be purchased in one order.
 
 .. important::
 
-	EXAMPLE: *1*
+    EXAMPLE: *1*
 
 ============
 Max quantity
@@ -142,13 +142,13 @@ The maximum amount of this product that can be purchased in one order.
 
 .. important::
 
-	EXAMPLE: *10*
+    EXAMPLE: *10*
 
 =============
 Quantity step
 =============
  
-The number of product items between the two choices in the **Quantity** select box. For example:
+The number of items of this product by which a customer can increase or decrease the number of this product in cart. For example:
 
 * **Min quantity** is *2*.
 
@@ -156,17 +156,17 @@ The number of product items between the two choices in the **Quantity** select b
 
 * **Quantity step** is *2*.
 
-Then customers can choose to buy 2, 4, 6, 8, or 10 items of this product. 
+Then customers will be able to buy 2, 4, 6, 8, or 10 items of this product in one order. 
 
 .. important::
 
-	EXAMPLE: *1*
+    EXAMPLE: *1*
 
 ==============
 List qty count
 ==============
 
-The maximum number of choices in the **Quantity** select box. For example:
+The maximum number of choices in the drop-down list that allows you to select the number of product items in cart. For example:
 
 * **Min quantity** is *2*.
 
@@ -176,11 +176,11 @@ The maximum number of choices in the **Quantity** select box. For example:
 
 * **List qty count** is *3*.
 
-Then customers can choose to buy 2, 4, or 6 items of this product. 
+Then customers will be able to choose between 2, 4, or 6 items of this product. 
 
 .. important::
 
-	EXAMPLE: *10*
+    EXAMPLE: *10*
 
 .. note::
 
@@ -194,7 +194,7 @@ The additional shipping cost for this particular product, which is specified in 
 
 .. important::
 
-	EXAMPLE: *2.00*
+    EXAMPLE: *2.00*
 
 .. note::
 
