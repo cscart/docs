@@ -76,17 +76,19 @@ This is the list of all export settings. Some of them appear only in specific su
 
 * **Language**—the languages that will be exported to the CSV file.
 
-* **Category delimiter**—the delimiter to separate child and parent categories.
+* **Category delimiter**—the delimiter that will separate parent and child categories in the category path in the exported CSV file.
 
-* **CSV delimiter**—the column delimiter that will be used in the exported CSV file.
+* **Feature variants delimiter**—the delimiter that will separate the feature variants in the exported CSV file.
 
-* **File name**—the name of the exported file.
+* **Images directory**—the path to the directory where the exported product images will be located.
 
-* **Files directory**—the directory where files for downloadable products are located. Used for files without a path specified.
+* **Files directory**—the path to the directory where the exported product files will be located.
 
-* **Images directory**—the directory where images are located. Used for images without a path specified.
+* **Price decimal separator**—the symbol that will separate the integer part from the fractional part in product prices in the exported CSV file.
 
-* **Output**—the way the CSV file will be presented:
+* **CSV delimiter**—the symbol that will separate columns in the exported CSV file.
+
+* **Output**—the result of the export:
 
   * *Direct download*—you'll be offered to download the CSV file.
 
@@ -98,9 +100,7 @@ This is the list of all export settings. Some of them appear only in specific su
 
       Regardless of the output type, you can download the file later: go to **Administration → Export data**, click the **gear** button, and choose **Exported files**.
 
-* **Feature variants delimiter**—the delimiter that will separate the feature variants in the exported CSV file.
-
-* **Price decimal separator**—the symbol that will separate the integer part from the fractional part in product prices in the exported CSV file.
+* **Filename**—the name that the exported CSV file will get.
 
 .. image:: img/export_options.png
     :align: center
