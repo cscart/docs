@@ -28,15 +28,15 @@ How To: Export Products and Product Data
 
    * **Feature variants delimiter**—the delimiter that will separate the feature variants in the exported CSV file.
 
-   * **Images directory**—the path to the directory where images will be located. This will be used if the image file is specified without a path in the exported CSV file.
+   * **Images directory**—the path to the directory where the exported product images will be located.
 
-   * **Files directory**—the path to the directory where product files will be located. This will be used if the product file is specified without a path in the exported CSV file.
+   * **Files directory**—the path to the directory where the exported product files will be located.
 
    * **Price decimal separator**—the symbol that will separate the integer part from the fractional part in product prices in the exported CSV file.
 
-   * **CSV delimiter**—the column delimiter that will be used in the exported CSV file.
+   * **CSV delimiter**—the symbol that will separate columns in the exported CSV file.
 
-   * **Output**—the way the CSV file will be presented:
+   * **Output**—the result of the export:
 
      * *Direct download*—you'll be offered to download the CSV file.
 
