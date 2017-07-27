@@ -29,21 +29,21 @@ Before you can import the images, you need to upload them. You can do it via:
 File Editor
 -----------
 
-Let’s assume that we want to upload some images for products. These images will be used during the import, so we decide to store them in the **Private files** section, in a separate folder called images. Here’s what we do:
+Let’s assume that we want to upload some images for products. These images will be used during the import, so we decide to store them in the **Private files** section, in a separate folder called *images*. Here’s what we do:
 
-1. Create an archive called **images.zip**. That way we’ll have the images folder when we unpack the archive on our server.
+#. Create an archive called **images.zip**. That way we’ll have the *images* folder when we unpack the archive on our server.
 
-2. Go to **Administration → Files** in the Administration panel of your store.
+#. Go to **Administration → Files** in the Administration panel of your store.
 
-3. Click **Private files**, then drag and drop your archive with images to the file area.
+#. Click **Private files**, then drag and drop your archive with images to the file area.
 
-4. Right-click on the archive and choose **Extract files from archive**.
+#. Right-click on the archive and choose **Extract files from archive**.
 
-Congratulations! We now have a folder called images, and we can refer to those images in a CSV file.
+   Congratulations! We now have a folder called *images*, and we can refer to those images in a CSV file.
 
-.. image:: img/file_editor.png
-    :align: center
-    :alt: CS-Cart file editor supports drag-and-drop. Actions can be performed via buttons at the top or via the context menu.
+   .. image:: img/file_editor.png
+       :align: center
+       :alt: CS-Cart file editor supports drag-and-drop. Actions can be performed via buttons at the top or via the context menu.
 
 ----------
 FTP Client
@@ -107,18 +107,18 @@ Example 1: Import Products along with Main Images
 
     Additional product images will have to be imported separately.
 
-1. Prepare the images for import and upload them where necessary. 
+#. Prepare the images for import and upload them where necessary. 
 
    In this example we’ll upload the images to the to the *images* directory in the **Private files** section :ref:`as described above <upload-images-for-import>`.
 
-2. Go to **Administration → Import data → Products** [1] in the Administration panel of your store.
+#. Go to **Administration → Import data → Products** [1] in the Administration panel of your store.
 
-3. Make sure that your CSV file meets the requirements [2]. Here’s an extract from our CSV file::
+#. Make sure that your CSV file meets the requirements [2]. Here’s an extract from our CSV file::
 
      Product code;Language;Product name;Detailed image
      "D00014MK1P";"en";"My New Product";"images/test_image.jpg"
 
-   You can copy this extract to an empty text document, change the document’s extension to CSV, and open it in a spreadsheet editor, for example `LibreOffice Calc <https://www.libreoffice.org/discover/calc/>`_.
+   You can copy this extract to an empty *.txt* file, change the file’s extension to *.csv*, and open it in a spreadsheet editor, for example `LibreOffice Calc <https://www.libreoffice.org/discover/calc/>`_.
 
    * **Product code**—determines the product to which an image belongs. If you enter a non-existing product code in the CSV file, a new product with the specified image will be created.
 
@@ -130,13 +130,13 @@ Example 1: Import Products along with Main Images
 
    * **Detailed image**—the name (and sometimes location) of the image. In this example we specify a relative path to the image file from the **Private files** section.
 
-4. Specify the import options [3]. Not all of them are required, since we’re not importing product categories, prices, etc. Here are the options that pose interest:
+#. Specify the import options [3]. Not all of them are required, since we’re not importing product categories, prices, etc. Here are the options that pose interest:
 
    * **Images directory**—since we specified the locations of the images in the CSV file, this setting will be ignored.
 
    * **CSV delimiter**—select how the columns are separated from each other in your CSV file. The extract above uses *semicolon* (``;``) as a delimiter.
 
-5. Select a CSV file to import [4]:
+#. Select a CSV file to import [4]:
 
    * **Local**—upload a file from your computer.
 
@@ -144,9 +144,9 @@ Example 1: Import Products along with Main Images
 
    * **URL**—enter the direct link to the CSV file.
 
-6. Click **Import** [5]. 
+#. Click **Import** [5]. 
 
-   You’ll see a bar indicating the import progress. Once it is full,  the images of the specified products will be updated. Products with non-existent product codes will be created.
+   You’ll see a bar indicating the import progress. Once it is full, the images of the specified products will be updated. Products with non-existent product codes will be created.
 
 .. image:: img/import_products_with_images.png
     :align: center
@@ -156,20 +156,20 @@ Example 1: Import Products along with Main Images
 Example 2: Import Main and Additional Images for Existing Products
 ------------------------------------------------------------------
 
-1. Prepare the images for import and upload them where necessary. 
+#. Prepare the images for import and upload them where necessary. 
 
    In this example we’ll upload the images to the to the *images* directory in the **Private files** section :ref:`as described above <upload-images-for-import>`.
 
-2. Go to **Administration → Import data → Products** [1] in the Administration panel of your store.
+#. Go to **Administration → Import data → Products** [1] in the Administration panel of your store.
 
-3. Switch to the Images tab [2]. Make sure that your CSV file meets the requirements described there [3]. 
+#. Switch to the **Images** tab [2]. Make sure that your CSV file meets the requirements described there [3]. 
 
    Here’s an extract from our CSV file::
 
      Product code;Pair type;Thumbnail;Detailed image
      "G0017";"M";"";"test_image.jpg"
 
-   You can copy this extract to an empty text document, change the document’s extension to CSV, and open it in a spreadsheet editor, for example `LibreOffice Calc <https://www.libreoffice.org/discover/calc/>`_.
+   You can copy this extract to an empty *.txt* file, change the file’s extension to *.csv*, and open it in a spreadsheet editor, for example `LibreOffice Calc <https://www.libreoffice.org/discover/calc/>`_.
 
    * **Product code**—determines the product to which an image belongs. If you enter a code that doesn’t exist, the entry will be skipped.
 
@@ -187,7 +187,7 @@ Example 2: Import Main and Additional Images for Existing Products
 
    * **Detailed image**—the name (and sometimes location) of the image. In this example we only specify the name of the file with its extension.
 
-4. Specify the import options [4]:
+#. Specify the import options [4]:
 
    * **Images directory**—since in this example we don’t specify the location of the images in the CSV file, we’ll need to specify the relative path to the directory with images from the **Private files** section. In this example we type ``images/`` in this field.
 
@@ -195,7 +195,7 @@ Example 2: Import Main and Additional Images for Existing Products
 
    * **CSV delimiter**—select how the columns are separated from each other in your CSV file. The extract above uses *semicolon* (``;``) as a delimiter.
 
-5. Select a CSV file to import [5]:
+#. Select a CSV file to import [5]:
 
    * **Local**—upload a file from your computer.
 
@@ -203,7 +203,7 @@ Example 2: Import Main and Additional Images for Existing Products
 
    * **URL**—enter the direct link to the CSV file.
 
-6. Click **Import** [6].
+#. Click **Import** [6].
 
    You’ll see a bar indicating the import progress. Once it is full, the images of the products should be updated. Entries with non-existing product code will be skipped.
 
