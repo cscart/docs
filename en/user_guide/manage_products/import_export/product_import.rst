@@ -20,11 +20,11 @@ How To: Import Products and Product Data
 
    * **Feature variants delimiter**—the delimiter that separates the feature variants in the imported CSV file.
 
-   * **Images directory**—the path to the directory where images will be located. This will be used if the image file is specified without a path in the imported CSV file.
+   * **Images directory**—the path to the directory where the imported images are located. This will be used if the image file is specified without a path in the imported CSV file.
 
-   * **Files directory**—the path to the directory where product files will be located. This will be used if the product file is specified without a path in the imported CSV file.
+   * **Files directory**—the path to the directory where the imported product files are located. This will be used if the product file is specified without a path in the imported CSV file.
 
-   * **Delete all existing product files before import**—tick this checkbox if you want to delete all files of your existing downloadable products.
+   * **Delete all existing product files before import**—tick this checkbox if you want to delete all existing files of a downloadable products when you import it.
 
    * **Reset inventory**—tick this checkbox if you want to reset inventory for all products.
 
@@ -42,7 +42,7 @@ How To: Import Products and Product Data
 
    .. image:: img/import_02.png
        :align: center
-       :alt: The import settings in CS-Cart.
+       :alt: The product import settings in CS-Cart.
 
    .. hint::
 
