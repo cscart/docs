@@ -46,4 +46,4 @@ How To: Import Products and Product Data
 
    .. hint::
 
-       To get an example of the correct CSV file, `export your existing products <product_export>` or :doc:`use the example made by us <import_example>`.
+       To get an example of the correct CSV file, :doc:`export your existing products <product_export>` or :doc:`use the example made by us <import_example>`.
