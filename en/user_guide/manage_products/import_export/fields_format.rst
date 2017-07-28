@@ -302,6 +302,10 @@ Free shipping
 
     EXAMPLE: *Y*
 
+.. note::
+
+    The behavior described above :doc:`was first introduced in version 4.3.5 </user_guide/shipping_and_taxes/shipping_methods/free_shipping>`.
+
 ==================
 Feature comparison
 ================== 
