@@ -204,7 +204,9 @@ The additional shipping cost for this particular product, which is specified in 
 Date added
 ==========
 
-The date when the product was added. It uses the **dd mmm yyyy 00:00:00** format.
+The date when the product was added. It uses the following format:
+
+  *dd mmm yyyy 00:00:00*
 
 .. important::
 
@@ -468,9 +470,9 @@ The names of the taxes which will be applied to the product. Several taxes must 
 Features
 ========
 
-All features that you import must follow this format::
+All features that you import must follow this format:
 
-  {Feature ID} (Group name) Feature name: Feature type[Feature value] 
+  *{Feature ID} (Group name) Feature name: Feature type[Feature value]*
 
 * **Feature ID**—the ID of the feature. 
 
@@ -656,7 +658,9 @@ The minimum and maximum number of product items to be shipped in a separate box.
 Box size
 ========
 
-Dimensions of a box. This field is used for automatic calculation of the shipping cost. The format of data in this field is as follows: **length:[number];width:[number];height:[number]**.
+Dimensions of a box. This field is used for automatic calculation of the shipping cost. The format of data in this field is as follows: 
+
+  *length:[number];width:[number];height:[number]*
 
 .. important::
 
@@ -682,7 +686,9 @@ Numeric IDs of the user groups will be able to see the product. Here are the IDs
 Available since
 ===============
 
-The date when the product becomes available for sale. It must use the following format: **dd mmm yyyy 00:00:00**. It is used when the :doc:`out-of-stock action </user_guide/manage_products/products/out_of_stock_actions>` is set to *Buy in advance*.
+The date when the product becomes available for sale. It is used when the :doc:`out-of-stock action </user_guide/manage_products/products/out_of_stock_actions>` is set to *Buy in advance*. It must use the following format: 
+
+  *dd mmm yyyy 00:00:00*
 
 .. important::
 
