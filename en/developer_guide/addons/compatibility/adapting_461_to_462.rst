@@ -6,9 +6,9 @@ Adapt Your Add-ons and Themes to CS-Cart 4.6.2
 Common Changes
 ==============
 
-#. `rus_taxes` - a new add-on was implemented to provide common tools for compliance with the Russian Federal Law 54. The add-on provides a service `Tygh::$app['addons.rus_taxes.receipt_factory']`, which creates a sales receipt based on the order data. You can use this service for creating receipts in your add-on.
+#. ``rus_taxes`` - a new add-on was implemented to provide common tools for compliance with the Russian Federal Law 54. The add-on provides a service ``Tygh::$app['addons.rus_taxes.receipt_factory']``, which creates a sales receipt based on the order data. You can use this service for creating receipts in your add-on.
 
-#. `Tygh\Addons\RusOnlineCashRegister\ReceiptFactory` has been removed, please use `Tygh::$app['addons.rus_taxes.receipt_factory']`
+#. ``Tygh\Addons\RusOnlineCashRegister\ReceiptFactory`` has been removed, please use ``Tygh::$app['addons.rus_taxes.receipt_factory']``
 
 ============
 Hook Changes
@@ -46,22 +46,27 @@ New Hooks
 Changed Hooks
 -------------
 
-```php
-// old:
-fn_set_hook('yandex_checkpoint_build_refunded_order_post', $refund_data, $order_info, $refunded_order_info);
+#.
 
-// new:
-fn_set_hook('yandex_checkpoint_build_refunded_order_post', $refund_data, $order_info, $currency, $receipt);
-```
+  ::
+
+    // old:
+    fn_set_hook('yandex_checkpoint_build_refunded_order_post', $refund_data, $order_info, $refunded_order_info);
+
+    // new:
+    fn_set_hook('yandex_checkpoint_build_refunded_order_post', $refund_data, $order_info, $currency, $receipt);
 
 -------------
 Removed Hooks
 -------------
 
-* `fn_set_hook('yandex_checkpoint_get_receipt_after_items', $order, $currency, $extra, $items);`
-* `fn_set_hook('yandex_checkpoint_get_receipt_post', $order, $currency, $extra, $receipt);`
-* `fn_set_hook('yandex_checkpoint_apply_discounts', $order, $apply_discount_remainder, $order_cost, $discount);`
-* `fn_set_hook('yandex_checkpoint_apply_discounts_after_order', $order, $apply_discount_remainder, $order_cost, $discount, $discount_remainder);`
+#. ``fn_set_hook('yandex_checkpoint_get_receipt_after_items', $order, $currency, $extra, $items);``
+
+#. ``fn_set_hook('yandex_checkpoint_get_receipt_post', $order, $currency, $extra, $receipt);``
+
+#. ``fn_set_hook('yandex_checkpoint_apply_discounts', $order, $apply_discount_remainder, $order_cost, $discount);``
+
+#. ``fn_set_hook('yandex_checkpoint_apply_discounts_after_order', $order, $apply_discount_remainder, $order_cost, $discount, $discount_remainder);``
 
 ==============
 Core Functions
@@ -99,30 +104,41 @@ New Functions
 Changed Functions
 -----------------
 
-```php
-// old:
-function fn_yandex_checkpoint_get_receipt($order, $currency, $extra = array())
+#.
 
-// new:
-function fn_yandex_checkpoint_get_receipt($order, $currency)
-```
+  ::
 
-```php
-// old:
-function fn_sdek_get_product_data($sdek_products, $data_product, $order_info, $shipment_id, $amount, $symbol_grams)
+    // old:
+    function fn_yandex_checkpoint_get_receipt($order, $currency, $extra = array())
 
-// new:
-function fn_sdek_get_product_data($sdek_products, $data_product, $order_info, $shipment_id, $amount, $symbol_grams, ReceiptItem $receipt_item)
-```
+    // new:
+    function fn_yandex_checkpoint_get_receipt($order, $currency)
+
+
+#.
+
+  ::
+
+    // old:
+    function fn_sdek_get_product_data($sdek_products, $data_product, $order_info, $shipment_id, $amount, $symbol_grams)
+
+    // new:
+    function fn_sdek_get_product_data($sdek_products, $data_product, $order_info, $shipment_id, $amount, $symbol_grams, ReceiptItem $receipt_item)
 
 -----------------
 Removed Functions
 -----------------
 
-* `Tygh\Enum\YandexCheckpointVatTypes::getForPriceExcluded`
-* `Tygh\Enum\YandexCheckpointVatTypes::getForPriceIncluded`
-* `Tygh\Enum\YandexCheckpointVatTypes::getWithDescriptions`
-* `fn_get_yandex_checkpoint_tax_type`
-* `fn_yandex_checkpoint_apply_taxes`
-* `fn_yandex_checkpoint_build_refunded_order`
-* `fn_yandex_checkpoint_apply_discounts`
+#. ``Tygh\Enum\YandexCheckpointVatTypes::getForPriceExcluded``
+
+#. ``Tygh\Enum\YandexCheckpointVatTypes::getForPriceIncluded``
+
+#. ``Tygh\Enum\YandexCheckpointVatTypes::getWithDescriptions``
+
+#. ``fn_get_yandex_checkpoint_tax_type``
+
+#. ``fn_yandex_checkpoint_apply_taxes``
+
+#. ``fn_yandex_checkpoint_build_refunded_order``
+
+#. ``fn_yandex_checkpoint_apply_discounts``
