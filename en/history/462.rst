@@ -8,6 +8,10 @@ New Features and Improvements
 
 [+] Add-ons: Product Variations [Beta]: The ability to sell variations as downloadable products was added.
 
+[+] Add-ons: Product Variations [Beta]: The consideration of the value of the "Show out of stock products" setting was implemented.
+
+[+] Hooks: A new hook called "get_company_condition_post" was added.
+
 =====================
 Functionality Changes
 =====================
@@ -18,7 +22,17 @@ Functionality Changes
 Bugfixes
 ========
 
+[!] Add-ons: Call request: The phone number couldn't be entered in the call request form on Android devices. Fixed.
+
 [!] Add-ons: Google reCAPTCHA: The link to a Google page in the add-on's settings was out of date and led to a 404 page. Fixed.
+
+[!] Add-ons: Product Variations [Beta]: Import failed if an imported file contained the Variation code field and simple products at the same time. Fixed.
+
+[!] Addons: PayPal Adaptive Payments: A PHP Notice occurred after attempting to save a vendor's PayPal Business Account Email when the Certificate authentication method was used and the certificate wasn't uploaded. Fixed.
+
+[!] Checkout: If the first name, last name, or phone number weren't specified in the account details and at checkout, a database error occurred when a customer attempted to place an order. Fixed.
+
+[!] Checkout: Products with free shipping could be bought when no shipping methods were available. Fixed.
 
 [!] Core: API: The check whether or not a product or a category existed in the database didn't work. Fixed.
 
@@ -28,7 +42,17 @@ Bugfixes
 
 [!] Design: Products: The number of digits after the decimal point in the currency settings didn't affect how the list price of products was displayed in the Administration panel. Fixed.
 
+[!] Design: RTL: Design: RTL: The Farsi calendar is not displayed correctly. Fixed.
+
+[!] Design: Right-to-left languages: In some cases, the ) and # symbols weren't displayed where they were supposed to be in Arabic language. Fixed.
+
+[!] Design: Right-to-left languages: The text in emails was aligned on the left side. Fixed.
+
 [!] Document Editor: Invoice: Profile fields: If the field name of a profile field contained "." or "-", that field wasn't displayed properly on the invoice. Fixed.
+
+[!] Logs: The Advanced Search didn't work if both the first name and the last name were entered in the User field. Fixed.
+
+[!] Mail: Some emails could be sent with corrupted content. Fixed.
 
 [!] Marketing: Promotions: When the condition was "Total products in the cart" or "Order subtotal" with IN or NOT IN, only one number could be entered, and everything after the comma was truncated. Fixed.
 
@@ -36,12 +60,29 @@ Bugfixes
 
 [!] Order management: Adding products: When typing the name of a product that didn't have an image, there was empty space in the place where image was supposed to be. Fixed.
 
-[!] Products: Layouts: When an administrator edited the content of a block with manual filling for a particular product on the “Layouts” tab, the changes were saved only for the selected language. Fixed.
+[!] Order management: Options: The product with forbidden option combination could not be added to the order created or edited via the Administration panel. Fixed.
+
+[!] Products: Layouts: When an administrator edited the content of a block with manual filling for a particular product on the Layouts tab, the changes were saved only for the selected language. Fixed.
 
 [!] Security: Robots.txt: The robots.txt instructions could be altered without authorization, if the URL of the Administration panel was known. Fixed.
 
-[!] {#6747} Addons: PayPal payments: Quotation marks and some other symbols in product names were not displayed properly within PayPal when paying with PayPal Standard. Fixed.
+[!] Shipping methods: FedEx: Wrong shipping rates were displayed when FedEx provided rates in the currency different from the primary currency of the store. Fixed.
 
-[!] {#6818} Countries: The spelling of Bosnia and Herzegovina was wrong. Fixed.
+[!] Themes: Settings overrides: When setting a theme as a storefront administrator, general store settings that couldn't be overridden where displayed as overridable. Fixed.
+
+[!] {#6054} Core: Sessions: A PHP notice could occur in Session.php. Fixed.
+
+[!] {#6747} Add-ons: PayPal Payments: Quotation marks and some other symbols in product names were not displayed properly within PayPal when paying with PayPal Standard. Fixed.
+
+[!] {#6806} Design: Images: The animation loading images was offset and cropped. Fixed.
+
+[!] {#6818} Countries: There was a typo in the country name (Bosnia and Herzegowina). Fixed.
+
+[!] {#6820} Add-ons: Reward points: The price in points and the amount of points received for purchasing a product always took discounts into account, regardless of the add-on's settings. Fixed.
 
 [!] {#6825} Core: Countries: A request error occurred when certain parameters were specified. Fixed.
+
+[!] {#6839} Add-ons: Product Variations [Beta]: With the add-on installed, the brand images weren't displayed on product pages. Fixed.
+
+[!] {#6841} Export/Import: Subscribers: Subscribers weren't exported to CSV file. Fixed.
+
