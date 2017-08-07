@@ -22,7 +22,7 @@ Functionality Changes
 Bugfixes
 ========
 
-[!] Add-ons: Call request: The phone number couldn't be entered in the call request form on Android devices. Fixed.
+[!] Add-ons: Call requests: The phone number couldn't be entered in the call request form on Android devices. Fixed.
 
 [!] Add-ons: Google reCAPTCHA: The link to a Google page in the add-on's settings was out of date and led to a 404 page. Fixed.
 
@@ -42,9 +42,9 @@ Bugfixes
 
 [!] Design: Products: The number of digits after the decimal point in the currency settings didn't affect how the list price of products was displayed in the Administration panel. Fixed.
 
-[!] Design: RTL: Design: RTL: The Farsi calendar is not displayed correctly. Fixed.
-
 [!] Design: Right-to-left languages: In some cases, the ) and # symbols weren't displayed where they were supposed to be in Arabic language. Fixed.
+
+[!] Design: Right-to-left languages: The Farsi calendar was not displayed correctly. Fixed.
 
 [!] Design: Right-to-left languages: The text in emails was aligned on the left side. Fixed.
 
@@ -75,6 +75,8 @@ Bugfixes
 [!] {#6747} Add-ons: PayPal Payments: Quotation marks and some other symbols in product names were not displayed properly within PayPal when paying with PayPal Standard. Fixed.
 
 [!] {#6806} Design: Images: The animation loading images was offset and cropped. Fixed.
+
+[!] {#6816} Cart: Countries: The shipping cost estimated incorrectly if there were extra spaces in index. Fixed.
 
 [!] {#6818} Countries: There was a typo in the country name (Bosnia and Herzegowina). Fixed.
 
