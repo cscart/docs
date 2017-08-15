@@ -136,7 +136,7 @@ The fields below represent various store details.
 
 .. note::
 
-    The CS-Cart/Multi-Vendor REST API always accepts and returns data as strings and arrays. The **Values** column in the table merely shows what kind of data you can expect in the fields.
+    The CS-Cart/Multi-Vendor REST API always accepts and returns data as strings and arrays/objects. The **Values** column in the table merely shows what kind of data you can expect in the fields.
 
 .. list-table::
     :header-rows: 1
@@ -218,7 +218,7 @@ There are other parameters that aren’t returned by CS-Cart REST API, but can b
 
 * **clone_from**—the ID of the store to clone data from.
 
-* **clone**—an array with various store attributes that must be cloned, with ``Y`` values::
+* **clone**—an object with various store attributes that must be cloned, with ``Y`` values::
 
     {
      ...
