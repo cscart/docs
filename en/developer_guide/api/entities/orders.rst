@@ -170,7 +170,7 @@ The fields below represent various order details.
 
 .. note::
 
-    The CS-Cart/Multi-Vendor REST API always accepts and returns data as strings and arrays. The **Values** column in the table merely shows what kind of data you can expect in the fields.
+    The CS-Cart/Multi-Vendor REST API always accepts and returns data as strings and arrays/objects. The **Values** column in the table merely shows what kind of data you can expect in the fields.
 
 .. list-table::
     :header-rows: 1
@@ -252,10 +252,10 @@ The fields below represent various order details.
         -   ID of the payment method.
     *   -   payment_info 
         -   *array*
-        -   An array with payment information.
+        -   Payment information.
     *   -   payment_method
-        -   *array*
-        -   An array with the settings of the :doc:`payment method <payments>`.
+        -   *object*
+        -   The settings of the :doc:`payment method <payments>`.
     *   -   payment_surcharge
         -   *float*
         -   The amount of payment surcharge.
@@ -264,14 +264,14 @@ The fields below represent various order details.
             | ``1``—yes
         -   Defines if the order was repaid.
     *   -   products
-        -   *array*
-        -   An array with the information about the ordered :doc:`products <products>`.
+        -   *object*
+        -   The information about the ordered :doc:`products <products>`.
     *   -   promotion_ids
         -   *string*
         -   A string of promotion IDs separated by commas.
     *   -   promotions
         -   *array*
-        -   An array with the data of applicable promotions.
+        -   The data of applicable promotions.
     *   -   need_shipping
         -   | ``true``
             | ``false``
@@ -281,7 +281,7 @@ The fields below represent various order details.
         -   IDs of the shipping methods.
     *   -   shipping
         -   *array*
-        -   An array with the data of the shipping methods used in the order.
+        -   The data of the shipping methods used in the order.
     *   -   shipping_id
         -   *integer*
         -   ID of the shipping method.
@@ -306,8 +306,8 @@ The fields below represent various order details.
         -   *float*
         -   Subtotal tax.
     *   -   taxes
-        -   *array*
-        -   An array with the data of the applicable taxes.
+        -   *object*
+        -   The data of the applicable taxes.
     *   -   notes
         -   *string*
         -   Customer’s notes about the order.
@@ -411,27 +411,55 @@ Pass the following fields with order details in the HTTP request body in accorda
 
   This comes useful when you create an order with the products from multiple vendors (in Multi-Vendor), or from multiple suppliers, or whenever else the products in the cart are separated into groups.
 
-* **products***—an associative array of products. Product IDs serve as the keys, and the values are product details::
+* **products***—an object (associative array) with the information about the ordered products. There are two ways how you can specify a product:
 
-    "products": {
-        "241": {
+
+  * Way 1: Product IDs serve as the keys, and the values are product details::
+
+      "products": {
+          "241": {
+              "amount": "1",
+              "product_options": {
+                 "12": "44", 
+                 "13": "48" 
+              }         
+          }
+      }
+
+    .. important::
+
+        If you want your order to have multiple instances of the same product, but with different selected :doc:`options <options>` and :doc:`option combination <combinations>`, don't use product IDs as keys; use Way 2 instead.
+
+  * Way 2: Keys are random numbers, and product IDs are included in the values among other product details::
+
+      "products": {
+        "1": {
+            "product_id": "12",
             "amount": "1",
             "product_options": {
-               "12": "44", 
-               "13": "48" 
-            }         
+                "3": "12",
+                "4": "17"
+            }
+        },
+        "2": {
+            "product_id": "12",
+            "amount": "2",
+            "product_options": {
+                "3": "15",
+                "4": "19"
+            }
         }
-    }
+      }
 
   .. note::
 
-       Product price is taken from the :doc:`product settings <products>`, not from the JSON data.
+       Product price is taken from the :doc:`product settings <products>`, not from the JSON data. A ``discount`` on product can't be specified in the POST request, but only in the PUT request.
 
   * **amount***—the amount of this particular product that is being ordered.
 
-  * **product_options**—an associative array describing the options and option variants of the product. Option ID serves as the key, and option variant serves as the value.
+  * **product_options**—an object (associative array) that describes the options and option variants of the product. Option ID serves as the key, and option variant serves as the value.
 
-* **user_data**—an associative array with the customer’s data. If you specify a ``user_id`` other than 0, this parameter won’t be considered and can be omitted. If ``user_id`` is omitted or set to 0, ``user_data`` is required::
+* **user_data**—an object (associative array) with the customer’s data. If you specify a ``user_id`` other than 0, this parameter won’t be considered and can be omitted. If ``user_id`` is omitted or set to 0, ``user_data`` is required::
 
     "user_data": {
       "email": "email@example.com",
@@ -499,11 +527,11 @@ Way 1: Create an Order as an Existing User
     "shipping_id": "1",
     "payment_id": "2",
     "products": {
-        "12": {
+        "1": {
           "product_id": "12",
           "amount": "1"
          }, 
-        "13": {
+        "2": {
           "product_id": "13",
           "amount":"2"
         }
@@ -544,11 +572,11 @@ Way 2: Create an Order as a Guest
    "payment_id": "2",
    "shipping_id": "1",
    "products": {
-       "12": {
+       "1": {
          "product_id": "12",
          "amount": "1"
        },
-       "13": {
+       "2": {
          "product_id":"13",
          "amount":"2"
        }
@@ -578,7 +606,7 @@ This request is similar to the previous example, but the order is placed on beha
 
 .. note::
 
-    Guests specify their address and contact information at checkout. That’s why you must pass the ``user_data`` array in the JSON when you place an order on behalf a guest.
+    Guests specify their address and contact information at checkout. That’s why you must pass the ``user_data`` object in the JSON when you place an order on behalf a guest.
 
 ---------------
 Response Format
@@ -637,24 +665,24 @@ Example JSON: Change Products
 
   {
    "products": {
-       "13": {
-         "product_id": "13",
-         "amount": "1"
-       },
-       "241": {
-         "product_id": "241",
-         "amount": "1",
-          "product_options": {
-             "12": "44", 
-             "13": "48" 
-          }         
-         }
-        }
+     "1": {
+       "product_id": "12",
+       "amount": "1"
+     },
+     "3": {
+       "product_id": "241",
+       "amount": "1",
+        "product_options": {
+           "12": "44", 
+           "13": "48" 
+        }         
+     }
+   }
   }
 
-This request changes the products assigned to the order. When we created order 98, it had one product with ``product_id=12`` and two products with ``product_id=13``. After this request the order will have one product with ``product_id=13``, and one product with ``product_id=241``.
+This request changes the products assigned to the order. When we created order 98, it had one product with ``product_id=12`` and two products with ``product_id=13``. After this request the order will have one product with ``product_id=12``, and one product with ``product_id=241``.
 
-Product 241 also has the option variants specified:
+As you can see, product 241 also has the option variants selected:
 
 * variant 44 of option 12.
 
@@ -662,7 +690,7 @@ Product 241 also has the option variants specified:
 
 .. note::
 
-    If an order has multiple products, make sure to specify them all when you update the ``products`` array with the PUT request. Products that are not specified in the PUT request will be removed from the order. The same applies to product option variants.
+    If an order has multiple products, make sure to specify them all when you update the ``products`` object with the PUT request. Products that are not specified in the PUT request will be removed from the order. The same applies to product option variants.
 
 -------------------------------------------------
 Example JSON: Change User Details and Order Total
