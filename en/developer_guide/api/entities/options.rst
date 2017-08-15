@@ -240,6 +240,10 @@ Option Details
 
 The fields below represent various option details.
 
+.. note::
+
+    The CS-Cart/Multi-Vendor REST API always accepts and returns data as strings and arrays/objects. The **Values** column in the table merely shows what kind of data you can expect in the fields.
+
 .. list-table::
     :header-rows: 1
     :stub-columns: 1
@@ -322,14 +326,14 @@ The fields below represent various option details.
         -   *string*
         -   The text that appears below the option on the storefront.
     *   -   variants
-        -   *array*
-        -   An array with option variants. Available for the options of the *Select box* or *Radiogroup* type. An option of the *Checkbox* type has 2 variants by default.
+        -   *object*
+        -   The variants of the option. Variants are available to the options of the *Select box* or *Radiogroup* type. An option of the *Checkbox* type has 2 variants by default.
 
 ---------------
 Option Variants
 ---------------
 
-A *Selectbox* or *Radiogroup* option can have different variants for the customer to choose from. These variants appear in the ``variants`` array.
+A *Selectbox* or *Radiogroup* option can have different variants for the customer to choose from. These variants appear in the ``variants`` object.
 
 .. list-table::
     :header-rows: 1
@@ -378,8 +382,8 @@ A *Selectbox* or *Radiogroup* option can have different variants for the custome
         -   *string*
         -   The name of the option variant.
     *   -   image_pair
-        -   *array*
-        -   The array with the information about the image of the option variant.
+        -   *object*
+        -   The information about the image of the option variant.
 
 ================
 Create an Option
@@ -410,7 +414,7 @@ Pass the fields with the option details in the HTTP request body in accordance w
 
 * **inventory**—determines if the option is taken into account when forming the product inventory. Pass ``Y`` for *Yes* and ``N`` for *No*.
 
-* **main_pair**—an array with the icons of the option variants.
+* **main_pair**—an object with the icons of the option variants.
 
 * Any other fields that apply to the option of a particular type.
 
@@ -504,7 +508,7 @@ Here we change the option type to *Select box*—it supports variants as well. W
 
 .. note::
 
-    If an option has multiple variants, make sure to specify them all when you update the ``variants`` array with the PUT request. Variants that are not specified in the PUT request will be deleted.
+    If an option has multiple variants, make sure to specify them all when you update the ``variants`` object with the PUT request. Variants that are not specified in the PUT request will be deleted.
 
 ================
 Delete an Option

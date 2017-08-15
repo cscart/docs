@@ -280,7 +280,7 @@ The full list of supported fields is given below (mandatory fields are marked wi
     *   -   image_pairs
         -   Additional image pairs
         -   empty array
-        -   array with image pair ID as key and image pair as value (see :ref:`below <main-pair>`)
+        -   object with image pair ID as key and image pair as value (see :ref:`below <main-pair>`)
     *   -   is_edp
         -   Downloadable or not
         -   ``N``
@@ -311,7 +311,7 @@ The full list of supported fields is given below (mandatory fields are marked wi
     *   -   main_pair
         -   Full image and thumbnail pair
         -   empty array
-        -   Main pair array (see :ref:`below <main-pair>`)
+        -   Main pair object (see :ref:`below <main-pair>`)
     *   -   max_items_in_box
         -   Maximal number of items per box
         -   0
@@ -369,7 +369,7 @@ The full list of supported fields is given below (mandatory fields are marked wi
     *   -   product_features
         -   Product features
         -   empty array
-        -   array of :doc:`product features <product_features>` with feature ID as key and feature data as value
+        -   object that contains :doc:`product features <product_features>` with feature ID as key and feature data as value
     *   -   product_id
         -   Product ID
         -   Set automatically
@@ -545,11 +545,11 @@ A pair of the full product image and (optionally) a thumbnail.
     *   -   icon
         -   Thumbnail data
         -   —
-        -   array (similar to ``detailed``, see below)
+        -   object (similar to ``detailed``, see below)
     *   -   detailed
         -   Full image data
         -   —
-        -   array (content explained below)
+        -   object (content explained below)
     *   -   absolute_path
         -   Absolute filesystem path to the image
         -   —

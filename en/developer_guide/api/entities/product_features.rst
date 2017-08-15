@@ -151,7 +151,7 @@ The full list of supported fields is given below (mandatory fields are marked wi
     *   -   variants (only for types with variants)
         -   Available feature value variants.
         -   —
-        -   array with variant ID as key and variant data as value (content explained :ref:`below <product-feature-variants>`)
+        -   object with variant ID as key and variant data as value (content explained :ref:`below <product-feature-variants>`)
 
 
 .. _product-feature-variants:
@@ -291,7 +291,7 @@ Send the data in the body of the HTTP request. The data should comply with the `
 
 This example request turns the feature with ``feature_id=22`` (**Handmade** in our case) into a *Select Box: Text* feature and creates 2 new variants for it: *Unique* and *Mass-produced*. The request also makes this feature appear on the product comparison page.
 
-To update an already existing variant, add its **variant_id** to the array:
+To update an already existing variant, add its **variant_id** to the object:
 
 .. hint::
 
@@ -305,7 +305,7 @@ This example request updates the variants of the the feature with ``feature_id=2
 
 .. warning::
 
-    Be sure to send all the feature variants in the array—the variants that you don't send will be lost.
+    Be sure to send all the feature variants in the object—the variants that you don't send will be lost.
 
 In the response you receive the ID of the feature.
 

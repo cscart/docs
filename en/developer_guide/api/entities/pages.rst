@@ -219,9 +219,9 @@ A page has a number of properties represented by fields. See the list of support
         -   | ``GET``
         -   array
     *   -   main_pair (only for blog pages)
-        -   An array with the information about the full image and thumbnail pair.
+        -   The information about the full image and thumbnail pair.
         -   | ``GET``
-        -   array
+        -   object
     *   -   spoiler (only for blog pages)
         -   The part of the blog post, that appears on the blog home page. The ``<!--CUT-->`` tag below this part separates it from the rest of the post.
         -   | ``GET``
