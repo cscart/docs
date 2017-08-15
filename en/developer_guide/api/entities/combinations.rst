@@ -140,6 +140,10 @@ Option Combination Details
 
 The fields below represent various details of an option combination.
 
+.. note::
+
+    The CS-Cart/Multi-Vendor REST API always accepts and returns data as strings and arrays/objects. The **Values** column in the table merely shows what kind of data you can expect in the fields.
+
 .. list-table::
     :header-rows: 1
     :stub-columns: 1
@@ -158,8 +162,8 @@ The fields below represent various details of an option combination.
         -   *integer*
         -   The hash of the option combination.
     *   -   combination
-        -   *array*
-        -   The array with the information about options and variants that comprise the combination.
+        -   *object*
+        -   The options and variants that comprise the combination.
     *   -   amount
         -   *integer*
         -   Determines how many items of this combination are in stock.
@@ -167,8 +171,8 @@ The fields below represent various details of an option combination.
         -   *integer*
         -   The lower this number, the higher the option combination appears on the list in the Administration panel.
     *   -   image_pairs
-        -   *array*
-        -   The array with the information about the image of the option combination.
+        -   *object*
+        -   The information about the image of the option combination.
 
 
 ============================
@@ -189,11 +193,11 @@ Pass the fields with the option combination details in the HTTP request body in 
 
 * **position**—the lower this number, the higher the option combination appears on the list in the Administration panel.
 
-* **combination**—the array with the information about options and variants that comprise the combination.
+* **combination**—the options and variants that comprise the combination.
 
   .. important::
 
-    The options you specify in the combination array should be available for the product and should have ``inventory=Y``.
+    The options you specify should be available for the product and should have ``inventory=Y``.
 
   You can’t set **image_pairs** or **product_code** with the POST request.
 

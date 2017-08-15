@@ -389,7 +389,7 @@ The fields below represent various details of a cart.
 
 .. note:: 
 
-    The CS-Cart/Multi-Vendor REST API always accepts and returns data as strings and arrays. The **Values** column in the table merely shows what kind of data you can expect in the fields.
+    The CS-Cart/Multi-Vendor REST API always accepts and returns data as strings and arrays/objects. The **Values** column in the table merely shows what kind of data you can expect in the fields.
 
 .. list-table::
     :header-rows: 1
@@ -427,8 +427,8 @@ The fields below represent various details of a cart.
         -   *integer*
         -   The ID of the :doc:`order <orders>` associated with the cart.
     *   -   user_data
-        -   *array*
-        -   An array with the cart owner data. It is available only if the cart belongs to a registered :doc:`user <users>`.
+        -   *object*
+        -   The information about the cart owner. It is available only if the cart belongs to a registered :doc:`user <users>`.
     *   -   products
         -   *array*
         -   An array that contains the information about :doc:`products <products>` in the cart.

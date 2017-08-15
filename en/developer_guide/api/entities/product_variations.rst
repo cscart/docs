@@ -269,7 +269,7 @@ Most of the details of a product variation are similar to the details of a produ
 
 .. note::
 
-    The CS-Cart/Multi-Vendor REST API always accepts and returns data as strings and arrays. The **Values** column in the table merely shows what kind of data you can expect in the fields.
+    The CS-Cart/Multi-Vendor REST API always accepts and returns data as strings and arrays/objects. The **Values** column in the table merely shows what kind of data you can expect in the fields.
 
 .. list-table::
     :header-rows: 1
@@ -292,8 +292,8 @@ Most of the details of a product variation are similar to the details of a produ
         -   *string*
         -   The unique code of the variation that consists of identifiers of the parent product and all the option variants that comprise the product variation: ``[parent_product_id]_[variant_id_for_option_1]_[variant_id_for_option_2]``. For example: ``249_181_185``.
     *   -   variation_options
-        -   *array*
-        -   The array that includes the identifiers of options and variants that comprise the variation. For example: ``{\"27\":\"185\",\"26\":\"182\"}``.
+        -   *object*
+        -   The identifiers of options and variants that comprise the variation. For example: ``{\"27\":\"185\",\"26\":\"182\"}``.
 
 ==================
 Create a Variation
@@ -309,7 +309,7 @@ Pass the following fields with variation details in the HTTP request body in acc
 
 * **parent_product_id**—the identifier of the parent product of the variation.  Variations are supposed to belong to the same category as their parent product. If a parent product is moved to another category, its variations are also moved to that category.
 
-* **variation_options**—an array with the information about options and variants that comprise a variation::
+* **variation_options**—the options and variants that comprise a variation::
 
     "variation_options": {
         "27":"183",

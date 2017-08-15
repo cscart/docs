@@ -130,8 +130,8 @@ The fields below represent various details of a block.
             |
             | **Note:** Add-ons may provide more block types, such as *banners*, *blog*, *rss_feed*, and *tags*.
     *   -   properties
-        -   *array*
-        -   An array with the various properties of the block. They may be different depending on the block's type.
+        -   *object*
+        -   Various properties of the block. They may be different depending on the block's type.
     *   -   company_id
         -   *integer*
         -   ID of the associated storefront (in CS-Cart) or vendor (in Multi-Vendor).
@@ -142,8 +142,8 @@ The fields below represent various details of a block.
         -   *string*
         -   The name of the block.
     *   -   content
-        -   *array*
-        -   An array with the content of the block. Available for *banners*, *blog*, *categories*, *html_block*, *smarty_block*, *menu*, *pages*, *product_filters*, *rss_feed*, *tags*.
+        -   *object*
+        -   The content of the block. Available for *banners*, *blog*, *categories*, *html_block*, *smarty_block*, *menu*, *pages*, *product_filters*, *rss_feed*, *tags*.
 
 ==============
 Create a Block
@@ -169,7 +169,7 @@ Pass the fields with the block details in the HTTP request body in accordance wi
 
     Before you read further, you might want to learn more about block schemas :doc:`in the corresponding section of the documentation <../../core/front-end/blocks/index>`.
 
-* **properties***—an array with the various properties of the block. The possible properties depend on the ``type`` and ``template`` of the block. The available templates are determined by the ``type`` of the block as well.
+* **properties***—the properties of the block. The possible properties depend on the ``type`` and ``template`` of the block. The available templates are determined by the ``type`` of the block as well.
 
   For example, let’s find the properties of **products_scroller.tpl**. Let’s study the JSON of an existing block first, to see what we’re looking for::
 
@@ -284,7 +284,7 @@ Pass the fields with the block details in the HTTP request body in accordance wi
   
     If you couldn’t find the block type you’re looking for, it may be because the block belongs to an add-on. Go to *app/addons/<add-on_name>/block_manager* to find the template schemas of a specific add-on.
 
-* **content**—an array with the content of the block. You can add content to the blocks of the following types: *banners*, *blog*, *categories*, *html_block*, *smarty_block*, *menu*, *pages*, *product_filters*, *rss_feed*, *tags*.
+* **content**—the content of the block. You can add content to the blocks of the following types: *banners*, *blog*, *categories*, *html_block*, *smarty_block*, *menu*, *pages*, *product_filters*, *rss_feed*, *tags*.
 
   The content of the block depends on the ``content`` array of the block type in the block schema. It depends on the ``type`` and ``template`` of the block as well.
 
@@ -379,7 +379,7 @@ Pass the fields with the block details in the HTTP request body in accordance wi
     
   We have found all the parameters available for **categories** in the ``content`` array. The ``full_tree_cat array`` also describes 2 other parameters we’ve seen in the JSON: ``parent_category_id`` and ``sort_by``.
 
-  A template doesn’t necessarily have all the parameters from the content array. Let’s find the possible content for **categories_dropdown_horizontal.tpl** in *app/schemas/block_manager/templates.php*.
+  A template doesn’t necessarily have all the parameters from the ``content`` array. Let’s find the possible content for **categories_dropdown_horizontal.tpl** in *app/schemas/block_manager/templates.php*.
 
   .. hint::
 
