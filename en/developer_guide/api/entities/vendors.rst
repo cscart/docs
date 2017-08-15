@@ -157,7 +157,7 @@ The fields below represent various vendor details.
 
 .. note::
 
-    The CS-Cart/Multi-Vendor REST API always accepts and returns data as strings and arrays. The **Values** column in the table merely shows what kind of data you can expect in the fields.
+    The CS-Cart/Multi-Vendor REST API always accepts and returns data as strings and arrays/objects. The **Values** column in the table merely shows what kind of data you can expect in the fields.
 
 .. list-table::
     :header-rows: 1
@@ -285,7 +285,7 @@ Pass the following fields with vendor details in the HTTP request body in accord
 
 * **categories**—the list of categories where the vendor is allowed to create products, separated by commas. If you leave it empty or don’t specify this parameter, the vendor will be able to create products in any category.
 
-* **shippings**—the array with the shipping methods available to the vendor. For example, if you want to allow the vendor to use shipping methods with shipping IDs 3 and 4, this is how the array will look like::
+* **shippings**—the shipping methods available to the vendor. For example, if you want to allow the vendor to use shipping methods with shipping IDs 3 and 4, this is how the object will look like::
 
     {
      ...
@@ -298,7 +298,7 @@ Pass the following fields with vendor details in the HTTP request body in accord
 
   .. important::
 
-      This array includes only the shipping methods created by the store administrator, not by a vendor’s administrator.
+      This object includes only the shipping methods created by the store administrator, not by a vendor’s administrator.
 
 * **commission**—the size of the commission taken from vendor on every sale. It uses *xx.xx* format.
 
