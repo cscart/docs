@@ -6,7 +6,7 @@ API Response Errors
 .. list-table::
     :header-rows: 1
     :stub-columns: 1
-    :widths: 10 30
+    :widths: 20 30
 
     *   -   Code
         -   Description
@@ -22,7 +22,19 @@ API Response Errors
         -   Initialized method is not suppoted for the request-URI.
     *   -   406 "Not Acceptible"
         -   The resource cannot generate a response in the format specified in the request (the ``accept`` header has an invalid type).
+    *   -   409 "Conflict"
+        -   The change is being rejected due to a condition imposed by the server. The reasons for that may vary and may be described in the response.
+    *   -   413 "Request Entity Too Large"
+        -   The client requests more objects than the allowed maximum is.
     *   -   415 "Unsupported Media Type"
         -   Invalid ``content-type`` header.
     *   -   500 "Internal Server Error"
         -   Server-side error. The request cannot be processed.
+    *   -   501 "Not Implemented"
+        -   The request method is not supported by the API.
+    *   -   503 "Service Unavailable"
+        -   The store is closed or is being upgraded to a new version.
+    *   -   507 "Insufficient Storage"
+        -   The server is unable to store the representation needed to successfully complete the request.
+    *   -   509 "Bandwidth Limit Exceeded"
+        -   The requests-per-hour limitations for the API have been reached.
