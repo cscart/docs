@@ -10,5 +10,5 @@ When a customer clicks the **Place order** button, the new order is registered a
 
 .. note::
 
-    If these instructions do not help, and an order still gets the **Failed** status when using a realtime payment method, please contact the CS-Cart support team.
+    If these instructions do not help, and an order still gets the **Failed** status when using a realtime payment method, please `contact CS-Cart support team <https://cs-cart.com/helpdesk>`_.
  

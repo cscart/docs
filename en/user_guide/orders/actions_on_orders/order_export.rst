@@ -2,59 +2,48 @@
 Order Export
 ************
 
-To export an order:
+#. In the Administration panel, go to **Administration → Export data → Orders**.
 
-*	In the Administration panel, go to **Administration → Export data → Orders**.
-*	The **Orders** tab is opened by default. Use this tab to export the customer information and all other data about orders. Data of order products can be exported using the **Order items** tab.
-*	Choose a layout:
+#. (optional) If you only want to export some specific orders, then:
 
-	*	Choose the existing layout in the **Layouts** select box and click the **Export** button.
+   * Click **Select** in the **Notes** section on the right. This will open the list of orders.
 
-	.. note ::
+   * Tick the checkboxes of the orders you'd like to export.
 
-		The existing layout can be modified. To do that, choose the layout in the **Layouts** select box, then choose fields in the **Exported fields** box, and click the **Save layout** button.
+   * Click the gear button in the upper right part of the page and choose **Export selected**. 
 
-	.. image:: img/export_orders_01.png
-	    :align: center
-	    :alt: Choose Layout
+   * You'll be taken back to the **Export data** page, but this time only specific orders will be selected for export.
 
-	*	Create a new layout:
+#. Make sure that all the fields you want to export are in the **Exported fields** box; move other fields to the **Available fields** box.
 
-		*	In the **Exported fields** box choose fields which you want to export. To exclude a field from the **Exported fields** box, click its name and click the **>** button. To add a field from the **Available fields** box to the **Exported fields** box, click the name of the field and click the **<** button. 
+   .. important::
 
-	    	.. important ::
+       The **Orders** tab is open by default; it allows you to export customer information and all data about orders, except for the products in those orders. Products can be exported from the **Order items** tab.
 
-	    		The fields in the **Exported fields** box are to be exported.
+   .. image:: img/order_exported_fields.png
+       :align: center
+       :alt: The list of exported fields for orders.
 
-		*	In the **Save layout as** input field under the **Available fields** box enter the name of the new layout.
-		*	Click **Save**. 
+   .. hint::
 
-		.. image:: img/export_orders_02.png
-		    :align: center
-		    :alt: Save layout
+       If you export data regularly, you can save the list of the exported fields: enter the name of your export pattern in the **Save layout as** field and click **Save**. Then you’ll be able to select your layout in the **Layout** drop-down list.
 
-		*	Select the created layout in the **Layouts** select box and click the **Export** button.
+#. Specify the following settings:
 
-*	In the **Export options** section in the **CSV delimiter** select box choose the type of delimiter.
-*	In the **Output** select box choose an action on the file:
+   * **CSV delimiter**—the symbol that will separate columns in the exported CSV file.
 
-	*	**Direct download** — to save the file on the local computer.
-	*	**Screen** — to display the file content.
-	*	**Server** — to save the file on the server file system.
+   * **Output**—the result of the export:
 
-*	Enter a new name of the file where data will be exported or leave the existing one in the input field of the **Filename** option.
+     * *Direct download*—you'll be offered to download the CSV file.
 
-.. image:: img/export_orders_03.png
-    :align: center
-    :alt: Export options
+     * *Screen*—the CSV file will be opened in your browser.
 
-*	To export *all orders* click the **Export** button.
-*	To export *only several orders*:
+     * *Server*—the CSV file will be saved on the server where your CS-Cart/Multi-Vendor is installed.
 
-	*	On the right side click the **Select** link next to **Notes**.
-	*	Tick the check boxes next to the orders you want to export.
-	*	Click the gear button and choose **Export selected**. Click the **Export** button on the opened page.
+   * **Filename**—the name that the exported CSV file will get.
 
-.. image:: img/export_orders_04.png
-    :align: center
-    :alt: Export selected
+     .. image:: img/order_export_options.png
+         :align: center
+         :alt: Order export options.
+
+#. Click the **Export** button.
