@@ -14,24 +14,24 @@ You can assign administrators to orders as managers. This is useful if your staf
 
 To assign a manager to an existing order:
 
-1. In the Administration panel, go to **Orders → View orders → <Desired order>**.
+#. In the Administration panel, go to **Orders → View orders → <Desired order>**.
 
-2. Find the **Manager** field on the right and click the **+** button.
+#. Find the **Manager** field on the right and click the **+** button.
 
-.. image:: img/add_manager.png
-    :align: center
-    :alt: Use the plus button next to the Manager field on the right to add a manager.
+   .. image:: img/add_manager.png
+       :align: center
+       :alt: Use the plus button next to the Manager field on the right to add a manager.
 
-3. You'll see a pop-up window where you can select the administrator assigned to the order. If you have too many administrators, you can use the search to make the list shorter.
+#. You'll see a pop-up window where you can select the administrator assigned to the order. If you have too many administrators, you can use the search to make the list shorter.
 
-4. Once you've selected the administrator, click **Choose**.
+#. Once you've selected the administrator, click **Choose**.
 
-.. image:: img/select_manager.png
-    :align: center
-    :alt: Use the radio buttons to select the administrator you want to assign to the order, then click the Choose button.
+   .. image:: img/select_manager.png
+       :align: center
+       :alt: Use the radio buttons to select the administrator you want to assign to the order, then click the Choose button.
 
-5. Click **Save changes**.
+#. Click **Save changes**.
 
-.. note::
+   .. note::
 
-    Once selected, a manager can't be removed from the order. However, you can use the **+** button again to choose a different manager. This removes the previous manager from the order.
+       Once selected, a manager can't be removed from the order. However, you can use the **+** button again to choose a different manager. This removes the previous manager from the order.

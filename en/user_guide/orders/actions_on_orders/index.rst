@@ -4,15 +4,23 @@ Actions on Orders
 
 The **Orders** section of the Administration panel is used to manage and control order procedures in your store. Here you can review and edit orders, place new orders on behalf of other users, handle return requests, manage call requests, etc.
 
-For accounting purposes, orders have continuous ID numbers disregarding their current state and number. At that, CS-Cart keeps track of successful and returned orders assigning them separate IDs.
+===============
+Order Numbering
+===============
 
-That is how it works. All orders can be one of the three conditions:
+Order IDs are sequential (for example, Order #1, Order #2, Order #3), regardless of the statuses of those orders. However, you can configure CS-Cart to track successful and returned orders separately by assigning additional IDs to them. To do this :doc:`specify the "Invoice/Credit memo" setting for order statuses </user_guide/orders/order_statuses/set_status>`.
 
-*	**Order** - The order has been placed, but not paid out.
-*	**Invoice** - The order has been paid and processed successfully.
-*	**Credit memo** - The order has been paid and processed, but then returned.
+Each status can have one of the following values for this setting:
 
-So, invoice IDs and credit memo IDs are generated continuously for the appropriate orders only:
+* **Default**—the default value; the invoice can be viewed, but the invoice ID is not generated.
+
+* **Order**—the order has been placed, but hasn't been paid yet.
+
+* **Invoice**—the order has been paid and processed successfully; an invoice ID is generated.
+
+* **Credit memo**—the order was paid and processed, but then got returned; a credit memo ID is generated.
+
+If you configure the statuses, then invoice IDs and credit memo IDs will be generated sequentially for the orders that get this status:
 
 
 .. list-table::
@@ -43,10 +51,11 @@ So, invoice IDs and credit memo IDs are generated continuously for the appropria
 
 .. note::
 
-	To list orders that has been placed in a particular store only, switch to the store administrator's mode. For details, see `Understanding multi-store functionality <http://docs.cs-cart.com/4.4.x/user_guide/stores/index.html>`_ (for CS-Cart users).
+    To view the orders were placed in a particular store only, switch to the store administrator's mode. To learn more, read an article about :doc:`multiple storefronts in CS-Cart </user_guide/stores/index>`.
 
-In this section
-***************
+===============
+In This Section
+===============
 
 .. toctree::
     :maxdepth: 2

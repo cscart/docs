@@ -2,11 +2,11 @@
 Return Requests
 ***************
 
-In the **Orders → Return requests** section you can handle product return requests that your customers have registered as well as configuring the general product return policy of your store.
+The **Orders → Return requests** page allows you to handle product return requests that your customers have registered. It allso allows you to configure the general product return policy of your store.
 
-.. note ::
+.. note::
 
-	To allow return requests in your store, activate the `RMA <http://docs.cs-cart.com/4.4.x/user_guide/addons/rma/index.html>`_  add-on in the **Add-ons → Manage add-ons** section. There you can also configure some essential settings that relate to return requests.
+    To allow return requests in your store, activate the :doc:`RMA </user_guide/addons/rma/index>`  add-on on the **Add-ons → Manage add-ons** page. There you can also configure some essential settings that relate to return requests.
 
 The section consists of four subsections: **Return requests**, **RMA reasons**, **RMA actions**, and **RMA request statuses**. To switch between the subsections, use the gear button on the right.
 
@@ -14,8 +14,9 @@ The section consists of four subsections: **Return requests**, **RMA reasons**, 
     :align: center
     :alt: Sections
 
-In this section
-***************
+===============
+In This Section
+===============
 
 .. toctree::
     :maxdepth: 2

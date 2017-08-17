@@ -2,28 +2,37 @@
 Call Requests
 *************
 
-In the **Orders → Call requests** section you can see a list of customer call requests.
+.. important::
+
+    To allow call requests in your store, go to **Add-ons → Manage add-ons** and make sure that the :doc:`Call requests </user_guide/addons/call_requests/index>` add-on is active.
+
+The list of call requests is available on the **Orders → Call requests** page. Customers make those requests by clicking the **Request call** link on the storefront. This link is a part of the **Call requests** block that you can place anywhere by going to **Design → Layouts**. 
 
 .. image:: img/call_request.png
     :align: center
     :alt: Call requests
 
-When a customer clicks the **Buy now with 1-click**  link on the product details page and fills in the form, a new order with the **Awaiting call** status is formed in the list of orders. At the same time a call request is generated that can be looked through and managed on this page. If a customer fills in only the **Phone** field, only the call request is created (without an order).
+.. note::
 
-A customer can also click the **Request call** link on the storefront (if the **Call requests** block is added in the **Design → Layouts** section). In this case a call request is created too where the list of products added to a customer's cart is mentioned.
+    Every call request contains links to any products that are in the customer's cart at the moment when the request is made.
 
-.. important ::
+The add-on also enables you to add **Buy now with 1-click** links to all products in your store. When a customer clicks such a link on the product details page and fills in the form, a call request will be generated as well. In addition to all the products in the cart, this call request will include a separate link to the selected product.
 
-	To allow call requests in your store, activate the `Call requests <http://docs.cs-cart.com/4.4.x/user_guide/addons/call_requests/index.html>`_ add-on in the **Add-ons → Manage add-ons** section. There you can also configure some essential settings that relate to call requests.
+If the customer fills the **Email** field, then an order for the selected product will also be placed.
 
-For each call request in the list you can see the following information:
+You can see the following information for each call request on the **Orders → Call requests** page:
 
-*	**ID** - A request identifier as it appears in the Administration panel.
-*	**Date** - Date and time when a request was sent.
-*	**Name and phone** - Name and phone of a customer who sent a request (as he/she wrote them in a form).
-*	**Order/Status** - Order ID as it appears on the **View orders** page and its status.
-*	**Responsible** - Here you can choose an administrator responsible for calling a customer.
-*	**Status** - Status of a call request. All newly sent requests have the **New** status.
+* **ID**—the identifier of the request.
+
+* **Date**—the date and time when a request was made.
+
+* **Name and phone**—the name and phone of a customer who sent the request (if this data was provided).
+
+* **Order/Status**—the identifier and status of the associated order (if the order was placed with **Buy now with 1-click**).
+
+* **Responsible**—an administrator responsible for calling the customer.
+
+* **Status**—the status of a call request.
 
 In this list you can also see the requested products for each call request and the convenient time for calling a customer.
 
@@ -31,9 +40,9 @@ To add some notes for a call request, just type them in the **Notes** field.
 
 To change a request status, click on the current status in the **Status** row and choose the required status from the drop-down menu:
 
-*	**New** - A call request was just sent by a customer.
-*	**In progress** - An administrator is working on a request.
-*	**Completed** - A customer was called to.
-*	**No answer** - A customer was called to, but there was no answer.
+* **New**—the call request was made, but no work has been done yet.
+* **In progress**—an administrator is working on the request.
+* **Completed**—the call was made.
+* **No answer**—the call was made, but there was no answer.
 
-To delete a call request, hover the mouse pointer over it. You will see a gear button. Click it and choose **Delete**. To delete several requests at once, tick checkboxes to the left of them, click the gear button in the right top corner of the page, and choose **Delete selected**.
+To delete a call request, hover the mouse pointer over it. You will see a gear button. Click it and choose **Delete**. To delete multiple requests at once, tick the checkboxes on the left, click the gear button in the right top part of the page, and choose **Delete selected**.

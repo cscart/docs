@@ -2,24 +2,27 @@
 Order Import
 ************
 
-To import an order:
+#. In the Administration panel, go to **Administration → Import data → Orders**.
 
-*   In the Administration panel, go to **Administration → Import data → Orders**.
-*   The **Orders** tab is opened by default. If you need to import the customer information and all other data about orders, use this tab. Data about order products can be imported in the **Order items** tab.
+#. Make sure that all the fields in your CSV file have the same names as the ones listed in the **Orders** section of the page.
 
-.. important ::
+   .. important ::
 
-	The fields displayed in bold print in the **Order items** section must be in the file from which the data will be imported.
+       The **Orders** tab is open by default; it allows you to export customer information and all data about orders, except for the products in those orders. Products can be exported from the **Order items** tab.
 
-*   In the **Import options** section in the **CSV delimiter** select box choose the delimiter type.
-*   In the **Select file** option choose location of the file with the import data.
+#. Specify the following settings:
 
-.. note ::
+   * **CSV delimiter**—the column delimiter that is be used in the imported CSV file.
 
-	**For example:** If your file is located on your local computer, click the **Local** button.
+   * **Select file**—the imported CSV file.
 
-*   Click the **Import** button.
+     .. note::
 
-.. image:: img/import_orders.png
-    :align: center
-    :alt: Import Orders
+         You can upload the file CSV from your computer, select a file on your server, or provide a link to the file.
+
+#. Click the **Import** button.
+
+   .. image:: img/import_orders.png
+       :align: center
+       :alt: Import Orders
+

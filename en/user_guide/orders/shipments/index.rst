@@ -10,17 +10,17 @@ For example, if a customer orders several items that are out of stock, you can s
 View Your Shipments
 ===================
 
-1. Go to **Orders → Shipments** to find the list of all the shipments created in your store.
+#. Go to **Orders → Shipments** to find the list of all the shipments created in your store.
 
-.. image:: img/shipment_list.png
-    :align: center
-    :alt: You can view all the existing shipments under Orders → Shipments.
+   .. image:: img/shipment_list.png
+       :align: center
+       :alt: You can view all the existing shipments under Orders → Shipments.
 
-2. Click the **gear** button of the desired shipment and choose **View** to see the details of the particular shipment. You can edit the comments and the date of the shipment. Remember to click **Save changes** once you've done that.   
+#. Click the **gear** button of the desired shipment and choose **View** to see the details of the particular shipment. You can edit the comments and the date of the shipment. Remember to click **Save changes** once you've done that.   
 
-.. image:: img/shipment_details.png
-    :align: center
-    :alt: You can edit the comments and the date of the shipment.
+   .. image:: img/shipment_details.png
+       :align: center
+       :alt: You can edit the comments and the date of the shipment.
 
 ===============
 In this section

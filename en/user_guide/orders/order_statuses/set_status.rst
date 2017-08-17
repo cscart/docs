@@ -2,25 +2,25 @@
 How To: Set up an Order Status
 ******************************
 
-1. Go to **Administration → Order statuses** in the Administration panel of your store.
+#. Go to **Administration → Order statuses** in the Administration panel of your store.
 
-2. Choose whether you want to:
+#. Choose whether you want to:
 
    * create a new status by clicking the **+** button;
 
    * edit an existing status by clicking its name.
 
-.. important ::
+   .. important ::
 
-    Your store can have up to 26 order statuses at the same time, as the database uses letters to identify them.
+       Your store can have up to 26 order statuses at the same time, as the database uses letters to identify them.
 
-.. image:: img/order_status_02.png
-    :align: center
-    :alt: Add status
+   .. image:: img/order_status_02.png
+       :align: center
+       :alt: Add status
 
-3. Specify the status properties.
+#. Specify the status properties.
 
-4. Click the **Save** button.
+#. Click the **Save** button.
 
 =================
 Status Properties
@@ -28,7 +28,7 @@ Status Properties
 
 .. note::
 
-    Properties marked with ***** won't appear if you :doc:`enable the email template editor. <../../look_and_feel/email_templates/enable_email_editor>` In that case you're supposed to manage email notifications related to order statuses via the :doc:`email template editor. <../../look_and_feel/email_templates/index>`
+    Properties marked with ***** won't appear if you :doc:`enable the email template editor </user_guide/look_and_feel/email_templates/enable_email_editor>`. In that case you're supposed to manage email notifications related to order statuses via the :doc:`email template editor </user_guide/look_and_feel/email_templates/index>`.
 
 * **Name**—the name of the status as it appears in the Administration panel.
 
@@ -48,7 +48,7 @@ Status Properties
 
 * **Notify orders department***—tick this checkbox to inform the store administrator by email about placing the order with this status.
 
-  .. note ::
+  .. note::
 
       The email address of the order department is specified in **Settings → Company**.
 
@@ -58,7 +58,7 @@ Status Properties
     
 * **Pay order again**—tick this checkbox to allow a customer to make a payment for the order again, if it was declined.
 
-  .. important ::
+  .. note::
 
       To make this option work properly, go to **Settings → Checkout** and enable the **Allow a customer to pay the order again if transaction was declined** setting.
 
@@ -72,9 +72,9 @@ Status Properties
 
    * *Credit memo*—the order has been paid and processed, but then returned (a credit memo ID is generated).
 
-.. important ::
+.. important::
 
-      The properties described below appear only when the corresponding add-ons are installed and activated under **Add-ons → Manage add-ons**. These add-ons are: **Suppliers**, **Gift certificates**, **RMA**, **Reward points**.
+    The properties described below appear only when the corresponding add-ons are installed and activated under **Add-ons → Manage add-ons**. These add-ons are: **Suppliers**, **Gift certificates**, **RMA**, **Reward points**.
 
 * **Notify supplier**—tick this checkbox to send automatic email notifications to suppliers once an order gets this status. The notifications will be sent to suppliers whose products are in the order.
 
@@ -84,7 +84,7 @@ Status Properties
 
 * **Grant reward points**—tick this checkbox to give the earned reward points to the customer once the order gets this status. 
 
-  .. important::
+  .. note::
 
       If you change a status of the order to a status that grants reward points, the customer will get them. But if you later choose another status that doesn't grant reward points, the points will be taken from the customer.
 

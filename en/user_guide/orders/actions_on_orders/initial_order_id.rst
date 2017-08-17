@@ -4,15 +4,17 @@ How To: Define the Initial Order ID
 
 To define the initial order ID:
 
-*   In the Administration panel, go to **Settings → General**.
-*   Complete the **Initial order ID value** input field.
+#. In the Administration panel, go to **Settings → General**.
 
-.. important ::
+#. Fill in the **Initial order ID value** field.
 
-	The **Initial order ID value** can not be less than the last order number in the database. If you want to enter the value that is less than the last order number in the database, you should delete all orders in the database.
 
-*   Click **Save**.
+#. Click **Save**.
 
-.. image:: img/initial_order_id.png
-    :align: center
-    :alt: Settings
+   .. important ::
+
+       The **Initial order ID value** can not be lower than the ID of the latest order in the database. If you want to enter a lower value, delete all orders in the database first.
+
+   .. image:: img/initial_order_id.png
+       :align: center
+       :alt: Initial order ID in CS-Cart settings.
