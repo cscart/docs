@@ -2,23 +2,36 @@
 RMA Request Statuses
 ********************
 
-By default, there are four possible statuses for return requests: *Approved*, *Complete*, *Declined*, *Requested*. The latter status is automatically assigned to all newly submitted requests, and then the store administrator can manually change the request status. If necessary, you can expand the default set of request statuses with custom statuses.
+By default, there are four possible statuses for return requests: 
 
-To add a custom request status:
+* *Approved*
 
-*	In the **Orders → Return requests** section click the gear button in the right upper corner of the page and choose **RMA request statuses**.
-*	In the opened section click the **+** button in the right upper corner of a page and choose **Add status**. This will open a pop-up window with a form for the new status details.
-*	Fill out the form. Fields marked with an asterisk (*) are mandatory.
+* *Complete*
 
-	*	**Name** - Name of the status.
-	*	**E-mail subject** - Subject of an email message that is sent to customers automatically when the request status changes to this status.
-	*	**E-mail header** - Header of an email message that is sent to customers automatically when the request status changes to this status.
-	*	**Inventory** - Choose whether to decrease or increase the number of items in stock for products included in the return request.
+* *Declined*
+
+* *Requested* 
+
+The *Requested* status is automatically assigned to all newly-submitted requests, and then the store administrator can manually change the request status. If necessary, you can add a custom status:
+
+#. Go to **Orders → Return requests**.
+
+#. Click the gear button in the right upper corner of the page and choose **RMA request statuses**.
+
+#. Click the **+** button in the right upper corner of the page and choose **Add status**. 
+
+#. A pop-up window will open. Fill in the form:
+
+   * **Name**—the name of the status.
+
+   * **E-mail subject**—the subject of an email message that is sent to customers automatically when the request gets this status.
+
+   * **E-mail header**—the header of an email message that is sent to customers automatically when the request gets this status.
+
+   * **Inventory**—choose whether to decrease or increase the number of items in stock for products included in the return request.
 	
-*	Click the **Create** button.
+#. Click the **Create** button.
 
-You can also **Edit** or **Delete** statuses with the **gear button** choosing the required action from the drop-down menu.
+   .. note::
 
-.. important ::
-
-	Default statuses can not be deleted.
+       You can also edit or delete statuses by using the **gear button** and choosing the required action from the drop-down menu. Default statuses can not be deleted.

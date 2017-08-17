@@ -2,9 +2,7 @@
 How To: Manage Shipment Statuses
 ********************************
 
-.. note::
-
-    **Tutorial Difficulty: 1 / 3**
+.. important::
     
     This functionality was not available before CS-Cart & Multi-Vendor 4.3.7.
 
@@ -24,34 +22,34 @@ By default, there are 3 statuses: *Packed*, *Picked up*, and *Shipped*. However,
 Add Your Own Shipment Status
 ============================
 
-1. Go to **Administration → Shipping & taxes → Shipment statuses**.
+#. Go to **Administration → Shipping & taxes → Shipment statuses**.
 
-.. image:: img/shipment_status_page.png
-    :align: center
-    :alt: You can see the available shipment statuses under Administration → Shipping & taxes → Shipment statuses.
+   .. image:: img/shipment_status_page.png
+       :align: center
+       :alt: You can see the available shipment statuses under Administration → Shipping & taxes → Shipment statuses.
 
-2. Click the **+** button in the top right corner, and choose **Add status**.
+#. Click the **+** button in the top right corner, and choose **Add status**.
 
-3. Name your status and click **Create**. After that you should be able to select your status on the shipment list.
+#. Name your status and click **Create**. After that you should be able to select your status on the shipment list.
 
-.. image:: img/name_shipment_status.png
-    :align: center
-    :alt: Enter the name of your shipment status and click Create.
+   .. image:: img/name_shipment_status.png
+       :align: center
+       :alt: Enter the name of your shipment status and click Create.
 
 ========================
 Delete a Shipment Status
 ========================
 
-1. Go to **Administration → Shipping & taxes → Shipment statuses**.
+#. Go to **Administration → Shipping & taxes → Shipment statuses**.
 
-2. Click the **gear** button of the shipment status.
+#. Click the **gear** button of the shipment status.
 
-3. Choose **Delete**.
+#. Choose **Delete**.
 
-.. hint::
+   .. hint::
 
-    You can also use the **Edit** action to change the name of the status.
+       You can also use the **Edit** action to change the name of the status.
 
-.. image:: img/delete_shipment_status.png
-    :align: center
-    :alt: Use the gear button of the status to edit or delete it.
+   .. image:: img/delete_shipment_status.png
+       :align: center
+       :alt: Use the gear button of the status to edit or delete it.

@@ -10,7 +10,7 @@ Depending on whether you allow multiple shipments for one order, the **Shipping 
 
 .. note:: 
 
-    **Since version 4.3.6** the tracking numbers of the shipments appear in the **Shipping Information** section. If you specify a carrier, the tracking numbers will show up as links leading to the shipment tracking page at the carrier's website.
+    **Starting with version 4.3.6**, the tracking numbers of the shipments appear in the **Shipping Information** section. If you specify a carrier, the tracking numbers will show up as links leading to the shipment tracking page at the carrier's website.
 
 .. image:: img/shipments_comparison.png
     :align: center
