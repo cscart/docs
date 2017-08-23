@@ -12,7 +12,7 @@ CS-Cart and Multi-Vendor can send email notifications when an order gets a certa
 
     The email address of the orders department is specified in the Administration panel under **Settings → Company**.
 
-Let's assume that we want to keep sending email notifications about order status changes to customers, but disable those notifications for the orders department. There are two ways to do this, depending on whether or not :doc:`the email template editor is enabled. </user_guide/look_and_feel/email_templates/enable_email_editor>`
+Let's assume that we want to keep sending email notifications about order status changes to customers, but disable those notifications for the orders department. There are two ways to do this, depending on whether or not :doc:`the email template editor is enabled </user_guide/look_and_feel/email_templates/enable_email_editor>`.
 
 =====================================
 When Email Template Editor Is Enabled
@@ -30,7 +30,7 @@ When Email Template Editor Is Enabled
 
    .. image:: img/disable_status_notification.png
        :align: center
-       :alt: Notify orders department
+       :alt: Disabling an email notification about a certain order status.
 
    After that email notifications about orders getting this status won't be sent to the orders department.
 
@@ -54,4 +54,4 @@ When Email Template Editor is Disabled
 
    .. image:: img/notifications.png
        :align: center
-       :alt: Notify orders department
+       :alt: Unticking the "Notify orders department" checkbox.

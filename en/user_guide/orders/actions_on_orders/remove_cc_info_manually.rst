@@ -2,13 +2,11 @@
 How To: Remove Credit Card Information From Order Manually
 **********************************************************
 
-To remove credit card information from an order manually:
+#. Go to **Orders → View orders** in the Administration panel of your store.
 
-#. In the Administration panel, go to **Orders → View orders**.
+#. Find the order which contains credit card information and click on the ID of that order.
 
-#. Find the order which contains credit card information and click on its name.
-
-#. In the section with credit card info click the **Remove CC info** button.
+#. Click the **Remove CC info** button in the section with credit card info.
 
    .. image:: img/cc_info.png
        :align: center
