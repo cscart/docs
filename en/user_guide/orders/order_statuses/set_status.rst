@@ -10,17 +10,17 @@ How To: Set up an Order Status
 
    * edit an existing status by clicking its name.
 
-   .. important ::
+   .. important::
 
-       Your store can have up to 26 order statuses at the same time, as the database uses letters to identify them.
+       You can have up to 26 order statuses at the same time, as the database uses letters to identify them.
 
    .. image:: img/order_status_02.png
        :align: center
-       :alt: Add status
+       :alt: Adding a new order status in CS-Cart.
 
 #. Specify the status properties.
 
-#. Click the **Save** button.
+#. Click the **Create** or **Save** button.
 
 =================
 Status Properties
@@ -38,15 +38,11 @@ Status Properties
 
 * **E-mail header***—the actual text of an e-mail notification about the order with the status.
 
-* **Color**—the color of this status on the order list in the Administration panel. There are two ways to set it up:
+* **Color**—the color of this status on the order list in the Administration panel.
 
-  * Enter an RGB code into the text field.
+* **Notify customer***—tick this checkbox to inform the customer by email about an order getting this status.
 
-  * Click the palette icon pick the color from the palette.
-
-* **Notify customer***—tick this checkbox to inform the customer by email about placing the order with this status or changing the order information.
-
-* **Notify orders department***—tick this checkbox to inform the store administrator by email about placing the order with this status.
+* **Notify orders department***—tick this checkbox to inform the store administrator by email about an order getting this status.
 
   .. note::
 
@@ -68,7 +64,7 @@ Status Properties
 
    * *Invoice*—the order has been paid and processed successfully (an invoice ID is generated); 
 
-   * *Order*—the order has been placed, but not paid out; 
+   * *Order*—the order was placed, but has not paid for yet; 
 
    * *Credit memo*—the order has been paid and processed, but then returned (a credit memo ID is generated).
 
@@ -78,7 +74,7 @@ Status Properties
 
 * **Notify supplier**—tick this checkbox to send automatic email notifications to suppliers once an order gets this status. The notifications will be sent to suppliers whose products are in the order.
 
-* **Change gift certificate status to**—choose a status to be automatically assigned to gift certificates included in an order with this status.
+* **Change gift certificate status to**—choose a status to be automatically assigned to gift certificates purchased as a part of an order that gets this order status.
 
 * **Allow return registration**—tick this checkbox to allow customers to request a return if the order has this status.
 

@@ -8,7 +8,7 @@ To add a tracking code to the Order landing page:
     
    *design/themes/[CUSTOMER_ACTIVE_THEME]/templates/addons/my_changes/hooks/checkout*
 
-   * ``[CUSTOMER_ACTIVE_THEME]`` is the active theme of your storefront.
+   * Replace ``[CUSTOMER_ACTIVE_THEME]`` with the folder name of the theme that is currently active on the storefront.
 
 #. Create the **order_confirmation.override.tpl** file with the necessary content in *design/themes/[CUSTOMER_ACTIVE_THEME]/templates/addons/my_changes/hooks/checkout*.
 
