@@ -8,13 +8,11 @@ By default, the credit card information is removed automatically for orders with
 
 #. Click on the name of the status.
 
-#. Tick the **Remove CC info** check box.
+#. Tick the **Remove CC info** checkbox.
 
 #. Click **Save**.
 
-   .. note ::
-
-       When an order has a status for which the **Remove CC info** option is enabled, the credit card information of this order will be removed.
+   When an order gets a status for which the **Remove CC info**  setting turned on, the credit card information will be removed from that order.
 
    .. image:: img/remove_cc_info.png
        :align: center

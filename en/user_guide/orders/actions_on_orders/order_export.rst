@@ -1,8 +1,12 @@
-************
-Order Export
-************
+*********************
+How To: Export Orders
+*********************
 
 #. In the Administration panel, go to **Administration → Export data → Orders**.
+
+   .. important::
+
+       The **Orders** tab is open by default; it allows you to export customer information and all data about orders, except for the products in those orders. Products can be exported from the **Order items** tab.
 
 #. (optional) If you only want to export some specific orders, then:
 
@@ -15,10 +19,6 @@ Order Export
    * You'll be taken back to the **Export data** page, but this time only specific orders will be selected for export.
 
 #. Make sure that all the fields you want to export are in the **Exported fields** box; move other fields to the **Available fields** box.
-
-   .. important::
-
-       The **Orders** tab is open by default; it allows you to export customer information and all data about orders, except for the products in those orders. Products can be exported from the **Order items** tab.
 
    .. image:: img/order_exported_fields.png
        :align: center

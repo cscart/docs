@@ -1,6 +1,6 @@
-************
-Order Import
-************
+*********************
+How To: Import Orders
+*********************
 
 #. In the Administration panel, go to **Administration → Import data → Orders**.
 
@@ -8,7 +8,7 @@ Order Import
 
    .. important ::
 
-       The **Orders** tab is open by default; it allows you to export customer information and all data about orders, except for the products in those orders. Products can be exported from the **Order items** tab.
+       The **Orders** tab is open by default; it allows you to import customer information and all data about orders, except for the products in those orders. Products can be imported from the **Order items** tab.
 
 #. Specify the following settings:
 

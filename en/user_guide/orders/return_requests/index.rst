@@ -2,7 +2,7 @@
 Return Requests
 ***************
 
-The **Orders → Return requests** page allows you to handle product return requests that your customers have registered. It allso allows you to configure the general product return policy of your store.
+The **Orders → Return requests** page allows you to handle product return requests that your customers have registered. It also allows you to configure the general product return policy of your store.
 
 .. note::
 

@@ -14,10 +14,6 @@ View Order Details
 
 #. If you make any changes on this page, click **Save changes**.
 
-   .. note::
-
-       The change of order status is applied instantly.
-
    .. image:: img/order_details_page.png
         :align: center
         :alt: You can add comments to the order, assign a manager, and create shipments.

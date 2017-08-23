@@ -6,11 +6,11 @@ How To: Allow Customer to Pay for Order Once Again
 
 #. Click on the name of a status.
 
-#. Select the **Pay order again** check box and click the **Save** button to save the changes.
+#. Tick the **Pay order again** checkbox.
 
-   .. note ::
+#. Click the **Save** button.
 
-       If an order has one of the statuses for which the administrator enabled the **Pay order again** option, the **Pay order** section will be displayed under the order on the order details page on the storefront, and the customer will be able to pay for it once again.
+   If an order has one of the statuses with the **Pay order again** setting turned on, the customer will be able to pay for the order again on the order details page on the storefront.
 
    .. image:: img/pay_order_again.png
        :align: center
