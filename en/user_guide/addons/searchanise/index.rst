@@ -2,11 +2,14 @@
 Searchanise
 ***********
 
-.. note ::
-
-	The official Searchanise documentation is available at `searchanise.com <http://docs.searchanise.com/dev/>`_.
-
 The **Searchanise** add-on integrates CS-Cart with the SaaS-solution of the same name. It adds enhanced instant product search to the storefront by replacing its regular search bar with a special search widget. Shoppers see search results as they type in the search bar, and can quickly review the found products. So, customers can get to the right product way much faster because they don’t even have to finish typing while the preview box forms the first impression of the product.
+
+To set up the **Searchanise** add-on:
+#. In the administration panel go to **Add-ons → Manage add-ons**.
+#. Switch to the **Browse all available add-ons** tab.
+#. Find the **Searchanise** add-on and click the **Install** button next to it.
+#. Once the add-on is installed, find it on the list of add-ons and click on its name.
+#. Click the **Connect Store to Searchanise** button.
 
 Searchanise can search through products, categories and pages (i.e., blog posts) in your store.
 
