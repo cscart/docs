@@ -8,27 +8,23 @@ If the administrator doesn't receive emails with order notifications, here's wha
 Check The Settings
 ==================
 
-#. Make sure that the **Notify orders department** checkbox is ticked for the desired order status on the :doc:`Order statuses </user_guide/orders/order_statuses/set_status>` page.
+#. Go to **Administration → Order statuses** and make sure that the **Notify orders department** checkbox is ticked for the :doc:`order statuses </user_guide/orders/order_statuses/set_status>` that the administrators should be informed about.
 
-#. Make sure that the administrator e-mail is set up:
-
-   * In the Administration panel, go to **Settings → Company**.
-
-   * Make sure that the administrator e-mail address is entered in the **Order department e-mail address** field on the opened page.
+#. Go to **Settings → Company** and make sure that the administrator e-mail address is entered in the **Order department e-mail address** field.
 
 ===========================
 Check if Emails Can be Sent
 ===========================
 
-#. In the Administration panel, go to **Settings → E-mails**. 
+#. Go to **Settings → E-mails**. 
 
-#. Check what method of sending e-mails you use. Your further actions depend on which **Method of sending e-mails** you have selected.
+#. Your further actions depend on which **Method of sending e-mails** you have selected.
 
 ---------------------
 Via PHP mail Function
 ---------------------
 
-Check whether the standard PHP ``mail`` function works properly on your site:
+Check whether the standard PHP ``mail`` function works properly on your server:
 
 #. Create a **mail.php** file in the root directory of your CS-Cart installation.
 
@@ -59,23 +55,23 @@ Check whether the standard PHP ``mail`` function works properly on your site:
 
 #. Run this script by opening the following link: *http://www.your_domain.com/your_cscart_directory/mail.php*. 
 
-   Make sure to replace *your_domain.com* with the name of your domain, and *your_cscart_directory* with the name of the directory where CS-Cart is installed on your server as seen from the Web (if applicable). For example:
+   Replace *your_domain.com* with the name of your domain, and *your_cscart_directory* with the name of the directory where CS-Cart is installed on your server as seen from the Web (if applicable). For example:
 
-   * http://example.com/mail.php (if your store is available directly at http://example.com)
+   * *http://example.com/mail.php* (if your store is available directly at *http://example.com*)
 
-   * http://example.com/store/mail.php (if your store is available at http://example.com/store)
+   * *http://example.com/store/mail.php* (if your store is available at *http://example.com/store*)
 
-   The test script will attempt to send an e-mail from the *order@domain.com* to *your_email@domain.com*.
+   The script will attempt to send an e-mail from the *order@domain.com* to *your_email@domain.com*.
 
 #. Check the results.
 
-   * If you see **1** as a result of running the script, it means that the e-mail was sent properly, and the standard ``mail`` PHP function works correctly on your server. If the letter wasn't received, here are some possible reasons for that:
+   * If you see **1** as a result of running the script, it means that the e-mail was sent properly, and the standard ``mail`` PHP function works correctly on your server. If the email wasn't received, please contact your mail server administrator to determine the cause of the problem and solve it. Here are some possible causes:
 
      * The recipient's address is incorrect.
 
      * The recipient's inbox is full.
 
-     * The recipient hasn't entered checked the inbox in the last 3 months.
+     * The recipient hasn't checked the inbox in the last 3 months.
 
      * The message size exceeded the fixed maximum message size that was defined on the server.
 
@@ -83,7 +79,7 @@ Check whether the standard PHP ``mail`` function works properly on your site:
 
      * The sender host is in the server's black list.
 
-     Please contact your mail server administrator about it.
+     
 
    * If you see **0** as a result of running the scrip, it means that the standard ``mail`` PHP function does not work on your server. Contact your server administrator in this case.
 

@@ -26,7 +26,7 @@ The *Requested* status is automatically assigned to all newly-submitted requests
 
    * **E-mail subject**—the subject of an email message that is sent to customers automatically when the request gets this status.
 
-   * **E-mail header**—the header of an email message that is sent to customers automatically when the request gets this status.
+   * **E-mail header**—the text of an email message that is sent to customers automatically when the request gets this status.
 
    * **Inventory**—choose whether to decrease or increase the number of items in stock for products included in the return request.
 	
@@ -34,4 +34,4 @@ The *Requested* status is automatically assigned to all newly-submitted requests
 
    .. note::
 
-       You can also edit or delete statuses by using the **gear button** and choosing the required action from the drop-down menu. Default statuses can not be deleted.
+       You can also edit or delete statuses: click the **gear button** while hovering the mouse pointer over the status and choose the required action. Default statuses can not be deleted.

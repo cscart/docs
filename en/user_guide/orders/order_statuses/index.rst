@@ -4,13 +4,13 @@ Order Statuses
 
 .. important::
 
-    If your CS-Cart installations has :doc:`multiple storefronts </user_guide/stores/index>`, you need to be in the root administrator mode to add order statuses.
+    If your CS-Cart installations has :doc:`multiple storefronts </user_guide/stores/index>`, you need to be in the **All stores** mode to add order statuses.
 
 The **Administration → Order statuses** page allows you to adjust the default set of order statuses. You can edit the details of the existing statuses as well as add custom statuses.
 
 .. note::
 
-    Your store can have up to 26 order statuses at the same time, as the database uses letters to identify them.
+    You can have up to 26 order statuses at the same time, as the database uses letters to identify them.
 
 The following statuses are available by default and cannot be deleted:
 
@@ -28,7 +28,7 @@ The following statuses are available by default and cannot be deleted:
 
 * **Canceled**—the order was canceled by the customer.
 
-* **Awaiting call**—the order was created and customer sent a call request. This status is associated with the :doc:`Call requests </user_guide/addons/call_requests/index>` add-on.
+* **Awaiting call**—the order was placed when the customer sent a call request. This status is associated with the :doc:`Call requests </user_guide/addons/call_requests/index>` add-on.
 
 There is also one hidden initial status—**Incomplete**. It means that the order was created in the store database, and the system is awaiting the response from a payment method. This status cannot be set by administrator.
 

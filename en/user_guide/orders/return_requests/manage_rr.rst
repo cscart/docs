@@ -10,15 +10,13 @@ To handle a particular request, click the gear button corresponding to the reque
 
 * **Declined products information**—the list of products from the request that are or will be declined for the return.
 
-* **Comments**—the comments about the requested return.
+* **Comments**—the comments about the requested return; the customer will be able to see these comments.
 
-* **Actions**—the actions that you can perform on the return request to handle it.
+* **Actions**—the actions that you can perform on the return request.
 
 =======================
 Change a Request Status
 =======================
-
-To change the status of a return request:
 
 #. Go to **Orders → Return requests**.
 
@@ -72,7 +70,9 @@ To print a slip for an individual request:
 
 #. Click on the ID of the request.
 
-#. Click the gear button in the top right part of the page and choose **Print slip**.
+#. Click the gear button in the top right part of the page.
+
+#. Choose **Print slip**.
 
 To print packing slips for several requests at a time:
 
@@ -80,19 +80,19 @@ To print packing slips for several requests at a time:
 
 #. Tick the checkboxes of the requests.
 
-#. Click the gear button in the upper right part of the page, and choose **Packing slip bulk print**.
+#. Click the gear button in the upper right part of the page.
+
+#. Choose **Packing slip bulk print**.
 
    .. important::
 
        A packing slip includes only those products that are approved for the return.
 
-===============================
-Issue a Credit/Gift Certificate
-===============================
+========================
+Issue a Gift Certificate
+========================
 
-For each approved product from a return request, you can issue a gift certificate which covers exactly the cost of the returned product. Alternatively, you can issue one gift certificate for all approved products from the request. In this case, the certificate's worth will be the same as the original subtotal of the returned products.
-
-To issue a gift certificate:
+You can issue gift certificates to cover the cost of all or some of the products approved for return. To issue a gift certificate:
 
 #. Go to **Orders → Return requests**.
 
@@ -102,6 +102,4 @@ To issue a gift certificate:
 
 #. Click the **Create gift certificate** button above the list of approved products.
 
-#. If prompted, confirm the action.
-
-The code of the new certificate will appear above the tabs.
+#. If prompted, confirm the action. The code of the new certificate will appear above the tabs.

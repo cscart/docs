@@ -6,13 +6,13 @@ When you open the **Orders → View orders** section, the system automatically l
 
 .. hint::
 
-    Click on the name of the corresponding column to sort orders by IDs, statuses, names, totals, or email addresses of users who placed the orders.
+    Click on the name of the corresponding column to sort orders by their IDs, statuses, and totals, as well as phone numbers, email addresses, or names of users who placed the orders.
 
 .. image:: img/view_orders.png
     :align: center
     :alt: View the list of orders in the Administration panel under Orders → View orders.
 
-Use the search form on the right to display only those orders that satisfy a certain criterion or a combination of multiple criteria. By default, the form allows you to filter orders by:
+Use the search form on the right to display only those orders that meet certain criteria. By default, the form allows you to filter orders by:
 
 * customer's name.
 
@@ -30,9 +30,9 @@ If you filter orders against a particular search pattern regularly (e.g., to lis
     :align: center
     :alt: Saved searches.
 
-In the **View orders** section, you can do the following:
+The **View orders** page allows you to:
 
-* Display a sorted list of all orders in the store or display a filtered list of orders that meets your search pattern only.
+* View all orders in the store, or just the orders that meet your search requirements.
 
 * View incomplete orders by clicking the gear button and choosing **Incomplete orders**.
 	
@@ -44,7 +44,7 @@ In the **View orders** section, you can do the following:
 
 * View and edit order details.
 
-* Add comments to the order which are visible to the customer who placed the order.
+* Add comments to an order; these comments may or may not be visible to the customer who placed the order.
 
 * Export order details in the CSV format. The :doc:`MYOB </user_guide/addons/myob/index>` and :doc:`Quickbooks </user_guide/addons/quickbooks/index>` add-ons allow you to export order details in other formats. 
 
