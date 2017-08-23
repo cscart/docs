@@ -15,6 +15,7 @@
     files/index
     logs/index
     manage_products/index
+    orders/index
     marketing/index
     payment_methods/index
     shipping_and_taxes/index
