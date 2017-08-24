@@ -8,7 +8,9 @@
     
    *design/themes/[CUSTOMER_ACTIVE_THEME]/templates/addons/my_changes/hooks/checkout*
 
-   * Замените ``[CUSTOMER_ACTIVE_THEME]`` на папку с названием темы, которая включена у вас на витрине.
+   .. note::
+
+       Замените ``[CUSTOMER_ACTIVE_THEME]`` на папку с названием темы, которая включена у вас на витрине.
 
 #. Создайте файл **order_confirmation.override.tpl** с нужным содержимым в папке *design/themes/[CUSTOMER_ACTIVE_THEME]/templates/addons/my_changes/hooks/checkout*.
 
