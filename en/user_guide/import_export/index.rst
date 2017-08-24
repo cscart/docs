@@ -13,3 +13,5 @@ To import or export data, go to **Administration → Import data** or **Administ
 
     about_import_and_export
     /user_guide/manage_products/import_export/index
+    order_import_export
+

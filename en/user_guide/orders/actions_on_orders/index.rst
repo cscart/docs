@@ -57,9 +57,20 @@ If you configure the statuses, then invoice IDs and credit memo IDs will be gene
 In This Section
 ===============
 
+===============
+In This Section
+===============
+
 .. toctree::
     :maxdepth: 2
     :titlesonly:
     :glob:
 
-    *
+    view_orders
+    quick_actions
+    order_status
+    order_details
+    remove_cc_info_manually
+    initial_order_id
+    sales_tracking_code
+    notifications

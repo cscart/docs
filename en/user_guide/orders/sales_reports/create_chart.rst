@@ -43,7 +43,7 @@ To add a chart to a report:
    * Use the other tabs to filter or limit chart content:
 
      * *Orders*,
-     * **Statuses of orders*,
+     * *Statuses of orders*,
      * *Payment methods*,
      * *Locations*, 
      * *Users*, 

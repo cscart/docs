@@ -22,7 +22,7 @@ To set up an order status:
 
    * **Status**—the letter that identifies the status in the database.
 
-   * **E-mail subject*—the subject of an e-mail notification about the order with this status.
+   * **E-mail subject**—the subject of an e-mail notification about the order with this status.
 
    * **E-mail header**—the actual text of an e-mail notification about the order with the status.
 
