@@ -62,4 +62,14 @@
     :titlesonly:
     :glob:
 
-    *
+    view_orders
+    quick_actions
+    order_status
+    order_details
+    copy_orders
+    assign_manager
+    remove_cc_info_manually
+    initial_order_id
+    sales_tracking_code
+    notifications
+
