@@ -2,34 +2,54 @@
 How To: View and Edit Order Details
 ***********************************
 
-To **display** order details, click the gear of the order that you want to review and choose **View**. This opens the order details page.
+==================
+View Order Details
+==================
 
-.. image:: img/orders_06.png
-    :align: center
-    :alt: View order
+#. Go to **Orders → View orders** in the Administration panel of your store.
 
-Here you can add comments to the order and define shipment details.
+#. Click on the ID of the order you'd like to view.
 
-To **edit** the order details, click the gear button and choose **Edit**. This opens an editing order details page.
+#. The page with the order details will open. Here you can add comments to the order, create shipments, and assign a manager to the order.
+
+#. If you make any changes on this page, click **Save changes**.
+
+   .. image:: img/order_details_page.png
+        :align: center
+        :alt: You can add comments to the order, assign a manager, and create shipments.
+
+==================
+Edit Order Details
+==================
 
 .. important::
 
-    When editing an order, the promotions that apply to the order may be recalculated. To find out more about promotion recalculation and disabling it, please read :doc:`this article </user_guide/manage_products/promotions/promotion_recalculation>`.
+    When you edit an order, the promotions that apply to the order may be recalculated. To find out more about promotion recalculation and disabling it, please read :doc:`this article </user_guide/manage_products/promotions/promotion_recalculation>`.
 
-.. image:: img/orders_07.png
-    :align: center
-    :alt: Edit order
+#. Click the **gear** button in the upper right part of the page.
 
-Here you can edit the set of products in the order:
+#. Choose the **Edit order** action, and the order editing page will open.
 
-* To remove a product from the order, hover the mouse pointer over the required product and click the trash can icon.
+   .. image:: img/order_editing_page.png
+       :align: center
+       :alt: The order editing page
 
-* To add new products, click the **Add product** button above the list.
+   You can perform the following actions:
 
-You can also change the product cost as it appears in the order. This doesn't affect the product cost in the catalog. You can also edit the product clicking on a product name.
+   * **Add a product to the order:** click the **Add product** button and use the pop-up window to find and add the desired products.
 
-In the left sidebar, you can edit customer's contact info together with the billing and shipping address. To do it, click the edit icon in the right upper corner of the corresponding section.
+   * **Remove a product from the order:** hover the mouse pointer over the product and click the **trash can** icon.
 
-In the right smaller field of the page, you can change the payment method and the shipping method choosing the desired method from the drop-down menu. You can also change the order status here. To change the status, click on it and choose another status from the drop-down menu.
+   * **Change the price of a product in the order:** tick the **Price** checkbox and edit the price. This will affect the price of the product only for this particular order, and not the price in the catalog.
 
-In this section you can also apply a discount coupon and edit the applied tax rate.
+     .. hint::
+
+         If you want to edit the product in the catalog, click on the product's name.
+
+   * **Edit customer's information and address:** click one of the **Edit** icons on the panel on the left, change the data in the pop-up window, then click **Update**.
+
+   * **Choose payment method/shipping method/order status:** use the drop-down menus on the panel on the right.
+
+   * **Apply a coupon code or gift certificate:** enter the coupon code or select the gift certificate under the list of products in the order.
+
+#. Once you've made the changes, click **Save**.
