@@ -11,4 +11,5 @@ CS-Cart поддерживает импорт и экспорт данных в 
 
     about_import_and_export
     /user_guide/manage_products/import_export/index
+    order_import_export
 
