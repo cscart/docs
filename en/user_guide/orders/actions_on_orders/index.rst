@@ -57,10 +57,6 @@ If you configure the statuses, then invoice IDs and credit memo IDs will be gene
 In This Section
 ===============
 
-===============
-In This Section
-===============
-
 .. toctree::
     :maxdepth: 2
     :titlesonly:
