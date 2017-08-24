@@ -49,4 +49,8 @@ In This Section
     :titlesonly:
     :glob:
 
-    *
+    set_status
+    disable_notifications
+    allow_repay
+    remove_cc_info_auto
+    order_failed
