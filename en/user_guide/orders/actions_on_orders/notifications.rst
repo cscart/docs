@@ -81,7 +81,7 @@ Check whether the standard PHP ``mail`` function works properly on your server:
 
      
 
-   * If you see **0** as a result of running the scrip, it means that the standard ``mail`` PHP function does not work on your server. Contact your server administrator in this case.
+   * If you see **0** as a result of running the script, it means that the standard ``mail`` PHP function does not work on your server. Contact your server administrator in this case.
 
 ---------------
 Via SMTP Server
