@@ -2,7 +2,7 @@
 How To: Remove Credit Card Information from Orders Automatically
 ****************************************************************
 
-By default, the credit card information is removed automatically for orders with any status. But if you have created a new order status and you want the credit card information to be removed automatically:
+By default, credit card information is removed automatically from orders with any status. But if you have created a new order status and you want the credit card information to be removed from orders with that status automatically:
 
 #. In the Administration panel, go to **Administration → Order statuses**.
 

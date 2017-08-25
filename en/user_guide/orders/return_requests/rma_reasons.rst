@@ -2,7 +2,7 @@
 RMA Reasons
 ***********
 
-When submitting a return request, customers are asked to specify a reason why they want to return a particular product. The store administrator can adjust the default set of reasons by adding or removing reasons. It is also possible to enable or disable a certain reason, which is useful when you need to temporarily deactivate the reason, but plan to use it again later.
+When submitting a return request, customers are asked to specify a reason why they want to return a particular product. The store administrator can add or remove possible reasons from the list, or disable reasons temporarily, if necessary.
 
 ==========================
 Adding a Reason for Return
@@ -10,7 +10,7 @@ Adding a Reason for Return
 
 #. Go to **Orders → Return requests**.
 
-#. Click the gear button in the right upper part of the page and choose **RMA reasons**.
+#. Click the gear button in the upper right part of the page and choose **RMA reasons**.
 
 #. Click the **+** button. This will open a form where you'll be able to specify the details of the new reason:
 
@@ -28,10 +28,10 @@ Enabling/Disabling a Reason
 
 #. Go to **Orders → Return requests**.
 
-#. Click the gear button in the right upper part of the page and choose **RMA reasons**.
+#. Click the gear button in the upper right part of the page and choose **RMA reasons**.
 
 #. Click on the status of the reason and choose the desired status.
 
 .. hint::
 
-    You can also change the wording of the reason and it's position.
+    You can also change the wording of the reason and its position.

@@ -70,7 +70,7 @@ To print a slip for an individual request:
 
 #. Click on the ID of the request.
 
-#. Click the gear button in the top right part of the page.
+#. Click the gear button in the upper right part of the page.
 
 #. Choose **Print slip**.
 
