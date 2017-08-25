@@ -20,7 +20,7 @@ Each status can have one of the following values for this setting:
 
 * **Credit memo**—the order was paid and processed, but then got returned; a credit memo ID is generated.
 
-If you configure the statuses, then invoice IDs and credit memo IDs will be generated sequentially for the orders that get this status:
+If you configure this setting for order statuses, then invoice IDs and credit memo IDs will be generated sequentially for the orders that get the appropriate status:
 
 
 .. list-table::

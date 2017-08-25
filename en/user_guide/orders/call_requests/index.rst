@@ -14,7 +14,7 @@ The list of call requests is available on the **Orders → Call requests** page.
 
 .. note::
 
-    Every call request contains links to any products that are in the customer's cart at the moment when the request is made.
+    Every call request contains links to all products that are in the customer's cart at the moment when the request is made.
 
 The add-on also enables you to add **Buy now with 1-click** links to all products in your store. When a customer clicks such a link on the product details page and fills in the form, a call request will be generated as well. In addition to all the products in the cart, this call request will include a separate link to the selected product.
 
@@ -48,4 +48,4 @@ To change a request status, click on the current one in the **Status** column an
 
 * **No answer**—the call was made, but there was no answer.
 
-To delete a call request, hover the mouse pointer over it. You will see a gear button. Click it and choose **Delete**. To delete multiple requests at once, tick the checkboxes on the left, click the gear button in the right top part of the page, and choose **Delete selected**.
+To delete a call request, hover the mouse pointer over it. You will see a gear button. Click it and choose **Delete**. To delete multiple requests at once, tick the checkboxes on the left, click the gear button in the upper right part of the page, and choose **Delete selected**.
