@@ -16,9 +16,9 @@ The *Requested* status is automatically assigned to all newly-submitted requests
 
 #. Go to **Orders → Return requests**.
 
-#. Click the gear button in the right upper corner of the page and choose **RMA request statuses**.
+#. Click the gear button in the upper right part of the page and choose **RMA request statuses**.
 
-#. Click the **+** button in the right upper corner of the page and choose **Add status**. 
+#. Click the **+** button in the upper right part of the page and choose **Add status**. 
 
 #. A pop-up window will open. Fill in the form:
 
