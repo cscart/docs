@@ -2,7 +2,7 @@
 Quick Actions
 *************
 
-The **Orders → View orders** page allows you to carry out many routine tasks for multiple orders including bulk order exporting and invoice printing in one click.
+The **Orders → View orders** page allows you to carry out many routine tasks for multiple orders, including bulk order exporting and invoice printing in one click.
 
 #. Tick the checkboxes of the orders you want to take action on.
 
