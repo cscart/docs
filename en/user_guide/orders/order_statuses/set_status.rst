@@ -26,7 +26,7 @@ To set up an order status:
 
    * **E-mail header**—the actual text of an e-mail notification about the order with the status.
 
-   * **Color**—the color to be used for this status the Administration panel. Either enter an RGB code into the text field, or click the palette icon to open a palette and pick the color.
+   * **Color**—the color to be used for this status the Administration panel.
 
    * **Notify customer**—tick this checkbox to inform the customer by email about an order getting this status.
     
