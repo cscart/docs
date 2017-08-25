@@ -10,15 +10,25 @@ Check The Settings
 
 #. Go to **Settings → Appearance** and check the value of the **Email templates mode** setting.
 
-   * If the value is **New**: go to **Design → Email templates**, switch to the **Administrator notifications** tab, and make sure that the templates that the necessary **Order notification: X** templates are active.
+   * If the value is **New**:
 
-   * If the value is **Old**: go to **Administration → Order statuses** and make sure that the **Notify orders department** checkbox is ticked for the :doc:`order statuses </user_guide/orders/order_statuses/set_status>` that the administrators should be informed about.
+     * Go to **Design → Email templates**.
 
-#. Make sure that the administrator e-mail is set up:
+     * Switch to the **Administrator notifications** tab. 
+
+     * Make sure that the necessary **Order notification: X** templates are active.
+
+   * If the value is **Old**: 
+
+     * Go to **Administration → Order statuses**.
+
+     * Make sure that the **Notify orders department** checkbox is ticked for the :doc:`order statuses </user_guide/orders/order_statuses/set_status>` that the administrators should be informed about.
+
+#. Check that the e-mail address for receiving notifications is set up:
 
    * Go to **Settings → Company**.
 
-   * Make sure that the administrator e-mail address is entered in the **Order department e-mail address** field.
+   * Make sure that the right e-mail address is entered in the **Order department e-mail address** field.
 
 ===========================
 Check if Emails Can be Sent
@@ -87,9 +97,7 @@ Check whether the standard PHP ``mail`` function works properly on your server:
 
      * The sender host is in the server's black list.
 
-     
-
-   * If you see **0** as a result of running the scrip, it means that the standard ``mail`` PHP function does not work on your server. Contact your server administrator in this case.
+   * If you see **0** as a result of running the script, it means that the standard ``mail`` PHP function does not work on your server. Contact your server administrator in this case.
 
 ---------------
 Via SMTP Server
