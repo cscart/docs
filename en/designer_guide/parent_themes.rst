@@ -69,3 +69,47 @@ Theme-related files (such as styles, templates, etc.) from add-ons are installed
 For example, the content of *var/themes_repository/responsive/templates/addons/[addon]* will be copied only to *design/themes/responsive/templates/addons/[addon]*.
 
 Add-ons that provide template files only for the **Basic** theme will be usable only in the **Basic** theme and the themes that depend on it. CS-Cart will not fall back to the templates of the **Basic** theme when the required templates are missing in the current theme.
+
+=====================================
+Using TPL Hooks from Responsive Theme
+=====================================
+
+Every theme can use the handlers of :doc:`template hooks </developer_guide/addons/hooking/tpl_hooks>` from the Responsive theme, even if Responsive isn't the theme's parent. That way add-ons that provide templates only for the Responsive theme can work with other themes to some extent.
+
+Let's assume we have the following structure of files and directories:
+
+.. code-block:: none
+
+    design
+    └── themes
+        ├── child
+        │   └── templates
+        │       └── addons
+        │           └── styles_fixer
+        │               └── hooks
+        │                   └── index
+        │                       └── styles.post.tpl
+        ├── parent
+        │   └── templates
+        │       └── addons
+        │           └── styles_fixer
+        │               └── hooks
+        │                   └── index
+        │                       └── styles.post.tpl
+        └── responsive
+            └── templates
+                └── addons
+                    └── styles_fixer
+                        └── hooks
+                            └── index
+                                └── styles.post.tpl
+
+The active theme is **child**, and it depends on the **parent** theme. In this case CS-Cart/Multi-Vendor will search for the handler of the ``index:styles`` in themes in the following order: **child → parent → responsive**. The first found handler will be used.
+
+.. note::
+
+    If the Responsive theme isn't installed in the store, the search for TPL hook handlers won't be performed in Responsive.
+
+.. image:: img/template_hook_handlers.png
+    :align: center
+    :alt: The logic of search for SMARTY hook handlers in themes in CS-Cart/Multi-Vendor.

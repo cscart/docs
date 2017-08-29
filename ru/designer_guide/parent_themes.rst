@@ -69,3 +69,46 @@
 Например, содержимое *var/themes_repository/responsive/templates/addons/[addon]* будет скопировано только в папку *design/themes/responsive/templates/addons/[addon]*.
 
 Модули, добавляющие файлы шаблонов в тему **Basic**, будут корректно работать  только в теме **Basic** и темах, зависимых от неё. Если необходимые шаблоны отсутствуют в текущей теме, CS-Cart не будет использовать шаблоны темы **Basic**.
+
+==========================================
+Использование TPL-хуков от темы Responsive
+==========================================
+
+Любая тема, независимо от того, является она зависимой от Responsive или нет, может использовать обработчики :doc:`SMARTY-хуков </developer_guide/addons/hooking/tpl_hooks>` из темы Responsive. Так модули, предоставляющие шаблоны только для стандартной темы Responsive, в той или иной мере могут работать в других темах.
+
+Предположим, у нас есть такая структура файлов:
+
+.. code-block:: none
+
+    design
+    └── themes
+        ├── child
+        │   └── templates
+        │       └── addons
+        │           └── styles_fixer
+        │               └── hooks
+        │                   └── index
+        │                       └── styles.post.tpl
+        ├── parent
+        │   └── templates
+        │       └── addons
+        │           └── styles_fixer
+        │               └── hooks
+        │                   └── index
+        │                       └── styles.post.tpl
+        └── responsive
+            └── templates
+                └── addons
+                    └── styles_fixer
+                        └── hooks
+                            └── index
+                                └── styles.post.tpl
+
+Активная тема — **child**, её родитель — **parent**. Тогда обработчик хука ``index:styles`` ищется в темах следующем порядке: **child → parent → responsive**. Используется первый из найденных обработчиков.
+
+.. note::
+
+    Если тема Responsive не установлена в магазине, то поиск обработчиков хуков в ней не выполняется.
+
+.. fancybox:: img/template_hook_handlers.png
+    :alt: Логика использования обработчиков хуков в родительских и дочерних темах в CS-Cart.
