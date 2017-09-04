@@ -2,6 +2,14 @@
 How To: Create a New Administrator Group
 ****************************************
 
+..note::
+
+    Only the root administrator can assign user groups to other administrators. The root administrator is the administrator that is created by the system after the CS-Cart installation process is finished.
+
+..note::
+
+    In case your root administrator has limited priviliges, first, make sure that your administrator account isn't a part of any user group. Then check the ``cscart_users`` table in the database and make sure that the ``is_root`` field for your administrator account is set to **Y**.
+
 You may want to limit what a certain administrator can do. This can be done by creating a new administrator group with limited rights and assigning it to the administrator.
 
 ===========================
