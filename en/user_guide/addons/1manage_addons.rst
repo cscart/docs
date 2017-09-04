@@ -39,6 +39,14 @@ To configure an add-on:
 Uploading add-ons from archive
 ******************************
 
+.. note::
+
+    Only the root administrator can upload add-ons from archive. The **+** button is not displayed for other types of administrators.
+
+.. note::
+
+    The root administrator is the default administrator that is created by the system after the CS-Cart installation process has finished. You can check whether you administrator account is root or not. Find the ``cscart_users`` table in the database and make sure that the ``is_root`` field for your administrator account is set to **Y**.
+
 To upload a new add-on:
 
 *	Click the **+** button in the right upper corner of the page.
