@@ -13,4 +13,5 @@
     resolve_conflicts
     cscart_not_found
     upgrade_via_console
+    possible_upgrade_issues
     apply_diff_file
