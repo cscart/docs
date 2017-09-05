@@ -20,6 +20,10 @@ You can also make minor changes to a specific invoice and send it in a separate 
 
 5. The editing page will open, and you’ll be able to edit the following things:
 
+   .. note::
+      
+       If a document is directly embeded into the body of an email, it adopts the style of this email. This means that the document on preview might differ from the document in the email.
+
    * **Subject**—the subject of the email that will contain the invoice.
 
    * **Email**—the email address to which the invoice will be sent. Multiple addresses can be specified like this: *test1@example.com,test2@example.com*.
