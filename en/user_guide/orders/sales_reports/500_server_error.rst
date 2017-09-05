@@ -2,19 +2,19 @@
 500 Internal Server Error on the Sales Reports Page
 ***************************************************
 
-If you get the **500 Internal Server Error** message on the **Orders → Sales reports** page in the administration panel of your store, it may be because a lot of orders are stored in your database. As a result, it takes a long time and large amount of resources to retrieve the necessary information from the database. The server cannot handle it and returns the **500 Internal Server Error**.
+If you get the **500 Internal Server Error** message on the **Orders → Sales reports** page, it may be because a lot of orders are stored in your database. As a result, it takes a long time and large amount of resources to retrieve the necessary information from the database. The server cannot handle it and returns the error.
 
-To resolve this problem, run the following SQL queries on your server.
+To resolve this problem, run the following SQL queries on your server:
 
-::
+.. code-block:: sql
 
-  UPDATE `cscart_sales_reports` SET `period` = 'D';
-  UPDATE `cscart_sales_reports_table_elements` SET `limit_auto` = '20';
+    UPDATE `cscart_sales_reports` SET `period` = 'D';
+    UPDATE `cscart_sales_reports_table_elements` SET `limit_auto` = '20';
 
 .. note::
 
     You can use **phpMyAdmin** to run those queries.
 
-If the provided information does not help you, please contact `CS-Cart support team <http://www.cs-cart.com/helpdesk>`_.
+If the provided information does not help you, please contact `CS-Cart support team <https://helpdesk.cs-cart.com>`_.
 
 
