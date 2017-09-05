@@ -44,7 +44,7 @@ So far the following types of documents have been implemented:
 
 .. note::
 
-    Please note that the last three document types appear only when you activate the **Gift certificates**, **Suppliers**, and **RMA** add-ons respectively.
+    Please note that the last three document types appear only when you activate the **Gift certificates**, **Suppliers**, and **RMA** add-ons respectively. 
 
 ============================
 Structure of Document Editor
@@ -108,11 +108,11 @@ On the left you’ll see the list of variables and snippets that you can use in 
 
 The **gear** button in the top right corner allows you to perform the following actions:
 
-* **Preview**—generate a document and display it in a popup window.
+* **Preview**—generate a document and display it in a popup window. Document preview uses only the data that exists in the store. For example, to be able to preview an invoice, you need to have at least one order in your store. To preview the invoice of a specific order, use :doc:`these instructions. <tweak_and_send_invoice>`
 
-  .. important::
-
-      Document preview uses only the data that exists in the store. For example, to be able to preview an invoice, you need to have at least one order in your store. To preview the invoice of a specific order, use :doc:`these instructions. <tweak_and_send_invoice>`
+  .. note::
+      
+      If a document is directly embeded into the body of an email, it adopts the style of this email. This means that the document on preview might differ from the document in the email.
 
 * **Export**—export this document along with its snippets to an XML file.
 
