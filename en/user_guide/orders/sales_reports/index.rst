@@ -2,13 +2,15 @@
 Sales Reports
 *************
 
-The **Orders → Sales reports** page contains detailed statistics on the sales that were made in your web store. Statistics may be represented in a form of graphical or tabular charts. For convenience, charts are grouped into separate reports. You are encouraged to use several pre-defined reports or create your own reports.
+The **Orders → Sales reports** page contains detailed statistics on the sales that were made in your web store. Statistics may be represented in a form of graphical or tabular charts. For convenience, charts are grouped into separate reports. You can use several existing reports or create your own.
 
-To switch between the reports, use the menu on the right.
+.. hint::
+
+    To switch between reports, use the menu on the right.
 
 .. image:: img/reports_01.png
     :align: center
-    :alt: Sales reports
+    :alt: Sales reports in CS-Cart and Multi-Vendor.
 
 ===============
 In This Section
