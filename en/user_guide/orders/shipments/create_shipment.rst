@@ -16,7 +16,7 @@ Create a Shipment
 
    .. image:: img/new_shipment.png
        :align: center
-       :alt: Press the New Shipment button in the Shipping Information section to create a new shipment.
+       :alt: Press the Create New Shipment button in the Shipping Information section to create a new shipment.
 
 #. For every product in the order, select the number of items that will be delivered in the current shipment.
 
@@ -50,7 +50,7 @@ View Your Shipments
 
    .. hint::
 
-       Before CS-Cart & Multi-Vendor 4.3.7 you couldn't edit shipments, you could only delete them. Beginning with version 4.3.7, you can edit the comments and the date of the shipment. Remember to click **Save changes** once you've done that.   
+       Before CS-Cart & Multi-Vendor 4.3.7 you couldn't edit shipments, you could only delete them. Beginning with version 4.3.7, you can edit the comments and the date of the shipment. Remember to click **Save changes** once you've done that.
 
    .. image:: img/shipment_details.png
        :align: center

@@ -4,7 +4,7 @@ Shipments
 
 CS-Cart and Multi-Vendor allow you to ship items from a single order in multiple batches and/or at different periods of time. These batches are treated as separate **shipments** of one order. This is useful when you have to deal with back orders regularly.
 
-For example, if a customer orders several items that are out of stock, you can ship the in-stock items once the order has been placed, and send the remaining items at a later date as a separate shipment.
+For example, if a customer orders several items that are out of stock, you can ship the in-stock items right after the order has been placed, and send the remaining items at a later date as a separate shipment.
 
 Depending on whether you allow multiple shipments for one order, the **Shipping Information** section of an order page will look different.
 
@@ -37,7 +37,7 @@ Once the checkbox is ticked, you will be able to :doc:`create shipments <create_
     If you disable the **Allow multiple shipments for a single order** setting, then the **Orders → Shipments** section won't appear on the menu. You can view and delete the shipments you created earlier in the **Shipping Information** section of the associated orders under **Orders → View orders → <Desired Order>**.
 
 ===============
-In this section
+In This Section
 ===============
 
 .. toctree::
