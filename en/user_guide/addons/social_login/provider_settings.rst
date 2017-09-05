@@ -32,7 +32,7 @@ Google
 
 * **Callback URL**—URL that Google will use for the callback in case of successful authorization.
 
-`Learn more about Googe integration <http://hybridauth.sourceforge.net/userguide/IDProvider_info_Google.html>`_ at HybridAuth.Sourceforge.net.
+`Learn more about Googe integration <https://hybridauth.github.io/hybridauth/userguide/IDProvider_info_Google.html>`_ in HybridAuth User Guide.
 
 --------
 Facebook
@@ -42,7 +42,7 @@ Facebook
 
 * **Secret key**—Secret key given to you after creating an application at `Facebook.com <https://developers.facebook.com/apps>`_.
 
-`Learn more about Facebook integration <http://hybridauth.sourceforge.net/userguide/IDProvider_info_Facebook.html>`_ at HybridAuth.Sourceforge.net.
+`Learn more about Facebook integration <https://hybridauth.github.io/hybridauth/userguide/IDProvider_info_Facebook.html>`_ in HybridAuth User Guide.
 
 ------
 PayPal
@@ -68,7 +68,7 @@ Twitter
 
 * **Callback URL**—the URL that Twitter will use for the callback in case of successful authorization.
 
-`Learn more about Twitter integration <http://hybridauth.sourceforge.net/userguide/IDProvider_info_Twitter.html>`_ at HybridAuth.Sourceforge.net.
+`Learn more about Twitter integration <https://hybridauth.github.io/hybridauth/userguide/IDProvider_info_Twitter.html>`_ in HybridAuth User Guide.
 
 -----
 Yahoo
@@ -78,7 +78,7 @@ Yahoo
 
 * **Secret key**—the secret key given to you after creating an application at `Yahoo.com <https://login.yahoo.com/config/login_verify2?.src=devnet&.done=http%3A%2F%2Fdeveloper.apps.yahoo.com%2Fdashboard%2FcreateKey.html>`_.
 
-`Learn more about Yahoo integration <http://hybridauth.sourceforge.net/userguide/IDProvider_info_Yahoo.html>`_ at HybridAuth.Sourceforge.net.
+`Learn more about Yahoo integration <https://hybridauth.github.io/hybridauth/userguide/IDProvider_info_Yahoo.html>`_ in HybridAuth User Guide.
 
 ----
 Live
@@ -96,7 +96,7 @@ LinkedIn
 
 * **Secret key**—the secret key given to you after creating an application at `LinkedIn.com <https://www.linkedin.com/uas/login?session_redirect=http%3A%2F%2Fwww%2Elinkedin%2Ecom%2FpostLogin%3Fsession_rikey%3Dfpu_41blh0jL5hJkp1eZZ9sPHEr45YEUV4Y9mIsCRy6PInlq-z1MZ80P05D13_1UL8q9F6xC0pCVI-QRVkVsI6WC2zNeWCBXYHa%26l%3Dhttps%253A%252F%252Fwww%252Elinkedin%252Ecom%252Fsecure%252Fdeveloper%26id%3D0%26b%3D959a9590-bca1-4fa1-8e52-6a663be18db3%26h%3DeWBL%26m%3DGET>`_.
 
-`Learn more about LinkedIn integration <http://hybridauth.sourceforge.net/userguide/IDProvider_info_LinkedIn.html>`_ at HybridAuth.Sourceforge.net.
+`Learn more about LinkedIn integration <https://hybridauth.github.io/hybridauth/userguide/IDProvider_info_LinkedIn.html>`_ in HybridAuth User Guide.
 
 ----------
 Foursquare
@@ -105,3 +105,5 @@ Foursquare
 * **ID**—the App ID given to you after creating an application at Foursquare.
 
 * **Secret key**—the secret key given to you after creating an application at Foursquare.
+
+`Learn more about Foursquare integration <https://hybridauth.github.io/hybridauth/userguide/IDProvider_info_Foursquare.html>`_ in HybridAuth User Guide.

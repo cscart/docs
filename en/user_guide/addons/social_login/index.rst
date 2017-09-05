@@ -11,7 +11,7 @@ This add-on integrates `HybridAuth <http://hybridauth.sourceforge.net/>`_ librar
 Settings
 ********
 
-To manage the following settings, gp to the **Add-ons → Manage add-ons** section, find the **Social login** add-on, and clock on its name.
+To manage the following settings, gp to the **Add-ons → Manage add-ons** section, find the **Social login** add-on, and click on its name.
 
 .. note ::
 
