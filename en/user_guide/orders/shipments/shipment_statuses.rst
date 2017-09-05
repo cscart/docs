@@ -38,7 +38,7 @@ Delete a Shipment Status
 
 #. Go to **Administration → Shipping & taxes → Shipment statuses**.
 
-#. Click the **gear** button of the shipment status.
+#. Click the gear button of the shipment status.
 
 #. Choose **Delete**.
 

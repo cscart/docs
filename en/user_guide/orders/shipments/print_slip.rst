@@ -10,11 +10,11 @@ To print a packing slip for a particular shipment, follow these steps:
 
 #. Go to **Orders → Shipments**. You will see a list of all shipments in the store.
 
-#. Find the shipment you need.  If necessary, use the search panel to filter the list.
+#. Find the shipment you need. If necessary, use the search panel to filter the list.
 
-#. Click the **gear button** of the shipment for which you need to print a packing slip.
+#. Click the gear button of the shipment for which you need to print a packing slip.
 
-#. Choose **Print slip** from the drop-down list, if you want a package slip to be displayed in a separate window for further printing. If you want to download the slip in the .pdf format, choose **Print packing slip (pdf)**.
+#. Choose **Print slip** from the drop-down list, if you want a package slip to be displayed in a separate browser tab for further printing. If you want to download the slip in the .pdf format, choose **Print packing slip (pdf)**.
 
    .. image:: img/shipment_02.png
        :align: center
@@ -30,7 +30,7 @@ To print several packing slips for multiple shipments at once, follow these step
 
 #. Tick the checkboxes of the shipments for which you need to print package slips.
 
-#. Click the **gear button** in the upper right corner of the page and choose **Packing slip bulk print**.
+#. Click the gear button in the upper right part of the page and choose **Packing slip bulk print**.
 
 #. This will open a new page with the packing slips for all the selected shipments. 
 
