@@ -18,6 +18,7 @@ Starting with CS-Cart/Multi-Vendor 4.0.x, you can use the **Upgrade Center** to 
     upgrade_process
     resolve_conflicts
     cscart_not_found
+    possible_upgrade_issues
 
 ===================
 Upgrade via Console
