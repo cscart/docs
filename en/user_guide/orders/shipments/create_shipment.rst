@@ -30,9 +30,9 @@ If you ship all the products in one batch via the same carrier:
 
 #. Click **Save changes**. The shipment will be created automatically.
 
-  .. image:: img/single_shipment.png
-       :align: center
-       :alt: Press the Create New Shipment button in the Shipping Information section to create a new shipment.
+   .. image:: img/single_shipment.png
+        :align: center
+        :alt: Press the Create New Shipment button in the Shipping Information section to create a new shipment.
 
 ----------------
 The Thorough Way
@@ -62,6 +62,6 @@ If you plan to ship products from this order via different carriers or just in s
 
 #. Click the **Create** button.
 
-  .. image:: img/shipment_01.png
-      :align: center
-      :alt: Fill in the form and press the Create button to create a shipment.
+   .. image:: img/shipment_01.png
+       :align: center
+       :alt: Fill in the form and press the Create button to create a shipment.
