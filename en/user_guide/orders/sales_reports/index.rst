@@ -21,4 +21,6 @@ In This Section
     :titlesonly:
     :glob:
 
-    *
+    create_report
+    create_chart
+    500_server_error
