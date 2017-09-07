@@ -76,6 +76,8 @@ Server Configuration Requirements
 
         We strongly recommend using at least **ImageMagick 6.9.3-10** or higher, as it includes a critical vulnerability fix. **ImageMagick 7 is not supported yet**.
 
+* **exif** PHP extension should be installed. Starting with version 4.6.3, that extension will be used to make sure that the thumbnails generated from images shot in portrait mode will be rotated correctly.
+
 * **cURL support** should be enabled. You need this PHP extension to ensure support of secure connections, some payment systems such as PayPal and Authorize.Net, and real-time shipping rate calculators for FedEx and DHL/Airborne.
 
 * **mbstring** extension should be enabled, especially if you plan to use a language with non-Latin alphabet. This extension allows CS-Cart to work properly with multi-byte strings (for example, strings that contain Cyrillic symbols).
