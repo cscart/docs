@@ -2,20 +2,24 @@
 How To: Set up a Location
 *************************
 
-To set up a location:
+#. Go to **Administration → Shipping & Taxes → Locations**.
 
-*   In the Administration panel, go to **Administration → Shipping & Taxes → Locations**.
-*   Click the **+** button on the right.
-*   Enter the desired name for your new location in the **Name** input field (for example, you wish to define the location zone *USA-Maryland*).
-*   Select *United States* in the **Countries** section on the right side and click the **<** icon to move it to the left box.
-*   Select *United States: Maryland* in the **States** section on the right side and click the **<** icon to move it to the left box.
-*   Leave other fields blank on the left.
-*   Click the **Save** button to save the changes.
+#. Click the **+** button on the right.
 
-.. important::
+#. Enter the desired name for your new location. Let's set up a location for Maryland, USA, and call it *USA-Maryland*.
 
-	If geographic areas (states or countries) of location zones intersect each other, then the one with more precise location conditions will be used for a customer on checkout. For example, if both of the following locations include the customer's address: *USA + Maryland*, *USA + All states* - the first one will be used.
+#. Select *United States* in the right box in the **Countries** section, then click the **<** icon to move it to the left box.
 
-.. image:: img/set_location.png
-    :align: center
-    :alt: Set up a Location
+#. Select *United States: Maryland* in the right box in the **States** section, then click the **<** icon to move it to the left box.
+
+#. Leave the left boxes empty for all other sections.
+
+#. Click the **Save** button to save the changes.
+
+   .. important::
+
+       If geographic areas (states or countries) of different locations intersect each other, then the location with a more precise area will be used for a customer at checkout. For example, if both the *USA + Maryland* and *USA + All states* locations include the customer's address, the first one will be used.
+
+   .. image:: img/set_location.png
+       :align: center
+       :alt: Setting up a location in CS-Cart.

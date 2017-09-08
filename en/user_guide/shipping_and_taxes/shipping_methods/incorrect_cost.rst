@@ -1,25 +1,37 @@
-*******************************
-Getting Incorrect Shipping Cost
-*******************************
+**************************************
+If Incorrect Shipping Cost is Returned
+**************************************
 
-If you get an incorrect shipping cost, there are two things you need to check.
+If you get an incorrect shipping cost, check if additional shipping charges for products and shipping methods are set.
 
-Check whether an additional shipping charge is set up for your products:
+==============================================
+Check Additional Shipping Charges for Products
+==============================================
 
-1. In the Administration panel, go to **Products → Products**.
-2. Choose the product for which the shipping cost is displayed incorrectly.
-3. Open the **Shipping Properties** tab and check the **Shipping freight ($)** field. If you don't want to add additional cost to the shipping cost for this product, leave this field empty or enter **0** and click the **Save and close** button.
+#. In the Administration panel, go to **Products → Products**.
 
-.. image:: img/freight_01.png
-    :align: center
-    :alt: Shipping freight
+#. Find the product for which the shipping cost is displayed incorrectly, and click on its name.
 
-If a realtime shipping method is set up, check whether an additional charge is set up for it:
+#. The product editing page will open. Switch to the **Shipping Properties** tab and check the **Shipping freight** field. If you don't want to add additional cost to the shipping cost for this product, leave this field empty or enter **0**.
 
-1. Go to **Administration → Shipping & Taxes → Shipping Methods**.
-2. Click on the name of the realtime shipping method.
-3. Open the **Shipping charges** tab, check whether rates are set up in the **Cost dependences**, **Weight dependences**, and **Items dependences** sections. These rates are be added to the shipping cost which will be transferred from the website of a realtime shipping service (for instance UPS, USPS, etc.) If you don't want to add these rates to the shipping cost, remove them and click the **Save and close** button.
+#. Click the **Save and close** button.
 
-.. image:: img/freight_02.png
-    :align: center
-    :alt: Shipping charges
+   .. image:: img/freight_01.png
+       :align: center
+       :alt: CS-Cart and Multi-Vendor allow you to specify additional shipping cost for a product.
+
+=============================================
+Check Additional Charges for Shipping Methods
+=============================================
+
+#. Go to **Administration → Shipping & taxes → Shipping methods**.
+
+#. Click on the name of a real time shipping method to open the shipping method editing page.
+
+#. Switch to the **Shipping charges** tab, and check whether or not the rates are set up in the **Cost dependences**, **Weight dependences**, and **Items dependences** sections. These rates are added to the shipping cost received from the real time shipping service (for instance UPS, USPS, etc.) If you don't want to add these rates to the shipping cost, remove them. 
+
+#. Click the **Save and close** button.
+
+   .. image:: img/freight_02.png
+       :align: center
+       :alt: CS-Cart and Multi-Vendor allow you to specify additional charges for real time shipping methods.
