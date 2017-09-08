@@ -32,7 +32,7 @@ Here are the actions that are performed during the upgrade of CS-Cart or Multi-V
 
 #. The backup of files and database of the site is created.
 
-#. The link to restoring the pre-upgrade site from backup is sent to the administrator's email.
+#. The link for restoring the pre-upgrade site from backup is sent to the administrator's email.
 
    .. note::
 
