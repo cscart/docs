@@ -40,7 +40,7 @@ Here are the actions that are performed during the upgrade of CS-Cart or Multi-V
 
        * The upgrade is a Service Pack without any migrations. The ability to skip backup creation in such cases first appeared in version 4.6.1.
 
-       * The :doc:`development mode </developer_guide/getting_started/configuring_environment>` is enabled; but in that case we advise making the backup manually before the upgrade.
+       * The :doc:`development mode </developer_guide/getting_started/configuring_cscart>` is enabled; but in that case we advise making the backup manually before the upgrade.
 
 #. **Migrations** make changes to the database.
 
@@ -296,7 +296,7 @@ When the information about the upgrade is saved to the database, problems can oc
 9. Problem with Changing Permissions on PHP Scripts
 ---------------------------------------------------
 
-Sometimes during the upgrade the ``chmod`` can't be executed. That command is used to sen the permissions on PHP scripts in the root directory of a CS-Cart and Multi-Vendor installation as they were before the upgrade. 
+Sometimes during the upgrade the ``chmod`` can't be executed. That command is used to set the permissions on PHP scripts in the root directory of a CS-Cart and Multi-Vendor installation as they were before the upgrade. 
 
 The problem usually manifests as an entry in the upgrade log: other than that, the upgrade is completed, and the store works properly. However, if you experience a problem right after the upgrade, it's a good idea to check the ownership and permissions of the following files:  **admin.php** (:doc:`it should have a different name </install/security>`), **api.php**, and **index.php**. 
 
