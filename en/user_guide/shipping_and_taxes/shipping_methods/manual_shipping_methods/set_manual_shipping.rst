@@ -2,29 +2,40 @@
 How To: Set up a Manual Shipping Method
 ***************************************
 
-To set up a manual shipping method depending on a location:
+To set up a manual shipping method with pre-determined rates depending on a location:
 
-*   In the Administration panel, go to **Administration → Shipping & Taxes → Locations** and `create necessary locations <http://docs.cs-cart.com/4.3.x/user_guide/shipping_and_taxes/locations/set_location.html>`_.
-*   Go to **Administration → Shipping & Taxes → Shipping methods**.
-*   Add a new shipping method by clicking the **+** button or choose the existing one.
-*   Choose *Manual* in the **Rate calculation** option in the **General** tab.
+#. In the Administration panel, go to **Administration → Shipping & taxes → Locations** and :doc:`create the necessary locations </user_guide/shipping_and_taxes/locations/set_location>`.
 
-.. image:: img/manual_shipping.png
-    :align: center
-    :alt: Manual shipping method
+#. Go to **Administration → Shipping & taxes → Shipping methods**.
 
+#. Add a new shipping method by clicking the **+** button in the upper right part of the page, or choose an existing one by clicking on its name.
 
-*   Open the **Shipping charges** tab.
-*   Select a desired location in the **Show rates for location** box.
-*   Define shipping rates for the shipping method based on the total cost of the ordered products `cost <http://docs.cs-cart.com/4.3.x/user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/order_total.html>`_, their weight, or `quantity <http://docs.cs-cart.com/4.3.x/user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/product_amount.html>`_.
+#. Set **Rate calculation** to *Manual*.
 
-.. note::
+   .. image:: img/manual_shipping.png
+       :align: center
+       :alt: Creating a shipping method with pre-determined rates in CS-Cart.
 
-	The shipping rates values should be entered just as they are, i.e. for each new condition an integral value should be entered, but not an additional one. For example, for the *More than $0* condition value 40 is entered, and if you need the price for the *More than $30* value to be 55, you need to enter this very value, but not the additional value of 15.
+#. Switch to the **Shipping charges** tab.
 
-*   Select another location in the **Show rates for location** box and define the desired shipping rates for it.
-*   Click the **Save** button to add or update the rates.
+#. Select the :doc:`location </user_guide/shipping_and_taxes/locations/index>` for which you'd like to specify rates in the the **Show rates for location** section.
 
-.. image:: img/dependencies.png
-    :align: center
-    :alt: Shipping charges
+#. Specify the rates for the shipping method. The rates are separated into 3 sections and can depend on:
+
+   * :doc:`Order total </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/order_total>`
+
+   * Weight of the items in the order
+
+   * :doc:`Quantity of the items in the order </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/product_amount>`
+
+   .. note::
+
+       The rates within each section are not summed up. Let's use **Cost dependencies** as an example: if you specify the **Rate value** of *20* for the **More than $0** condition, and you want a rate of 30 for orders with the total greater than $50, then the **More than $50** condition should have the **Rate value** of *30*, and not *10*.
+
+#. Select other locations and set the desired shipping rates for them.
+
+#. Click the **Save** button (or **Create**, if you're adding a new shipping method).
+
+   .. image:: img/dependencies.png
+       :align: center
+       :alt: Configuring shipping charges in CS-Cart and Multi-Vendor.

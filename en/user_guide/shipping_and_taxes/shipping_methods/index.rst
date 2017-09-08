@@ -2,7 +2,7 @@
 Shipping Methods
 ****************
 
-A shipping method is a set of rules and parameters to calculate the cost of shipping orders to buyers. This section contains an editable list of shipping methods present in the store.
+The **Administration → Shipping & taxes → Shipping methods** page contains an editable list of shipping methods present in the store.A shipping method is a set of rules and parameters to calculate the cost of shipping orders to buyers.
 
 .. image:: img/shipping_methods.png
     :align: center
@@ -16,5 +16,14 @@ Use this list to edit certain attributes of a shipping method. To access more at
     :glob:
 
     */index
+    shipping_method_attributes
+    free_shipping
     manual_shipping_methods/certain_product_free_shipping
-    *
+    disable_shipping
+    create_payment_dependencies
+    shipping_tips
+    incorrect_cost
+    no_options
+    test_button_error
+
+

@@ -2,17 +2,24 @@
 States
 ******
 
-This section provides an editable list of states and provinces (per country) that are supported in your store. These states/provinces are used to define users' location.
+Use the **Administration → Shipping and taxes → States** page to edit the list of states and provinces (per country) that are supported in your store.
 
-Here you can add missing states/provinces, or delete and modify existing states/provinces for each country registered and activated in **Administration → Shipping & Taxes → Countries**.
+You can add missing states/provinces, or delete and modify existing ones for each :doc:`active country <countries>`.
 
 .. image:: img/states_list.png
     :align: center
-    :alt: States list
+    :alt: The list of states in CS-Cart and Multi-Vendor.
 
-State attributes
-****************
+================
+State Properties
+================
 
-*	**Code** – Unique code to identify the state or province.
-*	**State/Province** – Name of the state or province.
-*	**Status** – Status of the state/province: *Active* (i.e. can be selected in a user profile) or *Disabled*.
+* **Code**—a unique code to identify the state or province.
+
+* **State/Province**—the name of the state or province.
+
+* **Status**—the status of the state/province: *Active* or *Disabled*.
+
+  .. note::
+
+      If you disable a state, users won't be able to select it in their profiles or at checkout.

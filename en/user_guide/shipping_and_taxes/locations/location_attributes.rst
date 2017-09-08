@@ -1,68 +1,97 @@
 *******************
-Location Attributes
+Location Properties
 *******************
 
+=======
 General
-*******
+=======
 
-*	**Name** - Name of the location.
-*	**Status** – Status of the location: *Active* or *Disabled*.
+* **Name**—the name of the location.
+
+* **Status**—the status of the location: *Active* or *Disabled*.
 
 .. image:: img/locations_general.png
     :align: center
-    :alt: Locations. The General section
+    :alt: The "General" section of the location editing page in CS-Cart and Multi-Vendor.
 
+=========
 Countries
-*********
+=========
 
-The list box on the right contains a list of all available countries, the list box on the left contains a list of countries included in the location. To adjust the list of countries supported in your store, go to **Administration → Shipping & Taxes → Countries**.
+The right box contains all available countries, and the left box contains the countries included in the location. To move items from one box to the other, use the twin horizontal arrows between the boxes. To select multiple items, press and hold **Ctrl** while selecting.
 
-To move items from one list to the other one, use the twin horizontal arrows between the lists. To select multiple items, press and hold the **Ctrl** key.
+.. hint::
+
+    Go to **Administration → Shipping & taxes → Countries** to :doc:`adjust the list of available countries <countries>`.
 
 .. image:: img/locations_countries.png
     :align: center
-    :alt: Locations. The Countries section
+    :alt: The "Countries" section of the location editing page in CS-Cart and Multi-Vendor.
 
+======
 States
-******
+======
 
-The list box on the right contains a list of all available states, the list box on the left contains a list of states included in the location. To adjust the list of states supported in your store, go to **Administration → Shipping & Taxes → States**.
+The right box contains all available states, and the left box contains the states included in the location. To move items from one box to the other, use the twin horizontal arrows between the boxes. To select multiple items, press and hold **Ctrl** while selecting.
 
-To move items from one list to the other one, use the twin horizontal arrows between the lists. To select multiple items, press and hold the **Ctrl** key.
+.. hint::
+
+    Go to **Administration → Shipping & taxes → States** to :doc:`adjust the list of available states <states>`.
 
 .. image:: img/locations_states.png
     :align: center
-    :alt: Locations. The States section
+    :alt: The "States" section of the location editing page in CS-Cart and Multi-Vendor.
 
-Zip/Postal code
-***************
+================
+Zip/Postal Codes
+================
 
-The text box contains the zip/postal codes included in the location. Entries must be separated by a paragraph break (appear in different lines).
+The text box contains the ZIP/postal codes included in the location. Different entries must be separated by a paragraph break (i.e, each entry must be a separate line).
 
-It is not necessary to specify the exact codes, you can use wildcards (**?** = any single character, ***** = any series of characters) instead. For example, **98?78** stands for 98178, 98278, 98378, 98478, 98578, 98678, 98778, 98878, 98978 and 98078; **12*** stands for 12345, 12876, 12098, etc.
+It is not necessary to specify the exact codes, you can use wildcards instead. Here is how they work:
+
+* **?** = any single character (or a space). For example, **98?78** stands for *98078*, *98A78*, *98 78*, etc.
+
+* ***** = any series of characters; for example, **12*** stands for *12345*, *128765*, *12 0AC1D9 B5*, etc.
 
 .. image:: img/zip_postal_codes.png
     :align: center
-    :alt: Locations. The Zip/Postal code section
+    :alt: The "ZIP/Postal code" section of the location editing page in CS-Cart and Multi-Vendor.
 
+======
 Cities
-******
+======
 
-The text box contains the cities included in the location. Entries must be separated by a paragraph break (appear in different lines).
+The text box contains the cities included in the location. Different entries must be separated by a paragraph break (i.e, each entry must be a separate line).
 
-It is not necessary to specify the exact names of the cities, you can use wildcards (**?** = any single character, ***** = any series of characters) instead. For example, **New Y*** would stand for *New York*, etc.; **L?s*** would stand for *Las Vegas*, *Los Angeles*, etc.
+It is not necessary to specify the full city name, you can use wildcards instead. Here is how they work:
+
+* **?** = any single character.
+
+* ***** = any series of characters.
+
+For example:
+
+* **New Y*** stands for *New York*, *New York City*, *New Yorkshire*, *New Year's Eve*,  and so on.
+
+* **L?s*** stands for *Las Vegas*, *Los Angeles*, *Lisbon*, and so on.
 
 .. image:: img/locations_sities.png
     :align: center
-    :alt: Locations. The Sities section
+    :alt: The "Cities" section of the location editing page in CS-Cart and Multi-Vendor.
 
+=========
 Addresses
-*********
+=========
 
-The text box contains the addresses included in the location. Entries must be separated by a paragraph break (appear in different lines).
+The text box contains the addresses included in the location. Different entries must be separated by a paragraph break (i.e, each entry must be a separate line).
 
-It is not necessary to specify the exact addresses, you can use wildcards (**?** = any single character, ***** = any series of characters) instead. For example, *** street** would stand for *1st street, 2nd street*, etc.
+It is not necessary to specify the exact addresses, you can use wildcards instead. Here is how they work:
+
+* **?** = any single character; for example **??? Street** stands for *Doe Street*, or *3rd Street*, and so on.
+
+* ***** = any series of characters; for example, *** Street** stands for *1st Street*, *Random Street*, and so on.
 
 .. image:: img/locations_addresses.png
     :align: center
-    :alt: Locations. The Addresses section
+    :alt: The "Addresses" section of the location editing page in CS-Cart and Multi-Vendor.

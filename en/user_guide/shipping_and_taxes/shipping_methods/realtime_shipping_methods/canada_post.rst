@@ -4,8 +4,6 @@ How To: Set up Canada Post in CS-Cart
 
 .. note::
 
-    **Tutorial Difficulty: 1 / 3**
-
     If you used a Canada Post shipping method and then upgraded to CS-Cart/Multi-Vendor 4.3.8, make sure to configure the shipping method again.
 
 Follow these steps to set up a shipping method that uses `Canada Post <https://www.canadapost.ca/web/en/home.page>`_:

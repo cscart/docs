@@ -2,55 +2,106 @@
 How To: Set up a Tax
 ********************
 
-To set up a tax:
+.. contents::
+   :backlinks: none
+   :local:
 
-*   In the Administration panel, go to **Administration → Shipping & Taxes → Locations** and :doc:`create locations <../locations/set_location>`.
-*   Go to **Administration → Shipping & Taxes → Taxes**.
-*   Add a new tax by clicking the **+** button or edit the existing one by clicking on it's name. The **Editing tax page** will open.
-*	On the opened page, in the **Rates depend on** field select the address depending on which this tax will be added to the product (*Shipping address* or *Billing address*).
-*	Tick the **Price includes tax** option if you want the tax rate to be included in the product price, or untick it if you do not.
+================
+Create Locations
+================
 
-.. image:: img/set_tax_01.png
-    :align: center
-    :alt: Editing tax
+Go to **Administration → Shipping & taxes → Locations** and :doc:`create locations </user_guide/shipping_and_taxes/locations/set_location>`. You'll need locations if you want to specify different tax rates for customers from different countries and regions.
 
-*	In the **Tax rates** tab enter desired tax rates.
-*	Click the **Save** button.
+===============
+Configure a Tax
+===============
 
-.. image:: img/set_tax_02.png
-    :align: center
-    :alt: Tax rates
+#. Go to **Administration → Shipping & Taxes → Taxes**.
 
-.. note::
+#. Add a new tax by clicking the **+** button in the upper right part of the page, or edit an existing tax by clicking on it's name. 
 
-	You can enable the **Display prices with taxes on category/product pages** and **Display prices with taxes on cart/checkout pages** options in the **Settings → Appearance** section.
+#. The tax editing page will open. Specify :doc:`tax properties <tax_attributes>` there.
 
-Apply the tax to products. You are able to apply the tax to all products: 
+   .. image:: img/set_tax_01.png
+       :align: center
+       :alt: The tax editing page in CS-Cart and Multi-Vendor.
 
-    Go to **Administration → Shipping & Taxes → Taxes**. On the opened page select the check box next to the name of this tax, click the button with the gear icon, and select **Apply selected taxes to all products**.
+#. Switch to the **Tax rates** tab and enter the tax rates.
 
-.. image:: img/set_tax_03.png
-    :align: center
-    :alt: Apply tax to all products
+#. Click the **Save** button (or **Create** if you're adding a new tax).
 
-.. note::
+   .. image:: img/set_tax_02.png
+       :align: center
+       :alt: Tax rates
 
-	If you have several taxes and want to apply these taxes to the product price, they should have the same priority. For example, if the priority of tax A is 1 and the priority of tax B is 2, the tax A will be calculated for the product price and the tax B for the product price with tax A.
+   .. hint::
 
-or to the certain products:
+      If the **Tax calculation method** in **Settings → General** is based on unit price, make sure to check **Settings → Appearance** for 2 settings related to taxes: 
 
-    Go to **Products → Products**, click on the name of the product to which you would like to add the tax, select the check box of the tax in the **Taxes** option, and click **Save**.
+      * Display prices with taxes on category/product pages
 
-.. note::
+      * Display prices with taxes on cart/checkout pages
 
-	You are able to add taxes for a product using the `import <http://docs.cs-cart.com/4.3.x/user_guide/manage_products/import_export/product_import.html>`_ option. The description of the correct format can be found in the `Imported Fields Format <http://docs.cs-cart.com/4.3.x/user_guide/manage_products/import_export/fields_format.html>`_ article.
+=======================
+Apply Taxes to Products
+=======================
 
-To apply the tax to a shipping method:
+.. important::
 
-*   Go to **Administration → Shipping & Taxes → Shipping methods**. Choose the desired shipping method and click on its name.
-*   Select the check box of the tax in the **Taxes** option.
-*   Click the **Save** button.
+    If you have several taxes and want to apply these taxes to the product price, they should have the same priority. For example, if the priority of tax A is 1 and the priority of tax B is 2, the tax A will be calculated for the product price and the tax B for the product price with tax A.
 
-.. image:: img/set_tax_04.png
-    :align: center
-    :alt: Editing shipping method
+---------------------------
+Apply Taxes to All Products
+---------------------------
+
+#. Go to **Administration → Shipping & taxes → Taxes**. 
+
+#. Tick the checkbox to the left of the tax name.
+
+   .. hint::
+
+       You can tick multiple checkboxes to apply multiple taxes at once.
+
+#. Click the gear button in the upper right part of the page.
+
+#. Choose **Apply selected taxes to all products**.
+
+   .. image:: img/set_tax_03.png
+       :align: center
+       :alt: Apply a tax to all products in CS-Cart or Multi-Vendor.
+
+---------------------------------
+Apply Taxes to a Specific Product
+---------------------------------
+
+#. Go to **Products → Products**.
+
+#. Find the product and click on its name.
+
+#. Scroll down to the **Taxes** property in the **Pricing / inventory** section.
+
+#. Tick the checkboxes of the taxes you'd like to apply.
+
+#. Click **Save**.
+
+   .. hint::
+
+       Taxes can also be applied to products via :doc:`product_import </user_guide/manage_products/import_export/product_import>`. We have a separate article that describes :doc:`the formatting of the imported CSV file with products </user_guide/manage_products/import_export/fields_format>`.
+
+===============================
+Apply Taxes to Shipping Methods
+===============================
+
+#. Go to **Administration → Shipping & taxes → Shipping methods**. 
+
+#. Click on the name of the shipping method.
+
+#. Scroll down to the **Taxes** property in the **Extra** section.
+
+#. Tick the checkboxes of the taxes you'd like you apply.
+
+#. Click the **Save** button.
+
+   .. image:: img/set_tax_04.png
+       :align: center
+       :alt: Applying a tax to a shipping method in CS-Cart or Multi-Vendor.

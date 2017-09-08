@@ -1,69 +1,69 @@
-*************************************
-How To: Configure DHL Shipping Method
-*************************************
+*****************************
+How To: Set up DHL in CS-Cart
+*****************************
 
 .. important::
 
     This article is based on **CS-Cart 4.3.5**: in earlier versions CS-Cart supported DHL only for the United States.
 
-To configure a shipping method that uses DHL delivery services, complete the following steps:
+To configure a shipping method that uses DHL delivery services, follow these steps:
 
-1. Go to **Administration → Shipping & Taxes → Shipping methods**.
-2. Create a new shipping method or сlick the existing method to modify it.
+#. Go to **Administration → Shipping & Taxes → Shipping methods**.
 
-.. hint::
+#. Create a new shipping method or сlick the existing method to modify it.
 
-    If you have created a new shipping method and want to hide it until you configure in properly, set the method’s **Status** to **Disabled** on the **General** tab and click **Save**.
+   .. hint::
 
-3. Name the shipping method.
+       If you have created a new shipping method and want to hide it until you configure in properly, set the method’s **Status** to *Disabled* on the **General** tab, and click **Save**.
 
-4. Set **Rate calculation** to **Realtime**.
+#. Name the shipping method.
 
-5. Select **DHL** in the **Carrier** drop-down menu.
+#. Set **Rate calculation** to *Realtime*.
 
-6. Select the desired **Shipping service** (for example, DHL Express Worldwide).
+#. Select **DHL** in the **Carrier** drop-down menu.
 
-.. image:: img/dhl_general.png
-    :align: center
-    :alt: Name your shipping method and choose your Carrier and Shipping service.
+#. Select the desired **Shipping service** (for example, DHL Express Worldwide).
 
-7. Switch to the **Configure** tab.
+   .. image:: img/dhl_general.png
+       :align: center
+       :alt: Name your shipping method and choose your Carrier and Shipping service.
 
-.. important::
+#. Switch to the **Configure** tab.
 
-    Swithching to other tabs is only available for existing shipping methods, so click **Create** if you don’t see the **Configure** tab.
+   .. important::
 
-8. Enter your **Site ID**, **Password** and **Account number**.
+       Switching to other tabs is only available for existing shipping methods, so click **Create** if you don’t see the **Configure** tab.
 
-9. Define the dimensions and **maximum weight** of the box.
+#. Enter your **Site ID**, **Password** and **Account number**.
 
-.. image:: img/dhl_configure.png
-    :align: center
-    :alt: Specify the DHL-specific settings on the Configure tab.
+#. Define the dimensions and **maximum weight** of the box.
 
-10. Switch to the **Shipping charges** tab.
+   .. image:: img/dhl_configure.png
+       :align: center
+       :alt: Specify the DHL-specific settings on the Configure tab.
 
-11. Define a sum to add to the charges calculated by DHL.
+#. Switch to the **Shipping charges** tab.
 
-.. image:: img/dhl_charges.png
-    :align: center
-    :alt: Specify any additional charges on the Shipping charges tab.
+#. Define a sum to add to the charges calculated by DHL.
 
-12. Click **Save**.
+   .. image:: img/dhl_charges.png
+       :align: center
+       :alt: Specify any additional charges on the Shipping charges tab.
 
-13. Open the **General** tab.
+#. Click **Save**.
 
-14. Click the **Calculate shipping cost** link.
+#. Open the **General** tab.
 
-15. Enter the desired value into the **Weight (lbs)** input field.
+#. Click the **Calculate shipping cost** link.
 
-16. Click the **Test** button and check that the calculated shipping cost is correct.
+#. Enter the desired value into the **Weight (lbs)** input field.
 
-.. image:: img/dhl_test.png
-    :align: center
-    :alt: Make a test calculation to make sure the shipping costs are correct.
+#. Click the **Test** button and check that the calculated shipping cost is correct.
 
-.. important::
+   .. image:: img/dhl_test.png
+       :align: center
+       :alt: Make a test calculation to make sure the shipping costs are correct.
 
-    DHL uses the currency of the sender’s country to calculate shipping costs. Set your store’s primary currency under **Administration → Currencies → <Desired Currency>** to match the DHL currency determined by **Account number**.
+   .. important::
 
+       DHL uses the currency of the sender’s country to calculate shipping costs. Set your store’s primary currency under **Administration → Currencies → <Desired Currency>** to match the DHL currency determined by **Account number**.

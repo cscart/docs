@@ -1,26 +1,26 @@
-***********************************************
-How To: Set Free Shipping for a Certain Product
-***********************************************
+*************************************************
+How To: Offer Free Shipping for a Certain Product
+*************************************************
 
-.. note::
+.. hint::
 
-    **Tutorial Difficulty: 1 / 3**
+    Learn more about :doc:`other ways to enable free shipping </user_guide/shipping_and_taxes/shipping_methods/free_shipping>`.
 
-1. In the Administration panel, go to **Products → Products**.
+#. In the Administration panel, go to **Products → Products**.
 
-2. Click the name of the product you want to edit.
+#. Click the name of the product you want to edit.
 
-3. Switch to the **Shipping properties** tab.
+#. Switch to the **Shipping properties** tab.
 
-4. Tick the **Free shipping** checkbox.
+#. Tick the **Free shipping** checkbox.
 
-5. Click the **Save** button.
+#. Click the **Save** button.
 
-.. image:: img/certain_product.png
-    :align: center
-    :alt: Product editing page
+   .. image:: img/certain_product.png
+       :align: center
+       :alt: Product editing page
 
-6. If you use CS-Cart & Multi-Vendor 4.3.5 or higher, you also need to configure the shipping method:
+#. If you use CS-Cart & Multi-Vendor 4.3.5 or higher, you also need to configure the shipping method:
 
    * Go to **Administration → Shipping & taxes → Shipping methods**.
 
@@ -30,17 +30,13 @@ How To: Set Free Shipping for a Certain Product
 
    * Click **Save**.
 
-.. hint::
+   .. image:: img/use_for_free_shipping.png
+       :align: center
+       :alt: Product editing page
 
-    Learn more :doc:`how free shipping works in different versions <../free_shipping>`.
+   .. hint::
 
-.. image:: img/use_for_free_shipping.png
-    :align: center
-    :alt: Product editing page
-
-.. hint::
-
-    You can also enable free shipping for products using :doc:`product import <../../../manage_products/import_export/product_import>`. The description of the correct format can be found :doc:`in this article <../../../manage_products/import_export/fields_format>`.
+       You can also enable free shipping for products by using :doc:`product import </user_guide/manage_products/import_export/product_import>`. The description of the correct format can be found :doc:`in this article </user_guide/manage_products/import_export/fields_format>`.
 
 
 

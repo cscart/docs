@@ -1,6 +1,6 @@
-************************
-Methods of Free Shipping
-************************
+***********************
+How Free Shipping Works
+***********************
 
 The **Free shipping** checkbox on the **Shipping Properties** tab under **Products → Products → <Desired Product>** works differently, depending on the version of CS-Cart.
 
@@ -46,26 +46,26 @@ If you don’t want to assign a shipping method to orders at all, go to **Admini
 
 If you want to offer free shipping and don’t want a user to choose a shipping method, complete the following steps:
 
-1. Go to **Settings → Checkout** and untick the **Display "Shipping method" step** checkbox
+#. Go to **Settings → Checkout** and untick the **Display "Shipping method" step** checkbox.
 
-2. Go to **Administration → Shipping & taxes → Shipping methods** and either create a new shipping method, or adjust an existing method as follows:
+#. Go to **Administration → Shipping & taxes → Shipping methods** and either create a new shipping method, or adjust an existing method as follows:
 
-*   set the minimal **Position** possible (for example, 0) to make the method come first on the list
+   * Set the minimal **Position** possible (for example, 0) to make the method come first on the list.
 
-.. image:: img/free_shipping/disable_shipping_position.png
-    :align: center
-    :alt: Make the desired shipping method come first on the list.
+     .. image:: img/free_shipping/disable_shipping_position.png
+         :align: center
+         :alt: Make the desired shipping method come first on the list.
 
-*   set the **Rate calculation** to Manual
+   * Set the **Rate calculation** to *Manual*.
 
-.. image:: img/free_shipping/disable_shipping_rate.png
-    :align: center
-    :alt: Set the shipping method's Rate Calculation setting to Manual.
+     .. image:: img/free_shipping/disable_shipping_rate.png
+         :align: center
+         :alt: Set the shipping method's Rate Calculation setting to Manual.
 
-*   switch to the **Shipping Charges** tab and configure the charges so that the **Rate value** for the shipping method equals 0
+   * Switch to the **Shipping Charges** tab and configure the charges so that the **Rate value** for the shipping method equals 0
 
-.. image:: img/free_shipping/disable_shipping_charges.png
-    :align: center
-    :alt: Make sure that the shipping method's Rate Value equals 0. 
+     .. image:: img/free_shipping/disable_shipping_charges.png
+         :align: center
+         :alt: Make sure that the shipping method's Rate Value equals 0. 
 
-*	Click the **Save** button.
+   * Click the **Save** button.
