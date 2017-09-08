@@ -1,22 +1,25 @@
-**************************************
-How To: Set up CS-Cart With Swiss Post
-**************************************
+************************************
+How To: Set up Swiss Post in CS-Cart
+************************************
 
-*   In the Administration panel, go to **Administration → Shipping & Taxes → Shipping methods**.
-*   Create a shipping method or choose the existent one.
-*   Click on the name of a shipping method to modify it.
-*   Select *Realtime* in the **Rate calculation** field, select *SwissPost* in the **Carrier** field, and *Swiss Post International PostPac PRIORITY* in the **Shipping service** field.
+#. In the Administration panel, go to **Administration → Shipping & taxes → Shipping methods**.
 
-.. image:: img/swiss_post_01.png
-    :align: center
-    :alt: New shipping method
+#. Create a shipping method with the **+** button in the upper right part of the page, or choose an existing one by clicking on its name.
 
-*   Open the **Configure** tab and select the necessary options there.
+#. Set **Rate calculation** to *Realtime*, select *SwissPost* as **Carrier**, and choose *Swiss Post International PostPac PRIORITY* as the **Shipping service**.
 
-.. image:: img/swiss_post_02.png
-    :align: center
-    :alt: Configure
+   .. image:: img/swiss_post_01.png
+       :align: center
+       :alt: SwissPost shipping method in CS-Cart
 
-*   Open the **Shipping charges** tab and define shipping charges which will be added to the ones returned by real-time shipping service if it is needed.
-*	Click the **Save** button to save the changes.
-*   Open the **General** tab, click the **Calculate shipping cost** link, enter the desired value into the **Weight (lbs)** input field, and click the **Test** button to make a test calculation of shipping charges.
+#. Switch to the **Configure** tab and tick the necessary checkboxes there.
+
+   .. image:: img/swiss_post_02.png
+       :align: center
+       :alt: Configuring SwissPost in CS-Cart
+
+#. (optional) Switch to the **Shipping charges** tab and define shipping charges which will be added to the ones returned by SwissPost.
+
+#. Click the **Save** button to save the changes (or **Create**, if you're adding a new shipping method).
+
+#. Return to the **General** tab, click the **Calculate shipping cost** link, enter the desired value into the **Weight (lbs)** input field, and click the **Test** button to make a test calculation of shipping charges.

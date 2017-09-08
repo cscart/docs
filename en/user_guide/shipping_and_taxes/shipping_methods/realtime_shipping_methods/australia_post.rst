@@ -2,12 +2,7 @@
 How To: Set up Australia Post in CS-Cart
 ****************************************
 
-.. note::
-
-    **Tutorial Difficulty: 1 / 3**
-
 Follow these steps to set up a shipping method that uses `Australia Post <http://auspost.com.au/>`_:
-
 
 ================================
 Step 1. Create a Shipping Method
@@ -41,27 +36,27 @@ Step 2. Configure the Shipping Method
 
 2.2. Switch to the **Configure** tab. Depending on your version of CS-Cart/Multi-Vendor, the settings will be different.
 
-     .. hint::
+.. hint::
 
-         If you don’t see any tabs, then the shipping method probably hasn't been created yet. Click **Create**, and the tabs should appear.
+    If you don’t see any tabs, then the shipping method probably hasn't been created yet. Click **Create**, and the tabs should appear.
 
 2.3. Enter your PAC API key.
 
-     .. note::
+.. note::
 
-         PAC stands for Postage Assessment Calculator. `Get PAC from Australia Post. <https://developers.auspost.com.au/apis/pacpcs-registration>`_
+    PAC stands for Postage Assessment Calculator. `Get PAC from Australia Post. <https://developers.auspost.com.au/apis/pacpcs-registration>`_
 
 2.4. Specify the dimensions of the package:
 
-     * **Package width (cm)** 
+* **Package width (cm)** 
 
-     * **Package height (cm)**
+* **Package height (cm)**
 
-     * **Package length (cm)**
+* **Package length (cm)**
 
-     .. hint::
+  .. hint::
 
-          Check out `Australia Post Size and Weight Guidelines. <http://auspost.com.au/parcels-mail/size-and-weight-guidelines.html>`_ 
+       Check out `Australia Post Size and Weight Guidelines <http://auspost.com.au/parcels-mail/size-and-weight-guidelines.html>`_.
 
 .. image:: img/australia_post_service.png
     :align: center

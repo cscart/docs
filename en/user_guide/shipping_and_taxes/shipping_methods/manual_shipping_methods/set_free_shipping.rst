@@ -2,23 +2,42 @@
 How To: Set up a Free Shipping Method
 *************************************
 
-*	In the Administration panel, go to **Administration → Shipping & Taxes → Shipping methods**.
-*	Add a new shipping method or choose the existing one.
+#. In the Administration panel, go to **Administration → Shipping & Taxes → Shipping methods**.
 
-.. important::
+#. :doc:`Create a new shipping method </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/set_manual_shipping>` or click on the name of an existing one.
 
-	This method should use the manual rate calculation (the **Rate calculation** option is set to *Manual* on the details page of a shipping method).
+   .. important::
 
-*	Click on the name of this shipping method to edit it. The **Editing shipping method** page will open.
-*	Open the **Shipping charges** tab on the details page of this shipping method and choose the location in the **Show rate for location** box for which free shipping will be defined.
-*	Enter *0.01* into **More than $** input field in the **Cost dependencies** form and enter *0* into next to it.
+       Set the **Rate calculation** of this method to *Manual*.
 
-.. important::
+#. The shipping method editing page will open. Switch to the **Shipping charges** tab.
 
-	Make sure that there are no charges defined in the **Weight dependencies** and **Items dependencies** sections for this shipping method.
+#. Select the :doc:`location </user_guide/shipping_and_taxes/locations/index>` for which you'd like to offer free shipping in the **Show rates for location** section. If you don't see this section, it means that you haven't created any locations.
 
-*	Click the **Create/Save** button.
+#. Configure the **Cost dependencies** section as follows:
 
-.. image:: img/free_shipping_method.png
-    :align: center
-    :alt: Free shipping method
+   .. list-table::
+       :widths: 10 10 10
+       :header-rows: 1
+
+       *   -   Products cost 
+           -   Rate value
+           -   Type
+       *   -   More than $0.00
+           -   0
+           -   Absolute ($)
+       *   -   More than $0.01
+           -   0
+           -   Absolute ($)
+
+   .. image:: img/free_shipping_method.png
+       :align: center
+       :alt: Configuring a free shipping method in CS-Cart or Multi-Vendor.
+
+   .. important::
+
+       Make sure that there are no charges defined in the **Weight dependencies** and **Items dependencies** sections for this shipping method.
+
+#. Click the **Save** button (or **Create**, if you're creating a new shipping method).
+
+

@@ -2,9 +2,9 @@
 Ways to Set up Free Shipping
 ****************************
 
-===============
-The Default Way
-===============
+======================================================
+Way 1. Exclude Products from Shipping Cost Calculation
+======================================================
 
 All the products other than digital require shipping. If an order requires shipping, the customer must choose a shipping method.
 
@@ -18,21 +18,21 @@ Tick the **Use for free shipping** checkbox, if you want to exclude the products
 
 If you leave the checkbox unticked, CS-Cart will calculate the shipping price for all the products from the order in accordance with **Shipping charges**.
 
-===================================
-Assign No Shipping Method to Orders
-===================================
+==========================================
+Way 2. Assign No Shipping Method to Orders
+==========================================
 
-If you don’t want to assign a shipping method to orders at all, go to **Administration → Shipping & taxes → Shipping methods** and either delete all the shipping methods, or change their status to **Disabled**.
+If you don’t want to assign a shipping method to orders at all, go to **Administration → Shipping & taxes → Shipping methods** and either delete all the shipping methods, or change their status to *Disabled*.
 
-===============================
-Hide the Shipping Method Choice
-===============================
+======================================
+Way 3. Hide the Shipping Method Choice
+======================================
 
 If you want to offer free shipping and don’t want a user to choose a shipping method, complete the following steps:
 
-1. Go to **Settings → Checkout** and untick the **Display "Shipping method" step** checkbox.
+#. Go to **Settings → Checkout** and untick the **Display "Shipping method" step** checkbox.
 
-2. Go to **Administration → Shipping & taxes → Shipping methods** and either create a new shipping method, or adjust an existing method as follows:
+#. Go to **Administration → Shipping & taxes → Shipping methods** and either create a new shipping method, or adjust an existing method as follows:
 
    * Set the minimal **Position** possible (for example, 0) to make the method come first on the list.
 

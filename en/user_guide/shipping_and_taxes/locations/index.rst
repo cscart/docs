@@ -2,18 +2,23 @@
 Locations
 *********
 
-Use this section to manage the set of locations that are supported in your store. A location is a combination of parameters to represent a geographical area. Locations are used to calculate shipping rates and tax charges.
+The **Administration → Shipping & taxes → Locations** page allows you to manage the locations that your store ships to. A location is a combination of parameters that represent a geographical area. Locations are used to calculate shipping rates and tax charges.
 
 .. image:: img/locations.png
     :align: center
-    :alt: Locations
+    :alt: Locations serve for calculation of taxes and shipping rates in CS-Cart and Multi-Vendor.
 
-In this section
-***************
+===============
+In This Section
+===============
 
 .. toctree::
     :maxdepth: 2
     :titlesonly:
     :glob:
 
-    *
+    location_attributes
+    countries
+    states
+    set_location
+    country_location

@@ -2,23 +2,36 @@
 How To: Make Shipping Cost Dependent on Order Total
 ***************************************************
 
-To set a shipping cost depending on order total:
+#. In the Administration panel, go to **Administration → Shipping & taxes → Shipping methods**.
 
-*   In the Administration panel, go to **Administration → Shipping & Taxes → Shipping methods**.
-*   :doc:`Create a new shipping method <../manual_shipping_methods/set_manual_shipping>` or choose the existing one.
-*   Click on the name of this shipping method. The **Editing shipping method** page will open.
-*   On that page open the **Shipping charges** tab.
-*   Select the desired location in the **Show rates for location** box.
-*   In the **Cost dependencies** section in the first row enter 0 (for instance) into the **More than** input field and a shipping cost (e.g. 25) into the input field next to it.
-*   In the following row enter the total amount (e.g 50) after which you would like to change the shipping cost into the **More than** input field and different shipping cost (e.g. 20) into the input field next to it.
+#. :doc:`Create a new shipping method </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/set_manual_shipping>` or click on the name of an existing one.
 
-.. note::
+#. The shipping method editing page will open. Switch to the **Shipping charges** tab.
 
-	In this case if the order total is between $0 and $50, the shipping cost will be $25, and if the order total exceeds $50, the shipping cost will be $20.
+#. Select the :doc:`location </user_guide/shipping_and_taxes/locations/index>` for which you'd like to configure the shipping cost in the **Show rates for location** section. If you don't see this section, it means that you haven't created any locations.
 
-*   You are able to specify as many intervals as you like.
-*   Click the **Create** button.
+#. Configure the **Cost dependencies** section as follows:
 
-.. image:: img/order_total.png
-    :align: center
-    :alt: Editing shipping method
+   .. list-table::
+       :widths: 10 10 10
+       :header-rows: 1
+
+       *   -   Products cost 
+           -   Rate value
+           -   Type
+       *   -   More than $0.00
+           -   25
+           -   Absolute ($)
+       *   -   More than $50.00
+           -   20
+           -   Absolute ($)
+
+   .. image:: img/order_total.png
+       :align: center
+       :alt: Changing shipping cost depending on the order total in CS-Cart and Multi-Vendor.
+
+   .. note::
+
+       In this case if the order total is between $0 and $50, the shipping cost will be $25, and if the order total exceeds $50, the shipping cost will be $20.
+
+#. Click the **Save** button (or **Create**, if you're creating a new shipping method).
