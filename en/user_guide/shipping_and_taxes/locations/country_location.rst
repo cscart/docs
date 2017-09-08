@@ -1,21 +1,27 @@
-*********************************
-How To: Set up a Country Location
-*********************************
+**************************************
+How To: Set up a Country as a Location
+**************************************
 
-To set up a location for a particular country:
+To set up a location for a particular country (for example, Australia):
 
-*   In the Administration panel, go to **Administration → Shipping & Taxes → Locations**.
-*   Add a new location zone by clicking the **+** button on the right of the page (for example, you wish to define the location zone *Australia*).
-*   Select *Australia* in the **Countries** section on the right side and click the **<** icon to move it to the left box.
-*   Select all the **Australian states and territories** (e.g. *Australia: New South Wales* and *Australia: Australian Capital Territory*) in the **States** section on the right side and click the **<** icon to move them to the left box.
+#. Go to **Administration → Shipping & taxes → Locations**.
 
-.. important::
+#. Add a new location by clicking the **+** button in the upper right part of the page.
 
-	If the country has states, provinces, or counties you should necessarily add them to the left section. If the country does not have any administrative-territorial entities leave the **States** section blank on the left.
+#. Name your location (in our example it'd be *Australia*).
 
-*   Leave other fields blank on the left.
-*   Click the **Save** button.
+#. Select *Australia* in the **Countries** section and move it to the left box with the **<** icon.
 
-.. image:: img/country_location.png
-    :align: center
-    :alt: Country Location
+#. Select all the Australian states and territories (e.g. *Australia: New South Wales* and *Australia: Australian Capital Territory*) in the **States** section on the right side and move them to the left box with the **<** icon.
+
+   .. important::
+
+       If a country has states, provinces, or counties, make sure to add them to the left box. If a country does not have any administrative territorial entities, leave the left box in the **States** section empty.
+
+#. Leave the boxes on the left in other sections empty.
+
+#. Click the **Save** button.
+
+   .. image:: img/country_location.png
+       :align: center
+       :alt: A location for a country in CS-Cart and Multi-Vendor.

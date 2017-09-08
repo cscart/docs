@@ -2,36 +2,32 @@
 How To: Specify a Commentary for all Shipping Methods
 *****************************************************
 
-.. note::
+#. In the Administration panel, go to **Administration → Languages → Translations**.
 
-    **Tutorial Difficulty: 1 / 3**
+   .. image:: img/translations.png
+       :align: center
+       :alt: Go to Administration → Languages → Translations.
 
-1. In the Administration panel, go to **Administration → Languages → Translations**.
+#. Find the ``shipping_tips`` language variable.
 
-.. image:: img/translations.png
-	:align: center
-	:alt: Go to Administration → Languages → Translations.
+   .. hint::
 
-2. Find the ``shipping_tips`` language variable.
+       You can use the search menu on the right to find the language variable you need.
 
-.. hint::
+#. Enter the desired value of the language variable.
 
-    You can use the search menu on the right to find the language variable you need.
+#. Click **Save**.
 
-3. Enter the desired value of the language variable.
+   .. image:: img/shipping_tips.png
+       :align: center
+       :alt: Enter the text that you want to display for all shipping methods at the shipping method step.
 
-4. Click **Save**.
+#. If you go to checkout, you'll see the text that you entered.
 
-.. image:: img/shipping_tips.png
-	:align: center
-	:alt: Enter the text that you want to display for all shipping methods at the shipping method step.
+   .. note::
 
-5. If you go to checkout, you'll see the text that you entered.
+      The value of the ``shipping_tips`` language variable will appear for all shipping methods.
 
-.. note::
-
-    The value of the ``shipping_tips`` language variable will appear for all shipping methods.
-
-.. image:: img/tip_at_checkout.png
-	:align: center
-	:alt: The shipping tip will appear at checkout for all the shipping methods of your store.
+   .. image:: img/tip_at_checkout.png
+       :align: center
+       :alt: The shipping tip will appear at checkout for all the shipping methods of your store.

@@ -2,11 +2,6 @@
 How To: Set up Canada Post in CS-Cart
 *************************************
 
-.. note::
-
-    **Tutorial Difficulty: 1 / 3**
-
-
 Follow these steps to set up a shipping method that uses `Canada Post <https://www.canadapost.ca/web/en/home.page>`_:
 
 ================================
