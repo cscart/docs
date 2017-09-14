@@ -24,7 +24,7 @@ To set up a manual shipping method with pre-determined rates depending on a loca
 
    * :doc:`Order total </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/order_total>`
 
-   * Weight of the items in the order
+   * :doc:`Weight of the items in the order </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/total_and_weight>`
 
    * :doc:`Quantity of the items in the order </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/product_amount>`
 
