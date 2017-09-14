@@ -111,6 +111,8 @@ On the Product Editing Page
        :align: center
        :alt: Cloning a specific product from the editing page.
 
+.. _products-bulk-editing:
+
 =================================
 Editing Multiple Products at Once
 =================================
@@ -180,6 +182,8 @@ To update all products:
    .. image:: img/catalog_28.png
        :align: center
        :alt: The global update page allows you to adjust prices and stock of all products at once.
+
+.. _products-csv-import:
 
 ==================
 Importing Products
