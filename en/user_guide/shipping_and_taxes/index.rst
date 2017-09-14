@@ -10,3 +10,7 @@ This section of the Administration panel allows you to manage shipping and tax s
     :glob:
 
     */index
+    address
+    product_shipping_settings
+    shipping_on_frontend
+    global_shipping_settings
