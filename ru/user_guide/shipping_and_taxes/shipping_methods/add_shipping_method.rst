@@ -12,7 +12,7 @@
    .. fancybox:: img/shippings_017.png
        :alt: Методы доставки
 
-#. Задайте `настройки способа доставки </user_guide/shipping_and_taxes/shipping_methods/shipping_method_attributes>`.
+#. Задайте :doc:`настройки способа доставки </user_guide/shipping_and_taxes/shipping_methods/shipping_method_attributes>`.
 
 #. Нажмите кнопку **Создать**.
 
