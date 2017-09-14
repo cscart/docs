@@ -38,7 +38,7 @@ To set up a shipping cost that depends on order total and weight:
        :widths: 10 10 10
        :header-rows: 1
 
-       *   -   Products cost 
+       *   -   Products weight 
            -   Rate value
            -   Type
        *   -   More than 0 lbs

@@ -16,7 +16,7 @@ How To: Make Shipping Cost Depend on the Product Amount
        :widths: 10 10 10
        :header-rows: 1
 
-       *   -   Products cost 
+       *   -   Product quantity 
            -   Rate value
            -   Type
        *   -   More than 0 item(s)

@@ -35,7 +35,7 @@ Way 1. Configuring the Shipping Method
        :widths: 10 10 10 10
        :header-rows: 1
 
-       *   -   Products cost 
+       *   -   Product quantity 
            -   Rate value
            -   Type
            -   Per Item
