@@ -22,4 +22,4 @@ State Properties
 
   .. note::
 
-      If you disable a state, users won't be able to select it in their profiles or at checkout.
+      If you disable a state, users won't be able to select it in their accounts or at checkout.

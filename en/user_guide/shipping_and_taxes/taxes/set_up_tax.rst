@@ -16,7 +16,7 @@ Go to **Administration → Shipping & taxes → Locations** and :doc:`create loc
 Configure a Tax
 ===============
 
-#. Go to **Administration → Shipping & Taxes → Taxes**.
+#. Go to **Administration → Shipping & taxes → Taxes**.
 
 #. Add a new tax by clicking the **+** button in the upper right part of the page, or edit an existing tax by clicking on it's name. 
 
@@ -56,7 +56,7 @@ Apply Taxes to All Products
 
 #. Go to **Administration → Shipping & taxes → Taxes**. 
 
-#. Tick the checkbox to the left of the tax name.
+#. Tick the checkbox to the left of the tax that you want to apply to all products.
 
    .. hint::
 
@@ -78,7 +78,7 @@ Apply Taxes to a Specific Product
 
 #. Find the product and click on its name.
 
-#. Scroll down to the **Taxes** property in the **Pricing / inventory** section.
+#. Find the **Taxes** property in the **Pricing / inventory** section.
 
 #. Tick the checkboxes of the taxes you'd like to apply.
 
@@ -96,7 +96,7 @@ Apply Taxes to Shipping Methods
 
 #. Click on the name of the shipping method.
 
-#. Scroll down to the **Taxes** property in the **Extra** section.
+#. Find the **Taxes** property in the **Extra** section.
 
 #. Tick the checkboxes of the taxes you'd like you apply.
 
