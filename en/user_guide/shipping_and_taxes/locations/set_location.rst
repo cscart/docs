@@ -2,9 +2,9 @@
 How To: Set up a Location
 *************************
 
-#. Go to **Administration → Shipping & Taxes → Locations**.
+#. Go to **Administration → Shipping & taxes → Locations**.
 
-#. Click the **+** button on the right.
+#. Click the **+** button on the right to add a new location.
 
 #. Enter the desired name for your new location. Let's set up a location for Maryland, USA, and call it *USA-Maryland*.
 
@@ -14,7 +14,7 @@ How To: Set up a Location
 
 #. Leave the left boxes empty for all other sections.
 
-#. Click the **Save** button to save the changes.
+#. Click the **Create** button.
 
    .. important::
 

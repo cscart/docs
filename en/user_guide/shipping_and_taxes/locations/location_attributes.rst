@@ -18,7 +18,7 @@ General
 Countries
 =========
 
-The right box contains all available countries, and the left box contains the countries included in the location. To move items from one box to the other, use the twin horizontal arrows between the boxes. To select multiple items, press and hold **Ctrl** while selecting.
+The right box contains all available countries, and the left box contains the countries included in the location. To move items from one box to the other, use the twin horizontal arrows between the boxes. To select multiple items, press and hold **Ctrl** or **Shift** while selecting.
 
 .. hint::
 
@@ -32,7 +32,7 @@ The right box contains all available countries, and the left box contains the co
 States
 ======
 
-The right box contains all available states, and the left box contains the states included in the location. To move items from one box to the other, use the twin horizontal arrows between the boxes. To select multiple items, press and hold **Ctrl** while selecting.
+The right box contains all available states, and the left box contains the states included in the location. To move items from one box to the other, use the twin horizontal arrows between the boxes. To select multiple items, press and hold **Ctrl** or **Shift** while selecting.
 
 .. hint::
 
@@ -66,7 +66,7 @@ The text box contains the cities included in the location. Different entries mus
 
 It is not necessary to specify the full city name, you can use wildcards instead. Here is how they work:
 
-* **?** = any single character.
+* **?** = any single character (or a space).
 
 * ***** = any series of characters.
 
@@ -88,7 +88,7 @@ The text box contains the addresses included in the location. Different entries 
 
 It is not necessary to specify the exact addresses, you can use wildcards instead. Here is how they work:
 
-* **?** = any single character; for example **??? Street** stands for *Doe Street*, or *3rd Street*, and so on.
+* **?** = any single character (or a space); for example **??? Street** stands for *Doe Street*, or *3rd Street*, and so on.
 
 * ***** = any series of characters; for example, *** Street** stands for *1st Street*, *Random Street*, and so on.
 
