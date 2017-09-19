@@ -2,7 +2,7 @@
 Taxes
 *****
 
-This **Administration → Shipping & taxes → Taxes** contains the list of taxes used in your store. You can use this page to add new tax calculation rules or edit and remove existing ones.
+The **Administration → Shipping & taxes → Taxes** page contains the list of taxes used in your store. You can use this page to add new tax calculation rules or edit and remove existing ones.
 
 .. image:: img/taxes.png
     :align: center
