@@ -18,25 +18,19 @@ Step 1. Modify fn.common.php
 
 1.1. Open the **fn.common.php** file located in the *app/functions* directory of your CS-Cart installation.
 
-1.2. Find this line of the code:
+1.2. Find this line of the code::
 
-.. code-block:: php
-
-    $price = sprintf('%.' . $decimals . 'f', round((double) $price + 0.00000000001, $decimals));
+  $price = sprintf('%.' . $decimals . 'f', round((double) $price + 0.00000000001, $decimals));
 
 1.3. Replace this line with one of the following lines, depending on the value of the **Tax calculation method based on** setting under **Settings → General**:
 
-*  For *Subtotal*, use this line:
+* For *Subtotal*, use this line::
 
-  .. code-block:: php
+    $price = sprintf('%.' . $decimals . 'f', round((double) $price + 0.00000000001, 4));
 
-      $price = sprintf('%.' . $decimals . 'f', round((double) $price + 0.00000000001, 4));
+* For *Unit price*, use this line::
 
-* For *Unit price*, use this line:
-
-  .. code-block:: php
-
-      $price = sprintf('%.' . 4 . 'f', round((double) $price + 0.00000000001, 4));
+    $price = sprintf('%.' . 4 . 'f', round((double) $price + 0.00000000001, 4));
 
 1.4. Save the file. This will make CS-Cart round decimals to 4 digits.
 
@@ -56,34 +50,32 @@ PayPal only supports **xx.xx** (2 decimal places) price format. If you want to i
 
 2.1. Open the **fn.common.php** file located in the *app/functions* directory of your CS-Cart installation
 
-2.2. Add the following piece of the code to the end of the file:
+2.2. Add the following piece of the code to the end of the file::
 
-.. code-block:: php
+  function fn_format_price_paypal($price = 0)
+  {
+       return sprintf("%.2f", round((double) $price + 0.00000000001, 2));
+  }
+  function fn_format_price_by_currency_paypal($price, $currency_from = CART_PRIMARY_CURRENCY, $currency_to = CART_SECONDARY_CURRENCY)
+  {
+      $currencies = Registry::get('currencies');
+      $currency_from = $currencies[$currency_from];
+      $currency_to = $currencies[$currency_to];
 
-    function fn_format_price_paypal($price = 0)
-    {
-         return sprintf("%.2f", round((double) $price + 0.00000000001, 2));
-    }
-    function fn_format_price_by_currency_paypal($price, $currency_from = CART_PRIMARY_CURRENCY, $currency_to = CART_SECONDARY_CURRENCY)
-    {
-        $currencies = Registry::get('currencies');
-        $currency_from = $currencies[$currency_from];
-        $currency_to = $currencies[$currency_to];
+      $result = fn_format_price_paypal($price / ($currency_to['coefficient'] / $currency_from['coefficient']), CART_SECONDARY_CURRENCY);
 
-        $result = fn_format_price_paypal($price / ($currency_to['coefficient'] / $currency_from['coefficient']), CART_SECONDARY_CURRENCY);
+      /**
+       * Update converted value
+       *
+       * @param float  $price         value to be converted
+       * @param string $currency_from in what currency did we get the value
+       * @param string $currency_to   in what currency should we send the result
+       * @param float  $result        converted value
+       */
+      fn_set_hook('format_price_by_currency_paypal_post', $price, $currency_from, $currency_to, $result);
 
-        /**
-         * Update converted value
-         *
-         * @param float  $price         value to be converted
-         * @param string $currency_from in what currency did we get the value
-         * @param string $currency_to   in what currency should we send the result
-         * @param float  $result        converted value
-         */
-        fn_set_hook('format_price_by_currency_paypal_post', $price, $currency_from, $currency_to, $result);
-
-        return $result;
-    }
+      return $result;
+  }
 
 2.3. Save the file.
 
