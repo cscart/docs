@@ -12,6 +12,8 @@ Multi-Vendor has a page that helps store owners and vendors to keep track of the
 
 * Changing an order in a way that affects order total.
 
+* Issuing a refund via the PayPal Payments or RMA add-on.
+
 * Issuing a :ref:`payout <payout>`.
 
 * Requesting a :ref:`withdrawal <withdrawal>`.
