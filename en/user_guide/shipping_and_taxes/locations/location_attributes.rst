@@ -2,6 +2,10 @@
 Location Properties
 *******************
 
+.. important::
+
+    A customer is assigned to a location when all the **non-empty conditions** (as in, countries, states, ZIP codes, cities, addresses) are met. Don't specify more conditions for a location than you have to: a customer can make a mistake or leave the fields empty.
+
 =======
 General
 =======
