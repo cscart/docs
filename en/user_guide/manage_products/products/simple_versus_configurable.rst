@@ -18,7 +18,7 @@ Starting with **CS-Cart & Multi-Vendor 4.6.1**, administrators can choose **Prod
 
 .. note::
 
-    Once you create the product, you won't be able to change its type. That's why it's important to know the difference between option combinations and product variations.
+    If necessary, you'll be able to :doc:`convert simple products to configurable ones <convert_combinations_to_variations>`, but not the other way around. That's why it's important to know the difference between option combinations and product variations.
 
 ==========================================
 Option Combinations and Product Variations
