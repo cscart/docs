@@ -48,7 +48,7 @@ Apply Taxes to Products
 
 .. important::
 
-    If you have several taxes and want to apply these taxes to the product price, they should have the same priority. For example, if the priority of tax A is 1 and the priority of tax B is 2, the tax A will be calculated for the product price and the tax B for the product price with tax A.
+    If you apply several taxes to the base product price, make sure they have the same priority. Otherwise, if the priority of **tax A** is *1* and the priority of **tax B** is *2*, the tax A will be applied to the product price, and tax B will be applied to the product price with tax A.
 
 ---------------------------
 Apply Taxes to All Products
