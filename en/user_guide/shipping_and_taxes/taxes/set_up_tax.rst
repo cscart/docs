@@ -36,7 +36,7 @@ Configure a Tax
 
    .. hint::
 
-      If the **Tax calculation method** in **Settings → General** is based on unit price, make sure to check **Settings → Appearance** for 2 settings related to taxes: 
+      Check **Settings → Appearance** for 2 settings related to taxes: 
 
       * Display prices with taxes on category/product pages
 
@@ -48,7 +48,7 @@ Apply Taxes to Products
 
 .. important::
 
-    If you apply several taxes to the base product price, make sure they have the same priority. Otherwise, if the priority of **tax A** is *1* and the priority of **tax B** is *2*, the tax A will be applied to the product price, and tax B will be applied to the product price with tax A.
+    If you want to apply several taxes to the base product price, make sure those taxes have the same priority. Otherwise, if the priority of **tax A** is *1* and the priority of **tax B** is *2*, the tax A will be applied to the base product price, and tax B will be applied to the product price with tax A applied already.
 
 ---------------------------
 Apply Taxes to All Products
@@ -56,11 +56,7 @@ Apply Taxes to All Products
 
 #. Go to **Administration → Shipping & taxes → Taxes**. 
 
-#. Tick the checkbox to the left of the tax that you want to apply to all products.
-
-   .. hint::
-
-       You can tick multiple checkboxes to apply multiple taxes at once.
+#. Tick the checkbox to the left of the tax that you want to apply to all products. You can tick multiple checkboxes to apply multiple taxes at once.
 
 #. Click the gear button in the upper right part of the page.
 

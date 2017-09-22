@@ -6,7 +6,7 @@ The **Administration → Shipping & taxes → Locations** page allows you to man
 
 .. important::
 
-    If the customer's address doesn't match any existing location (or if no shipping methods have rates for the customer's location), then the customer won't be able to select a shipping method at checkout and place an order.
+    If a customer's address doesn't match any existing location (or if no shipping methods have rates for the customer's location), then the customer won't be able to select a shipping method at checkout and place an order.
 
 .. hint::
 
