@@ -12,6 +12,10 @@ General
 
 * **Priority**—the position of this tax relative to other taxes. It determines the order in which taxes are applied to a product or to a shipping method.
 
+  .. important::
+
+      If you want to apply several taxes to the base product price, make sure those taxes have the same priority. Otherwise, if the priority of **tax A** is *1* and the priority of **tax B** is *2*, the tax A will be applied to the base product price, and tax B will be applied to the product price with tax A applied already.
+
 * **Rates depend on**—the type of address by which the tax rate is determined; it can either be the shipping address or billing address.
 
 * **Status**—the status of the tax: *Active* or *Disabled*.
