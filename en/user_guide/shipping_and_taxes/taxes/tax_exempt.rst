@@ -10,7 +10,7 @@ How To: Make an Account Tax Exempt
 
 #. Select an account which will be tax-free.
 
-#. In the **User account information** section tick the **Tax exempt** checkbox.
+#. Tick the **Tax exempt** checkbox in the **User account information** section.
 
 #. Click the **Save** button.
 
