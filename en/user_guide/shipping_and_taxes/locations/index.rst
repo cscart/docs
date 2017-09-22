@@ -10,7 +10,7 @@ The **Administration → Shipping & taxes → Locations** page allows you to man
 
 .. hint::
 
-    **Default location (all countries)** applies to the customers who don't belong to any existing locations in your store. Create a shipping method called *Discuss with manager* and make it free for the default location. That way any customer will be able to place an order, unless that customer belongs to a non-default location without shipping methods.
+    **Default location (all countries)** applies to the customers who don't belong to any existing locations in your store. Create a shipping method called *Discuss with manager* and make it free for the default location. That way any customer will be able to place an order, unless that customer belongs to a non-default location without any shipping rates.
 
 .. image:: img/locations.png
     :align: center
