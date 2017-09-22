@@ -16,7 +16,7 @@ To set up a location for a particular country (for example, Australia):
 
    .. important::
 
-       If a country has states, provinces, or counties in the right box, make sure to add them to the left box. If a country does not have any administrative territorial entities, leave the left box in the **States** section empty.
+       If a country has states, provinces, or counties in the right box, make sure to add them to the left box, or else they won't be considered a part of this location. If a country does not have any administrative territorial entities, leave the left box in the **States** section empty.
 
 #. Leave the boxes on the left in other sections empty.
 
