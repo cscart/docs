@@ -24,7 +24,7 @@ General
 
   .. note::
 
-      Shipping method icons appear on the storefront in a special block with the **Shipping methods** content type. Make sure to create such a block in **Design → Layouts**.
+      Shipping method icons appear on the storefront in a special **Shipping methods** block. You can create this block on the **Design → Layouts** page.
 
 * **Delivery time**—the time it takes to deliver an order. This info is displayed on the storefront, so that customers can decide if the delivery time meets their requirements.
 
@@ -88,7 +88,7 @@ The rates can depend on the product cost, weight or quantity, and on customer's 
 
 * **Rate value**—the shipping rate itself.
 
-* **Type**—the type of the rate: an absolute value or a percentage added to the product cost.
+* **Type**—the type of the rate: an absolute value or a percentage.
 
 .. hint::
 
