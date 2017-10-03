@@ -4,9 +4,11 @@ If No Shipping Methods Appear at Checkout
 
 If shipping methods don't appear at checkout, there are two possible scenarios:
 
-* You see the following message in the **Select shipping method** section on the checkout page: *Unfortunately no shipping options are available for your location. Please contact us and we will see about delivering to you.*
+* You see the following message in the **Select shipping method** section on the checkout page: *Sorry, it seems that we have no shipping options available for your location. Please check your shipping address and contact us if everything is okay. We'll see what we can do about it.*
 
-* The **Select shipping method** section doesn't appear on the **Checkout** page at all.
+* The **Select shipping method** section doesn't appear on the сheckout page at all.
+
+* The **Select shipping method** section is there, but only *Free shipping* is written there.
 
 ===============================================
 No Shipping Options Available for Your Location
@@ -24,10 +26,12 @@ No Shipping Options Available for Your Location
 Shipping Method Selection Doesn't Appear
 ======================================== 
 
-* Check whether the **Free shipping** option is disabled for the products you are trying to order:
+Go to **Settings → Checkout** and make sure that the **Display "Shipping method" step** checkbox is ticked.
 
-  * Go to **Products → Products**.
+====================================================
+"Free Shipping" Is Shown Instead of Shipping Methods
+====================================================
 
-  * Find the necessary product and click on its name.
+* Make sure that you have an active shipping method under **Administration → Shipping & taxes → Shipping methods**.
 
-  * Open the **Shipping Properties** tab and check whether the **Free shipping** option is disabled for the product.
+* Make sure that the product being purchased is not downloadable (by default, digital products are shipped for free, unless you configure the product otherwise).
