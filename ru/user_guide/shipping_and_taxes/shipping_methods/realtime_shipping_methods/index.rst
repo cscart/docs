@@ -7,6 +7,7 @@
     :glob:
 
     ems
+    boxberry
     rus_post
     edost
     rus_sdek
@@ -16,3 +17,6 @@
     pecom
     dellin
     yandex_delivery
+    extra_amount
+    not_displayed
+    realtime_shipping_and_payment_problem

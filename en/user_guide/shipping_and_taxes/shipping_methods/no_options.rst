@@ -8,7 +8,7 @@ If shipping methods don't appear at checkout, there are two possible scenarios:
 
 * The **Select shipping method** section doesn't appear on the сheckout page at all.
 
-* The **Select shipping method** section is there, but only *Free shipping* is written there.
+* The **Select shipping method** section is there, but only *No shipping required* is written there.
 
 ===============================================
 No Shipping Options Available for Your Location
@@ -28,9 +28,9 @@ Shipping Method Selection Doesn't Appear
 
 Go to **Settings → Checkout** and make sure that the **Display "Shipping method" step** checkbox is ticked.
 
-====================================================
-"Free Shipping" Is Shown Instead of Shipping Methods
-====================================================
+===========================================================
+"No Shipping Required" Is Shown Instead of Shipping Methods
+===========================================================
 
 * Make sure that you have an active shipping method under **Administration → Shipping & taxes → Shipping methods**.
 

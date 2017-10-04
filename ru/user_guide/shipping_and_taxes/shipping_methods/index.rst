@@ -20,8 +20,15 @@
     :maxdepth: 3
 
     add_shipping_method
-    free_shipping
+    shipping_method_attributes
     realtime_shipping_methods/index
+    free_shipping
+    disable_shipping
+    create_payment_dependencies
+    shipping_tips
+    incorrect_cost
+    no_options
+    test_button_error
 
 .. fancybox:: img/shipping_methods.png
     :alt: Список способов доставки в CS-Cart.
