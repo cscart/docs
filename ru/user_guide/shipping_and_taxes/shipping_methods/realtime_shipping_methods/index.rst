@@ -7,7 +7,6 @@
     :glob:
 
     ems
-    boxberry
     rus_post
     edost
     rus_sdek
@@ -20,3 +19,8 @@
     extra_amount
     not_displayed
     realtime_shipping_and_payment_problem
+
+.. toctree::
+    :hidden:
+
+    boxberry
