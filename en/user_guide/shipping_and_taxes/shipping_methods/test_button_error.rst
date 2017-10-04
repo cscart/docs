@@ -4,7 +4,7 @@ If an Error Occurs When Clicking the Test Button
 
 * The **Test** button works only for **real-time** shipping methods.
 
-* Make sure that the company and default customer addresses are entered properly on the **Settings → Company** and **Settings → General** pages, and that they are different.
+* Make sure that :doc:`the company and default customer addresses </user_guide/shipping_and_taxes/address>` are entered properly on the **Settings → Company** and **Settings → General** pages, and that they are different.
 
   .. note::
 

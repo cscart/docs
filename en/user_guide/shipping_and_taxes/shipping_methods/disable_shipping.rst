@@ -15,3 +15,10 @@ To disable shipping on the storefront:
    .. image:: img/disable_shipping.png
        :align: center
        :alt: Disabling shipping in CS-Cart and Multi-Vendor.
+
+#. Go to **Settings → Checkout**.
+
+#. Untick the **Display "Shipping Method" step** checkbox.
+
+#. Click the **Save** button.
+
