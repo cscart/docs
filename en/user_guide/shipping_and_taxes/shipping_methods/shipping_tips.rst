@@ -26,8 +26,8 @@ How To: Specify a Commentary for all Shipping Methods
 
    .. note::
 
-      The value of the ``shipping_tips`` language variable will appear for all shipping methods.
+      The value of the ``shipping_tips`` language variable will appear below the list of shipping methods, regardless of the shipping method that is currently chosen.
 
    .. image:: img/tip_at_checkout.png
        :align: center
-       :alt: The shipping tip will appear at checkout for all the shipping methods of your store.
+       :alt: The shipping tip will appear at checkout below the list of shipping methods, regardless of the shipping method that is currently chosen.
