@@ -18,7 +18,7 @@ A customer will be offered the shipping methods that are suitable for his or her
 
 .. image:: img/shipping_methods.png
     :align: center
-    :alt: Shipping methods list
+    :alt: The list of shipping methods in CS-Cart.
 
 .. toctree::
     :maxdepth: 2
