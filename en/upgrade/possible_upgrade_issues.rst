@@ -6,7 +6,7 @@ This article describes what is done during the upgrade process in CS-Cart and Mu
 
 .. warning::
 
-    This article is intended for server administrators. If you can't solve the problem by yourself, please contact `CS-Cart's technical support <https://helpdesk.cs-cart.com>`_.
+    This article is intended for experienced users with system administration skills. If you can't solve the problem by yourself, please contact `CS-Cart's technical support <https://helpdesk.cs-cart.com>`_.
 
 .. contents::
    :local:
