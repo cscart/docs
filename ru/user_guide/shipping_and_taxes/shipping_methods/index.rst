@@ -22,6 +22,7 @@
     add_shipping_method
     shipping_method_attributes
     realtime_shipping_methods/index
+    manual_shipping_methods/index
     free_shipping
     disable_shipping
     create_payment_dependencies
