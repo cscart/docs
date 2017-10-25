@@ -12,15 +12,15 @@
     
     *   -   Ресурс 
         -   Описание
-    *   -   GET /api/2.0/payments
+    *   -   GET /api/2.0/combinations
         -   Получить список доступных комбинаций опций (требуется product_id)
-    *   -   GET /api/2.0/payments/:id
+    *   -   GET /api/2.0/combinations/:id
         -   Получить данные о комбинации опций
-    *   -   POST /api/2.0/payments/
+    *   -   POST /api/2.0/combinations/
         -   Создать новую комбинацию опций
-    *   -   PUT /api/2.0/payments/:id 
+    *   -   PUT /api/2.0/combinations/:id 
         -   Обновить комбинацию опций
-    *   -   DELETE /api/2.0/payments/:id
+    *   -   DELETE /api/2.0/combinations/:id
         -   Удалить комбинацию опций
 
 ==========================
