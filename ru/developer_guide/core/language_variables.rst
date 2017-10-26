@@ -136,7 +136,7 @@ msgstr
     msgid "[n] day|[n] days"
     msgstr "[n] день|[n] дня|[n] дней"
 
-При перечислении первой указывается форма единственного числа, затем форма(ы) множественного. Порядок следования форм для различных языков соответствует описанному в документе `Language Plural Rules <http://unicode.org/repos/cldr-tmp/trunk/diff/supplemental/language_plural_rules.html>`_.
+При перечислении первой указывается форма единственного числа, затем форма(ы) множественного. Порядок следования форм для различных языков соответствует описанному в документе `Language Plural Rules <http://www.unicode.org/cldr/charts/22/supplemental/language_plural_rules.html>`_.
 
 =============
 Использование

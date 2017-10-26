@@ -111,7 +111,7 @@ Here’s the same language variable for the Russian language, that has two plura
     msgid "[n] day|[n] days"
     msgstr "[n] день|[n] дня|[n] дней"
 
-When listing multiple word forms, the singular form always comes first. The order, in which the forms for different languages are listed, complies with the `Language Plural Rules <http://unicode.org/repos/cldr-tmp/trunk/diff/supplemental/language_plural_rules.html>`_.
+When listing multiple word forms, the singular form always comes first. The order, in which the forms for different languages are listed, complies with the `Language Plural Rules <http://www.unicode.org/cldr/charts/22/supplemental/language_plural_rules.html>`_.
 
 ========================
 Using Language Variables
