@@ -256,7 +256,7 @@ Here are the additional filters and functions:
 
 * **puny_decode** (filter)—decodes the URLs from PunyCode to international format. This filter can be found in email templates that have URLs, for example, in password recovery emails: ``{{ url|puny_decode }}``.
 
-* **__** (function)—shows translations. For example, ``{{__("change_order_status_c_text")}}`` will be displayed in the English version of the document as the value of the English language variable for the corresponding language: *Your order has been completed. Thank you for choosing us.*
+* **__** (function)—shows translations. For example, ``{{__("change_order_status_c_text")}}`` will be displayed in the English version of the document as the English value of the corresponding language variable: *Your order has been completed. Thank you for choosing us.*
 
 * **snippet** (function)—inserts a snippet. For example, ``{{ snippet("ship_to") }}`` in the **Invoice** document inserts the corresponding snippet from the **Code snippets** tab into the document.
 
