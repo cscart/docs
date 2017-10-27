@@ -8,6 +8,7 @@ Version Compatibility
 
     adapting_452_to_461
     adapting_461_to_462
+    adapting_462_to_463
 
 .. toctree::
     :maxdepth: 2

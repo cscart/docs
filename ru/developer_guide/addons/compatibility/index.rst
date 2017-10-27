@@ -1,0 +1,14 @@
+*********************************
+Изменения в новых версиях CS-Cart
+*********************************
+
+.. toctree::
+    :maxdepth: 2
+    :titlesonly:
+
+    adapting_462_to_463
+
+
+.. note::
+
+    Информация о том, какие изменения в хуках и функциях происходили в более ранних версиях CS-Cart, доступна на английском языке для версий `4.3.x <http://docs.cs-cart.com/4.3.x/developer_guide/addons/compatibility/index.html>`_, `4.4.x <http://docs.cs-cart.com/4.4.x/developer_guide/addons/compatibility/index.html>`_, `4.5.x <http://docs.cs-cart.com/4.5.x/developer_guide/addons/compatibility/index.html>`_ и `4.6.x <http://docs.cs-cart.com/4.6.x/developer_guide/addons/compatibility/index.html>`_.
