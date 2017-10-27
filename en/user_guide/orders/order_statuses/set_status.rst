@@ -71,3 +71,7 @@ To set up an order status:
    .. image:: img/order_status_01.png
        :align: center
        :alt: Status settings
+
+   .. note::
+
+       CS-Cart and Multi-Vendor only consider that the money has been paid when an order gets the *Processed* or *Complete* status (regardless of how you rename them). If you'd like to have more statuses that signify that the order has been paid for, that would have to be done via a third-party add-on.

@@ -18,6 +18,10 @@ The following statuses are available by default and cannot be deleted:
 
 * **Complete**—all work on the order was completed.
 
+  .. note::
+
+      CS-Cart and Multi-Vendor only consider that the money has been paid when an order gets the *Processed* or *Complete* status (regardless of how you rename them). If you'd like to have more statuses that signify that the order has been paid for, that would have to be done via a third-party add-on.
+
 * **Open**—the order was placed and created in the store database, but it hasn't been processed yet.
 
 * **Failed**—the payment transaction failed.
