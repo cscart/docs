@@ -180,13 +180,89 @@ We use the Twig library (version 1.24) as a template engine. The standard extens
 
 Here are the additional filters and functions:
 
-* ``date`` (filter)—formats the value as a date.
-* ``price`` (filter)—formats the value as a price.
-* ``filesize`` (filter)—formats the value as a file size in kilobytes. 
-* ``puny_decode`` (filter)—decodes the URLs from PunyCode to international format.
-* ``__`` (function)—shows translations.
-* ``snippet`` (function)—inserts a snippet.
-* ``include_doc`` (function)—includes documents into the body of email notification.
+* **date** (filter)—formats the value as a date. 
+
+  If you use the this filter, make sure to specify the date format. For example:
+ 
+  * ``{{ o.raw.timestamp }}`` will look like *1127988066* (Unix timestamp).
+
+  * ``{{ o.raw.timestamp|date("%d/%m/%Y") }}`` will look like *29/09/2005* (human-readable time).
+
+  Here are the formats available in CS-Cart/Multi-Vendor settings:
+
+  .. list-table::
+      :header-rows: 1
+      :widths: 20 25 20
+
+      *   -   Date format
+          -   Displayed date
+          -   Description
+
+      *   -   ``"%d/%m/%Y"``
+          -   29/09/2005
+          -   day/month/year
+
+      *   -   ``"%d-%m-%Y"``
+          -   29-09-2005
+          -   day-month-year
+
+      *   -   ``"%d.%m.%Y"``
+          -   29.09.2005
+          -   day.month.year
+
+      *   -   ``"%m/%d/%Y"``
+          -   09/29/2005
+          -   month/day/year
+
+      *   -   ``"%m-%d-%Y"``
+          -   09-29-2005
+          -   month-day-year
+
+      *   -   ``"%m.%d.%Y"``
+          -   09.29.2005
+          -   month.day.year
+
+      *   -   ``"%Y/%m/%d"``
+          -   2005/09/29
+          -   year/month/day
+
+      *    -   ``%Y-%m-%d"``
+           -   2005-09-29
+           -   year-month-day
+
+      *    -   ``"%Y.%m.%d"``
+           -   2005.09.29
+           -   year.month.day
+
+      *    -   ``%b %e, %Y"``
+           -   Sep 29, 2005
+           -   month day, year
+
+      *    -   ``"%d %b %Y"``
+           -   29 Sep 2005
+           -   day month year
+
+      *    -   ``"%A, %B %e, %Y"``
+           -   Thursday, September 29, 2005
+           -   day of week, month day, year
+
+      *    -   ``"%A, %e %B %Y"``
+           -   Thursday, 29 September 2005
+           -   day of week, day month year
+
+* **price** (filter)—formats the value as a price. For example, ``{{ o.raw.total }}`` will look like *917.99*, and ``{{ o.raw.total|price }}`` will look like *$917.99*.
+
+* **filesize** (filter)—formats the value as a file size in kilobytes. For example, it is used in the email template about access to downloadable products: ``{{ file.file_size|filesize }}``.
+
+* **puny_decode** (filter)—decodes the URLs from PunyCode to international format. This function can be found in email templates that have URLs, for example, in password recovery emails: ``{{ url|puny_decode }}``.
+
+* **__** (function)—shows translations. For example, ``{{__("change_order_status_c_text")}}`` will be displayed in the English version of the document as follows: *Your order has been completed. Thank you for choosing us.*
+
+* **snippet** (function)—inserts a snippet. For example, ``{{ snippet("ship_to") }}`` in the **Invoice** document inserts the corresponding snippet from the **Code snippets** tab.
+
+* **include_doc** (function)—includes documents into the body of email notification. For example, the email notifications about order statuses have the following line: ``{{ include_doc("order.summary", order_info.order_id) }}``.
+
+  That line includes the ``order.summary`` document (information about the order) into the body of those emails. 
 
 .. hint::
 
