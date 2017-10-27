@@ -1,0 +1,165 @@
+***********************
+CS-Cart 4.6.3 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Design: WYSIWYG: A new version of the Redactor WYSIWYG editor (2.8.1) was added.
+
+[+] Document editor: A new language variable for the title of the invoice was added.
+
+[+] Document editor: The {p.raw.tax} attribute with the raw value of the tax sum was added; it is available for the objects from the “Products table” tab when you edit a document.
+
+[+] Hooks: Add-ons: Vendor plans: A new hook "vendor_plans_calculate_commission_for_payout_post" was added to modify payout data (e.g. commission amount).
+
+[+] Hooks: The new hooks called "update_discussion_pre",  "add_discussion_posts_post", update_discussion_post_post" were added.
+
+[+] Order management: The ability to find and select the customer during order creation by typing a part of the name was added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: Product variations [Beta]: A product with variations was added to the demo data.
+
+[*] Add-ons: Product variations [Beta]: Comparison list: The button on the comparison list was changed from "Select Options" to "Add to Cart" for products with variations.
+
+[*] Add-ons: Product variations [Beta]: The features of compared variations are now shown on comparison list.
+
+[*] Core: Robots: The type of the "data" field in the "robots_data" table was changed from "blob" to "text".
+
+[*] Design: Themes: Responsive: The names of some wrappers that can be selected for blocks were changed. The TPL file names of these wrappers weren't changed.
+
+[*] Hooks: Add-ons: Banners: get_banners: The ability to change the list of fields selected from the database before the SQL query was added.
+
+========
+Bugfixes
+========
+
+[!] Add-ons: Age verification: An SQL query was not formed according to CS-Cart standards. Fixed.
+
+[!] Add-ons: Banners: A very narrow part of the next banner could be seen in the banner carousel. Fixed.
+
+[!] Add-ons: Comments and reviews: When the value of the "Reviews" setting was changed for multiple selected categories at once, that change wasn't saved. Fixed.
+
+[!] Add-ons: Divido: A PHP notice occurred when a customer went to checkout after rate calculation. Fixed.
+
+[!] Add-ons: eBay synchronization: The add-on was reporting failed license checks in CS-Cart logs. Fixed.
+
+[!] Add-ons: Google reCaptcha: When the add-on was active, the menu could move outside the screen on mobile devices. Fixed.
+
+[!] Add-ons: Newsletters: An error occurred when the last existing mailing list was deleted. Fixed.
+
+[!] Add-ons: Newsletters: Campaigns: Incorrect campaign statistics were displayed when multiple campaigns existed. Fixed.
+
+[!] Add-ons: PayPal Payments: Checkout: When other payment methods existed in the same category with PayPal Express Checkout, closing PayPal's In-Context Checkout pop-up window, choosing another payment method, and then choosing PayPal again resulted in being redirected to the PayPal payment page rather than opening the In-Context Checkout pop-up window again. Fixed.
+
+[!] Add-ons: Product variations [Beta]: A PHP notice occurred after an administrator converted a simple product to configurable product and then used product preview. Fixed.
+
+[!] Add-ons: Product variations [Beta]: A block with products wasn't displayed properly on the product details page of a product with variations. Fixed.
+
+[!] Add-ons: Product variations [Beta]: Import/Export: Features of product variations weren't exported to CSV files on PHP 5.3. Fixed.
+
+[!] Add-ons: Product variations [Beta]: Orders: Editing and saving an order that had a product variation that was no longer in stock resulted in the order getting the "Backordered" status. Fixed.
+
+[!] Add-ons: Product variations [Beta]: PHP notices occurred when someone tried to view a non-existing order while the "Product variations" add-on was enabled. Fixed.
+
+[!] Add-ons: Product variations [Beta]: The order of options wasn't correct during the generation of variations for a product. Fixed.
+
+[!] Add-ons: Reward points: After a product was imported with the Y value in the "Override points" field, the points for ordering this product were still assigned according to the global rules. Fixed.
+
+[!] Add-ons: SEO: If a child page had a word "page-" in its SEO name, the content of the parent page was displayed when viewing the child page. Fixed.
+
+[!] Add-ons: Searchanise: Changing the status of some category on the list of categories didn't affect whether or not that category appeared in the widget. Fixed.
+
+[!] Add-ons: Searchanise: The "fn_searchanise_tools_change_status" hook called a non-existent function. Fixed.
+
+[!] Administration panel: Dashboard: If a specific date was selected, and not a period, then the orders weren't displayed on the dashboard. Fixed.
+
+[!] Administration panel: Dashboard: The list of recent orders on the dashboard could be displayed incorrectly to admins with limited privileges. Fixed.
+
+[!] Checkout: After creating a new user profile for an existing customer during checkout, the payment methods weren't displayed. Fixed.
+
+[!] Core: The "fn_format_price_by_currency" function passed a wrong parameter to the "fn_format_price" function. Fixed.
+
+[!] Design: Layouts: A block with the "Text links" template was displayed incorrectly on mobile devices when the "Show items inline" checkbox was ticked in the block's settings. Fixed.
+
+[!] Documents: Invoice: Payment surcharge was not shown in order invoice. Fixed.
+
+[!] E-mails: Back-in-stock notifications for shared products were always sent from the store to which the product belonged, even if the customer subscribed to the product on a different storefront. Fixed.
+
+[!] Email templates: Orders: Access to downloadable products: The first link in the email led to the list of all available downloads, rather than to the list of files available for the specific order. Fixed.
+
+[!] Export/Import: Quantity discounts: Importing quantity prices for products to a store with a single storefront and then importing new prices for those products resulted in different prices on the product list in the administration panel and on the product editing page/storefront. Fixed.
+
+[!] Images: Thumbnails: Product thumbnails generated from images shot in portrait mode were rotated by 90 degrees. Fixed.
+
+[!] Marketing: Promotions: Coupon codes with non-latin symbols were case-sensitive. Fixed.
+
+[!] Marketing: Promotions: The page scrolled up after an administrator added a product with options to the promotion condition. Fixed.
+
+[!] Multi-Vendor: Export/Import: A PHP Warning occurred when product images were imported to Multi-Vendor. Fixed.
+
+[!] Multi-Vendor: Installation could fail on low-performance servers when demo data was installed. Fixed.
+
+[!] Multi-Vendor: Vendor accounts: Using an email that was already taken by another vendor when applying for a vendor account led to a PHP warning. Fixed.
+
+[!] Order management: E-mail notifications were not sent after an order was edited in Internet Explorer 11. Fixed.
+
+[!] Order management: Once a customer was selected for an order during order creation in the Administration panel, another customer couldn't be selected for that order until the order was created. Fixed.
+
+[!] Orders: Invoices: When editing an order or changing its status while a different currency was selected in the Administration panel, the currency in the invoice sent to the customer was incorrect. Fixed.
+
+[!] Orders: Sales reports: Taxes report resulted in an error when "Locations" were selected as an "Object to analyze". Fixed.
+
+[!] Product filters: If a filter by feature with the "Number" type had "Round to" set to 1, and the minimal and maximal values differed by 1, the filter couldn't be used. Fixed.
+
+[!] Product options: Allowed combinations: Sequential options: When an allowed combination with "Any variant" for the first option was created, that combination couldn't be selected on the product page on the storefront. Fixed.
+
+[!] Products: Option combinations: Combination image wasn't displayed on 32-bit systems when combination hash was greater than 2147483647. Fixed.
+
+[!] Products: The "updated_timestamp" of a product didn't change after updating a product status on the list of products or changing, adding, or deleting an option or an option variant of this product. Fixed.
+
+[!] Products: When the price of a product was changed on the product list, the shipping properties of the product were lost. Fixed.
+
+[!] REST API: Orders: When a customer placed an order via REST API, that customer was assigned as the manager of that order. Fixed.
+
+[!] Security: Theme templates could be removed by exploiting CSRF in Template editor. Fixed.
+
+[!] Sessions: Redis: The life time of a session was incorrect; it could lead to deletion of session data right after saving and to inability to log in. Fixed.
+
+[!] Shipping methods: If free shipping was allowed for the product and the shipping method, and the settings of the shipping method had the minimum weight higher than 0, the shipping method wasn't available at checkout. Fixed.
+
+[!] Upgrade center: Migrations didn't apply if the database connection settings didn't have the port specified, and the value for mysqli.default_port differed from 3306. Fixed.
+
+[!] {#6764} Export/Import: Features: When multiple features with the same name were imported to different stores in the "All Stores" mode, the feature was created in one store and shared with other stores instead of being created in each store. Fixed.
+
+[!] {#6809} Add-ons: Data feeds: Even if the "Exclude disabled products" setting was enabled for a data feed, disabled products could be exported. Fixed.
+
+[!] {#6842} REST API: Users: To update a user's password, it was necessary to send salt and a password in the form of an MD5 hash. Fixed in api/4.0/users: there you can pass the new password as plain text.
+
+[!] {#6850} Add-ons: Comments and reviews: A PHP Notice occurred when thread_id was empty. Fixed. 
+
+[!] {#6861} Add-ons: Product variations [Beta]: The "Free shipping" field didn't appear for product variations when multiple variations were edited at once. Fixed.
+
+[!] {#6867} User groups: Privileges: In some cases global search in the Administration panel didn't work properly for administrators with restricted privileges. Fixed.
+
+[!] {#6871} Add-ons: Comments and reviews: When the "Share discussions with all stores" setting was enabled, the ratings on product detail pages weren't calculated properly for shared products. Fixed.
+
+[!] {#6881} {#6888} {#6889} Checkout: Profile fields: The data entered into custom profile fields at checkout wasn't saved. Fixed.
+
+[!] {#6890} Sales reports: A wrong discount was displayed next to each product in the report when multiple products were from the same order. Fixed.
+
+[!] {#6891} Products: Options: The main product image didn't change when another option combination or product variation was selected. Fixed.
+
+[!] {#6903} Currencies: If Yahoo! didn't return exchange rates, JS errors occurred, and the "Live Exchange Rates" sidebar was still displayed, but without the rates. Fixed.
+
+[!] {#6913} Add-ons: SEO: Product SEO names that were created for the default frontend language could contain the language suffix in them. Fixed.
+
+[!] {#6919} {#6921} Shipping methods: USPS: Rates for First-Class Mail parcels were not displayed. Fixed.
+
+[!] {#6928} {#6934} Layouts: Blocks: Menu: Items of the submenu weren't always highlighted if they were generated dynamically, for example, from categories.
+
+[!] {#6931} Add-ons: Google reCaptcha: Sometimes reCaptcha didn't load on the storefront. Fixed.
