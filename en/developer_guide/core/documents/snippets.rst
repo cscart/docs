@@ -226,7 +226,7 @@ Here are the additional filters and functions:
           -   2005/09/29
           -   year/month/day
 
-      *    -   ``%Y-%m-%d"``
+      *    -   ``"%Y-%m-%d"``
            -   2005-09-29
            -   year-month-day
 
@@ -234,7 +234,7 @@ Here are the additional filters and functions:
            -   2005.09.29
            -   year.month.day
 
-      *    -   ``%b %e, %Y"``
+      *    -   ``"%b %e, %Y"``
            -   Sep 29, 2005
            -   month day, year
 
@@ -252,13 +252,13 @@ Here are the additional filters and functions:
 
 * **price** (filter)—formats the value as a price. For example, ``{{ o.raw.total }}`` will look like *917.99*, and ``{{ o.raw.total|price }}`` will look like *$917.99*.
 
-* **filesize** (filter)—formats the value as a file size in kilobytes. For example, it is used in the email template about access to downloadable products: ``{{ file.file_size|filesize }}``.
+* **filesize** (filter)—formats the value as a file size in kilobytes. For example, this filter is used in the email template about access to downloadable products: ``{{ file.file_size|filesize }}``.
 
-* **puny_decode** (filter)—decodes the URLs from PunyCode to international format. This function can be found in email templates that have URLs, for example, in password recovery emails: ``{{ url|puny_decode }}``.
+* **puny_decode** (filter)—decodes the URLs from PunyCode to international format. This filter can be found in email templates that have URLs, for example, in password recovery emails: ``{{ url|puny_decode }}``.
 
-* **__** (function)—shows translations. For example, ``{{__("change_order_status_c_text")}}`` will be displayed in the English version of the document as follows: *Your order has been completed. Thank you for choosing us.*
+* **__** (function)—shows translations. For example, ``{{__("change_order_status_c_text")}}`` will be displayed in the English version of the document as the English value of the corresponding language variable: *Your order has been completed. Thank you for choosing us.*
 
-* **snippet** (function)—inserts a snippet. For example, ``{{ snippet("ship_to") }}`` in the **Invoice** document inserts the corresponding snippet from the **Code snippets** tab.
+* **snippet** (function)—inserts a snippet. For example, ``{{ snippet("ship_to") }}`` in the **Invoice** document inserts the corresponding snippet from the **Code snippets** tab into the document.
 
 * **include_doc** (function)—includes documents into the body of email notification. For example, the email notifications about order statuses have the following line: ``{{ include_doc("order.summary", order_info.order_id) }}``.
 
