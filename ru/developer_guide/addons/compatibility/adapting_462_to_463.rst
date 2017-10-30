@@ -95,10 +95,10 @@
   ::
 
     // Было:
-    function fn_get_product_options_data($cart_products, $_cart)
+    function fn_get_product_options_data($cart_products, &$cart)
 
     // Стало:
-    function fn_get_product_options_data($cart_products, $_cart, $params)
+    function fn_get_product_options_data($cart_products, &$cart, $params)
 
 
 #.
@@ -106,10 +106,10 @@
   ::
 
     // Было:
-    function fn_change_product_data_in_cart($cart_products, $_cart)
+    function fn_change_product_data_in_cart(&$cart_products, &$cart)
 
     // Стало:
-    function fn_change_product_data_in_cart($cart_products, $_cart, $params)
+    function fn_change_product_data_in_cart(&$cart_products, &$cart, $params)
 
 
 #.
