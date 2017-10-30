@@ -188,6 +188,8 @@ Here are the additional filters and functions:
 
   * ``{{ o.raw.timestamp|date("%d/%m/%Y") }}`` will look like *29/09/2005* (human-readable time).
 
+  Starting with version 4.6.3, specifying the date format isn't required. If you use the filter without the format like ``{{ o.raw.timestamp|date }}``, then the date format selected on the **Settings → Appearance** page will be used.
+
   Here are the formats available in CS-Cart/Multi-Vendor settings:
 
   .. list-table::
@@ -251,6 +253,8 @@ Here are the additional filters and functions:
            -   day of week, day month year
 
 * **price** (filter)—formats the value as a price. For example, ``{{ o.raw.total }}`` will look like *917.99*, and ``{{ o.raw.total|price }}`` will look like *$917.99*.
+
+  Starting with version 4.6.3, you can use this filter to choose in what currency you'd like to display the price. For example, ``{{ o.raw.total|price("EUR") }}`` will display the order total in Euro according to the conversion rate specified in your store. If no currency is specified for the filter, then ``CART_PRIMARY_CURRENCY`` will be used.
 
 * **filesize** (filter)—formats the value as a file size in kilobytes. For example, this filter is used in the email template about access to downloadable products: ``{{ file.file_size|filesize }}``.
 
