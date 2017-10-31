@@ -35,7 +35,7 @@ Add Product Variations
 
 #. Click on the name of the configurable product to open the product editing page.
 
-#. Switch to the **Options** tab and click the **Generate product variations** button.
+#. Switch to the **Options** tab and click the **Generate variations** button.
 
    .. note::
 
@@ -43,7 +43,7 @@ Add Product Variations
 
    .. image:: img/generate_product_variations.png
        :align: center
-       :alt: Use the "Generate product variations" button to create variations.
+       :alt: Use the "Generate variations" button to create variations.
 
 #. The list of options and their variants will appear. Select the variants that will be used for creating variations. Use **CTRL** or **Shift** to select multiple variants at once.
 
@@ -81,7 +81,7 @@ Edit Product Variations
 
          If you use this method, you'll be able to edit multiple variations at once: just tick the checkboxes next to the names of the variations, click the gear button in the top right corner, and choose **Edit selected**.
 
-   * Find the configurable product (again, it's best to use **Advanced search**), click on its name, and switch to the **Product variations** tab.
+   * Find the configurable product (again, it's best to use **Advanced search**), click on its name, and switch to the **Variations** tab.
 
    .. image:: img/list_of_variations.png
        :align: center
@@ -105,7 +105,7 @@ Delete Product Variations
 
 #. In the Administration panel, go to **Products → Products** and find the variation you'd like to delete. There are multiple ways to find the variation:
 
-   * Find the configurable product, click on its name, and switch to the **Product variations** tab.
+   * Find the configurable product, click on its name, and switch to the **Variations** tab.
 
    * Find the product variation using the **Advanced search** link from the search menu on the right. You'll be able to search either for all variations, or for variations of specific products.
 
@@ -117,4 +117,4 @@ Delete Product Variations
 
    .. image:: img/delete_variation.png
        :align: center
-       :alt: You can delete multiple variations at once, but only if you find them via Advanced Search, not on the Product Variations tab.
+       :alt: You can delete multiple variations at once, but only if you find them via Advanced Search, not on the Variations tab.

@@ -26,7 +26,7 @@ To get a list of product variations, send a GET request to ``/api/product_variat
 
   GET /api/product_variations/
 
-This request returns 10 variations with a their details.
+This request returns 10 variations with their details.
 
 ----------------------------------
 Pagination, Sorting, and Filtering
@@ -245,7 +245,7 @@ If the request is successful, you’ll receive **HTTP/1.1 200 OK**. The response
 Get a Specific Variation
 ========================
 
-To get the of details of a specific product variation, send a GET request to ``/api/product_variations/<product_id>/``. For example::
+To get the details of a specific product variation, send a GET request to ``/api/product_variations/<product_id>/``. For example::
 
   GET /api/product_variations/251
 
@@ -400,7 +400,7 @@ This request:
 
 * sets the number of items in stock to *10*;
 
-* loads the image from *http://example.com/var/files/1/exim/backup/images/red_tshirt.jpg* and makes in the main image of the variation;
+* loads the image from *http://example.com/var/files/1/exim/backup/images/red_tshirt.jpg* and makes it the main image of the variation;
 
 * loads additional images for the variation from:
 
