@@ -106,7 +106,3 @@ eDost.ru — Калькулятор доставки
 
     .. fancybox:: img/shippings_013.png
         :alt: eDost
-
-.. important::
-
-    Если Вам необходимо расширить функциональность eDost или вы обнаружили ошибки в работе модуля, пожалуйста, обратитесь в компанию "Симтек Девелопмент" (`www.simtechdev.com <http://www.simtechdev.com/>`_).
