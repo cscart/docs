@@ -4,24 +4,23 @@ Settings Wizard
 
 Settings wizard is a convenient post-installation tool. It allows you to set up some general preferences of your store in several steps.
 
-.. note::
-    When working with multiple stores in CS-Cart, use the **three people icon** to apply changes for all stores.
+.. hint::
+
+    When :doc:`working with multiple stores in CS-Cart </user_guide/stores/index>`, use the **three people icon** to apply changes to all stores.
 
 =================
-Security settings
+Security Settings
 =================
 
-* **New administrator password**—we recommend to change the administrator password that you got after the registration. Make sure your new password is secure enough.
+* **New administrator password**—we recommend changing the administrator password that you get after registration. Make sure your new password is secure enough.
 
-You can generate the password automatically with the **Generate** button.
+  You can generate the password automatically with the **Generate** button.
 
-* **SSL certificate**—click the  **Check SSL** button to check the secure connection.
+* **SSL certificate**—click the **Check SSL** button to check the secure connection.
 
-* **Enable secure connection at checkout**—if you enable this setting, checkout pages will work through the HTTPS protocol. This requires an SSL certificate to be installed on your server.
+* **Enable secure connection for the storefront**—if you enable this setting, then the storefront (or some specific storefront pages) will work through the HTTPS protocol. This requires an SSL certificate to be installed on your server.
 
 * **Enable secure connection in the administration panel**—if you enable this setting, the administration panel will work through the HTTPS protocol. This requires an SSL certificate to be installed on your server.
-
-* **Enable secure connection for authentication, profile and orders pages**—if you enable this setting, the login and profile registration/update pages in the customer area will work through the HTTPS protocol. This requires an SSL certificate to be installed on your server.
 
 * **Minimum administrator password length**—the minimum number of characters in an administrator password.
 
@@ -33,7 +32,11 @@ You can generate the password automatically with the **Generate** button.
 Appearance Settings
 ===================
 
-* **Default WYSIWYG editor**—the WYSIWYG editor to be used in the administrator panel. You can select *TinyMCE*, *Redactor* or *CKEditor*, or you can choose to disable WYSIWYG.
+* **Default WYSIWYG editor**—the WYSIWYG editor to be used in the Administration panel.
+
+  .. note::
+
+      You can select *TinyMCE*, *Redactor* or *CKEditor*, or you can choose to disable WYSIWYG.
 
 * **Default image previewer**—select one of the supported image previewers.
 
@@ -49,7 +52,7 @@ Appearance Settings
 
 * **Display prices with taxes on cart/checkout pages if the method of calculating taxes is based on a unit's price**—if you enable this setting, product prices displayed on the cart and checkout pages will include taxes.
 
-* **Show number of available products**—if you enable this setting, the number of products available for customers will be displayed on the storefront.
+* **Show number of available products**—if you enable this setting, the number of products available to customers will be displayed on the storefront.
 
 * **Display mini thumbnail images as a gallery**—if you enable this setting, multiple product thumbnails will be displayed as a small gallery.
 
@@ -57,9 +60,9 @@ Appearance Settings
 
 * **Display product details in tabs**—if you enable this setting, product details (description, features and so on) will be arranged in multiple tabs.
 
-* **Date format**—choose the date display format both in the administration panel and in the customer area.
+* **Date format**—choose the date display format both in the Administration panel and in the customer area.
 
-* **Time format**—choose the time display format both in the administration panel and in the customer area.
+* **Time format**—choose the time display format both in the Administration panel and in the customer area.
 
 ================
 Company Settings
@@ -67,33 +70,33 @@ Company Settings
 
 Use this section to specify your company details and contact information.
 
-* **Company name**—the name of your store. The value that you enter here is included in the copyright notes and invoices.
+* **Company name**—the name of your store. The value that you enter here will be included in the copyright notes and invoices.
 
 The following parameters are used to specify the geographical location of your business and your contact info. These details are also mentioned in invoices.
 
-* **Company address**;
+* **Company address**
 
-* **Company city**;
+* **Company city**
 
-* **Company country**;
+* **Company country**
 
-* **Company state**;
+* **Company state**
 
-* **Company zip code**;
+* **Company zip code**
 
-* **Company phone**;
+* **Company phone**
 
-* **Company phone 2**;
+* **Company phone 2**
 
-* **Company fax**;
+* **Company fax**
 
-* **Company website**;
+* **Company website**
 
-* **Site administrator e-mail address**—the email address to receive notifications about any technical issues;
+* **User department e-mail address**—the email address to receive notifications about newly created, modified, and deleted user profiles.
 
-* **Order department e-mail address**—the email address to receive notifications about placed orders and changed order statuses;
+* **Site administrator e-mail address**—the email address to receive notifications about any technical issues.
 
-* **User department e-mail address**—the email address to receive notifications about newly created, modified and deleted user profiles.
+* **Order department e-mail address**—the email address to receive notifications about placed orders and changed order statuses.
 
 =============
 User Settings
@@ -103,13 +106,17 @@ User Settings
 
 * **Offer guest to create an account after successful order**—if you enable this setting, the buyer will be offered to register an account at guest checkout after the successfully placed order.
 
-* **Quick Registration**—require only contact information for registration.
+* **Quick registration**—require only contact information for registration.
 
 * **Profile address section order**—choose which customer address should go first on the checkout page: billing address or shipping address.
 
 * **Allow users to create multiple profiles for one account**—if you enable this setting, users will be allowed to specify multiple shipping and billing addresses for a single account. This may be useful when a user needs separate profiles for personal and business use.
 
-* **Share users among stores**—if you enable this setting, the store will use a joint customer database where customer accounts are shared among all storefronts. Otherwise, each store will have a separate customer base.
+* **Share users among stores**—if you enable this setting, the store will use a joint customer database where customer accounts are shared :doc:`among all storefronts </user_guide/stores/index>`. Otherwise, each store will have a separate customer base.
+
+  .. note::
+
+      This setting appears only in CS-Cart.
 
 ====================
 Most Popular Add-ons
@@ -124,4 +131,5 @@ Other Add-ons
 This section includes the list of all available add-ons, except for the most popular ones. Tick the checkbox of the add-on to install it. You can choose as many add-ons as you want.
 
 .. note::
+
     Find more information about add-ons in the **Add-ons →  Manage add-ons** section.
