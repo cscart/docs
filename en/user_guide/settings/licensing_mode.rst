@@ -10,9 +10,9 @@ In this section you can choose one of three licensing modes: *Full*, *Trial*, or
 
 In the **Full Mode** you get unrestricted access to the full functionality of CS-Cart or Multi-Vendor. To enable this mode you must enter the licence number.
 
-You get the license number when you buy CS-Cart or Multi-Vendor `at the official website <http://www.cs-cart.com/compare.html>`_. You can switch to the **Full Mode** any time by entering a valid license number on the **Licensing mode** page.
+You get the license number when you buy CS-Cart or Multi-Vendor `at the official website <https://www.cs-cart.com/compare.html>`_. You can switch to the **Full Mode** any time by entering a valid license number on the **Licensing mode** page.
 
-The **Trial mode** has no functionality limitations. You can `download CS-Cart and Multi-Vendor at official site <https://www.cs-cart.com/download-cs-cart.html>`_ and use the Trial Mode for free. However, you can use it only once and only for 30 days.
+The **Trial mode** has no functionality limitations. You can download `CS-Cart <https://www.cs-cart.com/download-cs-cart.html>`_ and `Multi-Vendor <https://www.cs-cart.com/download-multivendor.html>`_ from the official site and use the Trial Mode for free. However, you can use it only once and only for 30 days.
 
 The **Free Mode** will be activated automatically in 30 days, unless you activate the **Full Mode**.
 

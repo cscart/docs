@@ -2,7 +2,7 @@
 Checkout
 ********
 
-Use this section to configure the checkout appearance and functionality.
+Use this section to configure the appearance and functionality of the checkout page.
 
 * **Disable anonymous checkout**—if you enable this setting, only registered customers will be allowed to place orders in your store.
 
@@ -16,15 +16,16 @@ Use this section to configure the checkout appearance and functionality.
 
 * **Configure "Sign in" step**—choose whether to display the *Returning customer* or *New customer* section first.
 
-.. note::
+  .. note::
 
-    You can also hide the *Sign in* step, if it doesn't have any required contact info fields, and anonymous checkout is allowed.
+      You can also hide the **Sign in** step, if it doesn't have any required contact info fields, and anonymous checkout is allowed.
 
 * **Default option for the "New customer" section at the "Sign in"**—choose the default radio button in the *New customer* section—*Register* or *Checkout as guest*.
 
-* **Display "Payment method" step**—tick this checkbox to display the step where a customer can choose a payment method at the checkout.
+* **Display "Payment method" step**—if you enable this section, then customers will be able to choose the desired payment method at checkout.
 
-* **Display "Shipping method" step**—tick this checkbox to display the step where a customer can choose a shipping method at the checkout.
+* **Display "Shipping method" step**—if you enable this section, then customers will be able to choose the desired shipping method at checkout.
 
-.. note::
-    The **Display "Shipping method" step** setting is available only in **CS-Cart**, not in **Multi-Vendor**.
+  .. note::
+
+      The **Display "Shipping method" step** setting is available only in **CS-Cart**, not in **Multi-Vendor**.

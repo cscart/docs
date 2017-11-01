@@ -10,21 +10,21 @@ Use For
 
 Here you should specify forms for which image verification is required.
 
-* **Login form**;
+* **Login form**
 
-* **Create and edit profile form**;
+* **Create and edit profile form**
 
-* **Checkout (user information) form**;
+* **Checkout (user information) form**
 
-* **Track my order form**;
+* **Track my order form**
 
-* **Send to friend form**;
+* **Send to friend form**
 
-* **Call request and buy now with one click form**;
+* **Call request and buy now with one click form**
 
-* **Custom forms**;
+* **Custom forms**
 
-* **Comments and reviews forms**.
+* **Comments and reviews forms**
 
 ================
 Other parameters
@@ -55,5 +55,3 @@ Other parameters
 * **Do not use verification if user is logged in**—if you enable this setting, customers who have logged in to the store won't have to pass anti-bot validation.
 
 * **Do not use verification after first valid answer**—if you enable this setting, store visitors will only have to pass anti-bot validation once.
-
-

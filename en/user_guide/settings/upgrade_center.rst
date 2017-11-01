@@ -4,7 +4,7 @@ Upgrade Center
 
 Use this section to adjust the settings of the CS-Cart upgrade center available under **Administration → Upgrade center**.
 
-* **License number**—your CS-Cart license number.
+* **License number**—your CS-Cart or Multi-Vendor license number.
 
 * **Hostname**—the name of your FTP server.
 
@@ -12,7 +12,8 @@ Use this section to adjust the settings of the CS-Cart upgrade center available 
 
 * **Password**—the password for the FTP account username.
 
-* **Directory**—the directory where CS-Cart files are located.
+* **Directory**—the directory where CS-Cart or Multi-Vendor files are located.
 
-.. note::
-    You specify FTP access details so that the Upgrade Center will be able to adjust file permissions, if there are access permission issues during the upgrade.
+  .. note::
+
+      You specify FTP access details so that the Upgrade Center will be able to adjust file permissions, if there are any access permission issues during the upgrade.

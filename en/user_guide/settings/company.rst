@@ -8,39 +8,40 @@ Use this section to specify your company details and contact information.
 
 The following parameters are used to specify the geographical location of your business and your contact info. These details are also mentioned in invoices.
 
-.. note ::
+.. note::
 
-	This section must be filled in when realtime shipping methods are used in the store.
+    This section must be filled in when realtime shipping methods are used in the store.
 
-* **Company address**;
+* **Company address**
 
-* **Company city**;
+* **Company city**
 
-* **Company country**;
+* **Company country**
 
-* **Company state**;
+* **Company state**
 
-* **Company zip code**;
+* **Company zip code**
 
-* **Company phone**;
+* **Company phone**
 
-* **Company phone 2**;
+* **Company phone 2**
 
-* **Company fax**;
+* **Company fax**
 
-* **Company website**;
+* **Company website**
 
-* **Year when the store started its operation**—the year when your company started its business. This value is used in copyright notes;
+* **Year when the store started its operation**—the year when your company started its business. This value is used in copyright notes.
 
-* **User department e-mail address**—the email address to receive notifications about newly created, modified and deleted user profiles;
+* **User department e-mail address**—the email address to receive notifications about newly created, modified and deleted user profiles.
 
-.. hint::
-    To receive notifications about newly registered customer accounts, make sure to tick the **Administrator must activate new user accounts** checkbox in **Settings → General**.
+  .. hint::
 
-* **Site administrator e-mail address**—the email address to receive notifications about any technical issues;
+      To receive notifications about newly registered customer accounts, make sure to tick the **Administrator must activate new user accounts** checkbox in :doc:`Settings → General <general>`.
 
-* **Order department e-mail address**—the email address to receive notifications about placed orders and changed order statuses;
+* **Site administrator e-mail address**—the email address to receive notifications about any technical issues.
 
-* **Help/Support department e-mail address**—the email address to receive messages submitted through the *Contact Us* form;
+* **Order department e-mail address**—the email address to receive notifications about placed orders and changed order statuses.
+
+* **Help/Support department e-mail address**—the email address to receive messages submitted through the *Contact Us* form.
 
 * **Reply-To newsletter e-mail address**—the email address to include in newsletters as a reply-to address.
