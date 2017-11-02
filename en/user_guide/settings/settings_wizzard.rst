@@ -74,6 +74,10 @@ Use this section to specify your company details and contact information.
 
 The following parameters are used to specify the geographical location of your business and your contact info. These details are also mentioned in invoices.
 
+.. note::
+
+    The :doc:`location of the company </user_guide/shipping_and_taxes/address>` is used by :doc:`realtime shipping methods </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/index>` for rate calculation.
+
 * **Company address**
 
 * **Company city**

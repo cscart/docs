@@ -14,13 +14,7 @@ Administrator Settings
 
 * **Backend default language**—the default language of the administration panel.
 
-* **Orders per page**—the number of orders displayed on one page.
-
-* **Products per page**—the number of products displayed on one page.
-
-* **Elements per page**—the number of other items displayed on one page.
-
-* **CMS pages per page**—the number of content pages displayed on one page.
+* **Elements per page**—the default number of elements (like orders or products) displayed on one page of the list.
 
 * **Default WYSIWYG editor**—the WYSIWYG editor to be used in the Administration panel.
 
@@ -129,3 +123,9 @@ The following settings apply both to the storefront and the administration panel
   .. hint::
 
       If you set *0*, then the notifications won't be hidden automatically.
+
+* **Email templates mode**—the way how email templates and documents work:
+
+  * *New*—:doc:`documents </user_guide/look_and_feel/documents/index>` and :doc:`email templates </user_guide/look_and_feel/email_templates/index>` are stored in the database and can be modified via built-in editors.
+
+  * *Old*—the templates of documents and email notifications are stored as files that can be edited directly (:doc:`but that's inadvisable </developer_guide/getting_started/guidelines>`) or via third-party add-ons.

@@ -60,6 +60,8 @@ Settings and preferences in this section affect different aspects of your store.
 
 * **Check for updates automatically**—select whether you want to check for software updates automatically.
 
+* **Monitor changes in core files**—if you enable this setting, you'll be notified about changes in core files whenever you open the Administration panel. We have a separate article that explains :doc:`why modifying core files isn't a good practice </developer_guide/getting_started/guidelines>`.
+
 ================
 Default Location
 ================
@@ -82,7 +84,7 @@ You can define the following details:
 
   .. note::
 
-      This information is also used to test the rate calculation in :doc:`realtine shipping methods </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/index>`.
+      This information is also used as a :doc:`default customer address </user_guide/shipping_and_taxes/address>` for testing the rate calculation of :doc:`realtine shipping methods </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/index>`.
 
 =======
 Catalog
@@ -94,7 +96,7 @@ Catalog
 
   .. note::
 
-      This setting first appeared in version 4.3.6. For more information on how product comparison worked before and after 4.3.6, please refer to :doc:`this article </user_guide/manage_products/features/feature_comparison>`.
+      We have a separate article about :doc:`comparing products and their features </user_guide/manage_products/features/feature_comparison>`.
 
 * **Allow negative amount in inventory**—if you enable this setting, customers will be able to order products that are out of stock.
 
