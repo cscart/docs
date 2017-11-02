@@ -13,4 +13,24 @@ This section of the documentation describes various settings of your store. For 
     :titlesonly:
     :glob:
 
-    *
+    appearance
+    cdn_settings
+    checkout
+    company
+    emails
+    general
+    licensing_mode
+    logging
+    reports
+    security_settings
+    settings_wizzard
+    sitemap
+    stores
+    thumbnails
+    upgrade_center
+    vendors
+
+.. toctree::
+    :hidden:
+
+    image_verification
