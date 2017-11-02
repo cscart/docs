@@ -84,7 +84,7 @@ You can define the following details:
 
   .. note::
 
-      This information is also used as a default customer address for testing the rate calculation of :doc:`realtine shipping methods </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/index>`.
+      This information is also used as a default customer address for testing the rate calculation of :doc:`realtime shipping methods </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/index>`.
 
 =======
 Catalog
@@ -152,9 +152,9 @@ Users/Cart
 
       The **Disable shipping** checkbox was removed in version 4.3.5; see the details :doc:`in the related article </user_guide/shipping_and_taxes/shipping_methods/free_shipping>`.
 
-* **Disregard product options when calculating quantity discounts**—this setting determines how CS-Cart and Multi-Vendor count the number of product items to apply a quantity discount. 
+* **Disregard product options when calculating quantity discounts**—this setting determines how CS-Cart and Multi-Vendor count the number of product items to apply a :doc:`quantity discount </user_guide/manage_products/products/wholesale>`. 
 
-  If you enable this setting, product options and option combinations will be regarded as the same product, and CS-Cart will simply count the number of ordered items. Otherwise, different variants of product options will be regarded as separate products.
+  If you enable this setting, then different variants of :doc:`product options </user_guide/manage_products/options/index>` and :doc:`option combinations </user_guide/manage_products/options/index>` will be regarded as the same product, and CS-Cart will simply count the number of ordered items. Otherwise, different variants of product options will be regarded as separate products.
 
   For example, a customer buys a $10 T-shirt that has two color options—red and blue. The quantity discount rule for the T-shirt is to sell each item at $8 if there are 5 or more T-shirts in the order.
 
