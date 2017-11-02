@@ -20,7 +20,7 @@ Administrator Settings
 
   .. note::
 
-      You can select *TinyMCE*, *Redactor*, or *CKEditor*, or you can choose to disable WYSIWYG.
+      You can select *TinyMCE* or *Redactor*, or you can choose to disable WYSIWYG. Starting with version 4.6.3, you can also select *Redactor II*.
 
 =================
 Customer Settings
