@@ -10,7 +10,7 @@ The following parameters are used to specify the geographical location of your b
 
 .. note::
 
-    This section must be filled in when realtime shipping methods are used in the store.
+    The :doc:`location of the company </user_guide/shipping_and_taxes/address>` is used  by :doc:`realtime shipping methods </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/index>` for rate calculation.
 
 * **Company address**
 

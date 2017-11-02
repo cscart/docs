@@ -4,6 +4,10 @@ Image Verification
 
 :doc:`Image verification <../look_and_feel/changing_attributes/image_verification>` is used to ensure that forms in your store are completed by humans, not automated systems. This allows you to avoid lots of spam and fake user accounts. You can adjust parameters of verification images as well as specify when image verification is required.
 
+.. important::
+
+    Starting with version 4.4.3, the **Google reCaptcha** add-on was introduced to improve anti-bot protection. Please refer to :doc:`the article about configuring Google reCaptcha </user_guide/addons/google_recaptcha/configure_recaptcha>` for more information.
+
 =======
 Use For
 =======

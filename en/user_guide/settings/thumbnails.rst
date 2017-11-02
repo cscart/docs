@@ -37,3 +37,7 @@ Use this section to specify parameters and properties of automatic thumbnail cre
 * **Detailed category image width**—the width of a detailed category image on the category details page.
 
 * **Detailed category image height**—the height of a detailed category image on the category details page.
+
+* **Admin panel: product mini-icon thumbnail width**—the width of product thumbnails in the Administration panel, as well as in documents and email notifications.
+
+* **Admin panel: product mini-icon thumbnail height**—the height of product thumbnails in the Administration panel, as well as in documents and email notifications.
