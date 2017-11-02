@@ -16,7 +16,7 @@ Use this section to adjust vendor settings for the administration panel and the 
 
 * **Vendors per page**—the number of vendors displayed on one page.
 
-* **Applying vendors must agree to terms and conditions**—if you enable this settings, then the customers who are applying for a vendor account will need to accept the terms and conditions. This setting first appeared in Multi-Vendor 4.3.7.
+* **Applying vendors must agree to terms and conditions**—if you enable this setting, then the customers who are applying for a vendor account will need to accept the terms and conditions. This setting first appeared in Multi-Vendor 4.3.7.
 
 .. note:: 
 

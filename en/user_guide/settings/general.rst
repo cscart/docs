@@ -84,7 +84,7 @@ You can define the following details:
 
   .. note::
 
-      This information is also used to test the rate calculation in :doc:`realtine shipping methods </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/index>`.
+      This information is also used as a default customer address for testing the rate calculation of :doc:`realtine shipping methods </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/index>`.
 
 =======
 Catalog

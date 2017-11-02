@@ -14,4 +14,4 @@ Use these settings to adjust the configuration of the multiple-storefront featur
 
   .. warning::
 
-      Editing a store-specific setting in the root administrator mode will update (overwrite) this option for all stores. We recommended that you protect store-specific options from unintended editing. To do that, set **Default state of the "Update for all stores" icon** to *Not Active*.
+      Editing a store-specific setting in the root administrator mode will update (overwrite) the value of that setting for all stores. We recommended that you protect store-specific options from unintended editing. To do that, set **Default state of the "Update for all stores" icon** to *Not Active*.
