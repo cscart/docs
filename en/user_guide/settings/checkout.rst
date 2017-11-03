@@ -12,7 +12,7 @@ Use this section to configure the appearance and functionality of the checkout p
 
 * **Allow customers to pay order again if transaction was declined**—if you enable this setting, customers will be allowed to carry out the same transaction if it failed previously.
 
-* **Offer guest to create an account after successful order**—if you enable this setting, the buyer will be offered to register an account at guest checkout after the successfully placed order.
+* **Offer guest to create an account after successful order**—if you enable this setting, the buyer who placed an order as a guest will be offered to register an account afterwards.
 
 * **Configure "Sign in" step**—choose whether to display the *Returning customer* or *New customer* section first.
 
@@ -22,9 +22,9 @@ Use this section to configure the appearance and functionality of the checkout p
 
 * **Default option for the "New customer" section at the "Sign in"**—choose the default radio button in the *New customer* section—*Register* or *Checkout as guest*.
 
-* **Display "Payment method" step**—if you enable this section, then customers will be able to choose the desired payment method at checkout.
+* **Display "Payment method" step**—if you enable this setting, then the *Billing Options* section will appear at checkout, and customers will be able to choose the desired payment method.
 
-* **Display "Shipping method" step**—if you enable this section, then customers will be able to choose the desired shipping method at checkout.
+* **Display "Shipping method" step**—if you enable this setting, then the *Shipping Options* section will appear at checkout, and customers will be able to choose the desired shipping method.
 
   .. note::
 
