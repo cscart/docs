@@ -12,7 +12,7 @@ In this section you can specify what kind of events must be registered in the sy
 
 * **Categories**—select to track and record events concerning product categories.
 
-* **Database**—select to track and record events concerning your store database.
+* **Database**—select to track and record events concerning the database of your store.
 
 * **Requests**—select to track and record all HTTP and HTTPS requests.
 

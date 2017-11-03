@@ -10,7 +10,7 @@ The following parameters are used to specify the geographical location of your b
 
 .. note::
 
-    The :doc:`location of the company </user_guide/shipping_and_taxes/address>` is used  by :doc:`realtime shipping methods </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/index>` for rate calculation.
+    The :doc:`location of the company </user_guide/shipping_and_taxes/address>` is used by :doc:`realtime shipping methods </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/index>` for rate calculation.
 
 * **Company address**
 
@@ -32,7 +32,7 @@ The following parameters are used to specify the geographical location of your b
 
 * **Year when the store started its operation**—the year when your company started its business. This value is used in copyright notes.
 
-* **User department e-mail address**—the email address to receive notifications about newly created, modified and deleted user profiles.
+* **User department e-mail address**—the email address to receive notifications about newly created, modified, and deleted user profiles.
 
   .. hint::
 
