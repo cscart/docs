@@ -20,13 +20,13 @@ Security Settings
 
 * **Enable secure connection for the storefront**—if you enable this setting, then the storefront (or some specific storefront pages) will work through the HTTPS protocol. This requires an SSL certificate to be installed on your server.
 
-* **Enable secure connection in the administration panel**—if you enable this setting, the administration panel will work through the HTTPS protocol. This requires an SSL certificate to be installed on your server.
+* **Enable secure connection in the administration panel**—if you enable this setting, the Administration panel will work through the HTTPS protocol. This requires an SSL certificate to be installed on your server.
 
 * **Minimum administrator password length**—the minimum number of characters in an administrator password.
 
 * **Administrator password must contain both letters and numbers**—if you enable this setting, the system will require an administrator password to contain both letters and numbers. This improves password strength and provides additional protection against guessing the password and brute-force attacks.
 
-* **Force administrators to change password on the first login**—if selected, store administrators will have to change their passwords once they log in to the administration panel for the first time.
+* **Force administrators to change password on the first login**—if you enable this setting, store administrators will have to change their passwords once they log in to the administration panel for the first time.
 
 ===================
 Appearance Settings
@@ -46,7 +46,7 @@ Appearance Settings
 
 * **Frontend default language**—the default language of the storefront.
 
-* **Estimate taxes using default address on cart/checkout pages**—if you enable this setting, customers without their own address in the database will see the taxes calculated according to the default address.
+* **Estimate taxes using default address on cart/checkout pages**—if you enable this setting, customers without their own address in the database will see the taxes calculated for the default address.
 
 * **Display prices with taxes on category/product pages if the method of calculating taxes is based on a unit's price**—if you enable this setting, product prices displayed on the product and category pages will include taxes.
 
