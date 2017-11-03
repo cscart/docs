@@ -55,4 +55,4 @@
 
    .. hint::
 
-       Если вы хотите узнать как настроить бесплатную доставку в версии 4.3.5 и далее, воспользуйтесь `инструкциями из этой статьи для 4.4.x <https://www.cs-cart.ru/docs/4.4.x/user_guide/shipping_and_taxes/shipping_methods/free_shipping.html>`.
+       Если вы хотите узнать как настроить бесплатную доставку в версии 4.3.5 и далее, воспользуйтесь `инструкциями из этой статьи для 4.4.x <https://www.cs-cart.ru/docs/4.4.x/user_guide/shipping_and_taxes/shipping_methods/free_shipping.html>`_.
