@@ -2,7 +2,7 @@
 Emails
 ******
 
-Settings in this section define the way CS-Cart or Multi-Vendor will send email messages and notifications.
+The settings in this section determine how CS-Cart or Multi-Vendor will send email messages and notifications.
 
 The three available options are:
 
