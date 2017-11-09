@@ -6,15 +6,15 @@ How To: Upgrade Your Store with Store Import
 
     Before you attempt to upgrade your store, make sure you have enough space on your server hard drive.
 
-=============================
-Step 1. Install CS-Cart 4.3.x
-=============================
+================================================
+Step 1. Install CS-Cart You'd Like to Upgrade to
+================================================
 
-1.1. Download CS-Cart/Multi-Vendor 4.3.x (one of the versions you can upgrade to). Make sure that Store Import can import data from your version. You can find this information :doc:`here <about_store_import>`.
+1.1. Download the CS-Cart/Multi-Vendor version you'd like to upgrade to (the version that is newer than your current one). Check if this version of CS-Cart/Multi-Vendor supports the Store Import. Then make sure that Store Import can import data from your current version. You can find this information :doc:`here <about_store_import>`.
 
-1.2. :doc:`Install CSCart/Multi-Vendor <../install/index>` in a separate subdirectory of your old installation. 
+1.2. :doc:`Install new CS-Cart/Multi-Vendor <../install/index>` in a separate subdirectory of your old installation. 
 
-     For example, if your original store is available at *example.com*, create the ``/store`` directory in the root of *example.com*. Then unpack the installation archive of your 4.3.x store in that directory. You should then be able to install CS-Cart/Multi-Vendor 4.3.x by using this URL: *example.com/store*.
+     For example, if your original store is available at *example.com*, create the ``/store`` directory in the root of *example.com*. Then unpack the installation archive of your new store in that directory. You should then be able to install CS-Cart/Multi-Vendor 4.x.x by using this URL: *example.com/store*.
 
 .. important::
 
@@ -22,7 +22,7 @@ Step 1. Install CS-Cart 4.3.x
 
 .. note::
 
-    If your old store used several languages, you may want to choose the same languages for the newly installed CS-Cart 4.3.x. You can change the languages in the **Administration → Languages → Manage languages** section of the Administration panel.
+    If your old store used several languages, you may want to choose the same languages for the newly installed CS-Cart 4.x.x. You can change the languages in the **Administration → Languages → Manage languages** section of the Administration panel.
 
 ============================
 Step 2. Install Store Import
@@ -30,9 +30,9 @@ Step 2. Install Store Import
 
 .. important::
 
-    **Starting from CS-Cart 4.3.7, the Store Import add-on doesn't come with the CS-Cart installation package**. Please `get the Store Import add-on <http://marketplace.cs-cart.com/add-ons/store-import.html>`_ on the CS-Cart Marketplace. For CS-Cart 4.3.6, we also recommend that you use the Store Import add-on from the Marketplace as it has all the latest fixes. In the latter case, uninstall the existing Store Import add-on before installing the one you got from the Marketplace.
+    **CS-Cart 4.3.x:** If you want to upgrade to versions 4.3.1-4.3.2, you can use the default Store Import add-on. Otherwise, please `get the free Store Import add-on <http://marketplace.cs-cart.com/add-ons/store-import.html>`_ on the CS-Cart Marketplace. The same applies to CS-Cart 4.3.6.
 
-    To download the Store Import add-on on the Marketplace, `open its Marketplace page <http://marketplace.cs-cart.com/add-ons/store-import.html>`_, leave your email in the **Email field** and click **DOWNLOAD**. You'll receive the download link to your mailbox. Then install the Store Import add-on just like you install any third-party add-on.
+    **CS-Cart 4.4.x:** The Store import add-on doesn't come with the CS-Cart installation package. Please `get the free Store Import add-on <http://marketplace.cs-cart.com/add-ons/store-import.html>`_ on the CS-Cart Marketplace.
 
 2.1. In your Administration panel, go to **Add-ons → Manage add-ons** and click the **+** button at the top right.
 

@@ -14,15 +14,15 @@ About Store Import
 
 .. important::
 
-    **Starting from CS-Cart 4.3.7, the Store Import add-on doesn't come with the CS-Cart installation package**. Please `get the Store Import add-on <http://marketplace.cs-cart.com/add-ons/store-import.html>`_ for CS-Cart 4.3.7 and newer from the Marketplace. It's free. 
-
-    Although CS-Cart 4.3.6 has the Store Import add-on by default, we recommend that you get it from the Marketplace as well: on the Marketplace, the add-on is fresher than the one that comes with 4.3.6.
-
     Learn :doc:`how to upgrade your store with Store Import <importing_a_store>`.
 
 ==================
 Supported Versions
 ==================
+
+.. important::
+
+    The table contains only versions that have the Store Import add-on by default.
 
 Use the table below to see the versions that you can upgrade to and from:
 
@@ -33,13 +33,15 @@ Use the table below to see the versions that you can upgrade to and from:
     *   -   Upgrade from:
         -   Upgrade to:
     *   -   CS-Cart Professional 2.2.4 - 3.0.6
-        -   CS-Cart 4.0.2 - 4.3.2, 4.3.6 - 4.3.8
+        -   CS-Cart 4.0.2 - 4.3.2
     *   -   CS-Cart Ultimate 3.0.1 - 3.0.6
-        -   CS-Cart 4.0.2 - 4.3.2, 4.3.6 - 4.3.8
+        -   CS-Cart 4.0.2 - 4.3.2
     *   -   CS-Cart Multi-Vendor 2.2.4 - 3.0.6
         -   Multi-Vendor 4.0.2 - 4.3.2
 
-The Store Import add-on for CS-Cart 4.3.6 can also import data from CS-Cart 4.3.1 - 4.3.5.
+.. note::
+
+    To upgrade to newer versions of CS-Cart, please `get the free Store Import add-on <http://marketplace.cs-cart.com/add-ons/store-import.html>`_ on the CS-Cart Marketplace. The same applies to CS-Cart 4.3.6 that can also import data from CS-Cart 4.3.1 - 4.3.5.
 
 .. note::
 
