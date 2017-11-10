@@ -30,7 +30,7 @@ Step 2. Install Store Import
 
 .. important::
 
-    The **Store Import** add-on comes by default with CS-Cart/Multi-Vendor 4.3.1 and 4.3.2. If you'd like to import your data to a later version of CS-Cart, please get the free Store Import add-on from the CS-Cart Marketplace.
+    The **Store Import** add-on comes by default with CS-Cart/Multi-Vendor 4.3.1 and 4.3.2. If you'd like to import your data to a later version of CS-Cart, please `get the free Store Import add-on from the CS-Cart Marketplace <http://marketplace.cs-cart.com/add-ons/store-import.html>`_.
 
 2.1. In your Administration panel, go to **Add-ons → Manage add-ons** and click the **+** button at the top right.
 
