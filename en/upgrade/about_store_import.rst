@@ -20,9 +20,7 @@ About Store Import
 Supported Versions
 ==================
 
-The table below shows what versions of CS-Cart and Multi-Vendor you can import data from (the *Upgrade from* column), and what versions come with the **Store Import** add-on (the *Upgrade to* column).
-
-Use the table below to see the versions that you can upgrade to and from:
+The table below shows what versions of CS-Cart and Multi-Vendor you can import data from (the *Upgrade from* column), and what versions come with the **Store Import** add-on (the *Upgrade to* column):
 
 .. list-table::
     :header-rows: 1
@@ -39,7 +37,7 @@ Use the table below to see the versions that you can upgrade to and from:
 
 .. important::
 
-    If you'd like to import data to newer versions of CS-Cart, please `get the free **Store Import** add-on from the CS-Cart Marketplace <http://marketplace.cs-cart.com/add-ons/store-import.html>`_.
+    If you'd like to import data to newer versions of CS-Cart, please `get the free Store Import add-on from the CS-Cart Marketplace <http://marketplace.cs-cart.com/add-ons/store-import.html>`_.
 
 .. note::
 
