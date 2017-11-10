@@ -20,3 +20,5 @@ If the real time shipping method is not displayed:
 
 #. If you set up a **USPS** shipping method, check that the user ID is confirmed. Call 800-344-7779 to confirm your ID.
 
+#. In **Multi-Vendor** check whether vendors' addresses are correct. An incorrect vendor's address prevents shipping methods from displaying on a storefront.
+
