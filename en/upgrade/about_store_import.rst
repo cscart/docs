@@ -2,9 +2,9 @@
 About Store Import
 ******************
 
-**Store Import** is an add-on that imports the database from an older version of your store to 4.x.x. The process takes several steps: 
+**Store Import** is an add-on that imports the database from an older version of your store to the new one. The process takes several steps: 
 
-1. Install CS-Cart/Multi-Vendor 4.x.x to a subfolder of your old store.
+1. Install the new CS-Cart/Multi-Vendor to a subfolder of your old store.
 
 2. Import the data from your old store to the new one with :doc:`the Store Import add-on <../user_guide/addons/store_import/index>`.
 
@@ -20,9 +20,7 @@ About Store Import
 Supported Versions
 ==================
 
-.. important::
-
-    The table contains only versions that have the Store Import add-on by default.
+The table below shows what versions of CS-Cart and Multi-Vendor you can import data from (the *Upgrade from* column), and what versions come with the **Store Import** add-on (the *Upgrade to* column).
 
 Use the table below to see the versions that you can upgrade to and from:
 
@@ -39,13 +37,13 @@ Use the table below to see the versions that you can upgrade to and from:
     *   -   CS-Cart Multi-Vendor 2.2.4 - 3.0.6
         -   Multi-Vendor 4.0.2 - 4.3.2
 
+.. important::
+
+    If you'd like to import data to newer versions of CS-Cart, please get the free Store Import add-on from the CS-Cart Marketplace.
+
 .. note::
 
-    To upgrade to newer versions of CS-Cart, please `get the free Store Import add-on <http://marketplace.cs-cart.com/add-ons/store-import.html>`_ on the CS-Cart Marketplace. The same applies to CS-Cart 4.3.6 that can also import data from CS-Cart 4.3.1 - 4.3.5.
-
-.. note::
-
-    If you want to upgrade your store from CS-Cart or Multi-Vendor 4.0.x and later versions, :doc:`use the Upgrade Center <upgrade_process>`.
+    Technically, Store Import can be used to do jump between patch and minor versions (for example, from 4.3.1 to 4.3.9, and from 4.4.1 to 4.6.2 respectively). However, we recommend using :doc:`the Upgrade Center <upgrade_process>` if you'd like to upgrade your store from CS-Cart or Multi-Vendor 4.0.x and later versions.
 
 ============
 Restrictions
