@@ -10,7 +10,7 @@ How To: Upgrade Your Store with Store Import
 Step 1. Install CS-Cart You'd Like to Upgrade To
 ================================================
 
-1.1. Download the CS-Cart/Multi-Vendor version you'd like to upgrade to (let's call it the new version). Check if this version of CS-Cart/Multi-Vendor supports the Store Import. Then make sure that Store Import can import data from your current version. You can find this information :doc:`here <about_store_import>`.
+1.1. Download a newer version of CS-Cart/Multi-Vendor that you'd like to upgrade to (let's call it the new version). Check if this version of CS-Cart/Multi-Vendor supports the Store Import. Then make sure that Store Import can import data from your current version. You can find this information :doc:`here <about_store_import>`.
 
 1.2. :doc:`Install the new CS-Cart/Multi-Vendor <../install/index>` in a separate subdirectory of your old installation. 
 
@@ -30,7 +30,7 @@ Step 2. Install Store Import
 
 .. important::
 
-    The Store import add-on isn't a part of the CS-Cart installation package. Please `get the free Store Import add-on <http://marketplace.cs-cart.com/add-ons/store-import.html>`_ from the CS-Cart Marketplace.
+    The **Store Import** add-on isn't a part of the CS-Cart installation package. Please `get the free Store Import add-on <http://marketplace.cs-cart.com/add-ons/store-import.html>`_ from the CS-Cart Marketplace.
 
 2.1. In your Administration panel, go to **Add-ons → Manage add-ons** and click the **+** button at the top right.
 
