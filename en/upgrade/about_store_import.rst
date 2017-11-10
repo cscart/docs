@@ -39,11 +39,11 @@ Use the table below to see the versions that you can upgrade to and from:
 
 .. important::
 
-    If you'd like to import data to newer versions of CS-Cart, please get the free Store Import add-on from the CS-Cart Marketplace.
+    If you'd like to import data to newer versions of CS-Cart, please `get the free **Store Import** add-on from the CS-Cart Marketplace <http://marketplace.cs-cart.com/add-ons/store-import.html>`_.
 
 .. note::
 
-    Technically, Store Import can be used to do jump between patch and minor versions (for example, from 4.3.1 to 4.3.9, and from 4.4.1 to 4.6.2 respectively). However, we recommend using :doc:`the Upgrade Center <upgrade_process>` if you'd like to upgrade your store from CS-Cart or Multi-Vendor 4.0.x and later versions.
+    Technically, **Store Import** can be used to do jump between patch and minor versions (for example, from 4.3.1 to 4.3.9, and from 4.4.1 to 4.6.2 respectively). However, we recommend using :doc:`the Upgrade Center <upgrade_process>` if you'd like to upgrade your store from CS-Cart or Multi-Vendor 4.0.x and later versions.
 
 ============
 Restrictions
