@@ -20,6 +20,8 @@ No Shipping Options Available for Your Location
 
 * If you set up a real time shipping method, follow :doc:`this article </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/not_displayed>`.
 
+* If you set up a real time shipping method in **Multi-Vendor**, check whether vendors' addresses are correct. An incorrect vendor's address prevents real time shipping methods from displaying on a storefront.
+
 * If the **Suppliers** functionality is enabled in your CS-Cart, check whether it is :doc:`set up properly </user_guide/users/suppliers/configure_suppliers>`.
 
 ========================================
