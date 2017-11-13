@@ -12,7 +12,7 @@ Settings wizard is a convenient post-installation tool. It allows you to set up 
 Security Settings
 =================
 
-* **New administrator password**—we recommend changing the administrator password that you get after registration. Make sure your new password is secure enough.
+* **New administrator password**—we recommend changing the administrator password after registration. Make sure your new password is secure enough.
 
   You can generate the password automatically with the **Generate** button.
 
@@ -42,7 +42,7 @@ Appearance Settings
 
 * **Primary currency**—select the primary currency of your store.
 
-* **Backend default language**—the default language of the administration panel.
+* **Backend default language**—the default language of the Administration panel.
 
 * **Frontend default language**—the default language of the storefront.
 

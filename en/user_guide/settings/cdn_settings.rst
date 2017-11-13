@@ -10,7 +10,7 @@ CDN Settings
 
   .. note::
 
-      The Amazon Web Services documentation contains `more information about getting the key and secret key <http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/AWSCredentials.html>`_.
+      The Amazon Web Services documentation contains `more information about getting the key and secret key <http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html>`_.
 
 * **CNAME**—the domain name that you want to use instead of the CloudFront domain name for the URLs for your files. You need to create a CNAME record with your DNS service to route queries to the CloudFront host (it will be displayed on this page after you enter the account information).
 

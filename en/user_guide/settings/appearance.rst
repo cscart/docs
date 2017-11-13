@@ -46,13 +46,13 @@ Customer Settings
 
 * **Display prices with taxes on cart/checkout pages if the method of calculating taxes is based on a unit's price**—if you enable this setting, product prices displayed on the cart and checkout pages will include taxes.
 
-* **Show number of available products**—if you enable this setting, the number of products available to customers will be displayed on the storefront.
+* **Show number of available products**—if you enable this setting, the number of product items in stock will be displayed to customers on the storefront.
 
 * **Display mini thumbnail images as a gallery**—if you enable this setting, multiple product thumbnails will be displayed as a small gallery.
 
-* **Use "Value changer" for the Quantity field**—if you enable this setting, the ordinary quantity field in the product list and on the product details page will be supplemented with a widget to increase/decrease the product quantity.
+* **Use "Value changer" for the Quantity field**—if you enable this setting, then the **+** and **-** buttons will be displayed next to the *Quantity* field; these buttons increase and decrease the quantity of selected items.
 
-* **Display the "Pagination section" on the top of the listed object**—if you enable this setting, the pagination bar will appear not only at the bottom, but also at the top of a product list.
+* **Display the "Pagination section" on the top of the listed object**—if you enable this setting, the pagination bar will appear not only at the bottom, but also at the top of a list of objects that consists of multiple pages.
 
 * **Default image previewer**—select one of the supported image previewers.
 
@@ -60,27 +60,27 @@ Customer Settings
 
 * **Display product details in tabs**—if you enable this setting, product details (description, features and so on) will be arranged in multiple tabs.
 
-* **Display track my orders section**—if you enable this setting, the *Track my orders* bar will appear in the *My account* section of the customer area. With this bar a customer will be able track orders by order ID or email.
-
   .. hint::
 
       To manage product tabs, go to **Design → Product tabs**.
+
+* **Display track my orders section**—if you enable this setting, the *Track my orders* bar will appear in the *My account* section of the customer area. With this bar a customer will be able track orders by order ID or email.
 
 =============================
 Product List Layouts Settings
 =============================
 
-* **Available product list views**—select the available templates to arrange products in the product list. A customer can use these templates in the product list on the storefront.
+* **Available product list views**—select the available ways of displaying the product list on the storefront. A customer will be able to select any of these ways.
 
-* **Product list default view**—select the default layout of the product list.
+* **Product list default view**—select the default way of displaying the product list.
 
-* **Use the selected view for current category or search page only**—if you enable this setting, customers will be allowed to select only the layout of the category or product list page that they are browsing at the moment. Moving to another category or product list page will restore the default layout.
+* **Use the selected view for current category or search page only**—if you enable this setting, customers will be allowed to select only the look of the category or product list page that they are browsing at the moment. That choice won't be saved when moving to a different category, and the default look will be used there.
 
-  When this setting is disabled, a customer can select a different layout, that will apply to all category and product list pages that the customer visits during one session.
+  When this setting is disabled, the look selected by a customer will apply to all category and product list pages that the customer visits during one session.
 
 * **Available product list sortings**—the possible ways of sorting products in the product list:
 
-  *  *Oldest/Newest Items first*—by the date when a product was added to the store. 
+  *  *Oldest/Newest Items first*—by the product creation date. 
 
   *  *Position*—by :doc:`the positions of products on the list </user_guide/manage_products/categories/sorting_products_by_position>`.
 
@@ -96,13 +96,13 @@ Product List Layouts Settings
 
 * **Product list default sorting**—the default order in which products are sorted on a product list page.
 
-* **Enable quick view**—if you enable this setting, the **Quick view** button will appear on the product picture when the customer hovers a cursor on it.
+* **Enable quick view**—if you enable this setting, the **Quick view** button will appear on the product list when the customer hovers a cursor over the product; that button will open a pop-up window with product information.
 
 ===============
 Common Settings
 ===============
 
-The following settings apply both to the storefront and the administration panel:
+The following settings apply both to the storefront and the Administration panel:
 
 * **Date format**
 

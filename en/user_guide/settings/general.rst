@@ -4,7 +4,7 @@ General
 
 Settings and preferences in this section affect different aspects of your store.
  
-* **Alternative currency display format**—this option determines whether product prices are shown in one currency (selected by the customer) or in two currencies (the default store currency and the currency selected by the customer).
+* **Alternative currency display format**—this setting determines whether product prices are shown in one currency (selected by the customer) or in two currencies (the default store currency and the currency selected by the customer).
 
 * **Weight symbol**—the symbol of the unit of weight that you use in your store (e.g., *lb*, *kg*, etc.)
 
@@ -100,7 +100,7 @@ Catalog
 
 * **Allow negative amount in inventory**—if you enable this setting, customers will be able to order products that are out of stock.
 
-* **Enable selling downloadable products**—if you enable this setting, the **Downloadable** checkbox will be added to product details page. It means that a product can be distributed by download.
+* **Enable selling downloadable products**—if you enable this setting, the **Downloadable** checkbox will be added to the product editing page. It means that a product can be distributed by download.
 
 * **Download key TTL**—the number of hours before the link for a downloadable product sent to a customer expires and becomes invalid. It is the time period, during which the customer can download the product.
 
@@ -134,7 +134,7 @@ Users/Cart
 
 * **Define minimum order amount by**—choose whether the minimum order amount should include the shipping cost (*Products with shipping*) or be a bare cost of products in the order (*Products*).
 
-* **Allow shopping for unlogged customers**—if you enable this setting, store visitors will be able to add products to their carts even if they haven't signed in.
+* **Allow shopping for unlogged customers**—determines if the store visitors will be able to add products to their carts and see product prices even if they haven't signed in.
 
 * **Allow checkout only from the Cart content page**—if you enable this setting, a customer will be redirected to the cart page after clicking the **Checkout** button. Otherwise, the customer will go directly to the checkout page.
 
@@ -150,11 +150,11 @@ Users/Cart
 
   If you enable this setting, then different variants of :doc:`product options </user_guide/manage_products/options/index>` and :doc:`option combinations </user_guide/manage_products/options/index>` will be regarded as the same product, and CS-Cart will simply count the number of ordered items. Otherwise, different variants of product options will be regarded as separate products.
 
-  For example, a customer buys a $10 T-shirt that has two color options—red and blue. The quantity discount rule for the T-shirt is to sell each item at $8 if there are 5 or more T-shirts in the order.
+  For example, a T-shirt that has two variants for the **Color** option—*Red* and *Blue*. The quantity discount applies when there are 5 or more T-shirts in the order.
 
-  * When the setting is disabled, a customer needs to order 5 red or 5 blue T-shirts to qualify for the quantity discount.
+  * When options are taken into account (the setting is disabled), a customer will need to order 5 red or 5 blue T-shirts to qualify for the quantity discount.
 
-  * When the setting is enabled, a customer can order 2 blue and 3 red T-shirts and still get the quantity discount.
+  * When options are disregarded (the setting is enabled), then a customer will be able to order 2 blue and 3 red T-shirts and still get the quantity discount.
 
   .. important::
 
