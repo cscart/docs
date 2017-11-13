@@ -2,7 +2,7 @@
 Settings
 ********
 
-This section of the documentation describes various settings of your store. For convenience, settings are arranged into groups. To switch between the groups, use the toggle on the left. After applying changes to settings, click the **Save** button.
+This section of the documentation describes various settings from the **Settings** menu. For convenience, settings are arranged into groups. To switch between the groups, use the toggle on the left. After applying changes to settings, click the **Save** button.
 
 .. note::
 
