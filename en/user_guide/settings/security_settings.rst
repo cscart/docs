@@ -2,7 +2,7 @@
 Security Settings
 *****************
 
-Use this section to adjust security settings for accessing the backend.
+Use this section to adjust the settings related to your store's security:
 
 * **Enable secure connection for the storefront**—if you enable this setting, then the storefront (or some specific storefront pages) will work through the HTTPS protocol. This requires an SSL certificate to be installed on your server.
 

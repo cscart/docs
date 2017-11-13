@@ -42,6 +42,6 @@ The following parameters are used to specify the geographical location of your b
 
 * **Order department e-mail address**—the email address to receive notifications about placed orders and changed order statuses.
 
-* **Help/Support department e-mail address**—the email address to receive messages submitted through the *Contact Us* form.
+* **Help/Support department e-mail address**—the email address to send messages submitted through forms.
 
 * **Reply-To newsletter e-mail address**—the email address to include in newsletters as a reply-to address.
