@@ -2,15 +2,14 @@
 Настраиваем Google reCAPTCHA в магазине
 ***************************************
 
-1. Откройте страницу **Модули → Управление модулями**.
+#. Откройте страницу **Модули → Управление модулями**.
 
-2. Модуль :doc:`Google reCAPTCHA <index>` установлен по умолчанию, остается только его настроить. Нажмите на название модуля.
+#. Модуль :doc:`Google reCAPTCHA <index>` установлен по умолчанию, остается только его настроить. Нажмите на название модуля.
 
-.. image:: img/google_recaptcha_addon.png
-    :align: center
-    :alt: Модуль Google reCAPTCHA в CS-Cart и Multi-Vendor.
+   .. fancybox:: img/google_recaptcha_addon.png
+       :alt: Модуль Google reCAPTCHA в CS-Cart и Multi-Vendor.
 
-3. Появится всплывающее окно с настройками модуля:
+#. Появится всплывающее окно с настройками модуля:
 
    * **Site key** (ключ сайта) — один из двух обязательных реквизитов; нужен для отображения виджета reCAPTCHA в магазине.
 
@@ -19,6 +18,10 @@
    .. note::
 
        Получить **site key** and **secret** можно `на этой странице <https://www.google.com/recaptcha/admin>`_. Вам понадобится ввести доменное имя своего магазина; подробности можно узнать `в статье от Google на английском языке <https://developers.google.com/recaptcha/docs/domain_validation>`_.
+
+   .. important::
+
+       Если вы :doc:`встраиваете магазин на страницу Facebook </user_guide/look_and_feel/layouts/widget_mode/facebook_app>`, укажите ``widget.cart-services.com`` как один из доменов. Иначе reCAPTCHA не будет работать во встроенном магазине.
 
    * **Оформление** — цвета виджета reCAPTCHA в вашем магазине. Можно выбрать *Светлое* (Light) или *Тёмное* (Dark) оформление. Примеры того, как виджет выглядит в разном оформлении, можно найти в `вопроснике по Google reCAPTCHA <https://developers.google.com/recaptcha/docs/faq#can-i-customize-the-recaptcha-widget>`_.
 
@@ -32,8 +35,7 @@
 
    * **Отключить антибот после первого правильного ответа** — если поставить галочку, то пользователю понадобится подтвердить, что он не бот, только один раз за сессию.
 
-4. Нажмите кнопку **Сохранить**. После этого тесты CAPTCHA должны появиться в выбранных местах и работать так, как указано в настройках.
+#. Нажмите кнопку **Сохранить**. После этого тесты CAPTCHA должны появиться в выбранных местах и работать так, как указано в настройках.
 
-.. image:: img/google_recaptcha_settings.png
-    :align: center
-    :alt: Настройки модуля Google reCAPTCHA.
+   .. fancybox:: img/google_recaptcha_settings.png
+       :alt: Настройки модуля Google reCAPTCHA.
