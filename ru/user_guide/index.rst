@@ -24,3 +24,4 @@
     database/index
     website/index
     stores/index
+    settings/index
