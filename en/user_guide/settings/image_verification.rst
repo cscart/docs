@@ -6,7 +6,7 @@ Image Verification
 
     Starting with version 4.5.1, this section of settings no longer exists. Please use the :doc:`Google reCaptcha </user_guide/addons/google_recaptcha/configure_recaptcha>` add-on for anti-bot protection.
 
-:doc:`Image verification <../look_and_feel/changing_attributes/image_verification>` is used to ensure that forms in your store are completed by humans, not automated systems. This allows you to avoid lots of spam and fake user accounts. You can adjust parameters of verification images as well as specify when image verification is required.
+:doc:`Image verification </user_guide/look_and_feel/changing_attributes/image_verification>` is used to ensure that forms in your store are completed by humans, not automated systems. This allows you to avoid lots of spam and fake user accounts. You can adjust parameters of verification images as well as specify when image verification is required.
 
 =======
 Use For
