@@ -46,7 +46,7 @@ Customer Settings
 
 * **Number of columns in the product list**—the number of columns with products on a product list page. This setting applies to the *Grid* layout only.
 
-* **Estimate taxes using default address on cart/checkout pages**—if you enable this setting, customers without their own address in the database will see the taxes calculated for the :doc:`default customer address </user_guide/shipping_and_taxes/address>`.
+* **Estimate taxes using default address on cart/checkout pages**—if you enable this setting, customers without their own address in the database will see the taxes calculated for the default customer address.
 
 * **Display prices with taxes on category/product pages if the method of calculating taxes is based on a unit's price**—if you enable this setting, product prices displayed on the product and category pages will include taxes.
 
