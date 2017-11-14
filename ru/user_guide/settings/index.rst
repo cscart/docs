@@ -9,24 +9,24 @@
     :titlesonly:
     :glob:
 
-    appearance
-    cdn_settings
-    checkout
-    company
-    emails
     general
-    licensing_mode
+    appearance
+    company
+    stores
+    checkout
+    emails
+    thumbnails
+    sitemap
+    upgrade_center
+    security_settings
     logging
     reports
-    security_settings
     settings_wizzard
-    sitemap
-    stores
-    thumbnails
-    upgrade_center
-    vendors
+    licensing_mode
+    cdn_settings
 
 .. toctree::
     :hidden:
 
     image_verification
+    vendors

@@ -13,22 +13,22 @@ This section of the documentation describes various settings from the **Settings
     :titlesonly:
     :glob:
 
-    appearance
-    cdn_settings
-    checkout
-    company
-    emails
     general
-    licensing_mode
+    appearance
+    company
+    stores
+    checkout
+    emails
+    thumbnails
+    sitemap
+    vendors
+    upgrade_center
+    security_settings
     logging
     reports
-    security_settings
     settings_wizzard
-    sitemap
-    stores
-    thumbnails
-    upgrade_center
-    vendors
+    licensing_mode
+    cdn_settings
 
 .. toctree::
     :hidden:
