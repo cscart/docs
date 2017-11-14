@@ -13,4 +13,20 @@ This section of the documentation describes various settings from the **Settings
     :titlesonly:
     :glob:
 
-    *
+    general
+    appearance
+    company
+    stores
+    checkout
+    emails
+    thumbnails
+    sitemap
+    vendors
+    upgrade_center
+    security_settings
+    image_verification
+    logging
+    reports
+    settings_wizzard
+    licensing_mode
+    cdn_settings
