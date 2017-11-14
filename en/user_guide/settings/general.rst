@@ -92,13 +92,13 @@ Catalog
 
 * **Enable inventory tracking**—if you enable this setting, the system will automatically update the product inventory every time products are ordered or returned.
 
-* **Allow customers to compare products**—if you enable this setting, customers will be able to add products to comparison list.
-
-  .. note::
-
-      We have a separate article about :doc:`comparing products and their features </user_guide/manage_products/features/feature_comparison>`.
+* **Allow customers to compare products**—if you enable this setting, customers will be able to add products to comparison list. We have a separate article about :doc:`comparing products and their features </user_guide/manage_products/features/feature_comparison>`.
 
 * **Allow negative amount in inventory**—if you enable this setting, customers will be able to order products that are out of stock.
+
+  .. important::
+
+      Even when this setting is disabled, a product can still have a negative amount in stock, but only when that product has :ref:`"Buy in advance" as an out-of-stock action <buy-in-advance>`. 
 
 * **Enable selling downloadable products**—if you enable this setting, the **Downloadable** checkbox will be added to the product editing page. It means that a product can be distributed by download.
 

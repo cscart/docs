@@ -2,27 +2,25 @@
 Out of Stock Actions
 ********************
 
-If a product runs out of stock or isn't available yet, you can still provide actions to your customers on the product page. 
+If a product runs out of stock, you can still allow your customers to do something on the product page. Go to **Products → Products**, click on the name of the desired product, and choose one of the following **Out of stock actions**: 
 
-Go to **Products → Products → <Desired Product>** and choose one of the following **Out of stock actions**: 
+* **None**—forbid customers from buying the product in one of the following cases:
 
-* **None**—forbid customers from buying the product, if the product is out of stock or if you specified the date when the product would be available.
+  * When the product is out of stock.
 
-* **Buy in advance**—allow customers to buy the product in advance, if you specified that the product would be available starting from a certain date.
+  * If you have specified the date when the product would become available (the **Avail since** property of a product).
 
-  .. hint::
-
-      Use the **Avail since** parameter of a product to specify when the product becomes available for purchase.
+* **Buy in advance**—make the product available on backorder; customers will be able to order this product, regardless of the availability date and whether or not the product is in stock.
 
 * **Sign up for notification**—offer customers to sign up for an email notification so that they receive an email once the product is in stock again.
 
-.. image:: img/out_of_stock_actions.png
-    :align: center
-    :alt: You can allow your customers to sign up for notifications and buy products in advance.
+  .. image:: img/out_of_stock_actions.png
+      :align: center
+      :alt: You can allow your customers to sign up for notifications and buy products in advance.
 
-.. important::
+  .. important::
 
-    If you set the **Inventory** parameter of a product to *Do not track*, the product will always be treated as in-stock. The same will happen if you go to **Settings → General → Catalog** and tick the **Allow negative amount in inventory** checkbox.
+      If you set the **Inventory** parameter of a product to *Do not track*, the product will always be treated as in-stock. The same will happen if you go to **Settings → General → Catalog** and tick the **Allow negative amount in inventory** checkbox.
 
 ====
 None
@@ -30,7 +28,7 @@ None
 
 The **Add to Cart** button won't appear in these cases:
 
-* You have **0** items in stock and you don't allow negative amount of items in your inventory.
+* You have *0* items in stock and you don't allow negative amount of items in your inventory.
 
 * The product isn’t available yet because you have specified a later date in the **Avail since** field.
 
@@ -38,23 +36,21 @@ The **Add to Cart** button won't appear in these cases:
 
       If your product is supposed to be available starting from a specific date, your customers will see that date on the product page.
 
-.. image:: img/no_action.png
-    :align: center
-    :alt: There is no Add to Cart button, but there is a message about when the product becomes available.
+  .. image:: img/no_action.png
+      :align: center
+      :alt: There is no Add to Cart button, but there is a message about when the product becomes available.
+
+.. _buy-in-advance:
 
 ==============
 Buy in Advance
 ==============
 
-If you specify the **Avail since** date for a product, customers won't be able to buy it until that date. However, you set the **Out of stock actions** parameter of the product to *Buy in advance*. That will allow customers to buy that product.
-
-.. important::
-
-    To display the **Add to Cart** button on a product details page, you must have **more than 0 items** of the product in stock or **allow negative amount in inventory** under **Settings → General → Catalog**.
+When a product is out of stock, it will be marked as available on backorder. Customers will be able to order this product, regardless of the availability date. The product's quantity in stock can also become negative, even if negative inventory is not allowed :doc:`on the "Settings → General" page </user_guide/settings/general>`.
 
 .. image:: img/buy_in_advance.png
     :align: center
-    :alt: There is a message about when the product becomes available, but customers can add the product to cart.
+    :alt: Despite the message that the product isn't available yet, customers can add the product to cart.
 
 .. _product-subscribers:
 
@@ -88,9 +84,9 @@ You can view product subscriptions in 2 ways:
 
 * To view subscriptions for a certain product, go straight to **Products → Products → <Desired Product>** and switch to the **Subscribers** tab.
 
-.. image:: img/subscribers.png
-    :align: center
-    :alt: Every product has its own list of subscribers.
+  .. image:: img/subscribers.png
+      :align: center
+      :alt: Every product has its own list of subscribers.
 
 You can add subscribers to the list using these buttons:
 
@@ -98,8 +94,8 @@ You can add subscribers to the list using these buttons:
 
 * **Select customer**—choose the registered customers you want to subscribe to email notifications about the product's availability.
 
-.. important::
+  .. important::
 
-    Once a subscriber receives the email saying that the product is in stock, they are removed from the list of product subscribers automatically.
+      Once a subscriber receives the email saying that the product is in stock, they are removed from the list of product subscribers automatically.
 
 To remove subscribers from the list manually, tick the checkboxes next to their email addresses and click the **trash can button**.
