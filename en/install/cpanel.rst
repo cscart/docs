@@ -14,6 +14,7 @@ Even if your host offers another control panel, you may still find this tutorial
 
     CS-Cart works on any host that supports MySQL and PHP. You can learn about the minimum requirements :doc:`here <system_requirements>`.
 
+===============================
 Step 1. Create a MySQL Database
 ===============================
 
@@ -57,6 +58,7 @@ After you press the **Next Step** button, cPanel will offer you to create more d
     :align: center
     :alt: Press Return Home after you create a database and a privileged user.
 
+====================================
 Step 2. Upload CS-Cart to the Server
 ====================================
 2.1. `Download <https://www.cs-cart.com/download-cs-cart.html>`_ the latest version of CS-Cart.  Then go to **cPanel → Files → File Manager**.
@@ -87,6 +89,7 @@ Step 2. Upload CS-Cart to the Server
     :align: center
     :alt: Extracting the CS-Cart archive with cPanel File Manager.
 
+=======================
 Step 3. Install CS-Cart
 =======================
 
@@ -135,20 +138,21 @@ To do that, tick the **Install demo data** checkbox. You can always `remove demo
     :align: center
     :alt: Don't close the page, wait for the progress bar to fill. 
 
+==================================
 Step 4. Choose Your Licensing Mode
 ==================================
 
 The next step is to choose your licensing mode. You have 3 options:
 
-1. Enter your license number to enable the **Full** mode, that gives you unrestricted access to all CS-Cart features, i.e. several dozens of add-ons, multiple languages and currencies, unlimited number of product filters on the storefront, and more. You can `purchase a license <http://www.cs-cart.com/cs-cart-license.html>`_ any time.
+* Enter your license number to enable the **Full** mode, that gives you unrestricted access to all CS-Cart features, i.e. several dozens of add-ons, multiple languages and currencies, unlimited number of product filters on the storefront, and more. You can `purchase a license <http://www.cs-cart.com/cs-cart-license.html>`_ any time.
 
-2. If you don’t have a license yet, we offer a **free 30-day trial** with full access to all CS-Cart features. After the end of your trial period you can purchase a license or switch to the Free Mode.
+* If you don’t have a license yet, we offer a **free 30-day trial** with full access to all CS-Cart features. After the end of your trial period you can purchase a license or switch to the Free Mode.
 
-3. The **Free** mode leaves some features unavailable, but has no time restrictions. You can use this mode from the start or switch to it once your trial period is over.
+* The **Free** mode leaves some features unavailable, but has no time restrictions. You can use this mode from the start or switch to it once your trial period is over.
 
-.. important::
+  .. important::
 
-   The **Free Mode** is not available in Multi-Vendor. Beginning with version 4.3.7, it was removed from CS-Cart as well. Once the trial period expires, enter your license number to continue managing your store.
+     The **Free Mode** is not available in Multi-Vendor. Beginning with version 4.3.7, it was removed from CS-Cart as well. Once the trial period expires, enter your license number to continue managing your store.
 
 .. image:: img/cpanel/15_licensing_mode.png
     :align: center
@@ -158,6 +162,4 @@ Once you choose your licensing mode, your online store is all set! Now you can g
 
 .. image:: img/cpanel/16_complete.png
     :align: center
-    :alt: After the installation you can view the store and manage it. 
-
-
+    :alt: After the installation you can view the store and manage it.

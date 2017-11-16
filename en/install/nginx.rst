@@ -14,6 +14,7 @@ In this tutorial, you will learn how to install CS-Cart on a virtual private or 
 
    We assume that you have registered a domain and linked it to a directory on your server. You will also need `nginx <http://nginx.org/>`_, `PHP-FPM <http://www.php.net/>`_, `MySQL <https://www.mysql.com/>`_, and `phpMyAdmin <https://www.phpmyadmin.net/>`_ to create a database.
 
+=======================
 Step 1. Configure Nginx
 =======================
 
@@ -57,7 +58,6 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
     :align: center
     :alt: Finding out the number of processors in the system.
 
-
 1.4. On your server find the file */etc/nginx/nginx.conf* and open it in a text/code editor of your choice.
 
 =====================================  ====================
@@ -65,15 +65,19 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
 **Change the number (see Step 1.3):**  worker_processes  2;
 =====================================  ====================
 
-1.5. Create a directory for your store. For your convenience we recommend to use your domain name for your directory. In this tutorial we create a new folder called *mynewshop.tk* with this command:
+.. important::
+
+    We'll be using ``example.com`` in many of the commands and configuration files below. Please replace *example.com* with your domain name.
+
+1.5. Create a directory for your store. For your convenience we recommend using your domain name for your directory. In this tutorial we create a new folder called *example.com* with this command:
 
 .. code-block:: bash
 
-    mkdir -p /var/www/html/mynewshop.tk
+    mkdir -p /var/www/html/example.com
 
-1.6. Open the */etc/nginx/sites-available/default* file. Delete its content and copy the following code to the file. Make sure to find and replace all instances of *mynewshop.tk* with your actual folder name.
+1.6. Open the */etc/nginx/sites-available/default* file. Delete its content and copy the following code to the file. Make sure to find and replace all instances of *example.com* with your actual folder name.
 
-.. code-block:: php
+.. code-block:: nginx
 
     #######################################################################
     # A default  configuration for domains and IP address.
@@ -86,7 +90,7 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
 
         # Redirecting to our store by default
         location / {
-            return 301 $scheme://mynewshop.tk$request_uri;
+            return 301 $scheme://example.com$request_uri;
         }
     }
 
@@ -95,9 +99,9 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
     #######################################################################
 
     server {
-        listen  80;
+       listen  80;
         #   The store’s domain
-        server_name mynewshop.tk www.mynewshop.tk;
+        server_name example.com www.example.com;
 
         #   Default encoding
         charset utf-8;
@@ -107,7 +111,7 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
         error_log   /var/log/nginx/error.log;
 
         #   The main directory of your store
-        root /var/www/html/mynewshop.tk;
+        root /var/www/html/example.com;
 
         #   Compression
         gzip on;
@@ -135,55 +139,16 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
         client_header_buffer_size       1k;
         large_client_header_buffers     4 16k;
 
-        #   The entry point of your store
-        location / {
-            #   The main directory of your store
-            root /var/www/html/mynewshop.tk;
 
-            #   The main script
-            index  index.php index.html index.htm;
+        error_page 598 = @backend;
 
-            #   For API
-            rewrite ^/api/(.*)$ /api.php?_d=$1&ajax_custom=1&$args last;
+        ############################################################################
 
-            #   The script search logic uses the following order: file, directory, script
-            try_files $uri $uri/ @fallback;
-        }
-
-        #   Rewrite rules for the SEO module
-        location @fallback {
-            rewrite  ^(.*)$ /index.php?$args last;
-        }
-
-        #  The first rule for searching static files.
-        location ~* \.(jpeg|ico|jpg|gif|png|css|js|pdf|txt|tar|gz|wof|csv|zip|xml|yml) {
-        access_log off;
-        #   The rule for searching static files. If the server can’t find the file in the store folder, it will use the @statics rule.
-        #  For example, if your store is located at mynewshop.tk/shop/
-            try_files $uri @statics;
-            expires 14d;
-            add_header Access-Control-Allow-Origin *;
-            add_header Cache-Control public;
-            root /var/www/html/mynewshop.tk;
-        }
-
-        #   The rule for searching static files of the storefront. For example, when you have 2 storefronts in different directories: mynewshop.tk and mynewshop.tk/shop/
-        location @statics {
-            rewrite ^/(\w+)/(.*)$ /$2 break;
-            access_log off;
-            rewrite_log off;
-            expires 14d;
-            add_header Cache-Control public;
-            add_header Access-Control-Allow-Origin *;
-            root /var/www/html/mynewshop.tk;
-         }
-
-        #   Processing PHP scripts
-        location ~ \.php$ {
-            root /var/www/html/mynewshop.tk;
+    #   Processing PHP scripts
+        location @backend {
+            try_files $uri /$1/$3 /index.php =404;
             proxy_read_timeout 61;
             fastcgi_read_timeout 61;
-            try_files $uri $uri/ =404;
             #   The path to the PHP-FPM daemon socket
             fastcgi_pass unix:/var/run/php5-fpm.sock;
             fastcgi_index index.php;
@@ -191,72 +156,140 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
             include fastcgi_params;
         }
 
-    #
-    #  Denying the ability to run PHP in the directories for security reasons.
-    #
-
-        location /app/ {
-                deny all;
-
-                #  Allowing to run the script for 1C data exchange. 
-                    location ^~ /app/addons/rus_exim_1c/exim_1c.php {
-                    allow all;
-                }
+    #   Rewrite rules for the SEO module 
+        location @fallback {
+            rewrite  ^/(\w+)/(\w+/)?(.*)$ /$1/index.php?$args last;
+            rewrite  ^(.*)$ /index.php?$args last;
         }
+
+    #   The rule for searching static files of the storefront. For example, when you have 2 storefronts in different directories: example.com and example.com/shop/
+        location @statics {
+            rewrite ^/(\w+)/(\w+/)?(.*)$ /$1/$3 break;
+            access_log off;
+            try_files $uri /$1/$3 @fallback;
+            rewrite_log off;
+            expires max;
+            add_header Cache-Control public;
+            add_header Access-Control-Allow-Origin *;
+        }
+
+        rewrite ^(/admin.php)(.*)$ /?url=admin.php$2 redirect;
+
+    #   The entry point of your store
+        location / {
+        #   The main script
+            index  index.php index.html index.htm;
+        #   For API
+            rewrite ^/(\w+)/(\w+/)?api/(.*)$ /$1/api.php?_d=$3&ajax_custom=1&$args last;
+        #   The script search logic uses the following order: file, directory, script
+            try_files $uri $uri/ @fallback;
+
+        #   The first rule for searching static files
+            location ~* /(\w+)/(\w+/)?(.+\.(jpe?g|ico|gif|png|css|js|pdf|txt|tar|wof|woff|svg|ttf|csv|zip|xml|yml)) {
+                access_log off;
+            #   The rule for searching static files. If the server can’t find the file in the store folder, it will use the @statics rule.
+            #   For example, if your store is located at example.com/shop/            
+                try_files $uri /stores/$1/$3 @statics;
+                expires max;
+                add_header Access-Control-Allow-Origin *;
+                add_header Cache-Control public;
+            }
+
+        #
+        #  Denying the ability to run PHP in the directories for security reasons.
+        #
+
+            location ~ ^/(\w+)/(\w+/)?app/ {
+                return 404;
+            }
 
         #   Allowing to run the payment methods scripts.
-        location /app/payments/ {
-            allow all;
-        }
+            location ~ ^/(\w+)/(\w+/)?app/payments/ {
+                return 404;
+                location ~ \.php$ {
+                    return 598;
+                }
+            }
+
+        #   Allowing to run the payment methods scripts.
+            location ~ ^/(\w+)/(\w+/)?app/addons/paypal/payments/ {
+                return 404;
+                location ~ \.php$ {
+                    return 598;
+                }
+            }
+
+        #   Allowing to run the script for 1C data exchange.
+            location ~ ^/(\w+)/(\w+/)?app/addons/rus_exim_1c/ {
+                return 404;
+                location ~ \.php$ {
+                    return 598;
+                }
+            }
 
         #   Forbidding PHP in the /design directory.
-        location /design/ {
-        allow all;
+            location ~ ^/(\w+)/(\w+/)?design/ {
+                allow all;
                 location ~* \.([tT][pP][lL]|[pP][hH][pP].?)$ {
-                deny all;
+                    return 404;
                 }
-        }
+            }
+
+        #   Allowing static files only in the /var directory
+            location ~ ^/(\w+)/(\w+/)?var/ {
+                return 404;
+                location ~* \.(jpe?g|ico|gif|png|css|js|pdf|txt|tar|wof|woff|svg|ttf|csv|zip|xml|yml)$ {
+                    allow all;
+                    expires 1M;
+                    add_header Cache-Control public;
+                    add_header Access-Control-Allow-Origin *;
+                }
+            }
+
+        #   Denying access to the template backups.
+            location ~ ^/(\w+)/(\w+/)?var/themes_repository/ {
+                allow all;
+                location ~* \.([tT][pP][lL]|[pP][hH][pP].?)$ {
+                    return 404;
+                }
+            }
 
         #   Forbidding PHP in the /images directory.
-        location /images/ {
-            allow all;
-            location ~* \.([pP][hH][pP].?)$ {
-                deny all;
-            }
-        }
-
-        #   Allowing static files only in the /var directory.
-        location /var/ {
-            deny all;
-            location ~* \.(js|css|png|jpg|gz|xml|yml)$ {
+            location ~ ^/(\w+)/(\w+/)?images/ {
                 allow all;
-                expires 1M;
-                add_header Cache-Control public;
-                add_header Access-Control-Allow-Origin *;
+                location ~* \.([pP][hH][pP].?)$ {
+                    return 404;
+                }
             }
-        }
 
-        #   Blocking outside access to the store’s database backups (/var/database)
-        location /var/database/ {
-            deny all;
-        }
-
-        #   Denying access to the template backups
-        location /var/skins_repository/ {
-            allow all;
-            location ~* \.([tT][pP][lL]|[pP][hH][pP].?)$ {
-                deny all;
+        #   Denying access to init.php
+            location ~ ^/(\w+)/(\w+/)?init.php {
+                return 404;
             }
-        }
 
-        #   Processing API
-        location ~* api/ {
-            rewrite ^/api/(.*)$ /api.php?_d=$1&ajax_custom=1&$args last;
-        }
+        #   Blocking outside access to the store’s database backups (/var/database).
+            location ~ ^/(\w+)/(\w+/)?var/database/ {
+                return 404;
+            }
 
-        #  Denying access to .htaccess and .htpasswd
-        location ~ /\.ht {
-            deny  all;
+        #   Denying access to .tpl
+            location ~* \.([tT][pP][lL].?)$ {
+                return 404;
+            }
+
+        #   Denying access to .htaccess, .htpasswd and git
+            location ~ /\.(ht|git) {
+                return 404;
+            }
+
+            location ~* /(\w+)/(\w+/)?(.+\.php)$ {
+                return 598 ;
+            }
+
+            location ~* \.php$ {
+                return 598 ;
+            }
+
         }
     }
 
@@ -272,25 +305,25 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
 
     sudo apt-get install php5-fpm php5-mysql php5-curl php5-gd php-mail -y
 
-1.9. Let’s configure nginx for **phpMyAdmin**. We want it to open when we go to *pma.mynewshop.tk*. Open the file */etc/nginx/sites-available/default* and add the following code to the end of the file. Again, replace all instances of *mynewshop.tk* with your actual folder name.
+1.9. Let’s configure nginx for **phpMyAdmin**. We want it to open when we go to *pma.example.com*. Open the file */etc/nginx/sites-available/default* and add the following code to the end of the file. Again, replace all instances of *example.com* with your actual folder name.
 
-.. code-block:: php
+.. code-block:: nginx
 
     #######################################################################
-    # pma.mynewshop.tk
+    # pma.example.com
     #######################################################################
 
     server {
         listen  80;
 
         #   A subdomain for phpMyAdmin
-        server_name pma.mynewshop.tk www.pma.mynewshop.tk;
+        server_name pma.example.com www.pma.example.com;
 
         charset utf-8;
 
         #   The location of the log files
-        access_log  /var/log/nginx/pma.mynewshop.tk_access.log combined;
-        error_log   /var/log/nginx/pma.mynewshop.tk_error.log;
+        access_log  /var/log/nginx/pma.example.com_access.log combined;
+        error_log   /var/log/nginx/pma.example.com_error.log;
 
         #   The path for the subdomain to refer to
         root /usr/share/phpmyadmin;
@@ -318,20 +351,21 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
 
     sudo service nginx restart
 
+======================
 Step 2. Upload CS-Cart
 ======================
 
 2.1. `Download <https://www.cs-cart.com/download-cs-cart.html>`_ the latest version of CS-Cart.
 
-2.2. Upload the **cscart_v4.x.x.zip** archive you downloaded nto the directory you created in Step 1.5 (*/var/www/html/mynewshop.tk* in the example).
+2.2. Upload the **cscart_vx.x.x.zip** archive you downloaded to the directory you created in Step 1.5 (*/var/www/html/example.com* in the example).
  
-Connect to the server with your FTP server. You’ll need the name of the **host**, **username**, **password** and, in some cases, **port**. Contact your hosting provider or the server administrator for your FTP account details. 
+To do that, connect to the server with your FTP client. You’ll need the name of the **host**, **username**, **password** and, in some cases, **port**. Contact your hosting provider or the server administrator for your FTP account details. 
 
-2.3. In the Terminal/SSH Client switch to the directory of your site. Use this command, and replace mynewshop.tk with the name of the directory you created in Step 1.5:
+2.3. In the Terminal/SSH Client switch to the directory of your site. Use this command, and replace example.com with the name of the directory you created in Step 1.5:
 
 .. code-block:: bash
 
-    cd /var/www/html/mynewshop.tk
+    cd /var/www/html/example.com
 
 Your command may look different if your document root is different.
 
@@ -351,10 +385,11 @@ You should see the archive you uploaded, and any other files or directories you 
 
 .. code-block:: bash
 
-    unzip cscart_v4.x.x.zip
+    unzip cscart_vx.x.x.zip
 
 In the example we have **cscart_v4.3.4.zip**. The name of your archive depends on the version of CS-Cart that you install.
 
+========================================
 Step 3. Change Ownership and Permissions
 ========================================
 
@@ -404,10 +439,11 @@ For example, ``chmod 644 config.local.php`` means that:
 
     Before running ``chown``, please use the ``ls`` command to double-check that you're it the Document Root. When you run ``chown`` as described above, all the files and folders you see, as well as and their subfolders and files, will be given to the specified user.
 
+=========================
 Step 4. Create a Database
 =========================
 
-4.1. Open **phpMyAdmin** in your browser. In our case the link to it is located in the Document Root and is accessible by *http://pma.mynewshop.tk*. Contact your hosting provider or server administrator for phpMyAdmin login and password.
+4.1. Open **phpMyAdmin** in your browser. In our case the link to it is located in the Document Root and is accessible by *http://pma.example.com*. Contact your hosting provider or server administrator for phpMyAdmin login and password.
 
 If you open it for the first time, the credentials may be as follows:
 
@@ -426,6 +462,7 @@ If you open it for the first time, the credentials may be as follows:
     :align: center
     :alt: Creating a new database in phpMyAdmin.
 
+=======================
 Step 5. Install CS-Cart
 =======================
 
@@ -462,7 +499,7 @@ Step 5. Install CS-Cart
 
 5.4. If this is your first time with CS-Cart and you want to see what your store will look like once you add the details about your products, fill your store with demo products, orders, and banners. 
 
-To do that, tick the **Install demo data** checkbox. You can always `remove demo data <http://kb.cs-cart.com/removing-demo-info>`_ later. We’d appreciate it if you helped us make CS-Cart better. Tick the **Help us improve CS-Cart** checkbox to send anonymous usage statistics.
+To do that, tick the **Install demo data** checkbox. You can always :doc:`remove demo data </install/useful_info/remove_demo_data>` later. We’d appreciate it if you helped us make CS-Cart better. Tick the **Help us improve CS-Cart** checkbox to send anonymous usage statistics.
 
 .. image:: img/cpanel/13_checkboxes.png
     :align: center
@@ -474,20 +511,21 @@ To do that, tick the **Install demo data** checkbox. You can always `remove demo
     :align: center
     :alt: Don't close the page, wait for the progress bar to fill. 
 
+==================================
 Step 6. Choose Your Licensing Mode
 ==================================
 
 The next step is to choose your licensing mode. You have 3 options:
 
-1. Enter your license number to enable the **Full Mode**, that gives you unrestricted access to all CS-Cart features, i.e. several dozens of add-ons, multiple languages and currencies, unlimited number of product filters on the storefront, and more. You can `purchase a license <http://www.cs-cart.com/cs-cart-license.html>`_ any time.
+* Enter your license number to enable the **Full Mode**, that gives you unrestricted access to all CS-Cart features, i.e. several dozens of add-ons, multiple languages and currencies, unlimited number of product filters on the storefront, and more. You can `purchase a license <http://www.cs-cart.com/cs-cart-license.html>`_ any time.
 
-2. If you don’t have a license yet, we offer a **free 30-day trial** with full access to all CS-Cart features. After the end of your trial period you can purchase a license or switch to the Free Mode.
+* If you don’t have a license yet, we offer a **free 30-day trial** with full access to all CS-Cart features. After the end of your trial period you can purchase a license or switch to the Free Mode.
 
-3. The **Free Mode** leaves some features unavailable, but has no time restrictions. You can use this mode from the start or switch to it once your trial period is over.
+* The **Free Mode** leaves some features unavailable, but has no time restrictions. You can use this mode from the start or switch to it once your trial period is over.
 
-.. important::
+  .. important::
 
-   The **Free Mode** is not available in Multi-Vendor. Beginning with version 4.3.7, it was removed from CS-Cart as well. Once the trial period expires, enter your license number to continue managing your store.
+      The **Free Mode** is not available in Multi-Vendor. Beginning with version 4.3.7, it was removed from CS-Cart as well. Once the trial period expires, enter your license number to continue managing your store.
 
 .. image:: img/cpanel/15_licensing_mode.png
     :align: center
@@ -497,5 +535,4 @@ Once you choose your licensing mode, your online store is all set! Now you can g
 
 .. image:: img/cpanel/16_complete.png
     :align: center
-    :alt: After the installation you can view the store and manage it. 
-
+    :alt: After the installation you can view the store and manage it.

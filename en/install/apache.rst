@@ -15,6 +15,7 @@ In this tutorial, you will learn how to install CS-Cart on a virtual private or 
 
     We assume that you have registered a domain and linked it to a directory on your server. You will also need `Apache <http://httpd.apache.org/>`_, `PHP <http://www.php.net/>`_, `MySQL <https://www.mysql.com/>`_, and `phpMyAdmin <https://www.phpmyadmin.net/>`_ to create a database.
 
+=============================
 Step 1. Make the Preparations
 =============================
 
@@ -59,12 +60,13 @@ or
 
 As you can see, in our case */var/www/html* is the document root. In the picture we marked it in red.
 
+======================
 Step 2. Upload CS-Cart
 ======================
 
-2.1. Upload the **cscart_v4.x.x.zip** archive you downloaded into your document root (*/var/www/html* in the example; it may also be */var/www* in some cases).
+2.1. Upload the **cscart_vx.x.x.zip** archive you downloaded into your document root (*/var/www/html* in the example; it may also be */var/www* in some cases).
  
-Connect to the server with your FTP server. You’ll need the name of the **host**, **username**, **password** and, in some cases, **port**. Contact your hosting provider or the server administrator for your FTP account details. 
+To do that, connect to the server with your FTP client. You’ll need the name of the **host**, **username**, **password** and, in some cases, **port**. Contact your hosting provider or the server administrator for your FTP account details. 
 
 2.2. In the Terminal/SSH Client switch to the directory associated with your domain. I used this command:
 
@@ -90,10 +92,11 @@ You should see the archive you uploaded, and any other files or directories you 
 
 .. code-block:: bash
 
-    unzip cscart_v4.x.x.zip
+    unzip cscart_vx.x.x.zip
 
 In the example we have **cscart_v4.3.4.zip**. The name of your archive depends on the version of CS-Cart that you install.
 
+========================================
 Step 3. Change Ownership and Permissions
 ========================================
 
@@ -143,6 +146,7 @@ For example, ``chmod 644 config.local.php`` means that:
 
     Before running ``chown``, please use the ``ls`` command to double-check that you're it the Document Root. When you run ``chown`` as described above, all the files and folders you see, as well as and their subfolders and files, will be given to the specified user.
 
+=========================
 Step 4. Create a Database
 =========================
 
@@ -165,6 +169,7 @@ If you open it for the first time, the credentials may be as follows:
     :align: center
     :alt: Creating a new database in phpMyAdmin.
 
+=======================
 Step 5. Install CS-Cart
 =======================
 
@@ -201,7 +206,7 @@ Step 5. Install CS-Cart
 
 5.4. If this is your first time with CS-Cart and you want to see what your store will look like once you add the details about your products, fill your store with demo products, orders, and banners. 
 
-To do that, tick the **Install demo data** checkbox. You can always `remove demo data <http://kb.cs-cart.com/removing-demo-info>`_ later. We’d appreciate it if you helped us make CS-Cart better. Tick the **Help us improve CS-Cart** checkbox to send anonymous usage statistics.
+To do that, tick the **Install demo data** checkbox. You can always :doc:`remove demo data </install/useful_info/remove_demo_data>` later. We’d appreciate it if you helped us make CS-Cart better. Tick the **Help us improve CS-Cart** checkbox to send anonymous usage statistics.
 
 .. image:: img/cpanel/13_checkboxes.png
     :align: center
@@ -213,20 +218,21 @@ To do that, tick the **Install demo data** checkbox. You can always `remove demo
     :align: center
     :alt: Don't close the page, wait for the progress bar to fill. 
 
+==================================
 Step 6. Choose Your Licensing Mode
 ==================================
 
 The next step is to choose your licensing mode. You have 3 options:
 
-1. Enter your license number to enable the **Full** mode, that gives you unrestricted access to all CS-Cart features, i.e. several dozens of add-ons, multiple languages and currencies, unlimited number of product filters on the storefront, and more. You can `purchase a license <http://www.cs-cart.com/cs-cart-license.html>`_ any time.
+* Enter your license number to enable the **Full** mode, that gives you unrestricted access to all CS-Cart features, i.e. several dozens of add-ons, multiple languages and currencies, unlimited number of product filters on the storefront, and more. You can `purchase a license <https://www.cs-cart.com/cs-cart-license.html>`_ any time.
 
-2. If you don’t have a license yet, we offer a **free 30-day trial** with full access to all CS-Cart features. After the end of your trial period you can purchase a license or switch to the Free Mode.
+* If you don’t have a license yet, we offer a **free 30-day trial** with full access to all CS-Cart features. After the end of your trial period you can purchase a license or switch to the Free Mode.
 
-3. The **Free** mode leaves some features unavailable, but has no time restrictions. You can use this mode from the start or switch to it once your trial period is over.
+* The **Free** mode leaves some features unavailable, but has no time restrictions. You can use this mode from the start or switch to it once your trial period is over.
 
-.. important::
+  .. important::
 
-   The **Free Mode** is not available in Multi-Vendor. Beginning with version 4.3.7, it was removed from CS-Cart as well. Once the trial period expires, enter your license number to continue managing your store.
+     The **Free Mode** is not available in Multi-Vendor. Beginning with version 4.3.7, it was removed from CS-Cart as well. Once the trial period expires, enter your license number to continue managing your store.
 
 .. image:: img/cpanel/15_licensing_mode.png
     :align: center
@@ -236,6 +242,4 @@ Once you choose your licensing mode, your online store is all set! Now you can g
 
 .. image:: img/cpanel/16_complete.png
     :align: center
-    :alt: After the installation you can view the store and manage it. 
-
-
+    :alt: After the installation you can view the store and manage it.
