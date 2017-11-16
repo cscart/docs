@@ -133,7 +133,11 @@
 
 ::
 
-    mkdir -p /var/www/html/dbazhenov.ru
+    mkdir -p /var/www/html/example.com
+
+.. important::
+
+    В примерах команд и в конфигурационном файле мы будем использовать ``example.com``. Замените его на имя своего домена, например, *dbazhenov.ru*.
 
 
 8. Конфигурация Nginx
@@ -145,193 +149,223 @@
 
 ``/etc/nginx/sites-available/default``
 
-Удалите весь код и вставьте новый. Ниже будет код, в комментариях кратко описано происходящее. Вам нужно заменить домен **dbazhenov.ru** на ваш домен
+Удалите весь код и вставьте новый. Ниже будет код, в комментариях кратко описано происходящее. Вам нужно заменить домен **example.com** на ваш домен
 
 ::
 
-    ################################################################################
-    #   Виртуальный хост по умолчанию, предназначен для работы по IP адресу или домену без собственной конфигурации
-    ################################################################################
-    server {
-        listen  80;
-        server_name _;
-        root /var/www/empty;
+  #######################################################################
+  # Виртуальный хост по умолчанию, предназначен для работы по IP адресу или домену без собственной конфигурации
+  #######################################################################
 
-        # Редирект на нужный магазин по умолчанию
-        location / {
-            return 301 $scheme://dbazhenov.ru$request_uri;
-        }
+  server {
+      listen  80;
+      server_name _;
+      root /var/www/empty;
+
+      # Редирект на нужный магазин по умолчанию
+      location / {
+          return 301 $scheme://example.com$request_uri;
+      }
+  }
+
+  #######################################################################
+  # Описание и конфигурация основного домена для интернет-магазина
+  #######################################################################
+
+  server {
+     listen  80;
+      #   Домен интернет-магазина
+      server_name example.com www.example.com;
+
+      #   Кодировка по-умолчанию
+      charset utf-8;
+
+      #   Расположение логов
+      access_log  /var/log/nginx/access.log combined;
+      error_log   /var/log/nginx/error.log;
+
+      #   Основной каталог интернет-магазина
+      root /var/www/html/example.com;
+
+      #   Сжатие
+      gzip on;
+      gzip_disable "msie6";
+      gzip_comp_level 6;
+      gzip_min_length  1100;
+      gzip_buffers 16 8k;
+      gzip_proxied any;
+      gzip_types text/plain application/xml
+      application/javascript
+      text/css
+      text/js
+      text/xml
+      application/x-javascript
+      text/javascript
+      application/json
+      application/xml+rss;
+
+      #   Прочие настройки
+      client_max_body_size            100m;
+      client_body_buffer_size         128k;
+      client_header_timeout           3m;
+      client_body_timeout             3m;
+      send_timeout                    3m;
+      client_header_buffer_size       1k;
+      large_client_header_buffers     4 16k;
+
+
+      error_page 598 = @backend;
+
+      ############################################################################
+
+  #   Обработка PHP-скриптов
+      location @backend {
+          try_files $uri /$1/$3 /index.php =404;
+          proxy_read_timeout 61;
+          fastcgi_read_timeout 61;
+          #   The path to the PHP-FPM daemon socket
+          fastcgi_pass unix:/var/run/php5-fpm.sock;
+          fastcgi_index index.php;
+          fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+          include fastcgi_params;
     }
 
-    ################################################################################
-    #   Описание и конфигурация основного домена для интернет-магазина
-    ################################################################################
+  #   Правила rewrite для модуля SEO
+      location @fallback {
+          rewrite  ^/(\w+)/(\w+/)?(.*)$ /$1/index.php?$args last;
+          rewrite  ^(.*)$ /index.php?$args last;
+      }
 
-    server {
-        listen  80;
-        #   Домен интернет-магазина
-        server_name dbazhenov.ru www.dbazhenov.ru;
+  #   Правило поиска статических файлов. Например, если есть 2 витрины: example.com and example.com/shop/
+      location @statics {
+          rewrite ^/(\w+)/(\w+/)?(.*)$ /$1/$3 break;
+          access_log off;
+          try_files $uri /$1/$3 @fallback;
+          rewrite_log off;
+          expires max;
+          add_header Cache-Control public;
+          add_header Access-Control-Allow-Origin *;
+      }
 
-        #   Кодировка по-умолчанию
-        charset utf-8;
+      rewrite ^(/admin.php)(.*)$ /?url=admin.php$2 redirect;
 
-        #   Расположение логов
-        access_log  /var/log/nginx/access.log combined;
-        error_log   /var/log/nginx/error.log;
+  #   Точка входа в интернет-магазин
+      location / {
+      #   Главный скрипт
+          index  index.php index.html index.htm;
+      #   Для  работы API
+          rewrite ^/(\w+)/(\w+/)?api/(.*)$ /$1/api.php?_d=$3&ajax_custom=1&$args last;
+      #   Логика поиска скрипта по порядку: файл, папка, скрипт
+          try_files $uri $uri/ @fallback;
 
-        #   Основной каталог интернет-магазина
-        root /var/www/html/dbazhenov.ru;
+      #   Настройки статики, первое правило
+          location ~* /(\w+)/(\w+/)?(.+\.(jpe?g|ico|gif|png|css|js|pdf|txt|tar|wof|woff|svg|ttf|csv|zip|xml|yml)) {
+              access_log off;
+          #   Правило поиска статических файлов. Если файл не находится по адресу магазина, то ищем файл по правилу @statics.
+          #   Например, если магазин находится в подпапке example.com/shop/            
+              try_files $uri /stores/$1/$3 @statics;
+              expires max;
+              add_header Access-Control-Allow-Origin *;
+              add_header Cache-Control public;
+          }
 
-        #   Сжатие
-        gzip on;
-        gzip_disable "msie6";
-        gzip_comp_level 6;
-        gzip_min_length  1100;
-        gzip_buffers 16 8k;
-        gzip_proxied any;
-        gzip_types text/plain application/xml
-          application/javascript
-          text/css
-          text/js
-          text/xml
-          application/x-javascript
-          text/javascript
-          application/json
-          application/xml+rss;
+      #
+      #  Ограничиваем возвожность запуска php в каталогах. Для безопасности.
+      #
 
-        #   Прочие настройки
-        client_max_body_size            100m;
-        client_body_buffer_size         128k;
-        client_header_timeout           3m;
-        client_body_timeout             3m;
-        send_timeout                    3m;
-        client_header_buffer_size       1k;
-        large_client_header_buffers     4 16k;
+          location ~ ^/(\w+)/(\w+/)?app/ {
+              return 404;
+          }
 
-        #   Точка входа в интернет-магазин
-        location / {
-            #   Папка с файлами интернет-магазина
-            root /var/www/html/dbazhenov.ru;
+      #   Разрешаем запуск скриптов способов оплаты
+          location ~ ^/(\w+)/(\w+/)?app/payments/ {
+              return 404;
+              location ~ \.php$ {
+                  return 598;
+              }
+          }
 
-            #   Главный скрипт
-            index  index.php index.html index.htm;
+      #   Разрешаем запуск скриптов способов оплаты
+          location ~ ^/(\w+)/(\w+/)?app/addons/paypal/payments/ {
+              return 404;
+              location ~ \.php$ {
+                  return 598;
+              }
+          }
 
-            #   Для  работы API
-            rewrite ^/api/(.*)$ /api.php?_d=$1&ajax_custom=1&$args last;
+      #   Разрешаем запуск скрипта обмена данными с 1С.
+          location ~ ^/(\w+)/(\w+/)?app/addons/rus_exim_1c/ {
+              return 404;
+              location ~ \.php$ {
+                  return 598;
+              }
+          }
 
-            #   Логика поиска скрипта по порядку: файл, папка, скрипт
-            try_files $uri $uri/ @fallback;
-        }
-   
-        #   Правиле rewrite для модуля SEO
-        location @fallback {
-            rewrite  ^(.*)$ /index.php?$args last;
-        }
+      #   Запрещаем PHP в папке /design
+          location ~ ^/(\w+)/(\w+/)?design/ {
+              allow all;
+              location ~* \.([tT][pP][lL]|[pP][hH][pP].?)$ {
+                  return 404;
+              }
+          }
 
-        #   Настройки статики, первое правило
-        location ~* \.(jpeg|ico|jpg|gif|png|css|js|pdf|txt|tar|gz|wof|csv|zip|xml|yml|woff|ttf) {
-            access_log off;
-        #   Правило поиска статических файлов. Если файл не находится по адресу магазина, то ищем файл по правилу @statics.
-        #   Например если магазин расположен в подпапке dbazhenov.ru/shop/
-            try_files $uri @statics;
-            expires 14d;
-            add_header Access-Control-Allow-Origin *;
-            add_header Cache-Control public;
-            root /var/www/html/dbazhenov.ru;
-        }
+      #   Разрешаем только статику в папке /var
+          location ~ ^/(\w+)/(\w+/)?var/ {
+              return 404;
+              location ~* \.(jpe?g|ico|gif|png|css|js|pdf|txt|tar|wof|woff|svg|ttf|csv|zip|xml|yml)$ {
+                  allow all;
+                  expires 1M;
+                  add_header Cache-Control public;
+                  add_header Access-Control-Allow-Origin *;
+              }
+          }
 
-        #   Правило поиска статических файлов для витрин. Например, если у Вас две витрины в разных подпапках: dbazhenov.ru и dbazhenov.ru/shop/
-        location @statics {
-            rewrite ^/(\w+)/(.*)$ /$2 break;
-            access_log off;
-            rewrite_log off;
-            expires 14d;
-            add_header Cache-Control public;
-            add_header Access-Control-Allow-Origin *;
-            root /var/www/html/dbazhenov.ru;
-        }
+      #   Закрываем доступ к резервным копиям шаблонов.
+          location ~ ^/(\w+)/(\w+/)?var/themes_repository/ {
+              allow all;
+              location ~* \.([tT][pP][lL]|[pP][hH][pP].?)$ {
+                  return 404;
+              }
+          }
 
-        #   Обрабатываем PHP скрипты. Магия
-        location ~ \.php$ {
-            root /var/www/html/dbazhenov.ru;
-            proxy_read_timeout 61;
-            fastcgi_read_timeout 61;
-            try_files $uri $uri/ =404;
-            #   Путь до сокета демона PHP-FPM
-            fastcgi_pass unix:/var/run/php5-fpm.sock;
-            fastcgi_index index.php;
-            fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-            include fastcgi_params;
-        }
+      #   Запрещаем PHP в папке /images
+          location ~ ^/(\w+)/(\w+/)?images/ {
+              allow all;
+              location ~* \.([pP][hH][pP].?)$ {
+                  return 404;
+              }
+          }
 
-    #
-    #   Ограничиваем возвожность запуска php в каталогах. Для безопасности.
-    #
+      #   Запрещаем доступ к init.php
+          location ~ ^/(\w+)/(\w+/)?init.php {
+              return 404;
+          }
 
-        location /app/ {
-                deny all;
+      #   Закрываем доступ к бэкапам базы данных интернет-магазина (папка /var/database/) снаружи.
+          location ~ ^/(\w+)/(\w+/)?var/database/ {
+              return 404;
+          }
 
-                #   Разрешаем запуск скрипта обмена данными с 1С.
-                location ^~ /app/addons/rus_exim_1c/exim_1c.php {
-                    allow all;
-                }
-        }
+      #   Закрываем доступ к .tpl
+          location ~* \.([tT][pP][lL].?)$ {
+              return 404;
+          }
 
-        #   Разрешаем запуск скриптов способов оплаты
-        location /app/payments/ {
-                allow all;
-        }
+      #   Закрываем доступ к .htaccess, .htpasswd и git
+          location ~ /\.(ht|git) {
+              return 404;
+          }
 
-        #   Запрещаем PHP в папке /design
-        location /design/ {
-        allow all;
-                location ~* \.([tT][pP][lL]|[pP][hH][pP].?)$ {
-                deny all;
-                }
-        }
+          location ~* /(\w+)/(\w+/)?(.+\.php)$ {
+              return 598 ;
+          }
 
-        #   Запрещаем PHP в папке /images
-        location /images/ {
-            allow all;
-            location ~* \.([pP][hH][pP].?)$ {
-                deny all;
-            }
-        }
+          location ~* \.php$ {
+              return 598 ;
+          }
 
-        #   Разрешаем только статику в папке /var
-        location /var/ {
-            deny all;
-            location ~* \.(js|css|png|jpg|gz|xml|yml)$ {
-                allow all;
-                expires 1M;
-                add_header Cache-Control public;
-                add_header Access-Control-Allow-Origin *;
-            }
-        }
-
-        #   Закрываем доступ к бэкапам базы данных интернет-магазина (папка /var/database/) с наружи
-        location /var/database/ {
-            deny all;
-        }
-
-        #   Хранилище резервных копий шаблонов
-        location /var/skins_repository/ {
-            allow all;
-            location ~* \.([tT][pP][lL]|[pP][hH][pP].?)$ {
-                deny all;
-            }
-        }
-
-        #   Обработка API
-        location ~* api/ {
-            rewrite ^/api/(.*)$ /api.php?_d=$1&ajax_custom=1&$args last;
-        }
-
-        #   Запрвещаем .htaccess и .htpasswd
-        location ~ /\.ht {
-            deny  all;
-        }
-    }
+      }
+  }
 
 9. Перезапускаем nginx
 ======================
@@ -381,31 +415,31 @@
 13. Добавим конфигурацию Nginx для PhpMyAdmin
 =============================================
 
-Сделаем так, чтобы PhpMyAdmin открывался на отдельном поддомене: pma.dbazhenov.ru . Нам необходимо добавить в конфигурацию nginx новый раздел для поддомена.
+Сделаем так, чтобы PhpMyAdmin открывался на отдельном поддомене: pma.example.com. Нам необходимо добавить в конфигурацию nginx новый раздел для поддомена.
 
 Откройте на сервере файл:
 
 ``/etc/nginx/sites-available/default``
 
-В конец файла добавьте конфигурацию для поддомена, который будет ссылаться на phpmyadmin. Просто скопируйте код в конец существующей конфигурации, замените dbazhenov.ru на ваш домен:
+В конец файла добавьте конфигурацию для поддомена, который будет ссылаться на phpmyadmin. Просто скопируйте код в конец существующей конфигурации, замените example.com на ваш домен:
 
 ::
 
-    ################################################################################
-    # pma.dbazhenov.ru
-    ################################################################################
+    #######################################################################
+    # pma.example.com
+    #######################################################################
 
     server {
         listen  80;
 
         #   Поддомен для phpmyadmin
-        server_name pma.dbazhenov.ru www.pma.dbazhenov.ru;
+        server_name pma.example.com www.pma.example.com;
 
         charset utf-8;
 
         #   Расположение логов
-        access_log  /var/log/nginx/pma.dbazhenov.ru_access.log combined;
-        error_log   /var/log/nginx/pma.dbazhenov.ru_error.log;
+        access_log  /var/log/nginx/pma.example.com_access.log combined;
+        error_log   /var/log/nginx/pma.example.com_error.log;
 
         #   Путь по которому будет ссылаться поддомен
         root /usr/share/phpmyadmin;
@@ -441,7 +475,7 @@
 15. Всё! Устанавливаем CS-Cart
 ==============================
 
-*   Скопируйте архив с CS-Cart в папку домена на новом сервере (/var/www/html/dbazhenov.ru).
+*   Скопируйте архив с CS-Cart в папку домена на новом сервере (/var/www/html/example.com).
 
 *   Распакуйте архив
 
