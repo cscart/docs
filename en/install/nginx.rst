@@ -361,7 +361,7 @@ Step 2. Upload CS-Cart
  
 To do that, connect to the server with your FTP client. You’ll need the name of the **host**, **username**, **password** and, in some cases, **port**. Contact your hosting provider or the server administrator for your FTP account details. 
 
-2.3. In the Terminal/SSH Client switch to the directory of your site. Use this command, and replace example.com with the name of the directory you created in Step 1.5:
+2.3. In the Terminal/SSH Client switch to the directory of your site. Use this command, and replace *example.com* with the name of the directory you created in Step 1.5:
 
 .. code-block:: bash
 
