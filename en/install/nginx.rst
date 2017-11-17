@@ -80,7 +80,7 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
 .. code-block:: nginx
 
     #######################################################################
-    # A default  configuration for domains and IP address.
+    # A default configuration for domains and IP address.
     #######################################################################
 
     server {
@@ -305,6 +305,8 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
 
     sudo apt-get install php5-fpm php5-mysql php5-curl php5-gd php-mail -y
 
+You can install and use any version of PHP that meets :doc:`the system requirements </install/system_requirements>`. But in that case you'll also need to adjust nginx configuration (*/etc/nginx/sites-available/default*) accordingly. For example, if you install PHP7-FPM, you'll need to change the path to the PHP-FPM daemon socket to ``/var/run/php/php7.0-fpm.sock``.
+
 1.9. Let’s configure nginx for **phpMyAdmin**. We want it to open when we go to *pma.example.com*. Open the file */etc/nginx/sites-available/default* and add the following code to the end of the file. Again, replace all instances of *example.com* with your actual folder name.
 
 .. code-block:: nginx
@@ -338,6 +340,7 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
             proxy_read_timeout 61;
             fastcgi_read_timeout 61;
             try_files $uri $uri/ =404;
+            #   The path to the PHP-FPM daemon socket
             fastcgi_pass unix:/var/run/php5-fpm.sock;
             fastcgi_index index.php;
             fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
