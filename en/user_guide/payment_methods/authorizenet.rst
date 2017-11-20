@@ -20,7 +20,7 @@ How To: Set up CS-Cart with AuthorizeNet
 
     *   **Login** — your AuthorizeNet login.
     *   **Transaction key** — transaction key that you can get on the AuthorizeNet web site.
-    *   **Currency** — the currency in your AuthorizeNet account. If it does not match the base currency in your CS-Cart settings, please contact CS-Cart support team.
+    *   **Currency** — the currency in your AuthorizeNet account. It must match the primary currency of your store.
     *   **MD5 hash value** — MD5 hash value that you can get on the AuthorizeNet web site.
     *   **Test/Live mode** — set it to *Test* while testing the credit card processing through this payment gateway.
     *   **Transaction type** — select a transaction type. If you use the *Authorize only* type, AuthorizeNet.Aim only checks your credit card data and does not make any payments. If you use the *Authorize and capture* type, AuthorizeNet.Aim checks all information and makes a payment. So, for real payments you should use the second type of transaction.
