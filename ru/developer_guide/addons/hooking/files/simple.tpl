@@ -2,7 +2,7 @@
 
 {hook name="dir_name:file_name"}
 
-    {* Любой SAMRTY или HTML код *}
+    {* Любой SMARTY или HTML код *}
 
 {/hook}
 
