@@ -4,7 +4,7 @@ How To: Install and Configure PayPal Adaptive Payments Add-on
 
 .. note::
 
-    The :doc:`PayPal Adaptive Payments <index>` add-on comes with Multi-Vendor starting with version 4.5.1.
+    The :doc:`PayPal Adaptive Payments <index>` add-on comes with Multi-Vendor starting with version 4.5.1. New clients :ref:`will need to contact our technical support <paypal-adaptive-app>` to start using PayPal Adaptive Payments.
 
 1. Open the Administration panel and go to **Add-ons → Manage add-ons**.
 

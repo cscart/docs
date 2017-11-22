@@ -4,7 +4,7 @@ PayPal Adaptive Payments
 
 .. note::
 
-    This add-on comes with **Multi-Vendor 4.5.1** and newer versions.
+    This add-on comes with Multi-Vendor 4.5.1 and newer versions. New clients :ref:`will need to contact our technical support <paypal-adaptive-app>` to start using PayPal Adaptive Payments.
 
 By default, all the money from purchases in a Multi-Vendor store goes to the store owner. The store owner is then supposed to distribute that money among vendors and use the :doc:`Accounting </user_guide/users/vendors/account_balance>` page to keep track of the transactions.
 
