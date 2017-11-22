@@ -44,13 +44,15 @@ Getting API username, API password, Signature
        :align: center
        :alt: Viewing your PayPal API credentials.
 
+.. _paypal-adaptive-app:
+
 ======================
 Getting Application ID
 ======================
 
 .. important::
 
-    The more detailed and accurate information you provide when applying for **Application ID**, the easier it will be for PayPal specialists to check your store.
+    PayPal announced that `PayPal-Apps.com will be permanently unavailable starting December 1, 2017 <https://www.paypal-community.com/t5/Adaptive-Payments-Accounts/PayPal-Apps-com-will-be-permanently-unavailable-starting/m-p/1357320>`_. The description below will be out of date. Until an alternative PayPal solution for marketplaces is implemented in Multi-Vendor, please contact our technical support `via Help Desk <https://helpdesk.cs-cart.com>`_ to start using PayPal Adaptive Payments.
 
 #. Log in to the `PayPal Developer website <https://developer.paypal.com/>`_ using the credentials of the PayPal account registered to the application owner.
 
