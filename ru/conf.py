@@ -258,9 +258,6 @@ epub_copyright = u'2014, CS-Cart Россия'
 
 # Allow duplicate toc entries.
 #epub_tocdup = True
-from docutils.parsers.rst.directives.admonitions import BaseAdmonition
-from sphinx.util import compat
-compat.make_admonition = BaseAdmonition
 
 # Hack to render the php source code without the <?php tag
 from sphinx.highlighting import lexers
