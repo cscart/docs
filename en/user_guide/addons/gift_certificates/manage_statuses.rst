@@ -2,11 +2,23 @@
 How To: Manage Gift Certificate Statuses
 ****************************************
 
+==================================
+The Gift Certificate Statuses Page
+==================================
+
 Every gift certificate has a status assigned to it. To see the list of available statuses, go to **Administration → Gift certificate statuses**.
 
 .. image:: img/open_gc_status_page.png
     :align: center
     :alt: Go to Marketing → Gift certificates, and use the gear button in the top right corner.
+
+On the gift certificate statuses page choose whether you want:
+
+* create a new status by clicking the **+** button;
+
+* edit an existing status by clicking its name;
+
+* use drag & drop to sort statuses.
 
 By default, there are four possible gift certificate statuses:
 
@@ -18,9 +30,9 @@ By default, there are four possible gift certificate statuses:
 
 * **Used**—the gift certificate has been used, and all the money assigned to that certifiate has been spent.
 
-To edit existing statuses, choose the **gear** button, corresponding to a particular status and click **Edit**.
-
-If necessary, you can expand the default set of gift certificate statuses with custom statuses.
+.. image:: img/gc_status_page.png
+    :align: center
+    :alt: The gift certificate statuses page
 
 =============================
 Add Gift Certificate Statuses

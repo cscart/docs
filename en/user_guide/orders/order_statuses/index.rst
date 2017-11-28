@@ -6,7 +6,7 @@ Order Statuses
 
     If your CS-Cart installations has :doc:`multiple storefronts </user_guide/stores/index>`, you need to be in the **All stores** mode to add order statuses.
 
-The **Administration → Order statuses** page allows you to adjust the default set of order statuses. You can edit the details of the existing statuses as well as add custom statuses.
+The **Administration → Order statuses** page allows you to adjust the default set of order statuses. You can easily sort statuses according to your business needs, edit the details of the existing statuses as well as add custom statuses.
 
 .. note::
 

@@ -8,7 +8,9 @@ How To: Set up an Order Status
 
    * create a new status by clicking the **+** button;
 
-   * edit an existing status by clicking its name.
+   * edit an existing status by clicking its name;
+
+   * use drag & drop to sort statuses. 
 
    .. important::
 
