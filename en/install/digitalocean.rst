@@ -4,9 +4,9 @@ How To: Install CS-Cart on DigitalOcean Hosting
 
 .. note::
 
-    You'll need to use the command line and might have to install an SSH client.
+    You'll need to use the command line and may have to install SSH and SFTP clients to follow this guide.
 
-In this tutorial, you will learn how to install CS-Cart on a DigitalOcean server. DigitalOcean is an SSD cloud hosting that offers virtual private servers. 
+In this tutorial you will learn how to install CS-Cart on a DigitalOcean server. DigitalOcean is an SSD cloud hosting that offers virtual private servers. 
 
 We will also use a script that will automatically configure the server on DigitalOcean cloud hosting `for maximum CS-Cart speed <http://blog.cs-cart.com/2015/06/01/five-server-tweaks-to-get-maximum-speed-out-of-cs-cart-4-3-1/>`_.
 
@@ -34,7 +34,7 @@ Step 1. Prepare Your Hosting
     :align: center
     :alt: Select a region for your server.
 
-1.5. Select your server’s operating system. We recommend CentOS 7.2 x64:
+1.5. Select your server’s operating system. We recommend CentOS 7 x64:
 
 .. image:: img/digitalocean/4_server_os.png
     :align: center
@@ -46,10 +46,13 @@ Take a coffee break — your hosting will be ready in a couple of minutes.
 
 1.7. Assign the domain name of your future store to your new droplet using `these official instructions <https://www.digitalocean.com/community/tutorials/how-to-set-up-a-host-name-with-digitalocean>`_.
 
+.. note::
+
+    To test this instruction, we temporarily registered a free domain in the TK zone: *doctorzoid.tk*. Naturally, as you follow this guide you'll need to replace mentions of *doctorzoid.tk* with the name of your domain.
+
 .. image:: img/digitalocean/5_assign_domain.png
     :align: center
     :alt: Assigning a domain name to the droplet.
-
 
 =============================
 Step 2. Configure Your Server
@@ -57,7 +60,7 @@ Step 2. Configure Your Server
 
 .. note::
 
-    You’ll need an SSH client to connect to your server, execute the configuration script, and install CS-Cart. Here are free, commonly-used SSH-clients:
+    You’ll need an SSH client to connect to your server, execute the configuration script, and install CS-Cart. Here are free, commonly-used SSH clients:
 
     * Mac OS X: Terminal, iTerm 2
     * Linux: Terminal, KDE Konsole, XTerm
@@ -67,7 +70,7 @@ Step 2. Configure Your Server
 
 2.1. DigitalOcean has sent you an email with your server’s credentials to the address you had signed up with. Check your mailbox for the “Your New Droplet” email from support@support.digitalocean.com.
 
-2.2. Open the SSH-client on your computer and connect to your server using the username, IP address, and the password from the email:
+2.2. Open the SSH client on your computer and connect to your server using the username, IP address, and the password from the email:
 
 .. image:: img/digitalocean/6_connect_ssh.png
     :align: center
@@ -81,22 +84,13 @@ You have to change the password only at the first connection to your server. Ple
     :align: center
     :alt: Resetting your server password.
 
-2.4. Execute the script for automatic server configuration:
+2.4. Execute the script for automatic server configuration :doc:`as described in this article </developer_guide/getting_started/server_ansible_playbooks>`.
 
-     .. code-block:: bash
+.. note::
 
-         curl -sL http://cartoma.tk/installer | bash -s -- [your domain name]
+    In that article we advise modifying a text file via a command-line text editor (it's the quickest way). Instead you may want to use an SFTP client (like FileZilla) to download the file, change it on your machine, and then re-upload it to the droplet. For more information on how to use FileZilla with DigitalOcean, please refer to `this tutorial by DigitalOcean community <https://www.digitalocean.com/community/tutorials/how-to-use-filezilla-to-transfer-and-manage-files-securely-on-your-vps>`_.
 
-.. image:: img/digitalocean/8_script.png
-    :align: center
-    :alt: Connecting to your server via SSH.
-
-2.5. When the script completes the server configuration, you will see the path to your future store directory and database information. Save this data as you will need it later.
-
-.. image:: img/digitalocean/9_installer_output.png
-    :align: center
-    :alt: Connecting to your server via SSH.
-
+2.5. When the script completes the server configuration, you will be able to install CS-Cart.
 
 =======================
 Step 3. Install CS-Cart
@@ -118,6 +112,9 @@ Step 3. Install CS-Cart
 
          wget "https://www.cs-cart.com/index.php?dispatch=pages.get_trial&page_id=297&edition=ultimate" -O cscart.zip
 
+     .. note::
+
+         If you see the **Command not found** message on CentOS, then install **wget** first by using this command: ``yum install wget``.
 
 3.3. Unzip the CS-Cart installation package:
 
@@ -136,7 +133,7 @@ Step 3. Install CS-Cart
          find images -type f -print0 | xargs -0 chmod 644
          find var -type f -print0 | xargs -0 chmod 644
 
-3.5. Open your store’s URL in your browser and click [install]:
+3.5. Open your store’s URL in your browser and click **[install]**:
 
 .. image:: img/digitalocean/11_install_cscart.png
     :align: center
@@ -148,11 +145,10 @@ Step 3. Install CS-Cart
     :align: center
     :alt: CS-Cart License Agreement.
 
-3.7. Enter your MySQL information (see Step 2.5), define admin credentials, and click Install:
+3.7. Enter your MySQL information (see Step 2.4), define admin credentials, and click **Install**:
 
 .. image:: img/digitalocean/13_installation_details.png
     :align: center
-    :alt: Enter the information from Step 2.5 to the fields.
+    :alt: Enter the information from Step 2.4 to the fields.
 
 3.8. Congratulations! Now you have a fast CS-Cart store on DigitalOcean hosting.
-
