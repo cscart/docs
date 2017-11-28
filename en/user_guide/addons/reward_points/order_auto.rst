@@ -1,23 +1,25 @@
-*************************************************
-How To: Add Reward Points for Order Automatically
-*************************************************
+****************************************************
+How To: Grant Reward Points for Orders Automatically
+****************************************************
 
-* In the Administration panel, go to **Add-ons → Manage add-ons** and :doc:`enable the Reward points add-on <../reward_points/set_rp_addon>`.
+#. In the Administration panel, go to **Add-ons → Manage add-ons** and :doc:`set up the Reward Points add-on </user_guide/addons/reward_points/set_rp_addon>`.
 
-* Go to **Marketing → Reward points**.
+#. Go to **Marketing → Reward points**.
 
-* Select the user group, who will receive the points, and in the **Amount** field next to the user group enter the number of reward points and select the amount type next to it.
+#. Configure the amount of reward points granted per product to members of different user groups.
 
-  .. note ::
+   The amount of granted reward points also depends on the **Amount type** column:
 
-      If *Percent (%)* is selected in the **Amount type** option, the number of points received by a customer is calculated depending on the product prices (not on the total order cost). If *Absolute (points)* is selected in the **Amount type** option, the specified number of points will be added to a customer account regardless the purchased products cost.
+   * *Percent (%)*—the number of points to be received by a customer will be calculated depending on the product prices (not on the order total). 
 
-* Click the **Save** button.
+   * *Absolute (points)*—the fixed number of points per product will be added to a customer account, regardless of the cost of purchased products.
 
-.. image:: img/reward_points_03.png
-	:align: center
-	:alt: Points earned per product
+#. Click the **Save** button.
 
-.. note ::
+   .. image:: img/reward_points_03.png
+       :align: center
+       :alt: Reward points earned per product.
 
-    The reward points will be added to the customer's account once his/her order has :doc:`a status that grants reward points. <../../orders/order_statuses/set_status>`
+   .. note::
+
+       The reward points will be added to the customer's account once his/her order has :doc:`a status that grants reward points </user_guide/orders/order_statuses/set_status>`.

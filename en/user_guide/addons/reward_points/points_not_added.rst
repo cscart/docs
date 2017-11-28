@@ -2,20 +2,22 @@
 If Reward Points Are Not Added Automatically
 ********************************************
 
-* In the Administration panel, check whether :doc:`automatic reward points addition is set up properly <../reward_points/order_auto>`.
+* In the Administration panel, check whether :doc:`automatic addition of reward points for orders is set up properly </user_guide/addons/reward_points/order_auto>`.
 
-* Check whether the user group, for which automatic reward points addition was set up on the **Reward points** page, is activated for the customer who made the order:
+* Make sure that the user group, for which automatic addition of reward points addition was set up (:doc:`globally </user_guide/addons/reward_points/order_auto>`, for :doc:`specific products </user_guide/addons/reward_points/products_auto>`, or for :doc:`specific categories </user_guide/addons/reward_points/category_auto>`), is activated for the account of the customer who made the order:
 
-  * Go to **Customers → Customers**.
+  #. Go to **Customers → Customers**.
 
-  * Click on the customers' name to open his/her profile and open the **User groups** tab.
+  #. Click on the customer's name to open his/her profile.
 
-  * Check whether the necessary user group has the *Active* status.
+  #. Switch to the **User groups** tab.
 
-* Check whether the order has :doc:`a status that grants reward points. <../../orders/order_statuses/set_status>`:
+  #. Make sure that the necessary group has the *Active* status.
 
-  * Go to **Orders → View orders**.
+* Check whether the order has :doc:`a status that grants reward points </user_guide/orders/order_statuses/set_status>`:
 
-  * Check the order status in the **Status** select box. Change the status if necessary.
+  #. Go to **Orders → View orders**.
+
+  #. Check the status of the order in the corresponding column. Change the status if necessary.
 
 
