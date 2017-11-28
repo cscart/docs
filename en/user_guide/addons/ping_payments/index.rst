@@ -4,7 +4,7 @@ Ping++ Payments
 
 **Ping++** is a Chinese payment aggregator. Payment aggregators collect online payments made via different channels on merchant's behalf. That allows merchants to offer multiple payment channels to customers, while dealing only with one organization (the aggregator itself). Otherwise a merchant would have to integrate each of these payment systems separately. 
 
-The **Ping++ Payments** allows you to accept payments via Alipay, WeChat, Baifubao, China Unionpay, and many others. After you install the add-on, you’ll be able to select the payment channels you need when :doc:`configuring the aggregator. <../../payment_methods/adding_payment>`
+The **Ping++ Payments** add-on allows you to accept payments via Alipay, WeChat, Baifubao, China Unionpay, and many others. After you install the add-on, you’ll be able to select the payment channels you need when :doc:`configuring the aggregator. <../../payment_methods/adding_payment>`
 
 =====================
 Installing the Add-on

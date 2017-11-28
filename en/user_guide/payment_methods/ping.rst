@@ -2,7 +2,7 @@
 How To: Set Up Ping++ Payments in CS-Cart
 *****************************************
 
-After you have :doc:`installed the Ping++ Payments <../addons/ping_payments/index>`, you need to set up a payment method. To do it, please follow these steps:
+After you have :doc:`installed the Ping++ Payments add-on <../addons/ping_payments/index>`, you need to set up a payment method. To do it, please follow these steps:
 
 #. In the Administration panel, go to **Administration → Payment methods**.
 
