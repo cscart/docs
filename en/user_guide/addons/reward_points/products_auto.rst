@@ -1,27 +1,25 @@
-***************************************************
-How To: Add Reward Points for Product Automatically
-***************************************************
+**************************************************************
+How To: Grant Reward Points for Buying a Product Automatically
+**************************************************************
 
-* In the Administration panel, go to **Add-ons → Manage add-ons** and :doc:`enable the Reward points add-on <../reward_points/set_rp_addon>`.
+#. In the Administration panel, go to **Add-ons → Manage add-ons** and :doc:`set up the Reward Points add-on </user_guide/addons/reward_points/set_rp_addon>`.
 
-* Go to **Products → Products**.
+#. Go to **Products → Products**.
 
-* Click on the name of the product for which you want to add reward points.
+#. Click on the name of the product for which you want to grant reward points.
 
-* Open the **Reward points** tab.
+#. The product editing page will open. Switch to the **Reward points** tab.
 
-* Tick the **Override global/category point value for this product** check box.
+#. Tick the **Override global/category point value for this product** checkbox.
 
-* Select the usergroup(s), who will receive the reward points, and enter the number of reward points in the field in the **Amount** column.
+#. Configure the amount of reward points granted per product to members of different user groups.
 
-* Choose the **Amount type** in the third column.
+#. Click **Save**.
 
-* Click **Save**.
+   .. note::
 
-.. note ::
+       The reward points will be added to the customer's account once his/her order has :doc:`a status that grants reward points </user_guide/orders/order_statuses/set_status>`.
 
-    The reward points will be added to the customer's account once his/her order has :doc:`a status that grants reward points. <../../orders/order_statuses/set_status>`
-
-.. image:: img/reward_points_05.png
-	:align: center
-	:alt: Reward points tab
+   .. image:: img/reward_points_05.png
+       :align: center
+       :alt: Granting reward points for purchasing a specific product.
