@@ -1,23 +1,25 @@
-***********************************************
-How To: Set up Product Price in Points Manually
-***********************************************
+********************************************
+How To: Set Product Price in Points Manually
+********************************************
 
-* In the Administration panel, go to **Add-ons → Manage add-ons** and :doc:`enable the Reward points add-on <../reward_points/set_rp_addon>`.
+CS-Cart and Multi-Vendor allow you to set prices in reward points for individual products and disregard :doc:`the global point exchange ratio </user_guide/addons/reward_points/price_according_to_ratio>`.
 
-* Go to **Products → Products**.
+#. In the Administration panel, go to **Add-ons → Manage add-ons** and :doc:`set up the Reward Points add-on </user_guide/addons/reward_points/set_rp_addon>`.
 
-* Click on the name of the product for which you want to set up the price in points.
+#. Go to **Products → Products**.
 
-* Open the **Reward points** tab.
+#. Click on the name of the product for which you want to set up the price in points.
 
-* Tick the **Allow payment by points** check box.
+#. The product editing page will open. Switch to the **Reward points** tab.
 
-* Tick the **Override global PER** check box.
+#. Tick the **Allow payment by points** checkbox.
 
-* Enter the value in the **Price in points** input field.
+#. Tick the **Override global PER** checkbox.
 
-* Click the **Save** button.
+#. Enter the desired **Price in points**.
 
-.. image:: img/reward_points_06.png
-	:align: center
-	:alt: Reward points tab
+#. Click the **Save** button.
+
+   .. image:: img/reward_points_06.png
+       :align: center
+       :alt: Setting a product's price in reward points in CS-Cart.
