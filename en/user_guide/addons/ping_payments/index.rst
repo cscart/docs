@@ -2,11 +2,9 @@
 Ping++ Payments
 ***************
 
-**Ping++** is a Chinese payment aggregator. Payment Aggregators are service providers through which merchants can process their payment transactions. With this add-on you can accept payments via Alipay, WeChat, Baifubao, China Unionpay, and many others. After you install the add-on, you’ll be able to select the payment channels you need when :doc:`configuring the aggregator. <../../payment_methods/adding_payment>`
+**Ping++** is a Chinese payment aggregator. Payment aggregators collect online payments made via different channels on merchant's behalf. That allows merchants to offer multiple payment channels to customers, while dealing only with one organization (the aggregator itself). Otherwise a merchant would have to integrate each of these payment systems separately. 
 
-.. image:: img/ping_payments.png
-	:align: center
-	:alt: Ping++ Payments
+The **Ping++ Payments** allows you to accept payments via Alipay, WeChat, Baifubao, China Unionpay, and many others. After you install the add-on, you’ll be able to select the payment channels you need when :doc:`configuring the aggregator. <../../payment_methods/adding_payment>`
 
 =====================
 Installing the Add-on
@@ -37,36 +35,36 @@ Supported Payment Channels
 
 Ping++ Payments supports a number of popular Chinese payment channels on both mobile platforms and computers:
 
-* Alipay Mobile;
+* Alipay Mobile
 
-* Alipay QR code;
+* Alipay QR code
 
-* Alipay PC;
+* Alipay PC
  
-* WeChat;
+* WeChat
  
-* WeChat Lite;
+* WeChat Lite
  
-* WeChat Mobile;
+* WeChat Mobile
 
-* WeChat QR code;
+* WeChat QR code
  
-* Baifubao Mobile;
+* Baifubao Mobile
  
-* China Unionpay Mobile;
+* China Unionpay Mobile
 
-* China Unionpay PC;
+* China Unionpay PC
 
-* Yeepay;
+* Yeepay
 
-* Jdpay;
+* Jdpay
  
 * Fqlpay;
 
-* QGBC.
+* QGBC
 
-=========
-Also Read
-=========
+================
+Related Articles
+================
 
 * :doc:`../../payment_methods/ping`

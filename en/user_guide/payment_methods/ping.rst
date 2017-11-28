@@ -2,7 +2,7 @@
 How To: Set Up Ping++ Payments in CS-Cart
 *****************************************
 
-After you have :doc:`installed the Ping++ Payments <../addons/ping_payments/index>`, you need to set it up as a payment method. To do it, please follow these steps:
+After you have :doc:`installed the Ping++ Payments <../addons/ping_payments/index>`, you need to set up a payment method. To do it, please follow these steps:
 
 #. In the Administration panel, go to **Administration → Payment methods**.
 
@@ -16,9 +16,10 @@ After you have :doc:`installed the Ping++ Payments <../addons/ping_payments/inde
 
    * Specify other settings and upload an icon for the payment method, if necessary.
 
-.. image:: img/ping_general_tab.png
-    :align: center
-    :alt: Creating a payment method for Ping++.
+   .. image:: img/ping_general_tab.png
+       :align: center
+       :alt: Creating a payment method for Ping++.
+
 
 #. Switch to the **Configure** tab and specify Ping++ general settings:
 
@@ -30,11 +31,12 @@ After you have :doc:`installed the Ping++ Payments <../addons/ping_payments/inde
 
    * **API key**—the key that you can get on the Ping++ web site.
 
-   * **Order number prefix**—any prefix you want invoice IDs to have on Ping++ site (for example, *mycart*). Using the prefix allows to prevent duplicate invoice IDs when you use the same Ping++ account to accept payments from several websites.
+   * **Order number prefix**—an alphanumeric prefix for order ID used by Ping++ payments channels. This field is required because some of the payment channels have restrictions on the minimum number of symbols in ID.
 
-.. image:: img/ping_configure_tab.png
-    :align: center
-    :alt: Configuring Ping++.
+   .. image:: img/ping_configure_tab.png
+       :align: center
+       :alt: Configuring Ping++.
+
 
 #. Fill in WeChat settings if you plan to use this payment channel:
 
@@ -47,9 +49,3 @@ After you have :doc:`installed the Ping++ Payments <../addons/ping_payments/inde
 .. image:: img/ping_payment_channels.png
     :align: center
     :alt: Ping payment channels.
-
-=========
-Also Read
-=========
-
-* :doc:`../addons/ping_payments/index`
