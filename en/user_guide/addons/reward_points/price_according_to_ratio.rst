@@ -12,15 +12,7 @@ To configure the prices in points of your products so that they would depend on 
 
 #. Enter the number of reward points in the **Points Exchange Rate (PER - the number of points equal to 1 conventional unit)** input field.
 
-<<<<<<< HEAD
-5. Save your changes by clicking the **Save** button.
-=======
-   .. note::
-
-        The price in points is always rounded to the next highest integer. With the point exchange ratio set to 1, it would take 7 points to fully cover a $6.99 or a $6.33 order.
-
 #. Save your changes by clicking the **Save** button.
->>>>>>> 4537539... En: User Guide: Add-ons: Reward Points: Articles updated.
 
 #. Go to **Products → Products**.
 
@@ -38,16 +30,11 @@ To configure the prices in points of your products so that they would depend on 
 
    .. note::
 
-<<<<<<< HEAD
-    To enable the **Allow payment by points** option for all the products at once, use the **Edit selected** functionality. Please refer to `this article <http://docs.cs-cart.com/4.3.x/user_guide/manage_products/products/same_value_all_products.html>`_.
-=======
        To enable the **Allow payment by points** option for all the products at once, use the **Edit selected** functionality. For more information, please refer to :doc:`this article </user_guide/manage_products/products/same_value_all_products>`.
->>>>>>> 4537539... En: User Guide: Add-ons: Reward Points: Articles updated.
 
    .. important::
 
-<<<<<<< HEAD
-    Make sure that the **Override global PER** option is disabled for the products for which you want to set up price in points according to ratio.
+       Make sure that the **Override global PER** option is disabled for the products for which you want to set up price in points according to ratio.
 
 ==========================================
 Changes in Point Exchange Rate Calculation
@@ -82,8 +69,3 @@ The lines you need to remove from the file are marked in red and with a minus at
 .. note::
 
     If you have any difficulties when applying the changes from the diff file, please `contact our technical support via Customer Help Desk <https://www.cs-cart.com/helpdesk>`_.
-
-
-=======
-       Make sure that the **Override global PER** setting is disabled on the **Reward points** tab of the product editing page. Otherwise the price in points for that particular product will not depend on the ratio you specified globally.
->>>>>>> 4537539... En: User Guide: Add-ons: Reward Points: Articles updated.
