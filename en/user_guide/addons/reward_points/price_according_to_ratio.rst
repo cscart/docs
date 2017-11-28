@@ -1,41 +1,41 @@
-*********************************************************
-How To: Set up Product Price in Points According to Ratio
-*********************************************************
+******************************************************************
+How To: Set up Product Price in Points According to Specific Ratio
+******************************************************************
 
-To configure the **Reward Points** add-on, complete the following steps:
+To configure the prices in points of your products so that they would depend on a specific ratio, follow these steps:
 
-1. Open the administration panel of your store. 
+#. Open the Administration panel of your store. 
 
-2. Go to **Add-ons → Manage add-ons**.
+#. Go to **Add-ons → Manage add-ons**.
 
-3. Click on the name of the **Reward points** add-on.
+#. Click on the name of the **Reward points** add-on.
 
-4. Enter the number of reward points in the **Points Exchange Rate (PER - the number of points equal to 1 conventional unit)** input field.
+#. Enter the number of reward points in the **Points Exchange Rate (PER - the number of points equal to 1 conventional unit)** input field.
 
-.. note::
+   .. note::
 
-    The price in points is always rounded to the next highest integer. With point exchange ratio set to 1 it would take 7 points to fully cover a $6.99 or a $6.33 order.
+        The price in points is always rounded to the next highest integer. With the point exchange ratio set to 1, it would take 7 points to fully cover a $6.99 or a $6.33 order.
 
-5. Save your changes by clicking the **Save** button.
+#. Save your changes by clicking the **Save** button.
 
-6. Go to **Products → Products**.
+#. Go to **Products → Products**.
 
-7. Click on the name of the product.
+#. Click on the name of the product.
 
-8. Open the **Reward points** tab.
+#. The product editing page will opnen. Switch to the **Reward points** tab.
 
-9. Tick the **Allow payment by points** checkbox.
+#. Tick the **Allow payment by points** checkbox.
 
-10. Click the **Save and close** button.
+#. Click the **Save and close** button.
 
-.. image:: img/reward_points_07.png
-    :align: center
-    :alt: Allow payment in points on the Reward points tab.
+   .. image:: img/reward_points_07.png
+       :align: center
+       :alt: Allow payment in points on the Reward points tab.
 
-.. note ::
+   .. note::
 
-    To enable the **Allow payment by points** option for all the products at once, use the **Edit selected** functionality. Please refer to `this article <http://docs.cs-cart.com/4.4.x/user_guide/manage_products/products/same_value_all_products.html>`_.
+       To enable the **Allow payment by points** option for all the products at once, use the **Edit selected** functionality. For more information, please refer to :doc:`this article </user_guide/manage_products/products/same_value_all_products>`.
 
-.. note ::
+   .. important::
 
-    Make sure that the **Override global PER** option is disabled for the products for which you want to set up price in points according to ratio.
+       Make sure that the **Override global PER** setting is disabled on the **Reward points** tab of the product editing page. Otherwise the price in points for that particular product will not depend on the ratio you specified globally.
