@@ -49,3 +49,5 @@ After you have :doc:`installed the Ping++ Payments add-on <../addons/ping_paymen
 .. image:: img/ping_payment_channels.png
     :align: center
     :alt: Ping payment channels.
+
+#. Click the **Create** button.
