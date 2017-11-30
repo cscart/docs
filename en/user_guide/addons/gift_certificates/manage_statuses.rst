@@ -12,13 +12,13 @@ Every gift certificate has a status assigned to it. To see the list of available
     :align: center
     :alt: Go to Marketing → Gift certificates, and use the gear button in the top right corner.
 
-On the gift certificate statuses page choose whether you want:
+Here's what you can do on the list of the gift certificate statuses:
 
-* create a new status by clicking the **+** button;
+* Create a new status by clicking the **+** button.
 
-* edit an existing status by clicking its name;
+* Edit an existing status by clicking its name.
 
-* use drag & drop to sort statuses.
+* Drag & drop the statuses to sort them.
 
 By default, there are four possible gift certificate statuses:
 
