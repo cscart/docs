@@ -46,8 +46,8 @@ After you have :doc:`installed the Ping++ Payments add-on <../addons/ping_paymen
 
 #. Select payment channels that will be used by the Ping++ aggregator.
 
-.. image:: img/ping_payment_channels.png
-    :align: center
-    :alt: Ping payment channels.
+   .. image:: img/ping_payment_channels.png
+       :align: center
+       :alt: Ping payment channels.
 
 #. Click the **Create** button.
