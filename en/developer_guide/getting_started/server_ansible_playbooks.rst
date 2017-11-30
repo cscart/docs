@@ -62,7 +62,7 @@ Depending on your server’s operating system, run the following commands one by
 
   .. code-block:: bash
 
-      sudo apt-get -y install ansible=2.4.1.0-1ppa~trusty
+      sudo apt-get -y install ansible=2.4.*-1ppa~trusty
 
 ===========================
 Step 2. Configure main.json
