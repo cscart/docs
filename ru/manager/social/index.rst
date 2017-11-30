@@ -484,9 +484,9 @@ Facebook
 
 11. Пройдите на страницу создания провайдеров в панели администратора интернет-магазина. 
 
-    Создайте нового провайдера с сервисом «Facebook», используя ключи из приложения Facebook, а затем скопируйте ссылку из поля «Valid OAuth redirect URIs» в такое же поле в приложении на Facebook.
+    Создайте нового провайдера с сервисом «Facebook», используя ключи из приложения Facebook.
 
-    .. fancybox:: img/hybrid_auth_65.png
+    .. fancybox:: img/hybrid_auth_44.png
         :alt: HybridAuth 
 
 Twitter
