@@ -48,11 +48,11 @@
 
     .. note::
 
-        Для отслеживания посылки используется логин и пароль полученные при регистрации на сайте |link2|
+        После регистрации на сайте |link2| сервисом предоставляются отдельные логин и пароль для отслеживания посылки через API
 
         .. |link2| raw:: html
 
-           <!--noindex--><a href="https://www.pochta.ru" target="_blank" rel="nofollow">Почта России</a><!--/noindex-->.
+           <!--noindex--><a href="https://www.pochta.ru" target="_blank" rel="nofollow">Почты России</a><!--/noindex-->
 
     .. fancybox:: img/pochta_002_1.png
         :alt: Russian Post
