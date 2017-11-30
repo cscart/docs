@@ -52,7 +52,7 @@
 
         .. |link2| raw:: html
 
-           <!--noindex--><a href="https://www.pochta.ru" target="_blank" rel="nofollow">Почта России</a><!--/noindex-->.
+           <!--noindex--><a href="https://www.pochta.ru" target="_blank" rel="nofollow">Почты России</a><!--/noindex-->
 
     .. fancybox:: img/pochta_002_1.png
         :alt: Russian Post
