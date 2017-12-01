@@ -490,7 +490,21 @@ Facebook
     Создайте нового провайдера с сервисом «Facebook», используя ключи из приложения Facebook.
 
     .. fancybox:: img/hybrid_auth_44.png
-        :alt: HybridAuth 
+        :alt: HybridAuth
+
+12. Откройте страницу своего приложения на сайте разработчиков «Facebook». На панели управления откройте вкладку «Facebook Login». 
+    
+    .. fancybox:: img/hybrid_auth_66.png
+        :alt: HybridAuth
+
+    Выключите опцию «Use Strict Mode for Redirect URIs» и укажите в поле «Valid OAuth redirect URIs» URI вида: [STORE_URL]/index.php?dispatch=auth.process&hauth_done=Facebook 
+
+    Например, https://domain.com/index.php?dispatch=auth.process&hauth_done=Facebook
+
+    .. fancybox:: img/hybrid_auth_67.png
+        :alt: HybridAuth
+
+Готово!
 
 Twitter
 +++++++
