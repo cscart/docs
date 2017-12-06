@@ -3,7 +3,7 @@
 
 .. warning::
 
-     В связи со `слиянием между SPSR Express и DPD <https://www.spsr.ru/ru/news/dpd-v-rossii-i-spsr-express-ob-yedinyayutsya-dlya-sozdaniya-krupneyshego-chastnogo-ekspress-operatora-v-rossii>`_, расчёт стоимости доставки с помощью модуля "Служба доставки - СПСР-Экспресс" будет доступен только для существующих клиентов SPSR Express. Модуль будет предоставлять актуальные данные, пока не прекратит работу (это произойдёт до конца 2018 года). В качестве альтернативы рекомендуем использовать службу доставки DPD из модуля :doc:`eDost </manager/shippings/edost>`.
+     В связи со `слиянием между SPSR Express и DPD <https://www.spsr.ru/ru/news/dpd-v-rossii-i-spsr-express-ob-yedinyayutsya-dlya-sozdaniya-krupneyshego-chastnogo-ekspress-operatora-v-rossii>`_, расчёт стоимости доставки с помощью модуля "Служба доставки - СПСР-Экспресс" будет доступен только для существующих клиентов SPSR Express. Модуль будет предоставлять актуальные данные, пока не прекратит работу (это произойдёт до конца 2018 года). В качестве альтернативы рекомендуем использовать службу доставки DPD из модуля :doc:`eDost </manager/shippings/edost/index>`.
 
 Описание
 ========
