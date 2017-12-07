@@ -48,11 +48,17 @@ Step 2. Add the Banner to the Pages of Your Store
 
 2.6. Switch to the **Content** tab, set **Filling** to *Manually*, and click the **Add banners** button to choose the banners that will be displayed in this block.
 
+.. hint::
+
+    If you have many banners, and your version of CS-Cart or Multi-Vendor is 4.7.1 or newer, you'll be able to use to use the built-in search to find the banners you need.
+
 .. image:: img/add_banner_03.png
     :align: center
     :alt: Creating a block for banners: the Content tab.
 
-2.7. Once you have added all the banners you need, click **Create**.
+2.7. Once you have added all the banners you need, you can change the positions of banners (the order in which they appear). This functionality first appeared in CS-Cart and Multi-Vendor 4.7.1. 
+
+2.8. Click **Create** to add the block with the banners to the store.
 
 .. important::
 
