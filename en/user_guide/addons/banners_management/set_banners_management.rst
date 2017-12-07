@@ -1,16 +1,19 @@
-****************************************
-How To: Set up Banners Management Add-on
-****************************************
+********************************************
+How To: Set up the Banners Management Add-on
+********************************************
 
-*	In the Administration panel, go to **Add-ons → Manage add-ons**.
-*	Make sure that the **Banners management** add-on is installed and has an *Active* status
-*	Click the **gear** button of the add-on. You will see the following setting:
+#. In the Administration panel, go to **Add-ons → Manage add-ons**.
 
-	**Enable multi-language Images/URLs** - Tick this checkbox to allow using different images/URLs for the same object under different languages when using several languages in the store.
+#. Make sure that the **Banners management** add-on is installed and has the *Active* status.
 
-.. image:: img/banners.png
-    :align: center
-    :alt: Banners management
+#. Click the gear button of the add-on. You will see the following setting:
 
-*	Click the **Save** button.
-*	Read :doc:`here <../banners_management/add_banner>` how to create banners and add them to the storefront.
+   * **Enable multi-language Images/URLs**—tick this checkbox to allow using different images/URLs for the same object for different languages (when you use :doc:`multiple languages </user_guide/look_and_feel/languages/index>` in your store).
+
+   .. image:: img/banners.png
+       :align: center
+       :alt: The settings of the Banners Management add-on.
+
+#. Click the **Save** button.
+
+#. :doc:`Create your banners and add them to the storefront. </user_guide/addons/banners_management/add_banner>`
