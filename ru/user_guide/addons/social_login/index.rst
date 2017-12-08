@@ -497,7 +497,7 @@ Facebook
     .. fancybox:: img/hybrid_auth_66.png
         :alt: HybridAuth
 
-    Выключите опцию «Use Strict Mode for Redirect URIs» и укажите в поле «Valid OAuth redirect URIs» URI вида: [STORE_URL]/index.php?dispatch=auth.process&hauth_done=Facebook 
+    Выключите опцию «Use Strict Mode for Redirect URIs» или укажите в поле «Valid OAuth redirect URIs» URI вида: [STORE_URL]/index.php?dispatch=auth.process&hauth_done=Facebook 
 
     Например, https://domain.com/index.php?dispatch=auth.process&hauth_done=Facebook
 
