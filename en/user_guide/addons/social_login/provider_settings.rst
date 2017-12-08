@@ -44,7 +44,7 @@ Facebook
 
 .. important::
 
-    To finish the setup you need to go to `Facebook.com <https://developers.facebook.com/apps>`_. Open your app page, and switch to the **Facebook Login**. At this tab disable the **Use Strict Mode for Redirect URIs** option, and in the **Valid OAuth redirect URIs** field enter the **URI** such as [STORE_URL]/index.php?dispatch=auth.process&hauth_done=Facebook. For example, https://domain.com/index.php?dispatch=auth.process&hauth_done=Facebook
+    To finish the setup you need to go to `Facebook.com <https://developers.facebook.com/apps>`_. Open your app page, and switch to the **Facebook Login**. At this tab disable the **Use Strict Mode for Redirect URIs** option, or in the **Valid OAuth redirect URIs** field enter the **URI** such as [STORE_URL]/index.php?dispatch=auth.process&hauth_done=Facebook. For example, https://domain.com/index.php?dispatch=auth.process&hauth_done=Facebook
 
 `Learn more about Facebook integration <https://hybridauth.github.io/hybridauth/userguide/IDProvider_info_Facebook.html>`_ in HybridAuth User Guide.
 
