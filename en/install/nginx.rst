@@ -80,7 +80,7 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
 .. code-block:: nginx
 
     #######################################################################
-    # A default configuration for domains and IP address.
+    # A default  configuration for domains and IP address.
     #######################################################################
 
     server {
@@ -101,7 +101,7 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
     server {
        listen  80;
         #   The store’s domain
-        server_name example.com www.example.com;
+        server_name example.com;
 
         #   Default encoding
         charset utf-8;
@@ -143,10 +143,9 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
         error_page 598 = @backend;
 
         ############################################################################
-
     #   Processing PHP scripts
         location @backend {
-            try_files $uri /$1/$3 /index.php =404;
+            try_files $uri $uri/ /$1/$3 /$2/$3 $3 /index.php =404;
             proxy_read_timeout 61;
             fastcgi_read_timeout 61;
             #   The path to the PHP-FPM daemon socket
@@ -158,38 +157,38 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
 
     #   Rewrite rules for the SEO module 
         location @fallback {
-            rewrite  ^/(\w+)/(\w+/)?(.*)$ /$1/index.php?$args last;
-            rewrite  ^(.*)$ /index.php?$args last;
+            rewrite  ^/(\w+/)?(\w+/)?(.*)$ /$1/index.php?$args last;
+            rewrite  ^/(\w+/)?(\w+/)?(.*)$ /index.php?$args last;
         }
 
     #   The rule for searching static files of the storefront. For example, when you have 2 storefronts in different directories: example.com and example.com/shop/
         location @statics {
-            rewrite ^/(\w+)/(\w+/)?(.*)$ /$1/$3 break;
+            rewrite ^/(\w+/)?(\w+/)?(.*)$ /$1/$3 break;
             access_log off;
-            try_files $uri /$1/$3 @fallback;
+            try_files $uri $uri/ /$1/$3 /$2/$3 $3 @fallback;
             rewrite_log off;
             expires max;
             add_header Cache-Control public;
             add_header Access-Control-Allow-Origin *;
         }
 
-        rewrite ^(/admin.php)(.*)$ /?url=admin.php$2 redirect;
-
     #   The entry point of your store
         location / {
         #   The main script
             index  index.php index.html index.htm;
+
         #   For API
-            rewrite ^/(\w+)/(\w+/)?api/(.*)$ /$1/api.php?_d=$3&ajax_custom=1&$args last;
+            rewrite ^/(\w+/)?(\w+/)?api/(.*)$ /$1/api.php?_d=$3&ajax_custom=1&$args last;
+
         #   The script search logic uses the following order: file, directory, script
-            try_files $uri $uri/ @fallback;
+            try_files $uri $uri/ /$1/$3 /$2/$3 $3 @fallback;
 
         #   The first rule for searching static files
-            location ~* /(\w+)/(\w+/)?(.+\.(jpe?g|ico|gif|png|css|js|pdf|txt|tar|wof|woff|svg|ttf|csv|zip|xml|yml)) {
+            location ~* /(\w+/)?(\w+/)?(.+\.(jpe?g|ico|gif|png|css|js|pdf|txt|tar|wof|woff|svg|ttf|csv|zip|xml|yml)) {
                 access_log off;
             #   The rule for searching static files. If the server can’t find the file in the store folder, it will use the @statics rule.
             #   For example, if your store is located at example.com/shop/            
-                try_files $uri /stores/$1/$3 @statics;
+                try_files $uri $uri/ /$1/$3 /$2/$3 $3 @statics;
                 expires max;
                 add_header Access-Control-Allow-Origin *;
                 add_header Cache-Control public;
@@ -199,12 +198,11 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
         #  Denying the ability to run PHP in the directories for security reasons.
         #
 
-            location ~ ^/(\w+)/(\w+/)?app/ {
+            location ~ ^/(\w+/)?(\w+/)?app/ {
                 return 404;
             }
-
-        #   Allowing to run the payment methods scripts.
-            location ~ ^/(\w+)/(\w+/)?app/payments/ {
+    #   Allowing to run the payment methods scripts.
+            location ~ ^/(\w+/)?(\w+/)?app/payments/ {
                 return 404;
                 location ~ \.php$ {
                     return 598;
@@ -212,7 +210,7 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
             }
 
         #   Allowing to run the payment methods scripts.
-            location ~ ^/(\w+)/(\w+/)?app/addons/paypal/payments/ {
+            location ~ ^/(\w+/)?(\w+/)?app/addons/paypal/payments/ {
                 return 404;
                 location ~ \.php$ {
                     return 598;
@@ -220,7 +218,7 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
             }
 
         #   Allowing to run the script for 1C data exchange.
-            location ~ ^/(\w+)/(\w+/)?app/addons/rus_exim_1c/ {
+            location ~ ^/(\w+/)?(\w+/)?app/addons/rus_exim_1c/ {
                 return 404;
                 location ~ \.php$ {
                     return 598;
@@ -228,7 +226,7 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
             }
 
         #   Forbidding PHP in the /design directory.
-            location ~ ^/(\w+)/(\w+/)?design/ {
+            location ~ ^/(\w+/)?(\w+/)?design/ {
                 allow all;
                 location ~* \.([tT][pP][lL]|[pP][hH][pP].?)$ {
                     return 404;
@@ -236,7 +234,7 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
             }
 
         #   Allowing static files only in the /var directory
-            location ~ ^/(\w+)/(\w+/)?var/ {
+            location ~ ^/(\w+/)?(\w+/)?var/ {
                 return 404;
                 location ~* \.(jpe?g|ico|gif|png|css|js|pdf|txt|tar|wof|woff|svg|ttf|csv|zip|xml|yml)$ {
                     allow all;
@@ -247,7 +245,7 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
             }
 
         #   Denying access to the template backups.
-            location ~ ^/(\w+)/(\w+/)?var/themes_repository/ {
+            location ~ ^/(\w+/)?(\w+/)?var/themes_repository/ {
                 allow all;
                 location ~* \.([tT][pP][lL]|[pP][hH][pP].?)$ {
                     return 404;
@@ -255,7 +253,7 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
             }
 
         #   Forbidding PHP in the /images directory.
-            location ~ ^/(\w+)/(\w+/)?images/ {
+            location ~ ^/(\w+/)?(\w+/)?images/ {
                 allow all;
                 location ~* \.([pP][hH][pP].?)$ {
                     return 404;
@@ -263,12 +261,12 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
             }
 
         #   Denying access to init.php
-            location ~ ^/(\w+)/(\w+/)?init.php {
+            location ~ ^/(\w+/)?(\w+/)?init.php {
                 return 404;
             }
 
         #   Blocking outside access to the store’s database backups (/var/database).
-            location ~ ^/(\w+)/(\w+/)?var/database/ {
+            location ~ ^/(\w+/)?(\w+/)?var/database/ {
                 return 404;
             }
 
@@ -282,7 +280,7 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
                 return 404;
             }
 
-            location ~* /(\w+)/(\w+/)?(.+\.php)$ {
+            location ~* /(\w+/)?(\w+/)?(.+\.php)$ {
                 return 598 ;
             }
 
@@ -292,6 +290,7 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
 
         }
     }
+                                                                                                                                                                         
 
 1.7. Use this command to restart nginx:
 
