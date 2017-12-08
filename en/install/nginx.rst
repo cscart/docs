@@ -80,7 +80,7 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
 .. code-block:: nginx
 
     #######################################################################
-    # A default  configuration for domains and IP address.
+    # A default configuration for domains and IP address.
     #######################################################################
 
     server {
