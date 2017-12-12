@@ -46,24 +46,6 @@ Depending on your server’s operating system, run the following commands one by
 
       sudo rpm -ihv https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/ansible-2.4.1.0-1.el7.ans.noarch.rpm
 
-* On **Ubuntu 14.04:**
-
-  .. code-block:: bash
-
-      sudo add-apt-repository -y ppa:ansible/ansible
-
-  .. code-block:: bash
-
-      sudo apt-get -y update
-
-  .. code-block:: bash
-
-      sudo apt-get -y install git python-dev libffi-dev python-markupsafe libssl-dev
-
-  .. code-block:: bash
-
-      sudo apt-get -y install ansible=2.4.*-1ppa~trusty
-
 ===========================
 Step 2. Configure main.json
 ===========================
@@ -138,7 +120,7 @@ Once you have installed Ansible, you can download and run one of our playbooks t
 
           yum install nano
 
-   #. Open the file you want to edit (if you use Ubuntu, you just start with this command, without installing **nano**):
+   #. Open the file you want to edit:
 
       .. code-block:: bash
 
@@ -203,7 +185,3 @@ Depending on the PHP version and the web server you want to use, **run one of th
   .. code-block:: bash
 
       cd ~/playbooks/ && ansible-playbook -e @config/main.json -c local -i inventory_varnish lvemp7.yml
-
-.. important::
-
-    Errors may occur when running a playbook on Ubuntu.
