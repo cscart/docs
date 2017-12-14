@@ -42,9 +42,11 @@ To add a block with variations on the product page:
        :align: center
        :alt: The Variations filling type.
 
+#. Switch to the **Block settings** tab and choose whether or not to hide the **Add to Cart** button in the block with variations.
+
 #. Click the **Create** button. Now, if a product has variations, the list of these variations will appear on the product page.
 
-#. (optional) :doc:`Create a product tab </user_guide/look_and_feel/tabs/new_tab>` and put a block with variations into that tab, if you'd like the list of variations to be displayed on a separate tab or in a pop-up window. In this case, remember to disable the block that you added to the product page in step 4 of this tutorial.
+#. (optional) If you'd like the list of variations to be displayed on a separate tab or in a pop-up window, :doc:`create a product tab </user_guide/look_and_feel/tabs/new_tab>` and put a block with variations into that tab. If you do so, remember to disable the block that you added to the product page in step 4 of this tutorial.
 
    .. image:: img/variations_as_popup.png
        :align: center
