@@ -8,9 +8,9 @@ Step 1. Create a Banner
 
 1.1. In the Administration panel, go to **Marketing → Banners**.
 
-.. note ::
+.. note::
 
-    If there is no such section, make sure that the **Banners management** add-on has the *Active* status on the **Add-ons → Manage add-ons** page.
+    If there is no such section, go to **Add-ons → Manage add-ons** and make sure that the **Banners management** add-on is installed and has the *Active* status.
 
 1.2. Click the **+** button on the right. This will open the banner creation page.
 
