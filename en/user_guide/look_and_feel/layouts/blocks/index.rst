@@ -18,6 +18,7 @@ In this section
     :glob:
 
     actions_on_blocks
+    variations
     onsale
     arrange_categories
     bestsellers

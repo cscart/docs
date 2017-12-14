@@ -34,6 +34,9 @@ Product variations appear on the storefront almost like option combinations. The
     *   -   
         -   Option combinations
         -   Product variations
+    *   -   Display on the storefront
+        -   Customers select an option combination on the product page by choosing a variant for each option. Unless you modify CS-Cart code, there is no way to show all available option combinations on the product page at the same time.
+        -   Customers can select variations by choosing a variant for each option, but administrators can also :doc:`add a block that displays all variations of a product </user_guide/look_and_feel/layouts/blocks/variations>` to the page of that product. That allows customers to see all available variations and their stock, and even add different variations to cart from the same page without having to manually select the variants for options.
     *   -   Back-in-stock notifications
         -   Customers can subscribe for notifications only when a product is tracked without options. There's no way to subscribe for a particular option combination.
         -   Customers can subscribe for a specific product variation.
