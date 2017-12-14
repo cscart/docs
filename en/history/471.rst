@@ -56,15 +56,15 @@ Functionality Changes
 
 [*] Design: WYSIWYG: TinyMCE was updated to version 4.7.1.
 
-[*] Import/Export: Now the import and export pages show the translated names of the imported and exported fields next to the names of their names as they appear in CSV files.
+[*] Import/Export: Now the import and export pages show the translated names of the imported and exported fields next to the names that appear in CSV files.
 
-[*] Import/Export: The Popularity field of products can now be imported and exported.
+[*] Import/Export: Products: The Popularity field can now be imported and exported.
 
-[*] Import/Export: The setting for skipping the import of products that don't exist in the store was added.
+[*] Import/Export: Products: The setting for skipping the import of products that don't exist in the store was added.
 
 [*] Multi-Vendor: Design: Layouts: The ability to display blocks with vendor-specific content was added for the "Products" and "Pages" layout pages.
 
-[*] Order management: The "Advanced search" buttons were moved to the right of the search fields.
+[*] Order management: The Advanced Search buttons on the order creation and editing page were moved to the right of the search fields.
 
 [*] Product options: Options that are marked as required no longer have a pre-selected value, even if the product is configured to make the options available for selection simultaneously, and not sequentially.
 
@@ -72,7 +72,7 @@ Functionality Changes
 Bugfixes
 ========
 
-[!] Add-ons: Call requests: The phone number was displayed incorrectly in the "Call requests" block when a right-to-left language was selected. Fixed.
+[!] Add-ons: Call requests: The phone number was displayed incorrectly in the "Call requests" block when a language with the right-to-left script was selected. Fixed.
 
 [!] Add-ons: Comments and reviews: A product's rating could be different on the category page and on the product page in certain cases. Fixed.
 
@@ -134,7 +134,7 @@ Bugfixes
 
 [!] Export/Import: Products: The information about the import format of features and options in the tooltip on the product import page was incorrect. Fixed.
 
-[!] JS: Redactor 2: HTML comments weren't being saved. That resulted in <!--CUT--> being removed from blog articles after editing them in Redactor 2. Fixed.
+[!] JS: Redactor 2: HTML comments weren't being saved. That resulted in <!--CUT--> being removed from blog articles after those articles were edited in Redactor 2. Fixed.
 
 [!] Multi-Vendor: Add-ons: Product Variations: A PHP Notice occurred on the product editing page when the administrator selected a vendor that wasn't the owner of the product. Fixed.
 
