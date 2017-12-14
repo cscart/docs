@@ -6,9 +6,7 @@ Version Compatibility
     :maxdepth: 2
     :titlesonly:
 
-    adapting_452_to_461
-    adapting_461_to_462
-    adapting_462_to_463
+    adapting_463_to_471
 
 .. toctree::
     :maxdepth: 2
@@ -31,3 +29,6 @@ Version Compatibility
     adapting_442_to_443
     adapting_443_to_451
     adapting_451_to_452
+    adapting_452_to_461
+    adapting_461_to_462
+    adapting_462_to_463
