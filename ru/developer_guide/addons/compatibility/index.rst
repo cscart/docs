@@ -6,6 +6,12 @@
     :maxdepth: 2
     :titlesonly:
 
+    adapting_463_to_471
+
+.. toctree::
+    :maxdepth: 2
+    :hidden:
+
     adapting_462_to_463
 
 
