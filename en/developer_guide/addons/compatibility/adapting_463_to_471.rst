@@ -6,7 +6,7 @@ Adapt Your Add-ons and Themes to CS-Cart 4.7.1
 Common Changes
 ==============
 
-#. ``\Tygh\Backend\Cache\ABackend::__construct`` can now throw a ``DeveloperException`` when the cache handler is initialized before ``company_id`` is initialized.
+#. ``\Tygh\Backend\Cache\ABackend::__construct`` now throws a ``DeveloperException`` when the cache handler is initialized before ``company_id`` is initialized.
 
 #. The ``rus_cities`` add-on (*Russian localization — Cities*) now contains all common data about cities used by the SDEK (``rus_sdek``), eDost (``rus_edost``), Delovye Linii (``rus_dellin``), and PEC (``rus_pecom``) add-ons. The code that handles cities was adjusted in all the mentioned add-ons.
 
@@ -101,8 +101,8 @@ Changed Hooks
     // old:
     fn_set_hook('get_statuses_post', $statuses,$join, $condition,$type, $status_to_select, $additional_statuses, $exclude_parent, $lang_code, $company_id);
 
-   // new:
-   fn_set_hook('get_statuses_post', $statuses,$join, $condition,$type, $status_to_select, $additional_statuses, $exclude_parent, $lang_code, $company_id, $order);
+    // new:
+    fn_set_hook('get_statuses_post', $statuses,$join, $condition,$type, $status_to_select, $additional_statuses, $exclude_parent, $lang_code, $company_id, $order);
 
 #.
 
@@ -159,11 +159,11 @@ Core Functions
 New Functions
 -------------
 
-#. Check the availability of translation for the language variable::
+#. Check whether or not a translation exists for the language variable::
 
      fn_is_lang_var_exists($value)
 
-#. Gets the translation for the language variable::
+#. Get the translation for the language variable::
 
      fn_exim_get_field_label($value)
 
@@ -235,7 +235,7 @@ New Functions Specific to Russian Version
 
      function fn_rus_dellin_add_cities_in_table($rows)
 
-#. Read the data of the cities from a CSV file for adding these data to tables::
+#. Read the data of the cities from a CSV file for adding it to the database tables::
 
      function fn_rus_cities_read_cities_by_chunk($path, $size, $function_callback)
 
