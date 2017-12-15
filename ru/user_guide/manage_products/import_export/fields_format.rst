@@ -49,6 +49,26 @@ Product id
 
     ПРИМЕР: *130*
 
+============
+Product type
+============
+
+.. note::
+
+    Это поле — часть :doc:`модуля "Вариации товаров" </user_guide/addons/product_variations/index>`.
+
+:doc:`Тип товара </user_guide/manage_products/products/simple_versus_configurable>`:
+
+* ``P`` — простой товар;
+
+* ``C`` — настраиваемый товар;
+
+* ``V`` — вариация настраиваемого товара.
+
+.. important::
+
+    ПРИМЕР: *C*
+
 ========
 Category
 ========
