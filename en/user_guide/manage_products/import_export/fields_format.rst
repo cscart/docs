@@ -801,3 +801,13 @@ Override exchange rate
 .. important::
 
     EXAMPLE: *Y*
+
+==========
+Popularity
+==========
+
+The popularity of the product. It is an integer that changes depending on the activity around the product (when the product is viewed, added to cart, removed from cart, or purchased). The higher it is, the more popular the product is.
+
+.. important::
+
+    EXAMPLE: *8*
