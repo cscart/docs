@@ -50,6 +50,26 @@ The numeric ID of the product from the store's database. If **Product code** is 
 
     EXAMPLE: *130*
 
+============
+Product type
+============
+
+.. note::
+
+    This is a part of the :doc:`Product Variations </user_guide/addons/product_variations/index>` add-on.
+
+The :doc:`type of the product </user_guide/manage_products/products/simple_versus_configurable>`:
+
+* ``P``—simple product.
+
+* ``C``—configurable product.
+
+* ``V``—a variation of a configurable product.
+
+.. important::
+
+    EXAMPLE: *C*
+
 ========
 Category
 ========
