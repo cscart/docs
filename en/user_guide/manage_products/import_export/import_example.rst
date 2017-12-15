@@ -28,6 +28,8 @@ This article describes how you can test the import functionality of your store b
 
 #. In the **Import options** section, specify the following settings:
 
+   * **Skip creating new products**—don't enable this setting; the product doesn't exist in your store yet. If you enable this setting, the product won't be imported.
+
    * **Category delimiter**—leave ``///`` in this field (it is the default value).
 
    * **Feature variants delimiter**—leave ``///`` in this field (it is the default value).
