@@ -2,7 +2,7 @@
 How To: Add a Block with Variations to Product Pages
 ****************************************************
 
-CS-Cart and Multi-Vendor allow you to show all the existing :doc:`product variations </user_guide/manage_products/products/variations>` on the page of that product. Previously customers had to select different variants of options on the product page to see what was available and in stock. With the list of all variations on the product page, a customer will be able to:
+CS-Cart and Multi-Vendor allow you to show all the existing :doc:`product variations </user_guide/manage_products/products/product_variations>` on the page of that product. Previously customers had to select different variants of options on the product page to see what was available and in stock. With the list of all variations on the product page, a customer will be able to:
 
 * See what variations a product has, and which of these variations are in stock. 
 
