@@ -26,7 +26,7 @@ To add a block with variations on the product page:
 
 #. A pop-up window will open. Switch to the **Create New Block** tab and choose **Products**.
 
-#. Choose *Variations* as the block's template. If you'd like to hide the **Add to wish list** button for variations, just click the **Setting** link and tick the corresponding checkbox.
+#. Choose *Variations* as the block's template. If you'd like to hide the **Add to wish list** button for variations, just click the **Settings** link and tick the corresponding checkbox.
 
    .. image:: img/variations_template.png
        :align: center
@@ -36,7 +36,7 @@ To add a block with variations on the product page:
 
    .. important::
 
-       If you'd like all variations of a product appear in the block, leave the **Limit** field empty.
+       If you'd like all variations of a product to appear in the block (regardless of how many variations the product has), set the value of the **Limit** field to *0* (zero).
 
    .. image:: img/variations_filling.png
        :align: center
