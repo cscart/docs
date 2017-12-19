@@ -66,13 +66,11 @@ Functionality Changes
 
 [*] Order management: The Advanced Search buttons on the order creation and editing page were moved to the right of the search fields.
 
-[*] Product options: Options that are marked as required no longer have a pre-selected value, even if the product is configured to make the options available for selection simultaneously, and not sequentially.
+[*] {#6846} Product options: Options that are marked as required no longer have a pre-selected value, even if the product is configured to make the options available for selection simultaneously, and not sequentially.
 
 ========
 Bugfixes
 ========
-
-[!] Add-ons: Call requests: The phone number was displayed incorrectly in the "Call requests" block when a language with the right-to-left script was selected. Fixed.
 
 [!] Add-ons: Comments and reviews: A product's rating could be different on the category page and on the product page in certain cases. Fixed.
 
@@ -88,10 +86,6 @@ Bugfixes
 
 [!] Add-ons: RMA: Email notifications about returns had the numeric ID of the reason instead of the text of that reason. Fixed.
 
-[!] Add-ons: Reward points: Order management: When reward points were applied to an order in the Administration panel, the discount provided by reward points was multiplied by the number of items of a product in the order. Fixed.
-
-[!] Add-ons: Searchanise: Some SQL queries didn't comply with CS-Cart coding standards. Fixed.
-
 [!] Add-ons: Social buttons: URLs contained HTTP instead of HTTPS in og tags. Fixed.
 
 [!] Add-ons: Social login: Logging in via Facebook required unnecessary permissions from the application. Fixed.
@@ -104,8 +98,6 @@ Bugfixes
 
 [!] Categories: When a shared product was edited on the storefront to which it didn't belong originally, a new category couldn't be added to the product on the product editing page. Fixed.
 
-[!] Checkout: Payment methods: Credit card (cc.tpl): There were problems on Android devices in the Chrome browser when a customer attempted to enter credit card details. Fixed.
-
 [!] Companies: When a store was in the Simple Ultimate mode (only one storefront), the Administration panel could switch to the Selected Storefront mode, limiting some of the functionality. Fixed.
 
 [!] Core: Cache: When multiple storefronts were used, and cache was initialized before company_id, then all the storefronts used the same data from cache. Fixed; now, if cache is initialized before company_id is set in the customer area, DeveloperException will be raised.
@@ -115,12 +107,6 @@ Bugfixes
 [!] Core: Users: The SQL query formed in the fn_get_user_short_info function was wrong. Fixed.
 
 [!] Countries: Enabling or disabling a country also enabled or disabled other countries. Fixed.
-
-[!] Design: Layouts: Adding a block with the "Shipping estimation" template to the default layout page broke the calculation of the delivery cost on the cart page. Fixed.
-
-[!] Design: Notifications: Notifications were not displayed correctly on mobile devices. Fixed.
-
-[!] Design: Product tabs: The color of the tabs was different in desktop and mobile versions. Fixed.
 
 [!] Design: Responsive Theme: Products: The lower part of the price was cut in a block with the Scroller template. Fixed.
 
@@ -134,13 +120,11 @@ Bugfixes
 
 [!] Export/Import: Products: The information about the import format of features and options in the tooltip on the product import page was incorrect. Fixed.
 
-[!] JS: Redactor 2: HTML comments weren't being saved. That resulted in <!--CUT--> being removed from blog articles after those articles were edited in Redactor 2. Fixed.
-
 [!] Multi-Vendor: Add-ons: Product Variations: A PHP Notice occurred on the product editing page when the administrator selected a vendor that wasn't the owner of the product. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor Plans: If a vendor had a plan that allowed only subcategories without their parent categories, then the list of available categories on the product editing page was empty for that vendor. Fixed.
 
-[!] Multi-Vendor: REST API: Blocks: A marketplace administrator couldn't create a block with company_id=0 via REST API. Fixed.
+[!] Multi-Vendor: REST API: Blocks: An administrator couldn't create a block with company_id=0 via REST API. Fixed.
 
 [!] Multi-Vendor: REST API: Blocks: If a vendor's administrator had access to the REST API, he or she could work with blocks regardless of whether vendors were allowed to do it in the store. Fixed.
 
@@ -152,26 +136,40 @@ Bugfixes
 
 [!] Orders: Product options: The language of options in the order didn't change when another language was selected. Fixed.
 
-[!] Product options: An error message was displayed when a global option was created or deleted. Fixed.
-
 [!] Products: Advanced search: When a search was performed with filtering by orders enabled, the "Purchased qty" and "Subtotal sum" columns in the search results had wrong values for products with option combinations. Fixed.
 
 [!] Settings: Timezones: Wrong time was displayed in the "Fiji, Kamchatka, Marshall Is." timezone. Fixed.
 
 [!] User groups: Privileges: The "Add user" button was displayed even to those administrators who couldn't create other administrator accounts. Fixed.
 
+[!] {#6047} Add-ons: Call requests: The phone number was displayed incorrectly in the "Call requests" block when a language with the right-to-left script was selected. Fixed.
+
 [!] {#6751} Add-ons: Wish List: When an administrator tried to open the product in the "On-site template editing" mode, a window with a 404 error was opened. Fixed.
 
+[!] {#6917} Checkout: Payment methods: Credit card (cc.tpl): There were problems on Android devices in the Chrome browser when a customer attempted to enter credit card details. Fixed.
+
+[!] {#6943} Design: Product tabs: The color of the tabs was different in desktop and mobile versions. Fixed.
+
 [!] {#6960} Bright Theme: Layouts: Blocks: Products: The "Show price" setting of the "Scroller" template didn't work. Fixed.
+
+[!] {#6962} Design: Layouts: Adding a block with the "Shipping estimation" template to the default layout page broke the calculation of the delivery cost on the cart page. Fixed.
 
 [!] {#6975} Add-ons: Polls: Saving a "Poll" page with any status other than "Active" resulted in the data from the "Poll" tab not being displayed. Fixed.
 
 [!] {#6984} Multi-Vendor: Add-ons: Product Variations: When the add-on was active, an attempt to change a product's vendor resulted in an error. Fixed.
 
-[!] {#6996} {#7006} Design: Languages with right-to-left script: The scrolling of banners, product lists, and images didn't work properly. Fixed.
+[!] {#6996} {#7006} {#7025} Design: Languages with right-to-left script: The scrolling of banners, product lists, and images didn't work properly. Fixed.
 
 [!] {#7001} Products: Features: If a product had a "Checkbox: Multiple" feature with multiple variants, then only one variant was displayed on the comparison list. Fixed.
 
 [!] {#7007} JS: Redactor 2: Text align didn't work on the storefront if the text was edited in Redactor II. Fixed.
 
+[!] {#7013} {#7044} JS: Redactor 2: HTML comments weren't being saved. That resulted in <!--CUT--> being removed from blog articles after those articles were edited in Redactor 2. Fixed.
+
+[!] {#7026} Product options: An error message was displayed when a global option was created or deleted. Fixed.
+
+[!] {#7030} Design: Notifications: Notifications were not displayed correctly on mobile devices. Fixed.
+
 [!] {#7041} Add-ons: Buy together: The discount on product combination wasn’t taken into account when eligibility for cart promotion was checked. Fixed.
+
+[!] {#7054} Add-ons: Reward points: Order management: When reward points were applied to an order in the Administration panel, the discount provided by reward points was multiplied by the number of items of a product in the order. Fixed.
