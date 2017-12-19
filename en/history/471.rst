@@ -40,7 +40,7 @@ New Features and Improvements
 
 [+] Order management: The ability to search products by typing parts of the product code during the creation or editing of orders in the Administration panel was added.
 
-[+] Products: Advanced Search: New search filters by creation date and latest update tume were added, along with the "Recently Updated" saved search.
+[+] Products: Advanced Search: New search filters by creation date and latest update time were added, along with the "Recently Updated" saved search.
 
 [+] Products: The ability to enable preorders for specific out-of-stock products even when the "Allow negative amount in inventory" setting is disabled was added.
 
@@ -104,7 +104,7 @@ Bugfixes
 
 [!] Categories: When a shared product was edited on the storefront to which it didn't belong originally, a new category couldn't be added to the product on the product editing page. Fixed.
 
-[!] Checkout: Payment methods: Credit сard (cc.tpl): There were problems on Android devices in the Chrome browser when a customer attempted to enter credit card details. Fixed.
+[!] Checkout: Payment methods: Credit card (cc.tpl): There were problems on Android devices in the Chrome browser when a customer attempted to enter credit card details. Fixed.
 
 [!] Companies: When a store was in the Simple Ultimate mode (only one storefront), the Administration panel could switch to the Selected Storefront mode, limiting some of the functionality. Fixed.
 
