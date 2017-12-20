@@ -1,0 +1,175 @@
+***********************
+CS-Cart 4.7.1 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Banners: Layouts: The ability to specify positions for banners in a block was added.
+
+[+] Add-ons: Banners: Pagination, sorting, and search were added to the list of banners in the Administration panel.
+
+[+] Add-ons: Manage Add-ons: The ability to refresh add-on settings and language variables without uninstalling add-ons was introduced for the Development Mode.
+
+[+] Add-ons: Ping++ Payments: A new add-on to accept payments via Ping++, a Chinese payment service aggregator, was added.
+
+[+] Add-ons: Product Variations: The ability to display all variations of a product on the product page in a separate "Products" block was added.
+
+[+] Administration panel: Dashboard: Links to statistics were added for various numbers displayed on the dashboard.
+
+[+] Core: Statuses: The ability to drag and drop the statuses of orders, gift certificates, and return requests to change the order in which these statuses appear was implemented.
+
+[+] Hooks: A new hook called  "get_pages_after_sql" was added.
+
+[+] Hooks: New hooks "delete_promotions_pre", "delete_promotions_post", "update_promotion_pre", "update_promotion_post", and "get_promotions_post" were added.
+
+[+] Hooks: New hooks "get_static_data_post" and "delete_static_data_pre" were added.
+
+[+] Hooks: New hooks to modify order taxes and shipping (to add purchase order/customer numbers or to override the shipping data presentation) for order invoices were added.
+
+[+] Multi-Vendor: Add-ons: Customer-to-Vendor Communication: A new add-on was implemented to enable customers to contact vendors via the store's interface.
+
+[+] Multi-Vendor: Add-ons: Stripe Connect: The ability to accept payments via Stripe Connect and distribute money from orders among vendors automatically was added.
+
+[+] Order management: Customers: The functionality of saving the updated data to the customer's account when editing an order in the Administration panel was added.
+
+[+] Order management: Selecting a customer: The ability to search for a customer by typing a part of his or her email or phone was implemented for order creation in the Administration panel.
+
+[+] Order management: The ability to create an order without using a mouse (by switching between fields with the TAB button) was added.
+
+[+] Order management: The ability to search products by typing parts of the product code during the creation or editing of orders in the Administration panel was added.
+
+[+] Products: Advanced Search: New search filters by creation date and latest update time were added, along with the "Recently Updated" saved search.
+
+[+] Products: The ability to enable preorders for specific out-of-stock products even when the "Allow negative amount in inventory" setting is disabled was added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: Social login: Facebook: The instruction on how to add the redirect URL in the Facebook Login app was added to the interface.
+
+[*] Checkout: Shipping methods: The "Free shipping" line now appears next to a shipping method at checkout or during order recalculation only if the corresponding language variable exists.
+
+[*] Core: Product filters: Function "fn_update_product_filter" was moved from app/controllers/backend/product_filters.php to app/functions/fn.catalog.php.
+
+[*] Design: WYSIWYG: TinyMCE was updated to version 4.7.1.
+
+[*] Import/Export: Now the import and export pages show the translated names of the imported and exported fields next to the names that appear in CSV files.
+
+[*] Import/Export: Products: The Popularity field can now be imported and exported.
+
+[*] Import/Export: Products: The setting for skipping the import of products that don't exist in the store was added.
+
+[*] Multi-Vendor: Design: Layouts: The ability to display blocks with vendor-specific content was added for the "Products" and "Pages" layout pages.
+
+[*] Order management: The Advanced Search buttons on the order creation and editing page were moved to the right of the search fields.
+
+[*] {#6846} Product options: Options that are marked as required no longer have a pre-selected value, even if the product is configured to make the options available for selection simultaneously, and not sequentially.
+
+========
+Bugfixes
+========
+
+[!] Add-ons: Comments and reviews: A product's rating could be different on the category page and on the product page in certain cases. Fixed.
+
+[!] Add-ons: Comments and reviews: There was a vulnerability that allowed editing comments and reviews of other people. Fixed.
+
+[!] Add-ons: PayPal payments: Tax values for payment surcharge were calculated incorrectly after an IPN was processed. Fixed.
+
+[!] Add-ons: PayPal payments: The language of the Express Checkout page wasn't selected properly. Fixed.
+
+[!] Add-ons: Product Variations: The displayed product data didn't change when a customer selected a different option for a product with variations, that was displayed in the "Products" block. Fixed.
+
+[!] Add-ons: Product Variations: When a customer selected an option variant of the configurable product, the Attachments and Buy Together tabs disappeared. Fixed.
+
+[!] Add-ons: RMA: Email notifications about returns had the numeric ID of the reason instead of the text of that reason. Fixed.
+
+[!] Add-ons: Social buttons: URLs contained HTTP instead of HTTPS in og tags. Fixed.
+
+[!] Add-ons: Social login: Logging in via Facebook required unnecessary permissions from the application. Fixed.
+
+[!] Add-ons: Social login: Social login didn't work properly in the built-in browser of the Facebook mobile application. Fixed.
+
+[!] Administration panel: Pagination: The number of displayed items was offset comparing to the total number of items. Fixed.
+
+[!] Blocks: Shipping estimation: The block didn't work on a product details page. Fixed.
+
+[!] Categories: When a shared product was edited on the storefront to which it didn't belong originally, a new category couldn't be added to the product on the product editing page. Fixed.
+
+[!] Companies: When a store was in the Simple Ultimate mode (only one storefront), the Administration panel could switch to the Selected Storefront mode, limiting some of the functionality. Fixed.
+
+[!] Core: Cache: When multiple storefronts were used, and cache was initialized before company_id, then all the storefronts used the same data from cache. Fixed; now, if cache is initialized before company_id is set in the customer area, DeveloperException will be raised.
+
+[!] Core: JS: When the product page opened in the console the error was showed. Fixed.
+
+[!] Core: Users: The SQL query formed in the fn_get_user_short_info function was wrong. Fixed.
+
+[!] Countries: Enabling or disabling a country also enabled or disabled other countries. Fixed.
+
+[!] Design: Responsive Theme: Products: The lower part of the price was cut in a block with the Scroller template. Fixed.
+
+[!] Design: Right-to-left script: Multiple errors related to RTL were fixed.
+
+[!] Design: Right-to-left script: Multiple improvements were made to the way how symbols and buttons are displayed.
+
+[!] Design: Right-to-left script: The way how dynamic elements (such as tooltips and menus) are displayed was improved.
+
+[!] Email notifications: Products: Downloadable Products: When a downloadable product was purchased, the email notification contained links to all the files of the product, including the disabled files. Fixed.
+
+[!] Export/Import: Products: The information about the import format of features and options in the tooltip on the product import page was incorrect. Fixed.
+
+[!] Multi-Vendor: Add-ons: Product Variations: A PHP Notice occurred on the product editing page when the administrator selected a vendor that wasn't the owner of the product. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor Plans: If a vendor had a plan that allowed only subcategories without their parent categories, then the list of available categories on the product editing page was empty for that vendor. Fixed.
+
+[!] Multi-Vendor: REST API: Blocks: An administrator couldn't create a block with company_id=0 via REST API. Fixed.
+
+[!] Multi-Vendor: REST API: Blocks: If a vendor's administrator had access to the REST API, he or she could work with blocks regardless of whether vendors were allowed to do it in the store. Fixed.
+
+[!] Multi-Vendor: Vendor administration panel: The number of registered customers displayed on a vendor's dashboard was wrong. Fixed.
+
+[!] Order management: Error messages during order creation in the Administration panel were not highlighted in red. Fixed.
+
+[!] Order management: The dropdown search suggestions in the customer search box during order creation were too wide. Fixed.
+
+[!] Orders: Product options: The language of options in the order didn't change when another language was selected. Fixed.
+
+[!] Products: Advanced search: When a search was performed with filtering by orders enabled, the "Purchased qty" and "Subtotal sum" columns in the search results had wrong values for products with option combinations. Fixed.
+
+[!] Settings: Timezones: Wrong time was displayed in the "Fiji, Kamchatka, Marshall Is." timezone. Fixed.
+
+[!] User groups: Privileges: The "Add user" button was displayed even to those administrators who couldn't create other administrator accounts. Fixed.
+
+[!] {#6047} Add-ons: Call requests: The phone number was displayed incorrectly in the "Call requests" block when a language with the right-to-left script was selected. Fixed.
+
+[!] {#6751} Add-ons: Wish List: When an administrator tried to open the product in the "On-site template editing" mode, a window with a 404 error was opened. Fixed.
+
+[!] {#6917} Checkout: Payment methods: Credit card (cc.tpl): There were problems on Android devices in the Chrome browser when a customer attempted to enter credit card details. Fixed.
+
+[!] {#6943} Design: Product tabs: The color of the tabs was different in desktop and mobile versions. Fixed.
+
+[!] {#6960} Bright Theme: Layouts: Blocks: Products: The "Show price" setting of the "Scroller" template didn't work. Fixed.
+
+[!] {#6962} Design: Layouts: Adding a block with the "Shipping estimation" template to the default layout page broke the calculation of the delivery cost on the cart page. Fixed.
+
+[!] {#6975} Add-ons: Polls: Saving a "Poll" page with any status other than "Active" resulted in the data from the "Poll" tab not being displayed. Fixed.
+
+[!] {#6984} Multi-Vendor: Add-ons: Product Variations: When the add-on was active, an attempt to change a product's vendor resulted in an error. Fixed.
+
+[!] {#6996} {#7006} {#7025} Design: Languages with right-to-left script: The scrolling of banners, product lists, and images didn't work properly. Fixed.
+
+[!] {#7001} Products: Features: If a product had a "Checkbox: Multiple" feature with multiple variants, then only one variant was displayed on the comparison list. Fixed.
+
+[!] {#7007} JS: Redactor 2: Text align didn't work on the storefront if the text was edited in Redactor II. Fixed.
+
+[!] {#7013} {#7044} JS: Redactor 2: HTML comments weren't being saved. That resulted in <!--CUT--> being removed from blog articles after those articles were edited in Redactor 2. Fixed.
+
+[!] {#7026} Product options: An error message was displayed when a global option was created or deleted. Fixed.
+
+[!] {#7030} Design: Notifications: Notifications were not displayed correctly on mobile devices. Fixed.
+
+[!] {#7041} Add-ons: Buy together: The discount on product combination wasn’t taken into account when eligibility for cart promotion was checked. Fixed.
+
+[!] {#7054} Add-ons: Reward points: Order management: When reward points were applied to an order in the Administration panel, the discount provided by reward points was multiplied by the number of items of a product in the order. Fixed.
