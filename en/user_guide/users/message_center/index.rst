@@ -34,7 +34,7 @@ The **Customers → Message center** page is available to administrators and ven
 
   .. note::
 
-    Depending on :doc:`the add-on's settings </user_guide/addons/customer_to_vendor_communication/set_up_communication>`, customers, administrators, and vendors may receive email notifications about new messages. These emails will only be sent if you use :doc:` the new email template editing mode </user_guide/look_and_feel/email_templates/enable_email_editor>`.
+    Depending on :doc:`the add-on's settings </user_guide/addons/customer_to_vendor_communication/set_up_communication>`, customers, administrators, and vendors may receive email notifications about new messages. These emails will only be sent if you use :doc:`the new email template editing mode </user_guide/look_and_feel/email_templates/enable_email_editor>`.
 
   .. image:: img/vendor_thread.png
       :align: center
