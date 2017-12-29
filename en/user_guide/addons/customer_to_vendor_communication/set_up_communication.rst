@@ -36,6 +36,10 @@ How To: Set up Communication between Customers and Vendors
 
      * **Notify customer**—if you enable this setting, then emails will be sent to customers about messages in their threads.
 
+     .. important::
+
+         These emails will only be sent if you use :doc:`the new email template editing mode </user_guide/look_and_feel/email_templates/enable_email_editor>`.
+
 #. Once you configure the add-on, click **Save**. After that you should see the *Contact vendor* button on the pages that you specified in the add-on's settings.
 
    .. image:: img/contact_vendor.png

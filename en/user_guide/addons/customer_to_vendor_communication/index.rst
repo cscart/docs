@@ -14,6 +14,10 @@ The **Customer-to-Vendor Communication** add-on allows customers to contact vend
  
 * Notifications are sent to the customer's and/or vendor's email address to inform them about new messages (that depends on the add-on's settings).
 
+  .. note::
+
+      These emails will only be sent if you use :doc:`the new email template editing mode </user_guide/look_and_feel/email_templates/enable_email_editor>`.
+
 * The customer can check the message history and continue the conversation in his or her account on the storefront.
 
   .. image:: img/contact_vendor.png
