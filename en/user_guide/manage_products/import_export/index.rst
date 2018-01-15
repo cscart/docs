@@ -12,5 +12,6 @@ This section of the documentation covers the export and import of products in CS
     product_import
     fields_format
     import_example
+    variation_import
     product_image_import
     google_merchant

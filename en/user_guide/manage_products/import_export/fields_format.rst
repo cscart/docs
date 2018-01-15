@@ -8,6 +8,8 @@ An imported CSV file with product information can contain the columns described 
    :backlinks: none
    :local:
 
+.. _import-product-code:
+
 ============
 Product code 
 ============
@@ -49,6 +51,8 @@ The numeric ID of the product from the store's database. If **Product code** is 
 .. important::
 
     EXAMPLE: *130*
+
+.. _import-product-type:
 
 ============
 Product type
@@ -530,6 +534,9 @@ Several features must be delimited with a semicolon.
 
     If a feature or its variant doesn't exist in the database, it will be created automatically. You can also :doc:`create features manually <../features/product_features>` or import them **before** you import products with those features.
 
+
+.. _import-options:
+
 =======
 Options
 =======
@@ -653,6 +660,18 @@ Settings can be specified after the option variants. Here are the settings that 
   .. important::
 
       EXAMPLE: *(Simtech) Custom image: F///required=Y///multiupload=N///allowed_extensions=jpg,bmp,gif///max_file_size=1000*
+
+.. _import-variation-options:
+
+=================
+Variation options
+=================
+
+The variants of options that comprise :doc:`a product variation </user_guide/manage_products/products/product_variations>`. For example, if you sell a T-shirt with options like *Size* and *Color*, then *a medium white T-shirt* would be a product variation. We have :doc:`a separate article on how to import product variations </user_guide/manage_products/import_export/variation_import>`.
+
+.. important::
+
+    EXAMPLE: *Size:Medium|Color:White*
 
 ====================
 Secondary categories
