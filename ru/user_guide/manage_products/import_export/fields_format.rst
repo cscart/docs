@@ -7,6 +7,8 @@
 .. contents::
    :local:
 
+.. _import-product-code:
+
 ============
 Product code 
 ============
@@ -48,6 +50,8 @@ Product id
 .. important::
 
     ПРИМЕР: *130*
+
+.. _import-product-type:
 
 ============
 Product type
@@ -529,6 +533,8 @@ Features
 
     Если характеристики или варианта нет в базе данных, она будет создана автоматически. Также вы можете :doc:`создать характеристики вручную <../features/product_features>` или импортировать их до того, как импортируете товары с этими характеристиками.
 
+.. _import-options:
+
 =======
 Options
 =======
@@ -652,6 +658,18 @@ Options
   .. important::
 
       ПРИМЕР: *(Simtech) Своё изображение: F///required=Y///multiupload=N///allowed_extensions=jpg,bmp,gif///max_file_size=1000*
+
+.. _import-variation-options:
+
+=================
+Variation options
+=================
+
+Варианты разных опций, которые вместе составляют :doc:`вариацию товара </user_guide/manage_products/products/product_variations>`. Например, если вы продаёте футболку с опциями *Цвет* и *Размер*, то *белая футболка XXL* будет вариацией товара. У нас есть :doc:`отдельная статья об импорте вариаций товаров </user_guide/manage_products/import_export/variation_import>`.
+
+.. important::
+
+    EXAMPLE: *Размер:Обычный|Цвет:Белый*
 
 ====================
 Secondary categories

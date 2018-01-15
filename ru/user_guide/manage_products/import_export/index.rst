@@ -12,5 +12,6 @@
     product_import
     fields_format
     import_example
+    variation_import
     product_image_import
     google_merchant
