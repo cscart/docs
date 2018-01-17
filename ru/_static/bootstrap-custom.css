@@ -298,11 +298,6 @@ body {
 
 .sidebar-tabs li a.active {
     box-shadow: 0px -1px 2px -1px rgba(0,0,0,0.3);
-    border: 1px solid rgba(0,0,0,0.1);
-    border-radius: 4px;
-    border-bottom: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0px;
 }
 
 .sidebar-list {
