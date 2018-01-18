@@ -26,7 +26,7 @@ By default, there are four possible gift certificate statuses:
 
 * **Pending**—the certificate was created, but hasn't been activated yet.
 
-* **Used**—the gift certificate has been used, and all the money assigned to that certifiate has been spent.
+* **Used**—the gift certificate has been used, and all the money assigned to that certificate has been spent.
 
 To edit existing statuses, choose the **gear** button, corresponding to a particular status and click **Edit**.
 
@@ -38,13 +38,13 @@ Add Gift Certificate Statuses
 
 To add a custom gift certificate status:
 
-1. Click the **+** button and choose **Add status** from the drop-down menu. This will open a pop-up window with a form for the new status details.
+#. Click the **+** button and choose **Add status** from the drop-down menu. This will open a pop-up window with a form for the new status details.
 
 .. image:: img/add_gc_status.png
     :align: center
     :alt: Click the plus button and choose Add status on the gift certificate status page.
 
-2. Fill out the form. Fields marked with ***** are mandatory.
+#. Fill out the form. Fields marked with ***** are mandatory.
 
   * **Name***—the name of the status.
 
@@ -56,5 +56,4 @@ To add a custom gift certificate status:
 
   * **Notify customer**—if you tick this checkbox, the customer receives an automatic email notification when the gift certificate status changes to this status.
 
-3. Click the **Create** button.
-    
+#. Click the **Create** button.
