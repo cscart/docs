@@ -6,7 +6,7 @@ How To: Enable Customers to Create and Buy Gift Certificates
 
     Before you proceed, go to **Add-ons → Manage add-ons** and make sure the **Gift Certificate** add-on is installed and enabled.
 
-The **Gift Certificate** add-on provides a special page, where customers can create gift certificates, add them to cart, and buy them like any other product.
+The **Gift Certificate** add-on provides a special page where customers can create gift certificates, add them to cart, and buy them like any other product.
 
 .. image:: img/buy_gift_certificate.png
     :align: center
@@ -34,13 +34,13 @@ Step 1. Create a Menu
 
 1.4. Let’s add a new item to the menu. Click the menu’s name and then click the **+** button on the page that opens.
 
-1.5. Configure the menu item in the appearing pop-up:
+1.5. Configure the menu item in the pop-up that will appear:
 
-     * Enter the name of the menu item as it will appear on the storefront. 
+* Enter the name of the menu item as it will appear on the storefront. 
 
-     * Enter ``gift_certificates.add`` in the URL field.
+* Enter ``gift_certificates.add`` in the URL field.
 
-     * Specify any other settings you need, then click **Create**.
+* Specify any other settings you need, then click **Create**.
 
 .. image:: img/menu_item.png
     :align: center
@@ -74,9 +74,9 @@ For your new menu to appear on the storefront, you need to put it into a block.
 
 2.5. On the new pop-up, configure the block by filling in the data on the following tabs:
 
-     * **General**—specify the name of the block (*Gifts*, for example) and the type of the menu (*Text links*)
+* **General**—specify the name of the block (for example, *Gifts*) and the type of the menu (*Text links*)
 
-     * **Content**—select the menu to display in the block (*Gift Certificate* in our case)
+* **Content**—select the menu to display in the block (*Gift Certificate* in our case)
 
 2.6. Click **Create**. The new block should appear on the grid, and the menu should now be visible to customers.
 
