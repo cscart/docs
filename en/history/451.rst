@@ -101,3 +101,13 @@ Bugfixes
 [!] {#6655} Products: Search: When a specific storefront was selected, product search didn’t work in some cases. Fixed.
 
 [!] {#6667} Core: Console: HTTPS: When the store used HTTPS, PHP controllers couldn’t be executed for the customer area in the console. Fixed.
+
+=============
+Service Packs
+=============
+
+---------
+4.5.1.SP1
+---------
+
+[!] Cache: Layouts: If the content of a block was unique for each object (product, category, etc.), then only the content of one of the objects сould be displayed in all instances of that block. Fixed.

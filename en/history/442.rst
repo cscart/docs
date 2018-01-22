@@ -49,3 +49,19 @@ Bugfixes
 [!] {#6484} Add-ons: Gift certificates: Currencies: The prices of gift certificates were rounded incorrectly in non-primary currencies. Now the price of a gift certificate can only be entered in the primary currency.
 
 [!] {#6532} Design: Parent theme: Theme editor: Styles of child themes couldn’t be compiled to CSS or restored to LESS. Fixed.
+
+=============
+Service Packs
+=============
+
+---------
+4.4.2.SP1
+---------
+
+[!] The PHPMailer library contained a critical vulnerability to exploits. Fixed by updating the library to version 5.2.19.
+
+---------
+4.4.2.SP2
+---------
+
+[!] The PHPMailer 5.2.19 library didn't fully solve the problem with potential unauthenticated remote execution of malicious code on the server. Fixed.

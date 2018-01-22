@@ -173,3 +173,21 @@ Bugfixes
 [!] {#7041} Add-ons: Buy together: The discount on product combination wasn’t taken into account when eligibility for cart promotion was checked. Fixed.
 
 [!] {#7054} Add-ons: Reward points: Order management: When reward points were applied to an order in the Administration panel, the discount provided by reward points was multiplied by the number of items of a product in the order. Fixed.
+
+=============
+Service Packs
+=============
+
+---------
+4.7.1.SP1
+---------
+
+[!] Shipping methods: There was a shipping method problem specific to the Russian version. Fixed.
+
+---------
+4.7.1.SP2
+---------
+
+[!] Security: Several issues were discovered during a security audit. Fixed.
+
+[!] Add-ons: Product Variations: The add-on didn't work on PHP 5.3. Fixed.
