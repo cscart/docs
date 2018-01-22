@@ -163,3 +163,13 @@ Bugfixes
 [!] {#6928} {#6934} Layouts: Blocks: Menu: Items of the submenu weren't always highlighted if they were generated dynamically, for example, from categories.
 
 [!] {#6931} Add-ons: Google reCaptcha: Sometimes reCaptcha didn't load on the storefront. Fixed.
+
+=============
+Service Packs
+=============
+
+---------
+4.6.3.SP1
+---------
+
+[!] Security: An intruder could gain unauthorized access to the Administration panel under certain conditions. Fixed.
