@@ -113,3 +113,21 @@ Bugfixes
 [!] {#6638} Add-ons: Suppliers: Shipments: The notifications to suppliers about changes of shipment statuses weren't supposed to be sent, but the “Notify supplier” checkbox still appeared. Fixed.
 
 [!] {#6677} Core: Sessions: Sessions that were idle for longer than specified in the SESSION_ONLINE constant were still returned by the getOnline method. Fixed.
+
+=============
+Service Packs
+=============
+
+---------
+4.5.2.SP1
+---------
+
+[!] JS: Checkout: Customers couldn't return from the Billing Options step to the Shipping Options step. Fixed.
+
+[!] JS: Order management: If a payment method for the order was set to "Credit card", then an attempt to change the payment method on the order editing page in the Administration panel resulted in an endless loading indicator that didn't go away until the user refreshed the page manually. Fixed.
+
+---------
+4.5.2.SP2
+---------
+
+[!] Session: Authorization: If a store's domain had "www" in it, administrators and customers couldn't sign in after upgrading to version 4.5.2 until they cleared cookies in their browsers or switched to another browser. Fixed.
