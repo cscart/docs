@@ -58,10 +58,10 @@ Service Packs
 4.4.2.SP1
 ---------
 
-[!] The PHPMailer library contained a critical vulnerability to exploits. Fixed by updating the library to version 5.2.19.
+[!] Security: The PHPMailer library contained a critical vulnerability to exploits. Fixed; the library was updated to version 5.2.19.
 
 ---------
 4.4.2.SP2
 ---------
 
-[!] The PHPMailer 5.2.19 library didn't fully solve the problem with potential unauthenticated remote execution of malicious code on the server. Fixed.
+[!] Security: The PHPMailer 5.2.19 library didn't fully solve the problem with potential unauthenticated remote execution of malicious code on the server. Fixed.
