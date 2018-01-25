@@ -191,3 +191,9 @@ Service Packs
 [!] Security: Several issues were discovered during a security audit. Fixed.
 
 [!] Add-ons: Product Variations: The add-on didn't work on PHP 5.3. Fixed.
+
+---------
+4.7.1.SP3
+---------
+
+[!] Security: Unauthorized access to the Administration panel was possible if the web server was configured in a certain way. Fixed.
