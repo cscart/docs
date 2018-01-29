@@ -265,8 +265,8 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
                 return 404;
             }
 
-        #   Blocking outside access to the store’s database backups (/var/database).
-            location ~ ^/(\w+/)?(\w+/)?var/database/ {
+        #   Blocking outside access to the store’s database backups (/var/backups).
+            location ~ ^/(\w+/)?(\w+/)?var/backups/ {
                 return 404;
             }
 
