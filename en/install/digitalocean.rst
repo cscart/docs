@@ -34,7 +34,7 @@ Step 1. Prepare Your Hosting
     :align: center
     :alt: Select a region for your server.
 
-1.5. Select your server’s operating system. We recommend CentOS 7 x64:
+1.5. Select your server’s operating system. We recommend CentOS 7 x64. You can also choose CentOS 6, Ubuntu 14.04 or 16.04. We mention specific operating systems because we have a script that automatically configures the environment for CS-Cart or Multi-Vendor on clean installations of these systems.
 
 .. image:: img/digitalocean/4_server_os.png
     :align: center
