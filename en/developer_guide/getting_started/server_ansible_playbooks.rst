@@ -64,6 +64,25 @@ Depending on your server’s operating system, run the following commands one by
 
       sudo apt-get -y install ansible=2.4.*-1ppa~trusty
 
+* On **Ubuntu 16.04:**
+
+  .. code-block:: bash
+
+      sudo add-apt-repository -y ppa:ansible/ansible
+
+  .. code-block:: bash
+
+      sudo apt-get -y update
+
+  .. code-block:: bash
+
+      sudo apt-get -y install git python-dev libffi-dev python-markupsafe libssl-dev
+
+  .. code-block:: bash
+
+      sudo apt-get -y install ansible=2.4.*-1ppa~xenial
+
+
 ===========================
 Step 2. Configure main.json
 ===========================
@@ -203,7 +222,3 @@ Depending on the PHP version and the web server you want to use, **run one of th
   .. code-block:: bash
 
       cd ~/playbooks/ && ansible-playbook -e @config/main.json -c local -i inventory_varnish lvemp7.yml
-
-.. important::
-
-    Errors may occur when running a playbook on Ubuntu.
