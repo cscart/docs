@@ -34,6 +34,15 @@
       sudo yum install -y gcc git openssl-devel libffi-devel libselinux-python python-crypto python-jinja2 python-paramiko sshpass
       sudo rpm -ihv https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/ansible-2.4.1.0-1.el7.ans.noarch.rpm
 
+* На **Ubuntu 14.04:**
+
+  .. code-block:: bash
+
+      sudo add-apt-repository -y ppa:ansible/ansible
+      sudo apt-get -y update
+      sudo apt-get -y install git python-dev libffi-dev python-markupsafe libssl-dev
+      sudo apt-get -y install ansible=2.4.*-1ppa~trusty
+
 ============================
 Шаг 2. Настраиваем main.json
 ============================
@@ -108,7 +117,7 @@
 
            yum install nano
 
-    #. Откройте файл, который вы хотите отредактировать:
+    #. Откройте файл, который вы хотите отредактировать (на Ubuntu выполняйте сразу этот шаг, без установки nano):
 
        .. code-block:: bash
 
@@ -173,3 +182,7 @@
   .. code-block:: bash
 
       cd ~/playbooks/ && ansible-playbook -e @config/main.json -c local -i inventory_varnish lvemp7.yml
+
+.. important::
+
+     В Ubuntu возможны проблемы при запуске плейбуков.

@@ -34,7 +34,7 @@ Step 1. Prepare Your Hosting
     :align: center
     :alt: Select a region for your server.
 
-1.5. Select your server’s operating system. Choose either CentOS 6, or CentOS 7. We recommend a CentOS 7 x64.
+1.5. Select your server’s operating system. We recommend CentOS 7 x64:
 
 .. image:: img/digitalocean/4_server_os.png
     :align: center
