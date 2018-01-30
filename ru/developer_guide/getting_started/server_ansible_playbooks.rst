@@ -43,6 +43,15 @@
       sudo apt-get -y install git python-dev libffi-dev python-markupsafe libssl-dev
       sudo apt-get -y install ansible=2.4.*-1ppa~trusty
 
+* На **Ubuntu 16.04:**
+
+  .. code-block:: bash
+
+      sudo add-apt-repository -y ppa:ansible/ansible
+      sudo apt-get -y update
+      sudo apt-get -y install git python-dev libffi-dev python-markupsafe libssl-dev
+      sudo apt-get -y install ansible=2.4.*-1ppa~xenial
+
 ============================
 Шаг 2. Настраиваем main.json
 ============================
@@ -182,7 +191,3 @@
   .. code-block:: bash
 
       cd ~/playbooks/ && ansible-playbook -e @config/main.json -c local -i inventory_varnish lvemp7.yml
-
-.. important::
-
-     В Ubuntu возможны проблемы при запуске плейбуков.
