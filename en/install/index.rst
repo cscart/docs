@@ -32,6 +32,7 @@ Although the general idea is always the same, the details of the installation pr
     digitalocean
     vps_install
     install_via_console
+    windows/index
 
 .. toctree::
     :maxdepth: 4
