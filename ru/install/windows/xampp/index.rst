@@ -1,109 +1,94 @@
+****************************************
 Установка локального веб-сервера — XAMPP
-----------------------------------------
+****************************************
 
-XAMPP является самой популярной средой разработки PHP
+**XAMPP** является самой популярной средой разработки PHP.
 
-XAMPP полностью бесплатный и простой в установке дистрибутив Apache, содержащий MySQL, PHP и Perl. XAMPP создан с открытым исходным кодом, чтобы быть невероятно простым в установке и в использовании.
+**XAMPP** полностью бесплатный и простой в установке дистрибутив Apache, содержащий MySQL, PHP и Perl. XAMPP создан с открытым исходным кодом, чтобы быть невероятно простым в установке и в использовании.
 
 
-1.  Пройдите на сайт `XAMPP <https://www.apachefriends.org/ru/index.html>`_  и скачайте последнюю версию “XAMPP для Windows”.
+1.  Пройдите на сайт `XAMPP <https://www.apachefriends.org/ru/index.html>`_  и скачайте последнюю версию *XAMPP для Windows*.
 
-    .. image:: img/xampp_1.png
+    .. image:: img/step1ru.png
         :alt: XAMPP
 
-2.  Запустите скачанный файл xampp­win32­x.x.x­x­xxxx­installer.exe. 
+2.  Запустите скачанный файл **xampp--win32­x.x.x­x­xxxx­installer.exe**. 
 
-3.  Нажмите Да в окне Контроль учетных записей пользователей, чтобы разрешить установку программы.
+3.  На время установки рекомендуется временно приостановить антивирус. После приостановки антивируса нажмите **Yes**. В некоторых случаях антивирус может препятствовать установке программного обеспечения. Если у вас в качестве антивируса запущен **Microsoft Security Essentials**, его можно не отключать.
 
-    .. image:: img/xampp_2.png
+    .. image:: img/step4continue.png
         :alt: XAMPP
 
-4.  На время установки рекомендуется временно приостановить антивирус. После приостановки антивируса нажмите Yes. В некоторых случаях антивирус может препятствовать установке программного обеспечения. Если у вас в качестве антивируса запущен Microsoft Security Essentials, его можно не отключать.
+4.  Подтвердите, что не будете устанавливать программу в *C:\\Program Files*, и нажмите **OK**. Контроль учетных записей (UAC) может ограничить некоторые функции XAMPP при установке в C:\\Program Files, поэтому рекомендуется установка в папку по умолчанию.
 
-    .. image:: img/xampp_3.png
+    .. image:: img/step5warning.png
         :alt: XAMPP
 
-5.  Соглашаемся, что не будем устанавливать программу в C:\\Program Files, и нажимаем OK. Контроль учетных записей (UAC) может ограничить некоторые функции XAMPP при установке в C:\\Program Files, рекомендуется установка в директорию по умолчанию.
+5.  Нажмите **Next**, чтобы начать установку XAMPP.
 
-    .. image:: img/xampp_4.png
+    .. image:: img/step6.png
         :alt: XAMPP
 
-6.  Нажмите Next, чтобы начать установку XAMPP.
+6.  Убедитесь, что выбраны все компоненты и нажмите **Next**. 
 
-    .. image:: img/xampp_5.png
+    .. image:: img/step7.png
         :alt: XAMPP
 
-7.  Убедитесь, что выбраны все компоненты и нажмите Next 
+7.  Выберите папку для установки XAMPP и нажмите **Next**. Не рекомендуется менять папку по умолчанию и устанавливать XAMPP в C:\\Program Files. 
 
-    .. image:: img/xampp_6.png
+    .. image:: img/step8.png
         :alt: XAMPP
 
-8.  Выберите папку для установки XAMPP и нажмите Next. Не рекомендуется менять этот путь и не рекомендуется ставить C:\\Program Files. 
+8.  Уберите флажок с **Learn more about Bitnami for XAMPP** и нажмите **Next**. 
 
-    .. image:: img/xampp_7.png
+    .. image:: img/step9.png
         :alt: XAMPP
 
-9.  Уберите флажок с **Learn more about Bitnami for XAMPP** и нажмите **Next**. 
+9. Чтобы начать установку, нажмите **Next**.
 
-    .. image:: img/xampp_8.png
+    .. image:: img/step10.png
         :alt: XAMPP
 
-10. Чтобы начать установку, нажмите Next.
+10. Пожалуйста, подождите, установка XAMPP займет всего несколько минут.
 
-    .. image:: img/xampp_9.png
+    .. image:: img/step11.png
         :alt: XAMPP
 
-11. Пожалуйста, подождите, установка XAMPP займет у вас всего несколько минут.
+11. Убедитесь, что рядом с **Do you want to start the Control Panel now?** стоит флажок и 
+нажмите **Finish**. 
 
-    .. image:: img/xampp_10.png
+    .. image:: img/step12.png
         :alt: XAMPP
 
-12. Убедитесь, что стоит флажок [v] Do you want to start the Control Panel now? и 
-нажмите Finish. 
+12. После запуска XAMPP Control Panel нажмите **Config** для вызова настроек панели XAMPP.
 
-    .. image:: img/xampp_11.png
+    .. image:: img/step13.png
         :alt: XAMPP
 
-13. Нажмите Config для вызова настроек панели XAMPP в запущенном XAMPP Control 
-Panel.
+13. В секции **Autostart of modules** поставьте флажки рядом с Apache и MySQL и нажмите 
+**Save**.
 
-    .. image:: img/xampp_12.png
+    .. image:: img/step14.png
         :alt: XAMPP
 
-14. В группе Autostart of modules поставить флажок [v] Apache, [v] MySQL и нажмите 
-Save.
+14. Нажмите **Quit**, чтобы применить установленные параметры.
 
-    .. image:: img/xampp_13.png
+    .. image:: img/step15.png
         :alt: XAMPP
 
-15. Нажмите Quit, чтобы применить установленные параметры.
+15. Для удобства создайте ярлык программы на рабочем столе, а затем запустите её. 
 
-    .. image:: img/xampp_14.png
+    .. image:: img/step16.png
         :alt: XAMPP
 
-16. Нажмите **Пуск → Все программы → XAMPP → XAMPP Control Panel → Правая кнопка мыши → Отправить → Рабочий стол (создать ярлык)**. 
+16. Убедитесь, что Apache и MySQL работают, об этом свидетельствует зелёная подсветка данных модулей.
 
-    .. image:: img/xampp_15.png
+    .. image:: img/step17.png
         :alt: XAMPP
 
-17. Запустите XAMPP Control Panel на Рабочем столе. 
-
-    .. image:: img/xampp_16.png
-        :alt: XAMPP
-
-18. Нажмите Разрешить доступ, чтобы запустить Apache HTTP Server. 
-
-    .. image:: img/xampp_17.png
-        :alt: XAMPP
-
-19. Нажмите Разрешить доступ, чтобы запустить MySQL. 
-
-    .. image:: img/xampp_18.png
-        :alt: XAMPP
-
-20. Перейдите на localhost/xampp в браузере. Если вы видите приветственное сообщение 
+17. В адресной строке браузера введите **localhost** и нажмите **Enter**. Если вы видите приветственное сообщение 
 *Welcome to XAMPP for Windows!*, значит вы успешно установили среду 
-PHP­-разработки XAMPP. 
+PHP--разработки XAMPP. 
 
-    .. image:: img/xampp_19.png
+    .. image:: img/step18.png
         :alt: XAMPP
