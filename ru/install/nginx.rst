@@ -216,8 +216,9 @@
 
         error_page 598 = @backend;
 
-        ############################################################################
-    #   Обработка PHP-скриптов
+    #######################################################################
+    # Обработка PHP-скриптов
+    #######################################################################
         location @backend {
             try_files $uri $uri/ /$1/$3 /$2/$3 $3 /index.php =404;
             proxy_read_timeout 61;
@@ -257,31 +258,17 @@
         #   Логика поиска скрипта по порядку: файл, папка, скрипт
             try_files $uri $uri/ /$1/$3 /$2/$3 $3 @fallback;
 
-        #   Настройки статики, первое правило
-            location ~* /(\w+/)?(\w+/)?(.+\.(jpe?g|ico|gif|png|css|js|pdf|txt|tar|wof|woff|svg|ttf|csv|zip|xml|yml)) {
-                access_log off;
-            #   Правило поиска статических файлов. Если файл не находится по адресу магазина, то ищем файл по правилу @statics.
-            #   Например, если магазин находится в подпапке example.com/shop/             
-                try_files $uri $uri/ /$1/$3 /$2/$3 $3 @statics;
-                expires max;
-                add_header Access-Control-Allow-Origin *;
-                add_header Cache-Control public;
-            }
+        #######################################################################
+        # Ограничиваем возвожность запуска PHP в каталогах. Для безопасности.
+        #######################################################################
 
-        #
-        #  Ограничиваем возвожность запуска php в каталогах. Для безопасности.
-        #
-
-            location ~ ^/(\w+/)?(\w+/)?app/ {
-                return 404;
-            }
-    #   Разрешаем запуск скриптов способов оплаты
-            location ~ ^/(\w+/)?(\w+/)?app/payments/ {
-                return 404;
-                location ~ \.php$ {
-                    return 598;
+        #   Разрешаем запуск скриптов способов оплаты
+                location ~ ^/(\w+/)?(\w+/)?app/payments/ {
+                    return 404;
+                    location ~ \.php$ {
+                        return 598;
+                    }
                 }
-            }
 
         #   Разрешаем запуск скриптов способов оплаты
             location ~ ^/(\w+/)?(\w+/)?app/addons/paypal/payments/ {
@@ -299,6 +286,11 @@
                 }
             }
 
+        #   Закрываем доступ к папке /app
+            location ~ ^/(\w+/)?(\w+/)?app/ {
+                return 404;
+            }
+
         #   Запрещаем PHP в папке /design
             location ~ ^/(\w+/)?(\w+/)?design/ {
                 allow all;
@@ -307,15 +299,13 @@
                 }
             }
 
-        #   Разрешаем только статику в папке /var
-            location ~ ^/(\w+/)?(\w+/)?var/ {
+        #   Закрываем доступ к бэкапам базы данных интернет-магазина снаружи
+            location ~ ^/(\w+/)?(\w+/)?var/backups/ {
                 return 404;
-                location ~* \.(jpe?g|ico|gif|png|css|js|pdf|txt|tar|wof|woff|svg|ttf|csv|zip|xml|yml)$ {
-                    allow all;
-                    expires 1M;
-                    add_header Cache-Control public;
-                    add_header Access-Control-Allow-Origin *;
-                }
+            }
+
+            location ~ ^/(\w+/)?(\w+/)?var/restore/ {
+                return 404;
             }
 
         #   Закрываем доступ к резервным копиям шаблонов
@@ -339,11 +329,6 @@
                 return 404;
             }
 
-        #   Закрываем доступ к бэкапам базы данных интернет-магазина (папка /var/backups/) снаружи
-            location ~ ^/(\w+/)?(\w+/)?var/backups/ {
-                return 404;
-            }
-
         #   Закрываем доступ к .tpl
             location ~* \.([tT][pP][lL].?)$ {
                 return 404;
@@ -352,6 +337,28 @@
         #   Закрываем доступ к .htaccess, .htpasswd и git
             location ~ /\.(ht|git) {
                 return 404;
+            }
+
+        #   Разрешаем только статику в папке /var
+            location ~ ^/(\w+/)?(\w+/)?var/ {
+                return 404;
+                location ~* \.(jpe?g|ico|gif|png|css|js|pdf|txt|tar|wof|woff|svg|ttf|csv|zip|xml|yml)$ {
+                    allow all;
+                    expires 1M;
+                    add_header Cache-Control public;
+                    add_header Access-Control-Allow-Origin *;
+                }
+            }
+
+        #   Настройки статики, главное правило
+            location ~* /(\w+/)?(\w+/)?(.+\.(jpe?g|ico|gif|png|css|js|pdf|txt|tar|wof|woff|svg|ttf|csv|zip|xml|yml)) {
+                access_log off;
+            #   Правило поиска статических файлов. Если файл не находится по адресу магазина, то ищем файл по правилу @statics.
+            #   Например, если магазин находится в подпапке example.com/shop/             
+                try_files $uri $uri/ /$1/$3 /$2/$3 $3 @statics;
+                expires max;
+                add_header Access-Control-Allow-Origin *;
+                add_header Cache-Control public;
             }
 
             location ~* /(\w+/)?(\w+/)?(.+\.php)$ {
