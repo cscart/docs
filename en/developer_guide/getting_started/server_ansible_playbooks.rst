@@ -26,7 +26,7 @@ Depending on your server’s operating system, run the following commands one by
 
   .. code-block:: bash
 
-      sudo yum install -y gcc git openssl-devel libffi-devel libselinux-python python-crypto python-jinja2 python-paramiko sshpass
+      sudo yum install -y gcc git openssl-devel libffi-devel libselinux-python python-crypto python-jinja2 python-paramiko sshpass python-six PyYAML
 
   .. code-block:: bash
 
@@ -40,7 +40,7 @@ Depending on your server’s operating system, run the following commands one by
 
   .. code-block:: bash
 
-      sudo yum install -y gcc git openssl-devel libffi-devel libselinux-python python-crypto python-jinja2 python-paramiko sshpass
+      sudo yum install -y gcc git openssl-devel libffi-devel libselinux-python python-crypto python-jinja2 python-paramiko sshpass PyYAML python-setuptools
 
   .. code-block:: bash
 
@@ -101,7 +101,7 @@ Once you have installed Ansible, you can download and run one of our playbooks t
 
    .. code-block:: bash
 
-       cp ~/playbooks/config/advanced.json  ~/playbooks/config/main.json
+       cp ~/playbooks/config/advanced.json ~/playbooks/config/main.json
 
    The command above simply copies an existing file called **advanced.json** and pastes it as **main.json** in the same directory (*~/playbooks/config*). At this point, the file contains only the example configuration that you'll need to change.
 
@@ -211,13 +211,13 @@ Depending on the PHP version and the web server you want to use, **run one of th
 
       cd ~/playbooks/ && ansible-playbook -e @config/main.json -c local -i inventory lemp.yml
 
-* **lemp7.yml**: *nginx + mysql + php7.0*
+* **lemp7.yml**: *nginx + mysql + php7.1*
 
   .. code-block:: bash
 
       cd ~/playbooks/ && ansible-playbook -e @config/main.json -c local -i inventory_php7 lemp7.yml
 
-* **lvemp7.yml**: *varnish + nginx + mysql + php7.0*
+* **lvemp7.yml**: *varnish + nginx + mysql + php7.1*
 
   .. code-block:: bash
 
