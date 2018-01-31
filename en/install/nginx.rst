@@ -142,8 +142,9 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
 
         error_page 598 = @backend;
 
-        ############################################################################
-    #   Processing PHP scripts
+    ############################################################################
+    # Processing PHP scripts
+    ############################################################################
         location @backend {
             try_files $uri $uri/ /$1/$3 /$2/$3 $3 /index.php =404;
             proxy_read_timeout 61;
@@ -183,31 +184,17 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
         #   The script search logic uses the following order: file, directory, script
             try_files $uri $uri/ /$1/$3 /$2/$3 $3 @fallback;
 
-        #   The first rule for searching static files
-            location ~* /(\w+/)?(\w+/)?(.+\.(jpe?g|ico|gif|png|css|js|pdf|txt|tar|wof|woff|svg|ttf|csv|zip|xml|yml)) {
-                access_log off;
-            #   The rule for searching static files. If the server can’t find the file in the store folder, it will use the @statics rule.
-            #   For example, if your store is located at example.com/shop/            
-                try_files $uri $uri/ /$1/$3 /$2/$3 $3 @statics;
-                expires max;
-                add_header Access-Control-Allow-Origin *;
-                add_header Cache-Control public;
-            }
+        ############################################################################
+        # Denying the ability to run PHP in the directories for security reasons.
+        ############################################################################
 
-        #
-        #  Denying the ability to run PHP in the directories for security reasons.
-        #
-
-            location ~ ^/(\w+/)?(\w+/)?app/ {
-                return 404;
-            }
-    #   Allowing to run the payment methods scripts.
-            location ~ ^/(\w+/)?(\w+/)?app/payments/ {
-                return 404;
-                location ~ \.php$ {
-                    return 598;
+        #   Allowing to run the payment methods scripts.
+                location ~ ^/(\w+/)?(\w+/)?app/payments/ {
+                    return 404;
+                    location ~ \.php$ {
+                        return 598;
+                    }
                 }
-            }
 
         #   Allowing to run the payment methods scripts.
             location ~ ^/(\w+/)?(\w+/)?app/addons/paypal/payments/ {
@@ -225,6 +212,11 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
                 }
             }
 
+        #   Denying access to the app directory.
+            location ~ ^/(\w+/)?(\w+/)?app/ {
+                return 404;
+            }
+
         #   Forbidding PHP in the /design directory.
             location ~ ^/(\w+/)?(\w+/)?design/ {
                 allow all;
@@ -233,15 +225,13 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
                 }
             }
 
-        #   Allowing static files only in the /var directory
-            location ~ ^/(\w+/)?(\w+/)?var/ {
+        #   Blocking outside access to the store’s database backups.
+            location ~ ^/(\w+/)?(\w+/)?var/backups/ {
                 return 404;
-                location ~* \.(jpe?g|ico|gif|png|css|js|pdf|txt|tar|wof|woff|svg|ttf|csv|zip|xml|yml)$ {
-                    allow all;
-                    expires 1M;
-                    add_header Cache-Control public;
-                    add_header Access-Control-Allow-Origin *;
-                }
+            }
+
+            location ~ ^/(\w+/)?(\w+/)?var/restore/ {
+                return 404;
             }
 
         #   Denying access to the template backups.
@@ -265,11 +255,6 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
                 return 404;
             }
 
-        #   Blocking outside access to the store’s database backups (/var/backups).
-            location ~ ^/(\w+/)?(\w+/)?var/backups/ {
-                return 404;
-            }
-
         #   Denying access to .tpl
             location ~* \.([tT][pP][lL].?)$ {
                 return 404;
@@ -278,6 +263,28 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
         #   Denying access to .htaccess, .htpasswd and git
             location ~ /\.(ht|git) {
                 return 404;
+            }
+
+        #   Allowing static files only in the /var directory
+            location ~ ^/(\w+/)?(\w+/)?var/ {
+                return 404;
+                location ~* \.(jpe?g|ico|gif|png|css|js|pdf|txt|tar|wof|woff|svg|ttf|csv|zip|xml|yml)$ {
+                    allow all;
+                    expires 1M;
+                    add_header Cache-Control public;
+                    add_header Access-Control-Allow-Origin *;
+                }
+            }
+
+        #   The main rule for searching static files
+            location ~* /(\w+/)?(\w+/)?(.+\.(jpe?g|ico|gif|png|css|js|pdf|txt|tar|wof|woff|svg|ttf|csv|zip|xml|yml)) {
+                access_log off;
+            #   The rule for searching static files. If the server can’t find the file in the store folder, it will use the @statics rule.
+            #   For example, if your store is located at example.com/shop/            
+                try_files $uri $uri/ /$1/$3 /$2/$3 $3 @statics;
+                expires max;
+                add_header Access-Control-Allow-Origin *;
+                add_header Cache-Control public;
             }
 
             location ~* /(\w+/)?(\w+/)?(.+\.php)$ {
