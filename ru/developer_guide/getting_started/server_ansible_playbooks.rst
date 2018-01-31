@@ -23,7 +23,7 @@
   .. code-block:: bash
 
       sudo yum -y install epel-release
-      sudo yum install -y gcc git openssl-devel libffi-devel libselinux-python python-crypto python-jinja2 python-paramiko sshpass
+      sudo yum install -y gcc git openssl-devel libffi-devel libselinux-python python-crypto python-jinja2 python-paramiko sshpass python-six PyYAML
       sudo rpm -ihv https://releases.ansible.com/ansible/rpm/release/epel-6-x86_64/ansible-2.4.1.0-1.el6.ans.noarch.rpm
 
 * На **CentOS 7:**
@@ -31,7 +31,7 @@
   .. code-block:: bash
 
       sudo yum -y install epel-release
-      sudo yum install -y gcc git openssl-devel libffi-devel libselinux-python python-crypto python-jinja2 python-paramiko sshpass
+      sudo yum install -y gcc git openssl-devel libffi-devel libselinux-python python-crypto python-jinja2 python-paramiko sshpass PyYAML python-setuptools
       sudo rpm -ihv https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/ansible-2.4.1.0-1.el7.ans.noarch.rpm
 
 * На **Ubuntu 14.04:**
@@ -70,7 +70,7 @@
 
    .. code-block:: bash
 
-       cp ~/playbooks/config/advanced.json  ~/playbooks/config/main.json
+       cp ~/playbooks/config/advanced.json ~/playbooks/config/main.json
 
    Эта команда просто копирует существующий файл **advanced.json** и вставляет его как **main.json** в ту же директорию (*~/playbooks/config*). Пока что в файле находится только пример данных; нам нужно будет заменить их на свои собственные.
 
@@ -180,13 +180,13 @@
 
       cd ~/playbooks/ && ansible-playbook -e @config/main.json -c local -i inventory lemp.yml
 
-* **lemp7.yml**: *nginx + mysql + php7.0*
+* **lemp7.yml**: *nginx + mysql + php7.1*
 
   .. code-block:: bash
 
       cd ~/playbooks/ && ansible-playbook -e @config/main.json -c local -i inventory_php7 lemp7.yml
 
-* **lvemp7.yml**: *varnish + nginx + mysql + php7.0*
+* **lvemp7.yml**: *varnish + nginx + mysql + php7.1*
 
   .. code-block:: bash
 
