@@ -28,7 +28,7 @@ Although gift certificates are supposed to be created and bought by customers, a
 
    * **Message**—the message that comes with the certificate (a greeting, some wish, etc.)
 
-   * **Amount**—the certificate's worth. Can be either specified as a custom amount or chosen from a fixed set of available amounts.
+   * **Amount**—the certificate's worth.
 
      .. note::
 
