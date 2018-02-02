@@ -8,9 +8,13 @@ The Gift Certificate Statuses Page
 
 Every gift certificate has a status assigned to it. To see the list of available statuses, go to **Administration → Gift certificate statuses**.
 
+.. hint::
+
+   You can also go to **Marketing → Gift certificates**, click the gear button in the upper right part of the page, and choose **Gift certificate statuses**.
+
 .. image:: img/open_gc_status_page.png
     :align: center
-    :alt: Go to "Administration → Gift certificate statuses" for the list of available statuses.
+    :alt: Going to the list of available gift certificate statuses in CS-Cart.
 
 Here's what you can do on the list of the gift certificate statuses:
 
