@@ -26,7 +26,7 @@ Before your customers can buy and use gift certificates, you'll need to activate
 Step 2. Specify How Gift Certificates Depend on Order Statuses
 ==============================================================
 
-The conditions when a customer can use a gift certificate aren't set in stone. A purchased gift certificate is a part of the order, and its :doc:`status </user_guide/addons/gift_certificates/manage_statuses>` can change depending on the status of the order. To configure this dependency:
+A purchased gift certificate is a part of the order, and its :doc:`status </user_guide/addons/gift_certificates/manage_statuses>` can change depending on the status of the order. To configure this dependency:
 
 #. Go to **Administration → Order statuses**.
 
