@@ -1,0 +1,124 @@
+***********************
+CS-Cart 4.7.2 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Google export: The ability to export product variations was added.
+
+[+] Add-ons: Product Variations [Beta]: The ability to create variations without removing existing variations of the product was added.
+
+[+] Add-ons: Product Variations [Beta]: The ability to manage product variations via import and export was added.
+
+[+] Add-ons: Product variations [Beta]: The settings for showing the product codes and thumbnails of variations were added to the block with the list of product variations.
+
+[+] Core: Compatibility with PHP 7.2 was added.
+
+[+] Core: Thumbnails: The support of ImageMagick 7, an image resizing library, was added.
+
+[+] Hooks: Add-ons: Banners: Hooks were added to the banner editing page.
+
+[+] Hooks: Add-ons: Tags: New hooks were added.
+
+[+] Hooks: Categories: Hooks for categories table entries were added.
+
+[+] Hooks: Design: Back end: New hook to modify the amount of products was added to the product editing page.
+
+[+] Hooks: JS: Event triggers for Dialog pop-ups were added.
+
+[+] Hooks: JS: Event triggers for Increase and Decrease buttons near the product quantity added.
+
+[+] Multi-Vendor: Blocks: Vendors: A new template called "Vendor logos and product count" was added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: Product Variations [Beta]: Some margins on the variation list and editing pages in the Administration panel were changed.
+
+[*] Design: Themes: Page zooming is now enabled on mobile devices.
+
+[*] Order management: The order management page for mobile devices was improved.
+
+[*] {#7089} Product options: Now the availability of the product isn't displayed on the product details page until all the required options are selected.
+
+========
+Bugfixes
+========
+
+[!] Add-ons: Comments and reviews: PHP Notices occurred on the "Comments and reviews" page of a product when the "Product Variations" and "SEO" add-ons were active. Fixed.
+
+[!] Add-ons: Google export: If all taxes were turned off for a product, the exported price of the product was zero. Fixed.
+
+[!] Add-ons: Newsletters: The "Manage subscribers" page of the mailing list didn't show what other mailing lists the customer was subscribed to. Fixed.
+
+[!] Add-ons: Newsletters: When multiple storefronts were used, the storefront selected for the newsletter wasn't saved. Fixed.
+
+[!] Add-ons: Newsletters: When the "language" parameter was used in a URL, a database error occurred. Fixed.
+
+[!] Add-ons: Price list: Errors occurred during price list generation. Fixed.
+
+[!] Add-ons: Product Variations [Beta]: A variation couldn't be added to wish list from the block with the list of variations when the "Add to Cart" button was hidden in that block.
+
+[!] Add-ons: Product Variations [Beta]: An option that was used by a variation could be deleted. Fixed.
+[!] Add-ons: Product Variations [Beta]: SEO names were displayed on the storefront automatically for product variations, even though SEO names for variations can't be edited. Fixed.
+
+[!] Add-ons: Product Variations [Beta]: The downloadable files were shown incorrectly on the downloads page for several orders. Fixed.
+
+[!] Add-ons: RSS feed: The product data did not load in the product feed. Fixed.
+
+[!] Add-ons: Searchanise: Function "fn_searchanise_update_product_filter" was called with 2 arguments, although 3 are required. Fixed.
+
+[!] Add-ons: Social buttons: If "Yandex" was the only enabled social button, the "type" field was missing on the product page. Fixed.
+
+[!] Add-ons: Tags: Creating a new product in the "All stores" mode with the category that belonged to a different storefront than the product itself resulted in an error. Fixed.
+
+[!] Core: The software didn't work on Apache web servers when "mod_negotiation" wasn't installed. Fixed.
+
+[!] Currencies: Exchange rates were not loaded in the Administration panel on the list of currencies. Fixed.
+
+[!] Design: Checkout: The last digits of the credit card number on the checkout page weren't visible on mobile devices. Fixed.
+
+[!] Design: Downloadable products: The files in the folder on the page with downloads weren’t displayed properly. Fixed.
+
+[!] Design: Email templates did not use the background color of the current theme. Fixed.
+
+[!] Design: Product filters: Slider: The unnecessary </span> tag was in the code. Fixed.
+
+[!] Installer: When the software was installed on a server accessible via HTTPS only, the administration panel couldn't be accessed. Fixed.
+
+[!] Multi-Vendor: Add-ons: Comments and reviews: There was a way for a vendor to change a customer's review. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor Plans: The search by vendor plans didn't work when an administrator attempted to add a vendor to the "Vendors" block. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor data premoderation: When the SEO add-on was enabled, pending products could be viewed by using a direct link. Fixed.
+
+[!] Multi-Vendor: Add-ons: PayPal Adaptive Payments: When search by pages was enabled, a PHP notice could occur on the search results page. Fixed.
+
+[!] Multi-Vendor: Design: Layouts: The blocks with vendor-specific content weren't displayed if vendors weren't allowed to edit layouts, even if those blocks were added by a non-vendor administrator. Fixed.
+
+[!] Multi-Vendor: Features: Filters: Features that weren't brands could appear on the "Brands" page. Fixed.
+
+[!] Multi-Vendor: Installation: Permissions on the root directory of the store could be changed automatically after installation. Fixed.
+
+[!] Order management: When a product with options was added to the order via the "Advanced Product Search" for the second time, the selected options couldn't be changed. Fixed.
+
+[!] Pages: Availability date: If the availability period of a page had only the beginning date, but no ending date, then the page wasn't displayed. Fixed.
+
+[!] Products: Sortings: The price of a shared product on a particular storefront wasn't taken into account when sorting by discount was performed on that storefront. Fixed.
+
+[!] Products: When the price of a shared product was edited in the "All stores" mode, a PHP Notice occurred. Fixed.
+
+[!] REST API: Products: Discount did not apply to the price when a single product was fetched by ID. Fixed.
+
+[!] {#7012} Payment methods: Skrill: An error occurred after a customer made a payment and returned to the store from the Skrill page. Fixed.
+
+[!] {#7063} Design: WYSIWIG: Some fields were too narrow when the WYSIWYG editor was disabled. Fixed.
+
+[!] {#7072} Design: Emails: Order status notifications were not rendered properly in Mail on macOS when the old method of sending e-mails was used.
+
+[!] {#7074} Add-ons: Product Variations [Beta]: A PHP notice occurred when variations were generated for a product that didn't have a product code. Fixed.
+
+[!] {#7075} Multi-Vendor: Add-ons: Customer-to-Vendor Communication: The "Contact vendor" button appeared on the cart page, even though it wasn't supposed to. Fixed.
