@@ -42,7 +42,7 @@ Functionality Changes
 
 [*] Order management: The order management page for mobile devices was improved.
 
-[*] {#7089} Product options: Now the availability of the product isn't displayed on the product details page until all the required options are selected.
+[*] {#7089} {#7100} Product options: Now the availability of the product isn't displayed on the product details page until all the required options are selected.
 
 ========
 Bugfixes
@@ -63,6 +63,7 @@ Bugfixes
 [!] Add-ons: Product Variations [Beta]: A variation couldn't be added to wish list from the block with the list of variations when the "Add to Cart" button was hidden in that block.
 
 [!] Add-ons: Product Variations [Beta]: An option that was used by a variation could be deleted. Fixed.
+
 [!] Add-ons: Product Variations [Beta]: SEO names were displayed on the storefront automatically for product variations, even though SEO names for variations can't be edited. Fixed.
 
 [!] Add-ons: Product Variations [Beta]: The downloadable files were shown incorrectly on the downloads page for several orders. Fixed.
@@ -75,7 +76,7 @@ Bugfixes
 
 [!] Add-ons: Tags: Creating a new product in the "All stores" mode with the category that belonged to a different storefront than the product itself resulted in an error. Fixed.
 
-[!] Core: The software didn't work on Apache web servers when "mod_negotiation" wasn't installed. Fixed.
+[!] Core: In some cases the software didn't work on Apache web servers when "mod_negotiation" wasn't installed. Fixed.
 
 [!] Currencies: Exchange rates were not loaded in the Administration panel on the list of currencies. Fixed.
 
@@ -105,8 +106,6 @@ Bugfixes
 
 [!] Order management: When a product with options was added to the order via the "Advanced Product Search" for the second time, the selected options couldn't be changed. Fixed.
 
-[!] Pages: Availability date: If the availability period of a page had only the beginning date, but no ending date, then the page wasn't displayed. Fixed.
-
 [!] Products: Sortings: The price of a shared product on a particular storefront wasn't taken into account when sorting by discount was performed on that storefront. Fixed.
 
 [!] Products: When the price of a shared product was edited in the "All stores" mode, a PHP Notice occurred. Fixed.
@@ -122,3 +121,5 @@ Bugfixes
 [!] {#7074} Add-ons: Product Variations [Beta]: A PHP notice occurred when variations were generated for a product that didn't have a product code. Fixed.
 
 [!] {#7075} Multi-Vendor: Add-ons: Customer-to-Vendor Communication: The "Contact vendor" button appeared on the cart page, even though it wasn't supposed to. Fixed.
+
+[!] {#7077} Pages: Availability date: If the availability period of a page had only the beginning date, but no ending date, then the page wasn't displayed. Fixed.
