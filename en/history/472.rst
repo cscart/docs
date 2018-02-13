@@ -78,6 +78,8 @@ Bugfixes
 
 [!] Core: In some cases the software didn't work on Apache web servers when "mod_negotiation" wasn't installed. Fixed.
 
+[!] Core: Thumbnails: GD: Demo data: An error could occur on the storefront when it was opened for the first time (or after thumbnails were deleted) because some of the images were too large. Fixed: large images resized.
+
 [!] Currencies: Exchange rates were not loaded in the Administration panel on the list of currencies. Fixed.
 
 [!] Design: Checkout: The last digits of the credit card number on the checkout page weren't visible on mobile devices. Fixed.
