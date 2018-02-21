@@ -134,7 +134,7 @@ Service Packs
 4.7.2.SP1
 ---------
  	
-[!] Add-ons: Bestsellers & On-Sale Products: Sortings: An error occurred when sorting by discount was selected as the sotring by default, and the administator attempted to select a specific storefront on the Dashboard in the Administration panel. Fixed. 
+[!] Add-ons: Bestsellers & On-Sale Products: Sortings: An error occurred when sorting by discount was selected as the default sorting, and the administator attempted to select a specific storefront on the Dashboard in the Administration panel. Fixed. 
 
 [!] Add-ons: Google sitemap: An attempt to generate the sitemap could log the administrator out of the Administration panel. Fixed.
 
