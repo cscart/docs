@@ -737,6 +737,8 @@ In addition to MySQL, CS-Cart 5 will support PostgreSQL. That's why query struct
 
 19. **Don't** use raw SQL in migrations to change table structure; use only ``phinx`` commands.
 
+20. **Don't** use ``JOIN`` with ``DELETE`` statement.
+
 =============
 General Rules
 =============
