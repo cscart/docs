@@ -14,11 +14,13 @@ There are two core requirements for your host to run CS-Cart:
 
   * PHP 5.6 for CS-Cart/Multi-Vendor 4.3.1 - 4.3.6. 
 
-  * PHP 7.0 for CS-Cart/Multi-Vendor 4.3.6 - 4.4.3. Earlier versions don't support PHP 7.
+  * PHP 7.0 for CS-Cart/Multi-Vendor 4.3.6 - 4.5.1. Earlier versions don't support PHP 7.
+
+  * PHP 7.1 for CS-Cart/Multi-Vendor 4.5.2 and newer versions. In earlier versions errors occurred on PHP 7.1.
 
     .. note::
 
-        PHP 7.1 is supported starting with CS-Cart/Multi-Vendor 4.4.3. 
+        PHP 7.2 is supported starting with CS-Cart/Multi-Vendor 4.7.2. 
 
 * `MySQL <http://www.mysql.com/>`_ version 4.1 or higher (**MySQLi** or **pdo_mysql** should be supported). CS-Cart also supports MariaDB 5.5 or higher, and PerconaServer 5.5 or higher.
 
@@ -74,7 +76,7 @@ Server Configuration Requirements
 
     .. important::
 
-        We strongly recommend using at least **ImageMagick 6.9.3-10** or higher, as it includes a critical vulnerability fix. **ImageMagick 7 is not supported yet**.
+        We strongly recommend using at least **ImageMagick 6.9.3-10** or higher, as it includes a critical vulnerability fix. **ImageMagick 7** is only supported starting with CS-Cart/Multi-Vendor 4.7.2.
 
 * **exif** PHP extension should be installed. Starting with version 4.6.3, that extension will be used to make sure that the thumbnails generated from images shot in portrait mode will be rotated correctly.
 
