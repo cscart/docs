@@ -11,7 +11,7 @@ This section contains the information that is useful for CS-Cart developers.
 
     getting_started/index
     core/index
-    Core API <http://api.docs.cs-cart.com/>
+    Hook Database <https://helpdesk.cs-cart.com/api>
     addons/index
     tools/index
     api/index
