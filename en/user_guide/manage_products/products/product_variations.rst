@@ -31,43 +31,31 @@ A product can have either option combinations, or variations. If you plan to cre
 Add Product Variations
 ======================
 
+.. note::
+
+    This is the behavior of CS-Cart & Multi-Vendor 4.7.2 and newer versions. If you'd like to know how to create variations in version 4.7.1, please refer to `this article <https://docs.cs-cart.com/4.6.x/user_guide/manage_products/products/product_variations.html>`_.
+
 #. In the Administration panel, go to **Products → Products** and find your configurable product. Click **Advanced search** in the search menu on the right: the advanced search pop-up window will allow you to exclude simple products from the search results, leaving only configurable products.
 
 #. Click on the name of the configurable product to open the product editing page.
 
-#. Switch to the **Options** tab and click the **Generate variations** button.
+#. Switch to the **Variations** tab and click **Add variations**.
 
    .. note::
 
-       A product must have at least one option of the *Check box*, *Select box*, or *Radio group* type. Otherwise you won't be able to create variations for this product.
+       A product must have at least one option of the *Check box*, *Select box*, or *Radio group* type with the **Inventory** checkbox ticked. Otherwise you won't be able to create variations for this product.
 
-   .. image:: img/generate_product_variations.png
+   .. image:: img/add_variations.png
        :align: center
-       :alt: Use the "Generate variations" button to create variations.
+       :alt: Use the "Add variations" button to create variations.
 
-#. The list of options and their variants will appear. Select the variants that will be used for creating variations. Use **CTRL** or **Shift** to select multiple variants at once.
+#. The list of possible and existing variations will appear. Tick the checkboxes of the variations you'd like to create.
 
-   .. note::
-
-       Currently variations can be added only via generation, and generation overwrites existing variations of a product. That's why it might be better to generate all variations of a product that you'll ever need and disable the ones that you don't have in stock yet.
-
-   .. image:: img/select_variants.png
+   .. image:: img/possible_variations.png
        :align: center
-       :alt: It's better to create all possible variations and disable the ones you don't need. Otherwise you'll have to re-generate variations when you decide to add a new one.
+       :alt: Tick the checkboxes of the variations you'd like to add.
 
-#. Click **Next**.
-
-#. The list of all variations to be generated for the product will appear. You can change the name, code, price, list price, weight, and the quantity in stock for each variant, if necessary. You can also delete the variants you don't need.
-
-#. When you're ready, click the **Generate** button. The variations will be generated, and you'll be taken to the page in the Administration panel, when the created variations are displayed in a list as separate products.
-
-   .. warning::
-
-       Clicking **Generate** will remove all variations that you created for this product earlier.
-
-   .. image:: img/generate_button.png
-       :align: center
-       :alt: The "Generate" button will delete the existing variations of the product and create the variations that you see on the list.
+#. Click **Add variations**. New variations will be created, and you'll be able to edit them as you see fit.
 
 =======================
 Edit Product Variations

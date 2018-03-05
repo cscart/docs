@@ -42,7 +42,7 @@ Product variations appear on the storefront almost like option combinations. The
         -   Customers can subscribe for a specific product variation.
     *   -   Creation process
         -   Option combinations can be created individually or generated automatically. Automatic generation always creates all possible option combinations for a product and doesn't overwrite existing combinations.
-        -   Product variations can only be generated automatically. Automatic generation allows to create all possible combinations for a product or combine only specific options. The data of existing variations of a product is lost when automatic generation of variations is used again for the product.
+        -   Until version 4.7.2, adding a new variation to a product required re-generating all variations of the product (the data of existing variations was lost in the process). Now you can always select which of the possible variations should exist in your store, and the data of already existing variations isn't lost until you delete those variations.
     *   -   Database
         -   Option combinations are stored in a separate table that is called ``cscart_product_options_inventory``.
         -   Product variations are stored in the ``cscart_products`` table. It's the same table where the products are stored.
