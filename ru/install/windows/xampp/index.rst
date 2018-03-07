@@ -7,88 +7,88 @@
 **XAMPP** полностью бесплатный и простой в установке дистрибутив Apache, содержащий MySQL, PHP и Perl. XAMPP создан с открытым исходным кодом, чтобы быть невероятно простым в установке и в использовании.
 
 
-1.  Пройдите на сайт `XAMPP <https://www.apachefriends.org/ru/index.html>`_  и скачайте последнюю версию *XAMPP для Windows*.
+#. Пройдите на сайт `XAMPP <https://www.apachefriends.org/ru/index.html>`_  и скачайте последнюю версию *XAMPP для Windows*.
 
-    .. image:: img/step1ru.png
-        :alt: XAMPP
+   .. image:: img/step1ru.png
+       :alt: Сайт XAMPP
 
-2.  Запустите скачанный файл **xampp--win32­x.x.x­x­xxxx­installer.exe**. 
+#. Запустите скачанный файл **xampp--win32­x.x.x­x­xxxx­installer.exe**. 
 
-3.  На время установки рекомендуется временно приостановить антивирус. После приостановки антивируса нажмите **Yes**. В некоторых случаях антивирус может препятствовать установке программного обеспечения. Если у вас в качестве антивируса запущен **Microsoft Security Essentials**, его можно не отключать.
+#. На время установки рекомендуется временно приостановить антивирус. После приостановки антивируса нажмите **Yes**. В некоторых случаях антивирус может препятствовать установке программного обеспечения. Если у вас в качестве антивируса запущен **Microsoft Security Essentials**, его можно не отключать.
 
-    .. image:: img/step4continue.png
-        :alt: XAMPP
+   .. image:: img/step4continue.png
+       :alt: Отключение антивируса
 
-4.  Подтвердите, что не будете устанавливать программу в *C:\\Program Files*, и нажмите **OK**. Контроль учетных записей (UAC) может ограничить некоторые функции XAMPP при установке в C:\\Program Files, поэтому рекомендуется установка в папку по умолчанию.
+#. Подтвердите, что не будете устанавливать программу в *C:\\Program Files*, и нажмите **OK**. Контроль учетных записей (UAC) может ограничить некоторые функции XAMPP при установке в C:\\Program Files, поэтому рекомендуется установка в папку по умолчанию.
 
-    .. image:: img/step5warning.png
-        :alt: XAMPP
+   .. image:: img/step5warning.png
+       :alt: Отказ от установки в Program Files
 
-5.  Нажмите **Next**, чтобы начать установку XAMPP.
+#. Нажмите **Next**, чтобы начать установку XAMPP.
 
-    .. image:: img/step6.png
-        :alt: XAMPP
+   .. image:: img/step6.png
+       :alt: Начало установки XAMPP
 
-6.  Убедитесь, что выбраны все компоненты и нажмите **Next**. 
+#. Убедитесь, что выбраны все компоненты, и нажмите **Next**. 
 
-    .. image:: img/step7.png
-        :alt: XAMPP
+   .. image:: img/step7.png
+       :alt: Выбор компонентов для установки XAMPP
 
-7.  Выберите папку для установки XAMPP и нажмите **Next**. Не рекомендуется менять папку по умолчанию и устанавливать XAMPP в C:\\Program Files. 
+#. Выберите папку для установки XAMPP и нажмите **Next**. Не рекомендуется менять папку по умолчанию и устанавливать XAMPP в C:\\Program Files. 
 
-    .. image:: img/step8.png
-        :alt: XAMPP
+   .. image:: img/step8.png
+       :alt: Установка XAMPP в папку по умолчанию
 
-8.  Уберите флажок с **Learn more about Bitnami for XAMPP** и нажмите **Next**. 
+#. Уберите флажок с **Learn more about Bitnami for XAMPP** и нажмите **Next**. 
 
-    .. image:: img/step9.png
-        :alt: XAMPP
+   .. image:: img/step9.png
+       :alt: Пропуск флажка Learn more about Bitnami for XAMPP
 
-9. Чтобы начать установку, нажмите **Next**.
+#. Чтобы начать установку, нажмите **Next**.
 
-    .. image:: img/step10.png
-        :alt: XAMPP
+   .. image:: img/step10.png
+       :alt: Начало установки XAMPP
 
-10. Пожалуйста, подождите, установка XAMPP займет всего несколько минут.
+#. Пожалуйста, подождите, установка XAMPP займет всего несколько минут.
 
-    .. image:: img/step11.png
-        :alt: XAMPP
+   .. image:: img/step11.png
+       :alt: Установка XAMPP
 
-11. Убедитесь, что рядом с **Do you want to start the Control Panel now?** стоит флажок и 
+#. Убедитесь, что рядом с **Do you want to start the Control Panel now?** стоит флажок и 
 нажмите **Finish**. 
 
-    .. image:: img/step12.png
-        :alt: XAMPP
+   .. image:: img/step12.png
+       :alt: Запуск XAMPP
 
-12. После запуска XAMPP Control Panel нажмите **Config** для вызова настроек панели XAMPP.
+#. После запуска XAMPP Control Panel нажмите **Config** для вызова настроек панели XAMPP.
 
-    .. image:: img/step13.png
-        :alt: XAMPP
+   .. image:: img/step13.png
+       :alt: Настройки XAMPP
 
-13. В секции **Autostart of modules** поставьте флажки рядом с Apache и MySQL и нажмите 
+#. В секции **Autostart of modules** поставьте флажки рядом с Apache и MySQL и нажмите 
 **Save**.
 
-    .. image:: img/step14.png
-        :alt: XAMPP
+   .. image:: img/step14.png
+       :alt: Автозапуск Apache и MySQL в XAMPP
 
-14. Нажмите **Quit**, чтобы применить установленные параметры.
+#. Нажмите **Quit**, чтобы применить установленные параметры.
 
-    .. image:: img/step15.png
-        :alt: XAMPP
+   .. image:: img/step15.png
+       :alt: Применение параметров Apache и MySQL
 
-15. Для удобства создайте ярлык программы на рабочем столе, а затем запустите её. 
+#. Для удобства создайте ярлык программы на рабочем столе, а затем запустите её. 
 
-    .. image:: img/step16.png
-        :alt: XAMPP
+   .. image:: img/step16.png
+       :alt: Создание ярлыка для XAMPP
 
-16. Убедитесь, что Apache и MySQL работают, об этом свидетельствует зелёная подсветка данных модулей.
+#. Убедитесь, что Apache и MySQL работают, об этом свидетельствует зелёная подсветка данных модулей.
 
-    .. image:: img/step17.png
-        :alt: XAMPP
+   .. image:: img/step17.png
+       :alt: Проверка работоспособности Apache и MySQL
 
-17. В адресной строке браузера введите **localhost** и нажмите **Enter**. Если вы видите приветственное сообщение 
+#. В адресной строке браузера введите **localhost** и нажмите **Enter**. Если вы видите приветственное сообщение 
 *Welcome to XAMPP for Windows!*, значит вы успешно установили среду 
 PHP--разработки XAMPP. 
 
-    .. image:: img/step18.png
-        :alt: XAMPP
+   .. image:: img/step18.png
+       :alt: Проверка работоспособности XAMPP
