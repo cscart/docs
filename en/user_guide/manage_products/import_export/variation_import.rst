@@ -18,7 +18,7 @@ This article only covers how to arrange configurable products and variations in 
 
     If the rules specified below aren't followed when you create variations during import, the problematic variations will be skipped, and you'll see an error message after the import is complete.
 
-#. The :ref:`Product type <import-product-type>` column isn't required, but is convenient, because it hels to see the type of the product:
+#. The :ref:`Product type <import-product-type>` column isn't required, but is convenient, because it helps to see the type of the product:
 
    * ``P``—a simple product.
 
