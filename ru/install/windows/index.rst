@@ -15,5 +15,5 @@
     :maxdepth: 2
     :glob:
 
-    install/index
     xampp/index
+    install/index
