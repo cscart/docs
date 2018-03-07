@@ -52,4 +52,4 @@ This article only covers how to arrange configurable products and variations in 
 
 .. hint::
 
-    Once variations are created, you can update their properties just like you do that for ordinary products. For example, to update the price or quantity of an existing variation, you don't need to specify *Variation options* or add configurable products before groups of variations in the imported file.
+    Once variations are created, you can update their properties (such as price or quantity) just like you do that for simple products. Make sure that the imported file doesn't have the *Variation options* and *Product type* columns, and then the order of products in the file won't matter.
