@@ -92,6 +92,7 @@ This section includes the information on theme development for CS-Cart.
     :hidden:
 
     author_guide
+    comment_policy
     map
 
 ===============
