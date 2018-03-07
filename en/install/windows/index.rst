@@ -7,3 +7,4 @@ Installing CS-Cart to Local Web-server
     :glob:
 
     xampp/index
+    install/index
