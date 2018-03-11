@@ -1,40 +1,40 @@
-***********************************
-How To: Install CS-Cart Using XAMPP
-***********************************
+*******************************
+Как установить CS-Cart на XAMPP
+*******************************
 
-First of all you need to install XAMPP - PHP development environment (:doc:`How To: Install XAMPP Distribution — XAMPP </install/windows/xampp/index>`).
+Сначала установите XAMPP - среду для PHP-разработки (установка XAMPP на Windows описана :doc:`в этой статье </install/windows/xampp/index>`).
 
-#. Download the latest version of CS-Cart from the official website `www.cs-cart.com <https://www.cs-cart.com/download-cs-cart.html>`_.
+#. Скачайте последнюю версию CS-Cart с официального сайта `www.cs-cart.ru <https://www.cs-cart.ru/download.html>`_.
 
-   .. image:: img/cscart_en.png
-       :alt: Downloading CS-Cart from the official website
+   .. fancybox:: img/cscart_ru.png
+       :alt: Скачайте CS-Cart с официального сайта
 
-#. In XAMPP installation open the *htdocs* folder (by default *C:\\xampp\\htdocs*) and create a *cscart* folder.
+#. Перейдите в папку *htdocs* с установленным XAMPP (в нашем случае это *C:\\xampp\\htdocs*) и создайте там папку *cscart*.
 
-   .. image:: img/cscart_folder_ru.png
-       :alt: Creating a folder for CS-Cart
+   .. fancybox:: img/cscart_folder_ru.png
+       :alt: Создайте папку для CS-Cart
 
-#. Extract the CS-Cart archive into a folder. To do the extraction right click on the archive, open the archiver menu, and then select **extract to "cscart_v4.x.x\"**
+#. Распакуйте архив c CS-Cart. Если у вас установлен архиватор 7­Zip, то нажмите по файлу правой кнопкой мыши и выберите *7­Zip →  Распаковать в "cscart_rus_v4.x.x"*. В других архиваторах выполните аналогичные действия.
 
-   .. image:: img/extraction_en.png
-       :alt: Extracting the CS-Cart archive
+   .. fancybox:: img/extraction.png
+       :alt: Распакуйте архив с CS-Cart
 
-#. Copy files from the archive to the *cscart* folder (by default *C:\\xampp\\htdocs\\cscart*)
+#. Перенесите файлы из архива в папку *cscart*, которую мы создали ранее (в нашем случае, это папка *C:\\xampp\\htdocs\\cscart*).
 
-   .. image:: img/copy_data_ru_2.png
-       :alt: Copying files
+   .. fancybox:: img/copy_data_ru_2.png
+       :alt: Перенос файлов CS-Cart в папку в XAMPP
 
-#. Launch the XAMPP Control Panel.
+#. Откройте XAMPP Control Panel.
 
-   .. image:: img/xampp_control_panel.png
+   .. fancybox:: img/xampp_control_panel.png
        :alt: XAMPP Control Panel
 
-#. Before installing CS-Cart you need to create a database. To create a database open the browser and enter *localhost/phpmyadmin* in the address line. On the opened page click **New**. Make up a name for a new database. By default **root** is set as the user for all new databases. Also **root** doesn't have a password.
+#. Перед установкой CS-Cart нужно создать базу данных. Для этого откройте браузер и введите *localhost/phpmyadmin* в адресную строку. Нажмите **New** на открывшейся странице. Придумайте название для новой базы данных. По умолчанию пользователем для всех новых баз данных будет **root** (без пароля).
 
-   .. image:: img/create_db.png
-       :alt: Creating a database
+   .. fancybox:: img/create_db.png
+       :alt: Создайте базу данных
 
-#. Enter *localhost/cscart* in the address line of the browser and click **[install]** to launch the installation process. Follow the instructions to finish the process
+#. Введите *localhost/cscart* в адресной строке браузера и нажмите **[install]**, чтобы начать установку.
 
-   .. image:: img/cscart_install.png
-       :alt: Starting the CS-Cart installation
+   .. fancybox:: img/cscart_install.png
+       :alt: Начало установки CS-Cart
