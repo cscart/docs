@@ -7,7 +7,7 @@
 
 .. important::
 
-    Обратите внимание, что для сервера, на котором будет работать ваш "живой" магазин, `мы рекомендуем Unix-подобную операционную систему </install/system_requirements>`_ `Мы не рекомендуем использовать XAMPP </developer_guide/getting_started/configuring_environment>`_ как среду для разработки или для "живого" магазина.
+    Обратите внимание, что для сервера, на котором будет работать ваш "живой" магазин, :doc:`мы рекомендуем Unix-подобную операционную систему </install/system_requirements>`. :doc:`Мы не рекомендуем использовать XAMPP </developer_guide/getting_started/configuring_environment>` как среду для разработки или для "живого" магазина.
 
 .. toctree::
     :maxdepth: 2
