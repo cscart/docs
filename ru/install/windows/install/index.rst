@@ -2,7 +2,7 @@
 Как установить CS-Cart на XAMPP
 *******************************
 
-Сначала установите XAMPP - среду для PHP-разработки (установка XAMPP на Windows описана :doc:`в этой статье </install/windows/xampp/index>`).
+Сначала установите XAMPP — среду для PHP-разработки (установка XAMPP на Windows описана :doc:`в этой статье </install/windows/xampp/index>`). После этого воспользуйтесь инструкцией ниже:
 
 #. Скачайте последнюю версию CS-Cart с официального сайта `www.cs-cart.ru <https://www.cs-cart.ru/download.html>`_.
 
