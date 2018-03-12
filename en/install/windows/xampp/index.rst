@@ -1,6 +1,6 @@
-**********************************
-How To: Install XAMPP Distribution
-**********************************
+********************************
+How To: Install XAMPP on Windows
+********************************
 
 **XAMPP** is the most popular PHP development environment.
 
