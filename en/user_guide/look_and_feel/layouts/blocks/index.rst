@@ -19,6 +19,7 @@ In this section
 
     actions_on_blocks
     variations
+    featured_vendors
     onsale
     arrange_categories
     bestsellers
