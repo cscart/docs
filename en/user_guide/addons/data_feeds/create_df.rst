@@ -16,6 +16,12 @@ How To: Create Data Feed
    * **Data feed name** — name of the data feed.
    * **File name** — name of the exported file.
    * **Enclosure** — delimiter to separate fields in the uploaded data table.
+   * **Product type** — the types of products to be exported in the data feed.
+
+     .. note::
+
+         The ability to properly export :doc:`product variations </user_guide/manage_products/products/product_variations>` to Google Merchant center in a data feed first appeared in version 4.7.2.
+
    * **Language** — language of the data in the feed.
    * **Category delimiter** — delimiter to separate child and parent categories.
    * **Feature variants delimiter** — delimiter for product feature variants.

@@ -60,11 +60,11 @@ For example, if your store has an option called **Color** and you select *Google
 
 2.3. `Google’s GTIN requirements are expanding. <https://support.google.com/merchants/answer/6352134>`_ If you don’t enter the value for the GTIN feature in step 2.1, CS-Cart/Multi-Vendor 4.5.1 and newer versions will try to use the **CODE** field of the product as GTIN.
 
-Also, :doc:`option combinations </user_guide/manage_products/options/option_combinations>` can be exported as separate entries in the feed file, starting with CS-Cart/Multi-Vendor 4.5.1.
+:doc:`Option combinations </user_guide/manage_products/options/option_combinations>` can be exported as separate entries in the feed file, starting with CS-Cart/Multi-Vendor 4.5.1. The ability to export :doc:`product variations </user_guide/manage_products/products/product_variations>` the same way was added in version 4.7.2.
 
 .. important::
 
-    For an option combination to be exported as a separate entry, each option that comprises the combination must have an **Equivalent in Google** (see step 2.2), and those equivalents must be included in the data feed file that you create during step 3.
+    For option combinations and product variations to be exported properly, each option that comprises the combination/variation must have an **Equivalent in Google** (see step 2.2), and those equivalents must be included in the data feed file that you create during step 3.
 
 When an option combination is exported as a separate entry:
 
@@ -82,11 +82,11 @@ Step 3. Create a Data Feed
 
 3.1. Go to **Add-ons → Data feeds**.
 
-3.2. :doc:`Create a new data feed </user_guide/addons/data_feeds/create_df>` or edit the existing *Google base* feed according to your needs and `Google specifications <https://support.google.com/merchants/answer/7052112>`_. Please pay attention to the notice on the right—it explains some of the requirements.
+3.2. :doc:`Create a new data feed </user_guide/addons/data_feeds/create_df>` or edit the existing *Google base* feed according to your needs and `Google specifications <https://support.google.com/merchants/answer/7052112>`_. Please pay attention to the notice on the right—it explains some of the requirements. Here are a couple of other things you should consider:
 
-.. note::
+* When you create a data feed for Google, make sure to choose *google_export* as a **Layout**. This will allow you to export product options to Google Merchant Center as described in step 2.2, but only if you add those Google options on the **Fields mapping** tab.
 
-    When you create a data feed for Google, make sure to choose *google_export* as a **Layout**. This will allow you to export product options to Google Merchant Center as described in step 2.2, but only if you add those Google options on the **Fields mapping** tab.
+* Select both product types (*Simple products* and *Variations*) on the data feed editing page. To select multiple types, hold **Сtrl**.
 
 3.3. To generate a feed file, click the **gear** button and choose **Download**.
 
