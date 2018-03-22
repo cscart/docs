@@ -12,6 +12,12 @@ CS-Cart branch 4.7.x
     4.7.2 <472>
     4.7.1 <471>
 
+.. toctree::
+    :maxdepth: 2
+    :hidden:
+
+    473
+
 ====================
 CS-Cart branch 4.6.x
 ====================
