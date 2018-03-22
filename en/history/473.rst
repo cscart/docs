@@ -1,0 +1,119 @@
+***********************
+CS-Cart 4.7.3 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Advanced Products Import [Beta]: The current version of the add-on is now included in the distribution, but isn't installed by default.
+
+[+] Add-ons: Responsive Admin Panel [Beta]: The current version of the add-on is now included in the distribution, but isn't installed by default.
+
+[+] Multi-Vendor: Emails: Vendors: The ability to choose whether to send emails from the email address of a vendor or the marketplace was added.
+
+[+] Multi-Vendor: Vendors: The information about the vendor was added to the sidebar of the vendor editing page.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: Data feeds: The interface for selecting exported categories and products was changed to make it obvious that both conditions (category and product) needed to be met for a product to be exported to the feed.
+
+[*] Add-ons: Mobile Admin App: The add-on is no longer available on new installations.
+
+[*] Core: htaccess: "Options -MultiViews" is now commented out in the .htaccess file.
+
+[*] Design: Layouts: The "Vendor account" layout page was renamed to "Vendor application form".
+
+[*] Design: Orders: Search: The appearance of the search filters in the order list on the storefront was changed.
+
+========
+Bugfixes
+========
+
+[!] Add-ons: Data feeds: When the "Google export" add-on was active, changing a layout for a data feed that contained more than 1000 exported items (products or categories) resulted in an error. Fixed.
+
+[!] Add-ons: Newsletters: Confirmation of personal data processing didn't work in the Responsive theme. Fixed.
+
+[!] Add-ons: Newsletters: In some cases it was impossible to install the add-on due to an error in SQL query. Fixed.
+
+[!] Add-ons: Product Variations [Beta]: "Product type" wasn't listed as a possible field on the product import page. Fixed.
+
+[!] Add-ons: Product Variations [Beta]: The "Add to cart" buttons had duplicate IDs. Fixed.
+
+[!] Add-ons: RMA: Users with the "Guest" type could see all the returns requested by guests. Fixed.
+
+[!] Add-ons: Reward Points: PHP Warning could occur when reward points were added for a customer's account. Fixed.
+
+[!] Add-ons: SEO: Products with variations or option combinations could have a wrong availability status in the SEO snippet when inventory tracking with options was enabled. Fixed.
+
+[!] Add-ons: SEO: The price value in a SEO snippet did not include discounts added by catalog promotions. Fixed.
+
+[!] Add-ons: Searchanise: The request to remove the language from the database wasn't sent when a language was disabled or deleted. Fixed.
+
+[!] Add-ons: Suppliers: Email notifications: The "order_status" variable didn't work for the second storefront. Fixed.
+
+[!] Add-ons: Suppliers: When a product linked to a supplier was deleted, the link to the product still remained on the supplier's editing page in the administration panel. Fixed.
+
+[!] Add-ons: eBay synchronization: If a product had option combinations, and option variants that comprised the combination didn't have their images while the combination had an image, the product was exported to eBay with a placeholder image, which could result in an export error. Fixed.
+
+[!] Add-ons: eBay synchronization: When orders were imported from eBay to CS-Cart, the value in the second input field for "Street" wasn't imported. Fixed.
+
+[!] Addons: Blog: If the "RSS feed" add-on was not installed, and the "Blog" add-on was installed, the "RSS feed" block still appeared on the list of available blocks as "_block_rss_feed". Fixed.
+
+[!] Checkout: If the shipping method step was disabled at checkout, and the "Disable anonymous checkout" setting was on, the shipping method step was still displayed at checkout after registration of a new customer at checkout. Fixed.
+
+[!] Companies: Edit content on-site: If CS-Cart had only one storefront, and the language variables of that storefront had been changed while CS-Cart had multiple storefronts, it was impossible to change the values of those language variables. Fixed.
+
+[!] Core: AJAX request to a missing page caused a fatal error. Fixed.
+
+[!] Core: PHP integer conversion on 32-bit systems caused error when it exceeded PHP_INT_MAX integer size. Fixed.
+
+[!] Design: Bright Theme: Layouts: Blog: The "View All" link could sometimes lead to a 404 page. Fixed.
+
+[!] Design: Orders: When advanced search was performed by products, the product list pop-up did not have the "Save" or "Close" button. Fixed.
+
+[!] Design: Products: The <tr> tag was not closed in design/themes/responsive/templates/views/products/components/product_files.tpl. Fixed.
+
+[!] Design: RTL: Arrows displayed in a vertical list had a wrong direction. Fixed.
+
+[!] Design: Styles: Categories: The indentation of the category tree was incorrect in the administration panel. Fixed.
+
+[!] Export/Import: If the imported products had product codes with Сyrillic symbols, errors could occur during the import. Fixed.
+
+[!] Export/Import: Products: Shipping parameters: When a product was imported with the "Items in a box" field on PHP 7.1+, incorrect data was stored in the database. Fixed.
+
+[!] Export/Import: The quantity discounts and order items were exported for all storefronts and vendors, not just the selected one. Fixed.
+
+[!] Export/Import: Translations for brand descriptions were not exported. Fixed.
+
+[!] Export/Import: When data was imported for several languages, the products weren't linked to a default category, and only one translation was imported. Fixed.
+
+[!] Multi-Vendor: Core: Sessions: Using the "Act on behalf of" functionality on a vendor administrator on PHP 7.2 resulted in errors. Fixed.
+
+[!] Multi-Vendor: Design: In some cases the "More" link in the vendor description on the vendor list page was displayed even if the description was shorter than 1024 characters. Fixed.
+
+[!] Multi-Vendor: Export/Import: Vendor's administrators could get access to the import and export of vendors. Fixed.
+
+[!] Multi-Vendor: Installation: The installation process was interrupted when the install folder had wrong permissions, and the installer couldn't delete files from that folder. Fixed.
+
+[!] Orders: Credit card info wasn't removed from orders with the “Incomplete” status. Fixed.
+
+[!] Payment methods: When adding a real-time payment method, administrator could create it without specifying the required settings on the "Configure" tab. Fixed.
+
+[!] Product features: When there were too many feature variants, the full list of variants wasn't loaded in the dropdown menu in the Administration panel. Fixed.
+
+[!] Products: Categories: When a store had many categories, expanding one of the categories resulted in scrolling back to the beginning of the category list. Fixed.
+
+[!] Profile fields: The "Variants" tab was not available on the profile field editing page in the billing section. Fixed.
+
+[!] Shipments: When old email template mode was used, the product list wasn't shown in the email about a shipment. Fixed.
+
+[!] Sitemap: The "Sitemap" displayed the sections from all storefronts. Fixed.
+
+[!] Templates: User groups: The "disabled" attribute used &quot; instead of ". Fixed.
+
+[!] {#7050} Design: Documents: The product counter ( {p.counter} ) variable did not work. Fixed.
+
+[!] {#7103} Design: WYSIWYG: Redactor 2 replaced the <i> tag with <em> automatically. Fixed.
