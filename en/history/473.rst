@@ -34,8 +34,6 @@ Bugfixes
 
 [!] Add-ons: Data feeds: When the "Google export" add-on was active, changing a layout for a data feed that contained more than 1000 exported items (products or categories) resulted in an error. Fixed.
 
-[!] Add-ons: Newsletters: Confirmation of personal data processing didn't work in the Responsive theme. Fixed.
-
 [!] Add-ons: Newsletters: In some cases it was impossible to install the add-on due to an error in SQL query. Fixed.
 
 [!] Add-ons: Product Variations [Beta]: "Product type" wasn't listed as a possible field on the product import page. Fixed.
@@ -90,8 +88,6 @@ Bugfixes
 
 [!] Export/Import: When data was imported for several languages, the products weren't linked to a default category, and only one translation was imported. Fixed.
 
-[!] Multi-Vendor: Core: Sessions: Using the "Act on behalf of" functionality on a vendor administrator on PHP 7.2 resulted in errors. Fixed.
-
 [!] Multi-Vendor: Design: In some cases the "More" link in the vendor description on the vendor list page was displayed even if the description was shorter than 1024 characters. Fixed.
 
 [!] Multi-Vendor: Export/Import: Vendor's administrators could get access to the import and export of vendors. Fixed.
@@ -102,18 +98,20 @@ Bugfixes
 
 [!] Payment methods: When adding a real-time payment method, administrator could create it without specifying the required settings on the "Configure" tab. Fixed.
 
-[!] Product features: When there were too many feature variants, the full list of variants wasn't loaded in the dropdown menu in the Administration panel. Fixed.
-
-[!] Products: Categories: When a store had many categories, expanding one of the categories resulted in scrolling back to the beginning of the category list. Fixed.
-
 [!] Profile fields: The "Variants" tab was not available on the profile field editing page in the billing section. Fixed.
 
 [!] Shipments: When old email template mode was used, the product list wasn't shown in the email about a shipment. Fixed.
 
 [!] Sitemap: The "Sitemap" displayed the sections from all storefronts. Fixed.
 
-[!] Templates: User groups: The "disabled" attribute used &quot; instead of ". Fixed.
-
 [!] {#7050} Design: Documents: The product counter ( {p.counter} ) variable did not work. Fixed.
 
 [!] {#7103} Design: WYSIWYG: Redactor 2 replaced the <i> tag with <em> automatically. Fixed.
+
+[!] {#7105} Products: Categories: When a store had many categories, expanding one of the categories resulted in scrolling back to the beginning of the category list. Fixed.
+
+[!] {#7113} Product features: When there were too many feature variants, the full list of variants wasn't loaded in the dropdown menu in the Administration panel. Fixed.
+
+[!] {#7150} Templates: User groups: The "disabled" attribute used &quot; instead of ". Fixed.
+
+[!] {#7168} Multi-Vendor: Core: Sessions: Using the "Act on behalf of" functionality on a vendor administrator on PHP 7.2 resulted in errors. Fixed.
