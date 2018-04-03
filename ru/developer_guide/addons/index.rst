@@ -14,6 +14,7 @@
     language_variables_in_addon
     api_extending
     */index
+    responsive_admin_panel
     ../../upgrade/upgrade_addon
     ../../upgrade/upgrade_core_addon
     compatibility/index
