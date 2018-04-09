@@ -845,3 +845,7 @@ table .row-even {
         }
 
 }
+
+[class^="toctree-l"] a.current.reference.internal {
+    font-weight: 700;
+}
