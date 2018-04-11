@@ -10,10 +10,6 @@
 
 *   Несколько способов автоматического расчёта.
 
-    -   Официальный тарификатор Почты РФ
-
-        Для расчёта используется "Автоматический тарификатор внутренних отправлений" с официального сайта Почты РФ.
-
     -   Почта России (pochta.ru)
 
         Расчет выполняется с сайта: |link|
@@ -25,14 +21,6 @@
     -   russianpostcalc.ru
 
         Используется API бесплатного сервиса расчёта стоимости и срока доставки почтовых отправлений по России.
-
-    -   EMS Почта России
-
-        Калькулятор стоимости доставки используемый сервис |link2|
-
-        .. |link2| raw:: html
-
-            <!--noindex--><a href="http://www.emspost.ru/" target="_blank" rel="nofollow">EMS</a><!--/noindex-->.
 
     -   eDost.ru
 
@@ -50,17 +38,24 @@
     :maxdepth: 3
     :glob:
 
-    russian_post/index
-    russian_pochta/index
-    russianpostcalc/index
-    russian_ems/index
-    post_edost/index
+    rus_post/russian_pochta/index
+    rus_post/russianpostcalc/index
+    rus_post/post_edost/index
 
 .. toctree::
     :maxdepth: 3
     :glob:
 
     rus_post_blank/index
+
+.. toctree::
+    :maxdepth: 3
+    :titlesonly:
+    :glob:
+    :hidden:
+
+    rus_post/russian_post/index
+    rus_post/russian_ems/index
 
 .. fancybox:: img/shippings_006.png
     :alt: Почта России
