@@ -1,6 +1,10 @@
 EMS Russian Post
 ----------------
 
+.. warning::
+
+    Эта статья устарела. Сайт **EMS Почта России** (http://www.emspost.ru) закрыт, и его поддержка прекращена. Поэтому служба доставки *EMS (Почта России)* в CS-Cart теперь тоже не поддерживается. Рекомендуем использовать вместо неё службу :doc:`Почта России (pochta.ru) </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/rus_post/russian_pochta/index>`.
+
 Автоматический расчет стоимости и сроков доставки EMS-отправлений в вашем магазине на платформе CS-Cart.
 
 .. epigraph::
