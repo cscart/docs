@@ -1,6 +1,10 @@
 Почта России (официальный тарификатор)
 --------------------------------------
 
+.. warning::
+
+    Эта статья устарела. `Автоматический тарификатор внутренних отправлений <http://www.russianpost.ru/rp/servise/ru/home/postuslug/autotarif>`_ не работает, поэтому в CS-Cart он теперь тоже не поддерживается. Рекомендуем использовать службу доставки :doc:`Почта России (pochta.ru) </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/rus_post/russian_pochta/index>`.
+
 Описание
 ========
 
