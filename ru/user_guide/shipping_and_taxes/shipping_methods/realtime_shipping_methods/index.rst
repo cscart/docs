@@ -6,7 +6,6 @@
     :maxdepth: 3
     :glob:
 
-    ems
     rus_post
     edost
     rus_sdek
@@ -21,6 +20,9 @@
     realtime_shipping_and_payment_problem
 
 .. toctree::
+    :maxdepth: 3
+    :glob:
     :hidden:
 
     boxberry
+    ems
