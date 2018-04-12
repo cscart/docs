@@ -38,9 +38,9 @@
     :maxdepth: 3
     :glob:
 
-    rus_post/russian_pochta/index
-    rus_post/russianpostcalc/index
-    rus_post/post_edost/index
+    russian_pochta/index
+    russianpostcalc/index
+    post_edost/index
 
 .. toctree::
     :maxdepth: 3
@@ -54,8 +54,8 @@
     :glob:
     :hidden:
 
-    rus_post/russian_post/index
-    rus_post/russian_ems/index
+    russian_post/index
+    russian_ems/index
 
 .. fancybox:: img/shippings_006.png
     :alt: Почта России
