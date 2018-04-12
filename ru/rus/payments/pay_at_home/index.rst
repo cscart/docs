@@ -10,7 +10,7 @@
 
 .. |link| raw:: html
 
-   <!--noindex--><a href="http://www.platidoma.biz/" target="_blank" rel="nofollow">ПлатиДома</a><!--/noindex-->
+   <!--noindex--><a href="https://www.platidoma.ru/" target="_blank" rel="nofollow">ПлатиДома</a><!--/noindex-->
 
 Преимущества сервиса "ПлатиДома":
 
