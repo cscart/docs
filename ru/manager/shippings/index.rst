@@ -18,7 +18,6 @@
     :maxdepth: 3
     :glob:
 
-    ems/index
     rus_post/index
     edost/index
     rus_sdek/index
@@ -31,4 +30,9 @@
 
 :doc:`Создание и настройка способов доставки в CS-Cart </manager/shippings/general/index>`
 
-   
+.. toctree::
+    :maxdepth: 3
+    :glob:
+    :hidden:
+
+    ems/index
