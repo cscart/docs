@@ -38,17 +38,11 @@ Step 1. Install and Configure the Add-on
 
 #. Click **Save**.
 
-
-
 ============================================
 Step 2. Check and Update the Privacy Notices
 ============================================
 
-The add-on's settings have the **GDPR** tab. It contains the list of places where checkboxes for requesting consent will be displayed. 
-
-* **Show** means that the checkbox for requesting consent will appear in the specified place.
-
-* **Required** means that customers won't be able to proceed with the action (such as registering an account, etc.) without ticking the checkbox.
+The add-on's settings have the **GDPR** tab. It contains the list of places where checkboxes for requesting consent will be displayed. For each place, you can choose whether or not you want a checkbox for requesting consent to appear.
 
 .. image:: img/gdpr-checkboxes.png
     :align: center
