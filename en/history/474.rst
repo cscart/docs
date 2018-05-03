@@ -1,0 +1,119 @@
+***********************
+CS-Cart 4.7.4 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Advanced Products Import [Beta]: New modifiers for imported values ("if" and "case") were added.
+
+[+] Add-ons: Advanced Products Import [Beta]: New settings to perform test import and to skip updating existing products were aadded. The appearance of the preset settings page was improved.
+
+[+] Add-ons: Advanced Products Import [Beta]: The ability to import products from XML files was added.
+
+[+] Add-ons: GDPR Compliance (EU): An add-on to help store owners comply with the European Union's General Data Protection Regulation was added.
+
+[+] Add-ons: Gift certificates: Google reCaptcha: The ability to add image verification on the gift certificate purchase page was added.
+
+[+] Add-ons: Responsive Admin Panel [Beta]: Products: The ability to select multiple products on the product list was added for mobile devices.
+
+[+] Add-ons: Searchanise: Company and language statuses are now displayed when store information is viewed remotely.
+
+[+] Add-ons: Searchanise: The ability to connect the store to Searchanise and go to the Searchanise Dashboard is now available under Website → Searchanise.
+
+[+] Export/Import: Products: A post-import notification was added for the cases when some of the product images couldn't be imported.
+
+[+] Hooks: New TPL hooks were added to design/templates/views/block_manager/update_grid.tpl and design/backend/templates/views/static_data/update.tpl.
+
+[+] Hooks: Shippings methods: Shipping charges: A hook for modifying the list of possible shipping rate dependencies was added.
+
+[+] Installation: OPcache: If a wrong configuration of "opcache.restrict_api" prevents OPcache from working with CS-Cart, a corresponding notification will now be shown during installation.
+
+[+] REST API: Orders: Error messages were added to the API response sent when an order can't be created.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: Product Variations [Beta]: A message about the need for options to have the “Inventory” checkbox ticked was added to the the variation creation pop-up.
+
+[*] Add-ons: Product Variations [Beta]: Cloning a product now also clones its variations.
+
+[*] Core: The "image_id" column type was changed from "mediumint signed" to "unsigned int" for the "cscart_images" and "cscart_images_links" tables.
+
+========
+Bugfixes
+========
+
+[!] Add-ons: Access restrictions: If the 'REMOTE_ADDR' parameter was 'localhost', then signing in to the Administration panel with a wrong email or password resulted in an error. Fixed.
+
+[!] Add-ons: Advanced Products Import [Beta]: Opening a preset editing page when the add-on was disabled could cause a fatal error. Fixed.
+
+[!] Add-ons: Advanced Products Import [Beta]: When a value in the CSV file contained a new line character, automatic delimiter detection worked incorrectly. Fixed.
+
+[!] Add-ons: Buy together: When the "Show out of stock products" setting was turned off, the combinations with products that had options weren't displayed on the storefront. Fixed.
+
+[!] Add-ons: Gift certificates: When the "Catalog mode" add-on was enabled, a PHP notice occurred in the "Gift certificates" add-on settings. Fixed.
+
+[!] Add-ons: Google export: When secure connection for the whole site was enabled and the export was performed by CRON, a URL generated for a shared product with variations was incorrect. Fixed.
+
+[!] Add-ons: PayPal payments: A customer could place an order with incorrect total when using PayPal. Fixed.
+
+[!] Add-ons: Product Variations [Beta]: A variation of a product did not take  the parent product's inventory tracking setting into account. Fixed.
+
+[!] Add-ons: Product Variations [Beta]: Export/Import: A configurable product couldn't be updated separately from variations if the "Variation options" column was missing in the imported file. Fixed.
+
+[!] Add-ons: Product Variations [Beta]: Export/Import: Variations couldn't be updated via import without specifying "Product type" (and, by extension, "Variation options"). Fixed.
+
+[!] Add-ons: Product Variations [Beta]: The timestamp of a variation's latest update could be older than the creation timestamp of that variation. Fixed.
+
+[!] Add-ons: Product Variations [Beta]: When a non-supported value was imported in the "Product type" field, a PHP Notice occurred. Fixed.
+
+[!] Add-ons: RMA: When a registered user returned the product, an error page was shown. Fixed.
+
+[!] Add-ons: RMA: When printing a return slip was attempted in the Administration panel, an empty page was shown. Fixed.
+
+[!] Add-ons: Responsive Admin Panel [Beta]: Abandoned / Live carts: Advanced Search: The "Period" field was wider than the advanced search pop-up on desktop. Fixed.
+
+[!] Add-ons: Responsive Admin Panel [Beta]: Advanced search: Search by filters was not shown correctly. Fixed.
+
+[!] Add-ons: Responsive Admin Panel [Beta]: Banners: There was no pagination on the list of banners. Fixed.
+
+[!] Add-ons: Responsive Admin Panel [Beta]: Data feeds: When a template was changed for an existing price list, a fatal error occurred. Fixed.
+
+[!] Add-ons: Responsive Admin Panel [Beta]: Pop-up windows of the "Advanced Products Import [Beta]" add-on weren't displayed properly. Fixed.
+
+[!] Add-ons: Responsive Admin Panel [Beta]: The tutorial video from the "Need help?" section opened over the top menu. Fixed.
+
+[!] Core: Auth: Password recovery link could become invalid when the password recovery email was opened in Outlook web interface. Fixed.
+
+[!] Design: Add-ons: Gift certificates: Currencies: The number of digits after the decimal point was not taken into account on the gift certificate purchase page. Fixed.
+
+[!] Images: Uploading images by URL did not work if domain name contained non-Latin symbols. Fixed.
+
+[!] Installer: Notices and warnings were not logged in default PHP error logs when installing the software. Fixed.
+
+[!] Multi-Vendor: Add-ons: PayPal Adaptive Payments: When a customer used a link to return to the store after payment, two emails were sent instead of one to the customer, administrator, and vendor. Fixed.
+
+[!] Multi-Vendor: Add-ons: Responsive Admin Panel [Beta]: The vendor's account balance wasn't displayed on the vendor's profile page. Fixed.
+
+[!] Multi-Vendor: Add-ons: Stripe Connect: Vendor plan payouts were marked as completed upon order placement even when they were not paid fully. Fixed.
+
+[!] Multi-Vendor: Add-ons: Suppliers: At checkout, when a customer ordered products with different suppliers from a single vendor, the name of one supplier could appear next to the vendor name in some cases. Fixed.
+
+[!] Multi-Vendor: Core: Notifications: It was impossible to close a notification in the Administration panel as a vendor. Fixed.
+
+[!] Orders: A PHP notice occurred when an order with a non-existent product was deleted. Fixed.
+
+[!] Products: Option combinations: The available quantity for a specific option combination was incorrect on the product details page. Fixed.
+
+[!] REST API: Auth: Customers with the same email couldn't log in on different storefronts when the sharing of users between storefronts was disabled. Fixed.
+
+[!] Sales reports: If the first 20 orders in the report didn't have tax, the report didn't show data about taxes at all. Fixed.
+
+[!] Shipping methods: Australia Post: A PHP warning could occur when the box dimensions weren't specified. Fixed.
+
+[!] User groups: A PHP Notice occurred when a user joined a user group. Fixed.
+
+[!] Users: Stores: Administrator accounts associated with a storefront weren't deleted when the storefront was deleted; instead they got root administrator privileges. Fixed.
