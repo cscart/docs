@@ -9,6 +9,7 @@
     adapting_463_to_471
     adapting_471_to_472
     adapting_472_to_473
+    adapting_473_to_474
 
 .. toctree::
     :maxdepth: 2
