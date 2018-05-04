@@ -60,11 +60,7 @@ Bugfixes
 
 [!] Add-ons: PayPal payments: A customer could place an order with incorrect total when using PayPal. Fixed.
 
-[!] Add-ons: Product Variations [Beta]: A variation of a product did not take  the parent product's inventory tracking setting into account. Fixed.
-
 [!] Add-ons: Product Variations [Beta]: Export/Import: A configurable product couldn't be updated separately from variations if the "Variation options" column was missing in the imported file. Fixed.
-
-[!] Add-ons: Product Variations [Beta]: Export/Import: Variations couldn't be updated via import without specifying "Product type" (and, by extension, "Variation options"). Fixed.
 
 [!] Add-ons: Product Variations [Beta]: The timestamp of a variation's latest update could be older than the creation timestamp of that variation. Fixed.
 
@@ -78,8 +74,6 @@ Bugfixes
 
 [!] Add-ons: Responsive Admin Panel [Beta]: Advanced search: Search by filters was not shown correctly. Fixed.
 
-[!] Add-ons: Responsive Admin Panel [Beta]: Banners: There was no pagination on the list of banners. Fixed.
-
 [!] Add-ons: Responsive Admin Panel [Beta]: Data feeds: When a template was changed for an existing price list, a fatal error occurred. Fixed.
 
 [!] Add-ons: Responsive Admin Panel [Beta]: Pop-up windows of the "Advanced Products Import [Beta]" add-on weren't displayed properly. Fixed.
@@ -90,9 +84,9 @@ Bugfixes
 
 [!] Design: Add-ons: Gift certificates: Currencies: The number of digits after the decimal point was not taken into account on the gift certificate purchase page. Fixed.
 
-[!] Images: Uploading images by URL did not work if domain name contained non-Latin symbols. Fixed.
-
 [!] Installer: Notices and warnings were not logged in default PHP error logs when installing the software. Fixed.
+
+[!] Language variables: Translations were missing for the currency_code_kzt (Kazakhstani tenge) language variable. Fixed.
 
 [!] Multi-Vendor: Add-ons: PayPal Adaptive Payments: When a customer used a link to return to the store after payment, two emails were sent instead of one to the customer, administrator, and vendor. Fixed.
 
@@ -108,6 +102,8 @@ Bugfixes
 
 [!] Products: Option combinations: The available quantity for a specific option combination was incorrect on the product details page. Fixed.
 
+[!] Promotions: The names of deleted promotions were missing in the order information in the Administration panel. Fixed.
+
 [!] REST API: Auth: Customers with the same email couldn't log in on different storefronts when the sharing of users between storefronts was disabled. Fixed.
 
 [!] Sales reports: If the first 20 orders in the report didn't have tax, the report didn't show data about taxes at all. Fixed.
@@ -117,3 +113,11 @@ Bugfixes
 [!] User groups: A PHP Notice occurred when a user joined a user group. Fixed.
 
 [!] Users: Stores: Administrator accounts associated with a storefront weren't deleted when the storefront was deleted; instead they got root administrator privileges. Fixed.
+
+[!] {#7019} Add-ons: Product Variations [Beta]: A variation of a product did not take  the parent product's inventory tracking setting into account. Fixed.
+
+[!] {#7164} Add-ons: Product Variations [Beta]: Export/Import: Variations couldn't be updated via import without specifying "Product type" (and, by extension, "Variation options"). Fixed.
+
+[!] {#7175} Images: Uploading images by URL did not work if domain name contained non-Latin symbols. Fixed.
+
+[!] {#7191} Add-ons: Responsive Admin Panel [Beta]: Banners: There was no pagination on the list of banners. Fixed.
