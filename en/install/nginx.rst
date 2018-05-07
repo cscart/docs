@@ -99,19 +99,22 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
     #######################################################################
 
     server {
-       listen  80;
+        listen  80;
         #   The store’s domain
         server_name example.com;
+
+        ############################################################################
 
         #   Default encoding
         charset utf-8;
 
-        #   Location of the log files
-        access_log  /var/log/nginx/access.log combined;
-        error_log   /var/log/nginx/error.log;
+        ############################################################################
 
         #   The main directory of your store
         root /var/www/html/example.com;
+        index  index.php index.html index.htm;
+
+        ############################################################################
 
         #   Compression
         gzip on;
@@ -130,6 +133,8 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
         application/json
         application/xml+rss;
 
+        ############################################################################
+
         #   Other settings
         client_max_body_size            100m;
         client_body_buffer_size         128k;
@@ -139,163 +144,172 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
         client_header_buffer_size       1k;
         large_client_header_buffers     4 16k;
 
+        ############################################################################
+
+        access_log  /var/log/nginx/example.com_access.log combined;
+        error_log   /var/log/nginx/example.com_error.log;
+
+        ############################################################################
 
         error_page 598 = @backend;
 
-    ############################################################################
-    # Processing PHP scripts
-    ############################################################################
+        ############################################################################
+
         location @backend {
-            try_files $uri $uri/ /$1/$3 /$2/$3 $3 /index.php =404;
-            proxy_read_timeout 61;
-            fastcgi_read_timeout 61;
+            try_files $uri $uri/ /$2$3 /$3 /index.php  =404;
             #   The path to the PHP-FPM daemon socket
             fastcgi_pass unix:/var/run/php5-fpm.sock;
+            #
             fastcgi_index index.php;
-            fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-            include fastcgi_params;
+            fastcgi_read_timeout 360;
+            # Including the contents of fastcgi_params.conf
+            ################################################################################
+            fastcgi_param  QUERY_STRING       $query_string;
+            fastcgi_param  REQUEST_METHOD     $request_method;
+            fastcgi_param  CONTENT_TYPE       $content_type;
+            fastcgi_param  CONTENT_LENGTH     $content_length;
+            fastcgi_param  SCRIPT_NAME        $fastcgi_script_name;
+            fastcgi_param  REQUEST_URI        $request_uri;
+            fastcgi_param  DOCUMENT_URI       $document_uri;
+            fastcgi_param  DOCUMENT_ROOT      $document_root;
+            fastcgi_param  SERVER_PROTOCOL    $server_protocol;
+            fastcgi_param  HTTPS              $https if_not_empty;
+            fastcgi_param  GATEWAY_INTERFACE  CGI/1.1;
+            fastcgi_param  SERVER_SOFTWARE    nginx/$nginx_version;
+            fastcgi_param  REMOTE_ADDR        $remote_addr;
+            fastcgi_param  REMOTE_PORT        $remote_port;
+            fastcgi_param  SERVER_ADDR        $server_addr;
+            fastcgi_param  SERVER_PORT        $server_port;
+            fastcgi_param  SERVER_NAME        $server_name;
+            fastcgi_param  SCRIPT_FILENAME    $document_root$fastcgi_script_name;
+            fastcgi_param  REDIRECT_STATUS    200;
+            ################################################################################
         }
 
-    #   Rewrite rules for the SEO module 
-        location @fallback {
-            rewrite  ^/(\w+/)?(\w+/)?(.*)$ /$1/index.php?$args last;
-            rewrite  ^/(\w+/)?(\w+/)?(.*)$ /index.php?$args last;
-        }
+        ############################################################################
 
-    #   The rule for searching static files of the storefront. For example, when you have 2 storefronts in different directories: example.com and example.com/shop/
-        location @statics {
-            rewrite ^/(\w+/)?(\w+/)?(.*)$ /$1/$3 break;
-            access_log off;
-            try_files $uri $uri/ /$1/$3 /$2/$3 $3 @fallback;
-            rewrite_log off;
-            expires max;
-            add_header Cache-Control public;
-            add_header Access-Control-Allow-Origin *;
-        }
-
-    #   The entry point of your store
-        location / {
-        #   The main script
+        location  / {
             index  index.php index.html index.htm;
-
-        #   For API
-            rewrite ^/(\w+/)?(\w+/)?api/(.*)$ /$1/api.php?_d=$3&ajax_custom=1&$args last;
-
-        #   The script search logic uses the following order: file, directory, script
-            try_files $uri $uri/ /$1/$3 /$2/$3 $3 @fallback;
-
-        ############################################################################
-        # Denying the ability to run PHP in the directories for security reasons.
-        ############################################################################
-
-        #   Allowing to run the payment methods scripts.
-                location ~ ^/(\w+/)?(\w+/)?app/payments/ {
-                    return 404;
-                    location ~ \.php$ {
-                        return 598;
-                    }
-                }
-
-        #   Allowing to run the payment methods scripts.
-            location ~ ^/(\w+/)?(\w+/)?app/addons/paypal/payments/ {
-                return 404;
-                location ~ \.php$ {
-                    return 598;
-                }
-            }
-
-        #   Allowing to run the script for 1C data exchange.
-            location ~ ^/(\w+/)?(\w+/)?app/addons/rus_exim_1c/ {
-                return 404;
-                location ~ \.php$ {
-                    return 598;
-                }
-            }
-
-        #   Denying access to the app directory.
-            location ~ ^/(\w+/)?(\w+/)?app/ {
-                return 404;
-            }
-
-        #   Forbidding PHP in the /design directory.
-            location ~ ^/(\w+/)?(\w+/)?design/ {
-                allow all;
-                location ~* \.([tT][pP][lL]|[pP][hH][pP].?)$ {
-                    return 404;
-                }
-            }
-
-        #   Blocking outside access to the store’s database backups.
-            location ~ ^/(\w+/)?(\w+/)?var/backups/ {
-                return 404;
-            }
-
-            location ~ ^/(\w+/)?(\w+/)?var/restore/ {
-                return 404;
-            }
-
-        #   Denying access to the template backups.
-            location ~ ^/(\w+/)?(\w+/)?var/themes_repository/ {
-                allow all;
-                location ~* \.([tT][pP][lL]|[pP][hH][pP].?)$ {
-                    return 404;
-                }
-            }
-
-        #   Forbidding PHP in the /images directory.
-            location ~ ^/(\w+/)?(\w+/)?images/ {
-                allow all;
-                location ~* \.([pP][hH][pP].?)$ {
-                    return 404;
-                }
-            }
-
-        #   Denying access to init.php
-            location ~ ^/(\w+/)?(\w+/)?init.php {
-                return 404;
-            }
-
-        #   Denying access to .tpl
-            location ~* \.([tT][pP][lL].?)$ {
-                return 404;
-            }
-
-        #   Denying access to .htaccess, .htpasswd and git
-            location ~ /\.(ht|git) {
-                return 404;
-            }
-
-        #   Allowing static files only in the /var directory
-            location ~ ^/(\w+/)?(\w+/)?var/ {
-                return 404;
-                location ~* \.(jpe?g|ico|gif|png|css|js|pdf|txt|tar|wof|woff|svg|ttf|csv|zip|xml|yml)$ {
-                    allow all;
-                    expires 1M;
-                    add_header Cache-Control public;
-                    add_header Access-Control-Allow-Origin *;
-                }
-            }
-
-        #   The main rule for searching static files
-            location ~* /(\w+/)?(\w+/)?(.+\.(jpe?g|ico|gif|png|css|js|pdf|txt|tar|wof|woff|svg|ttf|csv|zip|xml|yml)) {
-                access_log off;
-            #   The rule for searching static files. If the server can’t find the file in the store folder, it will use the @statics rule.
-            #   For example, if your store is located at example.com/shop/            
-                try_files $uri $uri/ /$1/$3 /$2/$3 $3 @statics;
-                expires max;
-                add_header Access-Control-Allow-Origin *;
-                add_header Cache-Control public;
-            }
-
-            location ~* /(\w+/)?(\w+/)?(.+\.php)$ {
-                return 598 ;
-            }
-
-            location ~* \.php$ {
-                return 598 ;
-            }
-
+            try_files $uri $uri/ /index.php?$args;
         }
+
+        ############################################################################
+
+        location ~ ^/(\w+/)?(\w+/)?api/ {
+            rewrite ^/(\w+/)?(\w+/)?api/(.*)$ /api.php?_d=$3&ajax_custom=1&$args last;
+            rewrite_log off;
+        }
+
+        ############################################################################
+
+        location ~ ^/(\w+/)?(\w+/)?var/database/ {
+            return 404;
+        }
+
+        location ~ ^/(\w+/)?(\w+/)?var/backups/ {
+            return 404;
+        }
+
+        location ~ ^/(\w+/)?(\w+/)?var/restore/ {
+            return 404;
+        }
+
+        location ~ ^/(\w+/)?(\w+/)?var/themes_repository/ {
+            allow all;
+            location ~* \.(tpl|php.?)$ {
+                return 404;
+            }
+        }
+
+        location ~ ^/(\w+/)?(\w+/)?var/ {
+            return 404;
+            location ~* /(\w+/)?(\w+/)?(.+\.(js|css|png|jpe?g|gz|yml|xml))$ {
+                try_files $uri $uri/ /$2$3 /$3 /index.php?$args;
+                allow all;
+                access_log off;
+                expires 1M;
+                add_header Cache-Control public;
+                add_header Access-Control-Allow-Origin *;
+            }
+        }
+
+        ############################################################################
+
+        location ~ ^/(\w+/)?(\w+/)?app/payments/ {
+            return 404;
+            location ~ \.php$ {
+                return 598;
+            }
+        }
+
+        location ~ ^/(\w+/)?(\w+/)?app/addons/rus_exim_1c/ {
+            return 404;
+            location ~ \.php$ {
+                return 598;
+            }
+        }
+
+        location ~ ^/(\w+/)?(\w+/)?app/ {
+            return 404;
+        }
+
+        ############################################################################
+
+        location ~* /(\w+/)?(\w+/)?(.+\.(jpe?g|jpg|ico|gif|png|css|js|pdf|txt|tar|woff|svg|ttf|eot|csv|zip|xml|yml))$ {
+            access_log off;
+            try_files $uri $uri/ /$2$3 /$3 /index.php?$args;
+            expires max;
+            add_header Access-Control-Allow-Origin *;
+            add_header Cache-Control public;
+        }
+
+        ############################################################################      
+
+        location ~ ^/(\w+/)?(\w+/)?design/ {
+            allow all;
+            location ~* \.(tpl|php.?)$ {
+                return 404;
+            }
+        }
+
+        ############################################################################
+
+        location ~ ^/(\w+/)?(\w+/)?images/ {
+            allow all;
+            location ~* \.(php.?)$ {
+                return 404;
+            }
+        }
+
+        ############################################################################
+
+        location ~ ^/(\w+/)?(\w+/)?js/ {
+            allow all;
+            location ~* \.(php.?)$ {
+                return 404;
+            }
+        }
+
+        ############################################################################
+
+        location ~ ^/(\w+/)?(\w+/)?init.php {
+            return 404;
+        }
+
+        location ~* \.(tpl.?)$ {
+            return 404;
+        }
+
+        location ~ /\.(ht|git) {
+            return 404;
+        }
+
+        location ~* \.php$ {
+            return 598 ;
+        }
+
+        ################################################################################
+
     }
 
 1.7. Use this command to restart nginx:

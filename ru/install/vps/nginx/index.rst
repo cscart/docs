@@ -173,19 +173,22 @@
     #######################################################################
 
     server {
-       listen  80;
+        listen  80;
         #   Домен интернет-магазина
         server_name example.com;
+
+        ############################################################################
 
         #   Кодировка по умолчанию
         charset utf-8;
 
-        #   Расположение логов
-        access_log  /var/log/nginx/access.log combined;
-        error_log   /var/log/nginx/error.log;
+        ############################################################################
 
         #   Основной каталог интернет-магазина
         root /var/www/html/example.com;
+        index  index.php index.html index.htm;
+
+        ############################################################################
 
         #   Сжатие
         gzip on;
@@ -204,6 +207,8 @@
         application/json
         application/xml+rss;
 
+        ############################################################################
+
         #   Прочие настройки
         client_max_body_size            100m;
         client_body_buffer_size         128k;
@@ -213,163 +218,172 @@
         client_header_buffer_size       1k;
         large_client_header_buffers     4 16k;
 
+        ############################################################################
+
+        access_log  /var/log/nginx/example.com_access.log combined;
+        error_log   /var/log/nginx/example.com_error.log;
+
+        ############################################################################
 
         error_page 598 = @backend;
 
-    #######################################################################
-    # Обработка PHP-скриптов
-    #######################################################################
+        ############################################################################
+
         location @backend {
-            try_files $uri $uri/ /$1/$3 /$2/$3 $3 /index.php =404;
-            proxy_read_timeout 61;
-            fastcgi_read_timeout 61;
+            try_files $uri $uri/ /$2$3 /$3 /index.php  =404;
             #   Путь к сокету PHP-FPM
             fastcgi_pass unix:/var/run/php5-fpm.sock;
+            #
             fastcgi_index index.php;
-            fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-            include fastcgi_params;
+            fastcgi_read_timeout 360;
+            #   Добавляем содержимое fastcgi_params.conf
+            ################################################################################
+            fastcgi_param  QUERY_STRING       $query_string;
+            fastcgi_param  REQUEST_METHOD     $request_method;
+            fastcgi_param  CONTENT_TYPE       $content_type;
+            fastcgi_param  CONTENT_LENGTH     $content_length;
+            fastcgi_param  SCRIPT_NAME        $fastcgi_script_name;
+            fastcgi_param  REQUEST_URI        $request_uri;
+            fastcgi_param  DOCUMENT_URI       $document_uri;
+            fastcgi_param  DOCUMENT_ROOT      $document_root;
+            fastcgi_param  SERVER_PROTOCOL    $server_protocol;
+            fastcgi_param  HTTPS              $https if_not_empty;
+            fastcgi_param  GATEWAY_INTERFACE  CGI/1.1;
+            fastcgi_param  SERVER_SOFTWARE    nginx/$nginx_version;
+            fastcgi_param  REMOTE_ADDR        $remote_addr;
+            fastcgi_param  REMOTE_PORT        $remote_port;
+            fastcgi_param  SERVER_ADDR        $server_addr;
+            fastcgi_param  SERVER_PORT        $server_port;
+            fastcgi_param  SERVER_NAME        $server_name;
+            fastcgi_param  SCRIPT_FILENAME    $document_root$fastcgi_script_name;
+            fastcgi_param  REDIRECT_STATUS    200;
+            ################################################################################
         }
 
-    #   Правила rewrite для модуля SEO
-        location @fallback {
-            rewrite  ^/(\w+/)?(\w+/)?(.*)$ /$1/index.php?$args last;
-            rewrite  ^/(\w+/)?(\w+/)?(.*)$ /index.php?$args last;
-        }
+        ############################################################################
 
-    #   Правило поиска статических файлов. Например, если есть 2 витрины: example.com and example.com/shop/
-        location @statics {
-            rewrite ^/(\w+/)?(\w+/)?(.*)$ /$1/$3 break;
-            access_log off;
-            try_files $uri $uri/ /$1/$3 /$2/$3 $3 @fallback;
-            rewrite_log off;
-            expires max;
-            add_header Cache-Control public;
-            add_header Access-Control-Allow-Origin *;
-        }
-
-    #   Точка входа в интернет-магазин
-        location / {
-        #   Главный скрипт
+        location  / {
             index  index.php index.html index.htm;
-
-        #   Для  работы API
-            rewrite ^/(\w+/)?(\w+/)?api/(.*)$ /$1/api.php?_d=$3&ajax_custom=1&$args last;
-
-        #   Логика поиска скрипта по порядку: файл, папка, скрипт
-            try_files $uri $uri/ /$1/$3 /$2/$3 $3 @fallback;
-
-        #######################################################################
-        # Ограничиваем возвожность запуска PHP в каталогах. Для безопасности.
-        #######################################################################
-
-        #   Разрешаем запуск скриптов способов оплаты
-                location ~ ^/(\w+/)?(\w+/)?app/payments/ {
-                    return 404;
-                    location ~ \.php$ {
-                        return 598;
-                    }
-                }
-
-        #   Разрешаем запуск скриптов способов оплаты
-            location ~ ^/(\w+/)?(\w+/)?app/addons/paypal/payments/ {
-                return 404;
-                location ~ \.php$ {
-                    return 598;
-                }
-            }
-
-        #   Разрешаем запуск скрипта обмена данными с 1С
-            location ~ ^/(\w+/)?(\w+/)?app/addons/rus_exim_1c/ {
-                return 404;
-                location ~ \.php$ {
-                    return 598;
-                }
-            }
-
-        #   Закрываем доступ к папке /app
-            location ~ ^/(\w+/)?(\w+/)?app/ {
-                return 404;
-            }
-
-        #   Запрещаем PHP в папке /design
-            location ~ ^/(\w+/)?(\w+/)?design/ {
-                allow all;
-                location ~* \.([tT][pP][lL]|[pP][hH][pP].?)$ {
-                    return 404;
-                }
-            }
-
-        #   Закрываем доступ к бэкапам базы данных интернет-магазина снаружи
-            location ~ ^/(\w+/)?(\w+/)?var/backups/ {
-                return 404;
-            }
-
-            location ~ ^/(\w+/)?(\w+/)?var/restore/ {
-                return 404;
-            }
-
-        #   Закрываем доступ к резервным копиям шаблонов
-            location ~ ^/(\w+/)?(\w+/)?var/themes_repository/ {
-                allow all;
-                location ~* \.([tT][pP][lL]|[pP][hH][pP].?)$ {
-                    return 404;
-                }
-            }
-
-        #   Запрещаем PHP в папке /images
-            location ~ ^/(\w+/)?(\w+/)?images/ {
-                allow all;
-                location ~* \.([pP][hH][pP].?)$ {
-                    return 404;
-                }
-            }
-
-        #   Запрещаем доступ к init.php
-            location ~ ^/(\w+/)?(\w+/)?init.php {
-                return 404;
-            }
-
-        #   Закрываем доступ к .tpl
-            location ~* \.([tT][pP][lL].?)$ {
-                return 404;
-            }
-
-        #   Закрываем доступ к .htaccess, .htpasswd и git
-            location ~ /\.(ht|git) {
-                return 404;
-            }
-
-        #   Разрешаем только статику в папке /var
-            location ~ ^/(\w+/)?(\w+/)?var/ {
-                return 404;
-                location ~* \.(jpe?g|ico|gif|png|css|js|pdf|txt|tar|wof|woff|svg|ttf|csv|zip|xml|yml)$ {
-                    allow all;
-                    expires 1M;
-                    add_header Cache-Control public;
-                    add_header Access-Control-Allow-Origin *;
-                }
-            }
-
-        #   Настройки статики, главное правило
-            location ~* /(\w+/)?(\w+/)?(.+\.(jpe?g|ico|gif|png|css|js|pdf|txt|tar|wof|woff|svg|ttf|csv|zip|xml|yml)) {
-                access_log off;
-            #   Правило поиска статических файлов. Если файл не находится по адресу магазина, то ищем файл по правилу @statics.
-            #   Например, если магазин находится в подпапке example.com/shop/             
-                try_files $uri $uri/ /$1/$3 /$2/$3 $3 @statics;
-                expires max;
-                add_header Access-Control-Allow-Origin *;
-                add_header Cache-Control public;
-            }
-
-            location ~* /(\w+/)?(\w+/)?(.+\.php)$ {
-                return 598 ;
-            }
-
-            location ~* \.php$ {
-                return 598 ;
-            }
-
+            try_files $uri $uri/ /index.php?$args;
         }
+
+        ############################################################################
+
+        location ~ ^/(\w+/)?(\w+/)?api/ {
+            rewrite ^/(\w+/)?(\w+/)?api/(.*)$ /api.php?_d=$3&ajax_custom=1&$args last;
+            rewrite_log off;
+        }
+
+        ############################################################################
+
+        location ~ ^/(\w+/)?(\w+/)?var/database/ {
+            return 404;
+        }
+
+        location ~ ^/(\w+/)?(\w+/)?var/backups/ {
+            return 404;
+        }
+
+        location ~ ^/(\w+/)?(\w+/)?var/restore/ {
+            return 404;
+        }
+
+        location ~ ^/(\w+/)?(\w+/)?var/themes_repository/ {
+            allow all;
+            location ~* \.(tpl|php.?)$ {
+                return 404;
+            }
+        }
+
+        location ~ ^/(\w+/)?(\w+/)?var/ {
+            return 404;
+            location ~* /(\w+/)?(\w+/)?(.+\.(js|css|png|jpe?g|gz|yml|xml))$ {
+                try_files $uri $uri/ /$2$3 /$3 /index.php?$args;
+                allow all;
+                access_log off;
+                expires 1M;
+                add_header Cache-Control public;
+                add_header Access-Control-Allow-Origin *;
+            }
+        }
+
+        ############################################################################
+
+        location ~ ^/(\w+/)?(\w+/)?app/payments/ {
+            return 404;
+            location ~ \.php$ {
+                return 598;
+            }
+        }
+
+        location ~ ^/(\w+/)?(\w+/)?app/addons/rus_exim_1c/ {
+            return 404;
+            location ~ \.php$ {
+                return 598;
+            }
+        }
+
+        location ~ ^/(\w+/)?(\w+/)?app/ {
+            return 404;
+        }
+
+        ############################################################################
+
+        location ~* /(\w+/)?(\w+/)?(.+\.(jpe?g|jpg|ico|gif|png|css|js|pdf|txt|tar|woff|svg|ttf|eot|csv|zip|xml|yml))$ {
+            access_log off;
+            try_files $uri $uri/ /$2$3 /$3 /index.php?$args;
+            expires max;
+            add_header Access-Control-Allow-Origin *;
+            add_header Cache-Control public;
+        }
+
+        ############################################################################      
+
+        location ~ ^/(\w+/)?(\w+/)?design/ {
+            allow all;
+            location ~* \.(tpl|php.?)$ {
+                return 404;
+            }
+        }
+
+        ############################################################################
+
+        location ~ ^/(\w+/)?(\w+/)?images/ {
+            allow all;
+            location ~* \.(php.?)$ {
+                return 404;
+            }
+        }
+
+        ############################################################################
+
+        location ~ ^/(\w+/)?(\w+/)?js/ {
+            allow all;
+            location ~* \.(php.?)$ {
+                return 404;
+            }
+        }
+
+        ############################################################################
+
+        location ~ ^/(\w+/)?(\w+/)?init.php {
+            return 404;
+        }
+
+        location ~* \.(tpl.?)$ {
+            return 404;
+        }
+
+        location ~ /\.(ht|git) {
+            return 404;
+        }
+
+        location ~* \.php$ {
+            return 598 ;
+        }
+
+        ################################################################################
+
     }
 
 9. Перезапускаем nginx
