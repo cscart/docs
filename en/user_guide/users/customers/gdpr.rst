@@ -24,9 +24,15 @@ Customers can request their personal data in the XML format or anonymization of 
 
    * *Export the personal data as an XML file* by clicking the **Export to XML** button.
 
-   * *Anonymize the customer* by clicking the **Anonymize** button. This action will randomly generate personal data for the selected customer and replace the actual data with it. For example, that way the order history will still be there, but the customer's actual personal data won't be. 
+   * *Anonymize the customer* by clicking the **Anonymize** button. This action will randomly generate personal data for the selected customer and replace the actual data with it in all the listed sources. For example, that way the order history will still be there, but the customer's actual personal data won't be. 
 
-     Please note that anonymization will affect even the ``cscart_gdpr_user_agreements`` table that stores the logs of consent for personal data processing given by customers.
+     Please note that **anonymization will also affect** the ``cscart_gdpr_user_agreements`` table that stores the logs of consent for personal data processing given by customers. However, **anonymization will not affect:**
+
+     * Any backups of your store that you might have. The backups you made with CS-Cart's built-in mechanisms are located under **Administration → Backup/Restore**. If necessary, secure them and delete them afterwards.
+
+     * The CS-Cart/Multi-Vendor logs located under **Administration → Logs**. If necessary, clear these logs by using the gear button.
+
+     * Any other places where you may be collecting the data (for example, server logs, forms, integrations with third-party services, etc.).
 
      .. warning::
 
