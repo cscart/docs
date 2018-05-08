@@ -80,21 +80,6 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
 .. code-block:: nginx
 
     #######################################################################
-    # A default configuration for domains and IP address.
-    #######################################################################
-
-    server {
-        listen  80;
-        server_name _;
-        root /var/www/empty;
-
-        # Redirecting to our store by default
-        location / {
-            return 301 $scheme://example.com$request_uri;
-        }
-    }
-
-    #######################################################################
     # Description and configuration of the primary domain for the store.
     #######################################################################
 
