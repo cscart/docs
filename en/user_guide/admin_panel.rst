@@ -6,7 +6,7 @@ The **Administration Panel** (or the admin panel for short) is the primary tool 
 
 .. note::
 
-    Starting with version 4.4.2, you can use :doc:`Mobile Admin App <addons/mobile_admin_app/index>` in **CS-Cart Ultimate** or **Multi-Vendor** to manage your store from Android and iOS mobile devices.
+    Starting with version 4.7.3, you can use the **Responsive Admin Panel [Beta]** add-on to make tha Administration panel adapt to the screen size of your device. That way you can manage your store from mobile devices.
 
 ===========================
 Connect to Your Admin Panel

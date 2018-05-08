@@ -4,7 +4,7 @@ Twigmo
 
 .. important::
 
-    The **Twigmo** add-on is deprecated. If you need to manage your store from a mobile device, we recommend :doc:`Mobile Admin App. <../mobile_admin_app/index>` 
+    The **Twigmo** add-on is deprecated. If you need to manage your store from a mobile device, we recommend using the **Responsive Admin Panel [Beta]** add-on (available in the distribution since version 4.7.3).
 
 Use this add-on to connect your store to the **Twigmo** service. This service enables you to control your online store from your mobile phone. Once connected, the module will process requests sent from this service and return the requested information, and you will be able to review the sales statistics and recent orders as well as searching and editing the most important data - products, orders, and customers - just looking at and touching the screen of your mobile phone.
 

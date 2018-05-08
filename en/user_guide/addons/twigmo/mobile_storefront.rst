@@ -4,7 +4,7 @@ How To: Configure the Mobile Storefront
 
 .. important::
 
-    The **Twigmo** add-on is deprecated. If you need to manage your store from a mobile device, we recommend :doc:`Mobile Admin App. <../mobile_admin_app/index>` 
+    The **Twigmo** add-on is deprecated. If you need to manage your store from a mobile device, we recommend using the **Responsive Admin Panel [Beta]** add-on (available in the distribution since version 4.7.3).
 
 *	Go to **Add-ons → Manage add-ons**.
 *	Find the **Twigmo** add-on in the list and click the gear button, choose **Manage**.

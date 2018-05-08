@@ -4,7 +4,7 @@ How To: Set up Mobile Admin App for Your Store
 
 .. note::
 
-    **Mobile Admin App** can be used only with **CS-Cart Ultimate/Multi-Vendor 4.4.2 and higher**.
+    Starting with version 4.7.3, we recommend using the **Responsive Admin Panel [Beta]** add-on that also comes with the distribution. That's why we no longer include the **Mobile Admin App** add-on in new installations (those who upgrade from older versions still have it).
 
 ==============================================
 Step 1. Connect Your Store to Mobile Admin App
