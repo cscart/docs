@@ -19,6 +19,7 @@ View the list of the vendors in the Multi-Vendor administration panel under **Ve
     :titlesonly:
     :glob:
 
+    workflow
     account_balance
     manage_vendor_plans
     allow_customers_to_apply_for_vendor_account
