@@ -28,7 +28,7 @@ Depending on how you :doc:`configure the add-on </user_guide/addons/vendor_debt_
 
 * When their debt reaches a certain limit.
 
-* When the vendor's balance gets negative after a fee for the vendor plan has been taken from it.
+* When the vendor's balance gets negative after a fee for the vendor plan has been taken.
 
   .. image:: img/fee_notification.png
       :align: center

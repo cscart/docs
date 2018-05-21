@@ -6,7 +6,7 @@ Vendor Debt Payout Add-on Settings
 
     This add-on is available only in Multi-Vendor 4.8.1 and newer versions.
 
-The **Vendor debt payout** add-on is a tool for controlling vendors. It allows you to block vendors' access to their administration panesl automatically under certain conditions. The conditions are specified in the add-on's settings.
+The **Vendor debt payout** add-on is a tool for controlling vendors. It allows you to block vendors' access to their administration panels automatically under certain conditions. The conditions are specified in the add-on's settings.
 
 To reach add-on settings, go to **Add-ons → Manage add-ons**, and find the **Vendor debt payout** add-on and click on its name. If you can't find the add-on there, it might not be installed. To install it, switch to the **Browse all available add-ons** tab; you should find the add-on there.
 
@@ -24,11 +24,11 @@ The add-on has the following settings:
 
   By default, money is taken from vendor's account balance while it's positive. But if the balance becomes negative after payment, the grace period starts. When entering the administration panel, vendor will see a warning that there is a debt that needs to be paid.
 
-  If the vendor ignores the reminders and the grace period expires, the functionality of the vendor's administration panel will be limited in the same way as with the previously described setting.
+  If the vendor ignores the reminders, and the grace period expires, then the functionality of the vendor's administration panel will be limited as described above.
 
   .. important::
 
-     Even if the vendor's balance becomes positive during the grace period (for example, from paid orders), the sum of the debt that the vendor has to pay won't change. This is the intended behavior.
+     Even if the vendor's balance becomes positive during the grace period, the sum of the debt that the vendor has to pay won't change. This is the intended behavior.
 
 .. image:: img/vendor_debt_payout_settings.png
     :align: center
