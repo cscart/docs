@@ -1,6 +1,6 @@
-************************************
-Working with Vendors in Multi-Vendor
-************************************
+************************************************
+Money Flow in Multi-Vendor and How to Control It
+************************************************
 
 This article describes the flow of money in Multi-Vendor, and how the marketplace owners can control it. The best way to describe it is to explain the standard behavior of Multi-Vendor (without any add-ons), and how various built-in add-ons extend the functionality.
 
@@ -12,7 +12,7 @@ This article describes the flow of money in Multi-Vendor, and how the marketplac
 Basic Multi-Vendor (No Add-Ons)
 ===============================
 
-By default, all the money from orders in Multi-Vendor goes to the marketplace owner. That way customers have to make only one payment for one order with products from different vendors. The order is then automatically split into multiple orders, so that each vendor could manage their own part of the original order.
+**By default, all the money from orders in Multi-Vendor goes to the marketplace owner.** That way customers have to make only one payment for one order with products from different vendors. The order is then automatically split into multiple orders, so that each vendor could manage their own part of the original order.
 
 Once the marketplace owner receives the money, it's up to him or her to distribute it among vendors. For that purpose, Multi-Vendor has the :doc:`Accounting </user_guide/users/vendors/account_balance>` page. It tracks vendors' account balance and provides the following tools for money management:
 
@@ -24,7 +24,7 @@ Once the marketplace owner receives the money, it's up to him or her to distribu
       :align: center
       :alt: The Accounting page in Multi-Vendor.
 
-If a vendor's balance is negative, the marketplace owner has to contact the vendor and resolve the situation somehow. For example, :doc:`the vendor's status </user_guide/users/vendors/vendor_statuses>` can be manually changed to *Pending*—that way vendor’s administrators will be able to work in their administration panel, but the vendor’s products won't appear in the marketplace.
+If a vendor's balance is negative, the marketplace owner has to contact the vendor and resolve the situation somehow. For example, :doc:`the vendor's status </user_guide/users/vendors/vendor_statuses>` can be manually changed to *Pending*—that way vendor’s administrators will be able to work in their administration panel, but the vendor’s products won't appear on the storefront.
 
 .. note::
 
@@ -44,11 +44,11 @@ The :doc:`Vendor Plans </user_guide/addons/vendor_plans/index>` add-on helps wit
       :align: center
       :alt: Vendor plans in Multi-Vendor ecommerce software.
 
-The information about fees and commissions is recorded automatically in the form of **payouts** on the **Accounting** page. As a result, it's easier for the marketplace owner to take periodic or transaction fees into account when distributing money among vendors.
+The information about fees and commissions is recorded automatically on the **Accounting** page. As a result, it's easier for a marketplace owner to take periodic or transaction fees into account when distributing money among vendors.
 
 .. note::
 
-    **Summary:** The **Vendor Plans** add-on doesn't automate money distribution by itself. It only makes accounting easier by tracking one-time and periodic fees and commissions from orders.
+    **Summary:** The :doc:`Vendor Plans </user_guide/addons/vendor_plans/index>` add-on doesn't automate money distribution by itself. It only makes accounting easier by tracking one-time and periodic fees and commissions from orders.
 
 ===========================
 Marketplace Payment Methods
@@ -72,19 +72,19 @@ However, for these payment methods to work, all vendors whose products are being
 
 .. note::
 
-    **Summary:** Payment methods designed for marketplaces allow to distribute money from orders automatically. These payment methods can also collect debts from vendors. The drawback is that all the vendors handling an order need to be able to receive money that way.
+    **Summary:** Payment methods designed for marketplaces allow to distribute money from orders automatically. These payment methods can also collect debts from vendors. The drawback is that all the vendors handling an order need to be able to receive money via the chosen payment method.
 
 ==================
 Vendor Debt Payout
 ==================
 
-The :doc:`Vendor debt payout </user_guide/addons/vendor_debt_payout/index>` add-on covers the situations when vendor debts and fees for plans need to be collected without using marketplace payment methods. Here is what the add-on offers:
+The :doc:`Vendor Debt Payout </user_guide/addons/vendor_debt_payout/index>` add-on covers the situations when vendor debts and fees for plans need to be collected without using marketplace payment methods. Here is what the add-on offers:
 
-* Limits on the maximum debt of a vendor and the time within which a vendor must pay for using the vendor plan.
+* Limit on the maximum debt of a vendor and the time within which a vendor must pay for using the vendor plan.
 
-* Automatic restriction of functionality of a vendor's administration panel when the vendor exceeds the limits mentioned above.
+* Automatic restriction of functionality of the vendor's administration panel when the vendor exceeds the limits mentioned above.
 
-* The ability for vendor to pay the debts by clicking a button in the administration panel. The process works much like checkout on the storefront.
+* The ability for a vendor to pay the debts by clicking a button in the Administration panel. The process works much like checkout on the storefront.
 
   .. image:: /user_guide/addons/vendor_debt_payout/img/vendor_panel_blocked.png
      :align: center
@@ -94,4 +94,4 @@ Although this approach requires action from vendors, it allows marketplace owner
 
 .. note::
 
-    **Summary:** The **Vendor debt payout** add-on allows marketplace owners to automate the collecting of debts from vendors. If vendors don't pay, they won't be able to work in their administration panels. The payment process itself is just like placing an order on the storefront.
+    **Summary:** The :doc:`Vendor Debt Payout </user_guide/addons/vendor_debt_payout/index>` add-on allows marketplace owners to automate the collecting of debts from vendors. If vendors don't pay, they won't be able to work in their administration panels. The payment process itself is just like placing an order on the storefront.

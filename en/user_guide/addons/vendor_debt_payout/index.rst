@@ -8,9 +8,9 @@ Vendor Debt Payout
 
 By default, all the money from orders in Multi-Vendor goes to the marketplace owner and is then distributed among vendors. This distribution can be manual or automatic (with add-ons like :doc:`Stripe Connect </user_guide/addons/stripe_connect/index>` or :doc:`PayPal for Marketplaces </user_guide/addons/paypal_for_marketplaces/index>`).
 
-But what if you use :doc:`Vendor Plans </user_guide/addons/vendor_plans/index>` and a vendor gets no orders, while the fees for plans keep accumulating? Or what if you offer some service to vendors and collect fees for it with :ref:`manually created payouts <payout>`? That could lead to a situation when the vendor's balance is negative. 
+But what if you use :doc:`Vendor Plans </user_guide/addons/vendor_plans/index>` and a vendor gets no orders, while the fees for plans keep accumulating? Or what if you offer some service to the vendor and collect a fee for it with :ref:`manually created payouts <payout>`? That could lead to a situation when the vendor's balance is negative. 
 
-Previously you had to track down those vendors and deal with them manually. But now the **Vendor Debt Payout** add-on gives marketplace owners the tools to deal with debtors.
+Previously you had to track down those vendors and deal with them manually. But now the **Vendor Debt Payout** add-on gives marketplace owners some automated tools to deal with debtors.
 
 .. contents::
    :backlinks: none
@@ -28,7 +28,7 @@ Depending on how you :doc:`configure the add-on </user_guide/addons/vendor_debt_
 
 * When their debt reaches a certain limit.
 
-* When the vendor's balance is not enough to cover the vendor plan fee, and the time to pay the fee has come.
+* When the vendor's balance gets negative after a fee for the vendor plan has been taken from it.
 
   .. image:: img/fee_notification.png
       :align: center
@@ -40,7 +40,7 @@ These notifications contain a link to the page where vendors can pay their debts
 Ability to Pay Marketplace Fees
 -------------------------------
 
-When vendors decide to pay their debts, they're redirected to checkout on the storefront, with a product called **Marketplace Fees** already in their cart. It works just like buying a product from your marketplace. Although this approach requires action from vendors, it allows you to use any payment methods, even if they weren't designed with marketplaces in mind.
+When vendors decide to pay their debts, they're redirected to checkout on the storefront, with a product called *Marketplace fees* already in their carts. It works just like buying a product from your marketplace. Although this approach requires action from vendors, it allows you to use any payment methods, even if they weren't designed with marketplaces in mind.
 
 Once the order placed by the vendor is marked as *Processed* or *Complete*, the account balance changes. If the vendor's administration panel had been blocked earlier, it will be unblocked.
 
