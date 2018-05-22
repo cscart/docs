@@ -45,9 +45,9 @@ The first thing you’ll notice is the **Dashboard**, where you can check sales 
 
 1. Total number of orders, sales and taxes sums in your store.
 
-2. Recent orders made in your store. Switch between the tabs to see orders with particular statuses.
+2. Monthly statistics of your store in the form of a diagram.
 
-3. Monthly statistics of your store in the form of a diagram.
+3. Recent orders made in your store. Switch between the tabs to see orders with particular statuses.
 
 4. Brief statistics of the store: the number of products, customers, pages, etc. Click on the number of items to go to the page with the detailed list of these items.
 
