@@ -14,9 +14,9 @@ There are two core requirements for your host to run CS-Cart:
 
   * PHP 5.6 for CS-Cart/Multi-Vendor 4.3.1 - 4.3.6. 
 
-  * PHP 7.0 for CS-Cart/Multi-Vendor 4.3.6 - 4.5.1. Earlier versions don't support PHP 7.
+  * PHP 7.0 for CS-Cart/Multi-Vendor 4.3.6 - 4.5.2. Earlier versions don't support PHP 7.
 
-  * PHP 7.1 for CS-Cart/Multi-Vendor 4.5.2 and newer versions. In earlier versions errors occurred on PHP 7.1.
+  * PHP 7.1 for CS-Cart/Multi-Vendor 4.6.1 and newer versions. In earlier versions errors occurred on PHP 7.1.
 
     .. note::
 
