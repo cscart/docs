@@ -1,8 +1,12 @@
-****************************************
-How To: Import Products and Product Data
-****************************************
+*****************************************************
+How To: Import Products and Product Data (Old Method)
+*****************************************************
 
-#. In the Administration panel, go to **Administration → Import data → Products**.
+.. note::
+
+    This article describes the old product import. Starting with version 4.8.1, we recommend using :doc:`advanced product import </user_guide/manage_products/import_export/advanced_product_import>` instead.
+
+#. In the Administration panel, go to **Administration → Import data → Products (Deprecated)**.
 
 #. Make sure the columns in your CSV file have the same names as the ones listed in the **Products** section on this page. Also check whether or not the values of the fields have :doc:`the correct format </user_guide/manage_products/import_export/fields_format>`.
 

@@ -358,6 +358,33 @@ This field describes the action when the product price is zero:
 
     EXAMPLE: *A*
 
+.. _advanced-image-import:
+
+=======================
+Advanced Import: Images
+=======================
+
+.. note::
+
+    This field is available only in the :doc:`/user_guide/addons/advanced_products_import/index` add-on.
+
+The path (or paths) to product images. Multiple images can be specified by using the image delimiter in the additional settings on the **File** tab of an :doc:`import preset </user_guide/manage_products/import_export/advanced_product_import>`.
+
+.. important::
+
+    EXAMPLE: *exim/backup/images/main_image.jpg///exim/backup/images/additional_image.jpg*
+
+The image file can be specified without a path (just its name) if you specify **Images directory** when you :doc:`import a CSV file with product data <product_import>`.
+
+You can specify alternative text for images by adding it after the path.
+
+.. important::
+
+    EXAMPLE: *exim/backup/images/main_image.jpg#{[ar]:Arabic alt text;[en]:English alt text;}///exim/backup/images/Nadditional_image.jpg#{[ar]:Arabic alt text;[en]:English alt text;}*
+
+If each product image has its own column (in a CSV file) or node (in an XML file), you can map all of them to **Advanced Import: Images**. Then these fields will be combined properly, and multiple images will be imported for a product.
+
+
 .. _csv-detailed-image-import:
 
 ==============

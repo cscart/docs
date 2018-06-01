@@ -9,6 +9,7 @@ This section of the documentation covers the export and import of products in CS
     :glob:
 
     product_export
+    advanced_product_import
     product_import
     fields_format
     import_example
