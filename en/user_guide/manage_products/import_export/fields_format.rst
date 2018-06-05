@@ -366,7 +366,7 @@ Advanced Import: Images
 
 .. note::
 
-    This field is available only in the :doc:`/user_guide/addons/advanced_products_import/index` add-on.
+    This field is available only with the :doc:`/user_guide/addons/advanced_products_import/index` add-on.
 
 The path (or paths) to product images. Multiple images can be specified by using the image delimiter in the additional settings on the **File** tab of an :doc:`import preset </user_guide/manage_products/import_export/advanced_product_import>`.
 

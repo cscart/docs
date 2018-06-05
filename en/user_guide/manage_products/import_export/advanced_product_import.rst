@@ -4,7 +4,7 @@ How To: Import Products and Product Data
 
 .. note::
 
-    This article describes the behavior of 4.8.1 and newer versions. This functionality is implemented by the :doc:`Advanced Products Import </user_guide/addons/advanced_products_import/index>` add-on.
+    This article describes the behavior of 4.8.1 and newer versions. This functionality is implemented by the :doc:`/user_guide/addons/advanced_products_import/index` add-on.
 
 #. In the Administration panel, go to **Administration → Import data → Products**.
 
@@ -14,9 +14,7 @@ How To: Import Products and Product Data
        :align: center
        :alt: Advanced product import in CS-Cart. 
 
-   A *preset* is a set of rules on how to interpret an imported file. It helps when the tables in importable files from a supplier are formatted in a way that doesn't comply with how CS-Cart stores the data. 
-
-   Once you configure a preset, you'll be able to import multiple files of similar structure without the need to modify each of them separately.
+   A *preset* is a set of rules on how to interpret an imported file. Once you configure a preset, you'll be able to import multiple files of similar structure without the need to modify each of them separately.
 
 #. Configure the import preset: choose a file (of CSV or XML format) that you'd like to import, and enter the name of the preset (you'll use it later to find it among other presets).
 
@@ -50,7 +48,7 @@ How To: Import Products and Product Data
 
    .. hint::
 
-       Once you create an import preset, the **File** tab will contain a command that you can add to **cron**. That way you'll be able to run the import periodically, at certain time intervals.
+       Once you create an import preset, the **File** tab will contain a command that you can add to `cron <https://wikipedia.org/wiki/Cron>`_. That way you'll be able to run the import periodically, at certain time intervals.
 
    .. image:: img/advanced_import_file_settings.png
        :align: center
@@ -62,7 +60,7 @@ How To: Import Products and Product Data
 
    * Check the example of imported data to see if the matching is correct. Make sure that the imported data follows the :doc:`field format </user_guide/manage_products/import_export/fields_format>` of the corresponding product property.
 
-   * If necessary, add a modifier. *Modifiers* are functions that help you change the imported data. You'll find the full list of modifiers by clicking the **Modifiers list** button.
+   * If necessary, add a few modifiers. *Modifiers* are functions that help you change the imported data. Use the **Modifiers list** button to find out what modifiers exist and how to use them.
 
      .. image:: img/advanced_import_field_mapping.png
          :align: center
@@ -70,7 +68,7 @@ How To: Import Products and Product Data
 
      Here are a few examples of how modifiers can be used:
 
-     * Let's assume that you import products from two suppliers. Each supplier uses unique `SKUs <https://en.wikipedia.org/wiki/Stock_keeping_unit>`_ (the **CODE** field in CS-Cart) for each product internally, but a few SKUs of these suppliers overlap. You, however, need to have a unique SKU for every product.
+     * Let's assume that you import products from two suppliers. Each supplier uses unique `SKUs <https://en.wikipedia.org/wiki/Stock_keeping_unit>`_ (the **CODE** field in CS-Cart) for each product internally, but a few SKUs of these suppliers overlap: each supplier has a different product with the same SKU. You, however, need to have a unique SKU for every product.
 
        In that case you can create different import presets for each supplier. If you add a modifier like ``concat(SPLR1-, $value)`` when importing products from *Supplier 1*, all SKUs of that supplier will have the *SPLR1-* prefix. That way SKUs will be unique.
 
@@ -106,7 +104,7 @@ How To: Import Products and Product Data
 
      * *Create new products only*—skip any products that already exist in your store; only products that don't exist in your store will be imported.
 
-       This strategy is convenient if you change some product data (such as description, product name, etc.) after the import. That way your existing products won't change if you need to import data from that supplier again.
+       This strategy is convenient if you change some product data (such as description, product name, etc.) after the import. That way your changes won't be lost if you need to import the data from that supplier again.
 
        .. hint::
 
@@ -128,7 +126,7 @@ How To: Import Products and Product Data
 
    * **Delete existing additional images**—if you enable this setting, all the additional images of a product will be replaced with the images specified in the imported file.
 
-     When the setting is disabled, importing additional images for a product doesn't repalce the existing additional images, but rather adds new images alongside the existing ones. 
+     When the setting is disabled, importing additional images for a product doesn't repalce the existing additional images, but rather adds new images alongside the existing ones.
 
 #. Click **Import**. If your preset is configured properly, and the data in the imported file is correct, your products will be imported.
 
