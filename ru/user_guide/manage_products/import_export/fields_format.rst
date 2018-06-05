@@ -357,6 +357,32 @@ Zero price action
 
     ПРИМЕР: *A*
 
+.. _advanced-image-import:
+
+=======================
+Advanced Import: Images
+=======================
+
+.. note::
+
+    Это поле доступно только с модулем :doc:`/user_guide/addons/advanced_products_import/index`.
+
+Путь (или пути) к изображениям товаров. Если изображений несколько, отделяйте пути к ним с помощью разделятеля изображений из дополнительных настроек во вкладке **Файл** :doc:`на странице пресета импорта </user_guide/manage_products/import_export/advanced_product_import>`.
+
+.. important::
+
+    ПРИМЕР: *exim/backup/images/main_image.jpg///exim/backup/images/additional_image.jpg*
+
+Можно указать просто название файла с изображением без пути, если :doc:`при импорте CSV-файла с товарами <product_import>` вы зададите настройку **Директория с изображениями**.
+
+После пути можно задать альтернативный текст для изображения.
+
+.. important::
+
+    EXAMPLE: *exim/backup/images/main_image.jpg#{[ar]:Текст на арабском;[en]:Текст на английском;}///exim/backup/images/Nadditional_image.jpg#{[ar]:Текст на арабском;[en]:Текст на английском;}*
+
+Если каждое изобраежние находится в отдельном столбце (в файле CSV) или узле (в файле XML), то всем этим столбцам или узлам можно задать соотвествие со свойством **Advanced Import: Images**. Тогда данные объединятся правильно, и для товара импортируется несколько изображений.
+
 .. _csv-detailed-image-import:
 
 ==============

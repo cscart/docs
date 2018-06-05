@@ -9,6 +9,7 @@
     :glob:
 
     product_export
+    advanced_product_import
     product_import
     fields_format
     import_example
