@@ -28,9 +28,7 @@ Searchanise can search through products, categories and pages (i.e., blog posts)
 
 .. important ::
 
-	Searchanise is incompatible with the `Age Verification <http://docs.cs-cart.com/4.4.x/user_guide/addons/age_verification/index.html>`_ add-on because this add-on controls access to products on the category level while Searchanise processes store data on the product level and takes no account of categories and their properties.
-
- 
+    Starting with version 4.8.1, Searchanise is compatible with the :doc:`/user_guide/addons/age_verification/index` add-on. Products restricted by age will only be displayed in search results if a customer has verified his or her age.
 
 With the Searchanise panel you can navigate through the Searchanise sections that are described separately further in this guide.
 
