@@ -68,15 +68,15 @@ Server Configuration Requirements
         -
         -   
 
-* Either **GD** or **Imagick** PHP extension must be installed. These extensions are used for image manipulation, such as creating thumbnails, applying watermarks, etc. We recommend **Imagick**, because it offers much better quality of the processed images.
-
-  * **GD** is included in PHP, however PHP should be compiled with the ``--with-gd`` flag. The official PHP documentation has `detailed installation instructions for GD <http://php.net/manual/en/image.installation.php>`_. Please make sure your GD configuration includes the **FreeType** font library.
+* Either **Imagick** or **GD** PHP extension must be installed. These extensions are used for image manipulation, such as creating thumbnails, applying watermarks, etc. We recommend **Imagick**, because it offers better performance and quality of the processed images. Using **GD** can lead to crashes due to the lack of memory when large product images are uploaded.
 
   * **Imagick** is a `PECL extension <https://pecl.php.net/package/imagick>`_. The official PHP documentation has `detailed installation instructions for Imagick <http://php.net/manual/en/imagick.setup.php>`_. `ImageMagick <http://www.imagemagick.org/script/index.php>`_ version 6.5.3-10+ and PHP 5.4.0+ must be installed on your server.
 
     .. important::
 
         We strongly recommend using at least **ImageMagick 6.9.3-10** or higher, as it includes a critical vulnerability fix. **ImageMagick 7** is only supported starting with CS-Cart/Multi-Vendor 4.7.2.
+
+  * **GD** is included in PHP, however PHP should be compiled with the ``--with-gd`` flag. The official PHP documentation has `detailed installation instructions for GD <http://php.net/manual/en/image.installation.php>`_. Please make sure your GD configuration includes the **FreeType** font library.
 
 * **exif** PHP extension should be installed. Starting with version 4.6.3, that extension will be used to make sure that the thumbnails generated from images shot in portrait mode will be rotated correctly.
 
