@@ -16,7 +16,9 @@ How To: Change the Company Logo
        :align: center
        :alt: Theme editor
 
-#. Choose the **Theme**, **Mail**, and **Gift Certificate** tabs to edit corresponding logos. Click the **Browse** button to upload images for logos.
+#. Choose the **Theme**, **Mail**, and **Gift Certificate** tabs to edit corresponding logos. Click the **Browse** button to upload images for logos. 
+
+   If you don't have a logo yet and don't know a professional artist to make one for you, you can order it at `DesignContest <https://www.designcontest.com/logo-design/>`_. Set your requirements and budget for the logo, and designers will come to you.
 
    .. important ::
 
