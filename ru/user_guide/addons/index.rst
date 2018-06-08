@@ -22,7 +22,35 @@
     :glob:
     
     *
-    */index
+    advanced_products_import/index
+    atol_online/index
+    blog/index
+    boxberry/index
+    cities/index
+    comments_and_reviews/index
+    commerceml/index
+    form_builder/index
+    geolocation/index
+    gift_certificates/index
+    google_recaptcha/index
+    janrain/index
+    paypal_payments/index
+    product_variations/index
+    retailcrm/index
+    reward_points/index
+    rus_personal_data_processing/index
+    rus_taxes/index
+    seo/index
+    social_login/index
+    tags/index
+    twigmo/index
+    yandex_metrika/index
+    yml_export/index
+
+.. toctree::
+    :hidden:
+    
+    yandex_market/index
 
 
 Список модулей
