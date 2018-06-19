@@ -56,6 +56,7 @@ PayPal отправляет в магазин служебные уведомл�
 
   // Было:
   fn_set_hook('get_filters_products_count_post', $params, $lang_code, $filters);
+
   // Стало:
   fn_set_hook('get_filters_products_count_post', $params, $lang_code, $filters, $selected_filters);
 
@@ -82,15 +83,15 @@ PayPal отправляет в магазин служебные уведомл�
 
 #. Получает электронный адрес подписчика по идентификатору::
 
-     fn_newsletters_get_subscriber_email_by_id($id)
+     fn_newsletters_get_subscriber_email_by_user_id($user_id)
 
 #. Получает опции товара по умолчанию::
 
-     Tygh\Addons\ProductVariations\Product\Manager::getDefaultVariationOptions
+     Tygh\Addons\ProductVariations\Product\Manager::getDefaultVariationOptions($product_id);
 
 #. Обновляет вариацию товара, установленную по умолчанию::
 
-     Tygh\Addons\ProductVariations\Product\Manager::getDefaultVariationOptionsons\Product\Manager::updateDefaultVariation
+     Tygh\Addons\ProductVariations\Product\Manager::getDefaultVariationOptions\Product\Manager::updateDefaultVariation($variation_product_id = 0, $parent_product_id = 0)
 
 #. Получает простой список категорий по предоставленным идентификаторам, а также их родительские категории (в формате ``array('parent_id' => 'parent_name')``)::
 
@@ -98,7 +99,7 @@ PayPal отправляет в магазин служебные уведомл�
 
 #. Обновляет цены вариаций товаров::
 
-     Tygh\Addons\ProductVariations\Product\Manager::updateProductVariationsPrices($product_id, $product_prices)
+     Tygh\Addons\ProductVariations\Product\Manager::updateProductVariationsPrices($product_id, $price, $prices, $auth)
 
 ------------------
 Изменённые функции

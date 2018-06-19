@@ -83,15 +83,15 @@ New Functions
 
 #. Get the subscriber email by identifier::
 
-     fn_newsletters_get_subscriber_email_by_id($id)
+     fn_newsletters_get_subscriber_email_by_user_id($user_id)
 
 #. Get the default product options::
 
-     Tygh\Addons\ProductVariations\Product\Manager::getDefaultVariationOptions
+     Tygh\Addons\ProductVariations\Product\Manager::getDefaultVariationOptions($product_id);
 
 #. Update the default variation::
 
-     Tygh\Addons\ProductVariations\Product\Manager::getDefaultVariationOptionsons\Product\Manager::updateDefaultVariation
+     Tygh\Addons\ProductVariations\Product\Manager::getDefaultVariationOptions\Product\Manager::updateDefaultVariation($variation_product_id = 0, $parent_product_id = 0)
 
 
 #. Fetch plain list of categories by provided IDs, with all their parent categories (parent format is ``array('parent_id' => 'parent_name')``)::
@@ -100,7 +100,7 @@ New Functions
 
 #. Update the prices of product variations::
 
-     Tygh\Addons\ProductVariations\Product\Manager::updateProductVariationsPrices($product_id, $product_prices)
+     Tygh\Addons\ProductVariations\Product\Manager::updateProductVariationsPrices($product_id, $price, $prices, $auth)
 
 -----------------
 Changed Functions
