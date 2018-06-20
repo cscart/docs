@@ -128,8 +128,6 @@ Bug Fixes
 
 [!] Options: Images: Selecting an option on the product page could lead to the page being scrolled down. Fixed.
 
-[!] Options: Order management: A disabled "Checkbox" option could still be displayed in the order details. Fixed.
-
 [!] Product features: Variants of a disabled feature were still displayed on the storefront. Fixed.
 
 [!] Products: Features: If a product belonged to 2 categories, and the additional category had a feature, assigning other categories to that feature resulted in the value of the feature being removed from the product. Fixed.
@@ -153,6 +151,8 @@ Bug Fixes
 [!] Shipping methods: Administrators didn’t receive any notifications if a real-time shipping method rates weren’t received. Fixed.
 
 [!] Users: Administrators: Even without assigned user groups, administrators didn't have the button for creating new administrator accounts. Fixed.
+
+[!] {#7171} Options: Order management: A disabled "Checkbox" option could still be displayed in the order details. Fixed.
 
 [!] {#7213} Responsive admin panel: The date selection was displayed incorrectly in pop-ups. Fixed.
 
