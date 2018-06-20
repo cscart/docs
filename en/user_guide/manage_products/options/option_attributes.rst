@@ -10,6 +10,14 @@ Product options appear on the product details page on the storefront as paramete
 
 * **Name**—the name of the product option as it appears on the storefront.
 
+* **Internal name**—the name of the global option that only appears in the Administration panel to help you distinguish between multiple options that have the same displayed name.
+
+  For example, if you sell shoes and T-shirts, you probably have 2 separate global options called *Size*. Without the internal name they'd look the same in the administration panel, and it'd be hard to guess which of these options to apply to your newly-created product.
+
+  .. note::
+
+      Only :doc:`global options </user_guide/manage_products/options/global_options>` can have internal names. :doc:`Product-specific options </user_guide/manage_products/options/product_options>` don't have internal names.
+
 * **Position**—the position of the product option relatively to other options in the list.
 
 * **Store**—the storefront to which the option originally belongs.

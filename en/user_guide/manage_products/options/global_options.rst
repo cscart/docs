@@ -24,6 +24,10 @@ Create a Global Option
 
    * **Name**—the name of the product option as it appears on the storefront.
 
+   * **Internal name**—the name of the option that only appears in the Administration panel to help you distinguish between multiple options that have the same displayed name.
+
+     For example, if you sell shoes and T-shirts, you probably have 2 separate global options called *Size*. Without the internal name they'd look the same in the administration panel, and it'd be hard to guess which of these options to apply to your newly-created product.
+
    * **Position**—the position of the product option relatively to other options in the list.
 
    * **Store**—the storefront to which the option originally belongs.
@@ -76,7 +80,7 @@ Apply a Global Option to Multiple Products
 
 #. Go to **Products → Options**.
 
-#. Click the **Apply to products** button in the upper right part of the page. This will open a new page where you'll be able to select which options to apply, and to which products.
+#. Click the gear button in the upper right part of the page and choose **Apply to products**. This will open a new page where you'll be able to select which options to apply, and to which products.
 
    .. image:: img/apply_to_products_01.png
        :align: center

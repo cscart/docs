@@ -2,7 +2,7 @@
 How To: Create a Product Option
 *******************************
 
-This article describes how to create an option for a particular product. If you sell multiple products that all have the same options (such as color or size), it may be better to use :doc:`global product options <../options/global_options>`.
+This article describes how to create an option for a particular product. If you sell multiple products that all have the same options (such as color or size), it may be better to use :doc:`global product options </user_guide/manage_products/options/global_options>`.
 
 #. In the Administration panel, go to **Products → Products**.
 
@@ -34,9 +34,9 @@ This article describes how to create an option for a particular product. If you 
 
 #. Click the **Create** button.
 
-   .. image:: img/global_options_01.png
+   .. image:: img/product_option_creation.png
        :align: center
-       :alt: The option creation pop-up window in CS-Cart
+       :alt: The product-specific option creation pop-up window in CS-Cart
 
 #. Now if you return to the product editing page and go to the **Options** tab, you'll be able to create :doc:`option combinations <option_combinations>`.
 
