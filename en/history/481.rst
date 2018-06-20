@@ -1,0 +1,163 @@
+***********************
+CS-Cart 4.8.1 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Advanced Products Import (Beta): Ability to import data from deeply nested XML document nodes added.
+
+[+] Add-ons: Advanced Products Import (Beta): The validation of modifiers on the preset editing page was added.
+
+[+] Add-ons: GDPR Compliance: A new block with buttons for customers to requesting their personal data or anonymization was added.
+
+[+] Add-ons: Product variations (Beta): The ability to select a variation to be displayed to customers by default was added.
+
+[+] Backup/Restore: The sorting by date was added to the backup list.
+
+[+] Design: Orders: Product thumbnails were added to the information about an order on the storefront.
+
+[+] Multi-Vendor: Add-ons: PayPal for Marketplaces: The ability to accept payments via PayPal for Marketplaces was added.
+
+[+] Multi-Vendor: Add-ons: Vendor Debt Payout: The ability to block vendor's admin panel on specific conditions and the ability for vendors to resolve negative balance and pay the fees directly to the store owner were added.
+
+[+] Multi-Vendor: Add-ons: Vendor Locations [Beta]: A new add-on for filtering products and vendors by their addresses was added.
+
+[+] Multi-Vendor: REST API: Orders: The IDs of child orders are now returned when an order for products from multiple vendors is placed via REST API.
+
+[+] Payment methods: Deltapay, Ingenico: The verification of payment gateway response was added.
+
+[+] Product management: Categories: The ability to search and add categories to products by typing parts of category names was added to the product editing page.
+
+[+] Products: Images: The ability to easily load multiple images for a product via drag & drop was added to the Administration panel.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Abandoned/Live Carts: Carts are now sorted by date by default.
+
+[*] Add-ons: Advanced Products Import (Beta): The add-on is now active by default.
+
+[*] Add-ons: Call requests: The phone input masks passed to the page now depend on what countries are active in the store.
+
+[*] Add-ons: GDPR Compliance: The "Notify visitors about cookies use" setting was moved from "Settings → Security settings" to the GDPR addon; the ability to ask customers for active consent for cookies before they enter the site was added.
+
+[*] Add-ons: GDPR Compliance: The settings for company name and email for GDPR matters were removed from the add-on; instead the data is now taken from the corresponding storefront.
+
+[*] Add-ons: PayPal payments: Cart recalculation no longer happens during the processing of Instant Payment Notifications.
+
+[*] Add-ons: Product variations (Beta): Quantity discounts and shipping properties of a parent product now apply to variations.
+
+[*] Add-ons: Searchanise: Searchanise is now compatible with the Age Verification add-on.
+
+[*] Add-ons: Social Login: The library that is used for signing in with various social networks was updated.
+
+[*] Core: Backward compatibility for PHP < 5.5.0 added.
+
+[*] Core: Files: Image resize function was stated in the file manager context menu but was not functioning properly. Context menu entry removed.
+
+[*] Documents: Invoice: Variable "p.product_options" was renamed to "p.raw.options".
+
+[*] Global options: A new field called "Internal option name" and sorting by option name were added to the Administration panel.
+
+[*] Installer: Notification about recommended image resize library added.
+
+[*] Multi-Vendor: Add-ons: Vendor plans: "Take payment surcharge from vendors" addon setting removed.
+
+[*] Multi-Vendor: Add-ons: Vendor plans: Payment surcharge is now always taken in favor of the marketplace.
+
+[*] Options: The "Inventory" checkbox can now also be set during option creation.
+
+[*] Payment methods: Amazon Checkout: The discontinued payment method was removed.
+
+[*] Payment methods: ProxyPay3: Obsolete payment processor removed.
+
+[*] Payment methods: WorldPay: The currently supported currencies for the payment method were added.
+
+[*] Products: The maximum length of the product code was increased to 64 symbols.
+
+[*] Responsive admin panel is now default; the old admin panel is available as an add-on.
+
+[*] Responsive admin panel: Shadow was added for the top panel.
+
+[*] Shipping methods: USPS: The "First Class Mail International Large Envelope" and "First Class Mail International Letter/Postcard" services are no longer supported and have been changed to "USPS First-Class Package International Service".
+
+=========
+Bug Fixes
+=========
+
+[!] Add-ons: Advanced Products Import (Beta): Images couldn't be imported when the newline was present in the image URL. Fixed.
+
+[!] Add-ons: Newsletters: When newsletter subscription checkboxes weren't displayed at checkout, the subscription was canceled when the customer placed an order. Fixed.
+
+[!] Add-ons: PayPal payments: Fatal error occurred on the editing pages of PayPal-based payment methods when the add-on was disabled. Fixed.
+
+[!] Add-ons: Product variations (Beta): An option variant used by an existing product variation could be disabled or removed. Fixed.
+
+[!] Add-ons: Product variations (Beta): A saved search by configurable products also displayed configurable products in the search results. Fixed.
+
+[!] Add-ons: Product variations (Beta): Adding variations to an order via advanced product search didn't work for administrators. Fixed.
+
+[!] Add-ons: Product variations (Beta): Product options at the checkout page had too large margins. Fixed.
+
+[!] Add-ons: Product variations (Beta): REST API: Product variations couldn't be created via API. Fixed.
+
+[!] Add-ons: Product variations (Beta): The calculation of the number of items in a box was incorrect when multiple variations of the same product were in one order. Fixed.
+
+[!] Add-ons: Reward points: PHP Notices occurred during editing content on site if a product combination was in the cart, and the customer was signed in. Fixed.
+
+[!] Add-ons: Searchanise: Deleting a default language or a vendor resulted in Searchanise API keys being removed from the store as well. Fixed.
+
+[!] Core: Database: If connection to the database was lost, re-executing an SQL query for shareable objects resulted in an error. Fixed.
+
+[!] Core: Files: Files with forbidden extensions could be added via file manager. Fixed.
+
+[!] Export/Import: If the import file had the same category in the 'Category' and 'Secondary categories' field, then the main category of the product was empty. Fixed.
+
+[!] File Changes Detector: Editing or deleting the robots.txt file resulted in a notification about core files being changed. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor data premoderation: When a product with variations was approved, its variations weren't approved automatically. Fixed.
+
+[!] Multi-Vendor: Core: Template hooks of add-ons didn't work properly. Fixed.
+
+[!] Multi-Vendor: Responsive admin panel: Advanced Products Import (Beta): The vendor selector on the preset editing page wasn't fully visible. Fixed.
+
+[!] Multi-Vendor: Vendor logos couldn't be set for the vendors that were created through import and without logos. Fixed.
+
+[!] Options: Images: Selecting an option on the product page could lead to the page being scrolled down. Fixed.
+
+[!] Product features: Variants of a disabled feature were still displayed on the storefront. Fixed.
+
+[!] Products: Features: If a product belonged to 2 categories, and the additional category had a feature, assigning other categories to that feature resulted in the value of the feature being removed from the product. Fixed.
+
+[!] Products: Sharing: A product that was shared was considered shared among storefronts even after all the other storefronts but one had been deleted. Fixed.
+
+[!] Responsive admin panel : Products: In bulk editing mode, the toolbar width was incorrect. Fixed.
+
+[!] Responsive admin panel: Advanced search did not work on Safari. Fixed.
+
+[!] Responsive admin panel: Design: Layouts: Block icons weren't displayed correctly when blocks were added on the layout editing page. Fixed.
+
+[!] Responsive admin panel: Order editing: The field for entering a product name didn't change the size when a mobile device was rotated by 90 degrees. Fixed.
+
+[!] Responsive admin panel: Products: When a product was clicked on, the context menu was not displayed. Fixed.
+
+[!] Responsive admin panel: The login form  was aligned at the top of the page. Fixed.
+
+[!] Responsive admin panel: Video tutorials: When the "Video tutorials" add-on was active, the admin panel was displayed incorrectly in IE11. Fixed.
+
+[!] Shipping methods: Administrators didn’t receive any notifications if a real-time shipping method rates weren’t received. Fixed.
+
+[!] Users: Administrators: Even without assigned user groups, administrators didn't have the button for creating new administrator accounts. Fixed.
+
+[!] {#7171} Options: Order management: A disabled "Checkbox" option could still be displayed in the order details. Fixed.
+
+[!] {#7213} Responsive admin panel: The date selection was displayed incorrectly in pop-ups. Fixed.
+
+[!] {#7230} Database: MySQL 8: SQL queries contained keywords that became reserved in MySQL 8. Fixed.
+
+[!] {#7232} Multi-Vendor: Categories: Demo data: Some categories available for a vendor in the demo data didn't appear on the vendor page. Fixed.
+
+[!] {#7239} REST API: Orders: The 'parent_order_id' was reset to zero after an order was edited. Fixed.
