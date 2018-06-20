@@ -91,7 +91,7 @@ PayPal отправляет в магазин служебные уведомл�
 
 #. Обновляет вариацию товара, установленную по умолчанию::
 
-     Tygh\Addons\ProductVariations\Product\Manager::getDefaultVariationOptions\Product\Manager::updateDefaultVariation($variation_product_id = 0, $parent_product_id = 0)
+     Tygh\Addons\ProductVariations\Product\Manager::updateDefaultVariation($variation_product_id = 0, $parent_product_id = 0)
 
 #. Получает простой список категорий по предоставленным идентификаторам, а также их родительские категории (в формате ``array('parent_id' => 'parent_name')``)::
 

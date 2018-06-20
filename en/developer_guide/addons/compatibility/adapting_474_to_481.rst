@@ -91,7 +91,7 @@ New Functions
 
 #. Update the default variation::
 
-     Tygh\Addons\ProductVariations\Product\Manager::getDefaultVariationOptions\Product\Manager::updateDefaultVariation($variation_product_id = 0, $parent_product_id = 0)
+     Tygh\Addons\ProductVariations\Product\Manager::updateDefaultVariation($variation_product_id = 0, $parent_product_id = 0)
 
 
 #. Fetch plain list of categories by provided IDs, with all their parent categories (parent format is ``array('parent_id' => 'parent_name')``)::
