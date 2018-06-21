@@ -6,11 +6,11 @@ How To: Find out about Rate Calculation Issues
 
     The functionality described in this article first appeared in version 4.8.1.
 
-Realtime shipping methods use servers to calculate shipping rates and return them to your customers. However, what if the third-party server is down? Then CS-Cart won't receive any response or rates, so the shipping method won't appear at checkout. 
+Realtime shipping methods use their own servers to calculate shipping rates and return them to the store to be displayed to customers. However, what if the third-party server is down? Then CS-Cart won't receive any response or rates, so the shipping method won't appear at checkout. 
 
 This could prevent a customer from making a purchase, especially if the store has no alternative shipping methods, and customers end up having nothing to choose from. Until version 4.8.1, admins could only find out about this issue by receiving a message from a customer or checking the store and going through the checkout process themselves.
 
-Although not all problems can be solved on the store's end, it helps to be informed. That's why CS-Cart & Multi-Vendor 4.8.1 (and newer versions) can send email notifications to admins about such issues. To receive those notifications:
+Although not all problems can be solved on the store's end, it's better to be informed about them. That's why CS-Cart & Multi-Vendor 4.8.1 (and newer versions) can send email notifications to admins about such issues. To receive those notifications:
 
 #. Go to :doc:`Settings → Logging </user_guide/settings/logging>` in the administration panel of your store.
 
