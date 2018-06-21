@@ -9,7 +9,7 @@ CS-Cart branch 4.8.x
 .. toctree::
     :maxdepth: 1
 
-    4.8.1 <471>
+    4.8.1 <481>
 
 ====================
 CS-Cart branch 4.7.x
@@ -92,6 +92,7 @@ CS-Cart branch 4.1.x
 .. toctree::
     :maxdepth: 1
 
+    4.1.5 <415>
     4.1.4 <414>
     4.1.3 <413>
     4.1.2 <412>
