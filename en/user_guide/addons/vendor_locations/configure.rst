@@ -26,15 +26,27 @@ The add-on has the following settings:
 
 * **Google Maps API key**—Google Maps calculate distance and show the locations of vendors. That's why you need to enter the Google Maps API key; get it by following `Google instructions <https://developers.google.com/maps/documentation/javascript/get-api-key>`_.
 
-* **Default search radius**—the search radius that a product filter by distance will have by default.
+* **Default radius in distance filter**—the search radius that a product filter by distance will have by default.
 
-* **Maximum search radius**—the maximum allowed search radius that a product filter by distance can have.
+* **Maximum radius in distance filter**—the maximum allowed search radius that a product filter by distance can have.
+
+  .. note:: 
+
+      The product filter that allows customers to search for products within a certain distance if they enter their location :ref:`needs to be added manually <mve-product-filter-by-distance>`. Otherwise the two settings above won't have any effect.
 
 * **Distance measurement unit**—the measurement unit that will be used in product filters by distance and in the information about nearby vendors.
 
-  .. image:: img/vendor_locations_addon_settings.png
-      :align: center
-      :alt: The settings of the "Vendor locations" add-on.
+* **Vendors shown by default**—determines what vendors will be shown on the vendor list page (``dispatch=companies.catalog``) and on the map displayed on that page by default:
+
+  * *All*
+
+  * *From customer's city*
+
+  * *From customer's country*
+
+.. image:: img/vendor_locations_addon_settings.png
+    :align: center
+    :alt: The settings of the "Vendor locations" add-on.
 
 Once you've configured the settings, click **Save** to save your changes.
 
@@ -87,6 +99,8 @@ A :doc:`block </user_guide/look_and_feel/layouts/blocks/index>` is a part of a p
    .. image:: img/nearby_vendors_and_map.png
        :align: center
        :alt: The 4 blocks of the "Vendor Locations" add-on on one page.
+
+.. _mve-product-filter-by-distance:
 
 ------------------------------
 Add Product Filter by Distance
