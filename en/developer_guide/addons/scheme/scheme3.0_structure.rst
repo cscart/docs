@@ -173,7 +173,7 @@ The Full Add-on Scheme with Comments
 	            <section id="section3">
 	                <items>
 	                    <item id="selectable_box">
-	                        <!-- The variants if this setting will be taken from the function fn_settings_variants_[addon_id]_[setting_id] -->
+	                        <!-- The variants if this setting will be taken from the function fn_settings_variants_addons_[addon_id]_[setting_id] -->
 	                        <type>selectable_box</type>
 	                        <default_value><![CDATA[#M#product_code=Y&product=Y&amount=Y&price=Y]]></default_value>
 	                        <variants/>
