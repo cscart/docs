@@ -1,0 +1,136 @@
+***********************
+CS-Cart 4.1.5 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Core: TPL hooks: New hooks 'orders:totals_shipping' and 'orders:totals_payment' added.
+
+[+] Languages: If an error occurs during PO parsing, the parser now returns the erroneous line number.
+
+[+] Orders: Shipments: Carrier name added to shipping information.
+
+[+] Payment methods: "Alpha Bank" payment method added.
+
+[+] Payment methods: Payflow Pro: Currencies support added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Admin panel: Store management: The same theme is now used for the cloned store as for the original one.
+
+[*] Free mode: Ability to install themes from the "themes_repository" directory added.
+
+[*] Multi-Vendor: Filter by vendor now supports the "More" link and "View all" options.
+
+[*] Themes: Manifest: The "theme" param renamed to "logo". The "theme" parameter will be supported up to verion 4.4.
+
+[*] URL validation: The "(" and ")" symbols are now considered valid.
+
+========
+Bugfixes
+========
+
+[!] Add-ons: Data feed: An SQL error occurred if the admin defined a category with no products to export. Fixed.
+
+[!] Add-ons: Ebay: PayPal was not selected by default for the categories with the PaypalRequired flag. Fixed.
+
+[!] Add-ons: Ebay: Product features with the "Others->Text" type were not exported to Ebay. Fixed.
+
+[!] Add-ons: Ebay: Shipping cost was rounded to integer value. Fixed.
+
+[!] Add-ons: Gift certificates: Gift certificate page logo was not added for Responsive theme. Fixed.
+
+[!] Add-ons: Google analytics: Tracking code was not in the <head> section. Fixed.
+
+[!] Add-ons: Google export: Features not related to Google were removed during addon uninstallation. Fixed.
+
+[!] Add-ons: Required products: PHP error notification was shown if a product with a required product was addded to cart, and the cart had been empty. Fixed.
+
+[!] Add-ons: Store import: Spanish states overwrote custom states. Fixed.
+
+[!] Addons: Suppliers: An "Unassigned" shipping method was not selected for "unassigned" products. Fixed.
+
+[!] Add-ons: Suppliers: Shared suppliers were not displayed for non-onwer stores. Fixed.
+
+[!] Add-ons: Watermarks: Images of objects (categories, products) were not displayed in the customer area if the appropriate checkboxes were not ticked on the add-on setting page. Fixed.
+
+[!] Admin panel: Submitting the search form by pressing Enter did not work. Fixed.
+
+[!] Admin panel: The "Rebuild cache automatically" scroller was not re-initialised after cloning theme. Fixed.
+
+[!] Admin panel: The Administration menu items could not be viewed on screens with resolution less than 1400 x 900. Fixed.
+
+[!] Design: HTML tags were displayed in the testimonials block. Fixed.
+
+[!] Design: Top menu: Full-width submenus were mispositioned if the parent menu had two rows. Fixed.
+
+[!] Filters: The "Display all links" option was not shown on the filter creation page. Fixed.
+
+[!] Languages: 3-letter PO-packages were not installed properly. Fixed.
+
+[!] Languages: Empty "Available languages" tab was displayed after installing any new language. Fixed.
+
+[!] Multi-Vendor: Filters: Filters by company did not work properly on the "View all" page. Fixed.
+
+[!] Order management: Changing amount of products in a order had no effect on the product stock. Fixed.
+
+[!] Order management: If an order had a product with free shipping, the shipping price was applied to the order total on saving the order changes, which increased the order total. Fixed.
+
+[!] Order management: If an order had a promotion discount, manually defined discount could not be specified. Fixed.
+
+[!] Orders: Country name was sent in an incorrect language if several languages were installed and the default language was not English. Fixed.
+
+[!] Orders: Purchased product amount could be incorrect if the product was included in several categories. Fixed.
+
+[!] Payment methods: DPS Access: Order notifications were sent twice per order. Fixed.
+
+[!] Payment methods: Westpac: Title of products with the " symbol were truncated to this symbol when the product data was submitted for processing. Fixed.
+
+[!] Payments: Taxes: If customer had the "Tax exempt" option enabled and the payment had a surcharge, tax was still calculated for such payments. Fixed.
+
+[!] Promotions: If two promotions gave the same free product, only the first promotion was applied. Fixed.
+
+[!] Promotions: Order management: Promotion with the "Once per customer" condition was deleted on order saving. Fixed.
+
+[!] Promotions: User groups: The "User group" label was shown in email even if the customer was not in any user group. Fixed.
+
+[!] Shared products: Product owner could be changed when updating category from the storefront. Fixed.
+
+[!] Shipping methods: Temando: The Suburb field was unreadable during shipping calculation. Fixed.
+
+[!] Shipping: Packages could be split incorrectly if Shipping params had "Min items in box" option specified. Fixed.
+
+[!] Shipping: State name was escaped incorrectly on shipping estimation. Fixed.
+
+[!] Shipping: The "Max box weight" option did not work. Products were not split by packages. Fixed.
+[!] Upgrade: SQL error appeared during the upgrade if a table prefix started from a number. Fixed.
+
+[!] {#1875} Payment methods: Ideal basic: Gift certificates were ignored. Fixed.
+
+[!] {#4878} Addons: Data feed: The Detailed image URL field was exported with the "https" prefix if the "Enable secure connection in the administration panel" option was enabled. Fixed.
+
+[!] {#4998} Order management: Email notifications were sent even if the respective checkbox was unchecked. Fixed.
+
+[!] {#5002} Promotions: Product name was displayed as [Object object] on the Bonuses page if Condition page and Bonus page had the same product as condition. Fixed.
+
+[!] {#5007} Addons: Required products: A product was not added to cart if its required product was assigned to several categories. Fixed.
+
+[!] {#5016} Payment methods: PayPal Express: Subtotal was calculated incorrectly when tax was applied and it was calculated based on unit price. Fixed.
+
+[!] {#5018} Sequential options: Radio-group option values were not displayed on the cart content page. Fixed.
+
+[!] {#5021} API: Products: There was no ability to create a product with zero price. Fixed.
+
+[!] {#5027} Add-ons: Hybrid Auth: Customer was redirected to the home page from any page where they had logged in. Fixed.
+
+[!] {#5043} Act on behalf: Cart content could be calculated incorrectly immediately after redirection to storefront if the customer had a discount on the products in cart. Fixed.
+
+[!] {#5044} Design: Scroller product template: If the width of an image was less than width of the block then scroller was not shown. Fixed.
+
+[!] {#5046} Orders: All available downloadable products for several orders were displayed in a single order for a customer. Fixed.
+
+[!] {#5056} File compression: Archive with several dots in its name could not be created properly. The name was trimmed to the first dot. Fixed.
