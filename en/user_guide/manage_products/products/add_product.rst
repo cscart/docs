@@ -249,35 +249,7 @@ To demonstrate the full process, let's export one of the products to a CSV file 
        :align: center
        :alt: New products in the CSV file.  
 
-#. Save the file in the CSV format.
-
-#. Now let's import the products to the store. To do it, go to **Administration → Import data → Products**.
-
-   .. image:: img/catalog_41.png
-       :align: center
-       :alt: How to open the product import page in CS-Cart. 
-
-   .. image:: img/catalog_43.png
-       :align: center
-       :alt: The product import page.   
-
-#. Go to the bottom of the page, choose a file to import, and click the **Import** button.
-
-   .. image:: img/catalog_42.png
-       :align: center
-       :alt: Selecting a CSV file to be imported.  
-
-#. You'll receive a notification how the import went.
-
-   * The number of products created.
-
-   * The number of products updated.
-
-   .. image:: img/catalog_44.png
-       :align: center
-       :alt: Notification about import results in CS-Cart.   
-
-Done!
+#. Save the file in the CSV format, and you'll be able to :doc:`import it </user_guide/manage_products/import_export/product_import>`.
 
 .. _products-add-digital:
 

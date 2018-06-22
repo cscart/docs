@@ -10,7 +10,7 @@ When you create or edit a product, you should specify a number of product proper
 
 .. note::
 
-    Most of product properties can be specified via :doc:`product import <../../manage_products/import_export/product_import>`.
+    Most of product properties can be specified via :doc:`product import </user_guide/manage_products/import_export/product_import>`.
 
 .. contents::
     :backlinks: none
@@ -27,7 +27,7 @@ Information
 
 * **Name**—the name of the product as it appears on the storefront and in the Administration panel. The name of the same product can differ, depending on the storefront and language.
 
-* **Categories**—the categories that the product will be assigned to. When a product has multiple categories, the radio button determines which of those categories is main for that product.
+* **Categories**—the categories that the product will be assigned to. When a product has multiple categories, the first category on the list will be the main category for the product. To change the main category, just drag another category in its place.
 
 * **Price**—base product price in your store's primary currency. Prices in other currencies are converted automatically, according to the exchange rate that you specify. All calculations are done in the primary currency.
 
@@ -47,13 +47,11 @@ Information
 
 * **Store**—the storefront to which the product is assigned.
 
-* **Images**—a large product image and its icon (thumbnail). Supported formats are JPEG, GIF, and PNG. The maximum size of an uploaded image depends on your server configuration. As a rule, it should not exceed 2 MB.
+* **Images**—the images of the product. Supported formats are JPEG, GIF, and PNG. The maximum size of an uploaded image depends on your server configuration. As a rule, it should not exceed 2 MB. Thumbnails for these images will be generated automatically.
 
-  .. note:: 
+  One of the uploaded images will appear larger than the others. That's the main product image that is displayed on the product list and on the product details page by default. To change the main image, simply drag and drop another image in its place. You can also change the order of additional images the same way.
 
-      By default, thumbnails are generated from detailed images automatically. However, you can upload thumbnails manually.
-
-  The text field below the image lets you describe the image in words. Technically, it is the text that you enter appears inside the ``alt=""`` and ``title=""`` attributes of the ``<img>`` HTML tag. This text is shown when the image is missing or cannot be displayed. It is good practice to have an alternative text associated with the image, for SEO purposes.
+  If you hover over an image, you'll be able to view the full-sized image, delete it, or edit its alt text. This text will be shown when the image is missing or cannot be displayed. It is a good practice to have an alternative text associated with the image, for SEO purposes.
 
 ----------------
 Options Settings
@@ -163,30 +161,6 @@ Extra
 
 * **Promo text**—an additional block with information that appears on the top right side of the product page.
 
-======
-Images
-======
-
-This tab contains an unlimited number of additional image pairs for the product. Each additional image pair includes a large pop-up image and an icon (thumbnail). Supported formats are JPEG, GIF, and PNG. The maximum size of an uploaded image depends on your server configuration. As a rule, it should not exceed 2 MB.
-
-.. image:: img/catalog_58.png
-    :align: center
-    :alt: The "Images" tab of a product.
-
-Thumbnails of additional images appear on the product page of the storefront next to the main image thumbnail. Clicking on thumbnails allows you to switch between images.
-
-.. image:: img/product_images.png
-    :align: center
-    :alt: The additional images of a product.
-
-.. note::
-
-    To change the order of additional images, simply drag and drop them.
-
-.. image:: img/product_images_01.png
-    :align: center
-    :alt: Drag and drop images
-
 ===
 SEO
 ===
@@ -217,49 +191,7 @@ This tab allows you to manage :doc:`product options <../options/index>` and opti
     :align: center
     :alt: The "Options" tab of the product editing page.
 
-Product options appear on the product details page on the storefront. Depending on the type of an option, customers either select one of the option variants or provide their own variant. Options can have the following properties:
-
-* **Name**—the name of the product option as it appears on the storefront.
-
-* **Position**—the position of the product option relatively to the position of the other options in the list.
-
-* **Inventory**—if you tick this checkbox, this option can become a part of an option combination. The stock is tracked separately for each option combination.
-
-* **Store**—the storefront to which the option belongs.
-
-* **Type**—the :doc:`type of the product option <../options/option_settings>`: *Select box*, *Radio group*, *Check box*, *Text*, *Text area*, or *File*.
-
-* **Description**—the description of the product option. It will appear on the storefront under the question sign (?) next to the option name.
-
-* **Comment**—the comment displayed below the option on the product page on the storefront.
-
-* **Required**—if you tick this checkbox, customers won't be able to purchase the product without selecting this option (for example, without ticking the checkbox, choosing a variant, entering a text or uploading a file).
-
-* **Missing variants handling**—the behavior of the store when a forbidden or missing option combinations is selected: 
-
-  * *Display message*—the option will be marked as *"Not available"*; if the option is *required*, customers won't be able to add the product to the cart.
-
-  * *Hide option completely*—the option will be hidden; if the option is *required*, customers will be able to add the product to the cart.
-
-.. image:: img/product_attributes_04.png
-    :align: center
-    :alt: The properties of an option.
-
-Some option types (*select box*, *radio group*, *check box*) have variants that customers can choose on the product page. Option variants have the following properties:
-
-* **Position**—the position of the variant relatively to the positions of the other variants in the list.
-
-* **Name**—the name of the variant. For example, if the option is titled *Size*, the variants of the option can be *small*, *medium*, *large*, etc.
-
-* **Modifier/Type**—a positive or negative value that is added to or subtracted from the product price when a customer chooses this variant. The modifier can be either a fixed value or a percentage.
-
-* **Weight modifier/Type**—a positive or negative value that that is added to or subtracted from the product's weight when a customer chooses this variant. The modifier can be either a fixed value or a percentage.
-
-* **Status**—the status of the option variant (*Active* or *Disabled*).
-
-* **Icon**—an icon (thumbnail) that represents the option variant; it will appear on the storefront. 
-
-* **Earned point modifier/Type**—a positive or negative value that is added to or subtracted from the number of reward points that customers receive when they buy this variant of the product. The modifier can be either a fixed value or a percentage.
+Product options appear on the product details page on the storefront. Depending on the type of an option, customers either select one of the option variants or provide their own variant. A separate article describes :doc:`the properties of options </user_guide/manage_products/options/option_attributes>`.
 
 ===================
 Shipping Properties
@@ -295,7 +227,7 @@ This tab contains the list of wholesale prices for the product. Customers will s
 
 .. image:: img/catalog_64.png
     :align: center
-    :alt: A quantity discount on the product page in CS-Cart..
+    :alt: A quantity discount on the product page in CS-Cart.
 
 * **Quantity**—the minimum number of product items to qualify for the product wholesale price.
 
