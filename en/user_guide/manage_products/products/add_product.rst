@@ -249,7 +249,7 @@ To demonstrate the full process, let's export one of the products to a CSV file 
        :align: center
        :alt: New products in the CSV file.  
 
-#. Save the file in the CSV format, and you'll be able to :doc:`import it </user_guide/manage_products/import_export/product_import>`.
+#. Save the file in the CSV format, and you'll be able to :doc:`import it </user_guide/manage_products/import_export/advanced_product_import>`.
 
 .. _products-add-digital:
 
