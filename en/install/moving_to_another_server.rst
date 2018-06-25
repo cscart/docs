@@ -144,7 +144,7 @@ To restore a database backup with **phpMyAdmin**, complete the following steps:
 
 * Select your database from the list on the right.
 
-* Click **Export** in the top menu.
+* Click **Import** in the top menu.
 
 * Click **Choose File** and select the database you downloaded during **Step 1.5**.
 
