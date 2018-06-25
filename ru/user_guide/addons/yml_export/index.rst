@@ -115,7 +115,6 @@ YML экспорт
 
     ``ваш_домен/yml_get/<access_key>``
 
-
 2.  Кликните правой клавишей мыши по странице и нажмите «Сохранить как»
 
     .. fancybox:: img/yandex_market_export_20.png
