@@ -32,21 +32,17 @@ Step 1. Install and Configure the Add-on
 
      * *Explicit*—before a customer can enter the web-site, he or she will see the a page with the information that the web-site uses cookies. Customers must give their consent before they can proceed to see the site. That way no cookies are set on customers' devices before the consent is given.
 
-   .. note::
+       .. note::
 
-       The ability to ask for explicit consent for the use of cookies first appeared in version 4.8.1. Until then, store owners could only ask for implicit consent under **Settings → Security settings** in the administration panel.
+           The ability to ask for explicit consent for the use of cookies first appeared in version 4.8.1. Until then, store owners could only ask for implicit consent under **Settings → Security settings** in the administration panel.
 
    .. image:: img/gdpr-cookies.png
        :align: center
        :alt: The ability to ask for explicit consent for cookies first appeared in version 4.8.1.
 
-   The add-on's settings also have the **GDPR* tab; there you'll be able to choose where to show the notifications about personal data processing, and edit the texts of those notifications. We'll do it later, in step 3.
+   The add-on's settings also have the **GDPR** tab; there you'll be able to choose where to show the notifications about personal data processing, and edit the texts of those notifications. We'll do it later, in step 3.
 
 #. Click **Save**.
-
-   .. image:: img/gdpr-agreements.png
-       :align: center
-       :alt: You can edit the agreements in the GDPR add-on settings.
 
 .. _gdpr-data-request-buttons:
 
