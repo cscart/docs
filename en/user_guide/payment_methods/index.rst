@@ -38,9 +38,7 @@ Here are some of the payment methods that you can set up in CS-Cart and Multi-Ve
     paypal_advanced
     paypal_express
     paypalpro
-    ping
     sagepay
-    stripe_connect
     worldpay
 
 .. toctree::
