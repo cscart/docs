@@ -122,7 +122,7 @@ CSS класс у тега ``form`` задает микроформат, кла�
 
   ::
 
-    <intput type="hidden" name="result_ids" value="id1, id2" />
+    <input type="hidden" name="result_ids" value="id1, id2" />
 
 * ``cm-ajax-full-render`` — используется вместе с ``cm-ajax`` и возращает всю страницу.
 
