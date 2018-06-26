@@ -6,11 +6,45 @@ In this section, you can adjust the set of payment methods that your customers c
 
 .. note::
 
-    If your realtime shipping method does not pass shipping rates from the shipping service server, or orders get the **Failed** status after they are paid using a payment processor, :doc:`please refer to this article <../shipping_and_taxes/shipping_methods/realtime_shipping_methods/realtime_shipping_and_payment_problem>`.
+    If your realtime shipping method does not pass shipping rates from the shipping service server, or orders get the **Failed** status after they are paid using a payment processor, :doc:`please refer to this article </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/realtime_shipping_and_payment_problem>`.
 
 .. toctree::
     :maxdepth: 4
     :titlesonly:
     :glob:
 
-    *
+    adding_payment
+    configure_payment
+    offline_payment
+    bank_details_at_checkout
+    different_payment_info
+    terms_and_conditions
+
+Here are some of the payment methods that you can set up in CS-Cart and Multi-Vendor:
+
+.. toctree::
+    :maxdepth: 4
+    :titlesonly:
+    :glob:
+
+    2checkout
+    authorizenet
+    eway
+    hsbc
+    ideal
+    nochex
+    paypal
+    paypal_adaptive_payments
+    paypal_advanced
+    paypal_express
+    paypalpro
+    ping
+    sagepay
+    stripe_connect
+    worldpay
+
+.. toctree::
+    :maxdepth: 4
+    :hidden:
+
+    amazon
