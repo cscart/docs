@@ -16,53 +16,109 @@ Step 1. Install and Configure the Add-on
 
 #. Find the **GDPR Compliance (EU)** add-on and click **Install** next to it.
 
-   .. note::
-
-       The add-on first appeared in CS-Cart and Multi-Vendor 4.7.4. Our support staff can offer guidance to those who use older versions; for a small fee we can even adapt the add-on for your store. Please `contact our technical support via Help Desk <https://helpdesk.cs-cart.com>`_ for more information.
-
    .. image:: img/gdpr-addon.png
        :align: center
        :alt: The GDPR Compliance add-on first appeared in CS-Cart and Multi-Vendor 4.7.4.
 
 #. Once the add-on is installed, click on its name to open the add-on's settings.
 
-#. The **General** tab you'll find the following settings:
+#. On the **General** tab you'll find the following settings:
 
-   * **Email for personal data issues**—the email address that will be used in the notifications about personal data processing. For example, it could be an email address of the department that handles customers' requests to export or anonymize their data.
+   * **Cookie consent**—determines if customers will be notified about cookies, and whether or not they'll have to accept the use of cookies before being allowed to use the site.
 
-   * **Company name**—the company name that will be used in the notifications about personal data processing.
+     * *None*—customers won't be notified at all that the web-site uses cookies.
 
-     .. note::
+     * *Implicit*—customers will see an unobtrusive pop-up notifying them that the web-site uses cookies. Depending on what pages the customers visit, cookies may be set on their devices without their prior approval.
 
-         These settings affect only the notifications about personal data processing, and only if the texts of those notifications include the ``[email]`` and ``[company]`` placeholders respectively. Check Step 2 for more information.
+     * *Explicit*—before a customer can enter the web-site, he or she will see the a page with the information that the web-site uses cookies. Customers must give their consent before they can proceed to see the site. That way no cookies are set on customers' devices before the consent is given.
+
+   .. note::
+
+       The ability to ask for explicit consent for the use of cookies first appeared in version 4.8.1. Until then, store owners could only ask for implicit consent under **Settings → Security settings** in the administration panel.
+
+   .. image:: img/gdpr-cookies.png
+       :align: center
+       :alt: The ability to ask for explicit consent for cookies first appeared in version 4.8.1.
+
+   The add-on's settings also have the **GDPR* tab; there you'll be able to choose where to show the notifications about personal data processing, and edit the texts of those notifications. We'll do it later, in step 3.
 
 #. Click **Save**.
 
+   .. image:: img/gdpr-agreements.png
+       :align: center
+       :alt: You can edit the agreements in the GDPR add-on settings.
+
+.. _gdpr-data-request-buttons:
+
+========================================================
+Step 2. Add Buttons for Data-Related Requests (Optional)
+========================================================
+
+.. note::
+
+    This step is only possible starting with version 4.8.1. The previous versions don't have the block described in this step.
+
+The GDPR requires you to give customers the data you have about them, or anonymize their personal data on request. By default, customers are supposed to contact you by email regarding this. However, there's a way to make it more convenient for customers: they'd be able to send you a request with a couple of clicks.
+
+#. Go to **Design → Layouts**.
+
+#. Switch to the **Profiles** tab.
+
+#. :doc:`Add a new block </user_guide/look_and_feel/layouts/blocks/actions_on_blocks>`; when doing so, switch to the **Create New Block** tab and choose **GDRP**. That's the block that contains the buttons for contacting store owners.
+
+   .. image:: img/gdpr-block.png
+       :align: center
+       :alt: Adding a block with GDPR data-related buttons.
+
+#. Once the block has been added, return to the storefront and sign in to an account.
+
+#. Open the profile details page. The new block should now appear where you placed it. It provides 2 buttons:
+
+   * *Send me my data*
+
+   * *Remove my data*
+
+   By clicking these buttons, customers will be able to leave a comment and send a corresponding email to the *User department email address* 
+
+   If you only have one storefront (or if you use Multi-Vendor), this email address will be taken from **Settings → Company**. If you have multiple storefronts in CS-Cart, then the address will be taken from the settings of the storefront that a customer visits.
+
+   .. image:: img/gdpr-buttons.png
+       :align: center
+       :alt: The buttons for requesting personal data or its removal as they appear on the storefrnot.
+
+If you intend to use this way, make sure to update the data processing notifications afterwards (we'll be doing it in step 3). The default notifications don't describe this simplified way of contacting you about GDPR-related questions.
+
 ============================================
-Step 2. Check and Update the Privacy Notices
+Step 3. Check and Update the Privacy Notices
 ============================================
 
-The add-on's settings have the **GDPR** tab. It contains the list of places where checkboxes for requesting consent will be displayed. For each place, you can choose whether or not you want a checkbox for requesting consent to appear.
+The settings of the **GDPR Compliance (EU)** add-on have the **GDPR** tab. It contains the list of places where checkboxes for requesting consent will be displayed. For each place, you can choose whether or not you want a checkbox for requesting consent to appear.
 
 .. image:: img/gdpr-checkboxes.png
     :align: center
     :alt: The notices about personal data processing can be edited separately from each other.
 
-Every checkbox for requesting consent is accompanied by a notice about personal data processing. The texts of these notices and checkboxes can be accessed and edited separately from each other. These texts are in fact :doc:`language variables </user_guide/look_and_feel/languages/translate>`, so the same rules apply when you translate or edit them.
+Every checkbox for requesting consent is accompanied by a notice about personal data processing. The texts of these notifications and checkboxes can be accessed and edited separately from each other. These texts are in fact :doc:`language variables </user_guide/look_and_feel/languages/translate>`, so the same rules apply when you translate or edit them.
 
-We tried our best to make the default personal data processing notices as informative as possible. However, we can't guarantee that they fully comply with the GDPR, especially since the practices regarding personal data differ in every company. That's why we ask you to review and edit these notices as you and your lawyers see fit.
+The texts may have ``[email]`` or ``[company]`` in them. These are placeholders that will be automatically replaced with actual data when customers see the notifications.
 
-When you edit these notices, you may add ``[email]`` or ``[company]`` placeholders into the texts. When customers see the text, they'll see the email address or company name from the add-on's settings. Change the values in the settings, and you'll update the email address and/or company name in all the notices simultaneously.
+If you only have one storefront (or if you use Multi-Vendor), the data for the placeholders will be taken from **Settings → Company**. If you have multiple storefronts in CS-Cart, then the data will be taken from the settings of the storefront that a customer visits:
+
+* ``[company]`` will be taken from *Company name*.
+
+* ``[email]`` will be taken from *User department e-mail address*.
+
+We tried our best to make the default personal data processing notifications as informative as possible. However, we can't guarantee that they fully comply with the GDPR, especially since the practices regarding personal data differ in every company. That's why we ask you to review and edit these notifications as you and your lawyers see fit.
 
 .. hint::
 
-    If you don't want the notices to be too long, add a link to your Privacy Policy to all of them, and describe everything in the Privacy Policy. However, we can't guarantee that this practice is GDPR-compliant, so you'd have to consult your lawyer regarding this.
+    If you don't want the notification to be too long, add a link to your Privacy Policy to all of them, and describe everything in the Privacy Policy. However, we can't guarantee that this practice is GDPR-compliant, so you'd have to consult your lawyer regarding this.
 
 ================================
-Step 3. See How the Add-on Works
+Step 4. See How the Add-on Works
 ================================
 
-#. Check the storefront. Make sure that the notices about personal data processing appear in every place where you collect personal data.
+#. Check the storefront. Make sure that the notifications about personal data processing appear in every place where you collect personal data.
 
    .. image:: img/gdpr-storefront.png
        :align: center
@@ -72,7 +128,7 @@ Step 3. See How the Add-on Works
 
    In that case the consent for personal data processing won't be stored in the database, but rather in an email you receive, alongside the data that the customer may've provided via the form.
 
-#. Test the workflow of granting consent. Register as a new customer and give consent for personal data processing in various places. 
+#. Test the workflow of granting consent. Register as a new customer and give consent for personal data processing in various places. If you completed :ref:`the optional step 2 <gdpr-data-request-buttons>`, try using the buttons for requesting personal data or the removal of data.
 
 #. Open your database to see the consent logs in the ``cscart_gdpr_user_agreements`` table.
 
@@ -91,7 +147,7 @@ Step 3. See How the Add-on Works
        :alt: The personal data of a user in the admin panel.
 
 ======================================
-Step 4. Make Sure You Comply with GDPR
+Step 5. Make Sure You Comply with GDPR
 ======================================
 
 **The add-on by itself won't make you GDPR-compliant.** We recommend `familiarizing yourself with the GDPR <http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2016.119.01.0001.01.ENG&toc=OJ:L:2016:119:TOC>`_ and looking into other measures that you may need to take.

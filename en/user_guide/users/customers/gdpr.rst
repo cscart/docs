@@ -6,7 +6,9 @@ How To: View, Export, or Anonymize Customer's Personal Data (GDPR)
 
     The functionality described in this article is a part of the :doc:`GDPR Compliance (EU) </user_guide/addons/gdpr/index>` add-on that first appeared in CS-Cart and Multi-Vendor 4.7.4.
 
-Customers can request their personal data in the XML format or anonymization of the said data by contacting you. For example, they can use the email address you provide in your Privacy Policy or in the notices about personal data processing. Here's how an administrator can work with personal data:
+Customers can request their personal data in the XML format or anonymization of the said data by contacting you. For example, they can use the email address you provide in your Privacy Policy or in the notices about personal data processing. Starting with version 4.8.1, there is :ref:`an easier way to contact store owners regarding data removal <gdpr-data-request-buttons>`.
+
+Here's how an administrator can work with personal data:
 
 #. In the Administration panel, go to **Customers → Customers**.
 

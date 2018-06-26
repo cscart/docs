@@ -23,11 +23,3 @@ Use this section to adjust the settings related to your store's security:
     http://www.example.com/admin.php?dispatch=profiles.password_reminder&cron_password=access_key 
 
   Replace ``www.example.com`` with your domain, and ``access_key`` with the key you enter in this field.
-
-* **Notify visitors about cookies use**—if you enable this setting, visitors will see the following note when they enter the site:
-
-  .. image:: img/cookies_note.png
-      :align: center
-      :alt: Notification about cookies for the store visitors.
-
-  The note will be visible until a visitor clicks **OK**.

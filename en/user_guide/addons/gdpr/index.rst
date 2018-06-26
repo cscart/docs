@@ -2,10 +2,6 @@
 GDPR Compliance (EU)
 ********************
 
-.. note::
-
-    This add-on first appeared in CS-Cart and Multi-Vendor 4.7.4. Our support staff can offer guidance to those who use older versions; for a small fee we can even adapt the add-on for your store. Please `contact our technical support via Help Desk <https://helpdesk.cs-cart.com>`_ for more information.
-
 This add-on helps you comply with the GDPR, a European Union regulation on personal data processing. **The add-on by itself doesn't guarantee compliance with the GDPR**; it only gives you the tools to achieve compliance.
 
 .. contents::
@@ -38,9 +34,11 @@ How Does the Add-on Help to Comply with GDPR?
 Tools to Ask for Consent
 ------------------------
 
-* *Optional checkboxes* that can appear in the standard places where personal data is collected (such as checkout, registration, newsletter subscription, etc.). 
+* *Optional checkboxes* that can appear in the standard places where personal data is collected (such as checkout, registration, newsletter subscription, etc.).
 
 * *Notices about personal data processing* that appear next to each of the checkboxes mentioned above. The text of each notice can be customized separately.
+
+* *Requesting active consent for cookies* before the customer can enter the site (optional).
 
   .. image:: img/gdpr-storefront.png
       :align: center
@@ -68,7 +66,7 @@ Tools to Manage Personal Data
 
   .. note::
 
-      Customers can request you to provide their data or anonymize them by contacting you. For example, they can do it via the email address you provide in the notices about personal data processing.
+      Customers have to request their personal data or anonymization by sending an email to the address you specify in the notices about personal data processing. However, you can :ref:`make sending a GDRP-related email easier for your customers <gdpr-data-request-buttons>`.
 
   .. image:: img/gdpr-user.png
       :align: center
