@@ -34,13 +34,10 @@ Here are some of the payment methods that you can set up in CS-Cart and Multi-Ve
     ideal
     nochex
     paypal
-    paypal_adaptive_payments
     paypal_advanced
     paypal_express
     paypalpro
-    ping
     sagepay
-    stripe_connect
     worldpay
 
 .. toctree::
