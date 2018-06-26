@@ -4,7 +4,7 @@ How To: Set up CS-Cart with Amazon Checkout
 
 .. warning::
 
-    **Checkout by Amazon** is a deprecated payment method. Learn more at `payments.amazon.com <https://payments.amazon.com/help/81690>`_.
+    **Checkout by Amazon** `has been discontinued <https://payments.amazon.com/help/81690>`_ and can no longer be used.
 
 *	In the Administration panel, go to **Administration → Payment methods**.
 *	Click the **+** button on the right.
