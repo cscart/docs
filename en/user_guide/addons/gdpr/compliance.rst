@@ -60,7 +60,7 @@ The GDPR requires you to give customers the data you have about them, or anonymi
 
 #. Switch to the **Profiles** tab.
 
-#. :doc:`Add a new block </user_guide/look_and_feel/layouts/blocks/actions_on_blocks>`; when doing so, switch to the **Create New Block** tab and choose **GDRP**. That's the block that contains the buttons for contacting store owners.
+#. :doc:`Add a new block </user_guide/look_and_feel/layouts/blocks/actions_on_blocks>`; when doing so, switch to the **Create New Block** tab and choose **GDPR**. That's the block that contains the buttons for contacting store owners.
 
    .. image:: img/gdpr-block.png
        :align: center
@@ -74,9 +74,11 @@ The GDPR requires you to give customers the data you have about them, or anonymi
 
    * *Remove my data*
 
-   By clicking these buttons, customers will be able to leave a comment and send a corresponding email to the *User department email address* 
+   By clicking these buttons, customers will be able to leave a comment and send a corresponding email to the *User department email address*. If you only have one storefront (or if you use Multi-Vendor), this email address will be taken from **Settings → Company**. If you have multiple storefronts in CS-Cart, then the address will be taken from the settings of the storefront that a customer visits.
 
-   If you only have one storefront (or if you use Multi-Vendor), this email address will be taken from **Settings → Company**. If you have multiple storefronts in CS-Cart, then the address will be taken from the settings of the storefront that a customer visits.
+   .. important::
+
+       Once the emails are received, it is up to the administrators to :doc:`export personal data or anonymize those customers </user_guide/users/customers/gdpr>`.
 
    .. image:: img/gdpr-buttons.png
        :align: center
