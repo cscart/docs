@@ -33,6 +33,7 @@ Here are some of the payment methods that you can set up in CS-Cart and Multi-Ve
     hsbc
     ideal
     nochex
+    paypal_for_marketplaces
     paypal
     paypal_adaptive_payments
     paypal_advanced
