@@ -34,8 +34,8 @@ Here are some of the payment methods that you can set up in CS-Cart and Multi-Ve
     ideal
     nochex
     paypal_for_marketplaces
-    paypal
     paypal_adaptive_payments
+    paypal
     paypal_advanced
     paypal_express
     paypalpro

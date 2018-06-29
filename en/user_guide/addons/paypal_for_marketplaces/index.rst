@@ -2,9 +2,9 @@
 PayPal for Marketplaces
 ***********************
 
-.. note::
+.. important::
 
-    This add-on comes with Multi-Vendor 4.8.1 and newer versions.
+    This add-on comes with Multi-Vendor 4.8.1 and newer versions. The integration hasn't been certified by PayPal yet, so we recommend using :doc:`/user_guide/addons/paypal_adaptive/index` for the time being.
 
 By default, :doc:`all the money from orders in Multi-Vendor goes to marketplace owner </user_guide/users/vendors/workflow>`. The :doc:`Accounting </user_guide/users/vendors/account_balance>` page helps to manage money afterwards: vendors receive money on their balance (except for the transaction fees specified in their :doc:`vendor plans </user_guide/addons/vendor_plans/index>`) and can :ref:`request the withdrawal of that money <withdrawal>` later. This approach adds work for marketplace owners, who have to figure out how to transfer the requested money to vendors.
 
@@ -18,7 +18,7 @@ The **PayPal for Marketplaces** add-on addresses that problem: customers still m
 Advantages over PayPal Adaptive Payments
 ========================================
 
-Previously, Multi-Vendor had another solution from PayPal called Adaptive Payments. PayPal `disabled sign-ups for Adaptive Payments <https://www.paypal-community.com/t5/Adaptive-Payments-Accounts/PayPal-Apps-com-will-be-permanently-unavailable-starting/m-p/1357320>`_ on December 1, 2017. We encourage new Multi-Vendor users to use **PayPal for Marketplaces** instead; this add-on is better than Adaptive Payments in a couple of ways.
+Previously, Multi-Vendor had another solution from PayPal called Adaptive Payments. PayPal `disabled sign-ups for Adaptive Payments <https://www.paypal-community.com/t5/Adaptive-Payments-Accounts/PayPal-Apps-com-will-be-permanently-unavailable-starting/m-p/1357320>`_ on December 1, 2017. That's why we're providing an integration with **PayPal for Marketplaces**. The add-on is better than Adaptive Payments in a couple of ways.
 
 * With Adaptive Payments, the payment process had to be split into multiple steps at checkout when items were being bought from more than 5 vendors. PayPal for Marketplaces no longer has that problem.
 

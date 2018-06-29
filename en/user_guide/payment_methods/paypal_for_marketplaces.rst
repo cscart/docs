@@ -2,9 +2,9 @@
 How To: Set up PayPal for Marketplaces in Multi-Vendor
 ******************************************************
 
-.. note::
+.. important::
 
-    The **PayPal for Marketplaces** add-on first appeared in Multi-Vendor 4.8.1.
+    The **PayPal for Marketplaces** add-on first appeared in Multi-Vendor 4.8.1. The integration hasn't been certified by PayPal yet, so we recommend using :doc:`/user_guide/addons/paypal_adaptive/index` for the time being.
 
 ================================
 Step 1. Configure Payment Method
