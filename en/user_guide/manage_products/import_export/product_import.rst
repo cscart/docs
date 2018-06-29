@@ -36,7 +36,7 @@ How To: Import Products and Product Data (Old Method)
 
    * **Directory for the files of downloadable products**—the path to the directory where the imported product files are located. This will be used if the product file is specified without a path in the imported CSV file.
 
-   * **Set quantity of all products to zero**—шf you enable this setting, all the products in your store will have their quantity set to 0, except for the products that have the quantity specified in the imported file.
+   * **Set quantity of all products to zero**—if you enable this setting, all the products in your store will have their quantity set to 0, except for the products that have the quantity specified in the imported file.
 
    * **Delete existing files of downloadable products**—if you enable this setting, then importing downloadable products will delete their existing files. If the setting is disabled, the new files of downloadable products will simply be added to existing files.
 
