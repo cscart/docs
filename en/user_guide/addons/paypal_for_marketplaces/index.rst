@@ -20,9 +20,9 @@ Advantages over PayPal Adaptive Payments
 
 Previously, Multi-Vendor had another solution from PayPal called Adaptive Payments. PayPal `disabled sign-ups for Adaptive Payments <https://www.paypal-community.com/t5/Adaptive-Payments-Accounts/PayPal-Apps-com-will-be-permanently-unavailable-starting/m-p/1357320>`_ on December 1, 2017. We encourage new Multi-Vendor users to use **PayPal for Marketplaces** instead; this add-on is better than Adaptive Payments in a couple of ways.
 
-* With Adaptive Payments, the payment process could be split into multiple steps at checkout when items were being bought from more than 5 vendors. PayPal for Marketplaces no longer has that problem.
+* With Adaptive Payments, the payment process had to be split into multiple steps at checkout when items were being bought from more than 5 vendors. PayPal for Marketplaces no longer has that problem.
 
-* PayPal Adaptive Payments wasn't integrated with the :doc:`RMA </user_guide/addons/rma/index>` add-on, so refunds had to be done on the PayPal side. PayPal for Marketplaces allows marketplace owners to make a refund right from Multi-Vendor admin panel. The money for the refund will be taken from the vendor.
+* PayPal Adaptive Payments wasn't integrated with the :doc:`RMA </user_guide/addons/rma/index>` add-on, so refunds had to be made on the PayPal side. PayPal for Marketplaces allows marketplace owners to make a refund right from Multi-Vendor admin panel. The money for the refund will be taken from the vendor.
 
   .. image:: img/paypal_for_marketplaces_refund.png
       :align: center
@@ -56,9 +56,9 @@ Let's start with setting up the add-on itself:
 
    **Commission includes**—determines how the money from orders will be diverted to the marketplace owner. There are 2 ways:
 
-   * **Order commission**—when an order is paid, the commissions :doc:`specified via the Vendor Plans add-on </user_guide/users/vendors/manage_vendor_plans>` will be deposited in the marketplace owner's account automatically. The remaining money will be distributed among vendors, and completed :ref:`withdrawals <withdrawal>` will be created for vendors automatically. Any unpaid :ref:`payouts <payout>` (such as periodic fees for using vendor plans) will be ignored.
+   * **Order commission**—when an order is paid, the commissions :doc:`specified via the Vendor Plans add-on </user_guide/users/vendors/manage_vendor_plans>` will be deposited in the marketplace owner's account. The remaining money will be distributed among vendors, and completed :ref:`withdrawals <withdrawal>` will be created for vendors automatically. Any unpaid :ref:`payouts <payout>` (such as periodic fees for using vendor plans) will be ignored.
 
-   * **Order commission and unpaid payouts**—when an order is paid, the commissions :doc:`specified via the Vendor Plans add-on </user_guide/users/vendors/manage_vendor_plans>` will be deposited in the marketplace owner's account automatically.
+   * **Order commission and unpaid payouts**—when an order is paid, the commissions :doc:`specified via the Vendor Plans add-on </user_guide/users/vendors/manage_vendor_plans>` will be deposited in the marketplace owner's account.
 
      If a vendor owes the marketplace a certain sum (for example, an unpaid periodic fee), that sum will be taken from the vendor's share in the order and diverted to the marketplace owner's account as well.
 
@@ -68,9 +68,9 @@ Let's start with setting up the add-on itself:
 
      After that, if the vendor's share has any sum of money left, it will be deposited in the vendor's account and recorded as a completed :ref:`withdrawal <withdrawal>`.
 
-  .. image:: img/paypal_for_marketplaces_settings.png
-      :align: center
-      :alt: The settings of the PayPal for Marketplaces add-on.
+   .. image:: img/paypal_for_marketplaces_settings.png
+       :align: center
+       :alt: The settings of the PayPal for Marketplaces add-on.
 
 #. Once you've chosen whether or not you want to collect unpaid payouts with the aid of PayPal for Marketplaces, click **Save**.
 

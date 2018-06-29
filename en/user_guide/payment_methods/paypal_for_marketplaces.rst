@@ -22,9 +22,9 @@ Step 1. Configure Payment Method
 
    * If necessary, specify the data in other fields as you see fit.
 
-   .. image:: img/paypal_for_marketplaces_general.png
-       :align: center
-       :alt: The general settings of a PayPal for Marketplaces payment method.
+     .. image:: img/paypal_for_marketplaces_general.png
+         :align: center
+         :alt: The general settings of a PayPal for Marketplaces payment method.
 
 #. Switch to the **Configure** tab. It contains the settings specific to PayPal for Marketplaces.
 
