@@ -16,7 +16,7 @@ This article describes how you can test the import functionality of your store b
 
         You'll be able to view or edit a CSV file in a spreadsheet application, for example, Microsoft Office Excel or Libre Office Calc.
 
-#. In the Administration panel, go to **Administration → Import data → Products (Deprecated)**.
+#. In the Administration panel, go to **Administration → Import data → Products (Deprecated)**. Alternatively, you can use the advanced import; it is described :doc:`in another article </user_guide/manage_products/import_export/advanced_product_import>`.
 
    .. hint::
 
@@ -28,21 +28,21 @@ This article describes how you can test the import functionality of your store b
 
 #. In the **Import options** section, specify the following settings:
 
-   * **Skip creating new products**—don't enable this setting; the product doesn't exist in your store yet. If you enable this setting, the product won't be imported.
+   * **Update existing products only**—don't enable this setting; the product doesn't exist in your store yet. If you enable this setting, the product won't be imported.
+
+   * **Images directory**—do not change the value of this field.
+
+   * **Price decimal separator**—leave ``.`` in this field (it is the default value).
 
    * **Category delimiter**—leave ``///`` in this field (it is the default value).
 
    * **Feature variants delimiter**—leave ``///`` in this field (it is the default value).
 
-   * **Images directory**—do not change the value of this field.
+   * **Directory for the files of downloadable products**—do not change the value of this field.
 
-   * **Files directory**—do not change the value of this field.
+   * **Set quantity of all products to zero**—do not tick this checkbox.
 
-   * **Delete all existing product files before import**—do not tick this checkbox.
-
-   * **Reset inventory**—do not tick this checkbox.
-
-   * **Price decimal separator**—leave ``.`` in this field (it is the default value).
+   * **Delete existing files of downloadable products**—do not tick this checkbox.
 
    * **CSV delimiter**—select *Comma*.
 

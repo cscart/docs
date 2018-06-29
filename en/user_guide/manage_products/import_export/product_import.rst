@@ -24,21 +24,21 @@ How To: Import Products and Product Data (Old Method)
 
 #. Specify the following settings:
 
-   * **Skip creating new products**—if you enable this setting, then new products won't be created during the import. If the imported file contains the products that already exist in the database of the store, then those products will be updated.
+   * **Update existing products only**—if you enable this setting, then products that don't exist in the database of your store will be skipped during import. New products won't be created, and if the imported file has products that already exist in the database of the store, then those products will be updated.
+
+   * **Images directory**—the path to the directory where the imported images are located. This will be used if the image file is specified without a path in the imported CSV file.
+
+   * **Price decimal separator**—the symbol that is used to separate the integer part from the fractional part in product prices in the imported CSV file.
 
    * **Category delimiter**—the delimiter that separates parent and child categories in the category path in the imported CSV file.
 
    * **Feature variants delimiter**—the delimiter that separates the feature variants in the imported CSV file.
 
-   * **Images directory**—the path to the directory where the imported images are located. This will be used if the image file is specified without a path in the imported CSV file.
+   * **Directory for the files of downloadable products**—the path to the directory where the imported product files are located. This will be used if the product file is specified without a path in the imported CSV file.
 
-   * **Files directory**—the path to the directory where the imported product files are located. This will be used if the product file is specified without a path in the imported CSV file.
+   * **Set quantity of all products to zero**—шf you enable this setting, all the products in your store will have their quantity set to 0, except for the products that have the quantity specified in the imported file.
 
-   * **Delete all existing product files before import**—tick this checkbox if you want to delete all existing files of a downloadable products when you import it.
-
-   * **Reset inventory**—tick this checkbox if you want to reset inventory for all products.
-
-   * **Price decimal separator**—the symbol that is used to separate the integer part from the fractional part in product prices in the imported CSV file.
+   * **Delete existing files of downloadable products**—if you enable this setting, then importing downloadable products will delete their existing files. If the setting is disabled, the new files of downloadable products will simply be added to existing files.
 
    * **CSV delimiter**—the column delimiter that is be used in the imported CSV file.
 
