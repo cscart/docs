@@ -43,6 +43,7 @@
     seo/index
     social_login/index
     tags/index
+    old_admin_panel/index
     twigmo/index
     yandex_metrika/index
     yml_export/index
