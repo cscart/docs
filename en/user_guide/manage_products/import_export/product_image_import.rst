@@ -2,15 +2,11 @@
 How To: Import Images for Products
 **********************************
 
-There are two ways to import images in the Administration panel:
-
-* **Administration → Import data → Products**: import products along with main images.
-
-* **Administration → Import data → Products → Images**: import main AND additional images for existing products.
+A product in CS-Cart and Multi-Vendor can have multiple images. Normally you'd need to open the product editing page, drag and drop the images into the special area, and save the changes. It's a fast way, but sometimes admins need to update images for a large number of products at once. In this case they use :doc:`product import </user_guide/manage_products/import_export/advanced_product_import>`. This article describes how to import images together with products.
 
 .. important::
 
-    Both ways require a properly formatted CSV file. In most cases, images must be uploaded to the server of your store before you can import them.
+    In most cases, images must be uploaded to the server of your store before you can import them.
 
 
 .. _upload-images-for-import:
@@ -29,17 +25,17 @@ Before you can import the images, you need to upload them. You can do it via:
 File Editor
 -----------
 
-Let’s assume that we want to upload some images for products. These images will be used during the import, so we decide to store them in the **Private files** section, in a separate folder called *images*. Here’s what we do:
+Let’s assume that we want to upload some images for products. They need to be added to the **Private files** section, into a separate folder *exim/backup/images*.
 
-#. Create an archive called **images.zip**. That way we’ll have the *images* folder when we unpack the archive on our server.
+#. Go to **Administration → Files** in the admin panel of your store.
 
-#. Go to **Administration → Files** in the Administration panel of your store.
+#. Choose the **Private files** section.
 
-#. Click **Private files**, then drag and drop your archive with images to the file area.
+#. Go to the *exim/backup/images* directory; if it isn't there, create it.
 
-#. Right-click on the archive and choose **Extract files from archive**.
+#. Upload your images into that directory. You can simply drag your images and drop them in the file area.
 
-   Congratulations! We now have a folder called *images*, and we can refer to those images in a CSV file.
+   Congratulations! Our images are now located in *exim/backup/images*, and we can refer to them in an imported file.
 
    .. image:: img/file_editor.png
        :align: center
@@ -49,164 +45,84 @@ Let’s assume that we want to upload some images for products. These images wil
 FTP Client
 ----------
 
-If you use an FTP client, upload the images to *var/files/[number]*. That’s where the **Private files** are stored.
-
-.. note::
-
-    The *[number]* is determined by the ID of the store or vendor. So, if you want to add a private file for the first storefront (or if you have only one storefront), the path will be *var/files/1*.
+Users of FTP clients can find the **Private files** directory in *var/files/[number]*. The *[number]* is determined by the ID of the store or vendor. So, if you want to add a private file for the first storefront (or if you have only one storefront), the path will be *var/files/1*. All you need to do is create the *exim/backup/images* subfolders and put the images there.
 
 .. hint::
 
     **Public files** are located in *images/companies/[number]*. 
 
-===================================
-Ways to Specify Images in CSV Files
-===================================
+========================================
+Ways to Specify Images in Imported Files
+========================================
 
 There are multiple ways to specify where CS-Cart or Multi-Vendor should look for images.
 
 * **Way 1.** An image URL like ``http://www.example.com/test_image.jpg``.
- 
+
   The URL doesn’t have to lead to your store—you can upload images to an image hosting service and use those URLs. Then the images will be downloaded to your server from there.
 
 * **Way 2.** An absolute path from the root directory of your server to the image file. For example: ``/path/to/cs-cart/var/files/1/test_image.jpg``.
 
-.. important::
+  .. important::
 
-    Ways 3 and 4 require you to upload the images to the **Private files** section or its subdirectories :ref:`as described above <upload-images-for-import>`.
+      Ways 3 and 4 require you to upload the images to the *exim/backup/images* folder in the **Private files** section :ref:`as described above <upload-images-for-import>`.
 
-* **Way 3.** A relative path to the image file from the **Private files** section. For example: ``images/test_image.jpg``.
+* **Way 3.** A relative path to the image file from the **Private files** section. For example: ``import/test_image.jpg``.
 
 * **Way 4.** Only the name of the image file: ``test_image.jpg``.
 
-  In this case you’ll also need to specify a relative path to the image files from the **Private files** section. But unlike Way 3, you’ll need to do it in the CS-Cart Administration panel: there is a special field called **Images directory**.
+  In this case you’ll need to specify the path to image files in the CS-Cart administration panel: there is a special field called **Images directory**.
 
-  If your image files lie directly in the **Private files** section, then leave **Images directory** empty.
+  .. note::
 
-.. note::
+      The value of the **Images directory** is ignored for Ways 1 - 3.
 
-    The value of the **Images directory** is ignored for Ways 1 - 3.
+  .. image:: img/images_directory.png
+      :align: center
+      :alt: If you want to specify only image names in the imported files, then use the "Images directory" field for image import.
 
-.. image:: img/images_directory.png
-    :align: center
-    :alt: If you want to specify only image names in the imported CSV files, then fill in the Images directory field during import.
+  .. hint::
 
-.. hint::
+      You can also specify alternative text for images. Do it after the path or name of the image file, like ``test_image.jpg#{[de]:ALT TEXT;[en]:ALT TEXT;}``.
 
-    You can also specify alternative text for images. Do it after the path or name of the image file, like ``test_image.jpg#{[de]:ALT TEXT;[en]:ALT TEXT;}``.
+===========================
+Example of Importing Images
+===========================
 
-============================
-Examples of Importing Images
-============================
+#. Prepare the images and upload them where necessary. For example, let's upload them to the *exim/backup/images* folder of the **Private files** section, :ref:`as described above <upload-images-for-import>`.
 
--------------------------------------------------
-Example 1: Import Products along with Main Images
--------------------------------------------------
+#. Prepare the imported file. Specify the product data in there as described :doc:`in this article </user_guide/manage_products/import_export/fields_format>`. For example, here is how to :ref:`specify multiple images for a product <advanced-image-import>`.
 
-.. important::
+   Below you'll find an example of the content of an imported file. You can copy this extract to an empty *.txt* file, change the file’s extension to *.csv*, and open it in a spreadsheet editor, for example `LibreOffice Calc <https://www.libreoffice.org/discover/calc/>`_.
 
-    Additional product images will have to be imported separately.
+   ::
 
-#. Prepare the images for import and upload them where necessary. 
+     Product code;Language;Product name;Images
+     "T1";"en";"1st Test Product";"test_image_1.jpg///test_image_2.jpg"
+     "T2";"en";"1nd Test Product";"test_image_3.jpg///test_image_4.jpg"
 
-   In this example we’ll upload the images to the to the *images* directory in the **Private files** section :ref:`as described above <upload-images-for-import>`.
+   Here's what the content of the file means:
 
-#. Go to **Administration → Import data → Products** [1] in the Administration panel of your store.
-
-#. Make sure that your CSV file meets the requirements [2]. Here’s an extract from our CSV file::
-
-     Product code;Language;Product name;Detailed image
-     "D00014MK1P";"en";"My New Product";"images/test_image.jpg"
-
-   You can copy this extract to an empty *.txt* file, change the file’s extension to *.csv*, and open it in a spreadsheet editor, for example `LibreOffice Calc <https://www.libreoffice.org/discover/calc/>`_.
-
-   * **Product code**—determines the product to which an image belongs. If you enter a non-existing product code in the CSV file, a new product with the specified image will be created.
+   * **Product code**—determines the product to which an image belongs. If you enter a non-existing product code in the imported file, a new product with the specified image will be created.
 
      .. hint::
 
-         To get the codes of existing products in a CSV file, go to **Administration → Export data → Products** and export your products.
+         To update images of existing products, you need to know their product codes. Get the codes of existing products in a CSV file by :doc:`exporting those products </user_guide/manage_products/import_export/product_export>`.
 
    * **Language**—a two-letter language code, for example, ``en``. This is a required field for importing products.
 
-   * **Detailed image**—the name (and sometimes location) of the image. In this example we specify a relative path to the image file from the **Private files** section.
+   * **Images**—the names (and sometimes locations) of the product images.
 
-#. Specify the import options [3]. Not all of them are required, since we’re not importing product categories, prices, etc. Here are the options that pose interest:
+#. :doc:`Import the products </user_guide/manage_products/import_export/advanced_product_import>`. 
 
-   * **Images directory**—since we specified the locations of the images in the CSV file, this setting will be ignored.
+   When matching the columns on the **Fields mapping** tab, make sure to match each of the columns in the imported file with a product property in CS-Cart. Most of the columns have the same names as the corresponding product properties; the **images** column must be matched with **Advanced Import: Images**.
 
-   * **CSV delimiter**—select how the columns are separated from each other in your CSV file. The extract above uses *semicolon* (``;``) as a delimiter.
+   If necessary, you can also switch to the **Settings** tab and tick the **Delete existing additional images** checkbox in the additional settings. That way you'll replace the the old images of the imported products with new ones, rather than adding the new images to existing ones.
 
-#. Select a CSV file to import [4]:
+   .. note::
 
-   * **Local**—upload a file from your computer.
-
-   * **Server**—choose one of the files from the server of your store.
-
-   * **URL**—enter the direct link to the CSV file.
-
-#. Click **Import** [5]. 
-
-   You’ll see a bar indicating the import progress. Once it is full, the images of the specified products will be updated. Products with non-existent product codes will be created.
+       In this example, all images of a product are specified in one column and are separated from each other with the default ``///`` image delimiter. The import preset settings allow you to enter a different delimiter. You can even specify each image in a separate column. In that case all columns with images must be matched with **Advanced Import: Images**.
 
 .. image:: img/import_products_with_images.png
     :align: center
     :alt: Importing images along with products in CS-Cart.
-
-------------------------------------------------------------------
-Example 2: Import Main and Additional Images for Existing Products
-------------------------------------------------------------------
-
-#. Prepare the images for import and upload them where necessary. 
-
-   In this example we’ll upload the images to the to the *images* directory in the **Private files** section :ref:`as described above <upload-images-for-import>`.
-
-#. Go to **Administration → Import data → Products** [1] in the Administration panel of your store.
-
-#. Switch to the **Images** tab [2]. Make sure that your CSV file meets the requirements described there [3]. 
-
-   Here’s an extract from our CSV file::
-
-     Product code;Pair type;Thumbnail;Detailed image
-     "G0017";"M";"";"test_image.jpg"
-
-   You can copy this extract to an empty *.txt* file, change the file’s extension to *.csv*, and open it in a spreadsheet editor, for example `LibreOffice Calc <https://www.libreoffice.org/discover/calc/>`_.
-
-   * **Product code**—determines the product to which an image belongs. If you enter a code that doesn’t exist, the entry will be skipped.
-
-     .. hint::
-
-         To get the codes of existing products in a CSV file, go to **Administration → Export data → Products** and export your products.
-
-   * **Pair type**—determines the type of the image:
-
-     * *M*—main.
-
-     * *A*—additional.
-
-   * **Thumbnail**—a smaller version of the image. We left the field empty, so that the thumbnail would be generated automatically from the detailed image.
-
-   * **Detailed image**—the name (and sometimes location) of the image. In this example we only specify the name of the file with its extension.
-
-#. Specify the import options [4]:
-
-   * **Images directory**—since in this example we don’t specify the location of the images in the CSV file, we’ll need to specify the relative path to the directory with images from the **Private files** section. In this example we type ``images/`` in this field.
-
-   * **Clean up**—tick this checkbox to delete the existing images of a product before importing new additional images for it.
-
-   * **CSV delimiter**—select how the columns are separated from each other in your CSV file. The extract above uses *semicolon* (``;``) as a delimiter.
-
-#. Select a CSV file to import [5]:
-
-   * **Local**—upload a file from your computer.
-
-   * **Server**—choose one of the files from the server of your store.
-
-   * **URL**—enter the direct link to the CSV file.
-
-#. Click **Import** [6].
-
-   You’ll see a bar indicating the import progress. Once it is full, the images of the products should be updated. Entries with non-existing product code will be skipped.
-
-.. image:: img/import_product_images.png
-    :align: center
-    :alt: Importing images for existing products in CS-Cart.
