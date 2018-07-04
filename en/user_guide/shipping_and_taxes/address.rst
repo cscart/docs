@@ -12,13 +12,7 @@ CS-Cart and Multi-Vendor need the address of the store and the address of the cu
 Default Customer Address
 ========================
 
-The **Settings → General** page allows you to specify the **Default location**, in other words, the default customer address. It will be used in the following cases:
-
-* The customer proceeds to checkout for the first time.
-
-* The customer doesn't enter the data required for shipping rate calculation.
-
-* You ship only to specific are (for example, New York), and you want to remove the extra fields.
+The **Settings → General** page allows you to specify the **Default location**, in other words, the default customer address. It will be used for testing the rate calculation of :doc:`real-time shipping methods </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/index>` in the admin panel.
 
 .. image:: img/default_location.png
     :align: center
@@ -37,7 +31,3 @@ The **Settings → Company** page allows you to specify the sender address (the 
 .. image:: img/company_address.png
     :align: center
     :alt: The "Settings → Company" page in CS-Cart contains the sender's address.
-
-
-
-
