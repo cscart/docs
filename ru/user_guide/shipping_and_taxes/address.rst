@@ -32,7 +32,3 @@
 
 .. fancybox:: img/shippings_025.png
     :alt: Страница "Настройки → Компания" в CS-Cart.
-
-
-
-

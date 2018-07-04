@@ -33,7 +33,4 @@ The **Settings → Company** page allows you to specify the sender address (the 
     :alt: The "Settings → Company" page in CS-Cart contains the sender's address.
 
 
-Hello, Atul. I’m Olga from CS-Cart.com. We develop Multi-Vendor, a CMS for online marketplaces used worldwide. Our every 3rd client is from the USA, and we’re looking for new partners to create and customize online stores for them. I thought we could get in touch if you're interested.
-
-
 
