@@ -88,6 +88,8 @@ The full path to the main category of the product. Parent and child categories i
 
     If the specified categories and subcategories don't exist in the database, they will be created.
 
+If the name of your category contains a colon (``:``), for example *Promotions///Discount: 10%*, then you need to escape it like this in the imported file: ``|Promotions///Discount: 10%|``. Otherwise the category won't be imported correctly.
+
 =====
 Price
 ===== 
@@ -682,6 +684,10 @@ The full path to additional categories to which the product is assigned. Parent 
 .. important::
 
     EXAMPLE (the delimiter is *///*): *Computers///New products; Computers///Desktops*
+
+If the name of your category contains a colon (``:``), for example *Promotions///Discount: 10%*, then you need to escape it like this in the imported file: ``|Promotions///Discount: 10%|``. Otherwise the category won't be imported correctly.
+
+When you have multiple secondary categories, it can look like this: ``Best Products;|Promotions///Discount: 10%|``.
 
 ============
 Items in box
