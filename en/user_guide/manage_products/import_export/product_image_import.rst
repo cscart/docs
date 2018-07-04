@@ -2,7 +2,7 @@
 How To: Import Images for Products
 **********************************
 
-A product in CS-Cart and Multi-Vendor can have multiple images. Normally you'd need to open the product editing page, drag and drop the images into the special area, and save the changes. It's a fast way, but sometimes admins need to update images for a large number of products at once. In this case they use :doc:`product import </user_guide/manage_products/import_export/advanced_product_import>`. This article describes how to import images together with products.
+A product in CS-Cart and Multi-Vendor can have multiple images. To add images for a product, you normally need to open the product editing page, drag and drop the images into the special area, and save the changes. It's a fast way, but sometimes admins need to update images for a large number of products at once. In this case they use :doc:`product import </user_guide/manage_products/import_export/advanced_product_import>`. This article describes how to import images together with products.
 
 .. important::
 
@@ -25,7 +25,7 @@ Before you can import the images, you need to upload them. You can do it via:
 File Editor
 -----------
 
-Let’s assume that we want to upload some images for products. They need to be added to the **Private files** section, into a separate folder *exim/backup/images*.
+Let’s assume that we want to upload some images for products. They need to be added to the **Private files** section, into a special directory: *exim/backup/images*.
 
 #. Go to **Administration → Files** in the admin panel of your store.
 
@@ -59,13 +59,9 @@ There are multiple ways to specify where CS-Cart or Multi-Vendor should look for
 
 * **Way 1.** An image URL like ``http://www.example.com/test_image.jpg``.
 
-  The URL doesn’t have to lead to your store—you can upload images to an image hosting service and use those URLs. Then the images will be downloaded to your server from there.
+  The URL doesn’t have to lead to your store—you can upload images to an image hosting service and use those URLs. The images will be copied to your server automatically during import.
 
 * **Way 2.** An absolute path from the root directory of your server to the image file. For example: ``/path/to/cs-cart/var/files/1/test_image.jpg``.
-
-  .. important::
-
-      Ways 3 and 4 require you to upload the images to the *exim/backup/images* folder in the **Private files** section :ref:`as described above <upload-images-for-import>`.
 
 * **Way 3.** A relative path to the image file from the **Private files** section. For example: ``import/test_image.jpg``.
 
@@ -113,16 +109,14 @@ Example of Importing Images
 
    * **Images**—the names (and sometimes locations) of the product images.
 
-#. :doc:`Import the products </user_guide/manage_products/import_export/advanced_product_import>`. 
+#. :doc:`Import the products </user_guide/manage_products/import_export/advanced_product_import>`. When matching the columns on the **Fields mapping** tab, make sure to match each of the columns in the imported file with a product property in CS-Cart. Most of the columns have the same names as the corresponding product properties; the **images** column must be matched with **Advanced Import: Images**.
 
-   When matching the columns on the **Fields mapping** tab, make sure to match each of the columns in the imported file with a product property in CS-Cart. Most of the columns have the same names as the corresponding product properties; the **images** column must be matched with **Advanced Import: Images**.
+   .. image:: img/import_products_with_images.png
+       :align: center
+       :alt: Importing images along with products in CS-Cart.
 
    If necessary, you can also switch to the **Settings** tab and tick the **Delete existing additional images** checkbox in the additional settings. That way you'll replace the the old images of the imported products with new ones, rather than adding the new images to existing ones.
 
    .. note::
 
        In this example, all images of a product are specified in one column and are separated from each other with the default ``///`` image delimiter. The import preset settings allow you to enter a different delimiter. You can even specify each image in a separate column. In that case all columns with images must be matched with **Advanced Import: Images**.
-
-.. image:: img/import_products_with_images.png
-    :align: center
-    :alt: Importing images along with products in CS-Cart.
