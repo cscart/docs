@@ -8,7 +8,7 @@ Old Admin Panel [Deprecated]
 
 The responsive admin panel adapts to the size of the screen it is displayed on. It means that admins won't have to scroll both horizontally and vertically trying to find a control element in the admin panel while working on mobile devices.
 
-We first added responsive admin panel CS-Cart 4.7.3 as a [Beta] add-on. You could install and activate the add-on; after that the admin panel would becme responsive. In version 4.8.1 we made responsive admin panel a part of the core and the default experience in CS-Cart and Multi-Vendor. However, we also kept the old admin panel as an add-on for backward compatibility.
+We first added responsive admin panel CS-Cart 4.7.3 as a [Beta] add-on. You could install and activate the add-on; after that the admin panel would become responsive. In version 4.8.1 we made responsive admin panel a part of the core and the default experience in CS-Cart and Multi-Vendor. However, we also kept the old admin panel as an add-on for backward compatibility.
 
 * Those who make a fresh installation of version 4.8.1 (or upgraded to version 4.8.1 while having the **Responsive Admin Panel [Beta]** add-on active) will have the responsive admin panel by default.
 
@@ -34,7 +34,7 @@ We first added responsive admin panel CS-Cart 4.7.3 as a [Beta] add-on. You coul
 
   #. Find the **Old Admin Panel [Deprecated]** add-on on the list.
 
-  #. Click the gear button next to it and choose **Uninstall**.
+  #. Change the status of the add-on to *Disabled* or click the gear button and choose **Uninstall**.
 
      .. image:: img/disabling_old_admin_panel.png
          :align: center
