@@ -65,10 +65,10 @@ The logic of working with this table is handled by the PHP code. We’ll use the
 
   ::
 
-    SELECT "products".*, "product_descriptions".* FROM "products"
-    INNER JOIN "product_descriptions"
-        ON "product_descriptions"."product_id" = "products"."product_id"
-        AND "product_descriptions"."lang_code" = 'en'
+    SELECT products.*, product_descriptions.* FROM products
+    INNER JOIN product_descriptions
+        ON product_descriptions.product_id = products.product_id
+        AND product_descriptions.lang_code = 'en'
 
 ====================
 Table Storage Engine
