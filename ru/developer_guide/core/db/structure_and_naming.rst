@@ -72,10 +72,10 @@
 
   .. code-block:: sql
 
-      SELECT "products".*, "product_descriptions".* FROM "products"
-      INNER JOIN "product_descriptions"
-          ON "product_descriptions"."product_id" = "products"."product_id"
-          AND "product_descriptions"."lang_code" = 'en'
+      SELECT products.*, product_descriptions.* FROM products
+      INNER JOIN product_descriptions
+          ON product_descriptions.product_id = products.product_id
+          AND product_descriptions.lang_code = 'en'
 
 ==========
 Тип таблиц
