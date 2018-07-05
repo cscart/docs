@@ -480,14 +480,14 @@ SQL Queries
   ::
 
       $partner_balances = db_get_hash_array(
-          "SELECT pa.partner_id, u.user_login, u.firstname, u.lastname, u.email, SUM(amount) as amount"
-          . " FROM ?:aff_partner_actions as pa"
-          . " LEFT JOIN ?:users as u ON pa.partner_id = u.user_id"
-          . " LEFT JOIN ?:aff_partner_profiles as pp ON pa.partner_id = pp.user_id"
-          . " LEFT JOIN ?:affiliate_plans as ap ON ap.plan_id = pp.plan_id AND ap.plan_id2 = pp.plan_id2"
-              . " AND ap.plan_id3 = pp.plan_id3"
-          . " WHERE pa.approved = 'Y' AND payout_id = 0 ?p ?p"
-          . " ORDER BY $sorting $limit",
+          'SELECT pa.partner_id, u.user_login, u.firstname, u.lastname, u.email, SUM(amount) as amount'
+          . ' FROM ?:aff_partner_actions as pa'
+          . ' LEFT JOIN ?:users as u ON pa.partner_id = u.user_id'
+          . ' LEFT JOIN ?:aff_partner_profiles as pp ON pa.partner_id = pp.user_id'
+          . ' LEFT JOIN ?:affiliate_plans as ap ON ap.plan_id = pp.plan_id AND ap.plan_id2 = pp.plan_id2'
+              . ' AND ap.plan_id3 = pp.plan_id3'
+          . ' WHERE pa.approved = 'Y' AND payout_id = 0 ?p ?p'
+          . ' ORDER BY $sorting $limit',
           'partner_id', $condition, $group
       );
 
@@ -506,12 +506,12 @@ SQL Queries
          $joins = array();
 
           // Every part of the query is wrapped in db_quote(), regardless of whether placeholders are necessary
-          $joins[] = db_quote(' LEFT JOIN `foo` AS `f` ON `f`.`product_id` = `products`.`product_id`');
-          $joins[] = db_quote(' LEFT JOIN `bar` AS `b` ON `b`.`product_id` = `products`.`product_id` AND `b`.`order_id` = ?n', $order_id);
+          $joins[] = db_quote(' LEFT JOIN "foo" AS "f" ON "f"."product_id" = "products"."product_id"');
+          $joins[] = db_quote(' LEFT JOIN "bar" AS "b" ON "b"."product_id" = "products"."product_id" AND "b"."order_id" = ?n', $order_id);
 
           $query = db_quote(
-              'SELECT * FROM `products`'
-              . ' WHERE `products`.`status` = "A"'
+              'SELECT * FROM "products"'
+              . ' WHERE "products"."status" = "A"'
               . ' ?p', // the joins list is inserted into the query with the "?p" placeholder
               implode(' ', $joins)
           );
