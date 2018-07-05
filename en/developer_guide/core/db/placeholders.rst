@@ -253,10 +253,10 @@ For example::
       'field2' => '200',
       'field3' => null,
       'field4' => array(100, 'value'),
-      array("field5", "<=", 200),
-      array("field6", "NOT IN", array(100, 'value')),
+      array('field5', "<=", 200),
+      array('field6', "NOT IN", array(100, 'value')),
       array('field7', '!=', 300),
-      array("field8", "NULL", false)
+      array('field8', "NULL", false)
   );
 
   db_query('SELECT * FROM ?:orders WHERE ?w', $data);
@@ -267,10 +267,10 @@ Resulting query:
 
     SELECT * cscart_orders
         WHERE
-            `field1` = 100 AND `field2` = 200
-            AND `field3` IS NULL AND `field4` IN (100, 'value')
-            AND `field5` <= 200 AND `field6` NOT IN (100, 'value')
-            AND `field7` != 300 AND `field8` IS NOT NULL
+            "field1" = 100 AND "field2" = 200
+            AND "field3" IS NULL AND "field4" IN (100, 'value')
+            AND "field5" <= 200 AND "field6" NOT IN (100, 'value')
+            AND "field7" != 300 AND "field8" IS NOT NULL
 
 --
 ?f
