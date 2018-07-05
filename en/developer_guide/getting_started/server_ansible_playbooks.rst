@@ -30,7 +30,7 @@ Depending on your server’s operating system, run the following commands one by
 
   .. code-block:: bash
 
-      sudo rpm -ihv https://releases.ansible.com/ansible/rpm/release/epel-6-x86_64/ansible-2.4.1.0-1.el6.ans.noarch.rpm
+      sudo rpm -ihv https://releases.ansible.com/ansible/rpm/release/epel-6-x86_64/ansible-2.4.5.0-1.el6.ans.noarch.rpm
 
 * On **CentOS 7:**
 
@@ -44,7 +44,7 @@ Depending on your server’s operating system, run the following commands one by
 
   .. code-block:: bash
 
-      sudo rpm -ihv https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/ansible-2.4.1.0-1.el7.ans.noarch.rpm
+      sudo rpm -ihv https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/ansible-2.4.5.0-1.el7.ans.noarch.rpm
 
 * On **Ubuntu 14.04:**
 
