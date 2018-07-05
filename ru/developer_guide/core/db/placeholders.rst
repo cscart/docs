@@ -59,7 +59,7 @@
     $user_id = '1';
 
     // Пример 1. Получим строку из таблицы cscart_orders по user_id . 
-    $user_array = db_get_row("SELECT * FROM ?:users WHERE user_id = ?i", $user_id);
+    $user_array = db_get_row('SELECT * FROM ?:users WHERE user_id = ?i', $user_id);
 
     // Пример 2. Обновим фамилию и имя по user_id
     $update_data = array (
@@ -67,7 +67,7 @@
         'lastname' => 'Баженов',
     );
 
-    db_query("UPDATE ?:users SET ?u WHERE user_id = ?i", $updat_data, $user_id);
+    db_query('UPDATE ?:users SET ?u WHERE user_id = ?i', $updat_data, $user_id);
 
     // Пример 3. Как плейсхолдер повышает безопасность.
 
@@ -75,7 +75,7 @@
     $user_id = '7 OR true';
 
     // Перед запросом плейсхолдер отфильтрует входящие данные и оставит только 7
-    db_query("SELECT * FROM ?:users WHERE user_id = ?i", $user_id);
+    db_query('SELECT * FROM ?:users WHERE user_id = ?i', $user_id);
 
 
 Запрос, который будет отправлен:
@@ -102,15 +102,15 @@
 
     // Пример 1. Изменим статус пользователя 
     $email = 'dbazhenov@cs-cart.ru';
-    db_query("UPDATE ?:users SET status = ?s WHERE email = ?s", 'A', $email);
+    db_query('UPDATE ?:users SET status = ?s WHERE email = ?s', 'A', $email);
 
     // Пример 2. Получим список email активных покупателей.
     $status = 'A';
-    $active_users = db_get_fields("SELECT email FROM ?:users WHERE status = ?s", $status);
+    $active_users = db_get_fields('SELECT email FROM ?:users WHERE status = ?s', $status);
 
     // Пример 3. Получим данные заказов с доставкой в город Москва
     $b_city = 'Москва';
-    $orders_array = db_get_array("SELECT * FROM ?:orders WHERE b_city = ?s", $b_city);
+    $orders_array = db_get_array('SELECT * FROM ?:orders WHERE b_city = ?s', $b_city);
 
 
 Запрос, который будет отправлен:
@@ -207,7 +207,7 @@
         'user_type' => 'C'
     );
 
-    $user_id = db_query("INSERT INTO ?:users ?e", $user_data);
+    $user_id = db_query('INSERT INTO ?:users ?e', $user_data);
 
     // $user_id будет содержать ID созданного пользователя.
 
@@ -282,7 +282,7 @@
     $fields = implode(',', $fields);
 
     // Красивый запрос.
-    $orders = db_get_array("SELECT ?p FROM ?:orders ?p WHERE ?p ", $fields, $join, $condition);
+    $orders = db_get_array('SELECT ?p FROM ?:orders ?p WHERE ?p ', $fields, $join, $condition);
 
     // В $orders нам будет доступен массив заказов нашего покупателя.
 
@@ -346,10 +346,10 @@
       'field2' => '200',
       'field3' => null,
       'field4' => array(100, 'value'),
-      array("field5", "<=", 200),
-      array("field6", "NOT IN", array(100, 'value')),
+      array('field5', "<=", 200),
+      array('field6', "NOT IN", array(100, 'value')),
       array('field7', '!=', 300),
-      array("field8", "NULL", false)
+      array('field8', "NULL", false)
   );
 
   db_query('SELECT * FROM ?:orders WHERE ?w', $data);
@@ -358,10 +358,10 @@
 
   SELECT * cscart_orders
       WHERE
-          `field1` = 100 AND `field2` = 200
-          AND `field3` IS NULL AND `field4` IN (100, 'value')
-          AND `field5` <= 200 AND `field6` NOT IN (100, 'value')
-          AND `field7` != 300 AND `field8` IS NOT NULL
+          "field1" = 100 AND "field2" = 200
+          AND "field3" IS NULL AND "field4" IN (100, 'value')
+          AND "field5" <= 200 AND "field6" NOT IN (100, 'value')
+          AND "field7" != 300 AND "field8" IS NOT NULL
 
 -------------------------------------------------------------------
 ?f — проверка, является ли значение переменной валидным именем поля
