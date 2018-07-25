@@ -28,7 +28,7 @@ Searchanise can search through products, categories and pages (i.e., blog posts)
 
 .. important ::
 
-    Searchanise was incompatible with the :doc:`Age Verification </user_guide/addons/age_verification/index>`_ add-on until CS-Cart & Multi-Vendor 4.8.1.
+    Searchanise was incompatible with the :doc:`Age Verification </user_guide/addons/age_verification/index>` add-on until CS-Cart & Multi-Vendor 4.8.1.
 
 With the Searchanise panel you can navigate through the Searchanise sections that are described separately further in this guide.
 
