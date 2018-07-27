@@ -4,7 +4,7 @@ Emails
 
 The settings in this section determine how CS-Cart or Multi-Vendor will send email messages and notifications.
 
-* **Send vendor emails from marketplace email addresses** (this setting exists only in Multi-Vendor)—if you tick this checkbox, then email notifications (for example, about order status changes) will be sent from the email address of the marketplace rather than from the email addresses of vendors.
+* **Send vendor emails from marketplace email addresses** (this setting exists only in Multi-Vendor, starting with version 4.7.3)—if you tick this checkbox, then email notifications (for example, about order status changes) will be sent from the email address of the marketplace rather than from the email addresses of vendors.
 
   This setting comes in handy when you use SMTP server for sending emails, and it has a strict configuration that doesn't allow sending messages from vendors' email addresses.
 
