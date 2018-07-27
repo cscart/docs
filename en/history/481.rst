@@ -161,3 +161,13 @@ Bug Fixes
 [!] {#7232} Multi-Vendor: Categories: Demo data: Some categories available for a vendor in the demo data didn't appear on the vendor page. Fixed.
 
 [!] {#7239} REST API: Orders: The 'parent_order_id' was reset to zero after an order was edited. Fixed.
+
+=============
+Service Packs
+=============
+
+---------
+4.8.1.SP1
+---------
+
+[!] Security: A vulnerability could allow an intruder to inject SQL queries (the extent of possible damage depended on server settings). Fixed.
