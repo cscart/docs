@@ -6,7 +6,7 @@ SEO Rules
 
     To control the URL names in your store, enable and configure the **SEO** add-on under **Add-ons → Manage add-ons**.
 
-The **Website → SEO → SEO rules** section allows you to define global rules for URL rewriting in your store. You can replace URLs like *http://www.example.com/index.php?dispatch=auth.login_form* with user-friendly URLs optimized for search engines, like *http://www.example.com/login*. Moreover, with the provided multi-language support, your shopping cart will be indexed by search engine crawlers in different languages (requires a purchased license).
+The **Website → SEO → SEO rules** section allows you to define global rules for URL rewriting in your store. You can replace URLs like *http://www.example.com/index.php?dispatch=auth.login_form* with user-friendly URLs optimized for search engines, like *http://www.example.com/login*. Moreover, with the provided multi-language support, your shopping cart will be indexed by search engine crawlers in different languages.
 
 Here you need to specify the URLs that should be rewritten and their substitution names. 
 
