@@ -38,11 +38,11 @@ There is also one hidden initial status—**Incomplete**. It means that the orde
 
 That is how order statuses are assigned:
 
-* A customer places an order, and the order is placed with the *Incomplete* status which does not change the inventory.
+* A customer places an order, and the order is placed with the **Incomplete** status which does not change the inventory.
 
-* If the customer uses an offline payment method, the order status changes to *Open* until the store administrator assigns a different status to the order.
+* If the customer uses an offline payment method, the order status changes to **Open** until the store administrator assigns a different status to the order.
 
-* If the customer uses an online payment method, a positive response of the payment gateway will change the order status to *Complete*. If the response is negative, no new order will be created, and the customer will be offered to place the order again.
+* If the customer uses an online payment method, a positive response of the payment gateway will change the order status to *Processed*. If the response is negative, no new order will be created, and the customer will be offered to place the order again.
 
 ===============
 In This Section
