@@ -42,7 +42,7 @@ That is how order statuses are assigned:
 
 * If the customer uses an offline payment method, the order status changes to **Open** until the store administrator assigns a different status to the order.
 
-* If the customer uses an online payment method, a positive response of the payment gateway will change the order status to *Processed*. If the response is negative, no new order will be created, and the customer will be offered to place the order again.
+* If the customer uses an online payment method, a positive response of the payment gateway will change the order status to **Processed**. If the response is negative, no new order will be created, and the customer will be offered to place the order again.
 
 ===============
 In This Section
