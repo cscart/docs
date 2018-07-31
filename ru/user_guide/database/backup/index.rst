@@ -13,4 +13,6 @@
     :titlesonly:
     :glob:
 
-    *
+    create_database_backup
+    restore_database_backup
+    backup_via_console

@@ -13,4 +13,6 @@ This section deals with database backups: here you can learn how to create them 
     :titlesonly:
     :glob:
 
-    *
+    create_database_backup
+    restore_database_backup
+    backup_via_console
