@@ -37,7 +37,8 @@ The path to the connected controller - */controllers/backend/products.php*. The 
 
  Important! A controller name must be unique. If a controller is defined in the add-on, and its name coincides with the name of one of the standard controllers, then when calling any of these controllers an error occurs.
 
-Controller structure
+====================
+Controller Structure
 ====================
 
 Each controller can contain the following logical blocks:
@@ -48,7 +49,8 @@ Each controller can contain the following logical blocks:
 
 The part ``[mode_name]`` of the parameter ``dispatch`` is used to set the operating mode for processing ``GET`` request.
 
-POST request
+============
+POST Request
 ============
 
 Processing of a ``POST`` request should always be performed prior to processing a ``GET`` request and there must be a string at the end of the block that returns control from a controller to the function ``fn_dispatch()``::
@@ -68,7 +70,8 @@ The parameter ``CONTROLLER_STATUS_OK`` contains a constant with the success stat
         return array(CONTROLLER_STATUS_OK, "$index_script?dispatch=products$suffix");
     }
 
-GET request
+===========
+GET Request
 ===========
 
 Section of processing a ``GET`` request is always placed after the ``POST`` block.
@@ -105,12 +108,14 @@ Here ``template_var_name`` defines a name of the variable available in the templ
 
 After this code is executed in the controller, the control is transferred to the templater, for which two variables ``$tpl_product_name`` and ``$tpl_product_description`` will be available.
 
+=========
 Functions
 =========
 
 Functions within a controller are defined in accordance with general rules of function formatting. If a function of the controller is required to be called in another controller, such a function should be located in the core of the program or an add-on.
 
-Available data
+==============
+Available Data
 ==============
 
 To work with program data in a controller, you should use the following standard arrays:
@@ -119,7 +124,8 @@ To work with program data in a controller, you should use the following standard
     * ``$_SESSION`` - a standard PHP array that stores session data.
     * ``Registry`` - a special static class-repository for the data that should be accessed from any place of the program. For instance, configurational parameters of the program, read during startup, are entered into class ``Registry``. Peculiarity of this class is that any data stored in it can be cached. This allows, for example, to avoid repeated requests to the database for seldom updated information by storing it in cache of class ``Registry``.
 
-Transfer of control to templater
+--------------------------------
+Transfer of Control to Templater
 --------------------------------
 
 After a controller is executed and control is returned to ``fn_dispatch()``, it transfers control of the program and the path to the template, which should be processed and displayed, to the templater.
@@ -138,3 +144,43 @@ By default the path to this template is defined automatically as follows:
  *http://cscart_dir/admin.php?dispatch=products.manage*
 
 The path to the displayed template: */backend/templates/views/products/manage.tpl*
+
+===================================
+Running a Controller in the Console
+===================================
+
+* Backend controller:
+
+  .. code-block:: bash
+
+      php /path/to/cart/admin.php --dispatch=controller.mode
+
+* Frontend controller:
+
+  .. code-block:: bash
+
+      php /path/to/cart/index.php --dispatch=controller.mode
+
+* Common controller: any of the commands above (common controllers work with **admin.php** and **index.php**).
+
+  .. note::
+
+      Replace */path/to/cart* with the path to CS-Cart or Multi-Vendor installation on your server. The name of **admin.php** will most likely be different as well (we recommend :doc:`renaming admin.php </install/security>` as a security measure).
+
+The parameters of the controller are passed as follows:
+
+.. code-block:: bash
+
+    php admin.php --dispatch=controller.mode --param1=value --param2=value --param3[]=value1 --param3[]=value2 --param4[param5]=value
+
+These parameters are passed to the controller as ordinary request parameters and are available in the ``$_REQUEST`` array. If the mode of a controller processes POST requests, pass the ``--p`` argument to the script after specifying the parameters.
+
+Running a controller's mode in the console will perform the actions implemented in that mode. If nothing appears in the command line after you use the command, it may mean that:
+
+* The controller doesn't return anything with ``fn_set_progress``, ``fn_echo``, ``fn_set_notification``.
+
+* A wrong mode was specified in the command.
+
+* Incorrect parameters (or no parameters at all) were specified for the mode.
+
+* The controller can't be run with that script. For example, a backend controller can't be run with **index.php**.
