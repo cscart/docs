@@ -16,7 +16,7 @@ Here's the command that makes a full backup of the store, with files and databas
 
 .. code-block:: bash
 
-    php /path/to/cart/admin.php --dispatch=datakeeper.backup -p --backup_database=Y --backup_files=Y --dbdump_tables=all --dbdump_data=Y --extra_folders[]=var/files --extra_folders[]=var/attachments --extra_folders[]=var/langs
+    php /path/to/cart/admin.php --dispatch=datakeeper.backup --p --backup_database=Y --backup_files=Y --dbdump_tables=all --dbdump_data=Y --extra_folders[]=var/files --extra_folders[]=var/attachments --extra_folders[]=var/langs
 
 .. note::
 
@@ -62,4 +62,4 @@ For example, here is the command that will back up the ``cscart_products`` table
 
 .. code-block:: bash
 
-    php /path/to/cart/admin.php --dispatch=datakeeper.backup -p --backup_database=Y --backup_files=Y --dbdump_tables[]=cscart_products --dbdump_data=Y --extra_folders[]=var/langs --extra_folders[]=var/attachments
+    php /path/to/cart/admin.php --dispatch=datakeeper.backup --p --backup_database=Y --backup_files=Y --dbdump_tables[]=cscart_products --dbdump_data=Y --extra_folders[]=var/langs --extra_folders[]=var/attachments
