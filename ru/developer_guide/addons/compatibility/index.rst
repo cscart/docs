@@ -7,6 +7,7 @@
     :titlesonly:
 
     adapting_474_to_481
+    adapting_481_to_482
 
 .. toctree::
     :maxdepth: 2
