@@ -6,13 +6,13 @@ CS-Cart 4.8.2 Changelog
 New Features and Improvements
 =============================
 
-[+] Add-ons: Facebook App: The ability to insert a store into a Facebook tab is now a part of a separate add-on.
+[+] Add-ons: Facebook Store: The ability to embed a store into a Facebook page tab is now a part of a separate add-on: https://github.com/cscart/addon-facebook-store.
 
 [+] Backups: The ability to make a store backup via the command line was added.
 
 [+] Core: A check was added to see if zlib compression is enabled in the PHP configuration.
 
-[+] Design: Admin panel: The IDs of objects are now displayed.
+[+] Design: Admin panel: The IDs of some objects (such as features and feature groups, pages, and blog posts) are now displayed.
 
 [+] Hooks: New hooks were added to design/backend/templates/pickers/categories/js.tpl and design/backend/templates/pickers/categories/picker.tpl.
 
@@ -48,21 +48,19 @@ Functionality Changes
 Bug Fixes
 =========
 
-[!] Add-ons: Advanced product import (Beta): A broken CSV file could lead to the crash of the import process. Fixed.
+[!] Add-ons: Advanced products import [Beta]: A broken CSV file could lead to the crash of the import process. Fixed.
 
-[!] Add-ons: Advanced Products Import (Beta): A PHP notice could occur in some cases when a CSV file's formatting was invalid. Fixed.
+[!] Add-ons: Advanced products import [Beta]: A PHP notice could occur in some cases when a CSV file's formatting was invalid. Fixed.
 
-[!] Add-ons: Advanced Products Import (Beta): The link to file imported by URL on the preset editing page was wrong. Fixed.
+[!] Add-ons: Advanced products import [Beta]: File Editor on the preset settings page did not work correctly. Fixed.
 
-[!] Add-ons: Advanced Products Import (Beta): The manual selection of CSV delimiter didn't work. Fixed.
+[!] Add-ons: Advanced products import [Beta]: The link to file imported by URL on the preset editing page was wrong. Fixed.
 
-[!] Add-ons: Advanced Products Import (Beta): When product properties in an XML file were specified in attributes of the XML elements, a preset could generate a lot of extra empty elements for matching. Fixed.
+[!] Add-ons: Advanced products import [Beta]: The manual selection of CSV delimiter didn't work. Fixed.
 
-[!] Add-ons: Advanced Products Import: File Editor on the preset settings page did not work correctly. Fixed.
+[!] Add-ons: Advanced products import [Beta]: When product properties in an XML file were specified in attributes of the XML elements, a preset could generate a lot of extra empty elements for matching. Fixed.
 
 [!] Add-ons: Blog: The "Recent posts scroller" block was not displayed on the Blog page if one of the blog post branches was selected as a parent page. Fixed.
-
-[!] Add-ons: Data feeds: When there were multiple products, the price of a product unique to the storefront was exported as 0. Fixed.
 
 [!] Add-ons: GDPR Compliance: Company data from an order could be exported instead of the personal data of a customer to an XML file. Fixed.
 
@@ -72,23 +70,19 @@ Bug Fixes
 
 [!] Add-ons: PayPal payments: The mode of the payment method was always displayed as "Test" in the order details. Fixed.
 
-[!] Add-ons: Product Variations (Beta): Disabling a product option that was used in product variations resulted in a PHP Notice on the product page. Fixed.
+[!] Add-ons: Product Variations [Beta]: Disabling a product option that was used in product variations resulted in a PHP Notice on the product page. Fixed.
 
-[!] Add-ons: Product Variations (Beta): The values weren't saved for options with the "Text" type of a configurable product when the product was added to cart. Fixed.
+[!] Add-ons: Product variations [Beta]: "Items in box" and "Box size" were not exported properly for variations. Fixed.
 
-[!] Add-ons: Product variations (Beta): "Items in box" and "Box size" were not exported properly for variations. Fixed.
+[!] Add-ons: Product variations [Beta]: A PHP Notice occurred if an admin tried to create a product variation for a product, the  options of which did not have any variants. Fixed.
 
-[!] Add-ons: Product variations (Beta): A PHP Notice occurred if an admin tried to create a product variation for a product, the  options of which did not have any variants. Fixed.
+[!] Add-ons: Product variations [Beta]: A PHP notice occurred when multiple products were cloned. Fixed.
 
-[!] Add-ons: Product variations (Beta): A PHP notice occurred when multiple products were cloned. Fixed.
+[!] Add-ons: Product variations [Beta]: Import: If options and variations of a product were deleted, the variations weren't attached to the product even after reimporting that product with all options and variations. Fixed.
 
-[!] Add-ons: Product variations (Beta): Import: If options and variations of a product were deleted, the variations weren't attached to the product even after reimporting that product with all options and variations. Fixed.
-
-[!] Add-ons: Product variations (Beta): Permissions: An administrator with the permission to view catalog could not view the "Variations" tab of a parent product. Fixed.
+[!] Add-ons: Product variations [Beta]: Permissions: An administrator with the permission to view catalog could not view the "Variations" tab of a parent product. Fixed.
 
 [!] Add-ons: RMA: Product taxes were calculated incorrectly when an order was recalculated after refund. Fixed.
-
-[!] Add-ons: SEO: When the add-on was configured to show language in the URL and use different URLs for different languages, the values of the hreflang attribute were incorrect. Fixed.
 
 [!] Add-ons: SEO: When the homepage URL had an unescaped query as a parameter, in some cases a redirect could occur to the same URL, but with encoded special symbols. Fixed.
 
@@ -112,8 +106,6 @@ Bug Fixes
 
 [!] Design: RTL Languages: Long breadcrumbs were displayed incorrectly when an RTL language was selected. Fixed.
 
-[!] Email template editor: The "Add snippet" button was duplicated on the "Code snippets" tab. Fixed.
-
 [!] Export/Import: Data wasn't imported properly if the CSV file had spaces around the delimiter. Fixed.
 
 [!] Export/Import: Layouts: Layouts for the same dispatch were merged during import. Fixed.
@@ -134,7 +126,7 @@ Bug Fixes
 
 [!] Multi-Vendor: Add-ons: Stripe Connect: Destination charges were used instead of Direct ones. Fixed.
 
-[!] Multi-Vendor: Add-ons: Vendor locations (Beta): No wrappers could be assigned to the "Vendors by location" and "Vendor map" blocks. Fixed.
+[!] Multi-Vendor: Add-ons: Vendor locations [Beta]: No wrappers could be assigned to the "Vendors by location" and "Vendor map" blocks. Fixed.
 
 [!] Multi-Vendor: Emails about vendor registration or vendor administrator creation contained the information about the vendor's company, rather than the marketplace itself. Fixed.
 
@@ -152,13 +144,9 @@ Bug Fixes
 
 [!] Responsive admin panel: Access restrictions: The Save button was without indentation. Fixed.
 
-[!] Responsive admin panel: Advanced search: Search by period didn't work correctly. Fixed.
-
 [!] Responsive admin panel: Categories: The plus button on the category editing page was too narrow. Fixed.
 
 [!] Responsive admin panel: Different products had different thumbnail sizes on the product list. Fixed.
-
-[!] Responsive admin panel: If an email address was too long, it didn't fit into the dedicated area on the order editing page. Fixed.
 
 [!] Responsive admin panel: Images: Transparent images were cropped in the image loader preview. Fixed.
 
@@ -194,22 +182,34 @@ Bug Fixes
 
 [!] {#7003} {#7242} REST API: Orders: If an order had free shipping, then updating that order via REST API caused the removal of free shipping from the order. Fixed.
 
+[!] {#7115} {#7261} Add-ons: Product Variations [Beta]: The values weren't saved for options with the "Text" type of a configurable product when the product was added to cart. Fixed.
+
 [!] {#7238} Add-ons: Anti Fraud: On the order page, the Fraud counter was displayed outside the window. Fixed.
 
 [!] {#7248} Block manager: The input fields for block content settings had identical tag identifiers. Fixed.
 
-[!] {#7262} Add-ons: Advanced products import (Beta): A file couldn't be imported by URL if the URL contained a request rather than the name of the file. Fixed.
+[!] {#7262} Add-ons: Advanced products import [Beta]: A file couldn't be imported by URL if the URL contained a request rather than the name of the file. Fixed.
+
+[!] {#7263} Add-ons: SEO: When the add-on was configured to show language in the URL and use different URLs for different languages, the values of the hreflang attribute were incorrect. Fixed.
 
 [!] {#7266} Manage orders: Order details: A tooltip that appeared when a mouse hovered over the order ID was displayed incorrectly in the non-responsive admin panel. Fixed.
+
+[!] {#7271} Responsive admin panel: If an email address was too long, it didn't fit into the dedicated area on the order editing page. Fixed.
+
+[!] {#7278} Responsive admin panel: Advanced search: Search by period didn't work correctly. Fixed.
 
 [!] {#7281} Add-ons: GDPR Compliance (EU): The footer layout was broken on the 404 page while the GDPR add-on was enabled. Fixed.
 
 [!] {#7290} Core: Block manager: Grid width wasn’t always calculated correctly. Fixed.
 
+[!] {#7295} Email template editor: The "Add snippet" button was duplicated on the "Code snippets" tab. Fixed.
+
 [!] {#7299} Core: Orders: Email subject was displayed incorrectly during the editing of an order invoice. Fixed.
 
-[!] {#7303} Add-ons: Advanced Products Import: Product features were imported only for the first product from the file. Fixed.
+[!] {#7303} Add-ons: Advanced Products Import [Beta]: Product features were imported only for the first product from the file. Fixed.
+
+[!] {#7305} Add-ons: Data feeds: When there were multiple products, the price of a product unique to the storefront was exported as 0. Fixed.
 
 [!] {#7309} Design: Edit content on-site: Edit content on-site did not work with GDPR add-on enabled. Fixed.
 
-[!] {#7312} Add-ons: Vendor data premoderation: Data feeds: Disapproved products were exported to the data feed. Fixed.
+[!] {#7312} Add-ons: Vendor data premoderation: Data feeds: Unapproved products were exported to the data feed. Fixed; now marketplace owners can choose whether or not to include unapproved products is the feed settings.
