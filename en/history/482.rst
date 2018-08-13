@@ -56,8 +56,6 @@ Bug Fixes
 
 [!] Add-ons: Advanced products import [Beta]: The link to file imported by URL on the preset editing page was wrong. Fixed.
 
-[!] Add-ons: Advanced products import [Beta]: The manual selection of CSV delimiter didn't work. Fixed.
-
 [!] Add-ons: Advanced products import [Beta]: When product properties in an XML file were specified in attributes of the XML elements, a preset could generate a lot of extra empty elements for matching. Fixed.
 
 [!] Add-ons: Blog: The "Recent posts scroller" block was not displayed on the Blog page if one of the blog post branches was selected as a parent page. Fixed.
@@ -107,8 +105,6 @@ Bug Fixes
 [!] Design: RTL Languages: Long breadcrumbs were displayed incorrectly when an RTL language was selected. Fixed.
 
 [!] Export/Import: Data wasn't imported properly if the CSV file had spaces around the delimiter. Fixed.
-
-[!] Export/Import: Layouts: Layouts for the same dispatch were merged during import. Fixed.
 
 [!] Export/Import: Subscribers: The selected subscribers couldn't be exported. Fixed.
 
@@ -168,8 +164,6 @@ Bug Fixes
 
 [!] Responsive admin: The line with the title of the page overlapped with the sidebar. Fixed.
 
-[!] Search: SQL error occurred if the request in the address bar was wrong. Fixed.
-
 [!] Shipping methods: Shipping method deletion didn't work on the shipping method editing page. Fixed.
 
 [!] Shipping methods: USPS: Calculating the charges for shipping to Montenegro resulted in an error. Fixed.
@@ -182,6 +176,8 @@ Bug Fixes
 
 [!] {#7003} {#7242} REST API: Orders: If an order had free shipping, then updating that order via REST API caused the removal of free shipping from the order. Fixed.
 
+[!] {#7114} Export/Import: Layouts: Layouts for the same dispatch were merged during import. Fixed.
+
 [!] {#7115} {#7261} Add-ons: Product Variations [Beta]: The values weren't saved for options with the "Text" type of a configurable product when the product was added to cart. Fixed.
 
 [!] {#7238} Add-ons: Anti Fraud: On the order page, the Fraud counter was displayed outside the window. Fixed.
@@ -191,6 +187,8 @@ Bug Fixes
 [!] {#7262} Add-ons: Advanced products import [Beta]: A file couldn't be imported by URL if the URL contained a request rather than the name of the file. Fixed.
 
 [!] {#7263} Add-ons: SEO: When the add-on was configured to show language in the URL and use different URLs for different languages, the values of the hreflang attribute were incorrect. Fixed.
+
+[!] {#7265} Search: SQL error occurred if the request in the address bar was wrong. Fixed.
 
 [!] {#7266} Manage orders: Order details: A tooltip that appeared when a mouse hovered over the order ID was displayed incorrectly in the non-responsive admin panel. Fixed.
 
@@ -208,8 +206,10 @@ Bug Fixes
 
 [!] {#7303} Add-ons: Advanced Products Import [Beta]: Product features were imported only for the first product from the file. Fixed.
 
-[!] {#7305} Add-ons: Data feeds: When there were multiple products, the price of a product unique to the storefront was exported as 0. Fixed.
+[!] {#7305} {#7310} Add-ons: Data feeds: When there were multiple products, the price of a product unique to the storefront was exported as 0. Fixed.
 
 [!] {#7309} Design: Edit content on-site: Edit content on-site did not work with GDPR add-on enabled. Fixed.
 
 [!] {#7312} Add-ons: Vendor data premoderation: Data feeds: Unapproved products were exported to the data feed. Fixed; now marketplace owners can choose whether or not to include unapproved products is the feed settings.
+
+[!] {#7324} Add-ons: Advanced products import [Beta]: The manual selection of CSV delimiter didn't work. Fixed.
