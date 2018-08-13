@@ -104,7 +104,7 @@ Bug Fixes
 
 [!] Design: RTL Languages: Long breadcrumbs were displayed incorrectly when an RTL language was selected. Fixed.
 
-[!] Export/Import: Data wasn't imported properly if the CSV file had spaces around the delimiter. Fixed.
+[!] Export/Import: Data wasn't imported properly if the CSV file had spaces after the delimiter. Fixed.
 
 [!] Export/Import: Subscribers: The selected subscribers couldn't be exported. Fixed.
 
