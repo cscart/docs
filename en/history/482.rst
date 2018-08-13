@@ -1,0 +1,215 @@
+***********************
+CS-Cart 4.8.2 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Facebook Store: The ability to embed a store into a Facebook page tab is now a part of a separate add-on: https://github.com/cscart/addon-facebook-store.
+
+[+] Backups: The ability to make a store backup via the command line was added.
+
+[+] Core: A check was added to see if zlib compression is enabled in the PHP configuration.
+
+[+] Design: Admin panel: The IDs of some objects (such as features and feature groups, pages, and blog posts) are now displayed.
+
+[+] Hooks: New hooks were added to design/backend/templates/pickers/categories/js.tpl and design/backend/templates/pickers/categories/picker.tpl.
+
+[+] Multi-Vendor: Add-ons: PayPal Adaptive Payments: The "Indian rupee" currency was added.
+
+[+] Multi-Vendor: Demo data: Vendors' logos were added.
+
+[+] Products: Categories: The product editing page now allows to select a category from the tree in addition to typing its name.
+
+[+] Responsive admin panel: Mobile menu: The ability to select a storefront or a vendor when using the admin panel on mobile devices was added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: Admins are no longer redirected to the default tab on the add-on list page, and search results aren't dropped after manipulations with add-ons.
+
+[*] Add-ons: For all add-ons that come with CS-Cart and Multi-Vendor by default, the company name the add-on list now links to Help Desk.
+
+[*] Add-ons: Mobile application: The add-on was updated.
+
+[*] Add-ons: PayPal Payments: Tax is no longer passed to PayPal Standard as a separate product.
+
+[*] Add-ons: Watermarks: Fetching the data for image generation was improved.
+
+[*] Admin panel: Pop-up with info about CS-Cart Ultimate and multiple storefronts improved.
+
+[*] Payment methods: ServiRed: Payment method was updated for PHP 7.1.
+
+[*] Responsive admin panel: The styles of buttons, text fields and RTL languages were updated.
+
+=========
+Bug Fixes
+=========
+
+[!] Add-ons: Advanced products import [Beta]: A broken CSV file could lead to the crash of the import process. Fixed.
+
+[!] Add-ons: Advanced products import [Beta]: A PHP notice could occur in some cases when a CSV file's formatting was invalid. Fixed.
+
+[!] Add-ons: Advanced products import [Beta]: File Editor on the preset settings page did not work correctly. Fixed.
+
+[!] Add-ons: Advanced products import [Beta]: The link to file imported by URL on the preset editing page was wrong. Fixed.
+
+[!] Add-ons: Advanced products import [Beta]: When product properties in an XML file were specified in attributes of the XML elements, a preset could generate a lot of extra empty elements for matching. Fixed.
+
+[!] Add-ons: Blog: The "Recent posts scroller" block was not displayed on the Blog page if one of the blog post branches was selected as a parent page. Fixed.
+
+[!] Add-ons: GDPR Compliance: Company data from an order could be exported instead of the personal data of a customer to an XML file. Fixed.
+
+[!] Add-ons: Gift Certificates: The thousands separator for the gift certificate's worth was always considered to be comma, regardless of the separator used by the currency. Fixed.
+
+[!] Add-ons: Newsletters: A PHP Notice occurred at the last step of checkout if there was a hidden mailing list. Fixed.
+
+[!] Add-ons: PayPal payments: The mode of the payment method was always displayed as "Test" in the order details. Fixed.
+
+[!] Add-ons: Product Variations [Beta]: Disabling a product option that was used in product variations resulted in a PHP Notice on the product page. Fixed.
+
+[!] Add-ons: Product variations [Beta]: "Items in box" and "Box size" were not exported properly for variations. Fixed.
+
+[!] Add-ons: Product variations [Beta]: A PHP Notice occurred if an admin tried to create a product variation for a product, the  options of which did not have any variants. Fixed.
+
+[!] Add-ons: Product variations [Beta]: A PHP notice occurred when multiple products were cloned. Fixed.
+
+[!] Add-ons: Product variations [Beta]: Import: If options and variations of a product were deleted, the variations weren't attached to the product even after reimporting that product with all options and variations. Fixed.
+
+[!] Add-ons: Product variations [Beta]: Permissions: An administrator with the permission to view catalog could not view the "Variations" tab of a parent product. Fixed.
+
+[!] Add-ons: RMA: Product taxes were calculated incorrectly when an order was recalculated after refund. Fixed.
+
+[!] Add-ons: SEO: When the homepage URL had an unescaped query as a parameter, in some cases a redirect could occur to the same URL, but with encoded special symbols. Fixed.
+
+[!] Add-ons: Suppliers: Fetching the data of suppliers on the Dashboard of the Administration panel slowed it down significantly. Fixed.
+
+[!] Add-ons: Suppliers: When editing the order for suppliers, an admin could select shipping methods that weren't available to a supplier. Fixed.
+
+[!] Admin panel: Export/Import: The link to product export in the sidebar opened advanced product import. Fixed.
+
+[!] Admin panel: Orders: Taxes: Tax name was not changed on the order details page when language was changed. Fixed.
+
+[!] Core: Documents: HTML tags were displayed in the "notes" snippet in the Packing slip. Fixed.
+
+[!] Core: File Manager: The file editor allowed to upload executable files. Fixed.
+
+[!] Core: File changes detector: Add-on files could be reported as removed for uninstalled add-ons. Fixed.
+
+[!] Design: Cart contents: When customers were required to register or sign in to place an order, a block for signing in always appeared on the cart content page, even if it wasn't possible to pay for the order from that page. Fixed.
+
+[!] Design: Products: Promo-text: A long promo-text of a product could get outside of the designated area. Fixed.
+
+[!] Design: RTL Languages: Long breadcrumbs were displayed incorrectly when an RTL language was selected. Fixed.
+
+[!] Export/Import: Data wasn't imported properly if the CSV file had spaces after the delimiter. Fixed.
+
+[!] Export/Import: Subscribers: The selected subscribers couldn't be exported. Fixed.
+
+[!] Installation: In some cases installation could fail because of unfinished initialization. Fixed.
+
+[!] Installation: PDO: Installation failed when the database name consisted of digits only. Fixed.
+
+[!] Languages: The text on the "Cancel" button on the calendar in the admin panel didn't change, regardless of the selected language. Fixed.
+
+[!] Multi-Vendor: Add-ons: Advanced Products Import: Images were not imported in the "All Vendors" mode. Fixed.
+
+[!] Multi-Vendor: Add-ons: Customer-to-Vendor Communication: If a product used the "Big picture" template, then the link for contacting the vendor was displayed in the wrong place. Fixed.
+
+[!] Multi-Vendor: Add-ons: Stripe Connect & PayPal for Marketplaces: Order total was calculated incorrectly when the currency selected by a customer was different from the marketplace's primary currency. Fixed.
+
+[!] Multi-Vendor: Add-ons: Stripe Connect: Destination charges were used instead of Direct ones. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor locations [Beta]: No wrappers could be assigned to the "Vendors by location" and "Vendor map" blocks. Fixed.
+
+[!] Multi-Vendor: Emails about vendor registration or vendor administrator creation contained the information about the vendor's company, rather than the marketplace itself. Fixed.
+
+[!] Multi-Vendor: Emails: An email notification after changing a  vendor administrator's status was sent from the vendor rather than from the marketplace owner. Fixed.
+
+[!] Multi-Vendor: Responsive admin panel: The list of vendors had a horizontal scrollbar. Fixed.
+
+[!] Multi-Vendor: The link to vendor website on the vendor details page was considered a relative link if the protocol was not specified. Fixed.
+
+[!] Products: Images: Drag & Drop: Texts in different languages in the images picker on the product editing page were displayed incorrectly. Fixed.
+
+[!] Products: The image drag & drop area wasn't displayed on the product editing page when a product had an icon, but no images. Fixed.
+
+[!] REST API: Categories: A request with the 'item_ids' or 'category_ids' parameter resulted in an error. Fixed.
+
+[!] Responsive admin panel: Access restrictions: The Save button was without indentation. Fixed.
+
+[!] Responsive admin panel: Categories: The plus button on the category editing page was too narrow. Fixed.
+
+[!] Responsive admin panel: Different products had different thumbnail sizes on the product list. Fixed.
+
+[!] Responsive admin panel: Images: Transparent images were cropped in the image loader preview. Fixed.
+
+[!] Responsive admin panel: Menu: If an add-on added some items to the menu, they weren't displayed after the add-on's installation until the page was refreshed. Fixed.
+
+[!] Responsive admin panel: Order statuses: The drop-down menu was cropped. Fixed.
+
+[!] Responsive admin panel: Orders: In the advanced search for Gift certificate code, the width of the drop-down list wasn’t correct. Fixed.
+
+[!] Responsive admin panel: Orders: The drop-down list with statuses on the order list page was cut short on mobile devices. Fixed.
+
+[!] Responsive admin panel: Products: Edit selected: Categories weren't displayed correctly on the bulk editing page. Fixed.
+
+[!] Responsive admin panel: The order status drop-down menu was too large on mobile devices. Fixed.
+
+[!] Responsive admin panel: The product code couldn't be selected and copied on the product list page. Fixed.
+
+[!] Responsive admin panel: User groups: A PHP Notice occurred when a user joined a user group. Fixed.
+
+[!] Responsive admin: The line with the title of the page overlapped with the sidebar. Fixed.
+
+[!] Shipping methods: Shipping method deletion didn't work on the shipping method editing page. Fixed.
+
+[!] Shipping methods: USPS: Calculating the charges for shipping to Montenegro resulted in an error. Fixed.
+
+[!] Statuses: A PHP Notice occurred on the "admin.php?dispatch=statuses.manage" page if the "type" wasn't specified in the URL. Fixed.
+
+[!] Stores: Categories: Deleting a storefront didn't remove the connections of that storefront's categories to the products of other storefronts. Fixed.
+
+[!] Taxes: After changing the value of the "Tax calculation method based on" setting from "Unit price" to "Subtotal", taxes could be calculated incorrectly, if customer had products it cart before the change. Fixed.
+
+[!] {#7003} {#7242} REST API: Orders: If an order had free shipping, then updating that order via REST API caused the removal of free shipping from the order. Fixed.
+
+[!] {#7114} Export/Import: Layouts: Layouts for the same dispatch were merged during import. Fixed.
+
+[!] {#7115} {#7261} Add-ons: Product Variations [Beta]: The values weren't saved for options with the "Text" type of a configurable product when the product was added to cart. Fixed.
+
+[!] {#7238} Add-ons: Anti Fraud: On the order page, the Fraud counter was displayed outside the window. Fixed.
+
+[!] {#7248} Block manager: The input fields for block content settings had identical tag identifiers. Fixed.
+
+[!] {#7262} Add-ons: Advanced products import [Beta]: A file couldn't be imported by URL if the URL contained a request rather than the name of the file. Fixed.
+
+[!] {#7263} Add-ons: SEO: When the add-on was configured to show language in the URL and use different URLs for different languages, the values of the hreflang attribute were incorrect. Fixed.
+
+[!] {#7265} Search: SQL error occurred if the request in the address bar was wrong. Fixed.
+
+[!] {#7266} Manage orders: Order details: A tooltip that appeared when a mouse hovered over the order ID was displayed incorrectly in the non-responsive admin panel. Fixed.
+
+[!] {#7271} Responsive admin panel: If an email address was too long, it didn't fit into the dedicated area on the order editing page. Fixed.
+
+[!] {#7278} Responsive admin panel: Advanced search: Search by period didn't work correctly. Fixed.
+
+[!] {#7281} Add-ons: GDPR Compliance (EU): The footer layout was broken on the 404 page while the GDPR add-on was enabled. Fixed.
+
+[!] {#7290} Core: Block manager: Grid width wasn’t always calculated correctly. Fixed.
+
+[!] {#7295} Email template editor: The "Add snippet" button was duplicated on the "Code snippets" tab. Fixed.
+
+[!] {#7299} Core: Orders: Email subject was displayed incorrectly during the editing of an order invoice. Fixed.
+
+[!] {#7303} Add-ons: Advanced Products Import [Beta]: Product features were imported only for the first product from the file. Fixed.
+
+[!] {#7305} {#7310} Add-ons: Data feeds: When there were multiple products, the price of a product unique to the storefront was exported as 0. Fixed.
+
+[!] {#7309} Design: Edit content on-site: Edit content on-site did not work with GDPR add-on enabled. Fixed.
+
+[!] {#7312} Add-ons: Vendor data premoderation: Data feeds: Unapproved products were exported to the data feed. Fixed; now marketplace owners can choose whether or not to include unapproved products is the feed settings.
+
+[!] {#7324} Add-ons: Advanced products import [Beta]: The manual selection of CSV delimiter didn't work. Fixed.
