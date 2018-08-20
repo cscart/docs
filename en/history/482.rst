@@ -213,3 +213,13 @@ Bug Fixes
 [!] {#7312} Add-ons: Vendor data premoderation: Data feeds: Unapproved products were exported to the data feed. Fixed; now marketplace owners can choose whether or not to include unapproved products is the feed settings.
 
 [!] {#7324} Add-ons: Advanced products import [Beta]: The manual selection of CSV delimiter didn't work. Fixed.
+
+=============
+Service Packs
+=============
+
+---------
+4.8.2.SP1
+---------
+
+[!] Add-ons: Old Admin Panel [Deprecated]: It was impossible to install any add-ons using the old admin panel. Fixed.
