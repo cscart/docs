@@ -2,29 +2,27 @@
 How To: Embed a Store into a Facebook Page
 ******************************************
 
-`CS-Cart Facebook App <https://apps.facebook.com/cscart-store/>`_ allows you to embed an existing CS-Cart or Multi-Vendor store into a Facebook page in a matter of minutes.
-
 .. important::
 
-    Facebook requires apps to secure data with SSL certificates. That's why your CS-Cart or Multi-Vendor storefront must be :doc:`accessible via HTTPS <../../../settings/security_settings>` for the app to work properly.
+    The method described in this article no longer works for new Facebook pages. If you're planning to create a page with an embedded CS-Cart/Multi-Vendor store, you'll need at least version 4.8.2 and `this free add-on <https://github.com/cscart/addon-facebook-store>`_.
 
-.. hint::
-
-    Go to **Settings → Security settings** and set **Enable secure connection for the storefront** to *Secure full site*. You must install an SSL certificate on your server before you do that.
+`CS-Cart Facebook App <https://apps.facebook.com/cscart-store/>`_ allows you to embed an existing CS-Cart or Multi-Vendor store into a Facebook page in a matter of minutes.
 
 The app works similarly to :doc:`the Widget Mode <index>`: you just copy a few lines of code, paste them on the app page, and specify the Facebook page where you want the store embedded.
 
-Your store will immediately appear on the specified Facebook page as a new app, ready for work right away.
+Your store will immediately appear on the specified Facebook page as a new app, ready for work right away. This is a great way to get closer to your store’s audience and draw more customers.
 
 .. image:: img/embedded_store_in_facebook.png
     :align: center
     :alt: An embedded CS-Cart store as it appears on a Facebook page.
 
-This is a great way to get closer to your store’s audience and draw more customers.
-
 .. note::
 
     Check out `CS-Cart demo store on Facebook. <https://www.facebook.com/cscart.official/app_457462450989458>`_
+
+Facebook requires apps to secure data with SSL certificates. That's why your CS-Cart or Multi-Vendor storefront must be :doc:`accessible via HTTPS <../../../settings/security_settings>` for the app to work properly.
+
+Go to **Settings → Security settings** and set **Enable secure connection for the storefront** to *Secure full site*. You must install an SSL certificate on your server before you do that.
 
 =============================================
 Step 1. Select a Facebook Page for Your Store
