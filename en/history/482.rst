@@ -223,3 +223,5 @@ Service Packs
 ---------
 
 [!] Add-ons: Old Admin Panel [Deprecated]: It was impossible to install any add-ons using the old admin panel. Fixed.
+
+[!] Products: The check whether the "Categories" field of a product was filled in didn't work, and an attempt to create a product without any category resulted in a 404 error in Multi-Vendor. Fixed.
