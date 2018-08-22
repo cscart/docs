@@ -389,7 +389,7 @@
 
     sudo apt-get install php5-fpm php5-mysql php5-curl php5-gd php-mail -y
 
-Можете установить любую версию PHP, соответствующую :doc:`системным требованиям </manager/install/requirements>`. Но в этом случае придется поменять конфигурацию nginx (*/etc/nginx/sites-available/default*) соответствующим образом. Например, если вы устанавливаете PHP7-FPM, вам придётся заменить путь к сокету PHP-FPM на ``/var/run/php/php7.0-fpm.sock``.
+Можете установить любую версию PHP, соответствующую :doc:`системным требованиям </manager/install/requirements/index>`. Но в этом случае придется поменять конфигурацию nginx (*/etc/nginx/sites-available/default*) соответствующим образом. Например, если вы устанавливаете PHP7-FPM, вам придётся заменить путь к сокету PHP-FPM на ``/var/run/php/php7.0-fpm.sock``.
 
 11. Установим MySQL
 ===================
