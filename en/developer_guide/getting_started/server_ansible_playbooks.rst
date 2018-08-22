@@ -30,7 +30,7 @@ Depending on your server’s operating system, run the following commands one by
 
   .. code-block:: bash
 
-      sudo rpm -ihv https://releases.ansible.com/ansible/rpm/release/epel-6-x86_64/ansible-2.4.5.0-1.el6.ans.noarch.rpm
+      sudo rpm -ihv https://releases.ansible.com/ansible/rpm/release/epel-6-x86_64/ansible-2.4.6.0-1.el6.ans.noarch.rpm
 
 * On **CentOS 7:**
 
@@ -44,7 +44,7 @@ Depending on your server’s operating system, run the following commands one by
 
   .. code-block:: bash
 
-      sudo rpm -ihv https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/ansible-2.4.5.0-1.el7.ans.noarch.rpm
+      sudo rpm -ihv  https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/ansible-2.4.6.0-1.el7.ans.noarch.rpm
 
 * On **Ubuntu 14.04:**
 
@@ -62,7 +62,7 @@ Depending on your server’s operating system, run the following commands one by
 
   .. code-block:: bash
 
-      sudo apt-get -y install ansible=2.4.*-1ppa~trusty
+      sudo apt-get -y install ansible
 
 * On **Ubuntu 16.04:**
 
@@ -80,7 +80,7 @@ Depending on your server’s operating system, run the following commands one by
 
   .. code-block:: bash
 
-      sudo apt-get -y install ansible=2.4.*-1ppa~xenial
+      sudo apt-get -y install ansible
 
 
 ===========================

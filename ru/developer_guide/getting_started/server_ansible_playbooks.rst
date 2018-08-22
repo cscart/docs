@@ -24,7 +24,7 @@
 
       sudo yum -y install epel-release
       sudo yum install -y gcc git openssl-devel libffi-devel libselinux-python python-crypto python-jinja2 python-paramiko sshpass python-six PyYAML
-      sudo rpm -ihv https://releases.ansible.com/ansible/rpm/release/epel-6-x86_64/ansible-2.4.5.0-1.el6.ans.noarch.rpm
+      sudo rpm -ihv https://releases.ansible.com/ansible/rpm/release/epel-6-x86_64/ansible-2.4.6.0-1.el6.ans.noarch.rpm
 
 * На **CentOS 7:**
 
@@ -32,7 +32,7 @@
 
       sudo yum -y install epel-release
       sudo yum install -y gcc git openssl-devel libffi-devel libselinux-python python-crypto python-jinja2 python-paramiko sshpass PyYAML python-setuptools
-      sudo rpm -ihv https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/ansible-2.4.5.0-1.el7.ans.noarch.rpm
+      sudo rpm -ihv  https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/ansible-2.4.6.0-1.el7.ans.noarch.rpm
 
 * На **Ubuntu 14.04:**
 
@@ -41,7 +41,7 @@
       sudo add-apt-repository -y ppa:ansible/ansible
       sudo apt-get -y update
       sudo apt-get -y install git python-dev libffi-dev python-markupsafe libssl-dev
-      sudo apt-get -y install ansible=2.4.*-1ppa~trusty
+      sudo apt-get -y install ansible
 
 * На **Ubuntu 16.04:**
 
@@ -50,7 +50,7 @@
       sudo add-apt-repository -y ppa:ansible/ansible
       sudo apt-get -y update
       sudo apt-get -y install git python-dev libffi-dev python-markupsafe libssl-dev
-      sudo apt-get -y install ansible=2.4.*-1ppa~xenial
+      sudo apt-get -y install ansible
 
 ============================
 Шаг 2. Настраиваем main.json
