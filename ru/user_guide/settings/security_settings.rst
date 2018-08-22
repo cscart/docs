@@ -23,10 +23,3 @@
     http://www.example.com/admin.php?dispatch=profiles.password_reminder&cron_password=access_key 
 
   Замените ``www.example.com`` на адрес вашего магазина, а ``access_key`` — на ключ, который вы ввели в этой настройке.
-
-* **Оповещать посетителей об использовании кук** — если настройка включена, посетители увидят следущее сообщение о cookies, когда зайдут на сайт:
-
-  .. fancybox:: img/cookies_note.png
-      :alt: Уведомление о файлах cookie.
-
-  Сообщение не пропадёт, пока посетитель не нажмёт **Принять**.
