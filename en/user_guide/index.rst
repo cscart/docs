@@ -24,3 +24,4 @@ User Guide
     import_export/index
     logs/index
     settings/index
+    mobile_app/faq
