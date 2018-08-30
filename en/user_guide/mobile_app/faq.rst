@@ -4,17 +4,15 @@ Mobile App for CS-Cart and Multi-Vendor: FAQ
 
 .. important::
 
-    We offer a native mobile app for the customers of your CS-Cart or Multi-Vendor marketplace. It is written on React Native and supports Android and iOS devices.
+    We offer a native mobile app for the customers of your CS-Cart store or Multi-Vendor marketplace. It is written on React Native and supports Android and iOS devices.
 
 .. contents::
    :backlinks: none
    :local:
 
----------------
-
-=================
-General Questions
-=================
+=========================
+Part 1. General Questions
+=========================
 
 -----------------------
 What Is All This About?
@@ -94,7 +92,7 @@ Yes. If you enable them, customers will be able to receive information about ord
 Can I Get the Source Code of the App?
 -------------------------------------
 
-Yes, but not as part of our standard plans. For more information, please check the **Pricing** section off our app pages `for Multi-Vendor <https://www.cs-cart.com/multivendor-mobile-application.html>`_ or `for CS-Cart <https://www.cs-cart.com/cscart-mobile-application.html>`_.
+Yes, but not as part of our standard plans. For more information, please check the **Pricing** section of our app pages `for Multi-Vendor <https://www.cs-cart.com/multivendor-mobile-application.html>`_ or `for CS-Cart <https://www.cs-cart.com/cscart-mobile-application.html>`_.
 
 The technical support for the source code is limited, and we ask those who get the source code to sign a non-disclosure agreement. However, you get to publish the application from your own account on Apple App Store and Google Play and showcase your company as the app developer.
 
@@ -108,11 +106,10 @@ If you get the source code, you'll be able to publish the app from your own deve
 
 * Google Play: `Simbirsk Technologies Ltd <https://play.google.com/store/apps/developer?id=Simbirsk+Technologies+Ltd>`_
 
----------------
 
-===========
-Acquisition
-===========
+===================
+Part 2. Acquisition
+===================
 
 -----------------------------------------------
 How Do I Get a Mobile Application for My Store?
@@ -140,7 +137,7 @@ How Do I Get a Mobile Application for My Store?
 Can I Test the App before Buying It?
 ------------------------------------
 
-We have demo applications `for Android <https://play.google.com/store/apps/details?id=com.simtech.multivendor>`_ and `for iOS <https://itunes.apple.com/app/multi-vendor-app-by-cs-cart/id1304872157>`_ based on our Multi-Vendor demo store. Feel free to install those apps, go around the catalog, register an account, add products to cart or wish list, "order" them, and so on. Of course, orders made via the demo app won't be for real.
+We have demo applications `for Android <https://play.google.com/store/apps/details?id=com.simtech.multivendor>`_ and `for iOS <https://itunes.apple.com/app/multi-vendor-app-by-cs-cart/id1304872157>`_ based on our Multi-Vendor demo store. Feel free to install those apps, go around the catalog, register an account, add products to cart or wish list, "order" them, and so on. Of course, we're not actually selling anything at our demo store; it is just there to show how our software works.
 
 -----------------------------------
 When Does the Payment Period Start?
@@ -158,7 +155,7 @@ Most of the data described below is collected via the **Mobile Application** add
 
 #. **Images:**
 
-   * *App Icon*—a 1024x1024 image to serve as the logo of your app. The required size is so big because it's a requirement by Apple. Please make sure that the image will look fine even if it is resized to 256x256.
+   * *App Icon*—a 1024x1024 image to serve as the logo of your app. The required size is so big because Apple requires it. Please make sure that the image will look fine even if it is resized to 256x256.
 
    * *Feature Graphic image*—a 1024x500 image shown on the Google Play page of your application. For more information, see the "Feature Graphic" section of `Google Play instructions <https://support.google.com/googleplay/android-developer/answer/1078870?hl=en>`_.
 
@@ -168,9 +165,9 @@ Most of the data described below is collected via the **Mobile Application** add
 
    * *Application name*—up to 30 symbols.
 
-   * *Application Short Description*—up to 80 symbols.
+   * *Application short description*—up to 80 symbols.
 
-   * *Application Full description*—up to 4000 symbols.
+   * *Application full description*—up to 4000 symbols.
 
 #. **Your contact information:**
 
@@ -180,17 +177,16 @@ Most of the data described below is collected via the **Mobile Application** add
 
 .. important::
 
-    Before we release the application both in Google Play and Apple App Store, we'll give you a test app either for Android or for iOS devices. Depending on which platform you choose for testing, please let us know your email address either in Google Play, or in Apple App Store.
+    Before we release the application both in Google Play and Apple App Store, we'll give you a test app either for Android or for iOS devices. Depending on the platform you choose for testing, please let us know your email address either in Google Play, or in Apple App Store.
 
 .. image:: img/mobile_app_general_settings.png
     :align: center
     :alt: The interface for editing images and app store texts of your mobile app.
 
----------------
 
-==========================
-Post-Release Customization
-==========================
+==================================
+Part 3. Post-Release Customization
+==================================
 
 -------------------------------------------
 What Can I Change In My Mobile Application?
@@ -300,7 +296,7 @@ Home Page: How to Remove or Add the Titles of Blocks?
 
 The titles of blocks on the home page may or may not appear. That depends on the wrapper that you select for blocks in the admin panel of your store.
 
-Go to **Design → Layouts** and switch to **MobileAppLayout**. Select the **Homepage** and click the gear icon of any block to open the block's settings:
+Go to **Design → Layouts** and switch to **MobileAppLayout**. Select the **Homepage** tab and click the gear icon of any block to open the block's settings. There you will be able to select a wrapper for the block:
 
 * Select ``--`` if you want to hide the title of the block at the home page in your mobile app.
 
