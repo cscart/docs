@@ -26,3 +26,4 @@
     website/index
     stores/index
     settings/index
+    mobile_app/faq
