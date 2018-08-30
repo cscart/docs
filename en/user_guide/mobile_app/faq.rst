@@ -26,9 +26,9 @@ However, there is another way to interact with the store—a mobile application.
 Why Bother with an App When a Responsive Site Does the Same Thing?
 ------------------------------------------------------------------
 
-* **An app is designed specifically for mobile devices.** A responsive web site has to look fine and work fine on all kinds of screens, from a smartphone to a large monitor. A mobile app has no such concerns: it just has to work on smaller screens with touch functionality.
+* **An app is designed for mobile devices.** A responsive web site has to look fine and work fine on all kinds of screens, from a smartphone to a large monitor. A mobile app has no such concerns: it just has to work on smaller screens with touch functionality.
 
-* **An app is faster and more fluid.** When you view a web page, you do it via a browser; the browser has to load all the elements of the page (interface, images, etc.) from the Internet. A mobile app works differently: the interface is already stored on your device, so the app only has to download the data that matters (such as updated products).
+* **An app is faster.** When you view a web page, you do it via a browser; the browser has to load all the elements of the page (interface, images, etc.) from the Internet. A mobile app works differently: the interface is already stored on your device, so the app only has to download the data that matters (such as updated products).
 
 * **An app is a way of advertisement.** Firstly, the logo of the store (or any other image of your choice) appears on Apple App Store and Google Play as the app icon. Secondly, if customers install the app, they'll be seeing that logo on the screens of their smartphones among other apps regularly.
 
@@ -44,9 +44,9 @@ How Does the App Synchronize with My Store?
 
 The app has all the products that you offer in your store. If you add or remove products, categories, shipping and payment methods, they will appear and disappear in the app as well.
 
-A customer who has an account in your store uses the same credentials to sign in to the app. By registering in the app, a customer also gets an account in your web store, and the other way around.
+A customer who has an account in your store uses the same credentials to sign in to the app. By registering in the app, a customer also gets an account in your web store.
 
-If a customer adds a product to cart or to the wish list in the mobile app, it will carry over to the store, and the other way around. Orders made in the app show up in the admin panel of your store, just like any other orders. Customers can see all their orders in their apps, including the orders they made on the web site.
+If a customer adds a product to cart or to the wish list in the mobile app, it will carry over to the store, and the other way around. Orders made in the app are no different to orders made at the web site: you manage them in your admin panel, and customers always see the full order history that includes orders from the app and from the site.
 
 ------------------------------------------------
 What Shipping and Payment Methods Are Supported?
@@ -56,8 +56,6 @@ The application supports **all shipping methods** and the following payment meth
 
 * PayPal Express Checkout
 
-* Yandex Money
-
 * Offline payment methods (such as "Discuss with manager", etc.)
 
 ------------------------------------
@@ -66,7 +64,7 @@ What Languages Does the App Support?
 
 For now, the app supports only English and Russian: when one of these languages is selected on your device, the app will be displayed in that language. These translations are provided by the CS-Cart team.
 
-The texts of the mobile app come with CS-Cart and Multi-Vendor as a part of the **Mobile Application** add-on. Once other languages are supported, translations into them will be made by the CS-Cart community and managed by our partners `in our project at CrowdIn <https://crowdin.com/project/cs-cart-latest>`_.
+The texts of the mobile app come with CS-Cart and Multi-Vendor as a part of the **Mobile Application** add-on. Once other languages are supported, translations into them will be made by the CS-Cart community and checked by our partners `in our project at CrowdIn <https://crowdin.com/project/cs-cart-latest>`_.
 
 .. image:: img/crowdin_project.png
     :align: center
@@ -82,7 +80,7 @@ Yes. If you enable them, customers will be able to receive information about ord
 
 #. Create a project for Android & iOS.
 
-#. Enter the key in the settings of the **Mobile Application** add-on that comes with your CS-Cart or Multi-Vendor installation.
+#. Enter the key in the settings of the **Mobile Application** add-on. The add-on comes with CS-Cart or Multi-Vendor, but isn't installed by default.
 
 #. Use the **Download config** button to get an archive with the application settings.
 
@@ -121,7 +119,7 @@ How Do I Get a Mobile Application for My Store?
 
 #. We'll need some information from you, so that we could create your app and publish it on Apple App Store and Google Play.
 
-   CS-Cart and Multi-Vendor come with the add-on called **Mobile Application** that isn't installed by default. That add-on allows you to: 
+   CS-Cart and Multi-Vendor come with the add-on called **Mobile Application** that isn't installed by default. That add-on allows you to:
 
    * Provide the information necessary for publishing the app (texts, images, links, etc.).
 
@@ -139,9 +137,9 @@ Can I Test the App before Buying It?
 
 We have demo applications `for Android <https://play.google.com/store/apps/details?id=com.simtech.multivendor>`_ and `for iOS <https://itunes.apple.com/app/multi-vendor-app-by-cs-cart/id1304872157>`_ based on our Multi-Vendor demo store. Feel free to install those apps, go around the catalog, register an account, add products to cart or wish list, "order" them, and so on. Of course, we're not actually selling anything at our demo store; it is just there to show how our software works.
 
------------------------------------
-When Does the Payment Period Start?
------------------------------------
+---------------------------------------------------
+How Soon after the Payment Will You Release My App?
+---------------------------------------------------
 
 Releasing a mobile application takes some time. We guarantee that we will build and upload the application to Google Play and Apple App Store within one month since the moment of receiving the **app_settings.zip** archive from you.
 
@@ -151,7 +149,7 @@ If we take longer to upload your application to Google Play or Apple App Store, 
 What Data Do You Need to Build a Mobile Application?
 ----------------------------------------------------
 
-Most of the data described below is collected via the **Mobile Application** add-on along with the colors of your future app:
+Most of the data described below is provided via the **Mobile Application** add-on along with the colors of your future app:
 
 #. **Images:**
 
@@ -246,7 +244,7 @@ The texts of your app are a part of **Mobile Application** add-on and can be edi
 
 #. Go to **Languages → Translations**. 
 
-#. Search for ``mobile_app.mobile_`` in the sidebar on the right—the results will include the texts used in the mobile app.
+#. Run a search for ``mobile_app.mobile_`` in the sidebar on the right—the results will include the texts used in the mobile app.
 
 #. Once you've changed the texts and saved your changes, you'll need to download the **app_settings.zip** archive from the **Mobile Application** add-on and send that archive to us.
 
@@ -290,9 +288,9 @@ For example, to set a link to a product #248, enter the following into the **URL
 
     This link format also works for banners in your main store and isn't affected by URL changes (such as changing the domain name, moving the store to another folder, or changing SEO names of objects). 
 
------------------------------------------------------
-Home Page: How to Remove or Add the Titles of Blocks?
------------------------------------------------------
+----------------------------------------------------
+Home Page: How to Show or Hide the Titles of Blocks?
+----------------------------------------------------
 
 The titles of blocks on the home page may or may not appear. That depends on the wrapper that you select for blocks in the admin panel of your store.
 
