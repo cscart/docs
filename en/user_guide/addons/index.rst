@@ -19,9 +19,9 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     age_verification/index
     anti_fraud/index
     attachments/index
+    google_backend_signin/index
     banners_management/index
     bestsellers_and_on_sale_products/index
-    google_backend_signin/index
     blog/index
     buy_together/index
     call_requests/index
