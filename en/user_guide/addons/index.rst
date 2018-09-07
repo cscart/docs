@@ -14,4 +14,74 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     :glob:
 
     *
-    */index
+    access_restrictions/index
+    advanced_products_import/index
+    age_verification/index
+    anti_fraud/index
+    attachments/index
+    banners_management/index
+    bestsellers_and_on_sale_products/index
+    google_backend_signin/index
+    blog/index
+    buy_together/index
+    call_requests/index
+    catalog_mode/index
+    comments_and_reviews/index
+    customers_also_bought/index
+    customer_to_vendor_communication/index
+    data_feeds/index
+    eBay/index
+    email_marketing/index
+    form_builder/index
+    gdpr/index
+    gift_certificates/index
+    google_analytics/index
+    google_export/index
+    google_recaptcha/index
+    google_sitemap/index
+    hidpi_displays_support/index
+    image_zoom/index
+    janrain/index
+    my_changes/index
+    myob/index
+    newsletters/index
+    old_admin_panel/index
+    order_barcode/index
+    payment_dependencies/index
+    paypal_adaptive/index
+    paypal_for_marketplaces/index
+    paypal_payments/index
+    ping_payments/index
+    polls/index
+    price_list/index
+    product_variations/index
+    quickbooks/index
+    required_products/index
+    reward_points/index
+    rma/index
+    rss_feed/index
+    searchanise/index
+    seo/index
+    sms_notifications/index
+    social_buttons/index
+    social_login/index
+    store_import/index
+    store_locator/index
+    stripe_connect/index
+    suppliers/index
+    tags/index
+    vendor_data_premoderation/index
+    vendor_debt_payout/index
+    vendor_locations/index
+    vendor_plans/index
+    video_tutorials/index
+    watermarks/index
+    wish_list/index
+
+
+.. toctree::
+    :hidden:
+
+    mobile_admin_app/index
+    twigmo/index
+    vendor_commission/index

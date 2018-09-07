@@ -32,6 +32,7 @@
     form_builder/index
     geolocation/index
     gift_certificates/index
+    google_backend_signin/index
     google_recaptcha/index
     janrain/index
     paypal_payments/index
