@@ -34,7 +34,7 @@ If a vendor's balance is negative, the marketplace owner has to contact the vend
 Vendor Plans
 ============
 
-The :doc:`Vendor Plans </user_guide/addons/vendor_plans/index>` add-on helps with accounting. It offers plans for vendors with various restrictions and conditions. The add-on provides the following tools for the marketplace owners to make money off those plans:
+The :doc:`/user_guide/addons/vendor_plans/index` add-on helps with accounting. It offers plans for vendors with various restrictions and conditions. The add-on provides the following tools for the marketplace owners to make money off those plans:
 
 * One-time or periodic fee for using the plan.
 
@@ -48,7 +48,7 @@ The information about fees and commissions is recorded automatically on the **Ac
 
 .. note::
 
-    **Summary:** The :doc:`Vendor Plans </user_guide/addons/vendor_plans/index>` add-on doesn't automate money distribution by itself. It only makes accounting easier by tracking one-time and periodic fees and commissions from orders.
+    **Summary:** The :doc:`/user_guide/addons/vendor_plans/index` add-on doesn't automate money distribution by itself. It only makes accounting easier by tracking one-time and periodic fees and commissions from orders.
 
 ===========================
 Marketplace Payment Methods
@@ -58,9 +58,9 @@ Some real-time payment methods are designed specifically for marketplaces. These
 
 Currently, Multi-Vendor has the following payment methods with automatic money distribution (as built-in add-ons):
 
-* :doc:`PayPal for Marketplaces </user_guide/addons/paypal_for_marketplaces/index>`
+* :doc:`/user_guide/addons/paypal_for_marketplaces/index`
 
-* :doc:`Stripe Connect </user_guide/addons/stripe_connect/index>`
+* :doc:`/user_guide/addons/stripe_connect/index`
 
 These add-ons can be configured to collect the following sums in favor of the marketplace:
 
@@ -78,7 +78,7 @@ However, for these payment methods to work, all vendors whose products are being
 Vendor Debt Payout
 ==================
 
-The :doc:`Vendor Debt Payout </user_guide/addons/vendor_debt_payout/index>` add-on covers the situations when vendor debts and fees for plans need to be collected without using marketplace payment methods. Here is what the add-on offers:
+The :doc:`/user_guide/addons/vendor_debt_payout/index` add-on covers the situations when vendor debts and fees for plans need to be collected without using marketplace payment methods. Here is what the add-on offers:
 
 * Limit on the maximum debt of a vendor and the time within which a vendor must pay for using the vendor plan.
 
@@ -94,4 +94,44 @@ Although this approach requires action from vendors, it allows marketplace owner
 
 .. note::
 
-    **Summary:** The :doc:`Vendor Debt Payout </user_guide/addons/vendor_debt_payout/index>` add-on allows marketplace owners to automate the collecting of debts from vendors. If vendors don't pay, they won't be able to work in their administration panels. The payment process itself is just like placing an order on the storefront.
+    **Summary:** The :doc:`/user_guide/addons/vendor_debt_payout/index` add-on allows marketplace owners to automate the collecting of debts from vendors. If vendors don't pay, they won't be able to work in their administration panels. The payment process itself is just like placing an order on the storefront.
+
+==================================
+Direct Customer-to-Vendor Payments
+==================================
+
+.. note::
+
+    This add-on is available only in Multi-Vendor Plus.
+
+The :doc:`/user_guide/addons/direct_customer_to_vendor_payments/index` add-on frees the marketplace owners from the need to distribute money among vendors. Here's how it works:
+
+#. Vendors create their own payment methods.
+
+#. When customers buy products from multiple vendors, they pay to each vendor separately at checkout.
+
+#. The money from orders goes directly to vendors.
+
+   .. hint::
+
+       If a vendor doesn't set up a payment method, then the marketplace payment methods will be offered at checkout. The money will go to the marketplace owner, who will have to transfer it to vendor.
+
+#. Any transaction fees imposed by the marketplace are listed as :ref:`unpaid payouts <payout>` (vendor's debt to the marketplace owner).
+
+   .. image:: /user_guide/addons/direct_customer_to_vendor_payments/img/vendor_payment_methods.png
+       :align: center
+       :alt: Paying to vendors separately means that each vendor gets money directly from customers, without the need for you to do something about it.
+
+Direct payments to vendors work best when combined with some other add-ons mentioned above. Here is what they achieve together:
+
+* :doc:`/user_guide/addons/vendor_plans/index` keep track of the periodic and order-specific fees that a vendor has to pay for using the marketplace.
+
+* :doc:`/user_guide/addons/direct_customer_to_vendor_payments/index` ensure that vendors get their money faster, and that you don't need to bother with distributing the money among vendors.
+
+* :doc:`/user_guide/addons/vendor_debt_payout/index` helps you to collect the periodic and order-specific fees from vendors automatically.
+
+  You just set up a payment method, and vendors use it to pay their fees from time to time. If vendors don't pay, they lose access to their admin panel.
+
+.. note::
+
+    **Summary:** The :doc:`/user_guide/addons/direct_customer_to_vendor_payments/index` add-on changes the way your marketplace works: the money goes directly to vendors, and you don't have to distribute it. Other add-ons ensure that vendors pay their fees to the marketplace in a timely manner.

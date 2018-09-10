@@ -30,6 +30,7 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     customers_also_bought/index
     customer_to_vendor_communication/index
     data_feeds/index
+    direct_customer_to_vendor_payments/index
     eBay/index
     email_marketing/index
     form_builder/index
