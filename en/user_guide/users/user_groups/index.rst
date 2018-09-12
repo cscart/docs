@@ -2,29 +2,39 @@
 User Groups
 ***********
 
-**User groups** can be regarded as different membership levels. You can use groups to control access to products and categories, as well as shipping and payment methods.
+**User groups** act as membership levels: they allow you to grant different rights to different users.
 
-Groups also let you introduce multiple pricing schemes into the store. Administrator user groups allow you to set various restrictions for administrators—use that to create accounts with limited permissions for your staff.
+* **Customer groups** determine access to products and categories, shipping and payment methods. Products can also have different prices for members of different customer groups.
 
-The **User Groups** section under **Customers → User Groups** contains a list of user groups that exist in your store. 
+* **Administrator groups** determine what administrators can see or do in the admin panel. Use that to create accounts with limited permissions for your staff.
+
+.. hint::
+
+    To manage user groups, go to **Customers → User Groups**.
 
 ===================
 Adding a User Group
 ===================
 
-1. Click the **+** button. This will open a form with the group options.
+#. In the Administration panel, go to **Customers → User groups**.
 
-2. Fill in the form.
+#. Click the **+** button. This will open a form with the group options.
 
-	* **User group**—name of the group.
+#. Fill in the form.
 
-	* **Type**—type of the group.
+   * **User group**—the name of the group.
 
-	* **Status**—initial status of the group.
+   * **Type**—the type of users that will be a part of the group (:doc:`customers </user_guide/users/customers/index>` or :doc:`administrators </user_guide/users/administrators/index>`).
 
-3. Click the **Create** button.
+   * **Status**—the initial status of the group:
 
-The new group will appear among the other user groups.
+     * *Active*—the user group works. If it is a customer group, it will appear on the storefront, and customers will be able to request to join this group.
+
+     * *Hidden*—the user work works, but isn't visible on the storefront (therefore, customers can't apply for this group).
+
+     * *Disabled*—the user group doesn't appear anywhere and doesn't affect the rights of users in any way.
+
+#. Click the **Create** button. The new group will appear among the other user groups.
 
 ============================
 Managing Membership Requests
@@ -38,28 +48,32 @@ Customers can apply for a user group by clicking on the **Join** link on the sto
 
 To process a request, complete the following steps:
 
-1. Go to **Customers → User Groups**.
+#. Go to **Customers → User groups** in the Administration panel of your store.
 
-2. Click on the **gear** button and choose the **User group requests** tab to open a list of pending requests.
+#. Click on the **gear** button and choose the **User group requests** tab to open a list of pending requests.
 
-.. image:: img/manage_membership.png
-    :align: center
-    :alt: Click on the gear button and choose the User group requests tab to open a list of pending requests.
+   .. image:: img/manage_membership.png
+       :align: center
+       :alt: Click on the gear button and choose the User group requests tab to open a list of pending requests.
 
-3. Tick the checkboxes next to the requests you want to process and click either **Approve selected** or the **trash bin** button. You can also change the status of a particular request in the drop-down menu on the right. 
+#. Tick the checkboxes next to the requests you want to process, click the gear button in the top right corner. and choose either **Approve selected** or **Decline selected**. You can also change the status of a particular request in the drop-down menu on the right. 
 
 =====================================
 Configuring Administrator Permissions
 =====================================
 
-For each user group of the administrator type you can specify what the administrators from that group can or cannot do:
+For each administrator group you can specify what the members of that group can or cannot do:
 
-1. Click the **gear** button corresponding to the required administrator group in the list and choose **Edit**, open the **Privileges** tab. This will open a list of administrator tasks.
+#. Go to **Customers → User groups**.
 
-.. image:: img/admin_privileges.png
-    :align: center
-    :alt: Tick the checkboxes next to the privileges you want to grant to the group.
+#. Click the name of the administrator group on the list.
 
-2. Select the privileges you want to give to the members of the group.
+#. Switch to the **Privileges** tab. This will open a list of tasks usually performed by administrators.
 
-3. Click the **Save** button to apply the changes.
+   .. image:: img/admin_privileges.png
+       :align: center
+       :alt: Tick the checkboxes next to the privileges you want to grant to the group.
+
+#. Select the privileges you want to give to the members of the group.
+
+#. Click the **Save** button to apply the changes.
