@@ -40,7 +40,7 @@ Functionality Changes
 
 [*] Admin panel: Pop-up with info about CS-Cart Ultimate and multiple storefronts improved.
 
-[*] Payment methods: ServiRed: Payment method was updated for PHP 7.1.
+[*] Payment methods: ServiRed: The support of PHP 7.1 and newer versions was added.
 
 [*] Responsive admin panel: The styles of buttons, text fields and RTL languages were updated.
 
