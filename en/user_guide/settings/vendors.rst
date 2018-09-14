@@ -4,7 +4,7 @@ Vendors
 
 .. important::
 
-    **Vendors** are only available in **Multi-Vendor**.
+    Vendors are available only in Multi-Vendor.
 
 Use this section to adjust vendor settings for the Administration panel and the storefront.
 
@@ -18,10 +18,12 @@ Use this section to adjust vendor settings for the Administration panel and the 
 
       For more information on how vendors work with layouts and styles, please refer to :doc:`this article </user_guide/users/vendors/allow_vendors_to_edit_layout_and_theme>`.
 
-* **Allow users to apply for vendor account**—if you enable this setting, :doc:`customers will be able to send the root administrator a request to become a vendor </user_guide/users/vendors/allow_customers_to_apply_for_vendor_account>`.
+* **Allow users to apply for vendor account**—if you enable this setting, customers will be able to send the root administrator a request to become a vendor.
+
+  .. hint::
+
+      Here's how to :doc:`configure the vendor application form and lead customers to it</user_guide/users/vendors/allow_customers_to_apply_for_vendor_account>`.
 
 * **Automatically create the administrator account for the new approved vendor**—if you enable this setting, the company administrator will be automatically created together with the company.
 
 * **Vendors per page**—the number of vendors displayed on one page.
-
-* **Applying vendors must agree to terms and conditions**—if you enable this setting, then the customers who are applying for a vendor account will need to accept the terms and conditions.
