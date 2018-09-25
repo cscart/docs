@@ -30,11 +30,11 @@ Here's how it works:
 
 #. Before calculating commission for an order, Multi-Vendor calculates how much each of the products in the order contributes to the sum based on which the commission will be calculated. That way we can address the situations when shipping cost is included in vendor commission, or when there is a discount that affects order total.
 
-   For example, we have an order for Product 1 ($100) and Product 2 ($300), but there's a discount of $300 for the entire order. The subtotal is now $100. Product 1 makes up 25% of the original sum, and and Product 2 makes up 75%. That's why the commission calculation for Product 1 will be based on $25, and Product 2 will have its commission calculated based on $75.
+   For example, we have an order for Product 1 ($100) and Product 2 ($300), but there's a discount of $300. The subtotal is now $100. Product 1 makes up 25% of the original sum, and and Product 2 makes up 75%. That's why the commission calculation for Product 1 will be based on $25, and Product 2 will have its commission calculated based on $75.
 
    .. note::
 
-       This doesn't affect absolute commissions; they are applied to orders after the commissions for the categories have been calculated.
+       This doesn't affect absolute commissions of vendor plans; they are applied to orders after the commissions for the categories have been calculated.
 
 ============
 Installation
