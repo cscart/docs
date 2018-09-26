@@ -4,7 +4,7 @@ How To: Manage Vendor Plans
 
 .. note::
 
-    This functionality first appeared in **Multi-Vendor 4.4.1** as a part of the :doc:`Vendor Plans <../../addons/vendor_plans/index>` add-on.
+    This functionality first appeared in **Multi-Vendor 4.4.1** as a part of the :doc:`Vendor Plans </user_guide/addons/vendor_plans/index>` add-on.
 
 Vendor plans allow you to set conditions for vendors who sell products in your store. For example, you can specify how much and how often your vendors have to pay you, which categories they can use, and so on.
 
@@ -26,15 +26,15 @@ To manage vendor plans, go to **Vendors → Vendor plans** in the Administration
 Add/Edit a Vendor Plan
 ======================
 
-1. To add a plan, click the **+** button in the top right corner of the page. To edit a plan, click on the plan’s name in the list.
+#. To add a plan, click the **+** button in the upper right part of the page. To edit a plan, click on the plan’s name in the list.
 
-2. A pop-up window with multiple tabs will open. Configure the plan’s properties on those tabs:
+#. A pop-up window with multiple tabs will open. Configure the plan’s properties on those tabs:
 
    **General:**
 
    * **Name**—the name of the plan as it appears in the Administration panel and on the storefront.
 
-   * **Offer as the best choice**—tick this checkbox to highlight this plan among other plans. The **Best Choice** bar will appear above the plan’s name.
+   * **Offer as the best choice**—tick this checkbox to highlight this plan among other plans. The *Best Choice* bar will appear above the plan’s name.
 
    * **Description**—a brief description of the plan, that will appear above the plan’s name. It looks best when you limit it to a phrase or a short sentence.
  
@@ -48,9 +48,9 @@ Add/Edit a Vendor Plan
 
      * *Disabled*—the plan is not visible to vendors and can’t be used by any of them. You can disable a plan only if none of the vendors use it.
 
-   .. note::
+     .. note::
 
-       The visibility of plans to also depends on whether or not you :doc:`allow vendors to switch to other plans. <../../addons/vendor_plans/vendor_plans_settings>`
+         The visibility of plans to also depends on whether or not you :doc:`allow vendors to switch to other plans </user_guide/addons/vendor_plans/vendor_plans_settings>`.
 
    .. image:: img/new_plan_general.png
        :align: center
@@ -92,7 +92,7 @@ Add/Edit a Vendor Plan
 
        Learn more about vendors and categories in :doc:`a dedicated article. <vendor_categories>`
 
-3. Click the **Create** or **Save** button.
+#. Click the **Create** or **Save** button.
 
 ====================
 Delete a Vendor Plan
@@ -102,15 +102,15 @@ Delete a Vendor Plan
 
 * To delete multiple plans:
 
-  1. Tick the checkboxes of the plans you want to delete.
+  #. Tick the checkboxes of the plans you want to delete.
 
-  2. Click the **gear** button in the top right corner.
+  #. Click the **gear** button in the top right corner.
 
-  3. Choose **Delete selected**.
+  #. Choose **Delete selected**.
 
-.. important::
+  .. important::
 
-    A plan won’t be deleted if at least one vendor uses it.
+      A plan won’t be deleted if at least one vendor uses it.
 
 .. _switch-between-vendor-plans:
 
@@ -118,13 +118,13 @@ Delete a Vendor Plan
 Switch Between Plans
 ====================
 
-1. In the Administration panel, go to **Vendors → Vendors**.
+#. In the Administration panel, go to **Vendors → Vendors**.
 
-2. Click the name of the desired vendor.
+#. Click the name of the desired vendor.
 
-3. Switch to the **Plans** tab.
+#. Switch to the **Plans** tab.
 
-4. Choose the desired plan.
+#. Choose the desired plan.
 
    * Store administrators see a dropdown list with all *Active* and *Hidden* plans that exist in the store.
 
@@ -132,13 +132,13 @@ Switch Between Plans
 
      .. important::
 
-         Vendor’s administrators can move their vendors to other plans only if it’s allowed in :doc:`the Vendor Plans add-on settings. <../../addons/vendor_plans/vendor_plans_settings>` Otherwise they will only see their own plan.
+         Vendor’s administrators can move their vendors to other plans only if it’s allowed in :doc:`the Vendor Plans add-on settings. </user_guide/addons/vendor_plans/vendor_plans_settings>` Otherwise they will only see their own plan.
 
-5. Click the **Save** button in the top right corner. After that the payment for the new plan will be immediately subtracted from the vendor’s account balance.
+#. Click the **Save** button in the top right corner. After that the payment for the new plan will be immediately subtracted from the vendor’s account balance.
 
 .. note::
 
-    Vendors receive a special :doc:`email notification <../../look_and_feel/email_templates/index>` telling them that they’ve been moved to another plan.
+    Vendors receive a special :doc:`email notification </user_guide/look_and_feel/email_templates/index>` telling them that they’ve been moved to another plan.
 
 .. image:: img/vendor_selects_plan.png
      :align: center
