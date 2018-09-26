@@ -62,6 +62,10 @@ Add/Edit a Vendor Plan
 
    * **Transaction fee**—a commission from the sales that a vendor has to pay to the store owner.
 
+     .. note::
+
+         The :doc:`/user_guide/addons/commissions_by_category/index` add-on allows you to set commissions that depend on the main category of a product.
+
    .. image:: img/new_plan_commission.png
          :align: center
          :alt: The "Commission" tab of a vendor plan.
