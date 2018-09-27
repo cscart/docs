@@ -1,30 +1,67 @@
 **********************************************
-How To: Enable the Comments and Reviews Add-on
+How To: Set up the Comments and Reviews Add-on
 **********************************************
 
-To allow a customer to write comments:
+================
+Check the Add-on
+================
 
-*   In the Administration panel, go to **Add-ons → Manage add-ons**. 
-*   Make sure that the **Comments and reviews** add-on has an *Active* status.
-*   Go to **Products → Products** or **Products → Categories** and click on the name of the product or category, for which you want to allow comments.
-*   Go to the **Add-ons** tab.
+#. In the Administration panel, go to **Add-ons → Manage add-ons**.
 
-.. note ::
+#. Make sure that the **Comments and reviews** add-on is *Active*.
 
-	You are able to allow comments for products, categories, orders, blog, pages, and testimonials.
+#. (optional) Click the name of the add-on to open its settings. The settings are grouped into tabs, and each tab is responsible for an object type that supports reviews.
 
-*   In the **Comments and reviews** section in the **Reviews** drop-down menu choose the type of reviews: *Communication and rating*, *Communication* or *Rating*.
+   Here are a few examples of what you can do in the add-on settings:
 
-.. image:: img/comments_01.png
-	:align: center
-	:alt: Editing product
+   * Enable pre-moderation for comments, so that only the comments approved by administrators would become visible to other customers.
 
-To view and manage comments:
+   * Automatically allow or forbid comments and reviews for newly-created objects without affecting existing ones. That way you won't need to manually do this for every object you create.
 
-*   Go to **Website → Comments and reviews**.
-*   Open the tab with comments or reviews that you want to read.
-*   If necessary, edit comments and click **Save**.
+   * Forbid to leave reviews about a product or vendor to anyone who hasn't bought that product or from that vendor.
 
-.. image:: img/comments_02.png
-	:align: center
-	:alt: Comments and reviews
+   .. image:: img/comments_03.png
+       :align: center
+       :alt: The settings of the "Comments and reviews" add-on.
+
+==============================
+Choose Where to Allow Comments
+==============================
+
+#. Go to the page with the objects for which you'd like to allow comments (for example, **Products → Products** or **Products → Categories**).
+
+   .. note::
+
+       You can allow comments and/or reviews for products, categories, orders, blog, pages, and the store itself (testimonials).
+
+#. Click on the name of the product or category, for which you want to allow comments.
+
+#. Go to the **Add-ons** tab.
+
+#. Choose one of the variants for the *Reviews* property in the **Comments and reviews** section:
+
+   * *Communication and Rating*—customers can write a review and rate the object on the scale from 1 to 5.
+
+   * *Communication*—customers can write a review but can't rate the object.
+
+   * *Rating*—customers can rate the object, but can't write a review.
+
+   * *Disabled*—customers can't write a review or rate the object.
+
+   .. image:: img/comments_01.png
+       :align: center
+       :alt: Configuring reviews for a product.
+
+========================
+View and Manage Comments
+========================
+
+#. Go to **Website → Comments and reviews**.
+
+#. Open the tab with comments or reviews depending on the reviewed object.
+
+#. Edit the comments if necessary and click **Save**.
+
+   .. image:: img/comments_02.png
+       :align: center
+       :alt: Comments and reviews
