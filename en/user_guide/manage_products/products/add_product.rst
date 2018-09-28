@@ -75,6 +75,10 @@ If you plan to have several products with identical properties, you don't need t
 
 #. Change the names and individual properties of the clone products.
 
+   .. note::
+
+       Starting with version 4.9.1, cloning a product doesn't clone its :doc:`reviews </user_guide/addons/comments_and_reviews/index>`.
+
 -----------------------
 On the List of Products
 -----------------------
