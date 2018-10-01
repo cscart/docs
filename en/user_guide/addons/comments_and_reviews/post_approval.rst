@@ -10,7 +10,7 @@ Set up Moderation of Posts
 
 #. Click on the name of the **Comments and reviews** add-on.
 
-#. Most tabs have the following setting:**Administrator must approve posts submitted by**. It allows you to choose whose posts
+#. Most tabs have the following setting: **Administrator must approve posts submitted by**. It allows you to choose whose posts won't appear on the storefront without a prior review and approval by administrators.
 
    .. image:: img/post_approval_01.png
        :align: center
