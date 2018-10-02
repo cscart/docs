@@ -27,6 +27,7 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     call_requests/index
     catalog_mode/index
     comments_and_reviews/index
+    common_products/index
     customers_also_bought/index
     customer_to_vendor_communication/index
     data_feeds/index
