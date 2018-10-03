@@ -12,7 +12,7 @@ Functionality
 
 By default, the money in Multi-Vendor first goes to the marketplace owner, who then distributes it among vendors. Here is :doc:`an article in the documentation </user_guide/users/vendors/workflow>` that explains how it works. The **Direct Customer-to-Vendor Payments** add-on changes that behavior as follows:
 
-* When a customer buys products from multiple vendors, he or she has to pay each vendor individually. 
+* When a customer buys products from multiple vendors, he or she has to pay each vendor individually.
 
   .. image:: img/separate_checkouts.png
       :align: center
@@ -23,6 +23,10 @@ By default, the money in Multi-Vendor first goes to the marketplace owner, who t
   * Marketplace owners don't need to distribute money from orders among vendors.
 
   * Vendors get their money faster (because they no longer need to wait for the marketplace owner to distribute it).
+
+  .. note::
+
+      If a vendor's administrator doesn't see the **Administration → Payment methods** menu, it could be because the administrator belongs to a :doc:`vendor user group </user_guide/users/vendors/vendor_group>` without the *View payments* and *Manage payments* privileges. To solve the problem, grant those privileges to the user group.
 
   .. image:: img/vendor_payment_methods.png
       :align: center

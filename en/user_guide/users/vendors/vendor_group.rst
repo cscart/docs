@@ -4,7 +4,7 @@ How To: Create a New User Group for Vendors' Administrators
 
 .. note::
 
-    This functionality first appeared in Multi-Vendor 4.9.1. It is available only in Multi-Vendor Plus.
+    This functionality first appeared in Multi-Vendor 4.9.1. It is available only in Multi-Vendor Plus as a part of the :doc:`/user_guide/addons/vendor_privileges/index` add-on.
 
 Marketplace owners can determine what :doc:`vendors' administrators </user_guide/users/vendors/index>` can do in their admin panels. To this end, they can:
 
@@ -15,6 +15,12 @@ Marketplace owners can determine what :doc:`vendors' administrators </user_guide
   .. hint::
 
       This change won't affect existing administrators. You can assign user groups to them manually, if necessary. That's why Step 3 in this instruction is optional.
+
+===================================================
+Step 0. Make Sure That Vendor Privileges Are Active
+===================================================
+
+By default, Multi-Vendor doesn't have user groups for vendors' administrators. That functionality is available only in Multi-Vendor Plus, and only if the **Vendor Privileges** add-on is active. :doc:`The article aboug the add-on </user_guide/addons/vendor_privileges/index>` explains what the add-on does and how to set it up.
 
 ===========================
 Step 1. Create a User Group
@@ -50,19 +56,23 @@ Step 1. Create a User Group
 Step 2. Set a Default Group for Vendors' Administrators
 =======================================================
 
-2.1. Go to **Settings → Vendors**.
+2.1. Go to **Add-ons → Manage add-ons**.
 
-2.2. Find the **Default user group for vendors' administrators** setting. It automatically assigns all newly-created vendor administrators to the user group of your choice. That way you won't need to do that manually every time someone creates a vendor's administrator.
+2.2. Find the :doc:`/user_guide/addons/vendor_privileges/index` add-on and click on its name.
 
-2.3. Once you've selected the user group, click **Save**.
+2.3. The settings of the add-on will open. The **Default user group for vendors' administrators** setting automatically assigns all newly-created vendor administrators to the user group of your choice.
+
+2.4. Change the setting as you see fit. That way you won't need to manually change a user group every time when someone creates a vendor's administrator.
+
+2.5. Once you've selected the user group, click **Save**.
 
 .. image:: img/default_vendor_group.png
     :align: center
     :alt: Choose the default user group for all newly-created vendor admins.
 
-=================================================
-Step 3. Add a Group to Vendor Manually (Optional)
-=================================================
+=================================================================
+Step 3. Add a Group to Vendor's Administrator Manually (Optional)
+=================================================================
 
 3.1. Go to **Customers → Vendor's administrators**.
 
