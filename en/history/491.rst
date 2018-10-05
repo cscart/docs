@@ -134,11 +134,7 @@ Bug Fixes
 
 [!] Multi-Vendor: Add-ons: Vendor locations [Beta]: The "Vendors by location" block could be added to any page, even if the page wasn't suitable for that block. Fixed.
 
-[!] Order statuses: The color picker for the order statuses didn't work. Fixed.
-
 [!] Orders: When an order with out-of-stock products was edited, product availability notifications were sent to products subscribers. Fixed.
-
-[!] Pages: Links: The "Open in new window" checkbox didn't work. Fixed.
 
 [!] Products: Categories: Select2: The drop-down list of categories on the product editing page could be displayed incorrectly in some cases. Fixed.
 
@@ -160,6 +156,10 @@ Bug Fixes
 
 [!] {#7328} Multi-Vendor: Add-ons: Vendor debt payout: Vendors couldn't pay the debt when the "Catalog mode" add-on was active. Fixed.
 
-[!] {#7349} Add-ons: PayPal payments: The add-on's settings couldn't be edited when there were multiple storefronts. Fixed.
+[!] {#7335} Pages: Links: The "Open in new window" checkbox didn't work. Fixed.
 
-[!] {#7388} Add-ons: Advanced products import: URL uploads were not handled properly if the URL didn't contain file extension. Fixed.
+[!] {#7338} Add-ons: Advanced products import: URL uploads were not handled properly if the URL didn't contain file extension. Fixed.
+
+[!] {#7348} Order statuses: The color picker for the order statuses didn't work. Fixed.
+
+[!] {#7349} Add-ons: PayPal payments: The add-on's settings couldn't be edited when there were multiple storefronts. Fixed.
