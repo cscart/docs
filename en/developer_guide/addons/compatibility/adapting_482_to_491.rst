@@ -30,9 +30,9 @@ Common Changes
 
 #. The interface for closing storefronts has changed:
 
-   * In ``ULTIMATE``, a store can now be closed on the list of stores or on the store editing page. The top menu bar changes its color depending on the status of the currently selected store. In the "All stores" mode, a lock icon will appear; it will look different, depending on what number of storefronts is closed. 
+   * In CS-Cart, a store can now be closed on the list of stores or on the store editing page. The top menu bar changes its color depending on the status of the currently selected store. In the "All stores" mode, a lock icon will appear; it will look different, depending on what number of storefronts is closed. 
 
-   * In ``MULTIVENDOR``, the color of top menu will change depending on storefront status, and the lock icon will lead to **Settings → General** where the storefront can be reopened.
+   * In Multi-Vendor, the color of top menu will change depending on storefront status, and the lock icon will lead to **Settings → General** where the storefront can be reopened.
 
 #. The **Vendor plans: Commissions by category** add-on has been added. It allows to set order commissions for vendors depending on the categories to which the ordered products belong.
 
@@ -121,7 +121,7 @@ New Hooks
 
 #. This hook allows you to skip clearing the cart when the catalog mode is enabled::
 
-     fn_set_hook('fn_vendor_debt_payout_catalog_mode_pre_add_to_cart', $product_data, $cart, $auth, $update, $can_delete);
+     fn_set_hook("catalog_mode_pre_add_to_cart", $product_data, $cart, $auth, $update, $can_delete);
 
 #. This hook allows you to influence the process of updating the prices of a product::
 
@@ -213,19 +213,23 @@ New Functions
 
 #. Determine whether or not shipping cost must be recalculated at the current checkout step::
 
-     function fn_checkout_step_needs_shipping_calculation($cart, $completed_steps)
+     fn_checkout_step_needs_shipping_calculation($cart, $completed_steps)
 
 #. Determine whether or not user data was changed in the cart::
 
-     function fn_is_cart_user_data_changed(array &$cart, array $auth)
+     fn_is_cart_user_data_changed(array &$cart, array $auth)
 
 #. Fetch the offer type::
 
-     Tygh\Ym\Offers::getOfferType($product)
+     \Tygh\Ym\Offers::getOfferType($product)
 
 #. Fetch the map language::
 
-     fn_rus_pickup_get_map_language()
+     fn_rus_pickup_get_map_language($lang_code)
+
+#. Handle the preset file upload process::
+
+     \Tygh\Addons\AdvancedImport\Readers\Factory::uploadPresetFile(array $preset, $company_id = null)
 
 -----------------
 Changed Functions
@@ -263,6 +267,4 @@ Changed Functions
 New Classes
 -----------
 
-#. ``Tygh\Enum\Addons\Pickup\MapLanguage``—enumeration of map languages.
-
-#. ``\Tygh\Addons\AdvancedImport\Readers\Factory::uploadPresetFile(array $preset, $company_id = null)``—handles the preset file upload process.
+``Tygh\Enum\Addons\Pickup\MapLanguage``—enumeration of map languages.
