@@ -127,6 +127,10 @@ New Hooks
 
      fn_set_hook('update_product_prices', $product_id, $_product_data, $company_id, $skip_price_delete, $table_name, $condition);
 
+#. This hook allows you to change pagination data::
+
+     fn_set_hook('generate_pagination_pre', $params, $area, $deviation);
+
 -------------
 Changed Hooks
 -------------
