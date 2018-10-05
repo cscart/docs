@@ -12,27 +12,27 @@ Common Changes
 
    * ``S``—seller (vendor) profile
 
-   Profile type selector has been added to the profile fields management page (**Administration → Profile fields**). The sidebar with the selector shows up if there are more that one profile type available.
+   Profile type selector has been added to the profile fields management page (**Administration → Profile fields**). The sidebar with the selector shows up if more than one profile type are available.
 
    The *Vendor information* section on profile fields management page determines what fields will be available on the *Become a seller* form.
 
 #. The support of the ``fax`` field has been removed from the code and templates. For existing installations, the ``fax`` field in the ``cscart_companies`` table will remain unchanged, but new installations won't have it.
 
-#. It is no longer possible to change the user group type after the user group has been created, or to assign the user group to the wrong type of users.
+#. It is no longer possible to change the type of a user group type after the user group has been created, or to assign a user group to the wrong type of users.
 
-#. A vendor administrator with a user group assigned is no longer treated as *restricted administrator*.
+#. A vendor's administrator with a user group assigned is no longer treated as *restricted administrator*.
 
-#. A new directive ``show_on_locations`` is now available for the *blocks* schema. That directive allows you to specify the locations the block can be added to. This restriction works when you try to add block trough interface, and prevents the block from showing up if it has already been added.
+#. A new directive ``show_on_locations`` is now available for the *blocks* schema. That directive allows you to specify the locations the block can be added to. This restriction works when you try to add a block trough interface, and prevents the block from showing up if it has already been added.
 
 #. A new setting has been added to the **Products** tab of the **Comments and reviews** add-on. That setting allows posting reviews only to those who have bought the product.
 
-#. The logic of leaving a review is now slightly different as well. A user must now be signed in to leave a review. If the user isn't signed in, an attempt to leave a review will open the sign-in form. Both the sign-in form and new form for leaving a review now are being fetched via AJAX.
+#. The logic of leaving reviews is now slightly different. A user must now be signed in to leave a review. If the user isn't signed in, an attempt to leave a review will open the sign-in form. Both the sign-in form and new form for writing a review now are being fetched via AJAX.
 
 #. The interface for closing storefronts has changed:
 
    * In ``ULTIMATE``, a store can now be closed on the list of stores or on the store editing page. The top menu bar changes its color depending on the status of the currently selected store. In the "All stores" mode, a lock icon will appear; it will look different, depending on what number of storefronts is closed. 
 
-   * In ``MULTIVENDOR``, the color of top menu will change depending on storefront status, and the lock icon will lead to **Settings → General**, where the storefront can be reopened.
+   * In ``MULTIVENDOR``, the color of top menu will change depending on storefront status, and the lock icon will lead to **Settings → General** where the storefront can be reopened.
 
 #. The **Vendor plans: Commissions by category** add-on has been added. It allows to set order commissions for vendors depending on the categories to which the ordered products belong.
 
@@ -44,26 +44,22 @@ A component for locks based on `symfony/lock <https://symfony.com/doc/3.4/compon
 
 To create a lock, use ``Tygh::$app['lock.factory']``.
 
-Usage example:
+Usage example::
 
-.. code-block:: php
+  $lock = Tygh::$app['lock.factory']->createLock('pdf-invoice-generation');
 
-    $lock = Tygh::$app['lock.factory']->createLock('pdf-invoice-generation');
+  if ($lock->acquire()) {
+     // The resource "pdf-invoice-generation" is locked.
+     // You can compute and generate invoice safely here.
 
-    if ($lock->acquire()) {
-       // The resource "pdf-invoice-generation" is locked.
-       // You can compute and generate invoice safely here.
-
-       $lock->release();
-    }
+     $lock->release();
+  }
 
 An exclusive lock was added for cache generation in the block manager, styles and JS compilation to prevent a race condition.
 
-To disable locks, use the ``dummy`` provider:
+To disable locks, use the ``dummy`` provider::
 
-.. code-block:: php
-
-    $config['lock_backend'] = 'dummy';
+  $config['lock_backend'] = 'dummy';
 
 --------------------
 Deprecated Templates
@@ -245,11 +241,6 @@ Changed Functions
     // New:
     function fn_set_store_mode($store_mode, $company_id = null, $clear_cache = true)
 
-
-
-#. ``\Tygh\Registry::loadFromCache`` now retrieves a value from cache with a specified key.
-
-
 #.
 
   ::
@@ -260,6 +251,7 @@ Changed Functions
     // New:
     function fn_update_product_amount($product_id, $amount, $product_options, $sign, $notify = true)
 
+#. ``\Tygh\Registry::loadFromCache`` now retrieves a value from cache with a specified key.
 
 #. ``\Tygh\BlockManager\RenderManager::registerBlockCacheIfNeeded`` now returns an array with the caching parameter, if successful.
 
@@ -271,6 +263,6 @@ Changed Functions
 New Classes
 -----------
 
-#. `Tygh\Enum\Addons\Pickup\MapLanguage`—enumeration of map languages.
+#. ``Tygh\Enum\Addons\Pickup\MapLanguage``—enumeration of map languages.
 
-#. `\Tygh\Addons\AdvancedImport\Readers\Factory::uploadPresetFile(array $preset, $company_id = null)`—handles the preset file upload process.
+#. ``\Tygh\Addons\AdvancedImport\Readers\Factory::uploadPresetFile(array $preset, $company_id = null)``—handles the preset file upload process.
