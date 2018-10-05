@@ -58,6 +58,10 @@ Functionality Changes
 
 [*] Add-ons: The add-ons that come with CS-Cart or Multi-Vendor by default now have CS-CART listed as their developer.
 
+[*] Admin panel: Storefronts: The color of the top menu bar now indicates whether the storefront is open or closed.
+
+[*] CS-Cart: Storefronts: Now the list of stores displays their status (whether the storefront is closed or not). The status can be changed on that page as well.
+
 [*] Core: The minimum required PHP version was bumped from 5.3.6 to 5.6.0.
 
 [*] Multi-Vendor: Add-ons: Customer-to-Vendor Communication: Privileges for user groups were added.
