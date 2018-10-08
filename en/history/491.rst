@@ -1,0 +1,165 @@
+***********************
+CS-Cart 4.9.1 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Back-End Sign-In via Google: An add-on for signing in to the Administration panel via Google accounts was added.
+
+[+] Add-ons: Comments and reviews: The ability to allow writing reviews for a product only to those who bought it was added.
+
+[+] Add-ons: Comments and reviews: The settings that enable or disable reviews by default for newly-created products, categories and pages were added.
+
+[+] Add-ons: OneKPay payments: A new add-on that provides the corresponding payment method was added.
+
+[+] Administration: Backup/Restore: A button for copying the CRON command was added.
+
+[+] Breadcrumbs: The ability to choose which category would be displayed in the breadcrumbs was added for shared products.
+
+[+] Core: Database: Index for product_feature_variant_descriptions.variant added.
+
+[+] Core: The locks for block cache generation and style compilation were implemented; the locks prevent a race condition and help to avoid increased server load when the cache is generated for the first time after cache clearing.
+
+[+] Hooks: Block manager: Locations: The "block_manager:update_location_general" hook was added.
+
+[+] Interface: Add-ons: Notifications were added to various places in the interface (such as payment method editing page), explaining that add-ons may provide more functionality (for example, other payment processors).
+
+[+] Multi-Vendor Plus: Add-ons: A new add-on called "Common Products for Vendors [Beta]" was introduced. It allows marketplace owners to create a single product base, with vendors choosing which of those products they sell and on what terms.
+
+[+] Multi-Vendor Plus: Add-ons: A new add-on called "Direct Customer-to-Vendor Payments [Beta]" was introduced. It allows vendors to create their own payment methods, so that the money would go directly to vendors, and the marketplace owner wouldn’t have to distribute it.
+
+[+] Multi-Vendor Plus: Add-ons: A new add-on called "Vendor Privileges" was introduced. It allows to create user groups for vendor administrators.
+
+[+] Multi-Vendor Plus: Add-ons: A new add-on called "Vendor plans: Commissions by category" was introduced. It allows marketplace owners to set different commissions for different categories depending on a vendor plan.
+
+[+] Multi-Vendor: Add-ons: Vendor Plans: The ability to set a fixed commission for each order was added.
+
+[+] Multi-Vendor: The ability to customize the profile fields on the vendor registration form was added.
+
+[+] Payment methods: A new template "empty.tpl" was added.
+
+[+] Products: A new mechanism for quick editing of selected products was added.
+
+[+] Products: The ability to mass-select products in the admin panel on the product list page with the Shift key was added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: Comments and reviews: Product comments and reviews are no longer cloned along with a product.
+
+[*] Add-ons: Old Admin Panel: The add-on is now deprecated; it won’t receive bug fixes or improvements and will eventually be removed.
+
+[*] Add-ons: PayPal Payments: The "Indian rupee" currency was added.
+
+[*] Add-ons: Social login: The “OpenID” and “AOL” providers are now disabled: if those providers were created in the store before the upgrade, they won't be removed, but you won't be able to create new “OpenID” or “AOL” providers.
+
+[*] Add-ons: The add-ons that come with CS-Cart or Multi-Vendor by default now have CS-CART listed as their developer.
+
+[*] Admin panel: Storefronts: The color of the top menu bar now indicates whether the storefront is open or closed.
+
+[*] CS-Cart: Storefronts: Now the list of stores displays their status (whether the storefront is closed or not). The status can be changed on that page as well.
+
+[*] Core: The minimum required PHP version was bumped from 5.3.6 to 5.6.0.
+
+[*] Multi-Vendor: Add-ons: Customer-to-Vendor Communication: Privileges for user groups were added.
+
+[*] Multi-Vendor: Profile fields: The default "Fax" field was removed. If you used it earlier, the values will remain in the database.
+
+[*] Multi-Vendor: Profile fields: The terms and conditions that vendors must agree to are now a profile field that you can edit or disable, rather than a setting.
+
+[*] Multi-Vendor: Settings: The ability to allow vendors to edit styles and themes is now available only in Multi-Vendor Plus.
+
+[*] Payment methods: Some obsolete templates for offline payment methods (fax.tpl, check.tpl, business_check.tpl) were removed.
+
+[*] Products: Popularity: Vendors can no longer change the value of “Popularity” of a product.
+
+[*] Responsive admin panel: Menu: The "cm-sticky-scroll" microformat was replaced with "position: sticky;" (except for Internet Explorer 11).
+
+=========
+Bug Fixes
+=========
+
+[!] Add-ons: Advanced products import: Privileges: A user without the "Manage catalog" privilege could still find a way to import products. Fixed.
+
+[!] Add-ons: Advanced products import: CSV files with macOS-style line endings couldn't be imported. Fixed.
+
+[!] Add-ons: Advanced products import: Empty fields in CSV file header caused fatal error when an import preset was saved. Fixed.
+
+[!] Add-ons: Buy Together: Using the option selection button of a product combination resulted in the page being scrolled up on mobile devices. Fixed.
+
+[!] Add-ons: Google Export: When the product wasn't in stock, its price wasn't calculated for the data feed. Fixed.
+
+[!] Add-ons: HiDPI displays support: A smaller image was used by the Image Zoom add-on on Retina displays. Fixed.
+
+[!] Add-ons: Mobile App: SEO: A wrong API URL was generated when the SEO add-on was disabled. Fixed.
+
+[!] Add-ons: PayPal payments: PayPal Standard: The language selected by the customer in the store wasn't taken into account when the customer was redirected to the PayPal page. Fixed.
+
+[!] Add-ons: Product variations [Beta]: If a variation had a quantity discount for purchasing 1 product, then editing the parent product resulted in that variation disappearing from the list of the product's variations. Fixed.
+
+[!] Add-ons: Product variations [Beta]: A PHP notice occurred when changes were saved on the Variations tab. Fixed.
+
+[!] Add-ons: Product variations [Beta]: Features of configurable products could be mixed up during product comparison. Fixed.
+
+[!] Add-ons: SEO: Canonical meta links were not generated for some pages. Fixed.
+
+[!] Add-ons: SEO: Checkbox "Create redirect from old URL" did not appear after a SEO name was changed. Fixed.
+
+[!] Add-ons: SEO: Some symbols of the Lithuanian and Latvian alphabets were not converted to the corresponding symbols of the English alphabet in links. Fixed.
+
+[!] Add-ons: Social login: The “Live” provider did not work. Fixed.
+
+[!] Admin panel: Saved search: If an administrator used the search bar again after using the saved search, it wasn't obvious that the parameters of the saved search still applied. Fixed.
+
+[!] CS-Cart: Stores: If two storefronts had similar URLs (like example.com and example.com.de), then customers could be redirected to the wrong storefront. Fixed.
+
+[!] Checkout: Shipping estimation: City and state were not taken from the store settings for the users who hadn't signed in. Fixed.
+
+[!] Core: Database: Session could get broken after a non-Unicode symbol was saved to the  database. Fixed.
+
+[!] Design: Layouts: Whenever a pop-up with the settings of a block was opened, the page was scrolled to the top. Fixed.
+
+[!] Design: Templates: One of the scroll bars was next to the wrong area. Fixed.
+
+[!] Design: The date in the Copyright block was displayed incorrectly. Fixed.
+
+[!] Emails: Order notifications: Status settings were not available when the old email templates were enabled. Fixed.
+
+[!] Locations: Countries in the list on the location configuration page were displayed only in the primary language. Fixed.
+
+[!] Multi-Vendor: Add-ons: Customer-to-Vendor Communication: In the responsive admin panel, the button for sending a message was outside the screen on mobile devices. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor locations [Beta]: The "Vendors by location" block could be added to any page, even if the page wasn't suitable for that block. Fixed.
+
+[!] Orders: When an order with out-of-stock products was edited, product availability notifications were sent to products subscribers. Fixed.
+
+[!] Products: Categories: Select2: The drop-down list of categories on the product editing page could be displayed incorrectly in some cases. Fixed.
+
+[!] Products: Features: Features from a disabled group were still displayed on the product page. Fixed.
+
+[!] Products: Images: The order of images was broken if image positions were not specified manually after upgrading to version 4.8.1. Fixed.
+
+[!] Products: Images: The order of product images was lost during cloning. Fixed.
+
+[!] Products: The product status drop-down menu didn’t open on mobile devices. Fixed.
+
+[!] Upgrade Center: Skip Backup: An email about backup was sent even when backup was skipped. Fixed.
+
+[!] Upgrade: The upgrade process could crash when backup of large tables was performed. Fixed.
+
+[!] Users: The "Act on behalf of" functionality didn't work on PHP 7.2. Fixed.
+
+[!] {#7325} Products: Edit selected: Product images were not displayed. Fixed.
+
+[!] {#7328} Multi-Vendor: Add-ons: Vendor debt payout: Vendors couldn't pay the debt when the "Catalog mode" add-on was active. Fixed.
+
+[!] {#7335} Pages: Links: The "Open in new window" checkbox didn't work. Fixed.
+
+[!] {#7338} Add-ons: Advanced products import: URL uploads were not handled properly if the URL didn't contain file extension. Fixed.
+
+[!] {#7348} Order statuses: The color picker for the order statuses didn't work. Fixed.
+
+[!] {#7349} Add-ons: PayPal payments: The add-on's settings couldn't be edited when there were multiple storefronts. Fixed.
