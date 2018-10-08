@@ -36,6 +36,14 @@ Common Changes
 
 #. The **Vendor plans: Commissions by category** add-on has been added. It allows to set order commissions for vendors depending on the categories to which the ordered products belong.
 
+#. A new data attribute ``caScrollToElmOffset`` has been added. This attribute allows you to offset the scroll when a page is automatically scrolled to some specific element. This comes useful when there is a custom top sticky menu that runs over the element after automatic scrolling.
+
+   Add the attribute to the ``<body>`` tag with a value in pixels, for example::
+
+     <body data-ca-scroll-to-elm-offset="120">
+
+   You can use the attribute on the storefront and in the administration panel (we now use it there too).
+
 -----
 Locks
 -----
