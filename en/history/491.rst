@@ -20,6 +20,8 @@ New Features and Improvements
 
 [+] Core: Database: Index for product_feature_variant_descriptions.variant added.
 
+[+] Core: JS: A new data attribute called caScrollToElmOffset was added; it allows you to offset the scroll when a page is automatically scrolled to some specific element.
+
 [+] Core: The locks for block cache generation and style compilation were implemented; the locks prevent a race condition and help to avoid increased server load when the cache is generated for the first time after cache clearing.
 
 [+] Hooks: Block manager: Locations: The "block_manager:update_location_general" hook was added.
