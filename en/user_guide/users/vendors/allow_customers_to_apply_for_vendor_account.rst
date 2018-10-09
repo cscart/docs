@@ -36,7 +36,7 @@ Step 2. Configure the Application Form
 
 2.1. In the Administration panel, go to **Administration → Profile fields**.
 
-2.2. Switch to the **Seller Profile** in the section on the right side of the page.
+2.2. Switch to **Vendor information** in the right sidebar.
 
 2.3. Now you'll be able to edit the vendor registration form: add or remove fields, make them required (or not required), change the order of fields, etc. This works the same way as :doc:`editing the profile fields available to customers </user_guide/users/customers/change_profile_fields>`.
 
