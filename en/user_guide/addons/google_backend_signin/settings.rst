@@ -50,7 +50,17 @@ Step 2. Create a Google Cloud Project
 
 #. Click **Create credentials** and choose *OAuth client ID*.
 
-#. Provide the necessary information:
+#. First Google will request that you configure **OAuth consent screen**. Agree, and you will be redirected to the settings. There are many of them, but only a few need to be filled in:
+
+   * **Название приложения**—you can enter your company name.
+
+   * **Авторизованные домены** — введите домен вашего магазина.
+
+   .. image:: img/google_oauth_consent_screen.png
+       :align: center
+       :alt: Configuring OAuth consent screen in Google Cloud.
+
+#. Click **Save**, and you will return to the page for configuring the credentials. Specify the settings as follows:
 
    * **Application type**—choose *Web Application*.
 
@@ -58,13 +68,21 @@ Step 2. Create a Google Cloud Project
 
    * **Authorized redirect URIs**—enter the value from the **Back-End Sign-In via Google** add-on in CS-Cart.
 
+   .. important::
+
+       Before you save everything, make sure that Google has accepted your URI: the field should become empty, and the URI  that you entered should appear next to it. It may not happen immediately; try selecting another field and then returning to **Authorized redirect URIs**.
+
    .. image:: img/google_cloud_oauth.png
        :align: center
        :alt: Creating a Google Cloud project.
 
-   Once you create the credentials, you should be able to see the *Client ID* and *Client secret* of the project. But there's one more thing to configure on the Google side.
+   Once you create the credentials, you should be able to see the *Client ID* and *Client secret* of the project. Copy them to the **Back-End Sign-In via Google** add-on, but don't save the settings yet.
 
-#. Return to the `Google Cloud Platform Dashboard <https://console.cloud.google.com/apis/dashboard>`_.
+   .. important::
+
+       Once you have pasted the values, make sure that there are no extra spaces before or after them.
+
+#. Return to the `Google Cloud Platform Dashboard <https://console.cloud.google.com/apis/dashboard>`_ in a different tab or window of your browser.
 
 #. Go to **ENABLE APIS AND SERVICES**, find the **Social** section, click **Google+ API**, and choose **Enable**.
 
@@ -72,9 +90,11 @@ Step 2. Create a Google Cloud Project
        :align: center
        :alt: Creating a Google Cloud project.
 
-#. Return to the `page for creating credentials <https://console.cloud.google.com/apis/credentials>`_ again and select the credentials you created. Copy *Client ID* and *Client secret* and paste them into the settings of the **Back-End Sign-In via Google** add-on in the administration panel of your store.
+#. Now return to the settings of the **Back-End Sign-In via Google** add-on. Do click the **Save and test sign-in** button:
 
-#. Click **Save and test sign-in**. If everything is configured properly, you'll see the window for choosing your email address.
+   * If everything is configured properly, you'll see the window for choosing your email address. You'll be able to check if the sign-in works.
+
+   * If you see an error, clear the fields in the add-on settings and save your changes. When the fields aren't filled in, CS-Cart will use the standard sign in mechanism (email + password). But if the fields are filled in (even with a mistake of some sort), only sign-in via Google will be offered.
 
    .. warning::
 
