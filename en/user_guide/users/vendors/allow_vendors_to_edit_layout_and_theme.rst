@@ -4,7 +4,7 @@ How To: Allow Vendors to Edit Layouts and Styles of Their Stores
 
 .. note::
 
-    This ability wasn't available until **Multi-Vendor 4.6.1**.
+    This functionality is available only in Multi-Vendor Plus.
 
 =========================================================
 How Store Owners Allow Vendors to Edit Styles and Layouts
@@ -14,9 +14,9 @@ How Store Owners Allow Vendors to Edit Styles and Layouts
 
 #. Tick the following checkboxes:
 
-   * **Allow vendors to edit layouts** — this will allow vendors to edit :doc:`layout pages </user_guide/look_and_feel/layouts/layout_pages/index>`.
+   * **Allow vendors to edit layouts**—this will allow vendors to edit :doc:`layout pages </user_guide/look_and_feel/layouts/layout_pages/index>`.
 
-   * **Allow vendors to manage styles of the theme** — this will allow vendors to use :doc:`the Theme Editor </user_guide/look_and_feel/themes/theme_editor>`.
+   * **Allow vendors to manage styles of the theme**—this will allow vendors to use :doc:`the Theme Editor </user_guide/look_and_feel/themes/theme_editor>`.
 
 #. Click the **Save** button in the top right part of the page.
 

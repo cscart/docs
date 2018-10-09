@@ -10,9 +10,9 @@ Use this section to adjust vendor settings for the Administration panel and the 
 
 * **Display product vendor**—if you enable this setting, the name of the product vendor will appear next to the product description.
 
-* **Allow vendors to edit layouts**—if you enable this setting, vendors will be able to edit specific :doc:`layout pages </user_guide/look_and_feel/layouts/layout_pages/index>`.
+* **Allow vendors to edit layouts** (only in Multi-Vendor Plus)—if you enable this setting, vendors will be able to edit specific :doc:`layout pages </user_guide/look_and_feel/layouts/layout_pages/index>`.
 
-* **Allow vendors to manage styles of the theme**—if you enable this setting, vendors will be able to use :doc:`the Theme Editor </user_guide/look_and_feel/themes/theme_editor>`.
+* **Allow vendors to manage styles of the theme** (only in Multi-Vendor Plus)—if you enable this setting, vendors will be able to use :doc:`the Theme Editor </user_guide/look_and_feel/themes/theme_editor>`.
 
   .. note::
 
