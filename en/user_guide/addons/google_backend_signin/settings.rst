@@ -94,7 +94,7 @@ Step 2. Create a Google Cloud Project
 
    * If everything is configured properly, you'll see the window for choosing your email address. You'll be able to check if the sign-in works. Go through all the steps of the sign-in to make sure there are no issues.
 
-   * If you see an error, clear the fields in the add-on settings and save your changes. When the fields aren't filled in, CS-Cart will use the standard sign in mechanism (email + password). But if the fields are filled in (even with a mistake of some sort), only sign-in via Google will be offered.
+   * If you see an error, clear the fields in the add-on settings and save your changes. When the fields aren't filled in, CS-Cart will use the standard sign-in mechanism (email + password). But if the fields are filled in (even with a mistake of some sort), only sign-in via Google will be offered.
 
    .. warning::
 
