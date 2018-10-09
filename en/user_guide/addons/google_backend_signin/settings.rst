@@ -52,9 +52,9 @@ Step 2. Create a Google Cloud Project
 
 #. First Google will request that you configure **OAuth consent screen**. Agree, and you will be redirected to the settings. There are many of them, but only a few need to be filled in:
 
-   * **Название приложения**—you can enter your company name.
+   * **Application name**—you can enter your company name.
 
-   * **Авторизованные домены** — введите домен вашего магазина.
+   * **Authorized domains**—enter the domain name of your store.
 
    .. image:: img/google_oauth_consent_screen.png
        :align: center
@@ -90,9 +90,9 @@ Step 2. Create a Google Cloud Project
        :align: center
        :alt: Creating a Google Cloud project.
 
-#. Now return to the settings of the **Back-End Sign-In via Google** add-on. Do click the **Save and test sign-in** button:
+#. Now return to the settings of the **Back-End Sign-In via Google** add-on. Click the **Save and test sign-in** button:
 
-   * If everything is configured properly, you'll see the window for choosing your email address. You'll be able to check if the sign-in works.
+   * If everything is configured properly, you'll see the window for choosing your email address. You'll be able to check if the sign-in works. Go through all the steps of the sign-in to make sure there are no issues.
 
    * If you see an error, clear the fields in the add-on settings and save your changes. When the fields aren't filled in, CS-Cart will use the standard sign in mechanism (email + password). But if the fields are filled in (even with a mistake of some sort), only sign-in via Google will be offered.
 
