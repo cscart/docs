@@ -35,6 +35,7 @@
     google_backend_signin/index
     google_recaptcha/index
     janrain/index
+    lite_checkout/index
     paypal_payments/index
     product_variations/index
     retailcrm/index
