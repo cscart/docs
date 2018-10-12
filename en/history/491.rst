@@ -50,6 +50,8 @@ New Features and Improvements
 Functionality Changes
 =====================
 
+[*] Add-ons: Comments and reviews: Customers must now sign in to leave a review or comment.
+
 [*] Add-ons: Comments and reviews: Product comments and reviews are no longer cloned along with a product.
 
 [*] Add-ons: Old Admin Panel: The add-on is now deprecated; it won’t receive bug fixes or improvements and will eventually be removed.
