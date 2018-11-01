@@ -15,31 +15,23 @@ CS-Cart allows to add and edit products using different methods.
 Adding One Product 
 ==================
 
-#. Go to **Products → Products** in the Administration panel of your store, then click the **+** button in the top right corner.   
+#. Go to **Products → Products** in the Administration panel of your store, then click the **+** button in the upper right part of the page.
 
    .. image:: img/catalog_29.png
        :align: center
        :alt: The "Plus" button adds a new product.
 
-#. The product creation page will open. Configure the required properties of the product:
+#. The product creation page will open. Configure the required properties of the product. You'll be able to edit the product properties later at any time. The only thing that it's best to decide on now is :doc:`whether to create a simple or a configurable product </user_guide/manage_products/products/simple_versus_configurable>`.
 
-   * Name
+   .. note::
 
-   * Categories
+       Some properties don't appear during product creation and are available only when you edit a product.
 
-   * Price
-
-   * Status
+#. Click the **Create** button.
 
    .. image:: img/catalog_30.png
         :align: center
         :alt: The product creation page in CS-Cart.
-
-   .. note::
-
-       Fill in other fields too, if you'd like. You'll be able to edit all the product properties later at any time. Some properties don't appear during product creation and are available only when you edit a product.
-
-#. Click the **Create** button.
 
 .. _products-add-group:
 
@@ -49,7 +41,7 @@ Adding Multiple Products
 
 #. Go to **Products → Products** in the Administration panel of your store.
 
-#. Click the **gear** button in the top right corner and choose **Bulk product addition**.
+#. Click the gear button in the upper right part of the page and choose **Bulk product addition**.
 
    .. image:: img/catalog_31.png
        :align: center
@@ -85,9 +77,9 @@ On the List of Products
 
 #. Go to **Products → Products** in the Administration panel of your store.
 
-#. Tick the checkboxes of the products that you'd like to clone.
+#. Select the the products that you'd like to clone by clicking on them.
 
-#. Click the gear button and choose **Clone selected**.
+#. Choose **Clone selected** in the **Actions** menu.
 
    .. image:: img/catalog_33.png
        :align: center
@@ -109,7 +101,7 @@ On the Product Editing Page
 
 #. Click the name of the product you'd like to clone. 
 
-#. The product editing page will open. Click the gear button in the top right corner and choose **Clone**.
+#. The product editing page will open. Click the gear button in the upper right part of the page and choose **Clone**.
 
    .. image:: img/catalog_35.png
        :align: center
@@ -125,7 +117,9 @@ You can edit the properties of a group of products.
 
 #. Go to **Products → Products** in the Administration panel of your store.
 
-#. Tick the checkboxes of the desired products, click the gear button, and choose **Edit selected**.         
+#. Select the the products that you'd like to clone by clicking on them.
+
+#. Click **Edit selected** above the list of products.
 
    .. image:: img/catalog_75.png
        :align: center
@@ -145,7 +139,7 @@ You can edit the properties of a group of products.
 
    .. hint::
 
-       Use **Apply values to all the selected products** in the top left corner to update the value of a properties for all selected products at once.
+       Use **Apply values to all the selected products** in the upper left part of the page to update the value of a properties for all selected products at once.
 
    .. image:: img/catalog_77.png
        :align: center
@@ -163,7 +157,7 @@ To update all products:
 
 #. In the Administration panel, go to **Products → Products**.
 
-#. Click the gear button in the top right part of the page and choose **Global update**.
+#. Click the gear button in the upper right part of the page and choose **Global update**.
 
    .. image:: img/catalog_27.png
        :align: center
@@ -201,13 +195,15 @@ To demonstrate the full process, let's export one of the products to a CSV file 
 
 #. Go to **Products → Products** in the Administration panel of your store.
 
-#. Select one of the products, click the gear button, and choose **Export selected**.
+#. Select the products you'd like to export by clicking on them.
+
+#. Choose **Export selected** in the **Actions** menu above the product list.
 
    .. image:: img/catalog_36.png
        :align: center
        :alt: CS-Cart allows you to export all products or specific groups of products.
 
-#. The **Export data** page will open. There you will be able to chose the exported fields and change export properties. Each exported field is an equivalent of a product property. We recommend you to leave everything as is for the first time. After everything is set up, click **Export**.
+#. The **Export data** page will open. There you will be able to chose the exported fields and change export properties. Each exported field is an equivalent of a product property. We recommend that you leave everything as is for the first time. After everything is set up, click **Export**.
 
    .. image:: img/catalog_37.png
        :align: center
@@ -217,9 +213,9 @@ To demonstrate the full process, let's export one of the products to a CSV file 
 
    .. image:: img/catalog_39.png
        :align: center
-       :alt: An exported CSV file in the spreadsheet editor.  
+       :alt: An exported CSV file in the spreadsheet editor.
 
-#. Each column of the table contains the specific type of the product data. 
+#. Each column of the table contains the specific type of the product data.
 
    The product is identified by the *Product code*; it means that:
 
@@ -235,11 +231,11 @@ To demonstrate the full process, let's export one of the products to a CSV file 
 
    * Language
 
-   * Store — the storefront to which the product belongs.
+   * Store—the storefront to which the product belongs.
 
-   * Product name — the name of the product
+   * Product name—the name of the product
 
-   * Category — the category to which the product belongs. 
+   * Category—the category to which the product belongs
 
      .. note::
 
@@ -251,7 +247,7 @@ To demonstrate the full process, let's export one of the products to a CSV file 
 
    .. image:: img/catalog_40.png
        :align: center
-       :alt: New products in the CSV file.  
+       :alt: New products in the CSV file.
 
 #. Save the file in the CSV format, and you'll be able to :doc:`import it </user_guide/manage_products/import_export/advanced_product_import>`.
 
@@ -279,7 +275,7 @@ CS-Cart allows to sell digital products.
 
    .. image:: img/catalog_67.png
        :align: center
-       :alt: Adding a new downloadable file for a product.      
+       :alt: Adding a new downloadable file for a product.
 
 #. The additional properties are available for digital products on the **General** tab in the **Extra** section:
 
@@ -299,7 +295,7 @@ If you uploaded a file for the downloadable product, there will be the **Files**
 
 .. image:: img/catalog_68.png
     :align: center
-    :alt: A downloadable product on the storefront in CS-Cart.     
+    :alt: A downloadable product on the storefront in CS-Cart.
 
 Once a digital product is purchased:
 
