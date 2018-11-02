@@ -6,27 +6,25 @@ To edit the eBay properties of a product, go to **Products → Products** and cl
 
 Here you can do several things:
 
-* Сhoose one of your eBay templates for the product.
+* Сhoose one of your eBay templates for the product. To apply a template to multiple products at once:
 
-  .. hint::
+  #. Go to **Products → Products**.
 
-      To apply a template to multiple products it once:
+  #. Select the products to which you'd like to apply the templates. You can select multiple products by clicking on them.
 
-      1. Go to **Products → Products** and tick the checkboxes next to the desired products. 
+  #. Click the **Edit selected** button above the product list.
 
-      2. Click the **gear** button in the right upper corner of the page and choose **Edit selected** from the dropdown menu.
+  #. A pop-up window will appear. Click **Unselect all**, then tick **eBay template** and click **Modify selected**.
 
-      3. A pop-up window will appear. Click **Unselect all**, then tick **eBay template** and click **Modify selected**.
+  #. Specify the appropriate eBay templates for the products and click **Save**.
 
-      4. Specify the appropriate eBay templates for the products and click **Save**.  
+* Tick the **Redefine price on eBay** checkbox, if you want your product to have a different price on eBay.
 
-* Tick the **Redefine price on eBay** checkbox, if you want your product to have a different price on eBay
+* Select the **eBay package type**.
 
-* Select the **eBay package type**
+  .. note::
 
-.. note::
-
-    If you don’t know the package type, select *Large package*. You’ll have to enter exact package dimensions on the **Shipping Properties** tab.
+      If you don’t know the package type, select *Large package*. You’ll have to enter exact package dimensions on the **Shipping Properties** tab.
 
 * Tick the **Redefinition of the product name and description on eBay** and edit the corresponding fields, if you want the product’s name and description to be different on eBay.
 
