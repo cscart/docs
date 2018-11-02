@@ -2,7 +2,7 @@
 How To: Set up Product Features
 *******************************
 
-Product features are various traits and properties of the product. You can use features in :doc:`product filters <../filters/index>` to allow customers to find products with specific parameters.
+Product features are various traits and properties of the product. You can use features in :doc:`product filters </user_guide/manage_products/filters/index>` to allow customers to find products with specific parameters.
 
 .. image:: img/feature_on_the_storefront.png
     :align: center
@@ -63,7 +63,7 @@ Add a Feature
 
          If a feature belongs to a group, its categories are the same as the categories of the group. The **Categories** tab won't appear for the feature in that case.
 
-   * Click the **Add categories** button. 
+   * Click the **Add categories** button.
 
    * Tick the checkboxes of the categories where this feature should be available.
 
@@ -165,15 +165,15 @@ Multiple Products
 
 #. Go to **Products → Products**.
 
-#. Tick the checkboxes next to the names of the desired products.
+#. Click on the necessary products to select them.
 
    .. hint::
 
        Use the search panel on the right to find the necessary products faster.
 
-#. Click the gear button in the top right corner and choose **Edit selected**.
+#. Choose **Edit selected** above the list of products.
 
-   .. image:: img/multiple_features.png
+   .. image:: /user_guide/manage_products/products/img/catalog_75.png
         :align: center
         :alt: Use CS-Cart bulk editing tools to specify features for multiple products at once.
 

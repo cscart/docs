@@ -8,9 +8,9 @@ How To: Export Products and Product Data
 
    * Click **Select** in the **Notes** section on the right. This will open the product list.
 
-   * Tick the checkboxes of the products you'd like to export.
+   * Select the products you'd like to export by clicking on them.
 
-   * Click the gear button in the upper right part of the page and choose **Export selected**. 
+   * Choose **Export selected** in the **Actions** menu above the product list.
 
    * You'll be taken back to the **Export data** page, but this time only specific products will be selected for export.
 

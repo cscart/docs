@@ -8,11 +8,15 @@ Go to **Products → Products** to manage the products in your catalog. That pag
     :align: center
     :alt: The product list in CS-Cart admin panel.
 
-Some product properties can be edited directly on the list, without the need to open the product editing page:
+The product list contains the essential information about each product:
 
-* **Image**—product thumbnail; you can't edit it on the list, but by clicking on the thumbnail you open the product editing page.
+* **Image**—a small thumbnail of the main product image.
 
 * **Name**—the name of the product.
+
+  .. hint::
+
+      Click on the product name or image to open the product editing page.
 
 * **CODE**—the identifier of the product that you use in your store (a stock keeping unit or SKU). This identifier doesn't have to be unique; it can even be missing.
 
@@ -30,15 +34,17 @@ Some product properties can be edited directly on the list, without the need to 
 
   * *Disabled*—the product is not available on the storefront.
 
+  .. note::
+
+      You can change product price, list price, quantity, and status on the product list. If you change anything other than status, make sure to use **Save** button before leaving the page.
+
 ===================
 Actions on Products
 ===================
 
-.. hint::
+.. note::
 
-    More detailed instructions are available in :doc:`this article <add_product>`.
-
-When on the **Products → Products** page, administrators can perform the following actions:
+    Below is a brief list of what an administrator can do on the **Products → Products** page. For more detailed instructions, check :doc:`this article <add_product>`.
 
 ------------
 Add Products
@@ -54,27 +60,27 @@ Edit Products
 
 * To change the properties of a specific product, click on the product's name or icon. Alternatively, you can click the product's gear button (it appears when you hover over the product) and choose **Edit**.
 
-* To change the properties of multiple products at the same time, tick the checkboxes of those products, click the gear button in the upper right part of the page and choose **Edit selected**.
+* To change the properties of multiple products at the same time, select those products by clicking on them, then click **Edit selected** above the product list.
 
 --------------
 Clone Products
 --------------
 
-To clone selected products, tick the checkboxes of those products, click the gear button in the upper right part of the page and choose **Clone selected**.
+To clone a product or multiple products, select them by clicking on them, then choose **Clone selected** in the **Actions** menu above the product list.
 
 ---------------
 Export Products
 ---------------
 
-To export selected products, tick the checkboxes of those products, click the gear button in the upper right part of the page and choose **Export selected**. See this :doc:`article <../import_export/product_export>` for more information about the export procedure.
+To export products, select them by clicking on them, then choose **Export selected** in the **Actions** menu above the product list. See this :doc:`article </user_guide/manage_products/import_export/product_export>` for more information about the export procedure.
 
 ---------------
 Delete Products
 ---------------
 
-* To delete a specific product, hover the mouse pointer over this product. The gear button will appear for this product. Click it and choose **Delete**.
+* To delete a specific product, hover the mouse pointer over the product. The gear button of the product will appear. Click it and choose **Delete**.
 
-* To delete multiple products at the same time, tick the checkboxes of those products, click the gear button in the upper right part of the page, and choose **Delete selected**.
+* To delete multiple products at the same time, select them by clicking on them, and choose **Delete selected** from the **Actions** menu above the product list.
 
 ---------------------------------------
 View Products with Customers Subscribed
@@ -94,7 +100,7 @@ When a product is out of stock, customers may sign up for a notification. When y
 Export Products to eBay
 -----------------------
 
-To export selected products to eBay, tick the checkboxes of those products, click the gear button in the upper right part of the page, and choose **Export to eBay**. 
+To export some products to eBay, select them by clicking on them, click the gear button in the upper right part of the page, and choose **Export/Revise products on eBay**.
 
 .. note::
 
