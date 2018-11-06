@@ -6,11 +6,15 @@ To apply the same value to all products at once:
 
 #. In the Administration panel, go to **Products → Products**.
 
-#. In the **Total items** section above the list select **100**.
+#. Set the number of displayed products to *250 per page*.
 
-#. Select all products in the displayed page by ticking the left top check box.
+   .. hint::
 
-#. Click the gear button in the right corner of the page and select **Edit selected**.
+       If you check the URL, you'll now notice the ``items_per_page=250`` parameter. If you increase the value in the URL, you'll have even more than 250 products on the list at once.
+
+#. Select all products in the page by ticking the top left checkbox above the list.
+
+#. Click the **Edit selected** button above the product list.
 
    .. image:: img/same_value_01.png
        :align: center
@@ -24,11 +28,13 @@ To apply the same value to all products at once:
 
 #. Click on the **Apply values to all selected products** link. This will open a new small section.
 
-#. Select the check box corresponding to the necessary field and enter the necessary text or select the necessary variant in the field next to the selected one.
+#. Tick the checkbox corresponding to the necessary field.
+
+#. Set the value for the product property you're modifying.
 
 #. Click the **Apply** button to apply the selected value to all products.
 
-#. Repeat these steps for all pages in the list of products.
+#. Repeat all these steps for all pages in the list of products.
 
    .. image:: img/same_value_03.png
        :align: center
