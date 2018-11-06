@@ -40,7 +40,7 @@ Way 2. Exporting and Revising Entire eBay Templates
 
 #. Hover over the eBay template you want to export.
 
-#. Click the **gear button** and select **Export/Revise products on eBay**.
+#. Click the gear button and select **Export/Revise products on eBay**.
 
    .. image:: img/export/export_template_to_ebay.png
        :align: center

@@ -26,7 +26,7 @@ Ending eBay Sales for Specific Products
 
 #. Go to **Marketing → eBay → eBay products**.
 
-#. Select the products you want to edit by clicking on them.
+#. Select the products by clicking on them.
 
 #. Click the gear button.
 

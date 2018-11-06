@@ -15,7 +15,7 @@ CS-Cart allows to add and edit products using different methods.
 Adding One Product 
 ==================
 
-#. Go to **Products → Products** in the Administration panel of your store, then click the **+** button in the upper right part of the page.
+#. Go to **Products → Products** in the administration panel of your store, then click the **+** button in the upper right part of the page.
 
    .. image:: img/catalog_29.png
        :align: center
@@ -39,7 +39,7 @@ Adding One Product
 Adding Multiple Products
 ========================
 
-#. Go to **Products → Products** in the Administration panel of your store.
+#. Go to **Products → Products** in the administration panel of your store.
 
 #. Click the gear button in the upper right part of the page and choose **Bulk product addition**.
 
@@ -75,7 +75,7 @@ If you plan to have several products with identical properties, you don't need t
 On the List of Products
 -----------------------
 
-#. Go to **Products → Products** in the Administration panel of your store.
+#. Go to **Products → Products** in the administration panel of your store.
 
 #. Select the the products that you'd like to clone by clicking on them.
 
@@ -97,7 +97,7 @@ On the List of Products
 On the Product Editing Page
 ---------------------------
 
-#. Go to **Products → Products** in the Administration panel of your store.
+#. Go to **Products → Products** in the administration panel of your store.
 
 #. Click the name of the product you'd like to clone. 
 
@@ -115,9 +115,9 @@ Editing Multiple Products at Once
 
 You can edit the properties of a group of products.
 
-#. Go to **Products → Products** in the Administration panel of your store.
+#. Go to **Products → Products** in the administration panel of your store.
 
-#. Select the the products that you'd like to clone by clicking on them.
+#. Select the the products that you'd like to edit by clicking on them.
 
 #. Click **Edit selected** above the list of products.
 
@@ -139,7 +139,7 @@ You can edit the properties of a group of products.
 
    .. hint::
 
-       Use **Apply values to all the selected products** in the upper left part of the page to update the value of a properties for all selected products at once.
+       Use **Apply values to all the selected products** in the upper left part of the page to update the value of the property for all the selected products at once.
 
    .. image:: img/catalog_77.png
        :align: center
@@ -155,7 +155,7 @@ CS-Cart has a special page where you can update some properties all products at 
 
 To update all products:
 
-#. In the Administration panel, go to **Products → Products**.
+#. In the administration panel, go to **Products → Products**.
 
 #. Click the gear button in the upper right part of the page and choose **Global update**.
 
@@ -193,7 +193,7 @@ CSV files can be edited in spreadsheet editors such as LibreOffice Calc, OpenOff
 
 To demonstrate the full process, let's export one of the products to a CSV file first. 
 
-#. Go to **Products → Products** in the Administration panel of your store.
+#. Go to **Products → Products** in the administration panel of your store.
 
 #. Select the products you'd like to export by clicking on them.
 
