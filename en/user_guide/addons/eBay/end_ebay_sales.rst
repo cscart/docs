@@ -10,31 +10,31 @@ How To: End eBay Sales
 Ending eBay Sales for an eBay Template
 ======================================
 
-1. Go to **Marketing → eBay templates → Manage**.
+#. Go to **Marketing → eBay templates → Manage**.
 
-2. Press the **gear** button next to the template.
+#. Click the gear button next to the template.
 
-3. Choose **End eBay sales**.
+#. Choose **End eBay sales**.
 
-.. image:: img/end_sales/end_ebay_sales.png
-    :align: center
-    :alt: It takes two clicks to end eBay sales of all products under the specific template.
+   .. image:: img/end_sales/end_ebay_sales.png
+       :align: center
+       :alt: It takes two clicks to end eBay sales of all products under the specific template.
 
 =======================================
 Ending eBay Sales for Specific Products
 =======================================
 
-1. Go to **Marketing → eBay → eBay products**.
+#. Go to **Marketing → eBay → eBay products**.
 
-2. Tick the checkboxes next to the products you want to edit.
+#. Select the products you want to edit by clicking on them.
 
-3. Click the **gear** button.
+#. Click the gear button.
 
-4. Choose **End eBay sales**.
+#. Choose **End eBay sales**.
 
-.. image:: img/end_sales/end_product_sales_on_ebay.png
-    :align: center
-    :alt: Select the products that you don't want to sell on eBay anymore and click End eBay sales.
+   .. image:: img/end_sales/end_product_sales_on_ebay.png
+       :align: center
+       :alt: Select the products that you don't want to sell on eBay anymore and click End eBay sales.
 
 ===================
 Resuming eBay Sales
@@ -45,4 +45,3 @@ To resume the eBay sales after you ended them, :doc:`revise the desired eBay tem
 .. important::
 
     Using the **Export/Revise products on eBay** button for the products or templates after you ended their eBay sales will `relist those products/templates <http://pages.ebay.com/help/sell/relist.html>`_.
-    

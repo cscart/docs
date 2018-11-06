@@ -14,43 +14,43 @@ If you export your products to eBay and later edit them in CS-Cart, those change
 Way 1. Exporting and Revising Specific Products
 ===============================================
 
-1. In the Administration panel go to **Products → Products**.
+#. In the administration panel, go to **Products → Products**.
 
-2. Tick the checkboxes near the products you want to export or revise.
+#. Select the products you want to export or revise by clicking on them.
 
-3. Click the gear button and choose **Export/Revise products on eBay**.
+#. Click the gear button and choose **Export/Revise products on eBay**.
 
-.. hint::
+   .. hint::
 
-    You can find the products with an assigned eBay template under **Marketing → eBay → eBay products**.
+       You can find the products with an assigned eBay template under **Marketing → eBay → eBay products**.
 
-.. image:: img/export/export_product_to_ebay.png
-    :align: center
-    :alt: Select the products to export or revise, then click the gear button and choose Export/Revise products on eBay.
+   .. image:: img/export/export_product_to_ebay.png
+       :align: center
+       :alt: Select the products to export or revise, then click the gear button and choose Export/Revise products on eBay.
 
-.. note::
+   .. note::
 
-    If you didn’t apply an eBay template to some of the selected products, default eBay template will be used.
+       If you didn’t apply an eBay template to some of the selected products, default eBay template will be used.
 
 ===================================================
 Way 2. Exporting and Revising Entire eBay Templates
 ===================================================
 
-1. In the administration panel go to **Marketing → eBay → eBay templates**.
+#. In the administration panel, go to **Marketing → eBay → eBay templates**.
 
-2. Hover over the eBay template you want to export.
+#. Hover over the eBay template you want to export.
 
-3. Click the **gear button** and select **Export/Revise products on eBay**.
+#. Click the **gear button** and select **Export/Revise products on eBay**.
 
-.. image:: img/export/export_template_to_ebay.png
-    :align: center
-    :alt: Select the template to export or revise, then click Export/Revise products on Ebay.
+   .. image:: img/export/export_template_to_ebay.png
+       :align: center
+       :alt: Select the template to export or revise, then click Export/Revise products on Ebay.
 
-Or you can click on the eBay template itself to edit it, and then press the green **Export/Revise products on eBay** button.
+   Or you can click on the eBay template itself to edit it, and then press the green **Export/Revise products on eBay** button.
 
-.. image:: img/export/export_revise_button.png
-    :align: center
-    :alt: You can export eBay templates from the template list or the template editing page.
+   .. image:: img/export/export_revise_button.png
+       :align: center
+       :alt: You can export eBay templates from the template list or the template editing page.
 
 =====================
 Export Outcome Pop-Up
@@ -90,17 +90,19 @@ To export a product with options, you must group these options under **Option Co
 
 To create an option combination for a product, do this: 
 
-1. Go to to **Products → Products → <Desired Product>**.
+#. Go to to **Products → Products**.
 
-2. Switch to the **Options** tab and choose an option.
+#. Click on the name of the product you'd like to work with.
 
-3. Tick the **Inventory** checkbox and save the changes.
+#. Switch to the **Options** tab and choose an option.
 
-4. Click the **Option combinations** button and click the **+** button to create a combination.
+#. Tick the **Inventory** checkbox and save the changes.
 
-.. important::
+#. Click the **Option combinations** button and click the **+** button to create a combination.
 
-      eBay allows no more than 200 product combinations.
+   .. important::
+
+         eBay allows no more than 200 product combinations.
 
 When you export a product with to eBay, all the option combinations of the product are exported, except for those combinations that aren't in stock. Here are the possible situations, depending on the **Inventory** setting of the product:
 
@@ -113,8 +115,3 @@ When you export a product with to eBay, all the option combinations of the produ
       For example, if you have red and blue T-shirts as option combinations and specify *10* in the **In stock** field, you'll have 20 T-shirts (10 red ones and 10 blue ones) listed on eBay.
 
 * **Do not track:** works the same way as **Track without options**.
-
-.. image:: img/export/ebay_combinations.png
-    :align: center
-    :alt: If you don't track a the number of items for every option combination of a product, all option combinations will have the same number of items when exported to eBay.
-
