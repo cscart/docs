@@ -28,7 +28,31 @@ General Information
 
 5. When listing parameters of the hook, always put the parameters accepted by the function first.  SQL hooks are the only exception: everything required is included into the ``params`` variable.
 
-6. Hooks in classes must always pass the class instance as their first parameter.
+6. Hooks in classes must contain the name of the calling class in their name.
+
+7. Hooks in classes must always pass the class instance as their first parameter::
+
+    <?php
+    
+    class Patterns
+    {
+        public function save($style_id, $style, $uploaded_data)
+        {
+            ...
+            
+            /**
+             * Executes before saving the uploaded pattern files, allows you to modify the uploaded files and their location.
+             *
+             * @param \Tygh\Themes\Patterns $this          Patterns instance
+             * @param string                $style_id      Style name
+             * @param array                 $style         Style data
+             * @param array                 $uploaded_data Uploaded files
+             * @param string                $path          Path where patterns will be saved
+             * @param string                $rel_path      Relative patterns path
+             */
+            fn_set_hook('patterns_save', $this, $style_id, $style, $uploaded_data, $path, $rel_path);
+            
+            ...
 
 ==========================
 How and Where to Add Hooks
