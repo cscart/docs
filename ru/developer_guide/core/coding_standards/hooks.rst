@@ -28,7 +28,31 @@
 
 5. Параметры в хуке всегда должны начинаться с тех, что пришли в функцию. Исключение: SQL-хуки, где все  необходимое есть в переменной ``params``.
 
-6. Для хуков в классах: каждый хук должен первым параметром передавать инстанс класса.
+6. Для хуков в классах: каждый хук должен содержать название класса, в котором он вызывается.
+
+7. Для хуков в классах: каждый хук должен первым параметром передавать инстанс класса::
+
+    <?php
+    
+    class Patterns
+    {
+        public function save($style_id, $style, $uploaded_data)
+        {
+            ...
+            
+            /**
+             * Executes before saving the uploaded pattern files, allows you to modify the uploaded files and their location.
+             *
+             * @param \Tygh\Themes\Patterns $this          Patterns instance
+             * @param string                $style_id      Style name
+             * @param array                 $style         Style data
+             * @param array                 $uploaded_data Uploaded files
+             * @param string                $path          Path where patterns will be saved
+             * @param string                $rel_path      Relative patterns path
+             */
+            fn_set_hook('patterns_save', $this, $style_id, $style, $uploaded_data, $path, $rel_path);
+            
+            ...
 
 =========================
 Как и куда добавлять хуки
