@@ -41,7 +41,7 @@ General Information
             ...
             
             /**
-             * Executes before saving uploading pattern files, allows to modify uploaded files and location.
+             * Executes before saving the uploaded pattern files, allows you to modify the uploaded files and their location.
              *
              * @param \Tygh\Themes\Patterns $this          Patterns instance
              * @param string                $style_id      Style name
