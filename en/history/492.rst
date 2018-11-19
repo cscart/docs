@@ -60,11 +60,15 @@ Bug Fixes
 
 [!] Add-ons: Advanced products import: Square brackets in CSV column name caused a fatal error on preset saving. Fixed.
 
-[!] Add-ons: Gift Certificates: It was impossible open the gift certificate editing page if the decimals separator was not specified in the currency settings. Fixed.
+[!] Add-ons: Comments and reviews: If the add-on was disabled, then a fatal error occurred on the add-on settings page. Fixed.
+
+[!] Add-ons: Gift certificates: It was impossible to open the gift certificate editing page if the decimals separator was not specified in the currency settings. Fixed.
 
 [!] Add-ons: Product Variations (Beta): Quantities of the parent products were not updated after import if the import file did not contain the "Product id" field. Fixed.
 
 [!] Add-ons: Searchanise: A JavaScript error occurred when Searchanise was loading. Fixed.
+
+[!] Add-ons: Searchanise: The get_filters_products_count_post didn't work when the Searchanise add-on was active. Any third-party add-on using that hook may not have worked correctly. Fixed.
 
 [!] Add-ons: Video Tutorials: The videos in the help section weren't displayed on tablets. Fixed.
 
@@ -81,6 +85,8 @@ Bug Fixes
 [!] Cart: Totals: The shipping estimation was included in the cart total even when the "Estimate shipping cost on cart page" setting was turned off. Fixed.
 
 [!] Core: Email templates: A PHP warning could occur when an administrator opened an email template editing page on PHP 7.2 and newer. Fixed.
+
+[!] Core: File changes detector: The following files could be mistakenly marked as changed or deleted: admin.php, vendor.php, install.html. Fixed.
 
 [!] Core: JS: Links in a drop-down menu on the Design → Templates page didn't work. Fixed.
 
