@@ -1,12 +1,12 @@
 **********************************************
-Adapt Your Add-ons and Themes to CS-Cart 4.9.1
+Adapt Your Add-ons and Themes to CS-Cart 4.9.2
 **********************************************
 
 ==============
 Common Changes
 ==============
 
-#. The **FuturePay** payment method was deprecated.
+The **FuturePay** payment method was deprecated.
 
 ============
 Hook Changes
@@ -37,9 +37,13 @@ New Hooks
 Deprecated Hooks
 ----------------
 
-#. ``fn_set_hook('pre_define_usergroups', $user_data, $area)`` is now deprecated. Use ``fn_set_hook('define_usergroups_pre', $user_data, $area)`` instead.
+#. ``fn_set_hook('pre_define_usergroups', $user_data, $area)`` is now deprecated.
 
-#. ``fn_set_hook('post_define_usergroups', $active_usergroups, $user_data, $area)`` is now deprecated. Use ``fn_set_hook('define_usergroups_post', $user_data, $area, $active_usergroups)`` instead.
+   Use ``fn_set_hook('define_usergroups_pre', $user_data, $area)`` instead.
+
+#. ``fn_set_hook('post_define_usergroups', $active_usergroups, $user_data, $area)`` is now deprecated.
+
+   Use ``fn_set_hook('define_usergroups_post', $user_data, $area, $active_usergroups)`` instead.
 
 
 ==============

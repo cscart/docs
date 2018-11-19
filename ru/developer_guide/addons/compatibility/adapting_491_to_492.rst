@@ -6,7 +6,7 @@
 Общие изменения
 ===============
 
-#. Способ оплаты **FuturePay** объявлен устаревшим.
+Способ оплаты **FuturePay** объявлен устаревшим.
 
 =================
 Изменения в хуках
@@ -36,9 +36,13 @@
 Устаревшие хуки
 ---------------
 
-#. ``fn_set_hook('pre_define_usergroups', $user_data, $area)`` объявлен устаревшим. Используйте ``fn_set_hook('define_usergroups_pre', $user_data, $area)``.
+#. ``fn_set_hook('pre_define_usergroups', $user_data, $area)`` объявлен устаревшим.
 
-#. ``fn_set_hook('post_define_usergroups', $active_usergroups, $user_data, $area)`` объявлен устаревшим. Используйте ``fn_set_hook('define_usergroups_post', $user_data, $area, $active_usergroups)``.
+   Используйте ``fn_set_hook('define_usergroups_pre', $user_data, $area)``.
+
+#. ``fn_set_hook('post_define_usergroups', $active_usergroups, $user_data, $area)`` объявлен устаревшим.
+
+   Используйте ``fn_set_hook('define_usergroups_post', $user_data, $area, $active_usergroups)``.
 
 
 ====================
