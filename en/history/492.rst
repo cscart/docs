@@ -1,0 +1,131 @@
+***********************
+CS-Cart 4.9.2 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Mobile application: Image sizes for new Apple devices were added.
+
+[+] Add-ons: Mobile application: The ability to choose how the images are resized was added.
+
+[+] Document editor: It is now possible to add custom profile fields from the "Vendor information" section to documents.
+
+[+] Hooks: Admin panel: Products: A new hook was added; it allows adding extra lines to the table of products.
+
+[+] Hooks: Core: A hook for the loader of the "store_closed.html" page was added.
+
+[+] Hooks: Orders: Order editing: A hook for the product table control buttons was added.
+
+[+] Multi-Vendor Plus: Add-ons: Common products for vendors (Beta): The ability to export/import common products and vendor products was added.
+
+[+] Multi-Vendor Plus: Add-ons: Common products for vendors (Beta): Export/import: The ability for a vendor to import common products as their own was added.
+
+[+] Multi-Vendor Plus: Add-ons: Common products for vendors (Beta): Product variations: The ability to manage price and quantity of product variations was added.
+
+[+] Multi-Vendor Plus: Add-ons: Vendor privileges: Payment methods: User groups: The ability to restrict payment methods to specific vendor user groups was added.
+
+[+] Products: Edit selected: Categories list loading time decreased.
+
+[+] Profile details: The profile editing page on the storefront now allows third-party developers to implement file uploading.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: BillriantPay: OneKPay was renamed to BillriantPay.
+
+[*] Add-ons: BillriantPay: Platform identification code was added to the requests sent to the service.
+
+[*] Add-ons: Comments and reviews: Depending on the add-on's settings, customers who haven't signed in can now post reviews.
+
+[*] Add-ons: SMS notifications: Add-on was updated.
+
+[*] Add-ons: Searchanise: The "Connect store to Searchanise" button now has progress indication.
+
+[*] Core: Checking the minimum value of the "memory_limit" PHP directive was improved.
+
+[*] Payment methods: FuturePay: The payment method was deprecated.
+
+=========
+Bug Fixes
+=========
+
+[!] Add-ons: Advanced products import: If an imported file was loaded via a link, and the link didn't end with the file extension (CSV or XML), then in some cases the extension of the file was determined incorrectly. Fixed.
+
+[!] Add-ons: Advanced products import: If only one of the features was mapped in the import preset, the values of other features were erased during import. Fixed.
+
+[!] Add-ons: Advanced products import: Square brackets in CSV column name caused a fatal error on preset saving. Fixed.
+
+[!] Add-ons: Comments and reviews: If the add-on was disabled, then a fatal error occurred on the add-on settings page. Fixed.
+
+[!] Add-ons: Gift certificates: It was impossible to open the gift certificate editing page if the decimals separator was not specified in the currency settings. Fixed.
+
+[!] Add-ons: Product Variations (Beta): Quantities of the parent products were not updated after import if the import file did not contain the "Product id" field. Fixed.
+
+[!] Add-ons: Searchanise: A JavaScript error occurred when Searchanise was loading. Fixed.
+
+[!] Add-ons: Searchanise: The get_filters_products_count_post didn't work when the Searchanise add-on was active. Any third-party add-on using that hook may not have worked correctly. Fixed.
+
+[!] Add-ons: Video Tutorials: The videos in the help section weren't displayed on tablets. Fixed.
+
+[!] Admin panel: Add-ons: The icons for menu items belonging to add-ons were not displayed. Fixed.
+
+[!] Admin panel: An attempt to open the storefront selection menu on mobile devices could result in a PHP notice. Fixed.
+
+[!] Admin panel: Pop-ups: The section with buttons wasn't displayed on mobile devices. Fixed.
+
+[!] Admin panel: Products: A table overflow occurred when a third-party add-on add columns. Fixed.
+
+[!] Admin panel: Products: The content of some tabs on the product editing page wasn't responsive. Fixed.
+
+[!] Cart: Totals: The shipping estimation was included in the cart total even when the "Estimate shipping cost on cart page" setting was turned off. Fixed.
+
+[!] Core: Email templates: A PHP warning could occur when an administrator opened an email template editing page on PHP 7.2 and newer. Fixed.
+
+[!] Core: File changes detector: The following files could be mistakenly marked as changed or deleted: admin.php, vendor.php, install.html. Fixed.
+
+[!] Core: JS: Links in a drop-down menu on the Design → Templates page didn't work. Fixed.
+
+[!] Core: Locks: The error log included unnecessary database errors that were already handled on the code level. Fixed.
+
+[!] Core: Requests to external servers via the http/2 protocol were handled incorrectly. Fixed.
+
+[!] Core: Transliteration: Not all Greek symbols were converted to Latin symbols in newly-created SEO names. Fixed.
+
+[!] Design: Admin panel: Some templates were included between </head> and <body> tags. Fixed.
+
+[!] Design: Big Picture: If the Big Picture template was selected for a product, then there was empty space after the page footer. Fixed.
+
+[!] Design: Checkout: The value in the "Customer notes" field got erased when the payment method was switched. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors (Beta): Options without price modifiers couldn't be toggled for vendor products on the common product page in the customer area. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors (Beta): Product variations: Adding a vendor's variation into a cart didn't reload the mini-cart block. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors (Beta): Removing a common product didn't delete its child products belonging to vendors. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments (Beta): Automatically created withdrawals for orders didn't take the status of the order into account, so vendors could get negative balance without a reason. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor Debt Payout: A PHP notice occurred  whenever the "Marketplace fees" product was edited in the admin panel. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor data premoderation: If the add-on was active, then the product import setting "Set quantity of all products to zero" didn't work. Fixed.
+
+[!] Multi-Vendor: Checkout: If some of the profile fields were required, it was impossible to continue the checkout process.
+
+[!] Multi-Vendor: Design: Blocks: Featured vendors: If the country and city of a vendor were not specified, an unnecessary comma was displayed on the list of featured vendors. Fixed.
+
+[!] Orders: Print packing slip (pdf): Table heading overlapped with table contents on the second page. Fixed.
+
+[!] Payment methods: ePDQ: Proceeding to the ePDQ paygate resulted in an error when the product discount was 0. Fixed.
+
+[!] Products: Features: The features from the same group could get scattered between other groups on the product editing page. Fixed.
+
+[!] Products: Forbidden option combinations: An option with the "Checkbox" type remained available even if the combination was forbidden. Fixed.
+
+[!] Products: Option combinations: All existing combinations of a product were removed when combinations were rebuilt. Fixed.
+
+[!] REST API: Categories: When some parameters were specified, the entity elements were not returned. Fixed.
+
+[!] States: Translations of the Greek states were absent for the English language. Fixed.
