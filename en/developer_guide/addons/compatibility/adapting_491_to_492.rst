@@ -68,7 +68,7 @@ New Functions
 
 #. Check if all location fields are empty::
 
-     \Tygh\Addons\RusCustomerGeolocation\RusCustomerGeolocation::isLocationEmpty
+     \Tygh\Addons\RusCustomerGeolocation\RusCustomerGeolocation::isLocationEmpty(array $location)
 
 #. Populate missing location fields in ``$cart['user_data']`` with the data from the specified location object::
 

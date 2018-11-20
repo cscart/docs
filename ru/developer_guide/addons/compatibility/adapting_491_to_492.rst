@@ -67,7 +67,7 @@
 
 #. Проверяет, все ли поля пункта назначения пустые::
 
-     \Tygh\Addons\RusCustomerGeolocation\RusCustomerGeolocation::isLocationEmpty
+     \Tygh\Addons\RusCustomerGeolocation\RusCustomerGeolocation::isLocationEmpty(array $location)
 
 #. Заполняет отсутствующие поля в ``$cart['user_data']`` данными из указанного пункта назначения::
 
