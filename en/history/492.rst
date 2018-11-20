@@ -34,19 +34,17 @@ New Features and Improvements
 Functionality Changes
 =====================
 
-[*] Add-ons: Billriant Pay: OneKPay was renamed to BillriantPay.
+[*] Add-ons: BillriantPay: OneKPay was renamed to BillriantPay.
 
 [*] Add-ons: BillriantPay: Platform identification code was added to the requests sent to the service.
 
-[*] Add-ons: Comments and reviews: Depending on the add-on's settings, customers who haven't signed in can now post reviews. Fixed.
+[*] Add-ons: Comments and reviews: Depending on the add-on's settings, customers who haven't signed in can now post reviews.
 
 [*] Add-ons: SMS notifications: Add-on was updated.
 
 [*] Add-ons: Searchanise: The "Connect store to Searchanise" button now has progress indication.
 
 [*] Core: Checking the minimum value of the "memory_limit" PHP directive was improved.
-
-[*] Multi-Vendor Plus: Add-ons: Common products for vendors (Beta): Removing a common product didn't delete its child products belonging to vendors. Fixed.
 
 [*] Payment methods: FuturePay: The payment method was deprecated.
 
@@ -105,6 +103,8 @@ Bug Fixes
 [!] Multi-Vendor Plus: Add-ons: Common products for vendors (Beta): Options without price modifiers couldn't be toggled for vendor products on the common product page in the customer area. Fixed.
 
 [!] Multi-Vendor Plus: Add-ons: Common products for vendors (Beta): Product variations: Adding a vendor's variation into a cart didn't reload the mini-cart block. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors (Beta): Removing a common product didn't delete its child products belonging to vendors. Fixed.
 
 [!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments (Beta): Automatically created withdrawals for orders didn't take the status of the order into account, so vendors could get negative balance without a reason. Fixed.
 
