@@ -46,7 +46,7 @@ Filters appear on the storefront in a **Product filters** or **Product filters f
 
    * **Original**—a box with all available product filters and a price slider.
 
-   * **Selected filters**—a box with filers selected by a customer.
+   * **Selected filters**—a box with filters selected by a customer.
 
    * **Horizontal filters**—a box with all available product filters; the filtering criteria are selected in drop-down menus.
 
