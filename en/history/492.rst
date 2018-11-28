@@ -129,3 +129,13 @@ Bug Fixes
 [!] REST API: Categories: When some parameters were specified, the entity elements were not returned. Fixed.
 
 [!] States: Translations of the Greek states were absent for the English language. Fixed.
+
+=============
+Service Packs
+=============
+
+---------
+4.9.2.SP1
+---------
+
+[!] There was a problem with a payment method specific to the Russian version of CS-Cart. Fixed in Russian version; version number incremented in other versions.
