@@ -58,6 +58,12 @@ The application supports **all shipping methods** and the following payment meth
 
 * Offline payment methods (such as "Discuss with manager", etc.)
 
+Payment methods in the mobile app are positioned in the same order as in your store. The first payment method is selected by default.
+
+.. hint::
+
+    Technical info — the list of supported payment templates: ``cc.tpl``, ``empty.tpl``, ``check.tpl``, ``paypal_express.tpl``, ``phone.tpl``.
+
 ------------------------------------
 What Languages Does the App Support?
 ------------------------------------
@@ -131,6 +137,16 @@ How Do I Get a Mobile Application for My Store?
 
    The add-on by itself doesn't create you a mobile app. Once you specify and save all the settings, you press the **Download config** button and get an archive called **app_settings.zip**. Send that archive to us, and we'll have all the information we need to publish your app.
 
+--------------------------------------------------------
+What Versions of CS-Cart and Multi-Vendor Are Supported?
+--------------------------------------------------------
+
+It's best if you use the latest version. It always includes all the changes to the **Mobile Application** add-on and the way how your store interacts with your mobile application.
+
+If you aren't using the latest version, just mention it when contacting us, and we'll help you get started. For example, version 4.8.1 is the earliest version that comes with the **Mobile Application** add-on. But we've made some improvements since then, so we may first need to apply them to your CS-Cart or Multi-Vendor installation.
+
+Mobile application can also run on versions older than 4.8.x (the earliest version we ran it on is 4.6.3), but the older the version, the more changes might be required. We can't promise to integrate the mobile application with any old version possible, but contact us, and we'll take a look and let you know.
+
 ------------------------------------
 Can I Test the App before Buying It?
 ------------------------------------
@@ -158,6 +174,10 @@ Most of the data described below is provided via the **Mobile Application** add-
    * *Feature Graphic image*—a 1024x500 image shown on the Google Play page of your application. For more information, see the "Feature Graphic" section of `Google Play instructions <https://support.google.com/googleplay/android-developer/answer/1078870?hl=en>`_.
 
    * *Splash Screen Logo*—an image in two variants (1536x2208 vertical & 2208x1536 horizontal). It will be displayed when you start the application on your mobile device.
+
+     .. note::
+
+         Apple App Store and Google Play don't accept images with transparent backgrounds (or in technical terms, with alpha channel). Please remove alpha channel before uploading images. Opening your image and saving it as JPG is the surest and easiest option: a PNG image may or may not have alpha channel, but a JPG image never has one.
 
 #. **App details:**
 
