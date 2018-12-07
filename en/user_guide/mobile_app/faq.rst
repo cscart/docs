@@ -145,7 +145,7 @@ It's best if you use the latest version. It always includes all the changes to t
 
 If you aren't using the latest version, just mention it when contacting us, and we'll help you get started. For example, version 4.8.1 is the earliest version that comes with the **Mobile Application** add-on. But we've made some improvements since then, so we may first need to apply them to your CS-Cart or Multi-Vendor installation.
 
-Mobile application can also run on versions older than 4.8.x (the earliest version we ran it on is 4.6.3), but the older the version, the more changes might be required. We can't promise to integrate the mobile application with any old version possible, but contact us, and we'll take a look and let you know.
+Mobile application can also run on versions older than 4.8.x (the earliest version we ran it on is 4.6.3), but the older the version, the more changes might be required. We can't promise to integrate the mobile application with any old version possible, but tell us your version number `via Help Desk <https://helpdesk.cs-cart.com>`_, and we'll take a look and let you know.
 
 ------------------------------------
 Can I Test the App before Buying It?
