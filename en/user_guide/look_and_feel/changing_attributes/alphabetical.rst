@@ -2,7 +2,7 @@
 How To: Display Wishlist Products in Alphabetical Order
 *******************************************************
 
-By default, CS-Cart displays wishlist products in the sane order they were added to the list. But we have developed a free add-on that sorts wishlist products in alphabetical order.
+By default, CS-Cart displays wishlist products in the same order they were added to the list. But we have developed a free add-on that sorts wishlist products in alphabetical order.
 
 .. image:: img/wishlist_products_abc_04.png
     :align: center
