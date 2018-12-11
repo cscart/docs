@@ -33,6 +33,7 @@ Although the general idea is always the same, the details of the installation pr
     vps_install
     install_via_console
     windows/index
+    linux/index
 
 .. toctree::
     :maxdepth: 4
