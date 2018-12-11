@@ -1,56 +1,60 @@
+******************************
 Установка на компьютер c Linux
-------------------------------
+******************************
 
-Рассмотрим установку CS-Cart на локальный компьютер под управлением Ubuntu. 
+Рассмотрим установку CS-Cart на локальный компьютер под управлением Unix-подобной операционной системы (например, Linux или Ubuntu).
 
-.. note::
+.. important::
 
-    Вам потребуются установленные пакеты Apache, MySQL и PHP.
+    Сначала установите Apache, MySQL и PHP.
 
-1.  Скачайте последнюю версию CS-Cart на сайте `www.cs-cart.ru <https://www.cs-cart.ru/download.html>`_.
+#. Скачайте последнюю версию CS-Cart на сайте `www.cs-cart.ru <https://www.cs-cart.ru/download.html>`_.
 
-2.  Создайте новую папку **/var/www/cscart/** и распакуйте в неё архив дистрибутива.
+#. Создайте новую директорию */var/www/cscart/*. Если хотите, используйте вместо *cscart* любое другое имя.
 
-    .. fancybox:: img/install_01.png
-        :alt: ubuntu install
+#. Распакуйте архив дистрибутива в созданную директорию.
 
-3.  Установите права на файлы и папки:
+   .. fancybox:: img/install_01.png
+       :alt: Устанавливаем CS-Cart на Ubuntu.
 
-    .. list-table::
-        :stub-columns: 1
-        :widths: 10 30
+#. Установите права на файлы и папки:
 
-        *   -   777
-            -   На следующие папки и их содержимое:
+   .. list-table::
+       :stub-columns: 1
+       :widths: 10 30
 
-                *   var/
-                *   design/
-                *   images/
+       * - 777
+         - На следующие папки и их содержимое:
 
-        *   -   666
-            -   config.local.php
+           * var/
+           * design/
+           * images/
 
-    Установка прав в terminal:
+       * - 666
+         - На следующий файл:
 
-    .. code::
+           * config.local.php
 
-        chmod 666 config.local.php
-        chmod -R 777 design images var
-        find design -type f -print0 | xargs -0 chmod 666
-        find images -type f -print0 | xargs -0 chmod 666
-        find var -type f -print0 | xargs -0 chmod 666
+   Вот команды, чтобы задать нужные права через командную строку:
 
-    Может потребоваться:
+   .. code::
 
-    .. code::
+       chmod 666 config.local.php
+       chmod -R 777 design images var
+       find design -type f -print0 | xargs -0 chmod 666
+       find images -type f -print0 | xargs -0 chmod 666
+       find var -type f -print0 | xargs -0 chmod 666
 
-        chmod 644 design/.htaccess images/.htaccess var/.htaccess var/themes_repository/.htaccess
-        chmod 644 design/index.php images/index.php var/index.php var/themes_repository/index.php
+#. Также могут потребоваться эти команды:
 
+   .. code::
 
-4.  Запустите "Мастер установки" в браузере по адресу ``localhost/cscart`` и нажмите **[install]**
+       chmod 644 design/.htaccess images/.htaccess var/.htaccess var/themes_repository/.htaccess
+       chmod 644 design/index.php images/index.php var/index.php var/themes_repository/index.php
 
-    Инструкция: :doc:`Установка в браузере </install/process/index>`
+#. Запустите "Мастер установки". Для этого откройте в браузере страницу ``localhost/cscart``.
 
-    .. fancybox:: img/install_04.png
-        :alt: ubuntu install
+#. Нажмите **[install]** и следуйте :doc:`инструкции по установке в браузере </install/process/index>`.
+
+   .. fancybox:: img/install_04.png
+       :alt: Запускаем установку CS-Cart в браузере.
