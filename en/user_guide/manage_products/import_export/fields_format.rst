@@ -449,8 +449,6 @@ For CSV files it doesn't matter, but when you import an XML file, a problem occu
 
   <![CDATA[<p><i>ClimaCool</i> is softer than cotton and resists pilling better than other natural and synthetic fibers.</p>]]>
 
-You don't have to make changes manually all over the file. To change values of all such entries automatically, use ``concat('<![CDATA[', $value, ']]>')`` modifiers for any fields with HTML markup in the :doc:`import preset </user_guide/manage_products/import_export/advanced_product_import>`. This modifier will wrap ``<![CDATA[...]]>`` around all the values in the imported field.
-
 =================
 Short description
 =================
