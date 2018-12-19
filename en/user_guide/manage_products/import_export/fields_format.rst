@@ -439,7 +439,17 @@ The full description of the product, which can contain up to 16 777 215 symbols.
 
 .. important::
 
-    EXAMPLE: *ClimaCool is softer than cotton and resists pilling better than other natural and synthetic fibers. The shape and placement of ClimaCool fibers help move moisture quickly to the outer surface, where it evaporates away from the body. Adidas Mens ClimaCool Short Sleeve Mocks features: 100% polyester Coolmax Extreme - UV protection; ClimaCool is a superior moisture management technology designed to regulate skin temperature, improve the flow of air and dry faster; ClimaCool is proven to reduce skin temperature and heart rate during exercise; Short sleeve mock; Coolmax Extreme rib knit mock; Set-in sleeve; Jacquard mesh side panels for added breathability; Open hem sleeves*
+    EXAMPLE: *ClimaCool is softer than cotton and resists pilling better than other natural and synthetic fibers. The shape and placement of ClimaCool fibers help move moisture quickly to the outer surface, where it evaporates away from the body.*
+
+An imported file may contain HTML markup that affects the look of the text. It often occurs in the description, for example:
+
+  <p><i>ClimaCool</i> is softer than cotton and resists pilling better than other natural and synthetic fibers.</p>
+
+For CSV files it doesn't matter, but when you import an XML file, a problem occurs: XML and HTML tags both look like ``<...>``, and CS-Cart can't distinguish what is what. That's why HTML tags (a part of the description) must be separated from the XML tags (a part of the file structure). A text with HTML markup must be imported as follows:
+
+  <![CDATA[<p><i>ClimaCool</i> is softer than cotton and resists pilling better than other natural and synthetic fibers.</p>]]>
+
+You don't have to make changes manually all over the file. To change values of all such entries automatically, use ``concat('<![CDATA[', $value, ']]>')`` modifiers for any fields with HTML markup in the :doc:`import preset </user_guide/manage_products/import_export/advanced_product_import>`. This modifier will wrap ``<![CDATA[...]]>`` around all the values in the imported field.
 
 =================
 Short description
