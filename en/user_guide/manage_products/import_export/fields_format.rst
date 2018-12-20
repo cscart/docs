@@ -4,6 +4,10 @@ Imported Fields Format
 
 An imported CSV file with product information can contain the columns described below. We have :doc:`an example of the CSV file <import_example>` that you can check; you can also make an example yourself by :doc:`exporting products <product_export>`.
 
+.. important::
+
+    CS-Cart and Multi-Vendor can import only the files that use the `UTF-8 character set <https://en.wikipedia.org/wiki/UTF-8>`_. If some values aren't imported properly (or at all), please try saving your file with the UTF-8 encoding and importing it again.
+
 .. contents::
    :backlinks: none
    :local:
