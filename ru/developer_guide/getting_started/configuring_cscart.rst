@@ -36,10 +36,8 @@
            ini_set('display_errors', 'on');
            ini_set('display_startup_errors', true);
 
-           // Отключаем PHP кэш блоков
-           $config['tweaks'] = array (
-               'disable_block_cache' => true, 
-           );
+           // Отключаем PHP-кэш блоков
+           $config['tweaks']['disable_block_cache'] = true;
 
        }
 
@@ -186,9 +184,7 @@ CS-Cart хранит файлы **CSS** и **TPL** от установленны
 
 CS-Cart кэширует блоки, чтобы ускорить загрузку страниц. Но при разработке удобнее, если сразу видно все изменения. Поэтому вы можете отключить кэширование блоков, добавив в **local_conf.php** следующий код::
 
-  $config['tweaks'] = array (
-      'disable_block_cache' => true,
-  );
+  $config['tweaks']['disable_block_cache'] = true;
 
 -----------------------------
 Настройки базы данных и хоста
