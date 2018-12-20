@@ -37,9 +37,7 @@ To configure CS-Cart for development, complete the steps below:
           ini_set('display_startup_errors', true);
 
           // Disable PHP block caching
-          $config['tweaks'] = array (
-              'disable_block_cache' => true, 
-          );
+          $config['tweaks']['disable_block_cache'] = true;
 
       }
 
@@ -183,9 +181,7 @@ Disable PHP Block Caching
 
 CS-Cart caches blocks to reduce page loading times. However, when you work on a project, you want to see the latest changes you’ve made. That’s why you may want to disable PHP block caching by adding the following code to **local_conf.php**::
 
-  $config['tweaks'] = array (
-      'disable_block_cache' => true,
-  );
+  $config['tweaks']['disable_block_cache'] = true;
 
 --------------------------
 Database and Host Settings
