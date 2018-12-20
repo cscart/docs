@@ -6,6 +6,10 @@ CS-Cart and Multi-Vendor support bulk data import and export in the **CSV** (com
 
 To import or export data, go to **Administration → Import data** or **Administration → Export data** respectively.
 
+.. important::
+
+    CS-Cart and Multi-Vendor can import only the files that use the `UTF-8 character set <https://en.wikipedia.org/wiki/UTF-8>`_. If some values aren't imported properly (or at all), please try saving your file with the UTF-8 encoding and importing it again.
+
 .. toctree::
     :maxdepth: 4
     :titlesonly:
