@@ -139,3 +139,9 @@ Service Packs
 ---------
 
 [!] There was a problem with a payment method specific to the Russian version of CS-Cart. Fixed in Russian version; version number incremented in other versions.
+
+---------
+4.9.2.SP2
+---------
+
+[*] Due to changes in Russian legislation starting with January 1,2019, some add-ons unique to the Russian version of CS-Cart were updated.
