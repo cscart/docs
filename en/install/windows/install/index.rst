@@ -38,3 +38,7 @@ First of all, you need to install XAMPP—an environment for PHP development (se
 
    .. image:: img/cscart_install.png
        :alt: Starting the CS-Cart installation
+
+   .. important::
+
+       Some of the PHP extensions :doc:`required by CS-Cart </install/system_requirements>` (for example, ``curl``, ``sockets``, ``soap``) might be disabled in XAMPP by default. To enable them, go to the **php.ini** file of your XAMPP installation, remove the ``;`` symbol at the beginning of the lines with the required extensions, then save your changes and restart XAMPP.
