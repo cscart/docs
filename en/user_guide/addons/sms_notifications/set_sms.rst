@@ -18,11 +18,7 @@ How To: Set up the SMS Notifications Add-on
 
    * Specify **Clickatell settings**:
 
-     * **Username**—the username registered for the Clickatell account.
-
-     * **API ID**—the unique API ID assigned during registration.
-
-     * **Password**—password to access your Clickatell account.
+     * **API ID**—the unique API key that you generate in your account on the Clickatell side.
 
      * **Use Unicode**—select to send SMS in `the Unicode format <https://www.clickatell.com/faqs/answer/do-you-support-unicode/>`_.
 
