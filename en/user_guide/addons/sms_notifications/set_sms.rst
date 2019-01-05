@@ -38,9 +38,9 @@ How To: Set up the SMS Notifications Add-on
 
        * **Product quantity is less than zero**—choose whether or not to receive notifications about out-of-stock products.
 
-       * **Only send when order total amount is more than**—select the minimum order subtotal; you won't be notified via SMS about orders with lower subtotal
+       * **Only send when order total amount is more than**—select the minimum order subtotal; you won't be notified via SMS about orders with lower subtotal.
 
-       * **Only send for these shipping methods**–select the shipping methods that must be used in an order; if an order uses other shipping methods, you won't be notified about that order via SMS.
+       * **Only send for these shipping methods**—select the shipping methods that must be used in an order; if an order uses other shipping methods, you won't be notified about that order via SMS.
 
      * SMS content
 
