@@ -2,7 +2,7 @@
 SMS Notifications
 *****************
 
-This add-on enables you to receive SMS notifications about some routine events that occur in your store and may require immediate response. The module utilizes the resources of **Clickatell Gateway**, a trustworthy mobile messaging platform. This implies that you have registered an account with Clickatell.
+This add-on allows you to receive SMS notifications about events that occur in your store. The notifications are sent via **Clickatell**, a mobile messaging platform. That's why you'll need a Clickatell account if you want your store to send SMS notifications to you.
 
 .. toctree::
     :maxdepth: 2
