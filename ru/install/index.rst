@@ -19,6 +19,7 @@
 
     brief_instructions
     useful_info/change_domain
+    useful_info/remove_demo_data
     system_requirements
 
 .. toctree::
