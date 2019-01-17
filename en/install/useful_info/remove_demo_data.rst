@@ -30,11 +30,11 @@ This way will suit you **ONLY if:**
 
 #. Delete all the files and folders of your CS-Cart/Multi-Vendor installation on your server.
 
+#. Delete the database that you used for your CS-Cart/Multi-Vendor installation.
+
+   Even if you don't delete the database, you'll be able to use the same database name during installation. CS-Cart will tell you that the database isn't empty and ask if it can overwrite the tables. But this may not delete all the data of the previous installation, especially if you used third-party add-ons that created their own tables.
+
 #. :doc:`Install CS-Cart/Multi-Vendor </install/index>` on the same server again. During installation, don't choose **Install demo data**.
-
-   .. hint::
-
-       During installation, you can use the same database name as before. CS-Cart will tell you that the database isn't empty and ask if it can overwrite the database.
 
 #. After the installation you'll end up in the administration panel of an empty store. But there are still a few places to check for demo data:
 
@@ -51,6 +51,8 @@ This way will suit you **ONLY if:**
    * :doc:`Payment methods </user_guide/payment_methods/index>` (*Administration → Payment methods*): there are a few default payment methods that won't automatically transfer the money to your account (that requires additional configuration on your part). That's why it's best to delete the default payment methods, and then add the ones you need.
 
    * :doc:`Shipping methods </user_guide/shipping_and_taxes/shipping_methods/index>` (*Administration → Shipping & taxes → Shipping methods*): there are a few default shipping methods. To make them show correct rates, you'll either need to set shipping rates for different places manually, or select one of the available real-time rate calculators. That's why we advise that you delete the default shipping methods and then set up the ones you need.
+
+   * :doc:`Taxes </user_guide/shipping_and_taxes/taxes/set_up_tax>` (*Administration → Shipping & taxes → Taxes*): a single tax (VAT) exists by default. Either delete it, or configure it as you see fit. If you intend to use it, please make sure that the rates are correct.
 
    * :doc:`Menus </user_guide/look_and_feel/menus/index>` (*Design → Menus*): the menus leading to the basic content pages of your site. If you have deleted any of those pages, then go through the menus and delete the corresponding menu items as well. Make sure to check the *Main menu* and remove the links to demo categories there.
 
@@ -184,9 +186,9 @@ Vendors and Vendor Plans
 
 #. The demo data also includes a few pre-configured :doc:`vendor plans </user_guide/addons/vendor_plans/index>`. Go to the **Vendors → Vendor plans** page and either delete them and create your own, or adjust the terms of those plans as you see fit.
 
---------------------------------------------------------
-Administration: Payment and Shipping Methods, Currencies
---------------------------------------------------------
+---------------------------------------------------------------
+Administration: Payment and Shipping Methods, Taxes, Currencies
+---------------------------------------------------------------
 
 #. The demo data includes a few default :doc:`payment methods </user_guide/payment_methods/index>` that won't automatically transfer the money to your account (that requires additional configuration).
 
@@ -195,6 +197,8 @@ Administration: Payment and Shipping Methods, Currencies
 #. The demo data also includes several :doc:`shipping methods </user_guide/shipping_and_taxes/shipping_methods/index>`. Delete those you don't need, and add or configure the rest.
 
    You'll either need to set shipping rates manually, or select one of the real-time shipping rate calculators. To do that, go to **Administration → Shipping & taxes → Shipping methods**.
+
+#. By default, one :doc:`tax </user_guide/shipping_and_taxes/taxes/set_up_tax>` (VAT) exists in CS-Cart. Go to **Administration → Shipping & taxes → Taxes** and either delete it, or configure it as you see fit. If you intend to use it, please make sure that the rates are correct.
 
 #. The demo data includes several :doc:`currencies </user_guide/currencies/index>`. Go to **Administration → Currencies** and delete or disable the ones you aren't planning to use.
 
