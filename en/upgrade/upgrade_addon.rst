@@ -1,507 +1,385 @@
-*************************************
-How To: Create Add-on Upgrade Package
-*************************************
+***********************************************************
+FAQ: How to Offer Upgrades for My Add-on via Upgrade Center
+***********************************************************
 
-For example, let's take a simple add-on that adds several fields to a product and changes the products selection logic. It is called **Demo add-on** and has an id = "upgrade".
+This is an article for developers who offer add-ons for CS-Cart and Multi-Vendor and would like to make upgrades easier for their customers. Instead of developing your own mechanism or asking your clients to change files manually on the server, you can just offer them to go to **Administration → Upgrade center** to get upgrades for your add-ons.
 
-The add-on structure (*app/addons/*):
+.. contents::
+   :backlinks: none
+   :local:
 
-.. code-block:: none
+======================================
+When Should I Release Add-on Upgrades?
+======================================
 
-	upgrade
-	  +-- addon.xml
-	  +-- func.php
-	  L-- init.php
+There are two main reasons for releasing an upgrade:
 
-The basic *addon.xml* structure:
+#. You have developed some new functionality that you're ready to give to your clients.
 
-.. code-block:: none
+#. There have been some changes to CS-Cart/Multi-Vendor core API:
 
-	<?xml version="1.0"?>
-	<addon scheme="3.0">
-	    <id>upgrade</id>
-	    <version>1.1</version>
-	    <priority>100</priority>
-	    <position>100</position>
-	    <default_language>en</default_language>
-	    <status>active</status>
-	    <name>Demo upgrade add-on v1.1</name>
-	    <description>This is description of the addon v1.1</description>
-	</addon>
+   * Some constants, classes, functions, or hooks used by your add-on have been removed.
 
-Several fields are also added to the ``cscart_products`` table:
+   * The arguments of functions or hooks used by your add-on have been changed.
 
-.. code-block:: none
+   * The constants, classes, functions, or hooks used by the add-on have been marked as deprecated. We don't delete deprecated code immediately, but it's best to switch to new functionality before we do that.
 
-	<queries>
-	    <item>ALTER TABLE `?:products` ADD `search_field` varchar(255) NOT NULL DEFAULT 'custom'</item>
-	    <item for="uninstall">ALTER TABLE `?:products` DROP `search_field`</item>
-	</queries>
+   * The structure of the database tables used by the add-on has changed.
 
-Upgrade Connector
-*****************
+     This change doesn't necessarily result in issues with your add-on—we maintain backward compatibility between CS-Cart releases. However, if your add-on makes direct requests to the tables instead of using core functions, the add-on might stop working properly.
 
-The first thing to do, is to create a connector. With its help Upgrade Center will connect to the upgrade server.
+.. note::
 
-Create the following path: *app/addons/[ADDON_NAME]/Tygh/UpgradeCenter/Connectors/Upgrade/Connector.php*
+    Around the time when we release a new version of CS-Cart/Multi-Vendor, we also announce changes to core API :doc:`in the special section of developer documentation </developer_guide/addons/compatibility/index>`.
 
-In this example: *app/addons/upgrade/Tygh/UpgradeCenter/Connectors/Upgrade/Connector.php*
+.. _addon-upgrade-distribution:
 
-Connector must implement **IConnector** interface. Create the file header and basic functions:
+=======================================
+Where Should I Upload Upgrade Packages?
+=======================================
 
-.. code-block:: none
+If you want your customers to use the Upgrade Center for upgrading their add-ons, then there are two ways:
 
-	namespace Tygh\UpgradeCenter\Connectors\Upgrade;// "Upgrage" - is an add-on name.
-													// If your add-on has "my_changes" name, so namespace will look like:  ygh\UpgradeCenter\MyChanges
-	use Tygh\UpgradeCenter\Connectors\IConnector as UCInterface;
+* **CS-Cart Marketplace.** The Marketplace has :doc:`all the necessary tools for building and distributing upgrades </developer_guide/addons/marketplace/addon_upgrade>`. That functionality is in closed beta; if you'd like to use it, please send a message to marketplace@cs-cart.com.
 
-	/**
-	 * Core upgrade connector interface
-	 */
-	class Connector implements UCInterface
-	{
-	    /**
-	     * Prepares request data for request to Upgrade server (Check for the new upgrades)
-	     *
-	     * @return array Prepared request information
-	     */
-	    public function getConnectionData()
-	    {
-	    }
+* **Your own upgrade server.** The server is necessary if you use your own mechanism of licensing and upgrade package distribution. This approach requires that you adjust your add-on accordingly and build upgrade packages yourself. You'll find the instructions further in this article.
 
-	    /**
-	     * Processes the response from the Upgrade server.
-	     *
-	     * @param  string $response              server response
-	     * @param  bool   $show_upgrade_notice internal flag, that allows/disallows Connector displays upgrade notice (A new version of [product] available)
-	     * @return array  Upgrade package information or empty array if upgrade is not available
-	     */
-	    public function processServerResponse($response, $show_upgrade_notice)
-	    {
-	    }
+=======================================================================
+How Do I Make My Add-on Compatible Only With Specific CS-Cart Versions?
+=======================================================================
 
-	    /**
-	     * Downloads upgrade package from the Upgade server
-	     *
-	     * @param  array  $schema       Package schema
-	     * @param  string $package_path Path where the upgrade pack must be saved
-	     * @return bool   True if upgrade package was successfully downloaded, false otherwise
-	     */
-	    public function downloadPackage($schema, $package_path)
-	    {
-	    }
-	}
+You can set all the requirements of your add-on in its **addon.xml** file: :doc:`versions of CS-Cart and/or Multi-Vendor, PHP and its extensions </developer_guide/addons/scheme/addon_compatibility>`, :doc:`required and conflicting add-ons </developer_guide/addons/scheme/addon_dependencies>`.
 
-First of all, let the Upgrade Center App know how to get information about new upgrades from the server. Implement the ``getConnectionData`` function.
+.. important::
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    The requirements of the **addon.xml** file are only checked :ref:`during add-on installation <install-addon-process>`. They ARE NOT checked during the upgrade.
 
-We will probably need the current add-on settings (license number or its current version, for example). It can be realized with the ``protected`` class variable ``$settings = array();`` and the ``__contruct()`` class method.
+If the requirements of the add-on change after the upgrade, it's not enough to change **addon.xml**. To make sure that clients don't install an upgrade that won't work with their version, you have two options:
 
-.. code-block:: none
+* Pass the customer's CS-Cart/Multi-Vendor version number to :ref:`your upgrade server <addon-upgrade-server>` and have the server determine whether to offer an upgrade or not.
 
-	class Connector implements UCInterface
-	{
-	  protected $settings = array();
+* Add a :ref:`validator <addon-upgrade-validators>` to your upgrade package; have that validator prevent the installation of the upgrade package if the requirements aren't met.
 
-	  public function __construct()
-	  {
-	      // Initial settings
-	      $addon_scheme = SchemesManager::getScheme('upgrade');
+.. _addon-upgrade-connector:
 
-	      $this->settings = array(
-	          'upgrade_server' => 'http://demo.cs-cart.com/index.php',
-	          'addon_version' => $addon_scheme->getVersion()
-	      );
-	  }
-	  // Other code
-	}
+==============================================================
+How Do I Adjust My Add-on for Working with the Upgrade Center?
+==============================================================
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CS-Cart and Multi-Vendor check for upgrades in 2 cases:
 
-The ``getConnectionData`` function does not take any parameters. It returns an array containing information about server access method, URL, and information to be sent to it (it is possible to specify headers additionaly). In the additional information of the request it is possible to specify any data (version, license, hash, etc.)
+#. When someone enters the administration panel (but only if the *Check for updates automatically* setting is enabled under **Settings → General**).
+
+#. Whenever someone goes to **Administration → Upgrade center**.
+
+Here are some things to take into account when you make the add-on work with the Upgrade Center:
+
+* To check for upgrades and download them, an add-on must have an Upgrade Center connector. This connector is a class that must be located in *app/addons/[sample_addon]/Tygh/UpgradeCenter/Connectors/[SampleAddon]/Connector.php*.
+
+  * ``[sample_addon]`` — the identifier of the add-on.
+
+  * ``[SampleAddon]`` — the identifier of the add-on in camel case.
+
+* The connector must extend the ``\Tygh\UpgradeCenter\Connectors\BaseAddonConnector`` class and implement the ``\Tygh\UpgradeCenter\Connectors\IConnector`` interface.
+
+* The address of the upgrade server must be specified in the ``url`` field in the result of calling the ``Connector::getConnectionData`` method.
+
+* The data passed to the upgrade server for checking upgrade availability is specified in the ``data`` field in the results of calling the ``Connector::getConnectionData`` method. The ``data`` field is an array of entries like ``parameter_name => parameter_value``.
+
+* The download of the upgrade package is implemented in the ``Connector::downloadPackage`` method.
+
+Here is an example of connector with comments:
+
+:download:`Download Connector.php example <files/Connector.php>`
+
+.. literalinclude:: files/Connector.php
+
+====================================
+How Do I Prepare an Upgrade Package?
+====================================
+
+.. _addon-upgrade-package-structure:
+
+-----------------
+Basic Information
+-----------------
+
+To build an upgrade package, you'll need archives with the old an the new versions of the add-on. Use `our SDK <https://github.com/cscart/sdk/>`_ and the following commands:
+
+.. code-block:: console
+
+  cscart-sdk addon:export   #export an archive with the current version of the add-on
+
+  cscart-sdk addon:build_upgrade   #build an upgrade package
+
+.. important::
+
+    For the SDK to work, your add-on must have the following structure of files and folders:
 
 .. code-block:: none
 
-	public function getConnectionData()
-	{
-	    $request_data = array(
-	        'method' => 'get',
-	        'url' => $this->settings['upgrade_server'], // We specified this setting before in the __construct method
-	        'data' => array(
-	            'dispatch' => 'updates.check',
-	            'product_version' => PRODUCT_VERSION,
-	            'edition' => PRODUCT_EDITION,
-	            'product_build' => PRODUCT_BUILD,
-	            'lang' => CART_LANGUAGE,
-	            'addon_version' => $this->settings['addon_version'],
-	            'some_custom_field' => TIME,
-	            'hello' => 'world',
-	            'super_secure_hash' => sha1(time()),
-	        ),
-	        'headers' => array(
-	            'Content-type: text/xml'
-	        )
-	    );
-
-	    return $request_data;
-	}
-
-Every time Upgrade Center checks for updates this function is processed. Upgrade Center makes a request to the server according to the received data and returns a response. Implement the response processing function ``processServerResponse``. At the beginning this function takes two parameters:
-
-*	``$response`` - server response.
-*	``$show_upgrade_notice`` - additional flag informing if we should show a notice in the new version.
-
-It must return an array containg information about package (it will be described later).
-
-The server returns a response in the XML format, for example:
-
-.. code-block:: none
-
-	<?xml version="1.0"?>
-	<upgrade>
-	    <available>Y</available>
-	    <package>
-	        <file>upgrade_from_1.1_to_1.2.tgz</file>
-	        <name>Upgrade for the "Upgrade add-on" (from 1.1 to 1.2)</name>
-	        <description>New version of the addon!
-
-	            Changelog:
-	            - PHP warning was displayed when calculating cart. Fixed.
-	            - Taxes no longer available</description>
-	        <from_version>1.1</from_version>
-	        <to_version>1.2</to_version>
-	        <timestamp>1412366886</timestamp>
-	        <size>18123</size>
-	        <custom_field>Hello CS-Cart</custom_field>
-	        <my_sha_key>123</my_sha_key>
-	    </package>
-	</upgrade>
-
-It will be processed as follows:
-
-.. code-block:: none
-
-	$parsed_data = array();
-	$data = simplexml_load_string($response);
-
-	if ((string) $data->available == 'Y') {
-	    $parsed_data = array(
-	        'file' => (string) $data->package->file, // Required field
-	        'name' => (string) $data->package->name, // Required field
-	        'description' => (string) $data->package->description, // Required field
-	        'from_version' => (string) $data->package->from_version, // Required field
-	        'to_version' => (string) $data->package->to_version, // Required field
-	        'timestamp' => (int) $data->package->timestamp, // Required field
-	        'size' => (int) $data->package->size, // Required field, size in bytes
-	        'my_very_important_field' => (string) $data->package->my_sha_key,
-	        'custom_field' => (string) $data->package->custom_field,
-	    );
-
-	    if ($show_upgrade_notice) {
-	        fn_set_notification('W', __('notice'), __('text_upgrade_available', array(
-	            '[product]' => 'Upgade add-on',
-	            '[link]' => fn_url('upgrade_center.manage')
-	        )), 'S');
-	    }
-	}
-
-	return $parsed_data;
+    ├── app
+    │   └── addons
+    │       └── [sample_addon]
+    │           ├── addon.xml
+    │           ├── config.php
+    │           ├── func.php
+    │           ├── Tygh
+    │           │   └── UpgradeCenter
+    │           │       └── Connectors
+    │           │           └── [SampleAddon]
+    │           │               └── Connector.php
+    │           └── upgrades
+    │               ├── [version1]
+    │               │   ├── migrations
+    │               │   │   ├── 467676233_migration1.php
+    │               │   │   └── 467676233_migration2.php
+    │               │   │
+    │               │   ├── validators
+    │               │   │   ├── validator1.php
+    │               │   │   └── validator2.php
+    │               │   │
+    │               │   ├── scripts
+    │               │   │   ├── pre_script.php
+    │               │   │   └── post_script.php
+    │               │   │
+    │               │   ├── extra_files
+    │               │   │   ├── extra_file1.php
+    │               │   │   └── extra_file2.php
+    │               │   │
+    │               │   └── extra
+    │               │       └── extra.php
+    │               │
+    │               ├── [version2]
+    │                   │   ├── migrations
+    │                   │   │   ├── 467676233_migration1.php
+    │                   │   │   └── 467676233_migration2.php
+    │                   │   │
+    │                   │   ├── validators
+    │                   │   │   ├── validator1.php
+    │                   │   │   └── validator2.php
+    │                   │   │
+    │                   │   ├── scripts
+    │                   │   │   ├── pre_script.php
+    │                   │   │   └── post_script.php
+    │                   │   │
+    │                   │   ├── extra_files
+    │                   │   │   ├── extra_file1.php
+    │                   │   │   └── extra_file2.php
+    │                   │   │
+    │                   │   ├── extra
+    │                   │   │   └── extra.php
+    ...
+    
+* ``[sample_addon]``—the identifier of the add-on.
+
+* ``[SampleAddon]``—the CamelCased identifier of the add-on.
+
+* ``[version1]``—a version, for example 1.1.0.
+
+* ``[version2]``—a version, for example 1.1.1.
+
+* ``app/addons/[sample_addon]/upgrades/[version]/migrations``—a folder with the migrations to be performed when upgrading to this [version].
+
+* ``app/addons/[sample_addon]/upgrades/[version]/validators``—a folder with the validators which must run their checks before upgrading to this [version].
+
+* ``app/addons/[sample_addon]/upgrades/[version]/scripts``—a folder with pre/post scripts to be executed before and after upgrading to this [version].
+
+* ``app/addons/[sample_addon]/upgrades/[version]/extra_files``—a folder with the extra files that are used only during the upgrade and aren’t added to CS-Cart/Multi-Vendor.
+
+* ``app/addons/[sample_addon]/upgrades/[version]/extra/extra.php``—a file for extending **package.json** of the upgrade package.
+
+  .. note::
+
+      Files and folders in *app/addons/[sample_addon]/upgrades/[version]* aren’t required. For example, if the new version has no changes in the database, there’s no need to create a folder with migrations.
+
+----------
+Migrations
+----------
+
+Migrations apply *during upgrade installation*. They change the structure of tables of the store’s database or modify data in those tables.
+
+To write a migration, use Phinx. Please note that CS-Cart uses an old version of Phinx (0.4.3), so not all instructions from the latest Phinx documentation may apply. Here are the old Phinx 0.4.3 docs about:
+
+* `commands <https://github.com/cakephp/phinx/blob/v0.4.3/docs/commands.rst>`_;
+
+* `writing migrations <https://github.com/cakephp/phinx/blob/v0.4.3/docs/migrations.rst>`_. 
+
+The migration class must contain the ``up`` method that will be executed during the upgrade process.
+
+For example::
+
+    use Phinx\Migration\AbstractMigration;
+    
+    class AddonsSampleAddonUpdateVersion extends AbstractMigration
+    {
+        public function up()
+        {
+            $options = $this->adapter->getOptions();
+            $pr = $options['prefix'];
+    
+            $this->execute("UPDATE {$pr}addons SET version = '1.1' WHERE addon = 'sample_addon'");
+        }
+    }
 
-There is a set of mandatory and a set of additional fields. Additional ones could be used later, for example, to check on a file hash to make sure that it is not broken. Or make an additional add-on license validation, etc. A list of mandatory fields:
+Separate your changes between migrations: each migration should implement a single logically complete action.
+
+**Don’t** use raw SQL in migrations to change table structure; use only `Phinx methods <https://github.com/cakephp/phinx/blob/v0.4.3/docs/migrations.rst#working-with-columns>`_.
+
+**Don’t** use CS-Cart core functions in the migrations: there is no guarantee that they will be available when an add-on upgrade is being installed. This will lead to the crash of the upgrade process and may result in a broken store.
+
+.. _addon-upgrade-validators:
 
-*	``file`` - the name of an archive with updates (later a file will have this name).
-*	``name`` - the name of an update package. It will be displayed in the list of available upgrades in Upgrade Center.
-*	``description`` - package description. It will be displayed in the list of available upgrades in Upgrade Center.
-*	``from_version`` - version from what the upgrade is done.
-*	``to_version`` - version to what the upgrade is done.
-*	``timestamp`` - time of the upgrate package creation.
-*	``size`` - package size in bytes.
+----------
+Validators
+----------
 
-Additional fields can be of any type and can contain any information.
+Validators check if the store meets specific conditions *before installing the upgrade package*. Every validator is a separate class in the ``Tygh\UpgradeCenter\Validators`` namespace.
 
-After that Upgrade Center will create a scheme for the package and place it to *var/upgrades/packages/[ADDON_NAME]/schema.json*.
+A validator must implement the **IValidator** interface and have 2 mandatory methods:
 
-With this scheme Upgrade Center will download the upgrade package (it does not download it by default because the package can be very big).
+* ``getName()`` must return a string with the displayed name of the validator.
 
-To download a package, implenment the last interface function ``downloadPackage``. This function can take two values:
+* ``check($schema, $request)`` must return an array that contains two values:
 
-*	``$schema`` - package scheme that was saved before.
-*	``$package_path`` - a path to the directory where a file should be saved.
+  * a boolean flag that indicates that check has been passed successfully;
 
-An array with two values is returned. The first, boolean, is a result. The second is an additional value that will be displayed in case of falue.
+  * a string message that will be displayed if the check is failed.
 
-.. code-block:: none
+For example::
 
-	return array(true, '');
-	return array(false, __('sha_key_is_invalid'));
+    <?php
+    
+    namespace Tygh\UpgradeCenter\Validators;
+    
+    /**
+     * Checks the minimum PHP version
+     */
+    class PhpVersionValidator implements IValidator
+    {
+        protected $minimal_php_version = '5.6.0';
+    
+        /** @inheritdoc */
+        public function check($schema, $request)
+        {
+            if (version_compare(PHP_VERSION, $this->minimal_php_version) == -1) {
+                return [
+                    false,
+                    __('checking_php_version_is_not_suitable', [
+                        '[version]' => PHP_VERSION,
+                        '[min]'     => $this->minimal_php_version,
+                        '[max]'     => '7.x',
+                    ]),
+                ];
+            }
+    
+            return [true, []];
+        }
+    
+        /** @inheritdoc */
+        public function getName()
+        {
+            return 'PHP Version';
+        }
+    }
 
-	public function downloadPackage($schema, $package_path)
-	{
-	    // Make some custom validation
-	    if ($schema['my_very_important_field'] == '123' && !empty($schema['custom_field'])) {
-	        $url_data = fn_get_url_data($this->settings['upgrade_server'] . '?dispatch=download&from_version=' . $schema['from_version']);
+-------
+Scripts
+-------
 
-	        if (!empty($url_data)) {
-	            $result = fn_copy($url_data['path'], $package_path);
-	        } else {
-	            $result = false;
-	        }
-	        $message = $result ? '' : __('failed');
+Scripts can extend or alter how the Upgrade Center works with your upgrade package during the upgrade. There are 2 types of scripts:
 
-	        return array($result, $message);
-	    } else {
-	        return array(false, __('sha_key_is_invalid'));
-	    }
-	}
+* Pre-upgrade script **pre_script.php** is included after all the checks from validators have been passed.
 
-Upgrade package
-***************
+* Post-upgrade script **post_script.php** is included after the upgrade package has been installed. The post-script is mainly used to set post-upgrade notifications. To do so, add new item into the ``$upgrade_notes`` array within your script::
 
-Now we can transfer our upgrade packages. The next step is to create them. For example, in the new add-on version we fixed some errors in the **func.php** file and added new **config.php** file. In addition, we added one new field to the ``cscart_products`` table.
+    <?php
+    
+    $upgrade_notes[] = [
+        'title'   => 'Sample Add-on v1.1 Changes',
+        'message' => 'Sample Add-on v1.1 Changes Description',
+    ];
 
-So, we should update 3 files:
+These script are included in the context of the ``\Tygh\UpgradeCenter\App`` class and can use all the properties and methods of this class. You may also use any CS-Cart core functions and classes here.
 
-*	**func.php** (update)
-*	**addon.xml** (update: the table structure and the add-on version)
-*	**config.php** (create)
+-----------
+Extra Files
+-----------
 
-Additionally, we should change the ``cscart_products`` table (add a new field). We will use a migration for this.
+Use the *extra_files* folder for the files that are used only during the upgrade and aren’t added to CS-Cart/Multi-Vendor installation.
 
-We also decided to check if a user created the **robots.txt** file (for example, it was described in your instructions on installing the previous version of the add-on). The new version of the add-on will automatically add data there, so, the file should exist and have the *writable* access rules.
+---------------------------------------
+Extending the Schema of Upgrade Package
+---------------------------------------
 
-Finally, we will add several language variables.
+To extend the schema, write a script in the **extra.php** file. The script must return an array. That array will be merged with **package.json** of the upgrade package.
 
-.. important:: Upgrade Center does not update existing variables. It only adds new. If you want to update a language variable, use migrations.
+You can use it to add any additional data into the upgrade package. That data can be used during the upgrade process in your pre- and post-scripts.
 
-Create the basic upgrade package structure:
+For example, here is how you can offer your clients to skip CS-Cart's built-in backup process during upgrade package installation::
 
-.. code-block:: none
+    <?php
+    
+    return [
+        'backup' => [
+            'is_skippable'    => true,
+            'skip_by_default' => true,
+        ],
+    ];
 
-	--- languages/
-	+-- migrations/
-	+-- package/
-	+-- package.json
-	L-- validators/
+.. _addon-upgrade-server:
 
-Some directories can be missing (for example, we don't have languages and migrations, or a package contains only migrations). **package.json** for now is an empty file. We will make its description later.
+======================================
+How Do I Set Up My Own Upgrade Server?
+======================================
 
-Fill the *package* directory. This directory is a store core and contains new files. So, to add our files, we create subdirectories and place these files there:
+.. note::
 
-.. code-block:: none
+    You don't have to set up your own upgrade server—there is :ref:`another way <addon-upgrade-distribution>`. But if your add-ons use a licensing mechanism, then your own upgrade server is the right choice.
 
-	+-- package
-	|   L-- app
-	|       L-- addons
-	|           L-- upgrade
-	|               +-- addon.xml
-	|               +-- config.php
-	|               L-- func.php
+When CS-Cart sends a request about available upgrades, the upgrade server must respond in XML that looks like this:
 
-Files are ready. Now, update languages. A directory structure is the same as in the Crowdin package. In this case we will just update english language adding some language variables, and update the add-on name and version:
+.. code-block:: xml
 
-.. code-block:: none
+    <?xml version="1.0" encoding="utf-8" ?>
+    <update>
+        <packages>
+            <item id="unique_update_package_id">
+                <file>update_package_name.zip</file>
+                <name>Update package name</name>
+                <description><![CDATA[Update package description.]]></description>
+                <from_version>1.0</from_version>
+                <to_version>1.1</to_version>
+                <timestamp>1547199854</timestamp>
+                <size>2048</size>
+            </item>
+        </packages>
+    </update>
 
-	+-- languages
-	|   L-- en
-	|       L-- core.po
+* ``update/packages/item`` is a node that includes information about an upgrade.
 
-**core.po**
+* ``update/packages/item@id`` is the unique identifier of the upgrade package. When the :ref:`connector <addon-upgrade-connector>` passes this identifier to the upgrade server, the server must provide the archive with the upgrade package.
 
-.. code-block:: none
+* ``update/packages/item/file``—the name of the archive with the upgrade package.
 
-	msgid ""
-	msgstr "Project-Id-Version: tygh"
-	"Content-Type: text/plain; charset=UTF-8\n"
-	"Language-Team: English\n"
-	"Language: en_US"
+* ``update/packages/item/name``—the title of the upgrade package as it will appear in the Upgrade Center.
 
-	msgctxt "Languages::new_language_variable"
-	msgid "Upgrade completed"
-	msgstr "Upgrade completed"
+* ``update/packages/item/description``—the description of the upgrade package. May contain HTML markup.
 
-	msgctxt "Addons::name::upgrade"
-	msgid "Demo upgrade add-on v1.2"
-	msgstr "Demo upgrade add-on v1.2"
+* ``update/packages/item/from_version``—the current version of the add-on.
 
-	msgctxt "Addons::description::upgrade"
-	msgid "This is description of the upgraded addon v1.2"
-	msgstr "This is description of the upgraded addon v1.2"
+* ``update/packages/item/to_version``—the version to which the add-on will be upgraded.
 
-Now, create a **Validator** that checks if the **robots.txt** file is in the store core. Create a file with any name, **CheckFileValidator.php**, for example:
+* ``update/packages/item/timestamp``—the date of the upgrade package creation (UNIX timestamp).
 
-.. code-block:: none
+* ``update/packages/item/size``—the size of the upgrade package in bytes.
 
-	L-- validators
-	    L-- CheckFileValidator.php
+  .. note::
 
-This validator must implement the **IValidator** interface and have 2 mandatory functions:
+      If there are no upgrades available, the server must return an empty response.
 
-*	``getName()``
-*	``check($schema, $request)``
+Here is how the package described above will look in the Upgrade Center:
 
-**CheckFileValidator.php**
-
-.. code-block:: none
-
-	namespace Tygh\UpgradeCenter\Validators;
-
-	use Tygh\Registry;
-
-	/**
-	 * Upgrade validators: Check collisions
-	 */
-	class CheckFileValidator implements IValidator
-	{
-	    /**
-	     * Global App config
-	     *
-	     * @var array $config
-	     */
-	    protected $config = array();
-
-	    /**
-	     * Validator identifier
-	     *
-	     * @var array $name ID
-	     */
-	    protected $name = 'Demo upgrade: File checker';
-
-	    /**
-	     * Validate specified data by schema
-	     *
-	     * @param  array $schema  Incoming validator schema
-	     * @param  array $request Request data
-	     * @return array Validation result and Data to be displayed
-	     */
-	    public function check($schema, $request)
-	    {
-	        $file_to_be_created = $this->config['dir']['root'] . '/robots.txt';
-
-	        if (!file_exists($file_to_be_created)) {
-	            return array(false, 'Create <strong>' . $file_to_be_created . '</strong> file first to continue upgrade');
-	        } else {
-	            return array(true, '');
-	        }
-	    }
-
-	    /**
-	     * Gets validator name (ID)
-	     *
-	     * @return string Name
-	     */
-	    public function getName()
-	    {
-	        return $this->name;
-	    }
-
-	    public function __construct()
-	    {
-	        $this->config = Registry::get('config');
-	    }
-	}
-
-The number of validators in a package is not limited. It is better to divide validators by validation types, but not to make many validations in one.
-
-.. _migrations:
-
-Write a migration
-=================
-
-To write a migration, use phinx: `http://docs.phinx.org/en/latest/index.html <http://docs.phinx.org/en/latest/index.html>`_
-Information about creating migrations you can read here: `http://docs.phinx.org/en/latest/migrations.html <http://docs.phinx.org/en/latest/migrations.html>`_
-
-As a result we should have a file like this: *20141022083711_addon_update_version.php*. It will contain the basic migration class with the *up*, *down*, and *change* methods. We need 2 of them:
-
-*	``up`` - while upgrade.
-*	``down`` - while downgrade (in theory this method will not be used).
-
-**20141022083711_addon_update_version.php.php**
-
-.. code-block:: none
-
-	use Phinx\Migration\AbstractMigration;
-
-	class AddonUpdateVersion extends AbstractMigration
-	{
-	    /**
-	     * Change Method.
-	     *
-	     * More information on this method is available here:
-	     * http://docs.phinx.org/en/latest/migrations.html#the-change-method
-	     *
-	     * Uncomment this method if you would like to use it.
-	     *
-	    public function change()
-	    {
-	    }
-	    */
-
-	    /**
-	     * Migrate Up.
-	     */
-	    public function up()
-	    {
-	        $options = $this->adapter->getOptions();
-	        $pr = $options['prefix'];
-
-	        $this->execute("UPDATE {$pr}addons SET `version` = '1.2' WHERE `addon` = 'upgrade'");
-	        $this->execute("ALTER TABLE {$pr}products ADD `new_search_field` int(11) NOT NULL DEFAULT 0");
-	    }
-
-	    /**
-	     * Migrate Down.
-	     */
-	    public function down()
-	    {
-	        $options = $this->adapter->getOptions();
-	        $pr = $options['prefix'];
-
-	        $this->execute("UPDATE {$pr}addons SET `version` = '1.1' WHERE `addon` = 'upgrade'");
-	        $this->execute("ALTER TABLE {$pr}products DROP `new_search_field`");
-	    }
-	}
-
-In this migration we updated the add-on version and added the new field. Migrations are also should be divided into files (in the example 2 migrations are grouped in one, but logically there should be 2 different migrations).
-
-Now, fill the **package.json** file, and the package will be ready. **package.json** is a JSON file description of all files that are included in the upgrade package. We should define the updated files (with the MD5 hash of the old file). It is used for checking if a user changed this file, to inform about collisions.
-
-.. code-block:: none
-
-	{
-	    "files": {
-	        "app/addons/upgrade/addon.xml": {"status": "changed", "hash": "b0911a0d64453ab06b0872c9eb6fbc34"},
-	        "app/addons/upgrade/func.php": {"status": "changed", "hash": "4fefb0fed1496f179a14b7e872eb16d9"},
-	        "app/addons/upgrade/config.php": {"status": "new"},
-	        "app/addons/upgrade/somefile.txt": {"status": "deleted", "hash": "df32e836628b51af570dd2425cb3e97e"}
-	    },
-	    "migrations": [
-	        "20141022083711_addon_update_version.php"
-	    ],
-	    "languages": [
-	        "en"
-	    ],
-	    "validators": [
-	        "CheckFileValidator"
-	    ]
-	}
-
-The package is ready. Finally, pack it to the TGZ archive and send to the connector.
-
-.. code-block:: none
-
-	+-- languages
-	|  L-- en
-	|       L-- core.po
-	+-- migrations
-	|   L-- 20141022083711_addon_update_version.php
-	+-- package
-	|   L-- app
-	|       L-- addons
-	|           L-- upgrade
-	|               +-- addon.xml
-	|               +-- config.php
-	|               L-- func.php
-	+-- package.json
-	L-- validators
-	    L-- CheckFileValidator.php
+.. image:: img/addon_upgrade_package.png
+    :align: center
+    :alt: Add-on upgrade package in the Upgrade Center.
