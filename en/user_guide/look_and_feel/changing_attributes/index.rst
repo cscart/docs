@@ -28,7 +28,6 @@ In this section
     edit_meta_tags
     prices_in_secondary
     secondary_currency
-    shipping_icons
     alphabetical
     sort_by_name
     authentication_timeout
@@ -46,3 +45,4 @@ In this section
     change_title
     sort_images
     right_to_left
+    shipping_icons
