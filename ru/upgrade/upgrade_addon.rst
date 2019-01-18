@@ -1,522 +1,381 @@
-*****************
-Обновление модуля
-*****************
+***********************************************************
+FAQ: Как отдавать обновления модулей через Центр обновлений
+***********************************************************
+
+Это статья для разработчиков, которые предлагают модули для CS-Cart и Multi-Vendor и хотят упростить процесс обновления для своих пользователей. Вместо того, чтобы разрабатывать собственный механизм или просить клиентов вручную менять файлы, вы можете просто предложить им перейти в раздел **Администрирование → Центр обновлений** и получить обновления для модулей там.
 
 .. contents::
-   :backlinks: none
    :local:
 
-Предположим, у нас есть простой модуль, добавляющий пару полей товару и меняющий логику выборки товара. Модуль называется **"Демо аддон"** и имеет ``id = "upgrade"``. Структура модуля предельно проста (*app/addons/*):
+===================================
+Когда выпускать обновления модулей?
+===================================
 
-::
+Есть две основные причины для выпуска обновления:
 
-  upgrade
-    ├── addon.xml
-    ├── func.php
-    └── init.php
+#. Вы разработали новую функциональность и готовы отдать её клиентам.
 
-Структура *addon.xml* базовая:
+#. В ядре CS-Cart или Multi-Vendor произошли изменения:
 
-::
+   * удалены константы, классы, функции или хуки, которые используются вашим модулем;
 
-  <?xml version="1.0"?>
-  <addon scheme="3.0">
-      <id>upgrade</id>
-      <version>1.1</version>
-      <priority>100</priority>
-      <position>100</position>
-      <default_language>en</default_language>
-      <status>active</status>
-      <name>Demo upgrade add-on v1.1</name>
-      <description>This is description of the addon v1.1</description>
-  </addon>
+   * поменялись аргументы у функций или хуков, которые используются вашим модулем;
 
-Представим, что тут еще добавляются пара полей в таблицу ``cscart_products``:
+   * константы, классы, функции или хуки, которые используются вашим модулем, помечены как устаревшие (deprecated). Мы не удаляем их сразу, но лучше переключиться на новую функциональность до того, как мы всё-таки удалим старую;
 
-::
+   * в базе данных изменилась структура таблиц, используемых модулем.
 
-  <queries>
-      <item>ALTER TABLE `?:products` ADD `search_field` varchar(255) NOT NULL DEFAULT 'custom'</item>
-      <item for="uninstall">ALTER TABLE `?:products` DROP `search_field`</item>
-  </queries>
-
-==========================
-Создание Upgrade Connector
-==========================
-
-Первое, что нам нужно сделать — это создать коннектор, при помощи которого **Upgrade Center App** будет связываться с нашим сервером обновлений.
-
-Создать его нужно по следующему пути: 
-
-*app/addons/[ADDON_NAME]/Tygh/UpgradeCenter/Connectors/Upgrade/Connector.php*
-
-В нашем же случае этот путь будет таким: 
-
-*app/addons/upgrade/Tygh/UpgradeCenter/Connectors/Upgrade/Connector.php*
-
-Коннектор должен реализовывать интерфейс **IConnector**. Создадим шапку файла и базовые функции:
-
-::
-
-  namespace Tygh\UpgradeCenter\Connectors\Upgrade;// "Upgrage" - is an add-on name.
-                                                  // If your add-on has "my_changes" name, so namespace will look like: Tygh\UpgradeCenter\MyChanges
-  use Tygh\UpgradeCenter\Connectors\IConnector as UCInterface;
-
-  /**
-   * Core upgrade connector interface
-   */
-  class Connector implements UCInterface
-  {
-      /**
-       * Prepares request data for request to Upgrade server (Check for the new upgrades)
-       *
-       * @return array Prepared request information
-       */
-      public function getConnectionData()
-      {
-      }
-
-      /**
-       * Processes the response from the Upgrade server.
-       *
-       * @param  string $response            server response
-       * @param  bool   $show_upgrade_notice internal flag, that allows/disallows Connector displays upgrade notice (A new version of [product] available)
-       * @return array  Upgrade package information or empty array if upgrade is not available
-       */
-      public function processServerResponse($response, $show_upgrade_notice)
-      {
-      }
-
-      /**
-       * Downloads upgrade package from the Upgade server
-       *
-       * @param  array  $schema       Package schema
-       * @param  string $package_path Path where the upgrade pack must be saved
-       * @return bool   True if upgrade package was successfully downloaded, false otherwise
-       */
-      public function downloadPackage($schema, $package_path)
-      {
-      }
-  }
-
-Первое, что нам нужно — это реализовать возможность сообщить **Upgrade Center App** о том, как можно узнать у нашего сервера обновлений о наличии новых версий. Реализуем функцию ``getConnectionData``.
-
-Небольшое отступление. Скорее всего нам понадобятся текущие настройки аддона (например, введенная для аддона лицензия или его текущая версия). Сделать это можно с помощью переменной класса ``protected`` ``$settings = array();`` и метода класса ``__contruct()``.
-
-::
-
-  class Connector implements UCInterface
-  {
-    protected $settings = array();
-
-    public function __construct()
-    {
-        // Initial settings
-        $addon_scheme = SchemesManager::getScheme('upgrade');
-
-        $this->settings = array(
-            'upgrade_server' => 'http://demo.cs-cart.com/index.php',
-            'addon_version' => $addon_scheme->getVersion()
-        );
-    }
-    // Other code
-  }
-
-Функция ``getConnectionData`` ничего не принимает и должна вернуть нам массив, содержащий информацию о методе доступа к серверу, URL и информации, которую нужно отправить на него (можно дополнительно указать headers). В доп. информации в запросе к серверу можно указывать любые необходимые данные (версии, лицензии, хеши и тд)
-
-::
-
-  public function getConnectionData()
-  {
-      $request_data = array(
-          'method' => 'get',
-          'url' => $this->settings['upgrade_server'], // We specified this setting before in the __construct method
-          'data' => array(
-              'dispatch' => 'updates.check',
-              'product_version' => PRODUCT_VERSION,
-              'edition' => PRODUCT_EDITION,
-              'product_build' => PRODUCT_BUILD,
-              'lang' => CART_LANGUAGE,
-              'addon_version' => $this->settings['addon_version'],
-              'some_custom_field' => TIME,
-              'hello' => 'world',
-              'super_secure_hash' => sha1(time()),
-          ),
-          'headers' => array(
-              'Content-type: text/xml'
-          )
-      );
-
-      return $request_data;
-  }
-
-Каждый раз, когда "Центр обновлений" будет делать проверку на наличие новых обновлений, будет запускаться эта фукцния. "Центр обновлений" сделает запрос на наш сервер, согласно полученной информации и вернет нам ответ, который получил. Реализуем фукнцию обработки ответа ``processServerResponse``. На вход эта функция получает 2 параметра:
-
-* ``$response`` — непосредственно ответ сервера.
-* ``$show_upgrade_notice`` — дополнительный флаг, сообщающий, стоит ли нам показывать сообщение о новой версии.
-
-Должна вернуть массив, содержащий необходимую информацию о пакете (будет описан ниже).
-
-Предположим, что сервер возвращает нам ответ в формате XML:
-
-::
-
-  <?xml version="1.0"?>
-  <upgrade>
-      <available>Y</available>
-      <package>
-          <file>upgrade_from_1.1_to_1.2.tgz</file>
-          <name>Upgrade for the "Upgrade add-on" (from 1.1 to 1.2)</name>
-          <description>New version of the addon!
-
-              Changelog:
-              - PHP warning was displayed when calculating cart. Fixed.
-              - Taxes no longer available</description>
-          <from_version>1.1</from_version>
-          <to_version>1.2</to_version>
-          <timestamp>1412366886</timestamp>
-          <size>18123</size>
-          <custom_field>Hello CS-Cart</custom_field>
-          <my_sha_key>123</my_sha_key>
-      </package>
-  </upgrade>
-
-Тогда будем обрабатывать его следующим образом:
-
-::
-
-  $parsed_data = array();
-  $data = simplexml_load_string($response);
-
-  if ((string) $data->available == 'Y') {
-      $parsed_data = array(
-          'file' => (string) $data->package->file, // Required field
-          'name' => (string) $data->package->name, // Required field
-          'description' => (string) $data->package->description, // Required field
-          'from_version' => (string) $data->package->from_version, // Required field
-          'to_version' => (string) $data->package->to_version, // Required field
-          'timestamp' => (int) $data->package->timestamp, // Required field
-          'size' => (int) $data->package->size, // Required field, size in bytes
-          'my_very_important_field' => (string) $data->package->my_sha_key,
-          'custom_field' => (string) $data->package->custom_field,
-      );
-
-      if ($show_upgrade_notice) {
-          fn_set_notification('W', __('notice'), __('text_upgrade_available', array(
-              '[product]' => 'Upgade add-on',
-              '[link]' => fn_url('upgrade_center.manage')
-          )), 'S');
-      }
-  }
-
-  return $parsed_data;
-
-Есть набор обязательных полей и набор дополнительных (их можно использовать позже, например сделать проверку по хешу файла, чтобы убедиться, что он не "битый" или сделать доп. проверку лицензии аддона и т.д). Список обязательных полей небольшой:
-
-* ``file`` — название архива с обновлением (позже файл будет создан именно с этим именем).
-* ``name`` — имя пакета обновления. Будет показано на списке доступных обновлений в "Центре обновлений".
-* ``description`` — описание пакета. Будет показано на списке доступных обновлений в "Центре обновлений".
-* ``from_version`` — с какой версии обновление.
-* ``to_version`` — до какой версии обновление.
-* ``timestamp`` — время создания пакета обновления.
-* ``size`` — размер пакета в байтах.
-
-Необязательные поля могут быть любого типа и содержать любую информацию.
-
-После этого Upgrade Center создаст схему для нашего пакета и поместит ее в *var/upgrades/packages/[ADDON_NAME]/schema.json*.
-
-При помощи этой схемы Upgrade Center будет скачивать непосредственно сам пакет обновлений (по умолчанию он его не скачивает из-за того, что размер пакета может достигать больших значений).
-
-Для скачивания пакета реализуем последнюю фукнцию интерфейса ``downloadPackage``. Фукнция принимает 2 значения:
-
-* ``$schema`` — сохраненная ранее схема пакета.
-* ``$package_path`` — путь, куда должен быть сохранен файл.
-
-Вернуть нужно массив из двух значений. Первое булевое — результат. Второе — доп. сообщение, которое будет отображено в случае неудачи.
-
-::
-
-  return array(true, '');
-  return array(false, __('sha_key_is_invalid'));
-  public function downloadPackage($schema, $package_path)
-  {
-      // Make some custom validation
-      if ($schema['my_very_important_field'] == '123' && !empty($schema['custom_field'])) {
-          $url_data = fn_get_url_data($this->settings['upgrade_server'] . '?dispatch=download&from_version=' . $schema['from_version']);
-
-          if (!empty($url_data)) {
-              $result = fn_copy($url_data['path'], $package_path);
-          } else {
-              $result = false;
-          }
-          $message = $result ? '' : __('failed');
-
-          return array($result, $message);
-      } else {
-          return array(false, __('sha_key_is_invalid'));
-      }
-  }
-
-================
-Пакет обновлений
-================
-
-Теперь мы сможем передать наши пакеты обновлений. Осталось их создать. Предположим, что в новой версии модуля мы поправили какие-то ошибки в файле **func.php** и добавили новый файл **config.php**. Плюс мы решили добавить еще одно поле в таблицу ``cscart_products``.
-
-Значит нам нужно обновить 3 файла:
-
-* **func.php** (обновление)
-* **addon.xml** (обновление, нужно поправить структуру таблицы и версию аддона)
-* **config.php** (создание)
-
-Еще нужно изменить таблицу ``cscart_products`` (добавить новое поле). Для этого мы воспользуемся миграцией.
-
-Также мы решили проверить, создал ли пользователь файл **robots.txt** (предположим, вы описывали это в инструкции к установке предыдущей версии аддона). Новая версия аддона будет автоматически дописывать туда данные, поэтому наличие файла вам просто необходимо (и файл должен быть доступным *для записи*).
-
-И, конечно же, мы хотим добавить несколько языковых переменных.
+     Это изменение не обязательно приведёт к поломке модуля — мы сохраняем обратную совместимость между релизами CS-Cart. Но если модуль использует прямые запросы к таблицам вместо функций ядра, то модуль может перестать работать.
 
 .. note::
 
-    "Центр обновлений" добавляет только новые языковые переменные. **Если нужно обновить старую переменную, используйте миграции**.
+    Примерно в то же время, когда мы выпускаем новую версию CS-Cart/Multi-Vendor, мы также анонсируем изменения ядра :doc:`в специальном разделе документации для разработчиков </developer_guide/addons/compatibility/index>`.
 
-Создаем базовую структуру пакета обновлений:
+.. _addon-upgrade-distribution:
 
-::
+=================================
+Куда загружать пакеты обновлений?
+=================================
 
-  ┌── languages/
-  ├── migrations/
-  ├── package/
-  ├── package.json
-  └── validators/
+Если хотите, чтобы покупатели могли обновить модуль через Центр обновлений, то есть два способа:
 
-Некоторые папки могут отсутствовать (допустим, у вас нет языков и миграций, или же в пакете только миграции). **package.json** пока пустой файл. Его описание мы сделаем позже.
+* **CS-Cart Marketplace.** Там есть :doc:`все необходимые инструменты для сборки и распространения обновлений </developer_guide/addons/marketplace/addon_upgrade>`. Пока эти инструменты в закрытом бета-тестировании; чтобы получить доступ, напишите нам на marketplace@cs-cart.com.
 
-Заполним папку *package*. Эта папка содержит в себе новые файлы и представляет собой корень магазина. Поэтому, чтобы добавить наши файлы мы создаем подпапки и кладем туда новые файлы:
+* **Собственный сервер обновлений.** Он нужен, если вы используете собственный механизм лицензирования и раздачи пакетов обновлений. Такой подход потребует от вас специальным образом подготовить модуль и самостоятельно собирать пакеты обновлений. Инструкции есть дальше в статье.
 
-::
+=======================================================================
+Как сделать модуль совместимым только с определёнными версиями CS-Cart?
+=======================================================================
 
-  ├── package
-  │   └── app
-  │       └── addons
-  │           └── upgrade
-  │               ├── addon.xml
-  │               ├── config.php
-  │               └── func.php
+В файле **addon.xml** можно задать все требования модуля: :doc:`поддерживаемые версии CS-Cart и/или Multi-Vendor, PHP и его расширения </developer_guide/addons/scheme/addon_compatibility>`, :doc:`необходимые и конфликтующие модули </developer_guide/addons/scheme/addon_dependencies>`.
 
-Файлы готовы. Теперь обновляем языки. Структура папки повторяет структуру crowdin-пакета. В нашем случае мы обновим лишь английский язык, добавив несколько языковых переменных и обновим название и версию аддона:
+.. important::
 
-::
+    Требования в файле **addon.xml** проверяются только :ref:`в процессе установке модуля <install-addon-process>`. Они НЕ проверяются при обновлении.
 
-  ├── languages
-  │   └── en
-  │       └── core.po
+Если после обновления требования модуля поменялись, то недостаточно поменять **addon.xml**. Чтобы клиенты не установили обновление, которое не будет работать с их версией, у вас есть два варианта:
 
-**core.po**
+* передавайте версию CS-Cart/Multi-Vendor на :ref:`ваш сервер обновлений <addon-upgrade-server>`, и пусть сервер решает, предлагать ли обновление;
 
-  msgid ""
-  msgstr "Project-Id-Version: tygh"
-  "Content-Type: text/plain; charset=UTF-8\n"
-  "Language-Team: English\n"
-  "Language: en_US"
+* добавьте в пакет обновления :ref:`валидатор <addon-upgrade-validators>`, и пусть он не даёт установить обновление, если не выполнены определённые требования.
 
-  msgctxt "Languages::new_language_variable"
-  msgid "Upgrade completed"
-  msgstr "Upgrade completed"
+.. _addon-upgrade-connector:
 
-  msgctxt "Addons::name::upgrade"
-  msgid "Demo upgrade add-on v1.2"
-  msgstr "Demo upgrade add-on v1.2"
+=====================================================
+Как подготовить модуль к работе с Центром обновлений?
+=====================================================
 
-  msgctxt "Addons::description::upgrade"
-  msgid "This is description of the upgraded addon v1.2"
-  msgstr "This is description of the upgraded addon v1.2"
+CS-Cart и Multi-Vendor проверяют наличие обновлений в 2 случаях:
 
-Теперь создаем **валидатор**, который проверит наличие файла **robots.txt** в корне магазина. Создадим файл с произвольным именем, например **CheckFileValidator.php**:
+#. Когда кто-то заходит в панель администратора (но только если в **Настройки → Общие** включена настройка *Проверять наличие обновлений автоматически*).
 
-::
+#. Когда кто-то заходит в **Администрирование → Центр обновлений**.
 
-  └── validators
-      └── CheckFileValidator.php
+Вот несколько вещей, которые нужно учесть при адаптации модуля для работы с Центром обновлений:
 
-Наш валидатор должен реализовывать интерфес **IValidator** и иметь 2 обязательные функции:
+* Чтобы проверять наличие обновлений и скачивать их, в модуле должен быть коннектор Центра обновлений. Этот коннектор — класс, который должен быть размещен в *app/addons/[sample_addon]/Tygh/UpgradeCenter/Connectors/[SampleAddon]/Connector.php*, где
 
-* ``getName()``
-* ``check($schema, $request)``
+  * ``[sample_addon]`` — идентификатор модуля;
 
-**CheckFileValidator.php**
+  * ``[SampleAddon]`` — идентификатор модуля, записанный в CamelCase.
 
-::
+* Коннектор должен расширять класс ``\Tygh\UpgradeCenter\Connectors\BaseAddonConnector`` и реализовывать интерфейс ``\Tygh\UpgradeCenter\Connectors\IConnector``.
 
-  namespace Tygh\UpgradeCenter\Validators;
+* Адрес сервера обновлений указывается в поле ``url`` результата вызова метода ``Connector::getConnectionData``.
 
-  use Tygh\Registry;
+* Данные, передаваемые на сервер обновлений для проверки наличия обновлений, задаются в поле ``data`` результата вызова метода ``Connector::getConnectionData``. Поле ``data`` представляет из себя массив вида ``parameter_name => parameter_value``.
 
-  /**
-   * Upgrade validators: Check collisions
-   */
-  class CheckFileValidator implements IValidator
-  {
-      /**
-       * Global App config
-       *
-       * @var array $config
-       */
-      protected $config = array();
+* Непосредственное скачивание пакета обновлений реализуется в методе ``Connector::downloadPackage``.
 
-      /**
-       * Validator identifier
-       *
-       * @var array $name ID
-       */
-      protected $name = 'Demo upgrade: File checker';
+Вот пример коннектора с комментариями:
 
-      /**
-       * Validate specified data by schema
-       *
-       * @param  array $schema  Incoming validator schema
-       * @param  array $request Request data
-       * @return array Validation result and Data to be displayed
-       */
-      public function check($schema, $request)
-      {
-          $file_to_be_created = $this->config['dir']['root'] . '/robots.txt';
+:download:`Скачать пример Connector.php <files/Connector.php>`
 
-          if (!file_exists($file_to_be_created)) {
-              return array(false, 'Create <strong>' . $file_to_be_created . '</strong> file first to continue upgrade');
-          } else {
-              return array(true, '');
-          }
-      }
+.. literalinclude:: files/Connector.php
 
-      /**
-       * Gets validator name (ID)
-       *
-       * @return string Name
-       */
-      public function getName()
-      {
-          return $this->name;
-      }
+=================================
+Как подготовить пакет обновлений?
+=================================
 
-      public function __construct()
-      {
-          $this->config = Registry::get('config');
-      }
-  }
+-------------------
+Основная информация
+-------------------
 
-Количество валидаторов в пакете не ограничено. Можно проверить что угодно. Желательно разделять валидаторы по типам их проверок, а не делать множество проверок в одном валидаторе.
+Для сборки пакета обновлений нужны два архива: со старой и новой версиями модуля. Чтобы собрать пакет обновлений, используйте следующие команды `из нашего SDK <https://github.com/cscart/sdk/>`_:
 
-=================
-Создание миграций
-=================
+.. code-block:: console
 
-Миграции нужны, чтобы приводить данные в базе и в файлах содержащих пользовательские данные в актуальное состояние и создавать апгрейды автоматически. Миграцию нужно создавать при любых изменених, которые затрагивают базу или файлы содержащие пользовательские данные:
+  cscart-sdk addon:export   #экспортировать архив с текущей версией модуля
 
-* новая таблица или удаление таблицы;
+  cscart-sdk addon:build_upgrade   #собрать пакет обновлений
 
-* новое поле, переименование поля или удаление поля;
+.. important::
 
-* новые данные (например, настройки);
+    Чтобы собирать обновления c помощью SDK, придерживайтесь следующей структуры модуля при разработке:
 
-* новая/измененная языковая переменная;
+.. code-block:: none
 
-* изменения в файлах **config.local.php**, **.htaccess**, **manifest.json**;
+    ├── app
+    │   └── addons
+    │       └── [sample_addon]
+    │           ├── addon.xml
+    │           ├── config.php
+    │           ├── func.php
+    │           ├── Tygh
+    │           │   └── UpgradeCenter
+    │           │       └── Connectors
+    │           │           └── [SampleAddon]
+    │           │               └── Connector.php
+    │           └── upgrades
+    │               ├── [version1]
+    │               │   ├── migrations
+    │               │   │   ├── 467676233_migration1.php
+    │               │   │   └── 467676233_migration2.php
+    │               │   │
+    │               │   ├── validators
+    │               │   │   ├── validator1.php
+    │               │   │   └── validator2.php
+    │               │   │
+    │               │   ├── scripts
+    │               │   │   ├── pre_script.php
+    │               │   │   └── post_script.php
+    │               │   │
+    │               │   ├── extra_files
+    │               │   │   ├── extra_file1.php
+    │               │   │   └── extra_file2.php
+    │               │   │
+    │               │   └── extra
+    │               │       └── extra.php
+    │               │
+    │               ├── [version2]
+    │                   │   ├── migrations
+    │                   │   │   ├── 467676233_migration1.php
+    │                   │   │   └── 467676233_migration2.php
+    │                   │   │
+    │                   │   ├── validators
+    │                   │   │   ├── validator1.php
+    │                   │   │   └── validator2.php
+    │                   │   │
+    │                   │   ├── scripts
+    │                   │   │   ├── pre_script.php
+    │                   │   │   └── post_script.php
+    │                   │   │
+    │                   │   ├── extra_files
+    │                   │   │   ├── extra_file1.php
+    │                   │   │   └── extra_file2.php
+    │                   │   │
+    │                   │   ├── extra
+    │                   │   │   └── extra.php
+    ...
+    
+* ``[sample_addon]`` — идентификатор модуля;
 
-* изменения в сессионных данных. Пример — проверка валидации сессии: параметр ``user_agent`` хранил строку, а вы сделали так, что хранится md5() этой строки. Соответственно после апгрейда сессия проверку не пройдет и пользователь будет разлогинен. Лучше всего для таких целей использовать ``pre`` и ``post`` скрипты в апгрейде, а не миграции.
+* ``[SampleAddon]`` — идентификатор модуля в  CamelCase;
 
-Для создания миграций используется `phinx <http://docs.phinx.org/en/latest/index.html>`_. О том, как создавать миграции, можно почитать `тут <http://docs.phinx.org/en/latest/migrations.html>`_.
+* ``[version1]`` — номер версии, например 1.1.0.
 
-В результате мы должны получить примерно такой файл: **20141022083711_addon_update_version.php**, в котором будет создан базовый класс миграции с методами *up*, *down*, *change*. Нас интересуют 2 из них:
+* ``[version2]`` — номер версии, например 1.1.1.
 
-* ``up`` - при обновлении.
-* ``down`` - при downgrade (теоретически, этот метод не будет использоваться).
+* ``app/addons/[sample_addon]/upgrades/[version]/migrations`` — папка с миграциями, которые надо применить при обновлении до [version].
 
-**20141022083711_addon_update_version.php.php**
+* ``app/addons/[sample_addon]/upgrades/[version]/validators`` — папка с валидаторами, которые должны выполнить свои проверки перед обновлением до [version].
 
-::
+* ``app/addons/[sample_addon]/upgrades/[version]/scripts`` — папка с pre/post-скриптами, которые нужно выполнить перед или после обновления до [version].
 
-  use Phinx\Migration\AbstractMigration;
+* ``app/addons/[sample_addon]/upgrades/[version]/extra_files`` — папка с дополнительными файлами, которые используются только в процессе обновления и не добавляются в установку CS-Cart/Multi-Vendor.
 
-  class AddonUpdateVersion extends AbstractMigration
-  {
-      /**
-       * Change Method.
-       *
-       * More information on this method is available here:
-       * http://docs.phinx.org/en/latest/migrations.html#the-change-method
-       *
-       * Uncomment this method if you would like to use it.
-       *
-      public function change()
-      {
-      }
-      */
+* ``app/addons/[sample_addon]/upgrades/[version]/extra/extra.php`` — файл для расширения **package.json** пакета обновлений.
 
-      /**
-       * Migrate Up.
-       */
-      public function up()
-      {
-          $options = $this->adapter->getOptions();
-          $pr = $options['prefix'];
+  .. note::
 
-          $this->execute("UPDATE {$pr}addons SET `version` = '1.2' WHERE `addon` = 'upgrade'");
-          $this->execute("ALTER TABLE {$pr}products ADD `new_search_field` int(11) NOT NULL DEFAULT 0");
-      }
+      Файлы и папки в *app/addons/[sample_addon]/upgrades/[version]* не обязательны. Например, если у новой версии нет изменений в базе данных, то нет необходимости создавать папку с миграциями.
 
-      /**
-       * Migrate Down.
-       */
-      public function down()
-      {
-          $options = $this->adapter->getOptions();
-          $pr = $options['prefix'];
+--------
+Миграции
+--------
 
-          $this->execute("UPDATE {$pr}addons SET `version` = '1.1' WHERE `addon` = 'upgrade'");
-          $this->execute("ALTER TABLE {$pr}products DROP `new_search_field`");
-      }
-  }
+Миграции применяются *во время обновления* и меняют структуру таблиц в базе данных и сами данные в них.
 
-В этой миграции мы обновили версию модуля и добавили новое поле. Миграции также нужно разделять по файлам (в примере 2 миграции объеденины в общую, но по логике, должно быть 2 разных миграции).
+Для написания миграций используйте Phinx. Обратите внимание, что в CS-Cart старая версия Phinx (0.4.3), поэтому не все инструкции из современной документации могут подойти. Вот старая документация Phinx 0.4.3 о:
 
-Осталось теперь заполнить файл **package.json**, и пакет готов. **package.json** представляет из себя JSON файл с описанием всех файлов, входящих в пакет обновления. Мы должны указать измененные файлы (с MD5 хешем старого файла. Он нужен для того, чтобы проверить, а не изменил ли пользователь этот файл, чтобы сообщить ему о коллизиях).
+* `командах <https://github.com/cakephp/phinx/blob/v0.4.3/docs/commands.rst>`_;
 
-::
+* `написании миграций <https://github.com/cakephp/phinx/blob/v0.4.3/docs/migrations.rst>`_. 
 
-  {
-      "files": {
-          "app/addons/upgrade/addon.xml": {"status": "changed", "hash": "b0911a0d64453ab06b0872c9eb6fbc34"},
-          "app/addons/upgrade/func.php": {"status": "changed", "hash": "4fefb0fed1496f179a14b7e872eb16d9"},
-          "app/addons/upgrade/config.php": {"status": "new"},
-          "app/addons/upgrade/somefile.txt": {"status": "deleted", "hash": "df32e836628b51af570dd2425cb3e97e"}
-      },
-      "migrations": [
-          "20141022083711_addon_update_version.php"
-      ],
-      "languages": [
-          "en"
-      ],
-      "validators": [
-          "CheckFileValidator"
-      ]
-  }
+Класс миграции должен содержать метод ``up``, который будет выполняться в процессе обновления.
 
-Готово. Запаковываем файл с расширением TGZ и отдаем нашему коннектору.
+Например::
 
-::
+    use Phinx\Migration\AbstractMigration;
+    
+    class AddonsSampleAddonUpdateVersion extends AbstractMigration
+    {
+        public function up()
+        {
+            $options = $this->adapter->getOptions();
+            $pr = $options['prefix'];
+    
+            $this->execute("UPDATE {$pr}addons SET version = '1.1' WHERE addon = 'sample_addon'");
+        }
+    }
 
-  ├── languages
-  │   └── en
-  │       └── core.po
-  ├── migrations
-  │   └── 20141022083711_addon_update_version.php
-  ├── package
-  │   └── app
-  │       └── addons
-  │           └── upgrade
-  │               ├── addon.xml
-  │               ├── config.php
-  │               └── func.php
-  ├── package.json
-  └── validators
-      └── CheckFileValidator.php
+Разделяйте изменения по отдельным миграциям; каждая миграция должна содержать одно логически завершённое действие.
+
+**Не используйте** чистый SQL в миграциях для изменения структуры таблицы; используйте только `методы Phinx <https://github.com/cakephp/phinx/blob/v0.4.3/docs/migrations.rst#working-with-columns>`_.
+
+**Не используйте** функции ядра CS-Cart в миграциях: нет гарантии, что они будут доступны во время обновления модуля. В результате процесс обновления может прерваться, а магазин — сломаться.
+
+.. _addon-upgrade-validators:
+
+----------
+Валидаторы
+----------
+
+Валидаторы проверяют *перед установкой обновления*, соответствует ли магазин определённым требованиям. Каждый валидатор — отдельный класс в пространстве имён ``Tygh\UpgradeCenter\Validators``.
+
+Валидатор должен реализовывать интерфейс **IValidator** и содержать 2 обязательных метода:
+
+* ``getName()`` должен возвращать строку с отображаемым именем валидатора;
+
+* ``check($schema, $request)`` должен возвращать массив с двумя значениями:
+
+  * флаг (boolean), который означает, что проверка успешно пройдена;
+
+  * строка (string) с сообщением, которое отобразится, если результат проверки будет неудачным.
+
+Например::
+
+    <?php
+    
+    namespace Tygh\UpgradeCenter\Validators;
+    
+    /**
+     * Проверяет минимальную версию PHP.
+     */
+    class PhpVersionValidator implements IValidator
+    {
+        protected $minimal_php_version = '5.6.0';
+    
+        /** @inheritdoc */
+        public function check($schema, $request)
+        {
+            if (version_compare(PHP_VERSION, $this->minimal_php_version) == -1) {
+                return [
+                    false,
+                    __('checking_php_version_is_not_suitable', [
+                        '[version]' => PHP_VERSION,
+                        '[min]'     => $this->minimal_php_version,
+                        '[max]'     => '7.x',
+                    ]),
+                ];
+            }
+    
+            return [true, []];
+        }
+    
+        /** @inheritdoc */
+        public function getName()
+        {
+            return 'PHP Version';
+        }
+    }
+
+-------
+Скрипты
+-------
+
+Скрипты расширяют или меняют то, как Центр обновлений работает с вашим пакетом обновлений при обновлении. Есть 2 типа скриптов:
+
+* перед обновлением: скрипт **pre_script.php** выполняется после того, как прошли все проверки валидаторов;
+
+* после обновления: скрипт **post_script.php** выполняется после того, как установлен пакет обновлений. Пост-скрипт в основном используется для того, чтобы показывать какие-то уведомления после обновления. Чтобы сделать такое уведомление, добавьте новый элемент в массив ``$upgrade_notes`` в скрипте::
+
+    <?php
+    
+    $upgrade_notes[] = [
+        'title'   => 'Sample Add-on v1.1 Changes',
+        'message' => 'Sample Add-on v1.1 Changes Description',
+    ];
+
+Эти скрипты включены в контекст класса ``\Tygh\UpgradeCenter\App`` и могут использовать все свойства и методы этого класса. Также вы можете в них использовать все функции и классы CS-Cart.
+
+-----------------
+Папка Extra Files
+-----------------
+
+В папку *extra_files* вы можете положить файлы, которые используются только при обновлении и не добавляются в установку CS-Cart/Multi-Vendor.
+
+----------------------------------
+Расширение схемы пакета обновлений
+----------------------------------
+
+Чтобы расширить схему, напишите свой скрипт в файле **extra.php**. Скрипт должен возвращать массив. Этот массив сольётся с **package.json** пакета обновлений.
+
+Так вы можете добавлять любые дополнительные данные в пакет обновлений. Эти данные можно использовать в процессе обновления в пре- и пост-скриптах.
+
+Например, вот как можно предложить клиентам пропустить встроенное в CS-Cart резервное копирование при установке обновления::
+
+    <?php
+    
+    return [
+        'backup' => [
+            'is_skippable'    => true,
+            'skip_by_default' => true,
+        ],
+    ];
+
+.. _addon-upgrade-server:
+
+============================================
+Как настроить собственный сервер обновлений?
+============================================
+
+.. note::
+
+    Свой сервер обновлений настраивать необязательно — есть и :ref:`другой путь <addon-upgrade-distribution>`. Но если ваши модули используют свой механизм лицензирования, то стоит завести свой сервер обновлений.
+
+Когда CS-Cart отправляет запрос о наличии обновлений, сервер обновлений должен вернуть XML следующего вида:
+
+.. code-block:: xml
+
+    <?xml version="1.0" encoding="utf-8" ?>
+    <update>
+        <packages>
+            <item id="unique_update_package_id">
+                <file>update_package_name.zip</file>
+                <name>Update package name</name>
+                <description><![CDATA[Update package description.]]></description>
+                <from_version>1.0</from_version>
+                <to_version>1.1</to_version>
+                <timestamp>1547199854</timestamp>
+                <size>2048</size>
+            </item>
+        </packages>
+    </update>
+
+* ``update/packages/item`` содержит в себе информацию о доступном обновлении;
+
+* ``update/packages/item@id`` — уникальный идентификатор пакета обновлений. Когда :ref:`коннектор <addon-upgrade-connector>` передаёт этот идентификатор серверу обновлений, то сервер должен предоставить архив с пакетом обновлений;
+
+* ``update/packages/item/file`` — название архива с пакетом обновлений;
+
+* ``update/packages/item/name`` — заголовок пакета обновлений (отобразится в Центре обновлений);
+
+* ``update/packages/item/description`` — описание пакета обновлений. Может содержать HTML-разметку;
+
+* ``update/packages/item/from_version`` — текущая версия модуля;
+
+* ``update/packages/item/to_version`` — версия, до которой будет обновлен модуль;
+
+* ``update/packages/item/timestamp`` — дата создания пакета обновлений в формате UNIX timestamp;
+
+* ``update/packages/item/size`` — размер пакета обновлений в байтах.
+
+  .. note::
+
+      Если доступных обновлений нет, сервер должен вернуть пустой ответ.
+
+Вот как данный пакет обновлений отобразится в Центре обновлений:
+
+.. fancybox:: img/addon_upgrade_package.png
+    :alt: Пакет обновления модуля в Центре обновлений.

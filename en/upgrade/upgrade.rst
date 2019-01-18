@@ -177,7 +177,7 @@ Here is the approximate package structure:
 
 	.. important:: When installing languages from the Upgrade package, only new language variables will be installed. The existing ones will not be updated. If you want to update the existing language variable, use a new name or create a migration.
 
-*	The **migrations** directory contains phinx :ref:`migrations <migrations>`. They are applied in the file name *TIMESTAMP* order. Conceptually, migrations should work only with DB. But in fact they work in the cart environment and can play different roles. However, use the *PRE/POST* scripts to work with files.
+*	The **migrations** directory contains phinx `migrations <https://github.com/cakephp/phinx/blob/v0.4.3/docs/migrations.rst>`_. They are applied in the file name *TIMESTAMP* order. Conceptually, migrations should work only with DB. But in fact they work in the cart environment and can play different roles. However, use the *PRE/POST* scripts to work with files.
 
 *	The **scripts** directory contains the *PRE/POST* scripts. Scripts running depends on the file name. They are selected according to the ``pre_`` and ``post_`` prefixes. ``PRE`` scripts are launched before starting the update (but after Validators). ``POST`` scripts - after the update is over.
 
