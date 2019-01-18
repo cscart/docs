@@ -46,8 +46,6 @@ To add a custom gift certificate status:
 
    * **E-mail header**—the header of an email message that is sent to customers automatically when the gift certificate status changes to this status.
 
-   * **Color**—the color to be used for this status on the certificate list in the Administration panel.
-
    * **Notify customer**—if you tick this checkbox, the customer receives an automatic email notification when the gift certificate status changes to this status.
 
 #. Click the **Create** button.
