@@ -151,3 +151,9 @@ Service Packs
 ---------
 
 [!] There was a problem with a payment method specific to the Russian version of CS-Cart. Fixed in Russian version; version number incremented in other versions.
+
+---------
+4.9.2.SP4
+---------
+
+[*] Add-ons: Back-End Sign-In via Google, Social Login: Changes were made to ensure that the add-ons work properly even after the shutdown of Google+ API.
