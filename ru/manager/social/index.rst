@@ -411,7 +411,7 @@ Facebook
 
        [STORE_URL]/index.php?dispatch=auth.process&hauth_done=Facebook 
 
-    Например, *https://domain.com/index.php?dispatch=auth.process&hauth_done=Facebook*.
+   Например, *https://domain.com/index.php?dispatch=auth.process&hauth_done=Facebook*.
 
 #. Перейдите в основные настройки вашего приложения на Facebook. Скопируйте **Идентификатор приложения** и **Секрет приложения** и вставьте их в соответствующие поля провайдера Facebook в CS-Cart. Сохраните свои изменения на стороне CS-Cart.
 
