@@ -1,26 +1,20 @@
-************************
-Social Network Providers
-************************
+**********************************************************************************
+How To: Allow Customers to Sign In to Your Store with Accounts from Other Services
+**********************************************************************************
 
-Manage the list of social network providers available in your store under **Website → Social login**. Customers can log in on you store using these providers.
+Customers can use social networks and other services to sign in to your store. We will refer to all these services as *"social login providers"*. CS-Cart already has a few providers by default, but you'll need to add and configure them on the **Website → Social login** page.
+
+Every added provider has a status: *Active* or *Disabled*. Once a provider is active and configured properly, customers will be able to select it when signing in to their account or registering a new one. If you disable a provider, you preserve its settings, but prevent it from being shown to customers on the storefront.
 
 .. important::
 
     The **Social login** section will appear under **Website** only if you activate **Social login** under **Add-ons → Manage add-ons**.
 
-Use the **+ button** in the top right corner of a page to add new provider or click the **gear button** of the particular provider and choose the required action to edit or delete it.
- 
-When you add or edit a provider, you can see the following settings. The list of settings can vary depending on a provider:
+==================================
+How to Configure Various Providers
+==================================
 
-* **Provider**—choose the social network provider. The button for registration via this provider will be added to the user's sign in form.
-
-* **Status**—the status of the provider in your store—*Active* or *Disabled*.
-
-==========================
-Provider-Specific Settings
-==========================
-
-When you select a provider, additional settings will appear. This is the list of provider-specific settings:
+When you select a provider, additional settings will appear. Follow the instructions below to set up a provider.
 
 ------
 Google
@@ -38,15 +32,33 @@ Google
 Facebook
 --------
 
-* **ID**—the **App ID** given to you after creating an application at `Facebook.com <https://developers.facebook.com/apps>`_.
+#. Register at the `Facebook for Developers <https://developers.facebook.com/apps>`_ portal.
 
-* **Secret key**—Secret key given to you after creating an application at `Facebook.com <https://developers.facebook.com/apps>`_.
+#. Go to `My Apps <https://developers.facebook.com/apps/>`_ and add a new app. Use the same name for the app as for your store—customers will see the app name when they try to sign in via Facebook, so the store name will look natural there.
 
-.. important::
+#. Find and add the **Facebook Login** product to your application. You may get an offer to set it up once you create the application, or on the dashboard; or you can just use the **Products** section.
 
-    To finish the setup you need to go to `Facebook.com <https://developers.facebook.com/apps>`_. Open your app page, and switch to the **Facebook Login**. At this tab disable the **Use Strict Mode for Redirect URIs** option, or in the **Valid OAuth redirect URIs** field enter the **URI** such as [STORE_URL]/index.php?dispatch=auth.process&hauth_done=Facebook. For example, https://domain.com/index.php?dispatch=auth.process&hauth_done=Facebook
+#. Open the settings of the **Facebook Login** product. You'll need to specify the value for the **Valid OAuth Redirect URIs** setting, then save your changes on the Facebook end.
 
-`Learn more about Facebook integration <https://hybridauth.github.io/hybridauth/userguide/IDProvider_info_Facebook.html>`_ in HybridAuth User Guide.
+   The URI should look as follows:
+
+   .. code-block:: none
+
+       [STORE_URL]/index.php?dispatch=auth.process&hauth_done=Facebook
+
+   For example, *https://domain.com/index.php?dispatch=auth.process&hauth_done=Facebook*.
+
+#. Go to the basic settings of your Facebook application. Copy the **App ID** and **App Secret** and paste them into the corresponding fields of the Facebook provider in CS-Cart. Save your changes on the CS-Cart end.
+
+   .. important::
+
+       At this point, *your* Facebook account should be able to sign in to the store. But the application is still in development, so your customers won't be able to sign in via Facebook yet.
+
+#. To let customers sign in via Facebook, switch your application to live mode. Facebook may require additional actions before you do that (such as providing a link to your privacy policy).
+
+   .. image:: img/social_login_facebook.png
+       :align: center
+       :alt: Creating an application to make sign-in via Facebook work in a CS-Cart store.
 
 ------
 PayPal
