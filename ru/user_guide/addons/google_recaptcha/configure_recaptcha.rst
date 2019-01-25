@@ -13,15 +13,17 @@
 
    * **Site key** (ключ сайта) — один из двух обязательных реквизитов; нужен для отображения виджета reCAPTCHA в магазине.
 
-   * **Secret** — один из двух обязательных реквизитов; магазин использует его, чтобы подключиться к серверу reCAPTCHA и проверить, является ли пользователь ботом. В целях безопасности, Google рекомендует никому не сообщать свой **secret**.
+   * **Secret** — один из двух обязательных реквизитов; магазин использует его, чтобы подключиться к серверу reCAPTCHA и проверить, является ли пользователь ботом. В целях безопасности Google рекомендует никому не сообщать свой secret.
 
-   .. note::
+     *Примечания:*
 
-       Получить **site key** and **secret** можно `на этой странице <https://www.google.com/recaptcha/admin>`_. Вам понадобится ввести доменное имя своего магазина; подробности можно узнать `в статье от Google на английском языке <https://developers.google.com/recaptcha/docs/domain_validation>`_.
+     * Получить site key и secret можно `на этой странице <https://www.google.com/recaptcha/admin>`_. Вам понадобится ввести доменное имя своего магазина; подробности можно узнать `в статье от Google на английском языке <https://developers.google.com/recaptcha/docs/domain_validation>`_.
 
-   .. important::
+     * При создании site key и secret обратите внимание, что модуль поддерживает только **reCAPTCHA v2: Checkbox**.
 
-       Если вы :doc:`встраиваете магазин на страницу Facebook </user_guide/look_and_feel/layouts/widget_mode/facebook_app>`, укажите ``widget.cart-services.com`` как один из доменов. Иначе reCAPTCHA не будет работать во встроенном магазине.
+     * Если у вас CS-Cart с несколькими витринами, и вы хотите использовать Google reCAPTCHA на всех, то вам понадобится только одна пара site key и secret. Просто укажите несколько доменов на стороне Google при создании site key и secret.
+
+     * Если вы :doc:`встраиваете магазин на страницу Facebook </user_guide/look_and_feel/layouts/widget_mode/facebook_app>`, укажите ``widget.cart-services.com`` как один из доменов. Иначе reCAPTCHA не будет работать во встроенном магазине.
 
    * **Оформление** — цвета виджета reCAPTCHA в вашем магазине. Можно выбрать *Светлое* (Light) или *Тёмное* (Dark) оформление. Примеры того, как виджет выглядит в разном оформлении, можно найти в `вопроснике по Google reCAPTCHA <https://developers.google.com/recaptcha/docs/faq#can-i-customize-the-recaptcha-widget>`_.
 

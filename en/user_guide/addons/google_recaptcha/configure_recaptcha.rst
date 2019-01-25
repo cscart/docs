@@ -14,15 +14,17 @@ How To: Set up Google reCAPTCHA in Your Store
 
    * **Site key**—one of the two required credentials; it is used to display the reCAPTCHA widget in your store.
 
-   * **Secret**—one of the two required credentials; it authorizes communication between your store and the reCAPTCHA server to verify a user's response. For security purposes, Google asks to keep the **secret** safe.
+   * **Secret**—one of the two required credentials; it authorizes communication between your store and the reCAPTCHA server to verify a user's response. For security purposes, Google asks not to tell your secret to anyone else.
 
-   .. note::
+     *Notes:*
 
-       To get **site key** and **secret**, go to `https://www.google.com/recaptcha/admin <https://www.google.com/recaptcha/admin>`_. You'll need to provide the domain name of your store; for more information, please refer to `this article by Google <https://developers.google.com/recaptcha/docs/domain_validation>`_.
+     * To get site key and secret, go to `https://www.google.com/recaptcha/admin <https://www.google.com/recaptcha/admin>`_. You'll need to provide the domain name of your store; for more information, please refer to `this article by Google <https://developers.google.com/recaptcha/docs/domain_validation>`_.
 
-   .. important::
+     * When creating a site key and secret, please note that the add-on currently supports only **reCAPTCHA v2: Checkbox**.
 
-       If you :doc:`embed your store into a Facebook page </user_guide/look_and_feel/layouts/widget_mode/facebook_app>`, please specify ``widget.cart-services.com`` as one of the domains. Otherwise reCAPTCHA won't work in your embedded store.
+     * If you use multiple storefronts in CS-Cart and want to use Google reCAPTCHA for all of them, then you will only need one site key and secret. Just specify multiple domains when setting up your site key and secret on the Google end.
+
+     * If you :doc:`embed your store into a Facebook page </user_guide/look_and_feel/layouts/widget_mode/facebook_app>`, please specify ``widget.cart-services.com`` as one of the domains. Otherwise reCAPTCHA won't work in your embedded store.
 
    * **Theme**—the color of the reCAPTCHA widget in your store; you can choose either *Light*, or *Dark*. Please refer to `Google reCAPTCHA FAQ <https://developers.google.com/recaptcha/docs/faq#can-i-customize-the-recaptcha-widget>`_ to see what those two themes look like.
 
