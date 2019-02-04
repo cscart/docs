@@ -1,0 +1,155 @@
+***********************
+CS-Cart 4.9.3 Changelog
+***********************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Google reCAPTCHA: A new setting was added; it allows you to choose countries where the standard CAPTCHA (entering the symbols) will be used instead of Google reCAPTCHA.
+
+[+] Admin panel: The search form was added to the mobile version.
+
+[+] Core: JavaScript: The ability to influence scroll speed when using the scrollToElm function was added.
+
+[+] Core: The ability to run the software on the Apache 2.4 web server was added.
+
+[+] Design: Email templates: Documents: The ability to insert documents into email templates via the template editor was added.
+
+[+] Design: Email templates: Documents: The ability to navigate to the document or snippet editing page from the template editor was added.
+
+[+] Design: Email templates: Documents: The ability to view the list of email templates using the document was added.
+
+[+] Hooks: Admin panel: Destinations (rate areas): A hook for destination name was added.
+
+[+] Installation: The validity check for the table_prefix was added.
+
+[+] Multi-Vendor: Add-ons: Vendor plans: The setting that allows to exclude taxes from commission calculation was added.
+
+[+] Products: Detail page: A mechanism for swiping product images on mobile devices was implemented.
+
+[+] Settings: Logging: A new setting was added to allow automatic removal of log entries after a certain number of days.
+
+[+] Upgrade center: The ability to skip files and database backup for add-on upgrades was added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Export/Import: Vendors: The “Fax” field was removed from the list of importable/exportable fields because vendors don't have this field anymore.
+
+[*] Hooks: Catalog: apply_option_modifiers_get_option_modifiers: The ability to get the list of modifiers and to change them was added.
+
+[*] Multi-Vendor Plus: Add-ons: Common products for vendors (Beta): The price of the cheapest offer of a common product is now displayed on the product list.
+
+[*] Multi-Vendor: The color of vendors' admin panel was changed.
+
+=========
+Bug Fixes
+=========
+
+[!] Add-ons: Advanced products import: The import couldn't be run from the preset list. Fixed.
+
+[!] Add-ons: Advanced product import: The import didn't work if any but the last one of the nodes specified in the "XML target node" setting of a preset occurred more than once in the imported file. Fixed.
+
+[!] Add-ons: Advanced products import: The import did not work if the extension of uploaded file was in upper case. Fixed.
+
+[!] Add-ons: Buy together: PHP notices occurred during the editing of an order with a product combination. Fixed.
+
+[!] Add-ons: PayPal payments: 3D Secure details were not passed for payments performed with PayPal Pro. Fixed.
+
+[!] Add-ons: PayPal payments: Depending on the cURL settings on the server, the statuses of orders paid via PayPal weren't changed automatically even after an IPN had been received. Fixed.
+
+[!] Add-ons: PayPal payments: If secure connection was used in the administration panel, then a security warning appeared during the configuration process of a payment method via the “Connect to PayPal” button. Fixed.
+
+[!] Add-ons: Product variations: Features were not displayed for variations under certain conditions. Fixed.
+
+[!] Add-ons: SEO: Double URL encoding led to an invalid URL request. Fixed.
+
+[!] Add-ons: SEO: Some symbols of the Polish alphabet were not converted to the corresponding symbols of the English alphabet in links. Fixed.
+
+[!] Add-ons: SEO: The "Use single URL for all languages" settings didn't work properly in some cases. Fixed.
+
+[!] Add-ons: Vendor data premoderation: Product variations (Beta): When products were approved in bulk, only the variations of the last product were approved. Fixed.
+
+[!] Admin panel: Design: Orders: The line with the name of the shipping method carried over every second word. Fixed.
+
+[!] Admin panel: Menu: Some items in the menu were not marked with the icon that identifies their belonging to an add-on. Fixed.
+
+[!] Core: JavaScript: ceAccordeon: The plugin did not use the standard scrollToElm function. Fixed.
+
+[!] Core: REST API: The "total_items" parameter was returned incorrectly by the following API entities: "Languages", "Payments", "Settings", "Shippings", "Statuses", "Taxes". Fixed.
+
+[!] Design: Add-ons: Gift certificates: The "Color" parameter of a gift certificate status didn't affect anything. That's why the parameter was removed.
+
+[!] Design: Admin panel: The welcome pop-up after installation wasn't displayed properly. Fixed.
+
+[!] Design: Admin panel: There were some minor issues in templates. Fixed.
+
+[!] Design: Errors appeared in the console during the scrolling of sliders on mobile devices. Fixed.
+
+[!] Design: RTL languages: An error occurred if you opened a page without breadcrumbs while the Arabic language was selected. Fixed.
+
+[!] Design: Tooltips had incorrect positioning in mobile browsers based on Webkit. Fixed.
+
+[!] File editor: The editor did not work when the Japanese language was selected. Fixed.
+
+[!] Import: Importing existing files (for downloadable products) duplicated links to the same files. Fixed.
+
+[!] JS: Event name for AJAX links was generated in a wrong manner. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common product for vendors (Beta): Product variations couldn't be created for regular configurable vendor products. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors (Beta): Category selection was unavailable to vendors when they were creating a regular product. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors (Beta): Direct customer-to-vendor payments: Vendor’s offers couldn't be purchased using vendor’s payment methods. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors (Beta): If a common product had multiple images, then the main image was duplicated on page of the vendor’s offer. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors (Beta): New categories didn't appear in the vendors' microstore after he/she started selling a common product from these categories. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors (Beta): Product filters were not working for the products that vendors were selling. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors (Beta): Products couldn't be converted to common ones via the "Edit selected" screen. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors (Beta): Reward points information wasn't displayed for products being sold. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors (Beta): The quantity of regular (not common) products added to the cart couldn't be changed. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: PayPal: Payment methods created via the Connect to PayPal buttons were assigned to the store owner and a vendor was redirected to the administration panel instead of the vendor panel. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Vendor plans: Commissions by category: The shipping cost used category commission instead of plan commission. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Vendor privileges: If an administrator with an assigned user group edited a vendor group, then the type of the vendor group was reset to "Customer". Fixed.
+
+[!] Multi-Vendor Plus: Orders: Order editing: When the Vendor Privileges add-on was active, a PHP notice occurred when the order editing page was opened. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor Plans: Currency symbol was displayed with HTML code on the vendor plans page. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor plans: Store administrator could create a product with a category that was not allowed for the selected vendor. Fixed.
+
+[!] Multi-Vendor: Design: Blocks: When the "Vendor Categories" block had the "Text links" or "Multi-column list" templates, the category links took customer from vendor's microstore into the main store. Fixed.
+
+[!] Multi-Vendor: Email templates: A vendor received notifications about a change in status in the admin panel language instead of the language selected by the vendor. Fixed.
+
+[!] Multi-Vendor: Profile fields: If an error occurred during vendor profile field creation (for example, an unsupported symbol was used), then the admin was redirected to customer/administrator profile field creation page. Fixed.
+
+[!] Order editing: The buttons for saving information about a customer were missing in the mobile mode. Fixed.
+
+[!] Order editing: The price editing field was too small. Fixed.
+
+[!] Products: Categories: When product data was updated, the main category of the product was reset. Fixed.
+
+[!] Products: Product position in the categories was reset when product data was updated. Fixed.
+
+[!] Products: When a file was deleted from a digital product, a fatal PHP error occurred. Fixed.
+
+[!] Profile fields: A PHP warning appeared instead of the type for the State/Province field. Fixed.
+
+[!] Shipping methods: PHP notices could occur when errors of shipping rate calculation were logged. Fixed.
+
+[!] Stores: The lock icon did not scroll in the storefront selection menu in the admin panel. Fixed.
+
+[!] User groups: Privileges: Banners: An administrator that belonged to a user group which could only view banners couldn't do that. Fixed.
+
+[!] User groups: Privileges: Storefronts: You could change the storefront status even if your user group didn't have that privilege. Fixed.
