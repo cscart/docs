@@ -6,8 +6,9 @@
     :maxdepth: 2
     :titlesonly:
 
-    adapting_491_to_492
     adapting_482_to_491
+    adapting_491_to_492
+    adapting_492_to_493
 
 .. toctree::
     :maxdepth: 2
