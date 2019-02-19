@@ -153,3 +153,13 @@ Bug Fixes
 [!] User groups: Privileges: Banners: An administrator that belonged to a user group which could only view banners couldn't do that. Fixed.
 
 [!] User groups: Privileges: Storefronts: You could change the storefront status even if your user group didn't have that privilege. Fixed.
+
+=============
+Service Packs
+=============
+
+---------
+4.9.3.SP1
+---------
+
+[!] Design: Vertical scrolling on mobile devices didn't work if the starting point for scrolling was a slider. Fixed.
