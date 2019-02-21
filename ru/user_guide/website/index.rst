@@ -6,17 +6,17 @@
 
 Через этот раздел можно:
 
-* управлять :doc:`блогом <../addons/blog/index>` вашего магазина;
+* управлять :doc:`блогом </user_guide/addons/blog/index>` вашего магазина;
 
-* создавать и редактировать страницы, ссылки и :doc:`формы <../addons/form_builder/create_form>`;
+* создавать и редактировать страницы, ссылки и :doc:`формы </user_guide/addons/form_builder/create_form>`;
 
-* редактировать :doc:`теги <../addons/tags/index>` товаров и контентных страниц;
+* редактировать :doc:`теги </user_guide/addons/tags/index>` товаров и контентных страниц;
 
 * настроить :doc:`SEO-правила <../addons/seo/seo_rules>`, :doc:`301 редиректы <../addons/seo/301_redirects>` и файл *robots.txt* (подробнее o robots.txt читайте на сайтах `Yandex <https://yandex.ru/support/webmaster/controlling-robot/robots-txt.xml?lang=ru>`_ и `Google <https://support.google.com/webmasters/answer/6062608?hl=ru>`_);
 
-* управлять :doc:`комментариями <../addons/comments_and_reviews/enable_comments_addon>`;
+* управлять :doc:`комментариями </user_guide/addons/comments_and_reviews/enable_comments_addon>`;
 
-* управлять :doc:`отзывами <../addons/comments_and_reviews/testimonials>`;
+* управлять :doc:`отзывами </user_guide/addons/comments_and_reviews/testimonials>`;
 
 * настроить :doc:`карту сайта <sitemap>`.
 
