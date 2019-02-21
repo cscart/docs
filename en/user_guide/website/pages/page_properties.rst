@@ -124,10 +124,6 @@ If the field type is *Select Box*, *Radio Group*, *Multiple Check boxes*, or *Mu
 
 * **Description**—the content of the field.
 
-.. image:: img/form_builder.png
-    :align: center
-    :alt: Use the Form Builder tab to create and edit forms.
-
 ====
 Poll
 ====
@@ -158,10 +154,6 @@ This tab lists the questions included in the poll.
 
     If the **Questions** tab doesn't appear, make sure you have clicked **Create** in the top right corner of the screen. You can set the **Status** to *Disabled* on the **General** tab while you add questions and answers to the poll.
 
-.. image:: img/poll_questions.png
-    :align: center
-    :alt: Use the Add Question button to create questions for the poll.
-
 When you add or edit a question, you need to specify the following attributes:
 
 * **General**
@@ -174,10 +166,6 @@ When you add or edit a question, you need to specify the following attributes:
 
   * **Required**—if you enable this option, the question will be mandatory for the poll participants to answer.
 
-.. image:: img/poll_edit_questions.png
-    :align: center
-    :alt: You can create questions of different types for your poll.
-
 * **Answers**
 
   * **Position**—the position of the answer relatively to positions of the other answers to the question.
@@ -185,10 +173,6 @@ When you add or edit a question, you need to specify the following attributes:
   * **Answer text**—the answer itself.
 
   * **Text box**—if you enable this option, the answer will have a text box for custom answers.
-
-.. image:: img/poll_edit_answers.png
-    :align: center
-    :alt: Polls support predetermined and custom answers.
 
 ===============
 Poll Statistics
@@ -219,7 +203,3 @@ This tab contains the statistics on the submitted/completed polls and questionna
 * **Last poll form submitted**—the date and time when the latest poll was submitted.
 
 * **Statistics by questions**—the questions of the poll, all the answers to these questions and the percentage of the answers.
-
-.. image:: img/poll_statistics.png
-    :align: center
-    :alt: To view poll statistics, go to Website → Pages, click the name of your poll and switch to the Poll Statistics tab.
