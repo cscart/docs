@@ -2,10 +2,6 @@
 How To: Create a Custom Form
 ****************************
 
-.. note::
-
-    **Tutorial Difficulty: 1 / 3**
-
 ========================================
 Step 1. Activate the Form Builder Add-on
 ========================================
