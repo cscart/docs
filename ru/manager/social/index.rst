@@ -231,101 +231,22 @@ Yandex
 Google
 ++++++
 
-Необходимо создать новое приложение Google, это не сложно.
+.. note::
 
-1.  Создайте новый проект в Google по ссылке: |link_google|
+    Из-за `закрытия Google+ API <https://developers.google.com/+/api-shutdown?hl=ru>`_ вам понадобится как минимум CS-Cart или Multi-Vendor 4.9.2 SP4. В этих версиях реализован вход на сайт через Gmail без Google+ API.
 
-    .. |link_google| raw:: html
+#. Создайте проект в `Google API Console <https://console.developers.google.com/project>`_.
 
-           <!--noindex--><a href="https://console.developers.google.com/project" target="_blank" rel="nofollow">https://console.developers.google.com/project</a><!--/noindex-->
+#. Перейдите на страницу `Учётные данные <https://console.developers.google.com/apis/credentials>`_ и создайте **Идентификатор клиента OAuth** для *веб-приложения*.
 
-    Нажмите «Create Project»
+   .. important::
 
-    .. fancybox:: img/hybrid_auth_01.png
-        :alt: HybridAuth
+       На этом шаге скопируйте ссылку из настроек провайдера Google на стороне CS-Cart и вставьте её как **Разрешённый URI перенаправления** на стороне Google.
 
+   .. fancybox:: img/social_login_google.png
+       :alt: Создание реквизитов Google API для входа в магазин на CS-Cart через Gmail.
 
-2.  Введите название и ID проекта. 
-
-    .. fancybox:: img/hybrid_auth_02.png
-        :alt: HybridAuth
-
-    Проект будет создан
-
-    .. fancybox:: img/hybrid_auth_03.png
-        :alt: HybridAuth
-
-3.  Пройдите в раздел «Projects» 
-
-    .. fancybox:: img/hybrid_auth_04.png
-        :alt: HybridAuth
-
-
-4.  Пройдите в настройки созданного проекта, кликнув по его названию.
-
-    .. fancybox:: img/hybrid_auth_05.png
-        :alt: HybridAuth
-
-5.  Откройте раздел «APIS & AUTH» → «Credentials»
-
-    .. fancybox:: img/hybrid_auth_07.png
-        :alt: HybridAuth
-
-6.  Нажмите «Create new Client ID»
-
-    .. fancybox:: img/hybrid_auth_08.png
-        :alt: HybridAuth
-
-7.  Выполните настройку.
-
-    .. fancybox:: img/hybrid_auth_13.png
-        :alt: HybridAuth
-
-    .. list-table::
-        :stub-columns: 1
-        :widths: 10 30
-
-        *   -   Web aplication
-
-            -   Да
-
-        *   -   AUTHORIZED JAVASCRIPT ORIGINS
-
-            -   Адрес вашего интернет-магазина.
-
-                Например: ``http://ваш_домен/``
-
-        *   -   AUTHORIZED REDIRECT URI
-
-            -   ``http://ваш_домен/index.php?dispatch=auth.process&hauth_done=Google``
-
-8.  Будет создано приложение и вы увидите данные настроек провайдера в интернет-магазине:
-
-    *   CLIENT ID — ID
-
-    *   CLIENT SECRET — Секретный ключ             
-
-    .. fancybox:: img/hybrid_auth_14.png
-        :alt: HybridAuth
-
-9.  Для того чтобы заработала авторизация Google, необходимо добавить Contacts API и Google+ API в секцию Enabled APIs. Добавить данные API вы можете, выбрав статус ON у Contacts API и Google+ API из списка Browse APIs.
-
-    .. fancybox:: img/Selection_162.jpeg
-        :alt: HybridAuth
-
-10.  Создайте нового провайдера «Google» в панели администратора интернет-магазина, используя данные созданного приложения.
-
-    .. fancybox:: img/hybrid_auth_12.png
-        :alt: HybridAuth
-
-
-
-Финиш!
-
-Дополнительные настройки вашего Google приложения вы можете настроить в разделе «Consent screen»
-
-.. fancybox:: img/hybrid_auth_15.png
-    :alt: HybridAuth
+#. После создания учётных данных вы увидите **Идентификатор клиента** и **Секрет клиента**. Скопируйте их в настройки провайдера Google на стороне CS-Cart и сохраните изменения. После этого покупатели смогут зарегистрироваться и войти в магазин через свои учётные записи Gmail.
 
 
 ВКонтакте
