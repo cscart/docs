@@ -20,13 +20,23 @@ When you select a provider, additional settings will appear. Follow the instruct
 Google
 ------
 
-* **ID**—the identificator given to you after creating a project at `Google.com <https://code.google.com/apis/console/?pli=1>`_.
+.. note::
 
-* **Secret key**—Secret key given to you after creating a project at `Google.com <https://code.google.com/apis/console/?pli=1>`_.
+    Due to `Google+ API shutdown <https://developers.google.com/+/api-shutdown?hl=en>`_, you'll need CS-Cart or Multi-Vendor 4.9.2 SP4 or newer. These versions implement sign-in via Gmail without Google+ API.
 
-* **Callback URL**—URL that Google will use for the callback in case of successful authorization.
+#. Create a project in the `Google API Console <https://console.developers.google.com/project>`_.
 
-`Learn more about Googe integration <https://hybridauth.github.io/hybridauth/userguide/IDProvider_info_Google.html>`_ in HybridAuth User Guide.
+#. Go to the `Credentials <https://console.developers.google.com/apis/credentials>`_ page and create **OAuth Client ID** for a *Web application*.
+
+   .. important::
+
+       At this step, take the link from the Google provider settings in CS-Cart and put it as the **Authorized redirect URI** for your application on the Google side.
+
+   .. image:: img/social_login_google.png
+       :align: center
+       :alt: Creating Google API credentials for signing into a CS-Cart store via Gmail.
+
+#. Once you create the credentials, you'll see **Client ID** and **Client secret**. Copy them to the Google provider settings on the CS-Cart end and save your changes. After that, customers should be able to sign in with their Gmail accounts.
 
 --------
 Facebook
