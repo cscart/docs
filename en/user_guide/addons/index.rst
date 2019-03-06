@@ -44,6 +44,7 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     hidpi_displays_support/index
     image_zoom/index
     janrain/index
+    maps_and_geolocation/index
     my_changes/index
     myob/index
     newsletters/index

@@ -36,6 +36,7 @@
     google_recaptcha/index
     janrain/index
     lite_checkout/index
+    maps_and_geolocation/index
     paypal_payments/index
     product_variations/index
     retailcrm/index
