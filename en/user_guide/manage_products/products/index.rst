@@ -117,8 +117,6 @@ In This Section
     product_attributes
     add_product
     product_variations
-    simple_versus_configurable
-    convert_combinations_to_variations
     out_of_stock_actions
     attaching_files_to_products
     downloadable
@@ -131,3 +129,9 @@ In This Section
     images_import_problem
     incorrect_thumbnails
     wysiwyg
+
+.. toctree::
+    :hidden:
+
+    simple_versus_configurable
+    convert_combinations_to_variations

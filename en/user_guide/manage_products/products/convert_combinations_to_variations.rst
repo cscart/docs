@@ -2,15 +2,9 @@
 How To: Turn Option Combinations into Product Variations
 ********************************************************
 
-.. note::
+.. warning::
 
-    Product variations first appeared in **CS-Cart & Multi-Vendor 4.6.1** as an alternative to option combinations. To create variations, you need to :doc:`install and enable the Product Variations add-on </user_guide/addons/product_variations/index>`. **The add-on is currently at the beta stage.**
-
-After you install and enable the **Product Variations** add-on, you'll be able to choose the product's type when you create a product:
-
-* *Simple products* can have :doc:`option combinations </user_guide/manage_products/options/option_combinations>`.
-
-* *Configurable products* can have :doc:`variations <product_variations>`.
+    The described functionality was removed in version 4.10.1. Products are no longer divided into simple or configurable, and variations are now based on features rather than options.
 
 If your store existed before version 4.6.1, then it already has products. After you upgrade to version 4.6.1, all those products will be considered *simple*. However, if you want to take advantage of :doc:`the new opportunities provided by product variations <simple_versus_configurable>`, you'll be able to convert a simple product and its option combinations into a configurable product and its variations.
 
