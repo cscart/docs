@@ -4,105 +4,112 @@ Product Variations
 
 .. note::
 
-    Product variations first appeared in **CS-Cart & Multi-Vendor 4.6.1** as an alternative to :doc:`option combinations </user_guide/manage_products/options/option_combinations>`. To create variations, you need to :doc:`install and enable the Product Variations add-on </user_guide/addons/product_variations/index>`. **The add-on is currently at the beta stage.**
+    Product variations are a part of :doc:`the add-on with the same name </user_guide/addons/product_variations/index>`.
 
-Product variations are a way to group some specific :doc:`option variants </user_guide/manage_products/options/index>`. For example, let's assume that you sell T-shirts. They come in 3 colors (red, green, blue) and 3 sizes (small, medium, large). In this case *T-shirt* would be a product, and *large blue T-shirt* would be one of the product variations.
+Variations are similar products that differ from each other only in one or a few :doc:`features </user_guide/manage_products/features/index>`, for example: "green M-sized T-shirt" and "red S-sized T-shirt". This kind of product requires 3 things:
 
-.. image:: img/product_variations.png
-    :align: center
-    :alt: Product variations appear on the storefront almost the same way as option combinations.
+#. Let customers choose the feature values on the product page.
 
-A product can have either option combinations, or variations. If you plan to create variations of a product, set **Product type** to *Configurable* when you :doc:`add the product <add_product>`.
+#. Show some of the variations (for example, different colors) as separate catalog items. That way customers will see the color they need on the product list.
 
-.. important::
+#. Hide some of the variations (for example, sizes) from the product list. That way customers wouldn't be confused by multiple T-shirts of different sizes with the same image.
 
-    Once you create a product, you won't be able to change its type. That's why it's important to know :doc:`the differences between option combinations and product variations <simple_versus_configurable>`.
-
-.. image:: img/product_type.png
-    :align: center
-    :alt: The product type is selected during product creation and determines how the options of the product will work.
+   .. image:: /user_guide/addons/product_variations/img/variation_selection.png
+       :align: center
+       :alt: Switching between product variations on the storefront.
 
 .. contents::
     :backlinks: none
-    :local: 
-    :depth: 1
+    :local:
 
-======================
-Add Product Variations
-======================
+===========
+Terminology
+===========
 
-.. note::
+**Variation group**—a few similar products that differ from each other only in one or several features.
 
-    This is the behavior of CS-Cart & Multi-Vendor 4.7.2 and newer versions. If you'd like to know how to create variations in version 4.7.1, please refer to `this article <https://docs.cs-cart.com/4.6.x/user_guide/manage_products/products/product_variations.html>`_.
+**Variation**—a product that belongs to a variation group. A product can belong only to one group at the same time, but it's easy to change the product's group. If a variation is removed from the group, it becomes a standard product.
 
-#. In the Administration panel, go to **Products → Products** and find your configurable product. Click **Advanced search** in the search menu on the right: the advanced search pop-up window will allow you to exclude simple products from the search results, leaving only configurable products.
+**Catalog item** — a single spot on the product list. Until variations existed, "catalog item" meant the same thing as "product". But now variations may or may not occupy a place on the product list, hence the new term.
 
-#. Click on the name of the configurable product to open the product editing page.
+.. hint::
 
-#. Switch to the **Variations** tab and click **Add variations**.
+    Every variation is a product, but not every product is a variation. Use the **Advanced search** on the product list in the admin panel. For example, it can let you find only variations, or only catalog items.
 
-   .. note::
+---------------
 
-       A product must have at least one option of the *Check box*, *Select box*, or *Radio group* type with the **Inventory** checkbox ticked. Otherwise you won't be able to create variations for this product.
+A T-shirt comes in 3 colors, and each color has 5 sizes. That means 15 *products*. If we want to add switching between these products, we'll put these products into a *variation group* that is based on the "Color" and "Size" features. Now we have 15 *variations*, and customers can switch between them on the product page.
 
-   .. image:: img/add_variations.png
-       :align: center
-       :alt: Use the "Add variations" button to create variations.
+Depending on how your features are configured, these 15 variations can be:
 
-#. The list of possible and existing variations will appear. Tick the checkboxes of the variations you'd like to create.
+* *1 catalog item*—the color and size selection is available only on the product page.
 
-   .. image:: img/possible_variations.png
-       :align: center
-       :alt: Tick the checkboxes of the variations you'd like to add.
+* *3 catalog items*—T-shirts of different colors appear on the storefront as separate products, but sizes can be selected only on the product page.
 
-#. Click **Add variations**. New variations will be created, and you'll be able to edit them as you see fit.
+* *5 catalog items*—if someone decides to show sizes on the product list and leave the color selection on the product page. It doesn't suit T-shirts, but may be appropriate for other products.
+
+* *15 catalog items*—when colors and sizes appear on the list as separate products; every variation has its own catalog item.
+
+  .. note::
+
+      This scheme works even when the number of features is more than two. You can edit the features at any time, but the number of catalog items will change only if you disband and recreate the variation group. More on that below.
 
 =======================
-Edit Product Variations
+Working with Variations
 =======================
 
-#. In the Administration panel, go to **Products → Products** and find the variation you'd like to edit. There are multiple ways to find the variation:
+--------------------------
+Creating a Variation Group
+--------------------------
 
-   * Find the product variation using the **Advanced search** link from the search menu on the right. You'll be able to search either for all variations, or for variations of specific products.
-
-     .. hint::
-
-         If you use this method, you'll be able to edit multiple variations at once: just tick the checkboxes next to the names of the variations, click the gear button in the top right corner, and choose **Edit selected**.
-
-   * Find the configurable product (again, it's best to use **Advanced search**), click on its name, and switch to the **Variations** tab.
-
-   .. image:: img/list_of_variations.png
-       :align: center
-       :alt: The list of variations allows you to edit some of the variation properties.
-
-#. Once you see the list of variations, you can do 2 things:
-
-   * Edit price, list price, quantity, and status of the variation.
-
-   * Click the name of the variation to open the editing page, that contains more :doc:`product properties <product_attributes>`.
-
-#. Once you're done with editing, click the **Save** button in the top right corner.
-
-   .. image:: img/variation_properties.png
-       :align: center
-       :alt: A product variation is much like a separate product in the Administration panel.
-
-=========================
-Delete Product Variations
-=========================
-
-#. In the Administration panel, go to **Products → Products** and find the variation you'd like to delete. There are multiple ways to find the variation:
-
-   * Find the configurable product, click on its name, and switch to the **Variations** tab.
-
-   * Find the product variation using the **Advanced search** link from the search menu on the right. You'll be able to search either for all variations, or for variations of specific products.
-
-#. Hover over the variation you'd like to delete. The gear button will appear. Click it and choose **Delete**.
+#. Go to the editing page of a :doc:`product feature </user_guide/manage_products/features/index>` (either a new one, or existing one) and choose one of the two **Purposes** that allow creating variations.
 
    .. hint::
 
-       If you find the variations by using **Advanced search**, you'll be able to delete multiple variations at once: just tick the checkboxes next to the names of the variations, click the gear button in the top right corner, and choose **Delete selected**.
+      The selected **Purpose** determines if variations with different values of this features will become separate catalog items. Every purpose has a description; it should help you find the purpose that is right for you.
 
-   .. image:: img/delete_variation.png
+   If variations differ by more features than one, then create multiple features, not necessarily with the same **Purpose**. Then CS-Cart will automatically determine, which variations should get their own catalog items, and which should only be selectable on the product page.
+
+#. Go to the editing page of any :doc:`product </user_guide/manage_products/products/index>` that you want to turn into a variation. Make sure that the product has a value for all the  features that distinguish it from other similar products.
+
+#. Switch to the **Variations** tab.
+
+   .. image:: img/product_variations_tab.png
        :align: center
-       :alt: You can delete multiple variations at once, but only if you find them via Advanced Search, not on the Variations tab.
+       :alt: You can manage the entire variation group from the page of any product that is a part of the group.
+
+   There are 2 ways to let customers switch from this product's page to other similar products:
+
+   * **Create a variation group.**
+
+     To do it, use the **Add variations** button. You'll be able to add any products that have the values for the distinguishing features. You'll also be able to create new products automatically, based on features.
+
+   * **Add this product to an existing group as a variation.**
+
+     Start entering the variation group code into the field on the left. CS-Cart will automatically offer appropriate groups. If you know there is a group, but CS-Cart doesn't offer it, then please make sure that the product has values for all the features that the group is based on.
+
+----------------------
+Management and Removal
+----------------------
+
+Once a variation group is created, all products from the group will appear on the **Variations** tab of any product in the group. On this tab you can:
+
+* See which variations have their own catalog item, and which don't. A variation that doesn't appear on the product list has a smaller icon.
+
+* Choose which of the variations to display by default as the catalog item.
+
+* Remove a variation from the group; this will turn the variation into an independent product.
+
+* Delete the variation.
+
+* Change the group code — you can use it later to add other products to this group as variation. A group code can contain only digits, Latin characters, and the following signs: ``-`` and ``_``.
+
+* Add more variations to the group.
+
+* Switch to the product list to edit variations there—that way you'll be able to edit and remove variations in bulk.
+
+* Disband the group—turn all its variations into independent products and remove the ability to switch between them on the product page.
+
+  .. image:: img/product_variations_list.png
+      :align: center
+      :alt: Catalog items have bigger pictures than variations that can be selected only on the product page.

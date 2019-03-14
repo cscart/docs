@@ -21,7 +21,7 @@ Adding One Product
        :align: center
        :alt: The "Plus" button adds a new product.
 
-#. The product creation page will open. Configure the required properties of the product. You'll be able to edit the product properties later at any time. The only thing that it's best to decide on now is :doc:`whether to create a simple or a configurable product </user_guide/manage_products/products/simple_versus_configurable>`.
+#. The product creation page will open. Configure the required properties of the product. You'll be able to edit the product properties later at any time.
 
    .. note::
 
