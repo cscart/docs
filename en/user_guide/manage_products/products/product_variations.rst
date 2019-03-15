@@ -98,6 +98,10 @@ Once a variation group is created, all products from the group will appear on th
 
 * Choose which of the variations to display by default as the catalog item.
 
+  .. important::
+
+      Other variations will borrow many of their properties from the variation that is selected as default.
+
 * Remove a variation from the group; this will turn the variation into an independent product.
 
 * Delete the variation.
