@@ -55,28 +55,6 @@ Product id
 
     ПРИМЕР: *130*
 
-.. _import-product-type:
-
-============
-Product type
-============
-
-.. note::
-
-    Это поле — часть :doc:`модуля "Вариации товаров" </user_guide/addons/product_variations/index>`.
-
-:doc:`Тип товара </user_guide/manage_products/products/simple_versus_configurable>`:
-
-* ``P`` — простой товар;
-
-* ``C`` — настраиваемый товар;
-
-* ``V`` — вариация настраиваемого товара.
-
-.. important::
-
-    ПРИМЕР: *C*
-
 ========
 Category
 ========
@@ -331,22 +309,6 @@ Free shipping
 
     ПРИМЕР: *Y*
 
-==================
-Feature comparison
-================== 
-
-* **Y** — товар можно добавить в список сравнения;
-
-* **N** — товар нельзя добавить в список сравнения.
-
-.. important::
-
-    ПРИМЕР: *Y*
-
-.. note::
-
-    Это поле существовало до версии 4.3.5. Начиная с CS-Cart 4.3.6 :doc:`добавить в список сравнения можно любой товар </user_guide/manage_products/features/feature_comparison>`.
-
 =================
 Zero price action
 =================
@@ -529,6 +491,8 @@ Taxes
 
      Перед тем, как указывать налоги для товара, :doc:`создайте эти налоги <../../shipping_and_taxes/taxes/set_up_tax>`.
 
+.. _import-features:
+
 ========
 Features
 ========
@@ -572,6 +536,22 @@ Features
 .. note::
 
     Если характеристики или варианта нет в базе данных, она будет создана автоматически. Также вы можете :doc:`создать характеристики вручную <../features/product_features>` или импортировать их до того, как импортируете товары с этими характеристиками.
+
+.. _import-variation-group-code:
+
+====================
+Variation group code
+====================
+
+Общий идентификатор, который связывает несколько :doc:`вариаций товара </user_guide/manage_products/products/product_variations>` в одну группу вариаций. Например, если вы продаёте футболку с характеристиками *Цвет* и *Размер*, то *белая футболка XXL* и *синяя футболка M* будут вариациями товара. Если у них одинаковый код группы вариаций, то покупатели смогут переключаться между этими вариациями на странице товара.
+
+Код группы может содержать только цифры, латиницу и знаки "-" и "_".
+
+У нас есть :doc:`отдельная статья об импорте вариаций товаров </user_guide/manage_products/import_export/variation_import>`.
+
+.. important::
+
+    ПРИМЕР: *T-shirt_Need4Sports*
 
 .. _import-options:
 
@@ -698,18 +678,6 @@ Options
   .. important::
 
       ПРИМЕР: *(Simtech) Своё изображение: F///required=Y///multiupload=N///allowed_extensions=jpg,bmp,gif///max_file_size=1000*
-
-.. _import-variation-options:
-
-=================
-Variation options
-=================
-
-Варианты разных опций, которые вместе составляют :doc:`вариацию товара </user_guide/manage_products/products/product_variations>`. Например, если вы продаёте футболку с опциями *Цвет* и *Размер*, то *белая футболка XXL* будет вариацией товара. У нас есть :doc:`отдельная статья об импорте вариаций товаров </user_guide/manage_products/import_export/variation_import>`.
-
-.. important::
-
-    EXAMPLE: *Размер:Обычный|Цвет:Белый*
 
 ====================
 Secondary categories

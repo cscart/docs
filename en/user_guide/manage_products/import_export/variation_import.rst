@@ -1,55 +1,41 @@
-****************************************************
-How To: Import Configurable Products with Variations
-****************************************************
+*********************************
+How To: Import Product Variations
+*********************************
 
 .. note::
 
-    The ability to create product variations via import first appeared CS-Cart and Multi-Vendor 4.7.2 (until then only existing variations could be updated). Product variations are a part of the :doc:`Product Variations </user_guide/addons/product_variations/index>` add-on.
+    :doc:`Product variations </user_guide/manage_products/products/product_variations>` are a part of :doc:`the add-on with the same name </user_guide/addons/product_variations/index>`.
 
-During :doc:`product import </user_guide/manage_products/import_export/product_import>` you can create and update :doc:`configurable products and their variations </user_guide/manage_products/products/simple_versus_configurable>`. Variations are imported together with configurable products, as separate entries in the same CSV file.
+During :doc:`product import </user_guide/manage_products/import_export/product_import>` you can group similar products as variations to let customers switch between these products. This article explains what information is required for that. Your file may include more information, such as product categories, quantities, prices, etc.
 
-This article only covers how to arrange configurable products and variations in an imported CSV file. Your file may include more columns such as **Quantity**, **Price**, etc.
+#. :ref:`Product code <import-product-code>` is required for distinguishing one product from another. During import, the code determines if this product or variation exists in the store. If a product with this code is found, the import will update that product instead of creating a new one. Variation is a product too.
 
-.. image:: img/variation_import.png
-    :align: center
-    :alt: Product variations in an imported CSV file.
+#. :ref:`Variation group code <import-variation-group-code>` serves to group variations. Color and size are applicable not only to a T-shirt, but to a hoodie as well. That's why you need one group code for all colors and sizes of a T-shirt, and another code for all the colors and sizes of a hoodie.
+
+#. **Information about features.**  To group products as variations with *Variation group code*, 3 conditions must be met:
+
+   * There must be :doc:`features </user_guide/manage_products/features/index>` that allow creating variations — a **Purpose** that allows creating variations must be selected on the feature editing page. Purposes have descriptions to help figure out, which purpose is the most suitable for the feature.
+
+   * Every product that becomes a part of a variation group must have the variants specified for all the features that the group is based on. For example, if a product has a group code and the vaules for "Color" and "Size", then other products with the same group code also must have color and size.
+
+     .. hint::
+
+         If the feature variants have already been specified for products before (for example, during a previous import), then *product code* and *variation group code* will be enough for creating a variation group—you won't need to specify the feature variants again.
+
+   * A combination of features that the group is based on must be unique for each variation of the group. For example, if the group is based around only "Color" and "Size", it won't be able to include two "M-sized red T-shirts".
+
+----------
+
+**The best way:** before you try to import products, create the features manually (or import them in your store) and select the correct purpose for them. Here are the benefits of this approach:
+
+* When a feature already exists in your store, you'll be able to map it to a separate column in CSV file or a node in XML file during :doc:`product import </user_guide/manage_products/import_export/advanced_product_import>` (see the example of a CSV file below):
+
+  .. image:: img/variation_import.png
+      :align: center
+      :alt: Product variations in an imported CSV file.
+
+* Before the import, the features will already have the correct purpose, so variation groups will be created right during the import.
 
 .. note::
 
-    If the rules specified below aren't followed when you create variations during import, the problematic variations will be skipped, and you'll see an error message after the import is complete.
-
-#. The :ref:`Product type <import-product-type>` column isn't required, but is convenient, because it helps to see the type of the product:
-
-   * ``P``—a simple product.
-
-   * ``C``—a configurable product.
-
-   * ``V``—a variation of the configurable product.
-
-#. The imported CSV file must always have the entry of the configurable product when you create the variations of that product. 
-
-   The relative order of entries in the file is important: the entry of a configurable product goes first, and the entries of its variations must come right after it, in the following lines. For example, sequence *СVVPCVVVPP* is correct, and sequence *CVVPVVCPV* isn't.
-
-#. As usual, the values in the :ref:`Product code <import-product-code>` column serve to distinguish new products and variations from existing ones during import. So, if a product or a variation with the specified code is found in the store, the import will overwrite it.
-
-#. Variations are based on :doc:`product options </user_guide/manage_products/options/index>`. That's why a configurable product (``C``) must have a value specified in the :ref:`Options <import-options>` field of the CSV file in the following cases:
-
-   * The configurable product doesn't exist yet and will be created during import.
-
-   * The configurable product already exists but doesn't have options and any variations yet. 
-
-   .. note::
-
-       If the configurable product already exists and has at least one variation, then the values provided in the **Options** field won't be imported.
-
-#. Each variation you'd like to create must have a value specified in the :ref:`Variation options <import-variation-options>` column. This column contains the information about the option variants that comprise this variation. There are several rules to remember:
-
-   * Only variations should have variation options specified.
-
-   * The *Variation options* field must include only the options and variants that the configurable product has.
-
-   * Two different variations of a single configurable product can't have the same variation options.
-
-.. hint::
-
-    Once variations are created, you can update their properties (such as price or quantity) just like you do that for simple products. Make sure that the imported file doesn't have the *Variation options* and *Product type* columns, and then the order of products in the file won't matter.
+    If you export products from CS-Cart or Multi-Vendor, you'll be able to export features that are suitable for variation groups in separate columns.

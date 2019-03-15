@@ -56,28 +56,6 @@ The numeric ID of the product from the store's database. If **Product code** is 
 
     EXAMPLE: *130*
 
-.. _import-product-type:
-
-============
-Product type
-============
-
-.. note::
-
-    This is a part of the :doc:`Product Variations </user_guide/addons/product_variations/index>` add-on.
-
-The :doc:`type of the product </user_guide/manage_products/products/simple_versus_configurable>`:
-
-* ``P``—simple product.
-
-* ``C``—configurable product.
-
-* ``V``—a variation of a configurable product.
-
-.. important::
-
-    EXAMPLE: *C*
-
 ========
 Category
 ========
@@ -332,22 +310,6 @@ Free shipping
 
     EXAMPLE: *Y*
 
-==================
-Feature comparison
-================== 
-
-* **Y**—the product can be added to the comparison list.
-
-* **N**—the product can't be added to the comparison list.
-
-.. important::
-
-    EXAMPLE: *Y*
-
-.. note::
-
-    This field existed until version 4.3.5. Starting with CS-Cart and Multi-Vendor 4.3.6, :doc:`any product can be added to the comparison list </user_guide/manage_products/features/feature_comparison>`.
-
 =================
 Zero price action
 =================
@@ -531,6 +493,8 @@ The names of the taxes which will be applied to the product. Several taxes must 
 
      :doc:`Create taxes <../../shipping_and_taxes/taxes/set_up_tax>` **before** you import products with those taxes.
 
+.. _import-features:
+
 ========
 Features
 ========
@@ -575,6 +539,21 @@ Several features must be delimited with a semicolon.
 
     If a feature or its variant doesn't exist in the database, it will be created automatically. You can also :doc:`create features manually <../features/product_features>` or import them **before** you import products with those features.
 
+.. _import-variation-group-code:
+
+====================
+Variation group code
+====================
+
+The common ID that ties multiple :doc:`product variations </user_guide/manage_products/products/product_variations>` into one group. For example, if you sell a T-shirt with features like *Size* and *Color*, then *medium white T-shirt* and *small blue T-shirt*  will be product variations. If their variation group code is the same, customers will be able to switch between these variations on the product page.
+
+A group code can contain only digits, Latin characters, and the following signs: ``-`` and ``_``.
+
+We have :doc:`a separate article on how to import product variations </user_guide/manage_products/import_export/variation_import>`.
+
+.. important::
+
+    EXAMPLE: *T-shirt_Need4Sports*
 
 .. _import-options:
 
@@ -701,18 +680,6 @@ Settings can be specified after the option variants. Here are the settings that 
   .. important::
 
       EXAMPLE: *(Simtech) Custom image: F///required=Y///multiupload=N///allowed_extensions=jpg,bmp,gif///max_file_size=1000*
-
-.. _import-variation-options:
-
-=================
-Variation options
-=================
-
-The variants of options that comprise :doc:`a product variation </user_guide/manage_products/products/product_variations>`. For example, if you sell a T-shirt with options like *Size* and *Color*, then *a medium white T-shirt* would be a product variation. We have :doc:`a separate article on how to import product variations </user_guide/manage_products/import_export/variation_import>`.
-
-.. important::
-
-    EXAMPLE: *Size:Medium|Color:White*
 
 ====================
 Secondary categories
