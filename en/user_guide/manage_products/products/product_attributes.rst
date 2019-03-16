@@ -79,7 +79,7 @@ Pricing / Inventory
 
 * **CODE**—the identifier of the product that you use in your store (a stock keeping unit or SKU); it is used to distinguish products from each other during import, so that the data would be saved to the right product.
 
-* **List price**—if this price is higher that product's **Price**, then a discount label will be displayed for the product.
+* **List price**—if this price is higher than product's **Price**, then a discount label will be displayed for the product.
 
 * **In stock**—the number of products in the stock. Products that are out of stock can't be bought, unless you enable the **Allow negative amount in inventory** setting under **Settings → General → Catalog**.
 
@@ -125,7 +125,7 @@ Availability
 
 * **Creation date**—the date when the product was added to the catalog. It is used for sorting products by date.
 
-* **Avail since**—the date when the product becomes available for purchase. It is useful when the you want to start selling at a specific date, or when the product isn't available yet.
+* **Avail since**—the date when the product becomes available for purchase. It is useful when you want to start selling at a specific date, or when the product isn't available yet.
 
 * **Out-of-stock actions**—select if customers should be able to buy the product in advance before it is not yet available for sale, or sign up to receive an email notification when the product is available. 
 
