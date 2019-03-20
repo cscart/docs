@@ -4,7 +4,7 @@ MYOB
 
 This add-on enables you to export orders in a file that can then be imported into the MYOB accounting system.
 
-Information on MYOB is available on the `official website <myob.com.au>`_.
+Information on MYOB is available at the `official website <https://www.myob.com/au>`_.
 
 *	**Default Sales Account** - your MYOB account number.
 

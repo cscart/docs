@@ -10,9 +10,9 @@ URLs
 
 * http://example.com/api/**usergroups/:id**—refer to a particular user group. Supports ``GET``, ``PUT``, and ``DELETE``.
 
-* http://example.com/api/**usergs/:id/usergroups/**—refer to the user groups that the specified user belongs to. Supports ``GET``.
+* http://example.com/api/**users/:id/usergroups/**—refer to the user groups that the specified user belongs to. Supports ``GET``.
 
-* http://example.com/api/**usergs/:id/usergroups/:id**—refer to a particular user group that the specified user belongs to. Supports ``PUT`` and ``DELETE``.
+* http://example.com/api/**users/:id/usergroups/:id**—refer to a particular user group that the specified user belongs to. Supports ``PUT`` and ``DELETE``.
 
 .. important::
 
