@@ -66,6 +66,10 @@ Layout pages can be imported and exported in an XML file. This is useful when yo
 
 We recommend that you export layout pages before making any changes to the storefront layout. That way you can always restore the original layout by importing the layout pages.
 
+.. important::
+
+    The import and export of layout pages doesn't take into account the state of the layout page for a certain object (such as product, category, page, etc.). If a block is disabled for a certain object, that information won't be imported and exported.
+
 ----------------------
 Exporting Layout Pages
 ----------------------
