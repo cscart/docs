@@ -14,7 +14,6 @@
     :maxdepth: 3
     :glob:
 
-    https/index
     features/index
     instruction/index
     orders/index
@@ -22,5 +21,9 @@
     cloud/index
     exchange_vendors/index
 
+.. toctree::
+    :hidden:
+
+    https/index
 
 
