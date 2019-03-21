@@ -19,7 +19,6 @@ Welcome to CS-Cart Documentation!
     * `4.2.x <../4.2.x/index.html>`_
     * `4.1.x <../4.1.x/index.html>`_
     * `4.0.x <../4.0.x/index.html>`_
-    * `Older docs <http://old.docs.cs-cart.com>`_
 
 Welcome to CS-Cart Documentation! For your convenience we have divided it into several sections dedicated to various aspects of working with CS-Cart. Or you can `see the full list of articles <map.html>`_, if that is more convenient for you.
 
