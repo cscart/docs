@@ -44,7 +44,7 @@ The request URL is as follows (separated into several lines for readability):
 
 *   ``query`` is the search query
 
-In order to get results referring only to a particular store in CS-Cart Ultimate or vendor in CS-Cart Multi-Vendor, use the ``stores`` and ``vendors`` entity respectfully:
+In order to get results referring only to a particular store in CS-Cart Ultimate or vendor in CS-Cart Multi-Vendor, use the ``stores`` and ``vendors`` entity respectively:
 
     http://example.com/api/stores/1/products
 
@@ -57,7 +57,7 @@ Get all products of the 1st store, with 'foo' in their full description, costing
 
 .. code-block:: bash
 
-    curl --user admin@example.com:APIkey -X GET 'http://example.com/api/store/1/products?pfull=Y&price_from=10&sort_by=product&sort_order=asc&q=foo'
+    curl --user admin@example.com:APIkey -X GET 'http://example.com/api/stores/1/products?pfull=Y&price_from=10&sort_by=product&sort_order=asc&q=foo'
 
 .. _filters:
 
@@ -298,7 +298,7 @@ The full list of supported fields is given below (mandatory fields are marked wi
             | ``ru``
             | etc.
     *   -   list_price
-        -   Manufactorer suggested price
+        -   Manufacturer suggested price
         -   0
         -   float
     *   -   list_qty_count
@@ -342,7 +342,7 @@ The full list of supported fields is given below (mandatory fields are marked wi
         -   0
         -   integer
     *   -   options_type
-        -   Apply options simultaneously (``P``) of sequentially (``S``)
+        -   Apply options simultaneously (``P``) or sequentially (``S``)
         -   ``P``
         -   | ``S``
             | ``P``
