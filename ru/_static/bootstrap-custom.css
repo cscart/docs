@@ -409,30 +409,30 @@ body {
     font-size: 2.75em;
     line-height: 1.41818182em;
     margin-top: 0.47272727em;
-    margin-bottom: 0.94545454em;
+    margin-bottom: 0.34545454em;
 }
 
 .text-block h2, h2, .h2 {
     font-size: 1.95em;
     line-height: 1.33333333em;
     margin-top: 0.26666667em;
-    margin-bottom: 0.26666667em;
+    margin-bottom: 0em;
 }
 
 .text-block h3, h3, .h3 {
     font-size: 1.7em;
-    line-height: 1.85714286em;
+    line-height: 1.2em;
     margin-bottom: 0em;
 }
 
 .text-block h4, h4, .h4 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 1.3em;
     margin-bottom: 0em;
 }
 
 .text-block h5, h5, .h5 {
-    font-size: 1.3em;
+    font-size: 1em;
     line-height: 1.3em;
     margin-bottom: 0em;
 }
@@ -953,7 +953,6 @@ table .row-even {
 
     padding: 3px 6px;
     color: #d14;
-    display: block;
     background-color: #f7f7f9;
     border: 1px solid #e1e1e8;
 
@@ -963,6 +962,8 @@ table .row-even {
     word-wrap: break-word;
     white-space: pre;
     white-space: pre-wrap;
+
+    font-size: 90%;
 }
 
 .highlight pre {
