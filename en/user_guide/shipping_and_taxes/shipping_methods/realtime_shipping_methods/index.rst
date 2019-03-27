@@ -14,6 +14,7 @@ Here is the list of realtime shipping methods in CS-Cart & Multi-Vendor. By *rea
     dhl
     fedex
     swiss_post
+    pickup
     ups
     ups_key
     usps
@@ -30,3 +31,6 @@ The articles below describe how to address various issues and concerns regarding
     not_displayed
     realtime_shipping_and_payment_problem
     error_reporting
+
+.. meta::
+   :description: List of shipping methods with automatic rate calculation in CS-Cart and Multi-Vendor

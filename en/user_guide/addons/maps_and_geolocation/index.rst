@@ -55,3 +55,6 @@ The **Maps and Geolocation** add-on is installed :doc:`like any other add-on </u
   When you get an API key, just add it to the corresponding tab of the add-on's settings and save the changes.
 
 * **Show shipping cost and time on product pages** does what it says: if you enable it, product pages will contain the time and rate estimations for the shipping methods available for the customer's location.
+
+.. meta::
+   :description: CS-Cart and Multi-Vendor add-on for Yandex or Google maps and detecting customer's location

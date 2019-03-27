@@ -2,6 +2,10 @@
 How To: Add the Store Locator Block
 ***********************************
 
+.. important::
+
+    Starting with version 4.10.1, this add-on was replaced with the :doc:`/user_guide/addons/stores_and_pickup_points/index` add-on.
+
 To set up the **Store locator** add-on:
 
 *   In the Administration panel, go to **Add-ons → Manage add-ons**.

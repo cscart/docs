@@ -2,6 +2,10 @@
 Store Locator
 *************
 
+.. important::
+
+    Starting with version 4.10.1, this add-on was replaced with :doc:`/user_guide/addons/stores_and_pickup_points/index`.
+
 This add-on allows you to locate your brick-n-mortar stores on Google Maps. Maps with marked locations can then appear on the storefront so that customers can find a nearest point of sale. Locations are managed in **Add-ons → Store locator**.
 
 Settings

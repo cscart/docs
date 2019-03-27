@@ -45,6 +45,7 @@
     rus_taxes/index
     seo/index
     social_login/index
+    stores_and_pickup_points/index
     tags/index
     old_admin_panel/index
     twigmo/index
