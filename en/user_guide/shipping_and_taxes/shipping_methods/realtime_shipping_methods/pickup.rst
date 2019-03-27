@@ -39,4 +39,4 @@ CS-Cart and Multi-Vendor allow you to create stores and pickup points and set th
 #. Check how the new shipping method works at the storefront.
 
 .. meta::
-   :description: CS-Cart and Multi-Vendor add-on to let customers select a store or pick-up point and collect orders from there
+   :description: Create a "Pick up from store" shipping method to let customers select a store or pick-up point where they want to collect orders
