@@ -70,6 +70,7 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     social_login/index
     store_import/index
     stores_and_pickup_points/index
+    stripe_connect/index
     suppliers/index
     tags/index
     vendor_data_premoderation/index
@@ -87,7 +88,6 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     :hidden:
 
     mobile_admin_app/index
-    stripe_connect/index
     store_locator/index
     twigmo/index
     vendor_commission/index
