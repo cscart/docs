@@ -350,6 +350,8 @@ body {
     text-decoration: none;
     float: left;
     padding-bottom: 10px;
+
+    font-size: 18px;
 }
 .sidebar-list ul li ul {
     float: left;
