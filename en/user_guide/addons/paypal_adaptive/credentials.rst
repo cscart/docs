@@ -12,7 +12,7 @@ When you :doc:`create a payment method that uses PayPal Adaptive Payments </user
 Getting API username, API password, Signature
 =============================================
 
-#. Log in to your PayPal Business account on `the PayPal website <https://www.paypal.com/>`_.
+#. Sign in to your PayPal Business account on `the PayPal website <https://www.paypal.com/>`_.
 
 #. Open the settings of your profile.
 
@@ -50,40 +50,7 @@ Getting API username, API password, Signature
 Getting Application ID
 ======================
 
-.. important::
+To get application ID, please contact your PayPal manager. The decision whether or not to provide the application ID is up to PayPal.
 
-    PayPal announced that `PayPal-Apps.com will be permanently unavailable starting December 1, 2017 <https://www.paypal-community.com/t5/Adaptive-Payments-Accounts/PayPal-Apps-com-will-be-permanently-unavailable-starting/m-p/1357320>`_. The description below will be out of date. Until an alternative PayPal solution for marketplaces is implemented in Multi-Vendor, please contact our technical support `via Help Desk <https://helpdesk.cs-cart.com>`_ to start using PayPal Adaptive Payments.
-
-#. Log in to the `PayPal Developer website <https://developer.paypal.com/>`_ using the credentials of the PayPal account registered to the application owner.
-
-#. Go to the `My Applications <https://developer.paypal.com/developer/applications/>`_ page.
-
-#. Go to the **NVP/SOAP API apps** section and click **Manage NVP/SOAP API apps**.
-
-   .. image:: img/paypal_manage_apps.png
-       :align: center
-       :alt: Managing your PayPal NVP/SOAP API apps.
-
-#. A new page will open. Click the **New application** button there.
-
-   .. image:: img/paypal_application.png
-       :align: center
-       :alt: Applying for an Application ID.
-
-#. The application form will appear. Start filling it in.
-
-#. When you reach the **Services used by app** step:
-
-   * Tick the **Basic Payments** checkbox and all its checkboxes, except for **Implicit Send Money** and **Refunds or Chargebacks**.
-
-     .. image:: img/paypal_basic_payments.png
-          :align: center
-          :alt: Selecting which functionality of Basic Payments your store will use.
-
-   * Tick the **Chained Payments** checkbox and select **Instant** payments to secondary receivers. When answering who pays the fees, select either **Each receiver** or **Primary receiver**; the add-on doesn't support the **Secondary receiver** variant.
-
-     .. image:: img/paypal_chained_payments.png
-          :align: center
-          :alt: Selecting how Chained Payments will be handled.
-
-#. Fill in the remaining fields in the form and click **Submit app**.
+.. meta::
+   :description: Looking how to get credentials to configure PayPal Adaptive Payments in Multi-Vendor software? This instruction will help.
