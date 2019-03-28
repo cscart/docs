@@ -4,7 +4,7 @@ How To: Set up PayPal Adaptive Payments in Multi-Vendor
 
 .. note::
 
-    The :doc:`PayPal Adaptive Payments </user_guide/addons/paypal_adaptive/index>` add-on is available in Multi-Vendor starting with version 4.5.1. New clients :ref:`will need to contact our technical support <paypal-adaptive-app>` to start using PayPal Adaptive Payments.
+    The :doc:`PayPal Adaptive Payments </user_guide/addons/paypal_adaptive/index>` add-on is available in Multi-Vendor starting with version 4.5.1. New clients :ref:`will need to contact their PayPal manager <paypal-adaptive-app>` to start using PayPal Adaptive Payments.
 
 ================================
 Step 1. Configure Payment Method
@@ -85,3 +85,6 @@ We recommend you set up a CRON job that verifies the emails of vendors automatic
 .. image:: img/paypal_verification_status.png
     :align: center
     :alt: All vendors must be verified, or customer won't be able to use PayPal Adaptive Payments to buy products from them in one order.
+
+.. meta::
+   :description: Use PayPal Adaptive Payments to configure a payment method that automatically splits payments for orders among vendors.
