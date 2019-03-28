@@ -117,3 +117,6 @@ Once a variation group is created, all products from the group will appear on th
   .. image:: img/product_variations_list.png
       :align: center
       :alt: Catalog items have bigger pictures than variations that can be selected only on the product page.
+
+.. meta::
+   :description: How to let customers switch between similar products or select color and size of a product with product variations in CS-Cart and Multi-Vendor

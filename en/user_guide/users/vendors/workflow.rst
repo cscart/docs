@@ -135,3 +135,6 @@ Direct payments to vendors work best when combined with some other add-ons menti
 .. note::
 
     **Summary:** The :doc:`/user_guide/addons/direct_customer_to_vendor_payments/index` add-on changes the way your marketplace works: the money goes directly to vendors, and you don't have to distribute it. Other add-ons ensure that vendors pay their fees to the marketplace in a timely manner.
+
+.. meta::
+   :description: Money flow in Multi-Vendor marketplace: addons that let you distribute money among vendors automatically, let vendors get money directly from customers, and let you collect money from vendors.

@@ -223,3 +223,6 @@ Here's an example of the server hardware sufficient for 50 visitors per hour:
    *    -   RAM
 
         -   1024 Mb
+
+.. meta::
+   :description: System requirements of CS-Cart store or Multi-Vendor marketplace: supported PHP versions and databases, operating systems, required PHP extensions and web server settings, hardware requirements.

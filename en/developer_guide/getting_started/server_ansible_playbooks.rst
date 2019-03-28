@@ -222,3 +222,6 @@ Depending on the PHP version and the web server you want to use, **run one of th
   .. code-block:: bash
 
       cd ~/playbooks/ && ansible-playbook -e @config/main.json -c local -i inventory_varnish lvemp7.yml
+
+.. meta::
+   :description: How to automatically configure a server for CS-Cart store or Multi-Vendor marketplace on a clean installation of CentOS or Ubuntu operating systems.
