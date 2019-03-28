@@ -81,3 +81,6 @@ Related Articles
 ================
 
 * :doc:`/user_guide/payment_methods/paypal_for_marketplaces`
+
+.. meta::
+   :description: An add-on for Multi-Vendor that integrates your marketplace with PayPal for Marketplaces version 1. We advise using PayPal Adaptive Payments instead, for the time being.
