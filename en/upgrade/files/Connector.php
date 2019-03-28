@@ -57,7 +57,7 @@ class Connector extends BaseAddonConnector implements IConnector
         // add-on data
         $addon = SchemesManager::getScheme($this->addon_id);
 
-        $this->addon_version = isset($addon->version) ? $addon->version : '1.0';
+        $this->addon_version = $addon->getVersion() ? $addon->getVersion() : '1.0';
         // value of the 'license_number' of the add-on
         $this->license_number = (string) Settings::instance()->getValue('license_number', $this->addon_id);
 
