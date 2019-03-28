@@ -44,7 +44,7 @@ Configuration
 
    * **Use list of cities instead of a map**—if you enable this setting, the **Customer geolocation** block will show the list of pre-defined cities instead of a map with city search.
 
-     The list of cities will be generated automatically and will include all the cities where your stores and pickup points are. That was a customer can easily find out which cities have your branch offices.
+     The list of cities will be generated automatically and will include all the cities where your stores and pickup points are. That way a customer can easily find out which cities have your branch offices.
 
 #. :doc:`Create stores and pickup points, and configure the "Pick up from store" shipping method. </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/pickup>`
 
