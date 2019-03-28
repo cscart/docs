@@ -64,7 +64,7 @@ The function ``fn_advanced_addon_get_category_data_pre`` will get the currently 
 
     It is essential to follow the naming convention: ``fn_`` + *[addon id]* + ``_`` + *[hook name]*.
 
-    A function named out ot this convention will be ignored.
+    A function named out of this convention will be ignored.
 
 
 Showing Data in the Admin Panel: *index.post.tpl*, *index.post.php*
