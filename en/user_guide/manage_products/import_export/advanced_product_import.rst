@@ -135,4 +135,4 @@ How To: Import Products and Product Data
        After the import you can go to **Products → Products** and use the *Recently updated* saved search to see all products that were updated within the last hour (alternatively, you can use **Advanced search**). This will help you check the import results.
 
 .. meta::
-   :description: How to: import CSV or XML files with product data to a CS-Cart store or Multi-Vendor marketplace; import products systematically via cron; use modifiers in the advanced product import.
+   :description: Import CSV or XML files with product data to a CS-Cart store or Multi-Vendor marketplace. Import products systematically via cron. Use modifiers in the advanced product import.

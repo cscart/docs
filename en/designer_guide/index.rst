@@ -76,3 +76,6 @@ It is not necessary to use all the theme files when creating a new theme. When i
     
     */index
     *
+
+.. meta::
+   :description: Articles, guides, and manuals for designers about theme development and structure for CS-Cart and Multi-Vendor online stores.

@@ -113,3 +113,6 @@ The active theme is **child**, and it depends on the **parent** theme. In this c
 .. image:: img/template_hook_handlers.png
     :align: center
     :alt: The logic of search for SMARTY hook handlers in themes in CS-Cart/Multi-Vendor.
+
+.. meta::
+   :description: Learn how parent and child themes work in CS-Cart and Multi-Vendor, what files they share, and how to make a custom theme more compatible with other addons.

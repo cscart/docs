@@ -135,3 +135,6 @@ For example, our DIFF file has the following line: ``@@ -1,9 +1,9 @@``:
 Number 9 didn’t change because we added and removed the same number of lines in one part of the file, so the total number of lines hasn’t changed.
 
 Sometimes the line with ``@@ -l,s +l,s @@`` also includes some code that is somewhere above the ``l`` line. This code is the title of this part of the file, and the title can be ignored safely.
+
+.. meta::
+   :description: How to fix a bug in CS-Cart or Multi-Vendor before the release of a new version? Use a DIFF file, if provided by CS-Cart team. Apply it manually or via command line.

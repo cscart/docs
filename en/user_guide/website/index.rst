@@ -30,3 +30,6 @@ In this section you can:
     :glob:
 
     *
+
+.. meta::
+   :description: Articles about web-site pages, blog, robots.txt, and sitemap in CS-Cart and Multi-Vendor ecommerce software.

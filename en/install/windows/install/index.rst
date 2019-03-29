@@ -42,3 +42,6 @@ First of all, you need to install XAMPP—an environment for PHP development (se
    .. important::
 
        Some of the PHP extensions :doc:`required by CS-Cart </install/system_requirements>` (for example, ``curl``, ``sockets``, ``soap``) might be disabled in XAMPP by default. To enable them, go to the **php.ini** file of your XAMPP installation, remove the ``;`` symbol at the beginning of the lines with the required extensions, then save your changes and restart XAMPP.
+
+.. meta::
+   :description: How to test CS-Cart and Multi-Vendor online stores on XAMPP on Windows without a server?

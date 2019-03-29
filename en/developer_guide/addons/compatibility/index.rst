@@ -40,3 +40,6 @@ Version Compatibility
     adapting_473_to_474
     adapting_474_to_481
     adapting_481_to_482
+
+.. meta::
+   :description: New, changed, and deleted hooks, functions, classes of Cs-Cart and Multi-Vendor. Information about changes in new versions for add-on and theme developers.

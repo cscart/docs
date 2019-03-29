@@ -15,3 +15,6 @@ CS-Cart add-on development guides.
     *
     ../../upgrade/upgrade_addon
     compatibility/index
+
+.. meta::
+   :description: Instructions, guides, and suggestions for addon developers for CS-Cart and Multi-Vendor ecommerce platforms.

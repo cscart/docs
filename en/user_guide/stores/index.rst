@@ -20,3 +20,6 @@ To configure multiple storefronts on your web hosting, please :doc:`follow these
     :glob:
 
     *
+
+.. meta::
+   :description: Articles about configuring multiple storefronts for your CS-Cart store on different domains or subdomains for specific region or audience.

@@ -25,3 +25,6 @@ User Guide
     logs/index
     settings/index
     mobile_app/faq
+
+.. meta::
+   :description: User guide for CS-Cart and Multi-Vendor. It describes how administrators configure the store and work with the catalog, products, and orders in the Admin panel.

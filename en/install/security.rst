@@ -99,3 +99,6 @@ Step 5. Use Access Restrictions
 ===============================
 
 :doc:`The Access Restrictions add-on <../user_guide/addons/access_restrictions/index>` allows you to limit access to the administration panel and storefront based on IP addresses of the users. To learn how to restrict access to your administration panel with the **Access Restrictions** add-on, :doc:`read this article <../user_guide/addons/access_restrictions/restrict_access>`.
+
+.. meta::
+   :description: How to increase security of a CS-Cart store or Multi-Vendor marketplace? How to rename the admin panel? What file and directory permissions to set?

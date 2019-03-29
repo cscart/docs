@@ -132,3 +132,6 @@ To make any changes, just copy the corresponding files from the parent theme to 
 .. image:: img/parent_and_child_themes.png
     :align: center
     :alt: The information taken from the parent and child themes in CS-Cart.
+
+.. meta::
+   :description: How to modify CS-Cart and Multi-Vendor and not lose them after the upgrade? Find out in this article about best practices of add-on and theme development.

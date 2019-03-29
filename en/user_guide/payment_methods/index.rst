@@ -49,3 +49,6 @@ Here are some of the payment methods that you can set up in CS-Cart and Multi-Ve
     :hidden:
 
     amazon
+
+.. meta::
+   :description: Guides on how to set up various manual and automatic payment methods in CS-Cart and Multi-Vendor online ecommerce solutions.

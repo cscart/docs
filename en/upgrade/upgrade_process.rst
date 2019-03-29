@@ -115,4 +115,4 @@ Before you reopen the store, we recommend that you check whether or not the upgr
 * Check the data in the administration panel: products, orders, etc.
 
 .. meta::
-   :description: How to upgrade a CS-Cart store or Multi-Vendor marketplace via the built-in Upgrade Center; what to do before, during, and after the upgrade.
+   :description: Upgrade CS-Cart or Multi-Vendor software via the built-in Upgrade Center. Learn what to do before, during, and after the upgrade.

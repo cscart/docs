@@ -55,3 +55,6 @@ To move your store to another directory on the same server, complete the steps b
     .. hint::
 
         To clear the cache via the Administration panel, go to **Administration → Storage → Clear cache**. If you can't access the Administration panel, clear the cache manually by deleting the *var/cache* directory of your store.
+
+.. meta::
+   :description: Moving CS-Cart or Multi-Vendor installation to another folder on the same server: a step-by-step guide.

@@ -61,3 +61,6 @@ When we fix a bug, the fix is usually included in one of the future versions of 
     :glob:
 
     apply_diff_file
+
+.. meta::
+   :description: Articles and instructions on how to upgrade CS-Cart and Multi-Vendor software to the new version: Upgrade Center and Store Import.

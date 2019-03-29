@@ -57,3 +57,6 @@ If you are the root administrator, you can assign a **vendor's administrator** a
 
 .. important:: 
     For a vendor to be able to log in to the administration panel, there must be at least one vendor's administrator account associated with this vendor.
+
+.. meta::
+   :description: Articles and guides about working with vendors and vendor administrators in a Multi-Vendor marketplace.

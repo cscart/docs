@@ -16,3 +16,6 @@ All you need to do is install XAMPP (a popular PHP development environment that 
 
     xampp/index
     install/index
+
+.. meta::
+   :description: How to try CS-Cart or Multi-Vendor on Windows without a Linux or Unix server? Use XAMPP to test our ecommerce software.

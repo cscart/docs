@@ -230,3 +230,6 @@ You can also change the storage backend for sessions. Uncomment the following co
 .. note::
 
     The *database* and *redis* backends are available for sessions.
+
+.. meta::
+   :description: Configure CS-Cart and Multi-Vendor sites for development with config.local.php and local_conf.php: display errors, disable caching, use debugger and development mode.

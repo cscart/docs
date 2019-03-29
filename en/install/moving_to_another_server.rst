@@ -242,3 +242,6 @@ This is an optional step. You need to update the URL of your storefront, if the 
 .. image:: img/moving_to_another_server/storefront_url.png
     :align: center
     :alt: Update the URL and secure URL of your storefront.
+
+.. meta::
+   :description: Moving a CS-Cart store or Multi-Vendor marketplace to another server: a step-by-step guide.

@@ -110,4 +110,5 @@ The panel below the top bar serves to manage the operations of your store:
 
     Your Admin Panel may have additional menu subsections, depending on the add-ons you installed and activated.
 
-
+.. meta::
+   :description: Where to find CS-Cart or Multi-Vendor admin panel? How to work with CS-Cart or Multi-Vendor admin panel?

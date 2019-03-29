@@ -15,3 +15,6 @@ This section contains the information that is useful for CS-Cart developers.
     addons/index
     tools/index
     api/index
+
+.. meta::
+   :description: Developer documentation for CS-Cart and Multi-Vendor ecommerce solutions: developer tools, REST API, addon development, and conding standards.

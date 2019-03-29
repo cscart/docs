@@ -317,3 +317,6 @@ During the upgrade the store is always :doc:`closed </user_guide/look_and_feel/c
 * Check the data in the Administration panel (such as information about products, orders).
 
 After that you can open your store for customers.
+
+.. meta::
+   :description: Have a problem when upgrading CS-Cart or Multi-Vendor ecommerce platform? See the meaning of each error message, and how to deal with any upgrade issues.

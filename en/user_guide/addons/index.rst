@@ -91,3 +91,6 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     store_locator/index
     twigmo/index
     vendor_commission/index
+
+.. meta::
+   :description: List of built-in addons for CS-Cart and Multi-Vendor ecommerce solutions. Addons help customize your store by adding functionality.

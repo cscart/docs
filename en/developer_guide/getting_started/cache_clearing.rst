@@ -89,3 +89,6 @@ You can clear the cache manually by deleting or renaming the **var/cache** folde
 .. note::
 
     The **cache** folder will reappear and the cache will be generated again after someone opens your store in a browser.
+
+.. meta::
+   :description: Clearing cache in CS-Cart and Multi-Vendor sites is the first thing to do when you make changes to the looks and these changes have no effect.

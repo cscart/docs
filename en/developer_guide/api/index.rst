@@ -271,3 +271,6 @@ Response
 """"""""
 
 204 response with empty body.
+
+.. meta::
+   :description: Looking how to use REST API in CS-Cart and Multi-Vendor? This documentation for developers covers methods, entities, and API responses.

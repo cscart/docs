@@ -106,3 +106,6 @@ This section describes the changes that took place in various versions of CS-Car
     :maxdepth: 1
 
     history/index
+
+.. meta::
+   :description: Official user and developer documentation for CS-Cart and Multi-Vendor ecommerce platforms.

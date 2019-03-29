@@ -343,3 +343,6 @@ The top menu of the sidebar (Home, Cart, Wish List, My profile, Orders) is alway
    .. image:: img/sidebar_menu.png
        :align: center
        :alt: The menu items in CS-Cart and in the mobile app.
+
+.. meta::
+   :description: FAQ about mobile application for a CS-Cart store and Multi-Vendor marketplace: functionality, acquisition, customization, and support.

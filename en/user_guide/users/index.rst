@@ -96,3 +96,6 @@ After the new account is created, click the **gear** button and choose **Edit** 
   * **Available**—group is available for application.
 
   * **Declined**—user's application was declined.
+
+.. meta::
+   :description: Articles about working with users and user groups in CS-Cart and Multi-Vendor ecommerce software.

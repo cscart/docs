@@ -87,3 +87,6 @@ How To: Install XAMPP on Windows
 
    .. image:: img/step18.png
        :alt: Checking XAMPP
+
+.. meta::
+   :description: How to install XAMPP on Windows 10 to test CS-Cart or Multi-Vendor online ecommerce solutions without a server?

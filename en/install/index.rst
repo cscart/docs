@@ -84,3 +84,6 @@ This section covers the issues you might encounter during the installation or sh
     :glob:
 
     possible_issues/index
+
+.. meta::
+   :description: Everything about installing CS-Cart and Multi-Vendor ecommerce software: system requirements, installation instructions, server configuration tips, possible issues.

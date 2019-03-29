@@ -19,3 +19,6 @@ To import or export data, go to **Administration → Import data** or **Administ
     /user_guide/manage_products/import_export/index
     order_import_export
 
+.. meta::
+   :description: Move data to another store/marketplace, create a backup, or update data in your store with the export and import functionality.
+

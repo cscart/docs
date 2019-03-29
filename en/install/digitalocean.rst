@@ -154,4 +154,4 @@ Step 3. Install CS-Cart
 3.8. Congratulations! Now you have a fast CS-Cart store on DigitalOcean hosting.
 
 .. meta::
-   :description: How to install CS-Cart store or Multi-Vendor marketplace step by step on a DigitalOcean droplet with a clean installation of Ubuntu or CentOS operating system and configure the server automatically.
+   :description: Install CS-Cart or Multi-Vendor ecommerce software step by step on a DigitalOcean droplet. Configure the server automatically on Ubuntu or CentOS operating system.
