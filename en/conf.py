@@ -28,7 +28,7 @@ sys.path.insert(0, os.path.abspath('_ext'))
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['edit_on_github']
+extensions = ['edit_on_github', 'canonical_latest']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -302,3 +302,5 @@ highlight_language = 'phpinline'
 
 edit_on_github_project = 'cscart/docs'
 edit_on_github_branch = '%version_long%'
+
+canonical_url_prefix = 'latest'
