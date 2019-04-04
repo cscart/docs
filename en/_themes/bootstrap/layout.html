@@ -108,6 +108,11 @@
     {%- block sidebar1 %}{{ bsidebar() }}{% endblock %}
     <div class="{{ bs_span_prefix }}{{ bs_content_width }}">
       {% block body %}{% endblock %}
+         <hr class="docutils" />
+         <div class="admonition feedback">
+              <p><b>Questions & Feedback</b></p>
+              <p class="last">Have any questions that weren't answered here? Need help with solving a problem in your online store? Want to report a bug in our software? <a class="reference internal" href="https://docs.cs-cart.com/latest/comment_policy.html"><span class="doc">Find out how to contact us.</span></a></p>
+         </div>
     </div>
     {% block sidebar2 %} {# possible location for sidebar #} {% endblock %}
   </div>
