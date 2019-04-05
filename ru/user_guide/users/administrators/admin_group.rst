@@ -24,16 +24,14 @@
 
 1.4. Нажмите кнопку **Создать**.
 
-.. image:: img/admin_group.png
-    :align: center
+.. fancybox:: img/admin_group.png
     :alt: Укажите название и тип новой группы.
 
 1.5. Откройте только что созданную группу и назначьте её нужные права.
 
 1.6. Нажмите кнопку **Сохранить**.
 
-.. image:: img/admin_privileges.png
-    :align: center
+.. fancybox:: img/admin_privileges.png
     :alt: Задаем привилегии для группы администраторов в CS-Cart.
 
 =========================================

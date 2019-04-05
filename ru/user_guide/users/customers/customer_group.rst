@@ -22,8 +22,7 @@
 
 1.5. Нажмите кнопку **Создать**.
 
-.. image:: img/customer_group.png
-    :align: center
+.. fancybox:: img/customer_group.png
     :alt: Укажите название и тип новой группы.
 
 =====================================
@@ -42,6 +41,5 @@
 
     Покупатели увидят цены для своей новой группы только если они добавлены в группу и вошли в учетную запись на витрине.
 
-.. image:: img/add_customer_to_group.png
-    :align: center
+.. fancybox:: img/add_customer_to_group.png
     :alt: Добавляем покупателя в группу.

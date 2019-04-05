@@ -20,6 +20,5 @@
 
 * **Неподтвержденный** — администраторы продавца могут работать в панели администратора, но товары продавца в магазине не появляются.
 
-.. image:: img/change_vendor_status.png
-    :align: center
+.. fancybox:: img/change_vendor_status.png
     :alt: Меняем статус продавца в Multi-Vendor.

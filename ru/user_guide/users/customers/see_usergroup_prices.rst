@@ -14,6 +14,5 @@
 
 5. Нажмите кнопку **Сохранить**.
 
-.. image:: img/add_customer_to_group.png
-    :align: center
-    :alt: Проверяем статус группы для пользователя.
+   .. fancybox:: img/add_customer_to_group.png
+       :alt: Проверяем статус группы для пользователя.

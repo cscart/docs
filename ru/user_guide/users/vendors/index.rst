@@ -10,8 +10,7 @@
 
 Список продавцов в панели администратора Multi-Vendor находится на странице **Продавцы → Продавцы**.
 
-.. image:: img/vendor_list.png
-    :align: center
+.. fancybox:: img/vendor_list.png
     :alt: Список продавцов в Multi-Vendor.
 
 .. toctree::
