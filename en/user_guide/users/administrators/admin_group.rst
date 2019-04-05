@@ -2,15 +2,17 @@
 How To: Create a New Administrator Group
 ****************************************
 
-.. note::
-
-    Only the root administrator can assign user groups to other administrators. The root administrator is the administrator that is created by the system after the CS-Cart installation process is finished.
-
-.. note::
-
-    In case your root administrator has limited priviliges, first, make sure that your administrator account isn't a part of any user group. Then check the ``cscart_users`` table in the database and make sure that the ``is_root`` field for your administrator account is set to **Y**.
 
 You may want to limit what a certain administrator can do. This can be done by creating a new administrator group with limited rights and assigning it to the administrator.
+
+----------
+
+.. important::
+
+    Only a root administrator can assign user groups to other administrators. The root administrator account is created automatically during CS-Cart or Multi-Vendor installation, or manually as described below.
+
+
+If your administrator can't assign user groups, make sure that the root administrator account isn't a part of any user group itself. Then check the ``cscart_users`` table in the database and make sure that the ``is_root`` field for your administrator account is set to **Y**.
 
 ===========================
 Step 1. Create a User Group
@@ -18,25 +20,19 @@ Step 1. Create a User Group
 
 1.1. In the Administration panel go to **Customers → User groups**.
 
-1.2. Click the **+** button on the right.
+1.2. Click the **+** button on the right side of that page to open group creation pop-up.
 
-1.3. Enter the name of your user group in the **User group** field.
+1.3. Name your user group and set its **Type** to *Administrator*.
 
-1.4. Set the **Type** to **Administrator**.
-
-1.5. Click the **Create** button.
+1.4. Click **Create**.
 
 .. image:: img/admin_group.png
     :align: center
     :alt: Specify the name and the type of the new user group.
 
-1.6. Open the newly created administrator group.
+1.5. Open the newly created administrator group and adjust its privileges as you see fit.
 
-1.7. Go to the **Privileges** tab. 
-
-1.8. Tick the checkboxes next to the privileges you want to enable for the group.
-
-1.9. Click the **Save** button.
+1.6. Click **Save**.
 
 .. image:: img/admin_privileges.png
     :align: center
