@@ -34,6 +34,7 @@
     gift_certificates/index
     google_backend_signin/index
     google_recaptcha/index
+    hidpi_displays_support/index
     janrain/index
     lite_checkout/index
     maps_and_geolocation/index
