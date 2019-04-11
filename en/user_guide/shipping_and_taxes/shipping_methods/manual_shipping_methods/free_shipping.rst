@@ -32,9 +32,5 @@ How To: Offer Free Shipping When Order Total Exceeds Certain Value
 
        The shipping method will be free only for the rate area for which you configure it this way, and only if you don't have any rates specified in the **Weight dependencies** or **Items dependencies** section.
 
-   .. image:: img/free_shipping.png
-       :align: center
-       :alt: Free shipping for specific order total in CS-Cart and Multi-Vendor.
-
 .. meta::
    :description: How to take no charge for a shipping method with custom manual rates in CS-Cart or Multi-Vendor?

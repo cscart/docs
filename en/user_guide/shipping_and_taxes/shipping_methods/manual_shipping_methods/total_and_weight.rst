@@ -64,9 +64,5 @@ To set up a shipping cost that depends on order total and weight:
 
    * The order total exceeds $50, and the order weight exceeds 100 lbs: **$20 + $3**.
 
-   .. image:: img/cost_and_weight.png
-       :align: center
-       :alt: Making a shipping rate depend on cost and weight of an order in CS-Cart.
-
 .. meta::
    :description: How to set shipping rates that depend on order total and weight in CS-Cart or Multi-Vendor?

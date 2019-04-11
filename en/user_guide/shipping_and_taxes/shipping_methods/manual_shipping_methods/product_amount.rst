@@ -26,10 +26,6 @@ How To: Make Shipping Cost Depend on the Product Amount
            -   10
            -   Absolute ($)
 
-   .. image:: img/amount.png
-       :align: center
-       :alt: Editing shipping method
-
    .. hint::
 
        To add more rates, click the **+** icon on the right; it appears when you hover a mouse pointer over an existing rate.

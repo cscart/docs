@@ -44,10 +44,6 @@ Way 1. Configuring the Shipping Method
            -   Absolute ($)
            -   ✓
 
-   .. image:: img/additional_item.png
-       :align: center
-       :alt: Configuring shipping charges in CS-Cart and Multi-Vendor.
-
 #. Click the **Save** button (or **Create**, if you're creating a new shipping method).
 
    The shipping method is set up. For the mentioned example the shipping cost will be $6 if one item is ordered. An extra sum of $1.50 will be added to the cost per each additional item in case of 2 or more items.
@@ -69,10 +65,6 @@ A product has :doc:`a property </user_guide/manage_products/products/product_att
 #. Switch to the **Shipping properties** tab.
 
 #. Find the **Shipping freight** field and enter sum (for example, 2.00) which will be added to the shipping cost for each additional item of that product.
-
-   .. image:: img/additional_item_01.png
-       :align: center
-       :alt: Editing product page
 
 #. Click the **Save** button.
 

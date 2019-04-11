@@ -30,10 +30,6 @@ How To: Set up a Free Shipping Method
            -   0
            -   Absolute ($)
 
-   .. image:: img/free_shipping_method.png
-       :align: center
-       :alt: Configuring a free shipping method in CS-Cart or Multi-Vendor.
-
    .. important::
 
        Make sure that there are no charges defined in the **Weight dependencies** and **Items dependencies** sections for this shipping method.

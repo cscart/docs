@@ -16,9 +16,11 @@ To set up a manual shipping method with pre-determined rates depending on a rate
        :align: center
        :alt: Creating a shipping method with pre-determined rates in CS-Cart.
 
-#. Switch to the **Shipping charges** tab.
+#. Switch to the **Shipping time and rates** tab.
 
 #. Select the :doc:`rate area </user_guide/shipping_and_taxes/locations/index>` for which you'd like to specify rates.
+
+#. (optional) Specify the **Delivery time** for the rate area. If a rate area has a delivery time, then that time will be specified to the customers from that rate area instead of the time from the **General** tab.
 
 #. Specify the rates for the shipping method. The rates are separated into 3 sections and can depend on:
 

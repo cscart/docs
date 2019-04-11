@@ -80,7 +80,7 @@ The rates can depend on the product cost, weight or quantity, and on customer's 
 
    A **(+)** next to the rate area name means that you have specified the rates, and the shipping method will be available to the customers who specified the address matching that rate area.
 
-.. image:: img/shipping_charges.png
+.. image:: manual_shipping_methods/img/dependencies.png
     :align: center
     :alt: Shipping charges in CS-Cart.
 

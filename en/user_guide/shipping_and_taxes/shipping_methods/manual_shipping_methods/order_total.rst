@@ -26,10 +26,6 @@ How To: Make Shipping Cost Dependent on Order Total
            -   20
            -   Absolute ($)
 
-   .. image:: img/order_total.png
-       :align: center
-       :alt: Changing shipping cost depending on the order total in CS-Cart and Multi-Vendor.
-
    .. note::
 
        In this case if the order total is between $0 and $50, the shipping cost will be $25, and if the order total exceeds $50, the shipping cost will be $20.
