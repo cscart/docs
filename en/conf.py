@@ -304,3 +304,5 @@ edit_on_github_project = 'cscart/docs'
 edit_on_github_branch = '%version_long%'
 
 html_baseurl = 'https://docs.cs-cart.com/latest/'
+
+html_extra_path = ['robots.txt']

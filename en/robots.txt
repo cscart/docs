@@ -1,0 +1,3 @@
+User-agent: *
+Host: https://docs.cs-cart.com
+Sitemap: https://docs.cs-cart.com/latest/sitemap.xml
