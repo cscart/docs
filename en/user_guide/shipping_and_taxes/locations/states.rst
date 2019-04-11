@@ -23,3 +23,6 @@ State Properties
   .. note::
 
       If you disable a state, users won't be able to select it in their accounts or at checkout.
+
+.. meta::
+   :description: How to add, edit, and delete states and regions in CS-Cart and Multi-Vendor ecommerce software?

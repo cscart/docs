@@ -2,7 +2,7 @@
 Countries
 *********
 
-Use the **Administration → Shipping and taxes → Countries** page to manage the set of countries that are supported in your store.
+Manage what countries that are supported in your store on the **Administration → Shipping and taxes → Countries** page.
 
 .. image:: img/countries_list.png
     :align: center
@@ -27,3 +27,6 @@ Country Properties
   .. note::
 
       If you disable a country, users won't be able to select it in their accounts or at checkout.
+
+.. meta::
+   :description: How to remove a country in CS-Cart or Multi-Vendor ecommerce CMS?

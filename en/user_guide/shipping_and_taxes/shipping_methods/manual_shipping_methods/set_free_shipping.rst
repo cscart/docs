@@ -10,9 +10,9 @@ How To: Set up a Free Shipping Method
 
        Set the **Rate calculation** of this method to *Manual*.
 
-#. The shipping method editing page will open. Switch to the **Shipping charges** tab.
+#. The shipping method editing page will open. Switch to the **Shipping time and rates** tab.
 
-#. Select the :doc:`location </user_guide/shipping_and_taxes/locations/index>` for which you'd like to offer free shipping in the **Show rates for location** section. If you don't see this section, it means that you haven't created any locations.
+#. Select the :doc:`rate area </user_guide/shipping_and_taxes/locations/index>` for which you'd like to offer free shipping. If you don't see this section, it means that you haven't created any locations.  If you don't see the choice of rate areas, it means that you only have one.
 
 #. Configure the **Cost dependencies** section as follows:
 
@@ -40,4 +40,5 @@ How To: Set up a Free Shipping Method
 
 #. Click the **Save** button (or **Create**, if you're creating a new shipping method).
 
-
+.. meta::
+   :description: How to create a shipping method that is always free in CS-Cart or Multi-Vendor?

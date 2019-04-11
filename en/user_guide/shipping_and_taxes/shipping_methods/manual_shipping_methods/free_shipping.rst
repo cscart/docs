@@ -4,11 +4,11 @@ How To: Offer Free Shipping When Order Total Exceeds Certain Value
 
 #. In the Administration panel, go to **Administration → Shipping & taxes → Shipping methods**.
 
-#. :doc:`Create a new shipping method </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/set_manual_shipping>` or click on the name of an existing one.
+#. :doc:`Create a new shipping method with manual rate calculation </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/set_manual_shipping>` or click on the name of an existing one.
 
-#. The shipping method editing page will open. Switch to the **Shipping charges** tab.
+#. The shipping method editing page will open. Switch to the **Shipping time and rates** tab.
 
-#. Select the :doc:`location </user_guide/shipping_and_taxes/locations/index>` for which you'd like to offer free shipping in the **Show rates for location** section. If you don't see this section, it means that you haven't created any locations.
+#. Select the :doc:`rate area </user_guide/shipping_and_taxes/locations/index>` for which you'd like to offer free shipping. If you don't see the rate area selection, it means that you haven't created any rate areas and have only one of them.
 
 #. Configure the **Cost dependencies** section as follows:
 
@@ -30,8 +30,11 @@ How To: Offer Free Shipping When Order Total Exceeds Certain Value
 
    .. important::
 
-       The shipping method will be free only for the location for which you configure it this way, and only if you don't have any rates specified in the **Weight dependencies** or **Items dependencies** section.
+       The shipping method will be free only for the rate area for which you configure it this way, and only if you don't have any rates specified in the **Weight dependencies** or **Items dependencies** section.
 
    .. image:: img/free_shipping.png
        :align: center
        :alt: Free shipping for specific order total in CS-Cart and Multi-Vendor.
+
+.. meta::
+   :description: How to take no charge for a shipping method with custom manual rates in CS-Cart or Multi-Vendor?

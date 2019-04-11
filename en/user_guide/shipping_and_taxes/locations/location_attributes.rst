@@ -1,28 +1,28 @@
-*******************
-Location Properties
-*******************
+********************
+Rate Area Properties
+********************
 
 .. important::
 
-    A customer is assigned to a location when all the **non-empty conditions** (as in, country, state, ZIP code, city, address) are met. Don't specify more conditions for a location than you have to: a customer can make a mistake or leave the fields empty.
+    A customer is assigned to a rate area when all the **non-empty conditions** (as in, country, state, ZIP code, city, address) are met. Don't specify more conditions than you have to: a customer might make a mistake or leave the fields empty.
 
 =======
 General
 =======
 
-* **Name**—the name of the location.
+* **Name**—the name of the rate area in the administration panel.
 
-* **Status**—the status of the location: *Active* or *Disabled*.
+* **Status**—the status of the rate area: *Active* or *Disabled*.
 
 .. image:: img/locations_general.png
     :align: center
-    :alt: The "General" section of the location editing page in CS-Cart and Multi-Vendor.
+    :alt: The "General" section of the rate area editing page in CS-Cart and Multi-Vendor.
 
 =========
 Countries
 =========
 
-The right box contains all available countries, and the left box contains the countries included in the location. To move items from one box to the other, use the twin horizontal arrows between the boxes. To select multiple items, press and hold **Ctrl** or **Shift** while selecting.
+The right box contains all available countries, and the left box contains the countries included in the rate area. To move items from one box to the other, use the twin horizontal arrows between the boxes. To select multiple items, press and hold **Ctrl** or **Shift** while selecting.
 
 .. hint::
 
@@ -30,13 +30,13 @@ The right box contains all available countries, and the left box contains the co
 
 .. image:: img/locations_countries.png
     :align: center
-    :alt: The "Countries" section of the location editing page in CS-Cart and Multi-Vendor.
+    :alt: The "Countries" section of the rate area editing page in CS-Cart and Multi-Vendor.
 
 ======
 States
 ======
 
-The right box contains all available states, and the left box contains the states included in the location. To move items from one box to the other, use the twin horizontal arrows between the boxes. To select multiple items, press and hold **Ctrl** or **Shift** while selecting.
+The right box contains all available states, and the left box contains the states included in the rate area. To move items from one box to the other, use the twin horizontal arrows between the boxes. To select multiple items, press and hold **Ctrl** or **Shift** while selecting.
 
 .. hint::
 
@@ -44,13 +44,13 @@ The right box contains all available states, and the left box contains the state
 
 .. image:: img/locations_states.png
     :align: center
-    :alt: The "States" section of the location editing page in CS-Cart and Multi-Vendor.
+    :alt: The "States" section of the rate area editing page in CS-Cart and Multi-Vendor.
 
 ================
 Zip/Postal Codes
 ================
 
-The text box contains the ZIP/postal codes included in the location. Different entries must be separated by a paragraph break (i.e, each entry must be a separate line).
+The text box contains the ZIP/postal codes included in the rate area. Different entries must be separated by a paragraph break (i.e, each entry must be a separate line).
 
 It is not necessary to specify the exact codes, you can use wildcards instead. Here is how they work:
 
@@ -60,13 +60,13 @@ It is not necessary to specify the exact codes, you can use wildcards instead. H
 
 .. image:: img/zip_postal_codes.png
     :align: center
-    :alt: The "ZIP/Postal code" section of the location editing page in CS-Cart and Multi-Vendor.
+    :alt: The "ZIP/Postal code" section of the rate area editing page in CS-Cart and Multi-Vendor.
 
 ======
 Cities
 ======
 
-The text box contains the cities included in the location. Different entries must be separated by a paragraph break (i.e, each entry must be a separate line).
+The text box contains the cities included in the rate area. Different entries must be separated by a paragraph break (i.e, each entry must be a separate line).
 
 It is not necessary to specify the full city name, you can use wildcards instead. Here is how they work:
 
@@ -88,7 +88,7 @@ For example:
 Addresses
 =========
 
-The text box contains the addresses included in the location. Different entries must be separated by a paragraph break (i.e, each entry must be a separate line).
+The text box contains the addresses included in the rate area. Different entries must be separated by a paragraph break (i.e, each entry must be a separate line).
 
 It is not necessary to specify the exact addresses, you can use wildcards instead. Here is how they work:
 
@@ -98,4 +98,7 @@ It is not necessary to specify the exact addresses, you can use wildcards instea
 
 .. image:: img/locations_addresses.png
     :align: center
-    :alt: The "Addresses" section of the location editing page in CS-Cart and Multi-Vendor.
+    :alt: The "Addresses" section of the rate area editing page in CS-Cart and Multi-Vendor.
+
+.. meta::
+   :description: How to configure a rate area to differentiate shipping rates and taxes by location in CS-Cart or Multi-Vendor ecommerce CMS?

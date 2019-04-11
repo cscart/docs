@@ -26,12 +26,15 @@ General
 Tax Rates
 =========
 
-* **Location**—the :doc:`location </user_guide/shipping_and_taxes/locations/index>` of the customer who places the order.
+* **Rate area**—the :doc:`rate area </user_guide/shipping_and_taxes/locations/index>` of the customer who places the order.
 
-* **Rate value**—the tax rate for the given location. If the tax rate is set to *0* (zero) for a location, then the tax won't apply to the order placed by customer who specified the address matching that location.
+* **Rate value**—the tax rate for the given rate area. If the tax rate is set to *0* (zero) for a rate area, then the tax won't apply to the order placed by customer who specified the address matching that rate area.
 
   .. important::
 
-      The hard-coded location called **Default destination (all countries)** will apply only if the customer's address doesn't fall under any active location; it never applies to active locations, even if they have zero rate values.
+      The hard-coded **Default rate area (all countries)** will apply only if the customer's address doesn't fall under any active rate area; it never applies to active rate areas, even if they have zero rate values.
 	
 * **Type**—the type of the tax: absolute value in the primary currency, or a percentage of the product cost.
+
+.. meta::
+   :description: Tax settings in CS-Cart and Multi-Vendor ecommerce software.

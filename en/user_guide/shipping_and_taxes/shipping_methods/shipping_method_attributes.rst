@@ -32,7 +32,7 @@ General
 
 * **Rate calculation**—the way how the shipping cost will be calculated: 
 
-  * **Manual** calculation is based on the tables with charges and rates. You define those rates in the **Shipping charges** tab on the shipping method editing page.
+  * **Manual** calculation is based on the tables with charges and rates. You define those rates in the **Shipping time and rates** tab on the shipping method editing page.
 
   * **Realtime** calculation is based on the rates that your store receives from a third-party service. The rates are received in real time at the moment when the order is being placed.
 
@@ -68,17 +68,17 @@ Shipping Charges
 
 .. important::
 
-    If you use a manual shipping method, make sure to add at least one shipping charge :doc:`for each location </user_guide/shipping_and_taxes/locations/index>` where you want it to be available. Otherwise the shipping method won't appear to customers at checkout.
+    If you use a manual shipping method, make sure to add at least one shipping charge :doc:`for each rate area </user_guide/shipping_and_taxes/locations/index>` where you want it to be available. Otherwise the shipping method won't appear to customers at checkout.
 
 The rates that you define here are used to calculate the shipping cost, regardless of whether you use real-time shipping rate estimation or not.
 
 If you receive rates from a shipping service provider in real time, the charges from this section will be simply added to the received rates. You can use this to compensate for your actual expenses if they exceed the values returned by the carrier (e.g., packing, insurance, etc.)
 
-The rates can depend on the product cost, weight or quantity, and on customer's location. Once you're done specifying the rates, click **Save**.
+The rates can depend on the product cost, weight or quantity, and on customer's rate area. Once you're done specifying the rates, click **Save**.
 
 .. hint::
 
-   A **(+)** next to the location name means that you have specified the rates, and the shipping method will be available to the customers who specified the address matching that location.
+   A **(+)** next to the rate area name means that you have specified the rates, and the shipping method will be available to the customers who specified the address matching that rate area.
 
 .. image:: img/shipping_charges.png
     :align: center
@@ -92,7 +92,7 @@ The rates can depend on the product cost, weight or quantity, and on customer's 
 
 .. hint::
 
-    If you want to make a manual shipping method free, you still need to add at least one shipping charge for the desired location, or the shipping method won't appear at checkout. You can set it up as described below.
+    If you want to make a manual shipping method free, you still need to add at least one shipping charge for the desired rate area, or the shipping method won't appear at checkout. You can set it up as described below.
 
 .. list-table::
     :widths: 10 10 10
@@ -113,3 +113,6 @@ Share
 =====
 
 Other storefronts that share this shipping method. :doc:`Learn more about sharing objects. </user_guide/stores/sharing>`
+
+.. meta::
+   :description: The full list of settings that a shipping methods can have in CS-Cart or Multi-Vendor ecommerce platforms.

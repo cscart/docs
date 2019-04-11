@@ -14,7 +14,7 @@ If shipping methods don't appear at checkout, there are two possible scenarios:
 No Shipping Options Available for Your Location
 ===============================================
 
-* Check the location settings in your store. Open the Administration panel and go to **Administration → Shipping & taxes → Locations**. Click on the name of the desired location. Check whether the address selected in the **Shipping** section on the **Checkout** page in the storefront is included in the location.
+* Check the rate area settings in your store. Open the Administration panel and go to **Administration → Shipping & taxes → Rate areas**. Click on the name of the desired rate area. Check whether the address selected in the **Shipping** section on the **Checkout** page in the storefront is included in the rate area.
 
 * If you set up a manual shipping method, follow :doc:`this article <manual_shipping_methods/shipping_not_displayed>`.
 
@@ -37,3 +37,6 @@ Go to **Settings → Checkout** and make sure that the **Display "Shipping metho
 * Make sure that you have an active shipping method under **Administration → Shipping & taxes → Shipping methods**.
 
 * Make sure that the product being purchased is not downloadable (by default, digital products are shipped for free, unless you configure the product otherwise).
+
+.. meta::
+   :description: What to do if shipping methods don't appear at checkout in CS-Cart and Multi-Vendor ecommerce platforms?

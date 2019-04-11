@@ -10,11 +10,11 @@ Way 1. Configuring the Shipping Method
 
 #. In the Administration panel, go to **Administration → Shipping & taxes → Shipping methods**.
 
-#. :doc:`Create a new shipping method </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/set_manual_shipping>` or click on the name of an existing one.
+#. :doc:`Create a new shipping method with manual rate calculation </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/set_manual_shipping>` or click on the name of an existing one.
 
-#. The shipping method editing page will open. Switch to the **Shipping charges** tab.
+#. The shipping method editing page will open. Switch to the **Shipping times and rates** tab.
 
-#. Select the :doc:`location </user_guide/shipping_and_taxes/locations/index>` for which you'd like to set up this cost in the **Show rates for location** section. If you don't see this section, it means that you haven't created any locations.
+#. Select the :doc:`rate area </user_guide/shipping_and_taxes/locations/index>` for which you'd like to configure the shipping cost. If you don't see the choice of rate areas, it means that you only have one.
 
 #. Configure the **Cost dependencies** section as follows:
 
@@ -83,3 +83,6 @@ A product has :doc:`a property </user_guide/manage_products/products/product_att
    * **2\*Product A** = $4.50 + 2\*($1.50 + $2) = **$11.50**
 
    * **2\*Product A + 1\*Product B** = $4.50 + 2\*($1.50 + $2) + 1\*$1.50 = **$13**
+
+.. meta::
+   :description: How to increase the base shipping charge per item in CS-Cart or Multi-Vendor ecommerce software?
