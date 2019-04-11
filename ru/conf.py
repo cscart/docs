@@ -263,14 +263,12 @@ epub_copyright = u'2014, CS-Cart Россия'
 from sphinx.highlighting import lexers
 from pygments.lexers.web import PhpLexer
 
-
-
 lexers['phpinline'] = PhpLexer(startinline=True)
 
 highlight_language = 'phpinline'
 
-
-
 # FancyBox defaults
 fancybox_thumbnail_width = '350px'
 fancybox_thumbnail_height = 'auto'
+
+html_baseurl = 'https://www.cs-cart.ru/docs/latest/'
