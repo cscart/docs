@@ -4,17 +4,17 @@ If a Manual Shipping Method is Not Displayed
 
 If a :doc:`manual shipping method </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/set_manual_shipping>` doesn't appear at checkout, follow these steps to find out the reason:
 
-#. In the Administration panel, go to **Administration → Shipping & taxes → Locations** and check whether a :doc:`location </user_guide/shipping_and_taxes/locations/set_location>` is set up properly.
+#. In the Administration panel, go to **Administration → Shipping & taxes → Rate areas** and check whether a :doc:`rate area </user_guide/shipping_and_taxes/locations/set_location>` is set up properly.
 
-   * Check whether geographic areas (states or countries) of locations do not intersect with each other.
+   * Check whether geographic areas (states or countries) of rate areas do not intersect with each other.
 
-   * Check whether the states (if they exist) are selected on the location editing page.
+   * Check whether the states (if they exist) are selected on the rate area editing page.
 
-#. Go to **Administration → Shipping & taxes → Shipping methods** and choose the desired shipping method. Switch to the **Shipping rates** tab and check the rates have been specified for the customer's location.
+#. Go to **Administration → Shipping & taxes → Shipping methods** and choose the desired shipping method. Switch to the **Shipping rates** tab and check the rates have been specified for the customer's rate area.
 
    .. image:: img/rates.png
        :align: center
-       :alt: Rates for location
+       :alt: Rates for a rate area.
 
 #. If you use Multi-Vendor, make sure that the shipping method is available to the vendor (or vendors): 
 
