@@ -1,24 +1,16 @@
 from os.path import join
-from sphinx.util.osutil import SEP
 
 
 def setup(app):
-    app.connect('env-before-read-docs', envpurgedoc)
+    app.add_config_value('html_baseurl', '/', True)
+    app.connect('env-before-read-docs', generate_sitemap)
 
 
-def envpurgedoc(app, env, docnames):
+def generate_sitemap(app, env, docnames):
     f = open(join(app.outdir, 'sitemap.txt'), 'w')
 
-    split_index = app.outdir.rfind('/')
-    version = app.outdir[split_index + 1:]
-
     for docname in docnames:
-
-        if docname == 'index' or docname.endswith(SEP + 'index'):
-            url = join('https://www.cs-cart.ru/docs', version, docname[:-5])
-        else:
-            url = join('https://www.cs-cart.ru/docs', version, docname + '.html')
-
+        url = join(app.config.html_baseurl, docname + '.html')
         f.write(url + '\n')
 
     f.close()
