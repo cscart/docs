@@ -16,7 +16,7 @@ CS-Cart and Multi-Vendor documentation can't answer all the possible questions. 
 
    Forums can help with things beyond the scope of our technical support, such as coding or changing the standard functionality of CS-Cart and Multi-Vendor.
 
-#. `Bug tracker <http://forum.cs-cart.com/tracker/project-1-cs-cart/>`_ is where you can report bugs in our software. For more information, please refer to `our bug fixing policy <https://www.cs-cart.com/bug-fixing.html>`_.
+#. `Bug tracker <http://forum.cs-cart.com/tracker/project-1-cs-cart/>`_ is where you can report bugs in our software. For more information, please refer to `our bug fixing policy <https://www.cs-cart.com/bug-fixing.html>`_. You'll be able to see the bug tracker only after you sign in to your forum account.
 
 #. Our marketplace of add-ons and themes has `the list of third-party developers <https://marketplace.cs-cart.com/developers-catalog.html>`_ who may help you solve problems outside the scope of our technical support, or change the looks and behavior of your online store per your specifications.
 
