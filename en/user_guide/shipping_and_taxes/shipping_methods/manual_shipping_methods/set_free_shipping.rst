@@ -1,5 +1,5 @@
 *************************************
-How To: Set up a Free Shipping Method
+How To: Set Up a Free Shipping Method
 *************************************
 
 #. In the Administration panel, go to **Administration → Shipping & Taxes → Shipping methods**.
@@ -12,7 +12,7 @@ How To: Set up a Free Shipping Method
 
 #. The shipping method editing page will open. Switch to the **Shipping time and rates** tab.
 
-#. Select the :doc:`rate area </user_guide/shipping_and_taxes/locations/index>` for which you'd like to offer free shipping. If you don't see this section, it means that you haven't created any locations.  If you don't see the choice of rate areas, it means that you only have one.
+#. Select the :doc:`rate area </user_guide/shipping_and_taxes/locations/index>` for which you'd like to offer free shipping. If you don't see the choice of rate areas, it means that you only have one.
 
 #. Configure the **Cost dependencies** section as follows:
 

@@ -16,8 +16,7 @@
 
 #. Нажмите **Сохранить**.
 
-   .. image:: img/certain_product.png
-       :align: center
+   .. fancybox:: img/certain_product.png
        :alt: Страница редактирования товара в CS-Cart.
 
 #. Настройте способ доставки:
@@ -30,8 +29,7 @@
 
    * Нажмите **Сохранить**.
 
-   .. image:: img/use_for_free_shipping.png
-       :align: center
+   .. fancybox:: img/use_for_free_shipping.png
        :alt: Страница редактирования способа доставки в CS-Cart.
 
    .. hint::

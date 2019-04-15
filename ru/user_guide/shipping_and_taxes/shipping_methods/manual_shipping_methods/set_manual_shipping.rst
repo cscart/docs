@@ -12,8 +12,7 @@
 
 #. В настройке **Расчёт тарифа** выберите *Вручную*.
 
-   .. image:: img/manual_shipping.png
-       :align: center
+   .. fancybox:: img/manual_shipping.png
        :alt: Создание способа доставки с тарифами, заданными вручную, в CS-Cart
 
 #. Перейдите на вкладку **Стоимость и сроки доставки**.
@@ -38,6 +37,5 @@
 
 #. Нажмите **Сохранить** (или **Создать**, если вы добавляете новый способ доставки).
 
-   .. image:: img/dependencies.png
-       :align: center
+   .. fancybox:: img/dependencies.png
        :alt: Настройка тарифов доставки в CS-Cart.
