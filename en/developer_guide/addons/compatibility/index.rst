@@ -6,9 +6,7 @@ Version Compatibility
     :maxdepth: 2
     :titlesonly:
 
-    adapting_482_to_491
-    adapting_491_to_492
-    adapting_492_to_493
+    adapting_493_to_4101
 
 .. toctree::
     :maxdepth: 2
@@ -40,6 +38,9 @@ Version Compatibility
     adapting_473_to_474
     adapting_474_to_481
     adapting_481_to_482
+    adapting_482_to_491
+    adapting_491_to_492
+    adapting_492_to_493
 
 .. meta::
    :description: New, changed, and deleted hooks, functions, classes of Cs-Cart and Multi-Vendor. Information about changes in new versions for add-on and theme developers.
