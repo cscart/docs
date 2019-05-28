@@ -147,7 +147,7 @@ To add notifications into the Notification Center, use the ``Tygh::$app['notific
 
 To manually manage notifications (create, update, find, or remove them), use the ``Tygh::$app['notifications_center.repository']`` service. This service provides the configured ``\Tygh\NotificationsCenter\Repository`` class instance.
 
-All the tabs that are displayed in the Notifications Center are described in the ``notifications/notifications_center.php`` schema; feel free to extend them for your needs.
+All the tabs that are displayed in the Notifications Center are described in the *notifications/notifications_center.php* schema; feel free to extend them for your needs.
 
 -------------------------
 Image Zoom Add-on Changes
@@ -188,7 +188,6 @@ New Hooks
 #. This hook is executed when the document template is being rendered and the ``pickup_point`` variable is being filled. The hook allows you to specify that a pickup point is selected as the shipping destination, and to set the pickup point data such as its address, phone, open hours, etc.::
 
      fn_set_hook('pickup_point_variable_init', $this, $order, $lang_code, $is_selected, $name, $phone, $full_address, $open_hours_raw, $open_hours, $description_raw, $description);
-
 
 #. This hook allows you to modify shipping data after it has been fetched::
 
@@ -286,7 +285,7 @@ New Hooks
 
      fn_set_hook('get_store_locations_for_shipping_before_select', $destination_id, $fields, $joins, $conditions);
 
-#. This hook is executed before the feature variants are be deleted::
+#. This hook is executed before the feature variants are deleted::
 
      fn_set_hook('delete_product_feature_variants_pre', $feature_id, $variant_ids);
 
@@ -577,7 +576,7 @@ New Functions
 
      fn_rus_pickpoint_format_pickpoint_format_pickup_point_address($pickup_point)
 
-#. Format the open hours of a PickPoint pickup point open hours::
+#. Format the open hours of a PickPoint pickup point::
 
      fn_rus_pickpoint_format_pickup_point_open_hours($work_time, $lang_code)
 
@@ -653,7 +652,7 @@ New Functions
 
      fn_checkout_flatten_payments_list(array $payment_methods)
 
-#. Generate a fake email address when an order is placed while the "Show the "E-mail" field on checkout" setting is off::
+#. Generate a fake email address when an order is placed without an email address::
 
      fn_checkout_generate_fake_email_address(array $user_data, $unique_id)
 
@@ -661,7 +660,7 @@ New Functions
 
      fn_checkout_is_email_address_fake($email_address)
 
-#. Get the value of the *$calculate_shipping parameter* for the ``fn_calculate_cart_content function``::
+#. Get the value of the *$calculate_shipping* parameter for the ``fn_calculate_cart_content`` function::
 
      fn_checkout_get_shippping_calculation_type($cart, $is_location_changed)
 
