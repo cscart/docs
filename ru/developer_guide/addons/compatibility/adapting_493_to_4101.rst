@@ -34,6 +34,95 @@
 
    Ключ ``timeout`` массива ``extra`` переименован в ``connection_timeout``, потому что он устанавливает максимальное время на подтверждение соединения; обратная совместимость сохранена.
 
+--------------------------------
+Схема описания модулей: версия 4
+--------------------------------
+
+Добавлена новая схема описания модулей — v4. Её цель — дать возможность писать модули в ООП-стиле. Эта версия схемы ещё только формируется, но уже сейчас можно использовать следующие нововведения:
+
+* **autoload**. Секция предназначена для декларативного описания директорий, которые будут зарегистрированы в автозагрузчике классов. Подробнее о PSR-4 можно почитать на сайте `PHP Framework Interoperability Group <https://www.php-fig.org/psr/psr-4/>`_.
+
+  Пример использования:
+
+  .. code-block:: xml
+
+    <autoload>
+        <psr4 prefix="Tygh\Addons\ProductVariations\">src</psr4>
+        <psr4 prefix="Tygh\Addons\ProductVariations\Tests\Unit\">tests</psr4>
+    </autoload>
+
+* **bootstrap**. Секция предназначена для указания класса-загрузчика модуля. Это аналог init.php в 3ей cхеме.
+
+  Класс должен реализовывать интерфейс ``\Tygh\Core\BootstrapInterface`` с методом ``boot``, который будет вызываться при каждой инициализации модуля. Как правило, в методе ``boot`` должен быть только код, отвечающий за регистрацию каких-либо сервисов. Дополнительно bootstrap-класс может реализовать интерфейс ``\Tygh\Core\HookHandlerProviderInterface``, который используется для описания обработчиков хуков. ``\Tygh\Core\HookHandlerProviderInterface`` требует реализации метода ``getHookHandlerMap``, возвращаемым значением которого должен быть массив с описанием обработчиков хуков.
+
+  Форматы описания обработчиков хуков:
+
+  * **Упрощённый формат:** *hook => callable*. Ключом является название хука, а значением — любая callable-конструкция, либо указание метода из сервиса в контейнере зависимостей. Примеры:
+
+    *
+
+      ::
+
+        'get_products' => ['Tygh\Addons\MyChanges\ProductsHookHandler', 'onGetProducts']
+
+      Ожидается наличие статического метода ``Tygh\Addons\MyChanges\ProductsHookHandler::onGetProducts``.
+
+    *
+
+      ::
+
+        'get_products' => function ($params, $products) { //... }
+
+      Используется анонимная функция.
+
+    *
+
+      ::
+
+        'get_products' => ['addons.my_changes.products_hook_handler', 'onGetProducts']
+
+      Ожидается наличие зарегистрированного в ``Tygh::$app`` сервиса ``addons.my_changes.products_hook_handler`` c методом ``'onGetProducts'``.
+
+    Также в упрощённом формате есть возможность третьим элементом массива указать приоритет обработчика хуков. Пример::
+
+      'get_route' => [
+          'addons.product_variations.hook_handlers.seo',
+          'onGetRoute',
+          1900
+      ],
+
+  * **Расширенный формат:** *hook_key => hook_handler_definition*. Пример::
+
+      'discussions_variation_group_mark_product_as_main_post' => [
+          'hook'     => 'variation_group_mark_product_as_main_post',
+          'handler'  => [
+              'addons.product_variations.hook_handlers.discussions',
+              'onVariationGroupMarkProductAsMainPost',
+          ],
+          'addon'    => 'discussion',
+          'priority' => 790
+      ],
+
+    Ключом массива может быть любой смысловой код.
+    
+    * ``hook`` — название хука;
+
+    * ``handler`` — описание обработчика хука; значением может быть любая callable-конструкция, либо указание метода из сервиса в контейнере зависимостей;
+
+    * ``addon`` — код модуля, от имени которого регистрируется обработчик; параметр может быть опущен; в таком случае обработчик хука будет зарегистрирован от текущего модуля;
+
+    * ``priority`` — приоритет обработчика; параметр может быть опущен; в таком случае значение приоритета будет использовано из модуля.
+
+* **installer**. Секция предназначена для указания класса, который будет использован при установке и удалении модуля. Класс должен реализовать интерфейс ``\Tygh\Addons\InstallerInterface``, со следующими методами:
+
+  * ``factory(ApplicationInterface $app)`` — статический метод, который должен вернуть инстанс класса; метод будет вызываться в момент необходимости класса;
+
+  * ``onBeforeInstall()`` — аналог ``before_install`` из 3ей cхемы, будет вызван перед установкой модуля;
+
+  * ``onInstall()`` — аналог ``install`` из 3ей cхемы, будет вызван после установки модуля;
+
+  * ``onUninstall()`` — аналог ``uninstall`` из 3ей cхемы, будет вызван перед удалением модуля.
+
 -----------------------
 Новое оформление заказа
 -----------------------
@@ -44,7 +133,7 @@
 
 * Старое оформление заказа вынесено в отдельный модуль "Пошаговое оформление заказа".
 
-* Макет новой страницы оформления заказа теперь разбит на отдельные блоки. Они создадутся автоматически, когда модкль **Пошаговое оформление заказа" будет выключен или удалён. В новых установках блоки будут существовать по умолчанию. Их имена начинаются так: ``Оформление заказа: ...``.
+* Макет новой страницы оформления заказа теперь разбит на отдельные блоки. Они создадутся автоматически, когда модуль **Пошаговое оформление заказа** будет выключен или удалён. В новых установках блоки будут существовать по умолчанию. Их имена начинаются так: ``Оформление заказа: ...``.
 
 * Блок **Главное содержимое** должен быть выключен, когда используется новое оформление заказа.
 
@@ -100,7 +189,7 @@
 
 .. note::
 
-    **Об обратной совместимости:** функция ``fn_calculate_cart_content`` будет проверять поле``$cart['calculate_shipping']``. Если его значение ``true``, то будет принудительно запущен расчёт стоимости доставки.
+    **Об обратной совместимости:** функция ``fn_calculate_cart_content`` будет проверять поле ``$cart['calculate_shipping']``. Если его значение ``true``, то будет принудительно запущен расчёт стоимости доставки.
 
 --------------------------------
 Мультивитринность в Multi-Vendor
@@ -180,7 +269,7 @@
 Новые хуки
 ----------
 
-#. Выполняется после получения налогов на стоимость доставки и позволяет поменять налоги на стоимость доставки:This hook is executed after shipping taxes are retrieved; it allows you to modify the shipping taxes::
+#. Выполняется после получения налогов на стоимость доставки и позволяет поменять налоги на стоимость доставки::
 
      fn_set_hook('get_shipping_taxes_post', $shipping_id, $shipping_rates, $cart, $taxes);
 
@@ -288,6 +377,70 @@
 
      fn_set_hook('delete_product_feature_variants_pre', $feature_id, $variant_ids);
 
+#. Позволяет менять контекст элемента таблицы для отрисовки сниппета таблицы с данными::
+
+     fn_set_hook('template_snippet_table_item_context_init', $this, $context, $item, $counter);
+
+#. Выполняется перед созданием нового товара по комбинации характеристик; позволяет модифицировать данные перед сохранением товара:: 
+
+     fn_set_hook('variation_group_create_products_by_combinations_item', $service, $parent_product_id, $combination_id, $combination, $product_data);
+
+#. Выполняется перед добавлением товаров в группу вариаций; позволяет реализовать дополнительные проверки перед добавлением в группу вариаций::
+
+     fn_set_hook('variation_group_add_products_to_group', $service, $result, $products, $group, $products_status);
+
+#. Выполняется после смены родительского товара; позволяет выполнить дополнительные действия::
+
+     fn_set_hook('variation_group_mark_product_as_main_post', $service, $group, $from_group_product, $to_group_product);
+
+#. Выполняется после сохранения группы вариаций; позволяет выполнить дополнительные действия и среагировать на события, произошедшие в группе вариаций::
+
+     fn_set_hook('variation_group_save_group', $service, $group, $events);
+
+#. Выполняется после обработанных событий синхронизации; позволяет реализовать реакцию на синхронизированные данные::
+
+     fn_set_hook('variation_sync_flush_sync_events', $sync_service, $events);
+
+#. Выполняется после того, как глобальная опция была привязана к товару::
+
+     fn_set_hook('add_global_option_link_post', $product_id, $option_id);
+
+#. Выполняется после того, как глобальная опция была отвязана от товара::
+
+     fn_set_hook('delete_global_option_link_post', $product_id, $option_id);
+
+#. Позволяет выполнять действия после обновления вкладки товара::
+
+     fn_set_hook('update_product_tab_post', $tab_id, $tab_data);
+
+#. Выполняется в начале функции; позволяет менять аргументы, передаваемые в функцию::
+
+     fn_set_hook('get_attachments_pre', $object_type, $object_id, $type, $lang_code);
+
+#. Обрабатывает данные местоположения после их обновления::
+
+     fn_set_hook('update_location_post', $location_data, $lang_code, $location_id);
+
+#. Обрабатывает данные блока после их обновления::
+
+     fn_set_hook('update_block_post', $block_data, $description, $block_id);
+
+#. Обрабатывает данные привязки перед их обновлением::
+
+     fn_set_hook('update_snapping_pre', $snapping_data);
+
+#. Обрабатывает данные привязки после их обновления::
+
+     fn_set_hook('update_snapping_post', $snapping_data);
+
+#. Обрабатывает данные статуса блока после их обновления::
+
+     fn_set_hook('update_block_status_post', $status_data);
+
+#. Выполняется при сохранении витрины, позволяет выполнить дополнительные действия::
+
+     fn_set_hook('storefront_repository_save_post', $storefront, $save_result);
+
 ---------------
 Изменённые хуки
 ---------------
@@ -372,6 +525,15 @@
     // Стало:
     fn_set_hook('delete_company', $company_id, $result, $storefronts);
 
+#.
+
+  ::
+
+    // Было:
+    fn_set_hook('reorder_product', $order_info, $cart, $auth, $product, $amount, $price, $zero_price_action);
+
+    // Стало:
+    fn_set_hook('reorder_product', $order_info, $cart, $auth, $product, $amount, $price, $zero_price_action, $k);
 
 ====================
 Изменения в функциях
@@ -529,7 +691,7 @@
 
 #. ``\Tygh\Location\Location`` предоставляет хранилище местоположения покупателя.
 
-#. ``\Tygh\Location\Manager``предоставляет способы для работы с объектом местоположения покупателя.
+#. ``\Tygh\Location\Manager`` предоставляет способы для работы с объектом местоположения покупателя.
 
 #. ``\Tygh\Location\IUserDataStorage`` описывает интерфейс объекта хранения данных пользователя для выбора местоположения покупателя.
 
@@ -666,6 +828,18 @@
 #. Получает последнее значение автоинкрементного столбца::
 
      \Tygh\Database\Connection::getInsertId()
+
+#. Устанавливает корзине идентификатор профиля::
+
+     fn_checkout_set_cart_profile_id(&$cart, $profile_id)
+
+#. Получает профили пользователя для оформления заказа::
+
+     fn_checkout_get_user_profiles($auth)
+
+#. Проверяет, разрешено ли несколько профилей для текущего пользователя::
+
+     fn_checkout_is_multiple_profiles_allowed($auth)
 
 ------------------
 Изменённые функции
@@ -820,6 +994,17 @@
 
     // Стало:
     fn_update_product_amount($product_id, $amount_delta, $product_options, $sign, $notify = true, $order_info = [])
+
+#.
+
+  ::
+
+    // Было:
+    fn_check_admin_permissions(&$schema, $controller, $mode, $request_method = '', $request_variables = array())
+
+    // Стало:
+    fn_check_admin_permissions(&$schema, $controller, $mode, $request_method = '', $request_variables = array(), $user_id = null)
+
 
 ====================
 Изменения в шаблонах

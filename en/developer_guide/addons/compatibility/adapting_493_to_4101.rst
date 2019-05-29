@@ -34,6 +34,95 @@ Common Changes
 
    The ``timeout`` key of the ``extra`` array was renamed to ``connection_timeout``, because it sets the timeout for the confirmation of connection; backward compatibility was preserved.
 
+------------------------
+Add-on Schema: Version 4
+------------------------
+
+New schema for describing add-ons was added. Schema v4 aims to allow writing add-ons in object-oriented style. This version of the schema is still being developed, but you can already use the following improvements:
+
+* **autoload**. This section serves for declarative description of directories that will be registered in the auto-loader of classes. Learn more about PSR-4 at `the website of PHP Framework Interoperability Group <https://www.php-fig.org/psr/psr-4/>`_.
+
+  Example of use:
+
+  .. code-block:: xml
+
+    <autoload>
+        <psr4 prefix="Tygh\Addons\ProductVariations\">src</psr4>
+        <psr4 prefix="Tygh\Addons\ProductVariations\Tests\Unit\">tests</psr4>
+    </autoload>
+
+* **bootstrap**. This section is meant for specifying the loader class of the add-on. It's the equivalent of init.php in schema v3.
+
+  The class must implement the ``\Tygh\Core\BootstrapInterface`` interface with the ``boot`` method, that will be called during every initialization of the add-on. Usually, the ``boot`` method should include only the code that handles the registration of services. Additionally, the bootstrap class may implement ``\Tygh\Core\HookHandlerProviderInterface``, that is used for describing hook handlers. ``\Tygh\Core\HookHandlerProviderInterface`` requires implementation of the ``getHookHandlerMap`` method, that must return an array with the description of hook handlers.
+
+  Formats for describing hook handlers:
+
+  * **Simplified format:** *hook => callable*. Key is hook name, and value is either any callable construction, or a method from a service in the container of dependencies. Examples:
+
+    *
+
+      ::
+
+        'get_products' => ['Tygh\Addons\MyChanges\ProductsHookHandler', 'onGetProducts']
+
+      It expects the presence of static method ``Tygh\Addons\MyChanges\ProductsHookHandler::onGetProducts``.
+
+    *
+
+      ::
+
+        'get_products' => function ($params, $products) { //... }
+
+      Anonymous function is used.
+
+    *
+
+      ::
+
+        'get_products' => ['addons.my_changes.products_hook_handler', 'onGetProducts']
+
+      It expects the ``addons.my_changes.products_hook_handler`` service registered in ``Tygh::$app``, along with the ``'onGetProducts'`` method.
+
+    The simplified format also allows specifying priority of the hook handler as the third element of the array. For example::
+
+      'get_route' => [
+          'addons.product_variations.hook_handlers.seo',
+          'onGetRoute',
+          1900
+      ],
+
+  * **Extended format:** *hook_key => hook_handler_definition*. For example::
+
+      'discussions_variation_group_mark_product_as_main_post' => [
+          'hook'     => 'variation_group_mark_product_as_main_post',
+          'handler'  => [
+              'addons.product_variations.hook_handlers.discussions',
+              'onVariationGroupMarkProductAsMainPost',
+          ],
+          'addon'    => 'discussion',
+          'priority' => 790
+      ],
+
+    Any meaningful code can serve as the array key.
+    
+    * ``hook``—hook name.
+
+    * ``handler``—the description of the hook handler. The value can be any callable construction, or a method from a service in the container of dependencies.
+
+    * ``addon``—the code of the add-on on behalf of which the handler is registered. This parameter can be skipped; in that case, the hook handler will be registered on behalf of the current add-on.
+
+    * ``priority``—priority of the handler. This parameter can be skipped; int hat case, the priority from the add-on will be used. 
+
+* **installer**. This section is meant for specifying the class that will be used when the add-on is installed or uninstalled. The class must implement the ``\Tygh\Addons\InstallerInterface`` interface with the following methods:
+
+  * ``factory(ApplicationInterface $app)`` — a static method that returns the instance of a class. The method will be called when the class is necessary.
+
+  * ``onBeforeInstall()``—the equivalent of ``before_install`` from schema 3.0; will be called before add-on installation.
+
+  * ``onInstall()``—the equivalent of ``install`` from schema 3.0; will be called during add-on installation.
+
+  * ``onUninstall()``—the equivalent of ``uninstall`` from schema 3.0; will be called before the add-on is uninstalled.
+
 ------------
 New Checkout
 ------------
@@ -289,6 +378,71 @@ New Hooks
 
      fn_set_hook('delete_product_feature_variants_pre', $feature_id, $variant_ids);
 
+#. This hook allows you to change the table item context for the render of the data table snippet::
+
+     fn_set_hook('template_snippet_table_item_context_init', $this, $context, $item, $counter);
+
+#. This hook is executed before a new product is created from a combination of feature values. The hook allows you to modify the data before the product is saved:: 
+
+     fn_set_hook('variation_group_create_products_by_combinations_item', $service, $parent_product_id, $combination_id, $combination, $product_data);
+
+#. This hook is executed before products are added to variation group. It allows you to run additional checks before products are added to the group::
+
+     fn_set_hook('variation_group_add_products_to_group', $service, $result, $products, $group, $products_status);
+
+#. This hook is executed after a parent product is changed. It allows you to perform additional actions::
+
+     fn_set_hook('variation_group_mark_product_as_main_post', $service, $group, $from_group_product, $to_group_product);
+
+#. This hook is executed after a variation group has been created. It allows you to perform additional actions and react to the events that occur in the variation group::
+
+     fn_set_hook('variation_group_save_group', $service, $group, $events);
+
+#. This hook is executed after the syncing events have been processed. The hook allows you to implement reaction to synced data::
+
+     fn_set_hook('variation_sync_flush_sync_events', $sync_service, $events);
+
+#. This hook is executed after a global option has been linked to a product::
+
+     fn_set_hook('add_global_option_link_post', $product_id, $option_id);
+
+#. This hook is executed after a global option has been unlinked from a product::
+
+     fn_set_hook('delete_global_option_link_post', $product_id, $option_id);
+
+#. This hook allows you to perform actions after a product tab has been updated::
+
+     fn_set_hook('update_product_tab_post', $tab_id, $tab_data);
+
+#. This hook is executed at the beginning of the function and allows you to modify the arguments passed to the function::
+
+     fn_set_hook('get_attachments_pre', $object_type, $object_id, $type, $lang_code);
+
+#. This hook processes location data after it has been updated::
+
+     fn_set_hook('update_location_post', $location_data, $lang_code, $location_id);
+
+#. This hook processes block data after it has been updated::
+
+     fn_set_hook('update_block_post', $block_data, $description, $block_id);
+
+#. This hook processes snapping data before it is updated::
+
+     fn_set_hook('update_snapping_pre', $snapping_data);
+
+#. This hook processes snapping data after it has been updated::
+
+     fn_set_hook('update_snapping_post', $snapping_data);
+
+#. This hook processes block status data it has been updated::
+
+     fn_set_hook('update_block_status_post', $status_data);
+
+#. This hook is executed when storefront is saved. The hook allows to perform additional actions::
+
+     fn_set_hook('storefront_repository_save_post', $storefront, $save_result);
+
+
 -------------
 Changed Hooks
 -------------
@@ -373,6 +527,15 @@ Changed Hooks
     // New:
     fn_set_hook('delete_company', $company_id, $result, $storefronts);
 
+#.
+
+  ::
+
+    // Old:
+    fn_set_hook('reorder_product', $order_info, $cart, $auth, $product, $amount, $price, $zero_price_action);
+
+    // New:
+    fn_set_hook('reorder_product', $order_info, $cart, $auth, $product, $amount, $price, $zero_price_action, $k);
 
 ==============
 Core Functions
@@ -668,6 +831,18 @@ New Functions
 
      \Tygh\Database\Connection::getInsertId()
 
+#. Set profile identifier to the cart::
+
+     fn_checkout_set_cart_profile_id(&$cart, $profile_id)
+
+#. Fetch user profiles for checkout::
+
+     fn_checkout_get_user_profiles($auth)
+
+#. Check if multiple profiles are allowed for current user::
+
+     fn_checkout_is_multiple_profiles_allowed($auth)
+
 -----------------
 Changed Functions
 -----------------
@@ -821,6 +996,17 @@ Changed Functions
 
     // New:
     fn_update_product_amount($product_id, $amount_delta, $product_options, $sign, $notify = true, $order_info = [])
+
+#.
+
+  ::
+
+    // Old:
+    fn_check_admin_permissions(&$schema, $controller, $mode, $request_method = '', $request_variables = array())
+
+    // New:
+    fn_check_admin_permissions(&$schema, $controller, $mode, $request_method = '', $request_variables = array(), $user_id = null)
+
 
 ================
 Template Changes
