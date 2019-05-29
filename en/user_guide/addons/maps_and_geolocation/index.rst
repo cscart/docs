@@ -44,11 +44,11 @@ The **Maps and Geolocation** add-on is installed :doc:`like any other add-on </u
 
 * **Provider** determines the third-party service that your store uses for maps and geolocation:
 
-  * **Google** is selected by default. However, for maps and geolocation to work, you'll need to `set up an API key at the Google website <https://cloud.google.com/maps-platform/>`_.
+  * **Google** is selected by default. However, for maps and geolocation to work, you'll need to set up an API key at the Google website. You'll need to enable a few APIs for the key, and there are 2 ways to do it:
 
-    .. note::
+    * Go to the `Google Maps Platform <https://cloud.google.com/maps-platform/>`_ page to get started, select projects **Maps** and **Places**, and then follow the instructions at the page.
 
-        You'll need to select projects **Maps** and **Places**, or manually enable *Geocoding API*, *Places API*, *Maps JavaScript API*, *Geolocation API*, and *Maps Static API*.
+    * Go directly to `Google Developers Console <https://console.developers.google.com>`_ and manually enable *Geocoding API*, *Places API*, *Maps JavaScript API*, *Geolocation API*, and *Maps Static API*. In this case you'll need to manually enable billing for your project (for example, link a credit card), or else the map won't work.
 
   * **Yandex** can be chosen instead of Google. It won't require an API key, unless you use `the paid version of the API <https://tech.yandex.com/maps/commercial/>`_.
 
