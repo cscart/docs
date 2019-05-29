@@ -44,11 +44,11 @@
 
   * **Яндекс** выбран по умолчанию. Вводить API-ключ необязательно; он нужен, если вы используете `платную версию API <https://tech.yandex.ru/maps/commercial/>`_.
 
-  * **Google** можно выбрать вместо Яндекса. Но чтобы карты и геолокация заработали, понадобится создать себе ключ API на сайте Google. Для ключа нужно включить определённые API, и есть 2 способа сделать это:
+  * **Google** можно выбрать вместо Яндекса. Но чтобы карты и геолокация заработали, понадобится создать себе ключ API на сайте Google. Перейдите на страницу `Google Maps Platform <https://cloud.google.com/maps-platform/>`_, выберите проекты **Maps** и **Places**, а затем следуйте инструкциям.
 
-    * На странице `Google Maps Platform <https://cloud.google.com/maps-platform/>`_ выбрать проекты **Maps** и **Places**, а затем следовать инструкциям.
+    .. note::
 
-    * В `Google Developers Console <https://console.developers.google.com>`_ вручную включить *Geocoding API*, *Places API*, *Maps JavaScript API*, *Geolocation API* и *Maps Static API*. В этом случае понадобится самостоятельно включить оплату для проекта (например, привязать кредитную карту), иначе Google-карты на вашем сайте работать не будут.
+        Альтернативный способ: в `Google Developers Console <https://console.developers.google.com>`_ вручную включите для своего проекта *Geocoding API*, *Places API*, *Maps JavaScript API*, *Geolocation API* и *Maps Static API*. В этом случае понадобится самостоятельно настроить оплату для проекта (например, привязать кредитную карту), иначе Google-карты на вашем сайте работать не будут.
 
   Когда вы получите ключ API, просто введите его на соответствующей вкладке в настройках модуля и сохраните изменения.
 
