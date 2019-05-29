@@ -20,6 +20,12 @@ New Features and Improvements
 
 [+] Admin panel: Ability to view system messages in Notifications Center added.
 
+[+] Admin panel: Dashboard: The dashboard itself now always loads quickly, regardless of how long it takes for the content to load.
+
+[+] Add-ons: Mobile application: Settings for Apple Pay were added.
+
+[+] Admin panel: Global options: The interface on the list of global options was improved.
+
 [+] Admin panel: Phone numbers: All phone numbers are now displayed as callable links.
 
 [+] Checkout: New checkout page was added. It can be configured via block manager as you see fit. Old step-by-step checkout was moved to the separate add-on. After the upgrade, the checkout page won’t change without your consent.
@@ -28,17 +34,19 @@ New Features and Improvements
 
 [+] Design: Email templates: Documents: Ability to display an order pickup point data in email notifications added.
 
-[+] Design: Layouts: Ability to specify visibility of blocks on specific screen sizes and to preview the corresponding layouts added.
+[+] Design: Layouts: Ability to manage checkout layout from the storefront was added.
 
-[+] Export/Import: Vendors: The "Date added" field was added into available fields for vendors export/import.
+[+] Design: Layouts: Ability to specify visibility of blocks on specific screen sizes and to preview the corresponding layouts added.
 
 [+] Multi-Vendor: Admin panel: Statistics by vendors were added to the dashboard.
 
 [+] Multi-Vendor: Button "Go to administration panel" was added to the "My account" block for vendors who have signed in as customers.
 
+[+] Multi-Vendor: Export/Import: Vendors: The "Date added" field was added into available fields for vendors export/import.
+
 [+] Multi-Vendor: The ability to invite vendors by email was added.
 
-[+] Multi-Vendor: Vendors: Statistics about active, out of stock, and pending products was added to verndor's page.
+[+] Multi-Vendor: Vendors: Statistics about active and out of stock products was added to verndor's page.
 
 [+] Orders: Saved searches: New CS-Cart & Multi-Vendor installations now have new saved searches for orders.
 
@@ -74,6 +82,8 @@ Functionality Changes
 
 [*] Add-ons: Product variations: Variations have been reworked improved significantly (filtering, import, presentation), and are now based on features rather than options. The add-on is now out of beta.
 
+[*] Add-ons: SEO: Information about product images was added to meta data for Google Rich Snippet.
+
 [*] Add-ons: Social buttons: The default code for Yandex.Share buttons was updated.
 
 [*] Add-ons: Social login: The third-party library used in the add-on was updated to the latest version.
@@ -81,6 +91,8 @@ Functionality Changes
 [*] Add-ons: Store locator: The add-on was renamed to "Stores and pickup points" to reflect that it now allows creating a “Pick up from store” shipping method. All map-related settings were removed from the add-on, because maps are now handled by “Maps and geolocation”.
 
 [*] Add-ons: Stores and pickup points: the "Store locator" menu item moved from the "Add-ons" to the "Administration" section.
+
+[*] Admin panel: Categories picker: The interface for selecting categories from tree has been improved.
 
 [*] Admin panel: Dashboard: Recent activity: SQL query for recent events was optimized.
 
@@ -116,6 +128,10 @@ Functionality Changes
 
 [*] Products: Features: The product feature editing page was improved.
 
+[*] Products: Options: Only global option can now be added to product through admin panel.
+
+[*] Products: Options: Product-specific options now have the "Code"field (internal name) just like global options.
+
 [*] Settings: Some settings were moved from the "General" section to "Checkout".
 
 [*] Themes: Styles: The "+" symbol and spaces at the beginning and at the end of style name are now forbidden.
@@ -132,7 +148,11 @@ Bug Fixes
 
 [!] Add-ons: Advanced products import: A modifier longer than 1 000 symbols was treated as incorrect, and it was impossible to use modifiers for some purposes because of that. Fixed; the maximum length of a modifier was increased to 50 000 symbols.
 
+[!] Add-ons: Advanced products import: Fields mapping didn't display data when filename was encoded. Fixed.
+
 [!] Add-ons: Advanced products import: Mathematical operations with comma as decimal delimiter worked incorrectly. Fixed.
+
+[!] Add-ons: Advanced import: Modifier "case" didn't work properly when a value contained delimiters or brackets. Fixed.
 
 [!] Add-ons: Buy together: Reward points: A PHP Notice occurred on the cart page when product combination was added to the cart and when the product property "Allow payment by points" was disabled. Fixed.
 
@@ -146,11 +166,15 @@ Bug Fixes
 
 [!] Add-ons: Mobile application: The layout identifier in config file did not take the active theme into account. Fixed.
 
+[!] Add-ons: Newsletters: The subscription block was not displayed correctly in Internet Explorer 11. Fixed.
+
 [!] Add-ons: PayPal Payments: Multiple instances of In-Context Checkout payments led to the cart page being continuously reloaded. Fixed.
 
 [!] Add-ons: PayPal Payments: PayPal Express Checkout: A PHP Notice occurred when an administrator tried to configure PayPal via the configuration master. Fixed.
 
 [!] Add-ons: PayPal Payments: The status of order was Incomplete when a customer returned to the previous page via browser after payment. Fixed.
+
+[!] Add-ons: RMA: Order return info wasn't cleared before reordering. Fixed.
 
 [!] Add-ons: SEO: A 301 redirect wasn't generated for all languages, when language code was used in the SEO name. Fixed.
 
@@ -159,6 +183,8 @@ Bug Fixes
 [!] Add-ons: SEO: Watermarks: When SEO and Watermarks add-ons were installed and access to original size images was denied, original images couldn't be accessed via direct link. Fixed.
 
 [!] Add-ons: Searchanise: An SQL error occurred during indexation: "Column 'list_price' in field list is ambiguous". Fixed.
+
+[!] Add-ons: Searchanise: Product quantity was imported incorrectly if product inventory was set to "Do not track". Fixed.
 
 [!] Add-ons: Searchanise: Sorting by product position in the category on a search results page didn't work. Fixed.
 
@@ -179,6 +205,10 @@ Bug Fixes
 [!] Core: Errors and notices occurred on PHP 7.3. Fixed.
 
 [!] Core: JS: The prepareHash method for UTF-8 characters had implicit conversion. Fixed.
+
+[!] Core: Settings: Function isExist() always returned True. Fixed.
+
+[!] Design: Admin panel: Color picker had wrong position. Fixed.
 
 [!] Design: Admin panel: Notifications overlapped the menus. Fixed.
 
@@ -202,6 +232,10 @@ Bug Fixes
 
 [!] Design: RTL: On the detailed product page in the mobile mode, the product navigation buttons did not have the correct icons.
 
+[!] Design: RTL: Social buttons: Google Plus button script broke the page if an RTL language was selected. Fixed.
+
+[!] Design: RTL: Social buttons: Pinterest button had wrong position. Fixed.
+
 [!] Design: RTL: Tree structures (for example, categories and their subcategories) were displayed incorrectly in RTL languages. Fixed.
 
 [!] E-mail templates: Documents: The attached document was called "invoices" for all types of documents. Fixed.
@@ -209,6 +243,12 @@ Bug Fixes
 [!] Geolocation: The customer location information changed when an admin acted on behalf of a customer. Fixed.
 
 [!] Hooks: Products: Quick view: The closing hook tag in quick_view.tpl was in a wrong place. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct customer-to-vendor payments: When an order was reordered, products from different vendors were added into the same cart. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct customer-to-vendor payments: Add-on didn't work on PHP 7.3. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct customer-to-vendor payments: PayPal payments: PHP warnings occurred on checkout when the payment method tab was changed. Fixed.
 
 [!] Multi-Vendor: Add-ons: Bestsellers & On-Sale Products: Vendors could edit sales amount of a product themselves and make their products more prominent that way. Fixed.
 
@@ -226,15 +266,29 @@ Bug Fixes
 
 [!] Multi-Vendor: Add-ons: Vendor data premoderation: When an administrator changed one product in the product list, the status of all products from the page changed to Pending. Fixed.
 
+[!] Multi-Vendor: Add-ons: Vendor Plans: The Plan selection field was too narrow in the advanced search for vendors. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor plans: There was a typo in the vendor_plan_get_list hook. Fixed.
+
 [!] Multi-Vendor: Design: Blocks: The text in the "Vendor information" block had incorrect alignment. Fixed.
 
 [!] Multi-Vendor: Export: Orders: Vendors couldn't export orders. Fixed.
 
 [!] Multi-Vendor: JS: Delete button was shown to vendor even when deleting was impossible. Fixed.
 
+[!] Multi-Vendor: Privileges: Administrator could see information about vendors even without a necessary privilege. Fixed.
+
+[!] Multi-Vendor: Product options: Vendor couldn't delete a global option link. Fixed.
+
 [!] Multi-Vendor: Vendors: A vendor's page was available via direct link even when the vendor's status was set to "Disabled". Fixed.
 
 [!] Multi-Vendor: Vendors: Profile fields: User's first name and last name were swapped after registration as a vendor. Fixed.
+
+[!] Multi-Vendor: Vendors: Upon creation of a new vendor, unticking the "Create administrator account" checkbox disabled the required fields. Fixed.
+
+[!] Multi-Vendor: Vendors: Multiple PHP Notices occurred on the preview of a product. Fixed.
+
+[!] Order management: Profile fields: On the order viewing and editing page, an empty Billing address block was displayed. Fixed.
 
 [!] Order management: Email notifications were not sent when an order with products of multiple vendors was created in the administration panel. Fixed.
 
@@ -246,6 +300,8 @@ Bug Fixes
 
 [!] Products: Search: The product search results were wrong in the customer area when search in pages was enabled under "Settings > General". Fixed.
 
+[!] Profile fields: PHP 7.3: A PHP notice occurred when a new profile field was created. Fixed.
+
 [!] REST API: Null was returned as a language-specific object description when wrong language code was specified. Fixed.
 
 [!] REST API: Orders: Some order data could be lost when an order status was updated via the API. Fixed.
@@ -253,6 +309,8 @@ Bug Fixes
 [!] Sales reports: Some products and categories were duplicated in the reports by number of products. Fixed.
 
 [!] Shipping methods: UPS: Address field wasn't passed to UPS correctly, so residential rates always applied. Fixed.
+
+[!] Shipping methods: USPS: PHP Notices occurred during the calculation of international delivery costs. Fixed.
 
 [!] Upgrade Center: Store upgrade failed with an error if port 80 was not configured on the server. Fixed.
 
