@@ -2,6 +2,15 @@
 Version History
 ***************
 
+=====================
+CS-Cart branch 4.10.x
+=====================
+
+.. toctree::
+    :maxdepth: 1
+
+    4.10.1 <4101>
+
 ====================
 CS-Cart branch 4.9.x
 ====================
@@ -174,3 +183,6 @@ CS-Cart branch 2.0.x
     2.0.12 <2012>
     2.0.11 <2011>
     2.0.10 <2010>
+
+.. meta::
+   :description: Changelog and version history: all the changes in CS-Cart and Multi-Vendor online business platforms listed per version.
