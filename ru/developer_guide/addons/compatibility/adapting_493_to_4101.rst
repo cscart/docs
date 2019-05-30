@@ -571,8 +571,6 @@
 
 #. ``fn_lite_checkout_fill_user_data_from_location``
 
-#. ``fn_lite_checkout_update_customer_location``
-
 #. ``fn_prepare_direct_payments_payment_methods``
 
 #. ``fn_direct_payments_em_get_subscriber_name``
