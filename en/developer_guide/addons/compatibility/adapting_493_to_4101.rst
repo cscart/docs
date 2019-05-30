@@ -282,9 +282,9 @@ New Hooks
 
      fn_set_hook('get_shipping_info_after_select', $shipping_id, $lang_code, $shipping);
 
-#. This hook allows you to react to the change of customer's location::
+#. This hook is executed before the location of the user is set; it allows you to modify the location::
 
-     fn_set_hook('geo_maps_set_customer_location_post', $location, $locality, $city_to_display);
+     fn_set_hook('geo_maps_set_customer_location_pre', $location);
 
 #. This hook is executed before the data of companies is merged. The hook allows you to exclude tables from merging::
 
@@ -336,7 +336,7 @@ New Hooks
 
 #. This hook is executed after the customer's user data has been updated on checkout. The hook allows you to modify the returned values of the function::
 
-     fn_set_hook('checkout_update_user_data_post', $cart, $uath, $user_data, $ship_to_another, $user_id);
+     fn_set_hook('checkout_update_user_data_post', $cart, $auth, $user_data, $ship_to_another, $user_id);
 
 #. This hook is executed when cart content is being saved, right before product data is saved. The hook allows you to modify the stored data::
 
@@ -779,10 +779,6 @@ New Functions
 
      fn_geo_maps_get_state_code_by_location($location, $states, $similarity_threshold = 70, $same_country_similarity_threshold = 55)
 
-#. Update the customer location data::
-
-     fn_lite_checkout_update_customer_location($customer_location)
-
 #. Generate the hash of a user's API key::
 
      fn_generate_api_key_hash($api_key)
@@ -875,7 +871,7 @@ Changed Functions
     fn_calculate_cart_content(&$cart, $auth, $calculate_shipping = 'A', $calculate_taxes = true, $options_style = 'F', $apply_cart_promotions = true)
 
     // New:
-    fn_calculate_cart_content(&$cart, $auth, $calculate_shipping = 'A', $calculate_taxes = true, $options_style = 'F', $apply_cart_promotions = true, $lang_code = CART_LANGUAGE)
+    fn_calculate_cart_content(&$cart, $auth, $calculate_shipping = 'A', $calculate_taxes = true, $options_style = 'F', $apply_cart_promotions = true, $lang_code = CART_LANGUAGE, $area = AREA)
 
 #.
 

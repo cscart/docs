@@ -281,9 +281,9 @@
 
      fn_set_hook('get_shipping_info_after_select', $shipping_id, $lang_code, $shipping);
 
-#. Позволяет отреагировать на изменение местоположения покупателя::
+#. Выполняется перед записью местоположения пользователя, позволяет модифицировать местоположение::
 
-     fn_set_hook('geo_maps_set_customer_location_post', $location, $locality, $city_to_display);
+     fn_set_hook('geo_maps_set_customer_location_pre', $location);
 
 #. Выполняется перед слиянием данных о компаниях и позволяет исключить таблицы из слияния::
 
@@ -335,7 +335,7 @@
 
 #. Выполняется после обновления данных пользователя на странице оформления заказа; позволяет модифицировать значения, возвращаемые функцией::
 
-     fn_set_hook('checkout_update_user_data_post', $cart, $uath, $user_data, $ship_to_another, $user_id);
+     fn_set_hook('checkout_update_user_data_post', $cart, $auth, $user_data, $ship_to_another, $user_id);
 
 #. Выполняется при сохранении содержимого корзины, перед сохранением данных товаров; позволяет модифицировать хранимые данные::
 
@@ -777,10 +777,6 @@
 
      fn_geo_maps_get_state_code_by_location($location, $states, $similarity_threshold = 70, $same_country_similarity_threshold = 55)
 
-#. Обновить данные о местоположении покупателя::
-
-     fn_lite_checkout_update_customer_location($customer_location)
-
 #. Генерирует хэш API-ключа пользователя::
 
      fn_generate_api_key_hash($api_key)
@@ -873,7 +869,7 @@
     fn_calculate_cart_content(&$cart, $auth, $calculate_shipping = 'A', $calculate_taxes = true, $options_style = 'F', $apply_cart_promotions = true)
 
     // Стало:
-    fn_calculate_cart_content(&$cart, $auth, $calculate_shipping = 'A', $calculate_taxes = true, $options_style = 'F', $apply_cart_promotions = true, $lang_code = CART_LANGUAGE)
+    fn_calculate_cart_content(&$cart, $auth, $calculate_shipping = 'A', $calculate_taxes = true, $options_style = 'F', $apply_cart_promotions = true, $lang_code = CART_LANGUAGE, $area = AREA)
 
 #.
 
