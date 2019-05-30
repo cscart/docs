@@ -80,7 +80,7 @@ Functionality Changes
 
 [*] Add-ons: Old Admin Panel: The add-on no longer comes with CS-Cart & Multi-Vendor by default. Existing installations will still have it after the upgrade.
 
-[*] Add-ons: Product variations: Variations have been reworked improved significantly (filtering, import, presentation), and are now based on features rather than options. The add-on is now out of beta.
+[*] Add-ons: Product variations: Variations have been improved significantly (filtering, import, presentation), and are now based on features rather than options. The add-on is now out of beta.
 
 [*] Add-ons: SEO: Information about product images was added to meta data for Google Rich Snippet.
 
@@ -190,9 +190,7 @@ Bug Fixes
 
 [!] Add-ons: Social login: When the comment & review form requested a customer to sign in, it didn't offer signing in via social networks. Fixed.
 
-[!] Add-ons: Vendor data premoderation: the product preview logic did not work when company status is "pending". Fixed.
-
-[!] Admin panel: Shipping methods: In some cases it is impossible to save the delivery data. Fixed.
+[!] Admin panel: Shipping methods: In some cases it was impossible to save the delivery data. Fixed.
 
 [!] Ajax: If the administrator wrote the store’s domain name with uppercase letters in config.local.php, it could lead to various problems. Fixed.
 
@@ -244,29 +242,31 @@ Bug Fixes
 
 [!] Hooks: Products: Quick view: The closing hook tag in quick_view.tpl was in a wrong place. Fixed.
 
+[!] Multi-Vendor Plus: Add-ons: Comments and Reviews: Vendor privileges: Ability of vendor to add, update and view comments and reviews wasn't properly controlled by user group privileges. Fixed.
+
 [!] Multi-Vendor Plus: Add-ons: Direct customer-to-vendor payments: When an order was reordered, products from different vendors were added into the same cart. Fixed.
 
 [!] Multi-Vendor Plus: Add-ons: Direct customer-to-vendor payments: Add-on didn't work on PHP 7.3. Fixed.
 
-[!] Multi-Vendor Plus: Add-ons: Direct customer-to-vendor payments: PayPal payments: PHP warnings occurred on checkout when the payment method tab was changed. Fixed.
+[!] Multi-Vendor Plus: Add-ons: Direct customer-to-vendor payments: PayPal: Payment methods created via the "Connect to PayPal" buttons were assigned to the store owner, and a vendor was redirected to the administration panel instead of the vendor panel. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct customer-to-vendor payments: PayPal: PHP warnings occurred on checkout when the payment method tab was changed. Fixed.
 
 [!] Multi-Vendor: Add-ons: Bestsellers & On-Sale Products: Vendors could edit sales amount of a product themselves and make their products more prominent that way. Fixed.
-
-[!] Multi-Vendor: Add-ons: Comments and Reviews: Vendor privileges: Ability of vendor to add, update and view comments and reviews wasn't properly controlled by user group privileges. Fixed.
 
 [!] Multi-Vendor: Add-ons: Customer-to-Vendor Communication: Error appeared during re-installation of the add-on. Fixed.
 
 [!] Multi-Vendor: Add-ons: Direct сustomer-to-vendor payments (Beta): A payment text data was always displayed in the admin area language, despite the payment language setting. Fixed.
 
-[!] Multi-Vendor: Add-ons: Direct customer-to-vendor payments (Beta): PayPal: Payment methods created via the "Connect to PayPal" buttons were assigned to the store owner, and a vendor was redirected to the administration panel instead of the vendor panel. Fixed.
-
 [!] Multi-Vendor: Add-ons: Stripe Connect: RMA: Refunds via Stripe Connect didn't work. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor Locations (Beta): If Google API key was restricted to a specific domain, geolocation didn't work. Fixed.
 
+[!] Multi-Vendor: Add-ons: Vendor data premoderation: The product preview logic did not work when company status was "Pending". Fixed.
+
 [!] Multi-Vendor: Add-ons: Vendor data premoderation: When an administrator changed one product in the product list, the status of all products from the page changed to Pending. Fixed.
 
-[!] Multi-Vendor: Add-ons: Vendor Plans: The Plan selection field was too narrow in the advanced search for vendors. Fixed.
+[!] Multi-Vendor: Add-ons: Vendor plans: The Plan selection field was too narrow in the advanced search for vendors. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor plans: There was a typo in the vendor_plan_get_list hook. Fixed.
 
