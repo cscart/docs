@@ -68,6 +68,7 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     sms_notifications/index
     social_buttons/index
     social_login/index
+    step_by_step_checkout/index
     store_import/index
     stores_and_pickup_points/index
     stripe_connect/index

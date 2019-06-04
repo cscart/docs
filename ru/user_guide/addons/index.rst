@@ -46,6 +46,7 @@
     rus_taxes/index
     seo/index
     social_login/index
+    step_by_step_checkout/index
     stores_and_pickup_points/index
     tags/index
     old_admin_panel/index
