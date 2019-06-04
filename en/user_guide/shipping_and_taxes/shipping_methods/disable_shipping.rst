@@ -2,23 +2,17 @@
 How To: Disable Shipping on the Storefront
 ******************************************
 
-To disable shipping on the storefront:
+Some stores don't require shipping at all. That's why you can hide shipping method selection on the checkout page.
 
-#. In the Administration panel, go to **Administration → Shipping & taxes → Shipping methods**.
+#. Go to **Administration → Shipping & taxes → Shipping methods**.
 
-#. Set the statuses of all the shipping methods to *Disabled*.
+#. Change the statuses of all shipping methods to *Disabled*.
 
-   .. note::
+   .. important::
 
-       After that shipping methods will not be required, and customers will be able to place an order without selecting a shipping method. In this case the shipping freights will also be ignored.
+       A product can have **Shipping freight** on the **Shipping properties** tab. But since the shipping method isn't selected now, the shipping freights of products won't be taken into account as well.
 
-   .. image:: img/disable_shipping.png
-       :align: center
-       :alt: Disabling shipping in CS-Cart and Multi-Vendor.
+#. Go to **Design → Layouts** and switch to the **Checkout** tab.
 
-#. Go to **Settings → Checkout**.
-
-#. Untick the **Display "Shipping Method" step** checkbox.
-
-#. Click the **Save** button.
+#. Hide the block for shipping method selection. This will remove the mention of no shipping being required from the checkout page.
 

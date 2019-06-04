@@ -2,54 +2,35 @@
 Ways to Set up Free Shipping
 ****************************
 
+By default, all the products (other than digital) require shipping. If an order requires shipping, customer must choose a shipping method. This article describes how to make shipping free for customers.
+
 ======================================================
 Way 1. Exclude Products from Shipping Cost Calculation
 ======================================================
 
-All the products other than digital require shipping. If an order requires shipping, the customer must choose a shipping method.
+#. Go to **Administration → Shipping & taxes → Shipping methods**.
 
-The **Use for free shipping** checkbox under **Administration → Shipping & taxes → Shipping methods → <Desired Shipping Method>** allows you to use a shipping method for free shipping.
+#. Click on the shipping method you'd like to edit.
 
-.. image:: img/free_shipping/free_shipping.png
-    :align: center
-    :alt: The new Use for Free Shipping checkbox determines if you can use a shipping method for free shipping.
+#. Enable the **Use for free shipping** setting. This will exclude exclude the products with the enabled **Free shipping** setting from the shipping price calculation for this shipping method.
 
-Tick the **Use for free shipping** checkbox, if you want to exclude the products with the enabled **Free shipping** option from the shipping price calculation. Then CS-Cart will calculate the shipping price for other products from the order in accordance with **Shipping charges**.
+#. Save your changes.
 
-If you leave the checkbox unticked, CS-Cart will calculate the shipping price for all the products from the order in accordance with **Shipping charges**.
+   .. note::
+
+        The shipping price for products without the **Free shipping** checkbox ticked will be calculated in accordance with **Shipping charges**.
+
+================================
+Way 2. Disable Shipping Entirely
+================================
+
+If you don’t want to assign a shipping method to orders at all, then :doc:`disable shipping entirely </user_guide/shipping_and_taxes/shipping_methods/disable_shipping>`.
 
 ==========================================
-Way 2. Assign No Shipping Method to Orders
+Way 3. Set shipping rates to zero manually
 ==========================================
 
-If you don’t want to assign a shipping method to orders at all, go to **Administration → Shipping & taxes → Shipping methods** and either delete all the shipping methods, or change their status to *Disabled*.
+You can create a shipping method with manual rate calculation and :doc:`set shipping rates to zero manually </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/set_free_shipping>`. It's also best to enable the **Use for free shipping** setting for this shipping method.
 
-======================================
-Way 3. Hide the Shipping Method Choice
-======================================
-
-If you want to offer free shipping and don’t want a user to choose a shipping method, complete the following steps:
-
-#. Go to **Settings → Checkout** and untick the **Display "Shipping method" step** checkbox.
-
-#. Go to **Administration → Shipping & taxes → Shipping methods** and either create a new shipping method, or adjust an existing method as follows:
-
-   * Set the minimal **Position** possible (for example, 0) to make the method come first on the list.
-
-     .. image:: img/free_shipping/disable_shipping_position.png
-         :align: center
-         :alt: Make the desired shipping method come first on the list.
-
-   * Set the **Rate calculation** to *Manual*.
-
-     .. image:: img/free_shipping/disable_shipping_rate.png
-         :align: center
-         :alt: Set the shipping method's Rate Calculation setting to Manual.
-
-   * Switch to the **Shipping Charges** tab and configure the charges so that the **Rate value** for the shipping method equals *0*.
-
-     .. image:: img/free_shipping/disable_shipping_charges.png
-         :align: center
-         :alt: Make sure that the shipping method's Rate Value equals 0. 
-
-   * Click the **Save** button.
+.. meta::
+   :description: Ways to set up free shipping or disable shipping entirely in a CS-Cart online store or Multi-Vendor shopping mall.

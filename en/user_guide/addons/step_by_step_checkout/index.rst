@@ -39,3 +39,6 @@ New 4.10.1 installations get the new checkout by default. Those who upgrade to 4
    .. image:: img/disable_old_checkout.png
        :align: center
        :alt: Enabling new checkout in CS-Cart and Multi-Vendor.
+
+.. meta::
+   :description: Old step-by-step checkout add-on in CS-Cart and Multi-Vendor ecommerce software.
