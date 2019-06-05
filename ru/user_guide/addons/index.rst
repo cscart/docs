@@ -40,6 +40,7 @@
     maps_and_geolocation/index
     paypal_payments/index
     product_variations/index
+    replain/index
     retailcrm/index
     reward_points/index
     rus_personal_data_processing/index

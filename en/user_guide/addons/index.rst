@@ -59,6 +59,7 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     price_list/index
     product_variations/index
     quickbooks/index
+    replain/index
     required_products/index
     reward_points/index
     rma/index
