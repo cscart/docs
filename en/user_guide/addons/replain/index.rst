@@ -35,3 +35,6 @@ Configuration
        If you select a specific storefront and open the settings, you'll be able to set up a separate Telegram chat for this storefront.
 
 #. Save your changes. Now you can use the chat `as described at the Re:plain website <https://replain.cc/faq>`_.
+
+.. meta::
+   :description: How to set up Re:plain Telegram live chat in CS-Cart and Multi-Vendor ecommerce platforms?
