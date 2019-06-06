@@ -11,7 +11,7 @@ How Shipping Appears on the Storefront
 Checkout
 ========
 
-Customers can select the desired shipping method at the 3rd step of checkout; that step is called **Shipping Options**.
+Customers can select the desired shipping method at checkout. You can move the shipping method selection or hide it entirely on the **Checkout** tab of the **Design → Layouts** page.
 
 .. image:: img/shipping_at_checkout.png
     :align: center
@@ -58,3 +58,6 @@ You can add a **Shipping methods** block that displays the logos of the availabl
 
 .. image:: img/shipping_methods_block.png
     :alt: The "Shipping methods" block in CS-Cart and Multi-Vendor.
+
+.. meta::
+   :description: How shipping methods appear on the storefront in CS-Cart and Multi-Vendor ecommerce software.
