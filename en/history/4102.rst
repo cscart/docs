@@ -1,0 +1,65 @@
+************************
+CS-Cart 4.10.2 Changelog
+************************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Checkout: Backward compatibility added for payment methods that were directly using billing address profile fields.
+
+[+] Settings: Phone: The ability to disable international phone number input mask was added to Settings > Appearance.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Admin panel: Advanced search: Filters: Filter variants are now loaded in parts if quantity of variants exceeds PRODUCT_FEATURE_VARIANTS_THRESHOLD.
+
+[*] Checkout: Profile fields: "Full name" was changed to "First Name and Last Name" to make it clear how to enter the data.
+
+=========
+Bug Fixes
+=========
+
+[!] Add-ons: Google reCaptcha: If captcha wasn't solved, the notification about it appeared on the checkout page whenever customer changed any data. Fixed.
+
+[!] Add-ons: Image Zoom: Zoomed images didn't work on some devices with touch screens. Fixed.
+
+[!] Add-ons: Newsletters: Message from the newsletter could be sent empty or not sent at all when PHP 7.3 was used. Fixed.
+
+[!] Add-ons: Product variations: Maps and geolocation: Shipping estimation on a product page didn't update when the selected variation was changed. Fixed.
+
+[!] Add-ons: Stores and pickup points: The preliminary calculation of shipping cost was incorrect for some cities. Fixed.
+
+[!] Add-ons: Video tutorials: Styles were broken. Fixed.
+
+[!] Checkout: If the Country field was disabled on the checkout page, the state appeared reset after selection. Fixed.
+
+[!] Checkout: If the Email field was not required, then auto-generated email address could be shown on checkout. Fixed.
+
+[!] Core: Customer location: Changing the customer's location caused updating the profile. Fixed.
+
+[!] Design: Administration panel: Period selector was missing from the Dashboard. Fixed.
+
+[!] Design: Big Picture: In the Big Picture template, the discount was displayed in 2 places. Fixed.
+
+[!] Design: Cart: JS error occurred during quantity recalculation when the Enter button was pressed. Fixed.
+
+[!] Design: Checkout: Images of shipping methods could go outside the boundaries of the shipping method block. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: When a vendor had empty Country and State fields, a comma separating them was still displayed on the list of offers. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: Incorrect payment methods were displayed in the section for paying the order again on the order details page. Fixed.
+
+[!] Multi-Vendor: Cart: When an administrator opened the preview of the product from the admin panel, it cleared the administrator's cart. Fixed.
+
+[!] Multi-Vendor: Design: In some cases the subscription form on the homepage looked weird. Fixed.
+
+[!] Newsletters: Subscription to mailing list didn't work on the checkout page. Fixed.
+
+[!] Products: Options: Options price modifiers were not applied correctly to a product list price if it was set to zero. Fixed.
+
+[!] Profile fields: City: The "City" field was required on the profile details page in the admin area, even though the corresponding configuration option was not selected on the profile fields page. Fixed.
+
+[!] User groups: If a page or category wasn't available for the user group, then customer saw error 404 instead of being asked to sign in. Fixed.
