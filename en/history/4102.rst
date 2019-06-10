@@ -28,6 +28,8 @@ Bug Fixes
 
 [!] Add-ons: Newsletters: Message from the newsletter could be sent empty or not sent at all when PHP 7.3 was used. Fixed.
 
+[!] Add-ons: Product Variations: Export/Import: A variation group disbanded when the imported file didn't have a column or node with variation group code. Fixed.
+
 [!] Add-ons: Product variations: Maps and geolocation: Shipping estimation on a product page didn't update when the selected variation was changed. Fixed.
 
 [!] Add-ons: Stores and pickup points: The preliminary calculation of shipping cost was incorrect for some cities. Fixed.
