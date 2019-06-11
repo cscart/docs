@@ -32,6 +32,8 @@ Bug Fixes
 
 [!] Add-ons: Product variations: Maps and geolocation: Shipping estimation on a product page didn't update when the selected variation was changed. Fixed.
 
+[!] Add-ons: Product variations: The pop-up for creating variations could take too long to load. Fixed.
+
 [!] Add-ons: Stores and pickup points: The preliminary calculation of shipping cost was incorrect for some cities. Fixed.
 
 [!] Add-ons: Video tutorials: Styles were broken. Fixed.
