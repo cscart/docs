@@ -34,7 +34,7 @@ Add/Edit Profile Fields
 
    * **User-defined CSS class**—allows you to assign a custom CSS class to this field.
 
-   * **Profile (Show/Required)**— ticking the first checkbox will make this field appear during profile creation or editing. Ticking the second checkbox will make this field required—a user won't be able to create or update a profile without filling in this field.
+   * **Profile (Show/Required)**—ticking the first checkbox will make this field appear during profile creation or editing. Ticking the second checkbox will make this field required—a user won't be able to create or update a profile without filling in this field.
 
      .. important::
 
