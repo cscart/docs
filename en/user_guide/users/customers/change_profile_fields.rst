@@ -32,7 +32,7 @@ Add/Edit Profile Fields
 
    * **Position**—the position of this profile field on the list relative to other fields.
 
-   * **Type**—the type of the profile field. It determines what kind of values can be entered or selected in the field. If you choose *Radio group* or *Multiple checkboxes*, you'll have to specify the possible variants on the **Variants** tab.
+   * **Type**—the type of the profile field. It determines what kind of values can be entered or selected in the field. If you choose *Radio group* or *Select box*, you'll have to specify the possible variants on the **Variants** tab.
 
      .. important::
 
