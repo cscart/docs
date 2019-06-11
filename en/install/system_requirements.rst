@@ -10,17 +10,13 @@ CS-Cart is developed to meet most server configurations, ranging from shared hos
 
 There are two core requirements for your host to run CS-Cart:
 
-* `PHP <http://www.php.net/>`_ version 5.6 or 7. CS-Cart supports SAPI mod_php, FPM, FastCGI. We recommend:
+* `PHP <http://www.php.net/>`_ version 5.6 or 7. CS-Cart supports SAPI mod_php, FPM, FastCGI.
 
-  * PHP 5.6 for CS-Cart/Multi-Vendor 4.3.1 – 4.3.6.
+  * PHP 7.0 is supported starting with CS-Cart/Multi-Vendor 4.3.6.
 
-  * PHP 7.0 for CS-Cart/Multi-Vendor 4.3.6 – 4.5.2. Earlier versions don't support PHP 7.
+  * PHP 7.1 is supported starting with CS-Cart/Multi-Vendor 4.6.1.
 
-  * PHP 7.1 for CS-Cart/Multi-Vendor 4.6.1 and newer versions. In earlier versions, errors occurred on PHP 7.1.
-
-    .. note::
-
-        CS-Cart/Multi-Vendor 4.3.x – 4.8.x also support PHP 5.3.6 – 5.5, even though we don't recommend these versions. PHP 7.2 is supported starting with CS-Cart/Multi-Vendor 4.7.2.
+  * PHP 7.2 is supported starting with CS-Cart/Multi-Vendor 4.7.2.
 
 * `MySQL <http://www.mysql.com/>`_ version 4.1 or higher (**MySQLi** or **pdo_mysql** should be supported). CS-Cart also supports MariaDB 5.5 or higher, and PerconaServer 5.5 or higher.
 
@@ -39,8 +35,6 @@ Server Configuration Requirements
 * **safe_mode** PHP directive should be disabled.
 
 * **file_uploads, allow_url_fopen** PHP directives should be enabled.
-
-* **magic_quotes_gpc, magic_quotes_runtime, magic_quotes_sybase** PHP directives should be disabled in PHP 5.3 (ignore this if you have PHP 5.4 or higher).
 
 ------------------------------
 
