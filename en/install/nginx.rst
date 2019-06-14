@@ -240,6 +240,14 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
 
         ############################################################################
 
+        location ~ ^/(favicon|apple-touch-icon-|homescreen-|firefox-icon-|coast-icon-|mstile-).*\.(png|ico)$  {
+            access_log off;
+            try_files $uri =404;
+            expires max;
+            add_header Access-Control-Allow-Origin *;
+            add_header Cache-Control public;
+        }
+
         location ~* /(\w+/)?(\w+/)?(.+\.(jpe?g|jpg|ico|gif|png|css|js|pdf|txt|tar|woff|svg|ttf|eot|csv|zip|xml|yml))$ {
             access_log off;
             try_files $uri $uri/ /$2$3 /$3 /index.php?$args;
