@@ -2,13 +2,9 @@
 How To: Allow Vendors to Create/Edit Orders
 *******************************************
 
-.. note::
+.. warning::
 
-    **Tutorial Difficulty: 1 / 3**
-
-.. important::
-
-    This article only applies to **Multi-Vendor**.
+    This article is no longer supported and will not work in newer versions of Multi-Vendor.
 
 Vendors can’t edit orders in Multi-Vendor by default—this restriction protects the store owner from dishonest vendors. If you trust a vendor, you can extend their rights in 4 easy steps.
 
