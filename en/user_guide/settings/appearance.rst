@@ -18,10 +18,6 @@ Administrator Settings
 
 * **Default WYSIWYG editor**—the WYSIWYG editor to be used in the Administration panel.
 
-  .. note::
-
-      You can select *TinyMCE* or *Redactor*, or you can choose to disable WYSIWYG. Starting with version 4.6.3, you can also select *Redactor II*.
-
 =================
 Customer Settings
 =================
@@ -129,3 +125,11 @@ The following settings apply both to the storefront and the Administration panel
   * *New*—:doc:`documents </user_guide/look_and_feel/documents/index>` and :doc:`email templates </user_guide/look_and_feel/email_templates/index>` are stored in the database and can be modified via built-in editors.
 
   * *Old*—the templates of documents and email notifications are stored as files that can be edited directly (:doc:`but that's inadvisable </developer_guide/getting_started/guidelines>`) or via third-party add-ons.
+
+* **Supported phone numbers**—determines what users can enter as their phone number:
+
+  * International phone number with country code
+
+  * Any digits and +-()
+
+  * Any symbols
