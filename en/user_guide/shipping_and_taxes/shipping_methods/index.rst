@@ -37,5 +37,6 @@ A customer will be offered the shipping methods that are suitable for his or her
     no_options
     test_button_error
 
-
+.. meta::
+   :description: Shipping methods in CS-Cart and Multi-Vendor ecommerce software: configuration and troubleshooting.
 

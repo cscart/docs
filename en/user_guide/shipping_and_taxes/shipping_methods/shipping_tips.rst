@@ -1,33 +1,16 @@
-*****************************************************
-How To: Specify a Commentary for all Shipping Methods
-*****************************************************
+********************************************************
+How To: Set a Common Commentary for all Shipping Methods
+********************************************************
 
-#. In the Administration panel, go to **Administration → Languages → Translations**.
+In CS-Cart and Multi-Vendor, every shipping method has its own description. But if you want customers to see your shipping policy that's common for all shipping methods, you won't need to copy it into every description. There is a better way to do it: just add a block with text to the checkout page.
 
-   .. image:: img/translations.png
-       :align: center
-       :alt: Go to Administration → Languages → Translations.
+#. In the Administration panel, go to **Design → Layouts** and switch to the **Checkout** tab.
 
-#. Find the ``shipping_tips`` language variable.
+#. :doc:`Create a new block </user_guide/look_and_feel/layouts/blocks/actions_on_blocks>` of the **HTML block** type.
 
-   .. hint::
+#. Enter your shipping policy as the content of that block.
 
-       You can use the search menu on the right to find the language variable you need.
+#. Move that block to the part of the checkout page where you want it to appear.
 
-#. Enter the desired value of the language variable.
-
-#. Click **Save**.
-
-   .. image:: img/shipping_tips.png
-       :align: center
-       :alt: Enter the text that you want to display for all shipping methods at the shipping method step.
-
-#. If you go to checkout, you'll see the text that you entered.
-
-   .. note::
-
-      The value of the ``shipping_tips`` language variable will appear below the list of shipping methods, regardless of the shipping method that is currently chosen.
-
-   .. image:: img/tip_at_checkout.png
-       :align: center
-       :alt: The shipping tip will appear at checkout below the list of shipping methods, regardless of the shipping method that is currently chosen.
+.. meta::
+   :description: How to add common shipping instructions and tips in CS-Cart and Multi-Vendor at checkout?
