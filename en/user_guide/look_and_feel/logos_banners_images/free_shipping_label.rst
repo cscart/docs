@@ -4,7 +4,7 @@ How To: Display Free Shipping Label for a Product
 
 In previous versions of CS-Cart and Multi-Vendor a free shipping lable required `a custom modification <https://github.com/cscart/addon-free-shipping-label/>`_. Starting with version 4.10.1, it is no longer necessary: the label appears automatically for products that can be shipped for free.
 
-.. image: img/free_shipping_label.png
+.. image:: img/free_shipping_label.png
     :align: center
     :alt: Free shipping label for products in CS-Cart and Multi-Vendor.
 
