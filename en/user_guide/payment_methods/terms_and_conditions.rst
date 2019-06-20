@@ -1,50 +1,32 @@
-**************************************************************
-How To: Add Pop-Up Window for Terms and Conditions on Checkout
-**************************************************************
+*****************************************************
+How To: Add and Edit Terms and Conditions at Checkout
+*****************************************************
 
-To add the "Terms and Conditions" link to the Checkout page, follow these steps:
+CS-Cart and Multi-Vendor allow you to ask customers to agree with terms and conditions during the purchase of the product, at the checkout page. Here's how you can do it.
 
-1. In the root directory of your CS-Cart installation, create the following directories path:
-*design/themes/[CUSTOMER_ACTIVE_THEME]/templates/addons/my_changes/hooks/checkout*. **[CUSTOMER_ACTIVE_THEME]** is the name of the folder with the active theme of your storefront, for example, **responsive**.
+=============================================
+Step 1. Add the Terms and Conditions Checkbox
+=============================================
 
-.. note ::
+.. note::
 
-	Make sure that the **My changes** add-on is installed and activated in the **Add-ons → Manage add-ons** section of the Administration panel.
+    You'll probably skip this step: the checkbox for accepting terms and conditions exists at the checkout page by default.
 
-2. In the *design/themes/[CUSTOMER_ACTIVE_THEME]/templates/addons/my_changes/hooks/checkout* directory, create the **terms_and_conditions.override.tpl** file with the following content:
+#. Go to **Design → Layouts** and switch to the **Checkout** tab.
 
-::
+#. :doc:`Create a new block </user_guide/look_and_feel/layouts/blocks/actions_on_blocks>` of the **Checkout: Terms and Conditions** type.
 
-  <div class="cm-field-container">
-      <label for="id_accept_terms{$suffix}" class="cm-check-agreement"><input type="checkbox" id="id_accept_terms{$suffix}" name="accept_terms" value="Y" class="cm-agreement checkbox" {if $iframe_mode}onclick="fn_check_agreements('{$suffix}');"{/if} />{__("terms_and_conditions_you_accept")}</label>
+#. Make sure to put this block it into the grid with the *Lite checkout* wrapper. It's where all the other checkout-related blocks are.
 
-      <a data-ca-target-id="term_dialog" class="cm-dialog-opener">{__("terms_and_conditions")}</a>
-  </div>
+============================================
+Step 2. Set the Text of Terms and Conditions
+============================================
 
-  <div id="term_dialog" class="hidden">
-      <p>TEXT</p>
-  </div>
+#. Go to **Administration → Languages → Translations**.
 
-3. Replace **TEXT** with your text for the **Terms and conditions** page.
+#. On that page, search for ``terms_and_conditions_content``.
 
-4. Save the file.
+#. Edit the values for the desired language and save your changes.
 
-5. Open the administration panel of your store and go to **Administration → Languages → Translations**.
-
-6. In the top right corner of the page, click the **+** button.
-
-7. Enter *terms_and_conditions_you_accept* into the **Language Variable** field.
-
-8. Enter *By checking this check box, you accept the* the into the **Value** field.
-
-9. Clone this item.
-
-10. Change the second language variable name to **terms_and_conditions**.
-
-11. Change the second language variable value to *Terms and Conditions*.
-
-12. Click the **Create** button.
-
-.. important:: 
-
-    To display the *By checking this checkbox, you accept the Terms and Conditions* checkbox on the checkout page, you must tick the **Ask customers to agree with terms & conditions during checkout** option in the administration panel under **Settings → Checkout** and click **Save**.
+.. meta::
+   :description: How to edit the text of the terms and conditions and show it at checkout in CS-Cart and Multi-Vendor?
