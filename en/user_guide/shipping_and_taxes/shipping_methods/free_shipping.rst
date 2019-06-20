@@ -27,7 +27,7 @@ Way 2. Disable Shipping Entirely
 If you don’t want to assign a shipping method to orders at all, then :doc:`disable shipping entirely </user_guide/shipping_and_taxes/shipping_methods/disable_shipping>`.
 
 ==========================================
-Way 3. Set shipping rates to zero manually
+Way 3. Set Shipping Rates to Zero Manually
 ==========================================
 
 You can create a shipping method with manual rate calculation and :doc:`set shipping rates to zero manually </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/set_free_shipping>`. It's also best to enable the **Use for free shipping** setting for this shipping method.
