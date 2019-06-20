@@ -24,10 +24,6 @@ The **Settings → Company** page allows you to specify the sender address (the 
 
     If you have multiple warehouses or suppliers, you can use :doc:`the functionality of the "Suppliers" add-on </user_guide/users/suppliers/configure_suppliers>`.
 
-.. image:: img/company_address.png
-    :align: center
-    :alt: The "Settings → Company" page in CS-Cart contains the sender's address.
-
 .. meta::
    :description: Where to set default address and company address in CS-Cart and Multi-Vendor e-commerce software?
 

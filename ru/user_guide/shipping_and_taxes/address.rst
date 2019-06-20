@@ -23,6 +23,3 @@
 .. important::
 
     Если у вас несколько складов или поставщиков, то вы можете использовать функциональность :doc:`"Поставщики" </user_guide/users/suppliers/configure_suppliers>`.
-
-.. fancybox:: img/shippings_025.png
-    :alt: Страница "Настройки → Компания" в CS-Cart.
