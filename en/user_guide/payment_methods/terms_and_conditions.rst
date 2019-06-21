@@ -2,7 +2,11 @@
 How To: Add and Edit Terms and Conditions at Checkout
 *****************************************************
 
-CS-Cart and Multi-Vendor allow you to ask customers to agree with terms and conditions during the purchase of the product, at the checkout page. Here's how you can do it.
+CS-Cart and Multi-Vendor allow you to ask customers to agree with terms and conditions during the purchase of the product, at the checkout page. Here's how you can add these terms to the checkout page or customize them.
+
+.. image:: img/terms_and_conditions.png
+    :align: center
+    :alt: Terms and conditions as they appear on the checkout page of a CS-Cart store.
 
 =============================================
 Step 1. Add the Terms and Conditions Checkbox
