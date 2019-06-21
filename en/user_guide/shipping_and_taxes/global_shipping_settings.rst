@@ -14,7 +14,7 @@ Step 1. Leave Only One Shipping Method Available
 
    .. note::
 
-       If a shipping method doesn't work with some region, customers who specify that region won't be able to place an order. Here's `how to troubleshoot shipping issues like that </user_guide/shipping_and_taxes/shipping_methods/no_options>`.
+       If a shipping method doesn't work with some region, customers who specify that region won't be able to place an order. Here's :doc:`how to troubleshoot shipping issues like that </user_guide/shipping_and_taxes/shipping_methods/no_options>`.
 
 ===========================================
 Step 2. Adjust the Checkout Page (Optional)
