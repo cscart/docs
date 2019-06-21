@@ -28,7 +28,11 @@ No Shipping Options Available for Your Location
 Shipping Method Selection Doesn't Appear
 ======================================== 
 
-Go to **Settings → Checkout** and make sure that the **Display "Shipping method" step** checkbox is ticked.
+Go to **Design → Layouts**, switch to the **Checkout** tab, and make sure that **Checkout: Shipping methods** block (by default it's called *Shipping methods*) exists there, and isn't hidden or disabled.
+
+.. important::
+
+    This block must be located in a grid with the *Lite checkout* wrapper, along with other checkout-related blocks.
 
 ===========================================================
 "No Shipping Required" Is Shown Instead of Shipping Methods
