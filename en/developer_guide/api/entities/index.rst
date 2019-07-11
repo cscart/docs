@@ -22,7 +22,6 @@ Supported Entities
     options
     combinations
     exceptions
-    product_variations
     settings
     shipments
     shippings
@@ -32,3 +31,8 @@ Supported Entities
     users
     usergroups
     vendors
+
+.. toctree::
+    :hidden:
+
+    product_variations
