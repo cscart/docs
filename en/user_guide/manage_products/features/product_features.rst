@@ -21,63 +21,17 @@ Add a Feature
 
 #. Click the **+** button in the top right corner.
 
-#. Fill in the following fields in the opened **New feature** window:
+#. Fill in the necessary :doc:`feature properties </user_guide/manage/products/features/feature_attributes>`.
 
-   .. image:: img/features.png
-        :align: center
-        :alt: When you add a feature, a pop-up window appears. You can configure the properties of the feature there.
+#. (optional) Some features have multiple variants. Once you've configured everything on the **General** tab, make sure to configure the **Variants** tab too, if it appears.
 
-   * **Name**—the name of the feature.
+#. (optional) By default, the feature will be available in all product categories. Switch to the **Categories** tab if you wish to make the feature available only in certain categories.
 
-   * **Store**—the storefront to which the product feature originally belongs.
+   .. important::
 
-   * **Feature code**—the code to identify the feature.
+       A feature available in a category is also available in its subcategories. If a feature belongs to a group, its categories are the same as the categories of the group. The **Categories** tab won't appear for the feature in that case.
 
-   * **Position**—the position of this feature relative to other features.
-
-   * **Description**—the description that appears when a customer clicks the question mark icon on the **Features** tab of the product page on the storefront.
-
-   * **Type**—the type of the feature.
-
-     .. note::
-
-          If you choose *Multiple checkboxes* or one of the *Select box* types, remember to specify feature variants on the **Variants** tab.      
-
-   * **Group**—the group to which feature belongs.
-
-   * **Show on the Features tab**—if you tick this checkbox, the feature will appear on the product details page in the special tab.
-
-   * **Show in product header**—if you tick this checkbox, the feature will appear on the product detail page under the product's name.
-
-   * **Show in product list**—if you tick this checkbox, the feature will appear among the other product details in the product list on the storefront.
- 
-   * **Prefix**—what you enter here will appear before the feature value.
-
-   * **Suffix**—what you enter here will appear after the feature value.
-
-#. (optional) By default, the feature will be available in all product categories. To limit the feature to certain categories, follow the steps below:
-
-   * Switch to the **Categories** tab.
-
-     .. important::
-
-         If a feature belongs to a group, its categories are the same as the categories of the group. The **Categories** tab won't appear for the feature in that case.
-
-   * Click the **Add categories** button.
-
-   * Tick the checkboxes of the categories where this feature should be available.
-
-   .. image:: img/feature_categories.png
-        :align: center
-        :alt: You can limit a feature to certain categories.
-
-   * Click **Add categories and close**.
-
-     .. note::
-
-         A feature available in a category is also available in its subcategories.
-
-5. Click the **Create** button.
+#. Click the **Create** button.
 
 ===================
 Add a Feature Group
