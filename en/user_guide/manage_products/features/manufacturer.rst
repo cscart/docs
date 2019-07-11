@@ -2,50 +2,32 @@
 How To: Add the Brand Product Feature
 *************************************
 
-=====================
-Step 1. Add a Feature
-=====================
+========================
+Step 1. Set Up a Feature
+========================
 
-1.1. In the Administration panel, go to **Products → Features**.
-
-1.2. Click the **+** button on the right side of the page. 
-
-1.3. Specify the following properties in the **New feature** window that will open:
-
-   * **Name**—for example, enter *Brand*.
-
-   * **Type**—choose *Select box: Brand/Manufacturer*.
-
-   * **Group**—select the group to which the feature will belong. Leave *None* if you don't want the feature to be a part of any group.
+#. :doc:`Add a product feature <product_features>`. When doing it, set **Purpose** to *Brand, author, etc.*
 
    .. note::
 
-       Specify other properties as you see fit.
+       Specify :doc:`other properties <feature_attributes>` as you see fit.
 
-.. image:: img/manufacturer.png
-    :align: center
-    :alt: The Brand feature
+#. Switch to the **Variants** tab and specify the necessary brands. Note that each brand can have its own image, description, etc.
 
-1.4. Switch to the **Variants** tab and specify the necessary brands.
+#. Click the **Create** button.
 
-1.5. Click the **Create** button.
+=================================
+Step 2. Assign Products to Brands
+=================================
 
-.. image:: img/manufacturer1.png
-    :align: center
-    :alt: Feature variants
+#. Go to **Products → Products** and click on the name of the product for which you'd like to specify a brand.
 
-=====================================
-Step 2. Specify a Brand for a Product
-=====================================
+#. Open the **Features** tab.
 
-2.1. Go to **Products → Products** and click on the name of the product for which you'd like to specify a brand.
+#. Select the necessary brand from the list.
 
-2.2. Open the **Features** tab.
+#. Click the **Save** button.
 
-2.3. Select the necessary brand from the list.
+   .. note::
 
-2.4. Click the **Save** button.
-
-.. note::
-
-    To add a product filter by brand, please refer to :doc:`this article <../filters/adding_filter>`.
+       A product filter can help customers find the products of a desired brand. To add a product filter by brand, please refer to :doc:`this article <../filters/adding_filter>`.
