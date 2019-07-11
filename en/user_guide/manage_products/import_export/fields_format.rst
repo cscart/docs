@@ -555,6 +555,28 @@ We have :doc:`a separate article on how to import product variations </user_guid
 
     EXAMPLE: *T-shirt_Need4Sports*
 
+.. _import-variation-set-as-default:
+
+========================
+Variation set as default
+========================
+
+.. note::
+
+    This column will work only if the imported file also includes *Variation group code*.
+
+Multiple :doc:`product variations </user_guide/manage_products/products/product_variations>` can share one catalog item. In that case, customers will see only one of those variations in the product list on the storefront. Other variations will be selectable on the product page.
+
+This column allows you to choose which variation customers will see first on the product list. It is not mandatory. Here is what happens if you don't include this column:
+
+* When a variation group is created, then the first product in the group becomes a default variation.
+
+* When products in an existing variation group are updated, the default variation won't change, regardless of the order of products in the imported file.
+
+.. important::
+
+    EXAMPLE: *Y*
+
 .. _import-options:
 
 =======

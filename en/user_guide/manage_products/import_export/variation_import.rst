@@ -24,6 +24,8 @@ During :doc:`product import </user_guide/manage_products/import_export/product_i
 
    * A combination of features that the group is based on must be unique for each variation of the group. For example, if the group is based around only "Color" and "Size", it won't be able to include two "M-sized red T-shirts".
 
+#. (optional) :ref:`Variation set as default <import-variation-set-as-default>` helps when multiple variations share one catalog item. For example, when multiple sizes of one T-shirt are displayed as one product, you'll be able to choose which size is selected by default.
+
 ----------
 
 **The best way:** before you try to import products, create the features manually (or import them in your store) and select the correct purpose for them. Here are the benefits of this approach:
