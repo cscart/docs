@@ -2,10 +2,6 @@
 Feature and Feature Group Properties
 ************************************
 
-.. image:: img/features_storefront.png
-    :align: center
-    :alt: The Features tab on the storefront
-
 .. contents::
     :backlinks: none
     :local: 
@@ -19,6 +15,32 @@ General
 
 * **Store**—the storefront to which the product feature originally belongs.
 
+* **Purpose**—what the feature will be used for. Every purpose has a description that helps with choice. Instead of repeating their descriptions here, we'll say what purpose it's best to choose, and when:
+
+  * *Product search via filters* is the most versatile, and usually is the best choice. The only exception is when you intend to use it to differentiate :doc:`product variations </user_guide/manage_products/products/product_variations>`.
+
+  * *Variations as separate products* is good when you have multiple similar products with different looks. For example, when the same model of T-shirt is available in multiple colors, you can show each color as a separate product. Then the feature will allow customers to select the desired color on the product page.
+
+  * *Variations as one product* is good when you have multiple similar products that look the same too. For example, when a T-shirt of the same color is available in multiple sizes, you can make all sizes share one position in the product list.
+
+  * *Brand, author, etc.* is good when you need an own page for each variant of a feature, with the list of products that have this variant. Every variant has its own properties, such as a separate image, description, page title, META description, and keywords.
+
+  * *Additional information* is good when you're sure you won't need filters by this feature, and when there is no way to know in advance what sort of values this feature might have.
+
+* **Feature style**—determines what the feature will look like on the storefront.
+
+* **Filter type**—determines how :doc:`a filter by this feature </user_guide/manage_products/filters/index>` will look at the storefront. It also determines what values a feature can have. For example:
+
+  * *Number slider*—the feature will accept only numbers.
+
+  * *Date selector*—the feature will accept only dates.
+ 
+* **Group**—the group that the product feature belongs to.
+
+  .. warning::
+
+      Deleting a group will also delete all the features that belong to the group.
+
 * **Feature code**—the code to identify the feature.
 
 * **Position**—the position of the feature relatively to the position of the other features.
@@ -26,24 +48,6 @@ General
 * **Description**—the description of the feature. 
 
   The description appears on the storefront, if the customer clicks the question sign next to the feature name on the **Features** tab.
-
-* **Type**—the type of the feature: 
-
-  * **Check box**: can be *Single* or *Multiple*.
-
-  * **Select box**: can be *Text*, *Number*, or *Brand/Manufacturer*.
-
-    .. note::
-
-       The variants of a *Brand/Manufacturer* feature has its own properties, such as a separate image, description, page title, META description, and keywords.  
-
-  * **Others**: can be *Text*, *Number*, or *Date*.
- 
-* **Group**—the group that the product feature belongs to.
-
-  .. warning::
-
-      Deleting a group will also delete all the features that belong to the group. 
  
 * **Show on the Features tab**—if you tick this checkbox, the product feature will appear on the product details page on the **Features** tab.
 
@@ -102,3 +106,6 @@ Share
 =====
 
 The list of stores that share this product feature. Learn more about :doc:`sharing objects </user_guide/stores/sharing>`.
+
+.. meta::
+   :description: Description of product feature properties in CS-Cart and Multi-Vendor ecommerce software.
