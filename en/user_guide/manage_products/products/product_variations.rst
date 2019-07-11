@@ -106,7 +106,7 @@ Once a variation group is created, all products from the group will appear on th
 
 * Delete the variation.
 
-* Change the group code — you can use it later to add other products to this group as variation. A group code can contain only digits, Latin characters, and the following signs: ``-`` and ``_``.
+* Change the group code—you can use it later to add other products to this group as variation. A group code can contain only digits, Latin characters, and the following signs: ``-`` and ``_``.
 
 * Add more variations to the group.
 
