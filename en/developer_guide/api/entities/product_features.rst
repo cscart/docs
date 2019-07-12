@@ -78,6 +78,31 @@ The full list of supported fields is given below (mandatory fields are marked wi
             | ``O``—Others: Number
             | ``D``—Others: Date
             | ``G``—group of features
+    *   -   purpose
+        -   Determines what the feature will be used for. Usually inferred from ``feature_type``.
+        -   Depends on ``feature_type``
+        -   | ``find_products``—help customers find products via filters
+            | ``group_catalog_item``—variations as separate products (part of :doc:`product_variations </user_guide/addons/product_variations/index>` add-on)
+            | ``group_variation_catalog_item``—variations as one product (part of :doc:`product_variations </user_guide/addons/product_variations/index>` add-on
+            | ``organize_catalog``—brand, author, etc.
+            | ``describe_product``—additional non-filterable information
+    *   -   feature_style
+        -   Determines the appearance of this feature on the storefront. Usually inferred from ``feature_type``.
+        -   Depends on ``feature_type``
+        -   | ``text``
+            | ``checkbox``
+            | ``multiple_checkbox``
+            | ``dropdown`` (for variations)
+            | ``dropdown_images`` (for variations)
+            | ``dropdown_labels`` (for variations)
+            | ``brand`` (for brands)
+    *   -   filter_style
+        -   Determines the appearance of a filter by this feature, and what values this feature accepts. Usually inferred from ``feature_type``.
+        -   Depends on ``feature_type``
+        -   | ``checkbox``
+            | ``date``
+            | ``color``
+            | ``slider`` (numbers)
     *   -   categories_path
         -   Categories to which the feature can be applied.
         -   ''
@@ -181,7 +206,7 @@ Product Feature Variants
         -   —
         -   Valid feature type (see above)
     *   -   image_pair
-        -   ``Brand/Manufacturer`` only: Images
+        -   For ``Brand/Manufacturer`` only: Images
         -   NULL
         -   Valid :ref:`image pair <main-pair>`
     *   -   lang_code
@@ -189,15 +214,19 @@ Product Feature Variants
         -   Default language code
         -   Valid language code (see above)
     *   -   meta_description
-        -   ``Brand/Manufacturer`` only: Meta description
+        -   For ``Brand/Manufacturer`` only: Meta description
+        -   ''
+        -   string
+    *   -   color
+        -   For ``"filter_style": "color"`` only: the color hex code
         -   ''
         -   string
     *   -   meta_keywords
-        -   ``Brand/Manufacturer`` only: Meta keywords
+        -   For ``Brand/Manufacturer`` only: Meta keywords
         -   ''
         -   string
     *   -   page_title
-        -   ``Brand/Manufacturer`` only: Page title
+        -   For ``Brand/Manufacturer`` only: Page title
         -   ''
         -   string
     *   -   position
@@ -209,7 +238,7 @@ Product Feature Variants
         -   Set automatically
         -   integer
     *   -   url
-        -   ``Brand/Manufacturer`` only: URL
+        -   For ``Brand/Manufacturer`` only: URL
         -   ''
         -   string
     *   -   variant
@@ -254,7 +283,7 @@ If the feature couldn’t be created, you will receive **HTTP/1.1 400 Bad Reques
 
 **Required fields:** *company_id*, *description*, *feature_type*
 
-**Available fields:** *company_id*, *feature_type*, *parent_id*, *display_on_product*, *display_on_catalog*, *display_on_header*, *description*, *lang_code*, *prefix*, *suffix*, *categories_path*, *full_description*, *status*, *comparison*, *position*, *variants*
+**Available fields:** *company_id*, *feature_type*, *purpose*, *feature_style*, *filter_style*, *parent_id*, *display_on_product*, *display_on_catalog*, *display_on_header*, *description*, *lang_code*, *prefix*, *suffix*, *categories_path*, *full_description*, *status*, *comparison*, *position*, *variants*
 
 .. important::
 

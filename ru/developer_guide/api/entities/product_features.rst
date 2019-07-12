@@ -34,45 +34,73 @@ GET /features
 ::
 
   {
-      {
-          "feature_id": "18",
-          "company_id": "1",
-          "feature_type": "E",
-          "parent_id": "0",
-          "display_on_product": "N",
-          "display_on_catalog": "N",
-          "display_on_header": "Y",
-          "description": "Brand",
-          "lang_code": "en",
-          "prefix": "",
-          "suffix": "",
-          "categories_path": "",
-          "full_description": "",
-          "status": "A",
-          "comparison": "N",
-          "position": "0",
-          "group_position": null
-      },
-      {
-          "feature_id": "14",
-          "company_id": "1",
-          "feature_type": "G",
-          "parent_id": "0",
-          "display_on_product": "Y",
-          "display_on_catalog": "Y",
-          "display_on_header": "N",
-          "description": "Electronics",
-          "lang_code": "en",
-          "prefix": "",
-          "suffix": "",
-          "categories_path": "165,166,167,168,169,170,174,182,190,191,193,234,235,236,237,238,240",
-          "full_description": "",
-          "status": "A",
-          "comparison": "N",
-          "position": "0",
-          "group_position": null
-      },
-    ...
+      "features": [
+          {
+              "feature_id": "14",
+              "company_id": "1",
+              "feature_type": "G",
+              "parent_id": "0",
+              "display_on_product": "Y",
+              "display_on_catalog": "Y",
+              "display_on_header": "N",
+              "description": "Electronics",
+              "lang_code": "en",
+              "prefix": "",
+              "suffix": "",
+              "categories_path": "165,166,167,168,169,170,174,182,190,191,193,234,235,236,237,238,240",
+              "full_description": "",
+              "status": "A",
+              "comparison": "N",
+              "position": "0",
+              "purpose": "",
+              "feature_style": "",
+              "filter_style": ""
+          },
+          {
+              "feature_id": "20",
+              "company_id": "1",
+              "feature_type": "G",
+              "parent_id": "0",
+              "display_on_product": "Y",
+              "display_on_catalog": "Y",
+              "display_on_header": "N",
+              "description": "Main features",
+              "lang_code": "en",
+              "prefix": "",
+              "suffix": "",
+              "categories_path": "248",
+              "full_description": "",
+              "status": "A",
+              "comparison": "N",
+              "position": "10",
+              "purpose": "",
+              "feature_style": "",
+              "filter_style": ""
+          },
+          {
+              "feature_id": "18",
+              "company_id": "1",
+              "feature_type": "E",
+              "parent_id": "0",
+              "display_on_product": "N",
+              "display_on_catalog": "N",
+              "display_on_header": "Y",
+              "description": "Brand",
+              "lang_code": "en",
+              "prefix": "",
+              "suffix": "",
+              "categories_path": "",
+              "full_description": "",
+              "status": "A",
+              "comparison": "N",
+              "position": "0",
+              "purpose": "organize_catalog",
+              "feature_style": "brand",
+              "filter_style": "checkbox",
+              "group_position": null
+          },
+        ...
+      ]
   }
 
 =================
@@ -81,58 +109,97 @@ GET /features/:id
 
 ::
 
-  curl -X GET 'http://example.com/api/2.0/features/15'
+  curl -X GET 'http://example.com/api/2.0/features/25'
 
 ::
 
   {
-     "feature_id": "15",
-     "feature_code": "",
-     "company_id": "1",
-     "feature_type": "S",
-     "parent_id": "14",
-     "display_on_product": "Y",
-     "display_on_catalog": "Y",
-     "display_on_header": "N",
-     "description": "Operating System",
-     "lang_code": "en",
-     "prefix": "",
-     "suffix": "",
-     "categories_path": "165,166,167,168,169,170,174,182,190,191,193,234,235,236,237,238,240",
-     "full_description": "",
-     "status": "A",
-     "comparison": "N",
-     "position": "10",
-     "variants":
-     {
-         "39":
-         {
-             "variant_id": "39",
-             "variant": "iOS 5",
-             "description": "",
-             "page_title": "",
-             "meta_keywords": "",
-             "meta_description": "",
-             "lang_code": "en",
-             "feature_id": "15",
-             "url": "",
-             "position": "40"
-         },
-         "46":
-         {
-             "variant_id": "46",
-             "variant": "Windows 7 Home Premium",
-             "description": "",
-             "page_title": "",
-             "meta_keywords": "",
-             "meta_description": "",
-             "lang_code": "en",
-             "feature_id": "15",
-             "url": "",
-             "position": "0"
-         },
-         ...
-     }
+      "feature_id": "25",
+      "feature_code": "",
+      "company_id": "1",
+      "feature_type": "S",
+      "parent_id": "24",
+      "display_on_product": "Y",
+      "display_on_catalog": "Y",
+      "display_on_header": "N",
+      "description": "RAM",
+      "lang_code": "en",
+      "prefix": "",
+      "suffix": "",
+      "categories_path": "248",
+      "full_description": "",
+      "status": "A",
+      "comparison": "N",
+      "position": "0",
+      "purpose": "find_products",
+      "feature_style": "text",
+      "filter_style": "checkbox",
+      "variants": {
+          "140": {
+              "variant_id": "140",
+              "variant": "8192 MB, DDR3",
+              "description": "",
+              "page_title": "",
+              "meta_keywords": "",
+              "meta_description": "",
+              "lang_code": "en",
+              "feature_id": "25",
+              "url": "",
+              "color": null,
+              "position": "0",
+              "seo_name": null,
+              "seo_path": null,
+              "image_pair": null
+          },
+          "163": {
+              "variant_id": "163",
+              "variant": "512 MB, 700 MHz, GDDR3",
+              "description": "",
+              "page_title": "",
+              "meta_keywords": "",
+              "meta_description": "",
+              "lang_code": "en",
+              "feature_id": "25",
+              "url": "",
+              "color": null,
+              "position": "0",
+              "seo_name": null,
+              "seo_path": null,
+              "image_pair": null
+          },
+          "179": {
+              "variant_id": "179",
+              "variant": "2000 MB, DDR3",
+              "description": "",
+              "page_title": "",
+              "meta_keywords": "",
+              "meta_description": "",
+              "lang_code": "en",
+              "feature_id": "25",
+              "url": "",
+              "color": null,
+              "position": "0",
+              "seo_name": null,
+              "seo_path": null,
+              "image_pair": null
+          },
+          "185": {
+              "variant_id": "185",
+              "variant": "8192 MB, GDDR5",
+              "description": "",
+              "page_title": "",
+              "meta_keywords": "",
+              "meta_description": "",
+              "lang_code": "en",
+              "feature_id": "25",
+               "url": "",
+              "color": null,
+              "position": "0",
+              "seo_name": null,
+              "seo_path": null,
+              "image_pair": null
+          }
+      }
   }
 
 ===============
@@ -164,7 +231,8 @@ POST /features/
      "feature_type": "S"
   }
 
-  ```json
+::
+
   {
     "features_id": "5"
   }
