@@ -52,11 +52,11 @@ New Functions
 
 #. Get unique block ID for WYSIWYG prelaoder::
 
-     ``\Tygh\BlockManager\Block::getUniqueIdByData(array $block_data)``
+     \Tygh\BlockManager\Block::getUniqueIdByData(array $block_data)
 
 #. Gets unique block ID for WYSIWYG prelaoder.
 
-    ``\Tygh\BlockManager\Block::getUniqueId($block_id, $snapping_id)``
+    \Tygh\BlockManager\Block::getUniqueId($block_id, $snapping_id)
 
 -----------------
 Changed Functions

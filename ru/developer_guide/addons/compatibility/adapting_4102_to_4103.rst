@@ -52,11 +52,11 @@
 
 #. Получает уникальный ID блока для предзагрузчика WYSIWYG::
 
-     ``\Tygh\BlockManager\Block::getUniqueIdByData(array $block_data)``
+     \Tygh\BlockManager\Block::getUniqueIdByData(array $block_data)
 
 #. Получает уникальный ID блока для предзагрузчика WYSIWYG::
 
-    ``\Tygh\BlockManager\Block::getUniqueId($block_id, $snapping_id)``
+    \Tygh\BlockManager\Block::getUniqueId($block_id, $snapping_id)
 
 ------------------
 Изменённые функции
