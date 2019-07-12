@@ -26,8 +26,9 @@
 Новые классы
 ------------
 
-``\Tygh\Enum\VendorStatuses`` — перечисление статусов продавцов.
+#. ``\Tygh\Enum\VendorStatuses`` — перечисление статусов продавцов.
 
+#. ``\Tygh\Addons\InstallerWithDemoInterface`` — интерфейс InstallerWithDemoInterface описывает установщик для модуля, у которого есть демо-данные.
 
 -------------
 Новые функции
@@ -48,6 +49,14 @@
 #. Ищет категории и их данные по переданному пути категорий::
 
      fn_get_categories_from_path(array $category_names, $company_id, $lang_code)
+
+#. Получает уникальный ID блока для предзагрузчика WYSIWYG::
+
+     ``\Tygh\BlockManager\Block::getUniqueIdByData(array $block_data)``
+
+#. Получает уникальный ID блока для предзагрузчика WYSIWYG::
+
+    ``\Tygh\BlockManager\Block::getUniqueId($block_id, $snapping_id)``
 
 ------------------
 Изменённые функции

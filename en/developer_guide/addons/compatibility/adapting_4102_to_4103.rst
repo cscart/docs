@@ -26,7 +26,9 @@ Core Functions
 New Classes
 -----------
 
-``\Tygh\Enum\VendorStatuses``—enumeration of vendor statuses.
+#. ``\Tygh\Enum\VendorStatuses``—enumeration of vendor statuses.
+
+#. ``\Tygh\Addons\InstallerWithDemoInterface``—interface InstallerWithDemoInterface describes installer for an add-on that has demo data.
 
 -------------
 New Functions
@@ -47,6 +49,14 @@ New Functions
 #. Find categories and their data by given category path::
 
      fn_get_categories_from_path(array $category_names, $company_id, $lang_code)
+
+#. Get unique block ID for WYSIWYG prelaoder::
+
+     ``\Tygh\BlockManager\Block::getUniqueIdByData(array $block_data)``
+
+#. Gets unique block ID for WYSIWYG prelaoder.
+
+    ``\Tygh\BlockManager\Block::getUniqueId($block_id, $snapping_id)``
 
 -----------------
 Changed Functions
