@@ -21,7 +21,7 @@ Add a Feature
 
 #. Click the **+** button in the top right corner.
 
-#. Fill in the necessary :doc:`feature properties </user_guide/manage/products/features/feature_attributes>`.
+#. Fill in the necessary :doc:`feature properties </user_guide/manage_products/features/feature_attributes>`.
 
 #. (optional) Some features have multiple variants. Once you've configured everything on the **General** tab, make sure to configure the **Variants** tab too, if it appears.
 

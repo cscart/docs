@@ -17,15 +17,15 @@ General
 
 * **Purpose**—what the feature will be used for. Every purpose has a description that helps with choice. Instead of repeating their descriptions here, we'll say what purpose it's best to choose, and when:
 
-  * *Product search via filters* is the most versatile, and usually is the best choice. The only exception is when you intend to use it to differentiate :doc:`product variations </user_guide/manage_products/products/product_variations>`.
+  * **Product search via filters** is the most versatile, and usually is the best choice. The only exception is when you intend to use it to differentiate :doc:`product variations </user_guide/manage_products/products/product_variations>`.
 
-  * *Variations as separate products* is good when you have multiple similar products with different looks. For example, when the same model of T-shirt is available in multiple colors, you can show each color as a separate product. Then the feature will allow customers to select the desired color on the product page.
+  * **Variations as separate products** is good when you have multiple similar products with different looks. For example, when the same model of T-shirt is available in multiple colors, you can show each color as a separate product. Then the feature will allow customers to select the desired color on the product page.
 
-  * *Variations as one product* is good when you have multiple similar products that look the same too. For example, when a T-shirt of the same color is available in multiple sizes, you can make all sizes share one position in the product list.
+  * **Variations as one product** is good when you have multiple similar products that look the same too. For example, when a T-shirt of the same color is available in multiple sizes, you can make all sizes share one position in the product list.
 
-  * *Brand, author, etc.* is good when you need an own page for each variant of a feature, with the list of products that have this variant. Every variant has its own properties, such as a separate image, description, page title, META description, and keywords.
+  * **Brand, author, etc.** is good when you need an own page for each variant of a feature, with the list of products that have this variant. Every variant has its own properties, such as a separate image, description, page title, META description, and keywords.
 
-  * *Additional information* is good when you're sure you won't need filters by this feature, and when there is no way to know in advance what sort of values this feature might have.
+  * **Additional information** is good when you're sure you won't need filters by this feature, and when there is no way to know in advance what sort of values this feature might have.
 
 * **Feature style**—determines what the feature will look like on the storefront.
 
