@@ -10,6 +10,8 @@ New Features and Improvements
 
 [+] Add-ons: Product variations: Performance of the category page with variations on the storefront improved.
 
+[+] Add-ons: Stripe: New payment method to accept payments via credit cards, Google Pay and Apple Pay added.
+
 [+] Checkout: Proper parsing of first name and last name of a customer based on the respective profile fields' positions in the Customer's information block added.
 
 [+] Checkout: The ability to change the order of fields in the "Deliver to" block and add extra fields there was added.
@@ -30,9 +32,7 @@ Functionality Changes
 
 [*] Add-ons: Product variations: Now if a customer has selected a variant for a feature, it won't be reset when the customer selects a variant for another feature.
 
-[*] Add-ons: Product variations: The product feature variants that have equal positions are now sorted by name in the сreate new products dialog.
-
-[*] Add-ons: Product variations: The product feature variants that have equal positions are now sorted by name.
+[*] Add-ons: Product variations: The product feature variants that have equal positions are now sorted by name on the product page and in the variation creation pop-up.
 
 [*] Add-ons: Searchanise: The search now works even during forced reindexation.
 
@@ -58,7 +58,9 @@ Bug Fixes
 
 [!] Add-ons: Data feeds: Google export: Promotions: Wrong price was exported to data feed when product's in-stock quantity was 0. Fixed.
 
-[!] Add-ons: Gift certificates: A PHP Warning could occur when an order was placed with the gift certificate that had already been already used. Fixed.
+[!] Add-ons: Gift certificates: A PHP Warning could occur when an order was placed with the gift certificate that had already been used. Fixed.
+
+[!] Add-ons: Image zoom: Zoomed image was displayed incorrectly in a product's "Quick view" pop-up. Fixed.
 
 [!] Add-ons: Newsletters: Errors were recorded in the browser console when two or more mailing lists were displayed on the profile editing page. Fixed.
 
@@ -74,19 +76,23 @@ Bug Fixes
 
 [!] Add-ons: SEO: It was impossible to change SEO name of a link. Fixed.
 
-[!] Add-ons: Stripe: New payment method to accept payments via credit cards, Google Pay and Apple Pay added.
+[!] Add-ons: Stores and pickup points: The selected pickup point didn't move to the first place in the list. Fixed.
 
 [!] Add-ons: Suppliers: Sharing: Shared supplier could be configured to use shipping methods that are unavailable for its storefronts. Fixed.
 
 [!] Add-ons: Suppliers: Sharing: Shipping methods could be removed from a shared supplier when the supplier was edited in any mode other than "All stores". Fixed.
 
-[!] Add-ons: Video tutorials: Dashboard: Hidden container with video frame did not showing. Fixed.
+[!] Add-ons: Video tutorials: Dashboard: Hidden container with video frame didn't appear. Fixed.
 
 [!] Admin panel: Clicking on a root menu item resulted in all the submenus getting opened. Fixed.
 
 [!] Admin panel: Select2: The 'Nothing found' language variable was missing. Fixed.
 
-[!] Checkout: Guest order was not placed if ReCaptcha shown only login form. Fixed.
+[!] Cart: Subtotal wasn't recalculated if the customer changed the quantity of the product via keyboard and removed the focus from the field with a mouse click. Fixed.
+
+[!] Checkout: Guest order was not placed if ReCaptcha was shown only on sign-in form. Fixed.
+
+[!] Checkout: If the "Deliver to" block did not have a field for selecting a state/region, the shipping cost was not recalculated, and the block for selecting shipping methods remained unavailable. Fixed.
 
 [!] Checkout: Phone: Some phone formats from various countries weren't supported. Fixed.
 
@@ -104,7 +110,7 @@ Bug Fixes
 
 [!] Design: Hooks: There were typos in the names of two TPL hooks. Fixed.
 
-[!] Design: Products: Edit selected: An empty are was displayed on the page for updating products. Fixed.
+[!] Design: Products: Edit selected: An empty area was displayed on the page for updating products. Fixed.
 
 [!] Design: There were typos in some templates. Fixed.
 
