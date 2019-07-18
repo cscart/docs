@@ -2,6 +2,10 @@
 How To: Allow Customer to Pay for Order Once Again
 **************************************************
 
+.. important::
+
+    For this to work, the **Allow customers to pay order again if transaction was declined** setting must be enabled in **Settings → Checkout**. It is usually enabled by default.
+
 #. In the Administration panel, go to **Administration → Order statuses**.
 
 #. Click on the name of a status.
@@ -15,3 +19,6 @@ How To: Allow Customer to Pay for Order Once Again
    .. image:: img/pay_order_again.png
        :align: center
        :alt: Pay order again
+
+.. meta::
+   :description: How to let customers pay for the order again in CS-Cart and Multi-Vendor ecommerce platforms if transaction was declined?
