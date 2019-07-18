@@ -4,9 +4,7 @@ Introduction to the Administration Panel
 
 The **Administration Panel** (or the admin panel for short) is the primary tool for you to work with your online store. Here you can manage products and orders, offer discounts, interact with your customers, change the look of your store and do much more.
 
-.. note::
-
-    Starting with version 4.7.3, you can use the **Responsive Admin Panel [Beta]** add-on to make tha Administration panel adapt to the screen size of your device. That way you can manage your store from mobile devices.
+The admin panel is responsive: it adapts to the screen size of the device you view it from. That way, you can manage your store from mobile devices.
 
 ===========================
 Connect to Your Admin Panel
@@ -47,9 +45,9 @@ The first thing you’ll notice is the **Dashboard**, where you can check sales 
 
 2. Monthly statistics of your store in the form of a diagram.
 
-3. Recent orders made in your store. Switch between the tabs to see orders with particular statuses.
+3. Brief statistics of the store: the number of products, customers, pages, etc. Click on the number of items to go to the page with the detailed list of these items.
 
-4. Brief statistics of the store: the number of products, customers, pages, etc. Click on the number of items to go to the page with the detailed list of these items.
+4. Recent orders made in your store. Switch between the tabs to see orders with particular statuses.
 
 5. The number of orders with the particular status and total income received by the orders of this type.
 
