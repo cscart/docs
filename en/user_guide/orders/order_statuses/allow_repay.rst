@@ -6,7 +6,7 @@ How To: Allow Customer to Pay for Order Once Again
 
     For this to work, the **Allow customers to pay order again if transaction was declined** setting must be enabled in **Settings → Checkout**. It is usually enabled by default.
 
-#. In the Administration panel, go to **Administration → Order statuses**.
+#. In the Administration panel, go to **Administration → Statuses → Order statuses**.
 
 #. Click on the name of a status.
 
