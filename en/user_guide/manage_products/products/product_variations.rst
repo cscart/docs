@@ -30,7 +30,7 @@ Terminology
 
 **Variation**—a product that belongs to a variation group. A product can belong only to one group at the same time, but it's easy to change the product's group. If a variation is removed from the group, it becomes a standard product.
 
-**Catalog item** — a single spot on the product list. Until variations existed, "catalog item" meant the same thing as "product". But now variations may or may not occupy a place on the product list, hence the new term.
+**Catalog item**—a single spot on the product list. Until variations existed, "catalog item" meant the same thing as "product". But now variations may or may not occupy a place on the product list, hence the new term.
 
 .. hint::
 
