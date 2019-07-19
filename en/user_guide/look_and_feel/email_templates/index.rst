@@ -2,13 +2,13 @@
 Email Templates
 ***************
 
-Starting with version 4.4.1, CS-Cart and Multi-Vendor come with a built-in editor for the templates of email notifications. You can customize these templates according to your needs, or import the templates that were created and exported by someone else.
+CS-Cart and Multi-Vendor come with a built-in editor for the templates of email notifications. You can customize these templates according to your needs, or import the templates that were created and exported by someone else.
 
 To access the email template editor, go to **Design → Email templates**.
 
 .. note::
 
-    If you upgraded to 4.4.1 from an earlier version of CS-Cart or Multi-Vendor, :doc:`you may need to enable the editor first. <enable_email_editor>`
+    If you don't see this menu item, :doc:`you may need to enable the editor first. <enable_email_editor>`
 
 .. contents::
    :backlinks: none
@@ -68,11 +68,11 @@ The main area in the middle of the page is where you edit a notification. Here�
 
       You can only attach PDF documents to email notifications about order status changes. The names of those notifications begin with **“Order notification:”**.
 
--------------------------
-2. Variables and Snippets
--------------------------
+---------------------------------
+2. Variables, Snippets, Documents
+---------------------------------
 
-On the left you’ll see the list of variables and snippets that you can use in templates. Clicking on a variable or a snippet will automatically insert it to the **Subject** or **Template**. The exact position depends on where you left the cursor.
+On the left you’ll see the list of variables and snippets that you can use in templates. Clicking on the name of a variable, snippet, or document will automatically insert it to the **Subject** or **Template**. The exact position depends on where you left the cursor.
 
 * **Variables** contain various information from the database, such as the name of the customer or the ID of the order.
 
@@ -83,6 +83,8 @@ On the left you’ll see the list of variables and snippets that you can use in 
   .. hint::
 
       Learn more about snippets in :doc:`this documentation article. <email_snippets>`
+
+* :doc:`Documents </user_guide/look_and_feel/documents/index>` are self-sufficient (unlike snippets), but you can also insert them into emails with one line, so as not to overcomplicate the email template structure.
 
 --------------------
 3. Available Actions
@@ -116,3 +118,6 @@ In This Section
     enable_email_editor
     email_template_export_and_import
     email_snippets
+
+.. meta::
+   :description: Where do I edit emails sent by my CS-Cart online store or Multi-Vendor marketplace?

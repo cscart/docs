@@ -16,10 +16,12 @@ If you don’t see **Email templates** when you open the **Design** menu, the ed
 
 .. important::
 
-    Once you do this, the settings that concern email notifications will disappear from **Administration → Order statuses**. You’ll be able to manage email notifications about order status changes under **Design → Email templates**.
+    Once you do this, the settings that concern email notifications will disappear from **Administration → Statuses → Order statuses**. You’ll be able to manage email notifications about order status changes under **Design → Email templates**.
 
 .. image:: img/template_mode.png
     :align: center
     :alt: The "Email template mode" setting.
 
+.. meta::
+   :description: What should I do if I don't see email template editor in CS-Cart or Multi-Vendor ecommerce platform?
 
