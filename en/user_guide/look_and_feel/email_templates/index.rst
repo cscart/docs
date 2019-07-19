@@ -72,7 +72,7 @@ The main area in the middle of the page is where you edit a notification. Here�
 2. Variables, Snippets, Documents
 ---------------------------------
 
-On the left you’ll see the list of variables and snippets that you can use in templates. Clicking on the name of a variable, snippet, or document will automatically insert it to the **Subject** or **Template**. The exact position depends on where you left the cursor.
+On the left you’ll see the list of variables, snippets, and documents that you can use in templates. Clicking on the name of a variable, snippet, or document will automatically insert it to the **Subject** or **Template**. The exact position depends on where you left the cursor.
 
 * **Variables** contain various information from the database, such as the name of the customer or the ID of the order.
 
