@@ -4,7 +4,7 @@ Common Products for Vendors [Beta]
 
 .. note::
 
-    This add-on first appeared in Multi-Vendor 4.9.1. It is available only in Multi-Vendor Plus.
+    This add-on first appeared in version 4.9.1. It is available only in Multi-Vendor Plus and Ultimate.
 
 =============
 Functionality
@@ -69,3 +69,6 @@ The **Common Products for Vendors** add-on is installed :doc:`like any other add
     .. image:: img/vendor_creates_product.png
         :align: center
         :alt: A vendor can create an own product, even if the "Common Products" add-on is active.
+
+.. meta::
+   :description: How to create sinlge product database and let vendors choose from existing products in Multi-Vendor online shopping mall?

@@ -4,7 +4,7 @@ Vendor Plans: Commissions by Category
 
 .. note::
 
-    This add-on first appeared in Multi-Vendor 4.9.1. It is available only in Multi-Vendor Plus.
+    This add-on first appeared in version 4.9.1. It is available only in Multi-Vendor Plus and Ultimate.
 
 =============
 Functionality
@@ -45,3 +45,6 @@ The **Vendor plans: Commissions by category** add-on is installed :doc:`like any
 .. image:: img/commission_by_category_addon.png
     :align: center
     :alt: The "Vendor plans: Commissions by category" add-on on the list of add-ons.
+
+.. meta::
+   :description: How to set different commissions for different categories in Multi-Vendor online shopping mall?

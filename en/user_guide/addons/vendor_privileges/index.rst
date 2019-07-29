@@ -4,7 +4,7 @@ Vendor Privileges
 
 .. note::
 
-    This add-on first appeared in Multi-Vendor 4.9.1. It is available only in Multi-Vendor Plus.
+    This add-on first appeared in version 4.9.1. It is available only in Multi-Vendor Plus and Ultimate.
 
 =============
 Functionality
@@ -27,3 +27,6 @@ The **Vendor Privileges** add-on is installed :doc:`like any other add-on </user
   .. image:: /user_guide/users/vendors/img/default_vendor_group.png
       :align: center
       :alt: Choose the default user group for all newly-created vendor admins.
+
+.. meta::
+   :description: Add-on for assigning user groups to vendor in Multi-Vendror marketplace software.

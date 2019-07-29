@@ -4,7 +4,7 @@ Direct Customer-to-Vendor Payments
 
 .. note::
 
-    This add-on first appeared in Multi-Vendor 4.9.1. It is available only in Multi-Vendor Plus.
+    This add-on first appeared in version 4.9.1. It is available only in Multi-Vendor Plus and Ultimate.
 
 =============
 Functionality
@@ -59,3 +59,6 @@ During activation, the add-on will automatically disable the following add-ons:
   .. image:: img/direct_payments_activation.png
       :align: center
       :alt: The "Direct Customer-to-Vendor Payments" add-on automatically disables other conflicting add-ons.
+
+.. meta::
+   :description: How to let vendors set up their own payment methods and promotions in Multi-Vendor ecommerce software?
