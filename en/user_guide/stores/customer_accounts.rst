@@ -16,4 +16,9 @@ CS-Cart offers 2 ways of handling customer accounts:
 
   Customers will have to create accounts separately for each storefront.
 
-To choose either of the options, use the **Share users among stores** checkbox in **Settings → Stores**.
+.. important::
+
+    To choose either of the options, use the **Share users among stores** checkbox in **Settings → Stores**.
+
+.. meta::
+   :description: Can CS-Cart storefronts have separate customers? Can customers from one store sign in to another store?

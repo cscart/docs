@@ -1,18 +1,16 @@
-******
-Stores
-******
+***********
+Storefronts
+***********
+
+`CS-Cart Ultimate <https://helpdesk.cs-cart.com/cs-cart-ultimate-license.html>`_ and `Multi-Vendor Ultimate <https://helpdesk.cs-cart.com/multi-vendor-ultimate-license.html>`_ allow you to manage multiple storefronts with one administration panel.
+
+In CS-Cart, storefronts can have their own products, categories, settings, and checkout mechanism, so that visitors can treat them as independent stores. This section of the documentation describes how to work with multiple storefronts.
 
 .. important::
 
-    This article applies only to CS-Cart, not Multi-Vendor.
+    Storefronts in Multi-Vendor Ultimate have a different set of features, and more are being developed. For more information, please check `our plans for Multi-Vendor Ultimate <https://www.cs-cart.com/whats-new-in-multi-vendor.html>`_.
 
-CS-Cart allows you to manage multiple storefronts with one administration panel. Storefronts can have their own products, categories, settings, and checkout mechanism, so that visitors can treat them as independent stores. This section of the documentation describes how to work with multiple storefronts.
-
-To configure multiple storefronts on your web hosting, please :doc:`follow these inistructions. <../../install/storefronts/index>`
-
-.. note::
-
-    To manage multiple storefronts with one Administration panel, `purchase additional storefront licenses <http://www.cs-cart.com/cs-cart-storefront-license.html>`_ or specify the desired number of storefronts when you `buy a CS-Cart license <http://www.cs-cart.com/cs-cart-license.html>`_. Starting with version 4.4.2, there is also `CS-Cart Ultimate <https://www.cs-cart.com/cs-cart-ultimate-license.html>`_, which offers an unlimited number of storefronts.
+To configure multiple storefronts on your web hosting, please :doc:`follow these inistructions. </install/storefronts/index>`
 
 .. toctree::
     :maxdepth: 4
@@ -22,4 +20,4 @@ To configure multiple storefronts on your web hosting, please :doc:`follow these
     *
 
 .. meta::
-   :description: Articles about configuring multiple storefronts for your CS-Cart store on different domains or subdomains for specific region or audience.
+   :description: Articles about configuring multiple storefronts in CS-Cart and Multi-Vendor on different domains or subdomains for specific region or audience.

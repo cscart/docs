@@ -36,53 +36,52 @@ Sharing Objects Among Storefronts
 Share Products (Configurable Sharing)
 -------------------------------------
 
-1. Switch to the **root administrator mode**: select **All stores** in the store selector in the top left corner.
+#. Switch to the root administrator mode: select **All stores** in the store selector in the top left corner.
 
-.. image:: img/switch_modes.png
-    :align: center
-    :alt: Select all stores to switch to the root administrator mode.
+   .. image:: img/switch_modes.png
+       :align: center
+       :alt: Select all stores to switch to the root administrator mode.
 
-2. Open the product details page: go to **Products → Products** and click the product you want to share.
+#. Open the product details page: go to **Products → Products** and click the product you want to share.
 
-3. On the **General** tab, click the **+** button (*Add categories*). This will open the common category tree.
+#. On the **General** tab, add the product to one or more categories under a different storefront.
 
-4. Select one or more categories (highlighted in green) under a different storefront (highlighted in red.)
+#. Click **Save** to apply the changes.
 
-.. image:: img/store_categories.png
-    :align: center
-    :alt: Select a category from the different store for the product.
+   The product will appear on the storefront under the selected categories. Now you can switch to the store administrator mode and define the storefront-specific properties for the product.
 
-5. Click **Add categories** and close to close the form.
-
-6. Click **Save** to apply the changes.
-
-The product will appear on the storefront under the selected categories. Now you can switch to the store administrator mode and define the storefront-specific properties for the product.
+   .. image:: img/store_categories.png
+       :align: center
+       :alt: Select a category from the different store for the product.
 
 ----------------------------------------
 Share Other Objects (Invariable Sharing)
 ----------------------------------------
 
-1. Switch to the **root administrator mode**: select **All stores** in the store selector in the top left corner.
+#. Switch to the root administrator mode: select **All stores** in the store selector in the top left corner.
 
-.. image:: img/switch_modes.png
-    :align: center
-    :alt: Select all stores to switch to the root administrator mode.
+   .. image:: img/switch_modes.png
+       :align: center
+       :alt: Select all stores to switch to the root administrator mode.
 
-2. Choose an object that you need to share. For example, go to **Administration → Shipping & Taxes → Shipping methods** to share a shipping method.
+#. Choose an object that you need to share. For example, go to **Administration → Shipping & Taxes → Shipping methods** to share a shipping method.
 
-3. Click the **gear** button of the object. This opens the object configuration page.
+#. Click the **gear** button of the object. This opens the object configuration page.
 
-4. Switch to the **Share** tab. This opens a list of storefronts that already share the object (if any).
+#. Switch to the **Share** tab. This opens a list of storefronts that already share the object (if any).
 
-.. note::
-    You won't see the **Share** tab if you only have one storefront: in that case there is nothing to share.
+   .. note::
+       You won't see the **Share** tab if you only have one storefront: in that case there is nothing to share.
 
-.. image:: img/share_tab.png
-    :align: center
-    :alt: Use the Share tab to share objects among storefronts.
+   .. image:: img/share_tab.png
+       :align: center
+       :alt: Use the Share tab to share objects among storefronts.
 
-5. Click the **+** button (*Add stores*) to open a list of all storefronts.
+#. Click the **+** button (*Add stores*) to open a list of all storefronts.
 
-6. From the list, select the storefronts that will share the object. Then click **Add stores and close** to update the list of stores that should share the object.
+#. From the list, select the storefronts that will share the object. Then click **Add stores and close** to update the list of stores that should share the object.
 
-7. Click **Save** to apply the changes.
+#. Click **Save** to apply the changes.
+
+.. meta::
+   :description: How to have the 

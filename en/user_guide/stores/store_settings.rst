@@ -33,27 +33,30 @@ The general rule for updating settings is as follows:
 
 * Update **global settings** using the root administrator mode: choose **All stores** in the selector in the top left corner.
 
-.. image:: img/administrator_mode.png
-    :align: center
-    :alt: Select a storefront or choose "All Storefronts".
+  .. image:: img/switch_modes.png
+      :align: center
+      :alt: Select a storefront or choose "All Storefronts".
 
 Normally, storefront-specific settings are grayed out in the root administrator mode to prevent unintended editing. You can disable this protection under **Settings → Stores**. 
 
 You can also use the root administrator mode to update storefront-specific settings for all the storefronts at once. To do so, follow these steps:
 
-1. When applicable, disable the protection of the setting that you want update.
+#. When applicable, disable the protection of the setting that you want update.
 
    * If a storefront-specific setting is protected, it is grayed out. To disable protection, click the **three people icon**.
 
    * If a storefront-specific setting is not protected, it can be edited, and its **three people icon** is highlighted.
 
-.. image:: img/settings_protection.png
-    :align: center
-    :alt: Protected and non-protected settings as they appear in the Administration panel of CS-Cart.
+     .. image:: img/settings_protection.png
+         :align: center
+         :alt: Protected and non-protected settings as they appear in the Administration panel of CS-Cart.
 
-2. Update the setting as required.
+#. Update the setting as required.
 
-3. Click **Save** to apply the changes. The setting will get updated for all storefronts.
+#. Click **Save** to apply the changes. The setting will get updated for all storefronts.
 
 .. note::
     When you have only one storefront, the **three people icon** won't appear, because your changes are supposed to affect only one storefront.
+
+.. meta::
+   :description: How to configure different settings for different storefronts in CS-Cart online store?

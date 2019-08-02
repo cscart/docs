@@ -4,29 +4,31 @@ How To: Create a New Storefront
 
 .. important::
 
-    This article applies only to CS-Cart, not Multi-Vendor.
+    You can manage multiple storefronts from one administration panel in `CS-Cart Ultimate <https://helpdesk.cs-cart.com/cs-cart-ultimate-license.html>`_ and `Multi-Vendor Ultimate <https://helpdesk.cs-cart.com/multi-vendor-ultimate-license.html>`_.
 
-1. Go to the Administration panel of your CS-Cart installation.
+#. Go to the Administration panel of your CS-Cart installation.
 
-2. Make sure to select **All stores** in the store selector.
+#. Make sure that *All stores* (in CS-Cart) or *All vendors* (in Multi-Vendor) modes are selected in the upper left corner.
 
-.. image:: img/switch_modes.png
-    :align: center
-    :alt: Select "All stores" to switch to the root administrator mode.
+   .. image:: img/switch_modes.png
+       :align: center
+       :alt: Switch to the "All stores" mode in CS-Cart by selecting it in the upper left corner.
 
-3. Go to **Administration → Stores** and click the **+** button to open the storefront creation form.
+#. Go to **Administration → Stores** (in CS-Cart) or **Administration → Storefronts** (in Multi-Vendor).
 
-4. If you already have storefronts, you can copy or share objects from one of them for the new storefront.
+#. Click the **+** button to open the storefront creation form.
 
-.. image:: img/copy_and_share.png
-    :align: center
-    :alt: Copy or share objects from your existing stores, if you want..
+#. Specify the properties of the new storefront.
 
-5. Specify the properties of the new storefront.
+   .. note::
 
-6. Click **Create and close** to create the new storefront and close the form.
+       In CS-Cart, you can copy or share objects (such as products, categories, menus, layouts) from one your existing storefronts to the one you're creating.
 
-.. note::
+#. Click **Create**, and the storefront will be added.
 
-    To manage multiple storefronts with one administration panel, `purchase additional storefront licenses <http://www.cs-cart.com/cs-cart-storefront-license.html>`_ or specify the desired number of storefronts when you `buy a CS-Cart license <http://www.cs-cart.com/cs-cart-license.html>`_. Starting with version 4.4.2, there is also `CS-Cart Ultimate <https://www.cs-cart.com/cs-cart-ultimate-license.html>`_, which offers an unlimited number of storefronts.
+   .. image:: img/create_new_storefront.png
+       :align: center
+       :alt: The page for creating a new storefront in CS-Cart.
 
+.. meta::
+   :description: How to create a separate storefront in CS-Cart online store or Multi-Vendor marketplace?

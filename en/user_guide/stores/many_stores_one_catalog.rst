@@ -17,4 +17,7 @@ A single category cannot be assigned to more than one storefront at once. A prod
 However, an individual product can be assigned to multiple product categories at once. That way the same product can appear on several storefronts at once.
 
 .. important::
-    Every shared product can have a number of storefront-specific properties, including the product name, description, price, etc. That way the same product can have different descriptions and prices, depending on the storefront. 
+    Every shared product can have a number of storefront-specific properties, including the product name, description, price, etc. That way the same product can have different descriptions and prices, depending on the storefront.
+
+.. meta::
+   :description: How do products and categories in CS-Cart online store work with multiple storefronts?
