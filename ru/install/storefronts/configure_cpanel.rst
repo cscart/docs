@@ -32,14 +32,9 @@
 Шаг 2. Настраиваем поддомены нашего домена
 ------------------------------------------
 
-Открываем главную страницу **cPanel**. И находим элемент **Subdomains** в секции **Domains**.
+Открываем главную страницу **cPanel**. Находим элемент **Subdomains** в секции **Domains**.
 
-.. image:: img/cpanel_domains.png
-    :align: center
-    :alt: New banner
-
-.. image:: img/cpanel_subdomains.png
-    :align: center
+.. fancybox:: img/cpanel_domains.png
     :alt: New banner
 
 В появившейся форме заполняем необходимые поля. Создадим первый поддомен: 
@@ -50,12 +45,14 @@
 
 **Document Root** должен ссылаться на директорию, где установлен магазин.
 
+.. fancybox:: img/cpanel_subdomains.png
+    :alt: New banner
+
 Нажимаем **Create**
 
 Аналогичным образом создаем два других поддомена. В результате мы должны увидеть все наши созданные поддомены в таблице внизу стараницы:
 
-.. image:: img/cpanel_subdomain_list.png
-    :align: center
+.. fancybox:: img/cpanel_subdomain_list.png
     :alt: New banner
 
 --------------------------
@@ -68,26 +65,22 @@
 
 Переходим на вкладку **Stores** и создаем новый магазин:
 
-.. image:: img/add_storefront.png
-    :align: center
+.. fancybox:: img/add_storefront.png
     :alt: New banner
 
 В качестве **Storefront URL** мы указываем один из поддоменов, которые были созданы на Шаге 2.
 
-.. image:: img/plesk_storefront_url.png
-    :align: center
+.. fancybox:: img/plesk_storefront_url.png
     :alt: New banner
 
 Аналогичным образом создаем еще 2 компании.
 
-.. image:: img/storefront_list.png
-    :align: center
+.. fancybox:: img/storefront_list.png
     :alt: New banner
 
 Далее устанавливаем темы для созданных компаний, используя секцию **Themes** в меню **Design**.
 
-.. image:: img/themes1.png
-    :align: center
+.. fancybox:: img/themes1.png
     :alt: New banner
 
 ------------
@@ -122,20 +115,17 @@
 
 Найти информацию о **Name Servers** для *example.com* можно на главной странице **cPanel** в левой колонке.
 
-.. image:: img/cpanel_name_servers.png
-    :align: center
+.. fancybox:: img/cpanel_name_servers.png
     :alt: New banner
 
 Магазин будет установлен на *example.com*. В каталоге */home/user/public_html*. Т.е. магазин установлен в корень *example.com*.
 
 Находим элемент **Addon domains** в секции **Domains**.
 
-.. image:: img/cpanel_addon_domains_option.png
-    :align: center
+.. fancybox:: img/cpanel_addon_domains_option.png
     :alt: New banner
 
-.. image:: img/cpanel_addon_domains.png
-    :align: center
+.. fancybox:: img/cpanel_addon_domains.png
     :alt: New banner
 
 В форме заполняем необходимые поля. 
@@ -152,8 +142,7 @@
 
 Тем самым мы привяжем доменное имя *example-store.com*, которое так же будет указывать на файлы домена *example.com*.
 
-.. image:: img/cpanel_addon_domain_list.png
-    :align: center
+.. fancybox:: img/cpanel_addon_domain_list.png
     :alt: New banner
 
 -------------------------

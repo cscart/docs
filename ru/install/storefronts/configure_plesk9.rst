@@ -29,28 +29,24 @@
 
 Кликаем по ссылке **Domains** на главной странице Plesk панели.
 
-.. image:: img/plesk9_domains.png
-    :align: center
+.. fancybox:: img/plesk9_domains.png
     :alt: New banner
 
 Если вы управляете несколькими сайтами через Plesk 9, то выберите тот, на который мы делаем привязку. В нашем случае - *это example.com*. 
 
 Кликаем по ссылке.
 
-.. image:: img/plesk9_domain_list.png
-    :align: center
+.. fancybox:: img/plesk9_domain_list.png
     :alt: New banner
 
 ​Кликаем иконку **DNS Settings**
 
-.. image:: img/plesk9_dns_settings.png
-    :align: center
+.. fancybox:: img/plesk9_dns_settings.png
     :alt: New banner
 
 Мы увидим страницу DNS настроек текущего домена.
 
-.. image:: img/plesk9_dns_settings_page.png
-    :align: center
+.. fancybox:: img/plesk9_dns_settings_page.png
     :alt: New banner
 
 Значение настройки **NameServers** будет храниться в записи с типом **NS**.
@@ -59,8 +55,7 @@
 
 Находим ссылку **Create Domain**.
 
-.. image:: img/plesk9_create_domain.png
-    :align: center
+.. fancybox:: img/plesk9_create_domain.png
     :alt: New banner
 
 В форме вводим новое доменное имя (в нашем случае *example-store.com*) в поле **Domain name**.

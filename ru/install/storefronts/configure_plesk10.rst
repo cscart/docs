@@ -32,14 +32,12 @@
 
 Открываем главную страницу Plesk 10. И находим элемент **Websites and Domains** в главном меню.
 
-.. image:: img/plesk10_websites_domains.png
-    :align: center
+.. fancybox:: img/plesk10_websites_domains.png
     :alt: New banner
 
 На этой странице находим кнопку **Add New Subdomain**.
 
-.. image:: img/plesk10_add_subdomain.png
-    :align: center
+.. fancybox:: img/plesk10_add_subdomain.png
     :alt: New banner
 
 В появившейся форме заполняем необходимые поля. Создадим первый поддомен: 
@@ -53,8 +51,7 @@ Document Root должен ссылаться на директорию, где 
 
 Аналогичным образом создаем два других поддомена. В результате мы должны увидеть все наши созданные поддомены в таблице внизу страницы:
 
-.. image:: img/plesk10_subdomains.png
-    :align: center
+.. fancybox:: img/plesk10_subdomains.png
     :alt: New banner
 
 ---------------------------
@@ -67,26 +64,22 @@ Document Root должен ссылаться на директорию, где 
 
 Переходим на вкладку **Stores** и создаем новый магазин:
 
-.. image:: img/add_storefront.png
-    :align: center
+.. fancybox:: img/add_storefront.png
     :alt: New banner
 
 В качестве **Storefront URL** мы указываем один из поддоменов, которые были созданы на Шаге 2.
 
-.. image:: img/plesk_storefront_url.png
-    :align: center
+.. fancybox:: img/plesk_storefront_url.png
     :alt: New banner
 
 Аналогичным образом создаем еще 2 компании:
 
-.. image:: img/storefront_list.png
-    :align: center
+.. fancybox:: img/storefront_list.png
     :alt: New banner
 
 Далее устанавливаем темы для созданных компаний, используя секцию **Themes** в меню **Design**.
 
-.. image:: img/themes1.png
-    :align: center
+.. fancybox:: img/themes1.png
     :alt: New banner
 
 -------------
@@ -122,26 +115,22 @@ Document Root должен ссылаться на директорию, где 
 
 1) Кликаем по ссылке **DNS Settings**, выбрав предварительно в главном меню **Websites & Domains**.
 
-.. image:: img/plesk10_dns_settings.png
-    :align: center
+.. fancybox:: img/plesk10_dns_settings.png
     :alt: New banner
 
 Если вы управляете несколькими сайтами через **Plesk 10**, то выберите тот, на который мы делаем привязку. В нашем случае - это *example.com*. Кликаем по ссылке **Manage**
 
-.. image:: img/plesk10_manage_domain.png
-    :align: center
+.. fancybox:: img/plesk10_manage_domain.png
     :alt: New banner
 
 ​2) Кликаем иконку **Change DNS Zone Settings** напротив домена *example.com* в таблице списка доменов.
 
-.. image:: img/plesk10_change_dns_zone_settings.png
-    :align: center
+.. fancybox:: img/plesk10_change_dns_zone_settings.png
     :alt: New banner
 
 Как в первом, так и во втором случае мы увидим страницу DNS настроек текущего домена.
 
-.. image:: img/plesk10_dns_settings_page.png
-    :align: center
+.. fancybox:: img/plesk10_dns_settings_page.png
     :alt: New banner
 
 Значение настройки **NameServers** будет храниться в записи с типом **NS**.
@@ -150,8 +139,7 @@ Document Root должен ссылаться на директорию, где 
 
 Находим ссылку **Add New Domain**
 
-.. image:: img/plesk10_add_domain.png
-    :align: center
+.. fancybox:: img/plesk10_add_domain.png
     :alt: New banner
 
 В форме вводим новое доменное имя (в нашем случае *example-store.com*) в поле **Domain name** 
@@ -162,8 +150,7 @@ Document Root должен ссылаться на директорию, где 
 
 Тем самым мы привяжем доменное имя *example-store.com*, которое также будет указывать на файлы домена *example.com*.
 
-.. image:: img/plesk10_domains.png
-    :align: center
+.. fancybox:: img/plesk10_domains.png
     :alt: New banner
 
 --------------------------
