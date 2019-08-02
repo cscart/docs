@@ -4,7 +4,7 @@ How To: Allow Vendors to Edit Layouts and Styles of Their Stores
 
 .. note::
 
-    This functionality is available only in Multi-Vendor Plus.
+    This functionality is available only in Multi-Vendor Plus and Ultimate.
 
 =========================================================
 How Store Owners Allow Vendors to Edit Styles and Layouts
