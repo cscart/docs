@@ -1,5 +1,5 @@
 ************************************
-How To: Set up the Data Feeds Add-on
+How To: Set Up the Data Feeds Add-on
 ************************************
 
 #. In the Administration panel, go to **Add-ons → Manage add-ons**.
