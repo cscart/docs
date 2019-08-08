@@ -4,11 +4,11 @@ How To: Set up the Google Export Add-on
 
 .. important::
 
-    The :doc:`/user_guide/addons/data_feeds/index.html` add-on must be installed first.
+    The :doc:`/user_guide/addons/data_feeds/index` add-on must be installed first.
 
 #. In the administration panel, go to **Add-ons → Manage add-ons**.
 
-#. Switch to the **Browse all avaible add-ons** tab and find the **Google export** add-on.
+#. Switch to the **Browse all avaible add-ons** tab and find the **Google Export** add-on.
 
 #. Click the **Install** button.
 

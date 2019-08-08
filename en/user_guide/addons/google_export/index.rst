@@ -8,9 +8,13 @@ Google Export
 
 With the **Google Export** add-on, you can export products to `Google Shopping <https://www.google.com/intl/en_/ads/shopping/index.html>`_. The add-on does the following:
 
-* Adds a data feed template to the **Add-ons → Data feeds** section for creating and exporting data feeds to Google Shopping on a regular basis. See more information about this template :doc:`here </user_guide/addons/data_feeds/google_base>`_.
+* Adds :doc:`an example data feed </user_guide/addons/data_feeds/google_base>` for creating and exporting data feeds to Google Shopping on a regular basis. Find it under **Add-ons → Data feeds**.
 
 * Adds extra product features to match the product fields required by Google. Find them in the :doc:`Features </user_guide/manage_products/features/index>` menu.
+
+================
+Related Articles
+================
 
 .. toctree::
     :maxdepth: 2
