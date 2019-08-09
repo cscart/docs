@@ -8,91 +8,67 @@ CS-Cart and Multi-Vendor allow you to upload your product data to `Google Mercha
 Step 1. Install the Add-ons
 ===========================
 
-1.1. In the Administration panel, go to **Add-ons → Manage add-ons**.
+#. In the Administration panel, go to **Add-ons → Manage add-ons**.
 
-1.2. Switch to the **Browse all available** add-ons tab.
+#. Switch to the **Browse all available** add-ons tab.
 
-1.3. Make sure that the **Data feeds** and **Google export** add-ons are installed. If they aren't, install them.
+#. Make sure that the **Data feeds** and **Google export** add-ons are installed. If they aren't, install them.
 
-* The :doc:`Data feeds </user_guide/addons/data_feeds/index>` add-on allows you export data in CSV files formatted according to the requirements of third-party services.
+   * The :doc:`Data feeds </user_guide/addons/data_feeds/index>` add-on allows you export data in CSV files formatted according to the requirements of third-party services.
 
-* The :doc:`Google export </user_guide/addons/google_export/index>` add-on allows you to use the field types required by Google in your data feeds.
+   * The :doc:`Google export </user_guide/addons/google_export/index>` add-on allows you to use the field types required by Google in your data feeds.
 
-.. image:: img/data_feeds_and_google_export.png
-    :align: center
-    :alt: The Data Feeds and Google Export add-ons must be installed for you to export products to Google Merchant Center.
+     .. image:: img/data_feeds_and_google_export.png
+         :align: center
+         :alt: Both Data Feeds and Google Export add-ons must be installed, if you need to export products to Google Merchant Center.
 
-==========================
-Step 2. Edit Your Products
-==========================
-
-.. important::
-
-    When going through this step, please make sure that your product data complies with `Google specification <https://support.google.com/merchants/answer/7052112>`_. Google `updated the requirements <https://support.google.com/merchants/answer/7000570>`_ in 2016. To meet those requirements, you may need to upgrade to CS-Cart/Multi-Vendor 4.4.1 or 4.5.1.
-
-2.1. Specify Google-related product features for your products, where applicable. To do it, go to **Products → Products**, open any of the products, and switch to the **Features** tab. You’ll see **Google export features**.
-
-Some of the Google export fearures are available only starting with CS-Cart/Multi-Vendor 4.4.1:
-
-* Age group
-
-* Gender
-
-* Size type
-
-* Size system
-
-.. note::
-
-    **Google export features** can be :doc:`exported to a CSV file </user_guide/manage_products/import_export/product_export>` along with other features when you export products. After editing the CSV file, you can import it back and update the values of your product features en masse that way.
-
-.. image:: img/google_export_features.png
-    :align: center
-    :alt: Google export features
-
-2.2. Starting with CS-Cart/Multi-Vendor 4.4.1, you can export your existing product options to Google as ``color``, ``size``, ``pattern``, and ``material``.  When you edit an option (either under **Products → Options**, or on the **Options** tab of a product), you can choose an **Equivalent in Google** for that option. 
-
-For example, if your store has an option called **Color** and you select *Google color* as its **Equivalent in Google**, then the **Color** option will be the source of information for the **Google color** field type when you create a data feed.
-      
-.. image:: img/equivalent_in_google.png
-    :align: center
-    :alt: You can select equivalents in Google for your product options.
-
-2.3. `Google’s GTIN requirements are expanding. <https://support.google.com/merchants/answer/6352134>`_ If you don’t enter the value for the GTIN feature in step 2.1, CS-Cart/Multi-Vendor 4.5.1 and newer versions will try to use the **CODE** field of the product as GTIN.
-
-:doc:`Option combinations </user_guide/manage_products/options/option_combinations>` can be exported as separate entries in the feed file, starting with CS-Cart/Multi-Vendor 4.5.1. The ability to export :doc:`product variations </user_guide/manage_products/products/product_variations>` the same way was added in version 4.7.2.
+====================================
+Step 2. Check and Edit Your Products
+====================================
 
 .. important::
 
-    For option combinations and product variations to be exported properly, each option that comprises the combination/variation must have an **Equivalent in Google** (see step 2.2), and those equivalents must be included in the data feed file that you create during step 3.
+    On this step, you need to check whether your store has `all the information about products required by Google <https://support.google.com/merchants/answer/7052112>`_, and if its format complies with Google requirements.
 
-When an option combination is exported as a separate entry:
+#. Some of the fields required by Google are created automatically as :doc:`product features </user_guide/manage_products/features/index>` in the **Google export features** group. You'll see them on the product editing page and will be able to set their values, if applicable.
 
-* The **CODE** field of an option combination is exported as GTIN.
+   .. image:: img/google_export_features.png
+       :align: center
+       :alt: Google export features
 
-* The image of the combination is exported for that combination instead of the main product image.
+#. Depending on a product or country, Google may require other fields. If you don't have them, then :doc:`create product features </user_guide/manage_products/features/product_features>` that correspond to them. After that, specify their values for products, where applicable.
 
-.. image:: img/combination_gtin.png
-    :align: center
-    :alt: Enter GTIN in the combination's CODE field before exporting that combination to Google.
+   .. note::
+
+       If you use :doc:`product variations </user_guide/manage_products/products/product_variations>`, then `item_group_id <https://support.google.com/merchants/answer/6324507>`_ will be generated for them automatically, one unique ID per catalog item.
 
 ==========================
 Step 3. Create a Data Feed
 ==========================
 
-3.1. Go to **Add-ons → Data feeds**.
+#. :doc:`Create a new data feed </user_guide/addons/data_feeds/create_df>` or edit the existing *Google base* feed according to your needs and `Google specifications <https://support.google.com/merchants/answer/7052112>`_. Here are a few things you should consider:
 
-3.2. :doc:`Create a new data feed </user_guide/addons/data_feeds/create_df>` or edit the existing *Google base* feed according to your needs and `Google specifications <https://support.google.com/merchants/answer/7052112>`_. Please pay attention to the notice on the right—it explains some of the requirements. Here are a couple of other things you should consider:
+   * When you create a data feed for Google, make sure to choose *google_export* as a **Layout**. This will allow you to export product options to Google Merchant Center as described in step 2.2, but only if you add those Google options on the **Fields mapping** tab.
 
-* When you create a data feed for Google, make sure to choose *google_export* as a **Layout**. This will allow you to export product options to Google Merchant Center as described in step 2.2, but only if you add those Google options on the **Fields mapping** tab.
+   * Select both product types (*Simple products* and *Variations*) on the data feed editing page. To select multiple types, hold **Сtrl**.
 
-* Select both product types (*Simple products* and *Variations*) on the data feed editing page. To select multiple types, hold **Сtrl**.
+   * Make sure that the code of your store's :doc:`primary currency </user_guide/currencies/index>` conforms to `ISO 4217 <http://www.currency-iso.org/en/home/tables/table-a1.html>`_, and the weight measurement unit :doc:`specified in the settings </user_guide/settings/general>` is one of the following: lb, oz, g, kg.
 
-3.3. To generate a feed file, click the **gear** button and choose **Download**.
+   * GTIN is a key identifier of a product. If you don't specify GTIN as a feature, product's SKU from the CODE field will be used.
 
-.. image:: img/download_data_feed.png
-    :align: center
-    :alt: Click the gear button next to the feed and choose Download to get the feed file.
+   * Tax rules:
+
+     * For the US, don't include tax in the price.
+
+     * For Canada and India, do not include any value added tax in the price.
+
+     * For all other countries, value added tax (VAT) has to be included in the price.
+
+#. To generate a feed file, click the **gear** button and choose **Download**.
+
+   .. image:: img/download_data_feed.png
+       :align: center
+       :alt: Click the gear button next to the feed and choose Download to get the feed file.
 
 =================================
 Step 4. Submit the Feed to Google
