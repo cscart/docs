@@ -2,10 +2,6 @@
 Stripe Connect Payments
 ***********************
 
-.. note::
-
-    This add-on comes with Multi-Vendor 4.7.1 and newer versions.
-
 By default, all the money from purchases in a Multi-Vendor store goes to the store owner. The store owner is then supposed to distribute that money among vendors and use the :doc:`Accounting </user_guide/users/vendors/account_balance>` page to keep track of the transactions.
 
 The **Stripe Connect Payments** add-on allows store owners to avoid manual distribution of funds among vendors. Instead, a single payment made by a customer is automatically shared between vendors and the store owner.
@@ -36,6 +32,10 @@ General Information
 
 * Stripe Connect is fully integrated with Multi-Vendor's :doc:`RMA </user_guide/addons/rma/index>` add-on to provide easier processing of return requests and refunds.
 
+  .. important::
+
+      3-D Secure (and therefore, `Strong Customer Authentication <https://en.wikipedia.org/wiki/Strong_customer_authentication>`_ required by the EU) is supported in our Stripe add-on starting with version 4.10.4.
+
 ================
 Related Articles
 ================
@@ -46,3 +46,6 @@ Related Articles
     :glob:
     
     *
+
+.. meta::
+   :description: A Stripe Connect integration for Multi-Vendor marketplace to distribute money among vendors automatically.

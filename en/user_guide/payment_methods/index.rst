@@ -27,6 +27,7 @@ Here are some of the payment methods that you can set up in CS-Cart and Multi-Ve
     :titlesonly:
     :glob:
 
+    stripe_apple_and_google_pay
     2checkout
     authorizenet
     eway

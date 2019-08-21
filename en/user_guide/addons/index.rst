@@ -72,6 +72,7 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     step_by_step_checkout/index
     store_import/index
     stores_and_pickup_points/index
+    stripe_payments/index
     stripe_connect/index
     suppliers/index
     tags/index
