@@ -58,7 +58,7 @@ Once you set up a Stripe Connect payment method, your vendors will be able to co
 
 .. important::
 
-    Only :doc:`vendors' administrators </user_guide/users/vendors/index>` can see the **Connect with Stripe** button. Marketplace administrators can only see whether or not a vendor has connected a Stripe account.
+    The **Connect with Stripe** button will appear only to :doc:`vendors' administrators </user_guide/users/vendors/index>` or those marketplace administrators who switch to a particular vendor.
 
 Here is the instruction for a vendor:
 
