@@ -2,10 +2,6 @@
 How To: Install and Configure Stripe Connect Payments Add-on
 ************************************************************
 
-.. note::
-
-    The **Stripe Connect payments** add-on comes with Multi-Vendor starting with version 4.7.1.
-
 #. Open the Administration panel and go to **Add-ons → Manage add-ons**.
 
 #. Switch to the **Browse all available add-ons** tab and install **Stripe Connect payments**.
@@ -39,3 +35,6 @@ How To: Install and Configure Stripe Connect Payments Add-on
    .. image:: img/stripe_connect_addon_settings.png
        :align: center
        :alt: Configure the settings of the Stripe Connect Payments add-on.
+
+.. meta::
+   :description: How to configure Stripe Connect in Multi-Vendor ecommerce CMS for marketplaces?

@@ -42,7 +42,7 @@ Getting Client ID and Defining Redirect URI
        :align: center
        :alt: Stripe client ID in Multi-Vendor.
 
-#. Copy the **Redirect URIs** from the Stripe Connect payment method settings in Multi-Vendor, go back to the Stripe dashboard and insert the URI into the corresponding field.
+#. Copy both Redirect URIs from the Stripe Connect payment method settings in Multi-Vendor, go back to the Stripe dashboard and insert the URIs into the corresponding field.
 
    .. image:: img/stripe_redirect_uri.png
        :align: center
@@ -69,3 +69,6 @@ Getting Publishable Key and Secret Key
    .. image:: img/stripe_cscart_keys.png
        :align: center
        :alt: Publishable key and Secret key in Multi-Vendor.
+
+.. meta::
+   :description: How to get the credentials to set up Stripe Connect payments in Multi-Vendor marketplace?
