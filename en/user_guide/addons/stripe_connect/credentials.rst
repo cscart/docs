@@ -30,7 +30,7 @@ Getting Client ID and Defining Redirect URI
        :align: center
        :alt: The Connect page.
 
-#. On the **Settings** tab find the **Client IDs** section and copy the **live mode client ID**.
+#. On the **Settings** tab find the **Client IDs** section and copy the **Live mode client ID**.
 
    .. image:: img/stripe_client_id.png
        :align: center
