@@ -1,0 +1,193 @@
+************************
+CS-Cart 4.10.4 Changelog
+************************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Product variations: Searching by features was added to the variation creation form.
+
+[+] Add-ons: Product variations: Sorting was added to the "View all variations as list" block.
+
+[+] Add-ons: Stripe Payments, Stripe Connect: Ability to enable 3-D Secure for Strong Customer Authentication added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: Buy together: Index for the "buy_together" table was added to improve the processing of queries.
+
+[*] Add-ons: PayPal Payments: PayPal Pro was renamed to Website Payments Pro.
+
+[*] Add-ons: Product variations: The ability to edit product code on the “Variations” tab was added.
+
+[*] Add-ons: SEO: Some new SEO microdata values (review, brand, aggregateRating, url)  were added.
+
+[*] Multi-Vendor Plus: Add-ons: Common Products for Vendors (Beta): List price was added on the product list in the admin panel.
+
+[*] Multi-Vendor: Add-ons: Vendor plans: Product variations: Child variations no longer count towards the product limit of a vendor plan.
+
+[*] Multi-Vendor: Add-ons: Vendor plans: Some hooks were updated.
+
+[*] Notifications: Notification about problems with uploading files was updated.
+
+[*] Payments: SagePay Direct: 3-D Secure 2 support was added.
+
+[*] Settings: SMTP password isn't displayed openly in the settings now.
+
+=========
+Bug Fixes
+=========
+
+[!] Abandoned / Live carts: Customer's information wasn’t saved even if entered. Fixed.
+
+[!] Add-ons: Advanced Products Import: Product Variations: Wrong variation group could be selected during import. Fixed.
+
+[!] Add-ons: Comments and Reviews: The obsolete "Gift registry" section was present in the add-on settings. Fixed.
+
+[!] Add-ons: Comments and reviews: Testimonials couldn't be added via the admin panel in some cases. Fixed.
+
+[!] Add-ons: Data feeds: Google Export: The "Sale price" field wasn't exported via CRON. Fixed.
+
+[!] Add-ons: Data feeds: The selected item in the drop-down list wasn't displayed in the settings. Fixed.
+
+[!] Add-ons: Gift certificates: E-mail message used the default cart language instead of the customer language when the status of a gift certificate was updated. Fixed.
+
+[!] Add-ons: Maps & Geolocation: Placeholder “shipping” was displayed on the product page in the shipping estimation section. Fixed.
+
+[!] Add-ons: Payment dependencies: Pay order again: Forbidden payment methods were still available for the selected shipping method on the order page. Fixed.
+
+[!] Add-ons: PayPal Payments: PayPal Pro: 3D Secure settings were mandatory. Fixed.
+
+[!] Add-ons: Product variations: Language variables for the main language weren't installed in some cases. Fixed.
+
+[!] Add-ons: Product variations: Product count in category was wrong when variation category had been changed through bulk editing. Fixed.
+
+[!] Add-ons: Product variations: Some shipping properties of child products were not saved. Fixed.
+
+[!] Add-ons: Product variations: The default variation didn't change after import. Fixed.
+
+[!] Add-ons: Product variations: When the previous/next buttons were used on the variation page to switch between products, the number of products was displayed incorrectly. Fixed.
+
+[!] Add-ons: RMA: PayPal Payments: When multiple products from an order were returned, only the price of the first one was refunded. Fixed.
+
+[!] Add-ons: Reward points: The "Override global PER" setting of a product wasn't available on the product creation page. Fixed.
+
+[!] Add-ons: SEO: Direct link to the payment script used in some payments was wrong when the "Show language in the URL" setting was enabled. Fixed.
+
+[!] Add-ons: SEO: New SEO rules were created with postfix even if the "Use single URL for all languages" setting was on. Fixed.
+
+[!] Add-ons: Stores and pickup points: Estimated shipping cost didn't include extra shipping charge. Fixed.
+
+[!] Add-ons: Stores and pickup points: If the customer had a city without a pick-up point, a empty page was displayed. Fixed.
+
+[!] Add-ons: Stores and pickup points: The city of a pickup point depended of language in the customer area, and pickup points weren't found in some cases. Fixed.
+
+[!] Add-ons: Stores and pickup points: The list of cities on the map displayed the cities regardless of the storefront. Fixed.
+
+[!] Add-ons: Stores and pickup points: Using the list of cities instead of map in the city selector caused JavaScript errors. Fixed.
+
+[!] Add-ons: Stripe payments: Product option combinations (Deprecated): Forbidden combination exception notification was displayed when simply opening a detailed product page. Fixed.
+
+[!] Administration panel: Product editing: Page content could flicker while the changes were being saved. Fixed.
+
+[!] Administration panel: Some pages were not adapted for mobile devices. Fixed.
+
+[!] Cart: Products: In some cases it was impossible to change quantity for a product if minimum order quantity was set for that product. Fixed.
+
+[!] Categories: During category deletion, the notification about successful deletion of the category was always displayed, regardless of the result of the function. Fixed.
+
+[!] Categories: Tree of categories could be displayed incorrectly in some cases in the sidebar of the category page. Fixed.
+
+[!] Checkout: A city with a special symbol in its name could not be found. Fixed.
+
+[!] Checkout: If billing address was displayed first in the settings of the Step-by-Step Checkout (Deprecated) add-on, then moving to the new checkout reset the customer's location to the default value. Fixed.
+
+[!] Checkout: Payments: The first payment method on the checkout page was not always selected by default. Fixed.
+
+[!] Checkout: Phone masks: Malaysian phone format wasn't supported. Fixed.
+
+[!] Checkout: Profile fields: The address of the demo customer didn't change after the first order. Fixed.
+
+[!] Checkout: The list of shipping methods on the checkout page was not updated if the shipping methods were edited. Fixed.
+
+[!] Core: If the real domain name was different from current domain name, then the GET params were lost after redirection to the real domain name. Fixed.
+
+[!] Customers: API access was activated automatically when a user was edited in the admin panel, regardless of whether or not the "API access for this user" was on. Fixed.
+
+[!] Design: Customer location: The selected city in the site header could be displayed on a separate line. Fixed.
+
+[!] Design: Layouts: Blocks added to a grid couldn't be deleted before the layout management page was refreshed. Fixed.
+
+[!] Design: Products: Going through images quickly on the product page on the storefront resulted in an empty area under the footer. Fixed.
+
+[!] Design: The "cm-scroll" class did not work in pop-ups on mobile devices. Fixed.
+
+[!] Design: Themes: Responsive: The Brightness style had the 'Submit' button of the gift certificate displayed incorrectly. Fixed.
+
+[!] Email templates: First name, last name and phone number weren't shown in emails by default. Fixed.
+
+[!] Export/Import: Features: Categories and groups cleared during feature import. Fixed.
+
+[!] Export/Import: Features: Some of the required fields (Purpose, Feature type, Filter style) weren’t imported and exported. Fixed.
+
+[!] Features: Sorting parameters were not saved on the feature details page. Fixed.
+
+[!] JS: WYSIWYG: Redactor: Pop-ups for inserting links appeared under the editor window. Fixed.
+
+[!] Menu: After menu cloning, the parent-child connection between elements could be lost in some cases. Fixed.
+
+[!] Multi-Vendor: Add-ons: Customer-to-Vendor Communication: Vendor did not see messages in some cases. Fixed.
+
+[!] Multi-Vendor: Add-ons: RMA: Order sum was deducted on "Accounting" page regardless of the status of the return request. Fixed.
+
+[!] Multi-Vendor: Add-ons: Stripe Connect: Gift certificates: An order failed when a certificate was used. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor Data Premoderation: On the Product approval page, the drop-down list of vendors was cut off. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor Plans: Currency symbol was displayed with HTML code on the editing vendor plan popup. Fixed.
+
+[!] Multi-Vendor: Vendors: Pending vendor invitations link was wrongly displayed for vendors. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors (Beta): A common product was shown on "Product being sold" list after searching. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors (Beta): Common products duplicated when they were exported and reimported back. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors (Beta): Variations of a common product were not shown on  the variation management list in the admin panel. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors (Beta): Common products were not displayed in vendor microstores. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors (Beta): Quick view had the "Add to cart" button instead of the button for seeing all offers of that product.
+
+[!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: Promotions: Vendor could not pick an option of product while creating a promotion. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Vendor plans: Commission by category: Stripe Connect: Commission values were not rounded in accordance with the currency settings, which could lead to wrong account balance for a vendor. Fixed.
+
+[!] Multi-Vendor Ultimate: Settings: Vendors: The settings for allowing vendors to edit layouts and manage styles weren't available. Fixed.
+
+[!] Multi-Vendor Ultimate: Storefronts: Preview of a product was always opened on the default storefront. Fixed.
+
+[!] Orders: Sales reports: Information about discounts could be incomplete. Fixed.
+
+[!] Orders: Taxes: Tax appeared in orders even if the customer was exempt from taxes. Fixed.
+
+[!] Payment methods: QB Merchant Service: A PHP Notice occurred when an order was placed. Fixed.
+
+[!] Products: Big picture: The preview of the first image opened regardless of what preview you clicked. Fixed.
+
+[!] Products: Images uploaded for product description could replace one another in some cases. Fixed.
+
+[!] Products: Options: Sharing: Variants of a local option were deleted after a product was edited from the storefront it was shared with. Fixed.
+
+[!] Products: Some values of quantity step could result in an error after the product had been saved. Fixed.
+
+[!] Rate areas: A city with the name longer than 36 symbols was not saved correctly. Fixed.
+
+[!] Settings: E-mails: Some e-mails couldn't be sent when the Administration panel was in the “All stores” mode. Fixed.
+
+[!] Shipping methods: Changing the language of content didn’t affect the names of the shipping methods in the administration panel. Fixed.
+
+[!] Shipping methods: When the "free" language variable was removed to hide "Free" next to a shipping method, the dash wasn't removed. Fixed.
+
+[!] Widget: Store didn't work in the widget mode. Fixed.
