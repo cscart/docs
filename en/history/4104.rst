@@ -22,17 +22,17 @@ Functionality Changes
 
 [*] Add-ons: Product variations: The ability to edit product code on the “Variations” tab was added.
 
-[*] Add-ons: SEO: Some new SEO microdata values (review, brand, aggregateRating, url)  were added.
+[*] Add-ons: SEO: Some new SEO microdata values (review, brand, aggregateRating, url) were added.
+
+[*] Multi-Vendor: Add-ons: Vendor plans: Some hooks were updated.
 
 [*] Multi-Vendor Plus: Add-ons: Common Products for Vendors (Beta): List price was added on the product list in the admin panel.
 
 [*] Multi-Vendor: Add-ons: Vendor plans: Product variations: Child variations no longer count towards the product limit of a vendor plan.
 
-[*] Multi-Vendor: Add-ons: Vendor plans: Some hooks were updated.
-
 [*] Notifications: Notification about problems with uploading files was updated.
 
-[*] Payments: SagePay Direct: 3-D Secure 2 support was added.
+[*] Payment methods: SagePay Direct: 3-D Secure 2 support was added.
 
 [*] Settings: SMTP password isn't displayed openly in the settings now.
 
