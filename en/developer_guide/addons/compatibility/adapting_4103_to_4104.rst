@@ -136,11 +136,11 @@ New Сlasses
 
 #. ``\Tygh\Addons\StripeConnect\PriceFormatter``—formats prices for Stripe Connect payments.
 
-#. ``\Tygh\Enum\Addons\Rma\ReturnOperationStatuses``—enumeration of return operations statuses in the RMA add-on.
+#. ``\Tygh\Enum\Addons\Rma\ReturnOperationStatuses``—enumerates return operation statuses in the RMA add-on.
 
-#. ``\Tygh\Enum\Addons\Rma\RecalculateOperations``—enumeration of recalculate operations in the RMA add-on.
+#. ``\Tygh\Enum\Addons\Rma\RecalculateOperations``—enumerates recalculation operations in the RMA add-on.
 
-#. ``\Tygh\Enum\Addons\Rma\InventoryOperations``—enumeration of inventory operations in the RMA add-on.
+#. ``\Tygh\Enum\Addons\Rma\InventoryOperations``—enumerates inventory operations in the RMA add-on.
 
 ============
 Hook Changes
@@ -179,7 +179,7 @@ New Hooks
 
      fn_set_hook('rus_cities_geo_maps_set_customer_location_pre_post', $country_code, $state_code, $city, $zipcode);
 
-#. This hook is executed after automatic detection of the customer's ZIP code. The hook allows you to modify the detected zipcode::
+#. This hook is executed after automatic detection of the customer's ZIP code. The hook allows you to modify the detected ZIP code::
 
      fn_set_hook('rus_cities_location_manager_detect_zipcode_post_post', $location, $cities);
 

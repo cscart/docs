@@ -56,7 +56,7 @@
 Новые функции
 -------------
 
-#. Отпровляет СМС покупателю, когда меняется статус отгрузки::
+#. Отправляет СМС покупателю, когда меняется статус отгрузки::
 
      fn_rus_unisender_send_sms_shipment($text_sms, $phone, $order_id = 0, $status_to = '')
 
@@ -88,7 +88,7 @@
 Устаревшие функции
 ------------------
 
-``fn_payment_url($protocol, $processor_script)``—use the *payment_notification* controller in your payments.
+``fn_payment_url($protocol, $processor_script)`` — используйте контроллер *payment_notification* в своих способах оплаты.
 
 ----------------
 Удалённые классы
@@ -112,10 +112,10 @@
 
   ::
 
-    // Old:
+    // Было:
     \Tygh\Payments\Addons\StripeConnect\StripeConnect
 
-    // New:
+    // Стало:
     \Tygh\Addons\StripeConnect\Payments\StripeConnect
 
 
@@ -123,10 +123,10 @@
 
   ::
 
-    // Old:
+    // Было:
     \Tygh\Addons\StripeConnect\Providers\OAuthHelperProvider
 
-    // New:
+    // Стало:
     \Tygh\Addons\StripeConnect\ServiceProvider
 
 ------------
@@ -135,11 +135,11 @@
 
 #. ``\Tygh\Addons\StripeConnect\PriceFormatter`` — форматирует цены для платежей через Stripe Connect.
 
-#. ``\Tygh\Enum\Addons\Rma\ReturnOperationStatuses`` — перечисление статусов операции возврата в модуле "Возврат товаров" (RMA).
+#. ``\Tygh\Enum\Addons\Rma\ReturnOperationStatuses`` — перечисляет статусы операции возврата в модуле "Возврат товаров" (RMA).
 
-#. ``\Tygh\Enum\Addons\Rma\RecalculateOperations`` — перечисление операций перерасчёта в модуле "Возврат товаров" (RMA).
+#. ``\Tygh\Enum\Addons\Rma\RecalculateOperations`` — перечисляет операции перерасчёта в модуле "Возврат товаров" (RMA).
 
-#. ``\Tygh\Enum\Addons\Rma\InventoryOperations`` — перечисление операций с количеством товаров в модуле "Возврат товаров" (RMA).
+#. ``\Tygh\Enum\Addons\Rma\InventoryOperations`` — перечисляет операций с количеством товаров в модуле "Возврат товаров" (RMA).
 
 =================
 Изменения в хуках
