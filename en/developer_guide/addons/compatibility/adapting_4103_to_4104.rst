@@ -177,11 +177,11 @@ New Hooks
 
 #. This hook is executed after the location of the user has been set. The hook allows modifying the location::
 
-     fn_set_hook('rus_cities_geo_maps_set_customer_location_pre_post', $country_code, $state_code, $city, $zipcode);
+     fn_set_hook('rus_cities_geo_maps_set_customer_location_pre_post', $location, $cities);
 
 #. This hook is executed after automatic detection of the customer's ZIP code. The hook allows you to modify the detected ZIP code::
 
-     fn_set_hook('rus_cities_location_manager_detect_zipcode_post_post', $location, $cities);
+     fn_set_hook('rus_cities_location_manager_detect_zipcode_post_post', $country_code, $state_code, $city, $zipcode);
 
 #. This hook is executed before the initialization of Last View. The hook allows you to modify request parameters::
 

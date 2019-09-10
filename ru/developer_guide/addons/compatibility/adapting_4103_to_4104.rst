@@ -139,7 +139,7 @@
 
 #. ``\Tygh\Enum\Addons\Rma\RecalculateOperations`` — перечисляет операции перерасчёта в модуле "Возврат товаров" (RMA).
 
-#. ``\Tygh\Enum\Addons\Rma\InventoryOperations`` — перечисляет операций с количеством товаров в модуле "Возврат товаров" (RMA).
+#. ``\Tygh\Enum\Addons\Rma\InventoryOperations`` — перечисляет операции с количеством товаров в модуле "Возврат товаров" (RMA).
 
 =================
 Изменения в хуках
@@ -176,11 +176,11 @@
 
 #. Хук выполняется после того, как задано местоположение покупателя. Позволяет изменить местоположение::
 
-     fn_set_hook('rus_cities_geo_maps_set_customer_location_pre_post', $country_code, $state_code, $city, $zipcode);
+     fn_set_hook('rus_cities_geo_maps_set_customer_location_pre_post', $location, $cities);
 
 #. Хук выполняется после автоматического определения индекса покупателя. Позволяет изменить индекс, который определился::
 
-     fn_set_hook('rus_cities_location_manager_detect_zipcode_post_post', $location, $cities);
+     fn_set_hook('rus_cities_location_manager_detect_zipcode_post_post', $country_code, $state_code, $city, $zipcode);
 
 #. Хук выполняется перед инициализацией Last View. Позволяет модифицировать параметры запроса::
 

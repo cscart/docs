@@ -24,11 +24,11 @@ Functionality Changes
 
 [*] Add-ons: SEO: Some new SEO microdata values (review, brand, aggregateRating, url) were added.
 
+[*] Multi-Vendor: Add-ons: Vendor plans: Product variations: Child variations no longer count towards the product limit of a vendor plan.
+
 [*] Multi-Vendor: Add-ons: Vendor plans: Some hooks were updated.
 
 [*] Multi-Vendor Plus: Add-ons: Common Products for Vendors (Beta): List price was added on the product list in the admin panel.
-
-[*] Multi-Vendor: Add-ons: Vendor plans: Product variations: Child variations no longer count towards the product limit of a vendor plan.
 
 [*] Notifications: Notification about problems with uploading files was updated.
 
@@ -78,7 +78,7 @@ Bug Fixes
 
 [!] Add-ons: SEO: Direct link to the payment script used in some payments was wrong when the "Show language in the URL" setting was enabled. Fixed.
 
-[!] Add-ons: SEO: New SEO rules were created with postfix even if the "Use single URL for all languages" setting was on. Fixed.
+[!] Add-ons: SEO: New SEO rules were created with suffix even if the "Use single URL for all languages" setting was on. Fixed.
 
 [!] Add-ons: Stores and pickup points: Estimated shipping cost didn't include extra shipping charge. Fixed.
 
