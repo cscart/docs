@@ -68,6 +68,8 @@ Bug Fixes
 
 [!] Add-ons: Product variations: The default variation didn't change after import. Fixed.
 
+[!] Add-ons: Product variations: The product variation creation form didn't open when too many possible variations could be generated. Fixed; now the form will open, but will advise admins to create variations manually or via import and link them to the group.
+
 [!] Add-ons: Product variations: When the previous/next buttons were used on the variation page to switch between products, the number of products was displayed incorrectly. Fixed.
 
 [!] Add-ons: RMA: PayPal Payments: When multiple products from an order were returned, only the price of the first one was refunded. Fixed.
