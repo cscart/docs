@@ -31,6 +31,7 @@
     db/index
     settings/index
     documents/index
+    event_notifications
     languages
     multiple_storefronts
     sharing_schema
