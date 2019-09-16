@@ -6,8 +6,6 @@ The **Marketing** section allows you to:
 
 * create :doc:`promotions and discounts <../manage_products/promotions/index>`;
 
-* view :doc:`abandoned and live carts <abandoned_live_carts>`;
-
 * manage :doc:`newsletters <../addons/newsletters/index>`;
 
 * create :doc:`gift certificates <../addons/gift_certificates/index>`;
@@ -28,4 +26,3 @@ The **Marketing** section allows you to:
     :glob:
 
     /user_guide/manage_products/promotions/index
-    abandoned_live_carts

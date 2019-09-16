@@ -8,3 +8,4 @@
     :glob:
 
     */index
+    /user_guide/marketing/abandoned_live_carts

@@ -6,8 +6,6 @@
 
 * создавать :doc:`промо-акции и скидки <../manage_products/promotions/index>`;
 
-* просматривать :doc:`незавершённые покупки <abandoned_live_carts>`;
-
 * управлять :doc:`рассылками <../addons/newsletters/index>`;
 
 * создавать :doc:`подарочные сертификаты <../addons/gift_certificates/index>`;
@@ -26,4 +24,3 @@
     :glob:
 
     /user_guide/manage_products/promotions/index
-    abandoned_live_carts
