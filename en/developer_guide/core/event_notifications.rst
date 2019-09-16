@@ -4,7 +4,7 @@ Event Notifications
 
 .. note::
 
-    The described functionality first appeared in version 4.11.1.
+    The described functionality first appeared in version 4.11.1. 
 
 CS-Cart and Multi-Vendor have a mechanism for multi-channel notifications about events, such as order creation, change of the status of an order, products being sent for administrator's review, creation of a shipment in the order, and so on.
 
@@ -21,6 +21,10 @@ This mechanism consists of the following primary components:
 * Receivers
 
 * Notification settings
+
+.. important::
+
+    We have an example add-on that fully implements the mechanism for extending notifications: https://github.com/cscart/addon-notification-events-example.
 
 .. contents::
    :backlinks: none
@@ -56,7 +60,7 @@ Every element of the schema has the following structure::
       'name' => [
           'template' => (string) TemplateLanguageVariable,
           'params' => [
-              (string) SubstitutionName => (string) Substitution
+              (string) SubstitutionName => (string) Substitution,
               ...
           ],
       ],
@@ -124,7 +128,7 @@ Examples of implementation:
 
 * ``\Tygh\Notifications\Messages\InternalMessage``—a message sent to the Notification center.
 
-A message provider is responsible for message creation. The provider extracts all the necessary information from the data about the even, then loads the missing data, if necessary.
+A message provider is responsible for message creation. The provider extracts all the necessary information from the data about the event, then loads the missing data, if necessary.
 
 Examples of implementation:
 
@@ -304,7 +308,7 @@ Overloads allow you to prevent sending event notifications to specific receivers
 
 A set of overloads is an object of the ``\Tygh\Notifications\Settings\Ruleset`` class, and is created by the ``Tygh::$app['event.notification_settings.factory']`` rule factory. A set of overloads is passed as one of the parameters when an event is triggered.
 
-Example: the order editing page has checkboxes "Notify customer", "Notify orders department", and "Notify vendor". They can sending a notification about order status change, even if the notification settings require it.
+Example: the order editing page has checkboxes "Notify customer", "Notify orders department", and "Notify vendor". They can prevent sending a notification about order status change, even if the notification settings require it.
 
 ::
 
@@ -331,7 +335,3 @@ How to Start Using the New Notification System
 #. (optional) Implement an alternative mechanism for informing users via notifications in the Notification center.
 
 #. Replace sending emails with triggering an event via the **event.dispatcher** service: ``Tygh::$app['event.dispatcher']->dispatch()``.
-
-.. important::
-
-    We have an example add-on that fully implements the mechanism for extending notifications: https://github.com/cscart/addon-notification-events-example.

@@ -22,6 +22,10 @@
 
 * настройки уведомлений.
 
+.. important::
+
+    У нас есть пример модуля, который полностью реализует описанный механизм расширения уведомлений: https://github.com/cscart/addon-notification-events-example.
+
 .. contents::
    :local:
 
@@ -55,7 +59,7 @@
       'name' => [
           'template' => (string) TemplateLanguageVariable,
           'params' => [
-              (string) SubstitutionName => (string) Substitution
+              (string) SubstitutionName => (string) Substitution,
               ...
           ],
       ],
@@ -332,7 +336,3 @@
 #. (опционально) Реализуйте альтернативный механизм оповещения, используя уведомления в Центре уведомлений.
 
 #. Замените отправку писем на запуск события через сервис **event.dispatcher**: ``Tygh::$app['event.dispatcher']->dispatch()``.
-
-.. important::
-
-    У нас есть пример модуля, который полностью реализует описанный механизм расширения уведомлений: https://github.com/cscart/addon-notification-events-example.
