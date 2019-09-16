@@ -22,12 +22,12 @@ Even if a customer isn't registered, the data of a cart will be saved to the **A
 How to Delete Abandoned Carts
 =============================
 
- #. Tick the checkboxes near of the carts.
+#. Tick the checkboxes near of the carts.
 
- #. Click the **gear** button in the top right corner of the page.
+#. Click the **gear** button in the top right corner of the page.
 
- #. Choose **Delete selected**.
+#. Choose **Delete selected**.
 
-    .. image:: img/delete_selected_cart.png
-        :align: center
-        :alt: Removing a cart from the list.
+   .. image:: img/delete_selected_cart.png
+       :align: center
+       :alt: Removing a cart from the list.
