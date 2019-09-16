@@ -2,6 +2,10 @@
 Event Notifications
 *******************
 
+.. note::
+
+    The described functionality first appeared in version 4.11.1.
+
 CS-Cart and Multi-Vendor have a mechanism for multi-channel notifications about events, such as order creation, change of the status of an order, products being sent for administrator's review, creation of a shipment in the order, and so on.
 
 This mechanism consists of the following primary components:
