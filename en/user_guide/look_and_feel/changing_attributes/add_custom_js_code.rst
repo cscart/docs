@@ -2,7 +2,7 @@
 How To: Add Custom Code or Script to Page in CS-Cart and Multi-Vendor
 *********************************************************************
 
-Sometimes you need to add JavaScript or some other code from a third-party service (for example, to add an online chat to the site). CS-Cart and Multi-Vendor allow you to do it without modifying files, via :doc:`blocks </user_guide/look_and_feel/layouts/blocks>`.
+Sometimes you need to add JavaScript or some other code from a third-party service (for example, to add an online chat to the site). CS-Cart and Multi-Vendor allow you to do it without modifying files, via :doc:`blocks </user_guide/look_and_feel/layouts/blocks/index>`.
 
 This article will explain how to add some code to a page of your store. We'll cover one example and explain what to do in other cases.
 
