@@ -84,4 +84,4 @@ To install CS-Cart or Multi-Vendor via console, complete these steps:
 
 The standard installation process will be launched.
 
-Leaarn more about setting permissions, extracting an archive, choosing the installation directory, etc. :doc:`in other installation scenarios <vps_install>`.
+Learn more about setting permissions, extracting an archive, choosing the installation directory, etc. :doc:`in other installation scenarios <vps_install>`.
