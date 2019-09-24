@@ -45,6 +45,7 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     image_zoom/index
     janrain/index
     maps_and_geolocation/index
+    full_page_cache/index
     my_changes/index
     myob/index
     newsletters/index
