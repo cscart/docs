@@ -12,9 +12,9 @@ Some marketplace owners want to check the products of their vendors before showi
 
 * The **Disapproved products** page contains all the products that were rejected by the marketplace administrators for some reason. These products have the *Disapproved* status. Vendors can check what products have been rejected and edit them. Once they do it, products will be on moderation again. Marketplace administrators can approve products from here by changing their status.
 
-   .. hint::
+  .. hint::
 
-       Select multiple products by clicking on them or using the checkbox in the upper left corner. That way you'll be able to approve and disapprove them in bulk via the menu that will appear above them.
+      Select multiple products by clicking on them or using the checkbox in the upper left corner. That way you'll be able to approve and disapprove them in bulk via the menu that will appear above them.
 
 .. image:: /user_guide/addons/vendor_data_premoderation/img/vendor_data_premoderation.png
     :align: center
