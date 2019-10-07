@@ -2,76 +2,58 @@
 How To: Create a Custom Form
 ****************************
 
-========================================
-Step 1. Activate the Form Builder Add-on
-========================================
+.. important::
 
-1.1. In the Administration panel, go to **Add-ons → Manage add-ons**.
+    Make sure that the :doc:`/user_guide/addons/form_builder/index` add-on is :doc:`installed and active </user_guide/addons/1manage_addons>`. Otherwise you won't be able to create a form.
 
-1.2. Make sure the **Form Builder** add-on has an *Active* status.
+#. Go to **Website → Pages**.
 
-=====================
-Step 2. Create a Form
-=====================
+#. Click the **+** button and choose **Add form**.
 
-2.1. Go to **Website → Pages**.
+#. Configure the form settings on the **General** tab:
 
-2.2. Click the **+** button and choose **Add form**.
+   * **Parent page**—choose the parent page for the form.
 
-2.3. Configure the form settings on the **General** tab:
+   * **Name**—enter the name of the form (for example, *Contact us*).
 
-     * **Parent page**—choose the parent page for the form.
+   * Speсify other fields, if necessary.
 
-     * **Name**—enter the name of the form (e.g., *Contact us*).
+     .. image:: img/form_builder_01.png
+         :align: center
+         :alt: Enter the name of the form and select the parent page on the general tab.
 
-     * Speсify other fields, if necessary.
+#. Configure the settings on the **Form builder** tab:
 
-.. image:: img/form_builder_01.png
-	:align: center
-	:alt: Enter the name of the form and select the parent page on the general tab.
+   * **Email subject field**—a completed form is sent to a specific email address. Here you can specify the subject of the email:
 
-2.4. Configure the settings on the **Form builder** tab:
+     * **Form name**—the name of the form will serve as the email subject.
 
-     * **Email subject field**—a completed form is sent to a specific email address. Here you can specify the subject of the email:
+     * **Other subject**—a text field will appear below, and you'll be able to enter the subject manually.
 
-       * **Form name**—the name of the form will serve as the email subject.
+   * **Form submit text**—enter the text that customers will see after submitting the form.
 
-       * **Other subject**—a text field will appear below, and you'll be able to enter the subject manually.
+   * **E-mail to**—enter the e-mail address where the notifications will be sent to.
 
-     * **Form submit text**—enter the text that customers will see after submitting the form.
+   * Add fields to your form. There are **standard fields** (*select box*, *text area*, *radio group*, etc.) and **special fields** (*date*, *e-mail*, *number*, *phone*, etc.).
 
-     * **E-mail to**—enter the e-mail address where the notifications will be sent to.
+     .. hint::
 
-     * Add fields to your form. There are **standard fields** (*select box*, *text area*, *radio group*, etc.) and **special fields** (*date*, *e-mail*, *number*, *phone*, etc.).
+         You can allow users to attach files to the form—create a field and set its **Type** to *File*.
 
-.. hint::
+#. Click **Create**.
 
-   You can allow users to attach files to the form—create a field and set its **Type** to *File*.
-	
-2.5. Click **Create**.
+   .. image:: img/form_builder_02.png
+       :align: center
+       :alt: Use the Form Builder tab to specify the form fields and the email address where to send the completed forms.
 
-.. image:: img/form_builder_02.png
-	:align: center
-	:alt: Use the Form Builder tab to specify the form fields and the email address where to send the completed forms.
+#. (optional) When a customer submits a form, all the info in it is sent as an email. You can set one of the form fields as email subject. 
 
-==========================================
-Step 3. Set a Form Field as Email Subject
-==========================================
+   When you edit an existing form, you'll be able to select choose one of the form fields as the **Email subject field**. This field must have one of the following types:
 
-.. note::
+   * Input field
 
-    This is an optional step available since version 4.3.7.
+   * Select box
 
-When you edit a form that already exists, you can select one of the existing fields as **Email subject field**. This field must have one of the following types:
-
-* Input field
-
-* Select box
-
-.. hint::
-
-    Remember to click **Save** once you've changed the form as you like.
-
-.. image:: img/form_builder_03.png
-	:align: center
-	:alt: After you create a form, you can set 
+     .. image:: img/form_builder_03.png
+         :align: center
+         :alt: After you create a form, you can set one of its fields as email subject.
