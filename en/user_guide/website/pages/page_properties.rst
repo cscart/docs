@@ -104,8 +104,6 @@ Form Builder
 
 * **E-mail to**—the email address that will receive the submitted data.
 
-* **Form is secure (SSL)**—if you enable this option, the form is submitted through the secure protocol.
-
 The following parameters apply to the fields of the form:
 
 * **Position**—the position of the form field relatively to the position of the other fields of the form.
