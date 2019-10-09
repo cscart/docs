@@ -24,6 +24,7 @@
     merge_vendors
     allow_vendors_to_edit_layout_and_theme
     product_approval
+    invite_vendors
     vendor_categories
     vendor_statuses
 
