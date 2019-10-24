@@ -69,13 +69,13 @@ The pickup point editing page has the **Settings** tab. It allows you to set whe
 
     .. important::
 
-        If a rate area you ship to has at least one store, do set a moving time for it. Otherwise customers won't know if a product is in stock, and how soon it will arrive.
+        If a rate area you ship to has at least one store (or you warn customers about delay), then do set a moving time for it. Otherwise customers won't know if a product is in stock, and how soon it will arrive.
 
     For example, if you have multiple stores located in New York, the setting determines how soon a product from this store or warehouse can arrive to any of them. That way, if a store doesn't have a product in stock, it will at least inform the customer how soon the product will arrive.
 
     The value you enter here will be a part of the following phrases:
 
-    * *Available if ordered:* ``[value]``
+    * *If ordered:* ``[value]``
 
     * *Product is at a remote warehouse. If you order it, we'll send it* ``[value]``.
 
@@ -137,7 +137,7 @@ How and where do I set quantity at warehouses?
 
    * When you :doc:`export products </user_guide/manage_products/import_export/product_export>` (or :doc:`create a data feed </user_guide/addons/data_feeds/create_df>`), the quantity of products at a specific warehouse or store will be available in a field like *[Store/warehouse name] (Warehouse)*.
 
-   * When you :doc:`import products </user_guide/manage_products/import_export/advanced_product_import>`, you'll see the Quantities section in the Fields Mapping tab. It has the names of stores and warehouses. That way you'll be able to import the quantities for different stores and warehouses.
+   * When you :doc:`import products </user_guide/manage_products/import_export/advanced_product_import>`, you'll see the **Quantities** section in the **Fields mapping** tab. It has the names of stores and warehouses. That way you'll be able to import the quantities for different stores and warehouses.
 
 ========================================
 Which warehouse are products taken from?
@@ -145,11 +145,9 @@ Which warehouse are products taken from?
 
 It depends on the settings of the :doc:`rate area </user_guide/shipping_and_taxes/locations/index>`, where the customer is located. Every rate area has its own priority for stores and warehouses on the **Stores & Warehouses** tab. Drag and drop stores and warehouses to change priority.
 
-.. important::
+**Rule:** products are taken from the first store or warehouse that ships to *customer's rate area*. If some products from the order are missing there, then the remaining products or quantity will be taken from the second warehouse, and so on.
 
-    Products are taken from the first store or warehouse that ships to the rate area. If some products from the order are missing there, then the remaining products or quantity will be taken from the second warehouse, and so on.
-
-**Exception:** if a customer chooses to pick up products from a store, they will be taken from the selected store first.
+**Exception:** if a customer chooses to pick up products from a store, they will be taken from the selected store first. Missing products or quantity will be taken from stores and warehouses that ship to *the rate area of the selected pickup point*.
 
 .. image:: img/warehouse_priority.png
     :align: center
@@ -167,7 +165,7 @@ The rate area editing page has a column called **Delay warning**. This warning w
 
 * The product is *in stock* at this warehouse or store.
 
-* You've configured CS-Cart to warn about delay when you ship products from this store to this rate area.
+* You've configured the store or warehouse to warn about delay when you have to move products from there to this rate area.
 
 .. image:: img/delay_warning.png
     :align: center
