@@ -81,6 +81,7 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     vendor_debt_payout/index
     vendor_locations/index
     vendor_plans/index
+    warehouses/index
     commissions_by_category/index
     vendor_privileges/index
     video_tutorials/index
