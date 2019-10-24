@@ -22,6 +22,7 @@
     :glob:
     
     *
+    warehouses/index
     advanced_products_import/index
     atol_online/index
     blog/index
