@@ -159,7 +159,7 @@ It depends on the settings of the :doc:`rate area </user_guide/shipping_and_taxe
 Why is there delay warning near some stores and warehouses?
 ===========================================================
 
-The rate area editing page has a column called **Delay warning**. This warning will appear in the product list, on the product page, and in the cart next to a product if *all* the conditions below are met:
+The rate area editing page has a column called **Delay warning**. This warning will appear in the product list, on the product page, and in the cart next to a product. It will appear only if *all* the conditions below are met:
 
 * A customer is from this rate area.
 
