@@ -22,7 +22,6 @@
     :glob:
     
     *
-    warehouses/index
     advanced_products_import/index
     atol_online/index
     blog/index
@@ -53,6 +52,8 @@
     tags/index
     old_admin_panel/index
     twigmo/index
+    vendor_data_premoderation/index
+    warehouses/index
     yandex_metrika/index
     yml_export/index
 
