@@ -35,13 +35,13 @@ What's the difference between stores, pickup points, and warehouses?
     *   -   Customers pick up orders here*
         -   ✓
         -   ✓
-        -   ✕
+        -   
     *   -   It can appear on the product page
-        -   ✕
+        -   
         -   ✓
-        -   ✕
+        -   
     *   -   Products are stored here
-        -   ✕
+        -   
         -   ✓
         -   ✓
 
@@ -61,7 +61,7 @@ The pickup point editing page has the **Settings** tab. It allows you to set whe
 
 * **Ship to** *(only for stores and warehouses)*—the rate areas where the products can be shipped from this store/warehouse.
 
-  If a product is in stock only at a warehouse that doesn't ship to a rate area, then the resident of that rate area will see the product as out of stock.
+  If a product is in stock only at a warehouse that doesn't ship to a rate area, then a resident of that rate area will see the product as out of stock.
 
   When a store or warehouse ships to a rate area, there are some extra settings:
 
@@ -69,11 +69,11 @@ The pickup point editing page has the **Settings** tab. It allows you to set whe
 
     .. important::
 
-        If a rate area you ship to has at least one store (or you warn customers about delay), then do set a moving time for it. Otherwise customers won't know if a product is in stock, and how soon it will arrive.
+        If a rate area you ship to has at least one store (or you warn customers about delay), make sure to set a moving time for it. Otherwise customers won't know if a product is in stock, and how soon it will arrive.
 
     For example, if you have multiple stores located in New York, the setting determines how soon a product from this store or warehouse can arrive to any of them. That way, if a store doesn't have a product in stock, it will at least inform the customer how soon the product will arrive.
 
-    The value you enter here will be a part of the following phrases:
+    The value you enter here can be a part of the following phrases:
 
     * *If ordered:* ``[value]``
 
@@ -101,7 +101,7 @@ It depends on how you configure the warehouses and CS-Cart/Multi-Vendor. There a
 
 * Customer's rate area (retrieved either from the profile, or from geolocation).
 
-* The quantity of products in stores and warehouses that "Ship to" the rate area.
+* The quantity of products in the stores and warehouses that "Ship to" the rate area.
 
 For example, see the picture below. The quantity of products from this store will be available in all existing rate areas, because the store ships to them all.
 
@@ -127,7 +127,7 @@ How and where do I set quantity at warehouses?
 
    .. important::
 
-       If a product has a set quantity (even 0) at any warehouse or store, then the general quantity won't be editable, and will be a sum of quantities. The old quantity (without distribution by stores and warehouses) will also be preserved and will return if the :doc:`index` add-on is disabled or the quantity of a product is removed from all warehouses.
+       If a product has a set quantity (even 0) at any warehouse or store, then the general quantity won't be editable, and will be a sum of quantities. The old quantity (without distribution by stores and warehouses) will be preserved. It will return if you disable the :doc:`index` add-on or remove the quantities of this product from all warehouses.
 
    .. image:: img/warehouse_quantity.png
        :align: center
