@@ -73,7 +73,7 @@
 
 #. Запустите скрипт, открыв ссылку: *http://www.your_domain.com/your_cscart_directory/mail.php*. 
 
-   В ссылке замените *your_domain.com* на ваш домен, а *your_cscart_directory* на папку, где установен CS-Cart (если он установлен в папке). Например:
+   В ссылке замените *your_domain.com* на ваш домен, а *your_cscart_directory* на папку, где установлен CS-Cart (если он установлен в папке). Например:
 
    * *http://example.com/mail.php* (если ваш магазин доступен сразу по адресу *http://example.com*)
 
