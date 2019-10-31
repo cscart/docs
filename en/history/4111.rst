@@ -1,0 +1,205 @@
+************************
+CS-Cart 4.11.1 Changelog
+************************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Call requests: Widget: Masked phone input in the Call request form didn't work in the widget mode. Fixed.
+
+[+] Add-ons: Facebook Pixel: A new add-on for gathering analytics and improving your Facebook and Instagram advertisement campaigns was added.
+
+[+] Add-ons: Warehouses [Beta]: A new add-on for tracking inventory at different locations and showing it to customers was introduced.
+
+[+] Add-ons: Required products: Quick product search was added to the product editing page.
+
+[+] Add-ons: Vendor data premoderation: Ability to specify what product fields require premoderation on update added.
+
+[+] Blocks: A new page for managing all the blocks in your the store was added: Design > Layouts > Manage blocks.
+
+[+] Checkout: If customers enter existing emails, they'll now see an offer to sign in with a one-time code sent to that email.
+
+[+] Core: Add-ons: A warning now appears when an admin tries to install the new add-on version on top of the old one.
+
+[+] Design: Bottom admin toolbar was added.
+
+[+] Multi-Vendor Ultimate: Ability to use different payment methods and shipping methods for different storefronts added.
+
+[+] Multi-Vendor Ultimate: Add-ons: Google Sitemap: Ability to generate separate sitemaps for storefronts added.
+
+[+] Multi-Vendor Ultimate: Direct customer-to-vendor payments: Promotions: Ability to use different promotions for different storefronts was added.
+
+[+] Multi-Vendor Ultimate: Orders and abandoned carts are now linked to storefronts as well as to vendors.
+
+[+] Multi-Vendor Ultimate: SEO: robots.txt: Separate robots.txt records for storefronts were added.
+
+[+] Multi-Vendor Ultimate: Storefronts: Ability for storefronts to have separate themes and layouts added.
+
+[+] Notification Center: Events: Emails: A mechanism for managing notifications was added.
+
+[+] Products: Ability to export all found products was added to the gear button of the product list and search results page.
+
+[+] Select2: Features: Categories: Ability to add new categories and features without leaving product editing page was added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: Advanced products import: A storefront or vendor must always be selected for an import preset now.
+
+[*] Add-ons: Customer-to-vendor communication: Add-on was renamed to "Ask seller a question" and is now available not only in Multi-Vendor, but also in CS-Cart.
+
+[*] Add-ons: Product option combinations: Deprecated add-on no longer comes with new installations by default.
+
+[*] Add-ons: Social buttons: The button for sharing a page by sending a message to specific email was removed.
+
+[*] Blocks: Products: Block caching logic was improved; product block cache no longer depends on the changes in product popularity, so it won't be dropped as often.
+
+[*] Core: Add-ons: The handling of possible errors caused by SQL queries from addon.xml during add-on installation was improved.
+
+[*] Core: Now root admin can insert any HTML code when the "sanitize_user_html" tweak is set to "auto".
+
+[*] Core: Orders: Add-ons: Gift certificates: Suppliers: Order notifications are redone to use event-based mechanism.
+
+[*] Core: Profiles: Profile email notifications now use the new event-based mechanism.
+
+[*] Design: Add-ons: The list of add-ons was redesigned. All add-ons are on the same tab now, regardless of whether or not they are installed.
+
+[*] Design: Product page: If the Google Pay or Apple Pay buttons are displayed, the "Buy now with 1-click" button will be hidden.
+
+[*] Design: Product page: Text in the "Add to wish list" and "Add to comparison list" buttons was replaced with icons.
+
+[*] Email notifications: "Dear" was replaced with "Hello" in default email notifications. Existing stores will only be affected if they choose to restore default templates.
+
+[*] Image galleries: Outdated galleries (FancyBox, MagnificPopup, prettyPhoto, Lightbox) were removed.
+
+[*] JS: Select2: Library updated to version 4.0.7.
+
+[*] Multi-Vendor Plus: Add-ons: Common products for vendors: Buy together: A vendor could create a bundle only for a default variation, and the products from the bundle weren't listed as vendor's. Fixed.
+
+[*] Multi-Vendor Plus: Add-ons: "Common products for vendors" and "Direct customer-to-vendor payments" are now out of beta.
+
+[*] Multi-Vendor: Add-ons: Vendor data premoderation: Notification about product statuses was added when the add-on is being disabled or uninstalled.
+
+[*] Multi-Vendor: Add-ons: Vendor data premoderation: Product moderation now uses product statuses instead of separate approval statuses.
+
+[*] Multi-Vendor: Add-ons: Vendor data premoderation: The buttons for accepting or rejecting products were added to the product list and product details page.
+
+[*] Multi-Vendor: Add-ons: Vendor data premoderation: The reason for product rejection is now displayed.
+
+[*] Multi-Vendor: Add-ons: Vendor data premoderation: Ability to notify vendors about product approval via the Notifications center was added.
+
+[+] Multi-Vendors: Info about pending vendors now appears to admins in the notification center.
+
+[*] Multi-Vendor: The selection of vendor was moved from the top left corner to the "Account" menu in the top right corner.
+
+[*] Multi-Vendor: When a vendor's status changes, the vendor is now informed what that status means.
+
+[*] Order management: Billing and shipping profile fields are no longer required on the order editing page in the admin panel.
+
+[*] Products: To improve performance, the previous/next navigation buttons will now appear on the storefront only if a customer opens that product from the category page.
+
+[*] REST API: Orders: Fetching a list of orders now returns all information about each fetched order, and not just a part of it.
+
+[*] REST API: Orders: When an order is created, its full information will now be returned in the response.
+
+[*] Settings: Security: The old unnecessary settings related to HTTPS were removed. All HTTPS-related settings are now located "Settings > Security settings".
+
+[*] Settings: The excessive global setting "Allow customers to pay order again if transaction was declined" was deleted. This is now handled only by order status settings.
+
+[*] WYSIWYG: Deprecated editor Redactor was removed in favor of Redactor II.
+
+=========
+Bug Fixes
+=========
+
+[!] Add-ons: Advanced products import: File could not be imported from URL in some cases. Fixed.
+
+[!] Add-ons: Advanced products import: When the preset file was updated, the old file remained in the var/files directory. Fixed.
+
+[!] Add-ons: Bestsellers & On-Sale Products: Child variations of the products did not appear among the bestsellers. Fixed.
+
+[!] Add-ons: Boxberry: The add-on was available in the international versions of CS-Cart and Multi-Vendor. Fixed.
+
+[!] Add-ons: Call requests: If CS-Cart settings used a phone number in the international format, and the settings of the Call Request add-on had phone mask set, then it was impossible to send the call request. Fixed.
+
+[!] Add-ons: Google ReCAPTCHA: Stripe: In some cases, customer could not place an order when both add-ons worked together. Fixed.
+
+[!] Add-ons: Product variations: Image files were duplicated during import if own images for child variations were forbidden.
+
+[!] Add-ons: Product variations: Stripe: The Apple Pay and Google Pay buttons broke the layout of the product variation list. Fixed.
+
+[!] Add-ons: SEO: Once disabled, the add-on couldn't be set to Active again. Fixed.
+
+[!] Add-ons: Stores and pickup points: It was impossible to select a pickup point on the map. Fixed.
+
+[!] Add-ons: Stores and pickup points: Map was displayed incorrectly on the store search page when user switched to a city with a single store. Fixed.
+
+[!] Add-ons: Stripe: Google Pay and Apple Pay payment buttons didn't work if another Stripe-based payment method with wrong API credentials existed in the store. Fixed.
+
+[!] Add-ons: Wishlist: Sorting of abandoned carts by date and customer did not work when the Wishlist add-on was active. Fixed.
+
+[!] Checkout: Multiple profiles: If the "Allow users to create multiple profiles for one account" setting was enabled, then the available variants in the "State/province" field didn't change when a new user selected another country during the creation of a new address at checkout. Fixed.
+
+[!] Checkout: Payment methods: Promotions: Payment methods weren't hidden on the checkout page when cart total was 0. Fixed.
+
+[!] Checkout: Profile fields: If a customer entered only one word in the "First name and last name" field, that word was saved as the last name. Fixed.
+
+[!] Checkout: Profile fields: User data was empty on the checkout page when customer was reordering a product via PayPal. Fixed.
+
+[!] Core: Images: Imagick: The following PHP Notice occurred: "PHP Deprecated: Function Imagick::setimageopacity() is deprecated". Fixed.
+
+[!] Core: Redis: A PHP Deprecated error occurred. Fixed.
+
+[!] Design: Admin panel: The Cancel button on the date selection was displayed incorrectly. Fixed.
+
+[!] Design: Blocks: My profile: Sign-in pop-up closed when customer entered a wrong email or password. Fixed.
+
+[!] Design: Bottom admin toolbar: Elements under the panel were not clickable. Fixed.
+
+[!] Design: Checkout: If a required field wasn't filled in at checkout, then the field name moved up. Fixed.
+
+[!] Design: Checkout: In some cases, focusing on an input field on a mobile device didn't move the field name up. Fixed.
+
+[!] Design: Drop-down menus in pop-ups had incorrect position during scrolling on mobile devices. Fixed.
+
+[!] Design: In the mobile version, the "selected_section" parameter did not open the specified tab. Fixed.
+
+[!] Design: Menu: On iOS, a long tap on the menu link didn't open the context menu on the storefront. Fixed.
+
+[!] Design: On mobile devices, horizontal scrolling of product images could result in vertical scrolling of the page. Fixed.
+
+[!] Design: RTL: Blocks: Scroller: Products were aligned to the left side. Fixed.
+
+[!] Export/Import: Features: Features were imported without groups. Fixed.
+
+[!] Export/Import: Products: A new vendor was created if there were extra spaces or line breaks in the vendor name in the imported file. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors: The offer price didn't change when another product variation was selected. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors: Vendor could not set quantity of product when creating it. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct customer-to-vendor payments: Promotions: If the add-on was active, and there was free shipping and a 100% discount on products, an error occurred at checkout. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Vendor debt payout: The cart was empty when a vendor was trying to pay marketplace fee and when the "Common products for vendors" add-on was enabled. Fixed.
+
+[!] Multi-Vendor: Add-ons: Gift certificates: Vendor could see the "Create gift certificate for this customer" button. Fixed.
+
+[!] Multi-Vendor: Admin panel: The Vendor Plans and Accounting pages were displayed incorrectly on mobile devices. Fixed.
+
+[!] Multi-Vendor: User groups: Privileges: A non-root administrator could not manage vendor's administrators. Fixed.
+
+[!] Multi-Vendor: Vendor statistics: When currency symbol had HTML tags, the statistics was displayed incorrectly. Fixed.
+
+[!] Multi-Vendor: Vendors could see a link to storefront management page, even though they couldn't access it. Fixed.
+
+[!] Products: Out-of-stock actions: The tooltip of the "Out-of-stock actions" setting on the product editing page was incorrect. Fixed.
+
+[!] Promotions: Input field for promo code was hidden if other conditions of the promotion weren't met. Fixed.
+
+[!] Sales report: Infinite loading of items did not work. Fixed.
+
+[!] Select2: Clicking on the input field erased the entered text. Fixed.
+
+[!] Users: Search by phone number didn't return a user if formatting of the number was different. Fixed.
