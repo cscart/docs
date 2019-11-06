@@ -18,19 +18,17 @@ Skipping Backup During Add-On Upgrades
 
 If you make your add-ons :doc:`upgradeable via the built-in Upgrade center </upgrade/upgrade_addon>` (we highly recommend it), you will be able to let your clients skip the built-in back-up of files and database when upgrading your add-on. This will make the upgrade much faster.
 
-To give store owners the option to skip the back-up process, add the ``backup`` section into the **package.json** scheme of an upgrade package:
+To give store owners the option to skip the back-up process, add the ``backup`` section into the **package.json** scheme of an upgrade package::
 
-.. code-block:: json
-
-    "files":      {...},
-    "migrations": [...],
-    "languages":  [...],
-    "validators": [...],
-    "scripts":    {...},
-    "backup": {
-        "is_skippable": true,
-        "skip_by_default": true
-    }
+  "files":      {...},
+  "migrations": [...],
+  "languages":  [...],
+  "validators": [...],
+  "scripts":    {...},
+  "backup": {
+      "is_skippable": true,
+      "skip_by_default": true
+  }
 
 
 * ``is_skippable`` indicates that the back-up process can be skipped. If you set it to *true* or omit this field, then the choice to skip the back-up process will appear during the add-on upgrade.
