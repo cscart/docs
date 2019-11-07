@@ -22,7 +22,7 @@ New Features and Improvements
 
 [+] Core: Add-ons: A warning now appears when an admin tries to install the new add-on version on top of the old one.
 
-[+] Design: Bottom admin toolbar was added.
+[+] Design: Bottom admin toolbar was added was added to the storefront.
 
 [+] Multi-Vendor Ultimate: Ability to use different payment methods and shipping methods for different storefronts added.
 
