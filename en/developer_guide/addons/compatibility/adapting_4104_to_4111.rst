@@ -221,9 +221,9 @@ Example: the order editiong page has checkboxes *Notify customer*, *Notify order
       ])
   );
 
-============================
+----------------------------
 Changes to Security Settings
-============================
+----------------------------
 
 Previously, the *Enable secure connection for the storefront* setting (``settings_vendor_values``) accepted the following values:
 
@@ -237,11 +237,11 @@ Setting *Keep HTTPS connection once a secure page is visited* (``keep_https``) w
 
 Setting *Form is secure (SSL)* (``form_is_secure``) from the Form Builder (``form_builder``) add-on was removed. 
 
-==================
+------------------
 Changes to Caching
-==================
+------------------
 
-The ability to specify "time to live" for cache regardless of ``cache_level`` was added.
+The ability to specify "time to live" (TTL) for cache regardless of ``cache_level`` was added.
 
 Here is an example of registering cache with dependencies on database tables and limited time to live::
 
@@ -254,9 +254,9 @@ Here is an example of registering cache with dependencies on database tables and
       Registry::cacheLevel('static')
   );
 
---------------------------------
-Support in Block Manager Schemas
---------------------------------
++++++++++++++++++++++++++++++++++++++++
+Support of TTL in Block Manager Schemas
++++++++++++++++++++++++++++++++++++++++
 
 The block manager schemas now allow you to set cache TTL.
 
@@ -585,7 +585,7 @@ New Functions
 
      \Tygh\Navigation\LastView\Backend::getCurrentViewId()
 
-#. Gets product state::
+#. Get product state::
 
      fn_vendor_data_premoderation_get_product_state($product_id)
 
@@ -1050,7 +1050,7 @@ New Hooks
 
      fn_set_hook('store_locator_get_store_location_before_select', $store_location_id, $lang_code, $fields, $join, $condition);
 
-#. This hook is executed after store location has been updated. The hook allows you to update the corresponding data::
+#. This hook is executed after store location has been updated. The hook allows you to update the data::
 
      fn_set_hook('store_locator_update_store_location_post', $store_location_data, $store_location_id, $lang_code);
 
