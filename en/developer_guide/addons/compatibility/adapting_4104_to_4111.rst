@@ -169,15 +169,15 @@ Every element of the schema has the following structure::
 
   They can be presented as text: ``area``, ``from``, ``template_code``. Or they can be presented as an instance of the  ``DataValue`` class.
 
-* ``DataValue``—the class that allows receiving data from the input array by key. If th passed key isn't in the array, then ``default_value`` will be taken (by default it's ``null``).
+* ``DataValue``—the class that allows receiving data from the input array by key. If the passed key isn't in the array, then ``default_value`` will be taken (by default it's ``null``).
 
-* ``data_modifier``—a callableparameter; a function can perform additional transformation of fields passed in ``data``.
+* ``data_modifier``—a callable parameter; a function can perform additional transformation of fields passed in ``data``.
 
 ++++++++++++++++++
 Notification Rules
 ++++++++++++++++++
 
-The rules describe what types of messages and via what transports should be sent to receivers when an event occurs.
+The rules describe what types of messages, and via what transports should be sent to receivers when an event occurs.
 
 Rules are registered in ``Tygh::$app['event.notification_settings']``.
 
@@ -207,7 +207,7 @@ Rules are an object of the  ``\Tygh\Notifications\Settings\Ruleset`` class built
 
 Rules are passed as one of the parameters when an event is triggered.
 
-Example: the order editiong page has checkboxes *Notify customer*, *Notify orders department*, and *Notify vendor*. They can prevent sending a message about order changes even if the notification rules explicitly demand that.
+Example: the order editing page has checkboxes *Notify customer*, *Notify orders department*, and *Notify vendor*. They can prevent sending a message about order changes even if the notification rules explicitly demand that.
 
 ::
 
@@ -387,7 +387,7 @@ New Functions
 
 #. Check if a promotion has a coupon code condition::
 
-     fn_promotion_has_coupon_condition($conditions_group, $context_data)
+     fn_promotion_has_coupon_condition($conditions_group)
 
 #. Get product statuses to show in the status picker on the product management pages::
 
@@ -1040,7 +1040,7 @@ New Hooks
 
 #. This hook is executed after a sitemap for the storefront has been created. The hook allows you to write additional items into the sitemap::
 
-     fn_set_hook('google_sitemap_generate_sitemap_for_storefront_after_items', $storefront, $settings, $file, $last_modified_time, $link_counter, $file_counter);`
+     fn_set_hook('google_sitemap_generate_sitemap_for_storefront_after_items', $storefront, $settings, $file, $last_modified_time, $link_counter, $file_counter);
 
 #. This hook is executed after store location has been deleted. The hook modifies deletion results and allow you to delete the corresponding data::
 

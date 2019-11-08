@@ -104,7 +104,7 @@ Functionality Changes
 
 [*] REST API: Orders: When an order is created, its full information will now be returned in the response.
 
-[*] Settings: Security: The old unnecessary settings related to HTTPS were removed. All HTTPS-related settings are now located "Settings > Security settings".
+[*] Settings: Security: The old unnecessary settings related to HTTPS were removed. All HTTPS-related settings are now located in "Settings > Security settings".
 
 [*] Settings: The excessive global setting "Allow customers to pay order again if transaction was declined" was deleted. This is now handled only by order status settings.
 
