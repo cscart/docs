@@ -31,7 +31,7 @@ CS-Cart branch 4.9.x
     :maxdepth: 1
 
     4.9.3 (February 6, 2019) <493>
-    4.9.2 (November 21, 2018)<492>
+    4.9.2 (November 21, 2018) <492>
     4.9.1 (October 10, 2018) <491>
 
 ====================
