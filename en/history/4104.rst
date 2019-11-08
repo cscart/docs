@@ -193,3 +193,20 @@ Bug Fixes
 [!] Shipping methods: When the "free" language variable was removed to hide "Free" next to a shipping method, the dash wasn't removed. Fixed.
 
 [!] Widget: Store didn't work in the widget mode. Fixed.
+
+=============
+Service Packs
+=============
+
+----------
+4.10.4.SP1
+----------
+
+[!] Add-ons: Stripe, Stripe Connect: Customer had to click the "Place order" button twice to order, if a credit card without 3-D Secure was used. Fixed.
+
+
+----------
+4.10.4.SP2
+----------
+
+[!] Design: Menu: On iOS 13, the second level menu (subcategories) didn't work on the storefront. Fixed.
