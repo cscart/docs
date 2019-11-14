@@ -20,8 +20,6 @@ You can manage your storefronts under **Administration → Stores**. The main pa
 
 * **Storefront URL**—the domain of the storefront, like *example.com*. If the storefront is situated in a subfolder, you must specify it too, for example, *example.com/stores/*. This parameter defines the storefront in the customer area.
 
-* **Secure storefront URL**—defines the storefront in the customer area for secure connection. It is usually the same as Storefront URL.
-
 CS-Cart uses the following database tables to store the information about storefronts:
 
 * **cscart_companies**—the main parameters of a storefront

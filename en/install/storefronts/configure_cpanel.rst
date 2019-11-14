@@ -26,7 +26,7 @@ Create New Storefront in CS-Cart/Multi-Vendor
 
 #. Go to **Administration → Stores** (in CS-Cart) or **Administration → Storefronts** (in Multi-Vendor).
 
-#. Click the **+ button**. If you do not see it, make sure that *All stores* value is selected to the right of the company name in the top left corner of the page.
+#. Click the **+ button**.
 
 #. Fill in the properties of the storefront. **Storefront URL** (without the *http://* prefix) is how your new storefront will be available to customers. There are three variants:
 

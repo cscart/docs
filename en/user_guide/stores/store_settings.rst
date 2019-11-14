@@ -12,7 +12,7 @@ Setting Types
 
 When working with multiple storefronts, remember that CS-Cart has different types of settings:
 
-* **Global settings** affect overall store functionality and the behavior of the Administration panel. They include logging options, usage of secure connection in the administration panel, base for tax calculation methods, and so on.
+* **Global settings** affect overall store functionality and the behavior of the Administration panel. They include logging, usage of secure connection in the administration panel, base for tax calculation methods, and so on.
 
 * **Storefront-specific settings** affect a particular storefront and its behavior. These settings include storefront appearance options (for example, thumbnail dimensions), usage of secure connection at checkout, company information, and so on.
 
@@ -25,13 +25,10 @@ Configure Settings
 
 The general rule for updating settings is as follows:
 
-* Update **storefront-specific settings** in the storefront administrator mode: choose the desired storefront in the selector in the top left corner.
+* To update **storefront-specific settings**, choose the desired storefront in the selector in the upper left part of the page.
 
-  .. note::
 
-      Global settings are not available in the storefront administrator mode.
-
-* Update **global settings** using the root administrator mode: choose **All stores** in the selector in the top left corner.
+* To update **global settings**, choose *All storefronts* in the selector in the upper left part of the page.
 
   .. image:: img/switch_modes.png
       :align: center
@@ -55,8 +52,8 @@ You can also use the root administrator mode to update storefront-specific setti
 
 #. Click **Save** to apply the changes. The setting will get updated for all storefronts.
 
-.. note::
-    When you have only one storefront, the **three people icon** won't appear, because your changes are supposed to affect only one storefront.
+   .. note::
+      When you have only one storefront, the **three people icon** won't appear, because your changes are supposed to affect only one storefront.
 
 .. meta::
    :description: How to configure different settings for different storefronts in CS-Cart online store?

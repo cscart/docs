@@ -36,13 +36,15 @@ Sharing Objects Among Storefronts
 Share Products (Configurable Sharing)
 -------------------------------------
 
-#. Switch to the root administrator mode: select **All stores** in the store selector in the top left corner.
+#. Go to **Products → Products**.
+
+#. Make sure that **All stores** are selected in the upper right part of the page.
 
    .. image:: img/switch_modes.png
        :align: center
        :alt: Select all stores to switch to the root administrator mode.
 
-#. Open the product details page: go to **Products → Products** and click the product you want to share.
+#. Click on the product you want to share.
 
 #. On the **General** tab, add the product to one or more categories under a different storefront.
 
@@ -58,13 +60,13 @@ Share Products (Configurable Sharing)
 Share Other Objects (Invariable Sharing)
 ----------------------------------------
 
-#. Switch to the root administrator mode: select **All stores** in the store selector in the top left corner.
+#. Choose an object that you need to share. For example, go to **Administration → Shipping & Taxes → Shipping methods** to share a shipping method.
+
+#. Make sure that **All stores** are selected in the upper right part of the page.
 
    .. image:: img/switch_modes.png
        :align: center
        :alt: Select all stores to switch to the root administrator mode.
-
-#. Choose an object that you need to share. For example, go to **Administration → Shipping & Taxes → Shipping methods** to share a shipping method.
 
 #. Click the **gear** button of the object. This opens the object configuration page.
 

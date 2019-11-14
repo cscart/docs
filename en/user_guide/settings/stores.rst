@@ -10,7 +10,7 @@ Use these settings to adjust the configuration of the multiple-storefront featur
 
 * **Share users among stores**—if you enable this setting, the store will use a joint customer database where customer accounts are shared among all stores. Otherwise, each store has a separate customer base.
 
-* **Default state of the "Update for all stores" icon**—determines if the values of store-specific settings are available for immediate editing in the root administrator mode. If you set it to *Active*, you'll be able to edit store-specific settings immediately. If you set it to *Not Active*, then the settings will be protected from unintended editing.
+* **Default state of the "Update for all stores" icon**—determines if the values of store-specific settings are available for immediate editing in the *All storefronts* mode. If you set it to *Active*, you'll be able to edit store-specific settings immediately. If you set it to *Not Active*, then the settings will be protected from unintended editing.
 
   .. warning::
 
