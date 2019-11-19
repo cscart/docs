@@ -21,7 +21,7 @@ Working with Settings in the Administration Panel
 
 Core and add-on settings can be viewed and edited in the Administration panel. A setting has ``edition_type`` that determines when and where the setting appears (see :ref:`edition-type`):
 
-* ``MVE`` (Multi-Vendor)—the setting will appear only in Multi-Vendor and only if the *All vendors* mode is selected in the dropdown list in the top left corner.
+* ``MVE`` (Multi-Vendor)—the setting will appear only in Multi-Vendor and only in the *All vendors* mode.
 
 * ``ULT`` (СS-Cart and CS-Cart Ultimate)—the setting will appear both in the *All stores* mode and when a storefront is selected. Each storefront can have its own values for settings, depending on :ref:`edition_type <edition-type>`. Settings that aren't available when a storefront is selected will be hidden.
 

@@ -18,14 +18,6 @@ This article describes how you can test the import functionality of your store b
 
 #. In the Administration panel, go to **Administration → Import data → Products (Deprecated)**. Alternatively, you can use the advanced import; it is described :doc:`in another article </user_guide/manage_products/import_export/advanced_product_import>`.
 
-   .. hint::
-
-       Use the menu in the top left corner of the page to choose the storefront or vendor for which the product will be imported.
-
-   .. image:: img/import.png
-       :align: center
-       :alt: Select a store
-
 #. In the **Import options** section, specify the following settings:
 
    * **Update existing products only**—don't enable this setting; the product doesn't exist in your store yet. If you enable this setting, the product won't be imported.
