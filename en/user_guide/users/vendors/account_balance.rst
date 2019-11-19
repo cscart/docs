@@ -18,9 +18,9 @@ Multi-Vendor has a page that helps store owners and vendors to keep track of the
 
 * Requesting a :ref:`withdrawal <withdrawal>`.
 
-.. image:: img/account_balance.png
-    :align: center
-    :alt: The Accounting page in Multi-Vendor.
+  .. image:: img/account_balance.png
+      :align: center
+      :alt: The Accounting page in Multi-Vendor.
 
 The table on the **Accounting** page consists of the following columns:
 
@@ -84,10 +84,6 @@ To issue a payout manually:
 
 2. Click the **+** button in the top right corner.
 
-.. image:: img/new_payout.png
-    :align: center
-    :alt: Use the + button to create a payout.
-
 3. A pop-up window with the payout creation form will open. There you can:
 
    * Select a vendor to request money from.
@@ -98,17 +94,13 @@ To issue a payout manually:
 
    * Tick the checkbox if you want to notify the vendor about this payout by email.
 
-.. image:: img/issue_payout.png
-    :align: center
-    :alt: Fill in the fields in the payout creation pop-up.
+   .. image:: img/issue_payout.png
+       :align: center
+       :alt: Fill in the fields in the payout creation pop-up.
 
 4. Click **Create**. A new payout will appear on the list of transactions.
 
 Once the vendor makes the payment, store administrator can change the status of the payout from *Pending* to *Completed*. It is a way to confirm that the money has been received.
-
-.. note::
-
-    If you change the status of a payout to *Declined* and choose to notify the vendor by email, the notification will say that the payout has been marked as "Not completed".
 
 .. image:: img/confirm_payout.png
     :align: center
@@ -123,45 +115,39 @@ Withdrawals
 
 By default, all the money from purchases goes to the store owner. The **Accounting** page keeps track of :ref:`how much money a vendor can withdraw from the store. <mve-income-and-balance>` To collect money from store owners, vendors request **withdrawals**.
 
+In some cases, withdrawals can be requested and completed automatically. For example, the :doc:`PayPal Adaptive Payments </user_guide/addons/paypal_adaptive/index>` add-on can automatically distribute money among vendors. When the add-on does that, it creates *Completed* withdrawals automatically to keep the **Accounting** page up to date.
+
 .. note::
 
     Vendor's administrators can create withdrawal requests, but can't delete them or change their status.
 
-In some cases, withdrawals can be requested and completed automatically. For example, the :doc:`PayPal Adaptive Payments </user_guide/addons/paypal_adaptive/index>` add-on can automatically distribute money among vendors. When the add-on does that, it creates *Completed* withdrawals automatically to keep the **Accounting** page up to date.
+To request a withdrawal, a vendor must:
 
-The process of creating a withdrawal request is mostly the same for vendors and store owners:
+#. Go to **Vendors → Accounting** and switch to the **Balance withdrawals** tab.
 
-1. Go to **Vendors → Accounting** and switch to the **Balance withdrawals** tab.
+   .. hint::
 
-2. If you are a store administrator, use the selector in the top left corner to switch to the desired vendor. If you are a vendor's administrator, skip this step.
+       A marketplace administrator can do it on behalf of vendor. To do that, use the account menu in the top right corner of the page and choose to log in as vendor.
 
-3. Click the **+** button in the top right corner.
+#. Click the **+** button in the top right corner.
 
-.. image:: img/new_withdrawal.png
-    :align: center
-    :alt: Select the vendor in the top right corner and use the + button to create a withdrawal.
-
-4. A pop-up window with the withdrawal creation form will open. There you can:
+#. A pop-up window with the withdrawal creation form will open. There you can:
 
    * Specify the desired amount of money in the store's primary currency.
 
    * Enter a commentary, if necessary.
 
-.. image:: img/request_withdrawal.png
-    :align: center
-    :alt: Fill in the fields in the withdrawal creation pop-up.
+     .. image:: img/request_withdrawal.png
+        :align: center
+        :alt: Fill in the fields in the withdrawal creation pop-up.
 
-5. Click **Create**. A new withdrawal with the *Pending* status will appear on the list of transactions.
+#. Click **Create**. A new withdrawal with the *Pending* status will appear on the list of transactions.
 
-Once a withdrawal is requested, the store owner has 2 options:
+Once a withdrawal is requested, the marketplace owner has 2 options:
 
 * Pay the vendor and change the status of the withdrawal to *Completed* to confirm the transaction.
 
 * Decline the withdrawal and change the status to *Declined*.
-
-.. note::
-
-    In both cases the store owner choose whether or not to send an email to vendor, saying that the status of the withdrawal request has been changed.
 
 .. image:: img/confirm_withdrawal.png
     :align: center
@@ -178,21 +164,12 @@ When working with the **Accounting** page, it's important to understand two term
 
 * **Balance**—the total amount of money that a vendor can :ref:`withdraw <withdrawal>`.
 
-.. note::
+  .. note::
 
-    An order affects a vendor's balance only if the status of that order has the **Charge to vendor account** checkbox ticked.
-
-.. image:: img/vendor_balance.png
-    :align: center
-    :alt: The balance of a vendor.
+      An order affects a vendor's balance only if the status of that order has the **Charge to vendor account** checkbox ticked.
 
 * **Income**—the earnings of a vendor or a store owner. Here is how it is calculated:
 
   * Vendor’s income = payments for orders - (commissions + payouts)
 
   * Store owner’s income = commissions + payouts
-
-.. image:: img/mve_income.png
-    :align: center
-    :alt: Store owner's income.
-

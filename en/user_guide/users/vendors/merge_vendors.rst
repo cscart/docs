@@ -10,16 +10,16 @@ When you merge *vendor account A* into *vendor account B*, *vendor account A* is
 
 To merge two vendor accounts, complete the following steps:
 
-1. Go to **Vendors → Vendors** in the Administration panel.
+#. Go to **Vendors → Vendors** in the Administration panel.
 
-2. Click the **gear** button of the vendor account that you want to merge into another vendor account.
+#. Click the **gear** button of the vendor account that you want to merge into another vendor account.
 
-3. Select the **Merge** action.
+#. Select the **Merge** action.
 
-.. warning::
+   .. warning::
 
-    Please double-check which account you are handling at this step, because it is the account that will be removed from the database in the end.
+       Please double-check which account you are handling at this step, because it is the account that will be removed from the database in the end.
 
-4. Select the vendor account that will inherit all data associated from the account that is being disposed of.
+#. Select the vendor account that will inherit all data associated from the account that is being disposed of.
 
-5. Click the **Merge** button.
+#. Click the **Merge** button.
