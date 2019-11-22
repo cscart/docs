@@ -1,0 +1,89 @@
+************************
+CS-Cart 4.11.2 Changelog
+************************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Product variations: Now it is possible to switch product variations on cart page.
+
+[+] Add-ons: Stripe: Stripe Connect: Saving order ID in payment metadata added.
+
+[+] Add-ons: Suppliers: Fatal error occured when saving a shipping method. Fixed.
+
+[+] Add-ons: Vendor rating: New add-on to range vendors by their rating added.
+
+[+] Notifications: Ability to edit on-site notification templates added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: Call requests: Call requests email notifications now use the new event-based mechanism.
+
+[*] Object selector Replaced by Object picker on the order edit page.
+
+[*] Shippings: Australia Post: Service codes were updated.
+
+[*] Vendors: Vedors switcher: Vedors switcher in admin panel was changed to login into vendor panel as root vendor administrator.
+
+=========
+Bug Fixes
+=========
+
+[!] Ability to access some URLs in a store both via HTTP and HTTPS was missing. Fixed.
+
+[!] Add-ons: Common Products for Vendors: Already existing product can be duplicated after import to the store. Fixed.
+
+[!] Add-ons: Customers also bought: If an additional purchase of products was made with a product as a child variation, then this variation was not displayed in the “Buy with this product” block. Fixed.
+
+[!] Add-ons: GDPR: Checkout:  In checkout when creating a new profile, there was no field on the adoption of an agreement on a policy for processing personal data in the pop-up window. Fixed.
+
+[!] Add-ons: RMA: Vendor plans: After product return, returned amount of money was incorrect when shipping cost was 0. Fixed.
+
+[!] Add-ons: SEO: Product price could be wrong at the results of quick search. Fixed.
+
+[!] Add-ons: Stripe Connect: The window with information about the card was non-adaptive in the mobile version, when paying through Stripe Connect. Fixed.
+
+[!] Add-ons: Warehouses: Content of tab "Quantity" at product detail page was not changed with language of content change. Fixed.
+
+[!] Add-ons: Warehouses: Moving delay was displayed even when product was present in the store. Fixed.
+
+[!] Addons: Product variations: Number filter was not worked for variations which were generated automatically with number slider feature type. Fixed.
+
+[!] Add-ons: Product variations: Products count was different in vendor statistics in admin area and in vendor microstore. Fixed.
+
+[!] Add-ons: Stores and pickup points: On mobile, dragging the map did not work. Fixed.
+
+[!] Add-ons: YML export: Previously, when exporting products to Yandex Market, product variations were assigned the name of the main product. Fixed.
+
+[!] Checkout: If the page had a large scale, then the profile field headings was contain a scroll on the checkout page. Fixed.
+
+[!] Common products for vendors: Products count was different on categories list and on product search by category_id page.Fixed.
+
+[!] Core: Request made from command line interface could cause an error. Fixed.
+
+[!] Design: Layouts: Import of some layouts was impossible. Fixed.
+
+[!] Design: RTL: OwlCarousel: Only the first image did displayed. Fixed.
+
+[!] Design: Responsive: Menu: On mobile Ajax-menus did not work. Fixed.
+
+[!] Exim: Features:  if the "Filter style" field was empty when importing goods, the feature was not imported. Fixed.
+
+[!] Menus: If the menu item in its name contained unclosed double quotes, the settings did not appear to it. Fixed.
+
+[!] Multi-Vendor Ultimate: Products from one storefront was avaliable from other storefronts. Fixed.
+
+[!] Multi-Vendor: Vendors: The table title was displayed in two lines. Fixed.
+
+[!] Orders: Order statuses that had long names were displayed incorrectly in the order list and details order in the admin panel. Fixed.
+
+[!] Select2: Add-ons: Variations: The variation features were not displayed. Fixed.
+
+[!] Select2: Orders: The long name was cropped. Fixed.
+
+[!] Add-ons: Ask seller a question: Notifications about new message were send to wrong recipient in some cases. Fixed.
+
+[!] Add-ons: Common Products for Vendors: Avanced import: On the page for creating / editing an import preset, there was a setting  “Exported products” if the module “Common Products for Vendors", which is typical for pages for exporting products, is enabled. Fixed.
