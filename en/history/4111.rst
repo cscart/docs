@@ -203,3 +203,21 @@ Bug Fixes
 [!] Select2: Clicking on the input field erased the entered text. Fixed.
 
 [!] Users: Search by phone number didn't return a user if formatting of the number was different. Fixed.
+
+=============
+Service Packs
+=============
+
+----------
+4.11.1.SP1
+----------
+
+[!] Some URLs in a store didn't work via both HTTP and HTTPS. Fixed.
+
+[!] Orders: Notifications: If the old email templates editor was used to create notifications, the order status change notifications had wrong formatting for "price" and "order total". Fixed.
+
+[!] Add-ons: SEO: Caching was not used for generating SEO links. Fixed.
+
+[!] Order management: If a store had more than 4 storefronts, order editing could result in an error. Fixed.
+
+[!] Storefronts: A PHP exception occured when a customer was accessing a storefront with the 'Redirect visitors of this storefront...' setting enabled. Fixed.
