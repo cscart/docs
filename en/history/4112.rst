@@ -1,0 +1,119 @@
+************************
+CS-Cart 4.11.2 Changelog
+************************
+
+=============================
+New Features and Improvements
+=============================
+
+[[+] Add-ons: Product Variations: Now, if a prefix and a suffix are specified in the settings, they will be displayed on the product detailed page before and/or after a feature.
+
+[+] Add-ons: Product Variations: Now it is possible to switch product variations on the cart page.
+
+[+] Add-ons: Stores and pickup points: Warehouses [Beta]: A tab to display the list of stores and pickup points was added to the rate area detailed page.
+
+[+] Add-ons: Stripe: Stripe Connect: Order ID is now saved in the payment metadata.
+
+[+] Notifications: The ability to edit on-site notification templates was added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: Call requests: Call requests email notifications now use the new event-based mechanism.
+
+[*] Add-ons: Advanced import: The loading time of the field mapping table was reduced.
+
+[*] Design: Storefronts: The storefronts selection interface was improved.
+
+[*] Multi-Vendor: Vendors: Vendors switcher: Vendors switcher in the admin panel was changed to a vendor panel logging in as the root vendor administrator.
+
+[*] Orders: An object selector was replaced by an object picker on the order editing page.
+
+[*] Shippings: Australia Post: The service codes were updated.
+
+=========
+Bug Fixes
+=========
+
+[!] Add-ons: Common Products for Vendors: An existing product could be duplicated after the import to the store. Fixed.
+
+[!] Add-ons: Customers also bought: If a customer bought a child variation as an additional purchase, this variation was not displayed in the “Also bought” block. Fixed.
+
+[!] Add-ons: GDPR: Checkout: When a customer created a new profile at checkout, there was no field to confirm personal data processing in a pop-up window. Fixed.
+
+[!] Add-ons: Google sitemap: SEO: Sitemap links were generated without SEO names for some storefronts. Fixed.
+
+[!] Add-ons: Product Variations: It was impossible to switch between product variations on a quick view if a quick view opened on a product page with the same product features. Fixed.
+
+[!] Add-ons: Product Variations: The "number" filter did not work for variations that were generated automatically with the "number slider" feature type. Fixed.
+
+[!] Add-ons: SEO: Product price could be wrong on the quick search results page. Fixed.
+
+[!] Add-ons: Suppliers: A fatal error occurred when a shipping method was saved. Fixed.
+
+[!] Add-ons: Stores and pickup points: On mobile, map dragging did not work. Fixed.
+
+[!] Add-ons: Vendor data premoderation: If you saved the product, the product got the "Disapproved" status. Fixed.
+
+[!] Add-ons: Warehouses [Beta]: The content of the "Quantity" tab on a product detailed page was not changed with the language change. Fixed.
+
+[!] Add-ons: Warehouses [Beta]: Disabled stores were displayed in the Availability in stores tab on product pages. Fixed.
+
+[!] Add-ons: Warehouses [Beta]: A product moving delay was displayed even when the product was present in the store. Fixed.
+
+[!] Add-ons: Warehouses [Beta]: The warning message about warehouse delay wasn't shown if stores didn't exist. Fixed.
+
+[!] Privileges: Administrators with assigned user groups couldn't open a storefront via the link in the administration panel's menu. Fixed.
+
+[!] Checkout: If the page had a large scale, then the profile field headings contained a scroll on the checkout page. Fixed.
+
+[!] Core: A request made from the command line interface could cause an error. Fixed.
+
+[!] Design: Layouts: It was impossible to import some layouts. Fixed.
+
+[!] Design: RTL: Blocks: Сart content: A list of products in minicart overlapped the minicart button. Fixed.
+
+[!] Design: RTL: OwlCarousel: In the image preview, only the first image was displayed. Fixed.
+
+[!] Design: Responsive: Menu: On mobile, Ajax-menus did not work. Fixed.
+
+[!] Exim: Features: if the "Filter style" field was empty during the product import, the feature was not imported. Fixed.
+
+[!] Languages: Export: A language export could cause a fatal error in some cases when third-party add-ons were installed but disabled. Fixed.
+
+[!] Menus: If the menu item contained unclosed double quotes in its name, the settings did not appear for it. Fixed.
+
+[!] Multi-Vendor: Add-ons: Ask seller a question: Notifications about new messages were send to the wrong user in some cases. Fixed.
+
+[!] Multi-Vendor: Add-ons: Common products for vendors: A Product count was different on the categories list and on the product search by category_id page. Fixed.
+
+[!] Multi-Vendor: Add-ons: Customers also bought: Ask seller a question: The ask a question window could be empty in some cases. Fixed.
+
+[!] Multi-Vendor: Add-ons: RMA: Vendor plans: After a product return, the returned amount of money was incorrect if the shipping cost was 0. Fixed.
+
+[!] Multi-Vendor: Add-ons: Ask seller a question: Social login: The authorization window from the Ask seller a question block didn't contain an authorization via social networks button. Fixed.
+
+[!] Multi-Vendor: Add-ons: Product Variations: The product count was different in vendor statistics in the admin area and in a vendor microstore. Fixed.
+
+[!] Multi-Vendor Ultimate: Products from one storefront were available on other storefronts. Fixed.
+
+[!] Multi-Vendor: Add-ons: Stripe Connect: RMA: Payment couldn't be refunded via Stripe Connect. Fixed.
+
+[!] Multi-Vendor: Add-ons: Stripe Connect: The credit card information window was not responsive in the mobile version when customers paid through Stripe Connect. Fixed.
+
+[!] Multi-Vendor: Vendors: The table title was displayed in two lines. Fixed.
+
+[!] Notifications: In some cases, notifications may be sent to a wrong user. Fixed.
+
+[!] Orders: Order statuses that had long names were displayed incorrectly in the order list and order details in the admin panel. Fixed.
+
+[!] Orders: Shipping methods unavailable for the selected storefront were displayed in the orders advanced search form. Fixed.
+
+[!] Select2: Add-ons: Variations: The variation features were not displayed. Fixed.
+
+[!] Select2: Orders: A long product name was cropped in the search suggestions. Fixed.
+
+[!] Select2: Product features: In eBay templates and promotions, the selected features were not displayed. Fixed.
+
+[!] Add-ons: Common Products for Vendors: Advanced import: On the create/edit an import preset page, there was a setting  “Exported products” if the “Common Products for Vendors" add-on was enabled. Fixed.
