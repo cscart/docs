@@ -7,6 +7,7 @@ Version Compatibility
     :titlesonly:
 
     adapting_4104_to_4111
+    adapting_4111_to_4112
 
 .. toctree::
     :maxdepth: 2
