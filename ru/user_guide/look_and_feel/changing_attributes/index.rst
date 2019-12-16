@@ -17,6 +17,7 @@
     :titlesonly:
     :glob:
 
+    configure_checkout
     add_custom_js_code
     store_closed
     change_logo
