@@ -38,7 +38,13 @@ On that page, you can:
 Configure Fields
 ================
 
-At checkout, customer leaves most of the information via :doc:`profile fields </user_guide/users/customers/change_profile_fields>`. They are placed to the page via blocks. The block settings (the gear icon under the block) allows you to:
+At checkout, customer leaves most of the information via :doc:`profile fields </user_guide/users/customers/change_profile_fields>`. They are placed to the page via blocks. 
+
+.. image:: img/checkout_profile_fields.png
+    :align: center
+    :alt: Profile field selection on the checkout page.
+
+The block settings (the gear icon under the block) allows you to:
 
 * Show block name on the checkout page (if you select a wrapper).
 
@@ -51,10 +57,6 @@ At checkout, customer leaves most of the information via :doc:`profile fields </
   .. important::
 
       If the settings of a :doc:`shipping method </user_guide/shipping_and_taxes/shipping_methods/index>` have **Customer must specify his/her address** disabled, then the block with the customer's address will be hidden when the shipping method is selected.
-
-.. image:: img/checkout_profile_fields.png
-    :align: center
-    :alt: Profile field selection on the checkout page.
 
 ===============
 Configure Texts
@@ -69,3 +71,6 @@ Any text in CS-Cart and Multi-Vendor can be changed. But the checkout page has m
 * :doc:`Blocks </user_guide/look_and_feel/layouts/blocks/index>` (for section headings).
 
 * :doc:`Language variables </user_guide/look_and_feel/languages/translate>` (for all other texts).
+
+.. meta::
+   :description: Info on how to change profile fields at checkout in CS-Cart and Multi-Vendor ecommerce software.
