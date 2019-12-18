@@ -19,6 +19,7 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     age_verification/index
     anti_fraud/index
     attachments/index
+    customer_to_vendor_communication/index
     google_backend_signin/index
     banners_management/index
     bestsellers_and_on_sale_products/index
@@ -29,7 +30,6 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     comments_and_reviews/index
     common_products/index
     customers_also_bought/index
-    customer_to_vendor_communication/index
     data_feeds/index
     direct_customer_to_vendor_payments/index
     eBay/index

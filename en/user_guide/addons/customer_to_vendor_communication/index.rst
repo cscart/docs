@@ -1,28 +1,24 @@
-********************************
-Customer-to-Vendor Communication
-********************************
+*********************
+Ask Seller a Question
+*********************
 
-.. important::
+The **Ask Seller a Question** add-on allows customers to contact administrators (in CS-Cart) or vendors (in Multi-Vendor) directly from the storefront. Here is how it works: 
 
-    This add-on exists only in Multi-Vendor 4.7.1 and newer versions.
+* A customer signs in to his or her account and initiates the communication by using the "Ask a question" button.
 
-The **Customer-to-Vendor Communication** add-on allows customers to contact vendors directly from the storefront. Here is how it works: 
+* Administrators or vendor's administrators see the message in the admin panel and can reply to it. Chains of messages and their replies are grouped into threads.
 
-* A customer signs in to his or her account and initiates the communication by contacting a vendor from a product page or the microstore of that vendor.
-
-* The contacted vendor sees the message in the Administration panel and can reply to it. Chains of messages and their replies are grouped into threads.
- 
-* Notifications are sent to the customer's and/or vendor's email address to inform them about new messages (that depends on the add-on's settings).
+* Depending on the settings in **Administration → Notifications**, customers, admins, and vendors receive notifications about new messages.
 
   .. note::
 
-      These emails will only be sent if you use :doc:`the new email template editing mode </user_guide/look_and_feel/email_templates/enable_email_editor>`.
+      Email notifications will be sent only if you use :doc:`the new email template editing mode </user_guide/look_and_feel/email_templates/enable_email_editor>`.
 
 * The customer can check the message history and continue the conversation in his or her account on the storefront.
 
-  .. image:: img/contact_vendor.png
+  .. image:: img/ask_a_question.png
       :align: center
-      :alt: The Contact Vendor button on the storefront in Multi-Vendor.
+      :alt: The button that lets customers to ask a question about the product on the storefront.
 
 ================
 Related Articles
@@ -37,3 +33,6 @@ Related Articles
 
 
 * :doc:`/user_guide/users/message_center/index`
+
+.. meta::
+   :description: An add-on that lets customers send a message to the seller from a product page in CS-Cart and Multi-Vendor software.
