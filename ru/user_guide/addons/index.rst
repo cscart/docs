@@ -54,6 +54,7 @@
     twigmo/index
     vendor_data_premoderation/index
     warehouses/index
+    customer_to_vendor_communication/index
     yandex_metrika/index
     yml_export/index
 
