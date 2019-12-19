@@ -6,7 +6,7 @@ Message Center
 
     This functionality is a part of the :doc:`Ask Seller a Question </user_guide/addons/customer_to_vendor_communication/index>` add-on.
 
-Whenever a customer sends a message to a vendor by using the *Ask a question* button, a new thread is created. A **thread** is a sequence of messages in the communication between a customer and a seller (administrator or vendor).
+Whenever a customer sends a message by using the *Ask a question* button, a new thread is created. A **thread** is a sequence of messages in the communication between a customer and a seller (administrator or vendor).
 
 .. image:: img/customer_message.png
     :align: center
@@ -46,4 +46,7 @@ The **My Account → Messages** page allows customers to:
 
   .. image:: img/message_center_for_customers.png
       :align: center
-      :alt: Replying in a customer's thread in Multi-Vendor.
+      :alt: Message center on the storefront.
+
+.. meta::
+   :description: Where to manage questions asked by customers in CS-Cart and Multi-Vendor ecommerce platforms?

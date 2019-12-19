@@ -18,7 +18,7 @@ How To: Allow Customers to Ask Questions About Products
 
      .. note::
 
-         This setting will only affect those vendors who have :doc:`vendor plans </user_guide/users/vendors/manage_vendor_plans>` with vendor microstores.
+         This setting will only affect those vendors who have a :doc:`vendor plan </user_guide/users/vendors/manage_vendor_plans>` with vendor microstores.
 
 #. Once you configure the add-on, click **Save**. After that you should see the *Ask a question* button on the pages that you specified in the settings of the add-on.
 
