@@ -12,7 +12,7 @@ Whenever a customer sends a message by using the *Ask a question* button, a new 
     :align: center
     :alt: Sending a message to a vendor in Multi-Vendor.
 
-Messages and threads are saved to the database and can be viewed in the **Message Center**, both in the admin panel and on the storefront. This allows customers, administrators, and vendors to check the communication history and continue their conversations in the relevant threads.
+Messages and threads are saved to the database and can be viewed in the **Message Center**, both in the admin panel and on the storefront. This allows customers, administrators, and vendors to see communication history and continue their conversations in the relevant threads.
 
 =============================================
 Message Center for Administrators and Vendors
