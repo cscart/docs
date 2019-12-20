@@ -27,6 +27,7 @@
     blog/index
     boxberry/index
     cities/index
+    common_products/index
     comments_and_reviews/index
     commerceml/index
     form_builder/index

@@ -1,6 +1,6 @@
-**********************************
-Common Products for Vendors [Beta]
-**********************************
+***************************
+Common Products for Vendors
+***************************
 
 .. note::
 
@@ -10,7 +10,17 @@ Common Products for Vendors [Beta]
 Functionality
 =============
 
-The **Common Products for Vendors** add-on allows you to create a single product base for your marketplace. With this add-on, multiple vendors will be able to offer same products at different prices, and customers will have a way to compare the prices and make their choice. This approach prevents vendors from filling the marketplace with multiple similar products that slightly differ in photos or descriptions.
+The **Common Products for Vendors** add-on allows you to create a single product base for your marketplace. That way:
+
+* Multiple vendors will be able to offer same products at different prices.
+
+* Customers will have a way to compare the prices and make their choice.
+
+  .. image:: img/buying_common_product.png
+      :align: center
+      :alt: Potential buyers of a product will see offers from all vendors.
+
+This add-on will prevent vendors from filling the marketplace with multiple similar products that slightly differ in photos or descriptions.
 
 Here's how the add-on works:
 
@@ -18,11 +28,11 @@ Here's how the add-on works:
 
 #. A marketplace administrator creates *products that vendors can sell*. It works just like :doc:`the standard process of adding products </user_guide/manage_products/products/add_product>`.
 
-#. A vendor browses those products and chooses which of them to sell. If the vendor is already selling some of the products, they will have the **For sale** marker.
-
    .. image:: img/products_that_vendors_can_sell.png
        :align: center
        :alt: Vendors can choose to sell the products added by marketplace owner.
+
+#. A vendor browses those products and chooses which of them to sell. If the vendor is already selling some of the products, they will have the **For sale** marker.
 
 #. After choosing a product, the vendor is taken to the editing page. That page doesn't allow vendors to change much, except for prices, quantity, and shipping-related properties.
 
@@ -43,12 +53,6 @@ Here's how the add-on works:
    .. image:: img/make_product_common.png
        :align: center
        :alt: A vendor's product can be made common by the marketplace owner.
-
-#. When viewing a product on the storefront, customers will see what vendors offer that product, and on what terms.
-
-   .. image:: img/buying_common_product.png
-       :align: center
-       :alt: Potential buyers of a product will see offers from all vendors.
 
 ============================
 Installation & Configuration
