@@ -18,8 +18,8 @@ Here are the important differences between CS-Cart Ultimate in Multi-Vendor Ulti
         -   CS-Cart Ultimate
         -   Multi-Vendor Ultimate
     *   -   Product
-        -   A product belongs to a specific storefront. It can appear simultaneously on multiple storefronts, if you assign categories from those storefronts to the product.
-        -   A product belongs to a vendor. It will appear on all the storefronts where the vendor appears.
+        -   A product belongs to a specific storefront. It can appear simultaneously on multiple storefronts, if you assign categories from those storefronts to the product. Prices can be different, depending on the storefront.
+        -   A product belongs to a vendor. It will appear on all the storefronts where the vendor appears. The price will remain the same.
     *   -   Category
         -   A category always belongs to one specific storefront and appears only there.
         -   A category appears on all the storefronts.
