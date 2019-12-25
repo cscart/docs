@@ -4,7 +4,7 @@ Product Catalog and Multiple Storefronts
 
 .. important::
 
-    This article applies only to CS-Cart, not Multi-Vendor.
+    This article applies only to CS-Cart Ultimate. In Multi-Vendor Ultimate, products appear on a storefront if their vendor appears on the storefront.
 
 CS-Cart uses a common product catalog for all storefronts. The catalog has a tree structure: the root nodes represent storefronts; the child nodes inside a root node represent product categories and subcategories assigned to the corresponding storefront.
 
