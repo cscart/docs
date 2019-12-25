@@ -4,9 +4,9 @@ Customer Accounts and Multiple Storefronts
 
 .. important::
 
-    This article applies only to CS-Cart, not Multi-Vendor.
+    This article applies only to CS-Cart Ultimate. In Multi-Vendor Ultimate, the customer base is always shared by all storefronts.
 
-CS-Cart offers 2 ways of handling customer accounts:
+The **Share users among stores** setting in **Settings → Stores** determines how CS-Cart handles customer accounts:
 
 * **One customer base shared among all storefronts**
 
@@ -15,10 +15,6 @@ CS-Cart offers 2 ways of handling customer accounts:
 * **Different customer bases for each storefront** (recommended)
 
   Customers will have to create accounts separately for each storefront.
-
-.. important::
-
-    To choose either of the options, use the **Share users among stores** checkbox in **Settings → Stores**.
 
 .. meta::
    :description: Can CS-Cart storefronts have separate customers? Can customers from one store sign in to another store?

@@ -2,15 +2,31 @@
 Storefronts
 ***********
 
-`CS-Cart Ultimate <https://helpdesk.cs-cart.com/cs-cart-ultimate-license.html>`_ and `Multi-Vendor Ultimate <https://helpdesk.cs-cart.com/multi-vendor-ultimate-license.html>`_ allow you to manage multiple storefronts with one administration panel.
+`CS-Cart Ultimate <https://helpdesk.cs-cart.com/cs-cart-ultimate-license.html>`_ and `Multi-Vendor Ultimate <https://helpdesk.cs-cart.com/multi-vendor-ultimate-license.html>`_ allow you to manage multiple storefronts with one administration panel. Storefronts behave slightly differently:
 
-In CS-Cart, storefronts can have their own products, categories, settings, and checkout mechanism, so that visitors can treat them as independent stores. This section of the documentation describes how to work with multiple storefronts.
+* **In CS-Cart Ultimate**, storefronts can appear to customers as independent stores. They can have their own products, categories, settings, user base, and checkout mechanism.
+
+* **In Multi-Vendor Ultimate**, storefronts are a way to create regional branches of your marketplace. You can create a storefront for a specific country, with specific currencies, languages, payment and shipping methods, and vendors. For different looks, each storefront can have its own theme, layout, and blocks.
+
+Here are the important differences between CS-Cart Ultimate in Multi-Vendor Ultimate:
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 20 15
+
+    *   -   Object Type
+        -   CS-Cart Ultimate
+        -   Multi-Vendor Ultimate
+    *   -   Product
+        -   A product belongs to a specific storefront. It can appear simultaneously on multiple storefronts, if you assign categories from those storefronts to the product.
+        -   A product belongs to a vendor. It will appear on all the storefronts where the vendor appears.
+    *   -   Category
+        -   A category always belongs to one specific storefront and appears only there.
+        -   A category appears on all the storefronts.
 
 .. important::
 
-    Storefronts in Multi-Vendor Ultimate have a different set of features, and more are being developed. For more information, please check `our plans for Multi-Vendor Ultimate <https://www.cs-cart.com/whats-new-in-multi-vendor.html>`_.
-
-To configure multiple storefronts on your web hosting, please :doc:`follow these inistructions. </install/storefronts/index>`
+    To configure multiple storefronts on your web hosting, please :doc:`follow these inistructions. </install/storefronts/index>`
 
 .. toctree::
     :maxdepth: 4

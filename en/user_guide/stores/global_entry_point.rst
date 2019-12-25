@@ -4,7 +4,7 @@ How To: Configure Global Entry Point for Your Store
 
 .. important::
 
-    This article applies only to CS-Cart, not Multi-Vendor.
+    This article applies only to CS-Cart Ultimate. In Multi-Vendor Ultimate, you can only :doc:`configure automatic redirection between storefrnots depending on the country </user_guide/stores/redirect_regional_customers_to_storefront>`.
 
 =========================
 About Global Entry Points

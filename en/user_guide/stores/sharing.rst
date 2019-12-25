@@ -4,7 +4,7 @@ How To: Share Objects Among Stores
 
 .. important::
 
-    This article applies only to CS-Cart, not Multi-Vendor.
+    This article applies only to CS-Cart Ultimate. In Multi-Vendor Ultimate, check the settings of a storefrnot, or the **Storefronts** tab in the properties of an object.
 
 ======================
 How Does Sharing Work?
@@ -38,7 +38,7 @@ Share Products (Configurable Sharing)
 
 #. Go to **Products → Products**.
 
-#. Make sure that **All stores** are selected in the upper right part of the page.
+#. Make sure that **All stores** are selected in the upper left part of the page.
 
    .. image:: img/switch_modes.png
        :align: center
@@ -62,7 +62,7 @@ Share Other Objects (Invariable Sharing)
 
 #. Choose an object that you need to share. For example, go to **Administration → Shipping & Taxes → Shipping methods** to share a shipping method.
 
-#. Make sure that **All stores** are selected in the upper right part of the page.
+#. Make sure that **All stores** are selected in the upper left part of the page.
 
    .. image:: img/switch_modes.png
        :align: center
