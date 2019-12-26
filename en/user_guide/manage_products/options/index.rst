@@ -2,7 +2,15 @@
 Options
 *******
 
-The **Products → Options** page allows you to manage global product options and option variants in your store. Global options work in the same manner as the product-specific options, but they can apply to multiple products.
+Options are additional *separable* product properties. That don't have a quantity of their own, and don't affect the quantity of product in stock. But they can affect the price or weight of the product. Good examples of options are:
+
+* Custom engraving
+
+* Gift wrap
+
+* Extended warranty
+
+The **Products → Options** page allows you to manage all product options and option variants in your store. The changes you make here will affect all products that use these options.
 
 * To add a new option, click the **+** button.
 
