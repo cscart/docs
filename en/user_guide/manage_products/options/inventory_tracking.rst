@@ -2,6 +2,10 @@
 Options and Inventory Tracking
 ******************************
 
+.. warning::
+
+    This article is no longer relevant, because option combinations are deprecated. They might exist in your store only if you upgraded from a previous version that had them. To track inventory for similar products and let customers switch between them easily, please use :doc:`product variations </user_guide/manage_products/products/product_variations>`.
+
 Options may or may not affect inventory:
 
 * **Options affect inventory** when products with or without an option are physically different items. For example, the same shoes of different sizes are separate items, and usually they need to be tracked separately.

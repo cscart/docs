@@ -2,6 +2,10 @@
 How To: Add Images for Option Variants and Combinations to a Product Page
 *************************************************************************
 
+.. warning::
+
+    This article is no longer relevant, because option combinations are deprecated. They might exist in your store only if you upgraded from a previous version that had them. To track inventory for similar products and let customers switch between them easily, please use :doc:`product variations </user_guide/manage_products/products/product_variations>`.
+
 When a product has multiple :doc:`option combinations <option_combinations>`, customers select the combination by choosing variants for every option. Let's enable customers to select variants by clicking on variant icons. We'll also make the main image of the product change when a customer selects a specific combination.
 
 As a result, the page of your product will look like in the picture below:

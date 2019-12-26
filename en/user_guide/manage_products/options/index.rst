@@ -40,8 +40,13 @@ In This Section
     option_attributes
     global_options
     option_settings
-    option_combinations
-    comb_images
     exceptions
     max_file_uploads
+
+.. toctree::
+    :maxdepth: 4
+    :hidden:
+
+    option_combinations
+    comb_images
     inventory_tracking

@@ -2,6 +2,10 @@
 Product Option Combinations
 ***************************
 
+.. warning::
+
+    This article is no longer relevant, because option combinations are deprecated. They might exist in your store only if you upgraded from a previous version that had them. To track inventory for similar products and let customers switch between them easily, please use :doc:`product variations </user_guide/manage_products/products/product_variations>`.
+
 To make inventory tracking easier, you can group different combinations of :doc:`product option variants <product_options>` under **option combinations**. For example, clothes come in various colors and sizes. Option combinations allow you to track separately, how many *blue XL-sized T-shirts* and *white M-sized T-shirts* you have. 
 
 .. note::
