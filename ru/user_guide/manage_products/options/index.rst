@@ -36,8 +36,8 @@
     :glob:
 
     product_options
-    option_attributes
     global_options
+    option_attributes
     option_settings
     exceptions
     max_file_uploads

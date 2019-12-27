@@ -1,84 +1,14 @@
-**********************
-Global Product Options
-**********************
+*************************************
+How To: Apply Product Options in Bulk
+*************************************
 
-If most of your products have the same product option, you can define this option on the **Options** page in the Administration panel. You will need to create this product option only once, and then you will be able to add it to any product quickly, without the necessity to add option variants to each product one by one.
+If most of your products need to have the same option, you can create this product option only once, and then add it to any products quickly.
 
-.. note::
+#. In the admin panel, go to **Products → Options**.
 
-    Just like product-specific options, global options can form :doc:`combinations <option_combinations>` and :doc:`exceptions <exceptions>`.
+   .. note::
 
-.. contents::
-   :backlinks: none
-   :local:
-
-======================
-Create a Global Option
-======================
-
-#. In the Administration panel, go to **Products → Options**.
-  
-#. Click the **+** button in the upper right part of the page.
-
-#. A pop-up window for option creation will open. Fill in the fields:
-
-   * **Name**—the name of the product option as it appears on the storefront.
-
-   * **Internal name**—the name of the option that only appears in the Administration panel to help you distinguish between multiple options that have the same displayed name.
-
-     For example, if you sell shoes and T-shirts, you probably have 2 separate global options called *Size*. Without the internal name they'd look the same in the administration panel, and it'd be hard to guess which of these options to apply to your newly-created product.
-
-   * **Position**—the position of the product option relatively to other options in the list.
-
-   * **Store**—the storefront to which the option originally belongs.
-
-   * **Inventory**—if you tick this checkbox, you'll be able to track the quantity of a product with this option selected via option combinations.
-
-   * **Type**—the type of the product option: *Select box*, *Radio group*, *Check box*, *Text*, *Text area*, or *File*. Depending on the type, options may have :doc:`additional properties <../options/option_settings>`.
-
-   * **Description**—the description of the product option as it appears on the storefront under the question mark sign next to the option name.
-   
-   * **Comment**—the comment to be displayed below the option on the storefront.
-
-   * **Required**—if you tick this checkbox, customers will have to select/enter the variant of this option.
-
-   * **Missing variants handling**—this setting determines what happens when all the variants of the option are disabled or not specified at all: 
-
-     * *Display message*—the option will appear on the product page, but will be marked as not available. If the option is mandatory (see the previous setting), customers will not be able to add the product to cart. 
-
-     * *Hide option completely*—the option will be hidden; even if the option is mandatory (see the previous setting), customers will still be able to add the product to cart.
-
-#. Click the **Create** button.
-
-   .. image:: img/global_options_01.png
-       :align: center
-       :alt: The option creation pop-up window in CS-Cart
-
-==================================
-Apply a Global Option to a Product
-==================================
-
-#. Go to **Products → Products**.
-
-#. Open any product details page and open the **Options** tab.
-
-#. Click the **Add global option** button, select the global option, and click **Apply**.
-
-   .. image:: img/global_options_03.png
-       :align: center
-       :alt: Apply a global option to a product in CS-Cart
-
-   .. important::
-
-       If you tick the **Apply as link** checkbox, you won't be able to edit the option for each specific product. All the changes you make to this option will affect all products that have this option added as a link.
-    
-       If you do not tick the checkbox, then the option will be copied for the product. You will be able to edit the variants of the option for this particular product, without it affecting other products.
-
-==========================================
-Apply a Global Option to Multiple Products
-==========================================
-
-#. Go to **Products → Options**.
+       If you haven't :doc:`created a product option yet </user_guide/manage_products/options/product_options>`, you'll be able to do it here as well.
 
 #. Click the gear button in the upper right part of the page and choose **Apply to products**. This will open a new page where you'll be able to select which options to apply, and to which products.
 
@@ -90,8 +20,12 @@ Apply a Global Option to Multiple Products
 
 #. Tick the checkboxes of the options you'd like to apply.
 
+#. Click the **Apply** button in the upper right part of the page.
+
+   .. hint::
+
+       If some variants of an option aren't applicable for the product, then exclude those variants via :doc:`allowed or forbidden combinations </user_guide/manage_products/options/exceptions>`.
+
    .. image:: img/apply_to_products_02.png
        :align: center
        :alt: Choosing the options to apply
-
-#. Click the **Apply** button in the upper right part of the page.
