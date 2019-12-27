@@ -21,3 +21,6 @@ This article describes how to create an option for a particular product. Afterwa
    .. image:: img/product_option_creation.png
        :align: center
        :alt: The option creation pop-up window in CS-Cart.
+
+.. meta::
+   :description: How to create a product option in CS-Cart and Multi-Vendor ecommerce CMS?

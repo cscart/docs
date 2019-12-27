@@ -29,3 +29,6 @@ If most of your products need to have the same option, you can create this produ
    .. image:: img/apply_to_products_02.png
        :align: center
        :alt: Choosing the options to apply
+
+.. meta::
+   :description: How to apply an option to multiple products in CS-Cart and Multi-Vendor ecommerce software?

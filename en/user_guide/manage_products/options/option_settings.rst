@@ -74,3 +74,6 @@ If the option type is **Select box**, **Radio group**, or **Check box**, it mean
 .. note::
 
     An option with the **Check box** type only has one variant (ticked checkbox). That variant doesn't have an image and a name.
+
+.. meta::
+   :description: How to configure option variants in CS-Cart and Multi-Vendor online stores?

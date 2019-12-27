@@ -59,3 +59,6 @@ Options of the *Select box*, *Radio group*, or *Check box* types have variants t
       :alt: Option variants on the storefront
 
 * **Earned point modifier/Type**—a positive or negative value that will be added to or subtracted from the original number of reward points that customers receive when they buy the product. The modifier can be either an absolute value or a percentage.
+
+.. meta::
+   :description: What are the settings of product options in CS-Cart and Multi-Vendors ecommerce CMS?

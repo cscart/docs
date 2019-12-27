@@ -50,3 +50,6 @@ In This Section
     option_combinations
     comb_images
     inventory_tracking
+
+.. meta::
+   :description: Documentation about managing options in CS-Cart and Multi-Vendor ecommerce CMS.
