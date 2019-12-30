@@ -37,8 +37,8 @@ In This Section
     :glob:
 
     product_options
-    option_attributes
     global_options
+    option_attributes
     option_settings
     exceptions
     max_file_uploads
@@ -50,3 +50,6 @@ In This Section
     option_combinations
     comb_images
     inventory_tracking
+
+.. meta::
+   :description: Documentation about managing options in CS-Cart and Multi-Vendor ecommerce CMS.

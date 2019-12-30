@@ -14,17 +14,13 @@ Product options appear on the product details page on the storefront as paramete
 
   For example, if you sell shoes and T-shirts, you probably have 2 separate global options called *Size*. Without the internal name they'd look the same in the administration panel, and it'd be hard to guess which of these options to apply to your newly-created product.
 
-  .. note::
-
-      Only :doc:`global options </user_guide/manage_products/options/global_options>` can have internal names. :doc:`Product-specific options </user_guide/manage_products/options/product_options>` don't have internal names.
-
 * **Position**—the position of the product option relatively to other options in the list.
 
 * **Store**—the storefront to which the option originally belongs.
 
-* **Inventory**—if you tick this checkbox, you'll be able to track the quantity of a product with this option selected via option combinations.
+* **Inventory** (obsolete)—if you tick this checkbox, you'll be able to track the quantity of a product with this option selected via :doc:`option combinations <option_combinations>`.
 
-* **Type**—the type of the product option: *Select box*, *Radio group*, *Check box*, *Text*, *Text area*, or *File*. Depending on the type, options may have :doc:`additional properties <../options/option_settings>`.
+* **Type**—the type of the product option: *Select box*, *Radio group*, *Check box*, *Text*, *Text area*, or *File*. Depending on the type, options may have :doc:`additional properties </user_guide/manage_products/options/option_settings>`.
 
 * **Description**—the description of the product option as it appears on the storefront under the question mark sign next to the option name.
    
@@ -63,3 +59,6 @@ Options of the *Select box*, *Radio group*, or *Check box* types have variants t
       :alt: Option variants on the storefront
 
 * **Earned point modifier/Type**—a positive or negative value that will be added to or subtracted from the original number of reward points that customers receive when they buy the product. The modifier can be either an absolute value or a percentage.
+
+.. meta::
+   :description: What are the settings of product options in CS-Cart and Multi-Vendors ecommerce CMS?
