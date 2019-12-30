@@ -8,7 +8,7 @@
         
   * ``/product_name.html``
         
-  * ``/category-name/[subcategory-name/]product-name`` — включает отображение ссылок в виде пути к от родительской категории к категории-потомку.
+  * ``/category-name/[subcategory-name/]product-name`` — включает отображение ссылок в виде пути от родительской категории к категории-потомку.
         
   * ``/category-name/[subcategory-name/]product-name.html``
 
