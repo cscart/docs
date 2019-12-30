@@ -66,13 +66,7 @@
    .. fancybox:: img/hybrid_auth_25.png
        :alt: HybridAuth
 
-#. Откройте настройки модуля, кликнув по названию. 
-
-   .. fancybox:: img/hybrid_auth_26.png
-       :alt: HybridAuth    
-
-   .. fancybox:: img/hybrid_auth_28.png
-       :alt: HybridAuth    
+#. Откройте настройки модуля, кликнув по названию.   
 
    Доступные настройки:
 
@@ -108,8 +102,6 @@
 
 #. Создайте необходимых провайдеров на специальной странице **Веб сайт → Вход через соцсети**.
 
-   .. fancybox:: img/hybrid_auth_29.png
-       :alt: HybridAuth
 
 #. Создайте нового провайдера (сервис) с помощью кнопки **+**.
 
