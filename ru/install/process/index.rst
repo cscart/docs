@@ -4,12 +4,12 @@
 
 #. Запустите "Мастер установки" в браузере по адресу ``ваш_домен``/``папка расположения файлов`` и нажмите **[install]**.
 
-   .. fancybox:: img/install_04.png
+   .. fancybox:: /install/process/img/install_04.png
        :alt: Открываем мастер установки CS-Cart.
 
 #. Прочитайте `лицензионное соглашение CS-Cart <https://www.cs-cart.ru/license-russian-cs-cart.html>`_. Его необходимо принять перед установкой.
 
-   .. fancybox:: img/install_05.png
+   .. fancybox:: /install/process/img/install_05.png
        :alt: Знакомимся с лицензионным соглашением CS-Cart.
 
 #. Заполните данные сервера и администратора интернет-магазина.
@@ -63,15 +63,15 @@
 
          - Установить демонстрационные товары, заказы, акции, новости и баннеры.
 
-   .. fancybox:: img/install_06.png
+   .. fancybox:: /install/process/img/install_06.png
        :alt: process install
 
 #. Нажмите кнопку **Установить** и дождитесь завершения установки (это очень быстро).
 
-   .. fancybox:: img/install_09.png
+   .. fancybox:: /install/process/img/install_09.png
        :alt: Полоса прогресса при установке CS-Cart.
 
-   .. fancybox:: img/install_10.png
+   .. fancybox:: /install/process/img/install_10.png
        :alt: Полоса прогресса при установке CS-Cart.
 
 #. Выберите режим работы вашего интернет-магазина.
@@ -92,10 +92,10 @@
 
            После окончания пробного периода (30 дней) потребуется приобрести лицензию или ввести имеющийся лицензионный ключ, иначе продложить работу не получится.
 
-   .. fancybox:: img/install_12.png
+   .. fancybox:: /install/process/img/install_12.png
        :alt: Выбор режима использования CS-Cart.
 
 #. **Установка завершена.** Теперь нужно :doc:`позаботиться о безопасности магазина </install/security>`.
 
-    .. fancybox:: img/install_13.png
+    .. fancybox:: /install/process/img/install_13.png
         :alt: Приветственный экран в установленном CS-Cart.
