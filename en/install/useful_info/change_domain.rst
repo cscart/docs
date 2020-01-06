@@ -26,9 +26,9 @@ How To: Change Domain Name
                    $config['https_host'] = 'new_domain';
                    $config['https_path'] = '';
 
-#. If you use CS-Cart (not Multi-Vendor):
+#. Edit storefront URL in the admin panel:
 
-   * Go to **Administration → Stores** in the admin panel of your CS-Cart installation.
+   * Go to **Administration → Stores** (in CS-Cart) or **Administration → Storefronts** (in Multi-Vendor).
 
    * Click on the name of the storefront to open its settings.
 
