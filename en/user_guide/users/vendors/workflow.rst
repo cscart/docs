@@ -88,7 +88,7 @@ The :doc:`/user_guide/addons/vendor_debt_payout/index` add-on covers the situati
 
   .. image:: /user_guide/addons/vendor_debt_payout/img/vendor_panel_blocked.png
      :align: center
-     :alt: Vendor plans in Multi-Vendor ecommerce software.
+     :alt: The Vendor Debt Payout add-on blocks some of the admin panel functionality for debtors.
 
 Although this approach requires action from vendors, it allows marketplace owners to use any payment methods, even if they weren't designed with marketplaces in mind.
 
@@ -102,7 +102,7 @@ Direct Customer-to-Vendor Payments
 
 .. note::
 
-    This add-on is available only in Multi-Vendor Plus.
+    This add-on is available only in Multi-Vendor Plus and Ultimate.
 
 The :doc:`/user_guide/addons/direct_customer_to_vendor_payments/index` add-on frees the marketplace owners from the need to distribute money among vendors. Here's how it works:
 
@@ -128,9 +128,9 @@ Direct payments to vendors work best when combined with some other add-ons menti
 
 * :doc:`/user_guide/addons/direct_customer_to_vendor_payments/index` ensure that vendors get their money faster, and that you don't need to bother with distributing the money among vendors.
 
-* :doc:`/user_guide/addons/vendor_debt_payout/index` helps you to collect the periodic and order-specific fees from vendors automatically.
+* :doc:`/user_guide/addons/vendor_debt_payout/index` helps you to collect the money that vendors owe to the marketplace.
 
-  You just set up a payment method, and vendors use it to pay their fees from time to time. If vendors don't pay, they lose access to their admin panel.
+  You just set up a payment method, and vendors use it to pay their fees from time to time. If vendors don't pay, they lose access to most functions of their admin panel.
 
 .. note::
 

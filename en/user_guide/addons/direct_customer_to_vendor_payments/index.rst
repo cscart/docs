@@ -4,7 +4,7 @@ Direct Customer-to-Vendor Payments
 
 .. note::
 
-    This add-on first appeared in version 4.9.1. It is available only in Multi-Vendor Plus and Ultimate.
+    This add-on is available only in Multi-Vendor Plus and Ultimate.
 
 =============
 Functionality
@@ -26,7 +26,7 @@ By default, the money in Multi-Vendor first goes to the marketplace owner, who t
 
   .. note::
 
-      If a vendor's administrator doesn't see the **Administration → Payment methods** menu, it could be because the administrator belongs to a :doc:`vendor user group </user_guide/users/vendors/vendor_group>` without the *View payments* and *Manage payments* privileges. To solve the problem, grant those privileges to the user group.
+      If a vendor's administrator can't create a payment method, it could be because the administrator belongs to a :doc:`vendor user group </user_guide/users/vendors/vendor_group>` without the necessary privileges. To solve the problem, grant full access to payment methods for the user group.
 
   .. image:: img/vendor_payment_methods.png
       :align: center
