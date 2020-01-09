@@ -28,6 +28,7 @@
     boxberry/index
     cities/index
     common_products/index
+    direct_customer_to_vendor_payments/index
     comments_and_reviews/index
     commerceml/index
     form_builder/index
