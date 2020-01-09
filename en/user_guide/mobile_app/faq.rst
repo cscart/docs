@@ -4,7 +4,7 @@ Mobile App for CS-Cart and Multi-Vendor: FAQ
 
 .. important::
 
-    We offer a native mobile app for the customers of your CS-Cart store or Multi-Vendor marketplace. It is written on React Native and supports Android and iOS devices.
+    We offer a native mobile app for the customers of your Multi-Vendor marketplace. It is written on React Native and supports Android and iOS devices.
 
 .. contents::
    :backlinks: none

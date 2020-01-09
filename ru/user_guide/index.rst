@@ -26,9 +26,6 @@
     website/index
     stores/index
     settings/index
-
-.. toctree::
-    :maxdepth: 2
-    :hidden:
-
     mobile_app/faq
+
+
