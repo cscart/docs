@@ -18,6 +18,7 @@
     :titlesonly:
     :glob:
 
+    workflow
     account_balance
     allow_customers_to_apply_for_vendor_account
     create_vendor_account
