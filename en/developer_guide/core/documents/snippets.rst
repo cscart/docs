@@ -2,10 +2,6 @@
 Snippets
 ********
 
-.. note::
-
-    This functionality is available starting with CS-Cart/Multi-Vendor 4.4.1.
-
 A snippet is a separate part of the template that can be used in multiple templates.
 
 The best examples of snippets are a header and a footer that are included in every email notification. Snippets don’t have their own context and variables; they inherit the context and variables from the template that calls the snippet.
@@ -271,3 +267,6 @@ Here are the additional filters and functions:
 .. hint::
 
     Learn more about the template engine from `the official Twig documentation. <http://twig.sensiolabs.org>`_
+
+.. meta::
+   :description: Info for developers on how snippets work in CS-Cart and Multi-Vendor ecommerce software.

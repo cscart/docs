@@ -12,11 +12,9 @@ Check The Settings
 
    * If the value is **New**:
 
-     * Go to **Design → Email templates**.
+     * Go to **Administration → Notifications → Administrator notifications**.
 
-     * Switch to the **Administrator notifications** tab. 
-
-     * Make sure that the necessary **Order notification: X** templates are active.
+     * Make sure that the necessary notifications are enabled.
 
    * If the value is **Old**: 
 
@@ -106,3 +104,6 @@ Via SMTP Server
 #. Make sure that you entered the correct information in the **Settings → E-mails → SMTP server settings** section.
 
 #. Contact your server administrator about the problem with your SMTP server.
+
+.. meta::
+   :description: What to do if admin doesn't receive notifications about orders in CS-Cart and Multi-Vendor ecommerce CMS?

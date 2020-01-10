@@ -2,11 +2,7 @@
 Documents
 *********
 
-.. note::
-
-    This functionality is available starting with CS-Cart/Multi-Vendor 4.4.1.
-
-A document is a set of data that serves to confirm a fact. Here are some examples of documents: *an order invoice*, *a packing slip*, *a gift certificate*, etc. You can edit the templates of such documents in the Administration panel by using the visual editor. Just go to **Design → Documents** and choose a document you want to edit. 
+A document is a set of data that serves to confirm a fact. Here are some examples of documents: *an order invoice*, *a packing slip*, *a gift certificate*, etc. You can edit the templates of such documents in the admin panel by using the visual editor. Just go to **Administration → Notifications → Documents** and choose a document you want to edit. 
 
 A document template is an HTML layout which includes dynamic data such as variables and snippets. The **Twig** template engine is used to render the documents. Developers can use all the features provided by this library.
 
@@ -320,3 +316,6 @@ Complex Logic of Templates
 -------------------------- 
 
 The visual template editor doesn’t fully support the use of branching, cycles, etc. in templates. If you want to use logic when formatting the template, you have to use snippets, which don't have a visual editor.
+
+.. meta::
+   :description: Info for developers on about how Twig document templates work in CS-Cart and Multi-Vendor ecommerce CMS.

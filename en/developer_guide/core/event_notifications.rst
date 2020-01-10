@@ -288,7 +288,7 @@ By default, it is assumed that if an event is present in ``Tygh::$app['event.eve
 
 .. important::
 
-    Notification settings are specified under **Settings → Notifications** *for the entire system*. Notifications can be configured for every type of receivers, for each event and each transport.
+    Notification settings are specified under **Administration → Notifications** *for the entire system*. Notifications can be configured for every type of receivers, for each event and each transport.
 
 The page for configuring notifications shows only the relevant data. It doesn't show:
 

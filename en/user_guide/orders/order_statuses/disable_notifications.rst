@@ -18,25 +18,17 @@ Let's assume that we want to keep sending email notifications about order status
 When Email Template Editor Is Enabled
 =====================================
 
-#. In the Administration panel, go to **Design → Email templates**.
+#. Go to **Administration → Notifications → Administrator notifications**.
 
-#. Switch to the **Administrator notifications** tab.
-
-#. Change the statuses of the desired order status notifications to *Disabled*.
-
-   .. hint::
-
-       The names of email templates related to order statuses begin with ``Order notification:``.
+#. Disable notifications for the specific statuses there.
 
    .. image:: img/disable_status_notification.png
        :align: center
        :alt: Disabling an email notification about a certain order status.
 
-   After that email notifications about orders getting this status won't be sent to the orders department.
-
    .. note::
 
-       If necessary, you can disable specific email notifications for customers as well. This is done on the **Customer notifications** tab.
+       If necessary, you can disable specific email notifications for customers as well. This is done in **Customer notifications**.
 
 ======================================
 When Email Template Editor is Disabled
@@ -55,3 +47,6 @@ When Email Template Editor is Disabled
    .. image:: img/notifications.png
        :align: center
        :alt: Unticking the "Notify orders department" checkbox.
+
+.. meta::
+   :description: How to disable notifications to admins and customers about order statuses in CS-Cart and Multi-Vendor ecommerce software?

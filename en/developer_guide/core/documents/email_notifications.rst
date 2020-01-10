@@ -2,23 +2,19 @@
 Email Notifications
 *******************
 
-.. note::
-
-   Email notification editor is available starting with CS-Cart/Multi-Vendor 4.4.1.
-
-The new CS-Cart feature allows you to edit email notifications in the Administration panel. Just go to **Design → Email templates** and choose the template you want to edit. 
-
-For the sake of convenience, all email templates are divided into two groups:
+You can edit email notifications in the admin panel. Just go to **Administration → Notifications** and choose the template you want to edit. For convenience, all email templates are divided into groups:
 
 * Administrator notifications.
 
-* Customer notifications. 
+* Customer notifications.
+
+* Vendor notifications (only in Multi-Vendor).
 
 We use `Twig <http://twig.sensiolabs.org/>`_ as the template engine: developers can take advantage of the full functionality of the library.
 
-.. note::
+.. important::
 
-    Backward compatibility was preserved: email notifications based on template files will also work perfectly.
+    There is also the old mechanism for sending emails. It is based on Smarty templates which are stored in TPL files and can't be edited from the admin panel. By default, the old mechanism isn't used, because :doc:`the new mechanism is enabled by default </user_guide/look_and_feel/email_templates/enable_email_editor>`.
 
 ==============
 Data Structure
@@ -272,3 +268,6 @@ The selected document will generate a PDF file that will be attached to the mess
   )
 
 Function ``fn_emails_get_order_document_variants`` is described in the **emails/variants.functions** schema.
+
+.. meta::
+   :description: Info for developers on how Twig email notification templates work in CS-Cart and Multi-Vendor ecommerce software.
