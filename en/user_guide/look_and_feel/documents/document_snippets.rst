@@ -20,7 +20,7 @@ Instead you can create a snippet and add that information and conditions there. 
 Manage Snippets
 ===============
 
-The list of snippets for documents is available under **Design → Documents**. Click the name of the required document and switch to the **Code snippets** tab. There you can add, edit, and delete snippets for that specific document.
+The list of snippets for documents is available under **Administration → Notifications → Documents**. Click the name of the required document and switch to the **Code snippets** tab. There you can add, edit, and delete snippets for that specific document.
 
 .. important::
 
@@ -74,7 +74,7 @@ Delete Snippets
 Export or Import Snippets
 -------------------------
 
-All the snippets of a document are exported and imported together with the document in one XML file. The export and import are done on the **Design → Documents** page via the **gear** button. The detailed instructions are available in :doc:`this documentation article <document_export_and_import>`.
+All the snippets of a document are :doc:`exported and imported together with the document <document_export_and_import>` in one XML file.
 
 .. important::
 

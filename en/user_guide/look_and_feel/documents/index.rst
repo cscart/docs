@@ -4,11 +4,7 @@ Documents
 
 CS-Cart and Multi-Vendor come with a built-in editor for documents, such as invoices, packing slips, and gift certificates. You can customize the documents according to your needs, or import the documents that were created and exported by someone else.
 
-To access the document editor, go to **Design → Documents**.
-
-.. note::
-
-    If you don't see this menu item, :doc:`you may need to enable the editor first. <enable_document_editor>`
+To access the document editor, go to **Administration → Notifications → Documents**.
 
 .. contents::
    :backlinks: none
@@ -135,10 +131,10 @@ In This Section
     :titlesonly:
     :glob:
 
-    enable_document_editor
     document_export_and_import
     tweak_and_send_invoice
     document_snippets
+    enable_document_editor
 
 .. meta::
    :description: Where do I edit invoices, packing slips, and other documents my CS-Cart online store or Multi-Vendor marketplace?

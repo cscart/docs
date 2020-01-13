@@ -14,7 +14,7 @@ How To: Export and Import Documents
 Export Documents
 ================
 
-1. Go to **Design → Documents**.
+1. Go to **Administration → Notifications → Documents**.
 
 2. Tick the checkboxes next to the documents you want to export.
 
@@ -26,7 +26,7 @@ Export Documents
 Import Documents
 ================
 
-1. Go to **Design → Documents**.
+1. Go to **Administration → Notifications → Documents**.
 
 2. Click the **gear** button in the top right corner of the page.
 

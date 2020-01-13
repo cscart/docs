@@ -1,10 +1,10 @@
-******************************
-How To: Enable Document Editor
-******************************
+*********************************
+If Document Editor Doesn't Appear
+*********************************
 
-By default, the document editor is disabled for those who upgrade from earlier versions of CS-Cart/Multi-Vendor to 4.4.1 via the Upgrade Center. This was done to preserve maximum compatibility with the third-party add-on you might have.
+If you don’t see **Documents** when you go to **Administration → Notifications** menu, the editor is probably disabled. This can happen if you upgrade from the versions of CS-Cart/Multi-Vendor earlier than 4.4.1 via the Upgrade Center. We didn't enable the editor automatically in existing installations to preserve maximum compatibility with the third-party add-on you might have.
 
-If you don’t see **Documents** when you open the **Design** menu, the editor is probably disabled. To enable it, follow these steps:
+To enable the editor, follow these steps:
 
 #. Go to **Settings → Appearance**.
 
@@ -16,7 +16,7 @@ If you don’t see **Documents** when you open the **Design** menu, the editor i
 
 .. important::
 
-    Once you do this, the settings that concern email notifications will disappear from **Administration → Statuses → Order statuses**. You’ll be able to manage email notifications about order status changes under **Design → Email templates**.
+    Once you do this, the settings that concern email notifications will disappear from **Administration → Statuses → Order statuses**. You’ll be able to manage email notifications about order status changes under **Administration → Notifications**.
 
 .. image:: img/template_mode.png
     :align: center
