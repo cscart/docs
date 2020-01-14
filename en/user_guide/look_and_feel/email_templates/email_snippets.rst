@@ -32,7 +32,7 @@ There are two snippets that exist by default: **Header** and **Footer**. They ar
 Manage Snippets
 ===============
 
-The list of snippets for email notifications is available under **Design → Email templates** on the **Code snippets** tab. This is the page where you add, edit, and delete snippets.
+The list of snippets for email notifications is available under **Administration → Notifications → Code snippets**. This is the page where you add, edit, and delete snippets.
 
 .. image:: img/email_snippets.png
     :align: center
@@ -82,7 +82,7 @@ Delete Snippets
 Export or Import Snippets
 -------------------------
 
-All your snippets are exported and imported together with email templates in one XML file. Click the gear button in the top right corner of the page and choose **Import** or **Export**. Learn more in :doc:`the article about exporting and importing email templates <email_template_export_and_import>`.
+All your snippets are :doc:`exported and imported together with email templates <email_template_export_and_import>` in one XML file.
 
 .. important::
 

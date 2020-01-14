@@ -1,10 +1,10 @@
-************************************
-How To: Enable Email Template Editor
-************************************
+************************************************
+What if Changes to Templates Don't Affect Emails
+************************************************
 
-By default, the email template editor is disabled for those who upgrade from earlier versions of CS-Cart/Multi-Vendor to 4.4.1 via the Upgrade Center. This is done to preserve maximum compatibility with the third-party add-on you might have.
+This problem can occur when you upgrade from CS-Cart/Multi-Vendor earlier than 4.4.1 via the Upgrade Center. Older versions had email templates based on TPL-files, and those templates aren't affected by the changes in the admin panel. By default, we didn't enable the new templates and the editor automatically, to preserve backward compatibility with any third party add-ons you might have.
 
-If you don’t see **Email templates** when you open the **Design** menu, the editor is probably disabled. To enable it, follow these steps:
+To make your changes affect emails:
 
 #. Go to **Settings → Appearance**.
 
@@ -16,7 +16,7 @@ If you don’t see **Email templates** when you open the **Design** menu, the ed
 
 .. important::
 
-    Once you do this, the settings that concern email notifications will disappear from **Administration → Statuses → Order statuses**. You’ll be able to manage email notifications about order status changes under **Design → Email templates**.
+    Once you do this, the settings that concern email notifications will disappear from **Administration → Statuses → Order statuses**. You’ll be able to manage email notifications about order status changes under **Administration → Notifications**.
 
 .. image:: img/template_mode.png
     :align: center

@@ -4,12 +4,6 @@ Email Templates
 
 CS-Cart and Multi-Vendor come with a built-in editor for the templates of email notifications. You can customize these templates according to your needs, or import the templates that were created and exported by someone else.
 
-To access the email template editor, go to **Design → Email templates**.
-
-.. note::
-
-    If you don't see this menu item, :doc:`you may need to enable the editor first. <enable_email_editor>`
-
 .. contents::
    :backlinks: none
    :local:
@@ -18,19 +12,15 @@ To access the email template editor, go to **Design → Email templates**.
 List of Email Notification Types
 ================================
 
-The editor contains the list with all the types of email notifications that exist in your store. Please note that third party add-ons can add their own notification types, which may or may not appear on the list.
-
-For your convenience the notifications are split into 2 tabs:
+To access the email template editor, go to **Administration → Notifications**. For your convenience the notifications are split into groups:
 
 * Administrator notifications.
 
 * Customer notifications.
 
-The third tab is reserved for code snippets—parts of templates that can be easily inserted into any email notification.
+* Vendor notifications (only in Multi-Vendor).
 
-.. note::
-
-    This page also allows you to :doc:`import and export email notifications and snippets <email_template_export_and_import>` via the **gear** button.
+There is also a group for code snippets—parts of templates that can be easily inserted into any email notification.
 
 .. image:: img/list_of_email_templates.png
     :align: center
@@ -62,11 +52,11 @@ The main area in the middle of the page is where you edit a notification. Here�
 
 * **Status**—determines whether or not to send the email notifications of this type.
 
-* **Attach a PDF document**—determines which :doc:`document type <../documents/index>` (if any) to attach to the email notification as a PDF file.
+* **Attach a PDF document**—determines which :doc:`document type </user_guide/look_and_feel/documents/index>` (if any) to attach to the email notification as a PDF file.
 
   .. note::
 
-      You can only attach PDF documents to email notifications about order status changes. The names of those notifications begin with **“Order notification:”**.
+      You can only attach PDF documents to email notifications about order status changes.
 
 ---------------------------------
 2. Variables, Snippets, Documents
@@ -115,9 +105,9 @@ In This Section
     :titlesonly:
     :glob:
 
-    enable_email_editor
     email_template_export_and_import
     email_snippets
+    enable_email_editor
 
 .. meta::
    :description: Where do I edit emails sent by my CS-Cart online store or Multi-Vendor marketplace?

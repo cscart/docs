@@ -14,23 +14,31 @@ How To: Export and Import Email Templates and Snippets
 Export Email Templates & Snippets
 =================================
 
-1. Go to **Design → Email templates**.
+#. Go to **Administration → Notifications**.
 
-2. Click the **gear** button in the top right corner of the page.
+#. Select either **Customer notifications**, or **Administrator notifications** (it doesn't matter which).
 
-3. Choose **Export**. You’ll be offered to download an XML file with all the administrator notifications, customer notifications, and code snippets.
+#. Scroll down to the end of the page and click **See the full list of email templates**.
+
+#. Click the **gear** button in the upper right part of the page.
+
+#. Choose **Export**. You’ll be offered to download an XML file with all the administrator notifications, customer notifications, and code snippets.
 
 =================================
 Import Email Templates & Snippets
 =================================
 
-1. Go to **Design → Email templates**.
+#. Go to **Administration → Notifications**.
 
-2. Click the **gear** button in the top right corner of the page.
+#. Select either **Customer notifications**, or **Administrator notifications** (it doesn't matter which).
 
-3. Choose **Import**.
+#. Scroll down to the end of the page and click **See the full list of email templates**.
 
-4. Depending on the location of the XML file you’d like to import, click one of the 3 buttons:
+#. Click the **gear** button in the upper right part of the page.
+
+#. Choose **Import**.
+
+#. Depending on the location of the XML file you’d like to import, click one of the 3 buttons:
 
    * **Local**—browse your local machine and select an XML file to import.
 
@@ -38,7 +46,7 @@ Import Email Templates & Snippets
 
    * **URL**—specify the direct link to the XML file.
 
-5. Click **Import**. The email templates and snippets from the XML file will be imported to your store.
+#. Click **Import**. The email templates and snippets from the XML file will be imported to your store.
 
 .. image:: img/select_xml.png
     :align: center
