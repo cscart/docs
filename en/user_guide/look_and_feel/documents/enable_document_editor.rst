@@ -14,13 +14,13 @@ To enable the editor, follow these steps:
 
 #. Click **Save** in the top right corner of the page.
 
-.. important::
+   .. important::
 
-    Once you do this, the settings that concern email notifications will disappear from **Administration → Statuses → Order statuses**. You’ll be able to manage email notifications about order status changes under **Administration → Notifications**.
+       Once you do this, the settings that concern email notifications will disappear from **Administration → Statuses → Order statuses**. You’ll be able to manage email notifications about order status changes under **Administration → Notifications**.
 
-.. image:: img/template_mode.png
-    :align: center
-    :alt: The "Email template mode" setting.
+   .. image:: /user_guide/look_and_feel/email_templates/img/template_mode.png
+       :align: center
+       :alt: The "Email template mode" setting.
 
 .. meta::
    :description: What should I do if I don't see document editor in CS-Cart or Multi-Vendor ecommerce platform?

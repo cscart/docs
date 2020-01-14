@@ -6,10 +6,6 @@ How To: Export and Import Email Templates and Snippets
    :backlinks: none
    :local:
 
-.. image:: img/export_and_import_email_templates.png
-    :align: center
-    :alt: Use the gear button on the list of email notifications to export and import them.
-
 =================================
 Export Email Templates & Snippets
 =================================
@@ -23,6 +19,10 @@ Export Email Templates & Snippets
 #. Click the **gear** button in the upper right part of the page.
 
 #. Choose **Export**. You’ll be offered to download an XML file with all the administrator notifications, customer notifications, and code snippets.
+
+   .. image:: img/export_and_import_email_templates.png
+       :align: center
+       :alt: Use the gear button on the list of email notifications to export and import them.
 
 =================================
 Import Email Templates & Snippets
@@ -48,9 +48,9 @@ Import Email Templates & Snippets
 
 #. Click **Import**. The email templates and snippets from the XML file will be imported to your store.
 
-.. image:: img/select_xml.png
-    :align: center
-    :alt: Choosing the XML file to import.
+   .. image:: img/select_xml.png
+       :align: center
+       :alt: Choosing the XML file to import.
 
 =====
 Notes

@@ -6,33 +6,33 @@ How To: Export and Import Documents
    :backlinks: none
    :local:
 
-.. image:: img/document_export_and_import.png
-    :align: center
-    :alt: Use the gear button to export and import documents.
-
 ================
 Export Documents
 ================
 
-1. Go to **Administration → Notifications → Documents**.
+#. Go to **Administration → Notifications → Documents**.
 
-2. Tick the checkboxes next to the documents you want to export.
+#. Tick the checkboxes next to the documents you want to export.
 
-3. Click the **gear** button in the top right corner of the page.
+#. Click the **gear** button in the top right corner of the page.
 
-4. Choose **Export selected**. You’ll be offered to download an XML file with all the selected documents and their snippets.
+#. Choose **Export selected**. You’ll be offered to download an XML file with all the selected documents and their snippets.
+
+   .. image:: img/document_export_and_import.png
+       :align: center
+       :alt: Use the gear button to export and import documents.
 
 ================
 Import Documents
 ================
 
-1. Go to **Administration → Notifications → Documents**.
+#. Go to **Administration → Notifications → Documents**.
 
-2. Click the **gear** button in the top right corner of the page.
+#. Click the **gear** button in the top right corner of the page.
 
-3. Choose **Import**.
+#. Choose **Import**.
 
-4. Depending on the location of the XML file you’d like to import, click one of the 3 buttons:
+#. Depending on the location of the XML file you’d like to import, click one of the 3 buttons:
 
    * **Local**—browse your local machine and select an XML file to import.
 
@@ -40,11 +40,11 @@ Import Documents
 
    * **URL**—specify the direct link to the XML file.
 
-5. Click **Import**. The documents and snippets from the XML file will be imported to your store.
+#. Click **Import**. The documents and snippets from the XML file will be imported to your store.
 
-.. image:: img/select_xml.png
-    :align: center
-    :alt: Choosing the XML file to import.
+   .. image:: img/select_xml.png
+       :align: center
+       :alt: Choosing the XML file to import.
 
 =====
 Notes

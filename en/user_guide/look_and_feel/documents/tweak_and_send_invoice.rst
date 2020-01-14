@@ -6,22 +6,22 @@ By default, a PDF file with the invoice is attached to email notifications that 
 
 You can also make minor changes to a specific invoice and send it in a separate email. To do that, follow these steps:
 
-1. In the Administration panel, go to **Orders → Orders**.
+#. In the Administration panel, go to **Orders → Orders**.
 
-2. Click on the order for which you’d like to modify and send the invoice.
+#. Click on the order for which you’d like to modify and send the invoice.
 
-3. Click the **gear** button in the top right corner.
+#. Click the **gear** button in the top right corner.
 
-4. Choose **Tweak and send invoice**.
+#. Choose **Tweak and send invoice**.
 
-.. image:: img/tweak_invoice.png
-    :align: center
-    :alt: You can change invoices for individual orders and send them.
+   .. image:: img/tweak_invoice.png
+       :align: center
+       :alt: You can change invoices for individual orders and send them.
 
-5. The editing page will open, and you’ll be able to edit the following things:
+#. The editing page will open, and you’ll be able to edit the following things:
 
    .. note::
-      
+
        If a document is directly embeded into the body of an email, it adopts the style of this email. This means that the document on preview might differ from the document in the email.
 
    * **Subject**—the subject of the email that will contain the invoice.
@@ -36,12 +36,12 @@ You can also make minor changes to a specific invoice and send it in a separate 
 
    * **Attach a PDF document**—if you tick this checkbox, then the invoice will also be attached to the email as a PDF file.
 
-6. When you're ready, click **Send**. This will send the invoice to the specified email address.
+#. When you're ready, click **Send**. This will send the invoice to the specified email address.
 
-.. warning::
+   .. warning::
 
-    Once you leave the editing page or send the invoice, your changes will be lost. If you want to apply some changes to all your future invoices, please use :doc:`the document editor <index>`.
+       Once you leave the editing page or send the invoice, your changes will be lost. If you want to apply some changes to all your future invoices, please use :doc:`the document editor <index>`.
 
-.. image:: img/invoice_tweaking_interface.png
-    :align: center
-    :alt: The invoice you twweak already has actual data instead of variables.
+   .. image:: img/invoice_tweaking_interface.png
+       :align: center
+       :alt: The invoice you twweak already has actual data instead of variables.

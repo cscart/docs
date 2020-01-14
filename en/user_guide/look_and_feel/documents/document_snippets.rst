@@ -34,9 +34,9 @@ The list of snippets for documents is available under **Administration → Notif
 Add/Edit a Snippet
 ------------------ 
 
-1. To add a new snippet, click the **+** button in the top right corner of the screen. To edit an existing snippet, click on its name.
+#. To add a new snippet, click the **+** button in the top right corner of the screen. To edit an existing snippet, click on its name.
 
-2. A popup window will open. Edit the snippet here:
+#. A popup window will open. Edit the snippet here:
 
    * **Name**—the name of the snippet. It exists mostly for convenience. Multiple snippets can have the same name.
 
@@ -46,15 +46,15 @@ Add/Edit a Snippet
 
    * **Status**—a snippet can be *Active* or *Disabled*. Disabled snippets don’t change a document in any way and don’t appear among available snippets when you edit the document.
 
-3. Once you are done editing the snippet, click **Create** (or **Save**, if the snippet already exists).
+#. Once you are done editing the snippet, click **Create** (or **Save**, if the snippet already exists).
 
-.. note::
+   .. note::
 
-    If you edit an existing snippet, the **Restore** button will appear next to the **Save** button. The **Restore** button returns the snippet to its initial state (as it was when the snippet was created).
+       If you edit an existing snippet, the **Restore** button will appear next to the **Save** button. The **Restore** button returns the snippet to its initial state (as it was when the snippet was created).
 
-.. image:: img/add_document_snippet.png
-    :align: center
-    :alt: Creating a new snippet for a document.
+   .. image:: img/add_document_snippet.png
+       :align: center
+       :alt: Creating a new snippet for a document.
 
 ---------------
 Delete Snippets
@@ -64,11 +64,11 @@ Delete Snippets
 
 * To delete multiple snippets at once:
 
-  1. Tick the checkboxes next to the snippets you want to delete.
+  #. Tick the checkboxes next to the snippets you want to delete.
 
-  2. Click the **gear** button in the top right corner of the page.
+  #. Click the **gear** button in the top right corner of the page.
 
-  3. Choose **Delete selected**.
+  #. Choose **Delete selected**.
 
 -------------------------
 Export or Import Snippets
