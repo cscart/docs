@@ -109,7 +109,7 @@ The full list of supported fields is given below (mandatory fields are marked wi
     *   -   id_path
         -   Parent category ID chain
         -   Generated automatically
-        -   Comma-separated sequence of category IDs
+        -   A sequence of category IDs separated by slashes
     *   -   lang_code
         -   Language code
         -   Default language code
