@@ -36,6 +36,10 @@ By default, the money in Multi-Vendor first goes to the marketplace owner, who t
 
 * Separate checkouts for vendors mean that each vendor can now set up own :doc:`promotions </user_guide/manage_products/promotions/index>`.
 
+  .. important::
+
+      If you activate the add-on, then promotions created by marketplace admins won't apply. Only the promotions created by vendors will apply.
+
   .. image:: img/vendor_promotions.png
       :align: center
       :alt: Vendors run their own promotions.
