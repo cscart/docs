@@ -66,7 +66,7 @@ And that's it! The add-on is now "aware" that it should use the hook, and CS-Car
 Extending one add-on with another
 =================================
 
-If it is necessary to extend one add-on with another, now it is possible to select all hook functionality inside the add-on. For example, the *News and emails* add-on uses *SEO*. Not to spread the SEO functionality across all the *News ans emails* functionality, it can be passed to a hook:
+If it is necessary to extend one add-on with another, now it is possible to select all hook functionality inside the add-on. For example, the *News and emails* add-on uses *SEO*. Not to spread the SEO functionality across all the *News and emails* functionality, it can be passed to a hook:
 
 *design/backend/templates/addons/news_and_emails/addons/seo/hooks/*
 
