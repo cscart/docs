@@ -1,0 +1,181 @@
+************************
+CS-Cart 4.11.3 Changelog
+************************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Ask seller a question: Notifications about new messages now appear in the Notification Center.
+
+[+] Add-ons: Warehouses [Beta]: The ability to specify all rate areas in one click for the "Ship to" setting of a store/warehouse  was added.
+
+[+] Orders: Buttons for repeating an order, printing an invoice, and searching for ordered products were added to the order list on the storefront.
+
+[+] Settings: Appearance: Image previewers: Swiper was added as an alternate image previewer.
+
+[+] Storefronts: A setting for restricting access to storefront for customers who haven't signed in was added.
+
+[+] Users: Orders: Info about created and paid orders and total spendings was added to the list of customers and the customer page in the admin panel.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: Product variations: Now “Variations as one product” have the "Select a variation" button on the product list instead of "Add to cart". That way customers are more likely to choose the correct variation.
+
+[*] Design: Checkout: The "Skip payment" option for administrators at checkout now appears only in the development mode.
+
+[*] Design: Themes: Selecting another theme now clears the cache completely.
+
+[*] Filters: During filter creation, it is now easier to select the feature that the filter will be based on.
+
+[*] Payment methods: Alpha Bank: Integration was updated.
+
+[*] Privileges: Abandoned carts: Access to "Abandoned carts" is now granted by granting access to orders, not to users.
+
+[*] Security: Changes to copyright.txt and changelog.txt files are no longer taken into account by the file changes detector.
+
+[*] Storefronts: Admin panel: If an administrator clicks on the cart icon in the upper left corner while in the "All stores" mode, he or she will be taken to the first active storefront.
+
+[*] Theme editor: Checkout: The colors on the checkout page are now customizable.
+
+[*] Users: The registration date on the list of users in the admin panel was replaced with the date of last sign-in.
+
+=========
+Bug Fixes
+=========
+
+[!] Abandoned carts: Storefronts:  When an order was created through the "Abandoned / live carts" menu, the abandoned cart was not deleted if the product was added via a non-default storefront. Fixed.
+
+[!] Add-ons: Advanced products import: PHP Notices occurred when an import preset belonging to a disabled vendor was edited. Fixed.
+
+[!] Add-ons: Ask seller a question: Sign in: If the login and password were entered incorrectly when the "Ask seller a question" add-on was active, the message about incorrect data was not displayed. Fixed.
+
+[!] Add-ons: Call requests: Storefronts: When an order was placed via the "Call requests" add-on, the order appeared in the admin panel for all storefronts. Fixed.
+
+[!] Add-ons: Comment and reviews: It was impossible to leave a review on the storefront that a product was shared with. Fixed.
+
+[!] Add-ons: Comments and reviews: Orders: "New post" button had incorrect name. Fixed.
+
+[!] Add-ons: Comments and reviews: Saving an order could forbid customer to initiate communication, even though it was allowed in the add-on's settings. Fixed.
+
+[!] Add-ons: Maps and geolocation: Product shipping estimate was not recalculated after location change. Fixed.
+
+[!] Add-ons: Product variations: Customer also bought: The block with products bought together with this product was shown only for a child variation. Fixed.
+
+[!] Add-ons: Product variations: In some cases, the product page on the storefront scrolled to the tab with variations when opened. Fixed.
+
+[!] Add-ons: Product variations: Names of child variations were not synced with the default variations after import. Fixed.
+
+[!] Add-ons: Product variations: Storefronts: It was impossible to change the prices of child "variations as one product" on the storefronts they were shared with. Fixed.
+
+[!] Add-ons: Required products: Product was not added to the required products list if it was found via the advanced search. Fixed.
+
+[!] Add-ons: Social login: It was impossible to sign in via Twitter due to changes on the Twitter side. Fixed.
+
+[!] Add-ons: Social buttons: Product description was truncated incorrectly for social networks, causing a JS error.  Fixed.
+
+[!] Add-ons: Step-by-Step Checkout [Deprecated]: Customer location was always reset to the default one after the add-on was disabled. Fixed.
+
+[!] Add-ons: Stores and pickup points: A PHP Notice could occur when an order was placed with a "Pick up from store" shipping method. Fixed.
+
+[!] Add-ons: Stores and pickup points: Cities that contained shared stores and pickup points did not appear in the list of stores and pickup points on the storefront. Fixed.
+
+[!] Add-ons: Stores and pickup points: In some cases, the shipping method did not appear at checkout. Fixed.
+
+[!] Add-ons: Stores and pickup points: Warehouses [Beta]: The list of pickup points and warehouses in the admin panel was improved.
+
+[!] Add-ons: Stripe: Stripe Connect: Existing customers could be charged twice when placing an order as guest. Fixed.
+
+[!] Add-ons: Stripe: Stripe Connect: Payment methods that used Stripe or Stripe Connect couldn't be used to pay for the same order again. Fixed.
+
+[!] Add-ons: Suppliers: When the Suppliers add-on was active, cloning a product resulted in a PHP Notice. Fixed.
+
+[!] Add-ons: Warehouses [Beta]: Importing product quantities to a specific warehouse could result in a fatal error in some cases. Fixed.
+
+[!] Add-ons: Warehouses [Beta]: Translation of table heading wasn't displayed in the mobile version. Fixed.
+
+[!] Add-ons: Product variations: Comments & reviews: Customer is not allowed to post a product review if bought and chosen variation are different and only buyers can leave the review. Fixed.
+
+[!] Add-ons: Product variations: Export/Import: Database error occurred during variation import, if the product feature that the variation was based on didn't exist in the store and was imported together with the variation. Fixed.
+
+[!] Add-ons: RMA: Taxes for shipping method was not recalculated during order recalculating when request status was changed.
+
+[!] Admin panel: Orders: Product could not be added to order in the admin panel in some cases. Fixed.
+
+[!] Cart: Tax was not included in total cost, if shipping estimation was forbidden on cart page. Fixed.
+
+[!] Core: Add-ons: When "the dangerous way" of installing add-on from the archive was used, files from the design/themes/templates/addons directory were deleted without being replaced with the new uploaded files. Fixed.
+
+[!] Core: Cache: Add-on settings were cached incorrectly in the admin panel. Fixed.
+
+[!] Design: Admin panel: Notifications could appear over gear menu. Fixed.
+
+[!] Design: Bottom admin toolbar: RTL: Bottom admin toolbar wasn't adapted for RTL. Fixed.
+
+[!] Design: Features: A feature that was displayed as a checkbox could have a value that was displayed as the tooltip of that checkbox. Fixed.
+
+[!] Design: Product options: Big picture: Options were displayed in two lines, even if they could fit in one line. Fixed.
+
+[!] Design: Theme Editor: Error 404 occurred in some cases when the Theme editor was being closed. Fixed.
+
+[!] Design: Upgrade center: The "Show more" button was overlapping with the list of files. Fixed.
+
+[!] Edit content on-site: Error occurred when the "Place order" text was edited on checkout page. Fixed.
+
+[!] Export/Import: The link in the notification about wrong export range led to a page that returned error 403. Fixed.
+
+[!] Filters: Search: On in the vendor mode, the "Search" button was not displayed in the Products-Filters page. Fixed.
+
+[!] JS: WYSIWYG: Redactor II: Deleting symbols from a text resulted in the deletion of styles as well. Fixed.
+
+[!] Layouts: Export/Import: After a layout was saved, its name was added to the file name of any exported layout. Fixed.
+
+[!] Maps and geolocation: The Google map could not be moved with two fingers. Fixed.
+
+[!] Multi-Vendor: Add-ons: Stores and pickup points: The "Pick up from store" shipping method was working wrong, especially in case when customer bought simultaneously from multiple vendors. Fixed.
+
+[!] Multi-Vendor: Add-ons: Stripe Connect: RMA: Funds couldn't be returned via Stripe when 3-D Secure was disabled for Stripe Connect-based payment methods. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor data premoderation: Vendor wasn't notified about further premoderation when updating his/her description only. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor data premoderation: When the "Vendor data premoderation" add-on was active, the bulk products editing page was displayed incorrectly. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor debt payout: Currency selected in the vendor panel did not affect the currency of the cart. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor debt payout: Vendor's debt could be left unresolved even after the full payment. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor plans: Vendor debt payout: Cart promotion could be applied to vendor debt payout. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor plans: Commission could be calculated incorrectly when the primary currency in the store had thousands separator configured. Fixed.
+
+[!] Multi-Vendor: Bottom admin toolbar: Fatal error occurred when an admin tried to go from the vendor editing page to the vendor admin panel. Fixed.
+
+[!] Multi-Vendor: Vendor Payouts: The negative amount of income in the vendor's panel was not displayed correctly. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors: Wishlist: The button for adding products to the wish list did not work for the product offer of other sellers. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors: Required products: Required products were added only for the main product, not for vendors' offers. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors: When an administrator imported a common product, one more common product was created. Fixed.
+
+[!] Multi-Vendor Ultimate: Add-ons: Common products for vendors: When a storefront displayed only some of the vendors, then the offers of all those vendors were shown as separate products. Fixed.
+
+[!] Orders: Shipments: After a shipment was created, customer first name and last name were missing in it. Fixed.
+
+[!] Payment methods: Sage Pay: Mail: Email notifications were not sent when an order was paid. Fixed.
+
+[!] Products: Categories: The change of the product's main category was not saved during product editing. Fixed.
+
+[!] Products: Images: Opening and then closing the previewer resulted in the page not scrolling in IE11. Fixed.
+
+[!] Storefronts: Add-ons: Newsletters: Export/Import: The page for export/import of subscribers was returning cycling redirect. Fixed.
+
+[!] Storefronts: Promotions: A PHP notice occurred when a promotion was saved while a storefront was selected. Fixed.
+
+[!] Storefronts: Regions: If a storefront had a list of countries it was meant for, then only customers from the first country in the list were redirected to it. Fixed.
+
+[!] Storefronts: When an administrator selected another storefront in the admin panel, a PHP Notice could occur in some cases. Fixed.
+
+[!] Themes: Theme could be deleted, even if it was active on one of the storefronts. Fixed.
