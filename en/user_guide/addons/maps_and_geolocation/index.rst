@@ -50,7 +50,7 @@ The **Maps and Geolocation** add-on is installed :doc:`like any other add-on </u
 
         There is also another way: go directly to `Google Developers Console <https://console.developers.google.com>`_ and manually enable *Geocoding API*, *Places API*, *Maps JavaScript API*, *Geolocation API*, and *Maps Static API*. In this case you'll need to manually set up billing for your project (for example, link a credit card), or else the map won't work.
 
-  * **Yandex** can be chosen instead of Google. But for the maps and geolocation to work, you will need to create an API key for yourself on the Yandex website. Go to your `Yandex developer accoun <thttps://developer.tech.yandex.ru/?from=club/>`_ and get an API key for "JavaScript API and HTTP Geocoder".
+  * **Yandex** can be chosen instead of Google. But for the maps and geolocation to work, you will need to create an API key for yourself on the Yandex website. Go to your `Yandex developer account <https://developer.tech.yandex.ru/?from=club/>`_ and get an API key for "JavaScript API and HTTP Geocoder".
 
   When you get an API key, just add it to the corresponding tab of the add-on's settings and save the changes.
 
