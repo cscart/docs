@@ -36,15 +36,27 @@ New Classes
 New Functions
 -------------
 
-#. ``fn_get_companies_active_products_count(array $company_ids = [])``—Gets products count by companies.
+#. Get product count by companies::
 
-#. ``fn_get_company_root_admin_user_id($company_id)``—Gets user with parameter 'is_root' for specified company.
+     fn_get_companies_active_products_count(array $company_ids = [])
 
-#. ``\Tygh\Addons\AXmlScheme::getInternalTemplates(), \Tygh\Addons\XmlScheme3::getInternalTemplates()``—Gets on-site notification templates.
+#. Get user with parameter 'is_root' for specified company::
 
-#. ``\Tygh\NotificationsCenter\IFactory::getNotificationBuilder($type), \Tygh\NotificationsCenter\Factory::getNotificationBuilder($type)``—Gets builder to create on-site notifications.
+     fn_get_company_root_admin_user_id($company_id)
 
-#. ``fn_rma_get_returns($params, $items_per_page = 0, $lang_code = CART_LANGUAGE)``—Gets return requests.
+#. Get on-site notification templates::
+
+     \Tygh\Addons\AXmlScheme::getInternalTemplates()
+     \Tygh\Addons\XmlScheme3::getInternalTemplates()
+
+#. Get builder to create on-site notifications::
+
+     \Tygh\NotificationsCenter\IFactory::getNotificationBuilder($type)
+     \Tygh\NotificationsCenter\Factory::getNotificationBuilder($type)``
+
+#. Get return requests::
+
+     fn_rma_get_returns($params, $items_per_page = 0, $lang_code = CART_LANGUAGE)
 
 ============
 Hook Changes
@@ -54,7 +66,7 @@ Hook Changes
 New Hooks
 ---------
 
-#. ``fn_set_hook('vendor_plan_after_delete', $this);``—Executes after a vendor plan is deleted, allows you to execute additional actions with the related entities.
+#. ``fn_set_hook('vendor_plan_after_delete', $this);``—executes after a vendor plan is deleted, allows you to execute additional actions with the related entities.
 
 -------------
 Changed Hooks
