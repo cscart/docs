@@ -16,21 +16,21 @@ Core Changes
 New Classes
 -----------
 
-#. ``\Tygh\NotificationsCenter\NotificationBuilders\INotificationBuilder``—Interface INotificationBuilder describes the class responsible for building an on-site notification from the parameters.
+#. ``\Tygh\NotificationsCenter\NotificationBuilders\INotificationBuilder``—interface INotificationBuilder describes the class responsible for building an on-site notification from the parameters.
 
-#. ``\Tygh\NotificationsCenter\NotificationBuilders\DBTemplateNotificationBuilder``—Class DBTemplateNotificationBuilder builds on-site notifications based on the Twig templates from the database.
+#. ``\Tygh\NotificationsCenter\NotificationBuilders\DBTemplateNotificationBuilder``—class DBTemplateNotificationBuilder builds on-site notifications based on the Twig templates from the database.
 
-#. ``\Tygh\NotificationsCenter\NotificationBuilders\DefaultNotificationBulder``—Class DefaultNotificationBulder builds on-site notifications from their data.
+#. ``\Tygh\NotificationsCenter\NotificationBuilders\DefaultNotificationBulder``—class DefaultNotificationBulder builds on-site notifications from their data.
 
-#. ``\Tygh\Template\Internal\Context``—The context class for on-site notifications.
+#. ``\Tygh\Template\Internal\Context``—the context class for on-site notifications.
 
-#. ``\Tygh\Template\Internal\Exim``—The class that implements the logic of import and export of on-site notification templates.
+#. ``\Tygh\Template\Internal\Exim``—the class that implements the logic of import and export of on-site notification templates.
 
-#. ``\Tygh\Template\Internal\Repository``—The repository class that implements the logic of interaction with the storage for on-site notification templates.
+#. ``\Tygh\Template\Internal\Repository``—the repository class that implements the logic of interaction with the storage for on-site notification templates.
 
-#. ``\Tygh\Template\Internal\Service``—The service class that implements the logic of on-site notification template management.
+#. ``\Tygh\Template\Internal\Service``—the service class that implements the logic of on-site notification template management.
 
-#. ``\Tygh\Template\Internal\Template``—The entity class of an on-site notification template.
+#. ``\Tygh\Template\Internal\Template``—the entity class of an on-site notification template.
 
 -------------
 New Functions
@@ -52,7 +52,7 @@ New Functions
 #. Get builder to create on-site notifications::
 
      \Tygh\NotificationsCenter\IFactory::getNotificationBuilder($type)
-     \Tygh\NotificationsCenter\Factory::getNotificationBuilder($type)``
+     \Tygh\NotificationsCenter\Factory::getNotificationBuilder($type)
 
 #. Get return requests::
 
@@ -75,23 +75,23 @@ Changed Hooks
 ::
 
   // Old:
-  fn_set_hook('additional_fields_in_search', $params, $fields, $sortings, $condition, $join, $sorting, $group_by, $tmp, $piece, $having);
+  fn_set_hook('additional_fields_in_search', $params, $fields, $sortings, $condition, $join, $sorting, $group_by, $tmp, $piece, $having)
 
   // New:
-  fn_set_hook('additional_fields_in_search', $params, $fields, $sortings, $condition, $join, $sorting, $group_by, $tmp, $piece, $having, $lang_code);
+  fn_set_hook('additional_fields_in_search', $params, $fields, $sortings, $condition, $join, $sorting, $group_by, $tmp, $piece, $having, $lang_code)
 
 ::
 
   // Old:
-  fn_set_hook('store_locator_update_store_location_post', $store_location_data, $store_location_id, $lang_code);
+  fn_set_hook('store_locator_update_store_location_post', $store_location_data, $store_location_id, $lang_code)
 
   // New:
-  fn_set_hook('store_locator_update_store_location_post', $store_location_data, $store_location_id, $lang_code, $action);
+  fn_set_hook('store_locator_update_store_location_post', $store_location_data, $store_location_id, $lang_code, $action)
 
 ::
 
   // Old:
-  fn_set_hook('url_post', $_url, $area, $url, $protocol, $company_id_in_url, $lang_code);
+  fn_set_hook('url_post', $_url, $area, $url, $protocol, $company_id_in_url, $lang_code)
 
   // New:
-  fn_set_hook('url_post', $_url, $area, $url, $protocol, $company_id_in_url, $lang_code, $locations);
+  fn_set_hook('url_post', $_url, $area, $url, $protocol, $company_id_in_url, $lang_code, $locations)

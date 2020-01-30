@@ -106,7 +106,7 @@
    ::
 
      // Было:
-     fn_set_hook('check_and_update_product_sharing', $product_id, $shared, $existing_company_ids, $product_categories_company_ids);
+     fn_set_hook('check_and_update_product_sharing', $product_id, $shared, $existing_company_ids, $product_categories_company_ids)
 
      // Стало:
-     fn_set_hook('check_and_update_product_sharing', $product_id, $shared, $existing_company_ids, $product_categories_company_ids, $added_company_ids, $deleted_company_ids);
+     fn_set_hook('check_and_update_product_sharing', $product_id, $shared, $existing_company_ids, $product_categories_company_ids, $added_company_ids, $deleted_company_ids)
