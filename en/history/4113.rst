@@ -24,6 +24,8 @@ Functionality Changes
 
 [*] Add-ons: Product variations: Now “Variations as one product” have the "Select a variation" button on the product list instead of "Add to cart". That way customers are more likely to choose the correct variation.
 
+[*] Add-ons: Step-by-Step Checkout [Deprecated]: Payment methods: The "Payment category" setting of a payment method is now a part of the Step-by-Step Checkout add-on.
+
 [*] Design: Checkout: The "Skip payment" option for administrators at checkout now appears only in the development mode.
 
 [*] Design: Themes: Selecting another theme now clears the cache completely.
@@ -61,6 +63,8 @@ Bug Fixes
 [!] Add-ons: Comments and reviews: Saving an order could forbid customer to initiate communication, even though it was allowed in the add-on's settings. Fixed.
 
 [!] Add-ons: Maps and geolocation: Product shipping estimate was not recalculated after location change. Fixed.
+
+[!] Add-ons: Newsletters: An attempt to send a large number of newsletters led to PHP Fatal error. Fixed.
 
 [!] Add-ons: Product variations: Customer also bought: The block with products bought together with this product was shown only for a child variation. Fixed.
 
@@ -140,6 +144,8 @@ Bug Fixes
 
 [!] Multi-Vendor: Add-ons: Vendor data premoderation: Vendor wasn't notified about further premoderation when updating his/her description only. Fixed.
 
+[!] Multi-Vendor:Add-ons:  Vendor data premoderation: When the "Venodr plans" add-on was active, vendor status could change to "Pending" when a vendor was saved on the vendor editing page, even if there were no changes. Fixed.
+
 [!] Multi-Vendor: Add-ons: Vendor data premoderation: When the "Vendor data premoderation" add-on was active, the bulk products editing page was displayed incorrectly. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor debt payout: Currency selected in the vendor panel did not affect the currency of the cart. Fixed.
@@ -165,6 +171,8 @@ Bug Fixes
 [!] Orders: Shipments: After a shipment was created, customer first name and last name were missing in it. Fixed.
 
 [!] Payment methods: Sage Pay: Mail: Email notifications were not sent when an order was paid. Fixed.
+
+[!] Products: Advanced search: PHP Warnings occurred when an admin attempted to search for products purchased in specific orders. Fixed.
 
 [!] Products: Categories: The change of the product's main category was not saved during product editing. Fixed.
 
