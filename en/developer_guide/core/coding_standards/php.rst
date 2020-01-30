@@ -211,7 +211,7 @@ Nesting and Indentation
 
 One of the worst code smells are multiple levels of nesting (and multiple levels of indentation as a result). Another example of this problem is when the entire code of the function is a part of a condition. It harms code readability and is a sign of bad code architecture.
 
-Avoid these situations by changing the code structure: make all the necessary checks at the beginning of the function, have multiple exist points, or decompose the function into smaller functions.
+Avoid these situations by changing the code structure: make all the necessary checks at the beginning of the function, have multiple exit points, or decompose the function into smaller functions.
 
 .. important::
 
@@ -781,7 +781,7 @@ The name of the class is the error type. The first parameter is the message that
   new ExternalException() // an error returned by the external server
   new DatabaseException() // a database error
   new DeveloperException() // a developer's error — occurs when an object that wasn't meant to be called gets called
-  new InputException() // wrong input dataне
+  new InputException() // wrong input data
   new InitException() // store initialization error
   new PermissionsException() // missing permissions for an operation
 
@@ -813,7 +813,7 @@ Installation
      sudo mv composer.phar /usr/local/bin/composer
      sudo chmod +x /usr/local/bin/composer
 
-2. Install **phpunit** and it's add-on called **dbunit** (it is necessary for running the tests)::
+2. Install **phpunit** and its add-on called **dbunit** (it is necessary for running the tests)::
 
      composer global require "phpunit/phpunit=4.8.*"
      composer global require "phpunit/dbunit=1.4.*"
