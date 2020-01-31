@@ -130,8 +130,6 @@ Bug Fixes
 
 [!] Export/Import: The link in the notification about wrong export range led to a page that returned error 403. Fixed.
 
-[!] Filters: Search: On in the vendor mode, the "Search" button was not displayed in the Products-Filters page. Fixed.
-
 [!] JS: WYSIWYG: Redactor II: Deleting symbols from a text resulted in the deletion of styles as well. Fixed.
 
 [!] Layouts: Export/Import: After a layout was saved, its name was added to the file name of any exported layout. Fixed.
@@ -144,7 +142,7 @@ Bug Fixes
 
 [!] Multi-Vendor: Add-ons: Vendor data premoderation: Vendor wasn't notified about further premoderation when updating his/her description only. Fixed.
 
-[!] Multi-Vendor:Add-ons:  Vendor data premoderation: When the "Venodr plans" add-on was active, vendor status could change to "Pending" when a vendor was saved on the vendor editing page, even if there were no changes. Fixed.
+[!] Multi-Vendor: Add-ons: Vendor data premoderation: When the "Vendor plans" add-on was active, vendor status could change to "Pending" when a vendor was saved on the vendor editing page, even if there were no changes. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor data premoderation: When the "Vendor data premoderation" add-on was active, the bulk products editing page was displayed incorrectly. Fixed.
 
@@ -157,6 +155,8 @@ Bug Fixes
 [!] Multi-Vendor: Add-ons: Vendor plans: Commission could be calculated incorrectly when the primary currency in the store had thousands separator configured. Fixed.
 
 [!] Multi-Vendor: Bottom admin toolbar: Fatal error occurred when an admin tried to go from the vendor editing page to the vendor admin panel. Fixed.
+
+[!] Multi-Vendor: Filters: Search: The "Search" button was not displayed on the "Products > Filters" page in a vendor's admin panel. Fixed.
 
 [!] Multi-Vendor: Vendor Payouts: The negative amount of income in the vendor's panel was not displayed correctly. Fixed.
 
