@@ -16,6 +16,9 @@
 
 Покупателю будут предложены способы доставки, которые подходят для его заказа.
 
+.. fancybox:: img/shipping_methods.png
+    :alt: Список способов доставки в CS-Cart.
+    
 .. toctree::
     :maxdepth: 3
 
@@ -31,5 +34,3 @@
     no_options
     test_button_error
 
-.. fancybox:: img/shipping_methods.png
-    :alt: Список способов доставки в CS-Cart.

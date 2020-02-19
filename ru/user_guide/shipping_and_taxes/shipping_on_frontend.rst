@@ -24,8 +24,6 @@
 .. fancybox:: img/shippings_033.png
     :alt: Стоимость доставке в корзине.
 
-.. fancybox:: img/shippings_034.png
-    :alt: Форма рассчёта стоимости доставки в CS-Cart.
 
 ================================
 Блок "Узнать стоимость доставки"
@@ -49,15 +47,6 @@
 
    .. fancybox:: img/shippings_038.png
        :alt: Добавляем новый блок.
-
-   .. fancybox:: img/shippings_039.png
-       :alt: Выбираем создание нового блока.
-
-   .. fancybox:: img/shippings_040.png
-       :alt: Выбираем тип "Шаблон".
-
-   .. fancybox:: img/shippings_039_1.png
-       :alt: Выбираем шаблон "Узнать стоимость доставки".
 
 #. Разместите блок в любом месте.
 
