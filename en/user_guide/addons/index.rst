@@ -51,6 +51,7 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     newsletters/index
     old_admin_panel/index
     order_barcode/index
+    organizations_and_representatives/index
     payment_dependencies/index
     paypal_adaptive/index
     paypal_for_marketplaces/index
