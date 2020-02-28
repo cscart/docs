@@ -45,3 +45,6 @@ The add-on has only one setting:
   .. image:: img/settings.png
       :align: center
       :alt: Organization can only be created on a B2B storefront.
+
+.. meta::
+   :description: An add-on for letting multiple representatives place orders on behalf of an organization in a CS-Cart B2B store.
