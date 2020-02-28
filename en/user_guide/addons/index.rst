@@ -27,6 +27,7 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     buy_together/index
     call_requests/index
     catalog_mode/index
+    client_tiers/index
     comments_and_reviews/index
     common_products/index
     customers_also_bought/index
