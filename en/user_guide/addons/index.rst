@@ -15,6 +15,7 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
 
     *
     access_restrictions/index
+    add_to_cart_in_bulk/index
     advanced_products_import/index
     age_verification/index
     anti_fraud/index
