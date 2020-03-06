@@ -9,7 +9,7 @@ General
 
 *	**Newsletter checkbox on checkout** - Allow users to subscribe for newsletters on checkout.
 *	**Double opt-in** - If enabled, when subscribing a user will receive a letter suggesting to confirm subscription.
-*	**Send a welcome letter with the unsubscribe link** - The user will receive a letter to the specified email that will contain the unsubscribe link. Using this link he/she will be be able to refuse receiving newsletters.
+*	**Send a welcome letter with the unsubscribe link** - The user will receive a letter to the specified email that will contain the unsubscribe link. Using this link he/she will be able to refuse receiving newsletters.
 *	**Email integration provider** - Choose what email integration provider to use: `MailChimp <http://mailchimp.com/>`_ or `MadMimi <https://madmimi.com/>`_.
 
 MailChimp
