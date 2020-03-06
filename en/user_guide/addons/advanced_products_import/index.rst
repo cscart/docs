@@ -1,8 +1,8 @@
-*******************************
-Advanced Products Import [Beta]
-*******************************
+************************
+Advanced Products Import
+************************
 
-The **Advanced Products Import [Beta]** add-on reduces the time that administrators spend on importing products. You create :doc:`presets </user_guide/manage_products/import_export/advanced_product_import>` (sets of rules that describe how to interpret an imported file), save them, and after that you'll be able to import similar files using those presets.
+The **Advanced Products Import** add-on reduces the time that administrators spend on importing products. You create :doc:`presets </user_guide/manage_products/import_export/advanced_product_import>` (sets of rules that describe how to interpret an imported file), save them, and after that you'll be able to import similar files using those presets.
 
 .. image:: /user_guide/manage_products/import_export/img/advanced_import_field_mapping.png
     :align: center

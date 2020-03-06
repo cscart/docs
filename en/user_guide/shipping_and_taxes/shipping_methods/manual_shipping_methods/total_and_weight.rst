@@ -32,7 +32,7 @@ To set up a shipping cost that depends on order total and weight:
 
        To add more rates, click the **+** icon on the right; it appears when you hover a mouse pointer over an existing rate.
 
-#. Configure the **Cost dependencies** section as follows:
+#. Configure the **Weight dependencies** section as follows:
 
    .. list-table::
        :widths: 10 10 10

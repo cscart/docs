@@ -4,7 +4,7 @@ How To: Import Products and Product Data
 
 .. note::
 
-    This article describes the behavior of 4.8.1 and newer versions. This functionality is implemented by the :doc:`/user_guide/addons/advanced_products_import/index` add-on.
+    This functionality is added by the :doc:`/user_guide/addons/advanced_products_import/index` add-on.
 
 #. In the Administration panel, go to **Administration → Import data → Products**.
 
