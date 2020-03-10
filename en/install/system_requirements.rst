@@ -53,7 +53,7 @@ Server Configuration Requirements
         -   ``ftp_raw``
         -   ``ftp_rawlist``
         -   ``mysql_pconnect``
-    *   -   ``eva``
+    *   -   ``eval``
         -   ``system``
         -   ``exec``
         -   ``shell_exec``
