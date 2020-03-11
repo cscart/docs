@@ -14,7 +14,7 @@ CS-Cart allows you to create promotions that apply only when a customer buys spe
 
 #. Click the **Add condition** button.
 
-#. Select **Products** in the dropdown list, then choose *in* and click the **Add products** butt-on.
+#. Select **Products** in the dropdown list, then choose *in* and click the **Add products** button.
 
 #. A pop-up window will open. Find a product that the customer must add to cart to be eligible for the promotion, tick that product's checkbox, and click **Add products and close**.
 
