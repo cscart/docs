@@ -40,7 +40,7 @@ An event consists of the following things:
 
 * A set of data related to that event.
 
-**Example:** event "Change of order details" has the ``'order.updated'`` identifier; it has the set of data about the order ``$order_info`` received from the ``fn_get_order_info`` function.
+**Example:** event "Change of order details" has the ``'order.updated'`` identifier; it has the set of data about the order ``$data['order_info']`` received from the ``fn_get_order_info`` function.
 
 .. _add-event:
 
@@ -48,25 +48,35 @@ An event consists of the following things:
 How to Add Your Own Event
 -------------------------
 
-The **notification/events.php** schema describes all the registered events, receivers, and transports of notifications.
+The **notifications/events.php** schema describes all the registered events, receivers, and transports of notifications.
 
 The schema is available via the ``Tygh::$app['event.events_schema']`` service.
 
 Every element of the schema has the following structure::
 
   (string) EventId => [
-      'id' => (string) EventId,
       'group' => (string) GroupId,
       'name' => [
           'template' => (string) TemplateLanguageVariable,
           'params' => [
-              (string) SubstitutionName => (string) Substitution,
+              (string) SubstitutionName => (string) Substitution
               ...
           ],
       ],
+      'data_provider' => (callable) DataProvider,
       'receivers' => [
           (string) ReceiverId => [
-              (string) TransportId => (callable) MessageProvider,
+              (string) TransportId => BaseMessageSchema::create([
+                  'area'            => (string) area,
+                  'from'            => (string) from,
+                  'to'              => (callable) DataValue::create(key),
+                  'template_code'   => (string) template_code,
+                  ...
+                  'language_code'   => (callable) DataValue::create(parent_key.key, default_value),
+                  'data_modifier'   => (callable) function (array $data) {
+                      return array_merge($data, $added_data_value);
+                  }
+              ]),
               ...
           ],
           ...
@@ -74,13 +84,16 @@ Every element of the schema has the following structure::
   ],
 
 
-* ``EventId``—identifier of the event.
+* ``EventId``—identifier of the event. It is used as the first argument in ``TyghNotificationsEventDispatcher::dispatch``.
 * ``GroupId``—identifier of the event group. It is used on the notification settings page for easier navigation.
 * ``TemplateLanguageVariable``—the name of the language variable that stands for the event in the notification settings.
 * ``SubstitutionName`` and ``Substitution``—the name and value of the parameters that adapt the language variable to the event's specifics.
-* ``ReceiverId``—identifier of the receiver.
-* ``TransportId``—identifier of the transport.
-* ``MessageProvider``—provider of the message.
+* ``DataProvider``—implements the ``Notification\DataProviders\DataProvider`` interface; is used for fetching event-specific fields based on ``data`` passed to ``\Tygh\Notifications\EventDispatcher::dispatch``.
+* ``ReceiverId``—identifier of the receiver. All the existing receiver identifiers can be retrieved from ``Tygh::$app['event.receivers_schema']``.
+* ``TransportId``—identifier of the transport. Transports must provide it in ``\Tygh\Notifications\Transports\ITransport::getId``.
+* ``BaseMessageSchema``—creates an instance of the schema class, with the data prepared for sending. Input parameters must include processed data necessary for sending the notification. Can be a text (``area``, ``from``, ``template_code``) or an instance of the ``DataValue`` class.
+* ``DataValue``—the class that allows you to get the data from the input array by key. If the key isn't in the array, then the `default_value` will be used; it is ``null`` by default.
+* ``data_modifier``—a callable parameter that allows you to make additional modifications of data passed in ``data`` within the function.
 
 To register an event:
 
@@ -98,7 +111,13 @@ To register an event:
 
 #. Specify the identifiers of user types that must receive notification about the event (``ReceiverId``).
 
-#. For every receiver type, specify how their should receive notifications (``TransportId``), and how the message is built from the data about an event (``MessageProvider``).
+#. Specify the name of the implemented ``DataProvider`` for processing of the event-specific data that come from ``data``.
+
+#. For every receiver type, specify:
+
+   * how they should receive notifications (``TransportId``);
+
+   * the data specific for the current receiver and processed into an instance of the ``BaseMessageSchema`` class (using ``DataValue``, if necessary).
 
 ================
 Event Dispatcher
@@ -114,31 +133,49 @@ How to Trigger an Event
 
 Call the event dispatcher in the places where you need to send notifications::
 
-  Tygh::$app['event.dispatcher']->dispatch('EventId', $order_info, $user_info, $settings);
+  Tygh::$app['event.dispatcher']->dispatch('EventId', ['order_info' => $order_info, 'user_info' => $user_info, 'settings' => $settings]);
 
 ========
 Messages
 ========
 
-Messages are formed based on an event, from the data passed in it. A message is a data carrier between the event and the transport that will send the notification about the event.
+Messages are formed based on a schema, from the data passed to the event dispatcher. A message contains all the data necessary for sending that message via a transport connected to this message type.
+
+The array of data prepared for sending is made based on the rules from the **events.php** event schema.
 
 Examples of implementation:
 
-* ``\Tygh\Notifications\Messages\MailMessage``—a message sent to an email.
+* Preparing the data for a notification about order state. This notification will be sent to administrator's email::
 
-* ``\Tygh\Notifications\Messages\InternalMessage``—a message sent to the Notification center.
+    'receivers' => [
+        UserTypes::ADMIN => [
+            MailTransport::getId() => MailMessageSchema::create([
+                'area'            => 'A',
+                'from'            => 'company_users_department',
+                'to'              => 'company_users_department',
+                'reply_to'        => DataValue::create('user_data.email'),
+                'template_code'   => 'activate_profile',
+                'legacy_template' => 'profiles/activate_profile.tpl',
+                'company_id'      => DataValue::create('user_data.company_id'),
+                'language_code'   => Registry::get('settings.Appearance.backend_default_language'),
+                'data_modifier'   => function (array $data) {
+                    return array_merge($data, [
+                        'url' => fn_url('profiles.update?user_id=' . $data['user_data']['user_id'], 'A'),
+                    ]);
+                }
+            ]),
+        ],
+    ],
 
-A message provider is responsible for message creation. The provider extracts all the necessary information from the data about the event, then loads the missing data, if necessary.
+``DataValue`` allows you to get data by key from the array that was passed to the dispatcher for forming the message. The function specified in ``data_modifier`` allows you to make more complex modifications of data.
 
-Examples of implementation:
+The message schema is responsible for creating a message. It gets the processed data about the event and checks the validity of the data.
 
-* A provider that creates a message about the state of the order, that is sent to the administrator's email::
+The schema is implemented for a specific tranpsort:
 
-    \Tygh\Notifications\Messages\Order\OrderAdminMailMessage::createFromOrderForAdmin
+* ``\Tygh\Notifications\Transports\Mail\MailMessageSchema``—schema for a notification sent to email;
 
-* A provider that creates a message about product approval, that is displayed in the vendor's Notification center::
-
-    \Tygh\Addons\VendorDataPremoderation\Notifications\Messages\PremoderationInternalMessage::createApprovedFromProducts
+* ``\Tygh\Notifications\Transports\Internal\InternalMessageSchema``—schema for a notification sent to the Notification Center.
 
 ---------------------------
 How to Add Your Own Message
@@ -146,13 +183,11 @@ How to Add Your Own Message
 
 To add a message:
 
-#. Create a class that implements the ``\Tygh\Notifications\Messages\IMessage`` interface or extends the existing class of messages.
-
-#. Add the message provider—a factory method in the message class or a method in a separate message factory.
-
-#. Implement the message provider (``MessageProvider``)—write all the necessary logic for receiving the data that the transport needs from the event data.
+#. Add a provider for the message data. The provider must implement the ``\Tygh\Notifications\DataProviders\IDataProvider`` interface or extend an existing base data provider class.
 
 #. Specify that provider in the event schema for the specific transport.
+
+#. In the events schema, specify the rules for processing the input data passed to the dispatcher.
 
 ++++++++++++++++++++++++++++++++++
 How to Add a Message Sent to Email
@@ -162,27 +197,27 @@ These messages include the data necessary for sending an email via the ``Tygh::$
 
 To create a new email message:
 
-#. Create a class that extends ``\Tygh\Notifications\Messages\MailMessage``.
+#. In the event schema, create the rules for preparing the data passed in ``\Tygh\Notifications\Transports\Mail\MailMessageSchema``.
 
-#. Implement the message provider that will return the instance of the message class with the filled in properties:
+#. The array passed to the ``create`` method of the schema contains the following properties:
 
-   * ``$to``—receiver of the message.
+   * ``to``—receiver of the message.
 
-   * ``$from``—sender of the message.
+   * ``from``—sender of the message.
 
-   * ``$reply_to``—Reply-to of the message.
+   * ``reply_to``—Reply-to of the message.
 
-   * ``$data``—data for substitution in the email template.
+   * ``template_code``—the code of the email template.
 
-   * ``$template_code``—the code of email template.
+   * ``legacy_template``—the name of the email template (if old email templates are used in the store).
 
-   * ``$legacy_template``—the name of the email template (if old email templates are used in the store).
+   * ``language_code``—the code of the language in which email will be sent.
 
-   * ``$language_code``—the code of the language in which email will be sent.
+   * ``company_id``—identifier of the company on behalf of which the email is sent.
 
-   * ``$company_id``—identifier of the company on behalf of which the email is sent.
+   * ``area``—from where the email is sent: from the admin panel or from the storefront.
 
-   * ``$area``—from where the email is sent: from the admin panel or from the storefront.
+   * Other keys passed in the ``$data`` array are the data for substitutions in the email template.
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 How to Add a Message Sent to the Notification Center
@@ -192,27 +227,35 @@ These messages include the data necessary for creating a notification in the Not
 
 To create a new email message:
 
-#. Create a class that extends ``\Tygh\Notifications\Messages\InternalMessage``.
+#. In the event schema, create the rules for preparing the data passed in ``\Tygh\Notifications\Transports\Internal\InternalMessageSchema``.
 
-#. Implement the message provider that will return an instance of the message class with the filled in properties:
+#. The array passed to the ``create`` method of the schema contains the following properties:
 
-   * ``$title``—the tittle of the notification.
+   * ``title``—the title of the notification.
+
+     * ``template``—the name of the language variable.
+
+     * ``params``—the list of substitutions in the template of the notification title; if the title doesn't have substitutions, the array must be left empty;
 
    * ``$message``—the text of the notification.
 
-   * ``$severity``—severity of the notification (see ``\Tygh\Enum\NotificationSeverity``).
+        * ``template``—the name of the language variable.
 
-   * ``$section``—the tab of the Notification center where the message will appear.
+        * ``params``—the list of substitutions in the template of the notification text; if the text doesn't have substitutions, the array must be left empty;
 
-   * ``$tag``—the tag that the notification will be marked with.
+   * ``severity``—severity of the notification (see ``\Tygh\Enum\NotificationSeverity``).
 
-   * ``$area``—the area where the notification will appear: in the administration panel or at the storefront.
+   * ``section``—the tab of the Notification center where the message will appear.
 
-   * ``$action_url``—the link to which user will be directed after clicking the notification.
+   * ``tag``—the tag that the notification will be marked with.
 
-   * ``$timestamp``—the time when the notification was created.
+   * ``area``—the area where the notification will appear: in the administration panel or at the storefront.
 
-   * ``$recipient_search_method``—the method for searching the users for whom the notifications must be created (see ``\Tygh\Enum\RecipientSearchMethods``).
+   * ``action_url``—the link to which user will be directed after clicking the notification.
+
+   * ``timestamp``—the time when the notification was created.
+
+   * ``recipient_search_method``—the method for searching the users for whom the notifications must be created (see ``\Tygh\Enum\RecipientSearchMethods``).
 
      The following search methods are available:
 
@@ -222,13 +265,13 @@ To create a new email message:
 
      * ``\Tygh\Enum\RecipientSearchMethods::EMAIL``—by user's email.
 
-   * ``$recipient_search_criteria``—user search criteria:
+   * ``recipient_search_criteria``—user search criteria:
 
-     * For ``$recipient_search_method = \Tygh\Enum\RecipientSearchMethods::USER_ID``—user ID.
+     * For ``recipient_search_method = \Tygh\Enum\RecipientSearchMethods::USER_ID``—user ID.
 
-     * For ``$recipient_search_method = \Tygh\Enum\RecipientSearchMethods::UGERGROUP_ID``—user group ID.
+     * For ``recipient_search_method = \Tygh\Enum\RecipientSearchMethods::UGERGROUP_ID``—user group ID.
 
-     * For ``$recipient_search_method = \Tygh\Enum\RecipientSearchMethods::EMAIL``—user e-mail.
+     * For ``recipient_search_method = \Tygh\Enum\RecipientSearchMethods::EMAIL``—user e-mail.
 
 ==========
 Transports
@@ -238,9 +281,9 @@ Transports handle the actual sending of messages of specific types.
 
 Example of implementation:
 
-* ``\Tygh\Notifications\Transports\MailTransport``—sends messages to email, works with ``\Tygh\Notifications\Messages\MailMessage`` messages.
+* ``\Tygh\Notifications\Transports\MailMailTransport``—sends messages to email, works with ``\Tygh\Notifications\Transports\Mail\MailMessageSchema`` messages.
 
-* ``\Tygh\Notifications\Transports\InternalTransport``—sends messages to the Notification center, works with ``\Tygh\Notifications\Messages\InternalMessage`` messages.
+* ``\Tygh\Notifications\Transports\InternalTransport``—sends messages to the Notification center, works with ``\Tygh\Notifications\Transports\Internal\InternalMessageSchema`` messages.
 
 -----------------------------
 How to Add Your Own Transport
