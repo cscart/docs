@@ -281,9 +281,9 @@ Transports handle the actual sending of messages of specific types.
 
 Example of implementation:
 
-* ``\Tygh\Notifications\Transports\MailMailTransport``—sends messages to email, works with ``\Tygh\Notifications\Transports\Mail\MailMessageSchema`` messages.
+* ``\Tygh\Notifications\Transports\MailMailTransport``—sends messages to email, works with the messages that conform with ``\Tygh\Notifications\Transports\Mail\MailMessageSchema``.
 
-* ``\Tygh\Notifications\Transports\InternalTransport``—sends messages to the Notification center, works with ``\Tygh\Notifications\Transports\Internal\InternalMessageSchema`` messages.
+* ``\Tygh\Notifications\Transports\InternalTransport``—sends messages to the Notification center, works with the messages that conform with ``\Tygh\Notifications\Transports\Internal\InternalMessageSchema``.
 
 -----------------------------
 How to Add Your Own Transport

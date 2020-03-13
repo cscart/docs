@@ -279,9 +279,9 @@
 
 Примеры реализации:
 
-* ``\Tygh\Notifications\Transports\MailMailTransport`` — отправляет сообщения на почту, работает с сообщениями удовлетворящими схеме ``\Tygh\Notifications\Transports\Mail\MailMessageSchema``.
+* ``\Tygh\Notifications\Transports\MailMailTransport`` — отправляет сообщения на почту; работает с сообщениями, удовлетворяющими схеме ``\Tygh\Notifications\Transports\Mail\MailMessageSchema``.
 
-* ``\Tygh\Notifications\Transports\InternalTransport`` — отправляет сообщения в Центр уведомлений, работает с сообщениями ``\Tygh\Notifications\Transports\Internal\InternalMessageSchema``.
+* ``\Tygh\Notifications\Transports\InternalTransport`` — отправляет сообщения в Центр уведомлений; работает с сообщениями, удовлетворяющими схеме ``\Tygh\Notifications\Transports\Internal\InternalMessageSchema``.
 
 ----------------------------------
 Как добавить собственный транспорт
