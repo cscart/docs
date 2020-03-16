@@ -12,7 +12,7 @@ Way 1. Exclude Products from Shipping Cost Calculation
 
 #. Click on the shipping method you'd like to edit.
 
-#. Enable the **Use for free shipping** setting. This will exclude exclude the products with the enabled **Free shipping** setting from the shipping price calculation for this shipping method.
+#. Enable the **Use for free shipping** setting. This will exclude the products with the enabled **Free shipping** setting from the shipping price calculation for this shipping method.
 
 #. Save your changes.
 
