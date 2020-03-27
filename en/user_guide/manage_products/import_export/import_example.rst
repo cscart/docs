@@ -36,7 +36,7 @@ This article describes how you can test the import functionality of your store b
 
    * **Delete existing files of downloadable products**—do not tick this checkbox.
 
-   * **CSV delimiter**—select *Comma*.
+   * **CSV delimiter**—select *Semicolon*.
 
    * **Select file**—click the **Local** button and select the downloaded (or created) CSV file.
 
