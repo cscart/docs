@@ -103,7 +103,7 @@ Brief Description of Template Settings
         -   Show product names.
     *   -   show_sku
         -   *Boolean (true / false)*
-        -   Show the (`stock keeping unit <https://en.wikipedia.org/wiki/Stock_keeping_unit>`_ (the **CODE** field from the product editing page).
+        -   Show the `stock keeping unit <https://en.wikipedia.org/wiki/Stock_keeping_unit>`_ (the **CODE** field from the product editing page).
     *   -   show_rating
         -   *Boolean (true / false)*
         -   Show :doc:`product ratings <../../../user_guide/addons/comments_and_reviews/index>`.
@@ -133,7 +133,7 @@ Brief Description of Template Settings
         -   Show the list buttons (**Add to wishlist**, **Add to comparison list**, etc.).
     *   -   show_descr
         -   *Boolean (true / false)*
-        -   Show product descriptions..
+        -   Show product descriptions.
     *   -   but_role
         -   Text
         -   | The way the buttons are displayed in the template. Choose one of the available roles:
@@ -185,7 +185,7 @@ By default, CS-Cart & Multi-Vendor have 2 template types for the product detail 
 
 To set one of those templates as default, open the Administration panel and go to **Settings → Appearance → Customer settings**.
 
-To create a custom template for the product detail page via the **My Changes** add-on, you need to  create a **.tpl** file in the *templates/addons/my_changes/blocks/product_templates directory*.
+To create a custom template for the product detail page via the **My Changes** add-on, you need to  create a **.tpl** file in the *templates/addons/my_changes/blocks/product_templates* directory.
 
 -------------------------
 Structure of the Template
@@ -211,7 +211,7 @@ We recommend copying one of the existing template from *templates/blocks/product
     :align: center
     :alt: You can select the new custom template in the Administration panel, even though it lacks a name yet.
 
-Again, we need to add a :doc:`language variable <../../core/language_variables>` for our custom product list into the :doc:`files with the add-on’s translations <../language_variables_in_addon>`. The name of the language variable is the same as the name of the template file. In our case it's **modern_template**.
+Again, we need to add a :doc:`language variable <../../core/language_variables>` for our custom product detail into the :doc:`files with the add-on’s translations <../language_variables_in_addon>`. The name of the language variable is the same as the name of the template file. In our case it's **modern_template**.
 
 We need to add the following code to *var/langs/en/addons/my_changes.po*:
 
