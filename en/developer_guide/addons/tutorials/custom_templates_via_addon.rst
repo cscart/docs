@@ -211,7 +211,7 @@ We recommend copying one of the existing template from *templates/blocks/product
     :align: center
     :alt: You can select the new custom template in the Administration panel, even though it lacks a name yet.
 
-Again, we need to add a :doc:`language variable <../../core/language_variables>` for our custom product detail into the :doc:`files with the add-on’s translations <../language_variables_in_addon>`. The name of the language variable is the same as the name of the template file. In our case it's **modern_template**.
+Again, we need to add a :doc:`language variable <../../core/language_variables>` for our custom product detail page into the :doc:`files with the add-on’s translations <../language_variables_in_addon>`. The name of the language variable is the same as the name of the template file. In our case it's **modern_template**.
 
 We need to add the following code to *var/langs/en/addons/my_changes.po*:
 
