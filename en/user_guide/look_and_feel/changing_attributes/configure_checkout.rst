@@ -16,7 +16,7 @@ In this article, we've tried to gather all the tools in CS-Cart for changing the
 Configure Sections
 ==================
 
-The checkout page consists of :doc:`blocks </user_guide/look_and_feel/layouts/blocks/index>`. To edit it, got to **Design → Layouts** and switch to the **Checkout** tab. We'll be doing most of checkout configuration there.
+The checkout page consists of :doc:`blocks </user_guide/look_and_feel/layouts/blocks/index>`. To edit it, go to **Design → Layouts** and switch to the **Checkout** tab. We'll be doing most of checkout configuration there.
 
 .. image:: img/checkout_layout.png
     :align: center
