@@ -16,7 +16,7 @@ This article will explain how to add some code to a page of your store. We'll co
         alert('If you see this text, then the script works.');
     </script>
 
-This code is perfect for for experiments—when you come to the page, you'll immediately see if the code works. That way you can check which pages have the code, and which don't. However, it's best to try this particular script at the `demo site <https://demo.cs-cart.com>`_ or a test installation—a pop-up at every page distracts people from making purchases.
+This code is perfect for experiments—when you come to the page, you'll immediately see if the code works. That way you can check which pages have the code, and which don't. However, it's best to try this particular script at the `demo site <https://demo.cs-cart.com>`_ or a test installation—a pop-up at every page distracts people from making purchases.
 
 .. contents::
    :backlinks: none
