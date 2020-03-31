@@ -12,7 +12,7 @@ There are times when you don't want anyone to access your store: for example, yo
     :align: center
     :alt: Closed storefront
 
-Heres is how to close the storefront:
+Here is how to close the storefront:
 
 #. In the Administration panel, go to **Administration → Stores**.
 
@@ -26,4 +26,4 @@ Heres is how to close the storefront:
 
 #. You can view the storefront even if it is closed. Go to **Administrations → Stores** and open the editing page of a storefront. Fill in the **Access key to temporarily closed store** field, and click **Save**.
 
-   For example, if the storefront is available at *http://example.com* and you entered *secret* in the access key field, you will be able to access the closed storefront by the following URL: *http://www.example.com/index.php?store_access_key=secret*.
+   For example, if the storefront is available at *http://example.com* and you entered *secret* in the access key field, you will be able to access the closed storefront by the following URL: *http://example.com/index.php?store_access_key=secret*
