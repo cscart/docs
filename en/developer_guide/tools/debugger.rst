@@ -40,7 +40,7 @@ Server
     :align: center
     :alt: Debugger sidebar, Server
 
-In the **Server** tab, you will find general system information and information about PHP and PHP modules insalled in the system: versions, paths, config variable values, etc.
+In the **Server** tab, you will find general system information and information about PHP and PHP modules installed in the system: versions, paths, config variable values, etc.
 
 
 Request
