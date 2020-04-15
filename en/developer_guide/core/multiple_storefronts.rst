@@ -181,7 +181,7 @@ Currently you can share the following objects among storefronts:
 The Sharing Process
 -------------------
 
-The editing pages of the shareable objects have a speciall **Share** tab. It will appear depending on the settings specified in the schema. The storefronts listed on the tab will have access to the object. The information about sharing is saved automatically, based on the data from the schema.
+The editing pages of the shareable objects have a special **Share** tab. It will appear depending on the settings specified in the schema. The storefronts listed on the tab will have access to the object. The information about sharing is saved automatically, based on the data from the schema.
 
 Before the query is processed by the current controller, the sharing mechanism intercepts the query and matches it against the schema. If the checks are successful, the mechanism saves the sharing data. 
 
