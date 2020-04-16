@@ -22,7 +22,7 @@ For already installed add-ons, the system calls **addon.xml** when editing an ad
 Available Schemes
 =================
 
-The **addon.xml** file contains the scheme of the add-on. There are two possible schemes: Two schemes of the *addon.xml* file are used in CS-Cart:
+The **addon.xml** file contains the scheme of the add-on. There are two possible schemes:
 
 * **Scheme 2.0** is used in CS-Cart 2.x — 4.х. Add-ons with the old scheme will not be displayed on the **Add-ons → Manage add-ons** page, nor will they work correctly without a proper scheme conversion.
 
