@@ -138,7 +138,7 @@
                         <handler>fn_sample_addon_3_0_info</handler>
                         <variants/>
                     </item>
-                    <!-- Вид настройки типа шаблон. В данном случае подключается пользовательский шаблон из папки themes/THEME_NAME/addons/ADDON_NAME/setings/TEMPLATE_NAME
+                    <!-- Вид настройки типа шаблон. В данном случае подключается пользовательский шаблон из папки themes/backend/addons/ADDON_NAME/settings/TEMPLATE_NAME
                          Имя шаблона хранится в default_value. -->
                     <item id="template">
                         <type>template</type>
