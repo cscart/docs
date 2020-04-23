@@ -61,7 +61,7 @@ After you press the **Next Step** button, cPanel will offer you to create more d
 ====================================
 Step 2. Upload CS-Cart to the Server
 ====================================
-2.1. `Download <https://www.cs-cart.com/download-cs-cart.html>`_ the latest version of CS-Cart.  Then go to **cPanel → Files → File Manager**.
+2.1. Download the latest version of `CS-Cart <https://www.cs-cart.com/download-cs-cart.html>`_ or `Multi-Vendor <https://www.cs-cart.com/download-multivendor.html>`_.  Then go to **cPanel → Files → File Manager**.
 
 .. image:: img/cpanel/6_file_manager_icon.png
     :align: center
