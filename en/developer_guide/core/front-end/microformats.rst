@@ -49,7 +49,7 @@ Example:
 	<script type="text/javascript">
     	Tygh.$.ceFormValidator('setZipcode', {
        	 US: {
-          	  regexp: /^(\d{5})(-\d{4})?$/,
+          	 regexp: /^(\d{5})(-\d{4})?$/,
            	 format: '01342 (01342-5678)'
        	 },
         	CA: {
@@ -165,7 +165,7 @@ Form reset
 Form fields content selecting
 -----------------------------
 
-* ``cm-select-text`` - when clicked, the elements with the select method will be highlighted (textarea, input). Makes coping to buffer easier.
+* ``cm-select-text`` - when clicked, the elements with the select method will be highlighted (textarea, input). Makes copying to buffer easier.
 
 Form reload
 -----------
@@ -283,7 +283,7 @@ There are 2 types of checkboxes manipulation:
  * Via the main checkbox
  * Via links
 
-The control element must have the name ``check_all`` and the class ``check-items``. If the control element is a link, the classes ``on`` and ``off`` are to be also specified (they turn on and off all checkboxes)
+The control element must have the name ``check_all`` and the class ``check-items``. If the control element is a link, the classes ``on`` and ``off`` are to be also specified (they turn on and off all checkboxes).
 
 Manageable elements must have the class ``item``.
 
@@ -462,7 +462,7 @@ Format::
 
  <div class="subnav cm-sticky-scroll" data-ce-top="100" data-ce-padding="20" >
 
-When the window is crolled down for 100px, the panel will be fixed at the distanse of 20px from its upper end.
+When the window is scrolled down for 100px, the panel will be fixed at the distance of 20px from its upper end.
 
 * ``cm-range-slider`` - initializes range-selection slider (jQuery UI Slider).
 * ``cm-colorpicker`` - initializes color-picker (`http://bgrins.github.io/spectrum/ <http://bgrins.github.io/spectrum/>`_).
@@ -493,7 +493,7 @@ Example::
 * ``cm-hint-focused`` - indicates that an entry field has focus and its hint is hidden. When used with ``cm-hint``, indicates that an internal hint should not be shown.
 
     Example: *Track my order(s)* field in the admin panel.
-* ``cm-tooltip`` - assigned to an element that should have a tooltip. The tooltip text is defined is the title attribute.
+* ``cm-tooltip`` - assigned to an element that should have a tooltip. The tooltip text is defined in the title attribute.
 
 Admin panel
 ===========
