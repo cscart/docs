@@ -1,6 +1,6 @@
-********************************************
-Mobile App for CS-Cart and Multi-Vendor: FAQ
-********************************************
+********************************
+Mobile App for Multi-Vendor: FAQ
+********************************
 
 .. important::
 
@@ -18,7 +18,7 @@ Part 1. General Questions
 What Is All This About?
 -----------------------
 
-By default, CS-Cart and Multi-Vendor have responsive design. The store will adapt to fit into the screen nicely, no matter what devices your customers use. This allows customers to make purchases from the store via their smartphones or tablets.
+By default, Multi-Vendor have responsive design. The store will adapt to fit into the screen nicely, no matter what devices your customers use. This allows customers to make purchases from the store via their smartphones or tablets.
 
 However, there is another way to interact with the store—a mobile application. It is a program that customers can install on their mobile devices. It exchanges data with the store, so customers can see what products are available, purchase them, add them to wish list, and more.
 
@@ -34,7 +34,7 @@ Why Bother with an App When a Responsive Site Does the Same Thing?
 
   .. image:: img/responsive_vs_mobile.png
       :align: center
-      :alt: A responsive CS-Cart web site compared to a Mobile App.
+      :alt: A responsive Multi-Vendor web site compared to a Mobile App.
 
 .. _mobile-app-faq-sync:
 
@@ -70,7 +70,7 @@ What Languages Does the App Support?
 
 For now, the app supports only English and Russian: when one of these languages is selected on your device, the app will be displayed in that language. These translations are provided by the CS-Cart team.
 
-The texts of the mobile app come with CS-Cart and Multi-Vendor as a part of the **Mobile Application** add-on. Once other languages are supported, translations into them will be made by the CS-Cart community and checked by our partners `in our project at CrowdIn <https://crowdin.com/project/cs-cart-latest>`_.
+The texts of the mobile app come with Multi-Vendor as a part of the **Mobile Application** add-on. Once other languages are supported, translations into them will be made by the CS-Cart community and checked by our partners `in our project at CrowdIn <https://crowdin.com/project/cs-cart-latest>`_.
 
 .. image:: img/crowdin_project.png
     :align: center
@@ -86,7 +86,7 @@ Yes. If you enable them, customers will be able to receive information about ord
 
 #. Create a project for Android & iOS.
 
-#. Enter the key in the settings of the **Mobile Application** add-on. The add-on comes with CS-Cart or Multi-Vendor, but isn't installed by default.
+#. Enter the key in the settings of the **Mobile Application** add-on. The add-on comes with Multi-Vendor, but isn't installed by default.
 
 #. Use the **Download config** button to get an archive with the application settings.
 
@@ -98,7 +98,7 @@ Can I Get the Source Code of the App?
 
 Yes, but not as part of our standard plans. For more information, please check the **Pricing** section of our app pages `for Multi-Vendor <https://www.cs-cart.com/multivendor-mobile-application.html>`_ or `for CS-Cart <https://www.cs-cart.com/cscart-mobile-application.html>`_.
 
-The technical support for the source code is limited. The license agreement allows using the source code only with one CS-Cart or Multi-Vendor installation and forbids publishing the source code or handing it over to third parties. However, you get to publish the application from your own account on Apple App Store and Google Play and showcase your company as the app developer.
+The technical support for the source code is limited. The license agreement allows using the source code only with one Multi-Vendor installation and forbids publishing the source code or handing it over to third parties. However, you get to publish the application from your own account on Apple App Store and Google Play and showcase your company as the app developer.
 
 ------------------------------------
 Who Will be Listed as App Developer?
@@ -125,7 +125,7 @@ How Do I Get a Mobile Application for My Store?
 
 #. We'll need some information from you, so that we could create your app and publish it on Apple App Store and Google Play.
 
-   CS-Cart and Multi-Vendor come with the add-on called **Mobile Application** that isn't installed by default. That add-on allows you to:
+   Multi-Vendor comes with the add-on called **Mobile Application** that isn't installed by default. This add-on allows you to:
 
    * Provide the information necessary for publishing the app (texts, images, links, etc.).
 
@@ -137,9 +137,9 @@ How Do I Get a Mobile Application for My Store?
 
    The add-on by itself doesn't create you a mobile app. Once you specify and save all the settings, you press the **Download config** button and get an archive called **app_settings.zip**. Send that archive to us, and we'll have all the information we need to publish your app.
 
---------------------------------------------------------
-What Versions of CS-Cart and Multi-Vendor Are Supported?
---------------------------------------------------------
+--------------------------------------------
+What Versions of Multi-Vendor Are Supported?
+--------------------------------------------
 
 It's best if you use the latest version. It always includes all the changes to the **Mobile Application** add-on and the way how your store interacts with your mobile application.
 
@@ -302,7 +302,7 @@ For example, to set a link to a product #248, enter the following into the **URL
 
 .. image:: img/mobile_app_banners.png
     :align: center
-    :alt: Setting a banner URL that will work both in CS-Cart and in a mobile app.
+    :alt: Setting a banner URL that will work both in Multi-Vendor and in a mobile app.
 
 .. hint::
 
@@ -322,7 +322,7 @@ Go to **Design → Layouts** and switch to **MobileAppLayout**. Select the **Hom
 
   .. image:: img/wrappers.png
       :align: center
-      :alt: A block wrapper in CS-Cart determines the block title will appear on the mobile app home page.
+      :alt: A block wrapper in Multi-Vendor determines the block title will appear on the mobile app home page.
 
 -----------------------------------------
 Sidebar: How to Add or Remove Menu Items?
@@ -342,7 +342,7 @@ The top menu of the sidebar (Home, Cart, Wish List, My profile, Orders) is alway
 
    .. image:: img/sidebar_menu.png
        :align: center
-       :alt: The menu items in CS-Cart and in the mobile app.
+       :alt: The menu items in Multi-Vendor and in the mobile app.
 
 .. meta::
-   :description: FAQ about mobile application for a CS-Cart store and Multi-Vendor marketplace: functionality, acquisition, customization, and support.
+   :description: FAQ about mobile application for Multi-Vendor marketplace: functionality, acquisition, customization, and support.

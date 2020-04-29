@@ -4,7 +4,7 @@ How To: Define the Initial Order ID
 
 To define the number, starting from which the new order IDs will be generated, follow these steps:
 
-#. In the Administration panel, go to **Settings → General**.
+#. In the Administration panel, go to **Settings → Checkout**.
 
 #. Fill in the **Initial order ID value** field.
 
