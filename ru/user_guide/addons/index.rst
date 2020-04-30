@@ -56,7 +56,8 @@
     twigmo/index
     vendor_data_premoderation/index
     warehouses/index
-	vendor_plans/index
+    vendor_plans/index
+    vendor_privileges/index
     commissions_by_category/index
     customer_to_vendor_communication/index
     yandex_metrika/index
@@ -173,6 +174,9 @@
 
     *   -   Поставщики
         -   Позволяет назначать поставщиков товарам
+
+    *   -   Права продавцов
+        -   Позволяет управлять привилегиями продавцов
 
     *   -   Прикрепленные файлы
         -   Позволяет прикрепить файлы к товарам
