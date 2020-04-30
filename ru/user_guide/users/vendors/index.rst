@@ -25,7 +25,9 @@
     allow_vendors_to_edit_layout_and_theme
     product_approval
     invite_vendors
+    manage_vendor_plans
     vendor_categories
+    vendor_group
     vendor_statuses
 
 .. toctree::

@@ -52,6 +52,15 @@
     tags/index
     old_admin_panel/index
     twigmo/index
+<<<<<<< HEAD
+=======
+    vendor_data_premoderation/index
+    warehouses/index
+    vendor_plans/index
+    vendor_privileges/index
+    commissions_by_category/index
+    customer_to_vendor_communication/index
+>>>>>>> 4a18022e... [~]{@1-25459} Ru: Docs: fixed some errors in article about vendor group, added link to article in add-ons and to vendors index pages, added missing screenshot
     yandex_metrika/index
     yml_export/index
 
@@ -166,6 +175,9 @@
 
     *   -   Поставщики
         -   Позволяет назначать поставщиков товарам
+
+    *   -   Права продавцов
+        -   Позволяет управлять привилегиями продавцов
 
     *   -   Прикрепленные файлы
         -   Позволяет прикрепить файлы к товарам
