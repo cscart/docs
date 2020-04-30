@@ -19,7 +19,7 @@ In this tutorial, you will learn how to install CS-Cart on a virtual private or 
 Step 1. Make the Preparations
 =============================
 
-1.1. `Download <https://www.cs-cart.com/download-cs-cart.html>`_ the latest version of CS-Cart.
+1.1. `Download <https://www.cs-cart.com/download-cs-cart.html>`_ the latest version of CS-Cart or `Multi-Vendor <https://www.cs-cart.com/download-multivendor.html>`_. 
 
 1.2. Connect to the your server via `SSH <https://en.wikipedia.org/wiki/Secure_Shell>`_.
 
@@ -60,11 +60,11 @@ or
 
 As you can see, in our case */var/www/html* is the document root. In the picture we marked it in red.
 
-======================
-Step 2. Upload CS-Cart
-======================
+===================================
+Step 2. Upload CS-Cart/Multi-Vendor
+===================================
 
-2.1. Upload the **cscart_vx.x.x.zip** archive you downloaded into your document root (*/var/www/html* in the example; it may also be */var/www* in some cases).
+2.1. Upload the **cscart_vx.x.x.zip**/**multivendor_x.x.x.zip** archive you downloaded into your document root (*/var/www/html* in the example; it may also be */var/www* in some cases).
  
 To do that, connect to the server with your FTP client. You’ll need the name of the **host**, **username**, **password** and, in some cases, **port**. Contact your hosting provider or the server administrator for your FTP account details. 
 
@@ -78,7 +78,7 @@ Your command may look different if your document root is different.
 
 .. image:: img/apache/cd_ls_unzip.png
     :align: center
-    :alt: Locating and extracting the CS-Cart archive.
+    :alt: Locating and extracting the archive.
 
 2.3. Use the following command to see what’s inside the directory:
 
@@ -94,7 +94,7 @@ You should see the archive you uploaded, and any other files or directories you 
 
     unzip cscart_vx.x.x.zip
 
-In the example we have **cscart_v4.3.4.zip**. The name of your archive depends on the version of CS-Cart that you install.
+In the example we have **cscart_v4.3.4.zip**. The name of your archive depends on the version of CS-Cart/Multi-Vendor that you install.
 
 ========================================
 Step 3. Change Ownership and Permissions
@@ -114,7 +114,7 @@ Step 3. Change Ownership and Permissions
     find images -type f -print0 | xargs -0 chmod 644
     find var -type f -print0 | xargs -0 chmod 644
 
-These commands set the right permissions for the files, so that CS-Cart can install properly. The 3 digits represent the **rights of the owner** of the file/directory, the **owner’s group**, and **other users** respectively.
+These commands set the right permissions for the files, so that CS-Cart/Multi-Vendor can be installed properly. The 3 digits represent the **rights of the owner** of the file/directory, the **owner’s group**, and **other users** respectively.
 
 For example, ``chmod 644 config.local.php`` means that:
 

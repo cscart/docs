@@ -112,6 +112,12 @@ Step 3. Install CS-Cart
 
          wget "https://www.cs-cart.com/index.php?dispatch=pages.get_trial&page_id=297&edition=ultimate" -O cscart.zip
 
+or, if you want to download Multi-Vendor:
+
+     .. code-block:: bash
+
+         wget "https://www.cs-cart.com/index.php?dispatch=pages.get_trial&page_id=297&edition=multivendor" -O multi-vendor.zip
+
      .. note::
 
          If you see the **Command not found** message on CentOS, then install **wget** first by using this command: ``yum install wget``.
@@ -121,6 +127,12 @@ Step 3. Install CS-Cart
      .. code-block:: bash
 
          unzip cscart.zip
+
+or
+
+     .. code-block:: bash
+
+         unzip multi-vendor.zip
 
 3.4. Change the owner and set file permissions for CS-Cart installation by executing these commands one by one:
 
@@ -137,7 +149,7 @@ Step 3. Install CS-Cart
 
 .. image:: img/digitalocean/11_install_cscart.png
     :align: center
-    :alt: CS-Cart browser installation.
+    :alt: CS-Cart/Multi-Vendor browser installation.
 
 3.6. Read and accept the CS-Cart License Agreement:
 
@@ -151,7 +163,7 @@ Step 3. Install CS-Cart
     :align: center
     :alt: Enter the information from Step 2.4 to the fields.
 
-3.8. Congratulations! Now you have a fast CS-Cart store on DigitalOcean hosting.
+3.8. Congratulations! Now you have a fast CS-Cart/Multi-Vendor store on DigitalOcean hosting.
 
 .. meta::
    :description: Install CS-Cart or Multi-Vendor ecommerce software step by step on a DigitalOcean droplet. Configure the server automatically on Ubuntu or CentOS operating system.

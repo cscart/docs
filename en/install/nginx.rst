@@ -370,9 +370,9 @@ You can install and use any version of PHP that meets :doc:`the system requireme
 Step 2. Upload CS-Cart
 ======================
 
-2.1. `Download <https://www.cs-cart.com/download-cs-cart.html>`_ the latest version of CS-Cart.
+2.1. `Download <https://www.cs-cart.com/download-cs-cart.html>`_ the latest version of CS-Cart or `Multi-Vendor <https://www.cs-cart.com/download-multivendor.html>`_.
 
-2.2. Upload the **cscart_vx.x.x.zip** archive you downloaded to the directory you created in Step 1.5 (*/var/www/html/example.com* in the example).
+2.2. Upload the **cscart_vx.x.x.zip** or Multi-Vendor archive you downloaded to the directory you created in Step 1.5 (*/var/www/html/example.com* in the example).
  
 To do that, connect to the server with your FTP client. You’ll need the name of the **host**, **username**, **password** and, in some cases, **port**. Contact your hosting provider or the server administrator for your FTP account details. 
 
@@ -402,7 +402,7 @@ You should see the archive you uploaded, and any other files or directories you 
 
     unzip cscart_vx.x.x.zip
 
-In the example we have **cscart_v4.3.4.zip**. The name of your archive depends on the version of CS-Cart that you install.
+In the example we have **cscart_v4.3.4.zip**. The name of your archive depends on the version of CS-Cart/Multi-Vendor that you install.
 
 ========================================
 Step 3. Change Ownership and Permissions

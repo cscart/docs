@@ -2,13 +2,13 @@
 Install CS-Cart
 ***************
 
-This section describes the CS-Cart installation process on various systems. It also provides other useful information, such as system requirements and important post-installation procedures.
+This section describes the CS-Cart and Multi-Vendor installation process on various systems. It also provides other useful information, such as system requirements and important post-installation procedures.
 
 ===================
 System Requirements
 ===================
 
-Before you install CS-Cart, make sure that your server meets the system requirements. Learn about the recommended web servers, operating systems, and settings.
+Before you install CS-Cart or Multi-Vendor, make sure that your server meets the system requirements. Learn about the recommended web servers, operating systems, and settings.
 
 .. toctree::
     :maxdepth: 4
