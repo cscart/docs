@@ -87,7 +87,7 @@ Functions are decribed in such schemes. In most cases a scheme with functions is
 Scheme extending
 ================
 
-There are to ways of extension - with the help of add-ons and with the help of editing tags.
+There are two ways of extending - with the help of add-ons and with the help of editing tags.
 
 Add-ons
 +++++++
