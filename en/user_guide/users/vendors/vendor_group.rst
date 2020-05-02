@@ -20,7 +20,7 @@ Marketplace owners can determine what :doc:`vendors' administrators </user_guide
 Step 0. Make Sure That Vendor Privileges Are Active
 ===================================================
 
-By default, Multi-Vendor doesn't have user groups for vendors' administrators. That functionality is available only in Multi-Vendor Plus, and only if the **Vendor Privileges** add-on is active. :doc:`The article aboug the add-on </user_guide/addons/vendor_privileges/index>` explains what the add-on does and how to set it up.
+By default, Multi-Vendor doesn't have user groups for vendors' administrators. That functionality is available only in Multi-Vendor Plus, and only if the **Vendor Privileges** add-on is active. :doc:`The article about the add-on </user_guide/addons/vendor_privileges/index>` explains what the add-on does and how to set it up.
 
 ===========================
 Step 1. Create a User Group
