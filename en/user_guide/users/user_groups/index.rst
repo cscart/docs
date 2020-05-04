@@ -32,7 +32,7 @@ Adding a User Group
 
      * *Active*—the user group works. If it is a customer group, it will appear on the storefront, and customers will be able to request to join this group.
 
-     * *Hidden*—the user work works, but isn't visible on the storefront (therefore, customers can't apply for this group).
+     * *Hidden*—the user group works, but isn't visible on the storefront (therefore, customers can't apply for this group).
 
      * *Disabled*—the user group doesn't appear anywhere and doesn't affect the rights of users in any way.
 
