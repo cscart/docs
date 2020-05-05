@@ -2,7 +2,7 @@
 Category Properties
 *******************
 
-When you create or edit a category, your specify a number of properties. For convenience, properties are grouped under several tabs.
+When you create or edit a category, you specify a number of properties. For convenience, properties are grouped under several tabs.
 
 .. contents::
     :backlinks: none
