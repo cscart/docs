@@ -74,7 +74,7 @@ The texts of the mobile app come with Multi-Vendor as a part of the **Mobile App
 
 .. image:: img/crowdin_project.png
     :align: center
-    :alt: CS-Cart translation project at CrowdIn.
+    :alt: Multi-Vendor translation project at CrowdIn.
 
 ----------------------------------------
 Does the App Support Push Notifications?
@@ -86,7 +86,7 @@ Yes. If you enable them, customers will be able to receive information about ord
 
 #. Create a project for Android & iOS.
 
-#. Enter the key in the settings of the **Mobile Application** add-on. The add-on comes with CS-Cart or Multi-Vendor, but isn't installed by default.
+#. Enter the key in the settings of the **Mobile Application** add-on. The add-on comes with Multi-Vendor, but isn't installed by default.
 
 #. Use the **Download config** button to get an archive with the application settings.
 
@@ -96,9 +96,9 @@ Yes. If you enable them, customers will be able to receive information about ord
 Can I Get the Source Code of the App?
 -------------------------------------
 
-Yes, but not as part of our standard plans. For more information, please check the **Pricing** section of our app pages `for Multi-Vendor <https://www.cs-cart.com/multivendor-mobile-application.html>`_ or `for CS-Cart <https://www.cs-cart.com/cscart-mobile-application.html>`_.
+Yes, but not as part of our standard plans. For more information, please check the **Pricing** section of our app pages `for Multi-Vendor <https://www.cs-cart.com/multivendor-mobile-application.html>`_.
 
-The technical support for the source code is limited. The license agreement allows using the source code only with one CS-Cart or Multi-Vendor installation and forbids publishing the source code or handing it over to third parties. However, you get to publish the application from your own account on Apple App Store and Google Play and showcase your company as the app developer.
+The technical support for the source code is limited. The license agreement allows using the source code only with one Multi-Vendor installation and forbids publishing the source code or handing it over to third parties. However, you get to publish the application from your own account on Apple App Store and Google Play and showcase your company as the app developer.
 
 ------------------------------------
 Who Will be Listed as App Developer?
@@ -119,7 +119,11 @@ Part 2. Acquisition
 How Do I Get a Mobile Application for My Store?
 -----------------------------------------------
 
+<<<<<<< HEAD
 #. Check the descriptions of our mobile apps `for Multi-Vendor <https://www.cs-cart.com/multivendor-mobile-application.html>`_..
+=======
+#. Check the description of our mobile app `for Multi-Vendor <https://www.cs-cart.com/multivendor-mobile-application.html>`_.
+>>>>>>> fb10b16c... Update faq.rst
 
 #. If you decide to get the app (or if you have any questions), contact us via the forms on those pages.
 
@@ -140,6 +144,10 @@ How Do I Get a Mobile Application for My Store?
 --------------------------------------------
 What Versions of Multi-Vendor Are Supported?
 --------------------------------------------
+<<<<<<< HEAD
+=======
+
+>>>>>>> fb10b16c... Update faq.rst
 It's best if you use the latest version. It always includes all the changes to the **Mobile Application** add-on and the way how your store interacts with your mobile application.
 
 If you aren't using the latest version, just mention it when contacting us, and we'll help you get started. For example, version 4.8.1 is the earliest version that comes with the **Mobile Application** add-on. But we've made some improvements since then, so we may first need to apply them to your Multi-Vendor installation.
@@ -342,6 +350,9 @@ The top menu of the sidebar (Home, Cart, Wish List, My profile, Orders) is alway
    .. image:: img/sidebar_menu.png
        :align: center
        :alt: The menu items in Multi-Vendor and in the mobile app.
+<<<<<<< HEAD
 
 .. meta::
    :description: FAQ about mobile application for a Multi-Vendor marketplace: functionality, acquisition, customization, and support.
+=======
+>>>>>>> fb10b16c... Update faq.rst
