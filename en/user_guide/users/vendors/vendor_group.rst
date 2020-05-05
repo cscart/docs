@@ -34,19 +34,17 @@ Step 1. Create a User Group
 
 1.4. Set the **Type** to *Vendor*.
 
-1.5. Set the **status** of the group: **Enabled**—group is active; **Hidden**—only members of the group can see it; **Disabled**—group is not active.
-
-1.6. Click the **Create** button.
+1.5. Click the **Create** button.
 
 .. image:: img/vendor_group.png
     :align: center
     :alt: Specify the name and the type of the new customer group.
 
-1.7. Open the newly-created group.
+1.6. Open the newly-created group.
 
-1.8. On the same page you'll see a list of privileges. Tick the checkboxes next to the privileges you want to enable for the group.
+1.7. On the same page you'll see a list of privileges. Tick the checkboxes next to the privileges you want to enable for the group.
 
-1.9. Click the **Save** button.
+1.8. Click the **Save** button.
 
 .. image:: img/vendor_privileges.png
     :align: center
