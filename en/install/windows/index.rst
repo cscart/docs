@@ -1,10 +1,10 @@
-*******************************************
-How To: Install CS-Cart on XAMPP on Windows
-*******************************************
+***********************************************************
+How To: Install CS-Cart or Multi-Vendor on XAMPP on Windows
+***********************************************************
 
-If you'd like to test CS-Cart, but you don't have a suitable server, you can install CS-Cart on Windows.
+If you'd like to test CS-Cart or Multi-Vendor, but you don't have a suitable server, you can install them on Windows.
 
-All you need to do is install XAMPP (a popular PHP development environment that includes PHP, Apache, and MySQL), then install CS-Cart on XAMPP. You can use other PHP development envioronments, but the principle is the same.
+All you need to do is install XAMPP (a popular PHP development environment that includes PHP, Apache, and MySQL), then install CS-Cart or Multi-Vendor on XAMPP. You can use other PHP development envioronments, but the principle is the same.
 
 .. important::
 

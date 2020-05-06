@@ -4,7 +4,7 @@ How To: Install CS-Cart on XAMPP
 
 First of all, you need to install XAMPP—an environment for PHP development (see :doc:`How To: Install XAMPP </install/windows/xampp/index>`). After that follow the instructions below:
 
-#. Download the latest version of CS-Cart from the official website: `www.cs-cart.com <https://www.cs-cart.com/download-cs-cart.html>`_.
+#. Download the latest version of `CS-Cart <https://www.cs-cart.com/download-cs-cart.html>`_ or `Multi-Vendor <https://www.cs-cart.com/download-multivendor.html>`_.. 
 
    .. image:: img/cscart_en.png
        :alt: Downloading CS-Cart from the official website
@@ -42,6 +42,7 @@ First of all, you need to install XAMPP—an environment for PHP development (se
    .. important::
 
        Some of the PHP extensions :doc:`required by CS-Cart </install/system_requirements>` (for example, ``curl``, ``sockets``, ``soap``) might be disabled in XAMPP by default. To enable them, go to the **php.ini** file of your XAMPP installation, remove the ``;`` symbol at the beginning of the lines with the required extensions, then save your changes and restart XAMPP.
+In this article we used CS-Cart as an example. Steps for Multi-Vendor installation are the same.
 
 .. meta::
    :description: How to test CS-Cart and Multi-Vendor online stores on XAMPP on Windows without a server?
