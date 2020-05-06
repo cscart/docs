@@ -19,7 +19,7 @@ In this tutorial, you will learn how to install CS-Cart on a virtual private or 
 Step 1. Make the Preparations
 =============================
 
-1.1. `Download <https://www.cs-cart.com/download-cs-cart.html>`_ the latest version of CS-Cart or `Multi-Vendor <https://www.cs-cart.com/download-multivendor.html>`_. 
+1.1. Download the latest version of `CS-Cart <https://www.cs-cart.com/download-cs-cart.html>`_ or `Multi-Vendor <https://www.cs-cart.com/download-multivendor.html>`_. 
 
 1.2. Connect to the your server via `SSH <https://en.wikipedia.org/wiki/Secure_Shell>`_.
 
