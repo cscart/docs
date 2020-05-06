@@ -13,9 +13,6 @@
     :align: center
     :alt: Вид тарифных планов для продавцов с витрины.
 
-Начиная с Multi-Vendor 4.4.1, этот модуль заменил модуль **Комиссия продавца**. 
-
-
 * :doc:`vendor_plans_settings`
 
 * :doc:`../../users/vendors/manage_vendor_plans`

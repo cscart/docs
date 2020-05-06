@@ -13,12 +13,6 @@ The **Vendor Plans** add-on allows you to offer subscription plans for vendors. 
     :align: center
     :alt: Vendor plans as they appear on the storefront.
 
-Starting with Multi-Vendor 4.4.1, this add-on has replaced the **Vendor Commission** add-on. 
-
-.. important::
-
-    If you plan to upgrade to Multi-Vendor 4.4.1, please make sure to read about :doc:`moving from Vendor Commission to Vendor Plans. <../vendor_commission/vendor_commissions_and_plans>`
-
 * :doc:`vendor_plans_settings`
 
 * :doc:`../../users/vendors/manage_vendor_plans`
