@@ -2,16 +2,16 @@
 301 Redirects
 *************
 
-When you install the **SEO** add-on, the **301 redirects** tab appeares in the **Website → SEO** section. With this functionality you can redirect customers from old and no more actual pages to the new ones.
+When you install the **SEO** add-on, the **301 redirects** tab appears in the **Website → SEO** section. With this functionality you can redirect customers from old and no more actual pages to the new ones.
 
 .. important ::
 
     **A redirect from an object will work only if this object was not found.** A disabled object still exists, even though it can't be viewed on the storefront. That's why the redirect from that object won't work. But if you delete the object or change its SEO name, the redirect will work.
 
 
-Redirects can be added to this list authomatically or manually:
+Redirects can be added to this list automatically or manually:
 
-Page URL is added to this list authomatically when you change its SEO-name in the item (category, product, etc.) editing section. For example:
+Page URL is added to this list automatically when you change its SEO-name in the item (category, product, etc.) editing section. For example:
 
 *	Go to **Products → Categories** in the administration panel and open some category editing page.
 *	Choose the **Add-ons** tab and change the **SEO name** field.

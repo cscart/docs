@@ -87,7 +87,7 @@ Functions are decribed in such schemes. In most cases a scheme with functions is
 Scheme extending
 ================
 
-There are to ways of extension - with the help of add-ons and with the help of editing tags.
+There are two ways of extending - with the help of add-ons and with the help of editing tags.
 
 Add-ons
 +++++++
@@ -100,7 +100,7 @@ And the path to the extending file:
 
 *   *app/addons/seo/schemas/permissions/admin.post.php*
 
-When including the extending scheme, the ``$schema`` variable is passed into it. This variable contains extending data. The script works with this variable and returnes it at the end.
+When including the extending scheme, the ``$schema`` variable is passed into it. This variable contains extending data. The script works with this variable and returns it at the end.
 
 Example::
 
@@ -128,7 +128,7 @@ And the path to the editing tag file:
 
 *   *app/schemas/permissions/admin_ultimate.php*
 
-The ``$schema`` variable is used here too. It contains extending data. The script works with this variable and returnes it at the end.
+The ``$schema`` variable is used here too. It contains extending data. The script works with this variable and returns it at the end.
 
 How to get the scheme data
 ==========================
@@ -150,7 +150,7 @@ Example::
 
     $menu = fn_get_schema('menu', 'menu', 'php');
 
-*   Searching for the main scheme file: */app/schemas/menu/menu.php*. It can be also placed in the add-on directory: *addons/my_addon/app/schemas/xxx/yyy.php*. Than, it will be included with the help of following function: ``fn_get_schema('xxx', 'yyy')``.
+*   Searching for the main scheme file: */app/schemas/menu/menu.php*. It can be also placed in the add-on directory: *addons/my_addon/app/schemas/xxx/yyy.php*. Then, it will be included with the help of following function: ``fn_get_schema('xxx', 'yyy')``.
 
 *   Checking add-on schemes for additions:
 

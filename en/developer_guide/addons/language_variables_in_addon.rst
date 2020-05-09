@@ -62,4 +62,4 @@ When an add-on is upgraded, the PO files in the upgrade package are analyzed. Th
 Uninstalling an Add-on
 ======================
 
-:ref:`When an add-on is uninstalled <uninstall-addon-process>`, it’s PO files are analyzed. All the language variables of the add-on are removed from the ``original_values`` and ``language_values`` tables. The language cache is cleared.
+:ref:`When an add-on is uninstalled <uninstall-addon-process>`, its PO files are analyzed. All the language variables of the add-on are removed from the ``original_values`` and ``language_values`` tables. The language cache is cleared.

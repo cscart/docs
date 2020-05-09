@@ -11,7 +11,7 @@ Among the information listed there, are the add-on id, priority, version, displa
 
 Basically, an add-on will run with only this file existing. All it will do will be just sit in the add-on list and do absolutely nothing. However, such add-on will be installable and uninstallable, even configurable and properly translated if you define settings and translations in the *addon.xml* file.
 
-So, keeping that in mind, you can go on further and create you first CS-Cart add-on.
+So, keeping that in mind, you can go on further and create your first CS-Cart add-on.
 
 
 Hello, World!
