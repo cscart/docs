@@ -60,7 +60,7 @@ Step 2. Configure Subdomains
     :alt: The Websites and Domains tab has the list of your existing subdomains.
 
 --------------------------
-Step 3. Create Stroefronts
+Step 3. Create Storefronts
 --------------------------
 
 1. Open the CS-Cart administration panel. In our case that will be *http://example.com/store/admin.php*.
@@ -168,7 +168,7 @@ So, the *example-store.com* domain name is bound and points to the files of the 
     :alt: Your newly bound domain should now be on the domain list.
 
 --------------------------
-Step 3. Create Stroefronts
+Step 3. Create Storefronts
 --------------------------
 
 Create 2 storefronts with **Storefront URLs** set to *example.com* and *example-store.com* as described in **Way 1**, **Step 3** of this article.
