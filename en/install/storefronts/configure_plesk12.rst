@@ -61,7 +61,7 @@ Step 2. Configure Subdomains
        :alt: The Websites and Domains tab has the list of your existing subdomains.
 
 --------------------------
-Step 3. Create Stroefronts
+Step 3. Create Storefronts
 --------------------------
 
 #. Open the administration panel of CS-Cart or Multi-Vendor. In our case that will be *http://example.com/store/admin.php*.
@@ -151,7 +151,7 @@ If you already have the additional registered domains, they should be bound to y
        :alt: Your newly bound domain should now be on the domain list.
 
 --------------------------
-Step 3. Create Stroefronts
+Step 3. Create Storefronts
 --------------------------
 
 Create 2 storefronts with **Storefront URLs** set to *example.com* and *example-store.com* as described in **Way 1**, **Step 3** of this article.
