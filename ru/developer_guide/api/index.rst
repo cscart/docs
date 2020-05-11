@@ -107,7 +107,7 @@ REST API
 
   curl --header 'Authorization: Basic YWRtaW5AZXhhbXBsZS5jb206dmExdDkwMGIzUDJVQ1FXREhaazFNS0I4Mzk2M3oxNmk=' -X GET 'http://example.com/api/users/'
 
-При в заголовке пара логина/пароля должна быть зашифрована по **base64**. Вот эти строки илюстрируют, как это происходит::
+В заголовке пара логина/пароля должна быть зашифрована по **base64**. Вот эти строки иллюстрируют, как это происходит::
 
   $token = base64_encode("yourApiUserName:yourAPIToken");
   $authHeaderString = 'Authorization: Basic ' . $token;
