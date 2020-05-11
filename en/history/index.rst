@@ -9,7 +9,7 @@ CS-Cart branch 4.11.x
 .. toctree::
     :maxdepth: 1
 
-    4.11.4 (May 12, 2020) <4113>
+    4.11.4 (May 12, 2020) <4114>
     4.11.3 (February 4, 2020) <4113>
     4.11.2 (December 4, 2019) <4112>
     4.11.1 (November 7, 2019) <4111>
