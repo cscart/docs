@@ -2,7 +2,7 @@
 Secure Connection Has Failed
 ****************************
 
-If you enabled secure connection under **Settings → Security** in the administration panel, you might get the following warning:
+If you enabled secure connection under **Settings → Security** in the administration panel, you mitght get the following warning:
 
 .. important::
 
