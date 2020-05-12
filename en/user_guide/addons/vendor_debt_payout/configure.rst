@@ -12,7 +12,7 @@ To reach add-on settings, go to **Add-ons → Manage add-ons**, and find the **V
 
 The add-on has the following settings:
 
-* **Restrict admin panel's functions if venor's debt reaches**—the maximum debt that a vendor can have. It doesn't matter whether you enter a positive or a negative number here—a vendor's balance has to be negative and reach this number.
+* **Restrict admin panel's functions if vendor's debt reaches**—the maximum debt that a vendor can have. It doesn't matter whether you enter a positive or a negative number here—a vendor's balance has to be negative and reach this number.
 
   When a vendor's negative balance is half this number, the vendor will see a warning message. If necessary, you can edit the message in the ``vendor_debt_payout.debt_near_limit_message`` :doc:`language variable </user_guide/look_and_feel/languages/translate>`.
 
