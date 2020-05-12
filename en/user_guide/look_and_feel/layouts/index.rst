@@ -20,6 +20,8 @@ In this section
     :hidden:
 
     layout_structure
+	widget_mode
+
 
 ================
 Managing Layouts
