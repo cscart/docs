@@ -136,7 +136,7 @@ Server Configuration Requirements
 
   * **mod_rewrite** should be enabled (for SEO to work);
 
-  * **mod_headers** should be enabled (for `CORS <https://en.wikipedia.org/wiki/Cross-origin_resource_sharing>`_ and widget mode to work);
+  * **mod_headers** should be enabled (for `CORS <https://en.wikipedia.org/wiki/Cross-origin_resource_sharing>`_  to work);
 
   * **mod_ssl** should be enabled (for SSL to work);
 

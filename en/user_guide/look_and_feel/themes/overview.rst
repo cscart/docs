@@ -15,7 +15,7 @@ Click **NEED HELP** in the upper part of the page to see the video tutorial on h
 
 In the **Current theme** section you can:
 
-•	Open the theme editor to customize your storefront in real time by clicking **Theme editor**. You can customize separately the **Main** layout and the **Widget mode** layout styles.
+•	Open the theme editor to customize your storefront in real time by clicking **Theme editor**.
 •	Choose the existing styles for layouts by using the drop-down lists near each layout name.
 •	Open the **On-site live editor** with the **Edit content on site** button.
 

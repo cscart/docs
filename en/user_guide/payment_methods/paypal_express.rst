@@ -48,7 +48,7 @@ How To: Set up PayPal Express Checkout in CS-Cart
 
 #. (optional) If you didn't use **Connect to PayPal** buttons, make sure to fill in the **Technical details** manually:
 
-   * **Use In-Context Checkout**—tick this checkbox if you want to use *In-Context Checkout*. Please note that In-Context Checkout won’t be used when the store is running in :doc:`the Widget mode </user_guide/look_and_feel/layouts/widget_mode/index>`.
+   * **Use In-Context Checkout**—tick this checkbox if you want to use *In-Context Checkout*.
 
    * **Merchant ID**—this field is required if you choose to use In-Context Checkout. You can find Merchant ID in your PayPal account.
 

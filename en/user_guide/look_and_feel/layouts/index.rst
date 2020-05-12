@@ -20,7 +20,7 @@ In this section
     :hidden:
 
     layout_structure
-	widget_mode
+    widget_mode
 
 
 ================
@@ -31,7 +31,7 @@ You can manage layouts in the **Design → Layouts** section of your store's adm
 
 .. hint::
 
-    Click the **NEED HELP** on the **Design → Layouts** page to see the videos about layouts and the widget mode. 
+    Click the **NEED HELP** on the **Design → Layouts** page to see the videos about layouts. 
 
 .. image:: img/layout_management.png
     :align: center
