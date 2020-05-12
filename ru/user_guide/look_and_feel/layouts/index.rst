@@ -14,9 +14,9 @@
     :glob:
 
     blocks/index
-	breadcrumbs/index
-	framework/index
-	layout_pages/index
+    breadcrumbs/index
+    framework/index
+    layout_pages/index
 	
 
 .. toctree::
@@ -24,7 +24,7 @@
     :hidden:
 
     layout_structure
-	widget_mode/index
+    widget_mode/index
 
 ========================
 Как редактировать макеты

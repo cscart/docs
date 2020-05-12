@@ -14,9 +14,9 @@ In this section
     :glob:
 
     blocks/index
-	breadcrumbs/index
-	framework/index
-	layout_pages/index
+    breadcrumbs/index
+    framework/index
+    layout_pages/index
 
 .. toctree::
     :maxdepth: 1
