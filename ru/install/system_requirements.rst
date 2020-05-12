@@ -134,7 +134,7 @@ CS-Cart разработан с учётом большинства возмож
 
   * включен **mod_rewrite** (для работы SEO);
 
-  * включен **mod_headers** (для работы `CORS <https://ru.wikipedia.org/wiki/Cross-origin_resource_sharing>`_ и режима виджета);
+  * включен **mod_headers** (для работы `CORS <https://ru.wikipedia.org/wiki/Cross-origin_resource_sharing>`_);
 
   * включен **mod_ssl** (для работы SSL);
 

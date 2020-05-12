@@ -13,13 +13,18 @@
     :titlesonly:
     :glob:
 
-    */index
+    blocks/index
+	breadcrumbs/index
+	framework/index
+	layout_pages/index
+	
 
 .. toctree::
     :maxdepth: 1
     :hidden:
 
     layout_structure
+	widget_mode/index
 
 ========================
 Как редактировать макеты
