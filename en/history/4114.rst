@@ -8,21 +8,17 @@ New Features and Improvements
 
 [+] Add-ons: Product variations: API for managing product variations added.
 
-[+] Add-ons: Product variations: Notifications about the need to save products after changing add-on settings were added. Fixed.
+[+] Add-ons: Product variations: Notifications about the need to save products after changing add-on settings were added.
 
 [+] Add-ons: SEO: JSON-LD markup was added for products.
 
-[+] Add-ons: Warehouses [Beta]: Now the add-ons works correctly with multiple storefronts.
+[+] Add-ons: Warehouses [Beta]: Now the add-on works correctly with multiple storefronts.
 
 [+] B2B: Add-ons: Client Tiers: Organizations and representatives [Beta]: Synchronization of tiers between all representatives of same organization was added.
 
 [+] Design: Brands: Ability to limit the number of brands displayed in the "Brands" block added.
 
 [+] Documents: Invoice, Order summary: Link to product details was added to the documents.
-
-[+] Hooks: fn.cart.php: New hook 'update_product_amount_before_tracking_checking' was added at the begging of function 'fn_update_product_amount'.
-
-[+] Hooks: fn.common.php: New hook 'update_status_new_status_added' was added for changing new status code in function 'fn_update_status'.
 
 [+] Multi-Vendor: Add-ons: Stores and pickup points: Filtering by vendors was added for the list of stores and pickup points on the storefront.
 
@@ -59,7 +55,7 @@ Functionality Changes
 
 [*] Multi-Vendor Plus: Add-ons: Common products for vendors: Block manager: The owner of the product is now displayed next to it when you add a product to a block.
 
-[*] Orders: The "Incomplete" can now be chosen on the order editing page in the admin panel.
+[*] Orders: The "Incomplete" status can now be chosen on the order editing page in the admin panel.
 
 [*] Promotions: Search by feature was added for the "Product feature" condition.
 
@@ -125,7 +121,7 @@ Bugfixes
 
 [!] Add-ons: Reward points: Customer got the wrong amount of reward points when buying several discounted items of the same product. Fixed.
 
-[!] Add-ons: SEO: Bestsellers: There was an incorrect canonical link on the pages of the Bestsellers add-on. Fixed.
+[!] Add-ons: SEO: Bestsellers & On-Sale Products: There was an incorrect canonical link on the pages of the "Bestsellers & On-Sale Products" add-on. Fixed.
 
 [!] Add-ons: Social Login: Sign-in via PayPal didn't work. Fixed.
 
@@ -193,7 +189,7 @@ Bugfixes
 
 [!] Multi-Vendor: Add-ons: Vendor data premoderation: After import, a product could require approval even if the add-on settings didn't require it. Fixed.
 
-[!] Multi-Vendor: Add-ons: Vendor data premoderation: Cloned product was created as already approved although new vendor products must be approved by admin according addon settings. Fixed.
+[!] Multi-Vendor: Add-ons: Vendor data premoderation: Cloned product was created as already approved although new vendor products must be approved by admin according to the add-on's settings. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor plans: A vendor plan that was not available for the specific storefront could still appear during vendor registration. Fixed.
 
@@ -205,7 +201,7 @@ Bugfixes
 
 [!] Multi-Vendor Plus: Add-ons: Common products for vendors: Common products did not support "Show out-of-stock products" setting. Fixed.
 
-[!] Multi-Vendor Plus: Add-ons: Common products for vendors: Database error could occur if some vendors tried to start to selling a common product from the same category at the same time. Fixed.
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors: Database error could occur if some vendors tried to start selling a common product from the same category at the same time. Fixed.
 
 [!] Multi-Vendor Plus: Add-ons: Common products for vendors: Discount label was not shown on the product list and on the details of the common product on the storefront. Fixed.
 
@@ -269,4 +265,4 @@ Bugfixes
 
 [!] Users: Sorting by 'Last login' did not work on the list of users in the admin panel. Fixed.
 
-[!] WISYWIG: Redactor II: When a table was inserted, the table borders were not displayed. Fixed.
+[!] WYSIWYG: Redactor II: When a table was inserted, the table borders were not displayed. Fixed.
