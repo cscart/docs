@@ -546,41 +546,30 @@ DRY - Don't repeat yourself
 PHPUnit
 =======
 
+.. important::
+    Данная инструкция актуальна только при наличии доступа к репозиторию CS-Cart.
+
 ---------
-Установка
+Установка 
 ---------
 
-1. Устанавливаем **Composer** глобально в системе::
+Устанавливаем PHPUnit c зависимостями::
 
-     curl -sS https://getcomposer.org/installer | php
-     sudo mv composer.phar /usr/local/bin/composer
-     sudo chmod +x /usr/local/bin/composer
+  cd /path/to/cart/app/lib
+  composer install --dev
 
-2. Устанавливаем **phpunit** и его аддон **dbunit**, необходимый для запуска тестов::
+------
+Запуск
+------
 
-     composer global require "phpunit/phpunit=4.8.*"
-     composer global require "phpunit/dbunit=1.4.*"
+Запускаем новые тесты::
 
-3. Добавляем путь к глобально установленным пакетам в ``$PATH``::
+  /path/to/cart/app/lib/vendor/bin/phpunit -c /path/to/cart/_tools/unit_tests/phpunit.xml
 
-     export PATH=~/.composer/vendor/bin:$PATH
+Запускаем legacy-тесты::
 
-     echo "export PATH=~/.composer/vendor/bin:$PATH" >> ~/.bashrc
+  /path/to/cart/_tools/restore.php u
+  /path/to/cart/app/lib/vendor/bin/phpunit -c /path/to/cart/_tools/build/phpunit.xml
 
-4. Проверяем установку::
-
-     phpunit --version
-
-----------------------
-Запуск тестов локально
-----------------------
-
-::
-
-  phpunit -c _tools/build/phpunit.xml 
-
-  phpunit -c _tools/build/phpunit.xml --debug # запуск с выводом лога тестирования
-
-  phpunit _tools/unit_tests/Tygh/Api/Entities/TaxesTest.php # запуск указанного файла с тестом
-
-Если во время запуска тестов возникает ошибка *"Serialization of 'Closure' is not allowed"*, то бинарный файл **phpunit** следует запускать с флагом: ``phpunit --no-globals-backup``
+.. warning::
+    Не запускайте legacy-тесты в живом магазине! Они меняют базу данных.
