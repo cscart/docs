@@ -24,13 +24,11 @@ New Features and Improvements
 
 [+] Hooks: fn.common.php: New hook 'update_status_new_status_added' was added for changing new status code in function 'fn_update_status'.
 
-[+] Multi-Vendor: Add-ons: Stores and pickup points: Filеtering by vendors was added for the list of stores and pickup points on the storefront.
+[+] Multi-Vendor: Add-ons: Stores and pickup points: Filtering by vendors was added for the list of stores and pickup points on the storefront.
 
 [+] Multi-Vendor Plus: Add-ons: Mobile app: Ability to edit mobile application translations from the administration panel added.
 
 [+] Multi-Vendor Ultimate: Add-ons: Payments by country: A new add-on to add the dependence of the payment method on the country from which the buyer, was introduced.
-
-[+] Orders: The "Incomplete" can now be chosen on the order editing page in the admin panel.
 
 [+] Payment methods: The list of payment processors was rearranged.
 
@@ -60,6 +58,8 @@ Functionality Changes
 [*] Multi-Vendor: Vendors: Logos: Now the logo of the marketplace will serve as the default logo for vendors, instead of the logo of the theme.
 
 [*] Multi-Vendor Plus: Add-ons: Common products for vendors: Block manager: The owner of the product is now displayed next to it when you add a product to a block.
+
+[*] Orders: The "Incomplete" can now be chosen on the order editing page in the admin panel.
 
 [*] Promotions: Search by feature was added for the "Product feature" condition.
 
@@ -157,7 +157,7 @@ Bugfixes
 
 [!] Checkout: Some billing address profile fields were saved in the order data even if the "My billing address is different from shipping address" checkbox wasn't selected when the order was placed. Fixed.
 
-[!] Core: JS: Warnings occured on PHP 7.3 when minifying JavaScript sources. Fixed.
+[!] Core: JS: Warnings occurred on PHP 7.3 when minifying JavaScript sources. Fixed.
 
 [!] Core: Users: Search by full name was incorrect. Fixed.
 
@@ -177,7 +177,7 @@ Bugfixes
 
 [!] File editor: The upload popup did not appear. Fixed.
 
-[!] Layouts: The blocks from the "Default" layout page could be modified on the "Layout" tabe of the editing page of an object (product, page, etc) in some cases. Fixed.
+[!] Layouts: The blocks from the "Default" layout page could be modified on the "Layout" tab of the editing page of an object (product, page, etc.) in some cases. Fixed.
 
 [!] Multi-Vendor: Add-ons: Stripe Connect payments: A disabled payment method could be selected when a vendor's Stripe account was being connected. Fixed.
 
@@ -195,7 +195,7 @@ Bugfixes
 
 [!] Multi-Vendor: Add-ons: Vendor data premoderation: Cloned product was created as already approved although new vendor products must be approved by admin according addon settings. Fixed.
 
-[!] Multi-Vendor: Add-ons: Vendor plans: A vendor plan that was not avaliable for the specific storefront could still appear during vendor registration. Fixed.
+[!] Multi-Vendor: Add-ons: Vendor plans: A vendor plan that was not available for the specific storefront could still appear during vendor registration. Fixed.
 
 [!] Multi-Vendor: Product filters: The block with filters displayed vendors that didn't belong to the current storefront. Fixed.
 
@@ -205,7 +205,7 @@ Bugfixes
 
 [!] Multi-Vendor Plus: Add-ons: Common products for vendors: Common products did not support "Show out-of-stock products" setting. Fixed.
 
-[!] Multi-Vendor Plus: Add-ons: Common products for vendors: Database error could occurr if some vendors tried to start to selling a common product from the same category at the same time. Fixed.
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors: Database error could occur if some vendors tried to start to selling a common product from the same category at the same time. Fixed.
 
 [!] Multi-Vendor Plus: Add-ons: Common products for vendors: Discount label was not shown on the product list and on the details of the common product on the storefront. Fixed.
 
@@ -243,7 +243,7 @@ Bugfixes
 
 [!] Product options: Disabled options was available on the order management page. Fixed.
 
-[!] Products: Forbidden combinaitons: It was impossible to add one more forbidden option combination to product if at least one was already in the list. Fixed.
+[!] Products: Forbidden combinations: It was impossible to add one more forbidden option combination to product if at least one was already in the list. Fixed.
 
 [!] Products: Images: The alt-text of an image disappeared if another image was deleted before product was saved. Fixed.
 
