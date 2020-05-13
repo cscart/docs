@@ -803,41 +803,30 @@ In other cases the **store_closed.html** page will appear, and error 503 will be
 PHPUnit
 =======
 
+.. important::
+    This guide is relevant only if you have access to the CS-Cart repository.
+
 ------------
 Installation
 ------------
 
-1. Install Composer globally::
+Install PHPUnit and its dependencies::
 
-     curl -sS https://getcomposer.org/installer | php
-     sudo mv composer.phar /usr/local/bin/composer
-     sudo chmod +x /usr/local/bin/composer
+  cd /path/to/cart/app/lib
+  composer install --dev
 
-2. Install **phpunit** and its add-on called **dbunit** (it is necessary for running the tests)::
+-------------
+Running tests
+-------------
 
-     composer global require "phpunit/phpunit=4.8.*"
-     composer global require "phpunit/dbunit=1.4.*"
+Run new tests::
 
-3. Add the path to the globally installed packages to ``$PATH``::
+  /path/to/cart/app/lib/vendor/bin/phpunit -c /path/to/cart/_tools/unit_tests/phpunit.xml
 
-     export PATH=~/.composer/vendor/bin:$PATH
+Run legacy tests::
 
-     echo "export PATH=~/.composer/vendor/bin:$PATH" >> ~/.bashrc
+  /path/to/cart/_tools/restore.php u
+  /path/to/cart/app/lib/vendor/bin/phpunit -c /path/to/cart/_tools/build/phpunit.xml
 
-4. Check the installation:
-
-     phpunit --version
-
----------------------
-Running Tests Locally
----------------------
-
-::
-
-  phpunit -c _tools/build/phpunit.xml
-
-  phpunit -c _tools/build/phpunit.xml --debug # run the test and show the testing log
-
-  phpunit _tools/unit_tests/Tygh/Api/Entities/TaxesTest.php # run the specified test file
-
-If you see the ``Serialization of ‘Closure’ is not allowed`` error when running a test, then run the **phpunit** binary with a flag: ``phpunit --no-globals-backup``.
+.. warning::
+    Do not run legacy tests in the live version of your store! Legacy tests change the database.
