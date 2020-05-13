@@ -17,4 +17,3 @@
     responsive_admin_panel
     ../../upgrade/upgrade_addon
     ../../upgrade/upgrade_core_addon
-    compatibility/index
