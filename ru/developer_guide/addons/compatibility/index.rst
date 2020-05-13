@@ -9,6 +9,7 @@
     adapting_4104_to_4111
     adapting_4111_to_4112
     adapting_4112_to_4113
+    adapting_4113_to_4114
 
 .. toctree::
     :maxdepth: 2
