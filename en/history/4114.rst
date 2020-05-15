@@ -266,3 +266,13 @@ Bugfixes
 [!] Users: Sorting by 'Last login' did not work on the list of users in the admin panel. Fixed.
 
 [!] WYSIWYG: Redactor II: When a table was inserted, the table borders were not displayed. Fixed.
+
+=============
+Service Packs
+=============
+
+----------
+4.11.4.SP1
+----------
+
+[!] Add-ons: SEO: JSON-LD: Some third-party themes couldn't work with the new JSON-LD markup, and there was no fallback mechanism. Fixed.
