@@ -816,7 +816,7 @@ Install PHPUnit and its dependencies::
   composer install --dev
 
 -------------
-Running tests
+Running Tests
 -------------
 
 Run new tests::
