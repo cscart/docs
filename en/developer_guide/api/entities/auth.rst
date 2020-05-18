@@ -10,7 +10,7 @@ This entity supports only ``POST`` requests. In a response, it returns a generat
 URL
 ===
 
-*   http://example.com/api/**auth**—request authenication key and link. Only ``POST`` is supported.
+*   http://example.com/api/**auth**—request authentication key and link. Only ``POST`` is supported.
 
 
 ``POST`` Params
@@ -20,7 +20,7 @@ Supported params are given below (mandatory param is marked with **\***).
 
 .. note:: Any param not listed below will be ignored if occurs in an API request JSON data.
 
-*   ``email``\*—user login e-mail. Can be both an admin's or a customer's e-mail. If a not registered e-mail is provided, a 404 error is returned.
+*   ``email``\*—user login e-mail. Can be both an admin's or a customer's e-mail. If a non registered e-mail is provided, a 404 error is returned.
 
 *   ``redirect_url``—URL for the user to be redirected to immediatelly after following the link.
 
@@ -30,6 +30,6 @@ Response
 
 *   ``key``—session key for the authenticated user.
 
-*   ``link``—authenication link for the user to follow. The link contains the session key (as the ``ekey`` param).
+*   ``link``—authentication link for the user to follow. The link contains the session key (as the ``ekey`` param).
 
-    If the ``redirect_url`` param was provided in the request, the link will contain the ``redirect_url`` param, and the user will be immediatelly redirected to the provided URL.
+    If the ``redirect_url`` param was provided in the request, the link will contain the ``redirect_url`` param, and the user will be immediately redirected to the provided URL.

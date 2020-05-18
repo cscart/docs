@@ -47,7 +47,7 @@ Add these parameters to the request path to specify which carts will be returned
         -   10
         -   Determines the number of carts on a page.
     *   -   sort_by
-        -   ``name``
+        -   ``date``
         -   Sort carts by ``customer`` or ``date``.
     *   -   sort_order
         -   ``desc``

@@ -22,7 +22,7 @@ This request returns 10 orders with a short list of details for each order.
 Pagination, Sorting, and Filtering
 ----------------------------------
 
-Add these parameters to the path to specify what orders will be returned in the response and how they will be organized:
+Add these parameters to the path to specify which orders will be returned in the response and how they will be organized:
 
 .. list-table::
     :header-rows: 1
@@ -61,7 +61,7 @@ Add these parameters to the path to specify what orders will be returned in the 
             | ``Y``—awaiting call
     *   -   user_id
         -   
-        -   Searches only for the orders placed the customer with the specified ID.
+        -   Searches only for the orders placed by the customer with the specified ID.
     *   -   company_id
         -   
         -   Searches only for the orders placed on the specific storefront (in CS-Cart) or at the specific vendor (in Multi-Vendor). 

@@ -149,7 +149,7 @@ The fields below represent various details of a block.
 Create a Block
 ==============
 
-To create an block, send a POST request to ``/api/blocks/``.
+To create a block, send a POST request to ``/api/blocks/``.
 
 Pass the fields with the block details in the HTTP request body in accordance with the passed ``Content-Type``. Required fields are marked with *****:
 
