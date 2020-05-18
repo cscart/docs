@@ -119,11 +119,7 @@ Part 2. Acquisition
 How Do I Get a Mobile Application for My Store?
 -----------------------------------------------
 
-<<<<<<< HEAD
-#. Check the descriptions of our mobile apps `for Multi-Vendor <https://www.cs-cart.com/multivendor-mobile-application.html>`_..
-=======
 #. Check the description of our mobile app `for Multi-Vendor <https://www.cs-cart.com/multivendor-mobile-application.html>`_.
->>>>>>> fb10b16c... Update faq.rst
 
 #. If you decide to get the app (or if you have any questions), contact us via the forms on those pages.
 
@@ -144,10 +140,7 @@ How Do I Get a Mobile Application for My Store?
 --------------------------------------------
 What Versions of Multi-Vendor Are Supported?
 --------------------------------------------
-<<<<<<< HEAD
-=======
 
->>>>>>> fb10b16c... Update faq.rst
 It's best if you use the latest version. It always includes all the changes to the **Mobile Application** add-on and the way how your store interacts with your mobile application.
 
 If you aren't using the latest version, just mention it when contacting us, and we'll help you get started. For example, version 4.8.1 is the earliest version that comes with the **Mobile Application** add-on. But we've made some improvements since then, so we may first need to apply them to your Multi-Vendor installation.
@@ -350,9 +343,6 @@ The top menu of the sidebar (Home, Cart, Wish List, My profile, Orders) is alway
    .. image:: img/sidebar_menu.png
        :align: center
        :alt: The menu items in Multi-Vendor and in the mobile app.
-<<<<<<< HEAD
 
 .. meta::
    :description: FAQ about mobile application for a Multi-Vendor marketplace: functionality, acquisition, customization, and support.
-=======
->>>>>>> fb10b16c... Update faq.rst
