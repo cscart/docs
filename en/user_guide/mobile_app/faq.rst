@@ -96,7 +96,7 @@ Yes. If you enable them, customers will be able to receive information about ord
 Can I Get the Source Code of the App?
 -------------------------------------
 
-Yes, but not as part of our standard plans. For more information, please check the **Pricing** section of our app pages `for Multi-Vendor <https://www.cs-cart.com/multivendor-mobile-application.html>`_.
+Yes, but it depends on your chosen Multi-Vendor edition. For more information, please check `the comparison of Multi-Vendor editions <https://www.cs-cart.com/compare.html>`_ in regard to mobile application source code.
 
 The technical support for the source code is limited. The license agreement allows using the source code only with one Multi-Vendor installation and forbids publishing the source code or handing it over to third parties. However, you get to publish the application from your own account on Apple App Store and Google Play and showcase your company as the app developer.
 
