@@ -2,13 +2,9 @@
 How To: Install CS-Cart or Multi-Vendor via Console
 ***************************************************
 
-.. note::
-
-    **Tutorial Difficulty: 2 / 3**
-
 To install CS-Cart or Multi-Vendor via console, complete these steps:
 
-#. Download CS-Cart from `here <https://www.cs-cart.com/download-cs-cart.html>`_ or Multi-Vendor from `here <https://www.cs-cart.com/download-multivendor.html>`_.
+#. Download the latest version of `CS-Cart <https://www.cs-cart.com/download-cs-cart.html>`_ or `Multi-Vendor <https://www.cs-cart.com/download-multivendor.html>`_.
 
 #. Put the downloaded archive into the web-accesible directory.
 
