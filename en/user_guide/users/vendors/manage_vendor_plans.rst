@@ -60,7 +60,7 @@ Add/Edit a Vendor Plan
 
    * **Price**—determines how much and how often a vendor has to pay for using this plan.
 
-   * **Transaction fee**—a commission from the sales that a vendor has to pay to the store owner.
+   * **Transaction fee**—a commission from the sales that a vendor has to pay to the marketplace owner.
 
      .. note::
 
@@ -78,7 +78,7 @@ Add/Edit a Vendor Plan
 
      .. important::
 
-         When a vendor has a larger revenue than allowed by the plan, an email will be sent to notify the store owner about it. A vendor can still continue to work as usual, and it’s up to the store owner how to handle this situation.
+         When a vendor has a larger revenue than allowed by the plan, an email will be sent to notify the marketplace owner about it. A vendor can still continue to work as usual, and it’s up to the marketplace owner how to handle this situation.
 
    * **Vendor microstore**—tick the checkbox to allow vendors to have a microstore. It is a section of the store that includes only the products, categories, and filters of a specific vendor. The search in that section is also limited to the assets of a specific vendor.
 

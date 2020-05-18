@@ -13,6 +13,8 @@ How To: Configure the Vendor Plans Add-on
 #. Configure the add-on’s settings:
 
    * **Include shipping cost in vendors commission**—if you tick this checkbox, shipping will be done at the expense of the vendors.
+   
+   * **Include taxes in vendor commissions**—calculate vendor commissions without subtracting taxes from the order total beforehand.
 
    * **Allow vendors to change their current plan**—if you tick this checkbox, vendors will be able to :ref:`move to another plan by themselves. <switch-between-vendor-plans>` Otherwise vendors simply won’t see other plans when they edit their profiles.
 
@@ -22,6 +24,6 @@ How To: Configure the Vendor Plans Add-on
 
 #. Click **Save** to apply your changes.
 
-.. image:: img/vendor_plans_settings.png
-    :align: center
-    :alt: The settings of the Vendor Plans add-on.
+   .. image:: img/vendor_plans_settings.png
+       :align: center
+       :alt: The settings of the Vendor Plans add-on.
