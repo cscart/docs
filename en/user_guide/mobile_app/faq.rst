@@ -343,9 +343,6 @@ The top menu of the sidebar (Home, Cart, Wish List, My profile, Orders) is alway
    .. image:: img/sidebar_menu.png
        :align: center
        :alt: The menu items in Multi-Vendor and in the mobile app.
-<<<<<<< HEAD
 
 .. meta::
    :description: FAQ about mobile application for Multi-Vendor marketplace: functionality, acquisition, customization, and support.
-=======
->>>>>>> fb10b16c... Update faq.rst
