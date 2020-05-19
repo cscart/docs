@@ -4,8 +4,7 @@ The Themes Section Overview
 
 In the **Design → Themes** section of the Administration panel you can choose, install, upload, delete, and customize themes for your store.
 
-.. image:: img/themes.png
-    :align: center
+.. fancybox:: img/themes.png
     :alt: The Themes section
 
 In this page you can see the current theme applied to your store and the list of available themes (with different styles for each theme).
@@ -38,8 +37,7 @@ With the **On-site live editor** you can edit:
 
 In the **Installed theme** tab, there is a list of themes with different styles, that you can use in your store. For example, there is the default **Responsive** theme and the list of styles (Black, Brightness, Facebook, etc.) available for it. Hover the mouse pointer over the style preview and click **Use this style** to use the style.
 
-.. image:: img/avail_themes.png
-    :align: center
+.. fancybox:: img/avail_themes.png
     :alt: Available themes
 
 
@@ -54,8 +52,7 @@ Here you can:
 *	see the list of styles for the current theme by clicking on the number of styles.
 
 
-.. image:: img/themes_01.png
-    :align: center
+.. fancybox:: img/themes_01.png
     :alt: Right section
 
 
@@ -78,6 +75,5 @@ To upload a new theme, click the **+** button in the right upper corner of the p
 
 Pay attention, that the theme archive must be in *tgz*, *gz* or *zip* format. When you are ready, click **Upload**.
 
-.. image:: img/upload_theme.png
-    :align: center
+.. fancybox:: img/upload_theme.png
     :alt: Upload a theme
