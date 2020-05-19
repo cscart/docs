@@ -5,8 +5,8 @@ Statuses
 URLs
 ====
 
-*   http://example.com/api/**statuses**—refer to all products. Only ``GET`` and ``POST`` are supported.
-*   http://example.com/api/**statuses/:id**—refer to a particular product. ``GET``, ``PUT``, and ``DELETE`` are supported.
+*   http://example.com/api/**statuses**—refer to all statuses. Only ``GET`` and ``POST`` are supported.
+*   http://example.com/api/**statuses/:id**—refer to a particular status. ``GET``, ``PUT``, and ``DELETE`` are supported.
 
 Pagination
 ==========
