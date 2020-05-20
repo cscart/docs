@@ -12,7 +12,8 @@ To open the **Theme editor** panel, in the Administration panel go to the **Desi
 
 You can hide the editor panel or close the **Theme editor** using the controls marked with red in the picture below.
 
-.. fancybox:: img/theme_editor.png
+.. image:: img/theme_editor.png
+    :align: center
     :alt: The Theme editor panel
 
 With the help of the **Theme editor** you can create unlimited number of styles, clone and delete the existing styles (except the default one).
@@ -33,7 +34,8 @@ There are 6 groups of the theme customization:
 *	**Backgrounds** - Background settings (color, gradient, image, etc.)
 *	**Custom CSS** - Advanced style settings in CSS-format.
 
-.. fancybox:: img/theme_editor_01.png
+.. image:: img/theme_editor_01.png
+    :align: center
     :alt: Customizing
 
 General
@@ -94,7 +96,8 @@ For the **General** subsection, you can also set pattern as the background. Clic
 	You cannot upload patterns for default styles. Create a new one first. To do it, click the **Save** button near the style name and type a new style name in the pop up window.
 
 
-.. fancybox:: img/background.png
+.. image:: img/background.png
+    :align: center
     :alt: Backgrounds
 
 With the help of pointers you can set the position of an image. Drop-down lists help you to define the picture display methods: whether to repeat it in different directions (to fill in the background) or not, and whether to scroll the image or leave it fixed while searching through the page.

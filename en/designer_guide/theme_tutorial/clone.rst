@@ -12,8 +12,9 @@ To start developing your own theme, clone the **Responsive** theme, which comes 
 
        This will clone the theme that is currently active in your store. If your active theme is not **Responsive**, then activate **Responsive** before attempting to clone the theme.
 
-    .. fancybox:: img/clone_a_theme.png
-        :alt: Cloning a theme in the Administration panel.
+  .. image:: img/clone_a_theme.png
+      :align: center
+      :alt: Cloning a theme in the Administration panel.
 
 #. A popup window will open. Enter the details of your new cloned theme:
 
@@ -37,5 +38,6 @@ Now the new theme is ready to be customized. In the next tutorial we’ll custom
 
     The clone theme won’t be activated automatically after creation. You’ll need to activate it manually under **Design → Themes**.
 
-.. fancybox:: img/clone_theme_details.png
+.. image:: img/clone_theme_details.png
+    :align: center
     :alt: The properties of the clone theme.
