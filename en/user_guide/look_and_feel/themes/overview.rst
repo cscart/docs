@@ -71,7 +71,7 @@ Here you can also see the **Rebuild cache automatically** selector. Click (On) i
 
 .. important::
 
-	Before deleting a theme, make sure that the layout used by it is not set as default. Otherwise, you will not be able to delete a theme.
+    Before deleting a theme, make sure that the layout used by it is not set as default. Otherwise, you will not be able to delete a theme.
 
 
 To upload a new theme, click the **+** button in the right upper corner of the page. In the opened pop-up window choose whether to upload a file from the local computer (**Local**) or the server file system (**Server**). You can also specify **URL** to a remote location, where the required archive is physically located.

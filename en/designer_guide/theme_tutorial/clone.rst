@@ -12,9 +12,9 @@ To start developing your own theme, clone the **Responsive** theme, which comes 
 
        This will clone the theme that is currently active in your store. If your active theme is not **Responsive**, then activate **Responsive** before attempting to clone the theme.
 
-  .. image:: img/clone_a_theme.png
-      :align: center
-      :alt: Cloning a theme in the Administration panel.
+   .. image:: img/clone_a_theme.png
+       :align: center
+       :alt: Cloning a theme in the Administration panel.
 
 #. A popup window will open. Enter the details of your new cloned theme:
 

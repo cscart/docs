@@ -45,7 +45,7 @@ To change the favicon for the store, click **Browse** and choose a picture. Favi
 
 .. important::
 
-	You cannot upload a favicon for default styles. Create a new one first. To do it, click the **Save** button near the style name and type a new style name in the pop up window.
+    You cannot upload a favicon for default styles. Create a new one first. To do it, click the **Save** button near the style name and type a new style name in the pop up window.
 
 Logos
 -----
@@ -58,7 +58,7 @@ An alternative text describes the image and is shown when the image is missing o
 
 .. important::
 
-	You cannot upload logos for default styles. Create a new one first. To do it, click the **Save** button near the style name and type a new style name in the pop up window.
+    You cannot upload logos for default styles. Create a new one first. To do it, click the **Save** button near the style name and type a new style name in the pop up window.
 
 Colors
 ------
@@ -93,7 +93,7 @@ For the **General** subsection, you can also set pattern as the background. Clic
 
 .. important::
 
-	You cannot upload patterns for default styles. Create a new one first. To do it, click the **Save** button near the style name and type a new style name in the pop up window.
+    You cannot upload patterns for default styles. Create a new one first. To do it, click the **Save** button near the style name and type a new style name in the pop up window.
 
 
 .. image:: img/background.png
