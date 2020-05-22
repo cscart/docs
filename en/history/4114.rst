@@ -276,3 +276,9 @@ Service Packs
 ----------
 
 [!] Add-ons: SEO: JSON-LD: Some third-party themes couldn't work with the new JSON-LD markup, and there was no fallback mechanism. Fixed.
+
+----------
+4.11.4.SP2
+----------
+
+[!] Core: Installation and upgrade, backup and restore, export and import, and some other actions didn't work in Google Chrome v83. Fixed.
