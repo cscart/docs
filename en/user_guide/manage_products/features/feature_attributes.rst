@@ -81,7 +81,7 @@ The following properties of feature variants are available only for the *Brand/M
 
   The description can be either a plain text or a formatted HTML text. If you are not familiar with HTML, you can add a formatted description with the built-in WYSIWYG HTML editor.
 
-* **Page title**——the content of the ``<title></title>`` container: the title of the brand's page on the storefront, which is displayed in the web browser when somebody is viewing the page. If you don't specify a value manually, it will be generated automatically.
+* **Page title**—the content of the ``<title></title>`` container: the title of the brand's page on the storefront, which is displayed in the web browser when somebody is viewing the page. If you don't specify a value manually, it will be generated automatically.
 
 * **URL**—the link to the brand's website.
 
