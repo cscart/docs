@@ -83,7 +83,7 @@ The full list of supported fields is given below (mandatory fields are marked wi
         -   Depends on ``feature_type``
         -   | ``find_products``—help customers find products via filters
             | ``group_catalog_item``—variations as separate products (part of :doc:`product_variations </user_guide/addons/product_variations/index>` add-on)
-            | ``group_variation_catalog_item``—variations as one product (part of :doc:`product_variations </user_guide/addons/product_variations/index>` add-on
+            | ``group_variation_catalog_item``—variations as one product (part of :doc:`product_variations </user_guide/addons/product_variations/index>` add-on)
             | ``organize_catalog``—brand, author, etc.
             | ``describe_product``—additional non-filterable information
     *   -   feature_style
@@ -386,7 +386,7 @@ Send the data in the body of the HTTP request. The data should comply with the `
 
 This example request creates a new product with the value of the feature set to *Test*. 
 
-If you successfully create a product, you will receive the ID of the product the in the response.
+If you successfully create a product, you will receive the ID of the product in the response.
 
 .. code-block:: bash
 
