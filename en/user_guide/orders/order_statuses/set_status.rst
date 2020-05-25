@@ -58,6 +58,8 @@ Status Properties
 
 * **Remove CC info**—tick this checkbox to remove sensitive credit card info from the database when the order gets this status.
     
+* **Pay order again**—tick this checkbox to allow a customer to make a payment for the order again, if it was declined.
+
 *  **Invoice/Credit memo**—choose the desired behavior after an order gets this status: 
 
    * *Default*—the default behavior (an invoice ID is not generated); 
