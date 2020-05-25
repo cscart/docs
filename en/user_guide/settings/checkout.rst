@@ -6,8 +6,6 @@ Use this section to configure the appearance and functionality of the checkout p
 
 * **Disable anonymous checkout**—if you enable this setting, only registered customers will be allowed to place orders in your store.
 
-* **Allow customers to pay order again if transaction was declined**—if you enable this setting, customers will be allowed to carry out the same transaction if it failed previously.
-
 * **Offer guest to create an account after successful order**—if you enable this setting, the buyer who placed an order as a guest will be offered to register an account afterwards.
 
 * **Initial order ID value**—an integer number to open the order ID numbering. The value you enter here will be used as the ID of the next order placed in your store. With every new order, its ID will increase by 1. The value of this field cannot be lower than any order ID that already exists in the database.
