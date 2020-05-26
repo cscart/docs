@@ -282,3 +282,9 @@ Service Packs
 ----------
 
 [!] Core: Installation and upgrade, backup and restore, export and import, and some other actions didn't work in Google Chrome v83. Fixed.
+
+----------
+4.11.4.SP3
+----------
+
+[!] Multi-Vendor: Emails: After vendor registration, the vendor’s administrator received an email with login information, but instead of a login (email), there was an internal user ID. Fixed.
