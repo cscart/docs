@@ -19,8 +19,8 @@ API Response Errors
     *   -   404 "Not Found"
         -   The requested object does not exist.
     *   -   405 "Method Not Allowed"
-        -   Initialized method is not suppoted for the request-URI.
-    *   -   406 "Not Acceptible"
+        -   Initialized method is not supported for the request-URI.
+    *   -   406 "Not Acceptable"
         -   The resource cannot generate a response in the format specified in the request (the ``accept`` header has an invalid type).
     *   -   409 "Conflict"
         -   The change is being rejected due to a condition imposed by the server. The reasons for that may vary and may be described in the response.
