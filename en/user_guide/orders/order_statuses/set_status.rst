@@ -2,7 +2,7 @@
 How To: Set up an Order Status
 ******************************
 
-#. Go to **Administration → Order statuses** in the Administration panel of your store.
+#. Go to **Administration → Statuses → Order statuses** in the Administration panel of your store.
 
 #. Choose whether you want to:
 
@@ -74,17 +74,7 @@ Status Properties
 
     The properties described below appear only when the corresponding add-ons are installed and activated under **Add-ons → Manage add-ons**. These add-ons are: **Suppliers**, **Gift certificates**, **RMA**, **Reward points**.
 
-* **Notify supplier**—tick this checkbox to send automatic email notifications to suppliers once an order gets this status. The notifications will be sent to suppliers whose products are in the order.
-
 * **Change gift certificate status to**—choose a status to be automatically assigned to gift certificates purchased as a part of an order that gets this order status.
-
-* **Allow return registration**—tick this checkbox to allow customers to request a return if the order has this status.
-
-* **Grant reward points**—tick this checkbox to give the earned reward points to the customer once the order gets this status. 
-
-  .. note::
-
-      If you change a status of the order to a status that grants reward points, the customer will get them. But if you later choose another status that doesn't grant reward points, the points will be taken from the customer.
 
 .. image:: img/order_status_01.png
     :align: center
