@@ -24,13 +24,13 @@ Getting Client ID and Defining Redirect URI
        :align: center
        :alt: The Stripe dashboard.
 
-#. A new page will open. Switch to the **Settings** tab in the **Connect** section.
+#. A new page will open. Go to **Settings** in the **Connect** section.
 
    .. image:: img/stripe_connect_settings.png
        :align: center
        :alt: The Connect page.
 
-#. On the **Settings** tab find the **Integration** section and copy the **Live mode client ID**.
+#. On the **Settings** page find the **Integration** section and copy the **Live mode client ID**.
 
    .. image:: img/stripe_client_id.png
        :align: center
@@ -56,13 +56,13 @@ Getting Client ID and Defining Redirect URI
 Getting Publishable Key and Secret Key
 ======================================
 
-#. Choose **Settings** and then select **API** on the sidebar of the Stripe dashboard.
+#. Choose **Settings** and then select **API keys** on the sidebar of the Stripe dashboard.
 
    .. image:: img/stripe_api.png
        :align: center
        :alt: Stripe API section.
 
-#. On the **API** tab find the **Publishable key** and **Secret key** fields and copy their values.
+#. On the **API keys** page find the **Publishable key** and **Secret key** fields and copy their values.
 
    .. image:: img/stripe_keys.png
        :align: center
