@@ -62,6 +62,7 @@
     customer_to_vendor_communication/index
     yandex_metrika/index
     yml_export/index
+    yandex_checkout/index
 
 .. toctree::
     :hidden:
