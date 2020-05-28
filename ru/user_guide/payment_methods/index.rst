@@ -26,6 +26,7 @@
 
     yandex_money
     yandex_money_p2p
+    yandex_checkout_marketplaces
     sberbank
     sberbank_online
     alfabank
