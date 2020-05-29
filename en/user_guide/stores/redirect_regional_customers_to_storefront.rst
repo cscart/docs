@@ -48,5 +48,8 @@ Let's make sure the visitors from those countries get to the right storefront.
        :align: center
        :alt: You can create multiple storefronts for specific countries or groups of countries, then redirect customers to the right storefront.
 
+.. important::
+    For geoocation, we use GeoLite2 databases created by MaxMind, available from `https://www.maxmind.com <https://www.maxmind.com/>`_.
+
 .. meta::
    :description: How to redirect customers to specific storefront for their country in CS-Cart online store or Multi-Vendor marketplace?
