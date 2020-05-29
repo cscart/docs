@@ -114,6 +114,8 @@
 {%- if display_canonical_url %}
     <link rel="canonical" href="{{ canonical_url }}" />
 {%- endif %}
+
+{% include "analytics.html" %}
 {% endblock %}
 
 {# Silence the sidebar's, relbar's #}
