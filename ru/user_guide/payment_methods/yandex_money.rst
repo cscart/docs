@@ -22,7 +22,7 @@
 
     Для работы с Яндекс.Кассой `на вашем сервере должен быть установлен SSL-сертификат <https://kassa.yandex.ru/tech/ssl.html>`_. Можно использовать самоподписанный сертификат.
 
-#. :doc:`Установите модуль </user_guide/addons/1manage_addons>` **Яндекс.Касса**.
+#. Установите модуль :doc:`/user_guide/addons/yandex_checkout/index`.
 
 #. `Подключите ваш интернет-магазин к Яндекс.Кассе. <https://money.yandex.ru/joinups/?cms_name=cscart>`_
 
