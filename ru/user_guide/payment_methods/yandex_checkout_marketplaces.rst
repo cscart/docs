@@ -29,7 +29,7 @@
 Шаг 1. Настройте способ оплаты
 ------------------------------
 
-#. :doc:`Установите модуль </user_guide/addons/1manage_addons>` ../user_guide/addons/yandex_checkout/index:.
+#. :doc:`Установите модуль </user_guide/addons/1manage_addons>` :doc:`/user_guide/addons/yandex_checkout/index`_.
 
 #. `Подключите ваш маркетплейс к Яндекс.Кассе. <https://money.yandex.ru/joinups/?cms_name=cscart>`_
 
