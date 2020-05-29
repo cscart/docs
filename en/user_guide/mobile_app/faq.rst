@@ -63,6 +63,9 @@ Payment methods in the mobile app are positioned in the same order as in your st
 .. hint::
 
     Technical info — the list of supported payment templates: ``cc.tpl``, ``empty.tpl``, ``check.tpl``, ``paypal_express.tpl``, ``phone.tpl``.
+    
+.. warning::
+    For the time being, mobile application doesn't support the Direct Customer-to-Vendor Payments add-on from Multi-Vendor Plus and Ultimate.
 
 ------------------------------------
 What Languages Does the App Support?
