@@ -189,6 +189,9 @@ There are other parameters that aren’t returned by CS-Cart REST API, but can b
   * ``Y``—customers can be redirected.
 
   * ``N``—customers can’t be redirected.
+  
+  .. important::
+    For geoocation, we use GeoLite2 databases created by MaxMind, available from `https://www.maxmind.com <https://www.maxmind.com/>`_.
 
 * **entry_page**—determines the pages of the store which should take the customer to the :doc:`global entry page <../../../user_guide/stores/global_entry_point>`:
 
