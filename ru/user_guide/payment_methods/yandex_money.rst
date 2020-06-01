@@ -10,6 +10,9 @@
 
 #. При нажатии кнопки "Оформить заказ" он попадает на страницу Яндекс.Кассы, и уже там выбирает `подходящий способ оплаты <https://kassa.yandex.ru/help/payments/accept-methods.html>`_. 
 
+   .. fancybox:: user_guide/addons/yandex_checkout/img/payment_yandex.png
+       :alt: Способы оплаты Яндекса и поля для ввода данных банковской карты.
+
    .. note::
 
        Такой принцип работы описан на сайте Яндекс.Кассы как `"Сценарий 1: Выбор способа оплаты на странице Кассы" <https://kassa.yandex.ru/pay_by_yandex/#1>`_. Его преимущество в том, что `когда Яндекс.Касса добавит новые способы оплаты, то и вы сможете их быстро добавить <https://kassa.yandex.ru/help/payments/accept-methods.html#accept-methods__adding-new>`_.
