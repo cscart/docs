@@ -18,19 +18,19 @@ Getting Client ID and Defining Redirect URI
        :align: center
        :alt: The Stripe website.
 
-#. Select **Connect** on the sidebar of the Stripe dashboard.
+#. Select **Settings** on the sidebar of the Stripe dashboard.
 
    .. image:: img/stripe_dashboard_connect.png
        :align: center
        :alt: The Stripe dashboard.
 
-#. A new page will open. Switch to the **Settings** tab.
+#. A new page will open. Go to **Settings** in the **Connect** section.
 
    .. image:: img/stripe_connect_settings.png
        :align: center
        :alt: The Connect page.
 
-#. On the **Settings** tab find the **Client IDs** section and copy the **live mode client ID**.
+#. On the **Settings** page find the **Integration** section and copy the **Live mode client ID**.
 
    .. image:: img/stripe_client_id.png
        :align: center
@@ -42,23 +42,27 @@ Getting Client ID and Defining Redirect URI
        :align: center
        :alt: Stripe client ID in Multi-Vendor.
 
-#. Copy the **Redirect URIs** from the Stripe Connect payment method settings in Multi-Vendor, go back to the Stripe dashboard and insert the URI into the corresponding field.
+#. Copy both Redirect URIs from the Stripe Connect payment method settings in Multi-Vendor, go back to the Stripe dashboard and insert the URIs into the corresponding field.
+
+   .. image:: img/stripe_сscart_redirect_uri.png
+       :align: center
+       :alt: Stripe redirect URI.
 
    .. image:: img/stripe_redirect_uri.png
        :align: center
        :alt: Stripe redirect URI.
-
+      
 ======================================
 Getting Publishable Key and Secret Key
 ======================================
 
-#. Select **API** on the sidebar of the Stripe dashboard.
+#. Choose **Settings** and then select **API keys** on the sidebar of the Stripe dashboard.
 
    .. image:: img/stripe_api.png
        :align: center
        :alt: Stripe API section.
 
-#. On the **API** tab find the **Publishable key** and **Secret key** fields and copy their values.
+#. On the **API keys** page find the **Publishable key** and **Secret key** fields and copy their values.
 
    .. image:: img/stripe_keys.png
        :align: center
