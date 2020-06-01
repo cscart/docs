@@ -8,7 +8,7 @@
 
     Сначала установите Apache, MySQL и PHP.
 
-#. Скачайте последнюю версию CS-Cart на сайте `www.cs-cart.ru <https://www.cs-cart.ru/download.html>`_.
+#. Скачайте последнюю версию `CS-Cart <https://www.cs-cart.ru/download.html>`_ или `Multi-Vendor <https://www.cs-cart.com/download-multivendor.html>`_ с официального сайта.
 
 #. Создайте новую директорию */var/www/cscart/*. Если хотите, используйте вместо *cscart* любое другое имя.
 
