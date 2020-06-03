@@ -44,10 +44,6 @@ Getting Client ID and Defining Redirect URI
 
 #. Copy both Redirect URIs from the Stripe Connect payment method settings in Multi-Vendor, go back to the Stripe dashboard and insert the URIs into the corresponding field.
 
-   .. image:: img/stripe_сscart_redirect_uri.png
-       :align: center
-       :alt: Stripe redirect URI.
-
    .. image:: img/stripe_redirect_uri.png
        :align: center
        :alt: Stripe redirect URI.
