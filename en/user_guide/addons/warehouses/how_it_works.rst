@@ -103,7 +103,7 @@ It depends on how you configure the warehouses and CS-Cart/Multi-Vendor. There a
 
 * The quantity of products in the stores and warehouses that "Ship to" the rate area.
 
-.. important::
+.. hint::
     For geolocation, we use GeoLite2 databases created by MaxMind, available from `https://www.maxmind.com <https://www.maxmind.com/>`_.
 
 For example, see the picture below. The quantity of products from this store will be available in all existing rate areas, because the store ships to them all.

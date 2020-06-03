@@ -34,5 +34,5 @@ How To: Configure the Mobile Storefront
 
 *	Click the **Save** button.
 
-.. important::
+.. hint::
     For geolocation, we use GeoLite2 databases created by MaxMind, available from `https://www.maxmind.com <https://www.maxmind.com/>`_.
