@@ -65,7 +65,7 @@
     Техническая информация — список поддерживаемых шаблонов способов оплаты: ``cc.tpl``, ``check.tpl``, ``empty.tpl``, ``paypal_express.tpl``, ``phone.tpl``, ``yandex_money.tpl``.
     
 .. warning::   
-    На настоящий момент мобильное приложение не поддерживает модуль "Оплата напрямую продавцам" из Multi-Vendor Plus и Ultimate.
+    На настоящий момент мобильное приложение не поддерживает модуль :doc:`/user_guide/addons/direct_customer_to_vendor_payments/index` из Multi-Vendor Plus и Ultimate.
 
 ------------------------------------
 Какие языки поддерживает приложение?
