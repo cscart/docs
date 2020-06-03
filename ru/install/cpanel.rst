@@ -122,7 +122,7 @@
 Загрузка файлов
 ***************
 
-1)  Скачайте последнюю версию `CS-Cart <https://www.cs-cart.ru/download.html>`_ или `Multi-Vendor <https://www.cs-cart.com/download-multivendor.html>`_ с официального сайта.
+1)  Скачайте последнюю версию `CS-Cart <https://www.cs-cart.ru/download.html>`_ на официальном сайте. Если вас интересует русская версия Multi-Vendor (CS-Cart для маркетплейсов), то `свяжитесь с нами через форму <https://multivendor.cs-cart.ru/#form>`_.
 
 2)  Откройте "Диспетчер файлов" в разделе "Файлы" панели управления хостингом (cPanel).
 

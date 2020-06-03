@@ -18,96 +18,96 @@
 
 Устанавливаем CS-Cart как на обычный хостинг.
 
-1.  Скачиваем последнюю версию `CS-Cart <https://www.cs-cart.ru/download.html>`_ или `Multi-Vendor <https://www.cs-cart.com/download-multivendor.html>`_ с официального сайта.
+#. Скачайте последнюю версию `CS-Cart <https://www.cs-cart.ru/download.html>`_ на официальном сайте. Если вас интересует русская версия Multi-Vendor (CS-Cart для маркетплейсов), то `свяжитесь с нами через форму <https://multivendor.cs-cart.ru/#form>`_.
 
-    .. fancybox:: img/download.PNG
-        :alt: VPS
+   .. fancybox:: img/download.PNG
+       :alt: VPS
 
-2.  Копируем архив в папку на сервере (с помощью FileZilla).
+#. Копируем архив в папку на сервере (с помощью FileZilla).
 
-    .. fancybox:: img/install_1.PNG
-        :alt: VPS
+   .. fancybox:: img/install_1.PNG
+       :alt: VPS
 
-3.  Открываем терминал (PuTTY) и переходим в папку интернет-магазина с помощью команды:
+#. Открываем терминал (PuTTY) и переходим в папку интернет-магазина с помощью команды:
 
-    ::
+   ::
 
-        cd /var/www/html/dbazhenov.ru/
+       cd /var/www/html/dbazhenov.ru/
 
-    .. fancybox:: img/install_2.PNG
-        :alt: VPS
+   .. fancybox:: img/install_2.PNG
+       :alt: VPS
 
-4.  Чтобы увидеть содержимое папки, используем команду:
+#. Чтобы увидеть содержимое папки, используем команду:
 
-    ::
+   ::
 
-        ls
+       ls
 
-    .. fancybox:: img/install_3.PNG
-        :alt: VPS
+   .. fancybox:: img/install_3.PNG
+       :alt: VPS
 
-    Видим наличие архива в папке.
+   Видим наличие архива в папке.
 
-5.  Распаковываем архив с помощью команды:
+#. Распаковываем архив с помощью команды:
 
-    ::
+   ::
 
-        tar xvzf название_архива.tgz
+       tar xvzf название_архива.tgz
 
-    В нашем случае это:
+   В нашем случае это:
 
-    ::
+   ::
 
-        tar xvzf cscart_v4.2.3_ru.tgz
+       tar xvzf cscart_v4.2.3_ru.tgz
 
-    .. fancybox:: img/install_4.PNG
-        :alt: VPS
+   .. fancybox:: img/install_4.PNG
+       :alt: VPS
 
-6.  Устанавливаем права на папки и файлы, с помощью команд:
+#. Устанавливаем права на папки и файлы, с помощью команд:
 
-    ::
+   ::
 
-        chmod 666 config.local.php
-        chmod -R 777 design images var
-        find design -type f -print0 | xargs -0 chmod 666
-        find images -type f -print0 | xargs -0 chmod 666
-        find var -type f -print0 | xargs -0 chmod 666
+       chmod 666 config.local.php
+       chmod -R 777 design images var
+       find design -type f -print0 | xargs -0 chmod 666
+       find images -type f -print0 | xargs -0 chmod 666
+       find var -type f -print0 | xargs -0 chmod 666
 
-    Вводим команды в терминал по очереди.
+   Вводим команды в терминал по очереди.
 
-    .. fancybox:: img/install_5.PNG
-        :alt: VPS
+   .. fancybox:: img/install_5.PNG
+       :alt: VPS
 
-    По файлам готово!
+   По файлам готово!
 
-    Может потребоваться:
+   Может потребоваться:
 
-    .. code::
+   .. code::
  
-        chmod 644 design/.htaccess images/.htaccess var/.htaccess var/themes_repository/.htaccess
-        chmod 644 design/index.php images/index.php var/index.php var/themes_repository/index.php
+       chmod 644 design/.htaccess images/.htaccess var/.htaccess var/themes_repository/.htaccess
+       chmod 644 design/index.php images/index.php var/index.php var/themes_repository/index.php
 
 
-7.  Создадим новую базу данных.
+#. Создадим новую базу данных.
 
-    Откроем phpMyAdmin.
+   Откроем phpMyAdmin.
 
-    Данные для первого входа в phpMyAdmin:
+   Данные для первого входа в phpMyAdmin:
 
-    *   root
+   *   root
 
-    *   пароль при установке phpMyAdmin
-
-
-    Создадим новую базу данных.
-
-    .. fancybox:: img/install_7.PNG
-        :alt: VPS
-
-8.  Откроем на интернет-магазин в браузере:
-
-    .. fancybox:: img/install_6.PNG
-        :alt: VPS
+   *   пароль при установке phpMyAdmin
 
 
-9.  Кликаем **install** и выполняем установку согласно инструкции: :doc:`Установка в браузере </install/process/index>`
+   Создадим новую базу данных.
+
+   .. fancybox:: img/install_7.PNG
+       :alt: VPS
+
+#. Откроем на интернет-магазин в браузере:
+
+   .. fancybox:: img/install_6.PNG
+       :alt: VPS
+
+
+#. Кликаем **install** и выполняем установку согласно инструкции: :doc:`Установка в браузере </install/process/index>`

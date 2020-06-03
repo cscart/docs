@@ -4,7 +4,7 @@
 
 Сначала установите XAMPP — среду для PHP-разработки (установка XAMPP на Windows описана :doc:`в этой статье </install/windows/xampp/index>`). После этого воспользуйтесь инструкцией ниже:
 
-#. Скачайте последнюю версию `CS-Cart <https://www.cs-cart.ru/download.html>`_ или `Multi-Vendor <https://www.cs-cart.com/download-multivendor.html>`_ с официального сайта.
+#. Скачайте последнюю версию `CS-Cart <https://www.cs-cart.ru/download.html>`_ на официальном сайте. Если вас интересует русская версия Multi-Vendor (CS-Cart для маркетплейсов), то `свяжитесь с нами через форму <https://multivendor.cs-cart.ru/#form>`_.
 
    .. fancybox:: img/cscart_ru.png
        :alt: Скачайте CS-Cart с официального сайта
