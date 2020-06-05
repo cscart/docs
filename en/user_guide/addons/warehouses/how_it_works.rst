@@ -13,7 +13,6 @@ How to create a store or warehouse?
 Stores and warehouses are based on pickup points. To create a warehouse, select a corresponding type :doc:`in the pickup point settings </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/pickup>`: pickup point, store, or warehouse.
 
 .. hint::
-
     First of all, make sure that the :doc:`index` add-on is :doc:`installed and active </user_guide/addons/1manage_addons>`. Otherwise you won't be able to select the type.
 
 .. image:: img/point_type.png
