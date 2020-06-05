@@ -11,3 +11,6 @@ How To: Restrict Access to Store for Customers from Certain Countries
 .. image:: img/access_restrictions_03.png
     :align: center
     :alt: Access restrictions
+    
+.. hint::
+    For geolocation, we use GeoLite2 databases created by MaxMind, available from `https://www.maxmind.com <https://www.maxmind.com/>`_.
