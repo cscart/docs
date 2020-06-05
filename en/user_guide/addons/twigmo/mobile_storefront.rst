@@ -33,3 +33,6 @@ How To: Configure the Mobile Storefront
 	*   **URL of your Facebook page/Twitter page/app on iTunes App Store/app on Google Play** — enter URLs to connect your apps or pages on social networks to the mobile version of your store. Corresponding social network icons will appear on the mobile storefront.
 
 *	Click the **Save** button.
+
+.. hint::
+    For geolocation, we use GeoLite2 databases created by MaxMind, available from `https://www.maxmind.com <https://www.maxmind.com/>`_.
