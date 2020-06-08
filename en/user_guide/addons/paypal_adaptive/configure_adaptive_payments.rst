@@ -2,13 +2,9 @@
 How To: Install and Configure PayPal Adaptive Payments Add-on
 *************************************************************
 
-.. note::
+#. Open the Administration panel and go to **Add-ons → Manage add-ons**.
 
-    The :doc:`PayPal Adaptive Payments <index>` add-on comes with Multi-Vendor starting with version 4.5.1. New clients :ref:`will need to contact their PayPal manager <paypal-adaptive-app>` to start using PayPal Adaptive Payments.
-
-1. Open the Administration panel and go to **Add-ons → Manage add-ons**.
-
-2. Switch to the **Browse all available add-ons** tab and install **PayPal Adaptive Payments**.
+#. Switch to the **Browse all available add-ons** tab and install **PayPal Adaptive Payments**.
 
    .. important::
 
@@ -18,9 +14,9 @@ How To: Install and Configure PayPal Adaptive Payments Add-on
        :align: center
        :alt: Find and install the PayPal Adaptive Payments add-on.
 
-3. If the installation is successful, find **PayPal Adaptive Payments** and click on its name to access the add-on's settings.
+#. If the installation is successful, find **PayPal Adaptive Payments** and click on its name to access the add-on's settings.
 
-4. A pop-up window open. Configure the add-on's settings there:
+#. A pop-up window open. Configure the add-on's settings there:
 
    * **Commission includes**—this radio button determines how the funds will be diverted to the store owner. There are 2 ways:
 
@@ -54,7 +50,7 @@ How To: Install and Configure PayPal Adaptive Payments Add-on
 
      We recommend you set up a CRON job to do this regularly. It's important, because when a customer buys products from multiple vendors in one order, all those vendors must be verified.
 
-5. Once you have configured the add-on, click **Save**. Now it's time to :doc:`create a payment method that uses PayPal Adaptive Payments </user_guide/payment_methods/paypal_adaptive_payments>`.
+#. Once you have configured the add-on, click **Save**. Now it's time to :doc:`create a payment method that uses PayPal Adaptive Payments </user_guide/payment_methods/paypal_adaptive_payments>`.
 
    .. image:: img/paypal_adaptive_addon_settings.png
       :align: center

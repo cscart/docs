@@ -2,10 +2,6 @@
 How To: Set up PayPal Adaptive Payments in Multi-Vendor
 *******************************************************
 
-.. note::
-
-    The :doc:`PayPal Adaptive Payments </user_guide/addons/paypal_adaptive/index>` add-on is available in Multi-Vendor starting with version 4.5.1. New clients :ref:`will need to contact their PayPal manager <paypal-adaptive-app>` to start using PayPal Adaptive Payments.
-
 ================================
 Step 1. Configure Payment Method
 ================================
