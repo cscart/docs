@@ -12,7 +12,7 @@ How To: Configure the Vendor Plans Add-on
 
 #. Configure the add-on’s settings:
 
-   * **Include shipping cost in vendors commission**—if you enable this setting, shipping will be done at the expense of the vendors.
+   * **Include shipping cost in vendor commissions**—if you enable this setting, shipping will be done at the expense of the vendors.
    
    * **Include taxes in vendor commissions**—if you enable this setting, vendor commissions will be calculated without subtracting taxes from the order total beforehand.
 
