@@ -69,3 +69,10 @@
 
 .. fancybox:: img/vendor_to_admin_payments_settings.png
     :alt: Настройки модуля
+    
+.. toctree::
+    :titlesonly:
+    :glob:
+
+    what_changed    
+   

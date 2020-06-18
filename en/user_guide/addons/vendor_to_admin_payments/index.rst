@@ -73,3 +73,9 @@ Install the Vendor-to-Admin Payments add-on just like :doc:`any other add-on </u
 .. image:: img/vendor_to_admin_payments_settings.png
     :align: center
     :alt: Add-on settings
+    
+.. toctree::
+    :titlesonly:
+    :glob:
+
+    what_changed 
