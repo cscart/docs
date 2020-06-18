@@ -48,6 +48,7 @@
     rus_personal_data_processing/index
     rus_taxes/index
     seo/index
+    sms_notifications/index
     social_login/index
     step_by_step_checkout/index
     stores_and_pickup_points/index
