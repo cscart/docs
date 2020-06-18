@@ -4,7 +4,7 @@
 
 Модуль позволяет вам получать SMS-уведомления о событиях, которые происходят в вашем магазине. Уведомления отправляются при помощи платформы для мобильного оповещения Clickatell. 
 
-Если вы хотите получать уведомления из вашего магазина, вам необходимо завести учетную запись на `официальном сайте Clickatell <https://clickatell.com/>`_ и `получить API ID <https://docs.google.com/document/u/0/d/_mOqqA6GLH6RW_L0T1alZ_dQ/mobilebasic/>`_.
+Если вы хотите получать уведомления из вашего магазина, вам необходимо завести учетную запись на `официальном сайте Clickatell <https://clickatell.com/>`_ и :doc:`получить API ID </user_guide/addons/sms_notifications/getting_api_key>`.
 
 
 .. note::
@@ -17,4 +17,5 @@
     :titlesonly:
     :glob:
 
-    *
+    set_sms
+    sms_not_sent
