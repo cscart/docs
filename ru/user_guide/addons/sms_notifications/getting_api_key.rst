@@ -19,7 +19,7 @@
 
 #. В новом окне на вкладке **Details** введите имя и описание ключа. В разделе **API Type** установите **HTTP**.
 
-   .. fancybox:: img/create_new_integration_details
+   .. fancybox:: img/create_new_integration_details.png
        :alt: Ввод названия и описания ключа на вкладке Детали
        
 #. На вкладке **Features** в **Messaging type** выберите **One-way messaging**. В поле **Delivery Type** можете выбрать любой вариант.
