@@ -1,72 +1,68 @@
-******************
-Vendor Debt Payout
-******************
+************************
+Vendor-to-Admin Payments
+************************
+
+By default, all the money from orders in Multi-Vendor goes to the marketplace owner and then splits between vendors. For more information, please check :doc:`the article about money flow in Multi-Vendor and how to control it </user_guide/users/vendors/workflow>`. 
+
+The marketplace owner earns money on commissions and vendor plan fees. But what if a vendor doesn't get orders? Or  the marketplace owner charges him for some service, and the vendor can’t to pay in time? This is how the vendor may become a debtor. 
+
+Previously, marketplace owners had to deal with debtors manually or use the Vendor Debt Payout add-on. In new versions of Multi-Vendor, the Vendor-to-Admin Payments add-on was created to completely replace the old add-on.
+
+Features
+========
+
+The Vendor-to-Admin Payments add-on is the main tool to deal with debtors.
+
+* In the :doc:`vendor plan <user_guide/addons/vendor_plans/>` settings, the marketplace owner can set the minimum allowed balance for each vendor. It can be positive, negative, or zero. When the vendor's balance goes below this value, the grace period starts. It is a period of time for the vendor to pay off his debt before various restrictions apply. If the vendor does not pay off his debt during the grace period, he gets suspended.
+
+  .. image:: img/plan_settings.png
+      :align: center
+      :alt: Configure minimum allowed balance and grace period in vendor plans settings
+
+* Even without the add-on, the marketplace owner can manually set the status of any vendor to Suspended on the **Vendors** page. Products of the suspended vendor (so as the vendor himself) are automatically hidden from the storefront. 
+
+  The Vendor-to-Admin Payments add-on lets the marketplace owner decide what the **Suspended** status does. It can:
+
+  * Hide the debtor and his products from the storefront.
+
+  * Block the debtor's admin panel  — in this case, the only option left is to pay off the debt.
+
+  * Do both things, or nothing at all.
+  
+  .. image:: img/admin_panel_blocked.png
+      :align: center
+      :alt: Message about the blocked admin panel and Pay the fees button
+
+  These measures can encourage vendors to pay off their debts. All restrictions will be removed automatically once the debt is paid.
+
+* The add-on adds many different notifications. For example, it notifies the vendor or the marketplace owner:
+
+  * when the minimum allowed balance is reached;
+
+  * a few days before the vendor is suspended;
+
+  * when the vendor is suspended;
+
+  * when the suspended vendor is disabled.
+
+  You can find the links to notification settings in the add-on settings. The notification settings are also available in **Administration** → **Notifications**.
+
+* The add-on allows you to automatically disable the suspended vendors. A disabled vendor loses access to his account, and he is not able to pay off his debt anymore. Disabling the debtors helps the marketplace owner to get rid of the "dead" accounts.
+
+  .. image:: img/access_restricted.png
+      :align: center
+      :alt: Access to a vendor's account denied
+      
+* Once a week the owner receives a report which contains current information about debts and debtors' accounts.
 
 .. note::
+    
+    **In short**: The Vendor-to-Admin Payments add-on allows you to work with debtors automatically. In addition to being able to hide the debtor's products, the marketplace owner can block the debtor's admin panel. If the debt is not paid for a long time, the suspended vendor may be disabled.
 
-    This add-on is available only in Multi-Vendor 4.8.1 and newer versions.
-
-By default, all the money from orders in Multi-Vendor goes to the marketplace owner and is then distributed among vendors. This distribution can be manual or automatic (with add-ons like :doc:`Stripe Connect </user_guide/addons/stripe_connect/index>` or :doc:`PayPal for Marketplaces </user_guide/addons/paypal_for_marketplaces/index>`).
-
-But what if you use :doc:`Vendor Plans </user_guide/addons/vendor_plans/index>` and a vendor gets no orders, while the fees for plans keep accumulating? Or what if you offer some service to the vendor and collect a fee for it with :ref:`manually created payouts <payout>`? That could lead to a situation when the vendor's balance is negative. 
-
-Previously you had to track down those vendors and deal with them manually. But now the **Vendor Debt Payout** add-on gives marketplace owners some automated tools to deal with debtors.
-
-.. contents::
-   :backlinks: none
-   :local:
-
-==============================
-Tools for Dealing with Debtors
-==============================
-
------------------------------------------
-Warnings about Debts and Vendor Plan Fees
------------------------------------------
-
-Depending on how you :doc:`configure the add-on </user_guide/addons/vendor_debt_payout/configure>`, vendors will receive notifications in two cases:
-
-* When their debt reaches a certain limit.
-
-* When the vendor's balance gets negative after a fee for the vendor plan has been taken.
-
-  .. image:: img/fee_notification.png
-      :align: center
-      :alt: A warning about vendor's debts in the admin panel.
-
-These notifications contain a link to the page where vendors can pay their debts and plan fees (together they are referred to as *marketplace fees*). A vendor with negative balance can also see a button for paying the fees on the dashboard.
-
--------------------------------
-Ability to Pay Marketplace Fees
--------------------------------
-
-When vendors decide to pay their debts, they're redirected to checkout on the storefront, with a product called *Marketplace fees* already in their carts. It works just like buying a product from your marketplace. Although this approach requires action from vendors, it allows you to use any payment methods, even if they weren't designed with marketplaces in mind.
-
-Once the order placed by the vendor is marked as *Processed* or *Complete*, the account balance changes. If the vendor's administration panel had been blocked earlier, it will be unblocked.
-
-.. image:: img/vendor_fee_payment.png
-    :align: center
-    :alt: A vendor pays marketplace fees on the storefront.
-
----------------------------------
-Blocking of Debtors Who Don't Pay
----------------------------------
-
-If a vendor ignores the debt warnings or a reminder to pay for using the plan, the access to the vendor's administration panel will be limited. The vendor won't be able to do anything in the admin panel, except for paying the marketplace fees. Once that is done, and the order placed by the vendor is *Complete* or *Processed*, the full access to the admin panel will be restored.
-
-.. image:: img/vendor_panel_blocked.png
-    :align: center
-    :alt: A blocked vendor panel only allows to pay the debts.
-
-================
-Related Articles
-================
-
+    
 .. toctree::
-    :maxdepth: 2
     :titlesonly:
     :glob:
-    
-    *
 
-* :doc:`/user_guide/users/vendors/workflow`
+    configure
+    what_changed 
