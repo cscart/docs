@@ -1,5 +1,5 @@
 *****************************************************
-How To: Configure the Vendor-to-Admin Payments Add-on
+How To: Configure Vendor-to-Admin Payments Add-on
 *****************************************************
 
 
