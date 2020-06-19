@@ -12,6 +12,8 @@ What has improved?
   **Now**: The maximum debt is set individually in the settings of each vendor plan.
 
   **What's better about it**: Now you can set different debt rules for a $5 plan and a $100 plan.
+  
+------  
  
 * **Previously**: The maximum debt and the grace period in the Vendor Debt Payout add-on used to work independently. Restrictions were immediately applied in any of these cases:
 
@@ -24,17 +26,23 @@ What has improved?
   **Now**: First, the vendor's balance drops below the allowed minimum. Then the grace period starts. When this period ends, the restrictions are applied.
 
   **What's better about it**: It's easier to understand how settings interact with each other.
+  
+------
 
 * **Previously**: When the vendor went negative or exceeded the maximum debt, his admin panel got blocked automatically. The vendor's products remained on the storefront even if he had left the marketplace. Customers would buy his products, and the marketplace owner would have to give refunds.
 
   **Now**: In the add-on settings, marketplace owner can decide what restrictions he wants to apply to debtors: to block their admin panels, to hide their products from storefronts, or both. 
   **What's better about it**: You decide how to motivate your debtors to pay off their debts.
+  
+------
 
 * **Previously**: When a vendor got blocked, his status did not change, so it was impossible to identify a debtor in the vendor's list.
 
   **Now**: The Suspended status was added. When a vendor becomes a debtor, his status in the list of vendors changes automatically. The marketplace owner can also set the status manually to apply restrictions to any vendor.
 
   **What's better about it**: It's easier for the marketplace owner to identify a debtor in the list of vendors.
+  
+------
 
 * **Previously**: When a vendor's admin panel got blocked, nothing else happened. The debtor was like any other vendors in the list. The marketplace owner had a hard time tracking down the debtors who hadn’t paid their debts for too long.
 
