@@ -2,7 +2,7 @@
 What's new in dealing with debtors in Multi-Vendor 4.12.1?
 **********************************************************
 
-In Multi-Vendor 4.12.1, Vendor Debt Payout add-on has been replaced by a new add-on called :doc:`/user_guide/addons/vendor_to_admin_payments/index`.
+In Multi-Vendor 4.12.1, Vendor Debt Payout add-on has been replaced by a new add-on called :doc:`/user_guide/addons/vendor_debt_payout/index`.
 
 What has improved?
 ==================
