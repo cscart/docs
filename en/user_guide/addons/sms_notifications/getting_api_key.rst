@@ -4,7 +4,7 @@ How To: Get Clickatell API ID
 
 For the :doc:`/user_guide/addons/sms_notifications/index` add-on to work, you need the Clickatell API ID. To get it, do the following:
 
-#. Go to the `Clikatell website <https://www.clickatell.com/>`_ and click **Sign Up** to create a new account. Check the link from your email to confirm the registration, then sign in.
+#. Go to the `Clickatell website <https://www.clickatell.com/>`_ and click **Sign Up** to create a new account. Check the link from your email to confirm the registration, then sign in.
 
 #. Click **SMS** on the sidebar and choose **Configure SMS**.
 

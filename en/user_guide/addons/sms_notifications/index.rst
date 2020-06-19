@@ -6,7 +6,7 @@ This add-on allows you to receive SMS notifications about events that occur in y
     
 .. note::    
     
-    Check the `Clickatell pricing plans <https://www.clickatell.com/pricing-and-coverage/message-pricing/#step-1/>`_ to find out the costs SMS notifications.
+    Check the `Clickatell pricing plans <https://www.clickatell.com/pricing-and-coverage/message-pricing/#step-1/>`_ to find out the costs of SMS notifications.
 
 .. toctree::
     :maxdepth: 2
@@ -14,5 +14,6 @@ This add-on allows you to receive SMS notifications about events that occur in y
     :glob:
 
     set_sms
+    getting_api_key
     sms_not_sent
 

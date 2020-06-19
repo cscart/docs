@@ -1,5 +1,5 @@
 *******************************************
-How To: Set up the SMS Notifications Add-on
+How To: Set up SMS Notifications Add-on
 *******************************************
 
 #. In the Administration panel, go to **Add-ons → Manage add-ons**.
@@ -18,7 +18,7 @@ How To: Set up the SMS Notifications Add-on
 
    * Specify **Clickatell settings**:
 
-     * **API ID**—the unique API key that you generate in your account on the Clickatell side.
+     * **API ID**—the unique API key that you generate in your account on the Clickatell side. You can learn how to get the API key in :doc:`this article </user_guide/addons/sms_notifications/getting_api_key>`.
 
      * **Use Unicode**—select to send SMS in `the Unicode format <https://www.clickatell.com/faqs/answer/do-you-support-unicode/>`_.
 
