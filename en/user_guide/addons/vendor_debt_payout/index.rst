@@ -2,6 +2,10 @@
 Vendor-to-Admin Payments
 ************************
 
+.. important::
+
+    This add-on replaced the Vendor Debt Payout add-on in Multi-Vendor 4.12.1.
+
 By default, all the money from orders in Multi-Vendor goes to the marketplace owner and then splits between vendors. For more information, please check :doc:`the article about money flow in Multi-Vendor and how to control it </user_guide/users/vendors/workflow>`. 
 
 The marketplace owner earns money on commissions and vendor plan fees. But what if a vendor doesn't get orders? Or  the marketplace owner charges him for some service, and the vendor can’t to pay in time? This is how the vendor may become a debtor. 
