@@ -17,7 +17,7 @@ Features
 
 The Vendor-to-Admin Payments add-on is the main tool to deal with debtors.
 
-* In the :doc:`vendor plan <user_guide/addons/vendor_plans/>` settings, the marketplace owner can set the minimum allowed balance for each vendor. It can be positive, negative, or zero. When the vendor's balance goes below this value, the grace period starts. It is a period of time for the vendor to pay off his debt before various restrictions apply. If the vendor does not pay off his debt during the grace period, he gets suspended.
+* In the :doc:`vendor plan </user_guide/addons/vendor_plans>` settings, the marketplace owner can set the minimum allowed balance for each vendor. It can be positive, negative, or zero. When the vendor's balance goes below this value, the grace period starts. It is a period of time for the vendor to pay off his debt before various restrictions apply. If the vendor does not pay off his debt during the grace period, he gets suspended.
 
   .. image:: img/plan_settings.png
       :align: center
@@ -63,6 +63,9 @@ The Vendor-to-Admin Payments add-on is the main tool to deal with debtors.
     
     **In short**: The Vendor-to-Admin Payments add-on allows you to work with debtors automatically. In addition to being able to hide the debtor's products, the marketplace owner can block the debtor's admin panel. If the debt is not paid for a long time, the suspended vendor may be disabled.
 
+
+Related articles
+================
     
 .. toctree::
     :titlesonly:

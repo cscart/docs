@@ -14,5 +14,5 @@
 
 * Посмотреть, какие уведомления есть в модуле, и перейти на их редактирование.
 
-.. fancybox:: img/vendor_to_admin_payments_settings.png
-    :alt: Настройки модуля
+  .. fancybox:: img/vendor_to_admin_payments_settings.png
+      :alt: Настройки модуля

@@ -4,7 +4,7 @@ What's new in dealing with debtors in Multi-Vendor 4.12.1?
 
 .. important::
     
-    In Multi-Vendor 4.12.1, Vendor Debt Payout add-on has been replaced by a new add-on called :doc:`/user_guide/addons/vendor_debt_payout/index`.
+    In Multi-Vendor 4.12.1, the Vendor Debt Payout add-on has been replaced by a new add-on called :doc:`/user_guide/addons/vendor_debt_payout/index`.
     
 
 What has improved?
@@ -34,7 +34,8 @@ What has improved?
 
 * **Previously**: When the vendor went negative or exceeded the maximum debt, his admin panel got blocked automatically. The vendor's products remained on the storefront even if he had left the marketplace. Customers would buy his products, and the marketplace owner would have to give refunds.
 
-  **Now**: In the add-on settings, marketplace owner can decide what restrictions he wants to apply to debtors: to block their admin panels, to hide their products from storefronts, or both. 
+  **Now**: In the add-on settings, marketplace owner can decide what restrictions he wants to apply to debtors: to block their admin panels, to hide their products from storefronts, or both.
+  
   **What's better about it**: You decide how to motivate your debtors to pay off their debts.
   
 ------
