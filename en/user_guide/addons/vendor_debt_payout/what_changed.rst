@@ -59,7 +59,7 @@ What should I do after the update?
 
 It's easy enough to move to the new add-on from the old one: upgrade your Multi-Vendor to version 4.12.1. Instead of the old Vendor Debt Payout add-on, the new Vendor-to-Admin Payments add-on will appear.
 
-* Old add-on settings (maximum debt and grace period) will be moved to :doc:`тарифные планы <user_guide/addons/vendor_plans/>`. This allows you to set different conditions for some plans (and vendors). 
+* Old add-on settings (maximum debt and grace period) will be moved to :doc:`vendor_plans </user_guide/addons/vendor_plans>`. This allows you to set different conditions for some plans (and vendors). 
 
 * After the upgrade, the new add-on will have the same settings as the old one. Admin panels of debtors will remain blocked, but their products will not be hidden from the storefront. If you want to hide them, just change the add-on settings. 
 * After the upgrade, a debtor's admin panel will:
