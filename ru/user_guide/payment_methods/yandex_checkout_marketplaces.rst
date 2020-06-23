@@ -11,7 +11,7 @@
 
 #. При нажатии кнопки “Оформить заказ” он попадает на страницу Яндекс.Кассы, и уже там выбирает `подходящий способ оплаты <https://kassa.yandex.ru/help/payments/accept-methods.html>`_.
 
-   .. fancybox:: user_guide/addons/yandex_checkout/img/payment_yandex.png
+   .. fancybox:: /user_guide/addons/yandex_checkout/img/payment_yandex.png
        :alt: Способы оплаты Яндекса и поля для ввода данных банковской карты.
 
    .. note::
