@@ -10,10 +10,10 @@ What's New in Dealing with Debtors in Multi-Vendor 4.12.1?
     :backlinks: none
     :local:    
 
-What has improved?
+What Has Improved?
 ==================
 
-Different conditions for each vendor plan
+Different Conditions for Each Vendor Plan
 +++++++++++++++++++++++++++++++++++++++++
 
 .. list-table::
@@ -34,7 +34,7 @@ Different conditions for each vendor plan
   
 ------  
 
-Clearer interactions between settings
+Clearer Interactions Between Settings
 +++++++++++++++++++++++++++++++++++++
 
 .. list-table::
@@ -61,7 +61,7 @@ Clearer interactions between settings
   
 ------
 
-You decide what to do with debtors
+You Decide What to Do with Debtors
 ++++++++++++++++++++++++++++++++++
 
 .. list-table::
@@ -82,7 +82,7 @@ You decide what to do with debtors
   
 ------
 
-Debtors are easier to find
+Debtors Are Easier to Find
 ++++++++++++++++++++++++++
 
 .. list-table::
@@ -103,7 +103,7 @@ Debtors are easier to find
   
 ------
 
-Easier to handle with inactive vendors
+Easier to Handle with Inactive Vendors
 ++++++++++++++++++++++++++++++++++++++
 
 .. list-table::
@@ -122,7 +122,7 @@ Easier to handle with inactive vendors
 
             -   It's easier for the marketplace owner to identify vendors who are unlikely to pay off their debts, and get rid of "dead" accounts.
 
-What should I do after the update?
+What Should I Do after The Update?
 ==================================
 
 It's easy enough to move to the new add-on from the old one: upgrade your Multi-Vendor to version 4.12.1. Instead of the old Vendor Debt Payout add-on, the new Vendor-to-Admin Payments add-on will appear.
@@ -134,7 +134,7 @@ What happens with the old add-on settings?
 
 * After the upgrade, the new add-on will have the same settings as the old one. Admin panels of debtors will remain blocked, but their products will not be hidden from the storefront. If you want to hide them, just change the add-on settings.
 
-What happens with the debtors accounts after the upgrade?
+What Happens with The Debtors Accounts after The Upgrade?
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 After the upgrade, a debtor's admin panel will:
@@ -147,7 +147,7 @@ Therefore, you have to decide if you allow negative balance for your vendors.
 
 If you don’t, and you want your new add-on to work like the old one, just set the minimum allowed balance to zero. Otherwise the restrictions will apply only when vendors reach the maximum debt.
 
-What do I need for the new add-on to work?
+What Do I Need for The New Add-on to Work?
 ++++++++++++++++++++++++++++++++++++++++++
 
 The new Vendor-to-Admin Payments add-on requires the Vendor Plans add-on to work with. If you turned it off or did not install it, the Vendor Plans add-on will install automatically after the Multi-Vendor upgrade. After that, the add-on will create a single fee-free plan for all the vendors. You can set the minimum allowed balance and grace period in the plan settings. These values will be the same for all your vendors. This way the new Vendor-to-Admin Payments add-on will repeat the old add-on behavior.

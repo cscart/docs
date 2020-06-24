@@ -30,7 +30,7 @@ In the :doc:`vendor plan </user_guide/addons/vendor_plans>` settings, the market
     :align: center
     :alt: Configure minimum allowed balance and grace period in vendor plans settings
 
-Decide what to do with debtors
+Decide What to Do with Debtors
 ++++++++++++++++++++++++++++++
 
 Even without the add-on, the marketplace owner can manually set the status of any vendor to Suspended on the **Vendors** page. Products of the suspended vendor (so as the vendor himself) are automatically hidden from the storefront. 
@@ -45,7 +45,7 @@ The Vendor-to-Admin Payments add-on lets the marketplace owner decide what the *
 
 These measures can encourage vendors to pay off their debts.
 
-Offer the ability for your vendors to pay debts
+Offer The Ability for Your Vendors to Pay Debts
 +++++++++++++++++++++++++++++++++++++++++++++++
 
 With the new add-on vendors can pay their debts at any point without any complications. All they have to do is enter an amount of money, and click the Refill balance button. Then vendors will be redirected to the сheckout page. All restrictions will be removed automatically once the debt is paid.
@@ -54,7 +54,7 @@ With the new add-on vendors can pay their debts at any point without any complic
     :align: center
     :alt: Message about the blocked admin panel and Pay the fees button
 
-Warn vendors about their debts and keep track of your debtors 
+Warn Vendors about Their Debts and Keep Track of Your Debtors 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 The add-on adds many different notifications. For example, it notifies the vendor or the marketplace owner:
@@ -71,8 +71,8 @@ You can find the links to notification settings in the add-on settings. The noti
 
 Once a week the owner receives a report which contains current information about debts and debtors' accounts.
 
-Configure the automatic disabling of debtors
-++++++++++++++++++++++++++++++++++++++++++++
+Cut Off Your Inactive Vendors
++++++++++++++++++++++++++++++
 
 The add-on allows you to automatically disable the suspended vendors. A disabled vendor loses access to his account, and he is not able to pay off his debt anymore. Disabling the debtors helps the marketplace owner to get rid of the "dead" accounts.
 
@@ -81,7 +81,7 @@ The add-on allows you to automatically disable the suspended vendors. A disabled
     :alt: Access to a vendor's account denied
       
 
-Related articles
+Related Articles
 ================
     
 .. toctree::
