@@ -34,8 +34,8 @@ Different conditions for each vendor plan
   
 ------  
 
-Clearer settings interactions
-+++++++++++++++++++++++++++++
+Clearer interactions between settings
++++++++++++++++++++++++++++++++++++++
 
 .. list-table::
         :stub-columns: 1
@@ -61,8 +61,8 @@ Clearer settings interactions
   
 ------
 
-You decide what to do with the debtors
-++++++++++++++++++++++++++++++++++++++
+You decide what to do with debtors
+++++++++++++++++++++++++++++++++++
 
 .. list-table::
         :stub-columns: 1
@@ -82,7 +82,7 @@ You decide what to do with the debtors
   
 ------
 
-Easier to find the debtors
+Debtors are easier to find
 ++++++++++++++++++++++++++
 
 .. list-table::
@@ -103,8 +103,8 @@ Easier to find the debtors
   
 ------
 
-You can disable the debtors accounts
-++++++++++++++++++++++++++++++++++++
+Easier to handle with inactive vendors
+++++++++++++++++++++++++++++++++++++++
 
 .. list-table::
         :stub-columns: 1
