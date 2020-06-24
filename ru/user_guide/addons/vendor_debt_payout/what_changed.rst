@@ -7,7 +7,7 @@
     В Multi-Vendor 4.12.1 на смену старому модулю “Выплата долгов продавцов” пришел новый модуль :doc:`/user_guide/addons/vendor_debt_payout/index`.
 
 .. contents::
-    :depth: 3
+    :local:
 
 Что изменилось к лучшему?
 =========================
