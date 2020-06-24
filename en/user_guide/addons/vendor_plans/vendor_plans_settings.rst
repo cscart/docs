@@ -16,9 +16,9 @@ How To: Configure the Vendor Plans Add-on
    
    * **Allow vendors to change their current plan**—if you tick this checkbox, vendors will be able to :ref:`move to another plan by themselves. <switch-between-vendor-plans>` Otherwise vendors simply won’t see other plans when they edit their profiles.
 
-       .. important::
+     .. important::
 
-           Those who :doc:`apply for a vendor account </user_guide/users/vendors/allow_customers_to_apply_for_vendor_account>` will still see all the active plans that exist in your store.
+         Those who :doc:`apply for a vendor account </user_guide/users/vendors/allow_customers_to_apply_for_vendor_account>` will still see all the active plans that exist in your store.
 
 #. Click **Save** to apply your changes.
 
