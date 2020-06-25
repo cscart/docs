@@ -610,6 +610,8 @@ All product options that you import must follow this format:
   * **R**—radio group.
 
   * **C**—checkbox.
+  
+  * **G**—global option.
 
 .. important::
 
