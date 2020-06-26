@@ -601,27 +601,25 @@ All product options that you import must follow this format:
 
 * **Option type**—one of the following option types:
 
-  * **I**—text.
+  * **IG**—text.
 
-  * **T**—text area.
+  * **TG**—text area.
  
-  * **S**—select box.
+  * **SG**—select box.
 
-  * **R**—radio group.
+  * **RG**—radio group.
 
-  * **C**—checkbox.
-  
-  * **G**—global option.
+  * **CG**—checkbox.
 
 .. important::
 
-    EXAMPLE (text options): *(Simtech) Your age: I; (Simtech) Date of birth: I; (Simtech) Notes: T*
+    EXAMPLE (text options): *(Simtech) Your age: IG; (Simtech) Date of birth: IG; (Simtech) Notes: TG*
 
 ---------------
 Option Variants
 ---------------
 
-Variants can be specified for *select box* (*S*) and *radio group* (*R*) options right after the option type:
+Variants can be specified for *select box* (*SG*) and *radio group* (*RG*) options right after the option type:
 
   *(Storefront) Option name: Option type[Variant 1///variant_property=value///variant_property=value, ..., Variant N///variant_property=value///variant_property=value]*
 
@@ -629,7 +627,7 @@ Variants can be specified for *select box* (*S*) and *radio group* (*R*) options
 
   .. important::
 
-      EXAMPLE: *(Simtech) Color: S[Red, Green, Blue]; (Simtech) Size: R[S, M, L, XL, XXL]*
+      EXAMPLE: *(Simtech) Color: SG[Red, Green, Blue]; (Simtech) Size: RG[S, M, L, XL, XXL]*
 
 * **///**—the feature values delimiter that you specify when you :doc:`import a CSV file with product data <product_import>`.
 
@@ -655,7 +653,7 @@ Variants can be specified for *select box* (*S*) and *radio group* (*R*) options
 
 .. important::
 
-    EXAMPLE: *(Simtech) Size: S[Normal,Large///modifier=10.000///modifier_type=P///weight_modifier=20.000///weight_modifier_type=A]; Color: S[Grey///image=exim/backup/images/variant_image/grey_example.jpg,Black///modifier=50.000///modifier_type=A///image=exim/backup/images/variant_image/black_example.jpg]*
+    EXAMPLE: *(Simtech) Size: SG[Normal,Large///modifier=10.000///modifier_type=P///weight_modifier=20.000///weight_modifier_type=A]; Color: SG[Grey///image=exim/backup/images/variant_image/grey_example.jpg,Black///modifier=50.000///modifier_type=A///image=exim/backup/images/variant_image/black_example.jpg]*
 
 ---------------
 Option Settings
@@ -689,7 +687,7 @@ Settings can be specified after the option variants. Here are the settings that 
 
   .. important::
 
-      EXAMPLE: *(Simtech) Color: S[Red///modifier=5///modifier_type=A,Green///modifier=10///modifier_type=P]///inventory=Y///missing_variants_handling=M///required=Y///status=A*
+      EXAMPLE: *(Simtech) Color: SG[Red///modifier=5///modifier_type=A,Green///modifier=10///modifier_type=P]///inventory=Y///missing_variants_handling=M///required=Y///status=A*
 
 * **multiupload** (for options with the *File* (*F*) type)—determines if customers can upload several files for one option:
 
@@ -697,13 +695,13 @@ Settings can be specified after the option variants. Here are the settings that 
 
   * **N**—no.
 
-* **allowed_extensions** (for options with the *File* (*F*) type)—the extensions of the files that the customers are allowed to upload:
+* **allowed_extensions** (for options with the *File* (*FG*) type)—the extensions of the files that the customers are allowed to upload:
 
-* **max_file_size** (for options with the *File* (*F*) type)—the maximum size of an uploaded file in KBs.
+* **max_file_size** (for options with the *File* (*FG*) type)—the maximum size of an uploaded file in KBs.
 
   .. important::
 
-      EXAMPLE: *(Simtech) Custom image: F///required=Y///multiupload=N///allowed_extensions=jpg,bmp,gif///max_file_size=1000*
+      EXAMPLE: *(Simtech) Custom image: FG///required=Y///multiupload=N///allowed_extensions=jpg,bmp,gif///max_file_size=1000*
 
 ====================
 Secondary categories
