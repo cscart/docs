@@ -21,7 +21,7 @@ Features
 
 The Vendor-to-Admin Payments add-on allows you to work with debtors automatically. In addition to being able to hide the debtor's products, the marketplace owner can block the debtor's admin panel. If the debt is not paid for a long time, the suspended vendor may be disabled.
 
-Set different conditions for each vendor plan
+Set Different Conditions for Each Vendor Plan
 +++++++++++++++++++++++++++++++++++++++++++++
 
 In the :doc:`vendor plan </user_guide/addons/vendor_plans>` settings, the marketplace owner can set the minimum allowed balance for each vendor. It can be positive, negative, or zero. When the vendor's balance goes below this value, the grace period starts. It is a period of time for the vendor to pay off his debt before various restrictions apply. If the vendor does not pay off his debt during the grace period, he gets suspended.
@@ -45,10 +45,10 @@ The Vendor-to-Admin Payments add-on lets the marketplace owner decide what the *
 
 These measures can encourage vendors to pay off their debts.
 
-Offer The Ability for Your Vendors to Pay Debts
+Offer the Ability for Your Vendors to Pay Debts
 +++++++++++++++++++++++++++++++++++++++++++++++
 
-With the new add-on vendors can pay their debts at any point without any complications. All they have to do is enter an amount of money, and click the Refill balance button. Then vendors will be redirected to the сheckout page. All restrictions will be removed automatically once the debt is paid.
+With the new add-on vendors can pay their debts at any point without any complications. All they have to do is enter an amount of money, and click the **Refill balance** button. Then vendors will be redirected to the сheckout page. All restrictions will be removed automatically once the debt is paid.
   
 .. image:: img/admin_panel_blocked.png
     :align: center

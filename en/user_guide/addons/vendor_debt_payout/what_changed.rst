@@ -103,8 +103,8 @@ Debtors Are Easier to Find
   
 ------
 
-Easier to Handle with Inactive Vendors
-++++++++++++++++++++++++++++++++++++++
+Inactive Vendors are Easier to Deal With
+++++++++++++++++++++++++++++++++++++++++
 
 .. list-table::
         :stub-columns: 1
@@ -122,20 +122,20 @@ Easier to Handle with Inactive Vendors
 
             -   It's easier for the marketplace owner to identify vendors who are unlikely to pay off their debts, and get rid of "dead" accounts.
 
-What Should I Do after The Update?
+What Should I Do after the Update?
 ==================================
 
 It's easy enough to move to the new add-on from the old one: upgrade your Multi-Vendor to version 4.12.1. Instead of the old Vendor Debt Payout add-on, the new Vendor-to-Admin Payments add-on will appear.
 
-What happens with the old add-on settings?
-++++++++++++++++++++++++++++++++++++++++++
+What Happens to the Old Add-on Settings?
+++++++++++++++++++++++++++++++++++++++++
 
 * Old add-on settings (maximum debt and grace period) will be moved to :doc:`vendor_plans </user_guide/addons/vendor_plans>`. This allows you to set different conditions for some plans (and vendors). 
 
 * After the upgrade, the new add-on will have the same settings as the old one. Admin panels of debtors will remain blocked, but their products will not be hidden from the storefront. If you want to hide them, just change the add-on settings.
 
-What Happens with The Debtors Accounts after The Upgrade?
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+What Happens to Existing Debtors after the Upgrade
+++++++++++++++++++++++++++++++++++++++++++++++++++
 
 After the upgrade, a debtor's admin panel will:
 
