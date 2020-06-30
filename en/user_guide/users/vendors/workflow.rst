@@ -82,11 +82,12 @@ The :doc:`/user_guide/addons/vendor_debt_payout/index` add-on allows you to work
 
 * A marketplace owner sets a maximum debt and a grace period for each :doc:`vendor plan </user_guide/addons/vendor_plans>`.
 
-* Vendors are able to refill their balance at any moment of time. This may be helpful if they do not sell, but you want them to pay their fees anyway.
+* Vendors are able to refill their balance at any moment of time. This helps when vendors' sales aren't going well, but you want them to pay their fees anyway.
 
 * If vendor's balance reaches its minimum allowed value, he starts getting warnings to remind him to pay his debt.
 
-* If a debtor doesn't pay in time, a marketplace owner can hide his products from the storefront, or block his admin panel. The marketplace owner can also disable the accounts of the debtors if they don't pay for a very long time.
+* If a debtor doesn't pay in time, a marketplace owner can automatically hide his products from the storefront, or block his admin panel. If the debt is not paid for a long time, the vendor may be automatically disabled.
+
 
 .. note::
 
