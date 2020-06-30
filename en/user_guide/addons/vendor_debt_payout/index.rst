@@ -48,7 +48,7 @@ These measures can encourage vendors to pay off their debts.
 Offer the Ability for Your Vendors to Pay Debts
 +++++++++++++++++++++++++++++++++++++++++++++++
 
-With the new add-on vendors can pay their debts at any point without any complications. All they have to do is enter an amount of money, and click the **Refill balance** button. Then vendors will be redirected to the сheckout page. All restrictions will be removed automatically once the debt is paid.
+With the new add-on, vendors can pay their debts at any point without any complications. All they have to do is enter an amount of money, and click the **Refill balance** button. Then vendors will be redirected to the сheckout page. All restrictions will be removed automatically once the debt is paid.
   
 .. image:: img/admin_panel_blocked.png
     :align: center
@@ -71,8 +71,8 @@ You can find the links to notification settings in the add-on settings. The noti
 
 Once a week the owner receives a report which contains current information about debts and debtors' accounts.
 
-Cut Off Your Inactive Vendors
-+++++++++++++++++++++++++++++
+Find Inactive Vendors
++++++++++++++++++++++
 
 The add-on allows you to automatically disable the suspended vendors. A disabled vendor loses access to his account, and he is not able to pay off his debt anymore. Disabling the debtors helps the marketplace owner to get rid of the "dead" accounts.
 
