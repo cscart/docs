@@ -74,27 +74,24 @@ However, for these payment methods to work, all vendors whose products are being
 
     **Summary:** Payment methods designed for marketplaces allow to distribute money from orders automatically. These payment methods can also collect debts from vendors. The drawback is that all the vendors handling an order need to be able to receive money via the chosen payment method.
 
-==================
-Vendor Debt Payout
-==================
+========================
+Vendor-to-Admin Payments
+========================
 
-The :doc:`/user_guide/addons/vendor_debt_payout/index` add-on covers the situations when vendor debts and fees for plans need to be collected without using marketplace payment methods. Here is what the add-on offers:
+The :doc:`/user_guide/addons/vendor_debt_payout/index` add-on allows you to work with debtors automatically.
 
-* Limit on the maximum debt of a vendor and the time within which a vendor must pay for using the vendor plan.
+* A marketplace owner sets a maximum debt and a grace period for each :doc:`vendor plan </user_guide/addons/vendor_plans>`.
 
-* Automatic restriction of functionality of the vendor's administration panel when the vendor exceeds the limits mentioned above.
+* Vendors are able to refill their balance at any moment of time. This may be helpful if they do not sell, but you want them to pay their fees anyway.
 
-* The ability for a vendor to pay the debts by clicking a button in the Administration panel. The process works much like checkout on the storefront.
+* If vendor's balance reaches its minimum allowed value, he starts getting warnings to remind him to pay his debt.
 
-  .. image:: /user_guide/addons/vendor_debt_payout/img/vendor_panel_blocked.png
-     :align: center
-     :alt: The Vendor Debt Payout add-on blocks some of the admin panel functionality for debtors.
-
-Although this approach requires action from vendors, it allows marketplace owners to use any payment methods, even if they weren't designed with marketplaces in mind.
+* If a debtor doesn't pay in time, a marketplace owner can hide his products from the storefront, or block his admin panel. The marketplace owner can also disable the accounts of the debtors if they don't pay for a very long time.
 
 .. note::
 
-    **Summary:** The :doc:`/user_guide/addons/vendor_debt_payout/index` add-on allows marketplace owners to automate the collecting of debts from vendors. If vendors don't pay, they won't be able to work in their administration panels. The payment process itself is just like placing an order on the storefront.
+    **Summary:** The Vendor-to-Admin Payments add-on helps vendors to refill their balance on marketplace. It also helps marketplace owners to motivate debtors to pay off their debts by hiding the products from storefronts or blocking the admin panel.
+
 
 ==================================
 Direct Customer-to-Vendor Payments
@@ -128,9 +125,8 @@ Direct payments to vendors work best when combined with some other add-ons menti
 
 * :doc:`/user_guide/addons/direct_customer_to_vendor_payments/index` ensure that vendors get their money faster, and that you don't need to bother with distributing the money among vendors.
 
-* :doc:`/user_guide/addons/vendor_debt_payout/index` helps you to collect the money that vendors owe to the marketplace.
+* :doc:`/user_guide/addons/vendor_debt_payout/index` helps marketplace owners to charge vendors for  marketplace services, and vendors to refill their balance in time. If debtors don't pay, restrictions are placed on their accounts, up to a full accounts disabling.
 
-  You just set up a payment method, and vendors use it to pay their fees from time to time. If vendors don't pay, they lose access to most functions of their admin panel.
 
 .. note::
 
