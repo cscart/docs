@@ -173,7 +173,7 @@ The parameters of the controller are passed as follows:
 
     php admin.php --dispatch=controller.mode --param1=value --param2=value --param3[]=value1 --param3[]=value2 --param4[param5]=value
 
-These parameters are passed to the controller as ordinary request parameters and are available in the ``$_REQUEST`` array. If the mode of a controller processes POST requests, pass the ``--p`` argument to the script after specifying the parameters.
+These parameters are passed to the controller as ordinary request parameters and are available in the ``$_REQUEST`` array. If the mode of a controller processes POST requests, pass the ``-p`` argument to the script after specifying the parameters.
 
 Running a controller's mode in the console will perform the actions implemented in that mode. If nothing appears in the command line after you use the command, it may mean that:
 
