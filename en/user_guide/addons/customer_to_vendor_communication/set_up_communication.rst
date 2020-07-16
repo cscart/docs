@@ -1,32 +1,102 @@
-*******************************************************
-How To: Allow Customers to Ask Questions About Products
-*******************************************************
+******************************************
+How to Configure the Message Center Add-on
+******************************************
 
-#. Make sure that the **Ask Seller a Question** add-on is :doc:`installed and active. </user_guide/addons/1manage_addons>`
+Basic Add-on Settings
+=====================
 
-   .. image:: img/install_ask_seller_a_question.png
+#. Install the :doc:`Message center </user_guide/addons/customer_to_vendor_communication/index>` add-on just like :doc:`any other add-on </user_guide/addons/1manage_addons>` .
+
+#. Click the add-on name to open it's settings.
+
+   * **General**:
+   
+     * **Customer-to-seller communication** — tick the box, if you want to allow your vendors to communicate with customers.
+     
+     * **Vendor-to-admin communication** — tick the box, if you want to allow your vendors to communicate with you.
+     
+   * **For customers:**
+   
+     * **Contact button on product pages** — tick the box, if you want to allow your customer to send you messages from the product pages.
+     
+     * **Contact button in vendor microstore** —  tick the box, if you want the Ask a question button to appear on the vendor's microstore page.
+
+       .. important::
+
+           This setting is only affects those vendors who have their microstore enabled in the :doc:`vendor plan </user_guide/addons/vendor_plans/index>`.
+
+How to Restrict the Communication between Vendors and Other CS-Cart Users?
+==========================================================================
+
+The **Message center** add-on in conjunction with the :doc:`Vendor privileges </user_guide/addons/vendor_privileges/index>` add-on allows the marketplace owner to decide how and with whom to communicate.
+
+.. important::
+
+    The **Vendor privileges** add-on is only available for Multi-Vendor Plus and Multi-Vendor Ultimate users.
+
+How to Restrict the Communication between Vendors and Customers?
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Let's say you want your vendors to read the messages from customers, but only you could answer them. To do this:
+
+#. Open the **Customers → User groups** page.
+
+#. Click the name of the **Vendor** user group.
+
+#. In the **Customer privileges** section, next to the **Message center: customer-to-vendor communication** field, choose **Can view only**. If you choose the **No access** option, the vendors will not even be able to read messages from the customers.
+
+#. Click **Save**.
+
+   .. image:: img/vendor_priviledges_customers.png
        :align: center
-       :alt: Find and install the "Ask seller a question" add-on.
+       :alt: Restricting the access to dialogues with customers to vendors
+      
+How to Forbid Your Vendors to Answer Your Messages?
++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-#. Click on the name of the add-on to access its settings. Configure them as you see fit:
+If you want to use the Message center add-on only as a tool for announcments, but do not want your vendors to answer your messages:
 
-   * **Contact button on product pages**—if you enable this setting, the *Ask a question* button will appear on product pages. In CS-Cart, the messages will go to store administration, and in Multi-Vendor they will go to vendors.
+#. Open the **Customers → User groups** page.
 
-   * **Contact button at "Messages" menu** (*only in CS-Cart*)—if you enable this setting, the *Ask a question* button will appear on the **My Account → Messages** page on the storefront.
+#. Click the name of the **Vendor** user group.
 
-   * **Contact button in vendor microstore** (*only in Multi-Vendor*)—if you enable this setting, the *Ask a question* button will appear in vendors' microstores.
+#. In the **Administration privileges** section, next to the **Message center: vendor-to-admin communication** field, choose **Can view only**. If you choose the **No access** option, the vendors will not even be able to read messages from you.
 
-     .. note::
+#. Click **Save**.
 
-         This setting will only affect those vendors who have a :doc:`vendor plan </user_guide/users/vendors/manage_vendor_plans>` with vendor microstores.
-
-#. Once you configure the add-on, click **Save**. After that you should see the *Ask a question* button on the pages that you specified in the settings of the add-on.
-
-   .. image:: img/ask_a_question.png
+   .. image:: img/vendor_priviledges_administration.png
        :align: center
-       :alt: The "Ask a question" button on the storefront.
+       :alt: Restricting the access to dialogues with you to vendors
 
-#. (optional) Check the **Administration → Notifications** menu in the admin panel to determine who will receive notifications.
+How to Set Restrictions for Specific Vendors?
++++++++++++++++++++++++++++++++++++++++++++++
+
+Let's say you want to forbid specific vendors to read or answer messages, not all of them.
+
+#. Open the **Customers → User groups** page.
+
+#. Create a new user group and set it's **Type**.
+
+   .. image:: img/add_group.png
+       :align: center
+       :alt: Adding a new group
+
+#. In the user group settings, next to the **Message center: customer-to-vendor communication** and **Message center: vendor-to-admin communication** fields choose the options you need.
+
+#. Open the **Vendors → Vendors** page.
+
+#. The vendor's settings will open. Click **View vendor users**.
+
+#. In the new window click the user's name, and go to the **User groups** tab.
+
+#. Enable only the group you want to set restrictions for.
+
+#. Click **Save changes**.
+
+   .. image:: img/choose_group.png
+       :align: center
+       :alt: Choosing a user group for the vendors users
+
 
 .. meta::
    :description: An add-on that lets customers send a message to the seller from a product page in CS-Cart and Multi-Vendor software.

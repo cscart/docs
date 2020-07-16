@@ -1,26 +1,49 @@
-*********************
-Ask Seller a Question
-*********************
+**************
+Message Center
+**************
 
-The **Ask Seller a Question** add-on allows customers to contact administrators (in CS-Cart) or vendors (in Multi-Vendor) directly from the storefront. Here is how it works: 
+.. contents::
+    :backlinks: none
+    :local:
+    
+The Message center add-on helps to establish communication between CS-Cart users.  This is a necessary solution if you want to give your customers ability to:
 
-* A customer signs in to his or her account and initiates the communication by using the "Ask a question" button.
+* ask a question about a product;
 
-* Administrators or vendor's administrators see the message in the admin panel and can reply to it. Chains of messages and their replies are grouped into threads.
-
-* Depending on the settings in **Administration → Notifications**, customers, admins, and vendors receive notifications about new messages.
-
-  .. note::
-
-      Email notifications will be sent only if you use :doc:`the new email template editing mode </user_guide/look_and_feel/email_templates/enable_email_editor>`.
-
-* The customer can check the message history and continue the conversation in his or her account on the storefront.
+* communicate with you or your vendors (if you are a marketplace owner).
 
   .. image:: img/ask_a_question.png
       :align: center
-      :alt: The button that lets customers to ask a question about the product on the storefront.
+      :alt: A link to the product page from which the message has been sent, in the dialogue between the customer and the vendor 
+    
+The add-on can also help the marketplace owner to communicate with his vendors.
 
-================
+Communication with Customers
+============================
+
+The Message center add-on provides vendors and marketplace owners with the ability to answer customers in time. On the **Customers → Message center** page vendors or marketplace owners can:
+
+* read customers' messages;
+
+* answer those messages, including customers' questions on specific products. A link to the product page from which the question has been sent is attached at the bottom of the dialog. This allows the vendor to go to the product page right away, and quickly solve the client's problem or answer his question.
+
+The add-on allows customers to:
+
+* ask a question right from the storefront via the **Ask a question** button.
+
+* read and answer messages on the **Messages** tab in their accounts.
+
+Communication between Vendors and Administrators
+================================================
+
+The Message center add-on allows vendors and marketplace owners to communicate with each other on the **Vendors → Message center** page. This is useful in case if:
+
+* the vendor has a question to the administrator;
+
+* the admin has any comments or suggestions on how the product in the vendor's store should be filled, and he wants to show him what needs to be fixed;
+
+* the marketplace owner wants to tell his vendors some important news.
+
 Related Articles
 ================
 
