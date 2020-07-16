@@ -58,35 +58,55 @@ Depending on how your features are configured, these 15 variations can be:
 Working with Variations
 =======================
 
---------------------------
-Creating a Variation Group
---------------------------
+------------------------------
+Creating a New Variation Group
+------------------------------
 
-#. Go to the editing page of a :doc:`product feature </user_guide/manage_products/features/index>` (either a new one, or existing one) and choose one of the two **Purposes** that allow creating variations.
+Let's say you have added a new product to your store, and now you want to create variations for it. You can do it right on the product page:
 
-   .. hint::
+#. Open the **Variations** tab on the page of the product.
 
-      The selected **Purpose** determines if variations with different values of this features will become separate catalog items. Every purpose has a description; it should help you find the purpose that is right for you.
+#. Click **Add variations**.
 
-   If variations differ by more features than one, then create multiple features, not necessarily with the same **Purpose**. Then CS-Cart will automatically determine, which variations should get their own catalog items, and which should only be selectable on the product page.
+#. Enter a name of a feature in the **Create new products** tab.
 
-#. Go to the editing page of any :doc:`product </user_guide/manage_products/products/index>` that you want to turn into a variation. Make sure that the product has a value for all the  features that distinguish it from other similar products.
+   .. important::
+       
+       Not all of the features are suggested. It depends on what **Purpose** has been specified in the features' settings.
+       
+   If the feature does not exist yet, click **Add** and specify one of the two **Purposes** for it. Specified purpose determines whether variations with different feature values will occupy separate positions in the list.
+   
+#. Add **Variants** for your features. The variations will be generated automatically.
 
-#. Switch to the **Variations** tab.
-
-   .. image:: img/product_variations_tab.png
+   .. image:: img/add_new_variations.png
        :align: center
-       :alt: You can manage the entire variation group from the page of any product that is a part of the group.
+       :alt: Adding new variations from the product page
+       
+#. Click **Create**.
 
-   There are 2 ways to let customers switch from this product's page to other similar products:
+-----------------------------------------
+Сombining Products into a Variation Group
+-----------------------------------------
 
-   * **Create a variation group.**
+Let's say you have imported products to your store, and now you want to put some of them in one group. It will allow your customers to choose a product while switching between the variations, and not to get confused with identical products with different feature variants. To do this:
 
-     To do it, use the **Add variations** button. You'll be able to add any products that have the values for the distinguishing features. You'll also be able to create new products automatically, based on features.
+#. Open the page of the product, then open the **Variations** tab.
 
-   * **Add this product to an existing group as a variation.**
+#. Click **Add variations**.
 
-     Start entering the variation group code into the field on the left. CS-Cart will automatically offer appropriate groups. If you know there is a group, but CS-Cart doesn't offer it, then please make sure that the product has values for all the features that the group is based on.
+#. Specify the features that can generate variations. It helps to find the products with the same features, but with different variants.
+
+   .. important::
+   
+       To help the system select the products correctly, they must have the identical features. Also the appropriate **Purpose** must be specified in the features' settings.
+       
+#. Go to the **Use existing products** tab. You can see all of the identical pdoducts here.
+
+   .. image:: img/use_existing_products.png
+       :align: center
+       :alt: Creating a new variation group based on the existing products
+       
+#. Select the products you need, and click **Add variations**.
 
 ----------------------
 Management and Removal
