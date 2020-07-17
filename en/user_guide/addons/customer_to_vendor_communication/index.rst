@@ -2,26 +2,29 @@
 Message Center
 **************
 
-The **Message center** add-on helps to establish communication between CS-Cart users.  This is a necessary solution if you want to give your customers ability to:
+The **Message center** add-on helps to establish communication between CS-Cart users:
 
-* ask a question about a product;
+* Customers can ask questions about specific products or simply contact you or your vendors.
 
-* communicate with you or your vendors.
+* Marketplace administration and vendors can contact each other.
 
 The add-on can also help you to communicate with your vendors.
 
 .. contents::
     :backlinks: none
     :local:
+    
+Functionality
+=============
 
 Communication with Customers
-============================
+++++++++++++++++++++++++++++
 
-The **Message center** add-on allows you and your vendors to stay in touch with customers. On the **Customers → Message center** page vendors or marketplace owners can:
+The **Message center** add-on allows you and your vendors to stay in touch with customers. On the **Customers → Message center** page, vendors or marketplace owners can:
 
 * read customers' messages;
 
-* answer those messages, including customers' questions on specific products. A link to the product page from which the question has been sent is attached at the bottom of the dialog. This allows the vendor to go to the product page right from the dialogue, and quickly solve the client's problem or answer his question.
+* answer those messages, including customers' questions on specific products. A link to the product page from which the question has been sent is attached at the bottom of the dialogue. This allows the vendor to go to the product page right from the dialogue, and quickly solve the client's problem or answer his question.
 
 .. image:: img/ask_a_question.png
       :align: center
@@ -34,7 +37,7 @@ The add-on allows customers to:
 * read and answer messages on the **Messages** tab in their accounts.
 
 Communication between Vendors and Administrators
-================================================
+++++++++++++++++++++++++++++++++++++++++++++++++
 
 The **Message center** add-on allows vendors and marketplace owners to communicate with each other on the **Vendors → Message center** page. This is useful in case if:
 

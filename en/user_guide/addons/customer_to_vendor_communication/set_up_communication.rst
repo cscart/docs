@@ -47,7 +47,7 @@ Let's say you want your vendors to read the messages from customers, but only yo
 
 #. Click the name of the **Vendor** user group.
 
-#. In the **Customer privileges** set the **Message center: customer-to-vendor communication** to *Can view only*. If you choose the *No access* option, the vendors will not even be able to read messages from the customers.
+#. In the **Customer privileges**, set the **Message center: customer-to-vendor communication** to *Can view only*. If you choose the *No access* option, the vendors will not even be able to read messages from the customers.
 
 #. Click **Save**.
 
@@ -87,7 +87,7 @@ Let's say you want to forbid specific vendors to read or answer messages, not al
        :align: center
        :alt: Adding a new group
 
-#. In the user group settings, next to the **Message center: customer-to-vendor communication** and **Message center: vendor-to-admin communication** fields choose the options you need.
+#. In the user group settings, next to the **Message center: customer-to-vendor communication** and **Message center: vendor-to-admin communication** fields choose the options you need. Click **Save**.
 
 #. Open the **Vendors → Vendors** page.
 
