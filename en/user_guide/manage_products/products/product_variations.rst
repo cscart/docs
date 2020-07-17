@@ -68,40 +68,44 @@ Let's say you have added a new product to your store, and now you want to create
 
 #. Click **Add variations**.
 
-#. Enter a name of a feature in the **Create new products** tab.
+#. Enter a name of a feature in the **Create new products** tab. If a feature exists in your store, you'll be offered to use it.
 
    .. important::
        
-       Not all of the features are suggested. It depends on what **Purpose** has been specified in the features' settings.
+       Not all the features appear among suggestions. It depends on what **Purpose** has been specified in the :doc:`features' settings </user_guide/manage_products/features/feature_attributes>`.
        
    If the feature does not exist yet, click **Add** and specify one of the two **Purposes** for it. Specified purpose determines whether variations with different feature values will occupy separate positions in the list.
    
-#. Add **Variants** for your features. The variations will be generated automatically.
+#. Add **Variants** for your features.
+
+#. Click **Create**. The variations will be generated automatically.
 
    .. image:: img/add_new_variations.png
        :align: center
        :alt: Adding new variations from the product page
        
-#. Click **Create**.
-
 -----------------------------------------
 Сombining Products into a Variation Group
 -----------------------------------------
 
-Let's say you have imported products to your store, and now you want to put some of them in one group. It will allow your customers to choose a product while switching between the variations, and not to get confused with identical products with different feature variants. To do this:
+Let's say you have imported products to your store, and now you want to put some of them in one group. It will allow your customers to choose a product while switching between the variations, and not to get confused by identical products with different feature variants. To do this:
 
-#. Open the page of the product, then open the **Variations** tab.
+#. Open the **Variations** tab on the product editing page.
 
 #. Click **Add variations**.
 
-#. Specify the features that can generate variations. It helps to find the products with the same features, but with different variants.
+#. Go to the **Use existing products** tab. You can see all of the identical products here.
 
    .. important::
-   
-       To help the system select the products correctly, they must have the identical features. Also the appropriate **Purpose** must be specified in the features' settings.
+          
+       The list will display the products that meet three following conditions:
        
-#. Go to the **Use existing products** tab. You can see all of the identical pdoducts here.
-
+       * same category;
+       
+       * same features, but different variants;
+       
+       * appropriate **Purposes** specified in the features' settings.
+       
    .. image:: img/use_existing_products.png
        :align: center
        :alt: Creating a new variation group based on the existing products
