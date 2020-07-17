@@ -106,12 +106,12 @@ Let's say you have imported products to your store, and now you want to put some
        
        * appropriate **Purposes** specified in the features' settings.
        
+#. Select the products you need, and click **Add variations**.
+       
    .. image:: img/use_existing_products.png
        :align: center
        :alt: Creating a new variation group based on the existing products
        
-#. Select the products you need, and click **Add variations**.
-
 ----------------------
 Management and Removal
 ----------------------
