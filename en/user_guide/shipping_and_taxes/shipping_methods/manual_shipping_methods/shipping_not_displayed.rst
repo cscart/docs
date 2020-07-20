@@ -10,7 +10,7 @@ If a :doc:`manual shipping method </user_guide/shipping_and_taxes/shipping_metho
 
    * Check whether the states (if they exist) are selected on the rate area editing page.
 
-#. Go to **Administration → Shipping & taxes → Shipping methods** and choose the desired shipping method. Switch to the **Shipping rates** tab and check the rates have been specified for the customer's rate area.
+#. Go to **Administration → Shipping & taxes → Shipping methods** and choose the desired shipping method. Switch to the **Shipping time and rates** tab and check the rates have been specified for the customer's rate area.
 
    .. image:: img/rates.png
        :align: center

@@ -4,37 +4,29 @@ How To: Set Up a Free Shipping Method
 
 #. In the Administration panel, go to **Administration → Shipping & Taxes → Shipping methods**.
 
-#. :doc:`Create a new shipping method </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/set_manual_shipping>` or click on the name of an existing one.
+#. :doc:`Add  a new shipping method </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/set_manual_shipping>`, or choose one of the existing methods to configure it.
 
    .. important::
 
-       Set the **Rate calculation** of this method to *Manual*.
+       Set the **Rate calculation** of this method to *Manual (by defined rate area)*. This way you can specify the shipping cost on the different conditions.
 
-#. The shipping method editing page will open. Switch to the **Shipping time and rates** tab.
+#. Go to the **Shipping time and rates** tab.
 
-#. Select the :doc:`rate area </user_guide/shipping_and_taxes/locations/index>` for which you'd like to offer free shipping. If you don't see the choice of rate areas, it means that you only have one.
+#. Decide where your shipping method will be offered. To do this, choose :doc:`rate areas </user_guide/shipping_and_taxes/locations/index>` from the dropdown list. If there is a rate area in the store which you did not include in the shipping method, orders will not be delivered in this area.
 
-#. Configure the **Cost dependencies** section as follows:
+   .. hint::
+   
+       If a certain rate area does not exist in your store, you can :doc:`add it  </user_guide/shipping_and_taxes/locations/set_location>`. This is only necessary if you need to add different conditions and availability/unavailability of delivery to this area.
 
-   .. list-table::
-       :widths: 10 10 10
-       :header-rows: 1
+#. Leave the **Rate** field empty (equal to zero by default). You do not need to specify price/weight/items conditions either.
 
-       *   -   Products cost 
-           -   Rate value
-           -   Type
-       *   -   More than $0.00
-           -   0
-           -   Absolute ($)
-       *   -   More than $0.01
-           -   0
-           -   Absolute ($)
+   .. hint::
 
-   .. important::
+       If you want the shipping to certain rate areas to be paid, just specify the **Rate** or price/weight/items conditions for those areas. 
 
-       Make sure that there are no charges defined in the **Weight dependencies** and **Items dependencies** sections for this shipping method.
+#. If you want to check the shipping cost, click the **Recalculate rates** button on the **Test rate calculation** tab.
 
-#. Click the **Save** button (or **Create**, if you're creating a new shipping method).
+#. Click **Save**.
 
 .. meta::
    :description: How to create a shipping method that is always free in CS-Cart or Multi-Vendor?

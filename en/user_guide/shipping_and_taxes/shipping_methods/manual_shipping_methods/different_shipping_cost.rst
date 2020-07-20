@@ -14,7 +14,7 @@ How To: Set Different Shipping Costs for Different Products
        :align: center
        :alt: Shipping cost per item in CS-Cart and Multi-Vendor.
 
-#. Click the **Save and close** button.
+#. Click the **Save** button.
 
 #. Repeat steps from 2 through 5 for other products.
 

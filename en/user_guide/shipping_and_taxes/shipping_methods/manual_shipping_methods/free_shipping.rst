@@ -2,35 +2,60 @@
 How To: Offer Free Shipping When Order Total Exceeds Certain Value
 ******************************************************************
 
-#. In the Administration panel, go to **Administration → Shipping & taxes → Shipping methods**.
+Let's say ypu want delivery in your store to become free if the client's order total exceeds certain value. To do this:
 
-#. :doc:`Create a new shipping method with manual rate calculation </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/set_manual_shipping>` or click on the name of an existing one.
+#. Open  the **Administration → Shipping & Taxes → Shipping methods** page.
 
-#. The shipping method editing page will open. Switch to the **Shipping time and rates** tab.
+#. :doc:`Add  a new shipping method with manual rate calculation </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/set_manual_shipping>`, or choose one of the existing methods to configure it.
 
-#. Select the :doc:`rate area </user_guide/shipping_and_taxes/locations/index>` for which you'd like to offer free shipping. If you don't see the rate area selection, it means that you haven't created any rate areas and have only one of them.
+#. The shipping method editing page will open. Go to the **Shipping time and rates** tab.
 
-#. Configure the **Cost dependencies** section as follows:
+#. Decide where your shipping method will be offered. To do this, choose :doc:`rate areas </user_guide/shipping_and_taxes/locations/index>` from the dropdown list. If there is a rate area in the store which you did not include in the shipping method, orders will not be delivered in this area.
 
-   .. list-table::
-       :widths: 10 10 10
-       :header-rows: 1
+   .. hint::
+   
+       If a certain rate area does not exist in your store, you can :doc:`add it  </user_guide/shipping_and_taxes/locations/set_location>`. This is only necessary if you need to add different conditions and availability/unavailability of delivery to this area.
+       
+#. Configure each rate area, and specify the **Price condition**. In this case there are two ways to configure this section:
 
-       *   -   Products cost 
-           -   Rate value
-           -   Type
-       *   -   More than $0.00
-           -   25
-           -   Absolute ($)
-       *   -   More than $200.00
-           -   0
-           -   Absolute ($)
+   * **Way 1**:
+   
+     In the **Rate** field enter the base shipping cost, for example, **$50**. Configure the **Price condition** as follows:
+   
+     .. list-table::
+         :widths: 10 20 10
+         :header-rows: 1
 
-#. Click the **Save** button (or **Create**, if you're creating a new shipping method).
+         * - From 
+           - To
+           - Surcharge / Discount
+         * - $1,000.00
+           - and up (leave the field empty)
+           - -$50.00
+			 
+   * **Way 2**:
+   
+     Leave the **Rate** field empty, and configure the **Items condition** as follows:
+	
+     .. list-table::
+         :widths: 10 20 10
+         :header-rows: 1
 
-   .. important::
+         * - From 
+           - To
+           - Surcharge / Discount
+         * - $00.00
+           - $1,000.00
+           - $50.00
+         * - $1,000.00
+           - and up (leave the field empty)
+           - $00.00
+           
+   .. note::
 
-       The shipping method will be free only for the rate area for which you configure it this way, and only if you don't have any rates specified in the **Weight dependencies** or **Items dependencies** section.
+       In this case, for orders from $00.00 to $1,000.00, the shipping cost will be $50.00, and for orders over $1,000.00, it will be free.
+
+#. Click the **Save** button.
 
 .. meta::
    :description: How to take no charge for a shipping method with custom manual rates in CS-Cart or Multi-Vendor?

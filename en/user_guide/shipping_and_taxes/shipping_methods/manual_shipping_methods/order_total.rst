@@ -2,35 +2,60 @@
 How To: Make Shipping Cost Dependent on Order Total
 ***************************************************
 
-#. In the Administration panel, go to **Administration → Shipping & taxes → Shipping methods**.
+Let's say you want delivery in your store to become cheaper when a customer purchases products for a certain amount. To do this, follow these steps:
 
-#. :doc:`Create a new shipping method with manual rate calculation </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/set_manual_shipping>` or click on the name of an existing one.
+#. Open  the **Administration → Shipping & Taxes → Shipping methods** page.
 
-#. The shipping method editing page will open. Switch to the **Shipping time and rates** tab.
+#. :doc:`Add  a new shipping method with manual rate calculation </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/set_manual_shipping>`, or choose one of the existing methods to configure it.
 
-#. Select the :doc:`rate area </user_guide/shipping_and_taxes/locations/index>` for which you'd like to configure the shipping cost. If you don't see the choice of rate areas, it means that you only have one.
+#. Go to the **Shipping time and rates** tab.
 
-#. Configure the **Cost dependencies** section as follows:
+#. Decide where your shipping method will be offered. To do this, choose :doc:`rate areas </user_guide/shipping_and_taxes/locations/index>` from the dropdown list. If there is a rate area in the store which you did not include in the shipping method, orders will not be delivered in this area.
 
-   .. list-table::
-       :widths: 10 10 10
-       :header-rows: 1
+   .. hint::
+   
+       If a certain rate area does not exist in your store, you can :doc:`add it  </user_guide/shipping_and_taxes/locations/set_location>`. This is only necessary if you need to add different conditions and availability/unavailability of delivery to this area.
 
-       *   -   Products cost 
-           -   Rate value
-           -   Type
-       *   -   More than $0.00
-           -   25
-           -   Absolute ($)
-       *   -   More than $50.00
-           -   20
-           -   Absolute ($)
+#. Configure each rate area, and specify the **Price condition**. In this case there are two ways to configure this section:
+   
+   * **Way 1**:
+   
+     In the **Rate** field enter the base shipping cost, for example, **$50**. Configure the **Price condition** as follows:
+   
+     .. list-table::
+         :widths: 10 20 10
+         :header-rows: 1
+
+         * - From 
+           - To
+           - Surcharge / Discount
+         * - $1,000.00
+           - and up (leave the field empty)
+           - -$30.00
+			 
+   * **Way 2**:
+   
+     Leave the **Rate** field empty, and configure the **Price condition** as follows:
+	
+     .. list-table::
+         :widths: 10 20 10
+         :header-rows: 1
+
+         * - From 
+           - To
+           - Surcharge / Discount
+         * - $0.00
+           - $1,000.00
+           - $50.00
+         * - $1,000.00
+           - and up (leave the field empty)
+           - $20.00
 
    .. note::
 
-       In this case if the order total is between $0 and $50, the shipping cost will be $25, and if the order total exceeds $50, the shipping cost will be $20.
+       In this case, for orders from $0 to $1000, the shipping cost will be $50, and for orders over $1000, it will be $20.
 
-#. Click the **Save** button (or **Create**, if you're creating a new shipping method).
+#. Click **Save**.
 
 .. meta::
    :description: How to set shipping rates that depend on the sum of purchase in CS-Cart or Multi-Vendor?

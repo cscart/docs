@@ -4,43 +4,47 @@ How To: Set Up a Manual Shipping Method
 
 To set up a manual shipping method with pre-determined rates depending on a rate area:
 
-#. In the Administration panel, :doc:`create the necessary rate areas </user_guide/shipping_and_taxes/locations/set_location>`.
+#. Open  the **Administration → Shipping & Taxes → Shipping methods** page.
 
-#. Go to **Administration → Shipping & taxes → Shipping methods**.
+#. Click the **+** botton in the upper-right corner to add a new shipping method, or choose one of the existing methods to configure it.
 
-#. Add a new shipping method by clicking the **+** button in the upper right part of the page, or choose an existing one by clicking on its name.
+#. On the **General** tab in the **Rate calculation** section choose **Manual (by defined rate area)**.
 
-#. Set **Rate calculation** to *Manual*.
-
-   .. image:: img/manual_shipping.png
+   .. image:: img/manual_shipping.png 
        :align: center
-       :alt: Creating a shipping method with pre-determined rates in CS-Cart.
+       :alt: Creating a manual shipping method in CS-Cart
 
-#. Switch to the **Shipping time and rates** tab.
+#. Go to the **Shipping time and rates** tab.
 
-#. Select the :doc:`rate area </user_guide/shipping_and_taxes/locations/index>` for which you'd like to specify rates.
+#. Decide where your shipping method will be offered. To do this, choose :doc:`rate areas </user_guide/shipping_and_taxes/locations/index>` from the dropdown list. If there is a rate area in the store which you did not include in the shipping method, orders will not be delivered in this area.
 
-#. (optional) Specify the **Delivery time** for the rate area. If a rate area has a delivery time, then that time will be specified to the customers from that rate area instead of the time from the **General** tab.
+   .. hint::
+       
+       If a certain rate area does not exist in your store, you can :doc:`add it  </user_guide/shipping_and_taxes/locations/set_location>`. This is only necessary if you need to add different conditions and availability/unavailability of delivery to this area.
 
-#. Specify the rates for the shipping method. The rates are separated into 3 sections and can depend on:
+#. (optional) Specify the **Shipping time** value for each rate area. If a rate area has it's own shipping time, it will be displayed to customers from this area instead of the **Delivery time** from the **General** tab.
 
-   * :doc:`Order total </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/order_total>`
+#. Specify the **Rate** for each rate area. If you leave the **Rate** field empty (equal to zero by default), the delivery will be free.
 
-   * :doc:`Weight of the items in the order </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/total_and_weight>`
+#. Add different conditions for each rate area. There are three types of conditions: 
 
-   * :doc:`Quantity of the items in the order </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/product_amount>`
+   * :doc:`Price condition </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/order_total>` — the surcharge/discount depends on the total order amount.
 
-   .. note::
+   * :doc:`Weight condition </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/total_and_weight>` — the surcharge/discount depends on the weight of products in the order.
 
-       The rates within each section are not summed up. Let's use **Cost dependencies** as an example: if you specify the **Rate value** of *20* for the **More than $0** condition, and you want a rate of 30 for orders with the total greater than $50, then the **More than $50** condition should have the **Rate value** of *30*, and not *10*.
+   * :doc:`Items condition </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/product_amount>` — the surcharge/discount depends on the number of products in the order.
 
-#. Select other rate areas and set the desired shipping rates for them.
+   .. important::
 
-#. Click the **Save** button (or **Create**, if you're adding a new shipping method).
+       The rates within each section are not summed up.  Let’s use **Price condition** as an example: 
+       
+       Let's say if the order cost is greater than **$0.00**, then the **Surcharge / Discount** is **$20.00**. If the order cost is greater than **$50.00**, then  the **Surcharge/Discount** value increases to **$30.00**. In this case, after specifying the condition **From $50.00**, you need to enter **$30.00** (not **$10.00**) in the **Surcharge / Discount** field.
 
-   .. image:: img/dependencies.png
+#. Click **Save**.
+
+   .. image:: img/dependencies.png 
        :align: center
-       :alt: Configuring shipping charges in CS-Cart and Multi-Vendor.
-
+       :alt: Configuring rate areas in CS-Cart
+       
 .. meta::
    :description: Configuring a shipping method with custom manually-specified shipping rates in CS-Cart or Multi-Vendor.

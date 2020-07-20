@@ -25,6 +25,8 @@ How To: Offer Free Shipping for a Certain Product
    * Go to **Administration → Shipping & taxes → Shipping methods**.
 
    * Click the name of the shipping method you want to edit.
+   
+   * Go to the **Additional settings** tab.
 
    * Tick the **Use for free shipping** checkbox.
 

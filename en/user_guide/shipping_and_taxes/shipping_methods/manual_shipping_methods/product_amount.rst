@@ -2,35 +2,60 @@
 How To: Make Shipping Cost Depend on the Product Amount
 *******************************************************
 
-#. In the Administration panel, go to **Administration → Shipping & Taxes → Shipping methods**.
+Let's say you want delivery in your store to become cheaper when a customer purchases more one product at a time. To do this, follow these steps:
 
-#. :doc:`Create a new shipping method with manual rate calculation </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/set_manual_shipping>` or click on the name of an existing one.
+#. Open  the **Administration → Shipping & Taxes → Shipping methods** page.
 
-#. The shipping method editing page will open. Switch to the **Shipping time and rates** tab.
+#. :doc:`Add  a new shipping method with manual rate calculation </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/set_manual_shipping>`, or choose one of the existing methods to configure it.
 
-#. Select the :doc:`rate area </user_guide/shipping_and_taxes/locations/index>` for which you'd like to configure the shipping cost. If you don't see the choice of rate areas, it means that you only have one.
+#. Go to the **Shipping time and rates** tab.
 
-#. Configure the **Items dependencies** section as follows:
-
-   .. list-table::
-       :widths: 10 10 10
-       :header-rows: 1
-
-       *   -   Product quantity 
-           -   Rate value
-           -   Type
-       *   -   More than 0 item(s)
-           -   0
-           -   Absolute ($)
-       *   -   More than 5 item(s)
-           -   10
-           -   Absolute ($)
+#. Decide where your shipping method will be offered. To do this, choose :doc:`rate areas </user_guide/shipping_and_taxes/locations/index>` from the dropdown list. If there is a rate area in the store which you did not include in the shipping method, orders will not be delivered in this area.
 
    .. hint::
+   
+       If a certain rate area does not exist in your store, you can :doc:`add it  </user_guide/shipping_and_taxes/locations/set_location>`. This is only necessary if you need to add different conditions and availability/unavailability of delivery to this area.
 
-       To add more rates, click the **+** icon on the right; it appears when you hover a mouse pointer over an existing rate.
+#. Configure each rate area, and specify the **Items condition**. In this case there are two ways to configure this section:
+   
+   * **Way 1**:
+   
+     In the **Rate** field enter the base shipping cost, for example, **$50**. Configure the **Items condition** as follows:
+   
+     .. list-table::
+         :widths: 10 20 10
+         :header-rows: 1
 
-#. Click the **Save** button (or **Create**, if you're creating a new shipping method).
+         * - From 
+           - To
+           - Surcharge / Discount
+         * - 5 item
+           - and up (leave the field empty)
+           - -$30.00
+			 
+   * **Way 2**:
+   
+     Leave the **Rate** field empty, and configure the **Items condition** as follows:
+	
+     .. list-table::
+         :widths: 10 20 10
+         :header-rows: 1
+
+         * - From 
+           - To
+           - Surcharge / Discount
+         * - 1 item
+           - 5 item
+           - $50.00
+         * - 5 item
+           - and up (leave the field empty)
+           - $20.00
+
+   .. note::
+
+       In this case, if a client has 5 or more products in his order, the shipping will cost him $20 instead of $50.
+
+#. Click the **Save** button.
 
 .. meta::
    :description: How to set shipping rates that depend on the amount of ordered products in CS-Cart or Multi-Vendor?

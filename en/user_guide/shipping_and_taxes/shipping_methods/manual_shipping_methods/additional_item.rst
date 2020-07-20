@@ -14,43 +14,36 @@ Way 1. Configuring the Shipping Method
 
 #. The shipping method editing page will open. Switch to the **Shipping times and rates** tab.
 
-#. Select the :doc:`rate area </user_guide/shipping_and_taxes/locations/index>` for which you'd like to configure the shipping cost. If you don't see the choice of rate areas, it means that you only have one.
+#. Decide where your shipping method will be offered. To do this, choose :doc:`rate areas </user_guide/shipping_and_taxes/locations/index>` from the dropdown list. If there is a rate area in the store which you did not include in the shipping method, orders will not be delivered in this area.
 
-#. Configure the **Cost dependencies** section as follows:
+   .. hint::
+   
+       If a certain rate area does not exist in your store, you can :doc:`add it  </user_guide/shipping_and_taxes/locations/set_location>`. This is only necessary if you need to add different conditions and availability/unavailability of delivery to this area.
+       
+#. In the **Rate** field enter the base shipping cost, for example, $50.
 
-   .. list-table::
-       :widths: 10 10 10
-       :header-rows: 1
-
-       *   -   Products cost 
-           -   Rate value
-           -   Type
-       *   -   More than $0.00
-           -   4.50
-           -   Absolute ($)
-
-#. Configure the **Items dependencies** section as follows:
+#. Configure the **Items condition** section as follows:
 
    .. list-table::
-       :widths: 10 10 10 10
+       :widths: 10 20 10 10
        :header-rows: 1
 
-       *   -   Product quantity 
-           -   Rate value
-           -   Type
+       *   -   From 
+           -   To
+           -   Surcharge / Discount
            -   Per Item
-       *   -   More than 0 item(s)
-           -   1.50
-           -   Absolute ($)
+       *   -   0 item
+           -   and up (leave the field empty)
+           -   $10.00
            -   ✓
+           
+#. Click **Save**.
 
-#. Click the **Save** button (or **Create**, if you're creating a new shipping method).
-
-   The shipping method is set up. For the mentioned example the shipping cost will be $6 if one item is ordered. An extra sum of $1.50 will be added to the cost per each additional item in case of 2 or more items.
+   The shipping method is set up. For the mentioned example the shipping cost will be $60 if one item is ordered. An extra sum of $10 will be added to the cost per each additional item.
 
    .. note:: 
 
-       This extra charge does not depend on the product that is ordered. For example, if a customer has *2\*Product A + 1\*Product B*, the shipping cost will be $9.
+       This extra charge does not depend on the product that is ordered. For example, if a customer has *2\*Product A + 1\*Product B*, the shipping cost will be $80.
 
 ===========================
 Way 2. Configuring Products
@@ -64,17 +57,17 @@ A product has :doc:`a property </user_guide/manage_products/products/product_att
 
 #. Switch to the **Shipping properties** tab.
 
-#. Find the **Shipping freight** field and enter sum (for example, 2.00) which will be added to the shipping cost for each additional item of that product.
+#. Find the **Shipping freight** field and enter sum (for example, $20.00) which will be added to the shipping cost for each additional item of that product.
 
 #. Click the **Save** button.
 
    Now let's assume you followed the instructions from **Way 1**, and then used **Way 2** to set up shipping freight for *Product A*, but not for *Product B*. In that case the shipping costs will be calculated as follows:
 
-   * **1\*Product A** = $4.50 + ($1.50 + $2) = **$8**
+   * **1\*Product A** = $50.00 + ($10.00 + $20.00) = **$80.00**
 
-   * **2\*Product A** = $4.50 + 2\*($1.50 + $2) = **$11.50**
+   * **2\*Product A** = $50.00 + 2\*($10.00 + $20.00) = **$110.00**
 
-   * **2\*Product A + 1\*Product B** = $4.50 + 2\*($1.50 + $2) + 1\*$1.50 = **$13**
+   * **2\*Product A + 1\*Product B** = $50.00 + 2\*($10.00 + $20.00) + 1\*$10.00 = **$120.00**
 
 .. meta::
    :description: How to increase the base shipping charge per item in CS-Cart or Multi-Vendor ecommerce software?
