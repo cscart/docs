@@ -20,7 +20,7 @@ Let's say you want delivery in your store to become cheaper when a customer purc
    
    * **Way 1**:
    
-     In the **Rate** field enter the base shipping cost, for example, **$50**. Configure the **Price condition** as follows:
+     In the **Rate** field enter the base shipping cost, for example, *$50*. Configure the **Price condition** as follows:
    
      .. list-table::
          :widths: 10 20 10
@@ -53,7 +53,7 @@ Let's say you want delivery in your store to become cheaper when a customer purc
 
    .. note::
 
-       In this case, for orders from $0 to $1000, the shipping cost will be $50, and for orders over $1000, it will be $20.
+       In this case, for orders from *$0* to *$1000*, the shipping cost will be *$50*, and for orders over *$1000*, it will be *$20*.
 
 #. Click **Save**.
 

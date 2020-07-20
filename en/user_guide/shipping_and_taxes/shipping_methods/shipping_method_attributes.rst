@@ -76,7 +76,7 @@ You can specify price, weight or items conditions for each rate area. Once you�
 
 * **To**—the maximum value up to which the specified surcharge/discount is applied.
 
-* **Surcharge / discount** — the amount of money that will be added to the base **Rate** or reduced from it. To make a discount just add the “—” (minus) sign to the entered value.
+* **Surcharge / discount** — the amount of money that will be added to the base **Rate** or reduced from it. To make a discount just add the “-” (minus) sign to the entered value.
 
 .. important::
 

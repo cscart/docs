@@ -58,13 +58,13 @@ To set up a shipping cost that depends on order total and weight:
 
    In this case the shipping rates from the **Price condition** and **Weight condition** sections will apply together. Here are some examples of how the shipping cost will be calculated:
 
-   * The order total is below $1000, and the order weight is less than 100 lbs: **$50 + $10**.
+   * The order total is below $1000, and the order weight is less than 100 lbs: *$50 + $10*.
 
-   * The order total is below $1000, and the order weight exceeds 100 lbs: **$50 + $15**.
+   * The order total is below $1000, and the order weight exceeds 100 lbs: *$50 + $15*.
 
-   * The order total exceeds $1000, and the order weight is less than 100 lbs: **$20 + $10**.
+   * The order total exceeds $1000, and the order weight is less than 100 lbs: *$20 + $10*.
 
-   * The order total exceeds $1000, and the order weight exceeds 100 lbs: **$20 + $15**.
+   * The order total exceeds $1000, and the order weight exceeds 100 lbs: *$20 + $15*.
 
 .. meta::
    :description: How to set shipping rates that depend on order total and weight in CS-Cart or Multi-Vendor?

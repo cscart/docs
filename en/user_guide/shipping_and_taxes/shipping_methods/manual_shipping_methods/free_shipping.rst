@@ -20,7 +20,7 @@ Let's say ypu want delivery in your store to become free if the client's order t
 
    * **Way 1**:
    
-     In the **Rate** field enter the base shipping cost, for example, **$50**. Configure the **Price condition** as follows:
+     In the **Rate** field enter the base shipping cost, for example, *$50*. Configure the **Price condition** as follows:
    
      .. list-table::
          :widths: 10 20 10
@@ -53,7 +53,7 @@ Let's say ypu want delivery in your store to become free if the client's order t
            
    .. note::
 
-       In this case, for orders from $00.00 to $1,000.00, the shipping cost will be $50.00, and for orders over $1,000.00, it will be free.
+       In this case, for orders from *$00.00* to *$1,000.00*, the shipping cost will be *$50.00*, and for orders over *$1,000.00*, it will be free.
 
 #. Click the **Save** button.
 

@@ -38,7 +38,7 @@ To set up a manual shipping method with pre-determined rates depending on a rate
 
        The rates within each section are not summed up.  Let’s use **Price condition** as an example: 
        
-       Let's say if the order cost is greater than **$0.00**, then the **Surcharge / Discount** is **$20.00**. If the order cost is greater than **$50.00**, then  the **Surcharge/Discount** value increases to **$30.00**. In this case, after specifying the condition **From $50.00**, you need to enter **$30.00** (not **$10.00**) in the **Surcharge / Discount** field.
+       Let's say if the order cost is greater than *$0.00*, then the **Surcharge / Discount** is *$20.00*. If the order cost is greater than *$50.00*, then  the **Surcharge/Discount** value increases to *$30.00*. In this case, after specifying the condition *From $50.00*, you need to enter *$30.00* (not *$10.00*) in the **Surcharge / Discount** field.
 
 #. Click **Save**.
 
