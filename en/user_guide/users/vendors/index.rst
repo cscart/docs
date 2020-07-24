@@ -23,6 +23,7 @@ View the list of the vendors in the Multi-Vendor administration panel under **Ve
     account_balance
     manage_vendor_plans
     allow_customers_to_apply_for_vendor_account
+    collect_taxes
     create_vendor_account
     invite_vendors
     vendor_group

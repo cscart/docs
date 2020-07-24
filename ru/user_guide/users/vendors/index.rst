@@ -21,6 +21,7 @@
     workflow
     account_balance
     allow_customers_to_apply_for_vendor_account
+    collect_taxes
     create_vendor_account
     merge_vendors
     allow_vendors_to_edit_layout_and_theme
