@@ -10,9 +10,9 @@ By default, all the taxes on marketplace are paid by vendors, but marketplace ow
 
 .. important::
 
-    In some states U.S. tax laws impose an obligation on marketplace owners to collect and remit sales tax on behalf of marketplace sellers. Check out the `state-by-state guide to marketplace facilitator laws <https://www.avalara.com/us/en/learn/guides/state-by-state-guide-to-marketplace-facilitator-laws.html>`_ .
+    In some states U.S. tax laws impose an obligation on marketplace owners to collect and remit sales tax on behalf of marketplace sellers. To learn more, check out the `state-by-state guide to marketplace facilitator laws <https://www.avalara.com/us/en/learn/guides/state-by-state-guide-to-marketplace-facilitator-laws.html>`_ .
     
-To collect the taxes on your account, you need to have at least one tax added and configured.
+To collect the taxes on your account, you need to have at least one :doc:`tax added and configured </user_guide/shipping_and_taxes/taxes/set_up_tax>`.
 
 #. Open the **Add-ons → Manage add-ons** page.
 
