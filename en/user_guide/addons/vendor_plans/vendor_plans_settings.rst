@@ -26,6 +26,6 @@ How To: Configure the Vendor Plans Add-on
 
 #. Click **Save** to apply your changes.
 
-   .. image:: img/vendor_plans_settings.png
+   .. image:: /user_guide/users/vendors/img/collect_taxes.png
        :align: center
        :alt: The settings of the Vendor Plans add-on.

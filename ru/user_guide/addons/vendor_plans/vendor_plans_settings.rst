@@ -26,5 +26,5 @@
 
 #. Нажмите **Сохранить**, чтобы применить изменения.
 
-   .. fancybox:: img/vendor_plans_settings.png
+   .. fancybox:: /user_guide/users/vendors/img/collect_taxes.png
        :alt: Настройки модуля "Тарифные планы для продавцов".
