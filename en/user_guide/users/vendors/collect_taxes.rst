@@ -1,5 +1,5 @@
 **********************************
-How to: Collect taxes from vendors
+How to: Collect Taxes from Vendors
 **********************************
 
 .. note::
