@@ -54,6 +54,8 @@ What Shipping and Payment Methods Are Supported?
 
 The application supports **all shipping methods** and the following payment methods:
 
+* Apple Pay
+
 * PayPal Express Checkout
 
 * Offline payment methods (such as "Discuss with manager", etc.)
