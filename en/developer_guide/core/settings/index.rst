@@ -19,11 +19,7 @@ Settings are managed via the ``Registry`` and ``Settings`` classes. The informat
 Working with Settings in the Administration Panel
 =================================================
 
-Core and add-on settings can be viewed and edited in the Administration panel. A setting has ``edition_type`` that determines when and where the setting appears (see :ref:`edition-type`):
-
-* ``MVE`` (Multi-Vendor)—the setting will appear only in Multi-Vendor and only in the *All vendors* mode.
-
-* ``ULT`` (СS-Cart and CS-Cart Ultimate)—the setting will appear both in the *All stores* mode and when a storefront is selected. Each storefront can have its own values for settings, depending on :ref:`edition_type <edition-type>`. Settings that aren't available when a storefront is selected will be hidden.
+Core and add-on settings can be viewed and edited in the Administration panel. A setting has ``edition_type`` that determines when and where the setting appears (see :ref:`edition-type`).
 
 -------------
 Core Settings
@@ -67,7 +63,7 @@ Core settings are located in the Administration panel on the **Settings** page (
 
 A setting or a section with settings may or may not appear, depending on ``edition_type`` (see :ref:`edition-type`). A setting can have different values, depending on the storefront or vendor. Usually a core setting must belong to a section. If a setting doesn't belong to a section, the setting will be hidden.
 
-For example, when there are multiple storefronts, the **Alternative currency display format** (``edition_type="ULT"``) will look like this:
+For example, when there are multiple storefronts, the **Alternative currency display format** (``edition_type="ROOT,STOREFRONT"``) will look like this:
 
 .. image:: img/setting_with_multiple_storefronts.png
     :align: center
@@ -99,11 +95,11 @@ Settings are managed in the code via the ``Registry`` and ``Settings`` classes. 
 The Registry Class
 ------------------
 
-The ``Registry`` class allows to control settings from any part of the application. This class also performs caching of settings (see the *var/cache/registry* folder).
+The ``Registry`` class allows to access settings from any part of the application. This class also performs caching of settings (see the *var/cache/registry* folder).
 
 Here is how settings are controlled with the ``Registry`` class:
 
-* Getting the value of a core/add-on setting::
+* Getting the value of a core/add-on setting for the current storefront or company::
 
     Registry::get('settings.SECTION_NAME.SETTING_NAME');
     Registry::get('addons.ADDON_NAME.SETTING_NAME');
@@ -113,11 +109,15 @@ Here is how settings are controlled with the ``Registry`` class:
     Registry::set('settings.SECTION_NAME.SETTING_NAME', 'Some value');
     Registry::set('addons.ADDON_NAME.SETTING_NAME', 'Some value');
 
+.. note::
+
+    Changing settings via the ``Registry`` class won't affect actual store settings. Use it only when you need to override a value in the runtime.
+
 ------------------
 The Settings Class
 ------------------
 
-The ``Settings`` class is an extended API that exists specifically to work with CS-Cart settings stored in the database. This class has many methods: checking the availability of settings; reading, changing, and removing the values of settings.
+The ``Settings`` class is an extended API that exists specifically to work with settings stored in the database. This class has many methods: checking the availability of settings; reading, changing, and removing the values of settings.
 
 For example, here's how to manage the ``elements_per_page`` setting  (**Elements per page** from **Settings → Appearance**) with the ``Settings`` class:
 
@@ -132,6 +132,15 @@ For example, here's how to manage the ``elements_per_page`` setting  (**Elements
 * Changing the value of the setting::
 
     Settings::instance()->updateValue('elements_per_page', $new_value, 'Appearance');
+
+When working with the settings, keep in mind that they can have storefront- and company-specific values.
+
+In some cases the storefront and the company are detected automatically, but it's recommended to explicitly specify them::
+
+    $settings_manager = Settings::instance(['storefront_id' => 4, 'company_id' => 17]);
+    $settings_manager->getValue('elements_per_page', 'Appearance');
+
+Moreover, this is the only way to access vendor-specific settings in Multi-Vendor.
 
 ===============
 Add-on Settings
@@ -165,34 +174,54 @@ Structure of the *<settings>* Section
 .. code-block:: xml
 
    <settings layout="separate" edition_type="ROOT,ULT:VENDOR">
-           <sections> <!-- The list of tabs (sections) in add-on settings -->
-               <section id="section1"> <!-- A section with settings has the following attributes:
-                   id—an identifier by which a setting can be addressed: 
-                      Registry::get('addons.[addon_id].[setting_id]')
-                   edition_type—determines when and where the section is available;
-                                this parameter is optional and supports 
-                                multiple variants separated by commas.
+           <sections>
+           <!--
+               The list of tabs (sections) in add-on settings
+           -->
+               <section id="section1">
+               <!--
+                   A section with settings has the following attributes:
+                   * id:           An identifier used to address the section.
+                   * edition_type: Determines when and where the section is available;
+                                   this parameter is optional and supports
+                                   multiple variants separated by commas.
                -->
-                   <items> <!-- The list of settings in the section -->
-                       <item id="header"> <!-- The settings
-                           id—the identifier of the setting.
-                           edition_type—determines when the setting is available;
-                                        this parameter is optional and supports 
-                                        multiple variants separated by commas.
+                   <items>
+                   <!--
+                       The list of settings in the section
+                   -->
+                       <item id="header">
+                       <!--
+                           A setting has the following attributes:
+                           * id:           An identifier used to address the setting:
+                                           Registry::get('addons.[addon_id].[setting_id]')
+                           * edition_type: Determines when the setting is available;
+                                           this parameter is optional and supports
+                                           multiple variants separated by commas.
                        -->
-                           <type>header</type> <!-- see Attachment 2 for 
-                               the description of possible values:
-                                 input, textarea, password, checkbox, selectbox, 
-                                 multiple select, multiple checkboxes, 
-                                 countries list, states list,
-                                 file, info, header, template
+                           <type>header</type>
+                           <!--
+                               See Attachment 2 for the description of possible values:
+                               input, textarea, password, checkbox, selectbox,
+                               multiple select, multiple checkboxes,
+                               countries list, states list,
+                               file, info, header, template
                            -->
-                           <default_value>radio_1</default_value> <!-- The default 
-                           value assigned to the setting. -->
-                           <variants> <!-- The variants for the following types:
-                           selectbox, multiple select, 
-                           multiple checkboxes, combo select -->
-                               <item id="radio_1"></item> <!-- id—the identifier of the variant-->
+                           <default_value>radio_1</default_value>
+                           <!--
+                               The default value assigned to the setting.
+                           -->
+                           <variants>
+                           <!--
+                               The variants are available for the following setting types:
+                               * selectbox, multiple select;
+                               * multiple checkboxes, combo select
+                           -->
+                               <item id="radio_1"></item>
+                               <!--
+                                   A variant item has the following attributes:
+                                   * id: An identifier used to address the variant.
+                               -->
                            </variants>
                    </items>
                </section>
@@ -384,9 +413,7 @@ This table contains the information for all the languages that are currently ins
 Attachment 1: Possible Values of *edition_type*
 ===============================================
 
-.. note::
-
-    An add-on can have multiple values of ``edition_type`` separated by commas. If you don't specify any value, it will behave like ``ROOT``.
+Settings and settings sections can have multiple values of ``edition_type`` separated by commas. If you don't specify any value, it will behave like ``ROOT``.
 
 .. list-table::
     :header-rows: 1
@@ -397,21 +424,43 @@ Attachment 1: Possible Values of *edition_type*
     *   -   ``NONE``
         -   The setting won't appear in the interface and won't be editable.
     *   -   ``ROOT``
-        -   The setting will appear in the interface and will be editable, but only in the *All stores*/*All vendors* mode.
+        -   The setting will appear in the interface and will be editable, but only in the *All storefronts* mode.
+    *   -   ``STOREFRONT``
+        -   The setting will appear both in the *All storefronts* mode and when a specific storefront is selected. It will be editable only when a specific storefront is selected.
     *   -   ``VENDOR``
-        -   The setting will appear both in the *All stores*/*All vendors* mode and when a specific storefront/vendor is selected. If you add ``ULT:NONE`` after comma, the setting will only be editable when a storefront is selected.
+        -   The setting will appear in CS-Cart both in the *All storefronts* mode and when a specific company is selected. It will be editable only when a specific company is selected.
+
+            The setting won't appear in Multi-Vendor, but will be accessible programmatically — you can use it for **vendor**-specific settings.
+
+.. note::
+
+    In CS-Cart each company is associated with its single storefront, that's why it's recommended to use ``STOREFRONT`` edition type for storefront-specific settings.
+
+
+To make setting available only in the specific product, you'll need to prefix the edition type with the corresponding abbreviation: ``MVE:`` for Multi-Vendor and ``ULT:`` for CS-Cart.
+
+.. list-table::
+    :header-rows: 1
+    :widths: 5 20
+
+    *   -   Value:
+        -   Description:
     *   -   ``MVE:NONE``
         -   The setting won't appear in Multi-Vendor. To make the setting appear in CS-Cart, you'll need to add another value after comma, for example, ``ULT:ROOT``.
     *   -   ``MVE:ROOT``
-        -   The setting will appear in Multi-Vendor, but only in the *All vendors* mode.
+        -   The setting will appear in Multi-Vendor, but only when the *All storefronts* mode is selected.
+    *   -   ``MVE:STOREFRONT``
+        -   The setting will appear in Multi-Vendor both in the *All storefronts* mode and when a specific storefront is selected. It will be editable only when a specific storefront is selected.
+    *   -   ``MVE:VENDOR``
+        -   The setting won't appear in Multi-Vendor, but will be accessible programmatically — you can use it for **vendor**-specific settings.
     *   -   ``ULT:NONE``
-        -   The setting won't appear in CS-Cart. To make the setting appear in Multi-Vendor, you'll need to add another value after comma, for example, ``ROOT`` or ``MVE:ROOT``.
+        -   The setting won't appear in CS-Cart. To make the setting appear in Multi-Vendor, you'll need to add another value after comma, for example, ``MVE:ROOT``.
     *   -   ``ULT:ROOT``
-        -   The setting will appear in CS-Cart, but only when the *All stores* mode is selected.
+        -   The setting will appear in CS-Cart, but only when the *All storefronts* mode is selected.
+    *   -   ``ULT:STOREFRONT``
+        -   The setting will appear in CS-Cart both in the *All storefronts* mode and when a specific storefront is selected. It will be editable only when a specific storefront is selected.
     *   -   ``ULT:VENDOR``
-        -   The setting will appear both in the *All stores* mode and when a specific storefront is selected. If you add ``ULT:NONE`` after comma, the setting will only be editable when a storefront is selected.
-    *   -   ``ULT:VENDORONLY``
-        -   The setting won't appear in the interface, but can be edited for a specific storefront via the code.
+        -   The setting will appear in CS-Cart both in the *All storefronts* mode and when a specific company is selected. It will be editable only when a specific company is selected.
 
 ======================================================
 Attachment 2: Possible Values of *<type>* for Settings
