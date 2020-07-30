@@ -30,9 +30,9 @@ Assign the Rating Manually
 
 Let's say you want to bring the products of some vendor higher in the list, or increase the rating of vendors who use premium vendor plans. The add-on allows you to set some variables manually: You can do this:
 
-* in the settings of any vendor;
+* in the settings of any :doc:`vendor </user_guide/users/vendors/index>`;
 
-* in the settings of any vendor plan.
+* in the settings of any :doc:`vendor plan </user_guide/addons/vendor_plans/index>`.
 
 By lowering or increasing the rating for certain vendors, the marketplace owner affects how their products are displayed on the storefront, and, therefore, has an influence on their sales.
 
