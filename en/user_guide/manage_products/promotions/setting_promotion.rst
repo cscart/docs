@@ -34,11 +34,11 @@ How To: Set Up a Promotion
 
          If two promotions have the same priority, they are applied in the same order as they are retrieved from the database.
 
-   * **Stop other rules**—if you tick this checkbox, other promotions with lower priority won't apply to an order when the current promotion is applied.
+   * **Stop other rules**—other promotions with lower priority won't apply to an order when the current promotion is applied.
 
      .. important::
 
-         The **Stop other rules** checkbox doesn't affect the promotions with higher priority, or promotions of other types. For example, a cart promotion can't stop a catalog promotion.
+         The **Stop other rules** checkbox doesn't affect the promotions of other types. For example, a cart promotion can't stop a catalog promotion.
 
    * **Status**—the status of the promotion (*Active*, *Hidden*, or *Disabled*).
 
