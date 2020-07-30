@@ -60,6 +60,7 @@
     vendor_debt_payout/index
     vendor_plans/index
     vendor_privileges/index
+    vendor_rating/index
     commissions_by_category/index
     customer_to_vendor_communication/index
     yandex_metrika/index

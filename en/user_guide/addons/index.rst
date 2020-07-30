@@ -87,6 +87,7 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     vendor_plans/index
     commissions_by_category/index
     vendor_privileges/index
+    vendor_rating/index
     video_tutorials/index
     warehouses/index
     watermarks/index
