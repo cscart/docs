@@ -430,7 +430,7 @@ Settings and settings sections can have multiple values of ``edition_type`` sepa
     *   -   ``VENDOR``
         -   The setting will appear in CS-Cart both in the *All storefronts* mode and when a specific company is selected. It will be editable only when a specific company is selected.
 
-            The setting won't appear in Multi-Vendor, but will be accessible programmatically — you can use it for **vendor**-specific settings.
+            The setting won't appear in Multi-Vendor, but will be accessible programmatically — you'll be able to use it for vendor-specific settings.
 
 .. note::
 
@@ -452,7 +452,7 @@ To make setting available only in the specific product, you'll need to prefix th
     *   -   ``MVE:STOREFRONT``
         -   The setting will appear in Multi-Vendor both in the *All storefronts* mode and when a specific storefront is selected. It will be editable only when a specific storefront is selected.
     *   -   ``MVE:VENDOR``
-        -   The setting won't appear in Multi-Vendor, but will be accessible programmatically — you can use it for **vendor**-specific settings.
+        -   The setting won't appear in Multi-Vendor, but will be accessible programmatically — you'll be able to use it for vendor-specific settings.
     *   -   ``ULT:NONE``
         -   The setting won't appear in CS-Cart. To make the setting appear in Multi-Vendor, you'll need to add another value after comma, for example, ``MVE:ROOT``.
     *   -   ``ULT:ROOT``
