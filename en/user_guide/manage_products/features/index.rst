@@ -30,6 +30,7 @@ In This Section
     product_features
     manufacturer
     feature_comparison
+    vendor_features
 
 .. meta::
    :description: Documentation about managing product features in CS-Cart and Multi-Vendor online stores.

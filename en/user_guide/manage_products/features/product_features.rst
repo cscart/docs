@@ -17,6 +17,15 @@ Product features are various traits and properties of the product. You can use f
 Add a Feature
 =============
 
+.. note::
+    
+    In Multi-Vendor features can be created by marketplace administrators and vendors. Every feature created by vendor is linked to him. It is displayed in the list of all the marketplace features. Other vendors can use it too.
+    
+There are to ways to add a new feature:
+
+Way 1:
+++++++
+
 #. In the Administration panel, go to **Products → Features**.
 
 #. Click the **+** button in the top right corner.
@@ -31,6 +40,33 @@ Add a Feature
 
        A feature available in a category is also available in its subcategories. If a feature belongs to a group, its categories are the same as the categories of the group. The **Categories** tab won't appear for the feature in that case.
 
+#. Click the **Create** button.
+
+Way 2:
+++++++
+
+#. Open the **Products → Products** page.
+
+#. Click on the name of the product to open it's settings.
+
+#. Open the **Features** tab.
+
+#. Click **Add feature**.
+
+#. Fill in the following fields:
+
+   * **Name**—the name of the feature.
+   
+   * **Storefront name**—the storefront to which the product feature originally belongs.
+
+   * **Variants**—add the variants for your feature.
+   
+     .. important:: 
+     
+         Vendor can only add variants for those features that he created himself.
+         
+     You can also use the **Advanced feature creation**.
+     
 #. Click the **Create** button.
 
 ===================
@@ -57,7 +93,9 @@ Feature groups allow you to assign categories to multiple features at once.
 
    * **Name**—the name of the feature group.
 
-   * **Store**—the storefront to which the group belongs.
+   * **Storefront name**—the storefront to which the group belongs.
+   
+   * **Vendor**—the vendor to which the storefront belongs.
 
    * **Feature code**—the code to identify the feature group.
 
@@ -90,14 +128,17 @@ Feature groups allow you to assign categories to multiple features at once.
    .. image:: img/feature_group_list.png
        :align: center
        :alt: Go to Products → Features and use the menu on the right to view feature groups.
+       
+.. important::
+
+    Vendors can only delete those features or feature groups which they created. If the vendor's feature is already applied to some products, only the marketplace administrator can delete it.
 
 ============================
 Specify Features of Products
 ============================
 
---------------
 Single Product
---------------
+++++++++++++++
 
 #. Go to **Products → Products**. 
 
@@ -113,9 +154,8 @@ Single Product
         :align: center
         :alt: The Features tab allows you to edit the features of the product.
 
------------------
 Multiple Products
------------------
++++++++++++++++++
 
 #. Go to **Products → Products**.
 

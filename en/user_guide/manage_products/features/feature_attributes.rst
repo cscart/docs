@@ -13,7 +13,11 @@ General
 
 * **Name**—the name of the feature as it appears on the storefront and in the Administration panel.
 
-* **Store**—the storefront to which the product feature originally belongs.
+  .. note::
+  
+      Let's say you have two features named *T-shirt size* and *Shoe size*, but you want them to be displayed as *Size* on the storefront. To do this, add the **Storefront name** for these features. It will help you to recognize features with the same names. The storefront name will be displayed only on your storefront. 
+
+* **Vendor**—the vendor to which the storefront belongs.
 
 * **Purpose**—what the feature will be used for. Every purpose has a description that helps with choice. Instead of repeating their descriptions here, we'll say what purpose it's best to choose, and when:
 
