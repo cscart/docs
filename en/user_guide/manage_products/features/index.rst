@@ -8,7 +8,7 @@ The **Products → Features** section contains a list of all product features th
 
 .. hint::
 
-    Use the menu on the right to switch between the lists of features and feature groups.
+    Use the menu on the right to switch between the lists of features and feature groups, and also between the recently updated features and vendor product features.
 
 .. image:: img/product_features.png
     :align: center
