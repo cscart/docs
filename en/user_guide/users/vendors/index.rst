@@ -32,6 +32,7 @@ View the list of the vendors in the Multi-Vendor administration panel under **Ve
     allow_vendors_to_edit_layout_and_theme
     vendor_categories
     vendor_statuses
+    import_presets
 
 .. toctree::
     :maxdepth: 2

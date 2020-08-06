@@ -54,7 +54,7 @@ How To: Import Products and Product Data
        :align: center
        :alt: Adding a product import preset in CS-Cart. 
 
-#. The **Fields mapping** tab should appear now. Switch to it. This is where you tell CS-Cart how to interpret the imported file: 
+#. Switch to the **Fields mapping** tab. This is where you tell CS-Cart how to interpret the imported file: 
 
    * Match the columns or XML elements in the imported file with corresponding product properties in CS-Cart.
 
@@ -118,7 +118,7 @@ How To: Import Products and Product Data
        :align: center
        :alt: Additional settings of an import preset in CS-Cart.
 
-   There are two **Additional settings** hidden by default:
+   There are three **Additional settings** hidden by default:
 
    * **Delete existing files of downloadable products**—if you enable this setting, then importing downloadable products will delete their existing files.
 
@@ -127,6 +127,10 @@ How To: Import Products and Product Data
    * **Delete existing additional images**—if you enable this setting, all the additional images of a product will be replaced with the images specified in the imported file.
 
      When the setting is disabled, importing additional images for a product doesn't repalce the existing additional images, but rather adds new images alongside the existing ones.
+     
+   * **Delete existing attachments**—if you enable this setting, then the existing attachments of the imported products will be replaced with the attachments specified in the imported file (if no attachments are specified, the old attachments will remain).
+   
+     When the setting is disabled, the new attachments will simply be added to the existing attachments.
 
 #. Click **Import**. If your preset is configured properly, and the data in the imported file is correct, your products will be imported.
 

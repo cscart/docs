@@ -31,6 +31,7 @@
     vendor_categories
     vendor_group
     vendor_statuses
+    import_presets
 
 .. toctree::
     :maxdepth: 2
