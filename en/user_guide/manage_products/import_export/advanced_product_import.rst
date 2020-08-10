@@ -128,7 +128,7 @@ How To: Import Products and Product Data
 
      When the setting is disabled, importing additional images for a product doesn't repalce the existing additional images, but rather adds new images alongside the existing ones.
      
-   * **Delete existing attachments**—if you enable this setting, then the existing attachments of the imported products will be replaced with the attachments specified in the imported file (if no attachments are specified, the old attachments will remain).
+   * **Delete existing attachments**—if you enable this setting, then the existing attachments of the imported products will be replaced with the attachments specified in the imported file. If no attachments are specified, the old attachments will remain.
    
      When the setting is disabled, the new attachments will simply be added to the existing attachments.
 
