@@ -12,33 +12,51 @@ How To: Set up Google reCAPTCHA in Your Store
 
 #. A pop-up window will open. Specify the add-on's settings there:
 
-   * **Site key**—one of the two required credentials; it is used to display the reCAPTCHA widget in your store.
+   * **reCAPTCHA v2 settings:**
 
-   * **Secret**—one of the two required credentials; it authorizes communication between your store and the reCAPTCHA server to verify a user's response. For security purposes, Google asks not to tell your secret to anyone else.
+     * **Site key**—one of the two required credentials; it is used to display the reCAPTCHA widget in your store.
 
-     *Notes:*
+     * **Secret**—one of the two required credentials; it authorizes communication between your store and the reCAPTCHA server to verify a user's response. For security purposes, Google asks not to tell your secret to anyone else.
 
-     * To get site key and secret, go to `https://www.google.com/recaptcha/admin <https://www.google.com/recaptcha/admin>`_. You'll need to provide the domain name of your store; for more information, please refer to `this article by Google <https://developers.google.com/recaptcha/docs/domain_validation>`_.
+       *Notes:*
 
-     * When creating a site key and secret, please note that the add-on currently supports only **reCAPTCHA v2: Checkbox**.
+       * You can get the site key and secret `here <https://www.google.com/recaptcha/admin>`_. You'll need to provide the domain name of your store; for more information, please refer to `this article by Google <https://developers.google.com/recaptcha/docs/domain_validation>`_.
 
-     * If you use multiple storefronts in CS-Cart and want to use Google reCAPTCHA for all of them, then you will only need one site key and secret. Just specify multiple domains when setting up your site key and secret on the Google end.
+       * If you use multiple storefronts in CS-Cart and want to use Google reCAPTCHA for all of them, then you will only need one site key and secret. Just specify multiple domains when setting up your site key and secret on the Google end.
 
-     * If you :doc:`embed your store into a Facebook page </user_guide/look_and_feel/layouts/widget_mode/facebook_app>`, please specify ``widget.cart-services.com`` as one of the domains. Otherwise reCAPTCHA won't work in your embedded store.
+       * If you :doc:`embed your store into a Facebook page </user_guide/look_and_feel/layouts/widget_mode/facebook_app>`, please specify ``widget.cart-services.com`` as one of the domains. Otherwise reCAPTCHA won't work in your embedded store.
 
-   * **Theme**—the color of the reCAPTCHA widget in your store; you can choose either *Light*, or *Dark*. Please refer to `Google reCAPTCHA FAQ <https://developers.google.com/recaptcha/docs/faq#can-i-customize-the-recaptcha-widget>`_ to see what those two themes look like.
+     * **Theme**—the color of the reCAPTCHA widget in your store; you can choose either *Light*, or *Dark*. Please refer to `Google reCAPTCHA FAQ <https://developers.google.com/recaptcha/docs/faq#can-i-customize-the-recaptcha-widget>`_ to see what those two themes look like.
 
-   * **Size**—the size of the reCAPTCHA widget in your store; you can choose between *Normal* and *Compact*. 
+     * **Size**—the size of the reCAPTCHA widget in your store; you can choose between *Normal* and *Compact*. 
 
-   * **Type**—the type of the CAPTCHA that a user must solve when it is necessary to confirm that the user is not a bot; you can choose between *Image* or *Audio*.
+     * **Type**—the type of the CAPTCHA that a user must solve when it is necessary to confirm that the user is not a bot; you can choose between *Image* or *Audio*.
+     
+   * **reCAPTCHA v3 settings:**
+   
+     .. important::
+     
+         The add-on supports *reCAPTCHA v3* starting with version 4.12.1 of CS-Cart and Multi-Vendor. This reCAPTCHA version is invisible for customers and protects your store by working in the background. You can also use *reCAPTCHA v3* if there is no place for a *reCAPTCHA v2: Checkbox* widget on the page of your store.
+         
+     * **Site key**—one of the two required credentials.
 
-   * **Use for**—the places where CAPTCHA will appear; tick a checkbox corresponding to a place to make CAPTCHA appear there.
+     * **Secret**—one of the two required credentials; it authorizes communication between your store and the reCAPTCHA server to verify a user's response. For security purposes, Google asks not to tell your secret to anyone else.
+     
+       .. note::
+     
+           Please note, that the *Site key* and *Secret* values for *reCAPTCHA v2: Checkbox* и *reCAPTCHA v3* are different. You have to get them for each reCAPTCHA version induvidually.
+         
+     * **Required rating to pass the check**—set the value from *0.1* to *0.9*, where *0.1* is the simplest checking, and *0.9* is the highest level of tests, that even some humans can't pass. The recommended value in this field is *0.5*.
+     
+   * **Antibot settings**—choose what kind of antibot protection you want to use in your store and where to use it. You can use *reCAPTCHA v2: Checkbox* и *reCAPTCHA v3* at the same time in the different forms.
 
-   * **Do not use verification if user is logged in**—if you tick this checkbox, the customers who are logged in won't have to confirm that they are not bots. 
+     * **Do not use verification if user is logged in**—if you tick this checkbox, the customers who are logged in won't have to confirm that they are not bots. 
 
-   * **Do not use verification after first valid answer**—if you tick this checkbox, a customer will have to confirm that he or she is not a bot only once per session. 
+     * **Do not use verification after first valid answer**—if you tick this checkbox, a customer will have to confirm that he or she is not a bot only once per session. 
 
-#. Click **Save**. Now CAPTCHA tests should behave according to the settings and appear in the places you specified.
+#. (optional) On the **Excluded countries** tab choose countries where Google reCAPTACHA will be disabled.
+
+#. Click **Save**.
 
    .. image:: img/google_recaptcha_settings.png
        :align: center
