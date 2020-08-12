@@ -8,17 +8,15 @@ Option Properties
 
 Product options appear on the product details page on the storefront as parameters that a customer can select or enter. Options can have the following properties:
 
-* **Name**—the name of the product option as it appears on the storefront.
+* **Name**—the name of the global option that only appears in the Administration panel to help you distinguish between multiple options that have the same displayed name.
 
-* **Internal name**—the name of the global option that only appears in the Administration panel to help you distinguish between multiple options that have the same displayed name.
+* **Storefront name**—the name of the product option as it appears on the storefront.
 
-  For example, if you sell shoes and T-shirts, you probably have 2 separate global options called *Size*. Without the internal name they'd look the same in the administration panel, and it'd be hard to guess which of these options to apply to your newly-created product.
+  For example, if you sell shoes and T-shirts, you probably have 2 separate global options called *Size*. Without the storefront name they'd look the same in the administration panel, and it'd be hard to guess which of these options to apply to your newly-created product.
 
 * **Position**—the position of the product option relatively to other options in the list.
 
-* **Store**—the storefront to which the option originally belongs.
-
-* **Inventory** (obsolete)—if you tick this checkbox, you'll be able to track the quantity of a product with this option selected via :doc:`option combinations <option_combinations>`.
+* **Vendor** (vendors are available only in Multi-Vendor)—the vendor to which products this option will be applied.
 
 * **Type**—the type of the product option: *Select box*, *Radio group*, *Check box*, *Text*, *Text area*, or *File*. Depending on the type, options may have :doc:`additional properties </user_guide/manage_products/options/option_settings>`.
 
