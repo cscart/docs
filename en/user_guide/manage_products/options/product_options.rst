@@ -2,7 +2,7 @@
 How To: Create a Product Option
 *******************************
 
-This article describes two ways of creation an option for a particular product. Afterwards, you'll be able to :doc:`assign this option to other products in bulk </user_guide/manage_products/options/global_options>`.
+This article describes how to create an option for a particular product. Afterwards, you'll be able to :doc:`assign this option to other products in bulk </user_guide/manage_products/options/global_options>`.
 
 Way 1: From a Product Page
 ============================
@@ -21,15 +21,15 @@ Way 1: From a Product Page
 
 #. Click **Create**.
 
-   .. important::
-       
-       Use the **Advanced option creation** if needed. This is how it looks when you create an option on the **Products → Options** page. Specify :doc:`option properties </user_guide/manage_products/options/option_attributes>` as you see fit, then hit the **Create** button.
-
    .. image:: img/product_option_creation.png
        :align: center
-       :alt: The option creation pop-up window in CS-Cart.
+       :alt: The option creation from the product page in CS-Cart.
        
-Way 2: From the Options Page
+   .. note::
+   
+       Click the **Advanced option creation** button to procced to create the option from the options list.
+       
+Way 2: From the Options List
 ============================
 
 #. Open the **Products → Options** page.
