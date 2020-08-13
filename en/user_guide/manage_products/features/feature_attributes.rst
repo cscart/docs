@@ -11,7 +11,7 @@ Feature and Feature Group Properties
 General
 =======
 
-* **Name**—the name of the feature that only appears in the Administration panel to help you distinguish between multiple options that have the same storefront name.
+* **Name**—the name of the feature that only appears in the Administration panel to help you distinguish between multiple features that have the same storefront name.
 
 * **Storefront name**—the name of the product feature as it appears on the storefront.
 
