@@ -19,7 +19,7 @@ How it Works
 
 #. When the customer clicks one of the buttons, he goes to the PayPal checkout page, where he pays for his order.
 
-#. PayPal automatically splits all the money between the marketplace and the vendors whose products were bought.The marketplace owner doesn’t have to transfer money manually.
+#. PayPal automatically splits all the money between the marketplace and the vendors whose products were bought. The marketplace owner doesn’t have to transfer money manually.
 
 How to Configure the Payment Method
 ===================================
@@ -42,7 +42,7 @@ How to Configure the Payment Method
        
      * **Currency**—if you specify the currency that is not the same as the marketplace primary currency, then it will be converted as soon as you go to the PayPal checkout page.
      
-     * **Funding sources to show on checkout**—choose the payment services you want to be displayed on the PayPal checkout page.
+   * **Funding sources to show on checkout**—choose the payment services you want to be displayed on the PayPal checkout page.
      
    * **Cards to show on checkout**—choose the payment cards you want PayPal to accept payments from.
 

@@ -17,12 +17,12 @@ This add-on allows the marketplace owner to:
 
 * accept payments using different payment services;
 
+* split the payments between vendors.
+
   .. image:: img/paypal_payment.png
       :align: center
       :alt: Paypal page with payment options
-
-* split the payments between vendors.
-
+      
 How to Install and Configure the Add-on
 =======================================
 
