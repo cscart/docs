@@ -19,12 +19,41 @@ Add a Feature
 
 .. note::
     
-    In Multi-Vendor features can be created by marketplace administrators and vendors. Every feature created by vendor is linked to him. It is displayed in the list of all the marketplace features. Other vendors can use it too.
+    Starting from Multi-Vendor 4.12.1 vendors have the ability to add features, if you :doc:`allow them to do it </user_guide/manage_products/features/vendor_features>`.
     
-There are to ways to add a new feature:
+There are two ways to add a new feature:
 
-Way 1:
-++++++
+Way 1: From a Product Page
+++++++++++++++++++++++++++
+
+#. Open the **Products → Products** page.
+
+#. Click on the name of the product to open it's settings.
+
+#. Open the **Features** tab.
+
+#. Click **Add feature**.
+
+#. Fill in the following fields:
+
+   * **Name**—the name of the feature.
+   
+   * **Storefront name**—the storefront to which the product feature originally belongs.
+
+   * **Variants**—add the variants for your feature.
+     
+#. Click the **Create** button.
+
+   .. image:: img/feature_creation.png
+       :align: center
+       :alt: The feature creation from the product page
+
+   .. note::
+   
+       Click the **Advanced feature creation** button to procced to create the feature from the features list.
+
+Way 2: From the Features List
++++++++++++++++++++++++++++++
 
 #. In the Administration panel, go to **Products → Features**.
 
@@ -42,32 +71,9 @@ Way 1:
 
 #. Click the **Create** button.
 
-Way 2:
-++++++
-
-#. Open the **Products → Products** page.
-
-#. Click on the name of the product to open it's settings.
-
-#. Open the **Features** tab.
-
-#. Click **Add feature**.
-
-#. Fill in the following fields:
-
-   * **Name**—the name of the feature.
-   
-   * **Storefront name**—the storefront to which the product feature originally belongs.
-
-   * **Variants**—add the variants for your feature.
-   
-     .. important:: 
-     
-         Vendor can only add variants for those features that he created himself.
-         
-     You can also use the **Advanced feature creation**.
-     
-#. Click the **Create** button.
+   .. image:: img/feature_creation_2.png
+       :align: center
+       :alt: The feature creation from the features list
 
 ===================
 Add a Feature Group

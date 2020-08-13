@@ -11,13 +11,19 @@ Feature and Feature Group Properties
 General
 =======
 
-* **Name**—the name of the feature as it appears on the storefront and in the Administration panel.
+* **Name**—the name of the feature that only appears in the Administration panel to help you distinguish between multiple options that have the same storefront name.
+
+* **Storefront name**—the name of the product feature as it appears on the storefront.
+
+  For example, if you sell shoes and T-shirts, you probably have 2 separate features called *Size* on the storefront. Without the main names (such as *Shoe size* and *T-shirt size*) they'd look the same in the administration panel, and it'd be hard to guess which of these features to apply to your newly-created product.
+  
+* **Storefront** (available only in CS-Cart) — the storefront, which the feature belongs to.
+
+* **Vendor** (vendors are available only in Multi-Vendor)—the vendor who ownes this feature, and who has the ability to edit and delete it.
 
   .. note::
   
-      Let's say you have two features named *T-shirt size* and *Shoe size*, but you want them to be displayed as *Size* on the storefront. To do this, add the **Storefront name** for these features. It will help you to recognize features with the same names. The storefront name will be displayed only on your storefront. 
-
-* **Vendor**—the vendor to which the storefront belongs.
+      When a vendor creates a feature, his name automatically appears in the **Vendor** field. Please note that by default, vendors can not create features in Multi-Vendor. To give them that ability, the marketplace owner has to :doc:`allow them to manage product features </user_guide/manage_products/features/vendor_features>`.
 
 * **Purpose**—what the feature will be used for. Every purpose has a description that helps with choice. Instead of repeating their descriptions here, we'll say what purpose it's best to choose, and when:
 
