@@ -12,7 +12,7 @@ Product options appear on the product details page on the storefront as paramete
 
 * **Storefront name**—the name of the product option as it appears on the storefront.
 
-  For example, if you sell shoes and T-shirts, you probably have 2 separate options called *Size* on the storefront. Without the main names (such as *Shoe size* and *T-shirt size*) they'd look the same in the administration panel, and it'd be hard to guess which of these options to apply to your newly-created product.
+  For example, if you sell fridges and microwave ovens, you probably have 2 separate options called *Gift wrapping* on the storefront (different bidding). Without the main names (such as *Gift wrapping for fridges* and *Gift wrapping for microwaves*) they'd look the same in the administration panel, and it'd be hard to guess which of these options to apply to your newly-created product.
 
 * **Position**—the position of the product option relatively to other options in the list.
 
