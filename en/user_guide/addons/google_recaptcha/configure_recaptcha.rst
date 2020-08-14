@@ -10,8 +10,16 @@ How To: Set up Google reCAPTCHA in Your Store
        :align: center
        :alt: The Google reCAPTCHA add-on in CS-Cart and Multi-Vendor.
 
-#. A pop-up window will open. Specify the add-on's settings there:
-
+#. A pop-up window will open.
+     
+   The **Google reCAPTCHA** add-on supports two reCAPTCHA versions: *reCAPTCHA v2: Checkbox* and *reCAPTCHA v3*. *reCAPTCHA v3* is available starting with version 4.12.1 of CS-Cart and Multi-Vendor. This reCAPTCHA version is invisible for customers and protects your store by working in the background. You can also use *reCAPTCHA v3* if there is no place for a *reCAPTCHA v2: Checkbox* widget on the page of your store.
+   
+   You can use both reCAPTCHA versions at the same time in the different places of your store, or you can use just one version—in this case you only have to configure it.
+   
+   .. note::
+     
+       Please note, that the *Site key* and *Secret* values for *reCAPTCHA v2: Checkbox* и *reCAPTCHA v3* are different. You have to get them for each reCAPTCHA version induvidually.
+   
    * **reCAPTCHA v2 settings:**
 
      * **Site key**—one of the two required credentials; it is used to display the reCAPTCHA widget in your store.
@@ -34,19 +42,11 @@ How To: Set up Google reCAPTCHA in Your Store
      
    * **reCAPTCHA v3 settings:**
    
-     .. important::
-     
-         The add-on supports *reCAPTCHA v3* starting with version 4.12.1 of CS-Cart and Multi-Vendor. This reCAPTCHA version is invisible for customers and protects your store by working in the background. You can also use *reCAPTCHA v3* if there is no place for a *reCAPTCHA v2: Checkbox* widget on the page of your store.
-         
      * **Site key**—one of the two required credentials.
 
      * **Secret**—one of the two required credentials; it authorizes communication between your store and the reCAPTCHA server to verify a user's response. For security purposes, Google asks not to tell your secret to anyone else.
-     
-       .. note::
-     
-           Please note, that the *Site key* and *Secret* values for *reCAPTCHA v2: Checkbox* и *reCAPTCHA v3* are different. You have to get them for each reCAPTCHA version induvidually.
-         
-     * **Required rating to pass the check**—set the value from *0.1* to *0.9*, where *0.1* is the simplest checking, and *0.9* is the highest level of tests, that even some humans can't pass. The recommended value in this field is *0.5*.
+             
+     * **Required rating to pass the check**—set the value from *0.1* to *0.9*, where *0.1* is the simplest checking, and *0.9* is the highest level of tests. Higher required rating means that Google's checks will be more strict, and it might even consider some humans as bots.
      
    * **Antibot settings**—choose what kind of antibot protection you want to use in your store and where to use it. You can use *reCAPTCHA v2: Checkbox* и *reCAPTCHA v3* at the same time in the different forms.
 
