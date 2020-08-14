@@ -28,7 +28,7 @@ To do this:
        
 That is how the features work when they are created by vendors:
 
-* Features created by vendors are displayed in the list with all the rest features.
+* Features created by vendors are displayed in the list with all the other features.
 
 * Each feature created by a vendor is linked to him.
 
