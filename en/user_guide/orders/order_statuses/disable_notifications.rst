@@ -34,7 +34,7 @@ When Email Template Editor Is Enabled
 When Email Template Editor is Disabled
 ======================================
 
-#. In the Administration panel, go to **Administration → Order statuses**.
+#. In the Administration panel, go to **Administration → Statuses → Order statuses**.
 
 #. Click on the order status to edit it.
 

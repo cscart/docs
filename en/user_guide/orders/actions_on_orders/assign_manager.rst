@@ -14,9 +14,11 @@ You can assign administrators to orders as managers. This is useful if your staf
 
 To assign a manager to an existing order:
 
-#. In the Administration panel, go to **Orders → View orders → <Desired order>**.
+#. In the Administration panel, go to **Orders → View orders**.
 
-#. Find the **Manager** field on the right and click the **+** button.
+#. Click on the order's ID.
+
+#. Find the **Manager** field on the right and click the **Choose** button.
 
    .. image:: img/add_manager.png
        :align: center
