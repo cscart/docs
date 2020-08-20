@@ -314,7 +314,7 @@
 
         ############################################################################
 
-        location ~ ^/(favicon|apple-touch-icon-|homescreen-|firefox-icon-|coast-icon-|mstile-).*\.(png|ico)$  {
+        location ~ ^/(favicon|apple-touch-icon|homescreen-|firefox-icon-|coast-icon-|mstile-).*\.(png|ico)$  {
             access_log off;
             try_files $uri =404;
             expires max;
