@@ -70,12 +70,10 @@ For each administrator or vendors' administrator group you can specify what the 
 
 #. Click the name of the administrator group on the list.
 
-#. Switch to the **Privileges** tab. This will open a list of tasks usually performed by administrators.
+#. Select the privileges you want to give to the members of the group.
+
+#. Click the **Save** button to apply the changes.
 
    .. image:: img/admin_privileges.png
        :align: center
        :alt: Tick the checkboxes next to the privileges you want to grant to the group.
-
-#. Select the privileges you want to give to the members of the group.
-
-#. Click the **Save** button to apply the changes.

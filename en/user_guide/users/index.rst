@@ -45,7 +45,7 @@ When you search through the list of users with your mouse pointer, the **gear bu
 
 * **View all orders**—shows all the orders placed by the user.
 
-* **Act on behalf of**—takes you to the storefront as if you are logged in as the selected user.
+* **Log in as user**—takes you to the storefront as if you are logged in as the selected user.
 
 * **Points**—shows the customer's reward points log.
 
