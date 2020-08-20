@@ -240,7 +240,7 @@ You will see a number you’ll need for Step 1.4. In the picture we marked the n
 
         ############################################################################
 
-        location ~ ^/(favicon|apple-touch-icon-|homescreen-|firefox-icon-|coast-icon-|mstile-).*\.(png|ico)$  {
+        location ~ ^/(favicon|apple-touch-icon|homescreen-|firefox-icon-|coast-icon-|mstile-).*\.(png|ico)$  {
             access_log off;
             try_files $uri =404;
             expires max;
