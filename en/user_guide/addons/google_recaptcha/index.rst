@@ -16,8 +16,8 @@ The add-on supports two reCAPTCHA versions:
   
       You can use both reCAPTCHA versions at the same time in the different places of your store, or you can use just one version—in this case you only have to configure it.
 
-Related articles:
-=================
+Related Articles
+================
 
 .. toctree::
     :maxdepth: 2

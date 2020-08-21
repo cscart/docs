@@ -40,7 +40,7 @@ How To: Set up Google reCAPTCHA in Your Store
 
      * **Secret**—one of the two required credentials; it authorizes communication between your store and the reCAPTCHA server to verify a user's response. For security purposes, Google asks not to tell your secret to anyone else.
              
-     * **Required rating to pass the check**—set the value from *0.1* to *0.9*, where *0.1* is the simplest checking, and *0.9* is the highest level of tests. Higher required rating means that Google's checks will be more strict, and it might even consider some humans as bots.
+     * **Required rating to pass the check**—set the value from *0.1* to *0.9*, where *0.9* is the highest level of tests. Higher required rating means that Google's checks will be more strict, and it might even consider some humans as bots. Recommended value here is *0.5*.
      
    * **Antibot settings**—choose what kind of antibot protection you want to use in your store and where to use it. You can use *reCAPTCHA v2: Checkbox* и *reCAPTCHA v3* at the same time in the different forms.
 
