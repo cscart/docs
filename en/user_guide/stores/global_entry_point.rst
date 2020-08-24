@@ -31,7 +31,7 @@ How to Create a Global Entry Point?
 
 A global entry point is generated automatically based on the properties of the individual storefronts. To add a global entry point, follow these steps:
 
-#. Go to **Administration → Stores**.
+#. Go to **Administration → Storefronts**.
 
 #. Click the name of the storefront you want to add a global entry point for.
 

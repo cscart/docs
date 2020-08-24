@@ -1,10 +1,10 @@
-**********************************
-How To: Share Objects Among Stores
-**********************************
+***************************************
+How To: Share Objects Among Storefronts
+***************************************
 
 .. important::
 
-    This article applies only to CS-Cart Ultimate. In Multi-Vendor Ultimate, check the settings of a storefront, or the **Storefronts** tab in the properties of an object.
+    This article applies only to CS-Cart Ultimate.
 
 ======================
 How Does Sharing Work?
@@ -18,7 +18,7 @@ When you create an object (product, page, promotion, shipping method, etc.) in C
 
 CS-Cart has two types of sharing rules depending on the object type:
 
-* **Invariable sharing**: objects are shared among storefronts without any changes. This rule applies to such objects as product features and filters, global product options, promotions, CMS content, languages, currencies, and shipping methods.
+* **Invariable sharing**: objects are shared among storefronts without any changes. This rule applies to such objects as product features and filters, product options, promotions, CMS content, languages, currencies, and shipping methods.
 
 * **Configurable sharing**: objects are shared among storefronts and can have different properties on each storefront. For example, when you share a product, you can define a different price, description, and other properties for different storefronts.
 
@@ -38,7 +38,7 @@ Share Products (Configurable Sharing)
 
 #. Go to **Products → Products**.
 
-#. Make sure that **All stores** are selected in the upper left part of the page.
+#. Make sure that **All storefronts** are selected in the upper left part of the page.
 
    .. image:: img/switch_modes.png
        :align: center
@@ -62,26 +62,26 @@ Share Other Objects (Invariable Sharing)
 
 #. Choose an object that you need to share. For example, go to **Administration → Shipping & Taxes → Shipping methods** to share a shipping method.
 
-#. Make sure that **All stores** are selected in the upper left part of the page.
+#. Make sure that **All storefronts** are selected in the upper left part of the page.
 
    .. image:: img/switch_modes.png
        :align: center
        :alt: Select all stores to switch to the root administrator mode.
 
-#. Click the **gear** button of the object. This opens the object configuration page.
+#. Click the **Gear** button of the object. This opens the object configuration page.
 
-#. Switch to the **Share** tab. This opens a list of storefronts that already share the object (if any).
+#. Switch to the **Storefronts** tab. This opens a list of storefronts that already share the object (if any).
 
    .. note::
-       You won't see the **Share** tab if you only have one storefront: in that case there is nothing to share.
+       You won't see the **Storefronts** tab if you only have one storefront: in that case there is nothing to share.
 
    .. image:: img/share_tab.png
        :align: center
-       :alt: Use the Share tab to share objects among storefronts.
+       :alt: Use the Storefronts tab to share objects among storefronts.
 
-#. Click the **+** button (*Add stores*) to open a list of all storefronts.
+#. Click the **Add storefronts** button to open a list of all storefronts.
 
-#. From the list, select the storefronts that will share the object. Then click **Add stores and close** to update the list of stores that should share the object.
+#. From the list, select the storefronts that will share the object. Then click **Add storefronts and close** to update the list of stores that should share the object.
 
 #. Click **Save** to apply the changes.
 

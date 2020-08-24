@@ -10,7 +10,7 @@ You can redirect customers to a separate storefront for a particular region. Let
 
 Let's make sure the visitors from those countries get to the right storefront.
 
-#. Go to **Administration → Stores** (in CS-Cart) or **Administration → Storefronts** (in Multi-Vendor).
+#. Go to **Administration → Storefronts**.
 
 #. Click the name of the storefront you want to edit. Let's edit the storefront for the UK and Canada first.
 

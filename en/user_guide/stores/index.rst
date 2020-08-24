@@ -2,7 +2,7 @@
 Storefronts
 ***********
 
-`CS-Cart Ultimate <https://helpdesk.cs-cart.com/cs-cart-ultimate-license.html>`_ and `Multi-Vendor Ultimate <https://helpdesk.cs-cart.com/multi-vendor-ultimate-license.html>`_ allow you to manage multiple storefronts with one administration panel. Storefronts behave slightly differently:
+`CS-Cart Ultimate <https://helpdesk.cs-cart.com/cs-cart-ultimate-license.html>`_ and `Multi-Vendor Ultimate <https://multivendor.cs-cart.ru/#compare>`_ allow you to manage multiple storefronts with one administration panel. Storefronts behave slightly differently:
 
 * **In CS-Cart Ultimate**, storefronts can appear to customers as independent stores. They can have their own products, categories, settings, user base, and checkout mechanism.
 
@@ -26,7 +26,7 @@ Here are the important differences between CS-Cart Ultimate in Multi-Vendor Ulti
 
 .. important::
 
-    To configure multiple storefronts on your web hosting, please :doc:`follow these inistructions. </install/storefronts/index>`
+    To configure multiple storefronts on your web hosting, please :doc:`follow these instructions. </install/storefronts/index>`
 
 .. toctree::
     :maxdepth: 4
