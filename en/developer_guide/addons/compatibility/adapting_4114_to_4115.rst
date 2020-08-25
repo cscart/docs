@@ -9,7 +9,7 @@ Adapt Your Add-ons and Themes to CS-Cart 4.11.5
 Common changes
 ==============
 
-* A context menu has been added to the View orders page and the **Customers** page. All tools that involve selecting multiple elements and working with them, have been moved from GearButton to the **Actions** section of the new menu. GearButton now has only general tools that are not linked to any specific elements. (For example, importing eBay orders).
+* A context menu has been added to the **View orders** page and the **Customers** page. All tools that involve selecting multiple elements and working with them, have been moved from the GearButton to the **Actions** section of the new menu. The GearButton now has only general tools that are not linked to any specific elements (for example, importing eBay orders).
 
 * If you previously added some tool to work with selected items using the ``'[dir_name]:list_tools'`` hook, now to add an item to the **Actions** menu you should use:
 
@@ -19,7 +19,7 @@ Common changes
   
   * ``'[dir_name]:view_tools_list_for_selected'``—to add it to the section, that contains viewing actions. If you need a tool that doesn't involve selecting specific elements, the hook will remain the same: ``'[dir_name]:list_tools'``.
   
-* The loading animation (for example, when data is loaded in the background) now uses CSS animation instead of the SVG file. If you previously used SVG in your add-ons, replace the ``backgroud: url(...)`` with the classes inside the class styles of the *.less files:
+* The loading animation (for example, when data is loaded in the background) now uses the CSS animation instead of the SVG file. If your add-ons use that SVG, please replace use the following classes instead backgroud: url(...) in the class styles in LESS files:
 
   * ``. ajax-loader``—to add a preloader;
   
@@ -131,11 +131,11 @@ New functions
 
        fn_storefront_rest_api_strip_service_data(array $cart)
        
-#. Change status of specified user::
+#. Change the status of specified user::
 
        fn_change_user_status($user_id, $status_to, $is_notification_required = false) 
        
-#. Change status of the specified category::
+#. Change the status of the specified category::
 
        fn_change_category_status($category_id, $status_to) 
        
@@ -177,11 +177,11 @@ New hooks
 
        fn_set_hook('phpmailertransport_send_message_before_send', $this, $message); 
        
-#. This hook is executed when checking whether Terms and conditions must be accepted by a customer during checkout. The hook allows you to set requirement directly::
+#. This hook is executed when checking whether Terms and Conditions must be accepted by a customer during checkout. The hook allows you to set requirement directly::
 
        fn_set_hook('checkout_is_terms_and_conditions_agreement_required_pre', $is_agreement_required); 
        
-#. * This hook is executed when checking whether Terms and conditions must be accepted by a customer during checkout, after requirement is determined. The hook allows you to modify the check result::
+#. This hook is executed when checking whether Terms and Conditions must be accepted by a customer during checkout, after requirement is determined. The hook allows you to modify the check result::
 
        fn_set_hook('checkout_is_terms_and_conditions_agreement_required_post', $is_agreement_required); 
        
