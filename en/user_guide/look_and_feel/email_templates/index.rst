@@ -96,9 +96,9 @@ The **gear** button in the top right corner allows you to perform the following 
 
       If you use **Restore**, you’ll lose all the changes you ever made to this notification. Before you attempt this action, please back up your notification :doc:`by exporting it. <email_template_export_and_import>`
 
-===============
-In This Section
-===============
+================
+Related Articles
+================
 
 .. toctree::
     :maxdepth: 4
@@ -108,6 +108,7 @@ In This Section
     email_template_export_and_import
     email_snippets
     enable_email_editor
+    usergroups_notifications
 
 .. meta::
    :description: Where do I edit emails sent by my CS-Cart online store or Multi-Vendor marketplace?
