@@ -4,7 +4,7 @@
 
 .. important::
 
-    Управлять несколькими витринами с помощью одной панели администратора можно `в редакции CS-Cart Ultimate <https://www.cs-cart.ru/cs-cart-ultimate-rus-pack.html>`_ и `Multi-Vendor Ultimate <https://helpdesk.cs-cart.com/multi-vendor-ultimate-license.html>`_.
+    Управлять несколькими витринами с помощью одной панели администратора можно `в редакции CS-Cart Ultimate <https://www.cs-cart.ru/cs-cart-ultimate-rus-pack.html>`_ и `Multi-Vendor Ultimate <https://multivendor.cs-cart.ru/#compare>`_.
 
 #. Откройте меню **Администрирование → Витрины** и нажмите кнопку **+**, чтобы открыть форму создания новой витрины.
 

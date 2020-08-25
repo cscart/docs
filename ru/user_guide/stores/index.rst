@@ -2,7 +2,7 @@
 Магазины/Витрины
 ****************
 
-В `CS-Cart Ultimate <https://www.cs-cart.ru/cs-cart-ultimate-rus-pack.html>`_ и `Multi-Vendor Ultimate <https://helpdesk.cs-cart.com/multi-vendor-ultimate-license.html>`_ существует возможность управления несколькими витринами с помощью одной панели администратора. Витрины в них работают по-разному.
+В `CS-Cart Ultimate <https://www.cs-cart.ru/cs-cart-ultimate-rus-pack.html>`_ и `Multi-Vendor Ultimate <https://multivendor.cs-cart.ru/#compare>`_ существует возможность управления несколькими витринами с помощью одной панели администратора. Витрины в них работают по-разному.
 
 * В **CS-Cart Ultimate** витрины работают как независимые магазины. В каждом магазине могут быть свои товары, категории, настройки, базы данных с пользователями, а также разные механизмы заказа товаров.
 
@@ -12,7 +12,7 @@
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 20 15
+    :widths: 10 35 15
 
     *   -   Тип объектов
         -   CS-Cart Ultimate
