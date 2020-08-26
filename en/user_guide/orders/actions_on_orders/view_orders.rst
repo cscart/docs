@@ -34,7 +34,7 @@ The **View orders** page allows you to:
 
 * View all orders in the store, or just the orders that meet your search requirements.
 
-* View incomplete orders by clicking the gear button and choosing **Incomplete orders**.
+* View incomplete orders.
 	
   .. note::
   

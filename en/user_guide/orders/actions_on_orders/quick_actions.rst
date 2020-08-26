@@ -4,11 +4,9 @@ Quick Actions
 
 The **Orders → View orders** page allows you to carry out many routine tasks for multiple orders, including bulk order exporting and invoice printing in one click.
 
-#. Tick the checkboxes of the orders you want to take action on.
+#. Choose the orders you want to take action on.
 
-#. Click the gear button in the upper right part of the page. This will show the list of available actions.
-
-#. Click on the required action in the list.
+#. Click on the required action on the top of the orders list.
 
    .. important ::
 
