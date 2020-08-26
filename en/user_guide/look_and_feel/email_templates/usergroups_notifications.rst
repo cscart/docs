@@ -1,5 +1,5 @@
 *************************************************************
-How To: Assign Notifications to specific Users or User Groups
+How To: Assign Notifications to Specific Users or User Groups
 *************************************************************
 
 Starting with version 4.12.1 of CS-Cart and Multi-Vendor, you can decide what email notifications to send, and who will receive them.
