@@ -6,7 +6,7 @@ Adapt Your Add-ons and Themes to CS-Cart 4.11.5
     :local:
     :backlinks: none
 
-Common changes
+Common Changes
 ==============
 
 * A context menu has been added to the **View orders** page and the **Customers** page. All tools that involve selecting multiple elements and working with them, have been moved from the GearButton to the **Actions** section of the new menu. The GearButton now has only general tools that are not linked to any specific elements (for example, importing eBay orders).
@@ -19,29 +19,29 @@ Common changes
   
   * ``'[dir_name]:view_tools_list_for_selected'``—to add it to the section, that contains viewing actions. If you need a tool that doesn't involve selecting specific elements, the hook will remain the same: ``'[dir_name]:list_tools'``.
   
-* The loading animation (for example, when data is loaded in the background) now uses the CSS animation instead of the SVG file. If your add-ons use that SVG, please replace use the following classes instead backgroud: url(...) in the class styles in LESS files:
+* The loading animation (for example, when data is loaded in the background) now uses the CSS animation instead of the SVG file. If your add-ons use that SVG, adjust the class styles in LESS files to use the following classes instead of the ``backgroud: url(...)`` property:
 
-  * ``. ajax-loader``—to add a preloader;
+  * ``.ajax-loader``—to add a preloader;
   
-  * ``. ajax-loader--horizontal-center`` —to center the element horizontally;
+  * ``.ajax-loader--horizontal-center`` —to center the element horizontally;
 
-  * ``. ajax-loader--vertical-center``—to center the element vertically;
+  * ``.ajax-loader--vertical-center``—to center the element vertically;
 
-  * ``. ajax-loader--vertical-top``—to make an indent half the height of the preloader from the upper border.
+  * ``.ajax-loader--vertical-top``—to make an indent half the height of the preloader from the upper border.
   
 * Or you can add the same classes to the preloader block.
 
-Core changes
+Core Changes
 ============
 
-New classes
+New Classes
 +++++++++++
 
 #. Enumerates possible item availability values::
 
        \Tygh\Enum\Addons\Seo\ItemAvailability
 
-Changed functions
+Changed Functions
 +++++++++++++++++
 
 #. ::
@@ -65,7 +65,7 @@ Changed functions
        // New:
        \Tygh\Addons\RusOnlineCashRegister\Service::getReceiptFromOrder(array $order, $type, $payment_method = Receipt::PAYMENT_METHOD_FULL_PAYMENT)
 
-Removed functions
+Removed Functions
 +++++++++++++++++
 
 #. ::
@@ -82,7 +82,7 @@ Removed functions
        // What to use instead:
        \Tygh\Addons\StripeConnect\Payments\StripeConnect::chargeWith3DSecure
 
-Deprecated functions
+Deprecated Functions
 ++++++++++++++++++++
 
 #. ::
@@ -92,7 +92,7 @@ Deprecated functions
        // What to use instead:
        fn_convert_weight_to_imperial_units
 
-New functions
+New Functions
 +++++++++++++
 
 #. Check whether string is UTF-16BE encoded::
@@ -143,10 +143,10 @@ New functions
 
        fn_strtoupper($string, $charset = CHARSET) 
        
-Hook changes
+Hook Changes
 ============
 
-Changed hooks
+Changed Hooks
 +++++++++++++
 
 #. ::
@@ -170,7 +170,7 @@ Changed hooks
        // New:
        fn_set_hook('update_user_pre', $user_id, $user_data, $auth, $ship_to_another, $notify_user, $can_update)
 
-New hooks
+New Hooks
 +++++++++
 
 #. This hook is executed before actually sending a message via PHPMailer. The hook allows you to perform low-level manipulations on the PHPMailer itself::
