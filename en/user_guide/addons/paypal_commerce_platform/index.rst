@@ -41,11 +41,6 @@ How to Install and Configure the Add-on
 Related Articles
 ================
 
-.. toctree::
-    :maxdepth: 2
-    :titlesonly:
-    :glob:
-    
-    configure
+* :doc:`How To: Set Up PayPal Commerce Platform in Multi-Vendor </user_guide/payment_methods/paypal_commerce_platform>`
 
 
