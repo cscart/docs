@@ -39,6 +39,7 @@ Here are some of the payment methods that you can set up in CS-Cart and Multi-Ve
     paypal
     paypal_advanced
     paypal_express
+    paypal_commerce_platform
     paypalpro
     ping
     sagepay
