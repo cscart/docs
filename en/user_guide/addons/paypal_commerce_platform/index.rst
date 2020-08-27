@@ -41,6 +41,6 @@ How to Install and Configure the Add-on
 Related Articles
 ================
 
-:doc:`How To: Set Up PayPal Commerce Platform in Multi-Vendor </user_guide/payment_methods/paypal_commerce_platform>`
+* :doc:`How To: Set Up PayPal Commerce Platform in Multi-Vendor </user_guide/payment_methods/paypal_commerce_platform>`
 
 
