@@ -33,7 +33,7 @@ Functionality Changes
 
 [*] Core: Compatibility with PHP 7.4 improved.
 
-[*] Core: File manager (elFinder) updated.
+[*] Core: File manager (elFinder) updated to version 2.1.56.
 
 [*] Core: JavaScript: jQuery updated to version 3.5.1.
 
