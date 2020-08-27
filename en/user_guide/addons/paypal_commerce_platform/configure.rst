@@ -26,6 +26,8 @@ How to Configure the Payment Method
 
 #. `Sign up for PayPal Commerce Platform <https://www.paypal.com/us/business/platforms-and-marketplaces>`_.
 
+   When contacting PayPal, tell them that your BN Code is ``CSCART_MP_PPCP``, and ask for checkout API and onboarding API.
+
 #. Install the :doc:`/user_guide/addons/paypal_commerce_platform/index` add-on.
 
 #. Create a :doc:`new payment method </user_guide/payment_methods/adding_payment>` based on the PayPal Commerce Platform processor.
