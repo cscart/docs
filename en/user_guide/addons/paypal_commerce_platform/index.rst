@@ -38,14 +38,9 @@ How to Install and Configure the Add-on
    
        Learn more about setting up the payment method and connecting your vendors :doc:`in a dedicated article </user_guide/addons/paypal_commerce_platform/configure>`.
 
-Related articles
+Related Articles
 ================
 
-.. toctree::
-    :maxdepth: 2
-    :titlesonly:
-    :glob:
-    
-    configure
+:doc:`How To: Set Up PayPal Commerce Platform in Multi-Vendor </user_guide/payment_methods/paypal_commerce_platform>`
 
 
