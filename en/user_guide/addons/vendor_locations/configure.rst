@@ -16,39 +16,41 @@ The **Vendor locations [Beta]** add-on allows customers to select a location. Th
 Step 1: Install and Configure the Add-on
 ========================================
 
-By default, the add-on isn't installed. :doc:`Install it </user_guide/addons/1manage_addons>`, and you'll be able to access the add-on's settings by clicking on its name.
+By default, the add-on isn't installed. 
 
-.. image:: img/vendor_locations_addon.png
-    :align: center
-    :alt: The "Vendor locations" add-on isn't installed by default.
+#. :doc:`Install it </user_guide/addons/1manage_addons>`, and you'll be able to access the add-on's settings by clicking on its name.
 
-The add-on has the following settings:
+   .. image:: img/vendor_locations_addon.png
+       :align: center
+       :alt: The "Vendor locations" add-on isn't installed by default
 
-* **Google Maps API key**—Google Maps calculate distance and show the locations of vendors. That's why you need to enter the Google Maps API key; get it by following `Google instructions <https://developers.google.com/maps/documentation/javascript/get-api-key>`_.
+#. The add-on has the following settings:
 
-* **Default radius in distance filter**—the search radius that a product filter by distance will have by default.
+   * **Google Maps API key**—Google Maps calculate distance and show the locations of vendors. That's why you need to enter the Google Maps API key; get it by following `Google instructions <https://developers.google.com/maps/documentation/javascript/get-api-key>`_.
 
-* **Maximum radius in distance filter**—the maximum allowed search radius that a product filter by distance can have.
+   * **Default radius in distance filter**—the search radius that a product filter by distance will have by default.
 
-  .. note:: 
+   * **Maximum radius in distance filter**—the maximum allowed search radius that a product filter by distance can have.
 
-      The product filter that allows customers to search for products within a certain distance if they enter their location :ref:`needs to be added manually <mve-product-filter-by-distance>`. Otherwise the two settings above won't have any effect.
+     .. note:: 
 
-* **Distance measurement unit**—the measurement unit that will be used in product filters by distance and in the information about nearby vendors.
+         The product filter that allows customers to search for products within a certain distance if they enter their location :ref:`needs to be added manually <mve-product-filter-by-distance>`. Otherwise the two settings above won't have any effect.
 
-* **Vendors shown by default**—determines what vendors will be shown on the vendor list page (``dispatch=companies.catalog``) and on the map displayed on that page by default:
+   * **Distance measurement unit**—the measurement unit that will be used in product filters by distance and in the information about nearby vendors.
 
-  * *All*
+   * **Vendors shown by default**—determines what vendors will be shown on the vendor list page (``dispatch=companies.catalog``) and on the map displayed on that page by default:
 
-  * *From customer's city*
+     * *All*;
 
-  * *From customer's country*
+     * *From customer's city*;
 
-.. image:: img/vendor_locations_addon_settings.png
-    :align: center
-    :alt: The settings of the "Vendor locations" add-on.
+     * *From customer's country*.
 
-Once you've configured the settings, click **Save** to save your changes.
+   .. image:: img/vendor_locations_addon_settings.png
+       :align: center
+       :alt: The settings of the "Vendor locations" add-on
+
+#. Once you've configured the settings, click **Save** to save your changes.
 
 ================================
 Step 2. Specify Vendor Locations
@@ -66,7 +68,7 @@ The add-on uses vendors' locations on Google Maps to calculate distance to vendo
 
    .. image:: img/vendor_location_settings.png
        :align: center
-       :alt: The location of a vendor as specified on the vendor's profile page.
+       :alt: The location of a vendor as specified on the vendor's profile page
 
 =============================
 Step 3. Set up the Storefront
@@ -84,7 +86,7 @@ A :doc:`block </user_guide/look_and_feel/layouts/blocks/index>` is a part of a p
 
    .. hint::
 
-       For example, you can put this block it the **Top panel** or **Header** containers of the default :doc:`layout page </user_guide/look_and_feel/layouts/layout_pages/index>`. That way it'll be displayed on all pages.
+       For example, you can put this block it the *Top panel* or *Header* containers of the default :doc:`layout page </user_guide/look_and_feel/layouts/layout_pages/index>`. That way it'll be displayed on all pages.
 
 #. **Closest vendors**—this block displays the vendors who are the closest to the customer's location. The distance to each vendor is calculated automatically by Google Maps. If the vendor is too close to the address chosen by the customer, *Nearby* will be displayed instead of the distance.
 
@@ -94,11 +96,11 @@ A :doc:`block </user_guide/look_and_feel/layouts/blocks/index>` is a part of a p
 
    .. note::
 
-       The **Vendor map** and **Vendors by location** blocks are automatically added to the list of vendors (``dispatch=companies.catalog``) after you install the add-on. If you'd rather not have them there, edit the *Vendors* layout page under **Design → Layouts**.
+       The *Vendor map* and *Vendors by location* blocks are automatically added to the list of vendors (``dispatch=companies.catalog``) after you install the add-on. If you'd rather not have them there, edit the **Vendors** layout page under **Design → Layouts**.
 
    .. image:: img/nearby_vendors_and_map.png
        :align: center
-       :alt: The 4 blocks of the "Vendor Locations" add-on on one page.
+       :alt: The 4 blocks of the "Vendor Locations" add-on on one page
 
 .. _mve-product-filter-by-distance:
 
@@ -110,10 +112,10 @@ A :doc:`product filter </user_guide/manage_products/filters/index>` allows custo
 
 .. image:: img/filter_by_distance.png
     :align: center
-    :alt: Products can be filtered by distance from a specified location.
+    :alt: Products can be filtered by distance from a specified location
 
 We have an article that describes :doc:`how to add a filter </user_guide/manage_products/filters/adding_filter>`. To create a filter by distance, make sure to set the **Filter by** property of the filter to *Distance to vendor*.
 
 .. image:: img/distance_to_vendor_filter.png
     :align: center
-    :alt: Filtering products by distance to vendor in Multi-Vendor.
+    :alt: Filtering products by distance to vendor in Multi-Vendor

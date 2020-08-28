@@ -58,6 +58,7 @@
     vendor_data_premoderation/index
     warehouses/index
     vendor_debt_payout/index
+    vendor_locations/index
     vendor_plans/index
     vendor_privileges/index
     vendor_rating/index
