@@ -4,7 +4,7 @@ How To: Create a New Storefront
 
 .. important::
 
-    You can manage multiple storefronts from one administration panel in `CS-Cart Ultimate <https://helpdesk.cs-cart.com/cs-cart-ultimate-license.html>`_ and `Multi-Vendor Ultimate <<https://helpdesk.cs-cart.com/multi-vendor-ultimate-license.html>>`_.
+    You can manage multiple storefronts from one administration panel in `CS-Cart Ultimate <https://helpdesk.cs-cart.com/cs-cart-ultimate-license.html>`_ and `Multi-Vendor Ultimate <https://helpdesk.cs-cart.com/multi-vendor-ultimate-license.html>`_.
 
 #. Go to **Administration → Storefronts**.
 

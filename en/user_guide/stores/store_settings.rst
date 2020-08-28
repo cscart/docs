@@ -30,7 +30,11 @@ The general rule for updating settings is as follows:
       :align: center
       :alt: Select a storefront or choose "All Storefronts".
 
-Normally, storefront-specific settings are grayed out in the root administrator mode to prevent unintended editing. You can disable this protection under **Settings → Stores**. 
+Normally, storefront-specific settings are grayed out in the root administrator mode to prevent unintended editing. You can disable this protection:
+
+* on the **Settings → Stores** page in CS-Cart;
+
+* on the **Settings → General** page in Multi-Vendor.
 
 You can also use the root administrator mode to update storefront-specific settings for all the storefronts at once. To do so, follow these steps:
 
