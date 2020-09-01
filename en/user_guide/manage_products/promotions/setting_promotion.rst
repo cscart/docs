@@ -34,7 +34,7 @@ How To: Set Up a Promotion
 
          If two promotions have the same priority, they are applied in the same order as they are retrieved from the database.
 
-   * **Stop other rules**—other promotions with lower priority won't apply to an order when the current promotion is applied.
+   * **Stop other rules**—if you tick this checkbox, other promotions won't apply to an order when the current promotion is applied.
 
      .. important::
 
