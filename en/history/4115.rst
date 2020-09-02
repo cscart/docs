@@ -85,6 +85,8 @@ Bugfixes
 
 [!] Add-ons: PayPal Payments: In some cases, order status would be incorrectly changed to "Backordered", if the "Initial order status" for the payment method was set to "Open". Fixed.
 
+[!] Add-ons: Pickpoint: When installing the add-on or updating the list of pick-up points, an error might occur due to insufficient memory. Fixed.
+
 [!] Add-ons: Product variations: Passing non-integer values in 'product_id' in requests could lead to database errors. Fixed.
 
 [!] Add-ons: Reward points: Links to view the customer's reward points were displayed to the administrator even if he did not have access to that. Fixed.
@@ -146,6 +148,8 @@ Bugfixes
 [!] Design: Blocks: Outside navigation in the "Scroller" template overlapped a nearby block. Fixed.
 
 [!] Design: Blocks: Products: The block with the "Scroller" template was not displayed more than once. Fixed.
+
+[!] Design: Focused checkbox, radio and select were not displaying correctly in Chrome 83+. Fixed.
 
 [!] Design: In Firefox, the title bar of the product quick view did not appear. Fixed.
 
@@ -274,5 +278,7 @@ Bugfixes
 [!] Storefronts: Themes: An error occurred on the storefront editing page when a third-party theme was installed. Fixed.
 
 [!] Storefronts: When a storefront was specified with a non-standard port, there was a redirection to the storefront without a port. Fixed.
+
+[!] User groups: The User group requests page was not displayed in full width. Fixed.
 
 [!] Users: Profiles: If a user's country was not the default country, then the state couldn't be removed from the profile in the admin panel. Fixed.
