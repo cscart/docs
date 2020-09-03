@@ -54,7 +54,7 @@ Server Configuration Requirements
         -   ``ftp_nb_fput``
         -   ``ftp_raw``
         -   ``ftp_rawlist``
-        -   ``mysql_pconnect``
+        -  
     *   -   ``eval``
         -   ``system``
         -   ``exec``

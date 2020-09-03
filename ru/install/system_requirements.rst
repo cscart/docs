@@ -52,7 +52,7 @@ CS-Cart разработан с учётом большинства возмож
         -   ``ftp_nb_fput``
         -   ``ftp_raw``
         -   ``ftp_rawlist``
-        -   ``mysql_pconnect``
+        -   
     *   -   ``eva``
         -   ``system``
         -   ``exec``
