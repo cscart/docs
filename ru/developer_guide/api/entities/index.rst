@@ -11,4 +11,6 @@
     options
     combinations
     exceptions
+    product_variations
+    product_variation_groups
     *

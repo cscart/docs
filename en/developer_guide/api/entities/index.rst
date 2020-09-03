@@ -19,6 +19,8 @@ Supported Entities
     payments
     products
     product_features
+    product_variations
+    product_variation_groups
     options
     combinations
     exceptions
