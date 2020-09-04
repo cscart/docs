@@ -2,9 +2,9 @@
 Product Variations
 ******************
 
-:doc:`Variation </user_guide/manage_products/products/product_variations>` is a product that belongs to a variation group. A product can belong only to one group at the same time, but it’s easy to change the product’s group. If a variation is removed from the group, it becomes a standard product. 
+:doc:`Variations </user_guide/manage_products/products/product_variations>` are similar products that differ from each other only in one or a few features. For example, a T-shirt comes in 3 colors, and each color has 5 sizes. That means 15 products. If we put these products into a variation group, we will have the ability to switch between their colors and sizes on the storefront.
 
-Variations are similar products that differ from each other only in one or a few features. For example, a T-shirt comes in 3 colors, and each color has 5 sizes. That means 15 products. If we want to add switching between these products, we’ll put these products into a variation group that is based on the “Color” and “Size” features. Now we have 15 variations, and customers can switch between them on the product page.
+A product can belong only to one group at the same time, but it’s easy to change the product’s group. If a variation is removed from the group, it becomes a standard product. 
 
 .. contents::
    :backlinks: none
@@ -50,29 +50,29 @@ Sorting and pagination parameters are inherited from :doc:`Products </developer_
 Filters
 =======
 
-Filtering parameters are inherited from Products. The :doc:`Product Variations </user_guide/addons/product_variations/index>` add-on adds the following filtering parameters, available via Products API or Product Variations API:
+Filtering parameters are inherited from :doc:`Products </developer_guide/api/entities/products>`. The :doc:`Product Variations </user_guide/addons/product_variations/index>` add-on adds the following filtering parameters, available via Products API or Product Variations API:
 
-* ``product_type (enum[P|V])``—filter by product type. Allows you to get only default variations or child variations (product_type=V).
+* ``product_type`` *(enum[P|V])*—filter by product type. Allows you to get only default variations or child variations (product_type=V).
 
-* ``variation_group_id (int)``—filter by variation group. Allows you to get all variations from a particular variation group.
+* ``variation_group_id`` *(int)*—filter by variation group. Allows you to get all variations from a particular variation group.
 
-* ``variations_by_product_id (int)``—filter that allows you to get variations by product ID.
+* ``variations_by_product_id`` *(int)*—filter that allows you to get variations by product ID.
 
 * ``parent_product_id (int)``—filter that allows you to get child variations.
 
-* ``include_child_variations (enum[0|1])``—filter that allows you to include child variations to the selection. By default, child variations are not included in the selection for the storefront.
+* ``include_child_variations`` *(enum[0|1])*—filter that allows you to include child variations to the selection. By default, child variations are not included in the selection for the storefront.
 
-* ``group_child_variations (enum[0|1])``—filter that allows you to combine child variations in groups. By default, child variations are combined in groups for the storefront, and not combined for the admin panel.
+* ``group_child_variations`` *(enum[0|1])*—filter that allows you to combine child variations in groups. By default, child variations are combined in groups for the storefront, and not combined for the admin panel.
 
 
 Additional Params
 =================
 
-Additional parameters for products selection are inherited from Products. The Product Variations add-on adds the following new parameters, available via Products API or Product Variations API:
+Additional parameters for products selection are inherited from :doc:`Products </developer_guide/api/entities/products>`. The :doc:`Product Variations </user_guide/addons/product_variations/index>` add-on adds the following new parameters, available via Products API or Product Variations API:
 
-* ``get_variation_features_variants`` (enum[0|1])—flag for expanding product data. If the parameter is specified, the array ``variation_features_variants`` indicating possible variants of the feature, is defined for each variation. This data is used to display the switch between variations in the core.
+* ``get_variation_features_variants`` *(enum[0|1])*—flag for expanding product data. If the parameter is specified, the array ``variation_features_variants`` indicating possible variants of the feature, is defined for each variation. This data is used to display the switch between variations in the core.
 
-* ``get_variation_info`` (enum[0|1])—flag for expanding product data. If this parameter is specified, the following data will be defined for each variation:
+* ``get_variation_info`` *(enum[0|1])*—flag for expanding product data. If this parameter is specified, the following data will be defined for each variation:
 
   * ``variation_feature_ids``—IDs of features that were used to create the product variation group;
 
@@ -88,13 +88,13 @@ Additional parameters for products selection are inherited from Products. The Pr
 
   * ``variation_features``—variants of the feature which purpose allows to create variations;
 
-* ``get_variation_name`` (enum[0|1])—flag for expanding product data. If the parameter is specified, the product name with the label will be defined for each variation in the ``variation_name`` property. Example: *T-shirt, Color: Blue (Medium)*.
+* ``get_variation_name`` *(enum[0|1])*—flag for expanding product data. If the parameter is specified, the product name with the label will be defined for each variation in the ``variation_name`` property. Example: *T-shirt, Color: Blue (Medium)*.
 
 
 Fields
 ======
 
-Fields are inherited from Products. The Product Variations add-on adds the following new fields, available via Products API or Product Variations API:
+Fields are inherited from :doc:`Products </developer_guide/api/entities/products>`. The :doc:`Product Variations </user_guide/addons/product_variations/index>` add-on adds the following new fields, available via Products API or Product Variations API:
 
 * ``variation_group_id``—variation group ID; 
 
@@ -114,7 +114,7 @@ Fields are inherited from Products. The Product Variations add-on adds the follo
 Creating/Updating Products
 ==========================
 
-The logics of creation/updating products in a variation group is inherited from Products. The Product Variations add-on considers the following fields when creating/updating products:
+The logics of creation/updating products in a variation group is inherited from :doc:`Products </developer_guide/api/entities/products>`. The :doc:`Product Variations </user_guide/addons/product_variations/index>` add-on considers the following fields when creating/updating products:
 
 * ``variation_feature_values``—list of the product feature values in the ``feature_id: variant_id`` format. Allows you to change the values of those features that were used to create variation groups. 
 
