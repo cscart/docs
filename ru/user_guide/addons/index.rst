@@ -57,6 +57,7 @@
     twigmo/index
     vendor_data_premoderation/index
     warehouses/index
+    vendor_locations/index
     vendor_plans/index
     vendor_privileges/index
     commissions_by_category/index
