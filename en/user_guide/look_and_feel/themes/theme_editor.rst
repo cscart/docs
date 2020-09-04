@@ -2,6 +2,10 @@
 Theme Editor
 ************
 
+.. contents::
+    :backlinks: none
+    :local:
+
 In the **Theme editor** you can easily change the default style to your individual company one: change logo, color scheme, fonts, background settings.
 
 To open the **Theme editor** panel, in the Administration panel go to the **Design → Themes** section and click the **Theme Editor** button near the desired layout.
@@ -59,6 +63,8 @@ An alternative text describes the image and is shown when the image is missing o
 .. important::
 
     You cannot upload logos for default styles. Create a new one first. To do it, click the **Save** button near the style name and type a new style name in the pop up window.
+    
+You can also change the storefront logo, if you go to the **Main: Logos** section on the **Design → Themes** page.
 
 Colors
 ------
