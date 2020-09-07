@@ -45,6 +45,7 @@
     replain/index
     retailcrm/index
     reward_points/index
+    rma/index
     rus_personal_data_processing/index
     rus_taxes/index
     seo/index
