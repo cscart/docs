@@ -20,7 +20,6 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     age_verification/index
     anti_fraud/index
     attachments/index
-    customer_to_vendor_communication/index
     google_backend_signin/index
     banners_management/index
     bestsellers_and_on_sale_products/index
@@ -48,6 +47,7 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     janrain/index
     maps_and_geolocation/index
     full_page_cache/index
+    customer_to_vendor_communication/index
     my_changes/index
     myob/index
     newsletters/index
