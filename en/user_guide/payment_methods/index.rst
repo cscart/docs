@@ -30,21 +30,23 @@ Here are some of the payment methods that you can set up in CS-Cart and Multi-Ve
     stripe_apple_and_google_pay
     2checkout
     authorizenet
-    eway
     hsbc
-    ideal
     nochex
-    paypal_for_marketplaces
-    paypal_adaptive_payments
-    paypal
-    paypal_advanced
-    paypal_express
-    paypal_commerce_platform
-    paypalpro
-    ping
     sagepay
-    stripe_connect
     worldpay
+    ideal
+    eway
+    paypal
+    paypal_adaptive_payments
+    paypal_commerce_platform
+    paypal_express
+    paypal_advanced
+    paypalpro
+    paypal_for_marketplaces
+    ping
+    stripe_connect    
+    
+    
 
 .. toctree::
     :maxdepth: 4

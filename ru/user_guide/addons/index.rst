@@ -22,52 +22,54 @@
     :glob:
     
     *
-    advanced_products_import/index
     atol_online/index
     blog/index
-    boxberry/index
+    reward_points/index
+    product_variations/index
+    rma/index
+    google_backend_signin/index
     cities/index
+    maps_and_geolocation/index
+    form_builder/index
+    stores_and_pickup_points/index
+    vendor_locations/index
+    rus_taxes/index
     common_products/index
     direct_customer_to_vendor_payments/index
-    comments_and_reviews/index
-    commerceml/index
-    form_builder/index
-    geolocation/index
-    gift_certificates/index
-    google_backend_signin/index
-    google_recaptcha/index
-    hidpi_displays_support/index
-    janrain/index
-    lite_checkout/index
-    maps_and_geolocation/index
-    paypal_payments/index
-    product_variations/index
-    replain/index
-    retailcrm/index
-    reward_points/index
-    rma/index
-    rus_personal_data_processing/index
-    rus_taxes/index
-    seo/index
-    sms_notifications/index
-    social_login/index
-    step_by_step_checkout/index
-    stores_and_pickup_points/index
-    tags/index
-    old_admin_panel/index
-    twigmo/index
-    vendor_data_premoderation/index
-    warehouses/index
     vendor_debt_payout/index
-    vendor_locations/index
-    vendor_plans/index
+    geolocation/index
+    comments_and_reviews/index
+    paypal_payments/index
+    gift_certificates/index
+    hidpi_displays_support/index
+    rus_personal_data_processing/index
+    step_by_step_checkout/index
+    vendor_data_premoderation/index
     vendor_privileges/index
+    lite_checkout/index
+    advanced_products_import/index
     vendor_rating/index
+    warehouses/index
+    social_login/index
+    old_admin_panel/index
+    vendor_plans/index
     commissions_by_category/index
+    twigmo/index
+    tags/index
+    sms_notifications/index
     customer_to_vendor_communication/index
-    yandex_metrika/index
+    replain/index
     yml_export/index
     yandex_checkout/index
+    yandex_metrika/index
+    boxberry/index
+    commerceml/index
+    google_recaptcha/index
+    janrain/index
+    retailcrm/index
+    seo/index
+         
+    
 
 .. toctree::
     :hidden:

@@ -24,27 +24,28 @@
     :titlesonly:
     :glob:
 
+    alfabank
+    avangard
+    vsevcredit
+    invoice
+    kupivkredit
+    pay_at_home
+    sberbank
+    sberbank_online
     yandex_money
     yandex_money_p2p
     yandex_checkout_marketplaces
-    sberbank
-    sberbank_online
-    alfabank
+    assist
+    chronopay
+    payanyway
+    paymaster
     payler
     qiwi_rest
     qiwi
-    webmoney
-    payanyway
-    assist
-    avangard
-    paymaster
     rbk
-    chronopay
     robokassa
-    kupivkredit
-    vsevcredit
-    pay_at_home
-    invoice
+    webmoney
+        
 
 :doc:`Создание и настройка способов оплаты в CS-Cart. <adding_payment>`
 
