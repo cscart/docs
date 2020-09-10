@@ -2,11 +2,15 @@
 Product Variation Groups
 ************************
 
-:doc:`Variation </user_guide/manage_products/products/product_variations>` is a product that belongs to a variation group.  Variation group—a few similar products that differ from each other only in one or several features.
+Let's say we have a T-shirt available in 3 colors and 5 sizes in your store. It means we have 15 similar products. We want to switch between the colors and sizes on the storefront.
+
+To do this, we have to put these similar products in a variation group. In this case the product will be considered as a :doc: `variation </user_guide/manage_products/products/product_variations>`. A product can belong only to one group at the same time, but it’s easy to change the product’s group. If a variation is removed from the group, it becomes a standard product.
+
 
 .. contents::
    :backlinks: none
    :local:
+    
     
 URLs
 ====
@@ -31,6 +35,7 @@ Nested Objects
 
 * :doc:`Product Variations </developer_guide/api/entities/product_variations>`
 
+
 Pagination
 ==========
 
@@ -45,6 +50,7 @@ Pagination
     *   -   ``items_per_page``
         -   Shows N variation groups, where N is the number defined in the parameter
 
+
 Filtering
 =========
 
@@ -58,6 +64,7 @@ Filtering
         -   Filtering by product IDs. If the parameter is specified, the response will contain those variation groups that contain at least one of the listed products.
     *   -   ``feature_ids``
         -   Filtering by features. If the parameter is specified, the response will contain those variation groups that contain at least one of the listed features.
+ 
         
 Fields
 ======
@@ -97,6 +104,7 @@ Fields
 * ``created_at``—time when the variation group was created;
 
 * ``updated_at``—last time when the variation group was updated.
+
 
 Response Format
 ===============
@@ -379,8 +387,10 @@ Response Format
 	      "updated_at":1585052457
 	   }
 
+
 Examples
 ========
+
 
 Create a Variation Group
 ++++++++++++++++++++++++
@@ -392,6 +402,7 @@ Create a Variation Group
  	-H "Authorization: Basic ******" \
 	-d '{"product_ids":[286,287,288],"code":"MY_GROUP_1"}'
 	   
+	   
 Get a List of Variation Groups
 ++++++++++++++++++++++++++++++
 
@@ -400,6 +411,7 @@ Get a List of Variation Groups
 	curl -X GET "http://example.com/api/product_variations_groups" \
  	-H "Content-Type: application/json" \
 	-H "Authorization: Basic ******"
+ 	  
  	   
 Get a Variation Group
 +++++++++++++++++++++
@@ -420,6 +432,7 @@ Get a Variation Group
         
   Where ``:code`` is a symbol ID of a variation group.
 
+
 Update a Symbol Code of a Variation Group
 +++++++++++++++++++++++++++++++++++++++++
 
@@ -431,6 +444,7 @@ Update a Symbol Code of a Variation Group
  	-d '{"code":"MY_GROUP_NEW"}'
 
 Where ``:code`` is a symbol ID of a variation group.
+  
   
 Delete a Variation Group
 ++++++++++++++++++++++++

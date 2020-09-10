@@ -68,9 +68,9 @@ Filtering parameters are inherited from :doc:`Products </developer_guide/api/ent
 Additional Params
 =================
 
-Additional parameters for products selection are inherited from :doc:`Products </developer_guide/api/entities/products>`. The :doc:`Product Variations </user_guide/addons/product_variations/index>` add-on adds the following new parameters, available via Products API or Product Variations API:
+Additional parameters for product selection are inherited from :doc:`Products </developer_guide/api/entities/products>`. The :doc:`Product Variations </user_guide/addons/product_variations/index>` add-on adds the following new parameters, available via Products API or Product Variations API:
 
-* ``get_variation_features_variants`` *(enum[0|1])*—flag for expanding product data. If the parameter is specified, the array ``variation_features_variants`` indicating possible variants of the feature, is defined for each variation. This data is used to display the switch between variations in the core.
+* ``get_variation_features_variants`` *(enum[0|1])*—flag for expanding product data. If the parameter is specified, each variation will have a ``variation_features_variants`` array with all the possible feature variants. CS-Cart and Multi-Vendor use that data to show feature variant selectors.
 
 * ``get_variation_info`` *(enum[0|1])*—flag for expanding product data. If this parameter is specified, the following data will be defined for each variation:
 
@@ -86,7 +86,7 @@ Additional parameters for products selection are inherited from :doc:`Products <
 
   * ``variation_sub_group_id``—subgroup symbol ID;
 
-  * ``variation_features``—variants of the feature which purpose allows to create variations;
+  * ``variation_features``—the values of all variation-capable features of the product; 
 
 * ``get_variation_name`` *(enum[0|1])*—flag for expanding product data. If the parameter is specified, the product name with the label will be defined for each variation in the ``variation_name`` property. Example: *T-shirt, Color: Blue (Medium)*.
 
@@ -196,7 +196,7 @@ Examples
 DetachProductVariation
 ======================
 
-API entitie for deleting a variation from the variation group.
+API entity for removing a variation from the variation group.
 
 
 URL
@@ -229,7 +229,7 @@ If the request is successful, you’ll receive **201 HTTP**.
 SetDefaultProductVariation
 ==========================
 
-API entitie for setting a variation as the default one.
+API entity for setting a variation as the default one.
 
 
 URL
@@ -262,7 +262,7 @@ If the request is successful, you’ll receive **201 HTTP**.
 GenerateProductVariations
 =========================
 
-API entitie for generating variations based on combinations of product features.
+API entity for generating variations based on combinations of product features.
 
 URL
 +++
@@ -375,9 +375,9 @@ Where:
 
   * *0*—no changes;
 
-  * *1*—the product is added to the variation group;
+  * *1*—the product has been added to the variation group;
 
-  * *2*—the product is updated in the variation group;
+  * *2*—the product has been updated in the variation group;
 
   * *253*—the vendor/storefront the product belongs to does not match other products in the variation group;
 
