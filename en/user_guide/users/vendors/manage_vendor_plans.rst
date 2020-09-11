@@ -51,8 +51,8 @@ Way 1: From a Vendor Settings Page
        Click the **Advanced plan creation** button to procced to create the plan from the **Vendor plans** add-on page.
 
 
-Way 2: From the Add-on's Page
-+++++++++++++++++++++++++++++
+Way 2: From the Vendor Plan's List
+++++++++++++++++++++++++++++++++++
 
 #. Go to **Vendors → Vendor plans**.
 
@@ -66,7 +66,7 @@ Way 2: From the Add-on's Page
 
      * **Offer as the best choice**—tick this checkbox to highlight this plan among other plans. The *Best Choice* bar will appear above the plan’s name.
 
-     * **Description**—a brief description of the plan, that will appear above the plan’s name. It looks best when you limit it to a phrase or a short sentence.
+     * **Description**—add a brief description of the plan, that potential vendors will see when choosing a plan from the list.
  
      * **Position**—the position of the plan relative to other plans, both on the storefront and in the Administration panel.
 
