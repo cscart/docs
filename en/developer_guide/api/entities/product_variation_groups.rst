@@ -4,7 +4,7 @@ Product Variation Groups
 
 Let's say we have a T-shirt available in 3 colors and 5 sizes in your store. It means we have 15 similar products. We want to switch between the colors and sizes on the storefront.
 
-To do this, we have to put these similar products in a variation group. In this case the product will be considered as a :doc: `variation </user_guide/manage_products/products/product_variations>`. A product can belong only to one group at the same time, but it’s easy to change the product’s group. If a variation is removed from the group, it becomes a standard product.
+To do this, we have to put these similar products in a variation group. In this case the product will be considered as a :doc:`variation </user_guide/manage_products/products/product_variations>`. A product can belong only to one group at the same time, but it’s easy to change the product’s group. If a variation is removed from the group, it becomes a standard product.
 
 
 .. contents::
@@ -15,17 +15,21 @@ To do this, we have to put these similar products in a variation group. In this 
 URLs
 ====
 
-* http://example.com/api/**product_variations_groups** —refer to all product variations groups. 
+* http://example.com/api/**product_variations_groups** —refer to all product variation groups. 
 
   Only ``GET`` and ``POST`` are supported.
 
 
-* http://example.com/api/**product_variations_groups/:id** —refer to a product variations group. 
+* http://example.com/api/**product_variations_groups/:id** —refer to a product variation group. 
 
-  ``GET``, ``PUT``, and ``DELETE`` are supported. 
+  ``GET``, ``PUT``, and ``DELETE`` are supported.
+  
+  .. important::
+  
+      ``DELETE`` deletes only a variation group, i.e. disbands it. The variations from this group are not deleted. They become regular products. 
 
  
-* http://example.com/api/**product_variations_groups/:code** —refer to a product variations group. 
+* http://example.com/api/**product_variations_groups/:code** —refer to a product variation group. 
 
   ``GET``, ``PUT``, and ``DELETE`` are supported. 
 
@@ -73,7 +77,7 @@ Fields
 
 * ``code``—variation group code;
 
-* ``features``—list of the products features that were used to create the product variation group;
+* ``features``—list of the product features that were used to create the product variation group;
 
   * ``feature_id``—product feature ID;
 
