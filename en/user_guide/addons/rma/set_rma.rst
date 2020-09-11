@@ -13,11 +13,11 @@ Enabling the RMA Add-on
 
 #. In the Administration panel, go to **Add-ons → Manage add-ons**.
 
-#. Install the **RMA** add-on just like :doc:`any other add-on </user_guide/addons/1manage_addons>` (change its status to *Active*).
+#. The **RMA** add-on is installed by default. If it is inactive (it's status is *Disabled*), change the add-on status to *Active*.
 
 #. Click on the name of the **RMA** add-on.
 
-#. Select the desired options and tick the check boxes, if needed:
+#. Select the desired settings and tick the check boxes, if needed:
 
    * **Display product return period** — If selected, product return period is displayed on the storefront.
 

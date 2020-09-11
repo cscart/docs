@@ -14,18 +14,14 @@ How To: Allow to Return Products
 
 #. Click **Save**.
 
-.. image:: img/rma_05.png
-    :align: center
-    :alt: RMA tab
+   .. image:: img/rma_05.png
+       :align: center
+       :alt: RMA tab
 
-.. note ::
-
-	A customer will be able to send a return request on the order details page by clicking the **Request the replacement or a refund** link.
+A customer will be able to send a return request on the order details page by clicking the **Request the replacement or a refund** link.
 
 .. image:: img/rma_06.png
     :align: center
     :alt: Order
 
-.. note ::
-
-	A customer will be able to send a return request only if his/her order has a status for which the **Allow return registration** option is enabled on the **Order statuses** page in the administration panel. Learn more :doc:`here <../rma/set_rma>`.
+A customer will be able to send a return request only if his/her order has a status for which the **Allow return registration** option is enabled on the **Order statuses** page in the administration panel. Learn more :doc:`here <../rma/set_rma>`.
