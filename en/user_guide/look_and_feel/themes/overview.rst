@@ -2,14 +2,6 @@
 The Themes Section Overview
 ***************************
 
-.. contents::
-    :backlinks: none
-    :local:
-
-===================
-General Information
-===================
-
 In the **Design → Themes** section of the Administration panel you can choose, install, upload, delete, and customize themes for your store.
 
 .. image:: img/themes.png
@@ -20,9 +12,15 @@ In this page you can see the current theme applied to your store and the list of
 
 Click **NEED HELP** in the upper part of the page to see the video tutorial on how to customize your storefront.
 
-=====================
-Current Theme Section
-=====================
+
+.. contents::
+    :backlinks: none
+    :local:
+    
+
+=============
+Current Theme 
+=============
 
 In the **Current theme** section you can:
 
@@ -43,18 +41,18 @@ On-site Live Editor
 
 With the **On-site live editor** you can edit:
 
-* Language variables;
-* Products;
-* Images;
-* Categories;
-* Pages;
-* Banners;
-* Storefront logo;
-* Some settings.
+* Language variables
+* Products
+* Images
+* Categories
+* Pages
+* Banners
+* Storefront logo
+* Some settings
 
-====================================================
-Installed Theme and Browse All Available Themes Tabs
-====================================================
+==============================
+Installed and Available Themes
+==============================
 
 In the **Installed theme** tab, there is a list of themes with different styles, that you can use in your store. For example, there is the default **Responsive** theme and the list of styles (Black, Brightness, Facebook, etc.) available for it. Hover the mouse pointer over the style preview and click **Use this style** to use the style.
 
@@ -91,7 +89,7 @@ Here you can also see the **Rebuild cache automatically** selector. Click (On) i
 Removing a Cloned Theme
 -----------------------
 
-To Remove a cloned theme:
+To remove a cloned theme:
 
 *	Make sure that the theme you want to remove is not currently used (select another theme from the **Installed theme** tab).
 *	Find the theme you want to remove in the **Installed theme** tab and click the trash can button on the right.
