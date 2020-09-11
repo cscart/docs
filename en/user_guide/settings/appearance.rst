@@ -30,13 +30,13 @@ Customer Settings
 
   Language of the storefront is defined by the following parameters (highest to lowest importance):
       
-  * The language defined by the language code in the URL;
+  * The language defined by the language code in the URL.
   
-  * The language saved in cookies, i.e. the language you chose during the last user session;
+  * The language saved in cookies, i.e. the language you chose during the last user session.
     
-  * The language set as a default language in your browser;
+  * The language set as a default language in your browser.
     
-  * The language set in the settings as the storefront default language.
+  * The language set in the settings as the frontend default language.
 
 * **Orders per page**—the number of orders displayed on one page.
 
