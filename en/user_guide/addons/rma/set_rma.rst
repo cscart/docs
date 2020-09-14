@@ -2,21 +2,26 @@
 How To: Set up the RMA Add-on
 *****************************
 
+.. contents::
+    :backlinks: none
+    :local:
+
+
 =======================
 Enabling the RMA Add-on
 =======================
 
 #. In the Administration panel, go to **Add-ons → Manage add-ons**.
 
-#. Enable the **RMA** add-on (change its status to *Active*).
+#. The **RMA** add-on is installed by default. If it is inactive (it's status is *Disabled*), change the add-on status to *Active*.
 
 #. Click on the name of the **RMA** add-on.
 
-#. Select the desired options and tick the check boxes, if needed:
+#. Select the desired settings and tick the check boxes, if needed:
 
-   * **Display product return period** - If selected, product return period is displayed on the storefront.
+   * **Display product return period** — If selected, product return period is displayed on the storefront.
 
-   * **Do not take weekends into account when calculating product return period** - If selected, Saturdays and Sundays are excluded from the return period.
+   * **Do not take weekends into account when calculating product return period** — If selected, Saturdays and Sundays are excluded from the return period.
 
 #. Click **Save**.
 
@@ -46,7 +51,7 @@ Setting Up Return Registration
        :align: center
        :alt: RMA actions
 
-#. Go to **Administration → Order statuses**.
+#. Go to **Administration → Statuses → Order statuses**.
 
 #. Click on the order status for which you want to allow return and tick the **Allow return registration** check box.
 

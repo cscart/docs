@@ -6,6 +6,7 @@ RMA stands for return merchandise authorization. This add-on is designed to simp
 
 For instructions on how to handle registered product returns, please refer to the section `Orders → Return requests <http://docs.cs-cart.com/4.4.x/user_guide/orders/return_requests/index.html>`_. Return requests are allowed only for products that are marked as returnable. This option together with the return period is controlled separately for each product in the catalog at the product details page.
 
+
 .. toctree::
     :maxdepth: 2
     :titlesonly:
