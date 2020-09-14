@@ -6,11 +6,11 @@ How To: Set up a Tax
    :backlinks: none
    :local:
 
-================
-Create Locations
-================
+=================
+Create Rate Areas
+=================
 
-Go to **Administration → Shipping & taxes → Locations** and :doc:`create locations </user_guide/shipping_and_taxes/locations/set_location>`. You'll need locations if you want to specify different tax rates for customers from different countries and regions.
+Go to **Administration → Shipping & taxes → Rate areas** and :doc:`create rate areas </user_guide/shipping_and_taxes/locations/set_location>`. You'll need rate areas if you want to specify different tax rates for customers from different countries and regions.
 
 ===============
 Configure a Tax
