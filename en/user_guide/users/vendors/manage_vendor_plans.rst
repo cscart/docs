@@ -51,8 +51,8 @@ Way 1: From a Vendor Settings Page
        Click the **Advanced plan creation** button to procced to create the plan from the **Vendor plans** add-on page.
 
 
-Way 2: From the Vendor Plan's List
-++++++++++++++++++++++++++++++++++
+Way 2: From the List of Vendor Plans
+++++++++++++++++++++++++++++++++++++
 
 #. Go to **Vendors → Vendor plans**.
 
