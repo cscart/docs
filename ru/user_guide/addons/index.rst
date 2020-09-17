@@ -43,6 +43,7 @@
     gift_certificates/index
     hidpi_displays_support/index
     rus_personal_data_processing/index
+    rus_post/index
     step_by_step_checkout/index
     vendor_data_premoderation/index
     vendor_privileges/index
