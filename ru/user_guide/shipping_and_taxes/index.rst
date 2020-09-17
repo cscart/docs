@@ -7,10 +7,16 @@
 .. toctree::
     :maxdepth: 5
     :titlesonly:
-    :glob:
-
+    :glob:    
+    
     */index
     address
     product_shipping_settings
     shipping_on_frontend
     global_shipping_settings
+    
+    
+.. toctree::
+    :maxdepth: 3
+    
+    locations/shipping_to_your_city

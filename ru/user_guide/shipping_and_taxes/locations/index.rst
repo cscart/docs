@@ -29,4 +29,3 @@
     states
     set_location
     country_location
-    shipping_to_your_city
