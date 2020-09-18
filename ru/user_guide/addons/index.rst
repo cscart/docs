@@ -47,6 +47,7 @@
     step_by_step_checkout/index
     vendor_data_premoderation/index
     vendor_privileges/index
+    attachments/index
     lite_checkout/index
     advanced_products_import/index
     vendor_rating/index
