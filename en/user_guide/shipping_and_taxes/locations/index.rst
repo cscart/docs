@@ -30,7 +30,6 @@ In This Section
     states
     set_location
     country_location
-    shipping_to_your_city
 
 .. meta::
    :description: How to set different shipping, taxes, and rates for different locations in CS-Cart and Multi-Vendor ecommerce platforms?

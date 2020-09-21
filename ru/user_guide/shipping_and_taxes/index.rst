@@ -16,7 +16,4 @@
     global_shipping_settings
     
     
-.. toctree::
-    :maxdepth: 3
-    
-    locations/shipping_to_your_city
+
