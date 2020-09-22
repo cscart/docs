@@ -6,9 +6,9 @@
 
 * автоматически рассчитывать стоимость доставки c помощью:
 
-  * **pochta.ru** (официальный сайт `Почты России <https://www.pochta.ru>`_).
+  * `pochta.ru <https://www.pochta.ru>`_ (официальный сайт Почты России);
   
-  * **russianpostcalc.ru** (сторонний сервис расчёта стоимости доставки `russianpostcalc.ru <https://russianpostcalc.ru>`_).
+  * `russianpostcalc.ru <https://russianpostcalc.ru>`_ (сторонний сервис расчёта стоимости доставки).
   
 * формировать почтовые отправления;
 
