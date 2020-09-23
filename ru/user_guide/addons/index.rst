@@ -29,6 +29,7 @@
     rma/index
     google_backend_signin/index
     cities/index
+    edost_calc/index
     maps_and_geolocation/index
     form_builder/index
     stores_and_pickup_points/index
