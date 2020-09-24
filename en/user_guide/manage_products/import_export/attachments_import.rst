@@ -1,6 +1,6 @@
-**********************************
-How To: Import Files with Products
-**********************************
+*******************************************
+How To: Attach Files to Products via Import
+*******************************************
 
 In CS-Cart and Multi-Vendor, you can :doc:`attach files to products </user_guide/addons/attachments/attach_files>` (for example, instructions or diagrams). To do this, you need the :doc:`/user_guide/addons/attachments/index` add-on. Normally, you can attach a file in the settings of any product, but if there are lots of products and files, it's easier to do this using :doc:`product import </user_guide/manage_products/import_export/advanced_product_import>`.
 
@@ -14,11 +14,11 @@ Before importing products with files, you need to upload those files somewhere. 
 Uploading Files to an External Server
 =====================================
 
-Uploading files to an external server will save you space on the store with your CS-Cart installation. When a customer wants to download the file from the storefront, he will get it not from your store, but from the place where it is stored.
+Uploading files to an external server will save you space on the server with your CS-Cart installation. When a customer wants to download the file from the storefront, he will get it not from your store, but from the place where the file is stored.
 
 #. Upload your files to any file hosting service.
 
-#. In the imported file specify the links to your files, for example::
+#. Specify the links to your files in the imported file; for example::
 
        http://www.example.com/test_file.pdf
        
@@ -37,7 +37,7 @@ Uploading files to an external server will save you space on the store with your
        If the file on the external server is changed, the new file will be available to the customers. Saving attachments on your store's server will help you to avoid this situation, but it slows down the importing and requires a lot of space on your server.
        
        
-Uploading Files to the Internal Server
+Uploading Files to Your Store's Server
 ======================================
 
 #. In the administration panel, go to **Administration → Files**.
