@@ -34,5 +34,8 @@
 Связанные статьи
 ================
 
+* :doc:`/user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/edost`
+
 * :doc:`/user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/rus_post/post_edost/index`
+
 
