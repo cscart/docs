@@ -7,6 +7,9 @@ This add-on adds the possibility for customers to zoom product images by hoverin
 .. image:: img/image_zoom.png
 	:align: center
 	:alt: Image Zoom
+	
+Related Articles
+================
 
 .. toctree::
     :maxdepth: 2
