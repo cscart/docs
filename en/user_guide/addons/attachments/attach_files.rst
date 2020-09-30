@@ -2,6 +2,8 @@
 How To: Attach Files to Products
 ********************************
 
+Let's say you want to allow your customers to download files applied to your products (for example, diagrams or user manuals) directly from the storefront. To do this, you need the :doc:`/user_guide/addons/attachments/index` add-on.
+
 Set Up the Add-on
 =================
 
