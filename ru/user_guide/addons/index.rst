@@ -46,6 +46,11 @@
     rus_personal_data_processing/index
     rus_taxes/index
     seo/index
+<<<<<<< HEAD
+=======
+    sms_notifications/index
+    image_zoom/index
+>>>>>>> 265c294a... Image zoom 4.11.x
     social_login/index
     step_by_step_checkout/index
     stores_and_pickup_points/index
