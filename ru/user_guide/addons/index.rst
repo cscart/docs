@@ -46,19 +46,14 @@
     rus_personal_data_processing/index
     rus_taxes/index
     seo/index
-<<<<<<< HEAD
-=======
     sms_notifications/index
     image_zoom/index
->>>>>>> 265c294a... Image zoom 4.11.x
     social_login/index
     step_by_step_checkout/index
     stores_and_pickup_points/index
     tags/index
     old_admin_panel/index
     twigmo/index
-<<<<<<< HEAD
-=======
     vendor_data_premoderation/index
     warehouses/index
     vendor_locations/index
@@ -66,7 +61,6 @@
     vendor_privileges/index
     commissions_by_category/index
     customer_to_vendor_communication/index
->>>>>>> 4a18022e... [~]{@1-25459} Ru: Docs: fixed some errors in article about vendor group, added link to article in add-ons and to vendors index pages, added missing screenshot
     yandex_metrika/index
     yml_export/index
 
