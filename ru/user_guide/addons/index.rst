@@ -49,6 +49,7 @@
     rus_taxes/index
     seo/index
     sms_notifications/index
+    image_zoom/index
     social_login/index
     step_by_step_checkout/index
     stores_and_pickup_points/index
