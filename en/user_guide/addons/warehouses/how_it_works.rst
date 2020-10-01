@@ -125,7 +125,7 @@ How and where do I set quantity at warehouses?
 
    * *0*—the product is out of stock at this store or warehouse.
 
-   * *No value*—this store or warehouse doesn't deal with the product.
+   * *No value*—this store won't be displayed in the list on the product page.
 
    .. important::
 
