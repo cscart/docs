@@ -16,7 +16,7 @@ To enable the **SEO** add-on:
 	*	**Category SEO URL format** - Pattern for clean URLs for storefront category pages.
 	*	**Page SEO URL format** - Pattern for clean URLs for other store pages.
 	*	**Other SEO URL format** - Pattern for clean URLs for other items.
-	*	**Show language in the URL** - If selected, URLs include the code of the language in which the referred page is displayed. The code follows the host name and the directory name.
+	*	**Show additional language in the URL** - If selected, URLs include the code of the language in which the referred page is displayed. The code follows the host name and the directory name.
 	*	**Use single URL for all languages** - If selected, the same URL is used to address a page disregarding the current page language. Otherwise, the page is referred to by several separate URLs according to the languages that the page can appear in.
 	*	**Allow non-latin symbols in URL**- If selected, URLs can contain symbols from different languages.
 
