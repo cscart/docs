@@ -52,6 +52,20 @@ Choose Where to Allow Comments
        :align: center
        :alt: Configuring reviews for a product.
 
+In Multi-Vendor, vendors can not confugure product reviews by default. You can allow them to do it. To do this you need the :doc:`/user_guide/addons/vendor_privileges/index` add-on.
+
+#. Go to **Customers → User groups**.
+
+#. Find the **Vendor** user group and click its name to open the settings.
+
+#. In the **Website** section, find the **Comments and reviews** field and enable the **Full access** setting.
+
+#. Click **Save**.
+
+   .. image:: img/comments_vendors.png
+       :align: center
+       :alt: Enabling full access for vendors
+
 ========================
 View and Manage Comments
 ========================
