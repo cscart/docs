@@ -6,6 +6,11 @@ Rate Area Properties
 
     A customer is assigned to a rate area when all the **non-empty conditions** (as in, country, state, ZIP code, city, address) are met. Don't specify more conditions than you have to: a customer might make a mistake or leave the fields empty.
 
+.. contents::
+    :backlinks: none
+    :local:
+    
+
 =======
 General
 =======
@@ -14,9 +19,11 @@ General
 
 * **Status**—the status of the rate area: *Active* or *Disabled*.
 
-.. image:: img/locations_general.png
-    :align: center
-    :alt: The "General" section of the rate area editing page in CS-Cart and Multi-Vendor.
+* **Add in all realtime shipping methods**—tick the checkbox if you want the new rate area to be added to all realtime shipping methods that exist in your store.
+
+  .. image:: img/locations_general.png
+      :align: center
+      :alt: The "General" section of the rate area editing page in CS-Cart and Multi-Vendor.
 
 =========
 Countries
@@ -58,9 +65,9 @@ It is not necessary to specify the exact codes, you can use wildcards instead. H
 
 * ***** = any series of characters; for example, **12*** stands for *12345*, *128765*, *12 0AC1D9 B5*, etc.
 
-.. image:: img/zip_postal_codes.png
-    :align: center
-    :alt: The "ZIP/Postal code" section of the rate area editing page in CS-Cart and Multi-Vendor.
+  .. image:: img/zip_postal_codes.png
+      :align: center
+      :alt: The "ZIP/Postal code" section of the rate area editing page in CS-Cart and Multi-Vendor.
 
 ======
 Cities
@@ -80,9 +87,9 @@ For example:
 
 * **L?s*** stands for *Las Vegas*, *Los Angeles*, *Lisbon*, and so on.
 
-.. image:: img/locations_sities.png
-    :align: center
-    :alt: The "Cities" section of the location editing page in CS-Cart and Multi-Vendor.
+  .. image:: img/locations_sities.png
+      :align: center
+      :alt: The "Cities" section of the location editing page in CS-Cart and Multi-Vendor.
 
 =========
 Addresses
@@ -96,9 +103,9 @@ It is not necessary to specify the exact addresses, you can use wildcards instea
 
 * ***** = any series of characters; for example, *** Street** stands for *1st Street*, *Random Street*, and so on.
 
-.. image:: img/locations_addresses.png
-    :align: center
-    :alt: The "Addresses" section of the rate area editing page in CS-Cart and Multi-Vendor.
+  .. image:: img/locations_addresses.png
+      :align: center
+      :alt: The "Addresses" section of the rate area editing page in CS-Cart and Multi-Vendor.
 
 .. meta::
    :description: How to configure a rate area to differentiate shipping rates and taxes by location in CS-Cart or Multi-Vendor ecommerce CMS?

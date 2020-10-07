@@ -10,6 +10,8 @@ To set up a rate area that covers an entire particular country (for example, Aus
 
 #. Name your rate area (in our example it'd be *Australia*).
 
+#. Tick the **Add in all realtime shipping methods** checkbox if you want the new rate area to be added to all realtime shipping methods that exist in your store.
+
 #. Select *Australia* in the **Countries** section and move it to the left box with the **<** icon.
 
 #. Select all the Australian states and territories (e.g. *Australia: New South Wales* and *Australia: Australian Capital Territory*) in the **States** section on the right side and move them to the left box with the **<** icon.

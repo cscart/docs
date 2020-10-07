@@ -56,7 +56,7 @@ Create a Shipping Method for Other States
    
    .. important::
    
-       If you create a new rate area, it will be added to all of your real-time shipping methods automatically. You have to remove rate areas from a shipping method manually, if you don’t want to offer that shipping method in those areas.
+       Don't forget to untick the **Add in all realtime shipping methods** checkbox when creating a new rate area. Otherwise, the new rate area will be added to all of your real-time shipping methods automatically. You will have to remove the new rate area manually, if you don’t want to offer those shipping methods in this rate area.
        
 #. Click the **Save** button.
 

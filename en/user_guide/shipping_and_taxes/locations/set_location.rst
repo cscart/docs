@@ -8,6 +8,8 @@ How To: Set up a Rate Area
 
 #. Enter the desired name for your new rate area. Let's set up an area for Maryland, USA, and call it *USA-Maryland*.
 
+#. Tick the **Add in all realtime shipping methods** checkbox if you want the new rate area to be added to all realtime shipping methods that exist in your store.
+
 #. Select *United States* in the right box in the **Countries** section, then click the **<** icon to move it to the left box.
 
 #. Select *United States: Maryland* in the right box in the **States** section, then click the **<** icon to move it to the left box.
