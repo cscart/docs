@@ -10,43 +10,39 @@ How To: Allow Customers to Become Vendors
 Step 1. Allow Customers to Apply for a Vendor Account
 =====================================================
 
-1.1. In the Administration panel, go to **Settings → Vendors**.
+#. In the Administration panel, go to **Settings → Vendors**.
 
-1.2. Tick the **Allow users to apply for vendor account** checkbox.
+#. Tick the **Allow users to apply for vendor account** checkbox.
 
-1.3. If necessary, allow automatic creation of vendor's administrator accounts for approved vendors on the same page. That way you won't need to manually create a vendors' administrator accounts before vendors can access their admin panels.
+#. If necessary, allow automatic creation of vendor's administrator accounts for approved vendors on the same page. That way you won't need to manually create a vendors' administrator accounts before vendors can access their admin panels.
 
-1.4. Click the **Save** button.
+#. Click the **Save** button.
 
-.. note::
+   .. note::
 
-    At this point, it is a good idea to :doc:`set up a user group for vendors' administrators </user_guide/users/vendors/vendor_group>` if you want to limit what those administrators can see or do in their admin panels.
+       At this point, it is a good idea to :doc:`set up a user group for vendors' administrators </user_guide/users/vendors/vendor_group>` if you want to limit what those administrators can see or do in their admin panels.
 
-.. image:: img/settings_vendors.png
-    :align: center
-    :alt: Allowing users to apply for vendor accounts.
+   .. image:: img/settings_vendors.png
+       :align: center
+       :alt: Allowing users to apply for vendor accounts.
 
 ======================================
 Step 2. Configure the Application Form
 ======================================
 
-.. note:
+#. In the Administration panel, go to **Administration → Profile fields**.
 
-    This functionality first appeared in Multi-Vendor 4.9.1.
+#. Switch to **Vendor information** in the right sidebar.
 
-2.1. In the Administration panel, go to **Administration → Profile fields**.
+#. Now you'll be able to edit the vendor registration form: add or remove fields, make them required (or not required), change the order of fields, etc. This works the same way as :doc:`editing the profile fields available to customers and administrators </user_guide/users/customers/change_profile_fields>`.
 
-2.2. Switch to **Vendor information** in the right sidebar.
+   .. hint::
 
-2.3. Now you'll be able to edit the vendor registration form: add or remove fields, make them required (or not required), change the order of fields, etc. This works the same way as :doc:`editing the profile fields available to customers and administrators </user_guide/users/customers/change_profile_fields>`.
+       The form has a field with the **Vendor terms and conditions** type. When you edit that field, you can change the text of the agreement that vendors must accept when they register.
 
-.. hint::
-
-    The form has a field with the **Vendor terms and conditions** type. When you edit that field, you can change the text of the agreement that vendors must accept when they register.
-
-.. image:: img/vendor_profile_fields.png
-    :align: center
-    :alt: Customizing the vendor application form.
+   .. image:: img/vendor_profile_fields.png
+       :align: center
+       :alt: Customizing the vendor application form.
 
 ==============================================
 Step 3. Provide a Link to the Application Form
@@ -82,21 +78,21 @@ The :doc:`Vendor Plans </user_guide/addons/vendor_plans/index>` add-on also prov
 Step 4. Grant a New Vendor Access to Vendor's Admin Panel
 =========================================================
 
-4.1. Go to **Vendors → Vendors**.
+#. Go to **Vendors → Vendors**.
 
-4.2. Find the vendor you want to activate. The vendor accounts that haven't been activated yet have the *New* status.
+#. Find the vendor you want to activate. The vendor accounts that haven't been activated yet have the **Approve** (thumbs up) and **Disapprove** (thumbs down) buttons next to their names.
 
-4.3. Change the status of the desired account to *Active* or *Pending*.
+#. Click the **Approve** button. The status of the desired account will be automatically changed to *Active*.
 
-.. image:: img/change_vendor_status.png
-    :align: center
-    :alt: Find the vendor account you want to activate and change its status to Pending or Active.
+   .. image:: img/change_vendor_status.png
+       :align: center
+       :alt: Find the vendor account you want to activate and change its status to Pending or Active.
 
-.. hint::
+   .. hint::
 
-    Active and pending vendors can access the administration panel and manage their products. However, customers won't be able to see pending vendors and their products on the storefront. :doc:`Learn more about vendor statuses. <vendor_statuses>`
+       You can manually change a new vendor's status to *Pending*. Pending vendors can access the administration panel and manage their products. However, customers won't be able to see those vendors and their products on the storefront. :doc:`Learn more about vendor statuses. <vendor_statuses>`
 
-Once you set the status to *Active* or *Pending*, the new vendor will receive an email notification, and vendor's administrators will be able to sign in to vendor's administration panel. The content of the notification depends on what you did in step 1.3:
+Once you approved the vendor, he will receive an email notification, and vendor's administrators will be able to sign in to vendor's administration panel. The content of the notification depends on what you did in step 1.3:
 
 * If you allowed automatic creation of a vendor's administrator account, the email notification will include all the necessary information for signing in.
 

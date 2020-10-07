@@ -18,7 +18,14 @@ Marketplace administrators and vendors can easily check, which products require 
 Installation
 ============
 
-The Vendor Data Premoderation add-on isn't installed by default. You can install it :doc:`like any other add-on that comes with Multi-Vendor </user_guide/addons/1manage_addons>`.
+.. note::
+
+    The **Vendor Data Premoderation** add-on is installed by default.
+
+#. Go to **Add-ons → Manage add-ons**.
+
+#. Find the **Vendor Data Premoderation** add-on and make sure it has the **Active** status.
+
 
 ===============
 Add-on Settings
@@ -26,19 +33,23 @@ Add-on Settings
 
 The settings of the add-on let you choose what data and what vendors are affected by premoderation.
 
-* **Approval is required for newly created products**—if approval is required, then customers won't see vendor's new products until a marketplace administrator approves them.
+* **Approval of newly-created products**—if approval is required, then customers won't see vendor's new products until a marketplace administrator approves them.
 
-* **Approve product info updates**—if approval is required, then any change to vendor's existing products must be approved by a marketplace administrator. Until then, unapproved products won't be visible to customers.
+* **Approval of product info updates**—if approval is required, then any change to vendor's existing products must be approved by a marketplace administrator. Until then, unapproved products won't be visible to customers.
 
-* **Approve vendor profile updates**—if approval is required, then any change to vendor's profile will need to be approved by a marketplace administrator. Until then, vendor will get the *Pending* status and won't appear to customers on the storefront.
+* **Approval of vendor profile updates**—if approval is required, then any change to vendor's profile will need to be approved by a marketplace administrator. Until then, vendor will get the *Pending* status and won't appear to customers on the storefront.
 
 Here are the possible values of these settings:
 
-* *All vendors*—the changes made by any vendor will have to be checked before becoming visible.
+* *Required for all vendors*—the changes made by any vendor will have to be checked before becoming visible.
 
-* *Custom*—the :doc:`editing pages of vendors </user_guide/users/vendors/index>` will get a setting that determines whether or not this particular type of data by this particular vendor requires premoderation.
+* *Required for some vendors*—the :doc:`editing pages of vendors </user_guide/users/vendors/index>` will get a setting that determines whether or not this particular type of data by this particular vendor requires premoderation.
 
-* *None*—the changes made by any vendor will be visible instantly.
+* *Isn's required*—the changes made by any vendor will be visible instantly.
+
+  .. image:: img/vdp_settings.png
+      :align: center
+      :alt: Add-on settings
 
 ================
 Related Articles
