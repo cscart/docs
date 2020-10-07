@@ -37,6 +37,7 @@
     hidpi_displays_support/index
     janrain/index
     lite_checkout/index
+    attachments/index
     maps_and_geolocation/index
     paypal_payments/index
     product_variations/index
