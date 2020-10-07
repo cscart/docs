@@ -66,6 +66,10 @@ In Multi-Vendor, vendors can not confugure product reviews by default. You can a
        :align: center
        :alt: Enabling full access for vendors
 
+  .. note::
+  
+      Giving the **Full access** to vendors does not mean that vendors can edit comments and reviews, or delete them. Only a marketplace administrator is able to do that.
+
 ========================
 View and Manage Comments
 ========================
