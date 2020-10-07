@@ -15,7 +15,6 @@ Related Articles
 
 * :doc:`/user_guide/addons/attachments/file_not_uploaded`
 
-* :doc:`/user_guide/manage_products/import_export/attachments_import`
 
 
 .. toctree::
