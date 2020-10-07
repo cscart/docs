@@ -16,7 +16,7 @@ To configure a shipping method that uses DHL delivery services, follow these ste
 
    * On the **General** tab:
    
-     * **Name**—enter the sshipping method name, which a customer will see on the checkout page; for example, *DHL*.
+     * **Name**—enter the shipping method name, which a customer will see on the checkout page; for example, *DHL*.
      
      * **Rate calculation**—set to *Realtime*.
      
@@ -54,13 +54,13 @@ To configure a shipping method that uses DHL delivery services, follow these ste
            :align: center
            :alt: Specify the DHL-specific settings on the Configure tab.
 
-#. Switch to the **Shipping time and rates** tab. Specify the rate areas, where you want to offer the shipping method.
+#. Switch to the **Shipping time and rates** tab. Specify the rate areas where you want to offer the shipping method.
 
-#. Go to the **Test rate calculation** tab. Click the **Recalculate rates** button to calculate the shipping cost. The calculation is based on the weight value, that you specify on the **General** tab, and on the :doc:`default customer and company adresses </user_guide/shipping_and_taxes/address>`.
+#. Go to the **Test rate calculation** tab. Click the **Recalculate rates** button to calculate the shipping cost. The calculation is based on the weight value that you specify on the **General** tab, and on the :doc:`default customer and company adresses </user_guide/shipping_and_taxes/address>`.
        
    .. note::
    
-       If the shipping method is not configured properly, an error will occur. You can read more about what can cause an error in :doc:`this article </user_guide/shipping_and_taxes/shipping_methods/test_button_error>`.
+       If the shipping method is not configured properly, an error will occur. We have a separate article with the most common :doc:`causes of errors </user_guide/shipping_and_taxes/shipping_methods/test_button_error>`.
 
 #. Click **Save**.
 
