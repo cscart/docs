@@ -92,7 +92,7 @@ Step 4. Grant a New Vendor Access to Vendor's Admin Panel
 
        You can manually change a new vendor's status to *Pending*. Pending vendors can access the administration panel and manage their products. However, customers won't be able to see those vendors and their products on the storefront. :doc:`Learn more about vendor statuses. <vendor_statuses>`
 
-Once you approved the vendor, he will receive an email notification, and vendor's administrators will be able to sign in to vendor's administration panel. The content of the notification depends on what you did in step 1.3:
+Once you approve the vendor, he will receive an email notification, and vendor's administrators will be able to sign in to vendor's administration panel. The content of the notification depends on what you did in step 1.3:
 
 * If you allowed automatic creation of a vendor's administrator account, the email notification will include all the necessary information for signing in.
 

@@ -10,7 +10,7 @@ Some marketplace owners want to check the products of their vendors before showi
 
 * The **Products** page:
 
-  * The **Products on moderation** tab contains all the products that need to be reviewed by marketplace administrators. Vendors can see the product status here, and administrators see the *Approve* (thumbs up) and *Disapprove* (thumbs down) buttons.
+  * The **Products on moderation** tab contains all the products that need to be reviewed by marketplace administrators. Vendors can see the product status here, and administrators see the **Approve** (thumbs up) and **Disapprove** (thumbs down) buttons.
 
   * The **Disapproved products** tab contains all the products that were rejected by the marketplace administrators for some reason. These products have the *Disapproved* status. Vendors can check what products have been rejected and edit them. Once they do it, products will be on moderation again. Marketplace administrators can approve products from here by changing their status.
 
