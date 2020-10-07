@@ -11,16 +11,9 @@ The **Attachments** add-on allows you to attach files to regular products in you
 Related Articles
 ================
 
-* :doc:`/user_guide/addons/attachments/attach_files`
-
-* :doc:`/user_guide/addons/attachments/file_not_uploaded`
-
-
-
 .. toctree::
-    :hidden:
+    :maxdepth: 2
+    :titlesonly:
+    :glob:
 
-    attach_files
-    file_not_uploaded
-    
-   
+    *
