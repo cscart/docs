@@ -22,13 +22,13 @@ If most of your products need to have the same option, you can create this produ
 
 #. Click the **Apply** button in the upper right part of the page.
 
-   .. hint::
-
-       If some variants of an option aren't applicable for the product, then exclude those variants via :doc:`allowed or forbidden combinations </user_guide/manage_products/options/exceptions>`.
-
    .. image:: img/apply_to_products_02.png
        :align: center
        :alt: Choosing the options to apply
+       
+   .. hint::
+
+       If some variants of an option aren't applicable for the product, then exclude those variants via :doc:`allowed or forbidden combinations </user_guide/manage_products/options/exceptions>`.
 
 .. meta::
    :description: How to apply an option to multiple products in CS-Cart and Multi-Vendor ecommerce software?
