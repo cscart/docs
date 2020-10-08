@@ -25,7 +25,7 @@ For example, let's log in to the admin panel of the CS-Cart Online Demo (`demo.c
     :alt: The URL of the admin panel in CS-Cart Onlide Demo.
 
 
-Enter the administrator’s **email** and **password** that you used during CS-Cart installation. In CS-Cart Online Demo the email and password are already there for you, so all you have to do is click the **Sign in** button.
+Enter the administrator’s *email* and *password* that you used during CS-Cart installation. In CS-Cart Online Demo the email and password are already there for you, so all you have to do is click the **Sign in** button.
 
 .. image:: img/intro/login.png
     :align: center
@@ -41,17 +41,17 @@ The first thing you’ll notice is the **Dashboard**, where you can check sales 
     :align: center
     :alt: The Dashboard provides the statistics of your store.
 
-1. Total number of orders, sales and taxes sums in your store.
+#. Total number of orders, sales and taxes sums in your store.
 
-2. Monthly statistics of your store in the form of a diagram.
+#. Monthly statistics of your store in the form of a diagram.
 
-3. Brief statistics of the store: the number of products, customers, pages, etc. Click on the number of items to go to the page with the detailed list of these items.
+#. Brief statistics of the store: the number of products, customers, pages, etc. Click on the number of items to go to the page with the detailed list of these items.
 
-4. Recent orders made in your store. Switch between the tabs to see orders with particular statuses.
+#. Recent orders made in your store. Switch between the tabs to see orders with particular statuses.
 
-5. The number of orders with the particular status and total income received by the orders of this type.
+#. The number of orders with the particular status and total income received by the orders of this type.
 
-6. Brief variant of information, represented in the **Administration → Logs** section. Click the **Show all** link to view the full log.
+#. Brief variant of information, represented in the **Administration → Logs** section. Click the **Show all** link to view the full log.
 
 You can also choose the period of time, for which the information on the dashboard is displayed. Click on the period in the right upper corner of the page and choose the required period of time from the drop-down menu. Optionally, click **Custom Range** to define your own period and press **Apply**.
 
@@ -70,17 +70,17 @@ Let’s take a look at the top bar:
     :alt: The blue bar on the top of the CS-Cart admin panel.
 
 *  **Add-ons**—manage useful extensions that add more features to your store
+
 *  **Administration**—make backups of your store, import and export data, upgrade your store, edit your stores, payment and shipping methods, taxes and currencies
+
 *  **Settings**—configure various aspects of your store, such as weight measurement units, sitemap, default language of the Admin Panel, and e-mail settings 
+
 *  **Design**—edit your store’s menus, change the look of your store and the structure of certain types of pages.
 
 The top bar also lets you select the language of the admin panel and the currency to use on the Dashboard and in sales reports.
 
-The **cart icon** on the left side of the top bar allows you to go to the storefront. The storefront is what your customers see when they open your store. 
+The **Cart** icon on the left side of the top bar allows you to go to the storefront. The *storefront* is what your customers see when they open your store. 
 
-.. image:: img/intro/cart_icon.png
-    :align: center
-    :alt: The cart icon.
 
 ================
 Store Operations
@@ -92,16 +92,42 @@ The panel below the top bar serves to manage the operations of your store:
     :align: center
     :alt: The Store Operations panel allows you to manage your products, orders and customers.
 
-*  The **home icon** takes you to the Dashboard
-*  **Orders**—view sales reports and manage your orders and shipments
-*  **Products**—edit products and their categories, features, filters, and options
-*  **Customers**—manage the store’s administrators and registered customers, as well as user groups with different privileges
-*  **Marketing**—promote your products, offer bonuses, and view the carts that the customers didn’t take to checkout
-*  **Website**—create and publish pages, polls, forms and links, as well as to manage the `SEO <https://en.wikipedia.org/wiki/Search_engine_optimization>`_ aspects of your store.
+* The **Home icon** takes you to the Dashboard
 
-.. note::
+* **Orders**—view sales reports and manage your orders and shipments
 
-    Your Admin Panel may have additional menu subsections, depending on the add-ons you installed and activated.
+* **Products**—edit products and their categories, features, filters, and options
+
+* **Customers**—manage the store’s administrators and registered customers, as well as user groups with different privileges
+
+* **Marketing**—promote your products, offer bonuses, and view the carts that the customers didn’t take to checkout
+
+* **Website**—create and publish pages, polls, forms and links, as well as to manage the `SEO <https://en.wikipedia.org/wiki/Search_engine_optimization>`_ aspects of your store
+
+* **Vendors** (available only in Multi-Vendor)—manage vendors in your marketplace and control your accounting.
+
+  .. note::
+
+      Your Admin Panel may have additional menu subsections, depending on the add-ons you installed and activated.
+      
+      
+================
+Quick Start Menu
+================
+
+The **Quick start menu** button is a way to get acquainted with your CS-Cart store and configure it quickly. This tool is very useful for begginers, who may find it difficult to find things they need to start selling. There are the following sections in the dropdown list:
+
+* **Branding**—configure your store appearance and add the information about your company.
+
+* **Legal documents**—add and edit legal documents that you may need to work in your store. It may be a returnes and exchanges policy, or GDPR compliance.
+
+* **Vendor onboarding** (available only for Milti-Vendor)—set conditions for your vendors (for example, vendor plans and fees), send invitations to join your marketplace and so on. 
+
+* **Checkout**—configure the checkout page in your store, set taxes and create payment and shipping methods you need.
+
+  .. image:: img/intro/quick_start_menu.png
+      :align: center
+      :alt: Quick start menu button in admin panel
 
 .. meta::
    :description: Where to find CS-Cart or Multi-Vendor admin panel? How to work with CS-Cart or Multi-Vendor admin panel?
