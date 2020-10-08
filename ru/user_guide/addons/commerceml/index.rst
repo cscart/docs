@@ -54,14 +54,6 @@ CommerceML (Обмен данными)
     class365/index
 
 
-Модификация и расширение
-========================
-
-.. toctree::
-    :maxdepth: 3
-    :glob:
-
-    ../../../developer_guide/1c/index
 
 Возможные ошибки
 ================
@@ -71,3 +63,11 @@ CommerceML (Обмен данными)
     :glob:
 
     error_exchange/index
+    
+    
+.. toctree::
+    :maxdepth: 3
+    :glob:
+    :hidden:
+
+    ../../../developer_guide/1c/index
