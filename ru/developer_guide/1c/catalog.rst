@@ -339,10 +339,12 @@
 Смотрите: :ref:`1c-error`
 
 
+Подробно о XML файлах обмена
+============================
 
 .. toctree::
     :maxdepth: 3
     :glob:
-    :hidden:
+    
 
     ./catalogxml
