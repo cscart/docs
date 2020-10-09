@@ -2,6 +2,10 @@
 Format of SEO Names
 *******************
 
+.. warning::
+
+    This article may no longer be relevant or up to date. Please :doc:`return to the main page of the section </user_guide/addons/seo/index>`.
+
 To change the format of SEO names:
 
 *   In the Administration panel, go to **Add-ons → Manage add-ons**.

@@ -2,6 +2,10 @@
 How To: Use Rich Snippets
 *************************
 
+.. warning::
+
+    This article may no longer be relevant or up to date. Please :doc:`return to the main page of the section </user_guide/addons/seo/index>`.
+
 When you search for something with Google search engine, you can see few lines of text under every search result. These are **snippets**. They help users to understand what is a page about and why it is relevant to their query.
 
 .. image:: img/snippet.png

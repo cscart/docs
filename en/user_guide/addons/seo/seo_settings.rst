@@ -52,17 +52,17 @@ Configure the Add-on
      
      * ``/item.html``
 
-   * **Show additional language in the URL**—shows a language as a separate directory in the URL, for example: ``/ru/product.html``.
+   * **Show additional language in the URL**—shows a language as a separate directory in the URL, for example: ``/ru/product.html``. Default storefront language is not displayed in URL even if this setting is enabled.
    
      .. note::
      
          **For example:**
          
-         If the **Show additional language in the URL** option is enabled and the Spanish language is used, the **SEO name** will be: 
+         If the **Show additional language in the URL** option is enabled and Spanish language is used, the URL will be: 
          
          *http://demo.cs-cart.com/es/adidas-mens-climacool-mesh-polos.html* 
          
-         If the **Show additional language in the URL** option is disabled, the **SEO name** will be: 
+         If the **Show additional language in the URL** option is disabled, or if it's enabled, but Spanish language is the default storefront language, the URL will be: 
          
          *http://demo.cs-cart.com/adidas-mens-climacool-mesh-polos.html*
 

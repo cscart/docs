@@ -2,6 +2,11 @@
 SEO Add-on Functionality
 ************************
 
+.. warning::
+
+    This article may no longer be relevant or up to date. Please :doc:`return to the main page of the section </user_guide/addons/seo/index>`.
+
+
 The aim of the SEO add-on is to make the site more friendly for search engines.
 
 For example, a category page will have the URL: `http://demo.cs-cart.com/sports-and-outdoors/bikes/ <http://demo.cs-cart.com/sports-and-outdoors/bikes/>`_ instead of: `http://demo.cs-cart.com/index.php?dispatch=categories.view&category_id=204 <http://demo.cs-cart.com/index.php?dispatch=categories.view&category_id=204>`_

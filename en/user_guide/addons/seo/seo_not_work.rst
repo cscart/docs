@@ -22,7 +22,7 @@ If links do not work when the :doc:`/user_guide/addons/seo/index` add-on is enab
 
   #. Save the file.
   
-  #. Try opening your storefront (the URL should be *http://www.your_domain.com/your_cscart_directory/* where replace *your_domain.com* with the name of your domain, *your_cscart_directory* with the name of the directory where CS-Cart is installed on your server). If you see the **store closed** page, it means that commands in **.htaccess** files are supported on your server. If you do not see this page, contact your server administrator.
+  #. Open your storefront (the URL should be *http://www.your_domain.com/your_cscart_directory/*; replace *your_domain.com* with the name of your domain, then replace *your_cscart_directory* with the name of the directory on your server where CS-Cart is installed). If you see the **store closed** page, it means that commands in **.htaccess** files are supported on your server. If you do not see this page, contact your server administrator.
 
 * SEO uses the **mod_rewrite** Apache module of your server. Check whether this module is installed on the server:
 
