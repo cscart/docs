@@ -19,7 +19,7 @@ General
 
 * **Status**—the status of the rate area: *Active* or *Disabled*.
 
-* **Add in all realtime shipping methods**—tick the checkbox if you want the new rate area to be added to all realtime shipping methods that exist in your store.
+* **Add in all realtime shipping methods**—tick the checkbox if you want the new rate area to be added to all realtime shipping methods that exist in your store (available only when :doc:`creating a new rate area </user_guide/shipping_and_taxes/locations/set_location>`).
 
   .. image:: img/locations_general.png
       :align: center
