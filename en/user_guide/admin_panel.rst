@@ -119,7 +119,7 @@ The **Quick start menu** button is a way to get acquainted with your CS-Cart sto
 
 * **Branding**—configure your store appearance and add the information about your company.
 
-* **Legal documents**—add and edit legal documents that you may need to work in your store. It may be a returnes and exchanges policy, or GDPR compliance.
+* **Legal documents**—add and edit legal documents that you may need for your store to work. It may be a returns and exchanges policy, or descriptions of how you process personal data (for GDPR compliance).
 
 * **Vendor onboarding** (available only for Milti-Vendor)—set conditions for your vendors (for example, vendor plans and fees), send invitations to join your marketplace and so on. 
 
