@@ -6,7 +6,7 @@ Vendors can have one of the following statuses:
 
 * **New**—when a customer :doc:`applies for a vendor account <allow_customers_to_apply_for_vendor_account>`, the newly-created vendor gets this status. The **New** status in not displayed anywhere. Instead of it, the *Approve* (thumbs up) and *Disapprove* (thumbs down) buttons appear next to a name of newly-created vendor.
 
-  If a marketplace owner clicks the *Approve* (thumbs up) button, the vendor gets the **Active** status. But if an owner decides to disapprove a vendor, this vendor gets the **Disabled** status.
+  If a marketplace administrator approves a vendor, the vendor gets the **Active** status. But if an administrator decides to disapprove a vendor, this vendor gets the **Disabled** status.
 
 * **Active**—vendor's administrators can work in the administration panel of the store. The products of an active vendor appear in the store, :doc:`unless they require prior approval. <product_approval>`
 
