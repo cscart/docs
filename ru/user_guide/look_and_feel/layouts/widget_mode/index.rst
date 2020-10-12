@@ -33,5 +33,14 @@
     :maxdepth: 1
     :titlesonly:
     :glob:
+    
+    responsive_widget
+    wordpress
+    
 
-    *
+.. toctree::
+    :maxdepth: 1    
+    :hidden:
+    
+    
+    facebook_app

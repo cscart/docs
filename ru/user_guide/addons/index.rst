@@ -47,7 +47,6 @@
     rus_personal_data_processing/index
     rus_taxes/index
     seo/index
-    sms_notifications/index
     image_zoom/index
     social_login/index
     step_by_step_checkout/index
@@ -55,13 +54,7 @@
     tags/index
     old_admin_panel/index
     twigmo/index
-    vendor_data_premoderation/index
-    warehouses/index
     vendor_locations/index
-    vendor_plans/index
-    vendor_privileges/index
-    commissions_by_category/index
-    customer_to_vendor_communication/index
     yandex_metrika/index
     yml_export/index
 
