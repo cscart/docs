@@ -9,16 +9,18 @@ If most of your products need to have the same option, you can create this produ
    .. note::
 
        If you haven't :doc:`created a product option yet </user_guide/manage_products/options/product_options>`, you'll be able to do it here as well.
-
-#. Click the gear button in the upper right part of the page and choose **Apply to products**. This will open a new page where you'll be able to select which options to apply, and to which products.
+       
+#. Tick the checkboxes of the options you need. Click the gear button in the upper right part of the page and choose **Apply to products**.
 
    .. image:: img/apply_to_products_01.png
        :align: center
        :alt: Apply a global option to multiple products in CS-Cart
 
-#. Click the **Add products** button and choose the products to which you want to apply options.
+#. On the new page you can add the options you forgot to add on the previous page, or remove ones that you selected by mistake.
 
-#. Tick the checkboxes of the options you'd like to apply.
+#. Click the **Add products** button.
+
+#. Choose the products to which you want to apply options and click **Add products and close** or **Add products**.
 
 #. Click the **Apply** button in the upper right part of the page.
 
