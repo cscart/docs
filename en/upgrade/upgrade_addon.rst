@@ -224,6 +224,8 @@ For example::
 
 Separate your changes between migrations: each migration should implement a single logically complete action.
 
+**Don't** change the migrations names generated in the ``YYYYMMDDHHMMSS_my_new_migration.php`` format. If you write the migrations manually, name them according to `Phinx rules <https://github.com/cakephp/phinx/blob/v0.4.3/docs/migrations.rst>`_.
+
 **Don’t** use raw SQL in migrations to change table structure; use only `Phinx methods <https://github.com/cakephp/phinx/blob/v0.4.3/docs/migrations.rst#working-with-columns>`_.
 
 **Don’t** use CS-Cart core functions in the migrations: there is no guarantee that they will be available when an add-on upgrade is being installed. This will lead to the crash of the upgrade process and may result in a broken store.
