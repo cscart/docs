@@ -49,4 +49,4 @@ Configuration
 #. :doc:`Create stores and pickup points, and configure the "Pick up from store" shipping method. </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/pickup>`
 
 .. meta::
-   :description: CS-Cart and Multi-Vendor add-on to let customers select a store and pick up orders from there. It allows you to set different shipping times and rates depending on the pickup point.
+    :description: CS-Cart and Multi-Vendor add-on to let customers select a store and pick up orders from there. It allows you to set different shipping times and rates depending on the pickup point.

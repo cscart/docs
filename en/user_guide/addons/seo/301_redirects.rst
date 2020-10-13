@@ -42,3 +42,6 @@ To add a redirect manually:
    .. image:: img/301_redirects_02.png
        :align: center
        :alt: 301 redirects
+       
+.. meta::
+    :description: How to configure 301 redirects in SEO add-on for CS-Cart and Multi-Vendor ecommerce platforms?

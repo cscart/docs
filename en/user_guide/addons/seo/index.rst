@@ -21,8 +21,8 @@ Such URLs not only help search engines to index store pages, but they also impro
 	The add-on requires that your web server have a URL rewriter installed. For the Apache HTTP Server or any Apache interchangeable implementation it must be the *mod_rewrite* module. For Microsoft Internet Information Server (IIS) it must be *ISAPI_Rewrite*.
 
 
-Use Rich Snippets
------------------
+Rich Snippets
+-------------
 
 When you search for something with Google search engine, you can see few lines of text under every search result. These are **snippets**. They help users to understand what is a page about and why it is relevant to their query.
 
@@ -47,8 +47,8 @@ In CS-Cart rich snippets for product pages are generated automatically. The snip
     :alt: Google rich snippets preview
     
 
-Manage SEO Names
-----------------
+Management of SEO Names
+-----------------------
 
 You can change the format of SEO names in your store if needed. It can be done in the **SEO** add-on settings. Find out more about :doc:`how to confugure the add-on </user_guide/addons/seo/seo_settings>`. 
 
@@ -61,8 +61,8 @@ The number is added to a SEO name if the same name is already in use for another
 	If the administrator gives the SEO name *Books* to one more category CS-Cart adds *1-2* to the SEO name of this category and so on.
 	
 	
-Use Canonical URLs
-------------------
+Canonical URLs
+--------------
 
 To make you site better understood by search engines, **canonical URLs** for categories and products are generated in CS-Cart.
 
@@ -95,5 +95,6 @@ Related Articles
     numbers
 
 
-    
+.. meta::
+    :description: CS-Cart and Multi-Vendor SEO add-on to help ecommerce store owners to deal with search engine optimization
     

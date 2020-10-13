@@ -69,3 +69,6 @@ Configure the Add-on
    * **Use single URL for all languages**—URL is generated only for a default language of the storefront.
 
    * **Allow non-Latin characters in URL**—allows to generate URLs with non-Latin characters, for example: ``/ru/продукт.html``.
+   
+.. meta::
+    :description: What settings does the SEO add-on for CS-Cart and Multi-Vendor ecommerce platforms have, and how to configure it?

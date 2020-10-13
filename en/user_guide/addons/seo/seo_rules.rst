@@ -20,4 +20,5 @@ You can use the following list as an example:
     :align: center
     :alt: Edit the SEO rules under Website → SEO → SEO rules.
 
-
+.. meta::
+    :description: How to configure SEO rules in SEO add-on for CS-Cart and Multi-Vendor ecommerce platforms?

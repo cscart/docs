@@ -4,7 +4,7 @@ Format of SEO Names
 
 .. warning::
 
-    This article may no longer be relevant or up to date. Please :doc:`return to the main page of the section </user_guide/addons/seo/index>`.
+    The up-to-date information about SEO names is now located :doc:`in another article </user_guide/addons/seo/index>`.
 
 To change the format of SEO names:
 

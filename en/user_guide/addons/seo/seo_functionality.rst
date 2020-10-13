@@ -4,7 +4,7 @@ SEO Add-on Functionality
 
 .. warning::
 
-    This article may no longer be relevant or up to date. Please :doc:`return to the main page of the section </user_guide/addons/seo/index>`.
+    The up-to-date information about the SEO add-on functionality is now located :doc:`in another article </user_guide/addons/seo/index>`.
 
 
 The aim of the SEO add-on is to make the site more friendly for search engines.

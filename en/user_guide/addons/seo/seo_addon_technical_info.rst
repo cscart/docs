@@ -33,3 +33,5 @@ SEO Add-on: Technical Information
 * Generating rules for different URLs are described in the ``seo/schemas/objects.php`` schema.
 
 
+.. meta::
+    :description: Technica information about SEO add-on for CS-Cart and Multi-Vendor ecommerce platforms

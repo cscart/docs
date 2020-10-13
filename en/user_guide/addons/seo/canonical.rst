@@ -4,7 +4,7 @@ Canonical URLs
 
 .. warning::
 
-    This article may no longer be relevant or up to date. Please :doc:`return to the main page of the section </user_guide/addons/seo/index>`.
+    The up-to-date information about canonical URLs is now located :doc:`in another article </user_guide/addons/seo/index>`.
 
 To make you site better understood by search engines, **canonical URLs** for categories and products are generated in CS-Cart.
 

@@ -47,3 +47,6 @@ If links do not work when the :doc:`/user_guide/addons/seo/index` add-on is enab
   where *your_cscart_directory* is the directory path relative to the web root directory.
 
 If you checked the mentioned things and everything was okay, submit a ticket in our `Customer Help Desk <https://helpdesk.cs-cart.com/index.php?dispatch=auth.login_form>`_ and provide a temporary FTP access to your server for us to investigate the problem.
+
+.. meta::
+    :description: What to do if the in SEO add-on for CS-Cart and Multi-Vendor ecommerce platforms does not work properly?
