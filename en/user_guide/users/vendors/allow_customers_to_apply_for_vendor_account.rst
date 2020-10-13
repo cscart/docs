@@ -99,3 +99,7 @@ Once you approve the vendor, he will receive an email notification, and vendor's
 * If you didn't allow automatic creation of a vendor's administrator account, the new vendor will simply be notified that the application for a vendor account has been approved.
 
   You'll have to create a vendor's administrator account manually. When you create the account, you can choose whether or not to send an email notification with all the necessary information for signing in.
+  
+  
+.. meta::
+   :description: How to allow customers to apply for vendor's accounts in Multi-Vendor ecommerce platform?

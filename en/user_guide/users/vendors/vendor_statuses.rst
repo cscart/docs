@@ -27,3 +27,7 @@ Vendors can have one of the following statuses:
   .. image:: img/change_vendor_status.png
       :align: center
       :alt: You can change a vendor's status in Multi-Vendor administration panel at any time.
+      
+      
+.. meta::
+   :description: What statuses do vendors have in a Multi-Vendor ecommerce platform and what a marketplace owner can do to them?
