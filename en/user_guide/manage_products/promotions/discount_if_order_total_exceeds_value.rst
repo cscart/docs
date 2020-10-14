@@ -28,7 +28,7 @@ How To: Give Discount on Order if Order Subtotal Exceeds Certain Value
 
 #. Switch to the **Bonuses** tab and click the **Add bonus** button. 
 
-#. Choose any bonus from the dropdown list, and configure that bonus. For example, let's choose **Order discount** with *by fixed amount*, then set the value to ``10``. That way a customer will get a discount on order subtotal. The size of the discount will be 10 units in the primary currency of your store.
+#. Choose any bonus from the dropdown list, and configure that bonus. For example, let's choose **Order discount** with *by fixed amount*, then set the value to *10*. That way a customer will get a discount on order subtotal. The size of the discount will be 10 units in the primary currency of your store.
 
 #. Click the **Create** button.
 

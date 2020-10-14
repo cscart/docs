@@ -26,7 +26,7 @@ How To: Give Discounts to Specific User Groups
 
 #. Switch to the **Bonuses** tab and click the **Add bonus** button.
 
-#. Select the **Product discount** bonus from the dropdown list. Choose how the discount will be applied and enter the size of the discount. For example, let's enter ``5``. Here's the various ways of how the discount will work in that case:
+#. Select the **Product discount** bonus from the dropdown list. Choose how the discount will be applied and enter the size of the discount. For example, let's enter *5*. Here's the various ways of how the discount will work in that case:
 
    * **To percentage of the original price**: products will cost 5% of their original price.
 
@@ -36,9 +36,9 @@ How To: Give Discounts to Specific User Groups
 
    * **By fixed amount**: the price of products will be lower by 20 units of the primary currency of your store (price with discount = original price - 5).
 
-   .. important::
+     .. important::
 
-       Unless you specify other conditions, the discount will apply to all products in your store.
+         Unless you specify other conditions, the discount will apply to all products in your store.
 
 #. Click the **Create** button. Now the members of the selected user group will see the discount on product and category pages.
 

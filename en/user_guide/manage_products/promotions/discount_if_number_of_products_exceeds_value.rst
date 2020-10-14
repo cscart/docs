@@ -18,7 +18,7 @@ To create this promotion, follow these steps below:
 
 #. Switch to the **Conditions** tab and click the **Add condition** button.
 
-#. Select **Total products in the cart**. Then choose one of its variants from the dropdown list, and enter the number of products. For example, let's choose *greater*, then enter ``5``. A customer would have to add at least 6 items to cart, or the promotion wouldn't apply.
+#. Select **Total products in the cart**. Then choose one of its variants from the dropdown list, and enter the number of products. For example, let's choose *greater*, then enter *5*. A customer would have to add at least 6 items to cart, or the promotion wouldn't apply.
 
    .. hint::
 
@@ -30,7 +30,7 @@ To create this promotion, follow these steps below:
 
 #. Switch to the **Bonuses** tab and click the **Add bonus** button. 
 
-#. Choose any bonus from the dropdown menu and configure it. For example, let's choose **Order discount** with *to percentage of the original price*, then set the percentage to ``10``. That way customer will get a 90% discount on order subtotal (new subtotal = 10% of the original subtotal).
+#. Choose any bonus from the dropdown menu and configure it. For example, let's choose **Order discount** with *to percentage of the original price*, then set the percentage to *10*. That way customer will get a 90% discount on order subtotal (new subtotal = 10% of the original subtotal).
 
    .. important::
 

@@ -20,7 +20,7 @@ CS-Cart allows you to create promotions that apply only when a customer buys spe
 
 #. Repeat steps from 5 to 7 for another product that the customer must also add to cart.
 
-#. Make sure that the phrase at the top of the condition list is ``If all of these conditions are true``.
+#. Make sure that the phrase at the top of the condition list is *If all of these conditions are true*.
 
    .. image:: img/two_products.png
        :align: center
@@ -28,7 +28,7 @@ CS-Cart allows you to create promotions that apply only when a customer buys spe
 
 #. Switch to the **Bonuses** tab and click the **Add bonus** button. 
 
-#. Choose any bonus from the dropdown list, and configure that bonus. For example, let's choose **Order discount** with *to fixed amount*, then set the value to ``20``. That way order subtotal will be set to 20 units in the primary currency of your store, unless the subtotal is already lower than 20.
+#. Choose any bonus from the dropdown list, and configure that bonus. For example, let's choose **Order discount** with *to fixed amount*, then set the value to *20*. That way order subtotal will be set to 20 units in the primary currency of your store, unless the subtotal is already lower than 20.
 
    .. note::
 

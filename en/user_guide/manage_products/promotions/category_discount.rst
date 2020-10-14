@@ -18,13 +18,13 @@ How To: Create Discount on Products from Specific Categories
 
    * If you choose *not in*, all products will have a discount, except for the products in any of the added categories.
 
-   .. image:: img/categories_discount.png
-       :align: center
-       :alt: The "Conditions" tab of the promotion in CS-Cart.
+     .. image:: img/categories_discount.png
+         :align: center
+         :alt: The "Conditions" tab of the promotion in CS-Cart.
 
 #. Switch to the **Bonuses** tab and click the **Add bonus** button.
 
-#. Select the **Product discount** bonus from the dropdown list. Choose how the discount will be applied and enter the size of the discount. For example, let's enter ``20``. Here's the various ways of how the discount will work in that case:
+#. Select the **Product discount** bonus from the dropdown list. Choose how the discount will be applied and enter the size of the discount. For example, let's enter *20*. Here's the various ways of how the discount will work in that case:
 
    * **To percentage of the original price**: the eligible products will cost 20% of their original price.
 

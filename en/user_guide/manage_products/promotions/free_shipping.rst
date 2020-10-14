@@ -4,7 +4,7 @@ How To: Offer Free Shipping for Buying a Certain Product
 
 You can offer free shipping when a customer has a certain product in cart. This is done via a :doc:`cart promotion <index>`. 
 
-.. warning::
+.. important::
 
     If the free shipping promotion applies to an order, customers won't be charged for shipping any products in that order. Additional shipping charges that you specify for individual products won't apply either.
 
@@ -15,8 +15,8 @@ To create this promotion, follow the steps below:
 #. Click the **+** button in the top right corner and choose **Add cart promotion**.
 
    .. image:: img/add_cart_promotion.png
-      :align: center
-      :alt: Open the list of promotions and use the plus button to add a cart promotion.
+       :align: center
+       :alt: Open the list of promotions and use the plus button to add a cart promotion.
 
 #. Name your promotion and make sure that the **Status** is set to *Active*.
 
@@ -38,7 +38,7 @@ To create this promotion, follow the steps below:
 
    .. hint::
 
-       If you want the promotion to apply only when a customer buys several different products, add those products as separate conditions. Make sure that the phrase above the list of conditions says ``If all of these conditions are true``.
+       If you want the promotion to apply only when a customer buys several different products, add those products as separate conditions. Make sure that the phrase above the list of conditions says *If all of these conditions are true*.
 
    .. image:: img/select_product_free_shipping.png
        :align: center
@@ -50,13 +50,13 @@ To create this promotion, follow the steps below:
 
    .. hint::
 
-      If you'd like to give free shipping for multiple shipping methods, add those methods as separate bonuses.
+       If you'd like to give free shipping for multiple shipping methods, add those methods as separate bonuses.
 
    .. image:: img/promotion_bonus.png
        :align: center
        :alt: Select the shipping method you want to make free.
 
-#. Click **Create and close**.
+#. Click **Create**.
 
    Congratulations! Now when customers add the specified product to cart and select the right shipping method, they won't be charged for shipping.
 

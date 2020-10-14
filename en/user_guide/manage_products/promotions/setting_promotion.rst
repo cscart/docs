@@ -10,9 +10,9 @@ How To: Set Up a Promotion
 
    * **Cart promotions** include discounts on products and orders; bonus coupons; free shipping; free products; and so on. Cart promotions are displayed on the cart and checkout page.
 
-   .. image:: img/add_promotion.png
-       :align: center
-       :alt: The "Marketing → Promotions" page allows you to create cart and catalog promotions.
+     .. image:: img/add_promotion.png
+         :align: center
+         :alt: The "Marketing → Promotions" page allows you to create cart and catalog promotions.
 
 #. The promotion creation form will open. Fill in the information on the **General** tab:
 
@@ -21,6 +21,8 @@ How To: Set Up a Promotion
    * **Detailed description**—the full description of the promotion. It appears on a special page that lists all promotions in your store (``index.php?dispatch=promotions.list``). 
 
    * **Short description**—the description of the promotion as it appears on the storefront when a customer views an order (**My account → Orders**).
+   
+   * **Image**—add an image for your promotion.
 
    * **Use available period**—if you tick this checkbox, the promotion will only be available for a period of time that you specify:
 
@@ -28,7 +30,7 @@ How To: Set Up a Promotion
 
      * **Available till**—the date when the promotion ends.
 
-   * **Priority**—the order in which the promotions are applied. For example, ``1`` is a higher priority than ``10``; ``0`` is the highest priority. Promotions with higher priority will be applied first.
+   * **Priority**—the order in which the promotions are applied. For example, *1* is a higher priority than *10*; *0* is the highest priority. Promotions with higher priority will be applied first.
 
      .. hint::
 
@@ -42,9 +44,9 @@ How To: Set Up a Promotion
 
    * **Status**—the status of the promotion (*Active*, *Hidden*, or *Disabled*).
 
-   .. image:: img/promotions_01.png
-       :align: center
-       :alt: The General tab of the promotion creation form in CS-Cart.
+     .. image:: img/promotions_01.png
+         :align: center
+         :alt: The General tab of the promotion creation form in CS-Cart.
 
 #. Switch to the **Conditions** tab. This tab determines in what cases the promotion applies.
 
@@ -52,7 +54,7 @@ How To: Set Up a Promotion
 
    .. note::
 
-       You can create multiple conditions. Please note the phrase at the top of the condition list: ``If all/any of these conditions are true/false``. By choosing between *all* and *any*, and *true* and *false*, you determine when the promotion applies.
+       You can create multiple conditions. Please note the phrase at the top of the condition list: *If all/any of these conditions are true/false*. By choosing between *all* and *any*, and *true* and *false*, you determine when the promotion applies.
 
    .. image:: img/promotions_02.png
        :align: center
@@ -62,8 +64,12 @@ How To: Set Up a Promotion
 
 #. Click the **Add bonus** button and select a bonus from the dropdown list. Most bonuses require you to enter additional information.
 
-#. Click the **Create** button.
-
    .. image:: img/promotions_03.png
        :align: center
        :alt: The Bonuses tab determines what happens when the promotion applies.
+
+#. Switch to the **Storefronts** tab (available only in Multi-Vendor) and add the storefronts you want the promotion to work on.
+
+#. Click the **Create** button.
+
+
