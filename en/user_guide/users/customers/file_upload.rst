@@ -27,3 +27,7 @@ To do this:
    .. image:: img/docs_profile_fields.png
        :align: center
        :alt: Profile field for uploading documents
+
+
+.. meta::
+    :description: How does store owner allow customers to upload documents in Cs-Cart or Multi-Vendor?
