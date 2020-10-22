@@ -95,7 +95,7 @@ Debtors Are Easier to Find
 
         *   -   Now
 
-            -   In the add-on settings, marketplace owner can decide what restrictions he wants to apply to debtors: to block their admin panels, to hide their products from storefronts, or both.
+            -   The **Suspended** status was added. When a vendor becomes a debtor, his status in the list of vendors changes automatically. The marketplace owner can also set the status manually to apply restrictions to any vendor.
 
         *   -   What's better about it
 
@@ -103,7 +103,7 @@ Debtors Are Easier to Find
   
 ------
 
-Inactive Vendors are Easier to Deal With
+Inactive Vendors Are Easier to Deal With
 ++++++++++++++++++++++++++++++++++++++++
 
 .. list-table::
@@ -130,7 +130,7 @@ It's easy enough to move to the new add-on from the old one: upgrade your Multi-
 What Happens to the Old Add-on Settings?
 ++++++++++++++++++++++++++++++++++++++++
 
-* Old add-on settings (maximum debt and grace period) will be moved to the new one.
+* Old add-on settings (maximum debt and grace period) will be moved to the settings of the new one.
 
 * After the upgrade, the new add-on will have the same settings as the old one. Admin panels of debtors will remain blocked, but their products will not be hidden from the storefront. If you want to hide them, just change the add-on settings.
 
