@@ -22,7 +22,7 @@ How To: Set Up a Promotion
 
    * **Short description**—the description of the promotion as it appears on the storefront when a customer views an order (**My account → Orders**).
    
-   * **Image**—add an image for your promotion.
+   * **Image**—add an image for your promotion. It appears next to the detailed descriptions on a special page that lists all promotions in your store.
 
    * **Use available period**—if you tick this checkbox, the promotion will only be available for a period of time that you specify:
 

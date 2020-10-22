@@ -4,6 +4,12 @@ Promotions
 
 **Promotions** allow you to offer various bonuses to your customers (such as free products or discounts), if certain conditions are met.
 
+A list of all promotions in your store appears on a special page (``index.php?dispatch=promotions.list``).
+
+.. image::img/dispatch_promotions_list.png
+    :align: center
+    :alt: List of promotions
+
 .. toctree::
     :maxdepth: 1
     :glob:
