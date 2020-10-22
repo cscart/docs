@@ -8,6 +8,8 @@ How To: Configure Vendor-to-Admin Payments Add-on
 
 Install the Vendor-to-Admin Payments add-on :doc:`just like any other add-on </user_guide/addons/1manage_addons>`. After the installation, click on the add-on name to open its settings. Here you can do the following:
 
+* Decide if you want to set the same conditions for all your vendors, or set individual values for different vendor plans.
+
 * Decide what restrictions to apply to suspended vendors: hide their products and/or block their admin panels.
 
 * Decide whether to completely disable accounts of those vendors who don't pay their debts for a long time (and when to disable them).

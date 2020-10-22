@@ -26,7 +26,7 @@ Different Conditions for Each Vendor Plan
 
         *   -   Now
 
-            -   The maximum debt is set individually in the settings of each vendor plan.
+            -   The maximum debt is set not only globally, but also individually — in the settings of each :doc:`vendor plan <user_guide/addons/vendor_plans/>`.
 
         *   -   What's better about it
 
@@ -130,7 +130,7 @@ It's easy enough to move to the new add-on from the old one: upgrade your Multi-
 What Happens to the Old Add-on Settings?
 ++++++++++++++++++++++++++++++++++++++++
 
-* Old add-on settings (maximum debt and grace period) will be moved to :doc:`vendor_plans </user_guide/addons/vendor_plans>`. This allows you to set different conditions for some plans (and vendors). 
+* Old add-on settings (maximum debt and grace period) will be moved to the new one.
 
 * After the upgrade, the new add-on will have the same settings as the old one. Admin panels of debtors will remain blocked, but their products will not be hidden from the storefront. If you want to hide them, just change the add-on settings.
 
@@ -150,4 +150,4 @@ If you don’t, and you want your new add-on to work like the old one, just set 
 What Do I Need for The New Add-on to Work?
 ++++++++++++++++++++++++++++++++++++++++++
 
-The new Vendor-to-Admin Payments add-on requires the Vendor Plans add-on to work with. If you turned it off or did not install it, the Vendor Plans add-on will install automatically after the Multi-Vendor upgrade. After that, the add-on will create a single fee-free plan for all the vendors. You can set the minimum allowed balance and grace period in the plan settings. These values will be the same for all your vendors. This way the new Vendor-to-Admin Payments add-on will repeat the old add-on behavior.
+The new Vendor-to-Admin Payments add-on requires the Vendor Plans add-on to work with. If you turned it off or did not install it, the Vendor Plans add-on will install automatically after the Multi-Vendor upgrade. You can set the minimum allowed balance and grace period in the plan settings. These values will be the same for all your vendors. This way the new Vendor-to-Admin Payments add-on will repeat the old add-on behavior.
