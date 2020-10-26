@@ -24,13 +24,13 @@ The Vendor-to-Admin Payments add-on allows you to work with debtors automaticall
 Set Different Conditions for Each Vendor Plan
 +++++++++++++++++++++++++++++++++++++++++++++
 
-In addition to global setting (in the add-on settings) when a marketplace owner sets the same conditions for all debtors, he can set individual conditions for different sellers.
+In addition to global setting (in the add-on settings) when a marketplace owner sets the same conditions for all vendors, he can also set individual conditions for different vendors.
 
 .. image:: img/global_settings.png
     :align: center
     :alt: Configure minimum allowed balance and grace period in vendor plans settings
 
-In the :doc:`vendor plan </user_guide/addons/vendor_plans/index>` settings, the marketplace owner can set the minimum allowed balance for each vendor. It can be positive, negative, or zero. When the vendor's balance goes below this value, the grace period starts. It is a period of time for the vendor to pay off his debt before various restrictions apply. If the vendor does not pay off his debt during the grace period, he gets suspended.
+In the :doc:`vendor plan </user_guide/addons/vendor_plans/index>` settings, the marketplace owner can set the minimum allowed balance for each vendor and the grace period (period of time to refill the balance). The value of minimum allowed balance can be positive, negative, or zero. When the vendor's balance goes below this value, the grace period starts. It is a period of time for the vendor to pay off his debt before various restrictions apply. If the vendor does not pay off his debt during the grace period, he gets suspended.
 
 .. image:: img/plan_settings.png
     :align: center
