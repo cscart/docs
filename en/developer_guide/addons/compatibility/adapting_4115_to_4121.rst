@@ -107,7 +107,7 @@ Third-party add-ons can no longer create root elements in the admin panel menu. 
 Changes in Add-on Scheme
 ------------------------ 
 
-A new ``supplier_page`` tag was added to the add-on scheme file. Use it to specify the path to the developer page. The developer page must be written in the following fromat: ``controller.mode``.
+A new ``supplier_page`` tag was added to the add-on scheme file. Use it to specify the path to the developer page. The developer page must be written in the following format: ``controller.mode``.
 
 
 ============
@@ -551,7 +551,7 @@ New functions
 
        fn_vendor_privileges_check_permission_order_management()
        
-#. Save the date of user profile fields::
+#. Save the data of user profile fields::
 
        fn_store_user_profile_fields(array $profile_data, $object_id, $object_type)
        
