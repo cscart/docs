@@ -1,0 +1,328 @@
+************************
+CS-Cart 4.12.1 Changelog
+************************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: A developer's page can now be added to the add-on scheme.
+
+[+] Add-ons: Attachments: Export/import: The ability to export and import attachments was added.
+
+[+] Add-ons: Google reCAPTCHA: The support of invisible Google reCAPTCHA v3 was added.
+
+[+] Add-ons: Product variations: A setting that allows you to show all the possible feature variants on the product page and in the list of products was added.
+
+[+] Add-ons: Comments and Reviews: Ability to configure notification receivers via the "Administration > Notifications" menu added.
+
+[+] Add-ons: RMA: Ability to configure return requests notifications via the "Administration > Notifications" menu added.
+
+[+] Multi-Vendor: Add-ons: Vendor plans: The ability to create a vendor plan quickly on the vendor editing page was added.
+
+[+] Multi-Vendor: Bottom toolbar now shows up for signed-in vendors, to help them find their admin panel easier.
+
+[+] Multi-Vendor Plus: Add-ons: Vendor rating: A new add-on to rate vendors by certain criteria and sort them by rating was added.
+
+[+] Core: The Twig library was updated to version 1.42.5.
+
+[+] Design: Add-ons: All the menu items added by an add-on now also appear in the add-on's gear menu on the list of add-ons.
+
+[+] Design: Add-ons: The list with add-on developers was added to "Add-ons" top menu and to the sidebar on the list of add-ons.
+
+[+] Design: Layouts: You can now manage the layouts of the homepage, product page and category page from the storefront.
+
+[+] Favicon: Support of Retina displays for favicon was added.
+
+[+] Multi-Vendor: Add-ons: Blog: A new block that shows only the vendor's posts was added.
+
+[+] Multi-Vendor: Add-ons: Message center: Vendor-to-admin communication was added.
+
+[+] Multi-Vendor: Add-ons: PayPal Commerce Platform: Ability to specify partner integration code (BN code) added.
+
+[+] Multi-Vendor: Add-ons: The "Vendor debt payout" add-on was replaced with "Vendor-to-admin payments" addon. The new add-on gives you more control over whom to consider a debtor, and what to do with debtors.
+
+[+] Multi-Vendor: Advanced products import: The abillity to create common presets for product import was added.
+
+[+] Multi-Vendor: Comments & reviews: The ability for vendor to watch all comments and reviews from one page was added.
+
+[+] Multi-Vendor: Logos: Vendors: You can now set the default logo that new vendors will get.
+
+[+] Multi-Vendor: Product features: You can now allow vendors to create their own product features.
+
+[+] Multi-Vendor: Settings: Vendors: The ability to choose between 1-step or 2-step vendor approval flow was added.
+
+[+] Multi-Vendor: Taxes: A setting to collect taxes from vendors was added. It is necessary for countries that require marketplaces to retain the taxes from vendors.
+
+[+] Multi-Vendor Plus: Add-ons: RMA: You can now allow vendors to manage return requests.
+
+[+] Multi-Vendor Plus: Add-ons: Vendor privileges: You can now allow vendors to create and edit orders.
+
+[+] Multi-Vendor Ultimate: Ability to specify different settings  for different storefronts added.
+
+[+] Multi-Vendor Ultimate: Add-ons: Ability to specify different add-on settings for different storefronts added.
+
+[+] Multi-Vendor Ultimate: Add-ons: Social login: Now you can decide which storefronts support sign-in with which social networks.
+
+[+] Notifications: Ability to choose recipients for different types of notifications was added.
+
+[+] Privileges: You can now configure what actions an administrator can perform on an order.
+
+[+] Product features: A new feature field called "Internal name" were added to the Administration panel. It helps to work with different features that need to have the same name on the storefront.
+
+[+] Product options: Ability to select what options to apply to products on the option list was added.
+
+[+] Products: Features: Quick feature creation from the product page was added.
+
+[+] Products: Options: Quick option creation from the product page was added.
+
+[+] Profile fields: A new profile type was added to allow users to upload files (for example, documents).
+
+[+] Promotions: A context menu was added to the list of promotions in the admin panel.
+
+[+] Rate areas: A сontext menu was added to еthe list of rat areas.
+
+[+] Settings: Checkout: The ability to show unavaliable shipping methods at checkout, even if they don't have rates to specified location, was added.
+
+[+] Settings: Thumbnails: Now you can change the size of the icons of product variant selection.
+
+[+] Shipping and taxes: States: A сontext menu was added to the list of states in the admin panel.
+
+[+] Shipping methods: Checkout: Shipping methods are now highlighted at checkout when something changes after a change of address.
+
+[+] Shipping methods: Now you can disable a real-time shipping method for some rate areas.
+
+[+] Themes: Logos: A section for editing logos section was added to the "Design > Themes" page.
+
+[+] Users: A context menu for working with selected users was added.
+
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: HiDPI displays support: The code for outdated image restoration from older versions was removed.
+
+[*] Add-ons: Image zoom: Settings were simplified.
+
+[*] Add-ons: Product variations: Product variation creation was improved.
+
+[*] Add-ons: Product variations: The default variation now changes not only when it runs out of stock, but also when it is hidden.
+
+[*] Add-ons: SEO: The code of the default storefront language will no longer be present in URL when the "Show language in URL" setting is enabled.
+
+[*] Add-ons: Stripe payments: Cyprus was added to list of supported countries.
+
+[*] Admin panel: Design: Autocompletion is now disabled for all the fields in the admin panel.
+
+[*] Admin panel: Notifications: The interface for managing notification was improved.
+
+[*] CS-Cart: List of languages and currencies available on the storefront added to the storefront editing page.
+
+[*] Checkout: City selection was improved.
+
+[*] Core: Controller xml_feeds was removed.
+
+[*] Core: Functions from the fn.catalog.php file are now split into multiple files, depending on their purpose.
+
+[*] Core: Libs: Js: Moment.js library was updated to version 2.27.0.
+
+[*] Design: Admin panel: Tooltips: Most tooltips now appear below what they describe by default. That way you don't need to hover over the question mark to see the tooltip.
+
+[*] Design: Add-ons now can't add new root elements to the top menus of the admin panel. This is handled by a tweak in the configuration file.
+
+[*] Design: Mobile: The storefront selection on mobile devices was improved.
+
+[*] Design: The size of checkboxes was increased.
+
+[*] Features: The "Features" tab on the product editing page was updated.
+
+[*] Filters: Perofrmance of filtering on the storefront improved.
+
+[*] Filters: It is now more convenient to select multiple product filters on the storefront.
+
+[*] Multi-Vendor: Add-ons: Vendor data premoderation: The vendor moderation interface was updated.
+
+[*] Multi-Vendor: Add-ons: Vendor plans: The list of vendor plans on the storefront now redirects to vendor registration page if no vendor plans are available.
+
+[*] Multi-Vendor: Add-ons: Vendor plans: Adding and removing categories from a vendor plan was improved.
+
+[*] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Bulk editing of common products for administrators was added.
+
+[*] Order statuses: New setting "Consider order paid" was added for order statuses. It determines what orders will appear in the statistics as paid orders.
+
+[*] Pagination: A direct link to a storefront page with filtering results that didn't contain any products (for example, link to page 5 when filtering returned only 3 pages with products) now returns "Page not found".
+
+[*] Products: You can now select the desired category from the tree OR type its name in the search sidebar.
+
+[*] Products: Option combinations were removed; product variations now fulfil their purpose.
+
+[*] Products: Some product settings were moved from the product editing page to "Settings > General", "Settings > Appearance", and "Settings > Checkout"; they are now specified for all products. It's up to you whether to make them editable for individual products.
+
+[*] Add-ons: Reward points: The earned points and price in points on the product level can now be configured to inherit any value from the add-on settings.
+
+[*] Promotions: Images for promotions were added.
+
+[*] Settings: Quick start menu: Setting "Show menu on mouse over" was removed.  Now the Quick Start menu opens by default when you hover over.
+
+[*] Shipping methods: The interface for specifying shipping rates and rate areas was updated.
+
+[*] Promotions: The "Stop other rules" setting of the promotion now cancels not only the promotions that have a lower priority.
+
+
+========
+Bugfixes
+========
+
+[!] Add-ons: Comments and reviews: The frame that highlighted the selected checkbox was cropped on some pages in the admin panel. Fixed.
+
+[!] Add-ons: Comments and reviews: Error occurred if testimonial time format was incorrect. Fixed.
+
+[!] Add-ons: Comments and reviews: Google ReCAPTCHA: If ReCAPTCHA was in the comments and reviews dialog window, then a scrolling bar appeared, and page wasn't scrolling. Fixed.
+
+[!] Add-ons: E-mail marketing: The checkbox for subscribing to newsletter appeared only after a shipping or payment method was selected. If only one payment and shipping method was offered, the checkbox didn't appear. Fixed.
+
+[!] Add-ons: Email marketing: An SQL error occurred when the add-on was installed again after deletion. Fixed.
+
+[!] Add-ons: Mobile app: A PHP error occured when malformed JSON file was uploaded as a translation file. Fixed.
+
+[!] Add-ons: Newsletters: A fatal error could occur when a newsletter was sent, if it was sent to the mailing list and to a specific user at the same time. Fixed.
+
+[!] Add-ons: Payment dependencies: When the "Payment dependencies" add-on was enabled, the payment methods shared for storefronts were not available on the storefronts to which they were shared. Fixed.
+
+[!] Add-ons: Product variations: Bulk editing: Images: Replacing the main image of one variation in bulk editing mode replaced the image for all variations. Fixed.
+
+[!] Add-ons: Product variations: Child variations of a product could appear in search even when the default variation was hidden. Fixed.
+
+[!] Add-ons: Product variations: Design: If a product had a long name, the list of variations in the admin panel went off screen. Fixed.
+
+[!] Add-ons: RMA: Warehouses [Beta]: A PHP Notice could occur during the processing of a return request, if the product in the request was split by warehouses. Fixed.
+
+[!] Add-ons: SEO: 301 redirects: The name of the selected product was displayed incorrectly. Fixed.
+
+[!] Add-ons: SEO: Changing page title and meta description did not affect the preview of Google rich snippets. Fixed.
+
+[!] Add-ons: SEO: Notification after the change of SEO name was not correct in some cases. Fixed.
+
+[!] Add-ons: Stores and pickup points: The search for pickup points did not work if the "Maps and Geolocation" add-on was disabled. Fixed.
+
+[!] Add-ons: Translations for unmanaged add-ons (the add-ons that are hidden in the admin panel) were not installed. Fixed.
+
+[!] Add-ons: Warehouses [Beta]: Saving warehouse settings could take a long time due to duplicate database queries. Fixed.
+
+[!] Add-ons: Watermarks: Some images in the admin panel were not displayed. Fixed.
+
+[!] Admin panel: Currencies: Changing the currency code erased its name in all languages. Fixed.
+
+[!] Admin panel: On mobile devices, changing the UI language didn't change the content language. Fixed.
+
+[!] Admin panel: Search: On mobile devices, search didn't work on the Dashboard. Fixed.
+
+[!] Block manager: Lite checkout: The selected wrapper 'lite checkout' was not saving in the grid's properties. Fixed.
+
+[!] Cache: Menus: The cache for menu blocks was uncontrolled, which led to an increase in cache files. Fixed.
+
+[!] Categories: Subcategories couldn't be selected on the list of categories in the admin panel. Fixed.
+
+[!] Checkout: If you used whitespace characters for the required fields, then you could place an order. Fixed. 
+
+[!] Checkout: Shipping: Profile selection at the checkout page didn't work; wrong state could be selected in the customer profile in the order. Fixed.
+
+[!] Checkout: When the page was loading, if the required fields were not filled in, then it was possible to place an order. Fixed.
+
+[!] Core: Images: A wrong placeholder was used in database query; this could result in slower performance in some cases. Fixed.
+
+[!] Core: Installer: PHP Notice errors occurred on PHP 7.4 during the installation. Fixed.
+
+[!] Core: JS: Events in the old style data-ca-event="ce.eventname" did not work. Fixed.
+
+[!] Core: Notifications: The field below the notification was not clickable. Fixed.
+
+[!] Core: Phone: An unavailable country code could be entered in the phone field. Fixed.
+
+[!] Design: Backend: The storefront switcher was not displayed on small screens. Fixed.
+
+[!] Design: Pages with product and category details contained W3C validation errors. Fixed.
+
+[!] Design: Popups: Some popups had the "undefined" title. Fixed.
+
+[!] Design: There were some minor design issues in the customer are on mobile devices. Fixed.
+
+[!] E-mail notifications: Logos: The link from the logo did not lead to the storefront. Fixed.
+
+[!] Export/Import: Product and  image URLs in the exported file could be wrong when the store had multiple storefronts. Fixed.
+
+[!] Export/Import: Products: Export of images, quantity discounts, and option exceptions didn't take into account what products were selected for export. Fixed.
+
+[!] Files: Default position of the file manager window was incorrect. Fixed.
+
+[!] Files: File manager localization files were missing. Fixed.
+
+[!] Files: Image preview dialog was displayed incorrectly. Fixed.
+
+[!] Multi-Vendor: Add-ons: Catalog mode: The "Buy now" link was opened in the same tab, making it harder for the customer to return to the marketplace. Fixed.
+
+[!] Multi-Vendor: Add-ons: Product variations: Common products for vendors: Vendor product was not displayed in the list of products if the default variation had zero quantity, but another variation was in stock. Fixed.
+
+[!] Multi-Vendor: Add-ons: Reward Points: Promotions: It was possible to get reward points for promotions multiple times from one order. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor data premoderation: Disapproved products couldn't be sent to moderation when approval of product info updates wasn't required. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor debt payout: Products: A PHP Notice could occur after a product was created or updated. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor locations: Vendor couldn't remove his location in the settings. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor plans: Vendor debt payout: Debt amount calculation was incorrect, if vendor has not paid for the plan, but had positive balance. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor data premoderation: Changes in the custom profile fields didn't affect whether or not the vendor would be sent to moderation again. Fixed.
+
+[!] Multi-Vendor: The "Admin panel" button in the "My account" section on the storefront could be hidden for vendors. Fixed.
+
+[!] Multi-Vendor: Categories: Vendors: When there were too many categories, the category list in the admin panel showed the categories as collapsed; but they couldn't be expanded to see their child categories. Fixed.
+
+[!] Multi-Vendor: Checkout: Promotions: Catalog promotion could be applied incorrectly when the order included products from two vendors. Fixed.
+
+[!] Multi-Vendor: Design: Blocks: Vendors: Value of the "Show products count" parameter of the "Vendors" block was ignored when companies were fetched. It could have a negative effect on performance. Fixed.
+
+[!] Multi-Vendor: Vendors: E-mail: When a customer applied for a vendor account, and this new vendor's status was set to Active, the vendor did not receive an email notification for this event. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: New common product was not created during product import. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: The data of a product offer was not updated together with the common product when the offer was out of stock. Fixed.
+
+[!] Multi-Vendor Ultimate: Add-ons: SEO: Product variations: Common products for Vendors: When the administrator selected a different storefront in the admin panel, in some cases a PHP Notice error could occur. Fixed.
+
+[!] Notification Center: An attempt to change the status of an on-site notification led to an SQL error. Fixed.
+
+[!] Orders: Abandoned / Live carts: Customer info could be empty, if customer was registered in the store but didn't sign in. Fixed.
+
+[!] Orders: Abandoned / Live carts: Link to user details page was shown for unregistered user on Abandoned / Live carts page. Fixed.
+
+[!] Payment methods: A secret key could be filled with wrong data by autocompletion. Fixed.
+
+[!] Performance: JS: The Notification Center could significantly delay loading the admin panel page when internet connection was slow. Fixed.
+
+[!] Products: Categories created during bulk product editing weren't saved. Fixed.
+
+[!] Products: Categories: Changing product categories via the context menu did not work if the number of products displayed on the page was changed. Fixed.
+
+[!] Products: Features: New variants with filter type "Color" did not preserve the default color. Fixed.
+
+[!] Product: Features: Renaming a feature variant into a variant that already existed caused the deletion of variant data. Fixed.
+
+[!] Products: Filters: If the selected filter option had no products, then the filter was unavailable. Fixed.
+
+[!] Products: If a product had too many images (two or more rows), then the image selection menu on the product editing page in the admin panel was cut off. Fixed.
+
+[!] REST API: Stores: Orders: API request to create a new order made by main admin returned 403. Fixed.
+
+[!] Shipping methods: When the shipping address was changed, the payment method data was removed. Fixed.
+
+[!] Thumbnails: The thumbnail loading animation was not centered when the internet connection was slow. Fixed.
+
+[!] Upgrade Center: Some upgrades did not show notifications about changes when the upgrade was installed again after the previous version had been restored from backup. Fixed.
+
+[!] WYSIWYG: An error occurred when an image was added to product description with the TinyMCE editor. Fixed.
+
+.. meta::
+   :description: What changed in version 4.12.1 of CS-Cart and Multi-Vendor ecommerce platforms?
