@@ -83,21 +83,21 @@
       
 #. Настроить отображение редактора получателей через схему ``notifications/groups``, если вы добавляли группу событий уведомлений.
 
-Во избежание путаницы, вендора-получателя внутренних нотификаций стоит указывать через новое добавленное свойство ``to_company_id``. Свойство ``company_id`` отвечает за вендора-отправителя в рамках почтовых нотификаций.
+Во избежание путаницы, продавца-получателя внутренних уведомлений стоит указывать через новое добавленное свойство ``to_company_id``. Свойство ``company_id`` отвечает за продавца-отправителя в рамках почтовых уведомлений.
 
 
 -----------------------------------------
 Изменения в тарифных планах для продавцов
 -----------------------------------------
 
-Теперь ``commision_amount`` не отображает прибыль маркетплейса. commision_amount может включать в себя комиссию и налог (если включена настройка **Собирать налоги с продавцов**). Прибыль маркетплейса отображает ``marketplace_profit``.
+Теперь ``commision_amount`` не отображает прибыль маркетплейса; ``commision_amount`` может включать в себя комиссию и налог (если включена настройка **Собирать налоги с продавцов**). Прибыль маркетплейса отображает ``marketplace_profit``.
 
 
 --------------------------------------
 Изменения в меню панели администратора
 --------------------------------------
 
-Теперь сторонние модули не могут создавать корневые элементы в меню панели администратора. В рамках текущего релиза, для поддержания обратной совместимости добавлена настройка ``validate_menu``, которая позволит отключить подобную фильтрацию.
+Теперь сторонние модули не могут создавать корневые элементы в меню панели администратора. В рамках текущего релиза для поддержания обратной совместимости добавлена настройка ``validate_menu``, которая позволит отключить подобную фильтрацию.
 
 
 ------------------------
@@ -125,7 +125,7 @@
 -----------------
 
 ~~~~~~~~~~~~~~~~~~~~~~~~
-Изменения в нотификациях
+Изменения в уведомлениях
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. ::
@@ -135,30 +135,30 @@
        // Стало:
        \Tygh\Enum\ReceiverSearchMethods.
         
-#. Публичное свойство ``\Tygh\Notifications\Transports\Internal\InternalMessageSchema::$recipient_search_method`` удалено.
+#. Удалено публичное свойство ``\Tygh\Notifications\Transports\Internal\InternalMessageSchema::$recipient_search_method``.
 
-#. Публичное свойство ``\Tygh\Notifications\Transports\Internal\InternalMessageSchema::$recipient_search_criteria`` удалено.
+#. Удалено публичное свойство ``\Tygh\Notifications\Transports\Internal\InternalMessageSchema::$recipient_search_criteria``.
 
-#. Публичное свойство ``\Tygh\Notifications\Transports\Internal\InternalMessageSchema::$to_company_id`` добавлено.
+#. Добавлено публичное свойство ``\Tygh\Notifications\Transports\Internal\InternalMessageSchema::$to_company_id``.
 
 
 ------------ 
 Новые классы
 ------------
 
-#. Получает сообщение об ошибке при неудачной валидации антибота::
+#. Получает сообщение об ошибке, если проверка на то, является ли пользователь ботом, оказывается неудачной::
 
        \Tygh\Web\Antibot\IErrorableAntibotDriver
        
-#. Содержит все возможные типы настроек объектов::
+#. Содержит все возможные типы объектов настроек::
 
        \Tygh\Enum\SettingTypes
        
 ~~~~~~~~~~~~~~~~~~~~~~~~       
-Изменения в нотификациях
+Изменения в уведомлениях
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. Отображает условие поиска получателя сообщения::
+#. Представляет собой условие поиска получателя сообщения::
 
        \Tygh\Notifications\Receivers\SearchCondition
        
@@ -190,27 +190,27 @@
 
        \Tygh\Notifications\Transports\Internal\ReceiverFinders\VendorOwnerFinder 
        
-#. Описывает класс, используемый, чтобы найти получателей e-mail уведомлений::
+#. Описывает класс, используемый, чтобы найти получателей email-уведомлений::
 
        \Tygh\Notifications\Transports\Mail\ReceiverFinders\ReceiverFinderInterface 
        
-#. Ищет получателей e-mail уведомлений по адресам электронной почты::
+#. Находит получателей email-уведомлений по адресам электронной почты::
 
        \Tygh\Notifications\Transports\Mail\ReceiverFinders\EmailFinder 
        
-#. Находит менеджеров заказов, которые получают e-mail уведомления::
+#. Находит менеджеров заказов, которые получают email-уведомления::
 
        \Tygh\Notifications\Transports\Mail\ReceiverFinders\OrderManagerFinder 
        
-#. Находит получателей e-mail уведомлений в указанной группе пользователей::
+#. Находит получателей email-уведомлений в указанной группе пользователей::
 
        \Tygh\Notifications\Transports\Mail\ReceiverFinders\UsergroupIdFinder 
        
-#. Находит получателей e-mail уведомлений по идентификаторам пользователей::
+#. Находит получателей email-уведомлений по идентификаторам пользователей::
 
        \Tygh\Notifications\Transports\Mail\ReceiverFinders\UserIdFinder
        
-#. Находит главных администраторов продавцов, которые получают e-mail уведомления::
+#. Находит главных администраторов продавцов, которые получают email-уведомления::
 
        \Tygh\Notifications\Transports\Mail\ReceiverFinders\VendorOwnerFinder
        
@@ -353,7 +353,7 @@
        fn_delete_discussion($object_id, $object_type, $company_id = null)
        
 ~~~~~~~~~~~~~~~~~~~~~~~~
-Изменения в нотификациях
+Изменения в уведомлениях
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. ::
@@ -487,7 +487,7 @@
 Новые функции
 -------------
 
-#. Получает список статусов с указанным параметром::
+#. Получает список статусов с указанными параметрами::
 
        fn_get_status_by_type_and_param($type, $params)
        
@@ -543,7 +543,7 @@
 
        fn_attachments_delete_by_object_id($object_type, $object_id)
        
-#. Вызывает массив путей для импорта каталога прикреплённых файлов::
+#. Получает массив путей до директории с импортируемыми прикреплёнными файлами::
 
        fn_attachments_get_import_attachments_directory($company_id, $path = '') 
 
@@ -551,11 +551,11 @@
 
        fn_vendor_privileges_check_permission_order_management()
        
-#. Сохраняет данные о полях профиля пользователей::
+#. Сохраняет данные о пользовательских полях профиля::
 
        fn_store_user_profile_fields(array $profile_data, $object_id, $object_type)
        
-#. Получает данные об активной витрине::
+#. Получает данные о текущей витрине::
 
        \Tygh\Providers\StorefrontProvider::getStorefront()
        
@@ -567,7 +567,7 @@
 
        \Tygh\Settings::removeStorefrontSettings($storefront_id)
 
-#. Стирает все значения настройки для компании и витрины::
+#. Стирает все значения настроек, привязанные к компании или витрине::
 
        \Tygh\Settings::resetAllOverrides($object_id)
 
@@ -606,12 +606,9 @@
        // Что использовать вместо неё:
        fn_get_product_features
        
-#. ::
+#. ``fn_filter_product_data``
        
-       // Устаревшая функция:
-       fn_filter_product_data
-       // Устаревшая функция:
-       fn_filters_not_found_notification
+#. ``fn_filters_not_found_notification``
        
 #. ::       
        
@@ -632,7 +629,7 @@
        // Устаревшая функция:
        fn_array_column
        // Что использовать вместо неё:
-       array_column.
+       array_column
        
 
 =================
@@ -643,7 +640,7 @@
 Новые хуки
 ----------
 
-#. Выполняется перед отправкой уведомления о создании новой отгрузки. Позволяет менять данные в уведомлении об отгрузке::
+#. Выполняется перед отправкой уведомления о создании новой отгрузки. Позволяет менять данные об отгрузке в уведомлении::
 
        fn_set_hook('update_shipment_before_send_notification', $shipment_data, $shipment_id, $group_key, $all_products, $force_notification, $order_info, $shipment);
        
@@ -655,11 +652,11 @@
 
        fn_set_hook('init_language_post', $params, $area, $default_language, $session_display_language, $avail_languages, $display_language, $description_language, $browser_language); 
 
-#. Меняет параметры выбранных компаний::
+#. Меняет параметры выборки компаний::
 
        fn_set_hook('get_companies_pre', $params, $items_per_page, $lang_code); 
 
-#. Позволяет расширять данные для нижней панели::
+#. Позволяет расширять данные в нижней панели::
 
        fn_set_hook('prepare_bottom_panel_data', $bottom_panel_data);
        
@@ -667,7 +664,7 @@
 
        fn_set_hook('dashboard_get_vendor_activities_post', $timestamp_from, $timestamp_to, $dashboard_vendors_activity);
        
-#. Выполняется, когда рассчитана стоимость содержимого корзины, после расчета стоимости доставки. Позволяет менять корзину и список доставки::
+#. Выполняется, когда рассчитана стоимость содержимого корзины, после расчета стоимости доставки. Позволяет менять корзину и список способов доставки::
 
        fn_set_hook('calculate_cart_content_after_shipping_calculation', $cart, $auth, $calculate_shipping, $calculate_taxes, $options_style, $apply_cart_promotions, $lang_code, $area, $cart_products, $product_groups);
        
@@ -774,36 +771,34 @@
 Удалённые хуки
 --------------
 
-* ``fn_set_hook('delete_product_option_combinations', $product_id);``
+#. ``fn_set_hook('delete_product_option_combinations', $product_id);``
 
-* ``fn_set_hook('look_through_variants_pre', $product_id, $amount, $options, $variants);``
+#. ``fn_set_hook('look_through_variants_pre', $product_id, $amount, $options, $variants);``
 
-* ``fn_set_hook('look_through_variants_update_combination', $combination, $_data, $product_id, $amount, $options, $variants);``
+#. ``fn_set_hook('look_through_variants_update_combination', $combination, $_data, $product_id, $amount, $options, $variants);``
 
-* ``fn_set_hook('look_through_variants_post', $combinations, $product_id, $amount, $options, $variants);``
+#. ``fn_set_hook('look_through_variants_post', $combinations, $product_id, $amount, $options, $variants);``
 
-* ``fn_set_hook('rebuild_product_options_inventory_pre', $product_id, $amount);``
+#. ``fn_set_hook('rebuild_product_options_inventory_pre', $product_id, $amount);``
 
-* ``fn_set_hook('rebuild_product_options_inventory_post', $product_id);``
+#. ``fn_set_hook('rebuild_product_options_inventory_post', $product_id);``
 
-* ``fn_set_hook('update_exceptions_pre', $product_id, $exceptions);``
+#. ``fn_set_hook('update_exceptions_pre', $product_id, $exceptions);``
 
-* ``fn_set_hook('update_exceptions_post', $product_id, $exceptions);``
+#. ``fn_set_hook('update_exceptions_post', $product_id, $exceptions);``
 
-* ``fn_set_hook('clone_options_inventory_pre', $from_product_id, $to_product_id, $options, $variants);``
+#. ``fn_set_hook('clone_options_inventory_pre', $from_product_id, $to_product_id, $options, $variants);``
 
-* ``fn_set_hook('clone_options_inventory_post', $from_product_id, $to_product_id, $options, $variants);``
+#. ``fn_set_hook('clone_options_inventory_post', $from_product_id, $to_product_id, $options, $variants);``
 
-* ``fn_set_hook('get_product_options_inventory_pre', $params, $items_per_page, $lang_code);``
+#. ``fn_set_hook('get_product_options_inventory_pre', $params, $items_per_page, $lang_code);``
 
-* ``fn_set_hook('get_product_options_inventory_post', $params, $items_per_page, $lang_code, $inventory);``
+#. ``fn_set_hook('get_product_options_inventory_post', $params, $items_per_page, $lang_code, $inventory);``
 
-* ``fn_set_hook('get_product_options_combination_data_post', $combination_hash, $combination);``
+#. ``fn_set_hook('get_product_options_combination_data_post', $combination_hash, $combination);``
 
-* ``fn_set_hook('update_option_combination_pre', $combination_data, $combination_hash);``
+#. ``fn_set_hook('update_option_combination_pre', $combination_data, $combination_hash);``
 
-* ``fn_set_hook('update_option_combination_post', $combination_data, $combination_hash, $inventory_amount);``
+#. ``fn_set_hook('update_option_combination_post', $combination_data, $combination_hash, $inventory_amount);``
 
-* ``fn_set_hook('delete_option_combination_pre', $combination_hash);``
-
-
+#. ``fn_set_hook('delete_option_combination_pre', $combination_hash);``

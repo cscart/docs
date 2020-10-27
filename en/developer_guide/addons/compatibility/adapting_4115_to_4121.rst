@@ -8,7 +8,7 @@ Adapt Your Add-ons and Themes to CS-Cart 4.12.1
 
 
 ==============
-Common changes
+Common Changes
 ==============
 
 * HTMLPurifier library was updated to version 4.13.0.
@@ -25,29 +25,29 @@ CS-Cart no longer uses the sharing mechanism to link languages and currencies to
 Linking of Settings to Storefronts
 ----------------------------------
 
-The ability to specify different settings for different storefronts has been added to Multi-Vendor (in a manner similar to CS-Cart).
+The ability to specify different settings for different storefronts was added to Multi-Vendor (in a manner similar to CS-Cart).
 
-If you want to use this new functionality, you have to adapt your modules:
+If you want to use this new functionality, you'll have to adapt your add-ons:
 
-#. Replace the ``edition_type`` for settings and sections from ``ROOT,VENDOR`` or ``ROOT,ULT:VENDOR`` to ``ROOT,STOREFRONT``.
+#. Change the ``edition_type`` for settings and sections from ``ROOT,VENDOR`` or ``ROOT,ULT:VENDOR`` to ``ROOT,STOREFRONT``.
 
-#. Wherever you get or update setting values programmatically, explicitly specify ``storefront_id``. It is better to specify it when getting an instance of the settings service::
+#. Wherever you get or update setting values programmatically, explicitly specify ``storefront_id``. It is best to specify it when fetching an instance of the settings service::
 
-       $settings_manager = Settings::instance(['storefront_id' => 1]);
+     $settings_manager = Settings::instance(['storefront_id' => 1]);
        
        
 ----------------
 Security Changes
 ----------------
 
-Creating a password hash using ``md5`` has been replaced with hashing based on the ``password_hash`` function. The ``fn_user_password_verify`` function is now used for password verification.
+Creating a password hash with ``md5`` was replaced with hashing based on the ``password_hash`` function. The ``fn_user_password_verify`` function is now used for password verification.
 
 
 -----------------
 Structure Changes
 -----------------
 
-Single ``app/functions/fn.catalog.php`` functions file has been split into separate purpose files:
+The single file ``app/functions/fn.catalog.php`` was split into separate files, depending on the functions' purpose:
 
 * ``fn.categories.php``
 
@@ -66,27 +66,27 @@ Single ``app/functions/fn.catalog.php`` functions file has been split into separ
 Notification Changes
 --------------------
 
-We added the ability to set receivers of notifications by user groups, separate users and separate emails.
+We added the ability to set receivers of notifications: specific user groups, users, and email addresses.
 
-If you have previously developed your own notification transport or extended event schemas, you need to adapt them:
+If you have already developed your own notification transport or extended the event schemas, you'll need to adapt them:
 
-#. Change the ``\Tygh\Notifications\Transports\ITransport::process()`` method in the transport class. It now passes the receiver search conditions for the event.
+#. Change the ``\Tygh\Notifications\Transports\ITransport::process()`` method in the transport class. The receiver search conditions for the event are now passed to it.
 
-#. Implement a search for receivers of a notification. In standard classes, this mechanism is implemented using specific search engine classes::
+#. Implement a search for receivers of a notification. In standard classes, this mechanism is implemented using specific finder classes::
 
-       (Tygh\Notifications\Transports\Internal\ReceiverFinders\*
+     (Tygh\Notifications\Transports\Internal\ReceiverFinders\*
        
-       Tygh\Notifications\Transports\Mail\ReceiverFinders\*)
+     Tygh\Notifications\Transports\Mail\ReceiverFinders\*)
        
-   and the search engine factories that create these classes::
+   and the finder factories that create these classes::
    
-       (\Tygh\Notifications\Transports\Internal\ReceiverFinderFactory
+     (\Tygh\Notifications\Transports\Internal\ReceiverFinderFactory
        
-       \Tygh\Notifications\Transports\Mail\ReceiverFinderFactory)
+     \Tygh\Notifications\Transports\Mail\ReceiverFinderFactory)
        
-#. Configure the displaying of the receiver editor display via the ``notifications/groups`` scheme if you added a group of notification events.
+#. If you added a group of notification events, configure the displaying of the receiver editor via the ``notifications/groups`` scheme.
 
-To avoid confusion, the receiving vendor of internal notifications should be specified using the new ``to_company_id`` property. The ``company_id`` property is responsible for the sending vendor within email notifications.
+To avoid confusion, the vendor who is to receive internal notifications should be specified via the new ``to_company_id`` property. In email notification, the ``company_id`` property specifies the vendor who is the sender.
 
 
 -----------------------
@@ -107,11 +107,11 @@ Third-party add-ons can no longer create root elements in the admin panel menu. 
 Changes in Add-on Scheme
 ------------------------ 
 
-A new ``supplier_page`` tag has been added to the add-on scheme file. Use it to specify the path to the developer page. The developer page must be written in the ``controller.mode`` format.
+A new ``supplier_page`` tag was added to the add-on scheme file. Use it to specify the path to the developer page. The developer page must be written in the following fromat: ``controller.mode``.
 
 
 ============
-Core changes
+Core Changes
 ============
 
 ---------------
@@ -130,16 +130,16 @@ Notification Changes
 
 #. ::
 
-       //Old:
-       \Tygh\Enum\RecipientSearchMethods 
-       // New:
-       \Tygh\Enum\ReceiverSearchMethods.
+     //Old:
+     \Tygh\Enum\RecipientSearchMethods 
+     // New:
+     \Tygh\Enum\ReceiverSearchMethods.
         
-#. The ``\Tygh\Notifications\Transports\Internal\InternalMessageSchema::$recipient_search_method`` public property was removed.
+#. Public property removed: ``\Tygh\Notifications\Transports\Internal\InternalMessageSchema::$recipient_search_method`` 
 
-#. The ``\Tygh\Notifications\Transports\Internal\InternalMessageSchema::$recipient_search_criteria`` public property was removed.
+#. Public property removed: ``\Tygh\Notifications\Transports\Internal\InternalMessageSchema::$recipient_search_criteria`` 
 
-#. The ``\Tygh\Notifications\Transports\Internal\InternalMessageSchema::$to_company_id`` public property was removed.
+#. Public property added: ``\Tygh\Notifications\Transports\Internal\InternalMessageSchema::$to_company_id``
 
 
 ----------- 
@@ -148,11 +148,11 @@ New Classes
 
 #. Gets an error message of failed antibot validation::
 
-       \Tygh\Web\Antibot\IErrorableAntibotDriver
+     \Tygh\Web\Antibot\IErrorableAntibotDriver
        
 #. Contains all possible setting object types::
 
-       \Tygh\Enum\SettingTypes
+     \Tygh\Enum\SettingTypes
        
 ~~~~~~~~~~~~~~~~~~~~       
 Notification Changes
@@ -170,7 +170,7 @@ Notification Changes
 
        \Tygh\Notifications\Transports\Internal\ReceiverFinders\ReceiverFinderInterface
 
-#.  Finds receivers of internal notifications by their email addresses::
+#. Finds receivers of internal notifications by their email addresses::
 
        \Tygh\Notifications\Transports\Internal\ReceiverFinders\EmailFinder 
        
@@ -487,7 +487,7 @@ Removed Functions
 New functions
 -------------
 
-#. Get the statuses list with specific parameters::
+#. Get the list of statuses with the specific parameters::
 
        fn_get_status_by_type_and_param($type, $params)
        
@@ -495,7 +495,7 @@ New functions
 
        fn_rma_send_notification 
        
-#. Get the event groups schema::
+#. Get the schema of event groups::
 
        \Tygh\Providers\EventDispatcherProvider::getEventGroupsSchema() — 
 
@@ -503,7 +503,7 @@ New functions
 
        \Tygh\Providers\EventDispatcherProvider::getNotificationSettings($with_receivers = false) 
 
-#. Get the events schema::
+#. Get the schema of events::
 
        \Tygh\Providers\EventDispatcherProvider::getEventsSchema()
        
@@ -511,7 +511,7 @@ New functions
 
        fn_get_user_email($user_id, array $user_info = null)
        
-#. Update the promotion image for specified language (will be uploaded for all languages if new)::
+#. Update the promotion image for the specified language (will be uploaded for all languages if new)::
 
        fn_promotions_update_image($promotion_id, $lang_code = DESCR_SL) 
        
@@ -519,11 +519,11 @@ New functions
 
        fn_promotions_delete_image($promotion_id, $lang_code = null)
 
-#. Clone the promotion images links for specified languages::
+#. Clone the promotion image links for the specified languages::
 
        fn_promotions_copy_image_link_to_langs($promotion_id, $original_lang = CART_LANGUAGE, array $cloned_langs = [])
        
-#. Clone the promotion images links to added language::
+#. Clone the promotion image links to an added language::
 
        fn_promotions_update_language_post($language_data)
        
@@ -543,7 +543,7 @@ New functions
 
        fn_attachments_delete_by_object_id($object_type, $object_id)
        
-#. Fetche the array of paths to import attachments directory::
+#. Fetch the array of paths to the directory with imported attachments::
 
        fn_attachments_get_import_attachments_directory($company_id, $path = '') 
 
@@ -551,7 +551,7 @@ New functions
 
        fn_vendor_privileges_check_permission_order_management()
        
-#. Save user profile fields data::
+#. Save the date of user profile fields::
 
        fn_store_user_profile_fields(array $profile_data, $object_id, $object_type)
        
@@ -571,7 +571,7 @@ New functions
 
        \Tygh\Settings::resetAllOverrides($object_id)
 
-#. Check whether setting can be overridden on a per storefront or a per company basis::
+#. Check whether the setting can be overridden on a per-storefront or a per-company basis::
 
        \Tygh\Settings::areOverriddenValuesSupportedByEdition($edition_type) 
 
@@ -579,7 +579,7 @@ New functions
 
        fn_is_bottom_panel_available($auth)
 
-#. Define if theme editor can be activated by an authorized user::
+#. Define if theme editor can be activated by a signed-in user::
 
        fn_is_theme_editor_available_for_user($auth)
 
@@ -606,12 +606,9 @@ Deprecated Functions
        // What to use instead:
        fn_get_product_features
        
-#. ::
+#. ``fn_filter_product_data``
        
-       // Deprecated function:
-       fn_filter_product_data
-       // Deprecated function:
-       fn_filters_not_found_notification
+#. ``fn_filters_not_found_notification``
        
 #. ::       
        
@@ -632,7 +629,7 @@ Deprecated Functions
        // Deprecated function:
        fn_array_column
        // What to use instead:
-       array_column.
+       array_column
        
 
 ============
@@ -643,15 +640,15 @@ Hook Changes
 New Hooks
 ---------
 
-#. This hook is executed before sending a notification about the new shipment creation. The hook allows you to modify the notification shipment data::
+#. This hook is executed before a notification about the creation of a new shipment is sent. The hook allows you to modify the shipment data in the notificaion::
 
        fn_set_hook('update_shipment_before_send_notification', $shipment_data, $shipment_id, $group_key, $all_products, $force_notification, $order_info, $shipment);
        
-#. This hook is executed before selecting an existent product feature variant by name::
+#. This hook is executed before the existing product feature variants are selected by name::
 
        fn_set_hook('update_product_feature_variant_before_select', $feature_id, $feature_type, $variant, $lang_code, $fields, $joins, $conditions, $limit);
        
-#. This hook is executed after the display_language and the description_language parameters are determined, and right before setting them. The hook allows you to change the languages that will be used and the list of available languages::
+#. This hook is executed after the ``display_language`` and the ``description_language`` parameters have been determined, and right before setting them. The hook allows you to change the languages that will be used and the list of available languages::
 
        fn_set_hook('init_language_post', $params, $area, $default_language, $session_display_language, $avail_languages, $display_language, $description_language, $browser_language); 
 
@@ -667,7 +664,7 @@ New Hooks
 
        fn_set_hook('dashboard_get_vendor_activities_post', $timestamp_from, $timestamp_to, $dashboard_vendors_activity);
        
-#. This hook is executed when the cart content is calculated after the shipping rates are calculated. The hook allows you to modify the cart and the shipping list::
+#. This hook is executed when the cart content is calculated, after the shipping rates have been calculated. The hook allows you to modify the cart and the list of shipping methods::
 
        fn_set_hook('calculate_cart_content_after_shipping_calculation', $cart, $auth, $calculate_shipping, $calculate_taxes, $options_style, $apply_cart_promotions, $lang_code, $area, $cart_products, $product_groups);
        
@@ -675,11 +672,11 @@ New Hooks
 
        fn_set_hook('update_product_filter_post', $filter_data, $filter_id, $lang_code, $create);
 
-#. This hook changes the message before converting it::
+#. This hook changes the message before it is converted::
 
        fn_set_hook('message_style_formatter_convert_pre', $message, $inline_css);
 
-#. This hook changes the message after converting it::
+#. This hook changes the message after it has been converted::
 
        fn_set_hook('message_style_formatter_convert_post', $message); 
 
@@ -774,34 +771,34 @@ Changed Hooks
 Removed Hooks
 -------------
 
-* ``fn_set_hook('delete_product_option_combinations', $product_id);``
+#. ``fn_set_hook('delete_product_option_combinations', $product_id);``
 
-* ``fn_set_hook('look_through_variants_pre', $product_id, $amount, $options, $variants);``
+#. ``fn_set_hook('look_through_variants_pre', $product_id, $amount, $options, $variants);``
 
-* ``fn_set_hook('look_through_variants_update_combination', $combination, $_data, $product_id, $amount, $options, $variants);``
+#. ``fn_set_hook('look_through_variants_update_combination', $combination, $_data, $product_id, $amount, $options, $variants);``
 
-* ``fn_set_hook('look_through_variants_post', $combinations, $product_id, $amount, $options, $variants);``
+#. ``fn_set_hook('look_through_variants_post', $combinations, $product_id, $amount, $options, $variants);``
 
-* ``fn_set_hook('rebuild_product_options_inventory_pre', $product_id, $amount);``
+#. ``fn_set_hook('rebuild_product_options_inventory_pre', $product_id, $amount);``
 
-* ``fn_set_hook('rebuild_product_options_inventory_post', $product_id);``
+#. ``fn_set_hook('rebuild_product_options_inventory_post', $product_id);``
 
-* ``fn_set_hook('update_exceptions_pre', $product_id, $exceptions);``
+#. ``fn_set_hook('update_exceptions_pre', $product_id, $exceptions);``
 
-* ``fn_set_hook('update_exceptions_post', $product_id, $exceptions);``
+#. ``fn_set_hook('update_exceptions_post', $product_id, $exceptions);``
 
-* ``fn_set_hook('clone_options_inventory_pre', $from_product_id, $to_product_id, $options, $variants);``
+#. ``fn_set_hook('clone_options_inventory_pre', $from_product_id, $to_product_id, $options, $variants);``
 
-* ``fn_set_hook('clone_options_inventory_post', $from_product_id, $to_product_id, $options, $variants);``
+#. ``fn_set_hook('clone_options_inventory_post', $from_product_id, $to_product_id, $options, $variants);``
 
-* ``fn_set_hook('get_product_options_inventory_pre', $params, $items_per_page, $lang_code);``
+#. ``fn_set_hook('get_product_options_inventory_pre', $params, $items_per_page, $lang_code);``
 
-* ``fn_set_hook('get_product_options_inventory_post', $params, $items_per_page, $lang_code, $inventory);``
+#. ``fn_set_hook('get_product_options_inventory_post', $params, $items_per_page, $lang_code, $inventory);``
 
-* ``fn_set_hook('get_product_options_combination_data_post', $combination_hash, $combination);``
+#. ``fn_set_hook('get_product_options_combination_data_post', $combination_hash, $combination);``
 
-* ``fn_set_hook('update_option_combination_pre', $combination_data, $combination_hash);``
+#. ``fn_set_hook('update_option_combination_pre', $combination_data, $combination_hash);``
 
-* ``fn_set_hook('update_option_combination_post', $combination_data, $combination_hash, $inventory_amount);``
+#. ``fn_set_hook('update_option_combination_post', $combination_data, $combination_hash, $inventory_amount);``
 
-* ``fn_set_hook('delete_option_combination_pre', $combination_hash);``
+#. ``fn_set_hook('delete_option_combination_pre', $combination_hash);``
