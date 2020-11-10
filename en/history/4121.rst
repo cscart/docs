@@ -137,7 +137,7 @@ Functionality Changes
 
 [*] Features: The "Features" tab on the product editing page was updated.
 
-[*] Filters: Perofrmance of filtering on the storefront improved.
+[*] Filters: Performance of filtering on the storefront improved.
 
 [*] Filters: It is now more convenient to select multiple product filters on the storefront.
 
@@ -156,8 +156,6 @@ Functionality Changes
 [*] Products: You can now select the desired category from the tree OR type its name in the search sidebar.
 
 [*] Products: Option combinations were removed; product variations now fulfil their purpose.
-
-[*] Products: Some product settings were moved from the product editing page to "Settings > General", "Settings > Appearance", and "Settings > Checkout"; they are now specified for all products. It's up to you whether to make them editable for individual products.
 
 [*] Add-ons: Reward points: The earned points and price in points on the product level can now be configured to inherit any value from the add-on settings.
 
