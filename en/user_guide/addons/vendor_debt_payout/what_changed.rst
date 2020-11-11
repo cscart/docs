@@ -22,7 +22,7 @@ Ability to Refill Balance in Advance
 
         *   -   Previously
 
-            -   A vendor could only refill his balance after becoming a debtor. It was possible to refill the balance only with the amount of debt. 
+            -   A vendor could only refill his balance after becoming a debtor. It was possible to refill the balance only by the amount of debt. 
 
         *   -   Now
 

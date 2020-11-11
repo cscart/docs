@@ -8,7 +8,7 @@ Vendor-to-Admin Payments
    
 By default, all the money from orders in Multi-Vendor goes to the marketplace owner and then splits between vendors. For more information, please check :doc:`the article about money flow in Multi-Vendor and how to control it </user_guide/users/vendors/workflow>`. 
 
-The marketplace owner earns money on commissions and vendor plan fees. But what if a vendor doesn't get orders? Or  the marketplace owner charges him for some service, and the vendor can’t to pay in time? This is how the vendor may become a debtor. 
+The marketplace owner earns money on commissions and vendor plan fees. But what if a vendor doesn't get orders? Or the marketplace owner charges him for some service, and the vendor can’t pay in time? This is how the vendor may become a debtor. 
 
 Previously, marketplace owners had to deal with debtors manually or use the Vendor Debt Payout add-on. In new versions of Multi-Vendor, the Vendor-to-Admin Payments add-on was created to completely replace the old add-on.
 
@@ -46,7 +46,7 @@ The **Vendor-to-Admin Payments** add-on lets the marketplace owner decide what t
 
 * Hide the debtor and his products from the storefront.
 
-* Block the debtor's admin panel — in this case, the only option left is to pay off the debt.
+* Block the debtor's admin panel—in this case, the only option left is to pay off the debt.
 
 * Do both things, or nothing at all.
 
@@ -56,7 +56,7 @@ These measures can encourage vendors to pay off their debts.
 Let Your Vendors Pay Debts
 ++++++++++++++++++++++++++
 
-With the new add-on, vendors can pay their debts at any point without any complications. All they have to do is enter an amount of money, and click the **Refill balance** button. Then vendors will be redirected to the сheckout page. All restrictions will be removed automatically once the payment is processed.
+With the new add-on, vendors can pay their debts at any time without complications. All they have to do is enter an amount of money, and click the **Refill balance** button. Then vendors will be redirected to the сheckout page. All restrictions will be removed automatically once the payment is processed.
   
 .. image:: img/admin_panel_blocked.png
     :align: center
@@ -78,7 +78,7 @@ The add-on adds many different notifications. For example, it notifies the vendo
 
 You can find the links to notification settings in the add-on settings. The notification settings are also available in **Administration** → **Notifications**.
 
-Once a week the owner receives a report which contains current information about debts and debtors' accounts.
+Once a week, the owner receives a report which contains current information about debts and debtors' accounts.
 
 
 Find Inactive Vendors
