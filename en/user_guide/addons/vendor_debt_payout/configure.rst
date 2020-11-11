@@ -1,6 +1,6 @@
-*************************************************** 
+************************************************* 
 How To: Configure Vendor-to-Admin Payments Add-on
-*****************************************************
+*************************************************
 
 .. important::
 
@@ -8,7 +8,7 @@ How To: Configure Vendor-to-Admin Payments Add-on
 
 Install the Vendor-to-Admin Payments add-on :doc:`just like any other add-on </user_guide/addons/1manage_addons>`. After the installation, click on the add-on name to open its settings. Here you can do the following:
 
-* Decide if you want to set the same conditions for all your vendors, or set individual values for different vendor plans.
+* Decide when a vendor becomes a debtor. By default, these rules are global and apply to if you want to set the same conditions for all your vendors, or set individual values for different vendor plans.
 
   .. note::
 
@@ -23,3 +23,6 @@ Install the Vendor-to-Admin Payments add-on :doc:`just like any other add-on </u
   .. image:: img/vendor_to_admin_payments_settings.png
       :align: center
       :alt: Add-on settings
+      
+.. meta::
+   :description: The settings of the "Vendor-to-Admin Payments" add-on in Multi-Vendor ecommerce solution.

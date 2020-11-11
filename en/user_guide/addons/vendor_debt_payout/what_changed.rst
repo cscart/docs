@@ -13,8 +13,8 @@ What's New in Dealing with Debtors in Multi-Vendor 4.12.1?
 What Has Improved?
 ==================
 
-Different Conditions for Each Vendor Plan
-+++++++++++++++++++++++++++++++++++++++++
+Ability to Refill Balance in Advance
+++++++++++++++++++++++++++++++++++++
 
 .. list-table::
         :stub-columns: 1
@@ -22,28 +22,7 @@ Different Conditions for Each Vendor Plan
 
         *   -   Previously
 
-            -   The maximum debt and grace period were set globally in the settings of the Vendor Debt Payout add-on. The values were the same for all vendors.
-
-        *   -   Now
-
-            -   You can set individual value of maximum debt and grace period for each :doc:`vendor plan </user_guide/addons/vendor_plans/index>`. To do this, switch the global (same conditions for all vendors) setting to individual in the add-ons settings. After that, you can set different conditions in the settings of each vendor plan.
-
-        *   -   What's better about it
-
-            -   Now you can set different debt rules for a $5 plan and a $100 plan.
-  
-------  
-
-The Ability to Refill Balance in Advance
-++++++++++++++++++++++++++++++++++++++++
-
-.. list-table::
-        :stub-columns: 1
-        :widths: 7 30
-
-        *   -   Previously
-
-            -   A vendor could only refill his balance after becoming a debtor. That way his balance either became zero (after paying off the debt), or became negative (after payinf the fees for the orders). It was possible to refill the balance only with the amount of debt. 
+            -   A vendor could only refill his balance after becoming a debtor. It was possible to refill the balance only with the amount of debt. 
 
         *   -   Now
 
@@ -51,8 +30,9 @@ The Ability to Refill Balance in Advance
 
         *   -   What's better about it
 
-            -   Now it is possible to avoid the situation when the vendor is always a debtor. He can refill his balance any time and with any amount of money, and not wait for restrictions to be applied to him.
+            -   A vendor can refill the balance at any time and with any amount of money, without waiting to become a debtor and risking the associated restrictions. If your marketplace uses :doc:`/user_guide/addons/direct_customer_to_vendor_payments/index`, then the vendor won't be in a constant state of debt.
 
+------
 
 Clearer Interactions Between Settings
 +++++++++++++++++++++++++++++++++++++
@@ -63,7 +43,7 @@ Clearer Interactions Between Settings
 
         *   -   Previously
 
-            -   The maximum debt and the grace period in the Vendor Debt Payout add-on used to work independently. Restrictions were immediately applied in any of these cases:
+            -   The maximum debt and the grace period in the **Vendor Debt Payout** add-on used to work independently. Restrictions were immediately applied in any of these cases:
                
                 *   A vendor exceeded the maximum debt.
                 
@@ -78,8 +58,29 @@ Clearer Interactions Between Settings
         *   -   What's better about it
 
             -   It's easier to understand how settings interact with each other.
-  
+
 ------
+
+Different Conditions for Each Vendor Plan
++++++++++++++++++++++++++++++++++++++++++
+
+.. list-table::
+        :stub-columns: 1
+        :widths: 7 30
+
+        *   -   Previously
+
+            -   The maximum debt and grace period were set globally in the settings of the **Vendor Debt Payout** add-on. The values were the same for all vendors.
+
+        *   -   Now
+
+            -   The settings are still global by default, but you can go to the add-on settings and allow individual values for each :doc:`vendor plan </user_guide/addons/vendor_plans/index>`.
+
+        *   -   What's better about it
+
+            -   Now you can set different debt rules for a $5 plan and a $100 plan.
+  
+------  
 
 You Decide What to Do with Debtors
 ++++++++++++++++++++++++++++++++++
@@ -170,4 +171,7 @@ If you don’t, and you want your new add-on to work like the old one, just set 
 What Do I Need for The New Add-on to Work?
 ++++++++++++++++++++++++++++++++++++++++++
 
-The new Vendor-to-Admin Payments add-on requires the Vendor Plans add-on to work with. If you turned it off or did not install it, the Vendor Plans add-on will install automatically after the Multi-Vendor upgrade. After that, the add-on will create a single fee-free plan for all the vendors. This plan will be hidden. You can set the minimum allowed balance and grace period in the add-on settings. These values will be the same for all your vendors. This way the new Vendor-to-Admin Payments add-on will repeat the old add-on behavior.
+The new **Vendor-to-Admin Payments** add-on requires the **Vendor Plans** add-on to work with. If you turned it off or did not install it, the **Vendor Plans** add-on will install automatically after the Multi-Vendor upgrade. After that, the add-on will create a single fee-free plan for all the vendors. This plan will be hidden. You can set the minimum allowed balance and grace period in the add-on settings. These values will be the same for all your vendors. This way the new **Vendor-to-Admin Payments** add-on will repeat the old add-on's behavior.
+
+.. meta::
+   :description: What was Multi-Vendor 4.12.1 in regard to collecting money from vendors?
