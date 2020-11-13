@@ -80,7 +80,7 @@ New Features and Improvements
 
 [+] Promotions: A context menu was added to the list of promotions in the admin panel.
 
-[+] Rate areas: A сontext menu was added to еthe list of rat areas.
+[+] Rate areas: A сontext menu was added to the list of rate areas.
 
 [+] Settings: Checkout: The ability to show unavaliable shipping methods at checkout, even if they don't have rates to specified location, was added.
 
@@ -180,9 +180,9 @@ Bugfixes
 
 [!] Add-ons: Comments and reviews: Google ReCAPTCHA: If ReCAPTCHA was in the comments and reviews dialog window, then a scrolling bar appeared, and page wasn't scrolling. Fixed.
 
-[!] Add-ons: E-mail marketing: The checkbox for subscribing to newsletter appeared only after a shipping or payment method was selected. If only one payment and shipping method was offered, the checkbox didn't appear. Fixed.
+[!] Add-ons: E-mail marketing: An SQL error occurred when the add-on was installed again after deletion. Fixed.
 
-[!] Add-ons: Email marketing: An SQL error occurred when the add-on was installed again after deletion. Fixed.
+[!] Add-ons: E-mail marketing: The checkbox for subscribing to newsletter appeared only after a shipping or payment method was selected. If only one payment and shipping method was offered, the checkbox didn't appear. Fixed.
 
 [!] Add-ons: Mobile app: A PHP error occured when malformed JSON file was uploaded as a translation file. Fixed.
 
@@ -218,13 +218,13 @@ Bugfixes
 
 [!] Admin panel: Search: On mobile devices, search didn't work on the Dashboard. Fixed.
 
-[!] Block manager: Lite checkout: The selected wrapper 'lite checkout' was not saving in the grid's properties. Fixed.
+[!] Block manager: Lite checkout: The selected wrapper 'lite checkout' was not saved in the grid's properties. Fixed.
 
 [!] Cache: Menus: The cache for menu blocks was uncontrolled, which led to an increase in cache files. Fixed.
 
 [!] Categories: Subcategories couldn't be selected on the list of categories in the admin panel. Fixed.
 
-[!] Checkout: If you used whitespace characters for the required fields, then you could place an order. Fixed. 
+[!] Checkout: If a customer used only whitespace characters for the required fields, then he or she could place an order. Fixed. 
 
 [!] Checkout: Shipping: Profile selection at the checkout page didn't work; wrong state could be selected in the customer profile in the order. Fixed.
 
@@ -246,7 +246,7 @@ Bugfixes
 
 [!] Design: Popups: Some popups had the "undefined" title. Fixed.
 
-[!] Design: There were some minor design issues in the customer are on mobile devices. Fixed.
+[!] Design: There were some minor design issues in the customer area on mobile devices. Fixed.
 
 [!] E-mail notifications: Logos: The link from the logo did not lead to the storefront. Fixed.
 
@@ -270,7 +270,7 @@ Bugfixes
 
 [!] Multi-Vendor: Add-ons: Vendor debt payout: Products: A PHP Notice could occur after a product was created or updated. Fixed.
 
-[!] Multi-Vendor: Add-ons: Vendor locations: Vendor couldn't remove his location in the settings. Fixed.
+[!] Multi-Vendor: Add-ons: Vendor locations: A vendor couldn't remove his or her location in the settings. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor plans: Vendor debt payout: Debt amount calculation was incorrect, if vendor has not paid for the plan, but had positive balance. Fixed.
 
