@@ -739,12 +739,6 @@ Changed Hooks
        // New:
        fn_set_hook('pre_get_cart_product_data', $hash, $product, $skip_promotion, $cart, $auth, $promotion_amount, $fields, $join, $params);
        
-#. ::       
-       
-       // Old:
-       fn_set_hook('hybrid_auth_create_user', $auth_data, $provider, $user_data);
-       // New:
-       fn_set_hook('hybrid_auth_create_user', $auth_data, $provider, $user_data, $provider_id);
        
 #. ::       
        
