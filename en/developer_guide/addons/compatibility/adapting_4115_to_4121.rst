@@ -296,12 +296,6 @@ Changed Functions
        // New:
        fn_hybrid_auth_delete_provider($provider_id)
        
-#. ::
-       
-       // Old:
-       fn_hybrid_auth_create_user($auth_data, $provider)
-       // New:
-       fn_hybrid_auth_create_user($auth_data, $provider, $provider_id)
        
 #. ::
        
@@ -484,7 +478,7 @@ Removed Functions
 
 
 -------------
-New functions
+New Functions
 -------------
 
 #. Get the list of statuses with the specific parameters::
@@ -493,11 +487,11 @@ New functions
        
 #. Send a notification about current return request status::
 
-       fn_rma_send_notification 
+       fn_rma_send_notification($return_info, $order_info, $force_notification = [])
        
 #. Get the schema of event groups::
 
-       \Tygh\Providers\EventDispatcherProvider::getEventGroupsSchema() — 
+       \Tygh\Providers\EventDispatcherProvider::getEventGroupsSchema() 
 
 #. Get notification settings::
 
@@ -553,7 +547,7 @@ New functions
        
 #. Save the data of user profile fields::
 
-       fn_store_user_profile_fields(array $profile_data, $object_id, $object_type)
+       fn_store_user_profile_fields(array $profile_data, $object_id, $object_type, $ship_to_another = false)
        
 #. Get current storefront data::
 
@@ -712,58 +706,58 @@ Changed Hooks
 
 #. ::
 
-       // Deprecated hook:
+       // Old:
        fn_set_hook('get_orders_totals', $paid_statuses, $join, $condition, $group);
-       // What to use instead:
+       // New:
        fn_set_hook('get_orders_totals', $paid_statuses, $join, $condition, $group, $totals);
        
 #. ::       
        
-       // Deprecated hook:
+       // Old:
        fn_set_hook('settings_update_value_by_id_pre', $this, $object_id, $value, $company_id, $execute_functions, $data, $old_data, $table);
-       // What to use instead:
+       // New:
        fn_set_hook('settings_update_value_by_id_pre', $this, $object_id, $value, $company_id, $execute_functions, $data, $old_data, $table, $storefront_id);
        
 #. ::       
        
-       // Deprecated hook:
+       // Old:
        fn_set_hook('settings_update_value_by_id_post', $this, $object_id, $value, $company_id, $execute_functions, $data, $old_data, $table);
-       // What to use instead:
+        // New:
        fn_set_hook('settings_update_value_by_id_post', $this, $object_id, $value, $company_id, $execute_functions, $data, $old_data, $table, $storefront_id);
        
 #. ::       
        
-       // Deprecated hook:
+       // Old:
        fn_set_hook('get_product_data_pre', $product_id, $auth, $lang_code, $field_list, $get_add_pairs, $get_main_pair, $get_taxes, $get_qty_discounts, $preview, $features, $skip_company_condition);
-       // What to use instead:
+       // New:
        fn_set_hook('get_product_data_pre', $product_id, $auth, $lang_code, $field_list, $get_add_pairs, $get_main_pair, $get_taxes, $get_qty_discounts, $preview, $features, $skip_company_condition, $params);
        
 #. ::       
        
-       // Deprecated hook:
+       // Old:
        fn_set_hook('pre_get_cart_product_data', $hash, $product, $skip_promotion, $cart, $auth, $promotion_amount, $fields, $join);
-       // What to use instead:
+       // New:
        fn_set_hook('pre_get_cart_product_data', $hash, $product, $skip_promotion, $cart, $auth, $promotion_amount, $fields, $join, $params);
        
 #. ::       
        
-       // Deprecated hook:
+       // Old:
        fn_set_hook('hybrid_auth_create_user', $auth_data, $provider, $user_data);
-       // What to use instead:
+       // New:
        fn_set_hook('hybrid_auth_create_user', $auth_data, $provider, $user_data, $provider_id);
        
 #. ::       
        
-       // Deprecated hook:
+       // Old:
        fn_set_hook('delete_discussion_pre', $object_id, $object_type);
-       // What to use instead:
+       // New:
        fn_set_hook('delete_discussion_pre', $object_id, $object_type, $company_id);
        
 #. ::       
        
-       // Deprecated hook:
+       // Old:
        fn_set_hook('delete_discussion_post', $object_id, $object_type, $is_deleted);
-       // What to use instead:
+       // New:
        fn_set_hook('delete_discussion_post', $object_id, $object_type, $is_deleted, $company_id);
        
 
@@ -782,10 +776,6 @@ Removed Hooks
 #. ``fn_set_hook('rebuild_product_options_inventory_pre', $product_id, $amount);``
 
 #. ``fn_set_hook('rebuild_product_options_inventory_post', $product_id);``
-
-#. ``fn_set_hook('update_exceptions_pre', $product_id, $exceptions);``
-
-#. ``fn_set_hook('update_exceptions_post', $product_id, $exceptions);``
 
 #. ``fn_set_hook('clone_options_inventory_pre', $from_product_id, $to_product_id, $options, $variants);``
 

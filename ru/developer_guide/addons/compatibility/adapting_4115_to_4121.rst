@@ -296,12 +296,6 @@
        // Стало:
        fn_hybrid_auth_delete_provider($provider_id)
        
-#. ::
-       
-       // Было:
-       fn_hybrid_auth_create_user($auth_data, $provider)
-       // Стало:
-       fn_hybrid_auth_create_user($auth_data, $provider, $provider_id)
        
 #. ::
        
@@ -493,11 +487,11 @@
        
 #. Отправляет уведомление о текущем статусе запроса на возврат::
 
-       fn_rma_send_notification 
+       fn_rma_send_notification($return_info, $order_info, $force_notification = [])
        
 #. Получает схему групп событий::
 
-       \Tygh\Providers\EventDispatcherProvider::getEventGroupsSchema() — 
+       \Tygh\Providers\EventDispatcherProvider::getEventGroupsSchema()
 
 #. Получает настройки уведомлений::
 
@@ -553,7 +547,7 @@
        
 #. Сохраняет данные о пользовательских полях профиля::
 
-       fn_store_user_profile_fields(array $profile_data, $object_id, $object_type)
+       fn_store_user_profile_fields(array $profile_data, $object_id, $object_type, $ship_to_another = false)
        
 #. Получает данные о текущей витрине::
 
@@ -712,58 +706,58 @@
 
 #. ::
 
-       // Устаревший хук:
+       // Было:
        fn_set_hook('get_orders_totals', $paid_statuses, $join, $condition, $group);
-       // Что использовать вместо него:
+       // Стало:
        fn_set_hook('get_orders_totals', $paid_statuses, $join, $condition, $group, $totals);
        
 #. ::       
        
-       // Устаревший хук:
+       // Было:
        fn_set_hook('settings_update_value_by_id_pre', $this, $object_id, $value, $company_id, $execute_functions, $data, $old_data, $table);
-       // Что использовать вместо него:
+       // Стало:
        fn_set_hook('settings_update_value_by_id_pre', $this, $object_id, $value, $company_id, $execute_functions, $data, $old_data, $table, $storefront_id);
        
 #. ::       
        
-       // Устаревший хук:
+       // Было:
        fn_set_hook('settings_update_value_by_id_post', $this, $object_id, $value, $company_id, $execute_functions, $data, $old_data, $table);
-       // Что использовать вместо него:
+       // Стало:
        fn_set_hook('settings_update_value_by_id_post', $this, $object_id, $value, $company_id, $execute_functions, $data, $old_data, $table, $storefront_id);
        
 #. ::       
        
-       // Устаревший хук:
+       // Было:
        fn_set_hook('get_product_data_pre', $product_id, $auth, $lang_code, $field_list, $get_add_pairs, $get_main_pair, $get_taxes, $get_qty_discounts, $preview, $features, $skip_company_condition);
-       // Что использовать вместо него:
+       // Стало:
        fn_set_hook('get_product_data_pre', $product_id, $auth, $lang_code, $field_list, $get_add_pairs, $get_main_pair, $get_taxes, $get_qty_discounts, $preview, $features, $skip_company_condition, $params);
        
 #. ::       
        
-       // Устаревший хук:
+       // Было:
        fn_set_hook('pre_get_cart_product_data', $hash, $product, $skip_promotion, $cart, $auth, $promotion_amount, $fields, $join);
-       // Что использовать вместо него:
+       // Стало:
        fn_set_hook('pre_get_cart_product_data', $hash, $product, $skip_promotion, $cart, $auth, $promotion_amount, $fields, $join, $params);
        
 #. ::       
        
-       // Устаревший хук:
+       // Было:
        fn_set_hook('hybrid_auth_create_user', $auth_data, $provider, $user_data);
-       // Что использовать вместо него:
+       // Стало:
        fn_set_hook('hybrid_auth_create_user', $auth_data, $provider, $user_data, $provider_id);
        
 #. ::       
        
-       // Устаревший хук:
+       // Было:
        fn_set_hook('delete_discussion_pre', $object_id, $object_type);
-       // Что использовать вместо него:
+       // Стало:
        fn_set_hook('delete_discussion_pre', $object_id, $object_type, $company_id);
        
 #. ::       
        
-       // Устаревший хук:
+       // Было:
        fn_set_hook('delete_discussion_post', $object_id, $object_type, $is_deleted);
-       // Что использовать вместо него:
+       // Стало:
        fn_set_hook('delete_discussion_post', $object_id, $object_type, $is_deleted, $company_id);
        
 
@@ -782,10 +776,6 @@
 #. ``fn_set_hook('rebuild_product_options_inventory_pre', $product_id, $amount);``
 
 #. ``fn_set_hook('rebuild_product_options_inventory_post', $product_id);``
-
-#. ``fn_set_hook('update_exceptions_pre', $product_id, $exceptions);``
-
-#. ``fn_set_hook('update_exceptions_post', $product_id, $exceptions);``
 
 #. ``fn_set_hook('clone_options_inventory_pre', $from_product_id, $to_product_id, $options, $variants);``
 
