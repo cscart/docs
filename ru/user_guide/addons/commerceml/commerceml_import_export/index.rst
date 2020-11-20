@@ -4,7 +4,7 @@
 
 .. important::
 
-    Актуальные инструкции для обмена находятся :doc:`на другой странице </user_guide/addonc/commerceml/index>`.
+    Актуальные инструкции для обмена между 1С/МойСклад/Класс365 и CS-Cart/Multi-Vendor находятся :doc:`на другой странице </user_guide/addons/commerceml/index>`.
 
 
 .. toctree::
