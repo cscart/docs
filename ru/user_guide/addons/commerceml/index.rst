@@ -45,7 +45,7 @@
 .. toctree::
     :maxdepth: 1
 
-    1c/instruction/index
+    1c/index
     moy_sklad/index
     class365/index
 
