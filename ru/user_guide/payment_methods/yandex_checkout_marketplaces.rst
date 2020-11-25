@@ -36,7 +36,7 @@
 
 #. Установите модуль :doc:`/user_guide/addons/yandex_checkout/index`.
 
-#. `Подключите ваш маркетплейс к ЮKassa. <https://money.yandex.ru/joinups/?cms_name=cscart>`_
+#. `Подключите ваш маркетплейс к ЮKassa. <https://yookassa.ru/joinups/?cms_name=cscart>`_
 
    .. note::
    

@@ -54,7 +54,7 @@
             -   Да
 
 
-    `Инструкция по созданию приложения на сайте ЮMoney <http://api.yandex.ru/money/doc/dg/tasks/register-client.xml>`_
+    `Инструкция по созданию приложения на сайте ЮMoney <https://yoomoney.ru/docs/wallet/using-api/authorization/register-client>`_.
 
 2.  Нажмите "Подтвердить".
 

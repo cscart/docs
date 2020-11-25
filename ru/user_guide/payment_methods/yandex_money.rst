@@ -27,7 +27,7 @@
 
 #. Установите модуль :doc:`/user_guide/addons/yandex_checkout/index`.
 
-#. `Подключите ваш интернет-магазин к ЮKassa <https://money.yandex.ru/joinups/?cms_name=cscart>`_
+#. `Подключите ваш интернет-магазин к ЮKassa <https://yookassa.ru/joinups/?cms_name=cscart>`_.
 
 #. :doc:`Создайте новый cпособ оплаты <adding_payment>` с процессором *ЮKassa*.
 
