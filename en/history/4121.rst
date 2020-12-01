@@ -113,6 +113,10 @@ Functionality Changes
 
 [*] Add-ons: Stripe payments: Cyprus was added to list of supported countries.
 
+[*] Add-ons: Tags: The ``delete_tags_by_params_post`` hook now handle any deleting tag operations.
+
+[*] Addons: HiDPI: Outdated image restoration for old version was removed.
+
 [*] Admin panel: Design: Autocompletion is now disabled for all the fields in the admin panel.
 
 [*] Admin panel: Notifications: The interface for managing notification was improved.
@@ -172,6 +176,8 @@ Functionality Changes
 Bugfixes
 ========
 
+[!] Addons: Comments and Reviews: Default discussion type was not set to new objects in some cases. Fixed.
+
 [!] Add-ons: Comments and reviews: The frame that highlighted the selected checkbox was cropped on some pages in the admin panel. Fixed.
 
 [!] Add-ons: Comments and reviews: Error occurred if testimonial time format was incorrect. Fixed.
@@ -193,6 +199,8 @@ Bugfixes
 [!] Add-ons: Product variations: Child variations of a product could appear in search even when the default variation was hidden. Fixed.
 
 [!] Add-ons: Product variations: Design: If a product had a long name, the list of variations in the admin panel went off screen. Fixed.
+
+[!] Add-ons: Product variations: Import: If there were a lot of import warnings, they hid import statistics. Fixed.
 
 [!] Add-ons: RMA: Warehouses [Beta]: A PHP Notice could occur during the processing of a return request, if the product in the request was split by warehouses. Fixed.
 
@@ -238,6 +246,10 @@ Bugfixes
 
 [!] Core: Phone: An unavailable country code could be entered in the phone field. Fixed.
 
+[!] Core: Product options: The option with the file type was reset when adding the item to the cart. Fixed.
+
+[!] Design: Addons: Banners: Screen enlargement wasn't work on mobile devices on blocks with carousel. Fixed.
+
 [!] Design: Backend: The storefront switcher was not displayed on small screens. Fixed.
 
 [!] Design: Pages with product and category details contained W3C validation errors. Fixed.
@@ -247,6 +259,8 @@ Bugfixes
 [!] Design: There were some minor design issues in the customer area on mobile devices. Fixed.
 
 [!] E-mail notifications: Logos: The link from the logo did not lead to the storefront. Fixed.
+
+[!] Export/Import: Files in UTF-8 encoding from BOM were imported incorrectly. Fixed.
 
 [!] Export/Import: Product and  image URLs in the exported file could be wrong when the store had multiple storefronts. Fixed.
 
@@ -263,6 +277,10 @@ Bugfixes
 [!] Multi-Vendor: Add-ons: Product variations: Common products for vendors: Vendor product was not displayed in the list of products if the default variation had zero quantity, but another variation was in stock. Fixed.
 
 [!] Multi-Vendor: Add-ons: Reward Points: Promotions: It was possible to get reward points for promotions multiple times from one order. Fixed.
+
+[!] Multi-Vendor: Add-ons: Stores and pickup points: If text editing mode was enabled, some texts could not be edited on page. Fixed.
+
+[!] Multi-Vendor: Add-ons: Stores and pickup points: The list of owners was displayed in the vendor's panel. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor data premoderation: Disapproved products couldn't be sent to moderation when approval of product info updates wasn't required. Fixed.
 
@@ -300,6 +318,12 @@ Bugfixes
 
 [!] Performance: JS: The Notification Center could significantly delay loading the admin panel page when internet connection was slow. Fixed.
 
+[!] Product Filters: If a selected filter option had no products, then the filter was unavailable. Fixed.
+
+[!] Product features: Renaming a feature variant into a variant that already existed caused the deletion of variant data. Fixed.
+
+[!] Products: Advanced search cancellation was dropped selected products. Fixed.
+
 [!] Products: Categories created during bulk product editing weren't saved. Fixed.
 
 [!] Products: Categories: Changing product categories via the context menu did not work if the number of products displayed on the page was changed. Fixed.
@@ -319,6 +343,8 @@ Bugfixes
 [!] Thumbnails: The thumbnail loading animation was not centered when the internet connection was slow. Fixed.
 
 [!] Upgrade Center: Some upgrades did not show notifications about changes when the upgrade was installed again after the previous version had been restored from backup. Fixed.
+
+[!] Vendors: Mail: When customer applied for a vendor and his new vendor's status was set to active, vendor did not receive mail notification for this event. Fixed.
 
 [!] WYSIWYG: An error occurred when an image was added to product description with the TinyMCE editor. Fixed.
 
