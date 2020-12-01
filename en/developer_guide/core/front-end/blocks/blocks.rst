@@ -238,7 +238,7 @@ When generating the entry key in the cache, you can use serialized values of dif
 
   For example, if you specify the ``items_per_page`` parameter here, there will be a separate entry in the cache for every value of ``$_SESSION['items_per_page']``.
 
-* **cookie_handlers** *(array)*—the list of the parameter names in the user’s cookies (the keys in the array returned by ``fn_get_session data()``).
+* **cookie_handlers** *(array)*—the list of the parameter names in the user’s cookies (the keys in the array returned by ``fn_get_session_data()``).
 
 * **auth_handlers** *(array)*—the list of the keys in the ``$_SESSION['auth']`` array.
 
