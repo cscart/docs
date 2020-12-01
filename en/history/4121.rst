@@ -66,6 +66,12 @@ New Features and Improvements
 
 [+] Notifications: Ability to choose recipients for different types of notifications was added.
 
+[+] Performance: Product pages work much faster when a number of features are requested as they are now requested in bulk.
+
+[+] Performance: Now cache can be registered before the company ID is known, reducing a lot of queries.
+
+[+] Performance: Product variation SEO attributes are now cached and retrieved in bulk in a single query.
+
 [+] Privileges: You can now configure what actions an administrator can perform on an order.
 
 [+] Product features: A new feature field called "Internal name" were added to the Administration panel. It helps to work with different features that need to have the same name on the storefront.
