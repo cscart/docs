@@ -25,10 +25,10 @@
         -   Система онлайн платежей
 
     *   -   Банковская карта
-        -   Яндекс.Деньги, Сбербанк.Онлайн, Альфабанк, Paymaster, Payler, RBK Money, Авангард, Qiwi, Assist, Robokassa, PayAnyWay, ChronoPay, WebMoney
+        -   ЮMoney, Сбербанк.Онлайн, Альфабанк, Paymaster, Payler, RBK Money, Авангард, Qiwi, Assist, Robokassa, PayAnyWay, ChronoPay, WebMoney
 
-    *   -   Яндекс.Деньги
-        -   Яндекс.Деньги
+    *   -   ЮMoney
+        -   ЮMoney
 
     *   -   WebMoney
         -   WebMoney
@@ -83,7 +83,7 @@
 
         -   Для приёма оплаты используется сторонний сервис, шлюз банка или провайдер (агрегатор) платежей.
 
-            Например: :doc:`QIWI <qiwi>`, :doc:`Яндекс.Деньги <yandex_money>`, :doc:`PayMaster <paymaster>` и т.д.
+            Например: :doc:`QIWI <qiwi>`, :doc:`ЮMoney <yandex_money>`, :doc:`PayMaster <paymaster>` и т.д.
 
 
 Создание способа оплаты

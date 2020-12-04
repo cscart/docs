@@ -58,22 +58,22 @@
         -   Система онлайн платежей
 
     *   -   VISA, MasterCard
-        -   Яндекс.Деньги, Сбербанк.Онлайн, Альфабанк, Paymaster, Payler, RBK Money, Авангард, Qiwi, Assist, Robokassa, PayAnyWay, ChronoPay, WebMoney
+        -   ЮMoney, Сбербанк.Онлайн, Альфабанк, Paymaster, Payler, RBK Money, Авангард, Qiwi, Assist, Robokassa, PayAnyWay, ChronoPay, WebMoney
 
     *   -   JCB, DCI, AE
         -   Assist
 
     *   -   Бесплатный кардридер
-        -   Яндекс.Деньги, RBK Money
+        -   ЮMoney, RBK Money
 
     *   -   Банковский перевод
-        -   Яндекс.Деньги, RBK Money, Webmoney
+        -   ЮMoney, RBK Money, Webmoney
 
     *   -   Интернет банкинг
         -   Сбербанк.Онлайн, Альфабанк, Paymaster, RBK Money, Webmoney, Robokassa, Qiwi, PayAnyWay
 
     *   -   Терминалы оплаты
-        -   Яндекс.Деньги, RBK Money, Qiwi, Webmoney, Robokassa, PayAnyWay
+        -   ЮMoney, RBK Money, Qiwi, Webmoney, Robokassa, PayAnyWay
 
     *   -   Почта РФ
         -   RBK Money, PayAnyWay
@@ -82,7 +82,7 @@
         -   Paymaster, RBK Money, Robokassa, PayAnyWay
 
     *   -   МТС, Билайн, Мегафон
-        -   Яндекс.Деньги, Paymaster, Qiwi
+        -   ЮMoney, Paymaster, Qiwi
 
     *   -   QIWI Кошелёк
         -   Qiwi, Paymaster
@@ -94,10 +94,10 @@
         -   Paymaster
 
     *   -   WebMoney
-        -   Paymaster, Яндекс.Деньги, WebMoney, RBK Money, Robokassa, Assist, PayAnyWay
+        -   Paymaster, ЮMoney, WebMoney, RBK Money, Robokassa, Assist, PayAnyWay
 
-    *   -   Яндекс.Деньги
-        -   Яндекс.Деньги, Robokassa, Assist, PayAnyWay
+    *   -   ЮMoney
+        -   ЮMoney, Robokassa, Assist, PayAnyWay
 
     *   -   Кредит онлайн
         -   Купи в кредит, Всё в кредит

@@ -5,7 +5,7 @@
 Возможности
 ===========
 
-Модуль позволяет вашему `магазину <https://kassa.yandex.ru/>`_ на CS-Cart или `маркетплейсу <https://kassa.yandex.ru/marketplaces/>`_ на Multi-Vendor принимать платежи через ЮKassa. Она хороша тем, что:
+Модуль позволяет вашему `магазину <https://yookassa.ru/>`_ на CS-Cart или `маркетплейсу <https://yookassa.ru/marketplaces/>`_ на Multi-Vendor принимать платежи через ЮKassa. Она хороша тем, что:
 
 * предлагает покупателям разные способы оплаты;
 
