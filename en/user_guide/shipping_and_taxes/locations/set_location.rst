@@ -20,7 +20,7 @@ How To: Set up a Rate Area
 
    .. important::
 
-       If geographic areas (states or countries) of different rate areas intersect each other, then a more rate area will be used for a customer at checkout. For example, if both the *USA + Maryland* and *USA + All states* rate areas include the customer's address, the first one will be used.
+       If geographic areas (states or countries) of different rate areas intersect each other, then a more specific rate area will be used for a customer at checkout. For example, if both the *USA + Maryland* and *USA + All states* rate areas include the customer's address, the first one will be used.
 
    .. image:: img/set_location.png
        :align: center
