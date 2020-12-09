@@ -82,7 +82,7 @@ App: Контроллеры, классы, функции, библиотеки
         │    
         ├── payments/                   <- Способы оплаты:
         │    ├── paypal.php             <- PayPal
-        │    ├── yandex_money.php       <- ЮKassa
+        │    ├── yandex_money.php       <- ЮMoney
         │    └── ...                    <- и другие
         │    
         ├── schemas/                    <- PHP схемы:
