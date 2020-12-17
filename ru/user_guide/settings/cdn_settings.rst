@@ -12,8 +12,6 @@
 
       В документации Amazon более подробно описан `процесс получения ключей <http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html>`_.
 
-* **CNAME запись** — имя домена, которое можно использовать вместо автоматически сгенерированного в CloudFront домена. Вам также нужно создать CNAME запись в используемом вами DNS-сервисе, чтобы запросы шли с этого имени на домен CloudFront (домен CloudFront отобразится на этой странице после того, как вы сохраните данные аккаунта AWS).
-
   .. important::
 
       Если в магазине используется HTTPS (не важно, в панели администратора или на витрине), то нужно загрузить SSL-сертификат для этого доменного имени в CloudFront. В документации Amazon есть `больше информации <http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/SecureConnections.html#cnames-and-https-procedure>`_.
