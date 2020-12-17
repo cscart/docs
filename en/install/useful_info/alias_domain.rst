@@ -38,7 +38,7 @@ This instrution describes how to make your alias domain work properly with your 
   $config['http_path'] = '/your_cscart_directory';
 
   // Host and directory where cs-cart is installed on secure server
-  $config['https_host'] = $_SERVER['HTTPS_HOST'];
+  $config['https_host'] = $_SERVER['HTTP_HOST'];
   $config['https_path'] = '/your_cscart_directory';
 
 5. Save the file.
