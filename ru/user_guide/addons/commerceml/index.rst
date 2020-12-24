@@ -1,4 +1,4 @@
-**************************************
+	**************************************
 "CommerceML (1С, МойСклад, Бизнес.Ру)"
 **************************************
 
@@ -107,20 +107,20 @@
   $config[‘commerceml’][‘max_log_files’] = 10;
 
 
-Связанные статьи
+Связанные статьи 
 ================
 
 .. toctree::
     :maxdepth: 1
 
-    commerceml_import_export/exchange_any_store/index
-    error_exchange/index
+    /user_guide/addons/commerceml/commerceml_import_export/exchange_any_store/index
+    /user_guide/addons/commerceml/error_exchange/index
+    /developer_guide/1c/index
   
 .. toctree::
     :maxdepth: 1
     :glob:
     :hidden:
-
+	
     1c/index
-    /developer_guide/1c/index
     commerceml_import_export/index
