@@ -6,7 +6,7 @@ Accounting
 
     The **Accounting** page first appeared in **Multi-Vendor 4.5.1** to replace the old **Account balance** page from `4.4.x <http://docs.cs-cart.com/4.4.x/user_guide/users/vendors/account_balance.html>`_ and `4.3.x <http://docs.cs-cart.com/4.3.x/user_guide/users/vendors/account_balance.html>`_. 
 
-Multi-Vendor has a page that helps store owners and vendors to keep track of their income and transactions. To access that page, go to **Vendors → Accounting**. Here's the list of actions that the page takes into account:
+Multi-Vendor has a page that helps marketplace owners and vendors to keep track of their income and transactions. To access that page, go to **Vendors → Accounting**. Here's the list of actions that the page takes into account:
 
 * Creating an order.
 
@@ -28,13 +28,13 @@ The table on the **Accounting** page consists of the following columns:
 
   * *Pending*—a transaction gets this status by default. This status means that a payment should be made.
 
-  * *Completed*—store administrators set this status when a payment is made and confirmed.
+  * *Completed*—marketplace administrators set this status when a payment is made and confirmed.
 
-  * *Declined*—store administrators set this status when a payment gets declined or isn't made in full.
+  * *Declined*—marketplace administrators set this status when a payment gets declined or isn't made in full.
 
   .. note::
 
-      Vendor's administrators can't change the statuses of transactions on the **Accounting** page. Only store administrators can do that.
+      Vendor's administrators can't change the statuses of transactions on the **Accounting** page. Only marketplace administrators can do that.
 
 * **Date**—the date and time when the transaction appeared on the list.
 
@@ -54,9 +54,9 @@ Payouts and Withdrawals
 
 In earlier versions of Multi-Vendor (`4.4.x <http://docs.cs-cart.com/4.4.x/user_guide/users/vendors/account_balance.html>`_, `4.3.x <http://docs.cs-cart.com/4.3.x/user_guide/users/vendors/account_balance.html>`_) we used the term **payout** in 2 cases:
 
-* When a vendor made a payment to the store owner.
+* When a vendor made a payment to the marketplace owner.
 
-* When the store owner made a payment to a vendor.
+* When the marketplace owner made a payment to a vendor.
 
 Since Multi-Vendor 4.5.1 there are 2 separate terms for these cases: **payout** and **withdrawal** respectively.
 
@@ -66,11 +66,11 @@ Since Multi-Vendor 4.5.1 there are 2 separate terms for these cases: **payout** 
 Payouts
 -------
 
-Store owners issue **payouts** to collect money from vendors. When a store owner issues a payout, the vendor is supposed to make the payment. The store owner then receives the money and sets the status of the payout to *Completed*.
+Marketplace owners issue **payouts** to collect money from vendors. When a marketplace owner issues a payout, the vendor is supposed to make the payment. The marketplace owner then receives the money and sets the status of the payout to *Completed*.
 
 .. note::
 
-    Vendor's administrators can't issue a payout or change its status. Only store administrators can do that.
+    Vendor's administrators can't issue a payout or change its status. Only marketplace administrators can do that.
 
 In some cases, payouts can be issued and even completed automatically: 
 
@@ -88,7 +88,7 @@ To issue a payout manually:
 
    * Select a vendor to request money from.
 
-   * Specify the amount of money in the primary currency of your store.
+   * Specify the amount of money in the primary currency of your marketplace.
 
    * Enter a commentary, if necessary.
 
@@ -100,7 +100,7 @@ To issue a payout manually:
 
 4. Click **Create**. A new payout will appear on the list of transactions.
 
-Once the vendor makes the payment, store administrator can change the status of the payout from *Pending* to *Completed*. It is a way to confirm that the money has been received.
+Once the vendor makes the payment, marketplace administrator can change the status of the payout from *Pending* to *Completed*. It is a way to confirm that the money has been received.
 
 .. image:: img/confirm_payout.png
     :align: center
@@ -113,7 +113,7 @@ Once the vendor makes the payment, store administrator can change the status of 
 Withdrawals
 -----------
 
-By default, all the money from purchases goes to the store owner. The **Accounting** page keeps track of :ref:`how much money a vendor can withdraw from the store. <mve-income-and-balance>` To collect money from store owners, vendors request **withdrawals**.
+By default, all the money from purchases goes to the marketplace owner. The **Accounting** page keeps track of :ref:`how much money a vendor can withdraw from the marketplace. <mve-income-and-balance>` To collect money from marketplace owners, vendors request **withdrawals**.
 
 In some cases, withdrawals can be requested and completed automatically. For example, the :doc:`PayPal Adaptive Payments </user_guide/addons/paypal_adaptive/index>` add-on can automatically distribute money among vendors. When the add-on does that, it creates *Completed* withdrawals automatically to keep the **Accounting** page up to date.
 
@@ -133,7 +133,7 @@ To request a withdrawal, a vendor must:
 
 #. A pop-up window with the withdrawal creation form will open. There you can:
 
-   * Specify the desired amount of money in the store's primary currency.
+   * Specify the desired amount of money in the marketplace's primary currency.
 
    * Enter a commentary, if necessary.
 
@@ -168,8 +168,8 @@ When working with the **Accounting** page, it's important to understand two term
 
       An order affects a vendor's balance only if the status of that order has the **Charge to vendor account** checkbox ticked.
 
-* **Income**—the earnings of a vendor or a store owner. Here is how it is calculated:
+* **Income**—the earnings of a vendor or a marketplace owner. Here is how it is calculated:
 
   * Vendor’s income = payments for orders - (commissions + payouts)
 
-  * Store owner’s income = commissions + payouts
+  * Marketplace owner’s income = commissions + payouts
