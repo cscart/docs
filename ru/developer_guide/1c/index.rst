@@ -14,11 +14,13 @@ CommerceML (1С)
 =====================================
 
 .. toctree::
-    :maxdepth: 4
+    :maxdepth: 3
     :glob:
-    
-    catalog
+
     orders
+    catalog
+    manual_mode
+    logs
 
 
 .. toctree::
@@ -29,6 +31,7 @@ CommerceML (1С)
     catalogxml
     ordersxml
 	check_list
+	
 
 
 
