@@ -38,7 +38,7 @@ Way 1: From a Vendor Settings Page
 
 #. Choose a plan from the list of already existing plans, or create a new one. To do this, enter the name of the new vendor plan and click **Add**.
 
-#. Fill in the filds for the new plan.
+#. Fill in the fields for the new plan.
 
 #. Click the **Create** button.
 
