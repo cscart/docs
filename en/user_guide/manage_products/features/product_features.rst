@@ -50,7 +50,7 @@ Way 1: From a Product Page
 
    .. note::
    
-       Click the **Advanced feature creation** button to procced to create the feature from the features list.
+       Click the **Advanced feature creation** button to proceed to create the feature from the features list.
 
 Way 2: From the Features List
 +++++++++++++++++++++++++++++
