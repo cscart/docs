@@ -28,7 +28,7 @@ Way 1: From a Product Page
 
 #. Open the **Products → Products** page.
 
-#. Click on the name of the product to open it's settings.
+#. Click on the name of the product to open its settings.
 
 #. Open the **Features** tab.
 
