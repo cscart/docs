@@ -2,17 +2,21 @@
 Запуск обмена в ручном режиме
 *****************************
 
+.. important:: 
+  
+	Статья актуальна для CS-Cart 4.12.2 и более новых версий.
+
 .. contents::
     :local: 
     :depth: 2
 
 Для запуска выгрузки каталога товара в ручном режиме выполните следующие действия:
 
-#. Создайте директорию `var/files/<company_id>/exim/1C`, где `<company_id>` — идентификатор витрины или продавца в зависимости от редакции CS-Cart.
+#. Создайте директорию `var/files/<company_id>/exim/1C`, где `<company_id>` — идентификатор витрины (в CS-Cart) или продавца (в Multi-Vendor).
 
 #. Загрузите в директорию `var/files/<company_id>/exim/1C` файлы import.xml и offers.xml, полученные из системы учета.
 
-#. Для обработки файла import.xml перейдите в браузере по адресу http://example.com/index.php?dispatch=commerceml.import&type=catalog&mode=import&filename=import.xml&is_manual=1. На запрос базовой авторизации укажите email и пароль администратора витрины либо продавца в зависимости от редакции CS-Cart.
+#. Для обработки файла import.xml перейдите в браузере по адресу http://example.com/index.php?dispatch=commerceml.import&type=catalog&mode=import&filename=import.xml&is_manual=1. На запрос базовой авторизации укажите email и пароль администратора витрины (в CS-Cart) или продавца (в Multi-Vendor).
    
    Результатом запроса могут быть следующие ответы:
    
