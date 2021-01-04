@@ -17,15 +17,15 @@ General
 
   For example, if you sell shoes and T-shirts, you probably have 2 separate features called *Size* on the storefront. Without the main names (such as *Shoe size* and *T-shirt size*) they'd look the same in the administration panel, and it'd be hard to guess which of these features to apply to your newly-created product.
   
-* **Storefront** (available only in CS-Cart) — the storefront, which the feature belongs to.
+* **Storefront** (available only in CS-Cart)—the storefront, which the feature belongs to.
 
-* **Vendor** (vendors are available only in Multi-Vendor)—the vendor who ownes this feature, and who has the ability to edit and delete it.
+* **Vendor** (vendors are available only in Multi-Vendor)—the vendor who owns this feature, and who has the ability to edit and delete it.
 
   .. note::
   
       When a vendor creates a feature, his name automatically appears in the **Vendor** field. Please note that by default, vendors can not create features in Multi-Vendor. To give them that ability, the marketplace owner has to :doc:`allow them to manage product features </user_guide/manage_products/features/vendor_features>`.
 
-* **Purpose**—what the feature will be used for. Every purpose has a description that helps with choice. Instead of repeating their descriptions here, we'll say what purpose it's best to choose, and when:
+* **Purpose**—what the feature will be used for. Every purpose has a description that helps with choice. Instead of repeating their descriptions here, we'll say which purpose it's best to choose, and when:
 
   * **Product search via filters** is the most versatile, and usually is the best choice. The only exception is when you intend to use it to differentiate :doc:`product variations </user_guide/manage_products/products/product_variations>`.
 
