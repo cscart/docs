@@ -12,7 +12,7 @@ Multi-Vendor has a page that helps marketplace owners and vendors to keep track 
 
 * Changing an order in a way that affects order total.
 
-* Issuing a refund via the PayPal Payments or RMA add-on.
+* Issuing a refund via the :doc:`/user_guide/addons/paypal_payments/index`, :doc:`/user_guide/addons/paypal_commerce_platform/index`, :doc:`/user_guide/addons/stripe_connect/index` or :doc:`/user_guide/addons/vendor_plans/index` add-on.
 
 * Issuing a :ref:`payout <payout>`.
 
@@ -27,7 +27,7 @@ The table on the **Accounting** page consists of the following columns:
 * **Status**—the status of the transaction; it applies only to :ref:`payouts <payout>` and :ref:`withdrawals <withdrawal>`. There are three possible statuses:
 
   * *Pending*—a transaction gets this status by default. This status means that a payment should be made.
-
+	
   * *Completed*—marketplace administrators set this status when a payment is made and confirmed.
 
   * *Declined*—marketplace administrators set this status when a payment gets declined or isn't made in full.
@@ -46,7 +46,7 @@ The table on the **Accounting** page consists of the following columns:
 
 .. note::
 
-    If you enable the :doc:`Vendor plans </user_guide/addons/vendor_plans/index>` add-on, you'll also see the transaction fees in this column.
+    If you enable the :doc:`/user_guide/addons/vendor_plans/index` add-on, you'll also see the transaction fees in this column.
 
 =======================
 Payouts and Withdrawals
@@ -74,9 +74,9 @@ Marketplace owners issue **payouts** to collect money from vendors. When a marke
 
 In some cases, payouts can be issued and even completed automatically: 
 
-* The :doc:`Vendor plans </user_guide/addons/vendor_plans/index>` add-on issues payouts with the *Pending* status. This is done to request one-time and periordic payments from vendors for being subscribed to a certain plan. 
+* The :doc:`/user_guide/addons/vendor_plans/index` add-on issues payouts with the *Pending* status. This is done to request one-time and periordic payments from vendors for being subscribed to a certain plan. 
 
-* The :doc:`PayPal Adaptive Payments </user_guide/addons/paypal_adaptive/index>` add-on can change the status of payouts to *Completed*. This is done when you allow the add-on to collect payouts from vendors automatically.
+* The :doc:`/user_guide/addons/stripe_connect/index` add-on can change the status of payouts to *Completed*. This is done when you allow the add-on to collect payouts from vendors automatically.
 
 To issue a payout manually:
 
@@ -115,7 +115,7 @@ Withdrawals
 
 By default, all the money from purchases goes to the marketplace owner. The **Accounting** page keeps track of :ref:`how much money a vendor can withdraw from the marketplace. <mve-income-and-balance>` To collect money from marketplace owners, vendors request **withdrawals**.
 
-In some cases, withdrawals can be requested and completed automatically. For example, the :doc:`PayPal Adaptive Payments </user_guide/addons/paypal_adaptive/index>` add-on can automatically distribute money among vendors. When the add-on does that, it creates *Completed* withdrawals automatically to keep the **Accounting** page up to date.
+In some cases, withdrawals can be requested and completed automatically. For example, the :doc:`/user_guide/addons/paypal_commerce_platform/index` and the :doc:`/user_guide/addons/stripe_connect/index` add-ons can automatically distribute money among vendors. When the add-on does that, it creates *Completed* withdrawals automatically to keep the **Accounting** page up to date.
 
 .. note::
 
