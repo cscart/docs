@@ -12,7 +12,11 @@ Multi-Vendor has a page that helps marketplace owners and vendors to keep track 
 
 * Changing an order in a way that affects order total.
 
+<<<<<<< HEAD
 * Issuing a refund via the PayPal Payments or RMA add-on.
+=======
+* Issuing a refund via the :doc:`/user_guide/addons/paypal_payments/index`, :doc:`/user_guide/addons/paypal_commerce_platform/index`, :doc:`/user_guide/addons/stripe_connect/index` or :doc:`/user_guide/addons/rma/index` add-on.
+>>>>>>> 015ccd80 (User_guide: Users: Vendors: Actual add-ons added)
 
 * Issuing a :ref:`payout <payout>`.
 
