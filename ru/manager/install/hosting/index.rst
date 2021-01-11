@@ -3,8 +3,7 @@
 
 .. contents::
     :local: 
-    :depth: 2
-
+    :depth: 1
 
 Для установки CS-Cart (Multi-Vendor) подойдёт любой современный хостинг с поддержкой PHP и MySQL.
 
@@ -13,32 +12,6 @@
 .. note::
 
     Для инструкции использован тариф Host-1 от компании Reg.ru (на 10 сайтов, панель управления хостингом — cPanel). Для старта подойдёт и более дешёвый тариф — Host-0, однако нам нужно иметь возможность разворачивать несколько сайтов на хостинге.
-
-Видеоинструкции
-===============
-
-Виртуальный хостинг с ISP Manager
-*********************************
-
-|isp|
-
-.. |isp| raw:: html
-
-   <iframe width="420" height="315" src="//www.youtube.com/embed/HMZNLZWIXZs" frameborder="0" allowfullscreen></iframe>
-
-
-Виртуальный хостинг с Cpanel
-****************************
-
-|cpanel|
-
-.. |cpanel| raw:: html
-
-   <iframe width="560" height="315" src="//www.youtube.com/embed/WTAA0L_pnKE" frameborder="0" allowfullscreen></iframe>
-
-
-Детальное описание процесса установки (Cpanel)
-==============================================
 
 Панель управления хостингом — cPanel
 ************************************
