@@ -26,7 +26,7 @@ Here are the important differences between CS-Cart Ultimate in Multi-Vendor Ulti
 
 .. important::
 
-    To configure multiple storefronts on your web hosting, please :doc:`follow these inistructions. </install/storefronts/index>`
+    To configure multiple storefronts on your web hosting, please :doc:`follow these instructions. </install/storefronts/index>`
 
 .. toctree::
     :maxdepth: 4

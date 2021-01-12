@@ -4,7 +4,7 @@ How To: Share Objects Among Stores
 
 .. important::
 
-    This article applies only to CS-Cart Ultimate. In Multi-Vendor Ultimate, check the settings of a storefront, or the **Storefronts** tab in the properties of an object.
+    This article applies only to CS-Cart Ultimate. In Multi-Vendor Ultimate, to find out the storefront to which an object belongs, check the settings of the storefront or the **Storefronts** tab in the properties of an object.
 
 ======================
 How Does Sharing Work?
