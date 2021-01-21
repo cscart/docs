@@ -52,35 +52,35 @@ Deprecated Functions
 New Functions
 +++++++++++++
 
-#. Get area::
+#. Get the site area::
 
 	 \Tygh\Template\IContext::getArea()
 
-#. Get area::
+#. Get the site area::
 
 	 \Tygh\Template\Snippet\Table\ItemContext::getArea()
 	 
-#. Get area::
+#. Get the site area::
 
 	 \Tygh\Template\Mail\Context::getArea() 
 	 
-#. Get area::
+#. Get the site area::
 
 	 \Tygh\Template\Internal\Context::getArea() 
 
-#. Get area::
+#. Get the site area::
 
 	 \Tygh\Template\Document\Order\Context::getArea() 
 	 
-#. Get area::
+#. Get the site area::
 
 	 \Tygh\Addons\GiftCertificates\Documents\GiftCertificate\Context::getArea() 
 	 
-#. Gathers additional product data for an API request::
+#. Gather additional product data for an API request::
 
 	 \fn_storefront_rest_api_gather_additional_products_data(array $products, array $params = []) 
 	 
-#. Loads seller data for product offers::
+#. Load seller data for product offers::
 
 	 \fn_master_products_load_products_seller_data(array $products) 
 
@@ -122,6 +122,6 @@ New Hooks
 
      fn_set_hook('storefront_rest_api_gather_additional_products_data_post', $products, $params, $data_gather_params);
 	 
-#. This hook is executed after logining. The hook allows you to modify URL redirection and session data::
+#. This hook is executed after logging in. The hook allows you to modify URL redirection and session data::
 
 	 fn_set_hook('hybrid_auth_login_post', $user_data, $auth_data, $provider_id, $redirect_url, $user_status);
