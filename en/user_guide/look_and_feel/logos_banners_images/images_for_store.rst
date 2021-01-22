@@ -2,7 +2,7 @@
 What Images Are the Best for My Online Store?
 *********************************************
 	
-There are no strict limitations on the size and format of uploaded images. However, we can give some recommendations for faster page loading and more correct images display.
+There are no strict limitations on the size and format of uploaded images. However, we can give some recommendations to make pages load faster and images to show correctly.
 
 We do not recommend uploading overly large images—they need a lot of server space and increase hosting fees. Also, large images increase page load time. This can lead to users leaving without waiting for the page to load.
 
