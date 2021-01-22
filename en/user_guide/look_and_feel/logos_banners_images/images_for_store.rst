@@ -77,7 +77,7 @@ The CS-Cart Marketplace has `add-ons that convert images to WebP and JPEG 2000 f
 What Graphics Library Should I Use on My Server?
 ================================================
 
-There are different graphics libraries on your server: **Imagick**, **GD**. The latter is available on all hosting. But we recommend **Imagick**, because it offers better performance and quality of the processed images. 
+There are different graphics libraries on your server: **Imagick**, **GD**. The latter is available almost at any hosting. But we recommend **Imagick**, because it offers better performance and quality of the processed images. 
 
 ================================
 What's the Best Size for a Logo?
@@ -85,7 +85,7 @@ What's the Best Size for a Logo?
 
 The logo size always depends on the purpose of the logo. But you should never upload too large images. For example, `in the demo version of the CS-Cart store <https://demo.cs-cart.com>`_, the logo size is 176x34 px. On the storefront, the logo size is limited by the width of the block in which it is located.
 
-You can also attach your logo in emails. By default, the size of the logo in the emails is not limited, so it is better to attach an image of an appropriate size. But if necessary, you can limit the max size of the logo in the emails on the page **Administration → Notifications → Snippets → Header**. Replace this part of the code:
+The logo also appears in emails. By default, the size of the logo in the emails is not limited, so it is better to use an image of an appropriate size. But if necessary, you can limit the max size of the logo in the emails in the page **Administration → Notifications → Snippets → Header**. Replace this part of the code:
 
 ::
 

@@ -124,7 +124,7 @@ Server Configuration Requirements
 
   Notes:
 
-  * **GD** is available on all hosting. But we recommend **Imagick**, because it offers better performance and quality of the processed images.
+  * **GD** is available almost at any hosting. But we recommend **Imagick**, because it offers better performance and quality of the processed images.
 
     **Imagick** is a `PECL extension <https://pecl.php.net/package/imagick>`_. The official PHP documentation has `detailed installation instructions for Imagick <http://php.net/manual/en/imagick.setup.php>`_. `ImageMagick <http://www.imagemagick.org/script/index.php>`_ version 6.5.3-10+ and PHP 5.4.0+ must be installed on your server.
 
