@@ -54,9 +54,9 @@ Functionality Changes
 
 [*] Export/import: States: States are placed in their own section.
 
-[*] Multi-Vendor: Vendor panel: Storefront link in the top/bottom toolbar now routes to the vendor's microstore.
-
 [*] Multi-Vendor: Export/Import: When a vendor imports existing products with no / non-existent category, such products will be updated and left in existing categories.
+
+[*] Multi-Vendor: Vendor panel: Storefront link in the top/bottom toolbar now routes to the vendor's microstore.
 
 ========
 Bugfixes
@@ -158,10 +158,6 @@ Bugfixes
 
 [!] Mobile application: Corrected the work of all translations.
 
-[!] Multi-Vendor Ultimate: Layouts: If the store had multiple storefronts, the layout preview opened the main storefront. Fixed.
-
-[!] Multi-Vendor Ultimate: Storefronts: If storefronts paths were overlapped between themselves, some storefronts could be opened incorrectly. Fixed.
-
 [!] Multi-Vendor: Add-ons: Advanced products import: Marketplace admin was not able to manage mappings for vendor preset. Fixed.
 
 [!] Multi-Vendor: Add-ons: Stripe Connect: Some orders couldn't be placed when the "Commission includes" add-on setting was set to "Order commission and unpaid payouts", and 3-D Secure was enabled for the payment method. Fixed.
@@ -195,6 +191,10 @@ Bugfixes
 [!] Multi-Vendor Plus: Add-ons: Vendor locations [Beta]: Vendor privileges: With the "Vendors: Can view only" privilege enabled, a vendor's address was not displayed in the vendor's panel. Fixed.
 
 [!] Multi-Vendor Ultimate: Add-ons: Vendor rating: Add-on logging settings were not displayed properly in marketplaces with multiple storefronts. Fixed.
+
+[!] Multi-Vendor Ultimate: Layouts: If the store had multiple storefronts, the layout preview opened the main storefront. Fixed.
+
+[!] Multi-Vendor Ultimate: Storefronts: If storefronts paths were overlapped between themselves, some storefronts could be opened incorrectly. Fixed.
 
 [!] Multi-Vendor Ultimate: Settings: The storefront switch was displayed in the sections which did not support multiple storefronts. Fixed.
 
