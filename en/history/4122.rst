@@ -10,13 +10,11 @@ New Features and Improvements
 
 [+] Add-ons: Email marketing: SEO: A context menu was added to the "Subscribers",  "SEO rules" and "301 redirects" pages.
 
-[+] Add-ons: Message Center: Notification settings were updated.
-
 [+] Add-ons: Stripe payments: Postal code field added to credit card form to reduce card issuer declines.
 
 [+] Add-ons: Tags: Advanced products import: Reward points: Context menus were added.
 
-[+] Admin Panel: The ability to select default saved search was added for products, orders, shipments, features and vendors pages.
+[+] Admin Panel: The ability to select default saved search was added for for the lists of products, orders, shipments, features and vendors.
 
 [+] Core: Sessions: Cart synchronization between several browsers/devices added for logged users.
 
@@ -24,9 +22,7 @@ New Features and Improvements
 
 [+] Export/Import: When products import with no / non-existent category, the category "Products without category" will be created where new imported products will be placed.
 
-[+] Multi-Vendor: Add-ons: Advanced product import: Vendors and admins can now save their own files to presets without interfering each other.
-
-[+] Multi-Vendor Ultimate: Add-ons: Data feeds: Now you can generate and export custom product feeds from a specific storefront.
+[+] Multi-Vendor: Add-ons: Advanced product import: Vendors and admins can now save their own files to presets without interfering with each other.
 
 [+] Multi-Vendor: Add-ons: Stripe Connect Payments: Error logging added.
 
@@ -35,6 +31,8 @@ New Features and Improvements
 [+] Multi-Vendor: Orders: Invoice: Vendor details are now displayed depending on the vendor profile fields settings.
 
 [+] Multi-Vendor: Profile fields: Vendors: Now custom profile fields can be displayed on the vendor detail page in the storefront.
+
+[+] Multi-Vendor Ultimate: Add-ons: Data feeds: Now you can generate and export custom product feeds from a specific storefront.
 
 [+] Orders: Shipments:  Texts & languages: A context menus were added to the "Shipments" and "Texts & languages" pages.
 
@@ -46,17 +44,19 @@ New Features and Improvements
 Functionality Changes
 =====================
 
-[*] Add-ons: Google Analytics: The Google Analytics connection was updated to a connection with Google Analytics 4 support.
+[*] Add-ons: Google Analytics: The support of Google Analytics 4 was added.
+
+[*] Add-ons: Message Center: Notification names in the notification settings were updated.
 
 [*] Add-ons: Message center: Now, if a message was sent from the page of a product, order or import preset, it is easier to see this object, and to understand the context.
 
-[*] Admin panel: Orders: The order shipping method is now selected by default in the modal when creating a detailed shipment.
+[*] Admin panel: Orders: The order shipping method is now selected by default when creating a detailed shipment.
 
 [*] Export/import: States: States are placed in their own section.
 
 [*] Multi-Vendor: Vendor panel: Storefront link in the top/bottom toolbar now routes to the vendor's microstore.
 
-[*] Multi-Vendor: Export/Import: When the vendor imports existing products with no / non-existent category, such products will be updated and left in existing categories.
+[*] Multi-Vendor: Export/Import: When a vendor imports existing products with no / non-existent category, such products will be updated and left in existing categories.
 
 ========
 Bugfixes
@@ -66,13 +66,11 @@ Bugfixes
 
 [!] Add-ons: Call request: The "Buy in One Click" button did not work on the product list. Fixed.
 
-[!] Add-ons: Common products for vendors: Product offers were displayed in product blocks with the "Newest" filling placed on product pages. Fixed.
-
 [!] Add-ons: Message Center: Notification language and language of receiver could mismatch. Fixed.
 
 [!] Add-ons: Message center: On the sidebar of the search, the panel with the saved searches was displayed incorrectly, and there were minor bugs. Fixed.
 
-[!] Add-ons: PayPal payments: Customer couldn't place an order when specific combination of store, tax and payment method settings was used. Fixed.
+[!] Add-ons: PayPal payments: Customer couldn't place an order when specific combination of store, tax, and payment method settings was used. Fixed.
 
 [!] Add-ons: PayPal payments: Downloadable products: A PHP error occured when buying downloadable products with PayPal. Fixed.
 
@@ -94,9 +92,9 @@ Bugfixes
 
 [!] Add-ons: SEO: PHP warning occurred on product pages when product prices were hidden for unlogged users. Fixed.
 
-[!] Add-ons: SEO: Schema.org markup was shown price only by primary currency. Fixed.
+[!] Add-ons: SEO: Schema.org markup showed price only for primary currency. Fixed.
 
-[!] Add-ons: Selecting only Third-party add-ons worked incorrect. Fixed.
+[!] Add-ons: Selecting only third-party add-ons worked incorrectly. Fixed.
 
 [!] Add-ons: Social login: An error might occur when logging in via LinkedIn. Fixed.
 
@@ -106,9 +104,9 @@ Bugfixes
 
 [!] Add-ons: eBay synchronization: Products were not exported to eBay due to PHP Fatal error. Fixed.
 
-[!] Addons: Newsletters: If a user tries to subscribe to the store, which has no mailing list, the subscription was not created. Fixed.
+[!] Add-ons: Newsletters: If a user tries to subscribe to the store, which has no mailing list, the subscription was not created. Fixed.
 
-[!] Addons: Watermarks: A PHP notice occured when trying to print order invoice. Fixed.
+[!] Add-ons: Watermarks: A PHP notice occured when trying to print order invoice. Fixed.
 
 [!] Admin panel: An administrator could interact with the statuses of items in some sections, even if he did not have privileges. Fixed.
 
@@ -126,7 +124,7 @@ Bugfixes
 
 [!] Design: Checkboxes located in one line were not at the same level. Fixed.
 
-[!] Design: Errors occured in the console when scrolling the carousel. Fixed.
+[!] Design: Errors occurred in the console when scrolling the carousel. Fixed.
 
 [!] Design: Features: Advanced search had an empty block. Fixed.
 
@@ -154,9 +152,9 @@ Bugfixes
 
 [!] Files: Administrators with a user group assigned couldn't chose files from the server when uploading files. Fixed.
 
-[!] Languages: Translations: The "Update to all" button was not working. Fixed.
+[!] Languages: Translations: The "Update to all" button did not work. Fixed.
 
-[!] Layouts: Pages: Selection was locked in the page layout and pages could not be added. Fixed.
+[!] Layouts: Pages: Selection was locked in the page layout, and pages could not be added. Fixed.
 
 [!] Mobile application: Corrected the work of all translations.
 
@@ -166,19 +164,11 @@ Bugfixes
 
 [!] Multi-Vendor: Add-ons: Advanced products import: Marketplace admin was not able to manage mappings for vendor preset. Fixed.
 
-[!] Multi-Vendor: Add-ons: Common products for vendors: Search for products that vendors can sell returned wrong results  in the admin panel. Fixed.
-
-[!] Multi-Vendor Plus: Add-ons: Payment dependencies: Direct Customer-to-Vendor Payments: There was no way to enable vendor's payment methods for marketplace owner's shipping methods. Fixed.
-
 [!] Multi-Vendor: Add-ons: Stripe Connect: Some orders couldn't be placed when the "Commission includes" add-on setting was set to "Order commission and unpaid payouts", and 3-D Secure was enabled for the payment method. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor locations [Beta]: After selecting a customer's location, the distance to vendors was not updated. Fixed.
 
-[!] Multi-Vendor: Add-ons: Vendor locations [Beta]: Vendor privileges: With the "Vendors: Can view only" privilege enabled, a vendor's address was not displayed in the vendor's panel. Fixed.
-
 [!] Multi-Vendor: Add-ons: Vendor plans: Commissions by category: Payout amount at the "Accounting page" was incorrect in cases when commission for category of bought product was different from commission in vendor's plan. Fixed.
-
-[!] Multi-Vendor Ultimate: Add-ons: Vendor rating: Add-on logging settings were not displayed properly in stores with multiple storefronts. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor-to-admin payments: Search results for vendors in the admin panel could be incorrect in some cases. Fixed.
 
@@ -188,17 +178,27 @@ Bugfixes
 
 [!] Multi-Vendor: Notifications: Email notification about new vendor account had incorrect copyright. Fixed.
 
-[!] Multi-Vendor: Promotions: The promotion, which conditions were based on Shipping methods, was not applied if you place an order with products from different vendors. Fixed.
+[!] Multi-Vendor: Promotions: The promotion, the conditions of which were based on Shipping methods, was not applied if you place an order with products from different vendors. Fixed.
+
+[!] Multi-Vendor: Users: Profiles: A vendor admin could enable, disable API access for the vendor admins. Fixed.
+
+[!] Multi-Vendor: Vendors: An email about changed vendor status could come in a wrong language. Fixed.
+
+[!] Multi-Vendor: Vendors: Balance: Hooks: It was impossible to add a column into the transactions table via template hooks. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors: Search for products that vendors can sell returned wrong results in the admin panel. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors: Product offers were displayed in product blocks with the "Newest" filling placed on product pages. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Payment dependencies: Direct Customer-to-Vendor Payments: There was no way to enable vendor's payment methods for marketplace owner's shipping methods. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Vendor locations [Beta]: Vendor privileges: With the "Vendors: Can view only" privilege enabled, a vendor's address was not displayed in the vendor's panel. Fixed.
+
+[!] Multi-Vendor Ultimate: Add-ons: Vendor rating: Add-on logging settings were not displayed properly in marketplaces with multiple storefronts. Fixed.
 
 [!] Multi-Vendor Ultimate: Settings: The storefront switch was displayed in the sections which did not support multiple storefronts. Fixed.
 
-[!] Multi-Vendor Ultimate: Storefronts: Vendors did not have storefront switcher, if he has more than 1 available storefronts. Fixed.
-
-[!] Multi-Vendor: Users: Profiles: The vendor admin could enable, disable API access for the vendor admins. Fixed.
-
-[!] Multi-Vendor: Vendors: An email about changed vendor status could come in the wrong language. Fixed.
-
-[!] Multi-Vendor: Vendors: Balance: Hooks: It was impossible to add a column into the transactions table via template hooks. Fixed.
+[!] Multi-Vendor Ultimate: Storefronts: A vendor didn't see a storefront switcher, even when he had more than 1 storefront available. Fixed.
 
 [!] Notifications: Email: Notifications were not sent for events with multiple receivers. Fixed.
 
@@ -220,17 +220,17 @@ Bugfixes
 
 [!] Products: Global update: When updating products in bulk, PHP Type error and Database error could occur if add-ons extending basic product functionality were used. Fixed.
 
-[!] Products: If "Edit parent (Default template)" was selected for the detailed view of the product when creating it, an error might appear. Fixed.
+[!] Products: If "Edit parent (Default template)" was selected for the detailed view of the product when creating it, an error could occur. Fixed.
 
-[!] Products: UI: The selection of products was reseting if the cancel button was pressed in the form of multiple products editing. Fixed.
+[!] Products: UI: The selection of products desappeared if the cancel button was pressed in the form of multiple products editing. Fixed.
 
-[!] Settings: Add-ons: Add-on settings section names could be loaded incorrectly when working in the store with multiple storefronts. Fixed.
+[!] Settings: Add-ons: Add-on settings section names could be loaded incorrectly in a store with multiple storefronts. Fixed.
 
 [!] Shipping methods: Australia Post: The list of shipping services contained broken options. Fixed.
 
-[!] Shippings: If the list of shipping methods was empty, the sidebar was not displayed correctly. Fixed.
+[!] Shipping methods: If the list of shipping methods was empty, the sidebar was not displayed correctly. Fixed.
 
-[!] Shippings: Rates with non-whole weight values could not be saved in some cases. Fixed.
+[!] Shipping methods: Rates with non-whole weight values could not be saved in some cases. Fixed.
 
 [!] Storefronts: Languages: Storefront could be created without available languages. Fixed.
 
@@ -244,4 +244,4 @@ Bugfixes
 
 [!] UI / UX: When switching to other tabs, the context menu remained and worked incorrectly on the search results page. Fixed.
 
-[!] Usergroups: Creation of usergroup without any privilege was forbidden. Fixed.
+[!] User groups: Creation of usergroup without any privilege was forbidden. Fixed.
