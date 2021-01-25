@@ -85,7 +85,7 @@ What's the Best Size for a Logo?
 
 The logo size always depends on the purpose of the logo. But you should never upload too large images. For example, `in the demo version of the CS-Cart store <https://demo.cs-cart.com>`_, the logo size is 176x34 px. On the storefront, the logo size is limited by the width of the block in which it is located.
 
-The logo also appears in emails. By default, the size of the logo in the emails is not limited, so it is better to use an image of an appropriate size. But if necessary, you can limit the max size of the logo in the emails in the page **Administration → Notifications → Snippets → Header**. Replace this part of the code:
+The logo also appears in emails. By default, the size of the logo in the emails is not limited, so it is better to use an image of an appropriate size. But if necessary, you can limit the max size of the logo in the emails in **Administration → Notifications → Snippets → Header**. Replace this part of the code:
 
 ::
 
