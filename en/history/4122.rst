@@ -18,7 +18,7 @@ New Features and Improvements
 
 [+] Core: Sessions: Cart synchronization between several browsers/devices added for logged users.
 
-[+] Design: Blocks: Products: An ability to quickly add a product by it's name was added to settings of manually filled blocks.
+[+] Design: Blocks: Products: An ability to quickly add a product by its name was added to settings of manually filled blocks.
 
 [+] Export/Import: When products import with no / non-existent category, the category "Products without category" will be created where new imported products will be placed.
 
@@ -66,6 +66,8 @@ Bugfixes
 
 [!] Add-ons: Call request: The "Buy in One Click" button did not work on the product list. Fixed.
 
+[!] Add-ons: Comments and Reviews: Product Variations: Reviews of product with variations disappeared after changing the default variation. Fixed.
+
 [!] Add-ons: Message Center: Notification language and language of receiver could mismatch. Fixed.
 
 [!] Add-ons: Message center: On the sidebar of the search, the panel with the saved searches was displayed incorrectly, and there were minor bugs. Fixed.
@@ -76,11 +78,13 @@ Bugfixes
 
 [!] Add-ons: Price List: Generated price list could be empty. Fixed.
 
+[!] Add-ons: Product Variations: Export/Import: In some cases, variations were not exported. Fixed.
+
 [!] Add-ons: Product Variations: Product variation images could not be uploaded if the "Allow own images for child variations" setting was disabled. Fixed.
 
 [!] Add-ons: Product Variations: When saving product variations on the "Tabs" and "Layouts" tabs, a second "Save" button was appearing. Fixed.
 
-[!] Add-ons: Product variations: Comments and reviews: New variation creation could end up with database error. Fixed.
+[!] Add-ons: Product Variations: Comments and reviews: New variation creation could end up with database error. Fixed.
 
 [!] Add-ons: RMA: Design: Accounting: Checkboxes for selecting items were displayed in a table when there were no actions for multiple selection. Fixed.
 
@@ -113,6 +117,8 @@ Bugfixes
 [!] Checkout: User data could be replaced with the user data of the last order the administrator edited. Fixed.
 
 [!] Core: Settings: Add-ons: Some add-on settings couldn't be edited in the store with a single storefront. Fixed.
+
+[!] Core: Settings: Add-ons: When opening settings of some add-ons in a multiple storefronts store, an error occured. Fixed.
 
 [!] Design: Admin panel: The submenus were displayed incorrectly in the header of the admin panel on mobile devices and tablets. Fixed.
 
@@ -159,6 +165,8 @@ Bugfixes
 [!] Mobile application: Corrected the work of all translations.
 
 [!] Multi-Vendor: Add-ons: Advanced products import: Marketplace admin was not able to manage mappings for vendor preset. Fixed.
+
+[!] Multi-Vendor: Add-ons: Direct customer-to-vendor payments: Stores and pickup points: In some cases, pickup points that did not correspond to the vendor could be displayed on the checkout page. Fixed.
 
 [!] Multi-Vendor: Add-ons: Stripe Connect: Some orders couldn't be placed when the "Commission includes" add-on setting was set to "Order commission and unpaid payouts", and 3-D Secure was enabled for the payment method. Fixed.
 
