@@ -20,13 +20,11 @@ New Features and Improvements
 
 [+] Design: Blocks: Products: An ability to quickly add a product by its name was added to settings of manually filled blocks.
 
-[+] Export/Import: When products import with no / non-existent category, the category "Products without category" will be created where new imported products will be placed.
-
 [+] Multi-Vendor: Add-ons: Advanced product import: Vendors and admins can now save their own files to presets without interfering with each other.
 
-[+] Multi-Vendor: Add-ons: Stripe Connect Payments: Error logging added.
+[+] Multi-Vendor: Add-ons: Stripe connect payments: Error logging added.
 
-[+] Multi-Vendor: Add-ons: Stripe connect: Postal code field added to credit card form to reduce card issuer declines.
+[+] Multi-Vendor: Add-ons: Stripe connect payments: Postal code field added to credit card form to reduce card issuer declines.
 
 [+] Multi-Vendor: Orders: Invoice: Vendor details are now displayed depending on the vendor profile fields settings.
 
@@ -54,7 +52,11 @@ Functionality Changes
 
 [*] Export/import: States: States are placed in their own section.
 
-[*] Multi-Vendor: Export/Import: When a vendor imports existing products with no / non-existent category, such products will be updated and left in existing categories.
+[*] Export/Import: When importing products with no category, the hidden category "Products without category" will be created where new imported products will be placed.
+
+[*] Mobile application: Missing translations were added.
+
+[*] Multi-Vendor: Export/Import: If a vendor imports existing products with non-existent category, such products will be updated and left in existing categories.
 
 [*] Multi-Vendor: Vendor panel: Storefront link in the top/bottom toolbar now routes to the vendor's microstore.
 
@@ -108,7 +110,7 @@ Bugfixes
 
 [!] Add-ons: eBay synchronization: Products were not exported to eBay due to PHP Fatal error. Fixed.
 
-[!] Add-ons: Newsletters: If a user tries to subscribe to the store, which has no mailing list, the subscription was not created. Fixed.
+[!] Add-ons: Newsletters: If a user tried to subscribe to the store, which has no mailing list, the subscription was not created. Fixed.
 
 [!] Add-ons: Watermarks: A PHP notice occured when trying to print order invoice. Fixed.
 
@@ -150,7 +152,7 @@ Bugfixes
 
 [!] Design: Some tooltips did not have a margin. Fixed.
 
-[!] Design: Vendors: Stripe Connect: The vendor list was not displaying correctly with vendors connected to Stripe Connect. Fixed.
+[!] Design: Vendors: Stripe Connect: The vendor list was not displayed correctly with vendors connected to Stripe Connect. Fixed.
 
 [!] Export/Import: Orders: Order discounts were not exported. Fixed.
 
@@ -158,11 +160,9 @@ Bugfixes
 
 [!] Files: Administrators with a user group assigned couldn't chose files from the server when uploading files. Fixed.
 
-[!] Languages: Translations: The "Update to all" button did not work. Fixed.
+[!] Languages: Translations: The "Update for all" button did not work. Fixed.
 
 [!] Layouts: Pages: Selection was locked in the page layout, and pages could not be added. Fixed.
-
-[!] Mobile application: Corrected the work of all translations.
 
 [!] Multi-Vendor: Add-ons: Advanced products import: Marketplace admin was not able to manage mappings for vendor preset. Fixed.
 
