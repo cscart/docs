@@ -22,9 +22,9 @@ New Features and Improvements
 
 [+] Multi-Vendor: Add-ons: Advanced product import: Vendors and admins can now save their own files to presets without interfering with each other.
 
-[+] Multi-Vendor: Add-ons: Stripe connect payments: Error logging added.
+[+] Multi-Vendor: Add-ons: Stripe Connect payments: Error logging added.
 
-[+] Multi-Vendor: Add-ons: Stripe connect payments: Postal code field added to credit card form to reduce card issuer declines.
+[+] Multi-Vendor: Add-ons: Stripe Connect payments: Postal code field added to credit card form to reduce card issuer declines.
 
 [+] Multi-Vendor: Orders: Invoice: Vendor details are now displayed depending on the vendor profile fields settings.
 
@@ -53,8 +53,6 @@ Functionality Changes
 [*] Export/import: States: States are placed in their own section.
 
 [*] Export/Import: When importing products with no category, the hidden category "Products without category" will be created where new imported products will be placed.
-
-[*] Mobile application: Missing translations were added.
 
 [*] Multi-Vendor: Export/Import: If a vendor imports existing products with non-existent category, such products will be updated and left in existing categories.
 
@@ -110,7 +108,7 @@ Bugfixes
 
 [!] Add-ons: eBay synchronization: Products were not exported to eBay due to PHP Fatal error. Fixed.
 
-[!] Add-ons: Newsletters: If a user tried to subscribe to the store, which has no mailing list, the subscription was not created. Fixed.
+[!] Add-ons: Newsletters: If a user tried to subscribe to a newsletter that had no mailing list, the email address wasn't saved. Fixed..
 
 [!] Add-ons: Watermarks: A PHP notice occured when trying to print order invoice. Fixed.
 
@@ -152,8 +150,6 @@ Bugfixes
 
 [!] Design: Some tooltips did not have a margin. Fixed.
 
-[!] Design: Vendors: Stripe Connect: The vendor list was not displayed correctly with vendors connected to Stripe Connect. Fixed.
-
 [!] Export/Import: Orders: Order discounts were not exported. Fixed.
 
 [!] Export/Import: A list of layout fields was not correct after deleting selected layout. Fixed.
@@ -164,11 +160,13 @@ Bugfixes
 
 [!] Layouts: Pages: Selection was locked in the page layout, and pages could not be added. Fixed.
 
+[!] Mobile application: Some texts were displayed in a wrong language. Fixed.
+
 [!] Multi-Vendor: Add-ons: Advanced products import: Marketplace admin was not able to manage mappings for vendor preset. Fixed.
 
 [!] Multi-Vendor: Add-ons: Direct customer-to-vendor payments: Stores and pickup points: In some cases, pickup points that did not correspond to the vendor could be displayed on the checkout page. Fixed.
 
-[!] Multi-Vendor: Add-ons: Stripe Connect: Some orders couldn't be placed when the "Commission includes" add-on setting was set to "Order commission and unpaid payouts", and 3-D Secure was enabled for the payment method. Fixed.
+[!] Multi-Vendor: Add-ons: Stripe Connect payments: Some orders couldn't be placed when the "Commission includes" add-on setting was set to "Order commission and unpaid payouts", and 3-D Secure was enabled for the payment method. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor locations [Beta]: After selecting a customer's location, the distance to vendors was not updated. Fixed.
 
@@ -177,6 +175,8 @@ Bugfixes
 [!] Multi-Vendor: Add-ons: Vendor-to-admin payments: Search results for vendors in the admin panel could be incorrect in some cases. Fixed.
 
 [!] Multi-Vendor: Checkout: Errors could occur if shipping methods from different vendors were used. Fixed.
+
+[!] Multi-Vendor: Design: Vendors: Stripe Connect payments: The vendor list was not displayed correctly with vendors connected to Stripe Connect. Fixed.
 
 [!] Multi-Vendor: Email notifications: E-mail notifications regarding changes in the vendor profile were not sent to the receiver. Fixed.
 
@@ -252,4 +252,4 @@ Bugfixes
 
 [!] UI / UX: When switching to other tabs, the context menu remained and worked incorrectly on the search results page. Fixed.
 
-[!] User groups: Creation of usergroup without any privilege was forbidden. Fixed.
+[!] User groups: It was possible to create a user group with no privileges. Fixed.
