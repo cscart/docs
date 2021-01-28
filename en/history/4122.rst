@@ -16,6 +16,8 @@ New Features and Improvements
 
 [+] Admin Panel: The ability to select default saved search was added for for the lists of products, orders, shipments, features and vendors.
 
+[+] Core: Compatibility with PHP 7.4 was added.
+
 [+] Core: Sessions: Cart synchronization between several browsers/devices added for logged users.
 
 [+] Design: Blocks: Products: An ability to quickly add a product by its name was added to settings of manually filled blocks.
