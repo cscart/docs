@@ -6,6 +6,11 @@ Adapt Your Add-ons and Themes to CS-Cart 4.12.2
     :local:
     :backlinks: none
 	
+Common Changes
+==============
+
+The support of PHP 7.4 was added in CS-Cart/Multi-Vendor 4.12.1 and higher.
+	
 Core Changes
 ============
 
