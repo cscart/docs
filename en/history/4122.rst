@@ -255,3 +255,15 @@ Bugfixes
 [!] UI / UX: When switching to other tabs, the context menu remained and worked incorrectly on the search results page. Fixed.
 
 [!] User groups: It was possible to create a user group with no privileges. Fixed.
+
+=============
+Service Packs
+=============
+
+----------
+4.12.2.SP1
+----------
+
+[!] Product features: Database error occurred when the filter type for feature was changed to "Number slider" and if the table prefix in the database was changed to something different from the default prefix. Fixed.
+
+[!] Addons: Searchanise: Import didn't work for secondary language. Fixed.
