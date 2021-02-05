@@ -256,6 +256,8 @@ Bugfixes
 
 [!] User groups: It was possible to create a user group with no privileges. Fixed.
 
+[!] Addons: Searchanise: Import didn't work for secondary language. Fixed.
+
 =============
 Service Packs
 =============
@@ -265,5 +267,3 @@ Service Packs
 ----------
 
 [!] Product features: Database error occurred when the filter type for feature was changed to "Number slider" and if the table prefix in the database was changed to something different from the default prefix. Fixed.
-
-[!] Addons: Searchanise: Import didn't work for secondary language. Fixed.
