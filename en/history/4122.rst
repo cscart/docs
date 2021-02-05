@@ -70,9 +70,13 @@ Bugfixes
 
 [!] Add-ons: Comments and Reviews: Product Variations: Reviews of product with variations disappeared after changing the default variation. Fixed.
 
+[!] Add-ons: eBay synchronization: Products were not exported to eBay due to PHP Fatal error. Fixed.
+
 [!] Add-ons: Message Center: Notification language and language of receiver could mismatch. Fixed.
 
 [!] Add-ons: Message center: On the sidebar of the search, the panel with the saved searches was displayed incorrectly, and there were minor bugs. Fixed.
+
+[!] Add-ons: Newsletters: If a user tried to subscribe to a newsletter that had no mailing list, the email address wasn't saved. Fixed..
 
 [!] Add-ons: PayPal payments: Customer couldn't place an order when specific combination of store, tax, and payment method settings was used. Fixed.
 
@@ -94,23 +98,21 @@ Bugfixes
 
 [!] Add-ons: RSS feed: Dates in the RSS feed were in the storefront language. Fixed.
 
+[!] Add-ons: Searchanise: Import didn't work for secondary language. Fixed.
+
+[!] Add-ons: Selecting only third-party add-ons worked incorrectly. Fixed.
+
 [!] Add-ons: SEO: A PHP Notice could occur in some cases. Fixed.
 
 [!] Add-ons: SEO: PHP warning occurred on product pages when product prices were hidden for unlogged users. Fixed.
 
 [!] Add-ons: SEO: Schema.org markup showed price only for primary currency. Fixed.
 
-[!] Add-ons: Selecting only third-party add-ons worked incorrectly. Fixed.
-
 [!] Add-ons: Social login: An error might occur when logging in via LinkedIn. Fixed.
 
 [!] Add-ons: Stores and pickup points: Delivery time at the "Pickup from the store" shipping method was not shown at checkout page in some cases. Fixed.
 
 [!] Add-ons: Warehouses [Beta]: A notification that a product appeared in stock could not been sent. Fixed.
-
-[!] Add-ons: eBay synchronization: Products were not exported to eBay due to PHP Fatal error. Fixed.
-
-[!] Add-ons: Newsletters: If a user tried to subscribe to a newsletter that had no mailing list, the email address wasn't saved. Fixed..
 
 [!] Add-ons: Watermarks: A PHP notice occured when trying to print order invoice. Fixed.
 
@@ -255,8 +257,6 @@ Bugfixes
 [!] UI / UX: When switching to other tabs, the context menu remained and worked incorrectly on the search results page. Fixed.
 
 [!] User groups: It was possible to create a user group with no privileges. Fixed.
-
-[!] Addons: Searchanise: Import didn't work for secondary language. Fixed.
 
 =============
 Service Packs
