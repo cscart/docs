@@ -22,7 +22,7 @@ There are two core requirements for your host to run CS-Cart:
   
   * PHP 7.4 is supported starting with CS-Cart/Multi-Vendor 4.12.1.
 
-* We recommend not to move your store to PHP 5.6, if you used PHP 7.0 and newer versions. This could lead to users not being able to sign in.
+  We recommend not to move your store to PHP 5.6, if you used PHP 7.0 and newer versions. This could lead to users not being able to sign in.
 
 * `MySQL <http://www.mysql.com/>`_ version 4.1 or higher (**MySQLi** or **pdo_mysql** should be supported). CS-Cart also supports MariaDB 5.5 or higher, and PerconaServer 5.5 or higher.
 
