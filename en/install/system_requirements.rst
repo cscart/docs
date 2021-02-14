@@ -17,6 +17,8 @@ There are two core requirements for your host to run CS-Cart:
   * PHP 7.1 is supported starting with CS-Cart/Multi-Vendor 4.6.1.
 
   * PHP 7.2 is supported starting with CS-Cart/Multi-Vendor 4.7.2.
+  
+  We recommend not to move your store to PHP 5.6, if you used PHP 7.0 and newer versions. This could lead to users not being able to sign in.
 
 * `MySQL <http://www.mysql.com/>`_ version 4.1 or higher (**MySQLi** or **pdo_mysql** should be supported). CS-Cart also supports MariaDB 5.5 or higher, and PerconaServer 5.5 or higher.
 
@@ -120,7 +122,7 @@ Server Configuration Requirements
 
   Notes:
 
-  * We recommend **Imagick** over **GD**, because it offers better performance and quality of the processed images. Using **GD** can lead to crashes due to the lack of memory when large product images are uploaded.
+  * **GD** is available almost at any hosting. But we recommend **Imagick**, because it offers better performance and quality of the processed images.
 
     **Imagick** is a `PECL extension <https://pecl.php.net/package/imagick>`_. The official PHP documentation has `detailed installation instructions for Imagick <http://php.net/manual/en/imagick.setup.php>`_. `ImageMagick <http://www.imagemagick.org/script/index.php>`_ version 6.5.3-10+ and PHP 5.4.0+ must be installed on your server.
 
