@@ -45,3 +45,7 @@ The following parameters are used to specify the geographical location of your b
 * **Help/Support department e-mail address**—the email address to send messages submitted through forms.
 
 * **Reply-To newsletter e-mail address**—the email address to include in newsletters as a reply-to address.
+
+  .. important::
+
+      Starting from version 4.12.1, :doc:`the Administration → Notifications page sets the rules </user_guide/look_and_feel/email_templates/usergroups_notifications>` for sending notifications. If there are no rules, then the company settings apply.

@@ -23,3 +23,7 @@ Let’s say you want your order manager to only receive notifications of orders,
    .. image:: img/notifications_usergroups.png
        :align: center
        :alt: Assigning the recipients of notifications
+	   
+.. important::
+
+    Before release 4.12.1, the email addresses specified in **Settings → Company** were used to send notifications. Now the **Administration → Notifications** page sets the rules for notifications. If there are no rules, then the company settings apply.
