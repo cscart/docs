@@ -26,4 +26,4 @@ Let’s say you want your order manager to only receive notifications of orders,
 	   
 .. important::
 
-    Before release 4.12.1, the email addresses specified in **Settings → Company** were used to send notifications. Now the **Administration → Notifications** page sets the rules for notifications. If there are no rules, then the company settings apply.
+    Before version 4.12.1, emails were sent to the addresses from the **Settings → Company** page. Now the **Administration → Notifications** page sets the rules for notifications. If there are no rules, then the company settings apply.

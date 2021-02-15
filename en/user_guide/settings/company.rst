@@ -48,4 +48,4 @@ The following parameters are used to specify the geographical location of your b
 
   .. important::
 
-      Starting from version 4.12.1, :doc:`the Administration → Notifications page sets the rules </user_guide/look_and_feel/email_templates/usergroups_notifications>` for sending notifications. If there are no rules, then the company settings apply.
+      Starting from version 4.12.1, the :doc:`Administration → Notifications </user_guide/look_and_feel/email_templates/usergroups_notifications>` page sets the rules for sending notifications. If there are no rules, then the company settings apply.
