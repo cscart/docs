@@ -2,11 +2,11 @@
 How To: Create a Page with Custom Structure
 *******************************************
 
+This article explains how to create service pages in the store (for example, return policy, etc.) and how to change their appearance.
+
 .. contents::
    :backlinks: none
    :local:
-
-This article explains how to create service pages in the store (for example, return policy, etc.) and how to change their appearance.
 
 =======================
 Step 1. Create the Page
@@ -44,7 +44,7 @@ Now start customizing the look and feel of the page. To make your page clear and
 
 .. important::
 
-    Customers will immediately see all changes made in the main layout. To avoid this create a test layout and edit pages there. Upon completion of the changes, make the test layout the main (default) one. 
+    Customers will immediately see all changes made in the main layout. To avoid this, create a test layout and edit pages there. Upon completion of the changes, make the test layout the main (default) one. 
 
 It is important to add the **Main Content** block to the new layout page, because it is responsible for the key content of the page. Other blocks you can add include **Breadcrumbs**, **Recently Viewed**, etc. Arrange blocks as you need—the changes will appear only on your page. This will help users to navigate your store faster and easier.
 
