@@ -91,7 +91,7 @@
 
     <script>
     $.ceFormValidator('registerValidator', {
-        class: 'cm-gc-validate-amount',
+        class name: 'cm-gc-validate-amount',
         message: _.tr('text_gift_cert_amount_alert'),
         func: function(id) {
             var max = parseInt((parseFloat(max_amount) / parseFloat(_.currencies.secondary.coefficient))*100)/100;
@@ -105,7 +105,21 @@
             return false;
         }
     });
-    </script>
+    </script>$.ceFormValidator('registerValidator', {
+class_name: 'cm-gc-validate-amount',
+message: _.tr('text_gift_cert_amount_alert'),
+func: function(id) {
+    var max = parseInt((parseFloat(max_amount) / parseFloat(_.currencies.secondary.coefficient))*100)/100;
+    var min = parseInt((parseFloat(min_amount) / parseFloat(_.currencies.secondary.coefficient))*100)/100;
+
+    var amount = parseFloat($('#' + id).val());
+    if ((amount <= max) && (amount >= min)) {
+        return true;
+    }
+
+    return false;
+}
+});
 
 --------------
 Отправка форм
