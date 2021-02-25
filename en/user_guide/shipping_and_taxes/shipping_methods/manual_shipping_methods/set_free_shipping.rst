@@ -8,7 +8,7 @@ How To: Set Up a Free Shipping Method
 
    .. important::
 
-       Set the **Rate calculation** of this method to *Manual (by defined rate area)*. This way you can specify the shipping cost on the different conditions.
+       Set the **Rate calculation** of this method to *Manual (by rate areas)*. This way you can specify the shipping cost on the different conditions.
 
 #. Go to the **Shipping time and rates** tab.
 
