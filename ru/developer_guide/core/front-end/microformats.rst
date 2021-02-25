@@ -91,7 +91,7 @@
 
     <script>
     $.ceFormValidator('registerValidator', {
-        class: 'cm-gc-validate-amount',
+        class_name: 'cm-gc-validate-amount',
         message: _.tr('text_gift_cert_amount_alert'),
         func: function(id) {
             var max = parseInt((parseFloat(max_amount) / parseFloat(_.currencies.secondary.coefficient))*100)/100;
