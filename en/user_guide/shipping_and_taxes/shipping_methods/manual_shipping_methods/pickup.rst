@@ -10,7 +10,7 @@ CS-Cart and Multi-Vendor allow you to create stores and pickup points and set th
 
 #. Install the :doc:`Stores and Pickup Points </user_guide/addons/stores_and_pickup_points/index>` add-on.
 
-#. Create stores/pickup points on the **Administration → Stores & pickup points** page.
+#. To create stores/pickup points click the **+** button in the upper right part of the **Administration → Stores & pickup points** page.
 
    Make sure to switch to the **Pickup** tab and select the rate area there. The rate area will determine the rates and time of shipping to that store/pickup point.
 
@@ -20,20 +20,20 @@ CS-Cart and Multi-Vendor allow you to create stores and pickup points and set th
        :align: center
        :alt: Select all the rate areas where the pickup point is supposed to appear at checkout.
 
-#. :doc:`Add a shipping method </user_guide/shipping_and_taxes/shipping_methods/add_shipping_method>` with real-time rate calculation and **Pickup** as the processor.
+#. :doc:`Add a shipping method </user_guide/shipping_and_taxes/shipping_methods/add_shipping_method>`. Set "Pickup from store" in the **Rate calculation** setting.
 
-#. Make sure to switch to the **Shipping time and rates** tab and specify the rates for those rate areas where pick-up from store must be available. If you don't specify a rate, then the shipping method won't appear for that rate area.
+#. Switch to the **Shipping time and rates** tab. Here you can see the rate areas where pick-up from store is available.
 
    .. hint::
 
-       You can also make pickup free. It's done :doc:`just like for other shipping methods with manually-specified shipping rates </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/set_free_shipping>`.
+       Free pickup is done :doc:`just like for other shipping methods with manually-specified shipping rates </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/set_free_shipping>`.
 
-   If you specify delivery time for a specific rate area, it will override the delivery time from the **General** tab of the shipping method editing page.
+   If you specify shipping time for a specific rate area, it will override the delivery time from the **General** tab of the shipping method editing page.
 
    .. image:: img/pickup_rates_and_time.png
        :align: center
-       :alt: The rate areas where the shipping method is available are marked with the plus sign (+)
-
+       :alt: Shipping time and rates for "Pickup from store" shipping method.
+	   
 #. Check how the new shipping method works at the storefront.
 
 .. meta::
