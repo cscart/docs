@@ -28,7 +28,7 @@ Way 1: From a Product Page
 
 #. Open the **Products → Products** page.
 
-#. Click on the name of the product to open it's settings.
+#. Click on the name of the product to open its settings.
 
 #. Open the **Features** tab.
 
@@ -50,7 +50,7 @@ Way 1: From a Product Page
 
    .. note::
    
-       Click the **Advanced feature creation** button to procced to create the feature from the features list.
+       Click the **Advanced feature creation** button to proceed to create the feature from the features list.
 
 Way 2: From the Features List
 +++++++++++++++++++++++++++++

@@ -22,7 +22,7 @@ To set up a manual shipping method with pre-determined rates depending on a rate
        
        If a certain rate area does not exist in your store, you can :doc:`add it  </user_guide/shipping_and_taxes/locations/set_location>`. This is only necessary if you need to add different conditions and availability/unavailability of delivery to this area.
 
-#. (optional) Specify the **Shipping time** value for each rate area. If a rate area has it's own shipping time, it will be displayed to customers from this area instead of the **Delivery time** from the **General** tab.
+#. (optional) Specify the **Shipping time** value for each rate area. If a rate area has its own shipping time, it will be displayed to customers from this area instead of the **Delivery time** from the **General** tab.
 
 #. Specify the **Rate** for each rate area. If you leave the **Rate** field empty (equal to zero by default), the delivery will be free.
 
