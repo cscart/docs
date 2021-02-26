@@ -34,6 +34,8 @@ To configure a shipping method that uses DHL delivery services, follow these ste
      
      * **Password**—enter the password for your DHL account.
      
+       To get **Site ID** and **Password**, register via the `XML portal <https://xmlportal.dhl.com>`_ with your DHL Express account number. During registration, specify that you are using the CS-Cart plugin to provide rating. You will receive a production **Site ID** and **Password** within 1-2 business days.
+     
      * **Account number**—enter your DHL account number.
      
      * **Account country**—specify the country of your DHL account.
