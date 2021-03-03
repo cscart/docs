@@ -8,7 +8,7 @@ To set up a manual shipping method with pre-determined rates depending on a rate
 
 #. Click the **+** botton in the upper-right corner to add a new shipping method, or choose one of the existing methods to configure it.
 
-#. On the **General** tab in the **Rate calculation** section choose **Manual (by rate areas)**.
+#. On the **General** tab in the **Rate calculation** section select one of the options of *Manual calculation (by rate areas)*.
 
    .. image:: img/manual_shipping.png 
        :align: center

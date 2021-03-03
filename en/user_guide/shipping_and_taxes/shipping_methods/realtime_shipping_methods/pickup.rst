@@ -10,7 +10,7 @@ CS-Cart and Multi-Vendor allow you to create stores and pickup points and set th
 
 #. Install the :doc:`Stores and Pickup Points </user_guide/addons/stores_and_pickup_points/index>` add-on.
 
-#. To create stores/pickup points click the **+** button in the upper right part of the **Administration → Stores & pickup points** page.
+#. To create stores/pickup points, click the **+** button in the upper right part of the **Administration → Stores & pickup points** page.
 
    Make sure to switch to the **Pickup** tab and select the rate area there. The rate area will determine the rates and time of shipping to that store/pickup point.
 
@@ -20,15 +20,9 @@ CS-Cart and Multi-Vendor allow you to create stores and pickup points and set th
        :align: center
        :alt: Select all the rate areas where the pickup point is supposed to appear at checkout.
 
-#. :doc:`Add a shipping method </user_guide/shipping_and_taxes/shipping_methods/add_shipping_method>`. Set "Pickup from store" in the **Rate calculation** setting.
+#. :doc:`Add a shipping method </user_guide/shipping_and_taxes/shipping_methods/add_shipping_method>`. Set **Rate calculation** to *Pickup from store*. 
 
-#. Switch to the **Shipping time and rates** tab. Here you can see the rate areas where pick-up from store is available.
-
-   .. hint::
-
-       Free pickup is done :doc:`just like for other shipping methods with manually-specified shipping rates </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/set_free_shipping>`.
-
-   If you specify shipping time for a specific rate area, it will override the delivery time from the **General** tab of the shipping method editing page.
+#. Switch to the **Shipping time and rates** tab. Here you can specify rate areas where pick-up from store will be available.If you specify shipping time for a specific rate area, it will override the delivery time from the **General** tab of the shipping method editing page.
 
    .. image:: img/pickup_rates_and_time.png
        :align: center

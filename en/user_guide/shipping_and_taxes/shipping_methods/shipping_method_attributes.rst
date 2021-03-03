@@ -4,11 +4,9 @@ Shipping Method Properties
 
 All shipping methods can be split into 2 groups, depending on how the rates are calculated:
 
-* :doc:`Manual (by defined rate area) methods </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/index>` calculate rates based on the rules you specify manually in the Administration panel.
+* :doc:`Manual methods (by rate areas) </user_guide/shipping_and_taxes/shipping_methods/manual_shipping_methods/index>` calculate rates based on the rules you specify manually in the Administration panel.
 
-* :doc:`Real-time shipping methods </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/index>` send the relevant order data to third-party services when a customer proceeds to checkout. If the service ships to the specified destination, the shipping method will be available to the customer.
-
-* :doc:`Pickup from store </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/pickup>` — shipping time and rates are calculated by the chosen rate area.
+* :doc:`Real-time shipping methods (automatic) </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/index>` send the relevant order data to third-party services when a customer proceeds to checkout. If the service ships to the specified destination, the shipping method will be available to the customer.
 
 =======
 General
@@ -20,12 +18,13 @@ General
 
 * **Rate calculation**—the way how the shipping cost will be calculated:
   
-  * **Manual (by rate areas) calculation** is based on the tables with charges and rates. You define those rates in the **Shipping time and rates** tab on the shipping method editing page (appears for shipping methods that have been already created).
+  * **Manual calculation (by rate areas)**—it is based on the tables with charges and rates. You define those rates in the **Shipping time and rates** tab on the shipping method editing page (appears for shipping methods that have been already created).
   
-    **Pickup from store**—shipping time and rates are calculated by the chosen :doc:`rate area </user_guide/shipping_and_taxes/locations>`.
+    * **By customer's address**——shipping time and rates depend on the delivery address.
+	
+    * **Pickup from store**—shipping time and rates are calculated by the :doc:`rate area </user_guide/shipping_and_taxes/locations/index>` of the chosen :doc:`pickup point </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/pickup>`.
   
-  * **Real-time (automatic) calculation** is based on the rates that your store receives from a third-party service. The rates are received in real time at the moment when the order is being placed.
-  
+  * **Real-time calculation (automatic)**—it is based on the rates that your store receives from a third-party service. The rates are received in real time at the moment when the order is being placed.
 
   .. note::
 
@@ -39,13 +38,13 @@ General
 
 * **User groups**—the user groups, the members of which will be able choose this shipping method at checkout.
 
-* **Shipping service**—shipping services provided by the carrier. Carrier—the online service or a carrier API that will be used for rate calculation. The **Shipping service** setting is available only if **Rate calculation** is set to "Real-time (automatic)".
+* **Shipping service**—shipping services provided by the carrier. Carrier—the online service or a carrier API that will be used for rate calculation. The **Shipping service** setting is available only if **Rate calculation** is set to *Real-time (automatic)*.
 
 =========
 Configure
 =========
 
-This tab appears only if you have selected **Real-time rate calculation** on the **General** tab. It means that the rates will be requested from a third-party service depending on the order data when a customer proceeds to checkout. 
+This tab appears only if you have selected one of settings of *Real-time* rate calculation on the **General** tab. It means that the rates will be requested from a third-party service depending on the order data when a customer proceeds to checkout. 
 
 Here you should specify the settings of the selected shipping service. Such settings vary depending on the shipping service provider. So, if you do not know how to configure it, please refer to the carrier’s help pages and :doc:`our documentation </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/index>`.
 
