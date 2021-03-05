@@ -14,8 +14,6 @@ To set up a rate area that covers an entire particular country (for example, Aus
 
 #. Select *Australia* in the **Countries** section and move it to the left box with the **<** icon.
 
-#. Select all the Australian states and territories (e.g. *Australia: New South Wales* and *Australia: Australian Capital Territory*) in the **States** section on the right side and move them to the left box with the **<** icon.
-
    .. important::
 
        You don't have to add the country's states, provinces, or counties from the right box. But if you do add any of them, then those you don't add won't be a part of the rate area.
