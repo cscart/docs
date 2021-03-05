@@ -20,9 +20,9 @@ General
   
   * **Manual (by rate areas)**—it is based on the tables with charges and rates. You define those rates in the **Shipping time and rates** tab on the shipping method editing page (appears for shipping methods that have been already created).
   
-    * *By customer's address*—shipping time and rates are calculated by the rate area of the customer's shipping address.
+    * *By customer's address*—shipping time and rates are calculated by the :doc:`rate area </user_guide/shipping_and_taxes/locations/index>` of the customer's shipping address.
 	
-    * *Pickup from store*—shipping time and rates are calculated by the :doc:`rate area </user_guide/shipping_and_taxes/locations/index>` of the chosen :doc:`pickup point </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/pickup>`.
+    * *Pickup from store*—shipping time and rates are calculated by the rate area of the chosen :doc:`pickup point </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/pickup>`.
   
   * **Real-time (automatic)**—it is based on the rates that your store receives from a third-party service. The rates are received in real time at the moment when the order is being placed.
 
