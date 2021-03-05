@@ -18,9 +18,7 @@ To set up a rate area that covers an entire particular country (for example, Aus
 
    .. important::
 
-       If a country has states, provinces, or counties in the right box, make sure to add them to the left box. If you add country and one of its administrative territorial entity, then another entities won't be considered a part of this rate area. If a country does not have any administrative territorial entities, leave the left box in the **States** section empty.
-	   
-	   But if the country has any administrative territorial entities, and the list of **States** on the left is empty, then the delivery calculation will be based on the rate area of the country in which client's **State** is located.
+       You don't have to add the country's states, provinces, or counties from the right box. But if you do add any of them, then those you don't add won't be a part of the rate area.
 
 #. Leave the boxes on the left in other sections empty.
 
