@@ -18,19 +18,19 @@ General
 
 * **Rate calculation**—the way how the shipping cost will be calculated:
   
-  * **Manual calculation (by rate areas)**—it is based on the tables with charges and rates. You define those rates in the **Shipping time and rates** tab on the shipping method editing page (appears for shipping methods that have been already created).
+  * **Manual (by rate areas)**—it is based on the tables with charges and rates. You define those rates in the **Shipping time and rates** tab on the shipping method editing page (appears for shipping methods that have been already created).
   
-    * **By customer's address**——shipping time and rates depend on the delivery address.
+    * *By customer's address*—shipping time and rates are calculated by the rate area of the customer's shipping address.
 	
-    * **Pickup from store**—shipping time and rates are calculated by the :doc:`rate area </user_guide/shipping_and_taxes/locations/index>` of the chosen :doc:`pickup point </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/pickup>`.
+    * *Pickup from store*—shipping time and rates are calculated by the :doc:`rate area </user_guide/shipping_and_taxes/locations/index>` of the chosen :doc:`pickup point </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/pickup>`.
   
-  * **Real-time calculation (automatic)**—it is based on the rates that your store receives from a third-party service. The rates are received in real time at the moment when the order is being placed.
+  * **Real-time (automatic)**—it is based on the rates that your store receives from a third-party service. The rates are received in real time at the moment when the order is being placed.
 
   .. note::
 
         Carrier-specific settings are defined in the **Configure** tab.
 		
-* **Delivery time**—the time it takes to deliver an order.  This info is displayed on the storefront, so that customers can decide if the delivery time meets their requirements.
+* **Delivery time**—the time it takes to deliver an order. This info is displayed on the storefront, so that customers can decide if the delivery time meets their requirements.
 
 * **Status**—the status of the shipping method: **Active** or **Disabled**.
 
@@ -38,13 +38,13 @@ General
 
 * **User groups**—the user groups, the members of which will be able choose this shipping method at checkout.
 
-* **Shipping service**—shipping services provided by the carrier. Carrier—the online service or a carrier API that will be used for rate calculation. The **Shipping service** setting is available only if **Rate calculation** is set to *Real-time (automatic)*.
+* **Shipping service**—shipping services provided by the carrier. Carrier—the online service or a carrier API that will be used for rate calculation. The **Shipping service** setting is available only if **Rate calculation** is set to any variant of *Real-time (automatic)*.
 
 =========
 Configure
 =========
 
-This tab appears only if you have selected one of settings of *Real-time* rate calculation on the **General** tab. It means that the rates will be requested from a third-party service depending on the order data when a customer proceeds to checkout. 
+This tab appears only if you have set **Rate calculation** to any variant of *Real-time (automatic)* on the **General** tab. It means that the rates will be requested from a third-party service depending on the order data when a customer proceeds to checkout. 
 
 Here you should specify the settings of the selected shipping service. Such settings vary depending on the shipping service provider. So, if you do not know how to configure it, please refer to the carrier’s help pages and :doc:`our documentation </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/index>`.
 

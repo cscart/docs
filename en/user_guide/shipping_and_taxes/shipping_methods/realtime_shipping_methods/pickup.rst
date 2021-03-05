@@ -22,7 +22,7 @@ CS-Cart and Multi-Vendor allow you to create stores and pickup points and set th
 
 #. :doc:`Add a shipping method </user_guide/shipping_and_taxes/shipping_methods/add_shipping_method>`. Set **Rate calculation** to *Pickup from store*. 
 
-#. Switch to the **Shipping time and rates** tab. Here you can specify rate areas where pick-up from store will be available.If you specify shipping time for a specific rate area, it will override the delivery time from the **General** tab of the shipping method editing page.
+#. Switch to the **Shipping time and rates** tab. Here you can specify rate areas where pick-up from store will be available. If you specify shipping time for a specific rate area, it will override the delivery time from the **General** tab of the shipping method editing page.
 
    .. image:: img/pickup_rates_and_time.png
        :align: center
