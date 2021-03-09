@@ -8,13 +8,15 @@ Use this section to adjust the settings related to your store's security:
 
 * **Enable secure connection in the administration panel**—if you enable this setting, the Administration panel will work through the HTTPS protocol. This requires an SSL certificate to be installed on your server.
 
-* **Minimum administrator password length**—the minimum number of characters in an administrator password.
+.. hint:: Settings applied to all accounts.
 
-* **Administrator password must contain both letters and numbers**—if you enable this setting, the system will require an administrator password to contain both letters and numbers. This improves password strength and provides additional protection against guessing the password and brute-force attacks.
+    * **Minimum password length**—the minimum number of characters in password.
+
+    * **Password must contain both letters and numbers**—if you enable this setting, the system will require password to contain both letters and numbers. This improves password strength and provides additional protection against guessing the password and brute-force attacks.
+
+    * **Password validity period in days (0 - unlimited)**—the number of days before password expires and the user has to change the password. If you don't want passwords to expire, set the value of this field to *0* (zero).
 
 * **Force administrators to change password on the first login**—if you enable this setting, store administrators will have to change their passwords once they log in to the Administration panel for the first time.
-
-* **Password validity period in days**—the number of days before an administrator password expires and the user has to change the password. If you don't want passwords to expire, set the value of this field to *0* (zero).
 
 * **Access key to cron script which sends e-mail notifications of password change**—the key to access the cron script that reminds the store administrator to change the password. To activate the script, open the following link in your web browser::
 
