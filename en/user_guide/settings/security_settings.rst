@@ -8,7 +8,7 @@ Use this section to adjust the settings related to your store's security:
 
 * **Enable secure connection in the administration panel**—if you enable this setting, the Administration panel will work through the HTTPS protocol. This requires an SSL certificate to be installed on your server.
 
-* These requirements apply to administrators, vendors, and customers passwords:
+* These requirements apply to passwords of administrators, vendors in Multi-Vendor, and customers:
 
   * **Minimum password length**—the minimum number of characters in password.
 
