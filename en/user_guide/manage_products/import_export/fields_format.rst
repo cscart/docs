@@ -274,9 +274,7 @@ Inventory tracking
 
 * **D**—do not track the number of products in stock.
 
-* **B**—track without options.
-
-* **O**—track with options.
+* **B**—track.
 
 .. important::
 
