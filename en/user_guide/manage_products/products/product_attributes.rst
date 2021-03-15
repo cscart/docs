@@ -97,10 +97,6 @@ Pricing / Inventory
 
   * *Do not track*
 
-  .. note::
-
-      If a product is tracked with options, you'll need to specify the number of in-stock items individually for each combination of option variants.
-
 * **Minimum order quantity**—the minimum number of items that a customer can buy at a time. This number will appear on the product page on the storefront, right after the product price.
 
 * **Maximum order quantity**—the maximum number of items that a customer can buy at a time. *0* means no limit.
