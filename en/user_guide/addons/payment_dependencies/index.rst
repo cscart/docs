@@ -10,8 +10,7 @@ Installation
 
 1. Open the Administration panel of your store.
 2. Go to **Add-ons → Manage add-ons**.
-3. Switch to the **Browse all available add-ons** tab.
-4. Click the **Install** button. The add-on will be activated automatically.
+3. Find the add-on, and click the **Install** button. The add-on will be activated automatically.
 
 .. image:: img/install_payment_dependencies.png
     :align: center
@@ -21,7 +20,7 @@ Installation
 Changes in the Interface
 ========================
 
-Once you install the add-on, go to **Administration → Shipping methods** and click the name of any shipping method to edit it. In the **Extra** section you will see the checkboxes named after all the payment methods that exist in your store.
+Once you install the add-on, go to **Administration → Shipping & taxes → Shipping methods** and click the name of any shipping method to edit it. In the **Availability** section of the **General** tab you will see the checkboxes named after all the payment methods that exist in your store.
 
 Tick the checkboxes of the payment methods you want to allow for the chosen shipping method, then save your changes.
 
