@@ -93,9 +93,7 @@ Pricing / Inventory
 
 * **Inventory**—the way of tracking the inventory of the current product: 
 
-  * *Track with options*
-
-  * *Track without options*
+  * *Track*
 
   * *Do not track*
 
