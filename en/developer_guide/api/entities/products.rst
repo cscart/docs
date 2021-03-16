@@ -430,13 +430,11 @@ The full list of supported fields is given below (mandatory fields are marked wi
         -   Valid timestamp in UNIX format
     *   -   tracking
         -   | Inventory tracking mode
-            | ``O`` for Track with options
-            | ``B`` for Track without options
+            | ``B`` for Track
             | ``D`` for Do not track
 
         -   ``B``
-        -   | ``O``
-            | ``B``
+        -   | ``B``
             | ``D``
     *   -   unlimited_download
         -   For EDP products: allow or not unlimited downloads
