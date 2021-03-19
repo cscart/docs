@@ -32,13 +32,13 @@ When we create new variations, firstly we create a reference product, also calle
 
    * For the "Wheel size" and "Frame size", set the **Purpose** to *Variations as one product*. Then the customer will choose feature variants on the product page. That way, the catalog and the search results won’t contain many similar products with the same picture. It is better to select these features through the drop-down list. For this, set the **Feature style** to *Drop-down list*. 
 
-   .. image:: /user_guide/manage_products/products/img/features.png
-       :align: center
-       :alt: Features on the storefront.    
+     .. image:: /user_guide/manage_products/products/img/features.png
+            :align: center
+            :alt: Features on the storefront.    
 
-.. note::
+     .. note::
 
-    To make product search easier for buyers, :doc:`add filters </user_guide/manage_products/filters/adding_filter>` by the created features.
+         To make product search easier for buyers, :doc:`add filters </user_guide/manage_products/filters/adding_filter>` by the created features.
 
 =========================
 Step 2. Generate Variants
@@ -54,8 +54,8 @@ When you have created the reference product and its features, the rest of the fe
 
 #. Click the **Create X variations** button.
 
-We have created 18 different bikes. Go to any of its pages and edit the price, weight, or some other properties.
+   We have created 18 different bikes. Go to any of its pages and edit the price, weight, or some other properties.
 
-.. image:: /user_guide/manage_products/products/img/many_variations.png
-       :align: center
-       :alt: Created variations.   
+   .. image:: /user_guide/manage_products/products/img/many_variations.png
+          :align: center
+          :alt: Created variations.   
