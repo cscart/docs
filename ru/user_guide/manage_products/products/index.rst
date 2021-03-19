@@ -106,7 +106,7 @@
     product_attributes
     out_of_stock_actions
     product_variations
-	similar_products
+    similar_products
     add_product
     attaching_files_to_products
     downloadable
