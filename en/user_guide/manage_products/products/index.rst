@@ -117,6 +117,7 @@ In This Section
     product_attributes
     add_product
     product_variations
+    similar_products
     out_of_stock_actions
     attaching_files_to_products
     downloadable
