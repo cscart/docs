@@ -58,9 +58,3 @@ Pinterest
 *	**Shape** - Choose the social button shape.
 *	**Color** - Choose the social button color.
 *	**Display on** - Choose whether to display the social button on product details pages, on other pages, or on both.
-
-E-Mail
-******
-
-*	**Show E-mail button** - If selected, the social button to send e-mail is displayed on the pages of the storefront.
-*	**Display on** - Choose whether to display the social button on product details pages, on other pages, or on both.
