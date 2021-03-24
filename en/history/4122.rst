@@ -267,3 +267,18 @@ Service Packs
 ----------
 
 [!] Product features: Database error occurred when the filter type for feature was changed to "Number slider" and if the table prefix in the database was changed to something different from the default prefix. Fixed.
+
+----------
+4.12.2.SP2
+----------
+
+[!] Checkout: Signing into the account at checkout could clear the cart. Fixed.
+
+[!] Add-ons: SEO: 302 redirect was used instead of the 301 one when redirecting customers from the URL with the main language in it. Fixed.
+
+[!] Add-ons: SEO: If the "Show additional language in the URL" setting is enabled, the selected language may be reset to the "default" language on some pages. Fixed.
+
+[!] Add-ons: eBay synchronization: The button "Get eBay orders" was not in Gear Button on the orders list page. Fixed.
+
+[!] Export/Import: If category was not specified in the import file, then the existing products were placed into the default category instead of keeping the existing category. Fixed.
+
