@@ -93,15 +93,9 @@ Pricing / Inventory
 
 * **Inventory**—the way of tracking the inventory of the current product: 
 
-  * *Track with options*
-
-  * *Track without options*
+  * *Track*
 
   * *Do not track*
-
-  .. note::
-
-      If a product is tracked with options, you'll need to specify the number of in-stock items individually for each combination of option variants.
 
 * **Minimum order quantity**—the minimum number of items that a customer can buy at a time. This number will appear on the product page on the storefront, right after the product price.
 
