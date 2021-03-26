@@ -25,9 +25,7 @@ How to Configure the Payment Method
 ===================================
 
 #. `Sign up for PayPal Commerce Platform <https://www.paypal.com/us/business/platforms-and-marketplaces>`_.
-
-   When contacting PayPal, tell them that your BN Code is ``CSCART_MP_PPCP``, and ask for checkout API and onboarding API.
-
+	
 #. Install the :doc:`/user_guide/addons/paypal_commerce_platform/index` add-on.
 
 #. Create a :doc:`new payment method </user_guide/payment_methods/adding_payment>` based on the PayPal Commerce Platform processor.
@@ -35,6 +33,8 @@ How to Configure the Payment Method
 #. Open the Configure tab and fill in the following fields:
 
    * **Account settings:**
+
+     * **Partner integration code**—contact `CS-Cart Customer Care <https://helpdesk.cs-cart.com/index.php?dispatch=auth.login_form>`_ to get it. Remember to use only business accounts for onboarding.
    
      * **Merchant account ID, App Client ID, App Secret**—these settings connect your marketplace to your PayPal account. Get these credentials from PayPal.
      
