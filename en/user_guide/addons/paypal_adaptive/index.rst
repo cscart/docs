@@ -1,5 +1,5 @@
 ************************
-PayPal Adaptive Payments
+PayPal Adaptive Payments [Deprecated]
 ************************
 
 .. note::
