@@ -2,6 +2,10 @@
 How To: Set Up PayPal Commerce Platform in Multi-Vendor
 *******************************************************
 
+.. note::
+
+    PayPal is not yet ready to provide the new payment solution massively. If you are going to use this payment method in your marketplace, please contact `CS-Cart Customer Care <https://helpdesk.cs-cart.com>`_.
+
 .. contents::
     :backlinks: none
     :local:
@@ -25,9 +29,7 @@ How to Configure the Payment Method
 ===================================
 
 #. `Sign up for PayPal Commerce Platform <https://www.paypal.com/us/business/platforms-and-marketplaces>`_.
-
-   When contacting PayPal, tell them that your BN Code is ``CSCART_MP_PPCP``, and ask for checkout API and onboarding API.
-
+	
 #. Install the :doc:`/user_guide/addons/paypal_commerce_platform/index` add-on.
 
 #. Create a :doc:`new payment method </user_guide/payment_methods/adding_payment>` based on the PayPal Commerce Platform processor.
@@ -35,6 +37,8 @@ How to Configure the Payment Method
 #. Open the Configure tab and fill in the following fields:
 
    * **Account settings:**
+
+     * **Partner integration code**—your build notation (BN) code. Contact `CS-Cart Customer Care <https://helpdesk.cs-cart.com>`_ to get it.
    
      * **Merchant account ID, App Client ID, App Secret**—these settings connect your marketplace to your PayPal account. Get these credentials from PayPal.
      
@@ -59,7 +63,11 @@ How to Configure the Payment Method
 Have Your Vendors Connect Their Accounts
 ========================================
 
-Vendors connect their PayPal accounts to receive the money for their products that have been sold. If a customer adds products from different vendors to his cart, and all those vendors have their PayPal accounts connected to the marketplace, then this payment method will be offered to the customer.
+Vendors connect their PayPal business accounts to receive the money for their products that have been sold. If a customer adds products from different vendors to his cart, and all those vendors have their PayPal accounts connected to the marketplace, then this payment method will be offered to the customer.
+
+.. note::
+
+    CS-Cart uses `Connected path <https://www.paypal.com/lu/smarthelp/article/what-integration-methods-are-available-for-paypal-for-marketplaces-ts2126>`_ as an integration method with PayPal Commerce Platform. This method requires business accounts from all vendors. 
 
 Here is an instruction for vendors on how to connect their PayPal accounts:
 
