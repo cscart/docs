@@ -283,11 +283,11 @@ There are 2 types of checkboxes manipulation:
  * Via the main checkbox
  * Via links
 
-The control element must have the name ``check_all`` and the class ``check-items``. If the control element is a link, the classes ``on`` and ``off`` are to be also specified (they turn on and off all checkboxes).
+The control element must have the name ``check_all`` and the class ``cm-check-items``. If the control element is a link, the classes ``on`` and ``off`` are to be also specified (they turn on and off all checkboxes).
 
-Manageable elements must have the class ``item``.
+Manageable elements must have the class ``cm-item``.
 
-The class ``process-items`` can be assigned to the button sending the form. In this case when the button is clicked on, the corresponding group of checkboxes will be checked to find out whether the checkboxes are *off* or *on*. If none of them is on, a message will be displayed.
+The class ``cm-process-items`` can be assigned to the button sending the form. In this case when the button is clicked on, the corresponding group of checkboxes will be checked to find out whether the checkboxes are *off* or *on*. If none of them is on, a message will be displayed.
 
 .. note::
 
