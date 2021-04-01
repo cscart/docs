@@ -14,7 +14,7 @@ Each storefront has a **Trash category** that can't be renamed; it is created au
     :align: center
     :alt: You can't rename the Trash category.
 
-If you delete a category, all products inside this category that are not assigned to other categories on this storefront will be moved to the **Trash category**.
+If you delete a category, all products inside this category that are not assigned to other categories on this storefront will be moved to the **Trash category**. That is, as long as the product has one category, it does not get into the **Trash category**.
 
 .. warning::
 
