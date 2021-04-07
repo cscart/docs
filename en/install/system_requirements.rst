@@ -97,7 +97,7 @@ Server Configuration Requirements
         -   ``soap``
     *   -   Multibyte string support*
         -   Required for proper handling of multibyte strings (for example, strings that contain Cyrillic symbols).
-        -   ``mbstring`` OR ``iconv``
+        -   ``mbstring``, ``iconv``
     *   -   Character type checking support*
         -   Required for proper checking whether a character or string falls into a certain character class according to the current locale.
         -   ``ctype``
