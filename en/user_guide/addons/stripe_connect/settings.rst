@@ -4,11 +4,7 @@ How To: Install and Configure Stripe Connect Payments Add-on
 
 #. Open the Administration panel and go to **Add-ons → Manage add-ons**.
 
-#. Switch to the **Browse all available add-ons** tab and install **Stripe Connect payments**.
-
-   .. image:: img/stripe_connect_install.png
-       :align: center
-       :alt: Find and install the Stripe Connect Payments add-on.
+#. Find and install the **Stripe Connect payments** add-on.
 
    .. important::
 

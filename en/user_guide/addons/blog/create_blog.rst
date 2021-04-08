@@ -6,8 +6,8 @@ To create a built-in blog in your store:
 
 Install the **Blog** add-on (if it is not installed yet):
 
-*	In the Administration panel of your store, go to **Add-ons → Manage add-ons** and switch to the **Browse all available add-ons** tab.
-*	Find the **Blog** add-on and click the **Install** button. The add-on will appear in the **Installed add-ons** tab.
+*	In the Administration panel of your store, go to **Add-ons → Manage add-ons**.
+*	Find the **Blog** add-on and click the **Install** button.
 *	Activate the add-on changing its status to *Active*.
 
 Create your blog posts:

@@ -17,13 +17,9 @@ Installing the Add-on
 
 #. In the Administration panel go to **Add-ons → Manage add-ons**.
 
-#. Switch to the **Browse all available add-ons** tab.
-
 #. Find the **Ping++ Payments** add-on in the list.
 
 #. Click the **Install** button right next to it.
-
-After that you’ll be redirected to the Installed add-ons tab where the add-on will appear.
 
 .. image:: img/ping_addon.png
 	:align: center

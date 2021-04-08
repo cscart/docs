@@ -2,7 +2,7 @@
 How To: Manage Add-ons
 **********************
 
-The **Addons → Manage add-ons** section contains a list of installed add-ons in the **Installed add-ons** tab, a list of add-ons available for installation in the **Browse all available add-ons tab**, and a few control elements to manage add-ons.
+The **Addons → Manage add-ons** section contains a list of installed and available for installation add-ons, and a few control elements to manage add-ons.
 
 .. image:: img/manage_addons.png
     :align: center
@@ -63,7 +63,7 @@ To upload a new add-on:
     
 .. important ::
 
-    Before uploading an add-on from archive make sure that there is no such an add-on among the modules available for installation in the **Browse all available add-ons** tab.
+    Before uploading an add-on from archive make sure that there is no such an add-on among the modules available for installation.
 
 Installing Add-ons Manually
 ***************************
@@ -84,8 +84,4 @@ An add-on is an archive with files and folders that match the structure of a CS-
 
 #. Go to **Add-ons → Manage add-ons** in the admin panel of your store.
 
-#. Switch to the **Browse all available add-ons** tab, find the new add-on and click **Install**.
-
-   .. image:: img/addon_installation.png
-       :align: center
-       :alt: Installing an add-on in the admin panel of CS-Cart.
+#. Find the new add-on and click **Install**.

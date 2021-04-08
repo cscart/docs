@@ -6,10 +6,10 @@ The **Age verification** add-on allows the administrator to limit the access to 
 
 To set up the add-on:
 
-*   In the Administration panel, go to **Add-ons → Manage add-ons** and switch to the **Browse all available add-ons** tab.
+*   In the Administration panel, go to **Add-ons → Manage add-ons**.
 *   Find the **Age verification** add-on and click **Install**.
 
-If you have it installed, change its status to *Active* in the **Installed add-ons** tab.
+If you have it installed, change its status to *Active*.
 
 Now you can specify age access for particular products or categories:
 

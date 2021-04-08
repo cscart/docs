@@ -8,8 +8,6 @@ To set up the **Searchanise** add-on:
 
 #. In the administration panel go to **Add-ons → Manage add-ons**.
 
-#. Switch to the **Browse all available add-ons** tab.
-
 #. Find the **Searchanise** add-on and click the **Install** button next to it.
 
 #. Once the add-on is installed, find it on the list of add-ons and click on its name.

@@ -14,7 +14,7 @@ Step 1. Install eBay Synchronization Add-On
 
 1.2. Go to **Add-ons → Manage Add-ons**.
 
-1.3. Switch to the **Browse all available add-ons tab**, find the **eBay synchronization** add-on in the list, and click the **Install** button.
+1.3. Find the **eBay synchronization** add-on in the list, and click the **Install** button.
 
 1.4. Go back to the **Installed add-ons** tab. 
 
@@ -51,7 +51,7 @@ The application keys are unique identifiers that tell eBay which developer and a
     :align: center
     :alt: Generate the eBay Sandbox and Production keys at the eBay My Account page.
 
-2.5. Return to CS-Cart/Multi-Vendor Administration panel. Go to **Add-ons → Manage Add-ons**, switch to the **Installed add-ons** tab, and click on the **eBay synchronization** add-on.
+2.5. Return to CS-Cart/Multi-Vendor Administration panel. Go to **Add-ons → Manage Add-ons**, and click on the **eBay synchronization** add-on.
 
 2.6. Enter the **eBay DevID**, **eBay AppID**, and **eBay CertID** from Step 2.4. into the corresponding fields.
 

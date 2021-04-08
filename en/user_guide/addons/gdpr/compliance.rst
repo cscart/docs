@@ -12,8 +12,6 @@ Step 1. Install and Configure the Add-on
 
 #. In the Administration panel, go to **Add-ons → Manage add-ons**.
 
-#. Switch to the **Browse all available add-ons** tab.
-
 #. Find the **GDPR Compliance (EU)** add-on and click **Install** next to it.
 
    .. image:: img/gdpr-addon.png

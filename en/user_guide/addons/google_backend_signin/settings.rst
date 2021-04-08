@@ -14,8 +14,6 @@ Step 1. Set Up the Add-on
 
 #. Go to **Add-ons → Manage add-ons** in the administration panel of your store.
 
-#. Switch to the **Browse all available add-ons** tab.
-
 #. Install the **Back-End Sign-In via Google** add-on.
 
 #. Click the name of the newly-installed add-on to open its settings. You'll need to do 2 things there:
