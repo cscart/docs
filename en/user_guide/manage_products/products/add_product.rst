@@ -21,7 +21,7 @@ Adding One Product
        :align: center
        :alt: The "Plus" button adds a new product.
 
-#. The product creation page will open. Configure the required properties of the product. You'll be able to edit the product properties later at any time.
+#. The product creation page will open. Configure :doc:`the required properties of the product <product_attributes>`. You'll be able to edit the product properties later at any time.
 
    .. note::
 
