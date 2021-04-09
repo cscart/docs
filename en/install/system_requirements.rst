@@ -73,62 +73,6 @@ Server Configuration Requirements
 * Either **Imagick** or **GD** PHP extension must be installed. These extensions are used for image manipulation, such as creating thumbnails, applying watermarks, etc. **GD** is available almost at any hosting. But we recommend **Imagick**, because it offers better performance and quality of the processed images.
 
   * **Imagick** is a `PECL extension <https://pecl.php.net/package/imagick>`_. The official PHP documentation has `detailed installation instructions for Imagick <http://php.net/manual/en/imagick.setup.php>`_. `ImageMagick <http://www.imagemagick.org/script/index.php>`_ version 6.5.3-10+ and PHP 5.4.0+ must be installed on your server.
-=======
-  .. list-table::
-    :widths: 5 10 5
-    :stub-columns: 1
-
-    *   -   MySQL support*
-        -   Required for storing the data of your store in a database.
-        -   ``mysqli`` OR ``pdo_mysql``
-    *   -   Network requests support*
-        -   Required for proper functioning of several payment gateways (such as PayPal, Authorize Net, etc.) and real-time shipping services (FedEx, UPS, DHL), for sending e-mails via SMTP, and for upgrading your store.
-        -   ``curl``, ``sockets``
-    *   -   Graphics library*
-        -   Required for creating smaller versions (thumbnails) of product images. If you don't have a graphics library, you won't be able to upload images for products.
-        -   ``imagick`` OR ``gd``
-    *   -   EXIF support*
-        -   Required for making sure that the thumbnails generated from images shot in landscape mode will be rotated correctly.
-        -   ``exif``
-    *   -   JSON support*
-        -   Required for proper functioning of CS-Cart and Multi-Vendor; even some aspects of core functionality rely on `JSON <https://www.json.org/>`_.
-        -   ``json``
-    *   -   XML support*
-        -   Required for proper functioning of CS-Cart and Multi-Vendor; even some aspects of core functionality rely on `XML <https://www.w3schools.com/xml/>`_.
-        -   ``xml``, ``libxml``, ``SimpleXML``, ``dom``, ``xmlreader``, ``xmlwriter``
-    *   -   SOAP support*
-        -   Required for proper functioning of several real-time shipping services (for example, Temando).
-        -   ``soap``
-    *   -   Multibyte string support*
-        -   Required for proper handling of multibyte strings (for example, strings that contain Cyrillic symbols).
-        -   ``mbstring``, ``iconv``
-    *   -   Character type checking support*
-        -   Required for proper checking whether a character or string falls into a certain character class according to the current locale.
-        -   ``ctype``
-    *   -   GZIP archives support*
-        -   Required for unpacking TAR and GZIP archives. Otherwise you won't be able to install add-ons and themes from such archives.
-        -   ``Phar``
-    *   -   ZIP archives support*
-        -   Required for unpacking ZIP archives. Otherwise you won't be able to upgrade your store and install add-ons and themes from such archives.
-        -   ``zip``
-    *   -   File information support*
-        -   Required for proper detection of the file type.
-        -   ``fileinfo``
-    *   -   Cryptography support*
-        -   Required for proper functioning of several payment gateways (such as Servired and SagePay) and for interacting with third-party services (such as Facebook).
-        -   ``openssl``
-    *   -   FTP support
-        -   Required for setting correct file and directory permissions during the installation and upgrades of the store, and during the installation of add-ons and themes. An FTP server must be installed on your server.
-        -   ``ftp``
-    *   -   Cache and session backend
-        -   Required for storing cache and PHP sessions in a high-performance storage rather than on the disk.
-        -   ``redis`` OR ``sqlite3`` OR ``xcache`` OR ``apcu`` OR ``apc``
-
-  Notes:
-
-  * **GD** is available almost at any hosting. But we recommend **Imagick**, because it offers better performance and quality of the processed images.
-
-    **Imagick** is a `PECL extension <https://pecl.php.net/package/imagick>`_. The official PHP documentation has `detailed installation instructions for Imagick <http://php.net/manual/en/imagick.setup.php>`_. `ImageMagick <http://www.imagemagick.org/script/index.php>`_ version 6.5.3-10+ and PHP 5.4.0+ must be installed on your server.
 
     .. important::
 
