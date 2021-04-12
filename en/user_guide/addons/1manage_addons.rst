@@ -2,7 +2,7 @@
 How To: Manage Add-ons
 **********************
 
-The **Addons → Manage add-ons** section contains a list of installed and available for installation add-ons, and a few control elements to manage add-ons.
+The **Addons → Manage add-ons** page contains the list of add-ons that are installed or available for installation. The page also has a few control elements to manage add-ons.
 
 .. image:: img/manage_addons.png
     :align: center
@@ -63,7 +63,7 @@ To upload a new add-on:
     
 .. important ::
 
-    Before uploading an add-on from archive make sure that there is no such an add-on among the modules available for installation.
+    Before uploading an add-on from archive make sure that there is no such an add-on among the add-ons available for installation.
 
 Installing Add-ons Manually
 ***************************
