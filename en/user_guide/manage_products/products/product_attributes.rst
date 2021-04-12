@@ -27,6 +27,8 @@ Information
 
 * **Name**—the name of the product as it appears on the storefront and in the Administration panel. The name of the same product can differ, depending on the storefront and language.
 
+* **Storefront**—the storefront to which the product is assigned. This setting appears if the additional storefront was created on the **Administration → Storefronts** page.
+
 * **Categories**—the categories that the product will be assigned to. When a product has multiple categories, the first category on the list will be the main category for the product. To change the main category, just drag another category in its place.
 
 * **Price**—base product price in your store's primary currency. Prices in other currencies are converted automatically, according to the exchange rate that you specify. All calculations are done in the primary currency.
@@ -51,6 +53,30 @@ Information
 
   If you hover over an image, you'll be able to view the full-sized image, delete it, or edit its alt text. This text will be shown when the image is missing or cannot be displayed. It is a good practice to have an alternative text associated with the image, for SEO purposes.
 
+----------------
+Options Settings
+----------------
+
+.. note::
+
+    The following fields appear if it *was allowed changing the value of the setting for individual items* on the **Settings → General** page. 
+
+* **Options type**—select how the options and variants of this product appear and work on the storefront: 
+
+  * *Simultaneous*—customers can choose the variant for each option independently and in any order.
+
+  * *Sequential*—options and variants are chosen one after another: first the variant of the first option, then the variant of the second option, and so on.
+
+  .. hint::
+
+      Options are specific properties of the product that a customer can choose when making a purchase. For example, options for clothes may include color and size. The variants of those options would be *red/green/blue* and *S/M/L/XL/XXL* respectively.
+
+* **Exceptions type**—select a type of the product option exceptions: 
+
+  * *Forbidden*—you'll be able to specify *Forbidden combinations* on the **Options** tab. Customers won’t be able to purchase a product when they choose a forbidden combination of option variants.
+
+  * *Allowed*—you'll be able to specify *Allowed combinations* on the **Options** tab. Customers will only be able to select these combinations of option variants.
+
 -------------------
 Pricing / Inventory
 -------------------
@@ -62,6 +88,32 @@ Pricing / Inventory
 * **In stock**—the number of products in the stock. Products that are out of stock can't be bought, unless you enable the **Allow negative amount in inventory** setting under **Settings → General → Catalog**.
 
 * **Taxes**—select the :doc:`taxes <../../shipping_and_taxes/index>` that will be applied to the product.
+
+.. note::
+
+    The following fields appear if it *was allowed changing the value of the setting for individual items* on the **Settings → Checkout** page. The **Track inventory** field is enabled for individual items on the **Settings → General** page. 
+
+* **Zero price action**—determines what can be done on the storefront when the product's price is 0:
+
+  * *Do not allow customers to add the product to cart*
+
+  * *Allow customers to add the product to cart*
+
+  * *Ask customers to enter the price* — customers will see an input field and will be able to enter the price that they're willing to pay. That's useful for charity events or donations.
+
+* **Track inventory**—determines whether the number of products in stock will decrease after each purchase.
+
+* **Minimum quantity to buy per product**—the minimum number of items that a customer can buy at a time. This number will appear on the product page on the storefront, right after the product price.
+
+* **Maximum quantity to buy per product**—the maximum number of items that a customer can buy at a time. *0* means no limit.
+
+* **Quantity step**—determines the step by which a customer can increase or decrease the number of products in cart.
+
+  .. hint::
+
+      If the minimum order quantity is 3, the maximum order quantity is 9, and the quantity step is 3, then a customer will be able to purchase 3, 6, or 9 items in one order.
+
+* **Number of available quantities**—the maximum number of choices in the **Quantity** drop-down list. It comes useful when you set a quantity step and when there are a lot of items in stock.
 
 ------------
 Availability
@@ -151,7 +203,7 @@ Variations
 
 On this tab you can create :doc:`similar products <product_variations>` and add them to the group.
 
-* **Add variations**—create variations based on product characteristics (automatically) or using existing products.
+* **Add variations**—create variations based on product features (automatically) or using existing products.
 
 * **Add to variation group**—add this product as a variation to any existing group.
 
