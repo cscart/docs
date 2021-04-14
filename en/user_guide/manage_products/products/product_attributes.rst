@@ -59,7 +59,7 @@ Options Settings
 
 .. note::
 
-    The following fields appear if it *was allowed changing the value of the setting for individual items* on the **Settings → General** page. 
+    The following fields will appear if *changing the value of the setting for individual items* on the **Settings → General** page is allowed.
 
 * **Options type**—select how the options and variants of this product appear and work on the storefront: 
 
@@ -91,7 +91,7 @@ Pricing / Inventory
 
 .. note::
 
-    The following fields appear if it *was allowed changing the value of the setting for individual items* on the **Settings → Checkout** page. The **Track inventory** field is enabled for individual items on the **Settings → General** page. 
+    The following fields will appear if *changing the value of the setting for individual items* on the **Settings → Checkout** page is allowed. The **Track inventory** field is enabled for individual items on the **Settings → General** page. 
 
 * **Zero price action**—determines what can be done on the storefront when the product's price is 0:
 
