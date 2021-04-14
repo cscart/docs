@@ -58,7 +58,7 @@ Some real-time payment methods are designed specifically for marketplaces. These
 
 Currently, Multi-Vendor has the following payment methods with automatic money distribution (as built-in add-ons):
 
-* :doc:`/user_guide/addons/paypal_for_marketplaces/index`
+* :doc:`/user_guide/addons/paypal_commerce_platform/index`
 
 * :doc:`/user_guide/addons/stripe_connect/index`
 
