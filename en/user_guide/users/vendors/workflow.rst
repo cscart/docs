@@ -62,12 +62,6 @@ Currently, Multi-Vendor has the following payment methods with automatic money d
 
 * :doc:`/user_guide/addons/stripe_connect/index`
 
-These add-ons can be configured to collect the following sums in favor of the marketplace:
-
-* Transaction fees only.
-
-* Transaction fees and any unpaid payouts (debts) that the vendor might have.
-
 However, for these payment methods to work, all vendors whose products are being bought it one order must be able to receive payments via the chosen payment method. 
 
 .. note::
