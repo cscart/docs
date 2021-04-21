@@ -52,6 +52,7 @@
     lite_checkout/index
     advanced_products_import/index
     vendor_rating/index
+    rus_sdek/index
     warehouses/index
     social_login/index
     old_admin_panel/index
