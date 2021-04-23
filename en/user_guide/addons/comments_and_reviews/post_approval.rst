@@ -12,10 +12,6 @@ Set up Moderation of Posts
 
 #. Most tabs have the following setting: **Administrator must approve posts submitted by**. It allows you to choose whose posts won't appear on the storefront without a prior review and approval by administrators.
 
-   .. image:: img/post_approval_01.png
-       :align: center
-       :alt: Settings
-
 ==============
 Approve a Post
 ==============
@@ -25,7 +21,3 @@ Approve a Post
 #. Open the desired tab with the comments or reviews that you want to approve.
 
 #. Click the **thumps-up** icon under the post you want to approve.
-
-   .. image:: img/post_approval_02.png
-       :align: center
-       :alt: Product reviews

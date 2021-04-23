@@ -2,9 +2,13 @@
 Comments and Reviews
 ********************
 
+.. note::
+
+    Starting from version 4.13.x, the "Product Reviews" add-on is responsible for product reviews.
+
 This add-on enables you to manage customer feedback and discussions appearing on some of the storefront pages:
 
-* Product and category pages
+* Category pages
 * Order details
 * Blog
 * Content pages
@@ -23,5 +27,4 @@ Articles in This Section
     comments_settings
     enable_comments_addon
     post_approval
-    enable_reviews
     testimonials

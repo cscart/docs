@@ -40,6 +40,7 @@
     vendor_debt_payout/index
     geolocation/index
     comments_and_reviews/index
+    product_reviews/index
     paypal_payments/index
     gift_certificates/index
     hidpi_displays_support/index

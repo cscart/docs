@@ -18,23 +18,19 @@ Check the Add-on
 
    * Automatically allow or forbid comments and reviews for newly-created objects without affecting existing ones. That way you won't need to manually do this for every object you create.
 
-   * Forbid to leave reviews about a product or vendor to anyone who hasn't bought that product or from that vendor.
-
-   .. image:: img/comments_03.png
-       :align: center
-       :alt: The settings of the "Comments and reviews" add-on.
+   * Forbid to leave reviews about vendor from that vendor.
 
 ==============================
 Choose Where to Allow Comments
 ==============================
 
-#. Go to the page with the objects for which you'd like to allow comments (for example, **Products → Products** or **Products → Categories**).
+#. Go to the page with the objects for which you'd like to allow comments (for example, **Products → Categories**).
 
    .. note::
 
-       You can allow comments and/or reviews for products, categories, orders, blog, pages, and the store itself (testimonials).
+       You can allow comments and/or reviews for categories, orders, blog, pages, and the store itself (testimonials).
 
-#. Click on the name of the product or category, for which you want to allow comments.
+#. Click on the name of the category, for which you want to allow comments.
 
 #. Go to the **Add-ons** tab.
 
@@ -48,28 +44,6 @@ Choose Where to Allow Comments
 
    * *Disabled*—customers can't write a review or rate the object.
 
-   .. image:: img/comments_01.png
-       :align: center
-       :alt: Configuring reviews for a product.
-
-In Multi-Vendor, vendors can confugure product reviews by default. You can forbid them to do it. To do this you need the :doc:`/user_guide/addons/vendor_privileges/index` add-on.
-
-#. Go to **Customers → User groups**.
-
-#. Find the **Vendor** user group and click its name to open the settings.
-
-#. In the **Website** section, find the **Comments and reviews** field and enable the **View only** setting.
-
-#. Click **Save**.
-
-   .. image:: img/comments_vendors.png
-       :align: center
-       :alt: Enabling access for vendors
-
-  .. note::
-  
-      Giving the **Full access** to vendors does not mean that vendors can edit comments and reviews, or delete them. Only a marketplace administrator is able to do that.
-
 ========================
 View and Manage Comments
 ========================
@@ -79,7 +53,3 @@ View and Manage Comments
 #. Open the tab with comments or reviews depending on the reviewed object.
 
 #. Edit the comments if necessary and click **Save**.
-
-   .. image:: img/comments_02.png
-       :align: center
-       :alt: Comments and reviews
