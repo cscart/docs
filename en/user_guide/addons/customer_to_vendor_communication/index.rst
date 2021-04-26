@@ -4,7 +4,7 @@ Message Center
 
 The **Message center** add-on helps to establish communication between CS-Cart users:
 
-* Customers can ask questions about specific products or simply contact you or your vendors.
+* Customers can ask questions about specific products, order details or simply contact you or your vendors.
 
 * Marketplace administration and vendors can contact each other.
 
@@ -24,15 +24,23 @@ The **Message center** add-on allows you and your vendors to stay in touch with 
 
 * read customers' messages;
 
-* answer those messages, including customers' questions on specific products. A link to the product page from which the question has been sent is attached at the bottom of the dialogue. This allows the vendor to go to the product page right from the dialogue, and quickly solve the client's problem or answer his question.
+* answer those messages, including customers' questions on specific products. A link to the product page from which the question has been sent is on the right part of the page. This allows the vendor to go to the product page right from the dialogue, and quickly solve the client's problem or answer his question.
 
 .. image:: img/ask_a_question.png
       :align: center
-      :alt: A link to the product page from which the message has been sent, in the dialogue between the customer and the vendor
+      :alt: Dialogue between the customer and the vendor on product.
+
+* answer customers' questions on orders. A link to the order from which the question has been sent is on the right part of the page.
+
+.. image:: img/ask_a_question_2.png
+      :align: center
+      :alt: Dialogue between the customer and the vendor on order.
 
 The add-on allows customers to:
 
 * ask a question right from the storefront via the **Ask a question** button.
+
+* start communication from the order page via the **My Account → Orders** page.
 
 * read and answer messages on the **Messages** tab in their accounts.
 

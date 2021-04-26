@@ -18,16 +18,6 @@ Categories
 
 * **Default value**—determines if comments and/or reviews will be allowed by default for newly-created categories. Changing this setting won't affect existing categories.
 
-======
-Orders
-======
-
-* **Posts per page**—the maximum number of posts to appear on one page.
-
-* **Allow customer to initiate discussion**—if you tick this checkbox, customers will be able to start the discussion.
-
-* **Send notifications to vendor** (only in Multi-Vendor)—if you tick this checkbox, vendors will receive notifications about new posts.
-
 =============
 Gift registry
 =============

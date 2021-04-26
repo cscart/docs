@@ -28,7 +28,7 @@ Choose Where to Allow Comments
 
    .. note::
 
-       You can allow comments and/or reviews for categories, orders, blog, pages, and the store itself (testimonials).
+       You can allow comments and/or reviews for categories, blog, pages, and the store itself (testimonials).
 
 #. Click on the name of the category, for which you want to allow comments.
 

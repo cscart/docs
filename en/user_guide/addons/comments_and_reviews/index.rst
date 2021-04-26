@@ -9,7 +9,6 @@ Comments and Reviews
 This add-on enables you to manage customer feedback and discussions appearing on some of the storefront pages:
 
 * Category pages
-* Order details
 * Blog
 * Content pages
 * Testimonials

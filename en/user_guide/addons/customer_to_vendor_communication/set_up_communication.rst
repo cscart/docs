@@ -23,11 +23,13 @@ Basic Add-on Settings
    
      * **Contact button on product pages** — tick the box, if you want to allow your customer to send you messages from the product pages.
      
-     * **Contact button in vendor microstore** —  tick the box, if you want the **Ask a question** button to appear on the vendor's microstore page.
+     * **Contact button in vendor microstore** — tick the box, if you want the **Ask a question** button to appear on the vendor's microstore page.
 
        .. important::
 
            This setting is only affects those vendors who have their microstore enabled in the :doc:`vendor plan </user_guide/users/vendors/manage_vendor_plans>`.
+
+     * **Contact button on detailed order page** — tick the box, if you want to allow your customer to send you messages from the detailed order pages.
 
 How to Restrict the Communication between Vendors and Other CS-Cart Users?
 ==========================================================================
