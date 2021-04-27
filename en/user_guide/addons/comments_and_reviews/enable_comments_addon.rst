@@ -18,7 +18,7 @@ Check the Add-on
 
    * Automatically allow or forbid comments and reviews for newly-created objects without affecting existing ones. That way you won't need to manually do this for every object you create.
 
-   * Forbid to leave reviews about vendor from that vendor.
+   * Forbid to leave reviews about vendor to anyone who hasn't bought anything from that vendor.
 
 ==============================
 Choose Where to Allow Comments

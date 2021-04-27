@@ -12,9 +12,7 @@ This add-on enables customers to leave detailed reviews about products, as well 
 Add-on Settings
 ===============
 
-Find the **Product Reviews** add-on on the **Add-ons → Manage add-ons** page, and click on its name.
-
-On the **Settings** tab:
+Find the **Product Reviews** add-on on the **Add-ons → Manage add-ons** page, and click on its name. Then switch to the **Settings** tab to see the list of add-on's settings:
 
 * **Reviews per page**—the number of reviews to appear on one page.
 
@@ -22,13 +20,13 @@ On the **Settings** tab:
 
 * **Allow one review from one IP is allowed**—if you tick this checkbox, customers will be allowed to submit only one review per product from one IP address. This can help you avoid spam.
 
-* **Review fields**—fields that buyers will fill in creating a review.
+* **Review fields**—fields that buyers will fill in when they create a review.
 
 * **Only buyers can post**—if you tick this checkbox, customers will be able to leave a review for a product only if they bought that product.
 
-* **Ask for customer location**—choose whether you want to know additional information about the buyer's city or country.
+* **Ask for customer location**—choose whether you want customers to fill in the required field about thier city or country when they create a review.
 
-* **Split reviews by storefront**—if you tick this checkbox, you'll be able to work with reviews from a particular storefront.
+* **Split reviews by storefront**—if you tick this checkbox, all reviews will be splited by storefront.
 
 ================================================
 Working With Reviews in the Administration Panel 
