@@ -16,7 +16,7 @@ Find the **Product Reviews** add-on on the **Add-ons → Manage add-ons** page, 
 
 * **Reviews per page**—the number of reviews to appear on one page.
 
-* **Administrator must approve posts submitted by**—choose whether to approve posts submitted by all customers or only anonymous customers, or do not moderate reviews at all.
+* **Administrator must approve posts submitted by**—choose whether to approve posts submitted by all customers or only anonymous customers, or not to moderate reviews at all.
 
 * **Allow one review from one IP is allowed**—if you tick this checkbox, customers will be allowed to submit only one review per product from one IP address. This can help you avoid spam.
 
@@ -26,7 +26,7 @@ Find the **Product Reviews** add-on on the **Add-ons → Manage add-ons** page, 
 
 * **Ask for customer location**—choose whether you want customers to fill in the required field about thier city or country when they create a review.
 
-* **Split reviews by storefront**—if you tick this checkbox, all reviews will be splited by storefront.
+* **Split reviews by storefront**—if you tick this checkbox, all reviews will be split by storefront.
 
 ================================================
 Working With Reviews in the Administration Panel 
