@@ -24,17 +24,13 @@ The **Message center** add-on allows you and your vendors to stay in touch with 
 
 * read customers' messages;
 
-* answer those messages, including customers' questions on specific products. A link to the product page from which the question has been sent is on the right part of the page. This allows the vendor to go to the product page right from the dialogue, and quickly solve the client's problem or answer his question.
+* answer those messages, including customers' questions on specific products or orders. 
 
-.. image:: img/ask_a_question.png
-      :align: center
-      :alt: Dialogue between the customer and the vendor on product.
+  The right side of the page contains the context (for example, information about the product or order), which allows you to understand the customer's question better. The link leads the vendor to the product page or order right from the dialogue.
 
-* answer customers' questions on orders. A link to the order from which the question has been sent is on the right part of the page.
-
-.. image:: img/ask_a_question_2.png
-      :align: center
-      :alt: Dialogue between the customer and the vendor on order.
+  .. image:: img/ask_a_question.png
+        :align: center
+        :alt: Dialogue between the customer and the vendor on product.
 
 The add-on allows customers to:
 
