@@ -28,7 +28,7 @@ The add-on allows customers to:
 
 * use points to pay for other products or just reduce the original cost of products if the existing amount of points does not cover it completely.
 
-  If the buyer wants to use **reward points** then at checkout he or she should enter the desired amount of points in the field. The order total will decrease according to points exchange rate. The rest of the sum can be paid via any available payment method.
+  If the buyer wants to use reward points then at checkout he or she should enter the desired amount of points in the field. The order total will decrease according to points exchange rate. The rest of the sum can be paid via any available payment method.
 
   .. image:: img/reward_points_checkout.png
       :align: center
@@ -40,7 +40,7 @@ Configuration
 
 #. In the Administration panel, go to **Add-ons → Manage add-ons**.
 
-#. Change the status of the **Reward points** add-on to *Active*.
+#. Make sure that the **Reward Points** add-on is installed and active.
 
 #. Click on the name of the **Reward points** add-on.
 
@@ -56,11 +56,21 @@ Configuration
 Related Articles
 ================
 
-* :doc:`/user_guide/addons/reward_points/reward_points_settings`
-* :doc:`/user_guide/addons/reward_points/account_manually`
-* :doc:`/user_guide/addons/reward_points/order_auto`
-* :doc:`/user_guide/addons/reward_points/category_auto`
-* :doc:`/user_guide/addons/reward_points/products_auto`
-* :doc:`/user_guide/addons/reward_points/price_manually`
-* :doc:`/user_guide/addons/reward_points/price_according_to_ratio`
-* :doc:`/user_guide/addons/reward_points/points_not_added`
+.. toctree::
+    :maxdepth: 2
+    :titlesonly:
+    :glob:
+
+    reward_points_settings
+    account_manually
+    order_auto
+    category_auto
+    products_auto
+    price_manually
+    price_according_to_ratio
+    points_not_added
+
+.. toctree::
+    :hidden:
+
+    set_rp_addon

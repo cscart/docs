@@ -28,7 +28,7 @@
 
 * использовать эти баллы, чтобы оплатить ими заказ полностью или частично (если баллов не хватает);
 
-  Если покупатель хочет использовать **бонусные баллы**, то при оформлении заказа нужно ввести нужное количество баллов в соответствующее поле. Сумма покупки уменьшится в соответствии с курсом конвертации баллов, а остаток можно оплатить любым доступным способом оплаты.
+  Если покупатель хочет использовать бонусные баллы, то при оформлении заказа нужно ввести нужное количество баллов в соответствующее поле. Сумма покупки уменьшится в соответствии с курсом конвертации баллов, а остаток можно оплатить любым доступным способом оплаты.
 
   .. fancybox:: img/reward_points_checkout.png
       :alt: Применение баллов при оформлении заказа.
@@ -39,7 +39,7 @@
 
 #. Откройте страницу **Модули → Управление модулями** в панели администратора.
 
-#. Измените статус модуля **Бонусные баллы** на *Вкл.*
+#. Убедитесь, что модуль **Бонусные баллы** установлен и включен.
 
 #. Нажмите на название модуля **Бонусные баллы**, чтобы открыть его настройки.
 
@@ -54,11 +54,21 @@
 Связанные статьи
 ================
 
-* :doc:`/user_guide/addons/reward_points/reward_points_settings`
-* :doc:`/user_guide/addons/reward_points/account_manually`
-* :doc:`/user_guide/addons/reward_points/order_auto`
-* :doc:`/user_guide/addons/reward_points/category_auto`
-* :doc:`/user_guide/addons/reward_points/products_auto`
-* :doc:`/user_guide/addons/reward_points/price_manually`
-* :doc:`/user_guide/addons/reward_points/price_according_to_ratio`
-* :doc:`/user_guide/addons/reward_points/points_not_added`
+.. toctree::
+    :maxdepth: 2
+    :titlesonly:
+    :glob:
+
+    reward_points_settings
+    account_manually
+    order_auto
+    category_auto
+    products_auto
+    price_manually
+    price_according_to_ratio
+    points_not_added
+
+.. toctree::
+    :hidden:
+
+    set_rp_addon
