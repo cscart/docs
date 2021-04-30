@@ -1,5 +1,5 @@
 ***********************************************
-Adapt Your Add-ons and Themes to CS-Cart 4.12.2
+Adapt Your Add-ons and Themes to CS-Cart 4.13.1
 ***********************************************
 
 .. contents::
@@ -14,23 +14,22 @@ Common Changes
 Changes in Context Menu
 -----------------------
 
-A single method of context menu creation was created. The method depends on schemas.
-Check the examples here: ``app/schemas/context_menu/profiles.php``
+A single method for creating context menus was introduced. The method is based on schemas. Check the examples here: ``app/schemas/context_menu/profiles.php``
 
 The context menu schema has the following structure::
 
     [
-        'selectable_statuses' => array<string, string>                                                                             // A list of statuses for selecting items.
-        'items'               => [                                                                                                 //  A list of context menu items.
-            'status'  => [                                                                                                         // An item ID.
-                'name'              => ['template' => 'status'],                                                                   // An item name.
-                'type'              => GroupItem::class,                                                                           // An item type (ActionItem/GroupItem/ComponentItem).
+        'selectable_statuses' => array<string, string>                                                                             // List of statuses for selecting items.
+        'items'               => [                                                                                                 // List of context menu items.
+            'status'  => [                                                                                                         // Item ID.
+                'name'              => ['template' => 'status'],                                                                   // Item name.
+                'type'              => GroupItem::class,                                                                           // Item type (ActionItem/GroupItem/ComponentItem).
                 'data'              => [                                                                                           // Data to provide to a template. Use $data in the template.
                     'menu_item_class' => 'cm-no-hide-input',                                                                       // menu_item_attributes, menu_item_class, action_attributes, action_class - used in common templates.
                     ...
                 ],
-                'items'             => [                                                                                           // A list of embedded items in GroupItem.
-                    'm_activate' => [                                                                                              // Link item
+                'items'             => [                                                                                           // List of embedded items in GroupItem.
+                    'm_activate' => [                                                                                              // Link item.
                         'name'          => [
                             'template' => 'change_to_status',
                             'params'   => [
@@ -38,17 +37,17 @@ The context menu schema has the following structure::
                                 ...
                             ],
                         ],
-                        'dispatch' => 'profiles.m_activate',                                                                       // A dispatcher to which the selected items IDs will be passed. A dispatcher is also used to check the item availability for an active user.
-                        'position' => 10,                                                                                          // An item position in the list.
+                        'dispatch' => 'profiles.m_activate',                                                                       // Dispatch to which the selected items IDs will be passed. The dispatch is also used to check the item availability for an active user.
+                        'position' => 10,                                                                                          // Item position in the list.
                     ],
-                    'actions_divider'   => [                                                                                       // An item divider.
-                        'type'     => DividerItem::class,                                                                          // A type of an item embedded to GroupItem (GroupActionItem/ComponentItem/DividerItem). The default item type is GroupActionItem..
+                    'actions_divider'   => [                                                                                       // Item divider.
+                        'type'     => DividerItem::class,                                                                          // Type of an item embedded to GroupItem (GroupActionItem/ComponentItem/DividerItem). The default item type is GroupActionItem..
                         'position' => 20,
                     ],
-                    'notify_checkboxes' => [                                                                                       // An item with its own template
+                    'notify_checkboxes' => [                                                                                       // Item with its own template.
                         'type'          => ComponentItem::class,
-                        'template'      => 'views/profiles/components/context_menu/notify_checkboxes.tpl',                         // A custom template of ComponentItem.
-                        'data_provider' => static function () {                                                                    // Callback-function to form the data to provide it to a template. Use $data in the template.
+                        'template'      => 'views/profiles/components/context_menu/notify_checkboxes.tpl',                         // Custom template of ComponentItem.
+                        'data_provider' => static function () {                                                                    // Callback function to form the data to provide it to a template. Use $data in the template.
                             return [
                                 'param1' => 'value2',
                                 ...
@@ -58,7 +57,7 @@ The context menu schema has the following structure::
                     ],
                     ...
                 ],
-                'permission_callback' => static function ($request, $auth, $runtime) {                                             // Callback-function to check an item availability
+                'permission_callback' => static function ($request, $auth, $runtime) {                                             // Callback function to check an item availability.
                     return !(
                         UserTypes::isVendor($auth['user_type'])
                         && UserTypes::isCustomer($request['user_type'])

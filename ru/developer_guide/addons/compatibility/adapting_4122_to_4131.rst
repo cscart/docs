@@ -22,14 +22,14 @@
 	    'selectable_statuses' => array<string, string>                                                                             // Список статусов для выделения элементов.
 	    'items'               => [                                                                                                 // Список элементов контекстного меню.
 	        'status'  => [                                                                                                         // Идентификатор элемента.
-	            'name'              => ['template' => 'status'],                                                                   // Названия элемента.
+	            'name'              => ['template' => 'status'],                                                                   // Название элемента.
 	            'type'              => GroupItem::class,                                                                           // Тип элемента (ActionItem/GroupItem/ComponentItem).
-	            'data'              => [                                                                                           // Данные для передачи в шаблон. В шаблоне обращатьmся через $data.
+	            'data'              => [                                                                                           // Данные для передачи в шаблон. В шаблоне обращаться через $data.
 	                'menu_item_class' => 'cm-no-hide-input',                                                                       // menu_item_attributes, menu_item_class, action_attributes, action_class - используется в общих шаблонах.
 	                ...
 	            ],
 	            'items'             => [                                                                                           // Список вложенных элементов в GroupItem.
-	                'm_activate' => [                                                                                              // Элемент-ссылка
+	                'm_activate' => [                                                                                              // Элемент-ссылка.
 	                    'name'          => [
 	                        'template' => 'change_to_status',
 	                        'params'   => [
@@ -37,17 +37,17 @@
 	                            ...
 	                        ],
 	                    ],
-	                    'dispatch' => 'profiles.m_activate',                                                                       // Диспатч на который будут переданы идентификаторы выделенных элементов, диспатч также используется при проверке доступности элемента текущему пользователю.
+	                    'dispatch' => 'profiles.m_activate',                                                                       // Диспатч, на который будут переданы идентификаторы выделенных элементов; диспатч также используется при проверке доступности элемента текущему пользователю.
 	                    'position' => 10,                                                                                          // Позиция элемента в списке.
 	                ],
-	                'actions_divider'   => [                                                                                       // Элемент разделитель.
-	                    'type'     => DividerItem::class,                                                                          // Тип вложенного в GroupItem элемента (GroupActionItem/ComponentItem/DividerItem). По умолчанию тип элемента GroupActionItem..
+	                'actions_divider'   => [                                                                                       // Элемент-разделитель.
+	                    'type'     => DividerItem::class,                                                                          // Тип вложенного в GroupItem элемента (GroupActionItem/ComponentItem/DividerItem). По умолчанию тип элемента GroupActionItem.
 	                    'position' => 20,
 	                ],
-	                'notify_checkboxes' => [                                                                                       // Элемент с собственным шаблоном
+	                'notify_checkboxes' => [                                                                                       // Элемент с собственным шаблоном.
 	                    'type'          => ComponentItem::class,
 	                    'template'      => 'views/profiles/components/context_menu/notify_checkboxes.tpl',                         // Собственный шаблон элемента ComponentItem.
-	                    'data_provider' => static function () {                                                                    // Callback функция для формирования данных для передачи в шаблон. В шаблоне обращатьmся через $data.
+	                    'data_provider' => static function () {                                                                    // Call-back функция для формирования данных для передачи в шаблон. В шаблоне обращаться через $data.
 	                        return [
 	                            'param1' => 'value2',
 	                            ...
@@ -57,7 +57,7 @@
 	                ],
 	                ...
 	            ],
-	            'permission_callback' => static function ($request, $auth, $runtime) {                                             // Callback функция для проверки доступности элемента
+	            'permission_callback' => static function ($request, $auth, $runtime) {                                             // Callback функция для проверки доступности элемента.
 	                return !(
 	                    UserTypes::isVendor($auth['user_type'])
 	                    && UserTypes::isCustomer($request['user_type'])
@@ -101,11 +101,11 @@
 
        \fn_execute_as_company(callable $action, $company_id)
        
-#. Получает пример диспетчера событий::
+#. Получает экземпляр диспетчера событий::
 
        \Tygh\Providers\EventDispatcherProvider::getEventDispatcher()
 
-#. Получает пример фабрики классов для настроек уведомлений::
+#. Получает экземпляр фабрики классов для настроек уведомлений::
 
        \Tygh\Providers\EventDispatcherProvider::getNotificationSettingsFactory()
 
