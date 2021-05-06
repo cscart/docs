@@ -47,7 +47,7 @@
 	                'notify_checkboxes' => [                                                                                       // Элемент с собственным шаблоном.
 	                    'type'          => ComponentItem::class,
 	                    'template'      => 'views/profiles/components/context_menu/notify_checkboxes.tpl',                         // Собственный шаблон элемента ComponentItem.
-	                    'data_provider' => static function () {                                                                    // Call-back функция для формирования данных для передачи в шаблон. В шаблоне обращаться через $data.
+	                    'data_provider' => static function () {                                                                    // Callback-функция для формирования данных для передачи в шаблон. В шаблоне обращаться через $data.
 	                        return [
 	                            'param1' => 'value2',
 	                            ...
@@ -57,7 +57,7 @@
 	                ],
 	                ...
 	            ],
-	            'permission_callback' => static function ($request, $auth, $runtime) {                                             // Callback функция для проверки доступности элемента.
+	            'permission_callback' => static function ($request, $auth, $runtime) {                                             // Callback-функция для проверки доступности элемента.
 	                return !(
 	                    UserTypes::isVendor($auth['user_type'])
 	                    && UserTypes::isCustomer($request['user_type'])
