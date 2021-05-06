@@ -2,6 +2,10 @@
 CS-Cart 4.13.1 Changelog
 ************************
 
+=============================
+New Features and Improvements
+=============================
+
 [+] A context menu was added to the majority of the pages in the admin panel.
 
 [+] Add-ons: Add-on detailed page and add-ons list page were updated.
@@ -42,7 +46,13 @@ CS-Cart 4.13.1 Changelog
 
 [+] Security: When changing the password on an active device, the session is reset on others.
 
-[+] Security: Added the ability to display captcha on the user password recovery page
+[+] Security: Added the ability to display captcha on the user password recovery page.
+
+[+] Shipping methods: DHL: New supported shipping services added.
+
+=====================
+Functionality Changes
+=====================
 
 [*] Add-ons: Attachments: Exim: When importing, the unavailability of the file by url  now does not interrupt the import process. Information about unavailable files is displayed in a list.
 
@@ -90,8 +100,6 @@ CS-Cart 4.13.1 Changelog
 
 [*] Performance: JS: Admin panel: Scripts for IE11 support were removed.
 
-[*] Products: "Options type" и "Exceptions type" are now set globally for all products in "Settings > General". You can also allow changing their values for individual products.
-
 [*] Products: Some product settings were moved from the product editing page to "Settings > General" and "Settings > Checkout"; they are now specified for all products. It's up to you whether to make them editable for individual products.
 
 [*] Products: The "Product details view" setting on the product level can now be configured to inherit the value from a parent category or from "Settings > Appearance".
@@ -102,13 +110,15 @@ CS-Cart 4.13.1 Changelog
 
 [*] Shipping methods: DHL: Integration updated to use the latest API.
 
-[+] Shipping methods: DHL: New supported shipping services added.
-
 [*] Shipping: The order of the fields in the shipping settings was changed.
 
 [*] UI / UX: Design: Menus: A context menu was added to the menu list page.
 
 [*] UI / UX: The ability to have multiple context menus on one page was added.
+
+========
+Bugfixes
+========
 
 [!] Add-ons: Advanced products import: Delete button was not available in the select if the value was long. Fixed.
 
@@ -433,5 +443,3 @@ CS-Cart 4.13.1 Changelog
 [!] WYSIWYG: Design: Blocks: Some product blocks couldn't be inserted into WYSIWYG editor. Fixed.
 
 [!] WYSIWYG: If the "All storefronts" mode was selected, then adding a block did not work for page editing. Fixed.
-
-
