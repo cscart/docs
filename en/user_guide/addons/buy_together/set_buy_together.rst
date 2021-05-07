@@ -5,12 +5,13 @@ How To: Set up the Buy Together Add-on
 To set up the **Buy together** add-on:
 
 *   In the Administration panel, go to **Add-ons → Manage add-ons**.
-*   Find the **Buy together** add-on in the **Installed add-ons** tab and change its status to *Active*.
+*   Find the **Buy together** add-on, make sure that it was *Installed* and change its status to *Active*.
+
 
 .. note ::
 
-	If you do not see this add-on, switch to the **Browse all available add-ons** tab, find the **Buy together** add-on, and click the **Install** button next to its name.
-
+  Only vendors can add product combinations. If you want to add a combination, log in as vendor.
+  
 To add the buy together products for a product:
 
 *   Go to **Products → Products**.
