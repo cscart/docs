@@ -23,7 +23,7 @@ Welcome to CS-Cart Documentation!
     * `4.1.x <../4.1.x/index.html>`_
     * `4.0.x <../4.0.x/index.html>`_
 
-Welcome to CS-Cart Documentation! For your convenience we have divided it into several sections dedicated to various aspects of working with CS-Cart. Or you can `see the full list of articles <map.html>`_, if that is more convenient for you.
+Welcome to CS-Cart Documentation! For your convenience we have divided it into several sections dedicated to various aspects of working with CS-Cart or you can `see the full list of articles <map.html>`_, if that is more convenient for you.
 
 We hope that everyone, be it a user or developer, finds answers to their questions here.
 
