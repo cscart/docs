@@ -1,41 +1,44 @@
 **************************************
-How To: Set up the Buy Together Add-on
+Как настроить модуль "Комбинации товаров"
 **************************************
 
-To set up the **Buy together** add-on:
+Чтобы настроить модуль **"Комбинации товаров"**:
 
-*   In the Administration panel, go to **Add-ons → Manage add-ons**.
-*   Find the **Buy together** add-on, make sure that it was *Installed* and change its status to *Active*.
-
+*   Перейдите в панель администратора и выберите вкладку **Модули → Управление модулями**
+*   Из списка установленных модулей выберите модуль **Комбинации товаров** и *активируйте* его. Если вы не можете найти данный модуль в списке, измените фильтр поиска, выбрав статус *"любой"*, чтобы увидеть все доступные для установки модули. Найдите модуль **Комбинации товаров** и нажмите на кнопку **Установить**.
 
 .. note ::
 
-  Only vendors can add product combinations. If you want to add a combination, log in as vendor.
+  Обратите внимание, что создавать комбинации товаров может только продавец. Для доступа к данной функции вы должны войти в панель продавца.
   
-To add the buy together products for a product:
+Чтобы добавить комбинацию к товару:
 
-*   Go to **Products → Products**.
-*   Find the product for which you want to show products that are bought with it and click on its name.
-*   Switch to the **Buy together** tab.
-*   Click the **Add combination** button.
-*   In the **Name** unput field type the name of the new combination, type the **Description** if you want to, define the time period in the **Available from**, **Available till** fields, and tick the **Display in promotions** checkbox if necessary.
+*   Перейдите на вкладку **Товары → Товары**.
+*   Выберите из списка товар, для которого вы хотите настроить отображение доступных комбинаций, кликнув на его название.
+*   Перейдите во вкладку **Комбинации товаров**.
+*   Нажмите на кнопку **Добавить комбинацию**.
+*   В поле **Название** введите название новой комбинации. При желании вы можете заполнить поле **Описание**. В полях **Доступна с** и **Доступна до** вы можете задать временной промежуток, в течение которого будет доступна созданная комбинация. Отметьте галочкой поле **Показывать в промо-акциях**, если хотите, чтобы новая комбинация отображалась в списке текущих акций.
 
-.. image:: img/buy_together_01.png
+.. image:: https://user-images.githubusercontent.com/83867375/117882857-ce9dab00-b2bb-11eb-8c20-600d52aaf73f.png
 	:align: center
 	:alt: New combination
 
-*   Open the **Products** tab. Click the **Add product** button.
-*   Select the product(s) you want to add to the main product for the **Buy together** option and click the **Add products and close** button.
+*   Перейдите во вкладку **Товары**. Нажмите на кнопку **Добавить товары**.
+*   Выберите товар(ы) для создания комбинации с основным товаром. Затем нажмите на кнопку **Добавить товары и закрыть**.
 
-.. image:: img/buy_together_02.png
+.. image:: https://user-images.githubusercontent.com/83867375/117882947-e412d500-b2bb-11eb-9cd7-047de4802c00.png
 	:align: center
 	:alt: Add products
 
-*   Define the **Quantity**, **Discount**, and **Value** parameters.
-*   Click the **Recalculate** button on the right side of the page, set the discount value in the **Share discount($)** field, and click **Apply**.
+*   Вы также можете установить **количество** товара, вид доступной **скидки** и её **значение**.
+*   Нажмите на кнопку **Пересчитать** в правой нижней части страницы, установите значение скидки в поле **Общая скидка (₽)** и нажмите кнопку **Применить**.
 
-.. image:: img/buy_together_03.png
+.. image:: https://user-images.githubusercontent.com/83867375/117882955-e7a65c00-b2bb-11eb-80e3-69d1800fa397.png
 	:align: center
 	:alt: Products tab
 
-*   Click **Create**.
+*  Для завершения нажмите кнопку **Создать**. Теперь созданная комбинация будет доступна на странице товара в соответствующей вкладке.
+
+.. image:: https://user-images.githubusercontent.com/83867375/117882964-ea08b600-b2bb-11eb-9c6e-8955532c9821.png
+	:align: center
+	:alt: Final Result
