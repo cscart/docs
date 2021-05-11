@@ -81,7 +81,18 @@ The top bar also lets you select the language of the admin panel and the currenc
 
 The **Cart** icon on the left side of the top bar allows you to go to the storefront. The *storefront* is what your customers see when they open your store. 
 
+The **Store Setup Wizard** tab in Multi Vendor takes users to a special settings page. This functionality was developed to help with the initial setup and do some configuration for you.
 
+.. image:: img/intro/button_setup_wizard.png
+    :align: center
+    :alt: Button for calling the Store Setup Wizard.
+
+The settings on this page repeat the settings in the store. For convenience, settings are structured by several tabs. Go through the tabs, select the store business model or design, set up work with vendors and other store elements.
+
+.. image:: img/intro/store_setup_wizard.png
+    :align: center
+    :alt: Tabs of the Store Setup Wizard.
+    
 ================
 Store Operations
 ================
