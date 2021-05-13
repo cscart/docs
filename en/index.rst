@@ -3,9 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-*********************************
-Welcome to CS-Cart Documentation!
-*********************************
+*********************
+CS-Cart Documentation
+*********************
 
 .. sidebar:: Version
 
@@ -111,4 +111,5 @@ This section describes the changes that took place in various versions of CS-Car
     history/index
 
 .. meta::
-   :description: Official user and developer documentation for CS-Cart and Multi-Vendor ecommerce platforms.
+   :title: CS-Cart and Multi-Vendor Documentation | Detailed Instructions and Tutorials | Developer Documentation
+   :description: In the CS-Cart and Multi-Vendor documentation, you can find literally any instruction on how to use any function in our multi-vendor software. Just type your request to the search.
