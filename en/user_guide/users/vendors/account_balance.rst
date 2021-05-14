@@ -74,7 +74,7 @@ Store owners issue **payouts** to collect money from vendors. When a store owner
 
 In some cases, payouts can be issued and even completed automatically: 
 
-* The :doc:`Vendor plans </user_guide/addons/vendor_plans/index>` add-on issues payouts with the *Pending* status. This is done to request one-time and periordic payments from vendors for being subscribed to a certain plan. 
+* The :doc:`Vendor plans </user_guide/addons/vendor_plans/index>` add-on issues payouts with the *Pending* status. This is done to request one-time and periodic payments from vendors for being subscribed to a certain plan. 
 
 * The :doc:`PayPal Adaptive Payments </user_guide/addons/paypal_adaptive/index>` add-on can change the status of payouts to *Completed*. This is done when you allow the add-on to collect payouts from vendors automatically.
 

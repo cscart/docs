@@ -17,7 +17,7 @@ To add the buy together products for a product:
 *   Find the product for which you want to show products that are bought with it and click on its name.
 *   Switch to the **Buy together** tab.
 *   Click the **Add combination** button.
-*   In the **Name** unput field type the name of the new combination, type the **Description** if you want to, define the time period in the **Available from**, **Available till** fields, and tick the **Display in promotions** checkbox if necessary.
+*   In the **Name** input field type the name of the new combination, type the **Description** if you want to, define the time period in the **Available from**, **Available till** fields, and tick the **Display in promotions** checkbox if necessary.
 
 .. image:: img/buy_together_01.png
 	:align: center
