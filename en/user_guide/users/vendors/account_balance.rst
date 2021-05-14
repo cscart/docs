@@ -12,11 +12,7 @@ Multi-Vendor has a page that helps marketplace owners and vendors to keep track 
 
 * Changing an order in a way that affects order total.
 
-<<<<<<< HEAD
-* Issuing a refund via the PayPal Payments or RMA add-on.
-=======
 * Issuing a refund via the :doc:`/user_guide/addons/paypal_payments/index`, :doc:`/user_guide/addons/paypal_commerce_platform/index`, :doc:`/user_guide/addons/stripe_connect/index` or :doc:`/user_guide/addons/rma/index` add-on.
->>>>>>> 015ccd80 (User_guide: Users: Vendors: Actual add-ons added)
 
 * Issuing a :ref:`payout <payout>`.
 
@@ -78,7 +74,7 @@ Marketplace owners issue **payouts** to collect money from vendors. When a marke
 
 In some cases, payouts can be issued and even completed automatically: 
 
-* The :doc:`Vendor plans </user_guide/addons/vendor_plans/index>` add-on issues payouts with the *Pending* status. This is done to request one-time and periordic payments from vendors for being subscribed to a certain plan. 
+* The :doc:`Vendor plans </user_guide/addons/vendor_plans/index>` add-on issues payouts with the *Pending* status. This is done to request one-time and periodic payments from vendors for being subscribed to a certain plan. 
 
 * The :doc:`PayPal Adaptive Payments </user_guide/addons/paypal_adaptive/index>` add-on can change the status of payouts to *Completed*. This is done when you allow the add-on to collect payouts from vendors automatically.
 
