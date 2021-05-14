@@ -74,7 +74,7 @@ Marketplace owners issue **payouts** to collect money from vendors. When a marke
 
 In some cases, payouts can be issued and even completed automatically: 
 
-* The :doc:`/user_guide/addons/vendor_plans/index` add-on issues payouts with the *Pending* status. This is done to request one-time and periordic payments from vendors for being subscribed to a certain plan. 
+* The :doc:`/user_guide/addons/vendor_plans/index` add-on issues payouts with the *Pending* status. This is done to request one-time and periodic payments from vendors for being subscribed to a certain plan. 
 
 * The :doc:`/user_guide/addons/stripe_connect/index` add-on can change the status of payouts to *Completed*. This is done when you allow the add-on to collect payouts from vendors automatically.
 
