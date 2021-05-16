@@ -68,7 +68,7 @@ The customers who signed up for the notification will receive an email when the 
 
 .. important::
 
-    The product must be **out of stock** for the notification checkbox to appear. The checkbox only appears on the pages of products that are **tracked without options**. 
+    The product must be **out of stock** for the notification checkbox to appear. The checkbox only appears on the pages of products that are **tracked**. 
 
 .. image:: img/notification.png
     :align: center
