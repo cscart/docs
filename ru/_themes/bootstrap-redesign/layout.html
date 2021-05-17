@@ -79,9 +79,8 @@
       {%- if render_sidebar %}
       <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 col-lg-pull-9 col-md-pull-8 col-sm-pull-7">
             {% include "navbarsearchbox.html" %}
-
+            
               <ul class="last simple sidebar-tabs">
-                  <li><a class="reference external version {% if version == '4.7' %}active{% endif %}" href="{{ pathto('../4.7.x/index') }}">4.7.x</a></li>
                   <li><a class="reference external version {% if version == '4.8' %}active{% endif %}" href="{{ pathto('../4.8.x/index') }}">4.8.x</a></li>
                   <li><a class="reference external version {% if version == '4.9' %}active{% endif %}" href="{{ pathto('../4.9.x/index') }}">4.9.x</a></li>
                   <li><a class="reference external version {% if version == '4.10' %}active{% endif %}" href="{{ pathto('../4.10.x/index') }}">4.10.x</a></li>
