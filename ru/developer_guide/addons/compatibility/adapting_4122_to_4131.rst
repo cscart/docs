@@ -431,6 +431,6 @@
 
        fn_set_hook('are_company_orders_fulfilled_by_marketplace', $company_id, $fulfillment_status);
 
-#. Выполняется по завершении определения курьера. Позволяет сменить курьера::
+#. Выполняется по завершении выбора курьера. Позволяет сменить курьера::
 
        fn_set_hook('is_shipping_sent_by_marketplace', $shipping, $result).

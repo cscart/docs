@@ -415,11 +415,11 @@ New Hooks
 
        fn_set_hook('shippings_get_shipping_for_test_post', $shipping_info);
 
-#. This hook is executed before retrieve product shipping methods for estimation.::
+#. This hook is executed after a list of the file extension mappings to the file type has been formed::
 
        fn_set_hook('get_ext_mime_types', $key, $types);
 
-#. This hook is executed after a list of the file extension mappings to the file type has been formed::
+#. This hook is executed before retrieve product shipping methods for estimation::
 
        fn_set_hook('geo_maps_get_product_shipping_methods_before_estimation', $product);
 
