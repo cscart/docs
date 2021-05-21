@@ -353,6 +353,28 @@
        // Стало:
        fn_set_hook('get_profile_fields', $location, $select, $condition, $params);
 
+#. ::
+
+       // Было:
+       fn_set_hook('place_suborders', $cart, $suborder_cart);
+       // Стало:
+       fn_set_hook('place_suborders', $cart, $suborder_cart, $key_group);
+
+
+#. ::
+
+       // Было:
+       fn_set_hook('update_product_features_value_pre', $product_id, $product_features, $add_new_variant, $lang_code, $params, $category_ids);
+       // Стало:
+       fn_set_hook('update_product_features_value_pre', $product_id, $product_features, $add_new_variant, $lang_code, $params, $product_category_ids, $product_categories_paths);
+
+#. ::
+
+       // Было:
+       fn_set_hook('update_product_features_value_post', $product_id, $product_features, $add_new_variant, $lang_code, $params, $category_ids);
+       // Стало:
+       fn_set_hook('update_product_features_value_post', $product_id, $product_features, $add_new_variant, $lang_code, $params, $product_categories_ids);
+
 ----------
 Новые хуки
 ----------
@@ -393,6 +415,22 @@
 
        fn_set_hook('shippings_get_shipping_for_test_post', $shipping_info);
 
-#. Выполняется после того, как был сформирован список сопоставлений расширений  и типов файлов::
+#. Выполняется после того, как был сформирован список сопоставлений расширений и типов файлов::
 
        fn_set_hook('get_ext_mime_types', $key, $types);
+
+#. Выполняется перед оценкой способа доставки::
+
+       fn_set_hook('geo_maps_get_product_shipping_methods_before_estimation', $product);
+
+#. Выполняется после получения статуса доступа к странице оформления заказа. Позволяет редактировать эту страницу::
+
+       fn_set_hook('get_access_to_checkout', $cart, $payment_methods, $access);
+
+#. Выполняется после определения статуса заказа, доставленного маркетплейсом. Позволяет менять тип статуса заказа::
+
+       fn_set_hook('are_company_orders_fulfilled_by_marketplace', $company_id, $fulfillment_status);
+
+#. Выполняется по завершении определения курьера. Позволяет сменить курьера::
+
+       fn_set_hook('is_shipping_sent_by_marketplace', $shipping, $result).

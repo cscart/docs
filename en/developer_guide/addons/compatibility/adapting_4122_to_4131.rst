@@ -353,6 +353,28 @@ Changed Hooks
        // New:
        fn_set_hook('get_profile_fields', $location, $select, $condition, $params);
 
+#. ::
+
+       // Old:
+       fn_set_hook('place_suborders', $cart, $suborder_cart);
+       // New:
+       fn_set_hook('place_suborders', $cart, $suborder_cart, $key_group);
+
+
+#. ::
+
+       // Old:
+       fn_set_hook('update_product_features_value_pre', $product_id, $product_features, $add_new_variant, $lang_code, $params, $category_ids);
+       // New:
+       fn_set_hook('update_product_features_value_pre', $product_id, $product_features, $add_new_variant, $lang_code, $params, $product_category_ids, $product_categories_paths);
+
+#. ::
+
+       // Old:
+       fn_set_hook('update_product_features_value_post', $product_id, $product_features, $add_new_variant, $lang_code, $params, $category_ids);
+       // New:
+       fn_set_hook('update_product_features_value_post', $product_id, $product_features, $add_new_variant, $lang_code, $params, $product_categories_ids);
+
 ---------
 New Hooks
 ---------
@@ -393,6 +415,22 @@ New Hooks
 
        fn_set_hook('shippings_get_shipping_for_test_post', $shipping_info);
 
-#. This hook is executed after a list of the file extension mappings to the file type has been formed::
+#. This hook is executed before retrieve product shipping methods for estimation.::
 
        fn_set_hook('get_ext_mime_types', $key, $types);
+
+#. This hook is executed after a list of the file extension mappings to the file type has been formed::
+
+       fn_set_hook('geo_maps_get_product_shipping_methods_before_estimation', $product);
+
+#. This hook is executed after access status to checkout was determined. Allows you to change it::
+
+       fn_set_hook('get_access_to_checkout', $cart, $payment_methods, $access);
+
+#. This hook is executed after after company orders fulfillment status has been identified. Allows you to change it's type::
+
+       fn_set_hook('are_company_orders_fulfilled_by_marketplace', $company_id, $fulfillment_status);
+
+#. This hook is executed at the end of determination of specified shipping sender. Allows you to change shipping sender::
+
+       fn_set_hook('is_shipping_sent_by_marketplace', $shipping, $result).
