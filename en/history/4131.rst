@@ -14,10 +14,6 @@ New Features and Improvements
 
 [+] Add-ons: Message center: Now you can communicate with the customer about the order.
 
-[+] Add-ons: Storefront REST API: The new entity SraOrderStatuses was added.
-
-[+] Core: CS-Cart Marketplace API client was added.
-
 [+] Design: Menus: The new "Open in new window" field was added.
 
 [+] Export: The "Product availability" field that allows to display the quantity of products in the "in stock", "out of stock", "on backorder" values was added.
@@ -116,8 +112,6 @@ Functionality Changes
 
 [*] Performance: JS: Admin panel: Scripts for Internet Explorer 11 support were removed.
 
-[*] Performance: JS: Window resizing and ajax requests had a negative performance impact. Fixed.
-
 [*] Products: Some product settings were moved from the product editing page to "Settings > General" and "Settings > Checkout"; they are now specified for all products. It's up to you whether to make them editable for individual products.
 
 [*] Products: The "Product details view" setting on the product level allows to inherit the value from a parent category or from "Settings > Appearance".
@@ -129,8 +123,6 @@ Functionality Changes
 [*] Shipping methods: The order of the fields in the shipping settings was changed.
 
 [*] UX / UI: Add-ons: Search was changed from logical "OR" to logical "AND".
-
-[*] UI / UX: Design: Menus: A context menu was added to the menu list page.
 
 [*] UI / UX: The ability to have multiple context menus on one page was added.
 
@@ -156,8 +148,6 @@ Bugfixes
 
 [!] Add-ons: Common products for vendors: On the vendor microstore page in the product filter block, the product feature variants by vendor product offers were not displayed. Fixed.
 
-[!] Add-ons: Direct payments: Promotions: Vendors: The page with promotions list had incorrect links to vendors. Fixed.
-
 [!] Add-ons: eBay synchronization: The button "Get eBay orders" was not in Gear Button on the orders list page. Fixed.
 
 [!] Add-ons: eBay synchronization: When executing the "End eBay sales" action, the notification was displayed incorrectly. Fixed.
@@ -180,7 +170,7 @@ Bugfixes
 
 [!] Add-ons: Maps and geolocation: Postal code with a space was truncated. Fixed.
 
-[!] Add-ons: Message center: Incorrect langvars were displayed when sending a message. Fixed.
+[!] Add-ons: Message center: The title was incorrectly displayed in the posting form. Fixed.
 
 [!] Add-ons: Message center: Pagination appeared only after page reload. Fixed.
 
@@ -190,11 +180,11 @@ Bugfixes
 
 [!] Add-ons: PayPal Commerce Platform: Vendors from some countries couldn't connect their PayPal account to the store. Fixed.
 
-[!] Add-ons: Paypal: Email notifications were not sent when an order was paid via Paypal Advanced. Fixed.
+[!] Add-ons: PayPal payments: Email notifications were not sent when an order was paid via Paypal Advanced. Fixed.
 
-[!] Add-ons: PayPal: The number of products in stock reduced twice when using PayPal-based payment methods. Fixed.
+[!] Add-ons: PayPal payments: The number of products in stock reduced twice when using PayPal-based payment methods. Fixed.
 
-[!] Add-ons: PayPal: The order could be placed without filling in the required fields when paying through PayPal Express Checkout. Fixed.
+[!] Add-ons: PayPal payments: The order could be placed without filling in the required fields when paying through PayPal Express Checkout. Fixed.
 
 [!] Add-ons: PayPal payments: PayPal Express Checkout: When using In-Context Checkout, the buyer's data was not transferred to the account creation page. Исправлено.
 
@@ -234,33 +224,13 @@ Bugfixes
 
 [!] Add-ons: Stores and pickup points: When saving changes on the management page of Stores&pickup points, the list of rate areas in which these stores&pickup points were displayed was cleared. Fixed.
 
-[!] Add-ons: Stripe Connect: Checkout: Сredit card details were gone during auto-filling in Google Chrome. Fixed.
+[!] Add-ons: Stripe payments: Order could be placed with the wrong total price if it was paid via Apple Pay from the product page. Fixed.
 
-[!] Add-ons: Stripe Connect: When connecting/disconnecting a vendor's account, the custom fields of the vendor's profile were cleared. Fixed.
-
-[!] Add-ons: Stripe: Order could be placed with the wrong total price if it was paid via Apple Pay from the product page. Fixed.
-
-[!] Add-ons: Stripe: Stripe connect: There was no field for entering the postal code when placing an order in the admin panel. Fixed.
+[!] Add-ons: Stripe payments: Stripe connect payments: There was no field for entering the postal code when placing an order in the admin panel. Fixed.
 
 [!] Add-ons: Suppliers: Shipping methods: Vendors: Checkboxes of supplier selection in shipping method were available to vendors in common shipping method. Fixed.
 
 [!] Add-ons: Third party add-on could be identified as core add-on in some cases. Fixed.
-
-[!] Add-ons: Vendor data premoderation: Product Variations: When a variation's status was changed to "Disapproved", an incorrect pop-up appeared. Fixed.
-
-[!] Add-ons: Vendor Privileges: The "Add State" button was displayed when the vendor did not have rights to create a region. Fixed.
-
-[!] Add-ons: Vendor Privileges: It was possible to choose full access to "Rate areas" for the "Vendors" user group. Fixed.
-
-[!] Add-ons: Vendor plans: Emails could present incorrect information about vendor plans with no limit on revenue. Fixed.
-
-[!] Add-ons: Vendor plans: Periodic payments for the vendor plan could be stopped in case the vendor had paid orders in the past period. Fixed.
-
-[!] Add-ons: Vendor-to-admin payments: The value entered in the refill field was not checked. Fixed
-
-[!] Add-ons: Vendor-to-admin payments: Incorrect calculation of the suspended vendors was made at the dashboard. Fixed.
-
-[!] Add-ons: Vendor-to-admin payments: Payment surcharge was credited to the vendor account balance when refilling the balance. Fixed.
 
 [!] Add-ons: Warehouses [Beta]: Exported product quantity value could be wrong. Fixed.
 
@@ -312,7 +282,7 @@ Bugfixes
 
 [!] Core: Geo IP: An error could occur when identifying a country by IP address. Fixed.
 
-[!] Core: Installation: Installation: The database connection password was truncated, if it contained a "$" symbol. Fixed.
+[!] Core: Installation: The database connection password was truncated, if it contained a "$" symbol. Fixed.
 
 [!] Core: When the store had too many images, some of them weren’t displayed after being added to the product. Fixed.
 
@@ -368,13 +338,7 @@ Bugfixes
 
 [!] Multi-Vendor: Add-ons: Advanced products import: Images directory path was incorrectly shown for common presets. Fixed.
 
-[!] Multi-Vendor: Add-ons: Advanced products import: Product quantity was set to zero at all products into marketplace, not only products of the preset owner. Fixed.
-
-[!] Multi-Vendor: Add-ons: Common Products for Vendors: Comments and reviews: The value of the "Reviews" setting didn't set by default during creating products and didn't change for common products. Fixed.
-
-[!] Multi-Vendor: Add-ons: Direct Customer-to-Vendor Payments: The cart sync did not work correctly on different devices. Fixed.
-
-[!] Multi-Vendor: Add-ons: Direct Customer-to-Vendor Payments: Vendor could select shipping method from other vendors for free shipping promotion bonus. Fixed.
+[!] Multi-Vendor: Add-ons: Advanced products import: When vendor's import preset was configured to set the quantity of all products to zero, it could affect other vendors if the marketplace administrator used the preset or scheduled it via CRON. Fixed.
 
 [!] Multi-Vendor: Add-ons: Payment Dependencies: A customer could not purchase products from different vendors if there were conflicting payment and shipping methods. Fixed.
 
@@ -390,23 +354,41 @@ Bugfixes
 
 [!] Multi-Vendor: Add-ons: Stores and pickup points: The selected pickup point might not be saved after placing an order with products from several vendors. Fixed.
 
-[!] Multi-Vendor: Add-ons: Stripe Connect: When vendor account was unlinked from the store owner account in Stripe, vendor was still linked in the store. Fixed.
+[!] Multi-Vendor: Add-ons: Stripe Connect payments: Checkout: Сredit card details were gone during auto-filling in Google Chrome. Fixed.
 
-[!] Multi-Vendor: Add-ons: Vendor Data Premoderation: Disapproval reason was not saved if the product was disapproved  on the product detail page. Fixed.
+[!] Multi-Vendor: Add-ons: Stripe Connect payments: When connecting/disconnecting a vendor's account, the custom fields of the vendor's profile were cleared. Fixed.
+
+[!] Multi-Vendor: Add-ons: Stripe Connect payments: When vendor account was unlinked from the store owner account in Stripe, vendor was still linked in the store. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor data premoderation: Disapproval reason was not saved if the product was disapproved  on the product detail page. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor data premoderation: Product Variations: When a variation's status was changed to "Disapproved", an incorrect pop-up appeared. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor locations [Beta]: If the vendor's name contains quotes marks, then it was displayed incorrectly on the map. Fixed.
 
-[!] Multi-Vendor: Add-ons: Vendor Plans: In the storefront, the vendor detail page displayed the plan ID, not the plan name. Fixed.
+[!] Multi-Vendor: Add-ons: Vendor plans: Emails could present incorrect information about vendor plans with no limit on revenue. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor plans: Commissions by category: All existing vendor plans were shown at category detail page. Fixed.
 
-[!] Multi-Vendor: Add-ons: Vendor plans: When creating a product, the store administrator got a vague warning about unavailable category for the vendor. Fixed.
+[!] Multi-Vendor: Add-ons: Vendor Plans: In the storefront, the vendor detail page displayed the plan ID, not the plan name. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor plans: Notifications: The notification to the administrator about changed vendor plan was in the language of the vendor. Fixed.
 
+[!] Multi-Vendor: Add-ons: Vendor plans: Periodic payments for the vendor plan could be stopped in case the vendor had paid orders in the past period. Fixed.
+
 [!] Multi-Vendor: Add-ons: Vendor plans: The name of the plan in the payment notification was sent in the language of the admin panel. Fixed.
 
-[!] Multi-Vendor: Add-ons: Wish list: Direct customer-to-vendor payments: Wish list wasn't compatible with the Direct customer-to-vendor payments in the mobile app. Fixed.
+[!] Multi-Vendor: Add-ons: Vendor plans: When creating a product, the store administrator got a vague warning about unavailable category for the vendor. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor Privileges: The "Add State" button was displayed when the vendor did not have rights to create a region. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor Privileges: It was possible to choose full access to "Rate areas" for the "Vendors" user group. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor-to-admin payments: The value entered in the refill field was not checked. Fixed
+
+[!] Multi-Vendor: Add-ons: Vendor-to-admin payments: Incorrect calculation of the suspended vendors was made at the dashboard. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor-to-admin payments: Payment surcharge was credited to the vendor account balance when refilling the balance. Fixed.
 
 [!] Multi-Vendor: Export/Import: Users: Some vendor's administrator accounts could not be updated by import. Fixed.
 
@@ -424,9 +406,11 @@ Bugfixes
 
 [!] Multi-Vendor: Privileges: A vendor could perform export/import of states. Fixed.
 
-[!] Multi-Vendor: Vendors: Profile fields: The setting "Show on Storefront" of custom profile fields may have affected the default profile fields. Fixed.
+[!] Multi-Vendor: Vendors: Profile fields: The setting "Show on Storefront" of custom profile fields could change the default profile fields. Fixed.
 
 [!] Multi-Vendor: Vendor plans: Commissions by category: Vendor commission was calculated incorrectly in some cases. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: The cart sync did not work correctly on different devices. Fixed.
 
 [!] Multi-vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: Only common payment methods were available to the vendor on the storefront. Fixed.
 
@@ -434,7 +418,15 @@ Bugfixes
 
 [!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: Promotions: The Promotions page displays promotions from a vendor that does not have access to this storefront. Fixed.
 
-[!] Multi-Vendor Plus: Add-ons: Vendor-to-admin payments: The notification about the imminent suspension of the account could have come to the vendor in a language other than his. Fixed.
+[!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: Promotions: Vendors: The page with promotions list had incorrect links to vendors. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: Vendor could select shipping method from other vendors for free shipping promotion bonus. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Comments and reviews: The value of the "Reviews" setting didn't set by default during creating products and didn't change for common products. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Vendor-to-admin payments: The notification about the imminent suspension of the account could have come to the vendor in a language other than his/hers. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Wish list: Direct customer-to-vendor payments: Wish list wasn't compatible with the Direct customer-to-vendor payments in the mobile app. Fixed.
 
 [!] Multi-Vendor Plus: Payment methods: User groups were available in vendor payment methods. Fixed.
 
@@ -457,6 +449,8 @@ Bugfixes
 [!] Payment methods: Intuit Merchant Services (QuickBooks Payments): Configuration instructions were unclear. Fixed.
 
 [!] Payment methods: SagePay Direct: Payment method wasn't working. Fixed.
+
+[!] Performance: JS: Window resizing and ajax requests had a negative performance impact. Fixed.
 
 [!] Product features: Only the last variant of the "Multiple checkboxes" feature style was saved. Fixed.
 
@@ -484,7 +478,7 @@ Bugfixes
 
 [!] Profile fields: System required profile fields could be disabled. Fixed.
 
-[!] Profile fields: The "Billing and shipping addresses are the same" option could be selected on the profile management page when billing and shipping addresses had different values. Fixed.
+[!] Profile fields: The value of the "Billing and shipping addresses are the same" setting on the profile management page was displayed incorrectly if the billing and shipping addresses had different values. Fixed.
 
 [!] Promotions: Errors occurred when adding conditions by product features. Fixed.
 
