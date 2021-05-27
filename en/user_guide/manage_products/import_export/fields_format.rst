@@ -326,9 +326,9 @@ This field describes the action when the product price is zero:
 
 .. _advanced-image-import:
 
-==============
-Images: Images
-==============
+======
+Images
+======
 
 .. note::
 
@@ -348,7 +348,7 @@ You can specify alternative text for images by adding it after the path.
 
     EXAMPLE: *exim/backup/images/main_image.jpg#{[ar]:Arabic alt text;[en]:English alt text;}///exim/backup/images/Nadditional_image.jpg#{[ar]:Arabic alt text;[en]:English alt text;}*
 
-If each product image has its own column (in a CSV file) or node (in an XML file), you can map all of them to **Images: Images**. Then these fields will be combined properly, and multiple images will be imported for a product.
+If each product image has its own column (in a CSV file) or node (in an XML file), you can map all of them to **Images**. Then these fields will be combined properly, and multiple images will be imported for a product.
 
 
 .. _csv-detailed-image-import:
