@@ -87,3 +87,19 @@ Callbacks are used in AJAX requests and in many other places. If you want to pas
     $.ceAjax('request', url, {callback: function() {
         obj.method();
     }});
+
+---------------------------
+Async and Defer for scripts
+---------------------------
+
+Starting with CS-Cart 4.12.1, native **async** and **defer** scripts are supported.
+
+The scripts are connected as follows:
+
+* .. code-block:: javascript 
+
+     {script src="js/tygh/bottom_panel.js" defer=true}
+
+* .. code-block:: javascript 
+
+     {script src="js/tygh/bottom_panel.js" async=true}

@@ -81,3 +81,19 @@ JQuery
     $.ceAjax('request', url, {callback: function() {
         obj.method();
     }});
+
+--------------------------
+Async и Defer для скриптов
+--------------------------
+
+Начиная с версии CS-Cart 4.12.1, работает поддержка нативных **async** и **defer** скриптов. 
+
+Подключение скриптов происходит следующим образом:
+
+* .. code-block:: javascript 
+
+     {script src="js/tygh/bottom_panel.js" defer=true}
+
+* .. code-block:: javascript 
+
+     {script src="js/tygh/bottom_panel.js" async=true}
