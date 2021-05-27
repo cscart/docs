@@ -410,6 +410,8 @@ Bugfixes
 
 [!] Multi-Vendor: Vendor plans: Commissions by category: Vendor commission was calculated incorrectly in some cases. Fixed.
 
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Comments and reviews: The value of the "Reviews" setting didn't set by default during creating products and didn't change for common products. Fixed.
+
 [!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: The cart sync did not work correctly on different devices. Fixed.
 
 [!] Multi-vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: Only common payment methods were available to the vendor on the storefront. Fixed.
@@ -421,8 +423,6 @@ Bugfixes
 [!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: Promotions: Vendors: The page with promotions list had incorrect links to vendors. Fixed.
 
 [!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: Vendor could select shipping method from other vendors for free shipping promotion bonus. Fixed.
-
-[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Comments and reviews: The value of the "Reviews" setting didn't set by default during creating products and didn't change for common products. Fixed.
 
 [!] Multi-Vendor Plus: Add-ons: Vendor-to-admin payments: The notification about the imminent suspension of the account could have come to the vendor in a language other than his/hers. Fixed.
 
