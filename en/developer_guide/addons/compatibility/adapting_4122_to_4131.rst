@@ -99,7 +99,7 @@ New Functions
 
 #. Execute an action in the context of the company specified by its ID::
 
-       \fn_execute_as_company(callable $action, $company_id)
+       fn_execute_as_company(callable $action, $company_id)
 
 #. Get an event dispatcher instance::
 
@@ -176,8 +176,6 @@ Removed Template Hooks
 #. ``categories:bulk_edit``
 
 #. ``categories:bulk_edit_items``
-
-#. ``products:bulk_edit``
 
 #. ``companies:bulk_edit_items``
 
@@ -297,6 +295,8 @@ New Template Hooks
 
 #. ``companies:context_menu``
 
+#. ``companies_invitations:context_menu``
+
 #. ``countries:context_menu``
 
 #. ``datakeeper:context_menu``
@@ -307,29 +307,97 @@ New Template Hooks
 
 #. ``languages:context_menu``
 
+#. ``languages_translations:context_menu``
+
 #. ``orders:context_menu``
+
+#. ``p_subscriptions:context_menu``
 
 #. ``pages:context_menu``
 
+#. ``payments:context_menu``
+
+#. ``payouts:context_menu``
+
 #. ``product_features:context_menu``
+
+#. ``product_features_groups:context_menu``
 
 #. ``product_options:context_menu``
 
+#. ``product_subscriptions:context_menu``
+
 #. ``products:context_menu``
 
-#. ``profiles.context_menu``
+#. ``profile_fields:context_menu``
+
+#. ``profiles:context_menu``
 
 #. ``promotions:context_menu``
+
+#. ``sales_reports_charts:context_menu``
 
 #. ``shipments:context_menu``
 
 #. ``shippings:context_menu``
 
+#. ``snippets:context_menu``
+
 #. ``states:context_menu``
+
+#. ``static_data:context_menu``
+
+#. ``storefronts:context_menu``
 
 #. ``taxes:context_menu``
 
 #. ``usergroups:context_menu``
+
+#. ``access_restrictions:context_menu``
+
+#. ``buy_together:context_menu``
+
+#. ``call_requests:context_menu``
+
+#. ``campaigns:context_menu``
+
+#. ``common_import_presets:context_menu``
+
+#. ``gift_certificates:context_menu``
+
+#. ``hybrid_auth:context_menu``
+
+#. ``mailing_lists:context_menu``
+
+#. ``menus:context_menu``
+
+#. ``newsletters:context_menu``
+
+#. ``organizations:context_menu``
+
+#. ``product_filters:context_menu``
+
+#. ``product_reviews:context_menu``
+
+#. ``product_variations:context_menu``
+
+#. ``rma_properties:context_menu``
+
+#. ``rma_returns:context_menu``
+
+#. ``seo_rules:context_menu``
+
+#. ``store_locator:context_menu``
+
+#. ``subscribers:context_menu``
+
+#. ``suppliers:context_menu``
+
+#. ``vendor_communication_threads:context_menu``
+
+#. ``vendor_plans:context_menu``
+
+#. ``yml_export_price_lists:context_menu``
 
 ============
 Hook Changes
@@ -413,15 +481,11 @@ New Hooks
 
 #. The hook is executed after retrieving information from the database. The hook allows you to modify the data::
 
-       fn_set_hook('shippings_get_shipping_for_test_post', $shipping_info);
+       fn_set_hook('shippings_get_shipping_for_test_post', $shipping_id, $service_id, $service_params, $package_info, $lang, $shipping_info);
 
 #. This hook is executed after a list of the file extension mappings to the file type has been formed::
 
        fn_set_hook('get_ext_mime_types', $key, $types);
-
-#. This hook is executed before retrieve product shipping methods for estimation::
-
-       fn_set_hook('geo_maps_get_product_shipping_methods_before_estimation', $product);
 
 #. This hook is executed after access status to checkout was determined. Allows you to change it::
 

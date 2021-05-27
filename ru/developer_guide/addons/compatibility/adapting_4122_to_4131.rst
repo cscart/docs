@@ -99,7 +99,7 @@
 
 #. Выполняет действие в рамках компании с указанным идентификатором::
 
-       \fn_execute_as_company(callable $action, $company_id)
+       fn_execute_as_company(callable $action, $company_id)
        
 #. Получает экземпляр диспетчера событий::
 
@@ -231,8 +231,6 @@
 
 #. ``product_options:bulk_edit_items``
 
-#. ``products:bulk_edit``
-
 #. ``products:bulk_edit_items``
 
 #. ``products:bulk_edit_actions``
@@ -297,6 +295,8 @@
 
 #. ``companies:context_menu``
 
+#. ``companies_invitations:context_menu``
+
 #. ``countries:context_menu``
 
 #. ``datakeeper:context_menu``
@@ -307,29 +307,97 @@
 
 #. ``languages:context_menu``
 
+#. ``languages_translations:context_menu``
+
 #. ``orders:context_menu``
+
+#. ``p_subscriptions:context_menu``
 
 #. ``pages:context_menu``
 
+#. ``payments:context_menu``
+
+#. ``payouts:context_menu``
+
 #. ``product_features:context_menu``
+
+#. ``product_features_groups:context_menu``
 
 #. ``product_options:context_menu``
 
+#. ``product_subscriptions:context_menu``
+
 #. ``products:context_menu``
 
-#. ``profiles.context_menu``
+#. ``profile_fields:context_menu``
+
+#. ``profiles:context_menu``
 
 #. ``promotions:context_menu``
+
+#. ``sales_reports_charts:context_menu``
 
 #. ``shipments:context_menu``
 
 #. ``shippings:context_menu``
 
+#. ``snippets:context_menu``
+
 #. ``states:context_menu``
+
+#. ``static_data:context_menu``
+
+#. ``storefronts:context_menu``
 
 #. ``taxes:context_menu``
 
 #. ``usergroups:context_menu``
+
+#. ``access_restrictions:context_menu``
+
+#. ``buy_together:context_menu``
+
+#. ``call_requests:context_menu``
+
+#. ``campaigns:context_menu``
+
+#. ``common_import_presets:context_menu``
+
+#. ``gift_certificates:context_menu``
+
+#. ``hybrid_auth:context_menu``
+
+#. ``mailing_lists:context_menu``
+
+#. ``menus:context_menu``
+
+#. ``newsletters:context_menu``
+
+#. ``organizations:context_menu``
+
+#. ``product_filters:context_menu``
+
+#. ``product_reviews:context_menu``
+
+#. ``product_variations:context_menu``
+
+#. ``rma_properties:context_menu``
+
+#. ``rma_returns:context_menu``
+
+#. ``seo_rules:context_menu``
+
+#. ``store_locator:context_menu``
+
+#. ``subscribers:context_menu``
+
+#. ``suppliers:context_menu``
+
+#. ``vendor_communication_threads:context_menu``
+
+#. ``vendor_plans:context_menu``
+
+#. ``yml_export_price_lists:context_menu``
 
 =================
 Изменения в хуках
@@ -413,15 +481,11 @@
 
 #. Выполняется после получения информации из базы данных. Позволяет изменять данные::
 
-       fn_set_hook('shippings_get_shipping_for_test_post', $shipping_info);
+       fn_set_hook('shippings_get_shipping_for_test_post', $shipping_id, $service_id, $service_params, $package_info, $lang, $shipping_info);
 
 #. Выполняется после того, как был сформирован список сопоставлений расширений и типов файлов::
 
        fn_set_hook('get_ext_mime_types', $key, $types);
-
-#. Выполняется перед оценкой способа доставки::
-
-       fn_set_hook('geo_maps_get_product_shipping_methods_before_estimation', $product);
 
 #. Выполняется после получения статуса доступа к странице оформления заказа. Позволяет редактировать эту страницу::
 
