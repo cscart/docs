@@ -36,19 +36,33 @@ Step 1. Configure the Payment Method
 
    * **Secret key**—the secret API key of your Stripe account. 
 
-   * **Currency**—select the currency of your Stripe account. It should match the primary currency of your store—that way the calculations will be more precise.
-
    * **Redirect URIs**—the values that you must copy to the corresponding fields on the Stripe dashboard.
 
      .. note::
 
       Learn more about how to get client ID and API keys for Stripe Connect and how to use Redirect URIs :doc:`in a separate article </user_guide/addons/stripe_connect/credentials>`.
 
-#. Once you have configured the payment method, click **Create**.
+     .. image:: img/stripe_connect_configure.png
+         :align: center
+         :alt: The Configure tab of the Stripe Connect payment method.
 
-   .. image:: img/stripe_connect_configure.png
-       :align: center
-       :alt: The Configure tab of the Stripe Connect payment method.
+   * **Currency**—select the currency of your Stripe account. It should match the primary currency of your store—that way the calculations will be more precise.
+
+   * **Enable 3-D Secure**—the setting defines whether money will first go to the marketplace owner instead of going straight to vendors. Money will be automatically distributed between connected Stripe accounts via transfers later.
+
+   * **Delay transfer of funds**—delay sending money to vendors. Configure manual or automatic disbursements to vendors. The setting works if **3-D Secure** was enabled.
+
+     * To schedule automatic periodic disbursements, add a special command to cron. Set the desired value of the "--days" parameter. Money will be automatically transfered to vendors for orders that are older than this value.
+
+       ``php /path/to/cart/admin.php --dispatch=stripe_connect.transfer_funds_by_cron --payment_id=14 --days=14`` 
+
+     * To tranfer money to the vendor for the current order manually, click the **Transfer funds to vendors** button on the order page. After clicking this button, the note will inform you if **Funds have been transferred successfully** or not.
+
+     .. image:: img/stripe_connect_configure_2.png
+         :align: center
+         :alt: The Configure tab of the Stripe Connect payment method.
+
+#. Once you have configured the payment method, click **Create**.
 
 ================================================
 Step 2. Have Your Vendors Connect Their Accounts
