@@ -30,7 +30,7 @@ How To: Set Up Apple Pay, Google Pay, and Credit Card Payments via Stripe
          :align: center
          :alt: The Google Pay button on the product page added via the Stripe Payments add-on.
 
-#. For Apple Pay or Google Pay, you'll need to add the correct icon to the payment method. You'll find the correct icon for each of the shipping methods on the **Configure** tab. Both Apple and Google require that their icons are displayed at least as prominently as the other payment method icons in your store.
+#. For Apple Pay or Google Pay, you'll need to add the correct icon to the payment method. You'll find the correct icon for each of the payment methods on the **Configure** tab. Both Apple and Google require that their icons are displayed at least as prominently as the other payment method icons in your store.
 
 #. Choose whether or not to show the instant purchase button on the product page.
 
