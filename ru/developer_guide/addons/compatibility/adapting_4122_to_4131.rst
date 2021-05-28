@@ -273,6 +273,8 @@
 Новые хуки в шаблонах
 ---------------------
 
+Добавлены новые хуки для контекстного меню (см. ``common/context_menu_wrapper.tpl``)
+
 #. ``import_presets:context_menu``
 
 #. ``banners:context_menu``

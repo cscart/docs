@@ -273,6 +273,8 @@ Removed Template Hooks
 New Template Hooks
 ------------------
 
+New hooks for the context menu were added (see ``common/context_menu_wrapper.tpl``)
+
 #. ``import_presets:context_menu``
 
 #. ``banners:context_menu``
