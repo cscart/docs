@@ -4,4 +4,4 @@
 
 .. warning::
 
-    Информация в статье устарела. Рекомендуем актуальную статью :doc:`/user_guide/addons/reward_points/index`.
+    Информация в статье устарела. Мы рекомендуем другую статью: :doc:`/user_guide/addons/reward_points/index`.
