@@ -1,4 +1,4 @@
-*********************************************
+    *********************************************
 How To: Set up Stripe Connect in Multi-Vendor
 *********************************************
 
@@ -54,15 +54,17 @@ Step 1. Configure the Payment Method
 
      * To schedule automatic periodic disbursements, add a special command to cron. Set the desired value of the "--days" parameter. Money will be automatically transfered to vendors for orders that are older than this value.
 
-       ``php /path/to/cart/admin.php --dispatch=stripe_connect.transfer_funds_by_cron --payment_id=14 --days=14`` 
+       .. code-block:: php
+
+          php /path/to/cart/admin.php --dispatch=stripe_connect.transfer_funds_by_cron --payment_id=14 --days=14 
 
      * To tranfer money to the vendor for the current order manually, click the **Transfer funds to vendors** button on the order page. After clicking this button, the note will inform you if **Funds have been transferred successfully** or not.
 
-     .. image:: img/stripe_connect_configure_2.png
-         :align: center
-         :alt: The Configure tab of the Stripe Connect payment method.
-
 #. Once you have configured the payment method, click **Create**.
+
+   .. image:: img/stripe_connect_configure_2.png
+       :align: center
+       :alt: The Configure tab of the Stripe Connect payment method.
 
 ================================================
 Step 2. Have Your Vendors Connect Their Accounts

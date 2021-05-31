@@ -23,15 +23,7 @@ How it Works
 
 #. When the customer clicks one of the buttons, he goes to the PayPal checkout page, where he pays for his order.
 
-#. Then there are two ways of what happens next:
-
-   * PayPal automatically splits all the money between the marketplace and the vendors whose products were bought. The marketplace owner doesn’t have to transfer money manually.
-
-   * After placing an order, the **Transfer funds to vendors** button appears on the order page. This button allows the marketplace owner to tranfer money to the vendor for the current order manually. After clicking this button, the note will inform you if **Funds have been transferred successfully** or not.
-
-     .. note::
-
-         This action is available after ticking the **Delay transfer of funds** checkbox when configuring the payment method.
+#. PayPal automatically splits all the money between the marketplace and the vendors whose products were bought. Depending on your choice, it can happen immediately, or PayPal can hold the vendor's money up to 28 days.
 
 How to Configure the Payment Method
 ===================================
@@ -62,7 +54,9 @@ How to Configure the Payment Method
 
        To schedule automatic periodic disbursements, add a special command to cron. Set the desired value of the "--days" parameter. Money will be automatically transfered to vendors for orders that are older than this value.
 
-       ``php /path/to/cart/admin.php --dispatch=paypal_commerce_platform.disburse_payouts_by_cron --payment_id=14 --days=14`` 
+       .. code-block:: php
+       
+          php /path/to/cart/admin.php --dispatch=paypal_commerce_platform.disburse_payouts_by_cron --payment_id=14 --days=14
 
    * **Funding sources to show on checkout**—choose the payment services you want to be displayed on the PayPal checkout page.
 
