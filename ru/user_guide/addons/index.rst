@@ -63,6 +63,7 @@
     tags/index
     sms_notifications/index
     image_zoom/index
+    fulfillment/index
     customer_to_vendor_communication/index
     replain/index
     yml_export/index
