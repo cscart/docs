@@ -505,3 +505,14 @@ Bugfixes
 [!] WYSIWYG: Design: Blocks: Some product blocks couldn't be inserted into WYSIWYG editor. Fixed.
 
 [!] WYSIWYG: If the "All storefronts" mode was selected, then adding a block did not work for page editing. Fixed.
+
+
+=============
+Service Packs
+=============
+
+----------
+4.13.1.SP1
+----------
+
+[!] Add-ons: Back-End Sign-In via Google: The administrator could not login into the admin panel. Fixed.
