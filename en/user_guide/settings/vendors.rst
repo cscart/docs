@@ -27,3 +27,5 @@ Use this section to adjust vendor settings for the Administration panel and the 
 * **Automatically create the administrator account for the new approved vendor**—if you enable this setting, the company administrator will be automatically created together with the company.
 
 * **Vendors per page**—the number of vendors displayed on one page.
+
+* **Allow vendors to manage product features**—if you enable this setting, vendors will be able add new :doc:`product features </user_guide/manage_products/features/index>` and edit them.
