@@ -37,13 +37,15 @@ The settings of the add-on let you choose what data and what vendors are affecte
 
 * **Approval of product info updates**—if approval is required, then any change to vendor's existing products must be approved by a marketplace administrator. Until then, unapproved products won't be visible to customers.
 
+* **Approval of newly-created vendors**—if approval is required, then all the new vendor accounts must be approved by a marketplace administrator. Until then, the default :doc:`vendor status <user_guide/users/vendors/vendor_statuses>` will be *Pending*.
+
 * **Approval of vendor profile updates**—if approval is required, then any change to vendor's profile will need to be approved by a marketplace administrator. Until then, vendor will get the *Pending* status and won't appear to customers on the storefront.
 
 Here are the possible values of these settings:
 
 * *Required for all vendors*—the changes made by any vendor will have to be checked before becoming visible.
 
-* *Required for some vendors*—the :doc:`editing pages of vendors </user_guide/users/vendors/index>` will get a setting that determines whether or not this particular type of data by this particular vendor requires premoderation.
+* *Required for some vendors*—the **Add-ons** tab of the :doc:`vendor editing page </user_guide/users/vendors/index>` will get a setting that determines whether or not this particular type of data by this particular vendor requires premoderation.
 
 * *Isn's required*—the changes made by any vendor will be visible instantly.
 
