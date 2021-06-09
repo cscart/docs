@@ -24,9 +24,9 @@ Additional Templates Directories
 
 An add-on can use the following directories in addition to the required one:
 
-    *   *var/themes_repository/basic/templates/addons/<add-on name>*—customer area templates
+    *   *var/themes_repository/responsive/templates/addons/<add-on name>*—customer area templates
     *   *design/backend/templates/addons/<add-on name>*—administration panel templates
-    *   *var/themes_repository/basic/mail/templates/addons/<add-on name>*—e-mail templates
+    *   *var/themes_repository/responsive/mail/templates/addons/<add-on name>*—e-mail templates
 
 
 .. hint::

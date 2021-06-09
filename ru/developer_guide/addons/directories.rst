@@ -28,7 +28,7 @@
 
 Помимо необходимых папок, у модуля также могут быть следующие папки:
 
-* *var/themes_repository/basic/templates/addons/<add-on name>* — содержит шаблоны витрины;
+* *var/themes_repository/responsive/templates/addons/<add-on name>* — содержит шаблоны витрины;
 
 * *design/backend/templates/addons/<add-on name>* — содержит шаблоны панели администратора;
 
