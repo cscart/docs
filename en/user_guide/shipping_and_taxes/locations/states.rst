@@ -6,6 +6,14 @@ Use the **Administration → Shipping and taxes → States** page to edit the li
 
 You can add missing states/provinces, or delete and modify existing ones for each :doc:`active country <countries>`.
 
+.. note::
+
+    Starting with CS-Cart 4.13.1, the fact that the fields at checkout are required depends on whether the country has regions or not:
+
+    * If a customer's country for the delivery has states, then the *State/Province* field is required.
+
+    * If a customer's country for the delivery doesn't have states, then the *State/Province* field isn't required.
+
 .. image:: img/states_list.png
     :align: center
     :alt: The list of states in CS-Cart and Multi-Vendor.
