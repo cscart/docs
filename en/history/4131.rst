@@ -506,7 +506,6 @@ Bugfixes
 
 [!] WYSIWYG: If the "All storefronts" mode was selected, then adding a block did not work for page editing. Fixed.
 
-
 =============
 Service Packs
 =============
@@ -521,6 +520,6 @@ Service Packs
 4.13.1.SP2
 ----------
 
-[!] Add-ons: Newsletters: Available mailings weren't displayed on the page with subscribers. Fixed.
+[!] Add-ons: Newsletters: The list of subscribers in the admin panel did not show the mailing lists that customers were subscribed to. Fixed.
 
-[!] Multi-Vendor: Add-ons: Vendor Privileges: Messages from the marketplace administrator weren't displayed in the vendor panel if the "Message center: communication with customer" order privilege was disabled. Fixed.
+[!] Multi-Vendor: Add-ons: Vendor Privileges: Message center: If vendors did not have access to communication with customers, they also did not have access to communication with marketplace administration. Fixed.
