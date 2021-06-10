@@ -516,3 +516,11 @@ Service Packs
 ----------
 
 [!] Add-ons: Back-End Sign-In via Google: The administrator could not login into the admin panel. Fixed.
+
+----------
+4.13.1.SP2
+----------
+
+[!] Add-ons: Newsletters: Available mailings weren't displayed on the page with subscribers. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor Privileges: Messages from the marketplace administrator weren't displayed in the vendor panel if the "Message center: communication with customer" order privilege was disabled. Fixed.
