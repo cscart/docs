@@ -4,7 +4,7 @@ How To: Display Also Bought Products
 
 .. note ::
 
-	Make sure, that the **Customers also bought** add-on is installed and activated in the **Add-ons → Manage add-ons** section.
+    Make sure, that the **Customers also bought** add-on is installed and activated in the **Add-ons → Manage add-ons** section.
 
 To display products which were also bought on the product details page:
 
@@ -17,8 +17,8 @@ To display products which were also bought on the product details page:
     *   Click **Create**.
 
 .. image:: img/also_bought_01.png
-	:align: center
-	:alt: Also bought block
+    :align: center
+    :alt: Also bought block
 
 To disable this section for some product pages:
 
@@ -28,5 +28,5 @@ To disable this section for some product pages:
 *   Click **Save**.
 
 .. image:: img/also_bought_02.png
-	:align: center
-	:alt: Status
+    :align: center
+    :alt: Status

@@ -78,7 +78,7 @@ You can specify price, weight or items conditions for each rate area. Once youâ€
 
 .. important::
 
-    If you do not specify the **Rate** value or any price/weight/items conditions for the :doc:`rate areas </user_guide/shipping_and_taxes/locations>` you have added, delivery to those rate areas will be free. 
+    If you do not specify the **Rate** value or any price/weight/items conditions for the :doc:`rate areas </user_guide/shipping_and_taxes/locations/index>` you have added, delivery to those rate areas will be free. 
 
 =====================
 Test rate calculation

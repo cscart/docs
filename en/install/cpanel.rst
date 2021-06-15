@@ -61,7 +61,7 @@ After you press the **Next Step** button, cPanel will offer you to create more d
 ====================================
 Step 2. Upload CS-Cart to the Server
 ====================================
-2.1. Download the latest version of `CS-Cart <https://www.cs-cart.com/download-cs-cart.html>`_ or `Multi-Vendor <https://www.cs-cart.com/download-multivendor.html>`_.  Then go to **cPanel → Files → File Manager**.
+2.1. Download the latest version of `CS-Cart <https://www.cs-cart.com/download-cs-cart.html>`__ or `Multi-Vendor <https://www.cs-cart.com/download-multivendor.html>`__.  Then go to **cPanel → Files → File Manager**.
 
 .. image:: img/cpanel/6_file_manager_icon.png
     :align: center
@@ -71,7 +71,7 @@ Step 2. Upload CS-Cart to the Server
 
 .. important::
 
-   You need to associate a domain name with your host’s IP first: find out what name servers your host uses for your domain, then use your domain registrar’s control panel to associate your domain name with the name servers. We suggest you read `this article <http://www.thesitewizard.com/domain/point-domain-name-website.shtml>`_ to learn more.
+   You need to associate a domain name with your host’s IP first: find out what name servers your host uses for your domain, then use your domain registrar’s control panel to associate your domain name with the name servers. We suggest you read `this article <http://www.thesitewizard.com/domain/point-domain-name-website.shtml>`__ to learn more.
 
 .. image:: img/cpanel/8_file_manager_upload.png
     :align: center
@@ -144,11 +144,11 @@ Step 4. Choose Your Licensing Mode
 
 The next step is to choose your licensing mode. You have 2 options:
 
-* Enter your license number to enable the **Full** mode, that gives you unrestricted access to all CS-Cart features, i.e. several dozens of add-ons, multiple languages and currencies, unlimited number of product filters on the storefront, and more. You can `purchase a license <https://www.cs-cart.com/licenses.html>`_ any time.
+* Enter your license number to enable the **Full** mode, that gives you unrestricted access to all CS-Cart features, i.e. several dozens of add-ons, multiple languages and currencies, unlimited number of product filters on the storefront, and more. You can `purchase a license <https://www.cs-cart.com/licenses.html>`__ any time.
 
   .. note::
 
-      You can enter your `CS-Cart <https://www.cs-cart.com/cs-cart-license.html>`_ or `CS-Cart Ultimate <https://www.cs-cart.com/cs-cart-ultimate-license.html>`_ license number in this field.
+      You can enter your `CS-Cart <https://www.cs-cart.com/cs-cart-license.html>`__ or `CS-Cart Ultimate <https://www.cs-cart.com/cs-cart-ultimate-license.html>`__ license number in this field.
 
 * If you don’t have a license yet, we offer a **free 30-day trial** with full access to all CS-Cart features. After the end of your trial period you'll need to enter your license number to continue managing your store.
 

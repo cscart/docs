@@ -74,7 +74,7 @@ Vendor-to-Admin Payments
 
 The :doc:`/user_guide/addons/vendor_debt_payout/index` add-on allows you to work with debtors automatically.
 
-* A marketplace owner sets a maximum debt and a grace period for each :doc:`vendor plan </user_guide/addons/vendor_plans>`.
+* A marketplace owner sets a maximum debt and a grace period for each :doc:`vendor plan </user_guide/addons/vendor_plans/index>`.
 
 * Vendors are able to refill their balance at any moment of time. This helps when vendors' sales aren't going well, but you want them to pay their fees anyway.
 

@@ -21,21 +21,21 @@ To add the buy together products for a product:
 *   In the **Name** input field type the name of the new combination, type the **Description** if you want to, define the time period in the **Available from**, **Available till** fields, and tick the **Display in promotions** checkbox if necessary.
 
 .. image:: img/buy_together_01.png
-	:align: center
-	:alt: New combination
+    :align: center
+    :alt: New combination
 
 *   Open the **Products** tab. Click the **Add product** button.
 *   Select the product(s) you want to add to the main product for the **Buy together** option and click the **Add products and close** button.
 
 .. image:: img/buy_together_02.png
-	:align: center
-	:alt: Add products
+    :align: center
+    :alt: Add products
 
 *   Define the **Quantity**, **Discount**, and **Value** parameters.
 *   Click the **Recalculate** button on the right side of the page, set the discount value in the **Share discount($)** field, and click **Apply**.
 
 .. image:: img/buy_together_03.png
-	:align: center
-	:alt: Products tab
+    :align: center
+    :alt: Products tab
 
 *   Click **Create**.

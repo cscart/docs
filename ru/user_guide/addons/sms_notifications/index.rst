@@ -12,7 +12,6 @@
     Для того, чтобы узнать стоимость подключения SMS-уведомлений, ознакомьтесь с `тарифными планами Clickatell <https://www.clickatell.com/pricing-and-coverage/message-pricing/#step-1/>`_.
 
 .. toctree::
-    
     :maxdepth: 2
     :titlesonly:
     :glob:

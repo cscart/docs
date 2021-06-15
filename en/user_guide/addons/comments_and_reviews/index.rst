@@ -27,3 +27,8 @@ Articles in This Section
     enable_comments_addon
     post_approval
     testimonials
+
+.. toctree::
+    :hidden:
+
+    enable_reviews

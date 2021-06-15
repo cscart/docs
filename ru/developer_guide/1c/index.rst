@@ -4,7 +4,7 @@ CommerceML (1С)
 
 .. important:: 
   
-	Статья актуальна для CS-Cart 4.12.2 и более новых версий.
+    Статья актуальна для CS-Cart 4.12.2 и более новых версий.
 
 Модуль предназначен для обмена данными с системами учета: 1С, МойСклад, Class365.
 
@@ -30,12 +30,8 @@ CommerceML (1С)
 .. toctree::
     :maxdepth: 3
     :glob:
-	:hidden:
-	
+    :hidden:
+
     catalogxml
     ordersxml
-	check_list
-	
-
-
-
+    check_list

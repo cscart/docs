@@ -36,7 +36,7 @@ How to Install and Configure the Add-on
 
    .. note:: 
    
-       Learn more about setting up the payment method and connecting your vendors :doc:`in a dedicated article </user_guide/addons/paypal_commerce_platform/configure>`.
+       Learn more about setting up the payment method and connecting your vendors :doc:`in a dedicated article </user_guide/payment_methods/paypal_commerce_platform>`.
 
 Related Articles
 ================

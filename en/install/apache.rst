@@ -13,17 +13,17 @@ In this tutorial, you will learn how to install CS-Cart on a virtual private or 
 
 .. note::
 
-    We assume that you have registered a domain and linked it to a directory on your server. You will also need `Apache <http://httpd.apache.org/>`_, `PHP <http://www.php.net/>`_, `MySQL <https://www.mysql.com/>`_, and `phpMyAdmin <https://www.phpmyadmin.net/>`_ to create a database.
+    We assume that you have registered a domain and linked it to a directory on your server. You will also need `Apache <http://httpd.apache.org/>`__, `PHP <http://www.php.net/>`__, `MySQL <https://www.mysql.com/>`__, and `phpMyAdmin <https://www.phpmyadmin.net/>`__ to create a database.
 
 =============================
 Step 1. Make the Preparations
 =============================
 
-1.1. Download the latest version of `CS-Cart <https://www.cs-cart.com/download-cs-cart.html>`_ or `Multi-Vendor <https://www.cs-cart.com/download-multivendor.html>`_. 
+1.1. Download the latest version of `CS-Cart <https://www.cs-cart.com/download-cs-cart.html>`_ or `Multi-Vendor <https://www.cs-cart.com/download-multivendor.html>`__. 
 
-1.2. Connect to the your server via `SSH <https://en.wikipedia.org/wiki/Secure_Shell>`_.
+1.2. Connect to the your server via `SSH <https://en.wikipedia.org/wiki/Secure_Shell>`__.
 
-Windows users have to download and install PuTTY or any other SSH client. See `this guide <https://mediatemple.net/community/products/dv/204404604/using-ssh-in-putty->`_ if you want to learn about PuTTY.
+Windows users have to download and install PuTTY or any other SSH client. See `this guide <https://mediatemple.net/community/products/dv/204404604/using-ssh-in-putty->`__ if you want to learn about PuTTY.
 
 If you use a \*\nix OS (for example, Linux, FreeBSD, Ubuntu, OS X, etc.), type the following command in the **Terminal** and press Enter. Don’t forget to replace **username** and **host** with your login details. If you don’t know your username and host, contact your hosting provider or server administrator.
 
@@ -102,7 +102,7 @@ Step 3. Change Ownership and Permissions
 
 .. important::
 
-    Some commands in this step may require root (superuser) privileges. If a command doesn't work, try adding the ``sudo`` prefix before it. Learn more about ``sudo`` at `Linux Academy Blog <https://linuxacademy.com/blog/linux/linux-commands-for-beginners-sudo/>`_.
+    Some commands in this step may require root (superuser) privileges. If a command doesn't work, try adding the ``sudo`` prefix before it. Learn more about ``sudo`` at `Linux Academy Blog <https://linuxacademy.com/blog/linux/linux-commands-for-beginners-sudo/>`__.
 
 3.1. Execute the following commands one by one:
 
@@ -224,11 +224,11 @@ Step 6. Choose Your Licensing Mode
 
 The next step is to choose your licensing mode. You have 2 options:
 
-* Enter your license number to enable the **Full** mode, that gives you unrestricted access to all CS-Cart features, i.e. several dozens of add-ons, multiple languages and currencies, unlimited number of product filters on the storefront, and more. You can `purchase a license <https://www.cs-cart.com/licenses.html>`_ any time.
+* Enter your license number to enable the **Full** mode, that gives you unrestricted access to all CS-Cart features, i.e. several dozens of add-ons, multiple languages and currencies, unlimited number of product filters on the storefront, and more. You can `purchase a license <https://www.cs-cart.com/licenses.html>`__ any time.
 
   .. note::
 
-      You can enter your `CS-Cart <https://www.cs-cart.com/cs-cart-license.html>`_ or `CS-Cart Ultimate <https://www.cs-cart.com/cs-cart-ultimate-license.html>`_ license number in this field.
+      You can enter your `CS-Cart <https://www.cs-cart.com/cs-cart-license.html>`__ or `CS-Cart Ultimate <https://www.cs-cart.com/cs-cart-ultimate-license.html>`_ license number in this field.
 
 * If you don’t have a license yet, we offer a **free 30-day trial** with full access to all CS-Cart features. After the end of your trial period you'll need to enter your license number to continue managing your store.
 

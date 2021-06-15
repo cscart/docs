@@ -18,9 +18,9 @@ Step 1. Create a Banner
 
 1.4. Select the **Type** of the banner:
 
-* If you choose a *Text banner*, type the text of that banner in the **Description** field.
+     * If you choose a *Text banner*, type the text of that banner in the **Description** field.
 
-* If you choose a *Graphic banner*, upload an image and specify the URL of the page to which the banner will lead. You can also choose whether or not to display that page in a new window.
+     * If you choose a *Graphic banner*, upload an image and specify the URL of the page to which the banner will lead. You can also choose whether or not to display that page in a new window.
 
 1.5. Click **Create**.
 
@@ -50,7 +50,7 @@ Step 2. Add the Banner to the Pages of Your Store
 
 .. hint::
 
-    If you have many banners, and your version of CS-Cart or Multi-Vendor is 4.7.1 or newer, you'll be able to use to use the built-in search to find the banners you need.
+    If you have many banners, and your version of CS-Cart or Multi-Vendor is 4.7.1 or newer, you'll be able to use the built-in search to find the banners you need.
 
 .. image:: img/add_banner_03.png
     :align: center

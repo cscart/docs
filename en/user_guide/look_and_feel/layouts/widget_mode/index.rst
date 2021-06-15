@@ -9,4 +9,6 @@ Widget Mode
 .. toctree::
     :hidden: 
 
-    *
+    facebook_app
+    responsive_widget
+    wordpress

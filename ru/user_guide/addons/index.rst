@@ -23,18 +23,23 @@
     
     *
     atol_online/index
+    banners_management/index
     blog/index
     reward_points/index
     product_variations/index
     rma/index
     google_backend_signin/index
     cities/index
-    edost_calc/index
+    payment_dependencies/index
+    edost/index
     maps_and_geolocation/index
+    data_feeds/index
+    buy_together/index
     form_builder/index
     stores_and_pickup_points/index
     vendor_locations/index
     rus_taxes/index
+    age_verification/index
     common_products/index
     direct_customer_to_vendor_payments/index
     vendor_debt_payout/index
@@ -53,6 +58,7 @@
     lite_checkout/index
     advanced_products_import/index
     vendor_rating/index
+    customers_also_bought/index
     rus_sdek/index
     warehouses/index
     social_login/index
