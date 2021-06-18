@@ -2,7 +2,7 @@
 Vendor Statuses
 ***************
 
-When a customer :doc:`applies for a vendor account <allow_customers_to_apply_for_vendor_account>`, then he or she, as a newly-created vendor, gets one of two statuses: 
+When a customer :doc:`applies for a vendor account <allow_customers_to_apply_for_vendor_account>`, then he or she, as a newly-created vendor, gets one of the two statuses: 
 
 * **Active**—vendor's administrators can work in the administration panel of the store. The products of an active vendor appear in the store, :doc:`unless they require prior approval. <product_approval>`
 
@@ -12,9 +12,9 @@ When a customer :doc:`applies for a vendor account <allow_customers_to_apply_for
 
   .. note::
 
-      Starting with 4.13.1, marketplace administrators can influence on the onboarding of vendors through the vendor statuses. Newly-created vendor either will be able to appear on the storefront immediately after registration, or will have limited functionality. In any case, new vendors get access to the vendor panel and can start to work. The **Approval of newly-created vendors** parameter in the settings of the :doc:`/user_guide/addons/vendor_data_premoderation/index` add-on is responsible for the status of the newly-created vendor. By default, new vendors get the **Pending** status.
+      The **Approval of newly-created vendors** parameter in the settings of the :doc:`/user_guide/addons/vendor_data_premoderation/index` add-on is responsible for the status of the newly-created vendor. When this setting is enabled, the newly-created vendors get the **Pending** status.
 
-Vendors can have another statuses:
+Vendors can have other statuses:
 
 * **Suspended**—vendor and his products won't appear on the storefront. In the admin panel, the vendor receives a warning that his account has been suspended.
   
