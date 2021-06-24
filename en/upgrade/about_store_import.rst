@@ -29,15 +29,15 @@ The table below shows what versions of CS-Cart and Multi-Vendor you can import d
     *   -   Upgrade from:
         -   Upgrade to:
     *   -   CS-Cart Professional 2.2.4 - 3.0.6
-        -   CS-Cart 4.0.2 - 4.3.2
+        -   CS-Cart 4.0.2 - 4.7.2
     *   -   CS-Cart Ultimate 3.0.1 - 3.0.6
-        -   CS-Cart 4.0.2 - 4.3.2
+        -   CS-Cart 4.0.2 - 4.7.2
     *   -   CS-Cart Multi-Vendor 2.2.4 - 3.0.6
-        -   Multi-Vendor 4.0.2 - 4.3.2
+        -   Multi-Vendor 4.0.2 - 4.7.2
 
 .. important::
 
-    If you'd like to import data to newer versions of CS-Cart, please `get the free Store Import add-on from the CS-Cart Marketplace <http://marketplace.cs-cart.com/add-ons/store-import.html>`_.
+    The **Store Import** add-on is not available in all versions of CS-Cart. If you don't have it, and want to import data to newer versions of CS-Cart, please `get the free Store Import add-on from the CS-Cart Marketplace <https://marketplace.cs-cart.com/store-import.html>`_.
 
 .. note::
 
