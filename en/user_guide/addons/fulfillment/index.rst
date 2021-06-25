@@ -19,10 +19,10 @@ By default, Multi-Vendor implements one case: each vendor ships his products by 
 
 Other cases are implemented by the "Order fulfillment by marketplace [Beta]" add-on. Since the fulfillment service costs money to the marketplace, this cost can be included in the vendor plans. When the add-on is active, vendors during the registration can see which plan offers fulfillment by marketplace.
 
-   .. image:: img/vendor_plans.png
-       :align: center
-       :alt: Fulfillment is a property of vendor plans.
-       
+.. image:: img/vendor_plans.png
+    :align: center
+    :alt: Fulfillment is a property of vendor plans.
+
 The availability of fulfillment in vendor plans can influence the checkout.
 
 .. list-table::
