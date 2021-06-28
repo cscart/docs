@@ -54,7 +54,7 @@ What Shipping and Payment Methods Are Supported?
 
 The application supports **all shipping methods** and the following payment methods:
 
-* PayPal Express Checkout
+* PayPal Express Checkout;
 
 * Offline payment methods (such as "Discuss with manager", etc.)
 
@@ -62,7 +62,7 @@ Payment methods in the mobile app are positioned in the same order as in your st
 
 .. hint::
 
-    Technical info — the list of supported payment templates: ``cc.tpl``, ``empty.tpl``, ``check.tpl``, ``paypal_express.tpl``, ``phone.tpl``.
+    Technical info — the list of supported payment templates: ``cc.tpl``, ``empty.tpl``, ``check.tpl``, ``phone.tpl``.
     
 .. warning::
     Mobile application supports the :doc:`/user_guide/addons/direct_customer_to_vendor_payments/index` add-on from Multi-Vendor Plus and Ultimate starting with Multi-Vendor 4.12.3.
