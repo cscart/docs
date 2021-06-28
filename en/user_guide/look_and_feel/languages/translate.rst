@@ -18,7 +18,7 @@ To add a new language from *translate.cs-cart.com* to your installation, follow 
 
 3. Open the Administration panel of your store.
 
-4. Go to **Administration → Languages → Manage languages**.
+4. Go to **Administration → LangTexts & languages → Manage languages**.
 
 5. Click the **+** button in the right upper corner of the page to add a language.
 
@@ -32,9 +32,9 @@ Create a New Translation
 
 .. note::
 
-    Before you create a new translation, make sure that the desired language is not on the list of available languages—check the **Available** tab under **Administration → Languages → Manage languages**. Also, make sure there is no such language at `translate.cs-cart.com <http://translate.cs-cart.com/>`_.
+    Before you create a new translation, make sure that the desired language is not on the list of available languages—check the **Available** tab under **Administration → LangTexts & languages → Manage languages**. Also, make sure there is no such language at `translate.cs-cart.com <http://translate.cs-cart.com/>`_.
 
-1. Go to **Administration → Languages → Manage languages**.
+1. Go to **Administration → LangTexts & languages → Manage languages**.
 
 2. Click the **gear** button next to any existing language and choose **Clone**. 
 
@@ -54,9 +54,9 @@ Create a New Translation
 Translate CS-Cart
 =================
 
-Most of CS-Cart texts are stored in the so-called language variables. Although you can view and edit all those variables under **Administration → Languages → Translations** tab of the **Languages** page , we recommend a different way:
+Most of CS-Cart texts are stored in the so-called language variables. Although you can view and edit all those variables under the **Translations** tab of the **Administration → LangTexts & languages → Edit texts** page, we recommend a different way:
 
-1. Open the Administration panel and go to **Administration → Languages → Translations**.
+1. Open the Administration panel and go to **Administration → Texts & languages → Edit texts**.
 
 2. Click the **gear** button in the right upper corner of the page and choose **On-site live editing** from the drop-down menu. 
 
@@ -72,7 +72,7 @@ Most of CS-Cart texts are stored in the so-called language variables. Although y
 
 4. After you translate all visible texts, there are still some language variables left: the ones displayed in the e-mail notifications and in some special situations, e.g. error notifications, pop-up window messages, etc. To translate the remaining variables, follow these steps:
 
- * Go to **Administration → Languages → Translations** 
+ * Go to **Administration → Texts & languages → Edit texts**.
 
  * Select the newly created language in the select box in the top left corner. 
 
