@@ -17,10 +17,3 @@
 * :doc:`../../users/vendors/manage_vendor_plans`
 
 * :doc:`../../users/vendors/allow_customers_to_apply_for_vendor_account`
-
-.. toctree::
-    :maxdepth: 2
-    :titlesonly:
-    :hidden:
-    
-    vendor_plans_settings

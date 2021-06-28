@@ -18,10 +18,3 @@ The **Vendor Plans** add-on allows you to offer subscription plans for vendors. 
 * :doc:`../../users/vendors/manage_vendor_plans`
 
 * :doc:`../../users/vendors/allow_customers_to_apply_for_vendor_account`
-
-.. toctree::
-    :maxdepth: 2
-    :titlesonly:
-    :hidden:
-    
-    vendor_plans_settings
