@@ -12,8 +12,13 @@
 .. fancybox:: img/vendor_plans.png
     :alt: Вид тарифных планов для продавцов с витрины.
 
-* :doc:`vendor_plans_settings`
+Связанные статьи:
+=================
 
-* :doc:`../../users/vendors/manage_vendor_plans`
+.. toctree::
+    :titlesonly:
+    :glob:
 
-* :doc:`../../users/vendors/allow_customers_to_apply_for_vendor_account`
+    vendor_plans_settings
+    ../../users/vendors/manage_vendor_plans
+    ../../users/vendors/allow_customers_to_apply_for_vendor_account
