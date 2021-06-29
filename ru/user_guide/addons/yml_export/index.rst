@@ -12,7 +12,7 @@
 
    <!--noindex--><a href="https://yandex.ru/support/webmaster/goods-prices/technical-requirements.xml?lang=ru" target="_blank" rel="nofollow">Официальный сайт Яндекса</a><!--/noindex-->
 
-.. contents:: Вы узнаете:
+.. contents::
     :local: 
     :depth: 3
 

@@ -3,22 +3,13 @@ How To: Restrict Access to Administration Panel
 ***********************************************
 
 *   In the Administration panel, go to **Add-ons → Manage add-ons**.
-*   Enable the **Access restrictions** add-on in the **Installed add-ons** tab (change its status to *Active*). 
-
-.. image:: img/access_restrictions_01.png
-    :align: center
-    :alt: Activate add-on
-
-.. note ::
-
-	If you do not see the add-on in the **Installed add-ons** tab, install it in the **Browse all available add-ons** tab first.
-
-*   Click on the name of the add-on.
+*   Make sure that the add-on is installed and activated. 
+*   Click on the name of the add-on and open the **Settings** tab.
 *   Tick the **Allow login to the admin area from specified IPs only** check box in the **Administrator area settings** section and click **Save**.
 
     To specify the IPs:
 
-    *   Refresh the page after activating the add-on and go to **Add-ons → Access restrictions**. Open the **Administration panel** tab.
+    *   Refresh the page after activating the add-on and go to **Administration → Access restrictions**. Open the **Administration panel** tab.
     *   Click the **+** button on the right to add IPs.
     *   In the **IP from** and **IP to** fields enter the first and the last IP addresses of the interval of IPs, for which access to the administration panel will be allowed.
 
