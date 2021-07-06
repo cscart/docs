@@ -1,0 +1,177 @@
+************************
+CS-Cart 4.13.2 Changelog
+************************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Pay360 payments: Payment method was added.
+
+[+] Checkout: Shippings: Pickup points: Search by pickup points was improved.
+
+[+] Multi-Vendor: Storefronts: Shipping methods: The storefront selection was added. 
+
+[+] Multi-Vendor: Storefronts: Payment methods: The storefront selection was added.
+
+[+] Notifications: Now there is the link to the detailed page of the add-on that is required for the installation of the dependent add-on.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: Mobile application: iOS: Sizes of images on the launch screen were updated.
+
+[*] Checkout: The "State" field at checkout is not a required one if the selected country has no states.
+
+[*] Core: Printing PDF documents moved to the separate add-on.
+
+[*] Mobile application: iOS: Now the launch screen adjusts to the size of the device.
+
+[*] Mobile application: Translations were added.
+
+[*] Performance: JS: ce.commoninit events were optimized.
+
+[*] Products: Product features: Product filters: Product options: Product feature groups: A lock for the selection of shared items that are not editable was added to the context menu.
+
+========
+Bugfixes
+========
+
+[!] Add-ons: Advanced Products Import: PHP Notice was displayed when creating a preset for importing products. Fixed.
+
+[!] Add-ons: Call requests: When the Apple Pay and Google Pay buttons were not displayed, the Buy now with 1-click button was not displayed. Fixed.
+
+[!] Add-ons: Direct Customer-to-Vendor Payments: The "Continue shopping" button at the cart page always led to the homepage of the store. Fixed.
+
+[!] Add-ons: Google ReCAPTCHA: There was no recaptcha for the In-Stock Notification Subscription Form. Fixed.
+
+[!] Add-ons: Google Sitemap: Link to the storefront in the generated sitemap led to the incorrect path. Fixed.
+
+[!] Add-ons: Google sitemap: Links to localized versions of pages were added to the sitemap in an incorrect format or weren't added at all. Fixed.
+
+[!] Add-ons: Maps and Geolocation: Downloadable products: The shipping cost block was displayed on the digital product page that did not require shipping. Fixed.
+
+[!] Add-ons: Maps and geolocation: Direct Customer-to-Vendor Payments: The shipping promotion applied to products of the vendor without this promotion on the product details page. Fixed.
+
+[!] Add-ons: Message center: The size and content of the window for customer questions changed after adding an item to the cart. Fixed.
+
+[!] Add-ons: Mobile app: There was no setting for the color of the product options borders. Fixed.
+
+[!] Add-ons: Product reviews: Product options chosen at the product details page on the storefront were displayed in the product reviews.
+
+[!] Add-ons: Product reviews: An incorrect link for approving a new review was in the notification to the administrator. Fixed.
+
+[!] Add-ons: RMA: In some cases information about the order after recalculation returned to the state before recalculation. Fixed.
+
+[!] Add-ons: SEO: The "Brand" field in the micro-markup of products was not determined by search engines. Fixed.
+
+[!] Add-ons: SEO: The storefront address generated from another storefront was incorrect when the "Show additional language in the URL" setting was enabled. Fixed.
+
+[!] Add-ons: Settings: After saving the add-on settings, the user was redirected to the first tab. Fixed.
+
+[!] Add-ons: SMS Notifications: There was no FROM setting required for the add-on to work correctly. Fixed.
+
+[!] Add-ons: Stores and pickup points: Sorting pick-up points by position did not work on the cart and checkout pages. Fixed.
+
+[!] Add-ons: Vendor locations [Beta]: On the storefront, after resetting the address in the vendor search bar, the list of search predictions did not work. Fixed.
+
+[!] Add-ons: Vendor locations [Beta]: The Vendor map block could not be placed on the page multiple times. Fixed.
+
+[!] Add-ons: Vendor locations [Beta]: The field "Location" was not cleared. Fixed.
+
+[!] Add-ons: Vendor Privileges: If the status was "View only" for payment methods, the vendor had access to an inactive button for creating a payment method. Fixed.
+
+[!] Add-ons: Vendor-to-admin payments: Vendor notifications: When a usergroup of vendors was assigned as a receiver to the Orders notification events, notification about paid vendor debt was sent to all vendors from this usergroup. Fixed.
+
+[!] Admin panel: Admin toolbar: The bottom panel overlapped some elements. Fixed.
+
+[!] Checkout: Languages: After the language switch, the description of the shipping method on the checkout page didn't change. Fixed.
+
+[!] Checkout: Shipping time specified for the rate area was not displayed at checkout page. Fixed.
+
+[!] Checkout: When the pick-up list did not have scrolling, the selected item was moved up in the list. Fixed.
+
+[!] Context menu: There was a typo in the default hook name in the context menu template. Fixed.
+
+[!] Core: AJAX: AJAX requests did not work on some web server configurations. Fixed.
+
+[!] Core: Backup/Restore: Incorrect backup was created if there were views among the tables. Fixed.
+
+[!] Design: Cache: Browsers could load old styles after store cache was cleared. Fixed.
+
+[!] Design: Responsive: Tabs: If the page had many tabs, then they broke when the display was rotated. Fixed.
+
+[!] Export/Import: Import of csv files saved in UTF8 with BOM encoding did not work. Fixed.
+
+[!] Export/Import: Quantity discounts: Import of quantity discounts didn’t work for marketplace administrators. Fixed.
+
+[!] Features: Colors: Color and Variant cells overlapped each other. Fixed.
+
+[!] Mobile application: The variation selection through Select box did not work on Android. Fixed.
+
+[!] Multi-Vendor: Add-ons: Advanced products import: The order of the preset fields could be different for administrator and vendor. Fixed.
+
+[!] Multi-Vendor: Add-ons: Advanced products import: The value of the "Images delimiter" field could not be changed for import presets with XML files. Fixed.
+
+[!] Multi-Vendor: Add-ons: Common Products for Vendors: Product Variations: When creating a variation group for products that vendors can sell, the products being sold were not grouped into the variation groups. Fixed.
+
+[!] Multi-Vendor: Add-ons: Common products for vendors: Preview of common products could fail if the storefront was available only for some vendors. Fixed.
+
+[!] Multi-Vendor: Add-ons: Message center: PHP TypeError appeared while sending a message from vendor to administrator. Fixed.
+
+[!] Multi-Vendor: Add-ons: Newsletters: New customer could be automatically added to the list of subscribers. Fixed.
+
+[!] Multi-Vendor: Add-ons: PayPal Commerce Platform: Certain currency settings caused a checkout error. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor Privileges: If the status of the delivery method was "View only" the test delivery calculation was not available to vendor and administrator. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor plans: The vendor created while the add-on was disabled could catch an error in his detailed page after the add-on activation. Fixed.
+
+[!] Multi-Vendor: Export/Import: When importing vendor logos, the value of the "Images directory" field was ignored. Fixed
+
+[!] Multi-Vendor: Import: If the category name in the imported file was not in the language of the admin panel, in some cases this product wasn't imported. Fixed.
+
+[!] Multi-Vendor: Notifications: Vendors: The notifications to vendor about his status change and adding the vendor's administrator to the user group (or removing from it) contained the logos and information of this vendor instead of the marketplace data. Fixed.
+
+[!] Multi-Vendor: Storefronts: In some cases, the link to the storefront located at the admin toolbar led to another storefront. Fixed.
+
+[!] Multi-Vendor: Storefronts: It was possible to delete the storefront that shares an object. Fixed.
+
+[!] Multi-Vendor: Usergroups: Privileges: An administrator with accounting management rights could not make a payout to the vendor. Fixed.
+
+[!] Notifications: Order manager could not receive a e-mail notification. Fixed.
+
+[!] Orders: If there were no orders, the guest saw an empty list. Fixed.
+
+[!] Payments: Redsys: The order amount could be transferred incorrectly. Fixed.
+
+[!] Privileges: Orders: The description of the "Can create order" privilege was incorrect Fixed.
+
+[!] Products: Filters: Filters were not shown on the product search page. Fixed.
+
+[!] Products: PHP Notice were appeared when passing an incorrect sorting parameter. Fixed.
+
+[!] Products: Product features: After editing product features, in some cases, the wrong value was exported. Fixed.
+
+[!] Profile fields: There was a warning due to a missing index on the profile fields page. Fixed.
+
+[!] Settings wizard: Settings values were not saved. Fixed.
+
+[!] Shipping methods: When adding weight conditions, the "per kg" option was applied to all variants. Fixed.
+
+[!] Shipping methods: Package cost changed after adding free product to it. Fixed.
+
+[!] Storefront: Settings: Companies: Incorrect data was shown in the company settings after the deletion of an additional storefront. Fixed.
+
+[!] Storefronts: User groups: The user group table was displayed incorrectly in the customer profile. The bug was also in the mobile application. Fixed.
+
+[!] Templates: There was no valid layout on the reviews page. Fixed.
+
+[!] UI / UX: The link protocol in the message about disabled cookies was incorrect. Fixed.
+
+[!] Vendor notifications: Vendor email notifications was used the vendor's logo and information instead of marketplace data. Fixed.
+
+[!] Vendor panel: Admin toolbar: Vendor could not switch back to the vendor panel from the storefront if domains of the storefront and the vendor panel were different. Fixed.
+
+[!] Vendors: WYSIWYG: The lists in the "Vendor information" block were displayed incorrectly. Fixed.
