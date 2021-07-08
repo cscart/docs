@@ -54,6 +54,8 @@ Bugfixes
 
 [!] Add-ons: Mobile app: There was no setting for the color of the product options borders. Fixed.
 
+[!] Add-ons: Newsletters: A new customer could be automatically added to the list of subscribers. Fixed.
+
 [!] Add-ons: Product reviews: Product options chosen at the product details page on the storefront were displayed in the product reviews. Fixed.
 
 [!] Add-ons: Product reviews: An incorrect link for approving a new review was in the notification to the administrator. Fixed.
@@ -106,11 +108,7 @@ Bugfixes
 
 [!] Multi-Vendor: Add-ons: Common products for vendors: Preview of common products could fail if the storefront was available only for some vendors. Fixed.
 
-[!] Multi-Vendor: Add-ons: Direct Customer-to-Vendor Payments: The "Continue shopping" button at the cart page always led to the homepage of the store. Fixed.
-
 [!] Multi-Vendor: Add-ons: Message center: PHP TypeError appeared while sending a message from vendor to administrator. Fixed.
-
-[!] Multi-Vendor: Add-ons: Newsletters: New customer could be automatically added to the list of subscribers. Fixed.
 
 [!] Multi-Vendor: Add-ons: PayPal Commerce Platform: Certain currency settings caused a checkout error. Fixed.
 
@@ -119,12 +117,6 @@ Bugfixes
 [!] Multi-Vendor: Add-ons: Vendor locations [Beta]: The Vendor map block could not be placed on the page multiple times. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor locations [Beta]: The field "Location" was not cleared. Fixed.
-
-[!] Multi-Vendor: Add-ons: Maps and geolocation: Direct Customer-to-Vendor Payments: The shipping promotion applied to products of the vendor without this promotion on the product details page. Fixed.
-
-[!] Multi-Vendor: Add-ons: Vendor Privileges: If the status was "View only" for payment methods, the vendor had access to an inactive button for creating a payment method. Fixed.
-
-[!] Multi-Vendor: Add-ons: Vendor Privileges: If the status of the delivery method was "View only" the test delivery calculation was not available to vendor and administrator. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor plans: The vendor created while the add-on was disabled could catch an error in his detailed page after the add-on activation. Fixed.
 
@@ -145,6 +137,14 @@ Bugfixes
 [!] Multi-Vendor: Vendors: WYSIWYG: The lists in the "Vendor information" block were displayed incorrectly. Fixed.
 
 [!] Multi-Vendor: Vendor panel: Admin toolbar: Vendor could not switch back to the vendor panel from the storefront if domains of the storefront and the vendor panel were different. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: The "Continue shopping" button at the cart page always led to the homepage of the store. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Maps and geolocation: Direct Customer-to-Vendor Payments: The shipping promotion applied to products of the vendor without this promotion on the product details page. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Vendor Privileges: If the status of the payment method was "View only", the vendor had access to an inactive button for creating a payment method. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Vendor Privileges: If the status of the delivery method was "View only", the test delivery calculation was not available to vendor and administrator. Fixed.
 
 [!] Notifications: Order manager could not receive a e-mail notification. Fixed.
 
