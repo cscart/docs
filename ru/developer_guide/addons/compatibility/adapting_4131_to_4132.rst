@@ -43,18 +43,9 @@
      // Стало:
      fn_print_shipment_packing_slips($shipment_ids, $params = [])
 
-#.
-
-   ::
-
-     // Было:
-     fn_create_seo_name($object_id, $object_type, $object_name, $index = 0, $dispatch = '', $company_id = '', $lang_code = CART_LANGUAGE, $create_redirect = false, $area = AREA, array $params = [])
-     // Стало:
-     fn_create_seo_name($object_id, $object_type, $object_name, $index = 0, $dispatch = '', $company_id = '', $lang_code = CART_LANGUAGE, $create_redirect = false, $area = AREA, array $params = [], $changed = false, $input_object_name = '')
-
-------------------
-Устаревшие функции
-------------------
+-----------------
+Удаленные функции
+-----------------
 
 #. ``fn_print_supplier_invoices``
 
@@ -81,27 +72,13 @@
        // Стало:
        fn_set_hook('url_post', $_url, $area, $url, $protocol, $company_id_in_url, $lang_code, $locations, $storefront_id);
 
-#. ::
-
-       // Было:
-       fn_set_hook('create_seo_name_pre', $object_id, $object_type, $object_name, $index, $dispatch, $company_id, $lang_code, $params);
-       // Стало:
-       fn_set_hook('create_seo_name_pre', $object_id, $object_type, $object_name, $index, $dispatch, $company_id, $lang_code, $params, $create_redirect, $area, $changed, $input_object_name);
-
-#. ::
-
-       // Было:
-       fn_set_hook('create_seo_name_post', $_object_name, $object_id, $object_type, $object_name, $index, $dispatch, $company_id, $lang_code, $params);
-       // Стало:
-       fn_set_hook('create_seo_name_post', $_object_name, $object_id, $object_type, $object_name, $index, $dispatch, $company_id, $lang_code, $params, $create_redirect, $area, $changed, $input_object_name);
-
 ----------
 Новые хуки
 ----------
 
 #. Выполняется перед выгрузкой способов доставки для расчета стоимости доставки::
 
-       fn_set_hook('geo_maps_get_product_shipping_methods_before_estimation', $product);
+       fn_set_hook('geo_maps_get_product_shipping_methods_before_estimation', $product, $location);
 
 #. Выполняется после получения данных о промо-акции. Позволяет менять данные, полученные в функции::
 
