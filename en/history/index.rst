@@ -10,6 +10,7 @@ CS-Cart branch 4.13.x
     :maxdepth: 1
 
     4.13.1 (May 31, 2021) <4131>
+    4.13.2 (July 8, 2021) <4132>
 
 =====================
 CS-Cart branch 4.12.x

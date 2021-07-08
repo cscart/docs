@@ -42,8 +42,6 @@ Bugfixes
 
 [!] Add-ons: Call requests: When the Apple Pay and Google Pay buttons were not displayed, the Buy now with 1-click button was not displayed. Fixed.
 
-[!] Add-ons: Direct Customer-to-Vendor Payments: The "Continue shopping" button at the cart page always led to the homepage of the store. Fixed.
-
 [!] Add-ons: Google ReCAPTCHA: There was no recaptcha for the In-Stock Notification Subscription Form. Fixed.
 
 [!] Add-ons: Google Sitemap: Link to the storefront in the generated sitemap led to the incorrect path. Fixed.
@@ -52,13 +50,11 @@ Bugfixes
 
 [!] Add-ons: Maps and Geolocation: Downloadable products: The shipping cost block was displayed on the digital product page that did not require shipping. Fixed.
 
-[!] Add-ons: Maps and geolocation: Direct Customer-to-Vendor Payments: The shipping promotion applied to products of the vendor without this promotion on the product details page. Fixed.
-
 [!] Add-ons: Message center: The size and content of the window for customer questions changed after adding an item to the cart. Fixed.
 
 [!] Add-ons: Mobile app: There was no setting for the color of the product options borders. Fixed.
 
-[!] Add-ons: Product reviews: Product options chosen at the product details page on the storefront were displayed in the product reviews.
+[!] Add-ons: Product reviews: Product options chosen at the product details page on the storefront were displayed in the product reviews. Fixed.
 
 [!] Add-ons: Product reviews: An incorrect link for approving a new review was in the notification to the administrator. Fixed.
 
@@ -74,15 +70,7 @@ Bugfixes
 
 [!] Add-ons: Stores and pickup points: Sorting pick-up points by position did not work on the cart and checkout pages. Fixed.
 
-[!] Add-ons: Vendor locations [Beta]: On the storefront, after resetting the address in the vendor search bar, the list of search predictions did not work. Fixed.
-
-[!] Add-ons: Vendor locations [Beta]: The Vendor map block could not be placed on the page multiple times. Fixed.
-
-[!] Add-ons: Vendor locations [Beta]: The field "Location" was not cleared. Fixed.
-
-[!] Add-ons: Vendor Privileges: If the status was "View only" for payment methods, the vendor had access to an inactive button for creating a payment method. Fixed.
-
-[!] Add-ons: Vendor-to-admin payments: Vendor notifications: When a usergroup of vendors was assigned as a receiver to the Orders notification events, notification about paid vendor debt was sent to all vendors from this usergroup. Fixed.
+[!] Add-ons: Warehouses [Beta]: The cache of the product filter block was formed incorrectly depending on the location of the customer. Fixed.
 
 [!] Admin panel: Admin toolbar: The bottom panel overlapped some elements. Fixed.
 
@@ -118,15 +106,29 @@ Bugfixes
 
 [!] Multi-Vendor: Add-ons: Common products for vendors: Preview of common products could fail if the storefront was available only for some vendors. Fixed.
 
+[!] Multi-Vendor: Add-ons: Direct Customer-to-Vendor Payments: The "Continue shopping" button at the cart page always led to the homepage of the store. Fixed.
+
 [!] Multi-Vendor: Add-ons: Message center: PHP TypeError appeared while sending a message from vendor to administrator. Fixed.
 
 [!] Multi-Vendor: Add-ons: Newsletters: New customer could be automatically added to the list of subscribers. Fixed.
 
 [!] Multi-Vendor: Add-ons: PayPal Commerce Platform: Certain currency settings caused a checkout error. Fixed.
 
+[!] Multi-Vendor: Add-ons: Vendor locations [Beta]: On the storefront, after resetting the address in the vendor search bar, the list of search predictions did not work. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor locations [Beta]: The Vendor map block could not be placed on the page multiple times. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor locations [Beta]: The field "Location" was not cleared. Fixed.
+
+[!] Multi-Vendor: Add-ons: Maps and geolocation: Direct Customer-to-Vendor Payments: The shipping promotion applied to products of the vendor without this promotion on the product details page. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor Privileges: If the status was "View only" for payment methods, the vendor had access to an inactive button for creating a payment method. Fixed.
+
 [!] Multi-Vendor: Add-ons: Vendor Privileges: If the status of the delivery method was "View only" the test delivery calculation was not available to vendor and administrator. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor plans: The vendor created while the add-on was disabled could catch an error in his detailed page after the add-on activation. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor-to-admin payments: Vendor notifications: When a usergroup of vendors was assigned as a receiver to the Orders notification events, notification about paid vendor debt was sent to all vendors from this usergroup. Fixed.
 
 [!] Multi-Vendor: Export/Import: When importing vendor logos, the value of the "Images directory" field was ignored. Fixed
 
@@ -139,6 +141,10 @@ Bugfixes
 [!] Multi-Vendor: Storefronts: It was possible to delete the storefront that shares an object. Fixed.
 
 [!] Multi-Vendor: Usergroups: Privileges: An administrator with accounting management rights could not make a payout to the vendor. Fixed.
+
+[!] Multi-Vendor: Vendors: WYSIWYG: The lists in the "Vendor information" block were displayed incorrectly. Fixed.
+
+[!] Multi-Vendor: Vendor panel: Admin toolbar: Vendor could not switch back to the vendor panel from the storefront if domains of the storefront and the vendor panel were different. Fixed.
 
 [!] Notifications: Order manager could not receive a e-mail notification. Fixed.
 
@@ -169,9 +175,3 @@ Bugfixes
 [!] Templates: There was no valid layout on the reviews page. Fixed.
 
 [!] UI / UX: The link protocol in the message about disabled cookies was incorrect. Fixed.
-
-[!] Vendor notifications: Vendor email notifications was used the vendor's logo and information instead of marketplace data. Fixed.
-
-[!] Vendor panel: Admin toolbar: Vendor could not switch back to the vendor panel from the storefront if domains of the storefront and the vendor panel were different. Fixed.
-
-[!] Vendors: WYSIWYG: The lists in the "Vendor information" block were displayed incorrectly. Fixed.
