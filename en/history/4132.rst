@@ -175,3 +175,19 @@ Bugfixes
 [!] Templates: There was no valid layout on the reviews page. Fixed.
 
 [!] UI / UX: The link protocol in the message about disabled cookies was incorrect. Fixed.
+
+=============
+Service Packs
+=============
+
+----------
+4.13.2.SP1
+----------
+
+[!] Add-ons: Back-End Sign-In via Google: Logging in caused logging out on other devices. Fixed.
+
+[!] Add-ons: Order fulfillment by marketplace [Beta]: An error appeared on the storefront when the add-on was ebabled and catalog promotions existed. Fixed.
+
+[!] Design: Menu: Menu items with the disabled "Open in new window" setting were opened in a new window. Fixed.
+
+[!] Products: Features: It was unclear how to unselect variants of a feature with the "Multiple checkboxes" type on the product editing page. Fixed.
