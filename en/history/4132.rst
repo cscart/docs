@@ -196,6 +196,6 @@ Service Packs
 4.13.2.SP2
 ----------
 
-[!] Multi-Vendor: Add-ons: Direct Customer-to-Vendor Payments: Payment and shipping methods as well as customer notes didn't work correctly for the customers who have signed in. Fixed.
+[!] Multi-Vendor: Add-ons: Direct Customer-to-Vendor Payments: Payment and shipping methods selection at checkout as well as customer notes didn't work correctly for the customers who have signed in. Fixed.
 
 [!] Product filters: Storefront: Price slider became inoperable after the first use, until the page was reloaded. Fixed.
