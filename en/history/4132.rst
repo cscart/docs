@@ -191,3 +191,11 @@ Service Packs
 [!] Design: Menu: Menu items with the disabled "Open in new window" setting were opened in a new window. Fixed.
 
 [!] Products: Features: It was unclear how to unselect variants of a feature with the "Multiple checkboxes" type on the product editing page. Fixed.
+
+----------
+4.13.2.SP2
+----------
+
+[!] Multi-Vendor: Add-ons: Direct Customer-to-Vendor Payments: Payment and shipping methods as well as customer notes didn't work correctly for the customers who have signed in. Fixed.
+
+[!] Product filters: Storefront: Price slider became inoperable after the first use, until the page was reloaded. Fixed.
