@@ -401,12 +401,19 @@ Create a Variation Group
 
 ::
 
-	curl -X POST "http://example.com/api/product_variations_groups" \
- 	-H "Content-Type: application/json" \
- 	-H "Authorization: Basic ******" \
-	-d '{"product_ids":[286,287,288],"code":"MY_GROUP_1"}'
-	   
-	   
+    curl -X POST "http://example.com/api/product_variations_groups" \
+    -H "Content-Type: application/json" \
+    -H "Authorization: Basic ******" \	   
+    -d '{"product_ids":[286,287,288],
+    "code":"MY_GROUP_1", 
+    "features":[
+       {
+          "feature_id":18,
+          "purpose":"group_catalog_item"
+       }
+    ]
+        }
+
 Get a List of Variation Groups
 ++++++++++++++++++++++++++++++
 
