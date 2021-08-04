@@ -22,9 +22,9 @@ Add/Edit Profile Fields
 
 #. You'll see a window where you'll be able to specify the properties of the profile field:
 
-   * **Description**—the name of the field as it appears to customers and administrators.
+   * **Name**—the name of the field as it appears to customers and administrators.
 
-   * **Field name**—the character sequence unique for each profile field. It serves to identify the field and can be :ref:`used as a variable in the document editor. <profile-field-in-document>`
+   * **Code**—the character sequence unique for each profile field. It serves to identify the field and can be :ref:`used as a variable in the document editor. <profile-field-in-document>`
 
    * **Position**—the position of this profile field on the list relative to other fields.
 
