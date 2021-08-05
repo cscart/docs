@@ -354,72 +354,72 @@ ComponentItem allows you to connect your own template. The following parameters 
 How to Adapt List of Entities for Working with Context Menu
 ===========================================================
 
-* Wrap the block that displays the list of objects in a capture:
+#. Wrap the block that displays the list of objects in a capture:
 
-  ::
+   ::
 
-   {capture name=”entity_table”}
-       %the block with the table with the list of objects%
-   {/capture}
+    {capture name=”entity_table”}
+        %the block with the table with the list of objects%
+    {/capture}
 
-* Show the content of this capture with the *common/context_menu_wrapper.tpl* component:
+#. Show the content of this capture with the *common/context_menu_wrapper.tpl* component:
 
-  ::
+   ::
 
-   {include file="common/context_menu_wrapper.tpl"
-      form="entity_form"
-      object="entity"
-      items=$smarty.capture.entity_table
-   }
+    {include file="common/context_menu_wrapper.tpl"
+       form="entity_form"
+       object="entity"
+       items=$smarty.capture.entity_table
+    }
 
-* Add the ``longtap-selection`` class to the block that has the table with the list of objects.
+#. Add the ``longtap-selection`` class to the block that has the table with the list of objects.
 
-* Add the following attributes to the thead tag of the table with objects:
+#. Add the following attributes to the thead tag of the table with objects:
 
-  * data-ca-bulkedit-default-object—to hide the table head when the context menu is displayed;
+   * ``data-ca-bulkedit-default``—object—to hide the table head when the context menu is displayed;
 
-  * data-ca-bulkedit-component—to allow selecting objects in bulk.
+   * ``data-ca-bulkedit-component``—to allow selecting objects in bulk.
 
-* Add a hidden service ``input`` to the first box of the table’s heading (the first th); it will enable or disable the bulk selection mode for the table:
+#. Add a hidden service ``input`` to the first box of the table’s heading (the first th); it will enable or disable the bulk selection mode for the table:
 
-  ::
+   ::
 
-   <input type="checkbox"
-         class="bulkedit-toggler hide"
-         data-ca-bulkedit-disable="[data-ca-bulkedit-default-object]" // the attribute specifies the selector of the elements that need to be hidden when the context menu is displayed—for example, the heading of the table      data-ca-bulkedit-enable="[data-ca-bulkedit-expanded-object]" // the attribute specifies the selector of the elements that need to be shown when the context menu is active—for example, the control panel for objects
-   />
+    <input type="checkbox"
+          class="bulkedit-toggler hide"
+          data-ca-bulkedit-disable="[data-ca-bulkedit-default-object]" // the attribute specifies the selector of the elements that need to be hidden when the context menu is displayed—for example, the heading of the table      data-ca-bulkedit-enable="[data-ca-bulkedit-expanded-object]" // the attribute specifies the selector of the elements that need to be shown when the context menu is active—for example, the control panel for objects
+    />
 
-* Add the following to the tbody tag:
+#. Add the following to the tbody tag:
 
-  * The ``cm-longtap-target`` class.
+   * The ``cm-longtap-target`` class.
 
-  * Attributes: 
+   * Attributes: 
 
-    * ``data-ca-longtap-action="setCheckBox"``—sets the type of action that occurs when clicking on the object; is added to the object with the <tr> (usually) where the checkbox with the identifier of the object is located.
+     * ``data-ca-longtap-action="setCheckBox"``—sets the type of action that occurs when clicking on the object; is added to the object with the <tr> (usually) where the checkbox with the identifier of the object is located.
 
-    * ``data-ca-longtap-target="input.cm-item"``—specifies the selector which changes the selected atttinute for the found elements in data-ca-longtap-action.
+     * ``data-ca-longtap-target="input.cm-item"``—specifies the selector which changes the selected atttinute for the found elements in data-ca-longtap-action.
 
-    * ``data-ca-id="{$product.product_id}"``—contains the identifier of the object; for example, product ID.
+     * ``data-ca-id="{$product.product_id}"``—contains the identifier of the object; for example, product ID.
 
-* Add a checkbox to every object of the list; this checkbox is responsible for selecting the object and storing its ID:
+#. Add a checkbox to every object of the list; this checkbox is responsible for selecting the object and storing its ID:
 
-  ::
+   ::
 
-   <input type="checkbox"
-         name="product_ids[]"//the name is an example
-         value="{$product.product_id}"
-         class="cm-item cm-item-status-{$product.status|lower} hide"
-   />
+    <input type="checkbox"
+          name="product_ids[]"//the name is an example
+          value="{$product.product_id}"
+          class="cm-item cm-item-status-{$product.status|lower} hide"
+    />
 
-* The ``cm-status-*`` class is used for selecting objects with a specific status from the dropdown list in the table heading: All, None, Active, Disabled, Hidden, etc.
+#. The ``cm-status-*`` class is used for selecting objects with a specific status from the dropdown list in the table heading: All, None, Active, Disabled, Hidden, etc.
   
-* The ``hide`` class is used for hiding the checkbox.
+   The ``hide`` class is used for hiding the checkbox.
 
 ---------------------
 Example of Adaptation
 ---------------------
 
-The example: `https://gist.github.com/example <https://gist.github.com/torunar/cd603b08c43710247e94e7a232734aa9/revisions#diff-0dac47aa4091efd784c7649bbfff67513c49ece076b9ca5d74361e4afba2d3c4>`_
+`The example of adaptation on GitHub <https://gist.github.com/torunar/cd603b08c43710247e94e7a232734aa9/revisions#diff-0dac47aa4091efd784c7649bbfff67513c49ece076b9ca5d74361e4afba2d3c4>`_
 
 Before
 ------
@@ -588,5 +588,7 @@ Schema Examples
 ===============
 
 app/schemas/context_menu/products.php — categories, prices, and bulk editing
+
 app/schemas/context_menu/payouts.php — notify_checkboxes
+
 app/schemas/context_menu/product_features.php — group, category

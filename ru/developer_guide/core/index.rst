@@ -26,6 +26,7 @@
 
     structure/index
     coding_standards/index
+    context_menu/index
     controllers/index
     front-end/index
     db/index
