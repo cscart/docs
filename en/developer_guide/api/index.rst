@@ -44,7 +44,7 @@ Useful Tools
 
     .. note:: All examples in this guide are given as cURL commands.
 
-*   `REST Console <https://chrome.google.com/webstore/detail/rest-console/cokgbflfommojglbmbpenpphppikmonn>`_ is an extension for the popular Google Chrome browser. Similar extensions exist for all popular web-browsers.
+*   `Postman <https://chrome.google.com/webstore/detail/postman-interceptor/aicmkgpgakddgnaphhhpliifpcfhicfo>`_ is an extension for the popular Google Chrome browser. Similar extensions exist for all popular web-browsers.
 
 .. _activate:
 
