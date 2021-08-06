@@ -76,7 +76,7 @@ REST API
 
 .. note::
 
-    Можно использовать другие REST-клиенты, например, `REST Console <https://chrome.google.com/webstore/detail/rest-console/cokgbflfommojglbmbpenpphppikmonn>`_ или `Advanced REST Client <https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo>`_ для Gooogle Chrome.
+    Можно использовать другие REST-клиенты, например, `Postman <https://chrome.google.com/webstore/detail/postman-interceptor/aicmkgpgakddgnaphhhpliifpcfhicfo>`_ для Gooogle Chrome.
 
 """"""""""""""""""""""""""""""""""""
 Пример использования и базовые опции
