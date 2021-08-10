@@ -398,19 +398,19 @@ URL
 
 ::
 
-	curl -X POST "http://example.com/api/product_variations_groups" \
-	-H "Content-Type: application/json" \
-	-H "Authorization: Basic ******" \
-	-d '{"product_ids":[286,287,288],
-	"code":"MY_GROUP_1", 
-	"features":[
+    curl -X POST "http://example.com/api/product_variations_groups" \
+    -H "Content-Type: application/json" \
+    -H "Authorization: Basic ******" \
+    -d '{"product_ids":[286,287,288],
+    "code":"MY_GROUP_1", 
+    "features":[
        {
           "feature_id":18,
           "purpose":"group_catalog_item"
        }
-	 ]
-        }
-	   
+     ]
+        }'
+
 Получение списка групп вариаций
 +++++++++++++++++++++++++++++++
 

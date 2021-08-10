@@ -412,7 +412,7 @@ Create a Variation Group
           "purpose":"group_catalog_item"
        }
     ]
-        }
+        }'
 
 Get a List of Variation Groups
 ++++++++++++++++++++++++++++++
