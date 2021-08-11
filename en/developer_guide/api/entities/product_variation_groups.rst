@@ -408,11 +408,20 @@ Create a Variation Group
     "code":"MY_GROUP_1", 
     "features":[
        {
-          "feature_id":18,
+          "feature_id":549,
           "purpose":"group_catalog_item"
        }
     ]
         }'
+
+.. note ::
+
+    To create a variation group without errors, meet the following conditions:
+
+    * the purpose for the feature is "Variations as separate products" or "Variations as one product";
+
+    * diffrent products have different variants for the selected feature.
+
 
 Get a List of Variation Groups
 ++++++++++++++++++++++++++++++
