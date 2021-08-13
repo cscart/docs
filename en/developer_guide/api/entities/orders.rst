@@ -576,7 +576,7 @@ This request:
 
 * places an order;
 
-* applies a bonus coupon ``coupon_code=123`` to the order;
+* applies a coupon code ``123`` to the order;
 
 * decreases the order total.
 
