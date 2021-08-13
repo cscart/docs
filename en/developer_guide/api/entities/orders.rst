@@ -548,6 +548,38 @@ This request places an order with the following properties:
 
 * One product with ``product_id=12`` and two products with ``product_id=13`` were ordered.
 
+Example JSON: Create an Order as an Existing User and Apply a Coupon 
+--------------------------------------------------------------------
+
+::
+
+  {
+   "user_id": "3",
+   "shipping_id": "1",
+   "payment_id": "2",
+   "products": {
+       "1": {
+         "product_id": "12",
+         "amount": "5"
+        },
+       "2": {
+         "product_id": "13",
+         "amount":"2"
+       }
+   },
+   "coupon_codes": {
+       "1": "123"
+   }
+  }
+
+This request:
+
+* places an order;
+
+* applies a bonus coupon ``coupon_code=123`` to the order;
+
+* decreases the order total.
+
 ---------------------------------
 Way 2: Create an Order as a Guest
 ---------------------------------
