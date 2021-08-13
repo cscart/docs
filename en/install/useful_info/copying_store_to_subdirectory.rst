@@ -12,13 +12,19 @@ Having a live copy of your store in a subdirectory is useful: you can test upgra
 Step 1. Copy the Files of Your Store to a Subdirectory
 ======================================================
 
-1.1. Make an archive with all the files of your store. The way you make an archive depends on your installation:
+1.1. Make an archive with all the files of your store. The way you make an archive depends on your installation.
 
-* If your current store is installed on a host with **cPanel**, go to **cPanel → Files → File Manager**, select all the files of your store, and click **Compress**. Then select the newly created archive and click **Download**.
+* If your current store is installed on a host with **cPanel**, then to make an archive:
 
-.. important::
+  #. Go to **cPanel → Files → File Manager**;
+  
+  #. Select all the files of your store, and click **Compress**;
+  
+  #. Then select the newly created archive and click **Download**.
 
-    cPanel File Manager may not show hidden files such as **.htaccess**. Before you create an archive, go to **Settings** (top right corner of the screen) and tick the **Show hidden files (.dotfiles)** checkbox. This ensures all files of your store are in the archive.
+  .. important::
+
+      cPanel File Manager may not show hidden files such as **.htaccess**. Before you create an archive, go to **Settings** (top right corner of the screen) and tick the **Show hidden files (.dotfiles)** checkbox. This ensures all files of your store are in the archive.
 
 * If your store is installed on a local machine, find the installation directory and make an archive with your favourite file archiver.
 
@@ -36,21 +42,21 @@ So that the copy of your store works fine, you need a separate database for it. 
 Way 1. Copy the Database via phpMyAdmin
 ---------------------------------------
 
-1. Log in to **phpMyAdmin**.
+#. Log in to **phpMyAdmin**.
 
-.. important::
+   .. important::
 
-    If your server uses **cPanel**, you can find **phpMyAdmin under** **Databases → phpMyAdmin**. Some servers may require you to enter your login and password. Contact your hosting provider or server administrator for details.
+       If your server uses **cPanel**, you can find **phpMyAdmin under** **Databases → phpMyAdmin**. Some servers may require you to enter your login and password. Contact your hosting provider or server administrator for details.
 
-2. On the upper panel, click the **Databases** tab and select the database of your main store.
+#. On the upper panel, click the **Databases** tab and select the database of your main store.
 
-3. On the upper panel, click the **Operations** tab.
+#. On the upper panel, click the **Operations** tab.
 
-4. In the **Copy database to** section, enter the name of the new database, check the options as shown on the screenshot, and then hit **Go**:
+#. In the **Copy database to** section, enter the name of the new database, check the options as shown on the screenshot, and then hit **Go**:
 
-.. image:: img/copying_store_to_subdirectory/copy_database.png
-    :align: center
-    :alt: Copy the database of your main store.
+   .. image:: img/copying_store_to_subdirectory/copy_database.png
+       :align: center
+       :alt: Copy the database of your main store.
 
 ------------------------------------------
 Way 2. Copy the Database via SSH and MySQL
@@ -60,43 +66,41 @@ You can also copy the database through the command line. This method is for more
 
 Before you proceed, make sure you know your **username**, **password**, and **host** credentials to connect to your server via SSH. You will also need your **MySQL username and password**. Contact your hosting provider or system administrator for this information.
 
-To copy the database, do this:
+#. Open the console and connect to your server via SSH:
 
-1. Open the console and connect to your server via SSH:
+   .. code-block:: bash
 
-.. code-block:: bash
+       ssh username@host
 
-    ssh username@host
+#. Enter your SSH password
 
-2. Enter your SSH password
+   .. note::
 
-.. note::
+       Your cursor won’t move and you won’t see any changes while you type your password. That is normal.
 
-    Your cursor won’t move and you won’t see any changes while you type your password. That is normal.
+#. Dump your original database to an .sql file:
 
-3. Dump your original database to an .sql file:
+   .. code-block:: bash
 
-.. code-block:: bash
+       mysqldump -u[your mysql username] -p[your mysql password] [your original database name] > dbcopy.sql
 
-    mysqldump -u[your mysql username] -p[your mysql password] [your original database name] > dbcopy.sql
+#. Create a new empty database:
 
-4. Create a new empty database:
+   .. code-block:: bash
 
-.. code-block:: bash
+       mysqladmin -u[your mysql username] -p[your mysql password] create [your new database name]
 
-    mysqladmin -u[your mysql username] -p[your mysql password] create [your new database name]
+#. Import data from the dumped file to the new empty database:
 
-5. Import data from the dumped file to the new empty database:
+   .. code-block:: bash
 
-.. code-block:: bash
-
-    mysql -u[your mysql username] -p[your mysql password] [your new database name] < dbcopy.sql
+       mysql -u[your mysql username] -p[your mysql password] [your new database name] < dbcopy.sql
 
 ======================================
 Step 3. Edit the config.local.php File
 ======================================
 
-The **config.local.php** file defines the path to your store installation, database name, and other information. Since your copy is in the new folder and the copied database has a different name, you have to edit config.local.php so the store works:
+The **config.local.php** file defines the path to your store installation, database name, and other information. Since your copy is in the new folder and the copied database has a different name, you have to edit config.local.php so the store works.
 
 3.1. Go to the copy’s folder and open **config.local.php** in an FTP client or the file manager of your host’s control panel. If you connect to your server via SSH, open this file via any command line text editor (Nano, for example).
 
@@ -125,17 +129,11 @@ Step 4. Finishing Touches
 
 4.1. Clear cache of the copied store by deleting the **cache** folder in the **var** directory of your new CS-Cart copy. You can also clear cache in the administration panel in **Administration → Storage → Clear cache**.
 
-4.2. Update the storefront URLs of the copied store. To do that, log in to the administration panel, which is now located at *yourdomain/subdirectory/admin.php*. On the **Administration → Stores page**, click your store. On the store editing page, change the storefront URL:
+4.2. Update the storefront URLs of the copied store. To do that, log in to the administration panel, which is now located at *yourdomain/subdirectory/admin.php*. On the **Administration → Stores page**, click your store. On the store editing page, change the storefront URL. Don’t forget to close the storefront on the **Settings → General** page:
 
 .. image:: img/copying_store_to_subdirectory/storefronturl.png
     :align: center
     :alt: Update the storefront URLs.
-
-Don’t forget to close the storefront on the **Settings → General** page:
-
-.. image:: img/copying_store_to_subdirectory/closestorefront.png
-    :align: center
-    :alt: Close your storefront.
 
 4.3. If you use the SEO add-on, you might need to edit the **.htaccess** file too. This file is in the root directory of your copied store. Open the file and edit this line:
 
