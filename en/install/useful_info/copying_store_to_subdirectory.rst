@@ -129,7 +129,7 @@ Step 4. Finishing Touches
 
 4.1. Clear cache of the copied store by deleting the **cache** folder in the **var** directory of your new CS-Cart copy. You can also clear cache in the administration panel in **Administration → Storage → Clear cache**.
 
-4.2. Update the storefront URLs of the copied store. To do that, log in to the administration panel, which is now located at *yourdomain/subdirectory/admin.php*. On the **Administration → Stores page**, click your store. On the store editing page, change the storefront URL. Don’t forget to close the storefront on the **Settings → General** page:
+4.2. Update the storefront URLs of the copied store. To do that, log in to the administration panel, which is now located at *yourdomain/subdirectory/admin.php*. On the **Administration → Storefronts** page, click your store. On the **General** tab of the store editing page, change the storefront URL and close the storefront:
 
 .. image:: img/copying_store_to_subdirectory/storefronturl.png
     :align: center
