@@ -18,7 +18,7 @@ General Information
 
 * The add-on supports payments in 135+ currencies. Currency conversion is included—customers pay in their native currency, vendors receive funds in theirs.
 
-* Vendors can use `Standard <https://stripe.com/docs/connect/standard-accounts>`_ Stripe accounts.
+* Vendors can use `Standard <https://stripe.com/docs/connect/standard-accounts>`_ or `Express <https://stripe.com/docs/connect/express-accounts>`_ Stripe accounts.
 
 * When a customer pays for an order that consists of products from different vendors in one cart, Stripe Connect automatically splits the payment between the vendors, transferring the commission to the account of the store owner.
 

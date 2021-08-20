@@ -50,6 +50,14 @@ Step 1. Configure the Payment Method
 
    * **Enable 3-D Secure**—the setting defines whether money will first go to the marketplace owner instead of going straight to vendors. Money will be automatically distributed between connected Stripe accounts via transfers later.
 
+   * **Allow Express accounts**—the setting allows to register `Express accounts <https://stripe.com/docs/connect/express-accounts>`_. 
+
+     * To check the statuses of the Express accounts that your vendors create, add a special command to cron.
+
+       .. code-block:: php
+
+          php /path/to/cart/admin.php --dispatch=stripe_connect.check_accounts
+
    * **Delay transfer of funds**—delay sending money to vendors. Configure manual or automatic disbursements to vendors. The setting works if **3-D Secure** was enabled.
 
      * To schedule automatic periodic disbursements, add a special command to cron. Set the desired value of the "--days" parameter. Money will be automatically transfered to vendors for orders that are older than this value.
@@ -82,11 +90,19 @@ Here is the instruction for a vendor:
 
 #. Click on the name of your company.
 
-#. The vendor editing page will open. Scroll down and click the **Connect with Stripe** button. This will take you to the Stripe page where you'll be able to register an account or connect an existing one.
+#. The vendor editing page will open. Scroll down, then you'll see one of two posssible variants of connecting with Stripe.    Any of these actions will take you to the Stripe page where you'll be able to register an account or connect an existing one.
 
-   .. image:: img/stripe_connect_vendor_account.png
-       :align: center
-       :alt: The "Connect with Stripe" button that vendors can use to connect their accounts.
+   * If Express accounts were allowed on the *Step 1* then you'll be able to **Connect a Stripe Express account**. If you already have a **Stipe Standart account**, click the appropriate button.
+
+     .. image:: img/stripe_connect_vendor_account_1.png
+         :align: center
+         :alt: The "Connect a Stripe Express account" button.
+
+   * If Express accounts weren't allowed on the *Step 1* then you'll be able to **Connect with Stripe Standard**.
+
+     .. image:: img/stripe_connect_vendor_account_2.png
+         :align: center
+         :alt: The "Connect with Stripe Standard" button.
 
 .. meta::
    :description: How to configure automatic distribution of money between vendors via Stripe Connect in Multi-Vendor?
