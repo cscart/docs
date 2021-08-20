@@ -24,8 +24,8 @@ Use this section to adjust vendor settings for the Administration panel and the 
 
       Here's how to :doc:`configure the vendor application form and lead customers to it</user_guide/users/vendors/allow_customers_to_apply_for_vendor_account>`.
 
-* **Automatically create the administrator account for the new approved vendor**—if you enable this setting, the company administrator will be automatically created together with the company.
-
 * **Vendors per page**—the number of vendors displayed on one page.
 
 * **Allow vendors to manage product features**—if you enable this setting, vendors will be able add new :doc:`product features </user_guide/manage_products/features/index>` and edit them.
+
+* **Review new vendors before granting access to the admin panel**—if you enable this setting, administrators will have to check every new vendor and approve/disapprove their accounts. Before checking, all new vendors will get the **New** status.

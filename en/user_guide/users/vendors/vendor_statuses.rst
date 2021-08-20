@@ -2,7 +2,15 @@
 Vendor Statuses
 ***************
 
-When a customer :doc:`applies for a vendor account <allow_customers_to_apply_for_vendor_account>`, then he or she, as a newly-created vendor, gets one of the two statuses: 
+Starting from the version 4.14.1, the administrator can allow and prevent vendor registration. When a customer :doc:`applies for a vendor account <allow_customers_to_apply_for_vendor_account>`, then he or she, as a newly-created vendor, gets one of the three statuses: 
+
+* **New**—vendor's administrators can't work in the administration panel of the store. The **New** status in not displayed anywhere. Instead of it, the *Approve* (thumbs up) and *Disapprove* (thumbs down) buttons appear next to a name of newly-created vendor.
+
+  If a marketplace administrator approves a vendor, the vendor gets the **Active** status. But if an administrator decides to disapprove a vendor, this vendor gets the **Disabled** status.
+
+  .. note::  
+
+      The newly-created vendors will get this status if the **Review new vendors before granting access to the admin panel** is checked in the :doc:`Settings → Vendors </user_guide/settings/vendors>` section of the store.
 
 * **Active**—vendor's administrators can work in the administration panel of the store. The products of an active vendor appear in the store, :doc:`unless they require prior approval. <product_approval>`
 
@@ -12,7 +20,7 @@ When a customer :doc:`applies for a vendor account <allow_customers_to_apply_for
 
   .. note::
 
-      The **Approval of newly-created vendors** parameter in the settings of the :doc:`/user_guide/addons/vendor_data_premoderation/index` add-on is responsible for the status of the newly-created vendor. When this setting is enabled, the newly-created vendors get the **Pending** status.
+      The newly-created vendors will get the **Pending** status if the **Approval of newly-created vendors** parameter in the settings of :doc:`/user_guide/addons/vendor_data_premoderation/index` add-on is enabled.
 
 Vendors can have other statuses:
 
@@ -25,7 +33,7 @@ Vendors can have other statuses:
   .. image:: img/change_vendor_status.png
       :align: center
       :alt: You can change a vendor's status in Multi-Vendor administration panel at any time.
-      
-      
+
+ 
 .. meta::
    :description: What statuses do vendors have in a Multi-Vendor ecommerce platform and what a marketplace owner can do to them?
