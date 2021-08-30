@@ -25,6 +25,7 @@
     create_vendor_account
     merge_vendors
     allow_vendors_to_edit_layout_and_theme
+    vendor_registration_flow
     product_approval
     invite_vendors
     manage_vendor_plans
