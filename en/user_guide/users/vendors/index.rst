@@ -27,6 +27,7 @@ View the list of the vendors in the Multi-Vendor administration panel under **Ve
     create_vendor_account
     invite_vendors
     vendor_group
+    vendor_registration_flow
     merge_vendors
     product_approval
     allow_vendors_to_edit_layout_and_theme
