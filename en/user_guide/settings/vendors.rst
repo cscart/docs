@@ -28,4 +28,4 @@ Use this section to adjust vendor settings for the Administration panel and the 
 
 * **Allow vendors to manage product features**—if you enable this setting, vendors will be able add new :doc:`product features </user_guide/manage_products/features/index>` and edit them.
 
-* **Review new vendors before granting access to the admin panel**—if you enable this setting, administrators will have to check every new vendor and approve/disapprove their accounts. Before checking, all new vendors will get the **New** status.
+* **Review new vendors before granting access to the admin panel**—if you enable this setting, administrator will have to check every new vendor and approve/disapprove their accounts. Before checking, all new vendors will have the :doc:`New status </user_guide/users/vendors/vendor_statuses>`, so they won’t have access either to the storefront or to their Vendor panel.
