@@ -50,7 +50,7 @@ Step 1. Configure the Payment Method
 
    * **Enable 3-D Secure**—the setting defines whether money will first go to the marketplace owner instead of going straight to vendors. Money will be automatically distributed between connected Stripe accounts via transfers later.
 
-   * **Allow Express accounts**—the setting allows to register `Express accounts <https://stripe.com/docs/connect/express-accounts>`_. 
+   * **Allow Express accounts**—the setting allows to register `Express accounts <https://stripe.com/docs/connect/express-accounts>`_. Express accounts support faster registration and simpler Stripe dashboard. But since using Express accounts, platform owner pays fee and is responsible for handling disputes and refunds.
 
      * To check the statuses of the Express accounts that your vendors create, add a special command to cron.
 
