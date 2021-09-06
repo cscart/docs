@@ -2,7 +2,7 @@
 How To: Switch Between Storefronts
 **********************************
 
-Once you :doc:`configure multiple storefronts </install/storefronts/index>`, you'll be able to switch between the operation modes in the administration panel to manage objects of all stores as **root administrator**, or only the objects of the specific specific store as a **storefront administrator**. Objects include products, categories, pages, etc.
+Once you :doc:`configure multiple storefronts </install/storefronts/index>`, you'll be able to switch between the operation modes in the administration panel to manage objects of all stores as **root administrator**, or only the objects of the specific store as a **storefront administrator**. Objects include products, categories, pages, etc.
 
 To switch between the modes, choose the specific storefront in the top left corner of the administration panel. Select **All storefronts** to act as **root administrator**, or select the name of the store to act as a **storefront administrator**.
 
