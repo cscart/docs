@@ -16,7 +16,7 @@ Starting from the version 4.14.1, the administrator can allow and prevent vendor
 
   When the administrator :doc:`creates a vendor <create_vendor_account>`, the status of that vendor is set to **Active**.
 
-* **Pending**—vendor's administrators can work in the Administration panel of the store, but the vendor's products don't appear on the storefront.
+* **Pending**—vendor's administrators can work in the administration panel of the store, but the vendor's products don't appear on the storefront.
 
   .. note::
 
@@ -28,7 +28,7 @@ Vendors can have other statuses:
   
   If you have the :doc:`/user_guide/addons/vendor_debt_payout/index` add-on installed in your store, the **Suspended** status is automatically assigned to those vendors who are in debt to the marketplace. As soon as a debtor pays off his debt, his status is automatically changed to **Active**.
 
-* **Disabled**—vendor's products won't appear on the storefront, and vendor's administrators won't be able to log in to the Administration panel.
+* **Disabled**—vendor's products won't appear on the storefront, and vendor's administrators won't be able to log in to the administration panel.
 
   .. image:: img/change_vendor_status.png
       :align: center
