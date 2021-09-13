@@ -6,7 +6,7 @@ How To: Create an Additional Store
 
     This article is about creating a storefront in CS-Cart Ultimate. There is :doc:`another article <create_branch_of_marketplace>` for Multi-Vendor Ultimate.
 
-A storefront creation in CS-Cart allows you to create another independent store. An additional store is necessary for entering new markets. It is useful when you want to sell specific products market-friendly for a certain country or region. 
+Storefronts in CS-Cart allow you to enter new markets. They are useful when you want to tailor a part of your business to a specific audience, country, region, or product niche.
 
 To create an additional store:
 
@@ -23,7 +23,6 @@ To create an additional store:
 #. Fill the created storefront with:
 
    * Products. :doc:`Create new products </user_guide/manage_products/products/add_product>` or :doc:`use existing ones <sharing>` by assigning new categories to the product.
-
 
      In CS-Cart, categories determine the storefronts to which a product belong. Accordingly, product affiliation to the category determines the product's availability on the storefront. Even though :doc:`one product can be shared among several storefronts <many_stores_one_catalog>`, such properties as price, description, discounts and some others can be different on different storefronts.
 
