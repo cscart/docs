@@ -22,14 +22,14 @@ To set up access for new vendors:
 Scenarios for New Vendors
 =========================
 
-The setup wizard speeds up manual setup. Vendor :doc:`statuses </user_guide/users/vendors/vendor_statuses>`, values of the setting in the :doc:`/user_guide/addons/vendor_data_premoderation/index` add-on and the of vendor setting in the admin panel changes by selecting a scenario.
+The setup wizard speeds up manual setup. Vendor :doc:`statuses </user_guide/users/vendors/vendor_statuses>`, the values of the settings in the :doc:`/user_guide/addons/vendor_data_premoderation/index` add-on, and the vendor setting in the admin panel changes by selecting a scenario.
 
 .. image:: img/vendor_registration_flow.png
     :align: center
     :alt: Interaction Scenarios for New vendors And the Store.
 
 
-After the appropriate settings will be applied, you can always change vendor onboarding via the **Marketplace setup wizard** or manually.
+You can always change vendor onboarding via the **Marketplace setup wizard** or manually.
 
 Scenario 1.  Immediate Full Access to Admin Panel and Storefront
 ================================================================
@@ -65,7 +65,7 @@ Scenario 2. Immediate Access to Admin Panel, Approval for Storefront
             * The "Approval of newly-created vendors" setting in the addon is set to *"Required for all vendors"*.
             * The "Review new vendors before granting access to the admin panel" setting on the *Settings → Vendors* page is disabled.
 
-Scenario 3. Approval for Access to Admin Panel And Storefront
+Scenario 3. Approval for Access to Admin Panel and Storefront
 =============================================================
 
 .. list-table::
