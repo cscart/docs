@@ -122,6 +122,8 @@ Bug Fixes
 
 [!] Design: Checkout: The phone number was displayed incorrectly in RTL languages. Fixed.
 
+[!] Design: Pages: Content of the block with filling the Vendor Page was not updated when going to another vendor microstore. Fixed.
+
 [!] Design: User groups: When changing the status of a user group, an incorrect option "Notify Customer" was displayed. Fixed
 
 [!] Export/Import: If there were brackets in the name of a group of features, the features could be imported incorrectly. Fixed.
