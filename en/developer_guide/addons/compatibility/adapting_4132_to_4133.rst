@@ -85,7 +85,7 @@ New functions
 
        fn_get_content_disposition_header(string $filename)
 
-#. Check if the Vendor plans add-on is active and updates usergroup status::
+#. Check if the Vendor plans add-on is active and update usergroup status::
 
        fn_vendor_privileges_check_and_update_usergroup_status(array $user_data)
 
@@ -164,7 +164,7 @@ New hooks
 
        fn_set_hook('uninstall_addon_post', $addon_name, $allow_unmanaged);
 
-#. His hook allows to change a set of vendor IDs before getting links to the vendor stores::
+#. This hook allows to change a set of vendor IDs before getting links to the vendor stores::
 
        fn_set_hook('google_sitemap_write_companies_to_sitemap_before_vendor_stores', $storefront, $last_modified_time, $change_frequency, $priority, $file, $link_counter, $file_counter, $sitemap_header, $sitemap_footer, $languages, $vendor_stores);
 

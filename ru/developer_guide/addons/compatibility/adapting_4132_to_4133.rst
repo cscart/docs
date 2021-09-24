@@ -85,7 +85,7 @@
 
        fn_get_content_disposition_header(string $filename)
 
-#. Проверяет, включен ли модуль “Тарифные планы для продавцов” и обновляет статус группы пользователей::
+#. Проверяет, включен ли модуль “Тарифные планы для продавцов”, и обновляет статус группы пользователей::
 
        fn_vendor_privileges_check_and_update_usergroup_status(array $user_data)
 
