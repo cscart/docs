@@ -14,7 +14,7 @@ New Features and Improvements
 
 [+] Mobile application: Now if the storefront is closed, a message about the temporary closed store appears.
 
-[+] Multi-Vendor: Add-ons: Stripe connect: Marketplace name and order number have been added to the payments description.
+[+] Multi-Vendor: Add-ons: Stripe Connect payments: Marketplace name and order number have been added to the payments description.
 
 [+] Multi-Vendor: Add-ons: Vendor Data premoderation: Vendors: Now administrators receive notifications about a new vendor when automatic account approval enabled.
 
@@ -124,7 +124,7 @@ Bug Fixes
 
 [!] Export/Import: If there were brackets in the name of a group of features, the features could be imported incorrectly. Fixed.
 
-[!] Layouts: If the new layout data was copied from the main layout, then the changes made in one layout were applied to the another one. Fixed.
+[!] Layouts: Information about the new layout, copied from the main layout, could be misunderstood. Fixed.
 
 [!] Mobile application: Downloadable products could be "Out of stock". Fixed.
 
@@ -138,23 +138,7 @@ Bug Fixes
 
 [!] Multi-Vendor: Accounting: The current vendor balance didn't change after the administrator declined the payment. Fixed.
 
-[!] Multi-Vendor: Add-ons: Advanced import: Common products for vendors: Vendor could create common products when import was made via common preset. Fixed
-
 [!] Multi-Vendor: Add-ons: Comments and reviews: Creation of the new vendor linked this vendor to the store's testimonials, and in case this vendor was deleted, testimonials were deleted too. Fixed.
-
-[!] Multi-Vendor: Add-ons: Common Products for Vendors: Exim: Import of the offers for common product by vendors was ignoring the "Import strategy" preset settings. Fixed.
-
-[!] Multi-Vendor: Add-ons: Common Products for Vendors: When a common product was sold by vendors, admin could still change its owner to one of the vendors, causing duplicate products to appear. Fixed.
-
-[!] Multi-Vendor: Add-ons: Common products for Vendors: Vendors: Mobile application: Products of a vendor weren't shown on his/her page, if all the products were created as variations of the common product. Fixed.
-
-[!] Multi-Vendor: Add-ons: Direct Customer-to-vendor payments: Accounting: Order changes were incorrectly shown in the payout information. Fixed.
-
-[!] Multi-Vendor: Add-ons: Direct customer-to-vendor payments: Customer's cart was cleared when admin was logging in as this customer with the add-on enabled. Fixed.
-
-[!] Multi-Vendor: Add-ons: Direct Customer-to-Vendor Payments: Items were not removed from the Wishlist. Fixed.
-
-[!] Multi-Vendor: Add-ons: Direct Customer-to-Vendor Payments: Shipping total cost in the pop-up shipping calculation window did not change when choosing a different option. Fixed
 
 [!] Multi-Vendor: Add-ons: Gift certificates: A "Gift certificate" bonus could be added to the cart promotion. Fixed.
 
@@ -162,13 +146,7 @@ Bug Fixes
 
 [!] Multi-Vendor: Add-ons: Message center: Thread ID was not displayed on the order page. Fixed
 
-[!] Multi-Vendor: Add-ons: Order fulfillment by marketplace [Beta]: A notification about changing vendor plan appeared after a new vendor registered. Fixed.
-
-[!] Multi-Vendor: Add-ons: Order fulfillment by marketplace [Beta]: When switch to another vendor plan included change in availability to the fulfillment, a notification about this did not appear properly. Fixed.
-
 [!] Multi-Vendor: Add-ons: Reward Points: Reward Points added incorrectly for orders with several products from different vendors. Fixed.
-
-[!] Multi-Vendor: Add-ons: Storefront REST API: If currencies were linked to the storefront, a GET request to sra_storefront resulted in an error. Fixed
 
 [!] Multi-Vendor: Add-ons: Switching between storefronts was available for add-ons that don't support multiple storefronts. Fixed.
 
@@ -178,21 +156,15 @@ Bug Fixes
 
 [!] Multi-Vendor: Add-ons: Vendor locations [Beta]: Product Filters: The necessary part of filter slider wasn't highlighted. Fixed.
 
-[!] Multi-Vendor: Add-ons: Vendor categories fee: Errors appeared on the server when placing an order with zero price. Fixed.
-
 [!] Multi-Vendor: Add-ons: Vendor plans: A new plan was not created on the edit/add vendor page. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor plans: Exim: Product update via import was skipped if no categories were in the preset and the vendor plan had limitations by categories. Fixed.
 
-[!] Multi-Vendor: Add-ons: Vendor plans: It was impossible to hide the field wth plans on the vendor registration page. Fixed.
+[!] Multi-Vendor: Add-ons: Vendor plans: It was impossible to hide the field with plans on the vendor registration page. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor plans: Vendor commission could be calculated incorrectly if the tax calculation method was based on unit price. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor plans: Some links in the "Vendor plans" add-on were incorrect. Fixed.
-
-[!] Multi-Vendor: Add-ons: Vendor Privileges: Usergroups: When a vendor was created from a customer account, the vendor usergroup was not assigned to the vendor. Fixed
-
-[!] Multi-Vendor: Add-ons: Vendor Rating: The value of the "Manual vendor plan rating" field in the vendor plan settings was not saved. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor-to-admin payments: Currencies: The add-on settings ignored the chosen position of the currency symbol relative to the sum. Fixed.
 
@@ -210,7 +182,33 @@ Bug Fixes
 
 [!] Multi-Vendor: Users: Profiles: If customer country was not the default country, then the value of the custoner state/province was incorrect in the vendor panel. Fixed.
 
+[!] Multi-Vendor Plus: Add-ons: Advanced products import: Common products for vendors: Vendor could create common products when import was made via common preset. Fixed
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Exim: Import of the offers for common product by vendors was ignoring the "Import strategy" preset settings. Fixed.
+
 [!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: The selection of common products in the vendor panel did not work. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for Vendors: Vendors: Mobile application: Products of a vendor weren't shown on his/her page, if all the products were created as variations of the common product. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: When a common product was sold by vendors, admin could still change its owner to one of the vendors, causing duplicate products to appear. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: Accounting: Order changes were incorrectly shown in the payout information. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct customer-to-Vendor Payments: Customer's cart was cleared when admin was logging in as this customer with the add-on enabled. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: Items were not removed from the Wishlist. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: Shipping total cost in the pop-up shipping calculation window did not change when choosing a different option. Fixed
+
+[!] Multi-Vendor Plus: Add-ons: Vendor plans: Commissions by category: Errors appeared on the server when placing an order with zero price. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Vendor Privileges: Usergroups: When a vendor was created from a customer account, the vendor usergroup was not assigned to the vendor. Fixed
+
+[!] Multi-Vendor Plus: Add-ons: Vendor Rating: The value of the "Manual vendor plan rating" field in the vendor plan settings was not saved. Fixed.
+
+[!] Multi-Vendor Ultimate: Add-ons: Order fulfillment by marketplace [Beta]: A notification about changing vendor plan appeared after a new vendor registered. Fixed.
+
+[!] Multi-Vendor Ultimate: Add-ons: Order fulfillment by marketplace [Beta]: When switch to another vendor plan included change in availability to the fulfillment, a notification about this did not appear properly. Fixed.
 
 [!] Multi-Vendor Ultimate: Products: Brands page could show brands unavailable on the current storefront. Fixed.
 
