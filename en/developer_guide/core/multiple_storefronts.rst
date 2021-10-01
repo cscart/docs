@@ -334,7 +334,11 @@ Use the ``Settings`` class to manage settings on the code level—this class has
 Defining Storefront URL
 =======================
 
-Storefronts can use a separate domain or a subfolder of the main domain. This is specified in the **Storefront URL** and **Secure storefront URL** (for HTTPS) settings. All the logic that handles defining storefront URLs is located in the **fn_init_store_params_by_host** function. 
+Storefronts can use a separate domain or a subfolder of the main domain. This is specified in the **Storefront URL** and **Secure storefront URL** (for HTTPS) settings. Refer to the ``Tygh::$app['storefront']`` container to define storefront URLs. For example::
+
+  # Getting array-based information about the active storefront.
+  $storefront = Tygh::$app['storefront'];
+  fn_print_r($storefront->toArray());
 
 For the storefronts to work properly, configure your web server to make **index.php** process all the requests sent to nonexistent addresses.
 
