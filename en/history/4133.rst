@@ -1,0 +1,243 @@
+************************
+CS-Cart 4.13.3 Changelog
+************************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Maps and geolocation: A map has been added to check the correctness of the API key on the add-on settings page.
+
+[+] Add-ons: Mobile application: You can now select a ready-made color preset for your mobile application in the add-on settings.
+
+[+] Add-ons: Product reviews: Product Variations: Now you can share reviews between variations shown as separate products on the storefront.
+
+[+] Mobile application: Now if the storefront is closed, a message about the temporary closed store appears.
+
+[+] Multi-Vendor: Add-ons: Stripe Connect payments: Marketplace name and order number have been added to the payments description.
+
+[+] Multi-Vendor: Add-ons: Vendor Data premoderation: Vendors: Now administrators receive notifications about a new vendor when automatic account approval enabled.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: Mobile application: The settings of the mobile application are now split into 2 tabs: the settings that require releasing a new version of the app, and the settings that can be changed on the fly.
+
+[*] Mobile application: Two new product statuses were added: "Requires approval" and "Disapproved".
+
+[*] Multi-Vendor: Add-ons: Vendor data premoderation: The settings interface has been updated.
+
+[*] Multi-Vendor: Store setup wizard: The "Vendors" section was redesigned.
+
+[*] Multi-Vendor: Storefronts: Languages: It is now impossible to select a default storefront language if it is not available for that storefront.
+
+=========
+Bug Fixes
+=========
+
+[!] API: Shipments: There was no way to update existing shipment via API. Fixed.
+
+[!] API: When the redirect to storefronts of another region was enabled, the API did not work correctly. Fixed
+
+[!] Add-ons: Advanced products import: Images delimiter settings was hidden for CSV files. Fixed.
+
+[!] Add-ons: Advanced products import: When products during import were skipped because of mismatch to the "Import strategy" setting, then these skipped products were not taken into account in the import report. Fixed.
+
+[!] Add-ons: Call requests: The "Buy now with 1-click" button was shown on the product list if the product was out of stock and had options. Fixed.
+
+[!] Add-ons: E-mail marketing: There was an increased load on the server during mailing via the MailChimp service. Fixed.
+
+[!] Add-ons: Gift certificates: The table with the list of gift certificates went beyond the page border if the "From" and "To" fields had long values. Fixed.
+
+[!] Add-ons: Gift certificates: When viewing order details, the tax amount was shown incorrectly in some cases. Fixed.
+
+[!] Add-ons: Google sitemap: An error appeared while submitting the sitemap to Google. Fixed.
+
+[!] Add-ons: Maps and geolocation: Shipping cost on product pages was not affected by the rate areas. Fixed.
+
+[!] Add-ons: Message center: Notifications were not sent to the notification center if the old email templates editing mode was set. Fixed.
+
+[!] Add-ons: Message center: Some links did not work on the storefront. Fixed.
+
+[!] Add-ons: PDF Documents: For some languages in Safari browser PDF files were downloaded with incorrect encoding in name. Fixed
+
+[!] Add-ons: Product reviews: With the "Show this tab in a popup window" checkbox enabled, the "With photo" checkbox broke the reviews popup. Fixed.
+
+[!] Add-ons: Product Variations: API: It was possible to create a variation group based on features with ineligible purposes. Fixed.
+
+[!] Add-ons: Product Variations: Features: It was impossible to add new category to the feature with "Variations as one product" as a purpose if products had any category other than the feature's one. Fixed.
+
+[!] Add-ons: Product Variations: Switching between options and variations did not work in the quick view. Fixed.
+
+[!] Add-ons: Product Variations: When you clicked "Save" on the "Variations" tab, the product changes didn't save. Fixed.
+
+[!] Add-ons: SEO: Blog: Pages with non-latin title didn't open on the storefront. Fixed
+
+[!] Add-ons: SEO: In some cases, when the "Show additional language in the URL" setting was enabled, the fields in the dialog boxes were in a language other than the selected one. Fixed.
+
+[!] Add-ons: SEO: Product features: Feature code may not affect JSON+LD microformat on the products pages. Fixed.
+
+[!] Add-ons: SEO: When creating a 301 redirect with the Custom type, slashes in the URL were automatically cut off. Fixed.
+
+[!] Add-ons: SEO: When using a hidden language, it was impossible to preview a product. Fixed.
+
+[!] Add-ons: Social login: A PHP notice could appear on the homepage. Fixed.
+
+[!] Add-ons: Social login: There were buttons for adding social networks to the profile on the registration page for an unauthorized users instead of buttons for social login. Fixed.
+
+[!] Add-ons: Stores and pickup points: Only 10 cities were shown on the storefront in the dropdown select field. Fixed.
+
+[!] Add-ons: Suppliers: If the default country was not specified in the settings, then the State/Province field was not shown when creating a supplier. Fixed.
+
+[!] Add-ons: Suppliers: Notifications: There were non-working settings for sending notifications in the add-on. Fixed.
+
+[!] Add-ons: The button to disable all add-ons did not work. Fixed.
+
+[!] Add-ons: Warehouses [Beta]: Import: When importing a product with a quantity not for all warehouses, the total quantity of the product was calculated incorrectly. Fixed.
+
+[!] Admin panel: Orders: Some items weren't shown in the context menu when viewed on a screen with a width less than 770px. Fixed.
+
+[!] Administration: Logs: Wrong record type was shown in advanced search form. Fixed.
+
+[!] Administration: Storage:  An incorrect link to the AWS website was shown in the CDN settings. Fixed
+
+[!] Bottom panel: A link to the admin panel could lead to a page inaccessible for users. Fixed.
+
+[!] Cart: Product prices didn't take into account promotions applied at "Cart content" block. Fixed.
+
+[!] Cart: Promotions: Authorized customer couldn't choose another product option from the promotion. Fixed.
+
+[!] Categories: In some cases, deleting all categories didn't create the "trash-category". Fixed.
+
+[!] Core: If a % sign was  in the search request, then an error appeared during reloading the page with AJAX. Fixed.
+
+[!] Core: Images: When the "lazy_thumbnails" tweak was enabled, image links could be incorrect. Fixed.
+
+[!] Core: When using HTTP authentication, a PHP error could appear. Fixed.
+
+[!] Design: Blocks: The list of blocks was not updated when deleting a block using a gear. Fixed.
+
+[!] Design: Checkout: The phone number was displayed incorrectly in RTL languages. Fixed.
+
+[!] Design: User groups: When changing the status of a user group, an incorrect option "Notify Customer" was displayed. Fixed.
+
+[!] Export/Import: If there were brackets in the name of a group of features, the features could be imported incorrectly. Fixed.
+
+[!] Layouts: Information about the new layout, copied from the main layout, could be misunderstood. Fixed.
+
+[!] Mobile application: Downloadable products could be "Out of stock". Fixed.
+
+[!] Mobile application: Product cards were displayed incorrectly on some devices. Fixed.
+
+[!] Mobile application: Scrolling did not work  on some devices when viewing pages in the WebView. Fixed.
+
+[!] Mobile application: Some texts were displayed in a wrong language. Fixed
+
+[!] Mobile application: The app didn't work on the first launch. Fixed.
+
+[!] Multi-Vendor: Accounting: The current vendor balance didn't change after the administrator declined the payment. Fixed.
+
+[!] Multi-Vendor: Add-ons: Comments and reviews: Creation of the new vendor linked this vendor to the store's testimonials, and in case this vendor was deleted, testimonials were deleted too. Fixed.
+
+[!] Multi-Vendor: Add-ons: Gift certificates: A "Gift certificate" bonus could be added to the cart promotion. Fixed.
+
+[!] Multi-Vendor: Add-ons: Google sitemap: The sitemap did not contain links to the vendors microstores. Fixed.
+
+[!] Multi-Vendor: Add-ons: Message center: Thread ID was not displayed on the order page. Fixed
+
+[!] Multi-Vendor: Add-ons: Reward Points: Reward Points added incorrectly for orders with several products from different vendors. Fixed.
+
+[!] Multi-Vendor: Add-ons: Switching between storefronts was available for add-ons that don't support multiple storefronts. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor data premoderation: Products created by the vendor in the mobile application were not affected by the add-on settings. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor locations [Beta]: Location selection didn't work. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor locations [Beta]: Product Filters: The necessary part of filter slider wasn't highlighted. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor plans: A new plan was not created on the edit/add vendor page. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor plans: Exim: Product update via import was skipped if no categories were in the preset and the vendor plan had limitations by categories. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor plans: It was impossible to hide the field with plans on the vendor registration page. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor plans: Vendor commission could be calculated incorrectly if the tax calculation method was based on unit price. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor plans: Some links in the "Vendor plans" add-on were incorrect. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor-to-admin payments: Currencies: The add-on settings ignored the chosen position of the currency symbol relative to the sum. Fixed.
+
+[!] Multi-Vendor: Advanced search: Vendors: If you slowly entered a vendor name, the field lost the focus. Fixed.
+
+[!] Multi-Vendor: Design: Pages: Content of the block with "Vendor Page" as filling didn't update after switching to another vendor microstore. Fixed.
+
+[!] Multi-Vendor: Export/Import: Quantity discounts: There was an opportunity to create a user group by importing quantity discounts under the vendor's account. Fixed
+
+[!] Multi-Vendor: Promotions: Shipping methods: Vendor shipping methods were not available to the marketplace administrator in promotions. Fixed.
+
+[!] Multi-Vendor: Settings: Storefronts: Storefront settings were ignored and unchangeable, when storefront was the last one. Fixed.
+
+[!] Multi-Vendor: Store setup wizard: In some cases, the "Enable Inventory tracking" setting did not work. Fixed.
+
+[!] Multi-Vendor: Users: Profiles: If customer country was not the default country, then the value of the custoner state/province was incorrect in the vendor panel. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Advanced products import: Common products for vendors: Vendor could create common products when import was made via common preset. Fixed
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Exim: Import of the offers for common product by vendors was ignoring the "Import strategy" preset settings. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: The selection of common products in the vendor panel did not work. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for Vendors: Vendors: Mobile application: Products of a vendor weren't shown on his/her page, if all the products were created as variations of the common product. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: When a common product was sold by vendors, admin could still change its owner to one of the vendors, causing duplicate products to appear. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: Accounting: Order changes were incorrectly shown in the payout information. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct customer-to-Vendor Payments: Customer's cart was cleared when admin was logging in as this customer with the add-on enabled. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: Items were not removed from the Wishlist. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: Shipping total cost in the pop-up shipping calculation window did not change when choosing a different option. Fixed
+
+[!] Multi-Vendor Plus: Add-ons: Vendor plans: Commissions by category: Errors appeared on the server when placing an order with zero price. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Vendor Privileges: Usergroups: When a vendor was created from a customer account, the vendor usergroup was not assigned to the vendor. Fixed
+
+[!] Multi-Vendor Plus: Add-ons: Vendor Rating: The value of the "Manual vendor plan rating" field in the vendor plan settings was not saved. Fixed.
+
+[!] Multi-Vendor Ultimate: Add-ons: Order fulfillment by marketplace [Beta]: A notification about changing vendor plan appeared after a new vendor registered. Fixed.
+
+[!] Multi-Vendor Ultimate: Add-ons: Order fulfillment by marketplace [Beta]: When switch to another vendor plan included change in availability to the fulfillment, a notification about this did not appear properly. Fixed.
+
+[!] Multi-Vendor Ultimate: Products: Brands page could show brands unavailable on the current storefront. Fixed.
+
+[!] Multi-Vendor Ultimate: Themes: Templates: Cache: Sections added by blocks were not shown on one of the storefronts if the storefronts used different themes. Fixed.
+
+[!] Multi-Vendor Ultimate: Orders: Storefronts: In some cases, splitting orders by storefronts didn't work. Fixed.
+
+[!] Products: Compare: Empty "The product was added to your Comparison list" notification could be shown. Fixed.
+
+[!] Products: Features: Irrelevant warnings about unavailable feature appeared when moving a product to another category. Fixed.
+
+[!] Products: Options: The option in the shared product was shown even if it was not available for the storefront. Fixed.
+
+[!] Products: Out of stock notification was sent when the product status was 'Disabled' or "Hidden". Fixed.
+
+[!] Products: Products detailed description editor: The interface wasn't fully translated into Russian. Fixed
+
+[!] Profile fields: The "First name" and "Last name" fields were not taken into account when sending to an additional shipping address. Fixed.
+
+[!] REST API: Products: Features: When updating some features via the API, the values of the features were not updated. Fixed.
+
+[!] Settings: Storefronts: Companies: Storefront picker didn't appear on some settings pages. Fixed
+
+[!] Shipping methods: Disabled rate areas were not marked in the settings of shipping method. Fixed.
+
+[!] Storefronts: Languages: If a language was disabled in the storefront, it could be unavailable on the admin panel. Fixed.
+
+[!] Storefronts: Languages: In some cases, the default storefront language could be unavailable for the storefront. Fixed.
+
+[!] Storefronts: It was impossible to scroll the list of countries in CS-Cart Ultimate. Fixed.
+
+[!] UI/UX: On iPhone, the page zoomed in after closing the dialog window in which the field was set to autofocus. Fixed.
