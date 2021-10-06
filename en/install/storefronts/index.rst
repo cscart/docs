@@ -9,4 +9,6 @@ A single installation of CS-Cart Ultimate or Multi-Vendor Ultimate can work on m
     :titlesonly:
     :glob:
 
-    *
+    configure_cpanel
+    configure_plesk12
+    configure_mycloud

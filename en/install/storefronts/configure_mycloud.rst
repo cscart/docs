@@ -1,12 +1,12 @@
-*******************************************************
-How To: Configure Multiple Storefronts at Cloud Hosting
-*******************************************************
+***************************************************************
+How To: Configure Multiple Storefronts on CS-Cart Cloud Hosting
+***************************************************************
 
 .. note::
 
     Here is :doc:`more information about storefronts </user_guide/stores/index>` in CS-Cart and Multi-Vendor. You only need one CS-Cart or Multi-Vendor installation to manage all your storefronts.
 
-This article describes how to configure multiple storefronts on CS-Cart `cloud hosting <https://www.cs-cart.com/cloud-hosting.html>`_.
+This article describes how to configure multiple storefronts on `CS-Cart cloud hosting <https://www.cs-cart.com/cloud-hosting.html>`_.
 
 ===============================
 Step 1. Configure Cloud Hosting
