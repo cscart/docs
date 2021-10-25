@@ -86,6 +86,7 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     tags/index
     vendor_data_premoderation/index
     vendor_debt_payout/index
+    vendor_panel_configurator/index
     vendor_locations/index
     vendor_plans/index
     commissions_by_category/index

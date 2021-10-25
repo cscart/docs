@@ -34,6 +34,7 @@
     edost/index
     maps_and_geolocation/index
     data_feeds/index
+    vendor_panel_configurator/index
     buy_together/index
     form_builder/index
     stores_and_pickup_points/index
