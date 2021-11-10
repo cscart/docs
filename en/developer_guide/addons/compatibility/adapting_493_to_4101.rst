@@ -179,6 +179,8 @@ Spectrum Colorpicker Library Upgrade
 
 CS-Cart now uses Spectrum Colorpicker v1.8.0 instead of the legacy v1.0.9.
 
+.. _en-function-description:
+
 --------------------
 Shipping Calculation
 --------------------

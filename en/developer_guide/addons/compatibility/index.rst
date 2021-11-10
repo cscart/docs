@@ -6,6 +6,12 @@ Version Compatibility
     :maxdepth: 1
     :glob:
 
+    adapting_4133_to_4141
+
+.. toctree::
+    :maxdepth: 1
+    :glob:
+
     adapting_4122_to_4131
     adapting_4131_to_4132
     adapting_4132_to_4133
