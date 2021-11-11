@@ -179,7 +179,7 @@
 
 Теперь в CS-Cart используется Spectrum Colorpicker v1.8.0 вместо устаревшей v1.0.9.
 
-.. _ru-function-description:
+.. _ru-cartcontent-4141:
 
 -------------------------
 Расчёт стоимости доставки
