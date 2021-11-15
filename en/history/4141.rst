@@ -66,8 +66,6 @@ Functionality Changes
 
 [*] Multi-Vendor: Store setup wizard: Redesigned the Vendors section.
 
-[*] Multi-Vendor: Store setup wizard: Redesigned the Vendors section.
-
 [*] Multi-Vendor: Storefronts: Languages: It is now impossible to select a default storefront language if it is not available for that storefront.
 
 [*] Multi-Vendor: Vendor panel: Products: The "Add product" button on the product list in the vendor panel now also has a link to product import.
