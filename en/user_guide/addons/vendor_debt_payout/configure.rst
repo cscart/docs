@@ -14,6 +14,12 @@ Install the Vendor-to-Admin Payments add-on :doc:`just like any other add-on </u
 
       To allow different values for different vendor plans, click the button next to the settings.
 
+* Choose taxes to be included to vendor payments. Here you can see :doc:`all the taxes </user_guide/shipping_and_taxes/taxes/index>` created on the **Administration → Shipping & taxes → Taxes** page.
+
+  .. note::
+
+      The setting first appeared in Multi-Vendor 4.14.1.
+
 * Decide what restrictions to apply to suspended vendors: hide their products and/or block their admin panels.
 
 * Decide whether to completely disable accounts of those vendors who don't pay their debts for a long time (and when to disable them).
