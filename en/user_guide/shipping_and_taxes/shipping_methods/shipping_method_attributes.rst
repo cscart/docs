@@ -12,10 +12,6 @@ All shipping methods can be split into 2 groups, depending on how the rates are 
 General
 =======
 
-* **Name**—the name of the shipping method as it appears on the storefront.
-
-* **Description**—detailed description of the shipping method.
-
 * **Rate calculation**—the way how the shipping cost will be calculated:
   
   * **Manual (by rate areas)**—it is based on the tables with charges and rates. You define those rates in the **Shipping time and rates** tab on the shipping method editing page (appears for shipping methods that have been already created).
@@ -29,16 +25,38 @@ General
   .. note::
 
         Carrier-specific settings are defined in the **Configure** tab.
-		
-* **Delivery time**—the time it takes to deliver an order. This info is displayed on the storefront, so that customers can decide if the delivery time meets their requirements.
+
+* **Shipping service**—shipping services provided by the carrier. Carrier—the online service or a carrier API that will be used for rate calculation. The **Shipping service** setting is available only if **Rate calculation** is set to any variant of *Real-time (automatic)*.
+
+* **Name**—the name of the shipping method as it appears on the storefront.
 
 * **Status**—the status of the shipping method: **Active** or **Disabled**.
 
-* **Weight limit**—the minimum and maximum weight of the order that can be delivered via this method. If an order doesn’t meet the weight requirements, then this shipping method won’t be offered to the customer.
+* **Icon**—an image to represent the shipping method.
+
+  You can upload an icon from your computer, find it on the server, or provide a URL to the image.  Make sure to enter the alternative text that’ll appear when the icon is missing or can’t be displayed. Specifying alternative texts is good for `SEO <https://en.wikipedia.org/wiki/Search_engine_optimization>`_.
+
+  Images must be of one of the following formats only: JPEG, GIF, PNG. The maximum size of an uploaded image depends on your server configuration.  As a rule, it should not exceed 2 MB.
+
+  .. note::
+
+      Shipping method icons appear on the storefront in a special **Shipping methods** block. You can create this block on the **Design → Layouts page**.
+
+* **Delivery time**—the time it takes to deliver an order. This info is displayed on the storefront, so that customers can decide if the delivery time meets their requirements.
+
+* **Description**—detailed description of the shipping method.
 
 * **User groups**—the user groups, the members of which will be able choose this shipping method at checkout.
 
-* **Shipping service**—shipping services provided by the carrier. Carrier—the online service or a carrier API that will be used for rate calculation. The **Shipping service** setting is available only if **Rate calculation** is set to any variant of *Real-time (automatic)*.
+* **Weight limit**—the minimum and maximum weight of the order that can be delivered via this method. If an order doesn’t meet the weight requirements, then this shipping method won’t be offered to the customer.
+
+.. note ::
+
+     The following settings are available only in CS-Cart Multi-Vendor.
+
+* **Owner**—a marketplace or a vendor who is assigned a delivery method. By default, the owner is the marketplace.
+
+* **Use for all new vendors**—tick the checkbox to make the shipping method automatically available for all new vendors.
 
 =========
 Configure
@@ -94,16 +112,6 @@ Click the **Recalculate rates** button to find out the shipping cost. The calcul
 Additional settings
 ===================
 
-* **Icon**—an image to represent the shipping method.
-
-  You can upload an icon from your computer, find it on the server, or provide a URL to the image.  Make sure to enter the alternative text that’ll appear when the icon is missing or can’t be displayed. Specifying alternative texts is good for `SEO <https://en.wikipedia.org/wiki/Search_engine_optimization>`_.
-
-  Images must be of one of the following formats only: JPEG, GIF, PNG. The maximum size of an uploaded image depends on your server configuration.  As a rule, it should not exceed 2 MB.
-
-  .. note::
-
-      Shipping method icons appear on the storefront in a special **Shipping methods** block. You can create this block on the **Design → Layouts page**.
-	  
 * **Taxes**—the tax rates that apply to the shipping method.
 
 * **Customer must specify his/her address**—tick the box if you want customers to specify their addresses.
