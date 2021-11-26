@@ -28,7 +28,9 @@ The add-on allows the marketplace owner to make his own formula for calculating 
 Assign the Rating Manually
 ++++++++++++++++++++++++++
 
-Let's say you want to bring the products of some vendor higher in the list, or increase the rating of vendors who use premium vendor plans. The add-on allows you to set some variables manually: You can do this:
+Let's say you want to bring the products of some vendor higher in the list, or increase the rating of vendors who use premium vendor plans. The add-on allows you to set some variables manually.
+
+You can do this:
 
 * in the settings of any :doc:`vendor </user_guide/users/vendors/index>`;
 
