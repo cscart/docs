@@ -18,9 +18,9 @@ New Features and Improvements
 
 [+] Mobile application: Now vendors can change product features via the application.
 
-[+] Multi-Vendor: Add-ons: Stripe Connect: Express account onboarding was implemented.
+[+] Multi-Vendor: Add-ons: Stripe Connect payments: Express account onboarding was implemented.
 
-[+] Multi-Vendor: Add-ons: Vendor debt payout: The option to collect taxes from vendor's balance refill transaction was added.
+[+] Multi-Vendor: Add-ons: Vendor-to-admin payments: The option to collect taxes from vendor's balance refill transaction was added.
 
 [+] Multi-Vendor: Add-ons: Vendor panel configurator: The new add-on that simplifies vendor panel was added.
 
@@ -56,7 +56,7 @@ Functionality Changes
 
 [*] Multi-Vendor: Design: Blocks: Shipping methods: An ability to edit text of the "No shipping required" notification and to turn this notification off on the checkout page was added.
 
-[*] Multi-Vendor: Store setup wizard: Redesigned the Vendors section.
+[*] Multi-Vendor: Marketplace setup wizard: Redesigned the Vendors section.
 
 [*] Multi-Vendor: Vendor panel: Products: The "Add product" button on the product list in the vendor panel now also has a link to product import.
 
@@ -86,21 +86,15 @@ Bug Fixes
 
 [!] Add-ons: Product Variations: Warehouses: Default variation did not change when product was out of stock in the warehouse. Fixed.
 
-[!] Add-ons: Product Variations: Design: The table crossed page borders if the vendor had a long name. Fixed.
-
 [!] Add-ons: Product Variations: Products: After a product was saved, its name was displayed in the language of the admin panel, not in the language of the content. Fixed.
 
 [!] Add-ons: Stores & pickup points: City selection drop-down list was displayed incorrectly in RTL language. Fixed.
 
 [!] Add-ons: Stripe payments: The Czech Republic, Malta and other countries were added to the list of supported countries.
 
-[!] Add-ons: Storefront REST API: It was possible to update required profile fields with empty values. E-mail field was not validated. Fixed.
-
-[!] Add-ons: Vendor data premoderation: An error occurred while editing an order. Fixed.
-
 [!] Add-ons: Warehouses: There was an error at checkout if negative quantity of product in stock was allowed. Fixed.
 
-[!] Add-ons: Warehouses: When product cart cart contained more items than the nearest warehouse, the warning about shipping delay wasn't shown. Fixed.
+[!] Add-ons: Warehouses: When product cart contained more items than the nearest warehouse, the warning about shipping delay wasn't shown. Fixed.
 
 [!] Add-ons: Warehouses: Export/Import: Import of products quantity didn't work if the product wasn't split by the warehouses before. Fixed.
 
@@ -112,7 +106,7 @@ Bug Fixes
 
 [!] Cart: Choosing product options changed the order of items in the cart. Fixed
 
-[!] Cart: Shippings methods: The State/Province field was disappeared when changing the country. Fixed.
+[!] Cart: Shippings methods: The State/Province field disappeared when changing the country. Fixed.
 
 [!] Categories: In some cases, when deleting categories, the "trash-category" might not be created. Fixed.
 
@@ -122,7 +116,7 @@ Bug Fixes
 
 [!] Checkout: Shipping methods: When the "Show unavailable shippings" setting was enabled and there was no available shipping method for the rate area, customers saw the "Checkout" button. Fixed.
 
-[!] Core: Checkout: Profile fields: Billing address fields were displayed incorrectly in some cases, and they could not be removed from the order. Fixed.
+[!] Checkout: Profile fields: Billing address fields were displayed incorrectly in some cases, and they could not be removed from the order. Fixed.
 
 [!] Core: The 403 and 404 pages were displayed incorrectly if init controller was extended by the init.pre.php. Fixed.
 
@@ -138,8 +132,6 @@ Bug Fixes
 
 [!] Menus: Checking the active page in the menu did not work correctly. Fixed.
 
-[!] Mobile application: It was impossible to choose different shipping methods for products from different vendors. Fixed.
-
 [!] Mobile application: Status bar color didn't change. Fixed.
 
 [!] Mobile application: The title color for Pages block didn't change. Fixed.
@@ -150,11 +142,9 @@ Bug Fixes
 
 [!] Multi-Vendor: API: Products: Vendor could update or delete products of another vendor via API. Fixed.
 
-[!] Multi-Vendor: Add-ons: Common products for vendors: Common products was not displayed in search results within layout blocks. Fixed.
-
-[!] Multi-Vendor: Add-ons: Common products for vendors: Vendor prices were displayed on product page even if "Hide price and the Add to cart button" setting was selected. Fixed.
-
 [!] Multi-Vendor: Add-ons: Direct Customer-to-Vendor Payments: Orders: When creating an order from the admin panel, the current user was always assigned to the customer. Fixed.
+
+[!] Multi-Vendor: Add-ons: Product Variations: Design: The table crossed page borders if the vendor had a long name. Fixed.
 
 [!] Multi-Vendor: Add-ons: RMA: Product price could be incorrect at creating return page. Fixed.
 
@@ -170,6 +160,8 @@ Bug Fixes
 
 [!] Multi-Vendor: Add-ons: Stripe Connect payments: When 3-D Secure was enabled, the marketplace fee was calculated incorrectly. Fixed.
 
+[!] Multi-Vendor: Add-ons: Vendor data premoderation: An error occurred while editing an order. Fixed.
+
 [!] Multi-Vendor: Add-ons: Vendor data premoderation: Dashboard: Products from pending vendors were not taken into account in the "Products on moderation" block. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor data premoderation: Menu for vendor moderation was not displayed when only approval of newly-created vendors setting was on. Fixed.
@@ -181,6 +173,8 @@ Bug Fixes
 [!] Multi-Vendor: Checkout: It was impossible to buy products from different vendors when some of these vendors did not use shipping methods. Fixed.
 
 [!] Multi-Vendor: Menu: An incorrect tab was highlighted in the vendor panel menu. Fixed.
+
+[!] Multi-Vendor: Mobile application: It was impossible to choose different shipping methods for products from different vendors. Fixed.
 
 [!] Multi-Vendor: Shipping methods: Vendors: If product had the free shipping option enabled, but the shipping itself had not, an incorrect error message was shown on the checkout page. Fixed.
 
@@ -198,11 +192,13 @@ Bug Fixes
 
 [!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Common products was not displayed in search results within layout blocks. Fixed.
 
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors: Vendor prices were displayed on product page even if "Hide price and the Add to cart button" setting was selected. Fixed.
+
 [!] Multi-Vendor Ultimate: Add-ons: Order fulfillment by marketplace: Order taxes has been calculated incorrectly. Fixed.
 
 [!] Orders: Shipments: Extra characters were displayed in the button name. Fixed.
 
-[!] Pages: Sitemap: Link pages were showed on the sitemap. Fixed.
+[!] Pages: Sitemap: Link pages were shown on the sitemap. Fixed.
 
 [!] Performance: Fonts: The text was not displayed until the custom font was loaded. Fixed.
 
