@@ -8,6 +8,8 @@ New Features and Improvements
 
 [+] Add-ons: Product Bundles: The new add-on was added.
 
+[+] Add-ons: Landing pages from Tilda: A new addon for integrating CS-Cart with Tilda pages was added.
+
 [+] Document editor: The tax number was added to company variables.
 
 [+] Mobile application: Support for the Product Reviews add-on was added.
@@ -15,8 +17,6 @@ New Features and Improvements
 [+] Mobile application: Ability to sing in via Facebook was added for iOS devices.
 
 [+] Mobile application: Now vendors can change product features via the application.
-
-[+] Multi-Vendor: Add-ons: Booking: Added new add-on for booking.
 
 [+] Multi-Vendor: Add-ons: Stripe Connect: Express account onboarding was implemented.
 
@@ -38,6 +38,8 @@ New Features and Improvements
 
 [+] Shipping methods: Percentage option for rate surcharge or discount was added.
 
+[+] Users: You can now allow users to request removal of their account from the profile page. The button is displayed if you enable it in the Settings → General section.
+
 [+] UI/UX: Storefronts: The element for mass selection of entities for currencies and languages was changed.
 
 [+] UX / UI: Elements of bulk property selection were changed.
@@ -48,7 +50,9 @@ Functionality Changes
 
 [*] Add-ons: Product reviews: Performance: On the product detail page, the number of database queries has been reduced.
 
-[*] Multi-Vendor: Core: Shipping methods: An ability to enable common shipping methods for new vendors automatically was added.
+[*] Add-ons: RMA: Payment surcharge cannot be returned anymore.
+
+[*] Multi-Vendor: Shipping methods: An ability to enable common shipping methods for new vendors automatically was added.
 
 [*] Multi-Vendor: Design: Blocks: Shipping methods: An ability to edit text of the "No shipping required" notification and to turn this notification off on the checkout page was added.
 
@@ -62,7 +66,11 @@ Bug Fixes
 
 [!] Add-ons: Filtering by "With photo" options did not work correctly if the product did not have reviews with images. Fixed.
 
+[!] Add-ons: GDPR Compliance: Comments and reviews: PHP errors occurred while exporting user XML data. Fixed.
+
 [!] Add-ons: Gift certificates: If a non-breaking space was used in the certificate amount, it was displayed as a code. Fixed.
+
+[!] Add-ons: Google Analytics: Product data was not recorded in the transaction information using the Universal code. Fixed.
 
 [!] Add-ons: Maps and geolocation: When the showing of shipping cost and time on product pages was enabled in the add-on settings, then there was a notification on the storefront that the product with zero price has not been added to the cart.
 
@@ -86,6 +94,8 @@ Bug Fixes
 
 [!] Add-ons: Stripe payments: The Czech Republic, Malta and other countries were added to the list of supported countries.
 
+[!] Add-ons: Storefront REST API: It was possible to update required profile fields with empty values. E-mail field was not validated. Fixed.
+
 [!] Add-ons: Vendor data premoderation: An error occurred while editing an order. Fixed.
 
 [!] Add-ons: Warehouses: There was an error at checkout if negative quantity of product in stock was allowed. Fixed.
@@ -102,13 +112,17 @@ Bug Fixes
 
 [!] Cart: Choosing product options changed the order of items in the cart. Fixed
 
+[!] Cart: Shippings methods: The State/Province field was disappeared when changing the country. Fixed.
+
 [!] Categories: In some cases, when deleting categories, the "trash-category" might not be created. Fixed.
 
 [!] Categories: The bulk edit page of the selected categories was opened when pressing Enter. Fixed.
 
-[!] Core: Checkout: Profile fields: Billing address fields were displayed incorrectly in some cases, and they could not be removed from the order. Fixed.
+[!] Checkout: Customer email was lost during checkout in some cases. Fixed.
 
-[!] Core: Customers could create users with duplicated @ symbol in the E-mail field. Fixed.
+[!] Checkout: Shipping methods: When the "Show unavailable shippings" setting was enabled and there was no available shipping method for the rate area, customers saw the "Checkout" button. Fixed.
+
+[!] Core: Checkout: Profile fields: Billing address fields were displayed incorrectly in some cases, and they could not be removed from the order. Fixed.
 
 [!] Core: The 403 and 404 pages were displayed incorrectly if init controller was extended by the init.pre.php. Fixed.
 
@@ -118,7 +132,11 @@ Bug Fixes
 
 [!] Design: Products: Context menu: The text and checkboxes were on different levels when selecting the editable fields of the selected items. Fixed.
 
+[!] Export/Import: If there was a space between category and feature name, features were imported incorrectly. Fixed.
+
 [!] Help Section: The display of blocks in columns was not always correct. Fixed.
+
+[!] Menus: Checking the active page in the menu did not work correctly. Fixed.
 
 [!] Mobile application: It was impossible to choose different shipping methods for products from different vendors. Fixed.
 
@@ -130,11 +148,33 @@ Bug Fixes
 
 [!] Multi-Vendor: Orders: Buying products from different vendors without shipping required could cause orders in which vendors did not match their products. Fixed.
 
+[!] Multi-Vendor: API: Products: Vendor could update or delete products of another vendor via API. Fixed.
+
+[!] Multi-Vendor: Add-ons: Common products for vendors: Common products was not displayed in search results within layout blocks. Fixed.
+
+[!] Multi-Vendor: Add-ons: Common products for vendors: Vendor prices were displayed on product page even if "Hide price and the Add to cart button" setting was selected. Fixed.
+
+[!] Multi-Vendor: Add-ons: Direct Customer-to-Vendor Payments: Orders: When creating an order from the admin panel, the current user was always assigned to the customer. Fixed.
+
+[!] Multi-Vendor: Add-ons: RMA: Product price could be incorrect at creating return page. Fixed.
+
+[!] Multi-Vendor: Add-ons: RMA: Shipping tax could be returned after refund, even if shipping cost was not. Fixed.
+
+[!] Multi-Vendor: Add-ons: RMA: Promotions: Return amount could be calculated incorrectly when taxes were calculated by unit price. Fixed.
+
+[!] Multi-Vendor: Add-ons: RMA: Vendor plans: Payouts were calculated incorrectly if order was paid by payment method with taxed payment surcharge. Fixed.
+ 
 [!] Multi-Vendor: Add-ons: Stores and pickup points: Warehouses: Vendor could see total amount of stores and warehouses in marketplace. Fixed.
 
 [!] Multi-Vendor: Add-ons: Stores and pickup points: Warehouses: Vendors could see other users' warehouses and couldn't set the write-off priority of goods. Fixed.
 
+[!] Multi-Vendor: Add-ons: Stripe Connect payments: When 3-D Secure was enabled, the marketplace fee was calculated incorrectly. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor data premoderation: Dashboard: Products from pending vendors were not taken into account in the "Products on moderation" block. Fixed.
+
 [!] Multi-Vendor: Add-ons: Vendor data premoderation: Menu for vendor moderation was not displayed when only approval of newly-created vendors setting was on. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor data premoderation: The update of the downloaded file did not change the product status to "requiring moderation". Fixed.
 
 [!] Multi-Vendor: Add-ons: Watermarks: When importing products, the add-on settings were reset. Fixed.
 
@@ -142,17 +182,25 @@ Bug Fixes
 
 [!] Multi-Vendor: Menu: An incorrect tab was highlighted in the vendor panel menu. Fixed.
 
+[!] Multi-Vendor: Shipping methods: Vendors: If product had the free shipping option enabled, but the shipping itself had not, an incorrect error message was shown on the checkout page. Fixed.
+
 [!] Multi-Vendor: Users: The "Password validity period in days" setting worked incorrectly. Fixed.
 
 [!] Multi-Vendor: Vendors: Accounting: The expand button didn't work on mobile devices. Fixed.
 
 [!] Multi-Vendor: Vendors: Profiles: The default state value was not displayed for the new customer in the vendor panel. Fixed.
 
+[!] Multi-Vendor: Vendors: Users: The button for saving changes was shown on the page for editing customer's account in the vendor panel. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Vendor Plans: Commissions by category: Gift certificates: Vendor's balance was refilled when the order was fully paid by gift certificate. Fixed.
+
 [!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: The minimum price for a common product could be based on the price of a vendor linked to one storefront. Fixed.
 
 [!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Common products was not displayed in search results within layout blocks. Fixed.
 
-[!] Multi-Vendor Plus: Add-ons: Add-ons: Direct Customer-to-Vendor Payments: Orders: When creating an order from the admin panel, the current user was always assigned to the customer. Fixed.
+[!] Multi-Vendor Ultimate: Add-ons: Order fulfillment by marketplace: Order taxes has been calculated incorrectly. Fixed.
+
+[!] Orders: Shipments: Extra characters were displayed in the button name. Fixed.
 
 [!] Pages: Sitemap: Link pages were showed on the sitemap. Fixed.
 
@@ -174,8 +222,18 @@ Bug Fixes
 
 [!] Promotions: Some promotion conditions were not displayed when editing a promotion. Fixed.
 
+[!] SEO: Some SEO analyzers detected page changes due to HTML code of a page being different on every page load. Fixed.
+
 [!] Settings: The notification about changing the global/individual settings did not appear when leaving the page. Fixed.
 
+[!] Settings: Checkout: The "States" field was required on the Settings → Checkout page. Fixed.
+
 [!] Statuses: Emails: Out of date notification settings were displayed in the order status settings. Fixed.
+
+[!] Storefronts: An admin linked to a specific storefront could still have access for managing the data from other storefronts. Fixed.
+
+[!] Taxes: Rate areas: The new rate area did not appear in the settings of the existing taxes. Fixed.
+
+[!] Users: Customers could create users with duplicated @ symbol in the E-mail field. Fixed.
 
 [!] WYSIWYG: Redactor II: The HTML redactor did not work if the Brazilian Portuguese language was selected. Fixed.
