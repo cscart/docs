@@ -185,9 +185,9 @@
 #. ::
 
        // Было:
-       \Tygh\Addons\ProductReviews\ProductReview\ImagesService::__construct__construct($max_images_upload = 10)
+       \Tygh\Addons\ProductReviews\ProductReview\ImagesService::__construct($max_images_upload = 10)
        // Стало:
-       \Tygh\Addons\ProductReviews\ProductReview\ImagesService::__construct__construct(array $allowed_extensions, $max_images_upload = 10)
+       \Tygh\Addons\ProductReviews\ProductReview\ImagesService::__construct(array $allowed_extensions, $max_images_upload = 10)
 
 #. ::
 
@@ -210,7 +210,7 @@
 
 #. Получает настройки оформления заказа::
 
-     fn_get_checkout_settings($cart)
+     fn_get_checkout_settings(array $cart)
 
 #. Получает тип характеристики по её ID::
 
@@ -300,7 +300,7 @@
 
 #. Выполняется при создании выплаты продавцу перед изменением статуса заказа. Позволяет менять параметры выплаты продавцу::
 
-     fn_set_hook('direct_payments_change_order_status_before_create_vendor_payout', $order_info, $payouts); 
+     fn_set_hook('direct_payments_change_order_status_before_create_vendor_payout', $status_to, $status_from, $order_info, $force_notification, $order_statuses, $place_order, $payouts );
 
 --------------------
 Устаревшие константы
