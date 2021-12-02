@@ -6,6 +6,8 @@ CS-Cart 4.14.1 Changelog
 New Features and Improvements
 =============================
 
+[+] Add-ons: Banners management: The ability to set the size of images was added for the banner block.
+
 [+] Add-ons: Product Bundles: The new add-on was added.
 
 [+] Add-ons: Landing pages from Tilda: A new addon for integrating CS-Cart with Tilda pages was added.
