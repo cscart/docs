@@ -6,14 +6,6 @@
 
 Если вы в первый раз настраиваете VPS сервер, то рекомендуем начать с изучения с более детальной инструкции: :doc:`Настройка веб-сервера Apache </install/apache>`.
 
-Видео
-=====
-
-|nginx|
-
-.. |nginx| raw:: html
-
-   <iframe width="560" height="315" src="//www.youtube.com/embed/ljLyCC9SIgY" frameborder="0" allowfullscreen></iframe>
 
 Сервер и ресурсы
 ================
