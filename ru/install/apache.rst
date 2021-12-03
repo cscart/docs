@@ -23,10 +23,6 @@
     apache/phpmyadmin
     apache/install
 
-|apache|
 
-.. |apache| raw:: html
-
-   <iframe width="560" height="315" src="//www.youtube.com/embed/yCTTZb-GlwU" frameborder="0" allowfullscreen></iframe>
 
 
