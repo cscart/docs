@@ -235,3 +235,28 @@ Bug Fixes
 [!] Users: Customers could create users with duplicated @ symbol in the E-mail field. Fixed.
 
 [!] WYSIWYG: Redactor II: The HTML redactor did not work if the Brazilian Portuguese language was selected. Fixed.
+
+=============
+Service Packs
+=============
+
+----------
+4.13.1.SP1
+----------
+
+[!] Add-ons: Product variations: Product bundles: Product code wasn't shown on the product list in the admin panel. Fixed.
+
+[!] Add-ons: Stripe payments: When paying with Google Pay, an order was not placed. Fixed.
+
+[!] Add-ons: Warehouses: If you deleted the quantity of a product from all warehouses, then it was shown incorrectly on the product list page. Fixed.
+
+[!] Multi-Vendor: Add-ons: PayPal Commerce Platform: It was not possible to place an order if surcharge was specified for the payment method or a gift certificate was applied. Fixed.
+
+[!] Multi-Vendor: Vendors: Become a vendor: Language variable for email notification template was missing. Fixed.
+
+[!] Multi-vendor Plus: Add-ons: Common products for vendors: If vendors was linked to the storefront, the common products were not shown on the storefront. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: RMA: Vendor plans: Commissions by category: Payouts were calculated incorrectly in some cases. Fixed.
+
+
+
