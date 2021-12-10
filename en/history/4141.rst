@@ -241,7 +241,7 @@ Service Packs
 =============
 
 ----------
-4.13.1.SP1
+4.14.1.SP1
 ----------
 
 [!] Add-ons: Product variations: Product bundles: Product code wasn't shown on the product list in the admin panel. Fixed.
