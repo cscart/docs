@@ -38,6 +38,7 @@
     buy_together/index
     product_bundles/index
     form_builder/index
+    landing_pages_from_tilda/index
     stores_and_pickup_points/index
     vendor_locations/index
     rus_taxes/index
