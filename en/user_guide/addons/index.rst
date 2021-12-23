@@ -35,6 +35,7 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     direct_customer_to_vendor_payments/index
     eBay/index
     email_marketing/index
+    pixel_facebook/index
     form_builder/index
     gdpr/index
     gift_certificates/index
