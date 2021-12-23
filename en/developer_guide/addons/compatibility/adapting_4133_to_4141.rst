@@ -149,13 +149,13 @@ Changed Classes
 New Classes
 -----------
 
-#. ``\Tygh\Enum\FontSubset``—contains unicode range definitions used by Google Fonts in font subsets::
+#. ``\Tygh\Enum\FontSubset``—contains unicode range definitions used by Google Fonts in font subsets.
 
-#. ``\Tygh\Enum\FontType``—contains font types::
+#. ``\Tygh\Enum\FontType``—contains font types.
 
-#. ``\Tygh\Enum\FontWeight``—contains font weights and their numerical representation::
+#. ``\Tygh\Enum\FontWeight``—contains font weights and their numerical representation.
 
-#. ``\Tygh\Enum\OrderStatuses``—contains enumeration of order statuses::
+#. ``\Tygh\Enum\OrderStatuses``—contains enumeration of order statuses.
 
 -----------------
 Changed Functions

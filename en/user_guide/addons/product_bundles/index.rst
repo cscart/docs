@@ -94,7 +94,7 @@ Way 1. From the Marketing → Product bundles Page
               :alt: Creation bundles, *Products* tab
 
 Way 2. From the Product Detail Page
-----------------------------------
+-----------------------------------
 
 #. On the product detail page, go to the *Product bundles* tab.
 

@@ -21,7 +21,7 @@ With Tilda, you can quickly create customized landing pages for different audien
 Installation and Configuration
 ==============================
 
-Install the add-on just like any other add-on. Click on the name of the installed add-on to open its settings:
+Install the add-on just :doc:`like any other add-on </user_guide/addons/1manage_addons>`. Click on the name of the installed add-on to open its settings:
 
 **Public API key**, **Secret API key.** Use the keys from your personal Tilda account to connect Tilda to CS-Cart.
 
