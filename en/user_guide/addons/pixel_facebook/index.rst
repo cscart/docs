@@ -14,6 +14,7 @@ The add-on helps to measure the effectiveness of Facebook and Instagram ads and 
     :backlinks: none
     :local:
 
+=============
 Functionality
 =============
 
@@ -25,6 +26,7 @@ The Facebook pixel allows you to receive the following information about custome
 
 * placed orders.
 
+============================================
 Installation and Configuration of the Add-on
 ============================================
 
@@ -45,10 +47,10 @@ These are the settings responsible for the support of tracked events. Tick the c
 * **track placing order**.
 
 .. image:: img/settings.png
-    :scale: 40 %
     :align: left
     :alt: Add-on settings.
 
+===================================
 Creation and Configuration of Pixel 
 ===================================
 
@@ -82,6 +84,7 @@ If you enter the correct site URL during pixel creation and pixel ID in the add-
     :align: center
     :alt: Overview tab in the Events Manager.
 
+==========================
 Checking Pixel Performance
 ==========================
 
