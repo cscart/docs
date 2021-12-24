@@ -49,7 +49,7 @@
     geolocation/index
     comments_and_reviews/index
     product_reviews/index
-    facebook_pixel/index
+    pixel_facebook/index
     paypal_payments/index
     gift_certificates/index
     hidpi_displays_support/index
