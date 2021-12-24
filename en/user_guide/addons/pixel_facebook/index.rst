@@ -47,7 +47,7 @@ These are the settings responsible for the support of tracked events. Tick the c
 * **track placing order**.
 
 .. image:: img/settings.png
-    :align: left
+    :align: center
     :alt: Add-on settings.
 
 ===================================
