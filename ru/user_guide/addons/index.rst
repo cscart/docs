@@ -39,6 +39,7 @@
     stores_and_pickup_points/index
     vendor_locations/index
     rus_taxes/index
+    access_restrictions/index
     age_verification/index
     common_products/index
     direct_customer_to_vendor_payments/index
