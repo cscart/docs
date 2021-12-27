@@ -8,13 +8,15 @@ All shipping methods can be split into 2 groups, depending on how the rates are 
 
 * :doc:`Real-time shipping methods (automatic) </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/index>` send the relevant order data to third-party services when a customer proceeds to checkout. If the service ships to the specified destination, the shipping method will be available to the customer.
 
+.. _general-tab-shipping-method:
+
 =======
 General
 =======
 
 * **Rate calculation**—the way how the shipping cost will be calculated:
   
-  * **Manual (by rate areas)**—it is based on the tables with charges and rates. You define those rates in the **Shipping time and rates** tab on the shipping method editing page (appears for shipping methods that have been already created).
+  * **Manual (by rate areas)**—it is based on the tables with charges and rates. You define those rates in the **Shipping time and rates** tab on the shipping method editing page (appears for shipping methods that have been already created).
   
     * *By customer's address*—shipping time and rates are calculated by the :doc:`rate area </user_guide/shipping_and_taxes/locations/index>` of the customer's shipping address.
 	
@@ -24,29 +26,29 @@ General
 
   .. note::
 
-        Carrier-specific settings are defined in the **Configure** tab.
+        Carrier-specific settings are defined in the **Configure** tab.
 
 * **Shipping service**—shipping services provided by the carrier. Carrier—the online service or a carrier API that will be used for rate calculation. The **Shipping service** setting is available only if **Rate calculation** is set to any variant of *Real-time (automatic)*.
 
 * **Name**—the name of the shipping method as it appears on the storefront.
 
-* **Status**—the status of the shipping method: **Active** or **Disabled**.
+* **Status**—the status of the shipping method: **Active** or **Disabled**.
 
 * **Icon**—an image to represent the shipping method.
 
-  You can upload an icon from your computer, find it on the server, or provide a URL to the image.  Make sure to enter the alternative text that’ll appear when the icon is missing or can’t be displayed. Specifying alternative texts is good for `SEO <https://en.wikipedia.org/wiki/Search_engine_optimization>`_.
+  You can upload an icon from your computer, find it on the server, or provide a URL to the image.  Make sure to enter the alternative text that’ll appear when the icon is missing or can’t be displayed. Specifying alternative texts is good for `SEO <https://en.wikipedia.org/wiki/Search_engine_optimization>`_.
 
   Images must be of one of the following formats only: JPEG, GIF, PNG. The maximum size of an uploaded image depends on your server configuration.  As a rule, it should not exceed 2 MB.
 
   .. note::
 
-      Shipping method icons appear on the storefront in a special **Shipping methods** block. You can create this block on the **Design → Layouts page**.
+      Shipping method icons appear on the storefront in a special **Shipping methods** block. You can create this block on the **Design → Layouts page**.
 
 * **Delivery time**—the time it takes to deliver an order. This info is displayed on the storefront, so that customers can decide if the delivery time meets their requirements.
 
 * **Description**—detailed description of the shipping method.
 
-* **User groups**—the user groups, the members of which will be able choose this shipping method at checkout.
+* **User groups**—the user groups, the members of which will be able choose this shipping method at checkout.
 
 * **Weight limit**—the minimum and maximum weight of the order that can be delivered via this method. If an order doesn’t meet the weight requirements, then this shipping method won’t be offered to the customer.
 
@@ -64,11 +66,11 @@ Configure
 
 This tab appears only if you have set **Rate calculation** to any variant of *Real-time (automatic)* on the **General** tab. It means that the rates will be requested from a third-party service depending on the order data when a customer proceeds to checkout. 
 
-Here you should specify the settings of the selected shipping service. Such settings vary depending on the shipping service provider. So, if you do not know how to configure it, please refer to the carrier’s help pages and :doc:`our documentation </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/index>`.
+Here you should specify the settings of the selected shipping service. Such settings vary depending on the shipping service provider. So, if you do not know how to configure it, please refer to the carrier’s help pages and :doc:`our documentation </user_guide/shipping_and_taxes/shipping_methods/realtime_shipping_methods/index>`.
 
 .. hint::
 
-    Once you have configured the settings, click **Save**. Then you’ll be able to go back to the **General** tab and test the rate calculation as described above.
+    Once you have configured the settings, click **Save**. Then you’ll be able to go back to the **General** tab and test the rate calculation as described above.
 
 =======================
 Shipping time and rates
@@ -82,7 +84,7 @@ You need to decide where your shipping method will be offered. To do this, choos
 
 If you receive rates from a shipping service provider in real time, the charges from this section will be simply added to the received rates. You can use this to compensate for your actual expenses if they exceed the values returned by the carrier (e.g., packing, insurance, etc.)
 
-You can specify price, weight or items conditions for each rate area. Once you’re done specifying them, click **Save**.
+You can specify price, weight or items conditions for each rate area. Once you’re done specifying them, click **Save**.
 
 .. image:: manual_shipping_methods/img/dependencies.png 
     :align: center
@@ -102,7 +104,7 @@ You can specify price, weight or items conditions for each rate area. Once you�
 Test rate calculation
 =====================
 
-Click the **Recalculate rates** button to find out the shipping cost. The calculation considers the weight that you specify in the form, as well as the :doc:`company address and default customer address </user_guide/shipping_and_taxes/address>`.
+Click the **Recalculate rates** button to find out the shipping cost. The calculation considers the weight that you specify in the form, as well as the :doc:`company address and default customer address </user_guide/shipping_and_taxes/address>`.
 
 .. image:: img/shipping_test_rate_calculation.png 
     :align: center
