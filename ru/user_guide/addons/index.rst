@@ -70,7 +70,6 @@
     old_admin_panel/index
     vendor_plans/index
     commissions_by_category/index
-    twigmo/index
     tags/index
     sms_notifications/index
     image_zoom/index
@@ -93,7 +92,7 @@
     :hidden:
     
     yandex_market/index
-
+    twigmo/index
 
 Список модулей
 ==============
@@ -128,9 +127,6 @@
 
     *   -   Прайс-лист
         -   Генерирует настраиваемые прайс-листы в формате PDF и XLS
-
-    *   -   Твигмо
-        -   Подключает к сервису Твигмо, генерирующему мобильную версию магазина для покупателей и предоставляющему мобильное приложение для администратора
 
     *   -   Теги
         -   Позволяет создавать теги для товаров
