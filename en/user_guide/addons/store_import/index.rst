@@ -24,7 +24,7 @@ Use the table below to see the versions that you can upgrade to and from:
     *   -   CS-Cart Multi-Vendor 2.2.4 - 3.0.6
         -   Multi-Vendor 4.0.2 - 4.7.2
     *   -   CS-Cart 4.3.x
-        -   CS-Cart 4.4.x
+        -   CS-Cart 4.7.2
 
 
 .. note::
