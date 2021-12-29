@@ -16,7 +16,7 @@ New Features and Improvements
 
 [+] Mobile application: Support for the Product Reviews add-on was added.
 
-[+] Mobile application: Ability to sing in via Facebook was added for iOS devices.
+[+] Mobile application: Ability to sign in via Facebook was added for iOS devices.
 
 [+] Mobile application: Now vendors can change product features via the application.
 
