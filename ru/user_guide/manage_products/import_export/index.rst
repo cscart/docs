@@ -13,8 +13,12 @@
     product_import
     fields_format
     import_example
-    import_shared_product
     variation_import
     product_image_import
     attachments_import
     google_merchant
+
+.. toctree::
+    :hidden:
+
+    import_shared_product
