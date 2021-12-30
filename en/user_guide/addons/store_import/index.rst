@@ -18,18 +18,17 @@ Use the table below to see the versions that you can upgrade to and from:
     *   -   Upgrade from:
         -   Upgrade to:
     *   -   CS-Cart Professional 2.2.4 - 3.0.6
-        -   CS-Cart 4.0.2 - 4.3.2, 4.3.6-4.3.8, 4.4.x
+        -   CS-Cart 4.0.2 - 4.3.2, 4.3.6-4.3.8, 4.4.1-4.7.2
     *   -   CS-Cart Ultimate 3.0.1 - 3.0.6
-        -   CS-Cart 4.0.2 - 4.3.2, 4.3.6-4.3.8, 4.4.x
+        -   CS-Cart 4.0.2 - 4.3.2, 4.3.6-4.3.8, 4.4.1-4.7.2
     *   -   CS-Cart Multi-Vendor 2.2.4 - 3.0.6
-        -   Multi-Vendor 4.0.2 - 4.3.2
+        -   Multi-Vendor 4.0.2 - 4.7.2
     *   -   CS-Cart 4.3.x
-        -   CS-Cart 4.4.x
-
+        -   CS-Cart 4.7.x
 
 .. note::
 
-    Starting with CS-Cart 4.3.6, you can `download the Store Import add-on from the Marketplace <http://marketplace.cs-cart.com/add-ons/store-import.html>`_.
+    Starting with CS-Cart 4.3.6, you can `download the Store Import add-on from the Marketplace <https://marketplace.cs-cart.com/store-import.html>`_.
 
 ================
 Using the Add-on
