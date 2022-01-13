@@ -39,7 +39,7 @@ The *addon.xml* file should look like this:
 
         <?xml version="1.0"?>
 
-        <addon scheme='2.0'>
+        <addon scheme='3.0'>
             <id>hello_world</id>
             <version>1.0</version>
             <name>Hello World</name>
@@ -57,7 +57,7 @@ This is enough for our add-on to start. Log in to your admin panel and switch to
 
     You may have to clear the store cache to view the changes in the add-on list. Add ``&cc`` at the end of the URL in the browser address field.
 
-Pay attention to the ``scheme='2.0'`` parameter. Add-ons without this parameter are considered using the deprecated markup. It still may be present in some add-ons, but it should be done solely for backward compatibility.
+Pay attention to the ``scheme='3.0'`` parameter. Add-ons without this parameter are considered using the deprecated markup. It still may be present in some add-ons, but it should be done solely for backward compatibility.
 
 OK, now let's add some settings.
 
