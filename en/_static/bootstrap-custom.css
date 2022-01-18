@@ -59,7 +59,6 @@ code, pre {
 }
 
 .navbar-inner {
-    height: 40px;
     border-bottom: 2px solid rgba(219,219,219,0.3);
     background: rgba(255,255,255,1);
     opacity: 1;
@@ -82,9 +81,116 @@ code, pre {
     background: rgba(0, 0, 0, 0) url("cscart_logo.png") no-repeat 22px 3px;
 }
 
-.navbar h3 a, .navbar .brand {
-    width: 102px;
-    height: 40px;
+.navbar .brand {
+    width: 130px;
+    height: 45px;
+    display: block;
+    float: left;
+    margin-left: -20px;
+    font-size: 20px;
+    font-weight: 200;
+    color: #777;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.navbar--en-layout {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.navbar--en-layout .container-fluid {
+    padding-right: 0;
+}
+
+.container-fluid span.pre {
+    word-wrap: break-word;
+}
+
+.navbar-menu {
+    display: none;
+}
+
+.navbar--main .navbar-form .form-group {
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    .navbar .brand {
+       float: none;
+       margin-left: 0;
+       margin: 0 auto;
+    }
+
+    .navbar-form {
+        margin: 0;
+    }
+
+    .navbar-form .form-group input {
+        width: 100%;
+    }
+
+    .navbar-form.navbar-right input[type="submit"].search-button {
+        top: -23px;
+        right: 10px;
+    }
+
+    .navbar-form.navbar-right {
+        padding: 10px 0;
+    }
+
+    .navbar-inner {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .navbar-fixed-top .navbar-inner {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        border: none;
+        padding-bottom: 0;
+    }
+
+    .navbar-inner .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .container-fluid.content-wrapper .row {
+        margin-top: 0;
+    }
+
+    .navbar--en-layout {
+        background: none;
+        border: none;
+        border-bottom: 1px solid #e7e7e7;
+    }
+
+    .navbar--en-layout .navbar-toggle {
+        border: none;
+        margin-right: 15px;
+    }
+
+    .navbar-collapse.collapse.in #sidebar {
+        border: none;
+    }
+
+    .navbar-collapse {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navbar h3 a {
+        float: none;
+    }
+
+    .navbar-menu {
+        margin: 8px 15px;
+        padding-top: 8px;
+        display: block;
+        font-size: 21px;
+        font-weight: 600;
+    }
 }
 
 .navbar-text {
@@ -106,6 +212,10 @@ code, pre {
     width: 205px;
 }
 
+.navbar h3 a {
+    padding-left: 0;
+}
+
 .navbar-form input:focus {
     outline: none;
     border: solid 1px #e4e4e2;
@@ -122,23 +232,18 @@ code, pre {
     height: 15px;
     display: block;
     background-image: url(images/search_icon.png);
-    background-size: 12px 12px;
+    background-size: cover;
     background-repeat: no-repeat;
     box-shadow: none;
     border: 0;
     position: relative;
-    top: 14px;
-    right: -198px;
-}
-
-.container .row {
-
+    top: -23px;
+    right: 10px;
 }
 
 #sidebar {
     padding: 5px 12px 15px 12px;
     border: 1px solid #f3f3f3;
-    width: 185px;
 }
 
 #sidebar h3 {
@@ -151,6 +256,17 @@ code, pre {
     margin: 0 auto;
     min-height: 100%;
     height: auto !important;
+}
+
+.container-fluid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-fluid ul,
+.container-fluid ol {
+    padding-left: 0;
 }
 
 .row {
@@ -227,6 +343,19 @@ div.admonition {
     padding: 15px 15px 7px 15px;
 }
 
+.admonition.note {
+    background: #f7fcff;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+    color: #3a87ad;
+}
+
+.admonition.warning {
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+}
+
 .first.admonition-title {
     display: none;
 }
@@ -261,6 +390,9 @@ blockquote p {
     text-shadow: 0 1px 0 rgba(255,255,255,0.5);
 }
 
+.btn.btn-navbar {
+    display: none;
+}
 
 
 .navbar-fixed-top, .navbar-fixed-bottom {
