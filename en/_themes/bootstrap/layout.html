@@ -19,7 +19,7 @@
   %}
  {% endif %}
 {% else %}
-  {% set bootstrap_version, bootstrap_additional_css, navbar_version = "2.3.2", "responsive", "-2" %}
+  {% set bootstrap_version, bootstrap_additional_css, navbar_version = "3.3.5", "responsive", "-2" %}
   {% set bs_span_prefix = "span" %}
   {% set css_files = [
       '_static/bootstrap-' + bootstrap_version + '/css/bootstrap.min.css'
@@ -76,13 +76,25 @@
 {% else %}
   {%- macro bsidebar() %}
       {%- if render_sidebar %}
-      <div class="{{ bs_span_prefix }}3">
-        <div id="sidebar">
-          {%- for sidebartemplate in sidebars %}
-            {%- include sidebartemplate %}
-          {%- endfor %}
+      <nav class="navbar navbar-default navbar--en-layout col-lg-3 col-md-4 col-sm-5 col-xs-12">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <span class="navbar-menu">Menu</span>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-main">
+            <div id="sidebar">
+              {%- for sidebartemplate in sidebars %}
+                {%- include sidebartemplate %}
+              {%- endfor %}
+            </div>
+          </div>
         </div>
-      </div>
+      </nav>
       {%- endif %}
   {%- endmacro %}
 {% endif %}
@@ -110,10 +122,10 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M9V4KBN"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 {{ navBar() }}
-<div class="container">
+<div class="container-fluid content-wrapper">
   <div class="row">
     {%- block sidebar1 %}{{ bsidebar() }}{% endblock %}
-    <div class="{{ bs_span_prefix }}{{ bs_content_width }}">
+    <div class="col-lg-9 col-md-8 col-sm-7 col-xs-12 content--en-layout">
       {% block body %}{% endblock %}
          <hr class="docutils" />
          <div class="admonition feedback">
