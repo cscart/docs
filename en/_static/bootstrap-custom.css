@@ -103,6 +103,10 @@ code {
     padding-right: 0;
 }
 
+.navbar--en-layout .navbar-collapse {
+    max-height: initial;
+}
+
 .container-fluid span.pre {
     word-wrap: break-word;
 }
@@ -111,11 +115,34 @@ code {
     display: none;
 }
 
+.navbar-fixed-top .navbar-inner.navbar--main {
+    padding: 25px 0 0 0;
+}
+
+.navbar--main .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 .navbar--main .navbar-form .form-group {
     width: 100%;
 }
 
+.navbar-toggle {
+    display: none;
+}
+
+.navbar-collapse.collapse {
+    display: block;
+}
+
 @media screen and (max-width:768px) {
+    .navbar--main .container-fluid {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
     .navbar .brand {
        float: none;
        margin-left: 0;
@@ -169,9 +196,14 @@ code {
     .navbar--en-layout .navbar-toggle {
         border: none;
         margin-right: 15px;
+        display: block;
     }
 
-    .navbar-collapse.collapse.in #sidebar {
+    .navbar-collapse.collapse {
+        display: none;
+    }
+
+    .navbar-collapse #sidebar {
         border: none;
     }
 
@@ -190,6 +222,22 @@ code {
         display: block;
         font-size: 21px;
         font-weight: 600;
+    }
+}
+
+@media (min-width: 769px) {
+    .col-sm-7 {
+        width: 58.333333333333336%;
+        float: left;
+    }
+
+    .col-sm-5 {
+        width: 41.66666666666667%;
+        float: left;
+    }
+
+    .navbar-default .navbar-collapse {
+        border-color: transparent;
     }
 }
 
@@ -262,6 +310,8 @@ code {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .container-fluid ul,
@@ -274,13 +324,11 @@ code {
     display: block;
     width: 100%;
     overflow-x: auto;
+}
 
-    background-image: linear-gradient(to right, white, white), linear-gradient(to right, white, white), linear-gradient(to right, rgba(0, 0, 20, .10), rgba(255, 255, 255, 0)), linear-gradient(to left, rgba(0, 0, 20, .10), rgba(255, 255, 255, 0));
-    background-position: left center, right center, left center, right center;
-    background-repeat: no-repeat;
-    background-color: white;
-    background-size: 20px 100%, 20px 100%, 10px 100%, 10px 100%;
-    background-attachment: local, local, scroll, scroll;
+.container-fluid table tbody {
+    display: inline-table;
+    width: 100%;
 }
 
 .row {
