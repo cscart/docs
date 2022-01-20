@@ -327,12 +327,9 @@ code {
     display: block;
     width: 100%;
     overflow-x: auto;
+    word-break: initial;
 }
 
-.container-fluid table tbody {
-    display: inline-table;
-    width: 100%;
-}
 
 .row {
     display: block;
