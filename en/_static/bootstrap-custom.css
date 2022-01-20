@@ -225,7 +225,7 @@ code {
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 769px) and (max-width: 980px) {
     .col-sm-7 {
         width: 58.333333333333336%;
         float: left;
@@ -235,7 +235,9 @@ code {
         width: 41.66666666666667%;
         float: left;
     }
+}
 
+@media (min-width: 769px) {
     .navbar-default .navbar-collapse {
         border-color: transparent;
     }
@@ -312,6 +314,7 @@ code {
     margin: 0 auto;
     padding-right: 15px;
     padding-left: 15px;
+    word-break: break-word;
 }
 
 .container-fluid ul,
