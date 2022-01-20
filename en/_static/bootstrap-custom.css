@@ -315,6 +315,8 @@ code {
     padding-right: 15px;
     padding-left: 15px;
     word-break: break-word;
+    height: auto !important;
+    min-height: 100%;
 }
 
 .container-fluid ul,
