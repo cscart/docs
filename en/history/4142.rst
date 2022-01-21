@@ -1,0 +1,195 @@
+************************
+CS-Cart 4.14.2 Changelog
+************************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] API: Product options: Ability to get all product options was added.
+
+[+] API: Products: Add-ons: Warehouses: Ability to get the quantity of a product in each warehouse was added. To do this, include "get_detailed_warehouses_amounts" with a value "Y" to your request.
+
+[+] Multi-Vendor: API: Vendors: New parameter was added to notify vendor's administrator during vendor creation.
+
+[+] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Now it is possible to add the best offer to the cart.
+
+[+] Ultimate: Export/Import: Ability to update shared products was added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Multi-Vendor: Add-ons: Vendor plans: Vendor privileges: The dependence of user groups in "Vendor plans" add-on from "Vendor privileges" add-on is now more obvious.
+
+[*] Multi-Vendor: WYSIWYG: Products: Pages: Vendors can now embed videos from YouTube/Vimeo to descriptions.
+
+[*] Multi-Vendor: Products: Features: Product features created by a vendor are no longer displayed for other vendors.
+
+[*] Products: The fields "Price" and "List price" was increased.
+
+=========
+Bug Fixes
+=========
+
+[!] Add-ons: Maps and geolocation: Shipping methods were not updated after changing the location in the Customer location block. Fixed.
+
+[!] Add-ons: Menus: Menu items, added by add-ons, might not open on the pages with the list of add-ons and in add-on settings. Fixed.
+
+[!] Add-ons: PayPal Commerce Platform: Email marketing: Order placement button was disappearing from the checkout page. Fixed.
+
+[!] Add-ons: PayPal payments: Notification for the order with Open status was not sent. Fixed.
+
+[!] Add-ons: Product bundles: Bundle search by contained products implied multiple products as search criteria. Fixed.
+
+[!] Add-ons: Product bundles: Bundle status was not updated after changing it at product detailed page. Fixed.
+
+[!] Add-ons: Product bundles: Extra HTML tag was dispalyed in the title . Fixed.
+
+[!] Add-ons: Product bundles: Multiple issues were fixed.
+
+[!] Add-ons: Product bundles: Products: Plus symbol missed at the "Add new bundle" button in the admin panel. Fixed.
+
+[!] Add-ons: Product bundles: The option selection on the list of promotions did not work. Fixed.
+
+[!] Add-ons: Product bundles: The price of the product when creating the product bundle didn't depend on the options selected. Fixed.
+
+[!] Add-ons: Product bundles: When adding products to a bundle, some products could not be found in the picker search. Fixed.
+
+[!] Add-ons: RMA: Gift Certificates: When the order paid with a certificate returned, the commission was returned. Fixed.
+
+[!] Add-ons: SEO: Product reviews: Reviews were not uploaded to the schema.org markup. Fixed.
+
+[!] Add-ons: Suppliers: Values for country and state variables were not displayed in the email notification. Fixed.
+
+[!] CS-Cart: Add-ons: Google Sitemap: SEO: When the option "Show additional language in the URL" was active, an incorrect link to the site map was formed. Fixed.
+
+[!] Cart: When adding an product to the cart, it could be immediately removed from the cart when switching to another page. Fixed.
+
+[!] Checkout: If the data on the profile page was changed during checkout, it was possible to place an order with an incorrect tax and shipping amount. Fixed.
+
+[!] Core: Design: Themes: If GD graphics driver was used, favicons with .ico extension couldn't be loaded. Fixed.
+
+[!] Core: Export/Import: Attachments: Files from local server couldn't be imported. Fixed.
+
+[!] Core: Export/Import: Old product import was broken. Fixed.
+
+[!] Core: JS: The page was refreshed when using browser navigation. Fixed.
+
+[!] Core: Languages: Language variable dropdown_limit contained errors. Fixed.
+
+[!] Core: Notifications: When loging in through the "Log in as user" link, notifications were sent either to the storefront or to the administration panel.
+
+[!] Core: Profile fields: Custom fields with email type were not displayed on storefront in Billing/Shipping sections. Fixed.
+
+[!] Core: Settings: Storefronts: Currencies on the storefront detail page in some cases were assigned incorrectly. Fixed.
+
+[!] Core: User groups: The closing symbol of the width attribute was missing. Fixed.
+
+[!] Design: Add-ons: Banners: Zero delay for banner changes did not work. Fixed.
+
+[!] Design: Add-ons: Menu: An additional arrow was displayed behind the addon icon in the admin panel menu. Fixed.
+
+[!] Design: Menu: The dropdown horizontal template did not work on mobile. Fixed.
+
+[!] Design: Products: Images: Owl Carousel: Large images were compressed on the storefront. Fixed.
+
+[!] Design: Promotions: Template contained tag with unclosed class. Fixed.
+
+[!] Exim: Products features: The feature variant might not be attached to the product if it contained control characters. Fixed.
+
+[!] Languages: Date Range Picker: The calendar has been partially untranslated. Fixed.
+
+[!] Layouts: Popup for editing layout page settings was displayed without title. Fixed.
+
+[!] Mobile application: App theme depended on phone settings. Fixed.
+
+[!] Mobile application: It was impossible to disable the "Wishlist" addon. Fixed.
+
+[!] Mobile application: Rating stars color of products couldn't be changed. Fixed.
+
+[!] Multi-Vendor: API: Usergroups: Vendors: Administrator couldn’t assign user group to a vendor’s administrator. Fixed.
+
+[!] Multi-Vendor: API: Vendors: Vendor administrator was always created when creating a vendor. Fixed.
+
+[!] Multi-Vendor: API: Usergroups: Vendors: When adding a customer to a group of vendors, an incorrect response was returned. Fixed.
+
+[!] Multi-Vendor: Add-ons: Message center: Template contained tag with duplicated id. Fixed.
+
+[!] Multi-Vendor: Add-ons: RMA: Reward Points: Incorrect refund payout amount when returned product was paid with points. Fixed.
+
+[!] Multi-Vendor: Add-ons: RMA: Vendor plans: Commissions by category: Payout could be calculated incorrectly in some cases. Fixed.
+
+[!] Multi-Vendor: Add-ons: Stripe Connect payments: RMA: Marketplace commission was not returned after creating refund for order with disabled 3-D Secure option at payment configuration. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor Plans: When a vendor was created, the plan assignment notification was sent to the administrator, not the vendor. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor panel configurator: When changing the language in the vendor panel, the previous language of the product description remained the same. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor-to-admin payments: Vendors in the "Suspended" status couldn't be viewed on a storefront. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor-to-admin payments: It was difficult to edit product details for marketplace fees. Fixed.
+
+[!] Multi-Vendor: Add-ons: Wish List: Logging out from vendor administrator account could lead to fatal error in third party add-ons. Fixed.
+
+[!] Multi-Vendor: Mobile application: Information in vendor profile was displayed incorrectly. Fixed.
+
+[!] Multi-Vendor: Mobile application: Formatting in the description of the vendor and product did not work. Fixed.
+
+[!] Multi-Vendor: Profiles: Vendors: The vendor administrator could not generate a new API key. Fixed.
+
+[!] Multi-Vendor: Profile fields: Documents: The "Show on storefront" setting didn't work correctly for custom profile fields. Fixed.
+
+[!] Multi-Vendor: Shipping methods: The "Use for all new vendors" checkbox was displayed for vendors. Fixed.
+
+[!] Multi-Vendor: Vendor panel: The vendor could see other vendors's data. Fixed.
+
+[!] Multi-Vendor: Vendors: Profile fields: Vendor's "Company" profile field  could be changed into hidden and non required. Fixed.
+
+[!] Multi-Vendor: Vendors: A micro-store and vendor pages in Pending status were available on the storefront. Fixed.
+
+[!] Multi-Vendor: Vendors: Accounting: Orders: When an order was deleted, its data remained in the vendor_payouts table. Fixed.
+
+[!] Multi-Vendor Plus: Products: Storefronts: When creating a new product, the vendor was not able to select a category created for a specific storefront. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors: The category search for common products in the vendor panel didnэt work. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: An error occurred after removing a product from the checkout page. Fixed.
+
+[!] Multi-Vendor Ultimate: Add-ons: Order fulfillment by marketplace: An incorrect commission payout was calculated for an order fulfilled by marketplace. Fixed.
+
+[!] Multi-Vendor Ultimate: Add-ons: Order fulfillment by marketplace: Shipping method could disappear when returning from a third-party payment method to checkout page. Fixed.
+
+[!] Notifications: Notifications were sent to automatically generated customer's emails. Fixed.
+
+[!] Orders: The product group key `group_key` was overwritten after the `shippings_group_products_list` hook. Fixed.
+
+[!] Payments: Orders using credit card number entry couldn't be placed in some cases. Fixed.
+
+[!] Payments: eWay: It was possible to create a payment method without entering API data. Fixed.
+
+[!] Period selector: "This week" and "Previous week" periods did not work correctly. Fixed.
+
+[!] Product tabs: Blocks: A PHP notice occured when trying to add an existing block to a new tab of product. Fixed.
+
+[!] Products: Features: When changing the feature style from "Multiple checkboxes" to "Text or number", all selected feature variants were displayed for the product on the storefront. Fixed.
+
+[!] Profile fields: Phone: The profile was not saved if no phone number was entered. Fixed.
+
+[!] Profile fields: The value of the “State/province” field in the profile was not displayed. Fixed.
+
+[!] REST API: Orders: Some order data could be lost when an order status was updated via the API. Fixed.
+
+[!] Settings: Checkout: The “States” field was required on the Settings → Checkout page. Fixed.
+
+[!] Storefronts: Regions: The added regions continued to remain in the list to be added to the storefront. Fixed.
+
+[!] UI / UX: Storefronts: Hidden languages and currencies were shown as selectable. Fixed.
+
+[!] Ultimate: Add-ons: Product variations: The "Update for all" button for updating shared products was missing on the product editing page on "Variations" tab. Fixed.
+
+[!] Users: Administrators without add-on management privilleges saw Help Desk sign in banner in the adminstration panel dashboard. Fixed.
+
+[!] Users: When changing the password to the same password, password_change_timestamp was updated. Fixed.
+
+[!] WYSIWYG: Redactor II: The code was displayed incorrectly when there was cm-tooltip in the editor text. Fixed.
