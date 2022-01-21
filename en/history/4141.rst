@@ -224,8 +224,6 @@ Bug Fixes
 
 [!] Settings: The notification about changing the global/individual settings did not appear when leaving the page. Fixed.
 
-[!] Settings: Checkout: The "States" field was required on the Settings → Checkout page. Fixed.
-
 [!] Statuses: Emails: Out of date notification settings were displayed in the order status settings. Fixed.
 
 [!] Storefronts: An admin linked to a specific storefront could still have access for managing the data from other storefronts. Fixed.
