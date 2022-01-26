@@ -32,6 +32,10 @@ Functionality Changes
 Bug Fixes
 =========
 
+[!] Add-ons: Attachments: Exim: Files from local server couldn’t be imported. Fixed.
+
+[!] Add-ons: Banners: Zero delay for banner changes did not work. Fixed.
+
 [!] Add-ons: Maps and geolocation: Shipping methods were not updated after changing the location in the Customer location block. Fixed.
 
 [!] Add-ons: Menus: Menu items, added by add-ons, might not open on the pages with the list of add-ons and in add-on settings. Fixed.
@@ -62,63 +66,45 @@ Bug Fixes
 
 [!] Add-ons: Suppliers: Values for country and state variables were not displayed in the email notification. Fixed.
 
-[!] CS-Cart: Add-ons: Google Sitemap: SEO: When the option "Show additional language in the URL" was active, an incorrect link to the site map was formed. Fixed.
+[!] Add-ons: Google Sitemap: SEO: When the option "Show additional language in the URL" was active, an incorrect link to the site map was formed. Fixed.
 
-[!] Cart: When adding an product to the cart, it could be immediately removed from the cart when switching to another page. Fixed.
-
-[!] Checkout: If the data on the profile page was changed during checkout, it was possible to place an order with an incorrect tax and shipping amount. Fixed.
-
-[!] Core: Design: Themes: If GD graphics driver was used, favicons with .ico extension couldn't be loaded. Fixed.
-
-[!] Core: Export/Import: Attachments: Files from local server couldn't be imported. Fixed.
-
-[!] Core: Export/Import: Old product import was broken. Fixed.
+[!] Cart: When adding a product to the cart, it could be immediately removed from the cart when switching to another page. Fixed.
 
 [!] Core: JS: The page was refreshed when using browser navigation. Fixed.
 
-[!] Core: Languages: Language variable dropdown_limit contained errors. Fixed.
+[!] Checkout: If the data on the profile page was changed during checkout, it was possible to place an order with an incorrect tax and shipping amount. Fixed.
 
-[!] Core: Notifications: When loging in through the "Log in as user" link, notifications were sent either to the storefront or to the administration panel.
+[!] Design: Themes: If GD graphics driver was used, favicons with .ico extension couldn't be loaded. Fixed.
 
-[!] Core: Profile fields: Custom fields with email type were not displayed on storefront in Billing/Shipping sections. Fixed.
-
-[!] Core: Settings: Storefronts: Currencies on the storefront detail page in some cases were assigned incorrectly. Fixed.
-
-[!] Core: User groups: The closing symbol of the width attribute was missing. Fixed.
-
-[!] Design: Add-ons: Banners: Zero delay for banner changes did not work. Fixed.
-
-[!] Design: Add-ons: Menu: An additional arrow was displayed behind the addon icon in the admin panel menu. Fixed.
+[!] Design: Add-ons: Menu: An additional arrow was displayed behind the add-on icon in the admin panel menu. Fixed.
 
 [!] Design: Menu: The dropdown horizontal template did not work on mobile. Fixed.
 
 [!] Design: Products: Images: Owl Carousel: Large images were compressed on the storefront. Fixed.
 
-[!] Design: Promotions: Template contained tag with unclosed class. Fixed.
-
 [!] Exim: Products features: The feature variant might not be attached to the product if it contained control characters. Fixed.
 
+[!] Exim: Old product import was broken. Fixed.
+
 [!] Languages: Date Range Picker: The calendar has been partially untranslated. Fixed.
+
+[!] Languages: Language variable dropdown_limit contained errors. Fixed.
 
 [!] Layouts: Popup for editing layout page settings was displayed without title. Fixed.
 
 [!] Mobile application: App theme depended on phone settings. Fixed.
 
-[!] Mobile application: It was impossible to disable the "Wishlist" addon. Fixed.
+[!] Mobile application: It was impossible to disable the "Wishlist" add-on. Fixed.
 
 [!] Mobile application: Rating stars color of products couldn't be changed. Fixed.
 
-[!] Multi-Vendor: API: Usergroups: Vendors: Administrator couldn’t assign user group to a vendor’s administrator. Fixed.
+[!] Multi-Vendor: API: User groups: Vendors: Administrator couldn’t assign user group to a vendor’s administrator. Fixed.
 
 [!] Multi-Vendor: API: Vendors: Vendor administrator was always created when creating a vendor. Fixed.
 
-[!] Multi-Vendor: API: Usergroups: Vendors: When adding a customer to a group of vendors, an incorrect response was returned. Fixed.
+[!] Multi-Vendor: API: User groups: Vendors: When adding a customer to a group of vendors, an incorrect response was returned. Fixed.
 
-[!] Multi-Vendor: Add-ons: Message center: Template contained tag with duplicated id. Fixed.
-
-[!] Multi-Vendor: Add-ons: RMA: Reward Points: Incorrect refund payout amount when returned product was paid with points. Fixed.
-
-[!] Multi-Vendor: Add-ons: RMA: Vendor plans: Commissions by category: Payout could be calculated incorrectly in some cases. Fixed.
+[!] Multi-Vendor: Add-ons: RMA: Reward Points: The refund amount was incorrect when the returned product was paid with points. Fixed.
 
 [!] Multi-Vendor: Add-ons: Stripe Connect payments: RMA: Marketplace commission was not returned after creating refund for order with disabled 3-D Secure option at payment configuration. Fixed.
 
@@ -152,15 +138,19 @@ Bug Fixes
 
 [!] Multi-Vendor Plus: Products: Storefronts: When creating a new product, the vendor was not able to select a category created for a specific storefront. Fixed.
 
-[!] Multi-Vendor Plus: Add-ons: Common products for vendors: The category search for common products in the vendor panel didnэt work. Fixed.
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors: The category search for common products in the vendor panel didn't work. Fixed.
 
 [!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: An error occurred after removing a product from the checkout page. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: RMA: Vendor plans: Commissions by category: Payout could be calculated incorrectly in some cases. Fixed.
 
 [!] Multi-Vendor Ultimate: Add-ons: Order fulfillment by marketplace: An incorrect commission payout was calculated for an order fulfilled by marketplace. Fixed.
 
 [!] Multi-Vendor Ultimate: Add-ons: Order fulfillment by marketplace: Shipping method could disappear when returning from a third-party payment method to checkout page. Fixed.
 
 [!] Notifications: Notifications were sent to automatically generated customer's emails. Fixed.
+
+[!] Notifications: When loging in through the "Log in as user" link, notifications were sent either to the storefront or to the administration panel.
 
 [!] Orders: The product group key `group_key` was overwritten after the `shippings_group_products_list` hook. Fixed.
 
@@ -178,11 +168,17 @@ Bug Fixes
 
 [!] Profile fields: The value of the “State/province” field in the profile was not displayed. Fixed.
 
+[!] Profile fields: Custom fields with email type were not displayed on storefront in Billing/Shipping sections. Fixed.
+
 [!] REST API: Orders: Some order data could be lost when an order status was updated via the API. Fixed.
 
 [!] Settings: Checkout: The “States” field was required on the Settings → Checkout page. Fixed.
 
+[!] Settings: Storefronts: Currencies on the storefront detail page in some cases were assigned incorrectly. Fixed.
+
 [!] Storefronts: Regions: The added regions continued to remain in the list to be added to the storefront. Fixed.
+
+[!] User groups: The closing symbol of the width attribute was missing. Fixed.
 
 [!] UI / UX: Storefronts: Hidden languages and currencies were shown as selectable. Fixed.
 
