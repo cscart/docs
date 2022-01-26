@@ -46,7 +46,8 @@
        // Было:
        fn_import_product_descr(array $data, $product_id, $field)
        // Стало:
-       fn_import_product_descr(array $data, $product_id, $field, array $object = [])
+       fn_import_product_descr(array $data, $product_id, $field, $is_new = false, array $object = [])
+
 
 #. ::
 
