@@ -10,7 +10,7 @@ CS-Cart branch 4.14.x
 .. toctree::
     :maxdepth: 1
 
-    4.14.2 (January 26, 2022) <4142>
+    4.14.2 (January 27, 2022) <4142>
     4.14.1 (December 2, 2021) <4141>
 
 =====================
