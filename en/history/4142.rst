@@ -14,7 +14,7 @@ New Features and Improvements
 
 [+] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Now it is possible to add the best offer to the cart.
 
-[+] Ultimate: Export/Import: Ability to update shared products was added.
+[+] Ultimate: Export/Import: Now it's possible to update products that belong to categories assigned to different storefronts.
 
 =====================
 Functionality Changes
@@ -32,7 +32,7 @@ Functionality Changes
 Bug Fixes
 =========
 
-[!] Add-ons: Attachments: Exim: Files from local server couldn’t be imported. Fixed.
+[!] Add-ons: Attachments: Export/Import: Files from local server couldn’t be imported. Fixed.
 
 [!] Add-ons: Banners: Zero delay for banner changes did not work. Fixed.
 
@@ -82,9 +82,9 @@ Bug Fixes
 
 [!] Design: Products: Images: Owl Carousel: Large images were compressed on the storefront. Fixed.
 
-[!] Exim: Products features: The feature variant might not be attached to the product if it contained control characters. Fixed.
+[!] Export/Import: Products features: The feature variant might not be attached to the product if it contained control characters. Fixed.
 
-[!] Exim: Old product import was broken. Fixed.
+[!] Export/Import: Old product import was broken. Fixed.
 
 [!] Languages: Date Range Picker: The calendar has been partially untranslated. Fixed.
 
@@ -182,7 +182,7 @@ Bug Fixes
 
 [!] UI / UX: Storefronts: Hidden languages and currencies were shown as selectable. Fixed.
 
-[!] Ultimate: Add-ons: Product variations: The "Update for all" button for updating shared products was missing on the product editing page on "Variations" tab. Fixed.
+[!] Ultimate: Add-ons: Product variations: The "Update for all" button for updating products, that belong to categories assigned to different storefronts, was missing on the product editing page on the "Variations" tab. Fixed.
 
 [!] Users: Administrators without add-on management privilleges saw Help Desk sign in banner in the adminstration panel dashboard. Fixed.
 
