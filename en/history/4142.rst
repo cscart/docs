@@ -189,3 +189,18 @@ Bug Fixes
 [!] Users: When changing the password to the same password, password_change_timestamp was updated. Fixed.
 
 [!] WYSIWYG: Redactor II: The code was displayed incorrectly when there was cm-tooltip in the editor text. Fixed.
+
+=============
+Service Packs
+=============
+
+----------
+4.14.2.SP1
+----------
+
+[!] Add-ons: Product Bundles: When a product was included to bundle and to catalog promotion, an error occurred while viewing that product on the storefront. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor-to-admin payments: Balance refilling was unavailable when "Show unavailable shippings" setting was enabled. Fixed.
+
+[!] Shipping methods: In some cases the calculation of delivery according to the condition of dependence on weight was performed incorrectly. Fixed.
+
