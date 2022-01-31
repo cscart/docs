@@ -12,7 +12,7 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-import sys, os
+import sys, os, time
 
 sys.path.insert(0, os.path.abspath('_ext'))
 
@@ -44,7 +44,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'CS-Cart'
-copyright = '2016, Simtech'
+copyright = '{}, CS-Cart'.format(time.strftime('%Y'))
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
