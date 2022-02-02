@@ -34,21 +34,13 @@ Step 1. Create a User Group
 
 #. Set the **Type** to *Vendor*.
 
-#. Click the **Create** button.
-
-   .. image:: img/vendor_group.png
-       :align: center
-       :alt: Specify the name and the type of the new customer group.
-
-#. Open the newly-created group.
-
 #. Configure the group's privileges as you see fit.
 
-#. Click the **Save** button.
+#. Click the **Create** button.
 
    .. image:: img/vendor_privileges.png
        :align: center
-       :alt: Set the privileges for the selected group.
+       :alt: Specify the name and the type of the new customer group. Set the privileges for the selected group.
 
 =======================================================
 Step 2. Set a Default Group for Vendors' Administrators
