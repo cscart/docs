@@ -8,4 +8,12 @@ Front-End
     :glob:
 
     */index
-    *
+    ajax
+    css_min
+    microformats
+    notifications
+
+.. toctree::
+    :hidden:
+
+    tooltips
