@@ -187,34 +187,28 @@ Custom classes for blocks and grids do not have the ``ty-`` prefix in their name
 
 Currency text letters in the example are uppercase. Adding the style only for ``ty-select-block__a-item`` is not correct as it is used for displaying languages too.
 
-It is better to use a block class where ``ty-select-block__a-item`` is placed in a selector:
+It is better to use a block class where ``ty-select-block__a-item`` is placed in a selector::
 
-.. code-block:: guess
-
-	.top-currencies .ty-select-block__a-item {
-    	text-transform: uppercase;
-	}
+ .top-currencies .ty-select-block__a-item {
+     text-transform: uppercase;
+ }
 
 Languages
 +++++++++
 
-To remove an arrow near the language name, hide it in the CSS file:
+To remove an arrow near the language name, hide it in the CSS file::
 
-.. code-block:: guess
-
-	.top-languages .ty-select-block__arrow {
-    	display: none;
-	}
+ .top-languages .ty-select-block__arrow {
+     display: none;
+ }
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Add styles for **Quick links**: 
+Add styles for **Quick links**::
 
-.. code-block:: guess
-
-	.top-quick-links .ty-text-links__a {
-    	font-size: 12px;
-	}
+ .top-quick-links .ty-text-links__a {
+     font-size: 12px;
+ }
 
 Delivery 24/7
 +++++++++++++
