@@ -194,6 +194,10 @@ CS-Cart Architects Team Recommends This
 
 * Install the **mod_deflate** Apache mod.
 
+* Disable MultiViews on the server.
+
+  Enabled MultiViews option may cause unexpected results, if an URL (for example, an URL of a SEO name) matches the structure of folders in the root directory of the store.
+
 ============================
 Compatible Hosting Providers
 ============================
