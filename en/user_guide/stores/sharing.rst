@@ -32,6 +32,8 @@ CS-Cart has a number of global objects that apply to all storefronts and cannot 
 Sharing Objects Among Storefronts
 =================================
 
+.. _share-products-configurable-sharing:
+
 -------------------------------------
 Share Products (Configurable Sharing)
 -------------------------------------

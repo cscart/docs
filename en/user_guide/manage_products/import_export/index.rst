@@ -13,6 +13,7 @@ This section of the documentation covers the export and import of products in CS
     product_import
     fields_format
     import_example
+    import_shared_product
     variation_import
     product_image_import
     attachments_import
