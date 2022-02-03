@@ -265,7 +265,7 @@ How Do I Change the Texts of My App?
 
 The texts of your app are a part of **Mobile Application** add-on and can be edited in the admin panel of your store. Changing these texts works the same way as :doc:`translating CS-Cart </user_guide/look_and_feel/languages/translate>`:
 
-#. Go to **Administartion → Text & Languages → Edit texts**. 
+#. Go to **Administration → Text & Languages → Edit texts**. 
 
 #. Switch to the *Mobile application translations* tab in the sidebar on the right.
 
