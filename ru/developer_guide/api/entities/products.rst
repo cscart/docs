@@ -267,6 +267,15 @@ GET /products/:id
     }
   }
 
+Получить детальную информацию по складам
+-----------------------------------------
+
+::
+
+  curl -X GET 'http://example.com/api/2.0/products/12?get_detailed_warehouses_amounts=Y'
+
+
+
 ===============
 POST /products/
 ===============
@@ -308,6 +317,21 @@ PUT /products/:id
   {
      "product_id": "12",
   }    
+
+Изменить количество товаров на складах
+---------------------------------------
+
+*Например:*
+
+*1 и 2: id склада или магазина*
+
+*15 и 9: количество товаров на складах*
+
+
+:: 
+
+  curl --header 'Content-Type: application/json' -X PUT 'http://example.com/api/2.0/products/12' --data-binary '{"warehouses": {"1": "15","2": "9"}}'
+
 
 ====================
 DELETE /products/:id

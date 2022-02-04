@@ -61,6 +61,28 @@ Get all products of the 1st store, with 'foo' in their full description, costing
 
 .. _filters:
 
+Getting and updating product quantity in warehouse
+--------------------------------------------------
+
+* Get product quantity in warehouse:
+
+  ::
+
+    curl -X GET 'http://example.com/api/2.0/products/12?get_detailed_warehouses_amounts=Y'
+
+
+* Update product quantity in warehouse:
+
+  :: 
+
+    curl --header 'Content-Type: application/json' -X PUT 'http://example.com/api/2.0/products/12' --data-binary '{"warehouses": {"1": "15","2": "9"}}'
+
+  *1 & 2 is the store location id*
+
+  *15 & 9 is the product quantity in warehouses*
+
+  *12 is the product id*
+
 Filters
 -------
 
