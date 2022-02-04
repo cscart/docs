@@ -82,15 +82,13 @@ Once you set up a Stripe Connect payment method, your vendors will be able to co
 
 .. important::
 
-    The **Connect with Stripe** button will appear only to :doc:`vendors' administrators </user_guide/users/vendors/index>` or those marketplace administrators who switch to a particular vendor.
+    The **Connect with Stripe** button will appear only to :doc:`vendors' administrators </user_guide/users/vendors/index>` or those marketplace administrators who log in as a vendor.
 
 Here is the instruction for a vendor:
 
-#. Open the vendor's administration panel and go to **Vendors → Vendors**.
+#. Open the vendor's administration panel and go to **Seller info** in the upper left menu.
 
-#. Click on the name of your company.
-
-#. The vendor editing page will open. Scroll down, then you'll see one of two posssible variants of connecting with Stripe.    Any of these actions will take you to the Stripe page where you'll be able to register an account or connect an existing one.
+#. The vendor editing page will open. Scroll down, then you'll see one of two posssible variants of connecting with Stripe. Any of these actions will take you to the Stripe page where you'll be able to register an account or connect an existing one.
 
    * If Express accounts were allowed on the *Step 1* then you'll be able to **Connect a Stripe Express account**. If you already have a **Stipe Standart account**, click the appropriate button.
 
