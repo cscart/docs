@@ -63,6 +63,7 @@
     customers_also_bought/index
     rus_sdek/index
     warehouses/index
+    social_buttons/index
     social_login/index
     old_admin_panel/index
     vendor_plans/index
