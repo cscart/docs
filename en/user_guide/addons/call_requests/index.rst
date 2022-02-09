@@ -2,7 +2,7 @@
 Call Requests
 *************
 
-This add-on adds a **Buy now with 1-click** button on a product details page in the storefront. When a customer clicks the button, a popup window with a short contact form appears. As a store admin, you will see the list of call requests in the `Orders → Call requests <http://docs.cs-cart.com/4.4.x/user_guide/orders/call_requests/index.html>`_ section of the administration panel with detailed information about each request.
+This add-on adds a **Buy now with 1-click** button on a product details page in the storefront. When a customer clicks the button, a popup window with a short contact form appears. As a store admin, you will see the list of call requests in the `Orders → Call requests <http://docs.cs-cart.com/latest/user_guide/orders/call_requests/index.html>`_ section of the administration panel with detailed information about each request.
 
 .. image:: img/call_request_01.png
 	:align: center
@@ -31,4 +31,5 @@ To manage these settings, go to the **Add-ons → Manage add-ons** section and c
 	**Examples:** +9 (999) 999 99 99, 99999999, 999 999 99, or +99-99-9999-9999.
 
 *	**Enable the "Buy now with one click" option** - If selected, a **Buy now with 1-click** button will be displayed on a product details page in the storefront.
+*   **Enable call requests for vendors** - If selected, vendors are able to process call requests.
 *	**Order status** - Status of the newly created order, when a customer sends a call request.

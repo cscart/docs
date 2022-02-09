@@ -41,6 +41,7 @@
     rus_taxes/index
     access_restrictions/index
     age_verification/index
+    call_requests/index
     common_products/index
     direct_customer_to_vendor_payments/index
     vendor_debt_payout/index
