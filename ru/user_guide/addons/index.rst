@@ -46,6 +46,7 @@
     direct_customer_to_vendor_payments/index
     vendor_debt_payout/index
     geolocation/index
+    polls/index
     comments_and_reviews/index
     product_reviews/index
     paypal_payments/index
