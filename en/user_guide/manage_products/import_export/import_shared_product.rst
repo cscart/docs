@@ -4,7 +4,7 @@ How to: Import Products Shared Among Storefronts
 
 .. important::
 
-    This article is only for users of CS-Cart Ultimate version 4.14.1 and higher.
+    This article is only for users of CS-Cart Ultimate version 4.14.2 and higher.
 
 CS-Cart allows administrators to :ref:`show products on several storefronts <share-products-configurable-sharing>`. To do this, add the product, assigned to the category of one storefront, to another storefront's category. You can update such products manually or using import.
 

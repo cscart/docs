@@ -48,7 +48,7 @@ By default, the money in Multi-Vendor first goes to the marketplace owner, who t
 Installation
 ============
 
-The **Direct Customer-to-Vendor Payments** add-on is installed :doc:`like any other add-on </user_guide/addons/1manage_addons>`. The only difference is that after installation you'll also need to set the set the status of the add-on to *Active*.
+The **Direct Customer-to-Vendor Payments** add-on is installed :doc:`like any other add-on </user_guide/addons/1manage_addons>`. The only difference is that after installation you'll also need to set the status of the add-on to *Active*.
 
 During activation, the add-on will automatically disable the following add-ons:
 
