@@ -80,7 +80,7 @@ How Customers Book Accommodation
 
    .. note:: 
 
-       Usually, you as the marketplace administrator create such :doc:`features </user_guide/manage_products/features/product_features>` in advance, and vendors apply them to their products. But you can allow vendors to create their own custom features, if necessary.
+       Usually, you as the marketplace administrator create such :doc:`features </user_guide/manage_products/features/product_features>` in advance, and vendors apply them to their products. But you can :doc:`allow vendors to create their own custom features </user_guide/manage_products/features/vendor_features>`, if necessary.
 
    .. image:: img/filters.png
        :align: center
