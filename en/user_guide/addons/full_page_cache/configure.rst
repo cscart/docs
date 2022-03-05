@@ -4,7 +4,7 @@ How To: Set Up Full-Page Caching in Multi-Vendor
 
 .. important::
 
-    This add-on doesn't come with CS-Cart and Multi-Vendor by default. You can `buy it separately in our Marketplace <https://marketplace.cs-cart.com/add-ons/integrations/marketplace-performance-booster.html>`_.
+    This add-on doesn't come with CS-Cart and Multi-Vendor by default. You can `buy it separately in our Marketplace <https://marketplace.cs-cart.com/marketplace-performance-booster.html>`_.
 
 The Marketplace Performance Booster add-on works in combination with `Varnish Cache <https://varnish-cache.org/>`_—free software that serves as caching reverse proxy. Learn more about Varnish here:
 
