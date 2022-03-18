@@ -26,11 +26,11 @@ To rent out a property, go to the **Products → Products** page and click on th
     :align: center
     :alt: Creating new product via vendor panel.
 
-Here the vendor sets the **name** of their offer, chooses the **location** on the map (:doc:`enable Google Maps through the Vendor Location add-on </user_guide/addons/vendor_locations/configure>`), sets the **price** per night, and uploads :doc:`images </user_guide/look_and_feel/logos_banners_images/images_for_store>` and **description**.
+Here the vendor sets the **name** of their offer, chooses the **location** on the map (:doc:`enable Google Maps through the Vendor Location add-on </user_guide/addons/vendor_locations/configure>`), sets the **price** per night, and uploads :doc:`images </user_guide/look_and_feel/logos_banners_images/images_for_store>` and add **full description**.
 
 If a vendor has multiple similar accommodations (for example, hotel rooms or houses), then the **"In stock"** determines how many accommodations of this type a vendor can offer. Vendors can also decide which :doc:`Taxes </user_guide/shipping_and_taxes/taxes/index>` will be applied to the product.
 
-After clicking the **Save** button, the product will be :doc:`sent for moderation </user_guide/addons/vendor_data_premoderation/index>` to the marketplace owner and then can appear on the storefront. At the same time, additional tabs with properties will appear on the product editing page. :doc:`Most of them are described elsewhere </user_guide/manage_products/products/product_attributes>`, so we'll only cover the important ones here.
+After clicking the **Create** button, the product will be :doc:`sent for moderation </user_guide/addons/vendor_data_premoderation/index>` to the marketplace owner and then can appear on the storefront. At the same time, additional tabs with properties will appear on the product editing page. :doc:`Most of them are described elsewhere </user_guide/manage_products/products/product_attributes>`, so we'll only cover the important ones here.
 
 The calendar on the *Bookings* tab allows the vendor to find out:
 
