@@ -74,6 +74,10 @@ Add these parameters to the path to specify which orders will be returned in the
     *   -   credit_memo_id
         -   
         -   Searches only for the orders with the specified credit memo ID.
+    *   -   updated_at_from
+            updated_at_to
+        -
+        -   Searches only for the orders last modified during the specified date period.
 
 **Examples:**
 
