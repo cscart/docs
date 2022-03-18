@@ -26,6 +26,7 @@
     website/index
     stores/index
     settings/index
+    booking/faq
     mobile_app/faq
 
 
