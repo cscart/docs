@@ -45,6 +45,7 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     google_sitemap/index
     hidpi_displays_support/index
     image_zoom/index
+    zapier/index
     janrain/index
     landing_pages_from_tilda/index
     maps_and_geolocation/index
@@ -99,7 +100,6 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     warehouses/index
     watermarks/index
     wish_list/index
-
 
 .. toctree::
     :hidden:
