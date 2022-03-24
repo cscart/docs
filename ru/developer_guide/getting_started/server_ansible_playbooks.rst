@@ -18,14 +18,6 @@
 
 В зависимости от операционной системы, выполните по очереди следующие команды, чтобы установить Ansible:
 
-* На **CentOS 6:**
-
-  .. code-block:: bash
-
-      sudo yum -y install epel-release
-      sudo yum install -y gcc git openssl-devel libffi-devel libselinux-python python-crypto python-jinja2 python-paramiko sshpass python-six PyYAML
-      sudo rpm -ihv https://releases.ansible.com/ansible/rpm/release/epel-6-x86_64/ansible-2.4.6.0-1.el6.ans.noarch.rpm
-
 * На **CentOS 7:**
 
   .. code-block:: bash
@@ -34,23 +26,16 @@
       sudo yum install -y gcc git openssl-devel libffi-devel libselinux-python python-crypto python-jinja2 python-paramiko sshpass PyYAML python-setuptools
       sudo rpm -ihv https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/ansible-2.4.6.0-1.el7.ans.noarch.rpm
 
-* На **Ubuntu 14.04:**
+* На **Ubuntu 18.04:**
 
   .. code-block:: bash
 
-      sudo add-apt-repository -y ppa:ansible/ansible
-      sudo apt-get -y update
-      sudo apt-get -y install git python-dev libffi-dev python-markupsafe libssl-dev
-      sudo apt-get -y install ansible
+      sudo apt update
+      sudo apt install ansible
 
-* На **Ubuntu 16.04:**
+.. note::
 
-  .. code-block:: bash
-
-      sudo add-apt-repository -y ppa:ansible/ansible
-      sudo apt-get -y update
-      sudo apt-get -y install git python-dev libffi-dev python-markupsafe libssl-dev
-      sudo apt-get -y install ansible
+    **CentOS 6**, **Ubuntu** ниже версии **18.04** больше не поддерживаются.
 
 ============================
 Шаг 2. Настраиваем main.json
@@ -166,19 +151,7 @@
 Шаг 3. Запускаем плейбук
 ========================
 
-В зависимости от нужного вам веб-сервера и нужной версии PHP **запустите один из плейбуков** командой ниже. Если процесс пройдёт успешно, то можно будет устанавливать CS-Cart.
-
-* **lamp.yml**: *nginx + apache + mysql + php5.6*
-
-  .. code-block:: bash
-
-      cd ~/playbooks/ && ansible-playbook -e @config/main.json -c local -i inventory lamp.yml
-
-* **lemp.yml**: *nginx + mysql + php5.6*
-
-  .. code-block:: bash
-
-      cd ~/playbooks/ && ansible-playbook -e @config/main.json -c local -i inventory lemp.yml
+В зависимости от нужного вам веб-сервера и нужной версии PHP **запустите один из плейбуков** командой ниже. Если процесс пройдёт успешно, то можно будет устанавливать CS-Cart или Multi-Vendor после этого.
 
 * **lemp7.yml**: *nginx + mysql + php7.1*
 
@@ -191,3 +164,27 @@
   .. code-block:: bash
 
       cd ~/playbooks/ && ansible-playbook -e @config/main.json -c local -i inventory_varnish lvemp7.yml
+
+* **lemp73.yml**: *nginx + mysql + php7.3*
+
+  .. code-block:: bash
+
+      cd ~/playbooks/ && ansible-playbook -e @config/main.json -c local -i inventory_php73 lemp73.yml
+
+* **lvemp73.yml**: *varnish + nginx + mysql + php7.3*
+
+  .. code-block:: bash
+
+      cd ~/playbooks/ && ansible-playbook -e @config/main.json -c local -i inventory_varnish73 lvemp73.yml
+
+* **lemp74.yml**: *nginx + mysql + php7.4*
+
+  .. code-block:: bash
+
+      cd ~/playbooks/ && ansible-playbook -e @config/main.json -c local -i inventory_php74 lemp74.yml
+
+* **lvemp74.yml**: *varnish + nginx + mysql + php7.4*
+
+  .. code-block:: bash
+
+      cd ~/playbooks/ && ansible-playbook -e @config/main.json -c local -i inventory_varnish74 lvemp74.yml
