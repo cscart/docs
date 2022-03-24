@@ -1,8 +1,8 @@
-******************************
-Integration with Zapier [Beta]
-******************************
+***********************
+Integration with Zapier
+***********************
 
-In CS-Cart 4.15.1, we have added an add-on that allows you to connect your store with a `Zapier platform <https://platform.zapier.com/quickstart/introduction>`_. Zapier allows you to integrate apps and services into workflows. This means that if you have a Zapier integration, you can embed an app that is missing in CS-Cart. When you link processes in the store to the work of other applications, you automate current tasks and save your time.
+In CS-Cart and Multi-Vendor 4.15.1, we have added an add-on that allows you to connect your store with a `Zapier platform <https://platform.zapier.com/quickstart/introduction>`_. Zapier allows you to integrate apps and services into workflows. This means that if you have a Zapier integration, you can embed an app that is missing in CS-Cart. When you link processes in the store to the work of other applications, you automate current tasks and save your time.
 
 Set the rules for managing and exchanging data between the store and applications. These rules are called **Zaps**.
 
@@ -66,7 +66,7 @@ How To: Integrate CS-Cart with a Service of Your Choice (Creating a Zap)
 
 Follow these steps to automate the process that link the store with an app of your choice:
 
-#. Activate the **Integration with Zapier add-on** in the admin panel and connect your store to Zapier.
+#. Activate the **Integration with Zapier** add-on in the admin panel and connect your store to Zapier.
 
 #. In the Zapier dashboard, set up a **trigger**—an event that will launch your Zap.
 
@@ -74,9 +74,9 @@ Follow these steps to automate the process that link the store with an app of yo
 
    .. note::
 
-      Select CS-Cart as the app if you want the trigger to be an event in the store, for example, a new vendor registration. Choose another app, like Google Sheets, to trigger actions when new rows appear in your sheet.
+      Select CS-Cart as the app if you want the trigger to be an event in the store, for example, a new product creation. Choose another app, like Google Sheets, to trigger actions when new rows appear in your sheet.
 
-#. Set up an **action**—an event that the **Zap** performs after it starts.
+#. Set up an **action**—an event that the Zap performs after it starts.
 
    This step also includes selecting an app and setting up what will happen in that app.
 
@@ -84,7 +84,7 @@ Follow these steps to automate the process that link the store with an app of yo
 
       If you select CS-Cart as the application, then the trigger will produce changes in the store, for example, creating a new order .
 
-#. Your **Zap** is ready.
+#. Your Zap is ready.
 
    Now you can apply filters to add additional conditions for triggering the **action**. If you want to see the work of the created Zap, transfer the existing data from one app to another.
 
@@ -94,43 +94,39 @@ An Example of Creating Zap
 
 Let's consider in detail how you can automate workflows via the example.
 
-*Imagine that you are looking for vendors for your wallpaper marketplace. To do this, you are going to an exhibition of interior decoration. There you meet potential vendors who are ready to sell their products on your marketplace. You have recorded their contacts and necessary information in a Google Sheet. Now you need to transfer this data from the Sheet to CS-Cart.*
+*Imagine that you need statistics on orders for several months. It will let you know who made the most orders, who spent the most money, which days had the most sales, etc. Google Sheets is a handy tool for creating such graphs and charts. If you want order data to appear regularly in the table, you need to transfer it from the store to the table.*
 
-You can save time on routine processes by integrating with Zapier and creating Zaps. Let's create a Zap that will add a new customer to the store when a new row is added to the Google Sheet.
+You can save time on routine processes by integrating with Zapier and creating Zaps. Let's create a Zap that will add information about new orders to the Google Sheet.
 
 #. `Sign up <https://zapier.com/sign-up/>`_ or `login <https://zapier.com/app/login>`_ to your Zapier account and click the **Create Zap** button.
 
 #. Сreate a **Trigger Event**.
     #. Select an app and an event. Then click **Continue**.
 
-       **App event**—*Google Sheets*;
+       **App event**—*CS-Cart*;
 
-       **Trigger event**—*new Spreadsheet row*.
+       **Trigger event**—*New Order*.
 
-    #. **Choose account**. The account that the Google Sheet is associated with.
+    #. **Choose account**. :ref:`The connection that was created when setting up the store integration with Zapier <zapier-connection-cs-cart>`.
 
-    #. **Set up trigger**. Select the **spreadsheet** where you entered the vendor data. Also select a **worksheet**—new records from this sheet will fire the trigger. Click **Continue**.
-
-    #. **Test trigger**. If everything was configured correctly, you will see the data from your Google Sheets.
+    #. **Test trigger**. If everything was configured correctly, you will see the details of the last order from your store.
 
 #. Create an **Action Event**.
     #. Select an app and an event.  Then click **Continue**.
 
-       **App event**—*CS-Cart*;
+       **App event**—*Google Sheets*;
 
-       **Action event**—*Create User*.
+       **Action event**—*Create Spreadsheet Row*.
    
-    #. Choose account. :ref:`The connection that was created when setting up the store integration with Zapier <zapier-connection-cs-cart>`. Click **Continue**.
+    #. **Choose account**. The account that the Google Sheet is associated with.
 
-    #. **Set up action**. :ref:`Customize user data fields according to Google Sheets <zapier-spreadsheet_requirements>`.
+    #. **Set up action**. :ref:`Customize data fields according to Google Sheets <zapier-spreadsheet_requirements>`. Click **Continue**.
 
-    #. **Test action**. If everything was configured correctly, then a new customer will be created on the marketplace based on the data from the spreadsheet.
+    #. **Test action**. If everything was configured correctly, a new row with detailed information about the last order in the store will appear in your Google Sheet.
 
 #. **Turn on Zap**.
 
-Your Zap is ready! Now data about new users in Google Sheets will be automatically transferred to your store.
-
-You can also create Zaps for other triggers and events.
+   Your Zap is ready! Now data about new orders in your store will be automatically transferred to the Google Sheet. You can also create Zaps for other triggers and events.
 
 .. image:: img/finished_zap.png
     :alt: Finished Zap with customized actions and triggers.
@@ -144,16 +140,14 @@ Connect an existing Google Sheet or create a new one. To set up integration, you
 
 * Column names;
 
-  First row in Google Sheet with column names. In this case, your doc should contain next columns: E-mail, User type (administrator, buyer); Company id (ID of the store or vendor to which the user belongs); User status﻿
+  First row in Google Sheet with column names. In this case, your doc can contain columns like Order ID, user First and Last Name, Order Total etc.
 
-* At least one line with detailed information about the user.
-
-  Add at least one line to the file with user data from your store. This is necessary to test the correct setting of the Zap.
+* If your **trigger events** are in Google Sheets, then your need at least one row with filled data about the order/user/shipment from your store. This is necessary to test the correct setting of the Zap.
 
   *The example of Google Sheet*
 
   .. image:: img/example_speadsheet.png
-      :alt: Screenshot of the table with the vendor names in the Google Sheets.
+      :alt: Screenshot of the table with the order details in the Google Sheets.
 
 ==========================================================================
 What Events in CS-Cart Can Be Used to Connect with Other Apps and Services
@@ -172,13 +166,9 @@ When choosing CS-Cart as an app, the following events can be triggers and action
      - 
      - Action
    * - If CS-Cart launch a
-     - * new call request;
-       * new order;
-       * order payment;
+     - * new order;
        * new product;
        * new shipment;
-       * new user;
-       * new vendor,
      - .. figure:: img/arrow.png
               :align: left
               :scale: 60%
@@ -198,16 +188,12 @@ When choosing CS-Cart as an app, the following events can be triggers and action
               :align: left
               :scale: 60%
               :alt: Arrow right.
-     - a store performs
-     - * creating a call request;
-       * creating an order;
-       * creating a product;
-       * updating a product;
-       * creating a shipment;
-       * creating a user;
-       * updating a user;
-       * creating a vendor.
+     - the store performs
+     - * creating an order;
+       * creating a product.
+
+.. image:: img/trigger_events.png
+    :alt: Possible trigger events when CS-Cart is chosen as an app.
 
 .. meta::
-   :description: How to track inventory at multiple stores and warehouses in CS-Cart and Multi-Vendor and show it to customers?
-
+   :description: How to set up integration with Zapier? What is Zapier integration for? How to integrate CS-Cart with an app of your choice?
