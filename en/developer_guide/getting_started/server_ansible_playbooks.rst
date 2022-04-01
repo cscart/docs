@@ -18,24 +18,70 @@ Step 1. Install Ansible
 
 Depending on your server’s operating system, run the following commands one by one to install Ansible:
 
+* On **CentOS 6:**
+
+  .. code-block:: bash
+
+      sudo yum -y install epel-release
+
+  .. code-block:: bash
+
+      sudo yum install -y gcc git openssl-devel libffi-devel libselinux-python python-crypto python-jinja2 python-paramiko sshpass python-six PyYAML
+
+  .. code-block:: bash
+
+      sudo rpm -ihv https://releases.ansible.com/ansible/rpm/release/epel-6-x86_64/ansible-2.4.6.0-1.el6.ans.noarch.rpm
+
 * On **CentOS 7:**
 
   .. code-block:: bash
 
       sudo yum -y install epel-release
-      sudo yum install -y gcc git openssl-devel libffi-devel libselinux-python python-crypto python-jinja2 python-paramiko sshpass PyYAML python-setuptools
-      sudo rpm -ihv https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/ansible-2.4.6.0-1.el7.ans.noarch.rpm
-
-* On **Ubuntu 18.04:**
 
   .. code-block:: bash
 
-      sudo apt update
-      sudo apt install ansible
+      sudo yum install -y gcc git openssl-devel libffi-devel libselinux-python python-crypto python-jinja2 python-paramiko sshpass PyYAML python-setuptools
 
-.. note::
+  .. code-block:: bash
 
-    **CentOS 6**, **Ubuntu** older than **18.04** version are no longer supported.
+      sudo rpm -ihv https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/ansible-2.4.6.0-1.el7.ans.noarch.rpm
+
+* On **Ubuntu 14.04:**
+
+  .. code-block:: bash
+
+      sudo add-apt-repository -y ppa:ansible/ansible
+
+  .. code-block:: bash
+
+      sudo apt-get -y update
+
+  .. code-block:: bash
+
+      sudo apt-get -y install git python-dev libffi-dev python-markupsafe libssl-dev
+
+  .. code-block:: bash
+
+      sudo apt-get -y install ansible
+
+* On **Ubuntu 16.04:**
+
+  .. code-block:: bash
+
+      sudo add-apt-repository -y ppa:ansible/ansible
+
+  .. code-block:: bash
+
+      sudo apt-get -y update
+
+  .. code-block:: bash
+
+      sudo apt-get -y install git python-dev libffi-dev python-markupsafe libssl-dev
+
+  .. code-block:: bash
+
+      sudo apt-get -y install ansible
+
 
 ===========================
 Step 2. Configure main.json
@@ -153,6 +199,18 @@ Step 3. Run a Playbook
 
 Depending on the PHP version and the web server you want to use, **run one of the playbooks** by using a command below. If the playbook runs without errors, you will be able to install CS-Cart or Multi-Vendor after that.
 
+* **lamp.yml**: *nginx + apache + mysql + php5.6*
+
+  .. code-block:: bash
+
+      cd ~/playbooks/ && ansible-playbook -e @config/main.json -c local -i inventory lamp.yml
+
+* **lemp.yml**: *nginx + mysql + php5.6*
+
+  .. code-block:: bash
+
+      cd ~/playbooks/ && ansible-playbook -e @config/main.json -c local -i inventory lemp.yml
+
 * **lemp7.yml**: *nginx + mysql + php7.1*
 
   .. code-block:: bash
@@ -164,30 +222,6 @@ Depending on the PHP version and the web server you want to use, **run one of th
   .. code-block:: bash
 
       cd ~/playbooks/ && ansible-playbook -e @config/main.json -c local -i inventory_varnish lvemp7.yml
-
-* **lemp73.yml**: *nginx + mysql + php7.3*
-
-  .. code-block:: bash
-
-      cd ~/playbooks/ && ansible-playbook -e @config/main.json -c local -i inventory_php73 lemp73.yml
-
-* **lvemp73.yml**: *varnish + nginx + mysql + php7.3*
-
-  .. code-block:: bash
-
-      cd ~/playbooks/ && ansible-playbook -e @config/main.json -c local -i inventory_varnish73 lvemp73.yml
-
-* **lemp74.yml**: *nginx + mysql + php7.4*
-
-  .. code-block:: bash
-
-      cd ~/playbooks/ && ansible-playbook -e @config/main.json -c local -i inventory_php74 lemp74.yml
-
-* **lvemp74.yml**: *varnish + nginx + mysql + php7.4*
-
-  .. code-block:: bash
-
-      cd ~/playbooks/ && ansible-playbook -e @config/main.json -c local -i inventory_varnish74 lvemp74.yml
 
 .. meta::
    :description: Configure a server for CS-Cart or Multi-Vendor automatically on a clean installation of CentOS or Ubuntu operating systems with Ansible playbooks.
