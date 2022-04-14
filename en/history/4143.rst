@@ -1,0 +1,282 @@
+******
+4.14.3
+******
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Google Sitemap: The console command for automatic sitemap regeneration in Cron was added.
+
+[+] Add-ons: Product reviews: The ability to create product reviews in the admin panel and via the API was added.
+
+[+] Languages: The "Search" language variable was divided into several language variables depending on the purpose (for the admin panel, storefront, headers, buttons, text fields, field labels, main field).
+
+[+] Multi-Vendor: Mobile application: The ability to hide vendor information on the product page in the mobile app was added.
+
+[+] Multi-Vendor Plus: Add-ons: Common products for vendors: API: Entities for common products were added.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: Google reCaptcha: Required fields were added in the settings.
+
+[*] API: API restrictions were added for some editions.
+
+[*] Design: Promotions: The appearance of the "No Promotions Available" message was updated.
+
+[*] Multi-Vendor: Add-ons: Vendor panel configurator: Setting the style of the vendor panel through the config.local.php was added.
+
+[*] Order management: The "Save and process payment" button was removed from the order creation and editing pages.
+
+[*] Product bundles: The appearance of Product bundles on storefront design was updated.
+
+[*] Shipping methods: Notifications: Email notifications about shipping methods errors will not be sent more often then specified period.
+
+[*] Users: User type now can no longer be changed within user editing page interface.
+
+=========
+Bug Fixes
+=========
+
+[!] API: Filters: Database error displayed on a GET request. Fixed.
+
+[!] API: Shipments: When order had more than one shipment, data of the shipment could not be changed via API. Fixed.
+
+[!] Add-ons: Mobile application: Pages were displayed incorrectly in different languages. Fixed.
+
+[!] Add-ons: Mobile application: Splash image was not shown in full screen on Android. Fixed.
+
+[!] Add-ons: Mobile application: Mobile application promotion banner was displayed when viewing store pages in the mobile application. Fixed.
+
+[!] Add-ons: Newsletters: Subscribers: The Language and Period fields were missing in the advanced search. Fixed.
+
+[!] Add-ons: Product Bundles: There were problems when creating a product bundle with variation choice. Fixed.
+
+[!] Add-ons: Product bundles: Adding products to a bundle did not work correctly in some cases. Fixed.
+
+[!] Add-ons: Product bundles: After adding product bundle to the cart, the popup for selecting product options did not open. Fixed.
+
+[!] Add-ons: Product bundles: Formatting of the product bundle description was not saved. Fixed.
+
+[!] Add-ons: Product bundles: If option had a price modifier, then selecting this option for a product from bundle did not work correctly. Fixed.
+
+[!] Add-ons: Product bundles: It was impossible to create product bundle with mixed values of "Any option combinations" and "Any variation". Fixed.
+
+[!] Add-ons: Product bundles: The "Track inventory" setting did not affect the display of product bundle. Fixed.
+
+[!] Add-ons: Product bundles: The button to remove the product from the bundle was displayed if there were "View only" rights. Fixed.
+
+[!] Add-ons: Product bundles: The heading "Active bundles" was not aligned on the Promotions page. Fixed.
+
+[!] Add-ons: Product bundles: The image of the variation did not change when changing features. Fixed.
+
+[!] Add-ons: Product bundles: The selected option value was not applied to the product from bundle. Fixed.
+
+[!] Add-ons: Product bundles: When the Product Variations add-on was disabled, it was impossible to add product bundle to the cart. Fixed.
+
+[!] Add-ons: Product bundles: When the add-on was disabled, product bundles were shown on the promotions page. Fixed.
+
+[!] Add-ons: Product Variations: If the Product reviews add-on was installed, but the Comments and reviews was disabled, an error occurred when changing the default variation. Fixed.
+
+[!] Add-ons: Product Variations: Exim: In some cases, when the "Change default variation when it gets hidden or runs out of stock" setting was enabled, the default variation did not change if its quantity in the imported file was equal to zero. Fixed.
+
+[!] Add-ons: Product Variations: With the "Change default variation when it gets hidden or runs out of stock" setting enabled, it was possible to assign a default variation if it was out of stock. Fixed.
+
+[!] Add-ons: Refresh button could be available when it should not be. Fixed.
+
+[!] Add-ons: Tags: Notification about unsaved changes did not appear. Fixed.
+
+[!] Admin panel: Context menu: Text of the drop-down menu for changing status changed on different pages. Fixed.
+
+[!] Admin panel: Design: On mobile, the page title was not displayed if the storefront was closed. Fixed.
+
+[!] Admin panel: Design: The class attribute had a duplicatin was duplicated on the password change page. Fixed.
+
+[!] Categories: Bulk editition: Some categories couldn't be selected when adding categories in bulk. Fixed.
+
+[!] Checkout: Data from billing fields was reset after the delivery address was changed. Fixed.
+
+[!] Checkout: Downloadable products: It was impossible to checkout if the cart contained only digital products and the "Show unavailable shippings" setting was enabled. Fixed.
+
+[!] Checkout: If there were no active payment methods, PHP notices were displayed when trying to go to checkout. Fixed.
+
+[!] Core: Templates: Hooks: Hooks located in folders created as symbolic link to other folders didn't work. Fixed.
+
+[!] Core: The 'Registry::ifGet' method was always returning the value of the $default parameter in case when original value was false or 0. Fixed.
+
+[!] Design: Backend: The "No data found" messages were in different styles. Fixed.
+
+[!] Design: Layouts: On iOS 15, Apple Pay and Google Pay icons were not shown correctly. Fixed.
+
+[!] Design: Product page: In the mobile version on the product page with a long description, switching tabs didn't focused the visible area on the contents of the tab. Fixed.
+
+[!] Design: Products: The Quantity field did not hold hundreds. Fixed.
+
+[!] Design: Products: The checkboxes were not aligned on the product features tab. Fixed.
+
+[!] Design: RTL: The phone label was displayed incorrectly on the profile page. Fixed.
+
+[!] Design: Responsive: Menu: On tablets, clicking on the menu did not open a submenu. Fixed.
+
+[!] Design: Search: The toolbar was displayed incorrectly. Fixed.
+
+[!] Design: Some headings of the object lists were not in the same style. Fixed.
+
+[!] Design: Theme editor: Field arrows were not displayed. Fixed.
+
+[!] Design: Themes: Products:  On mobile devices, buttons for increasing and decreasing the number of products on the storefront had an extra underline. Fixed.
+
+[!] Edit content on-site: Blocks that were inserted into page content broke after text editing mode. Fixed.
+
+[!] Exim: SEO: The SEO-name of the product was generated incorrectly when importing the product. Fixed.
+
+[!] Export/Import: Features: Feature variants with "0" name were skipped during import. Fixed.
+
+[!] Export/Import: Features: It was possible to import feature with a type unavailable for the purpose. Fixed.
+
+[!] Export/Import: The last field of the import line was not reading if the line was the last line of the file, the field was empty, and there was not the end of line symbol. Fixed.
+
+[!] HiDPI displays support: Owl carousel: Lazy loading of images was not working. Fixed.
+
+[!] Images: HiDPI images were generated for all images in the administration panel even when corresponding add-on was disabled. Fixed.
+
+[!] Import data: The Import button was incorrectly positioned on the pages with the Help button. Fixed.
+
+[!] JS: Main menu items were displayed incorrectly if the cursor was on the menu when the page loaded. Fixed.
+
+[!] Layouts: Content language did not affect layouts in products and categories. Fixed.
+
+[!] Mobile application: There was an error on the payment page. Fixed.
+
+[!] Mobile application: Add-ons: Comments and reviews: The "Write review" button was missing when the "Reviews from customers only" setting was enabled. Fixed.
+
+[!] Mobile application: There was an error while saving a field with the Date type. Fixed.
+
+[!] Multi-Vendor: Accounting: Vendor balance could be calculated incorrectly after updating order. Fixed.
+
+[!] Multi-Vendor: Add-ons: Google sitemap: Category, which was unavailable for chosen storefront, was added to sitemap. Fixed.
+
+[!] Multi-Vendor: Add-ons: Reward points: Promotions: Points for completed order, as reward for fulfilling the conditions of promotion, were not given to customer if order status was changed from vendor panel. Fixed.
+
+[!] Multi-Vendor: Add-ons: Stores and pickup points: Pickup points were not assigned to vendor while importing. Fixed
+
+[!] Multi-Vendor: Add-ons: Vendor Plans: It was impossible to assign vendor plan in the admin panel when a lot of vendor plans existed. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor data premoderation: Administrators without product privileges saw products information in the admin panel dashboard. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor-to-admin payments: Refilling balance completes all pending payouts, even if balance was still negative. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor-to-admin payments: Suspended vendor with positive balance could see notification about their debt with amount of the current balance. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor-to-admin payments: "Marketplace fees" product name could not be changed if the vendor plan had category restrictions. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor panel configurator: Color settings were not applied everywhere. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor panel configurator: The "Name" field was duplicated in the add-on settings. Fixed.
+
+[!] Multi-Vendor: Design: Layouts: Vendor panel contained a Meta data & more link with functionality unavailable to vendor. Fixed.
+
+[!] Multi-Vendor: On the user list page, the vendor could view data of marketplace administrators and administrators of other vendors. Fixed.
+
+[!] Multi-Vendor: Marketplace setup wizard: The business model choice could result in several PHP Errors. Fixed.
+
+[!] Multi-Vendor: Orders: Adding another vendor products while editing an order removed the original products from the order. Fixed.
+
+[!] Multi-Vendor: Products: Options: Administrator could apply vendor-owned options to products in bulk. Fixed.
+
+[!] Multi-Vendor: Shipping methods: The "Use for all new vendors" checkbox was available even if a vendor was assigned to the shipping method. Fixed.
+
+[!] Multi-Vendor: Profile fields: A PHP Notice occurred during creating a new vendor profile field. Fixed.
+
+[!] Multi-Vendor: Profile fields: Vendor information: For the Company field, a radio button was displayed instead of a checkbox. Fixed.
+
+[!] Multi-Vendor: Users: Orders: Error 404 appeared when going to the customer page if the order was made by vendor's administrator. Fixed.
+
+[!] Multi-Vendor: Vendor panel: Dashboard: The blocks on the Dashboard were not aligned. Fixed.
+
+[!] Multi-Vendor: Vendor panel: Languages: If a large number of languages were active, some languages could not be selected. Fixed.
+
+[!] Multi-Vendor: Vendors: The region was displayed incorrectly on the vendor information page. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for vendors: Common product did not show information about product availability. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for vendors: Price of products with zero quantity was not shown. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: When importing a vendor preset in the admin panel, new common products were created instead of vendor products. PHP Type Error could also appear while importing the vendor import preset. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: Common Products for Vendors: It was not possible to add the vendor's offer of the common product to the cart. Fixed.
+
+[!] Multi-Vendor Ultimate: Add-ons: Common Products For Vendors: Wrong category list was loaded on the add common product page when there was more than one storefronts in the store and different vendors were attached to different storefronts. Fixed.
+
+[!] Multi-Vendor Ultimate: Add-ons: Common Products for Vendors: Warehouses: The "Buy a default common product" setting did not work correctly with warehouses. Fixed.
+
+[!] Multi-Vendor Ultimate: Add-ons: Order fulfillment by marketplace: Shipping information was missed if a free product was added to the order under promotion. Fixed.
+
+[!] Orders: Incorrect text was displayed in the notification when the first order was completed. Fixed.
+
+[!] Orders: Product with zero quantity was removed from an order during an attempt to add this product while editing the order. Fixed.
+
+[!] Orders: Users: PHP Notices occurred when the search string started with a space. Fixed.
+
+[!] Orders: When creating an order from the admin panel in the advanced product search window, it was impossible to reselect categories. Fixed.
+
+[!] Orders: When creating an order through the admin panel, the admin data was automatically entered into the customer information section. Fixed.
+
+[!] Privileges: Categories: The category creation page was available to the administrator with "View only" rights. Fixed.
+
+[!] Privileges: Options: The product options form was displayed incorrectly when the user group did not have rights to edit options. Fixed.
+
+[!] Product options: Forbidden combinations: Forbidden option combinations worked incorrectly. Fixed.
+
+[!] Products: Comparison list: Hidden product was not added to the comparison list. Fixed.
+
+[!] Products: Features: When changing a variant, the page number was reset. Fixed.
+
+[!] Products: In some cases, the "Update products" page was not displayed in full width. Fixed.
+
+[!] Products: Notifications: Back in stock notification could have been sent by mistake. Fixed.
+
+[!] Products: On the Variations tab, unsaved data notification was displayed when product was selected. Fixed.
+
+[!] Products: Sharing: When copying information from an existing storefront, the product position was not copied. Fixed.
+
+[!] Products: When creating a product, the name of the variant selected in the "Product details view" field by default wasn't true. Fixed.
+
+[!] Profile fields: The values of the additional fields were saved for all profiles of this user. Fixed.
+
+[!] Profiles: An error may have occurred when creating a new profile. Fixed.
+
+[!] Profiles: It was not possibleto fill in the State/area field in the billing section when creating a customer from the admin panel if the field was required. Fixed.
+
+[!] Sales reports: Incorrect results of sales reports occurred in case when several rate areas with the same country and different states were selected for the report. Fixed.
+
+[!] Shipping methods: Performance: Shipping calculation may execute excessive amount of duplicate queries to database. Fixed.
+
+[!] Tabs: Unsaved data notification was not displayed on inactive tabs. Fixed.
+
+[!] Theme Editor: Edit texts: Editing text using Redactor II was not working. Fixed.
+
+[!] Ultimate: Add-ons: Stores and pickup points: Import of pickup points from different storefronts did not work. Fixed.
+
+[!] Ultimate: Products: The values of the fields for products placed on several storefronts were not saved without changing at least one field. Fixed.
+
+[!] Ultimate: Add-ons: Warehouses: Deleting the rate area could lead to errors. Fixed.
+
+[!] Ultimate: Add-ons: Warehouses: Exim: Quantity of products in warehouse was reset incorrectly when importing. Fixed.
+
+[!] Ultimate: Add-ons: Warehouses: Notification on product being back in stock for a specific rate area was not sent to a customer. Fixed.
+
+[!] Ultimate: Add-ons: Warehouses: Product quantity in several warehouses was calculated incorrectly. Fixed.
+
+[!] Ultimate: Add-ons: Warehouses: The advanced search by the number of products did not work correctly. Fixed.
+
+[!] Ultimate: Add-ons: Warehouses: The product was not added to the cart when the pre-order was enabled. Fixed.
+
+[!] Users: Some profile data was deleted when placing an order using the second profile. Fixed.
+
+[!] Users: The "Force administrators to change password on the first login" setting didn't work. Fixed.
+
+[!] Users: Users were allowed to register using an incorrect E-mail. Fixed.
+
