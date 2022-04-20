@@ -92,7 +92,7 @@ Bug Fixes
 
 [!] Admin panel: Design: On mobile, the page title was not displayed if the storefront was closed. Fixed.
 
-[!] Admin panel: Design: The class attribute had a duplicatin was duplicated on the password change page. Fixed.
+[!] Admin panel: Design: The class attribute had a duplicate on the password change page. Fixed.
 
 [!] Categories: Bulk editition: Some categories couldn't be selected when adding categories in bulk. Fixed.
 
@@ -136,7 +136,7 @@ Bug Fixes
 
 [!] Export/Import: Features: It was possible to import feature with a type unavailable for the purpose. Fixed.
 
-[!] Export/Import: The last field of the import line was not reading if the line was the last line of the file, the field was empty, and there was not the end of line symbol. Fixed.
+[!] Export/Import: It was impossible to read the last field of the import line if the line was the last line of the file, the field was empty, and there was not the end of line symbol. Fixed.
 
 [!] HiDPI displays support: Owl carousel: Lazy loading of images was not working. Fixed.
 
@@ -242,13 +242,13 @@ Bug Fixes
 
 [!] Products: Sharing: When copying information from an existing storefront, the product position was not copied. Fixed.
 
-[!] Products: When creating a product, the name of the variant selected in the "Product details view" field by default wasn't true. Fixed.
+[!] Products: When creating a product, the name of the variant selected in the "Product details view" field by default was incorrect. Fixed.
 
 [!] Profile fields: The values of the additional fields were saved for all profiles of this user. Fixed.
 
 [!] Profiles: An error may have occurred when creating a new profile. Fixed.
 
-[!] Profiles: It was not possibleto fill in the State/area field in the billing section when creating a customer from the admin panel if the field was required. Fixed.
+[!] Profiles: It was not possible to fill in the State/area field in the billing section when creating a customer from the admin panel if the field was required. Fixed.
 
 [!] Sales reports: Incorrect results of sales reports occurred in case when several rate areas with the same country and different states were selected for the report. Fixed.
 

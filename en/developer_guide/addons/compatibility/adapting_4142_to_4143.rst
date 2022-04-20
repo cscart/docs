@@ -129,7 +129,7 @@ New hooks
 
        fn_set_hook('normalized_shipping_rate_reformat_value', $normalized_data, $rate, $rate_type, $formatted_value);
 
-#. This hook updates the SEO-name of the imported product after updating the product name::
+#. This hook is executed after updating the data in ``product_descriptions``::
 
        fn_set_hook('import_product_descr', $data, $product_id, $prod_company_id, $field, $is_new, $object);
 

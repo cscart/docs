@@ -112,7 +112,7 @@
 
        fn_set_hook('update_product_subscriber_pre', $product_id, $subscriber_data);
 
-#. Выполняется внутри обработчика хука  ``pre_place_order`` после того, как группе товаров присвоен способ доставки маркетплейса. Позволяет управлять информацией о доставке по заказам с доставкой от маркетплейса::
+#. Выполняется внутри обработчика хука ``pre_place_order`` после того, как группе товаров присвоен способ доставки маркетплейса. Позволяет управлять информацией о доставке по заказам с доставкой от маркетплейса::
 
        fn_set_hook('order_fulfillment_set_marketplace_shipping_to_product_group', array $cart, $group_key, $marketplace_group_key, array $chosen_shipping_data);
 
@@ -128,7 +128,7 @@
 
        fn_set_hook('normalized_shipping_rate_reformat_value', $normalized_data, $rate, $rate_type, $formatted_value);
 
-#. Обновляет SEO-имя импортированного товара после обновления названия товара::
+#. Выполняется после обновления данных в ``product_descriptions``::
 
        fn_set_hook('import_product_descr', $data, $product_id, $prod_company_id, $field, $is_new, $object);
 
