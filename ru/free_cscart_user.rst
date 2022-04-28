@@ -4,27 +4,27 @@ CS-Cart Free: Документация для пользователей
 
 Если вы только начинаете работать с CS-Cart, эти статьи могут оказаться вам полезны:
 
-* :doc:`/user_guide/manage_products`
+* :doc:`/user_guide/manage_products/index`
 
-* :doc:`/user_guide/import_export`
+* :doc:`/user_guide/import_export/index`
   
-* :doc:`/user_guide/payment_methods`
+* :doc:`/user_guide/payment_methods/index`
   
-* :doc:`/user_guide/shipping_and_taxes`
+* :doc:`/user_guide/shipping_and_taxes/index`
 
-* :doc:`/user_guide/orders`
+* :doc:`/user_guide/orders/index`
 
 * :doc:`/user_guide/look_and_feel/index`
 
-  * :doc:`/user_guide/look_and_feel/layouts`
+  * :doc:`/user_guide/look_and_feel/layouts/index`
 
     * :doc:`/user_guide/look_and_feel/layouts/blocks/onsale`
 
     * :doc:`/user_guide/look_and_feel/layouts/blocks/bestsellers`
 
-  * :doc:`/user_guide/look_and_feel/tabs`
+  * :doc:`/user_guide/look_and_feel/tabs/index`
 
-  * :doc:`/user_guide/look_and_feel/email_templates`
+  * :doc:`/user_guide/look_and_feel/email_templates/index`
 
   * :doc:`/user_guide/look_and_feel/themes/index`
 

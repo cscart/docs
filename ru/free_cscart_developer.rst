@@ -16,7 +16,7 @@ CS-Cart Free: Документация для разработчиков
 
   * :doc:`/developer_guide/core/coding_standards/php`
 
-* :doc:`/developer_guide/core`
+* :doc:`/developer_guide/core/index`
 
   * :doc:`/developer_guide/core/schemes`
 
@@ -32,7 +32,7 @@ CS-Cart Free: Документация для разработчиков
 
 * :doc:`/developer_guide/getting_started/configuring_cscart`
 
-* :doc:`/developer_guide/addons`
+* :doc:`/developer_guide/addons/index`
 
 * :doc:`/developer_guide/tools/debugger`
 
