@@ -57,7 +57,7 @@ CS-Cart разработан с учётом большинства возмож
         -   ``ftp_raw``
         -   ``ftp_rawlist``
         -   
-    *   -   ``eva``
+    *   -   ``eval``
         -   ``system``
         -   ``exec``
         -   ``shell_exec``
