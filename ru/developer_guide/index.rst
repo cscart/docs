@@ -7,6 +7,7 @@
     :glob:
 
     getting_started/index
+    free_cscart_developer
     core/index
     addons/index
     api/index

@@ -10,6 +10,7 @@ This section contains the information that is useful for CS-Cart developers.
     :glob:
 
     getting_started/index
+    free_cscart_developer
     core/index
     Hook Database <https://helpdesk.cs-cart.com/api>
     addons/index
