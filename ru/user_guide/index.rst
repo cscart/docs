@@ -10,6 +10,7 @@
     :glob:
 
     admin_panel
+    free_cscart_user
     look_and_feel/index
     addons/index
     currencies/index

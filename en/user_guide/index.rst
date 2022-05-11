@@ -8,6 +8,7 @@ User Guide
     :glob:
 
     admin_panel
+    free_cscart_user
     look_and_feel/index
     manage_products/index
     payment_methods/index
