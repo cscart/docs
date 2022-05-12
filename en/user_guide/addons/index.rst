@@ -67,6 +67,7 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     polls/index
     price_list/index
     price_list_for_customers/index
+    price_per_unit/index
     product_bundles/index
     product_reviews/index
     product_variations/index
