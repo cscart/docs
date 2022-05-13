@@ -280,3 +280,30 @@ Bug Fixes
 
 [!] Users: Users were allowed to register using an incorrect E-mail. Fixed.
 
+=============
+Service Packs
+=============
+
+----------
+4.14.3.SP1
+----------
+
+New Features and Improvements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[+] Multi-Vendor Plus: Hooks: A new 'master_products_create_vendor_product_pre' hook that checks if the allowed number of products in vendor plan matches the number of created product offerings for a common product was added.
+
+Bug Fixes
+~~~~~~~~~
+
+[!] Add-ons: Message center: Product variations: The "Ask a question" window was displayed incorrectly after switching the product variation in the quick view window. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors: Vendor Plans: The restriction in vendor plan on the number of sold products did not affect the common products for vendors. Fixed.
+
+[!] Multi-Vendor Ultimate: Add-ons: Common Products for Vendors: Warehouses: Price of the best offer did not correspond to the rate area of user. Fixed.
+
+[!] Orders: The order manager was not displayed in the order list. Fixed.
+
+[!] Ultimate: Add-ons: Warehouses: When the quantity of products in stock wasn't specified for warehouses, these products were not displayed on the storefront. Fixed.
+
+[!] Ultimate: Add-ons: Warehouses: Saving changes of a product using warehouses will update its total amount in all warehouses for all storefronts with incorrect value. Fixed.
