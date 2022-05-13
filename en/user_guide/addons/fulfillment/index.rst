@@ -1,6 +1,6 @@
-***************************************
-Order Fulfillment by Marketplace [Beta]
-***************************************
+********************************
+Order Fulfillment by Marketplace
+********************************
 
 .. note:: 
 
@@ -17,7 +17,7 @@ Marketplaces can handle shipping differently. Sometimes vendors ship their produ
 
 By default, Multi-Vendor implements one case: each vendor ships his products by himself, and buyers pay for shipping separately to each vendor. This approach is easier for the marketplace that is just starting its business.
 
-Other cases are implemented by the "Order fulfillment by marketplace [Beta]" add-on. Since the fulfillment service costs money to the marketplace, this cost can be included in the vendor plans. When the add-on is active, vendors during the registration can see which plan offers fulfillment by marketplace.
+Other cases are implemented by the "Order fulfillment by marketplace" add-on. Since the fulfillment service costs money to the marketplace, this cost can be included in the vendor plans. When the add-on is active, vendors during the registration can see which plan offers fulfillment by marketplace.
 
 .. image:: img/vendor_plans.png
     :align: center
