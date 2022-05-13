@@ -2,6 +2,10 @@
 How To: Set up the Suppliers Add-on
 ***********************************
 
+.. important::
+
+    This article is about the add-on that is deprecated and no longer supported.
+
 To set up the **Suppliers** add-on:
 
 *   In the Administration panel, go to **Add-ons → Manage add-ons**.
