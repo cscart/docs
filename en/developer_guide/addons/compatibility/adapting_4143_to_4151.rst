@@ -107,7 +107,7 @@ New Functions
 
 #. Forms params from request for getting product picker list::
 
-       function fn_products_form_product_list_params($request)
+       fn_products_form_product_list_params($request)
 
 #. Updates product subscriber (updates, if product subscriber exist; inserts, if it is not)::
 
@@ -148,23 +148,23 @@ Changed Functions
 #. ::
 
        // Old:
-       function fn_get_default_product_options($product_id, $get_all = false, array $product = []);
+       fn_get_default_product_options($product_id, $get_all = false, array $product = []);
        // New:
-       function fn_get_default_product_options($product_id, $get_all = false, array $product = [], $only_avail = false);
+       fn_get_default_product_options($product_id, $get_all = false, array $product = [], $only_avail = false);
 
 #. ::
 
        // Old:
-       function fn_is_allowed_options($product);
+       fn_is_allowed_options($product);
        // New:
-       function fn_is_allowed_options($product, $only_avail = false);
+       fn_is_allowed_options($product, $only_avail = false);
 
 #. ::
 
        // Old:
-       function fn_checkout_get_shippping_calculation_type(array $cart, $is_location_changed);
+       fn_checkout_get_shippping_calculation_type(array $cart, $is_location_changed);
        // New:
-       function fn_checkout_get_shippping_calculation_type(array $cart, $is_location_changed, $is_shipping_method_changed = false).
+       fn_checkout_get_shippping_calculation_type(array $cart, $is_location_changed, $is_shipping_method_changed = false).
 
 
 ============
