@@ -10,11 +10,13 @@ Adapt Your Add-ons and Themes to CS-Cart 4.15.1
 Add-on Changes
 ==============
 
+-----------------------------
 "GDPR Compliance (EU)" Add-on
 -----------------------------
 
 In 4.15.1, we introduced a new tool that allows users to refuse optional cookies and view the list of cookies that the store uses.
 
+~~~~~~~~~~~~~~~~
 Existing Cookies
 ~~~~~~~~~~~~~~~~
 
@@ -28,6 +30,7 @@ Existing Cookies
 
 The names that should be used as ``cookie purpose`` in the schema are specified after the "—".
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Extend Cookies with an Add-on
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
