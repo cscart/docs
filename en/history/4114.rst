@@ -10,6 +10,8 @@ New Features and Improvements
 
 [+] Add-ons: Product variations: Notifications about the need to save products after changing add-on settings were added.
 
+[+] Add-ons: Searchanise: The add-on now works with the “Product variations” add-on and the “Common products for vendors” add-on.
+
 [+] Add-ons: SEO: JSON-LD markup was added for products.
 
 [+] Add-ons: Warehouses [Beta]: Now the add-on works correctly with multiple storefronts.

@@ -2,6 +2,10 @@
 Product Feeds
 *************
 
+.. warning::
+
+    This article is about deprecated feature.
+
 .. note ::
 
     This feature is currently in beta status and aimed primarily for testing.
