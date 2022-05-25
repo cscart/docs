@@ -10,13 +10,7 @@ Functionality
 
 `Searchanise <https://docs.searchanise.io/how-searchanise-works-cs-cart/>`_ can search through products, categories and pages (i.e., blog posts) in your store. Search by products is carried out by their code, name, description, features, and option combination codes. 
 
-<<<<<<< HEAD
-#. Switch to the **Browse all available add-ons** tab.
-
-#. Find the **Searchanise** add-on and click the **Install** button next to it.
-=======
 .. note ::
->>>>>>> 5b8cea23... Ru&En: Searchanise: Add-on documentation updated. Changelogs added
 
     Starting with version 4.8.1, Searchanise is compatible with the :doc:`/user_guide/addons/age_verification/index` add-on. Products restricted by age will only be displayed in search results if a customer has verified his or her age.
 
