@@ -2,6 +2,10 @@
 Instant Search Widget
 *********************
 
+.. warning::
+
+    This article is no longer supported. Read the `Searchanise documentation <https://docs.searchanise.io/article-categories/instant-search-widget-cscart/>`_ for the latest information.
+
 Configure widget
 ****************
 

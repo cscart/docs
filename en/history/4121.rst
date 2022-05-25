@@ -210,6 +210,12 @@ Bugfixes
 
 [!] Add-ons: RMA: Warehouses [Beta]: A PHP Notice could occur during the processing of a return request, if the product in the request was split by warehouses. Fixed.
 
+[!] Add-ons: Searchanise: If found products had a slider filter with the same min/max values (for example, zero price for all products), the filter was enabled, and it could be selected. Fixed.
+
+[!] Add-ons: Searchanise: Requests for updating products were sent without the subscription, which caused database errors such as "Out of range value for column 'queue_id' at row 1 (167)INSERT INTO cscart_se_queue". Fixed.
+
+[!] Add-ons: Searchanise: If a company/companies were not selected, the search results showed products of all vendors instead of the common products. Fixed.
+
 [!] Add-ons: SEO: 301 redirects: The name of the selected product was displayed incorrectly. Fixed.
 
 [!] Add-ons: SEO: Changing page title and meta description did not affect the preview of Google rich snippets. Fixed.

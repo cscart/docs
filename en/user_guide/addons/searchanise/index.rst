@@ -4,57 +4,69 @@ Searchanise
 
 The **Searchanise** add-on integrates CS-Cart with the SaaS-solution of the same name. It adds enhanced instant product search to the storefront by replacing its regular search bar with a special search widget. Shoppers see search results as they type in the search bar, and can quickly review the found products. So, customers can get to the right product way much faster because they don’t even have to finish typing while the preview box forms the first impression of the product.
 
-To set up the **Searchanise** add-on:
+=============
+Functionality
+=============
 
-#. In the administration panel go to **Add-ons → Manage add-ons**.
+`Searchanise <https://docs.searchanise.io/how-searchanise-works-cs-cart/>`_ can search through products, categories and pages (i.e., blog posts) in your store. Search by products is carried out by their code, name, description, features, and option combination codes. 
 
-#. Find the **Searchanise** add-on and click the **Install** button next to it.
-
-#. Once the add-on is installed, find it on the list of add-ons and click on its name.
-
-#. Click the **Connect Store to Searchanise** button.
-
-Searchanise can search through products, categories and pages (i.e., blog posts) in your store.
-
-.. note::
-
-   Searchanise can find products by product code, name, description, features, and option combination codes. 
-
-.. image:: img/searchanise_01.png
-    :align: center
-    :alt: Search example
-
-.. important ::
+.. note ::
 
     Starting with version 4.8.1, Searchanise is compatible with the :doc:`/user_guide/addons/age_verification/index` add-on. Products restricted by age will only be displayed in search results if a customer has verified his or her age.
 
-With the Searchanise panel you can navigate through the Searchanise sections that are described separately further in this guide.
+.. image:: img/searchanise_01.png
+    :scale: 35 %
+    :align: center
+    :alt: Search example
+
+=============
+Configuration
+=============
+
+Install the **Searchanise** add-on :doc:`like any other add-on </user_guide/addons/1manage_addons>`. Then click on its name to open the add-on settings. 
+
+The Searchanise panel is on the *Settings* tab. Click the **Connect Store to Searchanise** button. After successful installing, you will be able to go to navigate through the Searchanise sections:
+
+* :doc:`/user_guide/addons/searchanise/dashboard`
+* `Analytics <https://docs.searchanise.io/analytics/>`_ 
+* `Instant search widget <https://docs.searchanise.io/article-categories/instant-search-widget-cscart/>`_
+* `Preferences <https://docs.searchanise.io/manage-products-preferences-cs-cart/>`_
+* `Suggestion dictionary <https://docs.searchanise.io/adjust-suggestions/>`_
+* `Translations <https://docs.searchanise.io/translate-widgets-cs-cart/>`_
+* `Synonyms <https://docs.searchanise.io/add-synonyms/>`_
+* `Stop words <https://docs.searchanise.io/use-stop-words/>`_
+* `Merchandising <https://docs.searchanise.io/product-merchandising-cs-cart/>`_
+* `Redirects <https://docs.searchanise.io/use-redirects/>`_
+
+Above this panel click the **View all plans** button to learn more about `Searchanise pro features <https://searchanise.io/cscart-app/>`_ and update to it.
 
 .. image:: img/searchanise_02.png
     :align: center
+    :scale: 35 %
     :alt: Searchanise panel
 
-Above this panel you can see the **Unlock Pro features** button with that you can learn more about `Searchanise Pro features <http://start.searchanise.com/pricing/>`_ and update to it.
+In this panel you can also see the **Help** icon. Click it to send a message to Searchanise developers. Feel free to ask any questions and suggest your solutions for improvement of the search widget.
 
-.. image:: img/searchanise_03.png
-    :align: center
-    :alt: Upper panel
-
-
-In this panel you can also see the **Help** icon. Click it to send a message to Searchanise developers. Feel free to ask us any questions and suggest your solutions for improvement of our search widget.
-
-To send a message, type your text in the text area, write your e-mail in the **Contact e-mail** field, and click **Send message**.
+To send a message, type your text in the text area, write your e-mail, and click **Send issue**.
 
 .. image:: img/searchanise_04.png
     :align: center
+    :scale: 40 %
     :alt: Help panel
+
+Related article
+===============
+
+.. toctree::
+    :titlesonly:    
+
+    dashboard
 
 .. toctree::
     :maxdepth: 2
-    :titlesonly:
-    :glob:
+    :titlesonly:    
+    :hidden:
 
-    dashboard
     search_preview
     instant_search_widget
     suggestions

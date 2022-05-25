@@ -24,6 +24,10 @@ Functionality Changes
 
 [*] Add-ons: Mobile application: The settings of the mobile application are now split into 2 tabs: the settings that require releasing a new version of the app, and the settings that can be changed on the fly.
 
+[*] Add-ons: Searchanise: Pages data for indexing was modified.
+
+[*] Add-ons: Searchanise: Product feature type mapping was extended.
+
 [*] Mobile application: Two new product statuses were added: "Requires approval" and "Disapproved".
 
 [*] Multi-Vendor: Add-ons: Vendor data premoderation: The settings interface has been updated.

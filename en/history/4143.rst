@@ -10,6 +10,8 @@ New Features and Improvements
 
 [+] Add-ons: Product reviews: The ability to create product reviews in the admin panel and via the API was added.
 
+[+] Add-ons: Searchanise: Search by Vendors was added to Instant Search Widget.
+
 [+] Languages: The "Search" language variable was divided into several language variables depending on the purpose (for the admin panel, storefront, headers, buttons, text fields, field labels, main field).
 
 [+] Multi-Vendor: Mobile application: The ability to hide vendor information on the product page in the mobile app was added.
