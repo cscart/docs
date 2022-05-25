@@ -2,6 +2,10 @@
 Redirects
 *********
 
+ .. warning::
+
+    This article is no longer supported. Read the `Searchanise documentation <https://docs.searchanise.io/use-redirects/>`_ for the latest information.
+
 .. note ::
 
     This section is available only in **Searchanise Pro**.

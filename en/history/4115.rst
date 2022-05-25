@@ -8,6 +8,8 @@ New Features and Improvements
 
 [+] Add-ons: Facebook Pixel: The tracking of currency and order total at checkout was added.
 
+[+] Add-ons: Searchanise: The ability to run Searchanise queues using Cron was added.
+
 [+] Categories: A context menu for working with the selected categories was added.
 
 [+] Countries: A context menu for working with the selected countries was added.
@@ -88,6 +90,10 @@ Bugfixes
 [!] Add-ons: Product variations: Passing non-integer values in 'product_id' in requests could lead to database errors. Fixed.
 
 [!] Add-ons: Reward points: Links to view the customer's reward points were displayed to the administrator even if he did not have access to that. Fixed.
+
+[!] Add-ons: Searchanise: If a user made some modifications to the code, the "undefined index 'value'" PHP notice could occur. Fixed.
+
+[!] Add-ons: Searchanise: The add-on could not be enabled when it had the Disabled status. Fixed.
 
 [!] Add-ons: SEO: A product which could be bought in advance was showed as OutOfStock in schema.org data. Fixed.
 

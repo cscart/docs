@@ -2,6 +2,10 @@
 Suggestion Dictionary
 *********************
 
+.. warning::
+
+    This article is no longer supported. Read the `Searchanise documentation <https://docs.searchanise.io/adjust-suggestions/>`_ for the latest information.
+
 In this section you can see the list of phrases that will appear among the suggestions, when a customer starts to type the first word of the phrase in the search bar.
 
 .. image:: img/searchanise_suggestion_01.png
