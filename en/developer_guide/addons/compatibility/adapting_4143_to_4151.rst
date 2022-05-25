@@ -7,15 +7,15 @@ Adapt Your Add-ons and Themes to CS-Cart 4.15.1
     :backlinks: none
 
 ==============
-Addons changes
+Add-on Changes
 ==============
 
-"GDPR Compliance (EU)" add-on
+"GDPR Compliance (EU)" Add-on
 -----------------------------
 
 In 4.15.1, we introduced a new tool that allows users to refuse optional cookies and view the list of cookies that the store uses.
 
-Existing cookies
+Existing Cookies
 ~~~~~~~~~~~~~~~~
 
 #. Strictly necessary cookies (cannot be disabled) — ``strictly_necessary``
@@ -28,7 +28,7 @@ Existing cookies
 
 The names that should be used as ``cookie purpose`` in the schema are specified after the "—".
 
-Extend cookies with an add-on
+Extend Cookies with an Add-on
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If your add-on brings new cookies and you want to extend the existing list to comply with the standard, then you need to:
@@ -43,8 +43,8 @@ If your add-on brings new cookies and you want to extend the existing list to co
          'name' => 'cookie_name',
          'translations' => [
              'zz' => [
-                 'title' => __('cookie_title'),
-                 'description' => __('cookie_description')
+                 'title' => 'langvar_identifier',
+                 'description' => 'langvar_identifier'
              ],
          ],
          'required' => true/false,
@@ -52,14 +52,27 @@ If your add-on brings new cookies and you want to extend the existing list to co
      ];
      return $schema;
 
+#. Add the required language variables to the ``scripts.post.tpl``::
+
+    html
+    <script>
+        (function (_, $) {
+            _.tr({
+                ...
+                "langvar_identifier": '{__("langvar_identifier")|escape:"javascript"}'
+                ...
+            });
+        })(Tygh, Tygh.$);
+    </script>
+
 #. Enable the JS script that will set the cookie. There are several ways to do it:
 
-   2.1. ::
+   3.1. ::
 
           html
           {script src="path/script.js" cookie-name="cookie_name"}
 
-   2.2. ::
+   3.2. ::
 
           html
           <script
@@ -68,3 +81,167 @@ If your add-on brings new cookies and you want to extend the existing list to co
               data-src="src"
               data-name="cookie_name"
           ></script>
+
+============
+Core Changes
+============
+
+-----------
+New Classes
+-----------
+
+#. ``\Tygh\VendorPayoutDetailsBuilder``—creates array of payout components to simplify additional calculations.
+
+---------------
+Removed Classes
+---------------
+
+#. ``\Tygh\Addons\VendorRating\Calculator\EvalBackend``
+
+-------------
+New Functions
+-------------
+
+#. Forms params from request for getting product picker list::
+
+       function fn_products_form_product_list_params($request)
+
+#. Updates product subscriber (updates, if product subscriber exist; inserts, if it is not)::
+
+       fn_update_product_subscriber($product_id, $subscriber_data)
+
+#. Deletes subscribers of the product::
+
+       fn_delete_product_subscribers($subscriber_ids)
+
+#. Determines whether to allow user access to the admin API or not::
+
+       fn_check_user_type_admin_area_for_api(array $user_data = [])
+
+#. Prevents usage of deleted and disabled currencies::
+
+       fn_save_currencies_integrity($primary_currency = CART_PRIMARY_CURRENCY)
+
+#. Gets Zapier hooks::
+
+       fn_zapier_get_hooks(array $params = [])
+
+#. Updates Zapier hook::
+
+       fn_zapier_update_hook(array $data, $hook_id = 0)
+
+#. Deletes Zapier hook::
+
+       fn_zapier_delete_hook($hook_id)
+
+#. Starts a database transaction::
+
+       db_transaction(Closure $closure, $attempts = 1)
+
+-----------------
+Changed Functions
+-----------------
+
+#. ::
+
+       // Old:
+       function fn_get_default_product_options($product_id, $get_all = false, array $product = []);
+       // New:
+       function fn_get_default_product_options($product_id, $get_all = false, array $product = [], $only_avail = false);
+
+#. ::
+
+       // Old:
+       function fn_is_allowed_options($product);
+       // New:
+       function fn_is_allowed_options($product, $only_avail = false);
+
+#. ::
+
+       // Old:
+       function fn_checkout_get_shippping_calculation_type(array $cart, $is_location_changed);
+       // New:
+       function fn_checkout_get_shippping_calculation_type(array $cart, $is_location_changed, $is_shipping_method_changed = false).
+
+
+============
+Hook Changes
+============
+
+---------
+New Hooks
+---------
+
+
+#. This hook is executed before creating common product offer::
+
+       fn_set_hook('master_products_create_vendor_product_pre', $master_product_id, $company_id, $product, $result, $can_create);
+
+#. This hook changes parameters for getting products picker list::
+
+       fn_set_hook('products_form_product_list_params_post',  $request, $params);
+
+#. This hook is executed before placing an order to create an order through API request. Allows you to modify cart data::
+
+       fn_set_hook('api_orders_create_before_place_order', $params, $status, $data, $valid_params, $cart, $customer_auth, $order_placement_action);
+
+#. This hook is executed after new call request creation. Allows you to use data and ID of the created request::
+
+       fn_set_hook('create_call_request_post', $data, $request_id;
+
+#. This hook is executed when an exception was not handled, allowing users to log exceptions::
+
+       fn_set_hook('error_handler_handle_exception', $exception); 
+
+#. This hook is executed before updating user group::
+
+       fn_set_hook('update_usergroup_pre', $usergroup_data, $usergroup_id, $lang_code);
+
+#. This hook is executed before deleting user groups::
+
+       fn_set_hook('delete_usergroups_pre', $usergroup_ids);
+
+#. This hook is executed before returning payout details for updating order::
+
+       fn_set_hook('vendor_payout_details_builder_create_updated_details_post', $this, $updated_order_info, $old_details, $updated_details);
+
+#. This hook is executed after creation all payout components. Allows you to add specific components::
+
+       fn_set_hook('vendor_payout_details_builder_create_details_post', $this, $order_info, $cart, $payout_details);
+
+#. This hook allows you to perform additional actions after add-on installation::
+
+       fn_set_hook('install_addon_post', $addon, $show_notification, $install_demo, $allow_unmanaged);
+
+#. This hook is executed after add-on updating::
+
+       fn_set_hook('update_addon_post', $settings, $storefront_id); 
+
+#. This hook is executed after getting add-on list. Allows you to modify the list::
+
+       fn_set_hook('get_addons_post', $params, $items_per_page, $lang_code, $storefront_id, $company_id, $addons, $addons_counter);
+
+-------------
+Changed Hooks
+-------------
+
+#. ::
+
+       // Old:
+       fn_set_hook('master_products_reindex_storefront_offers_count', $params, $conditions);
+       // New:
+       fn_set_hook('master_products_reindex_storefront_offers_count', $params, $conditions, $all_vendors_storefront_ids);
+
+#. ::
+
+       // Old:
+       fn_set_hook('master_products_reindex_storefront_min_price', $params, $conditions);
+       // New:
+       fn_set_hook('master_products_reindex_storefront_min_price', $params, $conditions, $all_vendors_storefront_ids);
+
+#. ::
+
+       // Old:
+       fn_set_hook('vendor_plans_calculate_commission_for_payout_before', $order_info, $company_data, $payout_data, $total, $shipping_cost, $surcharge_from_total, $surcharge_to_commission, $commission, $taxes);
+       // New:
+       fn_set_hook('vendor_plans_calculate_commission_for_payout_before', $order_info, $company_data, $payout_data, $total, $shipping_cost, $surcharge_from_total, $surcharge_to_commission, $commission, $taxes, $vendor_taxes).
