@@ -481,3 +481,38 @@ ul.current li.current a.current {
 img {
     margin-bottom: 15px;
 }
+
+body > .content-wrapper > .row {
+    margin-top: 0;
+    padding-bottom: 48px;
+}
+
+[class^='content--'], [class*=' content--']{
+    margin-top: 40px;
+}
+
+.navbar-default {
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    height: calc(100vh - 93px);
+    margin-bottom: 0;
+}
+
+.scroll-to-top-button {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #28aced;
+    border-radius: 20px;
+    border: 0;
+    color: #fff;
+    z-index: 1;
+}
