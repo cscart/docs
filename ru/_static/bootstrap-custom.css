@@ -845,3 +845,125 @@ table .row-even {
         }
 
 }
+
+[class^="toctree-l"] a.current.reference.internal {
+    font-weight: 700;
+}
+
+.toctree-wrapper {
+    padding: 18px 0em 0em 0em;
+}
+
+.admonition {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px 15px 7px 15px;
+
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+.note, .admonition.note {
+    color: #468847;
+    background-color: #dff0d88c;
+    border-color: #d6e9c6;
+}
+
+.important, .admonition.important {
+    color: #795c2a;
+    border-radius: 4px;
+    background: #f1f2de80;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+.hint, .admonition.hint {
+    color: #c09853;
+    background-color: #fcf8e38e;
+    border: 1px solid #fbeed5;
+}
+
+.warning, .admonition.warning {
+    color: #b94a48;
+    background-color: #f2dede7e;
+    border-color: #eed3d7;
+}
+
+.first.admonition-title {
+    display: none;
+}
+
+.highlighttable {
+    background-color: #fcfcfc;
+    border: 1px solid #eeeeee;
+    border-radius: 3px
+}
+
+.docutils.literal, code {
+    font-family: 'Fira Mono', monospace;
+
+    padding: 3px 6px;
+    color: #d14;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+
+    border-radius: 3px;
+
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre;
+    white-space: pre-wrap;
+
+    font-size: 90%;
+}
+
+.highlight pre {
+    font-family: 'Fira Mono', monospace;
+
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 16px;
+    line-height: 20px;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre;
+    white-space: pre-wrap;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,0.15);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.sidebar-block {
+    position: sticky;
+    top: 20px;    
+}
+
+.sidebar-list {
+    position: sticky;
+    top: 130px;
+    overflow-y: auto;
+    height: calc(100vh - 150px);
+    margin-bottom: 0;
+}
+
+.scroll-to-top-button {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #28aced;
+    border-radius: 20px;
+    border: 0;
+    color: #fff;
+    z-index: 1;
+}
