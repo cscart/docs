@@ -482,23 +482,6 @@ img {
     margin-bottom: 15px;
 }
 
-body > .content-wrapper > .row {
-    margin-top: 0;
-    padding-bottom: 48px;
-}
-
-[class^='content--'], [class*=' content--']{
-    margin-top: 40px;
-}
-
-.navbar-default {
-    position: sticky;
-    top: 0;
-    overflow-y: auto;
-    height: calc(100vh - 93px);
-    margin-bottom: 0;
-}
-
 .scroll-to-top-button {
     position: fixed;
     width: 40px;
@@ -515,4 +498,23 @@ body > .content-wrapper > .row {
     border: 0;
     color: #fff;
     z-index: 1;
+}
+
+@media screen and (min-width: 769px) {
+    body > .content-wrapper > .row {
+        margin-top: 0;
+        padding-bottom: 48px;
+    }
+
+    [class^='content--'], [class*=' content--']{
+        margin-top: 40px;
+    }
+
+    .navbar-default {
+        position: sticky;
+        top: 0;
+        overflow-y: auto;
+        height: calc(100vh - 93px);
+        margin-bottom: 0;
+    }
 }
