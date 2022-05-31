@@ -163,9 +163,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <script>
   // Scroll sidebar navigation to center
-  document.querySelector('.current.reference').scrollIntoView({
-      block: 'center'
-  });
+  var currentElem = document.querySelector('.current.reference');
+
+  if (document.body.contains(currentElem)) {
+    currentElem.scrollIntoView({
+        block: 'center'
+    });
+  }
   window.scrollTo(0, 210);
 
   document.querySelector('#scroll_to_top_button').addEventListener('click', function() {
