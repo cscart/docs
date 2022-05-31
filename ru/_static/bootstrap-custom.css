@@ -937,19 +937,6 @@ table .row-even {
     border-radius: 4px;
 }
 
-.sidebar-block {
-    position: sticky;
-    top: 20px;    
-}
-
-.sidebar-list {
-    position: sticky;
-    top: 130px;
-    overflow-y: auto;
-    height: calc(100vh - 150px);
-    margin-bottom: 0;
-}
-
 .scroll-to-top-button {
     position: fixed;
     width: 40px;
@@ -966,4 +953,20 @@ table .row-even {
     border: 0;
     color: #fff;
     z-index: 1;
+}
+
+
+@media screen and (min-width: 769px) {
+    .sidebar-block {
+        position: sticky;
+        top: 20px;    
+    }
+
+    .sidebar-list {
+        position: sticky;
+        top: 130px;
+        overflow-y: auto;
+        height: calc(100vh - 150px);
+        margin-bottom: 0;
+    }
 }
