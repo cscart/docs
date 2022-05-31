@@ -959,14 +959,14 @@ table .row-even {
 @media screen and (min-width: 769px) {
     .sidebar-block {
         position: sticky;
-        top: 20px;    
+        top: 20px;
     }
 
     .sidebar-list {
+        --sidebar-top-height: 162px;
         position: sticky;
-        top: 130px;
+        top: 0;
         overflow-y: auto;
-        height: calc(100vh - 150px);
-        margin-bottom: 0;
+        height: calc(100vh - var(--sidebar-top-height));
     }
 }
