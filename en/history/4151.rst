@@ -1,0 +1,222 @@
+************************
+CS-Cart 4.15.1 Changelog
+************************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Advanced products import: The ability to use archives with images was added.
+
+[+] Add-ons: Advanced products import: The ability to download an example of an import preset was added.
+
+[+] Add-ons: GDPR Compliance (EU): Request and fixation of consent to the individual cookie setting were added.
+
+[+] Add-ons: Integration with Zapier was added.
+
+[+] Add-ons: Price per unit add-on, that allows you to show price per milliliter, gram, etc., as required by EU regulations, was added.
+
+[+] Add-ons: Product Variations: The setting to make all variations in a group count as one product for quantity discount calculation was added.
+
+[+] Add-ons: Product reviews: The ability to import and export product reviews in the admin panel was added.
+
+[+] API: The ability to import products without category definition was added.
+
+[+] API: The ability to display product description on the product list was added.
+
+[+] Multi-vendor: Add-ons: Vendor data premoderation: Products: Display of changed product fields was added.
+
+[+] Multi-Vendor: Privileges: Privilege to merge vendors was added.
+
+[+] Multi-Vendor Plus: Add-ons: Vendor Privileges: Privileges: Privilege for managing user groups with the "Vendor" type was added.
+
+[+] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Information about each vendor shipping was added to the product page.
+
+[+] Multi-Vendor Ultimate: The ability to designate a storefront that is accessible to administrators was added.
+
+[+] Privileges: Privileges for managing user groups with the "Administrator" type and for using advanced HTML in the content were added.
+
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: Suppliers: Add-on marked as deprecated.
+
+[*] Core: Minimal PHP version requirement bumped from 5.6.0 to 7.1.0.
+
+[*] Core: The Smarty library was updated to version 4.1.0
+
+[*] Core: Precision of customer country by IP detection improved.
+
+[*] Products: Features: Options: The addition of the new variant was updated.
+
+[*] Profile fields: Phone: Phone autofill was disabled for Safari browser because it was not working correctly.
+
+[*] Storefronts: Currencies: The ability to change the default storefront currency was added.
+
+[*] Taxes: Tax amount was included into product subtotal and order shipping fixed cost when using unit price based on tax calculation method. Fixed.
+
+=========
+Bug Fixes
+=========
+
+[!] Add-ons: Advanced products import: It was impossible to upload some files for the import from the remote servers. Fixed.
+
+[!] Add-ons: Advanced products import: The value of the "Images delimiter" field did not change when importing XML files. Fixed.
+
+[!] Add-ons: CommerceML: Product was not displayed on the admin panel and the storefront, if the base price was not specified. Fixed.
+
+[!] Add-ons: Hook handlers in add-ons using add-on schema v4 could be called incorrectly. Fixed.
+
+[!] Add-ons: Landing pages from Tilda: Сontent of Tilda page might not be displayed on the storefront. Fixed.
+
+[!] Add-ons: Maps and geolocation: Shipping cost could not be estimated for products with mandatory file type options. Fixed.
+
+[!] Add-ons: Product bundles: Bundle could be hidden because of insufficiency of product even if this product inventory was not tracked. Fixed.
+
+[!] Add-ons: Product bundles: The description of the bundle was not saved if the field value was empty when saving. Fixed.
+
+[!] Add-ons: Product Variations: Out of stock variations could be hidden on the storefront when "Show all possible feature variants" setting was active. Fixed.
+
+[!] Add-ons: Product Variations: Promotions: Variation product could not be discounted as promotion bonus in some cases. Fixed.
+
+[!] Add-ons: Product Variations: Features: Product variations could be created based on a feature that is not available for the product category. Fixed.
+
+[!] Add-ons: Product Variations: Options: Unavailable combinations of options were not applied to child variations. Fixed
+
+[!] Add-ons: Product Variations: With numerous features, the variation list was overflowed. Fixed.
+
+[!] Add-ons: RMA: Unauthorized customer could not see created return requests. Fixed.
+
+[!] Add-ons: RetailCRM: Suppliers: Shipping methods were duplicated when syncing orders with products from suppliers. Fixed.
+
+[!] Add-ons: SEO: Storefront: When storefront's URL was specified with port, all SEO links on the storefront could not work. Fixed.
+
+[!] Add-ons: SEO: The title on the category page was not updated when going to a new page. Fixed.
+
+[!] Add-ons: Social buttons: Social buttons were sometimes not displayed on mobile devices. Fixed.
+
+[!] Add-ons: Stores and pickup points: PHP notice appeared if the rate area for all countries was disabled. Fixed.
+
+[!] Add-ons: Stripe payments: Sometimes when paying for Google or Apple Pay, money was debited and the order was not created. Fixed.
+
+[!] Add-ons: Stripe payments: Stripe Connect payments: When entering an incorrect card number, the checkout page could freeze. Fixed.
+
+[!] Add-ons: Watermarks: Watermark could be applied to a logo if the image of the product and the logo had the same title. Fixed.
+
+[!] API: Orders: When creating an order with a product with disabled options, the values of the options were included in the order. Fixed.
+
+[!] Block manager: Due to an incorrect redirect_url in the blocks that were embedded in the page content, the remaining blocks were not updated. Fixed.
+
+[!] Checkout: It was possible to place an order without paying for delivery. Fixed.
+
+[!] Context menu: In the context menu, the percentage price calculation was incorrect. Fixed.
+
+[!] Design: Languages: Language icons without a dropdown list were not displayed. Fixed.
+
+[!] Design: Layouts: If the wrapper had a form, then block forms didn't work. Fixed.
+
+[!] Design: Layouts: Some blocks in layout sections could have wrong width. Fixed.
+
+[!] Design: Mobile view: Product image gallery in the "The Big picture" template and preloader icon on the checkout page were not centered on the screen. Fixed.
+
+[!] Design: Product Filters: The price slider in product filters was displayed incorrectly in RTL languages. Fixed.
+
+[!] Design: RTL: Some icons may not display correctly. Fixed.
+
+[!] Document Editor: The translation of the snippet name was not displayed in the documents. Fixed.
+
+[!] Export/Import: The "Set quantity of all products to zero" option did not work. Fixed.
+
+[!] File Editor: In CS-Cart most of the files were not available in the File editor. Fixed
+
+[!] Hooks: The "orders:list_extra_links" hook was duplicated on the storefront list page. Fixed.
+
+[!] Languages: Product features: Information about categories was displayed in the language selected for the admin panel. Fixed.
+
+[!] Mobile application: Home screen was blank on startup. Fixed.
+
+[!] Mobile application: Search worked in limited mode. Fixed.
+
+[!] Multi-Vendor: Add-ons: Advanced products import: Vendor data premoderation: Existing product could be put on moderation as the new ones after import. Fixed.
+
+[!] Multi-Vendor: Add-ons: Storefront REST API: GET request to the "sra_vendors" entity could return incorrect data. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor data premoderation: Maps and geolocation: When previewing product on moderation, the web server gave errors in logs. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor data premodetation: Product after first disapproving could never be sent to moderation again if approval of product info updates wasn't required. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor panel configurator: Menu items with language and currency selection did not work on mobile devices in the vendor panel menu. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor plans: Vendor could choose a plan that was not available to them. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor plans: Vendor created in the admin panel wasn't assigned to the storefront. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor plans: In some cases, the text for the vendor plans was overflowing. Fixed.
+
+[!] Multi-Vendor: Features: An error occurred when a vendor saved common feature. Fixed.
+
+[!] Multi-Vendor: Features: Vendors could see the "Remove" button for categories of common features. Fixed.
+
+[!] Multi-Vendor: Design: Vendors: The width of the first column was incorrect on the vendor list page. Fixed.
+
+[!] Multi-Vendor: Vendors: Categories: An error could occur when a category ID that does not exist in the store was entered in the address bar. Fixed.
+
+[!] Multi-Vendor: Orders: The order could be considered paid before the payment process began. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: All product variations were added to the wish list instead of a single variation. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: The product was incorrectly added to the cart with the "Track inventory" setting disabled and "Buy a default common product" enabled. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: The "Add to cart" button in some cases didn't work for best offer. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: There could be errors on the storefront with disabled vendor offers. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Values of features for common product and vendor offers wasn't shown in the vendor panel. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: In the HTML code of the "And other offers" link, the attribute was not replaced by a value and remained in the product detail page code. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Offers of common products were available for choosing in manually product block although they were not displayed in this block on the storefront. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Bestsellers & On-Sale Products: Products were not displayed in the "Bestsellers" block and on the page with bestsellers. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: Vendor catalog promotion could be applied to other vendor's products. Fixed.
+
+[!] Multi-Vendor Ultimate: Add-ons: Order fulfillment by marketplace: Stores and pickup points: Stores could not be seen on the storefront. Fixed.
+
+[!] Notifications: Emails: The logo was not clickable. Fixed.
+
+[!] Payment methods: The database request was made incorrectly. Fixed.
+
+[!] Products: Features: When saving a feature with variants, the redirect returned to the page of the current feature. Fixed.
+
+[!] Products: Features: A variant of another feature was added to the product. Fixed.
+
+[!] Products: Filters: Some filters created via the context menu in the list of features were not displayed on the storefront. Fixed.
+
+[!] Products: Options: Notification of unsaved data was not displayed when adding options. Fixed.
+
+[!] Products: Out of stock: When changing the "Out of stock" option the quantity of goods was reset to zero. Fixed.
+
+[!] Products: The alert about unsaved changes was not displayed when reloading the page after creating a feature on the product editing page. Fixed.
+
+[!] Profile fields: An error appeared when uploading files to the profile. Fixed.
+
+[!] Profiles: Selecting the year of birth worked incorrectly on the profile editing page on the storefront. Fixed.
+
+[!] Promotions: When creating a promotion with a condition on a product with the selected options, a PHP Notice occurred. Fixed.
+
+[!] RTL: Currencies: Displaying the amount after the currency did not work. Fixed.
+
+[!] Taxes: Tax exempt status didn't affect taxes included into price. Fixed.
+
+[!] Ultimate: Add-ons: Warehouses: Product Variations: Product amount was saved incorrectly for variation products. Fixed.
+
+[!] Ultimate: Add-ons: Warehouses: Store or warehouses could not have more than 88 shipping destination areas. Fixed.
+
+[!] Ultimate: Storefronts: In some cases, the storefront selection was displayed incorrectly. Fixed.
+
+[!] User groups: Filters: Administrators with the "View only" privilege for filters could see the "Remove" button for filter categories. Fixed.
+
+[!] Users: Profiles: It was not possible to make the "State" field mandatory during checkout or profile update/registration. Fixed.
