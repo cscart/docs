@@ -124,18 +124,6 @@
 
        fn_save_currencies_integrity($primary_currency = CART_PRIMARY_CURRENCY);
 
-#. Получает хуки Zapier::
-
-       fn_zapier_get_hooks(array $params = []);
-
-#. Обновляет хук Zapier::
-
-       fn_zapier_update_hook(array $data, $hook_id = 0);
-
-#. Удаляет хук Zapier::
-
-       fn_zapier_delete_hook($hook_id)
-
 #. Запускает транзакцию базы данных::
 
        db_transaction(Closure $closure, $attempts = 1);

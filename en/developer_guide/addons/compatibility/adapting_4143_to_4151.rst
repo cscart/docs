@@ -125,18 +125,6 @@ New Functions
 
        fn_save_currencies_integrity($primary_currency = CART_PRIMARY_CURRENCY)
 
-#. Gets Zapier hooks::
-
-       fn_zapier_get_hooks(array $params = [])
-
-#. Updates Zapier hook::
-
-       fn_zapier_update_hook(array $data, $hook_id = 0)
-
-#. Deletes Zapier hook::
-
-       fn_zapier_delete_hook($hook_id)
-
 #. Starts a database transaction::
 
        db_transaction(Closure $closure, $attempts = 1)
