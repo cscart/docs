@@ -20,9 +20,9 @@ New Features and Improvements
 
 [+] Add-ons: Product reviews: The ability to import and export product reviews in the admin panel was added.
 
-[+] API: The ability to import products without category definition was added.
+[+] API: The ability to create products without passing the category was added.
 
-[+] API: The ability to display product description on the product list was added.
+[+] API: The ability to return product description on the product list was added.
 
 [+] Multi-vendor: Add-ons: Vendor data premoderation: Products: Display of changed product fields was added.
 
@@ -47,15 +47,11 @@ Functionality Changes
 
 [*] Core: The Smarty library was updated to version 4.1.0
 
-[*] Core: Precision of customer country by IP detection improved.
-
-[*] Products: Features: Options: The addition of the new variant was updated.
+[*] Products: Features: Options: The button for more convenient variant addition when editing a feature or option appeared.
 
 [*] Profile fields: Phone: Phone autofill was disabled for Safari browser because it was not working correctly.
 
 [*] Storefronts: Currencies: The ability to change the default storefront currency was added.
-
-[*] Taxes: Tax amount was included into product subtotal and order shipping fixed cost when using unit price based on tax calculation method. Fixed.
 
 =========
 Bug Fixes
@@ -64,8 +60,6 @@ Bug Fixes
 [!] Add-ons: Advanced products import: It was impossible to upload some files for the import from the remote servers. Fixed.
 
 [!] Add-ons: Advanced products import: The value of the "Images delimiter" field did not change when importing XML files. Fixed.
-
-[!] Add-ons: CommerceML: Product was not displayed on the admin panel and the storefront, if the base price was not specified. Fixed.
 
 [!] Add-ons: Hook handlers in add-ons using add-on schema v4 could be called incorrectly. Fixed.
 
@@ -141,21 +135,19 @@ Bug Fixes
 
 [!] Multi-Vendor: Add-ons: Advanced products import: Vendor data premoderation: Existing product could be put on moderation as the new ones after import. Fixed.
 
-[!] Multi-Vendor: Add-ons: Storefront REST API: GET request to the "sra_vendors" entity could return incorrect data. Fixed.
-
-[!] Multi-Vendor: Add-ons: Vendor data premoderation: Maps and geolocation: When previewing product on moderation, the web server gave errors in logs. Fixed.
+[!] Multi-Vendor: Add-ons: Vendor data premoderation: Maps and geolocation: When previewing product on moderation, php error notices were displayed. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor data premodetation: Product after first disapproving could never be sent to moderation again if approval of product info updates wasn't required. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor panel configurator: Menu items with language and currency selection did not work on mobile devices in the vendor panel menu. Fixed.
 
-[!] Multi-Vendor: Add-ons: Vendor plans: Vendor could choose a plan that was not available to them. Fixed.
+[!] Multi-Vendor: Add-ons: Vendor plans: Vendors could choose a plan that was not available to them. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor plans: Vendor created in the admin panel wasn't assigned to the storefront. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor plans: In some cases, the text for the vendor plans was overflowing. Fixed.
 
-[!] Multi-Vendor: Features: An error occurred when a vendor saved common feature. Fixed.
+[!] Multi-Vendor: Features: Vendors could see the "Save" button when viewing common features. Fixed. 
 
 [!] Multi-Vendor: Features: Vendors could see the "Remove" button for categories of common features. Fixed.
 
