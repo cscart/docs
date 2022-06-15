@@ -58,6 +58,10 @@ code {
     font-size: 13px;
 }
 
+.margin-0 {
+    margin: 0;
+}
+
 .navbar-inner {
     border-bottom: 2px solid rgba(219,219,219,0.3);
     background: rgba(255,255,255,1);
@@ -93,10 +97,19 @@ code {
     text-shadow: 0 1px 0 #fff;
 }
 
+.navbar-main--en-layout {
+    border: none;
+}
+
 .navbar--en-layout {
     background: none;
     border: none;
-    padding: 0;
+    margin: 0;
+    padding: 20px 0;
+    border: 1px solid #f3f3f3;
+    border-top: 0;
+    border-bottom: 0;
+    border-radius: 0;
 }
 
 .navbar--en-layout .container-fluid {
@@ -293,7 +306,6 @@ code {
 
 #sidebar {
     padding: 5px 12px 15px 12px;
-    border: 1px solid #f3f3f3;
 }
 
 #sidebar h3 {
@@ -341,9 +353,18 @@ code {
     padding-bottom: 60px;
     }
 
+.row--main {
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+.content--en-layout {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .footer {
-    margin: -48px auto 0;
-    height: 35px;
+    min-height: 35px;
     position: relative;
     background: #141414;
 }
