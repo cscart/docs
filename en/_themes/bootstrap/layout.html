@@ -120,7 +120,7 @@
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 {{ navBar() }}
 <div class="container-fluid content-wrapper">
-  <div class="row">
+  <div class="row row--main">
     {%- block sidebar1 %}{{ bsidebar() }}{% endblock %}
     <div class="col-lg-9 col-md-8 col-sm-7 col-xs-12 content--en-layout">
       {% block body %}{% endblock %}
@@ -157,14 +157,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 {%- block footer %}
 <footer class="footer">
   <div class="container">
-    <p class="pull-right">
+    <p class="pull-right margin-0">
       <a href="#">Back to top</a>
       {% if theme_source_link_position == "footer" %}
         <br/>
         {% include "sourcelink.html" %}
       {% endif %}
     </p>
-    <p>
+    <p class="margin-0">
     {%- if show_copyright %}
       {%- if hasdoc('copyright') %}
         {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}<br/>
