@@ -87,6 +87,7 @@
     commerceml/index
     google_recaptcha/index
     janrain/index
+    robokassa_split/index
     retailcrm/index
     seo/index
          

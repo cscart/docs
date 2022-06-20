@@ -43,9 +43,12 @@
     qiwi_rest
     qiwi
     rbk
-    robokassa
     webmoney
-        
+
+.. toctree::
+    :hidden:
+
+    robokassa
 
 :doc:`Создание и настройка способов оплаты в CS-Cart. <adding_payment>`
 
