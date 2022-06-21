@@ -31,6 +31,7 @@
     google_backend_signin/index
     cities/index
     payment_dependencies/index
+    zapier/index
     edost/index
     maps_and_geolocation/index
     data_feeds/index
