@@ -26,13 +26,13 @@ New Features and Improvements
 
 [+] Multi-Vendor: Add-ons: Vendor panel configurator: The new add-on that simplifies vendor panel was added.
 
-[+] Multi-Vendor: Categories: Now you can link categories to a specific storefront or make them common for all storefronts.
-
 [+] Multi-Vendor: Notifications:  Now you can set vendor email addresses for the specific types of notifications.
 
 [+] Multi-Vendor: Vendors: The "Review new vendors before granting access to the admin panel" setting was added. New vendors are assigned "New" or "Active" status.
 
 [+] Multi-Vendor Ultimate: Add-ons: Order fulfillment by marketplace [Beta]: Stores and pickup points: An ability to add pickup points owned by marketplace and to use them for the "Pickup from store" shipping method was added.
+
+[+] Multi-Vendor Ultimate: Categories: Now you can link categories to a specific storefront or make them common for all storefronts.
 
 [+] Order statuses: Now it is forbidden to change the Inventory field for the Open and Paid order statuses.
 
