@@ -17,6 +17,8 @@ Before you install CS-Cart or Multi-Vendor, make sure that your server meets the
 
     system_requirements
 
+.. _installation-procedure:
+
 ======================
 Installation Procedure
 ======================

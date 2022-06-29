@@ -14,6 +14,8 @@ While you install CS-Cart or Multi-Vendor, you may tick the **Install demo data*
    :backlinks: none
    :local:
 
+.. _way-1-clean-install:
+
 ====================
 Way 1. Clean Install
 ====================
@@ -59,6 +61,8 @@ This way will suit you **ONLY if:**
 #. :doc:`Change the meta data </user_guide/look_and_feel/changing_attributes/edit_meta_tags>` of the **Homepage** layout page. By default, the meta data uses information about CS-Cart. Replace it with your own.
 
 #. Now you have a clean installation of CS-Cart or Multi-Vendor without demo data.
+
+.. _way-2-manual-removal-of-demo-data:
 
 ==================================
 Way 2. Manual Removal of Demo Data
