@@ -87,6 +87,7 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     stores_and_pickup_points/index
     stripe_payments/index
     stripe_connect/index
+    suppliers/index
     tags/index
     vendor_data_premoderation/index
     vendor_debt_payout/index

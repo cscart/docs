@@ -129,6 +129,18 @@ New Functions
 
        db_transaction(Closure $closure, $attempts = 1)
 
+#. Checks if the current user has access to the storefront manage::
+
+       fn_check_permission_storefronts($storefront_id)
+
+#. Adds storefront id to params::
+
+       fn_prepare_storefront_id(array &$params, $field)
+
+#. Gets the default company id for storefront::
+
+       fn_get_default_company_id_for_storefront($storefront_id)
+
 -----------------
 Changed Functions
 -----------------
@@ -212,6 +224,22 @@ New Hooks
 
        fn_set_hook('get_addons_post', $params, $items_per_page, $lang_code, $storefront_id, $company_id, $addons, $addons_counter);
 
+#. This allows you to edit the parameters::
+
+       fn_set_hook('get_carts_pre', $params, $items_per_page, $fields, $condition, $join);
+
+#. This hook prepares the parameters before finding the storefront::
+
+       fn_set_hook('storefront_repository_find_pre', $params, $items_per_page, $fields);
+
+#. This hook is executed after the calculation of the supported image formats allows you to change this list::
+
+       fn_set_hook('image_helper_get_supported_formats_post', $object_type, $supported_formats);
+
+#. This hook is executed after requesting variant selection, allows you to modify its result::
+
+      fn_set_hook('get_current_filters_after_variants_select_query', $params, $filters, $selected_filters, $area, $lang_code, $variant_values, $field_variant_values, $filter_id, $filter, $result, $fields_join, $products_table_base_joins, $fields_where, $products_table_base_conditions);
+
 -------------
 Changed Hooks
 -------------
@@ -236,3 +264,10 @@ Changed Hooks
        fn_set_hook('vendor_plans_calculate_commission_for_payout_before', $order_info, $company_data, $payout_data, $total, $shipping_cost, $surcharge_from_total, $surcharge_to_commission, $commission, $taxes);
        // New:
        fn_set_hook('vendor_plans_calculate_commission_for_payout_before', $order_info, $company_data, $payout_data, $total, $shipping_cost, $surcharge_from_total, $surcharge_to_commission, $commission, $taxes, $vendor_taxes).
+
+#. ::
+
+       // Old:
+       fn_set_hook('init_currency_post', $params, $area, $primary_currency, $secondary_currency);
+       // New:
+       fn_set_hook('init_currency_post', $params, $area, $primary_currency, $secondary_currency, $currencies).

@@ -128,6 +128,18 @@
 
        db_transaction(Closure $closure, $attempts = 1);
 
+#. Проверяет, имеет ли текущий пользователь доступ к управлению витриной::
+
+       fn_check_permission_storefronts($storefront_id)
+
+#. Добавляет идентификатор витрины в параметры::
+
+       fn_prepare_storefront_id (массив и параметры $, поле $)
+
+#. Получает для витрины идентификатор компании по умолчанию::
+
+       fn_get_default_company_id_for_storefront($storefront_id)
+
 ------------------
 Изменённые функции
 ------------------
@@ -210,6 +222,22 @@
 
        fn_set_hook('get_addons_post', $params, $items_per_page, $lang_code, $storefront_id, $company_id, $addons, $addons_counter);
 
+#. Позволяет менять параметры::
+
+       fn_set_hook('get_carts_pre', $params, $items_per_page, $fields, $condition, $join);
+
+#. Подготавливает параметры перед поиском витрины:
+
+       fn_set_hook('storefront_repository_find_pre', $params, $items_per_page, $fields);
+
+#. Выполняется после того, как расчёт поддерживаемых форматов изображений позволяет изменить список::
+
+       fn_set_hook('image_helper_get_supported_formats_post', $object_type, $supported_formats);
+
+#. Этот хук выполняется после запроса выбора варианта, позволяет модифицировать его результат::
+
+       fn_set_hook('get_current_filters_after_variants_select_query', $params, $filters, $selected_filters, $area, $lang_code, $variant_values, $field_variant_values, $filter_id, $filter, $result, $fields_join, $products_table_base_joins, $fields_where, $products_table_base_conditions);
+
 ---------------
 Изменённые хуки
 ---------------
@@ -233,4 +261,11 @@
        // Было:
        fn_set_hook('vendor_plans_calculate_commission_for_payout_before', $order_info, $company_data, $payout_data, $total, $shipping_cost, $surcharge_from_total, $surcharge_to_commission, $commission, $taxes);
        // Стало:
-       fn_set_hook('vendor_plans_calculate_commission_for_payout_before', $order_info, $company_data, $payout_data, $total, $shipping_cost, $surcharge_from_total, $surcharge_to_commission, $commission, $taxes, $vendor_taxes).
+       fn_set_hook('vendor_plans_calculate_commission_for_payout_before', $order_info, $company_data, $payout_data, $total, $shipping_cost, $surcharge_from_total, $surcharge_to_commission, $commission, $taxes, $vendor_taxes);
+
+#. ::
+
+       // Было:
+       fn_set_hook('init_currency_post', $params, $area, $primary_currency, $secondary_currency);
+       // Стало:
+       fn_set_hook('init_currency_post', $params, $area, $primary_currency, $secondary_currency, $currencies).
