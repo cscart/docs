@@ -29,9 +29,9 @@
 
 * :doc:`/install/useful_info/remove_demo_data`
 
-  * :ref:`Способ 1. Чистая установка <ru_way-1-clean-install>`
+  * :ref:`Способ 1. Чистая установка <ru-way-1-clean-install>`
 
-  * :ref:`Способ 2. Ручное удаление демо-данных <ru_way-1-clean-install>`
+  * :ref:`Способ 2. Ручное удаление демо-данных <ru-way-2-clean-install>`
 
 * :doc:`/developer_guide/getting_started/configuring_cscart`
 
