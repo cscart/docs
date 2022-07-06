@@ -110,6 +110,10 @@ Bug Fixes
 
 [!] Add-ons: RetailCRM: Suppliers: Shipping methods were duplicated when syncing orders with products from suppliers. Fixed.
 
+[!] Add-ons: Searchanise: "Identifier "view" is not defined" error occurred during checkout. Fixed.
+
+[!] Add-ons: Searchanise: Relevance sorting was not applied on the results page when an empty query was entered in the Instant Search Widget. Fixed.
+
 [!] Add-ons: SEO: Storefront: When storefront's URL was specified with port, all SEO links on the storefront could not work. Fixed.
 
 [!] Add-ons: SEO: The title on the category page was not updated when going to a new page. Fixed.
@@ -185,6 +189,8 @@ Bug Fixes
 [!] Multi-Vendor: Add-ons: Vendor plans: In some cases, the text for the vendor plans was overflowing. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor-to-admin payments: The language in which the auto-comment was created was taken from the default language, instead of the language from the company settings. Fixed.
+
+[!] Multi-Vendor: Add-ons: Searchanise: The sync request queue was not reset after pressing the "Force re-indexation" button. Fixed.
 
 [!] Multi-Vendor: Add-ons: Stripe Connect payments: Sometimes when paying with a card with 3-D Secure enabled, money was debited and the order was not created. Fixed.
 
