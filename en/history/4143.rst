@@ -24,6 +24,8 @@ Functionality Changes
 
 [*] Add-ons: Google reCaptcha: Required fields were added in the settings.
 
+[*] Add-ons: Message center: Conversion of links in messages was added.
+
 [*] API: API restrictions were added for some editions.
 
 [*] Design: Promotions: The appearance of the "No Promotions Available" message was updated.
