@@ -44,6 +44,7 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     google_recaptcha/index
     google_sitemap/index
     hidpi_displays_support/index
+    import_from_shopify/index
     image_zoom/index
     zapier/index
     janrain/index
