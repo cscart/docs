@@ -15,3 +15,5 @@
     upgrade_via_console
     possible_upgrade_issues
     apply_diff_file
+
+* `Как получить улучшения и новый функционал в CS-Cart <https://www.cs-cart.ru/upgrade-policy.html>`_

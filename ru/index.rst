@@ -70,6 +70,8 @@
 
     faq
 
+* `Исправление ошибок в процессе работы с CS-Cart <https://www.cs-cart.ru/ispravleniye-bagov.html>`_
+
 * `Управление интернет-магазином CS-Cart — мануал <https://www.cs-cart.ru/features-admin.html>`_
 
 * `Система управления интернет-магазином CS-Cart — видеокурс <https://www.cs-cart.ru/videos/admin/>`_
