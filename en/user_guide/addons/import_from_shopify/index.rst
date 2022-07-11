@@ -17,7 +17,7 @@ Functionality
     :align: center
     :alt: "Administration → Sync data" page.
 
-Select a file or enter its url and click **Import**. After successful data importing, you will see how many new products/variations have been loaded. Shopify and CS-Cart differ in the meaning of some entities, including categories. So all the products imported from Shopify are the "products without category".
+Select a file or enter its url and click **Import**. After successful data importing, you will see how many new products/variations have been loaded. Shopify and CS-Cart differ in the meaning of some entities, including categories. So all the products imported from Shopify are the "products without category". In these cases CS-Cart creates such a category automatically.
 
 Multi-Vendor owners additionally choose the import mode:
 
