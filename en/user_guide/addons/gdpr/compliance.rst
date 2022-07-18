@@ -20,7 +20,7 @@ Step 1. Install and Configure the Add-on
 
 #. Once the add-on is installed, click on its name to open the add-on's settings.
 
-#. On the **General** tab you'll find the following settings:
+#. On the **Settings → General** tab you'll find the following settings:
 
    * **Cookie consent**—determines if customers will be notified about cookies, and whether or not they'll have to accept the use of cookies before being allowed to use the site.
 
@@ -35,17 +35,36 @@ Step 1. Install and Configure the Add-on
            The ability to ask for explicit consent for the use of cookies first appeared in version 4.8.1. Until then, store owners could only ask for implicit consent under **Settings → Security settings** in the administration panel.
 
    .. image:: img/gdpr-cookies.png
+       :scale: 50%
        :align: center
        :alt: The ability to ask for explicit consent for cookies first appeared in version 4.8.1.
+
+   * **Privacy policy page**—determines at what page from the list on the **Website → Pages** you will have your privacy policy. 
 
    The add-on's settings also have the **GDPR** tab; there you'll be able to choose where to show the notifications about personal data processing, and edit the texts of those notifications. We'll do it later, in step 3.
 
 #. Click **Save**.
 
+============================================
+Step 2. Add a Cookie Consent Form (Optional)
+============================================
+
+Starting from the version 4.15.1, CS-Cart brings a cookie consent form. Visitors see the list of services that set cookies, and what they do. This is necessary for meeting the demands of privacy-related laws like the European Union's GDPR.
+
+To let your customers choose which cookies to accept, set **Cookie consent** to *Explicit* in the **GDPR** add-on settings. After successful setting customers will see a small notification with a request for enabling additional services that require cookies. There visitors customize the services and their respective cookies that you use on your website. All optional cookies (that do not affect the ability to place an order) can be disabled, if a visitor chooses so. A link to the privacy policy placed on this consent will lead to the page you've specified on Step 1.
+
+Let your visitors make a change on their decision, when they want to deactivate or activate services as they see fit. For this, add a link code, for example to your privacy policy page, and customers will be able to choose cookies again. The Klaro service that is used for cookie consent allows to add a link to the website content::
+
+  <a class="button is-success" onclick="return klaro.show();">Change consent settings</a>
+
+.. image:: img/gdpr-change-consent.png
+    :align: center
+    :alt: Changing cookie consent settings.
+
 .. _gdpr-data-request-buttons:
 
 ========================================================
-Step 2. Add Buttons for Data-Related Requests (Optional)
+Step 3. Add Buttons for Data-Related Requests (Optional)
 ========================================================
 
 .. note::
@@ -85,12 +104,13 @@ The GDPR requires you to give customers the data you have about them, or anonymi
 If you intend to use this way, make sure to update the data processing notifications afterwards (we'll be doing it in step 3). The default notifications don't describe this simplified way of contacting you about GDPR-related questions.
 
 ============================================
-Step 3. Check and Update the Privacy Notices
+Step 4. Check and Update the Privacy Notices
 ============================================
 
 The settings of the **GDPR Compliance (EU)** add-on have the **GDPR** tab. It contains the list of places where checkboxes for requesting consent will be displayed. For each place, you can choose whether or not you want a checkbox for requesting consent to appear.
 
 .. image:: img/gdpr-checkboxes.png
+    :scale: 30%
     :align: center
     :alt: The notices about personal data processing can be edited separately from each other.
 
@@ -111,7 +131,7 @@ We tried our best to make the default personal data processing notifications as 
     If you don't want the notification to be too long, add a link to your Privacy Policy to all of them, and describe everything in the Privacy Policy. However, we can't guarantee that this practice is GDPR-compliant, so you'd have to consult your lawyer regarding this.
 
 ================================
-Step 4. See How the Add-on Works
+Step 5. See How the Add-on Works
 ================================
 
 #. Check the storefront. Make sure that the notifications about personal data processing appear in every place where you collect personal data.
@@ -143,7 +163,7 @@ Step 4. See How the Add-on Works
        :alt: The personal data of a user in the admin panel.
 
 ======================================
-Step 5. Make Sure You Comply with GDPR
+Step 6. Make Sure You Comply with GDPR
 ======================================
 
 **The add-on by itself won't make you GDPR-compliant.** We recommend `familiarizing yourself with the GDPR <http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2016.119.01.0001.01.ENG&toc=OJ:L:2016:119:TOC>`_ and looking into other measures that you may need to take.

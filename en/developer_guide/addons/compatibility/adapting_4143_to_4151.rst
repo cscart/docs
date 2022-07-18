@@ -89,6 +89,18 @@ If your add-on brings new cookies and you want to extend the existing list to co
 Core Changes
 ============
 
+-------------------------------------
+Value changes of fields in order info
+-------------------------------------
+
+#. The type of tax calculation that is used when creating an order is stored in the order information and is available in the ``calculation_type`` field for each tax in the ``$order_info['taxes']`` array.
+
+#. When calculating tax per unit, taxes excluded from the price are no longer added to the following values:
+
+   * ``$order_info['shipping_cost']``;
+
+   * ``$order_info['products'][$pid]['subtotal']``, where ``$pid`` is the product ID in this array.
+
 -----------
 New Classes
 -----------
