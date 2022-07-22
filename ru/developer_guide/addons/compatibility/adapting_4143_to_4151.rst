@@ -177,6 +177,19 @@
        // Стало:
        fn_checkout_get_shippping_calculation_type(array $cart, $is_location_changed, $is_shipping_method_changed = false);
 
+#. ::
+
+       // Было:
+       fn_export_product_descr($product_id, $value, $lang_code, $field);
+       // Стало:
+       fn_export_product_descr($product_id, $value, $lang_code, $field, $skip_edition_check = false);
+
+#. ::
+
+       // Было:
+       fn_import_product_descr(array $data, $product_id, $field, $is_new = false, array $object = []);
+       // Стало:
+       fn_import_product_descr(array $data, $product_id, $field, $is_new = false, array $object = [], $skip_edition_check = false).
 
 ====
 Хуки
