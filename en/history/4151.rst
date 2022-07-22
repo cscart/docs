@@ -281,3 +281,21 @@ Bug Fixes
 [!] Users: Add-ons: The storefront administrator could change the status of the add-on, delete and install the addon. Fixed.
 
 [!] Users: Profiles: It was not possible to make the "State" field mandatory during checkout or profile update/registration. Fixed.
+
+=============
+Service Packs
+=============
+
+----------
+4.15.1.SP1
+----------
+
+[!] Add-ons: PayPal payments: Taxes: If in the admin panel the tax calculation was set to the unit price and price didn't include tax, then the order amount didn't include tax while paying via PayPal. Fixed.
+
+[!] Add-ons: Price per unit: It was impossible to export/import the "Unit name" field. Fixed.
+
+[!] Multi-Vendor: Add-ons: PayPal Commerce Platform: Stripe Connect payments: A PHP error occurred on the order details page. Fixed.
+
+[!] Order management: The product discount was applied every time the order was changed. Fixed.
+
+[!] Products: Features: Administrator couldn't add variants to an existing feature in a popup. Fixed.
