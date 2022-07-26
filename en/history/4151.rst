@@ -299,3 +299,9 @@ Service Packs
 [!] Order management: The product discount was applied every time the order was changed. Fixed.
 
 [!] Products: Features: Administrator couldn't add variants to an existing feature in a popup. Fixed.
+
+----------
+4.15.1.SP2
+----------
+
+[!] Export/Import: Product import could cause a database error. Fixed.
