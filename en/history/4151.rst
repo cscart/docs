@@ -160,6 +160,8 @@ Bug Fixes
 
 [!] Export/Import: The "Set quantity of all products to zero" option did not work. Fixed.
 
+[!] Export/Import: In some cases import of Features could create duplicates of feature variants. Fixed
+
 [!] File Editor: In CS-Cart most of the files were not available in the File editor. Fixed
 
 [!] Hooks: The "orders:list_extra_links" hook was duplicated on the storefront list page. Fixed.
@@ -281,6 +283,8 @@ Bug Fixes
 [!] Users: Add-ons: The storefront administrator could change the status of the add-on, delete and install the addon. Fixed.
 
 [!] Users: Profiles: It was not possible to make the "State" field mandatory during checkout or profile update/registration. Fixed.
+
+
 
 =============
 Service Packs

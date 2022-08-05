@@ -41,7 +41,7 @@ Step 1. Install and Configure the Add-on
 
    * **Privacy policy page**—determines at what page from the list on the **Website → Pages** you will have your privacy policy. 
 
-   The add-on's settings also have the **GDPR** tab; there you'll be able to choose where to show the notifications about personal data processing, and edit the texts of those notifications. We'll do it later, in step 3.
+   The add-on's settings also have the **GDPR** tab; there you'll be able to choose where to show the notifications about personal data processing, and edit the texts of those notifications. We'll do it later, in Step 4.
 
 #. Click **Save**.
 
@@ -172,4 +172,4 @@ For example, you may want to review and update your legal documents to address t
 
 * **Privacy Policy.** It exists by default under **Website → Pages** in the Administration panel, unless you have deleted it. You can edit it like any other content page in your store.
 
-* **Terms of Service.** They appear at checkout if you *ask customers to agree to terms & conditions during checkout* under **Settings → Checkout**. The text can be edited under **Administration → Languages → Translations** in the following language variable: ``terms_and_conditions_content``.
+* **Terms of Service.** They appear at checkout if you *ask customers to agree to terms & conditions during checkout* under **Settings → Checkout**. The text can be edited under **Administration → Text & Languages → Edit texts** in the following language variable: ``terms_and_conditions_content``.
