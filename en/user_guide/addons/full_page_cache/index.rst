@@ -4,7 +4,7 @@ Marketplace Performance Booster
 
 .. important::
 
-    This add-on doesn't come with CS-Cart and Multi-Vendor by default. You can `buy it separately in our Marketplace <https://marketplace.cs-cart.com/add-ons/integrations/marketplace-performance-booster.html>`_.
+    This add-on doesn't come with CS-Cart and Multi-Vendor by default. You can `buy it separately in our Marketplace <https://marketplace.cs-cart.com/marketplace-performance-booster.html>`_.
 
 Multi-Vendor by itself works well with thousands and hundreds of thousands of products. But when there are many products and customers, every bit of optimization helps. And if you plan to grow your business to the scale of Amazon, eBay, or Shopclues, with millions of products and customers, extra optimization becomes a necessity.
 

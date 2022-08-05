@@ -77,13 +77,13 @@ Vendors connect their PayPal business accounts to receive the money for their pr
 
 .. note::
 
-    CS-Cart uses `Connected path <https://www.paypal.com/lu/smarthelp/article/what-integration-methods-are-available-for-paypal-for-marketplaces-ts2126>`_ as an integration method with PayPal Commerce Platform. This method requires business accounts from all vendors. 
+    CS-Cart uses `Connected path <https://developer.paypal.com/limited-release/commerce-platform/v3/seller-onboarding/upfront/>`_ as an integration method with PayPal Commerce Platform. This method requires business accounts from all vendors. 
 
 Here is an instruction for vendors on how to connect their PayPal accounts:
 
 #. Open the **Vendors → Vendors** page.
 
-#. Click on the vendor’s name to open his settings.
+#. Click on the vendor's name to open his settings.
 
 #. Go to the **PayPal** tab.
 
@@ -93,9 +93,9 @@ Here is an instruction for vendors on how to connect their PayPal accounts:
        :align: center
        :alt: Connecting with paypal in the vendor's settings
 
-#. You’ll be taken to the PayPal website. Follow the instructions there to connect your account to the marketplace. This will allow you to receive money from orders to your PayPal account without the need to request its withdrawal from the marketplace owner.
+#. You'll be taken to the PayPal website. Follow the instructions there to connect your account to the marketplace. This will allow you to receive money from orders to your PayPal account without the need to request its withdrawal from the marketplace owner.
 
-#. After you have done everything on the PayPal’s side, you will be redirected back to your store.
+#. After you have done everything on the PayPal's side, you will be redirected back to your store.
 
 #. Click the **Save** button.
 
