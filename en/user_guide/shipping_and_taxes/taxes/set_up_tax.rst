@@ -56,11 +56,9 @@ Apply Taxes to All Products
 
 #. Go to **Administration → Shipping & taxes → Taxes**. 
 
-#. Tick the checkbox to the left of the tax that you want to apply to all products. You can tick multiple checkboxes to apply multiple taxes at once.
+#. Click the tax ot taxes that you want to apply to all products. Three sections with with drop-down settings that you can change for the selected taxes will appear.
 
-#. Click the gear button in the upper right part of the page.
-
-#. Choose **Apply selected taxes to all products**.
+#. Click the **Actions** button and choose **Apply selected taxes to all products**.
 
    .. image:: img/set_tax_03.png
        :align: center
@@ -92,7 +90,7 @@ Apply Taxes to Shipping Methods
 
 #. Click on the name of the shipping method.
 
-#. Find the **Taxes** property in the **Extra** section.
+#. Find the **Taxes** property in the **Pricing** section on the *Additional settings* tab.
 
 #. Tick the checkboxes of the taxes you'd like you apply.
 

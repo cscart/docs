@@ -40,7 +40,7 @@ The add-on allows customers to:
 
 * read and answer messages on the **Messages** tab in their accounts.
 
-Communication between Vendors and Administrators
+Communication Between Vendors and Administrators
 ++++++++++++++++++++++++++++++++++++++++++++++++
 
 The **Message center** add-on allows vendors and marketplace owners to communicate with each other on the **Vendors → Message center** page. This is useful in case if:
