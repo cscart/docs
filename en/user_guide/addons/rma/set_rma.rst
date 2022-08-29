@@ -6,7 +6,6 @@ How To: Set up the RMA Add-on
     :backlinks: none
     :local:
 
-
 =======================
 Enabling the RMA Add-on
 =======================
@@ -19,9 +18,17 @@ Enabling the RMA Add-on
 
 #. Select the desired settings and tick the check boxes, if needed:
 
-   * **Display product return period** — If selected, product return period is displayed on the storefront.
+   .. note:: 
 
-   * **Do not take weekends into account when calculating product return period** — If selected, Saturdays and Sundays are excluded from the return period.
+        The following settings are available in the CS-Cart and Multi-Vendor 4.15.2 and higher. After you set the settings, all new products will have the values of these settings by default.
+
+        * **Refundable** — if selected, customers are able to return products.
+
+        * **Return period (days)** — enter the number of days during which a customer is able to return a product.
+
+   * **Display product return period** — if selected, product return period is displayed on the storefront.
+
+   * **Do not take weekends into account when calculating product return period** — if selected, Saturdays and Sundays are excluded from the return period.
 
 #. Click **Save**.
 
