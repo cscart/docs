@@ -5,7 +5,7 @@ Templates
 Templator
 *********
 
-Cs-Cart uses the **Smarty 4** template engine. It allows to separate presentation and application code. More information about how it works you can read at the `https://www.smarty.net/ <https://www.smarty.net/>`_ site.
+CS-Cart uses the **Smarty 4** template engine. It allows to separate presentation and application code. More information about how it works you can read at the `https://www.smarty.net/ <https://www.smarty.net/>`_ site.
 
 `This <https://www.smarty.net/docs/en/smarty.for.designers.tpl>`_ chapter will be particulary interesting for the developers. There you will find out what constructions can be used in templates.
 
