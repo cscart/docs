@@ -309,3 +309,13 @@ Service Packs
 ----------
 
 [!] Export/Import: Product import could cause a database error. Fixed.
+
+----------
+4.15.1.SP3
+----------
+
+[!] Security: The vulnerability could allow anyone with access to the admin or vendor panel and the block editing privilege to gain unauthorized access to the server. Fixed.
+
+.. note::
+
+    As a token of gratitude, we'd like to mention the partner who discovered this issue. The company is called `ASAP Lab <https://asaplab.io>`_. They specialise in servers, performance, and security. Not only do they regularly check CS-Cart code for vulnerabilities, but they can also `check your entire project, including server configuration, third-party add-ons, etc. <https://marketplace.cs-cart.com/security-audit.html>`_
