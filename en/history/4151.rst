@@ -319,3 +319,9 @@ Service Packs
 .. note::
 
     As a token of gratitude, we'd like to mention the partner who discovered this issue. The company is called `ASAP Lab <https://asaplab.io>`_. They specialise in servers, performance, and security. Not only do they regularly check CS-Cart code for vulnerabilities, but they can also `check your entire project, including server configuration, third-party add-ons, etc. <https://marketplace.cs-cart.com/security-audit.html>`_
+
+----------
+4.15.1.SP4
+----------
+
+[!] The SP3 security fix was incompatible with third-party add-ons and themes. Fixed.
