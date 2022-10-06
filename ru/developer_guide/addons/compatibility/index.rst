@@ -7,6 +7,7 @@
     :glob:
 
     adapting_4143_to_4151
+    adapting_4151_to_4152
 
 .. toctree::
     :maxdepth: 2
