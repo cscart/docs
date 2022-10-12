@@ -8,7 +8,7 @@ New Features and Improvements
 
 [+] Add-ons: GDPR Compliance (EU): A link to the Cookie consent texts editing page was added to the add-on settings.
 
-[+] Add-ons: Product Bundles: The ability to select the location of the block with broduct bundle was added.
+[+] Add-ons: Product Bundles: The ability to select the location of the block with product bundle was added.
 
 [+] Add-ons: RMA: Import: The ability to import the product return parameters was added.
 
@@ -19,6 +19,8 @@ New Features and Improvements
 [+] Design: Menus: Quick links: Highlighting of active menu item was added.
 
 [+] Multi-Vendor: Add-ons: Vendor data premoderation: Email notification about new products on moderation was added.
+
+[+] Multi-Vendor: Add-ons: Vendor locations [Beta]: Yandex.Maps support was added.
 
 [+] Products: Performance: Lazy load of feature variants on the bulk product editing page was added.
 
@@ -41,8 +43,6 @@ Functionality Changes
 [*] Multi-Vendor: Add-ons: Advanced products import: CRON command display was added to the admin panel for presets created by vendors.
 
 [*] Multi-Vendor: Add-ons: Stripe Connect payments: Connect onboarding has been added to the vendors connection system.
-
-[*] Multi-Vendor: Add-ons: Vendor locations [Beta]: Yandex.Maps support was added.
 
 [*] Multi-Vendor Plus: Add-ons: Common Products for Vendors: "Add to comparison list" button was added to common products.
 
@@ -228,7 +228,7 @@ Bug Fixes
 
 [!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Vendor locations: Filters: Common products were hidden in the filter by vendor location results. Fixed.
 
-[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Wish list: Product options: When choosing a product option the "Add to wish list" button was diplicated for product offers. Fixed.
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Wish list: Product options: When choosing a product option the "Add to wish list" button was duplicated for product offers. Fixed.
 
 [!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: Product with required option as file could not be added to the cart. Fixed.
 
