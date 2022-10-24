@@ -54,6 +54,8 @@ Functionality Changes
 
 [*] Add-ons: RMA: Payment surcharge cannot be returned anymore.
 
+[*] Core: WebP image extension support was added.
+
 [*] Multi-Vendor: Shipping methods: An ability to enable common shipping methods for new vendors automatically was added.
 
 [*] Multi-Vendor: Design: Blocks: Shipping methods: An ability to edit text of the "No shipping required" notification and to turn this notification off on the checkout page was added.
