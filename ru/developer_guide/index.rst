@@ -20,3 +20,4 @@
     :hidden:
 
     1c/index
+    help_section_images/index
