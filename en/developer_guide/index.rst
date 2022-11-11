@@ -19,3 +19,10 @@ This section contains the information that is useful for CS-Cart developers.
 
 .. meta::
    :description: Developer documentation for CS-Cart and Multi-Vendor ecommerce solutions: developer tools, REST API, addon development, and conding standards.
+
+.. toctree::
+    :maxdepth: 2
+    :hidden:
+    :glob:
+
+    help_section_images/index
