@@ -6,7 +6,7 @@ A **layout** is a powerful tool for customizing the look and feel of your store.
 
 .. note::
 
-    The layout grid is based on the **Bootsrap 2.3** framework. Learn more about the Bootstrap framework at the `Bootstrap official site <http://getbootstrap.com/2.3.2/scaffolding.html#gridSystem>`_.
+    The layout grid is based on the **Bootstrap 2.3** framework. Learn more about the Bootstrap framework at the `Bootstrap official site <http://getbootstrap.com/2.3.2/scaffolding.html#gridSystem>`_.
 
 
 ===============
