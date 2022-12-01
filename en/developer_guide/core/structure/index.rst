@@ -444,7 +444,7 @@ Add-on schema
     root/
     ├─ app/                
     │  └ addons/                                     
-    │    └ [addon_id]/                              <- Add-on folder
+    │    └ [addon_id]/                               <- Add-on folder
     │       ├─ controllers/                          <- Controller extending
     │       ├─ database/                             <- MySQL files 
     │       ├─ schemas/                              <- PHP schema extending
@@ -501,7 +501,7 @@ Full add-on schema
     root/
     ├─ app/                
     │  └ addons/                                     <- Add-ons and extensions
-    │    └ [addon_id]/                              <- Add-on folder
+    │    └ [addon_id]/                               <- Add-on folder
     │       ├─ controllers/                          <- Controller extending
     │       │  ├─ backend/                           <- Admin panel
     │       │  │  ├─ [your_controller].php           <- New controller
@@ -532,13 +532,13 @@ Full add-on schema
     │  ├ backend/                                    <- Admin panel templates
     │  │ ├ css/                                      <- Admin panel styles
     │  │ │ └ addons/       
-    │  │ │   └ [addon_id]/                          <- Your add-on
+    │  │ │   └ [addon_id]/                           <- Your add-on
     │  │ │     ├ styles.css                          <- Your styles
     │  │ │     └ styles.less                        
     │  │ ├ mail/                                     <- Email and invoice templates
     │  │ │ └ templates/       
     │  │ │   └ addons/                               <- Add-ons
-    │  │ │     └ [addon_id]/                        <- Add-on folder
+    │  │ │     └ [addon_id]/                         <- Add-on folder
     │  │ │       ├ hooks/                            <- Connecting to hooks
     │  │ │       │ └ [hook_type]/                    <- Hook folder
     │  │ │       │   ├ [hook_name].pre.tpl           <- Code before hook
@@ -549,7 +549,7 @@ Full add-on schema
     │  │ ├ media/                                    <- Static data
     │  │ │ └ images/                                 
     │  │ │   └ addons/                           
-    │  │ │     └ [addon_id]/                        <- Images of your add-on
+    │  │ │     └ [addon_id]/                         <- Images of your add-on
     │  │ │       ├ image_1.jpg/           
     │  │ │       └ image_2.png/         
     │  │ └ templates/                                <- Templates
@@ -595,7 +595,7 @@ Full add-on schema
     │      │       └ image_2.png/           
     │      └ templates/                              <- Templates
     │        └ addons/       
-    │          └ [addon_id]/                        <- Your add-on
+    │          └ [addon_id]/                         <- Your add-on
     │            ├ hooks/                            <- Hook extending
     │            │ ├ index/                          <- Hook folder
     │            │ │ ├ scripts.post.tpl              <- Hook for connecting your script
@@ -627,7 +627,7 @@ Connect CSS or LESS style
     root/
     ├─ app/                
     │  └ addons/                                     <- Add-ons and extensions
-    │    └ [addon_id]/                              <- Add-on folder
+    │    └ [addon_id]/                               <- Add-on folder
     │       └─ addon.xml                             <- Add-on main file
     │
     └─ design/                
@@ -660,7 +660,7 @@ New page in admin panel
     root/
     ├─ app/                
     │  └ addons/                                     <- Add-ons and extensions
-    │    └ [addon_id]/                              <- Add-on folder
+    │    └ [addon_id]/                               <- Add-on folder
     │       ├─ controllers/                          <- Controllers
     │       │  └─ backend/                           <- Admin panel
     │       │     └─ [your_controller].php           <- New controller
@@ -686,7 +686,7 @@ New storefront page
     root/
     ├─ app/                
     │  └ addons/                                       <- Add-ons and extensions
-    │    └ [addon_id]/                                <- Add-on folder
+    │    └ [addon_id]/                                 <- Add-on folder
     │       ├─ controllers/                            <- Controller extending
     │       │  └─ frontend/                            <- Admin panel
     │       │     └─ [your_controller].php             <- New controller
@@ -710,7 +710,7 @@ New block on the storefront
     root/
     ├─ app/                
     │  └ addons/                             <- Add-ons and extensions
-    │    └ [addon_id]/                      <- Add-on folder
+    │    └ [addon_id]/                       <- Add-on folder
     │       ├─ schemas/                      <- PHP schema extending
     │       │  └─ block_manager/             <- Schemas related to blocks
     │       │     └─ blocks.post.php         <- Extend schema of blocks
@@ -745,7 +745,7 @@ New shipping method
          └ [theme_name]/                          <- Show
            └ templates/                           <- additional information 
              └ addons/                            <- during the selection
-               └ [addon_id]/                     <- of a shipping method
+               └ [addon_id]/                      <- of a shipping method
                  └ hooks/                         <- using
                    └ checkout/                    <- a hook in a template of
                      └ shipping_method.post.tpl/  <- the shipping methods.
