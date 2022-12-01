@@ -191,7 +191,7 @@ Languages: Smarty, CSS, Less
           │                                       For example: basic or responsive
           ├── css/                             <- Basic CSS or LESS styles
           │   ├── addons/                      <- Add-on styles
-          │   │   ├ [add-on_id]/               
+          │   │   ├ [addon_id]/               
           │   │   ├ banners/                   <- «Banners management» add-on
           │   │   ├ hybrid_auth/               <- «Social Login» add-on
           │   │   └ ...                        <- other add-ons
@@ -216,7 +216,7 @@ Languages: Smarty, CSS, Less
           │       └ images/                    <- Images
           │   └── templates/                   <- Templates
           │       ├ addons/                    <- Add-ons by folders
-          │       │  ├ [add-on_id]/           
+          │       │  ├ [addon_id]/           
           │       │  ├ news_and_emails/
           │       │  └ ...                    
           │       ├ orders/                    <- When ordering
@@ -227,7 +227,7 @@ Languages: Smarty, CSS, Less
           │   ├── fonts/                       <- Fonts
           │   └── images/                      <- Images
           │       ├ addons/ 
-          │       │  ├ [add-on_id]/           
+          │       │  ├ [addon_id]/           
           │       │  ├ image_zoom/
           │       │  └ ...   
           │       ├ icons/                     <- Icons
@@ -246,7 +246,7 @@ Languages: Smarty, CSS, Less
           │
           └── templates/                       <- Smarty templates
               ├── addons/                      <- Hooks and add-on templates
-              │   ├ [add-on_id]/
+              │   ├ [addon_id]/
               │   ├ banners/
               │   └ ...
               ├── blocks/                      <- Blocks
@@ -310,7 +310,7 @@ All platform and add-on styles are collected into one file and cached.
           │                                   
           ├── css/                             
           │   ├── addons/                      <- Add-on styles
-          │   │   └ [add-on_id]/     
+          │   │   └ [addon_id]/     
           │   │     ├ styles.css     
           │   │     └ styles.less    
           │   │        
@@ -444,7 +444,7 @@ Add-on schema
     root/
     ├─ app/                
     │  └ addons/                                     
-    │    └ [add-on_id]/                              <- Add-on folder
+    │    └ [addon_id]/                              <- Add-on folder
     │       ├─ controllers/                          <- Controller extending
     │       ├─ database/                             <- MySQL files 
     │       ├─ schemas/                              <- PHP schema extending
@@ -457,37 +457,37 @@ Add-on schema
     │  ├ backend/                                    <- Admin panel templates
     │  │ ├ css/                                      <- Admin panel styles
     │  │ │ └ addons/       
-    │  │ │   └ [add-on_id]/                          
+    │  │ │   └ [addon_id]/                          
     │  │ ├ mail/                                     <- Email and invoice templates
     │  │ │ └ templates/       
     │  │ │   └ addons/              
-    │  │ │     └ [add-on_id]/                                              
+    │  │ │     └ [addon_id]/                                              
     │  │ ├ media/                                    <- Static data
     │  │ │ └ images/                                 <- Images
     │  │ │   └ addons/     
-    │  │ │     └ [add-on_id]/                                       
+    │  │ │     └ [addon_id]/                                       
     │  │ └ templates/                                <- Templates, hooks and pages
     │  │   └ addons/    
-    │  │     └ [add-on_id]/                          
+    │  │     └ [addon_id]/                          
     │  └ themes/                                     <- Storefront design—themes
     │    └ [theme_name]/                             <- Theme name
     │      ├ css/                                    <- Styles
     │      │ └ addons/       
-    │      │   └ [add-on_id]/                           
+    │      │   └ [addon_id]/                           
     │      ├ mail/                                   <- Email and invoice templates
     │      │ └ templates/       
     │      │   └ addons/   
-    │      │     └ [add-on_id]/                               
+    │      │     └ [addon_id]/                               
     │      ├ media/                                  <- Static data
     │      │ └ images/       
     │      │   └ addons/                             <- Add-on images   
-    │      │     └ [add-on_id]/        
+    │      │     └ [addon_id]/        
     │      └ templates/                              <- Templates
     │        └ addons/                               <- Hooks, blocks and pages
-    │          └ [add-on_id]/     
+    │          └ [addon_id]/     
     ├ js/                                            <- Add-on scripts
     │ └ addons/       
-    │   └ [add-on_id]/                       
+    │   └ [addon_id]/                       
     └ var/                                           <- Add-on template repository
       └ themes_repository/                           <- Used during installation
         └ [theme_name]/
@@ -501,7 +501,7 @@ Full add-on schema
     root/
     ├─ app/                
     │  └ addons/                                     <- Add-ons and extensions
-    │    └ [add-on_id]/                              <- Add-on folder
+    │    └ [addon_id]/                              <- Add-on folder
     │       ├─ controllers/                          <- Controller extending
     │       │  ├─ backend/                           <- Admin panel
     │       │  │  ├─ [your_controller].php           <- New controller
@@ -532,13 +532,13 @@ Full add-on schema
     │  ├ backend/                                    <- Admin panel templates
     │  │ ├ css/                                      <- Admin panel styles
     │  │ │ └ addons/       
-    │  │ │   └ [add-on_id]/                          <- Your add-on
+    │  │ │   └ [addon_id]/                          <- Your add-on
     │  │ │     ├ styles.css                          <- Your styles
     │  │ │     └ styles.less                        
     │  │ ├ mail/                                     <- Email and invoice templates
     │  │ │ └ templates/       
     │  │ │   └ addons/                               <- Add-ons
-    │  │ │     └ [add-on_id]/                        <- Add-on folder
+    │  │ │     └ [addon_id]/                        <- Add-on folder
     │  │ │       ├ hooks/                            <- Connecting to hooks
     │  │ │       │ └ [hook_type]/                    <- Hook folder
     │  │ │       │   ├ [hook_name].pre.tpl           <- Code before hook
@@ -549,12 +549,12 @@ Full add-on schema
     │  │ ├ media/                                    <- Static data
     │  │ │ └ images/                                 
     │  │ │   └ addons/                           
-    │  │ │     └ [add-on_id]/                        <- Images of your add-on
+    │  │ │     └ [addon_id]/                        <- Images of your add-on
     │  │ │       ├ image_1.jpg/           
     │  │ │       └ image_2.png/         
     │  │ └ templates/                                <- Templates
     │  │   └ addons/       
-    │  │     └ [add-on_id]/                          
+    │  │     └ [addon_id]/                          
     │  │       ├ hooks/                              <- Connecting to hooks
     │  │       │ ├ index/                            <- Hook folder
     │  │       │ │ ├ scripts.post.tpl                <- Hook for connecting your script
@@ -573,13 +573,13 @@ Full add-on schema
     │    └ [theme_name]/                             <- Theme name
     │      ├ css/                                    <- Styles
     │      │ └ addons/       
-    │      │   └ [add-on_id]/                        
+    │      │   └ [addon_id]/                        
     │      │     ├ styles.css                        <- Your CSS style
     │      │     └ styles.less                       <- Your LESS style
     │      ├ mail/                                   <- Email and invoice templates
     │      │ └ templates/       
     │      │   └ addons/                             
-    │      │     └ [add-on_id]/                            
+    │      │     └ [addon_id]/                            
     │      │       ├ hooks/                          <- Extending with the help of hooks
     │      │       │ └ [hook_type]/                             
     │      │       │   ├ [hook_name].pre.tpl                             
@@ -590,12 +590,12 @@ Full add-on schema
     │      ├ media/                                  <- Static data
     │      │ └ images/       
     │      │   └ addons/                             <- Add-on images
-    │      │     └ [add-on_id]/                     
+    │      │     └ [addon_id]/                     
     │      │       ├ image_1.jpg/          
     │      │       └ image_2.png/           
     │      └ templates/                              <- Templates
     │        └ addons/       
-    │          └ [add-on_id]/                        <- Your add-on
+    │          └ [addon_id]/                        <- Your add-on
     │            ├ hooks/                            <- Hook extending
     │            │ ├ index/                          <- Hook folder
     │            │ │ ├ scripts.post.tpl              <- Hook for connecting your script
@@ -612,7 +612,7 @@ Full add-on schema
     │
     ├ js/                                            <- Add-on scripts
     │ └ addons/       
-    │   └ [add-on_id]/                         
+    │   └ [addon_id]/                         
     │     └ func.js/                          
     └ var/                                           <- Add-on template repository
       └ themes_repository/                           <- Used during installation
@@ -627,7 +627,7 @@ Connect CSS or LESS style
     root/
     ├─ app/                
     │  └ addons/                                     <- Add-ons and extensions
-    │    └ [add-on_id]/                              <- Add-on folder
+    │    └ [addon_id]/                              <- Add-on folder
     │       └─ addon.xml                             <- Add-on main file
     │
     └─ design/                
@@ -635,19 +635,19 @@ Connect CSS or LESS style
          └ [theme_name]/                             <- Theme name
            ├ css/                                    <- Styles
            │ └ addons/       
-           │   └ [add-on_id]/                        
+           │   └ [addon_id]/                        
            │     ├ styles.css                        <- Your CSS style
            │     └ styles.less                       <- Your LESS style
            │
            ├ media/                                  <- Static data
            │ └ images/       
            │   └ addons/                             <- Add-on images
-           │     └ [add-on_id]/                     
+           │     └ [addon_id]/                     
            │       └ background_image.png/           <- For example, background image
            │
            └ templates/                              <- Connect style in template
              └ addons/       
-               └ [add-on_id]/                        
+               └ [addon_id]/                        
                  └ hooks/                            
                    └ index/                           
                      └ styles.post.tpl               <- Your style connection hook
@@ -660,7 +660,7 @@ New page in admin panel
     root/
     ├─ app/                
     │  └ addons/                                     <- Add-ons and extensions
-    │    └ [add-on_id]/                              <- Add-on folder
+    │    └ [addon_id]/                              <- Add-on folder
     │       ├─ controllers/                          <- Controllers
     │       │  └─ backend/                           <- Admin panel
     │       │     └─ [your_controller].php           <- New controller
@@ -673,7 +673,7 @@ New page in admin panel
        └ backend/                                    <- Admin panel templates
          └ templates/                                <- Templates
            └ addons/       
-             └ [add-on_id]/                          
+             └ [addon_id]/                          
                └ views/                              <- Entry page
                  └ [your_controller]/                <- Controller
                    └ [controller_mode].tpl           <- Controller mode
@@ -686,7 +686,7 @@ New storefront page
     root/
     ├─ app/                
     │  └ addons/                                       <- Add-ons and extensions
-    │    └ [add-on_id]/                                <- Add-on folder
+    │    └ [addon_id]/                                <- Add-on folder
     │       ├─ controllers/                            <- Controller extending
     │       │  └─ frontend/                            <- Admin panel
     │       │     └─ [your_controller].php             <- New controller
@@ -697,7 +697,7 @@ New storefront page
          └ [theme_name]/         
            └ templates/                                <- Templates
              └ addons/       
-               └ [add-on_id]/                          
+               └ [addon_id]/                          
                  └ views/                              <- Entry page
                    └ [your_controller]/                <- Controller
                      └ [controller_mode].tpl           <- Controller mode
@@ -710,7 +710,7 @@ New block on the storefront
     root/
     ├─ app/                
     │  └ addons/                             <- Add-ons and extensions
-    │    └ [add-on_id]/                      <- Add-on folder
+    │    └ [addon_id]/                      <- Add-on folder
     │       ├─ schemas/                      <- PHP schema extending
     │       │  └─ block_manager/             <- Schemas related to blocks
     │       │     └─ blocks.post.php         <- Extend schema of blocks
@@ -721,7 +721,7 @@ New block on the storefront
          └ [theme_name]/         
            └ templates/                      <- Templates                      
              └ addons/       
-               └ [add-on_id]/                          
+               └ [addon_id]/                          
                  └ blocks/                   
                    └ [your_block].tpl        <- New block template
 
@@ -733,7 +733,7 @@ New shipping method
     root/
     ├─ app/                
     │  └ addons/                             
-    │    └ [add-on_id]/                      
+    │    └ [addon_id]/                      
     │       ├─ Tygh/                              <- Class extending
     │       │  └─ Shippings/                      <- Shipping methods
     │       │     └─ Services/             
@@ -745,7 +745,7 @@ New shipping method
          └ [theme_name]/                          <- Show
            └ templates/                           <- additional information 
              └ addons/                            <- during the selection
-               └ [add-on_id]/                     <- of a shipping method
+               └ [addon_id]/                     <- of a shipping method
                  └ hooks/                         <- using
                    └ checkout/                    <- a hook in a template of
                      └ shipping_method.post.tpl/  <- the shipping methods.

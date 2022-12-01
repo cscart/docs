@@ -64,7 +64,7 @@ The main difference between the ``Application``provided container and the ``Regi
   // the behavior that Registry provided.
   Tygh::$app['my_object'] = new Tygh\MyClass();
 
-Find the detailed documentation on using the container at http://pimple.sensiolabs.org/.
+Find the detailed documentation on using the container at https://github.com/silexphp/Pimple.
 
 For compatibility, ``Registry`` redirects calls to ``api``, ``crypt``, ``view``, ``ajax`` and ``class_loader`` services to the container.
 
