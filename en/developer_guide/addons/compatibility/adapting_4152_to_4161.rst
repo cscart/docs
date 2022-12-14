@@ -17,34 +17,37 @@ Add-on Changes
 
 In 4.16.1, we introduce a new tool that allows you to work with cities. For example, you'll be able to make a drop-down list with cities for any country on the checkout.
 
-The add-on is unmanaged in the admin panel, but you can install it via console::
+The add-on is marked as unmanaged. It means that it won't appear in the admin panel, and customers won't know about it yet. But you can install it via console::
 
   cd /path/to/store
   php admin.php -p --dispatch=addons.install --addon=cities
 
-The database of cities in the new add-on is empty. If you want to use the "Cities", complete the database by yourself.
+The new "Cities" add-on is hidden because it doesn't have the database of cities yet. But if you'd like to use it, you already can. Just enable it via console and add the list of cities to the database.
 
 ============
 Core Changes
 ============
 
----------------------------------------------
-HTML Block with Smarty Support is Deprecated
---------------------------------------------
+------------------------------------------------------
+HTML Block with Smarty Support Is Marked as Deprecated
+------------------------------------------------------
 
-A deprecated block is converted to a safe block if you try to create it via layout import. Use the type and layout of the new block instead of the deprecated one: the ``safe_smarty_block`` type, the ``blocks/safe_smarty_block.tpl`` template. To activate additional functions in the new block, you need to expand the ``block_manager/smarty_allowed_functions.php`` scheme.
+CS-Cart has an HTML block with Smarty support that allows you to add Smarty-code to pages. However, existing blocks were not safe, so we added new safe blocks in 4.16.1. After the update, the blocks will continue to work correctly, but you will not be able to update their content. If you want to use additional functions in the new block, extend the ``block_manager/smarty_allowed_functions.php`` schema.
 
-Blocks that were created before the update will continue to work correctly, but you won't be able to update their content.
+Use a new type and template of the block:
+
+* type: ``safe_smarty_block``;
+* template: ``blocks/safe_smarty_block.tpl``.
 
 -------------
 New Functions
 -------------
 
-#. Updates notifications by search parameters in bulk::
+#. Update notifications by search parameters in bulk::
 
        \Tygh\NotificationsCenter\IRepository::bulkUpdate(Notification $notification_template, array $update_fields = [], array $params = []);
 
-#. Gets setting value for all storefronts::
+#. Get setting value for all storefronts::
 
        \Tygh\Settings::getAllStorefrontValues($setting_name, $section_name = '');
 
