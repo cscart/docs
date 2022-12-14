@@ -14,18 +14,18 @@
 Модуль "Города"
 ---------------
 
-В 4.16.1 появляется новый модуль "Города" (**cities**). В этой версии модуль скрыт из списка модулей в панели администратора, но вы можете установить его в консольном режиме:
+В 4.16.1 появляется новый модуль "Города" (**cities**). В этой версии модуль скрыт из списка модулей в панели администратора, но вы можете установить его в консольном режиме::
 
-#. ``cd /path/to/store``
-#. ``php admin.php -p --dispatch=addons.install --addon=cities``
+  cd /path/to/store
+  php admin.php -p --dispatch=addons.install --addon=cities
 
 В версии 4.17.1 модуль **rus_cities** станет не доступен, его заменит единый модуль для русской и для международной версии **cities**. База городов из модуля **rus_cities** уже перенесена в модуль **cities**.
 
 При переходе на новый модуль **cities** стоит учесть изменения в названиях функций в своем коде: *rus_cities* меняется на *cities*. Названия следующих функций приведены к стандарту, и при замене с помощью поиска могут возниктуть проблемы::
 
-  fn_get_cities → fn_cities_get_cities
-  fn_update_city → fn_cities_update_city
-  fn_rus_city_get_city_data → fn_cities_get_city_data
+  fn_get_cities -> fn_cities_get_cities
+  fn_update_city -> fn_cities_update_city
+  fn_rus_city_get_city_data -> fn_cities_get_city_data
 
 ================
 Изменения в ядре

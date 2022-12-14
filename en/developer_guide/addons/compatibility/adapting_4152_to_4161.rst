@@ -19,8 +19,8 @@ In 4.16.1, we introduce a new tool that allows you to work with cities. For exam
 
 The add-on is unmanaged in the admin panel, but you can install it via console::
 
-#. ``cd /path/to/store``
-#. ``php admin.php -p --dispatch=addons.install --addon=cities``
+  #. cd /path/to/store
+  #. php admin.php -p --dispatch=addons.install --addon=cities
 
 The database of cities in the new add-on is empty. If you want to use the "Cities", complete the database by yourself.
 
@@ -32,7 +32,7 @@ Core Changes
 HTML Block with Smarty Support is Deprecated
 --------------------------------------------
 
-A deprecated block is converted to a safe block if you try to create it via layout import. Use the type and layout of the new block instead of the deprecated one: the type is ``safe_smarty_block``, the template is ``blocks/safe_smarty_block.tpl``. To activate additional functions in the new block, you need to expand the ``block_manager/smarty_allowed_functions.php`` scheme.
+A deprecated block is converted to a safe block if you try to create it via layout import. Use the type and layout of the new block instead of the deprecated one: the ``safe_smarty_block`` type, the ``blocks/safe_smarty_block.tpl`` template. To activate additional functions in the new block, you need to expand the ``block_manager/smarty_allowed_functions.php`` scheme.
 
 Blocks that were created before the update will continue to work correctly, but you won't be able to update their content.
 
@@ -56,9 +56,9 @@ Hook Changes
 New Hooks
 ---------
 
-#. This hook is executed before saving storefront. Allows to perform additional actions.::
+#. This hook is executed before saving storefront. Allows to perform additional actions::
 
-       fn_set_hook('storefront_repository_save_pre', $storefront, $storefront_data);;
+       fn_set_hook('storefront_repository_save_pre', $storefront, $storefront_data);
 
 #. This hook gets a product before getting its link::
 
