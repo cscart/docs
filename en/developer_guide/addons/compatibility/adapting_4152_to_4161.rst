@@ -15,7 +15,7 @@ Add-on Changes
 "Cities" Add-on
 ---------------
 
-In 4.16.1, we introduce a new tool that allows you to work with cities. For example, you'll be able to make a drop-down list with cities for any country on the checkout.
+In 4.16.1, we introduce a new tool that allows you to work with cities. For example, you'll be able to make a drop-down list with cities for any country on checkout.
 
 The add-on is marked as unmanaged. It means that it won't appear in the admin panel, and customers won't know about it yet. But you can install it via console::
 
