@@ -19,8 +19,8 @@ In 4.16.1, we introduce a new tool that allows you to work with cities. For exam
 
 The add-on is unmanaged in the admin panel, but you can install it via console::
 
-  #. cd /path/to/store
-  #. php admin.php -p --dispatch=addons.install --addon=cities
+  cd /path/to/store
+  php admin.php -p --dispatch=addons.install --addon=cities
 
 The database of cities in the new add-on is empty. If you want to use the "Cities", complete the database by yourself.
 
