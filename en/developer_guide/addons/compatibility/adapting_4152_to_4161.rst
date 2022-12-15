@@ -69,14 +69,5 @@ New Hooks
 
 #. This hook get params before getting products::
 
-       fn_set_hook('google_sitemap_write_products_to_sitemap_before_getting_products', $storefront, $last_modified_time, $change_frequency, $priority, $file, $link_counter, $file_counter, $sitemap_header, $sitemap_footer, $languages, $products, $product, $page, $params);
+       fn_set_hook('google_sitemap_write_products_to_sitemap_before_getting_products', $storefront, $last_modified_time, $change_frequency, $priority, $file, $link_counter, $file_counter, $sitemap_header, $sitemap_footer, $languages, $products, $product, $page, $params, $query_condition).
 
-================
-Template Changes
-================
-
----------
-New Hooks
----------
-
-``menu:storefront_icon``

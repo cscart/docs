@@ -72,14 +72,6 @@ HTML-блок с поддержкой Smarty помечен как устаре�
 
 #. Получает параметры перед получением товаров::
 
-       fn_set_hook('google_sitemap_write_products_to_sitemap_before_getting_products', $storefront, $last_modified_time, $change_frequency, $priority, $file, $link_counter, $file_counter, $sitemap_header, $sitemap_footer, $languages, $products, $product, $page, $params);
+       fn_set_hook('google_sitemap_write_products_to_sitemap_before_getting_products', $storefront, $last_modified_time, $change_frequency, $priority, $file, $link_counter, $file_counter, $sitemap_header, $sitemap_footer, $languages, $products, $product, $page, $params, $query_condition).
 
-====================
-Изменения в шаблонах
-====================
 
-----------
-Новые хуки
-----------
-
-``menu:storefront_icon``
