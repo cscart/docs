@@ -144,9 +144,7 @@ Bug Fixes
 
 [!] Layouts: When dragging the block, the page did not scroll. Fixed.
 
-[!] Multi-Vendor: API: Companies: Vendors: There was some missing basic fields in the response to the GET request to the vendors/companies entity with ID specified. Fixed.
-
-[!] Multi-Vendor: Add-ons: Common Products for Vendors: Filters: Filter on vendors could display disabled vendors. Fixed.
+[!] Multi-Vendor: API: Vendors: There was some missing basic fields in the response to the GET request to the vendors/companies entity with ID specified. Fixed.
 
 [!] Multi-Vendor: Add-ons: PayPal Commerce Platform: Repay order was not working. Fixed.
 
@@ -164,19 +162,21 @@ Bug Fixes
 
 [!] Multi-Vendor: Addons: GDPR: Vendor locations: Location did not work after accepting cookies. Fixed.
 
-[!] Multi-Vendor: Categories: Storefront switcher was missing on the common category detail page. Fixed.
-
 [!] Multi-Vendor: Orders: Order management: Email notifications: Notifications were not sent when creating an order with products from several vendors in the admin panel. Fixed.
 
 [!] Multi-Vendor: Vendor plans: Export/Import:  Products without categories could be skipped when a vendor imported products. Fixed.
 
 [!] Multi-Vendor Plus: Add-ons: Common products for Vendors: Google Sitemap: Common product could be in sitemap without available vendor offers. Fixed.
 
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Filters: Filter on vendors could display disabled vendors. Fixed.
+
 [!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: Orders: When creating an order in the admin panel the product was not added the first time. Fixed.
 
 [!] Multi-Vendor Plus: Add-ons: Google sitemap: Common products for vendors: Incorrect links were generated for product offers in sitemap. Fixed.
 
 [!] Multi-Vendor Ultimate: Addons: Warehouses: Common Products for Vendors: When using a warehouse, common product amount wasn't syncronizing with amount of its offer. Fixed.
+
+[!] Multi-Vendor Ultimate: Categories: Storefront switcher was missing on the common category detail page. Fixed.
 
 [!] Notifications: Notification of reduction of product in cart to the maximum available did not indicate quantity. Fixed.
 
