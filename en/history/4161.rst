@@ -114,7 +114,7 @@ Bug Fixes
 
 [!] Core: WebP images were losing transparency on upload. Fixed.
 
-[!] Currencies: Live exchange rates: There was no possibility to add your API key to get the exchange rate. Fixed.
+[!] Currencies: Live exchange rates: Sometimes exchange rates were not displayed. Fixed; The possibility to add your API key to get the exchange rate was added.
 
 [!] Currencies: The alternative currency was not displayed in the email notification after placing order. Fixed.
 
