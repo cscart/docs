@@ -12,6 +12,8 @@ New Features and Improvements
 
 [+] Mobile app: Support for Stripe and Stripe connect for card payment was added.
 
+[+] Mobile app: Google's requirements for User Generated Content—acceptance of the terms and the ability to complain—were implemented.
+
 [+] Multi-Vendor: Design: Vendor panel: "Seller info" item for user menu was added.
 
 [+] Multi-Vendor: Payment methods: Stripe Connect: It is now possible to use Apple Pay and Google Play for payments via Stripe Checkout.
@@ -24,11 +26,11 @@ New Features and Improvements
 
 [+] Notification center: "Mark all as read" button was added.
 
-[+] Payment methods: Stripe: It is now possible to use Apple Pay and Google Play for payments via Stripe Checkout.
+[+] Payment methods: Stripe payments: It is now possible to use Apple Pay and Google Play for payments via Stripe Checkout.
 
-[+] Payment methods: Stripe: Lots of local payment methods, such as Sofort, Klarna, Afterparty and others, were added via Stripe Checkout.
+[+] Payment methods: Stripe payments: Lots of local payment methods, such as Sofort, Klarna, Afterparty and others, were added via Stripe Checkout.
 
-[+] Payment methods: Stripe: Stripe Checkout support with the ability to pay via the official Stripe page was added.
+[+] Payment methods: Stripe payments: Stripe Checkout support with the ability to pay via the official Stripe page was added.
 
 =====================
 Functionality Changes
@@ -48,19 +50,21 @@ Functionality Changes
 Bug Fixes
 =========
 
-[!] Abandoned / Live carts: Country and state of shipping were not displayed. Fixed.
+[!] Abandoned / Live carts: Shipping country and state were not displayed. Fixed.
 
 [!] Add-ons: Advanced products import: Export/Import: When importing a product description with line breaks, the line breaks were not imported. Fixed.
 
-[!] Add-ons: Discussion: There was an incorrect link to the add-on settings. Fixed.
+[!] Add-ons: Comments and reviews: There was an incorrect link to the add-on settings. Fixed.
 
 [!] Add-ons: GDPR Compliance (EU): When the add-on was turned on, the configuration was updated incorrectly. Fixed.
 
-[!] Add-ons: GDPR Compliance: Cookie agreement did not include cookies for the PayPal Commerce Platform and PayPal Checkout. Fixed.
+[!] Add-ons: GDPR Compliance (EU): Cookie agreement did not include cookies for the PayPal Commerce Platform and PayPal Checkout. Fixed.
 
-[!] Add-ons: GDPR Compliance: The text of the language variable gdpr.uk_cookies_law was displayed late. Fixed.
+[!] Add-ons: GDPR Compliance (EU): The text of the language variable gdpr.uk_cookies_law was displayed late. Fixed.
 
-[!] Add-ons: GDPR Compliance: The value of the language variables gdpr.uk_cookies_law and gdpr.klaro_ok was not displayed. Fixed.
+[!] Add-ons: GDPR Compliance (EU): In some cases, the text of the language variables gdpr.uk_cookies_law and gdpr.klaro_ok was not displayed. Fixed.
+
+[!] Add-ons: Google Analytics: GDPR Compliance (EU): Sales were not tracked when the GDPR add-on was enabled. Fixed.
 
 [!] Add-ons: Gift certificates: Certificate was not deleted from cart. Fixed.
 
@@ -70,15 +74,17 @@ Bug Fixes
 
 [!] Add-ons: Maps and geolocation: Required products: Notification about the addition of mandatory products to cart appeared when viewing the product. Fixed.
 
+[!] Add-ons: Mobile application: Feature Graphic image was not added to configuration archive. Fixed.
+
 [!] Add-ons: PHP Notice appeared during uninstalling an already uninstalled add-on. Fixed.
 
 [!] Add-ons: PayPal Checkout: An error occurred on the order editing page. Fixed.
 
+[!] Add-ons: PayPal Checkout: An error could appear when placing order with integer currencies. Fixed.
+
 [!] Add-ons: Price per unit: When the setting "Hide price and the "Add to cart" button" was enabled, the price per unit was still displayed. Fixed.
 
-[!] Add-ons: Product Bundle: Product Variants: It was not possible to reselect feature in bundle for varitions "as separate catalog items". Fixed.
-
-[!] Add-ons: Product Variations: Out of stock variations could be hidden on the storefront when "Show out of stock products" setting was active. Fixed.
+[!] Add-ons: Product Bundles: Product Variants: It was not possible to reselect feature in bundle for varitions "as separate catalog items". Fixed.
 
 [!] Add-ons: Product bundles: "Show on products page" setting worked incorrectly. Fixed.
 
@@ -86,13 +92,21 @@ Bug Fixes
 
 [!] Add-ons: Product bundles: Order detail page could open with an error. Fixed.
 
-[!] Add-ons: Product variations: Blocks: The "Variations list" block did not take into account the "Only "in stock" products" setting. Fixed.
+[!] Add-ons: Product Variations: Advanced products import: Import of product variations without specifying the default variation, could set the default variation not the first one from the list. Fixed.
 
-[!] Add-ons: Product variations: If a product is available for buy in advance, variations were displayed unavailable. Fixed.
+[!] Add-ons: Product Variations: Blocks: The "Variations list" block did not take into account the "Only "in stock" products" setting. Fixed.
+
+[!] Add-ons: Product Variations: If a product is available for buy in advance, variations were displayed unavailable. Fixed.
+
+[!] Add-ons: Product Variations: Out of stock variations could be hidden on the storefront when "Show out of stock products" setting was active. Fixed.
 
 [!] Add-ons: RMA: When updating products via import, the default value of the product return period was used. Fixed.
 
-[!] Add-ons: SEO: Maps and geolocation: PHP Notice could appeared. Fixed.
+[!] Add-ons: Required products: It was possible to add required products of another vendors to the product. Fixed.
+
+[!] Add-ons: SEO: Product variations: Promotions: In some cases, variations in ld+json displayed a price without a discount. Fixed.
+
+[!] Add-ons: SEO: Maps and geolocation: PHP Notice could appear. Fixed.
 
 [!] Add-ons: SEO: PHP warning may have occurred during installation. Fixed.
 
@@ -100,19 +114,29 @@ Bug Fixes
 
 [!] Add-ons: SEO: The redirect was not performed on the storefront when the current language was disabled or hidden. Fixed.
 
+[!] Add-ons: Stores and pickup points: Orders: Simple html tags were not allowed in order packing slip. Fixed.
+
+[!] Add-ons: Stores and pickup points: The "Free shipping" promotion bonus couldn't been applied to pick-up points. Fixed.
+
+[!] Add-ons: Stripe payments: Amount convertation worked incorrectly with zero-decimal currencies. Fixed.
+
 [!] Add-ons: Stripe payments: Sometimes the order was not created after payment. Fixed.
 
-[!] Add-ons: Tilda pages: Additional fonts were not loaded. Fixed.
+[!] Add-ons: Landing pages from Tilda: Additional fonts were not loaded. Fixed.
 
 [!] Add-ons: Wish list: The wish list was reset when logging in to the storefront through the admin panel. Fixed.
 
+[!] Add-ons: Wish list: The wish list was reset when logging in to the storefront through the admin panel. Fixed.¶
+
 [!] Checkout: Profile fields: Values of custom profile fields were deleted when editing on checkout. Fixed.
 
-[!] Core: Payments: An incorrect error message was displayed when filling out credit card data in the cc.tpl template. Fixed.
+[!] Checkout: In some cases, when changing the zip code shipping methods were not updated. Fixed.
 
 [!] Core: Some IP address related headers were incorrectly parsed, causing incorrect determination of user's IP address. Fixed.
 
 [!] Core: WebP images were losing transparency on upload. Fixed.
+
+[!] Core: Session: After session expires and customer sign in again, data stored in session might get lost. Fixed
 
 [!] Currencies: Live exchange rates: Sometimes exchange rates were not displayed. Fixed; The possibility to add your API key to get the exchange rate was added.
 
@@ -134,9 +158,13 @@ Bug Fixes
 
 [!] Design: Layouts: Blocks: Some blocks had a text field that was not configurable for languages. Fixed.
 
+[!] Design: Menu: Text links: The active submenu item was displayed incorrectly. Fixed.
+
 [!] Design: Popups: If the popup was closed while executing the AJAX-request, an error could occur. Fixed.
 
 [!] Design: Promo-text: On the product page, the promo text could shift. Fixed.
+
+[!] Design: Themes: When cloning a theme, logos are not saved. Fixed.
 
 [!] Documents: Email templates: Preview of templates for the order statuses notification caused fatal error. Fixed.
 
@@ -160,11 +188,13 @@ Bug Fixes
 
 [!] Multi-Vendor: Add-ons: Vendor panel configurator: The active element of the side menu was incorrectly highlighted. Fixed.
 
-[!] Multi-Vendor: Addons: GDPR: Vendor locations: Location did not work after accepting cookies. Fixed.
+[!] Multi-Vendor: Add-ons: GDPR: Vendor locations: Location did not work after accepting cookies. Fixed.
 
 [!] Multi-Vendor: Orders: Order management: Email notifications: Notifications were not sent when creating an order with products from several vendors in the admin panel. Fixed.
 
 [!] Multi-Vendor: Vendor plans: Export/Import:  Products without categories could be skipped when a vendor imported products. Fixed.
+
+[!] Multi-Vendor: Vendor Panel: Some pages might have the wrong width. Fixed.
 
 [!] Multi-Vendor Plus: Add-ons: Common products for Vendors: Google Sitemap: Common product could be in sitemap without available vendor offers. Fixed.
 
@@ -174,7 +204,9 @@ Bug Fixes
 
 [!] Multi-Vendor Plus: Add-ons: Google sitemap: Common products for vendors: Incorrect links were generated for product offers in sitemap. Fixed.
 
-[!] Multi-Vendor Ultimate: Addons: Warehouses: Common Products for Vendors: When using a warehouse, common product amount wasn't syncronizing with amount of its offer. Fixed.
+[!] Multi-Vendor Ultimate: Add-ons: Warehouses: Common Products for Vendors: When using a warehouse, common product amount wasn't syncronizing with amount of its offer. Fixed.
+
+[!] Multi-Vendor Ultimate: Add-ons: Warehouses: Common products for vendors: Required number of vendor offers was not added to cart with "Buy a default common product" option. Fixed.
 
 [!] Multi-Vendor Ultimate: Categories: Storefront switcher was missing on the common category detail page. Fixed.
 
@@ -186,13 +218,21 @@ Bug Fixes
 
 [!] Orders: When placing an order, all available pick-up points were saved to the database. Fixed.
 
+[!] Payments: An incorrect error message was displayed when filling out credit card data in the cc.tpl template. Fixed.
+
+[!] Payments: Sofort Banking: Cart was not cleared after placing an order with payment method that used Sofort payment processor, leaving cart in the list of the abandoned ones. Fixed.
+
 [!] Period selector: Under certain conditions, the "This week", "Yesterday", "Last 24 hours", and "Previous week" period selector did not work correctly. Fixed.
 
 [!] Products options: When "Missing variants handling: Hide option completely" was enabled and all variants were missing, the option comment was still displayed. Fixed.
 
 [!] Products: Quick view: "Add to wish list" and the "Add to comparison list" buttons were displayed incorrectly for Responsive:Black style. Fixed.
 
+[!] Products: The availability of products was displayed on the storefronts regardless of the individual quantity tracking setting. Fixed.
+
 [!] Profile fields: Checkout: All fields were displayed on the form for creating/changing profile data regardless of the profile field settings. Fixed.
+
+[!] Profile fields: A space could be used for the required fields. Fixed.
 
 [!] Profiles: The parameter of the shipping city column in the user profiles table was different. Fixed.
 
@@ -219,3 +259,5 @@ Bug Fixes
 [!] Ultimate: Storefronts: Export/Import: Orders: There was no possibility to export orders to the server from one of the storefronts. Fixed.
 
 [!] Ultimate: Storefronts: The gearbox button in the storefront list was grey. Fixed.
+
+[!] Ultimate: Table "user_session_products" had incorrect primary key after upgrade. Fixed.
