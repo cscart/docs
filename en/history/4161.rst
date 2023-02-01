@@ -102,8 +102,6 @@ Bug Fixes
 
 [!] Add-ons: RMA: When updating products via import, the default value of the product return period was used. Fixed.
 
-[!] Add-ons: Required products: It was possible to add required products of another vendors to the product. Fixed.
-
 [!] Add-ons: SEO: Product variations: Promotions: In some cases, variations in ld+json displayed a price without a discount. Fixed.
 
 [!] Add-ons: SEO: Maps and geolocation: PHP Notice could appear. Fixed.
@@ -189,6 +187,8 @@ Bug Fixes
 [!] Multi-Vendor: Add-ons: Vendor panel configurator: The active element of the side menu was incorrectly highlighted. Fixed.
 
 [!] Multi-Vendor: Add-ons: GDPR: Vendor locations: Location did not work after accepting cookies. Fixed.
+
+[!] Multi-Vendor: Add-ons: Required products: It was possible to add required products of another vendors to the product. Fixed.
 
 [!] Multi-Vendor: Orders: Order management: Email notifications: Notifications were not sent when creating an order with products from several vendors in the admin panel. Fixed.
 
