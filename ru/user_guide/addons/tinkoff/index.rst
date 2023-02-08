@@ -37,3 +37,15 @@ Orange Data, E-COM Kassa, CloudKassir, КОМТЕТ Касса, Бизнесюр
 .. note:: 
 
     Покупатель также может по QR-коду или через СБП оплатить несколько товаров от разных продавцов **на маркетплейсе**. Но в таком случае деньги поступят на ваш собственный счёт, и вам придётся распределять их вручную. 
+
+Связанные статьи
+================
+
+.. toctree::
+    :maxdepth: 2
+    :titlesonly:
+    :glob:
+
+    :doc:`/user_guide/payment_methods/tinkoff_multiparty`
+    :doc:`/user_guide/payment_methods/tinkoff`
+
