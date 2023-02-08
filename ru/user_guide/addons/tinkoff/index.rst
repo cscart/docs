@@ -46,6 +46,5 @@ Orange Data, E-COM Kassa, CloudKassir, КОМТЕТ Касса, Бизнесюр
     :titlesonly:
     :glob:
 
-    :doc:`/user_guide/payment_methods/tinkoff_multiparty`
-    :doc:`/user_guide/payment_methods/tinkoff`
-
+    ../../payment_methods/tinkoff_multiparty
+    ../../payment_methods/tinkoff
