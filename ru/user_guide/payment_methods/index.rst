@@ -32,6 +32,8 @@
     pay_at_home
     sberbank
     sberbank_online
+    tinkoff_multiparty
+    tinkoff
     yandex_money
     yandex_money_p2p
     yandex_checkout_marketplaces

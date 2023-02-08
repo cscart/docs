@@ -32,6 +32,7 @@
     cities/index
     payment_dependencies/index
     import_from_shopify/index
+    tinkoff/index
     zapier/index
     edost/index
     maps_and_geolocation/index
