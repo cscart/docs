@@ -36,6 +36,16 @@ General Information
 
       3-D Secure (and therefore, `Strong Customer Authentication <https://en.wikipedia.org/wiki/Strong_customer_authentication>`_ required by the EU) is supported in our Stripe add-on starting with version 4.10.4.
 
+* `Sripe Checkout <https://stripe.com/payments/checkout>`_ support for easy and secure online payment acceptance starting from CS-Cart Multi-Vendor 4.16.1. Stripe checkout allows you to:
+
+  * Provide customers around the world with familiar payment systems like Apple and Google Pay, Sofort and Klarna, WeChat and Alipay, Przelewy24 and Afterpay, and many more (see all the payment options on your `Stripe Dashboard <https://dashboard.stripe.com/settings/payment_methods>`_);
+
+  * Allow customers to purchase without paying upfront via Klarna and Afterpay: the service pays you immediately in full and then collects payments from buyers itself;
+
+  * Reduce the potential anxiety about the safety of customer personal and financial information. Even though CS-Cart software is absolutely safe, customers might not know that. Familiar payment systems reduce the likelihood of abandoned carts;
+
+  * Split the money automatically in all the above scenarios.
+
 ================
 Related Articles
 ================

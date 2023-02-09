@@ -50,6 +50,16 @@ Step 1. Configure the Payment Method
 
    * **Enable 3-D Secure**—the setting defines whether money will first go to the marketplace owner instead of going straight to vendors. Money will be automatically distributed between connected Stripe accounts via transfers later.
 
+   * **Sripe Checkout**—the setting activates a separate page with a variety of payment options for your customers to choose from on the checkout stage.
+   
+     * more then 20 local and familiar payment systems like Apple and Google Pay, Sofort and Klarna, WeChat and Alipay, Przelewy24 and Afterpay, and many more;
+
+     * payment for the order in installments thanks to Klarna and Afterpay; 
+
+     * a sense of security among customers about the safety of their personal and financial information when using familiar payment systems;
+
+     Be sure to enable **3-D Secure** so that you can activate the stripe checkout.
+
    * **Allow Express accounts**—the setting allows vendors to register `Stripe Express accounts <https://stripe.com/docs/connect/express-accounts>`_. Express accounts support faster registration and simpler Stripe dashboard. But when you use Express accounts, your marketplace bears more responsibility, and there are `platform fees <https://stripe.com/connect/pricing>`_ involved.
      
      * To check the statuses of the Express accounts that your vendors create, add a special command to cron.

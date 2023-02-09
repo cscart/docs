@@ -22,13 +22,19 @@ How To: Set Up Apple Pay, Google Pay, and Credit Card Payments via Stripe
 
      * Google Pay
 
-     .. note::
+     * Stripe Checkout
 
-         If you want all three, you'll need to create 3 separate payment methods.
+       .. note::
+
+           Starting from version 4.16.1 Stripe in CS-Cart supports Stripe Checkout. It allows for at least 20 additional payment methods, including Apple and Google Pay.This means that you need only to turn on the Stripe Checkout in the payment method settings to let your buyers pay for their products through Apple and Google Pay.
 
      .. image:: img/stripe_configuration.png
          :align: center
          :alt: The Google Pay button on the product page added via the Stripe Payments add-on.
+
+   If you want to set up Apple and Google Pay via Stripe Checkout, then set the appropriate payment type, and save the payment method.
+
+   If you want to set up Apple and Google Pay directly, then follow the instructions below.
 
 #. For Apple Pay or Google Pay, you'll need to add the correct icon to the payment method. You'll find the correct icon for each of the payment methods on the **Configure** tab. Both Apple and Google require that their icons are displayed at least as prominently as the other payment method icons in your store.
 
