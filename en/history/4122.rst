@@ -14,7 +14,7 @@ New Features and Improvements
 
 [+] Add-ons: Tags: Advanced products import: Reward points: Context menus were added.
 
-[+] Admin Panel: The ability to select default saved search was added for for the lists of products, orders, shipments, features and vendors.
+[+] Admin Panel: The ability to select default saved search was added for the lists of products, orders, shipments, features and vendors.
 
 [+] Core: Compatibility with PHP 7.4 was added.
 

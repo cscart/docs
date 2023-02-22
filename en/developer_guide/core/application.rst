@@ -23,7 +23,7 @@ Previously, the ``Registry`` class was responsible for storing objects. Now its 
   // New
   $smarty = Tygh::$app['view'];
 
-The main difference between the ``Application``provided container and the ``Registry`` container is the ability to "lazy" declare the objects that should be stored in it. Objects stored in a container are called services. Usually they are components of a larger system and provide limited functionality, for example: an email manager, a database connection.
+The main difference between the ``Application`` container and the ``Registry`` container is the ability to "lazy" declare the objects that should be stored in it. Objects stored in a container are called services. Usually they are components of a larger system and provide limited functionality, for example: an email manager, a database connection.
 
 ::
 
