@@ -51,7 +51,7 @@ The full list of supported fields is given below. Mandatory fields are marked wi
 .. list-table::
     :header-rows: 1
     :stub-columns: 1
-    :widths: 5 30 5 10
+    :widths: 5 15 10 20
 
     *   -   Field name
         -   Description
