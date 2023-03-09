@@ -109,10 +109,9 @@ Who Will be Listed as App Developer?
 
 If you get the source code, you'll be able to publish the app from your own developer account. Otherwise we'll publish it from our account on your behalf. In that case the app developer will be listed as follows:
 
-* Apple App Store: `Simbirsk Technologies <https://itunes.apple.com/us/developer/simbirsk-technologies/id393297240>`_
+* Apple App Store: `CS-Cart <https://apps.apple.com/developer/cs-cart/id1572599656?see-all=i-phone-apps>`_
 
 * Google Play: `Simbirsk Technologies Ltd <https://play.google.com/store/apps/developer?id=Simbirsk+Technologies+Ltd>`_
-
 
 ===================
 Part 2. Acquisition

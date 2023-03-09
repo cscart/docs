@@ -108,10 +108,9 @@
 
 Если у вас есть исходный код приложения, вы сможете опубликовать его с вашей учётной записи разработчика. В остальных случаях мы сами опубликуем приложение за вас, и тогда у приложения будет следующий разработчик:
 
-* В Apple App Store: `Simbirsk Technologies <https://itunes.apple.com/us/developer/simbirsk-technologies/id393297240>`_
+* В Apple App Store: `CS-Cart <https://apps.apple.com/ru/developer/cs-cart/id1572599656?see-all=i-phone-apps>`_
 
 * В Google Play: `Simbirsk Technologies Ltd <https://play.google.com/store/apps/developer?id=Simbirsk+Technologies+Ltd>`_
-
 
 =============================
 Часть 2. Получение приложения

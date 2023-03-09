@@ -2,7 +2,7 @@
 Настройки системы доставки контента (CDN)
 *****************************************
 
-**CDN** расшифровывается как `Content Delivery Network <https://ru.wikipedia.org/wiki/Content_Delivery_Network>`_. Настройки CDN задаются в разделе **Администрирование → Настройки контента → Настройки системы доставки контента (CDN)**. В качестве CDN используется `Amazon CloudFront <http://aws.amazon.com/cloudfront/>`_.
+**CDN** расшифровывается как `Content Delivery Network <https://ru.wikipedia.org/wiki/Content_Delivery_Network>`_. Настройки CDN задаются в разделе **Администрирование → Хранилище данных → Настройки системы доставки контента (CDN)**. В качестве CDN используется `Amazon CloudFront <http://aws.amazon.com/cloudfront/>`_.
 
 * **Ключ** — ключ для идентификации, который вы получите после регистрации на `aws.amazon.com <http://aws.amazon.com/cloudfront/>`_.
 
