@@ -28,12 +28,11 @@ To add data about new cities to the database of cities:
 
 * Add the city data file to ``app/addons/cities/database/cities.csv`` before add-on installation.
 
-* Then install the add-on: the data from the file is moved to the database of cities during the installation.
+* Install the add-on. The data from the file is moved to the database of cities during the installation.
 
 File format: one line in the file contains "Country code", "Region code", "Postal code", "Locality name", "Language code".
 
 .. list-table:: Filling file example
-    :header-rows: 1
     :widths: 5 5 5 5 5
 
     *   -   US
