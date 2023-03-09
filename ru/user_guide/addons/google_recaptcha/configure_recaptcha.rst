@@ -13,7 +13,7 @@
 
    *Примечания:*
 
-       * Получить *Site key (Ключ сайта)* и *Secret (Секрет)* можно `на этой странице <https://www.google.com/recaptcha/admin>`_. Вам понадобится ввести доменное имя своего магазина; подробности можно узнать `в статье от Google на английском языке <https://developers.google.com/recaptcha/docs/domain_validation>`_.
+       * Получить *Site key (Ключ сайта)* и *Secret (Секрет)* можно `на этой странице <https://www.google.com/recaptcha/admin>`_. Вам понадобится ввести доменное имя своего магазина; подробности можно узнать `в статье от Google <https://developers.google.com/recaptcha/docs/domain_validation?hl=ru>`_.
        
        * *Site key (Ключ сайта)* и *Secret (Секрет)* для **reCAPTCHA v2: Checkbox** и **reCAPTCHA v3** принимают разные значения, и получать их необходимо отдельно для каждой версии reCAPTCHA.  
 
