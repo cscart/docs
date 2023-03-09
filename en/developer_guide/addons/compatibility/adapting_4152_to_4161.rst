@@ -24,6 +24,34 @@ The add-on is marked as unmanaged. It means that it won't appear in the admin pa
 
 The new "Cities" add-on is hidden because it doesn't have the database of cities yet. But if you'd like to use it, you already can. Just enable it via console and add the list of cities to the database.
 
+To add data about new cities to the database of cities:
+
+* Add the city data file to ``app/addons/cities/database/cities.csv`` before add-on installation.
+
+* Then install the add-on: the data from the file is moved to the database of cities during the installation.
+
+File format: one line in the file contains "Country code", "Region code", "Postal code", "Locality name", "Language code".
+
+.. list-table:: Filling file example
+    :header-rows: 1
+    :widths: 5 5 5 5 5
+
+    *   -   US
+        -   MA
+        -   02108
+        -   Boston
+        -   en
+    *   -   DE
+        -   BE
+        -   10115
+        -   Berlin
+        -   en
+    *   -   DE
+        -   BE
+        -   10115
+        -   Berlin
+        -   de
+
 ============
 Core Changes
 ============
