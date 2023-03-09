@@ -23,7 +23,7 @@ General
 
 * **Pos.**—the position of the filter relative to other filters.
 
-* **Filter by**—the feature or option by which the products will be filtered.
+* **Filter by**—the feature by which the products will be filtered.
 
 * **Display type**—the way how the filter will be displayed on the storefront:
 
