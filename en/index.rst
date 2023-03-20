@@ -129,4 +129,4 @@ This section contains the information about CS-Cart Addons.
     :titlesonly:
     :glob:
 
-    developer_guide/index
+    cscart_addons/index
