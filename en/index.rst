@@ -117,3 +117,16 @@ This section describes the changes that took place in various versions of CS-Car
 .. meta::
    :title: CS-Cart and Multi-Vendor Documentation | Detailed Instructions and Tutorials | Developer Documentation
    :description: In the CS-Cart and Multi-Vendor documentation, you can find literally any instruction on how to use any function in our multi-vendor software. Just type your request to the search.
+
+===============
+CS-Cart Addons
+===============
+
+This section contains the information about CS-Cart Addons.
+
+.. toctree::
+    :maxdepth: 1
+    :titlesonly:
+    :glob:
+
+    developer_guide/index
