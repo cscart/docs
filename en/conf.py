@@ -297,8 +297,8 @@ lexers['phpinline'] = PhpLexer(startinline=True)
 highlight_language = 'phpinline'
 
 # FancyBox defaults
-#fancybox_thumbnail_width = '100%'
-#fancybox_thumbnail_height = '100%'
+fancybox_thumbnail_width = '100%'
+fancybox_thumbnail_height = '100%'
 
 edit_on_github_project = 'cscart/docs'
 edit_on_github_branch = '%version_long%'
