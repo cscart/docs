@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="2017-05-23 16:29">
+  <shop>
+    <name>Первый торговый текстильный дом</name>
+    <company>Первый торговый текстильный дом</company>
+    <url>http://1ttd.ru/</url>
+    <phone>8 (800) 555-03-79</phone>
+    <platform>Shop-Script</platform>
+    <version>7.0.3.36</version>
+    <currencies>
+      <currency id="RUB" rate="1.0000"/>
+      <currency id="USD" rate="63.8644"/>
+      <currency id="EUR" rate="69.7451"/>
+    </currencies>
+    <categories>
+      <category id="2053">Акция - товар дня!</category>
+      <category id="1810">Распродажа одежды и текстиля</category>
+      <category id="1814" parentId="1810">Распродажа полотенец</category>
+      <category id="1813" parentId="1810">Распродажа халатов</category>
+      <category id="1812" parentId="1810">Распродажа одежды</category>
+      <category id="1811" parentId="1810">Постельное бельё распродажа</category>
+      <category id="1815" parentId="1810">Распродажа текстиля и игрушек</category>
+      <category id="1077">Комплекты постельного белья: выбор по размерам</category>
+      <category id="1078" parentId="1077">Постельное бельё 1.5 спальное</category>
+      <category id="1900" parentId="1078">Поплин 3D</category>
+      <category id="1767" parentId="1078">Сатин 3D</category>
+      <category id="1635" parentId="1078">Махровые</category>
+      <category id="1622" parentId="1078">Перкаль</category>
+      <category id="1608" parentId="1078">Эконом класс</category>
+      <category id="1192" parentId="1078">Поплин</category>
+      <category id="1116" parentId="1078">Бязь (Пакистан)</category>
+      <category id="1104" parentId="1078">Ситец</category>
+      <category id="1103" parentId="1078">Сатин-жаккард</category>
+      <category id="1101" parentId="1078">Сатин (Россия)</category>
+      <category id="1099" parentId="1078">Поликоттон</category>
+      <category id="1098" parentId="1078">Лён</category>
+      <category id="1097" parentId="1078">Бязь (Россия)</category>
+      <category id="1642" parentId="1097">"Зима-Лето" бязь (Россия)</category>
+      <category id="1079" parentId="1077">Постельное бельё 2.0 спальные</category>
+      <category id="1889" parentId="1079">Макосатин</category>
+      <category id="1679" parentId="1079">Сатин 3D</category>
+      <category id="1678" parentId="1079">Сатин-жаккард</category>
+      <category id="1627" parentId="1079">Перкаль</category>
+      <category id="1609" parentId="1079">Эконом класс</category>
+      <category id="1314" parentId="1079">Бязь (Пакистан)</category>
+      <category id="1212" parentId="1079">Поликоттон</category>
+      <category id="1209" parentId="1079">Сатин (Россия)</category>
+      <category id="1208" parentId="1079">Поплин</category>
+      <category id="1207" parentId="1079">Лён</category>
+      <category id="1205" parentId="1079">Бязь (Россия)</category>
+      <category id="1644" parentId="1205">"Зима-Лето" бязь (Россия)</category>
+      <category id="1204" parentId="1079">Ситец</category>
+      <category id="1610" parentId="1077">Постельное бельё семейное</category>
+      <category id="1768" parentId="1610">Сатин 3D</category>
+      <category id="1634" parentId="1610">Перкаль</category>
+      <category id="1620" parentId="1610">Шелк</category>
+      <category id="1619" parentId="1610">Ситец</category>
+      <category id="1618" parentId="1610">Cатин-жаккард</category>
+      <category id="1617" parentId="1610">Cатин</category>
+      <category id="1616" parentId="1610">Поплин</category>
+      <category id="1615" parentId="1610">Поликоттон</category>
+      <category id="1614" parentId="1610">Лён</category>
+      <category id="1613" parentId="1610">Бязь (Россия)</category>
+      <category id="1647" parentId="1613">"Зима-Лето" бязь (Россия)</category>
+      <category id="1612" parentId="1610">Бязь (Пакистан)</category>
+      <category id="1080" parentId="1077">Постельное бельё Евро 1</category>
+      <category id="1892" parentId="1080">Макосатин</category>
+      <category id="1683" parentId="1080">Сатин 3D</category>
+      <category id="1636" parentId="1080">Махровые</category>
+      <category id="1630" parentId="1080">Перкаль</category>
+      <category id="1416" parentId="1080">Сатин-жаккард</category>
+      <category id="1316" parentId="1080">Бязь (Пакистан)</category>
+      <category id="1222" parentId="1080">Поликоттон</category>
+      <category id="1221" parentId="1080">Шелк</category>
+      <category id="1220" parentId="1080">Сатин (Россия)</category>
+      <category id="1218" parentId="1080">Поплин</category>
+      <category id="1217" parentId="1080">Лён</category>
+      <category id="1215" parentId="1080">Бязь (Россия)</category>
+      <category id="1646" parentId="1215">"Зима-Лето" бязь (Россия)</category>
+      <category id="1214" parentId="1080">Ситец</category>
+      <category id="1083" parentId="1080">2.0 спальные (+ европростынь)</category>
+      <category id="1629" parentId="1083">Перкаль</category>
+      <category id="1415" parentId="1083">Сатин-жаккард</category>
+      <category id="1313" parentId="1083">Бязь (Пакистан)</category>
+      <category id="1202" parentId="1083">Поликотон</category>
+      <category id="1201" parentId="1083">Шелк</category>
+      <category id="1200" parentId="1083">Сатин (Россия)</category>
+      <category id="1198" parentId="1083">Поплин</category>
+      <category id="1197" parentId="1083">Лён</category>
+      <category id="1195" parentId="1083">Бязь (Россия)</category>
+      <category id="1643" parentId="1195">"Зима-Лето" бязь (Россия)</category>
+      <category id="1194" parentId="1083">Ситец</category>
+      <category id="1081" parentId="1077">Постельное бельё Евро 2</category>
+      <category id="1632" parentId="1081">Перкаль</category>
+      <category id="1317" parentId="1081">Бязь (Пакистан)</category>
+      <category id="1302" parentId="1081">Поликоттон</category>
+      <category id="1300" parentId="1081">Ситец</category>
+      <category id="1297" parentId="1081">Поплин</category>
+      <category id="1296" parentId="1081">Лён</category>
+      <category id="1294" parentId="1081">Бязь (Россия)</category>
+      <category id="1293" parentId="1081">Сатин</category>
+      <category id="1085" parentId="1077">Детское постельное 1.5 бельё</category>
+      <category id="1133" parentId="1085">Ситец</category>
+      <category id="1183" parentId="1133">Универсальные</category>
+      <category id="1182" parentId="1133">Для девочек</category>
+      <category id="1179" parentId="1133">Для мальчиков</category>
+      <category id="1131" parentId="1085">Сатин-жаккард</category>
+      <category id="1190" parentId="1131">Для мальчиков</category>
+      <category id="1187" parentId="1131">Для девочек</category>
+      <category id="1186" parentId="1131">Универсальные</category>
+      <category id="1129" parentId="1085">Сатин (Китай)</category>
+      <category id="1171" parentId="1129">Универсальные</category>
+      <category id="1170" parentId="1129">Для девочек</category>
+      <category id="1167" parentId="1129">Для мальчиков</category>
+      <category id="1127" parentId="1085">Сатин (Россия)</category>
+      <category id="1178" parentId="1127">Для мальчиков</category>
+      <category id="1175" parentId="1127">Для девочек</category>
+      <category id="1174" parentId="1127">Универсальные</category>
+      <category id="1125" parentId="1085">Поплин</category>
+      <category id="1166" parentId="1125">Для мальчиков</category>
+      <category id="1163" parentId="1125">Для девочек</category>
+      <category id="1162" parentId="1125">Универсальные</category>
+      <category id="1123" parentId="1085">Поликоттон</category>
+      <category id="1159" parentId="1123">Универсальные</category>
+      <category id="1158" parentId="1123">Для девочек</category>
+      <category id="1155" parentId="1123">Для мальчиков</category>
+      <category id="1121" parentId="1085">Лён</category>
+      <category id="1153" parentId="1121">Для мальчиков</category>
+      <category id="1151" parentId="1121">Для девочек</category>
+      <category id="1149" parentId="1121">Универсальные</category>
+      <category id="1119" parentId="1085">Бязь (Россия)</category>
+      <category id="1147" parentId="1119">Универсальные</category>
+      <category id="1145" parentId="1119">Для мальчиков</category>
+      <category id="1143" parentId="1119">Для девочек</category>
+      <category id="1117" parentId="1085">Бязь (Пакистан)</category>
+      <category id="1139" parentId="1117">Универсальное</category>
+      <category id="1138" parentId="1117">Для девочек</category>
+      <category id="1137" parentId="1117">Для мальчиков</category>
+      <category id="1084" parentId="1077">Ясельные комплекты постельного белья</category>
+      <category id="1319" parentId="1084">Бязь (Пакистан)</category>
+      <category id="1361" parentId="1319">Универсальные</category>
+      <category id="1360" parentId="1319">Для девочек</category>
+      <category id="1359" parentId="1319">Для мальчиков</category>
+      <category id="1376" parentId="1284">Универсальные</category>
+      <category id="1375" parentId="1284">Для девочек</category>
+      <category id="1371" parentId="1284">Для мальчиков</category>
+      <category id="1283" parentId="1084">Сатин (Китай)</category>
+      <category id="1388" parentId="1283">Универсальные</category>
+      <category id="1387" parentId="1283">Для девочек</category>
+      <category id="1384" parentId="1283">Для мальчиков</category>
+      <category id="1282" parentId="1084">Сатин (Россия)</category>
+      <category id="1396" parentId="1282">Универсальные</category>
+      <category id="1395" parentId="1282">Для девочек</category>
+      <category id="1391" parentId="1282">Для мальчиков</category>
+      <category id="1281" parentId="1084">Поплин</category>
+      <category id="1382" parentId="1281">Универсальные</category>
+      <category id="1381" parentId="1281">Для девочек</category>
+      <category id="1378" parentId="1281">Для мальчиков</category>
+      <category id="1278" parentId="1084">Бязь (Россия)</category>
+      <category id="1365" parentId="1278">Универсальные</category>
+      <category id="1363" parentId="1278">Для девочек</category>
+      <category id="1362" parentId="1278">Для мальчиков</category>
+      <category id="1277" parentId="1084">Ситец</category>
+      <category id="1402" parentId="1277">Универсальные</category>
+      <category id="1401" parentId="1277">Для девочек</category>
+      <category id="1398" parentId="1277">Для мальчиков</category>
+      <category id="1086">Комплекты постельного белья: выбор по тканям</category>
+      <category id="1899" parentId="1086">Постельное бельё поплин 3D</category>
+      <category id="1901" parentId="1899">1.5 спальные</category>
+      <category id="1893" parentId="1086">Постельное бельё макосатин</category>
+      <category id="1895" parentId="1893">Евро</category>
+      <category id="1894" parentId="1893">2,0-спальные</category>
+      <category id="1680" parentId="1086">Постельное бельё сатин 3D</category>
+      <category id="1770" parentId="1680">1.5-спальные</category>
+      <category id="1769" parentId="1680">Семейные</category>
+      <category id="1682" parentId="1680">Евро 1</category>
+      <category id="1681" parentId="1680">2.0 спальные</category>
+      <category id="1637" parentId="1086">Махровое постельное бельё</category>
+      <category id="1639" parentId="1637">Евро 1</category>
+      <category id="1638" parentId="1637">1,5-спальные</category>
+      <category id="1623" parentId="1086">Постельное бельё перкаль</category>
+      <category id="1633" parentId="1623">Семейные</category>
+      <category id="1626" parentId="1623">Евро 1</category>
+      <category id="1631" parentId="1623">Евро 2</category>
+      <category id="1625" parentId="1623">2,0 - спальные (с европростыней)</category>
+      <category id="1628" parentId="1623">2,0 - спальные</category>
+      <category id="1624" parentId="1623">1,5 - спальные</category>
+      <category id="1096" parentId="1086">Постельное бельё поплин</category>
+      <category id="1288" parentId="1096">Ясельные</category>
+      <category id="1383" parentId="1288">Универсальные</category>
+      <category id="1380" parentId="1288">Для девочек</category>
+      <category id="1379" parentId="1288">Для мальчиков</category>
+      <category id="1249" parentId="1096">Семейные</category>
+      <category id="1247" parentId="1096">Евро 2</category>
+      <category id="1246" parentId="1096">Евро 1</category>
+      <category id="1245" parentId="1096">2.0 (+европростынь)</category>
+      <category id="1244" parentId="1096">2.0 спальные</category>
+      <category id="1126" parentId="1096">1.5 спальные (детские)</category>
+      <category id="1165" parentId="1126">Для мальчиков</category>
+      <category id="1164" parentId="1126">Для девочек</category>
+      <category id="1161" parentId="1126">Универсальные</category>
+      <category id="1110" parentId="1096">1.5 спальные</category>
+      <category id="1095" parentId="1086">Шелковое бельё постельное</category>
+      <category id="1321" parentId="1095">Семейные</category>
+      <category id="1274" parentId="1095">Евро 2</category>
+      <category id="1272" parentId="1095">Евро 1</category>
+      <category id="1271" parentId="1095">2.0 (+европростынь)</category>
+      <category id="1270" parentId="1095">2.0 спальные</category>
+      <category id="1136" parentId="1095">1.5 спальные (детские)</category>
+      <category id="1115" parentId="1095">1.5 спальные</category>
+      <category id="1094" parentId="1086">Ситец постельное бельё</category>
+      <category id="1292" parentId="1094">Ясельные</category>
+      <category id="1403" parentId="1292">Универсальные</category>
+      <category id="1400" parentId="1292">Для девочек</category>
+      <category id="1399" parentId="1292">Для мальчиков</category>
+      <category id="1269" parentId="1094">Семейные</category>
+      <category id="1268" parentId="1094">Евро 2</category>
+      <category id="1267" parentId="1094">Евро 1</category>
+      <category id="1266" parentId="1094">2.0 (+европростынь)</category>
+      <category id="1265" parentId="1094">2.0 спальные</category>
+      <category id="1134" parentId="1094">1.5 спальные (детские)</category>
+      <category id="1184" parentId="1134">Универсальные</category>
+      <category id="1181" parentId="1134">Для девочек</category>
+      <category id="1180" parentId="1134">Для мальчиков</category>
+      <category id="1114" parentId="1094">1.5 спальные</category>
+      <category id="1093" parentId="1086">Поликоттон постельное бельё</category>
+      <category id="1287" parentId="1093">Ясельные</category>
+      <category id="1377" parentId="1287">Универсальные</category>
+      <category id="1374" parentId="1287">Для девочек</category>
+      <category id="1373" parentId="1287">Для мальчиков</category>
+      <category id="1243" parentId="1093">Семейные</category>
+      <category id="1242" parentId="1093">Евро 2</category>
+      <category id="1241" parentId="1093">Евро 1</category>
+      <category id="1239" parentId="1093">2.0 (+европростынь)</category>
+      <category id="1238" parentId="1093">2.0 спальные</category>
+      <category id="1124" parentId="1093">1.5 спальные (детские)</category>
+      <category id="1160" parentId="1124">Универсальные</category>
+      <category id="1157" parentId="1124">Для девочек</category>
+      <category id="1156" parentId="1124">Для мальчиков</category>
+      <category id="1109" parentId="1093">1.5 спальные</category>
+      <category id="1091" parentId="1086">Постельное бельё сатин</category>
+      <category id="1290" parentId="1091">Ясельные</category>
+      <category id="1397" parentId="1290">Ясельные постельные комплекты сатин (Россия) универсальные</category>
+      <category id="1394" parentId="1290">Ясельные постельные комплекты сатин (Россия) для девочек</category>
+      <category id="1392" parentId="1290">Ясельные постельные комплекты сатин (Россия) для мальчиков</category>
+      <category id="1259" parentId="1091">Семейные</category>
+      <category id="1258" parentId="1091">Евро 2</category>
+      <category id="1257" parentId="1091">Евро 1</category>
+      <category id="1256" parentId="1091">2.0 (+европростынь)</category>
+      <category id="1255" parentId="1091">2.0 спальные</category>
+      <category id="1128" parentId="1091">1.5 спальные (детские)</category>
+      <category id="1177" parentId="1128">Для мальчиков</category>
+      <category id="1176" parentId="1128">Для девочек</category>
+      <category id="1173" parentId="1128">Универсальные</category>
+      <category id="1112" parentId="1091">1.5 спальные</category>
+      <category id="1090" parentId="1086">Постельное бельё сатин-жаккард</category>
+      <category id="1264" parentId="1090">Семейные</category>
+      <category id="1263" parentId="1090">Евро 2</category>
+      <category id="1262" parentId="1090">Евро 1</category>
+      <category id="1261" parentId="1090">2.0 (+европростынь)</category>
+      <category id="1260" parentId="1090">2.0 спальные</category>
+      <category id="1132" parentId="1090">1.5 спальные (детские)</category>
+      <category id="1189" parentId="1132">Для мальчиков</category>
+      <category id="1188" parentId="1132">Для девочек</category>
+      <category id="1185" parentId="1132">Универсальные</category>
+      <category id="1113" parentId="1090">1.5 спальные</category>
+      <category id="1089" parentId="1086">Постельное бельё лён</category>
+      <category id="1237" parentId="1089">Семейные</category>
+      <category id="1236" parentId="1089">Евро 2</category>
+      <category id="1235" parentId="1089">Евро 1</category>
+      <category id="1234" parentId="1089">2.0 (+европростынь)</category>
+      <category id="1233" parentId="1089">2.0 спальные</category>
+      <category id="1122" parentId="1089">1.5 спальные (детские)</category>
+      <category id="1154" parentId="1122">Для мальчиков</category>
+      <category id="1152" parentId="1122">Для девочек</category>
+      <category id="1150" parentId="1122">Универсальные</category>
+      <category id="1108" parentId="1089">1.5 спальные</category>
+      <category id="1088" parentId="1086">Постельное бельё бязь (Пакистан)</category>
+      <category id="1286" parentId="1088">Ясельные</category>
+      <category id="1370" parentId="1286">Универсальные</category>
+      <category id="1369" parentId="1286">Для девочек</category>
+      <category id="1368" parentId="1286">Для мальчиков</category>
+      <category id="1227" parentId="1088">Семейные</category>
+      <category id="1611" parentId="1227">Семейные</category>
+      <category id="1226" parentId="1088">Евро 2</category>
+      <category id="1225" parentId="1088">Евро 1</category>
+      <category id="1224" parentId="1088">2.0 (+европростынь)</category>
+      <category id="1223" parentId="1088">2.0 спальные</category>
+      <category id="1118" parentId="1088">1.5 спальные (детские)</category>
+      <category id="1142" parentId="1118">Для девочек</category>
+      <category id="1141" parentId="1118">Для мальчиков</category>
+      <category id="1140" parentId="1118">Универсальное</category>
+      <category id="1106" parentId="1088">1.5 спальные</category>
+      <category id="1087" parentId="1086">Постельное бельё бязь (Россия)</category>
+      <category id="1649" parentId="1087">Семейные</category>
+      <category id="1232" parentId="1087">Семейные</category>
+      <category id="1230" parentId="1087">Евро 1</category>
+      <category id="1231" parentId="1087">Евро 2</category>
+      <category id="1228" parentId="1087">2.0 спальные</category>
+      <category id="1229" parentId="1087">2.0 (+европростынь)</category>
+      <category id="1107" parentId="1087">1.5 спальные</category>
+      <category id="1120" parentId="1087">1.5 спальные (детские)</category>
+      <category id="1148" parentId="1120">Универсальные</category>
+      <category id="1146" parentId="1120">Для мальчиков</category>
+      <category id="1144" parentId="1120">Для девочек</category>
+      <category id="1285" parentId="1087">Ясельные</category>
+      <category id="1367" parentId="1285">Для мальчиков</category>
+      <category id="1366" parentId="1285">Универсальные</category>
+      <category id="1364" parentId="1285">Для девочек</category>
+      <category id="1719">Постельное бельё Зима-Лето</category>
+      <category id="1720" parentId="1719">Постельное бельё Зима-Лето 1.5 спальные</category>
+      <category id="1724" parentId="1719">Постельное бельё  Зима-Лето семейные</category>
+      <category id="1721" parentId="1719">Постельное бельё  Зима-Лето2.0 спальные</category>
+      <category id="1722" parentId="1719">Постельное бельё зима-лето 2.0 спальные с европростыней</category>
+      <category id="1723" parentId="1719">Постельное белье зима-лето Евро</category>
+      <category id="1905" parentId="1719">Постельное бельё Зима-Лето бязь</category>
+      <category id="1910" parentId="1905">Постельное бельё Зима-Лето бязь Евро</category>
+      <category id="1909" parentId="1905">Постельное бельё Зима-Лето бязь Семейный</category>
+      <category id="1908" parentId="1905">Постельное бельё Зима-Лето бязь 2.0 спальные (+ европростынь)</category>
+      <category id="1907" parentId="1905">Постельное бельё Зима-Лето бязь 2.0 спальные</category>
+      <category id="1906" parentId="1905">Постельное бельё Зима-Лето бязь 1.5 спальные</category>
+      <category id="1418">Постельное бельё  в подарок</category>
+      <category id="1419" parentId="1418">Постельное бельё  в подарок 1.5 спальные</category>
+      <category id="1420" parentId="1418">Постельное бельё  в подарок 2.0 спальные</category>
+      <category id="1424" parentId="1418">Постельное бельё  в подарок 2.0 спальные (+европростыня)</category>
+      <category id="1421" parentId="1418">Постельное бельё  в подарок Евро-1</category>
+      <category id="1422" parentId="1418">Постельное бельё  в подарок Евро-2</category>
+      <category id="1423" parentId="1418">Постельное бельё  в подарок семейное</category>
+      <category id="1824">Женская одежда</category>
+      <category id="2036" parentId="1824">Кофты и толстовки женские</category>
+      <category id="2035" parentId="1824">Куртки женские</category>
+      <category id="811" parentId="1824">Халаты женские</category>
+      <category id="2008" parentId="811">Летние халаты женские</category>
+      <category id="2009" parentId="811">Теплые халаты женские</category>
+      <category id="2010" parentId="811">Махровые халаты женские</category>
+      <category id="810" parentId="1824">Домашняя одежда для женщин</category>
+      <category id="808" parentId="1824">Женский верхний трикотаж</category>
+      <category id="1828" parentId="1824">Женская одежда больших размеров</category>
+      <category id="1998" parentId="1824">Платья и юбки женские</category>
+      <category id="2000" parentId="1998">Платья женские</category>
+      <category id="2023" parentId="1998">Сарафаны</category>
+      <category id="2001" parentId="1998">Туники женские</category>
+      <category id="2002" parentId="1998">Юбки женские</category>
+      <category id="2003" parentId="1824">Футболки майки женские</category>
+      <category id="2004" parentId="2003">Майки женские</category>
+      <category id="2005" parentId="2003">Топы женские</category>
+      <category id="2006" parentId="2003">Футболки женские</category>
+      <category id="2011" parentId="1824">Брюки и шорты</category>
+      <category id="2051" parentId="2011">Леггинсы женские</category>
+      <category id="2012" parentId="2011">Брюки женские</category>
+      <category id="2013" parentId="2011">Капри женские</category>
+      <category id="2014" parentId="2011">Шорты женские</category>
+      <category id="2016" parentId="1824">Джемпер женский</category>
+      <category id="2018" parentId="2016">Джемпер женский теплый</category>
+      <category id="2017" parentId="2016">Джемпер женский летний</category>
+      <category id="2052" parentId="1824">Спортивные костюмы женские</category>
+      <category id="812" parentId="1824">Одежда для сна женская</category>
+      <category id="2020" parentId="812">Пеньюары</category>
+      <category id="2021" parentId="812">Пижамы</category>
+      <category id="2022" parentId="812">Сорочки и ночные рубашки</category>
+      <category id="809" parentId="1824">Женское нижнее бельё</category>
+      <category id="2025" parentId="809">Панталоны</category>
+      <category id="2026" parentId="809">Рейтузы</category>
+      <category id="2024" parentId="809">Трусы женские</category>
+      <category id="2037" parentId="1824">Женские головные уборы</category>
+      <category id="2027" parentId="1824">Носовые платки женские</category>
+      <category id="1862" parentId="1824">Женские носки</category>
+      <category id="1832">Мужская одежда</category>
+      <category id="2050" parentId="1832">Ветровки мужские</category>
+      <category id="2045" parentId="1832">Мужские футболки</category>
+      <category id="2044" parentId="1832">Мужские костюмы</category>
+      <category id="1927" parentId="1832">Мужская  верхняя одежда</category>
+      <category id="2049" parentId="1927">Жилет мужской</category>
+      <category id="1928" parentId="1927">Мужская верхняя одежда зима</category>
+      <category id="1929" parentId="1927">Мужская верхняя одежда демисезонная весна-осень</category>
+      <category id="1930" parentId="1927">Мужская верхняя одежда лето</category>
+      <category id="815" parentId="1832">Мужское нижнее бельё</category>
+      <category id="814" parentId="1832">Мужской верхний трикотаж</category>
+      <category id="816" parentId="1832">Халаты мужские</category>
+      <category id="1833" parentId="1832">Мужская одежда больших размеров</category>
+      <category id="1863" parentId="1832">Мужские носки</category>
+      <category id="2033" parentId="1832">Рубашки мужские</category>
+      <category id="1572">Халаты махровые</category>
+      <category id="1573" parentId="1572">Халат махровый женский</category>
+      <category id="1574" parentId="1572">Мужской махровый халат</category>
+      <category id="1575" parentId="1572">Детский махровый халат</category>
+      <category id="1834">Детская одежда</category>
+      <category id="1994" parentId="1834">Полукомбинезоны и брюки тёплые детские</category>
+      <category id="1993" parentId="1834">Тельняшки детские</category>
+      <category id="1988" parentId="1834">Детский камуфляж</category>
+      <category id="1995" parentId="1988">Куртки детские камуфляжные кмф</category>
+      <category id="1992" parentId="1988">Брюки детские камуфляжные КМФ</category>
+      <category id="1991" parentId="1988">Костюмы детские флисовые</category>
+      <category id="1990" parentId="1988">Костюмы детские влагозащитные</category>
+      <category id="1989" parentId="1988">Костюмы детские камуфляжные КМФ</category>
+      <category id="1744" parentId="1834">Трикотаж детский</category>
+      <category id="1751" parentId="1834">Футболки майки детские</category>
+      <category id="1747" parentId="1834">Кофточки водолазки детские</category>
+      <category id="1759" parentId="1834">Пижамы детские</category>
+      <category id="1752" parentId="1834">Брючки шорты детские</category>
+      <category id="818" parentId="1834">Халаты детские</category>
+      <category id="1823" parentId="1834">Жилеты детские</category>
+      <category id="1758" parentId="1834">Трусы детские</category>
+      <category id="1757" parentId="1834">Костюмы детские</category>
+      <category id="1756" parentId="1834">Платья юбки детские</category>
+      <category id="1755" parentId="1834">Конверты детские</category>
+      <category id="1753" parentId="1834">Джемперы куртки детские</category>
+      <category id="1760" parentId="1834">Костюмы махровые детские</category>
+      <category id="1872" parentId="1834">Одежда детская для охоты и рыбалки</category>
+      <category id="1962" parentId="1834">Мешки для обуви</category>
+      <category id="1835">Одежда для будущих мам</category>
+      <category id="1597">Одежда для новорождённых</category>
+      <category id="2019" parentId="1597">Детские покрывала</category>
+      <category id="1761" parentId="1597">Набор в коляску</category>
+      <category id="1743" parentId="1597">Набор в кроватку для новорожденного</category>
+      <category id="1742" parentId="1597">Балдахины бортики в кроватку новорожденного</category>
+      <category id="1741" parentId="1597">Подушка для новорожденных</category>
+      <category id="1740" parentId="1597">Одеяло для новорожденных</category>
+      <category id="1867" parentId="1740">Детское одеяло для новорожденных 110х140 см</category>
+      <category id="1866" parentId="1740">Детское одеяло для новорожденных 118х118 см</category>
+      <category id="1865" parentId="1740">Детское одеяло для новорожденных 100х140 см</category>
+      <category id="1864" parentId="1740">Детское одеяло для новорожденных 90х112 см</category>
+      <category id="1739" parentId="1597">Плед для новорожденного</category>
+      <category id="1738" parentId="1597">Чепчики косынки для новорожденных</category>
+      <category id="1737" parentId="1597">Наволочка для новорожденного</category>
+      <category id="1736" parentId="1597">Простыни для новорожденного</category>
+      <category id="1735" parentId="1597">Пододеяльник для новорожденного</category>
+      <category id="1734" parentId="1597">Конверты на выписку для новорождённого</category>
+      <category id="1733" parentId="1597">Наборы для новорожденного</category>
+      <category id="1602" parentId="1597">Ползунки распашонки кофточки</category>
+      <category id="1601" parentId="1597">Пеленки</category>
+      <category id="1600" parentId="1597">Крестильное бельё</category>
+      <category id="1599" parentId="1597">Костюмы для новорожденных</category>
+      <category id="1598" parentId="1597">Постельные комплекты для новорожденных</category>
+      <category id="1750" parentId="1597">Нагрудники детские</category>
+      <category id="1748" parentId="1597">Чепчики шапочки для новорожденных</category>
+      <category id="1746" parentId="1597">Распашонка для новорожденных</category>
+      <category id="1745" parentId="1597">Ползунки для новорожденных</category>
+      <category id="1754" parentId="1597">Комбинезоны для новорожденных</category>
+      <category id="1837">Спецодежда - униформа</category>
+      <category id="1969" parentId="1837">Рабочая спецодежда</category>
+      <category id="1972" parentId="1969">Рабочие брюки</category>
+      <category id="1971" parentId="1969">Рабочие полукомбинезоны</category>
+      <category id="1970" parentId="1969">Рабочие костюмы</category>
+      <category id="1847" parentId="1837">Фартук для парикмахера и пеньюары</category>
+      <category id="1846" parentId="1837">Спецодежда для продавца</category>
+      <category id="857" parentId="1846">Головной убор продавца</category>
+      <category id="1848" parentId="1846">Передник для продавца</category>
+      <category id="856" parentId="1846">Фартуки и пеньюары для продавца</category>
+      <category id="855" parentId="1846">Халаты и сарафаны для продавца</category>
+      <category id="1849" parentId="1846">Костюмы для продавца</category>
+      <category id="1861" parentId="1837">Сигнальный жилет</category>
+      <category id="828">Медицинская одежда</category>
+      <category id="1836">Одежда для охотников и рыболовов</category>
+      <category id="1856" parentId="1836">Зимняя одежда для охотников и рыболовов</category>
+      <category id="1923" parentId="1856">Зимние костюмы маскировочные</category>
+      <category id="1926" parentId="1856">Зимние брюки-штаны утепленные</category>
+      <category id="1925" parentId="1856">Зимние полукомбинезоны утепленные</category>
+      <category id="1924" parentId="1856">Зимние жилеты утепленные</category>
+      <category id="1922" parentId="1856">Зимние куртки</category>
+      <category id="1921" parentId="1856">Зимние костюмы</category>
+      <category id="1920" parentId="1856">Зимние головные уборы</category>
+      <category id="1919" parentId="1920">Маски, подшлемники</category>
+      <category id="1918" parentId="1920">Зимние шапки вязанные</category>
+      <category id="1917" parentId="1920">Зимние шапки флисовые</category>
+      <category id="1916" parentId="1920">Зимние шапки-ушанки</category>
+      <category id="1915" parentId="1920">Кепки утепленные</category>
+      <category id="1914" parentId="1856">Зимние перчатки, варежки</category>
+      <category id="1931" parentId="1856">Термобелье</category>
+      <category id="1984" parentId="1856">Свитера</category>
+      <category id="1855" parentId="1836">Демисезонная одежда для охотников и рыболовов</category>
+      <category id="1853" parentId="1836">Летняя одежда для охотников и рыболовов</category>
+      <category id="2030" parentId="1853">Жилеты летние</category>
+      <category id="2028" parentId="1853">Ветровки летние</category>
+      <category id="1857" parentId="1836">Одежда подростковая для охоты и рыбалки</category>
+      <category id="1874" parentId="1857">Зимняя одежда подростковая для охоты и рыбалки</category>
+      <category id="1932" parentId="1857">Демисезонная одежда подростковая для охоты и рыбалки</category>
+      <category id="1933" parentId="1857">Летняя одежда подростковая для охоты и рыбалки</category>
+      <category id="1964" parentId="1933">Брюки</category>
+      <category id="1963" parentId="1933">Костюмы</category>
+      <category id="1860" parentId="1836">Трикотаж для охоты и рыбалки</category>
+      <category id="1858" parentId="1836">Головные уборы для охоты и рыбалки</category>
+      <category id="1956" parentId="1858">Зимние головные уборы для охоты и рыбалки</category>
+      <category id="1961" parentId="1956">Маски, подшлемники</category>
+      <category id="1960" parentId="1956">Зимние шапки вязанные</category>
+      <category id="1959" parentId="1956">Зимние шапки флисовые</category>
+      <category id="1958" parentId="1956">Зимние шапки-ушанки</category>
+      <category id="1957" parentId="1956">Кепки утепленные</category>
+      <category id="1955" parentId="1858">Демисезонные головные уборы для охоты и рыбалки</category>
+      <category id="1949" parentId="1858">Летние головные уборы для охоты и рыбалки</category>
+      <category id="1950" parentId="1949">Банданы</category>
+      <category id="1951" parentId="1949">Бейсболки</category>
+      <category id="1952" parentId="1949">Кепки</category>
+      <category id="1953" parentId="1949">Косынки</category>
+      <category id="1954" parentId="1949">Панамы</category>
+      <category id="1859" parentId="1836">Рюкзаки и сумки для охоты и рыбалки</category>
+      <category id="1985" parentId="1836">Патронташи  ягдташи ремни</category>
+      <category id="1967" parentId="1836">Спальные мешки</category>
+      <category id="1966">Сумки рюкзаки</category>
+      <category id="1934">Головные уборы</category>
+      <category id="1935" parentId="1934">Зимние головные уборы</category>
+      <category id="1938" parentId="1935">Маски, подшлемники</category>
+      <category id="1939" parentId="1935">Зимние шапки вязанные</category>
+      <category id="1940" parentId="1935">Зимние шапки флисовые</category>
+      <category id="1941" parentId="1935">Зимние шапки-ушанки</category>
+      <category id="1942" parentId="1935">Зимние кепки утепленные</category>
+      <category id="1936" parentId="1934">Демисезонные головные уборы</category>
+      <category id="1937" parentId="1934">Летние головные уборы</category>
+      <category id="1944" parentId="1937">Банданы</category>
+      <category id="1943" parentId="1937">Бейсболки</category>
+      <category id="1946" parentId="1937">Кепки</category>
+      <category id="1947" parentId="1937">Косынки</category>
+      <category id="1945" parentId="1937">Панамы</category>
+      <category id="1948">Перчатки и варежки</category>
+      <category id="1842">Обувь</category>
+      <category id="1981" parentId="1842">Обувь VIP</category>
+      <category id="1980" parentId="1842">Сапоги суконные</category>
+      <category id="1979" parentId="1842">Сапоги, бахилы, унты</category>
+      <category id="1978" parentId="1842">Сапоги ЭВА</category>
+      <category id="1977" parentId="1842">Резиновая обувь</category>
+      <category id="1976" parentId="1842">Рабочая обувь</category>
+      <category id="1975" parentId="1842">Берцы облегченные</category>
+      <category id="1974" parentId="1842">Берцы зимние</category>
+      <category id="1973" parentId="1842">Берцы летние</category>
+      <category id="830" parentId="1842">Тапки</category>
+      <category id="1603">Товары для бани и сауны</category>
+      <category id="802">Домашний текстиль ивановский</category>
+      <category id="805" parentId="802">Текстиль для кухни</category>
+      <category id="1809" parentId="805">Фартук кухонный текстиль</category>
+      <category id="1808" parentId="805">Набор кухонный фартук рукавичка прихватка</category>
+      <category id="1771" parentId="802">Льняные салфетки</category>
+      <category id="803" parentId="802">Вафельные и льняные полотенца</category>
+      <category id="1749" parentId="802">Наборы кухонного текстиля</category>
+      <category id="1819">Пледы</category>
+      <category id="1820" parentId="1819">Меховой плед</category>
+      <category id="1822" parentId="1820">Меховой плед 220х200 см</category>
+      <category id="1821" parentId="1820">Меховой плед 180х200 см</category>
+      <category id="1425" parentId="1819">Флисовый плед</category>
+      <category id="1432" parentId="1425">Флисовый плед  180х200 см</category>
+      <category id="1431" parentId="1425">Флисовый плед 220х240 см</category>
+      <category id="1430" parentId="1425">Флисовый плед 200х200 см</category>
+      <category id="1429" parentId="1425">Флисовый плед 150х200 см</category>
+      <category id="1428" parentId="1425">Флисовый плед 180х220 см</category>
+      <category id="1427" parentId="1425">Флисовый плед  200х220 см</category>
+      <category id="1426" parentId="1425">Флисовый плед 130х160 см</category>
+      <category id="1576">Махровые полотенца</category>
+      <category id="1764" parentId="1576">Подарочные полотенца наборы</category>
+      <category id="1677" parentId="1576">Кухонные полотенца</category>
+      <category id="1590" parentId="1576">Полотенце с вышивкой</category>
+      <category id="1592" parentId="1590">Полотенце махровое с вышивкой - с прикольными веселыми надписями</category>
+      <category id="1591" parentId="1590">Полотенце махровое с вышивкой и именами</category>
+      <category id="1589" parentId="1576">Полотенце руки ноги  (40х70,50Х70)</category>
+      <category id="1588" parentId="1576">Полотенце для рук (34х78)</category>
+      <category id="1587" parentId="1576">Полотенце для лица  (50х70,50х100,50х90)</category>
+      <category id="1586" parentId="1576">Полотенце банное большое (100х150,100х180)</category>
+      <category id="1585" parentId="1576">Полотенце банное (50х120,70х140,65х135)</category>
+      <category id="1584" parentId="1576">Пляжное полотенце (80х160)</category>
+      <category id="1579" parentId="1576">Детские полотенца с капюшоном</category>
+      <category id="1578" parentId="1576">Детские полотенца</category>
+      <category id="1577" parentId="1576">Набор полотенец</category>
+      <category id="1433">Махровые простыни</category>
+      <category id="1676" parentId="1433">Махровая простынь Евро 220х240 см</category>
+      <category id="1440" parentId="1433">Махровая простынь 180х220 см</category>
+      <category id="1675" parentId="1433">Простынь махровая 160х220 см</category>
+      <category id="1441" parentId="1433">Простынь махровая двухспальная 180х210 см</category>
+      <category id="1439" parentId="1433">Простынь махровая 180х200 см</category>
+      <category id="1438" parentId="1433">Простынь махровая 200х220 см</category>
+      <category id="1437" parentId="1433">Простынь махровая полуторная 150х190 см</category>
+      <category id="1436" parentId="1433">Простынь махрова полуторная 150х200 см</category>
+      <category id="1435" parentId="1433">Простынь махрова полутораспальная 150х210 смя</category>
+      <category id="1434" parentId="1433">Детские махровые простыни 100х150 см</category>
+      <category id="1058">Подушка</category>
+      <category id="1074" parentId="1058">Подушка 40х40 см</category>
+      <category id="1504" parentId="1074">Подушка 40х40 см файберсофт</category>
+      <category id="1503" parentId="1074">Подушка 40х40 см пухо-перовая</category>
+      <category id="1502" parentId="1074">Подушка 40х40 см пух горной козы</category>
+      <category id="1501" parentId="1074">Подушка 40х40 см полиэфирное волокно</category>
+      <category id="1500" parentId="1074">Подушка 40х40 см овечья шерсть</category>
+      <category id="1499" parentId="1074">Подушка 40х40 см лебяжий пух</category>
+      <category id="1498" parentId="1074">Подушка 40х40 см декоративная</category>
+      <category id="1497" parentId="1074">Подушка 40х40 см бамбуковое волокно</category>
+      <category id="1496" parentId="1074">Подушка 40х40 см гусиный пух</category>
+      <category id="1495" parentId="1074">Подушка 40х40 см верблюжья шерсть</category>
+      <category id="1494" parentId="1074">Подушка 40х40 см анатомическая ортопедическая</category>
+      <category id="1072" parentId="1058">Подушка  40х60 см</category>
+      <category id="1515" parentId="1072">Подушка 40х60 см файберсофт</category>
+      <category id="1514" parentId="1072">Подушка 40х60 см пухо-перовая</category>
+      <category id="1513" parentId="1072">Подушка 40х60 см пух горной козы</category>
+      <category id="1512" parentId="1072">Подушка 40х60 см  полиэфирное волокно</category>
+      <category id="1511" parentId="1072">Подушка 40х60 см  овечья шерсть</category>
+      <category id="1510" parentId="1072">Подушка 40х60 см лебяжий пух</category>
+      <category id="1509" parentId="1072">Подушка 40х60 см декоративная</category>
+      <category id="1508" parentId="1072">Подушка 40х60 см  бамбуковое волокно</category>
+      <category id="1507" parentId="1072">Подушка 40х60 см  гусиный пух</category>
+      <category id="1506" parentId="1072">Подушка 40х60 см  верблюжья шерсть</category>
+      <category id="1505" parentId="1072">Подушка 40х60 см  анатомическая ортопедическая</category>
+      <category id="1075" parentId="1058">Подушка  50х50 см</category>
+      <category id="1526" parentId="1075">Подушка 50х50 см файберсофт</category>
+      <category id="1525" parentId="1075">Подушка 50х50 см  пухо-перовая</category>
+      <category id="1524" parentId="1075">Подушка 50х50 см  пух горной козы</category>
+      <category id="1523" parentId="1075">Подушка 50х50 см полиэфирное волокно</category>
+      <category id="1522" parentId="1075">Подушка 50х50 см овечья шерсть</category>
+      <category id="1521" parentId="1075">Подушка 50х50 см  лебяжий пух</category>
+      <category id="1520" parentId="1075">Подушка 50х50 см  декоративная</category>
+      <category id="1519" parentId="1075">Подушка 50х50 см бамбуковое волокно</category>
+      <category id="1518" parentId="1075">Подушка 50х50 см  гусиный пух</category>
+      <category id="1517" parentId="1075">Подушка 50х50 см  верблюжья шерсть</category>
+      <category id="1516" parentId="1075">Подушка 50х50 см  анатомическая ортопедическая</category>
+      <category id="1071" parentId="1058">Подушка 50х70 см</category>
+      <category id="1537" parentId="1071">Подушка 50х70 см файберсофт</category>
+      <category id="1536" parentId="1071">Подушка 50х70 см  пухо-перовая</category>
+      <category id="1535" parentId="1071">Подушка 50х70 см пух горной коз</category>
+      <category id="1534" parentId="1071">Подушка 50х70 см полиэфирное волокно</category>
+      <category id="1533" parentId="1071">Подушка 50х70 см  овечья шерсть</category>
+      <category id="1532" parentId="1071">Подушка 50х70 см  лебяжий пух</category>
+      <category id="1531" parentId="1071">Подушка 50х70 см декоративная</category>
+      <category id="1530" parentId="1071">Подушка 50х70 см бамбуковое волокно</category>
+      <category id="1529" parentId="1071">Подушка 50х70 см гусиный пух</category>
+      <category id="1528" parentId="1071">Подушка 50х70 см  верблюжья шерсть</category>
+      <category id="1527" parentId="1071">Подушка 50х70 см  анатомическая ортопедическа</category>
+      <category id="1073" parentId="1058">Подушка 60х60 см</category>
+      <category id="1548" parentId="1073">Подушка 60х60 см файберсофт</category>
+      <category id="1547" parentId="1073">Подушка 60х60 см  пухо-перовая</category>
+      <category id="1546" parentId="1073">Подушка 60х60 см  пух горной козы</category>
+      <category id="1545" parentId="1073">Подушка 60х60 см  полиэфирное волокно</category>
+      <category id="1544" parentId="1073">Подушка 60х60 см  овечья шерсть</category>
+      <category id="1543" parentId="1073">Подушка 60х60 см  лебяжий пух</category>
+      <category id="1542" parentId="1073">Подушка 60х60 см  декоративная</category>
+      <category id="1541" parentId="1073">Подушка 60х60 см бамбуковое волокно</category>
+      <category id="1540" parentId="1073">Подушка 60х60 см  гусиный пух</category>
+      <category id="1539" parentId="1073">Подушка 60х60 см верблюжья шерсть</category>
+      <category id="1538" parentId="1073">Подушка 60х60 см  анатомическая ортопедическая</category>
+      <category id="1076" parentId="1058">Подушка 60х70 см</category>
+      <category id="1559" parentId="1076">Подушка 60х70 см  файберсофт</category>
+      <category id="1558" parentId="1076">Подушка 60х70 см   пухо-перовая</category>
+      <category id="1557" parentId="1076">Подушка 60х70 см   пух горной козы</category>
+      <category id="1556" parentId="1076">Подушка 60х70 см   полиэфирное волокно</category>
+      <category id="1555" parentId="1076">Подушка 60х70 см   овечья шерсть</category>
+      <category id="1554" parentId="1076">Подушка 60х70 см  лебяжий пух</category>
+      <category id="1553" parentId="1076">Подушка 60х70 см  декоративная</category>
+      <category id="1552" parentId="1076">Подушка 60х70 см  бамбуковое волокно</category>
+      <category id="1551" parentId="1076">Подушка 60х70 см   гусиный пух</category>
+      <category id="1550" parentId="1076">Подушка 60х70 см   верблюжья шерсть</category>
+      <category id="1549" parentId="1076">Подушка 60х70 см  анатомическая ортопедическая</category>
+      <category id="1070" parentId="1058">Подушка 70х70 см</category>
+      <category id="1570" parentId="1070">Подушка 70х70 см  файберсофт</category>
+      <category id="1569" parentId="1070">Подушка 70х70 см  пухо-перовая</category>
+      <category id="1568" parentId="1070">Подушка 70х70 см  пух горной козы</category>
+      <category id="1567" parentId="1070">Подушка 70х70 см  полиэфирное волокно</category>
+      <category id="1566" parentId="1070">Подушка 70х70 см  овечья шерсть</category>
+      <category id="1565" parentId="1070">Подушка 70х70 см  лебяжий пух</category>
+      <category id="1564" parentId="1070">Подушка 70х70 см  декоративная</category>
+      <category id="1563" parentId="1070">Подушка 70х70 см  бамбуковое волокно</category>
+      <category id="1562" parentId="1070">Подушка 70х70 см  гусиный пух</category>
+      <category id="1561" parentId="1070">Подушка 70х70 см  верблюжья шерсть</category>
+      <category id="1560" parentId="1070">Подушка 70х70 см  анатомическая ортопедическая</category>
+      <category id="1069" parentId="1058">Подушка  пухо-перьевая</category>
+      <category id="1715" parentId="1069">Подушка  пухо-перьевая 50x70 см</category>
+      <category id="1689" parentId="1069">Подушка  пухо-перьевая 70х70 см</category>
+      <category id="1060" parentId="1058">Подушки  из верблюжей шерсти</category>
+      <category id="1712" parentId="1060">Подушки  из верблюжей шерсти 50х70 см</category>
+      <category id="1711" parentId="1060">Подушки  из верблюжей шерсти 70х70 см</category>
+      <category id="1061" parentId="1058">Гусиный пух подушки</category>
+      <category id="1710" parentId="1061">Гусиный пух подушки 50х70 см</category>
+      <category id="1709" parentId="1061">Гусиный пух подушки 70х70 см</category>
+      <category id="1066" parentId="1058">Подушки с синтетическим наполнителем файберсофт</category>
+      <category id="1065" parentId="1058">Козий пух подушки</category>
+      <category id="1695" parentId="1065">Козий пух подушки 50х70 см</category>
+      <category id="1694" parentId="1065">Козий пух подушки 70х70 см</category>
+      <category id="1064" parentId="1058">Подушки  полиэфирное волокно</category>
+      <category id="1700" parentId="1064">Подушки полиэфирное волокно 50х50 см</category>
+      <category id="1699" parentId="1064">Подушки полиэфирное волокно 40х40 см</category>
+      <category id="1698" parentId="1064">Подушки полиэфирное волокно  60х60 см</category>
+      <category id="1697" parentId="1064">Подушки полиэфирное волокно 50х70 см</category>
+      <category id="1696" parentId="1064">Подушки полиэфирное волокно 70х70 см</category>
+      <category id="1063" parentId="1058">Подушки из овечьей шерсти</category>
+      <category id="1702" parentId="1063">Подушки из овечьей шерсти 50х70 см</category>
+      <category id="1701" parentId="1063">Подушки из овечьей шерсти 70х70 см</category>
+      <category id="1062" parentId="1058">Подушка лебяжий пух синтетика</category>
+      <category id="1708" parentId="1062">Подушка лебяжий пух синтетика 50х50 см</category>
+      <category id="1707" parentId="1062">Подушка лебяжий пух синтетика 40х40 см</category>
+      <category id="1706" parentId="1062">Подушка лебяжий пух синтетика 60х60 см</category>
+      <category id="1705" parentId="1062">Подушка лебяжий пух синтетика 40х60 см</category>
+      <category id="1704" parentId="1062">Подушка лебяжий пух синтетика 50х70 см</category>
+      <category id="1703" parentId="1062">Подушка лебяжий пух синтетика 70х70 см</category>
+      <category id="1067" parentId="1058">Анатомическая ортопедическая подушка</category>
+      <category id="1693" parentId="1067">Анатомическая ортопедическая подушка 50х70 см</category>
+      <category id="1068" parentId="1058">Декоративные подушки</category>
+      <category id="1692" parentId="1068">Декоративные подушки 50х50 см</category>
+      <category id="1691" parentId="1068">Декоративные подушки 40х40 см</category>
+      <category id="1690" parentId="1068">Декоративные подушки 40х60 см</category>
+      <category id="1059" parentId="1058">Подушка  из бамбукового волокна</category>
+      <category id="1714" parentId="1059">Подушка  из бамбукового волокна 50x70 см</category>
+      <category id="1713" parentId="1059">Подушка  из бамбукового волокна 70х70 см</category>
+      <category id="975">Одеяло</category>
+      <category id="1041" parentId="975">Одеяла 1.5 полуторное (140х205)</category>
+      <category id="1057" parentId="1041">Одеяло 1.5 спальное эвкалиптовое волокно (140х205)</category>
+      <category id="1056" parentId="1041">Одеяло 1.5 спальное хлопковое волокно (140х205)</category>
+      <category id="1055" parentId="1041">Одеяло 1.5 спальное (140х205) файберсофт</category>
+      <category id="1054" parentId="1041">Одеяло 1.5 спальное полушерстяное (140х205)</category>
+      <category id="1053" parentId="1041">Одеяло 1.5 спальное (140х205) полиэфирное волокно</category>
+      <category id="1052" parentId="1041">Одеяло 1.5 спальное  овечья шерсть (140х205)</category>
+      <category id="1051" parentId="1041">Одеяло 1.5 спальное лебяжий пух (140х205)</category>
+      <category id="1050" parentId="1041">Одеяло 1.5 спальное  пух горной козы (140х205)</category>
+      <category id="1049" parentId="1041">Одеяло 1.5 спальное  гусиный пух (140х205)</category>
+      <category id="1048" parentId="1041">Одеяло 1.5 спальное  верблюжья шерсть (140х205)</category>
+      <category id="1047" parentId="1041">Одеяло 1.5 спальное  бамбуковое волокно (140х205)</category>
+      <category id="1042" parentId="975">Одеяло 2.0 х двухспальное (172х205)</category>
+      <category id="1334" parentId="1042">Одеяло 2.0 х двухспальное эвкалиптовое волокно (172х205)</category>
+      <category id="1333" parentId="1042">Одеяло 2.0 х двухспальное холофайбер (172х205)</category>
+      <category id="1332" parentId="1042">Одеяло 2.0 х двухспальное хлопковое волокно (172х205)</category>
+      <category id="1331" parentId="1042">Одеяло 2.0 х двухспальное файберсофт (172х205)</category>
+      <category id="1330" parentId="1042">Одеяло 2.0 х двухспальное пух горной козы (172х205)</category>
+      <category id="1329" parentId="1042">Одеяло 2.0 х двухспальное полушерстяное (172х205)</category>
+      <category id="1328" parentId="1042">Одеяло 2.0 х двухспальное полиэфирное волокно (172х205)</category>
+      <category id="1327" parentId="1042">Одеяло 2.0 х двухспальное овечья шерсть (172х205)</category>
+      <category id="1326" parentId="1042">Одеяло 2.0 х двухспальное лебяжий пух  (172х205)</category>
+      <category id="1325" parentId="1042">Одеяло 2.0 х двухспальное гусиный пух  (172х205)</category>
+      <category id="1324" parentId="1042">Одеяло 2.0 х двухспальное верблюжья шерсть  (172х205)</category>
+      <category id="1323" parentId="1042">Одеяло 2.0 х двухспальное бамбуковое волокно  (172х205)</category>
+      <category id="1043" parentId="975">Одеяло Евро-1 (200х220)</category>
+      <category id="1571" parentId="1043">Одеяло Евро-1 пух горной козы (200х220)</category>
+      <category id="1357" parentId="1043">Одеяло Евро-1 пух эвкалиптовое волокно (200х220)</category>
+      <category id="1356" parentId="1043">Одеяло Евро-1 пух холофайбер (200х220)</category>
+      <category id="1353" parentId="1043">Одеяло Евро-1 пух хлопковое волокно (200х220)</category>
+      <category id="1352" parentId="1043">Одеяло Евро-1 пух файберсофт (200х220)</category>
+      <category id="1347" parentId="1043">Одеяло Евро-1 полушерстяное (200х220)</category>
+      <category id="1346" parentId="1043">Одеяло Евро-1 полиэфирное волокно (200х220)</category>
+      <category id="1343" parentId="1043">Одеяло Евро-1 овечья шерсть (200х220)</category>
+      <category id="1342" parentId="1043">Одеяло Евро-1 лебяжий пух (синтетическое волокно) (200х220)</category>
+      <category id="1339" parentId="1043">Одеяло Евро-1 гусиный пух (200х220)</category>
+      <category id="1338" parentId="1043">Одеяло Евро-1 верблюжья шерсть (200х220)</category>
+      <category id="1335" parentId="1043">Одеяло Евро-1  бамбуковое волокно (200х220)</category>
+      <category id="1044" parentId="975">Одеяло Евро-2 (220х240)</category>
+      <category id="1358" parentId="1044">Одеяло Евро-2 эвкалиптовое волокно (220х240)</category>
+      <category id="1355" parentId="1044">Одеяло Евро-2 холофайбер (220х240)</category>
+      <category id="1354" parentId="1044">Одеяло Евро-2 хлопковое волокно (220х240)</category>
+      <category id="1351" parentId="1044">Одеяло Евро-2 файберсофт (220х240)</category>
+      <category id="1350" parentId="1044">Одеяло Евро-2 пух горной козы (220х240)</category>
+      <category id="1349" parentId="1044">Одеяло Евро-2  пух горной козы (220х240)</category>
+      <category id="1348" parentId="1044">Одеяло Евро-2 полушерстяное (220х240)</category>
+      <category id="1345" parentId="1044">Одеяло Евро-2  полиэфирное волокно (220х240)</category>
+      <category id="1344" parentId="1044">Одеяло Евро-2  овечья шерсть (220х240)</category>
+      <category id="1341" parentId="1044">Одеяло Евро-2  лебяжий пух (синтетическое волокно) (220х240)</category>
+      <category id="1340" parentId="1044">Одеяло Евро-2 гусиный пух  (220х240)</category>
+      <category id="1337" parentId="1044">Одеяло Евро-2  верблюжья шерсть (220х240)</category>
+      <category id="1336" parentId="1044">Одеяло Евро-2  бамбуковое волокно (220х240)</category>
+      <category id="1045" parentId="975">Детское одеяло</category>
+      <category id="1475" parentId="1045">Детское одеяло верблюжья шерсть</category>
+      <category id="1474" parentId="1045">Детское одеяло лебяжий пух</category>
+      <category id="1473" parentId="1045">Детское одеяло бамбуковое волокно</category>
+      <category id="1472" parentId="1045">Детское одеяло овечья шерсть</category>
+      <category id="1471" parentId="1045">Детское одеяло файберсофт</category>
+      <category id="1470" parentId="1045">Одеяло байковое детское</category>
+      <category id="990" parentId="975">Эвкалиптовое одеяло</category>
+      <category id="1040" parentId="990">Одеяло эвкалипт Евро 2 (220х240)</category>
+      <category id="1039" parentId="990">Одеяло эвкалиптовое волокно Евро 1 (200х220)</category>
+      <category id="1038" parentId="990">Одеяло эвкалипт 2.0 х двухспальное (172х205)</category>
+      <category id="1037" parentId="990">Одеяло эвкалиптовое 1.5 спальное (140х205)</category>
+      <category id="989" parentId="975">Хлопковое одеяло</category>
+      <category id="1036" parentId="989">Хлопковое одеяло Евро 2 (220х240)</category>
+      <category id="1035" parentId="989">Одеяло Евро-1 хлопковое волокно (200х220)</category>
+      <category id="1034" parentId="989">Хлопковое одеяло 2.0 х двухспальное (172х205)</category>
+      <category id="1033" parentId="989">Хлопковое одеяло 1.5 полутораспальное (140х205)</category>
+      <category id="988" parentId="975">Одеяло файберсофт</category>
+      <category id="1032" parentId="988">Одеяло файберсофт Евро 2 (220х240)</category>
+      <category id="1031" parentId="988">Одеяло файберсофт Евро-1 (200х220)</category>
+      <category id="1030" parentId="988">Одеяло файберсофт 2.0 х двухспальное (172х205)</category>
+      <category id="1029" parentId="988">Одеяло файберсофт 1.5 полутораспальное (140х205)</category>
+      <category id="979" parentId="975">Одеяло холофайбер</category>
+      <category id="1913" parentId="979">Одеяло холофайбер Евро 2 (220х240)</category>
+      <category id="993" parentId="979">Одеяло холофайбер Евро-1 (200х220)</category>
+      <category id="992" parentId="979">Одеяло холофайбер 2.0 х двухспальное (172х205)</category>
+      <category id="991" parentId="979">Одеяло холофайбер 1.5 полутораспальное (140х205)</category>
+      <category id="986" parentId="975">Полиэфирные одеяла</category>
+      <category id="1021" parentId="986">Одеяло полиэфирное волокно Евро 2 (220х240)</category>
+      <category id="1020" parentId="986">Полиэфирные одеяла Евро-1 (200х220)</category>
+      <category id="1019" parentId="986">Одеяло из полиэфирного волокна 2.0 х двухспальное (172х205)</category>
+      <category id="1018" parentId="986">Одеяло  полиэфирное волокно 1.5 полутораспальное (140х205)</category>
+      <category id="1017" parentId="986">Детское одеяло ясельное  полиэфирное волокно</category>
+      <category id="985" parentId="975">Одеяло из овечьей шерсти</category>
+      <category id="1016" parentId="985">Одеяло из овечьей шерсти Евро 2 (220х240)</category>
+      <category id="1015" parentId="985">Одеяло из овечьей шерсти Евро-1 (200х220)</category>
+      <category id="1014" parentId="985">Одеяла из овечьей шерсти 2.0 х двухспальное (172х205)</category>
+      <category id="1013" parentId="985">Одеяло  овечья шерсть 1.5 полутораспальное (140х205)</category>
+      <category id="1012" parentId="985">Детское одеяло овечья шерсть ясельное</category>
+      <category id="984" parentId="975">Одеяло лебяжий пух</category>
+      <category id="1011" parentId="984">Одеяло лебяжий пух (синтетическое волокно)  Евро 2 (220х240)</category>
+      <category id="1010" parentId="984">Одеяло лебяжий пух (синтетическое волокно) Евро-1 (200х220)</category>
+      <category id="1009" parentId="984">Одеяло лебяжий пух (синтетическое волокно) 2.0 спальное</category>
+      <category id="1008" parentId="984">Одеяло лебяжий пух (синтетическое волокно) 1.5 спальное</category>
+      <category id="983" parentId="975">Одеяла козий пух козы</category>
+      <category id="1028" parentId="983">Одеяло козий пух Евро 2 (220х240)</category>
+      <category id="1027" parentId="983">Одеяло козий пух Евро-1 (200х220)</category>
+      <category id="1026" parentId="983">Одеяла  козий пух 2.0 х двухспальное (172х205)</category>
+      <category id="1025" parentId="983">Одеяло  козий пух 1.5 полутораспальное (140х205)</category>
+      <category id="1024" parentId="983">Детское одеяло козий пух ясельное</category>
+      <category id="982" parentId="975">Одеяло гусиный пух</category>
+      <category id="1006" parentId="982">Одеяло гусиный пух Евро 2 (220х240)</category>
+      <category id="1005" parentId="982">Одеяло гусиный пух Евро-1 (200х220)</category>
+      <category id="1004" parentId="982">Одеяла гусиный пух 2.0 х двухспальное (172х205)</category>
+      <category id="1003" parentId="982">Одеяло  гусиный пух 1.5 полутораспальное (140х205)</category>
+      <category id="981" parentId="975">Верблюжье одеяло</category>
+      <category id="1002" parentId="981">Верблюжье одеяло Евро 2 (220х240)</category>
+      <category id="1001" parentId="981">Верблюжье одеяло Евро-1 (200х220)</category>
+      <category id="1000" parentId="981">Верблюжье одеяло 2.0 х двухспальное (172х205)</category>
+      <category id="999" parentId="981">Одеяло  из верблюжьей шерсти 1.5 полутораспальное (140х205)</category>
+      <category id="980" parentId="975">Бамбуковое одеяло</category>
+      <category id="998" parentId="980">Детское одеяло ясельное из бамбука</category>
+      <category id="997" parentId="980">Бамбуковое одеяло Евро 2 (220х240)</category>
+      <category id="996" parentId="980">Бамбуковое одеяло Евро-1 (200х220)</category>
+      <category id="995" parentId="980">Бамбуковое одеяло 2.0 х двухспальное (172х205)</category>
+      <category id="994" parentId="980">Одеяло  из бамбука 1.5 полутораспальное (140х205)</category>
+      <category id="987" parentId="975">Одеяло полушерстяное</category>
+      <category id="1023" parentId="987">Одеяло полушерстяное 2.0 х двухспальное (172х205)</category>
+      <category id="1022" parentId="987">Одеяло  полушерстяное 1.5 полутораспальное (140х205)</category>
+      <category id="1871" parentId="975">Байковое одеяло</category>
+      <category id="1408">Одеяло и 2 подушки спальный комплект</category>
+      <category id="1413" parentId="1408">Одеяло и подушки из бамбука</category>
+      <category id="1412" parentId="1408">Одеяло и подушки полиэфирные</category>
+      <category id="1411" parentId="1408">Лебяжий пух подушки и одеяло</category>
+      <category id="1410" parentId="1408">Овечье одеяло и подушки</category>
+      <category id="1409" parentId="1408">Подушки и одеяла из верблюжьей шерсти</category>
+      <category id="2015">Покрывало на кровать</category>
+      <category id="1841">Матрацы</category>
+      <category id="1404">Наматрасники</category>
+      <category id="1407" parentId="1404">Наматрасник шерсть овечья</category>
+      <category id="1406" parentId="1404">Наматрасник верблюжий</category>
+      <category id="1405" parentId="1404">Наматрасник бамбуковый</category>
+      <category id="1838">Наволочка</category>
+      <category id="1839">Пододеяльники</category>
+      <category id="1840">Простыни</category>
+      <category id="1686">Простыни на резинке</category>
+      <category id="1772">Шторы</category>
+      <category id="1773">Скатерть</category>
+      <category id="1807" parentId="1773">Скатерти "САТИН"</category>
+      <category id="1806" parentId="1773">Скатерти "ВИНИЛ"</category>
+      <category id="1795" parentId="1773">Скатерти из хлопка</category>
+      <category id="1798" parentId="1795">Скатерть из хлопка 180*145</category>
+      <category id="1797" parentId="1795">Скатерть из хлопка 145*250</category>
+      <category id="1796" parentId="1795">Скатерть из хлопка 145*200</category>
+      <category id="1782" parentId="1773">Скатерти льняные</category>
+      <category id="1781" parentId="1782">Скатерть лён 150x150</category>
+      <category id="1780" parentId="1782">Скатерть лён 150x180</category>
+      <category id="1779" parentId="1782">Скатерть лён 150x200</category>
+      <category id="1778" parentId="1782">Скатерть лен 150x250</category>
+      <category id="1777" parentId="1782">Скатерть лён 150x300</category>
+      <category id="1776" parentId="1782">Скатерть лён 178x178</category>
+      <category id="1783" parentId="1782">Скатерть лён  178x230</category>
+      <category id="1775" parentId="1782">Скатерть лён 178x250</category>
+      <category id="1784" parentId="1782">Скатерть лён 178x280</category>
+      <category id="1774" parentId="1782">Скатерть лён  178x320</category>
+      <category id="1785" parentId="1773">Комплекты столового белья</category>
+      <category id="1802" parentId="1785">Комплект столового белья 2 Скатерти, 12 салфеток</category>
+      <category id="1805" parentId="1802">Скатерть№2 100*145</category>
+      <category id="1804" parentId="1802">Скатерть№1 250*145</category>
+      <category id="1800" parentId="1785">Комплект столового белья скатерть и 12 салфеток</category>
+      <category id="1803" parentId="1800">Комплект столового белья скатерть 250*145 и 12 салфеток</category>
+      <category id="1799" parentId="1785">Комплект столового белья скатерть и 6 салфеток</category>
+      <category id="1801" parentId="1799">Комплект столового белья скатерть 200*145 и 6 салфеток</category>
+      <category id="1786" parentId="1785">Комплект столового белья скатерть  и  салфетки лен</category>
+      <category id="1787" parentId="1786">Комплект столового белья скатерть  150х150 и  салфетки лен</category>
+      <category id="1788" parentId="1786">Комплект столового белья скатерть  150х180 и  салфетки лен</category>
+      <category id="1789" parentId="1786">Комплект столового белья скатерть  150х200 и  салфетки лен</category>
+      <category id="837">Антистрессовые подушки игрушки</category>
+      <category id="1794" parentId="837">Антистрессовая подушка валик</category>
+      <category id="1790" parentId="837">Антистрессовые декоративные подушки</category>
+      <category id="1793" parentId="837">Антистрессовая подушка сердце</category>
+      <category id="1792" parentId="837">Антистрессовая подушка пуфик</category>
+      <category id="1791" parentId="837">Автомобильные подушки</category>
+      <category id="1766" parentId="837">Падушка для беременных</category>
+      <category id="931" parentId="837">Круглая подушка</category>
+      <category id="842" parentId="837">Подушки-игрушки</category>
+      <category id="841" parentId="837">Подушки с цветами и фруктами</category>
+      <category id="840" parentId="837">Антистрессовая подушка в подарок</category>
+      <category id="839" parentId="837">Подушки животные</category>
+      <category id="843">Антистрессовые игрушки</category>
+      <category id="1999" parentId="843">Рыба моей мечты</category>
+      <category id="965">Носовой платок</category>
+      <category id="831">Чулочно-носочные изделия</category>
+      <category id="835" parentId="831">Мужские носки</category>
+      <category id="833" parentId="831">Женские носки чулки гольфы</category>
+      <category id="832" parentId="831">Детские колготки и носки</category>
+      <category id="716">Ткань в рулонах</category>
+      <category id="1442" parentId="716">Ткань бязь рулоном</category>
+      <category id="1444" parentId="1442">Постельная</category>
+      <category id="1594" parentId="1444">Ткань в рулонах бязь постельная детская коллекция ширина 150см.</category>
+      <category id="1596" parentId="1594">Ткань в рулонах бязь постельная ясельная ширина 150см. </category>
+      <category id="1595" parentId="1594">Ткань в рулонах бязь постельная детская ширина 150см.</category>
+      <category id="1478" parentId="1444">Ткань в рулонах бязь постельная ширина 220см.</category>
+      <category id="1477" parentId="1444">Ткань в рулонах бязь постельная ширина 150см.</category>
+      <category id="1443" parentId="1442">Плательная</category>
+      <category id="1476" parentId="1443">Ткань в рулонах бязь плательная ширина 150см.</category>
+      <category id="1605" parentId="716">Перкаль ткань в рулоне</category>
+      <category id="1606" parentId="1605">Перкаль постельный</category>
+      <category id="1607" parentId="1606">Ткань в рулонах перкаль постельный ширина 220см.</category>
+      <category id="1448" parentId="716">Ткань сатин</category>
+      <category id="1450" parentId="1448">Ширина 220 см</category>
+      <category id="1449" parentId="1448">Плательный</category>
+      <category id="1451" parentId="716">Вафельное полотно (полотенечное)</category>
+      <category id="1673" parentId="1451">Ширина 40см.</category>
+      <category id="1480" parentId="1451">Ширина 50см.</category>
+      <category id="1674" parentId="1451">Ширина 150см.</category>
+      <category id="1671" parentId="1666">Сорочечная 90см</category>
+      <category id="1670" parentId="1666">Детская</category>
+      <category id="1669" parentId="1666">Халатная</category>
+      <category id="1668" parentId="1666">Рубашечная</category>
+      <category id="1667" parentId="1666">Сорочечная</category>
+      <category id="1447" parentId="1445">Плательный</category>
+      <category id="1446" parentId="1445">Постельный</category>
+      <category id="1902">Комплект постельного белья: выбор по размерам</category>
+      <category id="1903" parentId="1902">Евро 1</category>
+      <category id="1904" parentId="1903">Сатин-жаккард</category>
+      <category id="1911" parentId="1902">Семейные</category>
+      <category id="1912" parentId="1911">Cатин-жаккард</category>
+    </categories>
+    <offers>
+      <offer available="true" id="37292">
+        <url>http://1ttd.ru/kostyum-muzhskoy-letniy-dlya-okhoty-i-rybalki-turist-tsvet-n-37/</url>
+        <price>2140.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">1832</categoryId>
+        <picture>http://1ttd.ru/wa-data/public/shop/products/92/72/37292/images/43426/43426.970.jpg</picture>
+        <picture>http://1ttd.ru/wa-data/public/shop/products/92/72/37292/images/43427/43427.970.jpg</picture>
+        <picture>http://1ttd.ru/wa-data/public/shop/products/92/72/37292/images/43428/43428.970.jpg</picture>
+        <picture>http://1ttd.ru/wa-data/public/shop/products/92/72/37292/images/43429/43429.970.jpg</picture>
+        <name>Костюм мужской летний для охоты и рыбалки Турист цвет N-37</name>
+      </offer>
+      <offer available="true" id="37291">
+        <url>http://1ttd.ru/kostyum-muzhskoy-letniy-dlya-okhoty-i-rybalki-turist-atak-tsv-zelenyy/</url>
+        <price>2140.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">1832</categoryId>
+        <picture>http://1ttd.ru/wa-data/public/shop/products/91/72/37291/images/43417/43417.970.jpg</picture>
+        <picture>http://1ttd.ru/wa-data/public/shop/products/91/72/37291/images/43418/43418.970.jpg</picture>
+        <picture>http://1ttd.ru/wa-data/public/shop/products/91/72/37291/images/43419/43419.970.jpg</picture>
+        <picture>http://1ttd.ru/wa-data/public/shop/products/91/72/37291/images/43420/43420.970.jpg</picture>
+        <name>Костюм мужской летний для охоты и рыбалки Турист АТАК цв. зеленый</name>
+      </offer>
+      <offer available="true" id="37290">
+        <url>http://1ttd.ru/kostyum-muzhskoy-letniy-dlya-okhoty-i-rybalki-turist-ris-urban-safari/</url>
+        <price>2140.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">1832</categoryId>
+        <picture>http://1ttd.ru/wa-data/public/shop/products/90/72/37290/images/43408/43408.970.jpg</picture>
+        <picture>http://1ttd.ru/wa-data/public/shop/products/90/72/37290/images/43409/43409.970.jpg</picture>
+        <picture>http://1ttd.ru/wa-data/public/shop/products/90/72/37290/images/43410/43410.970.jpg</picture>
+        <picture>http://1ttd.ru/wa-data/public/shop/products/90/72/37290/images/43411/43411.970.jpg</picture>
+        <name>Костюм мужской летний для охоты и рыбалки Турист рис. URBAN SAFARI</name>
+      </offer>
+      <offer available="true" id="37289">
+        <url>http://1ttd.ru/kostyum-muzhskoy-letniy-dlya-okhoty-i-rybalki-patriot-rip-stop-tigr/</url>
+        <price>4290.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">1832</categoryId>
+        <picture>http://1ttd.ru/wa-data/public/shop/products/89/72/37289/images/43399/43399.970.jpg</picture>
+        <picture>http://1ttd.ru/wa-data/public/shop/products/89/72/37289/images/43400/43400.970.jpg</picture>
+        <picture>http://1ttd.ru/wa-data/public/shop/products/89/72/37289/images/43401/43401.970.jpg</picture>
+        <picture>http://1ttd.ru/wa-data/public/shop/products/89/72/37289/images/43402/43402.970.jpg</picture>
+        <name>Костюм мужской летний для охоты и рыбалки Патриот Рип-стоп тигр</name>
+      </offer>
+      <offer available="true" id="37286">
+        <url>http://1ttd.ru/kostyum-demisezonnyy-detskiy-dlya-okhoty-i-rybalki-gorka-poloflis-s-otdelkoy/</url>
+        <price>2060.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">1836</categoryId>
+        <picture>http://1ttd.ru/wa-data/public/shop/products/86/72/37286/images/43379/43379.970.jpg</picture>
+        <picture>http://1ttd.ru/wa-data/public/shop/products/86/72/37286/images/43380/43380.970.jpg</picture>
+        <picture>http://1ttd.ru/wa-data/public/shop/products/86/72/37286/images/43381/43381.970.jpg</picture>
+        <name>Костюм демисезонный детский для охоты и рыбалки Горка полофлис с отделкой</name>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>
