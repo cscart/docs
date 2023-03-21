@@ -126,15 +126,16 @@ Features
 Compatibility
 =============
 
-    The add-on is compatible with CS-Cart and Multi-Vendor 4.10.1 and above. PHP 7.1 and higher is required. 
+    The add-on is compatible with CS-Cart and Multi-Vendor 4.10 and above, but only versions 4.12.x and above are supported. Need compatibility with another CS-Cart version? Contact us now.
+    Minimum required PHP version is 7.1. The add-on does not support PHP 8.x yet.
 
-    Don't know what archive to download to install the add-on? Read `here <https://www.simtechdev.com/docs/faq/index.html#what-archive-do-i-download>`_.
+    See more information about compatibility of our add-ons `here https://docs.cs-cart.com/latest/cscart_addons/compatibility/index.html`_.
 
 =======
 Support
 =======
 
-    You are guaranteed a quality add-on supported by the future versions. If you need help, please contact us via our `help desk system <http://www.simtechdev.com/helpdesk>`_.
+    You are guaranteed a quality add-on supported by the future versions. If you need help, please contact us via our `help desk system <https://helpdesk.cs-cart.com>`_.
     
 ====
 Demo

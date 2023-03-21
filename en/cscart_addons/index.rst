@@ -7,3 +7,4 @@ CS-Cart Addons
     addons/index
     payments/index
     themes/index
+    compatibility/index
