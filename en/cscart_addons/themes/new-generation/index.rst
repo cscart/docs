@@ -54,9 +54,10 @@ Overview
 Compatibility
 =============
 
-    The theme is compatible with Multi-Vendor, Multi-Vendor Plus, Multi-Vendor Ultimate 4.9.0 , 4.10.4 and above.
+    The add-on is compatible with CS-Cart and Multi-Vendor 4.12 and above. Need compatibility with another CS-Cart version? Contact us now.
+    Minimum required PHP version is 5.6. The add-on does not support PHP 8.x yet.
 
-    Don’t know what archive to download to install the add-on? Read `here <https://www.simtechdev.com/docs/faq/index.html#what-archive-do-i-download>`_.
+    See more information about compatibility of our add-ons `here <https://docs.cs-cart.com/latest/cscart_addons/compatibility/index.html>`_.
 
 =======
 Support
