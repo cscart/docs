@@ -1,5 +1,5 @@
-CS-Cart Addons Development
----------------------------
+CS-Cart Addons
+----------------
 
 .. toctree::
     :maxdepth: 1
