@@ -35,15 +35,20 @@ Adaptations
 -------------
 
     Add-ons and themes are adapted to following browsers:
+
         **Desktop (for PC, laptops):**
-        -   Chrome (latest release version);
-        -   Firefox (latest release version);
-        -   Safari for Mac OS (latest release version);
-        -   Edge.
+        *   Chrome (latest release version);
+
+        *   Firefox (latest release version);
+
+        *   Safari for Mac OS (latest release version);
+
+        *   Edge.
 
         **Mobile devices (for smartphones, tablets):**
-        -   Safari for iOS (latest release version);
-        -   Chrome (latest release version).
+        *   Safari for iOS (latest release version);
+
+        *   Chrome (latest release version).
 
     We do not guarantee correct performance on Retina displays and any mobile applications, e.g. official CS-Cart mobile app:
     `https://www.cs-cart.com/multivendor-mobile-application.html`_
