@@ -7,6 +7,7 @@ Version Compatibility
     :glob:
 
     adapting_4152_to_4161
+    adapting_4161_to_4162
 
 .. toctree::
     :maxdepth: 2
