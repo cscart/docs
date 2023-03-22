@@ -44,7 +44,7 @@ Compatibility
 
 .. note::
     
-    The Affiliate Light add-on is incompatible with the `Affiliate and Referral add-on <https://www.simtechdev.com/docs/addons/affiliate/index.html>`_.
+    The Affiliate Light add-on is incompatible with the `Affiliate PRO add-on <https://www.simtechdev.com/docs/addons/affiliate/index.html>`_.
 
 =======
 Support

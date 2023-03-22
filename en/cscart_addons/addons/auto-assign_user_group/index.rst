@@ -1,5 +1,5 @@
 **********************
-Auto-Assign User Group
+Auto Usergroups
 **********************
 
 .. raw:: html
@@ -18,34 +18,34 @@ Auto-Assign User Group
 Overview
 --------
 
-    The **Auto-Assign User Group** add-on allows you to automatically assign newly created users to a specific user group.
+    The **Auto Usergroups** add-on allows you to automatically assign newly created users to a specific user group.
 
     The main benefit of the add-on is that it simplifies management of new users:
 
     - automatically assign a user group (Customer → User groups)
 
     .. fancybox:: img/Default_user_groups_004.png
-        :alt: Auto-Assign User Group add-on for CS-Cart
+        :alt: Auto Usergroups add-on for CS-Cart
 
     - automatically grant reward points (Marketing → Reward points)
 
     .. fancybox:: img/Default_user_groups_005.png
-        :alt: Auto-Assign User Group add-on for CS-Cart
+        :alt: Auto Usergroups add-on for CS-Cart
 
     - create promotions (Marketing → Promotions)
 
     .. fancybox:: img/Default_user_groups_006.png
-        :alt: Auto-Assign User Group add-on for CS-Cart
+        :alt: Auto Usergroups add-on for CS-Cart
 
     - set quantity discounts (Products → Quantity discounts)
 
     .. fancybox:: img/Default_user_groups_007.png
-        :alt: Auto-Assign User Group add-on for CS-Cart
+        :alt: Auto Usergroups add-on for CS-Cart
 
     - hide specific shipping methods from new users (Administration → Shipping & taxes → Shipping methods)
 
     .. fancybox:: img/Default_user_groups_008.png
-        :alt: Auto-Assign User Group add-on for CS-Cart
+        :alt: Auto Usergroups add-on for CS-Cart
 
     To learn the basics of user groups, you may want to have a look at `CS-Cart Docs <http://docs.cs-cart.com/4.3.x/user_guide/users/user_groups/index.html>`_.
 
@@ -72,7 +72,7 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the “Auto-assign user group” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the “Auto Usergroups” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
     .. fancybox:: img/Default_user_groups_001.png
         :alt: Default User Group add-on for CS-Cart

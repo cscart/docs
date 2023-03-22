@@ -1,5 +1,5 @@
 ***************
-Points and Cash
+Points and Bonuses
 ***************
 
 .. raw:: html
@@ -18,7 +18,7 @@ Points and Cash
 Overview
 --------
 
-    With the `Points and Cash add-on <https://www.simtechdev.com/addons/marketing/points-and-cash.html>`_, you can get the most out of your points-based loyalty campaign by allowing your customers to enjoy the freedom of mixing cash and points—from a single product to a whole shopping cart.
+    With the `Points and Bonuses add-on <https://www.simtechdev.com/addons/marketing/points-and-cash.html>`_, you can get the most out of your points-based loyalty campaign by allowing your customers to enjoy the freedom of mixing cash and points—from a single product to a whole shopping cart.
 
     .. fancybox:: img/Points_and_cash_Selection_005.png
         :alt: applying reward points
@@ -31,7 +31,7 @@ Overview
     The add-on lets you disable using reward points for products and carts with applied promotions and set the percentage of the product price that can be paid with reward points.
 
     .. fancybox:: img/Points_and_cash_Selection_010.png
-        :alt: settings of the Points and Cash add-on
+        :alt: settings of the Points and Bonuses add-on
 
 ========
 Features
@@ -65,7 +65,7 @@ Support
 Demo
 ====
 
-    Check out the Points and Cash add-on in our |demo_store|.
+    Check out the Points and Bonuses add-on in our |demo_store|.
 
 .. |demo_store| raw:: html
 
@@ -104,11 +104,11 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the Points and Cash add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the Points and Bonuses add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
     .. important::
 
-        Make sure the **Reward points** add-on is set to Active in your store. Otherwise the Points and Cash add-on might not perform correctly.
+        Make sure the **Reward points** add-on is set to Active in your store. Otherwise the Points and Bonuses add-on might not perform correctly.
 
         .. fancybox:: img/Points_and_cash_Selection_002.png
             :alt: Reward points add-on
@@ -126,10 +126,10 @@ Setting up the add-on
 
         If your CS-Cart or Multivendor store runs on version lower than 4.3.1, you'll need to insert a hook to make the add-on perform correctly. For more details, refer to `Adding a hook`_.
 
-    Here are available settings of the Points and Cash add-on.
+    Here are available settings of the Points and Bonuses add-on.
 
     .. fancybox:: img/Points_and_cash_Selection_010.png
-        :alt: settings of the Points and Cash add-on
+        :alt: settings of the Points and Bonuses add-on
 
     * **Enable cart points**—Enable using reward points for cart with applied promotions.
 
@@ -166,7 +166,7 @@ One product
 
     2. Switch to the **Add-ons** tab.
 
-    3. In the **Points and Cash** field, enter the necessary value.
+    3. In the **Points and Bonuses** field, enter the necessary value.
 
     .. fancybox:: img/Points_and_cash_Selection_004.png
         :alt: Percentage limitation

@@ -1,5 +1,5 @@
 ***********************
-Advanced Social Buttons
+Social Buttons PRO
 ***********************
 
 .. raw:: html
@@ -18,17 +18,17 @@ Advanced Social Buttons
 Overview
 --------
 
-    Online shoppers are using social media more and more to share their favorite finds with their followers. That’s good news for your e-commerce site! Make it easy for online shoppers to share your products with their family and friends by installing **Advanced Social Buttons** in your CS-Cart store. 
+    Online shoppers are using social media more and more to share their favorite finds with their followers. That’s good news for your e-commerce site! Make it easy for online shoppers to share your products with their family and friends by installing **Social Buttons PRO** in your CS-Cart store. 
 
     The add-on lets you add social buttons to the product details page:
 
     .. fancybox:: img/Advanced_social_buttons_029.png
-        :alt: CS-Cart Advanced Social Buttons add-on
+        :alt: CS-Cart Social Buttons PRO add-on
 
     You can also set the number of social networks to display per page. The rest will be available in a drop-down list.
 
     .. fancybox:: img/Advanced_social_buttons_030.png
-        :alt: CS-Cart Advanced Social Buttons add-on
+        :alt: CS-Cart Social Buttons PRO add-on
 
     As a thank you gesture you can give your customers bonuses for sharing products in social networks.
 
@@ -36,7 +36,7 @@ Overview
         :alt: applied promotion at checkout
         :width: 300px
 
-    The **Advanced Social Buttons** add-on will definitely help you convert more customers.
+    The **Social Buttons PRO** add-on will definitely help you convert more customers.
 
 ========
 Features
@@ -65,7 +65,7 @@ Compatibility
 
     .. important::
 
-        Please note that the **Advanced Social Buttons** add-on is not compatible with the `Order Social Sharing add-on <https://www.simtechdev.com/docs/addons/order_social_sharing/index.html>`_ and the default `Social Buttons add-on <https://docs.cs-cart.com/latest/user_guide/addons/social_buttons/index.html>`_.
+        Please note that the **Social Buttons PRO** add-on is not compatible with the `Order Social Sharing add-on <https://www.simtechdev.com/docs/addons/order_social_sharing/index.html>`_ and the default `Social Buttons add-on <https://docs.cs-cart.com/latest/user_guide/addons/social_buttons/index.html>`_.
 
 
 =======
@@ -78,7 +78,7 @@ Support
 Demo
 ====
 
-    Check out the Advanced Social Buttons add-on in our |demo_store|.
+    Check out the Social Buttons PRO add-on in our |demo_store|.
 
 .. |demo_store| raw:: html
 
@@ -92,14 +92,14 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the Advanced Social Buttons add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the Social Buttons PRO add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
 
 =====================
 Setting up the add-on
 =====================
 
-    The settings of the Advanced Social Buttons add-on are divided into three sections:
+    The settings of the Social Buttons PRO add-on are divided into three sections:
 
     **1. Available social networks**
 
@@ -152,7 +152,7 @@ Setting up the add-on
 Creating a promotion
 ====================
 
-    The Advanced Social Buttons add-on allows you to create a new cart promotion in your store. If users share products in social networks, they can get bonuses for that. 
+    The Social Buttons PRO add-on allows you to create a new cart promotion in your store. If users share products in social networks, they can get bonuses for that. 
 
     To create a promotion, follow these quick steps:
 

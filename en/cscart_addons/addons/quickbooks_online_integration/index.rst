@@ -1,5 +1,5 @@
 *****************************
-QuickBooks Online Integration
+QuickBooks Online
 *****************************
 
 .. raw:: html

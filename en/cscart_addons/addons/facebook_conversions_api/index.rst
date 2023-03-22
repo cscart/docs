@@ -1,5 +1,5 @@
 ************************
-Facebook Conversions API
+FB conversions
 ************************
 .. raw:: html
 
@@ -19,7 +19,7 @@ The add-on provides the ability to transfer the site events information directly
 
 This system allows collecting and tracking analytical, event and order data from your server, evading the browser limitations. Event transferred via Conversions API are connected to Facebook Pixel and processed the same way. That means that Conversions API events can be used in analytics, reports and optimization processes just as Facebook Pixel ones.
 
-Observe the more detailed information about Facebook Conversions API `here <https://www.facebook.com/business/help/2041148702652965?id=818859032317965>`_.
+Observe the more detailed information about FB conversions `here <https://www.facebook.com/business/help/2041148702652965?id=818859032317965>`_.
 
 ============
 Key Features
@@ -67,13 +67,13 @@ General
 +++++++
 
 .. fancybox:: img/capi.png
-    :alt: Facebook Conversions API
+    :alt: FB conversions
 
 **Identifier Facebook Pixel** - identification number of your Facebook Pixel the event information is sent to. Observe the detailed instruction for Facebook Pixel here.
 
-**Facebook Conversions API token** - token for event data transferring to Facebook Pixel via Conversions API. Token can be generated in Facebook Pixel settings in the Conversions API paragraph.
+**FB conversions token** - token for event data transferring to Facebook Pixel via Conversions API. Token can be generated in Facebook Pixel settings in the Conversions API paragraph.
 
-**Display personalized Facebook Pixel and Conversions API for vendors** - this setting allows vendors to insert their Identifier Facebook Pixel and Facebook Conversions API token, so they could receive data concerning their products
+**Display personalized Facebook Pixel and Conversions API for vendors** - this setting allows vendors to insert their Identifier Facebook Pixel and FB conversions token, so they could receive data concerning their products
 
 **Log requests** - option allows logging of the requests to and answers from Conversions API into the event log. 
 
@@ -126,6 +126,6 @@ The tab contains the list of events to be tracked and sent to Facebook.
 Interaction with the “Facebook Pixel” add-on
 ============================================
 
-Facebook Pixel and Facebook Conversions API add-on are similar in purpose and different in the data transferring method
+Facebook Pixel and FB conversions add-on are similar in purpose and different in the data transferring method
 
-In order to prevent data duplication, the Facebook Conversions API add-on includes the Facebook made event deduplication mechanism. Hence, the simultaneous use of two add-ons is possible.
+In order to prevent data duplication, the FB conversions add-on includes the Facebook made event deduplication mechanism. Hence, the simultaneous use of two add-ons is possible.

@@ -1,5 +1,5 @@
 ******************
-XML and CSV Import
+XML & CSV
 ******************
 
 .. raw:: html
@@ -16,7 +16,7 @@ XML and CSV Import
 Overview
 --------
 
-    The `XML and CSV Import addon <https://marketplace.simtechdev.com/xml-import.html>`_ allows you easily import products from any XML, CSV, JSON or YML file to your CS-Cart store. Save yourself hours with this add-on and make inventory management hassle free.
+    The `XML & CSV addon <https://marketplace.simtechdev.com/xml-import.html>`_ allows you easily import products from any XML, CSV, JSON or YML file to your CS-Cart store. Save yourself hours with this add-on and make inventory management hassle free.
     With the XML Import add-on, your product data will be sent to your store keeping you ahead of your competitors with the newest products. You can be sure the product stock quantities are always up-to-date. The add-on allows you to automatically update product catalogs including changes to prices, inventory stock quantities, and new product additions.
 
     An easy field mapping feature allow you to easily overcome the divergent data formats of suppliers and synchronize only the appropriate data fields to your store.
@@ -34,7 +34,7 @@ Overview
 
         To import a XLSX file, save it as CSV and import the CSV file.
 
-    The XML and CSV Import add-on makes the complicated import tasks simple and fast.
+    The XML & CSV add-on makes the complicated import tasks simple and fast.
 
 =====================
 Fields you can import
@@ -141,7 +141,7 @@ Support
 Demo
 ====
 
-    Check out the XML and CSV Import add-on in our |demo_store|.
+    Check out the XML & CSV add-on in our |demo_store|.
 
 .. |demo_store| raw:: html
 
@@ -159,7 +159,7 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the XML and CSV Import add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the XML & CSV add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
 =====================
 Setting up the add-on
@@ -200,7 +200,7 @@ Setting up the add-on
 Importing data
 ==============
 
-    The add-on creates a new **XML and CSV import profile** page, where you can see a list of all created profiles with the ability to delete, edit, add, and import profiles. 
+    The add-on creates a new **XML & CSV profile** page, where you can see a list of all created profiles with the ability to delete, edit, add, and import profiles. 
 
     You can also see the import status:
 
@@ -389,7 +389,7 @@ Cloning import profiles
 
     To clone an import profile:
 
-    1. Go to **Add-ons > XML and CSV import**.
+    1. Go to **Add-ons > XML & CSV**.
 
     2. Select the profile you want to clone and hover the mouse pointer over it. Click the gear button and select **Clone**.
 
@@ -468,7 +468,7 @@ Comparison table
 =================
 
 +--------------------------+-------------------------------+------------------------------------------------------------------------------------------------+
-|                          | Advanced products import      | XML & CSV Import Pro                                                                           |
+|                          | Advanced products import      | XML & CSV                                                                           |
 +==========================+===============================+================================================================================================+
 |File import Format        | XML, CSV                      | XML, CSV, YML, JSON                                                                            |
 +--------------------------+-------------------------------+------------------------------------------------------------------------------------------------+
@@ -557,7 +557,7 @@ Mapping:
 **Case 1.1: the row amount is limited to 300, import via cron**
 
 +----------------------------------+------------------------+--------------------+
-|                                  |Advanced Product Import |XML & CSV Import Pro|
+|                                  |Advanced Product Import |XML & CSV|
 +==================================+========================+====================+
 |Total Incl. Wall Time (microsec): |93,131,315              |112,660,111         |
 +----------------------------------+------------------------+--------------------+
@@ -573,7 +573,7 @@ Mapping:
 **Case 1.2: row amount is limited to 600, import via cron**
 
 +----------------------------------+------------------------+--------------------+
-|                                  |Advanced Product Import |XML & CSV Import Pro|
+|                                  |Advanced Product Import |XML & CSV|
 +==================================+========================+====================+
 |Total Incl. Wall Time (microsec): |191,184,957             |**163,016,898**     |
 +----------------------------------+------------------------+--------------------+
@@ -589,7 +589,7 @@ Mapping:
 **Case 1.3: row amount is limited up to 1500, import via cron**
 
 +----------------------------------+------------------------+--------------------+
-|                                  |Advanced Product Import |XML & CSV Import Pro|
+|                                  |Advanced Product Import |XML & CSV|
 +==================================+========================+====================+
 |Total Incl. Wall Time (microsec): |513,722,647             |**478,230,797**     |
 +----------------------------------+------------------------+--------------------+
@@ -605,7 +605,7 @@ Mapping:
 **Case 1.4.: row amount is limited to 4000, import via cron**
 
 +----------------------------------+------------------------+--------------------+
-|                                  |Advanced Product Import |XML & CSV Import Pro|
+|                                  |Advanced Product Import |XML & CSV|
 +==================================+========================+====================+
 |Total Incl. Wall Time (microsec): |1,667,661,362           |**1,437,923,564**   |
 +----------------------------------+------------------------+--------------------+
@@ -655,7 +655,7 @@ Mapping (for instance, not real mapping):
 **Case 2.1: 728 products, via console**
 
 +----------------------------------+------------------------+--------------------+
-|                                  |Advanced Product Import |XML & CSV Import Pro|
+|                                  |Advanced Product Import |XML & CSV|
 +==================================+========================+====================+
 |Total Incl. Wall Time (microsec): |61,198,583              |**51,684,746**      |
 +----------------------------------+------------------------+--------------------+
@@ -671,7 +671,7 @@ Mapping (for instance, not real mapping):
 **Case 2.2: 1639 products, via console**
 
 +----------------------------------+------------------------+--------------------+
-|                                  |Advanced Product Import |XML & CSV Import Pro|
+|                                  |Advanced Product Import |XML & CSV|
 +==================================+========================+====================+
 |Total Incl. Wall Time (microsec): |170,711,663             |**114,490,443**     |
 +----------------------------------+------------------------+--------------------+
@@ -687,7 +687,7 @@ Mapping (for instance, not real mapping):
 **Case 2.3: 3060 products, via console**
 
 +----------------------------------+------------------------+--------------------+
-|                                  |Advanced Product Import |XML & CSV Import Pro|
+|                                  |Advanced Product Import |XML & CSV|
 +==================================+========================+====================+
 |Total Incl. Wall Time (microsec): |495,997,936             |**227,342,864**     |
 +----------------------------------+------------------------+--------------------+

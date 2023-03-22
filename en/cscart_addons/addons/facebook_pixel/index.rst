@@ -1,5 +1,5 @@
 **************
-Facebook Pixel
+FB Pixel
 **************
 
 .. raw:: html
@@ -18,9 +18,9 @@ Facebook Pixel
 Overview
 --------
 
-    **The Facebook Pixel** is a useful tool for your website that enables you to measure, optimize and build audiences for your ad campaigns. Using the Facebook Pixel, you can track the actions people take on your website across devices to run Facebook advertising campaigns more effectively. 
+    **The FB Pixel** is a useful tool for your website that enables you to measure, optimize and build audiences for your ad campaigns. Using the FB Pixel, you can track the actions people take on your website across devices to run Facebook advertising campaigns more effectively. 
 
-    The Facebook Pixel add-on integrates the service with your store, giving you the ability to:
+    The FB Pixel add-on integrates the service with your store, giving you the ability to:
 
     - view statistics of your store (page views, adding to cart, purchases, adding to wish list, one click buy, request a call, etc.)
 
@@ -50,7 +50,7 @@ Overview
 
     As the Facebook Pixel is a piece of JavaScript code that you should insert into your website's pages, it requires technical skills or involving a web developers to implement this for you. With our add-on, you don't have to worry about that. **All you need to do is to install the add-on, set it up and it will insert the necessary code into your website for you**.
 
-    Additionally, the The Facebook Pixel add-on supports the Basic theme as well as the Responsive theme.
+    Additionally, the The FB Pixel add-on supports the Basic theme as well as the Responsive theme.
 
     To learn more about the Facebook Pixel, please visit `Facebook help <https://www.facebook.com/business/help/651294705016616>`_ .
 
@@ -79,7 +79,7 @@ Support
 Demo
 ====
 
-    Check out the Facebook Pixel add-on in our |demo_store|.
+    Check out the FB Pixel add-on in our |demo_store|.
 
 .. |demo_store| raw:: html
 
@@ -97,10 +97,10 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the Facebook Pixel add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the FB Pixel add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
     .. fancybox:: img/Selection_02.png
-        :alt: Facebook pixel add-on
+        :alt: FB Pixel add-on
 
 ==================
 Available settings
@@ -110,7 +110,7 @@ Available settings
 CS-Cart with one storefront
 +++++++++++++++++++++++++++
 
-    Here are available settings of the Facebook Pixel add-on.
+    Here are available settings of the FB Pixel add-on.
 
     **General**
 
@@ -198,7 +198,7 @@ CS-Cart with multiple storefronts
         :alt: setting up Facebook pixel
         :width: 360px
 
-    Then go to **Add-ons > Manage add-ons > Facebook pixel**, and insert the pixel code.
+    Then go to **Add-ons > Manage add-ons > FB Pixel**, and insert the pixel code.
     
     Please note that only one pixel is available for one Facebook Pixel account.
 

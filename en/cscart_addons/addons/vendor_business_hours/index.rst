@@ -1,5 +1,5 @@
 *********************
-Vendor Business Hours
+Vendor Schedule
 *********************
 
 .. raw:: html
@@ -18,22 +18,22 @@ Vendor Business Hours
 Overview
 --------
 
-    Make sure your customers know when you are open with our **Vendor Business Hours** add-on. 
+    Make sure your customers know when you are open with our **Vendor Schedule** add-on. 
 
     It allows vendors to show whether their store is currently open or closed. If it's closed, all products will be hidden from the storefront and search results and a note will be displayed below the company logo.
 
     .. fancybox:: img/Vendor_business_hours_004.png
-        :alt: Vendor Business Hours add-on. Store is closed
+        :alt: Vendor Schedule add-on. Store is closed
 
     Vendors can set their days off using a nice calendar in the vendor panel.
 
     .. fancybox:: img/Vendor_business_hours_007.png
-        :alt: Vendor Business Hours add-on. managing a calendar
+        :alt: Vendor Schedule add-on. managing a calendar
 
     They can also set opening time and closing time of their store.
 
     .. fancybox:: img/Vendor_business_hours_008.png
-        :alt: Vendor Business Hours add-on. managing a calendar
+        :alt: Vendor Schedule add-on. managing a calendar
 
     The admin gets a notification when a vendor goes on vacation and is back from vacation and the products become available on the storefront again.
 
@@ -58,7 +58,7 @@ Support
 Demo
 ====
 
-    Check out the Vendor Business Hours add-on in our |demo_store|.
+    Check out the Vendor Schedule add-on in our |demo_store|.
 
 .. |demo_store| raw:: html
 
@@ -76,23 +76,23 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the Vendor Business Hours add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the Vendor Schedule add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
 =====================
 Setting up the add-on
 =====================
 
-    Here are available settings of the Vendor Business Hours add-on.
+    Here are available settings of the Vendor Schedule add-on.
 
     .. fancybox:: img/Vendor_business_hours_001.png
-        :alt: Vendor Business Hours add-on
+        :alt: Vendor Schedule add-on
 
     * **Number of previous months**—Specify the number of previous months to display in the calendar.
 
     * **Number of following months**—Specify the number of following months to display in the calendar.
 
     .. fancybox:: img/Vendor_business_hours_003.png
-        :alt: calendar of the Vendor Business Hours add-on
+        :alt: calendar of the Vendor Schedule add-on
 
     * **Notify admin**—If selected, an email notification will be sent to the admin when a vendor is leaving for vacation.
 
@@ -106,17 +106,17 @@ Setting up the add-on
 Managing the calendar
 =====================
 
-    The Vendor Business Hours add-on allows the admin and vendors to select vacation days on the calendar during which all vendor's products will be hidden from the storefront and search results and a corresponding note will be displayed below the store logo:
+    The Vendor Schedule add-on allows the admin and vendors to select vacation days on the calendar during which all vendor's products will be hidden from the storefront and search results and a corresponding note will be displayed below the store logo:
 
     .. fancybox:: img/Vendor_business_hours_004.png
-        :alt: Vendor Business Hours add-on. Store is closed
+        :alt: Vendor Schedule add-on. Store is closed
 
     To do this, in the vendor panel the vendor should navigate to **Vendors - Vendors**.
 
     There will be a new column added to see which of the vendors are currently on vacation. 
 
     .. fancybox:: img/Vendor_business_hours_005.png
-        :alt: Vendor Business Hours add-on. Store is closed
+        :alt: Vendor Schedule add-on. Store is closed
 
     Click on the vendor name and open the **Business hours** tab.
 

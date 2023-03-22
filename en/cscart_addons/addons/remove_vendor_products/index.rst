@@ -1,5 +1,5 @@
 **********************
-Remove Vendor Products
+Remove Products
 **********************
 
 .. raw:: html
@@ -16,7 +16,7 @@ Remove Vendor Products
 Overview
 --------
 
-“Remove Vendor Products” add-on allows to quickly and effortlessly delete all products from the store/marketplace. The removal process is launched by pressing only one button. The described functions can be granted to users included in a certain usergroup. Beside removal of all products the add-on provides an ability to delete product under the search results only.
+“Remove Products” add-on allows to quickly and effortlessly delete all products from the store/marketplace. The removal process is launched by pressing only one button. The described functions can be granted to users included in a certain usergroup. Beside removal of all products the add-on provides an ability to delete product under the search results only.
 
 Despite the add-on name, it is also compatible with Ultimate edition of CS-Cart 
 
@@ -98,7 +98,7 @@ In order to remove particular products (i.e. that included into the search resul
 
 .. note:: Without previous searching of the products, pressing Remove found product button will launch the **all** products removing process. 
 
-In order to remove vendor’s products from Multivendor Admin Panel, open vendor’s products page and press Remove vendor products or Remove found products buttons, wich will be available when the relative privilege is active: 
+In order to remove vendor’s products from Multivendor Admin Panel, open vendor’s products page and press Remove Products or Remove found products buttons, wich will be available when the relative privilege is active: 
 
 .. fancybox:: img/rvp5.png
     :alt:  Multivendor Admin Panel

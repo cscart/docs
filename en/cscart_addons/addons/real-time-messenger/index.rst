@@ -1,5 +1,5 @@
 *******************
-Real-Time Messenger
+Real-Time Chat
 *******************
 
 .. raw:: html
@@ -17,7 +17,7 @@ Real-Time Messenger
 Overview
 --------
 
-    The **Real-Time Messenger** add-on allows your customers to securely exchange messages with vendors in real time (no need to refresh the page). Customers can contact vendors by clicking **Contact vendor** on the product details page or by clicking **Contact vendor** on the vendor products page.
+    The **Real-Time Chat** add-on allows your customers to securely exchange messages with vendors in real time (no need to refresh the page). Customers can contact vendors by clicking **Contact vendor** on the product details page or by clicking **Contact vendor** on the vendor products page.
 
     .. fancybox:: img/real-time-messenger-overview.png
         :alt: Messenger add-on for CS-Cart
@@ -43,7 +43,7 @@ Overview
     .. fancybox:: img/Messenger_035.png
         :alt: Messenger add-on for CS-Cart
 
-    Stay helpful to your customers and increase sales with our **Real-Time Messenger** add-on.
+    Stay helpful to your customers and increase sales with our **Real-Time Chat** add-on.
 
     .. important::
 
@@ -138,7 +138,7 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the Real-Time Messenger add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the Real-Time Chat add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
     .. note::
 

@@ -1,5 +1,5 @@
 *********************************
-Hide Payment and Shipping Methods
+Hide Payments
 *********************************
 
 .. raw:: html
@@ -18,7 +18,7 @@ Hide Payment and Shipping Methods
 Overview
 --------
 
-    The `Hide Payment and Shipping Methods <https://www.simtechdev.com/addons/site-management/hide-payment-and-shipping-methods-for-user-groups.html>`_ add-on is the best way to make sure the right customers see the right payment or shipping options in your store. It allows you to hide any payment or shipping method from a particular user group.
+    The `Hide Payments <https://www.simtechdev.com/addons/site-management/hide-payment-and-shipping-methods-for-user-groups.html>`_ add-on is the best way to make sure the right customers see the right payment or shipping options in your store. It allows you to hide any payment or shipping method from a particular user group.
 
 =========================================
 Why standard functionality is not enough?
@@ -27,7 +27,7 @@ Why standard functionality is not enough?
     Say, you want the **Credit card** payment method to be available to your retail customers and hide it from wholesale customers. So you try to set this up in the payment method settings:
 
     .. fancybox:: img/Hide_payment_and_shipping_010.png
-        :alt: Hide Payment and Shipping Methods
+        :alt: Hide Payments
 
     But you face with the problem that both retail and wholesale customers are associated with the registered users. So, you cannot allow your retail customers who have registered in the store to use the credit card option without also allowing the wholesale group to do so. It's kind of a dilemma, huh?
 
@@ -38,7 +38,7 @@ What does the add-on do?
     The main idea of the add-on is to allow you to show/hide any payment or shipping method from any user group. So, there is no more confusion with user groups. The above issue can be easily solved by adjusting the settings in the following way:
 
     .. fancybox:: img/Hide_payment_and_shipping_011.png
-        :alt: Hide Payment and Shipping Methods
+        :alt: Hide Payments
 
     Install the add-on and see it in action! 
 
@@ -75,10 +75,10 @@ Managing in the admin area
 Installing the add-on
 =====================
 
-    Install the “Hide Payment and Shipping Methods” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the “Hide Payments” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
     .. fancybox:: img/Hide_payment_and_shipping_001.png
-        :alt: Hide Payment and Shipping Methods
+        :alt: Hide Payments
 
 ======================
 Hiding payment methods
@@ -91,12 +91,12 @@ Hiding payment methods
     Open the settings of the desired method.
 
     .. fancybox:: img/Hide_payment_and_shipping_005.png
-        :alt: Hide Payment and Shipping Methods
+        :alt: Hide Payments
 
     In the **General** tab, find the **Restrict for user groups** setting and select the user groups for which you want to hide this payment method.
 
     .. fancybox:: img/Hide_payment_and_shipping_002.png
-        :alt: Hide Payment and Shipping Methods
+        :alt: Hide Payments
 
     .. note::
 
@@ -108,7 +108,7 @@ Hiding payment methods
     Place a test order to check the changes. As you can see, the **Credit card** option is not available as we hid it for the guest user group.
 
     .. fancybox:: img/Hide_payment_and_shipping_006.png
-        :alt: Hide Payment and Shipping Methods
+        :alt: Hide Payments
 
 =======================
 Hiding shipping methods
@@ -121,12 +121,12 @@ Hiding shipping methods
     Open the settings of the desired method.
 
     .. fancybox:: img/Hide_payment_and_shipping_007.png
-        :alt: Hide Payment and Shipping Methods
+        :alt: Hide Payments
 
     In the **General** tab, find the **Restrict for user groups** setting and select the user groups for which you want to hide this shipping method.
 
     .. fancybox:: img/Hide_payment_and_shipping_003.png
-        :alt: Hide Payment and Shipping Methods
+        :alt: Hide Payments
 
     .. note::
 
@@ -138,7 +138,7 @@ Hiding shipping methods
     Place a test order to check the changes. As you can see, the **FedEx** option is not available as we hid it for the guest user group.
 
     .. fancybox:: img/Hide_payment_and_shipping_009.png
-        :alt: Hide Payment and Shipping Methods
+        :alt: Hide Payments
 
 ==========================================================================
 How to restrict access to shipping and payment methods for certain admins?

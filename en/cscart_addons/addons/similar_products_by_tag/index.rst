@@ -1,5 +1,5 @@
 ***********************
-Similar Products by Tag
+Similar by Tag
 ***********************
 
 .. raw:: html
@@ -18,7 +18,7 @@ Similar Products by Tag
 Overview
 --------
 
-    The Similar Products by Tag add-on provides you with new abilities such as:
+    The Similar by Tag add-on provides you with new abilities such as:
 
     - automatically link products to each other by specifying matching tags
     - recommend products that are similar to the viewed one
@@ -26,7 +26,7 @@ Overview
     - limit the maximum number of products shown per page
     
     .. fancybox:: img/Selection_11.png
-        :alt: Similar Products by Tag
+        :alt: Similar by Tag
         :width: 650px
 
     To learn how to create a block for similar products, add tags and link products to each other, follow quick and easy steps below.
@@ -50,7 +50,7 @@ Support
 Demo
 ====
 
-    Check out the Similar Products by Tag add-on in our |demo_store|.
+    Check out the Similar by Tag add-on in our |demo_store|.
 
 .. |demo_store| raw:: html
 
@@ -68,15 +68,15 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the “Similar Products by Tag” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the “Similar by Tag” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
     .. fancybox:: img/Selection_01.png
-        :alt: Similar Products by Tag add-on
+        :alt: Similar by Tag add-on
         :width: 650px
 
 .. note::
     
-    For correct operation of the “Similar Products by Tag” add-on, make sure that the **Tags** add-on is installed and set to Active on the add-ons list page. 
+    For correct operation of the “Similar by Tag” add-on, make sure that the **Tags** add-on is installed and set to Active on the add-ons list page. 
 
 ===============
 Creating blocks

@@ -1,5 +1,5 @@
 ***************************
-Quantity Discount Bulk Edit
+Discount Edition
 ***************************
 
 .. raw:: html
@@ -20,10 +20,10 @@ Overview
 
     Editing a large amount of items can be exhausting: you have to select them one by one, choosing the value you want. Imagine having to change quantity discounts for 1000 products one by one… that would take forever! 
 
-    But don't worry: with the **Quantity Discount Bulk Edit** add-on, you can simultaneously modify quantity discounts of multiple products, or set a new quantity discount for every selected item. A simple and direct way to fulfill a long and stressful operation with a few clicks!
+    But don't worry: with the **Discount Edition** add-on, you can simultaneously modify quantity discounts of multiple products, or set a new quantity discount for every selected item. A simple and direct way to fulfill a long and stressful operation with a few clicks!
 
     .. fancybox:: img/Cover_quantity_discounts.jpg
-        :alt: CS-Cart Quantity Discount Bulk Edit add-on
+        :alt: CS-Cart Discount Edition add-on
 
     Simply install the add-on and you’re all set!
 
@@ -50,10 +50,10 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the Quantity Discount Bulk Edit add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the Discount Edition add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
     .. fancybox:: img/Quantity_discount_bulk_edit_001.png
-        :alt: CS-Cart Quantity Discount Bulk Edit add-on
+        :alt: CS-Cart Discount Edition add-on
 
 ==========================
 Editing quantity discounts

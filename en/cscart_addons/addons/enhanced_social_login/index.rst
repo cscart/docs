@@ -1,5 +1,5 @@
 *********************
-Enhanced Social Login
+Social Auth
 *********************
 
 .. raw:: html
@@ -18,7 +18,7 @@ Enhanced Social Login
 Overview
 --------
 
-    `Enhanced Social Login <https://www.simtechdev.com/addons/customer-experience/enhanced-social-login.html>`_ simplifies the complicated sign-up process for customers in your store. It adds a sign-up form allowing your users to log in and register with one click on your website or mobile app using their account on Facebook, Twitter, Yahoo, Google, LinkedIn, OpenID, AOL, PayPal, Live, Foursquare, Vkontakte, Mail.Ru, Yandex, and Odnoklassniki.
+    `Social Auth <https://www.simtechdev.com/addons/customer-experience/enhanced-social-login.html>`_ simplifies the complicated sign-up process for customers in your store. It adds a sign-up form allowing your users to log in and register with one click on your website or mobile app using their account on Facebook, Twitter, Yahoo, Google, LinkedIn, OpenID, AOL, PayPal, Live, Foursquare, Vkontakte, Mail.Ru, Yandex, and Odnoklassniki.
 
     .. image:: img/Enhanced_social_login_004.png
 
@@ -70,7 +70,7 @@ Support
 Demo
 ====
 
-    Check out the Enhanced Social Login add-on in our |demo_store|.
+    Check out the Social Auth add-on in our |demo_store|.
 
 .. |demo_store| raw:: html
 
@@ -88,7 +88,7 @@ Managing in the admin panel
 Presets
 =======
 
-    Make sure the default **Social login** add-on is set to Active in your store. Otherwise the Enhanced Social Login add-on will not work correctly.
+    Make sure the default **Social login** add-on is set to Active in your store. Otherwise the Social Auth add-on will not work correctly.
 
     .. fancybox:: img/Enhanced_social_login_002.png
         :alt: Social Login
@@ -104,9 +104,9 @@ Presets
 Installing the add-on
 =====================
 
-    Install the Enhanced Social Login add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the Social Auth add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
     .. fancybox:: img/Enhanced_social_login_001.png
-        :alt: Enhanced Social Login add-on for CS-Cart
+        :alt: Social Auth add-on for CS-Cart
 
     That's it! Now your customers can sign up to your store just in one click!

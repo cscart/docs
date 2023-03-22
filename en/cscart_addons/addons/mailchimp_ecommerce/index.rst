@@ -1,5 +1,5 @@
 *******************
-MailChimp Ecommerce
+MailChimp PRO
 *******************
 
 .. raw:: html
@@ -20,7 +20,7 @@ Overview
 
     
     .. fancybox:: img/mailchimp-ecommerce.png
-        :alt: MailChimp Ecommerce add-on
+        :alt: MailChimp PRO add-on
     
 
 ========
@@ -79,7 +79,7 @@ Getting API Key
     After authorization, get the API Key in Extras > API keys > Create A Key.
 
     .. fancybox:: img/mailchimp-ecommerce-getting-api-key.jpg
-        :alt: API key for MailChimp Ecommerce add-on
+        :alt: API key for MailChimp PRO add-on
     
 ---------------------------
 Managing in the admin panel
@@ -89,10 +89,10 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the MailChimp Ecommerce add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the MailChimp PRO add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
     .. fancybox:: img/mailchimp-ecommerce-installing.jpg
-        :alt: MailChimp Ecommerce add-on installing
+        :alt: MailChimp PRO add-on installing
     
 =====================
 Setting up the add-on
@@ -105,7 +105,7 @@ General
 +++++++
 
     .. fancybox:: img/mailchimp-ecommerce-general-settings.jpg
-        :alt: MailChimp Ecommerce add-on
+        :alt: MailChimp PRO add-on
 
     * **License key**—Enter the license key to activate the add-on. You will receive this key in the order confirmation email. You can also see license keys for all your purchased add-ons in your HelpDesk account.
 
@@ -116,19 +116,19 @@ General
     * **Choose store**—If this label is displayed, then you need to switch to a specific storefront (relevant for Ultimate edition with several storefronts).
 
     .. fancybox:: img/mailchimp-ecommerce-storefronts.jpg
-        :alt: MailChimp Ecommerce add-on
+        :alt: MailChimp PRO add-on
 
     After the storefront is chosen, one of the following options will be available: 
 
     1. The dialog for creating a store in MailChimp, where you need to choose Audience that will be connected with the new store.
 
     .. fancybox:: img/mailchimp-ecommerce-audience.jpg
-        :alt: MailChimp Ecommerce add-on
+        :alt: MailChimp PRO add-on
 
     2. The dialog for deleting a MailChimp store and buttons for manually exporting products and abandoned carts.
 
     .. fancybox:: img/mailchimp-ecommerce-deleting-store.jpg
-        :alt: MailChimp Ecommerce add-on
+        :alt: MailChimp PRO add-on
 
     * **Send products**—Manual products synchronization between CS-Cart store and MailChimp.
 
@@ -142,20 +142,20 @@ General
 
     * **Enable synchronization of abandoned carts**—If enabled, synchronization  of abandoned carts will be performed according to the cron.
 
-    * **Enable synchronization of order statuses**—If enabled, synchronization will be performed when the status of the order is changed. Configure the status matching on the **Order Statuses** tab in MailChimp Ecommerce add-on settings (`Order statuses`_).
+    * **Enable synchronization of order statuses**—If enabled, synchronization will be performed when the status of the order is changed. Configure the status matching on the **Order Statuses** tab in MailChimp PRO add-on settings (`Order statuses`_).
 
     .. note::
 
-        MailChimp Ecommerce add-on exports orders that were created after enabling synchronization in the add-on settings. Orders created before enabling synchronization will not be exported.
+        MailChimp PRO add-on exports orders that were created after enabling synchronization in the add-on settings. Orders created before enabling synchronization will not be exported.
 
 ++++++++++++++
 Order statuses
 ++++++++++++++
 
-    Open **Order statuses** tab in the MailChimp Ecommerce add-on settings to set up order statuses corresponding to the statuses in MailChimp.
+    Open **Order statuses** tab in the MailChimp PRO add-on settings to set up order statuses corresponding to the statuses in MailChimp.
 
     .. fancybox:: img/mailchimp-ecommerce-order-statuses.jpg
-        :alt: MailChimp Ecommerce add-on
+        :alt: MailChimp PRO add-on
 
     .. note::
 
@@ -165,15 +165,15 @@ Order statuses
 Setting up the cron on the server
 ---------------------------------
 
-    To automatically send notifications, you need to configure the cron job on the server. The command for cron could be found in the MailChimp Ecommerce add-on settings in the **General** tab.
+    To automatically send notifications, you need to configure the cron job on the server. The command for cron could be found in the MailChimp PRO add-on settings in the **General** tab.
 
     .. fancybox:: img/mailchimp-ecommerce-cron.jpg
-        :alt: MailChimp Ecommerce add-on
+        :alt: MailChimp PRO add-on
 
     In this command, you need to replace the password with the one from the store settings: Settings > Security settings > Access key to cron script.
 
     .. fancybox:: img/mailchimp-ecommerce-cron-password.jpg
-        :alt: MailChimp Ecommerce add-on
+        :alt: MailChimp PRO add-on
 
     .. note::
 
@@ -190,7 +190,7 @@ Creating templates
     For creating templates, go to MailChimp account and open the Connected Sites page: Menu > Connected sites > YOURSTORE. To add a template, click **Add** opposite the corresponding object, edit its content and publish. 
 
     .. fancybox:: img/mailchimp-ecommerce-objects.jpg
-        :alt: MailChimp Ecommerce add-on
+        :alt: MailChimp PRO add-on
 
     .. note::
 
@@ -199,12 +199,12 @@ Creating templates
     See common steps in our video: https://youtu.be/FfAr7bUHOzQ
 
 ------------------------------------------------------------------------------------------
-Comparison of the default CS-Cart email marketing, MailChimp Advanced, MailChimp Ecommerce
+Comparison of the default CS-Cart email marketing, MailChimp Light, MailChimp PRO
 ------------------------------------------------------------------------------------------
 
-    Find the comparison table for default CS-Cart email marketing, MailChimp Advanced and MailChimp Ecommerce below.
+    Find the comparison table for default CS-Cart email marketing, MailChimp Light and MailChimp PRO below.
 
     .. fancybox:: img/mailchimp-ecommerce-comparison.png
-        :alt: MailChimp Ecommerce add-on
+        :alt: MailChimp PRO add-on
 
-    MailChimp Ecommerce add-one exports the following entities: Store, Products, Carts, Orders, Customers.
+    MailChimp PRO add-on exports the following entities: Store, Products, Carts, Orders, Customers.

@@ -1,5 +1,5 @@
 ******************
-TaxCalcs by TaxJar
+TaxJar Integrator
 ******************
 
 .. raw:: html
@@ -18,7 +18,7 @@ TaxCalcs by TaxJar
 Overview
 --------
 
-    The **TaxCalcs by TaxJar** add-on integrates your store with the `TaxJar service <https://www.taxjar.com/>`_ that adds automatic and comprehensive tax calculations to your orders based on the user's state, county and city.
+    The **TaxJar Integrator** add-on integrates your store with the `TaxJar service <https://www.taxjar.com/>`_ that adds automatic and comprehensive tax calculations to your orders based on the user's state, county and city.
 
     Authorized users will see product prices with included tax on product pages:
 
@@ -103,7 +103,7 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the “TaxCalcs by TaxJar” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & Install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the “TaxJar Integrator” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & Install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
     .. fancybox:: img/SmartCalcs_by_TaxJar_001.png
         :alt: SmartCalcs by TaxJar add-on
@@ -112,7 +112,7 @@ Installing the add-on
 Setting up the add-on
 =====================
 
-    Here are available settings of the “TaxCalcs by TaxJar” add-on.
+    Here are available settings of the “TaxJar Integrator” add-on.
 
     **Settings for CS-Cart stores:**
 

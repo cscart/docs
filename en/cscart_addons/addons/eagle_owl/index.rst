@@ -1,5 +1,5 @@
 *******************
-Eagle Owl Previewer
+Eagle Owl
 *******************
 
 .. raw:: html
@@ -17,27 +17,27 @@ Eagle Owl Previewer
 Overview
 --------
 
-    **The Eagle Owl Previewer add-on** is a modern, easy to use viewer that allows you to see not only the main image but also the icons of the following images, zoom images and view them in the full screen mode on the product details page. The icons could be clicked to switch the main image via the mouse and also via the keyboard that increases the UX of your site. The image counter shows the number of the current image as well as the total images number of the product. 
+    **The Eagle Owl add-on** is a modern, easy to use viewer that allows you to see not only the main image but also the icons of the following images, zoom images and view them in the full screen mode on the product details page. The icons could be clicked to switch the main image via the mouse and also via the keyboard that increases the UX of your site. The image counter shows the number of the current image as well as the total images number of the product. 
 
     Desktop version:
 
     .. fancybox:: img/eagle_owl_addon.png
-        :alt: Eagle Owl Previewer pop-up
+        :alt: Eagle Owl pop-up
 
-    The The Eagle Owl Previewer add-on is **fully** responsive.
+    The The Eagle Owl add-on is **fully** responsive.
 
     Mobile version:
 
     .. fancybox:: img/eagle_owl_addon_mobile.jpg
-        :alt: Eagle Owl Previewer pop-up on mobile
+        :alt: Eagle Owl pop-up on mobile
         :width: 371px
 
     .. tip::
 
-        If you use **Eagle Owl Previewer add-on** with `YouTube Video Gallery <https://www.simtechdev.com/docs/addons/youtube/index.html>`_, YouTube videos will be shown right in the previewer pop-up.
+        If you use **Eagle Owl add-on** with `YouTube Gallery <https://www.simtechdev.com/docs/addons/youtube/index.html>`_, YouTube videos will be shown right in the previewer pop-up.
 
         .. fancybox:: img/eagle_owl_youtube.png
-            :alt: Eagle Owl Previewer pop-up and YouTube Video Gallery add-on
+            :alt: Eagle Owl pop-up and YouTube Gallery add-on
 
     Learn how to install the add-on, configure settings, and more by following quick and easy steps below.
 
@@ -80,7 +80,7 @@ Support
 Demo
 ====
 
-    Check out the Eagle Owl Previewer add-on in our |demo_store|.
+    Check out the Eagle Owl add-on in our |demo_store|.
 
 .. |demo_store| raw:: html
 
@@ -98,7 +98,7 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the Eagle Owl Previewer add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the Eagle Owl add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
 .. important::
     The add-on is not compatible with AlexBranding Advanced image previewers add-on
@@ -107,7 +107,7 @@ Installing the add-on
 Setting up the add-on
 =====================
 
-    Here are available settings of the Eagle Owl Previewer add-on.
+    Here are available settings of the Eagle Owl add-on.
 
     .. fancybox:: img/eagle_owl_settings.png
         :alt: settings of the Eagle Owl add-on
@@ -145,13 +145,13 @@ Setting up the add-on
 
     .. important::
 
-        To change the default previewer to Eagle Owl Previewer, choose **Eagle Owl** in the setting: **Settings → Appearance →  Default image previewer** and press Save in the upper right corner.
+        To change the default previewer to Eagle Owl, choose **Eagle Owl** in the setting: **Settings → Appearance →  Default image previewer** and press Save in the upper right corner.
 
             .. fancybox:: img/eagle_owl_note.png
                 :alt: settings
 
 =======================================
-Hot keys for Eagle Owl Previewer pop-up
+Hot keys for Eagle Owl pop-up
 =======================================
 
     * [Esc] - Close pop-up

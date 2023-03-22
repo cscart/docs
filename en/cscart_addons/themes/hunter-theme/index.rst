@@ -36,9 +36,9 @@ Overview
     The Hunter Front Pack comes with 9 add-ons to enhance your customer experience:
 
     - Smart Mega Menu
-    - Back to Top Button
+    - Back to Top
     - Blocks Animation
-    - Full-Width Banner
+    - Pro Banner
     - Hamburger Menu
     - Product Labels
     - Product Likes
@@ -99,13 +99,13 @@ Installing and setting up the add-ons
         :alt: Smart Mega Menu
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-`Back to Top Button <https://www.simtechdev.com/docs/addons/back_to_top_button/index.html>`_
+`Back to Top <https://www.simtechdev.com/docs/addons/back_to_top_button/index.html>`_
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     Creates a *Back to Top* button to your website.
 
     .. fancybox:: img/hunter-back-to-top-button.png
-        :alt: Back to Top Button
+        :alt: Back to Top
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 `Blocks Animation <https://www.simtechdev.com/docs/addons/blocks_animation/index.html>`_
@@ -114,13 +114,13 @@ Installing and setting up the add-ons
     Enables you to apply animation effects to the blocks on any page of your store.
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-`Full-Width Banner <https://www.simtechdev.com/docs/addons/full-width_banner/index.html>`_
+`Pro Banner <https://www.simtechdev.com/docs/addons/full-width_banner/index.html>`_
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     Allows to show an eye-catching wide banner on any page of your store.
 
     .. fancybox:: img/hunter-full-width-banner.png
-        :alt: Full-Width Banner
+        :alt: Pro Banner
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 `Hamburger Menu <https://www.simtechdev.com/docs/addons/hamburger-menu/index.html>`_

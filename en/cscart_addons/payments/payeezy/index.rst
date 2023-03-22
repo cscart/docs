@@ -18,7 +18,7 @@ Payeezy
 Overview
 --------
 
-    **The CS-Cart Payeezy add-on** lets you accept payments via Payeezy payment gateway. Offer your customers a great experience on your website with high security, features and easy integration. Payeezy accepts major credit cards and lets your customers pay in many local currencies. Payments are processed directly in the store, the customer is not redirected to the payment gateway site.
+    **The CS-Cart Payeezy add-on** lets you accept payments via Payeezy Gateway. Offer your customers a great experience on your website with high security, features and easy integration. Payeezy accepts major credit cards and lets your customers pay in many local currencies. Payments are processed directly in the store, the customer is not redirected to the payment gateway site.
 
     .. fancybox:: img/Payeezy_Selection_010.png
         :alt: Paying by credit card. Payeezy
@@ -38,7 +38,7 @@ Compatibility
 Features
 ========
 
-    - Accept payments via Payeezy payment gateway
+    - Accept payments via Payeezy Gateway
 
     - Offer more payment options
 
@@ -60,7 +60,7 @@ Support
 Demo
 ====
 
-    You can check out the Payeezy payment gateway in our |live_demo_url|.
+    You can check out the Payeezy Gateway in our |live_demo_url|.
 
     .. |live_demo_url| raw:: html
 
@@ -145,7 +145,7 @@ Creating a payment method
 
     to create a new payment method.
 
-    To use the Payeezy payment gateway, it is necessary to select the appropriate value in the **Processor** field in the **General** tab.
+    To use the Payeezy Gateway, it is necessary to select the appropriate value in the **Processor** field in the **General** tab.
 
     .. fancybox:: img/Payeezy_Selection_004.png
         :alt: Payeezy general settings
@@ -159,7 +159,7 @@ Creating a payment method
 What the customer will see
 --------------------------
 
-    Once you've set up the Payeezy payment gateway in the store, it will get available to your customers.
+    Once you've set up the Payeezy Gateway in the store, it will get available to your customers.
 
     So the customer adds products to cart and proceeds to checkout. At the Billing Options step, they will see the Payeezy payment method available.
 

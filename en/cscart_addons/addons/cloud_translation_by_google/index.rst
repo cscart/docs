@@ -1,5 +1,5 @@
 ***************************
-Cloud Translation by Google
+Cloud Translate
 ***************************
 
 .. raw:: html
@@ -18,10 +18,10 @@ Cloud Translation by Google
 Overview
 --------
 
-    Take your website global with our **Cloud Translation by Google** add-on. It integrates the Google Translate service with your CS-Cart store, enabling you to translate the entire site or individual entities.
+    Take your website global with our **Cloud Translate** add-on. It integrates the Google Translate service with your CS-Cart store, enabling you to translate the entire site or individual entities.
 
     .. fancybox:: img/Cloud_translation_010.png
-        :alt: Cloud Translation by Google add-on
+        :alt: Cloud Translate add-on
 
     Google Cloud Translation API is only available as a paid service. Please see `Pricing <https://cloud.google.com/translate/pricing>`_ for more details.
 
@@ -107,23 +107,23 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the Cloud Translation by Google add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the Cloud Translate add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
 =====================
 Setting up the add-on
 =====================
 
-    The settings of the Cloud Translation by Google add-on are divided into the following sections:
+    The settings of the Cloud Translate add-on are divided into the following sections:
 
     **Google Translate API settings**
 
     .. fancybox:: img/Cloud_translation_002.png
-        :alt: Cloud Translation by Google API key
+        :alt: Cloud Translate API key
 
     In the API field, enter the API key from your Google Cloud Translation account. To do so, you'll need to create an account in the `Google Cloud Platform <https://cloud.google.com/translate/docs/getting-started>`_ and get the API key in the **Credentials** section.
 
     .. fancybox:: img/Cloud_translation_007.png
-        :alt: Cloud Translation by Google API key
+        :alt: Cloud Translate API key
 
     **Google Translate languages**
 

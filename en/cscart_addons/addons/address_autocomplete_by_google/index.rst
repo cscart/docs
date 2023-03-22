@@ -1,5 +1,5 @@
 ******************************
-Address Autocomplete by Google
+Auto Address
 ******************************
 
 .. raw:: html
@@ -18,12 +18,12 @@ Address Autocomplete by Google
 Overview
 --------
 
-    **The Address Autocomplete by Google add-on** adds an autocomplete text field to help your customers quickly fill in the shipping and billing address at checkout. 
+    **The Auto Address add-on** adds an autocomplete text field to help your customers quickly fill in the shipping and billing address at checkout. 
 
     As the user enters text, autocomplete returns place predictions in the form of a dropdown pick list. When the user selects a place from the pick list, autocomplete will fill in the rest:
 
     .. fancybox:: img/Address_autocomplete.gif
-        :alt: CS-Cart Address Autocomplete by Google add-on
+        :alt: CS-Cart Auto Address add-on
 
     If you run a multi-vendor store, a useful feature for your vendors will be address autocomplete in the vendor registration form.
 
@@ -63,7 +63,7 @@ Support
 Demo
 ====
 
-    Check out the Address Autocomplete by Google add-on in our |demo_store|.
+    Check out the Auto Address add-on in our |demo_store|.
 
     .. |demo_store| raw:: html
 
@@ -81,19 +81,19 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the Address Autocomplete by Google add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the Auto Address add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
     .. fancybox:: img/Address_autocomplete_Selection_001.png
-        :alt: CS-Cart Address Autocomplete by Google add-on
+        :alt: CS-Cart Auto Address add-on
 
 =====================
 Setting up the add-on
 =====================
 
-    Here are available settings of the Address Autocomplete by Google add-on.
+    Here are available settings of the Auto Address add-on.
 
     .. fancybox:: img/Address_autocomplete_Selection_002.png 
-        :alt: Address Autocomplete by Google add-on
+        :alt: Auto Address add-on
 
     * **Google API key**—Key to the Google Maps API. To get this key, visit the `Google Developers Documentation <https://developers.google.com/maps/documentation/javascript/get-api-key>`_.
 

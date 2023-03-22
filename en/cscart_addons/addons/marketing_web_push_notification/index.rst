@@ -1,5 +1,5 @@
 ********************************
-Marketing Web Push Notifications
+Marketings Notice
 ********************************
 
 .. raw:: html
@@ -16,7 +16,7 @@ Marketing Web Push Notifications
 Overview
 --------
 
-    **The Marketing Web Push Notifications add-on** allows you to send notifications via the Google Firebase service, to devices that support Web Push technology. Web Push Notifications is an important marketing communication and sales channel. Push notifications are much more effective than newsletters and advertising in search and social networks.
+    **The Marketings Notice add-on** allows you to send notifications via the Google Firebase service, to devices that support Web Push technology. Web Push Notifications is an important marketing communication and sales channel. Push notifications are much more effective than newsletters and advertising in search and social networks.
 
     As of April 2019, sending Web Push notifications is free.
 
@@ -29,12 +29,12 @@ Overview
     - Subscribing to notifications requires only 1 click.
 
     .. fancybox:: img/marketing_web_push_notification_main.gif
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
 
     How web push notifications are shown on mobile devices:
 
     .. fancybox:: img/marketing_web_push_notification_mobile.jfif
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
         :width: 350px
 
 ========
@@ -91,7 +91,7 @@ Creating account
     To create an account follow the link https://console.firebase.google.com/ and click **Add project**.
 
     .. fancybox:: img/marketing_web_push_notification_creating_firebase_account.jpg
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
         :width: 651px
 
 =================================================
@@ -101,12 +101,12 @@ Getting Server key and Messaging sender ID
     After you have created a project (or if there is an existing one), go to the project settings: **Project overview > Project settings > Cloud messaging**.
 
     .. fancybox:: img/marketing_web_push_notification_project_settings.jpg
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
 
     On this tab, we need *Server Key* and *Messaging sender ID*, which will be needed later when configuring the add-on. 
 
     .. fancybox:: img/marketing_web_push_notification_project_data.png   
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
     
 ---------------------------
 Managing in the admin panel
@@ -116,16 +116,16 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the Marketing Web Push Notifications add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the Marketings Notice add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
     
 =====================
 Setting up the add-on
 =====================
 
-    Here are available settings of the Marketing Web Push Notifications add-on.
+    Here are available settings of the Marketings Notice add-on.
 
     .. fancybox:: img/marketing_web_push_notification_settings.jpg
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
 
     * **License key**—Enter the license key to activate the add-on. You will receive this key in the order confirmation email. You can also see license keys for all your purchased add-ons in your HelpDesk account. 
 
@@ -146,14 +146,14 @@ Creating notifications
     1. To create a notification go to to **Marketing > Web Push Notifications > Notifications** and click + in the top right corner.
 
     .. fancybox:: img/marketing_web_push_notification_creating_notification.jpg
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
 
     A window will be opened to add a new notification.    
 
     2. Fill in the following fields:
 
     .. fancybox:: img/marketing_web_push_notification_creating_notification2.jpg
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
 
     * **Title notifications** — 30 characters limit, message header (shown depending on the platform and browser version).
 
@@ -185,7 +185,7 @@ Creating notifications
         Since the add-on supports multilingualism, then at the time of creating the notification, versions are created for all the store languages, filling identically to the main notification. If you need to edit notifications for different languages, then switch to the desired language and make necessary changes. Fields supporting multilingualism:  Title notifications, Text notifications, Url, Image.
 
         .. fancybox:: img/marketing_web_push_notification_multilingualism.jpg
-            :alt: Marketing Web Push Notifications add-on
+            :alt: Marketings Notice add-on
 
 ======================
 Managing notifications
@@ -194,7 +194,7 @@ Managing notifications
     Notifications are managed in **Marketing > Web Push Notifications > Notifications**.
 
     .. fancybox:: img/marketing_web_push_notification_managing_notification.jpg
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
 
     There are 3 main blocks on this page:
 
@@ -203,26 +203,26 @@ Managing notifications
     This block displays the list of campaigns with the possibility of editing, forcing, deleting and changing the status.
 
     .. fancybox:: img/marketing_web_push_notification_list.jpg
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
 
     It also displays statistics on the latest campaign and the total number of transitions for all the time for notifications from this mailing (for the notifications sent out once, the statistics are displayed in the context of a campaign, while for Service campaign, the statistics are displayed in the context of periodic mailings and the total number of transitions will grow without dropping).
 
     .. fancybox:: img/marketing_web_push_notification_list2.jpg
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
     
     2. Multi-select control buttons and adding new notification
 
     If you select multiple notifications, you can force to send and delete them.
 
     .. fancybox:: img/marketing_web_push_notification_control_block.jpg
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
 
     3. Search block
 
     The search for notifications is implemented by 3 fields: Title, Text and Status.
 
     .. fancybox:: img/marketing_web_push_notification_search.jpg
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
         :width: 225px
 
 ===============
@@ -232,47 +232,47 @@ Managing tokens
     Tokens are managed in **Marketing > Web Push Notifications > Tokens**. On this page there are 3 main blocks.
 
     .. fancybox:: img/marketing_web_push_notification_managing_tokens.jpg
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
 
     1. Tokens list
 
     This block displays a list of tokens with the possibility of their activation, deactivation and deletion.
 
     .. fancybox:: img/marketing_web_push_notification_token_list.jpg
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
 
     Each token has a field *Failed amount* which shows how many notifications failed to get delivered. It's used to automatically disable the token when the corresponding setting is enabled.
 
     .. fancybox:: img/marketing_web_push_notification_managing_failed_amount.jpg
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
 
     2. Multi-select control buttons
 
     When selecting multiple tokens, their activation, deactivation and deletion is available.
 
     .. fancybox:: img/marketing_web_push_notification_tokens_control_block.jpg
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
 
     3. Search block
 
     Search for tokens implemented by 2 fields User id and Status.
 
     .. fancybox:: img/marketing_web_push_notification_tokens_search.jpg
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
         :width: 239px
 
-    See common steps for configuring **Marketing Web Push Notifications add-on** in our video: https://youtu.be/JgNmlFtmfYA
+    See common steps for configuring **Marketings Notice add-on** in our video: https://youtu.be/JgNmlFtmfYA
 
 ===================================================
 Managing the permission of vendors to make mailings
 ===================================================
 
-    The functionality of the Marketing Web Push Notifications add-on allows vendors to be able to send out notifications to customers who came to their page after being allowed to deliver notifications to them.
+    The functionality of the Marketings Notice add-on allows vendors to be able to send out notifications to customers who came to their page after being allowed to deliver notifications to them.
 
     Collection of tokens for vendors is carried out only when the setting is enabled. Enable web push notifications for vendors:
 
     .. fancybox:: img/marketing_web_push_notification_vendors.jpg
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
 
     After enabling this setting, the main administrator must configure the ability to send campaigns for certain vendors: **Vendors > Choose a Vendor > Web Push notifications > Allow Web Push notifications**.
 
@@ -280,7 +280,7 @@ Managing the permission of vendors to make mailings
         It is recommended to provide the ability to send notifications only to trusted vendors, since if the customer forbids receiving notifications (as spammy), then notifications will not be delivered from the entire marketplace.
 
     .. fancybox:: img/marketing_web_push_notification_vendors2.jpg
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
 
 ------------------------------
 Setting up Crons on the server
@@ -289,12 +289,12 @@ Setting up Crons on the server
     To automatically send notifications, you must configure the cron on the server. The command for the cron is in the add-on settings in the tab Cron:
 
     .. fancybox:: img/marketing_web_push_notification_cron.jpg
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
 
     In this command, you need to replace the password with the cron from the store settings: **Settings > Security settings > Access key to cron script**.
 
     .. fancybox:: img/marketing_web_push_notification_managing_cron_password.jpg
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
 
 .. note:: The recommended cron frequency is once per day.
 
@@ -305,7 +305,7 @@ Configuring Cron Mailing for New Notifications
     After setting the cron, if you want the new notifications to be sent out automatically, without forced sending, you need to enable the setting **New notification sent** in the Cron tab.
 
     .. fancybox:: img/marketing_web_push_notification_new_notifications.jpg
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
 
     When this setting is enabled, new notifications that the administrator will create will be automatically sent the next time the cron is executed.
  
@@ -316,7 +316,7 @@ Configuring Cron Mailing for New Subscribers
     If you want to send notifications to new subscribers, you need to enable the setting **Use notification for new subscribers** in Cron tab and choose the message which will be sent. In order for the notification to appear in the list, you need to create a new notification with the status Service (see `Creating notifications`_).
 
     .. fancybox:: img/marketing_web_push_notification_managing_new_subscribers.jpg
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
 
     Subscribers are considered as new if their tokens, after allowing the delivery of notifications were not sent a notification for new subscribers.
 
@@ -327,7 +327,7 @@ Configuring Cron Mailing for Abandoned Carts
     If you want to launch a campaign for abandoned carts, you need to enable the setting **Use notification for abandoned carts** in Cron tab and choose the message which will be sent. In order for the notification to appear in the list, you need to create a new notification with the status Service (see `Creating notifications`_).
 
     .. fancybox:: img/marketing_web_push_notification_managing_abandoned_carts.jpg
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on
 
     The cron collects abandoned carts for the latest 24 hours.
 
@@ -340,4 +340,4 @@ Configuring Cron Mailing for automatic Bad Tokens Shutdown
     After enabling this setting, you will need to configure the number of unsuccessful deliveries, after which the token will be disabled (default 20).
 
     .. fancybox:: img/marketing_web_push_notification_managing_bad_tokens.jpg
-        :alt: Marketing Web Push Notifications add-on
+        :alt: Marketings Notice add-on

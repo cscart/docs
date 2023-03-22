@@ -1,5 +1,5 @@
 *************************
-Order Status Restrictions
+Order Workflow
 *************************
 
 .. raw:: html
@@ -18,7 +18,7 @@ Order Status Restrictions
 --------
 Overview
 --------
-	The brand new Order Status Restrictions add-on allows its user to monitor and switch between order statuses. By adding the change order status workflow, the add-on helps to enhance the security of the shipping operations, take control of your fee and monitor shipping chains of your vendors! 
+	The brand new Order Workflow add-on allows its user to monitor and switch between order statuses. By adding the change order status workflow, the add-on helps to enhance the security of the shipping operations, take control of your fee and monitor shipping chains of your vendors! 
 
 		.. fancybox:: img/Order_restriction.png
 	 		:alt: Order restriction addon

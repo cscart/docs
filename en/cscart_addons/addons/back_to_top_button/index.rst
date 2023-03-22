@@ -1,5 +1,5 @@
 ******************
-Back to Top Button
+Back to Top
 ******************
 
 .. raw:: html
@@ -18,22 +18,22 @@ Back to Top Button
 Overview
 --------
 
-    Let your customers easily scroll to the top of your website with a smart **Back to Top Button**. 
+    Let your customers easily scroll to the top of your website with a smart **Back to Top**. 
 
     When a user has sufficiently scrolled down the page, this helpful button appears that brings your shoppers back to the top of the page with a smooth scrolling animation. 
 
     It’s an especially useful feature if you are showing a lot of products on product and category pages. It will save time and free your customers from the need for vertical scrolling with the mouse.
 
     .. fancybox:: img/UpButtonAddon.gif
-        :alt: CS-Cart Back to Top Button add-on
+        :alt: CS-Cart Back to Top add-on
 
-    Create a good user experience with our **Back to Top Button** add-on!
+    Create a good user experience with our **Back to Top** add-on!
 
 ========
 Features
 ========
 
-    - Add Back to Top button on your website.
+    - Add Back to Top on your website.
 
     - Show a stripe on the left or on the right side of the page.
 
@@ -62,19 +62,19 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the Back to Top Button add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the Back to Top add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
     .. fancybox:: img/back_to_top_button_001.png
-        :alt: CS-Cart Back to Top Button add-on
+        :alt: CS-Cart Back to Top add-on
 
 =====================
 Setting up the add-on
 =====================
 
-    Here are available settings of the Back to Top Button add-on.
+    Here are available settings of the Back to Top add-on.
 
     .. fancybox:: img/back_to_top_button_002.png
-        :alt: settings of the Back to Top Button add-on
+        :alt: settings of the Back to Top add-on
 
     * **Stripe mode**—Shows a stripe on the left or on the right side of the page. Works only in the Desktop mode. Options are: Right, Left, Disable.
 

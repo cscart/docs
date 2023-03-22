@@ -1,5 +1,5 @@
 *****************
-User Profile Page
+Profile Page
 *****************
 
 .. raw:: html
@@ -18,14 +18,14 @@ User Profile Page
 Overview
 --------
 
-    The **User Profile Page** add-on creates a user profile page with a profile image and personal information with the ability to edit the profile and add third-party blocks.
+    The **Profile Page** add-on creates a Profile Page with a profile image and personal information with the ability to edit the profile and add third-party blocks.
 
     Every user will have their own Profile page which may be reached from the top right menu (My Account - My profile page). This page contains links to further pages allowing the user to edit their profile information and preferences, manage their Wish list, Comparison list, orders, etc.
 
     Here's what the user will see in their profile:
 
     .. fancybox:: img/User_Profile_Page_005.png
-        :alt: CS-Cart User Profile Page add-on
+        :alt: CS-Cart Profile Page add-on
 
     .. note::
 
@@ -65,16 +65,16 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the “User Profile Page” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the “Profile Page” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
 =====================
 Setting up the add-on
 =====================
 
-    In the settings of the "User Profile Page" add-on, you can decide if you want to show the user profile image in a circle or in a square. Simply select the **Circular user profile image** box or clear it.
+    In the settings of the "Profile Page" add-on, you can decide if you want to show the user profile image in a circle or in a square. Simply select the **Circular user profile image** box or clear it.
 
     .. fancybox:: img/User_Profile_Page_002.png
-        :alt: settings of the User Profile Page add-on
+        :alt: settings of the Profile Page add-on
 
     * Circular image
 

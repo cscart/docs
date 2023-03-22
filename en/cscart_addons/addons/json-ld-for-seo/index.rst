@@ -1,5 +1,5 @@
 ***************
-JSON-LD for SEO
+JSON-LD
 ***************
 
 .. raw:: html
@@ -18,12 +18,12 @@ JSON-LD for SEO
 Overview
 --------
 
-    Add a great boost to your SEO with our **JSON-LD for SEO** add-on. JSON-LD (JavaScript Object Notation for Linked Data) offers a simpler means to create machine-readable data from websites to promote search results. Basically, the add-on adds ``schema.org`` data to your website to improve the search ranking.
+    Add a great boost to your SEO with our **JSON-LD** add-on. JSON-LD (JavaScript Object Notation for Linked Data) offers a simpler means to create machine-readable data from websites to promote search results. Basically, the add-on adds ``schema.org`` data to your website to improve the search ranking.
 
     Schema is not simple to put on a website, but thanks to our add-on, all you need to do is to fill the fields in with the corresponding information, and the rest is covered with our add-on. No advanced settings, no coding, no effort!
 
     .. meta::
-        :description: JSON-LD for SEO add-on adds schema.org data to your website to improve the search ranking.
+        :description: JSON-LD add-on adds schema.org data to your website to improve the search ranking.
         :keywords: JSON-LD, SEO, advanced SEO, schema.org, improve search ranking, CS-Cart, online store
 
 ===============
@@ -61,7 +61,7 @@ Managing in the admin area
 Installing the add-on
 =====================
 
-    Install the JSON-LD for SEO add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click **Upload & install**. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to **Active**.
+    Install the JSON-LD add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click **Upload & install**. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to **Active**.
 
 =====================
 Setting up the add-on
@@ -70,7 +70,7 @@ Setting up the add-on
     The information you specify in the add-on settings will appear on the organization profile of Google’s search engine results. It is important to note that it may take several months for the information to present.
 
     .. fancybox:: img/json-01.png
-        :alt: JSON-LD for SEO. organization profile
+        :alt: JSON-LD. organization profile
         :width: 481px
 
 +++++++
@@ -78,7 +78,7 @@ General
 +++++++
 
     .. fancybox:: img/json-02.png
-        :alt: JSON-LD for SEO. Settings
+        :alt: JSON-LD. Settings
 
     * **License key**—Enter the license key to activate the add-on. You will receive this key in the order confirmation email. You can also see license keys for all your purchased add-ons in your HelpDesk account. Log in to HelpDesk, and navigate to the Licenses section.
 
@@ -97,7 +97,7 @@ Products
 ++++++++
 
     .. fancybox:: img/json-ld-products-settings.png
-        :alt: JSON-LD for SEO. Products settings
+        :alt: JSON-LD. Products settings
 
     * **Brand feature**—Select **Brand** in order to display the correct product feature in search results.
 
@@ -116,7 +116,7 @@ Products
     * **Show product availability**—If enabled, the "out of stock" and "in stock" labels will be shown in the rich snippets.
 
     .. fancybox:: img/json-ld-products-settings.png
-        :alt: JSON-LD for SEO. Settings
+        :alt: JSON-LD. Settings
 
     * **Use the Brand feature as a product brand** (For Multi-Vendor stores only)—If enabled, the **Brand** feature will be used as the product brand instead of the vendor name.
 
@@ -161,18 +161,18 @@ Validating code
     1. Open any page of you store, for example, a product details page, then right click and select **Inspect**.
 
     .. fancybox:: img/json-product-page.png
-        :alt: JSON-LD for SEO. product page
+        :alt: JSON-LD. product page
 
     2. The source code will open. Press **Ctrl+F**, then type **json** in the search box and press **Enter**. Click on the triangle sign to expand the code.
 
     .. fancybox:: img/json-product-source-code.png
-        :alt: JSON-LD for SEO. product page
+        :alt: JSON-LD. product page
         :width: 465px
 
     3. Double click over the expanded part and copy the code (Ctrl+C).
 
     .. fancybox:: img/json-product-expand-code.png
-        :alt: JSON-LD for SEO. validating the code
+        :alt: JSON-LD. validating the code
         :width: 471px
 
     4. Open the `Structured Data Testing Tool <https://search.google.com/structured-data/testing-tool>`_. Switch to the **Code snippet** tab, paste your code into the tool (Ctrl+V) and click the **Run Test** button.
@@ -189,7 +189,7 @@ Validating code
     If you detect no elements, please `contact us <https://www.simtechdev.com/quote.html>`_ for help.
 
 ------------------------------------------------------------------------
-Advantages of the JSON-LD for SEO add-on over the standard functionality
+Advantages of the JSON-LD add-on over the standard functionality
 ------------------------------------------------------------------------
 
     The add-on overrides the JSON data added by the default SEO add-on, adds additional types of properties and functions. 
@@ -202,26 +202,26 @@ Advantages of the JSON-LD for SEO add-on over the standard functionality
     Here is the example of the validation of the page with the default schema markup added:
 
     .. fancybox:: img/json-04.png
-        :alt: page without JSON-LD for SEO
+        :alt: page without JSON-LD
 
     The schema is only on the product page and comprises one element: Product.
 
-    And here is the page with the JSON-LD for SEO add-on enabled:
+    And here is the page with the JSON-LD add-on enabled:
 
     .. fancybox:: img/json-06.png
-        :alt: page with JSON-LD for SEO
+        :alt: page with JSON-LD
 
     .. fancybox:: img/json-07.png
-        :alt: page with JSON-LD for SEO
+        :alt: page with JSON-LD
 
     .. fancybox:: img/NewTags.png
-        :alt: page with JSON-LD for SEO
+        :alt: page with JSON-LD
 
 
     There are 4 elements: Organization, Breadcrumbs, WebSite, and Product.
 
       .. fancybox:: img/json-05.png
-        :alt: page with JSON-LD for SEO
+        :alt: page with JSON-LD
 
 -----------------------------------
 How to fix common validation errors

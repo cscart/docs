@@ -65,7 +65,7 @@ Installing the add-on
     Install the Clone Categories add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
     .. fancybox:: img/Clone_categories_001.png
-        :alt: CS-Cart Points and cash add-on
+        :alt: CS-Cart Points and Bonuses add-on
 
 =====================
 Setting up the add-on
@@ -74,7 +74,7 @@ Setting up the add-on
     Here are available settings of the Clone Categories add-on.
 
     .. fancybox:: img/Clone_categories_002.png
-        :alt: settings of the Points and Cash add-on
+        :alt: settings of the Points and Bonuses add-on
 
     * **Clone subcategories**—If enabled, all subcategories will be cloned when cloning categories.
 

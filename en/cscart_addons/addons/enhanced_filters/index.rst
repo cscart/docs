@@ -44,7 +44,7 @@ Features
 
 		* Rating 4+ (Cs-cart 4.13.1 - Add-on Product Reviews)
 
-		* Product with video (Add-on: Youtube Video Gallery [new version])
+		* Product with video (Add-on: YouTube Gallery [new version])
 
 	* “Descriptions” displayed on the popup on hover (as a tooltip) can be added to filters
 

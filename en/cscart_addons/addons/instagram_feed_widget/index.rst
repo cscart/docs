@@ -1,5 +1,5 @@
 *********************
-Instagram Feed Widget
+Insragram Widget
 *********************
 .. raw:: html
 
@@ -15,7 +15,7 @@ Instagram Feed Widget
 Overview
 --------
 
-    **The Instagram Feed Widget** add-on embeds your Instagram video and photo feed on your marketplace storefront. You can set up updating on a schedule or enable real-time uploading of the feed.
+    **The Insragram Widget** add-on embeds your Instagram video and photo feed on your marketplace storefront. You can set up updating on a schedule or enable real-time uploading of the feed.
 
     Invite your Instagram followers to your marketplace and boost conversion rates and sales or display your latest posts from Instagram to any visitor of your e-commerce website.
 
@@ -23,13 +23,13 @@ Overview
 
     
     .. fancybox:: img/instdemo4.png
-        :alt: Instagram Feed Widget add-on
+        :alt: Insragram Widget add-on
 
     .. fancybox:: img/instdemo2.png
-        :alt: Instagram Feed Widget add-on
+        :alt: Insragram Widget add-on
 
     .. fancybox:: img/Instdemo.png
-        :alt: Instagram Feed Widget add-on
+        :alt: Insragram Widget add-on
 
     
 
@@ -133,7 +133,7 @@ Create Facebook application
     1. Go to https://developers.facebook.com and create a new application.
 
     .. fancybox:: img/inst.png
-        :alt: Instagram Feed Widget add-on
+        :alt: Insragram Widget add-on
 
     2. Select a type of an application 
 
@@ -167,7 +167,7 @@ Setting up the test app
     .. fancybox:: img/inst17.png
         :alt: Facebook Login
     
-    2. Go to Admin Pannel of your Store/Marketplace and open the Setting tab of the Instagram Feed Widget add-on
+    2. Go to Admin Pannel of your Store/Marketplace and open the Setting tab of the Insragram Widget add-on
 
     .. fancybox:: img/inst18.png
         :alt: Add-on setiing
@@ -190,7 +190,7 @@ Setting up the test app
     Open the User or Page list and select Get User Access Token.
 
     .. fancybox:: img/inst22.png
-        :alt: Instagram Feed Widget add-on
+        :alt: Insragram Widget add-on
 
     Select following parameters in the “Permissions” section:
 
@@ -211,32 +211,32 @@ Setting up the test app
         instagram_manage_messages
 
     .. fancybox:: img/inst23.png
-        :alt: Instagram Feed Widget add-on
+        :alt: Insragram Widget add-on
 
     4. Submit a me/accounts request. Data is missing now.
 
     .. fancybox:: img/inst24.png
-        :alt: Instagram Feed Widget add-on
+        :alt: Insragram Widget add-on
 
     To get the data, you need to request access.
 
     .. fancybox:: img/inst25.png
-        :alt: Instagram Feed Widget add-on
+        :alt: Insragram Widget add-on
 
     .. fancybox:: img/inst26.png
-        :alt: Instagram Feed Widget add-on
+        :alt: Insragram Widget add-on
 
     5. Once you get the access, the page data is displayed in the space provided.
 
     .. fancybox:: img/instagram_test_app5.png
-        :alt: Instagram Feed Widget add-on
+        :alt: Insragram Widget add-on
 
     Go to Settings -> Basic and copy App ID and App Secret from the page. Now you are ready to proceed to the installation of the CS-Cart add-on.
         
     .. note::
-        You could finish setting up of Facebook app on this step and go to installation and setting up of the Instagram Feed Widget add-on step `Managing in the admin panel`_. In this case, Instagram Feed Widget add-on will work via the test Facebook app in your store. The test Facebook app would be enough if you are going to use only the main Facebook account. 
+        You could finish setting up of Facebook app on this step and go to installation and setting up of the Insragram Widget add-on step `Managing in the admin panel`_. In this case, Insragram Widget add-on will work via the test Facebook app in your store. The test Facebook app would be enough if you are going to use only the main Facebook account. 
        
-        Currently, Instagram Feed Widget add-on works correctly with test Facebook app and you could use it on your own responsibility without getting reviews for the main app.
+        Currently, Insragram Widget add-on works correctly with test Facebook app and you could use it on your own responsibility without getting reviews for the main app.
         Otherwise, you could continue setting Facebook on the step `App review on Facebook`_. 
 
 ---------------------------
@@ -247,20 +247,20 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the Instagram Feed Widget add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the Insragram Widget add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
     .. fancybox:: img/instagram_installing.jpg
-        :alt: Instagram Feed Widget add-on
+        :alt: Insragram Widget add-on
 
     
 =====================
 Setting up the add-on
 =====================
 
-    Here are available settings of the Instagram Feed Widget add-on.
+    Here are available settings of the Insragram Widget add-on.
 
     .. fancybox:: img/instagram_settings.jpg
-        :alt: Instagram Feed Widget add-on
+        :alt: Insragram Widget add-on
 
     * **License key**—Enter the license key to activate the add-on. You will receive this key in the order confirmation email. You can also see license keys for all your purchased add-ons in your HelpDesk account. 
 
@@ -272,48 +272,48 @@ Setting up the add-on
 
     * **Facebook Page**—Choose Instagram account that will be shown in the block.
 
-    Follow steps below to configure the Instagram Feed Widget add-on:
+    Follow steps below to configure the Insragram Widget add-on:
 
     1. Fill in App ID and App Secret fields.
 
     2. Press *Save* button in the right upper corner. *Log in with Facebook* button will be displayed.
 
     .. fancybox:: img/instagram_settings1.jpg
-        :alt: Instagram Feed Widget add-on
+        :alt: Insragram Widget add-on
 
     3. Press *Log in with Facebook* button and fill in your data for Facebook authorization.
 
     .. fancybox:: img/instagram_settings2.jpg
-        :alt: Instagram Feed Widget add-on
+        :alt: Insragram Widget add-on
    
     4. After logging with Facebook, go back to add-on settings, choose the Instagram page in *Facebook Page* field and press *Save and get access token* button.
 
     .. fancybox:: img/instagram_settings3.jpg
-        :alt: Instagram Feed Widget add-on
+        :alt: Insragram Widget add-on
 
     *Access token* field will be filled automatically.
 
     .. fancybox:: img/instagram_settings4.jpg
-        :alt: Instagram Feed Widget add-on
+        :alt: Insragram Widget add-on
 
-    Instagram Feed Widget add-on configuring is finished. The next step is adding a block to a layout.
+    Insragram Widget add-on configuring is finished. The next step is adding a block to a layout.
 
     5. Go to **Design > Layouts**.
 
     6. Add a new block. Select the **Instagram block**.
 
     .. fancybox:: img/instagram_settings5.jpg
-        :alt: Instagram Feed Widget add-on
+        :alt: Insragram Widget add-on
 
     7. Name the block and select the template.
 
     .. fancybox:: img/instagram_settings6.jpg
-        :alt: Instagram Feed Widget add-on
+        :alt: Insragram Widget add-on
 
     8. Configure settings on the **Content** and **Block settings** tabs according to your needs and press **Create**.
 
     .. fancybox:: img/instagram_settings7.jpg
-        :alt: Instagram Feed Widget add-on
+        :alt: Insragram Widget add-on
 
 ----------------------
 App review on Facebook

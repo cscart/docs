@@ -1,5 +1,5 @@
 **********************
-Google Remarketing Tag
+Remarketing Tag
 **********************
 
 .. raw:: html
@@ -18,11 +18,11 @@ Google Remarketing Tag
 Overview
 --------
 
-    `Google Remarketing Tag <https://www.simtechdev.com/addons/marketing/google-remarketing.html>`_ is an instrument that allows you to add the remarketing tag to your website to show ads to customers who visited your online store. The tag is a short snippet of code that adds your website visitors to remarketing lists. You can then target these lists with your ads.
+    `Remarketing Tag <https://www.simtechdev.com/addons/marketing/google-remarketing.html>`_ is an instrument that allows you to add the remarketing tag to your website to show ads to customers who visited your online store. The tag is a short snippet of code that adds your website visitors to remarketing lists. You can then target these lists with your ads.
 
-    The **Google Remarketing Tag** add-on integrates Google Remarketing Tag into your website so that you won’t have to add the remarketing tag to each page manually. It saves your time and reduces errors. All you need to do is just follow the simple instructions below.
+    The **Remarketing Tag** add-on integrates Remarketing Tag into your website so that you won’t have to add the remarketing tag to each page manually. It saves your time and reduces errors. All you need to do is just follow the simple instructions below.
 
-    To learn more about Google Remarketing Tag, watch this video:
+    To learn more about Remarketing Tag, watch this video:
 
     .. raw:: html
 
@@ -39,7 +39,7 @@ Compatibility
 
 .. note::
     
-    The Google Remarketing Tag add-on requires the **Google Analytics**, **Google Export**, **Data Feeds** add-ons to be installed. 
+    The Remarketing Tag add-on requires the **Google Analytics**, **Google Export**, **Data Feeds** add-ons to be installed. 
 
 
 =======
@@ -52,7 +52,7 @@ Support
 Demo
 ====
 
-    Check out the Google Remarketing Tag add-on in our |demo_store|.
+    Check out the Remarketing Tag add-on in our |demo_store|.
 
 .. |demo_store| raw:: html
 
@@ -70,9 +70,9 @@ Managing in the Admin Panel
 Installing the Add-on
 =====================
 
-    Install the Google Remarketing Tag add-on on the add-ons list page (**“Add-ons” → ”Manage add-ons”**).  Click the + button in the top right corner, select an archive, and click **Upload & Install**. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the Remarketing Tag add-on on the add-ons list page (**“Add-ons” → ”Manage add-ons”**).  Click the + button in the top right corner, select an archive, and click **Upload & Install**. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
-.. note:: For correct operation of the Google Remarketing Tag add-on, make sure that the **Google Analytics**, **Google Export**, **Data Feeds** add-ons are set to Active on the add-ons list page. 
+.. note:: For correct operation of the Remarketing Tag add-on, make sure that the **Google Analytics**, **Google Export**, **Data Feeds** add-ons are set to Active on the add-ons list page. 
 
 =======================================
 Inserting a Hook for Versions 4.0-4.3.6
@@ -130,7 +130,7 @@ Setting up the Add-on
 Parameters Added by the Add-on
 ==============================
 
-    The Google Remarketing Tag add-on adds necessary parameters to such pages as home, category, product, cart, search results, purchase, and others.
+    The Remarketing Tag add-on adds necessary parameters to such pages as home, category, product, cart, search results, purchase, and others.
 
     The **Retail** business type adds the following parameters:
 
@@ -159,7 +159,7 @@ Parameters Added by the Add-on
 Google Merchant Center
 ----------------------
 
-    In order to use the Google Remarketing Tag add-on, you need a Google Merchant Center account. The product data from your store will be stored there as feeds. This feed will be pulled from your Merchant Center to be used in dynamic remarketing ads.
+    In order to use the Remarketing Tag add-on, you need a Google Merchant Center account. The product data from your store will be stored there as feeds. This feed will be pulled from your Merchant Center to be used in dynamic remarketing ads.
 
 ===================
 Creating an Account
@@ -246,7 +246,7 @@ Getting Conversion ID
     .. fancybox:: img/Google-remarketing-tag_15.png
         :alt: Remarketing tag. Track code ID
 
-    Once you have the track code ID, you need to go to the admin panel of your store and enter this code in the add-on settings. Go to the **Add-ons list** page, find the Google Remarketing Tag add-on and click it. Paste the ID number into the **Track code** field.
+    Once you have the track code ID, you need to go to the admin panel of your store and enter this code in the add-on settings. Go to the **Add-ons list** page, find the Remarketing Tag add-on and click it. Paste the ID number into the **Track code** field.
 
     .. fancybox:: img/Google-remarketing-tag_1.png
         :alt: add-on settings

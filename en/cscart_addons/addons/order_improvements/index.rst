@@ -1,5 +1,5 @@
 ******************
-Order Improvements
+Advanced Orders
 ******************
 
 .. raw:: html
@@ -18,27 +18,27 @@ Order Improvements
 Overview
 --------
 
-    **The Order Improvements add-on** provides you with new useful features:
+    **The Advanced Orders add-on** provides you with new useful features:
 
     - add an attachment to the order
 
     .. fancybox:: img/Order_Improvements_Selection_008.png
-        :alt: CS-Cart Order Improvements add-on
+        :alt: CS-Cart Advanced Orders add-on
 
     - add a product thumbnail to the order details page
 
     .. fancybox:: img/Order_Improvements_Screenshot.jpeg
-        :alt: CS-Cart Order Improvements add-on
+        :alt: CS-Cart Advanced Orders add-on
 
     - allow your customers to download files attached to the order
 
     .. fancybox:: img/Order_Improvements_Selection_006.png
-        :alt: CS-Cart Order Improvements add-on
+        :alt: CS-Cart Advanced Orders add-on
 
     - add a product image to the order invoice
 
     .. fancybox:: img/Order_Improvements_Selection_007.png
-        :alt: CS-Cart Order Improvements add-on
+        :alt: CS-Cart Advanced Orders add-on
 
     - send attachments to customers by email when the order status is changed
 
@@ -64,7 +64,7 @@ Support
 Demo
 ====
 
-    Check out the Order Improvements add-on in our |demo_store|.
+    Check out the Advanced Orders add-on in our |demo_store|.
 
 .. |demo_store| raw:: html
 
@@ -82,14 +82,14 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the “Order Improvements” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the “Advanced Orders” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
     .. fancybox:: img/Order_Improvements_Selection_001.png
         :alt: CS-Cart Shipping Estimation add-on
 
     .. important::
 
-        Make sure the **Attachments** add-on is set to Active in your store. Otherwise the Order Improvements add-on will not perform correctly.
+        Make sure the **Attachments** add-on is set to Active in your store. Otherwise the Advanced Orders add-on will not perform correctly.
 
         .. fancybox:: img/Order_Improvements_Selection_011.png
             :alt: Attachments add-on is active
@@ -98,10 +98,10 @@ Installing the add-on
 Available settings
 ==================
 
-    Here are available settings of the Order Improvements add-on:
+    Here are available settings of the Advanced Orders add-on:
 
     .. fancybox:: img/Order_Improvements_Selection_009.png
-        :alt: setting of the Order Improvements add-on
+        :alt: setting of the Advanced Orders add-on
 
     * **The width of the product icon on the order page**—Specify the width of the product icon in pixels for the order details page.
 
@@ -182,7 +182,7 @@ Adding attachments to the order
 Sending an attachment by email
 ==============================
 
-    The Order Improvements add-on also allows you to send attachments and invoices to customers by email automatically when the order status is changed to a specific one.
+    The Advanced Orders add-on also allows you to send attachments and invoices to customers by email automatically when the order status is changed to a specific one.
 
     First, navigate to **Administration - Order statuses** and select a desired status.
 

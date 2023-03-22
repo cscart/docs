@@ -1,5 +1,5 @@
 *********************
-YouTube Video Gallery
+YouTube Gallery
 *********************
 
 .. raw:: html
@@ -18,7 +18,7 @@ YouTube Video Gallery
 Overview
 --------
 
-    `The YouTube Video Gallery add-on <https://www.simtechdev.com/addons/customer-experience/youtube.html>`_ is a simple-to-use extension that makes it easy to add YouTube videos to your CS-Cart store, or create a video gallery on the category page. 
+    `The YouTube Gallery add-on <https://www.simtechdev.com/addons/customer-experience/youtube.html>`_ is a simple-to-use extension that makes it easy to add YouTube videos to your CS-Cart store, or create a video gallery on the category page. 
     Make description of your products more informative and attract more customers to your store.
 
     You can now add not only pictures of your products, but also a quick video showing your product in movement, being worn, or just to scale. Whatever your product does or is capable of, let your potential customers see it in better detail.
@@ -46,19 +46,19 @@ Overview
     The add-on also creates a YouTube icon on product thumbnails on the products list page. When hovering over a product, the icon will be highlighted red, inviting the customer to play the video:
 
     .. fancybox:: img/YouTube_Selection_009.png
-        :alt: YouTube video gallery on category page
+        :alt: YouTube Gallery on category page
 
-    You can add a video to any page you like, for instance, the registration page to explain how the Referral program works in your store and motivate your customers to register (see `Affiliate and Referral <https://www.simtechdev.com/docs/addons/affiliate/index.html>`_):
+    You can add a video to any page you like, for instance, the registration page to explain how the Referral program works in your store and motivate your customers to register (see `Affiliate PRO <https://www.simtechdev.com/docs/addons/affiliate/index.html>`_):
 
     .. fancybox:: img/YouTube_Selection_049.png
-        :alt: YouTube video gallery on category page
+        :alt: YouTube Gallery on category page
 
     With the YouTube add-on, you can create a gallery from YouTube videos on the category page. 
 
     .. fancybox:: img/Category_page.jpg
-        :alt: YouTube video gallery on category page
+        :alt: YouTube Gallery on category page
 
-    The YouTube Video Gallery add-on adds a new Video gallery page to your store. It will keep all videos added to products in one place.
+    The YouTube Gallery add-on adds a new Video gallery page to your store. It will keep all videos added to products in one place.
 
     .. fancybox:: img/YouTube_Selection_025.png
         :alt: Video gallery page
@@ -89,7 +89,7 @@ Support
 Demo
 ====
 
-    Check out the YouTube Video Gallery add-on in our |demo_store|.
+    Check out the YouTube Gallery add-on in our |demo_store|.
 
 .. |demo_store| raw:: html
 

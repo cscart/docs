@@ -1,5 +1,5 @@
 **********************
-Customer Account Merge
+Account Merge
 **********************
 
 .. raw:: html
@@ -18,7 +18,7 @@ Customer Account Merge
 Overview
 --------
 
-    Occasionally, you may find duplicate customer accounts in your customer list. Fortunately, the `Customer Account Merge <https://www.simtechdev.com/addons/site-management/customer-account-merge.html>`_ add-on makes it easy to identify and then merge these duplicate customer accounts. It combines all orders, reward points, assigned user groups of two customers into one account and then deletes the other.
+    Occasionally, you may find duplicate customer accounts in your customer list. Fortunately, the `Account Merge <https://www.simtechdev.com/addons/site-management/customer-account-merge.html>`_ add-on makes it easy to identify and then merge these duplicate customer accounts. It combines all orders, reward points, assigned user groups of two customers into one account and then deletes the other.
 
     Merging accounts is helpful in the following cases:
 
@@ -71,10 +71,10 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the Customer Account Merge add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the Account Merge add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
     .. fancybox:: img/Customer-account-merge-installation.png
-        :alt: Customer Account Merge add-on for CS-Cart
+        :alt: Account Merge add-on for CS-Cart
 
 =================
 Merging customers

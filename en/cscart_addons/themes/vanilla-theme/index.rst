@@ -20,7 +20,7 @@ Overview
 
     **Vanilla** is a highly intuitive, seamlessly sleek and very aesthetically accomplished theme for CS-Cart and Multi-Vendor stores.
 
-    It comes with many advanced theme customization options that make customization easier than ever. You can add a full-width banner, advanced social buttons, hamburger menu, and promotion bar.
+    It comes with many advanced theme customization options that make customization easier than ever. You can add a Pro Banner, Social Buttons PRO, hamburger menu, and promotion bar.
 
     .. fancybox:: img/vanilla-theme-homepage.png
         :alt: home page. vanilla theme
@@ -46,8 +46,8 @@ Overview
 
     The Vanilla Theme comes with 2 add-ons to enhance your customer experience:
 
-    - Full-Width Banner
-    - Advanced Social Buttons 
+    - Pro Banner
+    - Social Buttons PRO 
 
 =============
 Compatibility
@@ -285,19 +285,19 @@ Adding a page title
         :alt: vanilla theme promobar
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-`Full-Width Banner <https://www.simtechdev.com/docs/addons/full-width_banner/index.html>`_
+`Pro Banner <https://www.simtechdev.com/docs/addons/full-width_banner/index.html>`_
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
    Allows to show an eye-catching wide banner on any page of your store.
 
     .. fancybox:: img/vanilla-full-width-banner.png
-        :alt: Full-Width Banner
+        :alt: Pro Banner
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-`Advanced Social Buttons <https://www.simtechdev.com/docs/addons/advanced_social_buttons/index.html>`_
+`Social Buttons PRO <https://www.simtechdev.com/docs/addons/advanced_social_buttons/index.html>`_
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     Lets you add social buttons to the product details page.
 
     .. fancybox:: img/advanced-social-buttons-vanilla-theme.png
-        :alt: Full-Width Banner
+        :alt: Pro Banner

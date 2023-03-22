@@ -1,5 +1,5 @@
 ******************
-Google AMP for SEO
+Google AMP
 ******************
 
 .. raw:: html
@@ -18,7 +18,7 @@ Google AMP for SEO
 Overview
 --------
 
-    The **Google AMP for SEO** add-on allows to create mobile optimized content for the product details pages of your store.
+    The **Google AMP** add-on allows to create mobile optimized content for the product details pages of your store.
 
     **AMP** stands for **Accelerated Mobile Pages**, a Google project, which aims to build web pages that are lightweight and speedy to load, particularly on mobile devices.
 
@@ -35,7 +35,7 @@ Overview
     Sites that use AMP will be marked with a little lightning ball in search results:
 
     .. fancybox:: img/amp-stamp.png
-        :alt: Google AMP for SEO
+        :alt: Google AMP
         :width: 433px
 
     The video below explains AMP:
@@ -93,7 +93,7 @@ Support
 Demo store
 ==========
 
-    Check out the Google AMP for SEO add-on in our |demo_store|.
+    Check out the Google AMP add-on in our |demo_store|.
 
 .. |demo_store| raw:: html
 
@@ -111,10 +111,10 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the Google AMP for SEO add-on on the add-ons list page (Add-ons → Manage add-ons). Click the **+** button in the top right corner, select an archive and click **Upload & Install**. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to **Active**.
+    Install the Google AMP add-on on the add-ons list page (Add-ons → Manage add-ons). Click the **+** button in the top right corner, select an archive and click **Upload & Install**. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to **Active**.
 
     .. fancybox:: img/amp-installed.png
-        :alt: Google AMP for SEO
+        :alt: Google AMP
 
     Once the add-on is installed and activated, AMP HTML is automatically applied to all products in your store. No setup is required.
 
@@ -129,12 +129,12 @@ Validating AMP pages
     2. Copy (Ctrl+V) the URL of the page. Make sure it contains the **amp** parameter.
 
     .. fancybox:: img/amp_link.png
-        :alt: Google AMP for SEO
+        :alt: Google AMP
 
     3. Open the `AMP Test <https://search.google.com/test/amp>`_ or use the browser extension. Paste the URL of the page (Ctrl+V) in the **URL** field and click the **Test URL** button.
 
     .. fancybox:: img/validator.png
-        :alt: Google AMP for SEO
+        :alt: Google AMP
 
     4. Observe the result of validation test.
 

@@ -50,7 +50,7 @@ Overview
     The Asia Front Pack comes with 9 add-ons to enhance your customer experience:
 
     - Smart Mega Menu
-    - Back to Top Button
+    - Back to Top
     - Blocks Animation
     - Hamburger Menu
     - Product Labels
@@ -109,13 +109,13 @@ Installing and setting up the add-ons
         :alt: Smart Mega Menu
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-`Back to Top Button <https://www.simtechdev.com/docs/addons/back_to_top_button/index.html>`_
+`Back to Top <https://www.simtechdev.com/docs/addons/back_to_top_button/index.html>`_
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     Creates a *Back to Top* button to your website.
 
     .. fancybox:: img/asia-back-to-top-button.png
-        :alt: Back to Top Button
+        :alt: Back to Top
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 `Blocks Animation <https://www.simtechdev.com/docs/addons/blocks_animation/index.html>`_

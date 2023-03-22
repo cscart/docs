@@ -1,5 +1,5 @@
 ***********************************
-Google Analytics Enhanced Ecommerce
+GA Pro
 ***********************************
 
 .. raw:: html
@@ -18,13 +18,13 @@ Google Analytics Enhanced Ecommerce
 Overview
 --------
 
-    **Google Analytics Enhanced Ecommerce** is a professional solution for CS-Cart store owners which allows tracking some additional information about your customers, like when customers added items to cart, started the checkout process, completed a purchase, and many more. Besides, everything in reports is customizable, it meets your specific analysis needs. You can find what is important for your business.
+    **GA Pro** is a professional solution for CS-Cart store owners which allows tracking some additional information about your customers, like when customers added items to cart, started the checkout process, completed a purchase, and many more. Besides, everything in reports is customizable, it meets your specific analysis needs. You can find what is important for your business.
 
     By implementing Enhanced Ecommerce, you get more data and more insight, and that will give you more opportunity for improvements. 
 
-    Implementing Enhanced Ecommerce is quite difficult and risky, especially on the production site with important data. It will definitely require technical skills. With our **Google Analytics Enhanced Ecommerce add-on**, you won't need to worry about that. All you need to do is simply install the add-on, get a Tracking id from Google Analytics and enjoy using all the useful features of Enhanced Ecommerce. 
+    Implementing Enhanced Ecommerce is quite difficult and risky, especially on the production site with important data. It will definitely require technical skills. With our **GA Pro add-on**, you won't need to worry about that. All you need to do is simply install the add-on, get a Tracking id from Google Analytics and enjoy using all the useful features of Enhanced Ecommerce. 
 
-    Check out an overview of Google Analytics Enhanced Ecommerce:
+    Check out an overview of GA Pro:
 
     .. raw:: html
 
@@ -74,7 +74,7 @@ Compatibility
 
 .. note::
     
-    The Google Analytics Enhanced Ecommerce add-on is not compatible with the default `Google Analytics add-on <https://docs.cs-cart.com/latest/user_guide/addons/google_analytics/index.html>`_ and retailCRM [beta] ad-on.
+    The GA Pro add-on is not compatible with the default `Google Analytics add-on <https://docs.cs-cart.com/latest/user_guide/addons/google_analytics/index.html>`_ and retailCRM [beta] ad-on.
 
 
 
@@ -88,7 +88,7 @@ Support
 Demo
 ====
 
-    Check out the Google Analytics Enhanced Ecommerce add-on in our |demo_store|.
+    Check out the GA Pro add-on in our |demo_store|.
 
 .. |demo_store| raw:: html
 
@@ -106,7 +106,7 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the “Google Analytics Enhanced Ecommerce” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the “GA Pro” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
 ==================
 Available settings

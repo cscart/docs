@@ -1,5 +1,5 @@
 ******************
-MailChimp Advanced
+MailChimp Light
 ******************
 
 .. raw:: html
@@ -24,7 +24,7 @@ Overview
     .. fancybox:: img/cover-1-Mailchimp.png
         :alt: MailChimp add-on for CS-Cart
 
-    Our **MailChimp Advanced add-on** easily connects your shopping cart to your MailChimp account.
+    Our **MailChimp Light add-on** easily connects your shopping cart to your MailChimp account.
 
     Besides, `MailChimp is free <https://mailchimp.com/pricing/>`_ if you have 2000 subscribers or less on your mailing list. This is great news for business owners who are fairly new to the industry and have limited funds. However, its paid plans offer plenty of helpful features.
 
@@ -77,7 +77,7 @@ Support
 Demo
 ====
 
-    Check out the MailChimp Advanced add-on in our |demo_store|.
+    Check out the MailChimp Light add-on in our |demo_store|.
 
 .. |demo_store| raw:: html
 
@@ -157,7 +157,7 @@ Creating lists
 Managing in the admin panel
 ---------------------------
 
-    This section walks you through the settings of the MailChimp Advanced add-on. For a quick start, all you'll need to do is:
+    This section walks you through the settings of the MailChimp Light add-on. For a quick start, all you'll need to do is:
 
     1. `Install the add-on <https://www.simtechdev.com/docs/addons/mailchimp_advanced/index.html#installing-the-add-on>`_.
 
@@ -171,24 +171,24 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the MailChimp Advanced add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & Install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the MailChimp Light add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & Install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
     .. fancybox:: img/MailChimp_Advanced_001.png
-        :alt: MailChimp Advanced add-on
+        :alt: MailChimp Light add-on
 
 =====================
 Setting up the add-on
 =====================
 
-    Below you will find available settings of the MailChimp Advanced add-on.
+    Below you will find available settings of the MailChimp Light add-on.
 
     .. fancybox:: img/settings.png
-        :alt: settings of the MailChimp Advanced add-on
+        :alt: settings of the MailChimp Light add-on
 
     * **License key**—Enter the license key to activate the add-on. You will receive this key in the order confirmation email. You can also see license keys for all your purchased add-ons in your HelpDesk account. Log in to `HelpDesk <https://www.simtechdev.com/helpdesk>`_, and navigate to the **Licenses** section:
 
     .. fancybox:: img/licenses.png
-        :alt: Sales & Social Proof add-on
+        :alt: Social Proof add-on
 
     * **API key**—Enter the API key from your MailChimp account (see more details in the `Getting API key`_ section).
 
@@ -231,7 +231,7 @@ Sign-up pop-up
     A pop-up with a fixed position on a page (Left, Right, or Center). 
 
     .. fancybox:: img/MailChimp_Advanced_012.png
-        :alt: settings of the MailChimp Advanced add-on
+        :alt: settings of the MailChimp Light add-on
 
     To create it:
 
@@ -282,7 +282,7 @@ Sign-up form
     Can be placed as a block anywhere on a page.
 
     .. fancybox:: img/MailChimp_Advanced_011.png
-        :alt: settings of the MailChimp Advanced add-on
+        :alt: settings of the MailChimp Light add-on
 
     To create it:
 
@@ -764,7 +764,7 @@ Step 3. Adding users to the mailing list
 Display Subscription Checkbox
 =============================
 
-    Display of subscription checkbox on a certain storefronts of MultiVendor Ultimate has been added to MailChimp Advanced add-on capability
+    Display of subscription checkbox on a certain storefronts of MultiVendor Ultimate has been added to MailChimp Light add-on capability
 
     In order to setup such display perform the following settings:
 
@@ -777,7 +777,7 @@ Display Subscription Checkbox
     .. fancybox:: img/MailingList1.png
      :alt: Mailing list setting
 
-    4. Open the MailChimp Advanced add-on settings
+    4. Open the MailChimp Light add-on settings
 
     5. Select the storefronts to display the checkboxes on
 

@@ -1,5 +1,5 @@
 *************************
-IP Geolocation by MaxMind
+IP Geolocation
 *************************
 
 .. raw:: html
@@ -22,7 +22,7 @@ IP Geolocation by MaxMind
 Overview
 --------
 
-    The **IP Geolocation by MaxMind** add-on is a professional solution that adds the ability to determine the user's location by IP address using the `MaxMind <https://www.maxmind.com>`_ databases. 
+    The **IP Geolocation** add-on is a professional solution that adds the ability to determine the user's location by IP address using the `MaxMind <https://www.maxmind.com>`_ databases. 
 
     MaxMind offers free and paid databases with the most up-to-date and accurate data available. 
 
@@ -34,7 +34,7 @@ Overview
 
     3. Extended data for multiple languages (country, region, city).
 
-    IP Geolocation by MaxMind adds the following functionality:
+    IP Geolocation adds the following functionality:
 
     The customer's city will be determined and displayed in the header of the storefront.
 
@@ -91,7 +91,7 @@ Support
 Demo
 ====
 
-    Check out the IP Geolocation by MaxMind add-on in our |demo_store|.
+    Check out the IP Geolocation add-on in our |demo_store|.
 
 .. |demo_store| raw:: html
 
@@ -109,13 +109,13 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the “IP Geolocation by MaxMind” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the “IP Geolocation” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
 ==================
 Available settings
 ==================
 
-    The settings of the “IP Geolocation by MaxMind” add-on are divided in two sections:
+    The settings of the “IP Geolocation” add-on are divided in two sections:
 
     * **General**
 
@@ -225,7 +225,7 @@ Adding a block for the determined city
 Setting up currencies
 =====================
 
-    With the IP Geolocation by MaxMind add-on, the store currency will be automatically set to the customer's currency depending on their country.
+    With the IP Geolocation add-on, the store currency will be automatically set to the customer's currency depending on their country.
 
     .. fancybox:: img/Maxmind_Selection_033.png
         :alt: setting customer's currency
@@ -247,7 +247,7 @@ Setting up currencies
 Setting up languages
 ====================
 
-    The IP Geolocation by MaxMind add-on allows to automatically determine the customer's language in the store depending on their country.
+    The IP Geolocation add-on allows to automatically determine the customer's language in the store depending on their country.
 
     .. fancybox:: img/Maxmind_Selection_036.png
         :alt: determine the customer's language

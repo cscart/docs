@@ -1,5 +1,5 @@
 ********************************
-Two-Factor Authentication by Duo 
+Auth by Duo 
 ********************************
 
 .. raw:: html
@@ -20,7 +20,7 @@ Overview
 
     Keep your accounts safe with two-factor authentication by `Duo <https://duo.com/>`_.
 
-    Our `Two-Factor Authentication by Duo <https://www.simtechdev.com/addons/site-management/two-factor-authentication-by-duo.html>`_ add-on integrates the service with your CS-Cart store to protect your users against credential theft attacks.
+    Our `Auth by Duo <https://www.simtechdev.com/addons/site-management/two-factor-authentication-by-duo.html>`_ add-on integrates the service with your CS-Cart store to protect your users against credential theft attacks.
 
 ==================================
 What is two-factor authentication?
@@ -146,7 +146,7 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the “Two-Factor Authentication by Duo” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & Install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the “Auth by Duo” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & Install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
     .. fancybox:: img/DUO_Auth_001.png
         :alt: Two-factor authentication add-on
@@ -155,7 +155,7 @@ Installing the add-on
 Setting up the add-on
 =====================
 
-    In the settings of the “Two-Factor Authentication by Duo” add-on, enter the details of your Duo account (see the `Getting integration key, secret key, and API hostname`_ section):
+    In the settings of the “Auth by Duo” add-on, enter the details of your Duo account (see the `Getting integration key, secret key, and API hostname`_ section):
 
     .. fancybox:: img/DUO_Auth_002.png
         :alt: settings of the Two-factor authentication add-on

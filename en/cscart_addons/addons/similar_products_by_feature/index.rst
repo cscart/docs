@@ -1,5 +1,5 @@
 ***************************
-Similar Products by Feature
+Similar by Feature
 ***************************
 
 .. raw:: html
@@ -18,7 +18,7 @@ Similar Products by Feature
 Overview
 --------
 
-    The Similar Products by Feature add-on provides you with new abilities such as:
+    The Similar by Feature add-on provides you with new abilities such as:
 
     - display products similar to the main one on the product details page
     - automatically link products to each other by specifying matching features
@@ -26,7 +26,7 @@ Overview
     - limit the maximum number of products shown per page
 
     .. fancybox:: img/screenshot.jpeg
-        :alt: Similar Products by feature
+        :alt: Similar by Feature
         :width: 650px
 
     To learn how to create a block for similar products, add features for products, follow quick and easy steps below.
@@ -50,7 +50,7 @@ Support
 Demo
 ====
 
-    Check out the Similar Products by Feature add-on in our |demo_store|.
+    Check out the Similar by Feature add-on in our |demo_store|.
 
 .. |demo_store| raw:: html
 
@@ -68,10 +68,10 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the “Similar Products by Feature” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the “Similar by Feature” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
     .. fancybox:: img/Selection_01.png
-        :alt: Similar Products by feature add-on
+        :alt: Similar by Feature add-on
         :width: 650px
 
 ================
@@ -128,7 +128,7 @@ Setting up features
 
     Done!
 
-    Now you can go to the storefront, view a product details page and see the added block of similar products by feature.
+    Now you can go to the storefront, view a product details page and see the added block of Similar by Feature.
 
     .. fancybox:: img/screenshot_02.jpeg
         :alt: similar product by feature

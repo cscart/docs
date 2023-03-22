@@ -1,5 +1,5 @@
 *******************
-Order and User Tags
+Extra Tags
 *******************
 
 .. raw:: html
@@ -18,9 +18,9 @@ Order and User Tags
 Overview
 --------
 
-    Assign tags to customers and their orders with the `Order and User Tags <https://www.simtechdev.com/addons/site-management/order-and-customer-tags.html>`_ add-on. Tags can be used to easily categorize or add notes to a customer or order, as well as filter them quickly in the admin panel.
+    Assign tags to customers and their orders with the `Extra Tags <https://www.simtechdev.com/addons/site-management/order-and-customer-tags.html>`_ add-on. Tags can be used to easily categorize or add notes to a customer or order, as well as filter them quickly in the admin panel.
 
-    The **Order and User Tags** add-on provides you with new abilities such as:
+    The **Extra Tags** add-on provides you with new abilities such as:
 
     - add tags to orders
 
@@ -70,10 +70,10 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the “Order and User Tags” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the “Extra Tags” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
     .. fancybox:: img/Order_and_user_tags_001.png
-        :alt: Similar Products by Tag add-on
+        :alt: Similar by Tag add-on
 
 =====================
 Adding tags to orders

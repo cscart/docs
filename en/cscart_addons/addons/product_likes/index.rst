@@ -30,7 +30,7 @@ Overview
     .. fancybox:: img/my-likes-page.png
         :alt: My likes page
 
-    If you use the `User Profile Page add-on <https://www.simtechdev.com/addons/customer-experience/user-profile-page.html>`_, you can show the products the user likes on the profile page. Clicking **View all** link will open the page with all liked products.
+    If you use the `Profile Page add-on <https://www.simtechdev.com/addons/customer-experience/user-profile-page.html>`_, you can show the products the user likes on the profile page. Clicking **View all** link will open the page with all liked products.
 
     .. fancybox:: img/user-profile-page.png
         :alt: My profile page

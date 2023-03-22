@@ -1,5 +1,5 @@
 *****************
-Full-Width Banner
+Pro Banner
 *****************
 
 .. raw:: html
@@ -18,17 +18,17 @@ Full-Width Banner
 Overview
 --------
 
-    Make your brand stand out with our **Full-Width Banner** add-on. It allows you to show an eye-catching wide banner on any page of your store. It's an extra enhancement to your nice-looking website. It will definitely help you attract more customers and increase the click-through rates of your banners.
+    Make your brand stand out with our **Pro Banner** add-on. It allows you to show an eye-catching wide banner on any page of your store. It's an extra enhancement to your nice-looking website. It will definitely help you attract more customers and increase the click-through rates of your banners.
 
     Here’s how it looks on the **homepage**:
 
     .. fancybox:: img/Full-width_banner_001.jpg
-        :alt: Full-Width Banner. Homepage
+        :alt: Pro Banner. Homepage
         
     and a **category page**:
 
     .. fancybox:: img/Full-width_banner_010.jpg
-        :alt: Full-Width Banner. Category page
+        :alt: Pro Banner. Category page
 
 ========
 Features
@@ -63,7 +63,7 @@ Support
 Demo
 ====
 
-    Check out the Full-Width Banner add-on in our |demo_store|.
+    Check out the Pro Banner add-on in our |demo_store|.
 
     .. |demo_store| raw:: html
 
@@ -81,7 +81,7 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the **Full-Width Banner** add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click **Upload & install**. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to **Active**.
+    Install the **Pro Banner** add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click **Upload & install**. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to **Active**.
 
 
 =====================
@@ -89,13 +89,13 @@ Setting up the add-on
 =====================
 
     .. fancybox:: img/full-width-banner-settings.png
-        :alt: Full-Width Banner add-on for CS-Cart
+        :alt: Pro Banner add-on for CS-Cart
 
     * **License key**—Enter the license key to activate the add-on. You will receive this key in the order confirmation email. You can also see license keys for all your purchased add-ons in your HelpDesk account. Log in to `HelpDesk <https://www.simtechdev.com/helpdesk>`_, and navigate to the **Licenses** section:
 
 
 ============================
-Creating a full-width banner
+Creating a Pro Banner
 ============================
 
 +++++++++++++++++++++++
@@ -156,14 +156,14 @@ Step 1. Create a banner
 Step 2. Add the banner to the page
 ++++++++++++++++++++++++++++++++++
 
-    Follow the step-by-step guide below to add a full-width banner to any page in your store.
+    Follow the step-by-step guide below to add a Pro Banner to any page in your store.
 
     .. fancybox:: img/Full-width_banner_010.jpg
-        :alt: Full-Width Banner. Сategory page
+        :alt: Pro Banner. Сategory page
 
     1. Navigate to **Design > Layouts**.
 
-    2. Switch to the location where you want to show the banner and add a new **Full-width banner** block.
+    2. Switch to the location where you want to show the banner and add a new **Pro Banner** block.
 
     .. fancybox:: img/Full-width_banner_004.png
         :alt: adding banner
@@ -188,4 +188,4 @@ Step 2. Add the banner to the page
     7. Check out the banner on the storefront.
 
     .. fancybox:: img/Full-width_banner_010.jpg
-        :alt: Full-Width Banner. Сategory page
+        :alt: Pro Banner. Сategory page

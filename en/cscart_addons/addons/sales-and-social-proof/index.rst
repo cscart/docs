@@ -1,5 +1,5 @@
 ********************
-Sales & Social Proof
+Social Proof
 ********************
 
 .. raw:: html
@@ -18,7 +18,7 @@ Sales & Social Proof
 Overview
 --------
 
-    The **Sales & Social Proof** add-on is a useful tool for your online store that will help you boost conversions and drive sales.
+    The **Social Proof** add-on is a useful tool for your online store that will help you boost conversions and drive sales.
 
     You can display customer activity in real-time. Show proof that your store is a popular venue for shoppers by displaying:
 
@@ -33,7 +33,7 @@ Overview
     - Recent sales
 
     .. fancybox:: img/social-proof-product-page-new.png
-        :alt: Sales & Social Proof product page
+        :alt: Social Proof product page
 
 =============
 Compatibility
@@ -54,7 +54,7 @@ Support
 Demo store
 ==========
 
-    Check out the Sales & Social Proof add-on in our |demo_store|.
+    Check out the Social Proof add-on in our |demo_store|.
 
 .. |demo_store| raw:: html
 
@@ -72,16 +72,16 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the Sales & Social Proof add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the Social Proof add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
     .. fancybox:: img/social-proof-add-on-install.png
-        :alt: Sales & Social Proof add-on
+        :alt: Social Proof add-on
 
 ==================
 Available settings
 ==================
 
-    Here are available settings of the Sales & Social Proof add-on.
+    Here are available settings of the Social Proof add-on.
 
     .. tip::
 
@@ -92,12 +92,12 @@ General
 +++++++
 
     .. fancybox:: img/sales-and-social-proof-general-settings.png
-        :alt: Sales & Social Proof add-on
+        :alt: Social Proof add-on
 
     * **License key**—Enter the license key to activate the add-on. You will receive this key in the order confirmation email. You can also see license keys for all your purchased add-ons in your HelpDesk account. Log in to `HelpDesk <https://www.simtechdev.com/helpdesk>`_, and navigate to the **Licenses** section:
 
     .. fancybox:: img/licenses.png
-        :alt: Sales & Social Proof add-on
+        :alt: Social Proof add-on
 
     * **Show real-time stats**—If enabled, real-time messages showing the number of times a product was bought, number of people watching a product, quantity of a product left in stock, and a custom message on a product page.
 

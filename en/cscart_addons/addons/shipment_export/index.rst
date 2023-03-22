@@ -1,5 +1,5 @@
 **************************
-Shipment Export and Import
+Shipment Export
 **************************
 
 .. raw:: html
@@ -18,7 +18,7 @@ Shipment Export and Import
 Overview
 --------
 
-    Our `Shipment Export and Import <https://www.simtechdev.com/addons/site-management/shipment-export.html>`_ add-on helps you export and import shipments in the CSV format in one click.
+    Our `Shipment Export <https://www.simtechdev.com/addons/site-management/shipment-export.html>`_ add-on helps you export and import shipments in the CSV format in one click.
 
     The add-on creates an **Export selected** setting on the Shipments page. Click the button to export shipment details to a CSV file.
 
@@ -56,7 +56,7 @@ Support
 Demo
 ====
 
-    Check out the MailChimp Advanced add-on in our |demo_store|.
+    Check out the Shipment Export add-on in our |demo_store|.
 
 .. |demo_store| raw:: html
 
@@ -74,10 +74,10 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the “Shipment Export and Import” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & Install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the “Shipment Export” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & Install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
     .. fancybox:: img/Shipment_export_001.png
-        :alt: CSV export for sales reports add-on
+        :alt: CSV Export add-on
 
 =====================
 Setting up the add-on

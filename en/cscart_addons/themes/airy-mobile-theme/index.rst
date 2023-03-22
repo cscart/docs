@@ -48,7 +48,7 @@ Overview
 
     - Airy Mobile
     - Smart Mega Menu
-    - Enhanced Social Login
+    - Social Auth
 
 =============
 Compatibility
@@ -234,10 +234,10 @@ Vendor information
         :alt: Smart Mega Menu
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-`Enhanced Social Login <https://www.simtechdev.com/docs/addons/enhanced_social_login/index.html>`_
+`Social Auth <https://www.simtechdev.com/docs/addons/enhanced_social_login/index.html>`_
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     Allows customers to sign up using their accounts on social networks.
 
     .. fancybox:: img/airy-mobile-theme-social-login.png
-        :alt: Enhanced Social Login
+        :alt: Social Auth

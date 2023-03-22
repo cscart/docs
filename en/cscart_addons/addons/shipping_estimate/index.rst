@@ -25,7 +25,7 @@ Overview
 
     .. tip::
 
-        We recommend using the `Geolocation by Google <http://docs.simtechdev.com/addons/geolocation_by_google/index.html>`_ or `IP Geolocation by MaxMind <http://docs.simtechdev.com/addons/geo_maxmind/index.html>`_ add-on to determine the location of a user automatically and provide accurate shipping estimates. It will be particularly necessary if the user has not provided shipping address information.
+        We recommend using the `Geolocation by Google <http://docs.simtechdev.com/addons/geolocation_by_google/index.html>`_ or `IP Geolocation <http://docs.simtechdev.com/addons/geo_maxmind/index.html>`_ add-on to determine the location of a user automatically and provide accurate shipping estimates. It will be particularly necessary if the user has not provided shipping address information.
 
         MaxMind also allows customers to change destination by clicking on it and calculate shipping cost.
 

@@ -1,5 +1,5 @@
 ****************
-Buy Product Link
+Purchase Link
 ****************
 
 .. raw:: html
@@ -18,21 +18,21 @@ Buy Product Link
 Overview
 --------
 
-    The `Buy Product Link add-on <https://www.simtechdev.com/addons/customer-experience/quick-purchase-link.html>`_ generates a link to quickly purchase any product in your store.
+    The `Purchase Link add-on <https://www.simtechdev.com/addons/customer-experience/quick-purchase-link.html>`_ generates a link to quickly purchase any product in your store.
 
     .. fancybox:: img/Buy_product_link_08.png
-        :alt: CS-Cart Buy Product Link add-on
+        :alt: CS-Cart Purchase Link add-on
 
     You can send the link to the customer in a social network, or your customers can send the link to their friends or share it on Facebook, Twitter, etc. 
 
     .. fancybox:: img/Buy_product_link_010.png
-        :alt: Buy Product Link on Facebook
+        :alt: Purchase Link on Facebook
         :width: 500px
 
     Clicking on the link will take your customers either to the cart or checkout page to place the order right away.
 
     .. fancybox:: img/Buy_product_link_06.png
-        :alt: Buy Product Link leading to checkout
+        :alt: Purchase Link leading to checkout
 
     To learn how to use the new functionality, follow quick and easy steps below.
 
@@ -55,7 +55,7 @@ Support
 Demo
 ====
 
-    Check out the Buy Product Link add-on in our |demo_store|.
+    Check out the Purchase Link add-on in our |demo_store|.
 
 .. |demo_store| raw:: html
 
@@ -73,18 +73,18 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the “Buy Product Link” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the “Purchase Link” add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
 =====================
 Setting up the add-on
 =====================
 
-    Here are available settings of the "Buy Product Link" add-on:
+    Here are available settings of the "Purchase Link" add-on:
 
     .. fancybox:: img/Buy_product_link_018.png
-        :alt: Buy product link add-on settings
+        :alt: Purchase Link add-on settings
 
-    * **Use a SEO link**—Allows the admin to make the buy product link SEO-friendly.
+    * **Use a SEO link**—Allows the admin to make the Purchase Link SEO-friendly.
 
     If the setting is enabled, the link will look like this:
 
@@ -96,7 +96,7 @@ Setting up the add-on
 
     * **SEO parameter**—Specify the parameter in the SEO link. The value should be without spaces. For example, the link looks like ``your_site.com/buy_product/[product_id]``, where ``buy_product`` is defined in this setting. The 'Use a SEO link' setting should be enabled.
 
-    * **Redirect link**—Choose whether the user should be redirected to the cart page or checkout page once they click on the buy product link.
+    * **Redirect link**—Choose whether the user should be redirected to the cart page or checkout page once they click on the Purchase Link.
     * **Show button Buy now with 1-click**—Tick to display the Buy Now with 1 Click button on the product details page. 
 
     .. fancybox:: img/Buy_product_link_12.png
@@ -130,7 +130,7 @@ Additional settings for version 4.2.4
 Link for quick purchase
 =======================
 
-    The “Buy Product Link” add-on generates a link to quickly purchase any product in your store. To get the link:
+    The “Purchase Link” add-on generates a link to quickly purchase any product in your store. To get the link:
 
     1. Go to **Products - Products** in the admin panel.
 

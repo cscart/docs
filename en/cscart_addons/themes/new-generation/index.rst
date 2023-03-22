@@ -88,7 +88,7 @@ Installing the theme and add-ons
 ================================
 
     1. Go to Addons → Manage add-ons and click the “+” (Upload & install add-on) button and install the `Mobile Layouts <https://www.simtechdev.com/docs/addons/mobile-layouts/index.html>`_ add-on.
-    2. Click the “+” (Upload & install add-on) button once again and install the `Eagle Owl Previewer <https://www.simtechdev.com/docs/addons/eagle_owl/index.html>`_ add-on.
+    2. Click the “+” (Upload & install add-on) button once again and install the `Eagle Owl <https://www.simtechdev.com/docs/addons/eagle_owl/index.html>`_ add-on.
 
     3. Go to Addons → Manage add-ons and click the “+” (Upload & install add-on) button and install the New Generation theme add-on.
 

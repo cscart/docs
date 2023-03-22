@@ -1,5 +1,5 @@
 ************************
-Pop-Up Notifications Pro
+Pop-Up PRO
 ************************
 
 .. raw:: html
@@ -17,16 +17,16 @@ Pop-Up Notifications Pro
 Overview
 --------
 
-    **The Pop-Up Notifications Pro add-on** allows to show engaging pop-ups in the most important touchpoint with your customers to guide them through the sales funnel, deliver special offerings and increase conversion. Display coupon codes, offer free shipping, collect emails with your favourite email automation services, highlight new collections or just welcome the visitors at the right moment and in the right place. Select which visitors should see your campaign and in what conditions. Use colourful images and text to engage the customers with your offer or message and reach your goal.    
+    **The Pop-Up PRO add-on** allows to show engaging pop-ups in the most important touchpoint with your customers to guide them through the sales funnel, deliver special offerings and increase conversion. Display coupon codes, offer free shipping, collect emails with your favourite email automation services, highlight new collections or just welcome the visitors at the right moment and in the right place. Select which visitors should see your campaign and in what conditions. Use colourful images and text to engage the customers with your offer or message and reach your goal.    
 
     .. fancybox:: img/pop-up-notifications-pro-add-on1.png
-        :alt: Pop-Up Notifications Pro add-on
+        :alt: Pop-Up PRO add-on
 
     .. fancybox:: img/pop-up-notifications-pro-add-on2.png
-        :alt: Pop-Up Notifications Pro add-on
+        :alt: Pop-Up PRO add-on
 
     .. fancybox:: img/pop-up-notifications-pro-add-on3.png
-        :alt: Pop-Up Notifications Pro add-on
+        :alt: Pop-Up PRO add-on
         
 ========
 Features
@@ -69,16 +69,16 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the Pop-Up Notifications Pro add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the Pop-Up PRO add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
 =====================
 Setting up the add-on
 =====================
 
-    Here are available settings of the Pop-Up Notifications Pro add-on.
+    Here are available settings of the Pop-Up PRO add-on.
 
     .. fancybox:: img/pop-up-notifications-pro-settings.jpg
-        :alt: settings of the Pop-Up Notifications Pro add-on
+        :alt: settings of the Pop-Up PRO add-on
 
     * **License key**—Enter the license key to activate the add-on. You will receive this key in the order confirmation email. You can also see license keys for all your purchased add-ons in your HelpDesk account. 
 
@@ -89,12 +89,12 @@ Creating a pop-up
     1. To create a pop-up, go to **Marketing > Popups** menu and click + button.
 
     .. fancybox:: img/pop-up-notifications-pro-creating-pop-up.jpg
-        :alt: Pop-Up Notifications Pro add-on
+        :alt: Pop-Up PRO add-on
 
     2. Fill in the following fields:
 
     .. fancybox:: img/pop-up-notifications-pro-html-pop-up.jpg
-        :alt: Pop-Up Notifications Pro add-on
+        :alt: Pop-Up PRO add-on
 
     * **Name**—Enter the pop-up name.
 
@@ -105,12 +105,12 @@ Creating a pop-up
     3. Click **Create**. After you have created a new popup window, you will find three new tabs available: Settings, Content and Conditions.
 
     .. fancybox:: img/pop-up-notifications-pro-tabs.jpg
-        :alt: Pop-Up Notifications Pro add-on
+        :alt: Pop-Up PRO add-on
 
     4. On the **Settings** tab you could set up the appearance of the pop-up window. 
 
     .. fancybox:: img/pop-up-notifications-pro-settings-tab.jpg
-        :alt: Pop-Up Notifications Pro add-on
+        :alt: Pop-Up PRO add-on
 
     The following settings are available:
 
@@ -137,14 +137,14 @@ Creating a pop-up
     *HTML pop-up*
 
     .. fancybox:: img/pop-up-notifications-pro-content.jpg
-        :alt: Pop-Up Notifications Pro add-on
+        :alt: Pop-Up PRO add-on
 
     * **Text**—Add HTML code for the pop-up window.
 
     * **Background color**—Choose the color for the pop-up window background.
 
     .. fancybox:: img/pop-up-notifications-pro-add-on-example2.png
-        :alt: Pop-Up Notifications Pro add-on 
+        :alt: Pop-Up PRO add-on 
 
     For example, to make the pop-up look like this, the following code was used:   
 
@@ -155,7 +155,7 @@ Creating a pop-up
     *Graphic banner pop-up*
 
     .. fancybox:: img/pop-up-notifications-pro-graphic-banner-content.jpg
-        :alt: Pop-Up Notifications Pro add-on
+        :alt: Pop-Up PRO add-on
     
     * **Banner**—Choose the banner from the list of banners of your store for displaying in the pop-up window.
 
@@ -164,12 +164,12 @@ Creating a pop-up
         Make sure the **Banner management** add-on is set to Active in your store. Otherwise the Graphic banner type will not be available. 
 
         .. fancybox:: img/pop-up-notifications-pro-banner-management.jpg
-            :alt: Pop-Up Notifications Pro add-on
+            :alt: Pop-Up PRO add-on
 
     6. Go to **Conditions** tab to add conditions for displaying pop-up window.
 
     .. fancybox:: img/pop-up-notifications-pro-conditions.jpg
-        :alt: Pop-Up Notifications Pro add-on
+        :alt: Pop-Up PRO add-on
 
     The following conditions are available:
 
@@ -192,22 +192,22 @@ Creating a pop-up
     Click **Add condition**, choose one or several conditions from the drop down list and specify the value.
 
     .. fancybox:: img/pop-up-notifications-pro-adding-conditions.jpg
-        :alt: Pop-Up Notifications Pro add-on
+        :alt: Pop-Up PRO add-on
 
     .. fancybox:: img/pop-up-notifications-pro-adding-conditions2.jpg
-        :alt: Pop-Up Notifications Pro add-on
+        :alt: Pop-Up PRO add-on
 
     You could always remove the condition by clicking on a bin icon on the condition.
 
     .. fancybox:: img/pop-up-notifications-pro-remove.jpg
-        :alt: Pop-Up Notifications Pro add-on
+        :alt: Pop-Up PRO add-on
 
     7. After configuring click **Save**.
 
     Here’s the final result:
 
     .. fancybox:: img/pop-up-notifications-pro-example.jpg
-        :alt: Pop-Up Notifications Pro add-on
+        :alt: Pop-Up PRO add-on
 
 
 

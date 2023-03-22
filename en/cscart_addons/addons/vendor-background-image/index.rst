@@ -1,5 +1,5 @@
 ***********************
-Vendor Background Image
+Vendor Image
 ***********************
 
 .. raw:: html
@@ -17,10 +17,10 @@ Vendor Background Image
 Overview
 --------
 
-    The **Vendor Background Image** allows you to add a full-width background image to the vendor store and vendor information page and apply parallax effect to it.
+    The **Vendor Image** allows you to add a full-width background image to the vendor store and vendor information page and apply parallax effect to it.
 
     .. fancybox:: img/vendor-background-overview-main-page.gif
-        :alt: Vendor Background Image for CS-Cart
+        :alt: Vendor Image for CS-Cart
 
 =============
 Compatibility
@@ -41,7 +41,7 @@ Support
 Demo
 ====
 
-    Check out the Vendor Background Image add-on in our |demo_store|.
+    Check out the Vendor Image add-on in our |demo_store|.
 
 .. |demo_store| raw:: html
 
@@ -59,16 +59,16 @@ Managing in the admin panel
 Installing the add-on
 =====================
 
-    Install the Vendor Background Image add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the Vendor Image add-on on the add-ons list page (Add-ons → Manage add-ons). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
 =====================
 Setting up the add-on
 =====================
 
-    Here are available settings of the Vendor Background Image add-on.
+    Here are available settings of the Vendor Image add-on.
 
     .. fancybox:: img/vendor-background-image-settings.png
-        :alt: Vendor Background Image settings
+        :alt: Vendor Image settings
 
     * **Aspect ratio (width / height)**—Select a preferable aspect ration for images. This value will be displayed in a tooltip for the **Vendor background** setting in the admin panel. It will help vendors add an image of the correct size.
 
@@ -78,7 +78,7 @@ Setting up the add-on
     * **Gap between the top of background image and content**—Define the distance between the top of the background image and the main content on the page. Enter a value in percentage or pixels (depending on the value selected below).
 
     .. fancybox:: img/background-image-gap-setting.png
-        :alt: Vendor Background Image settings
+        :alt: Vendor Image settings
 
     * **Gap between the top of background image and content (units)**—Select units you want to use to measure the gap between the top of background image and content.
 

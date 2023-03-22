@@ -1,4 +1,4 @@
-Affiliate and Referral
+Affiliate PRO
 **********************
 
 .. raw:: html
@@ -16,7 +16,7 @@ Affiliate and Referral
 Overview
 --------
 
-    Power your online business with our **Affiliate and Referral add-on**. It gives the CS-Cart store owner the ability to create affiliate programs with other online stores and websites.
+    Power your online business with our **Affiliate PRO add-on**. It gives the CS-Cart store owner the ability to create affiliate programs with other online stores and websites.
 
     .. fancybox:: img/AffiliateCover-cover-0002.jpg
         :alt: CS-Cart Affiliate add-on
@@ -72,7 +72,7 @@ Support
 Demo
 ====
 
-    Check out the Affiliate and Referral add-on in our |demo_store|.
+    Check out the Affiliate PRO add-on in our |demo_store|.
 
 .. |demo_store| raw:: html
 
@@ -126,17 +126,17 @@ Installing and setting up the add-on
 Installing the add-on
 +++++++++++++++++++++
 
-    Install the “Affiliate and Referral" add-on on the add-ons list page ("Addons" → "Manage add-ons").
+    Install the “Affiliate PRO" add-on on the add-ons list page ("Addons" → "Manage add-ons").
 
 .. note::
     
-    The Affiliate and Referral add-on is incompatible with the `Affiliate Light add-on <https://www.simtechdev.com/docs/addons/affiliate_light/index.html>`_.
+    The Affiliate PRO add-on is incompatible with the `Affiliate Light add-on <https://www.simtechdev.com/docs/addons/affiliate_light/index.html>`_.
    
 
 Available settings
 ++++++++++++++++++
 
-    All settings of the "Affiliate and Referral" add-on are split into three sections: General, Text banner, Discount Coupons.
+    All settings of the "Affiliate PRO" add-on are split into three sections: General, Text banner, Discount Coupons.
 
     **1. General settings**
 
@@ -240,7 +240,7 @@ URL
 Creating banners
 ================
 
-    One of the most popular ways to advertise a store using affiliates is banners. The "Affiliate and Referral" add-on allows to create text banners, graphic banners and product banners.
+    One of the most popular ways to advertise a store using affiliates is banners. The "Affiliate PRO" add-on allows to create text banners, graphic banners and product banners.
 
     .. image:: img/banners_affiliate.jpg
 
@@ -366,7 +366,7 @@ Coupons
 
     To learn more how to create and manage promotions, please refer to the `CS-Cart Docs <http://docs.cs-cart.com/4.3.x/user_guide/manage_products/promotions/index.html>`_.
 
-    Watch this video to learn more about using coupons with the Affiliate and Referral add-on.
+    Watch this video to learn more about using coupons with the Affiliate PRO add-on.
 
     .. raw:: html
 

@@ -1,5 +1,5 @@
 ***********************************
-Two Factor Authentication by Google
+Auth by Google
 ***********************************
 
 .. raw:: html
