@@ -1,0 +1,121 @@
+************************
+CS-Cart 4.16.2 Changelog
+************************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Mobile application: The ability to display product blocks on the product page in the mobile application was added.
+
+[+] Multi-Vendor Ultimate: API: Users: Storefronts: Rights of storefront administrators are now separated in the API.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: Call requests: Buy with 1-click: An order is now created even if the customer did not leave an email.
+
+[*] Multi-Vendor Ultimate: Storefronts: Email notifications about vendor account status, plans, debt, and data premoderation now come from the storefront that vendor registered at.
+
+[*] Refactoring: JS: Removing popups was refactored.
+
+[*] API: Order management: Shipments: Additional message about incorrect parameters during shipment creation was added to API.
+
+=========
+Bug Fixes
+=========
+
+[!] Add-ons: Advanced products import: Product Variations: Import of product variations without specifying the default variation could set an out-of-stock variation as default. Fixed.
+
+[!] Add-ons: Paypal Checkout: Placing an order bypassing the custom PayPal buttons caused an error. Fixed.
+
+[!] Add-ons: Product bundles: An error occurred when an admin tried to add a product that was already in the bundle. Fixed.
+
+[!] Add-ons: Product reviews: The author of the review response changed after the administrator edited the review. Fixed.
+
+[!] Add-ons: Product reviews: When the add-on was enabled, the non-functional "Comments and reviews" section from the old "Comments and reviews" add-on could still be displayed in the product settings. Fixed.
+
+[!] Add-ons: Product variations: Common products for vendors: When adding common products to an editable order, the products with which the order was originally issued could disappear. Fixed.
+
+[!] Add-ons: SEO: It was impossible to remove a zero from the SEO names that started with zero. Fixed.
+
+[!] Admin panel: Dashboard: If the administrator had limited privileges, the blocks with analytics on the Dashboard page could look strange. Fixed.
+
+[!] Admin panel: Dashboard: The Sales chart did not load in some languages. Fixed.
+
+[!] Admin panel: Quick start menu: The icon and name of the language disappeared after changing the language. Fixed.
+
+[!] Categories: Changing the status of a category did not affect the display of the category on the storefront in the menu block until the cache was cleared. Fixed.
+
+[!] Checkout: Changing the "State" or "City" could switch the focus onto another field of the checkout page. Fixed.
+
+[!] Checkout: Languages: The "no_shipping_required" language variable was not translated into other languages on the checkout page of the storefront. Fixed.
+
+[!] Checkout: Profile fields: In some cases the billing address could be filled with the data from the shipping address. Fixed.
+
+[!] Checkout: Shipping methods: Promotions: In some cases the calculated shipping cost was incorrect after promotions were applied. Fixed.
+
+[!] Design: Options: Tooltip: Options tooltip did not work on mobile devices. Fixed.
+
+[!] Design: Product page scrolled to the top on mobile devices when choosing variations. Fixed.
+
+[!] Design: Promo-text: The bullets in a bulleted list were not displayed in the promo-text on the product page. Fixed.
+
+[!] Design: UI / UX: Categories: The category tree could not be collapsed. Fixed.
+
+[!] E-mail: Notification: On iOS in the Mail.app, the tables in the message were hard to read. Fixed.
+
+[!] Export/Import: Products export: Export of products with more than 30 languages caused an error. Fixed.
+
+[!] Export/Import: Products: Features: In some cases feature variants could be duplicated during product import. Fixed.
+
+[!] Export/Import: The Import and Export buttons were not be displayed in some cases. Fixed.
+
+[!] File editor: The file manager in some cases could not be translated. Fixed.
+
+[!] GDPR Compliance (EU): Tooltip didn't close on mobile devices in some cases. Fixed.
+
+[!] JS: WYSIWYG editor: Inserting pictures didn't work in TinyMCE editor. Fixed.
+
+[!] Mobile app: If a vendor didn't have a shipping method, the order was not created. Fixed.
+
+[!] Mobile app: Promotions: Promotions were not applied. Fixed.
+
+[!] Mobile app: The app download banner was not displayed in Safari iOS browser. Fixed.
+
+[!] Mobile app: The warning that a field is required was always displayed in English. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: Shipping estimator: All countries were available for selection, regardless of status. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: When adding a product to the cart, the "View cart" button was not displayed. Fixed.
+
+[!] Multi-Vendor Ultimate: Add-ons: Common products for vendors: Price of a product that was not available on the storefront could be displayed for common products on category pages. Fixed.
+
+[!] Multi-Vendor Ultimate: Add-ons: SEO: Storefronts: Setting different default languages on storefronts could lead to loop redirect on some pages. Fixed.
+
+[!] Multi-Vendor: Add-ons: PayPal Commerce Platform: Payment methods: Even if the "Delay transfer of funds" setting was not enabled, vendor funds were still delayed. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor data premoderation: Export/Import: New products were shown on the storefront regardless of the vendor data premoderation settings during importing. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor plans: Email notifications: When registering a new vendor, an incorrect template was used for assigning a vendor plan. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor plans: Plan description could be displayed incorrectly on the storefront and in the vendor panel. Fixed.
+
+[!] Multi-Vendor: Categories: Vendors was able to assign products to the disabled categories. Fixed.
+
+[!] Multi-Vendor: Vendor dashboard: Onboarding demo blocks were empty for some languages. Fixed.
+
+[!] Orders: Order management: Editing two or more orders at a time in one browser could mess up one of them. Fixed.
+
+[!] Product Options: Forbidden Combinations: Required options were displayed incorrectly in unavailable combinations. Fixed.
+
+[!] Profile fields: Phone: After changing the "Supported phone numbers" setting, invalid phones could be displayed incorrectly. Fixed.
+
+[!] Sales reports: At some zoom levels, products weren't loaded in reports. Fixed.
+
+[!] Ultimate: Add-ons: Warehouses: If an order was created in administrator panel and pickup from store was used as a shipping method, items could be written off from wrong store. Fixed.
+
+[!] Ultimate: Add-ons: Warehouses: The out-of-stock notification for the selected region was displayed when the pre-order was available. Fixed.
+
+[!] Ultimate: REST API: Orders: Creation of an order did not take into account the wholesale discount if there were several storefronts. Fixed.

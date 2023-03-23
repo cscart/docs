@@ -9,6 +9,7 @@ CS-Cart branch 4.16.x
 .. toctree::
     :maxdepth: 1
 
+    4.16.2 (March 28, 2023) <4162>
     4.16.1 (January 31, 2023) <4161>
 
 =====================
@@ -252,4 +253,4 @@ CS-Cart branch 2.0.x
     2.0.10 (November 24, 2009) <2010>
 
 .. meta::
-   :description: Changelog and version history: all the changes in CS-Cart and Multi-Vendor online business platforms listed per version.
+   :description: Changelog and version history: all the changes in CS-Cart Store Builder and Multi-Vendor online business platforms listed per version.
