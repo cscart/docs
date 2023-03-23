@@ -7,10 +7,6 @@ Adapt Your Add-ons and Themes to CS-Cart 4.16.2
     :backlinks: none
 
 ============
-Core Changes
-============
-
-============
 Hook Changes
 ============
 
