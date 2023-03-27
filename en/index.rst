@@ -7,11 +7,15 @@
 CS-Cart Addons Documentation
 *****************************
 
-Welcome to CS-Cart Addons Documentation! For your convenience we have divided it into several sections dedicated to various type of our addons.
+Welcome to CS-Cart Addons Documentation! For your convenience we have divided it into several sections dedicated to various type of our products.
 
-`See the full list of articles. <map.html>`_
+`See the full list of CS-Cart Addons Documentation articles. <map.html>`_
 
-We hope that everyone finds answers to their questions here.
+This is documentation about add-ons and themes available on the `marketplace <https://marketplace.cs-cart.com/index.php?dispatch=companies.products&company_id=119>.`_
+
+The information about default CS-Cart add-ons is presented `here <https://docs.cs-cart.com/latest/>.`_
+
+We hope that everyone finds answers to their questions.
 
 ===============
 Addons
