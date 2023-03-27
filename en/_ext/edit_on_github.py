@@ -29,7 +29,7 @@ def html_page_context(app, pagename, templatename, context, doctree):
         return
 
     path = os.path.relpath(doctree.get('source'), app.builder.srcdir)
-    show_url = get_github_url(app, 'blob', path)
+    show_url = get_github_url(app, 'tree', path)
     edit_url = get_github_url(app, 'edit', path)
 
     context['show_on_github_url'] = show_url
