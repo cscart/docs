@@ -1,1 +1,0 @@
-fn_set_hook('render_block_register_cache', $block, $cache_name, $block_scheme, $register_cache, $display_block);

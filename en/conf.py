@@ -28,7 +28,7 @@ sys.path.insert(0, os.path.abspath('_ext'))
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['edit_on_github', 'canonical_latest', 'sphinx_sitemap']
+extensions = ['sphinxcontrib.fancybox', 'edit_on_github', 'canonical_latest', 'sphinx_sitemap']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -297,8 +297,8 @@ lexers['phpinline'] = PhpLexer(startinline=True)
 highlight_language = 'phpinline'
 
 # FancyBox defaults
-#fancybox_thumbnail_width = '100%'
-#fancybox_thumbnail_height = '100%'
+fancybox_thumbnail_width = '100%'
+fancybox_thumbnail_height = '100%'
 
 edit_on_github_project = 'cscart/docs'
 edit_on_github_branch = '%version_long%'
