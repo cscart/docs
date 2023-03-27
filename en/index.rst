@@ -11,15 +11,17 @@ Welcome to CS-Cart Addons Documentation! For your convenience we have divided it
 
 `See the full list of CS-Cart Addons Documentation articles. <map.html>`_
 
-This is documentation about add-ons and themes available on the `marketplace <https://marketplace.cs-cart.com/index.php?dispatch=companies.products&company_id=119>.`_
+This is documentation about add-ons and themes available on the `marketplace. <https://marketplace.cs-cart.com/index.php?dispatch=companies.products&company_id=119>`_
 
-The information about default CS-Cart add-ons is presented `here <https://docs.cs-cart.com/latest/>.`_
+The information about default CS-Cart add-ons is presented `here. <https://docs.cs-cart.com/latest/user_guide/addons/index.html>`_
 
 We hope that everyone finds answers to their questions.
 
 ===============
 Addons
 ===============
+
+This section is dedicated to add-ons: useful extensions that provide additional functionality to your store.
 
 .. toctree::
     :maxdepth: 1
@@ -32,6 +34,8 @@ Addons
 Payments Gateways
 ==================
 
+This section is dedicated to payment gateways; extensions that provide integrations of payment methods that your customers could use to pay their orders.
+
 .. toctree::
     :maxdepth: 1
     :titlesonly:
@@ -43,6 +47,8 @@ Payments Gateways
 Themes
 ===============
 
+This section is dedicated to themes: extensions that change the appearance of your storefront, make it more attractive for your clients and define it among storefronts of your competitors.
+
 .. toctree::
     :maxdepth: 1
     :titlesonly:
@@ -53,6 +59,8 @@ Themes
 ==================
 Compatibility
 ==================
+
+This section provides general information and conditions in terms of compatibility of our products.
 
 .. toctree::
     :maxdepth: 1
