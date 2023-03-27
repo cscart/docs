@@ -102,7 +102,7 @@ Bug Fixes
 
 [!] Multi-Vendor: Add-ons: Vendor plans: Plan description could be displayed incorrectly on the storefront and in the vendor panel. Fixed.
 
-[!] Multi-Vendor: Categories: Vendors was able to assign products to the disabled categories. Fixed.
+[!] Multi-Vendor: Categories: Vendors were able to assign products to the disabled categories. Fixed.
 
 [!] Multi-Vendor: Vendor dashboard: Onboarding demo blocks were empty for some languages. Fixed.
 
