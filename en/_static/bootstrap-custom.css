@@ -86,11 +86,10 @@ code {
 }
 
 .navbar .brand {
-    width: 163px;
+    width: 185px;
     height: 45px;
     display: block;
     float: left;
-    margin-left: -20px;
     font-size: 20px;
     font-weight: 200;
     color: #777;
