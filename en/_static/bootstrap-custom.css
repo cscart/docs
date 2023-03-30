@@ -80,8 +80,8 @@ code, pre {
 
 .navbar h3 a, .navbar .brand {
     background: transparent url({{ pathto(html_logo) }}) no-repeat;
-    width: 102px;
-    height: 40px;
+    width: 185px;
+    height: 45px;
 }
 
 .navbar-text {
