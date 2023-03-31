@@ -18,7 +18,7 @@ The information about default CS-Cart add-ons is presented `here. <https://docs.
 We hope that everyone finds answers to their questions.
 
 ===============
-Addons
+Add-ons
 ===============
 
 This section is dedicated to add-ons: useful extensions that provide additional functionality to your store.

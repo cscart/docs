@@ -1,10 +1,10 @@
 *********************************
-Enhanced Navigation by Promotions
+Promo Navigator
 *********************************
 .. raw:: html
 
     <div class="buy-now">
-        <a href="https://marketplace.simtechdev.com/landing/100000315" class="btn buy-now__btn">Buy now</a>
+        <a href="https://marketplace.cs-cart.com/promo-navigator.html" class="btn buy-now__btn">Buy now</a>
     </div>
 
 
@@ -19,7 +19,7 @@ Overview
 
     Promotions and special offers are very useful ways to attract customers and increase the sales rate of your store. Seasonal sales and bonuses for special customers eventually lead to a lot of positions in your promotions list, which makes it difficult to manage. We created a special add-on in order to make this experience more comfortable.
 
-    **Enhanced Navigation By Promotions** adds additional fields in for the promotions page, that provides quick access to valuable information about the particular event.  Make your store/marketplace administration effective and comfortable with Enhanced Navigation by Promotions.
+    **Promo Navigator** adds additional fields in for the promotions page, that provides quick access to valuable information about the particular event.  Make your store/marketplace administration effective and comfortable with Promo Navigator.
 
 ============
 Key Features
@@ -53,7 +53,7 @@ Support
 Demo
 ====
 
-    Check out the Enhanced Navigation by Promotions add-on in our |demo_store|.
+    Check out the Promo Navigator add-on in our |demo_store|.
 
 .. |demo_store| raw:: html
 

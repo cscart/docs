@@ -1,4 +1,4 @@
-Addons
+Add-ons
 ------
 
 .. toctree::
@@ -33,7 +33,6 @@ Addons
     delivery-date/index
     eagle_owl/index
     enhanced_filters/index
-    enhanced_navigation_by_promotions/index
     order_and_user_tags/index
     facebook_conversions_api/index
     facebook_pixel/index
@@ -65,6 +64,7 @@ Addons
     points_and_cash/index
     pop_up_notifications_pro/index
     full-width_banner/index
+    enhanced_navigation_by_promotions/index
 
     :hidden: product-bundles/index
 
