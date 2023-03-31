@@ -29,9 +29,7 @@ Addons
     delivery-date/index
     eagle_owl/index
     enhanced_filters/index
-
-    :hidden: enhanced_navigation_by_promotions/index
-
+    enhanced_navigation_by_promotions/index
     enhanced_social_login/index
     facebook_conversions_api/index
     facebook_pixel/index
@@ -92,6 +90,7 @@ Addons
     :hidden: sticky_product_bar/index
 
     taxcalcs_by_taxjar/index
+    tiktok_feed/index
     duo_authorization/index
     two-factor_authentication/index
     user_profile_page/index
