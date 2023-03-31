@@ -91,8 +91,8 @@ Block TikTok Feed
 	**Managing the Block**
 
 	TikTok Feed Block can be created with Block Manager. 
-		.. fancybox:: img/Tiktok4.gif
-        :alt: TikTok Feed Block
+	.. fancybox:: img/Tiktok4.gif
+		:alt: TikTok Feed Block
 
 	Following block filling options are available:
 
@@ -106,7 +106,7 @@ Block TikTok Feed
 
 	* Grid. Template display posts as an adjustable grid. Number of columns will be calculated automatically in accordance with the Item Width option of template settings. 
 		*Template Settings:*
-			*Item width - sets the minimal width of the list element.
+			* Item width - sets the minimal width of the list element.
 
 	* Scroller.  This template uses default Owl-Carousel.
 		*Template settings:*
@@ -143,48 +143,48 @@ Product Posts
 
 	**Managing**
 	Posts and their display settings can be managed in the Post Picker on the TikTok Feed tab, provided by the add-on in the Product setting page (dispatch=products.update&product_id=1) on the Admin Panel.
-		.. fancybox:: img/Tiktok5.png
-        :alt: Admin Panel
+	.. fancybox:: img/Tiktok5.png
+		:alt: Admin Panel
 
-		.. fancybox:: img/Tiktok6.png
-        :alt: Vendor Panel
-        
+	.. fancybox:: img/Tiktok6.png
+		:alt: Vendor Panel
+
 	**Storefront**
 	Content will be displayed on product tabs of the "Product Information" page.
-		.. fancybox:: img/Tiktok7.png
-        :alt: Product page
+	.. fancybox:: img/Tiktok7.png
+		:alt: Product page
 
 	Content can be displayed via the "TikTok Feed" block with the "Product" filling, if product_id parameter is present on the page.
-		.. fancybox:: img/Tiktok8.png
-        :alt: Product page block
+	.. fancybox:: img/Tiktok8.png
+	    :alt: Product page block
 
 	**Additional** 
 	If the TikTok Feed tab in product settings is disabled, the TikTok feed tab on the product page on the storefront is unavailable. 
 
 	Add-on functionality is unavailable for vendors, if it is limited in Vendor plan by the standard "Vendor Plan" add-on. 
-		.. fancybox:: img/Tiktok9.png
-        :alt: Additional
+	.. fancybox:: img/Tiktok9.png
+	    :alt: Additional
 
-++++++++++++        
+++++++++++++
 Vendor Posts
 ++++++++++++
 
 	**Managing**
 	Posts and their display settings can be managed in the Post Picker on the TikTok Feed tab, provided by the add-on in the Vendor setting page (dispatch=companies.update&company_id=1) on the Admin Panel.
-		.. fancybox:: img/Tiktok10.png
-        :alt: Vendor Posts
-	
+	.. fancybox:: img/Tiktok10.png
+		:alt: Vendor Posts
+
 	**Storefront**
 	Content will be displayed on product tabs of the "Product Information" page (dispatch=companies.view&company_id=1). 
-		.. fancybox:: img/Tiktok11.png
-        :alt: Vendor Storefront
+	.. fancybox:: img/Tiktok11.png
+		:alt: Vendor Storefront
 
 	Content can be displayed via the "TikTok Feed" block with the "Product" filling, if company_id parameter is present on the page.
 
 	**Additional**
 	Add-on functionality is unavailable for vendors, if it is limited in Vendor plan by the standard "Vendor Plan" add-on.
-		.. fancybox:: img/Tiktok9.png
-        :alt: Additional
+	.. fancybox:: img/Tiktok9.png
+		:alt: Additional
 
 	The TikTok Feed tab on the Vendor Information page (dispatch=companies.view&company_id=1) will be unavailable, if "Show TikTok feed tab on sales page" setting is disabled in add-on settings.
 
@@ -197,25 +197,25 @@ TikTok Feed Product Tab
 ++++++++++++++++++++++++++
 TikTok Feed and Quick View
 ++++++++++++++++++++++++++
-	
+
 	Feed can be applied, in case "Use quick view" option is active in the relevant block
-	
+
 	**Storefront**
-	
+
 	On the first opening of the feed (click on any post), post list transfers the posts to be displayed in the feed. 
-	
+
 	Opened feed will be scrolled down to the selected post. Feed can be scrolled with a mouse scroll wheel, and closed by click on a background or a cross icon.  
-	
+
 	Content of each post will be loaded in a row. Content will be uploaded from TikTok once the post appears on the
-		.. fancybox:: img/Tiktok11.png
-        :alt: Feed
-        
+	.. fancybox:: img/Tiktok11.png
+		:alt: Feed
+
 ++++++++++++++++++++
 TikTok Product Label
 ++++++++++++++++++++
 
 	In case at least one TikTok post is applied to the product, the TikTok label will automatically be applied to this product.
-	
+
 	Function will be unavailable, when “Apply the product label” option is disabled in the add-on settings
 
 

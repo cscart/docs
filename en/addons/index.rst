@@ -4,13 +4,17 @@ Addons
 .. toctree::
     :maxdepth: 1
 
+    order_improvements/index
+    customer-account-merge/index
     address_autocomplete_by_google/index
-    advanced_social_buttons/index
+    duo_authorization/index
+    duo_authorization/index
     affiliate/index
     affiliate_light/index
     animation-effects/index
     auto-assign_user_group/index
     back_to_top_button/index
+    found_a_better_price/index
     birthday-present/index
     blocks_animation/index
     buy_more/index
@@ -25,24 +29,20 @@ Addons
     :hidden: cloud_translation_by_google/index
 
     CSV_export_for_sales_reports/index
-    customer-account-merge/index
+    quantity_discount_bulk_edit/index
     delivery-date/index
     eagle_owl/index
     enhanced_filters/index
     enhanced_navigation_by_promotions/index
-    enhanced_social_login/index
+    order_and_user_tags/index
     facebook_conversions_api/index
     facebook_pixel/index
 
     :hidden: follow_vendor/index
 
-    found_a_better_price/index
-    full-width_banner/index
+    google_analytics_enhanced_ecommerce/index
     gift_registry/index
     accelerated-mobile-pages/index
-    google_analytics_enhanced_ecommerce/index
-    google_remarketing_tag/index
-    google_tag_manager/index
 
     :hidden: google-customer-reviews/index
 
@@ -56,8 +56,6 @@ Addons
     mailchimp_ecommerce/index
     marketing_web_push_notification/index
     mobile-layouts/index
-    order_and_user_tags/index
-    order_improvements/index
 
     :hidden: order_statistics/index
 
@@ -66,14 +64,16 @@ Addons
     pay_by_link/index
     points_and_cash/index
     pop_up_notifications_pro/index
+    full-width_banner/index
 
     :hidden: product-bundles/index
 
     product_labels/index
     product_likes/index
+    user_profile_page/index
     push_notifications/index
-    quantity_discount_bulk_edit/index
     quickbooks_online_integration/index
+    google_remarketing_tag/index
     remove_vendor_products/index
     real-time-messenger/index
     sales-and-social-proof/index
@@ -85,15 +85,16 @@ Addons
     shipping_estimate/index
     smart_mega_menu/index
     show_me_more/index
+    enhanced_social_login/index
+    advanced_social_buttons/index
     sticky-menu/index
+    google_tag_manager/index
 
     :hidden: sticky_product_bar/index
 
     taxcalcs_by_taxjar/index
     tiktok_feed/index
-    duo_authorization/index
     two-factor_authentication/index
-    user_profile_page/index
     vendor-background-image/index
 
     :hidden: vendor_business_hours/index
