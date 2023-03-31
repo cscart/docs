@@ -45,7 +45,7 @@ Features
 Compatibility
 =============
 
-	The add-on is compatible with CS-Cart and Multi-Vendor 4.10 and above, but only versions 4.12.x and above are supported. Need compatibility with another CS-Cart version? Contact us now.
+	The add-on is compatible with CS-Cart and Multi-Vendor 4.10 and above, but only versions 4.12.x and above are supported. Need compatibility with another CS-Cart version? |Contact us now.|
     Minimum required PHP version is 7.1. The add-on does not support PHP 8.x yet.
 
     See more information about compatibility of our add-ons `here <https://docs.cs-cart.com/marketplace-addons/compatibility/index.html>`_.
@@ -90,7 +90,8 @@ Block TikTok Feed
 
 	**Managing the Block**
 
-	TikTok Feed Block can be created with Block Manager. 
+	TikTok Feed Block can be created with Block Manager.
+
 	.. fancybox:: img/Tiktok4.gif
 		:alt: TikTok Feed Block
 
@@ -143,6 +144,7 @@ Product Posts
 
 	**Managing**
 	Posts and their display settings can be managed in the Post Picker on the TikTok Feed tab, provided by the add-on in the Product setting page (dispatch=products.update&product_id=1) on the Admin Panel.
+
 	.. fancybox:: img/Tiktok5.png
 		:alt: Admin Panel
 
@@ -151,17 +153,20 @@ Product Posts
 
 	**Storefront**
 	Content will be displayed on product tabs of the "Product Information" page.
+
 	.. fancybox:: img/Tiktok7.png
 		:alt: Product page
 
 	Content can be displayed via the "TikTok Feed" block with the "Product" filling, if product_id parameter is present on the page.
+
 	.. fancybox:: img/Tiktok8.png
 	    :alt: Product page block
 
 	**Additional** 
 	If the TikTok Feed tab in product settings is disabled, the TikTok feed tab on the product page on the storefront is unavailable. 
 
-	Add-on functionality is unavailable for vendors, if it is limited in Vendor plan by the standard "Vendor Plan" add-on. 
+	Add-on functionality is unavailable for vendors, if it is limited in Vendor plan by the standard "Vendor Plan" add-on.
+
 	.. fancybox:: img/Tiktok9.png
 	    :alt: Additional
 
@@ -171,11 +176,13 @@ Vendor Posts
 
 	**Managing**
 	Posts and their display settings can be managed in the Post Picker on the TikTok Feed tab, provided by the add-on in the Vendor setting page (dispatch=companies.update&company_id=1) on the Admin Panel.
+
 	.. fancybox:: img/Tiktok10.png
 		:alt: Vendor Posts
 
 	**Storefront**
-	Content will be displayed on product tabs of the "Product Information" page (dispatch=companies.view&company_id=1). 
+	Content will be displayed on product tabs of the "Product Information" page (dispatch=companies.view&company_id=1).
+
 	.. fancybox:: img/Tiktok11.png
 		:alt: Vendor Storefront
 
@@ -183,6 +190,7 @@ Vendor Posts
 
 	**Additional**
 	Add-on functionality is unavailable for vendors, if it is limited in Vendor plan by the standard "Vendor Plan" add-on.
+
 	.. fancybox:: img/Tiktok9.png
 		:alt: Additional
 
@@ -204,9 +212,10 @@ TikTok Feed and Quick View
 
 	On the first opening of the feed (click on any post), post list transfers the posts to be displayed in the feed. 
 
-	Opened feed will be scrolled down to the selected post. Feed can be scrolled with a mouse scroll wheel, and closed by click on a background or a cross icon.  
+	Opened feed will be scrolled down to the selected post. Feed can be scrolled with a mouse scroll wheel, and closed by click on a background or a cross icon.
 
 	Content of each post will be loaded in a row. Content will be uploaded from TikTok once the post appears on the
+
 	.. fancybox:: img/Tiktok11.png
 		:alt: Feed
 

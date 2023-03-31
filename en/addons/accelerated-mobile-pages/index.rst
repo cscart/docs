@@ -78,8 +78,12 @@ Useful links
 Compatibility
 =============
 
-    The add-on is compatible with CS-Cart and Multi-Vendor 4.11 and above, but only versions 4.12.x and above are supported. Need compatibility with another CS-Cart version? Contact us now.
+    The add-on is compatible with CS-Cart and Multi-Vendor 4.11 and above, but only versions 4.12.x and above are supported. Need compatibility with another CS-Cart version? |Contact us now.|
     Minimum required PHP version is 5.6. The add-on does not support PHP 8.x yet.
+
+    .. |demo_store| raw:: html
+
+       <!--noindex--><a href="http://google-autocomplete-address.demo.simtechdev.com" target="_blank" rel="nofollow">demo store</a><!--/noindex-->
 
     See more information about compatibility of our add-ons `here <https://docs.cs-cart.com/marketplace-addons/compatibility/index.html>`_.
 
