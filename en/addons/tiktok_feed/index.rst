@@ -214,7 +214,7 @@ TikTok Feed and Quick View
 
 	Opened feed will be scrolled down to the selected post. Feed can be scrolled with a mouse scroll wheel, and closed by click on a background or a cross icon.
 
-	Content of each post will be loaded in a row. Content will be uploaded from TikTok once the post appears on the
+	Content of each post will be loaded in a row. Content will be uploaded from TikTok once the post appears on the screen.
 
 	.. fancybox:: img/Tiktok11.png
 		:alt: Feed
