@@ -8,7 +8,7 @@ New Features and Improvements
 
 [+] Mobile application: The ability to display product blocks on the product page in the mobile application was added.
 
-[+] Multi-Vendor Ultimate: API: Users: Storefronts: Rights of storefront administrators are now separated in the API.
+[+] Multi-Vendor Ultimate: API: Users: Storefronts: Administrator's API privileges now take into account the storefront that the administrator is assigned to.
 
 =====================
 Functionality Changes

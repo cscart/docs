@@ -250,7 +250,7 @@ Bug Fixes
 
 [!] UI/UX: Product filter: If the filter name was too long, the collapse button was displayed incorrectly. Fixed.
 
-[!] Ultimate: The "user_session_products" table had incorrect primary key after upgrade. Fixed.
+[!] Ultimate: Table "user_session_products" had incorrect primary key after upgrade. Fixed.
 
 [!] Ultimate: Storefronts: Add-on: Manual refreshing of add-on settings and language variables also reset the add-on settings for storefronts. Fixed.
 
@@ -259,5 +259,3 @@ Bug Fixes
 [!] Ultimate: Storefronts: Export/Import: Orders: There was no possibility to export orders to the server from one of the storefronts. Fixed.
 
 [!] Ultimate: Storefronts: The gearbox button in the storefront list was grey. Fixed.
-
-[!] Ultimate: Table "user_session_products" had incorrect primary key after upgrade. Fixed.
