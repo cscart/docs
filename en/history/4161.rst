@@ -124,8 +124,6 @@ Bug Fixes
 
 [!] Add-ons: Wish list: The wish list was reset when logging in to the storefront through the admin panel. Fixed.
 
-[!] Add-ons: Wish list: The wish list was reset when logging in to the storefront through the admin panel. Fixed.¶
-
 [!] Checkout: Profile fields: Values of custom profile fields were deleted when editing on checkout. Fixed.
 
 [!] Checkout: In some cases, when changing the zip code shipping methods were not updated. Fixed.
