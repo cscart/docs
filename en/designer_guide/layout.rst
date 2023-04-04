@@ -17,7 +17,7 @@ Layout has the following settings:
 
 * **Grid columns**—the number of columns in a grid (12 or 16). The 16-column grid is preferable and is used by default. This grid allows to build more column combinations because the width of each column is smaller, so, totally there are more columns in a grid.
 
-  In Bootstrap the 12-column grid is used as default, and there is a big number of templates based on it. You better use this grid if your have the complete layout based on it and you need to move it to CS-Cart.
+  In Bootstrap the 12-column grid is used as default, and there is a big number of templates based on it. You better use this grid if you have the complete layout based on it and you need to move it to CS-Cart.
 
   .. important::
 
@@ -101,7 +101,7 @@ Grids are placed in containers. In Bootstrap a grid includes *.span* and *.row*.
 
 You can define the following parameters for a grid:
 
-* **Width**—the number of columns used in the container. For child containers, this number cannot exceed the the length of the root container. This setting defines *.span* to be used for a block (``.span1``—``.span16``).
+* **Width**—the number of columns used in the container. For child containers, this number cannot exceed the length of the root container. This setting defines *.span* to be used for a block (``.span1``—``.span16``).
 
 * **Content alignment**—the position of the container inside the root (or parent) container: 
 
@@ -161,7 +161,7 @@ You can export a layout to a file, or import a previously created layout:
 2. Click the **gear** button in the right upper corner of the page. 
 3. Choose the desired action.
 
-When creating the new theme, export layout to the *layouts* directory after adjusting blocks (remove the old files previously). This layout will be authomatacally enabled when installing a theme.
+When creating the new theme, export layout to the *layouts* directory after adjusting blocks (remove the old files previously). This layout will be automatically enabled when installing a theme.
 
 The export/import file includes:
 
