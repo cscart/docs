@@ -161,7 +161,7 @@ You can export a layout to a file, or import a previously created layout:
 2. Click the **gear** button in the right upper corner of the page. 
 3. Choose the desired action.
 
-When creating the new theme, export layout to the *layouts* directory after adjusting blocks (remove the old files previously). This layout will be automatacally enabled when installing a theme.
+When creating the new theme, export layout to the *layouts* directory after adjusting blocks (remove the old files previously). This layout will be automatically enabled when installing a theme.
 
 The export/import file includes:
 
