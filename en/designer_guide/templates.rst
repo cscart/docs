@@ -5,9 +5,9 @@ Templates
 Templator
 *********
 
-Cs-cart uses the **Smarty 3** template engine. It allows to separate presentation and application code. More information about how it works you can read at the `http://www.smarty.net/ <http://www.smarty.net/>`_ site.
+CS-Cart uses the **Smarty 4** template engine. It allows to separate presentation and application code. You can find out more info about how it works `https://www.smarty.net/ <https://www.smarty.net/>`_.
 
-`This <http://www.smarty.net/docs/en/smarty.for.designers.tpl>`_ chapter will be particulary interesting for the developers. There you will find out what constructions can be used in templates.
+`This chapter <https://www.smarty.net/docs/en/smarty.for.designers.tpl>`_ will be particulary interesting for the developers. There you will find out what constructions can be used in templates.
 
 Templates structure
 *******************
@@ -41,7 +41,7 @@ Templates are stored in the theme *templates* directory. It has the following st
 	*	Connection of the *common/scripts.tpl* file.
 	*	Connection of Theme Editor, demo panel, translate and template mode, if they are active.
 
-*	The *meta.tpl* file - site meta information: description, keywords, viewport, etc.
+*	The **meta.tpl** file - site meta information: description, keywords, viewport, etc.
 
 .. _templates-addons:
 
@@ -87,7 +87,7 @@ File name depends on the language variable that is formed as follows:
 Views templates
 ***************
 
-The `Model-View-Controller <http://en.wikipedia.org/wiki/Model-view-controller>`_ (MVC) architectural pattern is used in CS-Cart.
+The `Model-View-Controller <https://en.wikipedia.org/wiki/Model-view-controller>`_ (MVC) architectural pattern is used in CS-Cart.
 
 The *views* directory contains templates for site pages. Directories that are placed in the *views* directory define controllers to be addressed to.
 
