@@ -143,6 +143,7 @@ Product Posts
 +++++++++++++
 
 	**Managing**
+
 	Posts and their display settings can be managed in the Post Picker on the TikTok Feed tab, provided by the add-on in the Product setting page (dispatch=products.update&product_id=1) on the Admin Panel.
 
 	.. fancybox:: img/Tiktok5.png
@@ -152,6 +153,7 @@ Product Posts
 		:alt: Vendor Panel
 
 	**Storefront**
+
 	Content will be displayed on product tabs of the "Product Information" page.
 
 	.. fancybox:: img/Tiktok7.png
@@ -162,7 +164,8 @@ Product Posts
 	.. fancybox:: img/Tiktok8.png
 	    :alt: Product page block
 
-	**Additional** 
+	**Additional**
+
 	If the TikTok Feed tab in product settings is disabled, the TikTok feed tab on the product page on the storefront is unavailable. 
 
 	Add-on functionality is unavailable for vendors, if it is limited in Vendor plan by the standard "Vendor Plan" add-on.
@@ -175,12 +178,14 @@ Vendor Posts
 ++++++++++++
 
 	**Managing**
+
 	Posts and their display settings can be managed in the Post Picker on the TikTok Feed tab, provided by the add-on in the Vendor setting page (dispatch=companies.update&company_id=1) on the Admin Panel.
 
 	.. fancybox:: img/Tiktok10.png
 		:alt: Vendor Posts
 
 	**Storefront**
+
 	Content will be displayed on product tabs of the "Product Information" page (dispatch=companies.view&company_id=1).
 
 	.. fancybox:: img/Tiktok11.png
@@ -189,6 +194,7 @@ Vendor Posts
 	Content can be displayed via the "TikTok Feed" block with the "Product" filling, if company_id parameter is present on the page.
 
 	**Additional**
+
 	Add-on functionality is unavailable for vendors, if it is limited in Vendor plan by the standard "Vendor Plan" add-on.
 
 	.. fancybox:: img/Tiktok9.png
@@ -210,13 +216,13 @@ TikTok Feed and Quick View
 
 	**Storefront**
 
-	On the first opening of the feed (click on any post), post list transfers the posts to be displayed in the feed. 
+	On the first opening of the feed (click on any post), post list transfers the posts to be displayed in the feed.
 
 	Opened feed will be scrolled down to the selected post. Feed can be scrolled with a mouse scroll wheel, and closed by click on a background or a cross icon.
 
 	Content of each post will be loaded in a row. Content will be uploaded from TikTok once the post appears on the screen.
 
-	.. fancybox:: img/Tiktok11.png
+	.. fancybox:: img/Tiktok12.png
 		:alt: Feed
 
 ++++++++++++++++++++
@@ -226,27 +232,3 @@ TikTok Product Label
 	In case at least one TikTok post is applied to the product, the TikTok label will automatically be applied to this product.
 
 	Function will be unavailable, when “Apply the product label” option is disabled in the add-on settings
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

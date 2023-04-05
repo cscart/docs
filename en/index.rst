@@ -72,3 +72,16 @@ This section provides general information and conditions in terms of compatibili
 .. meta::
    :title: CS-Cart Addons Documentation
    :description: Here you can find all the information about CS-Cart Addons products. Type in your search request and learn more about functionality, advantages, basic mechanics and key features of our add-ons and themes.
+
+==================
+About our support
+==================
+
+This section provides information about terms and conditions of our support.
+
+.. toctree::
+    :maxdepth: 1
+    :titlesonly:
+    :glob:
+
+    support/index

@@ -47,3 +47,15 @@ Compatibility
     :glob:
 
     compatibility/index
+
+
+===================
+Adbout our Support
+===================
+
+.. toctree::
+    :maxdepth: 4
+    :titlesonly:
+    :glob:
+
+    support/index
