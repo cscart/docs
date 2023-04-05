@@ -6,6 +6,7 @@ About our support
     For this very reason, we created the Support Center. It aims to cover such kinds of questions about our add-ons. It is based on the experience of our managers and developers, and on real cases of our clients.
     If you have a question about any of our add-ons, welcome, the answer is waiting for you here.
 
+
     **In order to contact our technical support, please follow these steps:**
 
     * Submit your request in your Help desk system account at `<https://helpdesk.cs-cart.com/>`_;
@@ -38,7 +39,7 @@ Free queries for consultation include
 Additional places to seek help:
 ++++++++++++++++++++++++++++++++
 
-    * `Message Center: <https://marketplace.cs-cart.com/index.php?dispatch=companies.products&company_id=119>`_
+    * `Message Center <https://marketplace.cs-cart.com/index.php?dispatch=companies.products&company_id=119>`_
     * `Forum <http://forum.cs-cart.com/>`_
     * `Video <https://www.youtube.com/@cscartadd-ons>`_
     * Email:  **cart-addons@cscart.com**
