@@ -58,13 +58,25 @@ code {
     font-size: 13px;
 }
 
+.with-background {
+    color: #FFFFFF;
+    text-decoration: underline
+}
+
 .margin-0 {
-    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+
+.p-feedback {
+    color: #FFFFFF;
 }
 
 .navbar-inner {
-    border-bottom: 2px solid rgba(219,219,219,0.3);
-    background: rgba(255,255,255,1);
+    background: linear-gradient(267.11deg, #738CFD 0%, #6DB3F0 100%);
     opacity: 1;
 }
 
@@ -86,11 +98,10 @@ code {
 }
 
 .navbar .brand {
-    width: 130px;
-    height: 45px;
+    width: 185px;
+    height: 93px;
     display: block;
     float: left;
-    margin-left: -20px;
     font-size: 20px;
     font-weight: 200;
     color: #777;
@@ -366,7 +377,7 @@ code {
 .footer {
     min-height: 35px;
     position: relative;
-    background: #141414;
+    background: linear-gradient(267.11deg, #738CFD 0%, #6DB3F0 100%);
 }
 
 
@@ -470,10 +481,8 @@ blockquote p {
     text-shadow: 0 1px 0 rgba(255,255,255,0.5);
 }
 .feedback {
-    border: 1px solid #ebeef2;
-    border-radius: 4px;
-    background: #ebeef2;
-    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    border-radius: 17px;
+    background: linear-gradient(267.11deg, #738CFD 0%, #6DB3F0 100%);
 }
 
 .btn.btn-navbar {
