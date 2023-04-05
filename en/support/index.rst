@@ -1,14 +1,12 @@
 About our support
 -------------------
 
-   Hi! We are glad to know that you are interested in purchasing (if not already purchased) our products. We are doing our best for you by creating add-ons, and we really like it.
-   Furthermore, we want our add-ons to be useful to you. It’s quite common for every one of us to ask ourselves “How does it work?” or “What should I do next?” about some new and unfamiliar things.
-   For this very reason, we created the Support Center. It aims to cover such kinds of questions about our add-ons. It is based on the experience of our managers and developers, and on real cases of our clients.
-   If you have a question about any of our add-ons, welcome, the answer is waiting for you here.
+    Hi! We are glad to know that you are interested in purchasing (if not already purchased) our products. We are doing our best for you by creating add-ons, and we really like it.
+    Furthermore, we want our add-ons to be useful to you. It’s quite common for every one of us to ask ourselves “How does it work?” or “What should I do next?” about some new and unfamiliar things.
+    For this very reason, we created the Support Center. It aims to cover such kinds of questions about our add-ons. It is based on the experience of our managers and developers, and on real cases of our clients.
+    If you have a question about any of our add-ons, welcome, the answer is waiting for you here.
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-In order to contact our technical support, please follow these steps:
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    **In order to contact our technical support, please follow these steps:**
 
     * Submit your request in your Help desk system account at `<https://helpdesk.cs-cart.com/>`_;
     * To get there, you need to log in with the email address with which you purchased the add-on/theme and password. If you don't remember the password, you can use the **Forgot the password?** link;
