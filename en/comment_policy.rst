@@ -2,23 +2,25 @@
 Best Ways to Have Questions Answered and Problems Solved
 ********************************************************
 
-CS-Cart and Multi-Vendor documentation can't answer all the possible questions. That's when we and other users of our software can help. Below you'll find the list of various means of communication, and what they're good for.
+In order to contact our technical support, please follow these steps:**
 
-#. `Help Desk <https://helpdesk.cs-cart.com/>`_ is the best way for those who already bought our software. You'll get a guaranteed reply from CS-Cart & Multi-Vendor technical support team. They'll answer any question covered by `our support policy <https://www.cs-cart.com/support-service.html>`_ and advise what to do in other cases. 
+#. Submit your request in your Help desk system account at `<https://helpdesk.cs-cart.com/>`_;
+#. To get there, you need to log in with the email address with which you purchased the add-on/theme and password. If you don't remember the password, you can use the **Forgot the password?** link;
+#. Fill in the data with the issue (describe the steps of reproducing the issue, screenshots and examples will be appreciated);
+#. You can provide us with a store administration panel and the SSH/SFTP access to the server where your store is located so that we ​could examine the issue in your store in more detail;
+#. Please use the secure "Access information" page of our Help Desk system `<https://helpdesk.cs-cart.com/>`_ in order to provide sensitive access information. You can just click on the "Add record" link on the "Access information" page and fill in access credentials;
+#. Wait for the answer of the specialist in accordance with the SLA (Service Level Agreement) of the technical support service and the priority of your ticket (we work Mon-Fri, 9AM-6PM, our local time is UTC+4.).
 
-   We investigate problems in our clients' stores and accept store access credentials only through Help Desk. It is also one of the places where you can report suspected bugs. If our staff discover that the problem was caused by a bug in our software, support credits won't be subtracted from your account.
 
-   .. note::
+++++++++++++++++++++++++++++++++
+Additional places to seek help:
+++++++++++++++++++++++++++++++++
 
-       If you don't have our software license yet, please use `our contact form <https://www.cs-cart.com/send-message.html>`_ to get a guaranteed reply instead. Note that if your message falls under technical support, it may be redirected to Help Desk automatically.
+    * `Message Center <https://marketplace.cs-cart.com/index.php?dispatch=companies.products&company_id=119>`_
+    * `Forum <http://forum.cs-cart.com/>`_
+    * `Video <https://www.youtube.com/@cscartadd-ons>`_
+    * Email:  **cart-addons@cscart.com**
 
-#. `Our forum <http://forum.cs-cart.com/>`_ is the place where members of CS-Cart community help each other with advice voluntarily. There are many people on the forum, including those with experience in custom development and server configuration.
-
-   Forums can help with things beyond the scope of our technical support, such as coding or changing the standard functionality of CS-Cart and Multi-Vendor.
-
-#. `Bug tracker <http://forum.cs-cart.com/tracker/project-1-cs-cart/>`_ is where you can report bugs in our software. For more information, please refer to `our bug fixing policy <https://www.cs-cart.com/bug-fixing.html>`_. You'll be able to see the bug tracker only after you sign in to your forum account.
-
-#. Our marketplace of add-ons and themes has `the list of third-party developers <https://marketplace.cs-cart.com/developers-catalog.html>`_ who may help you solve problems outside the scope of our technical support, or change the looks and behavior of your online store per your specifications.
 
 .. meta::
    :description: Find out how to contact CS-Cart and Multi-Vendor developer team and the best ways to request new functionality, solve problems, and report bugs.
