@@ -3,130 +3,85 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-*********************
-CS-Cart Documentation
-*********************
+*****************************
+CS-Cart Addons Documentation
+*****************************
 
-.. sidebar:: Version
+Welcome to CS-Cart Addons Documentation! For your convenience we have divided it into several sections dedicated to various type of our products.
 
-    * `4.16.x <../4.16.x/index.html>`_
-    * `4.15.x <../4.15.x/index.html>`_
-    * `4.14.x <../4.14.x/index.html>`_
-    * `4.13.x <../4.13.x/index.html>`_
-    * `4.12.x <../4.12.x/index.html>`_
-    * `4.11.x <../4.11.x/index.html>`_
-    * `4.10.x <../4.10.x/index.html>`_
-    * `4.9.x <../4.9.x/index.html>`_
-    * `4.8.x <../4.8.x/index.html>`_
-    * `4.7.x <../4.7.x/index.html>`_
-    * `4.6.x <../4.6.x/index.html>`_
-    * `4.5.x <../4.5.x/index.html>`_
-    * `4.4.x <../4.4.x/index.html>`_
-    * `4.3.x <../4.3.x/index.html>`_
-    * `4.2.x <../4.2.x/index.html>`_
-    * `4.1.x <../4.1.x/index.html>`_
-    * `4.0.x <../4.0.x/index.html>`_
+`See the full list of CS-Cart Addons Documentation articles. <map.html>`_
 
-Welcome to CS-Cart Documentation! For your convenience we have divided it into several sections dedicated to various aspects of working with CS-Cart. Or you can `see the full list of articles <map.html>`_, if that is more convenient for you.
+This is documentation about add-ons and themes available on the `marketplace. <https://marketplace.cs-cart.com/index.php?dispatch=companies.products&company_id=119>`_
 
-We hope that everyone, be it a user or developer, finds answers to their questions here.
+The information about default CS-Cart add-ons is presented `here. <https://docs.cs-cart.com/latest/user_guide/addons/index.html>`_
+
+We hope that everyone finds answers to their questions.
 
 ===============
-Install CS-Cart
+Add-ons
 ===============
 
-This section describes the CS-Cart installation process on various systems. It also provides other useful information, such as system requirements and important post-installation procedures.
+This section is dedicated to add-ons: useful extensions that provide additional functionality to your store.
 
 .. toctree::
     :maxdepth: 1
     :titlesonly:
     :glob:
 
-    install/index
+    addons/index
 
-==========
-User Guide
-==========
+==================
+Payments Gateways
+==================
 
-This section covers the day-to day use of CS-Cart and the possible questions you might have.
-
-.. toctree::
-    :maxdepth: 1
-    :titlesonly:
-    :glob:
-
-    user_guide/index
-
-===============
-Upgrade CS-Cart
-===============
-
-This section describes the process of upgrading CS-Cart.
+This section is dedicated to payment gateways; extensions that provide integrations of payment methods that your customers could use to pay their orders.
 
 .. toctree::
     :maxdepth: 1
     :titlesonly:
     :glob:
 
-    upgrade/index
+    payments/index
 
 ===============
-Developer Guide
+Themes
 ===============
 
-This section contains the information that is useful for CS-Cart developers.
+This section is dedicated to themes: extensions that change the appearance of your storefront, make it more attractive for your clients and define it among storefronts of your competitors.
 
 .. toctree::
     :maxdepth: 1
     :titlesonly:
     :glob:
 
-    developer_guide/index
-    
-==============
-Designer Guide
-==============
+    themes/index
 
-This section includes the information on theme development for CS-Cart.
+==================
+Compatibility
+==================
 
-.. toctree::
-    :maxdepth: 2
-    :titlesonly:
-
-    designer_guide/index
-
-.. toctree::
-    :maxdepth: 4
-    :hidden:
-
-    author_guide
-    comment_policy
-    map
-
-===============
-Version History
-===============
-
-This section describes the changes that took place in various versions of CS-Cart:
+This section provides general information and conditions in terms of compatibility of our products.
 
 .. toctree::
     :maxdepth: 1
+    :titlesonly:
+    :glob:
 
-    history/index
+    compatibility/index
 
 .. meta::
-   :title: CS-Cart and Multi-Vendor Documentation | Detailed Instructions and Tutorials | Developer Documentation
-   :description: In the CS-Cart and Multi-Vendor documentation, you can find literally any instruction on how to use any function in our multi-vendor software. Just type your request to the search.
+   :title: CS-Cart Addons Documentation
+   :description: Here you can find all the information about CS-Cart Addons products. Type in your search request and learn more about functionality, advantages, basic mechanics and key features of our add-ons and themes.
 
-===============
-CS-Cart Addons
-===============
+==================
+About our support
+==================
 
-This section contains the information about CS-Cart Addons.
+This section provides information about terms and conditions of our support.
 
 .. toctree::
     :maxdepth: 1
     :titlesonly:
     :glob:
 
-    cscart_addons/index
+    support/index

@@ -2,32 +2,10 @@
 View All Articles
 *****************
 
-This page includes links to all of the articles in CS-Cart Documentation.
+This page includes links to all of the articles in CS-Cart Addons Documentation.
 
 ===============
-Install CS-Cart
-===============
-
-.. toctree::
-    :maxdepth: 4
-    :titlesonly:
-    :glob:
-
-    install/index
-
-==========
-User Guide
-==========
-
-.. toctree::
-    :maxdepth: 4
-    :titlesonly:
-    :glob:
-
-    user_guide/index
-
-===============
-Upgrade CS-Cart
+Addons
 ===============
 
 .. toctree::
@@ -35,10 +13,21 @@ Upgrade CS-Cart
     :titlesonly:
     :glob:
 
-    upgrade/index
+    addons/index
+
+================
+Payment Gateways
+================
+
+.. toctree::
+    :maxdepth: 4
+    :titlesonly:
+    :glob:
+
+    payments/index
 
 ===============
-Developer Guide
+Themes
 ===============
 
 .. toctree::
@@ -46,21 +35,27 @@ Developer Guide
     :titlesonly:
     :glob:
 
-    developer_guide/index
+    themes/index
 
-==============
-Designer Guide
-==============
+===============
+Compatibility
+===============
 
 .. toctree::
     :maxdepth: 4
     :titlesonly:
     :glob:
 
-    designer_guide/index
+    compatibility/index
+
+
+===================
+Adbout our Support
+===================
 
 .. toctree::
     :maxdepth: 4
-    :hidden:
+    :titlesonly:
+    :glob:
 
-    author_guide
+    support/index
