@@ -8,7 +8,6 @@ Add-ons
     customer-account-merge/index
     address_autocomplete_by_google/index
     duo_authorization/index
-    duo_authorization/index
     affiliate/index
     affiliate_light/index
     animation-effects/index
@@ -18,8 +17,6 @@ Add-ons
     birthday-present/index
     blocks_animation/index
     buy_more/index
-
-    :hidden: buy_product_link/index
 
     cart_sharing/index
     category-gallery/index
@@ -71,6 +68,7 @@ Add-ons
     product_labels/index
     product_likes/index
     user_profile_page/index
+    buy_product_link/index
     push_notifications/index
     quickbooks_online_integration/index
     google_remarketing_tag/index
