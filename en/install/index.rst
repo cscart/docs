@@ -36,13 +36,6 @@ Although the general idea is always the same, the details of the installation pr
     install_via_console
     windows/index
     linux/index
-
-.. toctree::
-    :maxdepth: 4
-    :titlesonly:
-    :glob:
-    :hidden:
-
     softaculous
 
 ==============================
