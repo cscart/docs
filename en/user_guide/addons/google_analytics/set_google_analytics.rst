@@ -2,7 +2,7 @@
 How To: Set up the Google Analytics add-on
 ******************************************
 .. note ::
-	The support of Google Analytics 4 was added in 4.12.2 version.
+	The support of Google Analytics 4 was added in version 4.12.2.
 
 The **Google Analytics** add-on is created in order to allow the administrator to see the statistics for CS-Cart on his Google account. This add-on is based on `Universal Analytics <https://support.google.com/analytics/answer/2790010?hl=en>`_.
 
