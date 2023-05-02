@@ -3,7 +3,14 @@ Way 1. Softaculous is Installed on Your Server
 **********************************************
 .. note::
 
-    This article applies to the CS-Cart Store Builder Free only since Softaculous does not support paid versions of any script.
+    This article applies only to `CS-Cart Store Builder <https://www.cs-cart.com/store-builder.html>`_ because Softaculous doesn't support paid versions of software.
+    
+.. note::
+
+    You can see the full installation guide in `this article <https://docs.cs-cart.com/latest/install/softaculous.html>`_.
+    
+Step 1. Login to your control panel and find Softaculous
+========================================================
 
 1.1. Log into your control panel and find Softaculous in the list of software. For example, in cPanel go to **Software → Softaculous Apps Installer**.
 
@@ -19,8 +26,11 @@ Way 1. Softaculous is Installed on Your Server
 
 .. important::
     First, associate a domain name with your host’s IP: find out what name servers your host uses for your domain, then use your domain registrar’s control panel to associate your domain name with the name servers. We suggest you read `this article <http://www.thesitewizard.com/domain/point-domain-name-website.shtml>`_ to learn more.
+    
+Step 2. Install Store Builder
+=============================
 
-1.3. Switch to the **Install** tab, and you’ll see a form. Fill it in:
+2.1. Switch to the **Install** tab, and you’ll see a form. Fill it in:
 
 =================================  ==============================================
 **Choose Protocol**                \http:// (choose \https:// if your site has SSL).
@@ -40,13 +50,13 @@ Way 1. Softaculous is Installed on Your Server
     :align: center
     :alt: Use the information from table above to fill in the form.
 
-1.4. After you press **Install**, you’ll see the progress bar running. Please, don’t close the page during the installation.
+2.2. After you press **Install**, you’ll see the progress bar running. Please, don’t close the page during the installation.
 
-.. image:: img/softaculous/4_installation_progress.png
+.. image:: img/softaculous/4_progress.png
     :align: center
     :alt: Don't close the installation page while the progress bar is running. It may take several minutes.
 
-1.5. When the installation is complete you’ll see a message with 2 links to your store: use the first link to view the storefront, and the second link to enter the administrator panel.
+2.3. When the installation is complete you’ll see a message with 2 links to your store: use the first link to view the storefront, and the second link to enter the administrator panel.
 
 .. image:: img/softaculous/5_installation_complete.png
     :align: center

@@ -1,10 +1,10 @@
-****************************************
-How To: Install CS-Cart with Softaculous
-****************************************
+******************************************************
+How To: Install CS-Cart Store Builder with Softaculous
+******************************************************
 
 .. note::
 
-    This article applies to the CS-Cart Store Builder Free only since Softaculous does not support paid versions of any script.
+    This article applies only to `CS-Cart Store Builder <https://www.cs-cart.com/store-builder.html>`_ because Softaculous doesn't support paid versions of software.
 
 **Softaculous App Installer** is a tool that makes installation of web applications much easier. It creates databases, uploads the necessary files to your server and sets the right permissions for the files.
 
@@ -15,8 +15,8 @@ Softaculous can install Store Builder Free for you. It works with virtual hosts 
 
 Some hosts may have Softaculous App Installer as a separate section in the control panel, while others may not include it at all. If you found Softaculous to be installed on your server, use the following instructions.
     
-Step 1. Login to cPanel and find Softaculous
-============================================
+Step 1. Login to your control panel and find Softaculous
+========================================================
 
 1.1. Log into your control panel and find Softaculous in the list of software. For example, in cPanel go to **Software → Softaculous Apps Installer**.
 
@@ -33,8 +33,8 @@ Step 1. Login to cPanel and find Softaculous
 .. important::
     First, associate a domain name with your host’s IP: find out what name servers your host uses for your domain, then use your domain registrar’s control panel to associate your domain name with the name servers. We suggest you read `this article <http://www.thesitewizard.com/domain/point-domain-name-website.shtml>`_ to learn more.
     
-Step 2. Installation process
-============================
+Step 2. Install Store Builder
+=============================
 
 2.1. Switch to the **Install** tab, and you’ll see a form. Fill it in:
 

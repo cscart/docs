@@ -2,9 +2,9 @@
 Way 2. Softaculous is not Installed on Your Server
 **************************************************
 
-.. warning::
+.. note::
 
-    CS-Cart is no longer available on Softaculous. Please :doc:`return to the main page of the section. <index>`
+    CS-Cart Store Builder is available on Softaculous. Please refer to `this article <https://docs.cs-cart.com/latest/install/softaculous.html>`_.
 
 Step 1. Register at Softaculous Forums
 ======================================
