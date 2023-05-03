@@ -4,14 +4,11 @@ How To: Install CS-Cart Store Builder with Softaculous
 
 .. note::
 
-    This article applies only to `CS-Cart Store Builder <https://www.cs-cart.com/store-builder.html>`_ because Softaculous doesn't support paid versions of software.
+    This article applies only to `CS-Cart Store Builder Free <https://www.cs-cart.com/store-builder.html>`_ because Softaculous doesn't support paid versions of software.
 
 **Softaculous App Installer** is a tool that makes installation of web applications much easier. It creates databases, uploads the necessary files to your server and sets the right permissions for the files.
 
 Softaculous can install Store Builder Free for you. It works with virtual hosts and dedicated servers. All you need to do is fill in a form or two to provide the necessary information.
-
-.. important::
-    You need `FTP or SSH access <http://kb.cs-cart.com/ftp-account>`_ to your server. Contact your hosting provider for more details. To learn about FTP access in **cPanel** go to **Files → FTP Accounts** and click **Configure**.
 
 Some hosts may have Softaculous App Installer as a separate section in the control panel, while others may not include it at all. If you found Softaculous to be installed on your server, use the following instructions.
     
