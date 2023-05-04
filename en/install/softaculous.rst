@@ -36,19 +36,19 @@ Step 2. Install Store Builder
 2.1. Switch to the **Install** tab, and you’ll see a form. Fill it in:
 
 
-* **Choose Protocol** — \http:// (choose \https:// if your site has SSL).
-* **Choose Domain** — select your domain from the dropdown menu. It’s *myshop.com* in the example.
-* **Site Name**  — it will be displayed as a Company name in your Store Builder Settings.
-* **Admin Folder**  —  a name of the installation's directory.
-* **Admin Email**  — enter your email here. It will be used to log in to your Admin panel. Store Builder will use it to notify you about new orders, call requests, and other important events in your store. 
-* **Admin Password**  — enter the password you will use to access the Store Builder administration panel.
+* **Choose Protocol**—\http:// (choose \https:// if your site has SSL).
+* **Choose Domain**—select your domain from the dropdown menu. It’s *myshop.com* in the example.
+* **Site Name**—it will be displayed as a Company name in your Store Builder Settings.
+* **Admin Folder**—a name of the installation's directory.
+* **Admin Email**—enter your email here. It will be used to log in to your Admin panel. Store Builder will use it to notify you about new orders, call requests, and other important events in your store. 
+* **Admin Password**—enter the password you will use to access the Store Builder administration panel.
 
 2.2. (optional) You can also fill in the **Advanced options** section. Click on the + icon to open additional settings.
 
-* **Table Prefix**  — leave it as is.
-* **Database Name**  — leave it as is or enter another name for the database.
-* **Disable Update Notifications**  — tick the checkbox, if you don’t want to receive the notifications about Store Builder updates.
-* **Email installation details to**  — enter the email where Softaculous will send the installation details, such as Store Builder admin credentials, MySQL database name, user and password, and other data. You may leave the field empty, but **we highly recommend you to enter your e-mail**.
+* **Table Prefix**—leave it as is.
+* **Database Name**—leave it as is or enter another name for the database.
+* **Disable Update Notifications**—tick the checkbox, if you don’t want to receive the notifications about Store Builder updates.
+* **Email installation details to**—enter the email where Softaculous will send the installation details, such as Store Builder admin credentials, MySQL database name, user and password, and other data. You may leave the field empty, but **we highly recommend you to enter your e-mail**.
 
 .. image:: img/softaculous/3_general_information.png
     :align: center
