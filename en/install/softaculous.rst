@@ -35,31 +35,31 @@ Step 2. Install Store Builder
 
 2.1. Switch to the **Install** tab, and you’ll see a form. Fill it in:
 
-=================================  ==============================================
-**Choose Protocol**                \http:// (choose \https:// if your site has SSL).
-**Choose Domain**                  Select your domain from the dropdown menu. It’s *myshop.com* in the example.
-**In Directory**                   If you want to access your store by the original URL, such as *myshop.com*, leave the field empty. 
-                                   Or you can enter the name of a new directory to be created. For example, if you type *dir*, Softaculous will create *myshop.com/dir* and install Store Builder Free there.
-**Table Prefix**                   Leave it as is.
-**Admin Email**                    Enter your email here. It will be used to log in to your Admin panel. Store Builder will use it to notify you about new orders, call requests, and other important events in your store. 
-**Admin Password**                 Enter the password you will use to access the Store Builder administration panel.
-**CS-Cart License Agreement**      Tick the checkbox to accept the СS-Cart License Agreement. Hover your mouse over the grey **i** icon to find the link to the license agreement in Softaculous.
-**Database Name**                  Leave it as is or enter another name for the database.
-**Disable Update Notifications**   Tick the checkbox, if you don’t want to receive the notifications about Store Builder updates.
-**Email installation details to**  Enter the email where Softaculous will send the installation details, such as Store Builder admin credentials, MySQL database name, user and password, and other data. You may leave the field empty, but **we highly recommend you to enter your e-mail**.
-=================================  ==============================================
+
+* **Choose Protocol** — \http:// (choose \https:// if your site has SSL).
+* **Choose Domain** — select your domain from the dropdown menu. It’s *myshop.com* in the example.
+* **Site name**  — it will be displayed as a Company name in your Store Builder Settings.
+* **Admin Email**  — enter your email here. It will be used to log in to your Admin panel. Store Builder will use it to notify you about new orders, call requests, and other important events in your store. 
+* **Admin Password**  — enter the password you will use to access the Store Builder administration panel.
+
+2.2. (optional) You can also fill in the **Advanced options** section. Click on the + icon to open additional settings.
+
+* **Table Prefix**  — leave it as is.
+* **Database Name**  — leave it as is or enter another name for the database.
+* **Disable Update Notifications**  — tick the checkbox, if you don’t want to receive the notifications about Store Builder updates.
+* **Email installation details to**  — enter the email where Softaculous will send the installation details, such as Store Builder admin credentials, MySQL database name, user and password, and other data. You may leave the field empty, but **we highly recommend you to enter your e-mail**.
 
 .. image:: img/softaculous/3_general_information.png
     :align: center
     :alt: Use the information from table above to fill in the form.
 
-2.2. After you press **Install**, you’ll see the progress bar running. Please, don’t close the page during the installation.
+2.3. After you press **Install**, you’ll see the progress bar running. Please, don’t close the page during the installation.
 
 .. image:: img/softaculous/4_progress.png
     :align: center
     :alt: Don't close the installation page while the progress bar is running. It may take several minutes.
 
-2.3. When the installation is complete you’ll see a message with 2 links to your store: use the first link to view the storefront, and the second link to enter the administrator panel.
+2.4. When the installation is complete you’ll see a message with 2 links to your store: use the first link to view the storefront, and the second link to enter the administrator panel.
 
 .. image:: img/softaculous/5_installation_complete.png
     :align: center
@@ -69,6 +69,7 @@ Step 2. Install Store Builder
     :maxdepth: 2
     :titlesonly:
     :glob:
+    :hidden:
 
     softaculous_1
     softaculous_2
