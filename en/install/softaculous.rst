@@ -39,6 +39,7 @@ Step 2. Install Store Builder
 * **Choose Protocol** — \http:// (choose \https:// if your site has SSL).
 * **Choose Domain** — select your domain from the dropdown menu. It’s *myshop.com* in the example.
 * **Site name**  — it will be displayed as a Company name in your Store Builder Settings.
+* **Admin folder**  —  a name of the installation's directory.
 * **Admin Email**  — enter your email here. It will be used to log in to your Admin panel. Store Builder will use it to notify you about new orders, call requests, and other important events in your store. 
 * **Admin Password**  — enter the password you will use to access the Store Builder administration panel.
 
