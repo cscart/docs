@@ -62,17 +62,16 @@ To learn how to use new functionality, follow quick and easy steps below.
 Compatibility
 =============
 
-The add-on is compatible with CS-Cart and Multi-Vendor 4.5 and above, but only versions 4.11.x, 4.12.x and 4.13.x are supported. PHP 7.1 and higher is required. 
+    The add-on is compatible with CS-Cart and Multi-Vendor 4.10 and above, but only versions 4.12.x and above are supported. Need compatibility with another CS-Cart version? Contact us via email cart-addons@cscart.com now.
+    Minimum required PHP version is 7.1. The add-on does not support PHP 8.x yet.
 
-The add-on is adapted to the New Generation Theme, Vanilla Theme, Airy Mobile Theme, Rome Theme Front Pack and also to Unitheme 2 and Youpi Theme by Alexbranding.
-
-.. note:: Don't know what archive to download to install the add-on? Read `here <https://www.simtechdev.com/docs/faq/index.html#what-archive-do-i-download>`_.
+    See more information about compatibility of our add-ons `here <https://docs.cs-cart.com/marketplace-addons/compatibility/index.html>`_.
 
 =======
 Support
 =======
 
-You are guaranteed a quality add-on supported by the future versions. If you need help, please contact us via our `help desk system <http://www.simtechdev.com/helpdesk>`_.
+You are guaranteed a quality add-on supported by the future versions. If you need help, please contact us via our `help desk system <https://helpdesk.cs-cart.com>`_.
 
 ====
 Demo
