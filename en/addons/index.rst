@@ -8,6 +8,7 @@ Add-ons
     customer-account-merge/index
     address_autocomplete_by_google/index
     duo_authorization/index
+    two-factor_authentication/index
     affiliate/index
     affiliate_light/index
     animation-effects/index
@@ -52,9 +53,7 @@ Add-ons
     mailchimp_ecommerce/index
     marketing_web_push_notification/index
     mobile-layouts/index
-
-    :hidden: order_statistics/index
-
+    order_statistics/index
     order_status_restriction/index
     parallax-effect/index
     pay_by_link/index
@@ -92,7 +91,6 @@ Add-ons
 
     taxcalcs_by_taxjar/index
     tiktok_feed/index
-    two-factor_authentication/index
     vendor-background-image/index
 
     :hidden: vendor_business_hours/index

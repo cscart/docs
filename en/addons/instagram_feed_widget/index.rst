@@ -1,5 +1,5 @@
 *********************
-Insragram Widget
+Instagram Widget
 *********************
 .. raw:: html
 
