@@ -2,24 +2,59 @@
 Products
 ********
 
-URLs
-====
+.. contents::
+   :backlinks: none
+   :local:
 
-*   http://example.com/api/**products**—refer to all products. Only ``GET`` and ``POST`` are supported.
-*   http://example.com/api/**products/:id**—refer to a particular product. ``GET``, ``PUT``, and ``DELETE`` are supported.
-*   http://example.com/api/**categories/:id/products**—refer to all products of a particular :doc:`category <categories>`.
-*   http://example.com/api/**categories/:id/products/:id**—refer to a particular product in a particular category.
+   
+=================
+List All Products
+=================
 
-Nested Objects
-==============
+Only ``GET`` and ``POST`` queries to all products are supported. To get a list of products, send a GET request to ``/api/products/``::
 
-*   :doc:`Product Features <product_features>`
+  GET /api/products/
+
+This request returns products with a short list of details for each product.
+
+
+
+======================
+Get a Specific Product
+======================
+
+ ``GET``, ``PUT``, and ``DELETE`` queries are supported when referring to a particular product.
+
+To get a specific product, send a GET request to ``/api/products/<product_id>/``::
+
+  GET /api/products/100
+    
+    
+To refer to all products of a particular :doc:`category <categories>` send a GET request to  ``/api/categories/:id/products/``::
+
+  GET /api/categories/166/products/
+  
+  
+To refer to to a particular product in a particular category, send a GET request to ``/api/categories/:id/products/:id``::
+
+
+  GET /api/categories/166/products/123
+  
+
+---------------
+Response Format
+---------------
+
+* The product exists: **HTTP/1.1 200 OK** and JSON with product details.
+
+* The products doesn't exist: **HTTP/1.1 404 Not Found**.
 
 
 .. _api-products-filtering:
 
-Filtering
-=========
+----------------------
+Filtering: an overview
+----------------------
 
 In order to get products based on a filter, you can use one of the available filters. Product filtering is similar to the advanced search performed in the admin panel.
 
@@ -44,45 +79,30 @@ The request URL is as follows (separated into several lines for readability):
 
 *   ``query`` is the search query
 
-In order to get results referring only to a particular store in CS-Cart Ultimate or vendor in CS-Cart Multi-Vendor, use the ``stores`` and ``vendors`` entity respectively:
+In order to get results referring only to a particular store in Store Builder Ultimate or vendor in CS-Cart Multi-Vendor, use the ``stores`` and ``vendors`` entity respectively:
 
-    http://example.com/api/stores/1/products
+    
+.. list-table::
+    :stub-columns: 1
+    :widths: 5 15
+    
+    *   -   Store Builder
+        -   Send a GET request to ``/api/stores/<company_id>/products/``
+    *   -   Multi-Vendor
+        -   Send a GET request to ``/api/products/``
+    
 
-    http://example.com/api/vendors/1/products
-
-Example
--------
+**Example**
 
 Get all products of the 1st store, with 'foo' in their full description, costing over $10, and sort the result by product name from A to Z:
 
 .. code-block:: bash
 
-    curl --user admin@example.com:APIkey -X GET 'http://example.com/api/stores/1/products?pfull=Y&price_from=10&sort_by=product&sort_order=asc&q=foo'
+     GET /api/stores/1/products?pfull=Y&price_from=10&sort_by=product&sort_order=asc&q=foo
 
 .. _filters:
 
-Getting and updating product quantity in warehouse
---------------------------------------------------
-
-* Get product quantity in warehouse:
-
-  ::
-
-    curl -X GET 'http://example.com/api/2.0/products/12?get_detailed_warehouses_amounts=Y'
-
-
-* Update product quantity in warehouse:
-
-  :: 
-
-    curl --header 'Content-Type: application/json' -X PUT 'http://example.com/api/2.0/products/12' --data-binary '{"warehouses": {"1": "15","2": "9"}}'
-
-  *1 & 2 is the store location id*
-
-  *15 & 9 is the product quantity in warehouses*
-
-  *12 is the product id*
-
+-------
 Filters
 -------
 
@@ -151,6 +171,7 @@ Additional Params
 
 .. _sorting:
 
+-------
 Sorting
 -------
 
@@ -176,6 +197,7 @@ Sorting
 
 It is possible to set the sort order by defining the ``sort_order`` URL param to ``asc`` or ``desc``.
 
+----------
 Pagination
 ----------
 
@@ -209,8 +231,9 @@ Response is an array with 20 products from the 5th page.
 
 .. _api-products-fields:
 
-Fields
-======
+---------------
+Product details
+---------------
 
 A product has a number of properties, represented by fields.
 
@@ -537,6 +560,7 @@ The full list of supported fields is given below (mandatory fields are marked wi
 
 .. _main-pair:
 
+---------
 Main Pair
 ---------
 
@@ -599,3 +623,127 @@ A pair of the full product image and (optionally) a thumbnail.
         -   Image height
         -   —
         -   integer
+
+================
+Create a product
+================     
+
+.. list-table::
+    :stub-columns: 1
+    :widths: 5 15
+    
+    *   -   Store Builder
+        -   Send a POST request to ``/api/stores/<company_id>/products/``
+    *   -   Multi-Vendor
+        -   Send a POST request to ``/api/products/``
+
+
+To create a new product send a ``POST`` request with required fields in JSON:  ``category_ids``, ``products``.
+
+**Example**
+
+Send a POST request to  ``/api/products/``::
+
+  POST /api/products/
+  
+
+------------------------------
+Example JSON: Create a Product 
+------------------------------
+
+::
+
+  {
+   "product": "Product Name",
+   "category_ids": "166",
+   "price":"1000"
+  }
+
+This request creates a product with a name, a main category ID and a price.
+
+
+---------------
+Response Format
+---------------
+
+* The product is created: **HTTP/1.1 201 Created** and JSON with new product ID.
+* If the product wasn't created, the response will look like this: **HTTP/1.1 400 Bad Request**.
+
+
+
+================
+Update a product
+================ 
+
+To update an existing product, send the PUT request to ``/api/products/<product_id>/``. For example::
+
+  PUT /api/product/100
+
+
+------------------------------------
+Example JSON: Update Product details
+------------------------------------
+
+::
+
+  {
+   "product": "New Product Name",
+   "category_ids": "166",
+   "price":"1500",
+   "amount": "10"
+  }
+
+This request updates a Product Name, a main category with id=166, a price and a quantity of the particular product.
+
+
+
+------------------------------------
+Example JSON: Update a Product image
+------------------------------------
+
+::
+
+  {
+   "product": "Product Name",
+   "main_pair": {
+   "pair_id": "0",
+   "image_id": "0",
+   "detailed_id": "0",
+    "position": "0",
+    "detailed": {
+      "image_path": "https://path/to/image.jpg"
+     }
+        }
+            }
+
+This request updates the main image of the particular product. In this example the field ``main_pair`` represents the main image of the product and can be a local file on your server. To specify the remote image use the ``image_path`` field of the ``detailed`` object to specify the URL of the image.
+  
+---------------
+Response Format
+---------------
+* The product is updated: **HTTP/1.1 200 OK** and JSON with ``product_id``.
+* Failed to update the product: **HTTP/1.1 400 Bad Request**.
+
+
+================
+Delete a product
+================
+
+To delete a product, send a DELETE request to the ``/api/products/<product_id>``. For example::
+
+    DELETE /api/products/100/
+
+This request will delete the product with ``product_id=100``.
+
+
+---------------
+Response Format
+---------------
+
+
+* The product has been deleted successfully: **HTTP/1.1 204 No Content**.
+
+* The product couldn’t be deleted: **HTTP/1.1 400 Bad Request**.
+ 
+* The product doesn’t exist: **HTTP/1.1 404 Not Found**.
+
