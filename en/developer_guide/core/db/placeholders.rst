@@ -317,3 +317,28 @@ This placeholder allows to insert multiple new records in a table.
   .. code-block:: mysql
         
       INSERT INTO cscart_orders (payment_id, order_id) VALUES ('5', '3'),('5', '4');
+
+
+
+--    
+?t
+--
+
+This placeholder converts data to a fractional number with triple precision.
+
+* Accepted data:  *string* , *number*
+
+* Example usage::
+
+        $product_weight = '1.120';
+        db_query('SELECT * FROM ?:shippings WHERE min_weight >= ?t', $product_weight);
+
+
+* Resulting query:
+
+  .. code-block:: mysql
+
+        
+      SELECT * FROM cscart_shippings WHERE min_weight >= 1.120;
+
+

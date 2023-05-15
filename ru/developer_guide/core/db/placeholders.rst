@@ -407,3 +407,23 @@
 
     INSERT INTO ?:users (`email`, `status`, `user_type`) VALUES ('mail@dbazhenov.ru', 'A', 'C'), ('video@dbazhenov.ru', 'A', 'C')
 
+--    
+?t
+--
+
+Этот плейсхолдер преобразует данные в дробное число с точностью до сотых. 
+
+* Принимает строку, число.
+
+* Пример::
+
+        $product_weight = '1.120';
+        db_query('SELECT * FROM ?:shippings WHERE min_weight >= ?t', $product_weight);
+
+
+* Запрос, который будет отправлен в базу данных:
+
+  .. code-block:: mysql
+
+        
+      SELECT * FROM cscart_shippings WHERE min_weight >= 1.120;
