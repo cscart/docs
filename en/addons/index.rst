@@ -34,9 +34,7 @@ Add-ons
     order_and_user_tags/index
     facebook_conversions_api/index
     facebook_pixel/index
-
-    :hidden: follow_vendor/index
-
+    follow_vendor/index
     google_analytics_enhanced_ecommerce/index
     gift_registry/index
     accelerated-mobile-pages/index
@@ -92,10 +90,8 @@ Add-ons
     taxcalcs_by_taxjar/index
     tiktok_feed/index
     vendor-background-image/index
-
-    :hidden: vendor_business_hours/index
-
     vendor_ratings/index
+    vendor_business_hours/index
     wishlist-pop-up/index
     xml_import/index
     youtube/index
