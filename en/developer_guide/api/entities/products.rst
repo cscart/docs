@@ -11,50 +11,52 @@ Products
 List All Products
 =================
 
-Only ``GET`` and ``POST`` queries to all products are supported. To get a list of products, send a GET request to ``/api/products/``::
+To get a list of products, send a GET request to ``/api/products/``::
 
   GET /api/products/
 
 This request returns products with a short list of details for each product.
 
-
-
-======================
-Get a Specific Product
-======================
-
- ``GET``, ``PUT``, and ``DELETE`` queries are supported when referring to a particular product.
-
-To get a specific product, send a GET request to ``/api/products/<product_id>/``::
-
-  GET /api/products/100
-    
     
 To refer to all products of a particular :doc:`category <categories>` send a GET request to  ``/api/categories/:id/products/``::
 
   GET /api/categories/166/products/
-  
-  
-To refer to to a particular product in a particular category, send a GET request to ``/api/categories/:id/products/:id``::
+
+---------------------------------
+Pagination, Sorting and Filtering
+---------------------------------
 
 
-  GET /api/categories/166/products/123
-  
-
----------------
-Response Format
----------------
-
-* The product exists: **HTTP/1.1 200 OK** and JSON with product details.
-
-* The products doesn't exist: **HTTP/1.1 404 Not Found**.
+**Pagination**
 
 
-.. _api-products-filtering:
+To get a specific number of products or list of products from a concrete page in a response, use pagination parameters:
 
-----------------------
-Filtering: an overview
-----------------------
+.. list-table::
+    :header-rows: 1
+    :stub-columns: 1
+    :widths: 20 30
+
+    *   -   Pagination param
+        -   Description
+    *   -   page
+        -   Shows products on a page with the defined number
+    *   -   items_per_page
+        -   Shows N products, where N - is a number defined in the parameter
+
+**Examples:**
+
+*   ``http://example.com/api/products?page=5``
+
+Response is an array with 10 products from the 5th page (10 is the default value of the ``items_per_page`` parameter).
+
+*   ``http://example.com/api/products?items_per_page=20``
+
+Response is an array with 20 products from the first page.
+
+*   ``http://example.com/api/products?page=5&items_per_page=20``
+
+Response is an array with 20 products from the 5th page.
 
 In order to get products based on a filter, you can use one of the available filters. Product filtering is similar to the advanced search performed in the admin panel.
 
@@ -79,7 +81,7 @@ The request URL is as follows (separated into several lines for readability):
 
 *   ``query`` is the search query
 
-In order to get results referring only to a particular store in Store Builder Ultimate or vendor in CS-Cart Multi-Vendor, use the ``stores`` and ``vendors`` entity respectively:
+In order to get results referring only to a particular store in CS-Cart Store Builder Ultimate or vendor in CS-Cart Multi-Vendor, use the ``stores`` and ``vendors`` entity respectively:
 
     
 .. list-table::
@@ -100,11 +102,41 @@ Get all products of the 1st store, with 'foo' in their full description, costing
 
      GET /api/stores/1/products?pfull=Y&price_from=10&sort_by=product&sort_order=asc&q=foo
 
+
+.. _sorting:
+
+
+**Sorting**
+
+
+.. list-table::
+    :header-rows: 1
+    :stub-columns: 1
+    :widths: 5 30
+
+    *   -   Sort param
+        -   Description
+    *   -   status
+        -   Product status
+    *   -   list_price
+        -   List price
+    *   -   product
+        -   Product name
+    *   -   price
+        -   Price
+    *   -   code
+        -   Product code
+    *   -   amount
+        -   In stock amount
+
+It is possible to set the sort order by defining the ``sort_order`` URL param to ``asc`` or ``desc``.
+
+
 .. _filters:
 
--------
-Filters
--------
+
+**Filters**
+
 
 Available ``filter`` attribute values:
 
@@ -138,8 +170,8 @@ Available ``filter`` attribute values:
 
 .. _additional-params:
 
-Additional Params
------------------
+**Additional Params**
+
 
 .. list-table::
     :header-rows: 1
@@ -169,71 +201,12 @@ Additional Params
             | ``D``
             | ``H``
 
-.. _sorting:
-
--------
-Sorting
--------
-
-.. list-table::
-    :header-rows: 1
-    :stub-columns: 1
-    :widths: 5 30
-
-    *   -   Sort param
-        -   Description
-    *   -   status
-        -   Product status
-    *   -   list_price
-        -   List price
-    *   -   product
-        -   Product name
-    *   -   price
-        -   Price
-    *   -   code
-        -   Product code
-    *   -   amount
-        -   In stock amount
-
-It is possible to set the sort order by defining the ``sort_order`` URL param to ``asc`` or ``desc``.
-
-----------
-Pagination
-----------
-
-To get a specific number of products or list of products from a concrete page in a response, use pagination parameters:
-
-.. list-table::
-    :header-rows: 1
-    :stub-columns: 1
-    :widths: 20 30
-
-    *   -   Pagination param
-        -   Description
-    *   -   page
-        -   Shows products on a page with the defined number
-    *   -   items_per_page
-        -   Shows N products, where N - is a number defined in the parameter
-
-**Examples:**
-
-*   *http://example.com/api/products?page=5*
-
-Response is an array with 10 products from the 5th page (10 is the default value of the ``items_per_page`` parameter).
-
-*   *http://example.com/api/products?items_per_page=20*
-
-Response is an array with 20 products from the first page.
-
-*   *http://example.com/api/products?page=5&items_per_page=20*
-
-Response is an array with 20 products from the 5th page.
 
 .. _api-products-fields:
 
----------------
-Product details
----------------
+
+**Product fields**
+
 
 A product has a number of properties, represented by fields.
 
@@ -560,9 +533,9 @@ The full list of supported fields is given below (mandatory fields are marked wi
 
 .. _main-pair:
 
----------
-Main Pair
----------
+
+**Main Pair**
+
 
 A pair of the full product image and (optionally) a thumbnail.
 
@@ -624,6 +597,155 @@ A pair of the full product image and (optionally) a thumbnail.
         -   —
         -   integer
 
+======================
+Get a Specific Product
+======================
+
+
+To get a specific product, send a GET request to ``/api/products/<product_id>/``::
+
+  GET /api/products/100
+    
+  
+To refer to a particular product in a particular category, send a GET request to ``/api/categories/:id/products/:id``::
+
+
+  GET /api/categories/166/products/123
+  
+
+---------------
+Response Format
+---------------
+
+* The product exists: **HTTP/1.1 200 OK**. The response is JSON with the following data::
+
+    {
+    "min_items_in_box": 0,
+    "max_items_in_box": 0,
+    "box_length": 0,
+    "box_width": 0,
+    "box_height": 0,
+    "product_id": 390,
+    "product_code": "",
+    "product_type": "P",
+    "status": "A",
+    "company_id": "1",
+    "list_price": "0",
+    "amount": "10",
+    "weight": "0.000",
+    "length": "0",
+    "width": "0",
+    "height": "0",
+    "shipping_freight": "0.00",
+    "low_avail_limit": "0",
+    "timestamp": "1684393192",
+    "updated_timestamp": "1684393192",
+    "usergroup_ids": "0",
+    "is_edp": "N",
+    "edp_shipping": "N",
+    "unlimited_download": "N",
+    "tracking": "B",
+    "free_shipping": "N",
+    "zero_price_action": "R",
+    "is_pbp": "N",
+    "is_op": "N",
+    "is_oper": "N",
+    "is_returnable": "Y",
+    "return_period": "10",
+    "avail_since": "0",
+    "out_of_stock_actions": "N",
+    "localization": "",
+    "min_qty": "0",
+    "max_qty": "0",
+    "qty_step": "0",
+    "list_qty_count": "0",
+    "tax_ids": [],
+    "age_verification": "N",
+    "age_limit": "0",
+    "options_type": "P",
+    "exceptions_type": "F",
+    "details_layout": "",
+    "shipping_params": "a:5:{s:16:\"min_items_in_box\";i:0;s:16:\"max_items_in_box\";i:0;s:10:\"box_length\";i:0;s:9:\"box_width\";i:0;s:10:\"box_height\";i:0;}",
+    "facebook_obj_type": "",
+    "parent_product_id": "0",
+    "buy_now_url": "",
+    "is_stock_split_by_warehouses": "N",
+    "lang_code": "en",
+    "product": "API Product",
+    "shortname": "",
+    "short_description": null,
+    "full_description": null,
+    "meta_keywords": "",
+    "meta_description": "",
+    "search_words": null,
+    "page_title": "",
+    "age_warning_message": null,
+    "promo_text": null,
+    "price": "1000",
+    "category_ids": [
+    166
+    ],
+    "popularity": null,
+    "company_name": "Simtech",
+    "sales_amount": null,
+    "seo_name": "api-product",
+    "seo_path": "166",
+    "discussion_type": "D",
+    "average_rating": null,
+    "product_reviews_count": null,
+    "base_price": "1000",
+    "main_category": 166,
+    "image_pairs": [],
+    "main_pair": [],
+    "prices": [
+        {
+            "product_id": "390",
+            "lower_limit": "1",
+            "usergroup_id": "0",
+            "percentage_discount": "0.00",
+            "price": "1000"
+        }
+    ],
+    "shared_product": "N",
+    "product_features": [],
+    "options_type_raw": null,
+    "exceptions_type_raw": null,
+    "tracking_raw": null,
+    "zero_price_action_raw": null,
+    "min_qty_raw": null,
+    "max_qty_raw": null,
+    "qty_step_raw": null,
+    "list_qty_count_raw": null,
+    "details_layout_raw": "",
+    "detailed_params": {
+    "info_type": "D",
+        "is_preview": false
+    },
+    "shared_between_companies": [
+        "1"
+    ],
+    "have_required": "N",
+    "selected_options": [],
+    "variation_features": [],
+    "has_options": false,
+    "product_options": [],
+    "discounts": {
+        "A": 0,
+        "P": 0
+    },
+    "qty_content": []
+    }
+
+
+    
+    
+* The products doesn't exist: **HTTP/1.1 404 Not Found**.
+
+
+.. _api-products-filtering:
+
+
+
 ================
 Create a product
 ================     
@@ -662,14 +784,43 @@ Example JSON: Create a Product
 This request creates a product with a name, a main category ID and a price.
 
 
+
+--------------------------------------------
+Example JSON: Create a Product with an image
+--------------------------------------------
+
+::
+
+  {
+   "product": "API Product 2",
+    "category_ids": "166",
+    "price":"1000",
+    "amount":"10",
+    "status":"A",
+    "main_pair": {
+    "detailed": {
+    "image_url": "http://localdomain.com/image.jpg"
+    }
+        }
+            }
+
+  
+This request creates a product with an image, a price, and an Active status. In this example we're using the ``main_pair`` field to specify the image for the product. This field represents the main image that will be displayed for the product, and can be a local file or a remote image. In this case, we're specifying a remote image using the ``image_url`` field of the detailed object.
+
 ---------------
 Response Format
 ---------------
 
-* The product is created: **HTTP/1.1 201 Created** and JSON with new product ID.
+* The product is created: **HTTP/1.1 201 Created** and JSON with new ``product_id``::
+
+
+    {
+    "product_id": 391
+    }
+
+
+
 * If the product wasn't created, the response will look like this: **HTTP/1.1 400 Bad Request**.
-
-
 
 ================
 Update a product
@@ -696,7 +847,6 @@ Example JSON: Update Product details
 This request updates a Product Name, a main category with id=166, a price and a quantity of the particular product.
 
 
-
 ------------------------------------
 Example JSON: Update a Product image
 ------------------------------------
@@ -718,11 +868,30 @@ Example JSON: Update a Product image
 
 This request updates the main image of the particular product. In this example the field ``main_pair`` represents the main image of the product and can be a local file on your server. To specify the remote image use the ``image_path`` field of the ``detailed`` object to specify the URL of the image.
   
+
+
+-----------------------------------------------
+Example JSON: Update a Product to add a Feature
+-----------------------------------------------
+
+To add a feature to a product, send a PUT request to ``api/products/<product_id>``
+
+::
+
+    {
+    "product_features": {
+    "feature_id": "variant_id"
+    }
+        }
+
+This request will add a feature to the product. Here is an article about :doc:`Product Features. <product_features>`
+
 ---------------
 Response Format
 ---------------
 * The product is updated: **HTTP/1.1 200 OK** and JSON with ``product_id``.
 * Failed to update the product: **HTTP/1.1 400 Bad Request**.
+
 
 
 ================
