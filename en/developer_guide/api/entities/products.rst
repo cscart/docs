@@ -21,14 +21,23 @@ This request returns products with a short list of details for each product.
 To refer to all products of a particular :doc:`category <categories>` send a GET request to  ``/api/categories/:id/products/``::
 
   GET /api/categories/166/products/
+  
+  
+---------------
+Response Format
+---------------
+
+* The product exists: **HTTP/1.1 200 OK**. The response is JSON with Products.
+* The products doesn't exist: **HTTP/1.1 404 Not Found**.
+
 
 ---------------------------------
 Pagination, Sorting and Filtering
 ---------------------------------
 
 
-**Pagination**
-
+Pagination
+----------
 
 To get a specific number of products or list of products from a concrete page in a response, use pagination parameters:
 
@@ -91,7 +100,7 @@ In order to get results referring only to a particular store in CS-Cart Store Bu
     *   -   Store Builder
         -   Send a GET request to ``/api/stores/<company_id>/products/``
     *   -   Multi-Vendor
-        -   Send a GET request to ``/api/products/``
+        -   Send a GET request to ``api/vendors/<vendor_id>/products``
     
 
 **Example**
@@ -103,11 +112,18 @@ Get all products of the 1st store, with 'foo' in their full description, costing
      GET /api/stores/1/products?pfull=Y&price_from=10&sort_by=product&sort_order=asc&q=foo
 
 
+Get all products of a particular vendor and sort the result as an array with 20 products from the 5th page:
+
+.. code-block:: bash
+
+    GET /api/vendors/1/products?page=5&items_per_page=20
+
+
 .. _sorting:
 
 
-**Sorting**
-
+Sorting
+-------
 
 .. list-table::
     :header-rows: 1
@@ -135,8 +151,8 @@ It is possible to set the sort order by defining the ``sort_order`` URL param to
 .. _filters:
 
 
-**Filters**
-
+Filtering
+---------
 
 Available ``filter`` attribute values:
 
@@ -205,8 +221,8 @@ Available ``filter`` attribute values:
 .. _api-products-fields:
 
 
-**Product fields**
-
+Product fields
+--------------
 
 A product has a number of properties, represented by fields.
 
@@ -534,8 +550,8 @@ The full list of supported fields is given below (mandatory fields are marked wi
 .. _main-pair:
 
 
-**Main Pair**
-
+Main Pair
+---------
 
 A pair of the full product image and (optionally) a thumbnail.
 
@@ -659,7 +675,8 @@ Response Format
     "max_qty": "0",
     "qty_step": "0",
     "list_qty_count": "0",
-    "tax_ids": [],
+    "tax_ids":
+    [],
     "age_verification": "N",
     "age_limit": "0",
     "options_type": "P",
@@ -682,8 +699,9 @@ Response Format
     "age_warning_message": null,
     "promo_text": null,
     "price": "1000",
-    "category_ids": [
-    166
+    "category_ids":
+    [
+        166
     ],
     "popularity": null,
     "company_name": "Simtech",
@@ -695,9 +713,12 @@ Response Format
     "product_reviews_count": null,
     "base_price": "1000",
     "main_category": 166,
-    "image_pairs": [],
-    "main_pair": [],
-    "prices": [
+    "image_pairs":
+    [],
+    "main_pair":
+    [],
+    "prices":
+    [
         {
             "product_id": "390",
             "lower_limit": "1",
@@ -707,7 +728,8 @@ Response Format
         }
     ],
     "shared_product": "N",
-    "product_features": [],
+    "product_features":
+    [],
     "options_type_raw": null,
     "exceptions_type_raw": null,
     "tracking_raw": null,
@@ -717,23 +739,30 @@ Response Format
     "qty_step_raw": null,
     "list_qty_count_raw": null,
     "details_layout_raw": "",
-    "detailed_params": {
-    "info_type": "D",
+    "detailed_params":
+    {
+        "info_type": "D",
         "is_preview": false
     },
-    "shared_between_companies": [
+    "shared_between_companies":
+    [
         "1"
     ],
     "have_required": "N",
-    "selected_options": [],
-    "variation_features": [],
+    "selected_options":
+    [],
+    "variation_features":
+    [],
     "has_options": false,
-    "product_options": [],
-    "discounts": {
+    "product_options":
+    [],
+    "discounts":
+    {
         "A": 0,
         "P": 0
     },
-    "qty_content": []
+    "qty_content":
+    []
     }
 
 
@@ -760,7 +789,7 @@ Create a product
         -   Send a POST request to ``/api/products/``
 
 
-To create a new product send a ``POST`` request with required fields in JSON:  ``category_ids``, ``products``.
+To create a new product send a ``POST`` request with required fields in JSON:  ``category_ids``, ``product``.
 
 **Example**
 
@@ -775,15 +804,31 @@ Example JSON: Create a Product
 
 ::
 
-  {
-   "product": "Product Name",
-   "category_ids": "166",
-   "price":"1000"
-  }
+    {
+    "product": "Product Name",
+    "category_ids": "166",
+    "price": "1000"
+    }
+
+
 
 This request creates a product with a name, a main category ID and a price.
 
+------------------------------------------------------
+Example JSON: Create a Product for a particular Vendor 
+------------------------------------------------------    
+    
+ Send a POST request to   ``api/vendors/1/products``
+ 
+ ::
 
+    {
+    "product": "Vendor's Product Name",
+    "category_ids": "166",
+    "price": "1000"
+    }
+    
+This request creates a product for the Vendor with a ``vendor_id=1``.
 
 --------------------------------------------
 Example JSON: Create a Product with an image
@@ -791,18 +836,21 @@ Example JSON: Create a Product with an image
 
 ::
 
-  {
-   "product": "API Product 2",
+    {
+    "product": "API Product 2",
     "category_ids": "166",
-    "price":"1000",
-    "amount":"10",
-    "status":"A",
-    "main_pair": {
-    "detailed": {
-    "image_url": "http://localdomain.com/image.jpg"
-    }
+    "price": "1000",
+    "amount": "10",
+    "status": "A",
+    "main_pair":
+    {
+        "detailed":
+        {
+            "image_url": "http://localdomain.com/image.jpg"
         }
-            }
+    }
+    }
+
 
   
 This request creates a product with an image, a price, and an Active status. In this example we're using the ``main_pair`` field to specify the image for the product. This field represents the main image that will be displayed for the product, and can be a local file or a remote image. In this case, we're specifying a remote image using the ``image_url`` field of the detailed object.
@@ -837,12 +885,12 @@ Example JSON: Update Product details
 
 ::
 
-  {
-   "product": "New Product Name",
-   "category_ids": "166",
-   "price":"1500",
-   "amount": "10"
-  }
+    {
+    "product": "New Product Name",
+    "category_ids": "166",
+    "price": "1500",
+    "amount": "10"
+    }
 
 This request updates a Product Name, a main category with id=166, a price and a quantity of the particular product.
 
@@ -853,18 +901,20 @@ Example JSON: Update a Product image
 
 ::
 
-  {
-   "product": "Product Name",
-   "main_pair": {
-   "pair_id": "0",
-   "image_id": "0",
-   "detailed_id": "0",
-    "position": "0",
-    "detailed": {
-      "image_path": "https://path/to/image.jpg"
-     }
+    {
+    "product": "Product Name",
+    "main_pair":
+    {
+        "pair_id": "0",
+        "image_id": "0",
+        "detailed_id": "0",
+        "position": "0",
+        "detailed":
+        {
+            "image_path": "https://path/to/image.jpg"
         }
-            }
+    }
+    }
 
 This request updates the main image of the particular product. In this example the field ``main_pair`` represents the main image of the product and can be a local file on your server. To specify the remote image use the ``image_path`` field of the ``detailed`` object to specify the URL of the image.
   
@@ -879,10 +929,11 @@ To add a feature to a product, send a PUT request to ``api/products/<product_id>
 ::
 
     {
-    "product_features": {
-    "feature_id": "variant_id"
+    "product_features":
+    {
+        "feature_id": "variant_id"
     }
-        }
+    }
 
 This request will add a feature to the product. Here is an article about :doc:`Product Features. <product_features>`
 
