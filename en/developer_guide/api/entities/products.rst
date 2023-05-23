@@ -130,9 +130,6 @@ To get a specific number of products or list of products from a concrete page in
 
 .. only:: addons
 
-Addons
-------
-
 .. list-table::
     :header-rows: 1
     :stub-columns: 1
