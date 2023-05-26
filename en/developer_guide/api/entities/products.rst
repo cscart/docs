@@ -2,7 +2,7 @@
 Products
 ********
 
-A substantial part of an online store. Products can be viewed, created, updated and deleted by store administrators and vendors.
+Products are what customers come for to an online store or marketplace. Administrators can create, update, or delete products; customers see those products on the storefront (not through API) and can buy them. In API, a product can become a part of :doc:`Cart<carts>` or :doc:`Order<orders>`.
 
 .. contents::
    :backlinks: none
@@ -28,7 +28,7 @@ To get a list of products, send a GET request to ``/api/products/``::
         -   This request returns 50 products with a short list of details for each product.
 
     
-To refer to all products of a particular :doc:`category <categories>` send a GET request to  ``/api/categories/:id/products/``::
+To refer to all products of a particular :doc:`Category <categories>` send a GET request to  ``/api/categories/:id/products/``::
 
   GET /api/categories/166/products/
   
@@ -44,69 +44,71 @@ To get a specific number of products or list of products from a concrete page in
 .. list-table::
     :header-rows: 1
     :stub-columns: 1
-    :widths: 20 30
+    :widths: 10 30 15
 
     *   -   Pagination param
         -   Description
+        -   Supported values (if any)
     *   -   page
         -   Shows products on a page with the defined number
+        -   | 
     *   -   items_per_page
         -   Shows N products, where N - is a number defined in the parameter
-
-
-
-.. _sorting:
-
-
-.. list-table::
-    :header-rows: 1
-    :stub-columns: 1
-    :widths: 5 30
-
-    *   -   Param
-        -   Description
+        -   | 
+    *   -   Sorting Param
+        -   |
+        -   |
     *   -   status
         -   Product status
+        -   | 
     *   -   list_price
         -   List price
+        -   | 
     *   -   product
         -   Product name
+        -   | 
     *   -   price
         -   Price
+        -   | 
     *   -   code
         -   Product code
+        -   | 
     *   -   amount
         -   In stock amount
-
+        -   | 
+    *   -   Filtering Param
+        -   |
+        -   | 
     *   -   pname
         -   Product name
+        -   | 
     *   -   pshort
         -   Short description
+        -   | 
     *   -   pfull
         -   Full description
+        -   | 
     *   -   pkeywords
         -   Meta keywords
+        -   | 
     *   -   pcode
         -   Product code
+        -   | 
     *   -   cid
         -   Category ID
+        -   | 
     *   -   amount_from
         -   In stock lower range
+        -   | 
     *   -   amount_to
         -   In stock higher range
+        -   | 
     *   -   price_from
         -   Price lower range
+        -   | 
     *   -   price_to
         -   Price higher range
-
-.. list-table::
-    :header-rows: 1
-    :stub-columns: 1
-    :widths: 5 30 5
-
-    *   -   Param
-        -   Description
-        -   Supported values
+        -   | 
     *   -   subcats
         -   Include subcategories of the given category (the ``cid`` filter must be used) in the search scope
         -   | ``Y``
@@ -126,57 +128,30 @@ To get a specific number of products or list of products from a concrete page in
         -   | ``A``
             | ``D``
             | ``H``
-
-
-.. only:: addons
-
-.. list-table::
-    :header-rows: 1
-    :stub-columns: 1
-    :widths: 5 30 5 10
-
-    *   -   Field name
-        -   Description
-        -   Default value
-        -   Supported values
+    *   -   Add-ons Param
+        -   |
+        -   |
 
     *   -   age_limit
         -   Age access restriction value in years
-        -   0
         -   integer
     *   -   age_verification
         -   Activate/disable age verification
-        -   ``N``
         -   | ``Y``
             | ``N``
     *   -   age_warning_message
         -   Forbidden age warning message
-        -   ''
         -   string
-    *   -   is_op
-        -   ?
-        -   ?
-        -   ?
-    *   -   is_oper
-        -   ?
-        -   ?
-        -   ?
-    *   -   is_pbp
-        -   ?
-        -   ?
-        -   ?
+
     *   -   product_type
-        -   ?
+        -   Product type
         -   P
-        -   ?
     *   -   is_returnable
         -   Returnable or not
-        -   ``Y``
         -   | ``Y``
             | ``N``
 
 
---------
 Examples
 --------
 
@@ -267,7 +242,7 @@ To get a specific product, send a GET request to ``/api/products/<product_id>/``
   GET /api/products/12
     
   
-To refer to a particular product in a particular category, send a GET request to ``/api/categories/:id/products/:id``::
+To refer to a specific product in a particular category, send a GET request to ``/api/categories/:id/products/:id``::
 
 
   GET /api/categories/229/products/12
@@ -281,158 +256,122 @@ Product Fields
 
 A product has a number of properties, represented by fields.
 
-The full list of supported fields is given below (mandatory fields are marked with **\***).
-
-.. note:: Any field not listed in the table below will be ignored if occurs in an API request JSON data.
 
 .. list-table::
     :header-rows: 1
     :stub-columns: 1
-    :widths: 5 30 5 10
+    :widths: 5 30 10
 
     *   -   Field name
         -   Description
-        -   Default value
         -   Supported values
-    *   -   product*
+    *   -   product
         -   Product name
-        -   —
         -   string
-    *   -   category_ids*
+    *   -   category_ids
         -   IDs of the categories to which the product belongs
-        -   —
         -   Array of valid category IDs
-    *   -   main_category*
+    *   -   main_category
         -   ID of the main category
-        -   —
         -   Existing category ID
-    *   -   price*
+    *   -   price
         -   Price
-        -   0
         -   float
-    *   -   company_id*
+    *   -   company_id
         -   ID of the store or vendor the product belongs to
-        -   Default company ID
         -   integer
-    *   -   status*
+    *   -   status
         -   | Product status:
             | ``A`` for Active
             | ``D`` for Disabled
             | ``H`` for Hidden
-        -   ``A``
         -   | ``A``
             | ``D``
             | ``H``
     *   -   amount
         -   Product amount in stock
-        -   1
         -   integer
     *   -   avail_since
         -   Date from which the product is available
-        -   —
         -   Date in UNIX format
     *   -   box_height
         -   Box height
-        -   0
         -   integer
     *   -   box_length
         -   Box length
-        -   0
         -   integer
     *   -   box_width
         -   Box width
-        -   0
         -   integer
     *   -   details_layout
         -   Product details page layout
-        -   'default'
         -   Valid product template name
     *   -   edp_shipping
         -   Only for a downloadable product: Enable/disable shipping
-        -   ``N``
         -   | ``Y``
             | ``N``
     *   -   exceptions_type
         -   Exception type (``A``\ llow/ ``F``\ orbid products with certain option combinations)
-        -   ``F``
         -   | ``A``
             | ``F``
     *   -   feature_comparison
         -   Enable/disable adding the product to a feature comparison list
-        -   ``N``
         -   | ``Y``
             | ``N``
     *   -   free_shipping
         -   Allow free shipping
-        -   ``N``
         -   | ``Y``
             | ``N``
     *   -   full_description
         -   Full product description
-        -   ''
         -   string
     *   -   image_pairs
         -   Additional image pairs
-        -   empty array
         -   object with image pair ID as key and image pair as value (see :ref:`below <main-pair>`)
     *   -   is_edp
         -   Downloadable or not
-        -   ``N``
         -   | ``Y``
             | ``N``
     *   -   lang_code
         -   Language code
-        -   Default language code
         -   | ``en``
             | ``ru``
             | etc.
     *   -   list_price
         -   Manufacturer suggested price
-        -   0
         -   float
     *   -   list_qty_count
         -   Number of items in the quantity select box
-        -   0
         -   integer
     *   -   localization
         -   String of comma-separated localization IDs
-        -   ''
         -   string
     *   -   low_avail_limit
         -   Minimal availability in stock value
-        -   0
         -   integer
     *   -   main_pair
         -   Full image and thumbnail pair
-        -   empty array
         -   Main pair object (see :ref:`below <main-pair>`)
     *   -   max_items_in_box
         -   Maximal number of items per box
-        -   0
         -   integer
     *   -   max_qty
         -   Maximal order quantity
-        -   0
         -   integer
     *   -   meta_description
         -   Meta description
-        -   ''
         -   string
     *   -   meta_keywords
         -   Meta keywords
-        -   ''
         -   string
     *   -   min_items_in_box
         -   Minimal number of items per box
-        -   0
         -   integer
     *   -   min_qty
         -   Minimal order quantity
-        -   0
         -   integer
     *   -   options_type
         -   Apply options simultaneously (``P``) or sequentially (``S``)
-        -   ``P``
         -   | ``S``
             | ``P``
     *   -   out_of_stock_actions
@@ -440,114 +379,88 @@ The full list of supported fields is given below (mandatory fields are marked wi
             | ``N`` for None
             | ``B`` for Buy in advance
             | ``S`` for Sign up for notification
-        -   ``N``
         -   | ``N``
             | ``B``
             | ``S``
     *   -   page_title
         -   Product page title
-        -   ''
         -   string
     *   -   point_price
         -   Price in reward points
-        -   0
         -   float
     *   -   popularity
         -   Product popularity rating based on views, adding to cart, and purchases
-        -   3
         -   integer
     *   -   product_code
         -   Product code
-        -   ''
         -   string
     *   -   product_features
         -   Product features
-        -   empty array
         -   object that contains :doc:`product features <product_features>` with feature ID as key and feature data as value
     *   -   product_id
         -   Product ID
-        -   Set automatically
         -   integer
     *   -   promo_text
         -   Promo text
-        -   ''
         -   string
     *   -   qty_step
         -   Quantity step
-        -   0
         -   integer
     *   -   return_period
         -   Return period in days
-        -   10
         -   integer
     *   -   sales_amount
         -   Sales amount
-        -   0
         -   integer
     *   -   search_words
         -   Search keywords for the product
-        -   ''
         -   string
     *   -   seo_name
         -   SEO name for the product page
-        -   ''
         -   string
     *   -   shared_product
         -   Shared or not
-        -   ``N``
         -   | ``Y``
             | ``N``
     *   -   shipping_freight
         -   Shipping freight
-        -   0
         -   float
     *   -   shipping_params
         -   Aggregated shipping data
-        -   Auto-generated string based on the shipping data
         -   string
     *   -   short_description
         -   Short description
-        -   ''
         -   string
     *   -   tax_ids
         -   Array of tax IDs
-        -   empty array
         -   array
     *   -   timestamp
         -   Creation timestamp
-        -   Set automatically
         -   Valid timestamp in UNIX format
     *   -   tracking
         -   | Inventory tracking mode
             | ``B`` for Track 
             | ``D`` for do not track
-
-        -   ``B``
         -   | ``B``
             | ``D``
     *   -   unlimited_download
         -   For EDP products: allow or not unlimited downloads
-        -   ``N``
         -   | ``Y``
             | ``N``
     *   -   updated_timestamp
         -   Last update timestamp
-        -   Last update timestamp in seconds
         -   Valid timestamp in UNIX format
     *   -   usergroup_ids
         -   User group IDs
-        -   '0'
         -   String of comma-separated user group IDs
     *   -   weight
         -   Weight
-        -   0
         -   float
     *   -   zero_price_action
         -   | Zero price action
             | ``R`` for Do not allow customers to add product to cart
             | ``P`` for Allow customers to add product to cart
             | ``A`` for Ask customer to enter the price
-        -   ``R``
         -   | ``R``
             | ``P``
             | ``A``
@@ -555,283 +468,386 @@ The full list of supported fields is given below (mandatory fields are marked wi
 
 .. _main-pair:
 
----------
-Main Pair
----------
+
+Product Images (Pairs)
+----------------------
 
 A pair of the full product image and (optionally) a thumbnail.
 
 .. list-table::
     :header-rows: 1
     :stub-columns: 1
-    :widths: 5 30 5 10
+    :widths: 5 30 10
 
     *   -   Field name
         -   Description
-        -   Default value
         -   Supported values
     *   -   detailed_id
         -   ID of the full image
-        -   Set automatically
         -   integer
     *   -   image_id
         -   ID of the thumbnail
-        -   0
         -   integer
     *   -   pair_id
         -   ID of the image pair
-        -   Set automatically
         -   integer
     *   -   position
         -   Position of the image pair among others
-        -   0
         -   integer
     *   -   icon
         -   Thumbnail data
-        -   —
         -   object (similar to ``detailed``, see below)
     *   -   detailed
         -   Full image data
-        -   —
         -   object (content explained below)
     *   -   absolute_path
         -   Absolute filesystem path to the image
-        -   —
         -   Valid filesystem path
     *   -   alt
         -   Alternative text (show if the image fails to load)
-        -   ''
         -   string
     *   -   http_image_path
         -   HTTP path to the image
-        -   —
         -   Valid HTTP URL pointing to the image
     *   -   image_path
         -   Actual image path (HTTP or HTTPS; may be the same as ``http_image_path``)
-        -   —
         -   Valid URL pointing to the image
     *   -   image_x
         -   Image width in pixels
-        -   —
         -   integer
     *   -   image_y
         -   Image height
-        -   —
         -   integer  
   
 ---------------
 Response Format
 ---------------
 
-* The product exists: **HTTP/1.1 200 OK**. The response is JSON with the following data::
+* The product exists: **HTTP/1.1 200 OK**. 
+
+Let's make a test ``GET`` request to **/api/products?page=1&items_per_page=2**
+ 
+The response is JSON with the following data::
 
     {
-    "min_items_in_box": 0,
-    "max_items_in_box": 0,
-    "box_length": 0,
-    "box_width": 0,
-    "box_height": 0,
-    "product_id": 12,
-    "product_code": "U0012O5AF0",
-    "product_type": "P",
-    "status": "A",
-    "company_id": "1",
-    "list_price": "31.00",
-    "amount": "10",
-    "weight": "0.000",
-    "length": "0",
-    "width": "0",
-    "height": "0",
-    "shipping_freight": "0.00",
-    "low_avail_limit": "0",
-    "timestamp": "1328558400",
-    "updated_timestamp": "1383893547",
-    "usergroup_ids": "0",
-    "is_edp": "N",
-    "edp_shipping": "N",
-    "unlimited_download": "N",
-    "tracking": "B",
-    "free_shipping": "N",
-    "zero_price_action": "R",
-    "is_pbp": "Y",
-    "is_op": "N",
-    "is_oper": "N",
-    "is_returnable": "Y",
-    "return_period": "10",
-    "avail_since": "0",
-    "out_of_stock_actions": "N",
-    "localization": "",
-    "min_qty": "0",
-    "max_qty": "0",
-    "qty_step": "0",
-    "list_qty_count": "0",
-    "tax_ids":
-    [
-        "6"
-    ],
-    "age_verification": "N",
-    "age_limit": "0",
-    "options_type": "P",
-    "exceptions_type": "F",
-    "details_layout": "default",
-    "shipping_params": "a:5:{s:16:\"min_items_in_box\";i:0;s:16:\"max_items_in_box\";i:0;s:10:\"box_length\";i:0;s:9:\"box_width\";i:0;s:10:\"box_height\";i:0;}",
-    "parent_product_id": "0",
-    "lang_code": "en",
-    "product": "100g Pants",
-    "shortname": "",
-    "short_description": "",
-    "full_description": "<p>\r\n\tWhen coach calls you off the bench, you need warm-up pants that come off  in three seconds or less. That’s why these men's adidas 100g basketball  pants have tear-away snaps down the sides, so you're ready for action  as fast as a superhero.\r\n</p>",
-    "meta_keywords": "",
-    "meta_description": "",
-    "search_words": "",
-    "page_title": "",
-    "age_warning_message": "",
-    "promo_text": "<p class=\"product-promo-text\"><span class=\"product-promo-header\">FREE US shipping over $100!</span><span class=\"product-promo-body\">Orders within next 2 days will be shipped on Monday</span></p>",
-    "price": "30.00",
-    "category_ids":
-    [
-        224
-    ],
-    "popularity": null,
-    "company_name": "CS-Cart",
-    "sales_amount": null,
-    "seo_name": "100g-pants",
-    "seo_path": "223/224",
-    "point_price": null,
-    "discussion_type": null,
-    "average_rating": null,
-    "product_reviews_count": null,
-    "base_price": "30.00",
-    "main_category": 224,
-    "image_pairs":
-    [],
-    "main_pair":
-    {
-        "pair_id": "823",
-        "image_id": "0",
-        "detailed_id": "879",
-        "position": "0",
-        "object_id": "12",
-        "object_type": "product",
-        "detailed":
-        {
-            "object_id": "12",
-            "object_type": "product",
-            "type": "M",
-            "image_path": "https://dev.demo.mv.cs-cart.com/stores/4a228ef46daca854/images/detailed/0/173283_0113298267324f438bac97eaf.jpg",
-            "alt": "",
-            "image_x": "500",
-            "image_y": "500",
-            "http_image_path": "http://dev.demo.mv.cs-cart.com/stores/4a228ef46daca854/images/detailed/0/173283_0113298267324f438bac97eaf.jpg",
-            "https_image_path": "https://dev.demo.mv.cs-cart.com/stores/4a228ef46daca854/images/detailed/0/173283_0113298267324f438bac97eaf.jpg",
-            "absolute_path": "/srv/projects/dev.demo.mv.cs-cart.com/web/stores/4a228ef46daca854/images/detailed/0/173283_0113298267324f438bac97eaf.jpg",
-            "relative_path": "detailed/0/173283_0113298267324f438bac97eaf.jpg",
-            "is_high_res": false
-        }
-    },
-    "prices":
+    "products":
     [
         {
             "product_id": "12",
-            "lower_limit": "1",
-            "usergroup_id": "0",
-            "percentage_discount": "0.00",
-            "price": "30.00"
-        }
-    ],
-    "product_features":
-    {
-        "18":
-        {
-            "feature_id": "18",
-            "value": "",
-            "value_int": null,
-            "variant_id": "86",
-            "feature_type": "E",
-            "internal_name": "Brand",
-            "description": "Brand",
-            "prefix": "",
-            "suffix": "",
-            "variant": "Adidas",
-            "parent_id": "0",
-            "display_on_header": "Y",
-            "display_on_catalog": "N",
-            "display_on_product": "N",
-            "feature_code": "",
-            "purpose": "organize_catalog",
-            "features_hash": "10-86",
-            "variants":
+            "product": "100g Pants",
+            "product_type": "P",
+            "parent_product_id": "0",
+            "product_code": "U0012O5AF0",
+            "status": "A",
+            "company_id": "1",
+            "list_price": "31.00",
+            "amount": "10",
+            "weight": "0.000",
+            "length": "0",
+            "width": "0",
+            "height": "0",
+            "shipping_freight": "0.00",
+            "low_avail_limit": "0",
+            "timestamp": "1328558400",
+            "updated_timestamp": "1383893547",
+            "usergroup_ids": "0",
+            "is_edp": "N",
+            "edp_shipping": "N",
+            "unlimited_download": "N",
+            "tracking": "B",
+            "free_shipping": "N",
+            "zero_price_action": "R",
+            "is_pbp": "Y",
+            "is_op": "N",
+            "is_oper": "N",
+            "is_returnable": "Y",
+            "return_period": "10",
+            "avail_since": "0",
+            "out_of_stock_actions": "N",
+            "localization": "",
+            "min_qty": "0",
+            "max_qty": "0",
+            "qty_step": "0",
+            "list_qty_count": "0",
+            "tax_ids": "6",
+            "age_verification": "N",
+            "age_limit": "0",
+            "options_type": "P",
+            "exceptions_type": "F",
+            "details_layout": "default",
+            "shipping_params": "a:5:{s:16:\"min_items_in_box\";i:0;s:16:\"max_items_in_box\";i:0;s:10:\"box_length\";i:0;s:9:\"box_width\";i:0;s:10:\"box_height\";i:0;}",
+            "price": "30.00",
+            "category_ids":
+            [
+                224
+            ],
+            "seo_name": "100g-pants",
+            "seo_path": "223/224",
+            "main_category": 224,
+            "options_type_raw": null,
+            "exceptions_type_raw": null,
+            "tracking_raw": null,
+            "zero_price_action_raw": null,
+            "min_qty_raw": null,
+            "max_qty_raw": null,
+            "qty_step_raw": null,
+            "list_qty_count_raw": null,
+            "details_layout_raw": "default",
+            "variation_features":
+            [],
+            "main_pair":
             {
-                "86":
+                "pair_id": "823",
+                "image_id": "0",
+                "detailed_id": "879",
+                "position": "0",
+                "object_id": "12",
+                "object_type": "product",
+                "detailed":
                 {
+                    "object_id": "12",
+                    "object_type": "product",
+                    "type": "M",
+                    "image_path": "https://example.com/images/detailed/0/173283_0113298267324f438bac97eaf.jpg",
+                    "alt": "",
+                    "image_x": "500",
+                    "image_y": "500",
+                    "http_image_path": "http://example.com/images/detailed/0/173283_0113298267324f438bac97eaf.jpg",
+                    "https_image_path": "https://example.com/images/detailed/0/173283_0113298267324f438bac97eaf.jpg",
+                    "absolute_path": "/srv/projects/example.com/web/images/detailed/0/173283_0113298267324f438bac97eaf.jpg",
+                    "relative_path": "detailed/0/173283_0113298267324f438bac97eaf.jpg",
+                    "is_high_res": false
+                }
+            },
+            "base_price": "30.00",
+            "selected_options":
+            [],
+            "has_options": true,
+            "product_options":
+            [],
+            "list_discount": 1,
+            "list_discount_prc": "3",
+            "discounts":
+            {
+                "A": 0,
+                "P": 0
+            },
+            "product_features":
+            {
+                "18":
+                {
+                    "feature_id": "18",
                     "value": "",
                     "value_int": null,
                     "variant_id": "86",
+                    "feature_type": "E",
+                    "internal_name": "Brand",
+                    "description": "Brand",
+                    "prefix": "",
+                    "suffix": "",
                     "variant": "Adidas",
-                    "image_pairs":
+                    "parent_id": "0",
+                    "display_on_header": "Y",
+                    "display_on_catalog": "N",
+                    "display_on_product": "N",
+                    "feature_code": "",
+                    "purpose": "organize_catalog",
+                    "features_hash": "10-86",
+                    "variants":
                     {
-                        "pair_id": "875",
-                        "image_id": "1006",
-                        "detailed_id": "0",
-                        "position": "0",
-                        "object_id": "86",
-                        "object_type": "feature_variant",
-                        "icon":
+                        "86":
                         {
-                            "image_path": "https://dev.demo.mv.cs-cart.com/stores/4a228ef46daca854/images/feature_variant/1/Adidas_Logo.svg.png",
-                            "alt": "",
-                            "image_x": "200",
-                            "image_y": "133",
-                            "http_image_path": "http://dev.demo.mv.cs-cart.com/stores/4a228ef46daca854/images/feature_variant/1/Adidas_Logo.svg.png",
-                            "https_image_path": "https://dev.demo.mv.cs-cart.com/stores/4a228ef46daca854/images/feature_variant/1/Adidas_Logo.svg.png",
-                            "absolute_path": "/srv/projects/dev.demo.mv.cs-cart.com/web/stores/4a228ef46daca854/images/feature_variant/1/Adidas_Logo.svg.png",
-                            "relative_path": "feature_variant/1/Adidas_Logo.svg.png",
-                            "is_high_res": false
+                            "value": "",
+                            "value_int": null,
+                            "variant_id": "86",
+                            "variant": "Adidas",
+                            "image_pairs":
+                            {
+                                "pair_id": "875",
+                                "image_id": "1006",
+                                "detailed_id": "0",
+                                "position": "0",
+                                "object_id": "86",
+                                "object_type": "feature_variant",
+                                "icon":
+                                {
+                                    "image_path": "https://example.com/images/feature_variant/1/Adidas_Logo.svg.png",
+                                    "alt": "",
+                                    "image_x": "200",
+                                    "image_y": "133",
+                                    "http_image_path": "http://example.com/images/feature_variant/1/Adidas_Logo.svg.png",
+                                    "https_image_path": "https://example.com/images/feature_variant/1/Adidas_Logo.svg.png",
+                                    "absolute_path": "/srv/projects/example.com/web/images/feature_variant/1/Adidas_Logo.svg.png",
+                                    "relative_path": "feature_variant/1/Adidas_Logo.svg.png",
+                                    "is_high_res": false
+                                }
+                            }
                         }
                     }
                 }
-            }
+            },
+            "qty_content":
+            []
+        },
+        {
+            "product_id": "17",
+            "product": "101 Things Everyone Should Know About Economics A Down and Dirty Guide to Everything from Securities and Derivatives to Interest Rates and Hedge Funds—And What They Mean For You",
+            "product_type": "P",
+            "parent_product_id": "0",
+            "product_code": "G0017HS88V",
+            "status": "A",
+            "company_id": "1",
+            "list_price": "0.00",
+            "amount": "19",
+            "weight": "0.000",
+            "length": "0",
+            "width": "0",
+            "height": "0",
+            "shipping_freight": "0.00",
+            "low_avail_limit": "0",
+            "timestamp": "1328558400",
+            "updated_timestamp": "1328684302",
+            "usergroup_ids": "0",
+            "is_edp": "N",
+            "edp_shipping": "N",
+            "unlimited_download": "N",
+            "tracking": "B",
+            "free_shipping": "N",
+            "zero_price_action": "R",
+            "is_pbp": "Y",
+            "is_op": "N",
+            "is_oper": "N",
+            "is_returnable": "Y",
+            "return_period": "10",
+            "avail_since": "0",
+            "out_of_stock_actions": "N",
+            "localization": "",
+            "min_qty": "0",
+            "max_qty": "0",
+            "qty_step": "0",
+            "list_qty_count": "0",
+            "tax_ids": "6",
+            "age_verification": "N",
+            "age_limit": "0",
+            "options_type": "P",
+            "exceptions_type": "F",
+            "details_layout": "default",
+            "shipping_params": "a:5:{s:16:\"min_items_in_box\";i:0;s:16:\"max_items_in_box\";i:0;s:10:\"box_length\";i:0;s:9:\"box_width\";i:0;s:10:\"box_height\";i:0;}",
+            "price": "11.16",
+            "category_ids":
+            [
+                222
+            ],
+            "seo_name": "101-things-everyone-should-know-about-economics-a-down-and-dirty-guide-to-everything-from-securities-and-derivatives-to-interest-rates-and-hedge-fundsand-what-they-mean-for-you",
+            "seo_path": "219/222",
+            "main_category": 222,
+            "options_type_raw": null,
+            "exceptions_type_raw": null,
+            "tracking_raw": null,
+            "zero_price_action_raw": null,
+            "min_qty_raw": null,
+            "max_qty_raw": null,
+            "qty_step_raw": null,
+            "list_qty_count_raw": null,
+            "details_layout_raw": "default",
+            "variation_features":
+            [],
+            "main_pair":
+            {
+                "pair_id": "229",
+                "image_id": "0",
+                "detailed_id": "285",
+                "position": "0",
+                "object_id": "17",
+                "object_type": "product",
+                "detailed":
+                {
+                    "object_id": "17",
+                    "object_type": "product",
+                    "type": "M",
+                    "image_path": "https://example.com/images/detailed/0/Z6595.jpg",
+                    "alt": "",
+                    "image_x": "510",
+                    "image_y": "680",
+                    "http_image_path": "http://example.com/images/detailed/0/Z6595.jpg",
+                    "https_image_path": "https://example.com/images/detailed/0/Z6595.jpg",
+                    "absolute_path": "/srv/projects/example.com/web/images/detailed/0/Z6595.jpg",
+                    "relative_path": "detailed/0/Z6595.jpg",
+                    "is_high_res": false
+                }
+            },
+            "base_price": "11.16",
+            "selected_options":
+            [],
+            "has_options": false,
+            "product_options":
+            [],
+            "discounts":
+            {
+                "A": 0,
+                "P": 0
+            },
+            "product_features":
+            [],
+            "qty_content":
+            []
         }
-    },
-    "options_type_raw": null,
-    "exceptions_type_raw": null,
-    "tracking_raw": null,
-    "zero_price_action_raw": null,
-    "min_qty_raw": null,
-    "max_qty_raw": null,
-    "qty_step_raw": null,
-    "list_qty_count_raw": null,
-    "details_layout_raw": "default",
-    "detailed_params":
+    ],
+    "params":
     {
-        "info_type": "D",
-        "is_preview": false
-    },
-    "have_required": "N",
-    "selected_options":
-    [],
-    "variation_features":
-    [],
-    "has_options": true,
-    "product_options":
-    [],
-    "list_discount": 1,
-    "list_discount_prc": "3",
-    "discounts":
-    {
-        "A": 0,
-        "P": 0
-    },
-    "qty_content":
-    []
+        "area": "A",
+        "use_caching": true,
+        "extend":
+        [
+            "product_name",
+            "prices",
+            "categories",
+            "categories"
+        ],
+        "custom_extend":
+        [],
+        "pname": "Y",
+        "pshort": "Y",
+        "pfull": "Y",
+        "pkeywords": "Y",
+        "feature":
+        [],
+        "type": "simple",
+        "page": 1,
+        "action": "",
+        "filter_variants":
+        [],
+        "features_hash": "",
+        "limit": 0,
+        "bid": 0,
+        "match": "all",
+        "tracking":
+        [],
+        "get_frontend_urls": false,
+        "items_per_page": 2,
+        "apply_disabled_filters": "",
+        "load_products_extra_data": true,
+        "storefront": null,
+        "company_ids": "",
+        "subcats": "Y",
+        "pcode_from_q": "Y",
+        "search_performed": "Y",
+        "ajax_custom": "1",
+        "hide_out_of_stock_products": false,
+        "sort_by": "product",
+        "sort_order": "asc",
+        "usergroup_ids":
+        [],
+        "include_child_variations": true,
+        "group_child_variations": false,
+        "sort_order_rev": "desc",
+        "total_items": "247"
+    }
     }
 
 
     
 * The products doesn't exist: **HTTP/1.1 404 Not Found**.
-
-
-.. _api-products-filtering:
 
 
 
@@ -867,12 +883,13 @@ Example JSON: Create a Product
 This request creates a product with minimum required details: a name, a main category ID and a price.
 
 ------------------------------------------------------
-Example JSON: Create a Product for a particular Vendor 
+Example JSON: Create a Product for a Particular Vendor 
 ------------------------------------------------------    
-    
- Send a POST request to   ``api/vendors/1/products``
+Vendors are independent companies that sell their own products in your store. To create a product for a Particular Vendor you will need to specify their vendor_id in a request. Learn more about Vendors entity in :doc:`this article<vendors>`.
  
- ::
+Send a POST request to   ``api/vendors/1/products``
+ 
+::
 
     {
     "product": "Vendor's Product Name",
@@ -880,7 +897,7 @@ Example JSON: Create a Product for a particular Vendor
     "price": "1000"
     }
     
-This request creates a product for the Vendor with a ``vendor_id=1``.
+This request creates a product for the Vendor with a ``vendor_id=1`` and minimum Product Details.
 
 --------------------------------------------
 Example JSON: Create a Product with an Image
@@ -898,14 +915,14 @@ Example JSON: Create a Product with an Image
     {
         "detailed":
         {
-            "image_url": "http://localdomain.com/image.jpg"
+            "image_url": "https://example.com/image.jpg"
         }
     }
     }
 
 
   
-This request creates a product with a Price, an Active Status and a Main image. In this example we're using the ``main_pair`` field to specify the image for the product. This field represents the main image that will be displayed for the product, and can be uploaded on your server or added with URL. To specify the image hosted somewhere other than your server, use the ``image_path`` field of the ``detailed`` object to specify the URL of the image.
+This request creates a product with a price, the Active Status, and a main image. The ``main_pair`` array stands for the main image of the product. The image must be already uploaded on your server, or available somewhere on the Internet. Once an image is specified, CS-Cart downloads it and saves it.
   
 
 ---------------
@@ -969,13 +986,11 @@ Example JSON: Update a Product Image
         "object_id": "12",
         "object_type": "product",
         "type": "M",
-        "image_path": "https://dev.demo.mv.cs-cart.com/stores/4a228ef46daca854/images/detailed/0/173283_0113298267324f438bac97eaf.jpg",
+        "image_path": "https://example.com/images/detailed/0/173283_0113298267324f438bac97eaf.jpg",
         "alt": "",
-        "image_x": "500",
-        "image_y": "500",
-        "http_image_path": "http://dev.demo.mv.cs-cart.com/stores/4a228ef46daca854/images/detailed/0/173283_0113298267324f438bac97eaf.jpg",
-        "https_image_path": "https://dev.demo.mv.cs-cart.com/stores/4a228ef46daca854/images/detailed/0/173283_0113298267324f438bac97eaf.jpg",
-        "absolute_path": "/srv/projects/dev.demo.mv.cs-cart.com/web/stores/4a228ef46daca854/images/detailed/0/173283_0113298267324f438bac97eaf.jpg",
+        "http_image_path": "http://example.com/images/detailed/0/173283_0113298267324f438bac97eaf.jpg",
+        "https_image_path": "https://example.com/images/detailed/0/173283_0113298267324f438bac97eaf.jpg",
+        "absolute_path": "/srv/projects/example.com/web/images/detailed/0/173283_0113298267324f438bac97eaf.jpg",
         "relative_path": "detailed/0/173283_0113298267324f438bac97eaf.jpg",
         "is_high_res": false
         }
@@ -987,7 +1002,7 @@ This request updates the Main image of the particular Product. In this example t
 
 
 -----------------------------------------------
-Example JSON: Update a Product to add a Feature
+Example JSON: Update a Product to Add a Feature
 -----------------------------------------------
 
 To add a feature to a product, send a PUT request to ``api/products/<product_id>``
@@ -1034,13 +1049,13 @@ To add a feature to a product, send a PUT request to ``api/products/<product_id>
                         "object_type": "feature_variant",
                         "icon":
                         {
-                            "image_path": "https://dev.demo.mv.cs-cart.com/stores/4a228ef46daca854/images/feature_variant/1/Adidas_Logo.svg.png",
+                            "image_path": "https://example.com/images/feature_variant/1/Adidas_Logo.svg.png",
                             "alt": "",
                             "image_x": "200",
                             "image_y": "133",
-                            "http_image_path": "http://dev.demo.mv.cs-cart.com/stores/4a228ef46daca854/images/feature_variant/1/Adidas_Logo.svg.png",
-                            "https_image_path": "https://dev.demo.mv.cs-cart.com/stores/4a228ef46daca854/images/feature_variant/1/Adidas_Logo.svg.png",
-                            "absolute_path": "/srv/projects/dev.demo.mv.cs-cart.com/web/stores/4a228ef46daca854/images/feature_variant/1/Adidas_Logo.svg.png",
+                            "http_image_path": "http://example.com/images/feature_variant/1/Adidas_Logo.svg.png",
+                            "https_image_path": "https://example.com/images/feature_variant/1/Adidas_Logo.svg.png",
+                            "absolute_path": "/srv/projects/example.com/web/images/feature_variant/1/Adidas_Logo.svg.png",
                             "relative_path": "feature_variant/1/Adidas_Logo.svg.png",
                             "is_high_res": false
                         }
