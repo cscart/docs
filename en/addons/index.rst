@@ -24,8 +24,8 @@ Add-ons
     clone_categories/index
 
     :hidden: clone_promotions/index
-    :hidden: cloud_translation_by_google/index
 
+    cloud_translation_by_google/index
     CSV_export_for_sales_reports/index
     quantity_discount_bulk_edit/index
     delivery-date/index
