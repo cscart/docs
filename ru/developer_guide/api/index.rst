@@ -76,7 +76,7 @@ REST API
 
 .. note::
 
-    Можно использовать другие REST-клиенты, например, `Postman <https://chrome.google.com/webstore/detail/postman-interceptor/aicmkgpgakddgnaphhhpliifpcfhicfo>`_ для Gooogle Chrome.
+    Можно использовать другие REST-клиенты, например, `Postman <https://chrome.google.com/webstore/detail/postman-interceptor/aicmkgpgakddgnaphhhpliifpcfhicfo>`_ для Google Chrome.
 
 """"""""""""""""""""""""""""""""""""
 Пример использования и базовые опции
@@ -176,7 +176,7 @@ URL для обращения к API:
 
 * **Content\Type** — формат, в котором пришли данные;
 
-* **Accept** — формат, в котором даныне нужно вернуть.
+* **Accept** — формат, в котором данные нужно вернуть.
 
 За преобразования отвечает класс ``Api\FormatManager``. Он является синглтоном, при инициализации ему нужно передать классы обработчиков, которые доступны. Каждый обработчик формата должен реализовать интерфейс ``Api\IFormat``. Два метода в нём отвечают за преобразование данных, а ``getMimeTypes`` в виде массива возвращает список MIME типов которые может обработать этот класс.
 
