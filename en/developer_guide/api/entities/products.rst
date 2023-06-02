@@ -28,13 +28,16 @@ To refer to all products of a particular :doc:`Category <categories>` send a ``G
   GET /api/categories/166/products/
   
 
-
 ---------------------------------
 Pagination, Sorting and Filtering
 ---------------------------------
 
 
-Add these parameters to the path to specify which products will be returned in the response and how they will be organized:
+Add these parameters to the path to specify which products will be returned in the response and how they will be organized.
+
+.. note::
+
+    The CS-Cart/Multi-Vendor REST API always accepts and returns data as strings and arrays/objects. The **Default values** column in the table merely shows what kind of data you can expect in the fields.
 
 .. list-table::
     :header-rows: 1
@@ -46,57 +49,65 @@ Add these parameters to the path to specify which products will be returned in t
         -   Description
     *   -   page
         -   integer
-        -   Shows products on a page with the defined number
+        -   The response to GET /api/products/ is a page with a limited number of products. This parameter determines the number of the page that will be sent in the response.
     *   -   items_per_page
         -   integer
         -   Shows N products, where N - is a number defined in the parameter
+    *   -   sort_by
+        -   ``date``
+        -   Determines the parameter by which the orders are sorted in the response.
+    *   -   sort_order
+        -   ``desc``
+        -   | Determines the sorting order:
+            | ``asc``—ascending
+            | ``desc``—descending
     *   -   status
-        -   string
+        -   | 
         -   Product status
     *   -   list_price
-        -   float
+        -   | 
         -   List price
     *   -   product
-        -   string
+        -   | 
         -   Product name
     *   -   price
-        -   float
+        -   | 
         -   Price
     *   -   code
-        -   string
+        -   | 
         -   Product code
     *   -   amount
-        -   integer
+        -   | 
         -   In stock amount
     *   -   pname
-        -   string 
+        -   | 
         -   Product name
     *   -   pshort
-        -   string 
+        -   | 
         -   Short description
     *   -   pfull
-        -   string
+        -   | 
         -   Full description
     *   -   pkeywords
-        -   array
+        -   | 
         -   Meta keywords
     *   -   pcode
-        -   string
+        -   | 
         -   Product code
     *   -   cid
-        -   integer
+        -   | 
         -   Category ID
     *   -   amount_from
-        -   integer
+        -   | 
         -   In stock lower range
     *   -   amount_to
-        -   integer
+        -   | 
         -   In stock higher range
     *   -   price_from
-        -   float
+        -   | 
         -   Price lower range
     *   -   price_to
-        -   float
+        -   | 
         -   Price higher range
     *   -   subcats
         -   | ``Y``
@@ -149,55 +160,31 @@ Examples
         -   Send a GET request to ``api/vendors/<vendor_id>/products``
     
 
-Get all products of the 1st store, with 'foo' in their full description, costing over $10, and sort the result by product name from A to Z:
-
-::
+* Get all products of the 1st store, with 'foo' in their full description, costing over $10, and sort by product name from A to Z::
 
     GET /api/stores/1/products?pfull=Y&price_from=10&sort_by=product&sort_order=asc&q=foo
 
 
-Get all products of a particular vendor and sort the result as an array with 20 products from the 5th page:
-
-::
+* Get all products of a particular vendor and sort the result as an array with 20 products from the 5th page::
 
     GET /api/vendors/1/products?page=5&items_per_page=20
 
     
-Get all products of a particular category, filter them by the quantity and sort the result by product name from Z to A:
+* Get all products of a particular category, filter them by the quantity and sort the result by product name from Z to A::
 
-::
+    GET /api/categories/166/products?amount=Y&sort_by=product&sort_order=desc
 
-    GET /api/categories/166/products?amount=Y&&sort_by=product&sort_order=desc
-
-
-
-The request URL is as follows (separated into several lines for readability):
-
-    | http://example.com/api/products?
-    |	 <filter>=Y&
-    |	 <additional_param>=<value>&
-    |	 <another_param>=<value>&
-    |	 ...
-    |	 sort_by=<sorting>&
-    |	 sort_order=<sort_order>&
-    |	 q=<query>
-
-*   **filter** is one of the available filters. It is possible to use any number of filters at a time by appending the URL with **&<another_filter>=Y**
-
-*   **additional_param** is one of the available additional params. It is possible to use any number of additional params at a time by appending the URL with **&<another_param>=<value>**
-
-*   **sorting** is one of the available sortings
-
-*   **sort_order** is the sort direction; ``asc`` or ``desc`` for ascending and descending accordingly
-
-*   **query** is the search query
 
 
 ---------------
 Response Format
 ---------------
 
-* The product exists: **HTTP/1.1 200 OK**. Let's make a test ``GET`` request to **/api/products?items_per_page=2**. The response is JSON with the following data::
+Let's make a test request::
+
+    GET /api/products?items_per_page=2
+
+The response is JSON with the following data::
 
     {
     "products":
@@ -542,6 +529,9 @@ Product Fields
 
 A product has a number of properties, represented by fields.
 
+.. note::
+
+    The CS-Cart/Multi-Vendor REST API always accepts and returns data as strings and arrays/objects. The **Default values** column in the table merely shows what kind of data you can expect in the fields.
 
 .. list-table::
     :header-rows: 1
@@ -813,164 +803,163 @@ Response Format
 
 Let's make a test ``GET`` request to **/api/products/12**. The response is JSON with the following data::
 
-
+    {
+    "product_id": "12",
+    "product": "100g Pants",
+    "product_type": "P",
+    "parent_product_id": "0",
+    "product_code": "U0012O5AF0",
+    "status": "A",
+    "company_id": "1",
+    "list_price": "31.00",
+    "amount": "10",
+    "weight": "0.000",
+    "length": "0",
+    "width": "0",
+    "height": "0",
+    "shipping_freight": "0.00",
+    "low_avail_limit": "0",
+    "timestamp": "1328558400",
+    "updated_timestamp": "1383893547",
+    "usergroup_ids": "0",
+    "is_edp": "N",
+    "edp_shipping": "N",
+    "unlimited_download": "N",
+    "tracking": "B",
+    "free_shipping": "N",
+    "zero_price_action": "R",
+    "is_pbp": "Y",
+    "is_op": "N",
+    "is_oper": "N",
+    "is_returnable": "Y",
+    "return_period": "10",
+    "avail_since": "0",
+    "out_of_stock_actions": "N",
+    "localization": "",
+    "min_qty": "0",
+    "max_qty": "0",
+    "qty_step": "0",
+    "list_qty_count": "0",
+    "tax_ids": "6",
+    "age_verification": "N",
+    "age_limit": "0",
+    "options_type": "P",
+    "exceptions_type": "F",
+    "details_layout": "default",
+    "shipping_params": "a:5:{s:16:\"min_items_in_box\";i:0;s:16:\"max_items_in_box\";i:0;s:10:\"box_length\";i:0;s:9:\"box_width\";i:0;s:10:\"box_height\";i:0;}",
+    "price": "30.00",
+    "category_ids":
+    [
+        224
+    ],
+    "seo_name": "100g-pants",
+    "seo_path": "223/224",
+    "main_category": 224,
+    "options_type_raw": null,
+    "exceptions_type_raw": null,
+    "tracking_raw": null,
+    "zero_price_action_raw": null,
+    "min_qty_raw": null,
+    "max_qty_raw": null,
+    "qty_step_raw": null,
+    "list_qty_count_raw": null,
+    "details_layout_raw": "default",
+    "variation_features":
+    [],
+    "main_pair":
+    {
+        "pair_id": "823",
+        "image_id": "0",
+        "detailed_id": "879",
+        "position": "0",
+        "object_id": "12",
+        "object_type": "product",
+        "detailed":
         {
-            "product_id": "12",
-            "product": "100g Pants",
-            "product_type": "P",
-            "parent_product_id": "0",
-            "product_code": "U0012O5AF0",
-            "status": "A",
-            "company_id": "1",
-            "list_price": "31.00",
-            "amount": "10",
-            "weight": "0.000",
-            "length": "0",
-            "width": "0",
-            "height": "0",
-            "shipping_freight": "0.00",
-            "low_avail_limit": "0",
-            "timestamp": "1328558400",
-            "updated_timestamp": "1383893547",
-            "usergroup_ids": "0",
-            "is_edp": "N",
-            "edp_shipping": "N",
-            "unlimited_download": "N",
-            "tracking": "B",
-            "free_shipping": "N",
-            "zero_price_action": "R",
-            "is_pbp": "Y",
-            "is_op": "N",
-            "is_oper": "N",
-            "is_returnable": "Y",
-            "return_period": "10",
-            "avail_since": "0",
-            "out_of_stock_actions": "N",
-            "localization": "",
-            "min_qty": "0",
-            "max_qty": "0",
-            "qty_step": "0",
-            "list_qty_count": "0",
-            "tax_ids": "6",
-            "age_verification": "N",
-            "age_limit": "0",
-            "options_type": "P",
-            "exceptions_type": "F",
-            "details_layout": "default",
-            "shipping_params": "a:5:{s:16:\"min_items_in_box\";i:0;s:16:\"max_items_in_box\";i:0;s:10:\"box_length\";i:0;s:9:\"box_width\";i:0;s:10:\"box_height\";i:0;}",
-            "price": "30.00",
-            "category_ids":
-            [
-                224
-            ],
-            "seo_name": "100g-pants",
-            "seo_path": "223/224",
-            "main_category": 224,
-            "options_type_raw": null,
-            "exceptions_type_raw": null,
-            "tracking_raw": null,
-            "zero_price_action_raw": null,
-            "min_qty_raw": null,
-            "max_qty_raw": null,
-            "qty_step_raw": null,
-            "list_qty_count_raw": null,
-            "details_layout_raw": "default",
-            "variation_features":
-            [],
-            "main_pair":
+            "object_id": "12",
+            "object_type": "product",
+            "type": "M",
+            "image_path": "https://example.com/images/detailed/0/173283_0113298267324f438bac97eaf.jpg",
+            "alt": "",
+            "image_x": "500",
+            "image_y": "500",
+            "http_image_path": "http://example.com/images/detailed/0/173283_0113298267324f438bac97eaf.jpg",
+            "https_image_path": "https://example.com/images/detailed/0/173283_0113298267324f438bac97eaf.jpg",
+            "absolute_path": "/srv/projects/example.com/web/images/detailed/0/173283_0113298267324f438bac97eaf.jpg",
+            "relative_path": "detailed/0/173283_0113298267324f438bac97eaf.jpg",
+            "is_high_res": false
+        }
+    },
+    "base_price": "30.00",
+    "selected_options":
+    [],
+    "has_options": true,
+    "product_options":
+    [],
+    "list_discount": 1,
+    "list_discount_prc": "3",
+    "discounts":
+    {
+        "A": 0,
+        "P": 0
+    },
+    "product_features":
+    {
+        "18":
+        {
+            "feature_id": "18",
+            "value": "",
+            "value_int": null,
+            "variant_id": "86",
+            "feature_type": "E",
+            "internal_name": "Brand",
+            "description": "Brand",
+            "prefix": "",
+            "suffix": "",
+            "variant": "Adidas",
+            "parent_id": "0",
+            "display_on_header": "Y",
+            "display_on_catalog": "N",
+            "display_on_product": "N",
+            "feature_code": "",
+            "purpose": "organize_catalog",
+            "features_hash": "10-86",
+            "variants":
             {
-                "pair_id": "823",
-                "image_id": "0",
-                "detailed_id": "879",
-                "position": "0",
-                "object_id": "12",
-                "object_type": "product",
-                "detailed":
+                "86":
                 {
-                    "object_id": "12",
-                    "object_type": "product",
-                    "type": "M",
-                    "image_path": "https://example.com/images/detailed/0/173283_0113298267324f438bac97eaf.jpg",
-                    "alt": "",
-                    "image_x": "500",
-                    "image_y": "500",
-                    "http_image_path": "http://example.com/images/detailed/0/173283_0113298267324f438bac97eaf.jpg",
-                    "https_image_path": "https://example.com/images/detailed/0/173283_0113298267324f438bac97eaf.jpg",
-                    "absolute_path": "/srv/projects/example.com/web/images/detailed/0/173283_0113298267324f438bac97eaf.jpg",
-                    "relative_path": "detailed/0/173283_0113298267324f438bac97eaf.jpg",
-                    "is_high_res": false
-                }
-            },
-            "base_price": "30.00",
-            "selected_options":
-            [],
-            "has_options": true,
-            "product_options":
-            [],
-            "list_discount": 1,
-            "list_discount_prc": "3",
-            "discounts":
-            {
-                "A": 0,
-                "P": 0
-            },
-            "product_features":
-            {
-                "18":
-                {
-                    "feature_id": "18",
                     "value": "",
                     "value_int": null,
                     "variant_id": "86",
-                    "feature_type": "E",
-                    "internal_name": "Brand",
-                    "description": "Brand",
-                    "prefix": "",
-                    "suffix": "",
                     "variant": "Adidas",
-                    "parent_id": "0",
-                    "display_on_header": "Y",
-                    "display_on_catalog": "N",
-                    "display_on_product": "N",
-                    "feature_code": "",
-                    "purpose": "organize_catalog",
-                    "features_hash": "10-86",
-                    "variants":
+                    "image_pairs":
                     {
-                        "86":
+                        "pair_id": "875",
+                        "image_id": "1006",
+                        "detailed_id": "0",
+                        "position": "0",
+                        "object_id": "86",
+                        "object_type": "feature_variant",
+                        "icon":
                         {
-                            "value": "",
-                            "value_int": null,
-                            "variant_id": "86",
-                            "variant": "Adidas",
-                            "image_pairs":
-                            {
-                                "pair_id": "875",
-                                "image_id": "1006",
-                                "detailed_id": "0",
-                                "position": "0",
-                                "object_id": "86",
-                                "object_type": "feature_variant",
-                                "icon":
-                                {
-                                    "image_path": "https://example.com/images/feature_variant/1/Adidas_Logo.svg.png",
-                                    "alt": "",
-                                    "image_x": "200",
-                                    "image_y": "133",
-                                    "http_image_path": "http://example.com/images/feature_variant/1/Adidas_Logo.svg.png",
-                                    "https_image_path": "https://example.com/images/feature_variant/1/Adidas_Logo.svg.png",
-                                    "absolute_path": "/srv/projects/example.com/web/images/feature_variant/1/Adidas_Logo.svg.png",
-                                    "relative_path": "feature_variant/1/Adidas_Logo.svg.png",
-                                    "is_high_res": false
-                                }
-                            }
+                            "image_path": "https://example.com/images/feature_variant/1/Adidas_Logo.svg.png",
+                            "alt": "",
+                            "image_x": "200",
+                            "image_y": "133",
+                            "http_image_path": "http://example.com/images/feature_variant/1/Adidas_Logo.svg.png",
+                            "https_image_path": "https://example.com/images/feature_variant/1/Adidas_Logo.svg.png",
+                            "absolute_path": "/srv/projects/example.com/web/images/feature_variant/1/Adidas_Logo.svg.png",
+                            "relative_path": "feature_variant/1/Adidas_Logo.svg.png",
+                            "is_high_res": false
                         }
                     }
                 }
-            },
-            "qty_content":
-            []
+            }
         }
+    },
+    "qty_content":
+    []
+    }
 
 
     
@@ -1011,12 +1000,11 @@ This request creates a product with minimum required details: a name, a main cat
 
 ------------------------------------------------------
 Example JSON: Create a Product for a Particular Vendor 
-------------------------------------------------------    
-Vendors are independent companies that sell their own products in your store. To create a product for a specific Vendor you will need to add their **vendor_id** in a request. Learn more about Vendors entity in :doc:`this article<vendors>`.
+------------------------------------------------------
+
+:doc:`Vendors<vendors>` are independent companies that sell their own products in your store. To create a product for a specific Vendor you will need to add their **vendor_id** in a request.
  
-Send a POST request to   ``api/vendors/1/products``
- 
-::
+Send a POST request to   ``api/vendors/1/products``::
 
     {
     "product": "Vendor's Product Name",
@@ -1027,28 +1015,61 @@ Send a POST request to   ``api/vendors/1/products``
 This request creates a product for the Vendor with a ``vendor_id=1`` and minimum Product Details.
 
 --------------------------------------------
-Example JSON: Create a Product with an Image
+Example JSON: Create a Product with Images
 --------------------------------------------
 
 ::
 
+    "image_pairs":
     {
-    "product": "API Product",
-    "category_ids": "166",
-    "price": "1000",
-    "amount": "10",
-    "status": "A",
-    "main_pair":
-    {
-        "detailed":
-        {
-            "image_url": "https://example.com/image.jpg"
+        "6759": {
+            "pair_id": "6759",
+            "image_id": "0",
+            "detailed_id": "8665",
+            "position": "1",
+            "object_id": "180",
+            "object_type": "product",
+            "detailed": {
+                "object_id": "180",
+                "object_type": "product",
+                "type": "A",
+                "image_path": "https://example.com/stores/images/detailed/8/additional_image.jpg",
+                "alt": "",
+                "image_x": "600",
+                "image_y": "396",
+                "http_image_path": "http://example.com/stores/images/detailed/8/additional_image.jpg",
+                "https_image_path": "https://example.com/stores/images/detailed/8/additional_image.jpg",
+                "absolute_path": "/srv/projects/example.com/web/stores/images/detailed/8/additional_image.jpg",
+                "relative_path": "detailed/8/additional_image.jpg",
+                "is_high_res": false
+            }
         }
-    }
+        },
+    "main_pair": {
+        "pair_id": "650",
+        "image_id": "0",
+        "detailed_id": "706",
+        "position": "0",
+        "object_id": "180",
+        "object_type": "product",
+        "detailed": {
+            "object_id": "180",
+            "object_type": "product",
+            "type": "M",
+            "image_path": "https://example.com/stores/images/detailed/0/main_image.jpg",
+            "alt": "",
+            "image_x": "600",
+            "image_y": "600",
+            "http_image_path": "http://example.com/stores/images/detailed/0/main_image.jpg",
+            "https_image_path": "https://example.com/stores/images/detailed/0/main_image.jpg",
+            "absolute_path": "/srv/projects/example.com/web/stores/images/detailed/0/main_image.jpg",
+            "relative_path": "detailed/0/main_image.jpg",
+            "is_high_res": false
+        }
     }
 
   
-This request creates a product with a price, the Active Status, and a main image. The image must be already uploaded on your server, or available somewhere on the Internet.
+This request creates a product with a price, the *Active* status, a main and an additional image. The image must be already uploaded on your server, or available somewhere on the Internet.
 
 * To specify the image uploaded to your server, use the **absolute_path** parameter of the **detailed** object. 
 * To specify the image hosted on another server, use the **image_url** parameter of the **detailed** object.
@@ -1150,7 +1171,7 @@ Example JSON: Update a Product Image
     }
 
     
-This request updates the Main image and the Additional image of the particular Product. It replaces the already existent images of the product with new ones. The image of the product can be uploaded on your server or added with URL. 
+This request updates the Main image and the Additional image of the particular Product. It replaces the already existent images of the product with new ones. Images can be updated separately: for example, to update the additional image, you will need specify the corresponding field - **image_pairs**. The image of the product can be uploaded on your server or added with URL. 
   
 * To specify the image uploaded to your server, use the **absolute_path** parameter of the **detailed** object. 
 * To specify the image hosted on another server, use the **image_url** parameter of the **detailed** object.
@@ -1162,9 +1183,7 @@ This request updates the Main image and the Additional image of the particular P
 Example JSON: Update a Product to Add a Feature
 -----------------------------------------------
 
-To add a feature to a product, send a ``PUT`` request to ``api/products/<product_id>``
-
-::
+To add an existing :doc:`Product Feature <product_features>` to a product, send a ``PUT`` request to ``api/products/<product_id>``::
 
     {
     "product_features":
@@ -1198,8 +1217,8 @@ To add a feature to a product, send a ``PUT`` request to ``api/products/<product
                     "variant": "Adidas",
                     "image_pairs":
                     {
-                        "pair_id": "875",
-                        "image_id": "1006",
+                        "pair_id": "",
+                        "image_id": "",
                         "detailed_id": "0",
                         "position": "0",
                         "object_id": "86",
@@ -1208,8 +1227,8 @@ To add a feature to a product, send a ``PUT`` request to ``api/products/<product
                         {
                             "image_path": "https://example.com/images/feature_variant/1/Adidas_Logo.svg.png",
                             "alt": "",
-                            "image_x": "200",
-                            "image_y": "133",
+                            "image_x": "",
+                            "image_y": "",
                             "http_image_path": "http://example.com/images/feature_variant/1/Adidas_Logo.svg.png",
                             "https_image_path": "https://example.com/images/feature_variant/1/Adidas_Logo.svg.png",
                             "absolute_path": "/srv/projects/example.com/web/images/feature_variant/1/Adidas_Logo.svg.png",
@@ -1223,7 +1242,8 @@ To add a feature to a product, send a ``PUT`` request to ``api/products/<product
     }
     }
 
-This request adds a feature Brand with ``feature_id=18`` and a feature variant Adidas with ``variant_id=86`` to the product. Here is an article about :doc:`Product Features. <product_features>`
+This request adds the feature Brand with ``feature_id=18`` and a feature variant Adidas with ``variant_id=86`` to the product. The required fields are: **product_features**, **feature_id**, **variant_id**.
+
 
 ---------------
 Response Format
