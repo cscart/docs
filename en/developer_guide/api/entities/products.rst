@@ -170,9 +170,9 @@ Examples
     GET /api/vendors/1/products?page=5&items_per_page=20
 
     
-* Get all products of a particular category, filter them by the quantity and sort the result by product name from Z to A::
+* Get all products and sort them by quantity, from most to least::
 
-    GET /api/categories/166/products?amount=Y&sort_by=product&sort_order=desc
+    GET api/products?sort_by=amount&sort_order=desc
 
 
 
