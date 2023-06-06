@@ -2,6 +2,13 @@
 Clone Promotions
 ****************
 
+.. raw:: html
+
+    <div class="buy-now">
+        <a href="https://marketplace.cs-cart.com/clone-promotions-en.html" class="btn buy-now__btn">Buy now</a>
+    </div>
+
+
 .. contents::
     :local: 
     :depth: 3

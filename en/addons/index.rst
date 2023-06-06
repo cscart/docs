@@ -18,7 +18,6 @@ Add-ons
     birthday-present/index
     blocks_animation/index
     buy_more/index
-
     cart_sharing/index
     category-gallery/index
     clone_categories/index
