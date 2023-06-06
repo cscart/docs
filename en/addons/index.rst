@@ -22,9 +22,7 @@ Add-ons
     cart_sharing/index
     category-gallery/index
     clone_categories/index
-
-    :hidden: clone_promotions/index
-
+    clone_promotions/index
     cloud_translation_by_google/index
     CSV_export_for_sales_reports/index
     quantity_discount_bulk_edit/index
