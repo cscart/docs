@@ -49,102 +49,105 @@ Add these parameters to the path to specify which products will be returned in t
         -   Description
     *   -   page
         -   integer
-        -   The response to GET /api/products/ is a page with a limited number of products. This parameter determines the number of the page that will be sent in the response.
+        -   The response to ``GET /api/products/`` is a page with a limited number of products. This parameter determines the number of the page that will be sent in the response.
     *   -   items_per_page
         -   integer
-        -   Shows N products, where N - is a number defined in the parameter
+        -   Determines the number of products on a page.
     *   -   sort_by
         -   ``date``
-        -   Determines the parameter by which the orders are sorted in the response.
+        -   Determines the parameter by which the products are sorted in the response.
     *   -   sort_order
-        -   ``desc``
+        -   | 
         -   | Determines the sorting order:
             | ``asc``—ascending
             | ``desc``—descending
-    *   -   status
-        -   | 
-        -   Product status
     *   -   list_price
         -   | 
-        -   List price
-    *   -   product
-        -   | 
-        -   Product name
+        -   List price—if this price is higher than product’s Price, then a discount label will be displayed for the product.
     *   -   price
         -   | 
-        -   Price
+        -   Price—base product price in your store’s primary currency. 
+    *   -   product
+        -   | 
+        -   Product name—searches the name of the product as it appears on the storefront and in the Administration panel. 
     *   -   code
         -   | 
-        -   Product code
+        -   Product code—the identifier of the product that you use in your store. A **sorting** parameter.
     *   -   amount
         -   | 
-        -   In stock amount
+        -   In stock—searches the number of products in the stock.
     *   -   pname
         -   | 
-        -   Product name
+        -   Product name—the name of the product as it appears on the storefront and in the Administration panel.
     *   -   pshort
         -   | 
-        -   Short description
+        -   Short description—a short product description; it appears on the product list on the storefront.
     *   -   pfull
         -   | 
-        -   Full description
+        -   Full description—the product description that will appear on the product details page of the storefront. 
     *   -   pkeywords
         -   | 
-        -   Meta keywords
+        -   Meta keywords—a list of search keywords that appear on the product page.
     *   -   pcode
         -   | 
-        -   Product code
+        -   Product code—a parameter used to **filter** the identifier of the product that you use in your store.
     *   -   cid
         -   | 
-        -   Category ID
+        -   Category ID—a parameter used to **filter** the categories that the product will be assigned to. 
     *   -   amount_from
         -   | 
-        -   In stock lower range
+        -   Searches for products which amount in stock is at lower range.
     *   -   amount_to
         -   | 
-        -   In stock higher range
+        -   Searches for products which amount in stock is at higher range.
     *   -   price_from
         -   | 
-        -   Price lower range
+        -   Searches for products which Price is at lower range.
     *   -   price_to
         -   | 
-        -   Price higher range
+        -   Searches for products which Price is at higher range.
     *   -   subcats
-        -   | ``Y``
-            | ``N``
-        -   Include subcategories of the given category (the ``cid`` filter must be used) in the search scope
+        -   | 
+        -   | Include subcategories of the given category (the ``cid`` filter must be used) in the search scope:
+            | ``Y``—Yes
+            | ``N``—No
     *   -   order_ids
-        -   Comma-separated list of order IDs, e.g. ``1,13,24`` 
-        -   IDs of the orders to search the products in
+        -   | 
+        -   | IDs of the orders to search the products in:
+            | Comma-separated list of order IDs, e.g. ``1,13,24`` 
     *   -   free_shipping
-        -   | ``Y``
-            | ``N``
-        -   Free shipping
+        -   | 
+        -   | Free shipping enabled or not.
+            | ``Y``—Yes
+            | ``N``—No
     *   -   status
-        -   | ``A``
-            | ``D``
-            | ``H``
-        -   | Product status:
+        -   | 
+        -   | Searches for product with statuses:
             | ``A`` for Active
             | ``D`` for Disabled
             | ``H`` for Hidden
     *   -   age_limit
         -   integer
-        -   Age access restriction value in years
+        -   Age access restriction value in years.
     *   -   age_verification
-        -   | ``Y``
-            | ``N``
-        -   Activate/disable age verification
+        -   | 
+        -   | Activate/disable age verification
+            | ``Y``—Yes
+            | ``N``—No
     *   -   age_warning_message
         -   string
-        -   Forbidden age warning message
+        -   Forbidden age warning message.
     *   -   product_type
-        -   P
-        -   Product type
+        -   | 
+        -   | Product type:
+            | ``P``—A Product created not as a Variation
+            | ``V``—A Product created as Variation as one product
     *   -   is_returnable
-        -   | ``Y``
-            | ``N``
-        -   Returnable or not
+        -   | 
+        -   | This parameter is a part of the RMA add-on. It searches for returnable products.
+            | ``Y``—The product is labeled as available for the return.
+            | ``N``—The product is not available for the return.
+
 
 
 Examples
@@ -160,21 +163,18 @@ Examples
         -   Send a GET request to ``api/vendors/<vendor_id>/products``
     
 
-* Get all products of the 1st store, with 'foo' in their full description, costing over $10, and sort by product name from A to Z::
+*   ``GET /api/stores/1/products?pfull=Y&price_from=10&sort_by=product&sort_order=asc&q=foo``
 
-    GET /api/stores/1/products?pfull=Y&price_from=10&sort_by=product&sort_order=asc&q=foo
+Response is an array of all products of the 1st store, with 'foo' in their full description, costing over $10, and sorting by product name from A to Z.
 
 
-* Get all products of a particular vendor and sort the result as an array with 20 products from the 5th page::
+*   ``GET /api/vendors/1/products?page=5&items_per_page=20``
 
-    GET /api/vendors/1/products?page=5&items_per_page=20
-
+    Response is an array of 20 products of a particular vendor from the 5th Products page.
     
-* Get all products and sort them by quantity, from most to least::
+*   ``GET api/products?sort_by=amount&sort_order=desc``
 
-    GET api/products?sort_by=amount&sort_order=desc
-
-
+    Response is an array of all products sorted by quantity in a descending order.
 
 ---------------
 Response Format
@@ -502,7 +502,6 @@ The response is JSON with the following data::
     }
     }
 
-* The product doesn't exist: **HTTP/1.1 404 Not Found**.
 
 
 ======================
@@ -799,9 +798,13 @@ A pair of the full product image and (optionally) a thumbnail.
 Response Format
 ---------------
 
-* The product exists: **HTTP/1.1 200 OK**. 
+Let's make a test request::
 
-Let's make a test ``GET`` request to **/api/products/12**. The response is JSON with the following data::
+    GET request to /api/products/12
+
+The response is JSON with the following data:
+
+::
 
     {
     "product_id": "12",
@@ -962,9 +965,6 @@ Let's make a test ``GET`` request to **/api/products/12**. The response is JSON 
     }
 
 
-    
-* The products doesn't exist: **HTTP/1.1 404 Not Found**.
-
 
 
 ================
@@ -981,7 +981,7 @@ Create a Product
         -   Send a POST request to ``/api/products/``
 
 
-To create a new product send a ``POST`` request with required fields in JSON:  ``category_ids``, ``product``.
+To create a new product, send a ``POST`` request with required fields in JSON:  ``category_ids``, ``product``.
 
 ------------------------------
 Example JSON: Create a Product 
