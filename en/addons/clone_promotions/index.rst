@@ -41,7 +41,7 @@ Demo
    <!--noindex--><a href="https://clone-promotions.demo.simtechdev.com/" target="_blank" rel="nofollow">demo store</a><!--/noindex-->
 
 .. note::
-    
+
         Every half an hour the demo store is reset to the default state.
 
 =============
@@ -53,9 +53,16 @@ Compatibility
 
     See more information about compatibility of our add-ons `here <https://docs.cs-cart.com/marketplace-addons/compatibility/index.html>`_.
 
+=======
+Support
+=======
+
+    You are guaranteed a quality add-on supported by the future versions. If you need help, please contact us via our `help desk system <https://helpdesk.cs-cart.com>`_.
+
 --------------------
 Managing admin panel
 --------------------
+
 ======================
 Bulk promotion cloning
 ======================

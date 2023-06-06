@@ -22,6 +22,7 @@ Add-ons
     category-gallery/index
     clone_categories/index
     clone_promotions/index
+    closed_store_page/index
     cloud_translation_by_google/index
     CSV_export_for_sales_reports/index
     quantity_discount_bulk_edit/index
