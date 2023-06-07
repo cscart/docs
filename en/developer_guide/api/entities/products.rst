@@ -20,7 +20,7 @@ To get a list of products, send a ``GET`` request to ``/api/products/``::
   GET /api/products/
 
 
-The quantity of the returned products is determined by the ``items_per_page`` parameter. It's value can be changed in **Admin panel in Settings → Appearance → Elements per page** or through an API request. 
+The number of the returned products is determined by the ``items_per_page`` parameter. It's value can be changed in **Admin panel in Settings → Appearance → Elements per page** or through an API request. 
 
 
 To refer to all products of a particular :doc:`Category <categories>` send a ``GET`` request to  ``/api/categories/:id/products/``::
@@ -37,7 +37,7 @@ Add these parameters to the path to specify which products will be returned in t
 
 .. note::
 
-    The CS-Cart/Multi-Vendor REST API always accepts and returns data as strings and arrays/objects. The **Default values** column in the table merely shows what kind of data you can expect in the fields.
+    The CS-Cart/Multi-Vendor REST API always accepts and returns data as strings and arrays/objects. The **Default value** column in the table merely shows what kind of data you can expect in the fields.
 
 .. list-table::
     :header-rows: 1
@@ -45,14 +45,14 @@ Add these parameters to the path to specify which products will be returned in t
     :widths: 10 5 30
 
     *   -   Parameter
-        -   Default values
+        -   Default value
         -   Description
     *   -   page
         -   integer
         -   The response to ``GET /api/products/`` is a page with a limited number of products. This parameter determines the number of the page that will be sent in the response.
     *   -   items_per_page
-        -   integer
-        -   Determines the number of products on a page.
+        -   Elements per page value
+        -   Determines the number of products on a page. Can be changed 
     *   -   sort_by
         -   ``date``
         -   Determines the parameter by which the products are sorted in the response.
@@ -63,61 +63,61 @@ Add these parameters to the path to specify which products will be returned in t
             | ``desc``—descending
     *   -   list_price
         -   | 
-        -   List price—if this price is higher than product’s Price, then a discount label will be displayed for the product.
+        -   List price—searches for the discounted price. If this price is higher than product’s Price, then a discount label will be displayed for the product.
     *   -   price
         -   | 
-        -   Price—base product price in your store’s primary currency. 
+        -   Price—searches only base product price in your store’s primary currency. 
     *   -   product
         -   | 
         -   Product name—searches the name of the product as it appears on the storefront and in the Administration panel. 
     *   -   code
         -   | 
-        -   Product code—the identifier of the product that you use in your store. A **sorting** parameter.
+        -   Product code—a **sorting** parameter that determines the identifier of the product that you use in your store.
     *   -   amount
         -   | 
         -   In stock—searches the number of products in the stock.
     *   -   pname
         -   | 
-        -   Product name—the name of the product as it appears on the storefront and in the Administration panel.
+        -   Product name—searches the name of the product as it appears on the storefront and in the Administration panel.
     *   -   pshort
         -   | 
-        -   Short description—a short product description; it appears on the product list on the storefront.
+        -   Short description—determines a short product description; it appears on the product list on the storefront.
     *   -   pfull
         -   | 
-        -   Full description—the product description that will appear on the product details page of the storefront. 
+        -   Full description—determines the product description that will appear on the product details page of the storefront. 
     *   -   pkeywords
         -   | 
-        -   Meta keywords—a list of search keywords that appear on the product page.
+        -   Meta keywords—determines a list of search keywords that appear on the product page.
     *   -   pcode
         -   | 
         -   Product code—a parameter used to **filter** the identifier of the product that you use in your store.
     *   -   cid
         -   | 
         -   Category ID—a parameter used to **filter** the categories that the product will be assigned to. 
-    *   -   amount_from
-        -   | 
-        -   Searches for products which amount in stock is at lower range.
-    *   -   amount_to
-        -   | 
-        -   Searches for products which amount in stock is at higher range.
-    *   -   price_from
-        -   | 
-        -   Searches for products which Price is at lower range.
-    *   -   price_to
-        -   | 
-        -   Searches for products which Price is at higher range.
     *   -   subcats
         -   | 
         -   | Include subcategories of the given category (the ``cid`` filter must be used) in the search scope:
             | ``Y``—Yes
             | ``N``—No
+    *   -   amount_from
+        -   | 
+        -   Searches only for products that have an equal or lower "amount" (product quantity).
+    *   -   amount_to
+        -   | 
+        -   Searches only for products that have an equal or higher "amount" (product quantity).
+    *   -   price_from
+        -   | 
+        -   Searches only for products that have an equal or lower Product's "Price".
+    *   -   price_to
+        -   | 
+        -   Searches only for products that have an equal or higher Product's "Price".
     *   -   order_ids
         -   | 
         -   | IDs of the orders to search the products in:
             | Comma-separated list of order IDs, e.g. ``1,13,24`` 
     *   -   free_shipping
         -   | 
-        -   | Free shipping enabled or not.
+        -   | Searches only for Products with enabled or disabled Free shipping.
             | ``Y``—Yes
             | ``N``—No
     *   -   status
@@ -127,24 +127,24 @@ Add these parameters to the path to specify which products will be returned in t
             | ``D`` for Disabled
             | ``H`` for Hidden
     *   -   age_limit
-        -   integer
-        -   Age access restriction value in years.
+        -   Age limit field value
+        -   Searches for age access restriction value in years.
     *   -   age_verification
         -   | 
-        -   | Activate/disable age verification
+        -   | Determines if the the age verification is enabled.
             | ``Y``—Yes
             | ``N``—No
     *   -   age_warning_message
-        -   string
-        -   Forbidden age warning message.
+        -   | 
+        -   Determines the forbidden age warning message.
     *   -   product_type
         -   | 
-        -   | Product type:
-            | ``P``—A Product created not as a Variation
-            | ``V``—A Product created as Variation as one product
+        -   | Filters products:
+            | ``P``—a Product which appears on the storefront as separate product 
+            | ``V``—a main Product Variation which appears on the storefront as one product 
     *   -   is_returnable
         -   | 
-        -   | This parameter is a part of the RMA add-on. It searches for returnable products.
+        -   | Searches only for returnable or non-returnable products.
             | ``Y``—The product is labeled as available for the return.
             | ``N``—The product is not available for the return.
 
@@ -165,7 +165,7 @@ Examples
 
 *   ``GET /api/stores/1/products?pfull=Y&price_from=10&sort_by=product&sort_order=asc&q=foo``
 
-Response is an array of all products of the 1st store, with 'foo' in their full description, costing over $10, and sorting by product name from A to Z.
+    Response is an array of all products of the 1st store, with 'foo' in their full description, costing over $10, and sorting by product name from A to Z.
 
 
 *   ``GET /api/vendors/1/products?page=5&items_per_page=20``
@@ -530,7 +530,7 @@ A product has a number of properties, represented by fields.
 
 .. note::
 
-    The CS-Cart/Multi-Vendor REST API always accepts and returns data as strings and arrays/objects. The **Default values** column in the table merely shows what kind of data you can expect in the fields.
+    The CS-Cart/Multi-Vendor REST API always accepts and returns data as strings and arrays/objects. The **Values** column in the table merely shows what kind of data you can expect in the fields.
 
 .. list-table::
     :header-rows: 1
@@ -551,7 +551,7 @@ A product has a number of properties, represented by fields.
         -   ID of the main category
     *   -   price
         -   float
-        -   Price
+        -   Price—base product price in your store’s primary currency. 
     *   -   company_id
         -   integer
         -   ID of the store or vendor the product belongs to
@@ -565,7 +565,7 @@ A product has a number of properties, represented by fields.
             | ``H`` for Hidden
     *   -   amount
         -   integer
-        -   Product amount in stock
+        -   The number of products in the stock
     *   -   avail_since
         -   Date in UNIX format
         -   Date from which the product is available
@@ -589,14 +589,10 @@ A product has a number of properties, represented by fields.
         -   | ``A``
             | ``F``
         -   Exception type (``A``\ llow/ ``F``\ orbid products with certain option combinations)
-    *   -   feature_comparison
-        -   | ``Y``
-            | ``N``
-        -   Enable/disable adding the product to a feature comparison list
     *   -   free_shipping
         -   | ``Y``
             | ``N``
-        -   Allow free shipping
+        -   Determines if the Free shipping is allowed
     *   -   full_description
         -   string
         -   Full product description
@@ -606,10 +602,9 @@ A product has a number of properties, represented by fields.
     *   -   is_edp
         -   | ``Y``
             | ``N``
-        -   Downloadable or not
+        -   Determines if the product is downloadable or not
     *   -   lang_code
         -   | ``en``
-            | ``ru``
             | etc.
         -   Language code
     *   -   list_price
@@ -696,7 +691,7 @@ A product has a number of properties, represented by fields.
     *   -   shared_product
         -   | ``Y``
             | ``N``
-        -   Shared or not
+        -   Only for the Store Builder Ultimate: determines if the Product is shared on storefronts
     *   -   shipping_freight
         -   float
         -   Shipping freight
@@ -1020,46 +1015,36 @@ Example JSON: Create a Product with Images
 
 ::
 
+    {
+    "product": "Product Name",
+    "category_ids": "166",
+    "price": "1000",
     "image_pairs":
     {
-        "6759": {
-            "pair_id": "6759",
-            "image_id": "0",
-            "detailed_id": "8665",
-            "position": "1",
-            "object_id": "180",
             "object_type": "product",
             "detailed": {
-                "object_id": "180",
                 "object_type": "product",
                 "type": "A",
                 "image_path": "https://example.com/stores/images/detailed/8/additional_image.jpg",
                 "alt": "",
-                "image_x": "600",
-                "image_y": "396",
+                "image_x": "",
+                "image_y": "",
                 "http_image_path": "http://example.com/stores/images/detailed/8/additional_image.jpg",
                 "https_image_path": "https://example.com/stores/images/detailed/8/additional_image.jpg",
                 "absolute_path": "/srv/projects/example.com/web/stores/images/detailed/8/additional_image.jpg",
                 "relative_path": "detailed/8/additional_image.jpg",
                 "is_high_res": false
             }
-        }
         },
     "main_pair": {
-        "pair_id": "650",
-        "image_id": "0",
-        "detailed_id": "706",
-        "position": "0",
-        "object_id": "180",
         "object_type": "product",
         "detailed": {
-            "object_id": "180",
             "object_type": "product",
             "type": "M",
             "image_path": "https://example.com/stores/images/detailed/0/main_image.jpg",
             "alt": "",
-            "image_x": "600",
-            "image_y": "600",
+            "image_x": "",
+            "image_y": "",
             "http_image_path": "http://example.com/stores/images/detailed/0/main_image.jpg",
             "https_image_path": "https://example.com/stores/images/detailed/0/main_image.jpg",
             "absolute_path": "/srv/projects/example.com/web/stores/images/detailed/0/main_image.jpg",
@@ -1067,6 +1052,8 @@ Example JSON: Create a Product with Images
             "is_high_res": false
         }
     }
+    }
+
 
   
 This request creates a product with a price, the *Active* status, a main and an additional image. The image must be already uploaded on your server, or available somewhere on the Internet.
@@ -1191,22 +1178,16 @@ To add an existing :doc:`Product Feature <product_features>` to a product, send 
         "18":
         {
             "feature_id": "18",
-            "value": "",
             "value_int": null,
             "variant_id": "86",
             "feature_type": "E",
             "internal_name": "Brand",
             "description": "Brand",
-            "prefix": "",
-            "suffix": "",
             "variant": "Adidas",
-            "parent_id": "0",
             "display_on_header": "Y",
             "display_on_catalog": "N",
             "display_on_product": "N",
-            "feature_code": "",
             "purpose": "organize_catalog",
-            "features_hash": "10-86",
             "variants":
             {
                 "86":
@@ -1214,35 +1195,14 @@ To add an existing :doc:`Product Feature <product_features>` to a product, send 
                     "value": "",
                     "value_int": null,
                     "variant_id": "86",
-                    "variant": "Adidas",
-                    "image_pairs":
-                    {
-                        "pair_id": "",
-                        "image_id": "",
-                        "detailed_id": "0",
-                        "position": "0",
-                        "object_id": "86",
-                        "object_type": "feature_variant",
-                        "icon":
-                        {
-                            "image_path": "https://example.com/images/feature_variant/1/Adidas_Logo.svg.png",
-                            "alt": "",
-                            "image_x": "",
-                            "image_y": "",
-                            "http_image_path": "http://example.com/images/feature_variant/1/Adidas_Logo.svg.png",
-                            "https_image_path": "https://example.com/images/feature_variant/1/Adidas_Logo.svg.png",
-                            "absolute_path": "/srv/projects/example.com/web/images/feature_variant/1/Adidas_Logo.svg.png",
-                            "relative_path": "feature_variant/1/Adidas_Logo.svg.png",
-                            "is_high_res": false
-                        }
-                    }
+                    "variant": "Adidas"
                 }
             }
         }
     }
     }
 
-This request adds the feature Brand with ``feature_id=18`` and a feature variant Adidas with ``variant_id=86`` to the product. The required fields are: **product_features**, **feature_id**, **variant_id**.
+This request adds the existing feature Brand with ``feature_id=18`` and a feature variant Adidas with ``variant_id=86`` to the product. 
 
 
 ---------------
