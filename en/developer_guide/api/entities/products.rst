@@ -48,13 +48,19 @@ Add these parameters to the path to specify which products will be returned in t
         -   Default value
         -   Description
     *   -   page
-        -   integer
+        -   1
         -   The response to ``GET /api/products/`` is a page with a limited number of products. This parameter determines the number of the page that will be sent in the response.
     *   -   items_per_page
         -   Elements per page value
-        -   Determines the number of products on a page. Can be changed 
+        -   Determines the number of products on a page.
     *   -   sort_by
         -   ``date``
+            ``status``
+            ``list_price``
+            ``product``
+            ``price``
+            ``code``
+            ``amount``
         -   Determines the parameter by which the products are sorted in the response.
     *   -   sort_order
         -   | 
@@ -551,7 +557,7 @@ A product has a number of properties, represented by fields.
         -   ID of the main category
     *   -   price
         -   float
-        -   Price—base product price in your store’s primary currency. 
+        -   The base product price in your store’s primary currency 
     *   -   company_id
         -   integer
         -   ID of the store or vendor the product belongs to
@@ -672,7 +678,7 @@ A product has a number of properties, represented by fields.
         -   Product ID
     *   -   promo_text
         -   string
-        -   Promo text
+        -   Promo text that appears on the product page on the storefront 
     *   -   qty_step
         -   integer
         -   Quantity step
@@ -1158,7 +1164,7 @@ Example JSON: Update a Product Image
     }
 
     
-This request updates the Main image and the Additional image of the particular Product. It replaces the already existent images of the product with new ones. Images can be updated separately: for example, to update the additional image, you will need specify the corresponding field - **image_pairs**. The image of the product can be uploaded on your server or added with URL. 
+This request updates the Main image and the Additional image of the particular Product. It replaces the already existent images of the product with new ones. Images can be updated separately: for example, to update the additional image, you will need to specify the corresponding field - **image_pairs**. The image of the product can be uploaded on your server or added with URL. 
   
 * To specify the image uploaded to your server, use the **absolute_path** parameter of the **detailed** object. 
 * To specify the image hosted on another server, use the **image_url** parameter of the **detailed** object.
