@@ -1161,7 +1161,8 @@ Example JSON: Update a Product Image
         }
     }
 
-    
+
+
     .. important::
     
     To add several additional images, specify them in the ``image_pairs`` parameter before the ``main_pair`` parameter, unless the main product image will be replaced.
