@@ -1021,7 +1021,7 @@ Example JSON: Create a Product with Images
 --------------------------------------------
 
 .. important::
-    To add several additional images, specify them in the ``image_pairs`` parameter before the ``main_pair`` parameter, unless the main product image will be replaced.
+    A product can have multiple images. You can specify them in the ``image_pairs`` object. It must come before the ``main_pair`` object with the main product image.
 
 
 
@@ -1163,7 +1163,7 @@ Example JSON: Update a Product Image
 
 
 .. important::
-    To add several additional images, specify them in the ``image_pairs`` parameter before the ``main_pair`` parameter, unless the main product image will be replaced.
+    A product can have multiple images. You can specify them in the ``image_pairs`` object. It must come before the ``main_pair`` object with the main product image.
     
 This request updates the Main image and the Additional image of the particular Product. It replaces the already existent images of the product with new ones. Images can be updated separately: for example, to update the additional image, you will need to specify the corresponding field - **image_pairs**. The image of the product can be uploaded on your server or added with URL. 
   
