@@ -1022,8 +1022,7 @@ Example JSON: Create a Product with Images
 
 .. important::
     To add several additional images, specify them in the ``image_pairs`` parameter before the ``main_pair`` parameter, unless the main product image will be replaced.
-    
-This request creates a product with a price, the *Active* status, a main and 2 additional images. Images must be already uploaded on your server, or available somewhere on the Internet.
+
 
 
 
@@ -1063,6 +1062,8 @@ This request creates a product with a price, the *Active* status, a main and 2 a
     }
 
 
+This request creates a product with a price, the *Active* status, a main and 2 additional images. Images must be already uploaded on your server, or available somewhere on the Internet.
+    
 It this example we have uploaded 3 images:
 
 * The main_image.jpg in the **main_pair** parameter is the main product image. It was uploaded from with the **image_path** parameter, which means it is added with a URL from the Internet.
