@@ -20,7 +20,7 @@ To get a list of products, send a ``GET`` request to ``/api/products/``::
   GET /api/products/
 
 
-The number of the returned products is determined by the ``items_per_page`` parameter. It's value can be changed in **Admin panel in Settings → Appearance → Elements per page** or through an API request. 
+The number of the returned products is determined by the ``items_per_page`` parameter. It's value can be changed in Admin panel in **Settings → Appearance** in the **Elements per page** setting or through an API request. 
 
 
 To refer to all products of a particular :doc:`Category <categories>` send a ``GET`` request to  ``/api/categories/:id/products/``::
@@ -51,25 +51,26 @@ Add these parameters to the path to specify which products will be returned in t
         -   1
         -   The response to ``GET /api/products/`` is a page with a limited number of products. This parameter determines the number of the page that will be sent in the response.
     *   -   items_per_page
-        -   Elements per page value
+        -   "Elements per page" value
         -   Determines the number of products on a page.
     *   -   sort_by
-        -   ``date``
+        -   ``product``
+        -   Determines the parameter by which the products are sorted in the response.
+            ``date``
             ``status``
             ``list_price``
             ``product``
             ``price``
             ``code``
             ``amount``
-        -   Determines the parameter by which the products are sorted in the response.
     *   -   sort_order
-        -   | 
+        -   ``asc``
         -   | Determines the sorting order:
             | ``asc``—ascending
             | ``desc``—descending
     *   -   list_price
         -   | 
-        -   List price—searches for the discounted price. If this price is higher than product’s Price, then a discount label will be displayed for the product.
+        -   List price—searches products with a specific "List price". If a product has a higher list price than price, then the difference will be considered a discount.
     *   -   price
         -   | 
         -   Price—searches only base product price in your store’s primary currency. 
@@ -78,7 +79,7 @@ Add these parameters to the path to specify which products will be returned in t
         -   Product name—searches the name of the product as it appears on the storefront and in the Administration panel. 
     *   -   code
         -   | 
-        -   Product code—a **sorting** parameter that determines the identifier of the product that you use in your store.
+        -   Product code—a **sorting** parameter that searches the identifier of the product that you use in your store.
     *   -   amount
         -   | 
         -   In stock—searches the number of products in the stock.
@@ -87,13 +88,13 @@ Add these parameters to the path to specify which products will be returned in t
         -   Product name—searches the name of the product as it appears on the storefront and in the Administration panel.
     *   -   pshort
         -   | 
-        -   Short description—determines a short product description; it appears on the product list on the storefront.
+        -   Short description—searches a short product description which appears on the product list on the storefront.
     *   -   pfull
         -   | 
-        -   Full description—determines the product description that will appear on the product details page of the storefront. 
+        -   Full description—searches for the product description that will appear on the product details page of the storefront. 
     *   -   pkeywords
         -   | 
-        -   Meta keywords—determines a list of search keywords that appear on the product page.
+        -   Meta keywords—searches for a list of search keywords that appear on the product page.
     *   -   pcode
         -   | 
         -   Product code—a parameter used to **filter** the identifier of the product that you use in your store.
@@ -119,8 +120,8 @@ Add these parameters to the path to specify which products will be returned in t
         -   Searches only for products that have an equal or higher Product's "Price".
     *   -   order_ids
         -   | 
-        -   | IDs of the orders to search the products in:
-            | Comma-separated list of order IDs, e.g. ``1,13,24`` 
+        -   | Comma-separated list of of the order IDs to search the products in:
+            ``1,13,24``
     *   -   free_shipping
         -   | 
         -   | Searches only for Products with enabled or disabled Free shipping.
@@ -133,20 +134,20 @@ Add these parameters to the path to specify which products will be returned in t
             | ``D`` for Disabled
             | ``H`` for Hidden
     *   -   age_limit
-        -   Age limit field value
-        -   Searches for age access restriction value in years.
-    *   -   age_verification
         -   | 
-        -   | Determines if the the age verification is enabled.
-            | ``Y``—Yes
-            | ``N``—No
+        -   Searches for products with the specified age limit only.
+    *   -   age_verification
+        -   ``N``
+        -   | Searches for products with the age verification and allows to filter them based on the values:
+            | ``Y``—Enabled
+            | ``N``—Disabled
     *   -   age_warning_message
         -   | 
-        -   Determines the forbidden age warning message.
+        -   Searches for products with a specific age warning message.
     *   -   product_type
         -   | 
         -   | Filters products:
-            | ``P``—a Product which appears on the storefront as separate product 
+            | ``P``—a Product which appears on the storefront as separate products 
             | ``V``—a main Product Variation which appears on the storefront as one product 
     *   -   is_returnable
         -   | 
@@ -169,7 +170,7 @@ Examples
         -   Send a GET request to ``api/vendors/<vendor_id>/products``
     
 
-*   ``GET /api/stores/1/products?pfull=Y&price_from=10&sort_by=product&sort_order=asc&q=foo``
+*   ``GET /api/stores/1/products?price_from=10&sort_by=product&sort_order=asc&pname=foo``
 
     Response is an array of all products of the 1st store, with 'foo' in their full description, costing over $10, and sorting by product name from A to Z.
 
@@ -709,7 +710,7 @@ A product has a number of properties, represented by fields.
         -   Short description
     *   -   tax_ids
         -   array
-        -   Array of tax IDs
+        -   Array of tax IDs which are selected for the Product
     *   -   timestamp
         -   Valid timestamp in UNIX format
         -   Creation timestamp
@@ -717,18 +718,18 @@ A product has a number of properties, represented by fields.
         -   | ``B``
             | ``D``
         -   | Inventory tracking mode
-            | ``B`` for Track 
-            | ``D`` for do not track
+            | ``B`` for "Track" 
+            | ``D`` for "Do not track"
     *   -   unlimited_download
         -   | ``Y``
             | ``N``
-        -   For EDP products: allow or not unlimited downloads
+        -   For EDP (downloadable products): determines if a product can be downloaded a limited number of times (N), or as many times as needed (Y)
     *   -   updated_timestamp
         -   Valid timestamp in UNIX format
         -   Last update timestamp
     *   -   usergroup_ids
         -   String of comma-separated user group IDs
-        -   User group IDs
+        -   IDs of user groups that can see this product
     *   -   weight
         -   float
         -   Weight
@@ -737,9 +738,9 @@ A product has a number of properties, represented by fields.
             | ``P``
             | ``A``
         -   | Zero price action
-            | ``R`` for Do not allow customers to add product to cart
-            | ``P`` for Allow customers to add product to cart
-            | ``A`` for Ask customer to enter the price
+            | ``R`` for "Do not allow customers to add product to cart"
+            | ``P`` for "Allow customers to add product to cart"
+            | ``A`` for "Ask customer to enter the price"
   
 
 .. _main-pair:
@@ -793,7 +794,7 @@ A pair of the full product image and (optionally) a thumbnail.
         -   Image width in pixels
     *   -   image_y
         -   integer
-        -   Image height  
+        -   Image height in pixels
   
 ---------------
 Response Format
@@ -1003,7 +1004,7 @@ This request creates a product with minimum required details: a name, a main cat
 Example JSON: Create a Product for a Particular Vendor 
 ------------------------------------------------------
 
-:doc:`Vendors<vendors>` are independent companies that sell their own products in your store. To create a product for a specific Vendor you will need to add their **vendor_id** in a request.
+:doc:`Vendors<vendors>` are independent companies that sell their own products in your marketplace. To create a product for a specific Vendor you will need to add their **vendor_id** in a request.
  
 Send a POST request to   ``api/vendors/1/products``::
 
@@ -1019,6 +1020,17 @@ This request creates a product for the Vendor with a ``vendor_id=1`` and minimum
 Example JSON: Create a Product with Images
 --------------------------------------------
 
+.. important::
+    To add several additional images, specify them in image_pairs parameter before the main_pair parameter, unless the main product image will be replaced.
+    
+This request creates a product with a price, the *Active* status, a main and an additional image. The image must be already uploaded on your server, or available somewhere on the Internet.
+
+* To specify the image uploaded to your server, use the **absolute_path** parameter of the **detailed** object. 
+* To specify the image hosted on another server, use the **image_url** parameter of the **detailed** object.
+* To create a product with the main image, use the **main_pair** object.
+* To add the additional image of the product, use the **image_pairs** object.
+
+
 ::
 
     {
@@ -1031,15 +1043,16 @@ Example JSON: Create a Product with Images
             "detailed": {
                 "object_type": "product",
                 "type": "A",
-                "image_path": "https://example.com/stores/images/detailed/8/additional_image.jpg",
-                "alt": "",
-                "image_x": "",
-                "image_y": "",
-                "http_image_path": "http://example.com/stores/images/detailed/8/additional_image.jpg",
-                "https_image_path": "https://example.com/stores/images/detailed/8/additional_image.jpg",
-                "absolute_path": "/srv/projects/example.com/web/stores/images/detailed/8/additional_image.jpg",
-                "relative_path": "detailed/8/additional_image.jpg",
-                "is_high_res": false
+                "absolute_path": "/srv/projects/example.com/images/detailed/additional_image1.jpg", // Absolute filesystem path to the image
+                "alt": "This is where the alt text for the image goes.",
+            },
+            {
+            "object_type": "product",
+            "detailed": {
+                "object_type": "product",
+                "type": "A",
+                "alt": "This is where the alt text for the image goes.",
+                "relative_path": "detailed/0/additional_image2.jpg" // Relative filesystem path to the image
             }
         },
     "main_pair": {
@@ -1047,27 +1060,21 @@ Example JSON: Create a Product with Images
         "detailed": {
             "object_type": "product",
             "type": "M",
-            "image_path": "https://example.com/stores/images/detailed/0/main_image.jpg",
-            "alt": "",
-            "image_x": "",
-            "image_y": "",
-            "http_image_path": "http://example.com/stores/images/detailed/0/main_image.jpg",
-            "https_image_path": "https://example.com/stores/images/detailed/0/main_image.jpg",
-            "absolute_path": "/srv/projects/example.com/web/stores/images/detailed/0/main_image.jpg",
-            "relative_path": "detailed/0/main_image.jpg",
-            "is_high_res": false
+            "image_path": "https://example.com/images/detailed/main_image.jpg", // Valid URL pointing to the image
+            "alt": "This is where the alt text for the image goes."
         }
     }
     }
 
 
-  
-This request creates a product with a price, the *Active* status, a main and an additional image. The image must be already uploaded on your server, or available somewhere on the Internet.
+It this example we have uploaded 3 images:
 
-* To specify the image uploaded to your server, use the **absolute_path** parameter of the **detailed** object. 
-* To specify the image hosted on another server, use the **image_url** parameter of the **detailed** object.
-* To create a product with the main image, use the **main_pair** object.
-* To add the additional image of the product, use the **image_pairs** object.
+* The main_image.jpg in the **main_pair** parameter is the main product image. It was uploaded from with the **image_path** parameter, which means it is added with a URL from the Internet.
+* The additional_image1.jpg  is the additional image of a product. It was uploaded on the server via FTP. The path to the image is specified in the **absolute_path** parameter of the **detailed** object.
+* The additional_image2.jpg is also an additional image, but it was uploaded in the Files section in the Admin panel. That's why it can be specified in the **relative_path** parameter.
+
+
+
 
 ---------------
 Response Format
@@ -1128,15 +1135,12 @@ Example JSON: Update a Product Image
                 "object_id": "180",
                 "object_type": "product",
                 "type": "A",
-                "image_path": "https://example.com/stores/images/detailed/8/additional_image.jpg",
-                "alt": "",
+                "image_path": "https://example.com/images/detailed/0/additional_image.jpg", // Valid URL pointing to the image
+                "alt": "This is where the alt text for the image goes.",
                 "image_x": "600",
                 "image_y": "396",
-                "http_image_path": "http://example.com/stores/images/detailed/8/additional_image.jpg",
-                "https_image_path": "https://example.com/stores/images/detailed/8/additional_image.jpg",
-                "absolute_path": "/srv/projects/example.com/web/stores/images/detailed/8/additional_image.jpg",
-                "relative_path": "detailed/8/additional_image.jpg",
-                "is_high_res": false
+                "absolute_path": "/srv/projects/example.com/images/detailed/0/additional_image.jpg", // Absolute filesystem path to the image
+                "relative_path": "detailed/0/additional_image.jpg",
             }
         }
         },
@@ -1151,18 +1155,19 @@ Example JSON: Update a Product Image
             "object_id": "180",
             "object_type": "product",
             "type": "M",
-            "image_path": "https://example.com/stores/images/detailed/0/main_image.jpg",
-            "alt": "",
+            "image_path": "https://example.com/stores/images/detailed/0/main_image.jpg", // Valid URL pointing to the image
+            "alt": "This is where the alt text for the image goes.",
             "image_x": "600",
             "image_y": "600",
-            "http_image_path": "http://example.com/stores/images/detailed/0/main_image.jpg",
-            "https_image_path": "https://example.com/stores/images/detailed/0/main_image.jpg",
-            "absolute_path": "/srv/projects/example.com/web/stores/images/detailed/0/main_image.jpg",
+            "absolute_path": "/srv/projects/example.com/web/stores/images/detailed/0/main_image.jpg", // Absolute filesystem path to the image
             "relative_path": "detailed/0/main_image.jpg",
-            "is_high_res": false
         }
     }
 
+    
+    .. important::
+    
+    To add several additional images, specify them in image_pairs parameter before the main_pair parameter, unless the main product image will be replaced.
     
 This request updates the Main image and the Additional image of the particular Product. It replaces the already existent images of the product with new ones. Images can be updated separately: for example, to update the additional image, you will need to specify the corresponding field - **image_pairs**. The image of the product can be uploaded on your server or added with URL. 
   
@@ -1178,28 +1183,18 @@ Example JSON: Update a Product to Add a Feature
 
 To add an existing :doc:`Product Feature <product_features>` to a product, send a ``PUT`` request to ``api/products/<product_id>``::
 
+
     {
     "product_features":
     {
         "18":
         {
             "feature_id": "18",
-            "value_int": null,
             "variant_id": "86",
-            "feature_type": "E",
-            "internal_name": "Brand",
-            "description": "Brand",
-            "variant": "Adidas",
-            "display_on_header": "Y",
-            "display_on_catalog": "N",
-            "display_on_product": "N",
-            "purpose": "organize_catalog",
             "variants":
             {
                 "86":
                 {
-                    "value": "",
-                    "value_int": null,
                     "variant_id": "86",
                     "variant": "Adidas"
                 }
