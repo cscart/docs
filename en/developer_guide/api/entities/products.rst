@@ -88,19 +88,19 @@ Add these parameters to the path to specify which products will be returned in t
         -   Product name—searches the name of the product as it appears on the storefront and in the Administration panel.
     *   -   pshort
         -   | 
-        -   Short description—searches a short product description which appears on the product list on the storefront.
+        -   Searches a short product description which appears on the product list on the storefront.
     *   -   pfull
         -   | 
-        -   Full description—searches for the product description that will appear on the product details page of the storefront. 
+        -   Searches for products with a specific word or a part of phrase in their "Full description". 
     *   -   pkeywords
         -   | 
         -   Meta keywords—searches for a list of search keywords that appear on the product page.
     *   -   pcode
         -   | 
-        -   Product code—a parameter used to **filter** the identifier of the product that you use in your store.
+        -   A parameter used to **filter** the identifier of the product that you use in your store.
     *   -   cid
         -   | 
-        -   Category ID—a parameter used to **filter** the categories that the product will be assigned to. 
+        -   A parameter used to **filter** the categories that the product will be assigned to. 
     *   -   subcats
         -   | 
         -   | Include subcategories of the given category (the ``cid`` filter must be used) in the search scope:
@@ -114,10 +114,10 @@ Add these parameters to the path to specify which products will be returned in t
         -   Searches only for products that have an equal or higher "amount" (product quantity).
     *   -   price_from
         -   | 
-        -   Searches only for products that have an equal or lower Product's "Price".
+        -   Searches only for products that have an equal or higher "Price".
     *   -   price_to
         -   | 
-        -   Searches only for products that have an equal or higher Product's "Price".
+        -   Searches only for products that have an equal or lower "Price".
     *   -   order_ids
         -   | 
         -   | Comma-separated list of of the order IDs to search the products in:
@@ -1004,7 +1004,7 @@ This request creates a product with minimum required details: a name, a main cat
 Example JSON: Create a Product for a Particular Vendor 
 ------------------------------------------------------
 
-:doc:`Vendors<vendors>` are independent companies that sell their own products in your marketplace. To create a product for a specific Vendor you will need to add their **vendor_id** in a request.
+:doc:`Vendors <vendors>` are independent companies that sell their own products in your marketplace. To create a product for a specific Vendor you will need to add their **vendor_id** in a request.
  
 Send a POST request to   ``api/vendors/1/products``::
 
@@ -1021,14 +1021,10 @@ Example JSON: Create a Product with Images
 --------------------------------------------
 
 .. important::
-    To add several additional images, specify them in image_pairs parameter before the main_pair parameter, unless the main product image will be replaced.
+    To add several additional images, specify them in the ``image_pairs`` parameter before the ``main_pair`` parameter, unless the main product image will be replaced.
     
-This request creates a product with a price, the *Active* status, a main and an additional image. The image must be already uploaded on your server, or available somewhere on the Internet.
+This request creates a product with a price, the *Active* status, a main and 2 additional images. Images must be already uploaded on your server, or available somewhere on the Internet.
 
-* To specify the image uploaded to your server, use the **absolute_path** parameter of the **detailed** object. 
-* To specify the image hosted on another server, use the **image_url** parameter of the **detailed** object.
-* To create a product with the main image, use the **main_pair** object.
-* To add the additional image of the product, use the **image_pairs** object.
 
 
 ::
@@ -1167,7 +1163,7 @@ Example JSON: Update a Product Image
     
     .. important::
     
-    To add several additional images, specify them in image_pairs parameter before the main_pair parameter, unless the main product image will be replaced.
+    To add several additional images, specify them in the ``image_pairs`` parameter before the ``main_pair`` parameter, unless the main product image will be replaced.
     
 This request updates the Main image and the Additional image of the particular Product. It replaces the already existent images of the product with new ones. Images can be updated separately: for example, to update the additional image, you will need to specify the corresponding field - **image_pairs**. The image of the product can be uploaded on your server or added with URL. 
   
