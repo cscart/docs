@@ -55,13 +55,13 @@ Add these parameters to the path to specify which products will be returned in t
         -   Determines the number of products on a page.
     *   -   sort_by
         -   ``product``
-        -   Determines the parameter by which the products are sorted in the response.
-            ``date``
-            ``status``
-            ``list_price``
-            ``product``
-            ``price``
-            ``code``
+        -   Determines the parameter by which the products are sorted in the response:
+            ``date``,
+            ``status``,
+            ``list_price``,
+            ``product``,
+            ``price``,
+            ``code``,
             ``amount``
     *   -   sort_order
         -   ``asc``
@@ -137,7 +137,7 @@ Add these parameters to the path to specify which products will be returned in t
         -   | 
         -   Searches for products with the specified age limit only.
     *   -   age_verification
-        -   ``N``
+        -   | 
         -   | Searches for products with the age verification and allows to filter them based on the values:
             | ``Y``—Enabled
             | ``N``—Disabled
