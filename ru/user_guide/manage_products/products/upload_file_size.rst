@@ -12,7 +12,7 @@
 
    .. code-block:: none
 
-       upload_max_filesize = 2M
+        upload_max_filesize = 2M
        
         post_max_size = 2M
 
