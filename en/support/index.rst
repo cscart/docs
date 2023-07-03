@@ -24,3 +24,12 @@ Free queries for consultation include
     * Creating a service request for verification, 3-5 days
     * If the problem is reproduced on the default installation, a task is created in the backlog, for investigation. All improvements are made according to prioritization.
     * If the problem can’t be recreated, an additional customer’s store check will be required. This will be done as part of an incident or subscription to Technical Support.
+
++++++++++++++++++++
+Refund Conditions:
++++++++++++++++++++
+
+    * You have the unconditional right to claim and receive a full refund for the add-ons within 30 days following the day of your purchase.
+    * No refund will be available after this refund period is over.
+    * Any purchase of add-ons at a discount price is non-refundable (except the cases when the add-ons are purchased within the Loyalty program).
+    * The cost of the installation service is non-refundable.

@@ -57,9 +57,7 @@ Add-ons
     pop_up_notifications_pro/index
     full-width_banner/index
     enhanced_navigation_by_promotions/index
-
-    :hidden: product-bundles/index
-
+    product-bundles/index
     product_labels/index
     product_likes/index
     user_profile_page/index
