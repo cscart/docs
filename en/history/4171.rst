@@ -1,0 +1,216 @@
+************************
+CS-Cart 4.17.1 Changelog
+************************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Common Products for Vendors: Promotions: Added display of discounts from promotions on the catalog in the storefront.
+
+[+] Add-ons: PayPal Commerce Platform: Added information on how to get PayPal integration code directly from the payment method setup.
+
+[+] Products: Object picker: Quantity and vendor of the product have been added to the item selection.
+
+[+] Settings: Appearance: The "Phone number with country selection" option for the "Supported phone numbers" setting was added.
+
+[+] UI / UX: Languages: Multilingual field indicator for some pages was added.
+
+[+] Upgrade Center: Added filtering for add-on upgrades by add-on status and developer.
+
+[+] Upgrade Center: CS-Cart now checks the Add-on Market and warns you if your add-ons aren't compatible with a new CS-Cart version yet.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: Common Products for Vendors: Added the display of the old price of the product offer when a promotion is active.
+
+[*] Design: The format setting for language block settings was renamed.
+
+[*] Help center: The spacing between blocks was increased, and the heading has been moved.
+
+[*] Multi-Vendor: Add-ons: Vendor panel configurator:  Usergroups: Privileges: Privilege "Vendors: Can edit" is now used for log in as vendor from admin panel. It also allows editing vendor panel.
+
+[*] Profiles: Administrators: New attributes added in the admin list: "main admin" and "main admin for storefront".
+
+[*] Security: File editor: File uploading security was improved.
+
+[*] Shipping methods: Rate areas: Rate area is now displayed at the test rate calculation tab.
+
+[*] Theme editor: Google fonts are now hosted locally.
+
+[*] WYSIWYG: TinyMCE was updated to version 4.7.10.
+
+[*] Add-ons: GDPR Compliance (EU): The terms of use tooltip has been replaced with a popup.
+
+[*] Multi-Vendor: Vendors: Languages: Ability to translate vendor name, address and city added. Translations are displayed on the storefront and within email notifications.
+
+[*] Upgrade Center: All add-on upgrades now follow a similar naming convention: add-on name and version number.
+
+[*] Upgrade Center: Notifications about the available upgrades improved.
+
+=========
+Bug Fixes
+=========
+
+[!] Abandoned / Live carts: If the currency thousands separator was a space, a total value could break. Fixed.
+
+[!] Add-ons: Advanced Products Import: While changing an import preset name, the value was saving for only the previously defined language of the page description. Fixed.
+
+[!] Add-ons: Advanced products import: Export/Import: Import of product description preformatted  in HTML was adding the <br /> tag to the new lines. Fixed.
+
+[!] Add-ons: Advanced products import: Message center: An error was displayed when calling "Contact administrator" on the preset page. Fixed.
+
+[!] Add-ons: Cities: Cities could not be attached to any state that had state code longer than 9 symbols. Fixed.
+
+[!] Add-ons: Common Products for vendors: Product options: The quick purchase function did not work correctly with the product options. Fixed.
+
+[!] Add-ons: Common products for vendors: Vendor locations: Common products were displayed in all categories. Fixed.
+
+[!] Add-ons: E-mail marketing: Google reCAPTCHA: There was no way to enable the reCAPTCHA for Email Marketing subscription form. Fixed.
+
+[!] Add-ons: GDPR Compliance (EU): Some JS scripts were not loaded if "Cookie consent" setting was set to "None". Fixed.
+
+[!] Add-ons: GDPR: Google reCAPTCHA: reCAPTCHA was not working with explicit cookie consent. Fixed.
+
+[!] Add-ons: Maps and geolocation: When loading Google maps, a warning was shown in the console about the need for the callback function. Fixed.
+
+[!] Add-ons: Maps and geolocation: Yandex Maps returned the name of the locality with the type. Fixed.
+
+[!] Add-ons: Mobile application: Languages: Vendor products and features were not displayed in the selected language. Fixed.
+
+[!] Add-ons: Newsletters: It was possible to set the autoresponder status to "Sent", which resulted in empty emails being sent. Fixed.
+
+[!] Add-ons: PayPal Commerce Platform: Stripe Connect: Accounting: When money was refunded from a vendor’s account via PayPal Commerce Platform or Stripe Connect, it was listed as if the vendor also owed that sum to the marketplace. Fixed.
+
+[!] Add-ons: Payment Dependencies: Vendor panel: Vendors were able to use disabled payment methods while creating new shipping method. Fixed.
+
+[!] Add-ons: Product variations: Product's URL didn't change when selecting a product variation. Fixed.
+
+[!] Add-ons: Product reviews: The rating filter did not work. Fixed.
+
+[!] Add-ons: Product variations: Advanced product import: Features: Even if feature was disabled, new variations could be generated for it. Fixed.
+
+[!] Add-ons: Product variations: Disabled variations were displayed on the storefront and were available for adding to the cart. Fixed.
+
+[!] Add-ons: Product variations: In some cases add-on could incorrectly modify the SQL query, thus causing an error. Fixed.
+
+[!] Add-ons: Product variations: Social buttons: When switching the product variation, the social buttons were not displayed. Fixed.
+
+[!] Add-ons: RMA: Information about returned products got lost from the administration panel once products' return period expired. Fixed.
+
+[!] Add-ons: Stores and pickup points: Maps and geolocation: "Pickup" shipping method was not displayed on product page separately by default. Fixed.
+
+[!] Add-ons: Stripe payments: If a negative response is received from the payment system during the payment of an order, the order is created with the status 'Open'. Fixed.
+
+[!] Add-ons: Stripe payments: The shopping cart was cleared when entering an incorrect CVC code and reloading the checkout page. Fixed.
+
+[!] Add-ons: Vendor privileges: Vendors were able to update shipment status despite user group restriction. Fixed.
+
+[!] Checkout: Profile fields: Entered phone field value could be reset after page reload in some cases. Fixed.
+
+[!] Checkout: Profile fields: In the Safari browser, the phone field error message could be incorrect. Fixed.
+
+[!] Checkout: Promotions: Product discount wasn't displayed on checkout page within "Order summary" block. Fixed.
+
+[!] Checkout: Shipping methods: In some cases, the shipping method might not be displayed if the weight limit and product weight were set to three decimal places. Fixed.
+
+[!] Design: Features: Brands: Large text in the description had small line spacing. Fixed.
+
+[!] Design: Promotions: In the promotion condition, in the product feature selection field, the entered text was partially not visible. Fixed.
+
+[!] Documents: Storefront url was always displayed with HTTP protocol in c.storefront variable. Fixed.
+
+[!] Import: On some occasions, some characteristics may have been missed when importing the old characteristic format. Fixed.
+
+[!] Layouts: When switching the layout on the product and website pages, the error was displayed. Fixed.
+
+[!] Mobile app: Languages: Some language variables were missed. Fixed.
+
+[!] Mobile app: Sign in icon with Apple ID was too small. Fixed.
+
+[!] Mobile app: Some interface elements did not work correctly in RTL mode. Fixed.
+
+[!] Mobile app: There was no notification that the amount of an item in the cart was reduced to the amount of an item in stock. Fixed.
+
+[!] Mobile app: Wrong redirect when recovering password. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Bestsellers: Offers without discounts were displayed on the list of discounted products. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Product Variations: Product variations were displayed as out of stock in a product quick view. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Product filters: The price filter did not take into account the current price of the common product after placing an order. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for Vendors: Product Variations: Storefronts: In some cases, the product was not displayed in the list of products of the category. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Direct Customer-to-Vendor Payments: Common Products for Vendors: In some cases, when working with common products, the distribution of products in the order by vendors was incorrectly performed. Fixed.
+
+[!] Multi-Vendor Ultimate: Add-ons: Order fulfillment by marketplace: Stores and pickup points: Chosen pickup point was not displayed on order detailed page. Fixed.
+
+[!] Multi-Vendor Ultimate: Email notifications: Storefronts assigned to admins were not taken into account when sending email notifications. Fixed.
+
+[!] Multi-Vendor: Add-ons: Common products for vendors: In some cases, the promotions was incorrectly displayed on the common product page. Fixed.
+
+[!] Multi-Vendor: Add-ons: Landing pages from Tilda: Vendors: Vendor administrators were unable to view pages from Tilda at the storefront. Fixed.
+
+[!] Multi-Vendor: Add-ons: Stripe Connect payments: An error occurred when placing an order if Norwegian is used in the storefront. Fixed.
+
+[!] Multi-Vendor: Add-ons: Stripe Connect payments: Funds were not transfered to vendor if payment was done with "delayed notifications" payment methods like SEPA, Sofort, etc. Fixed.
+
+[!] Multi-Vendor: Add-ons: Stripe Connect payments: Incorrect order amount was sent to Stripe if zero-decimal currencies was used. Fixed.
+
+[!] Multi-Vendor: Add-ons: Stripe Connect payments: Promotions: Vendor balance was calculated incorrectly after refund via Stripe if promotions was used for the order. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor data premoderation: Common Products for Vendors: Product that was not yet approved by administrator could be made common. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor panel configurator:  Vendor privileges: Usergroups:
+
+[!] Multi-Vendor: Add-ons: Vendor plans: Vendor panel: The vendor plan description was displayed incorrectly. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor-to-admin payments: The add-on could cause PHP fatal error in third party themes and add-ons. Fixed.
+
+[!] Multi-Vendor: Categories: Picker: The expanded list of categories displayed categories unavailable to the vendor when creating and editing the product. Fixed.
+
+[!] Multi-Vendor: Email notifications: New vendor details link in email notifications didn't work. Fixed.
+
+[!] Multi-Vendor: Logos: Vendors: When creating a vendor through the administration panel, the logo of the last edited storefront was assigned to him. Fixed.
+
+[!] Multi-Vendor: Marketplace setup wizard: Vendor locations: The "Let vendors set their location on Google Maps" setting couldn't be turned on. Fixed.
+
+[!] Multi-Vendor: Products: Data loading on scroll did not work in the vendor dropdown list. Fixed.
+
+[!] Multi-Vendor: Storefronts: Vendor panel: There was an incorrect redirect to the storefront through the bottom menu of the vendor panel. Fixed
+
+[!] Multi-Vendor: Vendor panel: The close icon was not displayed in the mobile layout of the pop-up window. Fixed
+
+[!] Onboarding: The proportions of the video may have been broken. Fixed.
+
+[!] Order management: In some cases, when adding a product to an order, an error occurred in PHP 8. Fixed.
+
+[!] Orders: Search: In the admin panel, it was not possible to find orders in the incomplete status by order ID. Fixed.
+
+[!] Orders: In some cases multiple orders with the same identifiers could be created. Fixed.
+
+[!] Payments: PayPal Payments: Payflow: Incorrect name value was displayed in the request. Fixed.
+
+[!] Products: Edit selected: Features: The feature selection was not active when the page was loading. Fixed.
+
+[!] Products: Options: When cloning a variant of an option, the image alternative text was cloned incorrectly. Fixed.
+
+[!] Products: The products page without a category opened with an error. Fixed.
+
+[!] Sales reports: At some zoom levels, products weren't loaded in reports. Fixed.
+
+[!] Storefronts: Regions: Pages of the regional storefront with redirect enabled might not be indexed by crawlers. Fixed.
+
+[!] Ultimate: Add-ons: Stripe: An order made from an additional storefront might not change its status after successful payment. Fixed.
+
+[!] Upgrade center: Languages: Step with upgrading the language packs may take too much time during the installation's upgrade. Fixed.
+
+[!] Upgrade center: Upgrades could result in error, if "MyISAM" was disabled on server. Fixed.
+
+[!] Upgrade center: When updating modules, 0 was substituted in the console. Fixed.
+
+[!] Upgrade Center: The upgrade of the CS-Cart platform itself could end up at the bottom of the list. Fixed.
+
