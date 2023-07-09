@@ -1,5 +1,5 @@
 ********************
-Apple and Google Pay
+Braintree
 ********************
 
 .. raw:: html
@@ -28,46 +28,14 @@ Overview
         :width: 495px
 
     .. meta::
-        :description: The Apple and Google Pay add-on allows you to accept credit card, PayPal, Apple Pay and Google Pay payments using Braintree in your CS-Cart store.
-        :keywords: Apple Pay, Google Pay, PayPal, Braintree, CS-Cart, Multi-Vendor, payment method integration, 3D secure
+        :description: The Braintree add-on allows you to accept credit card, PayPal  payments using Braintree in your CS-Cart store.
+        :keywords: PayPal, Braintree, CS-Cart, Multi-Vendor, payment method integration, 3D secure
 
 ==========================
 What the customer will see
 ==========================
 
     Braintree offers a variety of convenient ways to accept payments:
-
-+++++++++
-Apple Pay
-+++++++++
-
-    Apple Pay is a mobile and online purchasing experience for customers with supported iOS and macOS devices.
-
-    .. fancybox:: img/IMG_0783.PNG 
-        :alt: Braintree Apple Pay
-        :width: 350px 
-
-    For more details, please see `Apple Pay feature <https://www.braintreepayments.com/en-au/features/apple-pay>`_.
-
-++++++++++
-Google Pay
-++++++++++
-
-    .. note::
-
-        Braintree states that Google Pay is currently available in beta with the latest Android and JavaScript SDKs.
-
-    Google Pay provides a mobile purchasing experience both in app and on the mobile web for customers with supported Android devices. It allows customers to pay with cards stored in their Google account, in addition to those stored in Android Pay.
-
-    .. fancybox:: img/buy-with-google-pay.png
-        :alt: Braintree Google Pay
-        :width: 350px
-
-    .. note::
-
-        SSL certificate is required to use Google Pay.
-
-    For more details, please see `Google Pay feature <https://www.braintreepayments.com/en-hk/features/google-pay>`_.
 
 ++++++++++
 Drop-in UI
@@ -76,7 +44,7 @@ Drop-in UI
     The quickest way to pay is **Drop-in UI**, which is also supported in the add-on. The add-on makes it possible to securely store customer information in the Braintree Vault so that your customers don't need to re-enter their information each time at checkout. Refer to `this article <https://articles.braintreepayments.com/control-panel/vault/overview>`_ for more details.
 
     .. fancybox:: img/braintree-dropin-ui-crop.png
-        :alt: Braintree Apple Pay 
+        :alt: Braintree 
         :width: 414px 
 
 ++++++
@@ -103,7 +71,7 @@ Compatibility
 
     .. note::
 
-        Starting from CS-Cart 4.10.x, the Apple and Google Pay add-on is not compatible with the deprecated default `Step-by-Step Checkout add-on <https://docs.cs-cart.com/latest/user_guide/addons/step_by_step_checkout/index.html>`_.
+        Starting from CS-Cart 4.10.x, the Braintree add-on is not compatible with the deprecated default `Step-by-Step Checkout add-on <https://docs.cs-cart.com/latest/user_guide/addons/step_by_step_checkout/index.html>`_.
 
 ========
 Features
@@ -111,7 +79,7 @@ Features
 
     * Allow your buyers to pay via Braintree.
 
-    * Accept payments via PayPal, Apple Pay and Google Pay.
+    * Accept payments via PayPal.
 
     * Issue refunds right from the admin panel.
 
@@ -137,7 +105,7 @@ Support
 Demo
 ====
 
-    You can try Apple and Google Pay in our |live_demo_url|.
+    You can try Braintree in our |live_demo_url|.
 
     .. |live_demo_url| raw:: html
 
@@ -176,55 +144,6 @@ Getting Merchant Account ID
 
     .. fancybox:: img/merchantaccount.png
         :alt: View Authorizations in Braintree
-
-====================
-Setting up Apple Pay 
-====================
-    
-    In order to accept payments via Apple Pay, you will need to enable it in the Control Panel. To do so:
-
-    1. In the Control Panel, navigate to **Settings > Processing > Processing Options**. Enable the **Apple Play** switch, accept the terms and conditions and click **Options**.
-
-    .. fancybox:: img/apple-terms.png 
-        :alt: Braintree. Apple Pay 
-
-    2. Under **Processing options - add domain** click **Add a domain**.
-
-    .. fancybox:: img/apple_web_domain.png 
-        :alt: Braintree. Apple Pay 
-
-    3. Enter your fully qualified domain name and download your domain association file. 
-
-    .. fancybox:: img/doimain_added.png 
-        :alt: Braintree. Apple Pay 
-        :width: 634px
- 
-    4. Host the file at */.well-known/apple-developer-merchantid-domain-association* on your site for domain verification. 
-
-    5. Put the downloaded file in the root directory of your store. 
-
-    6. Click **Done**. 
-
-    .. fancybox:: img/add_domain.png 
-        :alt: Braintree. Apple Pay
-
-=====================
-Setting up Google Pay
-=====================
-
-    In order to accept payments via Google Pay, you will need to enable it in the Control Panel. To do so:
-
-    1. In the Control Panel, navigate to **Settings > Processing > Google Pay**.
-
-    .. fancybox:: img/google-pay.png 
-        :alt: Braintree. Google Pay
-        :width: 505px
-
-    2. If Google Pay is not yet enabled, click the toggle to enable it
-
-    .. fancybox:: img/google-pay-active.png 
-        :alt: Braintree. Google Pay
-        :width: 692px
 
 =======================================
 How is the customer information stored?
@@ -268,7 +187,7 @@ Managing in the admin area
 Installing the add-on
 =====================
 
-    Install the Apple and Google Pay add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
+    Install the Braintree add-on on the add-ons list page (“Add-ons” → ”Manage add-ons”). Click the + button in the top right corner, select an archive and click Upload & install. You can now find the installed add-on in the list of installed add-ons, just make sure it is set to Active.
 
 =====================
 Setting up the add-on
@@ -276,7 +195,7 @@ Setting up the add-on
 
     Here are the settings for the add-on:
 
-    .. fancybox:: img/braintree-settings.png
+    .. fancybox:: img/install_add_on.png.png
         :alt: Braintree. Manage add-ons
 
     * **Show confirmation to save CC info in Braintree server**—The confirmation will be shown only for the Braintree payment method with the Drop-in UI option.
@@ -301,15 +220,11 @@ Creating a payment method
     .. fancybox:: img/Braintree_003.png
         :alt: Braintree. Payment method account settings
 
-    You can choose from several payment methods: Credit card, Apple Pay, Google Pay, Drop-in UI, or PayPal.
+    You can choose from several payment methods: Credit card, Drop-in UI, or PayPal.
 
-    .. fancybox:: img/Braintree-payment-methods.png
-        :alt: Braintree. Apple Pay. Google Pay
+    .. fancybox:: img/methods.png
+        :alt: Braintree.
         :width: 300px
-
-    .. note::
-
-        Remember to configure the **Apple Pay** and **Google Pay** additionally in the Braintree Control Panel. See `Setting up Apple Pay`_ and `Setting up Google Pay`_ respectively.
 
     The **Store prefix** setting helps to identify an order in the Braintree account if you use the Braintree payment method in more than one store. The prefix should contain up to three alphabetical characters. Leave blank if you use Braintree only in one store.
 
