@@ -101,16 +101,6 @@ Support
 
     You are guaranteed a quality add-on supported by the future versions. If you need help, please contact us via our `help desk system <https://helpdesk.cs-cart.com>`_.
 
-====
-Demo
-====
-
-    You can try Braintree in our |live_demo_url|.
-
-    .. |live_demo_url| raw:: html
-
-        <!--noindex--><a href="http://braintree.demo.simtechdev.com/" target="_blank" rel="nofollow">demo store</a><!--/noindex-->
-
 ----------------------------
 Start selling with Braintree
 ----------------------------
@@ -195,7 +185,7 @@ Setting up the add-on
 
     Here are the settings for the add-on:
 
-    .. fancybox:: img/install_add_on.png.png
+    .. fancybox:: img/install_add_on.png
         :alt: Braintree. Manage add-ons
 
     * **Show confirmation to save CC info in Braintree server**—The confirmation will be shown only for the Braintree payment method with the Drop-in UI option.
