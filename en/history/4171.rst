@@ -6,9 +6,9 @@ CS-Cart 4.17.1 Changelog
 New Features and Improvements
 =============================
 
-[+] Add-ons: Common Products for Vendors: Promotions: Added display of discounts from promotions on the catalog in the storefront.
+[+] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Promotions: Added display of discounts from promotions on the catalog in the storefront.
 
-[+] Add-ons: PayPal Commerce Platform: Added information on how to get PayPal integration code directly from the payment method setup.
+[+] Multi-Vendor: Add-ons: PayPal Commerce Platform: Added information on how to get PayPal integration code directly from the payment method setup.
 
 [+] Products: Object picker: Quantity and vendor of the product have been added to the item selection.
 
@@ -24,7 +24,7 @@ New Features and Improvements
 Functionality Changes
 =====================
 
-[*] Add-ons: Common Products for Vendors: Added the display of the old price of the product offer when a promotion is active.
+[*] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Added the display of the old price of the product offer when a promotion is active.
 
 [*] Design: The format setting for language block settings was renamed.
 
@@ -56,7 +56,7 @@ Bug Fixes
 
 [!] Abandoned / Live carts: If the currency thousands separator was a space, a total value could break. Fixed.
 
-[!] Add-ons: Advanced Products Import: While changing an import preset name, the value was saving for only the previously defined language of the page description. Fixed.
+[!] Add-ons: Advanced products Import: While changing an import preset name, the value was saved for only the previously defined language of the page description. Fixed.
 
 [!] Add-ons: Advanced products import: Export/Import: Import of product description preformatted  in HTML was adding the <br /> tag to the new lines. Fixed.
 
@@ -64,11 +64,11 @@ Bug Fixes
 
 [!] Add-ons: Cities: Cities could not be attached to any state that had state code longer than 9 symbols. Fixed.
 
-[!] Add-ons: Common Products for vendors: Product options: The quick purchase function did not work correctly with the product options. Fixed.
+[!] Multi-Vendor Plus: Add-ons: Common Products for vendors: Product options: The Buy a default common product setting did not work correctly with the product options. Fixed.
 
-[!] Add-ons: Common products for vendors: Vendor locations: Common products were displayed in all categories. Fixed.
+[!] Multi-Vendor Plus: Add-ons: Common Products for vendors: Vendor locations: Common products were displayed in all categories. Fixed.
 
-[!] Add-ons: E-mail marketing: Google reCAPTCHA: There was no way to enable the reCAPTCHA for Email Marketing subscription form. Fixed.
+[!] Add-ons: Google reCAPTCHA: There was no way to enable the reCAPTCHA for Email Marketing subscription form. Fixed.
 
 [!] Add-ons: GDPR Compliance (EU): Some JS scripts were not loaded if "Cookie consent" setting was set to "None". Fixed.
 
@@ -76,27 +76,27 @@ Bug Fixes
 
 [!] Add-ons: Maps and geolocation: When loading Google maps, a warning was shown in the console about the need for the callback function. Fixed.
 
-[!] Add-ons: Maps and geolocation: Yandex Maps returned the name of the locality with the type. Fixed.
+[!] Add-ons: Maps and geolocation: Yandex Maps were returning name of the locality along with its type. Fixed.
 
-[!] Add-ons: Mobile application: Languages: Vendor products and features were not displayed in the selected language. Fixed.
+[!] Multi-Vendor: Add-ons: Mobile application: Languages: Products and features were not displayed in the selected language for the vendor. Fixed.
 
 [!] Add-ons: Newsletters: It was possible to set the autoresponder status to "Sent", which resulted in empty emails being sent. Fixed.
 
-[!] Add-ons: PayPal Commerce Platform: Stripe Connect: Accounting: When money was refunded from a vendor’s account via PayPal Commerce Platform or Stripe Connect, it was listed as if the vendor also owed that sum to the marketplace. Fixed.
+[!] Multi-Vendor: Add-ons: PayPal Commerce Platform: Stripe Connect Payments: Accounting: When money was refunded from a vendor’s account via PayPal Commerce Platform or Stripe Connect, it was listed as if the vendor also owed that sum to the marketplace. Fixed.
 
-[!] Add-ons: Payment Dependencies: Vendor panel: Vendors were able to use disabled payment methods while creating new shipping method. Fixed.
+[!] Multi-Vendor: Add-ons: Payment Dependencies: Vendor panel: Vendors were able to use disabled payment methods while creating new shipping method. Fixed.
 
-[!] Add-ons: Product variations: Product's URL didn't change when selecting a product variation. Fixed.
+[!] Add-ons: Product Reviews: The rating filter did not work. Fixed.
 
-[!] Add-ons: Product reviews: The rating filter did not work. Fixed.
+[!] Add-ons: Product Variations: The product's URL was not changed when a product variation was selected. Fixed.
 
-[!] Add-ons: Product variations: Advanced product import: Features: Even if feature was disabled, new variations could be generated for it. Fixed.
+[!] Add-ons: Product Variations: Advanced products import: Features: Even if feature was disabled, new variations could be generated for it. Fixed.
 
-[!] Add-ons: Product variations: Disabled variations were displayed on the storefront and were available for adding to the cart. Fixed.
+[!] Add-ons: Product Variations: Disabled variations were displayed on the storefront and were available for adding to the cart. Fixed.
 
-[!] Add-ons: Product variations: In some cases add-on could incorrectly modify the SQL query, thus causing an error. Fixed.
+[!] Add-ons: Product Variations: In some cases add-on could incorrectly modify the SQL query, thus causing an error. Fixed.
 
-[!] Add-ons: Product variations: Social buttons: When switching the product variation, the social buttons were not displayed. Fixed.
+[!] Add-ons: Product Variations: Social buttons: The social buttons disappeared when the product variation was switched. Fixed.
 
 [!] Add-ons: RMA: Information about returned products got lost from the administration panel once products' return period expired. Fixed.
 
@@ -122,7 +122,7 @@ Bug Fixes
 
 [!] Documents: Storefront url was always displayed with HTTP protocol in c.storefront variable. Fixed.
 
-[!] Import: On some occasions, some characteristics may have been missed when importing the old characteristic format. Fixed.
+[!] Import: On some occasions, some features may have been missed during import. Fixed.
 
 [!] Layouts: When switching the layout on the product and website pages, the error was displayed. Fixed.
 
@@ -154,7 +154,7 @@ Bug Fixes
 
 [!] Multi-Vendor: Add-ons: Landing pages from Tilda: Vendors: Vendor administrators were unable to view pages from Tilda at the storefront. Fixed.
 
-[!] Multi-Vendor: Add-ons: Stripe Connect payments: An error occurred when placing an order if Norwegian is used in the storefront. Fixed.
+[!] Multi-Vendor: Add-ons: Stripe Connect payments: An error occurred when placing an order if Norwegian was used in the storefront. Fixed.
 
 [!] Multi-Vendor: Add-ons: Stripe Connect payments: Funds were not transfered to vendor if payment was done with "delayed notifications" payment methods like SEPA, Sofort, etc. Fixed.
 
@@ -164,7 +164,7 @@ Bug Fixes
 
 [!] Multi-Vendor: Add-ons: Vendor data premoderation: Common Products for Vendors: Product that was not yet approved by administrator could be made common. Fixed.
 
-[!] Multi-Vendor: Add-ons: Vendor panel configurator:  Vendor privileges: Usergroups:
+[!] Multi-Vendor: Add-ons: Vendor panel configurator: Vendor privileges: Usergroups: Vendor privileges affected the ability to edit a vendor panel by administrator. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor plans: Vendor panel: The vendor plan description was displayed incorrectly. Fixed.
 
@@ -210,6 +210,6 @@ Bug Fixes
 
 [!] Upgrade center: Upgrades could result in error, if "MyISAM" was disabled on server. Fixed.
 
-[!] Upgrade center: When updating modules, 0 was substituted in the console. Fixed.
+[!] Upgrade center: When updating add-ons, 0 was substituted to the add-on's number in the console. Fixed.
 
 [!] Upgrade Center: The upgrade of the CS-Cart platform itself could end up at the bottom of the list. Fixed.

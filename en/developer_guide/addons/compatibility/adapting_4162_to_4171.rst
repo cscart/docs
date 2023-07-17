@@ -11,25 +11,32 @@ Adapt Your Add-ons and Themes to CS-Cart 4.17.1
 Core Changes
 ============
 
-------------------------------------------------------------
-The translation of the Vendor's name, city and address added
-------------------------------------------------------------
+---------------------------------------------------
+Vendor name, city, and address are now translatable
+---------------------------------------------------
 
-New fields are added to the ``company_descriptions`` table:
+Previously, vendor name, city, and address were only displayed in one language. We added the ability to translate them. The translations appear instead of original names on some storefront pages, in customer notifications, and in some documents.
 
-* ``i18n_company`` - Vendor name translation
+The ``company_descriptions`` table now has new fields:
 
-* ``i18n_city`` - Vendor city translation
+* ``i18n_company``—Translated Vendor name
 
-* ``i18n_address`` - Vendor address translation
+* ``i18n_city``—Translated Vendor city
 
-No interface changes added. To add translations, switch to the required language of the content in the Admin panel on the Vendor information page.
+* ``i18n_address``—Translated Vendor address
+
+Administrators can translate the vendor name, city, and address just like any other fields. To do that, switch to the required content language on the vendor editing page.
 
 When Vendor information is saved, now only the following fields are filled with the selected language:``i18n_company, i18n_city, i18n_address``. General fields are only filled, if the content's language matches the Vendor's language.
 
 Translated fields are displayed now on main pages of the storefront, in customer notifications, and in some documents. The general fields ``company, city, address`` of the ``companies`` table are used on the Admin panel, in the Shipping information, and in other elements where the translation is not yet implemented.
 
-To implement the translation pointwisely, the following paratemeters are used in functions ``fn_get_companies, fn_get_company_data, fn_get_company_name, fn_get_company_placement_info`` returning the Vendor information: ``use_i18n_fields`` and ``use_i18n_company_fields``. These parameters can be used to implement the translation in add-ons and custom elements.
+You can show the translated vendor data in add-ons and your custom elements. To do that, we've added parameters ``use_i18n_fields`` and ``use_i18n_company_fields`` to the following functions:
+
+* fn_get_companies
+* fn_get_company_data
+* fn_get_company_name
+* fn_get_company_placement_info
 
 -----------------
 Changed functions
@@ -97,13 +104,17 @@ Changed functions
         // New:
         function fn_allow_place_order(array &$cart, array $auth = [], $parent_order_id = null)
 
---------------------------
-Using Google Fonts locally
---------------------------
+--------------------------------------------------------
+Google Fonts for your Theme should be stored locally now
+--------------------------------------------------------
 
-In GDPR complience, Google Fonts need to be stored on the server. To comply with GDPR, you can store the fonts locally. 
+If you develop themes for CS-Cart, this change will be important for you. A court in Munich, Germany declared that using Google Fonts stored on Google servers isn't compliant with the GDPR (a European law on data protection and privacy). Some store owners already received complaints, asking for money or threatening to go to court.
 
-Upload the fonts to the theme's **/media/fonts/** directory. Change the path to the font to a local one in your .css and .less files.
+That's why we've made the CS-Cart standard themes store Google Fonts locally. You should do it for your themes as well. Here's how:
+
+#. Upload the fonts to the theme's **/media/fonts/** directory. 
+
+#. Change the path to the font to a local one in your .css and .less files.
 
 Common Google Fonts usage:
 
