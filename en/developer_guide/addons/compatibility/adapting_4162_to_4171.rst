@@ -6,6 +6,27 @@ Adapt Your Add-ons and Themes to CS-Cart 4.17.1
     :local:
     :backlinks: none
 
+==============
+Common changes
+==============
+
+* Phinx library was updated to version **0.12.9**. Note that migrations don't support Query Builder because we need to support MySQLi.
+* Htmlpurifier library was updated to version **4.15.0**.
+* Imagine library was updated to version **1.3.0**.
+* Pimple library was updated to version **3.5.0**.
+* Twig library was updated to version **2.14.10**.
+* CssToInlineStyles library was updated to version **2.2.4**.
+* Console library was updated to version **4.4.49**.
+* Lock library was updated to version **5.4.21**.
+* Collect library was updated to version **8.68.0**.
+* Process library was updated to version **5.4.21**.
+* McryptCompat library was updated to version **2.0.3**.
+* CssSelector library was updated to version **5.4.21**.
+* Phpunit library was updated to version **8.5.33**.
+* Paratest library was updated to version **4.0.0**.
+* ComposerPatches library was updated to version **1.7.0**.
+* Dbunit library was updated to version **5.2.1**.
+
 
 ============
 Core Changes
