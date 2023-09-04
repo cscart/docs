@@ -81,6 +81,7 @@
             {% include "navbarsearchbox.html" %}
             
               <ul class="last simple sidebar-tabs">
+                  <li><a class="reference external version {% if version == '4.12' %}active{% endif %}" href="{{ pathto('../4.12.x/index') }}">4.12.x</a></li>
                   <li><a class="reference external version {% if version == '4.13' %}active{% endif %}" href="{{ pathto('../4.13.x/index') }}">4.13.x</a></li>
                   <li><a class="reference external version {% if version == '4.14' %}active{% endif %}" href="{{ pathto('../4.14.x/index') }}">4.14.x</a></li>
                   <li><a class="reference external version {% if version == '4.15' %}active{% endif %}" href="{{ pathto('../4.15.x/index') }}">4.15.x</a></li>
