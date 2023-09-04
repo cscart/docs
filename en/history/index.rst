@@ -9,7 +9,7 @@ CS-Cart branch 4.17.x
 .. toctree::
     :maxdepth: 1
 
-    4.17.1 (August 28, 2023) <4171>
+    4.17.1 (September 4, 2023) <4171>
 
 
 =====================
@@ -21,6 +21,7 @@ CS-Cart branch 4.16.x
 
     4.16.2 (March 28, 2023) <4162>
     4.16.1 (January 31, 2023) <4161>
+    4.17.1 (September 4, 2023) <4171>
 
 =====================
 CS-Cart branch 4.15.x

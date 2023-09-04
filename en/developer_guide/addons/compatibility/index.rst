@@ -62,7 +62,6 @@ Version Compatibility
     adapting_4151_to_4152
     adapting_4152_to_4161
     adapting_4161_to_4162
-    adapting_4162_to_4171
     
 .. meta::
    :description: New, changed, and deleted hooks, functions, classes of Cs-Cart and Multi-Vendor. Information about changes in new versions for add-on and theme developers.
