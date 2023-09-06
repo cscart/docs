@@ -8,6 +8,7 @@ CS-Cart Documentation
 *********************
 
 .. sidebar:: Version
+
     * `4.17.x <../4.17.x/index.html>`_
     * `4.16.x <../4.16.x/index.html>`_
     * `4.15.x <../4.15.x/index.html>`_
