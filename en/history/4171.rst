@@ -38,6 +38,8 @@ Functionality Changes
 
 [*] Shipping methods: Rate areas: Rate area is now displayed at the test rate calculation tab.
 
+[*] Shipping: USPS: Updated First-Class Package service.
+
 [*] Theme editor: Google fonts are now hosted locally.
 
 [*] WYSIWYG: TinyMCE was updated to version 4.7.10.
@@ -64,6 +66,10 @@ Bug Fixes
 
 [!] Add-ons: Advanced products import: Message center: An error was displayed when calling "Contact administrator" on the preset page. Fixed.
 
+[!] Add-ons: Age verification: System required age verification from an administrator with a given birthday. Fixed.
+
+[!] Add-ons: Call requests: Long order statuses were displayed incorrectly. Fixed.
+
 [!] Add-ons: Cities: Cities could not be attached to any state that had state code longer than 9 symbols. Fixed.
 
 [!] Multi-Vendor Plus: Add-ons: Common Products for vendors: Product options: The Buy a default common product setting did not work correctly with the product options. Fixed.
@@ -75,6 +81,8 @@ Bug Fixes
 [!] Add-ons: GDPR Compliance (EU): Some JS scripts were not loaded if "Cookie consent" setting was set to "None". Fixed.
 
 [!] Add-ons: GDPR: Google reCAPTCHA: reCAPTCHA was not working with explicit cookie consent. Fixed.
+
+[!] Add-ons: Maps and geolocation: If the "Customer location" block was added on the checkout page, then the page reloaded infinite. Fixed.
 
 [!] Add-ons: Maps and geolocation: When loading Google maps, a warning was shown in the console about the need for the callback function. Fixed.
 
@@ -101,6 +109,8 @@ Bug Fixes
 [!] Add-ons: Product Variations: Social buttons: The social buttons disappeared when the product variation was switched. Fixed.
 
 [!] Add-ons: RMA: Information about returned products got lost from the administration panel once products' return period expired. Fixed.
+
+[!] Add-ons: Social login: An error occurred when authenticating via Twitter. Fixed.
 
 [!] Add-ons: Stores and pickup points: Maps and geolocation: "Pickup" shipping method was not displayed on product page separately by default. Fixed.
 
@@ -138,11 +148,19 @@ Bug Fixes
 
 [!] Mobile app: Wrong redirect when recovering password. Fixed.
 
+[!] Mobile application: Product reviews: When adding a review, the error messages could not be changed. Fixed.
+
+[!] Mobile application: Products: Products in blocks could be sorted incorrectly. Fixed.
+
+[!] Mobile application: Vendors: Languages: When editing a product, the categories were not displayed in the selected language. Fixed.
+
 [!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Bestsellers: Offers without discounts were displayed on the list of discounted products. Fixed.
 
 [!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Product Variations: Product variations were displayed as out of stock in a product quick view. Fixed.
 
 [!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Product filters: The price filter did not take into account the current price of the common product after placing an order. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for vendors: Product options: The Buy a default common product setting did not work correctly with the product options. Fixed.
 
 [!] Multi-Vendor Plus: Add-ons: Common products for Vendors: Product Variations: Storefronts: In some cases, the product was not displayed in the list of products of the category. Fixed.
 
@@ -150,7 +168,13 @@ Bug Fixes
 
 [!] Multi-Vendor Ultimate: Add-ons: Order fulfillment by marketplace: Stores and pickup points: Chosen pickup point was not displayed on order detailed page. Fixed.
 
+[!] Multi-Vendor Ultimate: Categories: Storefronts: On the category update page, when the storefront was selected, categories of other storefronts could be displayed in the "Location" field. Fixed.
+
 [!] Multi-Vendor Ultimate: Email notifications: Storefronts assigned to admins were not taken into account when sending email notifications. Fixed.
+
+[!] Multi-Vendor Ultimate: Order management: Storefronts: Vendors were able to assign an order to an unavailable storefront. Fixed
+
+[!] Multi-Vendor Ultimate: Pages: Storefronts: Pages owned by the vendor were displayed on the storefront that was not accessible to that vendor. Fixed.
 
 [!] Multi-Vendor: Add-ons: Common products for vendors: In some cases, the promotions was incorrectly displayed on the common product page. Fixed.
 
@@ -163,6 +187,8 @@ Bug Fixes
 [!] Multi-Vendor: Add-ons: Stripe Connect payments: Incorrect order amount was sent to Stripe if zero-decimal currencies was used. Fixed.
 
 [!] Multi-Vendor: Add-ons: Stripe Connect payments: Promotions: Vendor balance was calculated incorrectly after refund via Stripe if promotions was used for the order. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor Locations [Beta]: Common products for vendors: Product filters: Filters for common products did not work correctly in some cases. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor data premoderation: Common Products for Vendors: Product that was not yet approved by administrator could be made common. Fixed.
 
@@ -196,6 +222,8 @@ Bug Fixes
 
 [!] Payments: PayPal Payments: Payflow: Incorrect name value was displayed in the request. Fixed.
 
+[!] Product filters: Payments: After removing filters and payment methods, the counter of selected objects was not reset. Fixed.
+
 [!] Products: Edit selected: Features: The feature selection was not active when the page was loading. Fixed.
 
 [!] Products: Options: When cloning a variant of an option, the image alternative text was cloned incorrectly. Fixed.
@@ -203,6 +231,8 @@ Bug Fixes
 [!] Products: The products page without a category opened with an error. Fixed.
 
 [!] Sales reports: At some zoom levels, products weren't loaded in reports. Fixed.
+
+[!] Settings: Products: Global setting "Track inventory" was not taken into account in some cases for product list. Fixed.
 
 [!] Storefronts: Regions: Pages of the regional storefront with redirect enabled might not be indexed by crawlers. Fixed.
 
