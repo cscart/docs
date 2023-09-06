@@ -50,6 +50,8 @@ Functionality Changes
 
 [*] Upgrade Center: Notifications about the available upgrades improved.
 
+[*] Core: Minimal PHP version requirement bumped from 7.1.0 to 7.2.5, PHP 8.1 support was added.
+
 =========
 Bug Fixes
 =========
