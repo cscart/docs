@@ -80,9 +80,7 @@ Add-ons
     advanced_social_buttons/index
     sticky-menu/index
     google_tag_manager/index
-
-    :hidden: sticky_product_bar/index
-
+    sticky_product_bar/index
     taxcalcs_by_taxjar/index
     tiktok_feed/index
     vendor-background-image/index
