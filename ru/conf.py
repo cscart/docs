@@ -275,10 +275,4 @@ highlight_language = 'phpinline'
 fancybox_thumbnail_width = '350px'
 fancybox_thumbnail_height = 'auto'
 
-<<<<<<< HEAD
-canonical_url_prefix = 'latest'
-=======
 canonical_url_prefix = 'docs/latest'
-
-html_baseurl = 'https://www.cs-cart.ru/docs/latest/'
->>>>>>> ff44f66b... [0-780] Docs: Updated the conf.py.
