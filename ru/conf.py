@@ -277,5 +277,3 @@ fancybox_thumbnail_height = 'auto'
 
 
 canonical_url_prefix = 'docs/latest'
-
-html_baseurl = 'https://www.cs-cart.ru/docs/latest/'
