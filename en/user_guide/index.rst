@@ -25,6 +25,7 @@ User Guide
     import_export/index
     logs/index
     settings/index
+    booking/faq
     mobile_app/faq
 
 .. toctree::
