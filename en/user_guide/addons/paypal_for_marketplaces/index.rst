@@ -2,9 +2,10 @@
 PayPal for Marketplaces
 ***********************
 
-.. note::
-    This add-on comes with Multi-Vendor 4.8.1 and newer versions. Please note that PayPal doesn’t accept new registrations for the PayPal for Marketplaces. The article is relevant only for the existing users of that solution. Starting with version 4.11.1, we recommend using the :doc:`PayPal Commerce Platform </user_guide/addons/paypal_commerce_platform/index>`.
+.. warning::
 
+   This article is about an old PayPal integration no longer available to new customers.  It remains in the docs for legacy purposes and for anyone who might still be using it. Starting with version 4.11.1, CS-Cart offers :doc:`PayPal Commerce Platform </user_guide/addons/paypal_commerce_platform/index>`.
+   
 By default, :doc:`all the money from orders in Multi-Vendor goes to marketplace owner </user_guide/users/vendors/workflow>`. The :doc:`Accounting </user_guide/users/vendors/account_balance>` page helps to manage money afterwards: vendors receive money on their balance (except for the transaction fees specified in their :doc:`vendor plans </user_guide/addons/vendor_plans/index>`) and can :ref:`request the withdrawal of that money <withdrawal>` later. This approach adds work for marketplace owners, who have to figure out how to transfer the requested money to vendors.
 
 The **PayPal for Marketplaces** add-on addresses that problem: customers still make one payment when they order products from multiple vendors, but the vendors' share ends up on the vendors' respective PayPal Business accounts. The transaction fees from vendor plans are withdrawn in favor of the marketplace owners automatically, and there is also an option of collecting unpaid :ref:`payouts <payout>` (such as periodic fees for using vendor plans) from vendors' share in the order.
