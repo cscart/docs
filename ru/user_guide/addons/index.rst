@@ -29,6 +29,7 @@
     product_variations/index
     rma/index
     google_backend_signin/index
+    google_sitemap/index
     cities/index
     payment_dependencies/index
     import_from_shopify/index
