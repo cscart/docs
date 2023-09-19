@@ -134,6 +134,10 @@ A page created in Tilda with an added product block might look like this:
 Synchronization
 ===============
 
+.. note::
+        If images are not displayed on the CS-Cart side, check the **Export Settings** on the Tilda's side here: **Site settings → Export → Export settings**. 
+        The add-on expexts default export settings. If the path to the image is specified in the export settings, the image will not load after the import. 
+        
 When you save a page or layout on the CS-Cart side, the data is synchronized. So, if you want the changes made in Tilda to appear, publish them first and save the page in CS-Cart after that. Update the storefront that contains the Tilda page.
 
 The add-on allows you to configure automatic synchronization of Tilda and CS-Cart pages. Auto synchronization reduces the number of steps you need to make changes to your Tilda pages. Once published, your changes appear immediately in the store. To set up the auto synchronization:
