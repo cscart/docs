@@ -42,6 +42,16 @@ The preset-based approach solves the following problems of the old import:
 
 -----
 
+**Problem:** The command for CRON will differ depending on where the imported file or link is loaded: in the admin panel or the vendor.
+
+**Solution:** If the file or link is uploaded to the preset on behalf of the marketplace administrator, then the **--switch_company_id=1** parameter must be removed from the command. This parameter is needed if the link is added to the preset on the side of the vendor's panel.
+
+The command without it will look like this::
+
+    php /path/to/cart/admin.php -p --dispatch=advanced_import.import.import --preset_id=1
+
+-----
+
 ================
 Related Articles
 ================
