@@ -5,7 +5,7 @@ How To: Set up the Google Analytics add-on
 
 	The support of Google Analytics 4 was added in version 4.12.2.
 
-The **Google Analytics** add-on is created in order to allow the administrator to see the statistics for CS-Cart on his Google account. This add-on is based on `Universal Analytics <https://support.google.com/analytics/answer/2790010?hl=en>`_.
+The **Google Analytics** add-on is created in order to allow the administrator to see the statistics for CS-Cart on their Google account. This add-on is based on `Universal Analytics <https://support.google.com/analytics/answer/2790010?hl=en>`_.
 
 .. contents::
    :backlinks: none
@@ -26,13 +26,13 @@ How To Create Your Own Google Analytics Account
 
 Log in to your Google account and go to the `Google Analytics <http://www.google.com/analytics>`_ page. Click the **Get started today** button and follow the given instructions.
 
-**Step 1.** Enter the name of the new Google Analytics in the Account name field and tick the Account Data Sharing Settings checkbox.
+**Step 1.** Enter the name of the new Google Analytics account in the **Account name** field and tick the **Account Data Sharing Settings** checkbox.
 
 .. image:: img/step_1.png
     :align: center
     :alt: Step 1
     
-**Step 2.** Create a Google Analytics 4 Property. Each property you create holds all your measurement data for any selection of websites and apps you choose.
+**Step 2.** Create a **Google Analytics 4 Property**. Each property you create holds all your measurement data for any selection of websites and apps you choose.
 
 .. image:: img/step_2.png
     :align: center
@@ -56,13 +56,13 @@ Log in to your Google account and go to the `Google Analytics <http://www.google
     :align: center
     :alt: Step 5
     
-For the website, enter the websie address and a Steram name. Then click the Create stream button and you will be suggested to add the Google Tag to all your website pages. On how to do this, we will touch on this topic below.  
+For the **website**, enter the websie address and a Stream name. Then click the **Create stream button** and you will be suggested to add the **Google Tag** to all your website pages. We will also touch on this topic below.  
 
 .. image:: img/step_5_gtag.png
     :align: center
     :alt: Step 5
     
-If it is Android or iOS apps, you will need to enter your Firebase project data and follow the given instarctions. They are both similar for the Android and iOS apps.
+If it is **Android or iOS apps**, you will need to enter your **Firebase project data** and follow the given instructions. They are both similar for the Android and iOS apps.
 
 .. image:: img/step_5_website.png
     :align: center
@@ -72,7 +72,7 @@ If it is Android or iOS apps, you will need to enter your Firebase project data 
 How To Add Google Tag To All Website Pages
 ------------------------------------------
 
-For example, you choose a website platform in the Step 5, enter your website address and a stream name. Now you need to copy and paste the Google Tag code to all of your website pages to track all of your chosen metrics. 
+For example, you choose a website platform in the Step 5, enter your website address and a stream name. Now you need to copy and paste the **Google Tag code** to all of your website pages to track all of the chosen metrics. 
 
 *   In the Admin panel, go to  **Design - Layouts** page. Find the **Default** layout page and click on the gear icon by its name. 
 
@@ -80,7 +80,7 @@ For example, you choose a website platform in the Step 5, enter your website add
     :align: center
     :alt: Design
 
-*   Copy the Google Tag and paste it to the **Custom HTML code** field.
+*   Copy the **Google Tag code** and paste it to the **Custom HTML code** field.
 
 .. image:: img/design_5.png
     :align: center
