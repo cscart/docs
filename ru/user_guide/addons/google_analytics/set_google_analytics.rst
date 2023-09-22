@@ -8,6 +8,10 @@
 
 Модуль **Google Analytics** позволяет администратору отслеживать статистику CS-Cart в своей учетной записи Google. Этот модуль основан на `Universal Analytics <https://support.google.com/analytics/answer/2790010?hl=en>`_.
 
+.. contents::
+   :backlinks: none
+   :local:
+
 ==============================
 Как настроить Google Analytics
 ==============================
