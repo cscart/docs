@@ -30,6 +30,7 @@
     rma/index
     google_backend_signin/index
     google_sitemap/index
+    google_analytics/index
     cities/index
     payment_dependencies/index
     import_from_shopify/index
