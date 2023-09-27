@@ -51,6 +51,7 @@
     common_products/index
     direct_customer_to_vendor_payments/index
     vendor_debt_payout/index
+    google_analytics/index
     geolocation/index
     polls/index
     comments_and_reviews/index

@@ -1,4 +1,4 @@
-****************
+*****************
 Google Analytics
 ****************
 
@@ -12,4 +12,3 @@ Information on **Google Analytics** is available on the `official website <http:
     :glob:
 
     set_google_analytics
-    

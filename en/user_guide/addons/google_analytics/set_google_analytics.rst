@@ -1,26 +1,81 @@
-******************************************
-How To: Set up the Google Analytics add-on
-******************************************
+***********************************
+How To: Set up the Google Analytics
+***********************************
 .. note ::
 
 	The support of Google Analytics 4 was added in version 4.12.2.
 
+The **Google Analytics** add-on allows to enable the Google Analytics for your CS-Cart store or marketplace. It allows to track the website traffic i.e. where your customers are coming from, 
+which pages do they visit and other data.
 
-The **Google Analytics** add-on is created in order to allow the administrator to see the statistics for CS-Cart on his Google account. This add-on is based on `Universal Analytics <https://support.google.com/analytics/answer/2790010?hl=en>`_.
+.. contents::
+   :backlinks: none
+   :local:
 
-To set up the **Google Analytics** add-on:
+===============================
+Setting up the Google Analytics
+===============================
 
-*   In the Administration panel, go to **Add-ons → Manage add-ons** and enable the **Google Analytics** add-on (change its status to *Active* in the select box on the right).
-*   Click on the name of the add-on.
-*   Enter the **Universal Analytics** account number into the **Google Analytics account number** field.
+#.   In the Administration panel, go to **Add-ons → Manage add-ons** and enable the **Google Analytics** add-on (change its status to *Active* in the select box on the right).
+#.   Click on the name of the add-on.
+#.   Enter the **Universal Analytics** account number into the **Google Analytics account number** field.
+#.   Click **Save**.
 
-.. note ::
+----------------------------------------
+How to Create a Google Analytics Account
+----------------------------------------
 
-	The **Universal Analytics** account number is the value of the *_uacct* variable in the Google Analytics Tracking Code. For example, if you see *_uacct= "UA-1111111-1"* you should put *UA-1111111-1* in the **Google Analytics account number** field.
+Log in to your Google account and go to the `Google Analytics <http://www.google.com/analytics>`_ page. Click the **Get started today** button and follow the given instructions.
 
-*   If you would like to track your CS-Cart orders, enable the **Track e-commerce transactions** option. Then you should select *Yes* in the **E-commerce website** option on the profile page of your site in your Universal Analytics account. You will be able to view reports under the **E-commerce** section of your Universal Analytics account.
-*   Click the **Save** button.
+#.  Enter the name of the new Google Analytics account in the **Account name** field and tick the **Account Data Sharing Settings** checkbox.
+     .. image:: img/step_1.png
+         :align: center
+         :alt: Step 1
+    
+#.  Create a **Google Analytics 4 Property**. Each property you create holds all your measurement data for any selection of websites and apps you choose.
+     .. image:: img/step_2.png
+         :align: center
+         :alt: Step 2
 
-.. note ::
+#.  Choose an industry category of your business and its size. 
+     .. image:: img/step_3.png
+         :align: center
+         :alt: Step 3
+    
+#.  Choose the most relevant topics to track.
+     .. image:: img/step_4.png
+         :align: center
+         :alt: Step 4
 
-	In order to get the **Universal Analytics** account number you should create your own account on the `Google Analytics <http://www.google.com/analytics>`_ site. After that you will be able to obtain this number there.
+#.  Choose a website platform. After that you will be suggested to enter your app data:
+     .. image:: img/Analytics_setup_app.png
+         :align: center
+         :alt: Step 5
+    
+    Enter the websie address and a Stream name. Then click the **Create stream button** and you will be suggested to add the **Google Tag** to all your website pages. We will also touch on this topic below.  
+     .. image:: img/step_5_gtag.png
+         :align: center
+         :alt: Step 5
+    
+---------------------------------------------------   
+How to Add Google Tag to all Website Pages Manually
+---------------------------------------------------
+
+You need to copy and paste the **Google Tag code** to all of your website pages to track all of the chosen metrics. Here's how to do it in your Admin panel:
+
+#.   Go to  **Design - Layouts** page. Find the **Default** layout page and click on the gear icon by its name. 
+
+     .. image:: img/design_4.png
+         :align: center
+         :alt: Design
+
+#.   Copy the **Google Tag** and paste it to the **Custom HTML code** field.
+
+     .. image:: img/design_5.png
+         :align: center
+         :alt: Design
+
+#.   Tick the **Copy to all pages** checkbox. 
+#.   Click **Save**.
+
+After that, it should take some time for metrics to start being tracked in Google Analytics.
