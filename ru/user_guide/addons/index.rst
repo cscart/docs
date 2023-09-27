@@ -28,6 +28,7 @@
     product_variations/index
     rma/index
     google_backend_signin/index
+    google_analytics/index
     cities/index
     edost_calc/index
     maps_and_geolocation/index
