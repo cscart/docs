@@ -266,6 +266,20 @@ Attach the video to the product (additional Youtube video)
     .. fancybox:: img/YouTube_Selection_062.png
         :alt: User Admin
 
+    In case the additional videos are not displayed in the product tab after the they were added, the block has to be resaved:
+
+    1. Open the section Layouts -> Block
+
+    2. Search the block with the "YouTube" type
+
+    3. Find the "Additional product videos" block
+
+    .. fancybox:: img/YouTube_Selection_068.png
+        :alt: Additional videos Youtube block
+
+    4. Open it and press "Save" button
+
+
 ========================
 Creating filter by video
 ========================
