@@ -268,7 +268,7 @@ Attach the video to the product (additional Youtube video)
 
     In case the additional videos are not displayed in the product tab after the they were added, the block has to be resaved:
 
-    1. Open the section Layouts -> Block
+    1. Open the section Layouts -> Manage blocks
 
     2. Search the block with the "YouTube" type
 
