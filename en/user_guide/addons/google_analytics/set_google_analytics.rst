@@ -3,7 +3,7 @@ How To: Set up the Google Analytics add-on
 ******************************************
 
 .. warning::
-    Google has stopped support for the Universal Analytics in 2023. To use Google Analytics, upgrade to at least version 4.12.2 where the the support of **Google Analytics 4** was added.
+    Google stopped supporting Universal Analytics in 2023. To use Google Analytics, upgrade to at least version 4.12.2 where the the support of **Google Analytics 4** was added.
 
 
 The **Google Analytics** add-on is created in order to allow the administrator to see the statistics for CS-Cart on his Google account. This add-on is based on `Universal Analytics <https://support.google.com/analytics/answer/2790010?hl=en>`_.
