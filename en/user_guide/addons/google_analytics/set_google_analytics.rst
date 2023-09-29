@@ -52,31 +52,5 @@ Log in to your Google account and go to the `Google Analytics <http://www.google
          :align: center
          :alt: Step 5
     
-    Enter the websie address and a Stream name. Then click the **Create stream button** and you will be suggested to add the **Google Tag** to all your website pages. We will also touch on this topic below.  
-     .. image:: img/step_5_gtag.png
-         :align: center
-         :alt: Step 5
-    
----------------------------------------------------   
-How to Add Google Tag to all Website Pages Manually
----------------------------------------------------
-
-You need to copy and paste the **Google Tag code** to all of your website pages to track all of the chosen metrics. Here's how to do it in your Admin panel:
-
-#.   Go to  **Design - Layouts** page. Find the **Default** layout page and click on the gear icon by its name. 
-
-     .. image:: img/design_4.png
-         :align: center
-         :alt: Design
-
-#.   Copy the **Google Tag** and paste it to the **Custom HTML code** field.
-
-     .. image:: img/design_5.png
-         :align: center
-         :alt: Design
-
-#.   Tick the **Copy to all pages** checkbox. 
-#.   Click **Save**.
-
-After that, it should take some time for metrics to start being tracked in Google Analytics.
+    Enter the websie address and a Stream name. Then click the **Create stream** button and you will be suggested to add the **Google Tag** to all your website pages automatically. After that, it should take some time for metrics to start being tracked in Google Analytics.
 
