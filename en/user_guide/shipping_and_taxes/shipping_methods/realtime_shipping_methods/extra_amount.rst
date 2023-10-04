@@ -10,7 +10,7 @@ To add an extra sum of money to the shipping cost calculated by a realtime shipp
 
 #. Open the **Shipping time and rates** tab and choose the desired rates there. 
 
-   .. image:: img/extra_amount_1.png
+   .. image:: img/extra_amount1.png
        :align: center
        :alt: Additional shipping charges for real-time shipping methods in CS-Cart and Multi-Vendor.
 
