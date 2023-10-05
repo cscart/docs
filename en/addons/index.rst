@@ -79,8 +79,8 @@ Add-ons
     enhanced_social_login/index
     advanced_social_buttons/index
     sticky-menu/index
-    google_tag_manager/index
     sticky_product_bar/index
+    google_tag_manager/index
     taxcalcs_by_taxjar/index
     tiktok_feed/index
     vendor-background-image/index
