@@ -120,7 +120,7 @@
 
 #. Сохраните файл в формате «.yml» . Например: ``yandex.yml``
 
-   .. fancybox:: img/yandex_market_export_21.png
+   .. fancybox:: img/yml_export_save_as.png
        :alt: Яндекс.Метрика
 
 .. toctree::
