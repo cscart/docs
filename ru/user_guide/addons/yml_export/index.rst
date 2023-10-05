@@ -115,7 +115,7 @@
 
 #. Кликните правой клавишей мыши по странице и нажмите «Сохранить как».
 
-   .. fancybox:: img/yandex_market_export_20.png
+   .. fancybox:: img/yml_export_save_as.png
        :alt: Яндекс.Метрика
 
 #. Сохраните файл в формате «.yml» . Например: ``yandex.yml``
