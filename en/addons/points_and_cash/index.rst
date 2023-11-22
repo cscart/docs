@@ -222,6 +222,7 @@ Export/Import of reward points
 ===============================
 
     You can use the add-on to export bonus points as part of an export:
+
     1. User ( Administration ➝ Export data ➝ Users)
 
         Add the "Users Bonunes" field to the export:
@@ -237,6 +238,7 @@ Export/Import of reward points
             :alt: Export order bonuses
 
     You can use the add-on to import bonus points as part of the import:
+
     1. User ( Administration ➝ Import data ➝ Users)
 
         .. fancybox:: img/Points_and_cash_Selection_015.png

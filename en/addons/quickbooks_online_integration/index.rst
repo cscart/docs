@@ -209,7 +209,9 @@ Working with queue
 ===================
 
     Adding a row to the queue to create or update an entity for sending to QBO happens when you create or update an entity in CS-Cart. For example, you have created or updated an product, after saving it, a row will be added to the queue for create or update the entity in QBO. Also queue rows are added when an order is moved to a status specified in Quickbooks connection settings in the "Connection settings" tab, in this case queue rows will be added for all entities related to the order (user, categories, products and the order itself).
+
     For entities products, orders and users, there is a queue to delete them in Quickbooks, when deleting an entity in CS-Cart store.
+
     For entities products and users, in addition to the automatic trigger after updating/creating an entity or transferring an order to a certain status, there is an option to manually add a queue for creating or updating an entity (on the entity list page):
 
     .. fancybox:: img/qbo_manual_queue.png
@@ -234,6 +236,7 @@ Manual linking
         :alt: Queue buttons
 
     After adding the QBO ID, the entity will be considered to be linked with Quickbooks at the add-on level. However, the data exchange is still one-way, i.e. the add-on does not receive information from Quickbooks to update the entity in CS-Cart, it can only send data from CS-Cart to update it in Quickbooks.
+
     We have also added QBO ID fields for importing and exporting product, order and user data, so you can import and export linked entities without data loss.
 
     .. fancybox:: img/qbo_export.png
