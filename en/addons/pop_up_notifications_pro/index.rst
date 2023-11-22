@@ -107,9 +107,9 @@ Creating a pop-up
     .. fancybox:: img/pop-up-notifications-pro-tabs.jpg
         :alt: Pop-Up PRO add-on
 
-    4. On the **Settings** tab you could set up the appearance of the pop-up window. 
+    4. On the **Settings** tab you could set up the appearance of the pop-up window.
 
-    .. fancybox:: img/pop-up-notifications-pro-settings-tab.jpg
+    .. fancybox:: img/pop-up-notifications-pro-settings-tab.png
         :alt: Pop-Up PRO add-on
 
     The following settings are available:
@@ -131,6 +131,8 @@ Creating a pop-up
     * **Animated exits**—Choose the animation for the pop-up exit. 41 differents effects are available.
 
     * **Show time**—Enter the time in milliseconds (1s = 1000ms).
+
+    * **Show on mobile devices**—If this option is disabled, the pop-up will not be displayed on devices with screen width less than 1200 px.
 
     5. Go to the **Content** tab to set up the pop-up window content.
 

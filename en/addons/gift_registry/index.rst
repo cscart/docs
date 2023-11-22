@@ -90,6 +90,7 @@ Available settings
 ==================
 
     With the help of the settings of the “Gift registry” add-on, the store administrator can set the ability to create events for users, specify the number of elements in the "Today’s events" block (you can find more information about the block in the `Blocks of the “Gift registry” add-on`_ section), set user notifications and specify the size of images (both in the events list and on the details page of an individual event).
+    The administrator can manage the ability of users to set and edit access codes for personal events, also he can change the start and end dates of existing events.
 
     .. fancybox:: img/gift_registry_addon_settings.png
         :alt: Gift registry. Add-on settings
@@ -257,6 +258,12 @@ Creating a new event in the customer area
         :alt: Gift registry. New event in customer area
         :width: 450px
 
+    If the add-on setting "Allow users to set custom access keys to their private events" is enabled, the user will have to set the access code to their event himself during creating a private event. If the setting is disabled - the code will be generated automatically.
+
+    .. fancybox:: img/gift_registry_new_event_customer_access_code.png
+        :alt: Gift registry. New event in customer area
+        :width: 450px
+
     Also, when creating a new event, the user can create a list of invitees. After an event is created, the user will be able to send e-mail notifications to all the invitees.
 
     At this step the process of creating a new event is not completed. Besides general information it is necessary to add new products for the event. You can read more about it in the `Editing the existing event`_ section below.
@@ -268,6 +275,18 @@ Editing the existing event
     The editing event page is like the creating a new event page. However, additional information will be available to the event owner besides the general information in the “General" tab.
 
     First of all, the access key will be displayed in the "General" tab besides general information. Using this key the invitees will gain access to private events.
+
+    Availability of event dates editing is depending on the status of the add-on setting "Allow users to edit the start and end dates of their events". If the setting is enabled, users will be able to edit the start and end dates of their events. If the setting is disabled, these fields will be unavailable to customers. Only the store administrator will be able to edit the event dates.
+
+    .. fancybox:: img/gift_registry_new_event_customer_edit_dates.png
+        :alt: Gift registry. New event in customer area
+        :width: 450px
+
+    Also, customers can edit the access code to a private event, if the setting "Allow users to set custom access keys to their private events" is enabled.
+
+    .. fancybox:: img/gift_registry_new_event_customer_edit_access_key.png
+        :alt: Gift registry. New event in customer area
+        :width: 450px
 
     In the "Products" tab, the event owner can manage the list of products related to the event - add/remove products, change the quantity, etc. In addition, the event owner will see what products have already been purchased.
 

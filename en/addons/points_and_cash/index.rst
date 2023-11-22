@@ -217,6 +217,51 @@ Managing comments and reviews
     .. fancybox:: img/Points_and_cash_Selection_009.png
         :alt: comments and reviews addon
 
+===============================
+Export/Import of reward points
+===============================
+
+    You can use the add-on to export bonus points as part of an export:
+    1. User ( Administration ➝ Export data ➝ Users)
+
+        Add the "Users Bonunes" field to the export:
+
+        .. fancybox:: img/Points_and_cash_Selection_013.png
+            :alt: Export user bonuses
+
+    2. Order ( Administration ➝ Export data ➝ Orders)
+
+        Add the "Orders Bonuses" and "Orders Bonuses in use" fields to the export:
+
+        .. fancybox:: img/Points_and_cash_Selection_014.png
+            :alt: Export order bonuses
+
+    You can use the add-on to import bonus points as part of the import:
+    1. User ( Administration ➝ Import data ➝ Users)
+
+        .. fancybox:: img/Points_and_cash_Selection_015.png
+            :alt: Import user bonuses
+
+    2. Order ( Administration ➝ Import data ➝ Orders)
+
+        .. fancybox:: img/Points_and_cash_Selection_016.png
+            :alt: Import order bonuses
+
+++++++++++++++++
+Import settings
+++++++++++++++++
+
+    The add-on has settings for import of bonus points:
+
+    .. fancybox:: img/Points_and_cash_Selection_017.png
+            :alt: Import order bonuses
+
+    * **Overwrite bonuses users at import**—User bonus points will be updated during import. If the setting is not active, the bonuses will be summarized, i.e. the imported bonus points will be added to the user's existing points. If the setting is active, the user's bonus points will be updated by the number of points from the imported file.
+
+    * **Accrue bonuses users at order import**—Award bonus points to the user for the imported order. If the setting is not active, points will be displayed only in the order details, i.e. the bonus points information will be imported only in the order details. If the setting is active, bonus points for the imported order will be added to the user's existing points.
+
+    * **Write off bonuses used by users when importing orders**—Write off bonus points in use from users for the imported order. If the setting is active, the points in use will be write off from the user's account, i.e. the points in use from the imported order will be write off from the user's current account. If the setting is not active, the information about bonus points in use will be displayed only in the order details.
+
 =============
 Adding a hook
 =============

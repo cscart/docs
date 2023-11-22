@@ -144,7 +144,7 @@ Available settings
         :alt: Affiliate. Add-on settings
 
     * **Payment period** — is used in the "Commissions of latest periods" table in the `Affiliates manage`_ and `What the affiliate will see`_ sections. It sets a period between two payouts: once a week, twice a week or once a month.
-    
+
     * **Number of last periods** — is used in the "Commissions of latest periods" table in the `Affiliates manage`_ and `What the affiliate will see`_ sections. It sets the number of payouts to be shown in the table.
 
     * **Allow all customers to be affiliates** — if the setting is enabled, all customers will be able to get commissions for certain actions in reward points. It automatically assigns to them the affiliate plan for customers created in *Marketing - Affiliates - Plans: Customers*. For more details, see the `What the customer will see`_ section. 
@@ -162,6 +162,11 @@ Available settings
     * **Successful order statuses** — if the 'Automatic approval of affiliate commissions' setting is enabled, commissions for sale and coupon using will be approved automatically for selected order statuses. Commissions for sale and coupon using will be disapproved for the unselected statuses regardless of the 'Automatic approval of affiliate commissions' setting.
 
     * **Custom affiliate parameter** — allows to replace the aff_id parameter in the url of the home page to make it look more user-friendly. For example, *www.example.com/affiliates/john*, where *affiliates* is entered by the admin in this field and *john* is defined by an affiliate in their profile. Leave this setting empty if you do not want to use the feature. For more details, see the `What the affiliate will see`_ section.
+
+    * **Show referral's name** — allows to hide the names of attracted customers and partners on the partner's statistics page in the "Comissions" tab. If the setting is disabled, the names of attracted customers and partners will be displayed in the format C****r C****r:
+
+    .. fancybox:: img/affiliate_hiding_names.png
+        :alt: Affiliate. Show referral's name setting.
 
     **2. Text banner settings**
 
