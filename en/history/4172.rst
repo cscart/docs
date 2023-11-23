@@ -1,0 +1,85 @@
+************************
+CS-Cart 4.17.2 Changelog
+************************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Multi-Vendor: Admin Panel: Onboarding: Added CS-Cart introduction section.
+
+[+] Shipping methods: UPS: Added integration with OAuth support.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Users: Password recovery: Multiple improvements to behavior and emails. For example: you can now add Google reCAPTCHA to the password recovery page; the email now reflects for how long the recovery link will work (15 minutes).
+
+=========
+Bug Fixes
+=========
+
+[!] Add-ons: Form builder: It was possible to add variants for fields that do not provide variants. Fixed.
+
+[!] Add-ons: Landing pages from Tilda: ME602 and TE600 blocks were displayed incorrectly. Fixed.
+
+[!] Add-ons: Landing pages from Tilda: Some blocks could break styles within Tilda pages on CS-Cart side. Fixed.
+
+[!] Add-ons: Maps and geolocation: Number of pickup points didn't sum up on the product page. Fixed.
+
+[!] Add-ons: Message center: Performance:  In some cases, there were significant delays when loading the list of threads in the admin panel. Fixed.
+
+[!] Add-ons: PayPal Checkout: PayPal Commerce Platform: There was an error if taxes were not included in the price. Fixed.
+
+[!] Add-ons: SEO: Seo names with the same content are duplicated with another language code. Fixed
+
+[!] Add-ons: Stores and pick up points: Warehouses: On the Shops and Pick-up points page, cities where there are only warehouses were displayed on the showcase. Fixed.
+
+[!] Add-ons: Stripe Connect: Displayed incorrect Stripe commission for currencies without decimals. Fixed
+
+[!] Add-ons: Stripe: Stripe Connect: The order number was missing in the transaction description. Fixed.
+
+[!] Add-ons: Warehouses: Large number of products in the warehouse greatly increased time of saving it. Fixed.
+
+[!] Add-ons: Warehouses: Product variations: Product variations available only in warehouse were not displayed for selection on the product page. Fixed.
+
+[!] Checkout: The phone field was reset when the shipping was changed. Fixed.
+
+[!] Exim: Line breaks were not taken into account when exporting orders. Fixed.
+
+[!] Export/Import: Products export: Multi-language feature variants were exported incorrectly. Fixed.
+
+[!] Mobile app: Features: Unavailable features could be displayed on the edit page. Fixed.
+
+[!] Mobile app: Push notifications: Android didn't ask permission for notifications. Fixed.
+
+[!] Multi-Vendor Ultimate: Add-ons: Stores and pickup points: Order fulfillment by marketplace: Stores owned by marketplace were not displayed in search results on storefront if all vendors used order fulfillment. Fixed.
+
+[!] Multi-Vendor: Add-ons: Common Products for Vendors: Vendor rating: Warehouses: In some cases, there could be too many duplicate add-ons to the database. Fixed
+
+[!] Multi-Vendor: Add-ons: Vendor locations [Beta]: Vendors with specified locations could not be merged. Fixed
+
+[!] Multi-Vendor: Add-ons: Vendor plans: Email notifications: An email notification regarding the change of the vendor plan was sent upon the vendor's creation during the import process. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor-to-admin payments: Cart: Was displayed incorrect price in minicart. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor-to-admin payments: Notifications: All vendors from "Vendors" usergroup receive suspend notification. Fixes
+
+[!] Multi-Vendor: Add-ons: Vendors locations: Incorrect text could be displayed in the block with buyer's location. Fixed.
+
+[!] Multi-Vendor: Import: Product Features: Vendors were able to add new variants for marketplace features during import. Fixed
+
+[!] Multi-Vendor: Storefronts: Languages: Selected storefront was not taken into account when using "Edit on site" link in the admin panel. Fixed.
+
+[!] Multi-Vendor: Vendor panel: Menu: Selected custom menu items were not highlighted. Fixed.
+
+[!] Notification center: On mobile devices, the notification delete button overlapped the text. Fixed.
+
+[!] Payments: PayPal Express Checkout: A PHP error occurred when placing an order. Fixed.
+
+[!] Privileges: Order management: An administrator couldn't add a product to an order if order creation was restricted by a user group. Fixed.
+
+[!] Products: In some cases, it was possible to add disabled products to cart. Fixed.
+
+[!] Upgrade center: The update icon for the add-on was not displayed. Fixed.
