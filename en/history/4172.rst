@@ -46,7 +46,7 @@ Bug Fixes
 
 [!] Checkout: The phone field was reset when the shipping was changed. Fixed.
 
-[!] Exim: Line breaks were not taken into account when exporting orders. Fixed.
+[!] Export/Import: Line breaks were not taken into account when exporting orders. Fixed.
 
 [!] Export/Import: Products export: Multi-language feature variants were exported incorrectly. Fixed.
 
