@@ -381,6 +381,14 @@ Importing data
         :alt: product import completed
         :width: 300px
 
+    If you need to restart category mapping, activate the "Restart category mapping" checkbox on the "Categories" tab  and click "Save" button:
+
+    .. fancybox:: img/XML27.png
+        :alt: product import completed
+        :width: 300px
+
+    The categories will be automatically mapped again, during the process of saving the preset.
+
 =======================
 Cloning import profiles
 =======================
