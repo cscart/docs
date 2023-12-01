@@ -363,6 +363,13 @@ Importing data
     .. fancybox:: img/XML15.png
         :alt: import process
 
+    If you need to restart category mapping, activate the "Restart category mapping" checkbox on the "Categories" tab  and click "Save" button:
+
+    .. fancybox:: img/XML27.png
+        :alt: product import completed
+
+    The categories will be automatically mapped again, during the process of saving the preset.
+
     10. The **Cron** tab contains the command that you can run to make import start automatically according to a schedule. You can select one of the preset periods, or define your own.
 
     .. fancybox:: img/XML16.png
@@ -380,14 +387,6 @@ Importing data
     .. fancybox:: img/XML18.png
         :alt: product import completed
         :width: 300px
-
-    If you need to restart category mapping, activate the "Restart category mapping" checkbox on the "Categories" tab  and click "Save" button:
-
-    .. fancybox:: img/XML27.png
-        :alt: product import completed
-        :width: 300px
-
-    The categories will be automatically mapped again, during the process of saving the preset.
 
 =======================
 Cloning import profiles
