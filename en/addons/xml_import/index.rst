@@ -363,7 +363,7 @@ Importing data
     .. fancybox:: img/XML15.png
         :alt: import process
 
-    If you need to restart category mapping, activate the "Restart category mapping" checkbox on the "Categories" tab  and click "Save" button:
+    If you need to restart category mapping, activate the "Restart category mapping" checkbox on the "Categories Mapping" tab  and click "Save" button:
 
     .. fancybox:: img/XML27.png
         :alt: product import completed
