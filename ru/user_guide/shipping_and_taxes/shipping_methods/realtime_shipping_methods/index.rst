@@ -17,7 +17,7 @@
     pickpoint
     pecom
     dellin
-    yandex_delivery
+
 
 .. toctree::
     :maxdepth: 3
@@ -26,6 +26,7 @@
 
     ems
     rus_post/post_edost/index
+    yandex_delivery
 
 В статьях ниже описано, как решать разные проблемы и задачи, связанные с калькуляторами доставки в CS-Cart:
 
