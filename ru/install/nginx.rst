@@ -314,7 +314,7 @@
             add_header Cache-Control public;
         }
 
-        location ~* /(\w+/)?(\w+/)?(.+\.(jpe?g|jpg|ico|gif|png|css|js|pdf|txt|tar|woff|woff2|svg|ttf|eot|csv|zip|xml|yml))$ {
+        location ~* /(\w+/)?(\w+/)?(.+\.(jpe?g|jpg|webp|ico|gif|png|css|js|pdf|txt|tar|woff|woff2|svg|ttf|eot|csv|zip|xml|yml))$ {
             access_log off;
             try_files $uri $uri/ /$2$3 /$3 /index.php?$args;
             expires max;
