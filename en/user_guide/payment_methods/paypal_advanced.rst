@@ -1,6 +1,10 @@
-**************************************************
-How To: Set up PayPal Payments Advanced in CS-Cart
-**************************************************
+**********************************************
+How To: Set up Website Payments Pro in CS-Cart
+**********************************************
+
+.. important::
+
+    The PayPal Payments Advanced add-on was renamed to Website Payments Pro in CS-Cart version **4.10.4**
 
 .. note::
 
@@ -12,17 +16,17 @@ How To: Set up PayPal Payments Advanced in CS-Cart
 
 3. Fill in the form:
 
-   * Select *PayPal Advanced* in the **Processor** drop-down list.
+   * Select *Website Payments Pro* in the **Processor** drop-down list.
 
-   * Enter the **Display name**—the name of the payment method that will appear to your customers at checkout. By default, the payment method will be called *PayPal Advanced*.
+   * Enter the **Display name**—the name of the payment method that will appear to your customers at checkout.
 
    * Specify other settings and upload an icon for the payment method, if necessary.
 
-.. image:: img/paypal_advanced.png
+.. image:: img/website_pro.png
     :align: center
-    :alt: Creating a new PayPal Advanced payment method.
+    :alt: Creating a new Website Payments Pro payment method.
 
-4. Switch to the **Configure** tab and specify the settings of PayPal Payments Advanced:
+4. Switch to the **Configure** tab and specify the settings of Website Payments Pro:
 
    * Select the **Currency** of your PayPal account.
 
@@ -42,7 +46,7 @@ How To: Set up PayPal Payments Advanced in CS-Cart
 
    .. note::
 
-       You can find this data in your PayPal Advanced account.
+       You can find this data in your Website Payments Pro account.
 
 6. Set **Test/Live mode** to *Live*.
 
@@ -50,6 +54,6 @@ How To: Set up PayPal Payments Advanced in CS-Cart
 
 7. Click the **Create** button.
 
-.. image:: img/paypal_advanced_configure.png
+.. image:: img/website_pro1.png
     :align: center
-    :alt: Configuring PayPal Advanced settings.
+    :alt: Configuring Website Payments Pro settings.
