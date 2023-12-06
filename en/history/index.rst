@@ -10,6 +10,7 @@ CS-Cart branch 4.17.x
     :maxdepth: 1
 
     4.17.1 (September 4, 2023) <4171>
+    4.17.2 (November 28, 2023) <4172>
 
 
 =====================

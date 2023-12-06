@@ -32,17 +32,17 @@ Bug Fixes
 
 [!] Add-ons: PayPal Checkout: PayPal Commerce Platform: There was an error if taxes were not included in the price. Fixed.
 
-[!] Add-ons: SEO: Seo names with the same content are duplicated with another language code. Fixed
+[!] Add-ons: SEO: In some cases same page was available on multiple URLs. Fixed.
 
 [!] Add-ons: Stores and pick up points: Warehouses: On the Shops and Pick-up points page, cities where there are only warehouses were displayed on the showcase. Fixed.
 
-[!] Add-ons: Stripe Connect: Displayed incorrect Stripe commission for currencies without decimals. Fixed
+[!] Multi-Vendor: Add-ons: Stripe Connect payments: Displayed incorrect Stripe commission for currencies without decimals. Fixed
 
-[!] Add-ons: Stripe: Stripe Connect: The order number was missing in the transaction description. Fixed.
+[!] Multi-Vendor: Add-ons: Stripe Connect payments: The order number was missing in the transaction description. Fixed.
 
-[!] Add-ons: Warehouses: Large number of products in the warehouse greatly increased time of saving it. Fixed.
+[!] Multi-Vendor Ultimate: Add-ons: Warehouses: Large number of products in the warehouse greatly increased time of saving it. Fixed.
 
-[!] Add-ons: Warehouses: Product variations: Product variations available only in warehouse were not displayed for selection on the product page. Fixed.
+[!] Multi-Vendor Ultimate: Add-ons: Warehouses: Product variations: Product variations available only in warehouse were not displayed for selection on the product page. Fixed.
 
 [!] Checkout: The phone field was reset when the shipping was changed. Fixed.
 
@@ -56,17 +56,17 @@ Bug Fixes
 
 [!] Multi-Vendor Ultimate: Add-ons: Stores and pickup points: Order fulfillment by marketplace: Stores owned by marketplace were not displayed in search results on storefront if all vendors used order fulfillment. Fixed.
 
-[!] Multi-Vendor: Add-ons: Common Products for Vendors: Vendor rating: Warehouses: In some cases, there could be too many duplicate add-ons to the database. Fixed
+[!] Multi-Vendor Plus: Add-ons: Common Products for Vendors: Vendor rating: Warehouses: In some cases, there could be too many duplicate add-ons to the database. Fixed
 
 [!] Multi-Vendor: Add-ons: Vendor locations [Beta]: Vendors with specified locations could not be merged. Fixed
 
 [!] Multi-Vendor: Add-ons: Vendor plans: Email notifications: An email notification regarding the change of the vendor plan was sent upon the vendor's creation during the import process. Fixed.
 
-[!] Multi-Vendor: Add-ons: Vendor-to-admin payments: Cart: Was displayed incorrect price in minicart. Fixed.
+[!] Multi-Vendor: Add-ons: Vendor-to-admin payments: Cart: An incorrect price was displayed in the minicart. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor-to-admin payments: Notifications: All vendors from "Vendors" usergroup receive suspend notification. Fixes
 
-[!] Multi-Vendor: Add-ons: Vendors locations: Incorrect text could be displayed in the block with buyer's location. Fixed.
+[!] Multi-Vendor: Add-ons: Vendors locations [Beta]: Incorrect text could be displayed in the block with buyer's location. Fixed.
 
 [!] Multi-Vendor: Import: Product Features: Vendors were able to add new variants for marketplace features during import. Fixed
 
@@ -76,7 +76,7 @@ Bug Fixes
 
 [!] Notification center: On mobile devices, the notification delete button overlapped the text. Fixed.
 
-[!] Payments: PayPal Express Checkout: A PHP error occurred when placing an order. Fixed.
+[!] Add-ons: PayPal payments: PayPal Express Checkout: A PHP error occurred when placing an order. Fixed.
 
 [!] Privileges: Order management: An administrator couldn't add a product to an order if order creation was restricted by a user group. Fixed.
 
