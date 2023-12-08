@@ -140,7 +140,7 @@ Available settings
 
     **1. General settings**
 
-    .. fancybox:: img/affiliate_settings_1.png
+    .. fancybox:: img/affiliate_settings_1v2.png
         :alt: Affiliate. Add-on settings
 
     * **Payment period** — is used in the "Commissions of latest periods" table in the `Affiliates manage`_ and `What the affiliate will see`_ sections. It sets a period between two payouts: once a week, twice a week or once a month.
@@ -161,10 +161,12 @@ Available settings
 
     * **Successful order statuses** — if the 'Automatic approval of affiliate commissions' setting is enabled, commissions for sale and coupon using will be approved automatically for selected order statuses. Commissions for sale and coupon using will be disapproved for the unselected statuses regardless of the 'Automatic approval of affiliate commissions' setting.
 
-    * **Сanceled order statuses** — Select the statuses of canceled orders. Canceled commissions for sales and coupon using of these orders can be mass deleted on the 'Affiliate->Approve Commissions' page. All canceled commissions for orders in the selected statuses will be immediately removed from the commissions list for approve.
+    * **Сanceled order statuses** — Select the statuses of canceled orders. Canceled commissions for sales and coupon using of these orders can be mass deleted on the 'Affiliate->Approve Commissions' page. All canceled commissions for orders in the selected statuses will be immediately removed from the commissions list for approve:
 
-    .. fancybox:: img/aff_mass_delete_commisions.png
-        :alt: Affiliate. Mass delete canceled commissions
+        .. fancybox:: img/aff_mass_delete_commisions.png
+            :alt: Affiliate. Mass delete canceled commissions
+            :width: 433px
+
 
     * **Custom affiliate parameter** — allows to replace the aff_id parameter in the url of the home page to make it look more user-friendly. For example, *www.example.com/affiliates/john*, where *affiliates* is entered by the admin in this field and *john* is defined by an affiliate in their profile. Leave this setting empty if you do not want to use the feature. For more details, see the `What the affiliate will see`_ section.
 
