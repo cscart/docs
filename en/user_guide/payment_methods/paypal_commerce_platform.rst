@@ -2,10 +2,6 @@
 How To: Set Up PayPal Commerce Platform in Multi-Vendor
 *******************************************************
 
-.. note::
-
-    PayPal is not yet ready to provide the new payment solution massively. If you are going to use this payment method in your marketplace, please contact `CS-Cart Customer Care <https://helpdesk.cs-cart.com>`_.
-
 .. contents::
     :backlinks: none
     :local:
@@ -23,7 +19,7 @@ How it Works
 
 #. When the customer clicks one of the buttons, he goes to the PayPal checkout page, where he pays for his order.
 
-#. PayPal automatically splits all the money between the marketplace and the vendors whose products were bought. Depending on your choice, it can happen immediately, or PayPal can hold the vendor's money up to 28 days.
+#. PayPal automatically splits all the money between the marketplace and the vendors whose products were bought. The marketplace owner doesn’t have to transfer money manually.
 
 How to Configure the Payment Method
 ===================================
@@ -38,32 +34,22 @@ How to Configure the Payment Method
 
    * **Account settings:**
 
-     * **Partner integration code**—your build notation (BN) code. Contact PayPal using the provided email in the *Apply for using PayPal Commerce Platform* section, and include the information listed there.
-
+     * **Partner integration code**—your build notation (BN) code. Contact `CS-Cart Customer Care <https://helpdesk.cs-cart.com>`_ to get it.
+   
      * **Merchant account ID, App Client ID, App Secret**—these settings connect your marketplace to your PayPal account. Get these credentials from PayPal.
-
+     
      * **Test/Live mode**—set to *Live* to accept real payments.
-
+     
        The test mode is intended for developers. It works with the special PayPal sandbox instead of live servers. No real money is involved in sandbox transactions.
-
-     * **Currency**—if you specify the currency that is not the same as the marketplace primary currency, then it will be converted as soon as you go to the PayPal checkout page.
-
-   * **Delay transfer of funds to vendors:**
-
-     * **Delay transfer of funds**—delay sending money to vendors up to 28 days. Configure manual or automatic disbursements to vendors.
-
-       To schedule automatic periodic disbursements, add a special command to cron. Set the desired value of the "--days" parameter. Money will be automatically transfered to vendors for orders that are older than this value.
-
-       .. code-block:: php
        
-          php /path/to/cart/admin.php --dispatch=paypal_commerce_platform.disburse_payouts_by_cron --payment_id=14 --days=14
-
+     * **Currency**—if you specify the currency that is not the same as the marketplace primary currency, then it will be converted as soon as you go to the PayPal checkout page.
+     
    * **Funding sources to show on checkout**—choose the payment services you want to be displayed on the PayPal checkout page.
-
+     
    * **Cards to show on checkout**—choose the payment cards you want PayPal to accept payments from.
 
    * **Button appearance**—choose the shape, color and height of the PayPal button on the checkout page.
-
+   
 #. Click the **Create** button.
 
    .. image:: img/paypal_settings1.png
@@ -74,7 +60,6 @@ How to Configure the Payment Method
    .. image:: img/paypal_settings2.png
        :align: center
        :alt: Configure tab in the settings of the paypal commerce platform add-on
-       
 
 Have Your Vendors Connect Their Accounts
 ========================================
@@ -83,13 +68,13 @@ Vendors connect their PayPal business accounts to receive the money for their pr
 
 .. note::
 
-    CS-Cart uses `Connected path <https://developer.paypal.com/limited-release/commerce-platform/v3/seller-onboarding/upfront/>`_ as an integration method with PayPal Commerce Platform. This method requires business accounts from all vendors. 
+    CS-Cart uses `Connected path <https://www.paypal.com/lu/smarthelp/article/what-integration-methods-are-available-for-paypal-for-marketplaces-ts2126>`_ as an integration method with PayPal Commerce Platform. This method requires business accounts from all vendors. 
 
 Here is an instruction for vendors on how to connect their PayPal accounts:
 
 #. Open the **Vendors → Vendors** page.
 
-#. Click on the vendor's name to open his settings.
+#. Click on the vendor’s name to open his settings.
 
 #. Go to the **PayPal** tab.
 
@@ -99,9 +84,9 @@ Here is an instruction for vendors on how to connect their PayPal accounts:
        :align: center
        :alt: Connecting with paypal in the vendor's settings
 
-#. You'll be taken to the PayPal website. Follow the instructions there to connect your account to the marketplace. This will allow you to receive money from orders to your PayPal account without the need to request its withdrawal from the marketplace owner.
+#. You’ll be taken to the PayPal website. Follow the instructions there to connect your account to the marketplace. This will allow you to receive money from orders to your PayPal account without the need to request its withdrawal from the marketplace owner.
 
-#. After you have done everything on the PayPal's side, you will be redirected back to your store.
+#. After you have done everything on the PayPal’s side, you will be redirected back to your store.
 
 #. Click the **Save** button.
 
