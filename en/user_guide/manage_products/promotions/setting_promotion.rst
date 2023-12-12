@@ -50,11 +50,14 @@ How To: Set Up a Promotion
 
 #. Switch to the **Conditions** tab. This tab determines in what cases the promotion applies.
 
+
 #. Click the **Add condition** button and choose the condition from the dropdown list. Most conditions require you to enter additional information.
 
    .. note::
 
-       You can create multiple conditions. Please note the phrase at the top of the condition list: *If all/any of these conditions are true/false*. By choosing between *all* and *any*, and *true* and *false*, you determine when the promotion applies.
+        You can create multiple conditions. Please note the phrase at the top of the condition list: *If all/any of these conditions are true/false*. By choosing between *all* and *any*, and *true* and *false*, you determine when the promotion applies.
+        
+        The **once per customer** condition checks at least 6 parameters, or just one of them—namely, an email. If a match is found at the time of the request using an order status that decreases the quantity of products in stock, then it is considered that this promotion has already been used for this customer.
 
    .. image:: img/promotions_02.png
        :align: center
