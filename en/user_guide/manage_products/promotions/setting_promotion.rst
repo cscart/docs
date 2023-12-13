@@ -57,7 +57,11 @@ How To: Set Up a Promotion
 
         You can create multiple conditions. Please note the phrase at the top of the condition list: *If all/any of these conditions are true/false*. By choosing between *all* and *any*, and *true* and *false*, you determine when the promotion applies.
         
-        The **once per customer** condition checks at least 6 parameters, or just one of them—namely, an email. If a match is found at the time of the request using an order status that decreases the quantity of products in stock, then it is considered that this promotion has already been used for this customer.
+        
+        The **once per customer** condition checks at least 6 parameters:
+        ``firstname , lastname , b_city , b_state , b_country , b_zipcode , email``
+        
+        If a match is found at the time of the request using an order status that decreases the quantity of products in stock, then it is considered that this promotion has already been used for this customer.
 
    .. image:: img/promotions_02.png
        :align: center
