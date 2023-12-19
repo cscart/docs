@@ -56,15 +56,14 @@ How To: Set Up a Promotion
    .. note::
 
         You can create multiple conditions. Please note the phrase at the top of the condition list: *If all/any of these conditions are true/false*. By choosing between *all* and *any*, and *true* and *false*, you determine when the promotion applies.
-        
-        
-       The **once per customer** condition checks at least 7 parameters: ``firstname, lastname, b_city, b_state, b_country, b_zipcode, and email``.
-       
-       It checks for a match among these parameters; 5 out of the 7 are enough to make a match, or at least one of them—specifically, the email. The system searches for a match among the existing orders that have a status to decrease the amount of products in stock. If a match is found, then it is considered that this promotion has already been used for this customer.
 
    .. image:: img/promotions_02.png
        :align: center
        :alt: The Conditions tab determines when the promotion applies.
+
+   .. note::
+       The **once per customer** condition checks at least 7 parameters: ``firstname, lastname, b_city, b_state, b_country, b_zipcode, and email``.
+       It checks for a match among these parameters; 5 out of the 7 are enough to make a match, or at least one of them—specifically, the email. The system searches for a match among the existing orders that have a status to decrease the amount of products in stock. If a match is found, then it is considered that this promotion has already been used for this customer.
 
 #. Switch the **Bonuses** tab. This tab determines what bonuses are given when a promotion applies.
 
