@@ -40,7 +40,7 @@ Features
 Compatibility
 =============
 
-    The add-on is compatible with Multi-Vendor 4.10 and above, but only versions 4.12.x and above are supported. Need compatibility with another CS-Cart version? Contact us via email cart-addons@cscart.com now.
+    The add-on is compatible with Multi-Vendor 4.10 and above, but only versions 4.12.x and above are supported. 
     Minimum required PHP version is 5.6. The add-on does not support PHP 8.x yet.
 
     See more information about compatibility of our add-ons `here <https://docs.cs-cart.com/marketplace-addons/compatibility/index.html>`_.
