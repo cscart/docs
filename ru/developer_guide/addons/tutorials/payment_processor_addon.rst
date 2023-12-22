@@ -76,15 +76,14 @@
 
 В следующем примере скрипт находится в директории *app/addons/sample_payment/payments*. Назовем его **sample_payment_processor.php** и добавим минимально необходимый для работы скрипта код
     ::
+
         <?php
-          // app/addons/sample_payment/payments/sample_payment_processor.php - директория, где находится файл
-
-          // Здесь мы предотвращаем обращение к скрипту напрямую, потому что он должен быть включен через директиву "include". Константа "BOOTSTRAP" объявляется во время запуска.
-          defined('BOOTSTRAP') or die('Access denied');
-
-          //  Есть два разных сценария для запуска скрипта.
-          if (defined('PAYMENT_NOTIFICATION')) {
-              /**
+        // app/addons/sample_payment/payments/sample_payment_processor.php - директория, где находится файл
+        // Здесь мы предотвращаем обращение к скрипту напрямую, потому что он должен быть включен через директиву "include". Константа "BOOTSTRAP" объявляется во время запуска.
+        defined('BOOTSTRAP') or die('Access denied');
+        //  Есть два разных сценария для запуска скрипта.
+        if (defined('PAYMENT_NOTIFICATION')) {
+        /**
         * Получение и обработка ответа от сторонних  
         * платежных сервисов и систем оплаты.
         */
