@@ -4,7 +4,7 @@ Price List for Customers
 
 .. important::
 
-    This functionality is available in our B2B products.
+    This functionality is a part of a CS-Cart product that is currently not for sale.
 
 An organization might need extra information before making a purchase. In this case, a price list comes in handy. It helps to:
 

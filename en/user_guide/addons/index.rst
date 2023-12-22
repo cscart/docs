@@ -67,7 +67,6 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     ping_payments/index
     polls/index
     price_list/index
-    price_list_for_customers/index
     price_per_unit/index
     product_bundles/index
     product_reviews/index
@@ -110,6 +109,7 @@ This section of the User Guide covers **add-ons**—useful extensions that add m
     store_locator/index
     twigmo/index
     vendor_commission/index
+    price_list_for_customers/index
 
 .. meta::
    :description: List of built-in addons for CS-Cart and Multi-Vendor ecommerce solutions. Addons help customize your store by adding functionality.
