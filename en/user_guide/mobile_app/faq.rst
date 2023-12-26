@@ -174,10 +174,14 @@ Most of the data described below is provided via the **Mobile Application** add-
 #. **Images:**
 
    * *App Icon*—a 1024x1024 image to serve as the logo of your app. The required size is so big because Apple requires it. Please make sure that the image will look fine even if it is resized to 256x256.
+   
+   * *Notification icon* is an icon used for push notifications on the Android devices. The recommended size is 192x192.
 
    * *Feature Graphic image*—a 1024x500 image shown on the Google Play page of your application. For more information, see the "Feature Graphic" section of `Google Play instructions <https://support.google.com/googleplay/android-developer/answer/1078870?hl=en>`_.
 
    * *Splash Screen Logo*—an image in two variants (1536x2208 vertical & 2208x1536 horizontal). It will be displayed when you start the application on your mobile device.
+   
+   * *Splash Screen (portrait)* is displayed when you start the app. The recommended size is 2496x2496.
 
      .. note::
 
