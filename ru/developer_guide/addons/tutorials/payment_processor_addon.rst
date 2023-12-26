@@ -87,8 +87,8 @@
 
         <?php
 
-        // app/addons/sample_payment/payments/sample_payment_processor.php — директория, где находится файл.
-        // Здесь мы запрещаем обращение к скрипту напрямую, потому что он должен быть включен через директиву "include". Константа "BOOTSTRAP" объявляется во время запуска.
+        // app/addons/sample_payment/payments/sample_payment_processor.php — директория файла.
+        // Запрещаем обращение к скрипту напрямую, он должен быть включен через директиву "include". Константа "BOOTSTRAP" объявляется во время запуска.
 
         defined('BOOTSTRAP') or die('Access denied');
         //  Есть два разных сценария для запуска скрипта.
