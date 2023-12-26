@@ -288,7 +288,7 @@
 .. list-table::
     :header-rows: 1
     :stub-columns: 1
-    :widths: 20 5 30
+    :widths: 30 5 30
     
     *   -   order_id  
         -   тип
