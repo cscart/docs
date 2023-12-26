@@ -54,9 +54,11 @@ What Shipping and Payment Methods Are Supported?
 
 The application supports **all shipping methods** and the following payment methods:
 
-* PayPal Express Checkout;
+* PayPal Express Checkout
 
 * Offline payment methods (such as "Discuss with manager", etc.)
+
+* Stripe Payments
 
 Payment methods in the mobile app are positioned in the same order as in your store. The first payment method is selected by default.
 
