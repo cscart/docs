@@ -183,6 +183,7 @@ Most of the data described below is provided via the **Mobile Application** add-
    
    * *Splash Screen (portrait)* is displayed when you start the app. The recommended size is 2496x2496.
 
+   
      .. note::
 
          Apple App Store and Google Play don't accept images with transparent backgrounds (or in technical terms, with alpha channel). Please remove alpha channel before uploading images. Opening your image and saving it as JPG is the surest and easiest option: a PNG image may or may not have alpha channel, but a JPG image never has one.
