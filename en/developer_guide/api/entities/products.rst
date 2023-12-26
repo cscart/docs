@@ -20,7 +20,7 @@ To get a list of products, send a ``GET`` request to ``/api/products/``::
   GET /api/products/
 
 
-The number of the returned products is determined by the ``items_per_page`` parameter. It's value can be changed in Admin panel in **Settings → Appearance** in the **Elements per page** setting or through an API request. 
+The number of the returned products is determined by the ``items_per_page`` parameter. Its value can be changed in Admin panel in **Settings → Appearance** in the **Elements per page** setting or through an API request. 
 
 
 To refer to all products of a particular :doc:`Category <categories>` send a ``GET`` request to  ``/api/categories/:id/products/``::
@@ -1064,7 +1064,7 @@ Example JSON: Create a Product with Images
 
 This request creates a product with a price, the *Active* status, a main and 2 additional images. Images must be already uploaded on your server, or available somewhere on the Internet.
     
-It this example we have uploaded 3 images:
+In this example we have uploaded 3 images:
 
 * The main_image.jpg in the **main_pair** parameter is the main product image. It was uploaded from with the **image_path** parameter, which means it is added with a URL from the Internet.
 * The additional_image1.jpg  is the additional image of a product. It was uploaded on the server via FTP. The path to the image is specified in the **absolute_path** parameter of the **detailed** object.
