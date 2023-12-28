@@ -2,6 +2,10 @@
 Adding a Payment Processor via an Add-on
 ****************************************
 
+.. contents::
+   :backlinks: none
+   :local:
+
 A payment processor is a group of several **PHP** and **TPL** files and an entry in the ``payment_processors`` table.
 
 ============================================
