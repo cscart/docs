@@ -56,9 +56,10 @@ The application supports **all shipping methods** and the following payment meth
 
 * PayPal Express Checkout
 
+* Stripe and Stripe Connect
+
 * Offline payment methods (such as "Discuss with manager", etc.)
 
-* Stripe Payments
 
 Payment methods in the mobile app are positioned in the same order as in your store. The first payment method is selected by default.
 
@@ -178,10 +179,8 @@ Most of the data described below is provided via the **Mobile Application** add-
    * *Notification icon* is an icon used for push notifications on the Android devices. The recommended size is 192x192.
 
    * *Feature Graphic image*—a 1024x500 image shown on the Google Play page of your application. For more information, see the "Feature Graphic" section of `Google Play instructions <https://support.google.com/googleplay/android-developer/answer/1078870?hl=en>`_.
-
-   * *Splash Screen Logo*—an image in two variants (1536x2208 vertical & 2208x1536 horizontal). It will be displayed when you start the application on your mobile device.
    
-   * *Splash Screen (portrait)* is displayed when you start the app. The recommended size is 2496x2496.
+   * *Splash Screen (portrait)* is an 2496x2496 image. It is displayed when you start the application on your mobile phone. For the best look on all devices, use the logo of your store. The logo shouldn't occupy the full width of the image, and should be in the center. We recommend a single-color or gradient background without small details.
 
    
      .. note::
