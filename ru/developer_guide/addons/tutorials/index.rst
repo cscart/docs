@@ -13,3 +13,4 @@
     service_through_addon
     addon_creation/index
     solutions/index
+    payment_processor_addon
