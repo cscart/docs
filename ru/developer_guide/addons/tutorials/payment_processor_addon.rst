@@ -23,13 +23,13 @@
 
         views/orders/components/payments/cc.tpl
 
-    Если способу оплаты нужен разработанный с нуля шаблон, укажите к нему путь в модуле. Например, вот так выглядит путь к шаблону модуля PayPal::
+Если способу оплаты нужен разработанный с нуля шаблон, укажите к нему путь в модуле. Например, вот так выглядит путь к шаблону модуля PayPal::
 
 
         addons/paypal/views/orders/components/payments/paypal_express.tpl
 
 
-    В директории *design/themes/responsive/templates/views/orders/components/payments* находятся шаблоны темы **responsive**. Используйте их в качестве основы или примера, указав путь к шаблону в поле *processor_template*.
+В директории *design/themes/responsive/templates/views/orders/components/payments* находятся шаблоны темы **responsive**. Используйте их в качестве основы или примера, указав путь к шаблону в поле *processor_template*.
 
 * **admin_template** *(string)* — это название TPL-файла шаблона, который появляется при создании и редактировании способа оплаты в отдельной вкладке. Этот шаблон содержит поля и формы, где администраторы указывают параметры способа оплаты, например, токены и т.п.
 
