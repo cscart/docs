@@ -11,5 +11,6 @@
     hello_world
     organizing_git_workflow
     service_through_addon
+    payment_processor_addon
     addon_creation/index
     solutions/index
