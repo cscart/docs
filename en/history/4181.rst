@@ -1,0 +1,53 @@
+************************
+CS-Cart 4.18.1 Changelog
+************************
+
+=====================
+Functionality Changes
+=====================
+
+[*] Add-ons: PayPal Checkout: Added customization of additional payment methods and the appearance of buttons.
+
+[*] Add-ons: Product variations: Performance improved for a large number of variations when the "Show all possible feature variants" setting is enabled.
+
+=========
+Bug Fixes
+=========
+
+[!] API: Requests for PHP 8.1 versions generated Deprecated authorization errors. Fixed.
+
+[!] Add-ons: Call requests: Products from the cart were not displayed in the generated call request. Fixed.
+
+[!] Add-ons: Comments and reviews: SEO: An error occurred when viewing a product with reviews without evaluation. Fixed.
+
+[!] Add-ons: Google reCAPTCHA: A PHP error occurred on the add-on's detailed page when it was disabled. Fixed.
+
+[!] Add-ons: Import from Shopify: Features could be duplicated by import. Fixed.
+
+[!] Add-ons: Product variations: The popup for adding variations didn't open when there were a large number of them. Fixed.
+
+[!] Add-ons: Product variations: There was an error when changing product variations to those already in the cart. Fixed.
+
+[!] Add-ons: Warehouses: Common products for vendors: The common products were displayed incorrectly on the storefront when there were product offers distributed across warehouses. Fixed.
+
+[!] Bottom toolbar: Error notification displayed after switching from storefront to admin panel with bottom panel. Fixed.
+
+[!] Checkout: "Zero price action" didn't apply (or un-apply) when a product price was changed from 0 or to 0 while a customer already had the product in cart. Fixed.
+
+[!] E-mail notifications: RTL: The product name and options were displayed incorrectly. Fixed.
+
+[!] Export/Import: Vendors: Translations for some vendor fields were not filled by import. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common Products for vendors: Storefronts: Administrators: Common products were displayed in the list of items on sale. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor-to-admin payments: Stripe payments: Stripe Connect payments: In some cases, records of refill vendor balance were duplicated. Fixed.
+
+[!] Options: Pages of products with a large number of options and forbidden combinations took too long to load. Fixed.
+
+[!] Storefronts: Bottom toolbar: Bottom panel storefront link could lead the administrator to incorrect storefront after editing blocks on "Layouts" page. Fixed.
+
+[!] Storefronts: Layouts: Themes: Current storefront wasn't highlighted in storefront picker on layouts page. Fixed.
+
+[!] Storefronts: Products: An Ajax error occurred when adding an item to a cart with a slow internet connection. Fixed.
+
+[!] Storefronts: Removal of storefronts with a large number of other storefronts and layouts took too long. Fixed; now removal is 2-3 times faster.
