@@ -145,6 +145,24 @@ Loyalty cards
     .. fancybox:: img/Loyalty_program_019.png
         :alt: Loyalty cards
 
+    Enter the number of bonus points. User will get this reward points when this card was assigned to him
+
+    .. fancybox:: img/loyalty_program_bonus_points.png
+        :alt: Loyalty cards
+
+    The user's reward points received by moving to a specific loyalty program level will be displayed in the bonus points log.
+
+    .. fancybox:: img/loyalty_program_bonus_points_log.png
+        :alt: Loyalty cards
+
+    .. fancybox:: img/loyalty_program_bonus_points_log_2.png
+        :alt: Loyalty cards
+
+    The reward points recieved functionality is available only when the "Reward Points" module is enabled.
+
+    .. fancybox:: img/loyalty_program_bonus_points_2.png
+        :alt: Loyalty cards
+
     All the cards will be shown on the Loyalty Program page. Read further for more details.
 
 ===============
@@ -180,6 +198,30 @@ Loyalty program
         :alt: Loyalty program
 
     5. Click **Save** to save the changes.
+
+====================
+Loyalty program Log
+====================
+    You can view the history of changes to loyalty cards and user groups by each customer^
+
+    1. Go to the "Customers" ➝ "Customers".
+
+    2. History of  the loyalty program changes is available in the gear on the page with the list of customers:
+
+    .. fancybox:: img/loyalty_program_history.png
+        :alt: Loyalty program
+
+    or on the customer edit page:
+
+    .. fancybox:: img/loyalty_program_history_2.png
+        :alt: Loyalty program
+
+    3. By clicking on "Loyalty program" you will be able to access the history of changes of the loyalty program^
+
+    .. fancybox:: img/loyalty_program_history_3.png
+        :alt: Loyalty program
+
+    If you use dynamic cards, the log will also show changes of such cards, including information about card expiration.
 
 ====================================================================
 How to insert a link to the Loyalty Program page into the top panel?
