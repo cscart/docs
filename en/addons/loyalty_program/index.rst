@@ -213,7 +213,7 @@ Loyalty program logs
 
     or on the customer edit page:
 
-    .. fancybox:: img/loyalty_program_history_2.png
+    .. fancybox:: img/loyalty_program_history__2.png
         :alt: Loyalty program
 
     3. By clicking on "Loyalty program" you will be able to access the history of changes of the loyalty program:
