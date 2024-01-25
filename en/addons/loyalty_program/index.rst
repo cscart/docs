@@ -150,7 +150,7 @@ Loyalty cards
     .. fancybox:: img/loyalty_program_bonus_points.png
         :alt: Loyalty cards
 
-    The user's reward points received by moving to a specific loyalty program level will be displayed in the bonus points log.
+    The user's reward points received by moving to a specific loyalty program level will be displayed in the bonus points log:
 
     .. fancybox:: img/loyalty_program_bonus_points_log.png
         :alt: Loyalty cards
@@ -158,7 +158,7 @@ Loyalty cards
     .. fancybox:: img/loyalty_program_bonus_points_log_2.png
         :alt: Loyalty cards
 
-    The reward points recieved functionality is available only when the "Reward Points" module is enabled.
+    The reward points recieved functionality is available only when the "Reward Points" add-on is enabled
 
     .. fancybox:: img/loyalty_program_bonus_points_2.png
         :alt: Loyalty cards
@@ -199,10 +199,10 @@ Loyalty program
 
     5. Click **Save** to save the changes.
 
-====================
-Loyalty program Log
-====================
-    You can view the history of changes to loyalty cards and user groups by each customer^
+=====================
+Loyalty program logs
+=====================
+    You can view the history of changes to loyalty cards and user groups by each customer:
 
     1. Go to the "Customers" ➝ "Customers".
 
@@ -216,7 +216,7 @@ Loyalty program Log
     .. fancybox:: img/loyalty_program_history_2.png
         :alt: Loyalty program
 
-    3. By clicking on "Loyalty program" you will be able to access the history of changes of the loyalty program^
+    3. By clicking on "Loyalty program" you will be able to access the history of changes of the loyalty program:
 
     .. fancybox:: img/loyalty_program_history_3.png
         :alt: Loyalty program
