@@ -121,7 +121,7 @@ Less style variables have been updated
 
 Some **Less style variables** (colors, sizes, etc.) have been modified or removed. Now, CS-Cart's Less-variables align with Bootstrap 2's ``css/lib/twitterbootstrap/variables.less``.
 
-Instead of hardcoding values in styles, use Less variables and CSS custom properties from ``css/config.less`` for styles in your add-ons. For obtaining other values, utilize Less functions. For example, functions like ``spin(desaturate(lighten(@textColor, 30%), 25%), -15%)`` create the **Text muted color**. For more information about `lessphp <https://leafo.net/lessphp/docs/>`_ and `Less <https://lesscss.org/>`_, refer to their documentation. For details on removed Less variables, see **"Deleted style variables"**.
+Instead of hardcoding values in styles, use Less variables and CSS custom properties from ``css/config.less`` for styles in your add-ons. For obtaining other values, utilize Less functions. For example, functions like ``spin(desaturate(lighten(@textColor, 30%), 25%), -15%)`` create the **Text muted color**. For more information about `lessphp <https://leafo.net/lessphp/docs/>`_ and `Less <https://lesscss.org/>`_, refer to their documentation. For details on removed Less variables, see :ref:`Deleted style variables` section.
 
 -----------------
 Deleted functions
@@ -438,6 +438,8 @@ Deleted template variables
 ==============
 Styles changes
 ==============
+
+.. _Deleted style variables:
 
 -----------------------
 Deleted style variables
