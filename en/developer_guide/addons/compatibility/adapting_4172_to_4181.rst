@@ -40,7 +40,7 @@ The display of the top and central menu is updated
 
 - The **Design** menu ``$navigation.static.top.design`` is now marked as deprecated. Extend the **Website** menu ``$navigation.static.central.website`` instead.
 
-- Instead of the **top menu**, the **top bar** ``top_bar.tpl`` is now displayed. You can extend it using the ``menu' template hook:top_bar_right``.
+- Instead of the **top menu**, the **top bar** ``top_bar.tpl`` is now displayed. You can extend it using the ``menu template hook:top_bar_right``.
 
 - The extension of the **central menu** ``$navigation.static.central`` has been updated. The central menu is now located in the sidebar. To expand it, use ``$navigation.static.central``. The ``subitems`` submenu has been deprecated. Use dynamic actions instead. Use short titles of menu items (up to ~15 characters). The descriptions of the menu items are no longer displayed.
 
@@ -56,24 +56,24 @@ Some gear buttons have been deprecated
 
 - **Gear buttons** in the right upper corner of the page have been deprecated. Use dynamic actions instead. Please note that dynamic actions can appear both as standalone buttons and as items in the dropdown menu.
 
-- **Gear buttons** on the list of objects have been deprecated (for example, on the product list page). To perform the actions, use the `Context menu <https://docs.cs-cart.com/latest/developer_guide/core/context_menu/index.html>`_. The appearance of gear buttons on the list of products and orders has changed (hooks ``products:list_extra_links`` and `orders:list_extra_links').
+- **Gear buttons** on the list of objects have been deprecated (for example, on the product list page). To perform the actions, use the `Context menu <https://docs.cs-cart.com/latest/developer_guide/core/context_menu/index.html>`_. The appearance of gear buttons on the list of products and orders has changed (hooks ``products:list_extra_links`` and ``orders:list_extra_links``).
 
 ---------------------------------------------------------------------------------------------------------
 The process of extending search filters through the template on the product list page has been deprecated
 ---------------------------------------------------------------------------------------------------------
 
-Search filters on the product list are now set using an array. Use the products:search_data hook to extend it. For example, to add a text field, use hook:
+Search filters on the product list are now set using an array. Use the ``products:search_data`` hook to extend it. For example, to add a text field, use hook:
 
 
 **design/backend/templates/addons/my_changes/hooks/products/search_data.post.tpl**
 ::
 
         {$search_filters.my_changes_filter = [
-        id => "my_changes_filter",
-        type => "input",
-        label => __("my_changes_filter"),
-        value => $search.my_changes_filter_value,
-        placeholder => __("my_changes_filter_placeholder")
+            id => "my_changes_filter",
+            type => "input",
+            label => __("my_changes_filter"),
+            value => $search.my_changes_filter_value,
+            placeholder => __("my_changes_filter_placeholder")
         ]}
 
         {* Export *}
@@ -82,7 +82,7 @@ Search filters on the product list are now set using an array. Use the products:
 
 Hooks ``products:simple_search``, ``companies:products_advanced_search``, ``products:search_form``, ``products:search_in_orders`` and ``products:advanced_search`` have been deprecated. The ``products:select_search`` hook have been deprecated, use the ``products:sort_by_content`` hook instead. 
 
-The example of connecting search filters can be found in the **Components updated. Search filters on the product list page** section. 
+The example of connecting search filters can be found in the :ref:`Components updated` section. 
 
 -------------------------------------------------------------------------------
 Extending Dashboard analytics blocks through template hooks has been deprecated
@@ -105,7 +105,7 @@ The **Setup wizard** has been deprecated. Use the **Settings** tab of your add-o
 Icon display has been updated
 -----------------------------
 
-Icons must now be connected through the component ``common/icon.tpl``. Other methods are considered deprecated and will no longer work. The **Font Awesome** icon library has been replaced with CS-Cart's custom icons. Now, instead of an **icon font**, vector SVG icons are used. Connection parameters for icons have changed. Connecting icons using the ``class`` parameter (e.g., ``class="icon-warning-sign"``) is deprecated. It is necessary to use the ``source`` parameter (e.g., ``source="warning_sign"``) with a value in snake_case and without the ``icon-`` prefix. See the example of connecting an icon in **Components updated. SVG icons**.
+Icons must now be connected through the component ``common/icon.tpl``. Other methods are considered deprecated and will no longer work. The **Font Awesome** icon library has been replaced with CS-Cart's custom icons. Now, instead of an **icon font**, vector SVG icons are used. Connection parameters for icons have changed. Connecting icons using the ``class`` parameter (e.g., ``class="icon-warning-sign"``) is deprecated. It is necessary to use the ``source`` parameter (e.g., ``source="warning_sign"``) with a value in snake_case and without the ``icon-`` prefix. See the example of connecting an icon in :ref:`SVG icons` section.
 
 ---------------------------
 Page width has been updated
@@ -121,13 +121,13 @@ Less style variables have been updated
 
 Some **Less style variables** (colors, sizes, etc.) have been modified or removed. Now, CS-Cart's Less-variables align with Bootstrap 2's ``css/lib/twitterbootstrap/variables.less``.
 
-Instead of hardcoding values in styles, use Less variables and CSS custom properties from css/config.less for styles in your add-ons. For obtaining other values, utilize Less functions. For example, functions like ``spin(desaturate(lighten(@textColor, 30%), 25%), -15%)`` create the **Text muted color**. For more information about `lessphp <https://leafo.net/lessphp/docs/>`_ and `Less <https://lesscss.org/>`_, refer to their documentation. For details on removed Less variables, see **"Deleted style variables"**.
+Instead of hardcoding values in styles, use Less variables and CSS custom properties from ``css/config.less`` for styles in your add-ons. For obtaining other values, utilize Less functions. For example, functions like ``spin(desaturate(lighten(@textColor, 30%), 25%), -15%)`` create the **Text muted color**. For more information about `lessphp <https://leafo.net/lessphp/docs/>`_ and `Less <https://lesscss.org/>`_, refer to their documentation. For details on removed Less variables, see **"Deleted style variables"**.
 
 -----------------
 Deleted functions
 -----------------
 
-* ``fn_master_products_generate_navigation_sections``
+#. ``fn_master_products_generate_navigation_sections``
 
 ============
 Hook Changes
@@ -165,6 +165,7 @@ Template changes
 Components updated
 ------------------
 
+.. _Components updated:
 
 Search filters on the product list page
 ---------------------------------------
@@ -178,36 +179,41 @@ Template: ``views/products/components/products_search_form.tpl``
 
 ::
 
-        {$search_filters.my_changes_filter = [
-        id => "my_changes_filter",
-        type => "input",
-        category => "secondary",
-        label => __("my_changes_filter"),
-        value => $search.my_changes_filter_value,
-        placeholder => __("my_changes_filter_placeholder"),
-        is_enabled => true,
-        is_hidden => false,
-        content => "HTML content",
-        data => [
-        name_from => "my_changes_filter_from",
-        value_from => $search.my_changes_filter_from,
-        label_from => __("my_changes_filter_from"),
-        name_to => "my_changes_filter_to",
-        value_to => $search.my_changes_filter_to,
-        label_to => __("my_changes_filter_to")
-        ],
-        nested_data => [
-            my_changes_filter_param => [
-                key => "my_changes_filter_param",
-                label => __("my_changes_filter_param"),
-                value => true,
-                is_checked => ($search.my_changes_filter_param === "YesNo::YES"|enum)
+        {
+            $search_filters.my_changes_filter = [
+                id => "my_changes_filter",
+                type => "input",
+                category => "secondary",
+                label => __("my_changes_filter"),
+                value => $search.my_changes_filter_value,
+                placeholder => __("my_changes_filter_placeholder"),
+                is_enabled => true,
+                is_hidden => false,
+                content => "HTML content",
+                data => [
+                    name_from => "my_changes_filter_from",
+                    value_from => $search.my_changes_filter_from,
+                    label_from => __("my_changes_filter_from"),
+                    name_to => "my_changes_filter_to",
+                    value_to => $search.my_changes_filter_to,
+                    label_to => __("my_changes_filter_to")
+                ],
+                nested_data => [
+                    my_changes_filter_param => [
+                        key => "my_changes_filter_param",
+                        label => __("my_changes_filter_param"),
+                        value => true,
+                        is_checked => ($search.my_changes_filter_param === "YesNo::YES" | enum)
+                    ]
+                ]
             ]
-        ]
-            ]}
+        }
 
-        {* Export *}
-        {$search_filters = $search_filters scope=parent}
+        {
+            * Export *
+        } {
+            $search_filters = $search_filters scope = parent
+        }
 
 
 where:
@@ -276,6 +282,7 @@ where:
 
 Example of an array of product search filters: ``views/products/components/products_search_form.tpl``
 
+.. _SVG icons:
 
 SVG icons
 ---------
@@ -287,18 +294,19 @@ Template: ``common/icon.tpl``
 
 ::
 
-        {include_ext file="common/icon.tpl"
-        source="warning_sign"
-        tone="warning"
-        color="#f00"
-        accessibility_label="No user"
-        show_icon=$is_show_user_require_warning_icon
-        class="user-require-warning"
-        id="user_warning_icon"
-        data=[
-            "data-ca-param-1" => "value_1",
-            "data-ca-param-2" => "value_2"
-        ]
+        {
+            include_ext file = "common/icon.tpl"
+            source = "warning_sign"
+            tone = "warning"
+            color = "#f00"
+            accessibility_label = "No user"
+            show_icon = $is_show_user_require_warning_icon
+            class = "user-require-warning"
+            id = "user_warning_icon"
+            data = [
+                "data-ca-param-1" => "value_1",
+                "data-ca-param-2" => "value_2"
+            ]
         }
 
 
