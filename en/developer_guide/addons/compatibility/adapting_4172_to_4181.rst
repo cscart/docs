@@ -54,9 +54,9 @@ The **dynamic sections** ``$navigation.dynamic.sections`` have been deprecated. 
 Some gear buttons have been deprecated
 --------------------------------------
 
-#. **Gear buttons** in the right upper corner of the page have been deprecated. Use dynamic actions instead. Please note that dynamic actions can appear both as standalone buttons and as items in the dropdown menu.
+- **Gear buttons** in the right upper corner of the page have been deprecated. Use dynamic actions instead. Please note that dynamic actions can appear both as standalone buttons and as items in the dropdown menu.
 
-#. **Gear buttons** on the list of objects have been deprecated (for example, on the product list page). To perform the actions, use the `Context menu <https://docs.cs-cart.com/latest/developer_guide/core/context_menu/index.html>`_. The appearance of gear buttons on the list of products and orders has changed (hooks ``products:list_extra_links`` and `orders:list_extra_links').
+- **Gear buttons** on the list of objects have been deprecated (for example, on the product list page). To perform the actions, use the `Context menu <https://docs.cs-cart.com/latest/developer_guide/core/context_menu/index.html>`_. The appearance of gear buttons on the list of products and orders has changed (hooks ``products:list_extra_links`` and `orders:list_extra_links').
 
 ---------------------------------------------------------------------------------------------------------
 The process of extending search filters through the template on the product list page has been deprecated
@@ -65,7 +65,7 @@ The process of extending search filters through the template on the product list
 Search filters on the product list are now set using an array. Use the products:search_data hook to extend it. For example, to add a text field, use hook:
 
 
-``design/backend/templates/addons/my_changes/hooks/products/search_data.post.tpl``
+**design/backend/templates/addons/my_changes/hooks/products/search_data.post.tpl**
 ::
 
         {$search_filters.my_changes_filter = [
@@ -149,7 +149,7 @@ New hooks
 
 #. ``get_dashboard_vendor_balance_block_data`` - Описание
 
-#. * ``get_dashboard_vendor_with_sales_block_data`` - Описание
+#.  ``get_dashboard_vendor_with_sales_block_data`` - Описание
 
 #. ``get_dashboard_stores_block_data`` - Описание
 
@@ -174,7 +174,7 @@ Template: ``views/products/components/products_search_form.tpl``
 **Usage**
 
 
-design/backend/templates/addons/my_changes/hooks/products/search_data.post.tpl
+**design/backend/templates/addons/my_changes/hooks/products/search_data.post.tpl**
 
 ::
 
@@ -212,101 +212,59 @@ design/backend/templates/addons/my_changes/hooks/products/search_data.post.tpl
 
 where:
 
-**id**
 
-Type: String
+.. list-table::
+    :header-rows: 1
+    :stub-columns: 1
+    :widths: 10 10 30
 
-Search filter ID.
+    *   -   Parameter
+        -   Type
+        -   Description or values
+    *   -   id
+        -   String
+        -   Search filter ID.
+    *   -   type
+        -   Enum
+        -   | *Optional*. Search filter type.
+            |
+            | ``input`` (default)            
+            | ``range``
+            | ``radio``
+            | ``checkbox``
+            | ``dropdown``
+            | ``popup``
+    *   -   category
+        -   Enum
+        -   | *Optional*. Display the search filter in the **Add filter** menu or display it always.
+            |
+            | ``secondary`` (default)
+            | ``primary``
+    *   -   label
+        -   String
+        -   Search filter label.
+    *   -   value
+        -   String
+        -   *Optional*. Search filter value.
+    *   -   placeholder
+        -   String
+        -   *Optional*. Search filter placeholder.
+    *   -   is_enabled
+        -   Boolean
+        -   A boolean value to determine whether the search filter should be render or not.
+    *   -   is_hidden
+        -   Boolean
+        -   *Optional*. A boolean value to determine whether the search filter should be display or not. In this case, the render will be executed.
+    *   -   content
+        -   String
+        -   *Optional*. HTML content for ``dropdown`` and ``popup`` types, or ``hidden`` props.
+    *   -   data
+        -   String
+        -   *Optional*. Required for the ``range`` type. Use ``name_from``, ``value_from``, ``label_from``, ``name_to``, ``value_to``, or ``label_to`` props for name attribute, value, and label for "From" and "To" fields.
+    *   -   nested_data
+        -   String
+        -   *Optional*. Required for the ``checkbox`` and ``radio`` types. Use ``key``, ``label``, ``value``, and ``is_checked`` props for ID, label, value and checked attribute.
 
-
-**type**
-
-*Optional*
-
-Type: Enum: ``input`` (default) | ``range`` | ``radio`` | ``checkbox`` | ``dropdown`` | ``popup``
-
-Search filter type.
-
-
-**category**
-
-*Optional*
-
-Type: Enum: ``secondary`` (default) | ``primary``
-
-Display the search filter in the **Add filter** menu or display it always.
-
-
-**label**
-
-*Optional*
-
-Type: String
-
-Search filter label.
-
-
-**value**
-
-*Optional*
-
-Type: String
-
-Search filter value.
-
-
-**placeholder**
-
-*Optional*
-
-Type: String
-
-Search filter placeholder.
-
-
-**is_enabled**
-
-*Optional*
-
-Type: Boolean
-
-A boolean value to determine whether the search filter should be render or not.
-
-
-**is_hidden**
-
-*Optional*
-
-Type: String
-
-A boolean value to determine whether the search filter should be display or not. In this case, the render will be executed.
-
-
-**content**
-
-*Optional*
-
-Type: String
-
-HTML content for ``dropdown`` and ``popup`` types, or ``hidden`` props.
-
-
-**data**
-
-*Optional*
-
-Type: String
-
-Required for the ``range`` type. Use ``name_from``, ``value_from``, ``label_from``, ``name_to``, ``value_to``, or ``label_to`` props for name attribute, value, and label for "From" and "To" fields.
-
-
-**nested_data**
-
-*Optional*
-
-Type: String
-
-Required for the ``checkbox`` and ``radio`` types. Use ``key``, ``label``, ``value``, and ``is_checked`` props for ID, label, value and checked attribute.
 
 
 **Examples of extensions**
@@ -358,7 +316,7 @@ where:
         -   Description or values
     *   -   source
         -   String
-        -   The SVG contents (icon name (``warning_sign``), icon path (``addons/my_changes/icons/my_icon.svg``) or ``<svg>...</svg>`` source) to display in the icon (icons should fit in a 20 × 20 pixel viewBox). Use snake_case without the ``icon-`` prefix. The available icons can be viewed in the ``design/backend/template/icons/`` directory. You can connect custom icons by specifying the icon path.
+        -   The SVG contents (icon name (``warning_sign``), icon path (**addons/my_changes/icons/my_icon.svg**) or ``<svg>...</svg>`` source) to display in the icon (icons should fit in a 20 × 20 pixel viewBox). Use snake_case without the ``icon-`` prefix. The available icons can be viewed in the **design/backend/template/icons/** directory. You can connect custom icons by specifying the icon path.
     *   -   tone
         -   Enum
         -   | *Optional*
@@ -401,22 +359,21 @@ where:
 
 **Deprecated parameters**
 
+.. list-table::
+    :header-rows: 1
+    :stub-columns: 1
+    :widths: 10 10 30
+    
+    *   -   Parameter
+        -   Type
+        -   Description or values
+    *   -   title
+        -   String
+        -   *Deprecated. Optional.* A hint for the icon. Now it is recommended to set the hints at a higher level. For example, to set suggestions for buttons containing such icons. For accessibility, use ``accessibility_label``.
+    *   -   icon_text
+        -   String
+        -   *Deprecated. Optional.* The text for the icon. Use ``accessibility_label`` for accessibility.
 
-**title**
-
-*Deprecated. Optional*
-
-Type: String
-
-A hint for the icon. Now it is recommended to set the hints at a higher level. For example, to set suggestions for buttons containing such icons. For accessibility, use `accessibility_label'.
-
-**icon_text**
-
-*Deprecated. Optional*
-
-Type: String
-
-The text for the icon. Use ``accessibility_label`` for accessibility.
 
 
 **Using custom icons**
@@ -430,9 +387,9 @@ To display a custom icon, pass the path of the SVG icon to the ``source`` parame
 
 where:
 
+**design/backend/templates/addons/my_changes/icons/my_icon.svg**
 ::
 
-  design/backend/templates/addons/my_changes/icons/my_icon.svg
   <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h20v20h-20z"/></svg>
 
 
@@ -442,33 +399,33 @@ SVG icons should fit in a 20x20 pixel viewBox.
 New hooks
 ---------
 
-* ``index:head``
-* ``menu:top_bar_right``
+#. ``index:head``
+#. ``menu:top_bar_right``
 
 -------------
 Deleted hooks
 -------------
 
-* ``index:analytics_data``: use ``dashboard/blocks`` schema instead.
+#. ``index:analytics_data``: use ``dashboard/blocks`` schema instead.
 
 ----------------
 Deprecated hooks
 ----------------
 
-* ``products:action_buttons``: use ``products:search_data`` instead.
-* ``products:simple_search``: use ``products:search_data`` instead.
-* ``companies:products_advanced_search``: use ``products:search_data`` instead.
-* ``products:search_form``: use ``products:search_data`` instead.
-* ``products:search_in_orders``: use ``products:search_data`` instead.
-* ``products:advanced_search``: use ``products:search_data`` instead.
-* ``products:select_search``: use ``products:sort_by_content`` instead.
+#.  ``products:action_buttons``: use ``products:search_data`` instead.
+#.  ``products:simple_search``: use ``products:search_data`` instead.
+#.  ``companies:products_advanced_search``: use ``products:search_data`` instead.
+#.  ``products:search_form``: use ``products:search_data`` instead.
+#.  ``products:search_in_orders``: use ``products:search_data`` instead.
+#.  ``products:advanced_search``: use ``products:search_data`` instead.
+#.  ``products:select_search``: use ``products:sort_by_content`` instead.
 
 --------------------------
 Deleted template variables
 --------------------------
 
-* addons ``vendor_data_premoderation``: ``vendor_data_premoderation``
-* addons ``vendor_plans``: ``plan_usage`` and ``plan_data``
+#.  addons ``vendor_data_premoderation``: ``vendor_data_premoderation``
+#.  addons ``vendor_plans``: ``plan_usage`` and ``plan_data``
 
 ==============
 Styles changes
@@ -478,42 +435,42 @@ Styles changes
 Deleted style variables
 -----------------------
 
-* ``@wide-width``: use ``var(--content-width)`` instead.
-* ``@mainSidebarWidth``: use ``var(--sidebar-width)`` instead.
-* ``@mainSidebarThinWidth``: use ``50px`` instead.
-* ``@headerOffset``: use ``89px`` instead.
-* ``@textMutedColor``: use ``spin(desaturate(lighten(@textColor, 30%), 25%), -15%)`` instead.
-* ``@mainSidebarBackgroundColor``: use ``#333940`` instead.
-* ``@topPanelBackground``: use ``#f9f9f9`` instead.
-* ``@topPanelTextColorLight``: use ``#daedf7`` instead.
-* ``@topPanelDropdownBackgroundColor``: use ``#4c6b8a`` instead.
-* ``@topPanelDropdownTextColor``: use ``#272b31`` instead.
-* ``@brandFontColor``: use ``#fff`` instead.
-* ``@brandFontWeight``: use ``500`` instead.
-* ``@topPanelMenuBackgroundStart``: use ``@mainColor`` instead.
-* ``@topPanelMenuBackgroundEnd``: use ``@mainColor`` instead.
-* ``@topPanelMenuBackgroundHoverStart``: use ``@mainColor`` instead.
-* ``@topPanelMenuBackgroundHoverEnd``: use ``@mainColor`` instead.
-* ``@topPanelMenuBackgroundActiveStart``: use ``@mainColor`` instead.
-* ``@topPanelMenuBackgroundActiveEnd``: use ``@mainColor`` instead.
-* ``@topPanelMenuBackgroundDisabled``: use ``@gray`` instead.
-* ``@topPanelMenuCaret``: use ``#fff`` instead.
-* ``@topPanelMenuDividerLeft``: use ``transparent`` instead.
-* ``@topPanelMenuDividerRight``: use ``transparent`` instead.
-* ``@topPanelBoxShadow``: use ``0 1px 4px rgba(0,0,0,0.1)`` instead.
-* ``@successColor``: use ``@btnSuccessBackground`` instead.
-* ``@mutedBackground``: use ``#f7f7f9`` instead.
-* ``@mutedBorder`` use ``#e1e1e8`` instead.
-* ``@btnPrimaryText``: use ``#daedf7`` instead.
-* ``@btnPrimaryBackgroundBorder``: use ``@btnPrimaryBackground`` instead.
-* ``@successButton``: use ``@btnSuccessBackground`` instead.
-* ``@textButtonColor``: use ``@btnPrimaryBackground`` instead.
-* ``@textButtonCaretColor``: use ``#1010107b`` instead.
-* ``@tabsBackgroundColor``: use ``#f4f3f3`` instead.
-* ``@tabsActiveBackgroundColor``: use ``@mainColor`` instead.
-* ``@extraIconsSprite``: use ``url(../media/images/exicons.png)`` instead.
-* ``@extraIconsSpriteWhite``: use ``url(../media/images/exicons_white.png)`` instead.
-* ``@zIndexPopup``: use ``1500`` instead.
+#. ``@wide-width``: use ``var(--content-width)`` instead.
+#. ``@mainSidebarWidth``: use ``var(--sidebar-width)`` instead.
+#. ``@mainSidebarThinWidth``: use ``50px`` instead.
+#. ``@headerOffset``: use ``89px`` instead.
+#. ``@textMutedColor``: use ``spin(desaturate(lighten(@textColor, 30%), 25%), -15%)`` instead.
+#. ``@mainSidebarBackgroundColor``: use ``#333940`` instead.
+#. ``@topPanelBackground``: use ``#f9f9f9`` instead.
+#. ``@topPanelTextColorLight``: use ``#daedf7`` instead.
+#. ``@topPanelDropdownBackgroundColor``: use ``#4c6b8a`` instead.
+#. ``@topPanelDropdownTextColor``: use ``#272b31`` instead.
+#. ``@brandFontColor``: use ``#fff`` instead.
+#. ``@brandFontWeight``: use ``500`` instead.
+#. ``@topPanelMenuBackgroundStart``: use ``@mainColor`` instead.
+#. ``@topPanelMenuBackgroundEnd``: use ``@mainColor`` instead.
+#. ``@topPanelMenuBackgroundHoverStart``: use ``@mainColor`` instead.
+#. ``@topPanelMenuBackgroundHoverEnd``: use ``@mainColor`` instead.
+#. ``@topPanelMenuBackgroundActiveStart``: use ``@mainColor`` instead.
+#. ``@topPanelMenuBackgroundActiveEnd``: use ``@mainColor`` instead.
+#. ``@topPanelMenuBackgroundDisabled``: use ``@gray`` instead.
+#. ``@topPanelMenuCaret``: use ``#fff`` instead.
+#. ``@topPanelMenuDividerLeft``: use ``transparent`` instead.
+#. ``@topPanelMenuDividerRight``: use ``transparent`` instead.
+#. ``@topPanelBoxShadow``: use ``0 1px 4px rgba(0,0,0,0.1)`` instead.
+#. ``@successColor``: use ``@btnSuccessBackground`` instead.
+#. ``@mutedBackground``: use ``#f7f7f9`` instead.
+#. ``@mutedBorder`` use ``#e1e1e8`` instead.
+#. ``@btnPrimaryText``: use ``#daedf7`` instead.
+#. ``@btnPrimaryBackgroundBorder``: use ``@btnPrimaryBackground`` instead.
+#. ``@successButton``: use ``@btnSuccessBackground`` instead.
+#. ``@textButtonColor``: use ``@btnPrimaryBackground`` instead.
+#. ``@textButtonCaretColor``: use ``#1010107b`` instead.
+#. ``@tabsBackgroundColor``: use ``#f4f3f3`` instead.
+#. ``@tabsActiveBackgroundColor``: use ``@mainColor`` instead.
+#. ``@extraIconsSprite``: use ``url(../media/images/exicons.png)`` instead.
+#. ``@extraIconsSpriteWhite``: use ``url(../media/images/exicons_white.png)`` instead.
+#. ``@zIndexPopup``: use ``1500`` instead.
 
 ------------------
 JavaScript changes
@@ -522,5 +479,5 @@ JavaScript changes
 Deleted triggers
 ----------------
 
-* ``ce.notifications_center.mobile_enabled``
-* ``ce.notifications_center.notifications_mark_reload``
+#. ``ce.notifications_center.mobile_enabled``
+#. ``ce.notifications_center.notifications_mark_reload``
