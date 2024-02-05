@@ -24,7 +24,23 @@ Dynamic actions requirements:
 Example
 -------
 
-[ПРИМЕР]
+**app/addons/my_changes/controllers/backend/products.post.php**
+::
+
+    <?php
+
+    use Tygh\ Registry;
+
+    defined('BOOTSTRAP') or die('Access denied');
+
+    if ($mode === 'manage') {
+        Registry::set('navigation.dynamic.actions', [
+            'my_changes.test_button' => [
+                'href' => 'categories.manage',
+                'text' => __('my_changes.view_my_changes'),
+            ]
+        ]);
+    }
 
 --------------------------------------------------
 The display of the top and central menu is updated
@@ -58,9 +74,9 @@ Some gear buttons have been deprecated
 
 - **Gear buttons** on the list of objects have been deprecated (for example, on the product list page). To perform the actions, use the `Context menu <https://docs.cs-cart.com/latest/developer_guide/core/context_menu/index.html>`_. The appearance of gear buttons on the list of products and orders has changed (hooks ``products:list_extra_links`` and ``orders:list_extra_links``).
 
----------------------------------------------------------------------------------------------------------
-The process of extending search filters through the template on the product list page has been deprecated
----------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------
+Search filter extension through product list page template deprecated
+---------------------------------------------------------------------
 
 Search filters on the product list are now set using an array. Use the ``products:search_data`` hook to extend it. For example, to add a text field, use hook:
 
@@ -84,6 +100,28 @@ Hooks ``products:simple_search``, ``companies:products_advanced_search``, ``prod
 
 The example of connecting search filters can be found in the :ref:`Components updated` section. 
 
+--------------
+Saved searches
+--------------
+
+To display saved searches, use the ``saved_search`` parameter. An example of saved searches for a product list page:
+
+**design/backend/templates/views/products/manage.tpl**
+::
+    {
+        $search_form_dispatch = $dispatch |
+        default: "products.manage"
+    } {
+        $saved_search = [
+            dispatch => $search_form_dispatch,
+            view_type => "products"
+        ]
+        } {
+        include file = "common/mainbox.tpl"
+            ...
+            saved_search = $saved_search
+    }
+
 -------------------------------------------------------------------------------
 Extending Dashboard analytics blocks through template hooks has been deprecated
 -------------------------------------------------------------------------------
@@ -93,13 +131,56 @@ Now extending Dashboard analytics blocks should be done through a schema.
 Example
 -------
 
-[[Нужен пример использования от backend-разработчика. Добавить описания хуков в: Backend. Hook changes. New hooks]]
+**app/addons/my_changes/schemas/dashboard/blocks.post.php**
+::
+    <?php
+
+    use Tygh\ Enum\ DashboardSections;
+
+    defined('BOOTSTRAP') or die('Access denied');
+
+    $schema[DashboardSections::TERTIARY]['my_changes'] = [
+    'id' => 'my_changes',
+    'title' => __('my_changes.dashboard.my_changes'),
+    'position' => 100,
+    'dispatch' => 'products.manage',
+    'content_data_function' => 'fn_my_changes_get_dashboard_block_data'
+    ];
+
+    return $schema;
+
+**app/addons/my_changes/func.php**
+::
+    <?php
+
+    if (!defined('BOOTSTRAP')) {
+    die('Access denied');
+    }
+
+    function fn_my_changes_get_dashboard_block_data() {
+        $content_data = [
+            'id' => 'my_changes',
+            'title' => __('my_changes.dashboard.title'),
+            'title_button' => [
+                'href' => 'products.manage',
+                'name' => __('my_changes.dashboard.title_button'),
+            ],
+            'number' => 1234,
+        ];
+    
+        return $content_data;
+    }
+
+See the full list of available parameters in Template changes. Components updated. 2. Analytics card for Dashboard.
+
+You can expand the content of existing blocks using the ``get_dashboard_XXX`` hooks. Refer to the :ref:`New hooks` section for a list of all hooks and their descriptions.
+
 
 --------------------------------
 Setup wizard has been deprecated
 --------------------------------
 
-The **Setup wizard** has been deprecated. Use the **Settings** tab of your add-on instead. `Learn more about scheme 3.0 structure. <https://docs.cs-cart.com/latest/developer_guide/addons/scheme/scheme3.0_structure.html>`__
+The **Setup wizard** has been deprecated. Use the **Settings** tab of your add-on instead. `Learn more about scheme 3.0 structure <https://docs.cs-cart.com/latest/developer_guide/addons/scheme/scheme3.0_structure.html>`__.
 
 -----------------------------
 Icon display has been updated
@@ -133,29 +214,31 @@ Deleted functions
 Hook Changes
 ============
 
+.. _New hooks:
+
 ---------
 New hooks
 ---------
 
-#. ``get_dashboard_block_data`` - Описание
+#. ``fn_set_hook('get_dashboard_block_data', $content_data, $this);`` - Executes after getting dashboard block data, allows editing it.
 
-#. ``get_dashboard_sales_block_data`` - Описание
+#. ``fn_set_hook('get_dashboard_sales_block_data', $content_data, $this);`` - Executes after filling content information for block with sales statistics, allows editing it.
 
-#. ``get_dashboard_products_block_data`` - Описание
+#. ``fn_set_hook('get_dashboard_products_block_data', $content_data, $this);`` - Executes after filling content information for block with products statistics, allows editing it.
 
-#. ``get_dashboard_orders_block_data`` - Описание
+#. ``fn_set_hook('get_dashboard_orders_block_data', $content_data, $this);`` - Executes after filling content information for block with orders statistics, allows editing it.
 
-#. ``get_dashboard_orders_by_statuses_block_data`` - Описание
+#. ``fn_set_hook('get_dashboard_orders_by_statuses_block_data', $content_data, $this);`` - Executes after filling content information for block with orders by statuses statistics, allows editing it.
 
-#. ``get_dashboard_vendor_balance_block_data`` - Описание
+#. ``fn_set_hook('get_dashboard_vendor_balance_block_data', $content_data, $this);`` - Executes after filling content information for block with vendor balance, allows editing it.
 
-#.  ``get_dashboard_vendor_with_sales_block_data`` - Описание
+#.  ``fn_set_hook('get_dashboard_vendor_with_sales_block_data', $content_data, $this);`` - Executes after filling content information for block with vendor activity statistics, allows editing it.
 
-#. ``get_dashboard_stores_block_data`` - Описание
+#. ``fn_set_hook('get_dashboard_stores_block_data', $content_data, $this);`` - Executes after filling content information for block with companies or vendors statistics, allows editing it.
 
-#. ``get_dashboard_customers_block_data`` - Описание
+#. ``fn_set_hook('get_dashboard_customers_block_data', $content_data, $this);`` - Executes after filling content information for block with users statistics, allows editing it.
 
-#. ``get_dashboard_logs_block_data`` - Описание
+#. ``fn_set_hook('get_dashboard_logs_block_data', $content_data, $this);`` - Executes after filling content information for block with last logs, allows editing it.
 
 ================
 Template changes
