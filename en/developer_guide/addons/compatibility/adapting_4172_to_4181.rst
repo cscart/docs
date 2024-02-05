@@ -220,25 +220,35 @@ Hook Changes
 New hooks
 ---------
 
-#. ``fn_set_hook('get_dashboard_block_data', $content_data, $this);`` - Executes after getting dashboard block data, allows editing it.
+#. Executes after getting dashboard block data, allows editing it::
+        ``fn_set_hook('get_dashboard_block_data', $content_data, $this);`` 
 
-#. ``fn_set_hook('get_dashboard_sales_block_data', $content_data, $this);`` - Executes after filling content information for block with sales statistics, allows editing it.
+#. Executes after filling content information for block with sales statistics, allows editing it::
+        ``fn_set_hook('get_dashboard_sales_block_data', $content_data, $this);`` 
 
-#. ``fn_set_hook('get_dashboard_products_block_data', $content_data, $this);`` - Executes after filling content information for block with products statistics, allows editing it.
+#. Executes after filling content information for block with products statistics, allows editing it::
+        ``fn_set_hook('get_dashboard_products_block_data', $content_data, $this);`` 
 
-#. ``fn_set_hook('get_dashboard_orders_block_data', $content_data, $this);`` - Executes after filling content information for block with orders statistics, allows editing it.
+#. Executes after filling content information for block with orders statistics, allows editing it::
+        ``fn_set_hook('get_dashboard_orders_block_data', $content_data, $this);``
 
-#. ``fn_set_hook('get_dashboard_orders_by_statuses_block_data', $content_data, $this);`` - Executes after filling content information for block with orders by statuses statistics, allows editing it.
+#. Executes after filling content information for block with orders by statuses statistics, allows editing it::
+        ``fn_set_hook('get_dashboard_orders_by_statuses_block_data', $content_data, $this);`` 
 
-#. ``fn_set_hook('get_dashboard_vendor_balance_block_data', $content_data, $this);`` - Executes after filling content information for block with vendor balance, allows editing it.
+#. Executes after filling content information for block with vendor balance, allows editing it::
+        ``fn_set_hook('get_dashboard_vendor_balance_block_data', $content_data, $this);`` 
 
-#.  ``fn_set_hook('get_dashboard_vendor_with_sales_block_data', $content_data, $this);`` - Executes after filling content information for block with vendor activity statistics, allows editing it.
+#.  Executes after filling content information for block with vendor activity statistics, allows editing it::
+        ``fn_set_hook('get_dashboard_vendor_with_sales_block_data', $content_data, $this);`` 
 
-#. ``fn_set_hook('get_dashboard_stores_block_data', $content_data, $this);`` - Executes after filling content information for block with companies or vendors statistics, allows editing it.
+#. Executes after filling content information for block with companies or vendors statistics, allows editing it::
+        ``fn_set_hook('get_dashboard_stores_block_data', $content_data, $this);`` 
 
-#. ``fn_set_hook('get_dashboard_customers_block_data', $content_data, $this);`` - Executes after filling content information for block with users statistics, allows editing it.
+#. Executes after filling content information for block with users statistics, allows editing it::
+        ``fn_set_hook('get_dashboard_customers_block_data', $content_data, $this);`` 
 
-#. ``fn_set_hook('get_dashboard_logs_block_data', $content_data, $this);`` - Executes after filling content information for block with last logs, allows editing it.
+#. Executes after filling content information for block with last logs, allows editing it::
+        ``fn_set_hook('get_dashboard_logs_block_data', $content_data, $this);`` 
 
 ================
 Template changes
