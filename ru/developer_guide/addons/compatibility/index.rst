@@ -6,8 +6,7 @@
     :maxdepth: 1
     :glob:
 
-    adapting_4162_to_4171
-    adapting_4171_to_4172
+    adapting_4172_to_4181
     
 .. toctree::
     :maxdepth: 2
@@ -44,3 +43,5 @@
     adapting_4151_to_4152
     adapting_4152_to_4161
     adapting_4161_to_4162
+    adapting_4162_to_4171
+    adapting_4171_to_4172
