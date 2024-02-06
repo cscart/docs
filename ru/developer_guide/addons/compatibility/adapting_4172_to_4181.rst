@@ -44,6 +44,8 @@
         ]);
     }
 
+Полный список доступных параметров см. :ref:`Динамические действия в шапке сайта <dynamic-actions-in-site>`.
+
 ---------------------------------------------------
 Изменилось отображение верхнего и центрального меню
 ---------------------------------------------------
@@ -136,11 +138,11 @@
     defined('BOOTSTRAP') or die('Access denied');
 
     $schema[DashboardSections::TERTIARY]['my_changes'] = [
-    'id' => 'my_changes',
-    'title' => __('my_changes.dashboard.my_changes'),
-    'position' => 100,
-    'dispatch' => 'products.manage',
-    'content_data_function' => 'fn_my_changes_get_dashboard_block_data'
+        'id' => 'my_changes',
+        'title' => __('my_changes.dashboard.my_changes'),
+        'position' => 100,
+        'dispatch' => 'products.manage',
+        'content_data_function' => 'fn_my_changes_get_dashboard_block_data'
     ];
 
     return $schema;
@@ -150,7 +152,7 @@
     <?php
 
     if (!defined('BOOTSTRAP')) {
-    die('Access denied');
+        die('Access denied');
     }
 
     function fn_my_changes_get_dashboard_block_data() {
@@ -166,6 +168,11 @@
     
         return $content_data;
     }
+
+    
+Полный список доступных параметров см. раздел  :ref:`Карточка аналитики для Dashboard <analytics-card-for-dashboard>`. 
+
+Расширять содержимое существующих блоков можно с помощью `get_dashboard_XXX` хуков. Список всех хуков и их описание см. в разделе **Backend. Hook changes. New hooks**.
 
 -------------------------------
 Setup wizard признан устаревшим
@@ -211,37 +218,55 @@ Setup wizard признан устаревшим
 
 #. Выполняется после получения данных блока панели управления, позволяет их редактировать::
 
-        ``fn_set_hook('get_dashboard_block_data', $content_data, $this);``  
+        fn_set_hook('get_dashboard_block_data', $content_data, $this);
 
 #. Выполняется после заполнения информации о содержимом блока со статистикой продаж, позволяет ее редактировать::
 
-        ``fn_set_hook('get_dashboard_sales_block_data', $content_data, $this);`` 
+        fn_set_hook('get_dashboard_sales_block_data', $content_data, $this);
 
 #. Выполняется после заполнения информации о содержимом блока со статистикой продуктов, позволяет ее редактировать::
 
-        ``fn_set_hook('get_dashboard_products_block_data', $content_data, $this);`` 
+        fn_set_hook('get_dashboard_products_block_data', $content_data, $this);
 
 #. Выполняется после заполнения информации о содержимом блока со статистикой заказов, позволяет ее редактировать::
 
-        ``fn_set_hook('get_dashboard_orders_block_data', $content_data, $this);``  
+        fn_set_hook('get_dashboard_orders_block_data', $content_data, $this);
 
 #. Выполняется после заполнения информации о содержимом блока со статистикой заказов по статусам, позволяет ее редактировать::
-        ``fn_set_hook('get_dashboard_orders_by_statuses_block_data', $content_data, $this);`` 
+        fn_set_hook('get_dashboard_orders_by_statuses_block_data', $content_data, $this);
 
 #. Выполняется после заполнения информации о содержимом блока с балансом поставщика, позволяет ее редактировать::
-        ``fn_set_hook('get_dashboard_vendor_balance_block_data', $content_data, $this);`` 
+        fn_set_hook('get_dashboard_vendor_balance_block_data', $content_data, $this); 
 
 #. Выполняется после заполнения информации о содержимом блока со статистикой активности поставщика, позволяет ее редактировать::
-        ``fn_set_hook('get_dashboard_vendor_with_sales_block_data', $content_data, $this);`` 
+        fn_set_hook('get_dashboard_vendor_with_sales_block_data', $content_data, $this); 
 
 #. Выполняется после заполнения информации о содержимом блока со статистикой компаний или поставщиков, позволяет ее редактировать::
-        ``fn_set_hook('get_dashboard_stores_block_data', $content_data, $this);`` 
+        fn_set_hook('get_dashboard_stores_block_data', $content_data, $this); 
 
 #. Выполняется после заполнения информации о содержимом блока со статистикой пользователей, позволяет ее редактировать::
-        ``fn_set_hook('get_dashboard_customers_block_data', $content_data, $this);`` 
+        fn_set_hook('get_dashboard_customers_block_data', $content_data, $this); 
 
 #. Выполняется после заполнения информации о содержимом блока с последними записями, позволяет ее редактировать::
-        ``fn_set_hook('get_dashboard_logs_block_data', $content_data, $this);`` 
+        fn_set_hook('get_dashboard_logs_block_data', $content_data, $this);
+        
+---------------
+Измененные хуки
+---------------
+
+#. ::
+
+       // Было:
+       fn_set_hook('create_order_details', $order_id, $cart, $order_details, $extra);
+       // Стало:
+       fn_set_hook('create_order_details', $order_id, $cart, $order_details, $extra, $k, $v);
+
+#. ::
+
+       // Было:
+       fn_set_hook('add_to_cart', $cart, $product_id, $_id);
+       // Стало:
+       fn_set_hook('add_to_cart', $cart, $product_id, $_id, $_data);
 
 ====================
 Изменения в шаблонах
@@ -250,6 +275,8 @@ Setup wizard признан устаревшим
 ----------------
 Новые компоненты
 ----------------
+
+.. _dynamic-actions-in-site:
 
 Динамические действия в шапке сайта
 -----------------------------------
@@ -418,7 +445,192 @@ Setup wizard признан устаревшим
 - dropdown: ``addons/ebay/hooks/products/search_data.post.tpl``
 - popup ``addons/product_variations/hooks/products/search_data.post.tpl``
 
-Пример массива поисковых фильтров товаров: ``views/products/components/products_search_form.tpl``
+Пример массива поисковых фильтров товаров: ``views/products/components/products_search_form.tpl``.
+
+
+**Контекстный поиск**
+
+На странице списка объектов в дополнению к поисковым фильтрам можно отобразить контекстный поиск рядом с saved search. Чтобы отобразить контекстный поиск, подключите в своем шаблоне ``context_search.tpl`` и передайте его в виде параметра ``context_search`` при подключении ``common/mainbox.tpl``. Например:
+
+
+.. code-block:: smarty
+
+    {$my_changes_search_form_prefix = ""}
+    {$search_form_dispatch = $dispatch|default:"my_changes.manage"}
+
+    {capture name="context_search"}
+        {include file="components/search_filters/context_search.tpl"
+            name="my_changes_query"
+            id="my_changes_id"
+            value=$search.my_changes_query
+            form_id="`$my_changes_search_form_prefix`search_form"
+            placeholder=__("search_my_changes")
+            dispatch=$search_form_dispatch
+        }
+    {/capture}
+
+    {include file="common/mainbox.tpl"
+        ...
+        context_search=$smarty.capture.context_search
+    }
+
+
+
+.. _analytics-card-for-dashboard:
+
+Карточка аналитики для Dashboard
+--------------------------------
+
+Template: `views/index/components/analytics_section/analytics_card/analytics_card.tpl`
+
+**Использование**
+
+Использование карточки аналитики для Dashboard описано в см. **Core changes. 6. Расширение блоков аналитики Dashboard через хуки шаблонов больше не поддерживается**. Пример использования:
+
+**app/addons/my_changes/schemas/dashboard/blocks.post.php**
+
+.. code-block:: php
+
+    <?php
+
+    use Tygh\Enum\DashboardSections;
+
+    defined('BOOTSTRAP') or die('Access denied');
+
+    $schema[DashboardSections::TERTIARY]['my_changes'] = [
+        'id' => 'my_changes',
+        'title' => __('my_changes.dashboard.my_changes'),
+        'position' => 100,
+        'dispatch' => 'products.manage',
+        'content_data_function' => 'fn_my_changes_get_dashboard_block_data'
+    ];
+
+    return $schema;
+
+**app/addons/my_changes/func.php**
+
+.. code-block:: php
+
+    <?php
+
+    if (!defined('BOOTSTRAP')) { die('Access denied'); }
+
+    function fn_my_changes_get_dashboard_block_data()
+    {
+        $content_data = [
+            'id' => 'my_changes',
+            'preheader' => __('my_changes.dashboard.preheader'),
+            'is_selected_date' => false,
+            'title' => __('my_changes.dashboard.title'),
+            'title_button' => [
+                'href' => 'products.manage',
+                'name' => __('my_changes.dashboard.title_button'),
+            ],
+            'number' => 1234,
+            'number_dynamics' => 15,
+            'use_price_for_number' => false,
+            'content' => [
+                '<strong>Hello</strong>',
+                '<em>world!</em>',
+            ],
+            'content_tpl' => [
+                'addons/my_changes/views/my_changes/components/my_changes_component.tpl'
+            ],
+            'buttons' => [
+                'button_1' => [
+                    'name' => __('my_changes.dashboard.button_1'),
+                    'href' => 'products.manage',
+                    'class' => 'my-changes-button-1',
+                ],
+            ],
+            'graph' => [
+                'content' => [
+                    [
+                        'date' => '2024, (0-0), 30',
+                        'prev' => 150,
+                        'cur' => 200
+                    ],
+                    [
+                        'date' => '2024, (0-0), 31',
+                        'prev' => 160,
+                        'cur' => 300,
+                    ],
+                ]
+            ],
+            'bar_chart' => [
+                'id' => 'bar_chart',
+                'title' => __('my_changes.dashboard.bar_chart'),
+                'content' => [
+                    [
+                        'id' => 'bar_1',
+                        'name' => __('products'),
+                        'href' => 'products.manage',
+                        'type' => 'primary',
+                        'value' => 10,
+                        'is_price' => false,
+                        'total' => 100,
+                        'ratio' => 10,
+                    ],
+                    [
+                        'id' => 'bar_1',
+                        'name' => __('categories'),
+                        'href' => 'categories.manage',
+                        'value' => 70,
+                        'is_price' => false,
+                        'total' => 100,
+                        'ratio' => 70,
+                    ],
+                ]
+            ],
+            'resource_list' => [
+                'title' => __('my_changes.dashboard.resource_list'),
+                'content' => [
+                    [
+                        'id' => 'resource_list',
+                        'href' => 'products.manage',
+                        'name' => __("my_changes.dashboard.resource_list_name"),
+                        'label_text' => __("my_changes.dashboard.resource_list_label_text"),
+                        'label_class' => 'my-changes-resource-list',
+                        'value_href' => 'products.manage',
+                        'value' => '100',
+                        'use_price_for_value' => false,
+                        'description' => __("my_changes.dashboard.resource_list_description"),
+                        'description_href' => 'products.manage',
+                        'small_text' => __("my_changes.dashboard.resource_list_small_text"),
+                        // 'image' => [],
+                    ]
+                ]
+            ],
+            'resource_list_tabs' => [
+                'id' => 'resource_list_tabs',
+                'content' => [
+                    'resource_list_tabs_1' => [
+                        'id' => 'resource_list_tabs_1',
+                        'title' => __('resource_list_tabs_1'),
+                        'content' => [
+                            // Same thing as $content_data['resource_list']['content']
+                        ]
+                    ],
+                ]
+            ],
+            'scripts' => [
+                'js/addons/my_changes/func.js'
+            ],
+        ];
+
+        return $content_data;
+    }
+
+**design/backend/templates/addons/my_changes/views/my_changes/components/my_changes_component.tpl**
+
+
+<h3>My changes test</h3>
+
+**js/addons/my_changes/func.js**
+
+::
+    alert('my changes test');
+
 
 .. _SVG-icons:
 
@@ -540,6 +752,23 @@ SVG-иконки
 
 Иконка должна уместиться в 20 × 20 pixel viewBox.
 
+
+Выбор объектов
+--------------
+
+Шаблон: **common/select_object.tpl**
+
+Значение ``accordion`` параметра ``style`` было удалено. Используйте один из следующих параметров: ``dropdown``, ``graphic`` или ``field``.
+
+
+Вкладки
+-------
+
+Шаблон: **common/tabsbox.tpl**
+
+Появилась возможность отображать tabs navigation в top navigation. Для этого необходимо добавить параметр ``show_tabs_navigation=false`` при подключении шаблона ``common/tabsbox.tpl``. И передать параметр ``tabs_navigation=$tabs_navigation`` при подключении шаблона ``common/mainbox.tpl``.
+
+
 ----------
 Новые хуки
 ----------
@@ -569,6 +798,8 @@ SVG-иконки
 Удалены переменные шаблонов
 ---------------------------
 
+#.  ``enable_sticky_scroll``
+#.  ``navigation_accordion``
 #.  Модули ``vendor_data_premoderation``: ``vendor_data_premoderation``.
 #.  Модули ``vendor_plans``: ``plan_usage`` и ``plan_data``.
 
@@ -620,6 +851,12 @@ SVG-иконки
 #. Вместо ``@extraIconsSpriteWhite`` используйте  ``url(../media/images/exicons_white.png)``.
 #. Вместо ``@zIndexPopup``  используйте ``1500``.
 
+
+Удаленные CSS-классы
+--------------------
+
+#. Вместо ``btn-text`` используйте ``btn-link``.
+
 --------------------
 Изменения JavaScript 
 --------------------
@@ -629,4 +866,4 @@ SVG-иконки
 
 #. ``ce.notifications_center.mobile_enabled``
 #. ``ce.notifications_center.notifications_mark_reload``
-
+#. ``ce.mobile_menu.dropdownMenu_created``

@@ -10,6 +10,8 @@ Adapt Your Add-ons and Themes to CS-Cart 4.18.1
 Core Changes
 ============
 
+.. _display-of-dynamic-actions-updated:
+
 -----------------------------------------
 The display of dynamic actions is updated
 -----------------------------------------
@@ -41,6 +43,9 @@ Example
             ]
         ]);
     }
+    
+
+Full list of available options is in the :ref:`Dynamic actions in the header of the site` section.
 
 --------------------------------------------------
 The display of the top and central menu is updated
@@ -56,7 +61,7 @@ The display of the top and central menu is updated
 
 - The **Design** menu ``$navigation.static.top.design`` is now marked as deprecated. Extend the **Website** menu ``$navigation.static.central.website`` instead.
 
-- Instead of the **top menu**, the **top bar** ``top_bar.tpl`` is now displayed. You can extend it using the ``menu template hook:top_bar_right``.
+- Instead of the **top menu**, the **top bar** ``top_bar.tpl`` is now displayed. You can extend it using the ``menu:top_bar_right``.
 
 - The extension of the **central menu** ``$navigation.static.central`` has been updated. The central menu is now located in the sidebar. To expand it, use ``$navigation.static.central``. The ``subitems`` submenu has been deprecated. Use dynamic actions instead. Use short titles of menu items (up to ~15 characters). The descriptions of the menu items are no longer displayed.
 
@@ -108,6 +113,7 @@ To display saved searches, use the ``saved_search`` parameter. An example of sav
 
 **design/backend/templates/views/products/manage.tpl**
 ::
+
     {
         $search_form_dispatch = $dispatch |
         default: "products.manage"
@@ -116,11 +122,12 @@ To display saved searches, use the ``saved_search`` parameter. An example of sav
             dispatch => $search_form_dispatch,
             view_type => "products"
         ]
-        } {
+    } {
         include file = "common/mainbox.tpl"
             ...
             saved_search = $saved_search
     }
+
 
 -------------------------------------------------------------------------------
 Extending Dashboard analytics blocks through template hooks has been deprecated
@@ -140,11 +147,11 @@ Example
     defined('BOOTSTRAP') or die('Access denied');
 
     $schema[DashboardSections::TERTIARY]['my_changes'] = [
-    'id' => 'my_changes',
-    'title' => __('my_changes.dashboard.my_changes'),
-    'position' => 100,
-    'dispatch' => 'products.manage',
-    'content_data_function' => 'fn_my_changes_get_dashboard_block_data'
+        'id' => 'my_changes',
+        'title' => __('my_changes.dashboard.my_changes'),
+        'position' => 100,
+        'dispatch' => 'products.manage',
+        'content_data_function' => 'fn_my_changes_get_dashboard_block_data'
     ];
 
     return $schema;
@@ -154,7 +161,7 @@ Example
     <?php
 
     if (!defined('BOOTSTRAP')) {
-    die('Access denied');
+        die('Access denied');
     }
 
     function fn_my_changes_get_dashboard_block_data() {
@@ -171,7 +178,7 @@ Example
         return $content_data;
     }
 
-See the full list of available parameters in Template changes. Components updated. 2. Analytics card for Dashboard.
+See the full list of available parameters in the :ref:`Analytics card for Dashboard` section.
 
 You can expand the content of existing blocks using the ``get_dashboard_XXX`` hooks. Refer to the :ref:`New hooks` section for a list of all hooks and their descriptions.
 
@@ -222,43 +229,65 @@ New hooks
 
 #. Executes after getting dashboard block data, allows editing it::
 
-        ``fn_set_hook('get_dashboard_block_data', $content_data, $this);`` 
+        fn_set_hook('get_dashboard_block_data', $content_data, $this);
 
 #. Executes after filling content information for block with sales statistics, allows editing it::
 
-        ``fn_set_hook('get_dashboard_sales_block_data', $content_data, $this);`` 
+        fn_set_hook('get_dashboard_sales_block_data', $content_data, $this);
 
 #. Executes after filling content information for block with products statistics, allows editing it::
 
-        ``fn_set_hook('get_dashboard_products_block_data', $content_data, $this);`` 
+        fn_set_hook('get_dashboard_products_block_data', $content_data, $this);
 
 #. Executes after filling content information for block with orders statistics, allows editing it::
 
-        ``fn_set_hook('get_dashboard_orders_block_data', $content_data, $this);``
+        fn_set_hook('get_dashboard_orders_block_data', $content_data, $this);
 
 #. Executes after filling content information for block with orders by statuses statistics, allows editing it::
 
-        ``fn_set_hook('get_dashboard_orders_by_statuses_block_data', $content_data, $this);`` 
+        fn_set_hook('get_dashboard_orders_by_statuses_block_data', $content_data, $this);
 
 #. Executes after filling content information for block with vendor balance, allows editing it::
 
-        ``fn_set_hook('get_dashboard_vendor_balance_block_data', $content_data, $this);`` 
+        fn_set_hook('get_dashboard_vendor_balance_block_data', $content_data, $this);
 
 #.  Executes after filling content information for block with vendor activity statistics, allows editing it::
 
-        ``fn_set_hook('get_dashboard_vendor_with_sales_block_data', $content_data, $this);`` 
+        fn_set_hook('get_dashboard_vendor_with_sales_block_data', $content_data, $this);
 
 #. Executes after filling content information for block with companies or vendors statistics, allows editing it::
 
-        ``fn_set_hook('get_dashboard_stores_block_data', $content_data, $this);`` 
+        fn_set_hook('get_dashboard_stores_block_data', $content_data, $this);
 
 #. Executes after filling content information for block with users statistics, allows editing it::
 
-        ``fn_set_hook('get_dashboard_customers_block_data', $content_data, $this);`` 
+        fn_set_hook('get_dashboard_customers_block_data', $content_data, $this);
 
 #. Executes after filling content information for block with last logs, allows editing it::
 
-        ``fn_set_hook('get_dashboard_logs_block_data', $content_data, $this);`` 
+        fn_set_hook('get_dashboard_logs_block_data', $content_data, $this);
+    
+#. Executes when changing order status before products are recalculated::
+
+        fn_set_hook('change_order_status_pre', $order_id, $status_to, $status_from, $force_notification, $place_order, $order_info, $allow_status_update);
+
+-------------
+Changed hooks
+-------------
+
+#. ::
+
+       // Old:
+       fn_set_hook('create_order_details', $order_id, $cart, $order_details, $extra);
+       // New:
+       fn_set_hook('create_order_details', $order_id, $cart, $order_details, $extra, $k, $v);
+
+#. ::
+
+       // Old:
+       fn_set_hook('add_to_cart', $cart, $product_id, $_id);
+       // New:
+       fn_set_hook('add_to_cart', $cart, $product_id, $_id, $_data);
 
 ================
 Template changes
@@ -267,6 +296,62 @@ Template changes
 ------------------
 Components updated
 ------------------
+
+Dynamic actions in the header of the site
+-----------------------------------------
+
+Template: **design/backend/templates/components/menu/actions_menu.tpl**
+
+Dynamic actions are displayed as buttons. If there are many buttons, some of them are displayed as a dropdown menu. The properties correspond to the ``{btn}`` helper from ``buttons/helpers.tpl``, plus an additional parameter ``wrapper_class``. If a dynamic action is displayed as a button, the default type used is ``text``. Otherwise, it is ``list``. The usage of dynamic actions is described in :ref:`The display of dynamic actions is updated` section.
+
+Example of adding a button through the controller:
+
+**app/addons/my_changes/controllers/backend/products.post.php**
+
+::
+
+        <?php
+
+        use Tygh\ Registry;
+
+        defined('BOOTSTRAP') or die('Access denied');
+
+        if ($mode === 'manage') {
+            Registry::set('navigation.dynamic.actions', [
+                'my_changes.test_button' => [
+                    'href' => 'categories.manage',
+                    'text' => __('my_changes.view_my_changes'),
+                    'id' => 'my_changes_id',
+                    'class' => 'my-changes-class',
+                    'data' => [
+                        'data-ca-my-changes-param-1' => 'my_value_1',
+                        'data-ca-my-changes-param-2' => 'my_value_2',
+                    ],
+                    'wrapper_class' => 'my-changes-wrapper-class',
+                ]
+            ]);
+        }
+
+Available parameters:
+
+- ``type``
+- ``href``
+- ``text``. If the parameter is unavailable, the language variable of the array key is used.
+- ``title``
+- ``id``
+- ``class``
+- ``meta``
+- ``dispatch``
+- ``form``
+- ``method``
+- ``target``
+- ``target_id``
+- ``process``
+- ``onclick``
+- ``raw``
+- ``icon``
+- ``data``
+- ``wrapper_class``
 
 .. _Components updated:
 
@@ -383,7 +468,193 @@ where:
 - dropdown: ``addons/ebay/hooks/products/search_data.post.tpl``
 - popup ``addons/product_variations/hooks/products/search_data.post.tpl``
 
-Example of an array of product search filters: ``views/products/components/products_search_form.tpl``
+Example of an array of product search filters: ``views/products/components/products_search_form.tpl``.
+
+Context search
+--------------
+
+In the object list page, in addition to search filters, you can display contextual search next to the saved search. To display contextual search, include ``context_search.tpl`` in your template and pass it as a parameter ``context_search`` when including **common/mainbox.tpl**. 
+
+For example:
+.. code-block:: smarty
+
+    {assign var=my_changes_search_form_prefix value=""}
+    {assign var=search_form_dispatch value=$dispatch|default:"my_changes.manage"}
+    
+    {capture name="context_search"}
+        {include file="components/search_filters/context_search.tpl"
+            name="my_changes_query"
+            id="my_changes_id"
+            value=$search.my_changes_query
+            form_id="`$my_changes_search_form_prefix`search_form"
+            placeholder=__("search_my_changes")
+            dispatch=$search_form_dispatch
+        }
+    {/capture}
+    
+    {include file="common/mainbox.tpl"
+        ...
+        context_search=$smarty.capture.context_search
+    }
+
+
+.. _analytics-card-for-dashboard:
+
+Analytics Card for Dashboard
+----------------------------
+
+Template: **views/index/components/analytics_section/analytics_card/analytics_card.tpl**
+
+**Usage**
+
+The usage of the analytics card for the Dashboard is described in see **Core changes. 6. Extension of Dashboard analytics blocks through template hooks is no longer supported**. Example usage:
+
+
+**app/addons/my_changes/schemas/dashboard/blocks.post.php**
+
+.. code-block:: php
+
+    <?php
+
+    use Tygh\Enum\DashboardSections;
+
+    defined('BOOTSTRAP') or die('Access denied');
+
+    $schema[DashboardSections::TERTIARY]['my_changes'] = [
+        'id' => 'my_changes',
+        'title' => __('my_changes.dashboard.my_changes'),
+        'position' => 100,
+        'dispatch' => 'products.manage',
+        'content_data_function' => 'fn_my_changes_get_dashboard_block_data'
+        ];
+    
+    return $schema;
+
+    
+**app/addons/my_changes/func.php**
+
+.. code-block:: php
+
+<?php
+
+if (!defined('BOOTSTRAP')) { die('Access denied'); }
+
+function fn_my_changes_get_dashboard_block_data()
+{
+    $content_data = [
+        'id' => 'my_changes',
+        'preheader' => __('my_changes.dashboard.preheader'),
+        'is_selected_date' => false,
+        'title' => __('my_changes.dashboard.title'),
+        'title_button' => [
+            'href' => 'products.manage',
+            'name' => __('my_changes.dashboard.title_button'),
+        ],
+        'number' => 1234,
+        'number_dynamics' => 15,
+        'use_price_for_number' => false,
+        'content' => [
+            '<strong>Hello</strong>',
+            '<em>world!</em>',
+        ],
+        'content_tpl' => [
+            'addons/my_changes/views/my_changes/components/my_changes_component.tpl'
+        ],
+        'buttons' => [
+            'button_1' => [
+                'name' => __('my_changes.dashboard.button_1'),
+                'href' => 'products.manage',
+                'class' => 'my-changes-button-1',
+            ],
+        ],
+        'graph' => [
+            'content' => [
+                [
+                    'date' => '2024, (0-0), 30',
+                    'prev' => 150,
+                    'cur' => 200
+                ],
+                [
+                    'date' => '2024, (0-0), 31',
+                    'prev' => 160,
+                    'cur' => 300,
+                ],
+            ]
+        ],
+        'bar_chart' => [
+            'id' => 'bar_chart',
+            'title' => __('my_changes.dashboard.bar_chart'),
+            'content' => [
+                [
+                    'id' => 'bar_1',
+                    'name' => __('products'),
+                    'href' => 'products.manage',
+                    'type' => 'primary',
+                    'value' => 10,
+                    'is_price' => false,
+                    'total' => 100,
+                    'ratio' => 10,
+                ],
+                [
+                    'id' => 'bar_1',
+                    'name' => __('categories'),
+                    'href' => 'categories.manage',
+                    'value' => 70,
+                    'is_price' => false,
+                    'total' => 100,
+                    'ratio' => 70,
+                ],
+            ]
+        ],
+        'resource_list' => [
+            'title' => __('my_changes.dashboard.resource_list'),
+            'content' => [
+                [
+                    'id' => 'resource_list',
+                    'href' => 'products.manage',
+                    'name' => __("my_changes.dashboard.resource_list_name"),
+                    'label_text' => __("my_changes.dashboard.resource_list_label_text"),
+                    'label_class' => 'my-changes-resource-list',
+                    'value_href' => 'products.manage',
+                    'value' => '100',
+                    'use_price_for_value' => false,
+                    'description' => __("my_changes.dashboard.resource_list_description"),
+                    'description_href' => 'products.manage',
+                    'small_text' => __("my_changes.dashboard.resource_list_small_text"),
+                    // 'image' => [],
+                ]
+            ]
+        ],
+        'resource_list_tabs' => [
+            'id' => 'resource_list_tabs',
+            'content' => [
+                'resource_list_tabs_1' => [
+                    'id' => 'resource_list_tabs_1',
+                    'title' => __('resource_list_tabs_1'),
+                    'content' => [
+                        // Same thing as $content_data['resource_list']['content']
+                    ]
+                ],
+            ]
+        ],
+        'scripts' => [
+            'js/addons/my_changes/func.js'
+        ],
+    ];
+
+    return $content_data;
+    }
+
+**design/backend/templates/addons/my_changes/views/my_changes/components/my_changes_component.tpl**
+
+<h3>My changes test</h3>
+
+js/addons/my_changes/func.js
+
+::
+    alert('my changes test');
+
+
 
 .. _SVG icons:
 
@@ -506,6 +777,21 @@ where:
 
 SVG icons should fit in a 20x20 pixel viewBox.
 
+Object selection
+----------------
+
+Template: **common/select_object.tpl**
+
+The value of the ``style`` parameter for ``accordion`` has been removed. Please use one of the following parameters: ``dropdown``, ``graphic``, or ``field``.
+
+Tabs
+----
+
+Template: ``common/tabsbox.tpl``
+
+Now you have the option to display tabs navigation in the top navigation. To achieve this, add the parameter ``show_tabs_navigation=false`` when including the ``common/tabsbox.tpl`` template. Also, pass the parameter ``tabs_navigation=$tabs_navigation`` when including the ``common/mainbox.tpl`` template.
+
+
 ---------
 New hooks
 ---------
@@ -534,7 +820,8 @@ Deprecated hooks
 --------------------------
 Deleted template variables
 --------------------------
-
+#.  ``enable_sticky_scroll``
+#.  ``navigation_accordion``
 #.  addons ``vendor_data_premoderation``: ``vendor_data_premoderation``
 #.  addons ``vendor_plans``: ``plan_usage`` and ``plan_data``
 
@@ -585,6 +872,13 @@ Deleted style variables
 #. ``@extraIconsSpriteWhite``: use ``url(../media/images/exicons_white.png)`` instead.
 #. ``@zIndexPopup``: use ``1500`` instead.
 
+-------------------
+Deleted CSS classes
+-------------------
+
+#. ``btn-text``: use ``btn-link`` instead.
+
+
 ------------------
 JavaScript changes
 ------------------
@@ -594,3 +888,4 @@ Deleted triggers
 
 #. ``ce.notifications_center.mobile_enabled``
 #. ``ce.notifications_center.notifications_mark_reload``
+#. ``ce.mobile_menu.dropdownMenu_created``
