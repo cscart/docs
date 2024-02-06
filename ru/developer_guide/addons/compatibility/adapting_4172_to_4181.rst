@@ -76,6 +76,8 @@
 
 **Кнопки шестеренки** на списке объектов признаны устаревшими (например, на странице списка товаров). Для выполнения действий используйте `Context menu <https://www.cs-cart.ru/docs/latest/developer_guide/core/context_menu/index.html>`_. Изменился вид кнопок шестеренки на списке товаров и заказов (хуки ``products:list_extra_links`` и ``orders:list_extra_links``). 
 
+
+
 -----------------------------------------------------------------------------------------
 Расширение поисковых фильтров через шаблон на странице списка товаров признано устаревшим
 -----------------------------------------------------------------------------------------
@@ -99,7 +101,7 @@
 
 Хуки ``products:simple_search``, ``companies:products_advanced_search``, ``products:search_form``, ``products:search_in_orders`` и ``products:advanced_search`` признаны устаревшими. Хук ``products:select_search`` признан устаревшим, используйте хук ``products:sort_by_content`` вместо него.
 
-Пример подключения поисковых фильтров можно найти в секции :ref:`Обновленные компоненты <Updated components>`.
+Пример подключения поисковых фильтров можно найти в секции :ref:`Поисковые фильтры на странице списка товаров <search-filters-on-product-list>`.
 
 ------------------
 Сохраненные поиски
@@ -122,6 +124,9 @@
             ...
             saved_search = $saved_search
     }
+
+    
+.. _extending-dashboard-analytics-blocks-through-template:
 
 ----------------------------------------------------------------------------------
 Расширение блоков аналитики Dashboard через хуки шаблонов больше не поддерживается
@@ -332,12 +337,12 @@ Setup wizard признан устаревшим
 - ``data``
 - ``wrapper_class``
 
-.. _Updated components:
 
 ----------------------
 Обновленные компоненты
 ----------------------
 
+.. _search-filters-on-product-list:
 
 Поисковые фильтры на странице списка товаров
 --------------------------------------------
@@ -481,11 +486,11 @@ Setup wizard признан устаревшим
 Карточка аналитики для Dashboard
 --------------------------------
 
-Template: `views/index/components/analytics_section/analytics_card/analytics_card.tpl`
+Шаблон: **views/index/components/analytics_section/analytics_card/analytics_card.tpl**
 
 **Использование**
 
-Использование карточки аналитики для Dashboard описано в см. **Core changes. 6. Расширение блоков аналитики Dashboard через хуки шаблонов больше не поддерживается**. Пример использования:
+Использование карточки аналитики для Dashboard описано в см. :ref:`Расширение блоков аналитики Dashboard через хуки шаблонов больше не поддерживается <extending-dashboard-analytics-blocks-through-template>`. Пример использования:
 
 **app/addons/my_changes/schemas/dashboard/blocks.post.php**
 
@@ -508,6 +513,7 @@ Template: `views/index/components/analytics_section/analytics_card/analytics_car
     return $schema;
 
 **app/addons/my_changes/func.php**
+
 
 .. code-block:: php
 
@@ -620,6 +626,8 @@ Template: `views/index/components/analytics_section/analytics_card/analytics_car
 
         return $content_data;
     }
+    <?
+
 
 **design/backend/templates/addons/my_changes/views/my_changes/components/my_changes_component.tpl**
 

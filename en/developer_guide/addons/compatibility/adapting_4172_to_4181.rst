@@ -45,7 +45,7 @@ Example
     }
     
 
-Full list of available options is in the :ref:`Dynamic actions in the header of the site` section.
+Full list of available options is in the :ref:`Dynamic actions in the header of the site <dynamic-actions-in-the-header>` section.
 
 --------------------------------------------------
 The display of the top and central menu is updated
@@ -103,7 +103,7 @@ Search filters on the product list are now set using an array. Use the ``product
 
 Hooks ``products:simple_search``, ``companies:products_advanced_search``, ``products:search_form``, ``products:search_in_orders`` and ``products:advanced_search`` have been deprecated. The ``products:select_search`` hook have been deprecated, use the ``products:sort_by_content`` hook instead. 
 
-The example of connecting search filters can be found in the :ref:`Components updated` section. 
+The example of connecting search filters can be found in the :ref:`Search filters on the product list page <search-filters-on-product-list>` section. 
 
 --------------
 Saved searches
@@ -128,6 +128,8 @@ To display saved searches, use the ``saved_search`` parameter. An example of sav
             saved_search = $saved_search
     }
 
+
+.. _extending-dashboard-analytics-blocks-through-template:
 
 -------------------------------------------------------------------------------
 Extending Dashboard analytics blocks through template hooks has been deprecated
@@ -297,12 +299,14 @@ Template changes
 Components updated
 ------------------
 
+.. _dynamic-actions-in-the-header:
+
 Dynamic actions in the header of the site
 -----------------------------------------
 
 Template: **design/backend/templates/components/menu/actions_menu.tpl**
 
-Dynamic actions are displayed as buttons. If there are many buttons, some of them are displayed as a dropdown menu. The properties correspond to the ``{btn}`` helper from ``buttons/helpers.tpl``, plus an additional parameter ``wrapper_class``. If a dynamic action is displayed as a button, the default type used is ``text``. Otherwise, it is ``list``. The usage of dynamic actions is described in :ref:`The display of dynamic actions is updated` section.
+Dynamic actions are displayed as buttons. If there are many buttons, some of them are displayed as a dropdown menu. The properties correspond to the ``{btn}`` helper from ``buttons/helpers.tpl``, plus an additional parameter ``wrapper_class``. If a dynamic action is displayed as a button, the default type used is ``text``. Otherwise, it is ``list``. The usage of dynamic actions is described in :ref:`The display of dynamic actions is updated <display-of-dynamic-actions-updated>` section.
 
 Example of adding a button through the controller:
 
@@ -353,7 +357,7 @@ Available parameters:
 - ``data``
 - ``wrapper_class``
 
-.. _Components updated:
+.. _search-filters-on-product-list:
 
 Search filters on the product list page
 ---------------------------------------
@@ -476,6 +480,7 @@ Context search
 In the object list page, in addition to search filters, you can display contextual search next to the saved search. To display contextual search, include ``context_search.tpl`` in your template and pass it as a parameter ``context_search`` when including **common/mainbox.tpl**. 
 
 For example:
+
 .. code-block:: smarty
 
     {assign var=my_changes_search_form_prefix value=""}
@@ -507,7 +512,9 @@ Template: **views/index/components/analytics_section/analytics_card/analytics_ca
 
 **Usage**
 
-The usage of the analytics card for the Dashboard is described in see **Core changes. 6. Extension of Dashboard analytics blocks through template hooks is no longer supported**. Example usage:
+The usage of the analytics card for the Dashboard is described in  :ref:`Extending Dashboard analytics blocks through template hooks has been deprecated <extending-dashboard-analytics-blocks-through-template>` section. 
+
+Example usage:
 
 
 **app/addons/my_changes/schemas/dashboard/blocks.post.php**
@@ -535,123 +542,125 @@ The usage of the analytics card for the Dashboard is described in see **Core cha
 
 .. code-block:: php
 
-<?php
+    <?php
 
-if (!defined('BOOTSTRAP')) { die('Access denied'); }
+    if (!defined('BOOTSTRAP')) { die('Access denied'); }
 
-function fn_my_changes_get_dashboard_block_data()
-{
-    $content_data = [
-        'id' => 'my_changes',
-        'preheader' => __('my_changes.dashboard.preheader'),
-        'is_selected_date' => false,
-        'title' => __('my_changes.dashboard.title'),
-        'title_button' => [
-            'href' => 'products.manage',
-            'name' => __('my_changes.dashboard.title_button'),
-        ],
-        'number' => 1234,
-        'number_dynamics' => 15,
-        'use_price_for_number' => false,
-        'content' => [
-            '<strong>Hello</strong>',
-            '<em>world!</em>',
-        ],
-        'content_tpl' => [
-            'addons/my_changes/views/my_changes/components/my_changes_component.tpl'
-        ],
-        'buttons' => [
-            'button_1' => [
-                'name' => __('my_changes.dashboard.button_1'),
+    function fn_my_changes_get_dashboard_block_data()
+    {
+        $content_data = [
+            'id' => 'my_changes',
+            'preheader' => __('my_changes.dashboard.preheader'),
+            'is_selected_date' => false,
+            'title' => __('my_changes.dashboard.title'),
+            'title_button' => [
                 'href' => 'products.manage',
-                'class' => 'my-changes-button-1',
+                'name' => __('my_changes.dashboard.title_button'),
             ],
-        ],
-        'graph' => [
+            'number' => 1234,
+            'number_dynamics' => 15,
+            'use_price_for_number' => false,
             'content' => [
-                [
-                    'date' => '2024, (0-0), 30',
-                    'prev' => 150,
-                    'cur' => 200
-                ],
-                [
-                    'date' => '2024, (0-0), 31',
-                    'prev' => 160,
-                    'cur' => 300,
-                ],
-            ]
-        ],
-        'bar_chart' => [
-            'id' => 'bar_chart',
-            'title' => __('my_changes.dashboard.bar_chart'),
-            'content' => [
-                [
-                    'id' => 'bar_1',
-                    'name' => __('products'),
+                '<strong>Hello</strong>',
+                '<em>world!</em>',
+            ],
+            'content_tpl' => [
+                'addons/my_changes/views/my_changes/components/my_changes_component.tpl'
+            ],
+            'buttons' => [
+                'button_1' => [
+                    'name' => __('my_changes.dashboard.button_1'),
                     'href' => 'products.manage',
-                    'type' => 'primary',
-                    'value' => 10,
-                    'is_price' => false,
-                    'total' => 100,
-                    'ratio' => 10,
+                    'class' => 'my-changes-button-1',
                 ],
-                [
-                    'id' => 'bar_1',
-                    'name' => __('categories'),
-                    'href' => 'categories.manage',
-                    'value' => 70,
-                    'is_price' => false,
-                    'total' => 100,
-                    'ratio' => 70,
-                ],
-            ]
-        ],
-        'resource_list' => [
-            'title' => __('my_changes.dashboard.resource_list'),
-            'content' => [
-                [
-                    'id' => 'resource_list',
-                    'href' => 'products.manage',
-                    'name' => __("my_changes.dashboard.resource_list_name"),
-                    'label_text' => __("my_changes.dashboard.resource_list_label_text"),
-                    'label_class' => 'my-changes-resource-list',
-                    'value_href' => 'products.manage',
-                    'value' => '100',
-                    'use_price_for_value' => false,
-                    'description' => __("my_changes.dashboard.resource_list_description"),
-                    'description_href' => 'products.manage',
-                    'small_text' => __("my_changes.dashboard.resource_list_small_text"),
-                    // 'image' => [],
+            ],
+            'graph' => [
+                'content' => [
+                    [
+                        'date' => '2024, (0-0), 30',
+                        'prev' => 150,
+                        'cur' => 200
+                    ],
+                    [
+                        'date' => '2024, (0-0), 31',
+                        'prev' => 160,
+                        'cur' => 300,
+                    ],
                 ]
-            ]
-        ],
-        'resource_list_tabs' => [
-            'id' => 'resource_list_tabs',
-            'content' => [
-                'resource_list_tabs_1' => [
-                    'id' => 'resource_list_tabs_1',
-                    'title' => __('resource_list_tabs_1'),
-                    'content' => [
-                        // Same thing as $content_data['resource_list']['content']
+            ],
+            'bar_chart' => [
+                'id' => 'bar_chart',
+                'title' => __('my_changes.dashboard.bar_chart'),
+                'content' => [
+                    [
+                        'id' => 'bar_1',
+                        'name' => __('products'),
+                        'href' => 'products.manage',
+                        'type' => 'primary',
+                        'value' => 10,
+                        'is_price' => false,
+                        'total' => 100,
+                        'ratio' => 10,
+                    ],
+                    [
+                        'id' => 'bar_1',
+                        'name' => __('categories'),
+                        'href' => 'categories.manage',
+                        'value' => 70,
+                        'is_price' => false,
+                        'total' => 100,
+                        'ratio' => 70,
+                    ],
+                ]
+            ],
+            'resource_list' => [
+                'title' => __('my_changes.dashboard.resource_list'),
+                'content' => [
+                    [
+                        'id' => 'resource_list',
+                        'href' => 'products.manage',
+                        'name' => __("my_changes.dashboard.resource_list_name"),
+                        'label_text' => __("my_changes.dashboard.resource_list_label_text"),
+                        'label_class' => 'my-changes-resource-list',
+                        'value_href' => 'products.manage',
+                        'value' => '100',
+                        'use_price_for_value' => false,
+                        'description' => __("my_changes.dashboard.resource_list_description"),
+                        'description_href' => 'products.manage',
+                        'small_text' => __("my_changes.dashboard.resource_list_small_text"),
+                        // 'image' => [],
                     ]
-                ],
-            ]
-        ],
-        'scripts' => [
-            'js/addons/my_changes/func.js'
-        ],
-    ];
+                ]
+            ],
+            'resource_list_tabs' => [
+                'id' => 'resource_list_tabs',
+                'content' => [
+                    'resource_list_tabs_1' => [
+                        'id' => 'resource_list_tabs_1',
+                        'title' => __('resource_list_tabs_1'),
+                        'content' => [
+                            // Same thing as $content_data['resource_list']['content']
+                        ]
+                    ],
+                ]
+            ],
+            'scripts' => [
+                'js/addons/my_changes/func.js'
+            ],
+        ];
 
-    return $content_data;
+        return $content_data;
     }
+    
 
 **design/backend/templates/addons/my_changes/views/my_changes/components/my_changes_component.tpl**
 
-<h3>My changes test</h3>
+.. code-block:: php
 
-js/addons/my_changes/func.js
+    <h3>My changes test</h3>
 
-::
+    js/addons/my_changes/func.js
+
     alert('my changes test');
 
 
