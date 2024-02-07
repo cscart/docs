@@ -10,6 +10,51 @@
 Изменения в ядре
 ================
 
+------------------
+Измененные функции
+------------------
+
+#. ::
+
+       // Было:
+       function fn_filter_uploaded_data($name, array $filter_by_ext = [], $show_default_error_notifications = true, $sanitaze_filename = true)
+       // Стало:
+       function fn_filter_uploaded_data($name, array $filter_by_ext = [], $show_default_error_notifications = true, $sanitaze_filename = true, $filter_by_file_size_bytes = false)
+
+
+#. ::
+
+       // Было:
+       function fn_check_uploaded_data(array $uploaded_data, array $filter_by_ext)
+       // Стало:
+       function fn_check_uploaded_data(array $uploaded_data, array $filter_by_ext, $filter_by_file_size_bytes = false)
+
+
+-------------
+Новые функции
+-------------
+
+#. Получает направление языка::
+
+        \Tygh\Template\IContext::getLanguageDirection()
+
+#. Получает направление языка::
+
+        \Tygh\Template\Snippet\Table\ItemContext::getLanguageDirection()
+
+#. Получает направление языка::
+
+        \Tygh\Template\Mail\Context::getLanguageDirection()
+        
+#. Получает направление языка::
+
+        \Tygh\Template\Internal\Context::getLanguageDirection()
+        
+#. Получает направление языка::
+
+        \Tygh\Template\Document\Order\Context::getLanguageDirection()
+
+
 .. _Dynamic actions display updated:
 
 -------------------------------------------
@@ -223,38 +268,58 @@ Setup wizard признан устаревшим
 
 #. Выполняется после получения данных блока панели управления, позволяет их редактировать::
 
-        fn_set_hook('get_dashboard_block_data', $content_data, $this);
+    fn_set_hook('get_dashboard_block_data', $content_data, $this);
 
 #. Выполняется после заполнения информации о содержимом блока со статистикой продаж, позволяет ее редактировать::
 
-        fn_set_hook('get_dashboard_sales_block_data', $content_data, $this);
+    fn_set_hook('get_dashboard_sales_block_data', $content_data, $this);
 
 #. Выполняется после заполнения информации о содержимом блока со статистикой продуктов, позволяет ее редактировать::
 
-        fn_set_hook('get_dashboard_products_block_data', $content_data, $this);
+    fn_set_hook('get_dashboard_products_block_data', $content_data, $this);
 
 #. Выполняется после заполнения информации о содержимом блока со статистикой заказов, позволяет ее редактировать::
 
-        fn_set_hook('get_dashboard_orders_block_data', $content_data, $this);
+    fn_set_hook('get_dashboard_orders_block_data', $content_data, $this);
 
 #. Выполняется после заполнения информации о содержимом блока со статистикой заказов по статусам, позволяет ее редактировать::
-        fn_set_hook('get_dashboard_orders_by_statuses_block_data', $content_data, $this);
+
+    fn_set_hook('get_dashboard_orders_by_statuses_block_data', $content_data, $this);
 
 #. Выполняется после заполнения информации о содержимом блока с балансом поставщика, позволяет ее редактировать::
-        fn_set_hook('get_dashboard_vendor_balance_block_data', $content_data, $this); 
+
+    fn_set_hook('get_dashboard_vendor_balance_block_data', $content_data, $this); 
 
 #. Выполняется после заполнения информации о содержимом блока со статистикой активности поставщика, позволяет ее редактировать::
-        fn_set_hook('get_dashboard_vendor_with_sales_block_data', $content_data, $this); 
+
+    fn_set_hook('get_dashboard_vendor_with_sales_block_data', $content_data, $this); 
 
 #. Выполняется после заполнения информации о содержимом блока со статистикой компаний или поставщиков, позволяет ее редактировать::
-        fn_set_hook('get_dashboard_stores_block_data', $content_data, $this); 
+
+    fn_set_hook('get_dashboard_stores_block_data', $content_data, $this); 
 
 #. Выполняется после заполнения информации о содержимом блока со статистикой пользователей, позволяет ее редактировать::
-        fn_set_hook('get_dashboard_customers_block_data', $content_data, $this); 
+
+    fn_set_hook('get_dashboard_customers_block_data', $content_data, $this); 
 
 #. Выполняется после заполнения информации о содержимом блока с последними записями, позволяет ее редактировать::
-        fn_set_hook('get_dashboard_logs_block_data', $content_data, $this);
-        
+
+    fn_set_hook('get_dashboard_logs_block_data', $content_data, $this);
+
+#. Выполняется после обновления данных о наличии товаров на складах::
+
+    fn_set_hook('warehouses_recalculate_destination_products_stocks', $this, $params, $product_condition);
+
+#. Выполняется после удаления данных о количестве товаров::
+
+    fn_set_hook('warehouses_remove_product_stocks_post', $this, $product_id);
+
+
+#. Выполняется перед обновлением/созданием баннера::
+
+    fn_set_hook('banners_update_banner_pre', $data, $banner_id, $lang_code);
+
+
 ---------------
 Измененные хуки
 ---------------
@@ -272,6 +337,31 @@ Setup wizard признан устаревшим
        fn_set_hook('add_to_cart', $cart, $product_id, $_id);
        // Стало:
        fn_set_hook('add_to_cart', $cart, $product_id, $_id, $_data);
+
+
+#. ::
+
+       // Было:
+       fn_set_hook('filter_uploaded_data_post', $name, $filter_by_ext, $filtered, $udata_local, $udata_other, $utype);
+       // Стало:
+       fn_set_hook('filter_uploaded_data_post', $name, $filter_by_ext, $filtered, $udata_local, $udata_other, $utype, $filter_by_file_size_bytes);
+
+
+#. ::
+
+       // Было:
+       fn_set_hook('check_uploaded_data_pre', $uploaded_data, $filter_by_ext, $result, $processed);
+       // Стало:
+       fn_set_hook('check_uploaded_data_pre', $uploaded_data, $filter_by_ext, $result, $processed, $filter_by_file_size_bytes);
+
+
+
+#. ::
+
+       // Было:
+       fn_set_hook('check_uploaded_data_post', $uploaded_data, $filter_by_ext, $result, $processed);
+       // Стало:
+       fn_set_hook('check_uploaded_data_post', $uploaded_data, $filter_by_ext, $result, $processed, $filter_by_file_size_bytes);
 
 ====================
 Изменения в шаблонах
@@ -631,13 +721,13 @@ Setup wizard признан устаревшим
 
 **design/backend/templates/addons/my_changes/views/my_changes/components/my_changes_component.tpl**
 
+.. code-block:: php
 
-<h3>My changes test</h3>
+        <h3>My changes test</h3>
 
-**js/addons/my_changes/func.js**
+        **js/addons/my_changes/func.js**
 
-::
-    alert('my changes test');
+        alert('my changes test');
 
 
 .. _SVG-icons:
@@ -783,6 +873,7 @@ SVG-иконки
 
 #. ``index:head``
 #. ``menu:top_bar_right``
+#. ``banners:status``
 
 --------------
 Удаленные хуки

@@ -10,6 +10,51 @@ Adapt Your Add-ons and Themes to CS-Cart 4.18.1
 Core Changes
 ============
 
+-----------------
+Changed Functions
+-----------------
+
+#. ::
+
+       // Old:
+       function fn_filter_uploaded_data($name, array $filter_by_ext = [], $show_default_error_notifications = true, $sanitaze_filename = true)
+       // New:
+       function fn_filter_uploaded_data($name, array $filter_by_ext = [], $show_default_error_notifications = true, $sanitaze_filename = true, $filter_by_file_size_bytes = false)
+
+
+#. ::
+
+       // Old:
+       function fn_check_uploaded_data(array $uploaded_data, array $filter_by_ext)
+       // New:
+       function fn_check_uploaded_data(array $uploaded_data, array $filter_by_ext, $filter_by_file_size_bytes = false)
+
+
+-------------
+New functions
+-------------
+
+#. Gets language direction::
+
+        \Tygh\Template\IContext::getLanguageDirection()
+
+#. Gets language direction::
+
+        \Tygh\Template\Snippet\Table\ItemContext::getLanguageDirection()
+
+#. Gets language direction::
+
+        \Tygh\Template\Mail\Context::getLanguageDirection()
+        
+#. Gets language direction::
+
+        \Tygh\Template\Internal\Context::getLanguageDirection()
+        
+#. Gets language direction::
+
+        \Tygh\Template\Document\Order\Context::getLanguageDirection()
+
+
 .. _display-of-dynamic-actions-updated:
 
 -----------------------------------------
@@ -273,6 +318,20 @@ New hooks
 
         fn_set_hook('change_order_status_pre', $order_id, $status_to, $status_from, $force_notification, $place_order, $order_info, $allow_status_update);
 
+
+#. Executes after updating data about the availability of products in warehouses::
+
+        fn_set_hook('warehouses_recalculate_destination_products_stocks', $this, $params, $product_condition); 
+
+
+#. Executes after deleting product stocks::
+
+        fn_set_hook('warehouses_remove_product_stocks_post', $this, $product_id);  
+
+#. Executes before updating/creating a banner::
+
+        fn_set_hook('banners_update_banner_pre', $data, $banner_id, $lang_code);
+
 -------------
 Changed hooks
 -------------
@@ -291,9 +350,34 @@ Changed hooks
        // New:
        fn_set_hook('add_to_cart', $cart, $product_id, $_id, $_data);
 
+#. ::
+
+       // Old:
+       fn_set_hook('filter_uploaded_data_post', $name, $filter_by_ext, $filtered, $udata_local, $udata_other, $utype);
+       // New:
+       fn_set_hook('filter_uploaded_data_post', $name, $filter_by_ext, $filtered, $udata_local, $udata_other, $utype, $filter_by_file_size_bytes);
+
+#. ::
+
+       // Old:
+       fn_set_hook('check_uploaded_data_pre', $uploaded_data, $filter_by_ext, $result, $processed);
+       // New:
+       fn_set_hook('check_uploaded_data_pre', $uploaded_data, $filter_by_ext, $result, $processed, $filter_by_file_size_bytes);
+
+
+
+#. ::
+
+       // Old:
+       fn_set_hook('check_uploaded_data_post', $uploaded_data, $filter_by_ext, $result, $processed);
+       // New:
+       fn_set_hook('check_uploaded_data_post', $uploaded_data, $filter_by_ext, $result, $processed, $filter_by_file_size_bytes);
+
 ================
 Template changes
 ================
+
+
 
 ------------------
 Components updated
@@ -807,6 +891,7 @@ New hooks
 
 #. ``index:head``
 #. ``menu:top_bar_right``
+#. ``banners:status``
 
 -------------
 Deleted hooks
