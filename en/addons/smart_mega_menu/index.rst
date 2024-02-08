@@ -212,6 +212,29 @@ Add and Set Up a Block
         .. fancybox:: img/block-settings10.png
             :alt: Create a new block
 
+===========================
+Location With Other Blocks
+===========================
+
+    When using the **"Horizontal list with collapsing"** and **"Horizontal list with scrolling"** templates, the menu completely fills the selected space and can hide near elements.
+    This example shows the using of a block with an element of the `Hamburger Menu add-on: <https://docs.cs-cart.com/marketplace-addons/addons/hamburger-menu/index.html>`_
+
+    .. fancybox:: img/block_location2.png
+        :alt: Location With Other Blocks
+
+    .. fancybox:: img/block_location1.png
+        :alt: Location With Other Blocks
+
+    To avoid overlapping near elements, all elements in the grid should be placed in their own **sections** with the specific dimensions:
+
+    .. fancybox:: img/block_location3.png
+        :alt: Location With Other Blocks
+
+    .. fancybox:: img/block_location4.png
+        :alt: Location With Other Blocks
+
+    You can add a custom class **"sd-smart-menu-row-center"** to the main section, for vertically center the menu items and its near elements.
+
 ==============
 Block Settings
 ==============

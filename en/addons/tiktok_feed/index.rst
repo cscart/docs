@@ -113,10 +113,10 @@ Block TikTok Feed
 		*Template settings:*
 			* Navigation: Dots, Arrows, Dots and arrows - Sets navigation options in block;
 			* Do not scroll automatically;
-			* Scroll per page;
-			* Speed;
-			* Pause delay (in seconds);
-			* Item quantity.
+			* Scroll per page - In active state allows flips through all displayed videos, in inactive state it shifts the carousel to only one video;
+			* Speed - Animation speed of carousel when flipping;
+			* Pause delay (in seconds) - The length of the pause between automatic carousel scrolls;
+			* Item quantity - Sets the number of videos (N) in the block at the largest screen size (desktop); when the screen size decreases, the number of elements becomes N-1 for desktop small device, N-2 for tablet device, and always 1 for mobile device.
 
 	**Block Settings:**
 	

@@ -17,7 +17,7 @@ Vendor Image
 Overview
 --------
 
-    The **Vendor Image** allows you to add a full-width background image to the vendor store and vendor information page and apply parallax effect to it.
+    The **Vendor Image** allows you to add a full-width background image to the vendor store and apply parallax effect to it.
 
     .. fancybox:: img/vendor-background-overview-main-page.gif
         :alt: Vendor Image for CS-Cart
@@ -26,8 +26,8 @@ Overview
 Compatibility
 =============
 
-    The add-on is compatible with Multi-Vendor 4.4 and above, but only versions 4.12.x and above are supported. 
-    Minimum required PHP version is 5.6. The add-on does not support PHP 8.x yet.
+    The add-on is compatible with Multi-Vendor 4.4 and above, but only versions 4.12.x and above are supported.
+    Minimum required PHP version is 5.6.
 
     See more information about compatibility of our add-ons `here <https://docs.cs-cart.com/marketplace-addons/compatibility/index.html>`_.
 
@@ -197,87 +197,3 @@ Step 2. Adding an image
         :alt: Vendor Banner block setting
     
     3. Click **Save and close**.
-
-============================================================
-How to add a background image to the vendor information page
-============================================================
-
-    To add an image to the vendor information page, follow these steps:
-
-    .. fancybox:: img/vendor-information-page.png
-        :alt: backround image in vendor store
-
-++++++++++++++++++++++++
-Step 1. Adjusting layout
-++++++++++++++++++++++++
-
-    1. Go to **Design > Layouts**.
-
-    2. Switch to the **Vendor information** layout.
-
-    3. In the **Header** container, add a new block.
-
-    .. fancybox:: img/adding-new-block.png
-        :alt: adding a new block
-
-    .. note::
-
-        We highly recommend adding the block to the **Header** container, otherwise the background image may not appear for newly registered vendors.
-
-    4. Select the **Vendor background** block.
-
-    .. fancybox:: img/vendor-background-block.png
-        :alt: Vendor Background block
-
-    5. Name the block and select the **Vendor background** template.
-
-    .. fancybox:: img/vendor-background-block-settings.png
-        :alt: Vendor Background block settings
-
-    6. Click **Create**.
-
-+++++++++++++++++++++++
-Step 2. Adding an image
-+++++++++++++++++++++++
-
-    Follow these steps :ref:`these-steps`.
-
-==================================================
-How to add a banner to the vendor information page
-==================================================
-
-    To add a banner to the vendor information page, follow these steps:
-
-    .. fancybox:: img/vendor-banner-information-page.png
-        :alt: banner in vendor store
-
-++++++++++++++++++++++++
-Step 1. Adjusting layout
-++++++++++++++++++++++++
-
-    1. Go to **Design > Layouts**.
-
-    2. Switch to the **Vendor information** layout.
-
-    3. Add a new grid to a container.
-
-    .. fancybox:: img/vendor-banner-adding-grid.png
-        :alt: adding a new block
-
-    4. In this grid, add a new block. Select the **Vendor banner** block.
-
-    .. fancybox:: img/vendor-banner-block.png
-        :alt: Vendor Banner block
-
-    5. Name the block and select the **Vendor banner** template.
-
-    .. fancybox:: img/vendor-banner-block-settings.png
-        :alt: Vendor Banner block settings
-
-    6. Click **Create**.
-
-+++++++++++++++++++++++
-Step 2. Adding an image
-+++++++++++++++++++++++
-
-    Follow these steps :ref:`these-steps2`.
