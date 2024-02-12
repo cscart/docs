@@ -19,15 +19,15 @@ PayPal Checkout allows you to quickly set up a payment method in your online sto
 4. Switch to the Configure tab and specify PayPal settings:
 
 **Account settings**
-- App Client ID, App Secret—these settings connect your marketplace to your PayPal account. Get these credentials from PayPal.
-- Test/Live mode—set to Live to accept real payments.
-- Currency—if you specify the currency that is not the same as the store's primary currency, then it will be converted as soon as you go to the PayPal checkout page.
+ - App Client ID, App Secret—these settings connect your marketplace to your PayPal account. Get these credentials from PayPal.
+ - Test/Live mode—set to Live to accept real payments.
+ - Currency—if you specify the currency that is not the same as the store's primary currency, then it will be converted as soon as you go to the PayPal checkout page.
 
    .. image:: img/paypal_checkout_configure.png
        :align: center
        :alt: A PayPal Checkout Configure tab.
 
-**Funding sources to show on checkout**—Choose the payment services you want to be displayed on the PayPal checkout page.
+**Funding sources to show on checkout**—choose the payment services you want to be displayed on the PayPal checkout page.
 **Button appearance**—choose the shape, color and height of the PayPal Checkout button on the checkout page.
 
 5. Click the **Create** button.
