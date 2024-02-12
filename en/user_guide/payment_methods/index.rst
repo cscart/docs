@@ -37,12 +37,8 @@ Here are some of the payment methods that you can set up in CS-Cart and Multi-Ve
     ideal
     eway
     paypal
-    paypal_adaptive_payments
+    paypal_checkout
     paypal_commerce_platform
-    paypal_express
-    paypal_advanced
-    paypalpro
-    paypal_for_marketplaces
     ping
     stripe_connect    
     
@@ -53,6 +49,11 @@ Here are some of the payment methods that you can set up in CS-Cart and Multi-Ve
     :hidden:
 
     amazon
+    paypal_adaptive_payments
+    paypal_express
+    paypal_advanced
+    paypalpro
+    paypal_for_marketplaces
 
 .. meta::
    :description: Guides on how to set up various manual and automatic payment methods in CS-Cart and Multi-Vendor online ecommerce solutions.

@@ -34,7 +34,7 @@ How to Configure the Payment Method
 
    * **Account settings:**
 
-     * **Partner integration code**—your build notation (BN) code. Contact `CS-Cart Customer Care <https://helpdesk.cs-cart.com>`_ to get it.
+     * **Partner integration code**—your build notation (BN) code. Contact PayPal team directly using provided email in this section. 
    
      * **Merchant account ID, App Client ID, App Secret**—these settings connect your marketplace to your PayPal account. Get these credentials from PayPal.
      
@@ -52,12 +52,12 @@ How to Configure the Payment Method
    
 #. Click the **Create** button.
 
-   .. image:: img/paypal_settings1.png
+   .. image:: img/paypal_commerce_platform_configure.png
        :align: center
        :alt: Configure tab in the settings of the paypal commerce platform add-on
        
 
-   .. image:: img/paypal_settings2.png
+   .. image:: img/paypal_commerce_platform_configure_1.png
        :align: center
        :alt: Configure tab in the settings of the paypal commerce platform add-on
 
