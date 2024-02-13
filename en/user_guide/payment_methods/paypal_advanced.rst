@@ -4,7 +4,10 @@ How To: Set up Website Payments Pro in CS-Cart
 
 .. important::
 
-    The PayPal Payments Advanced add-on was renamed to Website Payments Pro in CS-Cart version **4.10.4**
+    The PayPal Payments Advanced add-on was renamed to Website Payments Pro in CS-Cart version **4.10.4**. 
+
+    Please note that PayPal doesn’t accept new registrations for PayPal Advanced. The article is relevant only for the existing users of that solution.
+    If you are using CS-Cart 4.18.1, we recommend using :doc:`PayPal Checkout for Store Builder </user_guide/payment_methods/paypal_checkout>` or :doc:`PayPal Commerce Platform for Multi-Vendor </user_guide/payment_methods/paypal_commerce_platform>` instead.
 
 .. note::
 

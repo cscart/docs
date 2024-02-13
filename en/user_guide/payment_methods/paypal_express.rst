@@ -2,6 +2,11 @@
 How To: Set up PayPal Express Checkout in CS-Cart
 *************************************************
 
+.. important::
+
+    Please note that PayPal doesn’t accept new registrations for PayPal Express Checkout. The article is relevant only for the existing users of that solution.
+    If you are using CS-Cart 4.18.1, we recommend using :doc:`PayPal Checkout for Store Builder </user_guide/payment_methods/paypal_checkout>` or :doc:`PayPal Commerce Platform for Multi-Vendor </user_guide/payment_methods/paypal_commerce_platform>` instead.
+
 .. note::
 
     Before you begin, make sure that the :doc:`PayPal payments </user_guide/addons/paypal_payments/index>` add-on is active and configured.

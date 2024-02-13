@@ -5,6 +5,7 @@ How To: Set up PayPal for Marketplaces in Multi-Vendor
 .. important::
 
     The **PayPal for Marketplaces** add-on first appeared in Multi-Vendor 4.8.1. The integration hasn't been certified by PayPal yet, so we recommend using :doc:`/user_guide/addons/paypal_adaptive/index` for the time being.
+    If you are using CS-Cart 4.18.1, we recommend using :doc:`PayPal Commerce Platform for Multi-Vendor </user_guide/payment_methods/paypal_commerce_platform>` instead.
 
 ================================
 Step 1. Configure Payment Method

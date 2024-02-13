@@ -2,6 +2,10 @@
 PayPal Payments
 ***************
 
+.. note::
+    
+    The PayPal Payments add-on was renamed to PayPal legacy payments in CS-Cart **4.18.1**.
+
 With this add-on you can accept payments via PayPal Express Checkout, PayPal Pro, PayPal Standard, PayPal Advanced, and PayPal Payflow Pro. After you install the add-on, you'll be able to select one of the new payment processors when you :doc:`configure a payment method. <../../payment_methods/adding_payment>`
 
 .. image:: img/paypal_payments.png

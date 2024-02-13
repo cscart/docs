@@ -80,7 +80,7 @@ Here is an instruction for vendors on how to connect their PayPal accounts:
 
 #. Click **Connect with PayPal**.
 
-   .. image:: img/connect_with_paypal.png
+   .. image:: img/vendors_connect_to_paypal.png
        :align: center
        :alt: Connecting with paypal in the vendor's settings
 
