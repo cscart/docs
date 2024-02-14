@@ -16,30 +16,39 @@ There are two distinct PayPal integrations:
 PayPal Checkout for online stores
 =================================
 
-PayPal Checkout is most effective for online stores, as it follows the principal: one seller—one byuer, so there is only one transaction per order. Additionally, it provides the flexibility to customize the appearance of payment buttons. 
+PayPal Checkout is a solution for online stores, it follows the principle: one seller—one byuer, so there is only one transaction per order. 
 
 
-PayPal Checkout allows your customers to pay with the following payment methods:
+   .. image:: img/paypal_checkout.png
+       :align: center
+       :alt: Paypal payment method on the checkout page
 
-* **PayPal, Pay Later, Venmo**
-* **Credit** and **debit card** payments
-* **Alternative payment methods**: iDEAL, Sofort, giropay, SEPA-Lastschrift, MyBank, Bancontact
 
-**Pay Later** allows your customers to pay in convenient installments, while ensuring that you receive full payment at the checkout. Terms and conditions may vary from one country to another.
+It allows your customers to pay with the following payment methods:
+    
+* **Credit** and **debit card**
+* **PayPal** (including Pay Later)
+* **Alternative payment methods**: Like Venmo, iDEAL, giropay. `See PayPal Docs for more information on that <https://developer.paypal.com/docs/checkout/apm/#link-availablepaymentmethods>`_.
 
-**Alternative payment methods** appear based on the customer's locations.
+It offers features: 
+
+* **Pay Later** allows your customers to pay in convenient installments, while ensuring that you receive full payment at the checkout. Terms and conditions may vary from one country to another.
+
+* The available payment methods appear based on the customer's locations.
+
+* Provides the flexibility to customize the appearance of payment buttons. 
 
 
 PayPal Commerce Platform for marketplaces
 =========================================
 
-Works best for marketplaces: it facilitates multiple transactions from one buyer to various sellers within single order. PayPal automatically splits the funds between the marketplace and the vendors whose products were purchased. The marketplace owner doesn’t have to transfer money manually.
+Works as PayPal Checkout, but for marketplaces: offers *everything that is in PayPal Checkout* and also facilitates multiple transactions from one buyer to various sellers within single order. PayPal Commerce Platform automatically splits the funds between the marketplace and the vendors whose products were purchased and the marketplace owner doesn’t have to transfer money manually. 
 
 PayPal Commerce Platform allows your customers to pay with the following payment methods:
 
 * **Credit** or **debit cards**
-* **PayPal Credit, Venmo**
-* **Alternative payment methods**: SEPA-Lastschrift, Bancontact, eps, giropay, iDEAL, MyBank, Przelewy24, Sofort
+* **PayPal Credit**
+* **Alternative payment methods**: Like Venmo, iDEAL, giropay. `See PayPal Docs for more information on that <https://developer.paypal.com/docs/checkout/apm/#link-availablepaymentmethods>`_.
 
-It also allows to show various cards on checkout: Visa, Mastercard and other. 
+ Allows to show various cards on checkout: Visa, Mastercard and other. 
 

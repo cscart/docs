@@ -21,8 +21,6 @@ PayPal Checkout allows you to quickly set up a payment method in your online sto
    * **Account settings:**
 
      * **App Client ID, App Secret**—these settings connect your marketplace to your PayPal account. Get these credentials from PayPal. 
-   
-     * **Test/Live mode**—set to Live to accept real payments.
      
      * **Test/Live mode**—set to *Live* to accept real payments.
      
