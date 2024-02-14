@@ -6,8 +6,8 @@ CS-Cart provides PayPal integrations to ensure a seamless and secure payment exp
 
 There are two distinct PayPal integrations:
 
-#. :doc:`PayPal Checkout for online stores </user_guide/payment_methods/paypal_checkout>`: this article focuses on configuring PayPal Checkout in CS-Cart Store Builder. 
-#. :doc:`PayPal Commerce Platform for marketplaces </user_guide/payment_methods/paypal_commerce_platform>`: this guide will help you set up the PayPal Commerce Platform for the CS-Cart Multi-Vendor platform.
+#. :doc:`PayPal Checkout for online stores </user_guide/payment_methods/paypal_checkout>`
+#. :doc:`PayPal Commerce Platform for marketplaces </user_guide/payment_methods/paypal_commerce_platform>`
 
 .. note::
     
@@ -18,14 +18,16 @@ PayPal Checkout for online stores
 
 PayPal Checkout is most effective for online stores, as it follows the principal: one seller—one byuer, so there is only one transaction per order. Additionally, it provides the flexibility to customize the appearance of payment buttons. 
 
+
 PayPal Checkout allows your customers to pay with the following payment methods:
 
-- PayPal, Pay Later, Venmo
-- Credit and debit card payments, Apple Pay and Google Pay
-- Alternative payment methods: iDEAL, Sofort, giropay, SEPA, MyBank, Bancontact
- 
-* **Pay Later** allows your customers to pay in convenient installments, while ensuring that you receive full payment at the time of checkout.
-* **Alternative payment methods** appear based on your and the customer's locations. 
+* **PayPal, Pay Later, Venmo**
+* **Credit** and **debit card** payments
+* **Alternative payment methods**: iDEAL, Sofort, giropay, SEPA-Lastschrift, MyBank, Bancontact
+
+**Pay Later** allows your customers to pay in convenient installments, while ensuring that you receive full payment at the checkout. Terms and conditions may vary from one country to another.
+
+**Alternative payment methods** appear based on the customer's locations.
 
 
 PayPal Commerce Platform for marketplaces
@@ -35,9 +37,9 @@ Works best for marketplaces: it facilitates multiple transactions from one buyer
 
 PayPal Commerce Platform allows your customers to pay with the following payment methods:
 
-- Credit or debit cards
-- PayPal Credit, Venmo
-- Alternative payment methods: SEPA-Lastschrift, Bancontact, eps, giropay, iDEAL, MyBank, Przelewy24, Sofort
+* **Credit** or **debit cards**
+* **PayPal Credit, Venmo**
+* **Alternative payment methods**: SEPA-Lastschrift, Bancontact, eps, giropay, iDEAL, MyBank, Przelewy24, Sofort
 
-It also allows to show various card on checkout: Visa, Mastercard and other. 
+It also allows to show various cards on checkout: Visa, Mastercard and other. 
 
