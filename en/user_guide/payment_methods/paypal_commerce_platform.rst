@@ -32,6 +32,10 @@ How to Configure the Payment Method
 
 #. Open the Configure tab and fill in the following fields:
 
+   .. image:: img/paypal_commerce_platform_configure.png
+       :align: center
+       :alt: Configure tab in the settings of the paypal commerce platform add-on
+
    * **Account settings:**
 
      * **Partner integration code**—your build notation (BN) code. Contact PayPal team directly using provided email in this section. 
@@ -51,11 +55,6 @@ How to Configure the Payment Method
    * **Button appearance**—choose the shape, color and height of the PayPal button on the checkout page.
    
 #. Click the **Create** button.
-
-   .. image:: img/paypal_commerce_platform_configure.png
-       :align: center
-       :alt: Configure tab in the settings of the paypal commerce platform add-on
-       
 
    .. image:: img/paypal_commerce_platform_configure_1.png
        :align: center
