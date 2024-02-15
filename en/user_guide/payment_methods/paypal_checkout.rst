@@ -2,12 +2,10 @@
 How To: Set Up PayPal Checkout
 ******************************
 
-.. note:: 
-    
-    Before you begin, make sure that the **PayPal Checkout** add-on is enabled. If not,  go to **Add-ons → Downloaded Add-ons**. Search for the **PayPal Checkout** add-on and enable it.
 
-PayPal Checkout allows you to quickly set up a payment method in your online store and offer your customers secure and familiar payment options. Customers are required to have a PayPal account to checkout with this payment method, as their shipping and billing information is stored within their PayPal account. Because of this, they don’t have to re-enter their information on the checkout page, which makes their shopping secure and convenient.
+PayPal Checkout allows you to quickly set up a payment method in your online store and offer your customers secure and familiar payment options. 
 
+#. Go to **Add-ons → Downloaded Add-ons**. Search for the **PayPal Checkout** add-on and enable it.
 #. Go to **Settings → Payment methods**.
 #. Click on the **+** icon to add a :doc:`new payment method </user_guide/payment_methods/adding_payment>`.
 #. Create a new payment method based on the **PayPal Checkout** processor.
@@ -20,13 +18,13 @@ PayPal Checkout allows you to quickly set up a payment method in your online sto
 
    * **Account settings:**
 
-     * **App Client ID, App Secret**—these settings connect your marketplace to your PayPal account. Get these credentials from PayPal. 
+     * **App Client ID, App Secret**—these settings connect your store to your PayPal account. Get these credentials from PayPal. 
      
      * **Test/Live mode**—set to *Live* to accept real payments.
      
        The test mode is intended for developers. It works with the special PayPal sandbox instead of live servers. No real money is involved in sandbox transactions.
        
-     * **Currency**—if you specify the currency that is not the same as the store's primary currency, then it will be converted as soon as you go to the PayPal checkout page. Converts the currency at the exchange rate set for it in this store.
+     * **Currency**—if you specify the currency that is not the same as the store's primary currency, then it will be converted as soon as you go to the PayPal checkout page. The currency is converted at the exchange rate set for it in this store.
      
    * **Funding sources to show on checkout**—choose the payment services you want to be displayed on the PayPal checkout page.
      
