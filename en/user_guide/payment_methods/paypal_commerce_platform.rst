@@ -21,8 +21,8 @@ How it Works
 
 #. PayPal automatically splits all the money between the marketplace and the vendors whose products were bought. The marketplace owner doesn’t have to transfer money manually.
 
-How to Configure the Payment Method
-===================================
+Step 1.  Configure the Payment Method
+=====================================
 
 #. `Sign up for PayPal Commerce Platform <https://www.paypal.com/us/business/platforms-and-marketplaces>`_.
 	
@@ -60,8 +60,8 @@ How to Configure the Payment Method
        :align: center
        :alt: Configure tab in the settings of the paypal commerce platform add-on
 
-Have Your Vendors Connect Their Accounts
-========================================
+Step 2. Have Your Vendors Connect Their Accounts
+================================================
 
 Vendors connect their PayPal business accounts to receive the money for their products that have been sold. If a customer adds products from different vendors to his cart, and all those vendors have their PayPal accounts connected to the marketplace, then this payment method will be offered to the customer.
 
