@@ -4,7 +4,7 @@ How To: Set up PayPal Express Checkout in CS-Cart
 
 .. important::
 
-    This is a legacy solution by PayPal. It remains in CS-Cart documentation for the benefit of our existing clients. `See this article for current, up-to-date PayPal solutions integrated with CS-Cart </user_guide/payment_methods/paypal>`.
+    This is a legacy solution by PayPal. It remains in CS-Cart documentation for the benefit of our existing clients. :doc:`See this article for current, up-to-date PayPal solutions integrated with CS-Cart </user_guide/payment_methods/paypal>`.
 
 .. note::
 
