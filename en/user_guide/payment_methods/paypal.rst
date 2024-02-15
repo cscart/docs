@@ -6,7 +6,7 @@ CS-Cart provides PayPal integrations to ensure a seamless and secure payment exp
 
 There are two distinct PayPal integrations:
 
-#. :doc:`PayPal Checkout </user_guide/payment_methods/paypal_checkout>`for single-seller online stores
+#. :doc:`PayPal Checkout </user_guide/payment_methods/paypal_checkout>` for single-seller online stores
 #. :doc:`PayPal Commerce Platform </user_guide/payment_methods/paypal_commerce_platform>` for marketplaces where a customer might buy products from multiple sellers at once
 
 .. note::
@@ -38,7 +38,7 @@ The payment methods that your customers will see will depend on your location an
 PayPal Commerce Platform for marketplaces
 =========================================
 
-It works as PayPal Checkout, but for marketplaces: offers *everything that is in PayPal Checkout* and also handles situations when a buyer makes one payment for products from multiple sellers. PayPal Commerce Platform automatically splits the funds between the marketplace and the vendors whose products were purchased and the marketplace owner doesn’t have to transfer money manually. 
+It works as PayPal Checkout, but for marketplaces: PayPal Commerce Platform offers *everything that is in PayPal Checkout* and also handles situations when a buyer makes one payment for products from multiple sellers. PayPal Commerce Platform automatically splits the funds between the marketplace and the vendors whose products were purchased and the marketplace owner doesn’t have to transfer money manually. 
 
 
 
