@@ -6,7 +6,7 @@ How To: Set up Website Payments Pro in CS-Cart
 
     The PayPal Payments Advanced add-on was renamed to Website Payments Pro in CS-Cart version **4.10.4**. 
 
-    This is a legacy solution by PayPal. It remains in CS-Cart documentation for the benefit of our existing clients. `See this article for current, up-to-date PayPal solutions integrated with CS-Cart </user_guide/payment_methods/paypal>`.
+    This is a legacy solution by PayPal. It remains in CS-Cart documentation for the benefit of our existing clients. :doc:`See this article for current, up-to-date PayPal solutions integrated with CS-Cart </user_guide/payment_methods/paypal>`.
 
 .. note::
 
