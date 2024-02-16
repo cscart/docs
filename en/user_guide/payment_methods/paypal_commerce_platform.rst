@@ -1,5 +1,5 @@
 *******************************************************
-How To: Set Up PayPal Commerce Platform in Multi-Vendor
+How To: Set up PayPal Commerce Platform in Multi-Vendor
 *******************************************************
 
 .. contents::

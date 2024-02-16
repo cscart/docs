@@ -1,5 +1,5 @@
 ********************************
-How To: Set Up PayPal in CS-Cart
+How To: Set up PayPal in CS-Cart
 ********************************
 
 CS-Cart provides PayPal integrations to ensure a seamless and secure payment experience for both merchants and customers. 

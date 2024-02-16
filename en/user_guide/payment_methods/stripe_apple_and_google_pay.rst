@@ -1,5 +1,5 @@
 *************************************************************************
-How To: Set Up Apple Pay, Google Pay, and Credit Card Payments via Stripe
+How To: Set up Apple Pay, Google Pay, and Credit Card Payments via Stripe
 *************************************************************************
 
 #. Make sure that the :doc:`/user_guide/addons/stripe_payments/index` add-on is installed and active. If not, :doc:`install and enable the add-on </user_guide/addons/1manage_addons>`.

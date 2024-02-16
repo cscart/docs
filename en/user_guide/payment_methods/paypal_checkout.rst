@@ -1,5 +1,5 @@
 ******************************
-How To: Set Up PayPal Checkout
+How To: Set up PayPal Checkout
 ******************************
 
 
