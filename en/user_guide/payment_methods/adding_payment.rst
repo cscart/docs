@@ -6,11 +6,11 @@ To add a payment method, follow these steps:
 
 1. Open the administration panel of your store.
 
-2. Go to **Administration → Payment Methods**. You'll see the list of the available payment methods.
+2. Go to **Settings → Payment methods**. You'll see the list of the available payment methods.
 
 3. Click the **+ button** to open a form for creating a payment method.
 	
-.. image:: img/payment_01.png
+.. image:: img/adding_payment.png
     :align: center
     :alt: Adding a payment method.
 
