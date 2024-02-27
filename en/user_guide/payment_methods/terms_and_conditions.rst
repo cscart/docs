@@ -16,17 +16,17 @@ Step 1. Add the Terms and Conditions Checkbox
 
     You'll probably skip this step: the checkbox for accepting terms and conditions exists at the checkout page by default.
 
-#. Go to **Design → Layouts** and switch to the **Checkout** tab.
+#. Go to **Website → Themes → Edit layouts** and switch to the **Checkout** tab.
 
 #. :doc:`Create a new block </user_guide/look_and_feel/layouts/blocks/actions_on_blocks>` of the **Checkout: Terms and Conditions** type.
 
-#. Make sure to put this block it into the grid with the *Lite checkout* wrapper. It's where all the other checkout-related blocks are.
+#. Make sure to put this block into the grid with the *Lite checkout* wrapper. It's where all the other checkout-related blocks are.
 
 ============================================
 Step 2. Set the Text of Terms and Conditions
 ============================================
 
-#. Go to **Administration → Languages → Translations**.
+#. Go to **Settings → Texts&Languages**.
 
 #. On that page, search for ``terms_and_conditions_content``.
 
