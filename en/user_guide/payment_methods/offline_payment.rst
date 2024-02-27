@@ -4,7 +4,7 @@ How To: Set up the Credit Card Offline Payment Method
 
 To set up the credit card offline payment method, that does not use a real-time payment processor:
 
-1. In the Administration panel go to **Administration → Payment methods**.
+1. In the Administration panel go to **Settings → Payment methods**.
 
 2. Click the **+** button on the right.
 
@@ -16,7 +16,7 @@ To set up the credit card offline payment method, that does not use a real-time 
 
 6. Click **Create**.
 
-.. image:: img/offline_payment.png
+.. image:: img/offline_payment1.png
     :align: center
     :alt: Set up the Offline Payment
 
