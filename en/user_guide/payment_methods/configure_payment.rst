@@ -4,11 +4,11 @@ How To: Configure a Payment Method
 
 To configure a payment method, follow these steps:
 
-1. Go to **Administration → Payment methods** to see the list of available payment methods.
+1. Go to **Settings → Payment methods** to see the list of available payment methods.
 
-2. Click the **gear button** next to the method you need to configure and choose **Edit**.
+2. Click on the method you need to configure to open and edit it.
 
-3. You'll see the form for creating/editing a payment method. Fill it in.
+3. You'll see the form for editing a payment method. Fill it in.
 
 The **General** tab contains basic parameters of the method:
 
@@ -28,8 +28,6 @@ The **General** tab contains basic parameters of the method:
 
  * **Template**—the template to display all the necessary input fields in the customer area of your store. You can select the template only if you set **Processor** to *Offline*.
 
- * **Payment category**—select a category that the payment method belongs to. Payment categories will appear on the checkout page, if two or more payment methods are assigned to different categories. Categories group payment methods and make it easier for your customers to find the desired payment methods at checkout.
-
  * **User groups**—the :doc:`user groups <../users/user_groups/index>` that are allowed to use this method.
 
  * **Description**—brief description of the payment method. This description appears on the checkout page.
@@ -46,7 +44,7 @@ The **General** tab contains basic parameters of the method:
 		
    .. note::
 
-       To configure the tax calculation rules available in your store, use the **Administration → Shipping & Taxes → Taxes** section.
+       To configure the tax calculation rules available in your store, use the **Settings → Taxes** section.
 
  * **Payment instructions**—administrator's instructions to customers on the usage of the payment method. The instructions can either be written in plain text, or formatted in HTML. If you are not familiar with HTML, use the built-in WYSIWYG HTML editor to add a formatted description.
 
@@ -54,7 +52,7 @@ The **General** tab contains basic parameters of the method:
 
    .. important::
 
-       Icons of the payment methods are displayed in the **Payment icons** block. To see the icons, add this block to the desired page in the **Design → Layouts** section.
+       Icons of the payment methods are displayed in the **Payment icons** block. To see the icons, add this block to the desired page in the **Website → Themes → Edit layouts** section.
 
 The **Configure** tab appears only if you selected an online payment system in the **Processor** field. It contains the settings that are specific to the payment system.
 
