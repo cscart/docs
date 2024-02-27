@@ -19,7 +19,7 @@ CS-Cart and Multi-Vendor Compatibility
 PHP Version Compatibility
 ---------------------------
 
-    Part of our add-ons are compatible with php 5.6, the other part requires php 7. Our products are not compatible with php 8 yet.
+    Part of our add-ons are compatible with php 5.6, the other part requires php 7.
     The more detailed information is presented on the product pages on marketplaces and documentation.
 
 -------------------------------------------------------------------
