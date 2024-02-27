@@ -15,17 +15,6 @@ Addons
 
     addons/index
 
-.. ================
-.. Payment Gateways
-.. ================
-
-.. toctree
-..     :maxdepth: 4
-..     :titlesonly:
-..     :glob:
-
-..     payments/index
-
 ===============
 Themes
 ===============

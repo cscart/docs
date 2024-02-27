@@ -30,19 +30,6 @@ This section is dedicated to add-ons: useful extensions that provide additional 
 
     addons/index
 
-==================
-Payments Gateways
-==================
-
-This section is dedicated to payment gateways; extensions that provide integrations of payment methods that your customers could use to pay their orders.
-
-.. toctree::
-    :maxdepth: 1
-    :titlesonly:
-    :glob:
-
-    payments/index
-
 ===============
 Themes
 ===============
