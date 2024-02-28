@@ -46,7 +46,8 @@ How To: Set up PayPal Express Checkout in CS-Cart
        :align: center
        :alt: Use one of the "Connect to PayPal" buttons to set up the add-on in Test or Live mode.
 
-#. (optional) If you didn't use **Connect to PayPal** buttons, make sure to fill in the **Technical details** manually:
+.. _technical-details:
+#. (optional) If you didn't use **Connect to PayPal** buttons, make sure to fill in the :ref:`Technical details manually <technical-details>`:
 
    * **Use In-Context Checkout**—tick this checkbox if you want to use *In-Context Checkout*.
 
