@@ -37,7 +37,7 @@ The Dashboard
 
 The first thing you’ll notice is the **Dashboard**, where you can check sales statistics, view recent orders and product changes. The Dashboard also provides information from the database, such as the number of active products and registered customers.
 
-.. image:: img/intro/dashboard.png
+.. image:: img/intro/dashboard1.png
     :align: center
     :alt: The Dashboard provides the statistics of your store.
 
@@ -46,17 +46,15 @@ The first thing you’ll notice is the **Dashboard**, where you can check sales 
 
 #. Total number of orders for a current period.
 
-#. Brief statistics of the store: recent orders, customers, etc. Click on the **View all** to go to the page with the detailed list of orders.
+#. Brief statistics of the store's recent orders. Switch between the tabs to see orders with particular statuses. Click on the **View all** to go to the page with the detailed list of orders.
 
-#. Recent orders made in your store. Switch between the tabs to see orders with particular statuses.
+#. Brief vendors activity statistics: new vendors, new products, etc. Click on the **View all** links to go to the page with the detailed list of vendors.
 
-#. Brief vendors activity statistics: new vendors, new products, etc.
-
-#. Vendors and registered customers quantity statistics. Click on the **View all** links to go to the page with the detailed list of vendors or customers. 
+#. Vendors and registered customers quantity statistics. Click on the **View vendors** or **View customers** links to go to the page with the detailed lists. 
 
 #. Brief variant of information, represented in the **Settings → Logs** section. Click the **View all** link to view the full log.
 
-You can also choose the period of time, for which the information on the dashboard is displayed. Click on the period in the right upper corner of the page and choose the required period of time from the drop-down menu. Optionally, click **Custom Range** to define your own period.
+#. You can also choose the period of time, for which the information on the dashboard is displayed. Click on the period in the right upper corner of the page and choose the required period of time from the drop-down menu. Optionally, click **Custom Range** to define your own period.
 
 .. image:: img/intro/period_custom.png
     :align: center
