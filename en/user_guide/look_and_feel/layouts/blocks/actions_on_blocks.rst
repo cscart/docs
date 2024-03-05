@@ -4,7 +4,7 @@ How To: Manage Blocks
 
 You can re-arrange blocks in the frame, add and remove blocks, edit block properties, activate and disable blocks, assign blocks to specific items/pages.
 
-When you need to perform an action on the blocks, go to **Design → Layouts** and select the layout page where the necessary block appears or should appear.
+When you need to perform an action on the blocks, go to **Website → Themes → Edit layouts** and select the layout page where the necessary block appears or should appear.
 
 .. note::
 
@@ -31,7 +31,7 @@ When adding a block, you can use one of the following options:
 
 *	Click the **+** icon on the container where the block should be placed and select **Add Block**.
 
-.. image:: img/block.png
+.. image:: img/adding_block.png
     :align: center
     :alt: Add block
 
@@ -63,7 +63,7 @@ To edit a block:
 *	Edit the block parameters.
 *	Click **Save** to apply the changes.
 
-.. image:: img/edit_block.png
+.. image:: img/edit_block1.png
     :align: center
     :alt: Edit block
 
@@ -79,7 +79,7 @@ To remove a block from the frame:
 *	Move the cursor over the block and click the trash can icon.
 *	When prompted, confirm the action.
 
-.. image:: img/delete_block.png
+.. image:: img/delete_block1.png
     :align: center
     :alt: Delete block
 
@@ -98,6 +98,6 @@ However, you can hide a block individually for an item (product, category, page,
 *	Shift to the **Layouts** tab.
 *	Deactivate (hide) or activate (show) the block.
 
-.. image:: img/deactivate_block.png
+.. image:: img/deactivate_block1.png
     :align: center
     :alt: Deactivate block
