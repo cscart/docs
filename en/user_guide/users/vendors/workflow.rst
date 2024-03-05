@@ -14,13 +14,13 @@ Basic Multi-Vendor (No Add-Ons)
 
 **By default, all the money from orders in Multi-Vendor goes to the marketplace owner.** That way customers have to make only one payment for one order with products from different vendors. The order is then automatically split into multiple orders, so that each vendor could manage their own part of the original order.
 
-Once the marketplace owner receives the money, it's up to him or her to distribute it among vendors. For that purpose, Multi-Vendor has the :doc:`Accounting </user_guide/users/vendors/account_balance>` page. It tracks vendors' account balance and provides the following tools for money management:
+Once the marketplace owner receives the money, it's up to them to distribute it among vendors. For that purpose, Multi-Vendor has the :doc:`Accounting </user_guide/users/vendors/account_balance>` page. It tracks vendors' account balance and provides the following tools for money management:
 
 * A vendor can :ref:`request the withdrawal <withdrawal>` of a certain sum of money from his or her account balance. It's up to the marketplace owner to actually transfer the money; the transfer itself isn't performed through Multi-Vendor.
 
 * The marketplace owner can also :ref:`issue payouts <payout>` to take sum from a vendor's account balance in favor of the marketplace. That's how the marketplace makes its profits.
 
-  .. image:: img/account_balance.png
+  .. image:: img/account_balance1.png
       :align: center
       :alt: The Accounting page in Multi-Vendor.
 
@@ -110,7 +110,7 @@ The :doc:`/user_guide/addons/direct_customer_to_vendor_payments/index` add-on fr
 
 #. Any transaction fees imposed by the marketplace are listed as :ref:`unpaid payouts <payout>` (vendor's debt to the marketplace owner).
 
-   .. image:: /user_guide/addons/direct_customer_to_vendor_payments/img/vendor_payment_methods.png
+   .. image:: /user_guide/addons/direct_customer_to_vendor_payments/img/vendor_payment_methods1.png
        :align: center
        :alt: Paying to vendors separately means that each vendor gets money directly from customers, without the need for you to do something about it.
 
