@@ -14,7 +14,7 @@ Multi-Vendor allows you to add a special block to showcase your vendors and disp
 
 Here's how to add this block:
 
-#. Go to **Design → Layouts**.
+#. Go to **Website → Themes Edit → layouts**.
 
 #. Select the :doc:`layout page </user_guide/look_and_feel/layouts/layout_pages/index>` where you'd like to put that block (for example, *Homepage*).
 
@@ -30,7 +30,7 @@ Here's how to add this block:
 
        Click the **Settings** link to access the additional settings that will let you customize the look of the block.
 
-   .. image:: img/featured_vendors_template_settings.png
+   .. image:: img/featured_vendors_template_settings1.png
        :align: center
        :alt: Template settings for the block with featured vendors.
 
