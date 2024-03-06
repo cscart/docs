@@ -14,7 +14,7 @@ Step 1. Create Banners
 
 	.. important::
 
-		If there is no such section, make sure that the **Banners management** add-on has an *Active* status in the **Add-ons → Manage add-ons** section.
+		If there is no such section, make sure that the **Banners management** add-on has an *Active* status in the **Add-ons → Downloaded add-ons** section.
 
     *   Click the **+** button on the right. The opened page allows to create banners.
     *   In the **Name** input field type the name of the banner, in the **Type** select box select *Graphic banner* and upload the necessary image.
@@ -25,7 +25,7 @@ Step 1. Create Banners
 Step 2. Create a Block for Banners
 ==================================
 
-*   Go to **Design → Layouts → Categories**.
+*   Go to **Website → Themes → Edit layouts → Categories**.
 *   Click the **+** button in the necessary container and click **Add block**.
 *   Open the **Create New Block** tab and in the opened section click the **Banners** button.
 *   In the opened section, specify the name of the new block (e.g. *Banners*) and and click the **Create** button. Click on the gear icon on the created block and select:
@@ -36,7 +36,7 @@ Step 2. Create a Block for Banners
 *   Open the **Content** tab and select *Manually* in the **Filling** select box.
 *   Click the **Save** button.
 
-.. image:: img/banners_01.png
+.. image:: img/banners1.png
     :align: center
     :alt: Edit block
 
@@ -51,7 +51,7 @@ Step 3. Add Banners to Specific Categories
 *   Click the **Add banners** button, select the desired banners, and click the **Add banners and close** button.
 *   Click the **Save** button.
 
-.. image:: img/banners_02.png
+.. image:: img/banners2.png
     :align: center
     :alt: Layouts
 
