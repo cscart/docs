@@ -22,7 +22,7 @@
 
 7. При необходимости можно указать подходящий CSS-класс в поле **Пользовательский CSS-класс**.
 
-.. image:: img/arranging_categories_01.png
+.. image:: img/arranging_categories-1.png
     :align: center
     :alt: Вкладка Общее
 
@@ -30,7 +30,7 @@
 
 9. Нажмите **Сохранить**.
 
-.. image:: img/arranging_categories_02.png
+.. image:: img/arranging_categories-2.png
     :align: center
     :alt: Вкладка Страницы
 
@@ -40,6 +40,6 @@
 
 Вот так категории выглядят на домашней странице витрины:
 
-.. image:: img/arranging_categories_03.png
+.. image:: img/arranging_categories-3.png
     :align: center
     :alt: Категории на домашней странице витрины
