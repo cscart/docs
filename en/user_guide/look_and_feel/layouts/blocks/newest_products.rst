@@ -8,7 +8,7 @@ How To: Display the Newest Products on All Pages
 
 To display the section of the newest products on all pages:
 
-*   In the Administration panel, go to **Design → Layouts → Default**.
+*   In the Administration panel, go to **Website → Themes → Edit layouts → Default**.
 *   Click the **+** button in the necessary container and click **Add block**.
 *   Open the **Create New Block** tab and in the opened section click the **Products** button.
 *   In the opened section, specify the name of the new block (e.g. *Newest products*) and click the **Create** button.
@@ -31,7 +31,7 @@ How To: Display the Newest Products on the Category Page
 
 To display the section of the newest products on the category page:
 
-*   In the Administration panel, go to **Design → Layouts → Categories**.
+*   In the Administration panel, go to **Website → Themes → Edit layouts → Categories**.
 *   Click the **+** button in the necessary container and click **Add block**.
 *   Open the **Create New Block** tab and in the opened section click the **Products** button.
 *   In the opened section, specify the name of the new block (e.g. *Newest products*) and click the **Create** button.
@@ -41,7 +41,7 @@ To display the section of the newest products on the category page:
     *   Desired wrapper in the **Wrapper** select box.
     *   Desired CSS-class in the **User-defined CSS-class** input field if needed.
 
-.. image:: img/newest_01.png
+.. image:: img/newest-1.png
     :align: center
     :alt: Content tab
 
@@ -52,6 +52,6 @@ To display the section of the newest products on the category page:
 
 	After the block is created or changed, make sure it is displayed correctly. Sometimes not all wrappers are suitable for the blocks.
 
-.. image:: img/newest_02.png
+.. image:: img/newest-2.png
     :align: center
     :alt: Block on the storefront
