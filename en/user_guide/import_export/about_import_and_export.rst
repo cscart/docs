@@ -2,7 +2,7 @@
 About Import and Export
 ***********************
 
-To import or export data (such as products, orders, options, etc.), go to **Administration → Import data** or **Administration → Export data** respectively.
+To import or export data (such as products, orders, options, etc.), go to **Settings → Import data** or **Settings → Export data** respectively.
 
 ==========
 Data Types
@@ -30,7 +30,7 @@ For convenience, the import and export pages split the data into types (see the 
 
     Starting with version 4.4.1, Multi-Vendor allows you to export and import :doc:`vendors <../users/vendors/index>`.
 
-.. image:: img/data_subsections.png
+.. image:: img/data_subsections1.png
     :align: center
     :alt: Switch between the types of data you want to import or export by using the menu on the right.
 
@@ -44,7 +44,7 @@ Every data type may include several tabs. Each tab includes two areas:
 
 * The lower area contains the import settings. These settings may vary depending on the type of the imported data.
 
-.. image:: img/import_example.png
+.. image:: img/import_example1.png
     :align: center
     :alt: Different types of data have different imported fields and required settings.
 
@@ -60,7 +60,7 @@ The content of an exported CSV file is determined by two list boxes:
 
 To move fields from one list to another, use the twin horizontal arrows between the lists. To change the order of fields in the **Exported fields** list, use the twin vertical arrows below the list box. The highlighted fields on the **Exported fields** list are mandatory and thus cannot be removed from the list.
 
-.. image:: img/export_example.png
+.. image:: img/export_example1.png
     :align: center
     :alt: Different types of data have different fields available for export.
 
