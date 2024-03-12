@@ -98,7 +98,7 @@ This is the list of all export settings. Some of them appear only in specific su
 
   .. important::
 
-      Regardless of the output type, you can download the file later: go to **Administration → Export data**, click the **gear** button, and choose **Exported files**.
+      Regardless of the output type, you can download the file later: go to **Settings → Export data**, click the **gear** button, and choose **Exported files**.
 
 * **Filename**—the name that the exported CSV file will get.
 
