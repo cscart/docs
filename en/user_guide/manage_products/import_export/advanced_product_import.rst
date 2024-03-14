@@ -6,11 +6,11 @@ How To: Import Products and Product Data
 
     This functionality is added by the :doc:`/user_guide/addons/advanced_products_import/index` add-on.
 
-#. In the Administration panel, go to **Administration → Import data → Products**.
+#. In the Administration panel, go to **Settings → Import data → Products**.
 
-#. Click the **+** button to add a new import preset.
+#. Click the **Products** button to add a new import preset.
 
-   .. image:: img/advanced_import_add_preset.png
+   .. image:: img/advanced_import_add_preset_1.png
        :align: center
        :alt: Advanced product import in CS-Cart. 
 
@@ -50,7 +50,7 @@ How To: Import Products and Product Data
 
        Once you create an import preset, the **File** tab will contain a command that you can add to `cron <https://wikipedia.org/wiki/Cron>`_. That way you'll be able to run the import periodically, at certain time intervals.
 
-   .. image:: img/advanced_import_file_settings.png
+   .. image:: img/advanced_import_file_settings_1.png
        :align: center
        :alt: Adding a product import preset in CS-Cart. 
 
@@ -62,7 +62,7 @@ How To: Import Products and Product Data
 
    * If necessary, add a few modifiers. *Modifiers* are functions that help you change the imported data. Use the **Modifiers list** button to find out what modifiers exist and how to use them.
 
-     .. image:: img/advanced_import_field_mapping.png
+     .. image:: img/advanced_import_field_mapping1.png
          :align: center
          :alt: Matching product properties with the imported file.
 
@@ -114,7 +114,7 @@ How To: Import Products and Product Data
 
      Only the products that have a quantity specified in the imported file will have a different quantity.
 
-   .. image:: img/advanced_import_additional_settings.png
+   .. image:: img/advanced_import_additional_settings1.png
        :align: center
        :alt: Additional settings of an import preset in CS-Cart.
 
