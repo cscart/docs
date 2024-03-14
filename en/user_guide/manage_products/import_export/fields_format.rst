@@ -36,9 +36,9 @@ A two-letter lowercase language code. This field is **mandatory**.
 
 To find out a language code:
 
-#. In the Administration panel, go to **Administration → Languages**.
+#. In the Administration panel, go to **Settings → Texts & Languages**.
 
-#. Switch to the **Available** tab.
+#. Switch to the **Manage languages** tab.
 
 #. Find the desired language and see it language code in the **Language code** row.
 
