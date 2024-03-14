@@ -2,7 +2,7 @@
 How To: Export Products and Product Data
 ****************************************
 
-#. In the Administration panel, go to **Administration → Export data → Products**.
+#. In the Administration panel, go to **Settings → Export data → Products**.
 
 #. (optional) If you only want to export some specific products, then:
 
@@ -16,7 +16,7 @@ How To: Export Products and Product Data
 
 #. Make sure that all the fields you want to export are in the **Exported fields**; move other fields to the **Available fields** box.
 
-   .. image:: img/export_01.png
+   .. image:: img/export1.png
        :align: center
        :alt: Selecting the product fields to export in CS-Cart.
 
@@ -46,7 +46,7 @@ How To: Export Products and Product Data
 
    * **Filename**—the name that the exported CSV file will get.
 
-     .. image:: img/export_02.png
+     .. image:: img/export2.png
          :align: center
          :alt: The export settings in CS-Cart.
 
