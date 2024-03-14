@@ -16,7 +16,7 @@ This article describes how you can test the import functionality of your store b
 
         You'll be able to view or edit a CSV file in a spreadsheet application, for example, Microsoft Office Excel or Libre Office Calc.
 
-#. In the Administration panel, go to **Administration → Import data → Products (Deprecated)**. Alternatively, you can use the advanced import; it is described :doc:`in another article </user_guide/manage_products/import_export/advanced_product_import>`.
+#. In the Administration panel, go to **Settings → Import data → Products (Deprecated)**. Alternatively, you can use the advanced import; it is described :doc:`in another article </user_guide/manage_products/import_export/advanced_product_import>`.
 
 #. In the **Import options** section, specify the following settings:
 
