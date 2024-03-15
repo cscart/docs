@@ -22,7 +22,7 @@ Uploading files to an external server will save you space on the server with you
 
        http://www.example.com/test_file.pdf
        
-#. Go to **Add-ons → Manage add-ons**.
+#. Go to **Add-ons → Downloaded add-ons**.
 
 #. Find the **Attachments** add-on in the list, and click its name to open the settings.
 
@@ -40,7 +40,7 @@ Uploading files to an external server will save you space on the server with you
 Uploading Files to Your Store's Server
 ======================================
 
-#. In the administration panel, go to **Administration → Files**.
+#. In the administration panel, go to **Settings → Storage → View files**.
 
 #. Select **Private files**.
 
@@ -60,7 +60,7 @@ Uploading Files to Your Store's Server
    
          test_file.pdf
          
-     .. image:: img/file_editor_attachments.png
+     .. image:: img/file_editor_attachments1.png
          :align: center
          :alt: File editor
 
