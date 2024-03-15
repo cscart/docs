@@ -27,7 +27,7 @@ File Editor
 
 Let’s assume that we want to upload some images for products. They need to be added to the **Private files** section, into a special directory: *exim/backup/images*.
 
-#. Go to **Administration → Files** in the admin panel of your store.
+#. Go to **Settings → Storage → View files** in the admin panel of your store.
 
 #. Choose the **Private files** section.
 
@@ -37,7 +37,7 @@ Let’s assume that we want to upload some images for products. They need to be 
 
    Congratulations! Our images are now located in *exim/backup/images*, and we can refer to them in an imported file.
 
-   .. image:: img/file_editor.png
+   .. image:: img/file_editor1.png
        :align: center
        :alt: CS-Cart file editor supports drag-and-drop. Actions can be performed via buttons at the top or via the context menu.
 
@@ -73,7 +73,7 @@ There are multiple ways to specify where CS-Cart or Multi-Vendor should look for
 
       The value of the **Images directory** is ignored for Ways 1 - 3.
 
-  .. image:: img/images_directory.png
+  .. image:: img/images_directory1.png
       :align: center
       :alt: If you want to specify only image names in the imported files, then use the "Images directory" field for image import.
 
@@ -111,7 +111,7 @@ Example of Importing Images
 
 #. :doc:`Import the products </user_guide/manage_products/import_export/advanced_product_import>`. When matching the columns on the **Fields mapping** tab, make sure to match each of the columns in the imported file with a product property in CS-Cart. Most of the columns have the same names as the corresponding product properties; the **images** column must be matched with **Advanced Import: Images**.
 
-   .. image:: img/import_products_with_images.png
+   .. image:: img/import_products_with_images1.png
        :align: center
        :alt: Importing images along with products in CS-Cart.
 
