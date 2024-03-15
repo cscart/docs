@@ -8,9 +8,7 @@ CS-Cart and Multi-Vendor allow you to upload your product data to `Google Mercha
 Step 1. Install the Add-ons
 ===========================
 
-#. In the Administration panel, go to **Add-ons → Manage add-ons**.
-
-#. Switch to the **Browse all available** add-ons tab.
+#. In the Administration panel, go to **Add-ons → Downloaded add-ons**.
 
 #. Make sure that the **Data feeds** and **Google export** add-ons are installed. If they aren't, install them.
 
@@ -18,7 +16,7 @@ Step 1. Install the Add-ons
 
    * The :doc:`Google export </user_guide/addons/google_export/index>` add-on allows you to use the field types required by Google in your data feeds.
 
-     .. image:: img/data_feeds_and_google_export.png
+     .. image:: img/data_feeds_and_google_export1.png
          :align: center
          :alt: Both Data Feeds and Google Export add-ons must be installed, if you need to export products to Google Merchant Center.
 
@@ -32,7 +30,7 @@ Step 2. Check and Edit Your Products
 
 #. Some of the fields required by Google are created automatically as :doc:`product features </user_guide/manage_products/features/index>` in the **Google export features** group. You'll see them on the product editing page and will be able to set their values, if applicable.
 
-   .. image:: img/google_export_features.png
+   .. image:: img/google_export_features1.png
        :align: center
        :alt: Google export features
 
@@ -66,7 +64,7 @@ Step 3. Create a Data Feed
 
 #. To generate a feed file, click the **gear** button and choose **Download**.
 
-   .. image:: img/download_data_feed.png
+   .. image:: img/download_data_feed1.png
        :align: center
        :alt: Click the gear button next to the feed and choose Download to get the feed file.
 
