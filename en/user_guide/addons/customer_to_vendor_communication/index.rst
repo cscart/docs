@@ -20,7 +20,7 @@ Functionality
 Communication with Customers
 ++++++++++++++++++++++++++++
 
-The **Message center** add-on allows you and your vendors to stay in touch with customers. On the **Customers → Message center** page, vendors or marketplace owners can:
+The **Message center** add-on allows you and your vendors to stay in touch with customers. On the **Users → Message center** page, vendors or marketplace owners can:
 
 * read customers' messages;
 
@@ -28,7 +28,7 @@ The **Message center** add-on allows you and your vendors to stay in touch with 
 
   The right side of the page contains the context (for example, information about the product or order), which allows you to understand the customer's question better. The link leads the vendor to the product page or order right from the dialogue.
 
-  .. image:: img/ask_a_question.png
+  .. image:: img/ask_a_question1.png
         :align: center
         :alt: Dialogue between the customer and the vendor on product.
 
