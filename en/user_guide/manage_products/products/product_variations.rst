@@ -80,7 +80,7 @@ Let's say you have added a new product to your store, and now you want to create
 
 #. Click **Create**. The variations will be generated automatically.
 
-   .. image:: img/add_new_variations.png
+   .. image:: img/add_new_variations1.png
        :align: center
        :alt: Adding new variations from the product page
        
@@ -108,7 +108,7 @@ Let's say you have imported products to your store, and now you want to put some
        
 #. Select the products you need, and click **Add variations**.
        
-   .. image:: img/use_existing_products.png
+   .. image:: img/use_existing_products1.png
        :align: center
        :alt: Creating a new variation group based on the existing products
        
@@ -138,7 +138,7 @@ Once a variation group is created, all products from the group will appear on th
 
 * Disband the group—turn all its variations into independent products and remove the ability to switch between them on the product page.
 
-  .. image:: img/product_variations_list.png
+  .. image:: img/product_variations_list1.png
       :align: center
       :alt: Catalog items have bigger pictures than variations that can be selected only on the product page.
 
