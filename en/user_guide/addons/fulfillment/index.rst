@@ -60,11 +60,11 @@ The add-on doesn't have settings. You can enable shipping by the marketplace for
 
 #. Push the **Save** button. Now all the products from the vendor with this plan will be shipped by the marketplace.
 
-   .. image:: img/enable_fulfillment.png
+   .. image:: img/enable_fulfillment1.png
        :align: center
        :alt: Enabling fulfillment for the vendor plan.
 
-#. Go to the **Administration → Shipping & taxes → Shipping Methods** page. :doc:`Create a shipping method </user_guide/shipping_and_taxes/shipping_methods/add_shipping_method>` or find an existing one that will be offered to vendors with fulfillment. To make the shipping method be offered to vendors with fulfillment, set the *Marketplace* as the **Owner** in the **General** tab of this method settings.
+#. Go to the **Settings → Shipping Methods** page. :doc:`Create a shipping method </user_guide/shipping_and_taxes/shipping_methods/add_shipping_method>` or find an existing one that will be offered to vendors with fulfillment. To make the shipping method be offered to vendors with fulfillment, set the *Marketplace* as the **Owner** in the **General** tab of this method settings.
 
 Logic Changes after Add-on Activation
 =====================================
