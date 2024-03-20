@@ -26,13 +26,13 @@ Decide When Vendors Become Debtors
 
 The add-on allows you to set the minimum allowed balance for vendors, and the time to refill the balance after it goes below that point. If a vendor doesn't refill the balance within that time, he or she will be considered a debtor and get the *Suspended* status with all the associated restrictions.
 
-.. image:: img/global_settings.png
+.. image:: img/global_settings1.png
     :align: center
     :alt: Configure minimum allowed balance and grace period in vendor plans settings
 
 By default, the settings are global and are located on the add-on level. But you can allow different values for individual :doc:`vendor plans </user_guide/addons/vendor_plans/index>`.
 
-.. image:: img/plan_settings.png
+.. image:: img/plan_settings1.png
     :align: center
     :alt: Configure minimum allowed balance and grace period in vendor plans settings
 
@@ -58,7 +58,7 @@ Let Your Vendors Pay Debts
 
 With the new add-on, vendors can pay their debts at any time without complications. All they have to do is enter an amount of money, and click the **Refill balance** button. Then vendors will be redirected to the сheckout page. All restrictions will be removed automatically once the payment is processed.
   
-.. image:: img/admin_panel_blocked.png
+.. image:: img/admin_panel_blocked1.png
     :align: center
     :alt: Message about the blocked admin panel and Pay the fees button
 
