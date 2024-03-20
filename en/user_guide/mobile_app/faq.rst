@@ -240,7 +240,7 @@ Once the application is published, it will automatically :ref:`exchange data wit
 
    .. important::
 
-       The changes to the home page and sidebar are made in the admin panel of your store: go to **Design → Layouts** and switch to **MobileAppLayout**. It will appear only if the **Mobile Application** add-on is installed.
+       The changes to the home page and sidebar are made in the admin panel of your store: go to **Website → Themes → Edit layouts** and switch to **MobileAppLayout**. It will appear only if the **Mobile Application** add-on is installed.
 
 ------------------------------------------------------------------
 What if I Want to Change Colors or Logos after You Publish My App?
@@ -270,7 +270,7 @@ How Do I Change the Texts of My App?
 
 The texts of your app are a part of **Mobile Application** add-on and can be edited in the admin panel of your store. Changing these texts works the same way as :doc:`translating CS-Cart </user_guide/look_and_feel/languages/translate>`:
 
-#. Go to **Administration → Text & Languages → Edit texts**. 
+#. Go to **Settings → Text & Languages → Edit texts**. 
 
 #. Switch to the *Mobile application translations* tab in the sidebar on the right.
 
@@ -322,7 +322,7 @@ Home Page: How to Show or Hide the Titles of Blocks?
 
 The titles of blocks on the home page may or may not appear. That depends on the wrapper that you select for blocks in the admin panel of your store.
 
-Go to **Design → Layouts** and switch to **MobileAppLayout**. Select the **Homepage** tab and click the gear icon of any block to open the block's settings. There you will be able to select a wrapper for the block:
+Go to **Website → Themes → Edit layouts** and switch to **MobileAppLayout**. Select the **Homepage** tab and click the gear icon of any block to open the block's settings. There you will be able to select a wrapper for the block:
 
 * Select ``--`` if you want to hide the title of the block at the home page in your mobile app.
 
@@ -338,7 +338,7 @@ Sidebar: How to Add or Remove Menu Items?
 
 The top menu of the sidebar (Home, Cart, Wish List, My profile, Orders) is always the same. The bottom menu can be configured in the admin panel of your store.
 
-#. Go to **Design → Layouts**.
+#. Go to **Website → Themes → Edit layouts**.
 
 #. Select **MobileAppLayout** on the right.
 
