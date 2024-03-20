@@ -45,7 +45,7 @@ How to Restrict the Communication between Vendors and Customers?
 
 Let's say you want your vendors to read the messages from customers, but only you could answer them. To do this:
 
-#. Open the **Customers → User groups** page.
+#. Open the **Users → Customers → User groups** page.
 
 #. Click the name of the **Vendor** user group.
 
@@ -62,7 +62,7 @@ How to Forbid Your Vendors to Answer Your Messages?
 
 If you want to use the **Message center** add-on only as a tool for announcments, but do not want your vendors to answer your messages:
 
-#. Open the **Customers → User groups** page.
+#. Open the **Users → Customers → User groups** page.
 
 #. Click the name of the **Vendor** user group.
 
@@ -79,7 +79,7 @@ How to Set Restrictions for Specific Vendors?
 
 Let's say you want to forbid specific vendors to read or answer messages, not all of them.
 
-#. Open the **Customers → User groups** page.
+#. Open the **Users → Customers → User groups** page.
 
 #. Create a new user group and set it's **Type**.
 
