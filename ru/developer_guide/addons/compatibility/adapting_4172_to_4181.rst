@@ -55,7 +55,7 @@
         \Tygh\Template\Document\Order\Context::getLanguageDirection()
 
 
-.. _Dynamic actions display updated:
+.. _Dynamic-actions-display-updated:
 
 -------------------------------------------
 Обновлено отображение динамических действий
@@ -65,7 +65,7 @@
 
 Требования для динамических действий:
 
-- Используйте глаголы в названиях кнопок. Например: используйте **View feature groups** вместо **Feature groups**.
+- Используйте глаголы в названиях кнопок. Например: используйте **Add several products**.
 - Кнопки должны работать как в виде кнопок, так и в виде пунктов в выпадающем меню.
 
 Пример добавления кнопки через контроллер
@@ -113,38 +113,37 @@
 Динамические секции признаны устаревшими
 ----------------------------------------
 
-**Динамические секции** ``$navigation.dynamic.sections`` признаны устаревшими. Вместо них используйте динамические действия. Используйте глаголы в названиях кнопок динамических действий.
+**Динамические секции** ``$navigation.dynamic.sections`` признаны устаревшими. Вместо них используйте динамические действия.
 
-------------------------------------------------
-Некоторые кнопки шестеренки признаны устаревшими
-------------------------------------------------
+--------------------------------------
+Кнопки шестеренки признаны устаревшими
+--------------------------------------
 
-**Кнопки шестеренки** на списке объектов признаны устаревшими (например, на странице списка товаров). Для выполнения действий используйте `Context menu <https://www.cs-cart.ru/docs/latest/developer_guide/core/context_menu/index.html>`_. Изменился вид кнопок шестеренки на списке товаров и заказов (хуки ``products:list_extra_links`` и ``orders:list_extra_links``). 
-
-
+**Кнопки шестеренки** на списке объектов признаны устаревшими (например, на странице списка товаров). Используйте вместо них динамические действия. Обратите внимание, что динамические действия можно отображать и как отдельные кнопки, и как элементы выпадающего меню.
 
 -----------------------------------------------------------------------------------------
 Расширение поисковых фильтров через шаблон на странице списка товаров признано устаревшим
 -----------------------------------------------------------------------------------------
 
-Поисковые фильтры на списке товаров теперь задаются с помощью массива. Используйте хук ``products:search_data`` для её расширения. Например, чтобы добавить текстовое поле подключите хук:
+Поисковые фильтры на списке товаров (?dispatch=products.manage) теперь задаются с помощью массива. Используйте хук ``products:search_data`` для её расширения. Например, чтобы добавить текстовое поле подключите хук:
 
 **design/backend/templates/addons/my_changes/hooks/products/search_data.post.tpl**
 ::
 
-        {$search_filters.my_changes_filter = [
-            id => "my_changes_filter",
-            type => "input",
-            label => __("my_changes_filter"),
-            value => $search.my_changes_filter_value,
-            placeholder => __("my_changes_filter_placeholder")
-        ]}
+    {$search_filters.data.my_changes_filter = [
+        id => "my_changes_filter",
+        type => "input",
+        category => "secondary",
+        label => __("my_changes_filter"),
+        value => $search.my_changes_filter_value,
+        placeholder => __("my_changes_filter_placeholder")
+    ]}
 
-        {* Export *}
-        {$search_filters = $search_filters scope=parent}
-        
+    {* Export *}
+    {$search_filters = $search_filters scope=parent}
 
-Хуки ``products:simple_search``, ``companies:products_advanced_search``, ``products:search_form``, ``products:search_in_orders`` и ``products:advanced_search`` признаны устаревшими. Хук ``products:select_search`` признан устаревшим, используйте хук ``products:sort_by_content`` вместо него.
+
+Хуки ``products:simple_search``, ``companies:products_advanced_search``, ``products:search_form``, ``products:search_in_orders`` и ``products:advanced_search`` для расширения списков товаров признаны устаревшими. Хук ``products:select_search`` признан устаревшим, используйте хук ``products:sort_by_content`` вместо него.
 
 Пример подключения поисковых фильтров можно найти в секции :ref:`Поисковые фильтры на странице списка товаров <search-filters-on-product-list>`.
 
@@ -156,18 +155,15 @@
 
 **design/backend/templates/views/products/manage.tpl**
 ::
-    {
-        $search_form_dispatch = $dispatch |
-        default: "products.manage"
-    } {
-        $saved_search = [
-            dispatch => $search_form_dispatch,
-            view_type => "products"
-        ]
-        } {
-        include file = "common/mainbox.tpl"
-            ...
-            saved_search = $saved_search
+
+    {$search_form_dispatch = $dispatch|default:"products.manage"}
+    {$saved_search = [
+        dispatch => $search_form_dispatch,
+        view_type => "products"
+    ]}
+    {include file="common/mainbox.tpl"
+        ...
+        saved_search=$saved_search
     }
 
     
@@ -183,7 +179,7 @@
 ::
     <?php
 
-    use Tygh\ Enum\ DashboardSections;
+    use Tygh\Enum\DashboardSections;
 
     defined('BOOTSTRAP') or die('Access denied');
 
@@ -201,11 +197,12 @@
 ::
     <?php
 
-    if (!defined('BOOTSTRAP')) {
-        die('Access denied');
-    }
 
-    function fn_my_changes_get_dashboard_block_data() {
+    if (!defined('BOOTSTRAP')) { die('Access denied'); }
+
+
+    function fn_my_changes_get_dashboard_block_data()
+    {
         $content_data = [
             'id' => 'my_changes',
             'title' => __('my_changes.dashboard.title'),
@@ -228,7 +225,7 @@
 Setup wizard признан устаревшим
 -------------------------------
 
-**Setup wizard** признан устаревшим. Вместо него используйте вкладку **Settings** настроек своего модуля. `Прочитайте о структуре scheme 3.0 <https://www.cs-cart.ru/docs/latest/developer_guide/addons/scheme/scheme3.0_structure.html>`__.
+**Setup wizard** признан устаревшим. Вместо него используйте вкладку **Settings** настроек своего модуля. Теперь Less-переменные в CS-Cart соответствуют `Bootstrap 2 <https://getbootstrap.com/2.3.2/>`_.
 
 ----------------------------
 Обновлено отображение иконок
@@ -378,39 +375,41 @@ Setup wizard признан устаревшим
 
 **design/backend/templates/components/menu/actions_menu.tpl**
 
-Динамические действия отображаются в виде кнопок. Если кнопок много, то часть из них отображается в виде выпадающего меню. Свойства соответствуют хелперу ``{btn}`` из ``buttons/helpers.tpl``, плюс дополнительный параметр ``wrapper_class``. Если динамическое действие отображается в виде кнопки, то по-умолчанию используется тип ``text``. В противном случае — тип ``list``. Использование динамических действий описано в см. :ref:`Обновлено отображение динамических действий <Dynamic actions display updated>`.
+Динамические действия отображаются как кнопки. Если кнопок много, то некоторые из них отображаются как выпадающий список. Свойства отностятся к хелперу ``{btn}`` из ``buttons/helpers.tpl``, плюс дополнительный параметр ``wrapper_class``. Тип по умолчанию ``text``. Использование динамических действий описано в разделе :ref:`Обновлено отображение динамических действий <Dynamic-actions-display-updated>`.
 
-Пример добавления кнопки через контроллер:
+Example usage:
 
-**app/addons/my_changes/controllers/backend/products.post.php**
+**app/addons/my_changes/schemas/menu/actions.post.php**
+
+
 ::
+
     <?php
-
-    use Tygh\ Registry;
-
     defined('BOOTSTRAP') or die('Access denied');
 
-    if ($mode === 'manage') {
-        Registry::set('navigation.dynamic.actions', [
-                'my_changes.test_button' => [
-                'href' => 'categories.manage',
-                'text' => __('my_changes.view_my_changes'),
-                'id' => 'my_changes_id',
-                'class' => 'my-changes-class',
-                'data' => [
-                    'data-ca-my-changes-param-1' => 'my_value_1',
-                    'data-ca-my-changes-param-2' => 'my_value_2',
-                ],
-                'wrapper_class' => 'my-changes-wrapper-class',
-            ]
-        ]);
-    }
+    /** @var array $schema */
+    $schema['my_changes.manage']['my_changes.test_button'] = [
+        'href' => 'categories.manage',
+        'text' => __('my_changes.actions.view_my_changes'),
+        'text_mobile' => __('my_changes.actions.view_my_changes_mobile'),
+        'id' => 'my_changes_id',
+        'class' => 'my-changes-class',
+        'data' => [
+            'data-ca-my-changes-param-1' => 'my_value_1',
+            'data-ca-my-changes-param-2' => 'my_value_2',
+        ],
+        'wrapper_class' => 'my-changes-wrapper-class',
+        'position' => 100
+    ];
+
+    return $schema;
     
 Доступные параметры:
 
 - ``type``
 - ``href``
-- ``text`` Если параметр недоступен, то используется языковая переменная ключа массива.
+- ``text`` Если параметр недоступен, то используется языковая переменная ключа массива (до 30 символов).
+- ``text_mobile`` Если параметр недоступен, используется ``text`` (до 20 символов).
 - ``title``
 - ``id``
 - ``class``
@@ -437,49 +436,47 @@ Setup wizard признан устаревшим
 Поисковые фильтры на странице списка товаров
 --------------------------------------------
 
-**views/products/components/products_search_form.tpl**
+Шаблон: ``views/products/components/search_filters/get_product_search_filters.tpl``
+
 
 **Использование**
 
+
 **design/backend/templates/addons/my_changes/hooks/products/search_data.post.tpl**
+
 
 ::
 
-        {
-            $search_filters.my_changes_filter = [
-                id => "my_changes_filter",
-                type => "input",
-                category => "secondary",
-                label => __("my_changes_filter"),
-                value => $search.my_changes_filter_value,
-                placeholder => __("my_changes_filter_placeholder"),
-                is_enabled => true,
-                is_hidden => false,
-                content => "HTML content",
-                data => [
-                    name_from => "my_changes_filter_from",
-                    value_from => $search.my_changes_filter_from,
-                    label_from => __("my_changes_filter_from"),
-                    name_to => "my_changes_filter_to",
-                    value_to => $search.my_changes_filter_to,
-                    label_to => __("my_changes_filter_to")
-                ],
-                nested_data => [
-                    my_changes_filter_param => [
-                        key => "my_changes_filter_param",
-                        label => __("my_changes_filter_param"),
-                        value => true,
-                        is_checked => ($search.my_changes_filter_param === "YesNo::YES" | enum)
-                    ]
-                ]
+    {$search_filters.data.my_changes_filter = [
+        id => "my_changes_filter",
+        type => "input",
+        category => "secondary",
+        label => __("my_changes_filter"),
+        value => $search.my_changes_filter_value,
+        placeholder => __("my_changes_filter_placeholder"),
+        is_enabled => true,
+        is_hidden => false,
+        content => "HTML content",
+        data => [
+            name_from => "my_changes_filter_from",
+            value_from => $search.my_changes_filter_from,
+            label_from => __("my_changes_filter_from"),
+            name_to => "my_changes_filter_to",
+            value_to => $search.my_changes_filter_to,
+            label_to => __("my_changes_filter_to")
+        ],
+        nested_data => [
+            my_changes_filter_param => [
+                key => "my_changes_filter_param",
+                label => __("my_changes_filter_param"),
+                value => true,
+                is_checked => ($search.my_changes_filter_param === "YesNo::YES"|enum)
             ]
-        }
+        ]
+    ]}
 
-        {
-            * Export *
-        } {
-            $search_filters = $search_filters scope = parent
-        }
+    {* Export *}
+    {$search_filters = $search_filters scope=parent}
 
 .. list-table::
     :header-rows: 1
@@ -508,6 +505,9 @@ Setup wizard признан устаревшим
             |
             | ``secondary`` (default)
             | ``primary``
+    *   -   priority
+        -   Number
+        -   *Optional*. Необходим только для контекстного поиска. Задать приоритет для контекстного поиска.
     *   -   label
         -   String
         -   Метка фильтра поиска.
@@ -540,36 +540,33 @@ Setup wizard признан устаревшим
 - dropdown: ``addons/ebay/hooks/products/search_data.post.tpl``
 - popup ``addons/product_variations/hooks/products/search_data.post.tpl``
 
-Пример массива поисковых фильтров товаров: ``views/products/components/products_search_form.tpl``.
+Пример массива поисковых фильтров товаров:``views/products/components/search_filters/get_product_search_filters.tpl``.
 
 
 **Контекстный поиск**
 
-На странице списка объектов в дополнению к поисковым фильтрам можно отобразить контекстный поиск рядом с saved search. Чтобы отобразить контекстный поиск, подключите в своем шаблоне ``context_search.tpl`` и передайте его в виде параметра ``context_search`` при подключении ``common/mainbox.tpl``. Например:
+На странице списка объектов в дополнению к поисковым фильтрам можно отобразить контекстный поиск рядом с saved search. 
 
+**Использование**
+
+
+**addons/my_changes/hooks/products/search_data.post.tpl**
 
 .. code-block:: smarty
 
-    {$my_changes_search_form_prefix = ""}
-    {$search_form_dispatch = $dispatch|default:"my_changes.manage"}
+    {$search_filters.my_changes_query = [
+        id => "my_changes_query",
+        type => "input",
+        category => "primary",
+        label => __("search_my_changes"),
+        value => $search.my_changes_query,
+        priority => 1000
+    ]}
 
-    {capture name="context_search"}
-        {include file="components/search_filters/context_search.tpl"
-            name="my_changes_query"
-            id="my_changes_id"
-            value=$search.my_changes_query
-            form_id="`$my_changes_search_form_prefix`search_form"
-            placeholder=__("search_my_changes")
-            dispatch=$search_form_dispatch
-        }
-    {/capture}
+    {* Export *}
+    {$search_filters = $search_filters scope=parent}
 
-    {include file="common/mainbox.tpl"
-        ...
-        context_search=$smarty.capture.context_search
-    }
-
-
+Для контекстного поиска используйте тип ``input``. Поле с наибольшим **priority** будет отображено в контекстном поиске. Все остальные поля будут отображены в поисковом фильтре. Стандартное поле **Search products** имеет приоритет **100**.
 
 .. _analytics-card-for-dashboard:
 
@@ -721,13 +718,15 @@ Setup wizard признан устаревшим
 
 **design/backend/templates/addons/my_changes/views/my_changes/components/my_changes_component.tpl**
 
+
 .. code-block:: php
 
-        <h3>My changes test</h3>
+    <h3>My changes test</h3>
 
-        **js/addons/my_changes/func.js**
 
-        alert('my changes test');
+**js/addons/my_changes/func.js**
+
+
 
 
 .. _SVG-icons:
@@ -740,23 +739,23 @@ SVG-иконки
 **Пример использования**
 
 
-
 ::
 
-        {
-            include_ext file = "common/icon.tpl"
-            source = "warning_sign"
-            tone = "warning"
-            color = "#f00"
-            accessibility_label = "No user"
-            show_icon = $is_show_user_require_warning_icon
-            class = "user-require-warning"
-            id = "user_warning_icon"
-            data = [
-                "data-ca-param-1" => "value_1",
-                "data-ca-param-2" => "value_2"
-            ]
-        }
+
+    {include_ext file="common/icon.tpl"
+        source="warning_sign"
+        tone="warning"
+        color="#f00"
+        accessibility_label="No user"
+        show_icon=$is_show_user_require_warning_icon
+        class="user-require-warning"
+        id="user_warning_icon"
+        render="inline"
+        data=[
+            "data-ca-param-1" => "value_1",
+            "data-ca-param-2" => "value_2"
+        ]
+    }
 
 где:
 
@@ -864,7 +863,8 @@ SVG-иконки
 
 Шаблон: **common/tabsbox.tpl**
 
-Появилась возможность отображать tabs navigation в top navigation. Для этого необходимо добавить параметр ``show_tabs_navigation=false`` при подключении шаблона ``common/tabsbox.tpl``. И передать параметр ``tabs_navigation=$tabs_navigation`` при подключении шаблона ``common/mainbox.tpl``.
+
+Появилась возможность отображать tabs navigation в top navigation. Для этого необходимо добавить параметр ``show_tabs_navigation=false`` при подключении шаблона ``common/tabsbox.tpl``. И передать параметр ``tabs_navigation=$tabs_navigation`` при подключении шаблона ``common/mainbox.tpl``. Пример: ``views/products/update.tpl``.
 
 
 ----------
@@ -885,13 +885,13 @@ SVG-иконки
 Устаревшие хуки
 ---------------
 
-#.  Вместо ``products:action_buttons`` используйте ``products:search_data``.
-#.  Вместо ``products:simple_search`` используйте ``products:search_data``.
-#.  Вместо ``companies:products_advanced_search`` используйте ``products:search_data``.
-#.  Вместо ``products:search_form`` используйте ``products:search_data``.
-#.  Вместо ``products:search_in_orders`` используйте ``products:search_data``.
-#.  Вместо ``products:advanced_search`` используйте  ``products:search_data``.
-#.  Вместо ``products:select_search`` используйте ``products:sort_by_content``.
+#.  ``products:action_buttons``: используйте вместо него Динамические действия. 
+#.  ``products:simple_search`` в списке товаров: вместо него используйте ``products:search_data``.
+#.  ``companies:products_advanced_search`` в списке товаров: вместо него используйте ``products:search_data``.
+#.  ``products:search_form`` в списке товаров: вместо него используйте ``products:search_data``.
+#.  ``products:search_in_orders`` в списке товаров: вместо него используйте ``products:search_data``.
+#.  ``products:advanced_search``  в списке товаров: вместо него используйте ``products:search_data``.
+#.  ``products:select_search``  в списке товаров: вместо него используйте ``products:sort_by_content``.
 
 ---------------------------
 Удалены переменные шаблонов

@@ -745,7 +745,7 @@ Example usage:
 
 **js/addons/my_changes/func.js**
 
-.. code-block:: js
+
 
 
 
