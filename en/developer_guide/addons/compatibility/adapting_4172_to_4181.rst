@@ -65,7 +65,7 @@ The **dynamic actions** ``$navigation.dynamic.actions`` display is updated. They
 
 Dynamic actions requirements:
 
-- Use verbs in buttons titles. For example, use **View feature group** instead of **Feature groups**. 
+- Use verbs in buttons titles. For example, use **Add several products**. 
 - The buttons should function both as standalone buttons and as items in the dropdown menu.
 
 Example
@@ -114,39 +114,38 @@ The display of the top and central menu is updated
 The dynamic sections have been deprecated
 -----------------------------------------
 
-The **dynamic sections** ``$navigation.dynamic.sections`` have been deprecated. Use dynamic actions instead. Use verbs in the dynamic actions buttons titles. 
+The **dynamic sections** ``$navigation.dynamic.sections`` have been deprecated. Use dynamic actions instead.
 
---------------------------------------
-Some gear buttons have been deprecated
---------------------------------------
+---------------------------------
+Gear buttons have been deprecated
+---------------------------------
 
-- **Gear buttons** in the right upper corner of the page have been deprecated. Use dynamic actions instead. Please note that dynamic actions can appear both as standalone buttons and as items in the dropdown menu.
-
-- **Gear buttons** on the list of objects have been deprecated (for example, on the product list page). To perform the actions, use the `Context menu <https://docs.cs-cart.com/latest/developer_guide/core/context_menu/index.html>`_. The appearance of gear buttons on the list of products and orders has changed (hooks ``products:list_extra_links`` and ``orders:list_extra_links``).
+**Gear buttons** in the right upper corner of the page have been deprecated. Use dynamic actions instead. Please note that dynamic actions can appear both as standalone buttons and as items in the dropdown menu.
 
 ---------------------------------------------------------------------
 Search filter extension through product list page template deprecated
 ---------------------------------------------------------------------
 
-Search filters on the product list are now set using an array. Use the ``products:search_data`` hook to extend it. For example, to add a text field, use hook:
+Search filters on the product list page (?dispatch=products.manage) are now set using an array. Use the ``products:search_data`` hook to extend it. For example, to add a text field, use hook:
 
 
 **design/backend/templates/addons/my_changes/hooks/products/search_data.post.tpl**
 ::
 
-        {$search_filters.my_changes_filter = [
-            id => "my_changes_filter",
-            type => "input",
-            label => __("my_changes_filter"),
-            value => $search.my_changes_filter_value,
-            placeholder => __("my_changes_filter_placeholder")
-        ]}
+    {$search_filters.data.my_changes_filter = [
+        id => "my_changes_filter",
+        type => "input",
+        category => "secondary",
+        label => __("my_changes_filter"),
+        value => $search.my_changes_filter_value,
+        placeholder => __("my_changes_filter_placeholder")
+    ]}
 
-        {* Export *}
-        {$search_filters = $search_filters scope=parent}
+    {* Export *}
+    {$search_filters = $search_filters scope=parent}
 
 
-Hooks ``products:simple_search``, ``companies:products_advanced_search``, ``products:search_form``, ``products:search_in_orders`` and ``products:advanced_search`` have been deprecated. The ``products:select_search`` hook have been deprecated, use the ``products:sort_by_content`` hook instead. 
+Hooks ``products:simple_search``, ``companies:products_advanced_search``, ``products:search_form``, ``products:search_in_orders`` and ``products:advanced_search`` for extending the products list page have been deprecated. The ``products:select_search`` hook have been deprecated, use the ``products:sort_by_content`` hook instead. 
 
 The example of connecting search filters can be found in the :ref:`Search filters on the product list page <search-filters-on-product-list>` section. 
 
@@ -159,18 +158,14 @@ To display saved searches, use the ``saved_search`` parameter. An example of sav
 **design/backend/templates/views/products/manage.tpl**
 ::
 
-    {
-        $search_form_dispatch = $dispatch |
-        default: "products.manage"
-    } {
-        $saved_search = [
-            dispatch => $search_form_dispatch,
-            view_type => "products"
-        ]
-    } {
-        include file = "common/mainbox.tpl"
-            ...
-            saved_search = $saved_search
+    {$search_form_dispatch = $dispatch|default:"products.manage"}
+    {$saved_search = [
+        dispatch => $search_form_dispatch,
+        view_type => "products"
+    ]}
+    {include file="common/mainbox.tpl"
+        ...
+        saved_search=$saved_search
     }
 
 
@@ -189,7 +184,7 @@ Example
 ::
     <?php
 
-    use Tygh\ Enum\ DashboardSections;
+    use Tygh\Enum\DashboardSections;
 
     defined('BOOTSTRAP') or die('Access denied');
 
@@ -207,11 +202,12 @@ Example
 ::
     <?php
 
-    if (!defined('BOOTSTRAP')) {
-        die('Access denied');
-    }
 
-    function fn_my_changes_get_dashboard_block_data() {
+    if (!defined('BOOTSTRAP')) { die('Access denied'); }
+
+
+    function fn_my_changes_get_dashboard_block_data()
+    {
         $content_data = [
             'id' => 'my_changes',
             'title' => __('my_changes.dashboard.title'),
@@ -225,7 +221,8 @@ Example
         return $content_data;
     }
 
-See the full list of available parameters in the :ref:`Analytics card for Dashboard` section.
+
+See the full list of available parameters in the :ref:`Analytics card for Dashboard <analytics-card-for-dashboard>` section.
 
 You can expand the content of existing blocks using the ``get_dashboard_XXX`` hooks. Refer to the :ref:`New hooks` section for a list of all hooks and their descriptions.
 
@@ -254,7 +251,7 @@ The **width restriction for page display** has been removed. Now, the site is di
 Less style variables have been updated
 --------------------------------------
 
-Some **Less style variables** (colors, sizes, etc.) have been modified or removed. Now, CS-Cart's Less-variables align with Bootstrap 2's ``css/lib/twitterbootstrap/variables.less``.
+Some **Less style variables** (colors, sizes, etc.) have been modified or removed. Now, CS-Cart's Less-variables align with `Bootstrap 2's <https://getbootstrap.com/2.3.2/>`_.
 
 Instead of hardcoding values in styles, use Less variables and CSS custom properties from ``css/config.less`` for styles in your add-ons. For obtaining other values, utilize Less functions. For example, functions like ``spin(desaturate(lighten(@textColor, 30%), 25%), -15%)`` create the **Text muted color**. For more information about `lessphp <https://leafo.net/lessphp/docs/>`_ and `Less <https://lesscss.org/>`_, refer to their documentation. For details on removed Less variables, see :ref:`Deleted style variables` section.
 
@@ -390,41 +387,42 @@ Dynamic actions in the header of the site
 
 Template: **design/backend/templates/components/menu/actions_menu.tpl**
 
-Dynamic actions are displayed as buttons. If there are many buttons, some of them are displayed as a dropdown menu. The properties correspond to the ``{btn}`` helper from ``buttons/helpers.tpl``, plus an additional parameter ``wrapper_class``. If a dynamic action is displayed as a button, the default type used is ``text``. Otherwise, it is ``list``. The usage of dynamic actions is described in :ref:`The display of dynamic actions is updated <display-of-dynamic-actions-updated>` section.
 
-Example of adding a button through the controller:
+Dynamic actions are displayed as buttons. If there are many buttons, some of them are displayed as a dropdown menu. The properties correspond to the ``{btn}`` helper from ``buttons/helpers.tpl``, plus an additional parameter ``wrapper_class``. The default type used is ``text``. The usage of dynamic actions is described in :ref:`The display of dynamic actions is updated <display-of-dynamic-actions-updated>` section.
 
-**app/addons/my_changes/controllers/backend/products.post.php**
+Example usage:
+
+**app/addons/my_changes/schemas/menu/actions.post.php**
+
 
 ::
 
-        <?php
+    <?php
+    defined('BOOTSTRAP') or die('Access denied');
 
-        use Tygh\ Registry;
+    /** @var array $schema */
+    $schema['my_changes.manage']['my_changes.test_button'] = [
+        'href' => 'categories.manage',
+        'text' => __('my_changes.actions.view_my_changes'),
+        'text_mobile' => __('my_changes.actions.view_my_changes_mobile'),
+        'id' => 'my_changes_id',
+        'class' => 'my-changes-class',
+        'data' => [
+            'data-ca-my-changes-param-1' => 'my_value_1',
+            'data-ca-my-changes-param-2' => 'my_value_2',
+        ],
+        'wrapper_class' => 'my-changes-wrapper-class',
+        'position' => 100
+    ];
 
-        defined('BOOTSTRAP') or die('Access denied');
-
-        if ($mode === 'manage') {
-            Registry::set('navigation.dynamic.actions', [
-                'my_changes.test_button' => [
-                    'href' => 'categories.manage',
-                    'text' => __('my_changes.view_my_changes'),
-                    'id' => 'my_changes_id',
-                    'class' => 'my-changes-class',
-                    'data' => [
-                        'data-ca-my-changes-param-1' => 'my_value_1',
-                        'data-ca-my-changes-param-2' => 'my_value_2',
-                    ],
-                    'wrapper_class' => 'my-changes-wrapper-class',
-                ]
-            ]);
-        }
+    return $schema;
 
 Available parameters:
 
 - ``type``
 - ``href``
-- ``text``. If the parameter is unavailable, the language variable of the array key is used.
+- ``text``. If the parameter is unavailable, the language variable of the array key is used (up to 30 characters).
+- ``text_mobile``. If the parameter is unavailable, the ``text`` is used (up to 20 characters).
 - ``title``
 - ``id``
 - ``class``
@@ -446,50 +444,46 @@ Available parameters:
 Search filters on the product list page
 ---------------------------------------
 
-Template: ``views/products/components/products_search_form.tpl``
+Template: ``views/products/components/search_filters/get_product_search_filters.tpl``
 
 **Usage**
 
 
 **design/backend/templates/addons/my_changes/hooks/products/search_data.post.tpl**
 
+
 ::
 
-        {
-            $search_filters.my_changes_filter = [
-                id => "my_changes_filter",
-                type => "input",
-                category => "secondary",
-                label => __("my_changes_filter"),
-                value => $search.my_changes_filter_value,
-                placeholder => __("my_changes_filter_placeholder"),
-                is_enabled => true,
-                is_hidden => false,
-                content => "HTML content",
-                data => [
-                    name_from => "my_changes_filter_from",
-                    value_from => $search.my_changes_filter_from,
-                    label_from => __("my_changes_filter_from"),
-                    name_to => "my_changes_filter_to",
-                    value_to => $search.my_changes_filter_to,
-                    label_to => __("my_changes_filter_to")
-                ],
-                nested_data => [
-                    my_changes_filter_param => [
-                        key => "my_changes_filter_param",
-                        label => __("my_changes_filter_param"),
-                        value => true,
-                        is_checked => ($search.my_changes_filter_param === "YesNo::YES" | enum)
-                    ]
-                ]
+    {$search_filters.data.my_changes_filter = [
+        id => "my_changes_filter",
+        type => "input",
+        category => "secondary",
+        label => __("my_changes_filter"),
+        value => $search.my_changes_filter_value,
+        placeholder => __("my_changes_filter_placeholder"),
+        is_enabled => true,
+        is_hidden => false,
+        content => "HTML content",
+        data => [
+            name_from => "my_changes_filter_from",
+            value_from => $search.my_changes_filter_from,
+            label_from => __("my_changes_filter_from"),
+            name_to => "my_changes_filter_to",
+            value_to => $search.my_changes_filter_to,
+            label_to => __("my_changes_filter_to")
+        ],
+        nested_data => [
+            my_changes_filter_param => [
+                key => "my_changes_filter_param",
+                label => __("my_changes_filter_param"),
+                value => true,
+                is_checked => ($search.my_changes_filter_param === "YesNo::YES"|enum)
             ]
-        }
+        ]
+    ]}
 
-        {
-            * Export *
-        } {
-            $search_filters = $search_filters scope = parent
-        }
+    {* Export *}
+    {$search_filters = $search_filters scope=parent}
 
 
 where:
@@ -522,6 +516,9 @@ where:
             |
             | ``secondary`` (default)
             | ``primary``
+    *   -   priority
+        -   Number
+        -   *Optional*. It is necessary for context search only. Set the priority for contextual search.
     *   -   label
         -   String
         -   Search filter label.
@@ -556,37 +553,38 @@ where:
 - dropdown: ``addons/ebay/hooks/products/search_data.post.tpl``
 - popup ``addons/product_variations/hooks/products/search_data.post.tpl``
 
-Example of an array of product search filters: ``views/products/components/products_search_form.tpl``.
+Example of an array of product search filters: ``views/products/components/search_filters/get_product_search_filters.tpl``.
 
 Context search
 --------------
 
-In the object list page, in addition to search filters, you can display contextual search next to the saved search. To display contextual search, include ``context_search.tpl`` in your template and pass it as a parameter ``context_search`` when including **common/mainbox.tpl**. 
+ The contextual search text field situated next to the saved search can be changed on the products list page.
+
+**Usage**
+
+
+**addons/my_changes/hooks/products/search_data.post.tpl**
 
 For example:
 
 .. code-block:: smarty
 
-    {assign var=my_changes_search_form_prefix value=""}
-    {assign var=search_form_dispatch value=$dispatch|default:"my_changes.manage"}
-    
-    {capture name="context_search"}
-        {include file="components/search_filters/context_search.tpl"
-            name="my_changes_query"
-            id="my_changes_id"
-            value=$search.my_changes_query
-            form_id="`$my_changes_search_form_prefix`search_form"
-            placeholder=__("search_my_changes")
-            dispatch=$search_form_dispatch
-        }
-    {/capture}
-    
-    {include file="common/mainbox.tpl"
-        ...
-        context_search=$smarty.capture.context_search
-    }
 
+    {$search_filters.my_changes_query = [
+        id => "my_changes_query",
+        type => "input",
+        category => "primary",
+        label => __("search_my_changes"),
+        value => $search.my_changes_query,
+        priority => 1000
+    ]}
 
+    {* Export *}
+    {$search_filters = $search_filters scope=parent}
+
+For contextual search, a ``type`` equal to ``input`` is required. The field with the largest **priority** will be displayed in the context search. The rest of the search fields will be displayed in the search filter. The standard field **Search products** has **100** priority.
+    
+    
 .. _analytics-card-for-dashboard:
 
 Analytics Card for Dashboard
@@ -605,6 +603,7 @@ Example usage:
 
 .. code-block:: php
 
+
     <?php
 
     use Tygh\Enum\DashboardSections;
@@ -617,8 +616,8 @@ Example usage:
         'position' => 100,
         'dispatch' => 'products.manage',
         'content_data_function' => 'fn_my_changes_get_dashboard_block_data'
-        ];
-    
+    ];
+
     return $schema;
 
     
@@ -743,9 +742,10 @@ Example usage:
 
     <h3>My changes test</h3>
 
-    js/addons/my_changes/func.js
 
-    alert('my changes test');
+**js/addons/my_changes/func.js**
+
+.. code-block:: js
 
 
 
@@ -761,20 +761,21 @@ Template: ``common/icon.tpl``
 
 ::
 
-        {
-            include_ext file = "common/icon.tpl"
-            source = "warning_sign"
-            tone = "warning"
-            color = "#f00"
-            accessibility_label = "No user"
-            show_icon = $is_show_user_require_warning_icon
-            class = "user-require-warning"
-            id = "user_warning_icon"
-            data = [
-                "data-ca-param-1" => "value_1",
-                "data-ca-param-2" => "value_2"
-            ]
-        }
+
+    {include_ext file="common/icon.tpl"
+        source="warning_sign"
+        tone="warning"
+        color="#f00"
+        accessibility_label="No user"
+        show_icon=$is_show_user_require_warning_icon
+        class="user-require-warning"
+        id="user_warning_icon"
+        render="inline"
+        data=[
+            "data-ca-param-1" => "value_1",
+            "data-ca-param-2" => "value_2"
+        ]
+    }
 
 
 
@@ -882,7 +883,8 @@ Tabs
 
 Template: ``common/tabsbox.tpl``
 
-Now you have the option to display tabs navigation in the top navigation. To achieve this, add the parameter ``show_tabs_navigation=false`` when including the ``common/tabsbox.tpl`` template. Also, pass the parameter ``tabs_navigation=$tabs_navigation`` when including the ``common/mainbox.tpl`` template.
+
+Now you have the option to display tabs navigation in the top navigation. To achieve this, add the parameter ``show_tabs_navigation=false`` when including the ``common/tabsbox.tpl`` template. Also, pass the parameter ``tabs_navigation=$tabs_navigation`` when including the ``common/mainbox.tpl`` template. Example of a tabs navigation in the top navigation: ``views/products/update.tpl``.
 
 
 ---------
@@ -903,13 +905,14 @@ Deleted hooks
 Deprecated hooks
 ----------------
 
-#.  ``products:action_buttons``: use ``products:search_data`` instead.
-#.  ``products:simple_search``: use ``products:search_data`` instead.
-#.  ``companies:products_advanced_search``: use ``products:search_data`` instead.
-#.  ``products:search_form``: use ``products:search_data`` instead.
-#.  ``products:search_in_orders``: use ``products:search_data`` instead.
-#.  ``products:advanced_search``: use ``products:search_data`` instead.
-#.  ``products:select_search``: use ``products:sort_by_content`` instead.
+
+#.  ``products:action_buttons``: use dynamic actions instead. 
+#.  ``products:simple_search`` on the product list: use ``products:search_data`` instead.
+#.  ``companies:products_advanced_search`` on the product list: use ``products:search_data`` instead.
+#.  ``products:search_form`` on the product list: use ``products:search_data`` instead.
+#.  ``products:search_in_orders`` on the product list: use ``products:search_data`` instead.
+#.  ``products:advanced_search`` on the product list: use ``products:search_data`` instead.
+#.  ``products:select_search`` on the product list: use ``products:sort_by_content`` instead.
 
 --------------------------
 Deleted template variables
