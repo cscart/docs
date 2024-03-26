@@ -434,7 +434,6 @@ Available parameters:
 - ``target_id``
 - ``process``
 - ``onclick``
-- ``raw``
 - ``icon``
 - ``data``
 - ``wrapper_class``
