@@ -6,6 +6,11 @@ Adapt Your Add-ons and Themes to CS-Cart 4.18.1
     :backlinks: none
     :local:
 
+    
+.. important::
+
+    There are several differences between the CS-Cart 4.18.1 Beta and the final CS-Cart 4.18.1 versions. Please check :ref:`the list down below <comparing-beta-to-release>` for more details. 
+    
 ============
 Core Changes
 ============
@@ -116,11 +121,16 @@ The dynamic sections have been deprecated
 
 The **dynamic sections** ``$navigation.dynamic.sections`` have been deprecated. Use dynamic actions instead.
 
+
+.. _gear-buttons-deprecated:
+
 ---------------------------------
 Gear buttons have been deprecated
 ---------------------------------
 
 **Gear buttons** in the right upper corner of the page have been deprecated. Use dynamic actions instead. Please note that dynamic actions can appear both as standalone buttons and as items in the dropdown menu.
+
+.. _search-filter-extension-deprecated:
 
 ---------------------------------------------------------------------
 Search filter extension through product list page template deprecated
@@ -554,6 +564,8 @@ where:
 
 Example of an array of product search filters: ``views/products/components/search_filters/get_product_search_filters.tpl``.
 
+.. _context-search:
+
 Context search
 --------------
 
@@ -985,3 +997,69 @@ Deleted triggers
 #. ``ce.notifications_center.mobile_enabled``
 #. ``ce.notifications_center.notifications_mark_reload``
 #. ``ce.mobile_menu.dropdownMenu_created``
+
+
+
+.. _comparing-beta-to-release:
+
+================================
+Comparing Beta to 4.18.1 Release
+================================
+
+We have made some changes during the CS-Cart Beta 4.18.1 and will list them here.
+
+---------------------------------
+Gear buttons have been deprecated
+---------------------------------
+
+
+This part of the :ref:`Gear buttons have been deprecated <gear-buttons-deprecated>` section has been changed completely and is not relevant:
+
+    Gear buttons on the list of objects have been deprecated (for example, on the product list page). To perform the actions, use the `Context menu <https://docs.cs-cart.com/latest/developer_guide/core/context_menu/index.html>`_. The appearance of gear buttons on the list of products and orders has changed (hooks ``products:list_extra_links`` and ``orders:list_extra_links``).
+
+---------------------------------------------------------------------
+Search filter extension through product list page template deprecated
+---------------------------------------------------------------------
+
+1. This part of the :ref:`Search filter extension through product list page template deprecated <search-filter-extension-deprecated>` has been changed and is not relevant:
+
+    Search filters on the product list are now set using an array. Use the ``products:search_data`` hook to extend it. 
+
+Instead, a new search filter is now only on the products list page (?dispatch=products.manage). For example, it is not used when you add a product while creating an order. 
+
+2. Your own filter ``my_changes_filter`` now needs to be placed in ``$search_filters.data`` instead of ``$search_filters``. You should use the parameter ``category => "secondary"``. 
+
+3. Hooks: became irrelevant for all product lists (for example, search in the popup), except the product list page (?dispatch=products.manage).
+
+
+
+-----------------------------------------
+Dynamic actions in the header of the site
+-----------------------------------------
+
+The following changes in the :ref:`Dynamic actions in the header of the site <dynamic-actions-in-the-header>` section have been made:
+
+- The default type used now is always``text``.
+- Setting dynamic actions should be done through ``schemas``, not ``controllers``.
+- Use the ``text`` parameter up to 30 characters in length.
+- Use the ``text_mobile`` parameter up to 20 characters in length.
+- The ``raw`` parameter is not available anymore.
+
+
+---------------------------------------
+Search filters on the product list page
+---------------------------------------
+
+The following changes in the :ref:`Search filters on the product list page <search-filters-on-product-list>` section have been made:
+
+- Now the template ``get_product_search_filters.tpl`` is used instead of ``products_search_form.tpl``.
+- Instead of the array ``$search_filters``, now use the sub-array ``$search_filters.data``.
+
+
+--------------
+Context search
+--------------
+
+The following changes in the :ref:`Context search <context-search>` section have been made:
+
+Now there is no need to include ``context_search.tpl`` in your template and pass the parameter to ``common/mainbox.tpl``. It is enough to hook into ``addons/my_changes/hooks/products/search_data.post.tpl``, create an array ``{$search_filters.my_changes_query = [ ... ]}`` and export ``$search_filters``.
