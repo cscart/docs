@@ -41,9 +41,7 @@ Add-ons
 
     hamburger-menu/index
     hide_payment_and_shipping_methods/index
-
-    :hidden: instagram_feed_widget/index
-
+    instagram_feed_widget/index
     geolocation_by_maxmind/index
     json-ld-for-seo/index
     loyalty_program/index

@@ -29,7 +29,7 @@ Overview
 Features
 ========
 
-    - Translation of products, categories, blog, pages, newsletters, order statuses, payment methods, shipping methods, user groups, currencies, features, options, blocks.
+    - Translation of products, categories, blog, pages, newsletters, order statuses, payment methods, shipping methods, user groups, currencies, features, options, blocks (**only for "HTML block" type**).
 
     - Unlimited number of targeted languages.
 

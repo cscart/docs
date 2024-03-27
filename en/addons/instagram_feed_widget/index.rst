@@ -191,22 +191,22 @@ Setting up the test app
         :alt: Insragram Widget add-on
 
     Select following parameters in the “Permissions” section:
-
-        page_events
-        pages_manage_ads
-        pages_manage_cta
-        pages_manage_engagement
-        pages_manage_instant_articles
-        pages_manage_metadata
-        pages_manage_posts
-        pages_read_engagement
-        pages_read_user_content
-        pages_show_list
-        instagram_basic
-        instagram_content_publish
-        instagram_manage_comments
-        instagram_manage_insights
-        instagram_manage_messages
+        * page_events
+        * pages_manage_ads
+        * pages_manage_cta
+        * pages_manage_engagement
+        * pages_manage_instant_articles
+        * pages_manage_metadata
+        * pages_manage_posts
+        * pages_read_engagement
+        * pages_read_user_content
+        * pages_show_list
+        * instagram_basic
+        * instagram_content_publish
+        * instagram_manage_comments
+        * instagram_manage_insights
+        * instagram_manage_messages
+        * business_management
 
     .. fancybox:: img/inst23.png
         :alt: Insragram Widget add-on
