@@ -8,7 +8,7 @@ To add a payment method, follow these steps:
 
 2. Go to **Settings → Payment methods**. You'll see the list of the available payment methods.
 
-3. Click the **+ button** to open a form for creating a payment method.
+3. Click the **+ Add payment method** to open a form for creating a payment method.
 	
 .. image:: img/adding_payment.png
     :align: center
