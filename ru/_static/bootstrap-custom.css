@@ -849,6 +849,12 @@ table .row-even {
     padding: 18px 0em 0em 0em;
 }
 
+blockquote {
+    padding: 0 0 0 15px;
+    margin: 0 0 20px;
+    border-left: 4px solid #eeeeee;
+}
+
 .admonition {
     margin-top: 10px;
     margin-bottom: 10px;
