@@ -2,14 +2,15 @@
 Adapt Your Add-ons and Themes to CS-Cart 4.18.1
 ***********************************************
 
+.. important::
+
+    There are a few differences between CS-Cart 4.18.1 Beta and the final release.  :ref:`See the differences below <comparing-beta-to-release>`.
+    
+
 .. contents::
     :backlinks: none
     :local:
 
-    
-.. important::
-
-    There are several differences between the CS-Cart 4.18.1 Beta and the final CS-Cart 4.18.1 versions. Please check :ref:`the list down below <comparing-beta-to-release>` for more details. 
     
 ============
 Core Changes
@@ -36,7 +37,7 @@ Changed Functions
 
 
 -------------
-New functions
+New Functions
 -------------
 
 #. Gets language direction::
@@ -182,7 +183,7 @@ To display saved searches, use the ``saved_search`` parameter. An example of sav
 .. _extending-dashboard-analytics-blocks-through-template:
 
 -------------------------------------------------------------------------------
-Extending Dashboard analytics blocks through template hooks has been deprecated
+Extending dashboard analytics blocks through template hooks has been deprecated
 -------------------------------------------------------------------------------
 
 Now extending Dashboard analytics blocks should be done through a schema.
@@ -266,7 +267,7 @@ Some **Less style variables** (colors, sizes, etc.) have been modified or remove
 Instead of hardcoding values in styles, use Less variables and CSS custom properties from ``css/config.less`` for styles in your add-ons. For obtaining other values, utilize Less functions. For example, functions like ``spin(desaturate(lighten(@textColor, 30%), 25%), -15%)`` create the **Text muted color**. For more information about `lessphp <https://leafo.net/lessphp/docs/>`_ and `Less <https://lesscss.org/>`_, refer to their documentation. For details on removed Less variables, see :ref:`Deleted style variables` section.
 
 -----------------
-Deleted functions
+Deleted Functions
 -----------------
 
 #. ``fn_master_products_generate_navigation_sections``
@@ -278,7 +279,7 @@ Hook Changes
 .. _New hooks:
 
 ---------
-New hooks
+New Hooks
 ---------
 
 #. Executes after getting dashboard block data, allows editing it::
@@ -340,7 +341,7 @@ New hooks
         fn_set_hook('banners_update_banner_pre', $data, $banner_id, $lang_code);
 
 -------------
-Changed hooks
+Changed Hooks
 -------------
 
 #. ::
@@ -381,13 +382,12 @@ Changed hooks
        fn_set_hook('check_uploaded_data_post', $uploaded_data, $filter_by_ext, $result, $processed, $filter_by_file_size_bytes);
 
 ================
-Template changes
+Template Changes
 ================
 
 
-
 ------------------
-Components updated
+Components Updated
 ------------------
 
 .. _dynamic-actions-in-the-header:
@@ -598,7 +598,7 @@ For contextual search, a ``type`` equal to ``input`` is required. The field with
     
 .. _analytics-card-for-dashboard:
 
-Analytics Card for Dashboard
+Analytics card for Dashboard
 ----------------------------
 
 Template: **views/index/components/analytics_section/analytics_card/analytics_card.tpl**
@@ -899,7 +899,7 @@ Now you have the option to display tabs navigation in the top navigation. To ach
 
 
 ---------
-New hooks
+New Hooks
 ---------
 
 #. ``index:head``
@@ -907,13 +907,13 @@ New hooks
 #. ``banners:status``
 
 -------------
-Deleted hooks
+Deleted Hooks
 -------------
 
 #. ``index:analytics_data``: use ``dashboard/blocks`` schema instead.
 
 ----------------
-Deprecated hooks
+Deprecated Hooks
 ----------------
 
 
@@ -926,7 +926,7 @@ Deprecated hooks
 #.  ``products:select_search`` on the product list: use ``products:sort_by_content`` instead.
 
 --------------------------
-Deleted template variables
+Deleted Template Variables
 --------------------------
 #.  ``enable_sticky_scroll``
 #.  ``navigation_accordion``
@@ -934,7 +934,7 @@ Deleted template variables
 #.  addons ``vendor_plans``: ``plan_usage`` and ``plan_data``
 
 ==============
-Styles changes
+Style Changes
 ==============
 
 .. _Deleted style variables:
@@ -988,7 +988,7 @@ Deleted CSS classes
 
 
 ------------------
-JavaScript changes
+JavaScript Changes
 ------------------
 
 Deleted triggers
@@ -1002,24 +1002,24 @@ Deleted triggers
 
 .. _comparing-beta-to-release:
 
-================================
-Comparing Beta to 4.18.1 Release
-================================
+=============================================================
+Differences between the final release and CS-Cart 4.18.1 Beta
+=============================================================
 
-We have made some changes during the CS-Cart Beta 4.18.1 and will list them here.
+Since the release of the Beta, we've made some changes to CS-Cart 4.18.1. The document above has already been updated accordingly. This section is for those who used an older version of the document; it covers what has changed.
 
----------------------------------
-Gear buttons have been deprecated
----------------------------------
+----------------------------------------------
+Changes to "Gear buttons have been deprecated"
+----------------------------------------------
 
 
 This part of the :ref:`Gear buttons have been deprecated <gear-buttons-deprecated>` section has been changed completely and is not relevant:
 
     Gear buttons on the list of objects have been deprecated (for example, on the product list page). To perform the actions, use the `Context menu <https://docs.cs-cart.com/latest/developer_guide/core/context_menu/index.html>`_. The appearance of gear buttons on the list of products and orders has changed (hooks ``products:list_extra_links`` and ``orders:list_extra_links``).
 
----------------------------------------------------------------------
-Search filter extension through product list page template deprecated
----------------------------------------------------------------------
+----------------------------------------------------------------------------------
+Changes to "Search filter extension through product list page template deprecated"
+----------------------------------------------------------------------------------
 
 1. This part of the :ref:`Search filter extension through product list page template deprecated <search-filter-extension-deprecated>` has been changed and is not relevant:
 
@@ -1031,24 +1031,22 @@ Instead, a new search filter is now only on the products list page (?dispatch=pr
 
 3. Hooks: became irrelevant for all product lists (for example, search in the popup), except the product list page (?dispatch=products.manage).
 
-
-
------------------------------------------
-Dynamic actions in the header of the site
------------------------------------------
+------------------------------------------------------
+Changes to "Dynamic actions in the header of the site"
+------------------------------------------------------
 
 The following changes in the :ref:`Dynamic actions in the header of the site <dynamic-actions-in-the-header>` section have been made:
 
-- The default type used now is always``text``.
+- The default type used now is always ``text``.
 - Setting dynamic actions should be done through ``schemas``, not ``controllers``.
 - Use the ``text`` parameter up to 30 characters in length.
 - Use the ``text_mobile`` parameter up to 20 characters in length.
 - The ``raw`` parameter is not available anymore.
 
 
----------------------------------------
-Search filters on the product list page
----------------------------------------
+----------------------------------------------------
+Changes to "Search filters on the product list page"
+----------------------------------------------------
 
 The following changes in the :ref:`Search filters on the product list page <search-filters-on-product-list>` section have been made:
 
@@ -1056,9 +1054,9 @@ The following changes in the :ref:`Search filters on the product list page <sear
 - Instead of the array ``$search_filters``, now use the sub-array ``$search_filters.data``.
 
 
---------------
-Context search
---------------
+---------------------------
+Changes to "Context search"
+---------------------------
 
 The following changes in the :ref:`Context search <context-search>` section have been made:
 
