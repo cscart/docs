@@ -6,11 +6,11 @@ To create a downloadable product:
 
 #. In the administration panel, go to **Products → Products**.
 
-#. Click on a product name in the list or add a new product by clicking the **+** button.
+#. Click on a product name in the list or add a new product by clicking the **+ Add product** button.
 
 #. Tick the **Downloadable** check box in the **Extra** section.
 
-   .. image:: img/downloadable_01.png
+   .. image:: img/downloadable1.png
        :align: center
        :alt: How to make a product downloadable
 
@@ -40,7 +40,7 @@ To create a downloadable product:
 
        If you need to upload several files and divide them in several groups, use the **Add folder** button to create folders first.
 
-   .. image:: img/downloadable_02.png
+   .. image:: img/downloadable2.png
        :align: center
        :alt: The Files to sell tab
 
@@ -54,13 +54,13 @@ To create a downloadable product:
 
      .. hint::
 
-         Administrators allow downloads on the order editing page (**Orders → View orders → [Click on the order ID]**) on the **Downloads** tab.
+         Administrators allow downloads on the order editing page (**Orders → Orders → [Click on the order ID]**) on the **Downloads** tab.
 
    * **Immediately**—allow a customer to download the file immediately after the order is placed.
 
    * **After full payment**—allow a customer to download the file after the order status changes to **Processed** or **Completed**.
 
-   .. image:: img/downloadable_03.png
+   .. image:: img/downloadable3.png
        :align: center
        :alt: Activation mode
 
