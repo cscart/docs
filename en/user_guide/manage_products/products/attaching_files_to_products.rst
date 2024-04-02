@@ -12,7 +12,7 @@ Attaching a file to a product is useful when you need to make a some information
 
    .. important::
 
-       The **Attachments** tab will display only if the **Attachments** add-on is activated in the **Add-ons → Manage add-ons** section.
+       The **Attachments** tab will display only if the **Attachments** add-on is activated in the **Add-ons → Downloaded add-ons** section.
 
 #. In the opened form, specify the name of the new attachment and upload a file in the **File** section.
 
@@ -22,6 +22,6 @@ Attaching a file to a product is useful when you need to make a some information
 
        A customer will be able to download this file in the **Attachments** tab on the product details page in the storefront.
 
-   .. image:: img/attachment_01.png
+   .. image:: img/attachment_1.png
        :align: center
        :alt: New attachment
