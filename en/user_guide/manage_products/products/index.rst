@@ -4,7 +4,7 @@ Products
 
 Go to **Products → Products** to manage the products in your catalog. That page contains the list of all products in your store. To filter products by some criteria, use the search panel to the right of the list.
 
-.. image:: img/products.png
+.. image:: img/products1.png
     :align: center
     :alt: The product list in CS-Cart admin panel.
 
@@ -50,9 +50,9 @@ Actions on Products
 Add Products
 ------------
 
-* To add products individually, click the **+** button in the upper right part of the page.
+* To add products individually, click the **+ Add product** button in the upper right part of the page.
 
-* To add products in bulk, click the gear button in the upper right part of the page and choose **Bulk product addition**.
+* To add products in bulk, click the gear button in the upper right part of the page and choose **Add several products**.
 
 -------------
 Edit Products
@@ -92,7 +92,7 @@ When a product is out of stock, customers may sign up for a notification. When y
 
     The product must have **Sign up for notification** as its :doc:`out-of-stock action <out_of_stock_actions>`, or customers won't be able to sign up for a notification.
 
-* To look through the list of products with subscribers, click the gear button in the upper right part of the page, and choose **Product subscriptions**.
+* To look through the list of products with subscribers, click the **More** button in the upper right part of the page, and choose **Expected products**.
 
 * To view the list of subscribers for a specific product, open that product's editing page and switch to the **Subscribers** tab.
 
@@ -100,7 +100,7 @@ When a product is out of stock, customers may sign up for a notification. When y
 Export Products to eBay
 -----------------------
 
-To export some products to eBay, select them by clicking on them, click the gear button in the upper right part of the page, and choose **Export/Revise products on eBay**.
+To export some products to eBay, select them by clicking on them, click the **More** button in the upper right part of the page, and choose **Export/Revise products on eBay**.
 
 .. note::
 
