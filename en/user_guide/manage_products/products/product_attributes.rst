@@ -4,7 +4,7 @@ Product Properties (Fields and Settings)
 
 When you create or edit a product, you should specify a number of product properties. For convenience, properties are grouped by tabs on the product editing page.
 
-.. image:: img/product_attributes_01.png
+.. image:: img/product_attributes1.png
     :align: center
     :alt: Tabs with properties on the product editing page.
 
@@ -27,7 +27,7 @@ Information
 
 * **Name**—the name of the product as it appears on the storefront and in the Administration panel. The name of the same product can differ, depending on the storefront and language.
 
-* **Storefront**—the storefront to which the product is assigned. This setting appears if the additional storefront was created on the **Administration → Storefronts** page.
+* **Storefront**—the storefront to which the product is assigned. This setting appears if the additional storefront was created on the **Settings → Storefronts** page.
 
 * **Categories**—the categories that the product will be assigned to. When a product has multiple categories, the first category on the list will be the main category for the product. To change the main category, just drag another category in its place.
 
@@ -37,7 +37,7 @@ Information
 
   .. hint::
 
-      You can choose or disable the visual editor under **Settings → Appearance → Default WYSIWYG editor**.
+      You can choose or disable the visual editor under **Settings → General → Appearance → Default WYSIWYG editor**.
 
 * **Status**—the status of the product:
 
@@ -91,7 +91,7 @@ Pricing / Inventory
 
 .. note::
 
-    The following fields will appear if *changing the value of the setting for individual items* on the **Settings → Checkout** page is allowed. The **Track inventory** field is enabled for individual items on the **Settings → General** page. 
+    The following fields will appear if *changing the value of the setting for individual items* on the **Settings → General → Checkout** page is allowed. The **Track inventory** field is enabled for individual items on the **Settings → General** page. 
 
 * **Zero price action**—determines what can be done on the storefront when the product's price is 0:
 
@@ -181,7 +181,7 @@ Meta data
 
     Instructions on how to best use the meta-tags may vary depending on the search engine.
 
-.. image:: img/product_attributes_02.png
+.. image:: img/product_attributes2.png
     :align: center
     :alt: The "SEO" tab of a product in CS-Cart.
 
@@ -191,7 +191,7 @@ Options
 
 This tab allows you to manage :doc:`product options <../options/index>` and option variants, as well as control the option combinations and add forbidden/allowed combinations.
 
-.. image:: img/product_attributes_03.png
+.. image:: img/product_attributes3.png
     :align: center
     :alt: The "Options" tab of the product editing page.
 
@@ -259,7 +259,7 @@ This tab contains the list of wholesale prices for the product. Customers will s
 
       If you set up a discount that applies for all user groups for purchasing 1 item, this will overwrite product price.
 
-.. image:: img/product_attributes_05.png
+.. image:: img/product_attributes5.png
     :align: center
     :alt: Configuring quantity discounts in CS-Cart.
 
@@ -427,7 +427,7 @@ This tab includes a list of tags associated with the product. Tags appear on the
 
 * **Tags**—the tags that have been added to the product. Once you start typing, CS-Cart will use autocomplete to suggest what existing tag you may be entering.
 
-.. image:: img/product_attributes_06.png
+.. image:: img/product_attributes6.png
     :align: center
     :alt: The "Tags" tab.
 
@@ -501,7 +501,7 @@ Required Products
 
 This tab contains a list of required products, which will be added to cart along with this product. To add a new required product, click the **Add product** button.
 
-.. image:: img/product_attributes_07.png
+.. image:: img/product_attributes7.png
     :align: center
     :alt: Required products
 
