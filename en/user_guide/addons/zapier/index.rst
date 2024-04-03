@@ -20,9 +20,9 @@ A Zap consists of one **trigger** (an event in CS-Cart or another app) and any n
 How To: Set Up Store Integration with Zapier
 ============================================
 
-#. Open the admin panel of your CS-Cart store, go to **Add-ons → Manage Add-ons** and make sure the **Integration with Zapier** add-on is installed and activated.
+#. Open the admin panel of your CS-Cart store, go to **Add-ons → Downloaded add-ons** and make sure the **Integration with Zapier** add-on is installed and activated.
 
-#. Go to the **Customers → Administrators** page. In the list of users, find the root administrator and open the profile page by clicking on their name. Give the administrator access to the API on the *API access* tab.
+#. Go to the **Users → Administrators** page. In the list of users, find the root administrator and open the profile page by clicking on their name. Give the administrator access to the API on the *API access* tab.
 
    .. note::
 
