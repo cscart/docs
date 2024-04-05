@@ -8,7 +8,7 @@ The **Orders → Sales reports** page contains detailed statistics on the sales 
 
     To switch between reports, use the menu on the right.
 
-.. image:: img/reports_01.png
+.. image:: img/reports1.png
     :align: center
     :alt: Sales reports in CS-Cart and Multi-Vendor.
 
