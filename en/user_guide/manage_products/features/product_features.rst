@@ -4,7 +4,7 @@ How To: Set up Product Features
 
 Product features are various traits and properties of the product. You can use features in :doc:`product filters </user_guide/manage_products/filters/index>` to allow customers to find products with specific parameters.
 
-.. image:: img/feature_on_the_storefront.png
+.. image:: img/feature_on_the_storefront1.png
     :align: center
     :alt: Product features appear on the separate tab on the product page.
 
@@ -44,7 +44,7 @@ Way 1: From a Product Page
      
 #. Click the **Create** button.
 
-   .. image:: img/feature_creation.png
+   .. image:: img/feature_creation1.png
        :align: center
        :alt: The feature creation from the product page
 
@@ -57,7 +57,7 @@ Way 2: From the Features List
 
 #. In the Administration panel, go to **Products → Features**.
 
-#. Click the **+** button in the top right corner.
+#. Click the **+ New feature** button in the top right corner.
 
 #. Fill in the necessary :doc:`feature properties </user_guide/manage_products/features/feature_attributes>`.
 
@@ -71,7 +71,7 @@ Way 2: From the Features List
 
 #. Click the **Create** button.
 
-   .. image:: img/feature_creation_2.png
+   .. image:: img/feature_creation2.png
        :align: center
        :alt: The feature creation from the features list
 
@@ -89,11 +89,11 @@ Feature groups allow you to assign categories to multiple features at once.
 
 #. Switch to **Feature groups** in the menu on the right.
 
-#. Click the **+** button on the right.
+#. Click the **+ New group** button on the right.
 
 #. Fill in the following fields in the **New group** window that will open:
 
-   .. image:: img/feature_group2.png
+   .. image:: img/feature_group_2.png
         :align: center
         :alt: Configure the properties of the feature group.
 
@@ -119,11 +119,11 @@ Feature groups allow you to assign categories to multiple features at once.
 
    * Switch to the **Categories** tab.
 
-     .. image:: img/feature_group1.png
+     .. image:: img/feature_group_1.png
          :align: center
          :alt: The categories of the feature group.
 
-   * Click the **Add categories** button. 
+   * Click the **+ Add categories** button. 
 
    * Tick the checkboxes of the categories where this feature group should be available.
 
@@ -131,7 +131,7 @@ Feature groups allow you to assign categories to multiple features at once.
     
 #. Click the **Create** button. The new feature group will appear under **Products → Features**, if you switch to **Feature groups** using the menu on the right.
 
-   .. image:: img/feature_group_list.png
+   .. image:: img/feature_group_list1.png
        :align: center
        :alt: Go to Products → Features and use the menu on the right to view feature groups.
        
@@ -156,7 +156,7 @@ Single Product
 
 #. Click the **Save** button.
 
-   .. image:: img/feature_to_product.png
+   .. image:: img/feature_to_product1.png
         :align: center
         :alt: The Features tab allows you to edit the features of the product.
 
@@ -173,7 +173,7 @@ Multiple Products
 
 #. Choose **Edit selected** above the list of products.
 
-   .. image:: /user_guide/manage_products/products/img/catalog_75.png
+   .. image:: /user_guide/manage_products/products/img/catalog_75_1.png
         :align: center
         :alt: Use CS-Cart bulk editing tools to specify features for multiple products at once.
 
