@@ -12,15 +12,15 @@ To add a chart to a report:
 
 #. Click the gear button of the required report and choose **Edit** from the drop-down list.
 
-   .. image:: img/reports_02.png
+   .. image:: img/reports2.png
        :align: center
        :alt: Edit a sales report in CS-Cart or Multi-Vendor.
 
    This will open the report editing page. The **Charts** tab contains a list of assigned charts.
 
-#. Click the **+** button to open the chart creation form.
+#. Click the **+ Add chart** button to open the chart creation form.
 
-   .. image:: img/reports_03.png
+   .. image:: img/reports3.png
        :align: center
        :alt: Add a chart to a sales report in CS-Cart and Multi-Vendor.
 
@@ -60,7 +60,7 @@ To add a chart to a report:
 
      For example, the **Statuses of orders** tab allows you to show statistics on orders with specific statuses only. The **Products** tab allows you to choose the products, the statistics of which should be represented in the chart. Statistics on the unchosen products will not be included in the chart.
 
-   .. image:: img/reports_04.png
+   .. image:: img/reports4.png
        :align: center
        :alt: The "Statuses of orders" tab on the chart editing page in CS-Cart and Multi-Vendor.
 
