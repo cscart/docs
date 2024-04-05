@@ -8,11 +8,11 @@ How To: Display Same Product under Several Categories
 
 #. The product editing page will open. Click the **Add categories** button.
 
-#. A pop-up window will open. Tick the checkboxes next to the necessary categories and click the **Add categories and close** button.
+#. A drop-down list of available categories will open. Select and add the necessary categories by clicking on them.
 
-#. Click the **Save and close** button.
+#. Click the **Save** button.
 
-   .. image:: img/add_categories.png
+   .. image:: img/add_categories1.png
        :align: center
        :alt: General tab of the edit product page
 
