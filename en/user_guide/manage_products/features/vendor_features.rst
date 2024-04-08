@@ -8,13 +8,13 @@ How To: Allow Vendors to Add Features
     
 Vendors have the ability to :doc:`add features, variants and feature groups for their products </user_guide/manage_products/features/product_features>`. This ability is disabled by default so that vendors do not create too many features and their copies. But you can allow them to manage product features.
 
-.. image:: img/vendor_feature.png
+.. image:: img/vendor_feature1.png
     :align: center
     :alt: Vendor adds the feature from the product page
 
 To do this:
 
-#. Go to **Settings → Vendors**.
+#. Go to **Settings → General → Vendors**.
 
 #. Tick the **Allow vendors to manage product features** checkbox.
 
@@ -22,7 +22,7 @@ To do this:
 
 #. Now your vendors have the ability to create new features, including when adding new products.
 
-   .. image:: img/manage_features.png
+   .. image:: img/manage_features1.png
        :align: center
        :alt: Allowing vendors to create features
        
