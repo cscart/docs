@@ -2,11 +2,11 @@
 How To: Set up an Order Status
 ******************************
 
-#. Go to **Administration → Statuses → Order statuses** in the Administration panel of your store.
+#. Go to **Settings → Statuses → Order statuses** in the Administration panel of your store.
 
 #. Choose whether you want to:
 
-   * create a new status by clicking the **+** button;
+   * create a new status by clicking the **+ Add status** button;
 
    * edit an existing status by clicking its name;
 
@@ -16,7 +16,7 @@ How To: Set up an Order Status
 
        You can have up to 26 order statuses at the same time, as the database uses letters to identify them.
 
-   .. image:: img/order_status_02.png
+   .. image:: img/order_status2.png
        :align: center
        :alt: Adding a new order status in CS-Cart.
 
@@ -52,7 +52,7 @@ Status Properties
 
   .. note::
 
-      The email address of the order department is specified in **Settings → Company**.
+      The email address of the order department is specified in **Settings → General → Company**.
 
 * **Inventory**—choose whether to decrease or increase the number of items in stock for products included in an order with this status.
 
@@ -72,7 +72,7 @@ Status Properties
 
 .. important::
 
-    The properties described below appear only when the corresponding add-ons are installed and activated under **Add-ons → Manage add-ons**. These add-ons are: **Suppliers**, **Gift certificates**, **RMA**, **Reward points**.
+    The properties described below appear only when the corresponding add-ons are installed and activated under **Add-ons → Downloaded add-ons**. These add-ons are: **Suppliers**, **Gift certificates**, **RMA**, **Reward points**.
 
 * **Notify supplier**—tick this checkbox to send automatic email notifications to suppliers once an order gets this status. The notifications will be sent to suppliers whose products are in the order.
 
@@ -86,6 +86,6 @@ Status Properties
 
       If you change a status of the order to a status that grants reward points, the customer will get them. But if you later choose another status that doesn't grant reward points, the points will be taken from the customer.
 
-.. image:: img/order_status_01.png
+.. image:: img/order_status1.png
     :align: center
     :alt: Status properties
