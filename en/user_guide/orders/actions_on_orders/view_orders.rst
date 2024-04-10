@@ -2,13 +2,13 @@
 View Orders
 ***********
 
-When you open the **Orders → View orders** section, the system automatically lists all orders from the database, i.e. the orders that have ever been placed and not deleted. By default, the list is arranged according to the date when the orders were placed, with the most recent orders at the top.
+When you open the **Orders → Orders** section, the system automatically lists all orders from the database, i.e. the orders that have ever been placed and not deleted. By default, the list is arranged according to the date when the orders were placed, with the most recent orders at the top.
 
 .. hint::
 
     Click on the name of the corresponding column to sort orders by their IDs, statuses, and totals, as well as phone numbers, email addresses, or names of users who placed the orders.
 
-.. image:: img/view_orders.png
+.. image:: img/view_orders1.png
     :align: center
     :alt: View the list of orders in the Administration panel under Orders → View orders.
 
@@ -18,19 +18,21 @@ Use the search form on the right to display only those orders that meet certain 
 
 * customer's email address.
 
+* customer's phone number.
+
 * the range of order totals.
 
 .. hint::
 
     Click **Advanced search** for more filtering criteria.
 
-If you filter orders against a particular search pattern regularly (e.g., to list all new orders that were paid with a gift certificate), you can save the pattern. It will appear in the list of predefined patterns in the top right corner of the **View orders** page.
+If you filter orders against a particular search pattern regularly (e.g., to list all new orders that were paid with a gift certificate), you can save the pattern. It will appear in the list of predefined patterns in the top right corner of the **Orders** page.
 
-.. image:: img/orders_01.png
+.. image:: img/orders1.png
     :align: center
     :alt: Saved searches.
 
-The **View orders** page allows you to:
+The **Orders** page allows you to:
 
 * View all orders in the store, or just the orders that meet your search requirements.
 
