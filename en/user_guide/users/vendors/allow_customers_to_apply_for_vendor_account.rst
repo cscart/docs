@@ -10,7 +10,7 @@ How To: Allow Customers to Become Vendors
 Step 1. Allow Customers to Apply for a Vendor Account
 =====================================================
 
-#. In the Administration panel, go to **Settings → Vendors**.
+#. In the Administration panel, go to **Settings → General → Vendors**.
 
 #. Tick the **Allow users to apply for vendor account** checkbox.
 
@@ -22,7 +22,7 @@ Step 1. Allow Customers to Apply for a Vendor Account
 
        At this point, it is a good idea to :doc:`set up a user group for vendors' administrators </user_guide/users/vendors/vendor_group>` if you want to limit what those administrators can see or do in their admin panels.
 
-   .. image:: img/settings_vendors.png
+   .. image:: img/settings_vendors1.png
        :align: center
        :alt: Allowing users to apply for vendor accounts.
 
@@ -30,7 +30,7 @@ Step 1. Allow Customers to Apply for a Vendor Account
 Step 2. Configure the Application Form
 ======================================
 
-#. In the Administration panel, go to **Administration → Profile fields**.
+#. In the Administration panel, go to **Settings → Profile fields**.
 
 #. Switch to **Vendor information** in the right sidebar.
 
@@ -40,7 +40,7 @@ Step 2. Configure the Application Form
 
        The form has a field with the **Vendor terms and conditions** type. When you edit that field, you can change the text of the agreement that vendors must accept when they register.
 
-   .. image:: img/vendor_profile_fields.png
+   .. image:: img/vendor_profile_fields1.png
        :align: center
        :alt: Customizing the vendor application form.
 
@@ -80,11 +80,11 @@ Step 4. Grant a New Vendor Access to Vendor's Admin Panel
 
 #. Go to **Vendors → Vendors**.
 
-#. Find the vendor you want to activate. The vendor accounts that haven't been activated yet have the **Approve** (thumbs up) and **Disapprove** (thumbs down) buttons next to their names.
+#. Find the vendor you want to activate. The vendor accounts that haven't been activated yet have the *Pending* status.
 
-#. Click the **Approve** button. The status of the desired account will be automatically changed to *Active*.
+#. Change the status to *Active*.
 
-   .. image:: img/change_vendor_status.png
+   .. image:: img/change_vendor_status1.png
        :align: center
        :alt: Find the vendor account you want to activate and change its status to Pending or Active.
 
