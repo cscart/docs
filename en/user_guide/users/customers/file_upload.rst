@@ -10,9 +10,9 @@ Let's say you want customers to upload their documents (for example, IDs) when c
 
 To do this:
 
-#. Go to **Administration → Profile fields**.
+#. Go to **Settings → Profile fields**.
 
-#. Click the **+** in the upper right corner to create a new profile field.
+#. Click the **+ Add field** in the upper right corner to create a new profile field.
 
 #. Add the :doc:`new profile field </user_guide/users/customers/change_profile_fields>`.
 
@@ -24,7 +24,7 @@ To do this:
 
 #. Click the **Save** button.
 
-   .. image:: img/docs_profile_fields.png
+   .. image:: img/docs_profile_fields1.png
        :align: center
        :alt: Profile field for uploading documents
 
