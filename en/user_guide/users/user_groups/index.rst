@@ -12,15 +12,15 @@ User Groups
 
 .. hint::
 
-    To manage user groups, go to **Customers → User Groups**.
+    To manage user groups, go to **Users → User Groups**.
 
 ===================
 Adding a User Group
 ===================
 
-#. In the Administration panel, go to **Customers → User groups**.
+#. In the Administration panel, go to **Users → User groups**.
 
-#. Click the **+** button. This will open a form with the group options.
+#. Click the **+ New user group(s)** button. This will open a form with the group options.
 
 #. Fill in the form.
 
@@ -50,11 +50,11 @@ Customers can apply for a user group by clicking on the **Join** link on the sto
 
 To process a request, complete the following steps:
 
-#. Go to **Customers → User groups** in the Administration panel of your store.
+#. Go to **Users → User groups** in the Administration panel of your store.
 
-#. Click on the **gear** button and choose the **User group requests** tab to open a list of pending requests.
+#. Click on the **User group requests** button to open a list of pending requests.
 
-   .. image:: img/manage_membership.png
+   .. image:: img/manage_membership1.png
        :align: center
        :alt: Click on the gear button and choose the User group requests tab to open a list of pending requests.
 
@@ -74,6 +74,6 @@ For each administrator or vendors' administrator group you can specify what the 
 
 #. Click the **Save** button to apply the changes.
 
-   .. image:: img/admin_privileges.png
+   .. image:: img/admin_privileges1.png
        :align: center
        :alt: Tick the checkboxes next to the privileges you want to grant to the group.
