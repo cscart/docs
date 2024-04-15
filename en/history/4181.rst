@@ -2,6 +2,16 @@
 CS-Cart 4.18.1 Changelog
 ************************
 
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: Maps and geolocation: Vendor locations [Beta]: Yandex: Added setting for Geosuggest API key.
+
+[+] Multi-Vendor: Add-ons: Common products: Promotions: The common product promotion discount now applies to all vendor offers.
+
+[+] Settings: Thumbnails: Added ability to limit the file size for uploaded images to improve performance.
+
 =====================
 Functionality Changes
 =====================
@@ -10,23 +20,53 @@ Functionality Changes
 
 [*] Add-ons: Product variations: Performance improved for a large number of variations when the "Show all possible feature variants" setting is enabled.
 
+[*] Core: PHP library aws-sdk-php was updated to version 3.297.2 with its dependencies.
+
+[*] Payments: Sage Pay was renamed to Opayo and updated in accordance with the technical requirements to ensure that it continues working.
+
+[*] Upgrade center: The timeout for downloading update packages was increased. The ability to change this value via tweak was added.
+
 =========
 Bug Fixes
 =========
 
 [!] API: Requests for PHP 8.1 versions generated Deprecated authorization errors. Fixed.
 
+[!] Add-ons: Call requests: A vendor did not have an option to assign responsible for a call request. Fixed.
+
 [!] Add-ons: Call requests: Products from the cart were not displayed in the generated call request. Fixed.
+
+[!] Add-ons: Call requests: The phone number was not displayed on the storefront. Fixed.
+
+[!] Add-ons: Comments and reviews: Design: The block with reviews did not scroll. Fixed.
 
 [!] Add-ons: Comments and reviews: SEO: An error occurred when viewing a product with reviews without evaluation. Fixed.
 
 [!] Add-ons: Google reCAPTCHA: A PHP error occurred on the add-on's detailed page when it was disabled. Fixed.
 
+[!] Add-ons: HiDPI displays support: Lazy thumbnails: Large thumbnails were not generated on devices with high display resolutions. Fixed.
+
 [!] Add-ons: Import from Shopify: Features could be duplicated by import. Fixed.
 
-[!] Add-ons: Product variations: The popup for adding variations didn't open when there were a large number of them. Fixed.
+[!] Add-ons: Landing pages from Tilda: Notifications of successful form submission were displayed incorrectly in some cases. Fixed.
+
+[!] Add-ons: Maps and geolocation: Yandex: An error occurred when entering an address in the search field. Fixed.
+
+[!] Add-ons: PayPal Checkout: Sometimes it was impossible to pay for an order in a non-primary currency. Fixed.
+
+[!] Add-ons: Product variations: Importing one product from a variation did not create a variation group. Fixed.
+
+[!] Add-ons: Product variations: The pop-up for adding variations didn't open when there were a large number of them. Fixed.
 
 [!] Add-ons: Product variations: There was an error when changing product variations to those already in the cart. Fixed.
+
+[!] Add-ons: RMA: eBay synchronization: Price list: E-mail marketing: Deprecated PHP errors could occur when operating add-ons on PHP version 8.1. Fixed.
+
+[!] Add-ons: Reward points: Order management: When editing the order without making any changes, the record of points being awarded and deducted from the user was duplicated. Fixed.
+
+[!] Add-ons: Vendor locations [Beta]: Yandex: An error occurred when entering an address in the search field. Fixed.
+
+[!] Add-ons: Vendor plans: Categories: Exim: Products with categories that have duplicates by name and are allowed by vendor plan could be skipped during import. Fixed.
 
 [!] Add-ons: Warehouses: Common products for vendors: The common products were displayed incorrectly on the storefront when there were product offers distributed across warehouses. Fixed.
 
@@ -34,13 +74,39 @@ Bug Fixes
 
 [!] Checkout: "Zero price action" didn't apply (or un-apply) when a product price was changed from 0 or to 0 while a customer already had the product in cart. Fixed.
 
+[!] Checkout: When changing the payment method, the checked checkboxes of the terms of use agreements were reset. Fixed.
+
+[!] Dashboard: Date Range Picker: The date range picker did not allow selecting a range greater than 1 year. Fixed.
+
+[!] Design: Mobile view: Checkout: The pick-up point selection was not working correctly. Fixed.
+
+[!] Design: Part of the font link was cut off when added to less. Fixed.
+
 [!] E-mail notifications: RTL: The product name and options were displayed incorrectly. Fixed.
+
+[!] Exoirt/Import: Products were not imported if the last field in the file was the language code. Fixed.
 
 [!] Export/Import: Vendors: Translations for some vendor fields were not filled by import. Fixed.
 
+[!] Mobile application: Languages: The “mobile_select_pickup_item” language variable was not translated into other languages on the shipping selection page at checkout. Fixed.
+
+[!] Mobile application: Stripe payments: The mobile app displayed unsupported payment methods such as Apple Pay and Google Pay. Fixed.
+
 [!] Multi-Vendor Plus: Add-ons: Common Products for vendors: Storefronts: Administrators: Common products were displayed in the list of items on sale. Fixed.
 
-[!] Multi-Vendor: Add-ons: Vendor-to-admin payments: Stripe payments: Stripe Connect payments: In some cases, records of refill vendor balance were duplicated. Fixed.
+[!] Multi-Vendor Ultimate: Export/Import: The storefront administrator could export and import orders from other storefronts. Fixed.
+
+[!] Multi-Vendor: Add-ons: Common Products for Vendors: Product Variations: Export/Import: An error occurred when updating variations with a changed variation group code during importing. Fixed.
+
+[!] Multi-Vendor: Add-ons: Common products: Promotions: The catalog incorrectly displayed a discount on a common product. Fixed.
+
+[!] Multi-Vendor: Add-ons: Product variations: Vendor data premoderation: An error occurred while moderating products. Fixed.
+
+[!] Multi-Vendor: Add-ons: Stripe payments: Stripe Checkout: Orders from several vendors were placed with Open status after payment. Fixed.
+
+[!] Multi-Vendor: Add-ons: Stripe payments: Stripe Connect payments: In some cases, records of vendor balance refill were duplicated. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor-to-admin payments: Stripe payments: Stripe Connect payments: In some cases, records of vendor balance refill were duplicated. Fixed.
 
 [!] Options: Pages of products with a large number of options and forbidden combinations took too long to load. Fixed.
 
@@ -51,3 +117,5 @@ Bug Fixes
 [!] Storefronts: Products: An Ajax error occurred when adding an item to a cart with a slow internet connection. Fixed.
 
 [!] Storefronts: Removal of storefronts with a large number of other storefronts and layouts took too long. Fixed; now removal is 2-3 times faster.
+
+[!] Storefronts: Vendors: An error occurred when merging vendors if there were multiple storefronts. Fixed.
