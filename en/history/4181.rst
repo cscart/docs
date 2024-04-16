@@ -84,7 +84,7 @@ Bug Fixes
 
 [!] E-mail notifications: RTL: The product name and options were displayed incorrectly. Fixed.
 
-[!] Exoirt/Import: Products were not imported if the last field in the file was the language code. Fixed.
+[!] Export/Import: Products were not imported if the last field in the file was the language code. Fixed.
 
 [!] Export/Import: Vendors: Translations for some vendor fields were not filled by import. Fixed.
 
