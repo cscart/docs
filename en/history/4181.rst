@@ -10,13 +10,13 @@ New Features and Improvements
 
 [+] Settings: Thumbnails: Added ability to limit the file size for uploaded images to improve performance.
 
-[*] Add-ons: PayPal Checkout: Added customization of additional payment methods and the appearance of buttons.
+[+] Add-ons: PayPal Checkout: Added customization of additional payment methods and the appearance of buttons.
 
 =====================
 Functionality Changes
 =====================
 
-[+] Multi-Vendor: Add-ons: Common products: Promotions: The common product promotion discount now applies to all vendor offers.
+[*] Multi-Vendor: Add-ons: Common products: Promotions: The common product promotion discount now applies to all vendor offers.
 
 [*] Add-ons: Product variations: Performance improved for a large number of variations when the "Show all possible feature variants" setting is enabled.
 
