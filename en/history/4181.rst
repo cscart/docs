@@ -6,17 +6,17 @@ CS-Cart 4.18.1 Changelog
 New Features and Improvements
 =============================
 
-[+] Add-ons: Maps and geolocation: Vendor locations [Beta]: Yandex: Added setting for Geosuggest API key.
-
-[+] Multi-Vendor: Add-ons: Common products: Promotions: The common product promotion discount now applies to all vendor offers.
+[+] Admin panel: Styles have been changed, navigation has been improved, and filters have been added to the product list.
 
 [+] Settings: Thumbnails: Added ability to limit the file size for uploaded images to improve performance.
+
+[*] Add-ons: PayPal Checkout: Added customization of additional payment methods and the appearance of buttons.
 
 =====================
 Functionality Changes
 =====================
 
-[*] Add-ons: PayPal Checkout: Added customization of additional payment methods and the appearance of buttons.
+[+] Multi-Vendor: Add-ons: Common products: Promotions: The common product promotion discount now applies to all vendor offers.
 
 [*] Add-ons: Product variations: Performance improved for a large number of variations when the "Show all possible feature variants" setting is enabled.
 
