@@ -34,7 +34,7 @@ How to Configure the Payment Method
 
    * **Account settings:**
 
-     * **Partner integration code**—your build notation (BN) code. 
+     * **Partner integration code**—your build notation (BN) code. Contact PayPal team directly using provided email in this section.
    
      * **Merchant account ID, App Client ID, App Secret**—these settings connect your marketplace to your PayPal account. Get these credentials from PayPal.
      
