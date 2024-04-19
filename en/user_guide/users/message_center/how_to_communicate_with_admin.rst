@@ -4,7 +4,7 @@ How do Vendors Communicate with Administrators
 
 The :doc:`Message center </user_guide/addons/customer_to_vendor_communication/index>` add-on allows vendors and marketplace owners to communicate with each other on the **Vendors →  Message center** page. This is useful in case if:
 
-* a vendor has a question to the administrator; 
+* a vendor has a question to the administrator;
 
 * the admin has any comments or suggestions on how the product in the vendor's store should be filled, and he wants to show him what needs to be fixed;
 
@@ -27,7 +27,7 @@ The **Message center** add-on allows vendors to contact the administrator:
 
 To send a message to the administrator, the vendor has to click the gear button in the upper-right corner and select **Contact administrator**.
 
-.. image:: img/contact_admin.png
+.. image:: img/contact_admin1.png
        :align: center
        :alt: The Contact administrator button on the product's page
 
@@ -38,7 +38,7 @@ Let's say you want to contact a specific vendor. To do this:
 
 #. Go to the **Vendors → Message center** page.
 
-#. Click the **+** button to contact the vendor. 
+#. Click the **+ Contact vendor** button to start a thread. 
 
 #. Enter the **Subject** and choose the vendor in the **Vendor** field.
 
@@ -48,7 +48,7 @@ Let's say you want to contact a specific vendor. To do this:
 
 #. Enter your message and click the **Send** button.
 
-.. image:: img/message_to_vendor.png
+.. image:: img/message_to_vendor1.png
        :align: center
        :alt: Sending a message to a vendor
 
