@@ -24,7 +24,7 @@ The **Vendor Privileges** add-on is installed :doc:`like any other add-on </user
 
       Changing this setting won't affect the vendors' administrators that already exist in your marketplace.
 
-  .. image:: /user_guide/users/vendors/img/default_vendor_group.png
+  .. image:: /user_guide/users/vendors/img/default_vendor_group1.png
       :align: center
       :alt: Choose the default user group for all newly-created vendor admins.
 
