@@ -24,5 +24,5 @@
 
       Изменение этого параметра не затронет администраторов продавцов, которые уже существуют в вашем магазине.
 
-  .. fancybox:: /user_guide/users/vendors/img/default_vendor_group.png
+  .. fancybox:: /user_guide/users/vendors/img/default_vendor_group-1.png
       :alt: Выберите группу пользователей по умолчанию для всех новых продавцов.
