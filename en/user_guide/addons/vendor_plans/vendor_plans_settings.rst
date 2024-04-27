@@ -6,7 +6,7 @@ How To: Configure the Vendor Plans Add-on
 
     The **Vendor Plans** add-on is installed by default.
 
-#. In the Administration panel, go to **Add-ons → Manage add-ons**.
+#. In the Administration panel, go to **Add-ons → Downloaded add-ons**.
 
 #. Find the **Vendor Plans** add-on and click on its name.
 
@@ -26,6 +26,6 @@ How To: Configure the Vendor Plans Add-on
 
 #. Click **Save** to apply your changes.
 
-   .. image:: /user_guide/users/vendors/img/collect_taxes.png
+   .. image:: /user_guide/users/vendors/img/collect_taxes1.png
        :align: center
        :alt: The settings of the Vendor Plans add-on.
