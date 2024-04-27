@@ -12,7 +12,7 @@ Functionality
 
 The commissions set by the :doc:`/user_guide/addons/vendor_plans/index` add-on apply to all products, regardless of their category. If you'd like to set different commissions for selling products from particular categories, use the **Vendor plans: Commissions by category** add-on.
 
-.. image:: img/category_commission.png
+.. image:: img/category_commission1.png
     :align: center
     :alt: Each plan can have different commissions for different categories.
 
@@ -42,7 +42,7 @@ Installation
 
 The **Vendor plans: Commissions by category** add-on is installed :doc:`like any other add-on </user_guide/addons/1manage_addons>`. Please note that you'll only be able to install this add-on if you have Multi-Vendor Plus. Otherwise you'll be asked to upgrade your license.
 
-.. image:: img/commission_by_category_addon.png
+.. image:: img/commission_by_category_addon1.png
     :align: center
     :alt: The "Vendor plans: Commissions by category" add-on on the list of add-ons.
 
