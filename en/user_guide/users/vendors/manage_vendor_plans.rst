@@ -12,9 +12,9 @@ To manage vendor plans, go to **Vendors → Vendor plans** in the Administration
 
 .. note::
 
-    To see how all the plans will look on the storefront together, click the **gear** button in the top right corner and choose **Preview**.
+    To see how all the plans will look on the storefront together, click the **Preview** button.
 
-.. image:: img/vendor_plan_list.png
+.. image:: img/vendor_plan_list1.png
     :align: center
     :alt: Vendor plans as they appear in the Administration panel.
 
@@ -42,7 +42,7 @@ Way 1: From a Vendor Settings Page
 
 #. Click the **Create** button.
 
-   .. image:: img/new_plan_vendor.png
+   .. image:: img/new_plan_vendor1.png
        :align: center
        :alt: Creating a new vendor plan from the page of vendor settings
        
@@ -56,7 +56,7 @@ Way 2: From the List of Vendor Plans
 
 #. Go to **Vendors → Vendor plans**.
 
-#. To add a plan, click the **+** button in the upper right part of the page. To edit a plan, click on the plan’s name in the list.
+#. To add a plan, click the **+ Add vendor plan** button in the upper right part of the page. To edit a plan, click on the plan’s name in the list.
 
 #. A pop-up window with multiple tabs will open. Configure the plan’s properties on those tabs:
 
@@ -82,7 +82,7 @@ Way 2: From the List of Vendor Plans
 
            The visibility of plans to also depends on whether or not you :doc:`allow vendors to switch to other plans </user_guide/addons/vendor_plans/vendor_plans_settings>`.
 
-     .. image:: img/new_plan_general.png
+     .. image:: img/new_plan_general1.png
          :align: center
          :alt: The "General" tab of a vendor plan.
 
@@ -96,7 +96,7 @@ Way 2: From the List of Vendor Plans
 
            The :doc:`/user_guide/addons/commissions_by_category/index` add-on allows you to set commissions that depend on the main category of a product.
 
-     .. image:: img/new_plan_commission.png
+     .. image:: img/new_plan_commission1.png
            :align: center
            :alt: The "Commission" tab of a vendor plan.
 
@@ -112,13 +112,13 @@ Way 2: From the List of Vendor Plans
 
      * **Vendor microstore**—tick the checkbox to allow vendors to have a microstore. It is a section of the store that includes only the products, categories, and filters of a specific vendor. The search in that section is also limited to the assets of a specific vendor.
 
-     .. image:: img/new_plan_restrictions.png
+     .. image:: img/new_plan_restrictions1.png
           :align: center
           :alt: The "Restrictions" tab of a vendor plan.
 
    * **Categories**—create a list of categories to which vendors can add their products. By default, all the categories are available.
 
-     .. image:: img/new_plan_categories.png
+     .. image:: img/new_plan_categories1.png
          :align: center
          :alt: The "Categories" tab of a vendor plan.
 
@@ -128,9 +128,15 @@ Way 2: From the List of Vendor Plans
        
    * **Storefronts**—specify the storefronts where this plan will be available.
    
-     .. image:: img/new_plan_storefronts.png
+     .. image:: img/new_plan_storefronts1.png
          :align: center
          :alt: The storefronts tab of a vendor plan
+
+   * **Privileges**—specify the user groups that vendor's administrators will get when a vendor gets this plan.
+   
+     .. image:: img/new_plan_privileges.png
+         :align: center
+         :alt: The privileges tab of a vendor plan
 
 #. Click the **Create** or **Save** button.
 
@@ -180,6 +186,6 @@ Switch Between Plans
 
     Vendors receive a special :doc:`email notification </user_guide/look_and_feel/email_templates/index>` telling them that they’ve been moved to another plan.
 
-.. image:: img/vendor_selects_plan.png
+.. image:: img/vendor_selects_plan1.png
      :align: center
      :alt: The list of vendor plans that can be selected.
