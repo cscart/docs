@@ -4,13 +4,13 @@ How To: Set Up a Promotion
 
 #. In the Administration panel, go to **Marketing → Promotions**.
 
-#. Click the **+** button in the top right corner and choose **Add cart promotion** or **Add catalog promotion**:
+#. Click the **+ Add promotion** button in the top right corner and choose **Add cart promotion** or **Add catalog promotion**:
 
    * **Catalog promotions** are product discounts that are displayed on the catalog pages (the pages of products and categories).
 
    * **Cart promotions** include discounts on products and orders; bonus coupons; free shipping; free products; and so on. Cart promotions are displayed on the cart and checkout page.
 
-     .. image:: img/add_promotion.png
+     .. image:: img/add_promotion1.png
          :align: center
          :alt: The "Marketing → Promotions" page allows you to create cart and catalog promotions.
 
@@ -44,7 +44,7 @@ How To: Set Up a Promotion
 
    * **Status**—the status of the promotion (*Active*, *Hidden*, or *Disabled*).
 
-     .. image:: img/promotions_01.png
+     .. image:: img/promotions1.png
          :align: center
          :alt: The General tab of the promotion creation form in CS-Cart.
 
@@ -57,7 +57,7 @@ How To: Set Up a Promotion
 
         You can create multiple conditions. Please note the phrase at the top of the condition list: *If all/any of these conditions are true/false*. By choosing between *all* and *any*, and *true* and *false*, you determine when the promotion applies.
 
-   .. image:: img/promotions_02.png
+   .. image:: img/promotions2.png
        :align: center
        :alt: The Conditions tab determines when the promotion applies.
 
@@ -69,7 +69,7 @@ How To: Set Up a Promotion
 
 #. Click the **Add bonus** button and select a bonus from the dropdown list. Most bonuses require you to enter additional information.
 
-   .. image:: img/promotions_03.png
+   .. image:: img/promotions3.png
        :align: center
        :alt: The Bonuses tab determines what happens when the promotion applies.
 
