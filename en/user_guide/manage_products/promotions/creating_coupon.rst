@@ -26,7 +26,7 @@ CS-Cart allows you to create bonus coupons for customers. Customers enter codes 
 
          If you would like to generate coupon codes automatically, please refer to :doc:`another article <auto_coupons>`.
 
-     .. image:: img/coupon.png
+     .. image:: img/coupon_1.png
          :align: center
          :alt: Specifying a coupon code for a promotion in CS-Cart.
 
