@@ -14,21 +14,21 @@ To create this promotion, follow the steps below:
 
 #. Click the **+** button in the top right corner and choose **Add cart promotion**.
 
-   .. image:: img/add_cart_promotion.png
+   .. image:: img/add_cart_promotion1.png
        :align: center
        :alt: Open the list of promotions and use the plus button to add a cart promotion.
 
 #. Name your promotion and make sure that the **Status** is set to *Active*.
 
-   .. image:: img/promotion_name.png
+   .. image:: img/promotion_name1.png
        :align: center
        :alt: Name your promotion and specify other parameters on the General tab.
 
-#. Switch to the **Conditions** tab and click **Add condition**.
+#. Switch to the **Conditions** tab and click **+ Add condition**.
 
-#. Choose **Products** in the dropdown list, then click **Add product**.
+#. Choose **Products** in the dropdown list, then click **+ Add product**.
 
-   .. image:: img/promotion_condition.png
+   .. image:: img/promotion_condition1.png
        :align: center
        :alt: Add a "Products" condition.
 
@@ -40,11 +40,11 @@ To create this promotion, follow the steps below:
 
        If you want the promotion to apply only when a customer buys several different products, add those products as separate conditions. Make sure that the phrase above the list of conditions says *If all of these conditions are true*.
 
-   .. image:: img/select_product_free_shipping.png
+   .. image:: img/select_product_free_shipping1.png
        :align: center
        :alt: Select one or multiple products from the list.
 
-#. Switch to the **Bonuses** tab and click **Add bonus**.
+#. Switch to the **Bonuses** tab and click **+ Add bonus**.
 
 #. Select **Free shipping** from the dropdown list and choose a shipping method.
 
@@ -52,7 +52,7 @@ To create this promotion, follow the steps below:
 
        If you'd like to give free shipping for multiple shipping methods, add those methods as separate bonuses.
 
-   .. image:: img/promotion_bonus.png
+   .. image:: img/promotion_bonus1.png
        :align: center
        :alt: Select the shipping method you want to make free.
 
@@ -60,6 +60,6 @@ To create this promotion, follow the steps below:
 
    Congratulations! Now when customers add the specified product to cart and select the right shipping method, they won't be charged for shipping.
 
-   .. image:: img/free_shipping_promotion.png
+   .. image:: img/free_shipping_promotion1.png
        :align: center
        :alt: Customers won't be charged for shipping if their orders fall under the free shipping promotion.
