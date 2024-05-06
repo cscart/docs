@@ -27,3 +27,10 @@
     :glob:
 
     configuring_cscart
+
+
+.. toctree::
+    :maxdepth: 1
+    :hidden:
+    
+    server_ansible_playbooks
