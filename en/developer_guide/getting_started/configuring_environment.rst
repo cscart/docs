@@ -10,11 +10,10 @@ Development environment should mimic the production environment as closely as po
 
 That’s why we recommend using a virtual machine configured to meet :doc:`CS-Cart system requirements <../../install/system_requirements>`.
 
-We created a script to deploy the environment on a clean installation of Ubuntu or CentOS with 6 commands and a few tweaks in a configuration file. Install Ansible and run one of our scenarios (playbooks) to have the environment configured for you.
 
 .. toctree::
     :maxdepth: 1
-    :glob:
+    :hidden:
 
     server_ansible_playbooks
 

@@ -62,3 +62,9 @@ Cache makes pages load faster. However, when you work on a project, you want to 
     :glob:
 
     cache_clearing
+
+.. toctree::
+    :maxdepth: 1
+    :hidden:
+    
+    server_ansible_playbooks
