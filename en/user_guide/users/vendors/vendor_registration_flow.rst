@@ -6,73 +6,48 @@ How To: Manage Vendor Onboarding on the Marketplace
 
     This functionality is available only in **Multi-Vendor**.
     
-In this article, we explore different vendor onboarding scenarios in CS-Cart Multi-Vendor. Depending on the chosen settings, vendors after registration will either immediately work in the marketplace, or will have limited access, or won't work at all until the administrator approves them.
+CS-Cart Multi-Vendor allows you to configure seller onboarding as you see fit. Depending on the settings, new sellers either immediately get access to the marketplace (full or limited), or have to wait until an administrator approves them. The guide below will help you set up these different scenarios of seller onboarding.
 
 
 .. contents::
    :backlinks: none
    :local:
 
-=========================
-Scenarios for New Vendors
-=========================
-
-
-There are various settings that can be adjusted to tailor the vendor onboarding process for different scenarios:
- 
-* Vendor :doc:`statuses </user_guide/users/vendors/vendor_statuses>`.
-* The values of the settings in the :doc:`/user_guide/addons/vendor_data_premoderation/index` add-on.
-* The vendor setting in the admin panel. 
-
-
 
 Scenario 1.  Immediate Full Access to Admin Panel and Storefront
 ================================================================
 
-.. list-table::
-    :header-rows: 1
-    :widths: 25 35
+In this scenario, new sellers appear on the storefront (and get the *Active* status). They can start selling the moment they :doc:`sign up for an account </user_guide/users/vendors/allow_customers_to_apply_for_vendor_account>`, and immediately owe you a fee :doc:`as per their chosen plan </user_guide/addons/vendor_plans/index>`.
 
-    *   -   Setting results
-        -   What to set up
-    *   -   * Vendor gets access to the Vendor panel.
-            * Vendor appears on the storefront.
-            * Vendor gets the *"Active"* status.
-            * Vendor immediately owes the vendor plan fee.
-        -   * Vendor data premoderation add-on is installed and activated.
-            * The "Approval of newly-created vendors" setting in the addon is set to *"Isn't required"*.
-            * The "Review new vendors before granting access to the admin panel" setting on the *Settings → General → Vendors* page is disabled.
+How to configure this scenario:
+
+#. Make sure that the **Vendor Data Premoderation** add-on is installed and active.
+#. Set the “Approval of newly-created vendors” in that add-on's settings to *"Isn't required"*.
+#. Disable the "Review new vendors before granting access to the admin panel" setting on the *Settings → General → Vendors* page.
+
+
 
 Scenario 2. Immediate Access to Admin Panel, Approval for Storefront
 ====================================================================
 
-.. list-table::
-    :header-rows: 1
-    :widths: 25 35
+In this scenario, new sellers won't appear on the storefront until the administartor's approval (and get the *Pending* status), but they do get access to the Vendor panel. After the administrator approves the vendor, they owe the vendor plan fee and get the *"Active"* status. 
 
-    *   -   Setting results
-        -   What to set up
-    *   -   * Vendor gets access to the Vendor panel.
-            * Vendor won't appear on the storefront until the administartor's approval.
-            * Vendor gets the *"Pending"* status.
-            * Vendor owes the vendor plan fee after approval and getting the *"Active"* status
-        -   * Vendor data premoderation addon is installed and activated.
-            * The "Approval of newly-created vendors" setting in the addon is set to *"Required for all vendors"*.
-            * The "Review new vendors before granting access to the admin panel" setting on the *Settings → General → Vendors* page is disabled.
+How to configure this scenario:
+
+#. Make sure that the **Vendor Data Premoderation** add-on is installed and active.
+#. Set the "Approval of newly-created vendors" setting in the addon to *"Required for all vendors"*.
+#. Disable the "Review new vendors before granting access to the admin panel" setting on the *Settings → General → Vendors* page.
+
+
 
 Scenario 3. Approval for Access to Admin Panel and Storefront
 =============================================================
 
-.. list-table::
-    :header-rows: 1
-    :widths: 25 35
+In this scenario, new sellers won't get access to the admin panel until the administartor's approval and won't appear on the storefront either, and get a *New* status. After the administrator's approval, they owe the vendor plan fee and get the *Active* status. 
 
-    *   -   Setting results
-        -   What to set up
-    *   -   * Vendor won't get access to the admin panel until the administartor's approval.
-            * Vendor won't appear on the storefront until the administartor's approval.
-            * Vendor gets the *"New"* status.
-            * Owes the vendor plan fee after approval and getting the *"Active"* status
-        -   * Vendor data premoderation addon—"Approval of newly-created vendors" is set to *"Required for all vendors"*.
-            * The "Approval of newly-created vendors" setting in the addon is set to *"Isn't required"*.
-            * The "Review new vendors before granting access to the admin panel" setting on the *Settings → General → Vendors* page is enabled.
+How to configure this scenario:
+
+#. Make sure that the **Vendor Data Premoderation** add-on is installed and active.
+#. Set the "Approval of newly-created vendors" in the Vendor data premoderation addon's settings to *"Required for all vendors"*.
+#. Set the "Approval of newly-created vendors" setting in the Vendor data premoderation addon to *"Isn't required"*.
+#. Enable the "Review new vendors before granting access to the admin panel" setting on the *Settings → General → Vendors* page.
