@@ -53,7 +53,7 @@ There are two ways to create a product bundle.
 Way 1. From the Marketing → Product bundles Page
 ----------------------------------------------------
 
-#. In the upper right corner of the page, click the **+** button to add a new bundle. In the opened window, fill in the fields from the *General* tab firstly.
+#. In the upper right corner of the page, click the **+ Add new bundle** button. In the opened window, fill in the fields from the *General* tab firstly.
 
    * Enter the **Name**.
 
