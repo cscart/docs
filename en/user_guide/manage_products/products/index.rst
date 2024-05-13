@@ -4,7 +4,7 @@ Products
 
 Go to **Products → Products** to manage the products in your catalog. That page contains the list of all products in your store. To filter products by some criteria, use the search panel to the right of the list.
 
-.. image:: img/products1.png
+.. image:: img/products.png
     :align: center
     :alt: The product list in CS-Cart admin panel.
 
