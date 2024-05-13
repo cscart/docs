@@ -18,7 +18,7 @@ Some marketplace owners want to check the products of their vendors before showi
 
         Select multiple products by clicking on them or using the checkbox in the upper left corner. That way you'll be able to approve and disapprove them in bulk via the menu that will appear above them.
 
-    .. image:: /user_guide/addons/vendor_data_premoderation/img/vendor_data_premoderation1.png
+    .. image:: /user_guide/addons/vendor_data_premoderation/img/vendor_data_premoderation.png
         :align: center
         :alt: The page for managing products that require approval.
       
@@ -28,7 +28,7 @@ Some marketplace owners want to check the products of their vendors before showi
   
   * The **Pending vendor invitation** contains the list of all e-mails, to which administrator sent invitations to register as vendors in the marketplace.
   
-    .. image:: img/vdp_vendors1.png
+    .. image:: img/vdp_vendors.png
         :align: center
         :alt: Managing vendors page
       
