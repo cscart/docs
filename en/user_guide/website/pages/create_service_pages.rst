@@ -56,9 +56,9 @@ The page has been created and customized. But until we provide a link to it, the
 
 Depending on the page’s content, it can refer to different elements of the store and be part of different menus. Here is one of the ways to add an item to the menu:
 
-#. Go to **Design → Menus**.
+#. Go to **Website → Menus**.
 
-#. Choose any of the existing menus. Add an item to the menu via the **+** button at the top right corner.
+#. Choose any of the existing menus. Add an item to the menu via the **+ Add menu** button at the top right corner.
 
 #. Enter the name of the page.
 
