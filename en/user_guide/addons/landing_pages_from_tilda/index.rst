@@ -47,7 +47,7 @@ Adding a New Page from Tilda
 
 Add functional Tilda pages with modern design to your CS-Cart store. For example, you can quickly fill your store with selling product pages in one style. To add a page from Tilda to the store:
 
-#. In your admin panel, go to **Website → Pages**. In the upper right corner, click **+** and select **Add Tilda Page**.
+#. In your admin panel, go to **Website → Pages**. In the upper right corner, click **+ Add page** and select **Add Tilda Page**.
 
 #. Set :doc:`CS-Cart page properties </user_guide/website/pages/page_properties>` and fill in the :ref:`additional fields <fields>`.
 
@@ -82,7 +82,7 @@ You don't have to create a new page to add a page from Tilda to your store. You 
 
 For example, this can help to make the right impression on your website visitors and increase conversions. Turning your homepage into a landing page may help turn the visitors into your customers. To do this:
 
-#. Go to **Design → Layouts** in the admin panel.
+#. Go to **Website → Themes → Layouts** in the admin panel.
 
 #. Replace the existing layout page with a page from Tilda in any convenient way: using the page settings or the right sidebar.
 
