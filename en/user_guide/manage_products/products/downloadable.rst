@@ -10,7 +10,7 @@ To create a downloadable product:
 
 #. Tick the **Downloadable** check box in the **Extra** section.
 
-   .. image:: img/downloadable1.png
+   .. image:: img/downloadable_01.png
        :align: center
        :alt: How to make a product downloadable
 
@@ -40,7 +40,7 @@ To create a downloadable product:
 
        If you need to upload several files and divide them in several groups, use the **Add folder** button to create folders first.
 
-   .. image:: img/downloadable2.png
+   .. image:: img/downloadable_02.png
        :align: center
        :alt: The Files to sell tab
 
@@ -60,7 +60,7 @@ To create a downloadable product:
 
    * **After full payment**—allow a customer to download the file after the order status changes to **Processed** or **Completed**.
 
-   .. image:: img/downloadable3.png
+   .. image:: img/downloadable_03.png
        :align: center
        :alt: Activation mode
 
