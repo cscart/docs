@@ -22,6 +22,6 @@ Attaching a file to a product is useful when you need to make a some information
 
        A customer will be able to download this file in the **Attachments** tab on the product details page in the storefront.
 
-   .. image:: img/attachment_1.png
+   .. image:: img/attachment.png
        :align: center
        :alt: New attachment
