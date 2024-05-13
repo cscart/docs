@@ -4,7 +4,7 @@ Product Properties (Fields and Settings)
 
 When you create or edit a product, you should specify a number of product properties. For convenience, properties are grouped by tabs on the product editing page.
 
-.. image:: img/product_attributes1.png
+.. image:: img/product_attributes_01.png
     :align: center
     :alt: Tabs with properties on the product editing page.
 
@@ -181,7 +181,7 @@ Meta data
 
     Instructions on how to best use the meta-tags may vary depending on the search engine.
 
-.. image:: img/product_attributes2.png
+.. image:: img/product_attributes_02.png
     :align: center
     :alt: The "SEO" tab of a product in CS-Cart.
 
@@ -191,7 +191,7 @@ Options
 
 This tab allows you to manage :doc:`product options <../options/index>` and option variants, as well as control the option combinations and add forbidden/allowed combinations.
 
-.. image:: img/product_attributes3.png
+.. image:: img/product_attributes_03.png
     :align: center
     :alt: The "Options" tab of the product editing page.
 
@@ -259,7 +259,7 @@ This tab contains the list of wholesale prices for the product. Customers will s
 
       If you set up a discount that applies for all user groups for purchasing 1 item, this will overwrite product price.
 
-.. image:: img/product_attributes5.png
+.. image:: img/product_attributes_05.png
     :align: center
     :alt: Configuring quantity discounts in CS-Cart.
 
@@ -427,7 +427,7 @@ This tab includes a list of tags associated with the product. Tags appear on the
 
 * **Tags**—the tags that have been added to the product. Once you start typing, CS-Cart will use autocomplete to suggest what existing tag you may be entering.
 
-.. image:: img/product_attributes6.png
+.. image:: img/product_attributes_06.png
     :align: center
     :alt: The "Tags" tab.
 
@@ -501,7 +501,7 @@ Required Products
 
 This tab contains a list of required products, which will be added to cart along with this product. To add a new required product, click the **Add product** button.
 
-.. image:: img/product_attributes7.png
+.. image:: img/product_attributes_07.png
     :align: center
     :alt: Required products
 
