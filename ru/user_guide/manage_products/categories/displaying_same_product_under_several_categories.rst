@@ -12,7 +12,7 @@
 
 #. Нажмите кнопку **Сохранить и закрыть**.
 
-   .. fancybox:: img/add_categories-1.png
+   .. fancybox:: img/add_categories.png
        :alt: Вкладка "Общее" на странице редактирования товара.
 
 .. note::
