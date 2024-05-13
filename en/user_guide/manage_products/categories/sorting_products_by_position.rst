@@ -8,13 +8,13 @@ By default, products in categories are sorted by alphabet. However, you can chan
 
 #. Each category has the **Products** column that displays the number of products in that category. Click on the number in the category where you'd like to sort products.
 
-   .. image:: img/categories_list1.png
+   .. image:: img/categories_list.png
        :align: center
        :alt: List of the product categories
 
 #. A new page with the list of products will open. Specify the positions for products.
 
-   .. image:: img/category_products1.png
+   .. image:: img/category_products.png
        :align: center
        :alt: Products of the category
 
