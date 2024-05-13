@@ -12,11 +12,11 @@ This article explains how to create service pages in the store (for example, ret
 Step 1. Create the Page
 =======================
 
-Let's imagine you want to publish new content, but there is no suitable page for it in your store. CS-Cart and Multi-Vendor let you create new pages:
+Let's imagine you want to publish new content, but there is no suitable page for it in your store. Store Builder and Multi-Vendor let you create new pages:
 
 #. Go to **Website → Pages**.
 
-#. Click the **+** button at the top right corner and select **Add Page**.
+#. Click the **+ Add page** button at the top right corner and select the *Add page* in the drop-down list.
 
 #. Fill in the required fields. :doc:`There are many fields, </user_guide/website/pages/page_properties>` but the main ones are “Name” and “Description”.
 
