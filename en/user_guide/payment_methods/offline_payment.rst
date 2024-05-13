@@ -16,7 +16,7 @@ To set up the credit card offline payment method, that does not use a real-time 
 
 6. Click **Create**.
 
-.. image:: img/offline_payment1.png
+.. image:: img/offline_payment.png
     :align: center
     :alt: Set up the Offline Payment
 
