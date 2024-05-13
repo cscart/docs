@@ -12,7 +12,7 @@ How To: Display Same Product under Several Categories
 
 #. Click the **Save** button.
 
-   .. image:: img/add_categories1.png
+   .. image:: img/add_categories.png
        :align: center
        :alt: General tab of the edit product page
 
