@@ -49,7 +49,7 @@ Information
 
   The text field below the image lets you describe the image in words. Technically, it is the text that you enter appears inside the ``alt=""`` and ``title=""`` attributes of the ``<img>`` HTML tag. This text is shown when the image is missing or cannot be displayed. It is good practice to have an alternative text associated with the image, for SEO purposes.
 
-.. image:: img/category_info1.png
+.. image:: img/category_info.png
     :align: center
     :alt: The Information section of category properties.
 
@@ -97,7 +97,7 @@ By using this tab, you can enable or disable some blocks, changing the look of t
 
     This tab is displayed only when you edit an existing category, not when you create a new one.
 
-.. image:: img/category_layouts1.png
+.. image:: img/category_layouts.png
     :align: center
     :alt: The Layouts tab.
 
@@ -169,6 +169,6 @@ The list of customers' reviews of the category. You can add your own reviews or 
 
     This tab requires the :doc:`Comments and reviews </user_guide/addons/comments_and_reviews/index>` add-on to be active. This tab appears only when communication and/or rating is enabled for the category on the **Add-ons** tab.
 
-.. image:: img/reviews1.png
+.. image:: img/reviews.png
     :align: center
     :alt: Enabling reviews and comments for a category.
