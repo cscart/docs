@@ -26,7 +26,7 @@ If links do not work when the :doc:`/user_guide/addons/seo/index` add-on is enab
 
 * SEO uses the **mod_rewrite** Apache module of your server. Check whether this module is installed on the server:
 
-  #. Log in to the administration panel of your store and go to **Administration → Logs**. 
+  #. Log in to the administration panel of your store and go to **Settings → Logs**. 
   
   #. Click the gear button and choose **PHP information** from the drop-down menu. A new page that displays the result of the **phpinfo** PHP function will open.
   
