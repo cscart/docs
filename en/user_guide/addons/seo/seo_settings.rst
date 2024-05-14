@@ -9,7 +9,7 @@ Install the Add-on
 
     The :doc:`/user_guide/addons/seo/index` add-on is installed by default.
     
-#. Go to **Add-ons → Manage add-ons**.
+#. Go to **Add-ons → Downloaded add-ons**.
 
 #. Find the **SEO** add-on in the list and make sure it's status is **Active**.
 
@@ -17,7 +17,7 @@ Install the Add-on
 Configure the Add-on
 ====================
 
-#. Go to **Add-ons → Manage add-ons**.
+#. Go to **Add-ons → Downloaded add-ons**.
 
 #. Find the **SEO** add-on in the list and click it's name to open the settings:
 
