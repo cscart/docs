@@ -27,7 +27,7 @@ To add a redirect manually:
 
 #. Go to **Website → SEO → 301 redirects**.
 
-#. On the opened page click the **+** button in the right upper part of the page.
+#. On the opened page click the **+ Add redirect** button in the right upper part of the page.
 
 #. In the opened window fill in the **Old URL** field. For example, if your URL is *http://example.com/path/to/object*, you need to enter */path/to/object*.
 
