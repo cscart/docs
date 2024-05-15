@@ -8,7 +8,7 @@ To disable breadcrumbs on the **Auth** and **Profiles** layout pages, do the fol
 *   Select the **Auth** or **Profiles** tab that you want to disable breadcrumbs on.
 *   Click the **Activate/Deactivate Block** icon of the **Breadcrumbs** block.
 
-.. image:: img/breadcrumbs1.png
+.. image:: img/breadcrumbs.png
     :align: center
     :alt: Deactivate/Axtivate block
 
