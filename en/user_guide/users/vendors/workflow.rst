@@ -20,7 +20,7 @@ Once the marketplace owner receives the money, it's up to them to distribute it 
 
 * The marketplace owner can also :ref:`issue payouts <payout>` to take sum from a vendor's account balance in favor of the marketplace. That's how the marketplace makes its profits.
 
-  .. image:: img/account_balance1.png
+  .. image:: img/account_balance.png
       :align: center
       :alt: The Accounting page in Multi-Vendor.
 
