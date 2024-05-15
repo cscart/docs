@@ -36,7 +36,7 @@
 
 1. Нажмите кнопку **+** на контейнере, в котором должен располагаться новый блок, и выберите **Добавить блок**.
 
-.. image:: img/adding_block2.png
+.. image:: img/adding_block.png
     :align: center
     :alt: Добавить блок
 
@@ -76,7 +76,7 @@
 
 3. Нажмите **Сохранить**, чтобы изменения вступили в силу.
 
-.. image:: img/edit_block2.png
+.. image:: img/edit_block.png
     :align: center
     :alt: Редактироdать блок
 
@@ -92,7 +92,7 @@
 
 2. Во всплывающем окне подтвердите действие.
 
-.. image:: img/delete_block2.png
+.. image:: img/delete_block.png
     :align: center
     :alt: Удалить блок
 
@@ -113,6 +113,6 @@
 
 3. Включите или выключите нужный блок.
 
-.. image:: img/deactivate_block2.png
+.. image:: img/deactivate_block.png
     :align: center
     :alt: Включить/Выключить блок
