@@ -16,7 +16,7 @@ You can arrange categories right on the storefront homepage. By using the **Cate
 *	Click the **Settings** link and enter the desired number of columns in the appeared **Number of columns in the objects list** input field.
 *	Specify the desired css-class in the **User-defined CSS-class** input field if needed.
 
-.. image:: img/arranging_categories1.png
+.. image:: img/arranging_categories_01.png
     :align: center
     :alt: General tab
 
@@ -24,7 +24,7 @@ You can arrange categories right on the storefront homepage. By using the **Cate
 
 *	Click the **Save** button.
 
-.. image:: img/arranging_categories2.png
+.. image:: img/arranging_categories_02.png
     :align: center
     :alt: Content tab
 
@@ -34,6 +34,6 @@ You can arrange categories right on the storefront homepage. By using the **Cate
 
 This is how arranged categories look on the storefront:
 
-.. image:: img/arranging_categories3.png
+.. image:: img/arranging_categories_03.png
     :align: center
     :alt: View from the storefront
