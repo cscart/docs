@@ -30,7 +30,7 @@ Here's how to add this block:
 
        Click the **Settings** link to access the additional settings that will let you customize the look of the block.
 
-   .. image:: img/featured_vendors_template_settings1.png
+   .. image:: img/featured_vendors_template_settings.png
        :align: center
        :alt: Template settings for the block with featured vendors.
 
