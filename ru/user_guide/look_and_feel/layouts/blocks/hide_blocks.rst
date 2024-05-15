@@ -10,7 +10,7 @@
 
 3. Нажмите кнопку **Вкл./Выкл.** на блоке **Строка навигации**.
 
-.. image:: img/breadcrumbs2.png
+.. image:: img/breadcrumbs.png
     :align: center
     :alt: Включить/Выключить блок
 
