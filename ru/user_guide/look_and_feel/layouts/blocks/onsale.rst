@@ -22,7 +22,7 @@
 
    * Укажите CSS-класс в поле **Пользовательский CSS-класс**, если необходимо.
    
-.. image:: img/onsale_general1.png
+.. image:: img/onsale_general.png
     :align: center
     :alt: Editing block
 
@@ -30,7 +30,7 @@
 
 6. Нажмите **Сохранить**.
 
-.. image:: img/onsale_content1.png
+.. image:: img/onsale_content.png
     :align: center
     :alt: Редактирование блока
 
