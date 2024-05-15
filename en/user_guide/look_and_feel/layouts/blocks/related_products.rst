@@ -20,14 +20,14 @@ Step 1. Create a Block
     *   Desired wrapper in the **Wrapper** select box.
     *   Specify the desired css-class in the **User-defined CSS-class** input field.
 
-    .. image:: img/related-1.png
+    .. image:: img/related_01.png
          :align: center
          :alt: General tab
 
     *   Open the **Content** tab and select *Manually* in the **Filling** select box
     *   Click the **Save** button.
 
-    .. image:: img/related-2.png
+    .. image:: img/related_02.png
         :align: center
         :alt: Content tab
 
@@ -41,7 +41,7 @@ Step 2. Add a Block to a Product
 *   Click on the gear icon on the block and open the **Content** tab. Click in the search area and add the necessary products.
 *	Click the **Save** button.
 
-.. image:: img/related-3.png
+.. image:: img/related_03.png
     :align: center
     :alt: Editing block
 
@@ -49,7 +49,7 @@ Step 2. Add a Block to a Product
 
 	After the block is created or changed, make sure it is displayed correctly. Sometimes not all wrappers are suitable for a specific block type.
 
-.. image:: img/related-4.png
+.. image:: img/related_04.png
     :align: center
     :alt: Block on the storefront
 
