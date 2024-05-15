@@ -110,7 +110,7 @@ The :doc:`/user_guide/addons/direct_customer_to_vendor_payments/index` add-on fr
 
 #. Any transaction fees imposed by the marketplace are listed as :ref:`unpaid payouts <payout>` (vendor's debt to the marketplace owner).
 
-   .. image:: /user_guide/addons/direct_customer_to_vendor_payments/img/vendor_payment_methods1.png
+   .. image:: /user_guide/addons/direct_customer_to_vendor_payments/img/vendor_payment_methods.png
        :align: center
        :alt: Paying to vendors separately means that each vendor gets money directly from customers, without the need for you to do something about it.
 
