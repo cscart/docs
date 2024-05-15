@@ -41,7 +41,7 @@ To display the section of the newest products on the category page:
     *   Desired wrapper in the **Wrapper** select box.
     *   Desired CSS-class in the **User-defined CSS-class** input field if needed.
 
-.. image:: img/newest-1.png
+.. image:: img/newest_01.png
     :align: center
     :alt: Content tab
 
@@ -52,6 +52,6 @@ To display the section of the newest products on the category page:
 
 	After the block is created or changed, make sure it is displayed correctly. Sometimes not all wrappers are suitable for the blocks.
 
-.. image:: img/newest-2.png
+.. image:: img/newest_02.png
     :align: center
     :alt: Block on the storefront
