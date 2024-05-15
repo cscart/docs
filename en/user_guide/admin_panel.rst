@@ -37,7 +37,7 @@ The Dashboard
 
 The first thing you’ll notice is the **Dashboard**, where you can check sales statistics, view recent orders and product changes. The Dashboard also provides information from the database, such as the number of active products and registered customers.
 
-.. image:: img/intro/dashboard1.png
+.. image:: img/intro/dashboard.png
     :align: center
     :alt: The Dashboard provides the statistics of your store.
 
