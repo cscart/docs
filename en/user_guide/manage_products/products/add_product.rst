@@ -15,11 +15,11 @@ CS-Cart allows to add and edit products using different methods.
 Adding One Product 
 ==================
 
-#. Go to **Products → Products** in the administration panel of your store, then click the **+** button in the upper right part of the page.
+#. Go to **Products → Products** in the administration panel of your store, then click the **+ Add product** button in the upper right part of the page.
 
    .. image:: img/catalog_29.png
        :align: center
-       :alt: The "Plus" button adds a new product.
+       :alt: The "+ Add product" button adds a new product.
 
 #. The product creation page will open. Configure the required properties of the product. You'll be able to edit :doc:`the product properties <product_attributes>` later at any time.
 
@@ -41,11 +41,11 @@ Adding Multiple Products
 
 #. Go to **Products → Products** in the administration panel of your store.
 
-#. Click the gear button in the upper right part of the page and choose **Bulk product addition**.
+#. Click on the **Add several products** button in the upper right part of the page.
 
    .. image:: img/catalog_31.png
        :align: center
-       :alt: Click the gear button and choose "Bulk product addition".
+       :alt: Click the "Add several products" button.
 
 #. Add products and fill in the empty fields.
 
@@ -308,10 +308,6 @@ Once a digital product is purchased:
        :alt: A link to download the product in the order details.
 
 #. All the purchased digital products will be available to the customer on the **Downloads** page of the customer's account. 
-
-   .. image:: img/catalog_71.png
-       :align: center
-       :alt: Reaching the "Downloads" page in CS-Cart.
 
    .. image:: img/catalog_72.png
        :align: center
