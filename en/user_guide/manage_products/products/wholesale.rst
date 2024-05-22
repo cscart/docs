@@ -16,7 +16,7 @@ To define the wholesale prices for the product:
 
        In the **User group** select box, you can select a user group whose members will be able to purchase the product at the wholesale price after they have logged in.
 
-#. To add more than one price, click on the **+** icon and specify a new amount of products and a wholesale price.
+#. To add more than one price, click on the **Add** button and specify a new amount of products and a wholesale price.
 
 #. Click the **Save** button to apply the changes.
 
