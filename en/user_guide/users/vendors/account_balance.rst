@@ -18,7 +18,7 @@ Multi-Vendor has a page that helps marketplace owners and vendors to keep track 
 
 * Requesting a :ref:`withdrawal <withdrawal>`.
 
-  .. image:: img/account_balance1.png
+  .. image:: img/account_balance.png
       :align: center
       :alt: The Accounting page in Multi-Vendor.
 
@@ -94,7 +94,7 @@ To issue a payout manually:
 
    * Tick the checkbox if you want to notify the vendor about this payout by email.
 
-   .. image:: img/issue_payout1.png
+   .. image:: img/issue_payout.png
        :align: center
        :alt: Fill in the fields in the payout creation pop-up.
 
@@ -102,7 +102,7 @@ To issue a payout manually:
 
 Once the vendor makes the payment, marketplace administrator can change the status of the payout from *Pending* to *Completed*. It is a way to confirm that the money has been received.
 
-.. image:: img/confirm_payout1.png
+.. image:: img/confirm_payout.png
     :align: center
     :alt: Change the status of the payout when necessary.
 
@@ -137,7 +137,7 @@ To request a withdrawal, a vendor must:
 
    * Enter a commentary, if necessary.
 
-     .. image:: img/request_withdrawal1.png
+     .. image:: img/request_withdrawal.png
         :align: center
         :alt: Fill in the fields in the withdrawal creation pop-up.
 
@@ -149,7 +149,7 @@ Once a withdrawal is requested, the marketplace owner has 2 options:
 
 * Decline the withdrawal and change the status to *Declined*.
 
-.. image:: img/confirm_withdrawal1.png
+.. image:: img/confirm_withdrawal.png
     :align: center
     :alt: The Accounting page in Multi-Vendor.
 
