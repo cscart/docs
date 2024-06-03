@@ -98,6 +98,16 @@ Yes. If you enable them, customers will be able to receive information about ord
 
 #. Send the downloaded **app_settings.zip** archive to us.
 
+
+.. note::
+    `Google Firebase has announced <https://firebase.google.com/docs/cloud-messaging/send-message#send_using_the_fcm_legacy_http_api>`_ that the ability to send push messages using the old integration will be removed in **June 2024**. To ensure the continued functionality of push notifications, **we have updated our Mobile App to use Firebase HTTP v1**. This update is included from version 4.18.1 SP1 onwards. 
+
+    Steps to Take:
+
+    * **Upgrade to version 4.18.1 SP1**: Update to continue sending push messages.
+    * **Follow Configuration Instructions**: After upgrading, you will receive a notification with brief instructions to configure Firebase for ongoing push notifications.
+    
+
 -------------------------------------
 Can I Get the Source Code of the App?
 -------------------------------------
