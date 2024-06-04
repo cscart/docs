@@ -86,27 +86,23 @@ The texts of the mobile app come with Multi-Vendor as a part of the **Mobile App
 Does the App Support Push Notifications?
 ----------------------------------------
 
+.. note::
+   Push notifications require CS-Cart 4.18.1.SP1 or a newer version.
+
 Yes. If you enable them, customers will be able to receive information about order status changes as messages displaying on their mobile phones. To set up push notifications for your app:
 
-#. Register at `https://firebase.google.com <https://firebase.google.com>`_.
+#. Register at `https://firebase.google.com <https://firebase.google.com>`_. Click *Go to console* in the right upper corner of the page.
 
 #. Create a project for Android & iOS.
 
-#. Enter the key in the settings of the **Mobile Application** add-on. The add-on comes with Multi-Vendor, but isn't installed by default.
+#. In the Firebase console, go to the **Service accounts** tab and click the **Generate new private key** button. You will be prompted to download the JSON file of the private key. Save it somewhere safe.
+
+#. Copy the JSON file content into the **Firebase Admin SDK Private Key** section in the **Mobile Application** add-on settings. The add-on comes with Multi-Vendor, but isn't installed by default.
 
 #. Use the **Download config** button to get an archive with the application settings.
 
 #. Send the downloaded **app_settings.zip** archive to us.
 
-
-.. note::
-    `Google Firebase has announced <https://firebase.google.com/docs/cloud-messaging/send-message#send_using_the_fcm_legacy_http_api>`_ that the ability to send push messages using the old integration will be removed in **June 2024**. To ensure the continued functionality of push notifications, **we have updated our Mobile App to use Firebase HTTP v1**. This update is included from version 4.18.1 SP1 onwards. 
-
-    Steps to Take:
-
-    * **Upgrade to version 4.18.1 SP1**: Update to continue sending push messages.
-    * **Follow Configuration Instructions**: After upgrading, you will receive a notification with brief instructions to configure Firebase for ongoing push notifications.
-    
 
 -------------------------------------
 Can I Get the Source Code of the App?
