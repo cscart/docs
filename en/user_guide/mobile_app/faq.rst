@@ -93,9 +93,9 @@ Yes. If you enable them, customers will be able to receive information about ord
 
 #. Register at `https://firebase.google.com <https://firebase.google.com>`_. Click *Go to console* in the right upper corner of the page.
 
-#. Create a project for Android & iOS.
+#. In the Firebase console, go to **Settings** and create a project for Android & iOS.
 
-#. In the Firebase console, go to the **Service accounts** tab and click the **Generate new private key** button. You will be prompted to download the JSON file of the private key. Save it somewhere safe.
+#. Go to the **Service accounts** tab and click the **Generate new private key** button. You will be prompted to download the JSON file of the private key. Save it somewhere safe.
 
 #. Copy the JSON file content into the **Firebase Admin SDK Private Key** section in the **Mobile Application** add-on settings. The add-on comes with Multi-Vendor, but isn't installed by default.
 
