@@ -91,7 +91,7 @@ Does the App Support Push Notifications?
 
 Yes. If you enable them, customers will be able to receive information about order status changes as messages displaying on their mobile phones. To set up push notifications for your app:
 
-#. Register at `https://firebase.google.com <https://firebase.google.com>`_. Click *Go to console* in the right upper corner of the page.
+#. Register at `https://firebase.google.com <https://firebase.google.com>`_. Click **Go to console** in the right upper corner of the page.
 
 #. In the Firebase console, go to **Settings** and create a project for Android & iOS.
 
