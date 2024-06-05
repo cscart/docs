@@ -12,7 +12,7 @@ Options are additional *separable* product properties. That don't have a quantit
 
 The **Products → Options** page allows you to manage all product options and option variants in your store. The changes you make here will affect all products that use these options.
 
-* To add a new option, click the **+** button.
+* To add a new option, click the **+ Add option** button.
 
 * To apply existing options to specific products, click the **Apply to products** button.
 
