@@ -12,7 +12,7 @@ You can make filters available in the entire store as well as in specific catego
 
 .. important::
 
-    If product filters do not appear on the storefront, please create a special block for them in **Design → Layouts**.
+    If product filters do not appear on the storefront, create a special block for them in **Design → Layouts**.
 
 .. image:: img/product_filters.png
     :align: center
