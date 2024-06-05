@@ -4,7 +4,7 @@ How To: Filter Products by Free Shipping
 
 #. In the Administration panel, go to **Products → Filters**.
 
-#. Click the **+** button on the right and specify the following fields in the **New filter** window that will open:
+#. Click the **+ Add filter** button on the right and specify the following fields in the **New filter** window that will open:
      
    * **Name**—for example, *Free shipping*.
 
