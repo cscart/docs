@@ -8,7 +8,7 @@ Adding a Filter
 
 #. In the Administration panel, go to **Products → Filters**.
 
-#. Click the **+** button on the right and specify filter properties in the **New filter** window that will open.
+#. Click the **+ Add filter** button on the right and specify filter properties in the **New filter** window that will open.
 
    .. image:: img/filter_01.png
        :align: center
@@ -16,7 +16,7 @@ Adding a Filter
 
 #. Switch to the **Categories** tab.
 
-#. Click the **Add categories** button and add categories where this filter will be displayed.
+#. Click the **+ Add categories** button and add categories where this filter will be displayed.
 
    .. important::
 
@@ -34,7 +34,7 @@ Adding a Block for Filters
 
 Filters appear on the storefront in a **Product filters** or **Product filters for homepage** block. To create this block:
 
-#. Go to **Design → Layouts**.
+#. Go to **Website → Themes → Layouts**.
 
 #. Click the **+** button in the necessary location and click **Add block**.
 
