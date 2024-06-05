@@ -43,8 +43,3 @@ A list of categories where the filter will be displayed. If no category is speci
 
     If a customer runs a search for a product on the storefront, all active filters that have appropriate products will be displayed, regardless of the category.
 
-=====
-Share
-=====
-
-Stores that share this product filter. Learn more about :doc:`sharing objects <../../stores/sharing>`.
