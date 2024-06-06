@@ -86,17 +86,11 @@ The texts of the mobile app come with Multi-Vendor as a part of the **Mobile App
 Does the App Support Push Notifications?
 ----------------------------------------
 
-Yes. If you enable them, customers will be able to receive information about order status changes as messages displaying on their mobile phones. To set up push notifications for your app:
+.. note::
+    Push notifications require CS-Cart 4.18.1.SP1 or a newer version.
 
-#. Register at `https://firebase.google.com <https://firebase.google.com>`_.
+Please refer `to the latest Mobile App documentation <https://docs.cs-cart.com/latest/user_guide/mobile_app/faq.html>`_ for up-to-date instructions.
 
-#. Create a project for Android & iOS.
-
-#. Enter the key in the settings of the **Mobile Application** add-on. The add-on comes with Multi-Vendor, but isn't installed by default.
-
-#. Use the **Download config** button to get an archive with the application settings.
-
-#. Send the downloaded **app_settings.zip** archive to us.
 
 -------------------------------------
 Can I Get the Source Code of the App?
