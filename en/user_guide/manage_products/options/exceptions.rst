@@ -68,7 +68,7 @@ Adding an Exception
        :align: center
        :alt: The Forbidden combinations button is above the list of options on the Options tab.
 
-#. Click the **+** button.
+#. Click the **+ Add combination** button.
 
 #. A pop-up window will open. There you can select the option variants that comprise the exception. Use the buttons on the right to add, clone, and remove combinations from the list.
 
