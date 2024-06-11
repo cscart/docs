@@ -99,9 +99,7 @@ Yes. If you enable them, customers will be able to receive information about ord
 
 #. Copy the JSON file content into the **Firebase Admin SDK Private Key** section in the **Mobile Application** add-on settings. The add-on comes with Multi-Vendor, but isn't installed by default.
 
-#. Use the **Download config** button to get an archive with the application settings.
-
-#. Send the downloaded **app_settings.zip** archive to us.
+#. Save the changes.
 
 
 -------------------------------------
