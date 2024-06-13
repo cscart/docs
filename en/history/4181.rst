@@ -119,3 +119,15 @@ Bug Fixes
 [!] Storefronts: Removal of storefronts with a large number of other storefronts and layouts took too long. Fixed; now removal is 2-3 times faster.
 
 [!] Storefronts: Vendors: An error occurred when merging vendors if there were multiple storefronts. Fixed.
+
+
+
+=============
+Service Packs
+=============
+
+----------
+4.18.1.SP1
+----------
+
+[+] Add-ons: Mobile application: Firebase push notification API has been updated to HTTP v1.
