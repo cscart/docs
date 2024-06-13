@@ -1,0 +1,81 @@
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: GDPR Compliance (EU): Google Analytics: Added support for Google Consent Mode v2.
+
+=====================
+Functionality Changes
+=====================
+
+[*] Notifications Center: Help Center: Performance: JS: Page loading speed has been increased by lazy loading the Help Center and Notification Center.
+
+=========
+Bug Fixes
+=========
+
+[!] Add-ons: ATOL Online: In the case of an order discount, the product price on the receipt was incorrectly calculated. Fixed.
+
+[!] Add-ons: Advanced Products import: If the first image from the preset file was not accessible, the product was imported without a main image. Fixed.
+
+[!] Add-ons: Cities: Shipping service SDEK: Delovye Linii - Shipping Service: The city of Pinsk was in the Minsk region. Fixed.
+
+[!] Add-ons: Comments and reviews: There was no option for the administrator to add new testimonials if none existed yet. Fixed.
+
+[!] Add-ons: Common products for vendors: Vendors were able to change the alt text of common product images. Fixed.
+
+[!] Add-ons: Data feed: Google export: If the GTIN was empty, the product code was used instead. Fixed.
+
+[!] Add-ons: Mobile application: Values for product features may not have been assigned. Fixed.
+
+[!] Add-ons: Stores and pickup points: Warehouses: If the Warehouses add-on is not installed, a database error will occur on the Stores and Pickup points page. Fixed.
+
+[!] Add-ons: Stripe payments: SEO: The webhook URL was incorrect without the SEO add-on. Fixed.
+
+[!] Add-ons: Tech support chat: Sometimes, when logging in or out of the admin panel, the chat could disappear. Fixed.
+
+[!] Add-ons: Tinkoff Multiparty: Some parameters necessary for generating receipts were missing. Fixed.
+
+[!] Admin panel: The downloaded add-ons page took a long time to load. Fixed.
+
+[!] Administration panel: Action buttons were displayed on the global search page for administrators without sufficient privileges. Fixed.
+
+[!] Design: Fonts: In some theme styles, the selected font was not displayed. Fixed.
+
+[!] Layouts: Blocks: The "Speed" setting did not work in some cases. Fixed.
+
+[!] Mobile application: Products: The product name in the product availability notice did not match the current language. FIxed.
+
+[!] Mobile application: The errors occurred while editing products using PHP 8.1. Fixed.
+
+[!] Multi-Vendor: Add-ons: Common Products for Vendors: In the product filter by vendor, vendors from other storefronts could be displayed. Fixed.
+
+[!] Multi-Vendor: Add-ons: Stripe Connect payments: A canceled payment intent did not change the order status to failed. Fixed.
+
+[!] Multi-Vendor: Add-ons: Stripe Connect payments: Stripe fee was not displayed in transaction accounting. Fixed.
+
+[!] Multi-Vendor: Add-ons: Vendor plans: Commissions by category: When changing an order with a promotion, an additional transaction was created with an incorrect commission amount. Fixed.
+
+[!] Multi-Vendor: An order with zero total was created in Open status. Fixed.
+
+[!] Multi-Vendor: Shipping methods: The vendor's former common shipping method could be available to other vendors at checkout. Fixed.
+
+[!] Notifications: Email templates: The preview email and test email had no some data. Fixed.
+
+[!] Orders: During the order cloning the value of the "Staff only notes" field was copied from the original order. Fixed.
+
+[!] Products: A negative number could not be entered when the "Allow negative amount in inventory" setting was set. Fixed.
+
+[!] Shipments: Vendor could change another vendors shipment status. Fixed.
+
+[!] Shipping methods: The rate conditions were displayed in the wrong order. Fixed.
+
+[!] Shipping methods: UPS: "Use negotiated rates" settings was not worked properly. Fixed.
+
+[!] Storefront: Orders: Search: Selecting an order period did not work correctly. Fixed.
+
+[!] UI/UX: Mobile: The shipping rates page was not displayed correctly. Fixed.
+
+[!] Ultimate: Add-ons: Warehouses: The quantity of products in a store was incorrectly saved if the "Quantity" field in warehouses was empty on a certain storefront. Fixed.
+
+[!] Wish List: Design: The "Add to wishlist" button was not displayed correctly. Fixed.
