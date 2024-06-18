@@ -441,7 +441,7 @@ Mail.ru
     .. fancybox:: img/hybrid_auth_61.png
         :alt: HybridAuth 
 
-4.  Во избежание возможных ошибок, скачайте и разместите файл receiver.html в основном каталоге интернет-магазина, как это предложено `mail.ru <https://mail.ru/>`_.
+4.  Во избежание возможных ошибок, скачайте и разместите файл receiver.html в основном каталоге интернет-магазина, как это предложено `mail.ru <https://mail.ru/>`_. Нажмите *Пропустить*.
     
     .. fancybox:: img/hybrid_auth_62.png
         :alt: HybridAuth 
