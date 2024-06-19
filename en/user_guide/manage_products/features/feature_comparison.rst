@@ -18,7 +18,7 @@ First we need to make sure that customers are allowed to compare products. To do
 
 #. Make sure that the **Allow customers to compare products** checkbox is ticked.
 
-   By default, the checkbox is ticked already. It means that every product in your store will have an **Add to comparison list** button. It will appear both on product pages and in **Quick view** pop-up windows.
+   By default, the checkbox is ticked already. It means that every product in your store will have an **Add to comparison list** icon. It will appear both on product pages and in **Quick view** pop-up windows.
 
    .. image:: img/add_to_comparison_list.png
        :align: center
