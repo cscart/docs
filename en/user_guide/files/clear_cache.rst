@@ -8,7 +8,7 @@ Cache is the space on your computer's hard drive and in RAM memory where your br
 
 * The cache occupies too much hard drive space.
 
-To clear cache on your computer, go to **Administration → Storage → Clear cache**.
+To clear cache on your computer, go to **Website → Themes → More** and select the *Clear cache* from the drop down menu.
 
 .. important::
 
