@@ -2,8 +2,8 @@
 How To: Set up CS-Cart with WorldPay
 ************************************
 
-*   In the Administration panel, go to **Administration → Payment methods**.
-*   Click the **+** button on the right.
+*   In the Administration panel, go to **Settings → Payment methods**.
+*   Click the **+ Add payment method** button on the right.
 *   In the opened window:
 
     *   In the **Name** field type *WorldPay*.
