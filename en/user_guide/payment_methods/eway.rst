@@ -2,9 +2,9 @@
 How To: Set up eWAY in CS-Cart
 ******************************
 
-1. In the administration panel, go to **Administration → Payment methods**.
+1. In the administration panel, go to **Settings → Payment methods**.
 
-2. Click the **+** (Add payment method) button on the right.
+2. Click the **+ Add payment method** button on the right.
 
 3. Fill in the form:
 
@@ -13,10 +13,6 @@ How To: Set up eWAY in CS-Cart
    *   Select **eWAY Direct Payment (Rapid API)** or **eWAY Responsive Shared (Rapid API)** in the **Processor** drop-down menu.
 
    *   Specify other settings and upload an icon for the payment method.
-
-.. image:: img/eway/eway_name.png
-    :align: center
-    :alt: Name your payment method and select one of the two eWAY Rapid API processors.
 
 4. Switch to the **Configure** tab and specify the eWAY settings:
 
