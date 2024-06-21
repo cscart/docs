@@ -14,7 +14,7 @@ Step 1. Configure the Payment Method
 
 #. :doc:`Install and configure the Stripe Connect Payments add-on. </user_guide/addons/stripe_connect/settings>`
 
-#. Go to **Administration → Payment methods** and click the **+** button in the top right corner to add a payment method.
+#. Go to **Settings → Payment methods** and click the **+ Add payment method** button in the top right corner to add a payment method.
 
 #. A new pop-up window with the payment method creation form will open. Fill in the fields on the **General** tab:
 
