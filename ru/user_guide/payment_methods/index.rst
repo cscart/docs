@@ -29,7 +29,6 @@
     vsevcredit
     invoice
     kupivkredit
-    pay_at_home
     sberbank
     sberbank_online
     tinkoff_multiparty
@@ -51,6 +50,7 @@
     :hidden:
 
     robokassa
+    pay_at_home
 
 :doc:`Создание и настройка способов оплаты в CS-Cart. <adding_payment>`
 
