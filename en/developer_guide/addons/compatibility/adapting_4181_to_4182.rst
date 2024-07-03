@@ -25,5 +25,9 @@ Hook changes
 New hooks
 =========
 
-* `fn_set_hook('get_store_location_cities', $params, $condition);` - Changes request params before store location cities selecting.
-* `fn_set_hook('rus_online_cache_register_receipt_request_json_post', $this, $result, $receipt);` - Executes before the request data is returned.
+#. Changes request params before store location cities selecting::
+
+        `fn_set_hook('get_store_location_cities', $params, $condition);`
+#. Executes before the request data is returned::
+
+        `fn_set_hook('rus_online_cache_register_receipt_request_json_post', $this, $result, $receipt);` 
