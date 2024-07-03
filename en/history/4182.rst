@@ -8,9 +8,15 @@ New Features and Improvements
 
 [+] Add-ons: GDPR Compliance (EU): Google Analytics: Added support for Google Consent Mode v2.
 
+[+] Design: Admin panel: A dark theme was added.
+
 =====================
 Functionality Changes
 =====================
+
+[*] Admin panel: Multiple small improvements to make it look better on screens of various sizes (mobile included). For example, the number of action buttons now depends on how wide the window is, etc.
+
+[*] Design: UX/UI: Admin panel: Mobile: The appearance was improved.
 
 [*] Notifications Center: Help Center: Performance: JS: Page loading speed has been increased by lazy loading the Help Center and Notification Center.
 
@@ -26,13 +32,17 @@ Bug Fixes
 
 [!] Add-ons: Comments and reviews: There was no option for the administrator to add new testimonials if none existed yet. Fixed.
 
+[!] Add-ons: Common Products for vendors: Product bundles: There was no option to create a Product bundle for a common product on behalf of vendor. Fixed.
+
+[!] Add-ons: Common products for vendors: Exim: Common products were exported incorrectly. Fixed.
+
 [!] Add-ons: Common products for vendors: Vendors were able to change the alt text of common product images. Fixed.
 
 [!] Add-ons: Data feed: Google export: If the GTIN was empty, the product code was used instead. Fixed.
 
 [!] Add-ons: Mobile application: Values for product features may not have been assigned. Fixed.
 
-[!] Add-ons: Stores and pickup points: Warehouses: If the Warehouses add-on is not installed, a database error will occur on the Stores and Pickup points page. Fixed.
+[!] Add-ons: Stores and pickup points: Warehouses: If the Warehouses add-on is not installed, a database error will occur on the Stores and Pickup Points page. Fixed.
 
 [!] Add-ons: Stripe payments: SEO: The webhook URL was incorrect without the SEO add-on. Fixed.
 
@@ -40,11 +50,17 @@ Bug Fixes
 
 [!] Add-ons: Tinkoff Multiparty: Some parameters necessary for generating receipts were missing. Fixed.
 
-[!] Admin panel: The downloaded add-ons page took a long time to load. Fixed.
+[!] Add-ons: Wishlist: Wishlist was not cleared after logout. Fixed.
+
+[!] Admin panel: Downloaded add-ons page took a long time to load. Fixed.
+
+[!] Admin panel: Products: In some cases, the search did not work correctly. Fixed.
 
 [!] Administration panel: Action buttons were displayed on the global search page for administrators without sufficient privileges. Fixed.
 
 [!] Design: Fonts: In some theme styles, the selected font was not displayed. Fixed.
+
+[!] Design: UX/UI: Admin panel: In some cases, empty tabs were displayed. Fixed.
 
 [!] Layouts: Blocks: The "Speed" setting did not work in some cases. Fixed.
 
@@ -68,7 +84,11 @@ Bug Fixes
 
 [!] Orders: During the order cloning the value of the "Staff only notes" field was copied from the original order. Fixed.
 
+[!] Orders: Product options: Files added as an option to a product weren't saved correctly during child order placement. Fixed.
+
 [!] Products: A negative number could not be entered when the "Allow negative amount in inventory" setting was set. Fixed.
+
+[!] Products: Categories: Product could be assigned a main category from another storefront. Fixed.
 
 [!] Shipments: Vendor could change another vendors shipment status. Fixed.
 
@@ -82,4 +102,7 @@ Bug Fixes
 
 [!] Ultimate: Add-ons: Warehouses: The quantity of products in a store was incorrectly saved if the "Quantity" field in warehouses was empty on a certain storefront. Fixed.
 
+[!] Users: Profile fields: File: It was impossible to delete a file if the profile field with the file was the only one. Fixed.
+
 [!] Wish List: Design: The "Add to wishlist" button was not displayed correctly. Fixed.
+
