@@ -10,7 +10,7 @@ Adapt Your Add-ons and Themes to CS-Cart 4.18.2
 Core changes
 ============
 
-Added `google/auth`, `firebase/php-jwt`, `psr/cache` packages. 
+Added ``google/auth``, ``firebase/php-jwt``, ``psr/cache`` packages. 
 
 .. important::
 

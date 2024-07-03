@@ -10,7 +10,7 @@
 Изменения в ядре
 ================
 
-Добавлены пакеты `google/auth`, `firebase/php-jwt`, `psr/cache`. 
+Добавлены пакеты ``google/auth``, ``firebase/php-jwt``, ``psr/cache``. 
 
 .. important::
 
