@@ -56,7 +56,7 @@ Bug Fixes
 
 [!] Admin panel: Products: In some cases, the search did not work correctly. Fixed.
 
-[!] Administration panel: Action buttons were displayed on the global search page for administrators without sufficient privileges. Fixed.
+[!] Admin panel: Action buttons were displayed on the global search page for administrators without sufficient privileges. Fixed.
 
 [!] Design: Fonts: In some theme styles, the selected font was not displayed. Fixed.
 
@@ -64,7 +64,7 @@ Bug Fixes
 
 [!] Layouts: Blocks: The "Speed" setting did not work in some cases. Fixed.
 
-[!] Mobile application: Products: The product name in the product availability notice did not match the current language. FIxed.
+[!] Mobile application: Products: The product name in the product availability notice did not match the current language. Fixed.
 
 [!] Mobile application: The errors occurred while editing products using PHP 8.1. Fixed.
 
