@@ -14,9 +14,7 @@ New Features and Improvements
 Functionality Changes
 =====================
 
-[*] Admin panel: Multiple small improvements to make it look better on screens of various sizes (mobile included). For example, the number of action buttons now depends on how wide the window is, etc.
-
-[*] Design: UX/UI: Admin panel: Mobile: The appearance was improved.
+[*] Design: UI/UX: Admin panel: Multiple small improvements for a better look on various screen sizes (mobile included). For example, the number of action buttons now depends on how wide the window is, etc.
 
 [*] Notifications Center: Growth Center: Performance: JS: Page loading speed has been increased by lazy loading the Growth Center and Notification Center.
 
@@ -24,11 +22,7 @@ Functionality Changes
 Bug Fixes
 =========
 
-[!] Add-ons: ATOL Online: In the case of an order discount, the product price on the receipt was incorrectly calculated. Fixed.
-
-[!] Add-ons: Advanced Products import: If the first image from the preset file was not accessible, the product was imported without a main image. Fixed.
-
-[!] Add-ons: Cities: Shipping service SDEK: Delovye Linii - Shipping Service: The city of Pinsk was in the Minsk region. Fixed.
+[!] Add-ons: Advanced product import: If the first image from the preset file was not accessible, the product was imported without a main image. Fixed.
 
 [!] Add-ons: Comments and reviews: There was no option for the administrator to add new testimonials if none existed yet. Fixed.
 
@@ -44,9 +38,9 @@ Bug Fixes
 
 [!] Add-ons: Wish list: The "Add to wishlist" button was not displayed correctly. Fixed.
 
-[!] Add-ons: Wish list: Wishlist was not cleared after logout. Fixed.
+[!] Add-ons: Wish list: The wishlist was not cleared when a customer signed out of their account. Fixed.
 
-[!] Admin panel: Downloaded add-ons page took a long time to load. Fixed.
+[!] Admin panel: The "Downloaded add-ons" page took a long time to load. Fixed.
 
 [!] Admin panel: Products: In some cases, the search did not work correctly. Fixed.
 
@@ -60,7 +54,7 @@ Bug Fixes
 
 [!] Mobile application: Products: The product name in the product availability notice did not match the current language. FIxed.
 
-[!] Mobile application: The errors occurred while editing products using PHP 8.1. Fixed.
+[!] Mobile application: Errors during product editing could occur on PHP 8.1. Fixed.
 
 [!] Multi-Vendor: Add-ons: Stripe Connect payments: A canceled payment intent did not change the order status to failed. Fixed.
 
