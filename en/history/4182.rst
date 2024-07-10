@@ -18,7 +18,7 @@ Functionality Changes
 
 [*] Design: UX/UI: Admin panel: Mobile: The appearance was improved.
 
-[*] Notifications Center: Help Center: Performance: JS: Page loading speed has been increased by lazy loading the Help Center and Notification Center.
+[*] Notifications Center: Growth Center: Performance: JS: Page loading speed has been increased by lazy loading the Growth Center and Notification Center.
 
 =========
 Bug Fixes
@@ -32,31 +32,25 @@ Bug Fixes
 
 [!] Add-ons: Comments and reviews: There was no option for the administrator to add new testimonials if none existed yet. Fixed.
 
-[!] Add-ons: Common Products for vendors: Product bundles: There was no option to create a Product bundle for a common product on behalf of vendor. Fixed.
-
-[!] Add-ons: Common products for vendors: Exim: Common products were exported incorrectly. Fixed.
-
-[!] Add-ons: Common products for vendors: Vendors were able to change the alt text of common product images. Fixed.
-
 [!] Add-ons: Data feed: Google export: If the GTIN was empty, the product code was used instead. Fixed.
 
 [!] Add-ons: Mobile application: Values for product features may not have been assigned. Fixed.
 
-[!] Add-ons: Stores and pickup points: Warehouses: If the Warehouses add-on is not installed, a database error will occur on the Stores and Pickup Points page. Fixed.
+[!] Add-ons: Stores and pickup points: Warehouses: If the Warehouses add-on was not installed, a database error occurred on the "Stores and Pickup Points" page. Fixed.
 
 [!] Add-ons: Stripe payments: SEO: The webhook URL was incorrect without the SEO add-on. Fixed.
 
 [!] Add-ons: Tech support chat: Sometimes, when logging in or out of the admin panel, the chat could disappear. Fixed.
 
-[!] Add-ons: Tinkoff Multiparty: Some parameters necessary for generating receipts were missing. Fixed.
+[!] Add-ons: Wish list: The "Add to wishlist" button was not displayed correctly. Fixed.
 
-[!] Add-ons: Wishlist: Wishlist was not cleared after logout. Fixed.
+[!] Add-ons: Wish list: Wishlist was not cleared after logout. Fixed.
 
 [!] Admin panel: Downloaded add-ons page took a long time to load. Fixed.
 
 [!] Admin panel: Products: In some cases, the search did not work correctly. Fixed.
 
-[!] Administration panel: Action buttons were displayed on the global search page for administrators without sufficient privileges. Fixed.
+[!] Admin panel: Action buttons were displayed on the global search page for administrators without sufficient privileges. Fixed.
 
 [!] Design: Fonts: In some theme styles, the selected font was not displayed. Fixed.
 
@@ -68,19 +62,27 @@ Bug Fixes
 
 [!] Mobile application: The errors occurred while editing products using PHP 8.1. Fixed.
 
-[!] Multi-Vendor: Add-ons: Common Products for Vendors: In the product filter by vendor, vendors from other storefronts could be displayed. Fixed.
-
 [!] Multi-Vendor: Add-ons: Stripe Connect payments: A canceled payment intent did not change the order status to failed. Fixed.
 
 [!] Multi-Vendor: Add-ons: Stripe Connect payments: Stripe fee was not displayed in transaction accounting. Fixed.
 
 [!] Multi-Vendor: Add-ons: Vendor plans: Commissions by category: When changing an order with a promotion, an additional transaction was created with an incorrect commission amount. Fixed.
 
-[!] Multi-Vendor: An order with zero total was created in Open status. Fixed.
+[!] Multi-Vendor: An order with zero total was created with the Open status. Fixed.
+
+[!] Multi-Vendor: Shipments: Vendor could change another vendors shipment status. Fixed.
 
 [!] Multi-Vendor: Shipping methods: The vendor's former common shipping method could be available to other vendors at checkout. Fixed.
 
-[!] Notifications: Email templates: The preview email and test email had no some data. Fixed.
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors: In the product filter by vendor, vendors from other storefronts could be displayed. Fixed.
+
+[!] Multi-Vendor Plud: Add-ons: Common products for vendors: Product bundles: There was no option to create a product bundle for a common product on behalf of a vendor. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors: Export/Import: Common products were exported incorrectly. Fixed.
+
+[!] Multi-Vendor Plus: Add-ons: Common products for vendors: Vendors were able to change the alt text of common product images. Fixed.
+
+[!] Notifications: Email templates: The preview email and test email didn't have some of the data. Fixed.
 
 [!] Orders: During the order cloning the value of the "Staff only notes" field was copied from the original order. Fixed.
 
@@ -90,11 +92,9 @@ Bug Fixes
 
 [!] Products: Categories: Product could be assigned a main category from another storefront. Fixed.
 
-[!] Shipments: Vendor could change another vendors shipment status. Fixed.
-
 [!] Shipping methods: The rate conditions were displayed in the wrong order. Fixed.
 
-[!] Shipping methods: UPS: "Use negotiated rates" settings was not worked properly. Fixed.
+[!] Shipping methods: UPS: The "Use negotiated rates" setting did not work properly. Fixed.
 
 [!] Storefront: Orders: Search: Selecting an order period did not work correctly. Fixed.
 
@@ -103,6 +103,3 @@ Bug Fixes
 [!] Ultimate: Add-ons: Warehouses: The quantity of products in a store was incorrectly saved if the "Quantity" field in warehouses was empty on a certain storefront. Fixed.
 
 [!] Users: Profile fields: File: It was impossible to delete a file if the profile field with the file was the only one. Fixed.
-
-[!] Wish List: Design: The "Add to wishlist" button was not displayed correctly. Fixed.
-
