@@ -1,9 +1,44 @@
+<script>
+    const updateBannerStateKey = 'updateBannerCloseTime'
+    const updateBannerHidingDurationInSeconds = 24 * 3600
+
+    function fn_is_banner_hiding_expired() {
+        const windowCloseTime = localStorage.getItem(updateBannerStateKey)
+
+        if (windowCloseTime) {
+            if (parseInt(windowCloseTime, 10) + updateBannerHidingDurationInSeconds * 1000 < Date.now()) {
+                localStorage.removeItem(updateBannerStateKey)
+                return true
+            }
+            return false
+        }
+        return true
+    }
+
+    function fn_update_banner_closed() {
+        localStorage.setItem(updateBannerStateKey, Date.now())
+    }
+
+    window.addEventListener('load', () => {
+        if (fn_is_banner_hiding_expired()) {
+            document.querySelector('.upd-bottom-banner__body').style.cssText = 'display: block;'
+        }
+    });
+</script>
+
 <style>
     :root {
         --update-banner-image: url('images/update_banner_img.png');
         --update-banner-padding: 80px;
         --update-banner-max-width: 1330px;  /* cs-ru: 1520px, cs-com: 1330px, forum:1360px, hd:1300px, docs: 1330px */
-        --update-banner-z-index: 1000; /* cs-ru,cs-com,forum:2, hd:28, docs: 1000 */
+        --update-banner-z-index: 1330px; /* cs-ru,cs-com,forum:2, hd:28, docs: 1000 */
+    }
+
+    .upd-bottom-banner__body {
+        display: none;
+    *:not(.upd-bottom-banner__container, .upd-bottom-banner__container *) {
+        display: none !important;
+    }
     }
 
     .upd-bottom-banner__container {
@@ -118,12 +153,12 @@
     }
     }
     .upd-bottom-banner__collapse-button {
-        display: none;
+        display: none !important;
     }
+    .upd-bottom-banner__body:has(.upd-bottom-banner__collapse-button:checked),
     .upd-bottom-banner__collapse-button:checked ~ .upd-bottom-banner__container,
     .upd-bottom-banner__collapse-button:checked ~ .upd-bottom-banner__container .upd-bottom-banner__collapse-label {
-        opacity: 0;
-        transition: 0.2s;
+        display: none;
     }
     .upd-bottom-banner__collapse-label {
         display: flex;
@@ -177,21 +212,24 @@
     }
 </style>
 
-<input type="checkbox" class="upd-bottom-banner__collapse-button" id="upd_bottom_banner_collapse_checkbox">
-<div class="upd-bottom-banner__container">
-    <div class="upd-bottom-banner__wrapper">
-        <div class="upd-bottom-banner__description">
-            <div class="upd-bottom-banner__description-image"></div>
-            <p>Большое обновление CS-Cart уже здесь
-                <span>Попробуйте новую панель администратора с темной темой</span>
-            </p>
-        </div>
-        <div class="upd-bottom-banner__button-box">
-            <a href="https://www.cs-cart.ru/podpiska-na-obnovleniya.html?/podpiska-na-obnovleniya.html?utm_source=internal&utm_medium=reactivate_updates&utm_campaign=cs-cart+4.18" class="upd-bottom-banner__button upd-bottom-banner__button--reactivate upd-bottom-banner__button--ru">Активировать обновления</a>
-            <a href="https://www.cs-cart.ru/cs-cart-4-18?utm_source=internal&utm_medium=learn_more&utm_campaign=cs-cart+4.18" class="upd-bottom-banner__button upd-bottom-banner__button--learn-more">Узнать больше</a>
-            <label for="upd_bottom_banner_collapse_checkbox" class="upd-bottom-banner__collapse-label">
-                <span class="upd-bottom-banner__button upd-bottom-banner__collapse-icon"></span>
-            </label>
+<div class="upd-bottom-banner__body">
+    <input type="checkbox" class="upd-bottom-banner__collapse-button" id="upd_bottom_banner_collapse_checkbox">
+    <div class="upd-bottom-banner__container">
+        <div class="upd-bottom-banner__wrapper">
+            <div class="upd-bottom-banner__description">
+                <div class="upd-bottom-banner__description-image"></div>
+                <p>Big CS-Cart Update is Here
+                    <span>Experience the New Admin Panel with Dark Theme</span>
+                </p>
+            </div>
+            <div class="upd-bottom-banner__button-box">
+                <a href="https://helpdesk.cs-cart.com/upgrade-subscriptions.html?utm_source=internal&utm_medium=reactivate_updates&utm_campaign=cs-cart+4.18" class="upd-bottom-banner__button upd-bottom-banner__button--reactivate">Reactivate Updates</a>
+                <a href="https://www.cs-cart.com/cs-cart-4-18?utm_source=internal&utm_medium=learn_more&utm_campaign=cs-cart+4.18" class="upd-bottom-banner__button upd-bottom-banner__button--learn-more">Learn More</a>
+                <label for="upd_bottom_banner_collapse_checkbox" class="upd-bottom-banner__collapse-label"
+                       onclick="document.querySelector('.upd-bottom-banner__body').style.cssText = 'display: none;'; fn_update_banner_closed();">
+                    <span class="upd-bottom-banner__button upd-bottom-banner__collapse-icon"></span>
+                </label>
+            </div>
         </div>
     </div>
 </div>
