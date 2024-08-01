@@ -1,0 +1,235 @@
+<script>
+    const updateBannerStateKey = 'updateBannerCloseTime'
+    const updateBannerHidingDurationInSeconds = 24 * 3600
+
+    function fn_is_banner_hiding_expired() {
+        const windowCloseTime = localStorage.getItem(updateBannerStateKey)
+
+        if (windowCloseTime) {
+            if (parseInt(windowCloseTime, 10) + updateBannerHidingDurationInSeconds * 1000 < Date.now()) {
+                localStorage.removeItem(updateBannerStateKey)
+                return true
+            }
+            return false
+        }
+        return true
+    }
+
+    function fn_update_banner_closed() {
+        localStorage.setItem(updateBannerStateKey, Date.now())
+    }
+
+    window.addEventListener('load', () => {
+        if (fn_is_banner_hiding_expired()) {
+            document.querySelector('.upd-bottom-banner__body').style.cssText = 'display: block;'
+        }
+    });
+</script>
+
+<style>
+    :root {
+        --update-banner-image: url('_static/update_banner_img.png');
+        --update-banner-padding: 80px;
+        --update-banner-max-width: 1330px;  /* cs-ru: 1520px, cs-com: 1330px, forum:1360px, hd:1300px, docs: 1330px */
+        --update-banner-z-index: 1000; /* cs-ru,cs-com,forum:2, hd:28, docs: 1000 */
+    }
+
+    .upd-bottom-banner__body {
+        display: none;
+    *:not(.upd-bottom-banner__container, .upd-bottom-banner__container *) {
+        display: none !important;
+    }
+    }
+
+    .upd-bottom-banner__container {
+        display: flex;
+        justify-content: center;
+        position:fixed;
+        bottom:0;
+        left:0;
+        width:100%;
+        z-index: var(--update-banner-z-index);
+        background: linear-gradient(118.94deg, #7381FD -12.54%, #76C7FF 105.75%);
+
+    * {
+        font-family: Gilroy, 'Gilroy', 'Open Sans', sans-serif;
+        box-sizing: border-box;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    }
+    .upd-bottom-banner__wrapper {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        height:80px;
+        width: 100%;
+        max-width: var(--update-banner-max-width);
+        padding: 0 var(--update-banner-padding);
+    }
+
+    .upd-bottom-banner__description {
+        display: flex;
+    }
+    .upd-bottom-banner__description > p {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 6px;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+
+    span {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+    }
+    .upd-bottom-banner__description-image {
+        height: 1px;
+        width: 110px;
+    }
+    .upd-bottom-banner__description-image::after {
+        content: "";
+        position: absolute;
+        transform: translateX(-40px);
+        display: block;
+        height: 80px;
+        width: 150px;
+        background: var(--update-banner-image) no-repeat;
+        background-size: contain;
+    }
+
+    .upd-bottom-banner__button-box {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .upd-bottom-banner__button-box {
+    .upd-bottom-banner__button {
+        width: 220px;
+        text-align: center;
+        padding: 12px 24px;
+        border: 1px solid #fff;
+        border-radius: 12px;
+        line-height: 24px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        transition: 0.2s;
+    }
+    .upd-bottom-banner__button--ru {
+        width: 240px;
+        padding: 12px 0px;
+    }
+    .upd-bottom-banner__button.upd-bottom-banner__button--learn-more {
+        color: #1A2033;
+        background-color: #fff;
+    }
+    .upd-bottom-banner__button:hover {
+        color: #1D9FF8;
+        background-color: #fff;
+        transition: 0.2s;
+    }
+    .upd-bottom-banner__collapse-icon {
+        height: 24px;
+        width: 24px;
+        padding: 12px;
+        cursor: pointer;
+        transition: 0.2s;
+        box-sizing: content-box;
+    }
+    .upd-bottom-banner__collapse-icon:hover {
+        background-color: transparent;
+        transition: 0.2s;
+    }
+    }
+    .upd-bottom-banner__collapse-button {
+        display: none !important;
+    }
+    .upd-bottom-banner__body:has(.upd-bottom-banner__collapse-button:checked),
+    .upd-bottom-banner__collapse-button:checked ~ .upd-bottom-banner__container,
+    .upd-bottom-banner__collapse-button:checked ~ .upd-bottom-banner__container .upd-bottom-banner__collapse-label {
+        display: none;
+    }
+    .upd-bottom-banner__collapse-label {
+        display: flex;
+    }
+    .upd-bottom-banner__collapse-icon::after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 24px;
+        width: 24px;
+        box-sizing: content-box;
+        background: url("data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 6 6 18M6 6l12 12'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h24v24H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    }
+    @media (max-width: 1100px) {
+        .upd-bottom-banner__wrapper {
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 125px;
+            gap: 4px;
+
+        .upd-bottom-banner__description {
+            justify-content: center;
+            text-align: center;
+        }
+
+        .upd-bottom-banner__description-image {
+            display: none;
+        }
+
+        .upd-bottom-banner__button {
+            flex: 1;
+            text-align: center;
+            padding: 8px 0;
+        }
+        .upd-bottom-banner__collapse-icon {
+            padding: 8px;
+        }
+    }
+    }
+    @media (max-width: 650px) {
+        .upd-bottom-banner__button--reactivate {
+            display: none;
+        }
+        .upd-bottom-banner__description > p {
+            font-size: 16px;
+
+        span {
+            white-space: nowrap;
+        }
+    }
+    }
+</style>
+
+<div class="upd-bottom-banner__body">
+    <input type="checkbox" class="upd-bottom-banner__collapse-button" id="upd_bottom_banner_collapse_checkbox">
+    <div class="upd-bottom-banner__container">
+        <div class="upd-bottom-banner__wrapper">
+            <div class="upd-bottom-banner__description">
+                <div class="upd-bottom-banner__description-image"></div>
+                <p>Большое обновление CS-Cart уже здесь
+                    <span>Попробуйте новую панель администратора с темной темой</span>
+                </p>
+            </div>
+            <div class="upd-bottom-banner__button-box">
+                <a href="https://www.cs-cart.ru/podpiska-na-obnovleniya.html?/podpiska-na-obnovleniya.html?utm_source=internal&utm_medium=reactivate_updates&utm_campaign=cs-cart+4.18" class="upd-bottom-banner__button upd-bottom-banner__button--reactivate upd-bottom-banner__button--ru">Активировать обновления</a>
+                <a href="https://www.cs-cart.ru/cs-cart-4-18?utm_source=internal&utm_medium=learn_more&utm_campaign=cs-cart+4.18" class="upd-bottom-banner__button upd-bottom-banner__button--learn-more">Узнать больше</a>
+                <label for="upd_bottom_banner_collapse_checkbox" class="upd-bottom-banner__collapse-label"
+                       onclick="document.querySelector('.upd-bottom-banner__body').style.cssText = 'display: none;'; fn_update_banner_closed();">
+                    <span class="upd-bottom-banner__button upd-bottom-banner__collapse-icon"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
