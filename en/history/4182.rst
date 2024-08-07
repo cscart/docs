@@ -52,7 +52,7 @@ Bug Fixes
 
 [!] Layouts: Blocks: The "Speed" setting did not work in some cases. Fixed.
 
-[!] Mobile application: Products: The product name in the product availability notice did not match the current language. FIxed.
+[!] Mobile application: Products: The product name in the product availability notice did not match the current language. Fixed.
 
 [!] Mobile application: Errors during product editing could occur on PHP 8.1. Fixed.
 
