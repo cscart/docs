@@ -34,7 +34,7 @@ How To: Give Discounts to Specific User Groups
 
    * **To fixed amount**: the price of products will be set to 5 units of the primary currency of your store, unless those products already have prices lower than 5.
 
-   * **By fixed amount**: the price of products will be lower by 20 units of the primary currency of your store (price with discount = original price - 5).
+   * **By fixed amount**: the price of products will be lower by 5 units of the primary currency of your store (price with discount = original price - 5).
 
      .. important::
 
