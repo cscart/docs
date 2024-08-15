@@ -30,6 +30,8 @@ Functionality Changes
 
 [*] Help center: The spacing between blocks was increased, and the heading has been moved.
 
+[*] Orders: Changed the behavior for returning to the checkout page without paying (for example, using the “Back” button in the browser). Previously, the order was "deleted", and only got created after a successful payment. Now the order will remain with the “Failed” status, and a new order will be placed alongside it after a successful payment.
+
 [*] Multi-Vendor: Add-ons: Vendor panel configurator:  Usergroups: Privileges: Privilege "Vendors: Can edit" is now used for log in as vendor from admin panel. It also allows editing vendor panel.
 
 [*] Profiles: Administrators: New attributes added in the admin list: "main admin" and "main admin for storefront".
