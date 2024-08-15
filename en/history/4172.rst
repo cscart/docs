@@ -83,3 +83,25 @@ Bug Fixes
 [!] Products: In some cases, it was possible to add disabled products to cart. Fixed.
 
 [!] Upgrade center: The update icon for the add-on was not displayed. Fixed.
+
+=============
+Service Packs
+=============
+
+----------
+4.17.2.SP1
+----------
+
+[!] Security: A serious security vulnerability in CS-Cart was fixed. 
+
+----------
+4.17.2.SP2
+----------
+
+[!] Security: Fixed a security vulnerability that could allow an administrator to gain extra privileges.
+
+----------
+4.17.2.SP3
+----------
+
+[!] Admin panel: An error popup that appeared when you used the bottom toolbar to access the admin panel was fixed. 
