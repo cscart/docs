@@ -97,3 +97,13 @@ Bug Fixes
 [!] Ultimate: Add-ons: Warehouses: The quantity of products in a store was incorrectly saved if the "Quantity" field in warehouses was empty on a certain storefront. Fixed.
 
 [!] Users: Profile fields: File: It was impossible to delete a file if the profile field with the file was the only one. Fixed.
+
+=============
+Service Packs
+=============
+
+----------
+4.18.2.SP1
+----------
+
+[!] Rate areas: An empty screen was displayed when creating a rate area. Fixed.
