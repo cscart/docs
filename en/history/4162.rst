@@ -119,3 +119,13 @@ Bug Fixes
 [!] Ultimate: Add-ons: Warehouses: The out-of-stock notification for the selected region was displayed when the pre-order was available. Fixed.
 
 [!] Ultimate: REST API: Orders: Creation of an order did not take into account the wholesale discount if there were several storefronts. Fixed.
+
+=============
+Service Packs
+=============
+
+----------
+4.16.2.SP1
+----------
+
+[!] Security: A critical security issue was fixed. 
