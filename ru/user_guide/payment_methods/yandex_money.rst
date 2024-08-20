@@ -27,7 +27,7 @@
 
 #. Установите модуль :doc:`/user_guide/addons/yandex_checkout/index`.
 
-#. `Подключите ваш интернет-магазин к ЮKassa <https://yookassa.ru/joinups/?source=cscart>`_.
+#. `Подключите ваш интернет-магазин к ЮKassa <https://yookassa.ru/joinups/?source=cscart>`_ - ставка комиссии Юкасса на платежи банковскими картами и SberPay для клиентов CS-Cart составляет 2,5%.
 
 #. :doc:`Создайте новый cпособ оплаты <adding_payment>` с процессором *ЮKassa*.
 
