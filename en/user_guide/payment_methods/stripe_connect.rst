@@ -6,7 +6,7 @@ How To: Set up Stripe Connect in Multi-Vendor
 
     The :doc:`Stripe Connect Payments </user_guide/addons/stripe_connect/index>` add-on is available only in Multi-Vendor.
 
-Stripe Connect allows maketplace owners to offer credit card payments via Stripe and automatically distribute money from orders between vendors.
+Stripe Connect allows marketplace owners to offer credit card payments via Stripe and automatically distribute money from orders between vendors.
 
 ====================================
 Step 1. Configure the Payment Method
@@ -18,7 +18,7 @@ Step 1. Configure the Payment Method
 
 #. A new pop-up window with the payment method creation form will open. Fill in the fields on the **General** tab:
 
-   * **Name**—the name the new payment method. That’s the name that the customers will see at checkout.
+   * **Name**—the name of the new payment method. That’s the name that the customers will see at checkout.
 
    * **Processor**—the online payment processor that will handle the transactions. Choose *Stripe Connect* from the drop-down menu.
 
@@ -48,11 +48,16 @@ Step 1. Configure the Payment Method
 
    * **Currency**—select the currency of your Stripe account. It should match the primary currency of your store—that way the calculations will be more precise.
 
-   * **Enable 3-D Secure**—the setting defines whether money will first go to the marketplace owner instead of going straight to vendors. Money will be automatically distributed between connected Stripe accounts via transfers later.
+   * **Enable 3-D Secure**—the setting defines whether money will first go to the marketplace owner instead of going straight to vendors:
 
-   * **Sripe Checkout**—the setting activates a separate page with a variety of payment options for your customers to choose from on the checkout stage.
+     
+      * When **3-D Secure is disabled**, money will go straight to the connected Stripe accounts of vendors. Commissions and payouts will be taken from vendors as `application fees <https://stripe.com/docs/connect/direct-charges#collecting-fees>`_.
+      
+      * When **3-D Secure is enabled**, money will first go to the marketplace owner's Stripe account. Then it will be automatically distributed between the connected Stripe accounts via transfers. Transfers require that the marketplace owner and vendors have their accounts in the same region: either all in Europe, or all in the U.S. If a vendor's account is in a different region from the marketplace owner's, the money won't be transferred to that vendor automatically.
+
+   * **Stripe Checkout**—the setting activates a separate page with a variety of payment options for your customers to choose from on the checkout stage.
    
-     * more then 20 local and familiar payment systems like Apple and Google Pay, Sofort and Klarna, WeChat and Alipay, Przelewy24 and Afterpay, and many more;
+     * more than 20 local and familiar payment systems like Apple and Google Pay, Sofort and Klarna, WeChat and Alipay, Przelewy24 and Afterpay, and many more;
 
      * payment for the order in installments thanks to Klarna and Afterpay; 
 
@@ -70,13 +75,13 @@ Step 1. Configure the Payment Method
 
    * **Delay transfer of funds**—delay sending money to vendors. Configure manual or automatic disbursements to vendors. The setting works if **3-D Secure** was enabled.
 
-     * To schedule automatic periodic disbursements, add a special command to cron. Set the desired value of the "--days" parameter. Money will be automatically transfered to vendors for orders that are older than this value.
+     * To schedule automatic periodic disbursements, add a special command to cron. Set the desired value of the "--days" parameter. Money will be automatically transferred to vendors for orders that are older than this value.
 
        .. code-block:: php
 
           php /path/to/cart/admin.php --dispatch=stripe_connect.transfer_funds_by_cron --payment_id=14 --days=14 
 
-     * To tranfer money to the vendor for the current order manually, click the **Transfer funds to vendors** button on the order page. After clicking this button, the note will inform you if **Funds have been transferred successfully** or not.
+     * To transfer money to the vendor for the current order manually, click the **Transfer funds to vendors** button on the order page. After clicking this button, the note will inform you if **Funds have been transferred successfully** or not.
 
 #. Once you have configured the payment method, click **Create**.
 
