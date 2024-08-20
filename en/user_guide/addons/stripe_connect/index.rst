@@ -2,13 +2,9 @@
 Stripe Connect Payments
 ***********************
 
-By default, all the money from purchases in a Multi-Vendor store goes to the store owner. The store owner is then supposed to distribute that money among vendors and use the :doc:`Accounting </user_guide/users/vendors/account_balance>` page to keep track of the transactions.
+By default, all the money from purchases in a Multi-Vendor store goes to the marketplace owner. The marketplace owner is then supposed to distribute that money among vendors and use the :doc:`Accounting </user_guide/users/vendors/account_balance>` page to keep track of the transactions.
 
-The **Stripe Connect Payments** add-on allows store owners to avoid manual distribution of funds among vendors. Instead, a single payment made by a customer is automatically shared between vendors and the store owner.
-
-.. image:: img/stripe_connect_scheme.png
-    :align: center
-    :alt: The general scheme of the Stripe Connect Payments add-on.
+The **Stripe Connect Payments** add-on allows marketplace owners to avoid manual distribution of funds among vendors. Instead, a single payment made by a customer is automatically shared between vendors and the marketplace owner.
 
 ===================
 General Information
@@ -20,23 +16,15 @@ General Information
 
 * Vendors can use `Standard <https://stripe.com/docs/connect/standard-accounts>`_ or `Express <https://stripe.com/docs/connect/express-accounts>`_ Stripe accounts.
 
-* When a customer pays for an order that consists of products from different vendors in one cart, Stripe Connect automatically splits the payment between the vendors, transferring the commission to the account of the store owner.
+* When a customer pays for an order that consists of products from different vendors in one cart, Stripe Connect automatically splits the payment between the vendors, transferring the commission to the account of the marketplace owner.
 
-* The money is transferred straight from the customer to the vendor without any deposits on the store owner side. The store owner simply gets his or her fee during the process.
+* Stripe fees are payable by sellers (when 3D Secure is disabled) or shared proportionally between the seller and the marketplace (when 3D Secure is enabled).
 
-* Every transaction is charged with additional Stripe fee.
-
-* The vendor is responsible for the cost of Stripe fees, refunds, and chargebacks.
-
-* Stripe allows to connect an unlimited number of vendor accounts to the store owner's account.
+* Stripe allows to connect an unlimited number of vendor accounts to the marketplace owner's account.
 
 * Stripe Connect is fully integrated with Multi-Vendor's :doc:`RMA </user_guide/addons/rma/index>` add-on to provide easier processing of return requests and refunds.
 
-  .. important::
-
-      3-D Secure (and therefore, `Strong Customer Authentication <https://en.wikipedia.org/wiki/Strong_customer_authentication>`_ required by the EU) is supported in our Stripe add-on starting with version 4.10.4.
-
-* `Sripe Checkout <https://stripe.com/payments/checkout>`_ support for easy and secure online payment acceptance starting from CS-Cart Multi-Vendor 4.16.1. Stripe checkout allows you to:
+* `Stripe Checkout <https://stripe.com/payments/checkout>`_ support for easy and secure online payment acceptance starting from CS-Cart Multi-Vendor 4.16.1. Stripe checkout allows you to:
 
   * Provide customers around the world with familiar payment systems like Apple and Google Pay, Sofort and Klarna, WeChat and Alipay, Przelewy24 and Afterpay, and many more (see all the payment options on your `Stripe Dashboard <https://dashboard.stripe.com/settings/payment_methods>`_);
 
