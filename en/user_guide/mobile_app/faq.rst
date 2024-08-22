@@ -23,7 +23,7 @@ By default, Multi-Vendor has responsive design. The store will adapt to fit into
 However, there is another way to interact with the store—a mobile application. It is a program that customers can install on their mobile devices. It exchanges data with the store, so customers can see what products are available, purchase them, add them to wish list, and more.
 
 -------------------------------------
-What Operating Systems are supported?
+What Operating Systems Are Supported?
 -------------------------------------
 
 Multi-Vendor application works with:
