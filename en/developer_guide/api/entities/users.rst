@@ -73,14 +73,12 @@ The full list of supported fields is given below (mandatory fields are marked wi
         -   Default company ID
         -   integer
     *   -   status*
-        -   | Product status:
+        -   | User status:
             | ``A`` for Active
             | ``D`` for Disabled
-            | ``H`` for Hidden
         -   ``A``
         -   | ``A``
             | ``D``
-            | ``H``
     *   -   firstname
         -   User's first name
         -   —
