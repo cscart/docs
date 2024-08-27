@@ -1,0 +1,49 @@
+************************
+CS-Cart 4.18.3 Changelog
+************************
+
+=============================
+New Features and Improvements
+=============================
+
+[+] Add-ons: PayPal Complete Payments: PayPal Complete Payments (Multiparty): Added setting "Send shipping address to PayPal".
+
+[+] Add-ons: PayPal Complete Payments: PayPal Complete Payments (Multiparty): Added the ability to send shipment data to PayPal.
+
+=========
+Bug Fixes
+=========
+
+[!] Add-ons: Call requests: When placing an order with 1-click, a space was added to the “City” and “Address” fields, which could lead to problems in further order editing. Fixed.
+
+[!] Add-ons: Cities: Changing the location on the storefront could cause a PHP error. Fixed.
+
+[!] Add-ons: Google reCAPTCHA: Order information was sent via email even if reCaptcha validation failed. Fixed.
+
+[!] Add-ons: Warehouses: Products import into warehouses with the active "Set quantity of all products to zero" setting took a very long time with a large number of products. Fixed.
+
+[!] Add-ons: Wish List: A product with a lot of features took a long time to be added to the wishlist. Fixed.
+
+[!] Design: Blocks: Scrolling blocks did not work correctly when using the TinyMCE wysiwyg editor. Fixed.
+
+[!] Design: RTL: Next/prev buttons in the gallery were displayed incorrectly. Fixed.
+
+[!] Design: UX/UI: Mobile view: Checkboxes were displayed incorrectly in pop-ups. Fixed.
+
+[!] Import: Products: Some product properties that can either be global or product-specific could be imported incorrectly if the imported file had an empty value for that property. Fixed.
+
+[!] Notifications: Messages about out-of-stock products that were removed from the cart sometimes didn’t appear for customers after they signed in to their account. Fixed.
+
+[!] Payments: User groups: When creating a new payment method, existing user groups variants were not available for selection. Fixed.
+
+[!] Product filters: The search bar may have been displayed for color filter options. Fixed.
+
+[!] Products: Features: In some cases, feature variants were not added when cloned. Fixed.
+
+[!] Promotions: Free bonus product was not added to the cart. Fixed.
+
+[!] Shipping: USPS: First-Class Package International Service was missing. Fixed.
+
+[!] Themes: Layouts: Logos were created incorrectly when importing the layout. A PHP Fatal error was displayed if the current layout did not have a logo in the admin panel. Fixed.
+
+[!] Upgrade center: During the update process, PHP Warnings about including non-existent files could appear. Fixed.
