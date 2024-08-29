@@ -20,7 +20,7 @@ What Is All This About?
 
 By default, Multi-Vendor has responsive design. The store will adapt to fit into the screen nicely, no matter what devices your customers use. This allows customers to make purchases from the store via their smartphones or tablets.
 
-However, there is another way to interact with the store—a mobile application. It is a program that customers can install on their mobile devices. It exchanges data with the store, so customers can see what products are available, purchase them, add them to wish list, and more.
+However, there is another way to interact with the marketplace—a mobile application. It is a program that customers can install on their mobile devices. It exchanges data with the marketplace, so customers can see what products are available, purchase them, add them to wish list, and more.
 
 -------------------------------------
 What Operating Systems Are Supported?
@@ -47,11 +47,11 @@ Why Bother with an App When a Responsive Site Does the Same Thing?
 
 .. _mobile-app-faq-sync:
 
--------------------------------------------
-How Does the App Synchronize with My Store?
--------------------------------------------
+-------------------------------------------------
+How Does the App Synchronize with My Marketplace?
+-------------------------------------------------
 
-The app has all the products that you offer in your store. If you add or remove products, categories, shipping and payment methods, they will appear and disappear in the app as well.
+The app has all the products that you offer in your marketplace. If you add or remove products, categories, shipping and payment methods, they will appear and disappear in the app as well.
 
 A customer who has an account in your store uses the same credentials to sign in to the app. By registering in the app, a customer also gets an account in your web store.
 
@@ -70,7 +70,7 @@ The application supports **all shipping methods** and the following payment meth
 * Offline payment methods (such as "Discuss with manager", etc.)
 
 
-Payment methods in the mobile app are positioned in the same order as in your store. The first payment method is selected by default.
+Payment methods in the mobile app are positioned in the same order as in your marketplace. The first payment method is selected by default.
 
 .. hint::
 
@@ -125,21 +125,27 @@ Who Will be Listed as App Developer?
 
 If you get the source code, you'll be able to publish the app from your own developer account. Otherwise we'll publish it from our account on your behalf. In that case the app developer will be listed as follows:
 
-* Apple App Store: `CS-Cart <https://apps.apple.com/developer/cs-cart/id1572599656?see-all=i-phone-apps>`_
+* Apple App Store: `CS-Cart <https://apps.apple.com/developer/cs-cart/id1572599656>`_
 
-* Google Play: `Simbirsk Technologies Ltd <https://play.google.com/store/apps/collection/cluster?gsr=SjpqGE55SGlBMHRCK0VWb1AzWU1NUHErV1E9PbICHQobChdjb20uc2ltdGVjaC5tdWx0aXZlbmRvchAH:S:ANO1ljIrGKY>`_
+* Google Play: `BOLIDE NETWORK LLC <https://play.google.com/store/apps/developer?id=BOLIDE+NETWORK+LLC>`_
 
 ===================
 Part 2. Acquisition
 ===================
 
------------------------------------------------
-How Do I Get a Mobile Application for My Store?
------------------------------------------------
+------------------------------------
+Can I Test the App before Buying It?
+------------------------------------
+
+We have demo applications `for Android <https://play.google.com/marketplace/apps/details?id=com.simtech.multivendor>`_ and `for iOS <https://itunes.apple.com/app/multi-vendor-app-by-cs-cart/id1304872157>`_ based on our Multi-Vendor demo store. Feel free to install those apps, go around the catalog, register an account, add products to cart or wish list, "order" them, and so on. Of course, we're not actually selling anything at our demo store; it is just there to show how our software works.
+
+-----------------------------------------------------
+How Do I Get a Mobile Application for My Marketplace?
+-----------------------------------------------------
 
 #. Check the description of our mobile app `for Multi-Vendor <https://www.cs-cart.com/multivendor-mobile-application.html>`_.
 
-#. If you decide to get the app (or if you have any questions), contact us via the forms on those pages.
+#. If you decide to get the app (or if you have any questions), contact us using this `contact form <https://www.cs-cart.com/contact>`_.
 
 #. We'll need some information from you, so that we could create your app and publish it on Apple App Store and Google Play.
 
@@ -159,17 +165,11 @@ How Do I Get a Mobile Application for My Store?
 What Versions of Multi-Vendor Are Supported?
 --------------------------------------------
 
-It's best if you use the latest version. It always includes all the changes to the **Mobile Application** add-on and the way how your store interacts with your mobile application.
+It's best if you use the latest version. It always includes all the changes to the **Mobile Application** add-on and the way how your marketplace interacts with your mobile application.
 
 If you aren't using the latest version, just mention it when contacting us, and we'll help you get started. For example, version 4.8.1 is the earliest version that comes with the **Mobile Application** add-on. But we've made some improvements since then, so we may first need to apply them to your Multi-Vendor installation.
 
 Mobile application can also run on versions older than 4.8.x (the earliest version we ran it on is 4.6.3), but the older the version, the more changes might be required. We can't promise to integrate the mobile application with any old version possible, but tell us your version number `via Help Desk <https://helpdesk.cs-cart.com>`_, and we'll take a look and let you know.
-
-------------------------------------
-Can I Test the App before Buying It?
-------------------------------------
-
-We have demo applications `for Android <https://play.google.com/store/apps/details?id=com.simtech.multivendor>`_ and `for iOS <https://itunes.apple.com/app/multi-vendor-app-by-cs-cart/id1304872157>`_ based on our Multi-Vendor demo store. Feel free to install those apps, go around the catalog, register an account, add products to cart or wish list, "order" them, and so on. Of course, we're not actually selling anything at our demo store; it is just there to show how our software works.
 
 ---------------------------------------------------
 How Soon after the Payment Will You Release My App?
@@ -193,7 +193,7 @@ Most of the data described below is provided via the **Mobile Application** add-
 
    * *Feature Graphic image*—a 1024x500 image shown on the Google Play page of your application. For more information, see the "Feature Graphic" section of `Google Play instructions <https://support.google.com/googleplay/android-developer/answer/1078870?hl=en>`_.
    
-   * *Splash Screen (portrait)* is an 2496x2496 image. It is displayed when you start the application on your mobile phone. For the best look on all devices, use the logo of your store. The logo shouldn't occupy the full width of the image, and should be in the center. We recommend a single-color or gradient background without small details.
+   * *Splash Screen (portrait)* is an 2496x2496 image. It is displayed when you start the application on your mobile phone. For the best look on all devices, use the logo of your marketplace. The logo shouldn't occupy the full width of the image, and should be in the center. We recommend a single-color or gradient background without small details.
 
    
      .. note::
@@ -212,7 +212,7 @@ Most of the data described below is provided via the **Mobile Application** add-
 
    * *Support email*—the email address to which customers will send you feedback about your app. This address will be displayed on the page of your app in Google Play and Apple App Store.
 
-   * *Privacy Policy URL*—the link to the privacy policy page of your store.
+   * *Privacy Policy URL*—the link to the privacy policy page of your marketplace.
 
 .. important::
 
@@ -249,11 +249,11 @@ Once the application is published, it will automatically :ref:`exchange data wit
          :align: center
          :alt: The interface for editing the colors of your mobile application.
 
-#. **Links at the bottom menu of the sidebar.** The top sidebar menu (with icons) is always the same, while the bottom menu is customizable: you can add and remove links as you see fit.
+#. **Links in the Pages menu in the Profile section.** The top menu always remains unchanged, but the bottom menu can be customized: add and remove items from there.
 
    .. important::
 
-       The changes to the home page and sidebar are made in the admin panel of your store: go to **Website → Themes → Edit layouts** and switch to **MobileAppLayout**. It will appear only if the **Mobile Application** add-on is installed.
+       The changes to the home page and Profile → Pages are made in the admin panel of your marketplace: go to **Website → Themes → Edit layouts** and switch to **MobileAppLayout**. It will appear only if the **Mobile Application** add-on is installed.
 
 ------------------------------------------------------------------
 What if I Want to Change Colors or Logos after You Publish My App?
@@ -281,13 +281,13 @@ If you make changes to any of the settings of the **Mobile Application** add-on 
 How Do I Change the Texts of My App?
 ------------------------------------
 
-The texts of your app are a part of **Mobile Application** add-on and can be edited in the admin panel of your store. Changing these texts works the same way as :doc:`translating CS-Cart </user_guide/look_and_feel/languages/translate>`:
+The texts of your app are a part of **Mobile Application** add-on and can be edited in the admin panel of your marketplace. Changing these texts works the same way as :doc:`translating CS-Cart </user_guide/look_and_feel/languages/translate>`:
 
 #. Go to **Settings → Text & Languages → Edit texts**. 
 
 #. Switch to the *Mobile application translations* tab in the sidebar on the right.
 
-#. Change the texts. Once you've saved your changes, your translations will appear in the store automatically.
+#. Change the texts. Once you've saved your changes, your translations will appear in the marketplace automatically.
 
    .. image:: img/mobile_app_texts.png
        :align: center
@@ -345,11 +345,11 @@ Go to **Website → Themes → Edit layouts** and switch to **MobileAppLayout**.
       :align: center
       :alt: A block wrapper in Multi-Vendor determines the block title will appear on the mobile app home page.
 
------------------------------------------
-Sidebar: How to Add or Remove Menu Items?
------------------------------------------
+-----------------------------------------------------------------
+Is It Possible to Add My Own Item to the Mobile Application Menu?
+-----------------------------------------------------------------
 
-The top menu of the sidebar (Home, Cart, Wish List, My profile, Orders) is always the same. The bottom menu can be configured in the admin panel of your store.
+The bottom menu of the mobile application remains unchanged. But you can add your own item to the Profile section from the bottom menu. For example, you can place a link to the privacy policy or other legal information there. To do this:
 
 #. Go to **Website → Themes → Edit layouts**.
 
@@ -359,7 +359,7 @@ The top menu of the sidebar (Home, Cart, Wish List, My profile, Orders) is alway
 
 #. Click the gear icon of the **Pages** block.
 
-#. The block settings will open. Switch to the **Content** tab. That's where you'll be able to select the pages that must appear in the sidebar of the mobile application.
+#. The block settings will open. Switch to the **Content** tab. Here you can select the pages that should appear in the Profile → Pages section.
 
    .. image:: img/sidebar_menu.png
        :align: center
