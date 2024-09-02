@@ -108,7 +108,7 @@ If you get the source code, you'll be able to publish the app from your own deve
 
 * Apple App Store: `CS-Cart <https://apps.apple.com/developer/cs-cart/id1572599656?see-all=i-phone-apps>`_
 
-* Google Play: `Simbirsk Technologies Ltd <https://play.google.com/store/apps/collection/cluster?gsr=SjpqGE55SGlBMHRCK0VWb1AzWU1NUHErV1E9PbICHQobChdjb20uc2ltdGVjaC5tdWx0aXZlbmRvchAH:S:ANO1ljIrGKY>`_
+* Google Play: `BOLIDE NETWORK LLC <https://play.google.com/store/apps/developer?id=BOLIDE+NETWORK+LLC>`_
 
 ===================
 Part 2. Acquisition
@@ -326,11 +326,11 @@ Go to **Design → Layouts** and switch to **MobileAppLayout**. Select the **Hom
       :align: center
       :alt: A block wrapper in Multi-Vendor determines the block title will appear on the mobile app home page.
 
------------------------------------------
-Sidebar: How to Add or Remove Menu Items?
------------------------------------------
+-----------------------------------------------------------------
+Is It Possible to Add My Own Item to the Mobile Application Menu?
+-----------------------------------------------------------------
 
-The top menu of the sidebar (Home, Cart, Wish List, My profile, Orders) is always the same. The bottom menu can be configured in the admin panel of your store.
+The bottom menu of the mobile application remains unchanged. But you can add your own item to the Profile section from the bottom menu. For example, you can place a link to the privacy policy or other legal information there. To do this:
 
 #. Go to **Design → Layouts**.
 
@@ -340,7 +340,7 @@ The top menu of the sidebar (Home, Cart, Wish List, My profile, Orders) is alway
 
 #. Click the gear icon of the **Pages** block.
 
-#. The block settings will open. Switch to the **Content** tab. That's where you'll be able to select the pages that must appear in the sidebar of the mobile application.
+#. The block settings will open. Switch to the **Content** tab. Here you can select the pages that should appear in the Profile → Pages section.
 
    .. image:: img/sidebar_menu.png
        :align: center
