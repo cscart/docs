@@ -40,7 +40,7 @@ New hooks
 Style Changes
 ==============
 
-—-----------------------------------------
+------------------------------------------
 Usage of color variables instead of colors
 ------------------------------------------
 
@@ -55,11 +55,11 @@ The use of hardcoded colors has been deprecated. `Use CSS color variables instea
 
 View full CS-Cart variables list `design/backend/css/less_to_css_vars.less`. Color variables are required for the dark theme. Check your add-ons in the light and dark administration panel.
 
-—---------------------
+----------------------
 Deprecated Less styles
-—---------------------
+----------------------
 
-`Less styles<https://lesscss.org/>`_ have been deprecated and will no longer be supported in the future. Use native CSS styles instead. Examples:
+`Less styles <https://lesscss.org/>`_ have been deprecated and will no longer be supported in the future. Use native CSS styles instead. Examples:
 
 - Don't use ``Less variables``. Use native CSS variables. Examples:
 
