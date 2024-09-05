@@ -110,14 +110,20 @@ Who Will be Listed as App Developer?
 
 If you get the source code, you'll be able to publish the app from your own developer account. Otherwise we'll publish it from our account on your behalf. In that case the app developer will be listed as follows:
 
-* Apple App Store: `Simbirsk Technologies <https://itunes.apple.com/us/developer/simbirsk-technologies/id393297240>`_
+* Apple App Store: `CS-Cart <https://apps.apple.com/ru/developer/cs-cart/id1572599656?see-all=i-phone-apps>`_
 
-* Google Play: `Simbirsk Technologies Ltd <https://play.google.com/store/apps/developer?id=Simbirsk+Technologies+Ltd>`_
+* Google Play: `BOLIDE NETWORK LLC <https://play.google.com/store/apps/developer?id=BOLIDE+NETWORK+LLC>`_
 
 
 ===================
 Part 2. Acquisition
 ===================
+
+------------------------------------
+Can I Test the App before Buying It?
+------------------------------------
+
+We have demo applications `for Android <https://play.google.com/store/apps/details?id=com.simtech.multivendor>`_ and `for iOS <https://itunes.apple.com/app/multi-vendor-app-by-cs-cart/id1304872157>`_ based on our Multi-Vendor demo store. Feel free to install those apps, go around the catalog, register an account, add products to cart or wish list, "order" them, and so on. Of course, we're not actually selling anything at our demo store; it is just there to show how our software works.
 
 -----------------------------------------------
 How Do I Get a Mobile Application for My Store?
@@ -125,7 +131,7 @@ How Do I Get a Mobile Application for My Store?
 
 #. Check the descriptions of our mobile apps `for Multi-Vendor <https://www.cs-cart.com/multivendor-mobile-application.html>`_ or `for CS-Cart <https://www.cs-cart.com/cscart-mobile-application.html>`_.
 
-#. If you decide to get the app (or if you have any questions), contact us via the forms on those pages.
+#. If you decide to get the app (or if you have any questions), contact us using this `contact form <https://www.cs-cart.com/contact>`_.
 
 #. We'll need some information from you, so that we could create your app and publish it on Apple App Store and Google Play.
 
@@ -150,12 +156,6 @@ It's best if you use the latest version. It always includes all the changes to t
 If you aren't using the latest version, just mention it when contacting us, and we'll help you get started. For example, version 4.8.1 is the earliest version that comes with the **Mobile Application** add-on. But we've made some improvements since then, so we may first need to apply them to your CS-Cart or Multi-Vendor installation.
 
 Mobile application can also run on versions older than 4.8.x (the earliest version we ran it on is 4.6.3), but the older the version, the more changes might be required. We can't promise to integrate the mobile application with any old version possible, but tell us your version number `via Help Desk <https://helpdesk.cs-cart.com>`_, and we'll take a look and let you know.
-
-------------------------------------
-Can I Test the App before Buying It?
-------------------------------------
-
-We have demo applications `for Android <https://play.google.com/store/apps/details?id=com.simtech.multivendor>`_ and `for iOS <https://itunes.apple.com/app/multi-vendor-app-by-cs-cart/id1304872157>`_ based on our Multi-Vendor demo store. Feel free to install those apps, go around the catalog, register an account, add products to cart or wish list, "order" them, and so on. Of course, we're not actually selling anything at our demo store; it is just there to show how our software works.
 
 ---------------------------------------------------
 How Soon after the Payment Will You Release My App?
