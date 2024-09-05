@@ -22,7 +22,6 @@ Core changes
 Hook changes
 ============
 
-
 =========
 New hooks
 =========
@@ -37,14 +36,14 @@ New hooks
        `fn_set_hook('rus_online_cache_register_receipt_request_json_post', $this, $result, $receipt);`
 
 ==============
-Style Changes
+Style changes
 ==============
 
 ------------------------------------------
 Usage of color variables instead of colors
 ------------------------------------------
 
-The use of hardcoded colors has been deprecated. `Use CSS color variables instead<https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties>`_. Examples:
+The use of hardcoded colors has been deprecated. `Use CSS color variables instead <https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties>`_. Examples:
 
 - ``#fff``: use ``var(--cs-content-background)`` instead for background color.
 - ``#2d2d2d``: use ``var(--cs-text-color)`` instead for text color.
@@ -53,7 +52,7 @@ The use of hardcoded colors has been deprecated. `Use CSS color variables instea
 - ``#d80954``: use ``var(--cs-error-text)`` instead for error text color.
 - ``rgba(0, 0, 0, 0.1)``: use ``var(--cs-shadow10-color)`` instead for shadow.
 
-View full CS-Cart variables list `design/backend/css/less_to_css_vars.less`. Color variables are required for the dark theme. Check your add-ons in the light and dark administration panel.
+View the full list of variables in *design/backend/css/less_to_css_vars.less*. Color variables are required for the dark theme. Check your add-ons in the light and dark administration panel.
 
 ----------------------
 Deprecated Less styles
@@ -61,51 +60,53 @@ Deprecated Less styles
 
 `Less styles <https://lesscss.org/>`_ have been deprecated and will no longer be supported in the future. Use native CSS styles instead. Examples:
 
-- Don't use ``Less variables``. Use native CSS variables. Examples:
+#. Don't use ``Less variables``. Use native CSS variables. Examples:
 
-#. ``@mainColor``: use ``var(--cs-main-color)`` instead.
+   * ``@mainColor``: use ``var(--cs-main-color)`` instead.
 
-#. ``@media (min-width: @TabletBreakpoint + 1px) { ... }``: use ``@media (min-width: 768px) { ... }`` instead.
+   * ``@media (min-width: @TabletBreakpoint + 1px) { ... }``: use ``@media (min-width: 768px) { ... }`` instead.
 
-#. ``-@iconSize;``: use ``~"calc(var(--cs-icon-size) * -1)"`` instead.
+   * ``-@iconSize;``: use ``~"calc(var(--cs-icon-size) * -1)"`` instead.
 
-- Don't use Less mixins. Describe properties explicitly. Examples:
+#. Don't use Less mixins. Describe properties explicitly. Examples:
 
-#. ``.transition(all 200ms);``: use ``transition: all 200ms;`` instead.
+   * ``.transition(all 200ms);``: use ``transition: all 200ms;`` instead.
 
-#. ``.display-flex();``: use ``display: flex;`` instead.
+   * ``.display-flex();``: use ``display: flex;`` instead.
 
-- Don't use Less nested rules. Describe selectors explicitly. Examples:
+#. Don't use Less nested rules. Describe selectors explicitly. Examples:
 
-#. ``a { opacity: 0.8; &:hover { opacity: 1; } }``: use ``a { opacity: 0.8; } a:hover { opacity: 1; }`` instead.
+   * ``a { opacity: 0.8; &:hover { opacity: 1; } }``: use ``a { opacity: 0.8; } a:hover { opacity: 1; }`` instead.
 
-#. ``.block { padding: 10px; @media (min-width: 768px) { padding: 20px; } }``: use ``.block { padding: 10px; } @media (min-width: 768px) { .block { padding: 20px; } }`` instead.
+   * ``.block { padding: 10px; @media (min-width: 768px) { padding: 20px; } }``: use ``.block { padding: 10px; } @media (min-width: 768px) { .block { padding: 20px; } }`` instead.
 
-- Don't use ``Less`` functions. Use similar colors and property values. Examples:
+#. Don't use Less functions. Use similar colors and property values. Examples:
 
-#. ``spin(desaturate(lighten(@textColor, 30%), 25%), -15%);``: use ``var(--cs-text-muted-color);`` instead.
+   * ``spin(desaturate(lighten(@textColor, 30%), 25%), -15%);``: use ``var(--cs-text-muted-color);`` instead.
 
-#. ``darken(@btnBorder, 3%)``: use ``var(--cs-shadow15-color)`` instead.
+   * ``darken(@btnBorder, 3%)``: use ``var(--cs-shadow15-color)`` instead.
 
-#. ``lighten(@textColor, 38%);``: use ``var(--cs-text-muted-color);`` instead.
+   * ``lighten(@textColor, 38%);``: use ``var(--cs-text-muted-color);`` instead.
 
-#. ``round(@baseLineHeight / 1.5385)``: use ``13px;`` instead.
+   * ``round(@baseLineHeight / 1.5385)``: use ``13px;`` instead.
 
-- BUT use escaping for ``Less`` functions that are similar to CSS functions. Example:
+#.  BUT use escaping for Less functions that are similar to CSS functions. Example:
 
-#. ``calc(100% - 5px)``: use ``~"calc(100% - 5px)"`` instead.
+   * ``calc(100% - 5px)``: use ``~"calc(100% - 5px)"`` instead.
 
 ---------------
 New CSS classes
 ---------------
 
-- ``cs-dark-theme-invert`` - invert colors for the dark theme.
+``cs-dark-theme-invert`` - invert colors for the dark theme.
 
 -----------------------
 Deleted style variables
 -----------------------
 
-- UI:
++++
+UI
++++
 
 #. ``@isControlGroupHidden``.
 
@@ -147,7 +148,9 @@ Deleted style variables
 
 #. ``@arrow-size``: use ``60px`` instead.
 
-- Dashboard:
++++++++++
+Dashboard
++++++++++
 
 #. ``@dashboardBorderColor``: use ``var(--cs-dashboard-border-color)`` instead.
 
@@ -157,7 +160,9 @@ Deleted style variables
 
 #. ``@dashboardSecondaryColor``: use ``var(--cs-dashboard-secondary-color)`` instead.
 
--  Add-ons and upgrade center pages:
+++++++++++++++++++++++++++
+Add-ons and Upgrade center
+++++++++++++++++++++++++++
 
 #. ``@darkTransparentMainColor``: use ``var(--cs-shadow10-color)`` instead.
 
@@ -167,7 +172,9 @@ Deleted style variables
 
 #. ``@middleTextIconColor``.
 
-- Notification settings:
++++++++++++++++++++++
+Notification settings
++++++++++++++++++++++
 
 #. ``@editor-spacing``: use ``16px`` instead.
 
@@ -177,7 +184,9 @@ Deleted style variables
 
 #. ``@editor-padding``: use ``17px`` instead.
 
-- Block manager:
++++++++++++++
+Block manager
++++++++++++++
 
 #. ``@BlockManagerGrid``: use ``var(--cs-block-manager-grid)`` instead.
 
@@ -215,12 +224,16 @@ Deleted style variables
 
 #. ``@bm-icon``: use ``var(--bm-icon)`` instead.
 
-- Vendor data premoderation add-on:
+++++++++++++++++++++++++++++++++
+Vendor data premoderation add-on
+++++++++++++++++++++++++++++++++
 
 #. ``@editColor``: use ``var(--cs-vendor-data-premoderation-edit-color)`` instead.
 
 #. ``@editBackground``.
 
-- Mobile application add-on:
++++++++++++++++++++++++++
+Mobile application add-on
++++++++++++++++++++++++++
 
 #. ``@backgoundColor``: use ``var(--cs-mobile-app-backgound-color)`` instead.
