@@ -14,11 +14,17 @@ New Features and Improvements
 Bug Fixes
 =========
 
+[!] Add-ons: Advanced products import: During product import, images weren't imported if image paths were specified in multiple columns (CSV) or nodes (XML). Fixed.
+
 [!] Add-ons: Call requests: When placing an order with 1-click, a space was added to the “City” and “Address” fields, which could lead to problems in further order editing. Fixed.
 
 [!] Add-ons: Cities: Changing the location on the storefront could cause a PHP error. Fixed.
 
 [!] Add-ons: Google reCAPTCHA: Order information was sent via email even if reCaptcha validation failed. Fixed.
+
+[!] Add-ons: Message Center: The page was not displayed correctly if the message contained a long word. Fixed.
+
+[!] Add-ons: Integration with Zapier: "New user" trigger failed. Fixed.
 
 [!] Add-ons: Stores and pickup points: When testing the delivery cost calculations for a delivery method with the "Pickup" type, an error occurred due to the use of the PDO database driver. Fixed.
 
@@ -26,19 +32,29 @@ Bug Fixes
 
 [!] Admin panel: Search: Storefronts: The button for selecting storefronts was duplicated on the search results page in the admin panel. Fixed.
 
-[!] Export/Import: Products: Some product properties that can either be global or product-specific could be imported incorrectly if the imported file had an empty value for that property. Fixed.
-
 [!] Design: Blocks: Scrolling blocks did not work correctly when using the TinyMCE wysiwyg editor. Fixed.
 
 [!] Design: RTL: Next/prev buttons in the gallery were displayed incorrectly. Fixed.
 
 [!] Design: UX/UI: Mobile view: Checkboxes were displayed incorrectly in pop-ups. Fixed.
 
+[!] Export/Import: Products: Some product properties that can either be global or product-specific could be imported incorrectly if the imported file had an empty value for that property. Fixed.
+
+[!] Mobile app: Push notifications did not respect the sound settings of the mobile device. Fixed.
+
+[!] Multi-Vendor: Add-ons: Stripe Connect payments: Order management: When editing an order paid by Stripe, it could not be saved without entering credit card data. Fixed.
+
+[!] Multi-Vendor: Add-ons: Stripe Connect payments: Webhooks URL were created with an additional language, if the 'Show additional language in the URL' setting of the 'SEO' add-on was active. Fixed.
+
+[!] Multi-Vendor: Vendors: Merge: The Vendor merge page was incorrectly highlighting the active menu item. Fixed.
+
 [!] Notifications: Notification status was displayed incorrectly due to the use of the PDO database driver. Fixed.
 
 [!] Notifications: Messages about out-of-stock products that were removed from the cart sometimes didn’t appear for customers after they signed in to their account. Fixed.
 
-[!] Payments: User groups: When creating a new payment method, existing user groups variants were not available for selection. Fixed.
+[!] Order management: The quantity of products with the same options was calculated incorrectly during order editing. Fixed.
+
+[!] Payment methods: User groups: When creating a new payment method, existing user groups variants were not available for selection. Fixed.
 
 [!] Product filters: The search bar may have been displayed for color filter options. Fixed.
 
