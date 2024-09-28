@@ -28,9 +28,11 @@ function fn_advanced_addon_get_category_data_pre($category_id, $field_list, $get
 
 		if (!empty($viewed_categories)) {
 			$viewed_categories = unserialize($viewed_categories);
+		} else {
+			$viewed_categories = array();
 		}
 
-		$viewed_categories[$category_id] = true;
+		array_push($viewed_categories, $category_id);
 		$viewed_categories = serialize($viewed_categories);
 
 		db_query('REPLACE INTO ?:advanced_addon_data VALUES (?i, ?s)', $auth['user_id'], $viewed_categories);
